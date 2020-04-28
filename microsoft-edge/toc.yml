@@ -110,7 +110,7 @@
               href: devtools-guide-chromium/console/live-expressions.md
         - name: 网络
           items:
-            - name: 入门
+            - name: 开始使用
               href: devtools-guide-chromium/network/index.md
             - name: 网络问题指南
               href: devtools-guide-chromium/network/issues.md
@@ -150,11 +150,11 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
         - name: 数组
           items:
-            - name: 入门
+            - name: 开始使用
               href: devtools-guide-chromium/dom/index.md
         - name: JavaScript
           items:
-            - name: 入门
+            - name: 开始使用
               href: devtools-guide-chromium/javascript/index.md
             - name: 使用断点暂停代码
               href: devtools-guide-chromium/javascript/breakpoints.md
@@ -178,7 +178,7 @@
                   href: devtools-guide-chromium/javascript/disable.md
         - name: 性能
           items:
-            - name: 入门
+            - name: 开始使用
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: 优化网站速度
               href: devtools-guide-chromium/speed/get-started.md
@@ -486,25 +486,5 @@
     - name: WebVR 开发人员指南
       href: 'https://docs.microsoft.com/microsoft-edge/webvr/'
     - name: Windows 运行时（WinRT）
-      href: windows-runtime.md
-      items:
-        - name: 在 JavaScript 中使用 Windows 运行时
-          href: windows-runtime/using-the-windows-runtime-in-javascript.md
-          items:
-            - name: 使用 Windows 运行时 API 时的注意事项
-              href: windows-runtime/considerations-when-using-the-windows-runtime-api.md
-            - name: 使用 Windows 运行时异步方法
-              href: windows-runtime/using-windows-runtime-asynchronous-methods.md
-              items:
-                - name: 异步 Windows 运行时方法中的特殊错误属性
-                  href: windows-runtime/special-error-properties-from-asynchronous-windows-runtime-methods.md
-            - name: 在 JavaScript 中处理 Windows 运行时事件
-              href: windows-runtime/handling-windows-runtime-events-in-javascript.md
-            - name: Windows 运行时类型的 JavaScript 表示形式
-              href: windows-runtime/javascript-representation-of-windows-runtime-types.md
-            - name: Windows 运行时日期时间和时间跨度表示
-              href: windows-runtime/windows-runtime-datetime-and-timespan-representations.md
-            - name: 使用 JavaScript 的 Windows 运行时应用程序的错误代码
-              href: windows-runtime/error-codes-for-windows-runtime-apps-using-javascript.md
-        - name: 参考
-          href: windows-runtime/reference/toc.md
+      href: windows-runtime/toc.yml
+      topicHref: windows-runtime/index.md
