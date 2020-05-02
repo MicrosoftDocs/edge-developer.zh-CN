@@ -206,6 +206,8 @@
               href: devtools-guide-chromium/remote-debugging/index.md
             - name: 访问本地服务器
               href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Surface 双核模拟器
+              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Windows 10 设备
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: 内存
@@ -255,7 +257,7 @@
               href: devtools-guide/elements/styles.md
             - name: 过
               href: devtools-guide/elements/computed.md
-            - name: 活动
+            - name: 事件
               href: devtools-guide/elements/events.md
             - name: DOM 断点
               href: devtools-guide/elements/dom-breakpoints.md
@@ -438,7 +440,7 @@
           href: extensions/microsoft-browser-extension-policy.md
         - name: 提示和技巧
           href: extensions/tips-and-tricks.md
-        - name: 疑难解答
+        - name: 问题排查
           href: extensions/troubleshooting.md
     - name: 发起
       href: hosting/toc.md
