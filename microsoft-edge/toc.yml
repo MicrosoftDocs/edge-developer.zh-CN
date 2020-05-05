@@ -257,7 +257,7 @@
               href: devtools-guide/elements/styles.md
             - name: 过
               href: devtools-guide/elements/computed.md
-            - name: 事件
+            - name: 活动
               href: devtools-guide/elements/events.md
             - name: DOM 断点
               href: devtools-guide/elements/dom-breakpoints.md
@@ -488,7 +488,7 @@
         - name: Microsoft Edge 用户代理字符串
           href: web-platform/user-agent-string.md
     - name: WebVR 开发人员指南
-      href: 'https://docs.microsoft.com/microsoft-edge/webvr/'
+      href: /microsoft-edge/webvr/index
     - name: Windows 运行时（WinRT）
       href: windows-runtime/toc.yml
       topicHref: windows-runtime/index.md
