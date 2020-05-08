@@ -3,7 +3,7 @@ description: 了解 Microsoft Edge （EdgeHTML）开发工具
 title: Microsoft Edge （EdgeHTML）开发人员工具
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,12 @@ keywords: microsoft edge、web 开发、f12 工具、devtools
 experimental: true
 experiment_id: 51fe4b97-3e55-41
 localization_priority: Priority
-ms.openlocfilehash: 1abc01af5c1b058687d9ba1402911d4367b6e2b3
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 56edfa3aa39fc20d37d95fb8fde029a702732336
+ms.sourcegitcommit: 985cfb79a64951afd5beb7981b26afbed30a8972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563519"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "10629502"
 ---
 # Microsoft Edge （EdgeHTML）开发人员工具  
 
@@ -28,7 +28,11 @@ Microsoft Edge \ （EdgeHTML \） DevTools 是使用[TypeScript][|::ref1::|Index
 
 ## 核心工具  
 
-![Microsoft Edge \ （EdgeHTML \） DevTools][ImageDevtoolsEdgehtml]  
+:::image type="complex" source="./devtools-guide/media/devtools.png" alt-text="Microsoft Edge （EdgeHTML） DevTools":::
+   Microsoft Edge （EdgeHTML） DevTools
+:::image-end:::
+
+<!--![Microsoft Edge \(EdgeHTML\) DevTools][ImageDevtoolsEdgehtml]  -->  
 
 Microsoft Edge \ （EdgeHTML \） DevTools 包括：  
 
@@ -45,8 +49,8 @@ Microsoft Edge \ （EdgeHTML \） DevTools 包括：
 请继续发送您的[反馈和功能请求](#feedback)！  
 
 > [!TIP]
-> [通过任何浏览器免费在 Microsoft Edge \ （EdgeHTML \）中进行测试][BrowserstackEdgehtml]：  
-> 我们与[BrowserStack][BrowserstackEdgehtml]合作，在 Microsoft Edge \ （EdgeHTML \）中提供免费实时和自动测试。  
+> [通过任何浏览器免费在 Microsoft Edge \ （EdgeHTML \）中进行测试][BrowserstackEdgehtml]。  
+> Microsoft Edge 团队与[BrowserStack][BrowserstackEdgehtml]合作，在 Microsoft Edge \ （EdgeHTML \）中提供免费实时实时和自动测试。  
 
 ## Microsoft Store 应用  
 
@@ -54,9 +58,13 @@ Microsoft Edge \ （EdgeHTML \） DevTools 包括：
 
 ### 本地调试  
 
-若要在本地调试页面，只需启动 Microsoft Edge DevTools 应用。  选择器的**本地**面板将显示所有活动的 EdgeHTML 内容进程，包括打开的边缘浏览器选项卡、运行[PWAs][PwasEdgehtmlIndex] \`WWAHost.exe` （进程 \）和[web 视图][HostingWebview]控件。  单击所需的目标以附加并打开 DevTools 的新选项卡实例。  
+若要在本地调试页面，只需启动 Microsoft Edge DevTools 应用。  选择器的**本地**面板显示所有活动的 EdgeHTML 内容进程，包括打开的边缘浏览器选项卡、运行[PWAs][PwasEdgehtmlIndex] \`WWAHost.exe` （进程 \）和[web 视图][HostingWebview]控件。  选择想要附加的目标，然后打开新的 DevTools 选项卡实例。  
 
-![DevTools app 本地面板][ImageDevtoolsGuideEdgehtmlChooselocal]  
+:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools app 本地面板":::
+   DevTools app 本地面板
+:::image-end:::
+
+<!--![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  -->  
 
 ### 远程调试  
 
@@ -64,15 +72,17 @@ Microsoft Edge DevTools 应用通过我们新发布的[DevTools 协议][Devtools
 
 若要开始使用，请查看[DevTools 协议][DevtoolsProtocolEdgehtmlIndex]文档的[*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview]部分。  
 
-![DevTools 应用程序远程面板][DevtoolsGuideEdgehtmlRemote]  
+:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools 应用程序远程面板":::
+   DevTools 应用程序远程面板
+:::image-end:::
 
-## 反馈  
-
-请向我们发送您的反馈，以便我们可以继续为您改进 Microsoft Edge \ （EdgeHTML \） DevTools！  只需打开 "工具`F12`" （），然后单击 "[发送反馈](#microsoft-edge-edgehtml-developer-tools)" 按钮。  
-
-成为[Windows 预览体验成员][WindowsInsiderProgram]，预览[即将 DevTools 的最新功能][DevtoolsGuideEdgehtmlWhatsnew]。  使用 Windows 反馈中心应用对常规 Windows 建议和问题进行发布、向上投票、跟踪和获取支持。  
+<!--![DevTools app Remote panel][ImageDevtoolsGuideEdgehtmlRemote]  -->  
 
 ## 常规快捷方式  
+
+> [!IMPORTANT]
+> 所有快捷方式均已在最新版本的 Windows 中验证。  
+> 如果您无法使用快捷方式，请更新您的 Windows 副本。  
 
 这些快捷方式控制主 DevTools 窗口，并且应在所有工具中运行。  
 
@@ -105,13 +115,19 @@ Microsoft Edge DevTools 应用通过我们新发布的[DevTools 协议][Devtools
 | 刷新页面 | `Ctrl`+`Shift`+`F5`, `Ctrl`+`R` |  
 
 > [!NOTE]
-> 如果你正在调试并在断点处暂停，则**刷新页面**操作将首先恢复运行时。
+> 如果在断点处调试和暂停，则**刷新页面**操作将首先恢复运行时。  
+
+## 反馈  
+
+请发送反馈，帮助您改善 Microsoft Edge \ （EdgeHTML \） DevTools！  只需打开 "工具`F12`"，然后选择 "[发送反馈](#microsoft-edge-edgehtml-developer-tools)" 按钮。  
+
+成为[Windows 预览体验成员][WindowsInsiderProgram]，预览[即将 DevTools 的最新功能][DevtoolsGuideEdgehtmlWhatsnew]。  使用 Windows 反馈中心应用对常规 Windows 建议和问题进行发布、向上投票、跟踪和获取支持。  
 
 <!-- image links  -->  
 
-[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge （EdgeHTML） DevTools"  
-[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "DevTools app 本地面板"  
-[DevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools 应用程序远程面板"  
+<!--[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge (EdgeHTML) DevTools"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "DevTools app Local panel"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools app Remote panel"  -->  
 
 <!-- links  -->  
 

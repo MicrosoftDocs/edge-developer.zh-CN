@@ -3,18 +3,18 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: microsoft edge、隐私、白皮书、信任
 localization_priority: Priority
-ms.openlocfilehash: eb0a59e16e9493c4d9ba0b5c27f8023accd50bcc
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: f2e4143d706eb5cdd26160f98f62ea7384278413
+ms.sourcegitcommit: 985cfb79a64951afd5beb7981b26afbed30a8972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581628"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "10629509"
 ---
 # Microsoft Edge 隐私白皮书  
 
@@ -30,7 +30,7 @@ ms.locfileid: "10581628"
 
 ![AddressBar](./media/whitepaper-media/address-bar.png)  
 
-为了使浏览和搜索更快，在地址栏中键入时，键入的字符将发送到您的默认搜索提供程序，以供搜索提供程序发送回建议的搜索查询。  地址栏将你的条目分类为 URL、搜索或未知。  此信息以及你选择的建议、所选内容的位置以及其他地址栏数据将发送到你的默认搜索提供程序。  你的浏览器唯一的 resettable 标识符，你的设备和其他服务标识符的唯一标识符将随此数据一起发送，以了解搜索查询和查询会话。  您的 IP 地址和 cookie 将发送到您的默认搜索提供商以增加搜索结果的相关性。  当你选择地址栏时，将向你的默认搜索提供程序发送信号，以通知提供商准备提供建议。  除非您的搜索提供商是必应，否则不会向 Microsoft 发送键入的字符和搜索查询。  如果你拥有打开的 "我的键入字符" 设置的 "**显示我的搜索和网站建议**"，则仅将此数据发送到默认搜索提供程序。  关闭此功能将阻止键入的字符发送到默认的搜索提供程序。  你的搜索查询仍将发送到你的默认搜索提供程序，以提供搜索结果。  如果 Microsoft Edge 检测到你在地址栏中键入内容可能包含敏感信息（如身份验证凭据、本地文件名或通常加密的 URL 数据），则不会发送键入的文本。  如果你已**通过发送崩溃报告和有关如何使用浏览器设置的数据来改进 microsoft 产品**，microsoft Edge 将收集有关地址栏的诊断数据，例如提供多少个查询，而与你的搜索提供商无关。  
+为了使浏览和搜索更快，在地址栏中键入时，键入的字符将发送到您的默认搜索提供程序，以供搜索提供程序发送回建议的搜索查询。  地址栏将你的条目分类为 URL、搜索或未知。  此信息以及你选择的建议、所选内容的位置以及其他地址栏数据将发送到你的默认搜索提供程序。  如果你的搜索提供商是必应，则会随此数据一起发送 resettable 的唯一标识符，以了解搜索查询和查询会话。  其他面向服务标识符将发送到您的默认搜索引擎以完成搜索建议。  您的 IP 地址和 cookie 将发送到您的默认搜索提供商以增加搜索结果的相关性。  当你选择地址栏时，将向你的默认搜索提供程序发送信号，以通知提供商准备提供建议。  除非您的搜索提供商是必应，否则不会向 Microsoft 发送键入的字符和搜索查询。  如果你拥有打开的 "我的键入字符" 设置的 "**显示我的搜索和网站建议**"，则仅将此数据发送到默认搜索提供程序。  关闭此功能将阻止键入的字符发送到默认的搜索提供程序。  你的搜索查询仍将发送到你的默认搜索提供程序，以提供搜索结果。  如果 Microsoft Edge 检测到你在地址栏中键入内容可能包含敏感信息（如身份验证凭据、本地文件名或通常加密的 URL 数据），则不会发送键入的文本。  如果你已**通过发送崩溃报告和有关如何使用浏览器设置的数据来改进 microsoft 产品**，microsoft Edge 将收集有关地址栏的诊断数据，例如提供多少个查询，而与你的搜索提供商无关。  
 
 击键和您访问的网站将存储在每个配置文件的设备本地。  您可以在中`edge://settings/clearBrowserData`删除这些数据，选中 "**浏览历史记录**" 复选框，然后选择 "**立即清除**"。  如果 "必应" 是你的默认搜索提供程序，并且你已登录 Bing，则可以通过[Microsoft 隐私仪表板](https://account.microsoft.com/account/privacy?ref=privacy-edge-browse&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2Fbrowse%3Fref%3Dprivacy-edge-browse&destrt=privacy-dashboard)删除搜索。  你可以清除中`edge://history`的浏览历史记录，以删除这些网站，使其在地址栏中显示为 "建议"。  在 Windows 10 上，你可以通过转到 "**开始** > **设置** > **隐私** > **诊断 \ & 反馈**"，然后在 "**删除诊断数据**" 下选择 "**删除**"，清除 Microsoft 从地址栏收集的数据和搜索建议功能。  所有其他数据将在36个月后删除。  
 
@@ -58,9 +58,9 @@ Microsoft Edge 中的自动填充可让你保存密码、支付信息、地址�
 
 使用来宾模式时，自动填充不可用，并且不会添加新的自动填充条目。  浏览 InPrivate 时，Microsoft Edge 会提供自动填充条目，但不会添加新的自动填充条目。  
 
-## 为  
+## Cast  
 
-Microsoft Edge 中的 "强制转换" 允许您使用 Google Cast 将媒体显示到另一个屏幕。  您可以从 "设置"**和 "更多（...）** " 访问此功能。 > **更多工具** > **将媒体转换为设备**。  强制转换不使用任何 Microsoft 或 Google 服务。  
+Microsoft Edge 中的 "强制转换" 允许您使用 Google Cast 将媒体显示到另一个屏幕。  您可以从 "设置"**和 "更多（...）** " 访问此功能。 > **更多工具** > **将媒体转换为设备**。  强制转换不使用任何 Microsoft 或 Google 服务。 
 
 ## 集锦  
 
@@ -104,7 +104,7 @@ Microsoft Edge 生成此诊断数据并将其存储在本地，并定期将其�
 
 诊断数据存储在 Microsoft 服务器上最多可达18个月。  在 Windows 10 中，你可以通过转到 "**删除诊断数据**" 设置下的 "**开始** > **设置** > **隐私** > **诊断" & 反馈**，然后选择 "**删除**" 来删除诊断数据。  "删除诊断数据" 功能仅在 Windows 10 2018 更新和更高版本上受支持。  有关详细信息，请参阅[Windows 10 中的 "诊断"、"反馈" 和 "隐私"](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)。  
 
-对于 Windows 10 稳定和 Microsoft Edge Beta 频道，此设置由你的 Windows 诊断数据设置确定。  这会反映在 Microsoft Edge 隐私和服务设置中。  转到 "**开始** > **设置** > **隐私** > **诊断 \ & 反馈**"，更改此 Windows 设置。  在所有其他频道和平台上，你可以在中`edge://settings/privacy`控制此诊断数据收集，并**通过发送崩溃报告和有关如何使用浏览器设置的数据来打开或关闭改进 Microsoft 产品**。  对于与你的设备上的 Microsoft Edge 安装相关联的所有配置文件，此设置是相同的。  此设置不会在设备之间同步。  该设置适用于 InPrivate 浏览和来宾模式。  如果您的设备是使用由您的组织设置的组策略管理的， `edge://settings/privacy`则会反映在中。  
+对于 Windows 10 上的 Microsoft Edge，此设置由你的 Windows 诊断数据设置确定。  这会反映在 Microsoft Edge 隐私和服务设置中。  转到 "**开始** > **设置** > **隐私** > **诊断 \ & 反馈**"，更改此 Windows 设置。  在所有其他频道和平台上，你可以在中`edge://settings/privacy`控制此诊断数据收集，并**通过发送崩溃报告和有关如何使用浏览器设置的数据来打开或关闭改进 Microsoft 产品**。  对于与你的设备上的 Microsoft Edge 安装相关联的所有配置文件，此设置是相同的。  此设置不会跨设备同步。  此设置适用于 InPrivate 浏览和来宾模式。  如果您的设备是使用由您的组织设置的组策略管理的， `edge://settings/privacy`则会反映在中。  
 
 ## 数字权利管理和媒体许可证  
 
@@ -265,6 +265,11 @@ Microsoft Edge 让你可以通过在上一个浏览会话中打开最后一个�
 
 启动时不会还原 InPrivate 和来宾选项卡。  
 
+## 密码监视器
+Microsoft Edge 承诺在 web 上保持安全。  为了帮助保护您的个人信息，如果您已登录到 Microsoft Edge，则在第三方数据破坏中，密码监视器可以向您发出警告。  如果密码监视器处于打开状态，则你保存的凭据将在你的设备上本地进行哈希处理和加密，并通过 HTTPS 发送到 Microsoft 服务器，并与已知破坏的凭据的加密列表进行比较。  你的登录帐户标识符与你的哈希和加密凭据一起被安全地发送到密码监视器服务。  如果在已知的被破坏的凭据列表中发现凭据，Microsoft 会将加密的响应发送回你的 Microsoft Edge 版本，以提醒你的凭据已检测为攻击或入侵的一部分。  检查完成后，Microsoft 服务器上不会存储任何数据。   
+
+此功能仅适用于已登录到 Microsoft Edge 的用户。  Microsoft Edge 将要求您提供打开密码监视器的权限。  若要打开或关闭 "密码监视器"，请转到 Edge://passwords。
+
 ## 付款  
 
 Microsoft Edge 通过将您的付款信息保存到您的浏览器配置文件，并在浏览时使用此信息自动填写付款表单，帮助您提高工作效率。  当遇到类似的付款窗体时，Microsoft Edge 将使用此保存的信息填写表单。  信用卡和其他支付信息仅通过您的明确权限保存。  
@@ -355,11 +360,11 @@ SmartScreen 旨在帮助您安全浏览 web。  转到网站或下载文件时�
 
 SmartScreen 使用三种类型的信誉检查。  首先，SmartScreen 检查你访问的网站的 URL，以确定该网站是否属于热门流量或是否为已知危险的网站。  访问顶部流量网站时，SmartScreen 不会将 URL 发送到 SmartScreen 服务。  如果 URL 位于危险网站的本地列表中，则 SmartScreen 会阻止它，从而阻止加载恶意 web 内容的任何部分。  Microsoft Edge 定期将顶部流量和危险站点的更新列表下载到设备。  第二种类型的 URL 检查是对 SmartScreen 服务的异步信誉检查。  SmartScreen 对未分类为热门流量的所有 Url 执行此检查。  Microsoft Edge 传递 URL、有关网站的相关信息、你的设备的唯一标识符和 SmartScreen 服务的常规位置以确定网站的安全。  这使服务能够识别新的危险站点并掌握最新的安全威胁。  URL 检查的结果存储在设备上的本地，并且会在浏览器会话结束时自动清除。  所有对 SmartScreen 服务的请求都通过 TLS 加密进行。  
 
-第三，SmartScreen 检查下载的文件，以帮助防止损害你的设备。  下载完成后，SmartScreen 会同步执行二进制文件信誉检查。  Microsoft Edge 发送有关文件的信息，例如文件哈希、文件名、下载 URI 和设备特有的标识符被发送到 SmartScreen 以执行信誉检查。  所有 SmartScreen 请求都通过 TLS 加密进行。  SmartScreen 服务返回检查结果，该结果允许文件完全下载。  这些结果存储在设备上的本地。  
+第三，SmartScreen 检查下载的文件，以帮助防止损害你的设备。  下载完成后，SmartScreen 会同步执行二进制文件信誉检查。  Microsoft Edge 发送有关文件的信息，例如文件哈希、文件名、下载 URI 和设备特有的标识符被发送到 SmartScreen 以执行信誉检查。  所有 SmartScreen 请求都通过 TLS 加密进行。  SmartScreen 服务返回检查结果，该结果允许文件完全下载。  这些结果将本地存储在设备上。  
 
-SmartScreen 服务存储有关信誉检查的数据，并构建已知恶意 Url 和文件的数据库。  此数据存储在安全的 Microsoft 服务器上，并且仅用于 Microsoft 安全服务。  此数据从不用于以任何方式标识或确定目标。  清除浏览缓存将清除本地存储的 SmartScreen URL 数据。  清除下载历史记录将删除任何本地存储的 SmartScreen 数据（有关文件下载）。  
+SmartScreen 服务存储有关信誉检查的数据，并构建已知恶意 Url 和文件的数据库。  此数据存储在安全的 Microsoft 服务器上，仅用于 Microsoft 安全服务。  此数据从不用于以任何方式标识或确定目标。  清除浏览缓存将清除本地存储的 SmartScreen URL 数据。  清除下载历史记录将删除任何本地存储的 SmartScreen 数据（有关文件下载）。  
 
-默认情况下，将为 Microsoft Edge 启用 SmartScreen。  要关闭 SmartScreen，请在 "**Microsoft Defender SmartScreen** " `edge://settings/privacy`下的 "**服务** > " 下。  对于与你的设备上的 Microsoft Edge 安装相关联的所有配置文件，此设置是相同的。  此设置不会在设备之间同步。  该设置适用于 InPrivate 浏览和来宾模式。  如果您的设备是使用由您的组织设置的组策略管理的， `edge://settings/privacy`则会反映在中。  [了解有关 SmartScreen 的详细信息](https://support.microsoft.com/help/17443)。  
+默认情况下，将为 Microsoft Edge 启用 SmartScreen。  要关闭 SmartScreen，请在 "**Microsoft Defender SmartScreen** " `edge://settings/privacy`下的 "**服务** > " 下。  对于与你的设备上的 Microsoft Edge 安装相关联的所有配置文件，此设置是相同的。  此设置不会跨设备同步。  此设置适用于 InPrivate 浏览和来宾模式。  如果您的设备是使用由您的组织设置的组策略管理的， `edge://settings/privacy`则会反映在中。  [了解有关 SmartScreen 的详细信息](https://support.microsoft.com/help/17443)。  
 
 ### 阻止可能有害的应用  
 
@@ -408,7 +413,7 @@ Microsoft Edge 允许你安装由网站开发人员创建的 web 应用，并固
 
 ## WebView
 
-Microsoft Edge Web Edge 允许应用开发人员在 Windows 10 和 Windows 7 上的本机应用程序中托管 web 内容。  托管 Microsoft Edge web Edge 的应用程序可能会发送有关如何使用 Microsoft Edge web 平台和你在应用程序到 Microsoft 中访问的网站的诊断数据。  此诊断数据收集由你的帮助改进 Microsoft Edge 隐私和服务设置中的**Microsoft edge**设置确定。  若要为 Windows 10 的 "Microsoft Edge 稳定" 和 "Beta 频道" 关闭此诊断数据收集，请转到 "Windows 诊断数据设置"。  若要为所有其他频道关闭此诊断数据收集，请转`edge://settings/privacy`到正常浏览会话，然后**通过发送崩溃报告和有关如何使用浏览器的数据来关闭改进的 microsoft 产品**，并**通过发送有关在 Microsoft Edge 设置中访问的网站的信息来更好地进行搜索和 Microsoft 产品**。  托管 Microsoft Edge Web Edge 的应用程序可能会收集其他数据并拥有自己的数据集合管理和隐私策略。  
+Microsoft Edge Web Edge 允许应用开发人员在 Windows 10 和 Windows 7 上的本机应用程序中托管 web 内容。  托管 Microsoft Edge web Edge 的应用程序可能会发送有关如何使用 Microsoft Edge web 平台和你在应用程序到 Microsoft 中访问的网站的诊断数据。  此诊断数据收集由你的帮助改进 Microsoft Edge 隐私和服务设置中的**Microsoft edge**设置确定。  若要在 Windows 10 上关闭 Microsoft Edge 的诊断数据收集，请转到 Windows 诊断数据设置。  若要为所有其他平台关闭此诊断数据集，请转`edge://settings/privacy`到正常浏览会话，然后**通过发送崩溃报告和有关如何使用浏览器的数据来关闭改进的 microsoft 产品**，并**通过发送有关在 Microsoft Edge 设置中访问的网站的信息来更好地进行搜索和 Microsoft 产品**。  托管 Microsoft Edge Web Edge 的应用程序可能会收集其他数据并拥有自己的数据集合管理和隐私策略。  
 
 ## 您访问的用于产品和服务改进的网站  
 
@@ -416,7 +421,7 @@ Microsoft Edge Web Edge 允许应用开发人员在 Windows 10 和 Windows 7 上
 
 此诊断数据包括你访问的页面的 URL、网站指标、页面的标题、访问页面的方式、有关页面内容的信息以及有关页面导航的其他相关信息。  某些诊断数据附加了你的设备独有的标识符。  否则，诊断数据与你的浏览器独有的 resettable 标识符相关联。  这些标识符不包含您的个人信息。  Microsoft Edge 团队通过限制数据访问和/或擦除个人身份信息来尊重诊断数据的灵敏度。  若要在 Windows 10 设备上重置你的浏览器独有的标识符，你可以在 "从**完整**到**基本**的**诊断数据**" 下更改设置。  在其他平台上，每当您通过将您在 Microsoft Edge 设置中`edge://settings/privacy` **访问的网站的相关信息发送****到 "** **禁用**" 时，您的浏览器特有的 resettable 标识符将再次生成。  对于使用组织设置的组策略管理的设备，此重置功能可能会有所不同。  
 
-对于 Windows 10 稳定和 Microsoft Edge Beta 频道，此设置由你的 Windows 诊断数据设置确定。  这会反映在 Microsoft Edge 隐私和服务设置中。  你可以通过转到**启动** > **设置** > **隐私** > **诊断 \ & 反馈**来更改此 Windows 设置。  在所有其他频道和平台上，你可以`edge://settings/privacy` **通过发送有关你在 Microsoft Edge 设置中访问的网站的信息**，在中控制此诊断数据收集并打开或关闭更好的搜索和 Microsoft 产品。  对于与你的设备上的 Microsoft Edge 安装相关联的所有配置文件，此设置是相同的。  此设置不会在设备之间同步。  如果您的设备是使用由您的组织设置的组策略管理的， `edge://settings/privacy`则会反映在中。  
+对于 Windows 10 上的 Microsoft Edge，此设置由你的 Windows 诊断数据设置确定。  这会反映在 Microsoft Edge 隐私和服务设置中。  你可以通过转到**启动** > **设置** > **隐私** > **诊断 \ & 反馈**来更改此 Windows 设置。  在所有其他平台上，你可以`edge://settings/privacy` **通过发送有关你在 Microsoft Edge 设置中访问的网站的信息**，在中控制此诊断数据收集，并打开或关闭 "使搜索和 Microsoft 产品更好"。  对于与你的设备上的 Microsoft Edge 安装相关联的所有配置文件，此设置是相同的。  此设置不会跨设备同步。  如果您的设备是使用由您的组织设置的组策略管理的， `edge://settings/privacy`则会反映在中。  
 
 此诊断数据在传输过程中被加密，并以原始形式存储在最多30天的安全 Microsoft 服务器上。  诊断数据被取消识别和聚合，或者原始诊断数据被删除后。  已识别和聚合的诊断数据最多可存储2年，以继续改进 Microsoft 产品和服务。  由于不会收集此诊断数据或将其与 Microsoft 帐户一起存储，因此无法从 Microsoft 隐私仪表板查看或删除此诊断数据。  在 Windows 10 设备上，你可以请求删除与你的设备关联的诊断数据，方法是转到**开始** > **设置** > **隐私** > **诊断 \ & 反馈**，然后选择 "**删除诊断数据**" 下的 "**删除**"。  在其他平台上，此诊断数据将被删除或完全聚合，并在30天内进行匿名处理。  
 
@@ -424,11 +429,11 @@ Microsoft Edge Web Edge 允许应用开发人员在 Windows 10 和 Windows 7 上
 
 浏览 InPrivate 或来宾模式时，从不发送此诊断数据。  
 
-## Windows Defender 应用程序保护  
+## Windows Defender 应用程序防护  
 
 Windows Defender 应用程序防护 \ （WDAG \）是适用于组织的功能。  当 Windows Defender 应用程序防护处于打开状态时，Microsoft Edge 将在隔离的容器内打开不受信任的网站，以保护组织中的资源免受恶意网站或网络钓鱼攻击。  此功能仅适用于由你的组织管理的组策略，并且仅适用于 Windows 10 设备的最新版本。  WDAG 收集有关在隔离的容器中打开不受信任的网站的产品改进诊断数据，例如打开新应用程序防护窗口所需的时间。  
 
-有了你的权限，WDAG 还会收集有关如何使用浏览器的信息以及有关你所访问的网站的信息。  若要为 Windows 10 的 "Microsoft Edge 稳定" 和 "Beta 频道" 关闭此诊断数据收集，请转到 "Windows 诊断数据设置"。  若要为所有其他频道关闭此诊断数据收集，请转`edge://settings/privacy`到正常浏览会话，然后**通过发送崩溃报告和有关如何使用浏览器的数据来关闭改进的 microsoft 产品**，并**通过发送有关在 Microsoft Edge 设置中访问的网站的信息来更好地进行搜索和 Microsoft 产品**。  
+有了你的权限，WDAG 还会收集有关如何使用浏览器的信息以及有关你所访问的网站的信息。  若要在 Windows 10 上关闭 Microsoft Edge 的诊断数据收集，请转到 Windows 诊断数据设置。  若要为所有其他平台关闭此诊断数据集，请转`edge://settings/privacy`到正常浏览会话，然后**通过发送崩溃报告和有关如何使用浏览器的数据来关闭改进的 microsoft 产品**，并**通过发送有关在 Microsoft Edge 设置中访问的网站的信息来更好地进行搜索和 Microsoft 产品**。  
 
 ## Windows 信息保护  
 
