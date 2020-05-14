@@ -440,7 +440,7 @@
           href: extensions/microsoft-browser-extension-policy.md
         - name: 提示和技巧
           href: extensions/tips-and-tricks.md
-        - name: 问题排查
+        - name: 疑难解答
           href: extensions/troubleshooting.md
     - name: 发起
       href: hosting/toc.md
@@ -487,6 +487,8 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge 用户代理字符串
           href: web-platform/user-agent-string.md
+    - name: WebView2 （Chromium）（预览）
+      href: webview2/toc.yml
     - name: WebVR 开发人员指南
       href: /microsoft-edge/webvr/index
     - name: Windows 运行时（WinRT）
