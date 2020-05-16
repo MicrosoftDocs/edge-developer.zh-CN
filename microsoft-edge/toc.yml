@@ -450,6 +450,9 @@
       href: privacy-whitepaper.md
     - name: 渐进式 Web 应用程序（Chromium）
       href: progressive-web-apps-chromium/index.md
+      items:
+        - name: 开始使用 Pwa （Chromium）
+          href: progressive-web-apps-chromium/get-started.md
     - name: 渐进式 Web 应用程序（EdgeHTML）
       href: progressive-web-apps-edgehtml/index.md
       items:
