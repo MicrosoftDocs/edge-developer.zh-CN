@@ -10,14 +10,20 @@
       href: gettingstarted/winforms.md
 - name: 概念
   items:
+    - name: 分发我的应用程序
+      href: concepts/distribution.md
     - name: 版本控制
       href: concepts/versioning.md
 - name: 发行说明
   href: releasenotes.md
-- name: 动力
+- name: 路线图
+  href: roadmap.md
+- name: 如何
   items:
-    - name: WebDriver
-      href: tooling/webdriver.md
+    - name: 调试 WebView2
+      href: howto/Debug.md
+    - name: 使用边缘驱动程序实现自动化
+      href: howto/webdriver.md
 - name: 参考
   href: webview2-api-reference.md
   items:
