@@ -8,6 +8,10 @@
       href: gettingstarted/wpf.md
     - name: Windows 窗体
       href: gettingstarted/winforms.md
+- name: 概念
+  items:
+    - name: 版本控制
+      href: concepts/versioning.md
 - name: 发行说明
   href: releasenotes.md
 - name: 动力
