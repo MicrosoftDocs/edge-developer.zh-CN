@@ -3,17 +3,17 @@ description: Microsoft Edge WebView2 使用的版本化模型
 title: Microsoft Edge WebView2 的版本控制
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/18/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 8463ce403af069cf25dbf7b08bb49d44c1e54501
-ms.sourcegitcommit: f1aa8925f7985a2bbfd951f188a8c19c97e4ff6f
+ms.openlocfilehash: 78184d3c670aa39e0a7f4a31e1216b5bc730c16e
+ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "10659564"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "10659669"
 ---
 # 了解浏览器版本和 WebView2  
 
@@ -22,9 +22,7 @@ WebView2 依赖于 Microsoft Edge 才能正常工作。  每个 WebView2 SDK 都
 > [!NOTE]
 > WebView2 当前处于预览版中。  虽然 Microsoft Edge Web 服务团队致力于确保浏览器版本和 Sdk 之间的向后兼容性，但不保证某些较新版本的浏览器可能不支持旧版 SDK 版本。  如果浏览器版本和 Sdk 之间存在重大更改，Microsoft Edge Web 视图团队将显示[发行说明][Webview2Releasenotes]中的更改。  
 
-将来，Microsoft Edge Web 视图团队计划更改分布模型。  Microsoft Edge Web 视图团队计划从 WebView2 删除 Microsoft Edge 浏览器的直接依赖关系。  <!--To learn more, see [WebView2 Runtime][Webview2IndexEdgeRuntime] in the [Distribution][Webview2Distibution] section.  -->  
-
-<!--todo: dd link to distribution.md after publication  -->  
+将来，Microsoft Edge Web 视图团队计划更改分布模型。  Microsoft Edge Web 视图团队计划从 WebView2 删除 Microsoft Edge 浏览器的直接依赖关系。  若要了解详细信息，请参阅[分布][Webview2Distibution]部分中的[WebView2 运行时][Webview2IndexEdgeRuntime]。  
 
 ## 实验性 API  
 
@@ -36,8 +34,8 @@ WebView2 依赖于 Microsoft Edge 才能正常工作。  每个 WebView2 SDK 都
 
 <!--links -->
 
-[Webview2Distibution]: ./distribution.md "不存在 |Microsoft 文档"  
-[Webview2IndexEdgeRuntime]: ../index.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 运行时-Microsoft Edge WebView2 （开发者预览版） |Microsoft 文档"  
+[Webview2Distibution]: ./distribution.md "使用 WebView2 | 的应用程序的分发Microsoft 文档"  
+[Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 运行时-使用 WebView2 | 的应用程序分发Microsoft 文档"  
 [Webview2ReferenceWin3209488Experimental]: ../reference/win32/0-9-488-reference-webview2.md#experimental "实验性引用（WebView2） |Microsoft 文档"  
 [Webview2Releasenotes]: ../releasenotes.md "WebView2 SDK 的发行说明 |Microsoft 文档"  
 

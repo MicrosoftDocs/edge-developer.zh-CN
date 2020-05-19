@@ -3,17 +3,17 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: Microsoft Edge WebView2 for Win32、WPF 和 WinForms 的发行说明
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 14030d3dde8c4e68c0790073dc38e5c856e2a091
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 255f8d56ae1a4b77a87697b9cd3814380dd06994
+ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653200"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "10659662"
 ---
 # WebView2 SDK 的发行说明  
 
@@ -39,8 +39,8 @@ ms.locfileid: "10653200"
 
 **更新 NuGet 程序包后重新编译你的应用。**
 
-* **公告：** 从即将推出的 Microsoft Edge 版本83开始，长时间浏览器将不再面向稳定的浏览器通道。 相反，它将针对另一组二进制文件（即品牌[Microsoft Edge WebView2 运行时](./index.md#microsoft-edge-webview2-runtime)），它可以通过当前正在开发的安装程序进行链安装。 [应用分布](./index.md#app-distribution)中的更多详细信息。
-* **公告：** 前进后，我们将发布两个程序包：一个预发布程序包，其中包含实验性 Api （供你试用）和具有稳定 Api 的稳定发布程序包（你可以依赖）。 签出[Microsoft Edge WEBVIEW2 SDK](./index.md#microsoft-edge-webview2-sdk)以了解差异。
+* **公告：** 从即将推出的 Microsoft Edge 版本83开始，长时间浏览器将不再面向稳定的浏览器通道。 相反，它将针对另一组二进制文件（即品牌[Microsoft Edge WebView2 运行时](./concepts/distribution.md#microsoft-edge-webview2-runtime)），它可以通过当前正在开发的安装程序进行链安装。 [应用分布](./concepts/distribution.md)中的更多详细信息。
+* **公告：** 前进后，我们将发布两个程序包：一个预发布程序包，其中包含实验性 Api （供你试用）和具有稳定 Api 的稳定发布程序包（你可以依赖）。 签出[Microsoft Edge WEBVIEW2 SDK](./concepts/versioning.md)以了解差异。
 * **重大更改：** 为了确保我们的 API 与 Windows API 命名约定相一致，我们已更新以下接口的名称：
   * CORE_WEBVIEW2_ * 前缀现在 COREWEBVIEW2_ *。
   * [GetCoreWebView2BrowserVersionInfo](reference/win32/0-9-430/webview2-idl.md#getcorewebview2browserversioninfo)现已[GetAvailableCoreWebView2BrowserVersionString](reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring)
