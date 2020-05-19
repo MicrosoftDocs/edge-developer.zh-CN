@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 4b64509e63acb966a95c32c4560c3ddcefebd5e4
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: bc55c5a731ab6cba8f9be15208029aad0ad5357a
+ms.sourcegitcommit: a75e062b71831ea850c85287a8d7d7ce3b55ec84
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659683"
+ms.locfileid: "10659742"
 ---
 # Microsoft Edge WebView2 路线图
 
@@ -33,7 +33,7 @@ WebView2 团队有几个重要工作要做：
 3.  常规可用性 
     *   Win32 C/c + + （2020年4季度）
     *   .NET （第4季度2020）
-    *   WinUI 3.0 （Q2 2021）
+    *   [WinUI 3。0](https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md)
 
 ## WebView2 运行时 & 安装程序
 
