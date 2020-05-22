@@ -3,17 +3,17 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: Microsoft Edge WebView2 控件
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows Forms、WinForms、WPF、.NET
-ms.openlocfilehash: 184a64fde28345cd52dd6d772284f0393114ec02
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 4f28ef64bb2936bc6c9a089ea2574070738fc79d
+ms.sourcegitcommit: 8f5c9255dadc2a9bb22c3201d15b57d84851fe64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659634"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "10671636"
 ---
 # Microsoft Edge WebView2 简介（预览版）  
 
@@ -104,7 +104,7 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 *   .NET Core 3.0 或更高版本  
 *   [WinUI 3。0](/uwp/toolkits/winui3/)  
 
-Mun 运行的是 Windows 10、Windows 8.1、windows 8、windows 7、windows server 2016、Windows server 2012/2012R2 或 Windows Server 2008 R2。   
+必须运行 Windows 10、Windows 8.1、Windows 8、windows 7、windows server 2016、Windows server 2012/2012R2 或 Windows Server 2008 R2。   
 
 ## 后续步骤  
 
