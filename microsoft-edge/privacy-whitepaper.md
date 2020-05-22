@@ -3,18 +3,18 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: microsoft edge、隐私、白皮书、信任
 localization_priority: Priority
-ms.openlocfilehash: 0849d51c14be78a9e261ea0fad426e126a1eea93
-ms.sourcegitcommit: c5f98907ccff78e0c615f6d664febce74cda8b68
+ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
+ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10658815"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673775"
 ---
 # Microsoft Edge 隐私白皮书  
 
@@ -70,9 +70,7 @@ Microsoft Edge 每天24小时下载支持的网站的列表，其中存在特殊
 
 通过清除中的 "**清除浏览数据**" 设置下的缓存数据，可以删除设备上存储的模板 `edge://settings/privacy` 。
 
-<!--  
-If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
+如果在 "集合" 中打开 "**显示 Pinterest 建议**"，则集合将使用你的集合的标题执行 Microsoft 必应搜索，以查找相关的 Pinterest 主题页面。  Microsoft Edge 不会将有关您的集合的数据发送到 Pinterest。  你可以通过转到 `edge://settings/privacy` 和关闭**集合中的 "显示建议**" 来删除建议并停止搜索 Pinterest 主题页面。  
 
 使用 InPrivate 浏览或来宾模式时，集合不可用。  
 
@@ -189,7 +187,7 @@ Microsoft Edge 支持[地理位置 API](https://w3.org/TR/geolocation-api)，该
 
 ![位置](./media/whitepaper-media/geolocation2.png)  
 
-如果你允许与网站共享你的位置，Microsoft Edge 会将本地网络信息（如你的 IP 地址）和附近的 Wi-fi 访问点发送到 Microsoft 位置服务。  Microsoft 服务使用该信息估计地理位置坐标。  然后，此地理位置估计将与您同意与其共享您所在位置的网站共享。  在 Windows 10 上，如果你启用了[windows 位置设置](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy)，microsoft Edge 将仅使用 microsoft location 服务。  
+如果你允许与网站共享你的位置，Microsoft Edge 会将本地网络信息（如你的 IP 地址）和附近的 Wi-fi 访问点发送到 Microsoft 位置服务。  Microsoft 服务使用该信息估计地理位置坐标。  地理位置估计将与您同意与其共享您所在位置的网站共享。  在 Windows 10 上，如果打开 "**允许访问此设备上的位置**" 和 "**允许应用访问您**在**Windows**设置中的**位置**设置中的位置"，Microsoft Edge 将为网站提供更精确的位置。  如果关闭 "**允许访问此设备上的位置**" 和 "允许**应用访问您的位置**"，将向网站提供一个近似位置。  该信息仅与以前允许查看您所在位置的网站共享。  [Windows 位置设置](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy)。  
 
 当向 Microsoft location 服务发出请求时，将使用新的随机生成的 ID。  Microsoft Edge 位置服务不会在任何时间段内存储地理位置坐标。  
 
