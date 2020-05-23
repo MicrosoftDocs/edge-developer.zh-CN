@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 01d92322a85e38dab3c502e8dd76729fef8400b1
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 6e66d90c3b821ee3656466ccaf3c9a079dda5030
+ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652912"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "10673951"
 ---
 # WPF 中的 WebView2 入门（预览版）  
 
@@ -23,7 +23,7 @@ ms.locfileid: "10652912"
 
 请确保在继续之前安装了以下先决条件列表：  
 
-* 安装在 Windows 10、Windows 8.1 或 Windows 7 上的[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download/) 。  Microsoft Edge Web 视图团队建议使用 "未带" 通道。  
+* 安装在 Windows 10、Windows 8.1 或 Windows 7 上的[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download/)的未安装频道。 
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 或更高版本。  
 
 ## 步骤 1-创建单个窗口应用程序
