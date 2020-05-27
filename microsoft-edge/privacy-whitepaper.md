@@ -3,18 +3,18 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: microsoft edge、隐私、白皮书、信任
 localization_priority: Priority
-ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
-ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
+ms.openlocfilehash: 6aba8f6c1ae7212d5af702bcf13ff9dde6b8659b
+ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673775"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "10678223"
 ---
 # Microsoft Edge 隐私白皮书  
 
@@ -86,7 +86,7 @@ Microsoft Edge 每天24小时下载支持的网站的列表，其中存在特殊
 
 本地存储在设备上的崩溃诊断数据可能会从文件系统中清除 `edge://crashes` 。  
 
-若要在 Windows 10 上关闭崩溃诊断数据收集，请转到**诊断 \ &** windows 诊断 \ & 反馈设置中的反馈。  对于所有其他平台上的 Microsoft Edge 版本，请转到 `edge://settings/privacy` "**通过发送崩溃报告和有关使用浏览器**设置的数据" 来关闭改进 Microsoft 产品。  也可以通过[您的组织管理的组策略](/deployedge/microsoft-edge-privacy-policy)为企业关闭此诊断数据收集。  
+若要在 Windows 10 上关闭崩溃诊断数据收集，请转到**诊断 \ &** windows 诊断 \ & 反馈设置中的反馈。  对于所有其他平台上的 Microsoft Edge 版本，请转到 `edge://settings/privacy` "**通过发送崩溃报告和有关使用浏览器**设置的数据" 来关闭改进 Microsoft 产品。  也可以通过[您的组织管理的组策略](/deployedge/microsoft-edge-enterprise-privacy-settings)为企业关闭此诊断数据收集。  
 
 ## 有关如何使用浏览器的诊断数据  
 
