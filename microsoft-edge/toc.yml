@@ -68,6 +68,8 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+            - name: Microsoft Edge 84
+              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
         - name: IE 模式
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D 视图
@@ -132,6 +134,8 @@
               href: devtools-guide-chromium/storage/websql.md
             - name: 缓存
               href: devtools-guide-chromium/storage/cache.md
+        - name: 问题
+          href: devtools-guide-chromium/issues/index.md
         - name: 命令菜单
           href: devtools-guide-chromium/command-menu/index.md
         - name: 移动模拟
@@ -440,7 +444,7 @@
           href: extensions/microsoft-browser-extension-policy.md
         - name: 提示和技巧
           href: extensions/tips-and-tricks.md
-        - name: 疑难解答
+        - name: 故障排除
           href: extensions/troubleshooting.md
     - name: 发起
       href: hosting/toc.md
