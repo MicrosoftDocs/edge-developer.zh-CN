@@ -54,11 +54,11 @@ Microsoft Edge \ （EdgeHTML \） DevTools 包括：
 
 ## Microsoft Store 应用  
 
-**Microsoft Edge \ （EdgeHTML \） DevTools** [现在可][DevtoolsGuideEdgehtmlWhatsnew]作为 microsoft Store 中的独立[Windows 10 应用][MicrosoftStoreEdgeDevtoolsPreview]，除了浏览器 \ （`F12`\）工具体验。  使用应用商店版本时，将出现一个**选择器**面板，用于附加到打开本地和远程页面目标以及选项卡式布局，以便在 DevTools 实例之间轻松切换。  
+**Microsoft Edge \ （EdgeHTML \） DevTools** [现在可][DevtoolsGuideEdgehtmlWhatsnew]作为 microsoft Store 中的独立[Windows 10 应用][MicrosoftStoreEdgeDevtoolsPreview]，除了浏览器 \ （ `F12` \）工具体验。  使用应用商店版本时，将出现一个**选择器**面板，用于附加到打开本地和远程页面目标以及选项卡式布局，以便在 DevTools 实例之间轻松切换。  
 
 ### 本地调试  
 
-若要在本地调试页面，只需启动 Microsoft Edge DevTools 应用。  选择器的**本地**面板显示所有活动的 EdgeHTML 内容进程，包括打开的边缘浏览器选项卡、运行[PWAs][PwasEdgehtmlIndex] \`WWAHost.exe` （进程 \）和[web 视图][HostingWebview]控件。  选择想要附加的目标，然后打开新的 DevTools 选项卡实例。  
+若要在本地调试页面，只需启动 Microsoft Edge DevTools 应用。  选择器的**本地**面板显示所有活动的 EdgeHTML 内容进程，包括打开的边缘浏览器选项卡、运行[PWAs][PwasEdgehtmlIndex] \ （ `WWAHost.exe` 进程 \）和[web 视图][HostingWebview]控件。  选择想要附加的目标，然后打开新的 DevTools 选项卡实例。  
 
 :::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools app 本地面板":::
    DevTools app 本地面板
@@ -119,7 +119,7 @@ Microsoft Edge DevTools 应用通过我们新发布的[DevTools 协议][Devtools
 
 ## 反馈  
 
-请发送反馈，帮助您改善 Microsoft Edge \ （EdgeHTML \） DevTools！  只需打开 "工具`F12`"，然后选择 "[发送反馈](#microsoft-edge-edgehtml-developer-tools)" 按钮。  
+请发送反馈，帮助您改善 Microsoft Edge \ （EdgeHTML \） DevTools！  只需打开 "工具" `F12` ，然后选择 "[发送反馈](#microsoft-edge-edgehtml-developer-tools)" 按钮。  
 
 成为[Windows 预览体验成员][WindowsInsiderProgram]，预览[即将 DevTools 的最新功能][DevtoolsGuideEdgehtmlWhatsnew]。  使用 Windows 反馈中心应用对常规 Windows 建议和问题进行发布、向上投票、跟踪和获取支持。  
 

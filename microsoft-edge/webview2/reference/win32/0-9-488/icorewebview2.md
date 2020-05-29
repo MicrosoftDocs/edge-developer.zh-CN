@@ -127,7 +127,7 @@ WebView2 必须在 UI 线程上创建。 专门使用消息泵的线程。 所�
 
 回调包括事件处理程序和完成处理程序按顺序执行。 也就是说，如果你有一个事件处理程序正在运行并开始消息循环，则没有其他事件处理程序或完成回调将开始执行 reentrantly。
 
-## 安全
+## 安全性
 
 在使用 ExecuteScript、PostWebMessageAsJson、PostWebMessageAsString 或任何其他方法将信息发送到 Web 视图之前，请始终检查 Web 视图的 Source 属性。 在导致导航的页面中，Web 视图可能会通过与页面或脚本交互的最终用户导航到另一个页面。 同样，请小心处理 AddScriptToExecuteOnDocumentCreated。 所有将来的导航都将运行此脚本，如果它提供对仅适用于特定来源的信息的访问权限，则任何 HTML 文档都可能具有访问权限。
 
