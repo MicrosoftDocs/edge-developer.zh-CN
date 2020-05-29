@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: f62fa25dab7ee1e89f268e4b77a9c0612cac665f
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 0ab152e52b5e5d89cf493ff525ce53d9ab174e6d
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653219"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685678"
 ---
 # WebView2 （开发人员预览版）入门
 
@@ -219,9 +219,9 @@ nullptr);
 
 若要了解详细信息：
 
-* 签出[WEBVIEW2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)，获取我们的 sdk 功能的全面示例。
+* 签出[WEBVIEW2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)，获取 WebView2's 功能的全面示例。
 * 签出[WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser)使用 WebView2 创建的应用程序。
-* 有关 out API 的详细信息，请浏览[api 参考](../reference/win32/0-9-488-reference-webview2.md)。  
+* 有关我们的 API 的详细信息，请浏览[api 参考](../reference/win32/0-9-488-reference-webview2.md)。  
 
 ## 与 WebView2 团队取得联系  
 

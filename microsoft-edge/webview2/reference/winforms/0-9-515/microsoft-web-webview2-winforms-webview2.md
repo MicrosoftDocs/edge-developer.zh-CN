@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 适用于 Win32 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 25ea8367aa9d64d0a1066cf8c1564f4d9c9f05ed
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
+ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652806"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10687802"
 ---
 # WinForms 类 WebView2 WebView2 
 
@@ -50,9 +50,6 @@ class Microsoft.Web.WebView2.WinForms.WebView2
 [重载](#reload) | 重新加载 WebView2 的顶层文档。
 [停止](#stop) | 停止 WebView2 中的任何正在进行的导航。
 [WebView2](#webview2) | 创建新的 WebView2 WinForms 控件。
-[OnEnter](#onenter) | 受保护的焦点处理程序。
-[OnSizeChanged](#onsizechanged) | 受保护的 SizeChanged 处理程序。
-[OnVisibleChanged](#onvisiblechanged) | 受保护的 VisibilityChanged 处理程序。
 
 ## 成员
 
@@ -216,22 +213,4 @@ Web 视图的缩放系数。
 > 公共[WebView2](#webview2)（）
 
 构造后，CoreWebView2 属性为 null。 调用[EnsureCoreWebView2Async](#ensurecorewebview2async)以初始化基础 CoreWebView2。
-
-#### OnEnter 
-
-受保护的焦点处理程序。
-
-> protected override void [OnEnter](#onenter)（EventArgs e）
-
-#### OnSizeChanged 
-
-受保护的 SizeChanged 处理程序。
-
-> protected override void [OnSizeChanged](#onsizechanged)（EventArgs e）
-
-#### OnVisibleChanged 
-
-受保护的 VisibilityChanged 处理程序。
-
-> protected override void [OnVisibleChanged](#onvisiblechanged)（EventArgs e）
 

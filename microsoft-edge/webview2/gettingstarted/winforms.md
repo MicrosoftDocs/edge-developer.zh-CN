@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: e17139d9d2b556d8048fb0043b88b56430c93091
-ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
+ms.openlocfilehash: 6c53b66dd9f849384f24c2ae879f28231a25f481
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "10673949"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685685"
 ---
 # Windows 窗体应用中的 WebView2 入门（预览版）  
 
@@ -24,7 +24,7 @@ ms.locfileid: "10673949"
 请确保在继续之前安装了以下先决条件列表：  
 
 * 安装在 Windows 10、Windows 8.1 或 Windows 7 上的[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download/)的未安装频道。 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2015 或更高版本。
+* [Visual Studio](https://visualstudio.microsoft.com/) 2017 或更高版本。
 
 > [!NOTE]
 > 如果通过**Windows Forms .Net Core 3.0 或 .net 5**进行开发，请下载[Visual Studio （预览版）](https://visualstudio.microsoft.com/vs/preview/)
@@ -290,9 +290,12 @@ async void InitializeAsync()
 
 恭喜，你已构建了你的第一个 WebView2 应用！  
 
-## 后续步骤  
+## 后续步骤 
 
-有关本演练中未涉及的 WebView2 功能的详细信息，请参阅[API 参考](../reference/dotnet/0-9-515-reference-webview2.md)。
+* 签出[WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples)存储库，获取 WebView2's 功能的全面示例
+* 签出[api 参考](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md)了解有关我们的 api 的更多详细信息
+* 签出[WebView2 资源](../index.md#next-steps)列表以了解有关 WebView2 的详细信息
+
 
 ## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  
 

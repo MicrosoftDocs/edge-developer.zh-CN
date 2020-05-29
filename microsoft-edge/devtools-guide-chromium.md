@@ -3,17 +3,17 @@ description: 了解 Microsoft Edge （Chromium）开发工具
 title: Microsoft Edge （Chromium）开发人员工具
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 178f72fbc47f712882de6f9564478953f4834890
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+ms.openlocfilehash: 0034e23885020aae5047c69219bd51235a5882b0
+ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645306"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "10684683"
 ---
 # Microsoft Edge （Chromium）开发人员工具  
 
@@ -26,8 +26,6 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 :::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge （Chromium） DevTools":::
    Microsoft Edge （Chromium） DevTools
 :::image-end:::
-
-<!--![Microsoft Edge (Chromium) DevTools](./devtools-guide-chromium/media/devtools.png)  -->  
 
 如果你要签出下一版本的 Microsoft Edge，并且以前是在 Microsoft Edge \ （EdgeHTML \）中开发的，则你现在具有一些非常好的新工具，可让你在 Microsoft Edge 中更轻松、更快地构建和测试网站！  
 
@@ -54,8 +52,6 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge （Chromium） DevTools 核心工具":::
    Microsoft Edge （Chromium） DevTools 核心工具
 :::image-end:::
-
-<!--![Microsoft Edge \(Chromium\) DevTools core tools](./devtools-guide-chromium/media/devtools-core-tools.png)  -->  
 
 Microsoft Edge \ （Chromium \） DevTools 包括以下面板。  
 *   "**元素**" 面板，用于编辑 HTML 和 CSS、检查辅助功能属性、查看事件侦听器和设置 DOM 转变断点  
@@ -85,8 +81,6 @@ Microsoft Edge \ （Chromium \） DevTools 包括以下面板。
    Microsoft Edge 中的 Chrome Web Store
 :::image-end:::
 
-<!--![Chrome Web Store in Microsoft Edge](./devtools-guide-chromium/media/allow-extensions-from-stores.png)  -->
-
 在顶部，选择 "**允许其他存储中的扩展**"，然后在出现的对话框中选择 "**允许**"。  
 
 > [!NOTE]
@@ -97,8 +91,6 @@ Microsoft Edge \ （Chromium \） DevTools 包括以下面板。
 :::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="将 Chrome Web Store 中的扩展添加到 Microsoft Edge":::
    将 Chrome Web Store 中的扩展添加到 Microsoft Edge
 :::image-end:::
-
-<!--![Adding extension from Chrome Web Store to Microsoft Edge](./devtools-guide-chromium/media/install-extension-from-chrome-store.png)  -->  
 
 ## 指向  
 
@@ -144,8 +136,6 @@ Microsoft Edge \ （Chromium \） DevTools 包括以下面板。
    提供有关 Microsoft Edge 的反馈
 :::image-end:::
 
-<!--![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback.png)  -->  
-
 如果你想要预览 DevTools 中的[最新功能][DevtoolsGuideChromiumWhatsNewIndex]，请下载[Microsoft Edge][MicrosoftedgeinsiderDownload]未安装，它将在夜间生成。  
 
 <!-- image links -->  
@@ -153,7 +143,7 @@ Microsoft Edge \ （Chromium \） DevTools 包括以下面板。
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "初学者的 DevTools： HTML 和 DOM 入门 |Microsoft 文档"  
-[DevtoolsGuideChromiumWhatsNewIndex]: ./devtools-guide-chromium/whats-new.md "Microsoft Edge 中的新增功能（Chromium） DevTools |Microsoft 文档"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools "Microsoft Edge 中的新增功能（Chromium） DevTools |Microsoft 文档"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge （Chromium） DevTools 协议 |Microsoft 文档"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge 加载项"  
