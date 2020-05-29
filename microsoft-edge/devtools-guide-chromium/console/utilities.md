@@ -1,0 +1,622 @@
+---
+title: 控制台实用工具 API 参考
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 04/24/2020
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 28b40f3f79928725d3d49418e01cf02247224370
+ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "10601794"
+---
+<!-- Copyright Kayce Basques 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->
+
+
+
+
+
+# <span data-ttu-id="b32e8-103">控制台实用工具 API 参考</span><span class="sxs-lookup"><span data-stu-id="b32e8-103">Console Utilities API Reference</span></span>   
+
+
+
+<span data-ttu-id="b32e8-104">控制台实用工具 API 包含一组用于执行常见任务的便捷命令：选择和检查 DOM 元素，以可读格式显示数据、停止和启动探查器以及监视 DOM 事件。</span><span class="sxs-lookup"><span data-stu-id="b32e8-104">The Console Utilities API contains a collection of convenience commands for performing common tasks:  selecting and inspecting DOM elements, displaying data in readable format, stopping and starting the profiler, and monitoring DOM events.</span></span>  
+
+> [!WARNING]
+> <span data-ttu-id="b32e8-105">以下命令仅适用于 Microsoft Edge DevTools 控制台。</span><span class="sxs-lookup"><span data-stu-id="b32e8-105">The following commands only work in the Microsoft Edge DevTools Console.</span></span>  <span data-ttu-id="b32e8-106">如果从脚本运行，则命令不起作用。</span><span class="sxs-lookup"><span data-stu-id="b32e8-106">The commands do not work if run from your scripts.</span></span>  
+
+<span data-ttu-id="b32e8-107">要查找 `console.log()` `console.error()` 和其余 `console.*` 方法？</span><span class="sxs-lookup"><span data-stu-id="b32e8-107">Looking for `console.log()`, `console.error()`, and the rest of the `console.*` methods?</span></span>  <span data-ttu-id="b32e8-108">请参阅[控制台 API 参考][DevToolsConsoleApi]。</span><span class="sxs-lookup"><span data-stu-id="b32e8-108">See [Console API Reference][DevToolsConsoleApi].</span></span>  
+
+## <span data-ttu-id="b32e8-109">最近计算的表达式</span><span class="sxs-lookup"><span data-stu-id="b32e8-109">Recently Evaluated Expression</span></span>  
+
+```console
+$_
+```  
+
+<span data-ttu-id="b32e8-110">返回最近计算的表达式的值。</span><span class="sxs-lookup"><span data-stu-id="b32e8-110">Returns the value of the most recently evaluated expression.</span></span>  
+
+<span data-ttu-id="b32e8-111">在[图 1](#figure-1)中，计算一个简单的表达式 \ （ `2 + 2` \）。</span><span class="sxs-lookup"><span data-stu-id="b32e8-111">In [Figure 1](#figure-1), a simple expression \(`2 + 2`\) is evaluated.</span></span>  <span data-ttu-id="b32e8-112">`$_`然后计算属性，其中包含相同的值。</span><span class="sxs-lookup"><span data-stu-id="b32e8-112">The `$_` property is then evaluated, which contains the same value.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-113">图 1</span><span class="sxs-lookup"><span data-stu-id="b32e8-113">Figure 1</span></span>  
+> `$_` <span data-ttu-id="b32e8-114">是最近计算的表达式</span><span class="sxs-lookup"><span data-stu-id="b32e8-114">is the most recently evaluated expression</span></span>  
+> ![$ _ 是最近计算的表达式][ImageRecentExpression]  
+
+<span data-ttu-id="b32e8-116">在[图 2](#figure-2)中，计算的表达式最初包含一个名称数组。</span><span class="sxs-lookup"><span data-stu-id="b32e8-116">In [Figure 2](#figure-2), the evaluated expression initially contains an array of names.</span></span>  <span data-ttu-id="b32e8-117">计算 `$_.length` 以查找数组的长度，更改中存储的值 `$_` 成为最新计算的表达式 `4` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-117">Evaluating `$_.length` to find the length of the array, the value stored in `$_` changes to become the latest evaluated expression, `4`.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-118">图 2</span><span class="sxs-lookup"><span data-stu-id="b32e8-118">Figure 2</span></span>  
+> `$_` <span data-ttu-id="b32e8-119">评估新命令时的更改</span><span class="sxs-lookup"><span data-stu-id="b32e8-119">changes when new commands are evaluated</span></span>  
+> ![评估新命令时 $ _ 更改][ImageChangedRecentExpression]  
+
+## <span data-ttu-id="b32e8-121">最近选择的元素或 JavaScript 对象</span><span class="sxs-lookup"><span data-stu-id="b32e8-121">Recently Selected Element Or JavaScript Object</span></span>  
+
+```console
+$0
+```  
+
+<span data-ttu-id="b32e8-122">返回最近选择的元素或 JavaScript 对象。</span><span class="sxs-lookup"><span data-stu-id="b32e8-122">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="b32e8-123">返回最近选择的第二个项，依此类推。</span><span class="sxs-lookup"><span data-stu-id="b32e8-123">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="b32e8-124">`$0`、、 `$1` `$2` 、 `$3` 和 `$4` 命令可用作对在 "**元素**" 面板中检查过的最后五个 DOM 元素或在 "**内存**" 面板中选择的最后五个 JavaScript 堆对象的历史参考。</span><span class="sxs-lookup"><span data-stu-id="b32e8-124">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Memory** panel.</span></span>  
+
+```console
+$1
+```  
+
+```console
+$2
+```  
+
+```console
+$3
+```  
+
+```console
+$4
+```  
+
+<span data-ttu-id="b32e8-125">在[图 3](#figure-3)中，在 `img` "**元素**" 面板中选择了一个元素。</span><span class="sxs-lookup"><span data-stu-id="b32e8-125">In [Figure 3](#figure-3), an `img` element is selected in the **Elements** panel.</span></span>  <span data-ttu-id="b32e8-126">在该**控制台**抽屉中，已 `$0` 评估并显示相同的元素。</span><span class="sxs-lookup"><span data-stu-id="b32e8-126">In the **Console** drawer, `$0` has been evaluated and displays the same element.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-127">图 3</span><span class="sxs-lookup"><span data-stu-id="b32e8-127">Figure 3</span></span>  
+> <span data-ttu-id="b32e8-128">该</span><span class="sxs-lookup"><span data-stu-id="b32e8-128">The</span></span> `$0`  
+> ![$0][ImageElement0]  
+
+<span data-ttu-id="b32e8-130">在[图 4](#figure-4)中，图像显示在同一页面中选中的其他元素。</span><span class="sxs-lookup"><span data-stu-id="b32e8-130">In [Figure 4](#figure-4), the image shows a different element selected in the same page.</span></span>  <span data-ttu-id="b32e8-131">" `$0` 当前" 指的是新选定的元素，同时 `$1` 返回以前选择的元素。</span><span class="sxs-lookup"><span data-stu-id="b32e8-131">The `$0` now refers to the newly selected element, while `$1` returns the previously selected one.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-132">图 4</span><span class="sxs-lookup"><span data-stu-id="b32e8-132">Figure 4</span></span>  
+> <span data-ttu-id="b32e8-133">该</span><span class="sxs-lookup"><span data-stu-id="b32e8-133">The</span></span> `$1`  
+> ![$1][ImageElement1]  
+
+## <span data-ttu-id="b32e8-135">查询选择器</span><span class="sxs-lookup"><span data-stu-id="b32e8-135">Query Selector</span></span>  
+
+```console
+$(selector, [startNode])
+```  
+
+<span data-ttu-id="b32e8-136">返回具有指定 CSS 选择器的第一个 DOM 元素的引用。</span><span class="sxs-lookup"><span data-stu-id="b32e8-136">Returns the reference to the first DOM element with the specified CSS selector.</span></span>  <span data-ttu-id="b32e8-137">此方法是[querySelector （）][MDNDocumentQuerySelector]方法的别名。</span><span class="sxs-lookup"><span data-stu-id="b32e8-137">This method is an alias for the [document.querySelector()][MDNDocumentQuerySelector] method.</span></span>  
+
+<span data-ttu-id="b32e8-138">在[图 5](#figure-5)中，返回对文档中第一个元素的引用 `<img>` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-138">In [Figure 5](#figure-5), a reference to the first `<img>` element in the document is returned.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-139">图 5</span><span class="sxs-lookup"><span data-stu-id="b32e8-139">Figure 5</span></span>  
+> <span data-ttu-id="b32e8-140">该</span><span class="sxs-lookup"><span data-stu-id="b32e8-140">The</span></span> `$('img')`  
+> ![$ （' Img '）][ImageElementImg]  
+
+<span data-ttu-id="b32e8-142">右键单击返回的结果，然后选择 **"在元素中显示" 面板**以在 DOM 中查找它，或通过**滚动查看**以在页面上显示它。</span><span class="sxs-lookup"><span data-stu-id="b32e8-142">Right-click on the returned result and select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.</span></span>  
+
+<span data-ttu-id="b32e8-143">在[图 6](#figure-6)中，返回对当前所选元素的引用，并显示 src 属性。</span><span class="sxs-lookup"><span data-stu-id="b32e8-143">In [Figure 6](#figure-6), a reference to the currently selected element is returned and the src property is displayed.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-144">图 6</span><span class="sxs-lookup"><span data-stu-id="b32e8-144">Figure 6</span></span>  
+> <span data-ttu-id="b32e8-145">该</span><span class="sxs-lookup"><span data-stu-id="b32e8-145">The</span></span> `$('img').src`  
+> ![$ （"Img"） src][ImageElementImgSource]  
+
+<span data-ttu-id="b32e8-147">此方法还支持第二个参数 startNode，该参数指定要从中搜索元素的 "element" 或节点。</span><span class="sxs-lookup"><span data-stu-id="b32e8-147">This method also supports a second parameter, startNode, that specifies an "element" or Node from which to search for elements.</span></span>  <span data-ttu-id="b32e8-148">此参数的默认值为 `document` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-148">The default value of this parameter is `document`.</span></span>  
+
+<span data-ttu-id="b32e8-149">在[图 7](#figure-7)中，在 `img` `title--image` 返回和显示正确的后找到第一个元素 `src` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-149">In [Figure 7](#figure-7), the first `img` element is found after the `title--image` and displays the `src` properly is returned.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-150">图 7</span><span class="sxs-lookup"><span data-stu-id="b32e8-150">Figure 7</span></span>  
+> <span data-ttu-id="b32e8-151">$ （"Img"、querySelector （"title-image"））。 src</span><span class="sxs-lookup"><span data-stu-id="b32e8-151">The $('img', document.querySelector('title--image')).src</span></span>  
+> ![$ （"Img"、querySelector （"title-image"））。 src][ImageElementImgNodeSource]  
+
+> [!NOTE]
+> <span data-ttu-id="b32e8-153">如果你使用的库（如 jQuery `$` ），此功能将被覆盖，并 `$` 与该库中的实现对应。</span><span class="sxs-lookup"><span data-stu-id="b32e8-153">If you are using a library such as jQuery that uses `$`, this functionality is overwritten, and `$` corresponds to the implementation from that library.</span></span>  
+
+## <span data-ttu-id="b32e8-154">所有查询选择器</span><span class="sxs-lookup"><span data-stu-id="b32e8-154">Query Selector All</span></span>  
+
+```console
+$$(selector, [startNode])
+```  
+
+<span data-ttu-id="b32e8-155">返回与指定的 CSS 选择器匹配的元素数组。</span><span class="sxs-lookup"><span data-stu-id="b32e8-155">Returns an array of elements that match the specified CSS selector.</span></span>  <span data-ttu-id="b32e8-156">此方法等效于调用[querySelectorAll （）][MDNDocumentQuerySelectorAll]方法。</span><span class="sxs-lookup"><span data-stu-id="b32e8-156">This method is equivalent to calling the [document.querySelectorAll()][MDNDocumentQuerySelectorAll] method.</span></span>  
+
+<span data-ttu-id="b32e8-157">在[图 8](#figure-8)中，使用 `$$()` 创建 `<img>` 当前文档中所有元素的数组，并显示 `src` 每个元素的属性值。</span><span class="sxs-lookup"><span data-stu-id="b32e8-157">In [Figure 8](#figure-8), use `$$()` to create an array of all `<img>` elements in the current document and display the value of the `src` property for each element.</span></span>  
+
+```console
+var images = $$('img');
+for (each in images) {
+    console.log(images[each].src);
+}
+```  
+
+> ##### <span data-ttu-id="b32e8-158">图 8</span><span class="sxs-lookup"><span data-stu-id="b32e8-158">Figure 8</span></span>  
+> <span data-ttu-id="b32e8-159">`$$()`用于选择文档中的所有图像并显示源</span><span class="sxs-lookup"><span data-stu-id="b32e8-159">Using `$$()` to select all images in the document and display the sources</span></span>  
+> ![使用 $ $ （）选择文档中的所有图像并显示源][ImageArrayElementImgSource]  
+
+<span data-ttu-id="b32e8-161">此方法还支持第二个参数 startNode，用于指定要从中搜索元素的元素或节点。</span><span class="sxs-lookup"><span data-stu-id="b32e8-161">This method also supports a second parameter, startNode, that specifies an element or Node from which to search for elements.</span></span>  <span data-ttu-id="b32e8-162">此参数的默认值为 `document` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-162">The default value of this parameter is `document`.</span></span>  
+
+<span data-ttu-id="b32e8-163">在[图 9](#figure-9)中，已修改版本的[图 8](#figure-8)用于 `$$()` 创建在 `<img>` 所选节点之后出现在当前文档中的所有元素的数组。</span><span class="sxs-lookup"><span data-stu-id="b32e8-163">In [Figure 9](#figure-9), a modified version of [Figure 8](#figure-8) uses `$$()` to create an array of all `<img>` elements that appear in the current document after the selected Node.</span></span>  
+
+```console
+var images = $$('img', document.querySelector(`title--image`));
+for (each in images) {
+   console.log(images[each].src);
+}
+```  
+
+> ##### <span data-ttu-id="b32e8-164">图 9</span><span class="sxs-lookup"><span data-stu-id="b32e8-164">Figure 9</span></span>  
+> <span data-ttu-id="b32e8-165">`$$()`用于选择文档中指定元素之后出现的所有图像 `<div>` 并显示源</span><span class="sxs-lookup"><span data-stu-id="b32e8-165">Using `$$()` to select all images that appear after the specified `<div>` element in the document and display the sources</span></span>  
+> ![使用 $ $ （）选择文档中指定的 <div> 元素之后出现的所有图像并显示源][ImageArrayElementImgNodeSource]  
+
+> [!NOTE]
+> <span data-ttu-id="b32e8-167">`Shift` + `Enter` 在控制台中按键以开始新行，而不运行脚本。</span><span class="sxs-lookup"><span data-stu-id="b32e8-167">Press `Shift`+`Enter` in the console to start a new line without running the script.</span></span>  
+
+## <span data-ttu-id="b32e8-168">XPath</span><span class="sxs-lookup"><span data-stu-id="b32e8-168">XPath</span></span>  
+
+```console
+$x(path, [startNode])
+```  
+
+<span data-ttu-id="b32e8-169">返回与指定 XPath 表达式匹配的 DOM 元素数组。</span><span class="sxs-lookup"><span data-stu-id="b32e8-169">Returns an array of DOM elements that match the specified XPath expression.</span></span>  
+
+<span data-ttu-id="b32e8-170">在[图 10](#figure-10)中， `<p>` 返回页面上的所有元素。</span><span class="sxs-lookup"><span data-stu-id="b32e8-170">In [Figure 10](#figure-10), all of the `<p>` elements on the page are returned.</span></span>  
+
+```console
+$x("//p")
+```  
+
+> ##### <span data-ttu-id="b32e8-171">图 10</span><span class="sxs-lookup"><span data-stu-id="b32e8-171">Figure 10</span></span>  
+> <span data-ttu-id="b32e8-172">使用 XPath 选择器</span><span class="sxs-lookup"><span data-stu-id="b32e8-172">Using an XPath selector</span></span>  
+> ![使用 XPath 选择器][ImageArrayXpath]  
+
+<span data-ttu-id="b32e8-174">在[图 11](#figure-11)中， `<p>` 将返回包含元素的所有元素 `<a>` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-174">In [Figure 11](#figure-11), all of the `<p>` elements that contain `<a>` elements are returned.</span></span>  
+
+```console
+$x("//p[a]")
+```  
+
+> ##### <span data-ttu-id="b32e8-175">图 11</span><span class="sxs-lookup"><span data-stu-id="b32e8-175">Figure 11</span></span>  
+> <span data-ttu-id="b32e8-176">使用更复杂的 XPath 选择器</span><span class="sxs-lookup"><span data-stu-id="b32e8-176">Using a more complicated XPath selector</span></span>  
+> ![使用更复杂的 XPath 选择器][ImageArrayXpathChild]  
+
+<span data-ttu-id="b32e8-178">与其他选择器命令相似， `$x(path)` 具有可选的第二个参数， `startNode` 用于指定要从中搜索元素的元素或节点。</span><span class="sxs-lookup"><span data-stu-id="b32e8-178">Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or Node from which to search for elements.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-179">图 12</span><span class="sxs-lookup"><span data-stu-id="b32e8-179">Figure 12</span></span>  
+> <span data-ttu-id="b32e8-180">使用 XPath 选择器</span><span class="sxs-lookup"><span data-stu-id="b32e8-180">Using an XPath selector with</span></span> `startNode`  
+> ![将 XPath 选择器与 startNode 结合使用][ImageArrayXpathNode]  
+
+## <span data-ttu-id="b32e8-182">消除</span><span class="sxs-lookup"><span data-stu-id="b32e8-182">clear</span></span>  
+
+```console
+clear()
+```  
+
+<span data-ttu-id="b32e8-183">清除历史记录的控制台。</span><span class="sxs-lookup"><span data-stu-id="b32e8-183">Clears the console of the history.</span></span>  
+
+```console
+clear()
+```  
+
+## <span data-ttu-id="b32e8-184">copy</span><span class="sxs-lookup"><span data-stu-id="b32e8-184">copy</span></span>  
+
+```console
+copy(object)
+```  
+
+<span data-ttu-id="b32e8-185">该 `copy(object)` 方法将指定对象的字符串表示形式复制到剪贴板。</span><span class="sxs-lookup"><span data-stu-id="b32e8-185">The `copy(object)` method copies a string representation of the specified object to the clipboard.</span></span>  
+
+```console
+copy($0)
+```  
+
+## <span data-ttu-id="b32e8-186">调试</span><span class="sxs-lookup"><span data-stu-id="b32e8-186">debug</span></span>  
+
+```console
+debug(method)
+```  
+
+>[!NOTE]
+> <span data-ttu-id="b32e8-187">[Chromium 问题 #1050237][MonorailIssue1050237]使用该函数跟踪 bug `debug()` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-187">The [Chromium issue #1050237][MonorailIssue1050237] is tracking a bug with the `debug()` function.</span></span>  <span data-ttu-id="b32e8-188">如果遇到此问题，请尝试改为[使用断点][DevtoolsJavascriptBreakpoints]。</span><span class="sxs-lookup"><span data-stu-id="b32e8-188">If you encounter this issue, try [using breakpoints][DevtoolsJavascriptBreakpoints] instead.</span></span>  
+
+<span data-ttu-id="b32e8-189">当你请求指定的方法时，将调用调试器并在 "**源**" 面板上的方法内中断，从而使你可以逐句通过代码并调试它。</span><span class="sxs-lookup"><span data-stu-id="b32e8-189">When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** panel allowing you to step through the code and debug it.</span></span>  
+
+```console
+debug("debug");
+```  
+
+> ##### <span data-ttu-id="b32e8-190">图 13</span><span class="sxs-lookup"><span data-stu-id="b32e8-190">Figure 13</span></span>  
+> <span data-ttu-id="b32e8-191">在方法内中断</span><span class="sxs-lookup"><span data-stu-id="b32e8-191">Breaking inside a method with</span></span> `debug()`  
+> ![使用 debug 在方法中中断（）][ImageDebugMethod]  
+
+<span data-ttu-id="b32e8-193">用于 `undebug(method)` 停止中断方法，或使用 UI 禁用所有断点。</span><span class="sxs-lookup"><span data-stu-id="b32e8-193">Use `undebug(method)` to stop breaking on the method, or use the UI to disable all breakpoints.</span></span>  
+
+<span data-ttu-id="b32e8-194">有关断点的详细信息，请参阅[用断点暂停代码][DevToolsJavascriptBreakpoints]。</span><span class="sxs-lookup"><span data-stu-id="b32e8-194">For more information on breakpoints, see [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].</span></span>  
+
+## <span data-ttu-id="b32e8-195">dir</span><span class="sxs-lookup"><span data-stu-id="b32e8-195">dir</span></span>  
+
+```console
+dir(object)
+```  
+
+<span data-ttu-id="b32e8-196">显示指定对象的所有属性的对象样式列表。</span><span class="sxs-lookup"><span data-stu-id="b32e8-196">Displays an object-style listing of all of the properties for the specified object.</span></span>  <span data-ttu-id="b32e8-197">此方法是[console for dir （）][MDNConsoleDir]方法的别名。</span><span class="sxs-lookup"><span data-stu-id="b32e8-197">This method is an alias for the [console.dir()][MDNConsoleDir] method.</span></span>  
+
+<span data-ttu-id="b32e8-198">`document.head`在控制台中计算以显示和标记之间的 `<head>` HTML `</head>` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-198">Evaluate `document.head` in the Console to display the HTML between the `<head>` and `</head>` tags.</span></span>  <span data-ttu-id="b32e8-199">在[图 14](#figure-14)中，在控制台中使用后，将显示一个对象样式的列表 `console.dir()` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-199">In [Figure 14](#figure-14), an object-style listing is displayed after using `console.dir()` in the Console.</span></span>  
+
+```console
+document.head;
+dir(document.head);
+```  
+
+> ##### <span data-ttu-id="b32e8-200">图 14</span><span class="sxs-lookup"><span data-stu-id="b32e8-200">Figure 14</span></span>  
+> <span data-ttu-id="b32e8-201">`document.head`通过方法进行日志记录 `dir()`</span><span class="sxs-lookup"><span data-stu-id="b32e8-201">Logging `document.head` with `dir()` method</span></span>  
+> ![记录文档 head with dir （）方法][ImageLogObject]  
+
+<span data-ttu-id="b32e8-203">有关详细信息，请参阅 [`console.dir()`][DevToolsConsoleApiConsoleDirObject] 控制台 API 中的条目。</span><span class="sxs-lookup"><span data-stu-id="b32e8-203">For more information, see the [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entry in the Console API.</span></span>  
+
+## <span data-ttu-id="b32e8-204">dirxml</span><span class="sxs-lookup"><span data-stu-id="b32e8-204">dirxml</span></span>  
+
+```console
+dirxml(object)
+```  
+
+<span data-ttu-id="b32e8-205">打印指定对象的 XML 表示形式，如在 "**元素**" 选项卡中所示。 此方法等效于[dirxml （）][MDNConsoleDirxml]方法。</span><span class="sxs-lookup"><span data-stu-id="b32e8-205">Prints an XML representation of the specified object, as seen in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsoleDirxml] method.</span></span>  
+
+## <span data-ttu-id="b32e8-206">查看</span><span class="sxs-lookup"><span data-stu-id="b32e8-206">inspect</span></span>  
+
+```console
+inspect(object/method)
+```  
+
+<span data-ttu-id="b32e8-207">打开并选择相应面板中的指定元素或对象： "元素" 面板中的 "**元素**" 面板或 JavaScript 堆对象的 "**内存**" 面板。</span><span class="sxs-lookup"><span data-stu-id="b32e8-207">Opens and selects the specified element or object in the appropriate panel:  either the **Elements** panel for DOM elements or the **Memory** panel for JavaScript heap objects.</span></span>  
+
+<span data-ttu-id="b32e8-208">在[图 15](#figure-15)中，在 " `document.body` **元素**" 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="b32e8-208">In [Figure 15](#figure-15), the `document.body` opens in the **Elements** panel.</span></span>  
+
+```console
+inspect(document.body);
+```  
+
+> ##### <span data-ttu-id="b32e8-209">图 15</span><span class="sxs-lookup"><span data-stu-id="b32e8-209">Figure 15</span></span>  
+> <span data-ttu-id="b32e8-210">检查元素</span><span class="sxs-lookup"><span data-stu-id="b32e8-210">Inspecting an element with</span></span> `inspect()`  
+> ![使用 "检查" （）检查元素][ImageInspectElement]  
+
+<span data-ttu-id="b32e8-212">传递要检查的方法时，该方法将在 "**源**" 面板中打开文档以供您检查。</span><span class="sxs-lookup"><span data-stu-id="b32e8-212">When passing a method to inspect, the method opens the document up in the **Sources** panel for you to inspect.</span></span>  
+
+## <span data-ttu-id="b32e8-213">getEventListeners</span><span class="sxs-lookup"><span data-stu-id="b32e8-213">getEventListeners</span></span>  
+
+```console
+getEventListeners(object)
+```  
+
+<span data-ttu-id="b32e8-214">返回在指定对象上注册的事件侦听器。</span><span class="sxs-lookup"><span data-stu-id="b32e8-214">Returns the event listeners registered on the specified object.</span></span>  <span data-ttu-id="b32e8-215">返回值是一个对象，其中包含每个已注册事件类型的数组 \ （如 `click` 或 `keydown` \）。</span><span class="sxs-lookup"><span data-stu-id="b32e8-215">The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).</span></span>  <span data-ttu-id="b32e8-216">每个数组的成员都是描述为每种类型注册的侦听器的对象。</span><span class="sxs-lookup"><span data-stu-id="b32e8-216">The members of each array are objects that describe the listener registered for each type.</span></span>  <span data-ttu-id="b32e8-217">在[图 16](#figure-16)中，列出了在文档对象上注册的所有事件侦听器。</span><span class="sxs-lookup"><span data-stu-id="b32e8-217">In [Figure 16](#figure-16), all of the event listeners registered on the document object are listed.</span></span>  
+
+```console
+getEventListeners(document);
+```  
+
+> ##### <span data-ttu-id="b32e8-218">图 16</span><span class="sxs-lookup"><span data-stu-id="b32e8-218">Figure 16</span></span>  
+> <span data-ttu-id="b32e8-219">使用的输出</span><span class="sxs-lookup"><span data-stu-id="b32e8-219">Output of using</span></span> `getEventListeners(document)`  
+> ![使用 getEventListeners （文档）的输出][ImageGetListeners]  
+
+<span data-ttu-id="b32e8-221">如果在指定对象上注册了多个侦听器，则该数组包含每个侦听器的成员。</span><span class="sxs-lookup"><span data-stu-id="b32e8-221">If more than one listener is registered on the specified object, then the array contains a member for each listener.</span></span>  <span data-ttu-id="b32e8-222">在[图 16](#figure-16)中，事件的文档元素上注册了两个事件侦听器 `click` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-222">In [Figure 16](#figure-16), there are two event listeners registered on the document element for the `click` event.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-223">图 17</span><span class="sxs-lookup"><span data-stu-id="b32e8-223">Figure 17</span></span>  
+> <span data-ttu-id="b32e8-224">多个侦听器</span><span class="sxs-lookup"><span data-stu-id="b32e8-224">Multiple listeners</span></span>  
+> ![多个侦听器][ImageMultipleListeners]  
+
+<span data-ttu-id="b32e8-226">你可以进一步展开以下每个对象以浏览属性。</span><span class="sxs-lookup"><span data-stu-id="b32e8-226">You may further expand each of the following objects to explore the properties.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-227">图18</span><span class="sxs-lookup"><span data-stu-id="b32e8-227">Figure 18</span></span>  
+> <span data-ttu-id="b32e8-228">侦听器对象的展开视图</span><span class="sxs-lookup"><span data-stu-id="b32e8-228">Expanded view of listener object</span></span>  
+> ![侦听器对象的展开视图][ImageListenersExpanded]  
+
+## <span data-ttu-id="b32e8-230">键</span><span class="sxs-lookup"><span data-stu-id="b32e8-230">keys</span></span>  
+
+```console
+keys(object)
+```  
+
+<span data-ttu-id="b32e8-231">返回一个数组，其中包含属于指定对象的属性的名称。</span><span class="sxs-lookup"><span data-stu-id="b32e8-231">Returns an array containing the names of the properties belonging to the specified object.</span></span>  <span data-ttu-id="b32e8-232">若要获取相同属性的关联值，请使用 `values()` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-232">To get the associated values of the same properties, use `values()`.</span></span>  
+
+<span data-ttu-id="b32e8-233">例如，假设你的应用程序定义了以下对象。</span><span class="sxs-lookup"><span data-stu-id="b32e8-233">For example, suppose your application defined the following object.</span></span>  
+
+```console
+var player1 = { "name":  "Ted", "level": 42 }
+```  
+
+<span data-ttu-id="b32e8-234">在[图 19](#figure-19)中，结果假定 `player1` 在键入之前 `keys(player1)` 和在控制台中定义了全局命名空间 \ （对于简单性 \） `values(player1)` 。</span><span class="sxs-lookup"><span data-stu-id="b32e8-234">In [Figure 19](#figure-19), the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.</span></span>  
+
+```console
+keys(player1)
+```  
+
+```console
+values(player1)
+```  
+
+> ##### <span data-ttu-id="b32e8-235">图19</span><span class="sxs-lookup"><span data-stu-id="b32e8-235">Figure 19</span></span>  
+> <span data-ttu-id="b32e8-236">`keys()`和 `values()` 命令</span><span class="sxs-lookup"><span data-stu-id="b32e8-236">The `keys()` and `values()` commands</span></span>  
+> ![键（）和值（）命令][ImageConsoleKeysValues]  
+
+## <span data-ttu-id="b32e8-238">监视器</span><span class="sxs-lookup"><span data-stu-id="b32e8-238">monitor</span></span>  
+
+```console
+monitor(method)
+```  
+
+<span data-ttu-id="b32e8-239">向控制台记录一条消息，指示方法名称以及调用时传递给该方法的参数。</span><span class="sxs-lookup"><span data-stu-id="b32e8-239">Logs a message to the console that indicates the method name along with the arguments that are passed to the method when it was called.</span></span>  
+
+```console
+function sum(x, y) {
+    return x + y;
+}
+monitor(sum);
+```  
+
+> ##### <span data-ttu-id="b32e8-240">图20</span><span class="sxs-lookup"><span data-stu-id="b32e8-240">Figure 20</span></span>  
+> <span data-ttu-id="b32e8-241">该 `monitor()` 方法</span><span class="sxs-lookup"><span data-stu-id="b32e8-241">The `monitor()` method</span></span>  
+> ![Monitor （）方法][ImageConsoleMonitorSum]  
+
+<span data-ttu-id="b32e8-243">用于 `unmonitor(method)` 停止监视。</span><span class="sxs-lookup"><span data-stu-id="b32e8-243">Use `unmonitor(method)` to cease monitoring.</span></span>  
+
+## <span data-ttu-id="b32e8-244">monitorEvents</span><span class="sxs-lookup"><span data-stu-id="b32e8-244">monitorEvents</span></span>  
+
+```console
+monitorEvents(object[, events])
+```  
+
+<span data-ttu-id="b32e8-245">当指定的对象上发生其中一个指定的事件时，事件对象将被记录到控制台。</span><span class="sxs-lookup"><span data-stu-id="b32e8-245">When one of the specified events occurs on the specified object, the event object is logged to the console.</span></span>  <span data-ttu-id="b32e8-246">你可以指定要监视的单个事件、事件数组或映射到预定义事件集合的常规事件类型之一。</span><span class="sxs-lookup"><span data-stu-id="b32e8-246">You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.</span></span>  <span data-ttu-id="b32e8-247">请参阅[图 21](#figure-21)。</span><span class="sxs-lookup"><span data-stu-id="b32e8-247">See [Figure 21](#figure-21).</span></span>  
+
+<span data-ttu-id="b32e8-248">以下监视窗口对象上的所有大小调整事件。</span><span class="sxs-lookup"><span data-stu-id="b32e8-248">The following monitors all resize events on the window object.</span></span>  
+
+```console
+monitorEvents(window, "resize");
+```  
+
+> ##### <span data-ttu-id="b32e8-249">图21</span><span class="sxs-lookup"><span data-stu-id="b32e8-249">Figure 21</span></span>  
+> <span data-ttu-id="b32e8-250">监视窗口调整大小事件</span><span class="sxs-lookup"><span data-stu-id="b32e8-250">Monitoring window resize events</span></span>  
+> ![监视窗口调整大小事件][ImageMonitorResize]  
+
+<span data-ttu-id="b32e8-252">以下定义一个数组，用于监视 `resize` `scroll` 窗口对象上的两个事件和事件。</span><span class="sxs-lookup"><span data-stu-id="b32e8-252">The following defines an array to monitor both `resize` and `scroll` events on the window object.</span></span>  
+
+```console
+monitorEvents(window, ["resize", "scroll"]);
+```  
+
+<span data-ttu-id="b32e8-253">你还可以指定一个可用的事件类型，这些字符串映射到预定义的事件集。</span><span class="sxs-lookup"><span data-stu-id="b32e8-253">You may also specify one of the available types of events, strings that map to predefined sets of events.</span></span>  <span data-ttu-id="b32e8-254">下表显示可用的事件类型和关联的事件映射。</span><span class="sxs-lookup"><span data-stu-id="b32e8-254">The table below displays the available event types and the associated event mappings.</span></span>  
+
+| <span data-ttu-id="b32e8-255">事件类型</span><span class="sxs-lookup"><span data-stu-id="b32e8-255">Event type</span></span> | <span data-ttu-id="b32e8-256">相应的映射事件</span><span class="sxs-lookup"><span data-stu-id="b32e8-256">Corresponding mapped events</span></span> |  
+|:--- |:--- |  
+| `mouse` | <span data-ttu-id="b32e8-257">"单击"、"dblclick"、"mousedown"、"mousemove"、"mouseout"、"鼠标悬停"、""、"mousewheel"</span><span class="sxs-lookup"><span data-stu-id="b32e8-257">"click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel"</span></span> |  
+| `key` | <span data-ttu-id="b32e8-258">"keydown"、"keypress"、"keyup"、"textInput"</span><span class="sxs-lookup"><span data-stu-id="b32e8-258">"keydown", "keypress", "keyup", "textInput"</span></span> |  
+| `touch` | <span data-ttu-id="b32e8-259">"touchcancel", "touchend", "touchmove", "touchstart"</span><span class="sxs-lookup"><span data-stu-id="b32e8-259">"touchcancel", "touchend", "touchmove", "touchstart"</span></span> |  
+| `control` | <span data-ttu-id="b32e8-260">"模糊"、"更改"、"焦点"、"重置"、"调整大小"、"滚动"、"选择"、"提交"、"缩放"</span><span class="sxs-lookup"><span data-stu-id="b32e8-260">"blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom"</span></span> |  
+
+<span data-ttu-id="b32e8-261">在[图 22](#figure-22)中，与 `key` 输入文本字段上的事件相对应的事件类型 `key` 当前在 "**元素**" 面板中处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="b32e8-261">In [Figure 22](#figure-22), the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** panel.</span></span>  
+
+```console
+monitorEvents($0, "key");
+```  
+
+<span data-ttu-id="b32e8-262">在[图 22](#figure-22)中，显示了在文本字段中键入字符后的示例输出。</span><span class="sxs-lookup"><span data-stu-id="b32e8-262">In [Figure 22](#figure-22) the sample output after typing a character in the text field is displayed.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-263">图22</span><span class="sxs-lookup"><span data-stu-id="b32e8-263">Figure 22</span></span>  
+> <span data-ttu-id="b32e8-264">监视键事件</span><span class="sxs-lookup"><span data-stu-id="b32e8-264">Monitoring key events</span></span>  
+> ![监视键事件][ImageMonitorKey]  
+
+## <span data-ttu-id="b32e8-266">profile</span><span class="sxs-lookup"><span data-stu-id="b32e8-266">profile</span></span>  
+
+```console
+profile([name])
+```  
+
+<span data-ttu-id="b32e8-267">启动具有可选名称的 JavaScript CPU 性能分析会话。</span><span class="sxs-lookup"><span data-stu-id="b32e8-267">Starts a JavaScript CPU profiling session with an optional name.</span></span>  <span data-ttu-id="b32e8-268">[ProfileEnd （）](#profileend)方法完成配置文件并在 "**内存**" 面板中显示结果。</span><span class="sxs-lookup"><span data-stu-id="b32e8-268">The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** panel.</span></span>  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+
+1.  <span data-ttu-id="b32e8-269">运行该 `profile()` 方法以开始分析。</span><span class="sxs-lookup"><span data-stu-id="b32e8-269">Run the `profile()` method to start profiling.</span></span>  
+    
+    ```console
+    profile("My profile")
+    ```  
+    
+1.  <span data-ttu-id="b32e8-270">运行[profileEnd （）](#profileend)方法以停止分析并在 "**内存**" 面板中显示结果。</span><span class="sxs-lookup"><span data-stu-id="b32e8-270">Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** panel.</span></span>  
+
+<span data-ttu-id="b32e8-271">配置文件也可能是嵌套的。</span><span class="sxs-lookup"><span data-stu-id="b32e8-271">Profiles may also be nested.</span></span>  <span data-ttu-id="b32e8-272">在[图 23](#figure-23)中，无论顺序如何，结果都是相同的。</span><span class="sxs-lookup"><span data-stu-id="b32e8-272">In [Figure 23](#figure-23) the result is the same regardless of the order.</span></span>  
+
+```console
+profile('A');
+profile('B');
+profileEnd('A');
+profileEnd('B');
+```  
+
+> [!NOTE]
+> <span data-ttu-id="b32e8-273">多个 CPU 配置文件可能同时运行，您无需按创建顺序将其关闭。</span><span class="sxs-lookup"><span data-stu-id="b32e8-273">Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.</span></span>  
+
+## <span data-ttu-id="b32e8-274">profileEnd</span><span class="sxs-lookup"><span data-stu-id="b32e8-274">profileEnd</span></span>  
+
+```console
+profileEnd([name])
+```  
+
+<span data-ttu-id="b32e8-275">完成 JavaScript CPU 分析会话并在 "**内存**" 面板中显示结果。</span><span class="sxs-lookup"><span data-stu-id="b32e8-275">Completes a JavaScript CPU profiling session and displays the results in the **Memory** panel.</span></span>  <span data-ttu-id="b32e8-276">您必须运行[配置文件（）](#profile)方法。</span><span class="sxs-lookup"><span data-stu-id="b32e8-276">You must be running the [profile()](#profile) method.</span></span>  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+
+1.  <span data-ttu-id="b32e8-277">运行[配置文件（）](#profile)方法开始分析。</span><span class="sxs-lookup"><span data-stu-id="b32e8-277">Run the [profile()](#profile) method to start profiling.</span></span>  
+1.  <span data-ttu-id="b32e8-278">运行 `profileEnd()` 方法以停止分析并在 "**内存**" 面板中显示结果。</span><span class="sxs-lookup"><span data-stu-id="b32e8-278">Run the `profileEnd()` method to stop profiling and display the results in the **Memory** panel.</span></span>  
+    
+    ```console
+    profileEnd("My profile")
+    ```  
+
+<span data-ttu-id="b32e8-279">配置文件也可能是嵌套的。</span><span class="sxs-lookup"><span data-stu-id="b32e8-279">Profiles may also be nested.</span></span>  <span data-ttu-id="b32e8-280">在[图 23](#figure-23)中，无论顺序如何，结果都是相同的。</span><span class="sxs-lookup"><span data-stu-id="b32e8-280">In [Figure 23](#figure-23) the result is the same regardless of the order.</span></span>  
+
+```console
+profile('A');
+profile('B');
+profileEnd('A');
+profileEnd('B');
+```  
+
+<span data-ttu-id="b32e8-281">结果在 "**内存**" 面板中显示为堆快照。</span><span class="sxs-lookup"><span data-stu-id="b32e8-281">The result appears as a Heap Snapshot in the **Memory** panel.</span></span>  
+
+> ##### <span data-ttu-id="b32e8-282">图23</span><span class="sxs-lookup"><span data-stu-id="b32e8-282">Figure 23</span></span>  
+> <span data-ttu-id="b32e8-283">分组的配置文件</span><span class="sxs-lookup"><span data-stu-id="b32e8-283">Grouped profiles</span></span>  
+> ![分组的配置文件][ImageGroupedProfiles]  
+
+> [!NOTE]
+> <span data-ttu-id="b32e8-285">多个 CPU 配置文件可能同时运行，您无需按创建顺序将其关闭。</span><span class="sxs-lookup"><span data-stu-id="b32e8-285">Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.</span></span>  
+
+## <span data-ttu-id="b32e8-286">表</span><span class="sxs-lookup"><span data-stu-id="b32e8-286">table</span></span>  
+
+```console
+table(data[, columns])
+```  
+
+<span data-ttu-id="b32e8-287">基于带有可选列标题的数据对象，基于表格格式记录对象数据。</span><span class="sxs-lookup"><span data-stu-id="b32e8-287">Logs object data with table formatting based upon the data object in with optional column headings.</span></span>  <span data-ttu-id="b32e8-288">在[图 24](#figure-24)中，显示了在控制台中使用表格的名称列表。</span><span class="sxs-lookup"><span data-stu-id="b32e8-288">In [Figure 24](#figure-24), a list of names using a table in the console is displayed.</span></span>  
+
+```console
+var names = {
+    0:  {
+        firstName:  "John",
+        lastName:  "Smith"
+    },
+    1:  {
+        firstName:  "Jane",
+        lastName:  "Doe"
+    }
+};
+table(names);
+```  
+
+> ##### <span data-ttu-id="b32e8-289">图24</span><span class="sxs-lookup"><span data-stu-id="b32e8-289">Figure 24</span></span>  
+> <span data-ttu-id="b32e8-290">该 `table()` 方法</span><span class="sxs-lookup"><span data-stu-id="b32e8-290">The `table()` method</span></span>  
+> ![Table （）方法][ImageConsoleTable]  
+
+## <span data-ttu-id="b32e8-292">undebug</span><span class="sxs-lookup"><span data-stu-id="b32e8-292">undebug</span></span>  
+
+```console
+undebug(method)
+```  
+
+<span data-ttu-id="b32e8-293">停止对指定方法的调试，以便在调用该方法时不再调用调试器。</span><span class="sxs-lookup"><span data-stu-id="b32e8-293">Stops the debugging of the specified method so that when the method is called, the debugger is no longer invoked.</span></span>  
+
+```console
+undebug(getData);
+```  
+
+## <span data-ttu-id="b32e8-294">unmonitor</span><span class="sxs-lookup"><span data-stu-id="b32e8-294">unmonitor</span></span>  
+
+```console
+unmonitor(method)
+```  
+
+<span data-ttu-id="b32e8-295">停止对指定方法的监视。</span><span class="sxs-lookup"><span data-stu-id="b32e8-295">Stops the monitoring of the specified method.</span></span>  <span data-ttu-id="b32e8-296">此方法与[monitor （）](#monitor)方法配合使用。</span><span class="sxs-lookup"><span data-stu-id="b32e8-296">This is used in concert with the [monitor()](#monitor) method.</span></span>  
+
+```console
+unmonitor(getData);
+```  
+
+## <span data-ttu-id="b32e8-297">unmonitorEvents</span><span class="sxs-lookup"><span data-stu-id="b32e8-297">unmonitorEvents</span></span>  
+
+```console
+unmonitorEvents(object[, events])
+```  
+
+<span data-ttu-id="b32e8-298">停止监视指定对象和事件的事件。</span><span class="sxs-lookup"><span data-stu-id="b32e8-298">Stops monitoring events for the specified object and events.</span></span>  <span data-ttu-id="b32e8-299">例如，以下事件将停止窗口对象上的所有事件监视。</span><span class="sxs-lookup"><span data-stu-id="b32e8-299">For example, the following stops all event monitoring on the window object.</span></span>  
+
+```console
+unmonitorEvents(window);
+```  
+
+<span data-ttu-id="b32e8-300">你还可以有选择地停止监视对象上的特定事件。</span><span class="sxs-lookup"><span data-stu-id="b32e8-300">You may also selectively stop monitoring specific events on an object.</span></span>  <span data-ttu-id="b32e8-301">例如，以下代码开始监视 `mouse` 当前所选元素上的所有事件，然后停止监视 `mousemove` 事件 \ （可能减少控制台输出中的干扰 \）。</span><span class="sxs-lookup"><span data-stu-id="b32e8-301">For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events \(perhaps to reduce noise in the console output\).</span></span>  
+
+```console
+monitorEvents($0, "mouse");
+unmonitorEvents($0, "mousemove");
+```  
+
+## <span data-ttu-id="b32e8-302">相对值</span><span class="sxs-lookup"><span data-stu-id="b32e8-302">values</span></span>  
+
+```console
+values(object)
+```  
+
+<span data-ttu-id="b32e8-303">返回一个数组，其中包含属于指定对象的所有属性的值。</span><span class="sxs-lookup"><span data-stu-id="b32e8-303">Returns an array containing the values of all properties belonging to the specified object.</span></span>  
+
+```console
+values(object);
+```  
+
+<!--   -->  
+
+
+
+<!-- image links -->  
+
+[ImageRecentExpression]: /microsoft-edge/devtools-guide-chromium/media/console-arithmatic.msft.png "图1： $ _ 是最新计算的表达式"  
+[ImageChangedRecentExpression]: /microsoft-edge/devtools-guide-chromium/media/console-array-length.msft.png "图2：当评估新命令时 $ _ 更改"  
+[ImageElement0]: /microsoft-edge/devtools-guide-chromium/media/console-image-highlighted-$0.msft.png "图3： $0"  
+[ImageElement1]: /microsoft-edge/devtools-guide-chromium/media/console-image-highlighted-$1.msft.png "图4： $1"  
+[ImageElementImg]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image.msft.png "图5： $ （"img"）"  
+[ImageElementImgSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-source.msft.png "图6： $ （"img"） src"  
+[ImageElementImgNodeSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-filter-source.msft.png "图7： $ （"img"，querySelector （"标题-图像"））。 src"  
+[ImageArrayElementImgSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-all.msft.png "图8：使用 $ $ （）选择文档中的所有图像并显示源"  
+[ImageArrayElementImgNodeSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-filter-all.msft.png "图9：使用 $ $ （）选择文档中指定 <div> 元素后出现的所有图像并显示源"  
+[ImageArrayXpath]: /microsoft-edge/devtools-guide-chromium/media/console-array-xpath.msft.png "图10：使用 XPath 选择器"  
+[ImageArrayXpathChild]: /microsoft-edge/devtools-guide-chromium/media/console-array-xpath-sub-element.msft.png "图11：使用更复杂的 XPath 选择器"  
+[ImageArrayXpathNode]: /microsoft-edge/devtools-guide-chromium/media/console-array-xpath-startnode.msft.png "图12：在 startNode 中使用 XPath 选择器"  
+[ImageDebugMethod]: /microsoft-edge/devtools-guide-chromium/media/console-debug-text.msft.png "图13：使用 "调试" （）在方法内中断"  
+[ImageLogObject]: /microsoft-edge/devtools-guide-chromium/media/console-dir-document-head-expanded.msft.png "图14：用 dir （）方法记录文档正文"  
+[ImageInspectElement]: /microsoft-edge/devtools-guide-chromium/media/console-inspect-document-body.msft.png "图15：使用 "检查" （）检查元素"  
+[ImageGetListeners]: /microsoft-edge/devtools-guide-chromium/media/console-elements-event-listeners-console-get-event-listeners-document.msft.png "图16：使用 getEventListeners （文档）的输出"  
+[ImageMultipleListeners]: /microsoft-edge/devtools-guide-chromium/media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "图17：多个侦听器"  
+[ImageListenersExpanded]: /microsoft-edge/devtools-guide-chromium/media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png "图18：侦听器对象的展开视图"  
+[ImageConsoleKeysValues]: /microsoft-edge/devtools-guide-chromium/media/console-keys-values.msft.png "图19：键（）和值（）命令"  
+[ImageConsoleMonitorSum]: /microsoft-edge/devtools-guide-chromium/media/console-function-monitor-sum.msft.png "图20： monitor （）方法"  
+[ImageMonitorResize]: /microsoft-edge/devtools-guide-chromium/media/console-monitor-events-resize-window.msft.png "图21：监视窗口调整大小事件"  
+[ImageMonitorKey]: /microsoft-edge/devtools-guide-chromium/media/console-monitor-events-type-t-y.msft.png "图22：监视键事件"  
+[ImageGroupedProfiles]: /microsoft-edge/devtools-guide-chromium/media/console-memory-multiple-cpu-profiles.msft.png "图23：分组的配置文件"  
+[ImageConsoleTable]: /microsoft-edge/devtools-guide-chromium/media/console-table-display.msft.png "图24： table （）方法"  
+
+<!-- links -->  
+
+[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "控制台 API 参考"  
+[DevToolsConsoleApiConsoleDirObject]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir-控制台 API 参考"  
+[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "如何在 Microsoft Edge DevTools 中暂停带有断点的代码"  
+[DevToolsRenderingToolsJSRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "加快 JavaScript 运行时"  
+
+[MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console for dir （） |MDN"  
+[MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Dirxml （） |MDN"  
+[MDNDocumentQuerySelector]: https://developer.mozilla.org/docs/Web/API/Document/querySelector "QuerySelector （） |MDN"  
+[MDNDocumentQuerySelectorAll]: https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll "QuerySelectorAll （） |MDN"  
+
+[MonorailIssue1050237]: https://bugs.chromium.org/p/chromium/issues/detail?id=1050237 "问题1050237：调试（函数）无法正常工作 |Monorail"  
+
+> [!NOTE]
+> <span data-ttu-id="b32e8-337">此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="b32e8-337">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="b32e8-338">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/utilities)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。</span><span class="sxs-lookup"><span data-stu-id="b32e8-338">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/utilities) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+
+[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
+<span data-ttu-id="b32e8-340">此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="b32e8-340">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
+[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
