@@ -54,7 +54,7 @@ ms.locfileid: "10563297"
 ![扩展窗格中的扩展](./../media/sideload-extension-installed.png)
 
 > [!NOTE]
-> 在随后启动 Microsoft Edge 时，未签名的扩展将自动关闭。 当浏览器进入空闲状态时（大约10秒钟的非活动时间），你将在窗口底部看到以下通知。 ![危险通知](./../media/riskynotification.png)若要打开未签名的扩展，请单击 "仍然启用"。
+> 在随后启动 Microsoft Edge 时，未签名的扩展将自动关闭。 当浏览器进入空闲状态时（大约10秒钟的非活动时间），你将在窗口底部看到以下通知。 ![危险通知 ](./../media/riskynotification.png) 若要打开未签名的扩展，请单击 "仍然启用"。
 
 
 

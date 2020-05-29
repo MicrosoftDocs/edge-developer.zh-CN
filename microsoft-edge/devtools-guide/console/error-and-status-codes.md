@@ -19,11 +19,11 @@ ms.locfileid: "10564310"
 ---
 # 控制台错误和状态代码  
 
-此参考可帮助你从 DevTools[控制台](../console.md)解释错误和状态消息。  使用下表按前缀 \ （其中，"x" 表示 0&ndash;9 位数字 \）查找代码：
+此参考可帮助你从 DevTools[控制台](../console.md)解释错误和状态消息。  使用下表按前缀 \ （其中，"x" 表示 0 &ndash; 9 位数字 \）查找代码：
 
 | 代码前缀 | 区域 | 描述 |  
 |:--- | :--- |:--- |  
-| [CSP143xx](#csp-codes) | 内容安全策略 | 使用`Content-Security-Policy` HTTP 标头时被阻止的资源。  |  
+| [CSP143xx](#csp-codes) | 内容安全策略 | 使用 HTTP 标头时被阻止的资源 `Content-Security-Policy` 。  |  
 | [CSS31xx](#css-codes) | 单 | 与*Web 打开字体格式*\ （WOFF \）和嵌入的*OpenType* \ （EOT \）字体源和主机服务器问题相关的错误。  |  
 | [HTML1112-1300](#html-codes) | HTML | 其中大多数是特定于 Microsoft Internet Explorer 概念（如*文档模式*和*兼容性视图*）的旧版代码。  |  
 | [HTML1400-1532](#html5-parser-warnings) | HTML5 分析 | HTML5 分析程序引发的验证警告。  |  
@@ -37,26 +37,26 @@ ms.locfileid: "10564310"
 
 ## CSP 代码  
 
-通过使用`Content-Security-Policy` HTTP 标头被阻止的资源通过 DevTools 控制台进行报告，还可以按报表返回到服务器。
+通过使用 HTTP 标头被阻止的资源 `Content-Security-Policy` 通过 DevTools 控制台进行报告，还可以按报表返回到服务器。
 
 | 代码 | 消息 | 描述 | 建议的修复 |
 |:--- |:--- |:--- |:--- |
-| CSP14301 | "无法解析 \ [policy type \]，因为 \ <取消操作 \ > 的原因 \" 将被忽略。 " | 指定的安全策略类型 \ （例如，脚本-src，base uri \）因确定的原因而失败，将被忽略。  | 请确保在单个指令中列出特定类型的所有所需资源。  例如，在中`script-src https://host1.com; script-src https://host2.com`，第二个指令将被忽略。  以下内容正确地将这两个来源`script-src https://host1.com https://host2.com`指定为有效：。  |
+| CSP14301 | "无法解析 \ [policy type \]，因为 \ <取消操作 \ > 的原因 \" 将被忽略。 " | 指定的安全策略类型 \ （例如，脚本-src，base uri \）因确定的原因而失败，将被忽略。  | 请确保在单个指令中列出特定类型的所有所需资源。  例如，在中 `script-src https://host1.com; script-src https://host2.com` ，第二个指令将被忽略。  以下内容正确地将这两个来源指定为有效： `script-src https://host1.com https://host2.com` 。  |
 | CSP14302 | "无法分析 \ [policy type \] 的" \ [源 URL \] "的源，将忽略源 URL \] 的源。"                                                         | 大多数 CSP 指令都需要一个或多个内容源 \ （指示可从 \ 加载内容的 URL）。  此错误指向一个策略，其中包含在分析尝试时失败的源 URL 的指令。  | 检查在指定的指令类型中可以找到的在指定指令中定义的内容源 \ （最常是 URL \）。  更正或替换源 URL 或删除指令。  <br /> *\ * 你的策略应包括默认的 src 策略指令，当其他资源类型没有自己的策略时，该指令将回退该指令。* |
-| CSP14303 | "[Policy type] 策略为空。" | 策略类型 \ （例如，HTTP 标头中的内容安全策略 \）为空。  | 可以在上[http://content-security-policy.com](http://content-security-policy.com)找到有关设置内容安全策略的快速参考。  |
+| CSP14303 | "[Policy type] 策略为空。" | 策略类型 \ （例如，HTTP 标头中的内容安全策略 \）为空。  | 可以在上找到有关设置内容安全策略的快速参考 [http://content-security-policy.com](http://content-security-policy.com) 。  |
 | CSP14304 | \ [策略类型 \] 中的指令 \ [指令类型 \] 的 "未知源 \ [源 URL \] 源将被忽略。" | 标识的指令中批准的 \ （safe \）内容的来源未知，将被忽略。  | 检查标识为 \ （通常是 URL \）的内容源，确保它是正确的。  |
-| CSP14305 | "\ [Policy type \] 源中的指令 [指令类型] 的" 不支持源 \ [源 URL \] 源将被忽略。 " | 此指令中列出的源 \ （URL、关键字或数据）不受支持，将被忽略。  | 来源站点的地址可能包含可选的前导通配符 \ （星号字符`*`\）。  例如，http://`*`、foo.com 或 mail.foo.com： *。  主机由空格分隔。  源还可能是关键字 \ （none、self、不安全内联和不安全-eval 均受支持 \）或数据 \ （数据： Uri，mediastream： Uri \）。  |
+| CSP14305 | "\ [Policy type \] 源中的指令 [指令类型] 的" 不支持源 \ [源 URL \] 源将被忽略。 " | 此指令中列出的源 \ （URL、关键字或数据）不受支持，将被忽略。  | 来源站点的地址可能包含可选的前导通配符 \ （星号字符 `*` \）。  例如，http://、 `*` foo.com 或 mail.foo.com： *。  主机由空格分隔。  源还可能是关键字 \ （none、self、不安全内联和不安全-eval 均受支持 \）或数据 \ （数据： Uri，mediastream： Uri \）。  |
 | CSP14306 | "对于 \ [策略类型 \]，没有为指令提供的源 [指令类型 \]-这等效于使用" none "，并且将阻止下载此类型的所有资源。" | 为安全内容提供指令和不列出任何源以供访问，这与不允许下载指令中指定类型的任何资源相同。  | 源可以是一个或多个 internet 主机名或 IP 地址，以及可选的 URL 方案和/或端口号。  |
 | CSP14307 | "源 [源 URL] 已为指令 \ [策略类型 \] 的指令类型 \] 提供。" | 此指令中列出了一个重复源 \ （URL、关键字或数据 \），将被忽略。  | 删除标识的重复源。  |
-| CSP14308 | "在 [指令名称] 处的 \ [policy type \] 中解析指令失败。" | 指令标识失败。  有关如何编写支持的指令的指导，请[http://content-security-policy.com](http://content-security-policy.com/)参阅。  | 指令必须用分号分隔。  例如，如果你有一个应用程序从内容传递网络（例如`https://cdn.example.net`\）加载其所有资源，并且你知道你不需要带框架的内容或任何插件，则你的策略可能如下所示： `Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'.` *\ * 当指令使用分号分隔时，指令中的源应仅使用空格分隔。* |
-| CSP14309 | "\ [Policy type \] 中的 \ [指令名称 \] 的" 未知指令 "-指令将被忽略。" | CSP 策略中设置的指令未知，将被忽略。  | 有关支持的指令的列表，请[http://content-security-policy.com](http://content-security-policy.com/)参阅。  |
-| CSP14310 | "\ [Policy type] 中的" 不支持的指令 [指令名称]-指令将被忽略。 " | 在对不受支持的策略类型 \ （例如， `Content-Security-policy-Report-Only`标头字段 \）进行分析时发现了一个指令，将被忽略。  有关支持的指令， [http://content-security-policy.com](http://content-security-policy.com/)请参阅。  | 删除不受支持的指令。  **注意**：在 \ <meta \ > 元素或 "标题" `Content-Security-policy-Report-Only`字段中不支持某些指令。  |
+| CSP14308 | "在 [指令名称] 处的 \ [policy type \] 中解析指令失败。" | 指令标识失败。  有关如何编写支持的指令的指导，请参阅 [http://content-security-policy.com](http://content-security-policy.com/) 。  | 指令必须用分号分隔。  例如，如果你有一个应用程序从内容传递网络（例如 \）加载其所有资源 `https://cdn.example.net` ，并且你知道你不需要带框架的内容或任何插件，则你的策略可能如下所示： `Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'.` *\ * 当指令使用分号分隔时，指令中的源应仅使用空格分隔。* |
+| CSP14309 | "\ [Policy type \] 中的 \ [指令名称 \] 的" 未知指令 "-指令将被忽略。" | CSP 策略中设置的指令未知，将被忽略。  | 有关支持的指令的列表，请参阅 [http://content-security-policy.com](http://content-security-policy.com/) 。  |
+| CSP14310 | "\ [Policy type] 中的" 不支持的指令 [指令名称]-指令将被忽略。 " | 在对不受支持的策略类型 \ （例如，标头字段 \）进行分析时发现了一个指令， `Content-Security-policy-Report-Only` 将被忽略。  有关支持的指令，请参阅 [http://content-security-policy.com](http://content-security-policy.com/) 。  | 删除不受支持的指令。  **注意**：在 \ <meta \ > 元素或 "标题" 字段中不支持某些指令 `Content-Security-policy-Report-Only` 。  |
 | CSP14311 | "指令 \ [指令名称 \] 已在 \ [策略类型 \] 中提供-重复指令将被忽略。" | 分析期间发现重复的指令，将忽略第二条指令及其源表达式。  | 删除重复的脚本。  |
-| CSP14312 | "在 [policy type]： [target uri] 中的资源违反指令 [指令名称]。  将阻止资源。 " | 在此示例中： "资源违反指令" 脚本-源 ms-appx：数据：主机定义的策略中的 "unsafe-eval"：内联脚本。  将阻止资源。 " | 由于 "主机定义" 策略中的指令`'script-src ms-appx: data: 'unsafe-eval'` ，内联脚本 \ （目标 uri \）被阻止。  <br /> 作者需要将所有内联脚本和样式移出行，因为用户代理无法确定攻击者是否注入了内联脚本。  删除内联脚本并将其放在外部文件中。  |
-| CSP14313 | "在 [policy type]： [target uri] 中的资源违反指令 [指令名称]。  由于策略为 "仅报告"，资源将不会被阻止。 " | 标识了违反`Content-Security-policy-Report-Only`标题字段中指定的指令的资源。  由于它属于`Report-Only`策略类型，因此不会阻止该资源。  | 如果应阻止此资源以保护您的网站，请将该指令移动到 "内容安全策略" 标题字段中。  |
-| CSP14314 | "无法将策略冲突报告发送到 [目标位置 uri]，因为 [取消操作的原因]。" | 报告违反策略的问题、指定要发送报告的目标目的地和未发送报告的原因均应标识。  | 该`report-uri`指令指定当违反内容安全策略时，浏览器将发送报告的 URL。  *\ * 不能在 \ <meta \ > 标记中使用它。* |
-| CSP14315 | "未能强制执行 [策略类型] 中的沙盒指令，因为 [取消操作的原因]。" | 由于指定的原因，沙盒指令失败。  此指令对页面可以执行的操作（而不是页面可以加载的资源）施加限制。  如果存在沙盒指令，则会将页面视为在 iframe 内加载。  它可以阻止弹出窗口和插件并阻止脚本执行。  | 将沙盒值保留为空以保持所有限制位置，或添加值： `allow-forms`、 `allow-same-origin`、 `allow-scripts`和`allow-top-navigation`。  *\ * 在 \ <元 > 元素或 "标题" `Content-Security-policy-Report-Only`字段中不支持沙盒指令。* |
-| CSP14316 | "由于主机替代，允许脚本评估。" | 如果包含 " `script-src`或`default-src` " 指令，则内联脚本`eval()`将被禁用，除非您`unsafe-inline`分别`unsafe-eval`指定 and。  | `'unsafe-eval'` 允许使用`eval()`和类似的方法从字符串创建代码。  必须包含单引号。  ***注意**：这是不安全的，可打开您的网站以查看跨网站脚本漏洞。 * |
+| CSP14312 | "在 [policy type]： [target uri] 中的资源违反指令 [指令名称]。  将阻止资源。 " | 在此示例中： "资源违反指令" 脚本-源 ms-appx：数据：主机定义的策略中的 "unsafe-eval"：内联脚本。  将阻止资源。 " | 由于 `'script-src ms-appx: data: 'unsafe-eval'` "主机定义" 策略中的指令，内联脚本 \ （目标 uri \）被阻止。  <br /> 作者需要将所有内联脚本和样式移出行，因为用户代理无法确定攻击者是否注入了内联脚本。  删除内联脚本并将其放在外部文件中。  |
+| CSP14313 | "在 [policy type]： [target uri] 中的资源违反指令 [指令名称]。  由于策略为 "仅报告"，资源将不会被阻止。 " | 标识了违反标题字段中指定的指令的资源 `Content-Security-policy-Report-Only` 。  由于它属于 `Report-Only` 策略类型，因此不会阻止该资源。  | 如果应阻止此资源以保护您的网站，请将该指令移动到 "内容安全策略" 标题字段中。  |
+| CSP14314 | "无法将策略冲突报告发送到 [目标位置 uri]，因为 [取消操作的原因]。" | 报告违反策略的问题、指定要发送报告的目标目的地和未发送报告的原因均应标识。  | 该 `report-uri` 指令指定当违反内容安全策略时，浏览器将发送报告的 URL。  *\ * 不能在 \ <meta \ > 标记中使用它。* |
+| CSP14315 | "未能强制执行 [策略类型] 中的沙盒指令，因为 [取消操作的原因]。" | 由于指定的原因，沙盒指令失败。  此指令对页面可以执行的操作（而不是页面可以加载的资源）施加限制。  如果存在沙盒指令，则会将页面视为在 iframe 内加载。  它可以阻止弹出窗口和插件并阻止脚本执行。  | 将沙盒值保留为空以保持所有限制位置，或添加值： `allow-forms` 、 `allow-same-origin` 、 `allow-scripts` 和 `allow-top-navigation` 。  *\ * 在 \ <元 > 元素或 "标题" 字段中不支持沙盒指令 `Content-Security-policy-Report-Only` 。* |
+| CSP14316 | "由于主机替代，允许脚本评估。" | 如果包含 " `script-src` 或" `default-src` 指令，则内联脚本将被 `eval()` 禁用，除非您 `unsafe-inline` 分别指定 and `unsafe-eval` 。  | `'unsafe-eval'` 允许使用 `eval()` 和类似的方法从字符串创建代码。  必须包含单引号。  ***注意**：这是不安全的，可打开您的网站以查看跨网站脚本漏洞。 * |
 | CSP14317 | 由于主机替代而允许 "帧 [源名称]"。 | 由于主机 CSP 策略中设置了替代，因此已允许进行标识的源帧。  | 策略可能包含 nonce-源表达式，这意味着源只能在一次使用时使用，并且服务器每次传输策略时都必须为该指令生成一个新值。  Nonces 替代它们所处的指令中的限制。  |
 
 > [!NOTE]
@@ -76,7 +76,7 @@ ms.locfileid: "10564310"
 | CSS3116 | "@font-遇到失败的跨起源请求。  没有访问控制-原创标题。 " | 可能没有为跨域访问配置字体。  | 该字体并非从与文档相同的原点提供。  请确保为该字体提供服务的主机允许使用 "访问控制-原创" HTTP 标头来使用此字体。                        |
 | CSS3117 | "@font-遇到失败的跨起源请求。  资源访问受限。 " | "访问控制-允许-原创" 标题可能未正确配置，或者字体主机可能不允许您的页面使用此字体。  | 请确保资源具有正确的权限和正确配置的 HTTP 响应标题，该标题在为字体提供服务的主机上具有跨域访问权限。  |
 | CSS3118 | "无法创建新的样式表。  文档中包含多个 "最大值" 样式表。 " | Microsoft Edge 在呈现页面的过程中创建了超过4095的样式表对象。  | 这可能是控制不足的 JavaScript 进程或生成系统错误。  减少生成的样式表对象数。  |
-| CSS3119 | "媒体查询-ms-视图状态已被弃用。  -在 Windows 8.1 之后，ms-视图状态媒体查询可能会更改或不可用。  而是使用最大宽度和最小宽度的查询。 " | 您的 CSS 包含`-ms-view-state`一个媒体查询。  | 使用最大宽度和最小宽度。  |
+| CSS3119 | "媒体查询-ms-视图状态已被弃用。  -在 Windows 8.1 之后，ms-视图状态媒体查询可能会更改或不可用。  而是使用最大宽度和最小宽度的查询。 " | 您的 CSS 包含一个 `-ms-view-state` 媒体查询。  | 使用最大宽度和最小宽度。  |
 
 ## HTML 代码
 
@@ -87,14 +87,14 @@ ms.locfileid: "10564310"
 | HTML1112 | "从 \ [encoding \] 重启到 \ [编码 \]" | 指定的代码页与服务器的代码页不同。  | 使用与服务器相同的代码页来避免此错误。  |  
 | HTML1113 | "文档模式从 \ [mode \] 重新启动到 \ [mode \]" | 该网页需要不同于浏览器当前设置为的文档模式。  | 当用户从其他页面浏览时，使其退出开发人员的控件时，可能会出现此消息。  |  
 | HTML1114 | 来自 \ [domain \] 的 "代码页 \ [encoding \] 替代冲突的代码页 \ [encoding \] 来自 \ [域 \]" | 在 HTTP \ （来自服务器 \）和 HTML \ （页面 \）标题中指定的 codepages 彼此不同。  | 更改一个，使其匹配。  |  
-| HTML1115 | "X-UA-兼容的 META 标记 \`[META tag]`" 已忽略，因为文档模式已完成 | 通常，META 标记位于 "Script" 或 "Style" 声明之后，该声明修复了页面的文档模式。  | 将 X-UA 兼容的 META 标记尽可能早地移动到标题中。  最好将其放在紧随 \ <title \ > 和字符集值之后。  |  
-| HTML1116 | "X-UA-兼容的 META 标记 \`[META tag]`" 已忽略，因为有较早的 X-ua 兼容的 meta`[META tag]`标记 \ （\） " | 源代码的 \ <head \ > 部分中有多个 "X UA 兼容的" "META" 标记。  | 删除除一个 "X-UA 兼容的 META" 标记之外的所有标记，确保它在标题中尽可能早。  一个好的做法是将其放在紧随 \ <title \ > 和字符集值之后。  |  
+| HTML1115 | "X-UA-兼容的 META 标记 \" `[META tag]` 已忽略，因为文档模式已完成 | 通常，META 标记位于 "Script" 或 "Style" 声明之后，该声明修复了页面的文档模式。  | 将 X-UA 兼容的 META 标记尽可能早地移动到标题中。  最好将其放在紧随 \ <title \ > 和字符集值之后。  |  
+| HTML1116 | "X-UA-兼容的 META 标记 \" 已 `[META tag]` 忽略，因为有较早的 X-Ua 兼容的 meta 标记 \ （ `[META tag]` \） " | 源代码的 \ <head \ > 部分中有多个 "X UA 兼容的" "META" 标记。  | 删除除一个 "X-UA 兼容的 META" 标记之外的所有标记，确保它在标题中尽可能早。  一个好的做法是将其放在紧随 \ <title \ > 和字符集值之后。  |  
 | HTML1121 | 不允许使用 "代码页 \ [encoding \]"，仅允许使用代码页 \ [encoding \]。 " | 网页中的内容调用了在此上下文中不允许使用的字符编码。  | 请确保所有内容都使用邮件中指定的允许编码。  |  
 | HTML1122 | "Internet Explorer 正在模拟 IE8" 的企业模式下运行 " | 页面当前在企业模式下呈现，这是 Windows Internet Explorer 8 的模拟。  | 此模式由 IT 管理层针对特定网站进行配置。  如果单个用户需要将其关闭到网页上，请清除 "工具" 菜单上的 "企业模式" 选项。  有关企业模式管理的详细信息，请参阅[IT 文档](https://technet.microsoft.com/library/dn640687.aspx)。  |  
-| HTML1201 | "`[domain]`是你已添加到兼容性视图的网站。" | 用户已选择当前网站的 "**兼容性视图**" 按钮或通过 "**兼容性视图" 设置**添加。  | 用户启动。  |  
-| HTML1202 | "`[domain]`正在兼容性视图中运行，因为已选中" 在兼容性视图中显示 intranet 网站 "。" | 用户已选中**兼容性视图设置**中的 "**在兼容性视图中显示 intranet 网站**" 复选框。  | 用户需要按 Alt + T，选择 "**兼容性视图设置**"，然后清除 "**在兼容性视图中显示 intranet 网站**" 复选框。  |  
-| HTML1203 | "`[domain]`已配置为通过组策略在兼容性视图中运行。" | 网络管理员已指定网页将在兼容性视图中运行。  | 您需要与网络管理员联系。  |  
-| HTML1204 | "`[domain]`正在兼容性视图中运行，因为已选中" 在兼容性视图中显示所有网站 "。" | 用户已选中 "**兼容性视图设置**" 中的 "**在兼容性视图中显示所有网站**" 复选框。  | 用户需要按 Alt + T，选择 "**兼容性视图设置**"，然后清除 "**在兼容性视图中显示所有网站**" 复选框。  |  
+| HTML1201 | " `[domain]` 是你已添加到兼容性视图的网站。" | 用户已选择当前网站的 "**兼容性视图**" 按钮或通过 "**兼容性视图" 设置**添加。  | 用户启动。  |  
+| HTML1202 | "正在 `[domain]` 兼容性视图中运行，因为已选中" 在兼容性视图中显示 intranet 网站 "。" | 用户已选中**兼容性视图设置**中的 "**在兼容性视图中显示 intranet 网站**" 复选框。  | 用户需要按 Alt + T，选择 "**兼容性视图设置**"，然后清除 "**在兼容性视图中显示 intranet 网站**" 复选框。  |  
+| HTML1203 | "已 `[domain]` 配置为通过组策略在兼容性视图中运行。" | 网络管理员已指定网页将在兼容性视图中运行。  | 您需要与网络管理员联系。  |  
+| HTML1204 | "正在 `[domain]` 兼容性视图中运行，因为已选中" 在兼容性视图中显示所有网站 "。" | 用户已选中 "**兼容性视图设置**" 中的 "**在兼容性视图中显示所有网站**" 复选框。  | 用户需要按 Alt + T，选择 "**兼容性视图设置**"，然后清除 "**在兼容性视图中显示所有网站**" 复选框。  |  
 | HTML1300 | "导航发生" | 已导航到新页面，或者刷新了当前页面。  | 这是一条信息性消息，而不是错误。  |  
 
 ## HTML5 分析器警告  
@@ -159,10 +159,10 @@ ms.locfileid: "10564310"
 | HTML1526 | "无效的嵌套。  \ <nobr \ > 标记不应放置在另一个 \ <nobr \ > 中。 " |  
 | HTML1527 | "期望的" DOCTYPE "。  最短有效的 doctype 为 \ < \！DOCTYPE html \ >。 " |  
 | HTML1528 | HTML 内容中 > "意外的 \ <图像 \"。  改用 \ <img \ >。 " |  
-| HTML1529 | "无效的 xmlns： xlink 属性值。  值必须为 "\ <https://w3.org/1999/xlink\>"。 " |  
+| HTML1529 | "无效的 xmlns： xlink 属性值。  值必须为 "\ <https://w3.org/1999/xlink\> "。 " |  
 | HTML1530 | "在结构表元素内找到的文本。  表格文本只能放在 <标题为 \ >、\ <td \ > 或 \ <> 元素中。 " |  
-| HTML1531 | "Xmlns 属性值无效。  对于 SVG 元素，值必须为 "\ <https://w3.org/2000/svg/\>"。 " |  
-| HTML1532 | "Xmlns 属性值无效。  对于 MathML 元素，值必须为 "\ <https://w3.org/1998/Math/MathML/\>"。  |  
+| HTML1531 | "Xmlns 属性值无效。  对于 SVG 元素，值必须为 "\ <https://w3.org/2000/svg/\> "。 " |  
+| HTML1532 | "Xmlns 属性值无效。  对于 MathML 元素，值必须为 "\ <https://w3.org/1998/Math/MathML/\> "。  |  
 
 ## HTTP 代码  
 
@@ -306,7 +306,7 @@ ms.locfileid: "10564310"
 
 ## 安全代码
 
-安全错误代码的格式如下`SEC7xxx`所示`SEC7113`。  这些错误反映 Microsoft Edge 强制实施的安全条件，如混合内容和跟踪保护。
+安全错误代码的格式如下所示 `SEC7xxx` `SEC7113` 。  这些错误反映 Microsoft Edge 强制实施的安全条件，如混合内容和跟踪保护。
 
 | 代码 | 消息 | 描述 | 建议的修复 |  
 | :--- |:--- |:--- |:--- |  
@@ -317,10 +317,10 @@ ms.locfileid: "10564310"
 | SEC7115 | "：已访问和：链接样式只能通过颜色不同。  某些样式未应用于：已访问。 " | 已使用 "已访问" 和 "链接" 样式更改了多个属性（如字体或大小）。  | 仅更改颜色属性。  |  
 | SEC7116 | "访问被拒绝。  无法撤销跨源 URL： [URL]。 " | 具有不同于 blob 的站点的脚本尝试撤消 blob URL。  由于有 blob 原始策略，尝试失败。  | 使用创建 blob URL 的文档，确保所有 blob Url 都已使用来自原始站点的脚本吊销。  |  
 | SEC7120 | 在访问控制-原创标题中找不到 "原始 [域]"。 | 在对你的 XMLHttpRequest 的响应中，返回了访问控制允许源标头，其值不包含或不匹配你的网站的原始值。  | 资源正在返回正确类型的标题代码，但不允许您的网站。  请与该资源的开发人员联系，让他们更新其访问控制支持源标题，以便允许您的网站。  你可以将它们指向[XHR 在 IE10 中的 cors](https://blogs.msdn.microsoft.com/ie/2012/02/09/cors-for-xhr-in-ie10/) ，以了解有关响应标题中的 CORS 的详细信息。  |  
-| SEC7121 | "当凭据标志设置为 true 时，无法在访问控制-允许源中使用通配符"。 " | 服务器在标题中返回 "访问控制-允许-原创： *"，但在 XMLHttpRequest 中将`withCredentials`标志设置为**true**时，不允许执行此操作。  | 必须修改服务器端处理程序，以返回特定于此类型请求上的原点的访问控制允许源标头。  如果您不控制服务器端处理程序，则必须与执行的开发人员交谈。  |  
-| SEC7122 | "凭据标志已设置为 true，但访问控制-允许-凭据不存在或未设置为" true "。 | 使用该`withCredentials`标志进行了 XMLHttpRequest。  未返回访问控制允许的凭据标头，或者返回的值不是**true**。  | 您的凭据或服务器的响应可能存在问题。  有关 credentialed 请求的信息，请参阅[XMLHttpRequest 级别2规范](https://w3.org/TR/XMLHttpRequest2/)。  |  
+| SEC7121 | "当凭据标志设置为 true 时，无法在访问控制-允许源中使用通配符"。 " | 服务器在标题中返回 "访问控制-允许-原创： *"，但在 `withCredentials` XMLHttpRequest 中将标志设置为**true**时，不允许执行此操作。  | 必须修改服务器端处理程序，以返回特定于此类型请求上的原点的访问控制允许源标头。  如果您不控制服务器端处理程序，则必须与执行的开发人员交谈。  |  
+| SEC7122 | "凭据标志已设置为 true，但访问控制-允许-凭据不存在或未设置为" true "。 | 使用该标志进行了 XMLHttpRequest `withCredentials` 。  未返回访问控制允许的凭据标头，或者返回的值不是**true**。  | 您的凭据或服务器的响应可能存在问题。  有关 credentialed 请求的信息，请参阅[XMLHttpRequest 级别2规范](https://w3.org/TR/XMLHttpRequest2/)。  |  
 | SEC7123 | "请求标头 [header] 未出现在访问控制-允许标题列表中。" | 请求中包含自定义标头类型，但响应的访问控制-允许标题列表未包含它。  | 请确保服务器允许自定义标头，并明确允许在请求中发送一个。  |  
-| SEC7124 | "请求方法 [方法] 在访问控制-允许的方法列表中不存在。" | 请求方法（如 POST）已在 XMLHttpRequest 中使用，但响应返回了不包含它的访问控制允许标头。  | 请确保服务器允许此类型的请求方法，并且如果该方法具有受限`withCredentials`访问权限，则你可以正确使用。  |  
+| SEC7124 | "请求方法 [方法] 在访问控制-允许的方法列表中不存在。" | 请求方法（如 POST）已在 XMLHttpRequest 中使用，但响应返回了不包含它的访问控制允许标头。  | 请确保服务器允许此类型的请求方法，并且 `withCredentials` 如果该方法具有受限访问权限，则你可以正确使用。  |  
 | SEC7125 | "用于 [URL] 的 XMLHttpRequest 导致响应标题分析失败。" | 无法分析服务器的响应标头，因此请求失败。  | 使用 "[网络" 工具](https://msdn.microsoft.com/library/dn255004.aspx)捕获和检查响应标题，确保它们符合[CORS 规范](https://w3.org/TR/cors/)。  |  
 | SEC7126 | "CORS 预检请求不允许重定向。" | 在原始标头中检测到重定向，并且用户代理在预检期间不关注重定向。  | 使用 "[网络" 工具](https://msdn.microsoft.com/library/dn255004.aspx)捕获和检查请求标头，并确保有单个直接原点。  |  
 | SEC7127 | "已阻止针对 CORS 请求的重定向。" | CORS 资源的路径包含违反安全规则的重定向。  | 请确保你的 XMLHttpRequest 中的 CORS 资源的路径最直接。  |  
@@ -410,10 +410,10 @@ XML 代码采用 XML5xxx 的形式，如 XML5603。
 | XML5659 | "已声明前缀"。 |  
 | XML5660 | "尚未声明指定的前缀。" |  
 | XML5661 | "非默认命名空间声明不得具有空 URI。" |  
-| XML5662 | "Xml" 前缀已保留，并且必须具有 URI "<https://w3.org/XML/1998/namespace/>"。 " |  
+| XML5662 | "Xml" 前缀已保留，并且必须具有 URI " <https://w3.org/XML/1998/namespace/> "。 " |  
 | XML5663 | "Xmlns" 前缀已保留供 XML 使用。 " |  
-| XML5664 | "Xml 命名空间 URI \ （\ <https://w3.org/XML/1998/namespace/\>\)必须仅分配给前缀" xml "。" |  
-| XML5665 | "Xmlns 命名空间 URI \ （\ <https://w3.org/2000/xmlns/\>\)已保留，不得使用。" |  
+| XML5664 | "Xml 命名空间 URI \ （\ <https://w3.org/XML/1998/namespace/\>\) 必须仅分配给前缀" xml "。" |  
+| XML5665 | "Xmlns 命名空间 URI \ （\ <https://w3.org/2000/xmlns/\>\) 已保留，不得使用。" |  
 | XML5666 | "SC_E_SC" |  
 | XML5667 | "已超过最大嵌套元素深度。" |  
 | XML5668 | "已超过最大实体扩展数。" |  
@@ -424,8 +424,8 @@ XML 代码采用 XML5xxx 的形式，如 XML5603。
 | XML5673 | "WR_E_DUPLICATEATTRIBUTE：编写器：重复属性。" |  
 | XML5674 | "WR_E_XMLNSPREFIXDECLARATION： writer：无法重新定义 xmlns 前缀。" |  
 | XML5675 | "WR_E_XMLPREFIXDECLARATION：编写器： xml 前缀必须具有 \ <https://w3.org/XML/1998/namespace/\> URI。" |  
-| XML5676 | "WR_E_XMLURIDECLARATION：编写器： xml 命名空间 URI \ （ https://w3.org/XML/1998/namespace/\>\) \ <必须仅分配给前缀" xml "。" |  
-| XML5677 | "WR_E_XMLNSURIDECLARATION：编写器： xmlns 命名空间 URI \ （ https://w3.org/2000/xmlns/\>\) \ <已保留，不得使用。" |  
+| XML5676 | "WR_E_XMLURIDECLARATION：编写器： xml 命名空间 URI \ （\ <https://w3.org/XML/1998/namespace/\>\) 必须仅分配给前缀" xml "。" |  
+| XML5677 | "WR_E_XMLNSURIDECLARATION：编写器： xmlns 命名空间 URI \ （\ <https://w3.org/2000/xmlns/\>\) 已保留，不得使用。" |  
 | XML5678 | "WR_E_NAMESPACEUNDECLARED：编写器：命名空间未声明。" |  
 | XML5679 | "WR_E_INVALIDXMLSPACE：编写器： xml： space 属性 \ 的值无效 \ （允许的值为" default "和" preserve "\）。" |  
 | XML5680 | "WR_E_INVALIDACTION：编写器：执行所请求的操作将导致 XML 文档无效。" |  
