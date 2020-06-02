@@ -3,17 +3,17 @@ description: 了解如何在 Microsoft Edge 中测试你的网站或应用，或
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/20/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge，web 开发，html，css，javascript，开发人员，webdriver，selenium，测试，工具，自动化，测试
-ms.openlocfilehash: 1ce30ec13a4def2da67cffc80b0cc7c92845f22b
-ms.sourcegitcommit: a78e285e8d0d9c570169b4e86bc4a2c2bb17871d
+ms.openlocfilehash: 52d1a92df1a0faa21a1f8caa780fe203ad27856e
+ms.sourcegitcommit: d39c64e0d439eb0643950248cdf2282383779225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "10668184"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "10689673"
 ---
 # WebDriver (Chromium)  
 
@@ -79,7 +79,7 @@ WebDriver 需要特定于浏览器的驱动程序才能自动处理每个浏览�
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="basic-usage-code" />  
+<a id="basic-usage-code"></a>  
 
 ```csharp
 var driver = new EdgeDriver();
@@ -87,7 +87,7 @@ var driver = new EdgeDriver();
 
 #### [Python](#tab/python/)  
 
-<a id="basic-usage-code" />  
+<a id="basic-usage-code"></a>  
 
 ```python
 driver = Edge()
@@ -95,7 +95,7 @@ driver = Edge()
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="basic-usage-code" />  
+<a id="basic-usage-code"></a>  
 
 ```javascript
 let driver = edge.Driver.createSession();
@@ -109,7 +109,7 @@ let driver = edge.Driver.createSession();
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="driving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -120,7 +120,7 @@ var driver = new EdgeDriver(options);
 
 #### [Python](#tab/python/)  
 
-<a id="driving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -131,7 +131,7 @@ driver = Edge(options)
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="driving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code"></a>  
 
 ```javascript
 let options = new edge.Options();
@@ -148,7 +148,7 @@ let driver = edge.Driver.createSession(options);
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code" />  
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -160,7 +160,7 @@ var driver = new EdgeDriver(options);
 
 #### [Python](#tab/python/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code" />  
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -172,7 +172,7 @@ driver = Edge(options)
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code" />  
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
 
 ```javascript
 let options = new edge.Options();
@@ -188,7 +188,7 @@ let driver = edge.Driver.createSession(options);
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="customizing-microsoft-edge-driver-services-code" />  
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 `EdgeDriver`使用类创建类实例时 `EdgeOptions` ，它会自动 `EdgeDriverService` 为 microsoft Edge \ （EdgeHTML \）或 microsoft Edge \ （Chromium \）创建和启动相应的类。  
 
@@ -210,7 +210,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 
 #### [Python](#tab/python/)  
 
-<a id="customizing-microsoft-edge-driver-services-code" />  
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 使用 Python 时， `Edge` 对象将创建并管理 `EdgeService` 。  若要配置 `EdgeService` ，请将其他参数传递给该 `Edge` 对象：
 
@@ -221,7 +221,7 @@ driver = Edge(service_args = service_args)
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="customizing-microsoft-edge-driver-services-code" />  
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 使用 JavaScript 时，使用类创建和配置 `Service` `ServiceBuilder` 。  你可以选择将 `Service` 对象传递给 `Driver` 启动和停止服务的对象。  
 
@@ -240,7 +240,7 @@ let driver = edge.Driver.createSession(options, service);
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="using-chromium-specific-options-code" />  
+<a id="using-chromium-specific-options-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -251,7 +251,7 @@ options.AddArgument("disable-gpu");
 
 #### [Python](#tab/python/)  
 
-<a id="using-chromium-specific-options-code" />  
+<a id="using-chromium-specific-options-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -262,7 +262,7 @@ options.add_argument("disable-gpu")
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="using-chromium-specific-options-code" />  
+<a id="using-chromium-specific-options-code"></a>  
 
 ```javascript
 let options = new edge.Options();
