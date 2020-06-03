@@ -6,17 +6,17 @@
     - name: 使用 Windows 运行时异步方法
       href: using-windows-runtime-asynchronous-methods.md
       items:
-        - name: 异步 Windows 运行时方法中的特殊错误属性
+        - name: 异步 Windows 运行时方法的特殊错误属性
           href: special-error-properties-from-asynchronous-windows-runtime-methods.md
     - name: 在 JavaScript 中处理 Windows 运行时事件
       href: handling-windows-runtime-events-in-javascript.md
-    - name: Windows 运行时类型的 JavaScript 表示形式
+    - name: Windows 运行时类型 JavaScript 表示形式
       href: javascript-representation-of-windows-runtime-types.md
-    - name: Windows 运行时日期时间和时间跨度表示
+    - name: Windows Runtime DateTime 和 TimeSpan 表示形式
       href: windows-runtime-datetime-and-timespan-representations.md
-    - name: 使用 JavaScript 的 Windows 运行时应用程序的错误代码
+    - name: 使用 JavaScript 的 Windows 运行时应用的错误代码
       href: error-codes-for-windows-runtime-apps-using-javascript.md
-- name: Reference （WinRT）
+- name: 引用 (WinRT)
   items:
     - name: MSApp
       href: reference/msapp.md

@@ -1,8 +1,8 @@
-- name: WebView2 （Chromium）（预览）
+- name: WebView2 （Chromium）（预览版）
   href: index.md
 - name: 入门
   items:
-    - name: '32'
+    - name: Win32
       href: gettingstarted/win32.md
     - name: WPF
       href: gettingstarted/wpf.md
@@ -10,7 +10,7 @@
       href: gettingstarted/winforms.md
 - name: 概念
   items:
-    - name: 分发我的应用程序
+    - name: 分发我的应用
       href: concepts/distribution.md
     - name: 版本控制
       href: concepts/versioning.md
@@ -22,12 +22,12 @@
   items:
     - name: 调试 WebView2
       href: howto/Debug.md
-    - name: 使用边缘驱动程序实现自动化
+    - name: 使用 Edge 驱动程序实现自动化
       href: howto/webdriver.md
 - name: 参考
   href: webview2-api-reference.md
   items:
-    - name: Win32 c + +
+    - name: Win32 C++
       href: reference/win32/0-9-488-reference-webview2.md
       items:
         - name: ICoreWebView2
@@ -54,7 +54,7 @@
           href: reference/win32/0-9-488/icorewebview2webresourcerequest.md
         - name: ICoreWebView2WebResourceResponse
           href: reference/win32/0-9-488/icorewebview2webresourceresponse.md
-        - name: 变量
+        - name: 全局变量
           href: reference/win32/0-9-488/webview2-idl.md
         - name: 事件参数
           items:
@@ -84,7 +84,7 @@
               href: reference/win32/0-9-488/icorewebview2webmessagereceivedeventargs.md
             - name: ICoreWebView2WebResourceRequestedEventArgs
               href: reference/win32/0-9-488/icorewebview2webresourcerequestedeventargs.md
-        - name: 代理
+        - name: 委派
           items:
             - name: ICoreWebView2AcceleratorKeyPressedEventHandler
               href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventhandler.md
@@ -138,7 +138,7 @@
               href: reference/win32/0-9-488/icorewebview2windowcloserequestedeventhandler.md
             - name: ICoreWebView2ZoomFactorChangedEventHandler
               href: reference/win32/0-9-488/icorewebview2zoomfactorchangedeventhandler.md
-        - name: 阶段
+        - name: 实验
           items:
             - name: ICoreWebView2ExperimentalCompositionController
               href: reference/win32/0-9-488/icorewebview2experimentalcompositioncontroller.md
@@ -150,9 +150,9 @@
               href: reference/win32/0-9-488/icorewebview2experimentalenvironment.md
             - name: ICoreWebView2ExperimentalPointerInfo
               href: reference/win32/0-9-488/icorewebview2experimentalpointerinfo.md
-        - name: 达标
+        - name: 已存档
           items:
-            - name: 0.9.430-Reference （WebView2）
+            - name: 0.9.430 - 参考 (WebView2)
               href: reference/win32/0-9-430-reference-webview2.md
               items:
                 - name: ICoreWebView2
@@ -177,7 +177,7 @@
                   href: reference/win32/0-9-430/icorewebview2webresourcerequest.md
                 - name: ICoreWebView2WebResourceResponse
                   href: reference/win32/0-9-430/icorewebview2webresourceresponse.md
-                - name: 变量
+                - name: 全局变量
                   href: reference/win32/0-9-430/webview2-idl.md
                 - name: 事件参数
                   items:
@@ -209,7 +209,7 @@
                       href: reference/win32/0-9-430/icorewebview2webmessagereceivedeventargs.md
                     - name: ICoreWebView2WebResourceRequestedEventArgs
                       href: reference/win32/0-9-430/icorewebview2webresourcerequestedeventargs.md
-                - name: 代理
+                - name: 委派
                   items:
                     - name: ICoreWebView2AcceleratorKeyPressedEventHandler
                       href: reference/win32/0-9-430/icorewebview2acceleratorkeypressedeventhandler.md
@@ -263,7 +263,7 @@
                       href: reference/win32/0-9-430/icorewebview2windowcloserequestedeventhandler.md
                     - name: ICoreWebView2ZoomFactorChangedEventHandler
                       href: reference/win32/0-9-430/icorewebview2zoomfactorchangedeventhandler.md
-            - name: 0.8.190-Reference （WebView2）
+            - name: 0.8.190 - 参考 (WebView2)
               href: reference/win32/0-8-190-reference-webview2.md
               items:
                 - name: IWebView2Deferral
@@ -300,7 +300,7 @@
                   href: reference/win32/0-8-190/iwebview2webview4.md
                 - name: IWebView2WebView5
                   href: reference/win32/0-8-190/iwebview2webview5.md
-                - name: 变量
+                - name: 全局变量
                   href: reference/win32/0-8-190/webview2-idl.md
                 - name: 事件参数
                   items:
@@ -330,7 +330,7 @@
                       href: reference/win32/0-8-190/iwebview2webmessagereceivedeventargs.md
                     - name: IWebView2WebResourceRequestedEventArgs
                       href: reference/win32/0-8-190/iwebview2webresourcerequestedeventargs.md
-                - name: 代理
+                - name: 委派
                   items:
                     - name: IWebView2AcceleratorKeyPressedEventHandler
                       href: reference/win32/0-8-190/iwebview2acceleratorkeypressedeventhandler.md
@@ -380,10 +380,10 @@
                       href: reference/win32/0-8-190/iwebview2zoomfactorchangedeventhandler.md
     - name: .NET
       items:
-        - name: 核心
+        - name: 核心版
           href: reference/dotnet/0-9-515-reference-webview2.md
           items:
-            - name: WebView2 命名空间
+            - name: Microsoft.Web.WebView2.Core 命名空间
               href: reference/dotnet/0-9-515/namespace-microsoft-web-webview2-core.md
             - name: CoreWebView2
               href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2.md
