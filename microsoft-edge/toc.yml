@@ -17,7 +17,7 @@
     - name: 开发指南
       href: dev-guide.md
       items:
-        - name: EdgeHTML 中的新增功能
+        - name: EdgeHTML 新增功能
           href: dev-guide/whats-new.md
           items:
             - name: EdgeHTML 17
@@ -40,7 +40,7 @@
           items:
             - name: 自动播放策略
               href: dev-guide/browser-features/autoplay-policies.md
-            - name: 动画
+            - name: Flash
               href: dev-guide/browser-features/flash.md
             - name: 阅读视图
               href: dev-guide/browser-features/reading-view.md
@@ -55,12 +55,12 @@
               href: dev-guide/windows-integration/web-authentication.md
             - name: Web 通知 API
               href: dev-guide/windows-integration/web-Notifications-API.md
-    - name: DevTools (Chromium)
+    - name: 开发工具（Chromium）
       href: devtools-guide-chromium.md
       items:
-        - name: 打开 DevTools
+        - name: 打开开发工具
           href: devtools-guide-chromium/open.md
-        - name: 最近更新
+        - name: 新增功能
           items:
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
@@ -74,7 +74,7 @@
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D 视图
           href: devtools-guide-chromium/3D-view.md
-        - name: 适用于初学者的 DevTools
+        - name: 面向初学者的开发工具
           items:
             - name: HTML 和 DOM
               href: devtools-guide-chromium/beginners/html.md
@@ -90,9 +90,9 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: 检查动画
               href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Guides
+            - name: 指南
               items:
-                - name: 强制 DevTools 进入打印预览模式
+                - name: 强制开发工具进入打印预览模式
                   href: devtools-guide-chromium/css/print-preview.md
         - name: 控制台
           items:
@@ -106,13 +106,13 @@
               href: devtools-guide-chromium/console/reference.md
             - name: API 参考
               href: devtools-guide-chromium/console/api.md
-            - name: 实用工具 API 参考
+            - name: 实用程序 API 引用
               href: devtools-guide-chromium/console/utilities.md
             - name: 实时表达式
               href: devtools-guide-chromium/console/live-expressions.md
-        - name: 网络
+        - name: Network
           items:
-            - name: 开始使用
+            - name: 入门
               href: devtools-guide-chromium/network/index.md
             - name: 网络问题指南
               href: devtools-guide-chromium/network/issues.md
@@ -144,37 +144,37 @@
               href: devtools-guide-chromium/device-mode/index.md
             - name: 模拟和测试其他浏览器
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-            - name: Guides
+            - name: 指南
               items:
-                - name: 重写用户代理字符串
+                - name: 替代用户代理字符串
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                 - name: 替代地理位置
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: 模拟设备方向
                   href: devtools-guide-chromium/device-mode/orientation.md
-        - name: 数组
+        - name: DOM
           items:
-            - name: 开始使用
+            - name: 入门
               href: devtools-guide-chromium/dom/index.md
         - name: JavaScript
           items:
-            - name: 开始使用
+            - name: 入门
               href: devtools-guide-chromium/javascript/index.md
             - name: 使用断点暂停代码
               href: devtools-guide-chromium/javascript/breakpoints.md
             - name: 查找未使用的 JavaScript
               href: devtools-guide-chromium/coverage/index.md
-            - name: 将预处理的代码映射到源代码
+            - name: 将预处理代码映射到源代码
               href: devtools-guide-chromium/javascript/source-maps.md
-            - name: JavaScript 调试参考
+            - name: JavaScript 调试引用
               href: devtools-guide-chromium/javascript/reference.md
-            - name: 代码片段
+            - name: 代码段
               href: devtools-guide-chromium/javascript/snippets.md
-            - name: 源面板概述
+            - name: 源窗格概览
               href: devtools-guide-chromium/sources.md
             - name: 调试后台服务
               href: devtools-guide-chromium/javascript/background-services.md
-            - name: Guides
+            - name: 指南
               items:
                 - name: 将内容脚本标记为库代码
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
@@ -182,15 +182,15 @@
                   href: devtools-guide-chromium/javascript/disable.md
         - name: 性能
           items:
-            - name: 开始使用
+            - name: 入门
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: 优化网站速度
               href: devtools-guide-chromium/speed/get-started.md
             - name: 概述
               href: devtools-guide-chromium/rendering-tools/index.md
-            - name: 性能分析参考
+            - name: 性能分析引用
               href: devtools-guide-chromium/evaluate-performance/reference.md
-            - name: Timeline 事件引用
+            - name: 时间线事件参考
               href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: 加速 JavaScript 运行时
               href: devtools-guide-chromium/rendering-tools/js-runtime.md
@@ -198,11 +198,11 @@
           items:
             - name: 参考
               href: devtools-guide-chromium/accessibility/reference.md
-            - name: 使用辅助技术导航 DevTools
+            - name: 使用辅助技术导航开发工具
               href: devtools-guide-chromium/accessibility/navigation.md
-            - name: Guides
+            - name: 指南
               items:
-                - name: 跟踪哪个元素具有焦点
+                - name: 跟踪哪些元素有焦点
                   href: devtools-guide-chromium/accessibility/focus.md
         - name: 远程调试
           items:
@@ -210,7 +210,7 @@
               href: devtools-guide-chromium/remote-debugging/index.md
             - name: 访问本地服务器
               href: devtools-guide-chromium/remote-debugging/local-server.md
-            - name: Surface 双核模拟器
+            - name: Surface 双核处理器技术仿真程序
               href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Windows 10 设备
               href: devtools-guide-chromium/remote-debugging/windows.md
@@ -222,11 +222,11 @@
               href: devtools-guide-chromium/memory-problems/memory-101.md
             - name: 记录堆快照
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-            - name: 在日程表上使用分配检测
+            - name: 在时间线上使用分配检测
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
-        - name: Workspaces
+        - name: 工作区
           href: devtools-guide-chromium/workspaces/index.md
-        - name: 渐进式 Web 应用程序
+        - name: 渐进式 Web 应用
           href: devtools-guide-chromium/progressive-web-apps.md
         - name: 安全性
           href: devtools-guide-chromium/security/index.md
@@ -240,14 +240,14 @@
               href: devtools-guide-chromium/customize/index.md
             - name: 深色主题
               href: devtools-guide-chromium/customize/dark-theme.md
-            - name: 更改放置
+            - name: 更改位置
               href: devtools-guide-chromium/customize/placement.md
             - name: 匹配浏览器语言
               href: devtools-guide-chromium/customize/localization.md
-    - name: DevTools (EdgeHTML)
+    - name: 开发人员工具（EdgeHTML）
       href: devtools-guide.md
       items:
-        - name: 最近更新
+        - name: 新增功能
           href: devtools-guide/whats-new.md
           items:
             - name: EdgeHTML 17
@@ -259,13 +259,13 @@
           items:
             - name: 样式
               href: devtools-guide/elements/styles.md
-            - name: 过
+            - name: 已计算
               href: devtools-guide/elements/computed.md
-            - name: 活动
+            - name: 事件
               href: devtools-guide/elements/events.md
             - name: DOM 断点
               href: devtools-guide/elements/dom-breakpoints.md
-            - name: Fonts
+            - name: 字体
               href: devtools-guide/elements/fonts.md
             - name: 辅助功能
               href: devtools-guide/elements/accessibility.md
@@ -274,15 +274,15 @@
         - name: 控制台
           href: devtools-guide/console.md
           items:
-            - name: 控制台 API
+            - name: 主机 API
               href: devtools-guide/console/console-api.md
             - name: 命令行
               href: devtools-guide/console/command-line.md
             - name: 错误和状态代码
               href: devtools-guide/console/error-and-status-codes.md
-        - name: 附加
+        - name: 调试程序
           href: devtools-guide/debugger.md
-        - name: 网络
+        - name: Network
           href: devtools-guide/network.md
         - name: 性能
           href: devtools-guide/performance.md
@@ -290,13 +290,13 @@
           href: devtools-guide/memory.md
         - name: 存储
           href: devtools-guide/storage.md
-        - name: 服务工作人员
+        - name: 服务工作进程
           href: devtools-guide/service-workers.md
-        - name: 模拟
+        - name: 枚举
           href: devtools-guide/emulation.md
-    - name: DevTools 协议（Chromium）
+    - name: 开发人员工具协议（Chromium）
       href: devtools-protocol-chromium.md
-    - name: DevTools 协议（EdgeHTML）
+    - name: 开发人员工具协议（EdgeHTML）
       href: devtools-protocol/index.md
       items:
         - name: 0.1
@@ -309,7 +309,7 @@
             - name: 域
               href: devtools-protocol/0.1/domains/index.md
               items:
-                - name: 附加
+                - name: 调试程序
                   href: devtools-protocol/0.1/domains/debugger.md
                 - name: Page
                   href: devtools-protocol/0.1/domains/page.md
@@ -329,13 +329,13 @@
               items:
                 - name: CSS
                   href: devtools-protocol/0.2/domains/css.md
-                - name: 数组
+                - name: DOM
                   href: devtools-protocol/0.2/domains/dom.md
                 - name: DOMDebugger
                   href: devtools-protocol/0.2/domains/domdebugger.md
-                - name: 附加
+                - name: 调试程序
                   href: devtools-protocol/0.2/domains/debugger.md
-                - name: 物
+                - name: 覆盖
                   href: devtools-protocol/0.2/domains/overlay.md
                 - name: Page
                   href: devtools-protocol/0.2/domains/page.md
@@ -349,23 +349,23 @@
         - name: 入门教程
           href: extensions-chromium/getting-started/index.md
           items:
-            - name: 创建简单的扩展名-第 I 部分
+            - name: 创建简单扩展 - 第一部分
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: 创建一个简单的扩展名-第 II 部分
+            - name: 创建简单扩展 - 第 二 部分
               href: extensions-chromium/getting-started/part2-content-scripts.md
         - name: 开发人员指南
           items:
-            - name: 端口 Chromium 到 Microsoft Edge 的扩展
+            - name: 将 Chromium 扩展移植到 Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: 分发扩展的备用方法
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
-            - name: 本机邮件
+            - name: 本机消息传递
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: 发布到 Microsoft Store
           items:
             - name: 分步发布过程
               href: extensions-chromium/publish/publish-extension.md
-            - name: 打开开发人员帐户
+            - name: 打开开发者帐户
               href: extensions-chromium/publish/create-dev-account.md
             - name: 上传 YouTube 视频
               href: extensions-chromium/publish/upload-video.md
@@ -379,11 +379,11 @@
           items:
             - name: 内容安全策略
               href: extensions-chromium/store-policies/csp.md
-            - name: 边缘开发人员 ADA 附录
+            - name: Edge 开发人员 ADA 附录
               href: extensions-chromium/store-policies/ada-addendum.md
             - name: Microsoft Edge Addons 目录开发人员策略
               href: extensions-chromium/store-policies/developer-policies.md
-        - name: 企业版扩展
+        - name: 适用于企业的扩展
           items:
             - name: 匹配模式
               href: extensions-chromium/enterprise/match-patterns.md
@@ -397,18 +397,18 @@
           items:
             - name: 扩展 API 路线图
               href: extensions/API-support/extension-API-roadmap.md
-            - name: 支持的 Api
+            - name: 支持的 API
               href: extensions/API-support/supported-APIs.md
-            - name: 支持的清单键
+            - name: 支持的清单密钥
               href: extensions/API-support/supported-manifest-keys.md
               items:
                 - name: JSON 清单示例
                   href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
-        - name: 企业版扩展
+        - name: 适用于企业的扩展
           href: extensions/extensions-for-enterprise.md
-        - name: 入门
+        - name: 即刻体验
           href: extensions/getting-started.md
-        - name: Guides
+        - name: 指南
           href: extensions/guides.md
           items:
             - name: 辅助功能
@@ -423,14 +423,14 @@
               href: extensions/guides/design.md
             - name: 国际化
               href: extensions/guides/internationalization.md
-            - name: 本机邮件
+            - name: 本机消息传递
               href: extensions/guides/native-messaging.md
             - name: 包装
               href: extensions/guides/packaging.md
               items:
                 - name: 创建和测试扩展包
                   href: extensions/guides/packaging/creating-and-testing-extension-packages.md
-                - name: Windows 开发人员中心中的扩展
+                - name: Windows 开发人员中心扩展
                   href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
                 - name: 本地化扩展包
                   href: extensions/guides/packaging/localizing-extension-packages.md
@@ -440,40 +440,40 @@
                   href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
             - name: 移植 Chrome 扩展
               href: extensions/guides/porting-Chrome-extensions.md
-        - name: Microsoft browser extension 策略
+        - name: Microsoft 浏览器扩展政策
           href: extensions/microsoft-browser-extension-policy.md
         - name: 提示和技巧
           href: extensions/tips-and-tricks.md
-        - name: 故障排除
+        - name: 疑难解答
           href: extensions/troubleshooting.md
-    - name: 发起
+    - name: 托管
       href: hosting/toc.md
     - name: 性能分析
       href: performance-analysis.md
     - name: 隐私白皮书
       href: privacy-whitepaper.md
-    - name: 渐进式 Web 应用程序（Chromium）
+    - name: 渐进式 Web 应用（Chromium）
       href: progressive-web-apps-chromium/index.md
       items:
-        - name: 开始使用 Pwa （Chromium）
+        - name: 即刻体验 PWA（Chromium）
           href: progressive-web-apps-chromium/get-started.md
         - name: 脱机方案
           href: progressive-web-apps-chromium/offline.md
-        - name: 服务工作人员
+        - name: 服务工作进程
           href: progressive-web-apps-chromium/serviceworker.md
-        - name: Web 应用程序清单
+        - name: Web 应用清单
           href: progressive-web-apps-chromium/webappmanifests.md
-    - name: 渐进式 Web 应用程序（EdgeHTML）
+    - name: 渐进式 Web 应用（EdgeHTML）
       href: progressive-web-apps-edgehtml/index.md
       items:
-        - name: 开始使用 Pwa （EdgeHTML）
+        - name: 开始使用 PWA（EdgeHTML）
           href: progressive-web-apps-edgehtml/get-started.md
-        - name: 为 Windows 定制 PWA
+        - name: 为 Windows 定制你的 PWA
           href: progressive-web-apps-edgehtml/windows-features.md
           items:
-            - name: 适用于 Xbox 的 Pwa
+            - name: 适用于 Xbox 的 PWA
               href: progressive-web-apps-edgehtml/xbox-considerations.md
-        - name: Microsoft Store 中的 Pwa
+        - name: Microsoft Store 中的 PWA
           href: progressive-web-apps-edgehtml/microsoft-store.md
     - name: Puppeteer
       href: puppeteer.md
@@ -482,9 +482,9 @@
     - name: Visual Studio Code
       href: visual-studio-code/index.md
       items:
-        - name: 用于边缘的调试器
+        - name: Edge 调试程序
           href: visual-studio-code/debugger-for-edge.md
-        - name: 边缘元素
+        - name: Edge 元素
           href: visual-studio-code/elements-for-edge.md
         - name: webhint
           href: visual-studio-code/webhint.md
@@ -494,13 +494,13 @@
       href: webdriver.md
     - name: Web 平台（Chromium）
       items:
-        - name: 网站兼容性-影响到 Microsoft Edge 的更改
+        - name: Microsoft Edge 中的影响网站兼容性的更改
           href: web-platform/site-impacting-changes.md
         - name: Microsoft Edge 中的跟踪防护
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge 用户代理字符串
           href: web-platform/user-agent-string.md
-    - name: WebView2 （Chromium）（预览）
+    - name: WebView2 （Chromium）（预览版）
       href: webview2/toc.yml
     - name: WebVR 开发人员指南
       href: /microsoft-edge/webvr/index
