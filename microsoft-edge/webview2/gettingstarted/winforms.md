@@ -3,17 +3,17 @@ description: 在 Windows 窗体应用中将 web 内容与 Microsoft Edge Web 视
 title: 适用于 Windows 表单应用的 Microsoft Edge Web 视图2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/04/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: 6c53b66dd9f849384f24c2ae879f28231a25f481
-ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
+ms.openlocfilehash: 1e23c96cee1e577560c2d26b96a53454533867dd
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10685685"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695892"
 ---
 # Windows 窗体应用中的 WebView2 入门（预览版）  
 
@@ -27,7 +27,7 @@ ms.locfileid: "10685685"
 * [Visual Studio](https://visualstudio.microsoft.com/) 2017 或更高版本。
 
 > [!NOTE]
-> 如果通过**Windows Forms .Net Core 3.0 或 .net 5**进行开发，请下载[Visual Studio （预览版）](https://visualstudio.microsoft.com/vs/preview/)
+> WebView2 当前不支持 .NET Core 3.0 的[设计器（预览版）](https://visualstudio.microsoft.com/vs/preview/)。
 
 ## 步骤 1-创建单个窗口应用程序
 
@@ -35,11 +35,11 @@ ms.locfileid: "10685685"
 
 1. 打开**Visual Studio。**
 
-2. 选择 " **Windows 窗体 .Net Framework 应用**" 或 " **windows 窗体 .net Core app**"，然后选择 "**下一步**"。
+2. 选择 " **Windows 窗体 .Net Framework 应用**"，然后选择 "**下一步**"。
 
     ![newproject](./media/winforms-newproject.png)
 
-3. 输入 "**项目名称**" 和 "**位置**" 值。  选择 " **.Net Framework 4.6.2**或更高版本" 或 " **.net Core 3.0**或更高版本"。  
+3. 输入 "**项目名称**" 和 "**位置**" 值。  选择 " **.Net Framework 4.6.2** " 或 "更高版本"。  
 
     ![startproject](./media/winforms-startproj.png)
 
