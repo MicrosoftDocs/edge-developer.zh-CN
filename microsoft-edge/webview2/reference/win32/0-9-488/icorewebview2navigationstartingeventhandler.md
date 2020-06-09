@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 81d3fe4620dcb439933d661d7b061819b5e07a00
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 719d3b170d26494282bcbdd2e3b870c4d9fd98a4
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653110"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697838"
 ---
-# <span data-ttu-id="c5da8-104">interface ICoreWebView2NavigationStartingEventHandler</span><span class="sxs-lookup"><span data-stu-id="c5da8-104">interface ICoreWebView2NavigationStartingEventHandler</span></span> 
+# <span data-ttu-id="788ff-104">interface ICoreWebView2NavigationStartingEventHandler</span><span class="sxs-lookup"><span data-stu-id="788ff-104">interface ICoreWebView2NavigationStartingEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="788ff-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="788ff-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="788ff-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="788ff-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2NavigationStartingEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="c5da8-105">调用方实现此接口以接收 NavigationStarting 事件。</span><span class="sxs-lookup"><span data-stu-id="c5da8-105">The caller implements this interface to receive the NavigationStarting event.</span></span>
+<span data-ttu-id="788ff-107">调用方实现此接口以接收 NavigationStarting 事件。</span><span class="sxs-lookup"><span data-stu-id="788ff-107">The caller implements this interface to receive the NavigationStarting event.</span></span>
 
-## <span data-ttu-id="c5da8-106">摘要</span><span class="sxs-lookup"><span data-stu-id="c5da8-106">Summary</span></span>
+## <span data-ttu-id="788ff-108">摘要</span><span class="sxs-lookup"><span data-stu-id="788ff-108">Summary</span></span>
 
- <span data-ttu-id="c5da8-107">成员</span><span class="sxs-lookup"><span data-stu-id="c5da8-107">Members</span></span>                        | <span data-ttu-id="c5da8-108">描述</span><span class="sxs-lookup"><span data-stu-id="c5da8-108">Descriptions</span></span>
+ <span data-ttu-id="788ff-109">成员</span><span class="sxs-lookup"><span data-stu-id="788ff-109">Members</span></span>                        | <span data-ttu-id="788ff-110">描述</span><span class="sxs-lookup"><span data-stu-id="788ff-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="c5da8-109">调用</span><span class="sxs-lookup"><span data-stu-id="c5da8-109">Invoke</span></span>](#invoke) | <span data-ttu-id="c5da8-110">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="c5da8-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="788ff-111">调用</span><span class="sxs-lookup"><span data-stu-id="788ff-111">Invoke</span></span>](#invoke) | <span data-ttu-id="788ff-112">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="788ff-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="c5da8-111">成员</span><span class="sxs-lookup"><span data-stu-id="c5da8-111">Members</span></span>
+## <span data-ttu-id="788ff-113">成员</span><span class="sxs-lookup"><span data-stu-id="788ff-113">Members</span></span>
 
-#### <span data-ttu-id="c5da8-112">调用</span><span class="sxs-lookup"><span data-stu-id="c5da8-112">Invoke</span></span> 
+#### <span data-ttu-id="788ff-114">调用</span><span class="sxs-lookup"><span data-stu-id="788ff-114">Invoke</span></span> 
 
-<span data-ttu-id="c5da8-113">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="c5da8-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="788ff-115">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="788ff-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="c5da8-114">公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) \* sender、 [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* 参数）</span><span class="sxs-lookup"><span data-stu-id="c5da8-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* args)</span></span>
+> <span data-ttu-id="788ff-116">公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) \* sender、 [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* 参数）</span><span class="sxs-lookup"><span data-stu-id="788ff-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* args)</span></span>
 

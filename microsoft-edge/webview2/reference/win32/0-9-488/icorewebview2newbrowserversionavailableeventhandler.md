@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 9196f2d9503efbaf9f15b43e7e6d7e80c2de00f7
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: a6c12669bd90da4861412997818de49626282cb1
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653060"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697824"
 ---
-# <span data-ttu-id="a6aa4-104">interface ICoreWebView2NewBrowserVersionAvailableEventHandler</span><span class="sxs-lookup"><span data-stu-id="a6aa4-104">interface ICoreWebView2NewBrowserVersionAvailableEventHandler</span></span> 
+# <span data-ttu-id="5010b-104">interface ICoreWebView2NewBrowserVersionAvailableEventHandler</span><span class="sxs-lookup"><span data-stu-id="5010b-104">interface ICoreWebView2NewBrowserVersionAvailableEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="5010b-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="5010b-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="5010b-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="5010b-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2NewBrowserVersionAvailableEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="a6aa4-105">调用方实现此接口以接收 NewBrowserVersionAvailable 事件。</span><span class="sxs-lookup"><span data-stu-id="a6aa4-105">The caller implements this interface to receive NewBrowserVersionAvailable events.</span></span>
+<span data-ttu-id="5010b-107">调用方实现此接口以接收 NewBrowserVersionAvailable 事件。</span><span class="sxs-lookup"><span data-stu-id="5010b-107">The caller implements this interface to receive NewBrowserVersionAvailable events.</span></span>
 
-## <span data-ttu-id="a6aa4-106">摘要</span><span class="sxs-lookup"><span data-stu-id="a6aa4-106">Summary</span></span>
+## <span data-ttu-id="5010b-108">摘要</span><span class="sxs-lookup"><span data-stu-id="5010b-108">Summary</span></span>
 
- <span data-ttu-id="a6aa4-107">成员</span><span class="sxs-lookup"><span data-stu-id="a6aa4-107">Members</span></span>                        | <span data-ttu-id="a6aa4-108">描述</span><span class="sxs-lookup"><span data-stu-id="a6aa4-108">Descriptions</span></span>
+ <span data-ttu-id="5010b-109">成员</span><span class="sxs-lookup"><span data-stu-id="5010b-109">Members</span></span>                        | <span data-ttu-id="5010b-110">描述</span><span class="sxs-lookup"><span data-stu-id="5010b-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="a6aa4-109">调用</span><span class="sxs-lookup"><span data-stu-id="a6aa4-109">Invoke</span></span>](#invoke) | <span data-ttu-id="a6aa4-110">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="a6aa4-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="5010b-111">调用</span><span class="sxs-lookup"><span data-stu-id="5010b-111">Invoke</span></span>](#invoke) | <span data-ttu-id="5010b-112">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="5010b-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="a6aa4-111">成员</span><span class="sxs-lookup"><span data-stu-id="a6aa4-111">Members</span></span>
+## <span data-ttu-id="5010b-113">成员</span><span class="sxs-lookup"><span data-stu-id="5010b-113">Members</span></span>
 
-#### <span data-ttu-id="a6aa4-112">调用</span><span class="sxs-lookup"><span data-stu-id="a6aa4-112">Invoke</span></span> 
+#### <span data-ttu-id="5010b-114">调用</span><span class="sxs-lookup"><span data-stu-id="5010b-114">Invoke</span></span> 
 
-<span data-ttu-id="a6aa4-113">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="a6aa4-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="5010b-115">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="5010b-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="a6aa4-114">public HRESULT [Invoke](#invoke)（[ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment，IUnknown \* 参数）</span><span class="sxs-lookup"><span data-stu-id="a6aa4-114">public HRESULT [Invoke](#invoke)([ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment, IUnknown \* args)</span></span>
+> <span data-ttu-id="5010b-116">public HRESULT [Invoke](#invoke)（[ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment，IUnknown \* 参数）</span><span class="sxs-lookup"><span data-stu-id="5010b-116">public HRESULT [Invoke](#invoke)([ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment, IUnknown \* args)</span></span>
 

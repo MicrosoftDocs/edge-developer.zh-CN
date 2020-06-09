@@ -8,35 +8,38 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 793dbde462e25ae0bfe0dc0bc475cc49e7237fb2
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 6aaac0d062d0e97d3ec0c87bec243c5cf682ad6f
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653098"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697047"
 ---
-# <span data-ttu-id="9f26c-104">interface ICoreWebView2CapturePreviewCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="9f26c-104">interface ICoreWebView2CapturePreviewCompletedHandler</span></span> 
+# <span data-ttu-id="0031c-104">interface ICoreWebView2CapturePreviewCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="0031c-104">interface ICoreWebView2CapturePreviewCompletedHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="0031c-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="0031c-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="0031c-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="0031c-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2CapturePreviewCompletedHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="9f26c-105">调用方实现此方法以接收 CapturePreview 方法的结果。</span><span class="sxs-lookup"><span data-stu-id="9f26c-105">The caller implements this method to receive the result of the CapturePreview method.</span></span>
+<span data-ttu-id="0031c-107">调用方实现此方法以接收 CapturePreview 方法的结果。</span><span class="sxs-lookup"><span data-stu-id="0031c-107">The caller implements this method to receive the result of the CapturePreview method.</span></span>
 
-## <span data-ttu-id="9f26c-106">摘要</span><span class="sxs-lookup"><span data-stu-id="9f26c-106">Summary</span></span>
+## <span data-ttu-id="0031c-108">摘要</span><span class="sxs-lookup"><span data-stu-id="0031c-108">Summary</span></span>
 
- <span data-ttu-id="9f26c-107">成员</span><span class="sxs-lookup"><span data-stu-id="9f26c-107">Members</span></span>                        | <span data-ttu-id="9f26c-108">描述</span><span class="sxs-lookup"><span data-stu-id="9f26c-108">Descriptions</span></span>
+ <span data-ttu-id="0031c-109">成员</span><span class="sxs-lookup"><span data-stu-id="0031c-109">Members</span></span>                        | <span data-ttu-id="0031c-110">描述</span><span class="sxs-lookup"><span data-stu-id="0031c-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="9f26c-109">调用</span><span class="sxs-lookup"><span data-stu-id="9f26c-109">Invoke</span></span>](#invoke) | <span data-ttu-id="9f26c-110">调用以向实施者提供相应异步方法调用的完成状态。</span><span class="sxs-lookup"><span data-stu-id="9f26c-110">Called to provide the implementer with the completion status of the corresponding asynchronous method call.</span></span>
+[<span data-ttu-id="0031c-111">调用</span><span class="sxs-lookup"><span data-stu-id="0031c-111">Invoke</span></span>](#invoke) | <span data-ttu-id="0031c-112">调用以向实施者提供相应异步方法调用的完成状态。</span><span class="sxs-lookup"><span data-stu-id="0031c-112">Called to provide the implementer with the completion status of the corresponding asynchronous method call.</span></span>
 
-<span data-ttu-id="9f26c-111">将结果写入 CapturePreview 方法调用中提供的流。</span><span class="sxs-lookup"><span data-stu-id="9f26c-111">The result is written to the stream provided in the CapturePreview method call.</span></span>
+<span data-ttu-id="0031c-113">将结果写入 CapturePreview 方法调用中提供的流。</span><span class="sxs-lookup"><span data-stu-id="0031c-113">The result is written to the stream provided in the CapturePreview method call.</span></span>
 
-## <span data-ttu-id="9f26c-112">成员</span><span class="sxs-lookup"><span data-stu-id="9f26c-112">Members</span></span>
+## <span data-ttu-id="0031c-114">成员</span><span class="sxs-lookup"><span data-stu-id="0031c-114">Members</span></span>
 
-#### <span data-ttu-id="9f26c-113">调用</span><span class="sxs-lookup"><span data-stu-id="9f26c-113">Invoke</span></span> 
+#### <span data-ttu-id="0031c-115">调用</span><span class="sxs-lookup"><span data-stu-id="0031c-115">Invoke</span></span> 
 
-<span data-ttu-id="9f26c-114">调用以向实施者提供相应异步方法调用的完成状态。</span><span class="sxs-lookup"><span data-stu-id="9f26c-114">Called to provide the implementer with the completion status of the corresponding asynchronous method call.</span></span>
+<span data-ttu-id="0031c-116">调用以向实施者提供相应异步方法调用的完成状态。</span><span class="sxs-lookup"><span data-stu-id="0031c-116">Called to provide the implementer with the completion status of the corresponding asynchronous method call.</span></span>
 
-> <span data-ttu-id="9f26c-115">公共 HRESULT[调用](#invoke)（hresult 结果）</span><span class="sxs-lookup"><span data-stu-id="9f26c-115">public HRESULT [Invoke](#invoke)(HRESULT result)</span></span>
+> <span data-ttu-id="0031c-117">公共 HRESULT[调用](#invoke)（hresult 结果）</span><span class="sxs-lookup"><span data-stu-id="0031c-117">public HRESULT [Invoke](#invoke)(HRESULT result)</span></span>
 

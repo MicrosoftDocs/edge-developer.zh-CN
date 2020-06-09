@@ -8,31 +8,34 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 652325e30432880740d35de1e6e225f2b9ce76a8
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d2aa84df1fd7a20d27e8f43005eea871d3877d69
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652892"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697544"
 ---
-# <span data-ttu-id="a2be8-104">CoreWebView2SourceChangedEventArgs 类的 WebView2</span><span class="sxs-lookup"><span data-stu-id="a2be8-104">Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs class</span></span> 
+# <span data-ttu-id="6ea2e-104">CoreWebView2SourceChangedEventArgs 类的 WebView2</span><span class="sxs-lookup"><span data-stu-id="6ea2e-104">Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs class</span></span> 
 
-<span data-ttu-id="a2be8-105">命名空间： Microsoft WebView2 </span><span class="sxs-lookup"><span data-stu-id="a2be8-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="a2be8-106">程序集： Microsoft WebView2</span><span class="sxs-lookup"><span data-stu-id="a2be8-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+> [!NOTE]
+> <span data-ttu-id="6ea2e-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="6ea2e-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="6ea2e-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="6ea2e-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
-<span data-ttu-id="a2be8-107">SourceChanged 事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="a2be8-107">Event args for the SourceChanged event.</span></span>
+<span data-ttu-id="6ea2e-107">命名空间： Microsoft WebView2 </span><span class="sxs-lookup"><span data-stu-id="6ea2e-107">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="6ea2e-108">程序集： Microsoft WebView2</span><span class="sxs-lookup"><span data-stu-id="6ea2e-108">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
-## <span data-ttu-id="a2be8-108">摘要</span><span class="sxs-lookup"><span data-stu-id="a2be8-108">Summary</span></span>
+<span data-ttu-id="6ea2e-109">SourceChanged 事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="6ea2e-109">Event args for the SourceChanged event.</span></span>
 
- <span data-ttu-id="a2be8-109">成员</span><span class="sxs-lookup"><span data-stu-id="a2be8-109">Members</span></span>                        | <span data-ttu-id="a2be8-110">描述</span><span class="sxs-lookup"><span data-stu-id="a2be8-110">Descriptions</span></span>
+## <span data-ttu-id="6ea2e-110">摘要</span><span class="sxs-lookup"><span data-stu-id="6ea2e-110">Summary</span></span>
+
+ <span data-ttu-id="6ea2e-111">成员</span><span class="sxs-lookup"><span data-stu-id="6ea2e-111">Members</span></span>                        | <span data-ttu-id="6ea2e-112">描述</span><span class="sxs-lookup"><span data-stu-id="6ea2e-112">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="a2be8-111">IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="a2be8-111">IsNewDocument</span></span>](#isnewdocument) | <span data-ttu-id="a2be8-112">如果要导航到的页面是新文档，则为 True。</span><span class="sxs-lookup"><span data-stu-id="a2be8-112">True if the page being navigated to is a new document.</span></span>
+[<span data-ttu-id="6ea2e-113">IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="6ea2e-113">IsNewDocument</span></span>](#isnewdocument) | <span data-ttu-id="6ea2e-114">如果要导航到的页面是新文档，则为 True。</span><span class="sxs-lookup"><span data-stu-id="6ea2e-114">True if the page being navigated to is a new document.</span></span>
 
-## <span data-ttu-id="a2be8-113">成员</span><span class="sxs-lookup"><span data-stu-id="a2be8-113">Members</span></span>
+## <span data-ttu-id="6ea2e-115">成员</span><span class="sxs-lookup"><span data-stu-id="6ea2e-115">Members</span></span>
 
-#### <span data-ttu-id="a2be8-114">IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="a2be8-114">IsNewDocument</span></span> 
+#### <span data-ttu-id="6ea2e-116">IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="6ea2e-116">IsNewDocument</span></span> 
 
-<span data-ttu-id="a2be8-115">如果要导航到的页面是新文档，则为 True。</span><span class="sxs-lookup"><span data-stu-id="a2be8-115">True if the page being navigated to is a new document.</span></span>
+<span data-ttu-id="6ea2e-117">如果要导航到的页面是新文档，则为 True。</span><span class="sxs-lookup"><span data-stu-id="6ea2e-117">True if the page being navigated to is a new document.</span></span>
 
-> <span data-ttu-id="a2be8-116">公共 bool [IsNewDocument](#isnewdocument)</span><span class="sxs-lookup"><span data-stu-id="a2be8-116">public bool [IsNewDocument](#isnewdocument)</span></span>
+> <span data-ttu-id="6ea2e-118">公共 bool [IsNewDocument](#isnewdocument)</span><span class="sxs-lookup"><span data-stu-id="6ea2e-118">public bool [IsNewDocument](#isnewdocument)</span></span>
 

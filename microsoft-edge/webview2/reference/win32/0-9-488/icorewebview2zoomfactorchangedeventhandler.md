@@ -8,37 +8,40 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: e2469dd9a587735efcf88a48e0ce950cb4f85239
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 64211bf99873ef2e2a41aaf2fb9453e892f6536a
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653094"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698104"
 ---
-# <span data-ttu-id="a9822-104">interface ICoreWebView2ZoomFactorChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="a9822-104">interface ICoreWebView2ZoomFactorChangedEventHandler</span></span> 
+# <span data-ttu-id="78a58-104">interface ICoreWebView2ZoomFactorChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="78a58-104">interface ICoreWebView2ZoomFactorChangedEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="78a58-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="78a58-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="78a58-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="78a58-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2ZoomFactorChangedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="a9822-105">调用方实现此接口以接收 ZoomFactorChanged 事件。</span><span class="sxs-lookup"><span data-stu-id="a9822-105">The caller implements this interface to receive ZoomFactorChanged events.</span></span>
+<span data-ttu-id="78a58-107">调用方实现此接口以接收 ZoomFactorChanged 事件。</span><span class="sxs-lookup"><span data-stu-id="78a58-107">The caller implements this interface to receive ZoomFactorChanged events.</span></span>
 
-## <span data-ttu-id="a9822-106">摘要</span><span class="sxs-lookup"><span data-stu-id="a9822-106">Summary</span></span>
+## <span data-ttu-id="78a58-108">摘要</span><span class="sxs-lookup"><span data-stu-id="78a58-108">Summary</span></span>
 
- <span data-ttu-id="a9822-107">成员</span><span class="sxs-lookup"><span data-stu-id="a9822-107">Members</span></span>                        | <span data-ttu-id="a9822-108">描述</span><span class="sxs-lookup"><span data-stu-id="a9822-108">Descriptions</span></span>
+ <span data-ttu-id="78a58-109">成员</span><span class="sxs-lookup"><span data-stu-id="78a58-109">Members</span></span>                        | <span data-ttu-id="78a58-110">描述</span><span class="sxs-lookup"><span data-stu-id="78a58-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="a9822-109">调用</span><span class="sxs-lookup"><span data-stu-id="a9822-109">Invoke</span></span>](#invoke) | <span data-ttu-id="a9822-110">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="a9822-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="78a58-111">调用</span><span class="sxs-lookup"><span data-stu-id="78a58-111">Invoke</span></span>](#invoke) | <span data-ttu-id="78a58-112">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="78a58-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-<span data-ttu-id="a9822-111">使用 ZoomFactor 属性获取修改的缩放系数。 ICoreWebView2Controller</span><span class="sxs-lookup"><span data-stu-id="a9822-111">Use the ICoreWebView2Controller.ZoomFactor property to get the modified zoom factor.</span></span>
+<span data-ttu-id="78a58-113">使用 ZoomFactor 属性获取修改的缩放系数。 ICoreWebView2Controller</span><span class="sxs-lookup"><span data-stu-id="78a58-113">Use the ICoreWebView2Controller.ZoomFactor property to get the modified zoom factor.</span></span>
 
-## <span data-ttu-id="a9822-112">成员</span><span class="sxs-lookup"><span data-stu-id="a9822-112">Members</span></span>
+## <span data-ttu-id="78a58-114">成员</span><span class="sxs-lookup"><span data-stu-id="78a58-114">Members</span></span>
 
-#### <span data-ttu-id="a9822-113">调用</span><span class="sxs-lookup"><span data-stu-id="a9822-113">Invoke</span></span> 
+#### <span data-ttu-id="78a58-115">调用</span><span class="sxs-lookup"><span data-stu-id="78a58-115">Invoke</span></span> 
 
-<span data-ttu-id="a9822-114">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="a9822-114">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="78a58-116">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="78a58-116">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="a9822-115">公共 HRESULT[调用](#invoke)（[ICoreWebView2Controller](icorewebview2controller.md) \* sender、IUnknown \* 参数）</span><span class="sxs-lookup"><span data-stu-id="a9822-115">public HRESULT [Invoke](#invoke)([ICoreWebView2Controller](icorewebview2controller.md) \* sender, IUnknown \* args)</span></span>
+> <span data-ttu-id="78a58-117">公共 HRESULT[调用](#invoke)（[ICoreWebView2Controller](icorewebview2controller.md) \* sender、IUnknown \* 参数）</span><span class="sxs-lookup"><span data-stu-id="78a58-117">public HRESULT [Invoke](#invoke)([ICoreWebView2Controller](icorewebview2controller.md) \* sender, IUnknown \* args)</span></span>
 
-<span data-ttu-id="a9822-116">没有事件参数，args 参数将为 null。</span><span class="sxs-lookup"><span data-stu-id="a9822-116">There are no event args and the args parameter will be null.</span></span>
+<span data-ttu-id="78a58-118">没有事件参数，args 参数将为 null。</span><span class="sxs-lookup"><span data-stu-id="78a58-118">There are no event args and the args parameter will be null.</span></span>
 

@@ -8,40 +8,43 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: c83123876747cb085efd65ff013db87a501b189c
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 760919ba215f725cac10ad03d278d0a3e994286e
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653070"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698055"
 ---
-# <span data-ttu-id="b31ce-104">interface ICoreWebView2DevToolsProtocolEventReceiver</span><span class="sxs-lookup"><span data-stu-id="b31ce-104">interface ICoreWebView2DevToolsProtocolEventReceiver</span></span> 
+# <span data-ttu-id="a73f8-104">interface ICoreWebView2DevToolsProtocolEventReceiver</span><span class="sxs-lookup"><span data-stu-id="a73f8-104">interface ICoreWebView2DevToolsProtocolEventReceiver</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="a73f8-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="a73f8-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="a73f8-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="a73f8-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2DevToolsProtocolEventReceiver
   : public IUnknown
 ```
 
-<span data-ttu-id="b31ce-105">将为特定的 DevTools 协议事件创建一个接收器，并允许你订阅和取消订阅该事件。</span><span class="sxs-lookup"><span data-stu-id="b31ce-105">A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubscribe from that event.</span></span>
+<span data-ttu-id="a73f8-107">将为特定的 DevTools 协议事件创建一个接收器，并允许你订阅和取消订阅该事件。</span><span class="sxs-lookup"><span data-stu-id="a73f8-107">A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubscribe from that event.</span></span>
 
-## <span data-ttu-id="b31ce-106">摘要</span><span class="sxs-lookup"><span data-stu-id="b31ce-106">Summary</span></span>
+## <span data-ttu-id="a73f8-108">摘要</span><span class="sxs-lookup"><span data-stu-id="a73f8-108">Summary</span></span>
 
- <span data-ttu-id="b31ce-107">成员</span><span class="sxs-lookup"><span data-stu-id="b31ce-107">Members</span></span>                        | <span data-ttu-id="b31ce-108">描述</span><span class="sxs-lookup"><span data-stu-id="b31ce-108">Descriptions</span></span>
+ <span data-ttu-id="a73f8-109">成员</span><span class="sxs-lookup"><span data-stu-id="a73f8-109">Members</span></span>                        | <span data-ttu-id="a73f8-110">描述</span><span class="sxs-lookup"><span data-stu-id="a73f8-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="b31ce-109">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="b31ce-109">add_DevToolsProtocolEventReceived</span></span>](#add_devtoolsprotocoleventreceived) | <span data-ttu-id="b31ce-110">订阅 DevToolsProtocol 事件。</span><span class="sxs-lookup"><span data-stu-id="b31ce-110">Subscribe to a DevToolsProtocol event.</span></span>
-[<span data-ttu-id="b31ce-111">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="b31ce-111">remove_DevToolsProtocolEventReceived</span></span>](#remove_devtoolsprotocoleventreceived) | <span data-ttu-id="b31ce-112">删除以前使用 add_DevToolsProtocolEventReceived 添加的事件处理程序。</span><span class="sxs-lookup"><span data-stu-id="b31ce-112">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
+[<span data-ttu-id="a73f8-111">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="a73f8-111">add_DevToolsProtocolEventReceived</span></span>](#add_devtoolsprotocoleventreceived) | <span data-ttu-id="a73f8-112">订阅 DevToolsProtocol 事件。</span><span class="sxs-lookup"><span data-stu-id="a73f8-112">Subscribe to a DevToolsProtocol event.</span></span>
+[<span data-ttu-id="a73f8-113">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="a73f8-113">remove_DevToolsProtocolEventReceived</span></span>](#remove_devtoolsprotocoleventreceived) | <span data-ttu-id="a73f8-114">删除以前使用 add_DevToolsProtocolEventReceived 添加的事件处理程序。</span><span class="sxs-lookup"><span data-stu-id="a73f8-114">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
 
-<span data-ttu-id="b31ce-113">通过 GetDevToolsProtocolEventReceiver 从 Web 视图对象中获取。</span><span class="sxs-lookup"><span data-stu-id="b31ce-113">Obtained from the WebView object via GetDevToolsProtocolEventReceiver.</span></span>
+<span data-ttu-id="a73f8-115">通过 GetDevToolsProtocolEventReceiver 从 Web 视图对象中获取。</span><span class="sxs-lookup"><span data-stu-id="a73f8-115">Obtained from the WebView object via GetDevToolsProtocolEventReceiver.</span></span>
 
-## <span data-ttu-id="b31ce-114">成员</span><span class="sxs-lookup"><span data-stu-id="b31ce-114">Members</span></span>
+## <span data-ttu-id="a73f8-116">成员</span><span class="sxs-lookup"><span data-stu-id="a73f8-116">Members</span></span>
 
-#### <span data-ttu-id="b31ce-115">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="b31ce-115">add_DevToolsProtocolEventReceived</span></span> 
+#### <span data-ttu-id="a73f8-117">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="a73f8-117">add_DevToolsProtocolEventReceived</span></span> 
 
-<span data-ttu-id="b31ce-116">订阅 DevToolsProtocol 事件。</span><span class="sxs-lookup"><span data-stu-id="b31ce-116">Subscribe to a DevToolsProtocol event.</span></span>
+<span data-ttu-id="a73f8-118">订阅 DevToolsProtocol 事件。</span><span class="sxs-lookup"><span data-stu-id="a73f8-118">Subscribe to a DevToolsProtocol event.</span></span>
 
-> <span data-ttu-id="b31ce-117">public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)（[ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \* 处理程序，EventRegistrationToken \* token）</span><span class="sxs-lookup"><span data-stu-id="b31ce-117">public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \* handler, EventRegistrationToken \* token)</span></span>
+> <span data-ttu-id="a73f8-119">public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)（[ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \* 处理程序，EventRegistrationToken \* token）</span><span class="sxs-lookup"><span data-stu-id="a73f8-119">public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \* handler, EventRegistrationToken \* token)</span></span>
 
-<span data-ttu-id="b31ce-118">每当引发相应的 DevToolsProtocol 事件时，都将调用处理程序的 Invoke 方法。</span><span class="sxs-lookup"><span data-stu-id="b31ce-118">The handler's Invoke method will be called whenever the corresponding DevToolsProtocol event fires.</span></span> <span data-ttu-id="b31ce-119">将使用包含 DevTools 协议事件参数对象的事件参数对象作为 JSON 字符串调用调用。</span><span class="sxs-lookup"><span data-stu-id="b31ce-119">Invoke will be called with the an event args object containing the DevTools Protocol event's parameter object as a JSON string.</span></span>
+<span data-ttu-id="a73f8-120">每当引发相应的 DevToolsProtocol 事件时，都将调用处理程序的 Invoke 方法。</span><span class="sxs-lookup"><span data-stu-id="a73f8-120">The handler's Invoke method will be called whenever the corresponding DevToolsProtocol event fires.</span></span> <span data-ttu-id="a73f8-121">将使用包含 DevTools 协议事件参数对象的事件参数对象作为 JSON 字符串调用调用。</span><span class="sxs-lookup"><span data-stu-id="a73f8-121">Invoke will be called with the an event args object containing the DevTools Protocol event's parameter object as a JSON string.</span></span>
 
 ```cpp
 // Prompt the user to name a CDP event, and then subscribe to that event.
@@ -88,9 +91,9 @@ void ScriptComponent::SubscribeToCdpEvent()
 }
 ```
 
-#### <span data-ttu-id="b31ce-120">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="b31ce-120">remove_DevToolsProtocolEventReceived</span></span> 
+#### <span data-ttu-id="a73f8-122">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="a73f8-122">remove_DevToolsProtocolEventReceived</span></span> 
 
-<span data-ttu-id="b31ce-121">删除以前使用 add_DevToolsProtocolEventReceived 添加的事件处理程序。</span><span class="sxs-lookup"><span data-stu-id="b31ce-121">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
+<span data-ttu-id="a73f8-123">删除以前使用 add_DevToolsProtocolEventReceived 添加的事件处理程序。</span><span class="sxs-lookup"><span data-stu-id="a73f8-123">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
 
-> <span data-ttu-id="b31ce-122">public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)（EventRegistrationToken 标记）</span><span class="sxs-lookup"><span data-stu-id="b31ce-122">public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(EventRegistrationToken token)</span></span>
+> <span data-ttu-id="a73f8-124">public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)（EventRegistrationToken 标记）</span><span class="sxs-lookup"><span data-stu-id="a73f8-124">public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(EventRegistrationToken token)</span></span>
 

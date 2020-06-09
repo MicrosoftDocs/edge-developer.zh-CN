@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: a8cd4dd948aa00aca7c2ef7d8c0c744b30db37e3
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: df43e9cb1d036482a73e1ff92446a5a74b921d5d
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653053"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698153"
 ---
-# <span data-ttu-id="00dde-104">interface ICoreWebView2NewWindowRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="00dde-104">interface ICoreWebView2NewWindowRequestedEventHandler</span></span> 
+# <span data-ttu-id="21f86-104">interface ICoreWebView2NewWindowRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="21f86-104">interface ICoreWebView2NewWindowRequestedEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="21f86-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="21f86-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="21f86-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="21f86-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2NewWindowRequestedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="00dde-105">调用方实现此接口以接收 Webview.newwindowrequested 事件。</span><span class="sxs-lookup"><span data-stu-id="00dde-105">The caller implements this interface to receive NewWindowRequested events.</span></span>
+<span data-ttu-id="21f86-107">调用方实现此接口以接收 Webview.newwindowrequested 事件。</span><span class="sxs-lookup"><span data-stu-id="21f86-107">The caller implements this interface to receive NewWindowRequested events.</span></span>
 
-## <span data-ttu-id="00dde-106">摘要</span><span class="sxs-lookup"><span data-stu-id="00dde-106">Summary</span></span>
+## <span data-ttu-id="21f86-108">摘要</span><span class="sxs-lookup"><span data-stu-id="21f86-108">Summary</span></span>
 
- <span data-ttu-id="00dde-107">成员</span><span class="sxs-lookup"><span data-stu-id="00dde-107">Members</span></span>                        | <span data-ttu-id="00dde-108">描述</span><span class="sxs-lookup"><span data-stu-id="00dde-108">Descriptions</span></span>
+ <span data-ttu-id="21f86-109">成员</span><span class="sxs-lookup"><span data-stu-id="21f86-109">Members</span></span>                        | <span data-ttu-id="21f86-110">描述</span><span class="sxs-lookup"><span data-stu-id="21f86-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="00dde-109">调用</span><span class="sxs-lookup"><span data-stu-id="00dde-109">Invoke</span></span>](#invoke) | <span data-ttu-id="00dde-110">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="00dde-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="21f86-111">调用</span><span class="sxs-lookup"><span data-stu-id="21f86-111">Invoke</span></span>](#invoke) | <span data-ttu-id="21f86-112">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="21f86-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="00dde-111">成员</span><span class="sxs-lookup"><span data-stu-id="00dde-111">Members</span></span>
+## <span data-ttu-id="21f86-113">成员</span><span class="sxs-lookup"><span data-stu-id="21f86-113">Members</span></span>
 
-#### <span data-ttu-id="00dde-112">调用</span><span class="sxs-lookup"><span data-stu-id="00dde-112">Invoke</span></span> 
+#### <span data-ttu-id="21f86-114">调用</span><span class="sxs-lookup"><span data-stu-id="21f86-114">Invoke</span></span> 
 
-<span data-ttu-id="00dde-113">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="00dde-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="21f86-115">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="21f86-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="00dde-114">公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) \* sender、 [ICoreWebView2NewWindowRequestedEventArgs](icorewebview2newwindowrequestedeventargs.md) \* 参数）</span><span class="sxs-lookup"><span data-stu-id="00dde-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2NewWindowRequestedEventArgs](icorewebview2newwindowrequestedeventargs.md) \* args)</span></span>
+> <span data-ttu-id="21f86-116">公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) \* sender、 [ICoreWebView2NewWindowRequestedEventArgs](icorewebview2newwindowrequestedeventargs.md) \* 参数）</span><span class="sxs-lookup"><span data-stu-id="21f86-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2NewWindowRequestedEventArgs](icorewebview2newwindowrequestedeventargs.md) \* args)</span></span>
 
