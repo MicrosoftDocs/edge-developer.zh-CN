@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: a789b0f4f9c482670f843ed21368b4168f99abe0
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: ec623da0181a4f21c3192652b0d098f922225b0d
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659689"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697922"
 ---
 # 使用 WebView2 的应用程序的分发 
 

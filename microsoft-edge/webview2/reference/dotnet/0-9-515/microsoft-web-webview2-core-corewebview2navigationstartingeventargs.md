@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 8b7ac3ab27cf5a2d9e80a77eabc488599820a02f
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 98e242ace5eb0ae5958ddb1eb6cd380d194294be
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653230"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697628"
 ---
 # CoreWebView2NavigationStartingEventArgs 类的 WebView2 
+
+> [!NOTE]
+> SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft WebView2

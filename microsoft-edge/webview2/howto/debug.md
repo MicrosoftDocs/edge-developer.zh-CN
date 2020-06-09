@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 386bc237257be0ade8c48bc1c737b0151a882719
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 7e3ee11de443713a14684023fcd90de3cb1d265a
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659684"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697747"
 ---
 # 如何在与 WebView2 控件一起开发时进行调试  
 

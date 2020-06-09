@@ -3,17 +3,17 @@ description: Microsoft Edge WebView2 使用的版本化模型
 title: Microsoft Edge WebView2 的版本控制
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 78184d3c670aa39e0a7f4a31e1216b5bc730c16e
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: cc924a146057a3c8c578ccea187e1dd63dedcbe6
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659669"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697215"
 ---
 # 了解浏览器版本和 WebView2  
 
@@ -26,7 +26,7 @@ WebView2 依赖于 Microsoft Edge 才能正常工作。  每个 WebView2 SDK 都
 
 ## 实验性 API  
 
-尽管 WebView2 是预览，但 SDK 中的 Api 应在 GA 上市时保持不变。  SDK 中包含[实验性 api][Webview2ReferenceWin3209488Experimental] 。  请评估实验性 Api 并使用 " [Web 视图反馈][GithubMicrosoftedgeWebviewfeedback]" 存储库发送反馈。  
+尽管 WebView2 是预览，但 SDK 中的 Api 应在 GA 上市时保持不变。  SDK 中包含[实验性 api][Webview2ReferenceWin3209538Experimental] 。  请评估实验性 Api 并使用 " [Web 视图反馈][GithubMicrosoftedgeWebviewfeedback]" 存储库发送反馈。  
 
 ### 路线图  
 
@@ -36,7 +36,7 @@ WebView2 依赖于 Microsoft Edge 才能正常工作。  每个 WebView2 SDK 都
 
 [Webview2Distibution]: ./distribution.md "使用 WebView2 | 的应用程序的分发Microsoft 文档"  
 [Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 运行时-使用 WebView2 | 的应用程序分发Microsoft 文档"  
-[Webview2ReferenceWin3209488Experimental]: ../reference/win32/0-9-488-reference-webview2.md#experimental "实验性引用（WebView2） |Microsoft 文档"  
+[Webview2ReferenceWin3209538Experimental]: ../reference/win32/0-9-538-reference-webview2.md#experimental "实验性引用（WebView2） |Microsoft 文档"  
 [Webview2Releasenotes]: ../releasenotes.md "WebView2 SDK 的发行说明 |Microsoft 文档"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Microsoft Edge 频道概述 |Microsoft 文档"  

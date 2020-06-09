@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 4b76cf998f8e2fd8982f7e51f1d9167e3862ec02
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d91b7aeeebc8fd82587ac6c01fddd14e693c2559
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652855"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697061"
 ---
 # interface ICoreWebView2WebResourceRequest 
+
+> [!NOTE]
+> SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
 
 ```
 interface ICoreWebView2WebResourceRequest

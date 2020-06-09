@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows Forms、WinForms、WPF、.NET
-ms.openlocfilehash: f17de3bcb7459375617f00aec0cd2897f0859c1d
-ms.sourcegitcommit: c579181af051e2855b785263faa4001c672a929b
+ms.openlocfilehash: 1b140d9f644c7a864cac4966bb4cfdd400feeb0d
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673857"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697740"
 ---
 # Microsoft Edge WebView2 简介（预览版）  
 
@@ -83,9 +83,9 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
       **增量采纳**  
       将 web 组件逐个添加到应用程序。  
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
-## 入门  
+## 即刻体验  
 
 若要使用 WebView2 控件生成和测试你的应用程序，你需要安装[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download)和[WebView2 SDK](https://aka.ms/webviewnuget) 。  选择以下选项之一开始使用。  
 

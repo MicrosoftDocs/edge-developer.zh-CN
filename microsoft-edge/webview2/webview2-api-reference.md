@@ -3,17 +3,17 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: 适用于 Win32 应用的 Microsoft Edge Web 视图2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 06/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: f0b55cbaac708cee6eb934898a853d006b5e0bbd
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 408680cb96fc334660ea5dafd9eee7bd20c90550
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652994"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698181"
 ---
 # 参考
 
@@ -23,8 +23,8 @@ ms.locfileid: "10652994"
 
 ## 语言和框架
 
-* [Win32 c + +](reference/win32/0-9-488-reference-webview2.md)
+* [Win32 C++](reference/win32/0-9-538-reference-webview2.md)
 * .NET
-  * [核心版](reference/dotnet/0-9-515-reference-webview2.md)
+  * [核心版](reference/dotnet/0-9-538-reference-webview2.md)
   * [Windows 窗体](reference/winforms/0-9-515-reference-webview2.md)
-  * [针对](reference/wpf/0-9-515-reference-webview2.md)
+  * [WPF](reference/wpf/0-9-515-reference-webview2.md)

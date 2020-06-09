@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: bfafaa39344b8dc2832517647ba19111657fd181
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: b45f672a6e06b1904ad28bad40317e4e827557b7
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653128"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697726"
 ---
 # CoreWebView2 类的 WebView2 
+
+> [!NOTE]
+> SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft WebView2
@@ -43,7 +46,7 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 [Webview.permissionrequested](#permissionrequested) | 在 Web 视图中的内容请求访问某些权限资源的权限时引发。
 [ProcessFailed](#processfailed) | 当 Web 视图进程意外终止或停止响应时激发。
 [ScriptDialogOpening](#scriptdialogopening) | 将针对 web 视图显示 JavaScript 对话框（警报、确认或提示）时，将引发此事件。
-[“设置”](#settings) | CoreWebView2Settings 对象包含适用于运行的的各种可修改设置
+[设置](#settings) | CoreWebView2Settings 对象包含适用于运行的的各种可修改设置
 [来源](#source) | 当前顶级文档的 URI。
 [SourceChanged](#sourcechanged) | Source 属性更改时将触发 SourceChanged。
 [WebMessageReceived](#webmessagereceived) | 当设置 IsWebMessageEnabled 设置和 web 视图调用的顶级文档时，将引发此事件 `window.chrome.webview.postMessage` 。
@@ -193,7 +196,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 仅当 AreDefaultScriptDialogsEnabled 属性设置为 false 时，此事件才会触发 CoreWebView2Settings。 ScriptDialogOpening 事件可用于取消对话框或使用自定义对话框替换默认对话框。
 
-#### “设置” 
+#### 设置 
 
 CoreWebView2Settings 对象包含适用于运行的的各种可修改设置
 

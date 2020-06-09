@@ -3,19 +3,22 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 适用于 Win32 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 519ef71db87d49aaf5a8a80970ff0cda61dfebbf
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: f0ac0bf7ae3b237bca45b22ed97ec16513666922
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652895"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697551"
 ---
 # CoreWebView2Settings 类的 WebView2 
+
+> [!NOTE]
+> SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft WebView2
@@ -29,7 +32,7 @@ ms.locfileid: "10652895"
 [AreDefaultContextMenusEnabled](#aredefaultcontextmenusenabled) | AreDefaultContextMenusEnabled 属性用于阻止在 web 视图中向用户显示默认上下文菜单。
 [AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled) | 加载新的 HTML 文档时，将使用 AreDefaultScriptDialogsEnabled。
 [AreDevToolsEnabled](#aredevtoolsenabled) | AreDevToolsEnabled 控制用户是否可以使用上下文菜单或键盘快捷方式打开 DevTools 窗口。
-[AreRemoteObjectsAllowed](#areremoteobjectsallowed) | AreRemoteObjectsAllowed 属性用于控制是否可以从 web 视图中的页面访问远程对象。
+[AreHostObjectsAllowed](#arehostobjectsallowed) | AreHostObjectsAllowed 属性用于控制是否可以从 web 视图中的页面访问主机对象。
 [IsBuiltInErrorPageEnabled](#isbuiltinerrorpageenabled) | IsBuiltInErrorPageEnabled 属性用于禁用内置错误页面，用于导航故障和呈现进程失败。
 [IsScriptEnabled](#isscriptenabled) | 控制在 Web 视图中的所有未来导航中是否启用了 JavaScript 执行。
 [IsStatusBarEnabled](#isstatusbarenabled) | IsStatusBarEnabled 控制状态栏是否将显示。
@@ -64,11 +67,11 @@ AreDevToolsEnabled 控制用户是否可以使用上下文菜单或键盘快捷�
 
 默认情况下为 true。
 
-#### AreRemoteObjectsAllowed 
+#### AreHostObjectsAllowed 
 
-AreRemoteObjectsAllowed 属性用于控制是否可以从 web 视图中的页面访问远程对象。
+AreHostObjectsAllowed 属性用于控制是否可以从 web 视图中的页面访问主机对象。
 
-> 公共 bool [AreRemoteObjectsAllowed](#areremoteobjectsallowed)
+> 公共 bool [AreHostObjectsAllowed](#arehostobjectsallowed)
 
 默认值为 TRUE。
 

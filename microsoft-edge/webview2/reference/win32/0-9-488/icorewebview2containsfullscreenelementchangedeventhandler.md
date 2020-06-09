@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 85de243c00364f7fb57d3842b2ddbf78848905f6
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d48baec759174d9dcecc236a685db12c5de03db1
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653135"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697054"
 ---
 # interface ICoreWebView2ContainsFullScreenElementChangedEventHandler 
+
+> [!NOTE]
+> SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
 
 ```
 interface ICoreWebView2ContainsFullScreenElementChangedEventHandler

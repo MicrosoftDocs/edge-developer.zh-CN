@@ -3,21 +3,21 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: 适用于 Win32 应用的 Microsoft Edge Web 视图2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 0ab152e52b5e5d89cf493ff525ce53d9ab174e6d
-ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
+ms.openlocfilehash: 460364b0c93e80c0e3868c3b69e20ea9dcf6c129
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10685678"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697194"
 ---
 # WebView2 （开发人员预览版）入门
 
-本演练将介绍[WebView2 （开发人员预览版）](https://aka.ms/webview)的常用功能，并帮助你开始创建你的第一个 WebView2 应用。 访问[API 参考](../reference/win32/0-9-488-reference-webview2.md)以了解有关单个 api 的详细信息。  
+本演练将介绍[WebView2 （开发人员预览版）](https://aka.ms/webview)的常用功能，并帮助你开始创建你的第一个 WebView2 应用。 访问[API 参考](../reference/win32/0-9-538-reference-webview2.md)以了解有关单个 api 的详细信息。  
 
 ## 必备条件
 
@@ -124,7 +124,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 ## 步骤 4-导航事件
 
-我们已经介绍 `ICoreWebView2::Navigate` 了在上一步中使用 URL 的导航。 在导航过程中，web 视图会触发主机可以侦听的事件序列- `NavigationStarting` 、、、 `SourceChanged` `ContentLoading` `HistoryChanged` 和 `NavigationCompleted` 。 单击[此处](../reference/win32/0-9-488/ICoreWebView2.md#navigation-events)了解详细信息。
+我们已经介绍 `ICoreWebView2::Navigate` 了在上一步中使用 URL 的导航。 在导航过程中，web 视图会触发主机可以侦听的事件序列- `NavigationStarting` 、、、 `SourceChanged` `ContentLoading` `HistoryChanged` 和 `NavigationCompleted` 。 单击[此处](../reference/win32/0-9-538/ICoreWebView2.md#navigation-events)了解详细信息。
 
 ![导航事件](../media/navigation-events.png)
 
@@ -221,7 +221,7 @@ nullptr);
 
 * 签出[WEBVIEW2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)，获取 WebView2's 功能的全面示例。
 * 签出[WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser)使用 WebView2 创建的应用程序。
-* 有关我们的 API 的详细信息，请浏览[api 参考](../reference/win32/0-9-488-reference-webview2.md)。  
+* 有关我们的 API 的详细信息，请浏览[api 参考](../reference/win32/0-9-538-reference-webview2.md)。  
 
 ## 与 WebView2 团队取得联系  
 

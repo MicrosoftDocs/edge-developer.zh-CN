@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、edge、ICoreWebView2、ICoreWebView2Controller、Selenium、Microsoft Edge 驱动程序
-ms.openlocfilehash: acee8c1f791fdd4a2604b8f3bfa7664548a164d1
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 15e9a0957047569a0832fbb6ea6e8bf280905b8d
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659685"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697257"
 ---
 # 通过 Microsoft Edge 驱动程序自动化和测试 WebView2
 

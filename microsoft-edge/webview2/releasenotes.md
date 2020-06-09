@@ -3,27 +3,52 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: Microsoft Edge WebView2 for Win32、WPF 和 WinForms 的发行说明
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 255f8d56ae1a4b77a87697b9cd3814380dd06994
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 4a1eb48270e062838fee9223d0a6e0e59505278e
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659662"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697320"
 ---
 # WebView2 SDK 的发行说明  
 
-[WEBVIEW2 SDK][WebView2NuGetGallery]的发行说明。  
+WebView2 团队将在6周的步调上提供[WEBVIEW2 SDK][WebView2NuGetGallery]的更新。 此页面将让你了解最新的：产品通知、对 API 图面的添加和修改以及重大更改。
+
+> [!IMPORTANT]
+> 更新 NuGet 程序包后重新编译你的应用。
+
+## 0.9.538
+
+[NuGet 程序包][WebView2NuGetGallery0.9.538]|最低 Microsoft Edge 版本85.0.538.0。
+
+#### 概要
+
+* 丢弃 SDK 版本[0.8.149](#08149)支持。 我们建议让最新版本的 WebView2 保持最新。
+* 已更新的组策略，用于在修改 Microsoft Edge 浏览器的配置文件路径时帐户（[#179](https://github.com/MicrosoftEdge/WebViewFeedback/issues/179)）
+
+#### Win32 C/c + +
+
+* 添加了[ICoreWebView2ExperimentalNewWindowRequestedEventArgs：： get_WindowFeatures](reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md#get_windowfeatures)在 ICoreWebView2ExperimentalWindowFeatures （）调用和关联的[ICoreWebView2ExperimentalWindowFeatures](reference/win32/0-9-538/icorewebview2experimentalwindowfeatures.md)时引发。 （[#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70)）
+* **重大更改：** [CreateCoreWebView2EnvironmentWithDetails](reference/win32/0-9-488/webview2-idl.md#createcorewebview2environmentwithdetails)已弃用并已替换为[CreateCoreWebView2EnvironmentWithOptions](reference/win32/0-9-538/webview2-idl.md#createcorewebview2environmentwithoptions)
+* **重大更改：** 为了确保我们的 API 与 Windows API 命名约定相一致，我们已更新以下内容的名称：
+  * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed)现已[AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
+* 已更新[AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) ，以确保原始主机对象序列化程序标记被设置为代理对象，并在 JavaScript 回调中作为参数传递时序列化为主机对象。 （[#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148)）
+
+#### .NET
+
+* 发布了 WinForms 和 WPF WebView2API 示例，这些示例是我们的 SDK 的综合指南。 查看[WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples)存储库。
+* 添加了对可视化托管和窗口功能的支持[实验 api](./concepts/versioning.md#experimental-apis)
+* **重大更改：** 以下延迟现在实现 IDisposable： [ScriptDialogOpening](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#scriptdialogopening)、 [webview.newwindowrequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#newwindowrequested)、 [WebResourceRequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#webresourcerequested)和[webview.permissionrequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#permissionrequested)。
+* 将[GetAvailableBrowserVersionString](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#getavailablebrowserversionstring)和[CompareBrowserVersions](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#comparebrowserversions)添加为[CoreWebView2Environment](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md)静态。
 
 ## 0.9.515-预发布
 
 [NuGet 程序包][WebView2NuGetGallery0.9.515-prerelease]|最低 Microsoft Edge 版本84.0.515.0。
-
-**更新 NuGet 程序包后重新编译你的应用。**
 
 * **公告：** WebView2 现在支持 .NET Framework 4.6.2 或更高版本上的 Windows 窗体和 WPF 以及**预发布程序包**中的 .net Core 3.0 或更高版本
 * 签出[wpf 入门指南](./gettingstarted/wpf.md)，了解如何开始生成 wpf 应用程序和针对 Wpf 特定 Api 的[wpf 参考](./reference/wpf/0-9-515-reference-webview2.md)
@@ -36,8 +61,6 @@ ms.locfileid: "10659662"
 ## 0.9.488
 
 [NuGet 程序包][WebView2NuGetGallery0.9.488]|最低 Microsoft Edge 版本84.0.488.0。
-
-**更新 NuGet 程序包后重新编译你的应用。**
 
 * **公告：** 从即将推出的 Microsoft Edge 版本83开始，长时间浏览器将不再面向稳定的浏览器通道。 相反，它将针对另一组二进制文件（即品牌[Microsoft Edge WebView2 运行时](./concepts/distribution.md#microsoft-edge-webview2-runtime)），它可以通过当前正在开发的安装程序进行链安装。 [应用分布](./concepts/distribution.md)中的更多详细信息。
 * **公告：** 前进后，我们将发布两个程序包：一个预发布程序包，其中包含实验性 Api （供你试用）和具有稳定 Api 的稳定发布程序包（你可以依赖）。 签出[Microsoft Edge WEBVIEW2 SDK](./concepts/versioning.md)以了解差异。
@@ -69,8 +92,6 @@ ms.locfileid: "10659662"
 
 [NuGet 程序包][WebView2NuGetGallery0.9.430]|最低 Microsoft Edge 版本82.0.430.0。
 
-**更新 NuGet 程序包后重新编译你的应用。**
-
 此 SDK 是我们的官方 Win32 c + + Beta 版本，其中包含了我们收到的多个功能请求。 我们尝试限制发布数和重大更改，但在我们接近我们的常规可用性时，我们使用的是 Beta 版本，以便在一次中转中合并多项重大重大更改。
 
 * **重大更改：** 在我们接近最终版本时，我们将把前缀*IWebView2WebView*重命名为*ICoreWebView2* ，以确保我们的 API 与 Windows api 命名约定相一致。 此外，为了让 UI 框架能够使用我们的 SDK 可扩展，我们已将 ICoreWebView2 分为[ICoreWebView2](reference/win32/0-9-430/icorewebview2.md)和[ICoreWebView2Host](reference/win32/0-9-430/icorewebview2host.md)。 ICoreWebView2Host 支持调整大小、显示和隐藏、重点以及与窗口化和合成相关的其他功能。 ICoreWebView2 支持所有其他 WebView2 功能。 若要了解有关合并这些更改的详细信息，请在我们的[WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples)项目中签出[拉取请求](https://github.com/MicrosoftEdge/WebView2Samples/pull/17)。
@@ -95,8 +116,6 @@ ms.locfileid: "10659662"
 
 [NuGet 程序包][WebView2NuGetGallery0.8.355]|最低 Microsoft Edge 版本80.0.355.0。
 
-**更新 NuGet 程序包后重新编译你的应用。**
-
 * 发布 WebView2API 示例-我们的 SDK 的综合指南。 请[在此处](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)查看！
 * 添加了除英语之外的所有语言的 IME 支持。 （[#30](https://github.com/MicrosoftEdge/WebViewFeedback/issues/30)）
 * 更新了 WebResourceRequested 事件的 API 图面以响应 bug 报告。  同时指定筛选器和创建事件现在已被否决。  若要创建 web 资源请求的事件，请使用[add_WebResourceRequested](reference/win32/0-8-190/iwebview2webview5.md#add_webresourcerequested)添加事件和[AddWebResourceRequestedFilter](reference/win32/0-8-190/iwebview2webview5.md#addwebresourcerequestedfilter)以添加筛选器。  [RemoveWebResourceRequestedFilter](reference/win32/0-8-190/iwebview2webview5.md#removewebresourcerequestedfilter)将删除筛选器。  （[#36](https://github.com/MicrosoftEdge/WebViewFeedback/issues/36)）（[#74](https://github.com/MicrosoftEdge/WebViewFeedback/issues/74)）  
@@ -105,8 +124,6 @@ ms.locfileid: "10659662"
 ## 0.8.314
 
 [NuGet 程序包][WebView2NuGetGallery0.8.314]|最低 Microsoft Edge 版本80.0.314.0。
-
-**更新 NuGet 程序包后重新编译你的应用。**
 
 * 添加了对 Windows 7、Windows 8/8.1 的支持。
 * 已添加 Visual Studio 和 Visual Studio 代码调试支持 WebView2。 现在，你可以在 WebView2 中从 IDE 调试你的脚本。 单击[此处](/microsoft-edge/hosting/webview2#debugging-webview2)了解更多详细信息。  
@@ -119,8 +136,6 @@ ms.locfileid: "10659662"
 ## 0.8.270  
 
 [NuGet 程序包][WebView2NuGetGallery0.8.270]|最低 Microsoft Edge 版本78.0.270.0。  
-
-**更新 NuGet 程序包后重新编译你的应用。**
 
 * 添加了 `DocumentTitleChanged` 指示文档标题更改 \ （[\ #27][MicrosoftEdgeWebViewFeedbackIssue27]\）的事件。  
 * 已添加 `GetWebView2BrowserVersionInfo` API \ （[\ #18][MicrosoftEdgeWebViewFeedbackIssue18]\）。  
@@ -135,8 +150,6 @@ ms.locfileid: "10659662"
 
 [NuGet 程序包][WebView2NuGetGallery0.8.230]|最低 Microsoft Edge 版本77.0.230.0。  
 
-**更新 NuGet 程序包后重新编译你的应用。**
-
 * 添加了 `Stop` 用于停止所有导航和挂起资源提取的 API \ （[\ #28][MicrosoftEdgeWebViewFeedbackIssue28]\）。  
 * 已将 .tlb 文件添加到 Nuget 程序包 \ （[\ #22][MicrosoftEdgeWebViewFeedbackIssue22]\）。  
 * 已将 .NET 项目添加到 NuGet 程序包中的安装程序列表 \ （[\ #32][MicrosoftEdgeWebViewFeedbackIssue32]\）。  
@@ -144,8 +157,6 @@ ms.locfileid: "10659662"
 ## 0.8.190  
 
 [NuGet 程序包][WebView2NuGetGallery0.8.190]|最低 Microsoft Edge 版本77.0.190.0。  
-
-**更新 NuGet 程序包后重新编译你的应用。**
 
 * 添加 `get_AreDevToolsEnabled` / `put_AreDevToolsEnabled` 到控件，以便用户可以打开 DevTools \ （[\ #16][MicrosoftEdgeWebViewFeedbackIssue16]\）。  
 * 添加 `get_IsStatusBarEnabled` / `put_IsStatusBarEnabled` 到控件（如果显示状态栏） \ （[\ #19][MicrosoftEdgeWebViewFeedbackIssue19]\）。  
@@ -187,5 +198,6 @@ ms.locfileid: "10659662"
 [WebView2NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "NuGet 库 |WebView2 v 0.9.430"
 [WebView2NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet 库 |WebView2 v 0.9.488"
 [WebView2NuGetGallery0.9.515-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease "NuGet 库 |WebView2 v 0.9.515 预发布"
+[WebView2NuGetGallery0.9.538]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "NuGet 库 |WebView2 v 0.9.538"
 
 [WebViewsGlobalsCreateWebView2EnvironmentWithDetails]: reference/win32/0-8-190/webview2-idl.md#createwebview2environmentwithdetails "Web 视图 Globals-CreateWebView2EnvironmentWithDetails 函数"  
