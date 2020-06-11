@@ -2,16 +2,16 @@
 title: 远程调试 Android 设备入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: fc7450ba2b088eee8f4005216374980096cbb067
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+ms.openlocfilehash: c77633c4844f0e576b7dff6574000a78c8c083da
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688145"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708534"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "10688145"
 
 # 远程调试 Android 设备入门  
 
-在 Android 设备上从 Windows 或 macOS 计算机远程调试实时内容。  本教程页面教你如何完成以下操作。  
+在 Android 设备上从 Windows 或 macOS 计算机远程调试实时内容。  以下教程页面教你如何完成以下操作。  
 
 *   设置 Android 设备以进行远程调试，并从开发计算机中发现它。  
 *   从开发计算机检查和调试 Android 设备上的实时内容。  
@@ -41,11 +41,15 @@ ms.locfileid: "10688145"
 :::image-end:::  
 -->  
 
+> [!NOTE]
+> 远程调试目前不支持 iOS 设备上的 Microsoft Edge 应用。  以下指南专门针对 Android 设备上的远程调试 Microsoft Edge。
+> 如果你有 macOS 设备，请按照[Brightcove 调试指南][BrightcoveSupportDebuggingMobileDevices]操作，以使用 Safari 在 iOS 设备上远程调试 Microsoft Edge。  有关 Safari 中的 Web 检查器工具的详细信息，请参阅[Safari Web 开发工具][AppleDeveloperSafariTools]。  
+
 ## 步骤1：发现 Android 设备  
 
-下面的工作流适用于大多数用户。  请参阅[疑难解答： DevTools 未检测到 Android 设备](#troubleshooting-devtools-is-not-detecting-the-android-device)，获取更多帮助。  
+下面的工作流适用于大多数用户。  有关更多帮助，请参阅[疑难解答： DevTools 未检测到 Android 设备](#troubleshooting-devtools-is-not-detecting-the-android-device)部分。  
 
-1.  打开 Android 上的 "**开发工具选项**" 屏幕。  有关详细信息，请参阅[配置设备上的开发人员选项](https://developer.android.com/studio/debug/dev-options.html)。  
+1.  打开 Android 上的 "**开发工具选项**" 屏幕。  有关详细信息，请参阅[配置设备上的开发人员选项][AndroidDeveloperStudioDevOptions]。  
 1.  选择 "**启用 USB 调试**"。  
 1.  在开发计算机上，打开 "Microsoft Edge"。  
 1.  导航到 `edge://inspect` Microsoft Edge 中的页面。  
@@ -60,7 +64,7 @@ ms.locfileid: "10688145"
        图 2.  Android 设备上的 "**允许 USB 调试**" 权限提示  
     :::image-end:::  
     
-1.  如果你看到 Android 设备的模型名称，则 Microsoft Edge 已成功建立与你的设备的连接。  继续执行[步骤 2](#step-2-debug-content-on-your-android-device-from-your-development-machine)。  
+1.  如果你看到 Android 设备的模型名称，则 Microsoft Edge 已成功建立与你的设备的连接。  转到 "[步骤 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) " 部分。  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -78,8 +82,8 @@ ms.locfileid: "10688145"
 
 使用以下提示来帮助验证软件是否设置正确。  
 
-*   如果开发计算机运行的是 Windows，请尝试手动安装 Android 设备的 USB 驱动程序。  有关详细信息，请参阅[安装 OEM USB 驱动程序][AndroidUSBDrivers]。  
-*   某些 Windows 和 Android 设备的组合 \ （特别是 Samsung \）需要其他设置。  有关详细信息，请参阅 [DevTools 设备插入时不检测设备] [StackOverflowDevicesNotDetected]。  
+*   如果开发计算机运行的是 Windows，请尝试手动安装 Android 设备的 USB 驱动程序。  有关详细信息，请参阅[安装 OEM USB 驱动程序][AndroidDeveloperToolsOemUsb]。  
+*   某些 Windows 和 Android 设备的组合 \ （特别是 Samsung \）需要其他设置。  有关详细信息，请参阅[DevTools 设备在接通电源时不检测设备][Stackoverflow21925992]。  
 
 使用以下提示可帮助你解决在 Android 设备上不能看到 "**允许 USB 调试**" 提示。  
 
@@ -89,10 +93,10 @@ ms.locfileid: "10688145"
     > 如果您的 Android 或开发计算机屏幕被锁定，您可能看不到提示。  
 
 *   更新 Android 设备和开发计算机的显示设置，以便每个设备都不会进入睡眠状态。  
-*   将 Android 的 USB 模式设置为 PTP。  有关详细信息，请参阅[Galaxy S4 不显示 "授权 USB 调试" 对话框][StackExchangeGalaxyS4DoesNotShowDialogBox]。  
+*   将 Android 的 USB 模式设置为 PTP。  有关详细信息，请参阅[Galaxy S4 不显示 "授权 USB 调试" 对话框][StackexchangeAndroid101933]。  
 *   从 Android 设备上的 "**开发工具选项**" 屏幕中选择 "**撤消 USB 调试授权**"，将其重置为新状态。  
 
-如果你发现此页面上或 "DevTools 设备" 在堆栈溢出时未检测到设备的解决方案，请将你的解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+如果您发现此页面或 DevTools 设备上未提及的解决方案在堆栈溢出[时未检测到设备][Stackoverflow21925992]，请将您的解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
 
 ## 步骤2：从开发计算机调试 Android 设备上的内容  
 
@@ -149,21 +153,20 @@ ms.locfileid: "10688145"
 [ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
 [ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
-<!--[ImageRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--remote-debugging.msft.png "old Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
-<!--[ImageEdgeInspect]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-no-targets.msft.png "Figure 1: The edge://inspect page in Microsoft Edge"  -->  
-<!--[ImageAndroidPermissionPrompt]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-android-permissions-prompt.msft.png "Figure 2: The Allow USB Debugging permission prompt on an Android device"  -->  
-<!--[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets.msft.png "Figure 3: A connected remote device"  -->  
-<!-- [ImageReload]:  /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets-buttons.msft.png "Figure 4: The buttons for focusing, reloading, or closing a tab"  -->  
-<!--[ImageUnknownDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--unknown-device.msft.png "old Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
-
 <!-- links -->  
 
-[AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "安装 OEM USB 驱动程序 |Android 开发人员"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "配置设备上的开发人员选项 |Android 开发人员"  
+[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "安装 OEM USB 驱动程序 |Android 开发人员"  
+
+[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari Web 开发工具 |Apple 开发人员"  
+
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "在移动设备上调试 |Brightcove 支持"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
-[StackOverflowDevicesNotDetected]： https://stackoverflow.com/questions/21925992 "当插入堆栈内溢时，DevTools 设备不检测设备"  
 
-[StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "adb-Android 发烧友式堆栈交换"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb-Android 发烧友式堆栈交换"  
+
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "插入堆栈内溢时，DevTools 设备不检测设备"  
 
 > [!NOTE]
 > 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  

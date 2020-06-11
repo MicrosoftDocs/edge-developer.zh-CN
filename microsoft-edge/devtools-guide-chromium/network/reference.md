@@ -2,16 +2,16 @@
 title: 网络分析参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 460ad05983e7615e8739953ce3cb7d559492bc90
-ms.sourcegitcommit: 33663cd7838dddee86228dde469a5e9551bddb02
+ms.openlocfilehash: 7e7ac287e116e28773a42456c21ec4ba07647f04
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611838"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10709181"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,7 @@ ms.locfileid: "10611838"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-# 网络分析参考   
-
-
+# 网络分析参考  
 
 了解在 Microsoft Edge DevTools 网络分析功能的这一全面参考中，分析页面加载方式的新方法。  
 
@@ -44,38 +36,38 @@ ms.locfileid: "10611838"
 > This reference is based on Microsoft Edge 58.  If you use another version of Microsoft Edge, the UI, and features of DevTools may be different.  Check `edge://help` to see what version of Microsoft Edge you are running.  
 -->
 
-## 记录网络请求   
+## 记录网络请求  
 
 默认情况下，DevTools 将在网络面板中记录所有网络请求，只要 DevTools 已打开。  
 
-> ##### 图 1  
-> 网络面板  
-> ![网络面板][ImageNetworkPanel]  
+:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="网络面板" lightbox="../media/network-network-panel.msft.png":::
+   图1：**网络**面板  
+:::image-end:::  
 
-### 停止记录网络请求   
+### 停止记录网络请求  
 
-要停止录制请求，请执行以下操作：  
+若要停止录制请求，请完成以下步骤。  
 
-*   选择 "**停止录制网络日志**" ![ 停止 ][ImageRecordOnIcon] 在**网络**面板上记录网络日志。  它将变为灰色，指示 DevTools 不再录制请求。  
-*   `Control` + `E` 在 "网络" 面板处于聚焦状态时，按 \ （Windows \）或 `Command` + `E` \ （macOS \）。 **Network**  
+1.  选择 "**停止录制网络日志**" ![ 停止 ][ImageRecordOnIcon] 在**网络**面板上记录网络日志。  它将变为灰色，指示 DevTools 不再录制请求。  
+1.  `Control` + `E` 在 "网络" 面板处于聚焦状态时，按 \ （Windows \）或 `Command` + `E` \ （macOS \）。 **Network**  
 
-### 清除请求   
+### 清除请求  
 
 **Clear** ![ ][ImageClearIcon] 在 "网络" 面板上选择 "清除清除"，清除 "请求" 表中的所有请求。  
 
-> ##### 图 2  
-> "清除" 按钮  
-> !["清除" 按钮][ImageClearButton]  
+:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text=""清除" 按钮" lightbox="../media/network-network-clear-button.msft.png":::
+   图2： "**清除**" 按钮  
+:::image-end:::  
 
-### 跨页面加载保存请求   
+### 跨页面加载保存请求  
 
 若要在每个页面加载期间保存请求，请选中 "网络" 面板上的 "**保留日志**" 复选框。  DevTools 将保存所有请求，直到你禁用**保留日志**。  
 
-> ##### 图 3  
-> "保留日志" 复选框  
-> !["保留日志" 复选框][ImagePreserveLogCheckBox]  
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text=""保留日志" 复选框" lightbox="../media/network-network-preserve-log.msft.png":::
+   图3： "**保留日志**" 复选框  
+:::image-end:::  
 
-### 在页面加载期间捕获屏幕截图   
+### 在页面加载期间捕获屏幕截图  
 
 捕获屏幕截图，分析用户在等待页面加载时看到的内容。  
 
@@ -89,31 +81,31 @@ ms.locfileid: "10611838"
 *   选择屏幕的缩略图，以筛选出捕获屏幕截图后发生的任何请求。  
 *   双击缩略图以放大缩略图。  
 
-> ##### 图 4  
-> 将鼠标悬停在屏幕截图上  
-> ![将鼠标悬停在屏幕截图上][ImageScreenshotHover]  
+:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="将鼠标悬停在屏幕截图上" lightbox="../media/network-network-screenshot-hover.msft.png":::
+   图4：将鼠标悬停在屏幕截图上  
+:::image-end:::  
 
-<!--  ### Replay XHR request   -->
+<!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, right-click the request in the Requests table and select **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
 
 <!--  
-> ##### Old Figure 5  
-> Selecting Replay XHR  
-> ![Selecting Replay XHR][ImageReplayXHR]  
+:::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Selecting Replay XHR" lightbox="../media/network-replay-xhr.msft.png":::
+   Old Figure 5:  Selecting Replay XHR  
+:::image-end:::  
 -->  
 
 ## 更改加载行为  
 
-### 通过禁用浏览器缓存来模拟首次访问者   
+### 通过禁用浏览器缓存来模拟首次访问者  
 
 若要模拟首次用户体验你的网站的情况，请选中 "**禁用缓存**" 复选框。  DevTools 禁用浏览器缓存。  这将更准确地模拟第一次用户的体验，因为在重复访问时从浏览器缓存提供请求。  
 
-> ##### 图 5  
-> "禁用缓存" 复选框  
-> ![禁用缓存复选框][ImageDisableCacheCheckBox]  
+:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text=""禁用缓存" 复选框" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+   图5： "**禁用缓存**" 复选框  
+:::image-end:::  
 
-#### 从网络条件抽屉中禁用浏览器缓存   
+#### 从网络条件抽屉中禁用浏览器缓存  
 
 如果想要在其他 DevTools 面板中工作时禁用缓存，请使用网络条件抽屉。  
 
@@ -122,39 +114,39 @@ ms.locfileid: "10611838"
 
 <!--todo: add network condition section when available -->  
 
-### 手动清除浏览器缓存   
+### 手动清除浏览器缓存  
 
-若要随时手动清除浏览器缓存，请右键单击 "请求" 表中的任意位置，然后选择 "**清除浏览器缓存**"。  
+若要随时手动清除浏览器缓存，请在 "请求" 表中的任意位置打开上下文菜单 \ （右键单击 \），然后选择 "**清除浏览器缓存**"。  
 
-> ##### 图 6  
-> 选择 "清除浏览器缓存"  
-> ![选择 "清除浏览器缓存"][ImageClearBrowserCache]  
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="选择 "清除浏览器缓存"" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+   图6：选择 "**清除浏览器缓存**"  
+:::image-end:::  
 
-### 模拟脱机   
+### 模拟脱机  
 
-新的 web 应用类（称为[累进 Web 应用][DevtoolsProgressiveWebApps]）和**服务工作人员**帮助脱机工作。  你可能会发现，在你构建此类型的应用时，快速模拟没有数据连接的设备非常有用。  
+新的 web 应用类（名为 "[渐进式 Web 应用][DevtoolsProgressiveWebApps]"）使用**服务工作人员**帮助脱机工作。  你可能会发现，在你构建此类型的应用时，快速模拟没有数据连接的设备非常有用。  
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
 选择 "**联机**" 下拉菜单，在 "**预置**" 下搜索，然后选择 "**脱机**" 以模拟完全脱机的网络体验。  
 
-> ##### 图 7  
-> "脱机" 下拉菜单  
-> ![脱机下拉菜单][ImageOfflineDropdown]  
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text=""脱机" 下拉菜单" lightbox="../media/network-network-offline-dropdown.msft.png":::
+   图7：**脱机**下拉菜单  
+:::image-end:::  
 
-### 模拟慢速网络连接   
+### 模拟慢速网络连接  
 
 从 "**联机**" 下拉菜单中模拟慢速3G、快速3g 和其他连接速度。  
 
-> ##### 图 8  
-> 限制下拉菜单  
-> ![限制下拉菜单][ImageNetworkThrottlingMenu]  
+:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="限制下拉菜单" lightbox="../media/network-network-throttling-menu.msft.png":::
+   图8：**限制**下拉菜单  
+:::image-end:::  
 
 您可以从各种预设（如低速3G 或快速3G）中进行选择。  您也可以通过打开 "限制" 菜单并选择 "**自定义**添加" 来添加自己的自定义预设  >  **Add**。  
 
 DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已启用限制。  
 
-#### 从网络条件抽屉中模拟慢速网络连接   
+#### 从网络条件抽屉中模拟慢速网络连接  
 
 如果您希望在其他 DevTools 面板中工作时限制网络连接，请使用网络条件抽屉。  
 
@@ -163,15 +155,15 @@ DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已
 
 <!--todo: add network condition section when available -->  
 
-### 手动清除浏览器 cookie   
+### 手动清除浏览器 cookie  
 
-若要随时手动清除浏览器 cookie，请右键单击 "请求" 表中的任意位置，然后选择 "**清除浏览器 cookie**"。  
+若要随时手动清除浏览器 cookie，请在 "请求" 表中的任意位置打开上下文菜单 \ （右键单击 \），然后选择 "**清除浏览器 cookie**"。  
 
-> ##### 图 9  
-> 选择 "清除浏览器 Cookie"  
-> ![选择 "清除浏览器 Cookie"][ImageClearBrowserCookies]  
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择 "清除浏览器 Cookie"" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+   图9：选择 "**清除浏览器 cookie** "  
+:::image-end:::  
 
-### 替代用户代理   
+### 替代用户代理  
 
 要手动替代用户代理，请执行以下操作：  
 
@@ -181,18 +173,18 @@ DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已
 
 <!--todo: add network condition section when available -->  
 
-## 筛选请求   
+## 筛选请求  
 
-### 按属性筛选请求   
+### 按属性筛选请求  
 
 使用 "**筛选**" 文本框筛选按属性（如请求的域或大小）的请求。  
 
 如果看不到文本框，则 "筛选器" 窗格可能已隐藏。  
 请参阅[隐藏筛选器窗格](#hide-the-filters-pane)。  
 
-> ##### 图 10  
-> "筛选" 文本框  
-> ![筛选器文本框][ImageFilterTextBox]  
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text=""筛选器" 文本框" lightbox="../media/network-network-filters-textbox.msft.png":::
+   图10： "**筛选**" 文本框  
+:::image-end:::  
 
 你可以通过使用空格分隔每个属性来同时使用多个属性。  例如， `mime-type:image/png larger-than:1K` 显示大于 1 kb 的所有 PNGs。  这些多属性筛选器等效于 `AND` 操作。  `OR` 当前不支持操作。  
 
@@ -213,7 +205,7 @@ DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已
 | `set-cookie-value` | 显示具有与 `Set-Cookie` 指定值匹配的值的标题的资源。  DevTools 将用遇到的所有 cookie 值填充记忆式键入。 |  
 | `status-code` | 仅显示 HTTP 状态代码与指定代码匹配的资源。  DevTools 将填充 "自动完成" 下拉菜单，其中包含遇到的所有状态代码。 |  
 
-### 按类型筛选请求   
+### 按类型筛选请求  
 
 若要按请求类型筛选请求，请选择 "网络" 面板上的**XHR**、 **JS**、 **CSS**、 **Img**、**媒体**、**字体**、**文档**、 **WS** \ （WebSocket \）、**清单**或**其他**\ （此处未列出的任何其他类型 \）按钮。  
 
@@ -222,39 +214,39 @@ DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已
 
 若要同时启用多个类型筛选器，请按住 `Control` \ （Windows \）或 `Command` \ （macOS \），然后选择。  
 
-> ##### 图 11  
-> 使用类型筛选器显示 JS、CSS 和文档资源  
-> ![使用类型筛选器显示 JS、CSS 和文档资源][ImageMultiTypeFilter]  
+:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="使用类型筛选器显示 JS、CSS 和文档资源" lightbox="../media/network-network-type-filters.msft.png":::
+   图11：使用类型筛选器显示 JS、CSS 和文档资源  
+:::image-end:::  
 
-### 按时间筛选请求   
+### 按时间筛选请求  
 
 在 "概述" 窗格中选择并向左或向右拖动，以仅显示在该时间范围内处于活动状态的请求。  筛选器是包含的。  显示在突出显示的时间内处于活动状态的任何请求。  
 
-> ##### 图 12  
-> 筛选出在300ms 周围处于非活动状态的任何请求  
-> ![筛选掉在300ms 上处于非活动状态的所有请求][ImageOverviewFilter]  
+:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="筛选出在300ms 周围处于非活动状态的任何请求" lightbox="../media/network-network-overview-filter.msft.png":::
+   图12：筛选出在300ms 周围处于非活动状态的任何请求  
+:::image-end:::  
 
 ### 隐藏数据 Url  
 
 [数据 url][MDNHTTPDataURIs]是嵌入到其他文档中的小文件。  在 "请求" 表中看到的以数据 URL 开头的任何请求 `data:` 。  
 
-选中 "**隐藏数据 url** " 复选框以隐藏这些请求。  
+选中 "**隐藏数据 url** " 复选框以隐藏请求。  
 
-> ##### 图 13  
-> "隐藏数据 Url" 复选框  
-> !["隐藏数据 Url" 复选框][ImageHideDataURLsCheckBox]  
+:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text=""隐藏数据 Url" 复选框" lightbox="../media/network-network-hide-data-urls.msft.png":::
+   图13： "**隐藏数据 Url** " 复选框  
+:::image-end:::  
 
 ## 排序请求  
 
 默认情况下，请求表中的请求按初始时间排序，但你可以使用其他条件对表进行排序。  
 
-### 按列排序   
+### 按列排序  
 
 选择请求中的任何列的标题，对该列的请求进行排序。  
 
-### 按活动阶段排序   
+### 按活动阶段排序  
 
-若要更改瀑布对请求的排序方式，请右键单击 "请求" 表的标题，将鼠标悬停在**瀑布**上，然后选择下列选项之一。  
+若要更改瀑布对请求的排序方式，请将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ （右键单击 \），将鼠标悬停在**瀑布**上，然后选择下列选项之一。  
 
 *   **开始时间**。  启动的第一个请求位于顶部。  
 *   **响应时间**。  开始下载的第一个请求位于顶部。  
@@ -264,24 +256,24 @@ DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已
 
 这些说明假定每个各自的选项均按最短到最长的排序。  选择**瀑布**栏的标题将反转顺序。  
 
-> ##### 图 14  
-> 按总工期对瀑布图进行排序 \ （每个条形图的较亮部分是等待的时间，较暗的部分是下载字节所花费的时间）  
-> ![按总工期对瀑布图进行排序][ImageWaterfallTotalDuration]  
+:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="按总工期对瀑布图进行排序" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
+   图14：按总工期对瀑布图进行排序 \ （每个条形图的较亮部分是等待的时间，较暗的部分是下载字节所花费的时间）  
+:::image-end:::  
 
-## 分析请求   
+## 分析请求  
 
 只要 DevTools 打开，它就会在 "网络" 面板中记录所有请求。  
 使用 "网络" 面板分析请求。  
 
-### 查看请求日志   
+### 查看请求日志  
 
 使用 "请求" 表查看在 DevTools 打开时发出的所有请求的日志。  选择或悬停的请求将显示有关每个项目的详细信息。  
 
-> ##### 图 15  
-> 请求表  
-> ![请求表][ImageRequestsTable]  
+:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="请求表" lightbox="../media/network-network-requests-table.msft.png":::
+   图15：请求表  
+:::image-end:::  
 
-"请求" 表默认情况下显示以下列：  
+"请求" 表默认情况下显示以下列。  
 
 *   **名称**。  资源的文件名或标识符。  
 *   **状态**。  HTTP 状态代码。  
@@ -295,23 +287,23 @@ DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已
 *   **时间**。  从请求开始到响应中最后一个字节的接收的总持续时间。  
 *   [**瀑布**](#view-the-timing-of-requests-in-relation-to-one-another)图。  每个请求的活动的可视化细目。  
 
-#### 添加或删除列   
+#### 添加或删除列  
 
-右键单击 "请求" 表的标题，然后选择一个选项以隐藏或显示它。  当前显示的选项在每个项目旁边都有复选标记。  
+将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ （右键单击 \），然后选择一个选项以隐藏或显示它。  当前显示的选项在每个项目旁边都有复选标记。  
 
-> ##### 图 16  
-> 将列添加到 "请求" 表  
-> ![向请求表添加列][ImageRequestsTableAddColumn]  
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="将列添加到 "请求" 表" lightbox="../media/network-network-requests-add-column.msft.png":::
+   图16：向请求表添加列  
+:::image-end:::  
 
-#### 添加自定义列   
+#### 添加自定义列  
 
-若要向 "请求" 表添加自定义列，请右键单击 "请求" 表的标题，然后选择 "**响应标题**" "  >  **管理标题列**"。  
+若要向 "请求" 表添加自定义列，请将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ （右键单击 \），然后选择 "**响应标题**" "  >  **管理标题列**"。  
 
-> ##### 图 17  
-> 向请求表添加自定义列  
-> ![向请求表添加自定义列][ImageRequestsTableCustomColumn]  
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="向请求表添加自定义列" lightbox="../media/network-network-requests-add-custom.msft.png":::
+   图17：向请求表添加自定义列  
+:::image-end:::  
 
-### 查看请求之间的相对计时   
+### 查看请求之间的相对计时  
 
 使用瀑布图查看请求相对于另一个时间的计时。  
 默认情况下，瀑布图按请求的开始时间进行组织。  
@@ -319,23 +311,23 @@ DevTools 将在 "**网络**" 选项卡旁显示一个警告图标，提醒你已
 
 请参阅 "[按活动排序" 阶段](#sort-by-activity-phase)以查看可对瀑布图进行排序的不同方式。  
 
-> ##### 图18  
-> "请求" 窗格的瀑布栏  
-> ![请求窗格的瀑布列][ImageRequestsTableWaterfallColumn]  
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text=""请求" 窗格的瀑布栏" lightbox="../media/network-network-requests-waterfall.msft.png":::
+   图18： "**请求**" 窗格的 "瀑布图" 列  
+:::image-end:::  
 
-<!-- ### Analyze the frames of a WebSocket Connection   -->
+<!-- ### Analyze the frames of a WebSocket Connection  -->
 
 <!--To view the frames of a WebSocket connection:  
 
 1.  Select the URL of the WebSocket connection, under the **Name** column of the Requests table.  
 1.  Select the **Frames** tab.  The table shows the last 100 frames.  
 
-To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the Requests table.  -->
+To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-> ##### Old Figure 20  
-> The Frames tab  
-> ![The Frames tab][ImageFrames]  
+:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames tab" lightbox="../media/network-frames.msft.png":::
+   Old Figure 20:  The **Frames** tab  
+:::image-end:::  
 -->
 
 <!--The table contains three columns:  
@@ -351,7 +343,7 @@ To refresh the table, re-click the name of the WebSocket connection under the **
 *   WebSocket opcodes are light-yellow.  
 *   Errors are light-red.  -->
 
-### 查看答复正文的预览   
+### 查看答复正文的预览  
 
 若要查看响应正文的预览，请执行以下操作：  
 
@@ -360,65 +352,65 @@ To refresh the table, re-click the name of the WebSocket connection under the **
 
 此选项卡最适用于查看图像。  
 
-> ##### 图19  
-> "预览" 选项卡  
-> ![预览选项卡][ImagePreview]  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text=""预览" 选项卡" lightbox="../media/network-network-resources-preview.msft.png":::
+   图19： "**预览**" 选项卡  
+:::image-end:::  
 
-### 查看答复正文   
+### 查看答复正文  
 
 要查看请求的响应正文，请执行以下操作：  
 
 1.  在 "请求" 表的 "**名称**" 列下，选择请求的 URL。  
 1.  选择 "**响应**" 选项卡。  
 
-> ##### 图20  
-> "响应" 选项卡  
-> ![响应选项卡][ImageResponse]  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text=""响应" 选项卡" lightbox="../media/network-network-resources-response.msft.png":::
+   图20： "**响应**" 选项卡  
+:::image-end:::  
 
-### 查看 HTTP 标头   
+### 查看 HTTP 标头  
 
 查看有关请求的 HTTP 头数据：  
 
 1.  在 "请求" 表的 "**名称**" 列下，选择请求的 URL。  
 1.  选择 "**页眉**" 选项卡。  
 
-> ##### 图21  
-> "页眉" 选项卡  
-> ![标题选项卡][ImageHeaders]  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text=""页眉" 选项卡" lightbox="../media/network-resources-headers.msft.png":::
+   图21： "**页眉**" 选项卡  
+:::image-end:::  
 
-#### 查看 HTTP 域名源   
+#### 查看 HTTP 域名源  
 
 默认情况下，"页眉" 选项卡按字母顺序显示标题名称。  若要按接收的顺序查看 HTTP 标头名称，请执行以下操作：  
 
 1.  打开您感兴趣的请求的 "**标题**" 选项卡。  请参阅[查看 HTTP 标头](#view-http-headers)。  
 1.  选择 "**请求标头**" 或 "**响应标题**" 部分旁边的 "**查看源**"。  
 
-### 查看查询字符串参数   
+### 查看查询字符串参数  
 
 若要以可读的格式查看 URL 的查询字符串参数，请执行以下操作：  
 
 1.  打开您感兴趣的请求的 "**标题**" 选项卡。  请参阅[查看 HTTP 标头](#view-http-headers)。  
 1.  转到 "**查询字符串参数**" 部分。  
 
-> ##### 图22  
-> "查询字符串参数" 部分  
-> ![查询字符串参数部分][ImageQueryStringParameters]  
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text=""查询字符串参数" 部分" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+   图22： "**查询字符串参数**" 部分  
+:::image-end:::  
 
-#### 查看查询字符串参数源   
+#### 查看查询字符串参数源  
 
 要查看请求的查询字符串参数源，请执行以下操作：  
 
 1.  转到 "查询字符串参数" 部分。  请参阅[查看查询字符串参数](#view-query-string-parameters)。  
 1.  选择 "**查看源**"。  
 
-#### 查看 URL 编码查询字符串参数   
+#### 查看 URL 编码查询字符串参数  
 
 以人类可读格式查看查询字符串参数，但保留编码：  
 
 1.  转到 "查询字符串参数" 部分。  请参阅[查看查询字符串参数](#view-query-string-parameters)。  
 1.  选择 "**查看 URL 编码**"。  
 
-### 查看 cookie   
+### 查看 cookie  
 
 若要查看在请求的 HTTP 头中发送的 cookie，请执行以下操作：  
 
@@ -430,11 +422,11 @@ To refresh the table, re-click the name of the WebSocket connection under the **
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
 <!--TODO: add link when section is available -->
 
-> ##### 图23  
-> "Cookie" 选项卡  
-> ![Cookies 选项卡][ImageCookies]  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text=""Cookie" 选项卡" lightbox="../media/network-network-resources-cookies.msft.png":::
+   图23： "Cookies" 选项卡  
+:::image-end:::  
 
-### 查看请求的计时细目   
+### 查看请求的计时细目  
 
 要查看请求的计时细目，请执行以下操作：  
 
@@ -445,27 +437,27 @@ To refresh the table, re-click the name of the WebSocket connection under the **
 
 有关你在 "计时" 选项卡中看到的每个阶段的详细信息，请参阅[介绍的计时分解阶段](#timing-breakdown-phases-explained)。  
 
-> ##### 图24  
-> "计时" 选项卡  
-> ![计时选项卡][ImageTiming]  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text=""计时" 选项卡" lightbox="../media/network-network-resources-timing.msft.png":::
+   图24： "**计时**" 选项卡  
+:::image-end:::  
 
 有关每个阶段的详细信息。  
 
 请参阅[查看计时细目](#view-the-timing-breakdown-of-a-request)以了解另一种访问此视图的方式。  
 
-#### 预览计时细目   
+#### 预览计时细目  
 
 若要查看请求的计时分解的预览，请将鼠标悬停在 "请求" 表的 "**瀑布**图" 列中请求的条目上。  
 
 请参阅[查看请求的计时细目](#view-the-timing-breakdown-of-a-request)以了解访问不需要悬停的数据的方式。  
 
-> ##### 图25  
-> 预览请求的计时细目  
-> ![预览请求的计时细目][ImageWaterfallHover]  
+:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> 预览请求的计时细目" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+   图25：预览请求的计时细目  
+:::image-end:::  
 
-#### 已解释的计时分解阶段   
+#### 已解释的计时分解阶段  
 
-有关 "计时" 选项卡中可能会显示的每个阶段的详细信息：  
+有关你可能会在 "**计时**" 选项卡中看到的每个阶段的详细信息。  
 
 *   **排队**。  浏览器在以下情况中对请求进行排队：  
     *   优先级较高的请求。  
@@ -473,59 +465,59 @@ To refresh the table, re-click the name of the WebSocket connection under the **
     *   浏览器在磁盘缓存中短暂分配空间。  
 *   **停止**。  由于 "**排队**" 中所述的任何原因，请求可能停止。  
 *   **DNS 查找**。  浏览器正在解析请求的 IP 地址。  
+*   **初始连接**。  浏览器正在建立连接，包括 TCP 握手、TCP 重试和协商 SSL。
 *   **代理协商**。  浏览器正使用[代理服务器][WikiProxyServer]协商请求。  
 *   **请求已发送**。  正在发送请求。  
 *   **ServiceWorker 准备**。  浏览器正在启动服务工作人员。  
 *   **对 ServiceWorker 的请求**。  请求将发送给服务工作人员。  
-*   **等待 \ （TTFB \）**。  浏览器正在等待响应的第一个字节。  
-  TTFB 代表第一个字节的时间。  此计时包括延迟的1次往返行程以及服务器准备响应的时间。  
+*   **等待 \ （TTFB \）**。  浏览器正在等待响应的第一个字节。  TTFB 代表第一个字节的时间。  此计时包括延迟的1次往返行程以及服务器准备响应的时间。  
 *   **内容下载**。  浏览器正在接收响应。  
 *   **接收推送**。  浏览器正在通过 HTTP/2 服务器推送接收此响应的数据。  
 *   **正在读取推送**。  浏览器正在读取以前收到的本地数据。  
 
-### 查看启动器和相关性   
+### 查看启动器和相关性  
 
 若要查看请求的发起程序和依赖关系，请 `Shift` 在请求表中保留并悬停请求。  DevTools 颜色：启动器显示为绿色，相关性显示为红色。  
 
-> ##### 图26  
-> 查看请求的发起人和相关性  
-> ![查看请求的发起人和依赖关系][ImageRequestInitiatorsDependencies]  
+:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="查看请求的发起人和相关性" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
+   图26：查看请求的启动器和相关性  
+:::image-end:::  
 
 当请求表按时间顺序排序时，悬停的第一个绿色请求上方是依赖项的发起程序。  如果在上面显示了另一个绿色请求，则该请求是发起方的发起方。  以此类推。  
 
-### 查看加载事件   
+### 查看加载事件  
 
 DevTools 显示 `DOMContentLoaded` `load` 网络面板上多个位置的和事件的计时。  `DOMContentLoaded`事件颜色为蓝色， `load` 事件为红色。  
 
-> ##### 图27  
-> " `DOMContentLoaded` `load` 网络" 面板上的 "和" 事件的位置  
-> ![网络面板上 DOMContentLoaded 和加载事件的位置][ImageNetworkPanelDOMContentLoadedLoadEvents]  
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="DOMContentLoaded 和加载事件在网络面板上的位置" lightbox="../media/network-network-requests-load-events.msft.png":::
+   图27： " `DOMContentLoaded` `load` 网络" 面板上的和事件的位置  
+:::image-end:::  
 
-### 查看请求总数   
+### 查看请求总数  
 
 请求总数将列在 "摘要" 窗格中的 "网络" 面板底部。  
 
 > [!CAUTION]
 > 此号码仅跟踪自 DevTools 打开以来已记录的请求。  如果在 DevTools 打开之前发生了其他请求，则不会对这些请求进行计数。  
 
-> ##### 图28  
-> 自 DevTools 打开以来的请求总数  
-> ![自 DevTools 打开以来的请求总数][ImageTotalRequests]  
+:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="自 DevTools 打开以来的请求总数" lightbox="../media/network-network-total-requests.msft.png":::
+   图28：自 DevTools 打开以来的请求总数  
+:::image-end:::  
 
-### 查看总下载大小   
+### 查看总下载大小  
 
 请求的总下载大小列在 "摘要" 窗格中的 "网络" 面板底部。  
 
 > [!CAUTION]
-> 此号码仅跟踪自 DevTools 打开以来已记录的请求。  如果在 DevTools 打开之前发生了其他请求，则不会对这些请求进行计数。  
+> 此号码仅跟踪自 DevTools 打开以来已记录的请求。  如果在 DevTools 打开之前发生了其他请求，则不会对以前的请求进行计数。  
 
-> ##### 图29  
-> 请求的总下载大小  
-> ![请求的总下载大小][ImageTotalSize]  
+:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="请求的总下载大小" lightbox="../media/network-network-total-download-size.msft.png":::
+   图29：请求的总下载大小  
+:::image-end:::  
 
 请参阅[查看资源的未压缩大小](#view-the-uncompressed-size-of-a-resource)，以查看浏览器 uncompresses 每个项目后的大资源。  
 
-### 查看导致请求的堆栈跟踪   
+### 查看导致请求的堆栈跟踪  
 
 在 JavaScript 语句请求资源后，将鼠标悬停在**发起程序**列上以查看该请求的最后一个堆栈跟踪。  
 
@@ -545,25 +537,25 @@ init();
 ```  
 -->  
 
-> ##### 图30  
-> 堆栈跟踪导致资源请求  
-> ![导致资源请求的堆栈跟踪][ImageInitiatorStack]  
+:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="堆栈跟踪导致资源请求" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+   图30：导致资源请求的堆栈跟踪  
+:::image-end:::  
 
-### 查看资源的未压缩大小   
+### 查看资源的未压缩大小  
 
 选中 "**使用大型请求行**" 复选框，然后查看 "**大小**" 列的底部值。  
 
-> ##### 图31  
-> 未压缩资源的示例 \ （ `jquery-3.3.1.min.js` 通过网络发送的文件的压缩大小是 `29.9 KB` ，未压缩的大小为 `84.9 KB` \）  
-> ![未压缩资源的示例][ImageUncompressedResources]  
+:::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="未压缩资源的示例" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
+   图31：解压缩的资源的示例 \ （ `jquery-3.3.1.min.js` 通过网络发送的文件的压缩大小是 `29.9 KB` ，未压缩的大小为 `84.9 KB` \）  
+:::image-end:::  
 
-## 导出请求数据   
+## 导出请求数据  
 
-### 将所有网络请求保存到 HAR 文件   
+### 将所有网络请求保存到 HAR 文件  
 
-要将所有网络请求保存到 HAR 文件，请执行以下操作：  
+若要将所有网络请求保存到 HAR 文件，请完成以下步骤。  
 
-1.  右键单击 "请求" 表中的任何请求。  
+1.  将鼠标悬停在 "请求" 表中的任何请求上，然后打开上下文菜单 \ （右键单击 \）。  
 1.  选择 "**另存为 HAR 和内容**"。  DevTools 将打开 DevTools 后出现的所有请求保存到 HAR 文件。  无法筛选请求，或仅保存单个请求。  
 
 保存 HAR 文件后，可将其导入 DevTools 进行分析。  只需将 HAR 文件拖放到 "请求" 表中。  
@@ -572,13 +564,13 @@ init();
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-> ##### 图32  
-> 选择 "另存为 HAR 和内容"  
-> ![选择 "另存为 HAR，含内容]"[ImageSaveAsHAR]  
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择 "另存为 HAR 和内容"" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+   图32：选择 "**另存为 HAR 和内容**"  
+:::image-end:::  
 
-### 将一个或多个请求复制到剪贴板   
+### 将一个或多个请求复制到剪贴板  
 
-在 "请求" 表的 "**名称**" 列下，右键单击请求，将鼠标悬停在 "**复制**" 上，然后选择下列选项之一：  
+在 "请求" 表的 "**名称**" 列下，将鼠标悬停在请求上，打开上下文菜单 \ （右键单击 \），将鼠标悬停在 "**复制**" 上，然后选择下列选项之一。  
 
 *   **复制链接地址**。  将请求的 URL 复制到剪贴板。  
 *   **复制响应**。  将响应正文复制到剪贴板。  
@@ -588,98 +580,53 @@ init();
 *   **全部复制为卷曲**。  将所有请求复制为一个卷曲命令链。  
 *   **全部复制为 HAR**。  将所有请求复制到 HAR 数据。  
 
-> ##### 图33  
-> 选择 "复制响应"  
-> ![选择复制答复][ImageCopyResponse]  
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="选择 "复制响应"" lightbox="../media/network-network-requests-copy-response.msft.png":::
+   图33：选择 "**复制响应**"  
+:::image-end:::  
 
 ## 更改网络面板的布局  
 
 你可以展开或折叠 "网络面板" UI 的各个部分以重点介绍重要信息。  
 
-### 隐藏 "筛选器" 窗格   
+### 隐藏 "筛选器" 窗格  
 
 默认情况下，DevTools 显示 "**筛选器" 窗格**。  
 选择 "**筛选** ![ 筛选" ][ImageFilterIcon] 以将其隐藏。  
 
-> ##### 图34  
-> "隐藏筛选器" 按钮  
-> !["隐藏筛选器" 按钮][ImageHideFiltersButton]  
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text=""隐藏筛选器" 按钮" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+   图34： "隐藏筛选器" 按钮  
+:::image-end:::  
 
-### 使用大型请求行   
+### 使用大型请求行  
 
 如果需要在网络请求表中有更多的空格，请使用较大的行。  在使用较大的行时，某些列还提供了一些更多的信息。  例如， **Size**列的底部值是请求的未压缩大小。  
 
-> ##### 图35  
-> 请求窗格中的大型请求行的示例  
-> ![请求窗格中的大型请求行的示例][ImageLargeRequestRows]  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="请求窗格中的大型请求行的示例" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   图35： "**请求**" 窗格中的大型请求行的示例  
+:::image-end:::  
 
 选中 "**使用大请求行**" 复选框以启用大行。  
 
-> ##### 图36  
-> "大型请求行" 复选框  
-> !["大请求行" 复选框][ImageLargeRequestRowsCheckbox]  
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text=""使用大请求行" 复选框" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+   图36： "**使用大型请求行**" 复选框  
+:::image-end:::  
 
-### 隐藏 "概述" 窗格   
+### 隐藏 "概述" 窗格  
 
-默认情况下，DevTools 显示 "**概述" 窗格**。  
-取消选中 "**显示概述**" 复选框以将其隐藏。  
+默认情况下，DevTools 显示 "**概述" 窗格**。  取消选中 "**显示概述**" 复选框以将其隐藏。  
 
-> ##### 图37  
-> "显示概述" 复选框  
-> ![显示概述复选框][ImageHideOverviewCheckbox]  
-
-<!-->   -->  
-
-  
+:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text=""显示概述" 复选框" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+   图37： "**显示概述**" 复选框  
+:::image-end:::  
 
 <!-- image links -->  
 
-[ImageCaptureScreenshotsIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-screenshots-icon.msft.png  
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-requests-icon.msft.png  
-[ImageFilterIcon]: /microsoft-edge/devtools-guide-chromium/media/filter-icon.msft.png  
-[ImageHideIcon]: /microsoft-edge/devtools-guide-chromium/media/hide-overview-icon.msft.png  
-[ImageLargeResourceRowsIcon]: /microsoft-edge/devtools-guide-chromium/media/large-resource-rows-button-icon.msft.png  
-[ImageRecordOnIcon]: /microsoft-edge/devtools-guide-chromium/media/record-on-icon.msft.png  
-
-[ImageNetworkPanel]: /microsoft-edge/devtools-guide-chromium/media/network-network-panel.msft.png "图1：网络面板"  
-[ImageClearButton]: /microsoft-edge/devtools-guide-chromium/media/network-network-clear-button.msft.png "图2： "清除" 按钮"  
-[ImagePreserveLogCheckBox]: /microsoft-edge/devtools-guide-chromium/media/network-network-preserve-log.msft.png "图3： "保留日志" 复选框"  
-[ImageScreenshotHover]: /microsoft-edge/devtools-guide-chromium/media/network-network-screenshot-hover.msft.png "图4：将鼠标悬停在屏幕截图上"  
-<!--[ImageReplayXHR]: /microsoft-edge/devtools-guide-chromium/media/network-replay-xhr.msft.png "Old Figure 5: Selecting Replay XHR"  -->  
-[ImageDisableCacheCheckBox]：/microsoft-edge/devtools-guide-chromium/media/network-network-disable-cache-checkbox.msft.png "图5：" 禁用缓存 "复选框  
-[ImageClearBrowserCache]：/microsoft-edge/devtools-guide-chromium/media/network-network-clear-browser-cache.msft.png "图6：选择" 清除浏览器缓存 "  
-[ImageOfflineDropdown]：/microsoft-edge/devtools-guide-chromium/media/network-network-offline-dropdown.msft.png "图7：脱机下拉菜单"  
-[ImageNetworkThrottlingMenu]：/microsoft-edge/devtools-guide-chromium/media/network-network-throttling-menu.msft.png "图8：网络限制" 菜单 "  
-[ImageClearBrowserCookies]：/microsoft-edge/devtools-guide-chromium/media/network-network-clear-browser-cookies.msft.png "图9：选择" 清除浏览器 Cookie "  
-[ImageFilterTextBox]：/microsoft-edge/devtools-guide-chromium/media/network-network-filters-textbox.msft.png "图10：筛选文本框"  
-[ImageMultiTypeFilter]：/microsoft-edge/devtools-guide-chromium/media/network-network-type-filters.msft.png "图11：使用类型筛选器显示 JS、CSS 和文档资源"  
-[ImageOverviewFilter]：/microsoft-edge/devtools-guide-chromium/media/network-network-overview-filter.msft.png "图12：筛选出300ms 周围处于非活动状态的所有请求"  
-[ImageHideDataURLsCheckBox]：/microsoft-edge/devtools-guide-chromium/media/network-network-hide-data-urls.msft.png "图13：隐藏数据 Url" 复选框  
-[ImageWaterfallTotalDuration]：/microsoft-edge/devtools-guide-chromium/media/network-network-waterfall-total-duration.msft.png "图14：按总工期对瀑布图进行排序"  
-[ImageRequestsTable]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-table.msft.png "图15：请求表"  
-[ImageRequestsTableAddColumn]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-add-column.msft.png "图16：将列添加到请求表"  
-[ImageRequestsTableCustomColumn]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-add-custom.msft.png "图17：将自定义列添加到请求表"  
-[ImageRequestsTableWaterfallColumn]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-waterfall.msft.png "图18：请求窗格的瀑布栏"  
-[ImagePreview]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-preview.msft.png "图19： ' 预览 ' 选项卡"  
-<!--[ImageFrames]: /microsoft-edge/devtools-guide-chromium/media/network-frames.msft.png "Old Figure 20: The Frames tab"  -->  
-[ImageResponse]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-response.msft.png "图20：响应" 选项卡 "  
-[ImageHeaders]：/microsoft-edge/devtools-guide-chromium/media/network-resources-headers.msft.png "图21：标题" 选项卡 "  
-[ImageQueryStringParameters]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-headers-query-string-parameters.msft.png "图22：查询字符串参数" 部分 "  
-[ImageCookies]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-cookies.msft.png "图23：" Cookie "选项卡"  
-[ImageTiming]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-timing.msft.png "图24：计时" 选项卡 "  
-[ImageWaterfallHover]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-waterfall-hover.msft.png "图25：预览请求的计时细目"  
-[ImageRequestInitiatorsDependencies]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-initiators-dependencies.msft.png "图26：查看请求的发起人和相关性"  
-[ImageNetworkPanelDOMContentLoadedLoadEvents]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-load-events.msft.png "图27： DOMContentLoaded 的位置和" 网络 "面板上的加载事件"  
-[ImageTotalRequests]：/microsoft-edge/devtools-guide-chromium/media/network-network-total-requests.msft.png "图28：打开 DevTools 以来的请求总数"  
-[ImageTotalSize]：/microsoft-edge/devtools-guide-chromium/media/network-network-total-download-size.msft.png "图29：请求的总下载大小"  
-[ImageInitiatorStack]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-initiator-stack.msft.png "图30：导致资源请求的堆栈跟踪"  
-[ImageUncompressedResources]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-uncompressed-compare.msft.png "图31：未压缩资源的示例"  
-[ImageSaveAsHAR]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-save-har-content.msft.png "图32：选择" 另存为 HAR，含内容 "  
-[ImageCopyResponse]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-copy-response.msft.png "图33：选择复制响应"  
-[ImageHideFiltersButton]：/microsoft-edge/devtools-guide-chromium/media/network-network-resources-hide-filters-button.msft.png "图34：" 隐藏筛选器 "按钮  
-[ImageLargeRequestRows]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-large-request-rows.msft.png "图35：请求窗格中的大型请求行的示例"  
-[ImageLargeRequestRowsCheckbox]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-use-large-request-rows-on.msft.png "图36：大型请求行" 复选框 "  
-[ImageHideOverviewCheckbox]：/microsoft-edge/devtools-guide-chromium/media/network-network-requests-show-overview-off.msft.png "图37：隐藏概述复选框"  
+[ImageCaptureScreenshotsIcon]: ../media/capture-screenshots-icon.msft.png  
+[ImageClearIcon]: ../media/clear-requests-icon.msft.png  
+[ImageFilterIcon]: ../media/filter-icon.msft.png  
+[ImageHideIcon]: ../media/hide-overview-icon.msft.png  
+[ImageLargeResourceRowsIcon]: ../media/large-resource-rows-button-icon.msft.png  
+[ImageRecordOnIcon]: ../media/record-on-icon.msft.png  
 
 <!-- links -->  
 

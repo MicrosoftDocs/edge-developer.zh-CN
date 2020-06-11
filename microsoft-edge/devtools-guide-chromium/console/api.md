@@ -2,16 +2,16 @@
 title: 控制台 API 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: e54bae7c7c61584ccd39568f1bb54312cc2082c0
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 19545759ede4252f2e7ba21329d482f4eb96f0c6
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601752"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708462"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,11 @@ ms.locfileid: "10601752"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# 控制台 API 参考  
 
+使用控制台 API 方法将消息从 JavaScript 写入控制台。  有关主题的交互式介绍，请参阅将[消息记录到控制台的入门][DevtoolsConsoleLog]。  对于 `debug()` `monitorEvents()` 仅在 "**控制台**" 窗格中可用的便利方法，请参阅[控制台实用工具 API 参考][DevtoolConsoleUtilities]。  
 
-
-
-# 控制台 API 参考   
-
-  
-
-使用控制台 API 方法将消息从 JavaScript 写入控制台。  有关主题的交互式介绍，请参阅将[消息记录到控制台的入门][DevtoolsConsoleLog]。  如果你要查找的便利方法（如或仅在控制台上可用），请参阅[控制台实用工具 API 参考] [DevtoolConsoleUtilities] `debug()` `monitorEvents()` 。  
+---  
 
 ## 声明  
 
@@ -56,9 +52,11 @@ const reason = 'x is expected to be less than y';
 console.assert(x < y, {x, y, reason});
 ```  
 
-> ##### 图 1  
-> 示例的结果 `console.assert()`  
-> ![Console 的结果（）示例][ImageAssert]  
+:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="Console 的结果（）示例" lightbox="../media/console-demo-assert-button.msft.png":::
+   图1：示例的结果 `console.assert()`  
+:::image-end:::  
+
+---  
 
 ## 消除  
 
@@ -74,7 +72,11 @@ console.clear();
 
 如果 "[保留日志][DevtoolsConsoleReferenceLevel]" 已启用， [clear](#clear)方法将被禁用。  
 
-另请参阅：[清除控制台][DevtoolsConsoleReferenceClear]  
+### 另请参阅  
+
+*   [清除控制台][DevtoolsConsoleReferenceClear]  
+
+---  
 
 ## 盘点  
 
@@ -93,9 +95,11 @@ console.count();
 console.count();
 ```  
 
-> ##### 图 2  
-> 示例的结果 `console.count()`  
-> ![Console 的结果（）示例][ImageCount]  
+:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="Console 的结果（）示例" lightbox="../media/console-demo-count-button.msft.png":::
+   图2：示例的结果 `console.count()`  
+:::image-end:::  
+
+---  
 
 ## countReset  
 
@@ -110,23 +114,27 @@ console.countReset();
 console.countReset('coffee');
 ```  
 
+---  
+
 ## 调试  
 
 ```javascript
 console.debug(object [, object, ...])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[日志级别][DevtoolsConsoleReferencePersist]： `Verbose`
 
-与[log](#log)方法相同。  
+除了不同日志级别的[日志](#log)一样。  
 
 ```javascript
 console.debug('debug');  
 ```  
 
-> ##### 图 3  
-> 示例的结果 `console.debug()`  
-> ![Console 的结果（）示例][ImageDebug]  
+:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="Console 的结果（）示例" lightbox="../media/console-demo-debug-button.msft.png":::
+   图3：示例的结果 `console.debug()`  
+:::image-end:::  
+
+---  
 
 ## dir  
 
@@ -142,9 +150,11 @@ console.dir(object)
 console.dir(document.head);
 ```  
 
-> ##### 图 4  
-> 示例的结果 `console.dir()`  
-> ![Console （）示例的结果][ImageDir]  
+:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="Console （）示例的结果" lightbox="../media/console-demo-dir-button.msft.png":::
+   图4：示例的结果 `console.dir()`  
+:::image-end:::  
+
+---  
 
 ## dirxml  
 
@@ -160,9 +170,11 @@ console.dirxml(node)
 console.dirxml(document);
 ```  
 
-> ##### 图 5  
-> 示例的结果 `console.dirxml()`  
-> ![Dirxml （）示例的结果][ImageDirXml]  
+:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="Dirxml （）示例的结果" lightbox="../media/console-demo-dirxml-button.msft.png":::
+   图5：示例的结果 `console.dirxml()`  
+:::image-end:::  
+
+---  
 
 ## 错误  
 
@@ -178,9 +190,11 @@ console.error(object [, object, ...])
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```  
 
-> ##### 图 6  
-> 示例的结果 `console.error()`  
-> ![控制台的结果。错误（）示例][ImageError]  
+:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="控制台的结果。错误（）示例" lightbox="../media/console-demo-error-button.msft.png":::
+   图6：示例的结果 `console.error()`  
+:::image-end:::  
+
+---  
 
 ## 组  
 
@@ -200,9 +214,11 @@ console.info('Raph');
 console.groupEnd(label);
 ```  
 
-> ##### 图 7  
-> 示例的结果 `console.group()`  
-> ![Console 的结果。 group （）示例][ImageGroup]  
+:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="Console 的结果。 group （）示例" lightbox="../media/console-demo-group-button.msft.png":::
+   图7：示例的结果 `console.group()`  
+:::image-end:::  
+
+---  
 
 ## groupCollapsed  
 
@@ -212,6 +228,8 @@ console.groupCollapsed(label)
 
 除了在将组记录到控制台时，组初始折叠外，还与[log](#log)方法相同。  
 
+---  
+
 ## groupEnd  
 
 ```javascript
@@ -219,6 +237,8 @@ console.groupEnd(label)
 ```  
 
 停止直观地对邮件进行分组。  请参阅[群组](#group)方法。  
+
+---  
 
 ## “信息”  
 
@@ -234,9 +254,11 @@ console.info(object [, object, ...])
 console.info('info');
 ```  
 
-> ##### 图 8  
-> 示例的结果 `console.info()`  
-> ![Console.info （）示例的结果][ImageInfo]  
+:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="Console.info （）示例的结果" lightbox="../media/console-demo-info-button.msft.png":::
+   图8：示例的结果 `console.info()`  
+:::image-end:::  
+
+---  
 
 ## 日志  
 
@@ -252,9 +274,11 @@ console.log(object [, object, ...])
 console.log('log');
 ```  
 
-> ##### 图 9  
-> 示例的结果 `console.log()`  
-> ![Console 的结果（）示例][ImageLog]  
+:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="Console 的结果（）示例" lightbox="../media/console-demo-log-button.msft.png":::
+   图9：示例的结果 `console.log()`  
+:::image-end:::  
+
+---  
 
 ## 表  
 
@@ -284,9 +308,11 @@ console.table([
 ]);
 ```  
 
-> ##### 图 10  
-> 示例的结果 `console.table()`  
-> ![Console 的结果（）示例][ImageTable]  
+:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="Console 的结果（）示例" lightbox="../media/console-demo-table-button.msft.png":::
+   图10：示例的结果 `console.table()`  
+:::image-end:::  
+
+---  
 
 ## time  
 
@@ -304,9 +330,11 @@ for (var i = 0; i < 100000; i++) {
 console.timeEnd();
 ```  
 
-> ##### 图 11  
-> 示例的结果 `console.time()`  
-> ![Console 的结果。 time （）示例][ImageTime]  
+:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="Console 的结果。 time （）示例" lightbox="../media/console-demo-time-button.msft.png":::
+   图11：示例的结果 `console.time()`  
+:::image-end:::  
+
+---  
 
 ## timeEnd  
 
@@ -317,6 +345,8 @@ console.timeEnd([label])
 [日志级别][DevtoolsConsoleReferencePersist]： `Info`  
 
 停止计时器。  请参阅[time](#time)方法。  
+
+---  
 
 ## 轨迹  
 
@@ -336,9 +366,11 @@ const fourth = () => { console.trace(); };
 first();
 ```  
 
-> ##### 图 12  
-> 示例的结果 `console.trace()`  
-> ![Console 的结果（）示例][ImageTrace]  
+:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="Console 的结果（）示例" lightbox="../media/console-demo-trace-button.msft.png":::
+   图12：示例的结果 `console.trace()`  
+:::image-end:::  
+
+---  
 
 ## 出  
 
@@ -354,29 +386,9 @@ console.warn(object [, object, ...])
 console.warn('warn');
 ```  
 
-> ##### 图 13  
-> 示例的结果 `console.warn()`  
-> ![控制台的结果。警告（）示例][ImageWarn]  
-
-   
-
-  
-
-<!-- image links -->  
-
-[ImageAssert]: /microsoft-edge/devtools-guide-chromium/media/console-demo-assert-button.msft.png "图1： console 的结果（）示例"  
-[ImageCount]: /microsoft-edge/devtools-guide-chromium/media/console-demo-count-button.msft.png "图2： console 的结果（）示例"  
-[ImageDebug]: /microsoft-edge/devtools-guide-chromium/media/console-demo-debug-button.msft.png "图3： console 的结果（）示例"  
-[ImageDir]: /microsoft-edge/devtools-guide-chromium/media/console-demo-dir-button.msft.png "图4： dir （）示例的结果"  
-[ImageDirXml]: /microsoft-edge/devtools-guide-chromium/media/console-demo-dirxml-button.msft.png "图5： dirxml （）示例的结果"  
-[ImageError]: /microsoft-edge/devtools-guide-chromium/media/console-demo-error-button.msft.png "图6：控制台的结果。错误（）示例"  
-[ImageGroup]: /microsoft-edge/devtools-guide-chromium/media/console-demo-group-button.msft.png "图7： console 的结果。 group （）示例"  
-[ImageInfo]: /microsoft-edge/devtools-guide-chromium/media/console-demo-info-button.msft.png "图8： console.info （）示例的结果"  
-[ImageLog]: /microsoft-edge/devtools-guide-chromium/media/console-demo-log-button.msft.png "图9： console 的结果（）示例"  
-[ImageTable]: /microsoft-edge/devtools-guide-chromium/media/console-demo-table-button.msft.png "图10： console 的结果（）示例"  
-[ImageTime]: /microsoft-edge/devtools-guide-chromium/media/console-demo-time-button.msft.png "图11：控制台的结果。 time （）示例"  
-[ImageTrace]: /microsoft-edge/devtools-guide-chromium/media/console-demo-trace-button.msft.png "图12： console 的结果（）示例"  
-[ImageWarn]: /microsoft-edge/devtools-guide-chromium/media/console-demo-warn-button.msft.png "图13：控制台的结果。警告（）示例"  
+:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="控制台的结果。警告（）示例" lightbox="../media/console-demo-warn-button.msft.png":::
+   图13：示例的结果 `console.warn()`  
+:::image-end:::  
 
 <!-- links -->  
 
