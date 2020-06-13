@@ -2,16 +2,16 @@
 title: 查看、编辑和删除 Microsoft Edge DevTools 中的 Cookie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 4bfd99a36a6a3f8fdf8dbd7787bd54cde87d79da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708921"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710369"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ ms.locfileid: "10708921"
 *   **HTTP**。  如果为 true，则此字段指示应仅通过 HTTP 使用该 cookie，并且不允许 JavaScript 修改。  请参阅[HttpOnly cookie][MDNHTTPCookiesSecure]。  
 *   **安全**。  如果为 true，则此字段指示该 cookie 必须仅通过安全的 HTTPS 连接发送到服务器。  请参阅[安全 cookie][MDNHTTPCookiesSecure]。  
 *   **SameSite**。  包含 `strict` 或 `lax` 如果 cookie 使用实验性的[Samesite][MDNHTTPCookiesSamesite]属性。  
-*   **优先级**。  包含 `low` 、 `medium` \ （默认 \），或者 `high` cookie 使用的是 "折旧[cookie 优先级][ChromiumIssue232693]" 属性。
+*   **优先级**。  包含 `low` 、 `medium` \ （默认 \），或者 `high` cookie 使用的是已否决的[cookie 优先级][ChromiumIssue232693]属性。
 
 ## 筛选 cookie  
 

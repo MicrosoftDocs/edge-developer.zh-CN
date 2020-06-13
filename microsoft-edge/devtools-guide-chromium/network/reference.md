@@ -2,16 +2,16 @@
 title: 网络分析参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 7e7ac287e116e28773a42456c21ec4ba07647f04
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709181"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710397"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,7 +73,7 @@ ms.locfileid: "10709181"
 
 若要启用屏幕截图，请选择 "**网络设置**"，然后选择**网络**面板上的 "**捕获屏幕截图**" 复选框  
 
-在 "**网络**" 面板处于焦点时重新加载页面以捕获屏幕截图。  
+在 "**网络**" 面板处于焦点时刷新页面以捕获屏幕截图。  
 
 捕获屏幕截图后，可通过以下方式与之交互。  
 
@@ -470,7 +470,8 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 *   **请求已发送**。  正在发送请求。  
 *   **ServiceWorker 准备**。  浏览器正在启动服务工作人员。  
 *   **对 ServiceWorker 的请求**。  请求将发送给服务工作人员。  
-*   **等待 \ （TTFB \）**。  浏览器正在等待响应的第一个字节。  TTFB 代表第一个字节的时间。  此计时包括延迟的1次往返行程以及服务器准备响应的时间。  
+*   **等待 \ （TTFB \）**。  浏览器正在等待响应的第一个字节。  
+  TTFB 代表第一个字节的时间。  此计时包括延迟的1次往返行程以及服务器准备响应的时间。  
 *   **内容下载**。  浏览器正在接收响应。  
 *   **接收推送**。  浏览器正在通过 HTTP/2 服务器推送接收此响应的数据。  
 *   **正在读取推送**。  浏览器正在读取以前收到的本地数据。  

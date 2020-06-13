@@ -2,16 +2,16 @@
 title: 查看和更改 CSS 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 1780e80259d3ed28f6735e11099ad5796c381a95
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: 346145a7deb9e8ac951ed0578a5060da72817463
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708559"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710383"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ ms.locfileid: "10708559"
     [CSS 示例][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > 如果要将[DevTools 窗口停靠][DevToolsCustomizePlacement]在视区的右侧 \ （如下图所示 \），请选择 "**自定义和控制 DevTools** " `...` 。  在 "**自定义和控制 DevTools** " 下拉菜单的 "**停靠侧**" 部分中，选择 "**停靠到右侧**"。  
+    > 如果要将[DevTools 窗口停靠][DevToolsCustomizePlacement]在视区的右侧 \ （如下图所示），请选择 "**自定义和控制 DevTools** " `...` 。  在 "**自定义和控制 DevTools** " 下拉菜单的 "**停靠侧**" 部分中，选择 "**停靠到右侧**"。  
     
 ## 查看元素的 CSS  
 

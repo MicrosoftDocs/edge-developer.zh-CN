@@ -2,16 +2,16 @@
 title: DevTools 中的新增功能（Microsoft Edge 83）
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 7651430c581346d1f140f0a5974b8aa9bb809204
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708986"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710376"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -157,7 +157,7 @@ Chromium 问题[#1003700][crbug1003700]
 *   [`Accept-Language`][MDNAcceptLanguage]HTTP 请求标头  
 
 > [!NOTE]
-> 对 `navigator.language` 和 `navigator.languages` 的更新立即可见，但仅在下一个导航或页面重新加载后出现。  对 `Accept-Language` HTTP 标头的更改仅反映后续请求。  
+> 对 `navigator.language` 和 `navigator.languages` 的更新立即可见，但仅在下一个导航或页面刷新后才可见。  对 `Accept-Language` HTTP 标头的更改仅反映后续请求。  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="模拟区域设置" lightbox="../../media/2020/03/locale.msft.png":::
    图10：模拟区域设置  
