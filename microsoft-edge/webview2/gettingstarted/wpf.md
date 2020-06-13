@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 30736106906abe818ccec32e2935798d12ced0be
-ms.sourcegitcommit: 4f8613ed7a33e3cbf822b6315d427af14774cd68
+ms.openlocfilehash: fad5e7ce7be58ea9992dffee75da0d59aed471e7
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709892"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710390"
 ---
 # <span data-ttu-id="25ab6-104">WPF 中的 WebView2 入门（预览版）</span><span class="sxs-lookup"><span data-stu-id="25ab6-104">Getting started with WebView2 in WPF (Preview)</span></span>  
 
@@ -103,7 +103,7 @@ ms.locfileid: "10709892"
             Title="MainWindow"
             Height="450"
             Width="800"
-    />
+    >
         <Grid>
         
         </Grid>
