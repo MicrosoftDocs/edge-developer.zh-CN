@@ -3,170 +3,177 @@ description: 公开操作是否已成功完成或失败
 title: MSWebViewAsyncOperation 对象
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: web 视图、windows 10 应用、uwp、edge
-ms.openlocfilehash: ebb89c0fc645ebcd97357af10af2be650d8218b9
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d6e03af2a0205938f19120076aa0ad622539d7e5
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563036"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752120"
 ---
-# MSWebViewAsyncOperation 对象
+# MSWebViewAsyncOperation 对象  
 
-公开操作是否已成功完成或失败。 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## 事件
+公开操作是否已成功完成或失败。  
 
-### 完成
+## 事件  
 
-指示操作已完成。 
+### 完成  
 
-```js
+指示操作已完成。  
+
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("complete", handler);
 MSWebViewAsyncOperation.removeEventListener("complete", handler);
-```
+```  
 
-#### 事件信息
+#### 事件信息  
 
-|            |      |
-|------------|------|
-|**接口** | **事件**
-|**同步** |是 |    
-|**气泡**     |否 |   
-|**可取消**  |否 |        
+|  |  |  
+|:--- |:--- |  
+| **接口** | **事件** |  
+| **同步** |是 |  
+| **气泡** |否 |   
+| **可取消** |否 |  
 
+### 错误  
 
-### 错误
+指示操作出现错误。  
 
-指示操作出现错误。
-
-```js
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("error", handler);
 MSWebViewAsyncOperation.removeEventListener("error", handler);
-```
+```  
 
-#### 事件信息
+#### 事件信息  
 
-|            |      |
-|------------|------|
-|**接口** | **事件**
-|**同步** |是 |    
-|**气泡**     |否 |   
-|**可取消**  |否 |            
+|  |  |  
+|:--- |:--- |  
+| **接口** | **事件** |  
+| **同步** | 是 |  
+| **气泡** | 否 |  
+| **可取消** | 否 |  
 
+## 方法  
 
-## 方法
+### start  
 
-### start
+调用以启动异步任务。  
 
-调用以启动异步任务。 
-
-```js
+```javascript
 MSWebViewAsyncOperation.start();
-```
+```  
 
-### 参数
+### 参数  
 
-此方法没有参数。
+此方法没有参数。  
 
-### 返回值
+### 返回值  
 
-此方法不返回值。
+此方法不返回值。  
 
-## 属性
+## 属性  
 
-### 错误
+### 错误  
 
-出现的错误。
+出现的错误。  
 
-此属性为只读。
+此属性为只读。  
 
-```js
+```javascript
 var error = MSWebViewAsyncOperation.error;
-```
+```  
 
-#### 属性值
-类型： **DOMError**
+#### 属性值  
 
-### oncomplete
+类型： **DOMError**  
 
-**完整**的事件处理程序。 
+### oncomplete  
 
-```js
+**完整**的事件处理程序。  
+
+```javascript
 var oncomplete = MSWebViewAsyncOperation.oncomplete;
-```
+```  
 
-#### 属性值
-类型： **EventHandler**
+#### 属性值  
 
-### onerror
+类型： **EventHandler**  
 
-**错误**事件处理程序。 
+### onerror  
 
-```js
+**错误**事件处理程序。  
+
+```javascript
 var onerror = MSWebViewAsyncOperation.onerror;
-```
+```  
 
-#### 属性值
-类型： **EventHandler**
+#### 属性值  
 
-### readyState
+类型： **EventHandler**  
 
-描述对象的准备状态。
+### readyState  
 
-此属性为只读。
+描述对象的准备状态。  
 
-```js
+此属性为只读。  
+
+```javascript
 var readyState = MSWebViewAsyncOperation.readyState;
-```
+```  
 
-#### 属性值
-类型：**无符号的短**
+#### 属性值  
 
-### 结果
+类型：**无符号的短**  
 
-操作的结果。
+### 结果  
 
-此属性为只读。
+操作的结果。  
 
-```js
+此属性为只读。  
+
+```javascript
 var result = MSWebViewAsyncOperation.result;
-```
+```  
 
-#### 属性值
-类型：任何
+#### 属性值  
 
-### target
+类型：任何  
 
-操作的目标。 
+### target  
 
-此属性为只读。
+操作的目标。  
 
-```js
+此属性为只读。  
+
+```javascript
 var target = MSWebViewAsyncOperation.target;
-```
+```  
 
-#### 属性值
-类型： [ **MSHTMLWebViewElement**](../webview.md)
+#### 属性值  
 
-### 类型
+类型： [ **MSHTMLWebViewElement**](../webview.md)  
 
-操作的类型。
+### 类型  
 
-此属性为只读。
+操作的类型。  
 
-```js
+此属性为只读。  
+
+```javascript
 var type = MSWebViewAsyncOperation.type;
-```
+```  
 
-#### 属性值
-类型：**无符号的短**
+#### 属性值  
+
+类型：**无符号的短**  

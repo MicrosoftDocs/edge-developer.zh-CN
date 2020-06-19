@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 适用于 Win32 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 1824c0f626f77e1fb566a361eac6f0358e6a754c
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: c69e9cb725bc96115d323770e3803599eee1de91
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698513"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751945"
 ---
 # interface ICoreWebView2 
 
@@ -101,7 +101,7 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 
 导航事件的常规序列为 NavigationStarting、SourceChanged、ContentLoading 和 NavigationCompleted。 以下事件描述了每个导航期间 Web 视图的状态： NavigationStarting： Web 视图正在开始导航，导航将导致网络请求。 主机此时可以禁用请求。 SourceChanged： Web 视图的源更改为新的 URL。 这也可能是由于不会导致网络请求（如片段导航）的导航导致的。 HistoryChanged：由于导航的结果，Web 视图的历史记录已更新。 ContentLoading： Web 视图已开始加载新内容。 NavigationCompleted： Web 视图已完成加载新页面上的内容。 开发人员可以按导航 ID 跟踪每个新文档的导航。 每次成功导航到新文档时，Web 视图的导航 ID 都会更改。
 
-![dot-inline-dotgraph-1](media/dot-inline-dotgraph-1.png)
+![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
 
 请注意，这适用于具有相同的 NavigationId 事件参数的导航事件。 具有不同 NavigationId 事件参数的导航事件可能会重叠。 例如，如果你为其 NavigationStarting 事件启动导航等待，然后开始另一个导航，你将看到第一个导航的 NavigationStarting，后跟第二个导航的 NavigationStarting，然后是第一个导航的 NavigationCompleted 以及第二个导航的所有其余导航事件。 在错误情况下，可能会有也可能不是 ContentLoading 事件，具体取决于导航是否转到错误页面。 在 HTTP 重定向时，一行中将有多个 NavigationStarting 事件，并且第一个事件将设置其 IsRedirect 标志，但导航 ID 保持不变。 相同的文档导航不会导致 NavigationStarting 事件，也不会增加导航 ID。
 
@@ -111,11 +111,11 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 
 WebView2 使用与 Edge web 浏览器相同的进程模型。 用户会话中每个指定的用户数据目录都有一个 Edge 浏览器进程，该进程将为指定用户数据目录的任何 WebView2 调用进程提供服务。 这意味着一个 Edge 浏览器进程可能正在为多个呼叫流程提供服务，并且一个呼叫进程可能正在使用多个 Edge 浏览器进程。
 
-![dot-inline-dotgraph-2](media/dot-inline-dotgraph-2.png)
+![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
 
 浏览器进程关闭时，将出现一些数量的呈现器进程。 根据需要创建这些类，以在不同的 WebViews 中服务潜在的多个帧。 呈现器进程的数量因网站隔离浏览器功能和呈现在关联的 WebViews 中的独特断开的来源的数量而异。
 
-![dot-inline-dotgraph-3](media/dot-inline-dotgraph-3.png)
+![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
 
 你可以使用 ProcessFailure 事件对这些浏览器和呈现器进程中的崩溃和挂起做出反应。
 
@@ -127,7 +127,7 @@ WebView2 必须在 UI 线程上创建。 专门使用消息泵的线程。 所�
 
 回调包括事件处理程序和完成处理程序按顺序执行。 也就是说，如果你有一个事件处理程序正在运行并开始消息循环，则没有其他事件处理程序或完成回调将开始执行 reentrantly。
 
-## 安全性
+## 安全
 
 在使用 ExecuteScript、PostWebMessageAsJson、PostWebMessageAsString 或任何其他方法将信息发送到 Web 视图之前，请始终检查 Web 视图的 Source 属性。 在导致导航的页面中，Web 视图可能会通过与页面或脚本交互的最终用户导航到另一个页面。 同样，请小心处理 AddScriptToExecuteOnDocumentCreated。 所有将来的导航都将运行此脚本，如果它提供对仅适用于特定来源的信息的访问权限，则任何 HTML 文档都可能具有访问权限。
 
@@ -974,7 +974,7 @@ let result = await app_object.method1(parameters);
 
 > 公共 HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)（LPCWSTR JavaScript， [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md) * 处理程序）
 
-插入的脚本将应用于所有未来的顶级文档和子框架导航，直到使用 RemoveScriptToExecuteOnDocumentCreated 删除。 这是异步应用的，你必须等待完成处理程序运行，然后才能确保脚本已准备好在将来的导航上执行。
+此方法会插入一个在所有顶级文档和子框架页面导航上运行的脚本。 此方法异步运行，并且你必须等待完成处理程序完成，然后才可以运行插入的脚本。 此方法完成后，将 `Invoke` 通过 `id` 插入的脚本调用处理程序的方法。 `id` 是字符串。 若要删除插入的脚本，请使用 `RemoveScriptToExecuteOnDocumentCreated` 。
 
 请注意，如果 HTML 文档通过[沙盒](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)属性或[内容安全策略 HTTP 标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)进行了某种类型的沙盒，则会影响在此处运行脚本。 例如，如果未设置 "allow-modals" 关键字，则将忽略对该函数的调用 `alert` 。
 
@@ -1514,7 +1514,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 #### RemoveScriptToExecuteOnDocumentCreated 
 
-删除通过 AddScriptToExecuteOnDocumentCreated 添加的相应 JavaScript。
+删除使用指定脚本 id 添加的相应 JavaScript `AddScriptToExecuteOnDocumentCreated` 。
 
 > 公共 HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)（LPCWSTR id）
 
@@ -1682,4 +1682,3 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | 已签名的 HTTP
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Ping 请求。
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | CSP 冲突报告。
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | 其他资源。
-

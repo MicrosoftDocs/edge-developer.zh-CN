@@ -3,58 +3,63 @@ description: 包含有关已完成的 web 视图导航的信息
 title: NavigationCompletedEvent 对象
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/26/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: web 视图、windows 10 应用、uwp、edge
-ms.openlocfilehash: 11974f0c66d48569ee63c592bdd3b0153db075b1
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5727ab59dbaf056f05ab4b19450c70f85d595f
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563032"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752135"
 ---
-# NavigationCompletedEvent 对象
+# NavigationCompletedEvent 对象  
 
-一个对象，表示当[web 视图](../webview.md)已完成加载当前内容或导航失败时引发的事件。
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## 属性
-    
-### uri
+一个对象，表示当[web 视图](../webview.md)已完成加载当前内容或导航失败时引发的事件。  
 
-导航的统一资源标识符（URI）。
+## 属性  
 
-此属性为只读。
+### uri  
 
-```js
+导航的统一资源标识符（URI）。  
+
+此属性为只读。  
+
+```javascript
 var uri = NavigationCompletedEvent.uri;
-```
+```  
 
-#### 属性值
-类型： **DOMString**
+#### 属性值  
 
-### isSuccess
+类型： **DOMString**  
 
-获取一个值，该值指示导航是否已成功完成。
+### isSuccess  
 
-此属性是只读的
+获取一个值，该值指示导航是否已成功完成。  
 
-```js
+此属性为只读。  
+
+```javascript
 var isSuccess = NavigationCompletedEvent.isSuccess;
-```
+```  
 
-#### 属性值
-类型： **Boolean**
+#### 属性值  
 
-### webErrorStatus
+类型： **Boolean**  
 
-如果导航失败，获取指示原因的值。
+### webErrorStatus  
 
-此属性是只读的
+如果导航失败，获取指示原因的值。  
 
-```js
+此属性为只读。  
+
+```javascript
 var webErrorStatus = NavigationCompletedEvent.webErrorStatus;
-```
+```  
 
-#### 属性值
-类型：**无符号长**
+#### 属性值  
+
+类型：**无符号长**  

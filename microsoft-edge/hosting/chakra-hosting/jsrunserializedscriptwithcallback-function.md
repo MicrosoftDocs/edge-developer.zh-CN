@@ -7,18 +7,18 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
 caps.latest.revision: 4
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 31669615d5e00cb2dbe3730ed20e24d904161f8b
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 84a74d3c1aa68469dfe2fe42fdee685faa4c358c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564197"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752218"
 ---
 # JsRunSerializedScriptWithCallback 函数
 运行序列化脚本。 仅当需要时，才提供延迟加载脚本源的功能。  
@@ -72,4 +72,4 @@ STDAPI_(JsErrorCode) JsRunSerializedScriptWithCallback(
  **页眉：** jsrt  
   
 ## 另请参阅  
- [参考（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)
+ [应用 (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

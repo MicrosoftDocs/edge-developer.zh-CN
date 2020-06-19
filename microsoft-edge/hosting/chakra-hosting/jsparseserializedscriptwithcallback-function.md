@@ -7,18 +7,18 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 0a93ecfb-4b82-4a85-b24c-6816db2332ea
 caps.latest.revision: 5
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: ad6d635722f0b3fea8b19f8d16679b402d1fd56e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 0315fa82201671fc0ef0c950ef05a14a26be114e
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564213"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752239"
 ---
 # JsParseSerializedScriptWithCallback 函数
 分析序列化脚本并返回表示脚本的函数。 仅当需要时，才提供延迟加载脚本源的功能。  
@@ -72,4 +72,4 @@ STDAPI_(JsErrorCode) JsParseSerializedScriptWithCallback(
  **页眉：** jsrt  
   
 ## 另请参阅  
- [参考（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)
+ [应用 (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

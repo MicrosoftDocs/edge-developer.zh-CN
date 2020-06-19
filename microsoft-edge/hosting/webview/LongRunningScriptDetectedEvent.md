@@ -3,40 +3,45 @@ description: ''
 title: LongRunningScriptDetectedEvent 对象
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/10/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: web 视图、windows 10 应用、uwp、edge
-ms.openlocfilehash: 6cf7af656531eea5046f7af44d4d43ff224d0f08
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 5fe90495b83ab8f95ee594d3400c8c1a26f0547e
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563042"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752148"
 ---
-# LongRunningScriptDetectedEvent 对象
+# LongRunningScriptDetectedEvent 对象  
 
-提供有关[MSWebViewLongRunningScriptDetected](../webview.md#mswebviewlongrunningscriptdetected)的信息。
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## 属性
+提供有关[MSWebViewLongRunningScriptDetected](../webview.md#mswebviewlongrunningscriptdetected)的信息。  
 
-### executionTime
+## 属性  
 
-获取[web 视图](../webview.md)元素已执行长时间运行的脚本的毫秒数。
+### executionTime  
 
-```js
+获取[web 视图](../webview.md)元素已执行长时间运行的脚本的毫秒数。  
+
+```javascript
 var executionTime = LongRunningScriptDetectedEvent.executionTime;
-```
+```  
 
-#### 属性值
-键入： **long**
+#### 属性值  
 
-### stopPageScriptExecution
-停止在[web 视图](../webview.md)元素中执行的长时间运行的脚本。
+键入： **long**  
 
-```js
+### stopPageScriptExecution  
+
+停止在[web 视图](../webview.md)元素中执行的长时间运行的脚本。  
+
+```javascript
 var stopPageScriptExecution = LongRunningScriptDetectedEvent.stopPageScriptExecution;
-```
+```  
 
-#### 属性值
-类型： **Boolean**
+#### 属性值  
+
+类型： **Boolean**  

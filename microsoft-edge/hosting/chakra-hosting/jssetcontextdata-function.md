@@ -7,18 +7,18 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: be90aa6a-b001-4a6f-90c5-c2135e913be0
 caps.latest.revision: 4
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 00521bafdaf6125dd15746de8a1d403eaf03b4a0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: e874f500ca82328dddeaaa03a0b78a188b8fd241
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564184"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751931"
 ---
 # JsSetContextData 函数
 设置 JsrtContext 的内部数据。  
@@ -50,4 +50,4 @@ STDAPI_(JsErrorCode) JsSetContextData(
  **页眉：** jsrt  
   
 ## 另请参阅  
- [参考（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)
+ [应用 (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 适用于 Win32 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 4f920b5faf79532e81728675bf56218549914e3d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 2fdd047068ec761e1fcd3d3031d4c6c911a5b1ef
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698575"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752253"
 ---
 # 全局变量 
 
@@ -50,7 +50,7 @@ ms.locfileid: "10698575"
 
 DLL 导出以使用自定义版本的 Edge、用户数据目录和/或其他选项创建 WebView2 环境。
 
-browserExecutableFolder 是包含嵌入边缘的文件夹的相对路径。 可以通过复制已安装边缘的命名文件夹的版本（如已安装的73.0.52.0 边缘的73.0.52.0 子文件夹）来获取嵌入的边缘。 该文件夹应具有 msedge、msedge 等。 为 browserExecutableFolder 使用 null 或空字符串，以使用计算机上安装的 Edge 创建 Web 视图，在这种情况下，API 将根据通道首选项尝试查找在计算机上安装的边缘兼容版本。
+用于 `browserExecutableFolder` 指定 WebView2 控件是使用嵌入式版本的边缘，还是使用客户端计算机上存在的已安装版本的 edge。 若要使用嵌入式版本的 Edge，请将包含嵌入式版本的边缘的文件夹的相对路径传递给 `browserExecutableFolder` 。 若要获取嵌入式版本的 Edge，请从客户端计算机上已安装的 Edge 版本中复制已进行版本控制的文件夹名称。 例如， `73.0.52.0` 从安装了 Edge 版本73.0.52.0 的文件夹复制文件夹。 确保文件夹同时具有 " **msedgewebview2.exe** " 和 " **msedge.dll** " 文件。 若要创建使用客户端计算机上存在的已安装版本的 Edge 的 WebView2 控件，请将 null 或空字符串传递给 `browserExecutableFolder` 。 在此方案中，API 尝试在客户端计算机上（首先在计算机级别，然后按用户）使用所选通道首选项查找已安装的边缘的兼容版本。 
 
 默认通道搜索顺序为稳定、beta、dev 和未固定。 如果存在替代值 WEBVIEW2_RELEASE_CHANNEL_PREFERENCE 环境变量或适用的 releaseChannelPreference 注册表值为1，则将反转频道搜索顺序。
 
@@ -87,7 +87,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 当发现具有非空值时，这表示 Web 视图正在脚本调试程序下启动，该调试程序还支持使用多个 WebViews 的主机应用程序。 该值用作命名管道的标识符，该管道将在由宿主应用程序创建新的 Web 视图时打开并写入。 负载将与远程调试端口 JSON 目标的负载匹配，并可供外部调试器用于附加到特定的 Web 视图实例。 调试器创建的管道的格式应该是： `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}` where：
 
-* `{app_name}` 是主机应用程序 exe 文件名，例如 WebView2Example
+* `{app_name}` 是主机应用程序 exe 文件名，例如 WebView2Example.exe
 
 * `{pipe_name}` 是为 WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER 设置的值。
 
@@ -138,4 +138,3 @@ ERROR_PRODUCT_UNINSTALLED
 获取包含频道名称的浏览器版本信息（如果不是稳定通道或嵌入边缘）。
 
 频道名称是 beta 版、开发人员和未带了设备。 如果 browserExecutableFolder 或通道首选项存在替代，将使用替代。 如果没有替代，则使用传递到 GetAvailableCoreWebView2BrowserVersionString 的参数。
-

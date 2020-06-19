@@ -3,22 +3,22 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 适用于 Win32 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 4512c382afaa1bd5e44489f9512e94b5db1de82a
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 7d3c568c62475adb42589100c3fb6ccec6fecd49
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698552"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751875"
 ---
 # CoreWebView2 类的 WebView2 
 
 命名空间： Microsoft WebView2 \
-程序集： Microsoft WebView2
+程序集： Microsoft.Web.WebView2.Core.dll
 
 WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容。
 
@@ -65,7 +65,7 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 [PostWebMessageAsString](#postwebmessageasstring) | 这是一个帮助程序，用于发布一个简单字符串的消息，而不是 JavaScript 对象的 JSON 字符串表示形式。
 [重载](#reload) | 重新加载当前页面。
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | 删除名称指定的主机对象，以便从 Web 视图中的 JavaScript 代码无法再访问该对象。
-[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | 删除通过 AddScriptToExecuteOnDocumentCreated 添加的相应 JavaScript。
+[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | 删除通过 AddScriptToExecuteOnDocumentCreated 添加的具有指定脚本 id 的相应 JavaScript。
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | 删除以前为 WebResourceRequested 事件添加的匹配 WebResource 筛选器。
 [停止](#stop) | 停止所有导航和挂起的资源提取。
 
@@ -285,6 +285,9 @@ let result = await app_object.method1(parameters);
 
 > 公共异步任务< 字符串 > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync)（字符串 javaScript）
 
+##### 返回
+返回调用[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)时可能传递的脚本 id。 
+
 插入的脚本将应用于所有未来的顶级文档和子框架导航，直到使用 RemoveScriptToExecuteOnDocumentCreated 删除。 这是异步应用的，你必须等待完成处理程序运行，然后才能确保脚本已准备好在将来的导航上执行。
 
 请注意，如果 HTML 文档通过[沙盒](https://developer.mozilla.org/docs/Web/HTML/Element/iframe#attr-sandbox)属性或[内容安全策略 HTTP 标头](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy)进行了某种类型的沙盒，则会影响在此处运行脚本。 例如，如果未设置 "allow-modals" 关键字，则将忽略对该函数的调用 `alert` 。
@@ -303,6 +306,9 @@ URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是�
 
 > 公共异步任务< 字符串 > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)（String 方法名称、字符串 parametersAsJson）
 
+##### 返回
+一个 JSON 字符串，表示方法的返回对象。
+
 有关可用方法的列表和说明，请参阅[DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs)。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
 
 #### CapturePreviewAsync 
@@ -319,7 +325,10 @@ URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是�
 
 > 公共异步任务< 字符串 > [ExecuteScriptAsync](#executescriptasync)（字符串 javaScript）
 
-这将异步执行，并且在完成后，如果 ExecuteScriptCompletedHandler 参数中提供了处理程序，则将通过评估所提供的 JavaScript 的结果调用其 Invoke 方法。 结果值是一个 JSON 编码的字符串。 如果结果未定义、包含引用循环或者其他无法编码到 JSON，则将以字符串 "null" 形式返回 JSON null 值。 请注意，没有显式返回值的函数将返回 undefined。 如果执行的脚本引发了未处理的异常，则结果也为 "null"。 此方法是异步应用的。 如果在导航过程中 NavigationStarting 事件后调用该方法，则会在加载新文档时在新文档中执行该脚本，同时引发 ContentLoading。 即使 IsScriptEnabled 设置为 FALSE，ExecuteScript 仍可正常工作。
+##### 返回
+返回一个 JSON 编码的字符串，该字符串表示运行所提供的 JavaScript 的结果。 
+
+此方法异步运行提供的 JavaScript，并且将返回所提供的 JavaScript 的结果。 如果所提供的 JavaScript 的结果为 `undefined` 、包含引用循环或者其他无法编码到 JSON，则返回字符串 "null"。 如果所提供的 JavaScript 中的被调用函数没有显式返回值， `undefined` 则返回。 如果所提供的 JavaScript 引发了未处理的异常，则返回 "null"。 如果在发生事件后调用此方法 `NavigationStarting` ，则所提供的 JavaScript 将在新文档加载时（在触发的同一时间）内运行 `ContentLoading` 。 `ExecuteScript` 即使设置为，也可以工作 `IsScriptEnabled` `FALSE` 。
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -406,7 +415,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 #### RemoveScriptToExecuteOnDocumentCreated 
 
-删除通过 AddScriptToExecuteOnDocumentCreated 添加的相应 JavaScript。
+删除通过 AddScriptToExecuteOnDocumentCreated 添加的具有指定脚本 id 的相应 JavaScript。
 
 > 公共 void [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)（字符串 id）
 
@@ -425,4 +434,3 @@ window.chrome.webview.removeEventListener('message', handler)
 > public void [Stop](#stop)（）
 
 不会停止脚本。
-

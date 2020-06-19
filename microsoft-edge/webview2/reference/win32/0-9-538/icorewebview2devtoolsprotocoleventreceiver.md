@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 适用于 Win32 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 5384b4c8d90320e723cf85d1b6f809d0e2bbea23
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 64ea85d62771467f90437c3ce7380955c3019418
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698468"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751882"
 ---
 # interface ICoreWebView2DevToolsProtocolEventReceiver 
 
@@ -41,7 +41,7 @@ interface ICoreWebView2DevToolsProtocolEventReceiver
 
 > public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)（[ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) * 处理程序，EventRegistrationToken * token）
 
-每当引发相应的 DevToolsProtocol 事件时，都将调用处理程序的 Invoke 方法。 将使用包含 DevTools 协议事件参数对象的事件参数对象作为 JSON 字符串调用调用。
+每当引发相应的 DevToolsProtocol 事件时，都将调用处理程序的 Invoke 方法。 将调用一个事件参数对象，该对象包含将 DevTools 协议事件的参数对象作为 JSON 字符串。
 
 ```cpp
 // Prompt the user to name a CDP event, and then subscribe to that event.

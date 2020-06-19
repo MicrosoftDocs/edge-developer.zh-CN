@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 适用于 Win32 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: af8df8ff67a0fbe7fd4ec9308b1562b9ef987933
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698571"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751847"
 ---
 # interface ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,6 +52,8 @@ Webview.newwindowrequested 事件的事件参数。
 
 > public HRESULT [get_IsUserInitiated](#get_isuserinitiated)（BOOL * IsUserInitiated）
 
+WebView2 控件可能会显示弹出窗口，因为弹出窗口阻止程序处于关闭状态。 若要阻止显示非用户启动的弹出窗口，请使用 `get_IsUserInitiated` 。
+
 #### get_NewWindow 
 
 获取新窗口。
@@ -87,4 +89,3 @@ NewWindowRequest 的目标 uri。
 > 公共 HRESULT [put_NewWindow](#put_newwindow)（[ICoreWebView2](icorewebview2.md) * NewWindow）
 
 不应导航目标 web 视图。 如果设置了 NewWindow，其顶级窗口将返回为打开的 WindowProxy。
-

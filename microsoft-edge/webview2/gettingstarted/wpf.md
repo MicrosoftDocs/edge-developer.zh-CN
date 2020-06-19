@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: fad5e7ce7be58ea9992dffee75da0d59aed471e7
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: 0dd4b5b0d336f4107352754e0c23e74bc83e8a5f
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710390"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752232"
 ---
-# WPF 中的 WebView2 入门（预览版）  
+# WPF 中的 WebView2 入门（预览版）
 
 在本文中，开始创建你的第一个 WebView2 应用，并了解[WebView2 （预览版）](../index.md)的主要功能。  有关单个 Api 的详细信息，请参阅[API 参考](../reference/dotnet/0-9-515-reference-webview2.md)。  
 

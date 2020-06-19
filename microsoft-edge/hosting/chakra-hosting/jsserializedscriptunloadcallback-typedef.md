@@ -7,18 +7,18 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 8d18c392-cca0-411e-9f2b-0d788b16161a
 caps.latest.revision: 3
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 9555b3fd8c14c9629d17c13592e3c78a78be150e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c3da27af18ebc7a1913980a865d926bac6a29d11
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564187"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751938"
 ---
 # JsSerializedScriptUnloadCallback typedef
 在运行时使用与脚本执行相关的所有资源完成时调用。 此时，调用方应释放源（如果已加载）、字节代码和上下文。  
@@ -42,4 +42,4 @@ ms.locfileid: "10564187"
  **页眉：** jsrt  
   
 ## 另请参阅  
- [参考（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)
+ [应用 (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

@@ -3,22 +3,24 @@ description: 提供有关当前权限请求的事件信息
 title: PermissionRequestedEvent 对象
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: web 视图、windows 10 应用、uwp、edge
-ms.openlocfilehash: 07fccebc9e061d4ee7a85e48271aaf9c0574e1ef
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 9bb6cfdbe3cc430f109ea3a258b6c1a176b05da3
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564459"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752018"
 ---
-# PermissionRequestedEvent 对象
+# PermissionRequestedEvent 对象  
 
-提供有关当前权限请求的事件信息。
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+提供有关当前权限请求的事件信息。  
+
+```javascript
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
     const permissionRequest = permissionRequestedEventArgs.permissionRequest;
     switch (permissionRequest.type) {
@@ -54,12 +56,12 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
             break;
     }
 });
-```
+```  
 
-## 属性
+## 属性  
 
-### permissionRequest
+### permissionRequest  
 
-返回一个**[PermissionRequest](permissionrequest.md)** 对象，该对象表示由[web 视图](../webview.md)的内容所发出的最终用户权限请求。
+返回一个**[PermissionRequest](permissionrequest.md)** 对象，该对象表示由[web 视图](../webview.md)的内容所发出的最终用户权限请求。  
 
-此属性为只读。
+此属性为只读。  
