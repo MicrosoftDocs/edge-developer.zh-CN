@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows Forms、WinForms、WPF、.NET
-ms.openlocfilehash: 1b140d9f644c7a864cac4966bb4cfdd400feeb0d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 9356da17f2db9456a9a309bc9ef06c74fbb50779
+ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697740"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "10754543"
 ---
 # Microsoft Edge WebView2 简介（预览版）  
 
@@ -123,13 +123,13 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 
 *   [WebView2 SDK 和 Microsoft Edge 版本控制](./concepts/versioning.md)
 *   [分发 WebView2 应用程序](./concepts/distribution.md)  
+*   [WebView2 应用程序的安全最佳做法](./concepts/security.md)
+*   [管理 WebView2 应用程序中的用户数据文件夹](./concepts/userdatafolder.md)
  
 #### 操作方法指南  
 
 *   [通过 DevTools 和 Visual Studio 脚本调试调试 WebView2](./howto/debug.md)  
 *   [通过 Microsoft EdgeDriver 自动化和调试 WebView2](./howto/webdriver.md)  
-
-<!--todo: add how-tos when available  -->  
 
 ## 与 WebView2 团队取得联系  
 
