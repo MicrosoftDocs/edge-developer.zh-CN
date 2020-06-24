@@ -8,19 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 4a1eb48270e062838fee9223d0a6e0e59505278e
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 68a32b8e7175f2e52960e7c3a7fe16b66e5a043d
+ms.sourcegitcommit: de171a8e7ccd9f23846f3cd06519e4a0104f1c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697320"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757611"
 ---
 # WebView2 SDK 的发行说明  
 
 WebView2 团队将在6周的步调上提供[WEBVIEW2 SDK][WebView2NuGetGallery]的更新。 此页面将让你了解最新的：产品通知、对 API 图面的添加和修改以及重大更改。
 
-> [!IMPORTANT]
+> [!NOTE]
 > 更新 NuGet 程序包后重新编译你的应用。
+
+> [!IMPORTANT]
+> 当 WebView2 处于预览版中时，.NET Api 将位于**预发布程序包**中。
 
 ## 0.9.538
 
@@ -39,7 +42,7 @@ WebView2 团队将在6周的步调上提供[WEBVIEW2 SDK][WebView2NuGetGallery]�
   * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed)现已[AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
 * 已更新[AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) ，以确保原始主机对象序列化程序标记被设置为代理对象，并在 JavaScript 回调中作为参数传递时序列化为主机对象。 （[#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148)）
 
-#### .NET
+#### .NET （0.9.538 预发布）
 
 * 发布了 WinForms 和 WPF WebView2API 示例，这些示例是我们的 SDK 的综合指南。 查看[WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples)存储库。
 * 添加了对可视化托管和窗口功能的支持[实验 api](./concepts/versioning.md#experimental-apis)

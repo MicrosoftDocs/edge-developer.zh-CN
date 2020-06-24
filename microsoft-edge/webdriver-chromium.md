@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge，web 开发，html，css，javascript，开发人员，webdriver，selenium，测试，工具，自动化，测试
-ms.openlocfilehash: 14537943351db144bb4839d6befbfaa62894cd85
-ms.sourcegitcommit: 3f8c8a5643e416b0851254833f9771192883ec45
+ms.openlocfilehash: c60095373be337307225f28d320cae19174531a7
+ms.sourcegitcommit: 1b5dfc5a2c7130b3abc6b4545fcaaae0b0897148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699505"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757578"
 ---
 # 将 WebDriver （Chromium）用于测试自动化  
 
@@ -60,6 +60,36 @@ WebDriver 使开发人员能够创建模拟用户交互的自动测试。  由�
 ### 使用 Selenium 3  
 
 如果你已使用[Selenium 3][|::ref1::|]，可能会有现有的浏览器测试并希望在不更改你的 Selenium 版本的情况下添加 Microsoft Edge \ （Chromium \）的覆盖范围。  若要使用[Selenium 3][|::ref2::|]为 microsoft edge \ （EdgeHTML \）和 microsoft edge \ （Chromium \）编写自动测试，请安装[microsoft Edge 程序包的 Selenium 工具][GithubMicrosoftEdgeSeleniumTools]以使用更新的驱动程序。  `EdgeDriver` `EdgeDriverService` 工具中包含的和类与 Selenium 4 中的内置等效项完全兼容。  
+
+使用以下步骤将[Microsoft Edge 的 Selenium 工具][GithubMicrosoftEdgeSeleniumTools]和[Selenium 3][|::ref3::|]添加到你的项目。
+
+#### [C#](#tab/c-sharp/)  
+
+<a id="selenium-tools-install"></a>  
+
+使用[NUGET CLI][NugetCLI]或[Visual Studio][VisualStudio]将[SeleniumTools][NugetPackagesMicrosoftEdgeSeleniumtools]和[Selenium WebDriver][NugetPackagesSeleniumWebdriver31410]程序包添加到 .net 项目。
+
+#### [Python](#tab/python/)  
+
+<a id="selenium-tools-install"></a>  
+
+使用[pip][PythonPip]安装[msedge-selenium-tools][PythonSeleniumTools]和[selenium][PythonSelenium]程序包：
+
+```python
+pip install msedge-selenium-tools selenium==3.141
+```  
+
+#### [JavaScript](#tab/javascript/)  
+
+<a id="selenium-tools-install"></a>  
+
+使用[npm][JavaScript|::ref4::|]安装[edge selenium-tools][JavaScriptSeleniumTools]和[selenium webdriver][JavaScriptSelenium]程序包：
+
+```javascript
+npm install @microsoft/edge-selenium-tools selenium-webdriver
+```  
+
+* * *  
 
 ## 将 Microsoft Edge （Chromium）与 WebDriver 结合使用
 
@@ -317,6 +347,10 @@ Microsoft Edge 团队渴望听到有关使用 WebDriver、Selenium 和 Microsoft
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-工具 |GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium |GitHub"  
 
+[JavaScriptnpm]: https://www.npmjs.com/ "npm"
+[JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools |npm"
+[JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "selenium-webdriver |npm"
+
 [MicrosoftDeveloperEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "WebDriver |Microsoft 开发人员"
 [MicrosoftDeveloperEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads "下载-WebDriver |Microsoft 开发人员"  
 
@@ -324,15 +358,22 @@ Microsoft Edge 团队渴望听到有关使用 WebDriver、Selenium 和 Microsoft
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"  
 
+[NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet。命令行 |NuGet 库"
 [NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "SeleniumTools |NuGet 库"  
 [NugetPackagesSeleniumWebdriver31410]: https://www.nuget.org/packages/Selenium.WebDriver/3.141.0 "Selenium WebDriver 3.141.0 |NuGet 库"  
 [NugetPackagesSeleniumWebdriver400alpha05]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha05 "Selenium WebDriver 4.0.0-alpha05 |NuGet 库"  
+
+[PythonPip]: https://pypi.org/project/pip/ "pip |PyPI"
+[PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "msedge-selenium-tools |PyPI"
+[PythonSelenium]: https://pypi.org/project/selenium/ "selenium |PyPI"
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
 [SeleniumDownloads]: https://selenium.dev/downloads "下载 |Selenium"  
 [SeleniumWebDriverChromeoptionsClass]: https://www.selenium.dev/selenium/docs/api/dotnet/?topic=html/T_OpenQA_Selenium_Chrome_ChromeOptions.htm "ChromeOptions 类-WebDriver |Selenium"  
 
 [TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools |发布 tweet"  
+
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 
 [W3CWebdriver]: https://w3.org/TR/webdriver2 "WebDriver"  
 
