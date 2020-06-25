@@ -3,18 +3,18 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: microsoft edge、隐私、白皮书、信任
 localization_priority: Priority
-ms.openlocfilehash: 2fee66a81309ee61d41959ae6992e2fe991ca649
-ms.sourcegitcommit: ffc0eb7bedf6e79326103a78c003f1cb2a2f70b2
+ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
+ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "10696734"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10758870"
 ---
 # Microsoft Edge 隐私白皮书  
 
@@ -62,7 +62,9 @@ Microsoft Edge 中的自动填充可让你保存密码、支付信息、地址�
 
 ## Cast  
 
-Microsoft Edge 中的 "强制转换" 允许您使用 Google Cast 将媒体显示到另一个屏幕。  你可以从 "设置"**和 "更多（...）**  >  " 中访问该功能**更多工具**  > **将媒体转换为设备**。  强制转换不使用任何 Microsoft 或 Google 服务。 
+Microsoft Edge 中的 "强制转换" 允许您使用 Google Cast 将媒体显示到另一个屏幕。  你可以从 "设置"**和 "更多（...）**  >  " 中访问该功能**更多工具**  > **将媒体转换为设备**。  转换依赖于在默认情况下不包含在 Microsoft Edge 中的媒体路由器扩展。  首次使用 "强制转换" 时，Microsoft Edge 提示安装媒体路由器扩展的权限。  
+
+选择 "**重新启动**"，从 Chrome Web Store 安装媒体路由器扩展。  为了使媒体路由器扩展保持最新状态，在 Microsoft Edge 启动时，microsoft edge 将更新请求发送到 Chrome Web Store，其中包含有关你的 Microsoft Edge 版本的基本数据。  Google 可能会收集与媒体路由器扩展相关联的一些数据。  若要卸载媒体路由器扩展，请转到 `edge://flags` 并禁用 "**按需移动" 媒体-路由器**。  这也会停止 Chrome Web Store 的更新。  扩展已隐藏，并且不会显示在 "**已安装的扩展**" 列表中。  对于 "**已安装的扩展**" 列表，请转到 `edge://extensions` 。  
 
 ## 集锦  
 

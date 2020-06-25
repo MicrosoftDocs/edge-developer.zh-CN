@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: 20e3d152c8384e33551d75b5baa265fa7cb7f1ec
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 85b114e7eb1e567bd5188353af2826a56b01ad4e
+ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698223"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10767021"
 ---
 # Windows 窗体应用中的 WebView2 入门（预览版）  
 
@@ -54,7 +54,9 @@ ms.locfileid: "10698223"
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget.exe":::
        Nuget.exe :::image-end:::
 
-2. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  将 "程序包版本" 设置为 "**预发布**"，然后选择 "**安装**"。  
+2. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
+
+3. 选中 "**包括预**发布"，选择一个**预**发布程序包版本，然后选择 "**安装**"。  
 
     ![nuget.exe](./media/installnuget.png)
 

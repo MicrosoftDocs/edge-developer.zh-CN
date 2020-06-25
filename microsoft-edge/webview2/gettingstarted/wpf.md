@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 0dd4b5b0d336f4107352754e0c23e74bc83e8a5f
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+ms.openlocfilehash: 9ecb80050d52d1d3b888027a728456a881d8c5ad
+ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10752232"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10767014"
 ---
 # WPF 中的 WebView2 入门（预览版）
 
@@ -69,15 +69,16 @@ ms.locfileid: "10752232"
        Nuget.exe
     :::image-end:::
     
-1.  `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  将 "程序包版本" 设置为 "**预发布**"，然后选择 "**安装**"。  
-    
+2.  `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
+
+3. 选中 "**包括预**发布"，选择一个**预**发布程序包版本，然后选择 "**安装**"。  
+  
      ![nuget.exe](./media/installnuget.PNG)
     
     全部设置为使用 WebView2 API 开始开发应用程序。  按 `F5` 生成并运行项目。  正在运行的项目显示一个空窗口。  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="空应用":::
-       空应用
-    :::image-end:::  
+       空应用 :::image-end:::  
     
 ## 步骤 3-在 MainWindow 中创建单个 Web 视图  
 
