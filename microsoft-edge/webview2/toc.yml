@@ -12,6 +12,10 @@
   items:
     - name: 分发我的应用
       href: concepts/distribution.md
+    - name: 管理用户数据文件夹
+      href: concepts/userdatafolder.md
+    - name: 安全最佳方案
+      href: concepts/security.md
     - name: 版本控制
       href: concepts/versioning.md
 - name: 发行说明
