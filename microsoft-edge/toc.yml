@@ -204,6 +204,12 @@
               items:
                 - name: 跟踪哪些元素有焦点
                   href: devtools-guide-chromium/accessibility/focus.md
+                - name: 深色/浅色方案模拟
+                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                - name: 模拟运动减少
+                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                - name: 模仿视觉缺陷
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
         - name: 远程调试
           items:
             - name: Android 设备
