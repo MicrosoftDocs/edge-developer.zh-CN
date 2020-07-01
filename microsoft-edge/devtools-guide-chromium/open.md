@@ -2,16 +2,16 @@
 title: 打开 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 06/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 48f80ea9f85bd3509f2ba3d834f99c25247c0761
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 06e547d2d413535a6f14d829d30dc4d7b11ac92b
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601885"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843997"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,80 +27,90 @@ ms.locfileid: "10601885"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# 打开 Microsoft Edge DevTools   
-
-
+# 打开 Microsoft Edge DevTools  
 
 打开 Microsoft Edge DevTools 有多种方法，因为不同的用户需要快速访问 DevTools UI 的不同部分。  
 
-## 打开 "元素" 面板以检查 DOM 或 CSS   
+## 打开 "元素" 面板以检查 DOM 或 CSS  
 
-当你想要检查某个 DOM 节点的样式或属性时，请右键单击该元素，然后选择 "**检查**"。  
+以下每个任务都可让你检查 DOM 节点的样式或属性。
 
-> ##### 图 1  
-> "**检查**" 选项  
-> !["检查" 选项][ImageInspectOption]  
+*   将鼠标悬停在元素上，打开上下文菜单 \ （右键单击 \），然后选择 "**检查**"。  
+*   按 `Control` + `Shift` + `C` \ （Windows \）或 `Command` + `Option` + `C` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
-或按 `Control` + `Shift` + `C` \ （Windows \）或 `Command` + `Option` + `C` \ （macOS \）。  
+:::image type="complex" source="./media/bing-right-click-inspect.msft.png" alt-text="* * 检查 * * 选项" lightbox="./media/bing-right-click-inspect.msft.png":::
+   "**检查**" 选项  
+:::image-end:::  
 
 <!--See [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
 
-## 打开控制台面板以查看记录的消息或运行 JavaScript   
+## 打开控制台面板  
 
-按 `Control` + `Shift` + `J` \ （Windows \）或 `Command` + `Option` + `J` \ （macOS \）直接跳转到**控制台**面板。  
+通过以下每个任务，你可以打开 "[控制台][DevToolsConsoleIndex]" 窗格以查看已记录的消息或运行 JavaScript。  
+
+*   使用以下步骤打开 "[控制台][DevToolsConsoleIndex]窗格"。  
+    
+    1.  [打开 DevTools](#open-microsoft-edge-devtools)。  
+    1.  选择 "[控制台][DevToolsConsoleIndex]" 窗格。  
+
+*   若要直接跳转到[控制台][DevToolsConsoleIndex]窗格，请按 `Control` + `Shift` + `J` \ （Windows \）或 `Command` + `Option` + `J` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 <!--See [Get Started With The Console][ConsoleGetStarted].  -->
 
-## 打开已打开的上一个面板   
+## 打开上一个面板  
 
-按 `Control` + `Shift` + `I` \ （Windows \）或 `Command` + `Option` + `I` \ （macOS \）。  
+若要跳转到上一个已打开的面板，请按 `Control` + `Shift` + `I` \ （Windows \）或 `Command` + `Option` + `I` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
-## 从 Microsoft Edge 主菜单打开 DevTools  
+## 打开 Microsoft Edge DevTools  
 
-单击 "**设置" 和 "更多" \ （Alt + F \）** `...` ，然后选择 "**更多工具**  >  **开发人员工具**"。  
+以下每个任务都可让你打开 DevTools。  
 
-> ##### 图 2  
-> 从 Microsoft Edge 主菜单打开 DevTools  
-> ![从 Microsoft Edge 主菜单打开 DevTools][ImageOpenFromMain]  
+*   使用以下步骤打开 Microsoft Edge DevTools。  
+    
+    1.  选择 `...` 图标 \ （"**设置" 和 "更多**" 图标 \）。  
+    1.  选择 "**更多工具**"。  
+    1.  选择 "**开发工具**"。  
+    
+*   若要打开 Microsoft Edge DevTools，请按 `F12` 或 `Control` + `Shift` + `I` \ （Windows \）或 `Command` + `Option` + `I` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
-## 在每个新选项卡上自动打开 DevTools   
+:::image type="complex" source="./media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从 Microsoft Edge 主菜单打开 DevTools" lightbox="./media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+   从 Microsoft Edge 主菜单打开 DevTools  
+:::image-end:::  
 
-从命令行打开 Microsoft Edge 并传递 `--auto-open-devtools-for-tabs` 标志。  
+## 在每个新选项卡上自动打开 DevTools  
 
-Windows \ （CMD \）：  
+若要在每个新选项卡上自动打开 DevTools，请从命令行打开 Microsoft Edge 并传递 `--auto-open-devtools-for-tabs` 标志。  
+
+#### [CMD （Windows）](#tab/cmd-windows/)  
+
+<a id="selenium-tools-install"></a>  
 
 ```cmd
 start msedge --auto-open-devtools-for-tabs
 ```  
 
-Windows \ （PowerShell \）：  
+#### [PowerShell （Windows）](#tab/powershell-windows/)  
+
+<a id="selenium-tools-install"></a>  
 
 ```powershell
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 ```  
 
-MacOS  
+#### [bash （macOS）](#tab/bash-macos/)  
+
+<a id="selenium-tools-install"></a>  
 
 ```bash
 /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```  
 
- 
-
-
-
-<!-- image links -->  
-
-[ImagesMainIcon]: /microsoft-edge/devtools-guide-chromium/media/main-menu-icon.msft.png  
-
-[ImageInspectOption]: /microsoft-edge/devtools-guide-chromium/media/bing-right-click-inspect.msft.png "图1： "检查" 选项"  
-[ImageOpenFromMain]: /microsoft-edge/devtools-guide-chromium/media/bing-customize-more-tools-developer-tools-transparent.msft.png "图2：从 Microsoft Edge 主菜单打开 DevTools"  
+* * *  
 
 <!-- links -->  
+
+[DevToolsConsoleIndex]: ./console/index.md "控制台概述 |Microsoft 文档"  
+[DevtoolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools 键盘快捷方式-Microsoft 文档"  
 
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->  
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->

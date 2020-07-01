@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge，web 开发，开发人员，工具，自动化，测试
-ms.openlocfilehash: a78bdc0eb96db018818ef122c772bc9023adac46
-ms.sourcegitcommit: 4187d4c3fbf4ef99a3b8a63db8a182355c84c1f9
+ms.openlocfilehash: ccca46426a006651a417a22e54c8b528834b5f81
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601935"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844010"
 ---
 # Puppeteer  
 
@@ -36,7 +36,7 @@ yarn add puppeteer-core
 ## 通过 puppeteer 启动 Microsoft Edge  
 
 > [!NOTE]
-> `puppeteer-core` 依赖于节点 v 8.9.0 或更高版本。  下面的示例使用 `async` / `await` 了仅在节点 v 7.6.0 或更高版本中才受支持的示例。  `node -v`从命令行运行以确保你有兼容的 node.js 版本。  
+> `puppeteer-core` 依赖于节点 v 8.9.0 或更高版本。  下面的示例使用 `async` / `await` 了仅在节点 v 7.6.0 或更高版本中才受支持的示例。  `node -v`从命令行运行以确保你有兼容版本的 Node.js。  
 
 `puppeteer-core` 应熟悉其他浏览器测试框架（如[WebDriver][WebDriverEdgehtmlMain]）的用户。  创建一个浏览器实例，打开一个页面，然后使用 Puppeteer API 对其进行操作。  在以下代码示例中， `puppeteer-core` 启动 Microsoft Edge \ （Chromium \），导航到 `https://www.microsoftedgeinsider.com` 并将屏幕截图另存为 `example.png` 。  
 
@@ -57,7 +57,25 @@ const puppeteer = require('puppeteer-core');
 })();
 ```  
 
-更改 `executablePath` 以指向 Microsoft Edge \ （Chromium \）的安装。  例如，在 macOS 上，" `executablePath` Microsoft Edge" 的 "关于" 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/` 。  若要查找 `executablePath` ，请导航到 `edge://version` 。  保存更改。  
+更改 `executablePath` 以指向 Microsoft Edge \ （Chromium \）的安装。  例如，在 macOS 上，" `executablePath` Microsoft Edge" 的 "关于" 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/` 。  若要查找 `executablePath` ，请导航到 `edge://version` 该页面并复制该页面上的**可执行路径**，或安装带有以下命令之一的[edge 路径][npmEdgePaths]程序包。  
+
+```shell
+npm i edge-paths
+```  
+
+```shell
+yarn add edge-paths
+```  
+ 
+下面的代码示例使用[edge 路径][npmEdgePaths]程序包以编程方式查找你的 Microsoft edge \ （Chromium \）在你的操作系统上的安装路径。
+
+```javascript
+const edgePaths = require("edge-paths");
+
+const EDGE_PATH = edgePaths.getEdgePath();
+```
+
+最后，设置 `executablePath: EDGE_PATH` `example.js` 。  保存更改。  
 
 > [!NOTE]
 > Microsoft Edge \ （EdgeHTML \）不起作用 `puppeteer-core` 。  必须安装[Microsoft Edge 预览体验成员频道][MicrosoftedgeinsiderDownload]才能继续关注此示例。  
@@ -70,7 +88,7 @@ node example.js
 
 `puppeteer-core` 启动 Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` 页面的 800px x 600px 屏幕截图并将其保存。  你可以通过[setViewport （）][PuppeteerApipagesetviewport]自定义页面大小。  
 
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="示例 .js 生成的 .png 文件。":::
+:::image type="complex" source="./media/puppeteer-example.png" alt-text="由 example.js 生成的 example.png 文件":::
    图1： `example.png` 生成的文件 `example.js`  
 :::image-end:::  
 
@@ -127,6 +145,8 @@ Edge 开发人员团队渴望听到有关使用 Puppeteer、 `puppeteer-core` �
 [ChromiumHome]: https://www.chromium.org/Home "Chromium |Chromium 项目"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
+
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "npm |边缘路径"
 
 [PuppeteerMain]: https://pptr.dev "Puppeteer"  
 [PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "puppeteer 与 puppeteer-核心 |Puppeteer"  

@@ -6,12 +6,12 @@ ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: d3dbec41bc1e53b5e9001551c796e5a495dd331e
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4c930caf60af2b5e276e003378546e147c249548
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601731"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843962"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -89,11 +89,11 @@ ms.locfileid: "10601731"
     > 单击 "**日志信息**" 后的控制台  
     > ![单击 "日志信息" 后的控制台][ImageLogInfo]  
     
-1.  `Hello, Console!`在控制台中单击邮件旁边的 " **node.js： 2**"。  "源" 面板将打开并突出显示导致消息登录到控制台的代码行。  当页面的 JavaScript 运行时，将记录此消息 `console.log('Hello, Console!')` 。
+1.  `Hello, Console!`在控制台中的邮件旁边，单击 " **log.js： 2**"。  "源" 面板将打开并突出显示导致消息登录到控制台的代码行。  当页面的 JavaScript 运行时，将记录此消息 `console.log('Hello, Console!')` 。
     
     > ##### 图 7  
-    > 单击 "DevTools" 后，"源" 面板将打开 **。 js： 2**  
-    > ![DevTools 将在你单击 "log .js" 后打开 "源" 面板： 2][ImageSourceLog]  
+    > 单击 "log.js" 后，DevTools 将打开 "源" 面板 **： 2**  
+    > ![DevTools 在你单击 "log.js： 2] 后打开" 源 "面板[ImageSourceLog]  
     
 1.  使用以下任一工作流向后导航到控制台：  
     
@@ -166,6 +166,7 @@ ms.locfileid: "10601731"
     > ![控制台中的 TypeError][ImageConsoleLogTypeError]  
     
 1.  单击 "**日志级别**" 下拉列表，并启用 "**详细**" 选项（如果已禁用）。  在下一节中了解有关筛选的详细信息。  您需要执行此操作，以确保您记录的下一条消息是可见的。  
+    **注意：** 如果 "默认级别" 下拉列表处于禁用状态，您可能需要关闭控制台边栏。 有关控制台边栏的详细信息，请按以下消息源进行筛选。
     
     > ##### 图 16  
     > 启用**详细**日志级别  
@@ -275,16 +276,16 @@ ms.locfileid: "10601731"
 [ImageLogExample]: /microsoft-edge/devtools-guide-chromium/media/console-ars-technica-console-onload.msft.png "图1：控制台中的邮件"  
 <!--[ImageLogSetUp1]: /microsoft-edge/devtools-guide-chromium/media/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
 [ImageDevToolsRight]：/microsoft-edge/devtools-guide-chromium/media/console-example-devtools-right-console.msft.png "图2： DevTools 将在演示的右侧打开"  
-[ImageDevToolsBottom]：/microsoft-edge/devtools-guide-chromium/media/console-example-devtools-bottom-console.msft.png "图3： DevTools 固定到演示底部"  
+[ImageDevToolsBottom]：/microsoft-edge/devtools-guide-chromium/media/console-example-devtools-bottom-console.msft.png "图3： DevTools 停靠到演示的底部"  
 [ImageDevToolsSeparateBrowse]：/microsoft-edge/devtools-guide-chromium/media/console-example-devtools-separate-console-browse.msft.png "图4：浏览器在单独的窗口中"  
 [ImageDevToolsSeparateDevTools]：/microsoft-edge/devtools-guide-chromium/media/console-example-devtools-separate-console-devtools.msft.png "图5：在单独的窗口中取消停靠 DevTools"  
-[ImageLogInfo]：/microsoft-edge/devtools-guide-chromium/media/console-log-info.msft.png "图6：单击" 日志信息 "后的控制台  
-[ImageSourceLog]：/microsoft-edge/devtools-guide-chromium/media/console-sources-logjs.msft.png "图7： DevTools 打开" 源 "面板，然后单击" node.js： 2 "  
-[ImageConsoleLogWarning]：/microsoft-edge/devtools-guide-chromium/media/console-log-warning.msft.png "图8：单击日志警告后的控制台"  
+[ImageLogInfo]：/microsoft-edge/devtools-guide-chromium/media/console-log-info.msft.png "图6：单击" 日志信息 "后的控制台"  
+[ImageSourceLog]：/microsoft-edge/devtools-guide-chromium/media/console-sources-logjs.msft.png "图7：单击" log.js： 2 "后 DevTools 打开" 源 "面板。  
+[ImageConsoleLogWarning]：/microsoft-edge/devtools-guide-chromium/media/console-log-warning.msft.png "图8：单击" 日志警告 "后的控制台"  
 [ImageStackTrace]：/microsoft-edge/devtools-guide-chromium/media/console-log-warning-expanded.msft.png "图9：堆栈跟踪"  
 [ImageLogError]：/microsoft-edge/devtools-guide-chromium/media/console-log-error.msft.png "图10：错误消息"  
-[ImageConsoleTable]：/microsoft-edge/devtools-guide-chromium/media/console-log-table.msft.png "图11：控制台中的表"  
-[ImageConsoleLogGroup]：/microsoft-edge/devtools-guide-chromium/media/console-log-group.msft.png "图12：一组控制台中的邮件"  
+[ImageConsoleTable]：/microsoft-edge/devtools-guide-chromium/media/console-log-table.msft.png "图11：控制台中的表格"  
+[ImageConsoleLogGroup]：/microsoft-edge/devtools-guide-chromium/media/console-log-group.msft.png "图12：一组在控制台中的邮件"  
 [ImageConsoleLogCustomFormatting]：/microsoft-edge/devtools-guide-chromium/media/console-log-custom.msft.png "图13：在控制台中有自定义格式的邮件"  
 [ImageConsoleLogError]：/microsoft-edge/devtools-guide-chromium/media/console-cause-404.msft.png "图14：控制台中的404错误"  
 [ImageConsoleLogTypeError]：/microsoft-edge/devtools-guide-chromium/media/console-cause-error.msft.png "图15：控制台中的 TypeError"  
