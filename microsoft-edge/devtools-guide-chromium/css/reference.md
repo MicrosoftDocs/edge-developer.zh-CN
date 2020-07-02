@@ -6,12 +6,12 @@ ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 005d2650a1633d49a8c6c2550c4b2c0c2e3f3be6
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4f0370b83d8c939476a1ed378dbdf750101c9527
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601844"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843964"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -155,7 +155,6 @@ DevTools 的 "**元素**" 面板使你可以一次查看或更改一个元素的
 ### 在打印模式下查看页面   
 
 若要以打印模式查看页面，请执行以下操作：  
-
 1.  [打开 "命令" 菜单][DevToolsCommandMenu]。  
 1.  开始键入 `Rendering` 并选择 `Show Rendering` 。  
 1.  对于 "**模拟 CSS 媒体**" 下拉列表，选择 "**打印**"。  
