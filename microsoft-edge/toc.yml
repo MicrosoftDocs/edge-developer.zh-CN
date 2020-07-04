@@ -456,6 +456,8 @@
           href: extensions/troubleshooting.md
     - name: 托管
       href: hosting/toc.md
+    - name: 原始试验
+      href: origin-trials/index.md
     - name: 性能分析
       href: performance-analysis.md
     - name: 隐私白皮书
