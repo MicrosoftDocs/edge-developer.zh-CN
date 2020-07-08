@@ -1,20 +1,19 @@
 ---
 description: Microsoft Edge DevTools 中的最新实验功能
-title: 实验性功能
+title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: 731a289f555870eeff9cdc160965b59925b70c4d
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
-ms.translationtype: MT
+ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
+ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843935"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858049"
 ---
-# 实验性功能  
+# 实验功能  
 
 你可以使用 Microsoft Edge DevTools 中仍处于开发阶段的实验功能来测试和[提供反馈](#providing-feedback-on-experimental-features)，然后再广泛发布。  
 
@@ -26,7 +25,7 @@ ms.locfileid: "10843935"
 
 1.  [打开 DevTools][DevtoolsOpen]。  
      *   按 `Control` + `Shift` + `I` \ （Windows \）或 `Command` + `Option` + `I` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
-1.  打开 "**设置**" 窗格。  
+1.  打开 "[设置][DevToolsCustomizeSettings]" 窗格。  
     *   按 `Shift` + `?` 。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  在 "**设置**" 窗格的左侧，选择 "**实验**" 部分。  
     
@@ -46,9 +45,22 @@ ms.locfileid: "10843935"
 
 | 实验性功能 | Microsoft Edge 版本 |  
 |:--- |:--- |  
+| [启用自定义键盘快捷方式设置选项卡](#enable-custom-keyboard-shortcuts-settings-tab) | 84或更高版本 |
 | [启用新的 CSS 网格调试功能](#enable-new-css-grid-debugging-features) | 85或更高版本 |  
 | [启用支持以在面板之间移动选项卡](#enable-support-to-move-tabs-between-panels) | 85或更高版本 |  
 | [启用 webhint](#enable-webhint) | 85或更高版本 |  
+
+### 启用自定义键盘快捷方式设置选项卡
+
+在[DevTools 设置][DevToolsCustomizeSettings]中提供新的**快捷方式**页面，在 DevTools 中启用匹配的[键盘快捷方式][DevToolsShortcuts][与代码][VisualstudioCode]。  
+
+启用此实验后，请按 DevTools 再次打开 "[设置][DevToolsCustomizeSettings]" `Shift` + `?` 。  导航到 "新建**快捷方式**" 页面。  **从 "预设**" 下拉列表中选择 " **DevTools" （默认）** ，然后选择 " **Visual Studio 代码**"。  DevTools 中的键盘快捷方式现在与与 VS 代码中的等效操作的快捷方式相匹配。  
+
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="将 DevTools 中的键盘快捷方式与 VS 代码相匹配" lightbox="./media/experiments-keyboard-shortcut.png":::
+   将 DevTools 中的键盘快捷方式与 VS 代码相匹配
+:::image-end:::  
+
+例如，在 Windows 上，在[VS 代码][VisualstudioCodeShortcutsKeyboardWindows]中暂停或继续运行脚本的键盘快捷方式是 `F5` 。  通过**DevTools （默认）** 预设，DevTools 中的同一快捷方式， `F8` 但在**Visual Studio 代码**中，该快捷方式现在也是如此 `F5` 。  
 
 ### 启用新的 CSS 网格调试功能  
 
@@ -82,11 +94,11 @@ ms.locfileid: "10843935"
 
 ## 以前的实验功能  
 
-*   [3D 视图][Devtools3DView]现在可用，在 Microsoft Edge 版本83或更高版本中默认情况下处于打开状态。  
+*   [3D 视图][Devtools3dViewIndex]现在可用，在 Microsoft Edge 版本83或更高版本中默认情况下处于打开状态。  
 
 ## 提供有关实验功能的反馈  
 
-若要提供有关 Microsoft Edge DevTools 实验的反馈或与 DevTools 相关的任何其他内容，请执行以下操作：  
+提供有关 Microsoft Edge DevTools 实验的反馈或与 DevTools 相关的任何其他内容。  
 
 *   使用 DevTools 中的反馈图标发送反馈  
 *   Tweet [@EdgeDevTools][TwitterEdgedevtools]  
@@ -97,11 +109,15 @@ ms.locfileid: "10843935"
 
 <!-- links -->  
 
-[Devtools3DView]: ./3D-view.md "3D 视图 |Microsoft 文档"  
+[Devtools3dViewIndex]: ./3d-view/index.md "3D 视图 |Microsoft 文档"  
 [DevtoolsIssues]: ./issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 |Microsoft 文档"  
-[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools 键盘快捷方式-Microsoft 文档"  
+[DevToolsCustomizeSettings]: ./customize/index.md#settings "设置-自定义 Microsoft Edge DevTools |Microsoft 文档"  
+[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools 键盘快捷方式 |Microsoft 文档"  
 [DevtoolsOpen]: ./open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools |Twitter"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "适用于 Windows 的 Visual Studio 代码键盘快捷方式 |Visual Studio 代码"  
 
 [WebhintMain]: https://webhint.io "webhint" 
