@@ -39,5 +39,5 @@ interface ICoreWebView2ExecuteScriptCompletedHandler
 
 调用以向实施者提供相应的异步方法调用的完成状态和结果。
 
-> 公共 HRESULT[调用](#invoke)（hresult ERRORCODE，LPCWSTR resultObjectAsJson）
+> 公共 HRESULT[调用](#invoke) (HRESULT ERRORCODE，LPCWSTR resultObjectAsJson) 
 

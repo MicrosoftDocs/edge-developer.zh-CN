@@ -43,9 +43,9 @@ interface ICoreWebView2ExperimentalEnvironment
 
 异步创建用于可视化托管的新 Web 视图。
 
-> 公共 HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)（HWND ParentWindow， [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) * 处理程序）
+> 公共 HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller) (HWND ParentWindow， [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) * 处理程序) 
 
-parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND （并且将需要使用 SendMouseInput/SendPointerInput 转发）。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要调用 put_ParentWindow 以更新可视化树的新父 HWND。
+parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND (并且需要使用 SendMouseInput/SendPointerInput 转发) 。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要调用 put_ParentWindow 以更新可视化树的新父 HWND。
 
 在创建的 CoreWebView2CompositionController 上使用 put_RootVisualTarget 来提供视觉对象以托管浏览器的可视化树。
 
@@ -182,7 +182,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 创建一个空[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)。
 
-> 公共 HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)（[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo）
+> 公共 HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) ([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo) 
 
 在调用 SendPointerInput 之前，需要用所有相关信息填充返回的[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) 。
 
@@ -190,5 +190,5 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 返回与给定 HWND 对应的 ICoreWebView2CompositionController 的 UI 自动化提供程序。
 
-> 公共 HRESULT [GetProviderForHwnd](#getproviderforhwnd)（hwnd HWND，IUnknown * * 提供程序）
+> 公共 HRESULT [GetProviderForHwnd](#getproviderforhwnd) (HWND Hwnd，IUnknown * * 提供程序) 
 
