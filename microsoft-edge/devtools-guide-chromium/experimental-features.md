@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858049"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866041"
 ---
 # 实验功能  
 
@@ -21,10 +22,10 @@ ms.locfileid: "10858049"
 
 ## 启用实验功能  
 
-使用以下步骤打开 Microsoft Edge 中的 "\" （或 "关闭 \"）实验功能。  
+使用以下步骤打开 Microsoft Edge 中的 " (" 或 "关闭" ) 实验功能。  
 
 1.  [打开 DevTools][DevtoolsOpen]。  
-     *   按 `Control` + `Shift` + `I` \ （Windows \）或 `Command` + `Option` + `I` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+     *   按 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  打开 "[设置][DevToolsCustomizeSettings]" 窗格。  
     *   按 `Shift` + `?` 。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  在 "**设置**" 窗格的左侧，选择 "**实验**" 部分。  
@@ -48,19 +49,19 @@ ms.locfileid: "10858049"
 | [启用自定义键盘快捷方式设置选项卡](#enable-custom-keyboard-shortcuts-settings-tab) | 84或更高版本 |
 | [启用新的 CSS 网格调试功能](#enable-new-css-grid-debugging-features) | 85或更高版本 |  
 | [启用支持以在面板之间移动选项卡](#enable-support-to-move-tabs-between-panels) | 85或更高版本 |  
-| [启用 webhint](#enable-webhint) | 85或更高版本 |  
+| [启用 webhint](#enable-webhint) | 85或更高版本 | 
 
 ### 启用自定义键盘快捷方式设置选项卡
 
 在[DevTools 设置][DevToolsCustomizeSettings]中提供新的**快捷方式**页面，在 DevTools 中启用匹配的[键盘快捷方式][DevToolsShortcuts][与代码][VisualstudioCode]。  
 
-启用此实验后，请按 DevTools 再次打开 "[设置][DevToolsCustomizeSettings]" `Shift` + `?` 。  导航到 "新建**快捷方式**" 页面。  **从 "预设**" 下拉列表中选择 " **DevTools" （默认）** ，然后选择 " **Visual Studio 代码**"。  DevTools 中的键盘快捷方式现在与与 VS 代码中的等效操作的快捷方式相匹配。  
+启用此实验后，请按 DevTools 再次打开 "[设置][DevToolsCustomizeSettings]" `Shift` + `?` 。  导航到 "新建**快捷方式**" 页面。  选择 " **)  (DevTools** " 中的 "选择"，然后选择 "**匹配预设的快捷方式**" 下拉列表，然后选择**Visual Studio 代码**  DevTools 中的键盘快捷方式现在与与 VS 代码中的等效操作的快捷方式相匹配。  
 
 :::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="将 DevTools 中的键盘快捷方式与 VS 代码相匹配" lightbox="./media/experiments-keyboard-shortcut.png":::
    将 DevTools 中的键盘快捷方式与 VS 代码相匹配
 :::image-end:::  
 
-例如，在 Windows 上，在[VS 代码][VisualstudioCodeShortcutsKeyboardWindows]中暂停或继续运行脚本的键盘快捷方式是 `F5` 。  通过**DevTools （默认）** 预设，DevTools 中的同一快捷方式， `F8` 但在**Visual Studio 代码**中，该快捷方式现在也是如此 `F5` 。  
+例如，在 Windows 上，在[VS 代码][VisualstudioCodeShortcutsKeyboardWindows]中暂停或继续运行脚本的键盘快捷方式是 `F5` 。  通过**DevTools (Default) **预置，DevTools 中的同一快捷方式， `F8` 但在**Visual Studio 代码**中，该快捷方式现在也是如此 `F5` 。  
 
 ### 启用新的 CSS 网格调试功能  
 
@@ -74,7 +75,7 @@ ms.locfileid: "10858049"
 
 ### 启用支持以在面板之间移动选项卡  
 
-通常，**元素**和**网络**之类的工具只能在 DevTools 的 main \ （top \）面板中打开。  同样， **3D 视图**和**问题**之类的工具可能仅在 DevTools 的抽屉 \ （底部 \）面板中打开。  选择此实验后，你可以通过在选项卡上悬停，打开上下文菜单 \ （右键单击 \），然后选择 "**移到页首**" 或 "**移至底部**"，在顶部面板和底部面板之间移动工具。   此实验允许你自定义 DevTools 布局。  若要显示或隐藏底部面板，请按 `Escape` 。  
+通常，**元素**和**网络**之类的工具可能仅在 DevTools 的 main \ (top \ ) 面板中打开。  同样， **3D 视图**和**问题**之类的工具可能仅在 DevTools 的 "抽屉" (底部 \ ) 面板中打开。  选择此实验后，你可以通过在选项卡上悬停在选项卡上，打开上下文菜单 \ (右键单击 \ ) ，然后选择 "移到**页首**" 或 "**移至底部**"，在顶部面板和底部面板之间移动工具。   此实验允许你自定义 DevTools 布局。  若要显示或隐藏底部面板，请按 `Escape` 。  
 
 :::image type="complex" source="./media/experiments-move-panels.png" alt-text="在面板之间移动选项卡" lightbox="./media/experiments-move-panels.png":::
    在面板之间移动选项卡  

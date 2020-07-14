@@ -7,12 +7,12 @@ ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、兼容性、web 平台
-ms.openlocfilehash: f6c19258c1e82e1ce90a21f6efc04496100c3401
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: 7a443b36c554439c70017aeee52c92f591c566b8
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843975"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866048"
 ---
 # Microsoft Edge 中的影响网站兼容性的更改  
 
@@ -22,11 +22,11 @@ Web 不断发展，以改进用户体验、安全性和隐私。  在某些情�
 |:--- |:--- |:--- |:--- |
 | Cookie 默认为 `SameSite=Lax` | [Chrome 或 Chrome + 1](#release-comments)  | V82、Dev v82 | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关此更改的 Google 的详细信息（包括 Google 的计划时序表），请查看[Chrome 平台状态条目][ChromePlatformStatus5088147346030592]。  |  
 | 引用策略：默认为 `strict-origin-when-cross-origin` | [Chrome 或 Chrome + 1](#release-comments)  | V79、Dev v79 | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关此更改的 Google 的详细信息（包括 Google 的计划时序表），请查看[Chrome 平台状态条目][ChromePlatformStatus6251880185331712]。  |  
-| 在页面消除期间禁止同步 XmlHttpRequest | [Chrome + 1](#release-comments) \ （Edge v83 \） |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  匹配的 Chrome，Microsoft Edge 将提供一个组策略来禁用此更改，直到 Edge 88。  有关此更改的 Google 的详细信息（包括 Google 的计划时序表），请查看[Chrome 平台状态条目][ChromePlatformStatus4664843055398912]。  |  
+| 在页面消除期间禁止同步 XmlHttpRequest | [Chrome + 1](#release-comments) \ (Edge v83 \ )  |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  匹配的 Chrome，Microsoft Edge 将提供一个组策略来禁用此更改，直到 Edge 88。  有关此更改的 Google 的详细信息（包括 Google 的计划时序表），请查看[Chrome 平台状态条目][ChromePlatformStatus4664843055398912]。  |  
 | 显示提示权限请求的微妙提示 |  | V83、Dev v83 | 用户现在可以选择在中发出静音通知请求 `edge://settings/content/notifications` 。  启用此设置后，Microsoft Edge 将在地址栏中为请求使用或 API 向用户发送通知的网站显示一个微妙的请求图标 `Notifications` `Push` 。  这种精致的图标取代了浮出权限提示。  在所有请求通知权限的网站上，在 "未线" 和 "开发" 的实验中，对于某些用户，默认情况下会打开此行为。  用户可能会选择退出 `edge://settings/content/notifications` 。  将来，Microsoft edge 团队可能会根据用户行为和其他输入来浏览在特定情况下显示出控件提示。  |  
 | 默认情况下禁用 TLS/1.0 和 TLS/1。1 | Edge v84 |  | 若要帮助发现受影响的网站，你可以将该 `edge://flags/#display-legacy-tls-warnings` 标志设置为导致 Microsoft Edge 在加载需要旧版 TLS 协议的页面时显示非阻止 "不安全" 通知。  [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion]组策略允许重新启用 TLS/1.0 和 tls/1.1;该策略将保持可用，直到 Edge 88。  |  
-| 阻止混合内容下载 | [Chrome + 1](#release-comments) \ （Edge v85 \）  |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关此更改的 Google 的详细信息（包括 Google 的计划时序表），请查看[google 安全博客条目][GoogleBlogSecurity20200206]。  在 Chrome 之后的一个版本计划中，Microsoft 推出针对警告或阻止的文件类型的推出计划。  |  
-| 弃用 AppCache | [Chrome + 1](#release-comments) \ （Edge v86 \）  |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息，请参阅[WebDev 文档][WebDevAppCacheRemoval]。  针对 "弃用" 的 Microsoft 推出计划计划在 Chrome 之后的一个发布。  请求[AppCache OriginTrial 令牌][AppCacheOriginTrial]允许网站继续使用已弃用的 API，直到 Edge v90。 |  
+| 阻止混合内容下载 | [Chrome + 1](#release-comments) \ (Edge v86 \ )   |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关此更改的 Google 的详细信息（包括 Google 的计划时序表），请查看[google 安全博客条目][GoogleBlogSecurity20200206]。  在 Chrome 之后的一个版本计划中，Microsoft 推出针对警告或阻止的文件类型的推出计划。  |  
+| 弃用 AppCache | [Chrome + 1](#release-comments) \ (Edge v86 \ )   |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息，请参阅[WebDev 文档][WebDevAppCacheRemoval]。  针对 "弃用" 的 Microsoft 推出计划计划在 Chrome 之后的一个发布。  请求[AppCache OriginTrial 令牌][AppCacheOriginTrial]允许网站继续使用已弃用的 API，直到 Edge v90。 |  
 | 删除 Adobe Flash | Edge v88  |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息，请查看[Adobe Flash Chromium 路线图][ChromiumFlashRoadmapSupportRemoved]。  | 
 ##### 发布评论  
 
@@ -58,7 +58,7 @@ Web 不断发展，以改进用户体验、安全性和隐私。  在某些情�
 [ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookie 默认为 SameSite = 不严格-Chrome 平台状态"  
 [ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "引用策略：默认情况下为 "严格"-"在原点时"-"交叉时"-Chrome 平台状态"  
 
-[ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "从 Chromium 中删除的 Flash 支持（目标： Chrome 88 +-Jan 2021）-Flash 路线图 |Chromium 项目"  
+[ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "从 Chromium 中删除的 Flash 支持 (目标： Chrome 88 +-2021) -Flash 路线图 |Chromium 项目"  
 
 [GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "保护用户不受 Google Chrome-Google Online 安全博客中的不安全下载" 
 
