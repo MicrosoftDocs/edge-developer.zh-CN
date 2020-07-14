@@ -8,23 +8,23 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/23/2020
-  localization_priority: Priority
-  ms.openlocfilehash: 52f768582f25f35f8b0b188cfc1a38edc7aac6c8
-  ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
+  ms.date: 07/10/2020
+  ms.localizationpriority: high
+  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
+  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/26/2020
-  ms.locfileid: "10678216"
+  ms.lasthandoff: 07/13/2020
+  ms.locfileid: "10866055"
 highlightedContent:
   items:
-  - title: 下载 Microsoft Edge （正式稳定频道）
+  - title: '下载 Microsoft Edge (正式的稳定频道) '
     itemType: download
     url: https://www.microsoft.com/edge
   - title: 下载 Microsoft Edge Insider Channels
     itemType: download
     url: https://www.microsoft.com/edge/business/download
-  - title: 最近更新
+  - title: 新增功能
     itemType: whats-new
     url: https://www.microsoftedgeinsider.com/whats-new
 productDirectory:
@@ -71,8 +71,8 @@ productDirectory:
     imageSrc: /media/common/i_support.svg
     links:
     - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
-      text: 企业技术社区（体验成员关注）
-  - title: 企业版扩展
+      text: '企业技术社区 (预览体验成员) '
+  - title: 适用于企业的扩展
     imageSrc: /media/common/i_extensions.svg
     links:
     - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
@@ -93,10 +93,10 @@ conceptualContent:
       text: 新增功能
     - url: /microsoft-edge/devtools-guide-chromium/open
       itemType: reference
-      text: 打开 DevTools
+      text: 打开开发工具
     - url: /microsoft-edge/devtools-guide-chromium/beginners/html
       itemType: reference
-      text: 初学者的 DevTools
+      text: 面向初学者的开发工具
     - url: /microsoft-edge/devtools-guide-chromium/css/index
       itemType: reference
       text: CSS
@@ -113,7 +113,7 @@ conceptualContent:
       text: 控制台
     - url: /microsoft-edge/devtools-guide-chromium/network/index
       itemType: reference
-      text: 网络
+      text: Network
     - url: /microsoft-edge/devtools-guide-chromium/storage/cookies
       itemType: reference
       text: 存储
@@ -142,7 +142,7 @@ conceptualContent:
       text: 深色主题
     - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
       itemType: reference
-      text: 区
+      text: 工作区
     - url: /microsoft-edge/devtools-guide-chromium/shortcuts
       itemType: reference
       text: 键盘快捷方式
@@ -151,7 +151,7 @@ conceptualContent:
     - text: 辅助功能
       itemType: reference
       url: /microsoft-edge/accessibility
-    - text: DevTools 协议（Chromium）
+    - text: 开发人员工具协议（Chromium）
       itemType: reference
       url: /microsoft-edge/devtools-protocol-chromium
     - text: WebDriver (Chromium)
@@ -160,7 +160,7 @@ conceptualContent:
     - text: Puppeteer
       itemType: reference
       url: /microsoft-edge/puppeteer
-    - text: 互操作（网站兼容性）
+    - text: '互操作 (网站兼容性) '
       itemType: reference
       url: /microsoft-edge/web-platform/site-impacting-changes
     - text: webhint
@@ -195,7 +195,7 @@ conceptualContent:
       text: 分发扩展的备用方法
     - url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
       itemType: reference
-      text: 本机消息
+      text: 本机消息传递
   - title: 扩展：发布到 Microsoft Store
     links:
     - url: /microsoft-edge/extensions-chromium/publish/publish-extension
@@ -225,7 +225,7 @@ conceptualContent:
     links:
     - url: /microsoft-edge/progressive-web-apps-chromium/index
       itemType: reference
-      text: 概述（Chromium）
+      text: '概述 (Chromium) '
     - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
       itemType: reference
       text: 将 DevTools 与渐进式 Web 应用配合使用
@@ -255,15 +255,15 @@ additionalContent:
         text: 隐私白皮书
     - title: Microsoft Edge 旧式文档
       links:
-      - text: 开发人员指南（EdgeHTML）
+      - text: " (EdgeHTML 的开发指南) "
         url: /microsoft-edge/dev-guide
-      - text: DevTools (EdgeHTML)
+      - text: 开发人员工具（EdgeHTML）
         url: /microsoft-edge/devtools-guide
-      - text: DevTools 协议（EdgeHTML）
+      - text: 开发人员工具协议（EdgeHTML）
         url: /microsoft-edge/devtools-protocol/index
       - text: 扩展（EdgeHTML）
         url: /microsoft-edge/extensions/index
-      - text: PWAs （EdgeHTML）入门
+      - text: PWAs (EdgeHTML) 入门
         url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
       - text: JavaScript 运行时托管
         url: /microsoft-edge/hosting/javascript-runtime-hosting
