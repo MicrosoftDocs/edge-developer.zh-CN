@@ -1,27 +1,27 @@
 ---
 description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+title: 0.9.515-WebView2。 CoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 5626677c3103b4f85ea5d6417beda29337168157
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: e5b5392ef4b681f3aec3b7850f4ad9e2d9b595e8
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697649"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877670"
 ---
-# CoreWebView2EnvironmentOptions 类的 WebView2 
+# 0.9.515-WebView2 的 CoreWebView2EnvironmentOptions 类 
 
 > [!NOTE]
 > SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
 
 命名空间： Microsoft WebView2 \
-程序集： Microsoft WebView2
+程序集： Microsoft.Web.WebView2.Core.dll
 
 用于创建 WebView2 环境的选项。
 

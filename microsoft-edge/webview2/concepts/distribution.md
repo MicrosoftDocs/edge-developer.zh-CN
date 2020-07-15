@@ -3,17 +3,17 @@ description: 使用 Microsoft Edge WebView2 发布应用时的分发选项
 title: Microsoft Edge WebView2 应用程序的分发
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: b76ebcd4ebc30e30083e742a5e84075a5c6ef779
-ms.sourcegitcommit: bb62099215e4f610f8561250fa943f58a0f836b0
+ms.openlocfilehash: 1b7ebf9dde594b7cdac3b41915fa9d9187d09da1
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "10846015"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879175"
 ---
 # 使用 WebView2 的应用程序的分发  
 
@@ -54,7 +54,7 @@ Microsoft Edge 稳定频道可能未安装在应用程序运行的所有用户�
 
 1.  下载最新的长[绿 WebView2 运行时安装程序][Webview2Installer]。  
 1.  在应用程序安装程序或更新程序中包括安装程序。  
-1.  在应用程序安装或更新过程中，通过使用[GetAvailableCoreWebView2BrowserVersionString](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#getavailablecorewebview2browserversionstring) API 并检查 versionInfo 是否为 NULL 来检查用户计算机上是否已安装了长时间 WebView2 运行时。 如果未安装，应用程序安装程序/更新程序可以从提升的进程或命令提示符处无提示地调用运行时安装程序 `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` 。 
+1.  在应用程序安装或更新过程中，通过使用[GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) API 并检查 versionInfo 是否为 NULL 来检查用户计算机上是否已安装了长时间 WebView2 运行时。 如果未安装，应用程序安装程序/更新程序可以从提升的进程或命令提示符处无提示地调用运行时安装程序 `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` 。 
 
 你可能需要更改上述工作流，具体取决于你的方案。  例如，你的应用程序安装程序可能会下载长绿 WebView2 运行时安装程序，而不是将其包含在你的应用程序包中。  
 

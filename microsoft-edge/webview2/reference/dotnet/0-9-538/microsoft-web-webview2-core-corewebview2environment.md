@@ -1,24 +1,24 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
+title: CoreWebView2Environment 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 3af7c02f51a203e434c92bac5219dc4db58f406b
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
+ms.openlocfilehash: 79bc9908d0fd12d4606311b959cbc6bc0c384c2d
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698427"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878916"
 ---
 # CoreWebView2Environment 类的 WebView2 
 
 命名空间： Microsoft WebView2 \
-程序集： Microsoft WebView2
+程序集： Microsoft.Web.WebView2.Core.dll
 
 这表示 WebView2 环境。
 

@@ -1,21 +1,21 @@
 ---
 description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+title: 0.8.355-WebView2 Win32 c + + 全局
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge
-ms.openlocfilehash: 58b32c1fe46183e55b8ac0bb4f4264b1f38e6eeb
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 5ee2461ca1b0aeb0a5f0d23f0918561065570523
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652803"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877985"
 ---
-# 变量 
+# 0.8.355-Globals 
 
 > [!NOTE]
 > 此接口可能会在 SDK 版本0.8.355 后更改或不可用。 请参阅[参考](../../../webview2-api-reference.md)了解最新的 API 参考。
@@ -37,7 +37,7 @@ ms.locfileid: "10652803"
 
 DLL 导出以使用自定义版本的 Edge、用户数据目录和/或其他浏览器开关创建 WebView2 环境。
 
-browserExecutableFolder 是包含嵌入边缘的文件夹的相对路径。 可以通过复制已安装边缘的命名文件夹的版本（如已安装的73.0.52.0 边缘的73.0.52.0 子文件夹）来获取嵌入的边缘。 该文件夹应具有 msedge、msedge 等。为 browserExecutableFolder 使用 null 或空字符串，以使用计算机上安装的 Edge 创建 Web 视图，在这种情况下，API 将根据通道首选项尝试查找在计算机上安装的边缘兼容版本。
+browserExecutableFolder 是包含嵌入边缘的文件夹的相对路径。 可以通过复制已安装边缘的命名文件夹的版本（如已安装的73.0.52.0 边缘的73.0.52.0 子文件夹）来获取嵌入的边缘。 文件夹应具有 msedge.exe、msedge.dll 等。为 browserExecutableFolder 使用 null 或空字符串，以使用计算机上安装的 Edge 创建 Web 视图，在这种情况下，API 将根据通道首选项尝试查找在计算机上安装的边缘兼容版本。
 
 默认通道搜索顺序为稳定、beta、dev 和未固定。 如果存在替代值 WEBVIEW2_RELEASE_CHANNEL_PREFERENCE 环境变量或适用的 releaseChannelPreference 注册表值为1，则将反转频道搜索顺序。
 
@@ -74,7 +74,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 当发现具有非空值时，这表示 Web 视图正在脚本调试程序下启动，该调试程序还支持使用多个 WebViews 的主机应用程序。 该值用作命名管道的标识符，该管道将在由宿主应用程序创建新的 Web 视图时打开并写入。 负载将与远程调试端口 JSON 目标的负载匹配，并可供外部调试器用于附加到特定的 Web 视图实例。 调试器创建的管道的格式应该是： `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}` where：
 
-* `{app_name}` 是主机应用程序 exe 文件名，例如 WebView2Example
+* `{app_name}` 是主机应用程序 exe 文件名，例如 WebView2Example.exe
 
 * `{pipe_name}` 是为 WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER 设置的值。
 

@@ -1,21 +1,21 @@
 ---
-description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部件2控件中
-title: 适用于 Win32 应用的 Microsoft Edge Web 视图2
+description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
+title: WebView2 Win32 c + + 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: f2f379b5c30d1e0cfbdeccdcbf495728febc6902
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 59302f8a1c6f38f2e5688b05faa79d97d51b5409
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698566"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879140"
 ---
-# 参考（WebView2）  
+# 引用（WebView2 Win32 c + +）  
 
 使用 Microsoft Edge WebView2 控件，你可以使用[Microsoft edge \ （Chromium \）](https://www.microsoftedgeinsider.com)作为呈现引擎将 web 内容托管在你的应用程序中。  有关详细信息，请参阅[Microsoft Edge WebView2 概述](../../index.md)）和[WebView2 入门](../../gettingstarted/win32.md)。  [ICoreWebView2](0-9-538/ICoreWebView2.md)是开始学习 API 详细信息的绝佳位置。  
 

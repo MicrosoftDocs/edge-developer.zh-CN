@@ -1,21 +1,21 @@
 ---
 description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+title: 0.8.355-WebView2 Win32 c + + IWebView2WebView
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge
-ms.openlocfilehash: 5c84cfb703c8901560307b7bba8bc7887cb19377
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 7ef58d19bc5284a3e71dc8be16f3865239047a10
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652808"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878118"
 ---
-# interface IWebView2WebView 
+# 0.8.355-接口 IWebView2WebView 
 
 > [!NOTE]
 > 此接口可能会在 SDK 版本0.8.355 后更改或不可用。 请参阅[参考](../../../webview2-api-reference.md)了解最新的 API 参考。
@@ -97,7 +97,7 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 
 导航事件的正常序列是 NavigationStarting、DocumentStateChanged 和 NavigationCompleted。
 
-![dot-inline-dotgraph-1](media/dot-inline-dotgraph-1.png)
+![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
 
 请注意，这适用于具有相同的 NavigationId 事件参数的导航事件。 具有不同 NavigationId 事件参数的导航事件可能会重叠。 例如，如果你为其 NavigationStarting 事件启动导航等待，然后开始另一个导航，你将看到第一个导航的 NavigationStarting，后跟第二个导航的 NavigationStarting，然后是第一个导航的 NavigationCompleted 以及第二个导航的所有其余导航事件。 在错误情况下，可能会有也可能不是 DocumentStateChanged 事件，具体取决于导航是否转到错误页面。 在 HTTP 重定向时，一行中将有多个 NavigationStarting 事件，并且第一个事件将设置其 IsRedirect 标志。
 
@@ -107,11 +107,11 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 
 WebView2 使用与 Edge web 浏览器相同的进程模型。 用户会话中每个指定的用户数据目录都有一个 Edge 浏览器进程，该进程将为指定用户数据目录的任何 WebView2 调用进程提供服务。 这意味着一个 Edge 浏览器进程可能正在为多个呼叫流程提供服务，并且一个呼叫进程可能正在使用多个 Edge 浏览器进程。
 
-![dot-inline-dotgraph-2](media/dot-inline-dotgraph-2.png)
+![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
 
 浏览器进程关闭时，将出现一些数量的呈现器进程。 根据需要创建这些类，以在不同的 WebViews 中服务潜在的多个帧。 呈现器进程的数量因网站隔离浏览器功能和呈现在关联的 WebViews 中的独特断开的来源的数量而异。
 
-![dot-inline-dotgraph-3](media/dot-inline-dotgraph-3.png)
+![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
 
 你可以使用 ProcessFailure 事件对这些浏览器和呈现器进程中的崩溃和挂起做出反应。
 
