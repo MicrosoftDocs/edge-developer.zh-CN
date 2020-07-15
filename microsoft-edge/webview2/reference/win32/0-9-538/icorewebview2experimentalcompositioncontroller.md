@@ -1,19 +1,19 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
+title: WebView2 Win32 c + + ICoreWebView2ExperimentalCompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 7ae58e35ccaa66e4a711f8e32e06459eb2208b67
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExperimentalCompositionController
+ms.openlocfilehash: e2b16cfd9095d43eb01d7e6233da2857c12a04ad
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698454"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880029"
 ---
 # interface ICoreWebView2ExperimentalCompositionController 
 

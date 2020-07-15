@@ -1,24 +1,24 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
+title: WinForms WebView2 的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
-ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
+keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、WebView2、浏览器控件、边缘 html、winforms。 WebView2。
+ms.openlocfilehash: 7d707c2a6ecb8127074735f06ba6d4f1f28eea0c
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10687802"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879448"
 ---
 # WinForms 类 WebView2 WebView2 
 
 命名空间： WebView2 \ WinForms \
-程序集： Microsoft WebView2
+程序集： Microsoft.Web.WebView2.WinForms.dll
 
 ```
 class Microsoft.Web.WebView2.WinForms.WebView2
@@ -164,7 +164,7 @@ Web 视图的缩放系数。
 
 > 公共异步任务< 字符串 > [ExecuteScriptAsync](#executescriptasync)（字符串脚本）
 
-这等效于 CoreWebView2 上的 ExecuteScriptAsync 方法。 如果基础 CoreWebView2 尚未初始化，此方法将引发 InvalidOperationException。 有关详细信息，请参阅 CoreWebView2 文档。
+这等效于 CoreWebView2 上的 ExecuteScriptAsync 方法。 如果基础 CoreWebView2 尚未初始化，此方法将引发 InvalidOperationException。 有关详细信息，请参阅 CoreWebView2.ExecuteScriptAsync 文档。
 
 #### GoBack 
 

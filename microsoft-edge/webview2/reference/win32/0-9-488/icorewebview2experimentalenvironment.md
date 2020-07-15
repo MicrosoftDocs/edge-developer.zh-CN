@@ -1,21 +1,21 @@
 ---
 description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+title: 0.9.515-WebView2 Win32 c + + ICoreWebView2ExperimentalEnvironment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 4adfa6fa899ce5079f9a1dc2cad78673d2cc899d
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d5b41334ad3c46e1a3d2e8642479555f2062c1c2
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653105"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880617"
 ---
-# interface ICoreWebView2ExperimentalEnvironment 
+# 0.9.515-接口 ICoreWebView2ExperimentalEnvironment 
 
 > [!NOTE]
 > 这是使用预发行 SDK 版本0.9.488 随附的实验性 API。
@@ -43,9 +43,9 @@ interface ICoreWebView2ExperimentalEnvironment
 
 异步创建用于可视化托管的新 Web 视图。
 
-> 公共 HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller) (HWND ParentWindow， [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) * 处理程序) 
+> 公共 HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)（HWND ParentWindow， [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) * 处理程序）
 
-parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND (并且需要使用 SendMouseInput/SendPointerInput 转发) 。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要调用 put_ParentWindow 以更新可视化树的新父 HWND。
+parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND （并且将需要使用 SendMouseInput/SendPointerInput 转发）。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要调用 put_ParentWindow 以更新可视化树的新父 HWND。
 
 在创建的 CoreWebView2CompositionController 上使用 put_RootVisualTarget 来提供视觉对象以托管浏览器的可视化树。
 
@@ -182,7 +182,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 创建一个空[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)。
 
-> 公共 HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) ([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo) 
+> 公共 HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)（[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo）
 
 在调用 SendPointerInput 之前，需要用所有相关信息填充返回的[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) 。
 
@@ -190,5 +190,5 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 返回与给定 HWND 对应的 ICoreWebView2CompositionController 的 UI 自动化提供程序。
 
-> 公共 HRESULT [GetProviderForHwnd](#getproviderforhwnd) (HWND Hwnd，IUnknown * * 提供程序) 
+> 公共 HRESULT [GetProviderForHwnd](#getproviderforhwnd)（hwnd HWND，IUnknown * * 提供程序）
 

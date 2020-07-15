@@ -1,19 +1,19 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
+title: WebView2 Win32 c + + ICoreWebView2NewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2NewWindowRequestedEventArgs
+ms.openlocfilehash: bb18b6662fd5921406e19b3c333c97f8a1cd0dbc
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751847"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879434"
 ---
 # interface ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,7 +52,7 @@ Webview.newwindowrequested 事件的事件参数。
 
 > public HRESULT [get_IsUserInitiated](#get_isuserinitiated)（BOOL * IsUserInitiated）
 
-WebView2 控件可能会显示弹出窗口，因为弹出窗口阻止程序处于关闭状态。 若要阻止显示非用户启动的弹出窗口，请使用 `get_IsUserInitiated` 。
+对 Web 视图禁用了边缘弹出窗口阻止程序，以便应用可以使用此标志来阻止非用户启动的弹出窗口。
 
 #### get_NewWindow 
 
@@ -89,3 +89,4 @@ NewWindowRequest 的目标 uri。
 > 公共 HRESULT [put_NewWindow](#put_newwindow)（[ICoreWebView2](icorewebview2.md) * NewWindow）
 
 不应导航目标 web 视图。 如果设置了 NewWindow，其顶级窗口将返回为打开的 WindowProxy。
+

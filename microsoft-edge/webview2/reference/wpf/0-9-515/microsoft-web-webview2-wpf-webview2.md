@@ -1,24 +1,24 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 内容
-title: 适用于 Win32 应用的 Microsoft Edge WebView2
+description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
+title: WebView2 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: a0030e1a2a77d65963bd8333f2071485ab2fe308
-ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
+keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、WebView2、浏览器控件、边缘 html、。 WebView2
+ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10687795"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880260"
 ---
 # WebView2 类的 WebView2 
 
 命名空间： Microsoft WebView2 \
-程序集： Microsoft WebView2
+程序集： Microsoft.Web.WebView2.Wpf.dll
 
 ```
 class Microsoft.Web.WebView2.Wpf.WebView2
@@ -194,7 +194,7 @@ Web 视图当前正在显示的顶级 Uri （或将在其 CoreWebView2 的初始
 
 > 公共异步任务< 字符串 > [ExecuteScriptAsync](#executescriptasync)（字符串 javaScript）
 
-等同于在 CoreWebView2 上调用 CoreWebView2 ExecuteScriptAsync
+等效于在 CoreWebView2 上调用 CoreWebView2.ExecuteScriptAsync
 
 ##### 异常
 * `InvalidOperationException` 如果 CoreWebView2 尚未初始化，则抛出。
