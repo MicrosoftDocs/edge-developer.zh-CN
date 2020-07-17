@@ -1,18 +1,18 @@
 ---
 description: 通过本机应用功能逐步增强 PWA for Windows
-title: 定制你的 PWA for Windows
+title: 定制你的 PWA （EdgeHTML） for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 渐进式 web 应用、PWA、Edge、Windows、WinRT、UWP、EdgeHTML
-ms.openlocfilehash: 5bad708db5b13517fd1887214a5e1d5457796ee2
-ms.sourcegitcommit: e07de36ee9fbe20422ffc2c62b98839851e1b02b
+ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604009"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882784"
 ---
 # 定制你的 PWA （EdgeHTML） for Windows  
 
@@ -47,7 +47,7 @@ Windows 10 上安装的 PWAs 可享受以[通用 Windows 平台 \ （UWP \）][W
     ![UWP 项目目标版本的 Visual Studio 选择对话框](media/vs-target-min-version.png)  
 
     新项目将在 package.appxmanifest 设计器打开的情况中加载。  你可以在此处配置应用的详细信息，包括程序包标识、程序包依赖项、所需功能、可视化元素和扩展性点。  这是在应用开发期间使用的应用包清单的一个易于配置的临时版本。  
-    当你生成应用项目时，Visual Studio 将从此元数据[生成一个 package.appxmanifest][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest]文件，用于安装和运行你的应用。  每当更新文件时 `package.appxmanifest` ，请确保重新生成项目，这样两个项目都将在 `AppxManifest.xml` 运行时反映出来。  
+    当你生成应用项目时， [Visual Studio][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest]将通过此元数据生成 AppxManifest.xml文件，用于安装和运行你的应用。  每当更新文件时 `package.appxmanifest` ，请确保重新生成项目，这样两个项目都将在 `AppxManifest.xml` 运行时反映出来。  
 
 1.  在清单设计器 "**应用程序**" 面板中，输入 PWA 的 URL 作为 `Start page` 。
 
@@ -69,7 +69,7 @@ Windows 10 上安装的 PWAs 可享受以[通用 Windows 平台 \ （UWP \）][W
     你已准备好将 PWA 作为 Windows 10 应用进行运行和调试。  如果您使用 localhost 网站逐步完成本指南，请确保它正在运行。  并  
 1.  生成 \ （ `Ctrl` + `Shift` + `F5` \）并运行 `F5` PWA 项目。  您的网站现在应该在独立应用窗口中启动。  它不仅是托管 web 应用;它作为在 Windows 10 上安装的渐进式 Web 应用运行！  
 
-    ![在 WWAHost 窗口中运行的 PWA](media/wwahost.png)  
+    ![在 WWAHost.exe 窗口中运行的 PWA](media/wwahost.png)  
 
 ## 以 Windows 应用的形式调试 PWA \ （EdgeHTML \）  
 
@@ -306,7 +306,7 @@ if(window.Windows && Windows.Media.SpeechRecognition){
 [PwaIndexWindows10]: ./index.md#pwas-on-windows-10-edgehtml "Windows 10 上的 PWAs （EdgeHTML）-在 Windows 上渐进 Web 应用"  
 [DevToolsGuide]: ../devtools-guide.md "Microsoft Edge （EdgeHTML）开发人员工具"  
 [DevToolsGuideMicrosoftStoreApp]: ../devtools-guide.md#microsoft-store-app "Microsoft Store 应用-Microsoft Edge （EdgeHTML）开发人员工具"  
-[DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "服务工作人员"  
+[DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "服务工作进程"  
 [DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview-DevTools 协议客户端"  
 [DevGuideWhatsNew]: ../dev-guide/whats-new.md "EdgeHTML 中的新增功能"  
 [WindowsRuntime]: ../windows-runtime/index.md "适用于 JavaScript 的 Windows 运行时（WinRT）"  

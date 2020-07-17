@@ -1,20 +1,20 @@
 ---
 description: Microsoft Edge DevTools 协议版本0.2 支持以下工具客户端。
-title: Microsoft Edge DevTools 协议版本0.2 客户端
+title: Microsoft Edge DevTools 协议版本0.2 客户端（EdgeHTML）
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 657d594b85c47cc1d5c80b8f2ac3ecc4bd4e4502
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 92976de257a73fd7206205622a4c79d1277b3950
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563414"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882889"
 ---
-# DevTools 协议客户端
+# Microsoft Edge DevTools 协议版本0.2 客户端（EdgeHTML）  
 
 > [!NOTE]
 > Microsoft Edge DevTools 协议的版本0.2 仅适用于[windows 10 10 月2018更新](/windows/uwp/whats-new/windows-10-build-17763)及更高版本的[Windows 预览体验计划预览版](https://insider.windows.com/en-us/getting-started/)。  
@@ -23,7 +23,7 @@ ms.locfileid: "10563414"
 
 [ ![ Microsoft Edge DevTools 预览](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [ ![ visual studio 代码](../media/visual-studio-code.png)](#visual-studio-code) [ ![ Microsoft Visual studio 15.8](../media/visual-studio-2017.png)](#microsoft-visual-studio)
 
-## Microsoft Edge DevTools 预览
+## Microsoft Edge DevTools 预览版
 
 你可以使用独立的[**Microsoft Edge DevTools 预览版**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab)microsoft Store 中的 Windows 10 应用来远程调试运行 microsoft Edge 的主机设备（[EdgeHTML 17](../../dev-guide.md)或更高版本）。
 

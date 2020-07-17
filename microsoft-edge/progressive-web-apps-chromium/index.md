@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: 482f498e246ee265424f7b80ff3cd67f78501ee2
-ms.sourcegitcommit: 9169d784485e3cb0b1987a8f395c4bb688bd9b2e
+ms.openlocfilehash: 90740bac07ebfd74f89e2524e6955621e1b09b05
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "10583033"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882805"
 ---
 # Windows 上的渐进式 Web 应用  
 
@@ -86,33 +86,31 @@ ms.locfileid: "10583033"
 > [!IMPORTANT]
 > 若要针对使用 JavaScript 进行 WinRT API 请求的 Windows 10 专门定制 PWAs，请参阅[特定于 EDGEHTML PWA 功能的文档][PwaEdgehtmlIndex]。  了解有关在 Windows 10 上测试 PWA 并将其分发到 Microsoft Store 的详细信息。  
 
+> [!NOTE]
+> 有关 PWA 好处、即将推出的功能和简短演示的概述，请查看[内部版本 2020 pwa 会话][BuildVideo]。 
+
 ## 要求  
 
 若要作为 PWA 运行，服务器托管的 web 应用应包括以下最低要求。  
 
-|  | 要求 | 详细信息 | 
-|:--- |:--- |:--- |  
-| X | [HTTPS][WikiHttps] | 通过为服务器或应用通信提供安全连接来保护你的用户。  服务工作者和其他 PWA 技术仅适用于通过安全连接提供的 web 资源 \ （或来自 `localhost` 于调试目的 \）。  |  
-| X | [服务工作人员][MDNServiceWorkerApi] | 使用服务工作线程在服务器和客户端应用之间充当网络代理，以便提供脱机支持、资源缓存、推送通知、后台数据同步和页面加载性能优化。  |  
-| X | [Web App 清单][MDNWebAppManifest] | 提供基于 JSON 的元数据文件，描述有关你的 web 应用的关键信息 \ （如图标、语言和 URL 入口点 \），以便 Windows 10 和其他主机平台能够为你的 PWA 用户提供可安装的、具有类似应用的体验。  |  
+| 要求 | 详细信息 | 
+|:--- |:--- |  
+| [HTTPS][WikiHttps] | 通过为服务器或应用通信提供安全连接来保护你的用户。  服务工作者和其他 PWA 技术仅适用于通过安全连接提供的 web 资源 \ （或来自 `localhost` 于调试目的 \）。  |  
+| [服务工作进程][MDNServiceWorkerApi] | 使用服务工作线程在服务器和客户端应用之间充当网络代理，以便提供脱机支持、资源缓存、推送通知、后台数据同步和页面加载性能优化。  |  
+| [Web App 清单][MDNWebAppManifest] | 提供基于 JSON 的元数据文件，描述有关你的 web 应用的关键信息 \ （如图标、语言和 URL 入口点 \），以便 Windows 10 和其他主机平台能够为你的 PWA 用户提供可安装的、具有类似应用的体验。  |  
 
 若要成为绝佳的 PWA，你的应用还必须满足以下要求。  
 
-|  | 要求 | 详细信息 | 
-|:--- |:--- |:--- |  
-| X | [跨浏览器兼容性][MDNCrossBrowserTesting] | 通过在不同的浏览器和环境中进行[测试][MicrosoftDeveloperEdgeToolsRemote]，确保你的 PWA 正常工作。  |  
-| X | [响应式设计][WikiResponsiveWebDesign] | 使用具有 CSS[网格][MDNCssGridLayout]、 [flexbox][MDNCssFlexibleBoxLayout]、CSS[网格][MDNCssGridLayout]和[flexbox][MDNCssFlexibleBoxLayout] 、[媒体查询][MDNMediaQueries]和[响应图像][MDNResponsiveImages]的流畅布局和灵活的图像，将你的 UX 调整到你的用户设备。  使用浏览器中的[设备仿真工具][DevToolsGuide|::ref1::|]进行本地测试，或设置[远程调试会话][DevToolsProtocolClientsEdgeDevToolsPreview]以在目标设备上直接测试。  |  
-| X | [深层链接][WikiDeepLinking] | 将网站的每个页面路由到唯一的 URL，以便现有用户可以通过社交媒体共享帮助您更多的受众参与。  |  
-| X | [最佳实践][Webhint] | 使用[Webhint][Webhint] linter 之类的代码质量工具来优化应用的效率、可靠性、安全性和辅助功能。  |  
-| X | [Chromium PWA 清单][WebDevGoodPwaChecklist] | 对照 Google 基线 PWA 清单检查 PWA。  |  
+| 要求 | 详细信息 | 
+|:--- |:--- |  
+| [跨浏览器兼容性][MDNCrossBrowserTesting] | 通过在不同的浏览器和环境中进行[测试][MicrosoftDeveloperEdgeToolsRemote]，确保你的 PWA 正常工作。  |  
+| [响应式设计][WikiResponsiveWebDesign] | 使用具有 CSS[网格][MDNCssGridLayout]、 [flexbox][MDNCssFlexibleBoxLayout]、CSS[网格][MDNCssGridLayout]和[flexbox][MDNCssFlexibleBoxLayout] 、[媒体查询][MDNMediaQueries]和[响应图像][MDNResponsiveImages]的流畅布局和灵活的图像，将你的 UX 调整到你的用户设备。  使用浏览器中的[设备仿真工具][DevToolsGuide|::ref1::|]进行本地测试，或设置[远程调试会话][DevToolsProtocolClientsEdgeDevToolsPreview]以在目标设备上直接测试。  |  
+| [深层链接][WikiDeepLinking] | 将网站的每个页面路由到唯一的 URL，以便现有用户可以通过社交媒体共享帮助您更多的受众参与。  |  
+| [最佳实践][Webhint] | 使用[Webhint][Webhint] linter 之类的代码质量工具来优化应用的效率、可靠性、安全性和辅助功能。  |  
+| [Chromium PWA 清单][WebDevGoodPwaChecklist] | 对照 Google 基线 PWA 清单检查 PWA。  |  
 
 如果要将 PWA 转换为[Microsoft Store][MicrosoftDeveloperStore]应用程序，请转到 "[渐进 Web 应用（EdgeHTML）][PwaEdgehtmlMicrosoftStore] " 文档。  
-
-## 当前可用性  
-
-浏览器引擎支持针对多个体系结构组件的渐进 Web 应用请求，最重要的是[获取 API][MDNFetchApi]基础的网络基础结构。  
-
-对于 Microsoft Edge \ （Chromium \），浏览器平台包括对在支持 Microsoft Edge \ （Chromium \）的设备上工作的这些功能的完全支持。  
+  
 
 <!-- image links -->  
 
@@ -131,7 +129,7 @@ ms.locfileid: "10583033"
 <!-- links -->  
 
 [DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview-DevTools 协议客户端"  
-[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "仿真"  
+[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "枚举"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps.md "调试渐进式 Web 应用"  
 [DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "EdgeHTML 17 中的新增功能"  
 [DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "EdgeHTML 14 中的新增功能"  
@@ -181,6 +179,8 @@ ms.locfileid: "10583033"
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作者 API |MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager |MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App 清单 |MDN"  
+
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA 视频"
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 

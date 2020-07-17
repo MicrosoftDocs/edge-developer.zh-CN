@@ -1,20 +1,20 @@
 ---
 description: 确保 PWA 为 Xbox 提供了出色的体验
-title: 定制你的 PWA for Windows
+title: 适用于 Xbox One 的渐进 Web 应用
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 渐进式 web 应用、PWA、Edge、Windows、UWP、Xbox、Xbox One、TVJS
-ms.openlocfilehash: 8c2660c8821826660d2030f832ae449ff4a061ad
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dfa2b2d252bb788c0010017de57ab147d407c5f7
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564563"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882847"
 ---
-# 适用于 Xbox One 的渐进 Web 应用
+# 适用于 Xbox One 的渐进 Web 应用  
 
 你可以扩展 web 应用程序，并通过 Microsoft Store 将其用作 Xbox One 应用，同时仍继续使用你的现有框架、CDN 和服务器后端。  与所有通用 Windows 平台（UWP）应用一样，在 Xbox One 上运行的渐进式 Web 应用（PWAs）也可以调用本机 Windows 10 Api。  已有许多 PWAs 可用于 Xbox One，尤其是在[媒体播放应用](#media-pwas-on-xbox)的类别中。  
 
@@ -28,10 +28,10 @@ ms.locfileid: "10564563"
 
 ### 选项1： PWA 生成器
 
-[PWA 生成器](https://www.pwabuilder.com/)是可以从节点程序包管理器（NPM）安装的 node.js 应用。 它使用您的网站的元数据在 Android、iOS 和 Windows 之间生成本机托管应用。 如果您的网站已有[web 应用清单](https://developer.mozilla.org/docs/Web/Manifest)，PWA 生成器将使用它来生成特定于平台的安装程序包。 否则，PWA 生成器将基于你的网站的特征生成基本*清单 json*文件。
+[PWA 生成器](https://www.pwabuilder.com/)是可以从节点程序包管理器（NPM）安装的 Node.js 应用。 它使用您的网站的元数据在 Android、iOS 和 Windows 之间生成本机托管应用。 如果您的网站已有[web 应用清单](https://developer.mozilla.org/docs/Web/Manifest)，PWA 生成器将使用它来生成特定于平台的安装程序包。 否则，PWA 生成器将基于你的网站的特征，*在文件上*生成基本manifest.js。
 
 #### 要求
- - [Node.js](https://nodejs.org/en/)，其中包含 NPM。
+ - [Node.js](https://nodejs.org/en/)，其中包括 NPM。
 
 #### 安装
 
@@ -154,7 +154,7 @@ Xbox One 上的 Microsoft Edge 浏览器不支持[加密媒体扩展](https://de
 
 
 ## 另请参阅
-[南凸缘视频](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video)：用于 Xbox 的示例视频应用，该应用是使用响应 .js 构建的，并在 web 服务器上托管。
+[南凸缘视频](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video)：使用 React.js 构建的和托管在 web 服务器上的 Xbox 视频应用示例。
 
 [针对 xbox 和电视进行设计](/windows/uwp/design/devices/designing-for-tv)：设计你的通用 Windows 平台（UWP）应用，以便它在 Xbox One 和电视屏幕上看起来不错且功能良好。
 

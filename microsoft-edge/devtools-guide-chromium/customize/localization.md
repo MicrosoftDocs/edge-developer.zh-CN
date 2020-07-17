@@ -1,19 +1,19 @@
 ---
-title: 自定义 Microsoft Edge DevTools
+title: 更改 DevTools 语言设置
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、本地化、loc、语言
-ms.openlocfilehash: cd95e965e14d5214842a74e798d9d3a8ae90c193
-ms.sourcegitcommit: 738a012a2e0edfc63315c2df77b170e26ad9169b
+ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604153"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882721"
 ---
-# 匹配浏览器语言  
+# 更改 DevTools 语言设置  
 
 如果你的开发人员工具是当前支持的十种语言中的一种，则你的开发人员工具默认情况下与你的浏览器语言匹配 \ （除了英语 \）。  
 
@@ -58,16 +58,12 @@ ms.locfileid: "10604153"
    :::column-end:::
 :::row-end:::  
 
-> #### 图 1  
-> 日语的 DevTools  
-> ![日语的 DevTools][ImageJpDevTools]  
+:::image type="complex" source="./media/localization-jp.png" alt-text="日语的 DevTools" lightbox="./media/localization-jp.png":::
+   日语的 DevTools  
+:::image-end:::  
 
 如果要将 DevTools 还原为英语，请转到 " [DevTools 设置][DevtoolschromiumCustomizeIndexSettings]" 或按 `F1`  >  "**首选项**"，然后取消选中 "**匹配浏览器语言**" 复选框。  
 
-<!-- image links -->
-
-[ImageJpDevTools]: ./media/localization-jp.png "图1：日语 DevTools"  
-
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "设置-自定义 Microsoft Edge DevTools"  
+[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "设置-自定义 Microsoft Edge DevTools |Microsoft 文档"  

@@ -2,16 +2,16 @@
 title: 自定义 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 42c1cce2ca26c81b0482429cface83f09e34f5df
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: f34f2e3c02b0c66ee02f4810827f3adb51a60abc
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601351"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882742"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,17 @@
 ---
-title: 初学者的 DevTools
+title: 初学者的 DevTools：开始使用 CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0064f0427b6bd5689e888cccfe2c650492898bb2
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: fba049a20a7b5f981130b4d9e60c37b07dc7e092
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581592"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882735"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -390,7 +390,7 @@ li a {
     
     > ##### 图26  
     > `contact.html`  
-    > ![联系 .html][ImageCssExternal02]  
+    > ![contact.html][ImageCssExternal02]  
     
 1.  删除与之间的所有内容 `<style>` `</style>` ，包括 `<style>` 和 `</style>` 。  
     
@@ -458,7 +458,7 @@ li a {
     
     > ##### 图33  
     > 链接到 `style.css` `contact.html`  
-    > ![链接到 "style" 中的 ".css"。 html][ImageCssExternal09]  
+    > ![在 contact.html 中链接到 style][ImageCssExternal09]  
 
 1.  转到 "**实时" 选项卡**。 现在，主页的字体与上一节中的字体相同，并具有蓝色导航部分。  
     
@@ -486,13 +486,13 @@ li a {
     
     > ##### 图36  
     > 链接到中的框架 `contact.html`  
-    > ![链接到 contact 中的框架][ImageCssFramework1]  
+    > ![链接到 contact.html 中的框架][ImageCssFramework1]  
     
 1.  将代码粘贴到 `index.html` 中。  
     
     > ##### 图37  
     > 链接到中的框架 `index.html`  
-    > ![链接到索引 html 中的框架][ImageCssFramework2]  
+    > ![链接到 index.html 中的框架][ImageCssFramework2]  
     
 1.  返回到 "实时" 选项卡以查看所做的更改。  虽然元素的背景色 `<nav>` 和元素的字体 `li a` 相同，但其他元素的字体已更改。  
     
@@ -514,13 +514,13 @@ li a {
     
     > ##### 图39  
     > 添加类 `index.html`  
-    > ![在索引 html 中添加类][ImageCssJumbotron1]  
+    > ![在 index.html 中添加类][ImageCssJumbotron1]  
     
 1.  将代码添加到您 `<header>` 的标签 `contact.html` 。  
     
     > ##### 图40  
     > 添加类 `contact.html`  
-    > ![将课堂添加到 contact. html][ImageCssJumbotron2]  
+    > ![在 contact.html 中添加类][ImageCssJumbotron2]  
     
 1.  在 "实时" 选项卡中查看所做的更改。 现在，您的页眉周围有一个大灰的框。  
     
@@ -611,7 +611,7 @@ li a {
 [ImageCssSetup2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup2.msft.png "图4： "项目选项" 菜单"  
 [ImageCssSetup3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup3.msft.png "图5： "实时" 选项卡"  
 [ImageCssStyled]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-red_paragraph.msft.png "图6：已通过 CSS 设置了样式"  
-[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "图7：索引 html"  
+[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "图7： index.html"  
 [ImageCssInline2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline2.msft.png "图8： "主页" 和 "联系人" 链接背后的背景色现在为蓝色"  
 [ImageCssInternal1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal1.msft.png "图9：联系人页"  
 [ImageCssInternal2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal2.msft.png "图10：主页和联系人链接的字体已更改"  
@@ -630,21 +630,21 @@ li a {
 [ImageCssRule4]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule4.msft.png "图23：键入绿色"  
 [ImageCssRule5]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule5.msft.png "图24：将鼠标悬停在 "主页" 链接上以显示其绿色背景"  
 [ImageCssExternal01]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external1.msft.png "图25：重新加载页面后，在 DevTools 中所做的更改已丢失"  
-[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "图26：联系 .html"  
+[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "图26： contact.html"  
 [ImageCssExternal03]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external3.msft.png "图27：已删除样式标记"  
 [ImageCssExternal04]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external4.msft.png "图28：已从导航元素中删除嵌入式样式"  
 [ImageCssExternal05]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external5.msft.png "图29： "新建文件" 对话框"  
 [ImageCssExternal06]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external6.msft.png "图30：键入样式 .css"  
 [ImageCssExternal07]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external7.msft.png "图31：将代码添加到样式 .css"  
 [ImageCssExternal08]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external8.msft.png "图32：链接到样式 .css"  
-[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "图33：链接到 "style" 中的 "css""  
+[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "图33：链接到 contact.html 中的 css"  
 [ImageCssExternal10]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external10.msft.png "图34：主页"  
 [ImageCssExternal11]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external11.msft.png "图35：联系人页面"  
-[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "图36：链接到 contact for .html 中的框架"  
-[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "图37：在 index for html 中链接到框架"  
+[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "图36：链接到 contact.html 中的框架"  
+[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "图37：链接到 index.html 中的框架"  
 [ImageCssFramework3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework3.msft.png "图38：主页上的某些字体因框架而发生更改"  
-[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "图39：在索引 html 中添加类"  
-[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "图40：在 contact for .html 中添加类"  
+[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "图39：在 index.html 中添加类"  
+[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "图40：在 contact.html 中添加类"  
 [ImageCssJumbotron3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron3.msft.png "图41：标题现在周围有一个大灰框"  
 [ImageCssAlign1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align1.msft.png "图42：添加容器流体类"  
 [ImageCssAlign2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align2.msft.png "图43：添加行"  
@@ -658,7 +658,7 @@ li a {
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"  
 
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index-cooked-amphibian |故障"  
+[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html-cooked-amphibian |故障"  
 
 [MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS 优先步骤 |MDN"  
 

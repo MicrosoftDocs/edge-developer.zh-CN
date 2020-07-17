@@ -1,17 +1,17 @@
 ---
-title: 初学者的 DevTools
+title: 初学者的 DevTools： HTML 和 DOM 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 8695fe1b2c5d78bd074447acd26a1f01a5833b2d
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: d992a6ca68de07c879ca8e319ee6c22782924a6b
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581585"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882728"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -180,7 +180,7 @@ ms.locfileid: "10581585"
     
     > ##### 图 12  
     > `A new element!?!`无法在中找到神秘的文本 `index.html`  
-    > ![新元素!?! 的神秘文本 在 index 中找不到任何地方][ImageHtmlDom2]  
+    > ![新元素!?! 的神秘文本 在 index.html 中找不到任何地方][ImageHtmlDom2]  
     
 1.  返回到 "**实时" 选项卡**，右键单击 `A new element!?!` ，然后选择 "**检查**"。  
     
@@ -318,7 +318,7 @@ ms.locfileid: "10581585"
     
     > ##### 图24  
     > 文件的 `index.html` 外观  
-    > ![您的 index .html 文件的外观][ImageHtmlCopy2]  
+    > ![index.html 文件的外观][ImageHtmlCopy2]  
     
 ## 后续步骤   
 
@@ -339,7 +339,7 @@ ms.locfileid: "10581585"
 [ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "图9：新代码在 "编辑器" 选项卡中突出显示"  
 [ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "图10：新列表在 "实时" 选项卡中可见"  
 [ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "图11：在页面底部!?! 新元素的文本可以看到"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "图12：神秘的文本新元素!?!在 index 中找不到任何地方"  
+[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "图12：神秘的文本新元素!?!在 index.html 中找不到任何地方"  
 [ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "图13：检查某些文本"  
 [ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "图14： DevTools 在页面旁打开"  
 [ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "图15：以 HTML 格式编辑节点"  
@@ -351,7 +351,7 @@ ms.locfileid: "10581585"
 [ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "图21：选择要删除的节点"  
 [ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "图22：节点已被删除"  
 [ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "图23：您所做的更改已丢失"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "图24：您的 index .html 文件应如何显示"  
+[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "图24： index.html 文件的外观"  
 
 <!--- links --->  
 
@@ -361,7 +361,7 @@ ms.locfileid: "10581585"
 
 [CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Web 开发简介 |Coursera"  
 
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "alluring 的 html-冲击 |故障"  
+[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html alluring-电击 |故障"  
 
 [MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "HTML | 入门MDN"  
 [MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 |MDN"  

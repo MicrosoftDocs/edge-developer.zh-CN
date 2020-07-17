@@ -1,18 +1,18 @@
 ---
 description: 在合作伙伴中心创建 Microsoft Edge Addons 开发者帐户的步骤。
-title: 打开新的开发人员帐户
+title: 扩展提交状态和概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 008691d80d6dfcb7a199a326a8c94aa5571712c5
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3bb648ee9db062bcb12f7592df752ab25d8322b5
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563350"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882644"
 ---
 # 扩展提交状态和概述  
 

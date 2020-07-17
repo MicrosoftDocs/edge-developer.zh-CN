@@ -1,21 +1,21 @@
 ---
 ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
 description: 若要确保在 "浅色" 和 "深色" 模式下显示您的扩展名图标，请按照辅助功能指南操作。
-title: 扩展-辅助功能
+title: 辅助功能-扩展（EdgeHTML）
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 边缘、web 开发、html、css、javascript、开发人员
-ms.openlocfilehash: 514e68fc1b797a28c76bda79c8fab88b4ea2216c
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 60e794467c6d054e390ce61c40559afa3a110c21
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563327"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882791"
 ---
-# 辅助功能  
+# 辅助功能-扩展（EdgeHTML）  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 

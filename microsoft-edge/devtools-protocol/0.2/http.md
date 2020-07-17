@@ -1,19 +1,19 @@
 ---
 description: Microsoft Edge DevTools 协议版本0.2 支持以下 HTTP 终结点。
-title: Microsoft Edge DevTools 协议版本 0.2 HTTP 终结点
+title: Microsoft Edge DevTools 协议版本 0.2 HTTP 终结点（EdgeHTML）
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: cc3d0156d92ab479168e0b588ae2b7c9faa7e58f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5b29e4d8149f511d8a7cbca3da72391a13e449
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563389"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882851"
 ---
-# DevTools 协议 HTTP 终结点
+# Microsoft Edge DevTools 协议版本 0.2 HTTP 终结点（EdgeHTML）  
 
 > [!NOTE]
 > Microsoft Edge DevTools 协议的版本0.2 仅适用于[windows 10 10 月2018更新]()及更高版本的[Windows 预览体验计划预览版](https://insider.windows.com/en-us/getting-started/)。

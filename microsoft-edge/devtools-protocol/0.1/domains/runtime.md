@@ -1,20 +1,21 @@
 ---
 description: 对运行时域的引用。 运行时域通过远程计算和镜像对象公开 JavaScript 运行时。 计算结果以镜像对象的形式返回，该对象公开可用于进一步对象引用的对象类型、字符串表示形式和唯一标识符。 原始对象将保留在内存中，除非它们被显式释放。
-title: 运行时域-DevTools 协议版本0。1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: 运行时域-DevTools 协议版本0.1 （EdgeHTML）
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 33bc98b272aaa8831e908207b97ea7d3d0842976
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 15d6cd254ddbe2337e3db850620dc3eb20a5ea67
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563421"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882931"
 ---
-# 运行时
+# 运行时域-DevTools 协议版本0.1 （EdgeHTML）  
+
 运行时域通过远程计算和镜像对象公开 JavaScript 运行时。 计算结果以镜像对象的形式返回，该对象公开可用于进一步对象引用的对象类型、字符串表示形式和唯一标识符。 原始对象将保留在内存中，除非它们被显式释放。
 
 | | |

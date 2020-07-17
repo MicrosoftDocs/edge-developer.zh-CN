@@ -1,20 +1,21 @@
 ---
 description: 对调试器域的引用。 调试器域公开 JavaScript 调试功能。 它允许设置和删除断点、逐句通过执行、浏览堆栈跟踪等。
-title: 调试器域-DevTools 协议版本0。1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: 调试器域-DevTools 协议版本0.1 （EdgeHTML）
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 6c5d668f943a731e5ba86ed5aa2294007a432ce6
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1e76d17e5dfbe39ba61c7cb45a4e88b9fd223068
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563427"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882952"
 ---
-# 调试器
+# 调试器域-DevTools 协议版本0.1 （EdgeHTML）  
+  
 调试器域公开 JavaScript 调试功能。 它允许设置和删除断点、逐句通过执行、浏览堆栈跟踪等。
 
 | | |

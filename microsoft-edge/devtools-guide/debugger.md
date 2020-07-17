@@ -1,21 +1,21 @@
 ---
 description: 使用调试程序逐句浏览代码并对代码进行故障排除。
-title: DevTools-调试器
+title: 调试程序-DevTools （EdgeHTML）
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、调试器、调试、断点、监视、服务工作人员、缓存 api、web 存储、cookie
 ms.custom: seodec18
-ms.openlocfilehash: f82fbb057a3ad1027309d89db1a15dbcbea31292
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 722277618cd8d6d5d6dba4f2a8bd3a28b6466f77
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564307"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882917"
 ---
-# 调试器
+# 调试程序-DevTools （EdgeHTML）
 
 使用**调试程序**逐句通过代码、设置监视和断点、实时编辑代码和检查缓存。 通过以下方式测试和解决代码问题：
 
@@ -97,7 +97,7 @@ ms.locfileid: "10564307"
 
 你将看到 "**切换源映射**" 按钮，该按钮可用于使用编译为 JAVASCRIPT 或 CSS 的语言编写的代码，并提供*源映射*（指向原始源的中间文件映射）。 此选项指示调试器显示用于调试的原始源（而不是在浏览器中*实际*运行的已编译文件）。
 
-DevTools 将检查生成 JavaScript 文件的编译器是否包含带有地图文件名称的注释。 例如，如果编译器将*myfile*压缩为*myfile*，则它可能还会生成映射文件*myfile*映射，并在压缩文件中包含注释，如下所示：
+DevTools 将检查生成 JavaScript 文件的编译器是否包含带有地图文件名称的注释。 例如，如果编译器将*myfile.js*压缩为*myfile.min.js*，它也可能会生成映射文件， *myfile.min.js。映射*并在压缩的文件中包含注释，如下所示：
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map
