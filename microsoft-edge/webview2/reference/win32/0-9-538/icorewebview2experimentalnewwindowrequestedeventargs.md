@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 Win32 c + + ICoreWebView2ExperimentalNewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExperimentalNewWindowRequestedEventArgs
-ms.openlocfilehash: 39d52b1231e767739b63b3759cdd08e4c9b26be3
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d18ccc91d16213cf0a915420b406b65823b3f9d9
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879987"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886449"
 ---
 # interface ICoreWebView2ExperimentalNewWindowRequestedEventArgs 
 
-> [!NOTE]
-> 这是使用预发行 SDK 版本0.9.538 随附的实验性 API。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalNewWindowRequestedEventArgs

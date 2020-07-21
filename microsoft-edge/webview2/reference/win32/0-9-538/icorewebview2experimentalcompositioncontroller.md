@@ -3,29 +3,28 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 Win32 c + + ICoreWebView2ExperimentalCompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExperimentalCompositionController
-ms.openlocfilehash: e2b16cfd9095d43eb01d7e6233da2857c12a04ad
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d651133162520e4a967d13de6f585fe3ac02e830
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880029"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886458"
 ---
 # interface ICoreWebView2ExperimentalCompositionController 
 
-> [!NOTE]
-> 这是使用预发行 SDK 版本0.9.538 随附的实验性 API。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalCompositionController
   : public IUnknown
 ```
 
-此接口是支持可视化托管的 ICoreWebView2Controller 接口的扩展。
+此接口是支持可视化托管的[ICoreWebView2Controller](icorewebview2controller.md)接口的扩展。
 
 ## 摘要
 
@@ -45,7 +44,7 @@ interface ICoreWebView2ExperimentalCompositionController
 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) | 与 SendMouseInput 的 COREWEBVIEW2_MOUSE_EVENT_KIND 相关联的鼠标事件虚拟键。
 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) | SendPointerInput 使用的指针事件类型，用于传达发送到 Web 视图的指针事件的类型。
 
-实现 ICoreWebView2ExperimentalCompositionController 接口的对象也将实现 ICoreWebView2Controller。 调用方应使用 ICoreWebView2Controller 来调整大小、可见性、焦点等，然后使用 ICoreWebView2ExperimentalCompositionController 连接到组合树并提供用于 Web 视图的输入。
+实现 ICoreWebView2ExperimentalCompositionController 接口的对象也将实现[ICoreWebView2Controller](icorewebview2controller.md)。 调用方应使用[ICoreWebView2Controller](icorewebview2controller.md)来调整大小、可见性、焦点等，然后使用 ICoreWebView2ExperimentalCompositionController 连接到组合树并提供用于 web 视图的输入。
 
 ## 成员
 
@@ -57,19 +56,21 @@ interface ICoreWebView2ExperimentalCompositionController
 
 当 Web 视图认为光标应更改时，将引发此事件。 例如，当鼠标光标当前为默认光标，但随后在文本上移动时，它可能会尝试更改为 IBeam 光标。
 
+开发人员需要通过 SendMouseInput API 发送 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE 消息（除了 COREWEBVIEW2_MOUSE_EVENT_KIND_MOVE 消息）。 这是为了确保鼠标实际位于用于发送 CursorChanged 事件的 Web 视图内。
+
 ```cpp
         // Register a handler for the CursorChanged event.
         CHECK_FAILURE(m_compositionController->add_CursorChanged(
             Callback<ICoreWebView2ExperimentalCursorChangedEventHandler>(
                 [this](ICoreWebView2ExperimentalCompositionController* sender,
-                       IUnknown* args) -> HRESULT {
-                    HCURSOR cursor;
-                    CHECK_FAILURE(sender->get_Cursor(&cursor));
-                    SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
-                    return S_OK;
+                    IUnknown* args) -> HRESULT {
+                        HCURSOR cursor;
+                        CHECK_FAILURE(sender->get_Cursor(&cursor));
+                        SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
+                        return S_OK;
                 })
-                .Get(),
-            &m_cursorChangedToken));
+            .Get(),
+                    &m_cursorChangedToken));
 ```
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
@@ -79,7 +80,6 @@ interface ICoreWebView2ExperimentalCompositionController
 > public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)（UINT POINTERID、HWND parentWindow、struct COREWEBVIEW2_MATRIX_4X4 Transform、 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo）
 
 parentWindow 是包含 web 视图的 HWND。 这可以是 hwnd 树中包含 web 视图的任何 HWND。 COREWEBVIEW2_MATRIX_4X4 是从该 HWND 到 web 视图的转换。 返回的[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)在 SendPointerInfo 中使用。 指针类型必须是 "笔" 或 "触摸"，否则函数将失败。
-
 
 
 #### get_Cursor 
@@ -151,7 +151,7 @@ void ViewComponent::BuildDCompTreeUsingVisual()
 
 > public HRESULT [SendMouseInput](#sendmouseinput)（[COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) eventKind， [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) virtualKeys，UINT32 mouseData，point）
 
-正值表示滑轮向前旋转，远离用户。负值表示滑轮向后旋转，朝向用户。 一个滚轮单击定义为 WHEEL_DELTA，即120。 如果 eventKind 是 COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN 或 COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP，则 mouseData 指定按下或释放哪些 X 按钮。 如果按下/释放第一个 X 按钮，此值应为1，如果按下/释放第二个 X 按钮，则为2。 如果 eventKind 为 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE，则 virtualKeys、mouseData 和 point 均应为零。 如果 eventKind 为任何其他值，则 mouseData 应为零。 Point 应位于 Web 视图的工作区坐标空间中。 若要跟踪在 Web 视图中启动并可能在 Web 视图和主机应用程序外部移动的鼠标事件，建议使用调用 SetCapture 和 ReleaseCapture。 为了消除悬停弹出窗口，还建议发送 WM_MOUSELEAVE 消息。 
+正值表示滑轮向前旋转，远离用户。负值表示滑轮向后旋转，朝向用户。 一个滚轮单击定义为 WHEEL_DELTA，即120。 如果 eventKind 是 COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN 或 COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP，则 mouseData 指定按下或释放哪些 X 按钮。 如果按下/释放第一个 X 按钮，此值应为1，如果按下/释放第二个 X 按钮，则为2。 如果 eventKind 为 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE，则 virtualKeys、mouseData 和 point 均应为零。 如果 eventKind 为任何其他值，则 mouseData 应为零。 Point 应位于 Web 视图的工作区坐标空间中。 若要跟踪在 Web 视图中启动并可能在 Web 视图和主机应用程序外部移动的鼠标事件，建议使用调用 SetCapture 和 ReleaseCapture。 为了消除悬停弹出窗口，还建议发送 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE 消息。 
 ```cpp
 bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 {

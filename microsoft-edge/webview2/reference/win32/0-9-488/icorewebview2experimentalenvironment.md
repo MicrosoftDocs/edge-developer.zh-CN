@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 0.9.515-WebView2 Win32 c + + ICoreWebView2ExperimentalEnvironment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: d5b41334ad3c46e1a3d2e8642479555f2062c1c2
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 0b1fe99b26637588e169816e9a9f1af9eedd065c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880617"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886470"
 ---
 # 0.9.515-接口 ICoreWebView2ExperimentalEnvironment 
 
-> [!NOTE]
-> 这是使用预发行 SDK 版本0.9.488 随附的实验性 API。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalEnvironment
