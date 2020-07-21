@@ -3,46 +3,45 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 0.9.515-WebView2。 CoreWebView2ContentLoadingEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 899adcb7cfa171e8c1f6cb9693092e36f2e41a5f
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6e2925583c4c3e9d207768c880c014ab1db23f7a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877761"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885126"
 ---
-# <span data-ttu-id="60756-104">0.9.515-WebView2 的 CoreWebView2ContentLoadingEventArgs 类</span><span class="sxs-lookup"><span data-stu-id="60756-104">0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs class</span></span> 
+# <span data-ttu-id="f9d9f-104">0.9.515-WebView2 的 CoreWebView2ContentLoadingEventArgs 类</span><span class="sxs-lookup"><span data-stu-id="f9d9f-104">0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs class</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="60756-105">SDK 版本0.9.515 后，此参考可能会更改或不可用。</span><span class="sxs-lookup"><span data-stu-id="60756-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="60756-106">请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。</span><span class="sxs-lookup"><span data-stu-id="60756-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
-<span data-ttu-id="60756-107">命名空间： Microsoft WebView2 </span><span class="sxs-lookup"><span data-stu-id="60756-107">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="60756-108">程序集： Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="60756-108">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+<span data-ttu-id="f9d9f-105">命名空间： Microsoft WebView2 </span><span class="sxs-lookup"><span data-stu-id="f9d9f-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="f9d9f-106">程序集： Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="f9d9f-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
-<span data-ttu-id="60756-109">ContentLoading 事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="60756-109">Event args for the ContentLoading event.</span></span>
+<span data-ttu-id="f9d9f-107">ContentLoading 事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="f9d9f-107">Event args for the ContentLoading event.</span></span>
 
-## <span data-ttu-id="60756-110">摘要</span><span class="sxs-lookup"><span data-stu-id="60756-110">Summary</span></span>
+## <span data-ttu-id="f9d9f-108">摘要</span><span class="sxs-lookup"><span data-stu-id="f9d9f-108">Summary</span></span>
 
- <span data-ttu-id="60756-111">成员</span><span class="sxs-lookup"><span data-stu-id="60756-111">Members</span></span>                        | <span data-ttu-id="60756-112">描述</span><span class="sxs-lookup"><span data-stu-id="60756-112">Descriptions</span></span>
+ <span data-ttu-id="f9d9f-109">成员</span><span class="sxs-lookup"><span data-stu-id="f9d9f-109">Members</span></span>                        | <span data-ttu-id="f9d9f-110">描述</span><span class="sxs-lookup"><span data-stu-id="f9d9f-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="60756-113">IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="60756-113">IsErrorPage</span></span>](#iserrorpage) | <span data-ttu-id="60756-114">如果加载的内容是错误页面，则为 True。</span><span class="sxs-lookup"><span data-stu-id="60756-114">True if the loaded content is an error page.</span></span>
-[<span data-ttu-id="60756-115">NavigationId</span><span class="sxs-lookup"><span data-stu-id="60756-115">NavigationId</span></span>](#navigationid) | <span data-ttu-id="60756-116">导航的 ID。</span><span class="sxs-lookup"><span data-stu-id="60756-116">The ID of the navigation.</span></span>
+[<span data-ttu-id="f9d9f-111">IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="f9d9f-111">IsErrorPage</span></span>](#iserrorpage) | <span data-ttu-id="f9d9f-112">如果加载的内容是错误页面，则为 True。</span><span class="sxs-lookup"><span data-stu-id="f9d9f-112">True if the loaded content is an error page.</span></span>
+[<span data-ttu-id="f9d9f-113">NavigationId</span><span class="sxs-lookup"><span data-stu-id="f9d9f-113">NavigationId</span></span>](#navigationid) | <span data-ttu-id="f9d9f-114">导航的 ID。</span><span class="sxs-lookup"><span data-stu-id="f9d9f-114">The ID of the navigation.</span></span>
 
-## <span data-ttu-id="60756-117">成员</span><span class="sxs-lookup"><span data-stu-id="60756-117">Members</span></span>
+## <span data-ttu-id="f9d9f-115">成员</span><span class="sxs-lookup"><span data-stu-id="f9d9f-115">Members</span></span>
 
-#### <span data-ttu-id="60756-118">IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="60756-118">IsErrorPage</span></span> 
+#### <span data-ttu-id="f9d9f-116">IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="f9d9f-116">IsErrorPage</span></span> 
 
-<span data-ttu-id="60756-119">如果加载的内容是错误页面，则为 True。</span><span class="sxs-lookup"><span data-stu-id="60756-119">True if the loaded content is an error page.</span></span>
+<span data-ttu-id="f9d9f-117">如果加载的内容是错误页面，则为 True。</span><span class="sxs-lookup"><span data-stu-id="f9d9f-117">True if the loaded content is an error page.</span></span>
 
-> <span data-ttu-id="60756-120">公共 bool [IsErrorPage](#iserrorpage)</span><span class="sxs-lookup"><span data-stu-id="60756-120">public bool [IsErrorPage](#iserrorpage)</span></span>
+> <span data-ttu-id="f9d9f-118">公共 bool [IsErrorPage](#iserrorpage)</span><span class="sxs-lookup"><span data-stu-id="f9d9f-118">public bool [IsErrorPage](#iserrorpage)</span></span>
 
-#### <span data-ttu-id="60756-121">NavigationId</span><span class="sxs-lookup"><span data-stu-id="60756-121">NavigationId</span></span> 
+#### <span data-ttu-id="f9d9f-119">NavigationId</span><span class="sxs-lookup"><span data-stu-id="f9d9f-119">NavigationId</span></span> 
 
-<span data-ttu-id="60756-122">导航的 ID。</span><span class="sxs-lookup"><span data-stu-id="60756-122">The ID of the navigation.</span></span>
+<span data-ttu-id="f9d9f-120">导航的 ID。</span><span class="sxs-lookup"><span data-stu-id="f9d9f-120">The ID of the navigation.</span></span>
 
-> <span data-ttu-id="60756-123">公共 ulong [NavigationId](#navigationid)</span><span class="sxs-lookup"><span data-stu-id="60756-123">public ulong [NavigationId](#navigationid)</span></span>
+> <span data-ttu-id="f9d9f-121">公共 ulong [NavigationId](#navigationid)</span><span class="sxs-lookup"><span data-stu-id="f9d9f-121">public ulong [NavigationId](#navigationid)</span></span>
 

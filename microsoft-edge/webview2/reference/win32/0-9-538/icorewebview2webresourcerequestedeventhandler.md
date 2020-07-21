@@ -3,40 +3,40 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 Win32 c + + ICoreWebView2WebResourceRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2WebResourceRequestedEventHandler
-ms.openlocfilehash: 9cd221ac1b528b0be52201daa0c15217534944a6
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3cdafae6480a3bf6e3a5bf96f7e7fba1ae8cc77c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879224"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884517"
 ---
-# <span data-ttu-id="3be85-104">interface ICoreWebView2WebResourceRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="3be85-104">interface ICoreWebView2WebResourceRequestedEventHandler</span></span> 
+# <span data-ttu-id="c5f87-104">interface ICoreWebView2WebResourceRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="c5f87-104">interface ICoreWebView2WebResourceRequestedEventHandler</span></span> 
 
 ```
 interface ICoreWebView2WebResourceRequestedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="3be85-105">在 web 视图中发出 HTTP 请求时激发。</span><span class="sxs-lookup"><span data-stu-id="3be85-105">Fires when an HTTP request is made in the webview.</span></span>
+<span data-ttu-id="c5f87-105">在与 AddWebResourceRequestedFilter 中指定的 Web 资源匹配的 Web 资源的 Web 资源中进行 URL 请求（通过网络、文件等）时激发。</span><span class="sxs-lookup"><span data-stu-id="c5f87-105">Fires when a URL request (through network, file etc.) is made in the webview for a Web resource matching resource context filter and URL specified in AddWebResourceRequestedFilter.</span></span>
 
-## <span data-ttu-id="3be85-106">摘要</span><span class="sxs-lookup"><span data-stu-id="3be85-106">Summary</span></span>
+## <span data-ttu-id="c5f87-106">摘要</span><span class="sxs-lookup"><span data-stu-id="c5f87-106">Summary</span></span>
 
- <span data-ttu-id="3be85-107">成员</span><span class="sxs-lookup"><span data-stu-id="3be85-107">Members</span></span>                        | <span data-ttu-id="3be85-108">描述</span><span class="sxs-lookup"><span data-stu-id="3be85-108">Descriptions</span></span>
+ <span data-ttu-id="c5f87-107">成员</span><span class="sxs-lookup"><span data-stu-id="c5f87-107">Members</span></span>                        | <span data-ttu-id="c5f87-108">描述</span><span class="sxs-lookup"><span data-stu-id="c5f87-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="3be85-109">调用</span><span class="sxs-lookup"><span data-stu-id="3be85-109">Invoke</span></span>](#invoke) | <span data-ttu-id="3be85-110">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="3be85-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="c5f87-109">调用</span><span class="sxs-lookup"><span data-stu-id="c5f87-109">Invoke</span></span>](#invoke) | <span data-ttu-id="c5f87-110">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="c5f87-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-<span data-ttu-id="3be85-111">主机可以替代请求、响应标头和响应内容。</span><span class="sxs-lookup"><span data-stu-id="3be85-111">The host can override request, response headers and response content.</span></span>
+<span data-ttu-id="c5f87-111">宿主可以查看和修改请求，或向 HTTP 提供类似模式的响应，在这种情况下，请求立即完成。</span><span class="sxs-lookup"><span data-stu-id="c5f87-111">The host can view and modify the request or provide a response in a similar pattern to HTTP, in which case the request immediately completed.</span></span> <span data-ttu-id="c5f87-112">这可能不包含由网络堆栈添加的任何请求标头，如授权标头。</span><span class="sxs-lookup"><span data-stu-id="c5f87-112">This may not contain any request headers that are added by the network stack, such as Authorization headers.</span></span>
 
-## <span data-ttu-id="3be85-112">成员</span><span class="sxs-lookup"><span data-stu-id="3be85-112">Members</span></span>
+## <span data-ttu-id="c5f87-113">成员</span><span class="sxs-lookup"><span data-stu-id="c5f87-113">Members</span></span>
 
-#### <span data-ttu-id="3be85-113">调用</span><span class="sxs-lookup"><span data-stu-id="3be85-113">Invoke</span></span> 
+#### <span data-ttu-id="c5f87-114">调用</span><span class="sxs-lookup"><span data-stu-id="c5f87-114">Invoke</span></span> 
 
-<span data-ttu-id="3be85-114">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="3be85-114">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="c5f87-115">调用以向实施者提供对应事件的事件参数。</span><span class="sxs-lookup"><span data-stu-id="c5f87-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="3be85-115">公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) \* sender、 [ICoreWebView2WebResourceRequestedEventArgs](icorewebview2webresourcerequestedeventargs.md) \* 参数）</span><span class="sxs-lookup"><span data-stu-id="3be85-115">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2WebResourceRequestedEventArgs](icorewebview2webresourcerequestedeventargs.md) \* args)</span></span>
+> <span data-ttu-id="c5f87-116">公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) \* sender、 [ICoreWebView2WebResourceRequestedEventArgs](icorewebview2webresourcerequestedeventargs.md) \* 参数）</span><span class="sxs-lookup"><span data-stu-id="c5f87-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2WebResourceRequestedEventArgs](icorewebview2webresourcerequestedeventargs.md) \* args)</span></span>
 
