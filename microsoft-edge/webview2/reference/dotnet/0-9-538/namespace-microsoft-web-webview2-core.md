@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: Microsoft WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2、浏览器控件、边缘 html、
-ms.openlocfilehash: e45cb4c6a6fdd01680abc59691a0e0c34a64af15
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 121ca87d1cd444228aeba1328feb2d0633647d74
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881191"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884027"
 ---
 # Microsoft.Web.WebView2.Core 命名空间 
 
@@ -55,6 +55,7 @@ CoreWebView2Settings | 定义启用、禁用或修改 Web 视图功能的属性�
 CoreWebView2SourceChangedEventArgs | SourceChanged 事件的事件参数。
 CoreWebView2WebMessageReceivedEventArgs | WebMessageReceived 事件的事件参数。
 CoreWebView2WebResourceRequestedEventArgs | WebResourceRequested 事件的事件参数。
+CoreWebView2WebResourceResponseReceivedEventArgs | WebResourceResponseReceived 事件的事件参数。
 CoreWebView2WindowFeatures | Web 视图弹出窗口的窗口功能。
 EdgeNotFoundException | 缺少边缘安装时引发的异常。
 CoreWebView2Matrix4x4 | 此转换用于在调用 CreateCoreWebView2PointerInfoFromPointerId 时计算正确的坐标。
@@ -88,8 +89,7 @@ SystemKeyUp            | 对应于窗口消息 WM_SYSKEYUP。
 
 #### CoreWebView2MouseEventKind 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 SendMouseInput 用于传达发送给 Web 视图的鼠标事件类型的鼠标事件类型。
 
@@ -116,8 +116,7 @@ XButtonUp            | 第一个或第二个 X 按钮上的鼠标事件，WM_XBU
 
 #### CoreWebView2MouseEventVirtualKeys 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 与 SendMouseInput 的 CoreWebView2MouseEventKind 关联的鼠标事件虚拟键。
 
@@ -176,8 +175,7 @@ ClipboardRead            | 在没有用户手势的情况下读取系统剪贴�
 
 #### CoreWebView2PointerEventKind 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 SendPointerInput 使用的指针事件类型，用于传达发送到 Web 视图的指针事件的类型。
 

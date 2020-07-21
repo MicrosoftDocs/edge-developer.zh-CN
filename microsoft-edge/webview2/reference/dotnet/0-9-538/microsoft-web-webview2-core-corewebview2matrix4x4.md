@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: CoreWebView2Matrix4x4 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: bac470b29b08357d27ba77e986f19739acaaa05d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: b34dca29aca3d7f24e8f5fd99ab8b8515fcb4664
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878874"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885525"
 ---
 # CoreWebView2Matrix4x4 结构的 WebView2 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll

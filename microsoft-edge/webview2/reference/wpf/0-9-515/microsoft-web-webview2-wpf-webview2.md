@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、WebView2、浏览器控件、边缘 html、。 WebView2
-ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e7f5d11b540d1d7ad9630aa674ef5bc0073195c2
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880260"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885294"
 ---
 # WebView2 类的 WebView2 
 
@@ -37,11 +37,13 @@ class Microsoft.Web.WebView2.Wpf.WebView2
 [NavigationStarting](#navigationstarting) | CoreWebView2 的 CoreWebView2 NavigationStarting 事件周围的包装器。
 [SourceChanged](#sourcechanged) | CoreWebView2 的 CoreWebView2 SourceChanged 事件周围的包装器。
 [WebMessageReceived](#webmessagereceived) | CoreWebView2 的 CoreWebView2 WebMessageReceived 事件周围的包装器。
+[ZoomFactorChanged](#zoomfactorchanged) | 当 Web 视图的 ZoomFactor 属性更改时，将引发此事件。
 [CanGoBack](#cangoback) | 如果 Web 视图可以导航到导航历史记录中的上一页，则返回 true。
 [CanGoForward](#cangoforward) | 如果 Web 视图可以导航到导航历史记录中的下一页，则返回 true。
 [CoreWebView2](#corewebview2) | 访问基础 Core CoreWebView2 COM API 的完整功能。
 [CreationProperties](#creationproperties) | 获取或设置在控件的 CoreWebView2 初始化期间使用的一袋选项。
 [来源](#source) | Web 视图当前正在显示的顶级 Uri （或将在其 CoreWebView2 的初始化完成后显示）。
+[ZoomFactor](#zoomfactor) | Web 视图的缩放系数。
 [EnsureCoreWebView2Async](#ensurecorewebview2async) | 显式触发控件的 CoreWebView2 的初始化。
 [ExecuteScriptAsync](#executescriptasync) | 通过在 Web 视图中呈现的当前顶级文档中的 javaScript 参数执行 JavaScript 代码。
 [GoBack](#goback) | 将 Web 视图导航到导航历史记录中的上一页。
@@ -119,6 +121,14 @@ CoreWebView2 的 CoreWebView2 WebMessageReceived 事件周围的包装器。
 
 此事件与 CoreWebView2 之间的唯一区别是传递给处理程序的第一个参数。 此事件的处理程序将收到 WebView2 控件，而 CoreWebView2 的处理程序将收到 CoreWebView2 实例。
 
+#### ZoomFactorChanged 
+
+当 Web 视图的 ZoomFactor 属性更改时，将引发此事件。
+
+> 公共事件 EventHandler< EventArgs > [ZoomFactorChanged](#zoomfactorchanged)
+
+此事件直接公开 CoreWebView2Controller ZoomFactorChanged，请参阅其文档以了解详细信息。
+
 #### CanGoBack 
 
 如果 Web 视图可以导航到导航历史记录中的上一页，则返回 true。
@@ -162,10 +172,20 @@ Web 视图当前正在显示的顶级 Uri （或将在其 CoreWebView2 的初始
 
 > 公共 Uri[源](#source)
 
-一般说来，获取此属性等效于获取 CoreWebView2 的 CoreWebView2 属性，并且设置此属性等效于在 CoreWebView2 上调用 CoreWebView2 方法。 在 CoreWebView2 初始化之前获取此属性将检索已设置为其的最后一个 Uri。 在 CoreWebView2 初始化之前设置此属性将导致在后台启动初始化（如果尚未进行），之后，WebView2 将导航到指定的 Uri。 有关初始化概述，请参阅 WebView2 类文档。
+一般说来，获取此属性等效于获取 CoreWebView2 的 CoreWebView2 属性，并将此属性设置为不同的值，这等效于在 CoreWebView2 上调用 CoreWebView2 方法。 Null 值具有与 "关于：空白" 相同的含义（有关详细信息，请参阅说明）。 在 CoreWebView2 初始化之前获取此属性将检索设置为其的最后一个 Uri，如果没有任何 Uri，则为 null （默认值）。 在 CoreWebView2 初始化之前设置此属性将导致在后台启动初始化（如果尚未进行），之后，WebView2 将导航到指定的 Uri。 有关初始化概述，请参阅 WebView2 类文档。
+
+如果此属性为 null，则 CoreWebView2 将显示 "关于：空白" （或者如果设置为 null，则 CoreWebView2 将导航到 "关于：空白"）。 也可以将此属性包含（或设置为） "关于：空白" 的显式值，这对 CoreWebView2 具有相同的效果。 换言之，如果 CoreWebView2 显示 "关于：空白"，则此属性的值可能为 null 或 "关于：空白"。 但是，null 和 "关于：空白" 是此属性的非重复值，并且不被视为相等。 这对于控件初始化非常重要，因为这意味着将值从 null （默认值）更改为 "关于：空白" 仍为更改，仍将触发隐式初始化。 
 
 ##### 异常
 * `ObjectDisposedException` 如果已在该控件上调用 Dispose，则引发该异常。
+
+#### ZoomFactor 
+
+Web 视图的缩放系数。
+
+> 公共双[ZoomFactor](#zoomfactor)
+
+此属性直接公开 CoreWebView2Controller ZoomFactor，请参阅其文档以了解详细信息。 如果在 CoreWebView2 初始化之前获取此属性，将检索为其设置的最后一个值，如果没有任何值，则为1.0 （默认值）。 初始化后，将在 CoreWebView2 初始化之前设置为此属性的最新值。
 
 #### EnsureCoreWebView2Async 
 

@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 0.9.430-WebView2 Win32 c + + ICoreWebView2WebMessageReceivedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: ddcff317eba10418ff60b05e2199cea5a44ee18b
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: f566cb8aa876304d17e11bb47f24692aefda3b26
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880142"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883754"
 ---
 # 0.9.430-接口 ICoreWebView2WebMessageReceivedEventHandler 
 
-> [!NOTE]
-> 此接口可能会在 SDK 版本0.9.430 后更改或不可用。 请参阅[参考](../../../webview2-api-reference.md)了解最新的 API 参考。
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2WebMessageReceivedEventHandler

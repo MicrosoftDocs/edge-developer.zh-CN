@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 0.9.515-WebView2。 CoreWebView2DevToolsProtocolEventReceivedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: abf04e3350d5774e7d726d920b13849f77d55b7a
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 63b915e1043d3fcc115e01ef137400c0cf15863c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879735"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885107"
 ---
 # 0.9.515-WebView2 的 CoreWebView2DevToolsProtocolEventReceivedEventArgs 类 
 
-> [!NOTE]
-> SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll

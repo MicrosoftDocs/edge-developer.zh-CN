@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32 应用中托管 web 
 title: 0.9.515-WebView2 Win32 c + + ICoreWebView2Controller
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 8e0f95f8346f4c4b60b6de2676503b79c743afcb
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e25770022dcfa683bd7189672c4e1a07f286b4aa
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880820"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884489"
 ---
 # 0.9.515-接口 ICoreWebView2Controller 
 
-> [!NOTE]
-> SDK 版本0.9.515 后，此参考可能会更改或不可用。 请参阅[WEBVIEW2 api 参考](../../../webview2-api-reference.md)了解最新的 API 参考。
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2Controller

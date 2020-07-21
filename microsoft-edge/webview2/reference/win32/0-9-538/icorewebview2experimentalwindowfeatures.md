@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 Win32 c + + ICoreWebView2ExperimentalWindowFeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExperimentalWindowFeatures
-ms.openlocfilehash: 8b56d16e9c78738e9aa61e8c4c5b841b7fe4932f
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 2672f2aac842fd475f6148c439dbecdacd7793ee
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879903"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885401"
 ---
 # interface ICoreWebView2ExperimentalWindowFeatures 
 
-> [!NOTE]
-> 这是使用预发行 SDK 版本0.9.538 随附的实验性 API。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalWindowFeatures

@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: CoreWebView2CreationProperties 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、WebView2、浏览器控件、边缘 html、。 CoreWebView2CreationProperties
-ms.openlocfilehash: 72c85df7d2d58d74cf27e04eb7128fdfa14ca2d9
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 04c80d3319c74d3461666b6f35fadd0481b45207
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880253"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885532"
 ---
 # CoreWebView2CreationProperties 类的 WebView2 
 

@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 Win32 c + + ICoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2Environment
-ms.openlocfilehash: a694411e8dbfd46c09895ce642a41b8a488d12dc
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 2450bae0f25d119f785494b8223ade02ad6c950e
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880085"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884622"
 ---
 # interface ICoreWebView2Environment 
 
@@ -58,13 +58,13 @@ interface ICoreWebView2Environment
                 std::wstring message = L"We detected there is a new version for the browser.";
                 if (m_webView)
                 {
-                    message += L"Do you want to restart the app \n\n";
+                    message += L"Do you want to restart the app? \n\n";
                     message += L"Click No if you only want to re-create the webviews. \n";
                     message += L"Click Cancel for no action. \n";
                 }
                 int response = MessageBox(
                     m_mainWindow, message.c_str(), L"New available version",
-                    m_webView  MB_YESNOCANCEL : MB_OK);
+                    m_webView ? MB_YESNOCANCEL : MB_OK);
 
                 if (response == IDYES)
                 {
@@ -134,8 +134,10 @@ void AppWindow::InitializeWebView()
             return;
         }
     }
-    auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    if(!m_language.empty())
+    auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
+    CHECK_FAILURE(options->put_IsSingleSignOnUsingOSPrimaryAccountEnabled(
+        m_AADSSOEnabled ? TRUE : FALSE));
+    if (!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
         subFolder, nullptr, options.Get(),

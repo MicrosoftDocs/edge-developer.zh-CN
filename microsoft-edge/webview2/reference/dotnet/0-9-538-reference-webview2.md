@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: Microsoft WebView2 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: c567371660a5a6e88963e938eb748543088fcde8
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: ab0a476f444b671b7042b5007aea59359d5377fc
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877586"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885252"
 ---
 # 参考（WebView2 Core）  
 
@@ -22,6 +22,7 @@ ms.locfileid: "10877586"
 ## Microsoft WebView2
 *   [WebView2](0-9-538/namespace-microsoft-web-webview2-core.md)命名空间
 *   [CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md)
+*   [CoreWebView2CompositionController](0-9-538/microsoft-web-webview2-core-corewebview2compositioncontroller.md)
 *   [CoreWebView2Controller](0-9-538/microsoft-web-webview2-core-corewebview2controller.md)
 *   [CoreWebView2Deferral](0-9-538/microsoft-web-webview2-core-corewebview2deferral.md)
 *   [CoreWebView2DevToolsProtocolEventReceiver](0-9-538/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md)
@@ -31,7 +32,7 @@ ms.locfileid: "10877586"
 *   [CoreWebView2PhysicalKeyStatus](0-9-538/microsoft-web-webview2-core-corewebview2physicalkeystatus.md)
 *   [CoreWebView2PointerInfo](0-9-538/microsoft-web-webview2-core-corewebview2pointerinfo.md)
 *   [CoreWebView2Settings](0-9-538/microsoft-web-webview2-core-corewebview2settings.md)
-*   [CoreWebView2windowFeatures](0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md)
+*   [CoreWebView2WindowFeatures](0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md)
 *   [EdgeNotFoundException](0-9-538/microsoft-web-webview2-core-edgenotfoundexception.md)
 
 ### 事件参数
@@ -49,3 +50,4 @@ ms.locfileid: "10877586"
 *   [CoreWebView2SourceChangedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md)
 *   [CoreWebView2WebMessageReceivedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md)
 *   [CoreWebView2WebResourceRequestedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md)
+*   [CoreWebView2WebResourceResponseReceivedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)

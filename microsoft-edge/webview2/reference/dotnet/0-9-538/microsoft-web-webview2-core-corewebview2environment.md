@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: CoreWebView2Environment 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: 79bc9908d0fd12d4606311b959cbc6bc0c384c2d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6b03997c8bd76137b20bb71edfd0d57b3686914a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878916"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885287"
 ---
 # CoreWebView2Environment 类的 WebView2 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10878916"
 [CreateAsync](#createasync) | 使用安装的边缘版本创建长绿 WebView2 环境。
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | 异步创建用于可视化托管的新 Web 视图。
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | 异步创建新的 Web 视图。
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | 创建一个空 CoreWebView2ExperimentalPointerInfo。
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | 创建一个空 CoreWebView2PointerInfo。
 [CreateWebResourceResponse](#createwebresourceresponse) | 创建新的 web 资源响应对象。
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | 获取包含频道名称的浏览器版本信息（如果不是稳定通道或嵌入边缘）。
 [GetProviderForHwnd](#getproviderforhwnd) | 返回与给定 HWND 对应的 CoreWebView2CompositionController 的 UI 自动化提供程序。
@@ -87,8 +87,7 @@ ms.locfileid: "10878916"
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 异步创建用于可视化托管的新 Web 视图。
 
@@ -112,14 +111,13 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 
 #### CreateCoreWebView2PointerInfo 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
-创建一个空 CoreWebView2ExperimentalPointerInfo。
+创建一个空 CoreWebView2PointerInfo。
 
 > 公共[CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)（）
 
-在调用 SendPointerInput 之前，需要用所有相关信息填充返回的 CoreWebView2ExperimentalPointerInfo。
+在调用 SendPointerInput 之前，需要用所有相关信息填充返回的 CoreWebView2PointerInfo。
 
 #### CreateWebResourceResponse 
 
@@ -140,8 +138,7 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 
 #### GetProviderForHwnd 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 返回与给定 HWND 对应的 CoreWebView2CompositionController 的 UI 自动化提供程序。
 

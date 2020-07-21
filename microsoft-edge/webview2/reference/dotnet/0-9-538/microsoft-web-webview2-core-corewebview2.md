@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: CoreWebView2 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: f8e0ebae683e1e68d12ce541fbec922ec9c05ef4
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 95ef347c8954dc67438a4d09825c11a64ad8872a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879007"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885273"
 ---
 # CoreWebView2 类的 WebView2 
 
@@ -48,6 +48,7 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 [SourceChanged](#sourcechanged) | Source 属性更改时将触发 SourceChanged。
 [WebMessageReceived](#webmessagereceived) | 当设置 IsWebMessageEnabled 设置和 web 视图调用的顶级文档时，将引发此事件 `window.chrome.webview.postMessage` 。
 [WebResourceRequested](#webresourcerequested) | 在 Web 视图对使用 AddWebResourceRequestedFilter 添加的匹配 URL 和资源上下文筛选器执行 HTTP 请求时激发。
+[WebResourceResponseReceived](#webresourceresponsereceived) | 在 Web 视图收到并处理 WebResource 请求的响应后，将触发 WebResourceResponseReceived 事件。
 [WindowCloseRequested](#windowcloserequested) | 在 Web 视图中请求关闭窗口的内容（如在窗口后）关闭窗口时激发。调用 close。
 [AddHostObjectToScript](#addhostobjecttoscript) | 将所提供的主机对象添加到在具有指定名称的 Web 视图中运行的脚本。
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | 将提供的 JavaScript 添加到应在创建全局对象后执行的脚本列表，但在分析 HTML 文档之前和执行 HTML 文档所包含的任何其他脚本之前。
@@ -231,6 +232,16 @@ PostMessage 函数是 `void postMessage(object)` 对象是 JSON 转换支持的�
 
 必须至少添加一个筛选器，才能触发该事件。
 
+#### WebResourceResponseReceived 
+
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
+
+在 Web 视图收到并处理 WebResource 请求的响应后，将触发 WebResourceResponseReceived 事件。
+
+> 公共事件 EventHandler< [CoreWebView2WebResourceResponseReceivedEventArgs](microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)  >  [WebResourceResponseReceived](#webresourceresponsereceived)
+
+事件参数包括由连网和 WebResourceResponse 发送的 WebResourceRequest，包括由网络堆栈添加的任何附加标头，不包括在关联的 WebResourceRequested 事件（如身份验证头）中。
+
 #### WindowCloseRequested 
 
 在 Web 视图中请求关闭窗口的内容（如在窗口后）关闭窗口时激发。调用 close。
@@ -307,7 +318,7 @@ URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是�
 > 公共异步任务< 字符串 > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)（String 方法名称、字符串 parametersAsJson）
 
 ##### 返回
-一个 JSON 字符串，表示方法的返回对象。
+一个 JSON 字符串，表示方法的返回对象。 
 
 有关可用方法的列表和说明，请参阅[DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs)。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
 
@@ -328,7 +339,7 @@ URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是�
 ##### 返回
 返回一个 JSON 编码的字符串，该字符串表示运行所提供的 JavaScript 的结果。 
 
-此方法异步运行提供的 JavaScript，并且将返回所提供的 JavaScript 的结果。 如果所提供的 JavaScript 的结果为 `undefined` 、包含引用循环或者其他无法编码到 JSON，则返回字符串 "null"。 如果所提供的 JavaScript 中的被调用函数没有显式返回值， `undefined` 则返回。 如果所提供的 JavaScript 引发了未处理的异常，则返回 "null"。 如果在发生事件后调用此方法 `NavigationStarting` ，则所提供的 JavaScript 将在新文档加载时（在触发的同一时间）内运行 `ContentLoading` 。 `ExecuteScript` 即使设置为，也可以工作 `IsScriptEnabled` `FALSE` 。
+此方法异步运行提供的 JavaScript，并且将返回所提供的 JavaScript 的结果。 如果所提供的 JavaScript 的结果为 `undefined` 、包含引用循环或者其他无法编码到 JSON，则返回字符串 "null"。 如果所提供的 JavaScript 中的被调用函数没有显式返回值， `undefined` 则返回。 如果所提供的 JavaScript 引发了未处理的异常，则返回 "null"。 如果在 NavigationStarting 事件之后调用此方法，则所提供的 JavaScript 将在加载时在新文档上运行，同时触发 ContentLoading。 即使将 IsScriptEnabled 设置为，ExecuteScriptAsync 也可以正常工作 `FALSE` 。
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -434,3 +445,4 @@ window.chrome.webview.removeEventListener('message', handler)
 > public void [Stop](#stop)（）
 
 不会停止脚本。
+

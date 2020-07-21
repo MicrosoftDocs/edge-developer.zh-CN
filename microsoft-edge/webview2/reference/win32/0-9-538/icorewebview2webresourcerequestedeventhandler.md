@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 Win32 c + + ICoreWebView2WebResourceRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2WebResourceRequestedEventHandler
-ms.openlocfilehash: 9cd221ac1b528b0be52201daa0c15217534944a6
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3cdafae6480a3bf6e3a5bf96f7e7fba1ae8cc77c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879224"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884517"
 ---
 # interface ICoreWebView2WebResourceRequestedEventHandler 
 
@@ -22,7 +22,7 @@ interface ICoreWebView2WebResourceRequestedEventHandler
   : public IUnknown
 ```
 
-在 web 视图中发出 HTTP 请求时激发。
+在与 AddWebResourceRequestedFilter 中指定的 Web 资源匹配的 Web 资源的 Web 资源中进行 URL 请求（通过网络、文件等）时激发。
 
 ## 摘要
 
@@ -30,7 +30,7 @@ interface ICoreWebView2WebResourceRequestedEventHandler
 --------------------------------|---------------------------------------------
 [调用](#invoke) | 调用以向实施者提供对应事件的事件参数。
 
-主机可以替代请求、响应标头和响应内容。
+宿主可以查看和修改请求，或向 HTTP 提供类似模式的响应，在这种情况下，请求立即完成。 这可能不包含由网络堆栈添加的任何请求标头，如授权标头。
 
 ## 成员
 

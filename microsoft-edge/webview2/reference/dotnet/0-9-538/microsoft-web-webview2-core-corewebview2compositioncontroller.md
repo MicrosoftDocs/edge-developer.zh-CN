@@ -3,22 +3,21 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: CoreWebView2CompositionController 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: 45ac5406cea804aa5b5db748cecaae7104dccb00
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 1eb2498e05e2ec9fafa317f6108d022f7354c249
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878986"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885280"
 ---
 # CoreWebView2CompositionController 类的 WebView2 
 
-> [!NOTE]
-> 这是我们的 SDK 版本[0.9.538](../../../releasenotes.md#09538)预发布版附带的[实验性 API](../../../concepts/versioning.md#experimental-apis) 。
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll
@@ -33,7 +32,7 @@ ms.locfileid: "10878986"
 [CursorChanged](#cursorchanged) | 当 Web 视图认为光标应更改时，将引发此事件。
 [RootVisualTarget](#rootvisualtarget) | RootVisualTarget 是托管应用的可视化树中的视觉对象。
 [UIAProvider](#uiaprovider) | 返回 Web 视图的 UI 自动化提供程序。
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | 用于将从系统接收的 pointerId 转换为 CoreWebView2ExperimentalPointerInfo 的帮助程序函数。
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | 用于将从系统接收的 pointerId 转换为 CoreWebView2PointerInfo 的帮助程序函数。
 [SendMouseInput](#sendmouseinput) | 如果 eventKind 为 CoreWebView2MouseEventKind 或 CoreWebView2MouseEventKind，则 mouseData 指定滚轮移动量。
 [SendPointerInput](#sendpointerinput) | SendPointerInput 接受在 CoreWebView2PointerEventKind 中定义的类型的触摸或笔指针输入。
 
@@ -71,11 +70,11 @@ RootVisualTarget 是托管应用的可视化树中的视觉对象。
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
 
-用于将从系统接收的 pointerId 转换为 CoreWebView2ExperimentalPointerInfo 的帮助程序函数。
+用于将从系统接收的 pointerId 转换为 CoreWebView2PointerInfo 的帮助程序函数。
 
 > public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)（Uint PointerId，IntPtr ParentWindow，Matrix4x4 转换）
 
-parentWindow 是包含 web 视图的 HWND。 这可以是 hwnd 树中包含 web 视图的任何 HWND。 CoreWebView2Matrix4x4 是从该 HWND 到 web 视图的转换。 返回的 CoreWebView2ExperimentalPointerInfo 在 SendPointerInfo 中使用。 指针类型必须是 "笔" 或 "触摸"，否则函数将失败。
+parentWindow 是包含 web 视图的 HWND。 这可以是 hwnd 树中包含 web 视图的任何 HWND。 CoreWebView2Matrix4x4 是从该 HWND 到 web 视图的转换。 返回的 CoreWebView2PointerInfo 在 SendPointerInfo 中使用。 指针类型必须是 "笔" 或 "触摸"，否则函数将失败。
 
 #### SendMouseInput 
 
@@ -91,5 +90,5 @@ SendPointerInput 接受在 CoreWebView2PointerEventKind 中定义的类型的触
 
 > 公共 void [SendPointerInput](#sendpointerinput)（[CoreWebView2PointerEventKind 事件](./namespace-microsoft-web-webview2-core.md)、 [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) pointerInfo）
 
-必须首先将系统中的任何指针输入转换为 CoreWebView2ExperimentalPointerInfo。
+必须首先将系统中的任何指针输入转换为 CoreWebView2PointerInfo。
 
