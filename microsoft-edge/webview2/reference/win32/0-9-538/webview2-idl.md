@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: 全局变量
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: d291a4973656d106f803382ee985f0006bf5d68d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 12a730a07945d5f099cd2a0f45a9f2ec5ed02f8c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877621"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885546"
 ---
 # <span data-ttu-id="1cff9-104">全局变量</span><span class="sxs-lookup"><span data-stu-id="1cff9-104">Globals</span></span> 
 
@@ -50,7 +50,7 @@ ms.locfileid: "10877621"
 
 <span data-ttu-id="1cff9-131">DLL 导出以使用自定义版本的 Edge、用户数据目录和/或其他选项创建 WebView2 环境。</span><span class="sxs-lookup"><span data-stu-id="1cff9-131">DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional options.</span></span>
 
-<span data-ttu-id="1cff9-132">用于 `browserExecutableFolder` 指定 WebView2 控件是使用嵌入式版本的边缘，还是使用客户端计算机上存在的已安装版本的 edge。</span><span class="sxs-lookup"><span data-stu-id="1cff9-132">Use `browserExecutableFolder` to specify whether WebView2 controls use an embedded version of Edge, or the installed version of Edge that exists on a client machine.</span></span> <span data-ttu-id="1cff9-133">若要使用嵌入式版本的 Edge，请将包含嵌入式版本的边缘的文件夹的相对路径传递给 `browserExecutableFolder` 。</span><span class="sxs-lookup"><span data-stu-id="1cff9-133">To use an embedded version of Edge, pass the relative path of the folder that contains the embedded version of Edge to `browserExecutableFolder`.</span></span> <span data-ttu-id="1cff9-134">若要获取嵌入式版本的 Edge，请从客户端计算机上已安装的 Edge 版本中复制已进行版本控制的文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="1cff9-134">To obtain the embedded version of Edge, copy the versioned folder name from your installed version of Edge on a client machine.</span></span> <span data-ttu-id="1cff9-135">例如， `73.0.52.0` 从安装了 Edge 版本73.0.52.0 的文件夹复制文件夹。</span><span class="sxs-lookup"><span data-stu-id="1cff9-135">For example, copy the `73.0.52.0` folder from the folder where Edge version 73.0.52.0 was installed.</span></span> <span data-ttu-id="1cff9-136">确保文件夹同时具有 " **msedgewebview2.exe** " 和 " **msedge.dll** " 文件。</span><span class="sxs-lookup"><span data-stu-id="1cff9-136">Ensure that the folder has both the **msedgewebview2.exe** and **msedge.dll** files.</span></span> <span data-ttu-id="1cff9-137">若要创建使用客户端计算机上存在的已安装版本的 Edge 的 WebView2 控件，请将 null 或空字符串传递给 `browserExecutableFolder` 。</span><span class="sxs-lookup"><span data-stu-id="1cff9-137">To create WebView2 controls that use the installed version of Edge that exists on client machines, pass a null or empty string to `browserExecutableFolder`.</span></span> <span data-ttu-id="1cff9-138">在此方案中，API 尝试在客户端计算机上（首先在计算机级别，然后按用户）使用所选通道首选项查找已安装的边缘的兼容版本。</span><span class="sxs-lookup"><span data-stu-id="1cff9-138">In this scenario, the API tries to find a compatible version of Edge that is installed on the client machine (first at the machine level, and then per user) using the selected channel preference.</span></span> 
+<span data-ttu-id="1cff9-132">用于 `browserExecutableFolder` 指定 WebView2 控件是使用嵌入式版本的边缘，还是使用客户端计算机上存在的已安装版本的 edge。</span><span class="sxs-lookup"><span data-stu-id="1cff9-132">Use `browserExecutableFolder` to specify whether WebView2 controls use an embedded version of Edge, or the installed version of Edge that exists on a client machine.</span></span> <span data-ttu-id="1cff9-133">若要使用嵌入式版本的 Edge，请将包含嵌入式版本的边缘的文件夹的相对路径传递给 `browserExecutableFolder` 。</span><span class="sxs-lookup"><span data-stu-id="1cff9-133">To use an embedded version of Edge, pass the relative path of the folder that contains the embedded version of Edge to `browserExecutableFolder`.</span></span> <span data-ttu-id="1cff9-134">若要获取嵌入式版本的 Edge，请从客户端计算机上已安装的 Edge 版本中复制已进行版本控制的文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="1cff9-134">To obtain the embedded version of Edge, copy the versioned folder name from your installed version of Edge on a client machine.</span></span> <span data-ttu-id="1cff9-135">例如， `73.0.52.0` 从安装了 Edge 版本73.0.52.0 的文件夹复制文件夹。</span><span class="sxs-lookup"><span data-stu-id="1cff9-135">For example, copy the `73.0.52.0` folder from the folder where Edge version 73.0.52.0 was installed.</span></span> <span data-ttu-id="1cff9-136">确保文件夹同时具有 " **msedgewebview2.exe** " 和 " **msedge.dll** " 文件。</span><span class="sxs-lookup"><span data-stu-id="1cff9-136">Ensure that the folder has both the **msedgewebview2.exe** and **msedge.dll** files.</span></span> <span data-ttu-id="1cff9-137">若要创建使用客户端计算机上存在的已安装版本的 Edge 的 WebView2 控件，请将 null 或空字符串传递给 `browserExecutableFolder` 。</span><span class="sxs-lookup"><span data-stu-id="1cff9-137">To create WebView2 controls that use the installed version of Edge that exists on client machines, pass a null or empty string to `browserExecutableFolder`.</span></span> <span data-ttu-id="1cff9-138">在此方案中，API 尝试在客户端计算机上（首先在计算机级别，然后按用户）使用所选通道首选项查找已安装的边缘的兼容版本。</span><span class="sxs-lookup"><span data-stu-id="1cff9-138">In this scenario, the API tries to find a compatible version of Edge that is installed on the client machine (first at the machine level, and then per user) using the selected channel preference.</span></span>
 
 <span data-ttu-id="1cff9-139">默认通道搜索顺序为稳定、beta、dev 和未固定。</span><span class="sxs-lookup"><span data-stu-id="1cff9-139">The default channel search order is stable, beta, dev, and canary.</span></span> <span data-ttu-id="1cff9-140">如果存在替代值 WEBVIEW2_RELEASE_CHANNEL_PREFERENCE 环境变量或适用的 releaseChannelPreference 注册表值为1，则将反转频道搜索顺序。</span><span class="sxs-lookup"><span data-stu-id="1cff9-140">When there is an override WEBVIEW2_RELEASE_CHANNEL_PREFERENCE environment variable or applicable releaseChannelPreference registry value with the value of 1, the channel search order is reversed.</span></span>
 
@@ -138,3 +138,4 @@ ERROR_PRODUCT_UNINSTALLED
 <span data-ttu-id="1cff9-177">获取包含频道名称的浏览器版本信息（如果不是稳定通道或嵌入边缘）。</span><span class="sxs-lookup"><span data-stu-id="1cff9-177">Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.</span></span>
 
 <span data-ttu-id="1cff9-178">频道名称是 beta 版、开发人员和未带了设备。</span><span class="sxs-lookup"><span data-stu-id="1cff9-178">Channel names are beta, dev, and canary.</span></span> <span data-ttu-id="1cff9-179">如果 browserExecutableFolder 或通道首选项存在替代，将使用替代。</span><span class="sxs-lookup"><span data-stu-id="1cff9-179">If an override exists for the browserExecutableFolder or the channel preference, the override will be used.</span></span> <span data-ttu-id="1cff9-180">如果没有替代，则使用传递到 GetAvailableCoreWebView2BrowserVersionString 的参数。</span><span class="sxs-lookup"><span data-stu-id="1cff9-180">If there isn't an override, then the parameter passed to GetAvailableCoreWebView2BrowserVersionString is used.</span></span>
+
