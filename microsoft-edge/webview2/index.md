@@ -3,137 +3,162 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: Microsoft Edge WebView2 控件
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows Forms、WinForms、WPF、.NET
-ms.openlocfilehash: 9356da17f2db9456a9a309bc9ef06c74fbb50779
-ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
+ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
+ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "10754543"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888596"
 ---
-# <span data-ttu-id="5fee8-104">Microsoft Edge WebView2 简介（预览版）</span><span class="sxs-lookup"><span data-stu-id="5fee8-104">Introduction to Microsoft Edge WebView2 (Preview)</span></span>  
+# <span data-ttu-id="39826-104">Microsoft Edge WebView2 简介（预览版）</span><span class="sxs-lookup"><span data-stu-id="39826-104">Introduction to Microsoft Edge WebView2 (Preview)</span></span>  
 
-<span data-ttu-id="5fee8-105">Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技术 \ （HTML、CSS 和 JavaScript \）。</span><span class="sxs-lookup"><span data-stu-id="5fee8-105">The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.</span></span>  <span data-ttu-id="5fee8-106">WebView2 控件使用[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com)作为呈现引擎，以在本机应用程序中显示 web 内容。</span><span class="sxs-lookup"><span data-stu-id="5fee8-106">The WebView2 control uses [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native applications.</span></span>  <span data-ttu-id="5fee8-107">使用 WebView2，你可以将 web 代码嵌入本机应用程序的不同部分，或在单个 Web 视图中构建整个本机应用程序。</span><span class="sxs-lookup"><span data-stu-id="5fee8-107">With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.</span></span>  <span data-ttu-id="5fee8-108">有关如何开始构建 WebView2 应用程序的信息，请参阅[入门](./index.md#getting-started)。</span><span class="sxs-lookup"><span data-stu-id="5fee8-108">For information on how to start building a WebView2 application, see [Get Started](./index.md#getting-started).</span></span>  
+<span data-ttu-id="39826-105">Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技术 \ （HTML、CSS 和 JavaScript \）。</span><span class="sxs-lookup"><span data-stu-id="39826-105">The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.</span></span>  <span data-ttu-id="39826-106">WebView2 控件使用[Microsoft Edge （Chromium）][MicrosoftedgeinsiderMain]作为呈现引擎，以在本机应用程序中显示 web 内容。</span><span class="sxs-lookup"><span data-stu-id="39826-106">The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.</span></span>  <span data-ttu-id="39826-107">使用 WebView2，你可以将 web 代码嵌入本机应用程序的不同部分，或在单个 Web 视图中构建整个本机应用程序。</span><span class="sxs-lookup"><span data-stu-id="39826-107">With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.</span></span>  <span data-ttu-id="39826-108">有关如何开始构建 WebView2 应用程序的信息，请参阅[入门](#getting-started)。</span><span class="sxs-lookup"><span data-stu-id="39826-108">For information on how to start building a WebView2 application, see [Get Started](#getting-started).</span></span>  
 
-:::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="什么是 Web 视图":::
-   <span data-ttu-id="5fee8-110">什么是 Web 视图</span><span class="sxs-lookup"><span data-stu-id="5fee8-110">What is WebView</span></span>  
+:::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="什么是 Web 视图" lightbox="./media/WebView2/whatwebview.png":::
+   <span data-ttu-id="39826-110">什么是 Web 视图</span><span class="sxs-lookup"><span data-stu-id="39826-110">What is WebView</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="5fee8-111">WebView2 Preview 适用于早期原型和收集反馈，以帮助对 API 进行整形。</span><span class="sxs-lookup"><span data-stu-id="5fee8-111">The WebView2 Preview is intended for early prototyping and to gather feedback to help to shape the API.</span></span>  <span data-ttu-id="5fee8-112">Microsoft Edge Web 图团队不建议在生产应用中使用预览，因为可能会[发生重大更改](./releasenotes.md)。</span><span class="sxs-lookup"><span data-stu-id="5fee8-112">The Microsoft Edge WebView team does not recommend that you use the preview in your production apps because there may be [breaking changes](./releasenotes.md).</span></span>  
+> <span data-ttu-id="39826-111">WebView2 Preview 适用于早期原型和收集反馈，以帮助对 API 进行整形。</span><span class="sxs-lookup"><span data-stu-id="39826-111">The WebView2 Preview is intended for early prototyping and to gather feedback to help shape the API.</span></span>  <span data-ttu-id="39826-112">不应在生产应用中使用预览，因为可能会发生重大更改。</span><span class="sxs-lookup"><span data-stu-id="39826-112">You should not use the preview in your production apps because there may be breaking changes.</span></span>  <span data-ttu-id="39826-113">有关详细信息，请参阅[Webview2Releasenotes]。</span><span class="sxs-lookup"><span data-stu-id="39826-113">For more information, see [Webview2Releasenotes].</span></span>  
 
-## <span data-ttu-id="5fee8-113">混合应用程序方法</span><span class="sxs-lookup"><span data-stu-id="5fee8-113">Hybrid application approach</span></span>  
+## <span data-ttu-id="39826-114">混合应用程序方法</span><span class="sxs-lookup"><span data-stu-id="39826-114">Hybrid application approach</span></span>  
 
-<span data-ttu-id="5fee8-114">开发人员通常必须在构建 web 应用程序或本机应用程序之间进行选择。</span><span class="sxs-lookup"><span data-stu-id="5fee8-114">Developers often have to choose between building a web application or a native application.</span></span>  <span data-ttu-id="5fee8-115">决策在接触和接通电源之间的平衡。</span><span class="sxs-lookup"><span data-stu-id="5fee8-115">The decision hinges on the trade-off between reach and power.</span></span>  <span data-ttu-id="5fee8-116">Web 应用程序允许广泛访问。</span><span class="sxs-lookup"><span data-stu-id="5fee8-116">Web applications allow for a broad reach.</span></span>  <span data-ttu-id="5fee8-117">作为 Web 开发人员，你可以在所有不同平台上重复使用大多数代码（如果不是所有代码）。</span><span class="sxs-lookup"><span data-stu-id="5fee8-117">As a Web developer, you may reuse most, if not all of your code, across all different platforms.</span></span>  <span data-ttu-id="5fee8-118">但是，本机应用程序利用整个本机平台的功能。</span><span class="sxs-lookup"><span data-stu-id="5fee8-118">Native applications, however, utilize the capabilities of the entire native platform.</span></span>  
+<span data-ttu-id="39826-115">开发人员通常必须决定生成 web 应用程序还是本机应用程序。</span><span class="sxs-lookup"><span data-stu-id="39826-115">Developers often have to decide between building a web application or a native application.</span></span>  <span data-ttu-id="39826-116">决策在接触和接通电源之间的平衡。</span><span class="sxs-lookup"><span data-stu-id="39826-116">The decision hinges on the trade-off between reach and power.</span></span>  <span data-ttu-id="39826-117">Web 应用程序允许广泛访问。</span><span class="sxs-lookup"><span data-stu-id="39826-117">Web applications allow for a broad reach.</span></span>  <span data-ttu-id="39826-118">作为 Web 开发人员，你可以在所有不同平台上重复使用大多数代码（如果不是所有代码）。</span><span class="sxs-lookup"><span data-stu-id="39826-118">As a Web developer, you may reuse most, if not all of your code, across all different platforms.</span></span>  <span data-ttu-id="39826-119">但是，本机应用程序利用整个本机平台的功能。</span><span class="sxs-lookup"><span data-stu-id="39826-119">Native applications, however, utilize the capabilities of the entire native platform.</span></span>  
 
-:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web native":::
-   <span data-ttu-id="5fee8-120">Web native</span><span class="sxs-lookup"><span data-stu-id="5fee8-120">Web native</span></span>  
+:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web native" lightbox="./media/WebView2/webnative.png":::
+   <span data-ttu-id="39826-121">Web native</span><span class="sxs-lookup"><span data-stu-id="39826-121">Web native</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="5fee8-121">混合应用程序使开发人员能够享受这两个领域的最佳体验。</span><span class="sxs-lookup"><span data-stu-id="5fee8-121">Hybrid applications allow developers to enjoy the best of both worlds.</span></span>  <span data-ttu-id="5fee8-122">混合应用程序开发人员受益于 web 平台的 ubiquity 和强项，以及本机平台的强大功能和完整功能。</span><span class="sxs-lookup"><span data-stu-id="5fee8-122">Hybrid application developers benefit from the ubiquity and strength of the web platform, and the power and full capabilities of the native platform.</span></span>  
+<span data-ttu-id="39826-122">混合应用程序使开发人员能够享受这两个领域的最佳体验。</span><span class="sxs-lookup"><span data-stu-id="39826-122">Hybrid applications allow developers to enjoy the best of both worlds.</span></span>  <span data-ttu-id="39826-123">混合应用程序开发人员受益于 web 平台的 ubiquity 和强项，以及本机平台的强大功能和完整功能。</span><span class="sxs-lookup"><span data-stu-id="39826-123">Hybrid application developers benefit from the ubiquity and strength of the web platform, and the power and full capabilities of the native platform.</span></span>  
 
-## <span data-ttu-id="5fee8-123">WebView2 优惠</span><span class="sxs-lookup"><span data-stu-id="5fee8-123">WebView2 benefits</span></span>   
+## <span data-ttu-id="39826-124">WebView2 优惠</span><span class="sxs-lookup"><span data-stu-id="39826-124">WebView2 benefits</span></span>   
 
-:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Web 视图原因":::
-   <span data-ttu-id="5fee8-125">Web 视图原因</span><span class="sxs-lookup"><span data-stu-id="5fee8-125">WebView reasons</span></span>  
+:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Web 视图原因" lightbox="./media/WebView2/webviewreasons.png":::
+   <span data-ttu-id="39826-126">Web 视图原因</span><span class="sxs-lookup"><span data-stu-id="39826-126">WebView reasons</span></span>  
 :::image-end:::  
 
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-126">Web 生态系统 \ & skillset</span><span class="sxs-lookup"><span data-stu-id="5fee8-126">Web ecosystem \& skillset</span></span>**  
-      <span data-ttu-id="5fee8-127">利用 web 生态系统中存在的整个 web 平台、库、工具和人才。</span><span class="sxs-lookup"><span data-stu-id="5fee8-127">Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.</span></span>  
+      **<span data-ttu-id="39826-127">Web 生态系统 \ & skillset</span><span class="sxs-lookup"><span data-stu-id="39826-127">Web ecosystem \& skillset</span></span>**  
+      <span data-ttu-id="39826-128">利用 web 生态系统中存在的整个 web 平台、库、工具和人才。</span><span class="sxs-lookup"><span data-stu-id="39826-128">Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-128">快速创新</span><span class="sxs-lookup"><span data-stu-id="5fee8-128">Rapid innovation</span></span>**  
-      <span data-ttu-id="5fee8-129">Web 开发允许更快的部署和迭代。</span><span class="sxs-lookup"><span data-stu-id="5fee8-129">Web development allows for faster deployment and iteration.</span></span>  
+      **<span data-ttu-id="39826-129">快速创新</span><span class="sxs-lookup"><span data-stu-id="39826-129">Rapid innovation</span></span>**  
+      <span data-ttu-id="39826-130">Web 开发允许更快的部署和迭代。</span><span class="sxs-lookup"><span data-stu-id="39826-130">Web development allows for faster deployment and iteration.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-130">Windows 7、8、10支持</span><span class="sxs-lookup"><span data-stu-id="5fee8-130">Windows 7, 8, 10 support</span></span>**  
-      <span data-ttu-id="5fee8-131">在 Windows 7、8和10上支持一致的用户体验。</span><span class="sxs-lookup"><span data-stu-id="5fee8-131">Support for a consistent user experience across Windows 7, 8, and 10.</span></span>  
+      **<span data-ttu-id="39826-131">Windows 7、8、10支持</span><span class="sxs-lookup"><span data-stu-id="39826-131">Windows 7, 8, 10 support</span></span>**  
+      <span data-ttu-id="39826-132">在 Windows 7、8和10上支持一致的用户体验。</span><span class="sxs-lookup"><span data-stu-id="39826-132">Support for a consistent user experience across Windows 7, 8, and 10.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-132">本机功能</span><span class="sxs-lookup"><span data-stu-id="5fee8-132">Native capabilities</span></span>**  
-      <span data-ttu-id="5fee8-133">访问完整的本机 Api 集。</span><span class="sxs-lookup"><span data-stu-id="5fee8-133">Access the full set of Native APIs.</span></span>  
+      **<span data-ttu-id="39826-133">本机功能</span><span class="sxs-lookup"><span data-stu-id="39826-133">Native capabilities</span></span>**  
+      <span data-ttu-id="39826-134">访问完整的本机 Api 集。</span><span class="sxs-lookup"><span data-stu-id="39826-134">Access the full set of Native APIs.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-134">代码共享</span><span class="sxs-lookup"><span data-stu-id="5fee8-134">Code-sharing</span></span>**  
-      <span data-ttu-id="5fee8-135">将 web 代码添加到你的基本代码，可在多个平台之间更好地重复使用。</span><span class="sxs-lookup"><span data-stu-id="5fee8-135">Add web code to your codebase allows for increased re-use across multiple platforms.</span></span>  
+      **<span data-ttu-id="39826-135">代码共享</span><span class="sxs-lookup"><span data-stu-id="39826-135">Code-sharing</span></span>**  
+      <span data-ttu-id="39826-136">将 web 代码添加到你的基本代码，可在多个平台之间更好地重复使用。</span><span class="sxs-lookup"><span data-stu-id="39826-136">Add web code to your codebase allows for increased re-use across multiple platforms.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-136">Microsoft 支持</span><span class="sxs-lookup"><span data-stu-id="5fee8-136">Microsoft support</span></span>**  
-      <span data-ttu-id="5fee8-137">Microsoft 在 WebView2 发布为 GA 时提供支持和添加新功能请求。</span><span class="sxs-lookup"><span data-stu-id="5fee8-137">Microsoft provides support and adds new feature requests when WebView2 is release as GA.</span></span>  
+      **<span data-ttu-id="39826-137">Microsoft 支持</span><span class="sxs-lookup"><span data-stu-id="39826-137">Microsoft support</span></span>**  
+      <span data-ttu-id="39826-138">Microsoft 在 WebView2 发布为 GA 时提供支持和添加新功能请求。</span><span class="sxs-lookup"><span data-stu-id="39826-138">Microsoft provides support and adds new feature requests when WebView2 is release as GA.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-138">长绿分布</span><span class="sxs-lookup"><span data-stu-id="5fee8-138">Evergreen distribution</span></span>**  
-      <span data-ttu-id="5fee8-139">通过常规的平台更新和安全修补程序依赖最新版本的 Chromium。</span><span class="sxs-lookup"><span data-stu-id="5fee8-139">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
+      **<span data-ttu-id="39826-139">长绿分布</span><span class="sxs-lookup"><span data-stu-id="39826-139">Evergreen distribution</span></span>**  
+      <span data-ttu-id="39826-140">通过常规的平台更新和安全修补程序依赖最新版本的 Chromium。</span><span class="sxs-lookup"><span data-stu-id="39826-140">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
    :::column-end:::
    :::column span="1":::
-      <span data-ttu-id="5fee8-140">**固定**\ （即将推出 \）</span><span class="sxs-lookup"><span data-stu-id="5fee8-140">**Fixed** \(coming soon\)</span></span>  
-      <span data-ttu-id="5fee8-141">选择将 Chromium 位打包在你的应用程序中。</span><span class="sxs-lookup"><span data-stu-id="5fee8-141">Choose to package the Chromium bits in your application.</span></span>  
+      <span data-ttu-id="39826-141">**固定**\ （即将推出 \）</span><span class="sxs-lookup"><span data-stu-id="39826-141">**Fixed** \(coming soon\)</span></span>  
+      <span data-ttu-id="39826-142">选择将 Chromium 位打包在你的应用程序中。</span><span class="sxs-lookup"><span data-stu-id="39826-142">Choose to package the Chromium bits in your application.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="5fee8-142">增量采纳</span><span class="sxs-lookup"><span data-stu-id="5fee8-142">Incremental adoption</span></span>**  
-      <span data-ttu-id="5fee8-143">将 web 组件逐个添加到应用程序。</span><span class="sxs-lookup"><span data-stu-id="5fee8-143">Add web components piece by piece to your application.</span></span>  
+      **<span data-ttu-id="39826-143">增量采纳</span><span class="sxs-lookup"><span data-stu-id="39826-143">Incremental adoption</span></span>**  
+      <span data-ttu-id="39826-144">将 web 组件逐个添加到应用程序。</span><span class="sxs-lookup"><span data-stu-id="39826-144">Add web components piece by piece to your application.</span></span>  
    :::column-end:::
 :::row-end:::
 
-## <span data-ttu-id="5fee8-144">即刻体验</span><span class="sxs-lookup"><span data-stu-id="5fee8-144">Getting started</span></span>  
+## <span data-ttu-id="39826-145">即刻体验</span><span class="sxs-lookup"><span data-stu-id="39826-145">Getting started</span></span>  
 
-<span data-ttu-id="5fee8-145">若要使用 WebView2 控件生成和测试你的应用程序，你需要安装[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download)和[WebView2 SDK](https://aka.ms/webviewnuget) 。</span><span class="sxs-lookup"><span data-stu-id="5fee8-145">To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed.</span></span>  <span data-ttu-id="5fee8-146">选择以下选项之一开始使用。</span><span class="sxs-lookup"><span data-stu-id="5fee8-146">Select one of the following options to get started.</span></span>  
+<span data-ttu-id="39826-146">若要使用 WebView2 控件生成和测试你的应用程序，你需要安装[Microsoft Edge （Chromium）][MicrosoftedgeinsiderDownload]和[WebView2 SDK][NugetPackagesMicrosoftWebWebView2] 。</span><span class="sxs-lookup"><span data-stu-id="39826-146">To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.</span></span>  <span data-ttu-id="39826-147">选择以下选项之一开始使用。</span><span class="sxs-lookup"><span data-stu-id="39826-147">Select one of the following options to get started.</span></span>  
 
-*   [<span data-ttu-id="5fee8-147">Win32 C/c + + 入门</span><span class="sxs-lookup"><span data-stu-id="5fee8-147">Getting Started with Win32 C/C++</span></span>](./gettingstarted/win32.md)  
-*   [<span data-ttu-id="5fee8-148">WPF 入门</span><span class="sxs-lookup"><span data-stu-id="5fee8-148">Getting Started with WPF</span></span>](./gettingstarted/wpf.md)  
-*   [<span data-ttu-id="5fee8-149">WinForms 入门</span><span class="sxs-lookup"><span data-stu-id="5fee8-149">Getting Started with WinForms</span></span>](./gettingstarted/winforms.md)  
+*   [<span data-ttu-id="39826-148">Win32 C/c + + 入门</span><span class="sxs-lookup"><span data-stu-id="39826-148">Getting Started with Win32 C/C++</span></span>][Webview2GettingstartedWin32]  
+*   [<span data-ttu-id="39826-149">WPF 入门</span><span class="sxs-lookup"><span data-stu-id="39826-149">Getting Started with WPF</span></span>][Webview2GettingstartedWpf]  
+*   [<span data-ttu-id="39826-150">WinForms 入门</span><span class="sxs-lookup"><span data-stu-id="39826-150">Getting Started with WinForms</span></span>][Webview2GettingstartedWinforms]  
+*   [<span data-ttu-id="39826-151">WinUI3 入门</span><span class="sxs-lookup"><span data-stu-id="39826-151">Getting Started with WinUI3</span></span>][Webview2GettingstartedWinui]  
 
-<span data-ttu-id="5fee8-150">[WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples)存储库包含演示所有 WebView2 sdk 功能和 API 使用模式的示例。</span><span class="sxs-lookup"><span data-stu-id="5fee8-150">The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDKs features and API usage patterns.</span></span> <span data-ttu-id="5fee8-151">随着将更多功能添加到 WebView2 SDK，示例应用程序将更新。</span><span class="sxs-lookup"><span data-stu-id="5fee8-151">As more features are added to the WebView2 SDK, the sample applications will be updated.</span></span>   
+<span data-ttu-id="39826-152">[WebView2 示例][GithubMicrosoftedgeWebview2samples]存储库包含演示所有 WebView2 SDK 功能和 API 使用模式的示例。</span><span class="sxs-lookup"><span data-stu-id="39826-152">The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains samples that demonstrate all of the WebView2 SDK features and API usage patterns.</span></span>  <span data-ttu-id="39826-153">随着将更多功能添加到 WebView2 SDK，示例应用程序将更新。</span><span class="sxs-lookup"><span data-stu-id="39826-153">As more features are added to the WebView2 SDK, the sample applications will be updated.</span></span>  
 
-## <span data-ttu-id="5fee8-152">支持的平台</span><span class="sxs-lookup"><span data-stu-id="5fee8-152">Supported platforms</span></span>  
+## <span data-ttu-id="39826-154">支持的平台</span><span class="sxs-lookup"><span data-stu-id="39826-154">Supported platforms</span></span>  
 
-<span data-ttu-id="5fee8-153">开发人员预览版在以下编程环境中可用。</span><span class="sxs-lookup"><span data-stu-id="5fee8-153">A developer preview is available on the following programming environments.</span></span>  
+<span data-ttu-id="39826-155">开发人员预览版在以下编程环境中可用。</span><span class="sxs-lookup"><span data-stu-id="39826-155">A developer preview is available on the following programming environments.</span></span>  
 
-*   <span data-ttu-id="5fee8-154">Win32 C/c + +</span><span class="sxs-lookup"><span data-stu-id="5fee8-154">Win32 C/C++</span></span>  
-*   <span data-ttu-id="5fee8-155">.NET Framework 4.6.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="5fee8-155">.NET Framework 4.6.2 or later</span></span>  
-*   <span data-ttu-id="5fee8-156">.NET Core 3.0 或更高版本</span><span class="sxs-lookup"><span data-stu-id="5fee8-156">.NET Core 3.0 or later</span></span>  
-*   [<span data-ttu-id="5fee8-157">WinUI 3。0</span><span class="sxs-lookup"><span data-stu-id="5fee8-157">WinUI 3.0</span></span>](/uwp/toolkits/winui3/)  
+*   <span data-ttu-id="39826-156">Win32 C/c + +</span><span class="sxs-lookup"><span data-stu-id="39826-156">Win32 C/C++</span></span>  
+*   <span data-ttu-id="39826-157">.NET Framework 4.6.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="39826-157">.NET Framework 4.6.2 or later</span></span>  
+*   <span data-ttu-id="39826-158">.NET Core 3.0 或更高版本</span><span class="sxs-lookup"><span data-stu-id="39826-158">.NET Core 3.0 or later</span></span>  
+*   [<span data-ttu-id="39826-159">WinUI 3。0</span><span class="sxs-lookup"><span data-stu-id="39826-159">WinUI 3.0</span></span>][UwpToolkitsWinui3]  
 
-<span data-ttu-id="5fee8-158">你可以在以下版本的 Windows 上运行 WebView2 应用程序。</span><span class="sxs-lookup"><span data-stu-id="5fee8-158">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
+<span data-ttu-id="39826-160">你可以在以下版本的 Windows 上运行 WebView2 应用程序。</span><span class="sxs-lookup"><span data-stu-id="39826-160">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
 
-*   <span data-ttu-id="5fee8-159">Windows 10</span><span class="sxs-lookup"><span data-stu-id="5fee8-159">Windows 10</span></span>  
-*   <span data-ttu-id="5fee8-160">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="5fee8-160">Windows 8.1</span></span>  
-*   <span data-ttu-id="5fee8-161">Windows 8</span><span class="sxs-lookup"><span data-stu-id="5fee8-161">Windows 8</span></span>  
-*   <span data-ttu-id="5fee8-162">Windows7</span><span class="sxs-lookup"><span data-stu-id="5fee8-162">Windows 7</span></span>  
-*   <span data-ttu-id="5fee8-163">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="5fee8-163">Windows Server 2016</span></span>  
-*   <span data-ttu-id="5fee8-164">WindowsServer 2012</span><span class="sxs-lookup"><span data-stu-id="5fee8-164">Windows Server 2012</span></span>  
-*   <span data-ttu-id="5fee8-165">Windows Server 2012R2</span><span class="sxs-lookup"><span data-stu-id="5fee8-165">Windows Server 2012R2</span></span>  
-*   <span data-ttu-id="5fee8-166">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="5fee8-166">Windows Server 2008 R2</span></span>  
+*   <span data-ttu-id="39826-161">Windows10</span><span class="sxs-lookup"><span data-stu-id="39826-161">Windows 10</span></span>  
+*   <span data-ttu-id="39826-162">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="39826-162">Windows 8.1</span></span>  
+*   <span data-ttu-id="39826-163">Windows 8</span><span class="sxs-lookup"><span data-stu-id="39826-163">Windows 8</span></span>  
+*   <span data-ttu-id="39826-164">Windows7</span><span class="sxs-lookup"><span data-stu-id="39826-164">Windows 7</span></span>  
+*   <span data-ttu-id="39826-165">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="39826-165">Windows Server 2016</span></span>  
+*   <span data-ttu-id="39826-166">WindowsServer 2012</span><span class="sxs-lookup"><span data-stu-id="39826-166">Windows Server 2012</span></span>  
+*   <span data-ttu-id="39826-167">Windows Server 2012R2</span><span class="sxs-lookup"><span data-stu-id="39826-167">Windows Server 2012R2</span></span>  
+*   <span data-ttu-id="39826-168">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="39826-168">Windows Server 2008 R2</span></span>  
 
-## <span data-ttu-id="5fee8-167">后续步骤</span><span class="sxs-lookup"><span data-stu-id="5fee8-167">Next steps</span></span>  
+## <span data-ttu-id="39826-169">后续步骤</span><span class="sxs-lookup"><span data-stu-id="39826-169">Next steps</span></span>  
 
-<span data-ttu-id="5fee8-168">有关如何构建和部署 WebView2 应用程序的更多详细信息，请参阅概念文档和操作方法指南。</span><span class="sxs-lookup"><span data-stu-id="5fee8-168">For more detailed information on how to build and deploy WebView2 applications, checkout the conceptual documentation and how-to guides.</span></span>  
+<span data-ttu-id="39826-170">有关如何构建和部署 WebView2 应用程序的详细信息，请参阅概念文档和操作方法指南。</span><span class="sxs-lookup"><span data-stu-id="39826-170">For more information on how to build and deploy WebView2 applications, review the conceptual documentation and how-to guides.</span></span>  
 
-#### <span data-ttu-id="5fee8-169">概念</span><span class="sxs-lookup"><span data-stu-id="5fee8-169">Concepts</span></span>  
+#### <span data-ttu-id="39826-171">概念</span><span class="sxs-lookup"><span data-stu-id="39826-171">Concepts</span></span>  
 
-*   [<span data-ttu-id="5fee8-170">WebView2 SDK 和 Microsoft Edge 版本控制</span><span class="sxs-lookup"><span data-stu-id="5fee8-170">WebView2 SDK and Microsoft Edge Versioning</span></span>](./concepts/versioning.md)
-*   [<span data-ttu-id="5fee8-171">分发 WebView2 应用程序</span><span class="sxs-lookup"><span data-stu-id="5fee8-171">Distribute WebView2 Applications</span></span>](./concepts/distribution.md)  
-*   [<span data-ttu-id="5fee8-172">WebView2 应用程序的安全最佳做法</span><span class="sxs-lookup"><span data-stu-id="5fee8-172">Security Best Practices for WebView2 Applications</span></span>](./concepts/security.md)
-*   [<span data-ttu-id="5fee8-173">管理 WebView2 应用程序中的用户数据文件夹</span><span class="sxs-lookup"><span data-stu-id="5fee8-173">Manage User Data Folder in WebView2 Applications</span></span>](./concepts/userdatafolder.md)
+*   [<span data-ttu-id="39826-172">了解 WebView2 SDK 版本</span><span class="sxs-lookup"><span data-stu-id="39826-172">Understand WebView2 SDK versions</span></span>][Webview2ConceptsVersioning]
+*   [<span data-ttu-id="39826-173">使用 WebView2 的应用程序的分发</span><span class="sxs-lookup"><span data-stu-id="39826-173">Distribution of applications using WebView2</span></span>][Webview2ConceptsDistribution]  
+*   [<span data-ttu-id="39826-174">开发安全 WebView2 应用程序的最佳做法</span><span class="sxs-lookup"><span data-stu-id="39826-174">Best practices for developing secure WebView2 applications</span></span>][Webview2ConceptsSecurity]
+*   [<span data-ttu-id="39826-175">管理 WebView2 应用程序中的用户数据文件夹</span><span class="sxs-lookup"><span data-stu-id="39826-175">Manage User Data Folder in WebView2 Applications</span></span>][Webview2ConceptsUserdatafolder]
  
-#### <span data-ttu-id="5fee8-174">操作方法指南</span><span class="sxs-lookup"><span data-stu-id="5fee8-174">How-To guides</span></span>  
+#### <span data-ttu-id="39826-176">操作方法指南</span><span class="sxs-lookup"><span data-stu-id="39826-176">How-To guides</span></span>  
 
-*   [<span data-ttu-id="5fee8-175">通过 DevTools 和 Visual Studio 脚本调试调试 WebView2</span><span class="sxs-lookup"><span data-stu-id="5fee8-175">Debugging WebView2 with DevTools and Visual Studio script debugging</span></span>](./howto/debug.md)  
-*   [<span data-ttu-id="5fee8-176">通过 Microsoft EdgeDriver 自动化和调试 WebView2</span><span class="sxs-lookup"><span data-stu-id="5fee8-176">Automating and debugging WebView2 with Microsoft EdgeDriver</span></span>](./howto/webdriver.md)  
+*   [<span data-ttu-id="39826-177">如何通过 WebView2 进行调试</span><span class="sxs-lookup"><span data-stu-id="39826-177">How to Debug with WebView2</span></span>][Webview2HowtoDebug]  
+*   [<span data-ttu-id="39826-178">通过 Microsoft Edge 驱动程序自动化和测试 WebView2</span><span class="sxs-lookup"><span data-stu-id="39826-178">Automating and testing WebView2 with Microsoft Edge Driver</span></span>][Webview2HowtoWebdriver]  
 
-## <span data-ttu-id="5fee8-177">与 WebView2 团队取得联系</span><span class="sxs-lookup"><span data-stu-id="5fee8-177">Getting in touch with the WebView2 team</span></span>  
+## <span data-ttu-id="39826-179">与 WebView2 团队取得联系</span><span class="sxs-lookup"><span data-stu-id="39826-179">Getting in touch with the WebView2 team</span></span>  
 
-<span data-ttu-id="5fee8-178">通过分享你的反馈来帮助构建更丰富的 WebView2 体验。</span><span class="sxs-lookup"><span data-stu-id="5fee8-178">Help build a richer WebView2 experience by sharing your feedback.</span></span>  <span data-ttu-id="5fee8-179">访问 "Web 视图[反馈](https://aka.ms/webviewfeedback)" 存储库以提交功能请求或 bug 报告。</span><span class="sxs-lookup"><span data-stu-id="5fee8-179">Visit the WebView [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports.</span></span>  <span data-ttu-id="5fee8-180">它也是搜索已知问题的好地方。</span><span class="sxs-lookup"><span data-stu-id="5fee8-180">It is also a good place to search for known issues.</span></span>  
+<span data-ttu-id="39826-180">通过分享你的反馈来帮助构建更丰富的 WebView2 体验。</span><span class="sxs-lookup"><span data-stu-id="39826-180">Help build a richer WebView2 experience by sharing your feedback.</span></span>  <span data-ttu-id="39826-181">若要提交功能请求或 bug 报告，请参阅[Web 视图反馈][GithubMicrosoftedgeWebviewfeddback]存储库。</span><span class="sxs-lookup"><span data-stu-id="39826-181">To submit feature requests or bug reports, see [WebView feedback repo][GithubMicrosoftedgeWebviewfeddback] .</span></span>  <span data-ttu-id="39826-182">这也是搜索已知问题的好地方。</span><span class="sxs-lookup"><span data-stu-id="39826-182">It's also a good place to search for known issues.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="5fee8-181">在开发人员预览版期间，Microsoft Edge Web 图团队还会收集数据，以帮助构建更好的 Web 视图。</span><span class="sxs-lookup"><span data-stu-id="5fee8-181">During developer preview, the Microsoft Edge WebView team also collects data to help build a better WebView.</span></span>  <span data-ttu-id="5fee8-182">用户可以通过导航到 `edge://settings/privacy` Microsoft Edge 浏览器并关闭浏览器数据收集来关闭 Web 视图数据收集。</span><span class="sxs-lookup"><span data-stu-id="5fee8-182">Users may turn off WebView data collection by navigating to `edge://settings/privacy` in the Microsoft Edge browser and turning off browser data collection.</span></span>  
+> <span data-ttu-id="39826-183">在预览过程中，我们将收集数据以帮助构建更好的产品。</span><span class="sxs-lookup"><span data-stu-id="39826-183">During the preview, we collect data to help build a better product.</span></span>  <span data-ttu-id="39826-184">若要关闭 WebView2 数据收集，请转到 `edge://settings/privacy` 并关闭浏览器数据收集。</span><span class="sxs-lookup"><span data-stu-id="39826-184">To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.</span></span>  
+
+<!-- links -->  
+
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "使用 WebView2 | 的应用程序的分发Microsoft 文档"  
+[Webview2ConceptsSecurity]: ./concepts/security.md "开发安全 WebView2 应用程序的最佳做法 |Microsoft 文档"  
+[Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "管理用户数据文件夹 |Microsoft 文档"  
+[Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 |Microsoft 文档"  
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "WebView2 （开发人员预览版）入门 |Microsoft 文档"   
+[Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Windows Forms 应用（预览版）中的 WebView2 入门 |Microsoft 文档"  
+[Webview2GettingstartedWinui]: ./gettingstarted/winui.md "WinUI3 （预览版）中的 WebView2 入门 |Microsoft 文档"  
+[Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "WPF 中的 WebView2 入门（预览版） |Microsoft 文档"  
+[Webview2HowtoDebug]: ./howto/debug.md "如何通过 WebView2 | 进行调试Microsoft 文档"  
+[Webview2HowtoWebdriver]: ./howto/webdriver.md "通过 Microsoft Edge 驱动程序自动化和测试 WebView2 |Microsoft 文档"  
+[Webview2Releasenotes]: ./releasenotes.md "WebView2 SDK 的 Webview2Releasenotes 发行说明 |Microsoft 文档"  
+
+[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Windows UI 库3预览版2（2020年7月） |Microsoft 文档"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例-MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈-MicrosoftEdge/WebViewFeedback |GitHub" 
+
+[MicrosoftedgeinsiderMain]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"  
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员"  
+
+[NugetPackagesMicrosoftWebWebView2]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "WebView2 |NuGet 库"  
