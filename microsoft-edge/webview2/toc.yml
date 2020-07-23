@@ -8,6 +8,8 @@
       href: gettingstarted/wpf.md
     - name: Windows 窗体
       href: gettingstarted/winforms.md
+    - name: WinUI 3.0
+      href: gettingstarted/winui.md
 - name: 概念
   items:
     - name: 分发我的应用
