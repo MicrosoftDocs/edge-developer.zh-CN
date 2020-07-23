@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2
-ms.openlocfilehash: 889924c996e030a0abe2a6a34036a881dcb26db5
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 81bc222324db9649439afa2a7c3c84f715fa2ae3
+ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10884573"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894324"
 ---
 # interface ICoreWebView2 
 
@@ -127,14 +127,6 @@ WebView2 必须在 UI 线程上创建。 专门使用消息泵的线程。 所�
 
 回调包括事件处理程序和完成处理程序按顺序执行。 也就是说，如果你有一个事件处理程序正在运行并开始消息循环，则没有其他事件处理程序或完成回调将开始执行 reentrantly。
 
-## 安全性
-
-在使用 ExecuteScript、PostWebMessageAsJson、PostWebMessageAsString 或任何其他方法将信息发送到 Web 视图之前，请始终检查 Web 视图的 Source 属性。 在导致导航的页面中，Web 视图可能会通过与页面或脚本交互的最终用户导航到另一个页面。 同样，请小心处理 AddScriptToExecuteOnDocumentCreated。 所有将来的导航都将运行此脚本，如果它提供对仅适用于特定来源的信息的访问权限，则任何 HTML 文档都可能具有访问权限。
-
-检查 ExecuteScript 方法调用的结果（WebMessageReceived 事件）时，请始终检查发件人的源或从 Web 视图中的 HTML 文档接收信息的任何其他机制验证 HTML 文档的 URI 是否是你所期望的内容。
-
-构建要发送到 Web 视图的消息时，更喜欢使用 PostWebMessageAsJson 并使用 JSON 库构造 JSON 字符串参数。 这将避免任何潜在的编码信息意外进入 JSON 字符串或脚本并确保任何攻击者控制的输入都不能修改 JSON 消息的其余部分或运行任意脚本。
-
 ## 字符串类型
 
 字符串输出参数是 LPWSTR null 终止的字符串。 被调用方使用 CoTaskMemAlloc 分配字符串。 所有权转移到呼叫方，由呼叫方负责使用 CoTaskMemFree 释放内存。
@@ -148,20 +140,6 @@ WebView2 必须在 UI 线程上创建。 专门使用消息泵的线程。 所�
 如果 WinRT 适用于你的应用，则可以使用 `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` 分析或生成 JSON 字符串， `RuntimeClass_Windows_Foundation_Uri` 或者 `IUriRuntimeClassFactory` 分析和生成 uri。 这两个功能都在 Win32 应用中使用。
 
 如果你使用 IUri 和 CreateUri 来分析 Uri，你可能希望使用以下 URI 创建标志使 CreateUri 行为与 Web 视图中的 URI 分析更密切匹配： `Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO`
-
-## 调试
-
-打开具有普通快捷方式的 DevTools： `F12` 或 `Ctrl+Shift+I` 。 在 `--auto-open-devtools-for-tabs` 首次创建 Web 视图时，可以使用 command 参数开关让 DevTools 窗口立即打开。 有关如何向浏览器进程提供其他命令行参数，请参阅 CreateCoreWebView2Controller 文档。 签出 LoaderOverride 注册表项，在 CreateCoreWebView2Controller 文档中无需修改你的应用程序，即可试用不同版本的 WebView2。
-
-## 版本控制
-
-在使用特定版本的 SDK 构建你的应用后，你的应用可能会使用已安装的旧版本或更高版本的浏览器二进制文件运行。 在 WebView2 版本1.0.0.0 之前，可能会在更新期间发生中断更改，这些更改将阻止你的 SDK 使用安装的浏览器二进制文件的不同版本。 在版本1.0.0.0 后，SDK 的不同版本可以按照以下最佳做法使用安装的浏览器的不同版本：
-
-若要对 API 进行重大更改，请确保在调用 DLL 导出 CreateCoreWebView2Environment 时和在任何 CoreWebView2 对象上调用 QueryInterface 时检查是否失败。 E_NOINTERFACE 的返回值可指示 SDK 与 Edge 浏览器二进制文件不兼容。
-
-从 QueryInterface 检查失败还将考虑 SDK 比 Edge 浏览器的版本更新的情况，并且你的应用尝试使用 Edge 浏览器不兼容的接口。
-
-当接口不可用时，你可以考虑禁用关联的功能（如果可能），或者向最终用户通知他们需要更新其浏览器。
 
 ## 成员
 
