@@ -16,10 +16,18 @@
       href: concepts/distribution.md
     - name: 管理用户数据文件夹
       href: concepts/userdatafolder.md
+    - name: 导航事件
+      href: concepts/navigation-events.md
+    - name: 进程模型
+      href: concepts/process-model.md
     - name: 安全最佳方案
       href: concepts/security.md
     - name: 版本控制
       href: concepts/versioning.md
+    - name: 线程模型
+      href: concepts/threading-model.md
+    - name: Win32 API 约定
+      href: concepts/win32-api-conventions.md
 - name: 发行说明
   href: releasenotes.md
 - name: 路线图
