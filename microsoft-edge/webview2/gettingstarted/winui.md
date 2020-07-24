@@ -3,17 +3,17 @@ description: 在 WinUI 应用中将 web 内容与 Microsoft Edge Web 视图2控�
 title: 适用于 WinUI 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winui 应用、winui、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 76bf2e7dc0ef54da4203f186ce0356cfbcbc130d
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: 9960a4411e69f0232ae2d202a61a9beb01c0a631
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888609"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895509"
 ---
 # WinUI3 中的 WebView2 入门（预览版）  
 
@@ -192,7 +192,7 @@ ms.locfileid: "10888609"
 *   `NavigationCompleted`  
 > [!NOTE]
 > HTTP 重定向引发多个 `NavigationStarting` 事件。  
-有关详细信息，请参阅[导航事件][Webviews2ReferenceWin3209488Icorewebview2NavigationEvents]。  
+有关详细信息，请参阅[导航事件][Webviews2ConceptsNavigationEvents]。  
 
 发生错误时，将引发以下事件，并且可能会导航到错误页面。  
 
@@ -274,7 +274,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [Webview2Index]: ../index.md "Microsoft Edge WebView2 简介（预览版） |Microsoft 文档"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "后续步骤-介绍 Microsoft Edge WebView2 （预览版） |Microsoft 文档"  
-[Webviews2ReferenceWin3209488Icorewebview2NavigationEvents]: ../reference/win32/0-9-488/icorewebview2.md#navigation-events "导航事件-接口 ICoreWebView2 |Microsoft 文档"  
+[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件 |Microsoft 文档"  
 [Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync-WebView2 | WebView2 类 |Microsoft 文档"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "适用于 Windows 10 的程序包清单架构参考 |Microsoft 文档"  

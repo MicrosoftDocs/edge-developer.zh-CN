@@ -3,17 +3,17 @@ description: 在 Windows 窗体应用中将 web 内容与 Microsoft Edge Web 视
 title: 适用于 Windows 表单应用的 Microsoft Edge Web 视图2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: 85b114e7eb1e567bd5188353af2826a56b01ad4e
-ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
+ms.openlocfilehash: 634fbd74a94ea990bc3eb9c150760522a5c13ce1
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10767021"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895523"
 ---
 # Windows 窗体应用中的 WebView2 入门（预览版）  
 
@@ -23,11 +23,11 @@ ms.locfileid: "10767021"
 
 请确保在继续之前安装了以下先决条件列表：  
 
-* 安装在 Windows 10、Windows 8.1 或 Windows 7 上的[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download/)的未安装频道。 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2017 或更高版本。
+* 安装在 Windows 10、Windows 8.1 或 Windows 7 上的[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download)的未安装频道。 
+* [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。
 
 > [!NOTE]
-> WebView2 当前不支持 .NET Core 3.0 的[设计器（预览版）](https://visualstudio.microsoft.com/vs/preview/)。
+> WebView2 当前不支持 .NET Core 3.0 的[设计器（预览版）](https://visualstudio.microsoft.com/vs/preview)。
 
 ## 步骤 1-创建单个窗口应用程序
 
@@ -35,15 +35,15 @@ ms.locfileid: "10767021"
 
 1. 打开**Visual Studio。**
 
-2. 选择 " **Windows 窗体 .Net Framework 应用**"，然后选择 "**下一步**"。
+1. 选择 " **Windows 窗体 .Net Framework 应用**"，然后选择 "**下一步**"。
 
     ![newproject](./media/winforms-newproject.png)
 
-3. 输入 "**项目名称**" 和 "**位置**" 值。  选择 " **.Net Framework 4.6.2** " 或 "更高版本"。  
+1. 输入 "**项目名称**" 和 "**位置**" 值。  选择 " **.Net Framework 4.6.2** " 或 "更高版本"。  
 
     ![startproject](./media/winforms-startproj.png)
 
-4. 选择 "**创建**" 以创建你的项目。
+1. 选择 "**创建**" 以创建你的项目。
 
 ## 步骤 2-安装 WebView2 SDK
 
@@ -54,9 +54,10 @@ ms.locfileid: "10767021"
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget.exe":::
        Nuget.exe :::image-end:::
 
-2. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
+1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
 
-3. 选中 "**包括预**发布"，选择一个**预**发布程序包版本，然后选择 "**安装**"。  
+    > [!IMPORTANT]
+    > 确保选中 "**包括预**发布"，选择 "**版本**" 中的预发布程序包，然后选择 "**安装**"。  
 
     ![nuget.exe](./media/installnuget.png)
 
@@ -69,15 +70,15 @@ ms.locfileid: "10767021"
 接下来，将 Web 视图添加到你的应用程序。  
 
 1. 打开**Windows 窗体设计器**。  
-2. 在**工具箱**中搜索**WebView2** 。 将**WebView2**控件拖放到 Windows Forms 应用中
+1. 在**工具箱**中搜索**WebView2** 。 将**WebView2**控件拖放到 Windows Forms 应用中
 
     ![>](./media/winforms-toolbox.png)
 
-3. 将 `Name` 属性更改为 `webView`。
+1. 将 `Name` 属性更改为 `webView`。
 
     ![>](./media/winforms-properties.png)
 
-4. 该 `Source` 属性设置 WebView2 控件中显示的初始 URI。 将 Source 属性设置为 <https://www.microsoft.com>
+1. 该 `Source` 属性设置 WebView2 控件中显示的初始 URI。 将 Source 属性设置为 <https://www.microsoft.com>
 
     ![>](./media/winforms-source.png)
 
@@ -86,21 +87,21 @@ ms.locfileid: "10767021"
 ![hellowebview](./media/winforms-hellowebview.png)
 
 > [!NOTE]
-> 如果您使用的是高 DPI 监视器，则可能需要为[高 dpi 支持配置 Windows 窗体应用](https://docs.microsoft.com/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support)。
+> 如果您使用的是高 DPI 监视器，则可能需要为[高 dpi 支持配置 Windows 窗体应用](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support)。
 
 ## 步骤 4-处理窗口调整大小事件
 
 将更多控件从工具箱添加到 Windows 窗体，然后相应地处理窗口大小调整事件。
 
 1. 在**Windows 窗体设计器**中打开**工具箱**
-2. 将**TextBox**拖放到 Windows Forms 应用中。 **TextBox** `addressBar` 在 "**属性" 选项卡**中命名文本框。
-3. 将**按钮**拖放到 Windows 窗体应用中。 将**按钮**中的文本更改为 `Go!` 并在**Button** `goButton` "**属性" 选项卡**中命名该按钮。
+1. 将**TextBox**拖放到 Windows Forms 应用中。 **TextBox** `addressBar` 在 "**属性" 选项卡**中命名文本框。
+1. 将**按钮**拖放到 Windows 窗体应用中。 将**按钮**中的文本更改为 `Go!` 并在**Button** `goButton` "**属性" 选项卡**中命名该按钮。
 
-应用在设计器中的外观应如下所示：
+    应用在设计器中的外观应如下所示：
+    
+    ![设计器](./media/winforms-designer.png)
 
-![设计器](./media/winforms-designer.png)
-
-4. 在**Form1.cs**定义 `Form_Resize` 以在调整应用窗口大小时保持控件的位置。
+1. 在**Form1.cs**定义 `Form_Resize` 以在调整应用窗口大小时保持控件的位置。
 
 ```csharp
 public Form1()
@@ -131,7 +132,7 @@ private void Form_Resize(object sender, EventArgs e)
     using Microsoft.Web.WebView2.Core;
     ```
 
-2. 在**Windows 窗体设计器**中，双击 `Go!` 要在其中创建方法的按钮 `goButton_Click` `Form1.cs` 。 在函数内复制并粘贴以下代码段。 现在，该 `goButton_Click` 函数将 Web 视图导航到在地址栏中输入的 URL。
+1. 在**Windows 窗体设计器**中，双击 `Go!` 要在其中创建方法的按钮 `goButton_Click` `Form1.cs` 。 在函数内复制并粘贴以下代码段。 现在，该 `goButton_Click` 函数将 Web 视图导航到在地址栏中输入的 URL。
 
     ```csharp
     private void goButton_Click(object sender, EventArgs e)
@@ -160,7 +161,7 @@ private void Form_Resize(object sender, EventArgs e)
 * `HistoryChanged`  
 * `NavigationCompleted`  
 
-有关详细信息，请参阅[导航事件](../reference/win32/0-9-488/icorewebview2.md#navigation-events)。  
+有关详细信息，请参阅[导航事件](../concepts/navigation-events.md)。  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
    导航事件
@@ -251,7 +252,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
 
-2. 初始化**CoreWebView2**后，注册一个事件处理程序以响应 `WebMessageReceived` 。  在 " `Form1.cs` 更新" `InitializeAsync` 和 " `UpdateAddressBar` 使用以下代码片段添加" 中。  
+1. 初始化**CoreWebView2**后，注册一个事件处理程序以响应 `WebMessageReceived` 。  在 " `Form1.cs` 更新" `InitializeAsync` 和 " `UpdateAddressBar` 使用以下代码片段添加" 中。  
 
     ```csharp
     async void InitializeAsync()
@@ -268,10 +269,10 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
 
-3. 为了让 web 视图发送和响应 web 消息，在 `CoreWebView2` 初始化后，主机会将 web 内容中的脚本插入到：  
+1. 为了让 web 视图发送和响应 web 消息，在 `CoreWebView2` 初始化后，主机会将 web 内容中的脚本插入到：  
 
     1. 使用将 URL 发送给主机 `postMessage` 。
-    2. 注册一个事件处理程序以打印从主机发送的消息。  
+    1. 注册一个事件处理程序以打印从主机发送的消息。  
 
 在中 `Form1.cs` ，更新， `InitializeAsync` 如以下代码片段所示。  
 

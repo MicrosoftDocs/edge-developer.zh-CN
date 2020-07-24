@@ -7,12 +7,12 @@ ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 渐进式 web 应用、PWA、Edge、Windows、WinRT、UWP、EdgeHTML
-ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 296ae0a65481edd312e06b83c1554813ec2bffae
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882784"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894715"
 ---
 # 定制你的 PWA （EdgeHTML） for Windows  
 
@@ -23,9 +23,13 @@ Windows 10 上安装的 PWAs 可享受以[通用 Windows 平台 \ （UWP \）][W
 *   通过 Cortana 语音命令启动/浏览应用  
 *   与 Windows 操作系统集成 \ （通过 Windows 操作中心、桌面任务栏和上下文菜单 \）  
 
-...这些只是 Windows 上的 PWA 的几个新增可能性 \ （EdgeHTML \）！  
+这些只是 Windows 上的 PWA （EdgeHTML \）的几个新增可能性。  
 
-本指南介绍如何以 Windows 10 应用的形式安装、运行和增强 PWA \ （EdgeHTML \），同时还可确保跨浏览器和跨平台兼容性。  
+本文介绍如何以 Windows 10 应用的形式安装、运行和增强 PWA \ （EdgeHTML \），同时还可确保跨浏览器和跨平台兼容性。  
+
+> [!IMPORTANT]
+> 本文中的示例和步骤需要 Visual Studio 2017。 Visual Studio 2019 不包含本文中使用的模板。 若要下载 Visual Studio 2017，请参阅[Visual Studio 下载-2017、2015 & 以前版本][PreviousVSDownloads]  
+
 
 ## 必备条件  
 
@@ -342,3 +346,4 @@ if(window.Windows && Windows.Media.SpeechRecognition){
 [MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "应用权限"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "下载"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Visual Studio 预览版"  
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Visual Studio 下载"

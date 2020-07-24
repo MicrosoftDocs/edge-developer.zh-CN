@@ -3,17 +3,17 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: 适用于 Win32 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: e184eaeb28a1e6e7aacf2917094149092d2fb6ee
-ms.sourcegitcommit: ae0257f8fb9832296ee6a196ded7bad2aacd3208
+ms.openlocfilehash: 7e35dc6ab84a32cfa7e020fa34ddfaa63818eda1
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "10846547"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895516"
 ---
 # WebView2 （开发人员预览版）入门  
 
@@ -124,7 +124,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
                 }
                 
                 // Add a few settings for the webview
-                // this is a redundant demo step as the values are the default settings
+                // The demo step is redundant since the values are the default settings
                 ICoreWebView2Settings* Settings;
                 webviewWindow->get_Settings(&Settings);
                 Settings->put_IsScriptEnabled(TRUE);
@@ -170,7 +170,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
 
-有关详细信息，请参阅[导航事件][Webview2ReferenceWin3209538Icorewebview2NavigationEvents]。  
+有关详细信息，请参阅[导航事件][Webview2ConceptsNavigationEvents]。  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
    导航事件  
@@ -206,7 +206,7 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 
 ## 步骤 5-脚本  
 
-托管应用还可以将 JavaScript 插入 Web 视图。  你可以通过任务 Web 视图执行任意 JavaScript 或添加初始化脚本。  已添加的初始化脚本将应用于所有未来的顶级文档和子框架导航，直到被删除，并在创建全局对象之后以及执行 HTML 文档包括的任何其他脚本之前运行。  
+托管应用还可以将 JavaScript 插入 Web 视图。  你可以通过任务 Web 视图运行任意 JavaScript 或添加初始化脚本。  已添加的初始化脚本将应用于所有未来的顶级文档和子框架导航，直到被删除，并在创建全局对象之后以及 HTML 文档所包含的任何其他脚本之前运行。  
 
 复制以下代码片段并粘贴到其中 `HelloWebView.cpp` 。  
 
@@ -290,7 +290,7 @@ nullptr);
 
 [Webview2Index]: ../index.md "Microsoft Edge WebView2 简介（预览版） |Microsoft 文档"  
 [Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "参考（WebView2） |Microsoft 文档"  
-[Webview2ReferenceWin3209538Icorewebview2NavigationEvents]: ../reference/win32/0-9-538/ICoreWebView2.md#navigation-events "导航事件-接口 ICoreWebView2 |Microsoft 文档"  
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件 |Microsoft 文档"  
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows 运行时 c + + 模板库（WRL） |Microsoft 文档"  
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "演练：创建传统的 Windows 桌面应用程序（c + +） |Microsoft 文档"  

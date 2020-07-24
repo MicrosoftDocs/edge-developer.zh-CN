@@ -3,17 +3,17 @@ description: 在 WPF 应用中将 web 内容与 Microsoft Edge Web 视图2控件
 title: 适用于 WPF 应用的 Microsoft Edge Web 视图2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 9ecb80050d52d1d3b888027a728456a881d8c5ad
-ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
+ms.openlocfilehash: 304d79640bdf789eb0b822dc7ab8f260df637624
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10767014"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895488"
 ---
 # WPF 中的 WebView2 入门（预览版）
 
@@ -24,7 +24,7 @@ ms.locfileid: "10767014"
 请确保在继续之前安装了以下先决条件列表：  
 
 * 安装在 Windows 10、Windows 8.1 或 Windows 7 上的[Microsoft Edge （Chromium）](https://www.microsoftedgeinsider.com/download)的未安装频道。  
-* [Visual Studio](https://visualstudio.microsoft.com/) 2017 或更高版本。  
+* [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。  
 
 ## 步骤 1-创建单个窗口应用程序  
 
@@ -69,16 +69,18 @@ ms.locfileid: "10767014"
        Nuget.exe
     :::image-end:::
     
-2.  `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
+1.  `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
 
-3. 选中 "**包括预**发布"，选择一个**预**发布程序包版本，然后选择 "**安装**"。  
+    > [!IMPORTANT]
+    > 确保选中 "**包括预**发布"，选择 "**版本**" 中的预发布程序包，然后选择 "**安装**"。  
   
      ![nuget.exe](./media/installnuget.PNG)
     
-    全部设置为使用 WebView2 API 开始开发应用程序。  按 `F5` 生成并运行项目。  正在运行的项目显示一个空窗口。  
+    全部设置为使用 WebView2 API 开始开发应用程序。  选择 `F5` 以生成并运行项目。  正在运行的项目显示一个空窗口。  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="空应用":::
-       空应用 :::image-end:::  
+       空应用
+    :::image-end:::  
     
 ## 步骤 3-在 MainWindow 中创建单个 Web 视图  
 
@@ -195,7 +197,7 @@ ms.locfileid: "10767014"
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-有关详细信息，请参阅[导航事件](../reference/win32/0-9-488/icorewebview2.md#navigation-events)。  
+有关详细信息，请参阅[导航事件](../concepts/navigation-events.md)。  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
    导航事件

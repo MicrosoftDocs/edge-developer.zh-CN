@@ -3,16 +3,16 @@ description: 本指南概括介绍了如何在 Windows 上构建渐进式 web �
 title: 渐进式 Web 应用（Chromium）入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 渐进式 web 应用、PWA、Edge、Windows、PWABuilder、web 清单、服务工作人员、推送
-ms.openlocfilehash: 6c5fa5d6af8494f33e11a545d5dde1264604c787
-ms.sourcegitcommit: 136642396bb8094a535e203067ee429e60d31d25
+ms.openlocfilehash: a9a0cad2d771e52b783053e36f0f23dec5d8e70c
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10659207"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894708"
 ---
 # 渐进式 Web 应用（Chromium）入门  
 
@@ -26,7 +26,7 @@ ms.locfileid: "10659207"
 ## 必备条件  
 
 *   使用[VS 代码][VisualstudioCodeMain]编辑 PWA 源代码。  
-*   将[node.js][NodejsMain]用作本地 web 服务器。  
+*   使用[Node.js][NodejsMain]作为本地 web 服务器。  
 
 ## 设置基本 web 应用  
 
@@ -125,7 +125,7 @@ PWA 平台的关键部分（如[服务工作者][MDNServiceWorkerApi]）需要�
 1.  在 VS 代码中，打开 `/public/index.html` 并将以下代码片段添加到 `<head>` 标记中。  
     
     ```html
-    <script src="/pwabuilder-sw-register.js"></script>
+    <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
 你的 web 应用现在有一个服务工作人员使用缓存第一个策略，该策略首先从缓存中提取资源（如图像、JS、CSS 和 HTML），并根据需要回退到网络。  
@@ -319,7 +319,7 @@ self.addEventListener('notificationclick', function (event) {
 
 <!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service "发布到 Azure 应用服务-在 Visual Studio 中创建 node.js 和 Express 应用 |Microsoft 文档"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "使用 VS 代码将 Node.js 应用部署到 Azure |Microsoft 文档"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "创建 Azure 免费帐户 |Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Web Apps |Microsoft Azure"  

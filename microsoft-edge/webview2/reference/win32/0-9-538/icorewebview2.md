@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入
 title: WebView2 Win32 c + + ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 07/23/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2
-ms.openlocfilehash: 81bc222324db9649439afa2a7c3c84f715fa2ae3
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: a1da6789027234130c58078871d7da23b4e285ba
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894324"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895495"
 ---
 # interface ICoreWebView2 
 
@@ -96,50 +96,6 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | ICoreWebView2ScriptDialogOpeningEventHandler 接口中使用的 JavaScript 对话框类型。
 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status) | Web 导航的错误状态值。
 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) | Web 资源请求上下文的枚举。
-
-## 导航事件
-
-导航事件的常规序列为 NavigationStarting、SourceChanged、ContentLoading 和 NavigationCompleted。 以下事件描述了每个导航期间 Web 视图的状态： NavigationStarting： Web 视图正在开始导航，导航将导致网络请求。 主机此时可以禁用请求。 SourceChanged： Web 视图的源更改为新的 URL。 这也可能是由于不会导致网络请求（如片段导航）的导航导致的。 HistoryChanged：由于导航的结果，Web 视图的历史记录已更新。 ContentLoading： Web 视图已开始加载新内容。 NavigationCompleted： Web 视图已完成加载新页面上的内容。 开发人员可以按导航 ID 跟踪每个新文档的导航。 每次成功导航到新文档时，Web 视图的导航 ID 都会更改。
-
-![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
-
-请注意，这适用于具有相同的 NavigationId 事件参数的导航事件。 具有不同 NavigationId 事件参数的导航事件可能会重叠。 例如，如果你为其 NavigationStarting 事件启动导航等待，然后开始另一个导航，你将看到第一个导航的 NavigationStarting，后跟第二个导航的 NavigationStarting，然后是第一个导航的 NavigationCompleted 以及第二个导航的所有其余导航事件。 在错误情况下，可能会有也可能不是 ContentLoading 事件，具体取决于导航是否转到错误页面。 在 HTTP 重定向时，一行中将有多个 NavigationStarting 事件，并且第一个事件将设置其 IsRedirect 标志，但导航 ID 保持不变。 相同的文档导航不会导致 NavigationStarting 事件，也不会增加导航 ID。
-
-若要在 Web 视图中的 subframes 内监视或取消导航，请使用 FrameNavigationStarting。
-
-## 流程模型
-
-WebView2 使用与 Edge web 浏览器相同的进程模型。 用户会话中每个指定的用户数据目录都有一个 Edge 浏览器进程，该进程将为指定用户数据目录的任何 WebView2 调用进程提供服务。 这意味着一个 Edge 浏览器进程可能正在为多个呼叫流程提供服务，并且一个呼叫进程可能正在使用多个 Edge 浏览器进程。
-
-![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
-
-浏览器进程关闭时，将出现一些数量的呈现器进程。 根据需要创建这些类，以在不同的 WebViews 中服务潜在的多个帧。 呈现器进程的数量因网站隔离浏览器功能和呈现在关联的 WebViews 中的独特断开的来源的数量而异。
-
-![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
-
-你可以使用 ProcessFailure 事件对这些浏览器和呈现器进程中的崩溃和挂起做出反应。
-
-你可以使用 Close 方法安全地关闭关联的浏览器和呈现器进程。
-
-## 线程模型
-
-WebView2 必须在 UI 线程上创建。 专门使用消息泵的线程。 所有回调都将在该线程上发生，并且对 Web 视图的调用必须在该线程上完成。 使用来自另一个线程的 Web 视图不安全。
-
-回调包括事件处理程序和完成处理程序按顺序执行。 也就是说，如果你有一个事件处理程序正在运行并开始消息循环，则没有其他事件处理程序或完成回调将开始执行 reentrantly。
-
-## 字符串类型
-
-字符串输出参数是 LPWSTR null 终止的字符串。 被调用方使用 CoTaskMemAlloc 分配字符串。 所有权转移到呼叫方，由呼叫方负责使用 CoTaskMemFree 释放内存。
-
-参数中的字符串是 LPCWSTR null 终止的字符串。 调用方确保字符串在同步函数调用期间有效。 如果被调用方需要在函数调用完成后将该值保留到某个点，则被调用方必须分配其自己的字符串值副本。
-
-## URI 和 JSON 分析
-
-各种方法以字符串形式提供或接受 Uri 和 JSON。 请使用你的首选库来分析和生成这些字符串。
-
-如果 WinRT 适用于你的应用，则可以使用 `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` 分析或生成 JSON 字符串， `RuntimeClass_Windows_Foundation_Uri` 或者 `IUriRuntimeClassFactory` 分析和生成 uri。 这两个功能都在 Win32 应用中使用。
-
-如果你使用 IUri 和 CreateUri 来分析 Uri，你可能希望使用以下 URI 创建标志使 CreateUri 行为与 Web 视图中的 URI 分析更密切匹配： `Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO`
 
 ## 成员
 
