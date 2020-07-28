@@ -7,13 +7,13 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0034e23885020aae5047c69219bd51235a5882b0
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: b565f441ea6e6b3f2ae01ab251d7b9cae1aa815b
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684683"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898219"
 ---
 # Microsoft Edge （Chromium）开发人员工具  
 
@@ -54,12 +54,12 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 :::image-end:::
 
 Microsoft Edge \ （Chromium \） DevTools 包括以下面板。  
-*   "**元素**" 面板，用于编辑 HTML 和 CSS、检查辅助功能属性、查看事件侦听器和设置 DOM 转变断点  
-*   用于查看和筛选日志消息、检查 JavaScript 对象和 DOM 节点以及在所选窗口或框架的上下文中运行 JavaScript 的**控制台**  
+*   “**元素**”面板，用于编辑 HTML 和 CSS、检查辅助功能属性、查看事件侦听器和设置 DOM 变化断点  
+*   **控制台**，用于查看和筛选日志消息、检查 JavaScript 对象和 DOM 节点，并在所选窗口或框架的上下文中运行 JavaScript  
 *   一个 "**源**" 面板，用于打开和实时编辑代码、设置断点、单步执行代码以及查看网站的状态一次 JavaScript 的每一行 JavaScript  
-*   用于监视和检查来自网络和浏览器缓存的请求和响应的**网络**面板   
-*   用于分析你的网站所需的时间和系统资源的**性能**面板  
-*   测量内存资源使用情况和比较不同状态的代码运行时中的堆快照的**内存**面板  
+*   “**网络**”面板，用于从网络和浏览器缓存监视和检查请求和响应   
+*   “**性能**”面板，用于分析网站所需的时间和系统资源  
+*   “**内存**”面板，用于衡量内存资源的使用情况，并比较代码运行时的不同状态下的堆快照  
 *   用于检查、修改和调试 web 应用清单、服务工作人员和服务工作人员缓存的**应用程序**面板。  您也可以从 "**应用程序**" 面板中检查和管理存储、数据库和缓存。  
 *   用于调试安全问题的**安全**面板，并确保你在网站上正确实现了 HTTPS。  HTTPS 为您的网站和用户提供网站上提供个人信息的重要安全和数据完整性。  
 *   **审核**面板 \ （现已重命名为**Lighthouse**\）运行网站审核。  审核结果可帮助你通过以下方式改善网站的质量。  
@@ -98,7 +98,7 @@ Microsoft Edge \ （Chromium \） DevTools 包括以下面板。
 
 | 操作 | Windows | macOS |  
 |:--- |:--- | :--- |  
-| 显示/隐藏 DevTools \ （打开上次查看的面板 \） | `F12` 或`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| 显示/隐藏 DevTools\（打开至上次查看的面板\） | `F12` 或`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | 显示控制台面板 | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | 在 "**检查元素" 模式下**显示 DevTools，使你可以在网站上选择元素并在 "**元素**" 面板中查看 HTML 和 CSS | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
 | 显示设置 | `?` 或`Fn`+`F1` | `?` 或`Fn`+`F1` |  
@@ -143,7 +143,7 @@ Microsoft Edge \ （Chromium \） DevTools 包括以下面板。
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "初学者的 DevTools： HTML 和 DOM 入门 |Microsoft 文档"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools "Microsoft Edge 中的新增功能（Chromium） DevTools |Microsoft 文档"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "Microsoft Edge 中的新增功能（Chromium） DevTools |Microsoft 文档"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge （Chromium） DevTools 协议 |Microsoft 文档"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge 加载项"  
