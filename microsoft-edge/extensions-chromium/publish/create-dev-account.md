@@ -1,76 +1,146 @@
 ---
-description: 在合作伙伴中心创建 Microsoft Edge Addons 开发者帐户的步骤。
-title: 打开新的开发人员帐户
+description: 了解如何注册到开发人员帐户以将扩展发布到 Microsoft Edge 加载项存储。
+title: 注册为 Microsoft Edge 扩展开发人员以发布扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
-ms.topic: article
+ms.date: 07/15/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge-chromium
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 2870e5e149630e9afa9824c927470a69b9c617ef
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: 边缘-chromium、扩展开发、浏览器扩展、加载项、合作伙伴中心、开发人员
+ms.openlocfilehash: 55f3520526a97ebbd8eeacf1c46f801b94599694
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607389"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898205"
 ---
-# <span data-ttu-id="73688-104">打开新的开发人员帐户</span><span class="sxs-lookup"><span data-stu-id="73688-104">Open A New Developer Account</span></span>  
+# <span data-ttu-id="94984-104">注册为 Microsoft Edge 扩展开发人员</span><span class="sxs-lookup"><span data-stu-id="94984-104">Register as a Microsoft Edge extension developer</span></span>  
 
-<span data-ttu-id="73688-105">打开新的 Microsoft Edge 开发人员帐户。</span><span class="sxs-lookup"><span data-stu-id="73688-105">Open a new Microsoft Edge Developer account.</span></span>  <span data-ttu-id="73688-106">在提交扩展之前，必须在 "[合作伙伴中心][MicrosoftPartnerCenter]" 设置 Microsoft Edge 开发人员帐户</span><span class="sxs-lookup"><span data-stu-id="73688-106">Before you submit the Extension, you must set up a Microsoft Edge developer account in [Partner Center][MicrosoftPartnerCenter]</span></span>  
+<span data-ttu-id="94984-105">若要将扩展提交到 Microsoft Edge 加载项网站，您必须在[合作伙伴中心][MicrosoftPartnerCenter]使用 Microsoft Edge 程序注册为开发人员。</span><span class="sxs-lookup"><span data-stu-id="94984-105">To submit your extension to the Microsoft Edge add-ons website, you must be registered as a developer with the Microsoft Edge program on [Partner Center][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="94984-106">向 Microsoft Edge 计划提交分机号时，无需支付注册费。</span><span class="sxs-lookup"><span data-stu-id="94984-106">There is no registration fee involved in submitting extensions to the Microsoft Edge program.</span></span>  
+
+## <span data-ttu-id="94984-107">开始之前</span><span class="sxs-lookup"><span data-stu-id="94984-107">Before you begin</span></span>  
+
+<span data-ttu-id="94984-108">如果您没有帐户或者您有一个具有合作伙伴中心的现有商业版帐户，则必须创建一个新的[microsoft 帐户（MSA）][WindowsCommunityEverythingAboutMicrosoftAccounts] ，以便向 microsoft Edge 程序注册。</span><span class="sxs-lookup"><span data-stu-id="94984-108">If you do not have an account or if you have an existing commercial account with Partner Center, you must create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] to register with the Microsoft Edge program.</span></span>  <span data-ttu-id="94984-109">若要创建 Microsoft 帐户 \ （Outlook/live/Hotmail \），请访问[account.microsoft.com][MicrosoftAccount] ，然后选择 "**创建 microsoft 帐户**"。</span><span class="sxs-lookup"><span data-stu-id="94984-109">To create a Microsoft account \(Outlook/live/Hotmail\), visit [account.microsoft.com][MicrosoftAccount] and select **Create a Microsoft account**.</span></span>  <span data-ttu-id="94984-110">如果您是使用开发人员帐户在合作伙伴中心注册的，请使用相应的 Microsoft 帐户 \ （MSA \）登录，然后注册 Microsoft Edge 程序。</span><span class="sxs-lookup"><span data-stu-id="94984-110">If you are registered on the Partner center with a developer account, use the corresponding Microsoft account \(MSA\) to sign-in, and then enroll in the Microsoft Edge program.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="73688-107">您是否有 Microsoft 帐户？</span><span class="sxs-lookup"><span data-stu-id="73688-107">Do you have a Microsoft Account?</span></span>  <span data-ttu-id="73688-108">若要为 Microsoft Edge 创建开发人员帐户，你必须拥有 Microsoft 帐户电子邮件 \ （你无法使用工作或学校电子邮件地址 \）注册。</span><span class="sxs-lookup"><span data-stu-id="73688-108">To create a developer account for Microsoft Edge, you must have a Microsoft account email \(You are not able to sign up with a work or school email address\).</span></span>  <span data-ttu-id="73688-109">如果你没有 Microsoft 帐户，请转到[account.microsoft.com][MicrosoftAccount]，选择 "**登录**"，然后选择 "**创建一个！**"。</span><span class="sxs-lookup"><span data-stu-id="73688-109">If you do not have a Microsoft account, go to [account.microsoft.com][MicrosoftAccount], select **Sign in**, and then choose **Create one!**.</span></span>  
+> <span data-ttu-id="94984-111">今天，Microsoft Edge 扩展团队不支持使用工作或学校帐户注册。</span><span class="sxs-lookup"><span data-stu-id="94984-111">Today the Microsoft Edge extensions team does not support signing up with a work or school account.</span></span>  <span data-ttu-id="94984-112">将来，Microsoft Edge 扩展团队计划支持将 AAD 租户链接到用于扩展管理的 MSA 帐户。</span><span class="sxs-lookup"><span data-stu-id="94984-112">In the future, the Microsoft Edge extensions team plans to support linking AAD tenants to MSA accounts for extension management.</span></span>  
 
-1.  <span data-ttu-id="73688-110">转到 "[开发人员" 页面][MicrosoftPartnerCenter]，然后选择 "**转到仪表板**"。</span><span class="sxs-lookup"><span data-stu-id="73688-110">Go to the [developer page][MicrosoftPartnerCenter] and select **GO TO DASHBOARD**.</span></span>  
-1.  <span data-ttu-id="73688-111">如果尚未使用**Microsoft 帐户**登录，请立即登录，或创建新的 Microsoft 帐户。</span><span class="sxs-lookup"><span data-stu-id="73688-111">If you are not already signed in with a **Microsoft account**, sign in now, or create a new Microsoft account.</span></span>  <span data-ttu-id="73688-112">你使用的 Microsoft 帐户与你用于登录开发人员帐户的 Microsoft 帐户相同。</span><span class="sxs-lookup"><span data-stu-id="73688-112">You use the same Microsoft account that you use to sign into your developer account.</span></span>  <span data-ttu-id="73688-113">登录后，将显示此注册表单：</span><span class="sxs-lookup"><span data-stu-id="73688-113">After you sign in, this registration form is displayed:</span></span>  
+## <span data-ttu-id="94984-113">在合作伙伴中心注册 Microsoft Edge 计划</span><span class="sxs-lookup"><span data-stu-id="94984-113">Enroll in the Microsoft Edge program on Partner Center</span></span>  
+
+1.  <span data-ttu-id="94984-114">转到 "[开发人员" 页面][MicrosoftPartnerCenter]，然后选择 "**转到仪表板**"。</span><span class="sxs-lookup"><span data-stu-id="94984-114">Go to the [developer page][MicrosoftPartnerCenter] and select **GO TO DASHBOARD**.</span></span>  
+1.  <span data-ttu-id="94984-115">如果尚未使用**Microsoft 帐户**登录，请立即登录，或者创建新的 microsoft 帐户。</span><span class="sxs-lookup"><span data-stu-id="94984-115">If you are not already signed in with a **Microsoft account**, sign-in now, or create a new Microsoft account.</span></span>  <span data-ttu-id="94984-116">你使用的 Microsoft 帐户与你用于登录开发人员帐户的 Microsoft 帐户相同。</span><span class="sxs-lookup"><span data-stu-id="94984-116">You use the same Microsoft account that you use to sign into your developer account.</span></span>  <span data-ttu-id="94984-117">登录后，将显示此注册表单。</span><span class="sxs-lookup"><span data-stu-id="94984-117">After you sign-in, this registration form is displayed.</span></span>  
     
-1.  <span data-ttu-id="73688-114">填写下列字段。</span><span class="sxs-lookup"><span data-stu-id="73688-114">Fill out the following fields.</span></span>  
-    
-    | <span data-ttu-id="73688-115">字段</span><span class="sxs-lookup"><span data-stu-id="73688-115">Field</span></span> | <span data-ttu-id="73688-116">描述</span><span class="sxs-lookup"><span data-stu-id="73688-116">Description</span></span> | <span data-ttu-id="73688-117">可能值</span><span class="sxs-lookup"><span data-stu-id="73688-117">Possible values</span></span> |  
-    |:--- |:--- |:--- |  
-    | <span data-ttu-id="73688-118">国家/地区</span><span class="sxs-lookup"><span data-stu-id="73688-118">Country/region</span></span> | <span data-ttu-id="73688-119">您的生活或企业所在的位置。</span><span class="sxs-lookup"><span data-stu-id="73688-119">Where you live, or where your business is located.</span></span>  <span data-ttu-id="73688-120">您以后无法更改。</span><span class="sxs-lookup"><span data-stu-id="73688-120">You are not able to change this later.</span></span> |  |  
-    | <span data-ttu-id="73688-121">开发人员帐户类型</span><span class="sxs-lookup"><span data-stu-id="73688-121">Developer account type</span></span> | <span data-ttu-id="73688-122">帐户类型。</span><span class="sxs-lookup"><span data-stu-id="73688-122">The account type.</span></span>  <span data-ttu-id="73688-123">您无法在以后更改，因此请务必选择正确的帐户类型。</span><span class="sxs-lookup"><span data-stu-id="73688-123">You are not able to change this later, so be sure to choose the right type of account.</span></span>  <span data-ttu-id="73688-124">请参阅[帐户类型](#account-types)。</span><span class="sxs-lookup"><span data-stu-id="73688-124">See [Account Types](#account-types).</span></span> | `Individual` <span data-ttu-id="73688-125">或者</span><span class="sxs-lookup"><span data-stu-id="73688-125">or</span></span> `Company` |  
-    | <span data-ttu-id="73688-126">发布者显示名称</span><span class="sxs-lookup"><span data-stu-id="73688-126">Publisher display name</span></span> | <span data-ttu-id="73688-127">要使用 \ （50个字符或更少的 \）的名称。</span><span class="sxs-lookup"><span data-stu-id="73688-127">The name to use \(50 characters or fewer\).</span></span>  <span data-ttu-id="73688-128">选择此操作时，用户在浏览您的扩展时将看到此名称。</span><span class="sxs-lookup"><span data-stu-id="73688-128">Select this carefully, users see this name when browsing your Extensions.</span></span>  <span data-ttu-id="73688-129">对于公司帐户，请确保使用您的组织的注册业务名称。</span><span class="sxs-lookup"><span data-stu-id="73688-129">For company accounts, be sure to use the registered business name of your organization.</span></span> |  |  
-    | <span data-ttu-id="73688-130">联系人详情</span><span class="sxs-lookup"><span data-stu-id="73688-130">Contact details</span></span> | <span data-ttu-id="73688-131">对于公司帐户，请确保使用您的组织的注册电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="73688-131">For company accounts, be sure to use the registered email address of your organization.</span></span> |  |  
-    
-    > [!NOTE]
-    > <span data-ttu-id="73688-132">对于**Publisher 显示名称**，只有当它可用且您有权使用时，才能使用该名称。</span><span class="sxs-lookup"><span data-stu-id="73688-132">For **Publisher display name**, you may use a name only if it is available and that you have the rights to use.</span></span>  
-    
-    > [!NOTE]
-    > <span data-ttu-id="73688-133">有关**联系人的详细信息**，Microsoft 使用这些详细信息与您联系，了解与客户相关的重要事项。</span><span class="sxs-lookup"><span data-stu-id="73688-133">For **Contact details**, Microsoft uses these details to contact you about account-related matters.</span></span>  <span data-ttu-id="73688-134">例如，您在完成注册后收到电子邮件确认。</span><span class="sxs-lookup"><span data-stu-id="73688-134">Example, you receive an email confirmation after you complete your registration.</span></span>  <span data-ttu-id="73688-135">之后，如果你的帐户出现问题，我们将发送消息。</span><span class="sxs-lookup"><span data-stu-id="73688-135">After that, we send messages if you have issues with your account.</span></span>  <span data-ttu-id="73688-136">如果要注册为公司，还必须输入审核公司帐户的人员的**姓名**、**电子邮件地址**和**电话号码**。</span><span class="sxs-lookup"><span data-stu-id="73688-136">If you are registering as a company, you must also enter the **name**, **email address**, and **phone number** of the person who approves your company account.</span></span>  
-    
-    <span data-ttu-id="73688-137">查看您的帐户详细信息并确认所有内容均正确无误。</span><span class="sxs-lookup"><span data-stu-id="73688-137">Review your account details and confirm that everything is correct.</span></span>  <span data-ttu-id="73688-138">然后，阅读并接受[Microsoft Edge 开发人员协议][MicrosoftAppDeveloperAgreement]的条款和条件。</span><span class="sxs-lookup"><span data-stu-id="73688-138">Then, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].</span></span>  
-    
-1.  <span data-ttu-id="73688-139">单击**完成**以确认注册。</span><span class="sxs-lookup"><span data-stu-id="73688-139">Click **Finish** to confirm your registration.</span></span>  
+    <span data-ttu-id="94984-118">若要注册 Microsoft Edge 程序，请登录您的帐户，然后填写表单。</span><span class="sxs-lookup"><span data-stu-id="94984-118">To enroll in the Microsoft Edge program, sign in-to your account, and complete the form.</span></span>  
+    <!-- -->
+    :::row:::
+       :::column span="1":::
+          **<span data-ttu-id="94984-119">帐户国家/地区</span><span class="sxs-lookup"><span data-stu-id="94984-119">Account country/region</span></span>**  
+       :::column-end:::
+       :::column span="2":::
+          <span data-ttu-id="94984-120">此字段是你的 live 或你的企业所在的位置。</span><span class="sxs-lookup"><span data-stu-id="94984-120">This field is where you either live or your business is located.</span></span>  
+          
+          > [!IMPORTANT]
+          > <span data-ttu-id="94984-121">注册后，您将无法更改此字段的值。</span><span class="sxs-lookup"><span data-stu-id="94984-121">After enrollment, you are not able to change the value of this field.</span></span>  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **<span data-ttu-id="94984-122">帐户类型</span><span class="sxs-lookup"><span data-stu-id="94984-122">Account type</span></span>**  
+       :::column-end:::
+       :::column span="2":::
+          <span data-ttu-id="94984-123">[合作伙伴中心][MicrosoftPartnerCenter]中的 Microsoft Edge 计划提供个人和公司帐户，如下表中详细介绍了这些帐户。</span><span class="sxs-lookup"><span data-stu-id="94984-123">The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts, which are described in detail in the table that follows.</span></span>  <span data-ttu-id="94984-124">这两种帐户类型都允许你将扩展发布到 Microsoft Edge 加载项目录。</span><span class="sxs-lookup"><span data-stu-id="94984-124">Both account types allow you to publish extensions to the Microsoft Edge add-ons catalog.</span></span>  
+          
+          > [!IMPORTANT]
+          > <span data-ttu-id="94984-125">注册后，您将无法更改此字段的值。</span><span class="sxs-lookup"><span data-stu-id="94984-125">After enrollment, you are not able to change the value of this field.</span></span>  
+          
+          *   `Individual account`  
+              <span data-ttu-id="94984-126">单个帐户适用于与公司不关联的开发人员。</span><span class="sxs-lookup"><span data-stu-id="94984-126">An individual account is appropriate for a developer not associated with a company.</span></span>  <span data-ttu-id="94984-127">帐户验证过程较短，并且需要验证发布者显示名称是否可用。</span><span class="sxs-lookup"><span data-stu-id="94984-127">The account verification process is shorter, and involves verifying that the publisher display name is available.</span></span>  
 
-## <span data-ttu-id="73688-140">帐户类型</span><span class="sxs-lookup"><span data-stu-id="73688-140">Account Types</span></span>  
+          *   `Company account`  
+              <span data-ttu-id="94984-128">公司帐户与组织或企业相关联。</span><span class="sxs-lookup"><span data-stu-id="94984-128">A company account is associated with an organization or business.</span></span>  <span data-ttu-id="94984-129">帐户验证过程较长，并涉及确认您是否有权为您的公司创建帐户。</span><span class="sxs-lookup"><span data-stu-id="94984-129">The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.</span></span>  <span data-ttu-id="94984-130">该过程的持续时间可能介于几天到几周之间。</span><span class="sxs-lookup"><span data-stu-id="94984-130">The duration of the process may range from a few days to a few weeks.</span></span>  <span data-ttu-id="94984-131">您的公司可能会收到来自 Microsoft 验证合作伙伴的电话呼叫。</span><span class="sxs-lookup"><span data-stu-id="94984-131">Your company may receive phone calls from Microsoft verification partners.</span></span>  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **<span data-ttu-id="94984-132">发布者显示名称</span><span class="sxs-lookup"><span data-stu-id="94984-132">Publisher display name</span></span>**  
+       :::column-end:::
+       :::column span="2":::
+          <span data-ttu-id="94984-133">此域是向 Microsoft Edge 加载项目录中的用户显示的名称。</span><span class="sxs-lookup"><span data-stu-id="94984-133">This field is the name shown to users in the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="94984-134">仅当名称可用，并且您有权使用它时，您才可以使用该名称。</span><span class="sxs-lookup"><span data-stu-id="94984-134">You may use a name only if it is available, and you have the rights to use it.</span></span>  <span data-ttu-id="94984-135">公司帐户必须使用您的组织的注册业务名称。</span><span class="sxs-lookup"><span data-stu-id="94984-135">Company accounts must use the registered business name of your organization.</span></span>  
+          
+          > [!NOTE]
+          > <span data-ttu-id="94984-136">此字段的最大长度为50个字符。</span><span class="sxs-lookup"><span data-stu-id="94984-136">The maximum length for this field is 50 characters.</span></span>  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **<span data-ttu-id="94984-137">联系人详情</span><span class="sxs-lookup"><span data-stu-id="94984-137">Contact details</span></span>**  
+       :::column-end:::
+       :::column span="2":::
+          <span data-ttu-id="94984-138">此字段包含 Microsoft 可用于联系您的任何帐户问题的任何联系信息。</span><span class="sxs-lookup"><span data-stu-id="94984-138">This field contains any contact information that Microsoft may use to contact you regarding any account issues.</span></span>  <span data-ttu-id="94984-139">注册完成后，将向您发送电子邮件确认。</span><span class="sxs-lookup"><span data-stu-id="94984-139">After registration is complete, an email confirmation is sent to you.</span></span>  <span data-ttu-id="94984-140">对于公司帐户，您必须使用与您的组织关联的注册电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="94984-140">For a company account, you must use the registered email address associated with your organization.</span></span>  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **<span data-ttu-id="94984-141">公司审批者</span><span class="sxs-lookup"><span data-stu-id="94984-141">Company approver</span></span>**  
+       :::column-end:::
+       :::column span="2":::
+          <span data-ttu-id="94984-142">对于公司帐户，您必须提供公司审批者的联系信息 \ （姓名、电子邮件地址和电话号码 \）。</span><span class="sxs-lookup"><span data-stu-id="94984-142">For a company account, you must provide the contact information of your company approver \(name, email address, and phone number\).</span></span>  <span data-ttu-id="94984-143">Microsoft 联系人指定为验证过程的一部分的公司审批者，以确保该扩展属于您的组织。</span><span class="sxs-lookup"><span data-stu-id="94984-143">Microsoft contacts the company approver specified as a part of the verification process to ensure that the extension belong to your organization.</span></span>  
+       :::column-end:::
+    :::row-end:::  
+    <!-- -->
+    <!--
+    1.  The **Account country/region** field  
+        
+        This field is where you either live or your business is located.  
+        
+        > [!IMPORTANT]
+        > After enrollment, you are not able to change the value of this field.  
+        
+    1.  The **Account type** field  
+        
+        The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts, which are described in detail in the table that follows.  Both account types allow you to publish extensions to the Microsoft Edge add-ons catalog.  
+        
+        > [!IMPORTANT]
+        > After enrollment, you are not able to change the value of this field.  
+        
+        | Individual account | Company account |  
+        |:--- |:--- |  
+        | Individual accounts are appropriate for developers not associated with a company.  | Company accounts are associated with organizations and businesses.  |  
+        | The account verification process is shorter, and involves verifying that the publisher display name is available.  | The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process may range from a few days to a few weeks.  Your company may receive phone calls from Microsoft verification partners.  |  
+        
+    1.  The **Publisher display name** field  
+        
+        This field is the name shown to users in the Microsoft Edge add-ons catalog.  You may use a name only if it is available, and you have the rights to use it.  Company accounts must use the registered business name of your organization.  
+        
+        > [!NOTE]
+        > The maximum length for this field is 50 characters.  
+        
+    1.  The **Contact details** field  
+        
+        Any contact information that Microsoft may use to contact you regarding any account issues.  After registration is complete, an email confirmation is sent to you.  Company accounts must use the registered email address associated with your organization.  
+        
+    1.  The **Company approver** field  
+        
+        For company accounts, provide the contact information \(name, email address, and phone number\) of your company approver.  Microsoft contacts the company approver specified as a part of the verification process to ensure that the extensions belong to your organization.  
+        -->
+1. <span data-ttu-id="94984-144">在提交注册表单之前，请阅读并接受[Microsoft Edge 开发人员协议][MicrosoftAppDeveloperAgreement]的条款和条件。</span><span class="sxs-lookup"><span data-stu-id="94984-144">Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].</span></span>  
+1. <span data-ttu-id="94984-145">若要完成注册，请选择 "**完成**"。</span><span class="sxs-lookup"><span data-stu-id="94984-145">To complete your enrollment, select **Finish**.</span></span>  
 
-<span data-ttu-id="73688-141">[合作伙伴中心][MicrosoftPartnerCenter]中的 Microsoft Edge 计划同时提供个人帐户和公司帐户。</span><span class="sxs-lookup"><span data-stu-id="73688-141">The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts.</span></span>  <span data-ttu-id="73688-142">无论使用哪种类型的帐户，你都可以访问将扩展发布到 Microsoft Edge Addons 目录 \ （Microsoft Edge Addons \），并参与任何 Microsoft 程序。</span><span class="sxs-lookup"><span data-stu-id="73688-142">Either type of account gives you access to publish Extensions to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) and to participate in any Microsoft program.</span></span>  
+## <span data-ttu-id="94984-146">后续步骤</span><span class="sxs-lookup"><span data-stu-id="94984-146">Next steps</span></span>  
 
-<span data-ttu-id="73688-143">公司帐户用于组织和企业。</span><span class="sxs-lookup"><span data-stu-id="73688-143">Company accounts are intended for organizations and businesses.</span></span>  <span data-ttu-id="73688-144">对于公司帐户，我们需要进行更多验证，以确认您有权设置公司账户。</span><span class="sxs-lookup"><span data-stu-id="73688-144">For company accounts, we require greater verification to confirm that you have authorization to set up the account for your company.</span></span>  <span data-ttu-id="73688-145">个人帐户通常适合于单独工作的开发人员。</span><span class="sxs-lookup"><span data-stu-id="73688-145">Individual accounts are usually appropriate for a single developer working on their own.</span></span>  
+<span data-ttu-id="94984-147">您可以在 "合作伙伴中心" 的 "**帐户设置**" 页面上查看您的验证状态。</span><span class="sxs-lookup"><span data-stu-id="94984-147">You may view your verification status on the **Account settings** page in Partner Center.</span></span>  <span data-ttu-id="94984-148">等待验证过程完成时，你可以继续构建、测试和准备提交。</span><span class="sxs-lookup"><span data-stu-id="94984-148">While you wait for the verification process to complete; you may continue to build, test, and prepare your submissions.</span></span>  
 
-> [!IMPORTANT]
-> <span data-ttu-id="73688-146">做出选择后，您无法更改帐户类型，因此请确保选择正确的类型。</span><span class="sxs-lookup"><span data-stu-id="73688-146">You are not able to change the account type after you make your selection, so be sure to choose the right type.</span></span>  
-
-<span data-ttu-id="73688-147">以下是这两种帐户类型之间的基本差异。</span><span class="sxs-lookup"><span data-stu-id="73688-147">Here are the essential differences between the two account types.</span></span>  
-
-| <span data-ttu-id="73688-148">个人帐户</span><span class="sxs-lookup"><span data-stu-id="73688-148">Individual account</span></span> | <span data-ttu-id="73688-149">公司帐户</span><span class="sxs-lookup"><span data-stu-id="73688-149">Company account</span></span> |  
-|:--- |:--- |  
-| <span data-ttu-id="73688-150">单个帐户通常适用于单独工作的单个开发人员</span><span class="sxs-lookup"><span data-stu-id="73688-150">Individual account is usually appropriate for individual developer working alone</span></span> | <span data-ttu-id="73688-151">公司帐户适用于组织和企业</span><span class="sxs-lookup"><span data-stu-id="73688-151">Company account is intended for organizations and businesses</span></span> |  
-| <span data-ttu-id="73688-152">较短的帐户验证过程</span><span class="sxs-lookup"><span data-stu-id="73688-152">Shorter account verification process</span></span> | <span data-ttu-id="73688-153">更高帐户验证，以确认您有权为您的公司设置帐户</span><span class="sxs-lookup"><span data-stu-id="73688-153">Greater account verification to confirm that you have authorization to set up the account for your company</span></span> |  
-
-## <span data-ttu-id="73688-154">帐户验证</span><span class="sxs-lookup"><span data-stu-id="73688-154">Account Verification</span></span>  
-
-<span data-ttu-id="73688-155">完成注册过程后，您的帐户将被验证。</span><span class="sxs-lookup"><span data-stu-id="73688-155">After you complete the registration process, your account is verified.</span></span>  <span data-ttu-id="73688-156">对于个人帐户，我们检查 publisher 显示名称的可用性。</span><span class="sxs-lookup"><span data-stu-id="73688-156">For individual accounts, we check the availability of your publisher display name.</span></span>  <span data-ttu-id="73688-157">对于公司帐户，该过程需要稍长时间，因为我们还需要确认您是否有权为您的公司设置帐户。</span><span class="sxs-lookup"><span data-stu-id="73688-157">For company accounts, the process takes a little longer, as we also need to confirm that you have authorization to set up the account for your company.</span></span>  <span data-ttu-id="73688-158">验证过程的持续时间范围从几天减少到几周，您的公司可能会从我们的验证合作伙伴处收到电话呼叫。</span><span class="sxs-lookup"><span data-stu-id="73688-158">The duration of the verification process ranges from a few days to a couple of weeks, and your company may receive a phone call from our verification partner.</span></span>  <span data-ttu-id="73688-159">在提交您的扩展之前，必须验证您的公司帐户。</span><span class="sxs-lookup"><span data-stu-id="73688-159">Your company account must be verified before you submit your Extension.</span></span>  <span data-ttu-id="73688-160">等待验证时;你应继续生成、测试和准备提交。</span><span class="sxs-lookup"><span data-stu-id="73688-160">While you wait for verification; you should continue build, test, and prepare your submissions.</span></span>  
-
-<span data-ttu-id="73688-161">您可以在 "**帐户设置**" 页面上查看您的验证状态。</span><span class="sxs-lookup"><span data-stu-id="73688-161">You may check your verification status on the **Account settings** page.</span></span>  
-
-<!-- image links -->  
+<span data-ttu-id="94984-149">有关详细信息，请参阅[发布扩展][ExtensionsChromiumPublishExtension]。</span><span class="sxs-lookup"><span data-stu-id="94984-149">For more information, see [Publish an extension][ExtensionsChromiumPublishExtension].</span></span>  <span data-ttu-id="94984-150">有关 "扩展" 入门的信息，请参阅[Microsoft Edge 入门（Chromium）扩展][ExtensionsChromiumGettingStartedIndex]。</span><span class="sxs-lookup"><span data-stu-id="94984-150">For information on getting started with extensions, see [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex].</span></span>  
 
 <!-- links -->  
 
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议 |Microsoft 文档"  
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Microsoft Edge 入门（Chromium）扩展 |Microsoft 文档"  
+[ExtensionsChromiumPublishExtension]:  ./publish-extension.md "发布扩展 |Microsoft 文档"  
 
-[MicrosoftAccount]: https://account.microsoft.com/account/Account "Microsoft 帐户"  
+[MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "应用开发人员协议 |Microsoft 文档"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"  
+[MicrosoftAccount]:  https://account.microsoft.com/account "Microsoft 帐户"  
+
+[MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"  
+
+[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Microsoft （或 MSA）"  
