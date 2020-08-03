@@ -3,22 +3,22 @@ description: 了解 Chromium 扩展名以及渐进式构建完整的图片查看
 title: Microsoft Edge （Chromium）扩展入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium、web 开发、html、css、javascript、开发人员、扩展
-ms.openlocfilehash: a271514f39ed8bbe379116c33e23c973d3eb6adb
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c2b24dc3d5535beeef6a4255b6fe2439fb67b77d
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563375"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902834"
 ---
 # Microsoft Edge \ （Chromium \）扩展入门  
 
 如果要直接跳转到构建您的第一个扩展，请转到构建第1天的 NASA 图片。  
 
-如果你不熟悉扩展概念和体系结构，请继续阅读，并了解有关哪些扩展的信息。  此信息有助于你更轻松地构建扩展，因为你了解它们背后的动机和体系结构。  
+如果你不熟悉扩展概念和体系结构，请继续阅读，并了解有关哪些扩展的信息。  此信息可帮助您更加轻松地构建扩展，因为你理解它们背后的动机和体系结构。  
 
 ## 构建日分机的 NASA 图片  
 
@@ -51,7 +51,7 @@ ms.locfileid: "10563375"
 
 ### 来自每个选项卡的所有通信都将指向远程服务器  
 
-了解每个选项卡在隔离环境中运行意味着这些选项卡彼此隔离，而不是更大的 internet。  通常，这些选项卡运行 JavaScript 作为编程语言，将其与服务器进行通信，并将其视为在浏览器选项卡顶部的 URL 栏中输入的第一个 GET 请求的发起服务器。  
+了解每个选项卡在隔离环境中运行意味着这些选项卡彼此隔离，而不是更大的 internet。  通常情况下，这些选项卡（运行 JavaScript 作为已定义的编程语言）将返回到服务器，应考虑在浏览器选项卡顶部的 URL 栏中输入的第一个 GET 请求的发起服务器。  
 
 ## 扩展模型将所有内容倒置  
 
@@ -71,7 +71,7 @@ ms.locfileid: "10563375"
 
 ### 启动扩展服务器  
 
-当您部署到 web 服务器时，无论是 Apache、IIS、NGINX 还是任何其他 web 服务器，都包含 web 包。  当浏览器导航到服务器上的 URL 时，将 `index.html` 下载 web 服务器上的文件。  浏览器使用证书、配置文件等进行导航。  `index.html`存储在 web 服务器上某个特殊位置的文件。   您的扩展对同一内容有何影响？  尤其是，您的浏览器的选项卡页如何能够访问此 zip 文件 \ （您的扩展名 \）？  这是扩展运行时对你的影响。  
+当您部署到 web 服务器时，无论是 Apache、IIS、NGINX 还是任何其他 web 服务器，都包含 web 包。  当浏览器导航到服务器上的 URL 时，将 `index.html` 下载 web 服务器上的文件。  浏览器使用证书、配置文件等进行导航。  `index.html`文件存储在 web 服务器上的某个特殊位置。   您的扩展对同一内容有何影响？  尤其是，您的浏览器的选项卡页如何能够访问此 zip 文件 \ （您的扩展名 \）？  这是扩展运行时对你的影响。  
 
 扩展程序通过 URL \ （统一资源定位器 \）以名称提供所有文件 `extension://{some-long-unique-identifier}/index.html` 。  我放在方括号中的名称 `{some-long-unique-identifier}` 是分配给你安装的扩展的唯一标识符。  这意味着，如果你在浏览器上安装了10个唯一的扩展，每个扩展都有一个唯一标识符，指向在你的浏览器内部安装的 zip 文件 \ （或扩展绑定 \）。  
 
@@ -81,7 +81,7 @@ ms.locfileid: "10563375"
 
 ### 扩展管理和与选项卡和浏览器工具栏通信  
 
-扩展与浏览器工具栏交互，每个都能够以一种安全的方式管理所有其他运行的选项卡页，以及操作所有这些选项卡页的 DOM。  内置于 Chromium 浏览器是一种消息 API，允许在扩展和选项卡页之间进行通信，以使此操作正常发生。  此 API （也称为扩展 API）提供了许多功能，包括通知管理、存储管理等。  
+扩展与浏览器的工具栏交互，每个扩展能够以一种安全的方式管理其他所有运行的选项卡页，以及处理所有这些选项卡页的 DOM。  内置于 Chromium 浏览器是一种消息 API，允许在扩展和选项卡页之间进行通信，以使此操作正常发生。  此 API （也称为扩展 API）提供了许多功能，包括通知管理、存储管理等。  
 
 与 web 服务器一样，扩展功能始终可以在浏览器运行时持续运行 \ （或等待通知 \）。  你可以将扩展视为浏览器的 orchestrator。  同样，扩展运行完全独立于选项卡页，但通过扩展 API 以及授予扩展的自愿加入权限，每个扩展都能够虚拟地控制浏览器中运行的任何选项卡页。  
 

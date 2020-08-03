@@ -3,19 +3,22 @@ description: 了解 thePayment 请求 APIenables Microsoft Edge 如何在存储�
 title: 开发人员指南-付款请求 API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: 边缘、web 开发、html、css、javascript、开发人员
-ms.openlocfilehash: 75c596570a222336a4ba0c371acb8770f97804ee
-ms.sourcegitcommit: e690bb4d1cb9e73c93b468c9f55d91ea6fb6c654
+ms.openlocfilehash: b082e311dcbe5cff3101f084e7ff2c145e6e83df
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "10564611"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902862"
 ---
-# 付款请求 API
+# 付款请求 API （EdgeHTML）
+
+> [!NOTE]
+> 本文介绍[早期版本的 Microsoft Edge][MicrosoftSupport44533505]中支持的工作流。  Microsoft Edge \ （Chromium \）支持使用基于 Chromium 项目的不同实现的支付请求 API。  
 
 电子商务销售继续以快速节奏的速度增长。 根据[eMarketer](https://www.emarketer.com/)，我们预测，2018将按2013中的级别增加23% 的数字销售。  消费者和企业享受电子商务销售的便利，但挑战仍然存在。  如今，每个电子商务网站所有者都需要花费大量时间来开发优质付款结帐流程和验证规则。  消费者需要导航不同的付款结算流程，并在他们购买的每个网站上重新输入相同的支付和运输信息。  对于消费者来说，这可能会非常耗时且令人沮丧，从而提高了购物车的 abandonment，并降低了商家的销售额。 将放弃购买车60% 和70% 之间的商家[估计](http://baymard.com/lists/cart-abandonment-rate)。      
 
@@ -209,3 +212,9 @@ var options = {
 
 ## 书
 [付款请求 API](https://w3.org/TR/payment-request/)
+
+<!-- links -->  
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge （Chromium）开发工具 |Microsoft 文档"  
+
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "什么是 Microsoft Edge 旧版？"  

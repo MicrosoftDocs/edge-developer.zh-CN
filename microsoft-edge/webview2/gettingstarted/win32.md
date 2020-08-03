@@ -3,17 +3,17 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: 适用于 Win32 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2020
+ms.date: 07/30/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 7e35dc6ab84a32cfa7e020fa34ddfaa63818eda1
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 03c6f20b59dd6de2aa95e402f82ac3e2a3940839
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895516"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902841"
 ---
 # WebView2 （开发人员预览版）入门  
 
@@ -299,7 +299,7 @@ nullptr);
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈-MicrosoftEdge/WebViewFeedback |GitHub"  
 
-[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample "WebView2 API Sample-MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "WebView2 API Sample-MicrosoftEdge/WebView2Samples |GitHub"  
 [GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 示例-MicrosoftEdge/WebView2Samples |GitHub"  
 
 [GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows 实施库（媒体）-microsoft/媒体 |GitHub"  
