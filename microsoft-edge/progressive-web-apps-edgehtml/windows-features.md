@@ -3,16 +3,16 @@ description: 通过本机应用功能逐步增强 PWA for Windows
 title: 定制你的 PWA （EdgeHTML） for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 渐进式 web 应用、PWA、Edge、Windows、WinRT、UWP、EdgeHTML
-ms.openlocfilehash: 296ae0a65481edd312e06b83c1554813ec2bffae
-ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
+ms.openlocfilehash: 70a675b1a4057326463fb63c6a93abf8f428c677
+ms.sourcegitcommit: 8510fdaa72c8940440133e4c5b36349997d94127
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894715"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905571"
 ---
 # 定制你的 PWA （EdgeHTML） for Windows  
 
@@ -44,9 +44,9 @@ Windows 10 上安装的 PWAs 可享受以[通用 Windows 平台 \ （UWP \）][W
 在 Visual Studio 中设置 Windows 应用开发环境。  
 
 1.  在 Windows 设置中，启用 "[开发人员模式][WindowsUWPGetStartedEnable]"。  \ （ `developer mode` 在 Windows searchbar 中键入以找到它。）  
-1.  启动 Visual Studio 并**创建新项目 ...**  
-1.  选择 "c # **Windows 应用程序打包" 项目**模板。  如果你使用的是早期版本的 Visual Studio，请在 "**托管 Web 应用（通用 windows）** " 或 "**渐进 Web 应用（通用 windows）**" 下查找等效模板。  
-1.  选择默认的 Windows 10 `Target version` \ （最新版本 \）和 `Minimum version` \ （内部版本10586或更高版本 \），然后单击 **"确定"**。  
+1.  启动 Visual Studio，然后选择 "**创建新项目**..."。  
+1.  **Javascript**  >  从 Visual Studio 2017 中的项目类型列表中选择 "Javascript**Windows 通用**" 并选择 "**渐进式 Web 应用（通用 Windows）** "。  
+1.  选择默认的 Windows 10 `Target version` \ （最新版本 \）和 `Minimum version` \ （内部版本10586或更高版本 \），然后选择 **"确定"**。  
 
     ![UWP 项目目标版本的 Visual Studio 选择对话框](media/vs-target-min-version.png)  
 
@@ -99,7 +99,7 @@ Windows 10 上安装的 PWAs 可享受以[通用 Windows 平台 \ （UWP \）][W
     
     这将返回 `Windows Runtime` 包含所有[顶级 WinRT 命名空间](#find-windows-runtime-winrt-apis)的全局对象。  这是[通用 Windows 平台][WindowsUWPIndex]的 PWA \ （EdgeHTML \）入口点，并仅向作为 Windows 10 应用（在浏览器外运行）运行的 web 应用公开 `WWAHost.exe` 。  
     
-## 查找 Windows 运行时 \ （WinRT） Api  
+## 查找 Windows 运行时（WinRT） Api  
 
 作为已安装的 Windows 应用， [PWA \ （EdgeHTML \）对本机 Windows 运行时 api 具有完全访问权限][WindowsRuntime];确定需要使用的内容，获取必要的权限，并使用功能检测在受支持的环境中发送该 API 请求。  浏览此过程，为 PWA 的 Windows 桌面用户添加渐进式增强。  
 
