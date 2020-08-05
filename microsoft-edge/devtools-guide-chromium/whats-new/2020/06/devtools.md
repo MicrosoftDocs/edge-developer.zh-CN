@@ -72,13 +72,13 @@ Chromium 问题[#1093687][CR1093687]
 
 "**网络**" 面板的 "**计时**" 选项卡现在包括 `respondWith` 服务辅助事件。  `respondWith`服务工作者事件显示在 `fetch` `respondWith` `fetch` 结算处理程序承诺的时间开始运行服务辅助事件处理程序之前的时间段内的持续时间。  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text=""网络" 面板的 "计时" 选项卡中的 respondWith 服务辅助事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="网络 面板的 计时 选项卡中的 respondWith 服务辅助事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    " `respondWith` **网络**" 面板的 "**计时**" 选项卡中的服务工作人员事件  
 :::image-end:::  
 
 展开 "**已收到答复**"，以查看来自 `fetch` 、和的响应的其他信息 `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` 。  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="展开 "已收到答复"，以查看来自提取响应的其他信息" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="展开 已收到答复，以查看来自提取响应的其他信息" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    展开 "**已收到答复**" 以查看来自响应的其他信息 `fetch`  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ Chromium 问题[#1066579][CR1066579]
 
 [webhint][WebhintMain]是一种开放源工具，可提供有关网站的辅助功能、跨浏览器兼容性、安全性、性能、PWAs 和其他常见 web 开发问题的实时反馈。  现在，你可以在 "[问题][DevtoolsIssues]" 面板中看到 webhint 反馈。  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text=""问题" 面板中的 webhint 反馈" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="问题 面板中的 webhint 反馈" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    "问题" 面板中的 webhint 反馈  
 :::image-end:::  
 
@@ -258,7 +258,7 @@ Chromium 问题[#800028][CR800028]
 
 例如，以前，DevTools `hello` 即使未选中 "**组相似**"，也不会对邮件取消分组。  现在， `hello` 邮件已取消分组。  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中 "组相似" 时，将取消分组 hello 邮件" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中 组相似 时，将取消分组 hello 邮件" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    取消选中 "**组相似**" 时， `hello` 邮件将取消组合。
 :::image-end:::  
 
@@ -323,7 +323,7 @@ Chromium 问题[#1041830][CR1041830]
 * 向[我们需要的网站][TheWebWeWant]提交建议  
 * 此页面上的文件错误在[edge-开发人员][GitHubMicrosoftDocsEdgeDeveloperNewIssue]存储库中  
 
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="Microsoft Edge DevTools 中的 "反馈" 图标" lightbox="../../media/2020/05/feedback-icon.msft.png":::
+:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="Microsoft Edge DevTools 中的 反馈 图标" lightbox="../../media/2020/05/feedback-icon.msft.png":::
   Microsoft Edge DevTools 中的 "**反馈**" 图标  
 :::image-end:::  
 
