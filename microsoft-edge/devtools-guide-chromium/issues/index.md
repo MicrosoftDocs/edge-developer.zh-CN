@@ -53,14 +53,14 @@ Microsoft Edge DevTools 中的 "**问题**" 工具减少了**控制台**的通�
        :::column span="":::
           在黄色警告栏中选择 "**转到问题**" 按钮。  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="检测到问题时，在黄色警告栏中的 "转到问题" 按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="检测到问题时，在黄色警告栏中的 转到问题 按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
              图 1.  检测到问题时黄色警告栏中的 "**转到问题**" 按钮。  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           或者，从 "**更多工具**" 菜单中选择 "**问题**"。  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text=""其他工具" 菜单中的 "问题" 工具" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="其他工具 菜单中的 问题 工具" lightbox="../media//issues-more-tools-menu.msft.png":::
              图 2.  "**其他工具**" 菜单中的 "**问题**" 工具  
           :::image-end:::  
        :::column-end:::
@@ -68,7 +68,7 @@ Microsoft Edge DevTools 中的 "**问题**" 工具减少了**控制台**的通�
     
 1.  如有必要，请选择 "**重新加载页面**" 按钮。  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="带有 "重新加载页面" 按钮的 DevTools 抽屉中的问题工具" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="带有 重新加载页面 按钮的 DevTools 抽屉中的问题工具" lightbox="../media/issues-tab-before-refresh.msft.png":::
        图 3.  带有 "**重新加载页面**" 按钮的 DevTools 抽屉中的**问题**工具  
     :::image-end:::  
 
@@ -84,7 +84,7 @@ DevTools 抽屉中的 "**问题**" 工具以结构化、聚合和可操作的方
 
 1.  选择 "**问题**" 工具中的项目以获取有关如何解决问题和查找受影响的资源的指南。  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="将跨网站 cookie 标记为安全问题在 "问题" 工具中打开" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="将跨网站 cookie 标记为安全问题在 问题 工具中打开" lightbox="../media/issues-tab-issue-open.msft.png":::
        图 5.  将**跨网站 Cookie 标记为安全**问题在 "**问题**" 工具中打开  
     :::image-end:::  
     
