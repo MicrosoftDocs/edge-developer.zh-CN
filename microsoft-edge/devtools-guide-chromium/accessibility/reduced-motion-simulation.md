@@ -37,7 +37,7 @@ Web 产品中的动画可能是辅助功能问题。  操作系统通过包括�
         
 1.  键入 `reduced` ，打开和关闭模拟。  选择 "" 选项，然后按 `Enter` 。  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="打开或关闭 "命令" 菜单中的 "优先减少动作" 设置" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="打开或关闭 命令 菜单中的 优先减少动作 设置" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
        打开或关闭 "**命令" 菜单**中的 "**优先减少动作**" 设置  
     :::image-end:::  
     
