@@ -62,7 +62,7 @@ ms.locfileid: "10710383"
         
     1.  在 `aloha` 类中，查找样式的值 `padding` 并复制它。  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="应用于已检查元素的 CSS 类在 "样式" 选项卡中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="应用于已检查元素的 CSS 类在 样式 选项卡中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            图2：应用到所选元素（如）的 CSS 类 `aloha` 显示在 "**样式**" 选项卡中  
         :::image-end:::  
         
@@ -81,7 +81,7 @@ ms.locfileid: "10710383"
 1.  键入 `background-color` ，然后按 `Enter` 。  
 1.  键入 `honeydew` ，然后按 `Enter` 。  在**DOM 树**中，应看到已对元素应用了内联样式声明。  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用 "样式" 选项卡将 CSS 声明添加到元素" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用 样式 选项卡将 CSS 声明添加到元素" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        图3： `background-color:honeydew` 使用 `element.style` "**样式**" 选项卡部分对元素应用了声明  
     :::image-end:::  
     
@@ -162,7 +162,7 @@ ms.locfileid: "10710383"
     
 1.  在 "设备" 工具栏打开的情况下，选择 `...` 右上角的菜单，然后选择 "**查看媒体查询**"。  您应在表示不同媒体查询的页面的显示上方看到颜色条。  
     
-    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="在 "设备" 工具栏中显示媒体查询" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="在 设备 工具栏中显示媒体查询" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
        图9：在 "设备" 工具栏中显示媒体查询  
     :::image-end:::  
     
