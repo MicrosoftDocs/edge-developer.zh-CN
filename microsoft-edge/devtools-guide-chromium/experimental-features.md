@@ -88,7 +88,7 @@ ms.locfileid: "10902852"
 
 [webhint][WebhintMain]是一种开放源工具，可提供有关网站的辅助功能、跨浏览器兼容性、安全性、性能、PWAs 和其他常见 web 开发问题的实时反馈。  [Webhint][WebhintMain]实验将 webhint 反馈引入 "[问题][DevtoolsIssues]" 面板中的 DevTools。  你可以选择该问题以查看有关如何解决该问题的文档和你的网站上受影响的资源列表。  选择资源链接以打开 DevTools 中的相关**网络**、**源**或**元素**窗格。  
 
-:::image type="complex" source="./media/experiments-webhint.png" alt-text=""问题" 面板中的 webhint 反馈" lightbox="./media/experiments-webhint.png":::
+:::image type="complex" source="./media/experiments-webhint.png" alt-text="问题 面板中的 webhint 反馈" lightbox="./media/experiments-webhint.png":::
    "问题" 面板中的 webhint 反馈  
 :::image-end:::      
 
