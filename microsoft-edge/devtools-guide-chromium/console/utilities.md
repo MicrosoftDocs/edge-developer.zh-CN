@@ -126,7 +126,7 @@ $(selector, [startNode])
 
 在下图中，返回对当前所选元素的引用，并显示 src 属性。  
 
-:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ （"Img"） src" lightbox="../media/console-element-selector-image-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ （Img） src" lightbox="../media/console-element-selector-image-source.msft.png":::
    图6： `$('img').src`  
 :::image-end:::  
 
@@ -134,7 +134,7 @@ $(selector, [startNode])
 
 下图中，在 `img` `title--image` 返回并显示正确的后，将找到第一个元素 `src` 。  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ （"Img"、querySelector （"title-image"））。 src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ （Img、querySelector （title-image））。 src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
    图7： `$('img', document.querySelector('title--image')).src`  
 :::image-end:::  
 
@@ -304,7 +304,7 @@ inspect(object/method)
 inspect(document.body);
 ```  
 
-:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="使用 "检查" （）检查元素" lightbox="../media/console-inspect-document-body.msft.png":::
+:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="使用 检查 （）检查元素" lightbox="../media/console-inspect-document-body.msft.png":::
    图15：检查元素 `inspect()`  
 :::image-end:::  
 
