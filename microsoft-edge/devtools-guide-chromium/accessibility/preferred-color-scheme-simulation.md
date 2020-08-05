@@ -26,7 +26,7 @@ ms.locfileid: "10758061"
         
 1.  类型 `emulate color` ，请选择 "**模拟 css 首选色"-颜色方案： "深色**" 或 "**模拟 css 首选色"-颜色方案： "浅色**"，然后按 `Enter` 。  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="从 "命令" 菜单中选择的配色方案" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="从 命令 菜单中选择的配色方案" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
        从 "**命令**" 菜单中选择的配色方案  
     :::image-end:::  
     
