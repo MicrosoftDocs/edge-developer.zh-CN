@@ -41,13 +41,13 @@ ms.locfileid: "10843919"
 
 1.  向下滚动到 `Emulate vision deficiencies` 菜单项并选择下拉菜单以显示选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现抽屉上的 "模拟远景缺陷" 菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现抽屉上的 模拟远景缺陷 菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        **呈现**抽屉上的 "**模拟远景缺陷**" 菜单  
     :::image-end:::  
     
 1.  选择一个选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text=""模拟远景缺陷" 菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="模拟远景缺陷 菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        "**模拟远景缺陷**" 菜单选项  
     :::image-end:::  
     
@@ -77,7 +77,7 @@ ms.locfileid: "10843919"
     
 1.  键入 `emulate` ，选择要模拟的内容，然后按 `Enter` 。  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text=""命令" 菜单中提供的不同模拟选项" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="命令 菜单中提供的不同模拟选项" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
        "**命令" 菜单**中提供的不同模拟选项  
     :::image-end:::  
     
