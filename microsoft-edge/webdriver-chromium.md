@@ -41,7 +41,7 @@ WebDriver 使开发人员能够创建模拟用户交互的自动测试。  由�
     
 1.  导航到[Microsoft Edge 驱动程序下载][MicrosoftDeveloperEdgeToolsWebdriverDownloads]页面并下载与 Edge 版本号匹配的驱动程序。  
     
-    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Microsoft Edge 驱动程序页面的 "下载" 部分":::
+    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Microsoft Edge 驱动程序页面的 下载 部分":::
        图 2.  [Microsoft Edge 驱动程序][MicrosoftDeveloperEdgeToolsWebdriver]页面的 "下载" 部分
     :::image-end:::  
     
@@ -325,7 +325,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 Microsoft Edge 团队渴望听到有关使用 WebDriver、Selenium 和 Microsoft Edge 的反馈。  使用 Microsoft Edge DevTools 或 tweet [@EdgeDevTools][TwitterTweetEdgeDevTools]中的**反馈**图标，让团队知道您的想法。  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Microsoft Edge DevTools 中的 "反馈" 图标":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Microsoft Edge DevTools 中的 反馈 图标":::
    Microsoft Edge DevTools 中的 "**反馈**" 图标  
 :::image-end:::  
 
