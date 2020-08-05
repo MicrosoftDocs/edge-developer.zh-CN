@@ -61,7 +61,7 @@ ms.locfileid: "10683642"
 
 更新您的扩展并选择 "扩展启动" 图标后，"具有以下弹出窗口" 包含 "显示" 按钮。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text=""弹出"。按下 "扩展" 图标后显示 html":::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="弹出。按下 扩展 图标后显示 html":::
    "弹出"。按下 "扩展" 图标后显示 html
 :::image-end:::
 
@@ -219,7 +219,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 现在，当您浏览到任意页面并选择您的**扩展名**图标时，弹出菜单显示如下。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text=""弹出"。按下 "扩展" 图标后显示 html":::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="弹出。按下 扩展 图标后显示 html":::
    "弹出"。按下 "扩展" 图标后显示 html
 :::image-end:::
 
