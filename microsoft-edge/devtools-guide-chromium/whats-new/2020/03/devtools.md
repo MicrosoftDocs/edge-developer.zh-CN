@@ -51,7 +51,7 @@ Microsoft [Edge 的远程工具 \ （Beta \）][RemoteTools]应用现已在[micr
 
 你可以自定义的 DevTools 设置有很多种，以使 DevTools 外观、感觉和工作方式符合你的需求。 在 Microsoft Edge 83 中，访问 DevTools 中的[设置][OverviewSettings]现在更加轻松。 打开设置，"控制台通知" 和 "主菜单" 旁边的齿轮图标。  
 
-:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="齿轮图标将在 DevTools 中打开 "设置"" lightbox="../../media/2020/03/settings.msft.png":::
+:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="齿轮图标将在 DevTools 中打开 设置" lightbox="../../media/2020/03/settings.msft.png":::
    图2： "齿轮" 图标在 DevTools 中打开 "**设置**"  
 :::image-end:::  
 
@@ -77,7 +77,7 @@ Chromium 问题[#1056348][crbug1056348]
 
 [颜色选取器][ColorPicker]是 "[元素" 面板][ElementsDoc]中用于更改 `color` 和声明的 GUI `background-color` 。  在早期版本的 Microsoft Edge 中，无法通过键盘导航[拾色器][ColorPicker]的 "**底纹**" 部分。  
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="现在，你可以使用键盘移动颜色选取器的 "底纹" 部分中的选择器" lightbox="../../media/2020/03/color-picker.msft.png":::
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="现在，你可以使用键盘移动颜色选取器的 底纹 部分中的选择器" lightbox="../../media/2020/03/color-picker.msft.png":::
    图5：您现在可以使用键盘在[拾色器][ColorPicker]的 "**底纹**" 部分移动选择器  
 :::image-end:::  
 
@@ -89,13 +89,13 @@ Chromium 问题[#963183][crbug963183]
 
 在 Microsoft Edge 81 及更早版本中，"[元素" 面板][ElementsDoc]中的 "**属性" 选项卡**因页面刷新而损坏。  刷新页面后，"属性"**选项卡**不会填充当前所选元素的属性。  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="在 Microsoft Edge 81 及更早版本中，在页面刷新后，"属性" 选项卡为空" lightbox="../../media/2020/03/properties-in-81.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="在 Microsoft Edge 81 及更早版本中，在页面刷新后，属性 选项卡为空" lightbox="../../media/2020/03/properties-in-81.msft.png":::
    图6：在 Microsoft Edge 81 及更早版本中，在页面刷新后，"**属性" 选项卡**为空  
 :::image-end:::  
 
 在 Microsoft Edge 83 中，你现在可以在 "**属性" 选项卡**中的页面刷新后查看当前所选元素的属性。  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="在 Microsoft Edge 83 中，在页面刷新后，"属性" 选项卡显示当前选定元素的属性" lightbox="../../media/2020/03/properties-in-82.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="在 Microsoft Edge 83 中，在页面刷新后，属性 选项卡显示当前选定元素的属性" lightbox="../../media/2020/03/properties-in-82.msft.png":::
    图7：在 Microsoft Edge 83 中，在页面刷新后，"**属性" 选项卡**显示当前选定元素的属性  
 :::image-end:::  
 
@@ -109,7 +109,7 @@ Chromium 问题[#1050999][crbug1050999]
 
 对 minified 文件进行更改后，"**更改" 工具**使您能够水平滚动查看所有 minified 代码。  从 Microsoft Edge 83 开始，您现在可以使用键盘上的箭头键水平滚动。  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，你可以通过箭头键水平滚动以在 "更改" 工具中查看你的 minified 代码" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，你可以通过箭头键水平滚动以在 更改 工具中查看你的 minified 代码" lightbox="../../media/2020/03/changes.msft.png":::
    图8：在 Microsoft Edge 83 中，你可以通过箭头键水平滚动，以在 "**更改" 工具**中看到你对 minified 代码所做的更改  
 :::image-end:::  
 
@@ -179,7 +179,7 @@ Chromium 问题[#1051822][crbug1051822]
 
 "**页眉**" 选项卡的 "**响应标题**" 部分提供了有关如何解决这些问题的更多指导：  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text=""响应标题" 部分中的更多指导" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="响应标题 部分中的更多指导" lightbox="../../media/2020/03/guidance.msft.png":::
    图12： "响应标题" 部分中的更多指导  
 :::image-end:::  
 
@@ -253,7 +253,7 @@ Android Oreo 引入了自适应图标，可在不同的设备模型中显示各�
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text=""仅显示屏蔽图标的最小安全区域" 复选框" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="仅显示屏蔽图标的最小安全区域 复选框" lightbox="../../media/2020/03/maskable-icons.msft.png":::
    图17： "**仅显示屏蔽图标的最小安全区域"** 复选框  
 :::image-end:::  
 
