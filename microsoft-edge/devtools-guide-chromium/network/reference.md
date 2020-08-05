@@ -352,7 +352,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 此选项卡最适用于查看图像。  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text=""预览" 选项卡" lightbox="../media/network-network-resources-preview.msft.png":::
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="预览 选项卡" lightbox="../media/network-network-resources-preview.msft.png":::
    图19： "**预览**" 选项卡  
 :::image-end:::  
 
@@ -363,7 +363,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  在 "请求" 表的 "**名称**" 列下，选择请求的 URL。  
 1.  选择 "**响应**" 选项卡。  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text=""响应" 选项卡" lightbox="../media/network-network-resources-response.msft.png":::
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="响应 选项卡" lightbox="../media/network-network-resources-response.msft.png":::
    图20： "**响应**" 选项卡  
 :::image-end:::  
 
@@ -374,7 +374,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  在 "请求" 表的 "**名称**" 列下，选择请求的 URL。  
 1.  选择 "**页眉**" 选项卡。  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text=""页眉" 选项卡" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="页眉 选项卡" lightbox="../media/network-resources-headers.msft.png":::
    图21： "**页眉**" 选项卡  
 :::image-end:::  
 
@@ -392,7 +392,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  打开您感兴趣的请求的 "**标题**" 选项卡。  请参阅[查看 HTTP 标头](#view-http-headers)。  
 1.  转到 "**查询字符串参数**" 部分。  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text=""查询字符串参数" 部分" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="查询字符串参数 部分" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
    图22： "**查询字符串参数**" 部分  
 :::image-end:::  
 
@@ -422,7 +422,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
 <!--TODO: add link when section is available -->
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text=""Cookie" 选项卡" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Cookie 选项卡" lightbox="../media/network-network-resources-cookies.msft.png":::
    图23： "Cookies" 选项卡  
 :::image-end:::  
 
@@ -437,7 +437,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 有关你在 "计时" 选项卡中看到的每个阶段的详细信息，请参阅[介绍的计时分解阶段](#timing-breakdown-phases-explained)。  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text=""计时" 选项卡" lightbox="../media/network-network-resources-timing.msft.png":::
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="计时 选项卡" lightbox="../media/network-network-resources-timing.msft.png":::
    图24： "**计时**" 选项卡  
 :::image-end:::  
 
@@ -564,7 +564,7 @@ init();
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择 "另存为 HAR 和内容"" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择 另存为 HAR 和内容" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    图32：选择 "**另存为 HAR 和内容**"  
 :::image-end:::  
 
@@ -580,7 +580,7 @@ init();
 *   **全部复制为卷曲**。  将所有请求复制为一个卷曲命令链。  
 *   **全部复制为 HAR**。  将所有请求复制到 HAR 数据。  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="选择 "复制响应"" lightbox="../media/network-network-requests-copy-response.msft.png":::
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="选择 复制响应" lightbox="../media/network-network-requests-copy-response.msft.png":::
    图33：选择 "**复制响应**"  
 :::image-end:::  
 
@@ -593,7 +593,7 @@ init();
 默认情况下，DevTools 显示 "**筛选器" 窗格**。  
 选择 "**筛选** ![ 筛选" ][ImageFilterIcon] 以将其隐藏。  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text=""隐藏筛选器" 按钮" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="隐藏筛选器 按钮" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    图34： "隐藏筛选器" 按钮  
 :::image-end:::  
 
@@ -607,7 +607,7 @@ init();
 
 选中 "**使用大请求行**" 复选框以启用大行。  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text=""使用大请求行" 复选框" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="使用大请求行 复选框" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
    图36： "**使用大型请求行**" 复选框  
 :::image-end:::  
 
