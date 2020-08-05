@@ -108,7 +108,7 @@ Chromium 问题[#1076112][CR1076112]
 
 当远程调试[Android 设备][DevToolsRemoteDebugAndroid]、 [Windows 10 设备][DevToolsRemoteDebugWindows]或[Surface 双核模拟器][DevToolsRemoteDebugDuoEmulator]时，可以使用 ![ DevTools 左上角的 "切换说明截屏视频" 图标切换 screencasting ][ImageScreencastingIcon] 。  如果启用了 screencasting，你可以从 DevTools 窗口中的远程设备上的 Microsoft Edge 中导航选项卡。  在 Microsoft Edge 84 中，这些导航按钮现在也可通过键盘访问。  
 
-:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="按 screencasted URL 栏中的 Shift + Tab 将焦点显示在 "刷新" 按钮上" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
+:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="按 screencasted URL 栏中的 Shift + Tab 将焦点显示在 刷新 按钮上" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    按 `Shift` + `Tab` screencasted URL 栏中的说明将焦点放在 "**刷新**" 按钮上
 :::image-end:::  
 
@@ -118,7 +118,7 @@ Chromium 问题[#1081486][CR1081486]
 
 在 Microsoft Edge 84 中，当您为[网络日志][DevToolsNetworkLog]中的资源打开 "**网络**" 面板中的 "[详细信息" 窗格][DevToolsNetworkDetails]时，它们现在将获得焦点。  此更改允许屏幕阅读器读出 "**详细信息**" 窗格的内容并与之交互。  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text=""网络" 面板中的 "详细信息" 窗格在打开时获得焦点" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="网络 面板中的 详细信息 窗格在打开时获得焦点" lightbox="../../media/2020/05/network-details.msft.png":::
    "**网络**" 面板中的 "**详细信息**" 窗格在打开时获得焦点
 :::image-end:::  
 
@@ -134,7 +134,7 @@ DevTools 抽屉中的 "新建**问题**" 工具可帮助减少**控制台**的�
 
 若要开始使用，请参阅[查找并修复 Microsoft Edge DevTools 问题工具的相关问题][DevtoolsIssuesIndex]。  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools 抽屉中的 "问题" 工具" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools 抽屉中的 问题 工具" lightbox="../../media/2020/05/issues.msft.png":::
    DevTools 抽屉中的 "**问题**" 工具  
 :::image-end:::  
 
@@ -148,7 +148,7 @@ Chromium 问题[#1068116][CR1068116]
 <!--todo:  add link name and role (WebdevLabelsText) when section is live  -->  
 <!--todo:  add link keyboard-focusable (WebdevControlFocus) when section is live  -->  
 
-:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="带有辅助功能信息的 "检查模式" 工具提示" lightbox="../../media/2020/05/a11y.msft.png":::
+:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="带有辅助功能信息的 检查模式 工具提示" lightbox="../../media/2020/05/a11y.msft.png":::
   带有辅助功能信息的 "**检查模式**" 工具提示  
 :::image-end:::  
 
@@ -211,7 +211,7 @@ V8 问题[#6751][CRV86751]
 
 "**样式**" 窗格的 "自动完成" UI 现在检测到 "[还原][MDNRevert]CSS" 关键字，该关键字可将属性的级联值还原为应用于该元素的样式的上一个值。  
 
-:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="将属性的值设置为 "还原"" lightbox="../../media/2020/05/revert.msft.png":::
+:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="将属性的值设置为 还原" lightbox="../../media/2020/05/revert.msft.png":::
   将属性的值设置为 "还原"  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ Chromium 问题[#1040019][CR1040019]
 
 使用[颜色选取器][DevtoolsCssReferenceColorPicker]选择颜色或在 "样式" 窗格中通过按住并选择值在 "**样式**" 窗格中交替颜色表示时 `Shift` `background-color` ，应看到以空格分隔的参数语法。  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在 "样式" 窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在 样式 窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
   在 "**样式**" 窗格中使用空格分隔的参数  
 :::image-end:::  
 
@@ -249,7 +249,7 @@ Chromium 问题[#1072952][CR1072952]
 
 "**元素**" 面板中的 "**属性**" 窗格已弃用。  `console.dir($0)`改为在**控制台**中运行。  
 
-:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text=""已弃用的属性" 窗格" lightbox="../../media/2020/05/properties.msft.png":::
+:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="已弃用的属性 窗格" lightbox="../../media/2020/05/properties.msft.png":::
    "已弃用的**属性**" 窗格  
 :::image-end:::  
 
@@ -285,7 +285,7 @@ Chromium 问题[#1072952][CR1072952]
 *   向[我们需要的网站][TheWebWeWant]提交建议  
 *   此页面上的文件错误在[edge-开发人员][GitHubMicrosoftDocsEdgeDeveloperNewIssue]存储库中  
 
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="Microsoft Edge DevTools 中的 "反馈" 图标" lightbox="../../media/2020/05/feedback-icon.msft.png":::
+:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="Microsoft Edge DevTools 中的 反馈 图标" lightbox="../../media/2020/05/feedback-icon.msft.png":::
   Microsoft Edge DevTools 中的 "**反馈**" 图标  
 :::image-end:::  
 
