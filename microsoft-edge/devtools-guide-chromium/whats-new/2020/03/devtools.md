@@ -2,16 +2,16 @@
 title: DevTools （Microsoft Edge 83）中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: f90bbde9b2b220cd8a333a81d520d4c6e56eaa90
+ms.sourcegitcommit: 4e6c0959bc01eb0ceb4b85dce791670916fb5b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710376"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "10918616"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,29 +39,29 @@ ms.locfileid: "10710376"
 
 ### 在 Windows 10 设备上远程调试 Microsoft Edge  
 
-现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此应用程序扩展了[ Windows 设备门户][WindowsDevicePortal]，你可以将开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，请参阅目标列表\（Windows 10 设备上将打开 Microsoft Edge 和[ PWAs ][PWADoc]中的所有选项卡\），然后针对远程 Windows 10 设备上运行的目标使用开发计算机上的 DevTools。  
+现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此应用程序扩展了[ Windows 设备门户][WindowsUwpDebugTestPerfDevicePortal]，你可以将开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，请参阅目标列表\（Windows 10 设备上将打开 Microsoft Edge 和[ PWAs ][PprgressiveWebAppsChromiumIndex]中的所有选项卡\），然后针对远程 Windows 10 设备上运行的目标使用开发计算机上的 DevTools。  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    图 1：[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用  
 :::image-end:::  
 
-[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][RemoteDebuggingWin10]。  通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标，让我们了解你的远程调试体验！  
+[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。  通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标，让我们了解你的远程调试体验！  
 
 ### 访问设置的新方法  
 
-你可以自定义大量的 DevTools 设置，以使 DevTools 外观、感觉和工作方式达到你的要求。 在 Microsoft Edge 83 中，访问 DevTools 中的 [设置][OverviewSettings] 现在更为简单。 使用 "控制台警报" 和 "主菜单" 旁边的齿轮图标打开 "设置"。  
+你可以自定义大量的 DevTools 设置，以使 DevTools 外观、感觉和工作方式达到你的要求。 在 Microsoft Edge 83 中，访问 DevTools 中的 [设置][DevtoolsCustomizeIndexSettings] 现在更为简单。 使用 "控制台警报" 和 "主菜单" 旁边的齿轮图标打开 "设置"。  
 
 :::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="齿轮图标会打开 DevTools 中的设置" lightbox="../../media/2020/03/settings.msft.png":::
    图 2：齿轮图标会打开 DevTools 中的**设置**  
 :::image-end:::  
 
-你还可以从**主菜单**下的"**更多工具**"下打开[设置][OverviewSettings]。
+你还可以从**主菜单**下的"**更多工具**"下打开[设置][DevtoolsCustomizeIndexSettings]。
 
 :::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="主菜单 > 更多工具 > 设置" lightbox="../../media/2020/03/settings2.msft.png":::
    图 3：**主菜单** > **更多工具** > **设置**  
 :::image-end:::  
 
-Chromium 问题 [#1050855][crbug1050855]
+Chromium 问题 [#1050855][CR1050855]
 
 ### 新增和改进的 infobars
 
@@ -71,23 +71,23 @@ DevTools 中的信息性通知栏 \(infobars\) 现在具有改进的外观和功
    图 4：用于在 Microsoft Edge 83 中整齐打印缩小文件的信息栏  
 :::image-end:::  
 
-Chromium 问题 [#1056348][crbug1056348]
+Chromium 问题 [#1056348][CR1056348]
 
 ### 使用键盘导航颜色选取器  
 
-[颜色选取器][ColorPicker] 是 "[元素][ElementsDoc]" 面板中的 GUI 用于更改 `color` 和 `background-color` 声明。  在早期版本的 Microsoft Edge 中，无法使用键盘导航 [颜色选取器][ColorPicker] 的 **阴影** 部分。  
+[颜色选取器][DevtoolsCssReferenceColorPicker] 是 "[元素][DevtoolsCssIndex]" 面板中的 GUI 用于更改 `color` 和 `background-color` 声明。  在早期版本的 Microsoft Edge 中，无法使用键盘导航 [颜色选取器][DevtoolsCssReferenceColorPicker] 的 **阴影** 部分。  
 
 :::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="现在，你可以使用键盘在颜色选取器的 "阴影" 部分移动选取器" lightbox="../../media/2020/03/color-picker.msft.png":::
-   图 5：现在，你可以使用键盘在 [颜色选取器][ColorPicker]的**阴影** 部分移动选取器  
+   图 5：现在，你可以使用键盘在 [颜色选取器][DevtoolsCssReferenceColorPicker]的**阴影** 部分移动选取器  
 :::image-end:::  
 
 在 Microsoft Edge 83 中，你可以使用键盘在颜色选取器的**阴影** 部分移动选取器。  
 
-Chromium 问题 [#963183][crbug963183]  
+Chromium 问题 [#963183][CR963183]  
 
 ### 现在，刷新页面后将填充“属性”选项卡  
 
-在 Microsoft Edge 81 及更早版本中，在 "[元素][ElementsDoc]" 面板中的 **"属性"选项卡**因页面刷新而损坏。  刷新页面时，**"属性" 选项卡** 未填充当前所选元素的属性。  
+在 Microsoft Edge 81 及更早版本中，在 "[元素][DevtoolsCssIndex]" 面板中的 **"属性"选项卡**因页面刷新而损坏。  刷新页面时，**"属性" 选项卡** 未填充当前所选元素的属性。  
 
 :::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="在 Microsoft Edge 81 及更早版本中，页面刷新后，"属性" 选项卡为空白" lightbox="../../media/2020/03/properties-in-81.msft.png":::
    图 6：在 Microsoft Edge 81 及更早版本中，在页面刷新后，**"属性" 选项卡** 是空白的  
@@ -99,7 +99,7 @@ Chromium 问题 [#963183][crbug963183]
    图 7：在 Microsoft Edge 83 中，**"属性" 选项卡** 显示页面刷新后当前所选元素的属性  
 :::image-end:::  
 
-Chromium 问题 [#1050999][crbug1050999]  
+Chromium 问题 [#1050999][CR1050999]  
 
 ### 使用箭头键在 "更改" 工具中滚动  
 
@@ -115,7 +115,7 @@ Chromium 问题 [#1050999][crbug1050999]
 
 如果你使用屏幕阅读器或键盘浏览 DevTools，请通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标向我们发送你的反馈！  
 
-Chromium 问题 [#963183][crbug963183]  
+Chromium 问题 [#963183][CR963183]  
 
 ## 来自 Chromium 项目的公告  
 
@@ -123,7 +123,7 @@ Chromium 问题 [#963183][crbug963183]
 
 ### 模仿视觉缺陷  
 
-打开["渲染" 选项卡][RenderingDoc] ，使用新的"**模拟视觉缺陷**" 功能，更好地了解有不同类型视觉缺陷的人们如何体验你的网站。  
+打开["渲染" 选项卡][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] ，使用新的"**模拟视觉缺陷**" 功能，更好地了解有不同类型视觉缺陷的人们如何体验你的网站。  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="模拟模糊的视觉效果" lightbox="../../media/2020/03/vision.msft.png":::
    图 9：模拟模糊的视觉效果  
@@ -145,7 +145,7 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 
 通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标发送反馈！  
 
-Chromium 问题 [#1003700][crbug1003700]  
+Chromium 问题 [#1003700][CR1003700]  
 
 ### 模拟语言环境  
 
@@ -165,7 +165,7 @@ Chromium 问题 [#1003700][crbug1003700]
 
 若要尝试演示，请参阅[与区域设置相关的代码示例][MathiasByensLocaleDemo]。
 
-Chromium 问题 [#1051822][crbug1051822]
+Chromium 问题 [#1051822][CR1051822]
 
 ### 跨域嵌入程序策略 (COEP) 调试  
 
@@ -185,13 +185,25 @@ Chromium 问题 [#1051822][crbug1051822]
 
 通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标发送反馈！  
 
-Chromium 问题 [#1051466][crbug1051466]  
+Chromium 问题 [#1051466][CR1051466]  
+
+### 用于断点、条件断点和 logpoints 的新图标  
+
+"源" 面板具有用于断点、条件断点和 logpoints 的新图标：  
+
+*   断点 \ (![处](../../media/2020/03/breakpoint.msft.png)\ ) 用红色圆圈表示。  
+*   条件断点 \ (![条件断点](../../media/2020/03/conditional.msft.png)\ ) 由半红半白圆圈表示。  
+*   Logpoints \ (![Logpoint](../../media/2020/03/logpoint.msft.png)\ ) 由带有控制台图标的红色圆圈表示。  
+
+新图标的动机是使 UI 更适合使用其他 GUI 调试工具 \ (这种情况通常颜色为红 ) ，从而更轻松地在3个功能之间进行区分。  
+
+Chromium 问题[#1041830][CR1041830]  
 
 ### 查看设置了特定 cookie 路径的网络请求  
 
 在**网络**面板中使用新的`cookie-path`过滤关键字来关注设置了特定[ cookie 路径][MDNCookiePath]的网络请求。  
 
-查看[按属性过滤请求][NetworkProperties]以发现更多关键词，例如`cookie-path`。
+查看[按属性过滤请求][DevtoolsNetworkReferenceFilterRequestsProperties]以发现更多关键词，例如`cookie-path`。
 
 ### 从 "命令" 菜单向左停靠  
 
@@ -202,11 +214,11 @@ Chromium 问题 [#1051466][crbug1051466]
 :::image-end:::  
 
 > [!NOTE]
-> 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[**主菜单**][MainMenuDoc]中进行访问。  Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。  
+> 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[**主菜单**][DevtoolsCustomizePlacementsChangeMainMenu]中进行访问。  Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。  
 
 通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标发送反馈！  
 
-Chromium 问题 [#1011679][crbug1011679]  
+Chromium 问题 [#1011679][CR1011679]  
 
 ### "审核" 面板现在是 "灯塔" 面板  
 
@@ -229,13 +241,13 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标发送反馈！  
 
-Chromium 问题 [#1016501][crbug1016501]  
+Chromium 问题 [#1016501][CR1016501]  
 
 ### 更新的长任务 UI  
 
 **长任务**是长时间垄断了主线程，从而导致网页冻结的 JavaScript 代码。  
 
-你已经能够[在“性能”面板中可视化长任务][LongTasksInPerformancePanel]了一段时间，但是在Microsoft Edge 83中，“性能”面板中的长任务可视化 UI 已更新。  现在，任务的长任务部分的颜色为带条纹红色背景。  
+你已经能够[在“性能”面板中可视化长任务][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]了一段时间，但是在Microsoft Edge 83中，“性能”面板中的长任务可视化 UI 已更新。  现在，任务的长任务部分的颜色为带条纹红色背景。  
 
 :::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="新的长任务 UI" lightbox="../../media/2020/03/long-task.msft.png":::
    图 16：新的长任务 UI  
@@ -243,11 +255,11 @@ Chromium 问题 [#1016501][crbug1016501]
 
 通过[发推][PostTweetEdgeDevTools]或单击[反馈](#feedback)图标发送反馈！  
 
-Chromium 问题 [#1054447][crbug1054447]  
+Chromium 问题 [#1054447][CR1054447]  
 
 ### "清单" 窗格中的可屏蔽图标支持  
 
-Android Oreo 引入了自适应图标，可在不同的设备模型之间显示各种形状中的应用图标。  **可屏蔽图标**是支持自适应图标的新图标格式，使你可以确保[ PWA ][PWADoc]图标在支持可屏蔽图标标准的设备上看起来不错。  
+Android Oreo 引入了自适应图标，可在不同的设备模型之间显示各种形状中的应用图标。  **可屏蔽图标**是支持自适应图标的新图标格式，使你可以确保[ PWA ][PprgressiveWebAppsChromiumIndex]图标在支持可屏蔽图标标准的设备上看起来不错。  
 
 在**清单**窗格中启用新的**仅显示可屏蔽图标的最小安全区域**复选框，以检查可屏蔽图标在 Android Oreo 设备上看起来是否良好。  
 
@@ -279,48 +291,53 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 
 <!-- links -->  
 
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | 发布推文"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter 帐户"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "新问题 - MicrosoftDocs/edge-developer"  
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge 预览频道"  
-[TheWebWeWant]: https://aka.ms/webwewant "我们想要的网络"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | 发布推文"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter 帐户"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "新问题-MicrosoftDocs/edge-开发人员-GitHub"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
+[TheWebWeWant]: https://webwewant.fyi "我们想要的网络"  
 
-[WhatsNew81]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/01/devtools "DevTools （Microsoft Edge 81）中的新增功能"  
+[WhatsNew81]: ../01/devtools.md "DevTools (Microsoft Edge 81) 中的新增功能 |Microsoft 文档"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge 开发人员工具命令菜单运行命令"  
-[ColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "使用颜色选取器更改颜色"  
-[ElementsDoc]: /microsoft-edge/devtools-guide-chromium/css/index "查看和更改 CSS 入门"  
-[MainMenuDoc]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "从主菜单更改位置"  
-[LongTasksInPerformancePanel]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "查看主线程活动"  
-[RenderingDoc]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "使用 "渲染" 选项卡分析渲染性能"  
-[PWADoc]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 上的渐进式 Web 应用"  
-[RemoteDebuggingWin10]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "远程调试 Windows 10 设备入门"  
-[LineOfCodeBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "代码行断点"
-[NetworkProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties
-[OverviewSettings]: /microsoft-edge/devtools-guide-chromium/customize/#settings
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
+[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "通过颜色选取器更改颜色 |Microsoft 文档"  
+[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "开始使用查看和更改 CSS |Microsoft 文档"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "从主菜单更改位置 |Microsoft 文档"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "查看主线程活动 |Microsoft 文档"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "通过 "渲染" 选项卡分析渲染性能 |Microsoft 文档"  
+[PprgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 上的渐进式 Web 应用 |Microsoft 文档"  
+[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "远程调试 Windows 10 设备入门 |Microsoft 文档"  
+[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "代码行断点-如何在 Microsoft Edge DevTools 中暂停代码和断点 |Microsoft 文档"
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "按属性筛选请求-网络分析参考 |Microsoft 文档"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置-自定义 Microsoft Edge DevTools |Microsoft 文档"  
 
-[WindowsDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows 设备门户概述"  
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows 设备门户概述"  
 
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Microsoft Edge 适用的远程工具 (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
-[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/ "在适用于 Microsoft Edge 的稳定频道版本上更新"
 
-[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "色盲类型"  
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "在适用于 Microsoft Edge 的稳定频道版本上更新"
+
+[MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
+
+[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "色盲类型"  
 [MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "接受语言"
 [MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "依赖于区域设置的代码示例"
 [MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
 
-[crbug963183]: https://crbug.com/963183 "问题 963183：DevTools 不符合 WCAG"  
-[crbug1003700]: https://crbug.com/1003700 "问题 1003700：添加 DevTools 支持颜色视觉缺陷模拟"  
-[crbug1011679]: https://crbug.com/1011679 "问题 1011679：使用命令菜单引入 "停靠到左侧""  
-[crbug1016501]: https://crbug.com/1016501 "问题 1016501：功能请求：用于删除所有本地覆盖的按钮"  
-[crbug1050999]: https://crbug.com/1050999 "问题 1050999：“属性”选项卡"  
-[crbug1051466]: https://crbug.com/1051466 "问题 1051466：支持 DevTools 中的 COOP/COEP 调试"  
-[crbug1054447]: https://crbug.com/1054447 "问题 1054447：更新 DevTools 时间线中的性能指标"  
-[crbug1051822]: https://crbug.com/1051822 "问题 1051822：DevTools：将 UI 添加到仿真区域设置"
-[crbug1041830]: https://crbug.com/1041830 "问题 1041830：改进断点颜色"
-[ crbug1050855]: https://crbug.com/1050855  "问题 1050855：难以发现设置视图"
-[crbug1056348]: https://crbug.com/1056348 "问题 1056348：信息栏组件刷新"
+[CR963183]: https://crbug.com/963183 "问题 963183：DevTools 不符合 WCAG"  
+[CR1003700]: https://crbug.com/1003700 "问题 1003700：添加 DevTools 支持颜色视觉缺陷模拟"  
+[CR1011679]: https://crbug.com/1011679 "问题 1011679：使用命令菜单引入 "停靠到左侧""  
+[CR1016501]: https://crbug.com/1016501 "问题 1016501：功能请求：用于删除所有本地覆盖的按钮"  
+[CR1050999]: https://crbug.com/1050999 "问题 1050999：“属性”选项卡"  
+[CR1051466]: https://crbug.com/1051466 "问题 1051466：支持 DevTools 中的 COOP/COEP 调试"  
+[CR1054447]: https://crbug.com/1054447 "问题 1054447：更新 DevTools 时间线中的性能指标"  
+[CR1051822]: https://crbug.com/1051822 "问题 1051822：DevTools：将 UI 添加到仿真区域设置"
+[CR1041830]: https://crbug.com/1041830 "问题 1041830：改进断点颜色"
+[ CR1050855]: https://crbug.com/1050855  "问题 1050855：难以发现设置视图"
+[CR1056348]: https://crbug.com/1056348 "问题 1056348：信息栏组件刷新"
 
 [ COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn  "COOP 和 COEP 详解——跨域开放者策略"   
 [ COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2  "COOP 和 COEP 详解——跨域嵌入程序策略"   
