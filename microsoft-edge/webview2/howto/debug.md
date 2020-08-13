@@ -3,17 +3,17 @@ description: 了解如何调试 WebView2 控件。
 title: 调试 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 08/10/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: ad6f334e5796d2f22146f2853ae1ef1d854e329c
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: 6b2cc65e5cb368c29efec2eb3638f0c1772000d9
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894317"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926475"
 ---
 # 如何通过 WebView2 进行调试  
 
@@ -21,17 +21,17 @@ Microsoft Edge WebView2 控件的目标是结合 web 和本机应用程序开发
 
 ## Microsoft Edge 开发工具  
 
-使用[Microsoft edge （Chromium）开发人员工具][DevtoolsGuideChromiumMain]来调试在 WebView2 控件中显示的 web 内容，方法与使用 Microsoft Edge 相同。  若要打开 DevTools，请将焦点置于 "Web 视图" 窗口，然后使用以下任一操作。  
+使用[Microsoft edge (Chromium) 开发人员工具][DevtoolsGuideChromiumMain]来调试在 WebView2 控件中显示的 web 内容，方法与使用 Microsoft Edge 相同。  若要打开 DevTools，请将焦点置于 "Web 视图" 窗口，然后使用以下任一操作。  
 *   选择 `F12` 。  
 *   选择 `Ctrl` + `Shift` + `I` 。  
-*   打开上下文菜单 \ （右键单击 \） > 选择 `Inspect` 。  
+*   打开上下文菜单 \ (右键单击 \ ) > 选择 `Inspect` 。  
 
 :::image type="complex" source="../media/f12.png" alt-text="Microsoft Edge 开发工具" lightbox="../media/f12.png":::
    Microsoft Edge 开发工具  
 :::image-end:::  
 
 > [!NOTE]
-> 当在 Visual Studio 中调试应用程序时，如果附加了本机调试器，则按下 `F12` 可能会触发本机调试器，而不是开发人员工具。  按下 `Ctrl` + `Shift` + `I` 或使用上下文菜单 \ （右键单击 \）以避免这种情况。  
+> 当在 Visual Studio 中调试应用程序时，如果附加了本机调试器，则按下 `F12` 可能会触发本机调试器，而不是开发人员工具。  按下 `Ctrl` + `Shift` + `I` 或使用上下文菜单 \ (右键单击 \ ) 以避免这种情况。  
 
 > [!NOTE]
 > `--auto-open-devtools-for-tabs`首次创建 Web 视图时，可以使用命令行参数打开新的 DevTools 窗口。  <!--See `CreateCoreWebView2Controller` documentation for how to provide additional command-line arguments to the browser process.  See `LoaderOverride` registry key to examine different builds of WebView2 without modifying your application in the `CreateCoreWebView2Controller` documentation.  -->  
@@ -46,10 +46,10 @@ Microsoft Edge WebView2 控件的目标是结合 web 和本机应用程序开发
 
 <!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  
 
-若要启用 WebView2 脚本调试，请打开项目上的上下文菜单 \ （右键单击 \） > 选择 "**属性**"。  
+若要启用 WebView2 脚本调试，请打开上下文菜单 \ (右键单击项目上的 \ ) > 选择 "**属性**"。  
 
 *   在**配置属性**上，选择 "**调试**"。  
-*   在 "**调试器类型**" 属性中，从选项列表中选择 " **JavaScript （WebView2）** "。 
+*   在 "**调试器类型**" 属性中，从选项列表中选择 " **JavaScript (WebView2") ** 。 
 
 :::image type="complex" source="../media/vs-script-debugger.jpg" alt-text="Visual Studio JavaScript 调试器":::
    Visual Studio JavaScript 调试器  
@@ -77,13 +77,13 @@ Microsoft Edge WebView2 控件的目标是结合 web 和本机应用程序开发
         
 ## Visual Studio Code  
 
-你可以使用 Visual Studio 代码调试在 WebView2 控件中运行的脚本。  有关详细信息，请参阅[Microsoft Edge （Chromium） Web 视图应用程序][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]。  
+你可以使用 Visual Studio 代码调试在 WebView2 控件中运行的脚本。  有关详细信息，请参阅[Microsoft Edge (Chromium) Web 视图应用程序][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]。  
 
 <!--todo:  add See also heading  -->  
 
 ## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  
 
-通过分享你的反馈来帮助构建更丰富的 WebView2 体验。  访问[反馈][GithubMicrosoftedgeWebviewfeedbackMain]存储库以提交功能请求或 bug 报告。  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!--## Debugging  
 
@@ -91,8 +91,8 @@ Open DevTools with the normal shortcuts: `F12` or `Ctrl+Shift+I`. You can use th
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge （Chromium）开发人员工具"  
+[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发人员工具"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈-MicrosoftEdge/WebViewFeedback |GitHub"  
 
-[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge （Chromium） Web 视图应用程序-VS 代码-Microsoft Edge 的调试器-microsoft/vscode-debug2 |GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) Web 视图应用程序-VS 代码-Microsoft Edge 的调试器-microsoft/vscode-debug2 |GitHub"  

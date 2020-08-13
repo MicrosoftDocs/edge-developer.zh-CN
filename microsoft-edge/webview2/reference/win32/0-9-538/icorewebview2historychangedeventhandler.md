@@ -1,5 +1,5 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
 title: WebView2 Win32 c + + ICoreWebView2HistoryChangedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -36,5 +36,5 @@ interface ICoreWebView2HistoryChangedEventHandler
 
 没有事件参数，args 参数将为 null。
 
-> 公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) * web 视图、IUnknown * 参数）
+> public HRESULT [Invoke](#invoke) ([ICoreWebView2](icorewebview2.md) * web 视图，IUnknown * 参数) 
 

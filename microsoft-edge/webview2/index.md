@@ -3,21 +3,21 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: Microsoft Edge WebView2 控件
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows Forms、WinForms、WPF、.NET
-ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888596"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926468"
 ---
-# Microsoft Edge WebView2 简介（预览版）  
+# Microsoft Edge WebView2 简介 (预览)   
 
-Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技术 \ （HTML、CSS 和 JavaScript \）。  WebView2 控件使用[Microsoft Edge （Chromium）][MicrosoftedgeinsiderMain]作为呈现引擎，以在本机应用程序中显示 web 内容。  使用 WebView2，你可以将 web 代码嵌入本机应用程序的不同部分，或在单个 Web 视图中构建整个本机应用程序。  有关如何开始构建 WebView2 应用程序的信息，请参阅[入门](#getting-started)。  
+Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript \ ) 。  WebView2 控件使用[Microsoft Edge () Chromium][MicrosoftedgeinsiderMain]作为呈现引擎在本机应用程序中显示 web 内容。  使用 WebView2，你可以将 web 代码嵌入本机应用程序的不同部分，或在单个 Web 视图中构建整个本机应用程序。  有关如何开始构建 WebView2 应用程序的信息，请参阅[入门](#getting-started)。  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="什么是 Web 视图" lightbox="./media/WebView2/whatwebview.png":::
    什么是 Web 视图  
@@ -76,7 +76,7 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
       通过常规的平台更新和安全修补程序依赖最新版本的 Chromium。  
    :::column-end:::
    :::column span="1":::
-      **固定**\ （即将推出 \）  
+      已**修复**的 \ (即将推出 \ )   
       选择将 Chromium 位打包在你的应用程序中。  
    :::column-end:::
    :::column span="1":::
@@ -87,7 +87,7 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 
 ## 即刻体验  
 
-若要使用 WebView2 控件生成和测试你的应用程序，你需要安装[Microsoft Edge （Chromium）][MicrosoftedgeinsiderDownload]和[WebView2 SDK][NugetPackagesMicrosoftWebWebView2] 。  选择以下选项之一开始使用。  
+若要使用 WebView2 控件生成和测试你的应用程序，你需要同时安装[Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload]和[WebView2 SDK][NugetPackagesMicrosoftWebWebView2] 。  选择以下选项之一开始使用。  
 
 *   [Win32 C/c + + 入门][Webview2GettingstartedWin32]  
 *   [WPF 入门][Webview2GettingstartedWpf]  
@@ -103,11 +103,11 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 *   Win32 C/c + +  
 *   .NET Framework 4.6.2 或更高版本  
 *   .NET Core 3.0 或更高版本  
-*   [WinUI 3。0][UwpToolkitsWinui3]  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
 
 你可以在以下版本的 Windows 上运行 WebView2 应用程序。  
 
-*   Windows10  
+*   Windows 10  
 *   Windows 8.1  
 *   Windows 8  
 *   Windows7  
@@ -132,12 +132,12 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 *   [如何通过 WebView2 进行调试][Webview2HowtoDebug]  
 *   [通过 Microsoft Edge 驱动程序自动化和测试 WebView2][Webview2HowtoWebdriver]  
 
-## 与 WebView2 团队取得联系  
+## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  
 
-通过分享你的反馈来帮助构建更丰富的 WebView2 体验。  若要提交功能请求或 bug 报告，请参阅[Web 视图反馈][GithubMicrosoftedgeWebviewfeddback]存储库。  这也是搜索已知问题的好地方。  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> 在预览过程中，我们将收集数据以帮助构建更好的产品。  若要关闭 WebView2 数据收集，请转到 `edge://settings/privacy` 并关闭浏览器数据收集。  
+> 在预览期间，收集的数据有助于构建更好的产品。  若要关闭 WebView2 数据收集，请转到 `edge://settings/privacy` 并关闭浏览器数据收集。  
 
 <!-- links -->  
 
@@ -145,15 +145,15 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 [Webview2ConceptsSecurity]: ./concepts/security.md "开发安全 WebView2 应用程序的最佳做法 |Microsoft 文档"  
 [Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "管理用户数据文件夹 |Microsoft 文档"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 |Microsoft 文档"  
-[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "WebView2 （开发人员预览版）入门 |Microsoft 文档"   
-[Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Windows Forms 应用（预览版）中的 WebView2 入门 |Microsoft 文档"  
-[Webview2GettingstartedWinui]: ./gettingstarted/winui.md "WinUI3 （预览版）中的 WebView2 入门 |Microsoft 文档"  
-[Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "WPF 中的 WebView2 入门（预览版） |Microsoft 文档"  
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "WebView2 (开发人员预览版) | 入门Microsoft 文档"   
+[Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Windows Forms 应用中的 WebView2 入门 (预览版) |Microsoft 文档"  
+[Webview2GettingstartedWinui]: ./gettingstarted/winui.md "WebView2 中的 "开始" WinUI3 () 预览 "|Microsoft 文档"  
+[Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "WPF 中的 WebView2 入门 (预览版) |Microsoft 文档"  
 [Webview2HowtoDebug]: ./howto/debug.md "如何通过 WebView2 | 进行调试Microsoft 文档"  
 [Webview2HowtoWebdriver]: ./howto/webdriver.md "通过 Microsoft Edge 驱动程序自动化和测试 WebView2 |Microsoft 文档"  
 [Webview2Releasenotes]: ./releasenotes.md "WebView2 SDK 的 Webview2Releasenotes 发行说明 |Microsoft 文档"  
 
-[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Windows UI 库3预览版2（2020年7月） |Microsoft 文档"  
+[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Windows UI 库3预览版 2 (2020 年7月) |Microsoft 文档"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例-MicrosoftEdge/WebView2Samples |GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈-MicrosoftEdge/WebViewFeedback |GitHub" 
