@@ -3,17 +3,17 @@ description: 在 WinUI 应用中将 web 内容与 Microsoft Edge Web 视图2控�
 title: 适用于 WinUI 应用的 Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winui 应用、winui、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
+ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926489"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934896"
 ---
 # WebView2 中的 "开始" WinUI3 (预览 ")   
 
@@ -26,7 +26,7 @@ ms.locfileid: "10926489"
 *   Windows 10 版本 1803 \ (内部版本 17134 \ ) 或更高版本。  有关详细信息，请参阅 [Windows Update： FAQ][MicrosoftSupport12373]。  
 *   [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] windows 10、windows 8.1 或 windows 7 上的 "" 通道。  
 *   Visual Studio 2019，版本16.7 预览版1。  有关详细信息，请参阅 [WINDOWS UI 库3预览版 2 (2020 年7月) ][WindowsAppsWinui3ConfigureYourDevEnvironment]。  
-*   .NET 5 预览版4的 [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] 和 [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] 版本。  
+*   .NET 5 预览版4的 [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] 和 [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] 版本。  
 *   Visual Studio 2019 的[WinUI 3 项目模板][VisualstudioMarketplaceWinUiprojecttemplates]扩展。  
 确保 [启用开发人员模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment] 以确保你有权访问所有 Visual Studio 功能。  
 
@@ -190,8 +190,10 @@ ms.locfileid: "10926489"
 *   `ContentLoading`  
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
+
 > [!NOTE]
 > HTTP 重定向引发多个 `NavigationStarting` 事件。  
+
 有关详细信息，请参阅 [导航事件][Webviews2ConceptsNavigationEvents]。  
 
 发生错误时，将引发以下事件，并且可能会导航到错误页面。  
@@ -199,10 +201,8 @@ ms.locfileid: "10926489"
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
-    
-
+     
 作为如何使用事件的示例，注册该程序的处理程序将 `NavigationStarting` 取消任何不使用 HTTPS 的请求。 在中 `MainWindow.xaml.cs` ，修改要注册的构造函数 `EnsureHttps` ，并添加 `EnsureHttps` 函数以使其与以下代码片段匹配。  
-
 
 ```csharp
 public MainWindow()
