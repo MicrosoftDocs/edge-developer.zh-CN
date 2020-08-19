@@ -3,16 +3,16 @@ description: 查找有关当前和未来 Api 的信息，以及它们的已知�
 title: 扩展-支持的 Api
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 边缘、web 开发、html、css、javascript、开发人员
-ms.openlocfilehash: b9f3764a65f2b27dc61e4e5ae8734820efb7fbd0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: fceba67f5fab1a223cfc94abf7f19a0a9d1bcdf0
+ms.sourcegitcommit: 0879b205aa88c6b73d84f106b4b435d5a0e8cadc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563333"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10937180"
 ---
 # 支持的 API  
 
@@ -29,7 +29,7 @@ ms.locfileid: "10563333"
 
 以下已知问题跨越扩展平台，并将在不久的将来修复：
 
-- 使用 CSS 属性时 `url()` ，使用的绝对 url `ms-browser-extension://` 将不能像在 Chrome 中那样工作。 若要绕过此问题，请改用资源的相对路径（从根扩展目录开始）。
+- 使用 CSS 属性时 `url()` ，使用的绝对 url `ms-browser-extension://` 将不能像在 Chrome 中那样工作。 若要绕过此问题，请使用) 的根扩展目录中启动资源的相对路径 (。
 - `window.open()` 扩展后台脚本不起作用。 请 `browser.windows.create()` 改用。
 - 共享 cookie 受支持，但扩展后台脚本将无法访问在启用扩展之前在选项卡中设置的会话 cookie。 此问题不会影响永久性 cookie。
 - 如果仅为扩展指定不受支持的权限，例如 `activeTab`，尝试旁加载扩展将导致正在卸载扩展名，并显示以下消息： "您的扩展出现了错误，因此我们必须重新安装它们。 您需要重新打开它们。 "
@@ -111,7 +111,7 @@ ms.locfileid: "10563333"
 [扩展名 getURL](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/extension/getURL) | | |
 [扩展名 getViews](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/getViews) | | |
 [扩展名 isAllowedIncognitoAccess](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/isAllowedIncognitoAccess) | | | 
-[扩展名 inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
+[extension.inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
 
 
 
@@ -210,7 +210,7 @@ API | 已知问题 | Chrome 不兼容
 [存储在本地。设置](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [本地的存储空间。清除](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/clear) | | |
 [getBytesInUse](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/getBytesInUse) | | `storage.local` 数据与 Chrome 的格式保持不同，从而导致在调用时返回不同的值 `storage.local.getBytesInUse` 。  <br/><br/>Ex： `storage.local.set({ "k": { "s": "âas" } }` 在 Chrome 中返回13，在 Microsoft Edge 中返回50。|
-["存储" 同步获取](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | | |
+["存储" 同步获取](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | 如果 "" 和 "清单" 字段中的字符合并量 `name` `author` 超过31个字符，则 `storage.sync` 命名空间可能不起作用。 | |
 [存储同步。删除](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/remove) | | |
 [存储同步。设置](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/set) | | |
 [onChanged](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/onChanged) | | |
@@ -225,10 +225,10 @@ API | 已知问题 | Chrome 不兼容
 [captureVisibleTab](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/captureVisibleTab) | | |
 [选项卡。创建](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/create) | | `selected`、 `pinned` 、和 `openerTabId` 不受支持。 |
 [detectLanguage](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/detectLanguage) | | |
-[executeScript](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` 被忽略，但已选中。 尚不支持在特定帧中执行脚本。 | |
+[tabs.executeScript](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` 被忽略，但已选中。 尚不支持在特定帧中执行脚本。 | |
 [选项卡。获取](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/get) | 选项页，询问有关不在其窗口中的选项卡时，无法进行此调用。 | |
 [getCurrent](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/getCurrent) | | |
-[insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` 被忽略，但已选中。 | |
+[insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` 被忽略，但已选中。 | `cssOrigin` 不受支持。 |
 [onActivated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onActivated) | | |
 [onAttached](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onAttached) | | |
 [onCreated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onCreated) | | |
