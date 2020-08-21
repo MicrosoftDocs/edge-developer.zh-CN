@@ -1,101 +1,111 @@
 ---
 ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
-description: 本指南概述了 Microsoft Edge 中包含的开发人员功能和标准。
-title: 开发人员指南
+description: 本指南概述 Microsoft Edge 中包括的开发人员功能和标准。
+title: EdgeHTML 16 中的新功能和 API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、css、javascript、开发人员
-ms.openlocfilehash: 36c5e6530ff584a97e4b42910757495362a1960d
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: 边缘， Web 开发， html， css， javascript， developer
+ms.openlocfilehash: a15888bc8c1314d61d436759e5d63be942174ea4
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562648"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941938"
 ---
-# EdgeHTML 16 中的新增功能
+# EdgeHTML 16 中的新增功能  
 
-下面是[EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/17/edgehtml-16-fall-creators-update/) web 平台中提供的新功能和更新功能的列表，作为[Windows 10 秋季创意者更新](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)（10/2017，内部版本16299）的一部分。 有关特定 Windows 预览体验计划预览版中的更改，请参阅[Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/)和[EdgeHTML 中的新增功能](../whats-new.md)。
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-下面是以下更改列表的固定链接： [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16) 。
+下面是 [EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/17) Web 平台中随之外出现的新功能和更新功能的列表， [作为 Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update) \ (10/2017（内部版本 16299\) 的一部分）。  有关特定 Windows Insider Preview 版本中的更改，请参阅 [Microsoft Edge 更改日](https://developer.microsoft.com/microsoft-edge/platform/changelog) 志 [和 EdgeHTML 中的新增功能](../whats-new.md)。  
 
-## 新增功能和更新功能
+下面是下列更改列表的句号  [https://aka.ms/devguide_edgehtml_16](./edgehtml-16.md) ：。  
 
-### CSS 网格布局
+## 新增功能和更新功能  
 
-Microsoft Edge 现在支持[CSS 网格布局](https://www.w3.org/TR/css-grid-1/)的 unprefixed 实现。 [网格布局](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)定义了一个二维基于网格的布局系统，该布局系统支持更多布局流畅性，使用浮动或脚本进行定位。 下面的示例使用 CSS 网格布局创建基本网页的结构。
+### CSS 网格布局  
 
+Microsoft Edge 现在支持对 CSS 网格 [布局的未前缀实现](https://www.w3.org/TR/css-grid-1)。  [网格布局](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) 定义了基于二维网格的布局系统，它比使用浮点或脚本进行定位相比，该系统支持更流畅的布局。  以下示例使用 CSS 网格布局为基本网页创建结构。  
 
-<iframe height='303' scrolling='no' title='CSS 网格布局' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'><a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'> </a> <a href='https://codepen.io/MSEdgeDev'> 在 CodePen 上按 MSEdgeDev （@MSEdgeDev）查看笔 CSS 网格布局 </a> <a href='https://codepen.io'> </a> 。
-</iframe>
+<iframe height='303' scrolling='no' title='CSS 网格布局' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>请参阅 <a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'> MSEdgeDev 代码库 (@MSEdgeDev) 笔的 Pen CSS </a> <a href='https://codepen.io/MSEdgeDev'> </a> <a href='https://codepen.io'> 网格布局 </a> 。</iframe>  
 
+### CSS 对象适合和 object-position  
 
-### CSS `object-fit` 和 `object-position`
+EdgeHTML 16 引入了对 CSS 属性和的 [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit) 支持 [`object-position`](https://developer.mozilla.org/docs/Web/CSS/object-position) 。  这些属性控制替换内容在内容框中的位置和大小。  
 
-EdgeHTML 16 引入了对 CSS 属性 [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit) 和的支持 [`object-position`](https://developer.mozilla.org/docs/Web/CSS/object-position) 。  这些属性控制替换内容在 "内容" 框中的位置和大小。  
+### 开发人员工具  
 
-### 开发人员工具
+此版本已经为提升的可靠性和性能重构，我们已经为提升的强大功能和性能重构，并添加了一大段新功能，你可以现在开始在 [Windows 预览](https://insider.windows.com) 体验成员版本上使用。  查看 [Microsoft Edge 开发人员指南，了解](../whats-new.md) 发生变化情况的详细信息！  
 
-在此版本中，我们启动了一个主要的 Microsoft Edge DevTools 重构措施来改进可靠性和性能，还添加了一组新功能，您可以在[Windows 预览体验计划](https://insider.windows.com/)内部版本上开始使用。  有关更改内容的详细信息，请查看[Microsoft Edge DevTools 指南](../../devtools-guide/whats-new.md)！
+### JavaScript  
 
-### JavaScript
+[EdgeHTML 16 基于以](https://blogs.windows.com/msedgedev/2017/10/31)前版本的性能优化的 Javascript 性能优化的基率，方法是扩展 Chakra 引联程序可延期/re-defer 函数、使用多形式缓存，并使用块 `try` / `finally` 优化函数。  
 
-[EdgeHTML 16 在](https://blogs.windows.com/msedgedev/2017/10/31/optimizations-webassembly-sharedarraybuffer-atomics-edgehtml-16/#FodxEPHxR4WkbtyA.97)早期版本的 Javascript 性能优化的基础上，通过展开 Chakra 引擎能够延迟/重新延迟函数、使用多态内联缓存以及使用*try/finally*块优化函数来优化早期版本。
+另外，在 EdgeHTML 15 中预览的功能现在更可排序，默认情况下处于启用状态：  
 
-此外，EdgeHTML 15 中首先预览的功能在默认情况下是稳定和启用的：
+#### 新增功能  
 
-#### 新增功能（默认情况下处于打开状态）
+默认启用  
 
-* [WebAssembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly)MVP （[演示](https://webassembly.org/demo/)）
-* [共享内存和 Atomics](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)
+*   [WebAssembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP \ ([demo](https://webassembly.org/demo)\)   
+*   [共享内存和原子](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
-### 付款请求 API
+### 付款请求 API  
 
-[支付请求 API](../windows-integration/payment-request-api.md)是一个开放的跨浏览器标准，使浏览器能够充当消费者、消费者和支付方式（如信用卡）之间的媒介，消费者已存储在云中。  EdgeHTML 16 中的 API 已更新，以匹配最新的 W3C[付款请求 API](https://w3c.github.io/payment-request/)规范。 这包括：
-* 对方法的支持 `canMakePayment()`
-* 对属性的支持 `requestId`
-* 对属性的支持 `id`
-* 该 `complete()` 方法的参数的默认值 `result` 从 "" 更改为 "unknown"
+[付款请求 API 是](../windows-integration/payment-request-api.md)一种开放的跨浏览器标准，允许浏览器在商业、使用者和付款方式 \ (如信用卡\) 客户存储在云中，采用的中介。  已更新 EdgeHTML 16 中的 API，以匹配最新的 W3C [付款请求 API](https://w3c.github.io/payment-request) 规范。  这包括：  
 
-### 服务工作人员
+*   对方法 `canMakePayment()` 的支持  
+*   对属性 `requestId` 的支持  
+*   对属性 `id` 的支持  
+*   该方法参数的 `complete()` 默认值从"" `result` 更改为"未知"  
 
-[服务工作人员](https://www.w3.org/TR/service-workers-1/)是在网页的后台运行的事件驱动的脚本。 服务工作人员仅支持以前的应用（如拦截和处理来自网络的请求、管理和处理后台同步、本地存储和推送通知），以前仅提供本机应用功能。 服务工作人员的支持仍在开发中，但你可以通过我们的实验服务辅助功能在 Microsoft Edge 中测试你的 PWA，方法是在 "**标志**" 中启用服务工作人员功能。
+### 服务工作进程  
 
-### WebVR
-Microsoft Edge 的 WebVR 已添加了对[运动控制器](https://developer.microsoft.com/windows/mixed-reality/motion_controllers)的支持。 这些控制器在空间中具有精确的位置，允许在虚拟现实中与数字对象进行细微的粒度交互。
+[服务工作者](https://www.w3.org/TR/service-workers-1) 是在网页后台运行的事件驱动的脚本。  服务工作者现在只能通过本机应用使用功能，如从网络中部起状态、管理和处理后台同步、本地存储以及推送通知等本机应用的请求。  服务工作者的支持仍在开发中，但你可以通过在技术服务工作者支持中启用服务工作者功能，在 Microsoft Edge 中通过实验性服务工作者支持测试你的 `about:flags` PWA。  
 
-![运动控制器](../media/MotionControllers.jpg)
+### WebVR  
 
-WebVR 也已经过优化，可支持两种不同类型的体验。
+适用于 Microsoft Edge 的 WebVR 已添加 [对运动控制器的支持](https://developer.microsoft.com/windows/mixed-reality/motion_controllers)。  这些控制器在空间中具有精确的位置，可让你精细交互虚拟现实。  
 
-**Windows Mixed Reality 电脑**-具有集成图形的台式机和笔记本电脑。  当插入这些设备时，我们的沉浸式耳机将在每秒60帧运行。  
-**Windows Mixed Reality 超 pc** -具有独立图形的台式机和笔记本电脑。 当插入这些设备时，我们的沉浸式耳机将在每秒90帧运行。   
+:::image type="complex" source="../media/MotionControllers.jpg" alt-text="运动控制器" lightbox="../media/MotionControllers.jpg":::
+   运动控制器  
+:::image-end:::  
 
-这两个设置将支持相同的沉浸式视频和游戏体验。 
+WebVR 也经过优化，以支持两种不同类型的体验。  
 
-有关即将到来的 Windows Mixed Reality 更新的详细信息，请查看[Windows Mixed reality](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update/)假日更新博客文章。 
+**Windows 混合现实电脑** - 一台包含集成图形的台式机和笔记本电脑。  插入这些设备后，沉送耳机将以 60 帧每秒的速度运行。  
+**Windows 混合现实 Ultra 电脑** - 具有自由图形的台式机和笔记本电脑。  插入这些设备后，沉送耳机将以 90 帧每秒的速度运行。  
 
-有关指南和演示，请转到[WebVR 开发人员指南](https://docs.microsoft.com/microsoft-edge/webvr/)。
+这两个设置都支持相同的沉静视频和游戏体验。  
+
+有关即将推出的 Windows Mixed Reality 更新的详细信息，请查看 [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update) 更新博客文章。  
+
+有关指南和演示，请转到 [WebVR 开发人员指南](/microsoft-edge/webvr)。  
 
  > [!NOTE] 
- > 由于 WebVR 规范仍在开发中，Microsoft Edge 的实现可能会在行的后面更改。
+ > 由于 WebVR 规范仍在开发中，所以 Microsoft Edge 的实现可能会在以后更改。  
 
-## EdgeHTML 16 中的新 Api
+## EdgeHTML 16 中的新 API  
 
-下面是 EdgeHTML 16 中新 Api 的完整列表。 它们以 **[界面名称] 的格式列出。 [api 名称]**。
+下面是 EdgeHTML 16 中的新 API 的完整列表。  它们以格式列出 `[interface name].[api name]` 。
 
 > [!NOTE] 
-> 虽然在 DOM 中公开以下 Api，但某些 Api 的端到端行为可能仍在开发中。 请参阅[Microsoft Edge 平台状态](https://developer.microsoft.com/microsoft-edge/platform/status/)，了解有关功能支持的官方 word 功能。
+> 尽管以下 API 在 DOM 中公开，但某些 API 的端到端行为可能仍在开发中。  若要了解  [功能支持的正](https://developer.microsoft.com/microsoft-edge/platform/status) 式字词，请参考 Microsoft Edge 平台状态。  
 
-<iframe height='559' scrolling='no' title='EdgeHTML 16 中的新 Api' src='//codepen.io/MSEdgeDev/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>请参阅 <a href='https://codepen.io/MSEdgeDev/pen/jLGZZY/'> </a> CodePen 上的 EdgeHTML MSEdgeDev （@MSEdgeDev）中的笔新 api <a href='https://codepen.io/MSEdgeDev'> </a> <a href='https://codepen.io'> </a> 。</iframe></p>
+---  
 
-<h2 id="previous-edgehtml-releases">以前的 EdgeHTML 版本</h2>
-<p><a href="https://aka.ms/devguide_edgehtml_12" data-raw-source="[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)">EdgeHTML 12/Windows 内部版本10240（7/2015）</a>
+<iframe height='559' scrolling='no' title='EdgeHTML 16 中的新 API' src='//codepen.io/MSEdgeDev/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>在 <a href='https://codepen.io/MSEdgeDev/pen/jLGZZY/'> CodePen 上查看 </a> MSEdgeDev 中由 MSEdgeDev <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev@MSEdgeDev) <a href='https://codepen.io'> 笔新 </a> API。</iframe>  
 
-[EdgeHTML 13/Windows 内部版本10586（11/2015）](https://aka.ms/devguide_edgehtml_13)
+---  
 
-[EdgeHTML 14/Windows 内部版本14393（8/2016）](https://aka.ms/devguide_edgehtml_14)
+## 以前的 EdgeHTML 版本  
 
-[EdgeHTML 15/Windows 内部版本15063（4/2017）](https://aka.ms/devguide_edgehtml_15)
+[EdgeHTML 12 / Windows 内部版本 10240 (7/2015) ](./edgehtml-12.md)  
+
+[EdgeHTML 13 / Windows 版本 10586 (11/2015 版) ](./edgehtml-13.md)  
+
+[EdgeHTML 14/Windows 内部版本 14393 (，8) ](./edgehtml-14.md)  
+
+[EdgeHTML 15 /Windows 内部版本 15063 (4/2017) ](./edgehtml-15.md)  

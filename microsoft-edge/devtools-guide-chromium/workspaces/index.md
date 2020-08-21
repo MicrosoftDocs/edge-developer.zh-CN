@@ -1,17 +1,17 @@
 ---
-title: 编辑具有工作区的文件
+title: 使用工作区编辑文件
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 8a31dd9fbfe492cf8eaacc654f7d501925f730f2
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931229"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942182"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,56 +27,56 @@ ms.locfileid: "10931229"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# 编辑具有工作区的文件  
+# 使用工作区编辑文件  
 
 > [!NOTE]
-> 本教程的目标是提供有关设置和使用工作区的动手练习，以便你可以在自己的项目中使用工作区。  你可以在启用工作区后将对源代码所做的更改保存在你的本地计算机上 DevTools 中。  
+> 本教程的目标是提供设置和使用工作区的实际实践，以便在你自己的项目中使用工作区。  启用 Workspaces 后，可以保存对源代码（本地计算机上所做的源代码所做的更改）  
 
 > [!IMPORTANT]
-> **先决条件**：在开始本教程之前，你应该知道如何执行以下操作。  
+> **先决条件**：开始此教程之前，你应知道如何执行以下操作。  
 > 
 > *   [使用 html、CSS 和 JavaScript 构建网页][MDNWebGettingStarted]  
 > *   [使用 DevTools 对 CSS 进行基本更改][DevToolsCssIndex]  
-> *   [运行本地 HTTP web 服务器][MDNSimpleLocalHTTPServer]  
+> *   [运行本地 HTTP Web 服务器][MDNSimpleLocalHTTPServer]  
 
 ## 概述  
 
-工作区使你能够将在 Devtools 中所做的更改保存到计算机上同一文件的本地副本。  对于本教程，你的计算机上应具有以下设置。  
+利用工作区，您可以将 Devtools 中的更改保存到计算机上的相同文件的本地副本中。  在本教程中，应在计算机上具有以下设置。  
 
-*   您的桌面网站上有您的网站的源代码。  
-*   您从源代码目录运行本地 web 服务器，以便可以在该网站上访问 `localhost:8080` 。  
-*   您 `localhost:8080` 在 Microsoft Edge 中打开，并且您使用 DevTools 更改网站的 CSS。  
+*   在桌面上具有网站的源代码。  
+*   你运行的是源代码目录的本地 Web 服务器，以便网站可在访问 `localhost:8080` 。  
+*   你在 `localhost:8080` Microsoft Edge 中打开并使用 DevTools 更改该网站的 CSS。  
 
-启用了工作区后，在 DevTools 内所做的 CSS 更改将保存到桌面上的源代码中。  
+启用工作区后，在 DevTools 中进行的 CSS 更改会保存到桌面上的源代码中。  
 
 ## 限制  
 
-如果你使用的是新式框架，则可能会将你的源代码从易于维护的格式转换为尽可能快地运行的格式。  
+如果你使用的是现代框架，它可能不会将源代码转换为易于维护的格式，该格式已尽可能快速运行。  
 
-工作区通常能够将经过优化的代码映射回原始源代码以及 [源映射][TreehouseBlogSourceMaps]的帮助。  但是，在每个框架间使用源映射的方式之间存在许多变化。  Devtools 只支持所有变体。  
+工作区通常能够借助源映射的帮助将优化的代码映射回原 [始源代码][TreehouseBlogSourceMaps]。  但是每个框架之间有许多差别，超过了每个位图的使用方式。  Devtools 只支持所有变体。  
 
-适用于以下框架的工作区已知不起作用。  
+已知工作区不使用以下框架。  
 
-*   创建反应应用  
-    
+*   创建回收应用  
+
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
 ## 相关功能：本地覆盖  
 
-**本地重写** 是另一个类似于工作区的 DevTools 功能。  如果想要试验对页面所做的更改，并且需要在页面加载期间查看更改，但又不介意将更改映射到页面的源代码，请使用本地替代。  
+**本地替代是另** 一个 DevTools 功能，它类似工作区。  如果您试图对页面的更改进行更改，并且需要在页面加载中看到更改，但是不需更改使页面源代码映射到页面的源代码，请使用本地覆盖。  
 
 <!--Todo: add section when content is ready  -->  
 
-## 步骤1：设置  
+## 步骤 1：设置  
 
-完成以下操作，获取工作区的实际体验。  
+完成以下操作，以获得使用工作区的动手体验。  
 
 ### 设置演示  
 
 1.  [打开演示][GlitchWorkspacesDemo]。  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
     
-    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="故障项目" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
-       故障项目  
+    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Glitch 项目" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
+       Glitch 项目  
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
@@ -88,10 +88,10 @@ ms.locfileid: "10931229"
 
     -->  
     <!--1.  Close the tab.  -->  
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
-1.  `app`在桌面上创建目录。  将目录中的文件副本保存 `workspaces-demo` 到 `app` 目录。  对于教程的其余部分，目录称为 `~/Desktop/app` 。  
-1.  在中启动本地 web 服务器 `~/Desktop/app` 。  下面是用于启动的一些示例代码 `SimpleHTTPServer` ，但你可能会使用所需的任何服务器。  
+1.  在 `app` 桌面上创建目录。  将文件的副本从目录 `workspaces-demo` 保存到 `app` 目录。  对于教程的其余部分，该目录称为 `~/Desktop/app` ：  
+1.  启动本地 Web 服务器 `~/Desktop/app` 。  以下是一些示例代码，用于起起 `SimpleHTTPServer` ，你可以使用你喜欢的几个服务器。  
     
     :::row:::
        :::column span="":::
@@ -99,7 +99,7 @@ ms.locfileid: "10931229"
           cd ~/Desktop/app
           python -m SimpleHTTPServer # Python 2
           ```  
-       :::column-end:::
+       :::column-end:::  
        :::column span="":::
           ```bash
           cd ~/Desktop/app
@@ -108,65 +108,65 @@ ms.locfileid: "10931229"
        :::column-end:::
     :::row-end:::  
     
-1.  在 Microsoft Edge 中打开一个选项卡，然后转到本地托管的网站版本。  你应该能够使用诸如或之类的 URL 访问它 `localhost:8080` `http://0.0.0.0:8080` 。  确切的 [端口号][WikiPortURLs] 可能不同。  
+1.  在 Microsoft Edge 中打开选项卡，转到该网站的本地托管版本。  你应当能够使用您的 URL 或以下 URL `localhost:8080` 访问它 `http://0.0.0.0:8080` 。  确实的端口 [号可能][WikiPortURLs] 不同。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示" lightbox="../media/workspaces-workspaces-demo.msft.png":::
-       演示  
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示版" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+       演示版  
     :::image-end:::  
     
 ### 设置 DevTools  
 
-1.  选择 `Control` + `Shift` + `J` \ (Windows \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 打开 DevTools 的**控制台**面板。  
+1.  选择 `Control` + `Shift` + `J` \ (Windows\) 或 `Command` + `Option` + `J` \ (macOS\) 以打开 DevTools 的控制台面板。 **Console**  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
-       **控制台**面板  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="主机面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+       **主机面**板  
     :::image-end:::  
     
-1.  选择 " **源** " 选项卡。  
-1.  选择 " **文件系统** " 选项卡。  
+1.  选择" **源"** 选项卡。  
+1.  选择" **文件系统"** 选项卡。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text=""文件系统" 选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       " **文件系统** " 选项卡  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text=""文件系统"选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       " **文件系统"** 选项卡  
     :::image-end:::  
     
-1.  选择 " **将文件夹添加到工作区**"。  
-1.  Enter `~/Desktop/app` 。  
-1.  选择 " **允许** " 以授予 DevTools 读取和写入目录的权限。  
-    在 " **文件系统** " 选项卡中，"，" 旁边有一个绿点 `index.html` `script.js` `styles.css` 。  这些绿色圆点意味着 DevTools 已建立了页面的网络资源与中的文件之间的映射 `~/Desktop/app` 。  
+1.  选择 **"将文件夹添加到工作区**"。  
+1.  键入 `~/Desktop/app`。  
+1.  选择 **"允** 许"授予 DevTools 同步同步和写入目录的权限。  
+    在" **文件系统"** 选项卡中，旁边有绿点， `index.html` 此标记出 `script.js` 来 `styles.css` 。  这些绿色点意味着 DevTools 已在页面的网络资源和其中的文件之间建立了映射 `~/Desktop/app` 。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text=""文件系统" 选项卡现在显示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       " **文件系统** " 选项卡现在显示本地文件和网络文件之间的映射  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text=""文件系统"选项卡现在显示本地文件与网络之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       " **文件系统** "选项卡现在显示本地文件与网络之间的映射  
     :::image-end:::  
     
-## 步骤2：将 CSS 更改保存到磁盘  
+## 步骤 2：保存 CSS 更改为光盘  
 
 1.  打开 `styles.css`。  
     
     > [!NOTE]
-    > `color`元素的属性 `h1` 设置为 `fuchsia` 。  
+    > `color`元素 `h1` 的属性设置为 `fuchsia` ：  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="在文本编辑器中查看样式" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
-       `styles.css`在文本编辑器中查看  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="在文本编辑器中查看 styles.css" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+       在 `styles.css` 文本编辑器中查看  
     :::image-end:::  
     
-1.  选择 " **元素** " 选项卡。  
-1.  将元素的属性值更改 `color` `<h1>` 为你的常用颜色。  
-    请记住，你需要在 `<h1>` **DOM 树** 中选择元素，才能在 " **样式** " 窗格中查看应用到它的 CSS 规则。  旁边的绿色圆点 `styles.css:1` 表示你所做的任何更改都将映射到 `~/Desktop/app/styles.css` 。  
+1.  选择" **元素"** 选项卡。  
+1.  将该元素 `color` 的属性 `<h1>` 值更改为你喜藏的颜色。  
+    请记住，你需要在 `<h1>` **DOM 对** 该元素进行选择，才能在"样式"窗格中查看应用于它 **的** CSS 规则。  旁边的绿点 `styles.css:1` 表示你所做的任何更改都映射到 `~/Desktop/app/styles.css` 了。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="文件链接的绿色指示器" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
-       文件链接的绿色指示器  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="链接文件的绿色指示器" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+       链接文件的绿色指示器  
     :::image-end:::  
     
-1.  `styles.css`再次在文本编辑器中打开。  该 `color` 属性现在设置为你的常用颜色。  
-1.  刷新页面。  元素的颜色 `<h1>` 仍设置为你的常用颜色。  在刷新时进行更改，因为当你进行更改时 DevTools 将更改保存到磁盘。  然后，当你刷新页面时，你的本地服务器从磁盘向修改后的文件副本提供服务。  
+1.  再次 `styles.css` 在文本编辑器中打开。  `color`属性现已设置为收藏的颜色。  
+1.  刷新页面。  元素的 `<h1>` 颜色仍设置为你最喜去的颜色。  更改将保留在刷新周围，因为当您使更改 DevTools 保存到了视频台时。  然后，刷新页面时，本地服务器已从盘修改了该文件的副本。  
     
-## 步骤3：将 HTML 更改保存到磁盘  
+## 步骤 3：将 HTML 更改保存到光盘  
 
-### 更改 "元素" 面板中的 HTML  
+### 从"元素面板"中更改 HTML  
 
-你可以更改 "元素" 面板中的 html，但对 DOM 树所做的更改不会保存到磁盘，并且只会影响当前浏览器会话。  
+你可能会从"元素面板"更改 html，但是对 DOM 的更改不会保存到文件盘，只会有当前的浏览器会话生效。  
 
-DOM 树不是 html。  
+DOM 的项目不是 HTML 的。  
 
 <!--### Try changing HTML from the Elements panel  
 
@@ -198,65 +198,65 @@ DOM 树不是 html。
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### 从 "源" 面板更改 HTML  
+### 从"源"面板更改 HTML  
 
-如果要保存对页面的 html 所做的更改，请使用 " **源** " 面板执行此操作。  
+如果要保存对页面的 html 的更改，可使用"源"面 **板进行** 操作。  
 
-1.  选择 " **源** " 选项卡。  
-1.  选择 " **页面** " 选项卡。  
-1.  选择 " ** (索引") **。  将打开页面的 HTML。  
-1.  用 `<h1>I ❤️  Cake</h1>` 取代 `<h1>Workspaces Demo</h1>`。  请参阅下图。  
-1.  选择 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存更改。  
-1.  刷新页面。  该 `<h1>` 元素仍显示新文本。  
+1.  选择" **源"** 选项卡。  
+1.  选择" **页"** 选项卡。  
+1.  从** (索) 。 **  此时将打开该页面的 HTML。  
+1.  用 `<h1>I ❤️  Cake</h1>` 取代 `<h1>Workspaces Demo</h1>`。  参见下图。  
+1.  选择 `Control` + `S` \ (Windows\) 或 `Command` + `S` \ (macOS\) 以保存所做的更改。  
+1.  刷新页面。  元素 `<h1>` 仍然显示新文本。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从 "源" 面板更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       第12行设置为 `I ❤️  Cake`  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从"源"面板更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       从"源" **面板更改** HTML  
     :::image-end:::  
     
-1.  打开 `~/Desktop/app/index.html`。  `<h1>`元素包含新文本。  
+1.  打开 `~/Desktop/app/index.html`。  元素 `<h1>` 包含新的文本。  
     
-## 步骤4：将 JavaScript 更改保存到磁盘  
+## 步骤 4：将 JavaScript 更改保存到该面盘  
 
-" **源** " 面板也是对 JavaScript 进行更改的位置。  但有时你需要在对网站进行更改时访问其他面板，如 " **元素** " 面板或 " **控制台** " 面板。  有一种方法可使 " **源** " 面板与其他面板一起打开。  
+" **源"** 面板也是对 JavaScript 进行更改的位置。  但有时，在对网站进行更改时，您需要访问其他面**Elements**板，如元素面板**Console**或主机面板。  可通过一种方法将 **"源"面板** 与其他面板一起打开。  
 
-1.  选择 " **元素** " 选项卡。  
-1.  选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  此时将打开 " **命令" 菜单** 。  
-1.  键入 `QS` ，然后选择 " **显示快速源**"。  在 DevTools 窗口的底部，现在有一个 " **快速源** " 选项卡。 该选项卡显示的内容 `index.html` ，这是您在 " **源** " 面板中编辑的最后一个文件。  " **快速源** " 选项卡从 " **源** " 面板提供编辑器，以便您可以在打开其他面板时编辑文件。  
+1.  选择" **元素"** 选项卡。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows\) 或 `Command` + `Shift` + `P` \ (macOS\) 。  此 **时将打开** 命令菜单。  
+1.  键入 `QS` ，然后选择" **显示快速源**"。  在"开发工具"窗口底部，现在有一个"快速 **源"** 选项卡。 该选项卡显示内容，该选项卡 `index.html` 是你在源面板中编辑过 **的最后** 一个文件。  通过 **"快速** 来源"选项卡可从"源"面 **板向** 你提供编辑器，以便你能够在打开其他面板的同时编辑文件。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用 "命令" 菜单打开 "快速源" 选项卡" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       使用 "**命令" 菜单**打开 "**快速源**" 选项卡  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开"快速源"选项卡" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       使用命令 **菜单打开** "快速源 **"选项卡**  
     :::image-end:::  
     
-1.  选择 `Control` + `P` \ (Windows \ ) 或 `Command` + `P` \ (macOS \ ) 打开 "**打开文件**" 对话框。  请参阅下图。  
-1.  键入 `script` ，然后选择 " **应用/script.js**"。  
+1.  选择 `Control` + `P` \ (Windows\) 或 `Command` + `P` \ (macOS\) 以打开 **"打开文件"** 对话框。  参见下图。  
+1.  键入 `script` ，然后选择**应用/script.js。 **  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用 "打开文件" 对话框打开 script.js" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       `script.js`使用 "**打开文件**" 对话框打开  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js"打开文件"对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+       使用 `script.js` "打开**文件"对话框打开**  
     :::image-end:::  
     
     > [!NOTE]
-    > `Save Changes To Disk With Workspaces`演示中的链接会定期设置样式。  
+    > `Save Changes To Disk With Workspaces`演示中的链接定期设置格式。  
     
-1.  使用 "**快速源**" 选项卡将以下代码添加到**script.js**底部。  
+1.  使用"快速源"选项卡将 ** 下列script.js** 添加到 **联系人的底** 部。  
     
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  选择 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存更改。  
+1.  选择 `Control` + `S` \ (Windows\) 或 `Command` + `S` \ (macOS\) 以保存所做的更改。  
 1.  刷新页面。  
     
     > [!NOTE]
-    > 页面上的链接现在为斜体。  
+    > 页面上的链接现在将被斜体。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="页面上的链接现在为斜体" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
-       页面上的链接现在为斜体  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="现在即可将页面上的链接斜体" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+       现在即可将页面上的链接斜体  
     :::image-end:::  
     
 ## 后续步骤  
 
-使用在本教程中了解到的功能在您自己的项目中设置工作区。  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+使用本教程中学到的产品在你自己的项目中设置工作区。  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
 If you have more feedback on the topics or anything else, please use any of the channels below:  
@@ -267,18 +267,18 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md "开始使用查看和更改 CSS |Microsoft 文档"  
+[DevToolsCssIndex]: ../css/index.md "查看和更改 CSS 入门 |Microsoft 文档"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
-[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "工作区演示文件 |故障"  
+[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces 演示文件 |Glitch"  
 
-[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "内容-CSS：级联样式表 |MDN"  
-[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Web 入门 |MDN"  
-[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "运行一个简单的本地 HTTP 服务器 |MDN"  
-[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM-Web Api 简介 |MDN"  
+[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "内容 - CSS：级集样式表 |MDN"  
+[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Web | 入门 |MDN"  
+[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "运行简单的本地 HTTP 服务器 |MDN"  
+[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 - Web API |MDN"  
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
@@ -286,7 +286,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "端口 \ (计算机网络 \ ) -维基百科"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "端口 \ (计算机网络\) - 维网"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

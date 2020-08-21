@@ -1,7 +1,7 @@
 ---
 title: 在 JavaScript 中使用 Windows 运行时
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -15,47 +15,49 @@ caps.latest.revision: 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: bffde93aa973f492189aedcfcaa9c3694d9e61bc
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 444008598a2f7a2f5257544304bed87fbfaa203a
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564578"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942176"
 ---
 # 在 JavaScript 中使用 Windows 运行时  
 
-编写通用 Windows 平台 \ （UWP）应用时，可以像使用本机 JavaScript 对象、方法和属性一样使用 Windows 运行时类、方法和属性。  本主题提供了介绍信息和指向主题的链接，这些主题解释在 JavaScript 中使用 Windows 运行时 Api 的基本概念，包括有关 Windows 运行时类型的表示方式、如何使用异步 Windows 运行时方法以及如何侦听和处理 Windows 运行时事件的说明。  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-有关常规语言文档，请查看 MDN 的[JavaScript 参考][MDNJavascriptReference]库。  
+在编写通用 Windows 平台 \ (UWP\) 应用时，你可以采用与使用本机 JavaScript 对象、方法和属性相同的方式使用 Windows 运行时类、方法和属性。  本主题提供了一些主题的介绍性信息和链接，这些主题指向介绍使用 JavaScript 中 Windows 运行时 API 的基本概念，包括有关如何表示 Windows 运行时类型的说明、如何使用异步 Windows 运行时方法，以及如何侦听和处理 Windows 运行时事件。  
+
+有关常规语言文档，请查看 MDN 的 [JavaScript 参考][MDNJavascriptReference] 库。  
 
 > [!IMPORTANT]
-> 对于在 Internet Explorer 中运行的应用，Windows 运行时功能不可用。  
+> Windows 运行时功能不适用于在运行时运行Internet Explorer。  
 
 ## Windows 运行时参考文档  
 
-有关参考文档，请参阅[Windows 运行时参考][UwpApiIndex]。  代码示例在 JavaScript 以及 c + +、c # 和 Visual Basic 中可用。  
+有关参考文档，请参阅 [Windows 运行时参考][UwpApiIndex]。  代码示例可用于 JavaScript 中，而且 C++、C# 和 Visual Basic。  
 
-## 编写 c + +、c # 或 Visual Basic 中的 Windows 运行时组件  
+## 使用 C++、C# 或代码编写 Windows 运行时组Visual Basic  
 
-有关编写可在 JavaScript 中使用的 Windows 运行时组件的说明和指南，请参阅使用[c + + 创建 Windows 运行时组件][WindowsUwpWinrtCpp]和使用[c # 和 Visual Basic 创建 Windows 运行时组件][WindowsUwpWinrtCsharpVb]。  
+有关编写可在 JavaScript 中使用的 Windows 运行时组件的说明和指南，请参阅 ["使用 C++][WindowsUwpWinrtCpp] 创建 Windows 运行时组件"以及使用 C# 和 Visual Basic 创建 [Windows 运行时组件][WindowsUwpWinrtCsharpVb]。  
 
-## 带有 Windows 运行时功能的大小写约定  
+## Windows 运行时功能的级列约定  
 
-JavaScript 中的 Windows 运行时功能的大小写约定与其他语言略有不同：  
+JavaScript 中 Windows 运行时功能的级约定与其他语言的约定有所不同：  
 
-*   命名空间和类采用 Pascal 大小写形式：  
+*   命名空间和类在 Pascal 案例中：  
     
     ```javascript
     Windows.Deployment.PackageInfo;
     ```  
     
-*   类的成员（包括方法和属性）和结构和枚举的成员采用 camel 大小写形式：  
+*   类的成员（包括方法和属性以及结构和枚举的成员）在摄像机情况下如下所示：  
     
     ```javascript
     Deployment.PackageInfo.createPackage();
     ```  
     
-*   事件名称的小写字母：  
+*   事件名称为小写：  
     
     ```javascript
     dataTransferManager.ontargetapplicationchosen;
@@ -65,22 +67,20 @@ JavaScript 中的 Windows 运行时功能的大小写约定与其他语言略有
 
 [使用 Windows 运行时 API 时的注意事项][WindowsRuntimeConsiderationsApi]  
 [使用 Windows 运行时异步方法][WindowsRuntimeAsynchronousMethods]   
-[处理 JavaScript 中的 Windows 运行时事件][WindowsRuntimeEventsJavascript]   
-[Windows 运行时类型的 JavaScript 表示形式][WindowsRuntimeJavascriptTypes]   
-[Windows 运行时日期时间和时间跨度的 JavaScript 投影][WindowsRuntimeDatetimeTimespan]  
- 
-<!-- image links -->  
+[在 JavaScript 中处理 Windows 运行时事件][WindowsRuntimeEventsJavascript]   
+[Windows 运行时类型 JavaScript 表示形式][WindowsRuntimeJavascriptTypes]   
+[Windows 运行时 DateTime 和 TimeSpan 的 JavaScript 投影][WindowsRuntimeDatetimeTimespan]  
 
 <!-- links  -->  
 
-[WindowsRuntimeConsiderationsApi]: /microsoft-edge/windows-runtime/considerations-when-using-the-windows-runtime-api "使用 Windows 运行时 API 时的注意事项"  
-[WindowsRuntimeEventsJavascript]: /microsoft-edge/windows-runtime/handling-windows-runtime-events-in-javascript "处理 JavaScript 中的 Windows 运行时事件"  
-[WindowsRuntimeJavascriptTypes]: /microsoft-edge/windows-runtime/javascript-representation-of-windows-runtime-types "Windows 运行时类型的 JavaScript 表示形式"  
-[WindowsRuntimeAsynchronousMethods]: /microsoft-edge/windows-runtime/using-windows-runtime-asynchronous-methods "使用 Windows 运行时异步方法"  
-[WindowsRuntimeDatetimeTimespan]: /microsoft-edge/windows-runtime/windows-runtime-datetime-and-timespan-representations "Windows 运行时日期时间和时间跨度表示形式"  
+[WindowsRuntimeConsiderationsApi]: ./considerations-when-using-the-windows-runtime-api.md "使用 Windows 运行时 API | 时的注意事项Microsoft 文档"  
+[WindowsRuntimeEventsJavascript]: ./handling-windows-runtime-events-in-javascript.md "使用 JavaScript | 处理 Windows 运行时事件 |Microsoft 文档"  
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Windows 运行时类型的 JavaScript 表示 |Microsoft 文档"  
+[WindowsRuntimeAsynchronousMethods]: ./using-windows-runtime-asynchronous-methods.md "使用 Windows 运行时异步方法 |Microsoft 文档"  
+[WindowsRuntimeDatetimeTimespan]: ./windows-runtime-datetime-and-timespan-representations.md "Windows 运行时 DateTime 和 TimeSpan Representations |Microsoft 文档"  
 
-[UwpApiIndex]: /uwp/api/index "Windows UWP 命名空间"  
-[WindowsUwpWinrtCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "带有 c + +/CX 的 Windows 运行时组件"  
-[WindowsUwpWinrtCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "带有 c # 和 Visual Basic 的 Windows 运行时组件"  
+[UwpApiIndex]: /uwp/api/index "Windows UWP 命名空间 |Microsoft 文档"  
+[WindowsUwpWinrtCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "使用 C++/CX | 的 Windows 运行时组件Microsoft 文档"  
+[WindowsUwpWinrtCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "使用 C# 和应用 | 的 Windows 运行时组Visual Basic |Microsoft 文档"  
 
 [MDNJavascriptReference]: https://developer.mozilla.org/docs/Web/JavaScript/Reference "JavaScript 参考 |MDN"  

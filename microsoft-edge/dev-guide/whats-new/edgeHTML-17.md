@@ -1,134 +1,159 @@
 ---
-title: EdgeHTML 17 中的新功能和 Api
-description: 本指南概述了 EdgeHTML 17 中包含的开发人员功能和标准。
-author: mattwojo
-ms.author: mattwoj
-ms.date: 03/05/2020
+title: EdgeHTML 17 中的新功能和 API
+description: 本指南概述了 EdgeHTML 17 中包括的开发人员功能和标准。
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、css、javascript、开发人员
-ms.openlocfilehash: 1359464bfb9ec6f2b84536a11b0fb4bfcce2fb1c
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: 边缘， Web 开发， html， css， javascript， developer
+ms.openlocfilehash: 0fc7dda532866e8970003bce2febb7e46fbbc459
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562644"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941943"
 ---
-# EdgeHTML 17 中的新增功能
+# EdgeHTML 17 中的新增功能  
 
-下面列出了[EdgeHTML 17](https://blogs.windows.com/msedgedev/2018/04/30/edgehtml-17-april-2018-update/) web 平台中提供的新功能和更新功能，作为[Windows 10 2018 年4月的更新](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/)（04/2018，内部版本17134）的一部分。 有关特定 Windows 预览[体验计划](https://insider.windows.com/)预览版中的更改，请参阅[Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/)和[EdgeHTML 中的新增功能](../whats-new.md)。
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-下面是以下更改列表的固定链接： [https://aka.ms/devguide_edgehtml_17](https://aka.ms/devguide_edgehtml_17) 。
+下面是 [EdgeHTML 17](https://blogs.windows.com/msedgedev/2018/04/30) Web 平台中随之外出现的新功能和更新功能列表，作为 [Windows 10 2018 年 4 月更新](https://blogs.windows.com/windowsexperience/2018/04/27) \ (04/2018（内部版本 17134\) 的一部分）。  有关特定 [Windows Insider](https://insider.windows.com) Preview 版本中的更改，请参阅 [Microsoft Edge 更改日](https://developer.microsoft.com/microsoft-edge/platform/changelog) 志 [和 EdgeHTML 中的新增功能](../whats-new.md)。  
 
-## 新增功能和更新功能 
+下面是下列更改列表的句号 [https://aka.ms/devguide_edgehtml_17](./edgehtml-17.md) ：。  
 
-### ARIA 1.1 角色、状态和事件
+## 新增功能和更新功能  
 
-EdgeHTML 17 添加了对[可访问的丰富 Internet 应用程序（wai-aria）1.1 规范](https://w3.org/TR/wai-aria-1.1/)（包括[源](https://www.w3.org/TR/wai-aria-1.1/#feed)、[表单](https://www.w3.org/TR/wai-aria-1.1/#form)、 [aria haspopup](https://w3.org/TR/wai-aria-1.1/#aria-haspopup)、 [ARIA 占位符](https://w3.org/TR/wai-aria-1.1/#aria-placeholder)等）的各种角色、状态和属性的支持;[在 changelog 中查找 ARIA 更新的完整列表](https://developer.microsoft.com/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299)。 通过此更新，EdgeHTML 17 现在支持 WAI-ARIA-ARIA 1.1 中定义的所有角色和属性。 有关 Microsoft Edge 中的辅助功能的详细信息，请查看[辅助功能](https://docs.microsoft.com/microsoft-edge/accessibility)文档。
+### ARIA 1.1 角色、州和活动  
 
-### CSS 蒙版
+Microsoft EdgeHTML 17 增加了对可访问富 Internet 应用程序中各种角色[、状态和属性的支持 (WAI-ARIA) 1.1 规](https://w3.org/TR/wai-aria-1.1)范，包括[订阅源](https://www.w3.org/TR/wai-aria-1.1#feed)、[form](https://www.w3.org/TR/wai-aria-1.1#form)表单[aria-haspopup](https://w3.org/TR/wai-aria-1.1#aria-haspopup)、名单里网页[、aria-占位符](https://w3.org/TR/wai-aria-1.1#aria-placeholder)等;在[更改日程中查找 ARIA 更新的完整列表](https://developer.microsoft.com/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299)。  通过此更新，EdgeHTML 17 现在支持在 WAI-ARIA 1.1 中定义的所有角色和属性。  查看有关 Microsoft [Edge 辅](../../accessibility.md) 助功能的详细信息，请参阅辅助功能文档。  
 
-EdgeHTML 17 包含对[CSS 掩蔽](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking)的实验性支持。 部分实现引入了 CSS[掩码-图像](https://developer.mozilla.org/docs/Web/CSS/mask-image)和[掩码大小](https://developer.mozilla.org/docs/Web/CSS/mask-size)属性。  检查 "启用 CSS 掩蔽" 标志：要试验的标志！
+### CSS 掩码  
 
-### SVG 元素上的 CSS 转换
+EdgeHTML 17 包含对 [CSS 发表的实际支持](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking)。  部分实现引入了 CSS [mask 图像](https://developer.mozilla.org/docs/Web/CSS/mask-image)[和屏码大小](https://developer.mozilla.org/docs/Web/CSS/mask-size)属性。  请选中有关：标志的：标志的"启用 CSS 掩码"标志以试用！  
 
-EdgeHTML 17 现在支持 SVG 元素和演示属性上的 CSS 转换。 这使 SVG 元素能够以可视方式进行操作，包括旋转、缩放、移动、倾斜或平移。 
+### SVG 元素上的 CSS 转换  
 
-### Extensions 
+Microsoft EdgeHTML 17 现在支持 SVG 元素和演示属性上的 CSS 转换。  这允许以视觉方式操作 SVG 元素，包括旋转、缩放、移动、换行或翻译。  
 
-Microsoft Edge 现在支持显示来自扩展的通知的[通知 API](https://developer.mozilla.org/Add-ons/WebExtensions/API/notifications) 。 扩展开发人员现在可以创建不同类型的通知（"基本"、"列表"、"图像等"），它们支持完全的用户交互。 通知也会自动登录到操作中心。 请访问[通知示例](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications)，了解如何在扩展中使用此 API。
+### Extensions  
 
-EdgeHTML 17 现在还支持 `Tabs.reload()` 作为标准选项卡 API 类的一部分的方法。 在 Windows 10 2018 年4月更新中也是新增的，用户现在可以选择允许扩展在 inPrivate 浏览期间运行。
+Microsoft Edge 现在支持 [通知 API，](https://developer.mozilla.org/Add-ons/WebExtensions/API/notifications) 该 API 显示扩展中的通知。  扩展开发人员现在可以创建不同类型的通知 \ (基本、列表、图像等（支持 ) 完整用户交互）。  这些通知还会自动登录到操作中心。  访问关 [于如何在](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) 扩展中使用此 API 的通知示例。  
 
-有关此版本中的扩展更新的更多详细信息，请转到博客文章[2018 年4月更新的 Windows 10 年4月扩展的新增功能](https://blogs.windows.com/msedgedev/2018/05/24/new-extension-features-april-2018-update-notifications-inprivate/)。
+EdgeHTML 17 现在还支持作为 `Tabs.reload()` 标准选项卡 API 类的一部分的方法。  此外，Windows 10 2018 年 4 月更新中新的版订阅现在用户可以选择允许扩展在 inPrivate 浏览过程中运行。  
 
-### DevTools
-此版本的 DevTools 随附两种方法：作为 Microsoft Edge 的传统浏览器（ `F12` ）工具，并从 Microsoft Store 中预览为独立的[Windows 10 应用](../../devtools-guide/whats-new/edgehtml-17.md#microsoft-edge-devtools-app-preview)！
+有关此版本中的扩展更新的更多详细信息，请转到 [Windows 10 2018 年 4](https://blogs.windows.com/msedgedev/2018/05/24)月更新中的博客文章新功能。  
 
-![Microsoft Edge DevTools 应用](../../devtools-protocol/media/microsoft-edge-devtools.png) 
+### DevTools  
 
-这些工具还更新了许多主要功能，包括对[远程调试](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)的基本支持（通过我们的新[DevTools 协议](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)）、 [PWA 调试功能](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging)、 [IndexedDB 缓存管理](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection)、[垂直停靠](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge)等！ 我们还继续在性能和可靠性方面作为日常投资的一部分，开始上次发布的整体[重构工作](./edgehtml-16.md)。
+这个版本的 DevTools 以两种方式交付：作为 Microsoft Edge 的传统浏览器 \ (`F12` \) 工具，然后作为 Microsoft Store 中的随 [机 Windows 10](../../devtools-guide/whats-new/edgehtml-17.md#microsoft-edge-devtools-app-preview) 应用进行预览！  
 
-有关详细信息，请访问[最新 Windows 10 更新（EdgeHTML 17）中的 DevTools](../../devtools-guide/whats-new/edgehtml-17.md) 。
+:::image type="complex" source="../../devtools-protocol/media/microsoft-edge-devtools.png" alt-text="Microsoft Edge 开发工具应用" lightbox="../../devtools-protocol/media/microsoft-edge-devtools.png":::
+   Microsoft Edge 开发工具应用  
+:::image-end:::  
 
-### JavaScript
+该工具也会使用许多主要功能进行了更新，其中[包括通过新的](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol) [DevTools 协](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)议 \) 、PWA 调试功能[、IndexedDB 缓存管理](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection)、垂直[PWA debugging features](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging)停运来管理等[对远](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge)程调试 \ (的基本支持！ 我们还在持续的性能 [和](./edgehtml-16.md) 可靠性的同时，我们还将延续整体重构工作。我们还在持续改进性能和可靠性方面继续了整体重身协作。  
 
-有了 EdgeHTML 17，Chakra JavaScript 引擎带来了许多关键领域的性能改进：
+有关详细信息，[请访问最新 Windows 10 更新 (的 Windows 10 开发工具) 中的 DevTools。](../../devtools-guide/whats-new/edgehtml-17.md)  
 
-**更简洁内存占用**
+### JavaScript  
 
- - （重新）延迟对[对象文本上](https://github.com/Microsoft/ChakraCore/pull/4136)的[箭头函数](https://github.com/Microsoft/ChakraCore/pull/4105)和方法的分析
- - [RegExp 字节码重构](https://github.com/Microsoft/ChakraCore/pull/3915)
+借助 Microsoft EdgeHTML 17，Chakra JavaScript 引文在许多关键方面引入了性能改进：  
 
-**更快的 JavaScript 内置**
+:::row:::
+   :::column span="1":::
+      **更简单的内存量足**  
+   :::column-end:::
+   :::column span="2":::
+      *   \ (Re-\) ，针对对象[文本上箭头函数](https://github.com/Microsoft/ChakraCore/pull/4105)[和方法进行延迟分析](https://github.com/Microsoft/ChakraCore/pull/4136)  
+      *   [RegExp 字节码重造](https://github.com/Microsoft/ChakraCore/pull/3915)  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **速度更快的 JavaScript**
+   :::column-end:::
+   :::column span="2":::
+      *   [类型共享对象.create](https://github.com/Microsoft/ChakraCore/pull/3901)  
+      *   [Object.assign 的 Polymorphic 以嵌入式缓存](https://github.com/Microsoft/ChakraCore/pull/3792)  
+      *   [JSON.parse/stringify 优化](https://github.com/Microsoft/ChakraCore/pull/4077)  
+      *   [在 JavaScript 中重写数组接标，更快...的](https://github.com/Microsoft/ChakraCore/pull/4095)  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Web 组编程**
+   :::column-end:::
+   :::column span="2":::
+      *   [Inling 支持](https://github.com/Microsoft/ChakraCore/pull/3681)  
+   :::column-end:::
+:::row-end:::  
 
- - [为对象键入共享。创建](https://github.com/Microsoft/ChakraCore/pull/3901)
- - [对象的多态内联缓存。 assign](https://github.com/Microsoft/ChakraCore/pull/3792)
- - [JSON. parse/stringify 优化](https://github.com/Microsoft/ChakraCore/pull/4077)
- - [在 JavaScript 中重写数组迭代器，更快地为 .。。多种](https://github.com/Microsoft/ChakraCore/pull/4095)
-
-**Web 程序集**
-
- - [Inling 支持](https://github.com/Microsoft/ChakraCore/pull/3681) 
-
-查看有关所有详细信息，请参阅[*EdgeHTML 17 中的增强 JavaScript 和 WebAssembly 性能*](https://blogs.windows.com/msedgedev/2018/06/19/improved-javascript-webassembly-performance-edgehtml-17/#I4vzUJK2va54kSWl.97)。
+查看改 [进的 JavaScript 和 EdgeHTML 17 中改进的 JavaScript 和 WebAssembly 性能](https://blogs.windows.com/msedgedev/2018/06/19) ，了解所有详细信息。  
 
 ### 媒体元素
 
-EdgeHTML 17 包括对[HTMLMediaElement](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement)的更新，包括：
-* `preload`元素上的新属性 [`<media>`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement) 指示应预加载的数据。
-* 添加 [`setSinkId()`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId) 方法和 [`sinkId`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId) 属性使开发人员可以选择音频输出设备。 （**注意**：在 RTC 中尚不 avaiable）
+Microsoft EdgeHTML 17 包括 [对 HTMLMediaElement 的更新，](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement) 包括：  
 
-### 媒体捕获 API 
-Microsoft Edge 现在通过[媒体捕获 API](https://w3c.github.io/mediacapture-screen-share/)在 RTC 中支持屏幕捕获。 此功能允许网页捕获用户的显示设备的输出，通常用于广播桌面，用于插件免费的虚拟会议或演示文稿
+*   元素 `preload` 上的新 [`<media>`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement) 属性指示应该预加载哪些数据。
+*   添加方法和属性 [`setSinkId()`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId) 将 [`sinkId`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId) 允许开发人员选择音频输出设备。  
+    
+    > [!NOTE]
+    > 尚未在 RTC 中提供。  
+    
+### 媒体捕获 API  
 
-### 渐进式 Web 应用
-从 EdgeHTML 17 开始，"服务工作人员" 和 "推送通知" 默认情况下处于启用状态（了解有关博客文章服务工作人员中的这些功能的详细信息[：转到页面之外](https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/)。 这将完成在 Windows 10 上展示累进 Web 应用（PWAs）的技术基础的一系列技术（包括提取网络和推送和缓存 Api）。
+Microsoft Edge 现在通过媒体捕获 API 支持 RTC [的屏幕截图屏幕截图](https://w3c.github.io/mediacapture-screen-share)。  此功能允许网页捕获用户的显示设备输出，通常用于针对无触传的虚拟会议或演示广播桌面。  
 
-PWAs 是一种 web 应用，可在支持平台和浏览器引擎（如安装/主屏幕启动、脱机支持和推送通知）的情况下[逐渐增强](https://en.wikipedia.org/wiki/Progressive_enhancement)。 在使用 Microsoft Edge （EdgeHTML）引擎的 Windows 10 上，PWAs 将独立于浏览器窗口运行的额外优势视为[通用 Windows 平台](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp)应用。
+### 渐进式 Web 应用  
 
-除了 PWAs，服务工作者和缓存 API 使开发人员能够从缓存中截获网络请求和响应。 网站甚至不需要是完整的 web 应用，即可利用服务工作人员缓存实现 tined 页面加载性能和可靠性，以及在没有 internet 或质量连接期间提供脱机体验的功能。  
+从 EdgeHTML 17 开始，默认启用服务工作者和推送通知，模板将默认启用 \ (了解有关博客文章服务工作者中的以下功能 [的更多信息：除了页面](https://blogs.windows.com/msedgedev/2017/12/19)) 。  这将完成一套技术 \ (，包括获取网络以及 Push 和 Cache API\) （它依循 Windows 10 上的渐进式 Web 应用 \ (PWA\) ）进行技术基付。  
 
-转到我们[的 windows 文档上的渐进式 Web 应用](../../progressive-web-apps-edgehtml/index.md)，了解有关服务工作者的更多信息以及有关 Windows 10 上的 PWAs 的详细信息。
+PWA 是仅通过支持平台和浏览器[progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement)引引器上的本机应用（如安装/主屏幕启动、脱机支持和推送通知）上的本机应用功能进行逐步增进的 Web 应用。  在带有 Microsoft Edge \ (EdgeHTML\) 引荐的 Windows 10 上，PWA 享受以通用 Windows 平台应用单独运行浏览器窗口 [的优](/windows/uwp/get-started/whats-a-uwp) 势。  
 
-### Web 安全
-EdgeHTML 17 引入了对子资源完整性（斯里兰卡）的支持。 [子资源完整性](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity)是一种 secuirty 功能，允许浏览器验证提取的资源（如图像、脚本、字体等）是否在没有意外操作的情况下传递。 
+除 PWA、服务工作者和缓存 API 外，开发人员还可以从缓存中捕获网络请求和从缓存中进行响应。  网站甚至不需要充分利用服务 Worker 缓存进行细化页面加载性能和可靠性，网站在没有 Internet 连接或质量较差的连接期内提供脱机体验的能力。  
 
-添加一个 `integrity` 属性，其中包含你希望在网页上加载的资源的加密哈希表示形式 `<script>` `<link>` ，如下面的示例所示。 然后，Microsoft Edge 会将所请求的资源与属性中定义的哈希进行比较 `integrity` 。 如果它们不匹配，Microsoft Edge 将不会执行资源，并向网络返回一个错误。
+访问 Windows 上的渐进 [式 Web 应用，](../../progressive-web-apps-edgehtml/index.md) 了解有关在 Windows 10 中服务工作者和有关 PWA 的详细信息。  
+
+### Web 安全性  
+
+EdgeHTML 17 引入了对子资源完整性 \ (SRI\) 。  [子资源完整性是](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) 一项安全功能，允许浏览器验证是否提供了资源 \ (如图像、脚本、字体等\) ，但不预期的操作。  
+
+添加一种包含预期将在网页上加载到或元素的资源 `integrity` 加密哈代表示的 `<script>` `<link>` 属性，如下例所示。  然后，Microsoft Edge 会将请求的资源与该属性中定义的 `integrity` 哈值进行比较。  如果它们不匹配，Microsoft Edge 将不执行该资源，并向网络返回错误。  
 
 ```html
 <script src="https://example.com/example-framework.js" 
         integrity="sha384-Li9vy3DqF8tnTXuiaAJuML3ky+er10rcgNR/VqsVpcw+ThHmYcwiB1pbOxEbzJr7" 
         crossorigin="anonymous"></script>
-```
+```  
 
-另外，EdgeHTML 17 中的新增功能是不[安全的请求](https://developer.mozilla.org/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests)请求标头，允许浏览器请求安全浏览体验。 此标题指示服务器浏览器支持升级任何不安全的请求，并且用户应被重定向到网站的安全版本（如果可用）。
+同样在 EdgeHTML 17 中加新增功能， [使用升级-Insecure-Requests](https://developer.mozilla.org/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests) 请求标头请求笔记本请求安全浏览体验。  此头注重指示浏览器支持升级任何不安全的请求，应将用户重定向到安全版本的网站（如果可用）。  
 
 ### 可变字体
-EdgeHTML 17 中提供了对可变字体（包括 CSS[字体、变体设置](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)和[字体大小调整](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)）的完全支持。 利用可变字体，开发人员可以通过调整各种坐标轴来实现外观不同的字体外观，从而减少对多个字体文件和 bettering 性能的需求。
+对可变字体的完整支持 \ (包括 CSS [字体变体设置](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) 和 [font-optical-sizing](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)\) 在 EdgeHTML 17 中可用。  可变字体使开发人员能够通过调整各种语言来实现通过单个字体看起来有所不同字样的外观 - 减少了对多个字体文件的需求并更好地实现性能。  
 
-加入我们的[expedition，了解哪些可变字体提供 web 开发人员和设计器](https://developer.microsoft.com/microsoft-edge/testdrive/demos/variable-fonts/)，以及如何在您的网站上使用它们。 在博客文章中阅读有关可变字体的详细信息，[使具有可变字体的 Microsoft Edge 具有富于表现力和性能的版式](https://blogs.windows.com/msedgedev/2018/03/13/bringing-expressive-performant-typography-to-microsoft-edge-with-variable-fonts/)。
+通过将 [可变字体与我们进行合作，了解哪些](https://developer.microsoft.com/microsoft-edge/testdrive/demos/variable-fonts)字体为 Web 开发人员和设计者提供，以及如何在您的网站上使用这些变量。  阅读有关博客文章中的变量字体的详细信息，将明确 [的版](https://blogs.windows.com/msedgedev/2018/03/13)式呈现给 Microsoft Edge 使用变量字体。  
 
-<iframe height='456' scrolling='no' title='可变 Tides 票证示例' src='//codepen.io/MSEdgeDev/embed/dmYvWg/?height=456&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>请参阅 <a href='https://codepen.io/MSEdgeDev/pen/dmYvWg/'> </a> CodePen 上的 MSEdgeDev （ <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev </a> ）中的 <a href='https://codepen.io'> 笔变量 Tides 票证示例 </a> 。</iframe>
+<iframe height='456' scrolling='no' title='变量 Tides 票面示例' src='//codepen.io/MSEdgeDev/embed/dmYvWg/?height=456&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>请参阅 <a href='https://codepen.io/MSEdgeDev/pen/dmYvWg/'> MSEdgeDev 在 CodePen 上按 </a> MSEdgeDev 设置 <a href='https://codepen.io/MSEdgeDev'> 的 </a> (@MSEdgeDev) <a href='https://codepen.io'> 笔描述信息 </a> 。</iframe>  
 
-## EdgeHTML 17 中的新 Api
+## EdgeHTML 17 中的新 API  
 
-下面是 EdgeHTML 17 中新 Api 的完整列表。 它们以 [界面名称] 的格式列出。[api 名称]。
+下面是 EdgeHTML 17 中的新 API 的完整列表。  它们以格式列出 `[interface name].[api name]` 。  
 
 > [!NOTE] 
-> 虽然在 DOM 中公开以下 Api，但某些 Api 的端到端行为可能仍在开发中。 请参阅[Microsoft Edge 平台状态](https://developer.microsoft.com/microsoft-edge/platform/status/)，了解有关功能支持的官方 word 功能。
+> 尽管以下 API 在 DOM 中公开，但某些 API 的端到端行为可能仍在开发中。  若要了解  [功能支持的正](https://developer.microsoft.com/microsoft-edge/platform/status) 式字词，请参考 Microsoft Edge 平台状态。  
 
-<iframe height='580' scrolling='no' title='EdgeHTML 17 中的新 Api' src='//codepen.io/MSEdgeDev/embed/pLxgdj/?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>请参阅 <a href='https://codepen.io/MSEdgeDev/pen/pLxgdj/'> CodePen 上的 EdgeHTML 17 </a> MSEdgeDev （ <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev）中 </a> 的笔新 api <a href='https://codepen.io'> </a> 。</iframe>
+<iframe height='580' scrolling='no' title='EdgeHTML 17 中的新 API' src='//codepen.io/MSEdgeDev/embed/pLxgdj/?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>在 <a href='https://codepen.io/MSEdgeDev/pen/pLxgdj/'> CodePen 上查看 </a> MicrosoftEdgeDev 代码的 MsEdgeDev 函数 <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev) <a href='https://codepen.io'> 笔新 </a> API。</iframe>  
 
 > [!TIP]
-> 我们已与其他浏览器和 web 社区[合作](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/)，采用[MDN web 文档](https://developer.mozilla.org/)作为针对当前和新兴的基于标准的 web 技术的有用、无偏差、不限浏览器的文档。 你可以直接在[MDN web 引用库](https://developer.mozilla.org/docs/Web)的每个页面中找到有关 EdgeHTML API 支持的详细信息。 有关 Microsoft Edge 中支持的最新功能，请访问 Microsoft Edge 的[平台状态](https://developer.microsoft.com/microsoft-edge/platform/status/?q=edge%3AShipped%20edge%3APrefixed%20edge%3A'Preview%20Release)。 
+> 我们已 [与](https://blogs.windows.com/msedgedev/2017/10/18) 其他浏览器和 Web 社区合作，是关于当前和新兴基于 [标准](https://developer.mozilla.org) 的 Web 技术的有用不当安全的、不依自浏览器的常用文档。  可以在 MDN Web 参考库的每个页面中直接找到有关 [EdgeHTML API 支持的详细信息](https://developer.mozilla.org/docs/Web)。  访问 Microsoft Edge 中支持 [的最新](https://developer.microsoft.com/microsoft-edge/status) 功能的 Microsoft Edge 平台状态。  
 
-## 以前的 EdgeHTML 版本
+## 以前的 EdgeHTML 版本  
 
-[EdgeHTML 13/Windows 内部版本10586（11/2015）](https://aka.ms/devguide_edgehtml_13)
+[EdgeHTML 13 / Windows 版本 10586 (11/2015 版) ](https://aka.ms/devguide_edgehtml_13)  
 
-[EdgeHTML 14/Windows 内部版本14393（8/2016）](https://aka.ms/devguide_edgehtml_14)
+[EdgeHTML 14/Windows 内部版本 14393 (，8) ](https://aka.ms/devguide_edgehtml_14)  
 
-[EdgeHTML 15/Windows 内部版本15063（4/2017）](https://aka.ms/devguide_edgehtml_15)
+[EdgeHTML 15 /Windows 内部版本 15063 (4/2017) ](https://aka.ms/devguide_edgehtml_15)  
 
-[EdgeHTML 16/Windows 内部版本16299（10/2017）](https://aka.ms/devguide_edgehtml_16)
+[EdgeHTML 16 /Windows 版本 16299 (10/2017 年 10 月 10 日) ](https://aka.ms/devguide_edgehtml_16)  
