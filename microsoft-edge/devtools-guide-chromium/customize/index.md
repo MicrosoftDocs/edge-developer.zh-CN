@@ -2,16 +2,16 @@
 title: 自定义 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f34f2e3c02b0c66ee02f4810827f3adb51a60abc
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: e726b7f3f6245cb6f6798669c73fb14718542baa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882742"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982349"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,104 +31,99 @@ ms.locfileid: "10882742"
 
 
 
-# <span data-ttu-id="ba41e-103">自定义 Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="ba41e-103">Customize Microsoft Edge DevTools</span></span>   
+# <span data-ttu-id="a3800-103">自定义 Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="a3800-103">Customize Microsoft Edge DevTools</span></span>   
 
   
 
-<span data-ttu-id="ba41e-104">此页面列出了自定义 Microsoft Edge DevTools 的方法。</span><span class="sxs-lookup"><span data-stu-id="ba41e-104">This page lists the ways to customize Microsoft Edge DevTools.</span></span>  
+<span data-ttu-id="a3800-104">此页面列出了自定义 Microsoft Edge DevTools 的方法。</span><span class="sxs-lookup"><span data-stu-id="a3800-104">This page lists the ways to customize Microsoft Edge DevTools.</span></span>  
 
-## <span data-ttu-id="ba41e-105">“设置”</span><span class="sxs-lookup"><span data-stu-id="ba41e-105">Settings</span></span>   
+## <span data-ttu-id="a3800-105">“设置”</span><span class="sxs-lookup"><span data-stu-id="a3800-105">Settings</span></span>   
 
-<span data-ttu-id="ba41e-106">**设置**  > **首选项**包含用于自定义 DevTools 的许多选项。</span><span class="sxs-lookup"><span data-stu-id="ba41e-106">**Settings** > **Preferences** contains many options for customizing DevTools.</span></span>  
+<span data-ttu-id="a3800-106">**设置**  > **首选项**包含用于自定义 DevTools 的许多选项。</span><span class="sxs-lookup"><span data-stu-id="a3800-106">**Settings** > **Preferences** contains many options for customizing DevTools.</span></span>  
 
-<span data-ttu-id="ba41e-107">若要打开 "设置"，请执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="ba41e-107">To open Settings, do one of the following:</span></span>  
+<span data-ttu-id="a3800-107">若要打开 "设置"，请执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="a3800-107">To open Settings, do one of the following:</span></span>  
 
-*   <span data-ttu-id="ba41e-108">`F1`当 DevTools 处于焦点时按下。</span><span class="sxs-lookup"><span data-stu-id="ba41e-108">Press `F1` while DevTools is in focus.</span></span>  
-*   <span data-ttu-id="ba41e-109">打开**主菜单**，然后选择 "**设置**"。</span><span class="sxs-lookup"><span data-stu-id="ba41e-109">Open the **Main Menu** and then select **Settings**.</span></span>  
+*   <span data-ttu-id="a3800-108">`F1`当 DevTools 处于焦点时按下。</span><span class="sxs-lookup"><span data-stu-id="a3800-108">Press `F1` while DevTools is in focus.</span></span>  
+*   <span data-ttu-id="a3800-109">打开 **主菜单** ，然后选择 " **设置**"。</span><span class="sxs-lookup"><span data-stu-id="a3800-109">Open the **Main Menu** and then select **Settings**.</span></span>  
+    
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="设置" lightbox="../media/customize-settings-preferences.msft.png":::
+       **<span data-ttu-id="a3800-111">设置</span><span class="sxs-lookup"><span data-stu-id="a3800-111">Settings</span></span>**  
+    :::image-end:::  
+    
+## <span data-ttu-id="a3800-112">箱</span><span class="sxs-lookup"><span data-stu-id="a3800-112">Drawer</span></span>   
 
-> ##### <span data-ttu-id="ba41e-110">图 1</span><span class="sxs-lookup"><span data-stu-id="ba41e-110">Figure 1</span></span>  
-> <span data-ttu-id="ba41e-111">设置</span><span class="sxs-lookup"><span data-stu-id="ba41e-111">Settings</span></span>  
-> ![设置][ImageSettings]  
+<span data-ttu-id="a3800-113">**抽屉**包含许多隐藏的功能。</span><span class="sxs-lookup"><span data-stu-id="a3800-113">The **Drawer** contains many hidden features.</span></span>  
 
-## <span data-ttu-id="ba41e-113">箱</span><span class="sxs-lookup"><span data-stu-id="ba41e-113">Drawer</span></span>   
+<span data-ttu-id="a3800-114">按 " `Escape` 打开" 或 "关闭" **抽屉**。</span><span class="sxs-lookup"><span data-stu-id="a3800-114">Press `Escape` to open or close the **Drawer**.</span></span>  
 
-<span data-ttu-id="ba41e-114">**抽屉**包含许多隐藏的功能。</span><span class="sxs-lookup"><span data-stu-id="ba41e-114">The **Drawer** contains many hidden features.</span></span>  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="抽屉" lightbox="../media/customize-drawer-open.msft.png":::
+   <span data-ttu-id="a3800-116">**抽屉**</span><span class="sxs-lookup"><span data-stu-id="a3800-116">The **Drawer**</span></span>  
+:::image-end:::  
 
-<span data-ttu-id="ba41e-115">按 " `Escape` 打开" 或 "关闭" 抽屉。</span><span class="sxs-lookup"><span data-stu-id="ba41e-115">Press `Escape` to open or close the Drawer.</span></span>  
+<span data-ttu-id="a3800-117">单击 " **更多** \ (![ 更多 ][ImageMoreIcon] \ ) " 以打开其他 **抽屉** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="a3800-117">Click **More** \(![More][ImageMoreIcon]\) to open other **Drawer** tabs.</span></span>  
 
-> ##### <span data-ttu-id="ba41e-116">图 2</span><span class="sxs-lookup"><span data-stu-id="ba41e-116">Figure 2</span></span>  
-> <span data-ttu-id="ba41e-117">抽屉</span><span class="sxs-lookup"><span data-stu-id="ba41e-117">The Drawer</span></span>  
-> ![抽屉][ImageDrawerExample]  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开抽屉选项卡的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   <span data-ttu-id="a3800-119">用于打开 **抽屉** 选项卡的按钮</span><span class="sxs-lookup"><span data-stu-id="a3800-119">The button to open **Drawer** tabs</span></span>  
+:::image-end:::  
 
-<span data-ttu-id="ba41e-119">单击 "**更** ![ 多" ][ImageMoreIcon] 以打开其他抽屉选项卡。</span><span class="sxs-lookup"><span data-stu-id="ba41e-119">Click **More** ![More][ImageMoreIcon]  to open other Drawer tabs.</span></span>  
+## <span data-ttu-id="a3800-120">重新排序面板</span><span class="sxs-lookup"><span data-stu-id="a3800-120">Reorder panels</span></span>   
 
-> ##### <span data-ttu-id="ba41e-120">图 3</span><span class="sxs-lookup"><span data-stu-id="ba41e-120">Figure 3</span></span>  
-> <span data-ttu-id="ba41e-121">用于打开抽屉卡舌的按钮</span><span class="sxs-lookup"><span data-stu-id="ba41e-121">The button for opening Drawer tabs</span></span>  
-> ![用于打开抽屉卡舌的按钮][ImageMoreDrawerTabs]  
-
-## <span data-ttu-id="ba41e-123">重新排序面板</span><span class="sxs-lookup"><span data-stu-id="ba41e-123">Reorder panels</span></span>   
-
-<span data-ttu-id="ba41e-124">单击并拖动 "面板" 选项卡以更改其排序。</span><span class="sxs-lookup"><span data-stu-id="ba41e-124">Click and drag a panel tab to change its ordering.</span></span>  <span data-ttu-id="ba41e-125">您的自定义 tab 键顺序在 DevTools 会话中保持不变。</span><span class="sxs-lookup"><span data-stu-id="ba41e-125">Your custom tab order persists across DevTools sessions.</span></span>  
+<span data-ttu-id="a3800-121">单击并拖动 "面板" 选项卡以更改其排序。</span><span class="sxs-lookup"><span data-stu-id="a3800-121">Click and drag a panel tab to change its ordering.</span></span>  <span data-ttu-id="a3800-122">您的自定义 tab 键顺序在 DevTools 会话中保持不变。</span><span class="sxs-lookup"><span data-stu-id="a3800-122">Your custom tab order persists across DevTools sessions.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="ba41e-126">默认情况下，"网络面板" 选项卡通常是从左侧起的第四个选项卡。</span><span class="sxs-lookup"><span data-stu-id="ba41e-126">By default, the Network panel tab is usually the fourth from the left.</span></span>  <span data-ttu-id="ba41e-127">在[图 4](#figure-4)中，它是第一个左侧。</span><span class="sxs-lookup"><span data-stu-id="ba41e-127">In [Figure 4](#figure-4), it is the first from the left.</span></span>  
+> <span data-ttu-id="a3800-123">默认情况下，" **网络** 面板" 选项卡通常是从左侧起的第四个选项卡。</span><span class="sxs-lookup"><span data-stu-id="a3800-123">By default, the **Network** panel tab is usually the fourth from the left.</span></span>  <span data-ttu-id="a3800-124">在下图中，" **网络** " 面板是第一个左侧的面板。</span><span class="sxs-lookup"><span data-stu-id="a3800-124">In the following figure, the **Network** panel is the first from the left.</span></span>  
 
-> ##### <span data-ttu-id="ba41e-128">图 4</span><span class="sxs-lookup"><span data-stu-id="ba41e-128">Figure 4</span></span>  
-> <span data-ttu-id="ba41e-129">具有自定义 tab 键顺序的 DevTools 窗口</span><span class="sxs-lookup"><span data-stu-id="ba41e-129">A DevTools window with a custom tab ordering</span></span>    
-> ![具有自定义面板选项卡排序的 DevTools 窗口][ImageCustomTabOrdering]  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="具有自定义面板选项卡排序的 DevTools 窗口" lightbox="../media/customize-network-first-position.msft.png":::
+   <span data-ttu-id="a3800-126">具有自定义面板选项卡排序的 DevTools 窗口</span><span class="sxs-lookup"><span data-stu-id="a3800-126">A DevTools window with a custom panel tab ordering</span></span>  
+:::image-end:::  
 
-## <span data-ttu-id="ba41e-131">更改 DevTools 位置</span><span class="sxs-lookup"><span data-stu-id="ba41e-131">Change DevTools placement</span></span>   
+## <span data-ttu-id="a3800-127">更改 DevTools 位置</span><span class="sxs-lookup"><span data-stu-id="a3800-127">Change DevTools placement</span></span>   
 
-<span data-ttu-id="ba41e-132">请参阅[Microsoft Edge DevTools 放置][DevToolsPlacement]。</span><span class="sxs-lookup"><span data-stu-id="ba41e-132">See [Microsoft Edge DevTools Placement][DevToolsPlacement].</span></span>  
+<span data-ttu-id="a3800-128">请参阅 [Microsoft Edge DevTools 放置][DevToolsPlacement]。</span><span class="sxs-lookup"><span data-stu-id="a3800-128">See [Microsoft Edge DevTools Placement][DevToolsPlacement].</span></span>  
 
-> ##### <span data-ttu-id="ba41e-133">图 5</span><span class="sxs-lookup"><span data-stu-id="ba41e-133">Figure 5</span></span>  
-> <span data-ttu-id="ba41e-134">取消停靠 DevTools</span><span class="sxs-lookup"><span data-stu-id="ba41e-134">Undocked DevTools</span></span>  
-> ![取消停靠 DevTools][ImageUndock]  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="取消停靠 DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   <span data-ttu-id="a3800-130">取消停靠 DevTools</span><span class="sxs-lookup"><span data-stu-id="a3800-130">Undocked DevTools</span></span>  
+:::image-end:::  
 
-## <span data-ttu-id="ba41e-136">深色主题</span><span class="sxs-lookup"><span data-stu-id="ba41e-136">Dark theme</span></span>   
+## <span data-ttu-id="a3800-131">深色主题</span><span class="sxs-lookup"><span data-stu-id="a3800-131">Dark theme</span></span>   
 
-<span data-ttu-id="ba41e-137">请参阅[启用深色主题][DarkTheme]。</span><span class="sxs-lookup"><span data-stu-id="ba41e-137">See [Enable Dark Theme][DarkTheme].</span></span>  
+<span data-ttu-id="a3800-132">请参阅 [启用深色主题][DarkTheme]。</span><span class="sxs-lookup"><span data-stu-id="a3800-132">See [Enable Dark Theme][DarkTheme].</span></span>  
 
-> ##### <span data-ttu-id="ba41e-138">图 6</span><span class="sxs-lookup"><span data-stu-id="ba41e-138">Figure 6</span></span>  
-> <span data-ttu-id="ba41e-139">深色主题</span><span class="sxs-lookup"><span data-stu-id="ba41e-139">The dark theme</span></span>  
-> ![深色主题][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="深色主题" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   <span data-ttu-id="a3800-134">深色主题</span><span class="sxs-lookup"><span data-stu-id="a3800-134">The dark theme</span></span>  
+:::image-end:::  
 
-## <span data-ttu-id="ba41e-141">试验</span><span class="sxs-lookup"><span data-stu-id="ba41e-141">Experiments</span></span>   
+## <span data-ttu-id="a3800-135">试验</span><span class="sxs-lookup"><span data-stu-id="a3800-135">Experiments</span></span>   
 
-<span data-ttu-id="ba41e-142">要启用 DevTools 实验，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="ba41e-142">To enable DevTools experiments:</span></span>  
+<span data-ttu-id="a3800-136">若要启用 DevTools 试验，请完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="a3800-136">To enable DevTools experiments, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="ba41e-143">转到 `edge://flags/#enable-devtools-experiments` 。</span><span class="sxs-lookup"><span data-stu-id="ba41e-143">Go to `edge://flags/#enable-devtools-experiments`.</span></span>  
-1.  <span data-ttu-id="ba41e-144">单击**启用**。</span><span class="sxs-lookup"><span data-stu-id="ba41e-144">Click **Enable**.</span></span>  
-1.  <span data-ttu-id="ba41e-145">单击页面底部的 "**立即重新启动**"。</span><span class="sxs-lookup"><span data-stu-id="ba41e-145">Click **Relaunch Now**, at the bottom of the page.</span></span>  
+1.  <span data-ttu-id="a3800-137">转到 `edge://flags/#enable-devtools-experiments` 。</span><span class="sxs-lookup"><span data-stu-id="a3800-137">Go to `edge://flags/#enable-devtools-experiments`.</span></span>  
+1.  <span data-ttu-id="a3800-138">单击**启用**。</span><span class="sxs-lookup"><span data-stu-id="a3800-138">Click **Enable**.</span></span>  
+1.  <span data-ttu-id="a3800-139">单击页面底部的 " **立即重新启动**"。</span><span class="sxs-lookup"><span data-stu-id="a3800-139">Click **Relaunch Now**, at the bottom of the page.</span></span>  
 
-<span data-ttu-id="ba41e-146">下次打开 DevTools 时，将在 "[设置](#settings)" 中显示一个名为 "**实验**" 的新页面。</span><span class="sxs-lookup"><span data-stu-id="ba41e-146">The next time you open DevTools, a new page is displayed called **Experiments** in [Settings](#settings).</span></span>  
+<span data-ttu-id="a3800-140">下次打开 DevTools 时，将在 "[设置](#settings)" 中显示一个名为 "**实验**" 的新页面。</span><span class="sxs-lookup"><span data-stu-id="a3800-140">The next time you open DevTools, a new page is displayed called **Experiments** in [Settings](#settings).</span></span>  
 
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageMoreIcon]: /microsoft-edge/devtools-guide-chromium/media/more-icon.msft.png  
-
-[ImageSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences.msft.png "图1：设置"  
-[ImageDrawerExample]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open.msft.png "图2：抽屉"  
-[ImageMoreDrawerTabs]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open-more-tools.msft.png "图3：用于打开抽屉卡舌的按钮"  
-[ImageCustomTabOrdering]: /microsoft-edge/devtools-guide-chromium/media/customize-network-first-position.msft.png "图4：具有自定义面板选项卡排序的 DevTools 窗口"  
-[ImageUndock]: /microsoft-edge/devtools-guide-chromium/media/customize-dev-tools-dock-side.msft.png "图5：未插接 DevTools"  
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-appearance-theme.msft.png "图6：深色主题"  
+[ImageMoreIcon]: ../media/more-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "更改 Microsoft Edge DevTools 位置（"取消停靠"、"停靠到底部"、"停靠到左侧"）"  
-[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "在 Microsoft Edge DevTools 中启用深色主题"  
+[DevToolsPlacement]: ./placement.md "更改 Microsoft Edge DevTools 位置 |Microsoft 文档"  
+[DarkTheme]: ./dark-theme.md "在 Microsoft Edge DevTools 中启用深色主题 |Microsoft 文档"  
 
 > [!NOTE]
-> <span data-ttu-id="ba41e-155">此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="ba41e-155">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="ba41e-156">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。</span><span class="sxs-lookup"><span data-stu-id="ba41e-156">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="a3800-143">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="a3800-143">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="a3800-144">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="a3800-144">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-<span data-ttu-id="ba41e-158">此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="ba41e-158">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+<span data-ttu-id="a3800-146">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="a3800-146">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
