@@ -2,16 +2,16 @@
 title: 通过 Microsoft Edge DevTools 替代地理位置
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 307064bedf992e528b6d79eed3a2ade3367830d4
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607438"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981821"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,40 +39,37 @@ ms.locfileid: "10607438"
 
 <!--todo: add link to user location section when available -->  
 
-如果你正在生成根据用户所在位置而更改的 UI，你可能需要确保网站在世界各地的不同位置正确运行。  要在 Microsoft Edge DevTools 中替代您的地理位置，请执行以下操作：  
+如果你正在生成根据用户所在位置而更改的 UI，你可能需要确保网站在世界各地的不同位置正确运行。  若要在 Microsoft Edge DevTools 中替代您的地理位置，请完成以下操作。  
 
-1.  按 `Control` + `Shift` + `P` \ （Windows \）或 `Command` + `Shift` + `P` \ （macOS \）打开 "**命令" 菜单**。  
+1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
     
-    > ##### 图 1  
-    > 命令菜单  
-    > ![命令菜单][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       **命令菜单**  
+    :::image-end:::  
     
-1.  键入 `sensors` ，选择 "**显示传感器**"，然后按 `Enter` 。  "**传感器**" 选项卡将在 DevTools 窗口底部打开。  
-1.  从 "**地理**位置" 列表中，选择其中一个预设城市，例如 `Tokyo` ，或选择 "**自定义位置**" 以输入自定义经度和纬度坐标，或选择 "**位置不可用**" 以查看当用户位置不可用时您的网站的行为。  
+1.  键入 `sensors` ，选择 " **显示传感器**"，然后按 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
+1.  从 " **地理** 位置" 列表中，选择其中一个预设城市，例如 `Tokyo` ，或选择 " **自定义位置** " 以输入自定义经度和纬度坐标，或选择 " **位置不可用** " 以查看当用户位置不可用时您的网站的行为。  
     
-    > ##### 图 2  
-    > `Tokyo`从 "**地理位置**" 列表中选择  
-    > ![从 "地理位置" 列表中选择东京][ImageGeolocationTokyo]  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="从 "地理位置" 列表中选择 "东京"" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       `Tokyo`从 "**地理位置**" 列表中选择  
+    :::image-end:::  
     
-<!--## Feedback   
+<!--  
+## Feedback   
 
-  -->  
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "图1：命令菜单"  
-[ImageGeolocationTokyo]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-geolocation-tokyo.msft.png "图2：从 "地理位置" 列表中选择东京"  
+  
+-->  
 
 <!-- links -->  
 
 <!--[WebFundamentalsNativeHardwareUserLocationIndex]: /web/fundamentals/native-hardware/user-location/index "User Location"  -->  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

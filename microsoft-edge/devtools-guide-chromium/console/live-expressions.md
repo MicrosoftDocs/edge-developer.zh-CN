@@ -2,16 +2,16 @@
 title: 实时监视 JavaScript 表达式值和实时表达式
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c388e44ca5507dd88ad9ad7b7ee985e658dfc569
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 39a7967a7dd1d0b34eb802d2879e04a64afd0dd0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601738"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982232"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,18 +35,18 @@ ms.locfileid: "10601738"
 
   
 
-如果您发现自己在控制台中重复键入相同的 JavaScript 表达式，您可能会发现创建**实时表达式**变得更容易。  使用**实时表达式**，您只需要键入一个表达式，然后将其固定到您的控制台顶部。  表达式的值几乎实时更新。  
+如果您发现自己在控制台中重复键入相同的 JavaScript 表达式，您可能会发现创建 **实时表达式**变得更容易。  使用 **实时表达式** ，您只需要键入一个表达式，然后将其固定到您的控制台顶部。  表达式的值几乎实时更新。  
 
 ## 创建实时表达式   
 
 1.  [打开控制台][DevToolsConsoleReferenceOpenConsole]。  
-1.  单击 "**创建实时表达式**" ![ 创建实时表达式 ][ImageCreateLiveExpressionIcon] 。  将显示 "**活动表达式**" 文本框。  
+1.  单击 " **创建实时表达式** \ (![ 创建实时表达式 ][ImageCreateLiveExpressionIcon] \ ) "。  将显示 " **活动表达式** " 文本框。  
     
-    > ##### 图 1  
-    > `document.activeElement`在 "**活动表达式**" 文本框中键入  
-    > ![在 "活动表达式" 文本框中键入 activeElement][ImageLiveExpressionTextbox]  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="在 "活动表达式" 文本框中键入 activeElement" lightbox="../media/console-create-live-expression.msft.png":::
+       `document.activeElement`在 "**活动表达式**" 文本框中键入  
+    :::image-end:::  
     
-1.  键入 `Control` + `Enter` \ （Windows \）或 `Command` + `Enter` \ （macOS \）保存表达式，或单击 "**实时表达式**" 文本框外部。  
+1.  键入 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 保存表达式，或在 "**实时表达式**" 文本框外单击。  
 
 <!--todo: add reference open console (open the console) section when available  -->  
 
@@ -56,20 +56,18 @@ ms.locfileid: "10601738"
 
 <!-- image links -->  
 
-[ImageCreateLiveExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpressionTextbox]: /microsoft-edge/devtools-guide-chromium/media/console-create-live-expression.msft.png "图1：在 "活动表达式" 文本框中键入 activeElement"  
+[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console "打开控制台参考"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "打开控制台-控制台参考 |Microsoft 文档"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

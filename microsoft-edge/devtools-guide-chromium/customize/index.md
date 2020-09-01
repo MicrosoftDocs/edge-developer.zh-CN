@@ -2,16 +2,16 @@
 title: 自定义 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f34f2e3c02b0c66ee02f4810827f3adb51a60abc
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: e726b7f3f6245cb6f6798669c73fb14718542baa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882742"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982349"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,91 +44,86 @@ ms.locfileid: "10882742"
 若要打开 "设置"，请执行下列操作之一：  
 
 *   `F1`当 DevTools 处于焦点时按下。  
-*   打开**主菜单**，然后选择 "**设置**"。  
-
-> ##### 图 1  
-> 设置  
-> ![设置][ImageSettings]  
-
+*   打开 **主菜单** ，然后选择 " **设置**"。  
+    
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="设置" lightbox="../media/customize-settings-preferences.msft.png":::
+       **设置**  
+    :::image-end:::  
+    
 ## 箱   
 
 **抽屉**包含许多隐藏的功能。  
 
-按 " `Escape` 打开" 或 "关闭" 抽屉。  
+按 " `Escape` 打开" 或 "关闭" **抽屉**。  
 
-> ##### 图 2  
-> 抽屉  
-> ![抽屉][ImageDrawerExample]  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="抽屉" lightbox="../media/customize-drawer-open.msft.png":::
+   **抽屉**  
+:::image-end:::  
 
-单击 "**更** ![ 多" ][ImageMoreIcon] 以打开其他抽屉选项卡。  
+单击 " **更多** \ (![ 更多 ][ImageMoreIcon] \ ) " 以打开其他 **抽屉** 选项卡。  
 
-> ##### 图 3  
-> 用于打开抽屉卡舌的按钮  
-> ![用于打开抽屉卡舌的按钮][ImageMoreDrawerTabs]  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开抽屉选项卡的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   用于打开 **抽屉** 选项卡的按钮  
+:::image-end:::  
 
 ## 重新排序面板   
 
 单击并拖动 "面板" 选项卡以更改其排序。  您的自定义 tab 键顺序在 DevTools 会话中保持不变。  
 
 > [!NOTE]
-> 默认情况下，"网络面板" 选项卡通常是从左侧起的第四个选项卡。  在[图 4](#figure-4)中，它是第一个左侧。  
+> 默认情况下，" **网络** 面板" 选项卡通常是从左侧起的第四个选项卡。  在下图中，" **网络** " 面板是第一个左侧的面板。  
 
-> ##### 图 4  
-> 具有自定义 tab 键顺序的 DevTools 窗口    
-> ![具有自定义面板选项卡排序的 DevTools 窗口][ImageCustomTabOrdering]  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="具有自定义面板选项卡排序的 DevTools 窗口" lightbox="../media/customize-network-first-position.msft.png":::
+   具有自定义面板选项卡排序的 DevTools 窗口  
+:::image-end:::  
 
 ## 更改 DevTools 位置   
 
-请参阅[Microsoft Edge DevTools 放置][DevToolsPlacement]。  
+请参阅 [Microsoft Edge DevTools 放置][DevToolsPlacement]。  
 
-> ##### 图 5  
-> 取消停靠 DevTools  
-> ![取消停靠 DevTools][ImageUndock]  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="取消停靠 DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   取消停靠 DevTools  
+:::image-end:::  
 
 ## 深色主题   
 
-请参阅[启用深色主题][DarkTheme]。  
+请参阅 [启用深色主题][DarkTheme]。  
 
-> ##### 图 6  
-> 深色主题  
-> ![深色主题][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="深色主题" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   深色主题  
+:::image-end:::  
 
 ## 试验   
 
-要启用 DevTools 实验，请执行以下操作：  
+若要启用 DevTools 试验，请完成以下操作。  
 
 1.  转到 `edge://flags/#enable-devtools-experiments` 。  
 1.  单击**启用**。  
-1.  单击页面底部的 "**立即重新启动**"。  
+1.  单击页面底部的 " **立即重新启动**"。  
 
 下次打开 DevTools 时，将在 "[设置](#settings)" 中显示一个名为 "**实验**" 的新页面。  
 
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageMoreIcon]: /microsoft-edge/devtools-guide-chromium/media/more-icon.msft.png  
-
-[ImageSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences.msft.png "图1：设置"  
-[ImageDrawerExample]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open.msft.png "图2：抽屉"  
-[ImageMoreDrawerTabs]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open-more-tools.msft.png "图3：用于打开抽屉卡舌的按钮"  
-[ImageCustomTabOrdering]: /microsoft-edge/devtools-guide-chromium/media/customize-network-first-position.msft.png "图4：具有自定义面板选项卡排序的 DevTools 窗口"  
-[ImageUndock]: /microsoft-edge/devtools-guide-chromium/media/customize-dev-tools-dock-side.msft.png "图5：未插接 DevTools"  
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-appearance-theme.msft.png "图6：深色主题"  
+[ImageMoreIcon]: ../media/more-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "更改 Microsoft Edge DevTools 位置（"取消停靠"、"停靠到底部"、"停靠到左侧"）"  
-[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "在 Microsoft Edge DevTools 中启用深色主题"  
+[DevToolsPlacement]: ./placement.md "更改 Microsoft Edge DevTools 位置 |Microsoft 文档"  
+[DarkTheme]: ./dark-theme.md "在 Microsoft Edge DevTools 中启用深色主题 |Microsoft 文档"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

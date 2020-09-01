@@ -2,16 +2,16 @@
 title: 通过 Microsoft Edge DevTools 调试后台服务
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0ac2a057307a939069cbb3b48ecd38c9de71e5db
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 1fecd6f9c1dceb39482bf8c4ade71918e32dec00
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581829"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983262"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ ms.locfileid: "10581829"
 
 
 
-Microsoft Edge DevTools 的 "**后台服务**" 部分是用于 JavaScript api 的工具集合，可使你的网站即使在用户未打开网站时也可以发送和接收更新。  
+Microsoft Edge DevTools 的 " **后台服务** " 部分是用于 JavaScript api 的工具集合，可使你的网站即使在用户未打开网站时也可以发送和接收更新。  
 后台服务在功能上类似于 [后台进程] [WikiBackgroundProcess]。  
 Microsoft Edge DevTools 将以下每个 Api 视为后台服务：  
 
@@ -42,13 +42,13 @@ Microsoft Edge DevTools 将以下每个 Api 视为后台服务：
 *   [后台同步](#background-sync)  
 *   [通知](#notifications)  
 *   [推送邮件](#push-messages)  
-
+    
 Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 未打开也是如此。  
 这可以帮助你确保按预期发送和接收事件。  你还可以检查每个事件的详细信息。  
 
-> ##### 图 1  
-> 在 "推送消息" 窗格中查看事件的详细信息  
-> ![在 "推送消息" 窗格中查看事件的详细信息][PushDetails]  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="在 "推送消息" 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   在 " **推送消息** " 窗格中查看事件的详细信息  
+:::image-end:::  
 
 ## 后台获取   
 
@@ -57,26 +57,26 @@ Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 
 <!--Todo: add background fetch api section when available -->  
 
 1.  [打开 DevTools][OpenDevTools]。  
-1.  打开 "**应用程序**" 面板。  
-1.  打开 "**后台获取**" 窗格。  
+1.  打开 " **应用程序** " 面板。  
+1.  打开 " **后台获取** " 窗格。  
     
-    > ##### 图 2  
-    > "背景获取" 窗格  
-    > !["背景获取" 窗格][FetchEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text=""背景获取" 窗格" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+       " **背景获取** " 窗格  
+    :::image-end:::  
     
-1.  单击 "**录制** ![ 记录" ][ImageRecordIcon] 。  
+1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
    触发某些后台获取活动后，DevTools 会将事件记录到表中。  
     
-    > ##### 图 3  
-    > 后台提取窗格中的事件日志  
-    > ![后台提取窗格中的事件日志][FetchLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="后台提取窗格中的事件日志" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+       **后台提取**窗格中的事件日志  
+    :::image-end:::  
     
 1.  单击某个事件可在表下方的空间中查看其详细信息。  
     
-    > ##### 图 4  
-    > 在 "后台提取" 窗格中查看事件的详细信息  
-    > ![在 "后台提取" 窗格中查看事件的详细信息][FetchDetails]  
-
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="在 "后台提取" 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+       在 " **后台提取** " 窗格中查看事件的详细信息  
+    :::image-end:::  
+    
 ## 后台同步   
 
 **后台同步 API**使脱机**服务工作人员**能够在服务器重新建立可靠的 internet 连接后向其发送数据。  若要记录3天的后台同步事件（即使 DevTools 未打开）：  
@@ -84,104 +84,92 @@ Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 
 <!--Todo: add background sync api section when available -->  
 
 1.  [打开 DevTools][OpenDevTools]。  
-1.  打开 "**应用程序**" 面板。  
-1.  打开 "**后台同步**" 窗格。  
+1.  打开 " **应用程序** " 面板。  
+1.  打开 " **后台同步** " 窗格。  
     
-    > ##### 图 5  
-    > "后台同步" 窗格  
-    > !["后台同步" 窗格][SyncEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text=""后台同步" 窗格" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+       " **后台同步** " 窗格  
+    :::image-end:::  
     
-1.  单击 "**录制** ![ 记录" ][ImageRecordIcon] 。  
+1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
    触发某些后台同步活动后，DevTools 会将事件记录到表中。  
     
-    > ##### 图 6  
-    > "后台同步" 窗格中的事件日志  
-    > !["后台同步" 窗格中的事件日志][SyncLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text=""后台同步" 窗格中的事件日志" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+       " **后台同步** " 窗格中的事件日志  
+    :::image-end:::  
     
 1.  单击某个事件可在表下方的空间中查看其详细信息。  
     
-    > ##### 图 7  
-    > 在 "后台同步" 窗格中查看事件的详细信息  
-    > ![在 "后台同步" 窗格中查看事件的详细信息][SyncDetails]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="在 "后台同步" 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+       在 " **后台同步** " 窗格中查看事件的详细信息  
+    :::image-end:::  
     
 ## 通知 
 
 **服务工作人员**从服务器收到[推送消息][MDNPush]后，服务工作人员使用[通知 API][MDNNotifications]将数据显示给用户。  要记录3天的通知（即使 DevTools 未打开）：  
 
 1.  [打开 DevTools][OpenDevTools]。  
-1.  打开 "**应用程序**" 面板。  
-1.  打开 "**通知**" 窗格。  
+1.  打开 " **应用程序** " 面板。  
+1.  打开 " **通知** " 窗格。  
     
-    > ##### 图 8  
-    > "通知" 窗格  
-    > !["通知" 窗格][NotificationsEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text=""通知" 窗格" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+       " **通知** " 窗格  
+    :::image-end:::  
     
-1.  单击 "**录制** ![ 记录" ][ImageRecordIcon] 。  
+1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
    触发某些通知活动后，DevTools 会将事件记录到表中。  
     
-    > ##### 图 9  
-    > "通知" 窗格中的事件日志  
-    > !["通知" 窗格中的事件日志][NotificationsLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text=""通知" 窗格中的事件日志" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+       " **通知** " 窗格中的事件日志  
+    :::image-end:::  
     
 1.  单击某个事件可在表下方的空间中查看其详细信息。  
     
-    > ##### 图 10  
-    > 在 "通知" 窗格中查看事件的详细信息  
-    > ![在 "通知" 窗格中查看事件的详细信息][NotificationsDetails]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="在 "通知" 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+       在 " **通知** " 窗格中查看事件的详细信息  
+    :::image-end:::  
     
 ## 推送邮件 
 
-若要向用户显示推送通知，**服务工作人员**必须首先使用[推送消息 API][MDNPush]从服务器接收数据。  当服务工作者准备好显示通知时，它将使用[通知 API][MDNNotifications]。  若要在3天内记录推送消息，即使在 DevTools 未打开的情况下也是如此：  
+若要向用户显示推送通知， **服务工作人员** 必须首先使用 [推送消息 API][MDNPush] 从服务器接收数据。  当服务工作者准备好显示通知时，它将使用 [通知 API][MDNNotifications]。  若要在3天内记录推送消息，即使在 DevTools 未打开的情况下也是如此：  
 
 1.  [打开 DevTools][OpenDevTools]。  
-1.  打开 "**应用程序**" 面板。  
-1.  打开 "**推送消息**" 窗格。  
+1.  打开 " **应用程序** " 面板。  
+1.  打开 " **推送消息** " 窗格。  
     
-    > ##### 图 11  
-    > "推送消息" 窗格  
-    > !["推送消息" 窗格][PushEmpty]  
-
-1.  单击 "**录制** ![ 记录" ][ImageRecordIcon] 。  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text=""推送消息" 窗格" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       " **推送消息** " 窗格  
+    :::image-end:::  
+    
+1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
     触发某些推送消息活动后，DevTools 会将事件记录到表中。  
     
-    > ##### 图 12  
-    > "推送消息" 窗格中的事件日志  
-    > !["推送消息" 窗格中的事件日志][PushLog]  
-
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text=""推送消息" 窗格中的事件日志" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+       " **推送消息** " 窗格中的事件日志  
+    :::image-end:::  
+    
 1.  单击某个事件可在表下方的空间中查看其详细信息。  
     
-    > ##### 图 13  
-    > 在 "推送消息" 窗格中查看事件的详细信息  
-    > ![在 "推送消息" 窗格中查看事件的详细信息][PushDetails2]  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="在 "推送消息" 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+       在 " **推送消息** " 窗格中查看事件的详细信息  
+    :::image-end:::  
     
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-
-[PushDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "图1：在 "推送消息" 窗格中查看事件的详细信息"  
-[FetchEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-empty.msft.png "图2：背景获取窗格"  
-[FetchLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch.msft.png "图3：后台提取窗格中的事件日志"  
-[FetchDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-details.msft.png "图4：在 "后台获取" 窗格中查看事件的详细信息"  
-[SyncEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-empty.msft.png "图5： "后台同步" 窗格"  
-[SyncLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync.msft.png "图6： "后台同步" 窗格中的事件日志"  
-[SyncDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-details.msft.png "图7：在 "后台同步" 窗格中查看事件的详细信息"  
-[NotificationsEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-empty.msft.png "图8： "通知" 窗格"  
-[NotificationsLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications.msft.png "图9： "通知" 窗格中的事件日志"  
-[NotificationsDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-details.msft.png "图10：在 "通知" 窗格中查看事件的详细信息"  
-[PushEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-empty.msft.png "图11： "推送消息" 窗格"  
-[PushLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "图12： "推送消息" 窗格中的事件日志"  
-[PushDetails2]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-details.msft.png "图13：在 "推送消息" 窗格中查看事件的详细信息"  
+[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open.md "打开 Microsoft Edge （Chromium）开发人员工具"  
+[OpenDevTools]: ../open.md "打开 Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "通知 API |MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "推送 API |MDN"  
@@ -189,10 +177,10 @@ Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 
 [WikiBackgroundProcess]： https://en.wikipedia.org/wiki/Background_process "后台进程-维基百科"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。  
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

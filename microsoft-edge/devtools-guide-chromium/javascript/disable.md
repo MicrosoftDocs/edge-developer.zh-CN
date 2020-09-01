@@ -2,16 +2,16 @@
 title: 通过 Microsoft Edge DevTools 禁用 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: f3838b4e8eccf83aaa71be35ff477ec56cbe7455
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 587f4780432b1b2b964462d2d7f5779f447f1313
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581808"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982908"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,56 +35,52 @@ ms.locfileid: "10581808"
 
 
 
-若要查看在禁用 JavaScript 时网页的外观和行为，请执行以下操作：  
+查看禁用 JavaScript 时网页的外观和行为。  
 
 1.  [打开 Microsoft Edge DevTools][DevToolsOpen]。  
-1.  按 `Control` + `Shift` + `P` \ （Windows \）或 `Command` + `Shift` + `P` \ （macOS \）打开 "**命令" 菜单**。  
+1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
     
-    > ##### 图 1  
-    > 命令菜单  
-    > ![命令菜单][ImageCommandMenu]  
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command.msft.png":::
+       **命令菜单**  
+    :::image-end:::  
     
-1.  开始键入 `javascript` ，选择 "**禁用 JavaScript**"，然后按 `Enter` 运行命令。  JavaScript 现在已被禁用。  
+1.  开始键入 `javascript` ，选择 " **禁用 JavaScript**"，然后按 `Enter` 运行命令。  JavaScript 现在已被禁用。  
     
-    > ##### 图 2  
-    > 在 "命令" 菜单中选择 "**禁用 JavaScript** "  
-    > ![在 "命令" 菜单中选择 "禁用 JavaScript"][ImageDisableJS]  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在 "命令" 菜单中选择 "禁用 JavaScript"" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       在 "**命令" 菜单**中选择 "**禁用 JavaScript** "  
+    :::image-end:::  
     
-    "**来源**" 旁边的黄色警告图标会提醒你已禁用 JavaScript。  
+    " **来源** " 旁边的黄色警告图标会提醒你已禁用 JavaScript。  
     
-    > ##### 图 3  
-    > "**源**" 旁边的 "警告" 图标  
-    > !["源" 旁边的 "警告" 图标][ImageDisableJSWarning]  
-
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text=""源" 旁边的 "警告" 图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       "**源**" 旁边的 "警告" 图标  
+    :::image-end:::  
+    
 只要您已打开 DevTools，JavaScript 就会在此选项卡中保持禁用状态。  
 
 你可能需要重新加载页面以查看页面是否以及页面在加载时是否依赖 JavaScript。  
 
-要重新启用 JavaScript，请执行以下操作：  
+若要重新启用 JavaScript，请完成以下操作。  
 
-*   再次打开 "**命令" 菜单**并运行 `Enable JavaScript` 命令。  
+*   再次打开 " **命令" 菜单** 并运行 `Enable JavaScript` 命令。  
 *   关闭 DevTools。  
 
-## 反馈   
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command.msft.png "图1：命令菜单"  
-[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command-javascript.msft.png "图2：在 "命令" 菜单中选择 "禁用 JavaScript""  
-[ImageDisableJSWarning]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-javascript-disabled-warning.msft.png "图3： "源" 旁边的 "警告" 图标"  
+-->  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "打开 Microsoft Edge DevTools"  
+[DevToolsOpen]: ../open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
