@@ -2,16 +2,16 @@
 title: 分析运行时性能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 7705428dba2ca368eb8f61b13bb96901756b081f
-ms.sourcegitcommit: 0342d99bf8d3212068890bab0e1e960afa507c02
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 5f1a4125cfea1c582a76469ae7c9cd1ca75f0b00
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611862"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984922"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -44,19 +44,19 @@ ms.locfileid: "10611862"
 *   不要过度复杂地处理您的 CSS。  使用较少的 CSS，让你的 CSS 选择器更简单。  
 *   尽可能避免布局。  选择根本不触发布局的 CSS。  
 *   绘制可能比任何其他呈现活动占用更多的时间。  注意绘制瓶颈。  
-
+    
 ## JavaScript  
 
 JavaScript 计算（尤其是触发大量视觉变化的情况）可能会延迟应用程序性能。  不要让错误计时或长时间运行的 JavaScript 干扰用户交互。  
 
 ### JavaScript：工具  
 
-在 "**性能**" 面板中记笔记，并查找可疑的长 `Evaluate Script` 事件。  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
+在 " **性能** " 面板中记笔记，并查找可疑的长 `Evaluate Script` 事件。  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
 
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面的功能中所用的位置。  了解如何在[加速 JavaScript 运行时][DevtoolsRenderingToolsJavascriptRuntime]中创建 CPU 配置文件。
+f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面的功能中所用的位置。  了解如何在 [加速 JavaScript 运行时][DevtoolsRenderingToolsJavascriptRuntime]中创建 CPU 配置文件。
 
 ### JavaScript：问题  
 
@@ -64,10 +64,10 @@ f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下�
 
 | 问题 | 示例 | 解决方案 |  
 |:--- |:--- |:--- |  
-| 影响响应或动画的昂贵输入处理程序。  | 触摸，视差滚动。  | 让浏览器处理触摸并滚动，或者尽可能晚地绑定侦听器。  查看[Paul Lewis "运行时性能清单" 中的昂贵输入处理程序][WebPerformanceCalendarRuntimeChecklist]。  |  
-| 影响响应、动画和加载的 JavaScript 计时错误。  | 用户在页面加载、setTimeout/setInterval 后立即滚动。  | 优化 JavaScript 运行时：使用 `requestAnimationFrame` ，在整个框架上分配 DOM 操作，使用[Web 工作人员][MDNUsingWebWorkers]。  |  
-| 长时间运行的 JavaScript 会影响响应。  | [DOMContentLoaded 事件][MDNUsingWebWorkers]将在使用 JS 工作塞满时停止。  | 将纯计算工作移动到[Web 工作人员][MDNUsingWebWorkers]。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame` 。  <!--See also [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
-| 影响响应或动画的垃圾 y 脚本。  | 垃圾回收可能发生在任何位置。  | 编写较少的垃圾脚本。  请参阅[Paul Lewis "运行时性能清单"][WebPerformanceCalendarRuntimeChecklist]中的动画中的垃圾回收。  |  
+| 影响响应或动画的昂贵输入处理程序。  | 触摸，视差滚动。  | 让浏览器处理触摸并滚动，或者尽可能晚地绑定侦听器。  查看 [Paul Lewis "运行时性能清单" 中的昂贵输入处理程序][WebPerformanceCalendarRuntimeChecklist]。  |  
+| 影响响应、动画和加载的 JavaScript 计时错误。  | 用户在页面加载、setTimeout/setInterval 后立即滚动。  | 优化 JavaScript 运行时：使用 `requestAnimationFrame` ，在整个框架上分配 DOM 操作，使用 [Web 工作人员][MDNUsingWebWorkers]。  |  
+| 长时间运行的 JavaScript 会影响响应。  | [DOMContentLoaded 事件][MDNUsingWebWorkers]将在使用 JS 工作塞满时停止。  | 将纯计算工作移动到 [Web 工作人员][MDNUsingWebWorkers]。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame` 。  <!--See also [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
+| 影响响应或动画的垃圾 y 脚本。  | 垃圾回收可能发生在任何位置。  | 编写较少的垃圾脚本。  请参阅 [Paul Lewis "运行时性能清单"][WebPerformanceCalendarRuntimeChecklist]中的动画中的垃圾回收。  |  
 
 <!--todo: add Optimize JavaScript runtime section when available  -->  
 
@@ -84,21 +84,21 @@ f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下�
 
 ### 样式：工具  
 
-在 "**性能**" 面板中记笔记。  检查录制大型 `Recalculate Style` 事件 \ （显示为紫色 \）。  
+在 " **性能** " 面板中记笔记。  检查录制中是否有较大 `Recalculate Style` 的事件 \ (显示为紫色 \ ) 。  
 
 <!--todo: add Recording section when available  -->  
 
-单击 `Recalculate Style` 事件可在**详细**信息窗格中查看有关它的详细信息。  如果样式更改花费很长时间，则会影响性能。  如果样式计算影响大量元素，这是一个具有空间以改进的另一个区域。  
+单击 `Recalculate Style` 事件可在 **详细** 信息窗格中查看有关它的详细信息。  如果样式更改花费很长时间，则会影响性能。  如果样式计算影响大量元素，这是一个具有空间以改进的另一个区域。  
 
-> ##### 图 1  
-> 较长的重新计算样式  
-> ![较长的重新计算样式][ImageLongRecalculateStyle]
+:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="较长的重新计算样式" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+   较长的重新计算样式  
+:::image-end:::  
 
 要减少事件的影响，请 `Recalculate Style` 执行以下操作：  
 
-*   使用[CSS 触发器][CssTriggers]了解哪些 CSS 属性会触发布局、画图和复合。  这些属性对呈现性能有最严重的影响。  
+*   使用 [CSS 触发器][CssTriggers] 了解哪些 CSS 属性会触发布局、画图和复合。  这些属性对呈现性能有最严重的影响。  
 *   切换到影响较少的属性。  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
-
+    
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
 ### 样式：问题  
@@ -121,7 +121,7 @@ f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下�
 
 ## 布局  
 
-布局（或 Firefox 中的 "重排"）是浏览器计算页面上所有元素的位置和大小的过程。  Web 布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度 `<body>` 通常影响任何子元素的宽度，依此类推，在树中向上和向下。  该过程可能会非常适用于浏览器。  
+在 Firefox) 中 (或重排布局是浏览器计算页面上所有元素的位置和大小的过程。  Web 布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度 `<body>` 通常影响任何子元素的宽度，依此类推，在树中向上和向下。  该过程可能会非常适用于浏览器。  
 
 作为一般经验法则，如果你在帧完成之前要求从 DOM 返回几何值，你将发现你有 "强制同步布局"，如果频繁地重复或执行大型 DOM 树，则可能会产生大性能瓶颈。  
 
@@ -135,13 +135,13 @@ f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下�
 
 ### 布局：工具  
 
-"**性能**" 窗格标识页面何时导致强制同步布局。  这些 `Layout` 事件标有红条。  
+" **性能** " 窗格标识页面何时导致强制同步布局。  这些 `Layout` 事件标有红条。  
 
-> ##### 图 2  
-> 强制同步布局  
-> ![强制同步布局][ImageForcedSynchronousLayout]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="强制同步布局" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+   强制同步布局  
+:::image-end:::  
 
-"布局失效" 是强制执行同步布局条件的重复。  这会在 JavaScript 重复写入和读取 DOM 时发生，从而强制浏览器重新计算布局。  若要识别布局失效，请查看多个强制同步布局警告的模式。  请参阅[图 2](#figure-2)。  
+"布局失效" 是强制执行同步布局条件的重复。  这会在 JavaScript 重复写入和读取 DOM 时发生，从而强制浏览器重新计算布局。  若要识别布局失效，请查看多个强制同步布局警告的模式。  请参阅上图。  
 
 ### 布局：问题  
 
@@ -150,7 +150,7 @@ f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下�
 | 问题 | 示例 | 解决方案 |  
 |:--- |:--- |:--- |  
 | 影响响应或动画的强制同步布局。  | 强制浏览器在像素管道前面执行布局，从而在呈现过程中产生重复步骤。  | 将首先读取样式，然后执行任何写操作。  <!--See also [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
-| 影响响应或动画的布局失效。  | 将浏览器置于读写读写循环中的循环，强制浏览器重新计算布局。  | 使用[FastDom 库][GitHubWilsonpageFastdom]自动批处理读写操作。  |  
+| 影响响应或动画的布局失效。  | 将浏览器置于读写读写循环中的循环，强制浏览器重新计算布局。  | 使用 [FastDom 库][GitHubWilsonpageFastdom]自动批处理读写操作。  |  
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
@@ -167,9 +167,9 @@ f 你注意到你的 JavaScript 中有很多 jank，你可能需要分析到下�
 想要了解绘制所需的时间或绘图的频率是多少？  选中 "**性能**" 面板中的 "[启用高级画图检测][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]" 设置，然后进行录制。  如果大多数渲染时间都花在绘图上，则您遇到了画图问题。  
 
 <!--
-> ##### Old Figure 3  
-> Long paint times in timeline recording  
-> ![Long paint times in timeline recording][ImageLongPaintTimes]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+   Long paint times in timeline recording  
+:::image-end:::  
 -->  
 
 <!--
@@ -189,29 +189,25 @@ Check out the **Rendering** panel for further configurations that are able to he
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-<!--## Feedback   -->  
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageLongRecalculateStyle]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-performance-recalculate-style-summary.msft.png "图1：长的重新计算样式"  
-[ImageForcedSynchronousLayout]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-recalculate-style-summary.msft.png "图2：强制同步布局"  
-<!--[ImageLongPaintTimes]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
+-->  
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "加快 JavaScript 运行时"  
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "加速 JavaScript 运行时 |Microsoft 文档"  
 
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#enable-advanced-paint-instrumentation "启用高级画图工具-性能分析参考"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "启用高级画图检测-性能分析参考 |Microsoft 文档"
 
-<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: /microsoft-edge/devtools-guide-chromium/rendering-tools/forced-synchronous-layouts "Diagnose Forced Synchronous Layouts"  -->  
+<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
 <!-- The Timeline Tool page is deprecated  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-painting "Profile painting - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#make-a-recording "Make a recording - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#rendering-settings "Rendering settings - How to Use the Timeline Tool"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool.md#profile-javascript "Profile JavaScript - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: ../evaluate-performance/timeline-tool.md#profile-painting "Profile painting - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: ../evaluate-performance/timeline-tool.md#make-a-recording "Make a recording - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: ../evaluate-performance/timeline-tool.md#rendering-settings "Rendering settings - How to Use the Timeline Tool | Microsoft Docs"  -->  
 
 <!--[WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing "Avoid Large, Complex Layouts, and Layout Thrashing"  -->  
 <!--[WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime]: /web/fundamentals/performance/rendering/optimize-javascript-execution "Optimize JavaScript Runtime"  -->  
@@ -228,11 +224,11 @@ Check out the **Rendering** panel for further configurations that are able to he
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom |GitHub"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）和[Meggin Kearney][MegginKearney] \ （技术作者）提供。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面可在 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) 找到，并由 [Kayce Basques][KayceBasques] (技术作者、Chrome DevTools \ & Lighthouse \ ) 和 [Meggin Kearney][MegginKearney] \ (技术作者 \ ) 创作。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

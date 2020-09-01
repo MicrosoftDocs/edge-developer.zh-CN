@@ -1,17 +1,17 @@
 ---
-title: 加快 JavaScript 运行时
+title: 加速 JavaScript 运行时
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0e198be3e1cef53590a24bfaa2382746ced299ed
-ms.sourcegitcommit: 0342d99bf8d3212068890bab0e1e960afa507c02
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 2f05ef2911c855df39d60fa732ff5f784ab49473
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611869"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984845"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -36,63 +36,63 @@ ms.locfileid: "10611869"
 
 
 
-使用 "**内存**" 面板识别昂贵的功能。  
+使用 " **内存** " 面板识别昂贵的功能。  
 
-> ##### 图 1  
-> 采样配置文件  
-> ![采样配置文件][ImageCpuProfile]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="采样配置文件" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   采样配置文件  
+:::image-end:::  
 
 ### 摘要  
 
-*   准确记录所调用的函数和**内存面板中的分配**采样所需的内存量。  
+*   准确记录所调用的函数和 **内存面板中的分配** 采样所需的内存量。  
 *   将配置文件可视化为火焰图表。  
-
+    
 ## 录制采样配置文件  
 
 如果注意到 jank 在 JavaScript 中，请收集采样档案。  采样配置文件显示你的页面中的函数所用的运行时间。  
 
-1.  转到 DevTools 的 "**内存**" 面板。  
-1.  选择 "**分配采样**" 单选按钮。  
+1.  转到 DevTools 的 " **内存** " 面板。  
+1.  选择 " **分配采样** " 单选按钮。  
 1.  选择**开始**。  
 1.  根据你尝试分析的内容，你可以重新加载页面、与页面交互或仅让页面运行。  
-1.  完成后选择 "**停止**" 按钮。  
-
+1.  完成后选择 " **停止** " 按钮。  
+    
 > [!NOTE]
-> 您也可以使用[控制台实用工具 API][DevtoolsConsoleUtilities]从命令行记录和分组配置文件。  
+> 您也可以使用 [控制台实用工具 API][DevtoolsConsoleUtilities] 从命令行记录和分组配置文件。  
 
 ## 查看采样配置文件  
 
 完成录制后，DevTools 会自动在 "**采样配置文件**" 下填入来自录制的数据的**内存**面板。  
 
-默认视图为**厚粗（下图）**。  此视图使你能够查看哪些函数对性能有最大影响，并检查这些函数的调用路径。  
+默认视图为 " **粗" ("自下而上" ) **。  此视图使你能够查看哪些函数对性能有最大影响，并检查这些函数的调用路径。  
 
 ### 更改排序顺序   
 
-若要更改排序顺序，请选择 "**焦点选定函数** ![ 焦点所选函数" 图标旁边的下拉菜单 ][ImageFocusIcon] ，然后选择下列选项之一。
+若要更改排序顺序，请选择 " **焦点选定函数** \ (![ 焦点选定函数 \ ) 图标" 旁边的下拉菜单 ][ImageFocusIcon] ，然后选择下列选项之一。
 
 **图表**。  显示录制的按时间顺序的图表。  
 
-> ##### 图 2  
-> 火焰图  
-> ![火焰图][ImageFlameChart]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="火焰图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   火焰图  
+:::image-end:::  
 
-**粗 \ （下图）**。  通过对性能的影响列出函数，并使你能够检查这些函数的调用路径。  这是默认视图。  
+**粗 \ (下 ) **。  通过对性能的影响列出函数，并使你能够检查这些函数的调用路径。  这是默认视图。  
 
-> ##### 图 3  
-> 粗图  
-> ![粗图][ImageHeavyChart]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="粗图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   粗图  
+:::image-end:::  
 
-**树 \ （从上向下）**。  显示从调用堆栈顶部开始的调用结构的整体图片。  
+**树 \ (页首按 ) **。  显示从调用堆栈顶部开始的调用结构的整体图片。  
 
-> ##### 图 4  
-> 树形图  
-> ![树形图][ImageTreeChart]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="树形图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
+   树形图  
+:::image-end:::  
 
 ### 排除函数   
 
-若要从采样配置文件中排除某个函数，请选择该函数以将其选中，然后选择 "**排除所选函数**" " ![ 排除所选函数" ][ImageExcludeIcon] 图标。  已排除的函数 \ （子元素 \）的请求函数 \ （parent）将按分配给已排除函数 \ （子）的分配内存进行计费。  
+若要从采样配置文件中排除某个函数，请选择该函数以将其选中，然后选择 " **排除所选函数** \" (" ![ 排除所选函数 ][ImageExcludeIcon] \ ) " 图标。  已排除的函数 \ (子 ) 的请求函数 \ (parent ) 已分配分配给已排除函数 \ (子 ) 的分配内存。  
 
-选择 "**还原所有函数**" " ![ 还原所有函数" ][ImageRestoreIcon] 图标，将所有排除的函数还原到录制中。  
+选择 " **还原所有函数** \ (![ 还原所有函数 ][ImageRestoreIcon] \ ) " 图标将所有已排除的函数还原到录制中。  
 
 ## 以图表形式查看采样配置文件   
 
@@ -100,9 +100,9 @@ ms.locfileid: "10611869"
 
 [录制采样配置文件](#record-a-sampling-profile)后，通过将[排序顺序更改](#change-sort-order)为**图表**，可将录制查看为火焰图表。  
 
-> ##### 图 5  
-> 火焰图表视图  
-> ![火焰图表视图][ImageFlameChartView]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="火焰图表视图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   火焰图表视图  
+:::image-end:::  
 
 火焰图分成两部分。  
 
@@ -113,9 +113,9 @@ ms.locfileid: "10611869"
 
 函数会随机着色。  与其他面板中使用的颜色没有关联。  但是，函数在调用中始终具有相同的颜色，以便你可以在每个运行时中查看模式。  
 
-> ##### 图 6  
-> 已标注的火焰图表  
-> ![已标注的火焰图表][ImageAnnotatedFlameChart]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="已标注的火焰图表" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
+   已标注的火焰图表  
+:::image-end:::  
 
 高调用堆栈不一定很重要，它只意味着调用了大量函数。  但宽条表示某个函数需要很长时间才能完成。  这些是优化的候选项。  
 
@@ -123,17 +123,17 @@ ms.locfileid: "10611869"
 
 选择、按住，然后在概述中向左和向右拖动鼠标，以放大调用堆栈的特定部分。  缩放后，调用堆栈自动显示所选录制部分。  
 
-> ##### 图 7  
-> 缩放图表  
-> ![缩放图表][ImageFlameChartZoomed]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="缩放图表" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
+   缩放图表  
+:::image-end:::  
 
 ### 查看函数详细信息   
 
-选择一个函数以在 "**源**" 面板中查看定义。  
+选择一个函数以在 " **源** " 面板中查看定义。  
 
 将鼠标悬停在函数上以显示名称和计时数据。  提供以下信息。  
 
-| 资料 | 说明 |  
+| 资料 | 描述 |  
 |:--- |:--- |  
 | **名称** | 函数的名称。  |  
 | **自大小** | 函数的当前调用的大小，包括函数中的语句。  |  
@@ -143,41 +143,34 @@ ms.locfileid: "10611869"
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-> ##### 图 8  
-> 查看图表中的函数详细信息  
-> ![查看图表中的函数详细信息][ImageFunctionsDetails]  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="查看图表中的函数详细信息" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+   查看图表中的函数详细信息  
+:::image-end:::  
 
-<!--## Feedback   -->  
+<!--  
+## Feedback   
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageExcludeIcon]: /microsoft-edge/devtools-guide-chromium/media/exclude-icon.msft.png  
-[ImageFocusIcon]: /microsoft-edge/devtools-guide-chromium/media/images/focus-icon.msft.png  
-[ImageRestoreIcon]: /microsoft-edge/devtools-guide-chromium/media/images/restore-icon.msft.png  
-
-[ImageCpuProfile]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "图1：采样配置文件"  
-[ImageFlameChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "图2：火焰图"  
-[ImageHeavyChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "图3：厚图"  
-[ImageTreeChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png "图4：树形图"  
-[ImageFlameChartView]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "图5：火焰图表视图"  
-[ImageAnnotatedFlameChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png "图6：带批注的火焰图表"  
-[ImageFlameChartZoomed]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png "图7：缩放图表"  
-[ImageFunctionsDetails]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png "图8：在图表中查看函数的详细信息"  
+[ImageExcludeIcon]: ../media/exclude-icon.msft.png  
+[ImageFocusIcon]: ../media/focus-icon.msft.png  
+[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "控制台实用工具 API 参考"  
-[DevtoolsConsoleUtilitiesProfile]: /microsoft-edge/devtools-guide-chromium/console/utilities#profile "配置文件-控制台实用工具 API 参考"  
-[DevtoolsConsoleUtilitiesProfileEnd]: /microsoft-edge/devtools-guide-chromium/console/utilities#profileend "profileEnd-控制台实用工具 API 参考"  
+[DevtoolsConsoleUtilities]: ../console/utilities.md "控制台实用工具 API 参考 |Microsoft 文档"  
+[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "配置文件-控制台实用工具 API 参考 |Microsoft 文档"  
+[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd-控制台实用工具 API 参考 |Microsoft 文档"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面可在[此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)找到，并由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools & Lighthouse \）和[Meggin Kearney][MegginKearney] \ （技术作者 \）创作。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面可在 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) 找到，并由 [Kayce Basques][KayceBasques] (技术作者、Chrome DevTools \ & Lighthouse \ ) 和 [Meggin Kearney][MegginKearney] \ (技术作者 \ ) 创作。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
