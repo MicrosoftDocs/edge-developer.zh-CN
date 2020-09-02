@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c9a2aecfff1101de532eb59f73da21a32d62c791
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: e11af27681f3aa1aaeefb62505908fdc6cd7a0e9
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985006"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986148"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,9 @@ ms.locfileid: "10985006"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# 通过 Microsoft Edge DevTools 模拟设备方向  
 
-
-
-
-# 通过 Microsoft Edge DevTools 模拟设备方向   
-
-
-
-若要模拟 Microsoft Edge DevTools 中的不同设备方向，请执行以下操作：  
+完成以下操作以模拟 Microsoft Edge DevTools 中的不同设备方向。  
 
 <!--todo: update device orientation section when available -->  
 
@@ -56,7 +50,7 @@ ms.locfileid: "10985006"
        :::column-end:::
        :::column span="":::
           选择 **自定义方向**后，""、"" 和 "" `alpha` 字段已 `beta` `gamma` 启用。  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how these axes work.  -->  
+          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
           您还可以通过拖动 **方向模型**来设置自定义方向。  按住 `Shift` ，然后拖动鼠标沿 `alpha` 轴旋转。  
           
@@ -66,18 +60,16 @@ ms.locfileid: "10985006"
        :::column-end:::
     :::row-end:::
     
-<!--  
-## Feedback 
+## 与 Microsoft Edge DevTools 团队取得联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation \& Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

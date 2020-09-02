@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985738"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986162"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985738"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # 如何在日程表上使用分配检测  
-
-
 
 使用 **时间线上的分配检测** 查找未正确进行垃圾回收的对象，并继续保留内存。  
 
@@ -44,7 +38,7 @@ ms.locfileid: "10985738"
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-"**时间线上的分配规范" 在**整个录制过程中定期执行堆快照， (每隔 50 ms！ \ ) ，在录制结束时有一个最终快照。  
+"**时间线上的分配规范" 在**整个录制过程中定期执行堆快照， (在录制结束时，每隔 50 ms \ ) 和最后一个快照。  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **日程表上的分配规范**  
@@ -55,7 +49,7 @@ ms.locfileid: "10985738"
 
 ## 在日程表上启用分配检测  
 
-请按照以下步骤开始 **在日程表上使用分配检测**。  
+完成以下操作以开始 **在日程表上使用分配检测**。  
 
 1.  [打开 DevTools][DevtoolsOpenIndex]。  
 1.  打开 " **内存** " 面板，选择 " **时间线上的分配规范** " 单选按钮。  
@@ -86,15 +80,13 @@ ms.locfileid: "10985738"
 
 单击堆中的特定对象时，将显示堆快照底部的保留树。  检查对象的保留路径应为你提供足够的信息，以了解未收集对象的原因，你应该更改必要的代码以删除不必要的引用。  
 
-## 按函数查看内存分配   
+## 按函数查看内存分配  
 
-你可以通过 JavaScript 函数查看内存分配。  有关详细信息，请参阅 [按函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] 。  
+你可以通过 JavaScript 函数查看内存分配。  有关详细信息，请参阅 [通过函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。  
 
-<!--
-## Feedback   
+## 与 Microsoft Edge DevTools 团队取得联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

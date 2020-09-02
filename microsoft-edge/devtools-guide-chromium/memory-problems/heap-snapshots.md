@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 183482660ed5fc50862dfd2cce7209384fee93e3
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985419"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986169"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985419"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 如何录制堆快照   
-
-
+# 如何录制堆快照  
 
 了解如何将堆快照与 Microsoft Edge DevTools 堆探查器一起录制并查找内存泄漏。  
 
@@ -97,7 +91,7 @@ Microsoft Edge DevTools 堆探查器显示由页面的 JavaScript 对象和相�
 最初，快照在 "摘要" 视图中打开，显示 "对象总数"，它们可能会展开以显示实例：  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="摘要视图" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   摘要视图  
+   **摘要** 视图  
 :::image-end:::  
 
 顶级条目是 "汇总" 行。  
@@ -118,7 +112,7 @@ Microsoft Edge DevTools 堆探查器显示由页面的 JavaScript 对象和相�
 **堆探查器中的各种构造函数 \ (组 \ ) 条目对应于什么？**  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="构造函数组" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
-   构造函数组  
+   **构造函数** 组  
 :::image-end:::  
 
 | 构造函数 \ (组 \ ) 条目 | 描述 |  
@@ -256,11 +250,9 @@ leafRef = null;
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--  
-## Feedback   
+## 与 Microsoft Edge DevTools 团队取得联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

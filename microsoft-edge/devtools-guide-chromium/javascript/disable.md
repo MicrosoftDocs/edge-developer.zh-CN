@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 587f4780432b1b2b964462d2d7f5779f447f1313
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 829902ddd76800bb8d36268cb07a61361aa1a159
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982908"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986113"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,9 @@ ms.locfileid: "10982908"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# 通过 Microsoft Edge DevTools 禁用 JavaScript  
 
-
-
-
-# 通过 Microsoft Edge DevTools 禁用 JavaScript   
-
-
-
-查看禁用 JavaScript 时网页的外观和行为。  
+完成以下操作可查看禁用 JavaScript 时网页的外观和行为。  
 
 1.  [打开 Microsoft Edge DevTools][DevToolsOpen]。  
 1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
@@ -56,7 +50,7 @@ ms.locfileid: "10982908"
        "**源**" 旁边的 "警告" 图标  
     :::image-end:::  
     
-只要您已打开 DevTools，JavaScript 就会在此选项卡中保持禁用状态。  
+只要已打开 DevTools，JavaScript 就会在选项卡中保持禁用状态。  
 
 你可能需要重新加载页面以查看页面是否以及页面在加载时是否依赖 JavaScript。  
 
@@ -65,11 +59,9 @@ ms.locfileid: "10982908"
 *   再次打开 " **命令" 菜单** 并运行 `Enable JavaScript` 命令。  
 *   关闭 DevTools。  
 
-<!--  
-## Feedback   
+## 与 Microsoft Edge DevTools 团队取得联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

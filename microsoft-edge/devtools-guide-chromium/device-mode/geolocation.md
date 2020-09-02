@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981821"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986099"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10981821"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 通过 Microsoft Edge DevTools 替代地理位置   
-
-
+# 通过 Microsoft Edge DevTools 替代地理位置  
 
 许多网站利用用户位置，以便为用户提供更相关的体验。  例如，天气网站可能会在用户向网站授予访问当前用户位置的权限后，在用户区域中显示本地预测。  
 
@@ -54,11 +48,9 @@ ms.locfileid: "10981821"
        `Tokyo`从 "**地理位置**" 列表中选择  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## 与 Microsoft Edge DevTools 团队取得联系
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: 4c2541615700f2c637f293ee6a3fbacd9ccbc43a
-ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
+ms.openlocfilehash: 4915c909921bb4c5eaa8d727ab7a08493b941445
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10960718"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986120"
 ---
 # 实验功能  
 
@@ -139,10 +139,10 @@ ms.locfileid: "10960718"
 提供有关 Microsoft Edge DevTools 实验的反馈或与 DevTools 相关的任何其他内容。  
 
 *   使用 DevTools 中的 " **发送反馈** " 图标发送反馈  
-*   向 [@EdgeDevTools][TwitterEdgedevtools] 发送推文  
+*   向 [@EdgeDevTools][TwitterEdgedevtools] 发送推文   
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Microsoft Edge DevTools 中的 "发送反馈" 图标" lightbox="./media/devtools-feedback.png":::
-   Microsoft Edge DevTools 中的 "**发送反馈**" 图标  
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的 "发送反馈" 图标" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+   Microsoft Edge DevTools 中的 " **发送反馈** " 图标  
 :::image-end:::  
 
 <!-- links -->  

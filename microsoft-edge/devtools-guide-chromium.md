@@ -3,17 +3,17 @@ description: 了解 Microsoft Edge (Chromium) 开发人员工具
 title: Microsoft Edge (Chromium) 开发人员工具
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: cb51e16083e4798478817910e54c571721d094f8
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: c1168e25c99302a9d195c756c6049881b5dfe91f
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931222"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991182"
 ---
 # Microsoft Edge (Chromium) 开发人员工具  
 
@@ -133,15 +133,9 @@ Microsoft Edge \ (Chromium \ ) DevTools 包括以下面板。
 
 ## 与 Microsoft Edge DevTools 团队取得联系  
 
-请发送您的反馈，让 Microsoft Edge 团队继续为您改进 Microsoft Edge DevTools！  只需在 DevTools 中选择 "**反馈**" 图标或按 `Alt` + `Shift` + `I` macOS \ ) 上的 " (" `Option` + `Shift` + `I` ，然后输入 DevTools 的任何反馈或功能请求。  
-
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="提供有关 Microsoft Edge 的反馈":::
-   提供有关 Microsoft Edge 的反馈  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
 如果你想要预览 DevTools 中的 [最新功能][DevtoolsGuideChromiumWhatsNewIndex]，请下载 [Microsoft Edge][MicrosoftedgeinsiderDownload]未安装，它将在夜间生成。  
-
-<!-- image links -->  
 
 <!-- links -->  
 

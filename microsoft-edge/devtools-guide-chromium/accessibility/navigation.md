@@ -2,16 +2,16 @@
 title: 导航 Microsoft Edge DevTools 与辅助技术
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4bd910fabaab02a632bdc51ade29c5ad6502432a
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 544d6a6ecb8dabe262e7c28aa7fc072610604be0
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931194"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986053"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -235,11 +235,14 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 
 若要运行新审核，请使用 `Shift` + `Tab` 退出报告并查找 "**执行审核**" 按钮。  
 
+## 与 Microsoft Edge DevTools 团队取得联系
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: ./reference.md "辅助功能参考 |Microsoft 文档"  
-<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  -->  
-
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "辅助功能窗格-辅助功能参考 |Microsoft 文档"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
 [DevtoolsConsoleIndex]: ../console/index.md "控制台概述 |Microsoft 文档"  

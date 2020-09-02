@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 190890b43cff97ae0f379426b68a688534ebda95
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a338e78957d664a4552e5882f1ae7882f0eee89a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983621"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986085"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10983621"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 辅助功能参考   
-
-
+# 辅助功能参考  
 
 此页面是 Microsoft Edge DevTools 中辅助功能的完整参考。  它适用于以下情况的 web 开发人员：  
 
@@ -44,7 +38,7 @@ ms.locfileid: "10983621"
 
 如果要查找有关使用辅助技术（如屏幕阅读器）导航 DevTools 的帮助，请参阅 [使用辅助技术导航 Microsoft Edge DevTools][DevtoolsAccessibilityNavigation] 。  
 
-## Microsoft Edge DevTools 中辅助功能的概述   
+## Microsoft Edge DevTools 中辅助功能的概述  
 
 本部分介绍 DevTools 如何融入你的整体辅助功能工具包。  
 
@@ -57,7 +51,7 @@ ms.locfileid: "10983621"
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## 审核页面的辅助功能   
+## 审核页面的辅助功能  
 
 > [!NOTE]
 > " **审核** " 面板提供了指向第三方网站上托管的内容的链接。  Microsoft 不承担任何责任，也不能控制这些网站的内容和可能收集的任何数据。  
@@ -65,8 +59,8 @@ ms.locfileid: "10983621"
 一般情况下，使用 "审核" 面板确定是否：  
 
 *   已正确标记屏幕阅读器的页面。  
-*   页面上的文本元素具有足够的对比度比率。 另请参阅 [查看颜色选取器中的文本元素的对比度比率](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker)。  
-    
+*   页面上的文本元素具有足够的对比度比率。  请参阅 [查看颜色选取器中的文本元素的对比度](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker)。  
+
 若要审核页面，请执行以下操作：  
 
 1.  转到要审核的 URL。  
@@ -95,13 +89,13 @@ ms.locfileid: "10983621"
        有关审核的详细信息  
     :::image-end:::  
     
-1.  单击 " **了解详细信息** " 以查看该审核的文档。
+1.  单击 " **了解详细信息** " 以查看该审核的文档。  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="查看审核文档" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        查看审核文档  
     :::image-end:::  
     
-### 另请参阅： aXe 扩展名   
+### 另请参阅： aXe 扩展名  
 
 您可能希望使用 [aXe 扩展][ChromeWebStoreAxe] ，而不是 " **审核** " 面板。  
 AXe 扩展通常提供相同的信息，因为它是为 "审核" 面板加电的基础引擎。  AXe 扩展具有不同的 UI，并以略微不同的方式描述审核。  
@@ -111,7 +105,7 @@ AXe 扩展在 " **审核** " 面板上的一个优点是，它使您能够检查
    AXe 扩展  
 :::image-end:::  
 
-## 辅助功能窗格   
+## 辅助功能窗格  
 
 在 " **辅助功能** " 窗格中，你可以查看 DOM 节点的辅助功能树、ARIA 属性和计算的辅助功能属性。  
 
@@ -119,13 +113,13 @@ AXe 扩展在 " **审核** " 面板上的一个优点是，它使您能够检查
 
 1.  单击 " **元素** " 选项卡。  
 1.  在 **DOM 树**中，选择要检查的元素。  
-1.  单击 " **辅助功能** " 选项卡。 此选项卡可能隐藏在 " **更多选项**卡" 按钮的后面 ![ ][ImageMoreTabsIcon] 。  
+1.  单击 " **辅助功能** " 选项卡。 此选项卡可能隐藏在 " **更多选项卡** \ (![ 更多选项卡 ][ImageMoreTabsIcon] \ ) " 按钮之后。  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="在 "辅助功能" 窗格中检查 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    `h1`在 "**辅助功能**" 窗格中检查 DevTools 主页的元素  
 :::image-end:::  
 
-### 查看辅助功能树中元素的位置   
+### 查看辅助功能树中元素的位置  
 
 [辅助功能树][MDNAccessibilityTree]是 DOM 树的子集。  它仅包含 DOM 树中的元素，这些元素适用于在屏幕阅读器中显示页面的内容。  
 
@@ -135,7 +129,7 @@ AXe 扩展在 " **审核** " 面板上的一个优点是，它使您能够检查
    **辅助功能树**部分  
 :::image-end:::  
 
-### 查看元素的 ARIA 属性   
+### 查看元素的 ARIA 属性  
 
 ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确地表示页面的内容。  
 
@@ -145,7 +139,7 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
    **ARIA 属性**部分  
 :::image-end:::  
 
-### 查看元素的计算辅助功能属性   
+### 查看元素的计算辅助功能属性  
 
 > [!NOTE]
 > 如果要查找计算的 CSS 属性，请参阅 " [计算" 选项卡][DevtoolsCssReferenceViewActuallyAppliedElements]。  
@@ -158,9 +152,10 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
    "**辅助功能**" 窗格的 "**计算属性**" 部分  
 :::image-end:::  
 
-## 查看颜色选取器中的文本元素的对比度比率   
+## 查看颜色选取器中的文本元素的对比度比率  
 
 某些视力较差的人看不到非常明亮或非常暗的区域。  所有内容往往都看起来几乎相同，这使区分轮廓和边缘变得很困难。  
+
 对比度比率测量文本前景和背景之间的亮度差异。  如果文本的对比度较低，则这些视力较差的用户可能会以空白屏幕的形式体验您的网站。  
 
 颜色选取器可帮助你验证文本是否满足建议的对比度比率：  
@@ -169,7 +164,7 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
 1.  在 **DOM 树**中，选择要检查的文本元素。  
     
     :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="检查 DOM 树中的段落" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       检查 DOM 树中的段落  
+       检查**DOM 树**中的段落  
     :::image-end:::  
     
 1.  在 " **样式** " 窗格中，单击元素值旁边的颜色方块 `color` 。  
@@ -178,7 +173,7 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
        `color`元素的属性  
     :::image-end:::  
     
-1.  检查拾色器的 " **对比度比率** " 部分。  一个复选标记表示该元素满足 [最低建议][W3CContrastMinimum]。  两个复选标记表示它符合 [增强的建议][W3CContrastEnhanced]。
+1.  检查拾色器的 " **对比度比率** " 部分。  一个复选标记表示该元素满足 [最低建议][W3CContrastMinimum]。  两个复选标记表示它符合 [增强的建议][W3CContrastEnhanced]。  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器的 "对比度比率" 部分显示2个复选标记和值13.97。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        颜色选取器的 " **对比度比率** " 部分显示2个复选标记，值为 `13.97`  
@@ -187,12 +182,12 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
 1.  单击 " **对比度比率** " 部分可查看详细信息。  可视选取器中的颜色选取器顶部会显示一条线。  如果当前颜色满足建议，则行的同一侧的任何内容也满足建议。  如果当前颜色不符合建议，则同一侧的任何内容也不能满足建议。  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="可视选取器中的 "对比度" 比率线" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       可视选取器中的 "对比度" 比率线  
+       可视选取器中的 " **对比度" 比率** 线  
     :::image-end:::  
     
 <!--## Feedback   -->  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -200,7 +195,7 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "导航 Microsoft Edge DevTools 与辅助技术 |Microsft 文档"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "导航 Microsoft Edge DevTools 与辅助技术 |Microsoft 文档"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "仅查看实际应用到元素 CSS 引用的 CSS |Microsoft 文档"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe-Web 辅助功能测试-Chrome Web Store"  

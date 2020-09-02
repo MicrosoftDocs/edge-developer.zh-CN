@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2f05ef2911c855df39d60fa732ff5f784ab49473
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984845"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986183"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,19 +27,12 @@ ms.locfileid: "10984845"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# 加快 JavaScript 运行时   
-
-
-
+# 加快 JavaScript 运行时  
 
 使用 " **内存** " 面板识别昂贵的功能。  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="采样配置文件" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   采样配置文件  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="示例配置文件" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   示例配置文件  
 :::image-end:::  
 
 ### 摘要  
@@ -66,7 +59,7 @@ ms.locfileid: "10984845"
 
 默认视图为 " **粗" ("自下而上" ) **。  此视图使你能够查看哪些函数对性能有最大影响，并检查这些函数的调用路径。  
 
-### 更改排序顺序   
+### 更改排序顺序  
 
 若要更改排序顺序，请选择 " **焦点选定函数** \ (![ 焦点选定函数 \ ) 图标" 旁边的下拉菜单 ][ImageFocusIcon] ，然后选择下列选项之一。
 
@@ -88,13 +81,13 @@ ms.locfileid: "10984845"
    树形图  
 :::image-end:::  
 
-### 排除函数   
+### 排除函数  
 
-若要从采样配置文件中排除某个函数，请选择该函数以将其选中，然后选择 " **排除所选函数** \" (" ![ 排除所选函数 ][ImageExcludeIcon] \ ) " 图标。  已排除的函数 \ (子 ) 的请求函数 \ (parent ) 已分配分配给已排除函数 \ (子 ) 的分配内存。  
+若要从采样配置文件中排除某个函数，请将其选中，然后选择 " **排除所选函数** \" (" ![ 排除所选函数 ][ImageExcludeIcon] \ ) " 按钮。  已排除的函数 \ (子 ) 的请求函数 \ (parent ) 已分配分配给已排除函数 \ (子 ) 的分配内存。  
 
-选择 " **还原所有函数** \ (![ 还原所有函数 ][ImageRestoreIcon] \ ) " 图标将所有已排除的函数还原到录制中。  
+选择 " **还原所有函数** \ (![ 还原所有函数 ][ImageRestoreIcon] \ ) " 按钮将所有已排除的函数还原到录制中。  
 
-## 以图表形式查看采样配置文件   
+## 以图表形式查看采样配置文件  
 
 "图表" 视图提供了一段时间内采样配置文件的可视化表示形式。  
 
@@ -106,7 +99,7 @@ ms.locfileid: "10984845"
 
 火焰图分成两部分。  
 
-| | 部件 | 描述 |  
+| 食指 | 部件 | 描述 |  
 | --- |:--- |:--- |  
 | raid-1 | 概述 | 整个录制的鸟瞰视图。  条形图的高度对应于调用堆栈的深度。  因此，栏越高，调用堆栈越深。  |  
 | ppls-2 | 调用堆栈 | 这是在录制期间调用的函数的深入视图。  水平轴为时间，垂直轴为调用堆栈。  堆叠按从上到下排列。  因此，函数顶部称为该函数，依此类推。  |  
@@ -119,7 +112,7 @@ ms.locfileid: "10984845"
 
 高调用堆栈不一定很重要，它只意味着调用了大量函数。  但宽条表示某个函数需要很长时间才能完成。  这些是优化的候选项。  
 
-### 放大录制的特定部分   
+### 放大录制的特定部分  
 
 选择、按住，然后在概述中向左和向右拖动鼠标，以放大调用堆栈的特定部分。  缩放后，调用堆栈自动显示所选录制部分。  
 
@@ -127,7 +120,7 @@ ms.locfileid: "10984845"
    缩放图表  
 :::image-end:::  
 
-### 查看函数详细信息   
+### 查看函数详细信息  
 
 选择一个函数以在 " **源** " 面板中查看定义。  
 
@@ -143,15 +136,13 @@ ms.locfileid: "10984845"
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="查看图表中的函数详细信息" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
-   查看图表中的函数详细信息  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="在图表中查看函数的详细信息" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+   在图表中查看函数的详细信息  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## 与 Microsoft Edge DevTools 团队取得联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

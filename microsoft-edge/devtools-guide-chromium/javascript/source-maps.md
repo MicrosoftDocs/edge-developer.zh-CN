@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981765"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986141"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,14 +27,7 @@ ms.locfileid: "10981765"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 将预处理的代码映射到源代码   
-
-
-
+# 将预处理的代码映射到源代码  
 
 即使在组合、minify 或编译之后，你的客户端代码也能保持可读和可调试。  使用源映射将源代码映射到已编译的代码。  
 
@@ -78,7 +71,7 @@ Preprocessors 中的源映射可导致 DevTools 加载原始文件，除了 mini
 默认情况下启用源映射 <!--\(as of Microsoft Edge 39\)-->，但如果您想要对其进行双重检查或启用，首先打开 DevTools，单击 " **自定义和控制 DevTools** \ (`...` \ ) " 按钮，然后选择 " **设置**"。  在 " **首选项** " 窗格的 " **源**" 下，选中 " **启用 JavaScript 源映射**"。  您也可以选中 " **启用 CSS 源映射**"。  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源映射" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   启用源映射  
+   **启用 JavaScript 源映射**  
 :::image-end:::  
 
 ### 通过源映射进行调试  
@@ -89,7 +82,7 @@ Preprocessors 中的源映射可导致 DevTools 加载原始文件，除了 mini
 1.  逐句通过代码时 (调用堆栈中的链接应打开原始源文件 \ )   
     
 <!--todo: add link to debugging your code when section is available -->  
-<!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
+<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
 ## @sourceURL 和 displayName  
 
@@ -104,8 +97,8 @@ Preprocessors 中的源映射可导致 DevTools 加载原始文件，除了 mini
 导航到以下页面。  
 
 *   [演示][CssNinjaDemoSourceMapping]
-    
-请按照以下步骤操作。  
+
+完成以下操作。  
 
 1.  打开 "DevTools"，然后转到 " **源** " 面板。  
 1.  在文件名中输入 **代码：** 输入字段。  
@@ -114,26 +107,32 @@ Preprocessors 中的源映射可导致 DevTools 加载原始文件，除了 mini
     
 如果展开 " **源** " 子面板，您现在将看到一个具有您以前输入的自定义文件名的新文件。  如果双击以查看此文件，则它包含原始源的已编译 JavaScript。  但是，最后一行是 `// @sourceURL` 表示原始源文件的注释。  这可能有助于你在使用语言抽象化时进行调试。  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="使用 sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
-   使用 sourceURL  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="处理 sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   使用 `sourceURL`  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## 与 Microsoft Edge DevTools 团队取得联系
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [BabelJS]: https://babeljs.io "Babel 是 JavaScript 编译器"  
+
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
+
 [CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "一个简单的//# sourceURL eval 命名示例"  
+
 [DartMain]: https://www.dartlang.org "Dart 编程语言"  
+
 [GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/闭包-编译器 |GitHub"  
+
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS |GitHub"  
+
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "源地图：语言、工具和其他信息 |GitHub wiki"  
+
 [GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "入门-google/traceur-编译器 |GitHub wiki"  
+
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]
