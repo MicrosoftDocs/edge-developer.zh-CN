@@ -1,17 +1,18 @@
 ---
+description: 如何通过应用程序面板和代码段查看和更改 IndexedDB 数据。
 title: 通过 Microsoft Edge DevTools 查看和更改 IndexedDB 数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 890e20f65c3b70193a38783f3c9ca5d879d5ac48
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6b1209ddcbfac305535d9d61e001441dbf61b6ec
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983728"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993560"
 ---
 <!-- Copyright Kayce Basques 
 

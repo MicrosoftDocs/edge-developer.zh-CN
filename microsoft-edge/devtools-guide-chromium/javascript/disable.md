@@ -1,17 +1,18 @@
 ---
+description: 打开 "命令" 菜单并运行 "禁用 JavaScript" 命令。
 title: 通过 Microsoft Edge DevTools 禁用 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 829902ddd76800bb8d36268cb07a61361aa1a159
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: de756e04c91768c49eed50debce97ae91fdaa3bd
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986113"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992797"
 ---
 <!-- Copyright Kayce Basques 
 

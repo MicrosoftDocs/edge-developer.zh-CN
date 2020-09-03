@@ -1,4 +1,5 @@
 ---
+description: 如何查看节点、搜索节点、编辑节点、在控制台中引用节点、中断节点更改等。
 title: 查看和更改 DOM 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6d41b072a8bd19ae728cc02b43eb2f843d91b332
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 555e627b70f0cc5e50c0676cf90067c2709a9ae3
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991206"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992951"
 ---
 <!-- Copyright Kayce Basques 
 

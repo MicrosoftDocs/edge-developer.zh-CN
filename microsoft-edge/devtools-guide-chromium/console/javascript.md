@@ -1,17 +1,18 @@
 ---
+description: 了解如何在控制台中运行 JavaScript。
 title: 开始在控制台中运行 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7e91d9844b2926bc8302331c6b9d971922d27ea3
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: d31bcfbdf728e656c9a6fff882f939f8c24cd897
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982250"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993119"
 ---
 <!-- Copyright Kayce Basques 
 

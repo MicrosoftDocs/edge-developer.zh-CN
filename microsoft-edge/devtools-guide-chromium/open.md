@@ -1,17 +1,18 @@
 ---
+description: 打开 Microsoft Edge DevTools 的所有方法。
 title: 打开 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 06e547d2d413535a6f14d829d30dc4d7b11ac92b
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: ffc05a1eff2cdb7f3020a7dbb853a7520a0502dd
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843997"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993595"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,31 +36,31 @@ ms.locfileid: "10843997"
 
 以下每个任务都可让你检查 DOM 节点的样式或属性。
 
-*   将鼠标悬停在元素上，打开上下文菜单 \ （右键单击 \），然后选择 "**检查**"。  
-*   按 `Control` + `Shift` + `C` \ （Windows \）或 `Command` + `Option` + `C` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+*   将鼠标悬停在元素上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **检查**"。  
+*   按 `Control` + `Shift` + `C` \ (Windows \ ) 或 `Command` + `Option` + `C` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 :::image type="complex" source="./media/bing-right-click-inspect.msft.png" alt-text="* * 检查 * * 选项" lightbox="./media/bing-right-click-inspect.msft.png":::
-   "**检查**" 选项  
+   " **检查** " 选项  
 :::image-end:::  
 
 <!--See [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
 
 ## 打开控制台面板  
 
-通过以下每个任务，你可以打开 "[控制台][DevToolsConsoleIndex]" 窗格以查看已记录的消息或运行 JavaScript。  
+通过以下每个任务，你可以打开 " [控制台][DevToolsConsoleIndex] " 窗格以查看已记录的消息或运行 JavaScript。  
 
-*   使用以下步骤打开 "[控制台][DevToolsConsoleIndex]窗格"。  
+*   使用以下步骤打开 " [控制台][DevToolsConsoleIndex] 窗格"。  
     
     1.  [打开 DevTools](#open-microsoft-edge-devtools)。  
-    1.  选择 "[控制台][DevToolsConsoleIndex]" 窗格。  
+    1.  选择 " [控制台][DevToolsConsoleIndex] " 窗格。  
 
-*   若要直接跳转到[控制台][DevToolsConsoleIndex]窗格，请按 `Control` + `Shift` + `J` \ （Windows \）或 `Command` + `Option` + `J` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+*   若要直接跳转到[控制台][DevToolsConsoleIndex]窗格，请按 `Control` + `Shift` + `J` \ (Windows \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 <!--See [Get Started With The Console][ConsoleGetStarted].  -->
 
 ## 打开上一个面板  
 
-若要跳转到上一个已打开的面板，请按 `Control` + `Shift` + `I` \ （Windows \）或 `Command` + `Option` + `I` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+若要跳转到上一个已打开的面板，请按 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 ## 打开 Microsoft Edge DevTools  
 
@@ -67,11 +68,11 @@ ms.locfileid: "10843997"
 
 *   使用以下步骤打开 Microsoft Edge DevTools。  
     
-    1.  选择 `...` 图标 \ （"**设置" 和 "更多**" 图标 \）。  
-    1.  选择 "**更多工具**"。  
-    1.  选择 "**开发工具**"。  
+    1.  选择  `...` 图标 \ (" **设置" 和 "更多** " 图标 \ ) 。  
+    1.  选择 " **更多工具**"。  
+    1.  选择 " **开发工具**"。  
     
-*   若要打开 Microsoft Edge DevTools，请按 `F12` 或 `Control` + `Shift` + `I` \ （Windows \）或 `Command` + `Option` + `I` \ （macOS \）。  有关详细信息，请参阅[Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+*   若要打开 Microsoft Edge DevTools，请按 `F12` 或 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 :::image type="complex" source="./media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从 Microsoft Edge 主菜单打开 DevTools" lightbox="./media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    从 Microsoft Edge 主菜单打开 DevTools  
@@ -81,7 +82,7 @@ ms.locfileid: "10843997"
 
 若要在每个新选项卡上自动打开 DevTools，请从命令行打开 Microsoft Edge 并传递 `--auto-open-devtools-for-tabs` 标志。  
 
-#### [CMD （Windows）](#tab/cmd-windows/)  
+#### [CMD (Windows) ](#tab/cmd-windows/)  
 
 <a id="selenium-tools-install"></a>  
 
@@ -89,7 +90,7 @@ ms.locfileid: "10843997"
 start msedge --auto-open-devtools-for-tabs
 ```  
 
-#### [PowerShell （Windows）](#tab/powershell-windows/)  
+#### [PowerShell (Windows) ](#tab/powershell-windows/)  
 
 <a id="selenium-tools-install"></a>  
 
@@ -97,7 +98,7 @@ start msedge --auto-open-devtools-for-tabs
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 ```  
 
-#### [bash （macOS）](#tab/bash-macos/)  
+#### [bash (macOS) ](#tab/bash-macos/)  
 
 <a id="selenium-tools-install"></a>  
 
@@ -116,11 +117,11 @@ Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由[Kayce Basques][KayceBasques] \ （技术作者、Chrome DevTools \ & Lighthouse \）创作。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

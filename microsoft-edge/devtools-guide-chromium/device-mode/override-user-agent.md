@@ -1,17 +1,18 @@
 ---
+description: 打开 "网络条件" 选项卡，禁用 "自动选择"，然后从列表中选择或输入自定义字符串。
 title: 覆盖 Microsoft Edge DevTools 中的用户代理字符串
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0dedfcd8d00035ed1c4c02ef8a2ec0f1643d0687
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991168"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992923"
 ---
 <!-- Copyright Kayce Basques 
 

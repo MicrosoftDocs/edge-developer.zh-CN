@@ -1,17 +1,18 @@
 ---
+description: 使用时间线上的分配检测查找未正确进行垃圾回收的对象，并继续保留内存。
 title: 如何在日程表上使用分配检测
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986162"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993504"
 ---
 <!-- Copyright Meggin Kearney 
 

@@ -1,17 +1,18 @@
 ---
+description: 用户需要交互式页面和平滑页面。  像素管道中的每个阶段都表示引入 jank 的商机。  了解用于识别和修复降低运行时性能的常见问题的工具和策略。
 title: 分析运行时性能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0fc576703a9760a3306e74da3521f93bf2d5d9cd
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: f7ca848712268110700fac2c5fb75fe1751812bf
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986176"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992701"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 

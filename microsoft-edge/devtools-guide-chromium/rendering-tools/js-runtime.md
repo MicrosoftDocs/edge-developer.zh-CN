@@ -1,17 +1,18 @@
 ---
+description: 使用 Microsoft Edge DevTools 内存面板识别昂贵的函数。
 title: 加速 JavaScript 运行时
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986183"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993581"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 

@@ -1,17 +1,18 @@
 ---
+description: 在 Microsoft Edge DevTools 的 "源" 面板中查看和编辑文件、创建代码段、调试 JavaScript 和设置工作区。
 title: 源窗格概览
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 469e4c3d8707379f5f41f072d31e2f7a5669651d
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 029693ba27665a556446f4349c1517c53ff39b02
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984342"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993539"
 ---
 <!-- Copyright Kayce Basques 
 

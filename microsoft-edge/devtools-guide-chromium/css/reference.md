@@ -1,17 +1,18 @@
 ---
+description: 了解在 Microsoft Edge DevTools 中查看和更改 CSS 的新工作流。
 title: CSS 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 908e32140d9deb89489089442055e188cd2d9378
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: de0fb33e1e080045383f3c0fb50919297cbff5bc
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931310"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993070"
 ---
 <!-- Copyright Kayce Basques 
 

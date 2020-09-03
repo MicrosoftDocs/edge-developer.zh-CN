@@ -1,17 +1,18 @@
 ---
+description: 了解如何将消息记录到控制台。
 title: 在控制台中记录消息入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c2cf868e6daaf9dd45c7acc90a71c2154261b9c3
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 3a2562eeb25bcee7c8b5195f6f2297613e37f2d6
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982616"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993147"
 ---
 <!-- Copyright Kayce Basques 
 

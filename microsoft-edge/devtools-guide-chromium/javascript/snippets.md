@@ -1,17 +1,18 @@
 ---
+description: 代码段是可以在 Microsoft Edge DevTools 的 "源" 面板中创作和运行的小型脚本。  您可以从任何页面访问和运行它们。  运行代码段时，它从当前打开的页面的上下文中运行。
 title: 在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 3a5ae986e3080a0b6a8b1bf34b0e0efc44c90303
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 5f6284179aacb471116a2d732507b010c37ef235
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981981"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993385"
 ---
 <!-- Copyright Kayce Basques 
 

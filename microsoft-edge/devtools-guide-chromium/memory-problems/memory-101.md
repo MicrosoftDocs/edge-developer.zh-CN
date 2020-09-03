@@ -1,17 +1,18 @@
 ---
+description: 本部分介绍内存分析中使用的常见术语，并适用于不同语言的各种内存分析工具。
 title: 内存术语
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: cb258135b7b3c931116d84b1e9b7a548a2b58a6d
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 3455b05cf19f3aa5a69de5571ab3a24d5654dfe4
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986237"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992748"
 ---
 <!-- Copyright Meggin Kearney 
 

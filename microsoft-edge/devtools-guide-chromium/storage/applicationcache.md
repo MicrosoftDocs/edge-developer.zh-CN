@@ -1,17 +1,18 @@
 ---
+description: 如何从 Microsoft Edge DevTools 的应用程序面板查看应用程序缓存数据。
 title: 查看 Microsoft Edge DevTools 中的应用程序缓存数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: fc1800fc54e5fb0d7998c62ce163ece7a461dd82
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: ed742f24900786c3c5b31ec2a026ddbf9d16ccb6
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931205"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993322"
 ---
 <!-- Copyright Kayce Basques 
 
