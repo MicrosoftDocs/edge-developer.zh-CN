@@ -3,7 +3,7 @@ description: 了解 Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,12 @@ keywords: microsoft edge, web 开发, f12 工具, devtools
 experimental: true
 experiment_id: 51fe4b97-3e55-41
 ms.localizationpriority: high
-ms.openlocfilehash: cba59764805c0be0e9d2c57c1a3d87ca4d14943e
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 0c01b761d1aa1fb645b15b0be5d5d6e4265e646e
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866069"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985966"
 ---
 # Microsoft Edge (EdgeHTML) Developer Tools  
 
@@ -46,7 +46,7 @@ Microsoft Edge \(EdgeHTML\) DevTools 包括：
 *   “[服务工作进程][DevtoolsGuideEdgehtmlServiceworkers]”面板，用于管理和调试服务工作进程  
 *   “[枚举][DevtoolsGuideEdgehtml|::ref9::|]”面板，可使用不同的浏览器配置文件、屏幕分辨率和 GPS 位置坐标来测试网站  
 
-请继续发送你的[反馈和功能请求](#feedback)！  
+请继续发送你的[反馈和功能请求](#getting-in-touch-with-the-microsoft-edge-devtools-team)！  
 
 > [!TIP]
 > [从任何浏览器免费测试 Microsoft Edge \(EdgeHTML)][BrowserstackEdgehtml]。  
@@ -117,7 +117,7 @@ Microsoft Edge DevTools 应用引入了对通过我们最新发布的 [DevTools 
 > [!NOTE]
 > 如果你正在调试并在断点处暂停，则“**刷新页面**”操作会首先恢复运行时。  
 
-## 反馈  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
 请发送你的反馈以帮助改进 Microsoft Edge \(EdgeHTML\) DevTools！  只需打开工具 \(`F12`\) 并选择“[发送反馈](#microsoft-edge-edgehtml-developer-tools)”按钮。  
 
