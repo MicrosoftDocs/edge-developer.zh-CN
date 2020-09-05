@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: 4915c909921bb4c5eaa8d727ab7a08493b941445
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: a5793b6f4b67add313958ad4b8cee01cb7b09dbf
+ms.sourcegitcommit: 7e3644e6b1d568ab795168e421c013814efa0073
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986120"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996157"
 ---
 # 实验功能  
 
@@ -46,24 +46,11 @@ ms.locfileid: "10986120"
 
 | 实验性功能 | Microsoft Edge 版本 |  
 |:--- |:--- |  
-| [启用自定义键盘快捷方式设置选项卡](#enable-custom-keyboard-shortcuts-settings-tab) | 84或更高版本 |
 | [启用新的 CSS 网格调试功能](#enable-new-css-grid-debugging-features) | 85或更高版本 |  
 | [启用支持以在面板之间移动选项卡](#enable-support-to-move-tabs-between-panels) | 85或更高版本 |  
 | [启用 webhint](#enable-webhint) | 85或更高版本 |  
 | [启用网络控制台](#enable-network-console) | 85或更高版本 |  
 | [启用源订单查看器](#enable-source-order-viewer) | 86或更高版本 |  
-
-### 启用自定义键盘快捷方式设置选项卡  
-
-在[DevTools 设置][DevToolsCustomizeSettings]中提供了新的**快捷方式**页面，该页面支持将 DevTools 中的[键盘快捷方式][DevToolsShortcuts]匹配到[Microsoft Visual Studio 代码][VisualstudioCode]。  
-
-启用实验后，请使用 select 再次打开[DevTools 设置][DevToolsCustomizeSettings] `Shift` + `?` 。  导航到 "新建 **快捷方式** " 页面。  选择 " **)  (DevTools** " 中的 "选择"，然后选择 "**匹配预设的快捷方式**" 下拉列表，然后选择**Visual Studio 代码**  DevTools 中的键盘快捷方式现在与 Visual Studio 代码中等效操作的快捷方式相匹配。  
-
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配" lightbox="./media/experiments-keyboard-shortcut.png":::
-   将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配  
-:::image-end:::  
-
-例如，在 Windows 上，在 [Visual Studio 代码][VisualstudioCodeShortcutsKeyboardWindows] 中暂停或继续运行脚本的键盘快捷方式是 `F5` 。  通过 **DevTools (默认) ** 预设，DevTools 中的相同快捷方式 `F8` 。  通过 **Visual Studio 代码** 预置，快捷方式也是 `F5` 。  
 
 ### 启用新的 CSS 网格调试功能  
 
@@ -133,7 +120,7 @@ ms.locfileid: "10986120"
 ## 以前的实验功能  
 
 *   [3D 视图][Devtools3dViewIndex] 现在可用，在 Microsoft Edge 版本83或更高版本中默认情况下处于打开状态。  
-
+*   [自定义键盘快捷方式][DevtoolsCustomKeyboardShortcuts] 现在在 Microsoft Edge 版本86或更高版本中可用且默认情况下处于打开状态。
 ## 提供有关实验功能的反馈  
 
 提供有关 Microsoft Edge DevTools 实验的反馈或与 DevTools 相关的任何其他内容。  
@@ -152,10 +139,8 @@ ms.locfileid: "10986120"
 [DevToolsCustomizeSettings]: ./customize/index.md#settings "设置-自定义 Microsoft Edge DevTools |Microsoft 文档"  
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools 键盘快捷方式 |Microsoft 文档"  
 [DevtoolsOpen]: ./open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 |Microsoft 文档"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools |Twitter"  
-
-[VisualstudioCode]: https://code.visualstudio.com "Microsoft Visual Studio 代码"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "适用于 Windows 的 Visual Studio 代码键盘快捷方式 |Microsoft Visual Studio 代码"  
 
 [WebhintMain]: https://webhint.io "webhint" 
