@@ -1,302 +1,175 @@
 ---
-description: 向 Microsoft Store 发布 Edge （Chromium）扩展的循序渐进过程。
+description: 发布 Microsoft Edge (Chromium) Microsoft Edge 加载项应用商店的扩展。
 title: 发布扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 7b5be511af1e81efd5da4fc4bc0691f317437f94
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: 47e6a96ec2fcd3d2ad8fb3edad702abfc91ab57d
+ms.sourcegitcommit: 7e3644e6b1d568ab795168e421c013814efa0073
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607375"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996213"
 ---
-# <span data-ttu-id="48325-104">发布扩展</span><span class="sxs-lookup"><span data-stu-id="48325-104">Publish An Extension</span></span>  
+# <span data-ttu-id="3aafb-104">发布扩展</span><span class="sxs-lookup"><span data-stu-id="3aafb-104">Publish your extension</span></span>  
 
-<span data-ttu-id="48325-105">在 Microsoft Edge Addons 目录 \ （Microsoft Edge Addons \）中发布您的扩展。</span><span class="sxs-lookup"><span data-stu-id="48325-105">Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\).</span></span>  <span data-ttu-id="48325-106">您必须首先在[合作伙伴中心][MicrosoftPartnerCenter]创建提交并提交。</span><span class="sxs-lookup"><span data-stu-id="48325-106">You must first create a submission on [Partner Center][MicrosoftPartnerCenter] and submit it.</span></span>  <span data-ttu-id="48325-107">本文档列出了创建扩展提交时必须提供的所有详细信息。</span><span class="sxs-lookup"><span data-stu-id="48325-107">This document lists all the details that you must provide to create an Extension submission.</span></span>  
+<span data-ttu-id="3aafb-105">完成扩展的开发和测试后，您可能已准备好使用 Microsoft Edge 加载项目录分发扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-105">After completing development and testing of your extension, you may be ready to distribute your extension using the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="3aafb-106">或者，如果您有一个您希望对 Microsoft Edge 用户可用的现有 chromium 扩展名，则可以将 [现有的 chromium 扩展移植][PortChromiumExtension] 到 microsoft edge。</span><span class="sxs-lookup"><span data-stu-id="3aafb-106">Alternatively, if you have an existing chromium extension that you want to make available to Microsoft Edge users, you may [port your existing Chromium extension][PortChromiumExtension] to Microsoft Edge.</span></span>  
 
-## <span data-ttu-id="48325-108">开始之前</span><span class="sxs-lookup"><span data-stu-id="48325-108">Before You Begin</span></span>  
+<span data-ttu-id="3aafb-107">将扩展发布到 Microsoft Edge 加载项目录会增加扩展的范围，并使其对最终用户可用。</span><span class="sxs-lookup"><span data-stu-id="3aafb-107">Publishing your extension to the Microsoft Edge add-ons catalog increases the reach of your extension and makes it available for end users.</span></span>  <span data-ttu-id="3aafb-108">本主题提供将扩展提交到 Microsoft Edge 加载项目录的过程的演练。</span><span class="sxs-lookup"><span data-stu-id="3aafb-108">This topic provides a walkthrough of the process to submit your extension to the Microsoft Edge add-ons catalog.</span></span>  
 
-*   <span data-ttu-id="48325-109">您必须在 "[合作伙伴中心][MicrosoftPartnerCenter]" 上拥有活动的开发人员帐户，才能在 Microsoft Edge Addons 中提交您的扩展。</span><span class="sxs-lookup"><span data-stu-id="48325-109">You must have an active developer account on [Partner Center][MicrosoftPartnerCenter] to submit your Extension in Microsoft Edge Addons.</span></span>  <span data-ttu-id="48325-110">如果没有，请[创建一个新的开发人员帐户][MicrosoftPartnerCenter]。</span><span class="sxs-lookup"><span data-stu-id="48325-110">If you do not have one, [create a new developer account][MicrosoftPartnerCenter].</span></span>  
-*   <span data-ttu-id="48325-111">创建扩展程序包的 zip 文件，并确保它包含以下文件：</span><span class="sxs-lookup"><span data-stu-id="48325-111">Create a zip file of your Extension package and ensure that it contains these files:</span></span>  
-    *   <span data-ttu-id="48325-112">清单文件，并且它必须定义您的扩展名的名称和版本。</span><span class="sxs-lookup"><span data-stu-id="48325-112">The manifest file and it must define the name and version of your Extension.</span></span>  
-    *   <span data-ttu-id="48325-113">您的扩展所需的图像和其他文件。</span><span class="sxs-lookup"><span data-stu-id="48325-113">The images and other files that are required for your Extension.</span></span>  
+## <span data-ttu-id="3aafb-109">开始之前</span><span class="sxs-lookup"><span data-stu-id="3aafb-109">Before you begin</span></span>  
 
+<span data-ttu-id="3aafb-110">此时，你的扩展的工作原型应该准备就绪。</span><span class="sxs-lookup"><span data-stu-id="3aafb-110">At this point, you should have a working prototype of your extension ready.</span></span>  <span data-ttu-id="3aafb-111">有关如何创建扩展的信息，请参阅 [入门教程][ExtensionsGettingStarted]。</span><span class="sxs-lookup"><span data-stu-id="3aafb-111">For information on how to create an extension, refer to the [Getting started tutorial][ExtensionsGettingStarted].</span></span>  
 
-<span data-ttu-id="48325-114">如果尚未开始构建扩展，则可以参阅构建 Microsoft Edge Chromium 扩展的[入门][ExtensionsGettingStarted]教程。</span><span class="sxs-lookup"><span data-stu-id="48325-114">If you have not started building an Extension, you may refer to the [Getting Started][ExtensionsGettingStarted] tutorial for building a Microsoft Edge Chromium extension.</span></span>  
+<span data-ttu-id="3aafb-112">若要将扩展发布到 Microsoft Edge 加载项网站，必须在 [合作伙伴中心][MicrosoftPartnerCenter]拥有活动的开发人员帐户。</span><span class="sxs-lookup"><span data-stu-id="3aafb-112">To publish your extension to the Microsoft Edge add-ons website, you must have an active developer account on [Partner Center][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="3aafb-113">若要打开新的开发人员帐户并注册到 Microsoft Edge 加载项程序，请按照 [开发人员注册][DeveloperRegistration] 指南中所述的过程进行操作。</span><span class="sxs-lookup"><span data-stu-id="3aafb-113">To open a new developer account and register to the Microsoft Edge add-ons program, follow the process mentioned in the [Developer registration][DeveloperRegistration] guide.</span></span>  
 
-<span data-ttu-id="48325-115">若要在[合作伙伴中心][MicrosoftPartnerCenter]创建扩展提交，请执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="48325-115">To create an Extension submission on [Partner Center][MicrosoftPartnerCenter], follow these steps.</span></span>  
+<span data-ttu-id="3aafb-114">创建一个表示您的扩展程序包的 zip 文件。</span><span class="sxs-lookup"><span data-stu-id="3aafb-114">Create a zip file that represents your extension package.</span></span>  <span data-ttu-id="3aafb-115">您的扩展程序包必须包含以下文件。</span><span class="sxs-lookup"><span data-stu-id="3aafb-115">Your extension package must include the following files.</span></span>  
 
-## <span data-ttu-id="48325-116">步骤1：开始新提交</span><span class="sxs-lookup"><span data-stu-id="48325-116">Step 1: Start a New Submission</span></span>  
+*   <span data-ttu-id="3aafb-116">扩展清单，用于指定详细信息，如扩展的名称、简短说明、权限和默认语言。</span><span class="sxs-lookup"><span data-stu-id="3aafb-116">The extension manifest specifying details like the name of the extension, short description, permissions, and default language.</span></span>  
+*   <span data-ttu-id="3aafb-117">您的扩展所需的图像和其他文件。</span><span class="sxs-lookup"><span data-stu-id="3aafb-117">Images and other files required by your extension.</span></span>  
 
-<span data-ttu-id="48325-117">转到[开发人员仪表板][MicrosoftPartnerCenter]。</span><span class="sxs-lookup"><span data-stu-id="48325-117">Go to your [developer dashboard][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="48325-118">在 "概述" 页上，单击 "**新建扩展名**"。</span><span class="sxs-lookup"><span data-stu-id="48325-118">From the Overview page, click **Create new extension**.</span></span>  
+<span data-ttu-id="3aafb-118">清单中的以下字段将自动包含在你的应用商店明细详细信息中，并且无法从 "应用商店节目表" 页面中进行修改，本主题后面部分将对此进行了介绍。</span><span class="sxs-lookup"><span data-stu-id="3aafb-118">The following fields in the manifest are automatically included in your store listing details and are not able to be modified from the store listings page, which is described later in this topic.</span></span>  <span data-ttu-id="3aafb-119">确保在将程序包上载到合作伙伴中心之前，填写字段以与 "应用商店详细信息" 页面上的首选显示匹配。</span><span class="sxs-lookup"><span data-stu-id="3aafb-119">Ensure the fields are filled-out to match your preferred display on the store details page, before uploading your package to Partner Center.</span></span>  <span data-ttu-id="3aafb-120">有关清单文件所需代码的示例，请查看清单文件基础知识。</span><span class="sxs-lookup"><span data-stu-id="3aafb-120">For an example of the code required for the manifest file, review the manifest file basics.</span></span>  
 
-## <span data-ttu-id="48325-119">步骤2：上载扩展 Zip 文件</span><span class="sxs-lookup"><span data-stu-id="48325-119">Step 2: Upload Your Extension Zip File</span></span>  
+*   `Name` <span data-ttu-id="3aafb-121">清单文件中的字段，它是 "应用商店详细信息" 页面上的 **显示名称** 。</span><span class="sxs-lookup"><span data-stu-id="3aafb-121">field in the manifest file, which is the **Display name** on the store details page.</span></span>  
+*   `Description` <span data-ttu-id="3aafb-122">清单文件中的字段，这是 "应用商店详细信息" 页面上的 **简短说明** 。</span><span class="sxs-lookup"><span data-stu-id="3aafb-122">field in the manifest file, which is the **Short description** on the store details page.</span></span>  <span data-ttu-id="3aafb-123">提供简短的 catchy 说明，以便在你的扩展列表的顶部显示。</span><span class="sxs-lookup"><span data-stu-id="3aafb-123">Provide a short, catchy description to display at the top of the listing for your extension.</span></span>  <span data-ttu-id="3aafb-124">如果包含，扩展清单文件中指定的简短说明将显示在应用商店的列表中。</span><span class="sxs-lookup"><span data-stu-id="3aafb-124">When included, the short description specified in the extension manifest file is displayed in your store listing.</span></span>  <span data-ttu-id="3aafb-125">如果清单文件中未包含简短说明，则显示前几行说明。</span><span class="sxs-lookup"><span data-stu-id="3aafb-125">If a short description is not included in the manifest file, the first few lines of Description are displayed.</span></span>  <span data-ttu-id="3aafb-126">你应提供简短说明，以避免在你的应用商店摘要页面上重复内容。</span><span class="sxs-lookup"><span data-stu-id="3aafb-126">You should provide a brief description to avoid content repetition on your store listing page.</span></span>  
 
-<span data-ttu-id="48325-120">**程序包**页面是你为扩展提交上载 zip 文件的位置。</span><span class="sxs-lookup"><span data-stu-id="48325-120">The **Package** page is where you upload the zip file for your Extension submission.</span></span>  <span data-ttu-id="48325-121">你一次只能上载一个程序包，因此，如果你的扩展不完整，你可能会在发布工作包时随时上载工作包和更新。</span><span class="sxs-lookup"><span data-stu-id="48325-121">You may only upload one package at a time, so if your Extension is not complete you may upload a work-in-progress package and update at any time before you publish it.</span></span>  <span data-ttu-id="48325-122">请确保程序包中包含该 `manifest.json` 文件，并且在上载之前在 Microsoft Edge 上正常工作。</span><span class="sxs-lookup"><span data-stu-id="48325-122">Be sure that your package contains the `manifest.json` file and is working fine on Microsoft Edge prior to uploading.</span></span>  
-<span data-ttu-id="48325-123">通过将程序包拖动到 "上载" 字段或选择 "**浏览文件**" 来上载程序包。</span><span class="sxs-lookup"><span data-stu-id="48325-123">Upload the package by dragging it into the upload field or by selecting **Browse your files**.</span></span>  <span data-ttu-id="48325-124">程序包页面验证扩展 zip 文件，并显示上载的**成功或失败状态**。</span><span class="sxs-lookup"><span data-stu-id="48325-124">The Package page validates the Extensions zip file and displays that **success or failure status of your upload**.</span></span>  <span data-ttu-id="48325-125">如果程序包通过验证，则为已成功上载该文件，你将看到一条成功消息。</span><span class="sxs-lookup"><span data-stu-id="48325-125">If the package passes validation; it is uploaded successfully and you see a success message.</span></span>  <span data-ttu-id="48325-126">如果程序包未通过验证，则为程序包未被接受，您将看到一条错误消息。</span><span class="sxs-lookup"><span data-stu-id="48325-126">If the package fails validation; the package is not accepted and you see an error message.</span></span>  <span data-ttu-id="48325-127">如果程序包中存在错误，请解决这些问题，然后再次尝试上载。</span><span class="sxs-lookup"><span data-stu-id="48325-127">If there are errors in the package, resolve the issues and try uploading it again.</span></span>  
+## <span data-ttu-id="3aafb-127">将扩展提交到 Microsoft Edge 加载项存储</span><span class="sxs-lookup"><span data-stu-id="3aafb-127">Submit your extension to Microsoft Edge add-ons store</span></span>  
 
-<span data-ttu-id="48325-128">成功上载后，查看扩展详细信息，然后单击 "**下一步**" 以继续。</span><span class="sxs-lookup"><span data-stu-id="48325-128">After successful upload, review your Extension details and click **Next** to proceed.</span></span>  
+<span data-ttu-id="3aafb-128">若要将扩展提交到 [合作伙伴中心][MicrosoftPartnerCenter]，请使用以下步骤。</span><span class="sxs-lookup"><span data-stu-id="3aafb-128">To submit your extension to [Partner Center][MicrosoftPartnerCenter], use the following steps.</span></span>  
 
-## <span data-ttu-id="48325-129">步骤3：提供可用性详细信息</span><span class="sxs-lookup"><span data-stu-id="48325-129">Step 3: Provide Availability details</span></span>  
+#### <span data-ttu-id="3aafb-129">步骤1：开始新提交</span><span class="sxs-lookup"><span data-stu-id="3aafb-129">Step 1:  Start a new submission</span></span>  
 
-### <span data-ttu-id="48325-130">定义可见性</span><span class="sxs-lookup"><span data-stu-id="48325-130">Define Visibility</span></span>  
+<span data-ttu-id="3aafb-130">转到[开发人员仪表板][MicrosoftPartnerCenter]，然后在 "**概述**" 页上选择 "**新建扩展名**"。</span><span class="sxs-lookup"><span data-stu-id="3aafb-130">Go to the [developer dashboard][MicrosoftPartnerCenter] and select **Create new extension** on the **Overview** page.</span></span>  
 
-<span data-ttu-id="48325-131">选择 "**可见性**" 选项以定义可能发现并获取您的扩展的受众。</span><span class="sxs-lookup"><span data-stu-id="48325-131">Select a **Visibility** option to define the audience who may discover and acquire your Extension.</span></span>  <span data-ttu-id="48325-132">这为你提供了指定用户是否应在 Microsoft Edge Addons 中找到你的扩展的选项，或者根本看不到该列表。</span><span class="sxs-lookup"><span data-stu-id="48325-132">This gives you the option to specify whether users should find your Extension in Microsoft Edge Addons or see the listing at all.</span></span>  <span data-ttu-id="48325-133">当前，在 "可见性" 下有两个选项：</span><span class="sxs-lookup"><span data-stu-id="48325-133">Currently, you have two options under visibility:</span></span>  
+#### <span data-ttu-id="3aafb-131">步骤2：上载扩展包</span><span class="sxs-lookup"><span data-stu-id="3aafb-131">Step 2:  Upload the extension package</span></span>  
 
-*   `Public`  
-    <span data-ttu-id="48325-134">这是默认选项。</span><span class="sxs-lookup"><span data-stu-id="48325-134">This is the default option.</span></span>  
-    <span data-ttu-id="48325-135">如果你选择 `Public` ，你的扩展可供 Microsoft Edge Addons 中的每个人使用和发现。</span><span class="sxs-lookup"><span data-stu-id="48325-135">If you select `Public`, your Extension is available and discoverable to everyone in Microsoft Edge Addons.</span></span>  <span data-ttu-id="48325-136">如果你希望在 Microsoft Edge Addons 中列出你的扩展，请保留此选项，以便用户通过搜索、浏览和扩展的直接链接进行查找。</span><span class="sxs-lookup"><span data-stu-id="48325-136">Leave this option selected if you want your Extension to be listed in Microsoft Edge Addons for users to find via searching, browsing, and the direct link of your Extension.</span></span>  
+<span data-ttu-id="3aafb-132">使用 " **程序包** " 页面上载您的扩展程序包的 zip 文件。</span><span class="sxs-lookup"><span data-stu-id="3aafb-132">Use the **Packages** page to upload the zip file of your extension package.</span></span>  <span data-ttu-id="3aafb-133">您一次只能上载一个程序包。</span><span class="sxs-lookup"><span data-stu-id="3aafb-133">You are only able to upload one package at a time.</span></span>  <span data-ttu-id="3aafb-134">如果 **软件包页面上的软件包** 上载未成功，您将无法继续提交。</span><span class="sxs-lookup"><span data-stu-id="3aafb-134">You are not able to continue with the submission if the package upload is not successful on the **Packages** page.</span></span>  
+
+<span data-ttu-id="3aafb-135">通过将程序包拖到 "上载" 字段，或选择 " **浏览文件**" 来上载程序包。</span><span class="sxs-lookup"><span data-stu-id="3aafb-135">Upload the package by either dragging the package to the upload field, or by selecting **Browse your files**.</span></span>  <span data-ttu-id="3aafb-136">上载程序包后，将验证程序包。</span><span class="sxs-lookup"><span data-stu-id="3aafb-136">Once the package is uploaded, your package is validated.</span></span>  <span data-ttu-id="3aafb-137">验证成功后，查看扩展详细信息，然后选择 " **下一步** " 以继续。</span><span class="sxs-lookup"><span data-stu-id="3aafb-137">Once validation succeeds, review the extension details, and then select **Next** to continue.</span></span>  <span data-ttu-id="3aafb-138">如果存在验证错误，请解决问题并再次尝试上载。</span><span class="sxs-lookup"><span data-stu-id="3aafb-138">If there are validation errors, resolve the issues and try uploading again.</span></span>  
+
+#### <span data-ttu-id="3aafb-139">步骤3：提供可用性详细信息</span><span class="sxs-lookup"><span data-stu-id="3aafb-139">Step 3:  Provide Availability details</span></span>  
+
+<span data-ttu-id="3aafb-140">在 " **可用性** " 页面上，输入有关扩展可用性的以下信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-140">On the **Availability** page, enter the following information about the availability of your extension.</span></span>  
+
+##### <span data-ttu-id="3aafb-141">可见性</span><span class="sxs-lookup"><span data-stu-id="3aafb-141">Visibility</span></span>  
+
+<span data-ttu-id="3aafb-142">选择以下可见性选项之一，定义是否可在 Microsoft Edge 加载项目录中发现你的扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-142">Choose one of the following visibility options to define if your extension is discoverable in the Microsoft Edge add-ons catalog.</span></span>  
+
+*   `Public` <span data-ttu-id="3aafb-143">\ (默认值 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-143">\(default\)</span></span>  
+    <span data-ttu-id="3aafb-144">公共允许通过搜索、浏览 Microsoft Edge 加载项目录或在 Microsoft Edge 加载项存储中使用您的扩展的列表 URL，让所有人都能够发现扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-144">Public allows extensions to be discoverable to everyone through search, browsing in the Microsoft Edge add-ons catalog, or using the listing URL to your extension in the Microsoft Edge add-ons store.</span></span>  <span data-ttu-id="3aafb-145">"扩展 **概述** " 页面上的 "合作伙伴中心" 仪表板上提供了 "列表" URL。</span><span class="sxs-lookup"><span data-stu-id="3aafb-145">The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.</span></span>  
 
 *   `Hidden`  
-    <span data-ttu-id="48325-137">如果你选择 `Hidden` ，你的扩展将在 Microsoft Edge Addons 中隐藏在用户搜索或浏览中，你必须共享你的列表 URL 才能分发你的扩展。</span><span class="sxs-lookup"><span data-stu-id="48325-137">If you select `Hidden`, your Extension is hidden in Microsoft Edge Addons from users searching or browsing; you must share your listing URL to distribute your Extension.</span></span>  <span data-ttu-id="48325-138">具有列表直接链接的用户可能会在 Microsoft Edge 中下载它 \ （你可能会在扩展提交的**扩展概述**页面下找到你的列表 URL \）。</span><span class="sxs-lookup"><span data-stu-id="48325-138">Users who have the direct link to the listing may download it on Microsoft Edge \(you may find your listing URL under **Extension Overview** page of Extension submission\).</span></span>  
+    <span data-ttu-id="3aafb-146">隐藏从搜索结果中删除扩展名或在 Microsoft Edge 加载项目录中浏览。</span><span class="sxs-lookup"><span data-stu-id="3aafb-146">Hidden removes extensions from search results or browsing in the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="3aafb-147">若要在 Microsoft Edge 加载项存储中分发隐藏的扩展，必须与客户共享列表 URL 和扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-147">To distribute hidden extensions in the Microsoft Edge add-ons store, you must share the listing URL to the extension with your customers.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="48325-139">如果你将扩展提交为 "**公共**"，然后再将其更改为 "**私人性质**"，则在其公开时安装了该扩展的用户将继续拥有访问权限并收到未来更新。</span><span class="sxs-lookup"><span data-stu-id="48325-139">If you submit an Extension as **Public** and later change it to **Private**, Users who installed the Extension when it was public continue to have access and receive future updates.</span></span>  
+> <span data-ttu-id="3aafb-148">您可以将您的扩展的可见性从 **公共** 更改为 **隐藏**。</span><span class="sxs-lookup"><span data-stu-id="3aafb-148">You may change the visibility of your extension from **Public** to **Hidden**.</span></span>  <span data-ttu-id="3aafb-149">当可见性设置为 "公共" 时，安装您的扩展的用户将保留对您的扩展的访问，并接收任何通过 Microsoft Edge 加载项网站提供的更新。</span><span class="sxs-lookup"><span data-stu-id="3aafb-149">Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge add-ons website.</span></span>  
 
-### <span data-ttu-id="48325-140">定义市场</span><span class="sxs-lookup"><span data-stu-id="48325-140">Define markets</span></span>  
+##### <span data-ttu-id="3aafb-150">市场</span><span class="sxs-lookup"><span data-stu-id="3aafb-150">Markets</span></span>  
 
-<span data-ttu-id="48325-141">您必须定义您要在其中提供扩展的特定市场，请在 "**可用性**" 页面上的 "**市场**" 部分中选择 "**显示选项**"。</span><span class="sxs-lookup"><span data-stu-id="48325-141">You must define the specific markets in which you are offering your Extension, select **Show options** in the **Markets** section on the **Availability** page.</span></span>  <span data-ttu-id="48325-142">将显示 "市场选择" 弹出窗口，您应在其中选择市场。</span><span class="sxs-lookup"><span data-stu-id="48325-142">The Market selection pop-up window is displayed, where you should choose the markets.</span></span>  <span data-ttu-id="48325-143">默认情况下，所有市场均处于选中状态，包括以后可能添加的任何**市场**。</span><span class="sxs-lookup"><span data-stu-id="48325-143">By default, all markets are selected, including any **future markets** that may be added later.</span></span>  <span data-ttu-id="48325-144">你可以取消选择单个市场以排除它们，或者单击 "**取消全选**"，然后添加你选择的单个市场。</span><span class="sxs-lookup"><span data-stu-id="48325-144">You may deselect individual markets to exclude them, or you may click **Unselect all** and then add individual markets of your choice.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="48325-145">如果用户已在特定市场中拥有您的扩展，并且稍后删除该市场，则已在该市场中具有扩展的用户可能会继续使用它，但不会获取你提交的更新。</span><span class="sxs-lookup"><span data-stu-id="48325-145">If users already have your Extension in a certain market, and you later remove that market, users who already has the Extension in that market may continue to use it, but they do not get the later updates you submit.</span></span>  
-
-<span data-ttu-id="48325-146">单击 "**保存**" 以转到 "**属性**" 部分。</span><span class="sxs-lookup"><span data-stu-id="48325-146">Click **Save** to proceed to **Properties** section.</span></span>  
-
-## <span data-ttu-id="48325-147">步骤4：选择扩展的属性</span><span class="sxs-lookup"><span data-stu-id="48325-147">Step 4: Select Properties for Your Extension</span></span>  
-
-### <span data-ttu-id="48325-148">扩展属性</span><span class="sxs-lookup"><span data-stu-id="48325-148">Extension properties</span></span>  
-
-*   [<span data-ttu-id="48325-149">类型</span><span class="sxs-lookup"><span data-stu-id="48325-149">Category</span></span>](#category)  
-*   [<span data-ttu-id="48325-150">隐私策略要求</span><span class="sxs-lookup"><span data-stu-id="48325-150">Privacy policy requirements</span></span>](#privacy-policy-requirements)  
-*   [<span data-ttu-id="48325-151">隐私策略 URL</span><span class="sxs-lookup"><span data-stu-id="48325-151">Privacy policy URL</span></span>](#privacy-policy-url)  
-*   [<span data-ttu-id="48325-152">网站 URL</span><span class="sxs-lookup"><span data-stu-id="48325-152">Website URL</span></span>](#website-url)  
-*   [<span data-ttu-id="48325-153">支持 URL/电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="48325-153">Support URL/email address</span></span>](#support-urlemail-address)  
-*   [<span data-ttu-id="48325-154">扩展分级</span><span class="sxs-lookup"><span data-stu-id="48325-154">Extension Rating</span></span>](#extension-rating)  
-
-#### <span data-ttu-id="48325-155">类型</span><span class="sxs-lookup"><span data-stu-id="48325-155">Category</span></span>  
-
-<span data-ttu-id="48325-156">在右侧类别中列出您的扩展可帮助用户轻松地找到您的扩展并了解更多相关信息。</span><span class="sxs-lookup"><span data-stu-id="48325-156">Listing your Extension in the right category helps users find your Extension easily and understand more about it.</span></span>  <span data-ttu-id="48325-157">选择最能描述您的扩展的类别。</span><span class="sxs-lookup"><span data-stu-id="48325-157">Select a Category that best describes your Extension.</span></span>  
-
-<span data-ttu-id="48325-158">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-158">**Possible Values**:</span></span>  
-
-*   `Accessibility`  
-*   `Blogging`  
-*   `Developer Tools`  
-*   `Fun`  
-*   `News & Weather`  
-*   `Photos`  
-*   `Productivity`  
-*   `Search Tools`  
-*   `Shopping`  
-*   `Social & Communication`  
-*   `Sports`  
-
-#### <span data-ttu-id="48325-159">隐私策略要求</span><span class="sxs-lookup"><span data-stu-id="48325-159">Privacy policy requirements</span></span>  
-
-<span data-ttu-id="48325-160">指明您的扩展是访问、收集还是传输任何个人信息。</span><span class="sxs-lookup"><span data-stu-id="48325-160">Indicate whether your Extension accesses, collects, or transmits any personal information.</span></span>  
+<span data-ttu-id="3aafb-151">定义计划提供您的扩展的特定市场。</span><span class="sxs-lookup"><span data-stu-id="3aafb-151">Define the specific markets in which you plan to offer your extension.</span></span>  <span data-ttu-id="3aafb-152">默认情况下，所有市场均已选中，包括以后添加的任何未来市场。</span><span class="sxs-lookup"><span data-stu-id="3aafb-152">By default, all markets have been selected including any future markets that are added later.</span></span>  <span data-ttu-id="3aafb-153">或者，选择 " **更改市场**"，选择特定市场。</span><span class="sxs-lookup"><span data-stu-id="3aafb-153">Alternatively, choose specific markets by selecting **Change markets**.</span></span>  <span data-ttu-id="3aafb-154">取消选择单个市场以排除它们，或选择 " **取消全选** "，然后添加你选择的单个市场。</span><span class="sxs-lookup"><span data-stu-id="3aafb-154">Deselect individual markets to exclude them, or select **Unselect all** and then add individual markets of your choice.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="48325-161">如果你的扩展要求隐私策略，但你没有提供，则你的提交可能无法通过认证。</span><span class="sxs-lookup"><span data-stu-id="48325-161">If your Extension requires a privacy policy and you have not provided one, your submission may fail certification.</span></span>  
+> <span data-ttu-id="3aafb-155">你可以更改提供扩展的市场。</span><span class="sxs-lookup"><span data-stu-id="3aafb-155">You may change the markets where your extension is offered.</span></span>  <span data-ttu-id="3aafb-156">已安装您的扩展的用户在其市场中可用时，将保留对您的扩展的访问。</span><span class="sxs-lookup"><span data-stu-id="3aafb-156">Users who installed your extension while it was available in their market retain access to your extension.</span></span>  <span data-ttu-id="3aafb-157">但是，你的用户将无法再访问提交到 Microsoft Edge 加载项目录的任何未来更新。</span><span class="sxs-lookup"><span data-stu-id="3aafb-157">However, your users no longer have access to any future updates submitted to the Microsoft Edge add-ons catalog.</span></span>  
 
-<span data-ttu-id="48325-162">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-162">**Possible Values**:</span></span>  
+<span data-ttu-id="3aafb-158">选择 " **保存** " 以继续转到 " **属性** " 部分。</span><span class="sxs-lookup"><span data-stu-id="3aafb-158">Select **Save** to continue to the **Properties** section.</span></span>  
 
-*   `No`<span data-ttu-id="48325-163">：隐私策略 URL 是可选的。</span><span class="sxs-lookup"><span data-stu-id="48325-163">:  A privacy policy URL is optional.</span></span>  
-*   `Yes`<span data-ttu-id="48325-164">：需要隐私策略 URL。</span><span class="sxs-lookup"><span data-stu-id="48325-164">:  A privacy policy URL is required.</span></span>  
+#### <span data-ttu-id="3aafb-159">步骤4：选择扩展的属性</span><span class="sxs-lookup"><span data-stu-id="3aafb-159">Step 4: Select Properties for your extension</span></span>  
 
-#### <span data-ttu-id="48325-165">隐私策略 URL</span><span class="sxs-lookup"><span data-stu-id="48325-165">Privacy policy URL</span></span>  
+<span data-ttu-id="3aafb-160">在 " **属性" 页**上，输入以下信息以指定扩展的属性。</span><span class="sxs-lookup"><span data-stu-id="3aafb-160">On the **Properties page**, enter the following information to specify properties of your extension.</span></span>  <span data-ttu-id="3aafb-161">将在 Microsoft Edge 加载项目录中向用户显示这些属性。</span><span class="sxs-lookup"><span data-stu-id="3aafb-161">The properties are displayed to users in the Microsoft Edge add-ons catalog.</span></span>  
 
-<span data-ttu-id="48325-166">您有责任确保您的分机符合隐私法律和法规，并根据需要提供有效的隐私政策 URL。</span><span class="sxs-lookup"><span data-stu-id="48325-166">You are responsible for ensuring your Extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if required.</span></span>  <span data-ttu-id="48325-167">如果你的扩展正在访问、传输或收集任何个人信息，则必须提供隐私策略 URL。</span><span class="sxs-lookup"><span data-stu-id="48325-167">You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your Extension.</span></span>  
-<span data-ttu-id="48325-168">若要确定你的扩展是否需要隐私策略，请查看[Microsoft Edge 开发人员协议][MicrosoftAppDeveloperAgreement]和[Microsoft Edge Addons 目录开发人员策略文档][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。</span><span class="sxs-lookup"><span data-stu-id="48325-168">To determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].</span></span>  
+| <span data-ttu-id="3aafb-162">扩展属性名称</span><span class="sxs-lookup"><span data-stu-id="3aafb-162">Extension property name</span></span> | <span data-ttu-id="3aafb-163">描述</span><span class="sxs-lookup"><span data-stu-id="3aafb-163">Description</span></span> |  
+|:--- |:--- |  
+| <span data-ttu-id="3aafb-164">类别 \ (必需 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-164">Category \(required\)</span></span> | <span data-ttu-id="3aafb-165">最能描述您的分机的类别。</span><span class="sxs-lookup"><span data-stu-id="3aafb-165">The category that best describes your extension.</span></span>  <span data-ttu-id="3aafb-166">在右侧类别中列出您的扩展可帮助用户轻松地找到您的扩展并了解更多相关信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-166">Listing your extension in the right category helps users find your extension easily and understand more about it.</span></span>  |  
+| <span data-ttu-id="3aafb-167">隐私策略要求 \ (必需 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-167">Privacy policy requirements \(required\)</span></span> | <span data-ttu-id="3aafb-168">指示你的扩展是否访问、收集或传输任何个人信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-168">Indicate if your extension accesses, collects, or transmits any personal information.</span></span>  <span data-ttu-id="3aafb-169">如果选择 **"是"** ，并且不提供，则你的扩展可能会失败认证步骤 `Privacy policy URL` 。</span><span class="sxs-lookup"><span data-stu-id="3aafb-169">Your extension may fail the certification step if you choose **Yes** and you do not provide a `Privacy policy URL`.</span></span>  |  
+| <span data-ttu-id="3aafb-170">隐私策略 URL</span><span class="sxs-lookup"><span data-stu-id="3aafb-170">Privacy policy URL</span></span> | <span data-ttu-id="3aafb-171">有效的隐私策略 URL，用于传达您的扩展如何遵守隐私法律和法规。</span><span class="sxs-lookup"><span data-stu-id="3aafb-171">A valid privacy policy URL to communicate how your extension complies with privacy laws and regulations.</span></span>  <span data-ttu-id="3aafb-172">您有责任确保您的分机符合隐私法律和法规，并提供有效的隐私政策 URL （如有必要）。</span><span class="sxs-lookup"><span data-stu-id="3aafb-172">You are responsible for ensuring your extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if necessary.</span></span>  <span data-ttu-id="3aafb-173">如果你的扩展正在访问、传输或收集任何个人信息，请提供隐私策略 URL。</span><span class="sxs-lookup"><span data-stu-id="3aafb-173">Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.</span></span>  <span data-ttu-id="3aafb-174">若要确定你的扩展是否需要隐私策略，请转到 [Microsoft Edge 开发人员协议][MicrosoftAppDeveloperAgreement] 和 [microsoft edge 加载项目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。</span><span class="sxs-lookup"><span data-stu-id="3aafb-174">To determine if your extension requires a privacy policy, go to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].</span></span>  |  
+| <span data-ttu-id="3aafb-175">网站 URL</span><span class="sxs-lookup"><span data-stu-id="3aafb-175">Website URL</span></span> | <span data-ttu-id="3aafb-176">提供有关扩展的其他信息的网页。</span><span class="sxs-lookup"><span data-stu-id="3aafb-176">A web page that provides additional information about your extension.</span></span>  <span data-ttu-id="3aafb-177">`Website URL`必须指向您自己的网站上的页面，而不是 Microsoft Edge 加载项目录中您的扩展的 web 列表。</span><span class="sxs-lookup"><span data-stu-id="3aafb-177">The `Website URL` must point to a page on your own website, not the web listing for your extension in the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="3aafb-178">`Website URL`可帮助用户了解有关您的扩展、其功能和任何其他相关信息的更多信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-178">The `Website URL` helps users learn more about your extension, its features, and any other relevant information.</span></span>  |  
+| <span data-ttu-id="3aafb-179">支持联系人详细信息</span><span class="sxs-lookup"><span data-stu-id="3aafb-179">Support contact details</span></span> | <span data-ttu-id="3aafb-180">您的支持网页的 URL，或电子邮件地址以联系支持团队。</span><span class="sxs-lookup"><span data-stu-id="3aafb-180">The URL to your support webpage, or the email address to contact your support team.</span></span>  |  
+| <span data-ttu-id="3aafb-181">成人内容</span><span class="sxs-lookup"><span data-stu-id="3aafb-181">Mature content</span></span> | <span data-ttu-id="3aafb-182">用于指定你的扩展是否包含成人内容的复选框。</span><span class="sxs-lookup"><span data-stu-id="3aafb-182">Checkbox to specify if your extension includes mature content.</span></span>  <span data-ttu-id="3aafb-183">扩展评级有助于确定你的扩展的目标受众的相应年龄组。</span><span class="sxs-lookup"><span data-stu-id="3aafb-183">Extension rating helps determine the appropriate age group of the target audience of your extension.</span></span>  <span data-ttu-id="3aafb-184">若要帮助确定你的分机号是否为成人内容，请转到 [Microsoft Edge 加载项目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。</span><span class="sxs-lookup"><span data-stu-id="3aafb-184">To help determine if your extension has mature content, go to [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].</span></span>  |  
 
-<span data-ttu-id="48325-169">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-169">**Possible Values**:</span></span>  
+<span data-ttu-id="3aafb-185">选择 " **保存** " 以继续转到 " **应用商店节目表** " 部分。</span><span class="sxs-lookup"><span data-stu-id="3aafb-185">Select **Save** to continue to the **Store listings** section.</span></span>  
 
-*   `{url}`  
+#### <span data-ttu-id="3aafb-186">步骤5：添加你的扩展的应用商店列表详细信息</span><span class="sxs-lookup"><span data-stu-id="3aafb-186">Step 5: Add Store listing details for your extension</span></span>  
 
-#### <span data-ttu-id="48325-170">网站 URL</span><span class="sxs-lookup"><span data-stu-id="48325-170">Website URL</span></span>  
-
-<span data-ttu-id="48325-171">此属性是可选的。</span><span class="sxs-lookup"><span data-stu-id="48325-171">This property is Optional.</span></span>  
-<span data-ttu-id="48325-172">用于您的扩展的网页的 URL。</span><span class="sxs-lookup"><span data-stu-id="48325-172">The URL of the web page for your Extension.</span></span>  <span data-ttu-id="48325-173">此 URL 必须指向您自己的网站上的页面，而不是 Microsoft Edge Addons 中的扩展 web 列表。</span><span class="sxs-lookup"><span data-stu-id="48325-173">This URL must point to a page on your own website, not the web listing for your Extension in Microsoft Edge Addons.</span></span>  
-
-<span data-ttu-id="48325-174">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-174">**Possible Values**:</span></span>  
-
-*   `{url}`  
-
-#### <span data-ttu-id="48325-175">支持 URL/电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="48325-175">Support URL/email address</span></span>  
-
-<span data-ttu-id="48325-176">此属性是可选的。</span><span class="sxs-lookup"><span data-stu-id="48325-176">This property is Optional.</span></span>  
-<span data-ttu-id="48325-177">用户通过您的分机支持的网页的 URL，或用于联系您的电子邮件地址以获得支持。</span><span class="sxs-lookup"><span data-stu-id="48325-177">The URL of the web page where users go for support with your Extension, or an email address to contact you for support.</span></span>  <span data-ttu-id="48325-178">你包括所有提交的支持信息，以便你的用户知道如何获取来自你的支持。</span><span class="sxs-lookup"><span data-stu-id="48325-178">You include support information for all submissions, so that your users know how to get support from you.</span></span>  
-
-<span data-ttu-id="48325-179">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-179">**Possible Values**:</span></span>  
-
-*   `{email_address}`  
-*   `{url}`  
-
-#### <span data-ttu-id="48325-180">扩展分级</span><span class="sxs-lookup"><span data-stu-id="48325-180">Extension Rating</span></span>  
-
-<span data-ttu-id="48325-181">扩展评级可帮助我们确定你的扩展的目标受众的年龄。</span><span class="sxs-lookup"><span data-stu-id="48325-181">Extension rating helps us determine the age of the target audience of your Extension.</span></span>  
-<span data-ttu-id="48325-182">若要帮助确定你的扩展是否具有成人内容，请查看[Microsoft Edge Addons 目录开发人员策略文档][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。</span><span class="sxs-lookup"><span data-stu-id="48325-182">To help you determine if your Extensions has a mature content, review the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].</span></span>  
-
-<span data-ttu-id="48325-183">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-183">**Possible Values**:</span></span>  
-
-*   <span data-ttu-id="48325-184">成人 \ （checkbox \）：如果您的分机包含任何成人内容，请选中此框。</span><span class="sxs-lookup"><span data-stu-id="48325-184">Mature \(checkbox\): Check this box if your Extension contains any mature content.</span></span>  <span data-ttu-id="48325-185">如果你为扩展选择 "成人"，你的列表将提供单独的标记，指示扩展包含成人内容。</span><span class="sxs-lookup"><span data-stu-id="48325-185">If you select mature for your Extension, your listing is available with a separate tag to indicate that the Extension contains mature content.</span></span>  
-
-<span data-ttu-id="48325-186">单击 "**保存**" 以转到 "清单" 部分。</span><span class="sxs-lookup"><span data-stu-id="48325-186">Click **Save** to proceed to listing section.</span></span>  
-
-## <span data-ttu-id="48325-187">步骤5：为您的扩展添加节目表信息</span><span class="sxs-lookup"><span data-stu-id="48325-187">Step 5: Add Listings Information for Your Extension</span></span>  
-
-<span data-ttu-id="48325-188">这是用户在 Microsoft Edge Addons 中查看您的列表时看到的信息。</span><span class="sxs-lookup"><span data-stu-id="48325-188">This is the information that users see when viewing your listing in Microsoft Edge Addons.</span></span>  <span data-ttu-id="48325-189">列表中的许多字段是可选的，但我们建议提供尽可能多的信息，以使你的清单与众不同。 要视为完整的 Microsoft Edge Addons 中的列表所需的最低要求是在扩展程序包中提及的每种语言的[文本说明](#description)、[扩展徽标](#store-logo)和[小促销图块](#small-promotional-tile)。</span><span class="sxs-lookup"><span data-stu-id="48325-189">Many of the fields in a listing are optional, but we suggest providing as much information as possible to make your listing stand out.  The minimum required for your listing in Microsoft Edge Addons to be considered complete is the [text description](#description), [Extension logo](#store-logo), and [small promotional tile](#small-promotional-tile) in each language mentioned in your Extension package.</span></span>  
-
-### <span data-ttu-id="48325-190">商店的 "待售房产" 域</span><span class="sxs-lookup"><span data-stu-id="48325-190">Store Listing fields</span></span>  
-
-*   [<span data-ttu-id="48325-191">应用商店一览语言</span><span class="sxs-lookup"><span data-stu-id="48325-191">Store listing languages</span></span>](#store-listing-languages)  
-*   [<span data-ttu-id="48325-192">应用商店显示名称</span><span class="sxs-lookup"><span data-stu-id="48325-192">Store display name</span></span>](#store-display-name)  
-*   [<span data-ttu-id="48325-193">描述</span><span class="sxs-lookup"><span data-stu-id="48325-193">Description</span></span>](#description)  
-*   [<span data-ttu-id="48325-194">应用商店徽标</span><span class="sxs-lookup"><span data-stu-id="48325-194">Store logo</span></span>](#store-logo)  
-*   [<span data-ttu-id="48325-195">小型促销磁贴</span><span class="sxs-lookup"><span data-stu-id="48325-195">Small promotional tile</span></span>](#small-promotional-tile)  
-*   [<span data-ttu-id="48325-196">媒体</span><span class="sxs-lookup"><span data-stu-id="48325-196">Media</span></span>](#media)  
-*   [<span data-ttu-id="48325-197">简短说明</span><span class="sxs-lookup"><span data-stu-id="48325-197">Short description</span></span>](#short-description)  
-*   [<span data-ttu-id="48325-198">搜索词</span><span class="sxs-lookup"><span data-stu-id="48325-198">Search terms</span></span>](#search-terms)  
-
-#### <span data-ttu-id="48325-199">应用商店一览语言</span><span class="sxs-lookup"><span data-stu-id="48325-199">Store listing languages</span></span>  
-
-<span data-ttu-id="48325-200">如果您的扩展程序包支持多种语言，则您的扩展名必须具有每个语言的一个列表页。</span><span class="sxs-lookup"><span data-stu-id="48325-200">If your Extension package supports multiple languages, your Extension must have a listing page for each one.</span></span>  
-<span data-ttu-id="48325-201">你必须为每种语言单独完成列表详细信息 \ （文本说明、图像等），即使你对每种语言使用相同的内容也是如此。</span><span class="sxs-lookup"><span data-stu-id="48325-201">You must complete listing details \(text description, images, and so on\) for each language separately even if you are using the same content for each language.</span></span>  <span data-ttu-id="48325-202">如果您的扩展是以多种语言本地化的，这些语言将显示在 "列出" 页面的顶部。</span><span class="sxs-lookup"><span data-stu-id="48325-202">If your Extension is localized in more than one language, those languages are displayed at the top of listing page.</span></span>  
-
-1.  <span data-ttu-id="48325-203">从 "**语言**" 下拉列表中选择任意一种语言名称。</span><span class="sxs-lookup"><span data-stu-id="48325-203">Select any one language name from **Languages** drop-down list.</span></span>  
-1.  <span data-ttu-id="48325-204">填写列表详细信息。</span><span class="sxs-lookup"><span data-stu-id="48325-204">Fill the listing details.</span></span>  
-1.  <span data-ttu-id="48325-205">单击 **“保存”**。</span><span class="sxs-lookup"><span data-stu-id="48325-205">Click **Save**.</span></span>  
-1.  <span data-ttu-id="48325-206">对所有支持的语言重复上述操作。</span><span class="sxs-lookup"><span data-stu-id="48325-206">Repeat for all of your supported languages.</span></span>  
+<span data-ttu-id="3aafb-187">在 Microsoft Edge 加载项目录上访问列表的用户将向用户显示下节中提供的信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-187">The information provided in the following section is displayed to users that visit your listing on the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="3aafb-188">虽然某些字段是可选的，但你应该提供尽可能多的信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-188">Even though some fields are optional, you should provide as much information as possible.</span></span>  <span data-ttu-id="3aafb-189">在应用商店中列出的扩展所需的最低详细信息（针对扩展程序包中提及的每种语言）是 **说明** 和 **扩展存储徽标**。</span><span class="sxs-lookup"><span data-stu-id="3aafb-189">The minimum required details for your extension for listing in the store, for each language mentioned in your extension package, are **Description** and **Extension Store logo**.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="48325-207">若要在 Microsoft Edge Addons 中为您的列表添加或删除语言，必须修改扩展程序包支持的语言列表，然后重新上传。</span><span class="sxs-lookup"><span data-stu-id="48325-207">To add or remove languages for your listing in Microsoft Edge Addons, you must modify the list of languages supported by your Extension package and re-upload it.</span></span>  
+> <span data-ttu-id="3aafb-190">必须填写扩展 zip 包中提及的每种语言所需的最低应用商店列表详细信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-190">The minimum required store listing details must be filled-out for each language mentioned in your extension zip package.</span></span>  <span data-ttu-id="3aafb-191">若要在 Microsoft Edge 加载项目录上的应用商店中添加或删除语言，必须修改扩展包中的扩展支持的语言列表，创建新的扩展名包，然后重新上载。</span><span class="sxs-lookup"><span data-stu-id="3aafb-191">To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, you must modify the list of languages supported by your extension in the extension package, create a new extension package, and re-upload it.</span></span>  
 
-<span data-ttu-id="48325-208">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-208">**Possible Values**:</span></span>  
+| <span data-ttu-id="3aafb-192">应用商店列表属性名称</span><span class="sxs-lookup"><span data-stu-id="3aafb-192">Store listing property name</span></span> | <span data-ttu-id="3aafb-193">描述</span><span class="sxs-lookup"><span data-stu-id="3aafb-193">Description</span></span> |  
+|:--- |:--- |  
+| <span data-ttu-id="3aafb-194">应用商店的待售房产语言 \ (必需 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-194">Store listing languages \(required\)</span></span> | <span data-ttu-id="3aafb-195">从 " **语言** " 下拉列表中选择一种语言，然后输入该语言的应用商店详细信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-195">Select a language from the **Languages** dropdown and enter the store listing details for that language.</span></span>  <span data-ttu-id="3aafb-196">支持多种语言的扩展必须为每种支持的语言提供 "应用商店" 列表页面。</span><span class="sxs-lookup"><span data-stu-id="3aafb-196">Extensions that support multiple languages must provide a store listing page for each supported language.</span></span>  |  
+| <span data-ttu-id="3aafb-197">显示名称 \ (必需 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-197">Display name \(required\)</span></span> | <span data-ttu-id="3aafb-198">在您的扩展的清单文件中指定的扩展名的名称。</span><span class="sxs-lookup"><span data-stu-id="3aafb-198">The name of your extension specified in the manifest file of your extension.</span></span>  <span data-ttu-id="3aafb-199">若要在提交后更改应用商店的显示名称，你可以更新清单文件中的名称，创建新的扩展包，然后重新上载它。</span><span class="sxs-lookup"><span data-stu-id="3aafb-199">To change the store display name after submission, you may update the name in the manifest file, create a new extension package, and then re-upload it.</span></span>  |  
+| <span data-ttu-id="3aafb-200">说明 \ (必需 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-200">Description \(required\)</span></span> | <span data-ttu-id="3aafb-201">"说明" 字段重点介绍扩展的功能、用户应安装的原因或用户需要了解的其他相关信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-201">The description field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.</span></span>  <span data-ttu-id="3aafb-202">它应少于10000个字符。</span><span class="sxs-lookup"><span data-stu-id="3aafb-202">It should be less than 10,000 characters.</span></span>  |  
+| <span data-ttu-id="3aafb-203">扩展存储徽标 \ (必需 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-203">Extension Store logo \(required\)</span></span> | <span data-ttu-id="3aafb-204">表示你的公司或扩展徽标的图像，其纵横比为1，而建议的大小为 300 x 300 像素。</span><span class="sxs-lookup"><span data-stu-id="3aafb-204">An image that represents your company or extension logo with an aspect ratio of 1 and recommended size of 300 x 300 pixels.</span></span>  |  
+| <span data-ttu-id="3aafb-205">小促销磁贴 (可选 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-205">Small promotional tile \(optional\)</span></span> | <span data-ttu-id="3aafb-206">`Small promotional tile`图像用于在应用商店中与其他扩展一起显示您的扩展名。</span><span class="sxs-lookup"><span data-stu-id="3aafb-206">The `Small promotional tile` image is used to display your extension alongside other extensions in the store.</span></span>  <span data-ttu-id="3aafb-207">图像的大小应为 440 x 280 像素。</span><span class="sxs-lookup"><span data-stu-id="3aafb-207">The size of the image should be 440 x 280 pixels.</span></span>  |  
+| <span data-ttu-id="3aafb-208">屏幕截图 \ (可选 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-208">Screenshots \(optional\)</span></span> | <span data-ttu-id="3aafb-209">你最多可以提交10个屏幕截图来详细描述你的扩展的功能。</span><span class="sxs-lookup"><span data-stu-id="3aafb-209">You may submit a maximum of 10 screenshots describing the functionality of your extension in detail.</span></span>  <span data-ttu-id="3aafb-210">屏幕截图的大小必须是 640 x 480 像素或 1280 x 800 像素。</span><span class="sxs-lookup"><span data-stu-id="3aafb-210">The size of the screenshots must be either 640 x 480 pixels, or 1280 x 800 pixels.</span></span>  |  
+| <span data-ttu-id="3aafb-211">大型促销磁贴 (可选 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-211">Large promotional tile \(optional\)</span></span> | <span data-ttu-id="3aafb-212">在应用商店中，较大的促销图块用于 Microsoft Edge 加载项网站中更突出的功能扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-212">Large promotion tiles are used in the store to feature extensions more prominently in the Microsoft Edge add-ons website.</span></span>  <span data-ttu-id="3aafb-213">图像（如果已提交）将对用户可见。</span><span class="sxs-lookup"><span data-stu-id="3aafb-213">The images, if submitted, are visible to the users.</span></span>  <span data-ttu-id="3aafb-214">PNG 文件的大小必须为 1400 x 560 像素。</span><span class="sxs-lookup"><span data-stu-id="3aafb-214">The size of the PNG files must be 1400 x 560 pixels.</span></span>  |  
+| <span data-ttu-id="3aafb-215">YouTube 视频 URL \ (可选 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-215">YouTube video URL \(optional\)</span></span> | <span data-ttu-id="3aafb-216">您可以包括您的分机的促销 YouTube 视频。</span><span class="sxs-lookup"><span data-stu-id="3aafb-216">You may include a promotional YouTube video of your extension.</span></span>  <span data-ttu-id="3aafb-217">`YouTube video URL`视频显示在您的扩展的 "应用商店" 页面上。</span><span class="sxs-lookup"><span data-stu-id="3aafb-217">The `YouTube video URL` video is displayed on the store listing page of your extension.</span></span>  |  
+| <span data-ttu-id="3aafb-218">简短说明 \ (必需 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-218">Short description \(required\)</span></span> | <span data-ttu-id="3aafb-219">若要编辑简短说明，必须更新扩展包的清单文件中的说明字段，然后重新上载它。</span><span class="sxs-lookup"><span data-stu-id="3aafb-219">To edit the short description, you must update the description field in your manifest file of your extension package and re-upload it.</span></span>  |  
+| <span data-ttu-id="3aafb-220">搜索词 \ (可选 \ ) </span><span class="sxs-lookup"><span data-stu-id="3aafb-220">Search terms \(optional\)</span></span> | <span data-ttu-id="3aafb-221">搜索词是一个单词或短语，可帮助用户在 Microsoft Edge 加载项目录中搜索时发现你的扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-221">Search terms are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons Catalog.</span></span>  <span data-ttu-id="3aafb-222">搜索词不会显示给用户。</span><span class="sxs-lookup"><span data-stu-id="3aafb-222">The search terms are not displayed to users.</span></span>  |  
 
-*   `English (United States)`<span data-ttu-id="48325-209">：这是默认值。</span><span class="sxs-lookup"><span data-stu-id="48325-209">:  This is the default value.</span></span>  <span data-ttu-id="48325-210">如果你不提及程序包中的任何语言，我们将默认语言设置为英语 \ （美国 \），并且你必须提供英语的列表（美国 \）。</span><span class="sxs-lookup"><span data-stu-id="48325-210">If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).</span></span>  
-*   `{language}` <span data-ttu-id="48325-211">\(`{Country}`\)</span><span class="sxs-lookup"><span data-stu-id="48325-211">\(`{Country}`\)</span></span>  
+##### <span data-ttu-id="3aafb-223">YouTube 视频 URL 要求</span><span class="sxs-lookup"><span data-stu-id="3aafb-223">YouTube video URL requirements</span></span>  
 
-#### <span data-ttu-id="48325-212">应用商店显示名称</span><span class="sxs-lookup"><span data-stu-id="48325-212">Store display name</span></span>  
+<span data-ttu-id="3aafb-224">确保您的视频满足以下要求。</span><span class="sxs-lookup"><span data-stu-id="3aafb-224">Ensure your video meets the following requirements.</span></span>  
 
-<span data-ttu-id="48325-213">扩展程序包清单中提及的扩展的名称。</span><span class="sxs-lookup"><span data-stu-id="48325-213">The name of Extension as mentioned in your Extension package manifest.</span></span>  
+*   <span data-ttu-id="3aafb-225">验证 YouTube 视频的内容是否符合 [Microsoft Edge Addons 目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies] 主题。</span><span class="sxs-lookup"><span data-stu-id="3aafb-225">Verify that the content of the YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies] topic.</span></span>  
+*   <span data-ttu-id="3aafb-226">关闭视频上的广告。</span><span class="sxs-lookup"><span data-stu-id="3aafb-226">Turn off advertisements on your video.</span></span>  <span data-ttu-id="3aafb-227">有关详细信息，请参阅[在嵌入式视频上][GoogleYoutubeAnswer132596][设置默认广告格式][GoogleYoutubeAnswer2531367Topic7072227]和广告。</span><span class="sxs-lookup"><span data-stu-id="3aafb-227">For more information, go to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].</span></span>  
+*   <span data-ttu-id="3aafb-228">为你的视频打开 "嵌入"。</span><span class="sxs-lookup"><span data-stu-id="3aafb-228">Turn on embedding for your videos.</span></span>  <span data-ttu-id="3aafb-229">有关详细信息，请转到 " [嵌入视频" & 播放列表][GoogleYoutubeAnswer171780]。</span><span class="sxs-lookup"><span data-stu-id="3aafb-229">For more information, go to [Embed videos & playlists][GoogleYoutubeAnswer171780].</span></span>  
 
-> [!NOTE]
-> <span data-ttu-id="48325-214">若要编辑名称，必须更新扩展程序包中的清单，然后重新上载它。</span><span class="sxs-lookup"><span data-stu-id="48325-214">To edit the name, you must update the manifest in your Extension package and re-upload it.</span></span>  
+<span data-ttu-id="3aafb-230">执行以下步骤来提交视频的 YouTube 视频 URL。</span><span class="sxs-lookup"><span data-stu-id="3aafb-230">Perform the following steps to submit the YouTube video URL of your video.</span></span>  
 
-#### <span data-ttu-id="48325-215">描述</span><span class="sxs-lookup"><span data-stu-id="48325-215">Description</span></span>  
+1.  <span data-ttu-id="3aafb-231">在 YouTube 上，找到要添加到应用商店列表页面的视频。</span><span class="sxs-lookup"><span data-stu-id="3aafb-231">On YouTube, locate the video that you want to add to your store listing page.</span></span>  
+1.  <span data-ttu-id="3aafb-232">在 "视频" 下，选择 "**共享**  >  **嵌入**"。</span><span class="sxs-lookup"><span data-stu-id="3aafb-232">Under the video, choose **Share** > **Embed**.</span></span>  
+1.  <span data-ttu-id="3aafb-233">复制显示的 HTML 代码。</span><span class="sxs-lookup"><span data-stu-id="3aafb-233">Copy the HTML code that is displayed.</span></span>  
+1.  <span data-ttu-id="3aafb-234">在 "应用商店列表详细信息" 页面上，将 HTML 代码粘贴到 `YouTube video URL` 字段中。</span><span class="sxs-lookup"><span data-stu-id="3aafb-234">On the store listing details page, paste the HTML code in the `YouTube video URL` field.</span></span>  
 
-<span data-ttu-id="48325-216">此字段是必需的。</span><span class="sxs-lookup"><span data-stu-id="48325-216">This field is required.</span></span>  
-<span data-ttu-id="48325-217">适用于您的扩展的用户的说明。</span><span class="sxs-lookup"><span data-stu-id="48325-217">The description for your users of what your Extension does.</span></span>  
+##### <span data-ttu-id="3aafb-235">搜索条件要求</span><span class="sxs-lookup"><span data-stu-id="3aafb-235">Search terms requirements</span></span>  
 
-<span data-ttu-id="48325-218">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-218">**Possible Values**:</span></span>  
+<span data-ttu-id="3aafb-236">搜索词必须满足以下要求。</span><span class="sxs-lookup"><span data-stu-id="3aafb-236">Search terms must meet the following requirements.</span></span>  
 
-*   <span data-ttu-id="48325-219">{plain_text}：少于10000个字符。</span><span class="sxs-lookup"><span data-stu-id="48325-219">{plain_text}: Less than 10,000 characters.</span></span>  
+*   <span data-ttu-id="3aafb-237">您最多可以输入21个字的搜索词。</span><span class="sxs-lookup"><span data-stu-id="3aafb-237">You may enter search terms to use up to a maximum of 21 words.</span></span>  <span data-ttu-id="3aafb-238">无论是用作单个单词、短语还是二者的组合，您最多只能有21个单词。</span><span class="sxs-lookup"><span data-stu-id="3aafb-238">Whether used as single words, phrases, or a combination of both, you are only allowed a maximum of 21 words.</span></span>  
+*   <span data-ttu-id="3aafb-239">最多可达7个搜索词：单个单词或短语。</span><span class="sxs-lookup"><span data-stu-id="3aafb-239">Up to a maximum of seven search terms:  single word or phrases.</span></span>  <span data-ttu-id="3aafb-240">每个搜索词的字符数限制为30个字符。</span><span class="sxs-lookup"><span data-stu-id="3aafb-240">Each search term has a character limit of 30 characters.</span></span>  
 
-#### <span data-ttu-id="48325-220">应用商店徽标</span><span class="sxs-lookup"><span data-stu-id="48325-220">Store logo</span></span>  
+#### <span data-ttu-id="3aafb-241">步骤6：完成提交</span><span class="sxs-lookup"><span data-stu-id="3aafb-241">Step 6: Complete your submission</span></span>  
 
-<span data-ttu-id="48325-221">此字段是必需的。</span><span class="sxs-lookup"><span data-stu-id="48325-221">This field is required.</span></span>  
-<span data-ttu-id="48325-222">用于扩展徽标的1:1 图像。</span><span class="sxs-lookup"><span data-stu-id="48325-222">A 1:1 image for your Extension logo.</span></span>  
+<span data-ttu-id="3aafb-242">在 " **提交您的扩展** " 页面上，为 "证书" 添加备注以帮助测试您的扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-242">On the **Submit your extension** page, add notes for certification to help test your extension.</span></span>  
 
-<span data-ttu-id="48325-223">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-223">**Possible Values**:</span></span>  
+##### <span data-ttu-id="3aafb-243">认证说明 (可选) </span><span class="sxs-lookup"><span data-stu-id="3aafb-243">Notes for certification (Optional)</span></span>  
 
-*   <span data-ttu-id="48325-224">128px x 128px，PNG \ （.png）</span><span class="sxs-lookup"><span data-stu-id="48325-224">128px x 128px, PNG \(.png\)</span></span>  
-*   <span data-ttu-id="48325-225">150px x 140px，PNG \ （.png）</span><span class="sxs-lookup"><span data-stu-id="48325-225">150px x 140px, PNG \(.png\)</span></span>  
-*   <span data-ttu-id="48325-226">300px x 300px，PNG \ （.png \）：建议的大小。</span><span class="sxs-lookup"><span data-stu-id="48325-226">300px x 300px, PNG \(.png\):  The recommended size.</span></span>  
+<span data-ttu-id="3aafb-244">提交扩展时，请使用 " **证书说明** " 页面向认证测试人员提供其他信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-244">When submitting your extension, use the **Notes for certification** page to provide additional information to the certification testers.</span></span>  <span data-ttu-id="3aafb-245">其他信息可帮助确保正确地测试扩展。</span><span class="sxs-lookup"><span data-stu-id="3aafb-245">The additional information helps ensure that your extension is tested correctly.</span></span>  <span data-ttu-id="3aafb-246">如果您的扩展未经过完全测试，则它可能无法通过认证。</span><span class="sxs-lookup"><span data-stu-id="3aafb-246">If your extension is not fully tested, it may fail certification.</span></span>  
 
-#### <span data-ttu-id="48325-227">小型促销磁贴</span><span class="sxs-lookup"><span data-stu-id="48325-227">Small promotional tile</span></span>  
+<span data-ttu-id="3aafb-247">请确保在必要时包含以下信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-247">Ensure you include the following information, as necessary.</span></span>  
 
-<span data-ttu-id="48325-228">此字段是必需的。</span><span class="sxs-lookup"><span data-stu-id="48325-228">This field is required.</span></span>  
-<span data-ttu-id="48325-229">小尺寸的促销图块。</span><span class="sxs-lookup"><span data-stu-id="48325-229">A small size promotional tile.</span></span>  <span data-ttu-id="48325-230">您的列表显示在此磁贴上。</span><span class="sxs-lookup"><span data-stu-id="48325-230">Your listing is displayed on this tile.</span></span>  
+*   <span data-ttu-id="3aafb-248">测试帐户的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="3aafb-248">User names and passwords for test accounts.</span></span>  
+*   <span data-ttu-id="3aafb-249">访问隐藏或锁定的功能的步骤。</span><span class="sxs-lookup"><span data-stu-id="3aafb-249">Steps to access hidden or locked features.</span></span>  
+*   <span data-ttu-id="3aafb-250">根据区域或其他用户设置，功能的预期差异。</span><span class="sxs-lookup"><span data-stu-id="3aafb-250">Expected differences in functionality based on region or other user settings.</span></span>  
+*   <span data-ttu-id="3aafb-251">如果提交是对现有扩展的更新，请包括有关对扩展所做的更改的信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-251">If your submission is an update to an existing extension, include information about the changes made to the extension.</span></span>  
+*   <span data-ttu-id="3aafb-252">测试人员必须了解你的提交的任何其他信息。</span><span class="sxs-lookup"><span data-stu-id="3aafb-252">Any additional information that testers must understand about your submission.</span></span>  
 
-<span data-ttu-id="48325-231">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-231">**Possible Values**:</span></span>  
+<span data-ttu-id="3aafb-253">提供信息后，选择 " **发布** " 以将扩展提交到 Microsoft Edge 加载项目录。</span><span class="sxs-lookup"><span data-stu-id="3aafb-253">After providing the information, select **Publish** to submit your extension to the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="3aafb-254">你的提交将继续进行认证步骤。</span><span class="sxs-lookup"><span data-stu-id="3aafb-254">Your submission proceeds to the certification step.</span></span>  <span data-ttu-id="3aafb-255">在提交后，认证过程可能需要长达7个工作日。</span><span class="sxs-lookup"><span data-stu-id="3aafb-255">The certification process may take up to seven business days after your submission.</span></span>  
 
-*   <span data-ttu-id="48325-232">440px x 280x，PNG \ （.png）</span><span class="sxs-lookup"><span data-stu-id="48325-232">440px x 280x, PNG \(.png\)</span></span>  
-
-#### <span data-ttu-id="48325-233">媒体</span><span class="sxs-lookup"><span data-stu-id="48325-233">Media</span></span>  
-
-<span data-ttu-id="48325-234">此字段是可选的。</span><span class="sxs-lookup"><span data-stu-id="48325-234">This field is optional.</span></span>  
-<span data-ttu-id="48325-235">你应该提供这些资源来帮助更有效地显示你的产品。</span><span class="sxs-lookup"><span data-stu-id="48325-235">You should provide these assets to help display your product more effectively.</span></span>  
-
-*   <span data-ttu-id="48325-236">屏幕截图</span><span class="sxs-lookup"><span data-stu-id="48325-236">Screenshots</span></span>  
-    <span data-ttu-id="48325-237">描述扩展功能的扩展图像。</span><span class="sxs-lookup"><span data-stu-id="48325-237">The images of your Extension that describe what your Extension does.</span></span>  
-    
-*   <span data-ttu-id="48325-238">大型促销图块</span><span class="sxs-lookup"><span data-stu-id="48325-238">Large promotion tiles</span></span>  
-    <span data-ttu-id="48325-239">要在 Microsoft Edge Addons 中更突出地使用扩展功能的大型促销图块。</span><span class="sxs-lookup"><span data-stu-id="48325-239">A large promotional tile to be feature your Extension more prominently in Microsoft Edge Addons.</span></span>  
-    
-*   <span data-ttu-id="48325-240">YouTube 视频 URL</span><span class="sxs-lookup"><span data-stu-id="48325-240">YouTube video URL</span></span>  
-    <span data-ttu-id="48325-241">[适用于您的扩展的有效 YouTube 视频 URL][MicrosoftEdgeAddonsUploadYouTubeVideo]。</span><span class="sxs-lookup"><span data-stu-id="48325-241">A valid [YouTube video URL for your Extension][MicrosoftEdgeAddonsUploadYouTubeVideo].</span></span>  <span data-ttu-id="48325-242">你的视频的质量应很好，最短的长度。</span><span class="sxs-lookup"><span data-stu-id="48325-242">Your video should be good quality and minimal length.</span></span>  <span data-ttu-id="48325-243">您的 YouTube 视频必须先通过认证，然后才能在 Microsoft Edge Addons 中发布您的扩展。</span><span class="sxs-lookup"><span data-stu-id="48325-243">Your YouTube video must pass certification before publishing your Extension in Microsoft Edge Addons.</span></span>  <span data-ttu-id="48325-244">验证你的 YouTube 视频是否符合[Microsoft Edge Addons 目录开发人员策略文档][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。</span><span class="sxs-lookup"><span data-stu-id="48325-244">Verify that your YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].</span></span>  
-
-<span data-ttu-id="48325-245">**可能的值**：</span><span class="sxs-lookup"><span data-stu-id="48325-245">**Possible Values**:</span></span>  
-
-*   <span data-ttu-id="48325-246">10个最大屏幕截图。</span><span class="sxs-lookup"><span data-stu-id="48325-246">10 Screenshots maximum.</span></span>  
-    *   <span data-ttu-id="48325-247">640px x 480px，PNG \ （.png）：屏幕截图。</span><span class="sxs-lookup"><span data-stu-id="48325-247">640px x 480px, PNG \(.png\):  Screenshots.</span></span>  
-    *   <span data-ttu-id="48325-248">1280px x 800px，PNG \ （.png）：屏幕截图。</span><span class="sxs-lookup"><span data-stu-id="48325-248">1280px x 800px, PNG \(.png\):  Screenshots.</span></span>  
-*   <span data-ttu-id="48325-249">1400px x 560px，PNG \ （.png \）：大型提升图块。</span><span class="sxs-lookup"><span data-stu-id="48325-249">1400px x 560px, PNG \(.png\):  Large promotion tiles.</span></span>  
-*   <span data-ttu-id="48325-250">60秒或更短、2GB 或更小的 YouTube 视频 URL。</span><span class="sxs-lookup"><span data-stu-id="48325-250">60 seconds or shorter and 2GB or smaller, YouTube video URL.</span></span>  
-
-#### <span data-ttu-id="48325-251">简短说明</span><span class="sxs-lookup"><span data-stu-id="48325-251">Short description</span></span>  
-
-<span data-ttu-id="48325-252">可在产品清单顶部使用的简短 catchy 说明。</span><span class="sxs-lookup"><span data-stu-id="48325-252">A short, catchy description that may be used at the top of the listing for your product.</span></span>  <span data-ttu-id="48325-253">如果未提供，则改为使用较长说明中的前几行。</span><span class="sxs-lookup"><span data-stu-id="48325-253">If not provided, the first few lines from your longer description are used instead.</span></span>  <span data-ttu-id="48325-254">由于你的说明还会显示在此文本下方，因此你应提供具有不同文本的简短说明，以便你的列表更不重复。</span><span class="sxs-lookup"><span data-stu-id="48325-254">Because your description also appears below this text, you should provide a short description with different text so that your listing is less repetitive.</span></span>  <span data-ttu-id="48325-255">扩展的简短说明直接从程序包的清单文件中选取。</span><span class="sxs-lookup"><span data-stu-id="48325-255">The Short description of your Extension is picked directly from the manifest file of your package.</span></span>  
+<span data-ttu-id="3aafb-256">提交通过认证后，将在 Microsoft Edge 加载项目录中发布您的分机号码。</span><span class="sxs-lookup"><span data-stu-id="3aafb-256">When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="3aafb-257">"合作伙伴中心" 仪表板中的扩展状态将更改为 `In the Store` 。</span><span class="sxs-lookup"><span data-stu-id="3aafb-257">The status of your extension in the Partner Center dashboard changes to `In the Store`.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="48325-256">若要编辑简短说明，必须更新扩展程序包中的清单，然后重新上载它。</span><span class="sxs-lookup"><span data-stu-id="48325-256">To edit the short description, you must update the manifest in your Extension package and re-upload it.</span></span>  
-
-#### <span data-ttu-id="48325-257">搜索词</span><span class="sxs-lookup"><span data-stu-id="48325-257">Search terms</span></span>  
-
-<span data-ttu-id="48325-258">搜索词是不会向用户显示的单个字词或短语，但当用户使用这些术语进行搜索时，可帮助你在 Microsoft Edge Addons 中发现你的扩展。</span><span class="sxs-lookup"><span data-stu-id="48325-258">Search terms are single words or short phrases that are not displayed to users but help make your Extension discoverable in Microsoft Edge Addons when users search using those terms.</span></span>  
-
-<span data-ttu-id="48325-259">**要求**：</span><span class="sxs-lookup"><span data-stu-id="48325-259">**Requirements**:</span></span>  
-
-*   <span data-ttu-id="48325-260">7个或更少的搜索词</span><span class="sxs-lookup"><span data-stu-id="48325-260">7 or fewer search terms</span></span>  
-*   <span data-ttu-id="48325-261">每个搜索词30个或更少的字符</span><span class="sxs-lookup"><span data-stu-id="48325-261">30 or fewer characters per search term</span></span>  
-*   <span data-ttu-id="48325-262">小于或等于21的组合搜索词</span><span class="sxs-lookup"><span data-stu-id="48325-262">21 or fewer words for combined search terms</span></span>  
-
-<span data-ttu-id="48325-263">单击 "**保存**" 以继续保存您的 "列表" 部分。</span><span class="sxs-lookup"><span data-stu-id="48325-263">Click **Save** to proceed to save your listing section.</span></span>  <span data-ttu-id="48325-264">单击 "**发布**" 以提供提交详细信息。</span><span class="sxs-lookup"><span data-stu-id="48325-264">Click **Publish** to provide submission details.</span></span>  
-
-## <span data-ttu-id="48325-265">步骤6：完成提交，然后单击 "发布"</span><span class="sxs-lookup"><span data-stu-id="48325-265">Step 6: Complete your submission and click Publish</span></span>  
-
-<span data-ttu-id="48325-266">扩展提交过程的 "提交选项" 页面是你提供详细信息以帮助我们正确测试你的产品的位置。</span><span class="sxs-lookup"><span data-stu-id="48325-266">The Submission options page of the Extension submission process is where you provide more information to help us test your product properly.</span></span>  <span data-ttu-id="48325-267">这是一个可选步骤，但建议对许多提交执行此操作。</span><span class="sxs-lookup"><span data-stu-id="48325-267">This is an optional step, but it is recommended for many submissions.</span></span>  
-
-### <span data-ttu-id="48325-268">发布暂停选项</span><span class="sxs-lookup"><span data-stu-id="48325-268">Publishing hold options</span></span>  
-
-<span data-ttu-id="48325-269">默认情况下，提交证明后立即发布。</span><span class="sxs-lookup"><span data-stu-id="48325-269">By default, your submission is published as soon as it passes certification.</span></span>  <span data-ttu-id="48325-270">你可以选择在将提交发布到特定日期之前保留。</span><span class="sxs-lookup"><span data-stu-id="48325-270">You may choose to place a hold on publishing your submission until a specific date.</span></span>  <span data-ttu-id="48325-271">这个部分的选项如下所述。</span><span class="sxs-lookup"><span data-stu-id="48325-271">The options in this section are described below.</span></span>  
-
-*   **<span data-ttu-id="48325-272">在提交证书后立即发布你的提交</span><span class="sxs-lookup"><span data-stu-id="48325-272">Publish your submission as soon as it passes certification</span></span>**  
-
-    <span data-ttu-id="48325-273">这是默认选择。</span><span class="sxs-lookup"><span data-stu-id="48325-273">This is the default selection.</span></span>  <span data-ttu-id="48325-274">这意味着提交证书后，你的提交将立即开始发布过程</span><span class="sxs-lookup"><span data-stu-id="48325-274">It means that your submission begins the publishing process as soon as it passes certification</span></span>  
-
-*   **<span data-ttu-id="48325-275">在特定日期开始发布你的提交</span><span class="sxs-lookup"><span data-stu-id="48325-275">Start publishing your submission on a certain date</span></span>**  
-
-    <span data-ttu-id="48325-276">选择 **"开始在特定日期发布提交**"，以确保在特定日期之前不发布提交。</span><span class="sxs-lookup"><span data-stu-id="48325-276">Choose **Start publishing your submission on a certain date** to ensure that the submission is not published until a specific date.</span></span>  <span data-ttu-id="48325-277">如果选择此选项，则会在你指定的日期或之后尽早释放你的提交。</span><span class="sxs-lookup"><span data-stu-id="48325-277">With this option, your submission is released as soon as possible on or after the date you specify.</span></span>  <span data-ttu-id="48325-278">该日期必须为 24 小时之后的一个日期。</span><span class="sxs-lookup"><span data-stu-id="48325-278">The date must be at least 24 hours in the future.</span></span>  <span data-ttu-id="48325-279">除了日期，您可以指定应开始发布提交的时间。</span><span class="sxs-lookup"><span data-stu-id="48325-279">Along with the date, you may specify the time at which the submission should begin to be published.</span></span>  
-
-### <span data-ttu-id="48325-280">认证说明</span><span class="sxs-lookup"><span data-stu-id="48325-280">Notes for certification</span></span>  
-
-<span data-ttu-id="48325-281">当你提交扩展时，你可以选择使用 "证书说明" 页面向认证测试人员提供其他信息。</span><span class="sxs-lookup"><span data-stu-id="48325-281">As you submit your Extension, you have the option to use the Notes for certification page to provide additional information to the certification testers.</span></span>  <span data-ttu-id="48325-282">此信息有助于确保正确地测试扩展。</span><span class="sxs-lookup"><span data-stu-id="48325-282">This information helps ensure that your Extension is tested correctly.</span></span>  <span data-ttu-id="48325-283">如果我们无法完全测试你的提交，则它可能无法通过认证。</span><span class="sxs-lookup"><span data-stu-id="48325-283">If we are not able to fully test your submission, it may fail certification.</span></span>  
-
-<span data-ttu-id="48325-284">请确保包含以下 \ （如果适用于您的扩展名 \）：</span><span class="sxs-lookup"><span data-stu-id="48325-284">Make sure to include the following \(if applicable for your Extension\):</span></span>  
-
-*   <span data-ttu-id="48325-285">测试帐户的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="48325-285">User names and passwords for test accounts.</span></span>  
-*   <span data-ttu-id="48325-286">访问隐藏或锁定的功能的步骤。</span><span class="sxs-lookup"><span data-stu-id="48325-286">Steps to access hidden or locked features.</span></span>  
-*   <span data-ttu-id="48325-287">根据区域或其他用户设置，行为预期差异。</span><span class="sxs-lookup"><span data-stu-id="48325-287">Expected differences in behavior based on region or other user settings.</span></span>  
-*   <span data-ttu-id="48325-288">有关应用更新中的更改的信息。</span><span class="sxs-lookup"><span data-stu-id="48325-288">Information about what changed in an app update.</span></span>  
-*   <span data-ttu-id="48325-289">你认为测试人员必须了解你的提交的任何其他内容。</span><span class="sxs-lookup"><span data-stu-id="48325-289">Anything else you think testers must understand about your submission.</span></span>  
-
-<span data-ttu-id="48325-290">完成上述详细信息后，单击 "**发布**" 以在 Microsoft Edge Addons 中提交您的扩展。</span><span class="sxs-lookup"><span data-stu-id="48325-290">After completing the above details, click **Publish** to submit your Extension in Microsoft Edge Addons.</span></span>  
-
-<span data-ttu-id="48325-291">当您完成为您的扩展创建提交并单击 "**发布**" 时，提交将进入认证步骤。</span><span class="sxs-lookup"><span data-stu-id="48325-291">When you finish creating the submission for your Extension and click **Publish**, the submission enters the certification step.</span></span>  <span data-ttu-id="48325-292">此过程通常在几天内完成，但在某些情况下，可能需要长达7个工作日。</span><span class="sxs-lookup"><span data-stu-id="48325-292">This process usually is completed within a couple of days, though in some cases it may take up to 7 business days.</span></span>  <span data-ttu-id="48325-293">提交完成认证后，将在 Microsoft Edge Addons 中发布您的分机号码，除非您选择了 "发布保留" 选项以指定在特定日期之前不应将其释放。</span><span class="sxs-lookup"><span data-stu-id="48325-293">After your submission passes certification, your Extension is published in Microsoft Edge Addons unless you selected the Publishing hold options to specify that it should not be released until a certain date.</span></span>  <span data-ttu-id="48325-294">提交发布后，您将收到通知，并且仪表板中的扩展状态将更改为 `In the Store` 。</span><span class="sxs-lookup"><span data-stu-id="48325-294">You are notified when your submission is published, and the status of your Extension in the dashboard changes to `In the Store`.</span></span>  
-
-<!-- image links -->  
+> <span data-ttu-id="3aafb-258">如果你在提交或注册过程中遇到任何问题，请在 [此处][ExtensionsSupportForm] 提供支持票证或向 [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com)发送电子邮件。</span><span class="sxs-lookup"><span data-stu-id="3aafb-258">If you are facing any issues in the submission or registration process, file a support ticket [here][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).</span></span>  
 
 <!-- links -->  
 
-[ExtensionsGettingStarted]: ../getting-started/index.md "Microsoft Edge \ （Chromium \）扩展的入门 |Microsoft 文档"  
-
-[MicrosoftEdgeAddonsUploadYouTubeVideo]: ./upload-video.md "上载 YouTube 视频 |Microsoft 文档"  
+[ExtensionsGettingStarted]: ../getting-started/index.md "Microsoft Edge 入门 (Chromium) 扩展 |Microsoft 文档"  
+[DeveloperRegistration]: ./create-dev-account.md "注册为 Microsoft Edge 扩展开发人员 |Microsoft 文档"  
+[PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "将 Chromium 扩展移植到 Microsoft Edge |Microsoft 文档"  
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons 目录开发人员策略 |Microsoft 文档"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议 |Microsoft 文档"  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"  
+
+[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "扩展新的支持请求 |Microsoft 支持"  
+
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "设置默认广告格式-YouTube 帮助"  
+
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "嵌入式视频上的广告-YouTube 帮助"
+[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "& 播放列表中嵌入视频-YouTube 帮助"  
