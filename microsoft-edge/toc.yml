@@ -373,12 +373,10 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: 发布到 Microsoft Store
           items:
-            - name: 分步发布过程
+            - name: 发布扩展
               href: extensions-chromium/publish/publish-extension.md
-            - name: 打开开发者帐户
+            - name: 开发人员注册
               href: extensions-chromium/publish/create-dev-account.md
-            - name: 上传 YouTube 视频
-              href: extensions-chromium/publish/upload-video.md
             - name: 更新扩展列表
               href: extensions-chromium/publish/update.md
             - name: 提交状态
