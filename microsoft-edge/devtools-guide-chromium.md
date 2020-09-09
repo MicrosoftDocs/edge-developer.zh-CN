@@ -3,17 +3,17 @@ description: 了解 Microsoft Edge (Chromium) 开发人员工具
 title: Microsoft Edge (Chromium) 开发人员工具
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c1168e25c99302a9d195c756c6049881b5dfe91f
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: ba925c402d33ba75c558006c7c43c5dc05515911
+ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991182"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11003934"
 ---
 # Microsoft Edge (Chromium) 开发人员工具  
 
@@ -131,7 +131,7 @@ Microsoft Edge \ (Chromium \ ) DevTools 包括以下面板。
 *   [初学者的 DevTools： HTML 和 DOM 入门][DevtoolsGuideChromiumBeginnersHtml]  
 *   [Microsoft Edge (Chromium) DevTools 协议][DevtoolsProtocolChromiumIndex]  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
@@ -140,7 +140,7 @@ Microsoft Edge \ (Chromium \ ) DevTools 包括以下面板。
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "初学者的 DevTools： HTML 和 DOM 入门 |Microsoft 文档"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "Microsoft Edge 中的新增功能 (Chromium) DevTools |Microsoft 文档"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools "Microsoft Edge 中的新增功能 (Chromium) DevTools |Microsoft 文档"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chromium) DevTools 协议 |Microsoft 文档"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge 加载项"  
