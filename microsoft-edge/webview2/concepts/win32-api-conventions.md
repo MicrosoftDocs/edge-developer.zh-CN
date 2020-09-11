@@ -3,17 +3,17 @@ description: Win32 c + + WebView2 API 约定
 title: Win32 c + + WebView2 API 约定
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: c8792133da2b858cfaa456df5a7dce26c3c65154
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 6c596b038e871caa5a364991351636f51ef7d685
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895538"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010682"
 ---
 # Win32 c + + WebView2 API 约定  
 
@@ -21,7 +21,7 @@ ms.locfileid: "10895538"
 
 WebView2 Win32 c + + API 中的异步方法使用委托接口来回调你，以指示 async 方法已完成的时间、成功或失败代码以及异步方法的结果。  所有异步方法的最终参数都是一个指向你为其提供实现的委托接口的指针。  
 
-委托接口具有一个 `Invoke` 方法，该方法作为第一个参数作为 `HRESULT` 成功或失败代码。  此外，如果方法具有结果，则可能会出现第二个参数，该参数是方法的结果。  例如， [ICoreWebView2：： CapturePreview][Webview2ReferenceWin3209538Icorewebview2CapturePreview]方法作为最终参数接受 `ICoreWebView2CapturePreviewCompletedHandler` 指针。  若要发送 `CapturePreview` 方法请求，请提供 `ICoreWebView2CapturePreviewCompletedHandler` 你实现的指针的实例。  下面的代码片段使用一种方法实现。  
+委托接口具有一个 `Invoke` 方法，该方法作为第一个参数作为 `HRESULT` 成功或失败代码。  此外，如果方法具有结果，则可能会出现第二个参数，该参数是方法的结果。  例如，[ICoreWebView2：： CapturePreview] [Webview2ReferenceWin3209538Icorewebview2CapturePreview] 方法作为最终参数接受 `ICoreWebView2CapturePreviewCompletedHandler` 指针。  若要发送 `CapturePreview` 方法请求，请提供 `ICoreWebView2CapturePreviewCompletedHandler` 你实现的指针的实例。  下面的代码片段使用一种方法实现。  
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -31,7 +31,7 @@ HRESULT Invoke(HRESULT result)
 
 或者 `ICoreWebView2::ExecuteScript` ，你提供的实例 `ICoreWebView2ExecuteScriptCompletedHandler` 具有一个 `Invoke` 方法，该方法为你提供请求的成功或失败代码，以及 `ExecuteScript` 第二个参数， `resultObjectAsJson` 这是运行脚本的结果的 JSON。  
 
-你可以手动实现 `CompleteHandler` 委托接口，也可以使用[WRL 回调函数][CppCxWrlCallbackFunction]。  回调函数在以下 WebView2 代码段中使用。  
+你可以手动实现 `CompleteHandler` 委托接口，也可以使用 [WRL 回调函数][CppCxWrlCallbackFunction]。  回调函数在以下 WebView2 代码段中使用。  
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -117,6 +117,6 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2ReferenceWin3209538Icorewebview2CapturePreview]: ../reference/win32/0-9-538/icorewebview2.md#capturepreview "CapturePreview-接口 ICoreWebView2 |Microsoft 文档"  
+[Webview2ReferenceWin3209622Icorewebview2CapturePreview]: ../reference/win32/0-9-622/icorewebview2.md#capturepreview "CapturePreview-接口 ICoreWebView2 |Microsoft 文档"  
 
-[CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Callback 函数（WRL） |Microsoft 文档"  
+[CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "回调函数 (WRL) |Microsoft 文档"  

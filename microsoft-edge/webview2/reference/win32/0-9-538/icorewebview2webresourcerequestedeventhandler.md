@@ -1,28 +1,30 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2WebResourceRequestedEventHandler
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2WebResourceRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2WebResourceRequestedEventHandler
-ms.openlocfilehash: 3cdafae6480a3bf6e3a5bf96f7e7fba1ae8cc77c
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: a1bf9e05e403df10fc8e45ff5b5bc19f28558e3c
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10884517"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010370"
 ---
-# interface ICoreWebView2WebResourceRequestedEventHandler 
+# 0.9.579-接口 ICoreWebView2WebResourceRequestedEventHandler 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2WebResourceRequestedEventHandler
   : public IUnknown
 ```
 
-在与 AddWebResourceRequestedFilter 中指定的 Web 资源匹配的 Web 资源的 Web 资源中进行 URL 请求（通过网络、文件等）时激发。
+当 URL 请求通过网络 (、文件等 ) 在 Web 资源匹配的 Web 资源和 AddWebResourceRequestedFilter 中指定的 URL 的 Web 视图中进行时激发。
 
 ## 摘要
 
@@ -38,5 +40,5 @@ interface ICoreWebView2WebResourceRequestedEventHandler
 
 调用以向实施者提供对应事件的事件参数。
 
-> 公共 HRESULT[调用](#invoke)（[ICoreWebView2](icorewebview2.md) * sender、 [ICoreWebView2WebResourceRequestedEventArgs](icorewebview2webresourcerequestedeventargs.md) * 参数）
+> public HRESULT [调用](#invoke) ([ICoreWebView2](icorewebview2.md) * sender、 [ICoreWebView2WebResourceRequestedEventArgs](icorewebview2webresourcerequestedeventargs.md) * 参数) 
 

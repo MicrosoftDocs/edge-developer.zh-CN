@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2ExecuteScriptCompletedHandler
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2ExecuteScriptCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExecuteScriptCompletedHandler
-ms.openlocfilehash: ee59ef42852fc8f0b0529b9a3ca08e53972dee1a
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 0b257cef4ed4a85fcd41cd401ef00eea01a4d8b6
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879938"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010227"
 ---
-# interface ICoreWebView2ExecuteScriptCompletedHandler 
+# 0.9.579-接口 ICoreWebView2ExecuteScriptCompletedHandler 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ExecuteScriptCompletedHandler
@@ -36,5 +38,5 @@ interface ICoreWebView2ExecuteScriptCompletedHandler
 
 调用以向实施者提供相应的异步方法调用的完成状态和结果。
 
-> 公共 HRESULT[调用](#invoke)（hresult ERRORCODE，LPCWSTR resultObjectAsJson）
+> 公共 HRESULT [调用](#invoke) (HRESULT ERRORCODE，LPCWSTR resultObjectAsJson) 
 

@@ -3,23 +3,23 @@ description: 在 Windows 窗体应用中将 web 内容与 Microsoft Edge Web 视
 title: 适用于 Windows 表单应用的 Microsoft Edge Web 视图2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: 7d7ddf445adee7b3d20d268ab1d53c0999fd54ce
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 885524581112a208e1e5134ecd7a6f7446e331ce
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926454"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010731"
 ---
 # Windows Forms 应用中的 WebView2 入门 (预览)   
 
-在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](/microsoft-edge/hosting/webview2/index)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](../reference/dotnet/0-9-515-reference-webview2.md)。  
+在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](/microsoft-edge/hosting/webview2/index)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](../reference/dotnet/0-9-628-reference-webview2.md)。  
 
-## 先决条件  
+## 必备条件  
 
 请确保在继续之前安装了以下先决条件列表：  
 

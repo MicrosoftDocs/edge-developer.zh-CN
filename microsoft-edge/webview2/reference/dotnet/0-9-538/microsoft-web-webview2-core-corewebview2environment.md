@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: CoreWebView2Environment 中的 WebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2。 CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: 6b03997c8bd76137b20bb71edfd0d57b3686914a
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: d1e30c17239eb1b609eb3f2c63e48a3a59616131
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885287"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011025"
 ---
-# CoreWebView2Environment 类的 WebView2 
+# 0.9.579-WebView2 的 CoreWebView2Environment 类 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll
@@ -45,7 +47,7 @@ ms.locfileid: "10885287"
 
 当前 CoreWebView2Environment 的浏览器版本信息，包括频道名称（如果不是稳定频道）。
 
-> 公共字符串[BrowserVersionString](#browserversionstring)
+> 公共字符串 [BrowserVersionString](#browserversionstring)
 
 这与 GetAvailableCoreWebView2BrowserVersionString API 的格式相匹配。 信道名称为 "beta"、"dev" 和 "未设备"。
 
@@ -63,7 +65,7 @@ ms.locfileid: "10885287"
 
 正确比较浏览器版本以确定哪个版本较旧、更旧或相同。
 
-> 公共静态 int [CompareBrowserVersions](#comparebrowserversions)（string version1，string version2）
+> 公共静态 int [CompareBrowserVersions](#comparebrowserversions) (string version1，string version2) 
 
 返回-1、0或1，具体取决于 version1 是否小于、等于或大于 version2。
 
@@ -76,7 +78,7 @@ ms.locfileid: "10885287"
 
 使用安装的边缘版本创建长绿 WebView2 环境。
 
-> 公共静态异步任务< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync)（string browserExecutableFolder、string userDataFolder、CoreWebView2EnvironmentOptions 选项）
+> 公共静态异步任务< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync) (string browserExecutableFolder、string userDataFolder、CoreWebView2EnvironmentOptions 选项) 
 
 ##### 参数
 * `browserExecutableFolder` 包含嵌入边缘的文件夹的相对路径。 
@@ -91,9 +93,9 @@ ms.locfileid: "10885287"
 
 异步创建用于可视化托管的新 Web 视图。
 
-> 公共异步任务< [CoreWebView2CompositionController](microsoft-web-webview2-core-corewebview2compositioncontroller.md)  >  [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync)（IntPtr ParentWindow）
+> 公共异步任务< [CoreWebView2CompositionController](microsoft-web-webview2-core-corewebview2compositioncontroller.md)  >  [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) (IntPtr ParentWindow) 
 
-parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND （并且将需要使用 SendMouseInput/SendPointerInput 转发）。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要设置 CoreWebView2CompositionController 以更新可视化树的新父 HWND。
+parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND (并且需要使用 SendMouseInput/SendPointerInput 转发) 。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要设置 CoreWebView2CompositionController 以更新可视化树的新父 HWND。
 
 在创建的 CoreWebView2CompositionController 上设置 RootVisualTarget 属性，以提供视觉对象以托管浏览器的可视化树。
 
@@ -103,7 +105,7 @@ parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是�
 
 异步创建新的 Web 视图。
 
-> 公共异步任务< [CoreWebView2Controller](microsoft-web-webview2-core-corewebview2controller.md)  >  [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync)（IntPtr ParentWindow）
+> 公共异步任务< [CoreWebView2Controller](microsoft-web-webview2-core-corewebview2controller.md)  >  [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) (IntPtr ParentWindow) 
 
 parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创建 Web 视图期间，Web 视图会将子窗口添加到提供的窗口中。 由同辈窗口顺序影响的 Z 顺序和其他项目将相应受到影响。
 
@@ -115,7 +117,7 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 
 创建一个空 CoreWebView2PointerInfo。
 
-> 公共[CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)（）
+> 公共 [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) ( # A1
 
 在调用 SendPointerInput 之前，需要用所有相关信息填充返回的 CoreWebView2PointerInfo。
 
@@ -123,7 +125,7 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 
 创建新的 web 资源响应对象。
 
-> 公共 HttpResponseMessage [CreateWebResourceResponse](#createwebresourceresponse)（流内容、int StatusCode、string ReasonPhrase、string 头）
+> 公共 HttpResponseMessage [CreateWebResourceResponse](#createwebresourceresponse) (流内容、int StatusCode、string ReasonPhrase、string 标题) 
 
 标头是由换行符分隔的原始响应标题字符串。 也可以使用空的标头字符串创建此对象，然后使用 CoreWebView2HttpResponseHeaders 来逐行构造标题。 有关其他参数的信息，请参阅 CoreWebView2WebResourceResponse。
 
@@ -131,7 +133,7 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 
 获取包含频道名称的浏览器版本信息（如果不是稳定通道或嵌入边缘）。
 
-> 公共静态字符串[GetAvailableBrowserVersionString](#getavailablebrowserversionstring)（string browserExecutableFolder）
+> 公共静态字符串 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) (字符串 browserExecutableFolder) 
 
 ##### 参数
 * `browserExecutableFolder` 包含嵌入边缘的文件夹的相对路径。
@@ -142,5 +144,5 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 
 返回与给定 HWND 对应的 CoreWebView2CompositionController 的 UI 自动化提供程序。
 
-> 公共对象[GetProviderForHwnd](#getproviderforhwnd)（IntPtr hwnd）
+> 公共对象 [GetProviderForHwnd](#getproviderforhwnd) (IntPtr hwnd) 
 

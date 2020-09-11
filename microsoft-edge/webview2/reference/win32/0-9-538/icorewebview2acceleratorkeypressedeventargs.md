@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2AcceleratorKeyPressedEventArgs
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2AcceleratorKeyPressedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2AcceleratorKeyPressedEventArgs
-ms.openlocfilehash: bf6ed3234a575637da7104c4d033ce82b18d039c
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: b646846c85c0e36fbcf7a55cd98f7495c252f8f9
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880113"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010612"
 ---
-# interface ICoreWebView2AcceleratorKeyPressedEventArgs 
+# 0.9.579-接口 ICoreWebView2AcceleratorKeyPressedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2AcceleratorKeyPressedEventArgs
@@ -41,7 +43,7 @@ AcceleratorKeyPressed 事件的事件参数。
 
 在 AcceleratorKeyPressedEvent 处理程序调用期间，Web 视图将被阻止，以等待该加速器是否将由主机处理。
 
-> 公共 HRESULT [get_Handled](#get_handled)（BOOL * 已处理）
+>  (BOOL * 的公共 HRESULT [get_Handled](#get_handled) 已处理) 
 
 如果已处理的属性设置为 TRUE，则这将阻止 Web 视图对此加速键执行默认操作。 否则，Web 视图将对加速键执行默认操作。
 
@@ -49,13 +51,13 @@ AcceleratorKeyPressed 事件的事件参数。
 
 导致引发事件的键事件类型。
 
-> public HRESULT [get_KeyEventKind](#get_keyeventkind)（COREWEBVIEW2_KEY_EVENT_KIND * KeyEventKind）
+> 公共 HRESULT [get_KeyEventKind](#get_keyeventkind) (COREWEBVIEW2_KEY_EVENT_KIND * KeyEventKind) 
 
 #### get_KeyEventLParam 
 
 窗口消息附带的 LPARAM 值。
 
-> 公共 HRESULT [get_KeyEventLParam](#get_keyeventlparam)（INT * lParam）
+> 公共 HRESULT [get_KeyEventLParam](#get_keyeventlparam) (INT * lParam) 
 
 请参阅 WM_KEYDOWN 和 WM_KEYUP 消息的文档。
 
@@ -63,19 +65,19 @@ AcceleratorKeyPressed 事件的事件参数。
 
 表示在窗口消息的 LPARAM 中传递的信息的结构。
 
-> public HRESULT [get_PhysicalKeyStatus](#get_physicalkeystatus)（COREWEBVIEW2_PHYSICAL_KEY_STATUS * PhysicalKeyStatus）
+> 公共 HRESULT [get_PhysicalKeyStatus](#get_physicalkeystatus) (COREWEBVIEW2_PHYSICAL_KEY_STATUS * PhysicalKeyStatus) 
 
 #### get_VirtualKey 
 
 已按下或释放的键的 Win32 虚拟键代码。
 
-> public HRESULT [get_VirtualKey](#get_virtualkey)（UINT * VirtualKey）
+>  (UINT * virtualKey 的公共 HRESULT [get_VirtualKey](#get_virtualkey)) 
 
-这将是 Win32 虚拟键常量之一，例如 VK_RETURN 或（大写字母） ASCII 值（如 "A"）。 可以通过调用 GetKeyState （VK_CONTROL）或 GetKeyState （VK_MENU）来检查 Ctrl 或 Alt 是否按下。
+这将是 Win32 虚拟键常量之一，例如 VK_RETURN 或 (大写) ASCII 值（如 "A"）。 你可以通过调用 GetKeyState (VK_CONTROL) 或 GetKeyState (VK_MENU) 来检查 Ctrl 或 Alt 是否按下。
 
 #### put_Handled 
 
 设置已处理的属性。
 
-> 公共的 HRESULT [put_Handled](#put_handled)（BOOL 已处理）
+>  (以 BOOL 方式处理的公共 HRESULT [put_Handled](#put_handled)) 
 

@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: Microsoft WebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2、浏览器控件、边缘 html、
-ms.openlocfilehash: 121ca87d1cd444228aeba1328feb2d0633647d74
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 9786e7b2062532fcb0d982afb0c864bddc1ad125
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10884027"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010115"
 ---
-# Microsoft.Web.WebView2.Core 命名空间 
+# 0.9.579-WebView2 命名空间 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ## 摘要
 
@@ -67,7 +69,7 @@ CoreWebView2PhysicalKeyStatus | 一个结构，表示打包到给定给 Win32 �
 
 CoreWebView2CapturePreview 方法使用的图像格式。
 
-> 枚举[CoreWebView2CapturePreviewImageFormat](#corewebview2capturepreviewimageformat)
+> 枚举 [CoreWebView2CapturePreviewImageFormat](#corewebview2capturepreviewimageformat)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -78,7 +80,7 @@ Jpeg            | JPEG 图像格式。
 
 触发 AcceleratorKeyPressed 事件的键事件的类型。
 
-> 枚举[CoreWebView2KeyEventKind](#corewebview2keyeventkind)
+> 枚举 [CoreWebView2KeyEventKind](#corewebview2keyeventkind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -93,7 +95,7 @@ SystemKeyUp            | 对应于窗口消息 WM_SYSKEYUP。
 
 SendMouseInput 用于传达发送给 Web 视图的鼠标事件类型的鼠标事件类型。
 
-> 枚举[CoreWebView2MouseEventKind](#corewebview2mouseeventkind)
+> 枚举 [CoreWebView2MouseEventKind](#corewebview2mouseeventkind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -120,7 +122,7 @@ XButtonUp            | 第一个或第二个 X 按钮上的鼠标事件，WM_XBU
 
 与 SendMouseInput 的 CoreWebView2MouseEventKind 关联的鼠标事件虚拟键。
 
-> 枚举[CoreWebView2MouseEventVirtualKeys](#corewebview2mouseeventvirtualkeys)
+> 枚举 [CoreWebView2MouseEventVirtualKeys](#corewebview2mouseeventvirtualkeys)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -137,7 +139,7 @@ XButton2            | 第二个 X 按钮按下，MK_XBUTTON2。
 
 移动焦点的原因。
 
-> 枚举[CoreWebView2MoveFocusReason](#corewebview2movefocusreason)
+> 枚举 [CoreWebView2MoveFocusReason](#corewebview2movefocusreason)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -149,7 +151,7 @@ XButton2            | 第二个 X 按钮按下，MK_XBUTTON2。
 
 权限请求的类型。
 
-> 枚举[CoreWebView2PermissionKind](#corewebview2permissionkind)
+> 枚举 [CoreWebView2PermissionKind](#corewebview2permissionkind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -165,7 +167,7 @@ ClipboardRead            | 在没有用户手势的情况下读取系统剪贴�
 
 对权限请求的响应。
 
-> 枚举[CoreWebView2PermissionState](#corewebview2permissionstate)
+> 枚举 [CoreWebView2PermissionState](#corewebview2permissionstate)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -179,7 +181,7 @@ ClipboardRead            | 在没有用户手势的情况下读取系统剪贴�
 
 SendPointerInput 使用的指针事件类型，用于传达发送到 Web 视图的指针事件的类型。
 
-> 枚举[CoreWebView2PointerEventKind](#corewebview2pointereventkind)
+> 枚举 [CoreWebView2PointerEventKind](#corewebview2pointereventkind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -194,7 +196,7 @@ Enter            | 对应于 WM_POINTERENTER。
 
 CoreWebView2ProcessFailedEventHandler 类中使用的进程失败类型。
 
-> 枚举[CoreWebView2ProcessFailedKind](#corewebview2processfailedkind)
+> 枚举 [CoreWebView2ProcessFailedKind](#corewebview2processfailedkind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -206,7 +208,7 @@ RenderProcessUnresponsive            | 指示呈现过程变得不响应。
 
 CoreWebView2ScriptDialogOpeningEventHandler 类中使用的 JavaScript 对话框类型。
 
-> 枚举[CoreWebView2ScriptDialogKind](#corewebview2scriptdialogkind)
+> 枚举 [CoreWebView2ScriptDialogKind](#corewebview2scriptdialogkind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -219,7 +221,7 @@ Beforeunload            | 通过 beforeunload JavaScript 函数调用的对话�
 
 Web 导航的错误状态值。
 
-> 枚举[CoreWebView2WebErrorStatus](#corewebview2weberrorstatus)
+> 枚举 [CoreWebView2WebErrorStatus](#corewebview2weberrorstatus)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -228,7 +230,7 @@ CertificateCommonNameIsIncorrect            | SSL 证书公用名与 web 地址�
 CertificateExpired            | SSL 证书已过期。
 ClientCertificateContainsErrors            | SSL 客户端证书包含错误。
 CertificateRevoked            | SSL 证书已被吊销。
-CertificateIsInvalid            | SSL 证书无效 &ndash; 这可能意味着证书与主机名的公钥 pin 不匹配，证书由不受信任的颁发机构或使用弱标志算法签名，证书声明的 DNS 名称违反了名称约束，证书包含弱密钥，证书的有效期太长，缺少吊销信息或吊销机制、非唯一的主机名、缺少证书透明信息，或者证书被链接到[旧版 Symantec 根](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html)。
+CertificateIsInvalid            | SSL 证书无效 &ndash; 这可能意味着证书与主机名的公钥 pin 不匹配，证书由不受信任的颁发机构或使用弱标志算法签名，证书声明的 DNS 名称违反了名称约束，证书包含弱密钥，证书的有效期太长，缺少吊销信息或吊销机制、非唯一的主机名、缺少证书透明信息，或者证书被链接到 [旧版 Symantec 根](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html)。
 ServerUnreachable            | 无法访问主机。
 超时            | 连接超时。
 ErrorHttpInvalidServerResponse            | 服务器返回了无效或无法识别的响应。
@@ -245,7 +247,7 @@ UnexpectedError            | 出现意外错误。
 
 Web 资源请求上下文的枚举。
 
-> 枚举[CoreWebView2WebResourceContext](#corewebview2webresourcecontext)
+> 枚举 [CoreWebView2WebResourceContext](#corewebview2webresourcecontext)
 
  值                         | 描述
 --------------------------------|---------------------------------------------

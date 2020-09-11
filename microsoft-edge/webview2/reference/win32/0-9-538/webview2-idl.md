@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: 全局变量
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 12a730a07945d5f099cd2a0f45a9f2ec5ed02f8c
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 2c6a84a0fec68c0026fad61faa1c5ed8ed27ddd8
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885546"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010794"
 ---
-# 全局变量 
+# 0.9.579-Globals 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ## 摘要
 
@@ -30,7 +32,7 @@ ms.locfileid: "10885546"
 
 #### CompareBrowserVersions 
 
-> 公共 STDAPI [CompareBrowserVersions](#comparebrowserversions)（PCWSTR VERSION1，PCWSTR version2，int * 结果）
+> public STDAPI [CompareBrowserVersions](#comparebrowserversions) (PCWSTR VERSION1，PCWSTR version2，int * 结果) 
 
 此方法适用于任何人都希望正确比较版本以确定哪个版本较旧、更旧或相同。
 
@@ -38,7 +40,7 @@ ms.locfileid: "10885546"
 
 #### CreateCoreWebView2Environment 
 
-> 公共 STDAPI [CreateCoreWebView2Environment](#createcorewebview2environment)（[ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](icorewebview2createcorewebview2environmentcompletedhandler.md) * environment_created_handler）
+> 公共 STDAPI [CreateCoreWebView2Environment](#createcorewebview2environment) ([ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](icorewebview2createcorewebview2environmentcompletedhandler.md) * environment_created_handler) 
 
 使用安装的边缘版本创建长绿 WebView2 环境。
 
@@ -46,17 +48,17 @@ ms.locfileid: "10885546"
 
 #### CreateCoreWebView2EnvironmentWithOptions 
 
-> 公共 STDAPI [CreateCoreWebView2EnvironmentWithOptions](#createcorewebview2environmentwithoptions)（PCWSTR BROWSEREXECUTABLEFOLDER、PCWSTR UserDataFolder、 [ICoreWebView2EnvironmentOptions](icorewebview2environmentoptions.md) [* environmentOptions、ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](icorewebview2createcorewebview2environmentcompletedhandler.md) * environment_created_handler）
+> 公共 STDAPI [CreateCoreWebView2EnvironmentWithOptions](#createcorewebview2environmentwithoptions) (PCWSTR BROWSEREXECUTABLEFOLDER、PCWSTR UserDataFolder、 [ICoreWebView2EnvironmentOptions](icorewebview2environmentoptions.md) * [environmentOptions、ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](icorewebview2createcorewebview2environmentcompletedhandler.md) * environment_created_handler) 
 
 DLL 导出以使用自定义版本的 Edge、用户数据目录和/或其他选项创建 WebView2 环境。
 
-用于 `browserExecutableFolder` 指定 WebView2 控件是使用嵌入式版本的边缘，还是使用客户端计算机上存在的已安装版本的 edge。 若要使用嵌入式版本的 Edge，请将包含嵌入式版本的边缘的文件夹的相对路径传递给 `browserExecutableFolder` 。 若要获取嵌入式版本的 Edge，请从客户端计算机上已安装的 Edge 版本中复制已进行版本控制的文件夹名称。 例如， `73.0.52.0` 从安装了 Edge 版本73.0.52.0 的文件夹复制文件夹。 确保文件夹同时具有 " **msedgewebview2.exe** " 和 " **msedge.dll** " 文件。 若要创建使用客户端计算机上存在的已安装版本的 Edge 的 WebView2 控件，请将 null 或空字符串传递给 `browserExecutableFolder` 。 在此方案中，API 尝试在客户端计算机上（首先在计算机级别，然后按用户）使用所选通道首选项查找已安装的边缘的兼容版本。
+用于 `browserExecutableFolder` 指定 WebView2 控件是使用嵌入式版本的边缘，还是使用客户端计算机上存在的已安装版本的 edge。 若要使用嵌入式版本的 Edge，请将包含嵌入式版本的边缘的文件夹的相对路径传递给 `browserExecutableFolder` 。 若要获取嵌入式版本的 Edge，请从客户端计算机上已安装的 Edge 版本中复制已进行版本控制的文件夹名称。 例如， `73.0.52.0` 从安装了 Edge 版本73.0.52.0 的文件夹复制文件夹。 确保文件夹同时具有 " **msedgewebview2.exe** " 和 " **msedge.dll** " 文件。 若要创建使用客户端计算机上存在的已安装版本的 Edge 的 WebView2 控件，请将 null 或空字符串传递给 `browserExecutableFolder` 。 在此方案中，API 尝试查找安装在客户端计算机上的一种兼容版本， (首先在计算机级别上安装，然后按用户) 使用所选通道首选项。
 
 默认通道搜索顺序为稳定、beta、dev 和未固定。 如果存在替代值 WEBVIEW2_RELEASE_CHANNEL_PREFERENCE 环境变量或适用的 releaseChannelPreference 注册表值为1，则将反转频道搜索顺序。
 
 可以指定 userDataFolder 以更改 WebView2 的默认用户数据文件夹位置。 路径可以是绝对文件路径或解释为相对于当前进程的可执行文件的相对文件路径。 否则，对于 UWP 应用，默认的用户数据文件夹将是程序包的应用数据文件夹;对于非 UWP 应用， `{Executable File Name}.WebView2` 将在应用可执行文件旁边的同一目录中创建默认的用户数据文件夹。 如果可执行文件在进程没有在其中创建新文件夹的权限的目录中运行，WebView2 创建可能失败。 应用负责清理已完成的用户数据文件夹。
 
-请注意，作为浏览器进程可能在 WebViews 之间共享，如果指定的选项与当前在共享浏览器进程中运行的 WebViews 的选项不匹配，则使用 HRESULT_FROM_WIN32 （ERROR_INVALID_STATE）时，Web 视图创建将失败。
+请注意，作为浏览器进程可能在 WebViews 之间共享，如果指定的选项与当前在共享浏览器进程中运行的 WebViews 的选项不匹配，则 Web 视图创建将失败，并使用 HRESULT_FROM_WIN32 (ERROR_INVALID_STATE) 。
 
 environment_created_handler 是对异步操作的处理程序结果，该操作将包含已创建的 WebView2Environment。
 
@@ -133,7 +135,7 @@ ERROR_PRODUCT_UNINSTALLED
 
 #### GetAvailableCoreWebView2BrowserVersionString 
 
-> 公共 STDAPI [GetAvailableCoreWebView2BrowserVersionString](#getavailablecorewebview2browserversionstring)（PCWSTR BROWSEREXECUTABLEFOLDER，LPWSTR * versionInfo）
+> 公共 STDAPI [GetAvailableCoreWebView2BrowserVersionString](#getavailablecorewebview2browserversionstring) (PCWSTR BROWSEREXECUTABLEFOLDER，LPWSTR * versionInfo) 
 
 获取包含频道名称的浏览器版本信息（如果不是稳定通道或嵌入边缘）。
 

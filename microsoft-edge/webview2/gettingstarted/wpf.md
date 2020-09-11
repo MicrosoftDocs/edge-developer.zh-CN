@@ -3,23 +3,23 @@ description: 在 WPF 应用中将 web 内容与 Microsoft Edge Web 视图2控件
 title: 适用于 WPF 应用的 Microsoft Edge Web 视图2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: bfddfff03363b5149db3f7e9741730c8e8de2de0
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 65cd858cc314060e75113337f0ae6efc59896a43
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926580"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010722"
 ---
 # WPF 中的 WebView2 入门 (预览) 
 
-在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](../index.md)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](../reference/dotnet/0-9-515-reference-webview2.md)。  
+在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](../index.md)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](../reference/dotnet/0-9-628-reference-webview2.md)。  
 
-## 先决条件  
+## 必备条件  
 
 请确保在继续之前安装了以下先决条件列表：  
 

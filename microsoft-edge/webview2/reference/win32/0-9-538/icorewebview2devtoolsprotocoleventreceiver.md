@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2DevToolsProtocolEventReceiver
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2DevToolsProtocolEventReceiver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2DevToolsProtocolEventReceiver
-ms.openlocfilehash: cc2203e698947702cd4f3e39f95f2371519c9a25
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 8b6076842e6670d425be563687c18d312afd69d7
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880099"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010255"
 ---
-# interface ICoreWebView2DevToolsProtocolEventReceiver 
+# 0.9.579-接口 ICoreWebView2DevToolsProtocolEventReceiver 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2DevToolsProtocolEventReceiver
@@ -39,7 +41,7 @@ interface ICoreWebView2DevToolsProtocolEventReceiver
 
 订阅 DevToolsProtocol 事件。
 
-> public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)（[ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) * 处理程序，EventRegistrationToken * token）
+> 公共 HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived) ([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) * 处理程序、EventRegistrationToken * 令牌) 
 
 每当引发相应的 DevToolsProtocol 事件时，都将调用处理程序的 Invoke 方法。 将调用一个事件参数对象，该对象包含将 DevTools 协议事件的参数对象作为 JSON 字符串。
 
@@ -92,5 +94,5 @@ void ScriptComponent::SubscribeToCdpEvent()
 
 删除以前使用 add_DevToolsProtocolEventReceived 添加的事件处理程序。
 
-> public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived) (EventRegistrationToken 令牌) 
 

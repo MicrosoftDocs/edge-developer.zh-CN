@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2ExperimentalCompositionController
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2ExperimentalCompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExperimentalCompositionController
-ms.openlocfilehash: d651133162520e4a967d13de6f585fe3ac02e830
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 893628746e52ee8501e357f965d49324446d6470
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886458"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010213"
 ---
-# interface ICoreWebView2ExperimentalCompositionController 
+# 0.9.579-接口 ICoreWebView2ExperimentalCompositionController 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -24,14 +26,14 @@ interface ICoreWebView2ExperimentalCompositionController
   : public IUnknown
 ```
 
-此接口是支持可视化托管的[ICoreWebView2Controller](icorewebview2controller.md)接口的扩展。
+此接口是支持可视化托管的 [ICoreWebView2Controller](icorewebview2controller.md) 接口的扩展。
 
 ## 摘要
 
  成员                        | 描述
 --------------------------------|---------------------------------------------
 [add_CursorChanged](#add_cursorchanged) | 为 CursorChanged 事件添加事件处理程序。
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | 用于将从系统接收的 pointerId 转换为[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)的帮助程序函数。
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | 用于将从系统接收的 pointerId 转换为 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)的帮助程序函数。
 [get_Cursor](#get_cursor) | Web 视图所认为的当前光标应该是。
 [get_RootVisualTarget](#get_rootvisualtarget) | RootVisualTarget 是托管应用的可视化树中的视觉对象。
 [get_UIAProvider](#get_uiaprovider) | 返回 Web 视图的 UI 自动化提供程序。
@@ -44,7 +46,7 @@ interface ICoreWebView2ExperimentalCompositionController
 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) | 与 SendMouseInput 的 COREWEBVIEW2_MOUSE_EVENT_KIND 相关联的鼠标事件虚拟键。
 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) | SendPointerInput 使用的指针事件类型，用于传达发送到 Web 视图的指针事件的类型。
 
-实现 ICoreWebView2ExperimentalCompositionController 接口的对象也将实现[ICoreWebView2Controller](icorewebview2controller.md)。 调用方应使用[ICoreWebView2Controller](icorewebview2controller.md)来调整大小、可见性、焦点等，然后使用 ICoreWebView2ExperimentalCompositionController 连接到组合树并提供用于 web 视图的输入。
+实现 ICoreWebView2ExperimentalCompositionController 接口的对象也将实现 [ICoreWebView2Controller](icorewebview2controller.md)。 调用方应使用 [ICoreWebView2Controller](icorewebview2controller.md) 来调整大小、可见性、焦点等，然后使用 ICoreWebView2ExperimentalCompositionController 连接到组合树并提供用于 web 视图的输入。
 
 ## 成员
 
@@ -52,11 +54,11 @@ interface ICoreWebView2ExperimentalCompositionController
 
 为 CursorChanged 事件添加事件处理程序。
 
-> public HRESULT [add_CursorChanged](#add_cursorchanged)（[ICoreWebView2ExperimentalCursorChangedEventHandler](icorewebview2experimentalcursorchangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_CursorChanged](#add_cursorchanged) ([ICoreWebView2ExperimentalCursorChangedEventHandler](icorewebview2experimentalcursorchangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图认为光标应更改时，将引发此事件。 例如，当鼠标光标当前为默认光标，但随后在文本上移动时，它可能会尝试更改为 IBeam 光标。
 
-开发人员需要通过 SendMouseInput API 发送 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE 消息（除了 COREWEBVIEW2_MOUSE_EVENT_KIND_MOVE 消息）。 这是为了确保鼠标实际位于用于发送 CursorChanged 事件的 Web 视图内。
+除了通过 SendMouseInput API) COREWEBVIEW2_MOUSE_EVENT_KIND_MOVE 消息外，开发人员还需要它发送 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE 消息 (。 这是为了确保鼠标实际位于用于发送 CursorChanged 事件的 Web 视图内。
 
 ```cpp
         // Register a handler for the CursorChanged event.
@@ -75,18 +77,18 @@ interface ICoreWebView2ExperimentalCompositionController
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
 
-用于将从系统接收的 pointerId 转换为[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)的帮助程序函数。
+用于将从系统接收的 pointerId 转换为 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)的帮助程序函数。
 
-> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)（UINT POINTERID、HWND parentWindow、struct COREWEBVIEW2_MATRIX_4X4 Transform、 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo）
+> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) (UINT POINTERID、HWND parentWindow、struct COREWEBVIEW2_MATRIX_4X4 Transform、 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo) 
 
-parentWindow 是包含 web 视图的 HWND。 这可以是 hwnd 树中包含 web 视图的任何 HWND。 COREWEBVIEW2_MATRIX_4X4 是从该 HWND 到 web 视图的转换。 返回的[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)在 SendPointerInfo 中使用。 指针类型必须是 "笔" 或 "触摸"，否则函数将失败。
+parentWindow 是包含 web 视图的 HWND。 这可以是 hwnd 树中包含 web 视图的任何 HWND。 COREWEBVIEW2_MATRIX_4X4 是从该 HWND 到 web 视图的转换。 返回的 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) 在 SendPointerInfo 中使用。 指针类型必须是 "笔" 或 "触摸"，否则函数将失败。
 
 
 #### get_Cursor 
 
 Web 视图所认为的当前光标应该是。
 
-> 公共 HRESULT [get_Cursor](#get_cursor)（HCURSOR * 游标）
+> 公共 HRESULT [get_Cursor](#get_cursor) (HCURSOR * Cursor) 
 
 光标应在 WM_SETCURSOR 通过：： SetCursor 设置，或在 Web 视图的相应父/祖先 HWND 上设置：： SetClassLongPtr。 如果你要执行的操作比立即设置光标更多，则可以释放 HCURSOR，以便建议使用 CopyCursor/DestroyCursor 保留你自己的副本。
 
@@ -94,7 +96,7 @@ Web 视图所认为的当前光标应该是。
 
 RootVisualTarget 是托管应用的可视化树中的视觉对象。
 
-> 公共 HRESULT [get_RootVisualTarget](#get_rootvisualtarget)（IUnknown * * 目标）
+> 公共 HRESULT [get_RootVisualTarget](#get_rootvisualtarget) (IUnknown * * 目标) 
 
 此视觉对象是 Web 视图将连接其可视化树的位置。 应用使用此视觉对象在应用内放置 Web 视图。 应用仍需要使用界限属性来调整 Web 视图的大小。 RootVisualTarget 属性可以是 IDCompositionVisual 或 Windows：： UI：：合成：： ContainerVisual。 在从属性 setter 返回之前，Web 视图会将其可视化树连接到提供的视觉对象。 应用需要在其设备上进行提交设置 RootVisualTarget 属性。 RootVisualTarget 属性支持将设置为 nullptr 以断开 Web 视图与应用的可视化树的连接。 
 ```cpp
@@ -131,25 +133,25 @@ void ViewComponent::BuildDCompTreeUsingVisual()
 
 返回 Web 视图的 UI 自动化提供程序。
 
-> 公共 HRESULT [get_UIAProvider](#get_uiaprovider)（IUnknown * * 提供程序）
+> 公共的 HRESULT [get_UIAProvider](#get_uiaprovider) (IUnknown * * 提供商) 
 
 #### put_RootVisualTarget 
 
 设置 RootVisualTarget 属性。
 
-> 公共 HRESULT [put_RootVisualTarget](#put_rootvisualtarget)（IUnknown * 目标）
+> 公共 HRESULT [put_RootVisualTarget](#put_rootvisualtarget) (IUnknown * 目标) 
 
 #### remove_CursorChanged 
 
 删除以前使用 add_CursorChanged 添加的事件处理程序。
 
-> public HRESULT [remove_CursorChanged](#remove_cursorchanged)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_CursorChanged](#remove_cursorchanged) (EventRegistrationToken 令牌) 
 
 #### SendMouseInput 
 
 如果 eventKind 为 COREWEBVIEW2_MOUSE_EVENT_KIND_HORIZONTAL_WHEEL 或 COREWEBVIEW2_MOUSE_EVENT_KIND_WHEEL，则 mouseData 指定滚轮移动量。
 
-> public HRESULT [SendMouseInput](#sendmouseinput)（[COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) eventKind， [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) virtualKeys，UINT32 mouseData，point）
+> public HRESULT [SendMouseInput](#sendmouseinput) ([COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) eventKind， [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) virtualKeys，UINT32 mouseData，point) 
 
 正值表示滑轮向前旋转，远离用户。负值表示滑轮向后旋转，朝向用户。 一个滚轮单击定义为 WHEEL_DELTA，即120。 如果 eventKind 是 COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN 或 COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP，则 mouseData 指定按下或释放哪些 X 按钮。 如果按下/释放第一个 X 按钮，此值应为1，如果按下/释放第二个 X 按钮，则为2。 如果 eventKind 为 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE，则 virtualKeys、mouseData 和 point 均应为零。 如果 eventKind 为任何其他值，则 mouseData 应为零。 Point 应位于 Web 视图的工作区坐标空间中。 若要跟踪在 Web 视图中启动并可能在 Web 视图和主机应用程序外部移动的鼠标事件，建议使用调用 SetCapture 和 ReleaseCapture。 为了消除悬停弹出窗口，还建议发送 COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE 消息。 
 ```cpp
@@ -258,9 +260,9 @@ bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 
 SendPointerInput 接受在 COREWEBVIEW2_POINTER_EVENT_KIND 中定义的类型的触摸或笔指针输入。
 
-> 公共 HRESULT [SendPointerInput](#sendpointerinput)（[COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind)事件[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * pointerInfo）
+> 公共的 HRESULT [SendPointerInput](#sendpointerinput) ([COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) 事件 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * pointerInfo) 
 
-必须首先将系统中的任何指针输入转换为[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) 。
+必须首先将系统中的任何指针输入转换为 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) 。
 
 #### COREWEBVIEW2_MATRIX_4X4 
 
@@ -274,7 +276,7 @@ SendPointerInput 接受在 COREWEBVIEW2_POINTER_EVENT_KIND 中定义的类型的
 
 SendMouseInput 用于传达发送给 Web 视图的鼠标事件类型的鼠标事件类型。
 
-> 枚举[COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind)
+> 枚举 [COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -301,7 +303,7 @@ COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP            | 第一个或第二个 X �
 
 与 SendMouseInput 的 COREWEBVIEW2_MOUSE_EVENT_KIND 相关联的鼠标事件虚拟键。
 
-> 枚举[COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys)
+> 枚举 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -320,7 +322,7 @@ COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS_X_BUTTON2            | 第二个 X 按钮�
 
 SendPointerInput 使用的指针事件类型，用于传达发送到 Web 视图的指针事件的类型。
 
-> 枚举[COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind)
+> 枚举 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------

@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: CoreWebView2WindowFeatures 中的 WebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2。 CoreWebView2WindowFeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: d6d6f52456823488c07288c8ed07b9655a29883a
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 59e051c0537357fed89d6300db69ea479b656c7e
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10884435"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010511"
 ---
-# CoreWebView2WindowFeatures 类的 WebView2 
+# 0.9.579-WebView2 的 CoreWebView2WindowFeatures 类 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -45,7 +47,7 @@ Web 视图弹出窗口的窗口功能。
 
 窗口的高度。
 
-> 公共 uint[高度](#height)
+> 公共 uint [高度](#height)
 
 #### 向左 
 
@@ -59,31 +61,31 @@ Web 视图弹出窗口的窗口功能。
 
 是否显示菜单栏。
 
-> 公共 int[菜单栏](#menubar)
+> 公共 int [菜单栏](#menubar)
 
 #### 滚动条 
 
 是否显示滚动条。
 
-> 公共 int[滚动条](#scrollbars)
+> 公共 int [滚动条](#scrollbars)
 
 #### 状态 
 
 是否添加状态栏。
 
-> 公共 int[状态](#status)
+> 公共 int [状态](#status)
 
 #### 工具栏 
 
 是否显示浏览器工具栏。
 
-> 公共 int[工具栏](#toolbar)
+> 公共 int [工具栏](#toolbar)
 
 #### Top 
 
 窗口的顶部位置。
 
-> 公共 uint[顶部](#top)
+> 公共 uint [顶部](#top)
 
 如果 HasPosition 为 false，则不会失败。
 
@@ -91,17 +93,17 @@ Web 视图弹出窗口的窗口功能。
 
 窗口的宽度。
 
-> 公共 uint[宽度](#width)
+> 公共 uint [宽度](#width)
 
 #### HasPosition 
 
 具有指定的 left 和 top 值。
 
-> 公共 int [HasPosition](#hasposition)（）
+> 公共 int [HasPosition](#hasposition) ( # A1
 
 #### HasSize 
 
 具有指定的高度和宽度值。
 
-> 公共 int [HasSize](#hassize)（）
+> 公共 int [HasSize](#hassize) ( # A1
 

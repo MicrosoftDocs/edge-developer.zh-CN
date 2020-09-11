@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2Environment
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2Environment
-ms.openlocfilehash: 2450bae0f25d119f785494b8223ade02ad6c950e
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 683b957e804c19db42ce0b04d9613530a4f7978f
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10884622"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010248"
 ---
-# interface ICoreWebView2Environment 
+# 0.9.579-接口 ICoreWebView2Environment 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2Environment
@@ -31,7 +33,7 @@ interface ICoreWebView2Environment
 [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable) | 当已安装更高版本的 Edge 浏览器并可通过 WebView2 使用时，将引发 NewBrowserVersionAvailable 事件。
 [CreateCoreWebView2Controller](#createcorewebview2controller) | 异步创建新的 Web 视图。
 [CreateWebResourceResponse](#createwebresourceresponse) | 创建新的 web 资源响应对象。
-[get_BrowserVersionString](#get_browserversionstring) | 当前[ICoreWebView2Environment]()的浏览器版本信息，包括频道名称（如果不是稳定频道）。
+[get_BrowserVersionString](#get_browserversionstring) | 当前 [ICoreWebView2Environment]()的浏览器版本信息，包括频道名称（如果不是稳定频道）。
 [remove_NewBrowserVersionAvailable](#remove_newbrowserversionavailable) | 删除以前使用 add_NewBrowserVersionAvailable 添加的事件处理程序。
 
 在使用环境参数指定的浏览器进程中运行的环境中创建的 WebViews，应在同一环境中使用。 在不同的环境中使用它不保证兼容，并且可能会失败。
@@ -42,7 +44,7 @@ interface ICoreWebView2Environment
 
 当已安装更高版本的 Edge 浏览器并可通过 WebView2 使用时，将引发 NewBrowserVersionAvailable 事件。
 
-> public HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable)（[ICoreWebView2NewBrowserVersionAvailableEventHandler](icorewebview2newbrowserversionavailableeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable) ([ICoreWebView2NewBrowserVersionAvailableEventHandler](icorewebview2newbrowserversionavailableeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 若要使用较新版本的浏览器，必须创建新的环境和 Web 视图。 将仅针对从其运行代码的同一边缘通道中的新版本引发此事件。 当不运行安装的边缘时，将不会触发任何事件。
 
@@ -89,7 +91,7 @@ interface ICoreWebView2Environment
 
 异步创建新的 Web 视图。
 
-> 公共 HRESULT [CreateCoreWebView2Controller](#createcorewebview2controller)（HWND ParentWindow， [ICoreWebView2CreateCoreWebView2ControllerCompletedHandler](icorewebview2createcorewebview2controllercompletedhandler.md) * 处理程序）
+> 公共 HRESULT [CreateCoreWebView2Controller](#createcorewebview2controller) (HWND ParentWindow， [ICoreWebView2CreateCoreWebView2ControllerCompletedHandler](icorewebview2createcorewebview2controllercompletedhandler.md) * 处理程序) 
 
 parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创建 Web 视图期间，Web 视图会将子窗口添加到提供的窗口中。 由同辈窗口顺序影响的 Z 顺序和其他项目将相应受到影响。
 
@@ -228,9 +230,9 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 创建新的 web 资源响应对象。
 
-> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)（IStream * 内容、int STATUSCODE、LPCWSTR REASONPHRASE、LPCWSTR 标头、 [ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) * * * response）
+> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse) (IStream * 内容、int STATUSCODE、LPCWSTR REASONPHRASE、LPCWSTR 标头、 [ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) * * response) 
 
-标头是由换行符分隔的原始响应标题字符串。 也可以使用空的标头字符串创建此对象，然后使用[ICoreWebView2HttpResponseHeaders](icorewebview2httpresponseheaders.md)来逐行构造标题。 有关其他参数的信息，请参阅[ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md)。
+标头是由换行符分隔的原始响应标题字符串。 也可以使用空的标头字符串创建此对象，然后使用 [ICoreWebView2HttpResponseHeaders](icorewebview2httpresponseheaders.md) 来逐行构造标题。 有关其他参数的信息，请参阅 [ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md)。
 
 ```cpp
         if (m_blockImages)
@@ -269,9 +271,9 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 #### get_BrowserVersionString 
 
-当前[ICoreWebView2Environment]()的浏览器版本信息，包括频道名称（如果不是稳定频道）。
+当前 [ICoreWebView2Environment]()的浏览器版本信息，包括频道名称（如果不是稳定频道）。
 
-> 公共 HRESULT [get_BrowserVersionString](#get_browserversionstring)（LPWSTR * versionInfo）
+> 公共 HRESULT [get_BrowserVersionString](#get_browserversionstring) (LPWSTR * versionInfo) 
 
 这与 GetAvailableCoreWebView2BrowserVersionString API 的格式相匹配。 信道名称为 "beta"、"dev" 和 "未设备"。
 
@@ -287,5 +289,5 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 删除以前使用 add_NewBrowserVersionAvailable 添加的事件处理程序。
 
-> public HRESULT [remove_NewBrowserVersionAvailable](#remove_newbrowserversionavailable)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_NewBrowserVersionAvailable](#remove_newbrowserversionavailable) (EventRegistrationToken 令牌) 
 

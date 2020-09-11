@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: CoreWebView2Settings 中的 WebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2。 CoreWebView2Settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: 6b512bcb5e8962b09d3a98c567465a488ef4038d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 7ce831c3259aaede687a5f5bdf3e2a78fc9700a3
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879672"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010836"
 ---
-# CoreWebView2Settings 类的 WebView2 
+# 0.9.579-WebView2 的 CoreWebView2Settings 类 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll
@@ -54,7 +56,7 @@ AreDefaultContextMenusEnabled 属性用于阻止在 web 视图中向用户显示
 
 > 公共 bool [AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled)
 
-如果设置为 false，则 Web 视图不会呈现默认的 javascript 对话框（具体由 javascript 警报、confirm、prompt 函数和 beforeunload 事件所显示的对话框）。 相反，如果 SetScriptDialogOpeningEventHandler 设置了事件处理程序，则 Web 视图将发送一个包含对话框的所有信息的事件，并允许主机应用显示其自己的自定义 UI。
+如果设置为 false，则 Web 视图不会呈现默认的 javascript 对话框 (特定的 javascript 对话框，具体由 javascript 警报、确认、提示函数和 beforeunload 事件) 所示。 相反，如果 SetScriptDialogOpeningEventHandler 设置了事件处理程序，则 Web 视图将发送一个包含对话框的所有信息的事件，并允许主机应用显示其自己的自定义 UI。
 
 #### AreDevToolsEnabled 
 
@@ -102,7 +104,7 @@ IsStatusBarEnabled 控制状态栏是否将显示。
 
 > 公共 bool [IsWebMessageEnabled](#iswebmessageenabled)
 
-如果设置为 true，则通过 PostWebMessageAsJson、PostWebMessageAsString 和，从主机到 web 视图的顶级 HTML 文档的通信是允许通过 web 视图、和 window。 chrome 的消息事件（有关详细信息，请参阅 PostWebMessageAsJson 文档）。 通过 window 的 postMessage 函数和 SetWebMessageReceivedEventHandler 方法，允许从 web 视图的顶级 HTML 文档到主机的通信（有关详细信息，请参阅 SetWebMessageReceivedEventHandler 文档）。 如果设置为 false，则不允许通信。 PostWebMessageAsJson 和 PostWebMessageAsString 将失败 E_ACCESSDENIED，并且通过引发 Error 对象的实例，postMessage 将失败。 默认情况下为 true。
+如果设置为 true，则通过 PostWebMessageAsJson、PostWebMessageAsString 和 window HTML 文档从主机到 web 视图的顶级 HTML 文档的通信是允许的。 web 视图的消息事件 (有关详细信息) ，请参阅 PostWebMessageAsJson 文档。 通过 postMessage 函数和 SetWebMessageReceivedEventHandler (方法从 web 视图的顶级 HTML 文档到主机的通信是允许的，请参阅 SetWebMessageReceivedEventHandler 文档了解详细信息) 。 如果设置为 false，则不允许通信。 PostWebMessageAsJson 和 PostWebMessageAsString 将失败 E_ACCESSDENIED，并且通过引发 Error 对象的实例，postMessage 将失败。 默认情况下为 true。
 
 #### IsZoomControlEnabled 
 

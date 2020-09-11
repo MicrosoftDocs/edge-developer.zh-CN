@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2PermissionRequestedEventArgs
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2PermissionRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2PermissionRequestedEventArgs
-ms.openlocfilehash: b3178f3c012bc19b9221fbf6961ce0665245d551
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 4abb6fb058765a05ebb32fe97474348c4aebde12
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879336"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010031"
 ---
-# interface ICoreWebView2PermissionRequestedEventArgs 
+# 0.9.579-接口 ICoreWebView2PermissionRequestedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2PermissionRequestedEventArgs
@@ -32,7 +34,7 @@ Webview.permissionrequested 事件的事件参数。
 [get_PermissionKind](#get_permissionkind) | 所请求权限的类型。
 [get_State](#get_state) | 权限请求的状态，即
 [get_Uri](#get_uri) | 请求权限的 web 内容的来源。
-[GetDeferral](#getdeferral) | 可调用 GetDeferral 以返回[ICoreWebView2Deferral](icorewebview2deferral.md)对象。
+[GetDeferral](#getdeferral) | 可调用 GetDeferral 以返回 [ICoreWebView2Deferral](icorewebview2deferral.md) 对象。
 [put_State](#put_state) | 设置 State 属性。
 
 ## 成员
@@ -41,7 +43,7 @@ Webview.permissionrequested 事件的事件参数。
 
 当权限请求通过用户手势启动时为 True。
 
-> public HRESULT [get_IsUserInitiated](#get_isuserinitiated)（BOOL * IsUserInitiated）
+> 公共 HRESULT [get_IsUserInitiated](#get_isuserinitiated) (BOOL * IsUserInitiated) 
 
 注意，通过用户手势启动并不意味着用户打算访问关联的资源。
 
@@ -49,13 +51,13 @@ Webview.permissionrequested 事件的事件参数。
 
 所请求权限的类型。
 
-> public HRESULT [get_PermissionKind](#get_permissionkind)（COREWEBVIEW2_PERMISSION_KIND * 值）
+> public HRESULT [get_PermissionKind](#get_permissionkind) (COREWEBVIEW2_PERMISSION_KIND * 值) 
 
 #### get_State 
 
 权限请求的状态，即
 
-> public HRESULT [get_State](#get_state)（COREWEBVIEW2_PERMISSION_STATE * 值）
+> public HRESULT [get_State](#get_state) (COREWEBVIEW2_PERMISSION_STATE * 值) 
 
 是否授予请求。 默认值为 COREWEBVIEW2_PERMISSION_STATE_DEFAULT。
 
@@ -63,13 +65,13 @@ Webview.permissionrequested 事件的事件参数。
 
 请求权限的 web 内容的来源。
 
-> 公共 HRESULT [get_Uri](#get_uri)（LPWSTR * Uri）
+> 公共 HRESULT [get_Uri](#get_uri) (LPWSTR * Uri) 
 
 #### GetDeferral 
 
-可调用 GetDeferral 以返回[ICoreWebView2Deferral](icorewebview2deferral.md)对象。
+可调用 GetDeferral 以返回 [ICoreWebView2Deferral](icorewebview2deferral.md) 对象。
 
-> 公共 HRESULT [GetDeferral](#getdeferral)（[ICoreWebView2Deferral](icorewebview2deferral.md) * * 延迟）
+> 公共 HRESULT [GetDeferral](#getdeferral) ([ICoreWebView2Deferral](icorewebview2deferral.md) * * 延期) 
 
 开发人员可以使用延迟对象在以后的时间做出权限决定。
 
@@ -77,5 +79,5 @@ Webview.permissionrequested 事件的事件参数。
 
 设置 State 属性。
 
-> public HRESULT [put_State](#put_state)（COREWEBVIEW2_PERMISSION_STATE 值）
+> public HRESULT [put_State](#put_state) (COREWEBVIEW2_PERMISSION_STATE 值) 
 

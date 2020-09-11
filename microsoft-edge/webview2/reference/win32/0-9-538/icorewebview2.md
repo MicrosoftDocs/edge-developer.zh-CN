@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2
-ms.openlocfilehash: a1da6789027234130c58078871d7da23b4e285ba
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 695eb5697b95bdf3089bb81a926532a0de6f22c2
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895495"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010640"
 ---
-# interface ICoreWebView2 
+# 0.9.579-接口 ICoreWebView2 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2
@@ -103,7 +105,7 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 
 ContainsFullScreenElement 属性更改时通知。
 
-> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)（[ICoreWebView2ContainsFullScreenElementChangedEventHandler](icorewebview2containsfullscreenelementchangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged) ([ICoreWebView2ContainsFullScreenElementChangedEventHandler](icorewebview2containsfullscreenelementchangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 这意味着 Web 视图中的 HTML 元素正在将全屏输入到 Web 视图的大小或离开全屏。 例如，当视频元素请求进入全屏时，此事件非常有用。 然后，ContainsFullScreenElementChanged 的侦听器可以在响应中调整 Web 视图的大小。
 
@@ -135,15 +137,15 @@ ContainsFullScreenElement 属性更改时通知。
 
 为 ContentLoading 事件添加事件处理程序。
 
-> public HRESULT [add_ContentLoading](#add_contentloading)（[ICoreWebView2ContentLoadingEventHandler](icorewebview2contentloadingeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_ContentLoading](#add_contentloading) ([ICoreWebView2ContentLoadingEventHandler](icorewebview2contentloadingeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
-ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecuteOnDocumentCreated ContentLoading 添加的脚本在同一页面导航（如通过片段导航或历史记录）发生时不会触发。 这将遵循 NavigationStarting 和 SourceChanged 事件，并在 HistoryChanged 和 NavigationCompleted 事件之前。
+ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecuteOnDocumentCreated ContentLoading 添加的脚本，如果发生相同的页面导航 (例如片段导航或历史记录），将不会触发这些脚本。 pushState 导航) 。 这将遵循 NavigationStarting 和 SourceChanged 事件，并在 HistoryChanged 和 NavigationCompleted 事件之前。
 
 #### add_DocumentTitleChanged 
 
 为 DocumentTitleChanged 事件添加事件处理程序。
 
-> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)（[ICoreWebView2DocumentTitleChangedEventHandler](icorewebview2documenttitlechangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged) ([ICoreWebView2DocumentTitleChangedEventHandler](icorewebview2documenttitlechangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图的 DocumentTitle 属性发生更改，并且可能会在 NavigationCompleted 事件之前或之后出现时，将引发此事件。
 
@@ -166,9 +168,9 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 FrameNavigationCompleted 事件添加事件处理程序。
 
-> public HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted)（[ICoreWebView2NavigationCompletedEventHandler](icorewebview2navigationcompletedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted) ([ICoreWebView2NavigationCompletedEventHandler](icorewebview2navigationcompletedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
-当子框架已完全加载（已激发了 FrameNavigationCompleted）或加载时出错，已停止加载时，将引发事件。
+当子框架已完全加载 (正文 "时，将触发) 或加载已停止但出现错误的 FrameNavigationCompleted 事件。
 
 ```cpp
     // Register a handler for the FrameNavigationCompleted event.
@@ -205,7 +207,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 FrameNavigationStarting 事件添加事件处理程序。
 
-> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)（[ICoreWebView2NavigationStartingEventHandler](icorewebview2navigationstartingeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting) ([ICoreWebView2NavigationStartingEventHandler](icorewebview2navigationstartingeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图中请求权限导航到其他 URI 的子帧时，将触发 FrameNavigationStarting。 这也会引发重定向。
 
@@ -232,7 +234,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 历史记录更改侦听顶级文档的导航历史记录更改。
 
-> public HRESULT [add_HistoryChanged](#add_historychanged)（[ICoreWebView2HistoryChangedEventHandler](icorewebview2historychangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_HistoryChanged](#add_historychanged) ([ICoreWebView2HistoryChangedEventHandler](icorewebview2historychangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 使用历史记录更改检查 CanGoBack/CanGoForward 值是否已更改。 使用 GoBack/GoForward 时也会触发 HistoryChanged。 HistoryChanged 在 SourceChanged 和 ContentLoading 后激发。 为 HistoryChanged 事件添加事件处理程序。 
 ```cpp
@@ -258,9 +260,9 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 NavigationCompleted 事件添加事件处理程序。
 
-> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)（[ICoreWebView2NavigationCompletedEventHandler](icorewebview2navigationcompletedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_NavigationCompleted](#add_navigationcompleted) ([ICoreWebView2NavigationCompletedEventHandler](icorewebview2navigationcompletedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
-当 Web 视图已完全加载（NavigationCompleted 已激发）或加载时出现错误，将引发事件。
+当 Web 视图已完全加载 (正文时，将引发 NavigationCompleted 事件。 onload 已停止) 或加载，但出现错误。
 
 ```cpp
     // Register a handler for the NavigationCompleted event.
@@ -295,7 +297,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 NavigationStarting 事件添加事件处理程序。
 
-> public HRESULT [add_NavigationStarting](#add_navigationstarting)（[ICoreWebView2NavigationStartingEventHandler](icorewebview2navigationstartingeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_NavigationStarting](#add_navigationstarting) ([ICoreWebView2NavigationStartingEventHandler](icorewebview2navigationstartingeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图主框架请求导航到其他 URI 的权限时，将触发 NavigationStarting。 这也会引发重定向。
 
@@ -345,7 +347,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 Webview.newwindowrequested 事件添加事件处理程序。
 
-> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)（[ICoreWebView2NewWindowRequestedEventHandler](icorewebview2newwindowrequestedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_NewWindowRequested](#add_newwindowrequested) ([ICoreWebView2NewWindowRequestedEventHandler](icorewebview2newwindowrequestedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 在 Web 视图中请求打开新窗口（如通过 window）的内容时激发。 应用可以传递将被视为打开的窗口的目标 web 视图。
 
@@ -421,7 +423,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 Webview.permissionrequested 事件添加事件处理程序。
 
-> public HRESULT [add_PermissionRequested](#add_permissionrequested)（[ICoreWebView2PermissionRequestedEventHandler](icorewebview2permissionrequestedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_PermissionRequested](#add_permissionrequested) ([ICoreWebView2PermissionRequestedEventHandler](icorewebview2permissionrequestedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 在 Web 视图中的内容请求访问某些权限资源的权限时引发。
 
@@ -468,7 +470,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 ProcessFailed 事件添加事件处理程序。
 
-> public HRESULT [add_ProcessFailed](#add_processfailed)（[ICoreWebView2ProcessFailedEventHandler](icorewebview2processfailedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_ProcessFailed](#add_processfailed) ([ICoreWebView2ProcessFailedEventHandler](icorewebview2processfailedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图进程意外终止或停止响应时激发。
 
@@ -525,9 +527,9 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 为 ScriptDialogOpening 事件添加事件处理程序。
 
-> public HRESULT [add_ScriptDialogOpening](#add_scriptdialogopening)（[ICoreWebView2ScriptDialogOpeningEventHandler](icorewebview2scriptdialogopeningeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_ScriptDialogOpening](#add_scriptdialogopening) ([ICoreWebView2ScriptDialogOpeningEventHandler](icorewebview2scriptdialogopeningeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
-将针对 web 视图显示 JavaScript 对话框（警报、确认或提示）时，将引发此事件。 仅当 ICoreWebView2Settings：： AreDefaultScriptDialogsEnabled 属性设置为 false 时，此事件才会触发。 ScriptDialogOpening 事件可用于取消对话框或使用自定义对话框替换默认对话框。
+当将显示 web 视图的 JavaScript 对话框 (警报、确认或提示) 时，将引发此事件。 仅当 ICoreWebView2Settings：： AreDefaultScriptDialogsEnabled 属性设置为 false 时，此事件才会触发。 ScriptDialogOpening 事件可用于取消对话框或使用自定义对话框替换默认对话框。
 
 ```cpp
     // Register a handler for the ScriptDialogOpening event.
@@ -591,7 +593,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 Source 属性更改时将触发 SourceChanged。
 
-> public HRESULT [add_SourceChanged](#add_sourcechanged)（[ICoreWebView2SourceChangedEventHandler](icorewebview2sourcechangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_SourceChanged](#add_sourcechanged) ([ICoreWebView2SourceChangedEventHandler](icorewebview2sourcechangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 导航到其他网站或片段导航时，将引发 SourceChanged。 对于其他类型的导航（如页面重新加载或 pushState，其 URL 与当前页面相同），不会引发此类导航。 SourceChanged 将在 ContentLoading 之前激发，以便导航到新文档。 为 SourceChanged 事件添加事件处理程序。 
 ```cpp
@@ -620,7 +622,7 @@ Source 属性更改时将触发 SourceChanged。
 
 当设置 IsWebMessageEnabled 设置和 web 视图调用的顶级文档时，将引发此事件 `window.chrome.webview.postMessage` 。
 
-> public HRESULT [add_WebMessageReceived](#add_webmessagereceived)（[ICoreWebView2WebMessageReceivedEventHandler](icorewebview2webmessagereceivedeventhandler.md) * 处理程序，EventRegistrationToken * token）
+> 公共 HRESULT [add_WebMessageReceived](#add_webmessagereceived) ([ICoreWebView2WebMessageReceivedEventHandler](icorewebview2webmessagereceivedeventhandler.md) * 处理程序、EventRegistrationToken * 令牌) 
 
 PostMessage 函数是 `void postMessage(object)` 对象是 JSON 转换支持的任何对象。
 
@@ -642,7 +644,7 @@ PostMessage 函数是 `void postMessage(object)` 对象是 JSON 转换支持的�
             window.chrome.webview.postMessage("GetWindowBounds");
         }
 ```
- 调用 postMessage 时，将使用转换为 JSON 字符串的 postMessage 的对象参数调用通过此 SetWebMessageReceivedEventHandler 方法设置的[ICoreWebView2WebMessageReceivedEventHandler](icorewebview2webmessagereceivedeventhandler.md) 。
+ 调用 postMessage 时，将使用转换为 JSON 字符串的 postMessage 的对象参数调用通过此 SetWebMessageReceivedEventHandler 方法设置的 [ICoreWebView2WebMessageReceivedEventHandler](icorewebview2webmessagereceivedeventhandler.md) 。
 
 ```cpp
     // Setup the web message received event handler before navigating to
@@ -686,7 +688,7 @@ PostMessage 函数是 `void postMessage(object)` 对象是 JSON 转换支持的�
 
 为 WebResourceRequested 事件添加事件处理程序。
 
-> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)（[ICoreWebView2WebResourceRequestedEventHandler](icorewebview2webresourcerequestedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_WebResourceRequested](#add_webresourcerequested) ([ICoreWebView2WebResourceRequestedEventHandler](icorewebview2webresourcerequestedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 在 Web 视图对使用 AddWebResourceRequestedFilter 添加的匹配 URL 和资源上下文筛选器执行 URL 请求时激发。 必须至少添加一个筛选器，才能触发该事件。
 
@@ -729,7 +731,7 @@ PostMessage 函数是 `void postMessage(object)` 对象是 JSON 转换支持的�
 
 为 WindowCloseRequested 事件添加事件处理程序。
 
-> public HRESULT [add_WindowCloseRequested](#add_windowcloserequested)（[ICoreWebView2WindowCloseRequestedEventHandler](icorewebview2windowcloserequestedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_WindowCloseRequested](#add_windowcloserequested) ([ICoreWebView2WindowCloseRequestedEventHandler](icorewebview2windowcloserequestedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 在 Web 视图中请求关闭窗口的内容（如在窗口后）关闭窗口时激发。调用 close。 如果应用程序有意义，则应用应关闭 Web 视图和相关应用窗口。
 
@@ -753,7 +755,7 @@ PostMessage 函数是 `void postMessage(object)` 对象是 JSON 转换支持的�
 
 将所提供的主机对象添加到在具有指定名称的 Web 视图中运行的脚本。
 
-> public HRESULT [AddHostObjectToScript](#addhostobjecttoscript)（LPCWSTR NAME，VARIANT * object）
+> public HRESULT [AddHostObjectToScript](#addhostobjecttoscript) (LPCWSTR NAME，VARIANT * object) 
 
 主机对象通过来公开为主机对象代理 `window.chrome.webview.hostObjects.<name>` 。 主机对象代理承诺并将解析为表示主机对象的对象。 如果应用未添加具有名称的对象，则该承诺将被拒绝。 当 JavaScript 代码访问对象的属性或方法时，承诺将返回，它将解析为属性或方法从主机返回的值，或者在出现错误时被拒绝，例如在对象上没有此类属性或参数无效的情况下被拒绝。 例如，当应用程序代码执行以下操作时：
 
@@ -778,7 +780,7 @@ let result = await app_object.method1(parameters);
 
 同步主机对象代理和异步主机对象代理都可以代理相同的主机对象。 一个代理所做的远程更改将反映在同一主机对象的任何其他代理中，无论其他代理和同步还是异步。
 
-虽然 JavaScript 在对本机代码的同步调用上被阻止，但该本机代码无法回调到 JavaScript。 尝试执行此操作将失败，并 HRESULT_FROM_WIN32 （ERROR_POSSIBLE_DEADLOCK）。
+虽然 JavaScript 在对本机代码的同步调用上被阻止，但该本机代码无法回调到 JavaScript。 尝试执行此操作将失败，并 HRESULT_FROM_WIN32 (ERROR_POSSIBLE_DEADLOCK) 。
 
 主机对象代理是截取所有属性获取、属性集和方法调用的 JavaScript 代理对象。 作为函数或对象原型一部分的属性或方法在本地运行。 此外，数组中的任何属性或方法 `chrome.webview.hostObjects.options.forceLocalProperties` 也将在本地运行。 这是默认设置，包括在 JavaScript 中具有含义的可选方法 `toJSON` ，如和 `Symbol.toPrimitive` 。 你可以根据需要向此数组添加更多。
 
@@ -796,7 +798,7 @@ let result = await app_object.method1(parameters);
 
 * 然后：异步主机对象代理具有 then 方法。 这使它们能够可等待。 `then` 将返回通过主机对象的表示形式解析的承诺。 如果代理表示 JavaScript 文本，则会在本地返回一个副本。 如果代理表示一个函数，则返回非可等待代理。 如果代理表示的 JavaScript 对象混合了文本属性和函数属性，则会将某些属性作为主机对象代理返回该对象的副本。
 
-所有其他属性和方法调用（除了上述远程对象代理方法、forceLocalProperties 列表和函数和对象原型上的属性）都是远程运行的。 异步主机对象代理返回表示异步完成远程调用该方法或获取属性的一种承诺。 在远程操作完成后，承诺将解决该操作的结果值。 同步主机对象代理的工作方式类似，但阻止了 JavaScript 执行，并等待远程操作完成。
+除了上述远程对象代理方法、forceLocalProperties 列表以及函数和对象原型) 上的属性之外，其他所有属性和方法 (调用都将远程运行。 异步主机对象代理返回表示异步完成远程调用该方法或获取属性的一种承诺。 在远程操作完成后，承诺将解决该操作的结果值。 同步主机对象代理的工作方式类似，但阻止了 JavaScript 执行，并等待远程操作完成。
 
 在异步主机对象代理上设置属性的工作方式略有不同。 Set 将立即返回，返回值为将设置的值。 这是 JavaScript 代理对象的要求。 如果需要异步等待属性设置为 "完成"，请使用 setHostProperty 方法，该方法将返回上述承诺。 同步对象属性 set 属性在设置该属性之前同步地阻止。
 
@@ -902,17 +904,17 @@ let result = await app_object.method1(parameters);
         });
         });
 ```
-向脚本公开主机对象有安全风险。 请遵循[最佳做法](https://docs.microsoft.com/microsoft-edge/webview2/concepts/security)。
+向脚本公开主机对象有安全风险。 请遵循 [最佳做法](https://docs.microsoft.com/microsoft-edge/webview2/concepts/security)。
 
 #### AddScriptToExecuteOnDocumentCreated 
 
 将提供的 JavaScript 添加到应在创建全局对象后执行的脚本列表，但在分析 HTML 文档之前和执行 HTML 文档所包含的任何其他脚本之前。
 
-> 公共 HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)（LPCWSTR JavaScript， [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md) * 处理程序）
+> 公共的 HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated) (LPCWSTR JavaScript、 [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md) * 处理程序) 
 
 此方法会插入一个在所有顶级文档和子框架页面导航上运行的脚本。 此方法异步运行，并且你必须等待完成处理程序完成，然后才可以运行插入的脚本。 此方法完成后，将 `Invoke` 通过 `id` 插入的脚本调用处理程序的方法。 `id` 是字符串。 若要删除插入的脚本，请使用 `RemoveScriptToExecuteOnDocumentCreated` 。
 
-请注意，如果 HTML 文档通过[沙盒](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)属性或[内容安全策略 HTTP 标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)进行了某种类型的沙盒，则会影响在此处运行脚本。 例如，如果未设置 "allow-modals" 关键字，则将忽略对该函数的调用 `alert` 。
+请注意，如果 HTML 文档通过 [沙盒](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) 属性或 [内容安全策略 HTTP 标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) 进行了某种类型的沙盒，则会影响在此处运行脚本。 例如，如果未设置 "allow-modals" 关键字，则将忽略对该函数的调用 `alert` 。
 
 ```cpp
 // Prompt the user for some script and register it to execute whenever a new page loads.
@@ -950,17 +952,17 @@ void ScriptComponent::AddInitializeScript()
 
 将 URI 和资源上下文筛选器添加到 WebResourceRequested 事件。
 
-> 公共 HRESULT [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter)（LPCWSTR const uri， [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) const resourceContext）
+> 公共 HRESULT [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) (LPCWSTR const uri， [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) const resourceContext) 
 
-URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是一）。 nullptr 等效于 L ""。 有关资源上下文筛选器的说明，请参阅 COREWEBVIEW2_WEB_RESOURCE_CONTEXT enum。
+URI 参数可以是 ( "" 的通配符字符串：零或更多，'？ '：正好是一个) 。 nullptr 等效于 L ""。 有关资源上下文筛选器的说明，请参阅 COREWEBVIEW2_WEB_RESOURCE_CONTEXT enum。
 
 #### CallDevToolsProtocolMethod 
 
 调用异步 DevToolsProtocol 方法。
 
-> 公共 HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)（LPCWSTR 方法，LPCWSTR ParametersAsJson， [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](icorewebview2calldevtoolsprotocolmethodcompletedhandler.md) * 处理程序）
+> 公共 HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod) (LPCWSTR 方法、LPCWSTR ParametersAsJson、 [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](icorewebview2calldevtoolsprotocolmethodcompletedhandler.md) * 处理程序) 
 
-有关可用方法的列表和说明，请参阅[DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs)。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
+有关可用方法的列表和说明，请参阅 [DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs) 。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
 
 ```cpp
 // Prompt the user for the name and parameters of a CDP method, then call it.
@@ -999,7 +1001,7 @@ void ScriptComponent::CallCdpMethod()
 
 捕获 Web 视图显示的图像。
 
-> public HRESULT [CapturePreview](#capturepreview)（[COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) ImageFormat、IStream * imageStream、 [ICoreWebView2CapturePreviewCompletedHandler](icorewebview2capturepreviewcompletedhandler.md) * 处理程序）
+> 公共的 HRESULT [CapturePreview](#capturepreview) ([COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) ImageFormat、IStream * imageStream、 [ICoreWebView2CapturePreviewCompletedHandler](icorewebview2capturepreviewcompletedhandler.md) * 处理程序) 
 
 指定具有 imageFormat 参数的图像的格式。 生成的图像二进制数据将写入所提供的 imageStream 参数。 当 CapturePreview 完成写入流时，将调用所提供的处理程序参数上的 Invoke 方法。
 
@@ -1045,7 +1047,7 @@ void FileComponent::SaveScreenshot()
 
 从在 Web 视图中呈现的当前顶级文档的 javascript 参数中执行 JavaScript 代码。
 
-> 公共 HRESULT [ExecuteScript](#executescript)（LPCWSTR JavaScript， [ICoreWebView2ExecuteScriptCompletedHandler](icorewebview2executescriptcompletedhandler.md) * 处理程序）
+> 公共的 HRESULT [ExecuteScript](#executescript) (LPCWSTR JavaScript、 [ICoreWebView2ExecuteScriptCompletedHandler](icorewebview2executescriptcompletedhandler.md) * 处理程序) 
 
 这将异步执行，并且在完成后，如果 ExecuteScriptCompletedHandler 参数中提供了处理程序，则将通过评估所提供的 JavaScript 的结果调用其 Invoke 方法。 结果值是一个 JSON 编码的字符串。 如果结果未定义、包含引用循环或者其他无法编码到 JSON，则将以字符串 "null" 形式返回 JSON null 值。 请注意，没有显式返回值的函数将返回 undefined。 如果执行的脚本引发了未处理的异常，则结果也为 "null"。 此方法是异步应用的。 如果在导航过程中 NavigationStarting 事件后调用该方法，则会在加载新文档时在新文档中执行该脚本，同时引发 ContentLoading。 即使 IsScriptEnabled 设置为 FALSE，ExecuteScript 仍可正常工作。
 
@@ -1079,13 +1081,13 @@ void ScriptComponent::InjectScript()
 
 托管 Web 视图的浏览器进程的进程 id。
 
-> 公共 HRESULT [get_BrowserProcessId](#get_browserprocessid)（UINT32 * 值）
+> 公共 HRESULT [get_BrowserProcessId](#get_browserprocessid) (UINT32 * 值) 
 
 #### get_CanGoBack 
 
 如果 web 视图可以导航到导航历史记录中的上一页，则返回 true。
 
-> public HRESULT [get_CanGoBack](#get_cangoback)（BOOL * CanGoBack）
+> 公共 HRESULT [get_CanGoBack](#get_cangoback) (BOOL * CanGoBack) 
 
 如果 CanGoBack 更改值，将引发 HistoryChanged 事件。
 
@@ -1093,7 +1095,7 @@ void ScriptComponent::InjectScript()
 
 如果 web 视图可以导航到导航历史记录中的下一页，则返回 true。
 
-> public HRESULT [get_CanGoForward](#get_cangoforward)（BOOL * CanGoForward）
+> 公共 HRESULT [get_CanGoForward](#get_cangoforward) (BOOL * CanGoForward) 
 
 如果 CanGoForward 更改值，将引发 HistoryChanged 事件。
 
@@ -1101,13 +1103,13 @@ void ScriptComponent::InjectScript()
 
 指示 Web 视图是否包含全屏 HTML 元素。
 
-> public HRESULT [get_ContainsFullScreenElement](#get_containsfullscreenelement)（BOOL * ContainsFullScreenElement）
+> 公共 HRESULT [get_ContainsFullScreenElement](#get_containsfullscreenelement) (BOOL * ContainsFullScreenElement) 
 
 #### get_DocumentTitle 
 
 当前顶级文档的标题。
 
-> 公共 HRESULT [get_DocumentTitle](#get_documenttitle)（LPWSTR * 标题）
+> 公共 HRESULT [get_DocumentTitle](#get_documenttitle) (LPWSTR * 标题) 
 
 如果文档没有显式标题或为空，则将使用与文档的 URI 相匹配或可能不匹配的默认值。
 
@@ -1115,13 +1117,13 @@ void ScriptComponent::InjectScript()
 
 [ICoreWebView2Settings](icorewebview2settings.md)对象包含运行的 web 视图的各种可修改设置。
 
-> 公共 HRESULT [get_Settings](#get_settings)（[ICoreWebView2Settings](icorewebview2settings.md) * * 设置）
+> 公共 HRESULT [get_Settings](#get_settings) ([ICoreWebView2Settings](icorewebview2settings.md) * * 设置) 
 
 #### get_Source 
 
 当前顶级文档的 URI。
 
-> 公共 HRESULT [get_Source](#get_source)（LPWSTR * uri）
+> 公共 HRESULT [get_Source](#get_source) (LPWSTR * uri) 
 
 在某些情况下（例如导航到不同的网站或片段导航），此值可能会更改 SourceChanged 事件的一部分。 它对于其他类型的导航（如页面重新加载或 pushState 与当前页面具有相同的 URL）保持不变。
 
@@ -1151,9 +1153,9 @@ void ScriptComponent::InjectScript()
 
 获取允许你订阅 DevTools 协议事件的 DevTools 协议事件接收器。
 
-> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)（LPCWSTR 名称 = [ICoreWebView2DevToolsProtocolEventReceiver](icorewebview2devtoolsprotocoleventreceiver.md) * * 接收器）
+> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver) (LPCWSTR 事件名称， [ICoreWebView2DevToolsProtocolEventReceiver](icorewebview2devtoolsprotocoleventreceiver.md) * * 接收器) 
 
-事件名称参数是该事件的格式的完整名称 `{domain}.{event}` 。 有关 DevTools 协议事件描述和事件参数的列表，请参阅[DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs)。
+事件名称参数是该事件的格式的完整名称 `{domain}.{event}` 。 有关 DevTools 协议事件描述和事件参数的列表，请参阅 [DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs) 。
 
 ```cpp
 // Prompt the user to name a CDP event, and then subscribe to that event.
@@ -1204,19 +1206,19 @@ void ScriptComponent::SubscribeToCdpEvent()
 
 将 Web 视图导航到导航历史记录中的上一页。
 
-> 公共 HRESULT [GoBack](#goback)（）
+> 公共 HRESULT [GoBack](#goback) ( # A1
 
 #### GoForward 
 
 将 Web 视图导航到导航历史记录中的下一页。
 
-> 公共 HRESULT [GoForward](#goforward)（）
+> 公共 HRESULT [GoForward](#goforward) ( # A1
 
 #### 导航 
 
 导致将顶级文档导航到指定的 URI。
 
-> 公共 HRESULT[导航](#navigate)（LPCWSTR uri）
+> public HRESULT [导航](#navigate) (LPCWSTR uri) 
 
 有关详细信息，请参阅导航事件。 请注意，这将启动导航，并且相应的 NavigationStarting 事件将在此导航调用完成后的某个时间触发。
 
@@ -1255,7 +1257,7 @@ void ControlComponent::NavigateToAddressBar()
 
 启动作为新文档的源 HTML 的 htmlContent 导航。
 
-> 公共 HRESULT [NavigateToString](#navigatetostring)（LPCWSTR htmlContent）
+> 公共的 HRESULT [NavigateToString](#navigatetostring) (LPCWSTR htmlContent) 
 
 HtmlContent 参数不能大于 2 MB 的字符。 新页面的来源将显示为 "空白"。
 
@@ -1271,7 +1273,7 @@ HtmlContent 参数不能大于 2 MB 的字符。 新页面的来源将显示为 
 
 在 Web 视图中打开当前文档的 DevTools 窗口。
 
-> 公共 HRESULT [OpenDevToolsWindow](#opendevtoolswindow)（）
+> 公共 HRESULT [OpenDevToolsWindow](#opendevtoolswindow) ( # A1
 
 如果在 DevTools 窗口已打开时调用，则不执行任何操作
 
@@ -1279,7 +1281,7 @@ HtmlContent 参数不能大于 2 MB 的字符。 新页面的来源将显示为 
 
 将指定的 webMessage 发布到此 Web 视图中的顶级文档。
 
-> 公共 HRESULT [PostWebMessageAsJson](#postwebmessageasjson)（LPCWSTR webMessageAsJson）
+> 公共的 HRESULT [PostWebMessageAsJson](#postwebmessageasjson) (LPCWSTR webMessageAsJson) 
 
 将激发顶级文档的 "chrome" 消息事件。 该文档中的 JavaScript 可以通过以下方式订阅和取消订阅该事件：
 
@@ -1332,7 +1334,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 这是一个帮助程序，用于发布一个简单字符串的消息，而不是 JavaScript 对象的 JSON 字符串表示形式。
 
-> 公共 HRESULT [PostWebMessageAsString](#postwebmessageasstring)（LPCWSTR webMessageAsString）
+> 公共的 HRESULT [PostWebMessageAsString](#postwebmessageasstring) (LPCWSTR webMessageAsString) 
 
 此行为与 PostWebMessageAsJson 完全相同，但 `window.chrome.webview` 消息事件参数的 data 属性将是与 webMessageAsString 具有相同值的字符串。 如果想要通过简单的字符串而不是 JSON 对象进行通信，请使用此操作，而不是 PostWebMessageAsJson。
 
@@ -1340,7 +1342,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 重新加载当前页面。
 
-> 公共 HRESULT[重装](#reload)（）
+> 公共 HRESULT [重新加载](#reload) ( # A1
 
 这类似于导航到当前顶级文档的 URI，包括触发和遵从 HTTP 缓存中任何条目的所有导航事件。 但是，将不会修改后退/前进历史记录。
 
@@ -1348,103 +1350,103 @@ window.chrome.webview.removeEventListener('message', handler)
 
 删除以前使用相应的 add_ 事件方法添加的事件处理程序。
 
-> public HRESULT [remove_ContainsFullScreenElementChanged](#remove_containsfullscreenelementchanged)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_ContainsFullScreenElementChanged](#remove_containsfullscreenelementchanged) (EventRegistrationToken 令牌) 
 
 #### remove_ContentLoading 
 
 删除以前使用 add_ContentLoading 添加的事件处理程序。
 
-> public HRESULT [remove_ContentLoading](#remove_contentloading)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_ContentLoading](#remove_contentloading) (EventRegistrationToken 令牌) 
 
 #### remove_DocumentTitleChanged 
 
 删除以前使用 add_DocumentTitleChanged 添加的事件处理程序。
 
-> public HRESULT [remove_DocumentTitleChanged](#remove_documenttitlechanged)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_DocumentTitleChanged](#remove_documenttitlechanged) (EventRegistrationToken 令牌) 
 
 #### remove_FrameNavigationCompleted 
 
 删除以前使用 add_FrameNavigationCompleted 添加的事件处理程序。
 
-> public HRESULT [remove_FrameNavigationCompleted](#remove_framenavigationcompleted)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_FrameNavigationCompleted](#remove_framenavigationcompleted) (EventRegistrationToken 令牌) 
 
 #### remove_FrameNavigationStarting 
 
 删除以前使用 add_FrameNavigationStarting 添加的事件处理程序。
 
-> public HRESULT [remove_FrameNavigationStarting](#remove_framenavigationstarting)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_FrameNavigationStarting](#remove_framenavigationstarting) (EventRegistrationToken 令牌) 
 
 #### remove_HistoryChanged 
 
 删除以前使用 add_HistoryChanged 添加的事件处理程序。
 
-> public HRESULT [remove_HistoryChanged](#remove_historychanged)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_HistoryChanged](#remove_historychanged) (EventRegistrationToken 令牌) 
 
 #### remove_NavigationCompleted 
 
 删除以前使用 add_NavigationCompleted 添加的事件处理程序。
 
-> public HRESULT [remove_NavigationCompleted](#remove_navigationcompleted)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_NavigationCompleted](#remove_navigationcompleted) (EventRegistrationToken 令牌) 
 
 #### remove_NavigationStarting 
 
 删除以前使用 add_NavigationStarting 添加的事件处理程序。
 
-> public HRESULT [remove_NavigationStarting](#remove_navigationstarting)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_NavigationStarting](#remove_navigationstarting) (EventRegistrationToken 令牌) 
 
 #### remove_NewWindowRequested 
 
 删除以前使用 add_NewWindowRequested 添加的事件处理程序。
 
-> public HRESULT [remove_NewWindowRequested](#remove_newwindowrequested)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_NewWindowRequested](#remove_newwindowrequested) (EventRegistrationToken 令牌) 
 
 #### remove_PermissionRequested 
 
 删除以前使用 add_PermissionRequested 添加的事件处理程序。
 
-> public HRESULT [remove_PermissionRequested](#remove_permissionrequested)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_PermissionRequested](#remove_permissionrequested) (EventRegistrationToken 令牌) 
 
 #### remove_ProcessFailed 
 
 删除以前使用 add_ProcessFailed 添加的事件处理程序。
 
-> public HRESULT [remove_ProcessFailed](#remove_processfailed)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_ProcessFailed](#remove_processfailed) (EventRegistrationToken 令牌) 
 
 #### remove_ScriptDialogOpening 
 
 删除以前使用 add_ScriptDialogOpening 添加的事件处理程序。
 
-> public HRESULT [remove_ScriptDialogOpening](#remove_scriptdialogopening)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_ScriptDialogOpening](#remove_scriptdialogopening) (EventRegistrationToken 令牌) 
 
 #### remove_SourceChanged 
 
 删除以前使用 add_SourceChanged 添加的事件处理程序。
 
-> public HRESULT [remove_SourceChanged](#remove_sourcechanged)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_SourceChanged](#remove_sourcechanged) (EventRegistrationToken 令牌) 
 
 #### remove_WebMessageReceived 
 
 删除以前使用 add_WebMessageReceived 添加的事件处理程序。
 
-> public HRESULT [remove_WebMessageReceived](#remove_webmessagereceived)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_WebMessageReceived](#remove_webmessagereceived) (EventRegistrationToken 令牌) 
 
 #### remove_WebResourceRequested 
 
 删除以前使用 add_WebResourceRequested 添加的事件处理程序。
 
-> public HRESULT [remove_WebResourceRequested](#remove_webresourcerequested)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_WebResourceRequested](#remove_webresourcerequested) (EventRegistrationToken 令牌) 
 
 #### remove_WindowCloseRequested 
 
 删除以前使用 add_WindowCloseRequested 添加的事件处理程序。
 
-> public HRESULT [remove_WindowCloseRequested](#remove_windowcloserequested)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_WindowCloseRequested](#remove_windowcloserequested) (EventRegistrationToken 令牌) 
 
 #### RemoveHostObjectFromScript 
 
 删除名称指定的主机对象，以便从 Web 视图中的 JavaScript 代码无法再访问该对象。
 
-> 公共 HRESULT [RemoveHostObjectFromScript](#removehostobjectfromscript)（LPCWSTR name）
+> 公共 HRESULT [RemoveHostObjectFromScript](#removehostobjectfromscript) (LPCWSTR 名称) 
 
 当新的访问尝试将被拒绝时，如果 Web 视图中的 JavaScript 代码已获得该对象，则 JavaScript 代码将继续具有对该对象的访问权限。 为已删除或从未添加的名称调用此方法将失败。
 
@@ -1452,13 +1454,13 @@ window.chrome.webview.removeEventListener('message', handler)
 
 删除使用指定脚本 id 添加的相应 JavaScript `AddScriptToExecuteOnDocumentCreated` 。
 
-> 公共 HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)（LPCWSTR id）
+> 公共 HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) (LPCWSTR id) 
 
 #### RemoveWebResourceRequestedFilter 
 
 删除以前为 WebResourceRequested 事件添加的匹配 WebResource 筛选器。
 
-> 公共 HRESULT [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)（LPCWSTR const uri， [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) const resourceContext）
+> 公共 HRESULT [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) (LPCWSTR const uri， [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) const resourceContext) 
 
 如果多次添加相同的筛选器，则需要将其删除多次，才能使删除生效。 返回从未添加的筛选器 E_INVALIDARG。
 
@@ -1466,7 +1468,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 停止所有导航和挂起的资源提取。
 
-> 公共 HRESULT[停止](#stop)（）
+> public HRESULT [Stop](#stop) ( # A1
 
 不会停止脚本。
 
@@ -1474,7 +1476,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 ICoreWebView2：： CapturePreview 方法使用的图像格式。
 
-> 枚举[COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format)
+> 枚举 [COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1485,7 +1487,7 @@ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT_JPEG            | JPEG 图像格式。
 
 触发 AcceleratorKeyPressed 事件的键事件的类型。
 
-> 枚举[COREWEBVIEW2_KEY_EVENT_KIND](#corewebview2_key_event_kind)
+> 枚举 [COREWEBVIEW2_KEY_EVENT_KIND](#corewebview2_key_event_kind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1498,7 +1500,7 @@ COREWEBVIEW2_KEY_EVENT_KIND_SYSTEM_KEY_UP            | 对应于窗口消息 WM_
 
 移动焦点的原因。
 
-> 枚举[COREWEBVIEW2_MOVE_FOCUS_REASON](#corewebview2_move_focus_reason)
+> 枚举 [COREWEBVIEW2_MOVE_FOCUS_REASON](#corewebview2_move_focus_reason)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1510,7 +1512,7 @@ COREWEBVIEW2_MOVE_FOCUS_REASON_PREVIOUS            | 由于 Tab 向后移动焦�
 
 权限请求的类型。
 
-> 枚举[COREWEBVIEW2_PERMISSION_KIND](#corewebview2_permission_kind)
+> 枚举 [COREWEBVIEW2_PERMISSION_KIND](#corewebview2_permission_kind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1526,7 +1528,7 @@ COREWEBVIEW2_PERMISSION_KIND_CLIPBOARD_READ            | 在没有用户手势�
 
 对权限请求的响应。
 
-> 枚举[COREWEBVIEW2_PERMISSION_STATE](#corewebview2_permission_state)
+> 枚举 [COREWEBVIEW2_PERMISSION_STATE](#corewebview2_permission_state)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1540,13 +1542,13 @@ COREWEBVIEW2_PERMISSION_STATE_DENY            | 拒绝权限请求。
 
 > typedef [COREWEBVIEW2_PHYSICAL_KEY_STATUS](#corewebview2_physical_key_status)
 
-有关详细信息，请参阅 WM_KEYDOWN 的文档[https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown)
+有关详细信息，请参阅 WM_KEYDOWN 的文档 [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown)
 
 #### COREWEBVIEW2_PROCESS_FAILED_KIND 
 
 ICoreWebView2ProcessFailedEventHandler 接口中使用的进程失败类型。
 
-> 枚举[COREWEBVIEW2_PROCESS_FAILED_KIND](#corewebview2_process_failed_kind)
+> 枚举 [COREWEBVIEW2_PROCESS_FAILED_KIND](#corewebview2_process_failed_kind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1558,7 +1560,7 @@ COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_UNRESPONSIVE            | 指示
 
 ICoreWebView2ScriptDialogOpeningEventHandler 接口中使用的 JavaScript 对话框类型。
 
-> 枚举[COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind)
+> 枚举 [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1571,7 +1573,7 @@ COREWEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD            | 通过 beforeunload Ja
 
 Web 导航的错误状态值。
 
-> 枚举[COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status)
+> 枚举 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status)
 
  值                         | 描述
 --------------------------------|---------------------------------------------
@@ -1580,7 +1582,7 @@ COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_COMMON_NAME_IS_INCORRECT            | 
 COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_EXPIRED            | SSL 证书已过期。
 COREWEBVIEW2_WEB_ERROR_STATUS_CLIENT_CERTIFICATE_CONTAINS_ERRORS            | SSL 客户端证书包含错误。
 COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_REVOKED            | SSL 证书已被吊销。
-COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_IS_INVALID            | SSL 证书无效 &ndash; 这可能意味着证书与主机名的公钥 pin 不匹配，证书由不受信任的颁发机构或使用弱标志算法签名，证书声明的 DNS 名称违反了名称约束，证书包含弱密钥，证书的有效期太长，缺少吊销信息或吊销机制、非唯一的主机名、缺少证书透明信息，或者证书被链接到[旧版 Symantec 根](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html)。
+COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_IS_INVALID            | SSL 证书无效 &ndash; 这可能意味着证书与主机名的公钥 pin 不匹配，证书由不受信任的颁发机构或使用弱标志算法签名，证书声明的 DNS 名称违反了名称约束，证书包含弱密钥，证书的有效期太长，缺少吊销信息或吊销机制、非唯一的主机名、缺少证书透明信息，或者证书被链接到 [旧版 Symantec 根](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html)。
 COREWEBVIEW2_WEB_ERROR_STATUS_SERVER_UNREACHABLE            | 无法访问主机。
 COREWEBVIEW2_WEB_ERROR_STATUS_TIMEOUT            | 连接超时。
 COREWEBVIEW2_WEB_ERROR_STATUS_ERROR_HTTP_INVALID_SERVER_RESPONSE            | 服务器返回了无效或无法识别的响应。
@@ -1597,7 +1599,7 @@ COREWEBVIEW2_WEB_ERROR_STATUS_UNEXPECTED_ERROR            | 出现意外错误�
 
 Web 资源请求上下文的枚举。
 
-> 枚举[COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context)
+> 枚举 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context)
 
  值                         | 描述
 --------------------------------|---------------------------------------------

@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs
-ms.openlocfilehash: 056667b4ee1995763fee81c8d7a9be31496f7f3e
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 547e9a451283de55658a95a8134ecb8a838f9e50
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886514"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011398"
 ---
-# interface ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs 
+# 0.9.579-接口 ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -42,13 +44,13 @@ WebResourceResponseReceived 事件的事件参数。
 
 Web 资源请求对象。 对此对象所做的任何修改都将被忽略。
 
-> 公共 HRESULT [get_Request](#get_request)（ICoreWebView2WebResourceRequest * * 请求）
+> 公共 HRESULT [get_Request](#get_request) (ICoreWebView2WebResourceRequest * * 请求) 
 
 #### get_Response 
 
 Web 资源响应对象。
 
-> 公共 HRESULT [get_Response](#get_response)（ICoreWebView2WebResourceResponse * * Response）
+> 公共 HRESULT [get_Response](#get_response) (ICoreWebView2WebResourceResponse * * 响应) 
 
 对此对象所做的任何修改都将被忽略。
 
@@ -56,7 +58,7 @@ Web 资源响应对象。
 
 请求响应的内容流的异步方法。
 
-> 公共 HRESULT [PopulateResponseContent](#populateresponsecontent)（[ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgsPopulateResponseContentCompletedHandler](icorewebview2experimentalwebresourceresponsereceivedeventargspopulateresponsecontentcompletedhandler.md) * 处理程序）
+> 公共 HRESULT [PopulateResponseContent](#populateresponsecontent) ([ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgsPopulateResponseContentCompletedHandler](icorewebview2experimentalwebresourceresponsereceivedeventargspopulateresponsecontentcompletedhandler.md) * 处理程序) 
 
 ```cpp
                     args->PopulateResponseContent(

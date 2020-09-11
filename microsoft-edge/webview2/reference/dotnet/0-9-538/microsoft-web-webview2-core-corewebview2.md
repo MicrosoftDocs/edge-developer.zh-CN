@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: CoreWebView2 中的 WebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2。 CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: 95ef347c8954dc67438a4d09825c11a64ad8872a
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: ca31ddd3536350d3b3bdd02b445b4c47589f7dba
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885273"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011109"
 ---
-# CoreWebView2 类的 WebView2 
+# 0.9.579-WebView2 的 CoreWebView2 类 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll
@@ -31,18 +33,18 @@ WebView2 使你能够使用最新的 Edge web 浏览器技术托管 web 内容�
 [CanGoForward](#cangoforward) | 如果 web 视图可以导航到导航历史记录中的下一页，则返回 true。
 [ContainsFullScreenElement](#containsfullscreenelement) | 指示 Web 视图是否包含全屏 HTML 元素。
 [ContainsFullScreenElementChanged](#containsfullscreenelementchanged) | ContainsFullScreenElement 属性更改时通知。
-[ContentLoading](#contentloading) | ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecuteOnDocumentCreated ContentLoading 添加的脚本在同一页面导航（如通过片段导航或历史记录）发生时不会触发。
+[ContentLoading](#contentloading) | ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecuteOnDocumentCreated ContentLoading 添加的脚本，如果发生相同的页面导航 (例如片段导航或历史记录），将不会触发这些脚本。 pushState 导航) 。
 [DocumentTitle](#documenttitle) | 当前顶级文档的标题。
 [DocumentTitleChanged](#documenttitlechanged) | 当 Web 视图的 DocumentTitle 属性发生更改，并且可能会在 NavigationCompleted 事件之前或之后出现时，将引发此事件。
-[FrameNavigationCompleted](#framenavigationcompleted) | 当子框架已完全加载（已激发了 FrameNavigationCompleted）或加载时出错，已停止加载时，将引发事件。
+[FrameNavigationCompleted](#framenavigationcompleted) | 当子框架已完全加载 (正文 "时，将触发) 或加载已停止但出现错误的 FrameNavigationCompleted 事件。
 [FrameNavigationStarting](#framenavigationstarting) | 当 Web 视图中请求权限导航到其他 URI 的子帧时，将触发 FrameNavigationStarting。
 [HistoryChanged](#historychanged) | 历史记录更改侦听顶级文档的导航历史记录更改。
-[NavigationCompleted](#navigationcompleted) | 当 Web 视图已完全加载（NavigationCompleted 已激发）或加载时出现错误，将引发事件。
+[NavigationCompleted](#navigationcompleted) | 当 Web 视图已完全加载 (正文时，将引发 NavigationCompleted 事件。 onload 已停止) 或加载，但出现错误。
 [NavigationStarting](#navigationstarting) | 当 Web 视图主框架请求导航到其他 URI 的权限时，将触发 NavigationStarting。
 [Webview.newwindowrequested](#newwindowrequested) | 在 Web 视图中请求打开新窗口（如通过 window）的内容时激发。
 [Webview.permissionrequested](#permissionrequested) | 在 Web 视图中的内容请求访问某些权限资源的权限时引发。
 [ProcessFailed](#processfailed) | 当 Web 视图进程意外终止或停止响应时激发。
-[ScriptDialogOpening](#scriptdialogopening) | 将针对 web 视图显示 JavaScript 对话框（警报、确认或提示）时，将引发此事件。
+[ScriptDialogOpening](#scriptdialogopening) | 当将显示 web 视图的 JavaScript 对话框 (警报、确认或提示) 时，将引发此事件。
 [“设置”](#settings) | CoreWebView2Settings 对象包含适用于运行的的各种可修改设置
 [来源](#source) | 当前顶级文档的 URI。
 [SourceChanged](#sourcechanged) | Source 属性更改时将触发 SourceChanged。
@@ -110,7 +112,7 @@ ContainsFullScreenElement 属性更改时通知。
 
 #### ContentLoading 
 
-ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecuteOnDocumentCreated ContentLoading 添加的脚本在同一页面导航（如通过片段导航或历史记录）发生时不会触发。
+ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecuteOnDocumentCreated ContentLoading 添加的脚本，如果发生相同的页面导航 (例如片段导航或历史记录），将不会触发这些脚本。 pushState 导航) 。
 
 > 公共事件 EventHandler< [CoreWebView2ContentLoadingEventArgs](microsoft-web-webview2-core-corewebview2contentloadingeventargs.md)  >  [ContentLoading](#contentloading)
 
@@ -120,7 +122,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 当前顶级文档的标题。
 
-> 公共字符串[DocumentTitle](#documenttitle)
+> 公共字符串 [DocumentTitle](#documenttitle)
 
 如果文档没有显式标题或为空，则将使用与文档的 URI 相匹配或可能不匹配的默认值。
 
@@ -132,7 +134,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 #### FrameNavigationCompleted 
 
-当子框架已完全加载（已激发了 FrameNavigationCompleted）或加载时出错，已停止加载时，将引发事件。
+当子框架已完全加载 (正文 "时，将触发) 或加载已停止但出现错误的 FrameNavigationCompleted 事件。
 
 > 公共事件 EventHandler< [CoreWebView2NavigationCompletedEventArgs](microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md)  >  [FrameNavigationCompleted](#framenavigationcompleted)
 
@@ -154,7 +156,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 #### NavigationCompleted 
 
-当 Web 视图已完全加载（NavigationCompleted 已激发）或加载时出现错误，将引发事件。
+当 Web 视图已完全加载 (正文时，将引发 NavigationCompleted 事件。 onload 已停止) 或加载，但出现错误。
 
 > 公共事件 EventHandler< [CoreWebView2NavigationCompletedEventArgs](microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md)  >  [NavigationCompleted](#navigationcompleted)
 
@@ -188,7 +190,7 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 #### ScriptDialogOpening 
 
-将针对 web 视图显示 JavaScript 对话框（警报、确认或提示）时，将引发此事件。
+当将显示 web 视图的 JavaScript 对话框 (警报、确认或提示) 时，将引发此事件。
 
 > 公共事件 EventHandler< [CoreWebView2ScriptDialogOpeningEventArgs](microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md)  >  [ScriptDialogOpening](#scriptdialogopening)
 
@@ -198,13 +200,13 @@ ContentLoading 在加载任何内容之前激发，包括使用 AddScriptToExecu
 
 CoreWebView2Settings 对象包含适用于运行的的各种可修改设置
 
-> 公共[CoreWebView2Settings](microsoft-web-webview2-core-corewebview2settings.md) [设置](#settings)
+> 公共 [CoreWebView2Settings](microsoft-web-webview2-core-corewebview2settings.md) [设置](#settings)
 
 #### 来源 
 
 当前顶级文档的 URI。
 
-> 公共字符串[源](#source)
+> 公共字符串 [源](#source)
 
 在某些情况下（例如导航到不同的网站或片段导航），此值可能会更改 SourceChanged 事件的一部分。 它对于其他类型的导航（如页面重新加载或 pushState 与当前页面具有相同的 URL）保持不变。
 
@@ -254,7 +256,7 @@ PostMessage 函数是 `void postMessage(object)` 对象是 JSON 转换支持的�
 
 将所提供的主机对象添加到在具有指定名称的 Web 视图中运行的脚本。
 
-> 公共 void [AddHostObjectToScript](#addhostobjecttoscript)（字符串名称、对象 rawObject）
+> public void [AddHostObjectToScript](#addhostobjecttoscript) (字符串名称、对象 rawObject) 
 
 主机对象通过来公开为主机对象代理 `window.chrome.webview.hostObjects.{name}` 。 主机对象代理承诺并将解析为表示主机对象的对象。 Web 视图中的 JavaScript 代码将能够按如下方式访问 appObject，然后访问 appObject 的属性和方法： 
 ```
@@ -268,7 +270,7 @@ let result = await app_object.method1(parameters);
 
 同步主机对象代理和异步主机对象代理都可以代理相同的主机对象。 一个代理所做的远程更改将反映在同一主机对象的任何其他代理中，无论其他代理和同步还是异步。
 
-虽然 JavaScript 在对本机代码的同步调用上被阻止，但该本机代码无法回调到 JavaScript。 尝试执行此操作将失败，并 HRESULT_FROM_WIN32 （ERROR_POSSIBLE_DEADLOCK）。
+虽然 JavaScript 在对本机代码的同步调用上被阻止，但该本机代码无法回调到 JavaScript。 尝试执行此操作将失败，并 HRESULT_FROM_WIN32 (ERROR_POSSIBLE_DEADLOCK) 。
 
 主机对象代理是截取所有属性获取、属性集和方法调用的 JavaScript 代理对象。 作为函数或对象原型一部分的属性或方法在本地运行。 此外，数组中的任何属性或方法 `chrome.webview.hostObjects.options.forceLocalProperties` 也将在本地运行。 这是默认设置，包括在 JavaScript 中具有含义的可选方法 `toJSON` ，如和 `Symbol.toPrimitive` 。 你可以根据需要向此数组添加更多。
 
@@ -286,7 +288,7 @@ let result = await app_object.method1(parameters);
 
 * 然后：异步主机对象代理具有 then 方法。 这使它们能够可等待。 `then` 将返回通过主机对象的表示形式解析的承诺。 如果代理表示 JavaScript 文本，则会在本地返回一个副本。 如果代理表示一个函数，则返回非可等待代理。 如果代理表示的 JavaScript 对象混合了文本属性和函数属性，则会将某些属性作为主机对象代理返回该对象的副本。
 
-所有其他属性和方法调用（除了上述远程对象代理方法、forceLocalProperties 列表和函数和对象原型上的属性）都是远程运行的。 异步主机对象代理返回表示异步完成远程调用该方法或获取属性的一种承诺。 在远程操作完成后，承诺将解决该操作的结果值。 同步主机对象代理的工作方式类似，但阻止了 JavaScript 执行，并等待远程操作完成。
+除了上述远程对象代理方法、forceLocalProperties 列表以及函数和对象原型) 上的属性之外，其他所有属性和方法 (调用都将远程运行。 异步主机对象代理返回表示异步完成远程调用该方法或获取属性的一种承诺。 在远程操作完成后，承诺将解决该操作的结果值。 同步主机对象代理的工作方式类似，但阻止了 JavaScript 执行，并等待远程操作完成。
 
 在异步主机对象代理上设置属性的工作方式略有不同。 Set 将立即返回，返回值为将设置的值。 这是 JavaScript 代理对象的要求。 如果需要异步等待属性设置为 "完成"，请使用 setHostProperty 方法，该方法将返回上述承诺。 同步对象属性 set 属性在设置该属性之前同步地阻止。
 
@@ -294,39 +296,39 @@ let result = await app_object.method1(parameters);
 
 将提供的 JavaScript 添加到应在创建全局对象后执行的脚本列表，但在分析 HTML 文档之前和执行 HTML 文档所包含的任何其他脚本之前。
 
-> 公共异步任务< 字符串 > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync)（字符串 javaScript）
+> 公共异步任务< 字符串 > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) (字符串 javaScript) 
 
 ##### 返回
-返回调用[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)时可能传递的脚本 id。 
+返回调用 [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)时可能传递的脚本 id。 
 
 插入的脚本将应用于所有未来的顶级文档和子框架导航，直到使用 RemoveScriptToExecuteOnDocumentCreated 删除。 这是异步应用的，你必须等待完成处理程序运行，然后才能确保脚本已准备好在将来的导航上执行。
 
-请注意，如果 HTML 文档通过[沙盒](https://developer.mozilla.org/docs/Web/HTML/Element/iframe#attr-sandbox)属性或[内容安全策略 HTTP 标头](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy)进行了某种类型的沙盒，则会影响在此处运行脚本。 例如，如果未设置 "allow-modals" 关键字，则将忽略对该函数的调用 `alert` 。
+请注意，如果 HTML 文档通过 [沙盒](https://developer.mozilla.org/docs/Web/HTML/Element/iframe#attr-sandbox) 属性或 [内容安全策略 HTTP 标头](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy) 进行了某种类型的沙盒，则会影响在此处运行脚本。 例如，如果未设置 "allow-modals" 关键字，则将忽略对该函数的调用 `alert` 。
 
 #### AddWebResourceRequestedFilter 
 
 将 URI 和资源上下文筛选器添加到 WebResourceRequested 事件。
 
-> 公共 void [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter)（string Uri，CoreWebView2WebResourceContext ResourceContext）
+> public void [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) (字符串 Uri，CoreWebView2WebResourceContext ResourceContext) 
 
-URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是一）。 nullptr 等效于 L ""。 有关资源上下文筛选器的说明，请参阅 CoreWebView2WebResourceContext enum。
+URI 参数可以是 ( "" 的通配符字符串：零或更多，'？ '：正好是一个) 。 nullptr 等效于 L ""。 有关资源上下文筛选器的说明，请参阅 CoreWebView2WebResourceContext enum。
 
 #### CallDevToolsProtocolMethodAsync 
 
 调用异步 DevToolsProtocol 方法。
 
-> 公共异步任务< 字符串 > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)（String 方法名称、字符串 parametersAsJson）
+> 公共异步任务< string > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync) (String 方法名称，string parametersAsJson) 
 
 ##### 返回
 一个 JSON 字符串，表示方法的返回对象。 
 
-有关可用方法的列表和说明，请参阅[DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs)。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
+有关可用方法的列表和说明，请参阅 [DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs) 。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
 
 #### CapturePreviewAsync 
 
 捕获 Web 视图显示的图像。
 
-> 公共异步任务[CapturePreviewAsync](#capturepreviewasync)（CoreWebView2CapturePreviewImageFormat ImageFormat，Stream imageStream）
+> 公共异步任务 [CapturePreviewAsync](#capturepreviewasync) (CoreWebView2CapturePreviewImageFormat ImageFormat、Stream imageStream) 
 
 指定具有 imageFormat 参数的图像的格式。 生成的图像二进制数据将写入所提供的 imageStream 参数。 当 CapturePreview 完成写入流时，将调用所提供的处理程序参数上的 Invoke 方法。
 
@@ -334,7 +336,7 @@ URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是�
 
 从在 Web 视图中呈现的当前顶级文档的 javascript 参数中执行 JavaScript 代码。
 
-> 公共异步任务< 字符串 > [ExecuteScriptAsync](#executescriptasync)（字符串 javaScript）
+> 公共异步任务< 字符串 > [ExecuteScriptAsync](#executescriptasync) (字符串 javaScript) 
 
 ##### 返回
 返回一个 JSON 编码的字符串，该字符串表示运行所提供的 JavaScript 的结果。 
@@ -345,27 +347,27 @@ URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是�
 
 获取允许你订阅 DevTools 协议事件的 DevTools 协议事件接收器。
 
-> 公共 CoreWebView2DevToolsProtocolEventReceiver [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)（string 事件）
+> 公共 CoreWebView2DevToolsProtocolEventReceiver [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver) (字符串事件名称) 
 
-有关可用方法的列表和说明，请参阅[DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs)。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
+有关可用方法的列表和说明，请参阅 [DevTools 协议查看器](https://aka.ms/DevToolsProtocolDocs) 。 "方法名称" 参数是采用格式的方法的完整名称 `{domain}.{method}` 。 ParametersAsJson 参数是一个 JSON 格式的字符串，其中包含对应方法的参数。 当方法异步完成时，将调用处理程序的 Invoke 方法。 将使用方法的返回对象作为 JSON 字符串调用调用。
 
 #### GoBack 
 
 将 Web 视图导航到导航历史记录中的上一页。
 
-> 公共 void [GoBack](#goback)（）
+> 公共 void [GoBack](#goback) ( # A1
 
 #### GoForward 
 
 将 Web 视图导航到导航历史记录中的下一页。
 
-> 公共 void [GoForward](#goforward)（）
+> 公共 void [GoForward](#goforward) ( # A1
 
 #### 导航 
 
 导致将顶级文档导航到指定的 URI。
 
-> 公共 void[导航](#navigate)（字符串 uri）
+> public void [导航](#navigate) (字符串 uri) 
 
 有关详细信息，请参阅导航事件。 请注意，这将启动导航，并且相应的 NavigationStarting 事件将在此导航调用完成后的某个时间触发。
 
@@ -373,7 +375,7 @@ URI 参数可以是通配符字符串（""：零或更多，'？ '：正好是�
 
 启动作为新文档的源 HTML 的 htmlContent 导航。
 
-> 公共 void [NavigateToString](#navigatetostring)（string htmlContent）
+> public void [NavigateToString](#navigatetostring) (string htmlContent) 
 
 HtmlContent 参数不能大于 2 MB 的字符。 新页面的来源将显示为 "空白"。
 
@@ -381,7 +383,7 @@ HtmlContent 参数不能大于 2 MB 的字符。 新页面的来源将显示为 
 
 在 Web 视图中打开当前文档的 DevTools 窗口。
 
-> 公共 void [OpenDevToolsWindow](#opendevtoolswindow)（）
+> 公共 void [OpenDevToolsWindow](#opendevtoolswindow) ( # A1
 
 如果在 DevTools 窗口已打开时调用，则不执行任何操作。
 
@@ -389,7 +391,7 @@ HtmlContent 参数不能大于 2 MB 的字符。 新页面的来源将显示为 
 
 将指定的 webMessage 发布到此 Web 视图中的顶级文档。
 
-> 公共 void [PostWebMessageAsJson](#postwebmessageasjson)（string webMessageAsJson）
+> public void [PostWebMessageAsJson](#postwebmessageasjson) (string webMessageAsJson) 
 
 将激发顶级文档的 "chrome" 消息事件。 该文档中的 JavaScript 可以通过以下方式订阅和取消订阅该事件：
 
@@ -404,7 +406,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 这是一个帮助程序，用于发布一个简单字符串的消息，而不是 JavaScript 对象的 JSON 字符串表示形式。
 
-> 公共 void [PostWebMessageAsString](#postwebmessageasstring)（string webMessageAsString）
+> public void [PostWebMessageAsString](#postwebmessageasstring) (string webMessageAsString) 
 
 此行为与 PostWebMessageAsJson 完全相同，但 `window.chrome.webview` 消息事件参数的 data 属性将是与 webMessageAsString 具有相同值的字符串。 如果想要通过简单的字符串而不是 JSON 对象进行通信，请使用此操作，而不是 PostWebMessageAsJson。
 
@@ -412,7 +414,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 重新加载当前页面。
 
-> public void [Reload](#reload)（）
+> public void [Reload](#reload) ( # A1
 
 这类似于导航到当前顶级文档的 URI，包括触发和遵从 HTTP 缓存中任何条目的所有导航事件。 但是，将不会修改后退/前进历史记录。
 
@@ -420,7 +422,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 删除名称指定的主机对象，以便从 Web 视图中的 JavaScript 代码无法再访问该对象。
 
-> 公共 void [RemoveHostObjectFromScript](#removehostobjectfromscript)（字符串名称）
+> public void [RemoveHostObjectFromScript](#removehostobjectfromscript) (字符串名称) 
 
 当新的访问尝试将被拒绝时，如果 Web 视图中的 JavaScript 代码已获得该对象，则 JavaScript 代码将继续具有对该对象的访问权限。 为已删除或从未添加的名称调用此方法将失败。
 
@@ -428,13 +430,13 @@ window.chrome.webview.removeEventListener('message', handler)
 
 删除通过 AddScriptToExecuteOnDocumentCreated 添加的具有指定脚本 id 的相应 JavaScript。
 
-> 公共 void [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)（字符串 id）
+> public void [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) (字符串 id) 
 
 #### RemoveWebResourceRequestedFilter 
 
 删除以前为 WebResourceRequested 事件添加的匹配 WebResource 筛选器。
 
-> 公共 void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)（string Uri， [CoreWebView2WebResourceContext](./namespace-microsoft-web-webview2-core.md) ResourceContext）
+> public void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) (字符串 Uri， [CoreWebView2WebResourceContext](./namespace-microsoft-web-webview2-core.md) ResourceContext) 
 
 如果多次添加相同的筛选器，则需要将其删除多次，才能使删除生效。 返回从未添加的筛选器 E_INVALIDARG。
 
@@ -442,7 +444,7 @@ window.chrome.webview.removeEventListener('message', handler)
 
 停止所有导航和挂起的资源提取。
 
-> public void [Stop](#stop)（）
+> public void [Stop](#stop) ( # A1
 
 不会停止脚本。
 

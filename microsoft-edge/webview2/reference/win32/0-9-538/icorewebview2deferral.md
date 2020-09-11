@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2Deferral
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2Deferral
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2Deferral
-ms.openlocfilehash: 85c8a795a79bae461ad958e6586b9bf1f6778075
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 533aefe8b14ae3cabfddd32cb588014067bfdd42
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880120"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010283"
 ---
-# interface ICoreWebView2Deferral 
+# 0.9.579-接口 ICoreWebView2Deferral 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2Deferral
@@ -36,7 +38,7 @@ interface ICoreWebView2Deferral
 
 完成关联的延迟事件。
 
-> 公共 HRESULT[完成](#complete)（）
+> 公共 HRESULT [完成](#complete) ( # A1
 
 对于每个延迟的延迟，只能调用一次完成。
 

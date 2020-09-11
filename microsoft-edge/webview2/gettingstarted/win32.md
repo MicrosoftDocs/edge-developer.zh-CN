@@ -3,23 +3,23 @@ description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部�
 title: 适用于 Win32 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: ec5144f911d5bf00f141d1e8e53718154f1cbb24
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 5bb2d8a1ec0d75c2cbb1d426bae6bf1cd8298592
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926482"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010710"
 ---
 # WebView2 (开发人员预览版入门)   
 
-以下内容将指导你完成 WebView2 的常用功能 [ (开发人员预览版) ][Webview2Index] ，并提供了创建你的第一个 WebView2 应用的起始点。  有关单个 WebView2 Api 的详细信息，请参阅 [API 参考][Webview2ReferenceWin3209538]。  
+以下内容将指导你完成 WebView2 的常用功能 [ (开发人员预览版) ][Webview2Index] ，并提供了创建你的第一个 WebView2 应用的起始点。  有关单个 WebView2 Api 的详细信息，请参阅 [API 参考][Webview2ReferenceWin3209622]。  
 
-## 先决条件  
+## 必备条件  
 
 *   [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] 安装在支持的操作系统 \ (当前 windows 10、windows 8.1 和 windows 7 \ ) 。  
     
@@ -280,7 +280,7 @@ nullptr);
 
 *   有关 WebView2 功能的完整示例，请参阅 [WEBVIEW2 API 示例][GithubMicrosoftedgeWebview2samplesApisample]。  
 *   有关使用 WebView2 生成的示例应用程序，请参阅 [WebView2Browser][GithubMicrosoftedgeWebview2browser]。  
-*   有关 WebView2 API 的详细信息，请参阅 [API 参考][Webview2ReferenceWin3209538]。  
+*   有关 WebView2 API 的详细信息，请参阅 [API 参考][Webview2ReferenceWin3209622]。  
 
 ## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  
 
@@ -289,7 +289,7 @@ nullptr);
 <!-- links -->  
 
 [Webview2Index]: ../index.md "Microsoft Edge WebView2 简介 (预览版) |Microsoft 文档"  
-[Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "参考 (WebView2) |Microsoft 文档"  
+[Webview2ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "参考 (WebView2) |Microsoft 文档"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件 |Microsoft 文档"  
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows 运行时 c + + 模板库 (WRL) |Microsoft 文档"  

@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2Controller
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2Controller
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2Controller
-ms.openlocfilehash: 3b2845043c3508cbf8600b91f4628cda36280dfe
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 5549a3b19b15e66cd95d48487728c6d8bb842718
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10883733"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010549"
 ---
-# interface ICoreWebView2Controller 
+# 0.9.579-接口 ICoreWebView2Controller 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2Controller
@@ -40,7 +42,7 @@ interface ICoreWebView2Controller
 [get_ParentWindow](#get_parentwindow) | 由此 Web 视图用于呈现内容的应用提供的父窗口。
 [get_ZoomFactor](#get_zoomfactor) | Web 视图的缩放系数。
 [MoveFocus](#movefocus) | 将焦点移动到 Web 视图中。
-[NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged) | 这是与界限分开的通知，告诉 Web 视图其父（或任何上级） HWND 已移动。
+[NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged) | 这是与界限分开的通知，告诉 Web 视图其父 (或任何上级) HWND 移动。
 [put_Bounds](#put_bounds) | 设置界限属性。
 [put_IsVisible](#put_isvisible) | 设置 IsVisible 属性。
 [put_ParentWindow](#put_parentwindow) | 设置 Web 视图的父窗口。
@@ -60,7 +62,7 @@ CoreWebView2Controller 拥有 CoreWebView2，如果对 CoreWebView2Controller �
 
 为 AcceleratorKeyPressed 事件添加事件处理程序。
 
-> public HRESULT [add_AcceleratorKeyPressed](#add_acceleratorkeypressed)（[ICoreWebView2AcceleratorKeyPressedEventHandler](icorewebview2acceleratorkeypressedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_AcceleratorKeyPressed](#add_acceleratorkeypressed) ([ICoreWebView2AcceleratorKeyPressedEventHandler](icorewebview2acceleratorkeypressedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图获得焦点时，当按下或释放加速键或键组合时，将激发 AcceleratorKeyPressed。 如果某个键出现以下情况之一，则将其视为一个加速器：
 
@@ -70,11 +72,11 @@ CoreWebView2Controller 拥有 CoreWebView2，如果对 CoreWebView2Controller �
 
 通过按住键导致的 Autorepeated 键事件也会引发此事件。 你可以通过检查事件参数 "KeyEventLParam" 或 "PhysicalKeyStatus" 来筛选这些问题。
 
-在窗口模式下，此事件处理程序是同步调用的。 在事件参数或事件处理程序返回之前调用句柄（）之前，浏览器进程将被阻止，并且传出进程间 COM 调用将失败，并显示 RPC_E_CANTCALLOUT_ININPUTSYNCCALL。 但是，所有 CoreWebView2 API 方法都有效。
+在窗口模式下，此事件处理程序是同步调用的。 在调用句柄 ( 事件参数或事件处理程序上的 # A1 之前，浏览器进程将被阻止，并且传出的进程间 COM 调用将失败，并出现 RPC_E_CANTCALLOUT_ININPUTSYNCCALL。 但是，所有 CoreWebView2 API 方法都有效。
 
-在无窗口模式下，异步调用事件处理程序。 在调用事件处理程序返回或句柄（）时，将不会访问浏览器，但浏览器进程本身将不会被阻止，并且传出 COM 调用将正常工作。
+在无窗口模式下，异步调用事件处理程序。 在事件处理程序返回或处理 ( # A1 之前，其他输入将无法访问浏览器，但浏览器进程本身将不会被阻止，并且传出 COM 调用将正常工作。
 
-建议你先调用句柄（TRUE），然后才能知道你希望处理加速键。
+建议调用句柄 (TRUE) ，因为你知道要处理加速键。
 
 ```cpp
     // Register a handler for the AcceleratorKeyPressed event.
@@ -120,7 +122,7 @@ CoreWebView2Controller 拥有 CoreWebView2，如果对 CoreWebView2Controller �
 
 为 GotFocus 事件添加事件处理程序。
 
-> public HRESULT [add_GotFocus](#add_gotfocus)（[ICoreWebView2FocusChangedEventHandler](icorewebview2focuschangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_GotFocus](#add_gotfocus) ([ICoreWebView2FocusChangedEventHandler](icorewebview2focuschangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图获得焦点时，将引发 GotFocus。
 
@@ -128,7 +130,7 @@ CoreWebView2Controller 拥有 CoreWebView2，如果对 CoreWebView2Controller �
 
 为 LostFocus 事件添加事件处理程序。
 
-> public HRESULT [add_LostFocus](#add_lostfocus)（[ICoreWebView2FocusChangedEventHandler](icorewebview2focuschangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_LostFocus](#add_lostfocus) ([ICoreWebView2FocusChangedEventHandler](icorewebview2focuschangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图失去焦点时，将激发 LostFocus。 在引发 MoveFocusRequested 事件的情况下，当 MoveFocusRequested 事件引发时，焦点仍在 Web 视图上。 只有在应用的 MoveFocusRequested 事件或从 Web 视图中设置焦点的情况下，才会在应用的代码或默认操作时引发丢失焦点。
 
@@ -136,7 +138,7 @@ CoreWebView2Controller 拥有 CoreWebView2，如果对 CoreWebView2Controller �
 
 为 MoveFocusRequested 事件添加事件处理程序。
 
-> public HRESULT [add_MoveFocusRequested](#add_movefocusrequested)（[ICoreWebView2MoveFocusRequestedEventHandler](icorewebview2movefocusrequestedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_MoveFocusRequested](#add_movefocusrequested) ([ICoreWebView2MoveFocusRequestedEventHandler](icorewebview2movefocusrequestedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当用户尝试注销 Web 视图时，将触发 MoveFocusRequested。 激发此事件时，Web 视图的焦点未发生更改。
 
@@ -175,7 +177,7 @@ CoreWebView2Controller 拥有 CoreWebView2，如果对 CoreWebView2Controller �
 
 为 ZoomFactorChanged 事件添加事件处理程序。
 
-> public HRESULT [add_ZoomFactorChanged](#add_zoomfactorchanged)（[ICoreWebView2ZoomFactorChangedEventHandler](icorewebview2zoomfactorchangedeventhandler.md) * eventHandler，EventRegistrationToken * token）
+> 公共 HRESULT [add_ZoomFactorChanged](#add_zoomfactorchanged) ([ICoreWebView2ZoomFactorChangedEventHandler](icorewebview2zoomfactorchangedeventhandler.md) * eventHandler、EventRegistrationToken * 令牌) 
 
 当 Web 视图的 ZoomFactor 属性更改时，将引发此事件。 由于调用方修改了 ZoomFactor 属性，或者由于用户手动修改缩放，因此可能会激发该事件。 当调用方通过 ZoomFactor 属性对其进行修改时，内部缩放系数将立即更新，并且将不会出现 ZoomFactorChanged 事件。 Web 视图将每个网站的上次使用的缩放系数相关联。 因此，在导航到其他页面时，可以更改缩放系数。 当缩放系数因此而更改时，ZoomFactorChanged 事件将在 ContentLoading 事件后立即触发。
 
@@ -201,7 +203,7 @@ CoreWebView2Controller 拥有 CoreWebView2，如果对 CoreWebView2Controller �
 
 关闭 Web 视图并清理基础浏览器实例。
 
-> 公共 HRESULT [Close](#close)（）
+> public HRESULT [Close](#close) ( # A1
 
 清理浏览器实例将释放为 Web 视图供电的资源。 如果没有其他 WebViews 使用浏览器实例，则将关闭该浏览器实例。
 
@@ -253,11 +255,11 @@ void AppWindow::CloseWebView(bool cleanupUserDataFolder)
 
 Web 视图边界。
 
-> public HRESULT [get_Bounds](#get_bounds)（RECT * 界限）
+> 公共 HRESULT [get_Bounds](#get_bounds) (RECT * 界限) 
 
 界限相对于父 HWND。 应用有两种方法可以放置 Web 视图：
 
-1. 创建作为 Web 视图父 HWND 的子 HWND。 将此窗口放置在 Web 视图应位于的位置。 在这种情况下，对 Web 视图的 Bound's 左上角（偏移）使用（0，0）。
+1. 创建作为 Web 视图父 HWND 的子 HWND。 将此窗口放置在 Web 视图应位于的位置。 在这种情况下，请使用 (偏移) 的 Bound's 左上角的 (0，0) 。
 
 1. 将应用最顶部的窗口用作 Web 视图父 HWND。 设置 Web 视图的 Bound's 左上角，以便 Web 视图正确地放置在应用中。 绑定的值位于主机的坐标空间中。
 
@@ -265,15 +267,15 @@ Web 视图边界。
 
 获取与此 CoreWebView2Controller 关联的 CoreWebView2。
 
-> 公共 HRESULT [get_CoreWebView2](#get_corewebview2)（[ICoreWebView2](icorewebview2.md) * * CoreWebView2）
+> 公共 HRESULT [get_CoreWebView2](#get_corewebview2) ([ICoreWebView2](icorewebview2.md) * * CoreWebView2) 
 
 #### get_IsVisible 
 
 IsVisible 属性确定是显示还是隐藏 web 视图。
 
-> public HRESULT [get_IsVisible](#get_isvisible)（BOOL * IsVisible）
+> 公共 HRESULT [get_IsVisible](#get_isvisible) (BOOL * IsVisible) 
 
-如果 IsVisible 设置为 false，则 web 视图将是透明的，不会呈现。 但是，这不会影响包含 web 视图的窗口（传递到 CreateCoreWebView2Controller 的 HWND 参数）。 如果你希望该窗口也消失，除了修改 IsVisible 属性外，还可直接对其调用 ShowWindow。 在最小化或还原顶级窗口时，Web 视图作为子窗口不会收到窗口消息。 出于性能原因，开发人员应在应用窗口最小化时将 Web 视图的 IsVisible 属性设置为 false，并在还原应用窗口时将其设置为 false。 应用窗口可通过在接收 WM_SYSCOMMAND 消息时处理 SC_MINIMIZE 和 SC_RESTORE 命令来执行此操作。
+如果 IsVisible 设置为 false，则 web 视图将是透明的，不会呈现。 但是，这不会影响 (传递到 CreateCoreWebView2Controller) 的 HWND 参数的包含 web 视图的窗口。 如果你希望该窗口也消失，除了修改 IsVisible 属性外，还可直接对其调用 ShowWindow。 在最小化或还原顶级窗口时，Web 视图作为子窗口不会收到窗口消息。 出于性能原因，开发人员应在应用窗口最小化时将 Web 视图的 IsVisible 属性设置为 false，并在还原应用窗口时将其设置为 false。 应用窗口可通过在接收 WM_SYSCOMMAND 消息时处理 SC_MINIMIZE 和 SC_RESTORE 命令来执行此操作。
 
 ```cpp
 void ViewComponent::ToggleVisibility()
@@ -289,7 +291,7 @@ void ViewComponent::ToggleVisibility()
 
 由此 Web 视图用于呈现内容的应用提供的父窗口。
 
-> 公共 HRESULT [get_ParentWindow](#get_parentwindow)（HWND * topLevelWindow）
+> 公共 HRESULT [get_ParentWindow](#get_parentwindow) (HWND * topLevelWindow) 
 
 此 API 最初返回传递到 CreateCoreWebView2Controller 的窗口。
 
@@ -297,15 +299,15 @@ void ViewComponent::ToggleVisibility()
 
 Web 视图的缩放系数。
 
-> 公共 HRESULT [get_ZoomFactor](#get_zoomfactor)（Double * ZoomFactor）
+> 公共 HRESULT [get_ZoomFactor](#get_zoomfactor) (Double * ZoomFactor) 
 
-请注意，更改缩放系数可能会导致 `window.innerWidth/innerHeight` 页面布局和页面布局的更改。 由主机通过调用 ZoomFactor 应用的缩放系数成为 Web 视图的新默认缩放。 此缩放系数在跨导航应用，并且是当用户按 ctrl + 0 时，将在 Web 视图中返回 "缩放系数"。 如果用户更改了缩放系数（从而导致应用收到 ZoomFactorChanged），则该缩放仅适用于当前页面。 任何用户应用的缩放仅适用于当前页面，并且在导航时重置。 不允许指定小于或等于0的 zoomFactor。 Web 视图也具有内部受支持的缩放系数范围。 当指定的缩放系数超出该范围时，它将规范化为在范围内，并且将针对应用的已应用的缩放系数引发 ZoomFactorChanged 事件。 当此范围规范化发生时，ZoomFactor 属性将报告在 ZoomFactor 属性的以前修改期间指定的缩放系数，直到在 web 视图应用标准化的缩放系数后收到 ZoomFactorChanged 事件。
+请注意，更改缩放系数可能会导致 `window.innerWidth/innerHeight` 页面布局和页面布局的更改。 由主机通过调用 ZoomFactor 应用的缩放系数成为 Web 视图的新默认缩放。 此缩放系数在跨导航应用，并且是当用户按 ctrl + 0 时，将在 Web 视图中返回 "缩放系数"。 如果用户更改了缩放系数 (导致应用收到 ZoomFactorChanged) ，则该缩放仅适用于当前页面。 任何用户应用的缩放仅适用于当前页面，并且在导航时重置。 不允许指定小于或等于0的 zoomFactor。 Web 视图也具有内部受支持的缩放系数范围。 当指定的缩放系数超出该范围时，它将规范化为在范围内，并且将针对应用的已应用的缩放系数引发 ZoomFactorChanged 事件。 当此范围规范化发生时，ZoomFactor 属性将报告在 ZoomFactor 属性的以前修改期间指定的缩放系数，直到在 web 视图应用标准化的缩放系数后收到 ZoomFactorChanged 事件。
 
 #### MoveFocus 
 
 将焦点移动到 Web 视图中。
 
-> 公共 HRESULT [MoveFocus](#movefocus)（COREWEBVIEW2_MOVE_FOCUS_REASON 原因）
+> 公共的 HRESULT [MoveFocus](#movefocus) (COREWEBVIEW2_MOVE_FOCUS_REASON 原因) 
 
 在 Web 视图中托管的页面中，Web 视图将获得焦点，并且焦点将被设置为通信元素。 出于编程原因，焦点设置为以前具有焦点的元素，如果没有以前具有焦点的元素，则设置为默认元素。 出于下一个原因，焦点设置为第一个元素。 对于上一个原因，焦点设置为最后一个元素。 Web 视图还可以通过用户交互获得焦点，例如单击 "在 Web 视图中" 或 "Tab"。 对于 "按 tab 键"，应用可以调用 MoveFocus 和 "下一个" 或 "上一步"，以便在确定 Web 视图是下一个 tabbable 元素时，分别与 tab 和 shift + tab 对齐。 或者，应用可以将 IsDialogMessage 作为其消息循环的一部分进行调用，以允许平台自动处理 tab 键切换。 平台将通过 WS_TABSTOP 旋转所有窗口。 当 Web 视图从 IsDialogMessage 获取焦点时，它将分别在 tab 和 shift + tab 的第一个或最后一个元素上放置焦点。
 
@@ -386,9 +388,9 @@ void ControlComponent::TabBackwards(int currentIndex)
 
 #### NotifyParentWindowPositionChanged 
 
-这是与界限分开的通知，告诉 Web 视图其父（或任何上级） HWND 已移动。
+这是与界限分开的通知，告诉 Web 视图其父 (或任何上级) HWND 移动。
 
-> 公共 HRESULT [NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged)（）
+> 公共 HRESULT [NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged) ( # A1
 
 这是辅助功能和 Web 视图中的某些对话框正常工作所必需的。 
 ```cpp
@@ -403,7 +405,7 @@ void ControlComponent::TabBackwards(int currentIndex)
 
 设置界限属性。
 
-> public HRESULT [put_Bounds](#put_bounds)（RECT 界限）
+> 公共 HRESULT [put_Bounds](#put_bounds) (RECT 边界) 
 
 ```cpp
 // Update the bounds of the WebView window to fit available space.
@@ -444,7 +446,7 @@ void ViewComponent::ResizeWebView()
 
 设置 IsVisible 属性。
 
-> 公共 HRESULT [put_IsVisible](#put_isvisible)（布尔值 IsVisible）
+>  (BOOL isVisible 的公共 HRESULT [put_IsVisible](#put_isvisible)) 
 
 ```cpp
     if (message == WM_SYSCOMMAND)
@@ -470,7 +472,7 @@ void ViewComponent::ResizeWebView()
 
 设置 Web 视图的父窗口。
 
-> 公共 HRESULT [put_ParentWindow](#put_parentwindow)（HWND topLevelWindow）
+> 公共 HRESULT [put_ParentWindow](#put_parentwindow) (HWND topLevelWindow) 
 
 这将导致 Web 视图将其窗口重定为新提供的窗口。
 
@@ -478,45 +480,45 @@ void ViewComponent::ResizeWebView()
 
 设置 ZoomFactor 属性。
 
-> 公共 HRESULT [put_ZoomFactor](#put_zoomfactor)（double ZoomFactor）
+> 公共 HRESULT [put_ZoomFactor](#put_zoomfactor) (double ZoomFactor) 
 
 #### remove_AcceleratorKeyPressed 
 
 删除以前使用 add_AcceleratorKeyPressed 添加的事件处理程序。
 
-> public HRESULT [remove_AcceleratorKeyPressed](#remove_acceleratorkeypressed)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_AcceleratorKeyPressed](#remove_acceleratorkeypressed) (EventRegistrationToken 令牌) 
 
 #### remove_GotFocus 
 
 删除以前使用 add_GotFocus 添加的事件处理程序。
 
-> public HRESULT [remove_GotFocus](#remove_gotfocus)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_GotFocus](#remove_gotfocus) (EventRegistrationToken 令牌) 
 
 #### remove_LostFocus 
 
 删除以前使用 add_LostFocus 添加的事件处理程序。
 
-> public HRESULT [remove_LostFocus](#remove_lostfocus)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_LostFocus](#remove_lostfocus) (EventRegistrationToken 令牌) 
 
 #### remove_MoveFocusRequested 
 
 删除以前使用 add_MoveFocusRequested 添加的事件处理程序。
 
-> public HRESULT [remove_MoveFocusRequested](#remove_movefocusrequested)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_MoveFocusRequested](#remove_movefocusrequested) (EventRegistrationToken 令牌) 
 
 #### remove_ZoomFactorChanged 
 
 删除以前使用 add_ZoomFactorChanged 添加的事件处理程序。
 
-> public HRESULT [remove_ZoomFactorChanged](#remove_zoomfactorchanged)（EventRegistrationToken 标记）
+> 公共 HRESULT [remove_ZoomFactorChanged](#remove_zoomfactorchanged) (EventRegistrationToken 令牌) 
 
 #### SetBoundsAndZoomFactor 
 
 同时更新边界和 ZoomFactor 属性。
 
-> 公共 HRESULT [SetBoundsAndZoomFactor](#setboundsandzoomfactor)（RECT 边界，双 zoomFactor）
+> 公共 HRESULT [SetBoundsAndZoomFactor](#setboundsandzoomfactor) (RECT 边界，双 zoomFactor) 
 
-此操作是主机的视角的原子操作。 从此函数返回后，如果函数成功，则边界和 ZoomFactor 属性均已更新，如果函数失败，则不会更新。 如果边界和 ZoomFactor 均由同一比例（即界限和 ZoomFactor 两倍）进行更新，则页面将不会在 innerWidth/innerHeight 中看到更改，并且 Web 视图将以新的大小呈现内容，而无需中间 renderings。 此函数还可用于通过传入新值和另一个的当前值来更新 ZoomFactor 或界限之一。
+此操作是主机的视角的原子操作。 从此函数返回后，如果函数成功，则边界和 ZoomFactor 属性均已更新，如果函数失败，则不会更新。 如果边界和 ZoomFactor 都由同一比例更新 (也就是说，ZoomFactor 和都两) 倍，则页面将不会在 innerWidth/innerHeight 中看到更改，并且 Web 视图将以新的大小呈现内容，而无需中间 renderings。 此函数还可用于通过传入新值和另一个的当前值来更新 ZoomFactor 或界限之一。
 
 ```cpp
 void ViewComponent::SetScale(float scale)

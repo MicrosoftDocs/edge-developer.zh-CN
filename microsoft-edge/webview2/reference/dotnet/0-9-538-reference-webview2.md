@@ -1,26 +1,28 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: Microsoft WebView2 参考
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: ab0a476f444b671b7042b5007aea59359d5377fc
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 9d30c66453097effc4c42f5204df3d550157ff88
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885252"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010815"
 ---
-# 参考（WebView2 Core）  
+# 0.9.579-参考 (WebView2 核心)   
 
-使用 Microsoft Edge WebView2 控件，你可以使用[Microsoft edge \ （Chromium \）](https://www.microsoftedgeinsider.com)作为呈现引擎将 web 内容托管在你的应用程序中。  有关详细信息，请参阅[Microsoft Edge WebView2 概述](../../index.md)）和[WebView2 入门](../../gettingstarted/win32.md)。  WebView2 是开始了解 API 的详细信息的绝佳位置[CoreWebView2。](0-9-538/microsoft-web-webview2-core-corewebview2.md)  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]
+
+Microsoft Edge WebView2 控件使你能够使用 [Microsoft edge \ (Chromium \ ) ](https://www.microsoftedgeinsider.com) 作为呈现引擎在你的应用程序中托管 web 内容。  有关详细信息，请参阅 [Microsoft Edge WebView2 概述](../../index.md)) 和 [WebView2](../../gettingstarted/win32.md)入门。  WebView2 是开始了解 API 的详细信息的绝佳位置[CoreWebView2。](0-9-538/microsoft-web-webview2-core-corewebview2.md)  
 
 ## Microsoft WebView2
-*   [WebView2](0-9-538/namespace-microsoft-web-webview2-core.md)命名空间
+*   [WebView2](0-9-538/namespace-microsoft-web-webview2-core.md) 命名空间
 *   [CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md)
 *   [CoreWebView2CompositionController](0-9-538/microsoft-web-webview2-core-corewebview2compositioncontroller.md)
 *   [CoreWebView2Controller](0-9-538/microsoft-web-webview2-core-corewebview2controller.md)

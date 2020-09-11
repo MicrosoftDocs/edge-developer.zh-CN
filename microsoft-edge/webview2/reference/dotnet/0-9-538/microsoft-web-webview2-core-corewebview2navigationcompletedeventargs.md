@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: CoreWebView2NavigationCompletedEventArgs 中的 WebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2。 CoreWebView2NavigationCompletedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: aaaad1f622887ed1c941a9cf12ee4c753b352286
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 01102cc9aa9d6fbec7f4d223e1115892dabe2899
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878881"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010969"
 ---
-# CoreWebView2NavigationCompletedEventArgs 类的 WebView2 
+# 0.9.579-WebView2 的 CoreWebView2NavigationCompletedEventArgs 类 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll
@@ -38,7 +40,7 @@ NavigationCompleted 事件的事件参数。
 
 > 公共 bool [IsSuccess](#issuccess)
 
-对于在错误页面中结束的导航（由于无网络、DNS 查找失败、HTTP 服务器通过4xx 响应），这是假，但也可能是 false，如在导航页面上调用的 window。 stop （）。
+这对于在错误 (页面中结束的导航是错误的，因为没有网络、DNS 查找失败、HTTP 服务器通过 4xx) 做出响应，但也可能是 false，例如，在导航页面上调用 ( # A3。
 
 #### NavigationId 
 

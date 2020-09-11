@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: CoreWebView2MoveFocusRequestedEventArgs 中的 WebView2
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2。 CoreWebView2MoveFocusRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: dd141e135275d815458ce66a93dfc9ef3e7b33a8
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 098ca5199d6797510cdc0535a02a58c795b5ce54
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878860"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010955"
 ---
-# CoreWebView2MoveFocusRequestedEventArgs 类的 WebView2 
+# 0.9.579-WebView2 的 CoreWebView2MoveFocusRequestedEventArgs 类 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 命名空间： Microsoft WebView2 \
 程序集： Microsoft.Web.WebView2.Core.dll
@@ -35,7 +37,7 @@ MoveFocusRequested 事件的事件参数。
 
 指示事件是否已由应用处理。
 
-> 公共 bool 已[处理](#handled)
+> 公共 bool 已 [处理](#handled)
 
 如果应用已将焦点移动到所需位置，则应将 "已处理" 属性设置为 TRUE。 当已处理的属性在事件处理程序返回后为 false 时，将采取默认操作。 默认操作是尝试在应用中查找下一个制表位子窗口，然后尝试将焦点移动到该窗口。 如果没有其他此类窗口将焦点移至，则焦点将在 web 视图的 web 内容中循环。
 
@@ -43,5 +45,5 @@ MoveFocusRequested 事件的事件参数。
 
 Web 视图触发 MoveFocus 请求事件的原因。
 
-> 公共 CoreWebView2MoveFocusReason[原因](#reason)
+> 公共 CoreWebView2MoveFocusReason [原因](#reason)
 

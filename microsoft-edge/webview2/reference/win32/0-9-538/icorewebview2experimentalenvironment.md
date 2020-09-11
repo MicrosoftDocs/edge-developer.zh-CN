@@ -1,21 +1,23 @@
 ---
-description: 通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术（HTML、CSS 和 JavaScript）
-title: WebView2 Win32 c + + ICoreWebView2ExperimentalEnvironment
+description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript) '
+title: 0.9.579-WebView2 Win32 c + + ICoreWebView2ExperimentalEnvironment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2ExperimentalEnvironment
-ms.openlocfilehash: 70e2ceab124b60c355f94161d2d25e49953520ca
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: e7ccb108c137e54635c6e5b69f9bc615ff8ff018
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886456"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011131"
 ---
-# interface ICoreWebView2ExperimentalEnvironment 
+# 0.9.579-接口 ICoreWebView2ExperimentalEnvironment 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -24,17 +26,17 @@ interface ICoreWebView2ExperimentalEnvironment
   : public IUnknown
 ```
 
-此接口是[ICoreWebView2Environment](icorewebview2environment.md)的扩展。
+此接口是 [ICoreWebView2Environment](icorewebview2environment.md)的扩展。
 
 ## 摘要
 
  成员                        | 描述
 --------------------------------|---------------------------------------------
 [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller) | 异步创建用于可视化托管的新 Web 视图。
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | 创建一个空[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)。
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | 创建一个空 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)。
 [GetProviderForHwnd](#getproviderforhwnd) | 返回与给定 HWND 对应的 ICoreWebView2CompositionController 的 UI 自动化提供程序。
 
-实现[ICoreWebView2ExperimentalEnvironment]()接口的对象也将实现[ICoreWebView2Environment](icorewebview2environment.md)。
+实现 [ICoreWebView2ExperimentalEnvironment]() 接口的对象也将实现 [ICoreWebView2Environment](icorewebview2environment.md)。
 
 ## 成员
 
@@ -42,9 +44,9 @@ interface ICoreWebView2ExperimentalEnvironment
 
 异步创建用于可视化托管的新 Web 视图。
 
-> 公共 HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)（HWND ParentWindow， [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) * 处理程序）
+> 公共 HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller) (HWND ParentWindow， [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) * 处理程序) 
 
-parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND （并且将需要使用 SendMouseInput/SendPointerInput 转发）。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要调用 put_ParentWindow 以更新可视化树的新父 HWND。
+parentWindow 是应用将连接 Web 视图的可视化树的 HWND。 这将是应用将接收指向 Web 视图的指针/鼠标输入的 HWND (并且需要使用 SendMouseInput/SendPointerInput 转发) 。 如果应用将 Web 视图可视化树移动到另一个窗口下方，则需要调用 put_ParentWindow 以更新可视化树的新父 HWND。
 
 在创建的 CoreWebView2CompositionController 上使用 put_RootVisualTarget 来提供视觉对象以托管浏览器的可视化树。
 
@@ -178,15 +180,15 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 #### CreateCoreWebView2PointerInfo 
 
-创建一个空[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)。
+创建一个空 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)。
 
-> 公共 HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)（[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo）
+> 公共 HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) ([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo) 
 
-在调用 SendPointerInput 之前，需要用所有相关信息填充返回的[ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) 。
+在调用 SendPointerInput 之前，需要用所有相关信息填充返回的 [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) 。
 
 #### GetProviderForHwnd 
 
 返回与给定 HWND 对应的 ICoreWebView2CompositionController 的 UI 自动化提供程序。
 
-> 公共 HRESULT [GetProviderForHwnd](#getproviderforhwnd)（hwnd HWND，IUnknown * * 提供程序）
+> 公共 HRESULT [GetProviderForHwnd](#getproviderforhwnd) (HWND Hwnd，IUnknown * * 提供程序) 
 
