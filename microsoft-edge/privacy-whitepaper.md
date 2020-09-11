@@ -3,21 +3,20 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2020
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
-ms.technology: browser
 keywords: microsoft edge, 隐私, 白皮书, 信任
 ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: ff4d2b9a10e225478aaacbe0b70604a730172187
-ms.sourcegitcommit: 01940d5708339b03debc14001596f560cc9ab75a
+ms.openlocfilehash: 35227178a909ae6b378c4a17f578bac364f551c7
+ms.sourcegitcommit: ad02b0a3159eb9f111a580d1c229cb4297467210
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903871"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009243"
 ---
 # Microsoft Edge 隐私白皮书  
 
@@ -76,6 +75,8 @@ Cast 在 Microsoft Edge 中，可使用 Google Cast 将媒体显示到另一个�
 Microsoft Edge 每隔 24 小时下载一个支持的网站列表，其中存在特殊的实体提取模板。  这些模板特定于各个网站。  在集合中创建新项目时，Microsoft Edge 会验证创建新集合项的网站是否位于支持的网站列表中。  如果该网站位于列表中，Microsoft Edge 会对特定网站模板的实体提取服务执行 ping 操作。  没有用户标识符与服务请求相关联。  该模板尝试识别有关所收集项目的名称、价格、评级、主图像和其他数据。  如果你创建新集合项的网站不在受支持的网站列表上，则 Microsoft Edge 不会下载模板。  使用这些模板，可在设备本地创建所有集合项。  不会向服务发送关于集合项的数据来创建集合。  
 
 若要删除存储在设备上的模板并清除缓存数据，请转到 `edge://settings/privacy`，在“**清除浏览数据**”下的“**立即清除浏览数据**”旁选中“**选择要清除的内容**”按钮，选择所需的时间范围和数据类型，然后选择“**立即清除**”按钮。  另一种删除缓存数据的方法是，转到 `edge://settings/clearBrowserData`，选择所需的时间范围和数据类型，然后选择“**立即清除**”按钮。  
+
+为了帮助你在购物和使用集锦时获得最划算的交易，如果你添加产品至你的集锦，Microsoft Edge 将提供与其他零售商进行比较产品价格比较的功能。  如果你选择“与其他零售商比较价格”，Microsoft Edge 会将产品名称、购物域、价格和其他产品详细信息发送到必应，以便与其他零售商比较价格。  集锦中的产品信息将通过 HTTPS 发送。 这些 HTTPS 调用不包含任何用户标识符。  
 
 如果你想看到集合使用集合标题执行 Microsoft 必应搜索，来查找相关的 Pinterest 主题页面，则可以启用“**在集合中显示 Pinterest 的建议**”设置。  Microsoft Edge 不会向 Pinterest 发送有关集合的数据。  若要删除建议并停止搜索 Pinterest 主题页面，请转到 `edge://settings/privacy`，然后禁用“**在集合中显示 Pinterest 的建议**”设置。  
 
@@ -257,7 +258,9 @@ Microsoft Edge 使用 Microsoft 网络时间服务来跟踪来自外部源（如
 
 ## “新建选项卡”页面  
 
-Microsoft Edge 提供了具有吸引力且以用户为中心的新选项卡页面体验，其中包括由[必应][|::ref2::|Main]提供支持的搜索框、最常访问网站的快速链接磁贴和来自 Microsoft 资讯或 Office 365 的相关内容。  选择“自定义”按钮来自定义新选项卡页面的外观。  将为每个配置文件设置新的选项卡页面首选项，并将其本地存储在设备上，而不会跨设备同步这些首选项。  
+Microsoft Edge 提供了具有吸引力且以用户为中心的新选项卡页面体验，其中包括由[必应][|::ref2::|Main]提供支持的搜索框、最常访问网站的快速链接磁贴和来自 Microsoft 资讯或 Office 365 的相关内容。  选择“自定义”按钮来自定义新选项卡页面的外观。  将为每个配置文件设置新的选项卡页面首选项，并将其本地存储在设备上，而不会跨设备同步这些首选项。
+
+若要增强新选项卡页面的加载时间，可在后台加载 Microsoft 新选项卡页面，以使其速度更快。 如果允许 Cookie，加载的内容可能包含 Cookie。 若要禁用后台加载 Microsoft 新选项卡页面，请转到 `edge://settings/newTabPage` ，然后关闭设置 **预加载新选项卡页面，以获得更快的体验**。 
 
 :::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/whitepaper-media/n-t-p1.png":::
    “新建选项卡”页面  
@@ -417,8 +420,8 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  可同步收藏夹、设置、表单填充数据（地址和其他）、密码、扩展和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sync" lightbox="./media/whitepaper-media/sync.png":::
-   Sync  
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/whitepaper-media/sync.png":::
+   同步设置已开启
 :::image-end:::  
 
 若要同步到函数，需要发送额外的设备连接和配置数据来提供同步体验，如设备名称、品牌和型号。  可从“[Microsoft 设备仪表板][MicrosoftAccountDevices]”中删除数据。  若要管理同步收藏夹，请转到 `edge://favorites`。  若要管理所有其他数据类型，请转到 `edge://settings/profiles`。  
@@ -426,6 +429,12 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 在浏览器和 Microsoft 服务器之间传输时，将通过 HTTPS 加密传输所有同步数据。  同步的数据同样以加密状态存储在 Microsoft 服务器中。  敏感数据类型（如地址和密码）将在同步前在设备上进一步加密。  如果使用工作或学校帐户，所有数据类型在同步之前都会使用 Microsoft 信息保护进一步加密。  将存储所有其他同步数据类型，直至你删除数据、删除帐户或者帐户处于非活动状态。  帐户 ID 附加到所有同步数据，因为需要使用 ID 才能跨多个设备执行同步。 
 
 InPrivate 和来宾模式浏览数据不会同步到你的 Microsoft 帐户。  但是，在 InPrivate 会话过程中创建的收藏夹将同步到已启用同步的 Microsoft Edge 已登录版本。  
+
+## 提示和建议
+
+Microsoft Edge 希望为你提供相关的提示和建议，以便在使用浏览器的过程中获得最佳体验。  Microsoft Edge 使用可用的设备连接和配置数据来提供相关的提示和建议。  此数据将由你的操作系统、区域设置、浏览器设置以及其他设备连接和配置数据组成。  将使用你的浏览器所特有的可重置标识符，通过安全的 HTTPS 连接发送该数据。  对于 Windows 10 设备，当 Microsoft Edge 正在设置时，我们推崇在 Windows 中享受定制体验。  [深入了解 Windows 中的定制体验][https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy]。  
+
+在 InPrivate 浏览或来宾模式下，不会发送此数据。  
 
 ## 跟踪防护  
 
