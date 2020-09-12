@@ -8,14 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: ad51afee97d3cc3e913ecdd73c4f0c2a99c70564
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 61e3b7fc8d25e2a1ce9c60fb84f5f39ba43f281b
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895536"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013735"
 ---
-# 线程模型  
+# 线程模型 
+
+WebView2 控件基于 [组件对象模型 (COM) ](https://docs.microsoft.com/windows/win32/com/the-component-object-model) ，并且必须在 [单线程单元 (STA) ](https://docs.microsoft.com/windows/win32/com/single-threaded-apartments) 线程上运行。
 
 ## 线程安全  
 

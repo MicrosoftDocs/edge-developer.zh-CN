@@ -1,5 +1,5 @@
 ---
-description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部件2控件中
+description: 通过 Microsoft Edge WebView2 控件在 Win32、.NET、UWP 应用程序中托管 web 内容
 title: Microsoft Edge WebView2 控件
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,24 +7,24 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows Forms、WinForms、WPF、.NET
-ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows 窗体、WinForms、WPF、.NET、WinUI、Project 留尼汪岛
+ms.openlocfilehash: d3294ce72237a323113ed9f7c8f31e37af43f5e6
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926468"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013742"
 ---
 # Microsoft Edge WebView2 简介 (预览)   
 
-Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript \ ) 。  WebView2 控件使用[Microsoft Edge () Chromium][MicrosoftedgeinsiderMain]作为呈现引擎在本机应用程序中显示 web 内容。  使用 WebView2，你可以将 web 代码嵌入本机应用程序的不同部分，或在单个 Web 视图中构建整个本机应用程序。  有关如何开始构建 WebView2 应用程序的信息，请参阅[入门](#getting-started)。  
+Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技术 (HTML、CSS 和 JavaScript \ ) 。  WebView2 控件使用 [Microsoft Edge () Chromium ][MicrosoftedgeinsiderMain] 作为呈现引擎在本机应用程序中显示 web 内容。  使用 WebView2，你可以将 web 代码嵌入本机应用程序的不同部分，或在单个 Web 视图中构建整个本机应用程序。  有关如何开始构建 WebView2 应用程序的信息，请参阅 [入门](#getting-started)。  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="什么是 Web 视图" lightbox="./media/WebView2/whatwebview.png":::
    什么是 Web 视图  
 :::image-end:::  
 
 > [!NOTE]
-> WebView2 Preview 适用于早期原型和收集反馈，以帮助对 API 进行整形。  不应在生产应用中使用预览，因为可能会发生重大更改。  有关详细信息，请参阅[Webview2Releasenotes]。  
+> WebView2 Preview 适用于早期原型和收集反馈，以帮助对 API 进行整形。  不应在生产应用中使用预览，因为可能会发生重大更改。  有关详细信息，请参阅 [Webview2Releasenotes]。  
 
 ## 混合应用程序方法  
 
@@ -87,7 +87,7 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 
 ## 即刻体验  
 
-若要使用 WebView2 控件生成和测试你的应用程序，你需要同时安装[Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload]和[WebView2 SDK][NugetPackagesMicrosoftWebWebView2] 。  选择以下选项之一开始使用。  
+若要使用 WebView2 控件生成和测试你的应用程序，你需要同时安装 [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] 和 [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] 。  选择以下选项之一开始使用。  
 
 *   [Win32 C/c + + 入门][Webview2GettingstartedWin32]  
 *   [WPF 入门][Webview2GettingstartedWpf]  
@@ -110,7 +110,8 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 *   Windows 10  
 *   Windows 8.1  
 *   Windows 8  
-*   Windows7  
+*   Windows 7  
+*   Windows Server 2019  
 *   Windows Server 2016  
 *   WindowsServer 2012  
 *   Windows Server 2012R2  
