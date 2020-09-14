@@ -12,7 +12,7 @@ ms.lasthandoff: 07/20/2020
 ms.locfileid: "10883681"
 ---
 > [!NOTE]
-> <span data-ttu-id="f1bb6-101">不再保持此引用。</span><span class="sxs-lookup"><span data-stu-id="f1bb6-101">This reference is no longer being maintained.</span></span> <span data-ttu-id="f1bb6-102">有关最新 API 参考，请参阅[WEBVIEW2 API 参考][WebView2APIReference]。</span><span class="sxs-lookup"><span data-stu-id="f1bb6-102">For the latest API reference, see [WebView2 API Reference][WebView2APIReference].</span></span>
+> <span data-ttu-id="b383e-101">不再保持此引用。</span><span class="sxs-lookup"><span data-stu-id="b383e-101">This reference is no longer being maintained.</span></span> <span data-ttu-id="b383e-102">有关最新 API 参考，请参阅 [WEBVIEW2 API 参考][WebView2APIReference]。</span><span class="sxs-lookup"><span data-stu-id="b383e-102">For the latest API reference, see [WebView2 API Reference][WebView2APIReference].</span></span>
 
 <!-- image links -->  
 

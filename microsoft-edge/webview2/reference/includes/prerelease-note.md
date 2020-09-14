@@ -12,7 +12,7 @@ ms.lasthandoff: 07/20/2020
 ms.locfileid: "10883706"
 ---
 > [!NOTE]
-> <span data-ttu-id="ebdcc-101">这是我们的预发布 SDK 附带的[实验性 API][ExperimentalAPIs] 。</span><span class="sxs-lookup"><span data-stu-id="ebdcc-101">This an [experimental API][ExperimentalAPIs] that is shipped with our prerelease SDK.</span></span> <span data-ttu-id="ebdcc-102">请参阅[WebView2 发行说明][WebView2ReleaseNotes]。</span><span class="sxs-lookup"><span data-stu-id="ebdcc-102">See [WebView2 release notes][WebView2ReleaseNotes].</span></span>
+> <span data-ttu-id="40970-101">这是我们的预发布 SDK 附带的 [实验性 API][ExperimentalAPIs] 。</span><span class="sxs-lookup"><span data-stu-id="40970-101">This an [experimental API][ExperimentalAPIs] that is shipped with our prerelease SDK.</span></span> <span data-ttu-id="40970-102">请参阅 [WebView2 发行说明][WebView2ReleaseNotes]。</span><span class="sxs-lookup"><span data-stu-id="40970-102">See [WebView2 release notes][WebView2ReleaseNotes].</span></span>
 
 <!-- image links -->  
 
