@@ -12,7 +12,7 @@ ms.lasthandoff: 07/20/2020
 ms.locfileid: "10883681"
 ---
 > [!NOTE]
-> 不再保持此引用。 有关最新 API 参考，请参阅[WEBVIEW2 API 参考][WebView2APIReference]。
+> 不再保持此引用。 有关最新 API 参考，请参阅 [WEBVIEW2 API 参考][WebView2APIReference]。
 
 <!-- image links -->  
 

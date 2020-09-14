@@ -12,7 +12,7 @@ ms.lasthandoff: 07/20/2020
 ms.locfileid: "10883706"
 ---
 > [!NOTE]
-> 这是我们的预发布 SDK 附带的[实验性 API][ExperimentalAPIs] 。 请参阅[WebView2 发行说明][WebView2ReleaseNotes]。
+> 这是我们的预发布 SDK 附带的 [实验性 API][ExperimentalAPIs] 。 请参阅 [WebView2 发行说明][WebView2ReleaseNotes]。
 
 <!-- image links -->  
 
