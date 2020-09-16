@@ -1,22 +1,22 @@
 ---
-description: 边缘（Chromium）扩展的内容安全策略。
-title: 内容安全策略（CSP）
+description: 边缘 (Chromium) 扩展的内容安全策略。
+title: " (CSP) 的内容安全策略"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 52d6d0afb38401250183788726013d521a269f06
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563339"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015714"
 ---
-# 内容安全策略 \ （CSP \）  
+# 内容安全策略 \ (CSP \ )   
 
-为了减少可能出现的跨网站脚本问题的大型类，Microsoft Edge 扩展系统合并了[内容安全策略的一般概念 \ （CSP \）][W3CContentSecurityPolicy]。  这引入了一些相当严格的策略，使扩展在默认情况下更安全，并使你能够创建和强制管理可由你的扩展和应用程序加载和运行的内容类型的规则。  
+为了减少可能出现的跨网站脚本问题的大型类，Microsoft Edge 扩展系统合并了 [内容安全策略的一般概念 \ (CSP \ ) ][W3CContentSecurityPolicy]。  这引入了一些相当严格的策略，使扩展在默认情况下更安全，并使你能够创建和强制管理可由你的扩展和应用程序加载和运行的内容类型的规则。  
 
 通常，CSP 适用于由你的扩展加载或运行的资源的 block/allowlisting 机制。  为你的扩展定义合理的策略使你能够仔细考虑你的扩展需要的资源，并要求浏览器确保这些资源是你的扩展有权访问的唯一资源。  这些策略不仅可提供主机权限，还可提供延长请求的安全性;它们是一种额外的保护层，而不是替代。  
 
@@ -30,7 +30,7 @@ ms.locfileid: "10563339"
 }
 ```  
 
-> 有关 CSP 语法的完整详细信息，请参阅[内容安全策略规范][W3CContentSecurityPolicy]和 HTML5Rocks 上的["内容安全策略简介" 一][HTML5RocksIntroductionContentSecurityPolicy]文。  
+> 有关 CSP 语法的完整详细信息，请参阅 [内容安全策略规范][W3CContentSecurityPolicy] 和 HTML5Rocks 上的 ["内容安全策略简介" 一][HTML5RocksIntroductionContentSecurityPolicy] 文。  
 
 ## 默认策略限制  
 
@@ -66,7 +66,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 内联 JavaScript 不会运行。  此限制 bans 内联 `<script>` 块和内联事件处理程序（如） `<button onclick="...">` 。
 
-第一次限制是通过使您不能意外运行由恶意的第三方提供的脚本来擦除跨站点脚本攻击的大型类。  但是，它要求你使用内容和行为之间的完全分离来编写你的代码 \ （你应该无论如何都是如此，对吧？ \）。  示例可能会更清楚。  你可能会尝试编写一个浏览器操作弹出窗口，将其作为单个 `pop-up.html` 容器：  
+第一次限制是通过使您不能意外运行由恶意的第三方提供的脚本来擦除跨站点脚本攻击的大型类。  但是，它需要你编写代码，以便在内容和行为之间进行完全分离，而你应该做的只是 (的，对吧？ \ ) 。  示例可能会更清楚。  你可能会尝试编写一个浏览器操作弹出窗口，将其作为单个 `pop-up.html` 容器：  
 
 ```html
 <!doctype html>
@@ -101,7 +101,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 必须更改三项内容才能按预期方式执行此操作：  
 
-*   `clickHandler`定义必须移到外部 JavaScript 文件 \ （ `popup.js` 可能是一个较好的目标）。  
+*   `clickHandler`定义必须移到外部 JavaScript 文件 \ (`popup.js` 可能是一个很好的目标) 。  
 *   内联事件处理程序定义必须被重写 `addEventListener` 并提取到中 `popup.js` 。  
     如果当前正在使用类似代码启动程序，请 `<body onload="main();">` 考虑通过挂钩到 `DOMContentLoaded` 文档事件或窗口事件来替换它 `load` ，具体取决于你的要求。  使用以前的，因为它通常会更快地触发。  
 
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 脚本和对象资源只能从扩展包加载，而不能从 web 上加载。  这可确保你的扩展仅运行你专门批准的代码，防止活动网络攻击者恶意重定向你的资源请求。  
 
-不必编写依赖于 jQuery \ （或任何其他库 \）从外部 CDN 加载的代码，请考虑在扩展程序包中包含 jQuery 的特定版本。  也就是说，而不是：  
+不要编写依赖于 jQuery \ (或任何其他库 \ ) 从外部 CDN 加载的代码，请考虑在扩展程序包中包含 jQuery 的特定版本。  也就是说，而不是：  
 
 ```html
 <!doctype html>
@@ -194,11 +194,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 As of Chrome 46, -->  
 
-通过指定策略中的源代码的 base64 编码哈希，可以允许内联脚本。  此哈希必须以已使用的哈希算法 \ （sha256、sha384 或 sha512 \）为前缀。  有关示例，请参阅[<脚本 \ > 元素的哈希用法][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]。  
+通过指定策略中的源代码的 base64 编码哈希，可以允许内联脚本。  此哈希必须以已使用的哈希算法 \ (sha256、sha384 或 sha512 \ ) 为前缀。  有关示例，请参阅 [ \<script\> 元素的哈希使用情况][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] 。  
 
 **远程脚本**  
 
-如果你需要某些外部 JavaScript 或对象资源，你可以通过 allowlisting 安全来源（应接受脚本）将策略放宽到有限的范围。  验证使用扩展权限提升权限加载的运行时资源是否与你所需的资源完全一致，并且不会由活动网络攻击者替换。  由于[中间人攻击][WikiManMiddleAttacks]在 HTTP 上是简单且不可检测的，因此不接受这些来源。  
+如果你需要某些外部 JavaScript 或对象资源，你可以通过 allowlisting 安全来源（应接受脚本）将策略放宽到有限的范围。  验证使用扩展权限提升权限加载的运行时资源是否与你所需的资源完全一致，并且不会由活动网络攻击者替换。  由于 [中间人攻击][WikiManMiddleAttacks] 在 HTTP 上是简单且不可检测的，因此不接受这些来源。  
 
 目前，开发人员可以使用以下方案 allowlist 来源：、、 `blob` `filesystem` `https` 和 `extension` 。  必须为和方案显式指定源的主机部分 `https` `extension` 。  不允许使用常规通配符，如 https：、 `https://*` 和 `https://*.com` 不允许; `https://*.example.com` 允许使用子域通配符。  [公用后缀列表][PublicSuffixList]中的域也被视为常规顶级域。  若要从这些域加载资源，子域必须明确列出。  例如，无效 `https://*.cloudfront.net` ，但 `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` 能够 allowlisted。  
 
@@ -214,7 +214,7 @@ As of Chrome 46, -->
 ```  
 
 > [!NOTE]
-> `script-src`和 `object-src` 均由策略定义。  Microsoft Edge 不接受不将每个值限制为 \ （至少 \） "" 的策略 `self` 。  
+> `script-src`和 `object-src` 均由策略定义。  Microsoft Edge 不接受不将每个值限制为 \ (至少 \ ) ' ' 的策略 `self` 。  
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->  
 
@@ -230,7 +230,7 @@ As of Chrome 46, -->
 
 ## 加强默认策略  
 
-当然，你可以将此政策提升到扩展所允许的任何程度，以便在方便的时候提高安全性。  若要指定你的扩展只能从关联的扩展包加载任何类型 \ （图像等）的资源，例如 `default-src 'self'` 可能适用的策略。  
+当然，你可以将此政策提升到扩展所允许的任何程度，以便在方便的时候提高安全性。  若要指定你的扩展只能加载任何类型 \ (图像的资源，如此 ) 来自关联的扩展程序包的资源，例如 `default-src 'self'` 可能适合的策略。  
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->  
 
@@ -253,7 +253,7 @@ document.write("<script>alert(1);</script>");
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```  
 
-如果用户单击该按钮， `onclick` 脚本将不会运行。  这是因为脚本不会立即运行，并且不会将代码解释为内容脚本的一部分，因此不会将代码视为内容脚本的一部分，因此页面的 CSP （不是扩展名 \）会限制行为。  由于该 CSP 不指定，因此 `unsafe-inline` 内联事件处理程序被阻止。  
+如果用户单击该按钮， `onclick` 脚本将不会运行。  这是因为脚本不会立即运行，并且代码不会被解释为内容脚本的一部分，因此不会将该 click 事件视为内容脚本的一部分，因此该页面的 CSP (不是扩展名 \ ) 会限制该行为。  由于该 CSP 不指定，因此 `unsafe-inline` 内联事件处理程序被阻止。  
 在这种情况下，实现所需行为的正确方法可能是 `onclick` 通过内容脚本中的函数添加处理程序，如下所示：  
 
 ```javascript
@@ -294,11 +294,11 @@ script.innerHTML = 'eval("alert(1);")';
 [WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "中间人攻击-维基百科"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 可在[此处](https://developer.chrome.com/extensions/contentSecurityPolicy)找到原始页面。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 可在 [此处](https://developer.chrome.com/extensions/contentSecurityPolicy)找到原始页面。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

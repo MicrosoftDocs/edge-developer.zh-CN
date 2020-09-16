@@ -1,22 +1,24 @@
 ---
-description: 扩展入门第1部分
+description: 扩展入门第2部分
 title: 使用内容脚本在页面正文标记下方动态插入 NASA 图片
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、web 开发、html、css、javascript、开发人员、扩展
-ms.openlocfilehash: b37184f0188b72ec868ab3de3f2341c0694ee42c
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683642"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015756"
 ---
 # 使用内容脚本在页面正文标记下方动态插入 NASA 图片  
-  
-[此部件的已完成扩展程序包源][ArchiveExtensionGettingStartedPart2]  
+
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## 概述  
 
@@ -61,8 +63,8 @@ ms.locfileid: "10683642"
 
 更新您的扩展并选择 "扩展启动" 图标后，"具有以下弹出窗口" 包含 "显示" 按钮。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="弹出。按下 扩展 图标后显示 html":::
-   "弹出"。按下 "扩展" 图标后显示 html
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="按下 "扩展" 图标后，popup.html 显示":::
+   按下 "扩展" 图标后，popup.html 显示
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
@@ -86,7 +88,7 @@ if (sendMessageId) {
 }
 ```  
 
-在此 `onclick` 事件中，你必须执行的操作是查找 "当前浏览器" 选项卡 \ （如果只有一个 "打开"，则是一个 \）。  然后，找到该选项卡后，使用 `chrome.tabs.sendmessage` 扩展 API 将消息发送到该选项卡。  
+在此 `onclick` 事件中，你必须执行的操作是查找当前浏览器选项卡 \ (如果只有一个打开的浏览器选项卡，则它是一个 \ ) 。  然后，找到该选项卡后，使用 `chrome.tabs.sendmessage` 扩展 API 将消息发送到该选项卡。  
 
 在该消息中，你必须包含要显示的图像的 URL，并且你希望发送应分配给插入的图像的唯一 ID。  你可以选择让内容插入 JavaScript 生成该内容，但对于稍后变得明显的原因，在此处生成唯一 ID `popup.js` 并将其传递给尚未创建的内容脚本。  
 
@@ -129,7 +131,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是使用元素的属性将图像插入 `src` `img` 内容页面。  内容页面在与运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件作为 web 资产公开才能正常工作。  
 
-若要执行此操作，必须在文件中添加其他条目 `manifest.json` 。  必须声明可从任何浏览器选项卡访问的图像。 该条目如下所示 \ （ `manifest.json` 当你添加即将到来的内容脚本声明时，请在下面的完整文件中看到该条目）。  
+若要执行此操作，必须在文件中添加其他条目 `manifest.json` 。  必须声明可从任何浏览器选项卡访问的图像。 该条目如下所示 \ (`manifest.json` 当您添加即将出现的内容脚本声明时，请在下面的完整文件中看到该条目： \ ) 。  
 
 ```json
 "web_accessible_resources": [
@@ -139,7 +141,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 现在，你已在文件中写入代码 `popup.js` ，以便向嵌入当前活动选项卡页上的内容页发送消息，但尚未创建和注入该内容页面。  立即执行此操作。  
 
-## 为内容和 web 访问更新清单 json  
+## 更新内容和 web 访问的 manifest.js  
 
 `manifest.json`包括的和的更新 `content-scripts` `web_accessible_resources` 如下所示。  
 
@@ -176,7 +178,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 ## 添加 jQuery 并了解关联的线程  
 
-在您要插入的内容脚本中，请使用 jQuery \ （ `$` \）进行规划。  你添加了一个 minified 版本的 jQuery，并将其放入你的扩展程序包中 `lib\jquery.min.js` 。  这些内容脚本在排序的单个沙箱中运行，这意味着插入到页面中的 jQuery 不 `popup.js` 会与内容共享。  
+在您要插入的内容脚本中，请使用 jQuery \ (`$` \ ) 进行计划。  你添加了一个 minified 版本的 jQuery，并将其放入你的扩展程序包中 `lib\jquery.min.js` 。  这些内容脚本在排序的单个沙箱中运行，这意味着插入到页面中的 jQuery 不 `popup.js` 会与内容共享。  
 
 请记住，即使浏览器选项卡在加载的网页上运行了 JavaScript，任何插入的内容都不具有访问权限。  所注入的 JavaScript 只对在该浏览器选项卡中加载的实际 DOM 具有访问权限。  
 
@@ -213,14 +215,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 *   第一次动态地插入到 DOM 标头中 **\<style\>** 必须作为 `slide-image` 类分配给你的元素的部分 `img` 。  
 *   第二个元素将在 " `img` 浏览器" 选项卡的下方附加一个元素， `body` 该选项卡具有 `slide-image` 指定的类以及 `imageDivId` 作为该图像元素的 ID。  
-*   第三个示例添加一个 `click` 包含整个图像的事件，该事件允许用户选择图像上的任何位置，并将该图像从 page \ （和它是事件侦听器 \）中删除。  
+*   第三个示例添加一个 `click` 事件，其中包含整个图像，允许用户选择图像上的任何位置，并且该图像将从页面 \ (中删除，并且该图像是事件侦听器 \ ) 。  
 
 ## 添加功能以在选定时删除显示的图像  
 
-现在，当您浏览到任意页面并选择您的**扩展名**图标时，弹出菜单显示如下。  
+现在，当您浏览到任意页面并选择您的 **扩展名** 图标时，弹出菜单显示如下。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="弹出。按下 扩展 图标后显示 html":::
-   "弹出"。按下 "扩展" 图标后显示 html
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="按下 "扩展" 图标后，popup.html 显示":::
+   按下 "扩展" 图标后，popup.html 显示
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  

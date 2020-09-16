@@ -3,20 +3,22 @@ description: 扩展入门第1部分
 title: 构建一个简单的扩展名，它会弹出一天的 NASA 图片
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、web 开发、html、css、javascript、开发人员、扩展
-ms.openlocfilehash: dd5c1dab0cb9b54b79be7d2728cb9bfde0945185
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 826401869b98d339e9b156a3727d94bd1182063d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683621"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015763"
 ---
-# 构建一个简单的扩展名，它会弹出一天的 NASA 图片  
-
-[此部件的已完成扩展程序包源][ArchiveExtensionGettingStartedPart1]  
+# 构建一个简单的扩展名，它会弹出一天的 NASA 图片 
+ 
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
+-->  
 
 ## 概述  
 
@@ -43,7 +45,7 @@ ms.locfileid: "10683621"
 
 ## 扩展图标设置  
 
-接下来，将一些图标添加到 `manifest.json` file \ （并 `/icons` 使用图标文件 \）创建一个新目录。  图标用于用户选择以启动扩展的按钮的背景图像 \ （如果有 \），以及其他合适的位置。  
+接下来，将一些图标添加到 " `manifest.json` 文件 \ ("，然后创建一个 `/icons` 具有图标文件 \ ) 的新目录。  如果有一个 \ ) 和其他合适的位置，则该图标用于用户选择以启动扩展 (的按钮的背景图像。  
 
 `PNG` 是推荐的格式，但你也可以使用 `BMP` 、 `GIF` `ICO` 和 `JPEG` 。  建议始终至少具有 "128x128 像素大小" 图标，并且浏览器会根据需要自动调整其大小。  
 
@@ -161,16 +163,18 @@ HTML 文件已命名 `popup/popup.html` 。  选择 "扩展" 图标将启动 " `
         └── popup.html
 ```  
 
+<!--  
 > [!NOTE]
-> `images/stars.jpeg`" [Zip 下载][ArchiveExtensionGettingStartedPart1]" 中提供了上一个图像中列出的文件。  
+> The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
+-->  
 
-这就是构建工作扩展所需的一切。  剩下的就是对其进行测试。  
+这就是构建工作扩展所需的一切。  剩下的只是测试它。  
 
-下一节将介绍如何将扩展 \ （有时称为侧加载 \）加载到 Microsoft Edge \ （Chromium \）浏览器中进行测试。  
+下一节将介绍如何将扩展 \ (（有时称为 "侧加载 \ ) "）加载到 Microsoft Edge \ (Chromium \ ) 浏览器中进行测试。  
 
-## 在浏览器中进行开发时在浏览器中本地运行扩展 \ （侧面加载 \）  
+## 在你的浏览器中进行开发时在浏览器中本地运行你的扩展 \ (面加载 \ )   
 
-Microsoft Edge \ （Chromium \）浏览器为你提供一种安全且简单的方法，以便你在开发过程中运行和调试扩展。  
+Microsoft Edge \ (Chromium \ ) 浏览器提供一种安全且简单的方法，以便你在开发时运行和调试扩展。  
 
 该过程非常简单。  必须首先选择浏览器顶部的三个圆点。  接下来， `Extensions` 从上下文菜单中进行选择，如下图所示。  
 
@@ -180,7 +184,7 @@ Microsoft Edge \ （Chromium \）浏览器为你提供一种安全且简单的�
 
 <!--![Choose Extensions][ImagePart1Threedots]  -->  
 
-如果您位于 "**扩展**" 页面上，如下图所示，请启用**开发人员模式**，方法是启用页面左下角的切换，如下图所示。  
+如果您位于 " **扩展** " 页面上，如下图所示，请启用 **开发人员模式** ，方法是启用页面左下角的切换，如下图所示。  
 
 :::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="启用开发人员模式":::
    启用开发人员模式

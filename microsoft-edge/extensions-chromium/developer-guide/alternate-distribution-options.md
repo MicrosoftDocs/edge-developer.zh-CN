@@ -3,24 +3,24 @@ description: 通过经验证的应用商店以外的机制分配扩展的过程
 title: 分发扩展的备用方法
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: a1a3ffe7a54f96df7e665ab5dc6f5b99bacb8b8e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: e28a84fd75ad1ac0be2000a22c26371ca73d0293
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563384"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015693"
 ---
 # 分发扩展的备用方法  
 
 如果你是要为其他软件的安装过程的一部分分发扩展的开发人员，或者是希望在其整个组织中分发扩展的网络管理员，Microsoft Edge 支持以下扩展安装方法：  
 
-*   **使用 Windows 注册表 \ （仅限 Windows \）**  
+*   **仅使用 Windows 注册表 \ (Windows ) **  
 
-Microsoft Edge 支持安装托管的扩展 `update_URL` 。  在 Windows 上， `update_URL` 必须指向必须托管扩展的 Microsoft Edge Addons 目录 \ （Microsoft Edge Addons \）。  
+Microsoft Edge 支持安装托管的扩展 `update_URL` 。  在 Windows 上， `update_URL` 必须指向 Microsoft Edge Addons catalog \ (Microsoft Edge Addons \ ) 必须在其中托管扩展的位置。  
 
 > [!NOTE]
 > 通过 macOS 的首选项 json 文件进行扩展的外部安装 <!--and Linux--> 尚不支持。  此功能支持将很快推出。
@@ -34,8 +34,8 @@ Microsoft Edge 支持安装托管的扩展 `update_URL` 。  在 Windows 上， 
 *   在注册表中查找或创建以下注册表项：  
     *   32位 Windows：  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
     *   64位 Windows：  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
-*   在 "Extensions" 键下创建一个新的键 \ （文件夹 \），其名称与您的扩展名 \ （例如 \）的 ID 相同 `aaaaaaaaaabbbbbbbbbbcccccccccc` 。  
-*   在你的扩展键中，创建一个属性， `update_url` 并将其设置为值： `https://edge.microsoft.com/extensionwebstorebase/v1/crx` ，\ （这指向 Microsoft Edge Addons \）中的 crx 扩展名。 如果想要从 Chrome Web Store 安装扩展，请提供 Chrome Web Store 更新 URL `https://clients2.google.com/service/update2/crx` 。  
+*   创建一个新的键 \ (文件夹 \ ) ，使用与扩展名 \ 的 ID 相同的扩展名 \ (例如， `aaaaaaaaaabbbbbbbbbbcccccccccc` \ ) 。  
+*   在你的扩展键中，创建一个属性， `update_url` 并将其设置为值： `https://edge.microsoft.com/extensionwebstorebase/v1/crx` ，\ (这一点指向 Microsoft Edge Addons \ ) 中的扩展 crx。 如果想要从 Chrome Web Store 安装扩展，请提供 Chrome Web Store 更新 URL `https://clients2.google.com/service/update2/crx` 。  
     
     ```javascript
     {
@@ -51,18 +51,18 @@ Microsoft Edge 支持安装托管的扩展 `update_URL` 。  在 Windows 上， 
 
 若要将扩展更新到新版本，请更新文件，然后更新注册表中的版本。  
 
-若要卸载你的扩展 \ （例如，如果你的软件已卸载 \），请从注册表中删除你的首选项文件 \ （ `aaaaaaaaaabbbbbbbbbbcccccccccc.json` \）或元数据。  
+若要卸载扩展 \ (例如，如果软件已卸载 \ ) ，请从注册表中删除您的首选项文件 \ (`aaaaaaaaaabbbbbbbbbbcccccccccc.json` \ ) 或元数据。  
 
 <!-- image links -->  
 
 <!-- links -->  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 可在[此处](https://developer.chrome.com/apps/external_extensions)找到原始页面。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 可在 [此处](https://developer.chrome.com/apps/external_extensions)找到原始页面。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

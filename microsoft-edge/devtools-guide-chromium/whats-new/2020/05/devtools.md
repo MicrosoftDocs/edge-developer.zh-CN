@@ -1,18 +1,18 @@
 ---
-description: 在 Windows 高对比度模式下使用 DevTools，将 DevTools 中的键盘快捷方式与 VS 代码进行匹配，等等。
+description: 在 Windows 高对比度模式中使用 DevTools，将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配，以及更多。
 title: DevTools (Microsoft Edge 84) 中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 62f261b381b0382561e166bca67f77f37225b764
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2752dec8bc7c4eec34ddde05a7dedff7bebef05f
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992883"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015487"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10992883"
 
 ## 来自 Microsoft Edge 开发人员工具团队公告  
 
-以下各部分是你可能错过的 Microsoft Edge 开发人员工具团队的公告列表！ 请查看这些公告，尝试使用 DevTools 和 VS 代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
+以下各部分是你可能错过的 Microsoft Edge 开发人员工具团队的公告列表！ 查看它们以尝试 DevTools、Visual Studio 代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
 
 ### 在 Windows 高对比度模式下使用 DevTools
 
@@ -49,19 +49,19 @@ Microsoft Edge DevTools 现在在 Windows 处于高对比度模式下显示为�
 
 Chromium 问题 [#1048378][CR1048378]  
 
-### 将 DevTools 中的键盘快捷方式与 VS 代码相匹配  
+### 将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配  
 
-从你的 [反馈](#getting-in-touch-with-microsoft-edge-devtools-team) 和 [Chromium 公共问题跟踪][CRIssuesList]器开始，Microsoft Edge DevTools 团队发现你希望能够在 DevTools 中自定义键盘快捷方式。  在 Microsoft Edge 84 中，你现在可以将 DevTools 中的键盘快捷方式与 [VS 代码][VSCode]相匹配，这只是团队在为快捷方式自定义而使用的功能之一。  
+从你的 [反馈](#getting-in-touch-with-microsoft-edge-devtools-team) 和 [Chromium 公共问题跟踪][CRIssuesList]器开始，Microsoft Edge DevTools 团队发现你希望能够在 DevTools 中自定义键盘快捷方式。  在 Microsoft Edge 84 中，你现在可以将 DevTools 中的键盘快捷方式与 [Visual Studio 代码][VSCode]匹配，这只是团队在为快捷方式自定义而处理的功能之一。  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与 VS 代码相匹配" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    高对比度模式下的 Microsoft Edge DevTools  
 :::image-end:::  
 
 若要尝试实验，请按下 "DevTools" `?` 或选择 ![ ][ImageSettingsIcon] DevTools 右上角的 DevTools "设置" 图标来打开 "设置"。  导航到 " **实验** " 部分，然后选中 **"启用自定义键盘快捷方式设置" 选项卡， (需要重新加载) **。  现在重新加载 DevTools，再次打开 "设置"，然后导航到 " **快捷方式** " 部分。  
 
-选择 " **)  (DevTools** " 中的 "选择"，然后选择 "**匹配预设的快捷方式**" 下拉列表，然后选择**Visual Studio 代码**  DevTools 中的键盘快捷方式现在与与 VS 代码中的等效操作的快捷方式相匹配。  
+选择 " **)  (DevTools** " 中的 "选择"，然后选择 "**匹配预设的快捷方式**" 下拉列表，然后选择**Visual Studio 代码**  DevTools 中的键盘快捷方式现在与 Visual Studio 代码中等效操作的快捷方式相匹配。  
 
-例如，暂停或继续在 [VS 代码][VSCodeShortcuts] 中运行脚本的键盘快捷方式是 `F5` 。  通过 **DevTools (Default) ** 预置，DevTools 中的同一快捷方式， `F8` 但在 **Visual Studio 代码** 中，该快捷方式现在也是如此 `F5` 。  
+例如，在 [Visual Studio 代码][VSCodeShortcuts] 中暂停或继续运行脚本的键盘快捷方式是 `F5` 。  通过 **DevTools (Default) ** 预置，DevTools 中的同一快捷方式， `F8` 但在 **Visual Studio 代码** 中，该快捷方式现在也是如此 `F5` 。  
 
 此功能目前可在 Microsoft Edge 84 中提供，因此请与团队分享你的 [反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
@@ -281,10 +281,10 @@ Chromium 问题 [#1072952][CR1072952]
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "DevTools "设置" 图标"
-[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "DevTools 切换 Screencasting 图标"
-[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "DevTools 性能面板刷新页面图标"
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png "DevTools 性能面板录制图标"
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/settings-icon.msft.png  
+[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/toggle-screencast-icon.msft.png  
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/refresh-page-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/record-icon.msft.png  
 
 <!-- links -->  
 

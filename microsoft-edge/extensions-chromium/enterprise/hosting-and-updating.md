@@ -1,22 +1,22 @@
 ---
-description: 扩展企业文档 for Edge （Chromium）扩展。
+description: 扩展企业文档，用于 Edge (Chromium) 扩展。
 title: 托管和更新
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: eb1f9921d503d25557fc9efb1517537e7a90f4aa
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563381"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015700"
 ---
 # Web 应用商店托管和更新  
 
-大多数扩展均托管在[Microsoft Edge 预览体验成员 Addons 目录 \ （Microsoft Edge 预览体验计划 Addons \）][MicrosoftStoreExtensions]中，可最好地保护用户免受恶意扩展。  
+大多数扩展均托管在 [Microsoft Edge 预览体验计划 Addons 目录 \ (Microsoft Edge 预览体验成员 Addons \ ) ][MicrosoftStoreExtensions] 中，以最佳方式保护用户免受恶意扩展。  
 
 ## 托管  
 
@@ -41,11 +41,11 @@ Microsoft Edge 浏览器会定期检查已安装扩展和更新的新版本，�
 [MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "扩展-Microsoft Edge 预览体验计划 Addons"  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 可在[此处](https://developer.chrome.com/extensions/hosting)找到原始页面。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 可在 [此处](https://developer.chrome.com/extensions/hosting)找到原始页面。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

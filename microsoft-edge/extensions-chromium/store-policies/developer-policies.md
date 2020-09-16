@@ -3,28 +3,28 @@ description: Microsoft Edge Addons 目录开发人员策略。
 title: Microsoft Edge Addons 目录开发人员策略
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: be159491d892c176a8439393573dc23680fac377
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: f71767cc4cd887ce9351202dd06732760299816d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607431"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015707"
 ---
 # Microsoft Edge Addons 目录开发人员策略  
 
 ## 本文档的简介和目标  
 
-感谢你关注开发 Microsoft Edge Addons 目录的扩展。  Microsoft Edge Addons 目录开发人员策略 \ （Addons Catalog 开发人员策略 \）适用于你的扩展，包括通过[合作伙伴中心][MicrosoftPartnerCenter]提交扩展以及通过 Microsoft Edge Addons 提供此类扩展。  
+感谢你关注开发 Microsoft Edge Addons 目录的扩展。  Microsoft Edge Addons 目录开发人员策略 \ (Addons 目录开发人员策略 \ ) 适用于您的扩展，包括通过 [合作伙伴中心][MicrosoftPartnerCenter] 提交扩展以及通过 Microsoft Edge Addons 提供此类扩展。  
 
 ## 原则  
 
 下面是一些入门准则：  
 
-*   你应该在 Microsoft Edge 的扩展中提供唯一且独特的值。  提供从 Microsoft Edge Addons 目录下载扩展的有说服力的理由 \ （Microsoft Edge Addons \）。  
+*   你应该在 Microsoft Edge 的扩展中提供唯一且独特的值。  为从 Microsoft Edge Addons 目录 \ (Microsoft Edge Addons \ ) 下载扩展提供了有说服力的理由。  
 *   您不能误导我们的联合用户对您的分机内容、提供服务的人，等等。  
 *   您不得尝试给用户、系统或生态系统的用户。  Microsoft Edge Addons 中不存在任何类型欺诈的地方;成为 it 评级和评论操作、信用卡欺诈或其他欺诈活动。  
 
@@ -56,7 +56,7 @@ ms.locfileid: "10607431"
 
 #### 1.1.5 提供相应的详细信息  
 
-你必须提供有关你的扩展的独特和信息性详细信息，以及为你的扩展列出 \ （元数据 \）的功能。  您的扩展必须提供有价值且优质的用户体验。  你的扩展还必须在 Microsoft Edge Addons 中具有活动状态。  
+你必须提供有关你的扩展的独特和信息性详细信息，以及为你的扩展列出 \ (元数据 \ ) 中的功能。  您的扩展必须提供有价值且优质的用户体验。  你的扩展还必须在 Microsoft Edge Addons 中具有活动状态。  
 
 #### 1.1.6 稳定性和性能  
 
@@ -68,11 +68,11 @@ ms.locfileid: "10607431"
 
 #### 1.1.8 更改浏览器设置  
 
-您的分机**不能、未经适当的用户同意**、更改或看起来改变、浏览器功能或设置，包括但不限于：地址栏搜索提供程序和建议、起始页或主页、新选项卡页以及添加或删除收藏夹。  
+您的分机 **不能、未经适当的用户同意**、更改或看起来改变、浏览器功能或设置，包括但不限于：地址栏搜索提供程序和建议、起始页或主页、新选项卡页以及添加或删除收藏夹。  
 
 对浏览器设置所做的任何更改都应明确记录在扩展的描述中。  
 
-你的扩展可能只会修改密钥设置，以便将 Microsoft 网页或服务替换为第三方的 Microsoft 网页或服务（例如，需要使用第三方搜索引擎，或者将主页设置为第三方 web 属性 \）（如果你使用的是此类第三方或其他相关联）。  
+你的扩展可能只会修改密钥设置以将 Microsoft 网页或服务替换为第三方 (的 Microsoft 网页或服务，例如需要使用第三方搜索引擎，或者将主页设置为第三方 web 属性 \ ) （如果你是使用此类第三方或其他方式关联的）。  
 
 ### 1.2 安全性  
 
@@ -81,15 +81,15 @@ ms.locfileid: "10607431"
 #### 1.2.1 内容安全策略  
 
 > [!NOTE]
-> 如果你对扩展的更改超出了所述功能，则对代码所做的任何更改都必须符合[Microsoft Edge 内容安全策略][MicrosoftEdgeContentSecurityPolicyRemoteScript]。  示例：你的扩展不应下载远程脚本，随后以与所述功能不一致的方式运行该脚本。  
+> 如果你对扩展的更改超出了所述功能，则对代码所做的任何更改都必须符合 [Microsoft Edge 内容安全策略][MicrosoftEdgeContentSecurityPolicyRemoteScript]。  示例：你的扩展不应下载远程脚本，随后以与所述功能不一致的方式运行该脚本。  
 
 #### 1.2.2 有害和恶意软件  
 
-您的扩展不得包含或启用恶意软件，由 Microsoft[不受欢迎和恶意软件][MicrosoftIdentifiesMalwareUnwantedApplications]的标准定义。  
+您的扩展不得包含或启用恶意软件，由 Microsoft [不受欢迎和恶意软件][MicrosoftIdentifiesMalwareUnwantedApplications]的标准定义。  
 
 #### 1.2.3 其他软件的相关性  
 
-你的扩展可能依赖于非集成软件 \ （如另一产品、模块或服务）来提供主要功能，前提是你在描述中公开了依赖关系  
+你的扩展可能依赖于非集成软件 \ (，如另一产品、模块或服务 \ ) 以提供主要功能，前提是你在描述中公开了依赖关系  
 
 #### 1.2.4 扩展更新  
 
@@ -99,7 +99,7 @@ ms.locfileid: "10607431"
 扩展必须可测试。  如果不能出于任何原因测试您的扩展，包括但不限于以下项目，则您的扩展可能无法实现此要求。  
 
 #### 1.3.1 用户凭据  
-如果您的扩展需要登录凭据，请使用 "**证书说明**" 字段提供工作的演示帐户。  
+如果您的扩展需要登录凭据，请使用 " **证书说明** " 字段提供工作的演示帐户。  
 
 #### 1.3.2 服务的可用性  
 
@@ -123,7 +123,7 @@ ms.locfileid: "10607431"
 
 #### 1.5.1 仅在必要时收集个人信息  
 
-您的扩展可能会收集、访问、使用或传输个人信息 \ （包括 web 浏览活动 \）;仅在需要时，并且仅在具有突出披露的、面向用户的功能中使用。  
+您的扩展可能会收集、访问、使用或传输个人信息 (包括 web 浏览活动 \ ) ;仅在需要时，并且仅在具有突出披露的、面向用户的功能中使用。  
 
 #### 1.5.2 维护隐私策略  
 
@@ -177,13 +177,13 @@ ms.locfileid: "10607431"
 
 *   如果您的分机便于或收集慈善捐赠或开展促销抽奖活动或比赛，您必须遵守适用法律。  
 *   您还必须明确声明，Microsoft 不是此次促销活动的集资者或主办方。  
-*   您的分机中销售的产品内产品不能转换为任何合法的有效货币 \ （如 USD、欧元等）或任何实物商品或服务。  
+*   您的分机中销售的产品内产品不能转换为任何合法的合法货币 \ (，如 USD、欧元等，) 或任何实物商品或服务。  
 
 以下要求适用于您使用安全的第三方购买 API：  
 
 *   在交易记录期间或从用户处收集任何付款或财务信息时;您的扩展必须标识商务事务提供商，验证用户身份，并获取有关交易的用户确认。  商务事务提供商维护用于财务交换的安全平台。  
 *   你的扩展可能会向用户提供保存此身份验证的功能，但用户必须能够对每个事务都要求身份验证，或者关闭产品内事务。  
-*   如果您的扩展收集了信用卡信息或使用的第三方付款处理器收集信用卡信息，则付款处理必须满足当前的 PCI 数据安全标准 \ （PCI DSS \）。  
+*   如果您的扩展收集信用卡信息或使用的第三方付款处理器收集信用卡信息，则支付处理必须满足当前 PCI 数据安全标准 \ (PCI DSS \ ) 。  
 
 #### 1.8.2 公开付费功能  
 
@@ -191,7 +191,7 @@ ms.locfileid: "10607431"
 
 ### 1.9 通知  
 
-您的扩展必须遵守通知的系统设置。  这意味着，无论通知是否由 Microsoft 推送通知服务（MPNS \）、Windows 推送通知服务（WNS \）还是任何其他服务提供，用户的广告和通知的任何演示文稿都必须与用户首选项保持一致。  如果用户在特定于产品或系统范围的基础上禁用通知，则你的扩展必须保持正常运行。  
+您的扩展必须遵守通知的系统设置。  这意味着，无论通知是否由 Microsoft 推送通知服务（ (MPNS \ ) 、Windows 推送通知服务 \ (WNS \ ) 或任何其他服务）提供，用户的广告和通知的任何演示文稿都必须与用户首选项保持一致。  如果用户在特定于产品或系统范围的基础上禁用通知，则你的扩展必须保持正常运行。  
 
 如果你的产品使用 MPNS 或 WNS 传输通知，则它必须符合以下要求：  
 
@@ -221,8 +221,8 @@ ms.locfileid: "10607431"
 
 #### 1.10.2 政策和协议  
 
-您的扩展显示的任何广告内容都必须遵守[Microsoft 创造性接受政策][MicrosoftAdvertisingCreativeAcceptancePolicies]。  
-如果你的扩展显示广告，则显示的所有内容必须符合[应用开发人员协议][MicrosoftAppDeveloperAgreement]和此策略的广告要求。  
+您的扩展显示的任何广告内容都必须遵守 [Microsoft 创造性接受政策][MicrosoftAdvertisingCreativeAcceptancePolicies]。  
+如果你的扩展显示广告，则显示的所有内容必须符合 [应用开发人员协议][MicrosoftAppDeveloperAgreement] 和此策略的广告要求。  
 
 #### 广告的1.10.3 质量  
 
@@ -231,7 +231,7 @@ ms.locfileid: "10607431"
 
 #### 1.10.4 促销  
 
-如果购买或创建促销广告市场活动以通过[合作伙伴中心][MicrosoftPartnerCenter]中的广告市场活动功能推广您的扩展，则您提供给 microsoft 的所有广告材料（包括任何相关登陆页面）都必须遵守[Microsoft 创意规范政策][MicrosoftAdvertisingCreativeSpecifications]和[microsoft 创意接受政策][MicrosoftAdvertisingCreativeAcceptancePolicies]。  
+如果购买或创建促销广告市场活动以通过 [合作伙伴中心][MicrosoftPartnerCenter]中的广告市场活动功能推广您的扩展，则您提供给 microsoft 的所有广告材料（包括任何相关登陆页面）都必须遵守 [Microsoft 创意规范政策][MicrosoftAdvertisingCreativeSpecifications] 和 [microsoft 创意接受政策][MicrosoftAdvertisingCreativeAcceptancePolicies]。  
 
 #### 1.10.5 通知用户选择退出基于兴趣的广告  
 
@@ -239,11 +239,11 @@ ms.locfileid: "10607431"
 
 #### 1.10.6 其他指南  
 
-如果你的分机由13岁以下的儿童所有，如[儿童在线隐私保护法案][FTCChildrensPrivacy]中所定义;您必须在 "[合作伙伴中心][MicrosoftPartnerCenter]" 通知 Microsoft 此事实，并确保您的 "扩展" 中显示的所有广告内容适用于13岁以下的儿童。  
+如果你的分机由13岁以下的儿童所有，如 [儿童在线隐私保护法案][FTCChildrensPrivacy]中所定义;您必须在 " [合作伙伴中心][MicrosoftPartnerCenter] " 通知 Microsoft 此事实，并确保您的 "扩展" 中显示的所有广告内容适用于13岁以下的儿童。  
 
 ## 2个内容策略  
 
-以下策略适用于内容和元数据 \ （包括发布者名称、扩展名、扩展名图标、扩展说明、扩展屏幕截图、扩展尾端和尾端缩略图以及任何其他扩展元数据 \），用于在 Microsoft Edge Addons 中分发。  内容意味着在扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。  由于全球各地使用的是扩展和 Microsoft Edge Addons，因此这些要求在区域和文化规范的上下文中进行解释和应用。  
+以下策略适用于内容和元数据 \ (包括发布者名称、扩展名、扩展名图标、扩展说明、扩展屏幕截图、扩展尾端和尾部缩略图以及在 Microsoft Edge Addons 中为分发提供的任何其他扩展元数据 \ ) 。  内容意味着在扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。  由于全球各地使用的是扩展和 Microsoft Edge Addons，因此这些要求在区域和文化规范的上下文中进行解释和应用。  
 
 ### 2.1 Microsoft Edge 加载项目录列表的内容要求  
 
@@ -258,11 +258,11 @@ ms.locfileid: "10607431"
 
 #### 2.3.1 要求  
 
-您的分机不得包含任何有助于或 glamorizes 以下现实活动的内容： \ （a \）极端或免费暴力;\ （b）人工权限违规;\ （c）创建非法武器;或 \ （d）针对个人、动物或个人财产使用武器。  
+您的扩展不得包含任何可促进或 glamorizes 以下现实活动的内容： \ () 极端或免费暴力;\ (b ) 人工权限违规;\ (c \ ) 创建非法武器;或 \ (d ) 将武器用于个人、动物或个人财产。  
 
 #### 2.3.2 责任  
 
-您的分机号不得： \ （a）为最终用户或任何其他人或动物带来安全风险，也不会造成 discomfort、人身伤害或任何其他损害。或者 \ （b）承担或导致真正或个人财产的损失。  您对所有扩展安全测试、证书购买和实施任何适当的功能安全措施承担全部责任。  您不得禁用任何平台安全功能或舒适功能，并且您必须在您的分机中包括所有适用的法律要求和行业标准的警告、通知和免责声明。  
+您的分机号码不能： \ () 带来安全风险，也不会导致对最终用户或任何其他人或动物的 discomfort、人身伤害或任何其他损害;或者 \ (b \ ) 带来或导致真正或个人财产损失。  您对所有扩展安全测试、证书购买和实施任何适当的功能安全措施承担全部责任。  您不得禁用任何平台安全功能或舒适功能，并且您必须在您的分机中包括所有适用的法律要求和行业标准的警告、通知和免责声明。  
 
 ### 2.4 诽谤性、Libelous、Slanderous 和威胁  
 
@@ -312,21 +312,21 @@ ms.locfileid: "10607431"
 
 #### 2.12.1 成人内容  
 
-向[合作伙伴中心][MicrosoftPartnerCenter]提交扩展时，必须指明您的扩展是否显示应标记为 "成人" 的内容。  确定你的扩展的分级时，请考虑你的应用中的所有内容，包括用户生成的内容和广告，以及你的扩展链接的内容。  如果你指示你的扩展不包含任何 "成人" 内容，你将负责保持此评级的准确性。  无论为您的扩展提供的评分，它仍然必须遵守 Microsoft Edge Addons 开发者策略的所有内容要求  
+向 [合作伙伴中心][MicrosoftPartnerCenter]提交扩展时，必须指明您的扩展是否显示应标记为 "成人" 的内容。  确定你的扩展的分级时，请考虑你的应用中的所有内容，包括用户生成的内容和广告，以及你的扩展链接的内容。  如果你指示你的扩展不包含任何 "成人" 内容，你将负责保持此评级的准确性。  无论为您的扩展提供的评分，它仍然必须遵守 Microsoft Edge Addons 开发者策略的所有内容要求  
 
 #### 2.12.2 分级更改  
 
-如果你的扩展提供的内容 \ （如用户生成的、零售版或其他基于 web 的内容 \）可能适用于比分配的分级更高的年龄分级，则你必须要求用户选择通过使用内容筛选器或使用预先存在的帐户登录来接收此类内容。  
+如果您的扩展提供的内容为 \ (，例如用户生成、零售或其他基于 web 的内容 \ ) ，这些内容可能适合于比分配分级更高的年龄分级，则您必须要求用户选择通过使用内容筛选器或使用预先存在的帐户登录来接收此类内容。  
 
 ### 2.13 视频  
 
-如果你在列表中提交促销视频，则应遵循本政策中提及的所有内容指南。  如果你选择提供 YouTube 链接，则必须确保已针对要嵌入的特定视频禁用广告。  有关 YouTube 上启用和禁用广告的详细信息，请参阅[support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227]和[support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596]。  
+如果你在列表中提交促销视频，则应遵循本政策中提及的所有内容指南。  如果你选择提供 YouTube 链接，则必须确保已针对要嵌入的特定视频禁用广告。  有关 YouTube 上启用和禁用广告的详细信息，请参阅 [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] 和 [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596]。  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "放松默认策略-内容安全策略 \ （CSP \） |Microsoft 文档"  
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "放松默认策略-内容安全策略 \ (CSP \ ) |Microsoft 文档"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议 |Microsoft 文档"  
 [MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "Microsoft 如何识别恶意软件和可能不需要的应用程序 |Microsoft 文档"  

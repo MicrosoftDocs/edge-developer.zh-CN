@@ -1,22 +1,22 @@
 ---
-description: 适用于 Edge （Chromium）扩展的企业策略文档。
+description: 适用于 Edge (Chromium) 扩展的企业策略文档。
 title: 匹配模式
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 16f54fcdc127822e89e050c367a681d886b0c8d0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 59427769a010ca774833a809d3025e7594634202
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563378"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015658"
 ---
 # 匹配模式
 
-主机权限和内容脚本匹配基于由匹配模式定义的一组 Url。  匹配模式实质上是以允许的方案（、、、或）开头的 URL， `http` `https` `file` `ftp` 其中可以包含 " `*` " 个字符。  特殊模式 `<all_urls>` 匹配以允许的方案开头的任何 URL。  每个匹配模式都有3个部分：  
+主机权限和内容脚本匹配基于由匹配模式定义的一组 Url。  匹配模式实质上是以允许的方案开头的 URL， (`http` 、 `https` 、 `file` 或 `ftp` ，并且可以包含 " `*` " 个字符。  特殊模式 `<all_urls>` 匹配以允许的方案开头的任何 URL。  每个匹配模式都有3个部分：  
 
 *   _方案_（例如 `http` 或或） `file` `*`  
 
@@ -41,12 +41,12 @@ ms.locfileid: "10563378"
 |:--- |:--- |:--- |  
 | `http://*/*` | 匹配任何使用 http 方案的 URL | `http://www.google.com` `http://example.org/foo/bar.html` |  
 | `http://*/foo*` | 匹配任何主机上任何使用 http 方案的 URL，只要路径开头为 `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |  
-| `https://*.google.com/foo*bar` | 与任何使用 https 方案的 URL 均位于 `google.com` 主机 \ （如 `www.google.com` 、 `docs.google.com` 或 `google.com` \）上，只要路径的开头 `/foo` 和结尾为 `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
+| `https://*.google.com/foo*bar` | 匹配任何使用 https 方案的 URL，在 `google.com` 主机 \ (（如 `www.google.com` 、 `docs.google.com` 或 `google.com` \ ) ）上，只要路径的开头 `/foo` 和结尾为 `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
 | `http://example.org/foo/bar.html` | 匹配指定的 URL | `http://example.org/foo/bar.html` |  
 |`file:///foo*` | 匹配路径以下列路径开头的任何本地文件 `/foo` | `file:///foo/bar.html` `file:///foo` |  
 | `http://127.0.0.1/*` | 匹配任何使用该 `http` 方案且位于主机上的 URL `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |  
 | `*://mail.google.com/*` | 匹配以或开头的任何 `http://mail.google.com` URL `https://mail.google.com` 。 | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |  
-| `<all_urls>` | 匹配任何使用允许的方案的 URL。 \ （有关允许的方案列表，请参阅本部分的开头部分。） | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
+| `<all_urls>` | 匹配任何使用允许的方案的 URL。 \ (有关所允许方案的列表，请参阅本部分的开头。 \n )  | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
 
 下面是一些 `_invalid_` 模式匹配的示例：
 
@@ -55,17 +55,17 @@ ms.locfileid: "10563378"
 | `http://www.foo.com` | 否 `_path_` |  
 | `http://*foo/bar` | 主机中的 "" `*` 只能后跟 " `.` " 或 " `/` " |  
 | `http://foo.*.bar/baz` | 如果 " `*` " 在中 `_host_` ，则必须是第一个字符 |  
-| `http:/bar` | 缺少 `_scheme_` 分隔符 \ （' `/` ' 应为 " `//` " \ "） |  
+| `http:/bar` | 缺少 `_scheme_` 分隔符 \ ( ' `/` ' 应为 " `//` " \ )  |  
 | `foo://*` | 无效 `_scheme_` |  
 
 某些方案在所有上下文中都不受支持。
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 可在[此处](https://developer.chrome.com/extensions/match_patterns/)找到原始页面。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 可在 [此处](https://developer.chrome.com/extensions/match_patterns/)找到原始页面。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

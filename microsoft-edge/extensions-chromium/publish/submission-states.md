@@ -3,16 +3,16 @@ description: 在合作伙伴中心创建 Microsoft Edge Addons 开发者帐户�
 title: 扩展提交状态和概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 3bb648ee9db062bcb12f7592df752ab25d8322b5
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 028112f958656a705c7b52fa3a7bbfa49a1a0f79
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882644"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015729"
 ---
 # 扩展提交状态和概述  
 

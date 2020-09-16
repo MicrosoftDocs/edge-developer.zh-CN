@@ -3,32 +3,32 @@ description: 了解如何注册到开发人员帐户以将扩展发布到 Micros
 title: 注册为 Microsoft Edge 扩展开发人员以发布扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 09/15/2020
 ms.topic: conceptual
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: 边缘-chromium、扩展开发、浏览器扩展、加载项、合作伙伴中心、开发人员
-ms.openlocfilehash: 55f3520526a97ebbd8eeacf1c46f801b94599694
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: 87c5dbfdec65ae3957724ae846a06480a2488084
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898205"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015742"
 ---
 # 注册为 Microsoft Edge 扩展开发人员  
 
-若要将扩展提交到 Microsoft Edge 加载项网站，您必须在[合作伙伴中心][MicrosoftPartnerCenter]使用 Microsoft Edge 程序注册为开发人员。  向 Microsoft Edge 计划提交分机号时，无需支付注册费。  
+若要将扩展提交到 Microsoft Edge 加载项网站，您必须在 [合作伙伴中心][MicrosoftPartnerCenter]使用 Microsoft Edge 程序注册为开发人员。  向 Microsoft Edge 计划提交分机号时，无需支付注册费。  
 
 ## 开始之前  
 
-如果您没有帐户或者您有一个具有合作伙伴中心的现有商业版帐户，则必须创建一个新的[microsoft 帐户（MSA）][WindowsCommunityEverythingAboutMicrosoftAccounts] ，以便向 microsoft Edge 程序注册。  若要创建 Microsoft 帐户 \ （Outlook/live/Hotmail \），请访问[account.microsoft.com][MicrosoftAccount] ，然后选择 "**创建 microsoft 帐户**"。  如果您是使用开发人员帐户在合作伙伴中心注册的，请使用相应的 Microsoft 帐户 \ （MSA \）登录，然后注册 Microsoft Edge 程序。  
+如果您没有帐户或者您有一个具有合作伙伴中心的现有商业版帐户，则必须创建一个新的 [microsoft 帐户 (MSA) ][WindowsCommunityEverythingAboutMicrosoftAccounts] 注册 microsoft Edge 程序。  若要创建 Microsoft 帐户 \ (Outlook/live/Hotmail \ ) ，请访问 [account.microsoft.com][MicrosoftAccount] ，然后选择 " **创建 Microsoft 帐户**"。  如果您是使用开发人员帐户在合作伙伴中心注册的，请使用相应的 Microsoft 帐户 \ (MSA \ ) 登录，然后注册 Microsoft Edge 程序。  
 
 > [!NOTE]
 > 今天，Microsoft Edge 扩展团队不支持使用工作或学校帐户注册。  将来，Microsoft Edge 扩展团队计划支持将 AAD 租户链接到用于扩展管理的 MSA 帐户。  
 
 ## 在合作伙伴中心注册 Microsoft Edge 计划  
 
-1.  转到 "[开发人员" 页面][MicrosoftPartnerCenter]，然后选择 "**转到仪表板**"。  
-1.  如果尚未使用**Microsoft 帐户**登录，请立即登录，或者创建新的 microsoft 帐户。  你使用的 Microsoft 帐户与你用于登录开发人员帐户的 Microsoft 帐户相同。  登录后，将显示此注册表单。  
+1.  转到 " [开发人员" 页面][MicrosoftPartnerCenter] ，然后选择 " **转到仪表板**"。  
+1.  如果尚未使用 **Microsoft 帐户**登录，请立即登录，或者创建新的 microsoft 帐户。  你使用的 Microsoft 帐户与你用于登录开发人员帐户的 Microsoft 帐户相同。  登录后，将显示此注册表单。  
     
     若要注册 Microsoft Edge 程序，请登录您的帐户，然后填写表单。  
     <!-- -->
@@ -84,7 +84,7 @@ ms.locfileid: "10898205"
           **公司审批者**  
        :::column-end:::
        :::column span="2":::
-          对于公司帐户，您必须提供公司审批者的联系信息 \ （姓名、电子邮件地址和电话号码 \）。  Microsoft 联系人指定为验证过程的一部分的公司审批者，以确保该扩展属于您的组织。  
+          对于公司帐户，您必须提供公司审批者的联系信息 \ (姓名、电子邮件地址和电话号码 \ ) 。  Microsoft 联系人指定为验证过程的一部分的公司审批者，以确保该扩展属于您的组织。  
        :::column-end:::
     :::row-end:::  
     <!-- -->
@@ -123,18 +123,18 @@ ms.locfileid: "10898205"
         
         For company accounts, provide the contact information \(name, email address, and phone number\) of your company approver.  Microsoft contacts the company approver specified as a part of the verification process to ensure that the extensions belong to your organization.  
         -->
-1. 在提交注册表单之前，请阅读并接受[Microsoft Edge 开发人员协议][MicrosoftAppDeveloperAgreement]的条款和条件。  
-1. 若要完成注册，请选择 "**完成**"。  
+1. 在提交注册表单之前，请阅读并接受 [Microsoft Edge 开发人员协议][MicrosoftAppDeveloperAgreement]的条款和条件。  
+1. 若要完成注册，请选择 " **完成**"。  
 
 ## 后续步骤  
 
-您可以在 "合作伙伴中心" 的 "**帐户设置**" 页面上查看您的验证状态。  等待验证过程完成时，你可以继续构建、测试和准备提交。  
+您可以在 "合作伙伴中心" 的 " **帐户设置** " 页面上查看您的验证状态。  等待验证过程完成时，你可以继续构建、测试和准备提交。  
 
-有关详细信息，请参阅[发布扩展][ExtensionsChromiumPublishExtension]。  有关 "扩展" 入门的信息，请参阅[Microsoft Edge 入门（Chromium）扩展][ExtensionsChromiumGettingStartedIndex]。  
+有关详细信息，请参阅 [发布扩展][ExtensionsChromiumPublishExtension]。  有关 "扩展" 入门的信息，请参阅 [Microsoft Edge 入门 (Chromium) 扩展][ExtensionsChromiumGettingStartedIndex]。  
 
 <!-- links -->  
 
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Microsoft Edge 入门（Chromium）扩展 |Microsoft 文档"  
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Microsoft Edge 入门 (Chromium) 扩展 |Microsoft 文档"  
 [ExtensionsChromiumPublishExtension]:  ./publish-extension.md "发布扩展 |Microsoft 文档"  
 
 [MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "应用开发人员协议 |Microsoft 文档"  
@@ -143,4 +143,4 @@ ms.locfileid: "10898205"
 
 [MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"  
 
-[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Microsoft （或 MSA）"  
+[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Microsoft (或 MSA) "  

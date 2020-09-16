@@ -3,16 +3,16 @@ description: 发布 Microsoft Edge (Chromium) Microsoft Edge 加载项应用商�
 title: 发布扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 47e6a96ec2fcd3d2ad8fb3edad702abfc91ab57d
-ms.sourcegitcommit: 7e3644e6b1d568ab795168e421c013814efa0073
+ms.openlocfilehash: 4f8433e74c0fd6dab3278792b94cf3cbaac05d2c
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996213"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015749"
 ---
 # 发布扩展  
 

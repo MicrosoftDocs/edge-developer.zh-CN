@@ -3,22 +3,22 @@ description: CSS 网格调试功能，通过网络控制台编辑和重播请求
 title: DevTools (Microsoft Edge 85) 中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 96ad9a4f21c36135013033fa4de31281fe6c4e83
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993609"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015459"
 ---
 # DevTools (Microsoft Edge 85) 中的新增功能  
 
 ## 来自 Microsoft Edge 开发人员工具团队公告  
 
-以下部分是您可能已错过的 Microsoft Edge DevTools 团队的公告列表。  请参阅公告以尝试 DevTools 中的新功能，与代码扩展，等等。  若要随时了解开发人员工具中的所有最新功能和最新功能，请下载 [Microsoft edge 预览频道][MicrosoftEdgePreviewChannels] 并 [关注 Twitter 上的 microsoft edge DevTools 团队][EdgeDevToolsTwitterAccount]。  
+以下部分是您可能已错过的 Microsoft Edge DevTools 团队的公告列表。  请参阅公告以尝试 DevTools、Visual Studio 代码扩展等中的新功能。  若要随时了解开发人员工具中的所有最新功能和最新功能，请下载 [Microsoft edge 预览频道][MicrosoftEdgePreviewChannels] 并 [关注 Twitter 上的 microsoft edge DevTools 团队][EdgeDevToolsTwitterAccount]。  
 
 ### CSS 网格调试功能  
 
@@ -245,8 +245,8 @@ Chromium 问题 [#1071432][CR1071432]
 
 在 " [源" 面板编辑器][DevtoolsSourcesEditCssJavascript]中执行 "无选择时复制" 或 "剪切" 时，DevTools 将复制或剪切当前内容行。  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="将光标放在第5行的末尾，从 DevTools 中的 pen.js 复制整行，并在 VS 代码中粘贴" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   将光标放在第5行的末尾，将 DevTools 中的整 **pen.js** 行复制到 "" 和 "在 [VS 代码][VSCode]中粘贴"。
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="将光标放在第5行的末尾，将 DevTools 中的整 pen.js 行复制到 Visual Studio 代码中的 "" 和 "粘贴" 中。" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   将光标放在第5行的末尾，将 DevTools 中的整 **pen.js** 行复制到 [Visual Studio 代码][VSCode]中的 "" 和 "粘贴" 中。
 :::image-end:::  
 
 Chromium 问题 [#800028][CR800028]
@@ -260,7 +260,7 @@ Chromium 问题 [#800028][CR800028]
 例如，以前，DevTools `hello` 即使未选中 " **组相似** "，也不会对邮件取消分组。  现在， `hello` 邮件已取消分组。  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中 "组相似" 时，将取消分组 hello 邮件" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   取消选中 " **组相似** " 时， `hello` 邮件将取消组合。
+   取消选中 " **组相似** " 时， `hello` 邮件将取消分组
 :::image-end:::  
 
 使用 [将重复消息发送到控制台的示例，][CodepenZoherghadyaliZyrjgdJ]为此功能提供一次尝试。  
@@ -303,7 +303,7 @@ Chromium 问题 [#974550][CR974550]
 
 ### 用于断点、条件断点和 logpoints 的新图标  
 
-" **源** " 面板具有新的断点、条件断点和 logpoints 设计。  断点通过红色圆圈表示，就像 [与代码][VSCode] 和 [Visual Studio][VS]一样。  添加图标以区分条件断点和 logpoints。  
+" **源** " 面板具有新的断点、条件断点和 logpoints 设计。  断点通过红色圆圈表示，就像 [Visual Studio 代码][VSCode] 和 [visual studio][VS]一样。  添加图标以区分条件断点和 logpoints。  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点" lightbox="../../media/2020/06/breakpoints.msft.png":::
    断点  

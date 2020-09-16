@@ -3,16 +3,16 @@ description: 通过 Microsoft Edge DevTools 动画检查器检查和修改动画
 title: 检查动画
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a74a401edf5331f2dd3c1bf574110241f616d9f6
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992825"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015770"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10992825"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 检查动画   
-
-
+# 检查动画  
 
 通过 Microsoft Edge DevTools 动画检查器检查和修改动画。  
 
@@ -48,7 +42,7 @@ ms.locfileid: "10992825"
 *   通过减速、重放每个动画或查看源代码来检查动画。  
 *   通过更改计时、延迟、持续时间或关键帧偏移来修改动画。  
 
-## 概述   
+## 概述  
 
 Microsoft Edge DevTools 动画检查器有两个主要用途。  
 
@@ -85,8 +79,8 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 动画检查器分为四个主要部分，即 " (" 或 "窗格 \ ) "。  本指南按如下方式引用每个窗格：  
 
-| | 窗格 | 描述 |  
-| --- |:--- |:--- |  
+| 索引 | 窗格 | 描述 |  
+|:--- |:--- |:--- |  
 | raid-1 | **控件** | 你可以从此处清除当前捕获的所有动画组，或更改当前所选动画组的速度。 |  
 | ppls-2 | **概述** | 在此处选择一个动画组以在 " **详细信息** " 窗格中检查和修改它。 |  
 | 三维空间 | **时间线** | 在此处暂停和启动动画，或跳转到动画中的特定点。 |  
@@ -104,7 +98,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## 检查动画   
+## 检查动画  
 
 捕获动画后，有几种方法可以重播它：  
 
@@ -138,7 +132,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
    颜色编码的动画  
 :::image-end:::  
 
-## 修改动画   
+## 修改动画  
 
 你可以通过三种方式使用动画检查器修改动画。  
 
@@ -170,11 +164,9 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
    修改后的延迟  
 :::image-end:::  
 
-<!--  
-  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

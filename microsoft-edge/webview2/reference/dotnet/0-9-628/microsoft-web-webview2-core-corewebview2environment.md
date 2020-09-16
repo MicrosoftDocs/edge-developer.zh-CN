@@ -3,17 +3,17 @@ description: '通过 Microsoft Edge WebView2 控件在本机应用程序中嵌�
 title: CoreWebView2Environment 中的 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、Core、WebView2、web 视图、新、wpf、winforms、app、edge、CoreWebView2、CoreWebView2Controller、浏览器控件、边缘 html、、浏览器控件、边缘 html、WebView2
-ms.openlocfilehash: c6b1f1c62da5aa5ef64693575abb9cb46ac13851
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 05b8a10c723ae57b2c95551f4d5043f3336eba3b
+ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11011704"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016324"
 ---
 # CoreWebView2Environment 类的 WebView2 
 
@@ -28,15 +28,16 @@ ms.locfileid: "11011704"
 --------------------------------|---------------------------------------------
 [BrowserVersionString](#browserversionstring) | 当前 CoreWebView2Environment 的浏览器版本信息，包括频道名称（如果不是稳定频道）。
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | 当已安装较新版本的 Edge 浏览器并可通过 WebView2 使用时，将触发 NewBrowserVersionAvailable。
+[CompareBrowserVersions](#comparebrowserversions) | 比较浏览器版本以确定它们是否匹配或不同。
+[CreateAsync](#createasync) | 使用已安装的 Microsoft Edge 版本创建长绿 WebView2 环境。
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | 异步创建用于可视化托管的新 Web 视图。
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | 异步创建新的 Web 视图。
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | 创建一个空 CoreWebView2PointerInfo。
 [CreateWebResourceResponse](#createwebresourceresponse) | 创建新的 web 资源响应对象。
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | 获取浏览器版本信息。
 [GetProviderForHwnd](#getproviderforhwnd) | 返回与给定 HWND 对应的 CoreWebView2CompositionController 的 UI 自动化提供程序。
 
 在使用环境参数指定的浏览器进程中运行的环境中创建的 WebViews，应在同一环境中使用。 在不同的环境中使用它不保证兼容，并且可能会失败。 
-
-在使用环境参数指定的浏览器进程中运行的环境中创建的 WebViews，应在同一环境中使用。 在不同的环境中使用它不保证兼容，并且可能会失败。
 
 ## 成员
 
@@ -57,6 +58,34 @@ ms.locfileid: "11011704"
 若要使用较新版本的浏览器，必须创建新的环境和 Web 视图。 将仅针对从其运行代码的同一边缘通道中的新版本引发此事件。 当不运行安装的边缘时，将不会触发任何事件。
 
 由于用户数据文件夹一次只能由一个浏览器进程使用，如果要在 WebViews 中使用新版本的浏览器使用同一用户数据文件夹，则必须先关闭使用早期版本的浏览器的环境和 WebViews。 或者只提示用户重新启动应用。
+
+#### CompareBrowserVersions 
+
+比较浏览器版本以确定它们是否匹配或不同。
+
+> 公共静态 int [CompareBrowserVersions](#comparebrowserversions) (string version1，string version2) 
+
+返回-1、0或1，具体取决于第一个版本是否小于、等于或大于要比较的第二个版本。
+
+输入可以直接使用从 GetAvailableCoreWebView2BrowserVersionString 获取的 versionInfo，信道信息将被忽略。
+
+##### 参数
+* `version1` 要比较的第一个版本。 
+
+* `version2` 要比较的第二个版本。
+
+#### CreateAsync 
+
+使用已安装的 Microsoft Edge 版本创建长绿 WebView2 环境。
+
+> 公共静态异步任务< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync) (string browserExecutableFolder、string userDataFolder、CoreWebView2EnvironmentOptions 选项) 
+
+##### 参数
+* `browserExecutableFolder` 包含 WebView2 运行时的固定版本的文件夹的相对路径。 
+
+* `userDataFolder` 可以指定 userDataFolder 以更改 WebView2 的默认用户数据文件夹位置。 
+
+* `options` 用于创建 WebView2 环境的选项。
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
@@ -100,6 +129,17 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 
 标头是由换行符分隔的原始响应标题字符串。 也可以使用空的标头字符串创建此对象，然后使用 CoreWebView2HttpResponseHeaders 来逐行构造标题。 有关其他参数的信息，请参阅 CoreWebView2WebResourceResponse。
 
+#### GetAvailableBrowserVersionString 
+
+获取浏览器版本信息。
+
+> 公共静态字符串 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) (字符串 browserExecutableFolder) 
+
+如果信道不是稳定通道，也可以获取信道名称。 如果使用 WebView2 运行时，则不会返回任何信道名称。
+
+##### 参数
+* `browserExecutableFolder` 包含 WebView2 运行时的固定版本的文件夹的相对路径。
+
 #### GetProviderForHwnd 
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
@@ -107,4 +147,3 @@ parentWindow 是应在其中显示 Web 视图和接收输入的 HWND。 在创�
 返回与给定 HWND 对应的 CoreWebView2CompositionController 的 UI 自动化提供程序。
 
 > 公共对象 [GetProviderForHwnd](#getproviderforhwnd) (IntPtr hwnd) 
-

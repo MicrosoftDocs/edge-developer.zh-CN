@@ -3,20 +3,20 @@ description: Chrome 文档的原始消息区别
 title: 本机消息传递
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/31/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 0fe45ea681c54ddea7b27a8d954022b8bda45770
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 811468e5f92319107c60606bc9268a9f7a25e560
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10563380"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015674"
 ---
 # 本机消息传递  
 
-Microsoft Edge 现在允许从 Microsoft Edge Addons 目录 \ （Microsoft Edge Addons \）安装扩展，以使用消息传递 Api 与本机应用程序交换消息。  若要启用该功能，需要在实现本机应用程序的本机消息传递主机时确保执行以下操作。  
+Microsoft Edge 现在允许从 Microsoft Edge Addons 目录 \ (Microsoft Edge Addons \ ) 中安装使用消息传递 Api 与本机应用程序交换消息的扩展。  若要启用该功能，需要在实现本机应用程序的本机消息传递主机时确保执行以下操作。  
 
 <!--
  > [!NOTE]
@@ -76,10 +76,10 @@ Microsoft Edge 现在允许从 Microsoft Edge Addons 目录 \ （Microsoft Edge 
 
 在 macOS 上，系统范围内的本机消息主机在固定位置查找，而用户级的本机消息主机在用户配置文件目录中的子目录中查找 `NativeMessagingHosts` 。  
 
-MacOS \ （系统范围 \）上的 Microsoft Edge：  
+MacOS 上的 Microsoft Edge (系统范围 \ ) ：  
 `/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`  
 
-MacOS \ 上的 Microsoft Edge \ （特定于用户的默认路径 \）：  
+MacOS \ 的 Microsoft Edge (特定于用户的默认路径 \ ) ：  
 `~/Library/Application Support/Microsoft Edge <ChannelName>/ NativeMessagingHosts/com.my_company.my_application.json`  
 
 `<ChannelName>` 可以是 "" "" 设备 "、" 开发 "或" Beta "。 对于稳定通道，仅 `Microsoft Edge` 应使用， `<ChannelName`>"不是必需的。
@@ -89,11 +89,11 @@ MacOS \ 上的 Microsoft Edge \ （特定于用户的默认路径 \）：
 <!-- links -->  
 
 > [!NOTE]
-> 此页面的某些部分是基于[由 Google][GoogleSitePolicies]创建和共享的工作的修改，并根据 "[创造性 Commons 归属4.0 国际许可证][CCA4IL]" 中所述的条款使用。  
-> 可在[此处](https://developer.chrome.com/extensions/nativeMessaging)找到原始页面。  
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
+> 可在 [此处](https://developer.chrome.com/extensions/nativeMessaging)找到原始页面。  
 
-[![创造性 Commons 许可证][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
