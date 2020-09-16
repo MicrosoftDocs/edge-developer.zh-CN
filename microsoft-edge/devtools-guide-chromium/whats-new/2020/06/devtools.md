@@ -3,319 +3,319 @@ description: CSS 网格调试功能，通过网络控制台编辑和重播请求
 title: DevTools (Microsoft Edge 85) 中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 96ad9a4f21c36135013033fa4de31281fe6c4e83
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993609"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015459"
 ---
-# <span data-ttu-id="fde89-104">DevTools (Microsoft Edge 85) 中的新增功能</span><span class="sxs-lookup"><span data-stu-id="fde89-104">What's New In DevTools (Microsoft Edge 85)</span></span>  
+# <span data-ttu-id="dda00-104">DevTools (Microsoft Edge 85) 中的新增功能</span><span class="sxs-lookup"><span data-stu-id="dda00-104">What's New In DevTools (Microsoft Edge 85)</span></span>  
 
-## <span data-ttu-id="fde89-105">来自 Microsoft Edge 开发人员工具团队公告</span><span class="sxs-lookup"><span data-stu-id="fde89-105">Announcements from the Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="dda00-105">来自 Microsoft Edge 开发人员工具团队公告</span><span class="sxs-lookup"><span data-stu-id="dda00-105">Announcements from the Microsoft Edge DevTools team</span></span>  
 
-<span data-ttu-id="fde89-106">以下部分是您可能已错过的 Microsoft Edge DevTools 团队的公告列表。</span><span class="sxs-lookup"><span data-stu-id="fde89-106">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="fde89-107">请参阅公告以尝试 DevTools 中的新功能，与代码扩展，等等。</span><span class="sxs-lookup"><span data-stu-id="fde89-107">See the announcements to try new features in the DevTools, VS Code extensions, and more.</span></span>  <span data-ttu-id="fde89-108">若要随时了解开发人员工具中的所有最新功能和最新功能，请下载 [Microsoft edge 预览频道][MicrosoftEdgePreviewChannels] 并 [关注 Twitter 上的 microsoft edge DevTools 团队][EdgeDevToolsTwitterAccount]。</span><span class="sxs-lookup"><span data-stu-id="fde89-108">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
+<span data-ttu-id="dda00-106">以下部分是您可能已错过的 Microsoft Edge DevTools 团队的公告列表。</span><span class="sxs-lookup"><span data-stu-id="dda00-106">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="dda00-107">请参阅公告以尝试 DevTools、Visual Studio 代码扩展等中的新功能。</span><span class="sxs-lookup"><span data-stu-id="dda00-107">See the announcements to try new features in the DevTools, Visual Studio Code extensions, and more.</span></span>  <span data-ttu-id="dda00-108">若要随时了解开发人员工具中的所有最新功能和最新功能，请下载 [Microsoft edge 预览频道][MicrosoftEdgePreviewChannels] 并 [关注 Twitter 上的 microsoft edge DevTools 团队][EdgeDevToolsTwitterAccount]。</span><span class="sxs-lookup"><span data-stu-id="dda00-108">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
 
-### <span data-ttu-id="fde89-109">CSS 网格调试功能</span><span class="sxs-lookup"><span data-stu-id="fde89-109">CSS grid debugging features</span></span>  
+### <span data-ttu-id="dda00-109">CSS 网格调试功能</span><span class="sxs-lookup"><span data-stu-id="dda00-109">CSS grid debugging features</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   <span data-ttu-id="fde89-111">实验性功能</span><span class="sxs-lookup"><span data-stu-id="fde89-111">Experimental feature</span></span>  
+   <span data-ttu-id="dda00-111">实验性功能</span><span class="sxs-lookup"><span data-stu-id="dda00-111">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-112">Microsoft Edge DevTools 团队正与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。</span><span class="sxs-lookup"><span data-stu-id="fde89-112">The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.</span></span>  <span data-ttu-id="fde89-113">现在，你可以将网格线编号、网格间距和扩展网格线显示为页面覆盖。</span><span class="sxs-lookup"><span data-stu-id="fde89-113">You are now able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.</span></span>  <span data-ttu-id="fde89-114">此外，即将推出对网格工具的更多改进。</span><span class="sxs-lookup"><span data-stu-id="fde89-114">Plus, more improvements to the grid tools are coming soon.</span></span>  
+<span data-ttu-id="dda00-112">Microsoft Edge DevTools 团队正与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。</span><span class="sxs-lookup"><span data-stu-id="dda00-112">The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.</span></span>  <span data-ttu-id="dda00-113">现在，你可以将网格线编号、网格间距和扩展网格线显示为页面覆盖。</span><span class="sxs-lookup"><span data-stu-id="dda00-113">You are now able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.</span></span>  <span data-ttu-id="dda00-114">此外，即将推出对网格工具的更多改进。</span><span class="sxs-lookup"><span data-stu-id="dda00-114">Plus, more improvements to the grid tools are coming soon.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-   <span data-ttu-id="fde89-116">CSS 网格调试功能</span><span class="sxs-lookup"><span data-stu-id="fde89-116">CSS grid debugging features</span></span>
+   <span data-ttu-id="dda00-116">CSS 网格调试功能</span><span class="sxs-lookup"><span data-stu-id="dda00-116">CSS grid debugging features</span></span>
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="fde89-117">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] ，然后选中 " **启用新 CSS 网格调试功能**" 旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="fde89-117">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.</span></span>  
+> <span data-ttu-id="dda00-117">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] ，然后选中 " **启用新 CSS 网格调试功能**" 旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="dda00-117">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.</span></span>  
 > 
-> <span data-ttu-id="fde89-118">若要试用有关示例的实验，请参阅 [CSS 网格 planner 示例][CodepenRachelweilYzwBzKM]。</span><span class="sxs-lookup"><span data-stu-id="fde89-118">To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].</span></span>  
+> <span data-ttu-id="dda00-118">若要试用有关示例的实验，请参阅 [CSS 网格 planner 示例][CodepenRachelweilYzwBzKM]。</span><span class="sxs-lookup"><span data-stu-id="dda00-118">To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].</span></span>  
 
-<span data-ttu-id="fde89-119">Chromium 问题 [#1047356][CR1047356]</span><span class="sxs-lookup"><span data-stu-id="fde89-119">Chromium issue [#1047356][CR1047356]</span></span>  
+<span data-ttu-id="dda00-119">Chromium 问题 [#1047356][CR1047356]</span><span class="sxs-lookup"><span data-stu-id="dda00-119">Chromium issue [#1047356][CR1047356]</span></span>  
 
-### <span data-ttu-id="fde89-120">通过网络控制台编辑和重播请求</span><span class="sxs-lookup"><span data-stu-id="fde89-120">Edit and Replay requests with the Network Console</span></span>  
+### <span data-ttu-id="dda00-120">通过网络控制台编辑和重播请求</span><span class="sxs-lookup"><span data-stu-id="dda00-120">Edit and Replay requests with the Network Console</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   <span data-ttu-id="fde89-122">实验性功能</span><span class="sxs-lookup"><span data-stu-id="fde89-122">Experimental feature</span></span>  
+   <span data-ttu-id="dda00-122">实验性功能</span><span class="sxs-lookup"><span data-stu-id="dda00-122">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-123">现在，你可以使用**网络控制台**在[网络日志][DevtoolsNetworkIndexLogActivity]中使用 "**编辑和重播**" 请求。</span><span class="sxs-lookup"><span data-stu-id="fde89-123">You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.</span></span>  
+<span data-ttu-id="dda00-123">现在，你可以使用**网络控制台**在[网络日志][DevtoolsNetworkIndexLogActivity]中使用 "**编辑和重播**" 请求。</span><span class="sxs-lookup"><span data-stu-id="dda00-123">You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="使用网络控制台编辑和重播 NetworkLog 中的请求" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
-   <span data-ttu-id="fde89-125">使用**网络控制台**编辑和重播[NetworkLog][DevtoolsNetworkIndexLogActivity]中的请求</span><span class="sxs-lookup"><span data-stu-id="fde89-125">Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**</span></span>  
+   <span data-ttu-id="dda00-125">使用**网络控制台**编辑和重播[NetworkLog][DevtoolsNetworkIndexLogActivity]中的请求</span><span class="sxs-lookup"><span data-stu-id="dda00-125">Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-126">新的面板， **网络控制台** 将在 [DevTools 抽屉][DevtoolsCustomizeIndexDrawer] 中打开，并自动填充 HTTP 请求的信息。</span><span class="sxs-lookup"><span data-stu-id="fde89-126">A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.</span></span>  <span data-ttu-id="fde89-127">若要查看从服务器返回的响应，请在需要时编辑请求 \ (\ ) 然后选择 " **发送**"。</span><span class="sxs-lookup"><span data-stu-id="fde89-127">To see the response returned from the server, edit the request \(if needed\) and select **Send**.</span></span>  
+<span data-ttu-id="dda00-126">新的面板， **网络控制台** 将在 [DevTools 抽屉][DevtoolsCustomizeIndexDrawer] 中打开，并自动填充 HTTP 请求的信息。</span><span class="sxs-lookup"><span data-stu-id="dda00-126">A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.</span></span>  <span data-ttu-id="dda00-127">若要查看从服务器返回的响应，请在需要时编辑请求 \ (\ ) 然后选择 " **发送**"。</span><span class="sxs-lookup"><span data-stu-id="dda00-127">To see the response returned from the server, edit the request \(if needed\) and select **Send**.</span></span>  
 
-<span data-ttu-id="fde89-128">您也可以使用 **网络控制台** 直接从 DevTools 创建和发送 HTTP 请求。</span><span class="sxs-lookup"><span data-stu-id="fde89-128">You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.</span></span>  
+<span data-ttu-id="dda00-128">您也可以使用 **网络控制台** 直接从 DevTools 创建和发送 HTTP 请求。</span><span class="sxs-lookup"><span data-stu-id="dda00-128">You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="网络控制台面板" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   <span data-ttu-id="fde89-130">**网络控制台**面板</span><span class="sxs-lookup"><span data-stu-id="fde89-130">The **Network Console** panel</span></span>  
+   <span data-ttu-id="dda00-130">**网络控制台**面板</span><span class="sxs-lookup"><span data-stu-id="dda00-130">The **Network Console** panel</span></span>  
 :::image-end:::  
 
 > [!TIP]
-> <span data-ttu-id="fde89-131">若要在主 \ (top \ ) 面板而不是[DevTools 抽屉][DevtoolsCustomizeIndexDrawer]中查看**网络控制台**，请参阅[在面板之间移动工具](#move-tools-between-panels)。</span><span class="sxs-lookup"><span data-stu-id="fde89-131">To see **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], see [moving tools between panels](#move-tools-between-panels).</span></span>  
+> <span data-ttu-id="dda00-131">若要在主 \ (top \ ) 面板而不是[DevTools 抽屉][DevtoolsCustomizeIndexDrawer]中查看**网络控制台**，请参阅[在面板之间移动工具](#move-tools-between-panels)。</span><span class="sxs-lookup"><span data-stu-id="dda00-131">To see **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], see [moving tools between panels](#move-tools-between-panels).</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="fde89-132">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] 和选择 **启用网络控制台**旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="fde89-132">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.</span></span>  
+> <span data-ttu-id="dda00-132">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] 和选择 **启用网络控制台**旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="dda00-132">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.</span></span>  
 > 
-> <span data-ttu-id="fde89-133">打开 [网络日志][DevtoolsNetworkIndexLogActivity]，打开上下文菜单 \ (右键单击 \ ) ，然后选择 " **编辑并重播**"。</span><span class="sxs-lookup"><span data-stu-id="fde89-133">Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.</span></span>  
+> <span data-ttu-id="dda00-133">打开 [网络日志][DevtoolsNetworkIndexLogActivity]，打开上下文菜单 \ (右键单击 \ ) ，然后选择 " **编辑并重播**"。</span><span class="sxs-lookup"><span data-stu-id="dda00-133">Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.</span></span>  
 
-<span data-ttu-id="fde89-134">Chromium 问题 [#1093687][CR1093687]</span><span class="sxs-lookup"><span data-stu-id="fde89-134">Chromium issue [#1093687][CR1093687]</span></span>  
+<span data-ttu-id="dda00-134">Chromium 问题 [#1093687][CR1093687]</span><span class="sxs-lookup"><span data-stu-id="dda00-134">Chromium issue [#1093687][CR1093687]</span></span>  
 
-### <span data-ttu-id="fde89-135">"计时" 选项卡中的服务工作人员 respondWith 事件</span><span class="sxs-lookup"><span data-stu-id="fde89-135">Service worker respondWith events in the Timing tab</span></span>  
+### <span data-ttu-id="dda00-135">"计时" 选项卡中的服务工作人员 respondWith 事件</span><span class="sxs-lookup"><span data-stu-id="dda00-135">Service worker respondWith events in the Timing tab</span></span>  
 
-<span data-ttu-id="fde89-136">"**网络**" 面板的 "**计时**" 选项卡现在包括 `respondWith` 服务辅助事件。</span><span class="sxs-lookup"><span data-stu-id="fde89-136">The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.</span></span>  <span data-ttu-id="fde89-137">`respondWith`服务工作者事件显示在 `fetch` `respondWith` `fetch` 结算处理程序承诺的时间开始运行服务辅助事件处理程序之前的时间段内的持续时间。</span><span class="sxs-lookup"><span data-stu-id="fde89-137">The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.</span></span>  
+<span data-ttu-id="dda00-136">"**网络**" 面板的 "**计时**" 选项卡现在包括 `respondWith` 服务辅助事件。</span><span class="sxs-lookup"><span data-stu-id="dda00-136">The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.</span></span>  <span data-ttu-id="dda00-137">`respondWith`服务工作者事件显示在 `fetch` `respondWith` `fetch` 结算处理程序承诺的时间开始运行服务辅助事件处理程序之前的时间段内的持续时间。</span><span class="sxs-lookup"><span data-stu-id="dda00-137">The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text=""网络" 面板的 "计时" 选项卡中的 respondWith 服务辅助事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   <span data-ttu-id="fde89-139">" `respondWith` **网络**" 面板的 "**计时**" 选项卡中的服务工作人员事件</span><span class="sxs-lookup"><span data-stu-id="fde89-139">The `respondWith` service worker event in the **Timing** tab of the **Network** panel</span></span>  
+   <span data-ttu-id="dda00-139">" `respondWith` **网络**" 面板的 "**计时**" 选项卡中的服务工作人员事件</span><span class="sxs-lookup"><span data-stu-id="dda00-139">The `respondWith` service worker event in the **Timing** tab of the **Network** panel</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-140">展开 " **已收到答复** "，以查看来自 `fetch` 、和的响应的其他信息 `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` 。</span><span class="sxs-lookup"><span data-stu-id="fde89-140">Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.</span></span>  
+<span data-ttu-id="dda00-140">展开 " **已收到答复** "，以查看来自 `fetch` 、和的响应的其他信息 `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` 。</span><span class="sxs-lookup"><span data-stu-id="dda00-140">Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="展开 "已收到答复"，以查看来自提取响应的其他信息" lightbox="../../media/2020/06/timing-tab2.msft.png":::
-   <span data-ttu-id="fde89-142">展开 "**已收到答复**" 以查看来自响应的其他信息 `fetch`</span><span class="sxs-lookup"><span data-stu-id="fde89-142">Expand **Response received** to see additional information from the `fetch` response</span></span>  
+   <span data-ttu-id="dda00-142">展开 "**已收到答复**" 以查看来自响应的其他信息 `fetch`</span><span class="sxs-lookup"><span data-stu-id="dda00-142">Expand **Response received** to see additional information from the `fetch` response</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-143">Chromium 问题 [#1066579][CR1066579]</span><span class="sxs-lookup"><span data-stu-id="fde89-143">Chromium issue [#1066579][CR1066579]</span></span>  
+<span data-ttu-id="dda00-143">Chromium 问题 [#1066579][CR1066579]</span><span class="sxs-lookup"><span data-stu-id="dda00-143">Chromium issue [#1066579][CR1066579]</span></span>  
 
-### <span data-ttu-id="fde89-144">"问题" 面板中的 webhint 反馈</span><span class="sxs-lookup"><span data-stu-id="fde89-144">webhint feedback in the Issues panel</span></span>  
+### <span data-ttu-id="dda00-144">"问题" 面板中的 webhint 反馈</span><span class="sxs-lookup"><span data-stu-id="dda00-144">webhint feedback in the Issues panel</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   <span data-ttu-id="fde89-146">实验性功能</span><span class="sxs-lookup"><span data-stu-id="fde89-146">Experimental feature</span></span>  
+   <span data-ttu-id="dda00-146">实验性功能</span><span class="sxs-lookup"><span data-stu-id="dda00-146">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-147">[webhint][WebhintMain] 是一种开放源工具，可提供有关网站的辅助功能、跨浏览器兼容性、安全性、性能、PWAs 和其他常见 web 开发问题的实时反馈。</span><span class="sxs-lookup"><span data-stu-id="fde89-147">[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.</span></span>  <span data-ttu-id="fde89-148">现在，你可以在 " [问题][DevtoolsIssues] " 面板中看到 webhint 反馈。</span><span class="sxs-lookup"><span data-stu-id="fde89-148">You are now able to see webhint feedback in the [Issues][DevtoolsIssues] panel.</span></span>  
+<span data-ttu-id="dda00-147">[webhint][WebhintMain] 是一种开放源工具，可提供有关网站的辅助功能、跨浏览器兼容性、安全性、性能、PWAs 和其他常见 web 开发问题的实时反馈。</span><span class="sxs-lookup"><span data-stu-id="dda00-147">[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.</span></span>  <span data-ttu-id="dda00-148">现在，你可以在 " [问题][DevtoolsIssues] " 面板中看到 webhint 反馈。</span><span class="sxs-lookup"><span data-stu-id="dda00-148">You are now able to see webhint feedback in the [Issues][DevtoolsIssues] panel.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text=""问题" 面板中的 webhint 反馈" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
-   <span data-ttu-id="fde89-150">"问题" 面板中的 webhint 反馈</span><span class="sxs-lookup"><span data-stu-id="fde89-150">webhint feedback in the Issues panel</span></span>  
+   <span data-ttu-id="dda00-150">"问题" 面板中的 webhint 反馈</span><span class="sxs-lookup"><span data-stu-id="dda00-150">webhint feedback in the Issues panel</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="fde89-151">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] 和选择 **启用 webhint**旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="fde89-151">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.</span></span>  
+> <span data-ttu-id="dda00-151">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] 和选择 **启用 webhint**旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="dda00-151">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.</span></span>  
 > 
-> <span data-ttu-id="fde89-152">打开 " [问题][DevtoolsIssues] " 面板，查看来自 webhint 的反馈。</span><span class="sxs-lookup"><span data-stu-id="fde89-152">Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.</span></span>  
+> <span data-ttu-id="dda00-152">打开 " [问题][DevtoolsIssues] " 面板，查看来自 webhint 的反馈。</span><span class="sxs-lookup"><span data-stu-id="dda00-152">Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.</span></span>  
 
-<span data-ttu-id="fde89-153">Chromium 问题 [#1070378][CR1070378]</span><span class="sxs-lookup"><span data-stu-id="fde89-153">Chromium issue [#1070378][CR1070378]</span></span>  
+<span data-ttu-id="dda00-153">Chromium 问题 [#1070378][CR1070378]</span><span class="sxs-lookup"><span data-stu-id="dda00-153">Chromium issue [#1070378][CR1070378]</span></span>  
 
-### <span data-ttu-id="fde89-154">在面板之间移动工具</span><span class="sxs-lookup"><span data-stu-id="fde89-154">Move tools between panels</span></span>  
+### <span data-ttu-id="dda00-154">在面板之间移动工具</span><span class="sxs-lookup"><span data-stu-id="dda00-154">Move tools between panels</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   <span data-ttu-id="fde89-156">实验性功能</span><span class="sxs-lookup"><span data-stu-id="fde89-156">Experimental feature</span></span>  
+   <span data-ttu-id="dda00-156">实验性功能</span><span class="sxs-lookup"><span data-stu-id="dda00-156">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-157">通常， **元素** 和 **网络** 之类的工具可能仅在 DevTools 的 main \ (top \ ) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="fde89-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="fde89-158">同样， **3D 视图** 和 **问题** 之类的工具可能仅在 DevTools 的 "抽屉" (底部 \ ) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="fde89-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="fde89-159">现在，你可以通过在顶部面板和底部面板之间移动工具来自定义 DevTools 布局。</span><span class="sxs-lookup"><span data-stu-id="fde89-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
+<span data-ttu-id="dda00-157">通常， **元素** 和 **网络** 之类的工具可能仅在 DevTools 的 main \ (top \ ) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="dda00-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="dda00-158">同样， **3D 视图** 和 **问题** 之类的工具可能仅在 DevTools 的 "抽屉" (底部 \ ) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="dda00-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="dda00-159">现在，你可以通过在顶部面板和底部面板之间移动工具来自定义 DevTools 布局。</span><span class="sxs-lookup"><span data-stu-id="dda00-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动选项卡" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   <span data-ttu-id="fde89-161">在面板之间移动选项卡</span><span class="sxs-lookup"><span data-stu-id="fde89-161">Moving tabs between panels</span></span>  
+   <span data-ttu-id="dda00-161">在面板之间移动选项卡</span><span class="sxs-lookup"><span data-stu-id="dda00-161">Moving tabs between panels</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="fde89-162">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] ，然后选中 " **启用支持" 以在面板之间移动选项卡**旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="fde89-162">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.</span></span>  
+> <span data-ttu-id="dda00-162">若要启用实验，请参阅启用 [实验功能][DevtoolsExperimentalFeaturesTurnOn] ，然后选中 " **启用支持" 以在面板之间移动选项卡**旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="dda00-162">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.</span></span>  
 
-<span data-ttu-id="fde89-163">Chromium 问题 [#897944][CR897944]</span><span class="sxs-lookup"><span data-stu-id="fde89-163">Chromium issue [#897944][CR897944]</span></span>  
+<span data-ttu-id="dda00-163">Chromium 问题 [#897944][CR897944]</span><span class="sxs-lookup"><span data-stu-id="dda00-163">Chromium issue [#897944][CR897944]</span></span>  
 
-### <span data-ttu-id="fde89-164">改进了 "网络" 面板中的发起程序工具提示</span><span class="sxs-lookup"><span data-stu-id="fde89-164">Improved Initiator tooltip in the Network panel</span></span>  
+### <span data-ttu-id="dda00-164">改进了 "网络" 面板中的发起程序工具提示</span><span class="sxs-lookup"><span data-stu-id="dda00-164">Improved Initiator tooltip in the Network panel</span></span>  
 
-<span data-ttu-id="fde89-165">在 Microsoft Edge 83 和84中，"发起人" 列的工具提示，其中显示了在使用水平滚动条显示的 [网络日志][DevtoolsNetworkIndexLogActivity] 中的资源请求原因。</span><span class="sxs-lookup"><span data-stu-id="fde89-165">In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.</span></span>  <span data-ttu-id="fde89-166">你只能通过在工具提示中水平滚动来查看启动请求的调用堆栈。</span><span class="sxs-lookup"><span data-stu-id="fde89-166">You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.</span></span>  
+<span data-ttu-id="dda00-165">在 Microsoft Edge 83 和84中，"发起人" 列的工具提示，其中显示了在使用水平滚动条显示的 [网络日志][DevtoolsNetworkIndexLogActivity] 中的资源请求原因。</span><span class="sxs-lookup"><span data-stu-id="dda00-165">In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.</span></span>  <span data-ttu-id="dda00-166">你只能通过在工具提示中水平滚动来查看启动请求的调用堆栈。</span><span class="sxs-lookup"><span data-stu-id="dda00-166">You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Microsoft Edge 84 中的发起程序工具提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
-   <span data-ttu-id="fde89-168">Microsoft Edge 84 中的发起程序工具提示</span><span class="sxs-lookup"><span data-stu-id="fde89-168">The Initiator tooltip in Microsoft Edge 84</span></span>  
+   <span data-ttu-id="dda00-168">Microsoft Edge 84 中的发起程序工具提示</span><span class="sxs-lookup"><span data-stu-id="dda00-168">The Initiator tooltip in Microsoft Edge 84</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-169">从 Microsoft Edge 85 开始，您现在可以在工具提示中看到启动器调用堆栈，而无需水平滚动。</span><span class="sxs-lookup"><span data-stu-id="fde89-169">Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.</span></span>  
+<span data-ttu-id="dda00-169">从 Microsoft Edge 85 开始，您现在可以在工具提示中看到启动器调用堆栈，而无需水平滚动。</span><span class="sxs-lookup"><span data-stu-id="dda00-169">Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Microsoft Edge 85 中的发起程序工具提示" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
-   <span data-ttu-id="fde89-171">Microsoft Edge 85 中的发起程序工具提示</span><span class="sxs-lookup"><span data-stu-id="fde89-171">The Initiator tooltip in Microsoft Edge 85</span></span>
+   <span data-ttu-id="dda00-171">Microsoft Edge 85 中的发起程序工具提示</span><span class="sxs-lookup"><span data-stu-id="dda00-171">The Initiator tooltip in Microsoft Edge 85</span></span>
 :::image-end:::  
 
-<span data-ttu-id="fde89-172">Chromium 问题 [#1069404][CR1069404]</span><span class="sxs-lookup"><span data-stu-id="fde89-172">Chromium issue [#1069404][CR1069404]</span></span>  
+<span data-ttu-id="dda00-172">Chromium 问题 [#1069404][CR1069404]</span><span class="sxs-lookup"><span data-stu-id="dda00-172">Chromium issue [#1069404][CR1069404]</span></span>  
 
-## <span data-ttu-id="fde89-173">来自 Chromium 项目的公告</span><span class="sxs-lookup"><span data-stu-id="fde89-173">Announcements from the Chromium project</span></span>  
+## <span data-ttu-id="dda00-173">来自 Chromium 项目的公告</span><span class="sxs-lookup"><span data-stu-id="dda00-173">Announcements from the Chromium project</span></span>  
 
-<span data-ttu-id="fde89-174">以下各节宣布了在 Microsoft Edge 85 中提供的其他功能，这些功能由开放的源 Chromium 项目所参与。</span><span class="sxs-lookup"><span data-stu-id="fde89-174">The following sections announce additional features available in Microsoft Edge 85 that were contributed to the open source Chromium project.</span></span>  
+<span data-ttu-id="dda00-174">以下各节宣布了在 Microsoft Edge 85 中提供的其他功能，这些功能由开放的源 Chromium 项目所参与。</span><span class="sxs-lookup"><span data-stu-id="dda00-174">The following sections announce additional features available in Microsoft Edge 85 that were contributed to the open source Chromium project.</span></span>  
 
-### <span data-ttu-id="fde89-175">对 .JS 中的 CSS 框架进行样式编辑</span><span class="sxs-lookup"><span data-stu-id="fde89-175">Style editing for CSS-in-JS frameworks</span></span>  
+### <span data-ttu-id="dda00-175">对 .JS 中的 CSS 框架进行样式编辑</span><span class="sxs-lookup"><span data-stu-id="dda00-175">Style editing for CSS-in-JS frameworks</span></span>  
 
-<span data-ttu-id="fde89-176">现在，" **样式** " 窗格对通过 CSS 对象模型创建的样式有更好的支持 [ (CSSOM) ][CsswgDraftsCssom] api。</span><span class="sxs-lookup"><span data-stu-id="fde89-176">The **Styles** pane now has better support for editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.</span></span>  <span data-ttu-id="fde89-177">许多 CSS 中的 CSS 框架和库使用 CSSOM Api 来构建样式。</span><span class="sxs-lookup"><span data-stu-id="fde89-177">Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.</span></span>  
+<span data-ttu-id="dda00-176">现在，" **样式** " 窗格对通过 CSS 对象模型创建的样式有更好的支持 [ (CSSOM) ][CsswgDraftsCssom] api。</span><span class="sxs-lookup"><span data-stu-id="dda00-176">The **Styles** pane now has better support for editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.</span></span>  <span data-ttu-id="dda00-177">许多 CSS 中的 CSS 框架和库使用 CSSOM Api 来构建样式。</span><span class="sxs-lookup"><span data-stu-id="dda00-177">Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.</span></span>  
 
-<span data-ttu-id="fde89-178">现在，你可以使用 [Constructable 样式表][WicgConstructStylesheet]编辑在 JavaScript 中添加的样式。</span><span class="sxs-lookup"><span data-stu-id="fde89-178">You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].</span></span>  <span data-ttu-id="fde89-179">Constructable 样式表是在使用 [影子 DOM][MdnShadowDom]时创建和分发可重用样式的新方法。</span><span class="sxs-lookup"><span data-stu-id="fde89-179">Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].</span></span>  
+<span data-ttu-id="dda00-178">现在，你可以使用 [Constructable 样式表][WicgConstructStylesheet]编辑在 JavaScript 中添加的样式。</span><span class="sxs-lookup"><span data-stu-id="dda00-178">You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].</span></span>  <span data-ttu-id="dda00-179">Constructable 样式表是在使用 [影子 DOM][MdnShadowDom]时创建和分发可重用样式的新方法。</span><span class="sxs-lookup"><span data-stu-id="dda00-179">Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].</span></span>  
 
-<span data-ttu-id="fde89-180">例如， `h1` `CSSStyleSheet` 以前无法编辑用 \ (CSSOM api \ ) 添加的样式。</span><span class="sxs-lookup"><span data-stu-id="fde89-180">For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.</span></span>  <span data-ttu-id="fde89-181">样式现在可在 " **样式** " 窗格中编辑。</span><span class="sxs-lookup"><span data-stu-id="fde89-181">The styles are editable now in the **Styles** pane.</span></span>  
+<span data-ttu-id="dda00-180">例如， `h1` `CSSStyleSheet` 以前无法编辑用 \ (CSSOM api \ ) 添加的样式。</span><span class="sxs-lookup"><span data-stu-id="dda00-180">For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.</span></span>  <span data-ttu-id="dda00-181">样式现在可在 " **样式** " 窗格中编辑。</span><span class="sxs-lookup"><span data-stu-id="dda00-181">The styles are editable now in the **Styles** pane.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="将 CSSStyleSheet 中添加的 h1 样式的背景属性从粉红色更改为 lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
-   <span data-ttu-id="fde89-183">`background` `h1` 将添加的样式的属性更改 `CSSStyleSheet` `pink` 为 `lightblue` 。</span><span class="sxs-lookup"><span data-stu-id="fde89-183">Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.</span></span>
+   <span data-ttu-id="dda00-183">`background` `h1` 将添加的样式的属性更改 `CSSStyleSheet` `pink` 为 `lightblue` 。</span><span class="sxs-lookup"><span data-stu-id="dda00-183">Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.</span></span>
 :::image-end:::  
 
-<span data-ttu-id="fde89-184">为此功能提供一个 [使用在 .js 中使用 CSS 的示例][CodepenZoherghadyaliAbdgrpz]。</span><span class="sxs-lookup"><span data-stu-id="fde89-184">Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].</span></span>
+<span data-ttu-id="dda00-184">为此功能提供一个 [使用在 .js 中使用 CSS 的示例][CodepenZoherghadyaliAbdgrpz]。</span><span class="sxs-lookup"><span data-stu-id="dda00-184">Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].</span></span>
 
-<span data-ttu-id="fde89-185">Chromium 问题 [#946975][CR946975]</span><span class="sxs-lookup"><span data-stu-id="fde89-185">Chromium issue [#946975][CR946975]</span></span>  
+<span data-ttu-id="dda00-185">Chromium 问题 [#946975][CR946975]</span><span class="sxs-lookup"><span data-stu-id="dda00-185">Chromium issue [#946975][CR946975]</span></span>  
 
-### <span data-ttu-id="fde89-186">Lighthouse 面板中的 Lighthouse 6</span><span class="sxs-lookup"><span data-stu-id="fde89-186">Lighthouse 6 in the Lighthouse panel</span></span>  
+### <span data-ttu-id="dda00-186">Lighthouse 面板中的 Lighthouse 6</span><span class="sxs-lookup"><span data-stu-id="dda00-186">Lighthouse 6 in the Lighthouse panel</span></span>  
 
-<span data-ttu-id="fde89-187">**Lighthouse**面板现在正在运行 Lighthouse 6。</span><span class="sxs-lookup"><span data-stu-id="fde89-187">The **Lighthouse** panel is now running Lighthouse 6.</span></span>  <span data-ttu-id="fde89-188">有关所有更改的完整列表，请参阅 [v 6.0.0 发行说明][GithubGoogleChromeLighthouse600]。</span><span class="sxs-lookup"><span data-stu-id="fde89-188">For a full list of all changes, see [v6.0.0 release notes][GithubGoogleChromeLighthouse600].</span></span>  
+<span data-ttu-id="dda00-187">**Lighthouse**面板现在正在运行 Lighthouse 6。</span><span class="sxs-lookup"><span data-stu-id="dda00-187">The **Lighthouse** panel is now running Lighthouse 6.</span></span>  <span data-ttu-id="dda00-188">有关所有更改的完整列表，请参阅 [v 6.0.0 发行说明][GithubGoogleChromeLighthouse600]。</span><span class="sxs-lookup"><span data-stu-id="dda00-188">For a full list of all changes, see [v6.0.0 release notes][GithubGoogleChromeLighthouse600].</span></span>  
 
-<span data-ttu-id="fde89-189">Lighthouse 6.0 介绍报表的三个新指标：最大的 Contentful 油漆 \ (LCP \ ) ，累积布局 Shift \ (CLS \ ) 和总阻塞时间 \ (TBT \ ) 。</span><span class="sxs-lookup"><span data-stu-id="fde89-189">Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).</span></span>  
+<span data-ttu-id="dda00-189">Lighthouse 6.0 介绍报表的三个新指标：最大的 Contentful 油漆 \ (LCP \ ) ，累积布局 Shift \ (CLS \ ) 和总阻塞时间 \ (TBT \ ) 。</span><span class="sxs-lookup"><span data-stu-id="dda00-189">Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).</span></span>  
 
-<span data-ttu-id="fde89-190">性能分数公式也已 reweighted，以更好地反映用户的加载体验。</span><span class="sxs-lookup"><span data-stu-id="fde89-190">The performance score formula has also been reweighted to better reflect the loading experience of the user.</span></span>  
+<span data-ttu-id="dda00-190">性能分数公式也已 reweighted，以更好地反映用户的加载体验。</span><span class="sxs-lookup"><span data-stu-id="dda00-190">The performance score formula has also been reweighted to better reflect the loading experience of the user.</span></span>  
 
-<span data-ttu-id="fde89-191">Chromium 问题 [#772558][CR772558]</span><span class="sxs-lookup"><span data-stu-id="fde89-191">Chromium issue [#772558][CR772558]</span></span>  
+<span data-ttu-id="dda00-191">Chromium 问题 [#772558][CR772558]</span><span class="sxs-lookup"><span data-stu-id="dda00-191">Chromium issue [#772558][CR772558]</span></span>  
 
-#### <span data-ttu-id="fde89-192">第一个有意义的画图弃用</span><span class="sxs-lookup"><span data-stu-id="fde89-192">First Meaningful Paint deprecation</span></span>  
+#### <span data-ttu-id="dda00-192">第一个有意义的画图弃用</span><span class="sxs-lookup"><span data-stu-id="dda00-192">First Meaningful Paint deprecation</span></span>  
 
-<span data-ttu-id="fde89-193">第一个有意义的油漆 \ (Lighthouse 6.0 中已弃用 FMP \ ) 。</span><span class="sxs-lookup"><span data-stu-id="fde89-193">First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.</span></span>  <span data-ttu-id="fde89-194">FMP 也已从 " **性能** " 面板中删除。</span><span class="sxs-lookup"><span data-stu-id="fde89-194">FMP has also been removed from the **Performance** panel.</span></span>  <span data-ttu-id="fde89-195">**最大 Contentful 画图** 是推荐的 FMP 替换。</span><span class="sxs-lookup"><span data-stu-id="fde89-195">**Largest Contentful Paint** is the recommended replacement for FMP.</span></span>  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
+<span data-ttu-id="dda00-193">第一个有意义的油漆 \ (Lighthouse 6.0 中已弃用 FMP \ ) 。</span><span class="sxs-lookup"><span data-stu-id="dda00-193">First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.</span></span>  <span data-ttu-id="dda00-194">FMP 也已从 " **性能** " 面板中删除。</span><span class="sxs-lookup"><span data-stu-id="dda00-194">FMP has also been removed from the **Performance** panel.</span></span>  <span data-ttu-id="dda00-195">**最大 Contentful 画图** 是推荐的 FMP 替换。</span><span class="sxs-lookup"><span data-stu-id="dda00-195">**Largest Contentful Paint** is the recommended replacement for FMP.</span></span>  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
 
-<span data-ttu-id="fde89-196">Chromium 问题 [#1096008][CR1096008]</span><span class="sxs-lookup"><span data-stu-id="fde89-196">Chromium issue [#1096008][CR1096008]</span></span>  
+<span data-ttu-id="dda00-196">Chromium 问题 [#1096008][CR1096008]</span><span class="sxs-lookup"><span data-stu-id="dda00-196">Chromium issue [#1096008][CR1096008]</span></span>  
 
-### <span data-ttu-id="fde89-197">对新的 JavaScript 功能的支持</span><span class="sxs-lookup"><span data-stu-id="fde89-197">Support for new JavaScript features</span></span>  
+### <span data-ttu-id="dda00-197">对新的 JavaScript 功能的支持</span><span class="sxs-lookup"><span data-stu-id="dda00-197">Support for new JavaScript features</span></span>  
 
-<span data-ttu-id="fde89-198">DevTools 现在对某些最新的 JavaScript 语言功能提供了更好的支持。</span><span class="sxs-lookup"><span data-stu-id="fde89-198">DevTools now has better support for some of the latest JavaScript language features.</span></span>  
+<span data-ttu-id="dda00-198">DevTools 现在对某些最新的 JavaScript 语言功能提供了更好的支持。</span><span class="sxs-lookup"><span data-stu-id="dda00-198">DevTools now has better support for some of the latest JavaScript language features.</span></span>  
 
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="fde89-199">[可选的链接][V8DevOptionalChaining] 语法自动完成</span><span class="sxs-lookup"><span data-stu-id="fde89-199">[Optional chaining][V8DevOptionalChaining] syntax autocompletion</span></span>  
+      <span data-ttu-id="dda00-199">[可选的链接][V8DevOptionalChaining] 语法自动完成</span><span class="sxs-lookup"><span data-stu-id="dda00-199">[Optional chaining][V8DevOptionalChaining] syntax autocompletion</span></span>  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="fde89-200">现在， **控制台** 中的属性自动完成支持可选的链接语法，例如，  `name?.` 除了 `name.` 和 `name[` 。</span><span class="sxs-lookup"><span data-stu-id="fde89-200">Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.</span></span>  
+      <span data-ttu-id="dda00-200">现在， **控制台** 中的属性自动完成支持可选的链接语法，例如，  `name?.` 除了 `name.` 和 `name[` 。</span><span class="sxs-lookup"><span data-stu-id="dda00-200">Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="fde89-201">[私有字段][V8DevClassFieldsPrivate]的语法突出显示</span><span class="sxs-lookup"><span data-stu-id="fde89-201">Syntax highlighting for [private fields][V8DevClassFieldsPrivate]</span></span>  
+      <span data-ttu-id="dda00-201">[私有字段][V8DevClassFieldsPrivate]的语法突出显示</span><span class="sxs-lookup"><span data-stu-id="dda00-201">Syntax highlighting for [private fields][V8DevClassFieldsPrivate]</span></span>  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="fde89-202">在 " **源** " 面板中，"专用类" 字段现已正确语法突出显示和打印。</span><span class="sxs-lookup"><span data-stu-id="fde89-202">private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.</span></span>  
+      <span data-ttu-id="dda00-202">在 " **源** " 面板中，"专用类" 字段现已正确语法突出显示和打印。</span><span class="sxs-lookup"><span data-stu-id="dda00-202">private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="fde89-203">[Nullish 合并运算符][V8DevNullishCoalescing]的语法突出显示</span><span class="sxs-lookup"><span data-stu-id="fde89-203">Syntax highlighting for [Nullish coalescing operator][V8DevNullishCoalescing]</span></span>
+      <span data-ttu-id="dda00-203">[Nullish 合并运算符][V8DevNullishCoalescing]的语法突出显示</span><span class="sxs-lookup"><span data-stu-id="dda00-203">Syntax highlighting for [Nullish coalescing operator][V8DevNullishCoalescing]</span></span>
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="fde89-204">DevTools 现已正确打印 " **源** " 面板中的 nullish 合并运算符。</span><span class="sxs-lookup"><span data-stu-id="fde89-204">DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.</span></span>  
+      <span data-ttu-id="dda00-204">DevTools 现已正确打印 " **源** " 面板中的 nullish 合并运算符。</span><span class="sxs-lookup"><span data-stu-id="dda00-204">DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="fde89-205">Chromium 问题 [#1073903][CR1073903]、 [#1083214][CR1083214] [#1083797][CR1083797]</span><span class="sxs-lookup"><span data-stu-id="fde89-205">Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]</span></span>  
+<span data-ttu-id="dda00-205">Chromium 问题 [#1073903][CR1073903]、 [#1083214][CR1083214] [#1083797][CR1083797]</span><span class="sxs-lookup"><span data-stu-id="dda00-205">Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]</span></span>  
 
-### <span data-ttu-id="fde89-206">清单窗格中的新应用程序快捷方式警告</span><span class="sxs-lookup"><span data-stu-id="fde89-206">New app shortcut warnings in the Manifest pane</span></span>  
+### <span data-ttu-id="dda00-206">清单窗格中的新应用程序快捷方式警告</span><span class="sxs-lookup"><span data-stu-id="dda00-206">New app shortcut warnings in the Manifest pane</span></span>  
 
-<span data-ttu-id="fde89-207">**应用快捷方式** 可帮助用户在 web 应用中快速启动常见或建议的任务。</span><span class="sxs-lookup"><span data-stu-id="fde89-207">**App shortcuts** help users quickly start common or recommended tasks within a web app.</span></span>  
+<span data-ttu-id="dda00-207">**应用快捷方式** 可帮助用户在 web 应用中快速启动常见或建议的任务。</span><span class="sxs-lookup"><span data-stu-id="dda00-207">**App shortcuts** help users quickly start common or recommended tasks within a web app.</span></span>  
 
 <!--todo: add App shortcuts when section is live  -->  
 
-<span data-ttu-id="fde89-208">**清单**窗格现在显示以下条件的警告。</span><span class="sxs-lookup"><span data-stu-id="fde89-208">The **Manifest** pane now shows warnings for the following conditions.</span></span>  
+<span data-ttu-id="dda00-208">**清单**窗格现在显示以下条件的警告。</span><span class="sxs-lookup"><span data-stu-id="dda00-208">The **Manifest** pane now shows warnings for the following conditions.</span></span>  
 
-* <span data-ttu-id="fde89-209">应用快捷方式图标小于96x96 像素</span><span class="sxs-lookup"><span data-stu-id="fde89-209">The app shortcut icons are smaller than 96x96 pixels</span></span>  
-* <span data-ttu-id="fde89-210">应用快捷方式图标和清单图标不是方形 \ (，因为图标被忽略 \ ) </span><span class="sxs-lookup"><span data-stu-id="fde89-210">The app shortcut icons and manifest icons are not square \(since the icons are ignored\)</span></span>  
+* <span data-ttu-id="dda00-209">应用快捷方式图标小于96x96 像素</span><span class="sxs-lookup"><span data-stu-id="dda00-209">The app shortcut icons are smaller than 96x96 pixels</span></span>  
+* <span data-ttu-id="dda00-210">应用快捷方式图标和清单图标不是方形 \ (，因为图标被忽略 \ ) </span><span class="sxs-lookup"><span data-stu-id="dda00-210">The app shortcut icons and manifest icons are not square \(since the icons are ignored\)</span></span>  
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
-   <span data-ttu-id="fde89-212">应用快捷方式警告</span><span class="sxs-lookup"><span data-stu-id="fde89-212">App shortcut warnings</span></span>  
+   <span data-ttu-id="dda00-212">应用快捷方式警告</span><span class="sxs-lookup"><span data-stu-id="dda00-212">App shortcut warnings</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-213">Chromium 问题 [#955497][CR955497]</span><span class="sxs-lookup"><span data-stu-id="fde89-213">Chromium issue [#955497][CR955497]</span></span>  
+<span data-ttu-id="dda00-213">Chromium 问题 [#955497][CR955497]</span><span class="sxs-lookup"><span data-stu-id="dda00-213">Chromium issue [#955497][CR955497]</span></span>  
 
-### <span data-ttu-id="fde89-214">显示计算窗格的一致显示</span><span class="sxs-lookup"><span data-stu-id="fde89-214">Consistent display of the Computed pane</span></span>  
+### <span data-ttu-id="dda00-214">显示计算窗格的一致显示</span><span class="sxs-lookup"><span data-stu-id="dda00-214">Consistent display of the Computed pane</span></span>  
 
-<span data-ttu-id="fde89-215">"**元素**" 面板中的**计算**窗格现在在所有视区大小中都以窗格的形式一致显示。</span><span class="sxs-lookup"><span data-stu-id="fde89-215">The **Computed** pane in the **Elements** panel now displays consistently as a pane across all viewport sizes.</span></span>  <span data-ttu-id="fde89-216">以前，当 DevTools 视口的宽度很窄时，将在 "**样式**" 窗格内合并**计算**窗格。</span><span class="sxs-lookup"><span data-stu-id="fde89-216">Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.</span></span>  
+<span data-ttu-id="dda00-215">"**元素**" 面板中的**计算**窗格现在在所有视区大小中都以窗格的形式一致显示。</span><span class="sxs-lookup"><span data-stu-id="dda00-215">The **Computed** pane in the **Elements** panel now displays consistently as a pane across all viewport sizes.</span></span>  <span data-ttu-id="dda00-216">以前，当 DevTools 视口的宽度很窄时，将在 "**样式**" 窗格内合并**计算**窗格。</span><span class="sxs-lookup"><span data-stu-id="dda00-216">Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="即使 DevTools 较窄，计算窗格也会始终显示为单独的窗格" lightbox="../../media/2020/06/computed-pane.msft.png":::
-   <span data-ttu-id="fde89-218">即使 DevTools 较窄， **计算** 窗格也会始终显示为单独的窗格。</span><span class="sxs-lookup"><span data-stu-id="fde89-218">The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.</span></span>
+   <span data-ttu-id="dda00-218">即使 DevTools 较窄， **计算** 窗格也会始终显示为单独的窗格。</span><span class="sxs-lookup"><span data-stu-id="dda00-218">The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.</span></span>
 :::image-end:::  
 
-<span data-ttu-id="fde89-219">Chromium 问题 [#1073899][CR1073899]</span><span class="sxs-lookup"><span data-stu-id="fde89-219">Chromium issue [#1073899][CR1073899]</span></span>  
+<span data-ttu-id="dda00-219">Chromium 问题 [#1073899][CR1073899]</span><span class="sxs-lookup"><span data-stu-id="dda00-219">Chromium issue [#1073899][CR1073899]</span></span>  
 
-### <span data-ttu-id="fde89-220">WebAssembly 文件的字节码偏移量</span><span class="sxs-lookup"><span data-stu-id="fde89-220">Bytecode offsets for WebAssembly files</span></span>  
+### <span data-ttu-id="dda00-220">WebAssembly 文件的字节码偏移量</span><span class="sxs-lookup"><span data-stu-id="dda00-220">Bytecode offsets for WebAssembly files</span></span>  
 
-<span data-ttu-id="fde89-221">DevTools 现在使用字节码偏移来显示 Wasm 反汇编的行号。</span><span class="sxs-lookup"><span data-stu-id="fde89-221">DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.</span></span>  
-<span data-ttu-id="fde89-222">行号使你查看二进制数据更加清晰，并且更符合 Wasm 运行时引用位置的方式。</span><span class="sxs-lookup"><span data-stu-id="fde89-222">The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.</span></span>  
+<span data-ttu-id="dda00-221">DevTools 现在使用字节码偏移来显示 Wasm 反汇编的行号。</span><span class="sxs-lookup"><span data-stu-id="dda00-221">DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.</span></span>  
+<span data-ttu-id="dda00-222">行号使你查看二进制数据更加清晰，并且更符合 Wasm 运行时引用位置的方式。</span><span class="sxs-lookup"><span data-stu-id="dda00-222">The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.</span></span>  
 
-<span data-ttu-id="fde89-223">Chromium 问题 [#1071432][CR1071432]</span><span class="sxs-lookup"><span data-stu-id="fde89-223">Chromium issue [#1071432][CR1071432]</span></span>  
+<span data-ttu-id="dda00-223">Chromium 问题 [#1071432][CR1071432]</span><span class="sxs-lookup"><span data-stu-id="dda00-223">Chromium issue [#1071432][CR1071432]</span></span>  
 
-### <span data-ttu-id="fde89-224">"源" 面板中的行式复制和剪切</span><span class="sxs-lookup"><span data-stu-id="fde89-224">Line-wise copy and cut in Sources Panel</span></span>  
+### <span data-ttu-id="dda00-224">"源" 面板中的行式复制和剪切</span><span class="sxs-lookup"><span data-stu-id="dda00-224">Line-wise copy and cut in Sources Panel</span></span>  
 
-<span data-ttu-id="fde89-225">在 " [源" 面板编辑器][DevtoolsSourcesEditCssJavascript]中执行 "无选择时复制" 或 "剪切" 时，DevTools 将复制或剪切当前内容行。</span><span class="sxs-lookup"><span data-stu-id="fde89-225">When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.</span></span>  
+<span data-ttu-id="dda00-225">在 " [源" 面板编辑器][DevtoolsSourcesEditCssJavascript]中执行 "无选择时复制" 或 "剪切" 时，DevTools 将复制或剪切当前内容行。</span><span class="sxs-lookup"><span data-stu-id="dda00-225">When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="将光标放在第5行的末尾，从 DevTools 中的 pen.js 复制整行，并在 VS 代码中粘贴" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   <span data-ttu-id="fde89-227">将光标放在第5行的末尾，将 DevTools 中的整 **pen.js** 行复制到 "" 和 "在 [VS 代码][VSCode]中粘贴"。</span><span class="sxs-lookup"><span data-stu-id="fde89-227">With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [VS Code][VSCode].</span></span>
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="将光标放在第5行的末尾，将 DevTools 中的整 pen.js 行复制到 Visual Studio 代码中的 "" 和 "粘贴" 中。" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   <span data-ttu-id="dda00-227">将光标放在第5行的末尾，将 DevTools 中的整 **pen.js** 行复制到 [Visual Studio 代码][VSCode]中的 "" 和 "粘贴" 中。</span><span class="sxs-lookup"><span data-stu-id="dda00-227">With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VSCode].</span></span>
 :::image-end:::  
 
-<span data-ttu-id="fde89-228">Chromium 问题 [#800028][CR800028]</span><span class="sxs-lookup"><span data-stu-id="fde89-228">Chromium issue [#800028][CR800028]</span></span>
+<span data-ttu-id="dda00-228">Chromium 问题 [#800028][CR800028]</span><span class="sxs-lookup"><span data-stu-id="dda00-228">Chromium issue [#800028][CR800028]</span></span>
 
-### <span data-ttu-id="fde89-229">控制台设置更新</span><span class="sxs-lookup"><span data-stu-id="fde89-229">Console Settings updates</span></span>  
+### <span data-ttu-id="dda00-229">控制台设置更新</span><span class="sxs-lookup"><span data-stu-id="dda00-229">Console Settings updates</span></span>  
 
-#### <span data-ttu-id="fde89-230">取消组合相同的控制台消息</span><span class="sxs-lookup"><span data-stu-id="fde89-230">Ungroup same console messages</span></span>  
+#### <span data-ttu-id="dda00-230">取消组合相同的控制台消息</span><span class="sxs-lookup"><span data-stu-id="dda00-230">Ungroup same console messages</span></span>  
 
-<span data-ttu-id="fde89-231">在控制台设置中， **组类似** 的切换现在适用于重复邮件。</span><span class="sxs-lookup"><span data-stu-id="fde89-231">The **Group similar** toggle in Console Settings now applies to duplicate messages.</span></span>  <span data-ttu-id="fde89-232">以前它刚刚应用到类似的消息。</span><span class="sxs-lookup"><span data-stu-id="fde89-232">Previously it just applied to similar messages.</span></span>  
+<span data-ttu-id="dda00-231">在控制台设置中， **组类似** 的切换现在适用于重复邮件。</span><span class="sxs-lookup"><span data-stu-id="dda00-231">The **Group similar** toggle in Console Settings now applies to duplicate messages.</span></span>  <span data-ttu-id="dda00-232">以前它刚刚应用到类似的消息。</span><span class="sxs-lookup"><span data-stu-id="dda00-232">Previously it just applied to similar messages.</span></span>  
 
-<span data-ttu-id="fde89-233">例如，以前，DevTools `hello` 即使未选中 " **组相似** "，也不会对邮件取消分组。</span><span class="sxs-lookup"><span data-stu-id="fde89-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="fde89-234">现在， `hello` 邮件已取消分组。</span><span class="sxs-lookup"><span data-stu-id="fde89-234">Now, the `hello` messages are ungrouped.</span></span>  
+<span data-ttu-id="dda00-233">例如，以前，DevTools `hello` 即使未选中 " **组相似** "，也不会对邮件取消分组。</span><span class="sxs-lookup"><span data-stu-id="dda00-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="dda00-234">现在， `hello` 邮件已取消分组。</span><span class="sxs-lookup"><span data-stu-id="dda00-234">Now, the `hello` messages are ungrouped.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中 "组相似" 时，将取消分组 hello 邮件" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   <span data-ttu-id="fde89-236">取消选中 " **组相似** " 时， `hello` 邮件将取消组合。</span><span class="sxs-lookup"><span data-stu-id="fde89-236">When **Group similar** is unchecked, the `hello` messages are ungrouped.</span></span>
+   <span data-ttu-id="dda00-236">取消选中 " **组相似** " 时， `hello` 邮件将取消分组</span><span class="sxs-lookup"><span data-stu-id="dda00-236">When **Group similar** is unchecked, the `hello` messages are ungrouped</span></span>
 :::image-end:::  
 
-<span data-ttu-id="fde89-237">使用 [将重复消息发送到控制台的示例，][CodepenZoherghadyaliZyrjgdJ]为此功能提供一次尝试。</span><span class="sxs-lookup"><span data-stu-id="fde89-237">Give this feature a try with a [sample that sends duplicate messages to the Console][CodepenZoherghadyaliZyrjgdJ].</span></span>  
+<span data-ttu-id="dda00-237">使用 [将重复消息发送到控制台的示例，][CodepenZoherghadyaliZyrjgdJ]为此功能提供一次尝试。</span><span class="sxs-lookup"><span data-stu-id="dda00-237">Give this feature a try with a [sample that sends duplicate messages to the Console][CodepenZoherghadyaliZyrjgdJ].</span></span>  
 
-<span data-ttu-id="fde89-238">Chromium 问题 [#1082963][CR1082963]</span><span class="sxs-lookup"><span data-stu-id="fde89-238">Chromium issue [#1082963][CR1082963]</span></span>  
+<span data-ttu-id="dda00-238">Chromium 问题 [#1082963][CR1082963]</span><span class="sxs-lookup"><span data-stu-id="dda00-238">Chromium issue [#1082963][CR1082963]</span></span>  
 
-### <span data-ttu-id="fde89-239">保留所选仅限上下文设置</span><span class="sxs-lookup"><span data-stu-id="fde89-239">Persisting Selected context only settings</span></span>  
+### <span data-ttu-id="dda00-239">保留所选仅限上下文设置</span><span class="sxs-lookup"><span data-stu-id="dda00-239">Persisting Selected context only settings</span></span>  
 
-<span data-ttu-id="fde89-240">" **仅** 在控制台设置中选择的上下文" 设置现在保持。</span><span class="sxs-lookup"><span data-stu-id="fde89-240">The **Selected context only** settings in Console Settings is now persisted.</span></span>  <span data-ttu-id="fde89-241">以前，每次您关闭并重新打开 DevTools 时，设置都将重置。</span><span class="sxs-lookup"><span data-stu-id="fde89-241">Previously the settings were reset every time you closed and reopened DevTools.</span></span>  <span data-ttu-id="fde89-242">该更改使设置行为与其他控制台设置选项一致。</span><span class="sxs-lookup"><span data-stu-id="fde89-242">The change makes the setting behavior consistent with other Console Settings options.</span></span>  
+<span data-ttu-id="dda00-240">" **仅** 在控制台设置中选择的上下文" 设置现在保持。</span><span class="sxs-lookup"><span data-stu-id="dda00-240">The **Selected context only** settings in Console Settings is now persisted.</span></span>  <span data-ttu-id="dda00-241">以前，每次您关闭并重新打开 DevTools 时，设置都将重置。</span><span class="sxs-lookup"><span data-stu-id="dda00-241">Previously the settings were reset every time you closed and reopened DevTools.</span></span>  <span data-ttu-id="dda00-242">该更改使设置行为与其他控制台设置选项一致。</span><span class="sxs-lookup"><span data-stu-id="dda00-242">The change makes the setting behavior consistent with other Console Settings options.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="仅限所选上下文设置" lightbox="../../media/2020/06/selected-context.msft.png":::
-   <span data-ttu-id="fde89-244">**仅限所选上下文** 设置</span><span class="sxs-lookup"><span data-stu-id="fde89-244">**Selected context only** setting</span></span>  
+   <span data-ttu-id="dda00-244">**仅限所选上下文** 设置</span><span class="sxs-lookup"><span data-stu-id="dda00-244">**Selected context only** setting</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-245">Chromium 问题 [#1055875][CR1055875]</span><span class="sxs-lookup"><span data-stu-id="fde89-245">Chromium issue [#1055875][CR1055875]</span></span>  
+<span data-ttu-id="dda00-245">Chromium 问题 [#1055875][CR1055875]</span><span class="sxs-lookup"><span data-stu-id="dda00-245">Chromium issue [#1055875][CR1055875]</span></span>  
 
-### <span data-ttu-id="fde89-246">性能面板更新</span><span class="sxs-lookup"><span data-stu-id="fde89-246">Performance panel updates</span></span>  
+### <span data-ttu-id="dda00-246">性能面板更新</span><span class="sxs-lookup"><span data-stu-id="dda00-246">Performance panel updates</span></span>  
 
-#### <span data-ttu-id="fde89-247">性能面板中的 JavaScript 编译缓存信息</span><span class="sxs-lookup"><span data-stu-id="fde89-247">JavaScript compilation cache information in Performance panel</span></span>  
+#### <span data-ttu-id="dda00-247">性能面板中的 JavaScript 编译缓存信息</span><span class="sxs-lookup"><span data-stu-id="dda00-247">JavaScript compilation cache information in Performance panel</span></span>  
 
-<span data-ttu-id="fde89-248">[JavaScript 编译缓存信息][V8DevCodeCaching] 现在始终显示在 "性能" 面板的 "摘要" 选项卡中。</span><span class="sxs-lookup"><span data-stu-id="fde89-248">[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the Summary tab of the Performance panel.</span></span>  <span data-ttu-id="fde89-249">以前，如果代码缓存未发生，DevTools 不会显示与代码缓存相关的任何内容。</span><span class="sxs-lookup"><span data-stu-id="fde89-249">Previously, DevTools did not show anything related to code caching if code caching did not happen.</span></span>  
+<span data-ttu-id="dda00-248">[JavaScript 编译缓存信息][V8DevCodeCaching] 现在始终显示在 "性能" 面板的 "摘要" 选项卡中。</span><span class="sxs-lookup"><span data-stu-id="dda00-248">[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the Summary tab of the Performance panel.</span></span>  <span data-ttu-id="dda00-249">以前，如果代码缓存未发生，DevTools 不会显示与代码缓存相关的任何内容。</span><span class="sxs-lookup"><span data-stu-id="dda00-249">Previously, DevTools did not show anything related to code caching if code caching did not happen.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="JavaScript 编译缓存信息" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
-   <span data-ttu-id="fde89-251">JavaScript 编译缓存信息</span><span class="sxs-lookup"><span data-stu-id="fde89-251">JavaScript compilation cache information</span></span>  
+   <span data-ttu-id="dda00-251">JavaScript 编译缓存信息</span><span class="sxs-lookup"><span data-stu-id="dda00-251">JavaScript compilation cache information</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-252">Chromium 问题 [#912581][CR912581]</span><span class="sxs-lookup"><span data-stu-id="fde89-252">Chromium issue [#912581][CR912581]</span></span>  
+<span data-ttu-id="dda00-252">Chromium 问题 [#912581][CR912581]</span><span class="sxs-lookup"><span data-stu-id="dda00-252">Chromium issue [#912581][CR912581]</span></span>  
 
-#### <span data-ttu-id="fde89-253">"性能" 面板中的导航计时对齐方式</span><span class="sxs-lookup"><span data-stu-id="fde89-253">Navigation timing alignment in the Performance panel</span></span>  
+#### <span data-ttu-id="dda00-253">"性能" 面板中的导航计时对齐方式</span><span class="sxs-lookup"><span data-stu-id="dda00-253">Navigation timing alignment in the Performance panel</span></span>  
 
-<span data-ttu-id="fde89-254">" **性能** " 面板，用于根据录制开始时在标尺中显示时间。</span><span class="sxs-lookup"><span data-stu-id="fde89-254">The **Performance** panel used to show times in the rulers based on when the recording started.</span></span>  <span data-ttu-id="fde89-255">对于用户导航的录制，计时现在已更改，其中 DevTools 现在显示相对于导航的标尺时间。</span><span class="sxs-lookup"><span data-stu-id="fde89-255">The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.</span></span>  
+<span data-ttu-id="dda00-254">" **性能** " 面板，用于根据录制开始时在标尺中显示时间。</span><span class="sxs-lookup"><span data-stu-id="dda00-254">The **Performance** panel used to show times in the rulers based on when the recording started.</span></span>  <span data-ttu-id="dda00-255">对于用户导航的录制，计时现在已更改，其中 DevTools 现在显示相对于导航的标尺时间。</span><span class="sxs-lookup"><span data-stu-id="dda00-255">The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="对齐性能面板中的导航计时" lightbox="../../media/2020/06/nav-timing.msft.png":::
-   <span data-ttu-id="fde89-257">对齐 **性能** 面板中的导航计时</span><span class="sxs-lookup"><span data-stu-id="fde89-257">Align navigation timing in **Performance** panel</span></span>  
+   <span data-ttu-id="dda00-257">对齐 **性能** 面板中的导航计时</span><span class="sxs-lookup"><span data-stu-id="dda00-257">Align navigation timing in **Performance** panel</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-258">`DOMContentLoaded`第一次绘制、第一个 Contentful 画图和最大 Contentful 绘制事件的时间将更新为相对于导航的开始，这意味着计时计时与所报告的计时相匹配 `PerformanceObserver` 。</span><span class="sxs-lookup"><span data-stu-id="fde89-258">The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Largest Contentful Paint events are updated to be relative to the start of the navigation, which means the timing matches the timings reported by `PerformanceObserver`.</span></span>  
+<span data-ttu-id="dda00-258">`DOMContentLoaded`第一次绘制、第一个 Contentful 画图和最大 Contentful 绘制事件的时间将更新为相对于导航的开始，这意味着计时计时与所报告的计时相匹配 `PerformanceObserver` 。</span><span class="sxs-lookup"><span data-stu-id="dda00-258">The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Largest Contentful Paint events are updated to be relative to the start of the navigation, which means the timing matches the timings reported by `PerformanceObserver`.</span></span>  
 
-<span data-ttu-id="fde89-259">Chromium 问题 [#974550][CR974550]</span><span class="sxs-lookup"><span data-stu-id="fde89-259">Chromium issue [#974550][CR974550]</span></span>  
+<span data-ttu-id="dda00-259">Chromium 问题 [#974550][CR974550]</span><span class="sxs-lookup"><span data-stu-id="dda00-259">Chromium issue [#974550][CR974550]</span></span>  
 
-### <span data-ttu-id="fde89-260">用于断点、条件断点和 logpoints 的新图标</span><span class="sxs-lookup"><span data-stu-id="fde89-260">New icons for breakpoints, conditional breakpoints, and logpoints</span></span>  
+### <span data-ttu-id="dda00-260">用于断点、条件断点和 logpoints 的新图标</span><span class="sxs-lookup"><span data-stu-id="dda00-260">New icons for breakpoints, conditional breakpoints, and logpoints</span></span>  
 
-<span data-ttu-id="fde89-261">" **源** " 面板具有新的断点、条件断点和 logpoints 设计。</span><span class="sxs-lookup"><span data-stu-id="fde89-261">The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.</span></span>  <span data-ttu-id="fde89-262">断点通过红色圆圈表示，就像 [与代码][VSCode] 和 [Visual Studio][VS]一样。</span><span class="sxs-lookup"><span data-stu-id="fde89-262">Breakpoints are represented by a red circle, just like [VS Code][VSCode] and [Visual Studio][VS].</span></span>  <span data-ttu-id="fde89-263">添加图标以区分条件断点和 logpoints。</span><span class="sxs-lookup"><span data-stu-id="fde89-263">Icons are added to differentiate conditional breakpoints and logpoints.</span></span>  
+<span data-ttu-id="dda00-261">" **源** " 面板具有新的断点、条件断点和 logpoints 设计。</span><span class="sxs-lookup"><span data-stu-id="dda00-261">The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.</span></span>  <span data-ttu-id="dda00-262">断点通过红色圆圈表示，就像 [Visual Studio 代码][VSCode] 和 [visual studio][VS]一样。</span><span class="sxs-lookup"><span data-stu-id="dda00-262">Breakpoints are represented by a red circle, just like [Visual Studio Code][VSCode] and [Visual Studio][VS].</span></span>  <span data-ttu-id="dda00-263">添加图标以区分条件断点和 logpoints。</span><span class="sxs-lookup"><span data-stu-id="dda00-263">Icons are added to differentiate conditional breakpoints and logpoints.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点" lightbox="../../media/2020/06/breakpoints.msft.png":::
-   <span data-ttu-id="fde89-265">断点</span><span class="sxs-lookup"><span data-stu-id="fde89-265">Breakpoints</span></span>  
+   <span data-ttu-id="dda00-265">断点</span><span class="sxs-lookup"><span data-stu-id="dda00-265">Breakpoints</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fde89-266">Chromium 问题 [#1041830][CR1041830]</span><span class="sxs-lookup"><span data-stu-id="fde89-266">Chromium issue [#1041830][CR1041830]</span></span>  
+<span data-ttu-id="dda00-266">Chromium 问题 [#1041830][CR1041830]</span><span class="sxs-lookup"><span data-stu-id="dda00-266">Chromium issue [#1041830][CR1041830]</span></span>  
 
-## <span data-ttu-id="fde89-267">下载 Microsoft Edge 预览频道</span><span class="sxs-lookup"><span data-stu-id="fde89-267">Download the Microsoft Edge preview channels</span></span>  
+## <span data-ttu-id="dda00-267">下载 Microsoft Edge 预览频道</span><span class="sxs-lookup"><span data-stu-id="dda00-267">Download the Microsoft Edge preview channels</span></span>  
 
-<span data-ttu-id="fde89-268">如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。</span><span class="sxs-lookup"><span data-stu-id="fde89-268">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="fde89-269">预览频道使你能够访问最新的 DevTools 功能。</span><span class="sxs-lookup"><span data-stu-id="fde89-269">The preview channels give you access to the latest DevTools features.</span></span>  
+<span data-ttu-id="dda00-268">如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。</span><span class="sxs-lookup"><span data-stu-id="dda00-268">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="dda00-269">预览频道使你能够访问最新的 DevTools 功能。</span><span class="sxs-lookup"><span data-stu-id="dda00-269">The preview channels give you access to the latest DevTools features.</span></span>  
 
-## <span data-ttu-id="fde89-270">与 Microsoft Edge DevTools 团队取得联系</span><span class="sxs-lookup"><span data-stu-id="fde89-270">Getting in touch with Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="dda00-270">与 Microsoft Edge DevTools 团队取得联系</span><span class="sxs-lookup"><span data-stu-id="dda00-270">Getting in touch with Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -398,11 +398,11 @@ ms.locfileid: "10993609"
 [TheWebWeWant]: https://webwewant.fyi/ "我们想要的网络"  
 
 > [!NOTE]
-> <span data-ttu-id="fde89-319">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="fde89-319">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="fde89-320">原始页面可在 [此处](https://developers.google.com/web/updates/2020/06/devtools/index) 找到，并由 [Jecelyn Yeen][JecelynYeen] (开发人员和 DevTools，Chrome \ ) 。</span><span class="sxs-lookup"><span data-stu-id="fde89-320">The original page is found [here](https://developers.google.com/web/updates/2020/06/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
+> <span data-ttu-id="dda00-319">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="dda00-319">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="dda00-320">原始页面可在 [此处](https://developers.google.com/web/updates/2020/06/devtools/index) 找到，并由 [Jecelyn Yeen][JecelynYeen] (开发人员和 DevTools，Chrome \ ) 。</span><span class="sxs-lookup"><span data-stu-id="dda00-320">The original page is found [here](https://developers.google.com/web/updates/2020/06/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="fde89-322">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="fde89-322">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="dda00-322">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="dda00-322">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
