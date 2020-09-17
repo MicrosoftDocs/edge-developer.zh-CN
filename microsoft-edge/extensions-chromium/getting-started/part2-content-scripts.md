@@ -7,12 +7,12 @@ ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium、web 开发、html、css、javascript、开发人员、扩展
-ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fd2276c069116a7f69f06ae50f201e284b60f3ea
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015756"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016727"
 ---
 # 使用内容脚本在页面正文标记下方动态插入 NASA 图片  
 
@@ -32,7 +32,7 @@ ms.locfileid: "11015756"
 
 ## 从弹出窗口中删除图像，并将其替换为按钮  
 
-首先， `popup.html` 使用显示标题和按钮的一些直接向前标记更新你的文件。  稍后对该按钮进行编程，但现在，只需包含对空 JavaScript 文件的引用 `popup.js` 。  下面是更新 HTML。  
+首先， `popup.html` 使用显示标题和按钮的一些直接向前标记更新你的文件。  你将很快对该按钮进行编程，但现在，只需包含对空 JavaScript 文件的引用 `popup.js` 。  下面是更新 HTML。  
 
 ```html
 <html>

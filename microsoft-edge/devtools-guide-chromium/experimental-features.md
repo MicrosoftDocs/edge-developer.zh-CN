@@ -7,12 +7,12 @@ ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: c78e9aa5e0b4d808dd67d607a954b185ddcf54e7
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: ce8388e8065055e6002bd8541101bef658c7a403
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003995"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016742"
 ---
 # 实验功能  
 
@@ -46,25 +46,12 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 
 | 实验性功能 | Microsoft Edge 版本 |  
 |:--- |:--- |  
-| [启用自定义键盘快捷方式设置选项卡](#enable-custom-keyboard-shortcuts-settings-tab) | 84或更高版本 |
 | [仿真：支持双重屏幕模式](#emulation-support-dual-screen-mode) | 84或更高版本 |  
 | [启用新的 CSS 网格调试功能](#enable-new-css-grid-debugging-features) | 85或更高版本 |  
 | [启用支持以在面板之间移动选项卡](#enable-support-to-move-tabs-between-panels) | 85或更高版本 |  
 | [启用 webhint](#enable-webhint) | 85或更高版本 |  
 | [启用网络控制台](#enable-network-console) | 85或更高版本 |  
 | [启用源订单查看器](#enable-source-order-viewer) | 86或更高版本 |  
-
-### 启用自定义键盘快捷方式设置选项卡  
-
-在[DevTools 设置][DevToolsCustomizeSettings]中提供新的**快捷方式**页面，以便将 DevTools 中的[键盘快捷方式][DevToolsShortcuts]与[Microsoft Visual Studio 代码][VisualstudioCode]相匹配。  
-
-启用实验后，使用 select 再次打开[DevTools 设置][DevToolsCustomizeSettings] `Shift` + `?` 。  导航到 "新建 **快捷方式** " 页面。  选择 " **)  (DevTools** " 中的 "选择"，然后选择 "**匹配预设的快捷方式**" 下拉列表，然后选择**Visual Studio 代码**  DevTools 中的键盘快捷方式现在与 Visual Studio 代码中等效操作的快捷方式相匹配。  
-
-:::image type="complex" source="./media/experiments-keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配" lightbox="./media/experiments-keyboard-shortcut.msft.png":::
-   将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配  
-:::image-end:::  
-
-例如，在 Windows 上，在 [Visual Studio 代码][VisualstudioCodeShortcutsKeyboardWindows] 中暂停或继续运行脚本的键盘快捷方式是 `F5` 。  通过 **DevTools (默认) ** 预设，DevTools 中的相同快捷方式 `F8` 。  通过 **Visual Studio 代码** 预置，快捷方式也是 `F5` 。  
 
 ### 仿真：支持双重屏幕模式  
 
@@ -77,50 +64,35 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 
 *   单屏幕或折叠的状况  
 *   双屏幕或展开的状况  
+ 
+[启用实验性 Web 平台 api](#enable-experimental-apis) 并使用 [CSS 媒体屏幕生成功能][DualScreenDocsCssMedia] 和 [JavaScript getWindowSegments API][DualScreenDocsJSAPI] 来增强您的网站 \ (或适用于双屏幕和可折叠设备的应用 \ ) 。
 
-使用 [启用实验性 api](#enable-experimental-apis) 增强你的网站 \ (或设备的应用 \ ) 。  你还可以使用 [CSS 媒体查询和 JavaScript Windows Segment 枚举 API][GitHubMicrosoftedgeMsedgeexplainerFoldables]。  
-
-<!-- This image was taken in Chromium Canary since we don't yet have an Edge Canary that has Stan's changes -->  
-
-:::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="在 Microsoft Edge 中模拟 Surface 双核" lightbox="./media/experiments-dual-screen-emulation.msft.png":::  
+:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="在 Microsoft Edge 中模拟 Surface 双核" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
    在 Microsoft Edge 中模拟 Surface 双核  
 :::image-end:::  
 
 #### 启用实验性 Api  
 
-若要在 Microsoft Edge DevTools 中 [启用此实验](#turn-on-experimental-features) ，请完成以下步骤。  
+若要使用 [CSS 媒体屏幕生成功能][DualScreenDocsCssMedia] 和 [JavaScript getWindowSegments API][DualScreenDocsJSAPI]，请打开 `Experimental Web Platform features` Microsoft Edge 中的标志。  完成以下步骤。
 
 1.  导航到 `edge://flags` 。  
 1.  在 " **搜索标志** " 文本框中，输入 `Experimental Web Platform features` ，选择实验性的 **Web 平台功能** 标志，将 " **已禁用** " 更改为 " **已启用**"。  
 1.  重启 Microsoft Edge。  
-
-若要增强适用于双屏幕和可折叠设备的网站或应用，请导航到 [CSS 媒体查询和 JavaScript Windows Segment 枚举 API][GitHubMicrosoftedgeMsedgeexplainerFoldables]。
-
-在 Microsoft Edge DevTools 中[打开此实验](#turn-on-experimental-features)。  
-
-1.  在 Microsoft Edge 中打开新的选项卡，然后导航到 `edge://flags` 。  
-1.  在 " **搜索标记** " 文本框中，输入 `Experimental Web Platform features` ，选择 " **实验性 Web 平台功能**"，"已 **禁用** " 更改为 " **启用**"。  
-1.  重启 Microsoft Edge。  
-
-有关为双屏幕和可折叠设备增强网站 \ (或 app \ ) 的详细信息，请导航到 [CSS 媒体查询和 JavaScript Windows Segment 枚举 API][GitHubMicrosoftedgeMsedgeexplainerFoldables]。  
 
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="启用实验性 Web 平台功能标志" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    启用实验性 Web 平台功能标志  
 :::image-end:::  
 
 > [!NOTE]
-> 如果你使用[CSS 媒体查询或 JavaScript Windows Segment 枚举 API][GitHubMicrosoftedgeMsedgeexplainerFoldables]来增强你的网站或适用于[surface 双核][SurfaceDevicesDuo]的应用，你还必须在[Surface 双核][SurfaceDevicesDuo]设备上启用[Android Microsoft Edge 应用][GooglePlayMicrosoftEdge]中的**实验性 Web 平台功能**标志。
+> 如果你使用[CSS 媒体查询][DualScreenDocsCssMedia]或[JavaScript WINDOWS Segment 枚举 API][DualScreenDocsJSAPI]来增强你的网站或适用于[surface 双核][SurfaceDevicesDuo]的应用，你还必须在[Surface 双核][SurfaceDevicesDuo]设备上启用[Android Microsoft Edge 应用][GooglePlayMicrosoftEdge]中的**实验性 Web 平台功能**标志。
 > 
 > 如果在[桌面 Microsoft edge][MicrosoftEdge]中启用了实验性的**Web 平台功能**标志并在[Android microsoft edge 应用][GooglePlayMicrosoftEdge]中禁用该标志，则桌面 microsoft edge 中的 Surface 双核模拟器中的网站或应用的行为将与[Surface 双核][SurfaceDevicesDuo]上的[Android Microsoft edge 应用][GooglePlayMicrosoftEdge]不匹配。  确保标志在 Android 和桌面 Microsoft Edge 中匹配，以便在 [桌面 Microsoft edge][MicrosoftEdge]中成功使用 Surface 双核模拟器。  
 
 #### 在折叠和双屏幕设备上进行测试  
 
-当你在 Microsoft Edge 的双屏幕状态下模拟 [Surface 双核][SurfaceDevicesDuo] 时，将在你的网站或应用上绘制 **接缝** 。  
+当您在 Microsoft Edge 的双屏幕状态下模拟 [Surface 双核][SurfaceDevicesDuo] 时，接缝 \ (在您的网站或应用上绘制的两个屏幕 ) 之间的空间。  
 
-> [!NOTE]
-> **接缝**是两个屏幕之间的空间。  
-
-您的网站的模拟显示 (或应用 \ ) 是正确的表示形式。  它与[Surface 双核][SurfaceDevicesDuo]上的[Microsoft Edge Android 应用][GooglePlayMicrosoftEdge]中的显示相匹配。  更新内容，使其更好地沿着 **接缝**显示。  有关将您的网站 \ (或 app \ ) 调整到 **接缝**的详细信息，请导航到如何使用 Surface 双核文档中 [的接缝][DualScreenIntroductionHowWorkSeam] 。  
+仿真显示与你的网站 \ (或应用 \ ) 将在[Surface 双核][SurfaceDevicesDuo]上的[Microsoft Edge Android 应用][GooglePlayMicrosoftEdge]中呈现的方式相匹配。  您可能需要更新您的网站 \ (或应用 \ ) ，以便更好地沿接缝显示。  有关将您的网站 \ (或 app \ ) 调整到接缝的详细信息，请导航到如何使用 Surface 双核文档中 [的接缝][DualScreenIntroductionHowWorkSeam] 。  
 
 [设备工具栏][DevtoolsDeviceModeIndexSimulateMobileViewport]具有其他功能，可帮助你在多个姿势和方向中测试你的网站或应用。  选择 " **旋转** \ (![ 旋转 ][ImageRotateIcon] \ ) "，将视区旋转为横向方向。 将该功能与 **span** \ (![ span ][ImageSpanIcon] \ ) 组合在单个屏幕或折叠的姿势或已展开的屏幕或已展开的之间切换。  同时，这些功能支持在所有四种可能的姿势和方向中测试你的网站或应用。  
 
@@ -128,11 +100,18 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
    双屏幕和折叠设备的姿势和方向的矩阵  
 :::image-end:::  
 
- (ExperimentalApis \ ) 图标中的 **实验 Web 平台功能** \ " ![ ][ImageExperimentalApisIcon] 显示实验性 **web 平台功能** 标志的状态。  如果标志处于打开状态，则会突出显示该图标。  如果该标志已关闭，则不会突出显示该图标。  若要打开或关闭标志 ) 的 \ (或关闭，请选择图标或导航到 `edge://flags` 该标志并切换。  
+ (ExperimentalApis \ ) 图标中的 **实验 Web 平台功能** \ " ![ ][ImageExperimentalApisIcon] 显示实验性 **web 平台功能** 标志的状态。  如果标志处于打开状态，则会突出显示该图标。  如果该标志已关闭，则不会突出显示该图标。  若要打开 " (" 或 "关闭" ) 标志，请导航到 `edge://flags` "标志" 并切换。  
 
-#### 其他资源  
-*   有关开发的详细信息，请导航到 [双屏幕 web 体验][DualScreenWebIndex]。  
-*   安装 Surface 双核模拟器]。  它与 Microsoft Edge 中的仿真器不同。  它模拟运行 Android 的 Surface 双核并与 [Android Studio][AndroidDeveloperStudio]集成。  有关详细信息，请导航到 [获取 Surface 双核 SDK][DualScreenAndroidGetDuoSdk]。  
+<!-- Commenting out until the icon issue is fixed in Edge Canary
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->
+
+下面是可帮助你增强网站的其他资源 (或适用于双屏幕设备的应用 \ ) ：
+*   有关在双屏幕设备上进行 web 开发的详细信息，请导航到 [双屏幕 web 体验][DualScreenWebIndex]。  
+*   安装 [Surface 双核模拟器][DualScreenAndroidUseEmulator]。  它与 Microsoft Edge 中的仿真器不同，模拟运行 Android 的 Surface 双核，并与 [Android Studio][AndroidDeveloperStudio]集成。  有关详细信息，请导航到 [获取 Surface 双核 SDK][DualScreenAndroidGetDuoSdk]。  
+
+> [!NOTE]
+> 以下是当前已知问题的列表：
+> *   当使用 [Microsoft 远程桌面客户端][RemoteDesktopClientDocs] 连接到远程电脑并模拟 [Surface 双核][SurfaceDevicesDuo] 或 [Samsung Galaxy 折页][SamsungMobileGalaxyFold]时，指针可能会晃动或断断续续。  如果遇到此问题，请 [发送反馈](#providing-feedback-on-experimental-features)。  
 
 ### 启用新的 CSS 网格调试功能  
 
@@ -215,6 +194,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 ## 以前的实验功能  
 
 *   [3D 视图][Devtools3dViewIndex] 现在可用，在 Microsoft Edge 版本83或更高版本中默认情况下处于打开状态。  
+*   [自定义键盘快捷方式][DevtoolsCustomKeyboardShortcuts] 现在在 Microsoft Edge 版本86或更高版本中可用且默认情况下处于打开状态。  
 
 ## 提供有关实验功能的反馈  
 
@@ -247,19 +227,20 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 [DevtoolsIssues]: ./issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 |Microsoft 文档"  
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools 键盘快捷方式 |Microsoft 文档"  
 [DevtoolsOpen]: ./open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 |Microsoft 文档"
 
 [DualScreenWebIndex]: /dual-screen/web/index "双屏幕 web 体验 |Microsoft 文档"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "获取 Surface 双核仿真器 |Microsoft 文档"  
 [DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "如何使用双屏幕设备的接缝简介 |Microsoft 文档"  
+[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "使用 Surface 双核仿真器 |Microsoft 文档"  
+[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "适用于双屏幕检测的 CSS 媒体屏幕扩展功能 |Microsoft 文档"  
+[DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "用于双屏幕设备的 getWindowSegments JavaScript API |Microsoft 文档"  
+
+[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "远程桌面客户端 |Microsoft 文档"
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
 
 [SurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Surface 双核 |Microsoft Surface"  
-
-[VisualstudioCode]: https://code.visualstudio.com "Microsoft Visual Studio 代码"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "适用于 Windows 的 Visual Studio 代码键盘快捷方式 |Microsoft Visual Studio 代码"  
-
-[GitHubMicrosoftedgeMsedgeexplainerFoldables]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md "在折叠设备上启发式体验的 Web 平台基元 |GitHub"  
 
 [AndroidDeveloperStudio]: https://developer.android.com/studio/ "Android Studio"  
 
