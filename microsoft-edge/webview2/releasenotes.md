@@ -3,17 +3,17 @@ description: Microsoft Edge WebView2 SDK 的发行说明
 title: Microsoft Edge WebView2 for Win32、WPF 和 WinForms 的发行说明
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 2e5676870ecfb4c02130d61e94e762625a8d903a
-ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
+ms.openlocfilehash: 33b8280347d425eb1a02c1703a845ca31d4b314a
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016317"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052119"
 ---
 # WebView2 SDK 的发行说明  
 
@@ -272,7 +272,7 @@ WebView2 SDK 是正式的 Win32 c + + Beta 版本，其中包含来自反馈的�
 
 [ConceptsDistribution]: ./concepts/distribution.md "使用 WebView2 | 的应用程序的分发Microsoft 文档"  
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "长绿分布模式-使用 WebView2 | 的应用程序分布Microsoft 文档"  
-[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understand-the-webview2-runtime-and-installer-preview "了解 WebView2 运行时和安装程序 (预览版使用 WebView2 | 的应用程序) 分布Microsoft 文档"  
+[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understanding-the-webview2-runtime "了解 WebView2 运行时和安装程序 (预览版使用 WebView2 | 的应用程序) 分布Microsoft 文档"  
 [ConceptsVersioning]: ./concepts/versioning.md "了解浏览器版本和 WebView2 |Microsoft 文档"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "实验性 Api-了解浏览器版本和 WebView2 |Microsoft 文档"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Windows Forms 应用中的 WebView2 入门 |Microsoft 文档"  
