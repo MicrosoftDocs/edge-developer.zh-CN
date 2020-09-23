@@ -16,6 +16,8 @@
       href: concepts/distribution.md
     - name: 管理用户数据文件夹
       href: concepts/userdatafolder.md
+    - name: 管理 WebView2 应用程序
+      href: concepts/enterprise.md
     - name: 导航事件
       href: concepts/navigation-events.md
     - name: 进程模型
