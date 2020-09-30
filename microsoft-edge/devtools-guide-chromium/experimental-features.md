@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的最新实验功能
 title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: ce8388e8065055e6002bd8541101bef658c7a403
-ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
+ms.openlocfilehash: ae2058ad2beb2d8d3b19061e0935b92173392f23
+ms.sourcegitcommit: c24884cc154d6c4809e05ae37d170cb674c408b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016742"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "11091520"
 ---
 # 实验功能  
 
@@ -25,7 +25,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 使用以下步骤打开 Microsoft Edge 中的 " (" 或 "关闭" ) 实验功能。  
 
 1.  [打开 DevTools][DevtoolsOpen]。  
-     *   选择 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+     *   选择 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  打开 " [设置][DevToolsCustomizeSettings] " 窗格。  
     *   选择 `Shift` + `?` 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  在 " **设置** " 窗格的左侧，选择 " **实验** " 部分。  
@@ -51,7 +51,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 | [启用支持以在面板之间移动选项卡](#enable-support-to-move-tabs-between-panels) | 85或更高版本 |  
 | [启用 webhint](#enable-webhint) | 85或更高版本 |  
 | [启用网络控制台](#enable-network-console) | 85或更高版本 |  
-| [启用源订单查看器](#enable-source-order-viewer) | 86或更高版本 |  
+| [源订单查看器](#source-order-viewer) | 86或更高版本 |  
 
 ### 仿真：支持双重屏幕模式  
 
@@ -64,74 +64,103 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 
 *   单屏幕或折叠的状况  
 *   双屏幕或展开的状况  
- 
-[启用实验性 Web 平台 api](#enable-experimental-apis) 并使用 [CSS 媒体屏幕生成功能][DualScreenDocsCssMedia] 和 [JavaScript getWindowSegments API][DualScreenDocsJSAPI] 来增强您的网站 \ (或适用于双屏幕和可折叠设备的应用 \ ) 。
+    
+[启用实验性 Web 平台 api](#enable-experimental-apis) 并使用 [CSS 媒体屏幕生成功能][DualScreenDocsCssMedia] 和 [JavaScript getWindowSegments API][DualScreenDocsJSAPI] 来增强您的网站 \ (或适用于双屏幕和可折叠设备的应用 \ ) 。  
 
-:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="在 Microsoft Edge 中模拟 Surface 双核" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
+:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
    在 Microsoft Edge 中模拟 Surface 双核  
 :::image-end:::  
 
 #### 启用实验性 Api  
 
-若要使用 [CSS 媒体屏幕生成功能][DualScreenDocsCssMedia] 和 [JavaScript getWindowSegments API][DualScreenDocsJSAPI]，请打开 `Experimental Web Platform features` Microsoft Edge 中的标志。  完成以下步骤。
+若要使用 [CSS 媒体屏幕生成功能][DualScreenDocsCssMedia] 和 [JavaScript getWindowSegments API][DualScreenDocsJSAPI]，请打开 `Experimental Web Platform features` Microsoft Edge 中的标志。  完成以下步骤。  
 
 1.  导航到 `edge://flags` 。  
 1.  在 " **搜索标志** " 文本框中，输入 `Experimental Web Platform features` ，选择实验性的 **Web 平台功能** 标志，将 " **已禁用** " 更改为 " **已启用**"。  
 1.  重启 Microsoft Edge。  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="启用实验性 Web 平台功能标志" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    启用实验性 Web 平台功能标志  
 :::image-end:::  
 
 > [!NOTE]
-> 如果你使用[CSS 媒体查询][DualScreenDocsCssMedia]或[JavaScript WINDOWS Segment 枚举 API][DualScreenDocsJSAPI]来增强你的网站或适用于[surface 双核][SurfaceDevicesDuo]的应用，你还必须在[Surface 双核][SurfaceDevicesDuo]设备上启用[Android Microsoft Edge 应用][GooglePlayMicrosoftEdge]中的**实验性 Web 平台功能**标志。
+> 如果你使用[CSS 媒体查询][DualScreenDocsCssMedia]或[JavaScript WINDOWS Segment 枚举 API][DualScreenDocsJSAPI]来增强你的网站或适用于[surface 双核][SurfaceDevicesDuo]的应用，你还必须在[Surface 双核][SurfaceDevicesDuo]设备上启用[Android Microsoft Edge 应用][GooglePlayMicrosoftEdge]中的**实验性 Web 平台功能**标志。  
 > 
-> 如果在[桌面 Microsoft edge][MicrosoftEdge]中启用了实验性的**Web 平台功能**标志并在[Android microsoft edge 应用][GooglePlayMicrosoftEdge]中禁用该标志，则桌面 microsoft edge 中的 Surface 双核模拟器中的网站或应用的行为将与[Surface 双核][SurfaceDevicesDuo]上的[Android Microsoft edge 应用][GooglePlayMicrosoftEdge]不匹配。  确保标志在 Android 和桌面 Microsoft Edge 中匹配，以便在 [桌面 Microsoft edge][MicrosoftEdge]中成功使用 Surface 双核模拟器。  
+> 如果在[桌面 Microsoft edge][MicrosoftEdge]中启用了实验性的**Web 平台功能**标志，并且在[Android microsoft edge 应用][GooglePlayMicrosoftEdge]中禁用了该标志，则桌面 microsoft edge 中的 Surface 双核模拟器中的网站或应用的行为与[Surface 双核][SurfaceDevicesDuo]上的[Android Microsoft edge 应用][GooglePlayMicrosoftEdge]不匹配。  确保标志在 Android 和桌面 Microsoft Edge 中匹配，以便在 [桌面 Microsoft edge][MicrosoftEdge]中成功使用 Surface 双核模拟器。  
 
 #### 在折叠和双屏幕设备上进行测试  
 
 当您在 Microsoft Edge 的双屏幕状态下模拟 [Surface 双核][SurfaceDevicesDuo] 时，接缝 \ (在您的网站或应用上绘制的两个屏幕 ) 之间的空间。  
 
-仿真显示与你的网站 \ (或应用 \ ) 将在[Surface 双核][SurfaceDevicesDuo]上的[Microsoft Edge Android 应用][GooglePlayMicrosoftEdge]中呈现的方式相匹配。  您可能需要更新您的网站 \ (或应用 \ ) ，以便更好地沿接缝显示。  有关将您的网站 \ (或 app \ ) 调整到接缝的详细信息，请导航到如何使用 Surface 双核文档中 [的接缝][DualScreenIntroductionHowWorkSeam] 。  
+仿真显示与你的网站 \ (或应用 \ ) 在[Surface 双核][SurfaceDevicesDuo]上的[Microsoft Edge Android 应用][GooglePlayMicrosoftEdge]中呈现的方式相匹配。  您可能需要更新您的网站 \ (或应用 \ ) ，以便更好地沿接缝显示。  有关将您的网站 \ (或 app \ ) 调整到接缝的详细信息，请导航到如何使用 Surface 双核文档中 [的接缝][DualScreenIntroductionHowWorkSeam] 。  
 
 [设备工具栏][DevtoolsDeviceModeIndexSimulateMobileViewport]具有其他功能，可帮助你在多个姿势和方向中测试你的网站或应用。  选择 " **旋转** \ (![ 旋转 ][ImageRotateIcon] \ ) "，将视区旋转为横向方向。 将该功能与 **span** \ (![ span ][ImageSpanIcon] \ ) 组合在单个屏幕或折叠的姿势或已展开的屏幕或已展开的之间切换。  同时，这些功能支持在所有四种可能的姿势和方向中测试你的网站或应用。  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="双屏幕和折叠设备的姿势和方向的矩阵" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
+:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
    双屏幕和折叠设备的姿势和方向的矩阵  
 :::image-end:::  
 
  (ExperimentalApis \ ) 图标中的 **实验 Web 平台功能** \ " ![ ][ImageExperimentalApisIcon] 显示实验性 **web 平台功能** 标志的状态。  如果标志处于打开状态，则会突出显示该图标。  如果该标志已关闭，则不会突出显示该图标。  若要打开 " (" 或 "关闭" ) 标志，请导航到 `edge://flags` "标志" 并切换。  
 
 <!-- Commenting out until the icon issue is fixed in Edge Canary
-The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
 下面是可帮助你增强网站的其他资源 (或适用于双屏幕设备的应用 \ ) ：
 *   有关在双屏幕设备上进行 web 开发的详细信息，请导航到 [双屏幕 web 体验][DualScreenWebIndex]。  
 *   安装 [Surface 双核模拟器][DualScreenAndroidUseEmulator]。  它与 Microsoft Edge 中的仿真器不同，模拟运行 Android 的 Surface 双核，并与 [Android Studio][AndroidDeveloperStudio]集成。  有关详细信息，请导航到 [获取 Surface 双核 SDK][DualScreenAndroidGetDuoSdk]。  
 
 > [!NOTE]
-> 以下是当前已知问题的列表：
-> *   当使用 [Microsoft 远程桌面客户端][RemoteDesktopClientDocs] 连接到远程电脑并模拟 [Surface 双核][SurfaceDevicesDuo] 或 [Samsung Galaxy 折页][SamsungMobileGalaxyFold]时，指针可能会晃动或断断续续。  如果遇到此问题，请 [发送反馈](#providing-feedback-on-experimental-features)。  
+> 以下是当前已知问题的列表。  
+> 
+> *   当使用 [Microsoft 远程桌面客户端][RemoteDesktopClientDocs] 连接到远程电脑并模拟 [Surface 双核][SurfaceDevicesDuo] 或 [Samsung Galaxy 折页][SamsungMobileGalaxyFold]时，指针可能会晃动或断断续续。  如果遇到问题，请 [发送反馈](#providing-feedback-on-experimental-features)。  
 
 ### 启用新的 CSS 网格调试功能  
 
-在调试具有 CSS 网格布局的网站时，改善页面上的可视化效果。  你可以在 DevTools 设置中进一步自定义覆盖。  
+此实验功能提供了许多新的可视化效果，可帮助你调试 CSS 网格布局。  若要预览最新实验功能，请 [启用此实验](#turn-on-experimental-features) 并重新加载 DevTools。  默认情况下，此实验在 Edge 87 和更高版本中处于启用状态。  
 
-:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="./media/experiments-grid.msft.png":::
-   CSS 网格调试功能  
+#### 利用 "检查" 工具查看悬停的网格重叠  
+
+" **检查** " 工具提供了一种通过鼠标悬停在网站中来标识和可视化 CSS 网格布局的快速方法。  选择 DevTools 左上角的 " **检查** \ (![ 检查 ](./media/inspect-icon.msft.png) \ ) " 图标。  然后，将鼠标悬停在正在调试的网站上的网格元素上。  大纲显示在网格周围，阴影指示网格间隙的位置（如果存在）。  
+
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/grid-inspect.msft.png":::
+   通过 "检查" 工具查看网格  
 :::image-end:::  
 
-若要预览最新实验功能，请完成以下操作。  
+#### 查看永久网格覆盖  
 
-1.  在 " **实验** " 部分中，选择 "重新启动) 复选框后，在" **布局边栏 "窗格中 (配置选项" 下的 "启用新 CSS 网格调试功能 ** "。  
+在 Edge 86 和更高版本中，实验性 CSS 网格功能还提供了启用持久网格覆盖的选项。  永久性覆盖提供多项好处。  
 
-<!--Available in Microsoft Edge version 85 and later.  -->  
+*   滚动、移动鼠标和使用 DevTools 的其他功能时，永久叠加在页面上保持可见。  
+*   可以同时启用多个永久覆盖，从而使你可以同时查看大量的网格布局。  
+*   永久覆盖提供许多配置选项，如隐藏或显示网格区名称、网格间隙、轨道大小等。  
+
+切换永久网格覆盖的两种方式。  
+
+*   选择 "**元素**" 工具的 DOM 树中显示的任何网格元素旁边的**网格**菱形。  
+    
+    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/grid-adorner.msft.png":::
+       元素工具中的网格菱形  
+    :::image-end:::  
+    
+*   打开位于 "元素" 工具中的新 **版式** 面板，然后选择要突出显示的每个网格元素旁边的复选框。  
+    
+    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/grid-layout-zoom.msft.png":::
+       布局面板  
+    :::image-end:::  
+    
+#### 配置永久重叠  
+
+新的 **版式** 面板，位于 " **元素** " 工具中，位于边缘86和更高版本中的 " **样式** " 和 " **计算** " 选项卡上，曲面配置选项用于永久叠加。  
+
+:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-grid.msft.png":::
+   CSS 网格调试功能  
+:::image-end:::  
 
 ### 启用支持以在面板之间移动选项卡  
 
 通常，诸如 **元素** 和 **网络** 之类的工具可能仅在位于 DevTools 顶部的主面板中打开。  通常仅在位于 DevTools 底部的**抽屉**面板中打开的**3D 视图**和**问题**等工具。  选择实验后，您可以在顶部面板和底部面板之间移动工具。  若要移动工具，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **移到页首** " 或 " **移至底部**"。   此实验允许你自定义 DevTools 布局。  若要显示或隐藏 **抽屉** 面板，请选择 `Escape` 。  
 
-:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="在面板之间移动选项卡" lightbox="./media/experiments-move-panels.msft.png":::
+:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-move-panels.msft.png":::
    在面板之间移动选项卡  
 :::image-end:::  
 
@@ -150,7 +179,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 [Webhint][WebhintMain]实验将在 "[问题][DevtoolsIssues]" 面板中显示 webhint 反馈。  选择一个问题以显示解决方案文档和您的网站上受影响的资源列表。  选择资源链接以打开 DevTools 中的相关 **网络**、 **源**或 **元素** 窗格。  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text=""问题" 面板中的 webhint 反馈" lightbox="./media/experiments-webhint.msft.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-webhint.msft.png":::
    " **问题** " 面板中的 webhint 反馈  
 :::image-end:::  
 
@@ -160,7 +189,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 **网络控制台** 是通过 HTTP 建立综合网络请求的实验的工作标题。  你可以使用 **网络控制台** 实验来发送 web API 请求。  
 
-启用实验后，确保重新启动 DevTools。  若要使用 **网络控制台**，请使用以下步骤。    
+启用实验后，确保重新启动 DevTools。  若要使用 **网络控制台**，请使用以下步骤。  
 
 1.  打开 " **网络** " 窗格。  
 1.  查找要更改和重新发送的网络请求。  
@@ -168,24 +197,24 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  当 **网络控制台** 打开时，请编辑网络请求信息。  
 1.  选择 " **发送**"。  
 
-:::image type="complex" source="./media/network-network-console.msft.png" alt-text="控制台抽屉中的网络控制台" lightbox="./media/network-network-console.msft.png":::
+:::image type="complex" source="./media/network-network-console.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/network-network-console.msft.png":::
    **控制台**抽屉中的**网络控制台**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### 启用源订单查看器  
+### 源订单查看器  
 
 **源顺序查看器** 是显示页面源中的元素顺序的实验。  屏幕显示顺序可能与源的顺序不同，迷惑屏幕阅读器和键盘用户。  使用 **源顺序查看器** 实验查找屏幕显示顺序和源顺序之间的差异。  
 
-启用实验后，确保重新启动 DevTools。  要使用源订单查看器，请执行以下操作：  
+启用实验后，确保重新启动 DevTools。  若要使用 " **源顺序查看器**"，请使用以下步骤。  
 
 1.  打开 " **元素** " 窗格。  
 1.  打开抽屉 \ (底部 \ ) 面板中的 " **辅助功能** " 窗格。  
 1.  在 " **源顺序查看器** " 部分中，选中 " **显示源顺序** " 复选框。  
 1.  突出显示任何 HTML 元素以显示页面源中顺序的覆盖图。  
 
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text=""辅助功能" 窗格中的 "源顺序查看器"" lightbox="./media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-source-order-viewer.msft.png":::
    "**辅助功能**" 窗格中的 "**源顺序查看器**"  
 :::image-end:::  
 
@@ -203,7 +232,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 *   使用 DevTools 中的 " **发送反馈** " 图标发送反馈  
 *   向 [@EdgeDevTools][TwitterEdgedevtools] 发送推文  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的 "发送反馈" 图标" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/bing-devtools-send-feedback.msft.png":::
    Microsoft Edge DevTools 中的 " **发送反馈** " 图标  
 :::image-end:::  
 
