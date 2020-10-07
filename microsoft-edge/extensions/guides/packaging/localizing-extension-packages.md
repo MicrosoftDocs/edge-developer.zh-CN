@@ -1,13 +1,13 @@
 ---
 ms.assetid: c4043c1e-15ac-4210-8851-3804c7708f49
-description: 了解如何本地化你的 Microsoft Edge 扩展程序包，以使其在发布后准备好进行多个区域设置。
-title: 本地化扩展程序包
+description: Learn how to localize your Microsoft Edge extension package so that it's ready for multiple locales upon release.
+title: Localizing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、css、javascript、开发人员
+keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ms.openlocfilehash: a6a920b80e915bb14c7ea24abcc54105e5b34eb0
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -16,48 +16,48 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563244"
 ---
-# 为 Windows 和 Microsoft Store 本地化 Microsoft Edge 扩展  
+# Localizing Microsoft Edge extensions for Windows and the Microsoft Store  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
-本指南将介绍如何本地化你的 Microsoft Edge 扩展，以使其可以在发布时随时使用多个区域设置。 若要完全本地化你的扩展，你需要针对 Windows 和 Microsoft Store 执行以下步骤。
+This guide walks through how to localize your Microsoft Edge extension so that it's ready for multiple locales upon release. To fully localize your extension, you'll need to follow the steps for both Windows and the Microsoft Store.
 
-如果要本地化 Microsoft Edge 的扩展资源，可以了解如何在[国际化指南](../internationalization.md)中使用国际化框架。
+If you want to localize your extension resources for Microsoft Edge, you can learn how to use the i18n framework in the [Internationalization guide](../internationalization.md).
 
 
 > [!NOTE]
-> 如果您的扩展不支持多种语言，则可以跳过以[本地化 Microsoft Store 中的名称和说明](#localizing-name-and-description-in-the-microsoft-store)。
+> If your extension doesn't support multiple languages, you can skip to [Localizing name and description in the Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
 
 
-## 本地化流程概述
+## The localization process overview
 
-将扩展提供给广大受众的第一步是为多种语言[配置其 package.appxmanifest](#configuring-the-appxmanifest) 。 在 Microsoft Store 中，这将向用户显示你的扩展支持的语言。 如果你希望[在 WINDOWS UI 和 Microsoft Store 中本地化](#localizing-extension-resources-for-windows-and-the-microsoft-store)你的扩展的名称，则还需要更改 package.appxmanifest 中的某些字段。
-
-
-配置 Package.appxmanifest 后，你需要为你所指明的支持的语言[创建 JSON 字符串资源](#creating-json-string-resources)。 这需要为每种语言创建一个 resjson 文件，其中每个文件都具有该语言的所有 UI 字符串。
+The first step towards getting your extension available to a wide audience is to [configure its AppxManifest](#configuring-the-appxmanifest) for multiple languages. In the Microsoft Store, this will show users what languages your extension supports. Certain fields in the AppxManifest will also need to be changed if you want the name of your extension to be [localized in the Windows UI and the Microsoft Store](#localizing-extension-resources-for-windows-and-the-microsoft-store).
 
 
-创建支持语言的 resjson 文件后，[需要创建一个 pri 资源文件](#creating-the-resources-file)。 这将通过使用[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)附带的**makepri.exe**工具的配置文件进行创建。 
-
-> [!NOTE]
-> 如果你仅下载 Windows 10 SDK 以使用 Makepri.exe 工具，你可以仅选择 "适用于桌面应用的 Windows SDK 签名工具" 和 "用于 UWP 托管应用的 Windows SDK" 功能以使下载更浅。 Makepri.exe 工具将出现在 C:\Program 文件（x86） \Windows Kits\10\bin\10.0.17713.0. 的子文件夹中
+Once your AppxManifest is configured, you'll need to [create JSON string resources](#creating-json-string-resources) for the languages that you indicated as supported. This requires creating a .resjson file for each language, where each file has all the UI strings of that language within it.
 
 
-上载扩展后，最后一步是[本地化 Microsoft Store 中的名称和说明](#localizing-name-and-description-in-the-microsoft-store)。
+After the .resjson files for the supported languages have been made, a [.pri resource file will need to be created](#creating-the-resources-file). This will be created by using a configuration file to the **MakePRI** tool that comes with the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk). 
 
 > [!NOTE]
-> 将 Microsoft Edge 扩展提交到 Microsoft Store 目前是受限制的功能。 [通过你](https://aka.ms/extension-request)的请求成为 Microsoft Store 的一部分，我们将考虑你的未来更新。
+> If you are only downloading the Windows 10 SDK to use the MakePri.exe tool, you can select only the "Windows SDK Signing Tools for Desktop Apps" and "Windows SDK for UWP Managed Apps" features to keep the download lighter. The MakePri.exe tool will appear in subfolders of C:\Program Files (x86)\Windows Kits\10\bin\10.0.17713.0.
+
+
+Once you've uploaded your extension, the final step is to [localize the name and description in the Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
+
+> [!NOTE]
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we'll consider you for a future update.
 
 
 
-## 配置 Package.appxmanifest
+## Configuring the AppXManifest
 
-将根据其 Package.appxmanifest 值生成在 Microsoft Store 中扩展的 "支持的语言" 列表。 使用元素指定此列表 `Resource` 。
+Your extension's "Supported languages" list in the Microsoft Store is generated based on its AppXManifest values. This list is specified using the `Resource` element.
 
 
-![设置图像](./../../media/language-app-details.png)
+![settings image](./../../media/language-app-details.png)
 
-若要指定你的扩展支持的语言的列表，你可以添加 `Resource` 下面所示格式的元素（此 `Resource` 元素将显示 Microsoft Store 中的英语、德语和法语的支持）：
+To specify the list of languages that are supported by your extension, you can add a `Resource` element in the format seen below (this `Resource` element will show support for English, German, and French in the Microsoft Store):
 
 ```xml
 <Resources>
@@ -67,12 +67,12 @@ ms.locfileid: "10563244"
 </Resources>
 ```
 
-有关 Microsoft Store 支持的语言/语言代码的信息，请参阅[支持的语言](https://msdn.microsoft.com/windows/uwp/publish/supported-languages)。
+See [Supported languages](https://msdn.microsoft.com/windows/uwp/publish/supported-languages) for info on the languages/language codes that the Microsoft Store supports.
 
 
-为了为 Package.appxmanifest 中的所有公共可见元素指定本地化的字符串，你必须使用格式的资源标识符 `ms-resource:<resource id>` 。
+In order to specify localized strings for all publicly visible elements in the AppxManifest, you'll have to use a resource identifier in the format of `ms-resource:<resource id>`.
 
-下面的代码段构成了一个完整的 Package.appxmanifest。 应从本地化的资源文件中检索以下值：
+The snippets below make a complete AppxManifest. The following values should be retrieved from localized resource files:
 
 - Properties\DisplayName
 - Properties\Description
@@ -117,37 +117,37 @@ ms.locfileid: "10563244"
 ```
 
 
-## 本地化 Windows 和 Microsoft Store 的扩展资源
+## Localizing extension resources for Windows and the Microsoft Store
 
-既然你的 Package.appxmanifest 已配置了多语言，则在你的扩展内本地化 UI 和本地化 Windows 和 Microsoft Store 的扩展之间，你应该知道一些重要的差异。
+Now that your AppxManifest is configured for multiple languages, there are some key differences you should know between localizing the UI within your extension and localizing your extension for Windows and the Microsoft Store.
 
-虽然 Microsoft Edge 扩展无法在 Microsoft Edge 之外运行，但它们的管理可能会在 Windows 内发生。 例如，用户可以在 "设置" 应用中管理其扩展：
-
-
-![设置图像](./../../media/settings.png)
+While Microsoft Edge extensions don't run outside of Microsoft Edge, the management of them can occur within Windows. For example, users can manage their extensions in the Settings app:
 
 
+![settings image](./../../media/settings.png)
 
-在 Windows 的 "设置" 应用中显示的扩展名的名称来自 Package.appxmanifest。 如果此值为英语的硬编码，将在非英语 Windows 设备上显示该名称的英语版本。 如果您的扩展名的品牌仅为英语，则可以将其保留为硬编码。
+
+
+The name of the extension that shows up in the Settings app in Windows comes from the AppXManifest. If this value is hardcoded in English, the English version of the name will show up on non-English Windows devices. If the branding of your extension is English only, it's ok to leave it hardcoded.
 
 
 > [!NOTE]
-> 如果你想要在 Windows 中对 Microsoft Edge 扩展使用本地化名称，请确保在 Package.appxmanifest 文件中进行更改之前，也[可使用和保留](./extensions-in-the-windows-dev-center.md#name-reservation)本地化名称。 如果未保留名称，当你将最终程序包上载到 Windows 开发人员中心时，你将收到以下错误：</br></br>
+> If you want to use localized names for your Microsoft Edge Extension in Windows, make sure the localized names are also [available and reserved](./extensions-in-the-windows-dev-center.md#name-reservation) before you make the changes in the AppXManifest file. If the names are not reserved, you'll get the following error when you upload the final package to Windows Dev Center:</br></br>
 
-![语言错误](./../../media/language-error.png)</br></br>
-
-
-为 JavaScript 扩展定义的基于国际化的本地化基础结构仅在 Microsoft Edge 环境中适用。
-
-在 Microsoft Edge 外部、Windows 和 Microsoft Store 中，仅支持通用 Windows 平台（UWP）本地化框架的唯一支持的本地化框架。
-
-虽然我们确实支持基于 HTML 的 Windows 应用的基于 JSON 的资源，但 JSON 资源的架构与为 JavaScript 扩展定义的架构不匹配。
+![language error](./../../media/language-error.png)</br></br>
 
 
-以下是[基于 HTML 的 Windows 应用](https://msdn.microsoft.com/library/windows/apps/hh465228.aspx)的主要区别：
--    资源是在 resjson 文件中指定的，而不是在 json 文件中指定。
--    支持的区域设置应在 Package.appxmanifest 文件中指定，第一个区域设置为默认区域设置。
--    基于 HTML 的 Windows 应用资源使用以下架构：
+The i18n based localization infrastructure that's defined for JavaScript extensions is only applicable within the Microsoft Edge environment.
+
+Outside of Microsoft Edge, within Windows and the Microsoft Store, the only supported localization framework is based on the Universal Windows Platform (UWP) localization framework.
+
+While we do support JSON based resources for HTML based Windows apps, the schema for the JSON resources doesn't match the one defined for JavaScript extensions.
+
+
+The following are the key differences in [HTML based Windows apps](https://msdn.microsoft.com/library/windows/apps/hh465228.aspx):
+-    Resources are specified in .resjson files instead of .json files.
+-    The locales supported should be specified in the AppXManifest file, with the first locale being the default locale.
+-    HTML based Windows apps resources use the following schema:
     ```json
     {
         "greeting"              : "Hello",
@@ -157,14 +157,14 @@ ms.locfileid: "10563244"
         "_farewell.comment"     : "A goodbye."
     }
     ```
-    下划线表示的名称/值对对应的字符串资源的注释。
--    resjson 文件将编译为 pri 文件，这些文件必须包含在 AppX 程序包创建期间。
+    The name/value pair denoted by an underscore are comments for the corresponding string resource.
+-    .resjson files are compiled into .pri files which must be included during AppX package creation.
 
 
-### 创建 JSON 字符串资源
-使用已配置的 Package.appxmanifest，将突出显示国际化和 UWP 本地化框架之间的差异，即可创建资源文件。
+### Creating JSON string resources
+With a configured AppxManifest in hand and the differences between the i18n and UWP localization frameworks highlighted, you're ready to create your resource files.
 
-清单中仅有一个资源字符串适用于 Microsoft Edge 扩展程序包。 该 `DisplayName` 字符串通常在 JavaScript 扩展中进行本地化，并且可以轻松地映射到 Windows 期望的 resjson 文件。 假设这是您想要本地化的唯一资源，下面是应该创建的 resjson 文件：
+Only one resource string in the manifest is applicable to Microsoft Edge extension packages. The `DisplayName` string is commonly localized in JavaScript extensions, and can be easily mapped to the .resjson files that Windows expects. Assuming that this is the only resource that you would like to localize, here is a sample .resjson file that should be created:
 
 ```json
 {
@@ -173,22 +173,22 @@ ms.locfileid: "10563244"
 }
 ```
 
-每个 resjson 文件中的资源 ID 需要与 Package.appxmanifest 中使用的 ID 相匹配。 使用 resjson 代码段，相应的 Package.appxmanifest 条目应为：
+The resource ID in each .resjson file needs to match the ID used in the AppXManifest. Using the example .resjson snippet above, the corresponding AppXManifest entry should be:
 
 `DisplayName="ms-resource:DisplayName"`
 
-扩展支持的每种语言应具有相应的 resjson 文件，并放置在以下文件夹结构中：
+Each language that your extension supports should have a corresponding resources.resjson file and be placed in the following folder structure:
 
-![语言文件夹结构](./../../media/resources-folder.png)
-
-
-### 创建资源文件
-创建所有 resjson 文件后，即可创建程序包资源索引（PRI）文件。 此文件存储所有受支持的语言的资源。 若要执行此操作，你可以使用 Windows 10 SDK 附带的**makepri.exe**工具。
+![language folder structure](./../../media/resources-folder.png)
 
 
-首先，你需要创建配置文件。 这将为资源定义默认的限定符和平台。 对于此示例，请将默认语言设置为英语（US）和平台 Windows 10。 若要执行此操作，请在 [Root 文件夹] 中创建包含以下内容的 priconfig 文件：
+### Creating the resources file
+Once you've created all your .resjson files, you're ready to create your package resource index (PRI) file. This file stores the resources for all your supported languages. To do this you can use the **MakePRI** tool which is included with the Windows 10 SDK.
 
-![文件夹中的 priconfig](./../../media/priconfig.png)
+
+First you'll need to create the configuration file. This defines the default qualifiers and platform for the resources. For this example, make the default language English (US) and the platform Windows 10. To do this, create a priconfig.xml file with the following content in the [Root folder]:
+
+![priconfig in folder](./../../media/priconfig.png)
 
 
 ```xml
@@ -216,44 +216,44 @@ ms.locfileid: "10563244"
 </resources>
 ```
 
-现在，你可以使用配置文件和 Makepri.exe 工具创建资源 pri 文件。 对于此示例，项目的根位置将为 [根文件夹]。
+Now you can use the configuration file and the MakePRI tool to create the resources.pri file. For this example, the root location for the project will be [Root folder].
 
 
 ```cmd
 MakePRI new /pr [Root folder] /cf [Root folder]\priconfig.xml /mn [Root folder]\AppxManifest.xml /of [Root folder]\resources.pri /o
 ```
 
-您的根文件夹中现在应该有一个资源 pri 文件：
+You should now have one resources.pri file in your root folder:
 
-![资源文件夹](./../../media/resources.png)
-
-
-## 在 Microsoft Store 中本地化名称和说明
-
-尝试上载完整的本地化程序包后，Windows 开发人员中心将检测到支持多种语言，并检查每个语言是否具有相应的本地化名称和说明。 如果缺少任何本地化值，你的提交将被阻止，直到你提供这些值。
-
-如果你只想为 Microsoft Store （而非 Windows）提供本地化名称和说明，你可以通过[保留你的扩展的所有本地化名称](./extensions-in-the-windows-dev-center.md#name-reservation)来执行此操作。
+![resources folder](./../../media/resources.png)
 
 
-保留其他本地化名称后，你可以创建更新的提交。 在 "描述" 部分中，你可以管理 Microsoft 应用商店的其他语言：
+## Localizing name and description in the Microsoft Store
 
-![日语应用说明](./../../media/manage-description-languages.png)
+Once you try to upload your complete, localized package, the Windows Dev Center will detect that more than one language is supported and check that you have corresponding localized names and descriptions for each. If any of the localized values are missing, your submission will be blocked until you provide the values.
 
-选择 "管理其他语言" 后，你将收到选择要添加到 Microsoft 应用商店的语言的语言。 新语言将显示为 "说明" 部分中的 "其他说明语言"。
+If you are only interested in providing a localized name and description for the Microsoft Store (and not Windows), you can do so by [reserving all the localized names for your extension](./extensions-in-the-windows-dev-center.md#name-reservation).
 
-你可以单击 "描述" 部分中的单个链接，为每种语言提供本地化名称和说明、发行说明、发行说明和视觉资源。 不会从 Package.appxmanifest 中提取 Microsoft Store 的说明。 每个本地化说明都需要在 Windows 开发人员中心中手动输入：
 
-![日语应用说明](./../../media/japanese-app-description.png)
+Once you've reserved additional localized names, you can create an updated submission. In the description section you can manage additional languages for your Microsoft Store listing:
 
-提交本地化说明并发布扩展后，在 Microsoft Store 中访问该扩展的本地化页面的任何人都将看到以下 UI：
+![japanese app description](./../../media/manage-description-languages.png)
 
-![日语 windows 应用商店](./../../media/japanese-windows-store.png)
+Once you've selected "Manage additional languages", you'll get to select which languages you want to add to your Microsoft Store listing. The new language will show up as 'Additional description language' in the "Description" section.
+
+You can click on the individual link in the "Description" section to provide a localized name and description, release notes, and visual assets for each language. The description for the Microsoft Store is not extracted from the AppXManifest. Each localized description needs to be manually entered in the Windows Dev Center:
+
+![japanese app description](./../../media/japanese-app-description.png)
+
+Once the localized descriptions are submitted and the extension is published, anyone accessing a localized page of the extension in the Microsoft Store will see the following UI:
+
+![japanese windows store](./../../media/japanese-windows-store.png)
  
 
-## Package.appxmanifest 示例
+## AppxManifest samples
 
-### 非本地化 Package.appxmanifest
-以下示例显示了未本地化的 Package.appxmanifest，并且仅支持 "en-us" 区域设置。
+### Non-localized AppxManifest
+The following example shows an AppxManifest that isn't localized, and only supports the "en-us" locale.
 
 
 ```xml
@@ -315,8 +315,8 @@ MakePRI new /pr [Root folder] /cf [Root folder]\priconfig.xml /mn [Root folder]\
 ```
 
 
-#### 本地化 Package.appxmanifest
-此 Package.appxmanifest 示例针对除 "en-us" 之外的其他八个区域设置进行了本地化。 请注意 `ms-resource:<resource id>` 出现的情况：
+#### Localized AppxManifest
+This AppxManifest sample is localized for eight other locales besides "en-us". Notice the `ms-resource:<resource id>` occurrences:
 
 
 ```xml

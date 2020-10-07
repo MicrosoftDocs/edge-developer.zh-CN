@@ -1,12 +1,12 @@
 ---
-description: 如何在 VS 代码中使用 Microsoft Edge （Chromium）的元素
-title: Microsoft Edge 的元素（Chromium）与代码的对比
+description: How to use Elements for Microsoft Edge (Chromium) from VS Code
+title: Elements for Microsoft Edge (Chromium) from VS Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools、vs 代码、visual studio 代码、元素
+keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, elements
 ms.openlocfilehash: ef516d8364c68b550f889bcad0fe762a73ce5f99
 ms.sourcegitcommit: 652009c5cea9e75c22b077f0cbcdc0d96bd337ac
 ms.translationtype: MT
@@ -14,51 +14,51 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/04/2020
 ms.locfileid: "10694860"
 ---
-# Microsoft Edge 与代码扩展的元素  
+# Elements For Microsoft Edge VS Code Extension  
 
-使用[Microsoft edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium]和代码扩展的元素，在[Visual Studio 代码][VisualstudioCode]中使用 microsoft edge 浏览器的 "元素" 工具。  通过启动或附加，元素工具连接到 Microsoft Edge 实例，显示运行时 HTML 结构，并允许你更改布局或修复样式设置问题。  
+With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within [Visual Studio Code][VisualstudioCode].  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
 
-:::image type="complex" source="./media/elements-for-edge.gif" alt-text="工作中的边缘与代码扩展的元素":::
-   工作中的边缘与代码扩展的元素  
+:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elements for Edge VS Code extension at work&quot;:::
+   Elements for Edge VS Code extension at work  
 :::image-end:::
 
 <!--![Elements for Edge VS Code extension at work][ImageGifElementsEdge]  -->  
 
-## 从元素扩展启动 Microsoft Edge  
+## Launching Microsoft Edge From the Elements extension  
 
-导航到**活动栏**中的元素。  在它所示的**Microsoft Edge 元素的**位置旁边，有一个加号，可为你的应用打开浏览器。  如果选择了 "**关于：空白**" 选项，则必须导航到浏览器中的 web 应用，以使其显示在 "元素" 面板中的 VS 代码中。  
+Navigate to Elements in the **Activity Bar**.  Next to where it says **Elements for Microsoft Edge: Targets,** there is a plus sign that opens the browser for your app.  If you selected the **about:blank** option, you must navigate to your web app in the browser for it to appear in the Elements panel in VS Code.  
 
-## 从 "调试" 视图启动 Microsoft Edge  
+## Launching Microsoft Edge from the Debug view  
 
-如果你习惯在 Visual Studio 代码中使用 "调试" 视图，请访问该工具中的元素。  导航到 "调试" 视图 \ （ `Ctrl` + `Shift` + `D` 在 Windows 上或 `Command` + `Shift` + `D` 在 macOS \ 上）。  
+If you are accustomed to using the Debug view in Visual Studio Code, access Elements from that tool.  Navigate to the Debug view \(`Ctrl`+`Shift`+`D` on Windows or `Command`+`Shift`+`D` on macOS\).  
 
-如果 VS 代码中没有任何配置，请按 `F5` Windows 或 macOS 或选择绿色的 "**播放**" 按钮。 在下拉列表中选择 "**边缘**"。 你应该会看到 `launch.json` 具有以下配置的文件。  
+If you do not have any configurations in VS Code, press `F5` on Windows or macOS or select the green **Play** button. Select **Edge** in the dropdown. You should see a `launch.json` file with the following configuration.  
 
 ```json
 {
-    "version": "0.2.0",
-    "configurations": [
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
         {
             
-            "name": "Launch Microsoft Edge and open the Elements tool",
-            "request": "launch",
-            "type": "vscode-edge-devtools.debug",
-            "url": "http://localhost:3000"
+            &quot;name&quot;: &quot;Launch Microsoft Edge and open the Elements tool&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;type&quot;: &quot;vscode-edge-devtools.debug&quot;,
+            &quot;url&quot;: &quot;http://localhost:3000"
         
         }
     ]
 }
 ```  
 
-加载正确的配置后，请按 `F5` Windows 或 macOS 或选择绿色的 "**播放**" 按钮。 从 Microsoft Edge 浏览器启动的 VS 代码中，你熟悉的元素工具使你能够访问浏览器的说明截屏视频，并检查页面组件。  
+Now that you have loaded the correct configuration, either press `F5` on Windows or macOS or select the green **Play** button. The Elements tool, that is familiar to you, from the Microsoft Edge browser launches in VS Code, allowing you to access a screencast of your browser and examine the components of your page.  
 
-## 附加到 Microsoft Edge  
+## Attaching to Microsoft Edge  
 
-若要将 VS 代码附加到 Microsoft Edge \ （Chromium \）的实例，必须通过从你的终端运行以下命令来启动浏览器。  
+To attach VS Code to an instance of Microsoft Edge\(Chromium\), you must start the browser by running the following command from your terminal.  
 
 `start msedge --remote-debugging-port=9222`  
 
-应用启动后，将以下配置添加到**启动 json**文件：  
+Once the app has launched, add the configuration below to your **launch.json** file:  
 
 ```json
 {
@@ -71,27 +71,27 @@ ms.locfileid: "10694860"
 }
 ```  
 
-选择 "**附加到 Microsoft Edge"，然后**从 "调试器" 下拉菜单中打开 "元素" 工具。  接下来，按 " `F5` Windows" 或 "macOS" 或选择 "绿色**播放**" 按钮。  VS 代码启动 "元素" 工具，使你可以访问浏览器的说明截屏视频、检查 DOM 以及页面上组件的样式。  
+Select **Attach to Microsoft Edge and open the Elements tool** from the Debugger drop-down menu.  Next, either press `F5` on Windows or macOS or select the green **Play** button.  VS Code launches the Elements tool, allowing you to access a screencast of your browser, inspect the DOM, and the styling of the components on your page.  
 
-## 与 Microsoft Edge 和代码扩展团队的元素保持联系  
+## Getting in touch with the Elements for Microsoft Edge VS Code extension team  
 
-通过针对扩展的[GitHub][GithubMicrosoftVscodeEdgeDevtools]存储库将[问题归档][GithubMicrosoftVscodeEdgeDevtoolsNewIssue]来发送反馈。  
+Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] against the [GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.  
 
-如果你希望帮助使 Microsoft Edge 与代码扩展的元素更好，你的发布是欢迎的！  在扩展的[GitHub][GithubMicrosoftVscodeEdgeDevtools]存储库中查找您需要的所有内容。  
+If you want to help make the Elements for Microsoft Edge VS Code extension better, your contributions are welcome!  Find everything you need to get started in the [GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.  
 
 <!-- image links -->  
 
 <!--[ImageGifElementsEdge]: ./media/elements-for-edge.gif "Elements for Edge VS Code extension in action"  -->  
-[ImagePngElementsEdge]：./media/elements-for-edge.png "在操作中对边缘与代码扩展的元素"  
+[ImagePngElementsEdge]: ./media/elements-for-edge.png "Elements for Edge VS Code extension in action"  
 
 <!--links -->  
 
-[VscodeElementsEdge]: ./elements-for-edge.md "Microsoft Edge 与代码扩展的元素 |Microsoft 文档"  
+[VscodeElementsEdge]: ./elements-for-edge.md "Elements For Microsoft Edge VS Code Extension | Microsoft Docs"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "文档 |Visual Studio 代码"   
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"   
 
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools |GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "新问题-microsoft/vscode-devtools |GitHub"
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "New Issue - microsoft/vscode-edge-devtools | GitHub"
 
-[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge 元素（Chromium） |Visual Studio Marketplace"  
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elements for Microsoft Edge (Chromium) | Visual Studio Marketplace"  

@@ -1,6 +1,6 @@
 ---
-description: JavaScript 运行时（JsRT） Api 使你能够将脚本功能添加到在 Windows 上运行的桌面和服务器端应用程序。
-title: 应用 (JavaScript Runtime)
+description: JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows.
+title: Reference (JavaScript Runtime)
 ms.date: 06/08/2020
 ms.prod: microsoft-edge
 ms.topic: article
@@ -15,23 +15,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "10752211"
 ---
-# 参考（JavaScript 运行时）  
+# Reference (JavaScript runtime)  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-JavaScript 运行时（JsRT） Api 使你能够将脚本功能添加到在 Windows 上运行的桌面和服务器端应用程序。  
+JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows.  
 
-如果你打算在你的应用程序中嵌入[ChakraCore](https://github.com/Microsoft/ChakraCore) ，请参阅[CHAKRACORE Wiki](https://aka.ms/corejsrtref) for JSRT 引用。  
+If you intend to embed [ChakraCore](https://github.com/Microsoft/ChakraCore) in your application, please refer to [ChakraCore Wiki](https://aka.ms/corejsrtref) for JSRT references instead.  
 
-## 本部分内容  
+## In this section  
 
-支持 JsRT 托管的 typedef、常量和枚举如下所述：  
+Typedefs, constants, and enumerations that support JsRT hosting are described here:  
   
-*   [JavaScript 运行时 Typedef、常量和枚举](./javascript-runtime-typedefs-constants-and-enumerations.md)  
+*   [JavaScript Runtime Typedefs, Constants, and Enumerations](./javascript-runtime-typedefs-constants-and-enumerations.md)  
 
-以下函数支持 JsRT 托管：  
+The following functions enable JsRT hosting:  
 
-*   [JsAddRef 函数](./jsaddref-function.md)  
+*   [JsAddRef Function](./jsaddref-function.md)  
 *   [JsBooleanToBool 函数](./jsbooleantobool-function.md)  
 *   [JsBoolToBoolean 函数](./jsbooltoboolean-function.md)  
 *   [JsCallFunction 函数](./jscallfunction-function.md)  
@@ -145,9 +145,9 @@ JavaScript 运行时（JsRT） Api 使你能够将脚本功能添加到在 Windo
 *   [JsStrictEquals 函数](./jsstrictequals-function.md)  
 *   [JsStringToPointer 函数](./jsstringtopointer-function.md)  
 *   [JsValueToVariant 函数](./jsvaluetovariant-function.md)  
-*   [JsVariantToValue 函数](./jsvarianttovalue-function.md)  
+*   [JsVariantToValue Function](./jsvarianttovalue-function.md)  
 
-## 另请参阅  
+## See also  
 
-*   [托管 JavaScript 运行时](./hosting-the-javascript-runtime.md)  
-*   [JavaScript 运行时托管](../javascript-runtime-hosting.md)  
+*   [Hosting the JavaScript Runtime](./hosting-the-javascript-runtime.md)  
+*   [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)  

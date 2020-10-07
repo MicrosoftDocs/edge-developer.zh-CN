@@ -1,12 +1,12 @@
 ---
-description: 如何从 VS 代码调试 Microsoft Edge （Chromium）和 Microsoft Edge （EdgeHTML）
-title: 从 VS 代码调试 Microsoft Edge （Chromium）
+description: How to debug Microsoft Edge (Chromium) and Microsoft Edge (EdgeHTML) from VS Code
+title: Debug Microsoft Edge (Chromium) from VS Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools、vs 代码、visual studio 代码、调试器
+keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
 ms.openlocfilehash: 58bcbc927505f4c5a1f493349c3e9475cb75e1be
 ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
@@ -14,61 +14,61 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/04/2020
 ms.locfileid: "10695864"
 ---
-# Microsoft Edge 与代码扩展的调试器  
+# Debugger For Microsoft Edge VS Code Extension  
 
-借助[适用于 Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge]和代码扩展的调试器，逐行调试你的前端 JavaScript 代码行并 `console.log()` 直接从[Visual Studio 代码][VisualstudioCode]中查看语句！  
+With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line by line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
 
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="适用于工作的调试器与代码扩展":::
-   适用于工作的调试器与代码扩展  
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger for Edge VS Code extension at work&quot;:::
+   Debugger for Edge VS Code extension at work  
 :::image-end:::
 
 <!--![Debugger for Edge VS Code extension at work][ImageGifDebuggerEdge]  -->  
 
-## 启动 Microsoft Edge  
+## Launching Microsoft Edge  
 
-导航到活动栏中的 "调试" 视图 \ （ `Ctrl` + `Shift` + `D` 在 Windows 或 `Command` + `Shift` + `D` " **Activity Bar**macOS \" 上）。  如果 VS 代码中没有任何配置，请按 `F5` Windows 或 macOS 或选择绿色的 "**播放**" 按钮。  在下拉列表中选择 "**边缘**"。  你应该会看到 `launch.json` 具有以下配置的文件。  
+Navigate to the Debug view \(`Ctrl`+`Shift`+`D` on Windows or `Command`+`Shift`+`D` on macOS\) in the **Activity Bar**.  If you do not have any configurations in VS Code, press `F5` on Windows or macOS or select the green **Play** button.  Select **Edge** in the dropdown.  You should see a `launch.json` file with the following configuration.  
 
 ```json
 {
-    "version": "0.2.0",
-    "configurations": [
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
         {
-            "type": "edge",
-            "request": "launch",
-            "name": "Launch Edge against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            &quot;type&quot;: &quot;edge&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;name&quot;: &quot;Launch Edge against localhost&quot;,
+            &quot;url&quot;: &quot;http://localhost:8080&quot;,
+            &quot;webRoot&quot;: &quot;${workspaceFolder}&quot;
         }
     ]
 }
 ```  
 
-如果您按 `F5` Windows 或 macOS 或再次选择绿色的 "**播放**" 按钮，则 VS 代码将启动 Microsoft Edge \ （EdgeHTML \），并且您可以 `8080` 直接从 VS 代码调试在端口上运行的任何 web 项目！  
+If you press `F5` on Windows or macOS or select the green **Play** button again, VS Code launches Microsoft Edge \(EdgeHTML\) and you are able to debug any web project you have running on port `8080` directly from VS Code!  
 
 ### Microsoft Edge (Chromium)  
 
-如果想要启动 Microsoft Edge \ （Chromium \），请使用 microsoft edge 的下一版本，而不是 Microsoft Edge \ （EdgeHTML \），只需将属性添加到你的 `version` 现有配置，使用要启动 \ （ `dev` 、或 \）的 Microsoft Edge \ （Chromium \）版本 `beta` `canary` 。 下面的配置将启动 Microsoft Edge \ （Chromium \）的 "不限" 版本。  
+If you want to launch Microsoft Edge \(Chromium\), the next version of Microsoft Edge, instead of Microsoft Edge \(EdgeHTML\), simply add a `version` attribute to your existing configuration with the version of Microsoft Edge \(Chromium\) you want to launch \(`dev`, `beta`, or `canary`\). The following configuration below launches the Canary version of Microsoft Edge \(Chromium\).  
 
 ```json
 {
-    "type": "edge",
-    "request": "launch",
-    "version": "canary",
-    "name": "Launch Edge against localhost",
-    "url": "http://localhost:8080",
-    "webRoot": "${workspaceFolder}"
+    &quot;type&quot;: &quot;edge&quot;,
+    &quot;request&quot;: &quot;launch&quot;,
+    &quot;version&quot;: &quot;canary&quot;,
+    &quot;name&quot;: &quot;Launch Edge against localhost&quot;,
+    &quot;url&quot;: &quot;http://localhost:8080&quot;,
+    &quot;webRoot&quot;: &quot;${workspaceFolder}"
 }
 ```  
 
-## 附加到 Microsoft Edge  
+## Attaching to Microsoft Edge  
 
-将 VS 代码附加到 Microsoft Edge \ （Chromium \）。  在终端中，运行以下命令。  
+Attach VS Code to Microsoft Edge \(Chromium\).  From your terminal, run the following command.  
 
 ```console
 start msedge --remote-debugging-port=9222
 ```  
 
-将下面的配置添加到你的 `launch.json` 文件。   
+Add the configuration below to your `launch.json` file.   
 
 ```json
 {
@@ -79,26 +79,26 @@ start msedge --remote-debugging-port=9222
 }
 ```  
 
-如果现在运行此配置，则 VS 代码附加到 Microsoft Edge \ （Chromium \），然后开始调试！  
+If you now run this configuration, VS Code attaches to Microsoft Edge \(Chromium\) and start debugging!  
 
-## 与 Microsoft Edge 和代码扩展团队的元素保持联系    
+## Getting in touch with the Elements for Microsoft Edge VS Code extension team    
 
-通过在扩展的[GitHub][GithubMicrosoftVscodeEdgeDebug2]存储库中[归档问题][GithubMicrosoftVscodeEdgeDebug2NewIssue]来发送反馈。  请包含调试适配器日志文件，该文件是在具有名称的目录中的每个运行中创建的 `%temp%` `vscode-edge-debug2.txt` 。  将此文件拖动到问题注释中，将其上传到 GitHub。  
+Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDebug2NewIssue] against in the [GitHub repo][GithubMicrosoftVscodeEdgeDebug2] of the extension.  Please include the debug adapter log file, which is created for each run in the `%temp%` directory with the name `vscode-edge-debug2.txt`.  Drag this file into an issue comment to upload it to GitHub.  
 
-为了帮助使 Microsoft Edge 与代码扩展的元素更好，您的发布内容是欢迎的！  在扩展的[GitHub][GithubMicrosoftVscodeEdgeDebug2]存储库中查找所需的所有内容。  
+To help make the Elements for Microsoft Edge VS Code extension better, your contributions are welcome!  Find everything you need to get started in [GitHub repo][GithubMicrosoftVscodeEdgeDebug2] of the extension.  
 
 
 <!-- image links -->  
 
 <!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  
-[ImagePngDebuggerEdge]：/media/debugger-for-edge.png "调试程序 for Edge 与代码扩展在操作中"  
+[ImagePngDebuggerEdge]: ./media/debugger-for-edge.png "Debugger for Edge VS Code extension in action"  
 
 <!--links -->  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "文档 |Visual Studio 代码"   
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"   
 
-[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "microsoft/vscode-edge-debug2 |GitHub"  
-[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "新问题-microsoft/vscode-debug2 |GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "microsoft/vscode-edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "New Issue - microsoft/vscode-edge-debug2 | GitHub"  
 
-[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Microsoft Edge 的调试器 |Visual Studio Marketplace"  
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"  

@@ -1,13 +1,13 @@
 ---
 ms.assetid: 5eefa3d8-8626-4486-bd90-1361400d6468
-description: 了解如何手动打包 Microsoft Edge 扩展，并对其进行测试以查看是否已正确打包。
-title: 创建和测试扩展程序包
+description: Learn about how to package up your Microsoft Edge extension manually and test it to see if it's packaged correctly.
+title: Creating and testing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、css、javascript、开发人员、打包
+keywords: edge, web development, html, css, javascript, developer, packaging
 ms.custom: seodec18
 ms.openlocfilehash: a76737d76c8f08c8e79992f0804fdbd34d4ed970
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -16,36 +16,36 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563249"
 ---
-# 创建和测试 Microsoft Edge 扩展 AppX 程序包  
+# Creating and testing a Microsoft Edge extension AppX package  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
-Microsoft Edge 扩展打包为 AppX，与通用 Windows 应用的打包方式类似。 从 Windows 10 周年更新起，已为 AppX 引入了新架构，允许 AppX 将 Microsoft Edge 扩展包含为其内容。
+Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows Apps are packaged. As of Windows 10 Anniversary Update, a new schema has been introduced for AppX that allows an AppX to include a Microsoft Edge extension as its content.
 
-如果你已知道 Microsoft Edge 扩展 AppXs 是如何创建的，则可以跳过[使用 ManifoldJS 打包扩展](./using-manifoldjs-to-package-extensions.md)，了解如何使用基于 node.js 的工具来为你执行所有这些操作！
+If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-manifoldjs-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
 
 > [!NOTE]
-> 将 Microsoft Edge 扩展提交到 Microsoft Store 目前是受限制的功能。 创建、打包和测试扩展后，请提交我们的[扩展提交表单](https://aka.ms/extension-request)上的申请。
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
 
 
-## 准备提交文件夹
+## Preparing the submission folder
 
-若要准备要提交的扩展，需要创建具有以下结构的文件夹：
+To prepare your extension for submission, you need to create a folder with the following structure:
 
-![文件夹结构的图像。 在 My Extension 文件夹内是 Package.appxmanifest、Extension 文件夹和资产文件夹](./../../media/packaging_folder-structure.png)
+![image of folder structure. Inside My Extension folder is AppxManifest.xml, Extension folder, and Assets folder](./../../media/packaging_folder-structure.png)
 
-在文件夹的根位置，应包含 Package.appxmanifest 文件。 此文件用于指定程序包的内容和布局。
+At the root of the folder, you should include an AppXManifest.xml file. This file is used to specify the contents and layout of the package.
 
-你还应具有一个资源文件夹，其中包含要在 Microsoft Store 中使用的 UI 资源，以及包含你的扩展文件（脚本、图标等）的扩展文件夹。
+You should also have an Assets folder which contains the UI assets to be used in the Microsoft Store, and an Extension folder that contains your extension's files (scripts, icons, etc).
 
 > [!IMPORTANT]
-> 你可以为程序包创建不同的文件夹结构，但文件夹结构必须匹配 Package.appxmanifest 值。
+> You can create a different folder structure for your package, but the folder structure must match the AppXManifest values.
 
-### Package.appxmanifest
-Package.appxmanifest 文件是一个 XML 文档，其中包含系统部署、显示或更新 Windows 应用所需的信息。 此文件还包括程序包标识、功能和视觉元素。 每个应用包都必须包含一个 Package.appxmanifest 文件。
+### AppXManifest.xml
+The AppXManifest file is an XML document that contains info the system needs to deploy, display, or update a Windows app. This file also includes package identity, capabilities, and visual elements. Every app package must include one AppXManifest file.
 
-开发人员可以对其 Package.appxmanifest 文件使用以下模板：
+Developers can use the following template for their AppXManifest.xml file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -100,28 +100,28 @@ Package.appxmanifest 文件是一个 XML 文档，其中包含系统部署、显
 </Package>
 ```
 
-#### 应用标识模板值
-通过 Windows 开发人员中心[保留扩展的名称](./extensions-in-the-windows-dev-center.md#name-reservation)后，你将能够在 package.appxmanifest 中查找替换以下值所需的必要的程序包标识信息：
+#### App identity template values
+Once you've [reserved the name of your extension](./extensions-in-the-windows-dev-center.md#name-reservation) through the Windows Dev Center, you'll be able to find the necessary package identity information needed to replace the following values in AppXManifest.xml:
 
 - `Name`
 - `Publisher`
 - `DisplayName`
 - `PublisherDisplayName`
 
-你可以使用以下步骤访问应用标识页面：
+You can access your App identity page using the following steps:
 
-1. 导航到[Windows 开发人员中心](https://developer.microsoft.com/windows/)。
-2. 登录到你的开发者帐户。
-3. 导航到仪表板。
-4. 选择您的扩展名的名称。
+1. Navigate to [Windows Dev Center](https://developer.microsoft.com/windows/).
+2. Sign in to your developer account.
+3. Navigate to the Dashboard.
+4. Select the name of your extension.
 
-   ![扩展名列表](./../../media/select-app.png)
-5. 导航到 "应用程序标识" 页面，该页面位于 "应用管理" 部分下（注册你的应用之后）。
+   ![extension list](./../../media/select-app.png)
+5. Navigate to the App identity page which is under the App management section (after you've registered your app).
 
-   ![应用标识页面](./../../media/app-identity.png)
+   ![app identity page](./../../media/app-identity.png)
 
 
-现在，你可以按照模板中的指示，用应用标识页面中的值填充 Package.appxmanifest 模板：
+You can now populate the AppXManifest template with values from the App identity page, as indicated in the template:
 
 
 ```xml
@@ -137,10 +137,10 @@ Package.appxmanifest 文件是一个 XML 文档，其中包含系统部署、显
 </Properties>
 ```
 
-#### JSON 清单模板值
-Package.appxmanifest 中的某些值需要与在 JSON 清单中定义的值相匹配。 请根据你的扩展 JSON 清单更新 package.appxmanifest 中的以下值：
+#### JSON manifest template values
+Some values in the AppXManifest need to match those that are defined in the JSON manifest. Please update the following values in appxmanifest.xml based on your extension JSON manifest:
 
-- `Version` -这是你的扩展的 JSON 清单中列出的版本。 该字符串需要匹配最后一个整数必须为0的 X.x.x.x 格式。 例如 1.2.3.0
+- `Version` - This is the version listed in your extension's JSON manifest. The string needs to match the X.X.X.X format where the last integer has to be 0. E.g. 1.2.3.0
 
    ```xml
    <Identity
@@ -149,7 +149,7 @@ Package.appxmanifest 中的某些值需要与在 JSON 清单中定义的值相�
      Version="1.0.0.0" />
    ```
 
-- `Description` -这是扩展的 JSON 清单中说明的副本。
+- `Description` - This is a copy of the description in your extension's JSON manifest.
 
   ```xml
   <uap:VisualElements
@@ -163,13 +163,13 @@ Package.appxmanifest 中的某些值需要与在 JSON 清单中定义的值相�
   ```
 
 
-### 资源文件夹
+### Assets folder
 
-在 "资源" 文件夹中，你将需要三个不同的图标大小。 这些图标将在 Microsoft Store 和 Windows UI 中使用。 有关这些图标的详细信息，请参阅[设计](./../design.md#icons-for-packaging)指南。
+Within the Assets folder you will need three different icon sizes. These icons will be used in the Microsoft Store and the Windows UI. For more information on these icons, see the [Design](./../design.md#icons-for-packaging) guide.
 
-![其中有三个图标大小的 "资源" 文件夹](./../../media/assets-folder.png)
+![assets folder with three icon sizes in it](./../../media/assets-folder.png)
 
-创建必要的 UI 资源后，请更新 Package.appxmanifest 以指向正确的文件：
+Once you've created the necessary UI assets, update AppXManifest.xml to point to the correct files:
 
 - 44x44
 
@@ -190,37 +190,37 @@ Package.appxmanifest 中的某些值需要与在 JSON 清单中定义的值相�
   ```
 
 
-### 扩展文件夹
-将扩展文件（保留文件夹结构）复制到扩展文件夹中。 请确保 `manifest.json` 您的扩展文件夹位于根位置。
+### Extension folder
+Copy your extension files (keeping the folder structure) into the Extension folder. Make sure `manifest.json` is at the root your Extension folder.
 
-![包含所有扩展名文件的扩展文件夹](./../../media/extension-folder.png)
+![extension folder with all extension files in it](./../../media/extension-folder.png)
 
 
-### 支持多个区域设置
-如果你的扩展支持多种语言，你可能希望配置包含你所需的所有区域设置的 AppX 程序包，以便正确本地化的图标和说明显示在 Microsoft Store 中。 有关详细信息，请参阅[本地化扩展包](./localizing-extension-packages.md)。
+### Supporting more than one locale
+If your extension supports more than one language, you may want to configure the AppX package with all the locales that you need so that the correct localized icon and description appear in the Microsoft Store. See [Localizing extension packages](./localizing-extension-packages.md) for more information.
 
-### 创建 Appx
+### Creating an Appx
 
-若要创建 Appx，你需要查找 makeappx 的路径。 如果您使用的是64位计算机，则通常位于以下位置。
+To create an Appx, you'll need to find the path for makeappx. This is usually located in the following location if you're on a 64-bit machine.
 
 `C:\Program Files (x86)\Windows Kits\10\bin\x64`
 
-执行以下命令以创建适用于您的扩展的 AppX 程序包：
+Execute the following command to create the AppX package for your extension:
 
 `[Path to makeappx] makeappx pack /h SHA256 /d [Path to package folder created in #1] /p [Path to the appx file that you want to create]`
 
-在你填写完路径后，此操作应如下所示：
+This should look something like this once you've filled in the paths:
 
 `C:\Program Files (x86)\Windows Kits\10\bin\x64>makeappx.exe pack /h SHA256 /d "C:\Extension\My Extension" /p C:\Extension\MyExtension.appx`
 
-### 解包 Appx
-你可能需要解压缩以前生成的 AppX，并将其用作你的扩展的下一个迭代的起始点，或确认是否正确创建了 AppX。
+### Unpacking an Appx
+You may want to unpack a previously generated AppX and use it as a starting point for the next iteration of your extension or to confirm that the AppX was created correctly.
 
-若要执行此操作，你可以执行以下命令来解压缩 Microsoft Edge 扩展的 AppX 程序包：
+To do this, you can execute the following command to unpack the AppX package of your Microsoft Edge extension:
 
 `[Path to makeappx] makeappx unpack /v /p [Path to appx file you want to unpack] /d [Path to the location where you want to create the package folder]`
 
-填写以下内容时，此内容应如下所示：
+This should look something like this when filled out:
 
 `C:\Program Files (x86)\Windows Kits\10\bin\x64>makeappx.exe unpack /v /p "C:\Extension\MyExtension.appx" /d "C:\Extension\My Extension"`
 
@@ -228,40 +228,40 @@ Package.appxmanifest 中的某些值需要与在 JSON 清单中定义的值相�
 
 
 
-## 测试 AppX 程序包
+## Testing an AppX package
 
-你可以通过在 Microsoft Edge 中旁加载来测试你的 Microsoft Edge 扩展 AppX 程序包。 旁加载扩展 AppX 程序包类似于将通用 Windows 应用旁加载。 你将需要创建用于对程序包进行签名的证书，然后将程序包添加到 Windows。
+You can test your Microsoft Edge extension AppX package by sideloading it in Microsoft Edge. Sideloading the extension AppX package is similar to sideloading a Universal Windows app. You will need to create a certificate for signing the package, and then add the package to Windows.
 
-### 签发
+### Signing
 
-了解[如何创建应用包签名证书](https://msdn.microsoft.com/library/windows/desktop/jj835832.aspx)以及[如何使用 SignTool](https://msdn.microsoft.com/library/windows/desktop/jj835835.aspx)对程序包的签名和认证过程的相关信息进行签名。
+See [How to create an app package signing certificate](https://msdn.microsoft.com/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
 
 > [!NOTE]
-> 您无需在将扩展程序包提交到 Microsoft Store 之前对其进行签名;应用商店接收过程将负责处理你的工作！
+> You do not need to sign an extension package before submitting it to the Microsoft Store; the Store ingestion process will take care of that for you!
 
-使用你创建的证书对程序包进行签名后，在将其安装到本地计算机的 "受信任的证书" 存储中之前，该证书仍不受本地计算机用于部署应用程序包的信任。 你可以使用 Certutil，它附带 Windows 执行此操作。
+After you've signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
 
-若要通过 WindowsCertutil 安装证书，请以管理员身份运行 Cmd.exe 并运行以下命令：
+To install certificates with WindowsCertutil.exe, run Cmd.exe as administrator and run the following command:
 
 `Certutil -addStore TrustedPeople MyKey.cer`
 
-不再使用证书后，建议通过从管理员命令提示符运行以下命令来删除它们：
+Once the certificates are no longer in use, it is recommended that you remove them by running the following command from an administrator command prompt:
 
 `Certutil -delStore TrustedPeople certID`
 
-CertID 是证书的序列号。 若要确定证书序列号，请运行以下命令：
+The certID is the serial number of the certificate. To determine the certificate serial number, run the following command:
 
 `Certutil -store TrustedPeople`
 
-### 部署
-你可以通过在 PowerShell 中运行以下命令来部署 Microsoft Edge 扩展 AppX 程序包（管理员）：
+### Deploying
+You can deploy the Microsoft Edge Extension AppX package by running the following command in PowerShell (as administrator):
 
 `Add-AppxPackage [path to AppX]`
 
-## 通过 WebDriver 进行自动化测试
+## Automated testing with WebDriver
 
-在 "周年纪念更新" 中，你可以通过 WebDriver 在 Microsoft Edge 中以编程方式旁加载你的扩展，从而在 WebDriver 模式下启动 Microsoft Edge 时启用自动测试扩展。 这将允许你为处理页面上的内容的任何扩展设置自动测试，并验证是否表现出了正确的行为。
+As of the Anniversary Update, you can programmatically sideload your extension in Microsoft Edge with WebDriver, enabling automated testing of extensions when Microsoft Edge is launched in WebDriver mode. This will allow you to set up automated tests for any extension that manipulates content on a page and verify that the correct behavior is exhibited.
 
-若要旁加载您的扩展以进行自动测试，您需要将您的扩展文件夹存储在 "下" `%LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\` 。 扩展位于目录中后 `LocalState` ，你将需要创建一个 [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) 对象，并向 `extensionPaths` 其添加功能。 此功能的值是 `LocalState` 当 Microsoft Edge 在 WebDriver 模式下启动时，你希望在侧面加载的扩展（位于目录中）的绝对路径的数组。
+To sideload your extension for automated testing, you'll need to store your extension's folder under `%LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\`. Once your extension is in the `LocalState` directory, you'll need to create an [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) object, and add the `extensionPaths` capability to it. The value of this capability is an array of absolute paths to the extensions (in the `LocalState` directory) you wish to have side loaded when Microsoft Edge starts in WebDriver mode.
 
-有关 WebDriver 的 Microsoft Edge 中的端加载扩展的完整示例，请查看以下[c # 文件](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs)。
+Check out the following [C# file](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs) for a complete sample on side loading extensions in Microsoft Edge with WebDriver.

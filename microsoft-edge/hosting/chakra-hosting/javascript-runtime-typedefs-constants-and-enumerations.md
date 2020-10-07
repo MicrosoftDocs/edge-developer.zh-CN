@@ -1,6 +1,6 @@
 ---
-description: JavaScript 运行时（JsRT） typedef、常量和枚举支持将脚本功能添加到在 Windows 上运行的桌面和服务器端应用程序。
-title: JavaScript 运行时 Typedef、常量和枚举
+description: JavaScript Runtime (JsRT) typedefs, constants, and enumerations support adding scripting capabilities to desktop and server-side applications running on Windows.
+title: JavaScript Runtime Typedefs, Constants, and Enumerations
 ms.date: 06/08/2020
 ms.prod: microsoft-edge
 ms.topic: article
@@ -15,15 +15,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "10752260"
 ---
-# JavaScript 运行时 Typedef、常量和枚举  
+# JavaScript Runtime Typedefs, Constants, and Enumerations  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-JavaScript 运行时（JsRT） typedef、常量和枚举支持将脚本功能添加到在 Windows 上运行的桌面和服务器端应用程序。  
+JavaScript Runtime (JsRT) typedefs, constants, and enumerations support adding scripting capabilities to desktop and server-side applications running on Windows.  
 
-## 本部分内容  
+## In this section  
 
-以下全局 typedef 支持 JsRT 托管：  
+The following global typedefs support JsRT hosting:  
 
 *   [JsBackgroundWorkItemCallback Typedef](./jsbackgroundworkitemcallback-typedef.md)  
 *   [JsBeforeCollectCallback Typedef](./jsbeforecollectcallback-typedef.md)  
@@ -45,24 +45,24 @@ JavaScript 运行时（JsRT） typedef、常量和枚举支持将脚本功能添
 *   [JsThreadServiceCallback Typedef](./jsthreadservicecallback-typedef.md)  
 *   [JsValueRef Typedef](./jsvalueref-typedef.md)  
 
-以下常量支持 JsRT 托管：  
+The following constants support JsRT hosting:  
 
-*   [JS_INVALID_PROPERTYID 常量](./js-invalid-propertyid-constant.md)  
+*   [JS_INVALID_PROPERTYID Constant](./js-invalid-propertyid-constant.md)  
 *   [JS_INVALID_REFERENCE 常量](./js-invalid-reference-constant.md)  
 *   [JS_INVALID_RUNTIME_HANDLE 常量](./js-invalid-runtime-handle-constant.md)  
-*   [JS_SOURCE_CONTEXT_NONE 常量](./js-source-context-none-constant.md)  
+*   [JS_SOURCE_CONTEXT_NONE Constant](./js-source-context-none-constant.md)  
 
-以下枚举支持 JsRT 托管：  
+The following enumerations support JsRT hosting:  
 
-*   [JsErrorCode 枚举](./jserrorcode-enumeration.md)  
+*   [JsErrorCode Enumeration](./jserrorcode-enumeration.md)  
 *   [JsMemoryEventType 枚举](./jsmemoryeventtype-enumeration.md)  
 *   [JsPropertyIdType 枚举](./jspropertyidtype-enumeration.md)  
 *   [JsRuntimeAttributes 枚举](./jsruntimeattributes-enumeration.md)  
 *   [JsRuntimeVersion 枚举](./jsruntimeversion-enumeration.md)  
 *   [JsTypedArrayType 枚举](./jstypedarraytype-enumeration.md)  
-*   [JsValueType 枚举](./jsvaluetype-enumeration.md)  
+*   [JsValueType Enumeration](./jsvaluetype-enumeration.md)  
 
-## 另请参阅  
+## See also  
 
-*   [托管 JavaScript 运行时](./hosting-the-javascript-runtime.md)  
-*   [JavaScript 运行时托管](../javascript-runtime-hosting.md)  
+*   [Hosting the JavaScript Runtime](./hosting-the-javascript-runtime.md)  
+*   [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)  

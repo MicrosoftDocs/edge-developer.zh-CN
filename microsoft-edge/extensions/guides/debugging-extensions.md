@@ -1,12 +1,12 @@
 ---
-description: 使用 F12 开发人员工具，了解如何调试扩展的后台脚本、内容脚本和扩展页。
-title: 扩展-调试
+description: With F12 Developer Tools, learn how to debug an extension's background script, content scripts, and extension pages.
+title: Extensions - Debugging
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、javascript、开发人员、调试、调试
+keywords: edge, web development, html, javascript, developer, debug, debugging
 ms.custom: seodec18
 ms.openlocfilehash: 34488870cb4e4a92a9d57859509ce7d1176cf284
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,78 +15,78 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563301"
 ---
-# 调试扩展  
+# Debugging extensions  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-你可以使用 F12 开发人员工具在 Microsoft Edge 中调试你的扩展。
+You can debug your extensions in Microsoft Edge by using F12 Developer Tools.
 
-下面的视频介绍了一个有问题的 Microsoft Edge 扩展，并浏览每个调试方案并按方式进行修复。 有关详细信息，请参阅下面的分步说明。
+The following video goes through a buggy Microsoft Edge extension, walking though each debugging scenario and fixing it up along the way. See the step-by-step instructions below for more info.
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Debugging-Microsoft-Edge-Extensions/player]
 
 
 > [!NOTE]
-> 为了利用对 F12 的扩展调试，您必须首先打开关于：标志的开发人员功能。 有关如何执行此操作的详细信息，请参阅[添加和删除扩展](./adding-and-removing-extensions.md)。
+> In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](./adding-and-removing-extensions.md) for details on how to do this.
 
 
-## 后台脚本调试
-若要开始调试你的扩展的后台脚本，请执行以下操作：
+## Background script debugging
+To start debugging the background script of your extension:
 
-1. 单击 "**更多" （...）** ，然后单击 "**扩展**" 以转到 "扩展" 窗格中。  
- !["更多" 按钮](./../media/morebutton.png)
-2. 单击要调试的扩展。
-3. 单击 "**背景页**" 链接以弹出后台进程的 F12。  
- !["检查链接" 选项的选定扩展视图](./../media/debug-inspect.png)
-4. 选择 F12 中的 "**调试器**" 选项卡。
-5. 导航到并选择您的扩展的后台脚本。
-6. 通过单击源代码行号的左侧，放置用于调试的断点。  
- ![显示带中断点的后台脚本的 f12 控制台](./../media/debug-f12-background.png)
-7. 选择 "**控制台**" 选项卡，然后执行命令 " `location.reload()` "。 这将重新执行后台脚本，使你可以逐句通过代码。  
- ![带有位置的控制台。已输入重新加载](./../media/debug-f12-background-console.png)
+1. Click on **More (...)** followed by **Extensions** to go into the extension pane.  
+ ![more button](./../media/morebutton.png)
+2. Click on the extension that you want to debug.
+3. Click on the **Background page** link to bring up F12 for the background process.  
+ ![selected extension view of options with inspect link](./../media/debug-inspect.png)
+4. Select the **Debugger** tab in F12.
+5. Navigate to and select your extension's background script.
+6. Place breakpoints for debugging by clicking to the left of the source code line number.  
+ ![f12 console showing background script with break points](./../media/debug-f12-background.png)
+7. Select the **Console** tab and execute the command "`location.reload()`". This will re-execute the background script, allowing you to step through your code.  
+ ![console with location.reload entered](./../media/debug-f12-background-console.png)
 
 
-## 内容脚本调试
-要开始调试您的扩展的内容脚本，请执行以下操作：
+## Content script debugging
+To start debugging the content script of your extension:
 
-1. 通过导航到 "**其他（...）** " 按钮并选择 **"f12 开发工具"** ，或按键盘上的 F12，启动 F12。
-2. 导航到您的扩展内容脚本，然后选择它。 当前正在运行的扩展的内容脚本将由每个扩展名的不同文件夹进行描绘。
+1. Launch F12 by either navigating to the **More (...)** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.
+2. Navigate to and select your extension's content script. Content scripts for extensions currently running will be depicted by a different folder for each extension.
 
     > [!NOTE]
-    > 将仅显示运行的内容脚本。
+    > Only running content scripts will appear.
 
-3. 通过单击源代码行号的左侧，放置用于调试的断点。  
- ![正在调试的内容脚本的 f12](./../media/debug-content-f12.png)
-4. 刷新浏览器选项卡，通过代码开始单步执行。
-
-
+3. Place breakpoints for debugging by clicking to the left of the source code line number.  
+ ![f12 with content script being debugged](./../media/debug-content-f12.png)
+4. Refresh the browser tab to begin stepping though your code.
 
 
-## 扩展页面调试
-
-可使用两种方法来访问用于调试的扩展页面的源代码。 一种方法适用于各种页面，而另一种方法仅适用于弹出式页面。
-
-### 调试任何扩展页
-以下方法适用于所有扩展名页面，例如 "选项" 页面和弹出窗口：
 
 
-1. 右键单击您的页面的背景。
-2. 选择 **"查看源"**。
+## Extension page debugging
 
-   ![带 f12 的弹出调试](./../media/debug-popup-select.png)
+There are two methods that can be used for accessing the source code of your extension page for debugging. One method applies to a variety of pages while the other only works for popup pages.
 
-3. 打开 F12 后，在要调试的文件中放置断点。
+### Debugging any extension page
+The following method works for all extension pages like the options page and popups:
 
-   ![带 f12 的弹出调试](./../media/debug-popup-f12.png)
-4. 选择 "**控制台**" 选项卡，然后执行命令 `location.reload()` 。 这将重新执行页面脚本，使你可以逐句通过代码。  
 
-   ![带有位置的控制台。已输入重新加载](./../media/debug-f12-background-console.png)
+1. Right-click on the background of your page.
+2. Select **"View source"**.
 
-### 调试弹出窗口扩展页
-虽然调试扩展页的方法也适用于弹出窗口扩展页面，但以下步骤概括了调试弹出窗口的另一种方法：
+   ![popup debugging with f12](./../media/debug-popup-select.png)
 
-1. 右键单击您的扩展名图标。
-2. 选择 **"检查弹出窗口"**。
+3. Once F12 opens, place breakpoints within the file you want to debug.
 
-   ![弹出调试检查](./../media/debug-popup-inspect.png)
-3. 按照上面的步骤3和4操作，放置断点并重新加载弹出窗口。
+   ![popup debugging with f12](./../media/debug-popup-f12.png)
+4. Select the **Console** tab and execute the command `location.reload()`. This will re-execute the page script, allowing you to step through your code.  
+
+   ![console with location.reload entered](./../media/debug-f12-background-console.png)
+
+### Debugging a popup extension page
+While the method for debugging extension pages also applies to popup extension pages, the following steps outline another way to debug your popup:
+
+1. Right-click your extension's icon.
+2. Select **"Inspect popup"**.
+
+   ![popup debug inspect](./../media/debug-popup-inspect.png)
+3. Follow steps 3 and 4 above for placing breakpoints and reloading the popup.

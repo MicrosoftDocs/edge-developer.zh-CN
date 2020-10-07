@@ -1,12 +1,12 @@
 ---
-description: 使用 "网络" 面板监视和分析页面资源请求
-title: DevTools-网络
+description: Use the Network panel to monitor and profile page resource requests
+title: DevTools - Network
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge，web 开发，f12 工具，devtools，网络，加载时间，http，https，浏览器缓存，HAR
+keywords: microsoft edge, web development, f12 tools, devtools, network, load time, http, https, browser cache, HAR
 ms.custom: seodec18
 ms.openlocfilehash: 0b190f5163f9b7a9f9920877a94577177053e4f6
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,207 +15,207 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563463"
 ---
-# 网络
+# Network
 
-使用 "**网络**" 面板监控、检查和分析通过线路发送的请求和响应。 有了它，您可以：
+Use the **Network** panel to monitor, inspect and profile the requests and responses sent over the wire. With it, you can:
 
- - 浏览该页发出的[所有资源请求的记录](#network-summary)
- - 为新用户和返回的用户[测量您的网站的加载时间](#summary-bar) 
- - 检查页面和网络之间交换[的标题、邮件正文、参数和 cookie](#request-details)
- - 在你的网站的加载时间内[识别导致瓶颈的网络事件](#timings)
+ - [Browse a record of all the resource requests](#network-summary) made by the page
+ - [Measure the load time of your site](#summary-bar) for new and returning users 
+ - [Inspect the headers, message bodies, parameters, and cookies](#request-details) exchanged between your page and the network
+ - [Identify the network events causing bottlenecks](#timings) in the load time of your site
 
-![Microsoft Edge DevTools 网络面板](./media/network.png)
+![The Microsoft Edge  DevTools Network panel](./media/network.png)
 
-## 网络摘要
+## Network summary
 
-打开 DevTools 时，默认情况下，网络分析处于打开状态。 即使在与*网络*不同的 DevTools 面板中工作时，你的活动浏览器选项卡中的所有网络流量都将记录在 "网络摘要" 列表中。
+When you open  DevTools, network profiling is turned on by default. All the network traffic from your active browser tab is recorded in the network summary list, even while you are working in a different  DevTools panel than *Network*.
 
-![正在进行的网络分析指示器](./media/network_profile_indicator.png)
+![In-progress network profiling indicator](./media/network_profile_indicator.png)
 
-### 工具栏
+### Toolbar
 
-工具栏提供用于分析和筛选页面的网络活动的控件。 
+The toolbar provides controls for profiling and filtering the network activity of your page. 
 
-![网络探查器工具栏](./media/network_toolbar.png)
+![Network profiler toolbar](./media/network_toolbar.png)
 
-1. **启动/停止分析会话**：默认情况下，网络分析处于打开状态，网络流量将记录在[**网络探查器**](#network-request-list)列表中。 你可以通过 "**停止**" （）按钮关闭网络捕获 `Ctrl+E` 。
+1. **Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-request-list) list. You can turn off network capture with the **Stop** (`Ctrl+E`) button.
 
-2. **导出为 HAR**：您可以将当前网络分析会话（）另存 `Ctrl+S` 为 JSON 格式的[HTTP 存档（HAR）](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html)文件。 
+2. **Export as HAR**: You can save the current network profiling session (`Ctrl+S`) as a JSON-formatted [HTTP Archive (HAR)](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) file. 
 
-3. **内容类型筛选**器：根据特定内容请求（*文档、样式表、图像、脚本、媒体、字体、XHR 等*）筛选网络请求列表。 默认情况下，显示所有内容类型。
+3. **Content type filter**: Filter the network request list by specific content requests (*Documents, Style sheets, Images, Scripts, Media, Fonts, XHR, Other*). By default all content types are shown.
 
-4. **查找**：筛选（ `Ctrl+F` ）包含指定搜索字符串的条目名称（资源路径）的网络请求列表。
+4. **Find**: Filter (`Ctrl+F`) the network request list by entry names (resource paths) containing a specified search string.
 
-5. **始终从服务器刷新**：按下此按钮将强制从网络加载页面资源，而不是浏览器缓存。 您可以通过按一次即可从网络刷新页面 `Ctrl+F5` 。
+5. **Always refresh from server**: Depressing this button will force page resources to load from the network rather than the browser cache. You can refresh the page from  network a single time by pressing `Ctrl+F5`.
 
-6. **跳过所有网络请求的服务工作人员**：将已注册的服务工作人员禁用为网络代理。 
+6. **Bypass Service Worker for all network requests**: Disable your registered service workers as network proxies. 
 
-7. 清除按钮
+7. Clear buttons
 
-   - **清除缓存**：删除浏览器缓存中存储的所有资源（并模拟加载页面的首次体验）。
-   - **清除 cookie**：删除给定域的所有 cookie （并模拟网站的首次体验）。
-   - **清除导航上的条目**：在页面导航时清除录制的流量。 默认情况下，此项处于打开状态。
-   - **清除会话**：从 "**网络摘要**" 列表中清除所有网络请求条目。
+   - **Clear cache**: Removes all resources stored in the browser cache (and emulates a first-time experience loading the page).
+   - **Clear cookies**: Removes all cookies for the given domain (and emulates a first-time experience of the site).
+   - **Clear entries on navigate**: Recorded traffic is cleared upon page navigation. This is turned on by default.
+   - **Clear session**: Clears all network request entries from the **Network summary** list.
 
-### 网络请求列表
+### Network request list
 
-所有网络流量都将记录到列表中（在导航、手动清除或 DevTools 关闭之前将其清除）。 单击任何条目都将打开[该请求的更详细视图](#request-details)。
+All network traffic is recorded to a list (until cleared upon navigation, manually cleared, or  DevTools are closed). Clicking on any entry will open a more [detailed view of the request](#request-details).
 
-![网络请求列表](./media/network_request_list.png)
+![Network request list](./media/network_request_list.png)
 
-网络请求列表包含以下信息： 
+The network request list includes the following info: 
 
-列 | 描述 
+Column | 描述 
 :------------ | :------------- 
-**名称** | 请求的名称和 URL 路径
-**协议** |  请求的协议类型（如*HTTPS、HTTP/2*）
-**方法** |    用于请求的[HTTP 方法](https://developer.mozilla.org/docs/Web/HTTP/Methods)
-**结果** |    [HTTP 响应状态](https://developer.mozilla.org/docs/Web/HTTP/Status)代码
-**内容类型** |  请求的媒体类型（[MIME 类型](https://en.wikipedia.org/wiki/Media_type)）
-**已接收** | 由服务器发送的响应的大小（不是针对缓存的响应进行计算）
-**时间** |  加载服务器响应的时间（未针对缓存的响应进行计算）
-**启动** | 负责启动请求的子系统（如分析程序 *、重定向、脚本、其他*）
-**时间线** | 请求的网络事件（如已*停止、解析（DNS）、连接（TCP）、SSL、发送、等待（TTFB）、下载*）的视觉日程表。 将鼠标悬停在图表上可提供网络[网络计时](#timings)的粒度更细的细分。
+**Name** | Name and URL path of the request
+**Protocol** |  Type of protocol for the request (such as *HTTPS, HTTP/2*)
+**Method** |    [HTTP method](https://developer.mozilla.org/docs/Web/HTTP/Methods) used for the request
+**Result** |    [HTTP response status](https://developer.mozilla.org/docs/Web/HTTP/Status)  code
+**Content type** |  Type of media requested ([MIME type](https://en.wikipedia.org/wiki/Media_type))
+**Received** | Size of the response as delivered by the server (not calculated for cached responses)
+**Time** |  Time to load the server response (not calculated for cached responses)
+**Initiator** | Subsystem responsible for initiating the request (such as *Parser, Redirect, Script, Other*)
+**Timeline** | Visual timeline for the network events of the request (such as *Stalled, Resolving(DNS), Connecting(TCP), SSL, Sending, Waiting(TTFB), Downloading*). Hovering over the chart provides the more granular breakdown of network [network timings](#timings)).
 
-### 摘要栏
+### Summary bar
 
-**网络**面板底部的栏汇总了网络分析会话期间 HTTP 网络错误、请求、传输和加载时间的总数（即，由于 DevTools 已打开并记录网络流量）。
+The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since  DevTools were opened and recording network traffic).
 
-![网络摘要栏](./media/network_summary_bar.png)
+![Network summary bar](./media/network_summary_bar.png)
 
-**经过的时间**表示分析会话开始与最后一个资源从网络下载之间的时间之间的时间。 从浏览器缓存中获取的资源不会计入此数字的时间。 
+**Elapsed time** means the time between the start of the profiling session and when the last resource was downloaded from the network. Resources fetched from the browser cache do not accrue time to this number. 
 
-**DOM 加载时间**表示分析会话开始与触发[DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded)事件之间的时间，指示页面文档的结构已加载和分析（虽然不一定是任何样式表、图像或 subframes）。
+**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).
 
-"**页面加载时间**" 指的是分析会话开始与触发[加载](https://developer.mozilla.org/docs/Web/Events/load)事件之间的时间，指示页面文档（及其所有资源）已完全加载。
+**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.
 
-## 请求详细信息
+## Request details
 
-单击 "[**网络摘要**](#network-summary)" 列表中的任何条目将在 "[**请求详细信息**](#request-details)" 窗格中打开以下每个选项卡中的详细信息。
+Clicking on any entry in the [**Network summary**](#network-summary) list will open the [**Request details**](#request-details) pane with further information in each of the following tabs.
 
-![网络请求详细信息窗格](./media/network_request_details.png)
+![Network request details pane](./media/network_request_details.png)
 
-### 标题
-显示发送到服务器或从服务器接收的[HTTP 标头](https://developer.mozilla.org/docs/Web/HTTP/Headers)。 右键单击任意标题条目以将其复制（ `Ctrl+C` ）到剪贴板。 您也可以通过按住 `Shift` 键或选择 "全部" （）来选择多个条目 `Ctrl+A` 。
+### Headers
+Displays the [HTTP headers](https://developer.mozilla.org/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
 
-### 正文
-显示请求和响应负载的正文数据（如果可用）。
+### Body
+Displays the body data (if available) of the request and response payloads.
 
-图像内容与尺寸和大小数据一起显示。
+Image content is displayed with dimensions and size data.
 
-文本内容显示在（只读）编辑器中，其中包含使用**整齐打印**和/或换**行**设置 minified 内容格式的选项，以便更轻松地提高可读性。
+Text content appears in a (read-only) editor with options to format minified content with **Pretty print** and/or **Word wrap** for easier readability.
 
-!["请求详细信息" 窗格的 "正文" 选项卡](./media/network_details_body.png)
+![Body tab of the request details pane](./media/network_details_body.png)
 
-### 参数
-显示获取请求的查询字符串参数。 在标头中发送 POST 请求的参数时，GET 请求将其包含在 URL 中。 我们将在此处分解，以便更容易阅读。
+### Parameters
+Displays query string parameters for GET requests. While the parameters of POST requests are sent in the headers, GET requests include them in the URL. They're broken out here for easier reading.
 
-右键单击任意行，将其复制（ `Ctrl+C` ）到剪贴板。 您也可以通过按住 `Shift` 键或选择 "全部" （）来选择多个条目 `Ctrl+A` 。
+Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
 
-### Cookie
-显示作为键/值对发送或接收的 cookie。
+### Cookies
+Displays cookies that are sent or received as key/value pairs.
 
-右键单击任意行，将其复制（ `Ctrl+C` ）到剪贴板。 您也可以通过按住 `Shift` 键或选择 "全部" （）来选择多个条目 `Ctrl+A` 。
+Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
 
-你可以从[工具栏](#network-summary)（"**清除 cookie** " 按钮）清除给定域的存储 cookie。 
+You can clear the stored cookies for the given domain from the [Toolbar](#network-summary) (**Clear cookies** button). 
 
-### 计时
+### Timings
 
-"**计时**" 选项卡提供加载所选资源所涉及的网络事件的时间线。 这类似于在 "[网络请求" 列表](#network-request-list)的 "*时间线*" 列中找到的信息，但还包括针对通过线路发送的请求所导致的事件，例如在请求队列中等待（*停止*）的时间、DNS 解析和建立 TCP 连接。 
+The **Timings** tab provides a timeline of network events involved in the loading of the selected resource. This is similar to the information found in the *Timeline* column of the [Network request list](#network-request-list), but also includes the events leading up to the request being sent over the wire, such as time spent waiting (*Stalled*) in the request queue, DNS resolution, and establishing the TCP connection. 
 
-![请求详细信息窗格的 "计时" 选项卡](./media/network_details_timings.png)
+![Timings tab of the request details pane](./media/network_details_timings.png)
 
-将注明对其他资源的重定向，然后单击该链接即可将焦点设置到 "网络[请求详细信息](#request details)" 窗格中的该资源。
+Redirections to/from other resources are noted, and clicking on the link will set focus to that resource in the network [request details](#request details) pane.
 
-从缓存中加载的资源不受网络延迟的影响，因此不会显示网络*计时*图表。
+Resouces loaded from the cache are not affected by network latency, so no network *Timings* chart will display.
 
-![从缓存加载的重定向资源](./media/network_details_timings_cache_redirect.png)
+![Redirected resource loaded from the cache](./media/network_details_timings_cache_redirect.png)
 
-下面是你可能会看到的给定资源的不同网络事件，按时间顺序排列：
+Here are the different network events you might see for a given resource, in chronological order:
 
-#### 停止
+#### Stalled
 
-等待请求队列中的可用网络连接所用的时间。 对于 HTTP 1.0/1.1，Microsoft Edge 允许每个主机名最多同时有6个（6）个 TCP 连接。 
+Time spent waiting for an available network connection in the request queue. For HTTP 1.0/1.1, Microsoft Edge allows a maximum of six (6) simultaneous TCP connections per hostname. 
 
-#### 解析（DNS）
+#### Resolving (DNS)
 
-在 DNS （[域名系统](https://en.wikipedia.org/wiki/Domain_Name_System)）中查找资源的主机名的 IP 地址所花费的时间。
+Time spent looking up the IP address for the hostname of the resource in the DNS ([Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)).
 
-#### 连接（TCP）
+#### Connecting (TCP)
 
-建立 TCP （[传输控制协议](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)）连接所花费的时间。
+Time spent establishing the TCP ([Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) connection.
 
 #### SSL
 
-与主机的[代理服务器](https://en.wikipedia.org/wiki/Proxy_server)协商 SSL （[安全套接字层](https://en.wikipedia.org/wiki/Transport_Layer_Security)）连接所花费的时间。
+Time spent negotiating a SSL ([Secure Sockets Layer](https://en.wikipedia.org/wiki/Transport_Layer_Security))  connection with the [proxy server](https://en.wikipedia.org/wiki/Proxy_server) for the host.
 
-#### 给
+#### Sending
 
-发送资源请求所用的时间。
+Time spent sending the resource request.
 
-#### 等待（TTFB）
+#### Waiting (TTFB)
 
-等待主机服务器响应的第一个字节所用的时间（"到首次字节的时间" 或*TTFB*）。
+Time spent waiting for the first byte of the response from the host server ("time to first byte", or *TTFB*).
 
-#### 下载
+#### Downloading
 
-从服务器读取响应所花费的时间。
+Time spent reading the response from the server.
 
-## 指向
+## Shortcuts
 
-| 操作                         | 快捷方式     |
+| Action                         | Shortcut     |
 |:-------------------------------|:-------------|
-| 开始/停止分析会话 | `Ctrl` + `E` |
-| 导出为 HAR                  | `Ctrl` + `S` |
-| 查找                           | `Ctrl` + `F` |
-| 复制                           | `Ctrl` + `C` |
+| Start / Stop profiling session | `Ctrl` + `E` |
+| Export as HAR                  | `Ctrl` + `S` |
+| Find                           | `Ctrl` + `F` |
+| Copy                           | `Ctrl` + `C` |
 
-## 已知问题
+## Known Issues
 
-### 网络收集代理无法启动。
+### The network collection agent failed to start.
 
-如果您看到此错误消息：**网络收集代理无法**在网络工具中启动，请按照以下步骤进行解决。
+If you see this error message: **The network collection agent failed to start** in the Network tool, follow these steps for a workaround.
 
-1. 按 `Windows Key`  +  `R` 。
+1. Press `Windows Key` + `R`.
 
-2. 在 "运行" 对话框中，输入**services.msc**。
-![已知问题-1](./media/known_issues_1.PNG)
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
 
-3. 找到**Microsoft （R）诊断中心标准收集器服务**，然后右键单击它。
-![已知问题-2](./media/known_issues_2.PNG)
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
 
-4. 重新启动**Microsoft （R）诊断中心标准收集器服务**。
-![已知问题-3](./media/known_issues_3.PNG)
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
 
-5. 关闭 "Microsoft Edge 开发工具" 和 "选项卡"。打开新选项卡，导航到您的页面，然后按 `F12` 。
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
 
-6. 现在，你应该可以在**网络**和你的网页的网络请求旁边看到一个播放标记。
-![已知问题-4](./media/known_issues_4-network.PNG)
+6. You should now see a Play badge next to **Network** and the network requests for your webpage.
+![known-issues-4](./media/known_issues_4-network.PNG)
 
-仍遇到问题？ 请使用 "**发送反馈**" 图标向我们发送您的反馈！ 
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
-![已知问题-5](./media/known_issues_5.PNG)
+![known-issues-5](./media/known_issues_5.PNG)
 
-### 网络收集代理无法停止。
+### The network collection agent failed to stop.
 
-如果您看到此错误消息：**网络收集代理无法**在网络工具中停止，请按照以下步骤进行解决。
+If you see this error message: **The network collection agent failed to stop** in the Network tool, follow these steps for a workaround.
 
-1. 按 `Windows Key`  +  `R` 。
+1. Press `Windows Key` + `R`.
 
-2. 在 "运行" 对话框中，输入**services.msc**。
-![已知问题-1](./media/known_issues_1.PNG)
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
 
-3. 找到**Microsoft （R）诊断中心标准收集器服务**，然后右键单击它。
-![已知问题-2](./media/known_issues_2.PNG)
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
 
-4. 重新启动**Microsoft （R）诊断中心标准收集器服务**。
-![已知问题-3](./media/known_issues_3.PNG)
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
 
-5. 关闭 "Microsoft Edge 开发工具" 和 "选项卡"。打开新选项卡，导航到您的页面，然后按 `F12` 。
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
 
-6. 现在，你应该可以在**网络**和你的网页的网络请求旁边看到一个播放标记。
-![已知问题-4](./media/known_issues_4-network.PNG)
+6. You should now see a Play badge next to **Network** and the network requests for your webpage.
+![known-issues-4](./media/known_issues_4-network.PNG)
 
-仍遇到问题？ 请使用 "**发送反馈**" 图标向我们发送您的反馈！ 
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
-![已知问题-5](./media/known_issues_5.PNG)
+![known-issues-5](./media/known_issues_5.PNG)

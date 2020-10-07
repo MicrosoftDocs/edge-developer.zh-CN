@@ -12,10 +12,10 @@ ms.lasthandoff: 06/18/2020
 ms.locfileid: "10751953"
 ---
 > [!NOTE]
-> 本文档中介绍的功能将不再保留。 有关新的 WebView2 控件的详细信息，请参阅[Microsoft Edge WebView2 （预览版）简介][MicrosoftEdgeWebview2Index]。  
+> The features described in this document are no longer being maintained. For more information on the new WebView2 control, see [Introduction to Microsoft Edge WebView2 (Preview)][MicrosoftEdgeWebview2Index].  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[MicrosoftEdgeWebview2Index]: /microsoft-edge/webview2/index "Microsoft Edge （Chromium） WebView2 （预览版）"
+[MicrosoftEdgeWebview2Index]: /microsoft-edge/webview2/index "Microsoft Edge (Chromium) WebView2 (Preview)"

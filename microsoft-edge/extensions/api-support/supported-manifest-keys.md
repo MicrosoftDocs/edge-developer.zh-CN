@@ -1,12 +1,12 @@
 ---
-description: 查找有关受支持的清单键以及其已知问题/Chrome 不兼容的信息。
-title: 扩展-支持的清单键
+description: Find information on supported manifest keys as well as their known issues/Chrome incompatibilities.
+title: Extensions - Supported manifest keys
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、css、javascript、开发人员
+keywords: edge, web development, html, css, javascript, developer
 ms.openlocfilehash: deeff12251d25efaed1b40c98594c616a0d9c99a
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -14,79 +14,79 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563330"
 ---
-# 支持的清单键  
+# Supported manifest keys  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-每个扩展都具有一个 JSON 格式的清单文件，名为 .manifest。 此文件提供扩展的重要信息，范围从其名称到其权限。 除非在下面的注释中指定，否则 Microsoft Edge 清单属性将遵循与 Chrome 相同的实现。
+Every extension has a JSON-formatted manifest file, named manifest.json. This file provides important information for the extension ranging from its name to its permissions. Unless specified in a note below, the Microsoft Edge manifest properties follow the same implementation as Chrome.
 
-下面是[Microsoft EDGE JSON 清单文件](./supported-manifest-keys/json-manifest-example.md)的示例。
+Here is an example of a [Microsoft Edge JSON manifest file](./supported-manifest-keys/json-manifest-example.md).
 
-## 所需密钥
+## Required keys
 
-需要以下注册表项：
+The following keys are required:
 
-密钥 | 已知问题 | Chrome 不兼容
+Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-[授权](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/author)  | | 
+[author](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/author)  | | 
 [name](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/name) | | |
 [version](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/version) | | |
 
-## 推荐的密钥
+## Recommended keys
 
-建议使用以下注册表项：
+The following keys are recommended:
 
-密钥 | 已知问题 | Chrome 不兼容
+Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-browser_specific_settings | | 指示浏览器中的扩展的首选状态。 在将来的版本中，浏览器可能或不会根据因素（如分机的声誉）或用户地址栏中已有的按钮的总数，选择在将来的版本中尊重它。 这可用于指示图标的默认位置 `browserAction` 。 </br></br> `"browser_specific_settings": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;`"edge": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"browser_action_next_to_addressbar": true`</br>&nbsp;&nbsp;&nbsp;&nbsp;`}`</br>`}` </br></br> 在 Chrome 中不受支持。|
+browser_specific_settings | | Indicates the extension's preferred state in the browser. The browser may or may not choose to respect it in a future release, depending on factors such as the reputation of the extension, or the total number of buttons already in the user's address bar. This can be used to indicate the default position of the `browserAction` icon. </br></br> `"browser_specific_settings": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;`"edge": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"browser_action_next_to_addressbar": true`</br>&nbsp;&nbsp;&nbsp;&nbsp;`}`</br>`}` </br></br> Not supported in Chrome.|
 [default_locale](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/default_locale)| | |
 [description](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/description) | | |
-[图标](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) | | |
-[manifest_version](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/manifest_version) | | Microsoft Edge 中当前已被忽略。
+[icons](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) | | |
+[manifest_version](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/manifest_version) | | Currently ignored in Microsoft Edge.
 
 
 
-## browser_action 或 page_action 键
+## browser_action or page_action keys
 
-您只能包含以下任一键（或 none）：
+You can only include one of the following keys (or none):
 
-密钥 | 已知问题 | Chrome 不兼容
+Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-[browser_action](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action)  | | Microsoft Edge 不支持以下语法：  `browser_action : {"default_icon" : "icon.png" }`   <br/>必须指定图标的大小。 <br/>首选大小：20px、25px、30px、40px。 <br/> 其他受支持的大小：19px、35px、38px。|
-[page_action](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) | | Microsoft Edge 不支持以下语法：  `page_action : {"default_icon" : "icon.png" }`   <br/>必须指定图标的大小。 <br/>首选大小：20px、25px、30px、40px。 <br/>其他受支持的大小：19px、35px、38px。|
+[browser_action](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action)  | | Microsoft Edge does not support the following syntax:  `browser_action : {"default_icon" : "icon.png" }`   <br/>Size for icons must be specified. <br/>Preferred sizes: 20px, 25px, 30px, 40px. <br/> Other supported sizes: 19px, 35px, 38px.|
+[page_action](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) | | Microsoft Edge does not support the following syntax:  `page_action : {"default_icon" : "icon.png" }`   <br/>Size for icons must be specified. <br/>Preferred sizes: 20px, 25px, 30px, 40px. <br/>Other supported sizes: 19px, 35px, 38px.|
 
-## 可选键
+## Optional keys
 
-以下键是可选的：
+The following keys are optional:
 
-密钥 | 已知问题 | Chrome 不兼容
+Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-[背景](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background) | | Persistent 是 Microsoft Edge 的必填字段。
+[background](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background) | | Persistent is a required field for Microsoft Edge.
 [content_scripts](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts)  | | |
-[content_security_policy](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_security_policy)  | 页面的内容安全策略将阻止内容脚本中的 websocket，从而生成未定义的异常。 | Microsoft Edge 扩展目前仅支持[默认策略限制](https://developer.mozilla.org/Add-ons/WebExtensions/Content_Security_Policy#Default_content_security_policy)： `script-src 'self'; object-src 'self'` |
+[content_security_policy](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_security_policy)  | The content security policy of a page blocks websockets in content scripts, generating an undefined exception. | Microsoft Edge extensions currently only support [Default Policy Restrictions](https://developer.mozilla.org/Add-ons/WebExtensions/Content_Security_Policy#Default_content_security_policy): `script-src 'self'; object-src 'self'` |
 [incognito](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/incognito) | | | 
 key  | | |
 options_page | | |
-[授权](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions)  | | |
+[permissions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions)  | | |
 short_name  | | |
 [web_accessible_resources](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/web_accessible_resources) | | |
 
-### 支持的权限
-以下[权限](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions)受支持：
+### Supported permissions
+The following [permissions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions) are supported:
 
 
-| 权限         | 描述                                                                                                                                                                                                                                                                         |
+| Permission         | Description                                                                                                                                                                                                                                                                         |
 |:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \ <all_urls \ >       | 允许背景和内容脚本与具有额外[权限](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions#Host_permissions)的所有网页交互。                                                                                  |
-| contextMenus       | 提供对 `contextMenus` API 的访问权限。 这允许将项目添加到 Microsoft Edge 的上下文菜单。                                                                                                                                                                                     |
-| Cookie            | 提供对 API 的访问权限 `cookies` 。 这支持查询和修改 cookie 以及在更改时收到通知。                                                                                                                                                           |
-| 地理位置        | 允许扩展使用 HTML5 `geolocation` API，而不提示用户权限。                                                                                                                                                                                   |
-| 着               | 提供对 API 的访问权限 `idle` 。 这样就可以检测到计算机的空闲状态何时更改。                                                                                                                                                                                    |
-| 存储            | 提供对 API 的访问权限 `storage` 。 这将允许存储、检索和跟踪对用户数据所做的更改。                                                                                                                                                                             |
-| 选项卡               | 提供对 API 的访问权限 `tabs` ，以便与浏览器的选项卡系统交互。 这允许在浏览器中创建、修改和重新排列选项卡，包括与每个选项卡相关联的 Url。                                                                                       |
-| unlimitedStorage   | 允许[本地存储](https://developer.mozilla.org/Add-ons/WebExtensions/API/storage/local)使用无限制的存储空间（具体取决于系统资源），而不是5mb。 每个键值对的 "最大存储空间" 对也从5MB 增加到 "无限制" （具体取决于系统资源）。 |
-| webNavigation      | 提供对 API 的访问权限 `webNavigation` 。 这允许接收有关导航请求状态的通知。                                                                                                                                                              |
-| webRequest         | 提供对 API 的访问权限 `webRequest` 。 这允许观察和分析流量，以及截获、阻止或修改正在进行的请求。                                                                                                                               |
-| webRequestBlocking | 如果扩展 `webRequest` 在阻止方式中使用 API，则为必需。                                                                                                                                                                                                           |
+| \<all_urls\>       | Allows background and content scripts to interact with all webpages with extra [privileges](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions#Host_permissions).                                                                                  |
+| contextMenus       | Gives access to `contextMenus` API. This enables adding items to Microsoft Edge's context menu.                                                                                                                                                                                     |
+| cookies            | Gives access to the `cookies` API. This enable querying and modifying cookies as well as being notified when they change.                                                                                                                                                           |
+| geolocation        | Allow the extension to use the HTML5 `geolocation` API without prompting the user for permission.                                                                                                                                                                                   |
+| idle               | Gives access to the `idle` API. This enables detection of when the machine's idle state changes.                                                                                                                                                                                    |
+| storage            | Gives access to the `storage` API. This enables storing, retrieving, and tracking changes to user data.                                                                                                                                                                             |
+| tabs               | Gives access to the `tabs` API to interact with the browser's tab system. This enables creating, modifying, and rearranging tabs in the browser, including the URLs associated with each tab.                                                                                       |
+| unlimitedStorage   | Allows [storage.local](https://developer.mozilla.org/Add-ons/WebExtensions/API/storage/local) to have unlimited storage (depending on system resources) instead of 5MB. The max storage per key value pair is also increased from 5MB to unlimited (depending on system resources). |
+| webNavigation      | Gives access to the `webNavigation` API. This enables receiving notifications about the status of navigation requests.                                                                                                                                                              |
+| webRequest         | Gives access to the `webRequest` API. This enables observing and analyzing traffic, as well as intercepting, blocking or modifying request in-flight.                                                                                                                               |
+| webRequestBlocking | Required if an extension uses the `webRequest` API in a blocking fashion.                                                                                                                                                                                                           |
 
 '""'

@@ -12,10 +12,10 @@ ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941796"
 ---
 > [!NOTE]
-> 本文档面向[旧版 Microsoft Edge。][MicrosoftSupport44533505]  有关新版 Microsoft Edge 的信息，请参阅[Microsoft Edge (Chromium) DevTools。][DevtoolsGuideChromium]  
+> This documentation targets the [legacy version of Microsoft Edge][MicrosoftSupport44533505].  For information on the new Microsoft Edge, see [Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromium].  
 
 <!-- links -->  
 
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具 |Microsoft 文档"  
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
-[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "什么是 Microsoft Edge？"  
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "What is Microsoft Edge Legacy?"  

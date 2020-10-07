@@ -1,6 +1,6 @@
 ---
-description: 获取对象所属的脚本上下文。
-title: JsGetContextOfObject 函数 |Microsoft 文档
+description: Gets the script context that the object belongs to.
+title: JsGetContextOfObject Function | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,10 +20,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563132"
 ---
-# JsGetContextOfObject 函数
-获取对象所属的脚本上下文。  
+# JsGetContextOfObject Function
+Gets the script context that the object belongs to.  
   
-## 语法  
+## Syntax  
   
 ```cpp  
 STDAPI_(JsErrorCode) JsGetContextOfObject(  
@@ -32,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetContextOfObject(
 );  
 ```  
   
-#### 参数  
+#### Parameters  
  `object`  
- 要从中获取上下文的对象。  
+ The object to get the context from.  
   
  `context`  
- 对象所属的上下文。  
+ The context the object belongs to.  
   
-## 返回值  
- `JsNoError`如果操作成功，则为代码，否则为失败代码。  
+## Return Value  
+ The code `JsNoError` if the operation succeeded, a failure code otherwise.  
   
-## 备注  
- 需要活动脚本上下文。  
+## Remarks  
+ Requires an active script context.  
   
-## 要求  
- **页眉：** jsrt  
+## Requirements  
+ **Header:** jsrt.h  
   
-## 另请参阅  
- [参考（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)
+## See Also  
+ [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 JavaScript 中处理 Windows 运行时事件
+title: Handling Windows Runtime Events in JavaScript
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -23,11 +23,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942157"
 ---
-# 在 JavaScript 中处理 Windows 运行时事件  
+# Handling Windows Runtime events in JavaScript  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Windows 运行时事件在 JavaScript 中以相同的方式表示，与在 C++ 或 .NET Framework 中相同。  它们不是类属性，而是表示为传递到类和方法的 \ (小写\) `addEventListener` `removeEventListener` 字符串标识符。  例如，你可以通过将字符串传递给方法 [来为 Geolocator.PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] 事件 `positionchanged` 添加事件 `Geolocator.addEventListener` 处理程序：  
+Windows Runtime events are not represented in the same way in JavaScript as they are in C++ or the .NET Framework.  They are not class properties, but rather are represented as \(lowercase\) string identifiers that are passed to the class's `addEventListener` and `removeEventListener` methods.  For example, you can add an event handler for the [Geolocator.PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] event by passing the string `positionchanged` to the `Geolocator.addEventListener` method:  
 
 ```javascript  
 var locator = new Windows.Devices.Geolocation.Geolocator();
@@ -38,7 +38,7 @@ locator.addEventListener(
     });
 ```  
 
-还可以设置该 `locator.onpositionchanged` 属性：  
+You can also set the `locator.onpositionchanged` property:  
 
 ```javascript
 locator.onpositionchanged =
@@ -47,7 +47,7 @@ locator.onpositionchanged =
     };
 ```  
 
-.NET/C++ 和 JavaScript 之间的另一种差别是事件处理程序所采用的参数数。  在 .NET/C++ 中，处理程序有两个：事件发送方以及事件数据。  在 JavaScript 中，这两个对象作为单个对象绑 `Event` 定。  在以下示例中， `ev` 此参数既包含事件 \ (`target` the property\) 和事件数据属性 \ (这里的事件数据属性 \ (here，只 `position` 包含 \) 即可。  事件数据属性是针对每个事件记录的属性。  
+Another difference between .NET/C++ and JavaScript is the number of parameters taken by an event handler.  In .NET/C++, a handler takes two:  the event sender, and the event data.  In JavaScript, the two are bundled as a single `Event` object.  In the following example, the `ev` parameter contains both the sender of the event \(the `target` property\) and the event data properties \(here, just `position`\).  The event data properties are the ones that are documented for each event.  
 
 ```javascript
 function (ev) {
@@ -59,14 +59,14 @@ function (ev) {
 ```  
 
 > [!IMPORTANT]
-> Windows 运行时功能不适用于在运行时运行Internet Explorer。  
+> Windows Runtime features are not available for apps that run in Internet Explorer.  
 
-## 另请参阅  
+## See also  
 
-[在 JavaScript 中使用 Windows 运行时][WindowsRuntimeJavascript]  
+[Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
 
  <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "在 JavaScript 中使用 Windows 运行时 |Microsoft 文档"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class |Microsoft 文档"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class | Microsoft Docs"  

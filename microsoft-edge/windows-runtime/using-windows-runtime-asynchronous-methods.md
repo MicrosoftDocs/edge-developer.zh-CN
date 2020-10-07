@@ -1,5 +1,5 @@
 ---
-title: 使用 Windows 运行时异步方法
+title: Using Windows Runtime Asynchronous Methods
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -22,18 +22,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942075"
 ---
-# 使用 Windows 运行时异步方法  
+# Using Windows Runtime asynchronous methods  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-许多 Windows 运行时方法（特别是可能需要较长时间才能完成的方法）都是异步的。  这些方法通常会返回异步操作或操作 \ (，例如 `Windows.Foundation.IAsyncAction` ，， `Windows.Foundation.IAsyncOperation` 或 `Windows.Foundation.IAsyncActionWithProgress` `Windows.Foundation.IAsyncOperationWithProgress` \) 。  以 JavaScript 格式表示 [的公共游戏/Promises/A 模式表示这些方法][CommonjsWikiPromises]。  即，它们返回的 Promise 对象具有 [then 函数][PreviousVersionsWindowsAppsBr229728]，为该对象必须提供一个在操作成功后处理结果 `completed` 的函数。  如果不希望提供错误处理程序，则应使用 [done 函数][PreviousVersionsWindowsAppsHr701079] 而不是 `then` 函数。  
+Many Windows Runtime methods, especially methods that might take a long time to complete, are asynchronous.  These methods generally return an asynchronous action or operation \(for example, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, or `Windows.Foundation.IAsyncOperationWithProgress`\).  These methods are represented in JavaScript by the [CommonJS/Promises/A pattern][CommonjsWikiPromises].  That is, they return a Promise object that has a [then function][PreviousVersionsWindowsAppsBr229728], for which you must provide a `completed` function that handles the result if the operation succeeds.  If you don't want to provide an error handler, you should use the [done function][PreviousVersionsWindowsAppsHr701079] instead of the `then` function.  
 
 > [!IMPORTANT]
-> Windows 运行时功能不适用于在运行时运行Internet Explorer。  
+> Windows Runtime features are not available for apps that run in Internet Explorer.  
 
-## 异步方法示例  
+## Examples of asynchronous methods  
 
-在下面的示例中 `then` ，该函数采用表示该方法的完整值的 `createResourceAsync` 参数。  
+In the following example, the `then` function takes a parameter that represents the completed value of the `createResourceAsync` method.  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -43,7 +43,7 @@ client.createResourceAsync(uri, description, item)
             });
 ```  
 
-在此情况下，如果 `createResourceAsync` 该方法失败，它会在错误状态下返回一个承诺，但不引发异常。  可以按照如下方式使用 `then` 该函数来处理错误。  
+In this case, if the `createResourceAsync` method fails, it returns a promise in the error state, but does not throw an exception.  You can handle an error by using the `then` function as follows.  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -56,7 +56,7 @@ client.createResourceAsync(uri, description, item)
           });
 ```  
 
-如果不希望显式处理错误，但希望它引发异常，则可以改用 `done` 函数。  
+If you don't want to handle the error explicitly, but do want it to throw an exception, you can use the `done` function instead.  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -66,7 +66,7 @@ client.createResourceAsync(uri, description, item)
             });
 ```  
 
-你还可以通过使用第三个函数，显示为完成的进度。  
+You can also display the progress made towards completion by using a third function.  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -84,18 +84,18 @@ client.createResourceAsync(uri, description, item)
             });
 ```  
 
-有关异步编程的详细信息，请参阅 [JavaScript 中的异步编程][PreviousVersionsWindowsAppsHh700330]。  
+For more information about asynchronous programming, see [Asynchronous Programming in JavaScript][PreviousVersionsWindowsAppsHh700330].  
 
-## 另请参阅  
+## See also  
 
-[在 JavaScript 中使用 Windows 运行时][WindowsRuntimeJavascript]  
+[Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "在 JavaScript 中使用 Windows 运行时 |Microsoft 文档"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
 
-[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promise.then method |Microsoft 文档"  
-[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "使用 JavaScript 异步编写的 (HTML) |Microsoft 文档"
-[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Promise.done 方法 |Microsoft 文档"  
+[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promise.then method | Microsoft Docs"  
+[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Asynchronous programming in JavaScript (HTML) | Microsoft Docs"
+[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Promise.done method | Microsoft Docs"  
 
-[CommonjsWikiPromises]: http://wiki.commonjs.org/wiki/Promises "Promises |CommonJS Spec Wiki"  
+[CommonjsWikiPromises]: http://wiki.commonjs.org/wiki/Promises "Promises | CommonJS Spec Wiki"  

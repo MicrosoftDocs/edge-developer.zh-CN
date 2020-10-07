@@ -1,14 +1,14 @@
 ---
 ms.assetid: 88825563-5f5d-421d-861b-7cec01277dec
-description: 了解 Web 身份验证 API 如何启用 Web 应用程序以使用 Windows Hello 和 FIDO2 进行用户身份验证。
-title: Web 身份验证 - 开发人员指南
+description: Learn how the Web Authentication API can enable web applications to use Windows Hello and FIDO2 for user authentication.
+title: Web Authentication - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
-keywords: 边缘， Web 开发， html， css， javascript， developer
+keywords: edge, web development, html, css, javascript, developer
 ms.openlocfilehash: b8ff3769434c17b5508978c64b5d9c14e7e3bdaa
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -16,33 +16,33 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941815"
 ---
-# Web 身份验证和 Windows Hello  
+# Web Authentication and Windows Hello  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允许 Web 应用程序使用 Windows [Hello 和](https://www.microsoft.com/windows/comprehensive-security) 外部 [FIDO2 设备](https://fidoalliance.org/fido2) 进行用户身份验证，以便你和你的用户可以避免密码管理的所有各种问题，包括密码来宾、网络网络处理和密钥日志记录的问题。  当前 Microsoft Edge 实现基于 Web 身份验证规范的待选建议。  
+The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks.  The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification.  
 
 > [!IMPORTANT]
-> 本主题将介绍如何尝试使用 Microsoft Edge 的 Windows Hello 和 FIDO2 身份验证。  
+> This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.  
 
-通过使用 Web 身份验证，服务器会将纯文本内容发送到浏览器。  一次 Microsoft Edge 能够通过 Windows Hello 或外部 FIDO2 设备验证用户，系统将使用之前为此用户预配置的私钥来签名该挑选，然后将签名重新发送到服务器。  如果服务器可以使用它对该用户所具有的公钥验证签名，并验证挑测是否正确，它可以安全地对用户进行身份验证。  使用 [非对称加](https://en.wikipedia.org/wiki/Public-key_cryptography) 密，公钥本身是无意义的，私钥不会共享。  而且，在启用了 TPM 的硬件的情况下，私钥永远无法从任何支持 TPM 的安全元素或现代系统中进行移动。  
+Using Web Authentication, the server sends down a plain text challenge to the browser.  Once Microsoft Edge is able to verify the user through Windows Hello or an external FIDO2 device, the system will sign the challenge with a private key previously provisioned for this user and send the signature back to the server.  If the server can validate the signature using the public key it has for that user and verify the challenge is correct, it can authenticate the user securely.  With [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) such as this, the public key is meaningless on its own and the private key is never shared.  Furthermore, the private key can never be moved from secure elements or modern systems with TPM-enabled hardware.  
 
-可以使用 Web 身份验证 API 的基本步骤：  
+There are two basic steps to using the Web Authentication API:  
 
-1.  向用户注册 `create`  
-1.  通过 `get`  
+1.  Register your user with `create`  
+1.  Authenticate your user with `get`  
 
-下面的开发指南将引导你使用 [WebAuthn](https://github.com/MicrosoftEdge/webauthnsample)示例应用来完成此流程。  
+The following dev guide will walk you through this flow using the [WebAuthn Sample App](https://github.com/MicrosoftEdge/webauthnsample).  
 
-## 注册用户  
+## Register your user  
 
-作为标识提供程序，首先需要使用该方法为用户创建 Web 身份验证 `navigator.credentials.create` 凭据。  在向服务器上的用户注册该凭据之前，您需要确认用户的身份。  这可以通过向用户发送电子邮件确认，或要求用户使用其传统登录方法来完成。  
+Acting as an identity provider, you will first need to create a Web Authentication credential for your user with the `navigator.credentials.create` method.  Before you register that credential to the user on your server, you will need to confirm the identity of the user.  This can be done by sending the user an email confirmation or asking them to use their traditional login method.  
 
-`create`该方法使用以下参数：  
+The `create` method takes the following parameters:  
 
 :::row:::
    :::column span="1":::
-      **保留方信息**  
+      **relying party information**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -55,7 +55,7 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **用户帐户信息**  
+      **user account information**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -70,7 +70,7 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **加密参数**  
+      **crypto parameters**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -91,7 +91,7 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **验证器选择参数**  
+      **authenticator selection parameters**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -108,7 +108,7 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **其他选项：**  
+      **other options**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -124,13 +124,13 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
    :::column-end:::
 :::row-end:::  
 
-您可以 [使用凭据创建参数](https://w3c.github.io/webauthn#dictdef-publickeycredentialcreationoptions) 来配置要创建的凭据。  特别要在外部 FIDO2 设备上，你可以选择通过将设置设置为或 `authenticatorAttachment` `platform` 通过将外部 FIDO2 设备上的漫游凭据设置为来创建 Windows Hello 凭据 `authenticatorAttachment` `cross-platform` 。  
+You can use [credential creation parameters](https://w3c.github.io/webauthn#dictdef-publickeycredentialcreationoptions) to configure the credential you want to create.  In particular, you can choose to create a Windows Hello credential by setting `authenticatorAttachment` to `platform`, or a roaming credential on an external FIDO2 device by setting `authenticatorAttachment` to `cross-platform`.  
 
-当你使用该方法时，Microsoft Edge 将先让用户验证其状态：扫描他们的面部或指 `create` 纹、进入 PIN 或在外部 FIDO2 设备上执行操作。  完成此步骤后，验证器将生成公钥对并存储私钥。  这些凭据按原源、每个帐户安全创建，并且无法提取，因为它们安全地存储到身份验证设备。  
+When you use the `create` method, Microsoft Edge will first ask the user to verify their presence by scanning their face or fingerprint, entering a PIN, or taking action on an external FIDO2 device.  Once this step is completed the authenticator will generate a publicprivate key pair and store the private key.  These credentials are created per origin, per account, and cannot be extracted because they are stored securely to the authentication device.  
 
-生成的 promise 返回 [表示新](https://w3c.github.io/webauthn#sctn-attestation) 凭据的证明对象。  证明对象包含凭据的公钥。  您将将该对象发送到服务器以验证将来的身份验证。  在返回服务器之前，你需要对原始数据进行编码。  
+The resulting promise returns an [attestation object](https://w3c.github.io/webauthn#sctn-attestation) representing the new credential.  The attestation object contains the public key for the credential.  You'll send this object to the server for validating future authentications.  Before sending back to the server, you'll need to base64-encode the raw data.  
 
-**客户端**  
+**Client**  
 
 ```javascript
 <script>
@@ -147,7 +147,7 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
 </script>
 ```  
 
-然后，服务器应解码证明对象，执行验证步骤，为此凭据提取公钥，并将密钥存储在未来身份验证中。  有关步骤的详细列表，可以在 WebAuthn [规](https://w3c.github.io/webauthn#registering-a-new-credential) 范的凭据注册算法中找到。  
+The server should then decode the attestation object, perform verification steps, extract the public key for this credential, and store it for future authentications.  A detailed list of steps can be found in the [credential registration algorithm](https://w3c.github.io/webauthn#registering-a-new-credential) in the WebAuthn specification.  
 
 **Server**  
 
@@ -161,11 +161,11 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
     });
 ```  
 
-## 验证你的用户  
+## Authenticate your user  
 
-在客户端上创建凭据后，用户下次尝试登录到该站点时，你可以提供 Web 身份验证凭据登录，而非通过调用密码来登录 `navigator.credentials.get` 。  
+Once the credential is created on the client, the next time the user attempts to log into the site you can offer to sign them in using their Web Authentication credential instead of a password with a call to `navigator.credentials.get`.  
 
-`get`该方法将这些挑包作为它的仅必需的参数。  挑质问题是服务器将向下发送到客户端以便使用用户的私钥进行登录的不理确结果。  例如：  
+The `get` method takes the challenge as its only required parameter.  The challenge is an opaque sequence of bytes that the server will send down to a client to sign with the user's private key.  For example:  
 
 **Server**  
 
@@ -179,9 +179,9 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
     };
 ```  
 
-从服务器检索挑质后，你将调用 GET API 以及 [凭据请求选项](https://w3c.github.io/webauthn#credentialrequestoptions-extension)。  Microsoft Edge 将显示一条提示，这将验证使用 Windows Hello 或外部 FIDO2 设备的用户的身份。  在用户经过验证后，问题将在 TPM 或 FIDO2 设备上进行登录，承诺将返回 [包含](https://w3c.github.io/webauthn#authenticatorassertionresponse) 签名及其他元数据的断言对象供您发送给服务器。  
+After retrieving a challenge from the server, you'll call the get API along with [credential request options](https://w3c.github.io/webauthn#credentialrequestoptions-extension).  Microsoft Edge will show a prompt, which will verify the identity of the user using Windows Hello or an external FIDO2 device.  After the user is verified, the challenge will be signed within the TPM or FIDO2 device and the promise will return with an [assertion object](https://w3c.github.io/webauthn#authenticatorassertionresponse) that contains the signature and other metadata for you to send to the server.  
 
-**客户端**  
+**Client**  
 
 ```javascript
     var credentialRequestOptions = {
@@ -208,7 +208,7 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
     })
 ```  
 
-在服务器上收到断断后，你将需要验证该签名以对用户进行身份验证。  下面是一些示例代码。  有关步骤的详细列表可以在 WebAuthn [规](https://w3c.github.io/webauthn#verifying-assertion) 范中的断包验证算法中找到。  
+Once you receive the assertion on the server, you will need to validate the signature to authenticate the user.  The following is some sample code.  A detailed list of steps can be found in the [assertion verification algorithm](https://w3c.github.io/webauthn#verifying-assertion) in the WebAuthn specification.  
 
 **Server**  
 
@@ -245,51 +245,51 @@ Microsoft Edge [中的 Web 身份验证 API](https://w3c.github.io/webauthn) 允
     }
 ```  
 
-## 实现说明  
+## Implementation notes  
 
-### 支持的平台  
+### Supported platforms  
 
-*   从 Microsoft Edge 开始使用 Candidate 建议版本的 Web 身份验证 API，此版本从 Microsoft Edge 开始使用，该版本号为 18 \ (Windows Insider Preview 版本 17713 或更高版本\) 。  
-*   已 [删除前缀、Web](https://blogs.windows.com/msedgedev/2016/04/12) 身份验证 API 预览版本，且不再可用。  
-*   Web 身份验证 API 尚不适用于 UWP 应用和 PWA。  
-*   Internet Explorer验证 API 不支持 Web 身份验证 API。  
+*   The Candidate Recommendation version of the Web Authentication API can be used from Microsoft Edge beginning with EdgeHTML 18 \(Windows Insider Preview version 17713 or newer\).  
+*   The [prefixed, preview version](https://blogs.windows.com/msedgedev/2016/04/12) of the Web Authentication API has been removed and is no longer available.  
+*   The Web Authentication API is not yet available to UWP apps and PWAs.  
+*   Internet Explorer does not support the Web Authentication API.  
 
-### 支持的身份验证器  
+### Supported authenticators  
 
-使用 Microsoft Edge 中的 Web 身份验证 API，你可使用以下技术来对用户进行身份验证：  
+With the Web Authentication API in Microsoft Edge, you can authenticate users with the following technologies:  
 
-*   **Windows Hello**  通过面板、指纹或 PIN 启用无密码身份验证  
-*   **FIDO2**  启用使用可移动设备以及指纹或 PIN 进行无密码漫游身份验证  
-*   **U2F**  为尚未准备移至密码模型的网站启用强第二个因素身份验证  
+*   **Windows Hello**  Enables passwordless on-device authentication with  face, fingerprint, or PIN  
+*   **FIDO2**  Enables passwordless roaming authentication with a removable device and a fingerprint or PIN  
+*   **U2F**  Enables strong second factor authentication for websites that are not ready to move to a passwordless model  
 
-### Windows Hello 的特殊注意事项  
+### Special considerations for Windows Hello  
 
-使用 Windows Hello 验证器时需要注意的一些事项：  
+A few things to note when using the Windows Hello authenticator:  
 
-*   你可以通过调用 API 检测电脑是否支持 Windows `isUserVerifyingPlatformAuthenticatorAvailable` Hello。  请在此处了解有关此 API [的详细信息](https://www.w3.org/TR/webauthn#isUserVerifyingPlatformAuthenticatorAvailable)。  
-*   在为 Windows Hello 创建凭据时，你应设置为 `authenticatorAttachment` `platform` 提供最佳的用户体验。
-*   Windows Hello 仅支持 RS256 \ (alg -257\) 作为其公钥算法。  在创建凭据时，请务必指定此算法。  
-*   若要接收 [TPM 证明语句，请在](https://w3c.github.io/webauthn#tpm-attestation)调用 API 时将证明设置为"直接 `create` "。  TPM 证明最好是实现最佳工作。  仅具有 TPM 2.0 的电脑将返回 TPM 证明，因此证明过程可能由于多种原因而失败。  
-*   Windows Hello 使用多种方法来保护用户凭据。  你可以通过在凭据创建时返回的同步对象中使用 [AAGUID](https://w3c.github.io/webauthn#sec-attested-credential-data) 字段来检查是否使用了哪种方法来保护凭据。  下面是 Windows Hello 可能返回的 AAGUID 列表：   
-    *   软件支持的身份验证器  
-        *   Windows Hello 软件验证器：  `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`  
-        *   Windows Hello VBS 软件验证器：  `6E96969E-A5CF-4AAD-9B56-305FE6C82795`  
-    *   受信任的平台模块 \ (TPM\支持) 验证器  
-        *   Windows Hello 硬件验证器：  `08987058-CADC-4B81-B6E1-30DE50DCBE96`  
-        *   Windows Hello VBS 硬件身份验证器：  `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`  
+*   You can detect if Windows Hello is available on a PC by calling the `isUserVerifyingPlatformAuthenticatorAvailable` API.  Learn more about this API [here](https://www.w3.org/TR/webauthn#isUserVerifyingPlatformAuthenticatorAvailable).  
+*   When creating a credential for Windows Hello, you should set `authenticatorAttachment` to `platform` for the best user experience.
+*   Windows Hello only supports RS256 \(alg -257\) as its public key algorithm.  Be sure to specify this algorithm when creating a credential.  
+*   To receive a [TPM attestation statement](https://w3c.github.io/webauthn#tpm-attestation), set attestation to "direct" when calling the `create` API.  TPM attestation is a best effort.  Only PCs with TPM 2.0 will return a TPM attestation statement, and the attestation process could fail for a variety of reasons.  
+*   Windows Hello employs a variety of ways to protect user credentials.  You can check which method has been used to protect a credential by consuming the [AAGUID](https://w3c.github.io/webauthn#sec-attested-credential-data) field in the attestation object returned at credential creation.  The following is the list of AAGUIDs that Windows Hello may return:   
+    *   Software backed authenticators  
+        *   Windows Hello software authenticator:  `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`  
+        *   Windows Hello VBS software authenticator:  `6E96969E-A5CF-4AAD-9B56-305FE6C82795`  
+    *   Trusted Platform Module \(TPM\) backed authenticators  
+        *   Windows Hello hardware authenticator:  `08987058-CADC-4B81-B6E1-30DE50DCBE96`  
+        *   Windows Hello VBS hardware authenticator:  `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`  
 
-### API 平面  
+### API surface  
 
-*   Microsoft Edge 已完全实现内采用的内部 Web 身份验证规范的全部推荐版本。  
-*   支持 [AppID 扩展](https://w3c.github.io/webauthn#sctn-appid-extension) 。  
-*   不支持其他扩展名。  
+*   Microsoft Edge has a complete implementation of the Candidate Recommendation version of the core Web Authentication specification.  
+*   The [AppID extension](https://w3c.github.io/webauthn#sctn-appid-extension) is supported.  
+*   No other extensions are supported.  
 
-## 演示  
+## Demos  
 
-[客户端和服务器代码示例](https://github.com/MicrosoftEdge/webauthnsample)  
+[Client and server code sample](https://github.com/MicrosoftEdge/webauthnsample)  
 
-[Windows Hello 测试驱动器演示](https://webauthnsample.azurewebsites.net)  
+[Windows Hello Test Drive demo](https://webauthnsample.azurewebsites.net)  
 
-## 规范  
+## Specification  
 
-[Web 身份验证：用于访问公钥凭据的 API](http://w3c.github.io/webauthn)  
+[Web Authentication: An API for accessing Public Key Credentials](http://w3c.github.io/webauthn)  

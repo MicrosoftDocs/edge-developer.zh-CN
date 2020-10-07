@@ -1,12 +1,12 @@
 ---
-description: 使用存储面板检查 web 存储、IndexedDB、cookie 和请求/响应缓存
-title: DevTools-存储
+description: Use the Storage panel to inspect your web storage, IndexedDB, cookies, and request/response caches
+title: DevTools - Storage
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools、web 存储、本地存储、会话存储、indexeddb、cookie、服务工作人员、缓存
+keywords: microsoft edge, web development, f12 tools, devtools, web storage, local storage, session storage, indexeddb, cookies, service worker, cache
 ms.custom: seodec18
 ms.openlocfilehash: 8de6e1f90f86fa09b116646918c6be1d8cfb0a72
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,180 +15,180 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563454"
 ---
-# 存储
+# Storage
 
-使用**存储**面板检查和管理各种本地缓存的数据，包括：
+Use the **Storage** panel to inspect and manage various locally cached data, including:
 
- - [Web 存储](#local-and-session-storage-managers)（*本地*和*会话*存储）键/值对
- - 已[编制索引的数据库](#indexeddb-manager)结构化数据
- - 域的[cookie](#cookies-list)
- - 服务工作人员调试的[缓存](#cache-manager)（请求/响应对）
+ - [Web storage](#local-and-session-storage-managers) (*Local* and *Session* storage) key/values pairs
+ - [Indexed DB](#indexeddb-manager) structured data
+ - [Cookies](#cookies-list) for the domain
+ - [Cache](#cache-manager) (request/response pairs) for service worker debugging
 
-展开这些类别中的任何类别，然后单击子条目以打开其 "资源管理器" 选项卡。
+Expand any of those categories and click on a child entry to open its resource manager tab.
 
-## 本地和会话存储管理员
+## Local and Session storage managers
 
-使用*本地存储管理器*和*会话存储管理器*检查和管理页面的 web 存储。 
+Use the *Local Storage manager* and *Session Storage manager* to inspect and manage the web storage for  your page. 
 
-存储面板的[*资源选取器*](./debugger.md#resource-picker)中的 "**本地存储**" 和 "**会话存储**" 文件夹显示页面的来源列表。 选择其中一个框架会打开一个可编辑的当前键/值对的表，这些表是通过[localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage)或[sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage)（和/或直接从 DevTools[存储列表](#storage-list)）设置的。
+The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](./debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
 
-![DevTools Cookies 管理器](./media/storage_web_storage.png)
+![DevTools Cookies manager](./media/storage_web_storage.png)
 
-从 "*本地存储*" 和 "*会话存储*" 选项卡，您可以：
+From the *Local Storage* and *Session Storage* tabs you can:
 
- - **刷新**（ `Ctrl+F5` ）[存储列表](#cookies-list)以查看给定域的当前键/值对集。 （脚本更新时，列表不会自动刷新。）
- - 模拟达到 Microsoft Edge web 存储**的存储限制**。 每个域和子域都有其自己的存储区域，但有一个组合的限制：
-    - **子域：** 最多 5 mb 的空间
-    - **域：** 最多 10 mb 的空间
-    - **所有域的总计：** 最高为 50 mb 的空间
+ - **Refresh** (`Ctrl+F5`) the [storage list](#cookies-list) to see the current set of key/values pairs for the given domain. (The list does not auto-refresh upon script updates.)
+ - **Simulate reaching the storage limit** for Microsoft Edge web storage. Each domain and subdomain has its own storage area, however there is a combined limit:
+    - **Subdomains:** up to 5 MBs of space
+    - **Domains:** up to 10 MBs of space
+    - **Total for all domains:** up to 50 MBs of space
 
-   一旦最后一个浏览器选项卡被关闭，会话存储就会被清除。 本地存储项无限期地保留，直到通过页面以编程方式或由用户手动清除为止：
+   Session storage is cleared as soon as the last browser tab referencing its origin is closed. Local storage entries persist indefinitely until cleared programmatically by the page or manually by the user:
 
-   **设置**  > **清除浏览数据**  > **Cookie 和保存的网站数据**
+   **Settings** > **Clear browsing data** > **Cookies and saved website data**
 
-![从 Microsoft Edge 设置面板中清除浏览数据](./media/settings_clear_browsing_data.png)
+![Clear browsing data from the Microsoft Edge Settings panel](./media/settings_clear_browsing_data.png)
 
-### 存储列表
+### Storage list
 
-从*存储列表*表中，您可以：
+From the *Storage list* table you can:
 
- - 通过单击表中的任意一列名称来**检查和排序**键/值对。
- - 通过在单元格中单击来**编辑**现有条目的*键*和*值*。
- - **Delete** （ `Del` ）右键单击上下文菜单选项中的条目，然后单击 "*删除项目*"。
- - 通过单击表底部的空行**添加**新的键/值对。
+ - **Inspect and sort** your key/value pairs by clicking on either column name in the table.
+ - **Edit** the *Key* and *Value* of an existing entry by clicking in the cell.
+ - **Delete** (`Del`) an entry from the right-click context menu option, *Delete item*.
+ - **Add** a new key/value pair by clicking on the empty row at the bottom of the table.
 
 
-### 指向
+### Shortcuts
 
-| 操作              | 快捷方式      |
+| Action              | Shortcut      |
 |:--------------------|:--------------|
-| 刷新             | `Ctrl` + `F5` |
-| 删除项         | `Del`         |
-| 复制所选项目 | `Ctrl` + `C`  |
-| 全选          | `Ctrl` + `A`  |
+| Refresh             | `Ctrl` + `F5` |
+| Delete item         | `Del`         |
+| Copy selected items | `Ctrl` + `C`  |
+| Select all          | `Ctrl` + `A`  |
 
 
-## IndexedDB 管理器
+## IndexedDB manager
 
-使用 " **IndexedDB** " 选项卡检查和管理在客户端计算机上本地存储的结构化数据。 具体说来，你可以检查/排序和刷新你的对象存储和索引，还可以删除单个键值条目。
+Use the **IndexedDB** tab to inspect and manage the structured data stored locally on a client machine. Specifically, you can inspect/sort and refresh your object stores and indices, and also delete individual key-value entries.
 
 > [!TIP]
-> 你可以使用我们的[音频混合器](https://developer.microsoft.com/microsoft-edge/testdrive/demos/audiomixer/)演示在 Microsoft Edge DevTools 中测试驱动器*IndexedDB 管理器*。
+> You can use our [Audio Mixer](https://developer.microsoft.com/microsoft-edge/testdrive/demos/audiomixer/) demo to test drive the *IndexedDB manager* in Microsoft Edge DevTools.
 
-若要删除在 Microsoft Edge 中为当前用户存储的所有 IndexedDB 数据，请使用 Microsoft Edge*设置*菜单：
+To delete all the IndexedDB data stored for the current user in Microsoft Edge, use the Microsoft Edge *Settings* menu:
 
-**...** > **设置**  > **清除浏览数据**  > **Cookie 和保存的网站数据**
+**...** > **Settings** > **Clear browsing data** > **Cookies and saved website data**
 
-调试器的[*资源选取器*](./debugger.md#resource-picker)中的**IndexedDB**文件夹显示由页面加载的资源的来源列表。 任何 IndexedDB （.IDB）数据库将在原始位置列出，以及其对象存储。 
+The **IndexedDB** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
 
 ![DevTools IndexedDB manager](./media/storage_indexeddb.png)
 
-### IndexedDB 工具栏
+### IndexedDB Toolbar
 
-通过*IndexedDB*工具栏，您可以：
+From the *IndexedDB* toolbar you can:
 
- - **刷新**（ `Ctrl+F5` ）可查看数据库的对象存储或索引中的当前条目。 在对数据库进行更改后，IndexedDB 管理器不会自动刷新。
+ - **Refresh** (`Ctrl+F5`) to see the current entries in the object store or index of your database. The IndexedDB manager does not auto-refresh when changes are made to your database.
 
-### 对象存储项列表
+### Object store entries list
 
-从 "*对象存储*" 或 "*索引*" 表中，您可以：
+From the *Object store* or *Index* table you can:
 
- - 通过单击表中的任意列名称来**检查和排序**键/值对。
- - **Refresh** （ `Ctrl+F5` ）
- - **删除项目**（ `Del` ）以删除你的对象存储或索引中所选的条目。 您也可以从右键单击[上下文菜单](#context-menu)选项中执行此操作，然后单击 "*删除项目*"。
- - **复制所选项目**（ `Ctrl+C` ）以将所选项目复制到剪贴板。 您也可以通过右键单击[上下文菜单](#context-menu)选项执行此操作，*复制所选项目*。
- - **选择**"全部 `Ctrl+A` " （）以选择您的对象存储或索引中的所有条目。 您也可以通过右键单击[上下文菜单](#context-menu)选项执行此操作，然后*选择 "全部*"。
+ - **Inspect and sort** your key-value pairs by clicking on any column name in the table.
+ - **Refresh** (`Ctrl+F5`)
+ - **Delete item** (`Del`) to remove the selected entry in your object store or index. You can also do this from the right-click [context menu](#context-menu) option, *Delete item*.
+ - **Copy selected items** (`Ctrl+C`) to copy the selected item to your clipboard. You can also do this from the right-click [context menu](#context-menu) option, *Copy selected item*.
+ - **Select all** (`Ctrl+A`) to select all the entries in your object store or index. You can also do this from the right-click [context menu](#context-menu) option, *Select all*.
 
-可对*对象存储*或*索引*表的列进行排序：
+The columns of the *Object store* or *Index* table are sortable:
 
-列 | 描述
+Column | Description
 :------------ | :-------------
-密钥 | 循环访问对象存储时的键值对的名称（与*主键*相同）;循环访问索引时索引键（游标的当前键）的名称
-主键 | 键值对的名称（有关[有关 .idb 的](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database)详细信息，请参阅*MDN web 文档*）
-Value | 键/值对的值
+Key | Name of the key-value pair (same as *Primary Key*) when iterating over an object store; Name of the index key (cursor's current key) when iterating over an index
+Primary Key | Name of the key-value pair (see *MDN web docs* for more on IDB [keys](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database))
+Value | Value of the key-value pair
 
-有关[IndexedDB 概念和用法](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)的详细信息，请查看*MDN web 文档*。
+Check out *MDN web docs* for more on [IndexedDB concepts and usage](https://developer.mozilla.org/docs/Web/API/IndexedDB_API).
 
-### 上下文菜单
+### Context menu
 
-除了[ *IndexedDB*工具栏](#indexeddb-toolbar)，您还可以通过右键单击**上下文菜单**和/或键盘[快捷方式](#shortcuts)，在对象存储或索引中管理数据。
+In addition to the [*IndexedDB* toolbar](#indexeddb-toolbar), you can also manage your data in object stores or indices from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
 
-### 指向
+### Shortcuts
 
-操作 | 快捷方式
+Action | Shortcut
 :------------ | :-------------
-刷新 | `Ctrl` + `F5`
-删除键值对 | `Del`
-复制所选项目 | `Ctrl` + `C`
-全选 | `Ctrl` + `A`
+Refresh | `Ctrl` + `F5`
+Delete key-value pair | `Del`
+Copy selected items | `Ctrl` + `C`
+Select all | `Ctrl` + `A`
 
-## Cookies 管理器
+## Cookies manager
 
-使用*cookie 管理器*检查和管理给定域的 cookie。 
+Use the *Cookies manager* to inspect and manage the cookies for the given domain. 
 
-调试器的[*资源选取器*](./debugger.md#resource-picker)中的**Cookies**文件夹显示由页面加载的资源的来源列表。 选择其中一个帧会打开一个表，其中包含由[HTTP](https://developer.mozilla.org/docs/Web/HTTP/Cookies)标头设置的当前 cookie 或通过带有[Document cookie](https://developer.mozilla.org/docs/Web/API/Document/cookie)的脚本设置的当前 cookie。
+The **Cookies** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/docs/Web/API/Document/cookie).
 
-![DevTools Cookies 管理器](./media/storage_cookies.png)
+![DevTools Cookies manager](./media/storage_cookies.png)
 
-通过 " *Cookies* " 选项卡工具栏，您可以：
+From the *Cookies* tab toolbar you can:
 
- - **刷新**（ `Ctrl+F5` ） [cookie 列表](#cookies-list)以查看给定域的当前 cookie 集。 （列表不会自动刷新。）
- - 删除当前页面路径的**所有 cookie** （ `Ctrl+Shift+Del` ）（会话和永久）。
- - 删除当前页面路径的**所有会话 cookie** （ `Ctrl+Del` ）。
+ - **Refresh** (`Ctrl+F5`) the [Cookies list](#cookies-list) to see the current set of cookies for the given domain. (The list does not auto-refresh.)
+ - **Delete all cookies** (`Ctrl+Shift+Del`) (session and permanent) for the path of the current page.
+ - **Delete all session cookies** (`Ctrl+Del`) for the path of the current page.
 
-若要彻底清除您的*cookie 列表*，您可能需要从 "[**网络**](./network.md#toolbar)" 面板工具栏中**清除域的所有 cookie** 。
+To completely clear your *Cookies list*, you might need to **Clear all cookies for the domain** from the [**Network**](./network.md#toolbar) panel toolbar.
 
-### Cookie 列表
+### Cookies list
 
-通过*cookie 列表*表，您可以：
+From the *Cookies list* table you can:
 
- - 通过单击表中的任意列名称，对 cookie**进行检查和排序**。
- - 通过在单元格中单击来**编辑**现有 Cookie 的*名称*和*值*。
- - **Delete** `Del` 从右键单击[上下文菜单](#context-menu)选项中删除（） cookie，*删除 cookie*。
- - 通过单击表底部的空行为给定的*域/路径***添加**新的会话 cookie。 这仅适用于会话 cookie;永久 cookie （具有特定到期日期）必须用传统方法进行设置。 根据页面位置自动填充*域*和*路径*值。
+ - **Inspect and sort** your cookies by clicking on any column name in the table.
+ - **Edit** the *Name* and *Value* of an existing cookie by clicking in the cell.
+ - **Delete** (`Del`) a cookie from the right-click [context menu](#context-menu) option, *Delete cookie*.
+ - **Add** a new session cookie for the given *Domain/Path* by clicking on the empty row at the bottom of the table. This only works for session cookies; permanent cookies (with specific expiry dates) must be set with traditional methods. The *Domain* and *Path* values are auto-filled according to the location of the page.
 
-*Cookie 列表*的列是可排序的：
+The columns of the *Cookies list* are sortable:
 
-列 | 描述
+Column | 描述
 :------------ | :-------------
-名称 | Cookie 的名称
-Value | Cookie 的值
-域 | Cookie 的主机名（可能为空）
-路径 | Cookie 的 URL 路径（可能为空）
-到期 | HTTP 日期时间戳形式的 cookie 的最长生存期。 如果未 `Expires` 设置或，则将 `Max-Age` 该项视为*会话*cookie。
-仅限 HTTP | 指示 cookie 是否已通过指令进行了设置 `HttpOnly` ，以指示它无法从 JavaScript 中访问
-安全 | 指示是否使用该指令设置 cookie `Secure` ，指示它将仅从使用 SSL 和 HTTPS 协议的请求发送到服务器。
+Name | Name of the cookie
+Value | Value of the cookie
+Domain | Host name of the cookie (may be empty)
+Path | URL path for the cookie (may be empty)
+Expires | Maximum lifetime of the cookie as an HTTP-date timestamp. If no `Expires` or `Max-Age` was set, the entry is considered a *Session* cookie.
+HTTP only | Indicates if the cookie was set with `HttpOnly` directive, indicating that it is inaccessible from JavaScript
+Secure | Indicates if the cookie was set with the `Secure` directive, indicating it will only be sent to the server from a request using SSL and the HTTPS protocol.
 
-有关 cookie 属性的更多详细信息，请参阅**MDN web 文档**[集-cookie](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie)参考。
+See the **MDN web docs** [Set-Cookie](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie) reference for further details on cookie properties.
 
-### 上下文菜单
+### Context menu
 
-除了 " *Cookies* " 选项卡[工具栏](#cookies-manager)，您还可以通过右键单击**上下文菜单**和/或键盘[快捷方式](#shortcuts)管理您的 cookie。
+In addition to the *Cookies* tab [toolbar](#cookies-manager), you can also manage your cookies from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
 
-### 指向
+### Shortcuts
 
-| 操作                     | 快捷方式                 |
+| Action                     | Shortcut                 |
 |:---------------------------|:-------------------------|
-| 刷新                    | `Ctrl` + `F5`            |
-| 删除 cookie              | `Del`                    |
-| 删除所有 cookie         | `Ctrl` + `Shift` + `Del` |
-| 删除所有会话 cookie | `Ctrl` + `Del`           |
-| 复制所选项目        | `Ctrl` + `C`             |
-| 全选                 | `Ctrl` + `A`             |
+| Refresh                    | `Ctrl` + `F5`            |
+| Delete cookie              | `Del`                    |
+| Delete all cookies         | `Ctrl` + `Shift` + `Del` |
+| Delete all session cookies | `Ctrl` + `Del`           |
+| Copy selected items        | `Ctrl` + `C`             |
+| Select all                 | `Ctrl` + `A`             |
 
-### 缓存管理器
+### Cache manager
 
-单击特定的缓存条目将打开服务工作人员**缓存**管理器，您可以在其中检查和删除缓存条目（*请求*和*响应*键/值对）：
+Clicking on a specific cache entry will open up the service worker **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
 
-![缓存管理器](./media/storage_cache.png)
+![Cache manager](./media/storage_cache.png)
 
-### 指向
+### Shortcuts
 
-#### 缓存管理器
+#### Cache manager
 
-| 操作              | 快捷方式      |
+| Action              | Shortcut      |
 |:--------------------|:--------------|
-| 刷新             | `Ctrl` + `F5` |
-| 删除项         | `Del`         |
-| 复制所选项目 | `Ctrl` + `C`  |
-| 全选          | `Ctrl` + `A`  |
+| Refresh             | `Ctrl` + `F5` |
+| Delete item         | `Del`         |
+| Copy selected items | `Ctrl` + `C`  |
+| Select all          | `Ctrl` + `A`  |
