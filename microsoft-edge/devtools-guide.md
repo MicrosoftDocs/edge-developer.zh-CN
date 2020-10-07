@@ -60,7 +60,7 @@ ms.locfileid: "10985966"
 
 <span data-ttu-id="7e28a-127">若要在本地调试页面，只需启动 Microsoft Edge DevTools 应用。</span><span class="sxs-lookup"><span data-stu-id="7e28a-127">To debug a page locally, simply launch the Microsoft Edge DevTools app.</span></span>  <span data-ttu-id="7e28a-128">选择器的“**本地**”面板将显示所有活动的 EdgeHTML 内容进程，包括打开的 Edge 浏览器选项卡、运行的 [PWA][PwasEdgehtmlIndex]\（`WWAHost.exe` 进程\）和 [webview][HostingWebview] 控件。</span><span class="sxs-lookup"><span data-stu-id="7e28a-128">The **Local** panel of the chooser displays all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.</span></span>  <span data-ttu-id="7e28a-129">选择所需目标，并打开 DevTools 的新选项卡实例。</span><span class="sxs-lookup"><span data-stu-id="7e28a-129">Select your desired target to attach and open a new tab instance of the DevTools.</span></span>  
 
-:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools 应用的“本地”面板":::
+:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
    <span data-ttu-id="7e28a-131">DevTools 应用的“本地”面板</span><span class="sxs-lookup"><span data-stu-id="7e28a-131">DevTools app Local panel</span></span>
 :::image-end:::
 
@@ -72,7 +72,7 @@ ms.locfileid: "10985966"
 
 <span data-ttu-id="7e28a-136">若要开始，请查看“[DevTools 协议][DevtoolsProtocolEdgehtmlIndex]”文档的“[*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview]”部分。</span><span class="sxs-lookup"><span data-stu-id="7e28a-136">To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] section of the [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex] docs.</span></span>  
 
-:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools 应用“远程”面板":::
+:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
    <span data-ttu-id="7e28a-138">DevTools 应用“远程”面板</span><span class="sxs-lookup"><span data-stu-id="7e28a-138">DevTools app Remote panel</span></span>
 :::image-end:::
 

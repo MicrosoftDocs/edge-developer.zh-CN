@@ -86,7 +86,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-209">如果已启用可选的诊断数据（包括故障报告），则 Microsoft 将在 Microsoft Edge 故障或遇到其他可靠性问题时收集诊断数据。</span><span class="sxs-lookup"><span data-stu-id="c31e8-209">If optional diagnostic data, including crash reports, are turned on, Microsoft collects diagnostic data when Microsoft Edge crashes or encounters other reliability problems.</span></span>  <span data-ttu-id="c31e8-210">诊断数据用于诊断和修复 Microsoft Edge 及其他 Microsoft 产品和服务的可靠性问题。</span><span class="sxs-lookup"><span data-stu-id="c31e8-210">The diagnostic data is used to diagnose and fix reliability problems of Microsoft Edge and other Microsoft products and services.</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/crashes2.png" alt-text="故障" lightbox="./media/whitepaper-media/crashes2.png":::
+:::image type="complex" source="./media/whitepaper-media/crashes2.png" alt-text="地址栏" lightbox="./media/whitepaper-media/crashes2.png":::
    <span data-ttu-id="c31e8-212">故障</span><span class="sxs-lookup"><span data-stu-id="c31e8-212">Crashes</span></span>  
 :::image-end:::  
 
@@ -108,7 +108,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-238">在 Microsoft Edge 中以及使用 Microsoft Edge Web 平台的其他应用程序中使用功能和服务时，有关如何使用这些功能的诊断数据将发送到 Microsoft。</span><span class="sxs-lookup"><span data-stu-id="c31e8-238">As you use features and services in Microsoft Edge and other applications that use the Microsoft Edge web platform, diagnostic data about how you use those features is sent to Microsoft.</span></span>  <span data-ttu-id="c31e8-239">诊断数据包括安装 Microsoft Edge、功能使用情况、性能和内存使用情况等信息。</span><span class="sxs-lookup"><span data-stu-id="c31e8-239">The diagnostic data includes information like your installation of Microsoft Edge, feature usage, performance, and memory usage.</span></span>  <span data-ttu-id="c31e8-240">例如，如果你收藏一个网站，Microsoft Edge 团队将收到信息“已单击收藏夹按钮并已成功添加收藏夹”，但不会将具体网站设置为收藏项。</span><span class="sxs-lookup"><span data-stu-id="c31e8-240">For example, if you favorite a website, the Microsoft Edge team receives info that the favorite button was clicked and a favorite was successfully added, but not which site was set as a favorite.</span></span>  <span data-ttu-id="c31e8-241">诊断数据还包含性能信息，如打开新选项卡所需的毫秒数。白皮书中提及的功能和服务收集诊断数据。</span><span class="sxs-lookup"><span data-stu-id="c31e8-241">The diagnostic data also includes performance information, such as how many milliseconds it took to open a new tab.  The features and services mentioned in the whitepaper collect diagnostic data.</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/diagnostic-data2.png" alt-text="诊断数据" lightbox="./media/whitepaper-media/diagnostic-data2.png":::
+:::image type="complex" source="./media/whitepaper-media/diagnostic-data2.png" alt-text="地址栏" lightbox="./media/whitepaper-media/diagnostic-data2.png":::
    <span data-ttu-id="c31e8-243">诊断数据</span><span class="sxs-lookup"><span data-stu-id="c31e8-243">Diagnostic data</span></span>  
 :::image-end:::  
 
@@ -195,7 +195,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-387">在地址栏右侧，Microsoft Edge 指示什么情况下共享/不共享你的位置。</span><span class="sxs-lookup"><span data-stu-id="c31e8-387">On the right side of the address bar, Microsoft Edge indicates when your location is or is not being shared.</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="位置" lightbox="./media/whitepaper-media/geolocation2.png":::
+:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="地址栏" lightbox="./media/whitepaper-media/geolocation2.png":::
    <span data-ttu-id="c31e8-389">位置</span><span class="sxs-lookup"><span data-stu-id="c31e8-389">Location</span></span>  
 :::image-end:::  
 
@@ -209,7 +209,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-402">第一次启动浏览器时，Microsoft Edge 将提供交互式无缝体验。</span><span class="sxs-lookup"><span data-stu-id="c31e8-402">Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time.</span></span>  <span data-ttu-id="c31e8-403">作为体验的一部分，可选择将浏览器数据从其他浏览器导入到 Microsoft Edge。</span><span class="sxs-lookup"><span data-stu-id="c31e8-403">As part of the experience, you have the option to import your browser data to Microsoft Edge from another browser.</span></span>  <span data-ttu-id="c31e8-404">在导入过程中，你可能会保留导入的数据，或者将其删除并重新开始。</span><span class="sxs-lookup"><span data-stu-id="c31e8-404">During the import experience, you may either keep your imported data or delete it and start fresh.</span></span>  <span data-ttu-id="c31e8-405">数据包括收藏夹、浏览历史记录、自动填充数据、扩展、设置以及其他浏览数据。</span><span class="sxs-lookup"><span data-stu-id="c31e8-405">The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.</span></span>  <span data-ttu-id="c31e8-406">更新到新的 Microsoft Edge 时，将自动导入旧版本 Microsoft Edge 中的浏览数据。</span><span class="sxs-lookup"><span data-stu-id="c31e8-406">Your browsing data from older versions of Microsoft Edge is automatically imported when you update to the new Microsoft Edge.</span></span>  <span data-ttu-id="c31e8-407">确认后，Microsoft Edge 将从其他浏览器导入浏览器数据（如 Google Chrome、Mozilla Firefox 或 Internet Explorer），并根据你的 OS 定义的最常用浏览器确定从中导入数据的浏览器。</span><span class="sxs-lookup"><span data-stu-id="c31e8-407">With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer, and which browser it imports from is determined based on your most used browser as defined by your OS.</span></span>  <span data-ttu-id="c31e8-408">导入数据全部在设备本地完成，并存储在本地，且不会发送到 Microsoft，除非你同意同步浏览数据。</span><span class="sxs-lookup"><span data-stu-id="c31e8-408">Importing your data is all completed locally on your device, stored locally, and is not sent to Microsoft unless you agree to sync your browsing data.</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/migration.png" alt-text="Import" lightbox="./media/whitepaper-media/migration.png":::
+:::image type="complex" source="./media/whitepaper-media/migration.png" alt-text="地址栏" lightbox="./media/whitepaper-media/migration.png":::
    <span data-ttu-id="c31e8-410">Import</span><span class="sxs-lookup"><span data-stu-id="c31e8-410">Import</span></span>  
 :::image-end:::  
 
@@ -231,7 +231,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-432">Microsoft Edge 通过 Internet Explorer (IE) 集成简化了体验。</span><span class="sxs-lookup"><span data-stu-id="c31e8-432">Microsoft Edge offers a simplified experience with the integration of Internet Explorer \(IE\).</span></span>  <span data-ttu-id="c31e8-433">Microsoft Edge 仅支持 IE 11，而 IE 模式仅在 Windows 上可用。</span><span class="sxs-lookup"><span data-stu-id="c31e8-433">Microsoft Edge only supports IE 11, and IE mode is only available on Windows.</span></span>  <span data-ttu-id="c31e8-434">通过组策略，组织可以使用 IE 模式功能。</span><span class="sxs-lookup"><span data-stu-id="c31e8-434">The IE mode feature is available for organizations through group policies.</span></span>  <span data-ttu-id="c31e8-435">管理员选择在 Microsoft Edge 的 IE 模式下打开特定网站。</span><span class="sxs-lookup"><span data-stu-id="c31e8-435">The administrator chooses to open a certain sites in IE mode in Microsoft Edge.</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/ie-mode.png" alt-text="IE 模式" lightbox="./media/whitepaper-media/ie-mode.png":::
+:::image type="complex" source="./media/whitepaper-media/ie-mode.png" alt-text="地址栏" lightbox="./media/whitepaper-media/ie-mode.png":::
    <span data-ttu-id="c31e8-437">IE 模式</span><span class="sxs-lookup"><span data-stu-id="c31e8-437">IE mode</span></span>  
 :::image-end:::  
 
@@ -262,7 +262,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-478">若要增强新选项卡页面的加载时间，可在后台加载 Microsoft 新选项卡页面，以使其速度更快。</span><span class="sxs-lookup"><span data-stu-id="c31e8-478">To enhance the load times of the new tab page, the Microsoft new tab page may be loaded in the background to make it faster.</span></span> <span data-ttu-id="c31e8-479">如果允许 Cookie，加载的内容可能包含 Cookie。</span><span class="sxs-lookup"><span data-stu-id="c31e8-479">The content that is loaded might include cookies, if you allow cookies.</span></span> <span data-ttu-id="c31e8-480">若要禁用后台加载 Microsoft 新选项卡页面，请转到 `edge://settings/newTabPage` ，然后关闭设置 **预加载新选项卡页面，以获得更快的体验**。</span><span class="sxs-lookup"><span data-stu-id="c31e8-480">To disable loading the Microsoft new tab page in the background, go to `edge://settings/newTabPage` and turn off the setting **Preload the new tab page for a faster experience**.</span></span> 
 
-:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/whitepaper-media/n-t-p1.png":::
+:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="地址栏" lightbox="./media/whitepaper-media/n-t-p1.png":::
    <span data-ttu-id="c31e8-482">“新建选项卡”页面</span><span class="sxs-lookup"><span data-stu-id="c31e8-482">New tab page</span></span>  
 :::image-end:::  
 
@@ -384,7 +384,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-657">SmartScreen 旨在帮助你安全浏览 Web。</span><span class="sxs-lookup"><span data-stu-id="c31e8-657">SmartScreen is designed to help you safely browse the web.</span></span>  <span data-ttu-id="c31e8-658">访问网站或下载文件时，SmartScreen 会检查 URL 或文件的信誉。</span><span class="sxs-lookup"><span data-stu-id="c31e8-658">When you go to websites or download files, SmartScreen checks the reputation of the URL or file.</span></span>  <span data-ttu-id="c31e8-659">如果 SmartScreen 确定网站或文件有恶意，则会阻止你访问网站或下载文件。</span><span class="sxs-lookup"><span data-stu-id="c31e8-659">If SmartScreen determines that the site or file is malicious, it blocks you from going to the site or downloading the file.</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/smart-screen.png" alt-text="SmartScreen" lightbox="./media/whitepaper-media/smart-screen.png":::
+:::image type="complex" source="./media/whitepaper-media/smart-screen.png" alt-text="地址栏" lightbox="./media/whitepaper-media/smart-screen.png":::
    <span data-ttu-id="c31e8-661">SmartScreen</span><span class="sxs-lookup"><span data-stu-id="c31e8-661">SmartScreen</span></span>  
 :::image-end:::  
 
@@ -420,7 +420,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-728">使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。</span><span class="sxs-lookup"><span data-stu-id="c31e8-728">Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.</span></span>  <span data-ttu-id="c31e8-729">可同步收藏夹、设置、表单填充数据（地址和其他）、密码、扩展和收集。</span><span class="sxs-lookup"><span data-stu-id="c31e8-729">You may sync your favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.</span></span>  <span data-ttu-id="c31e8-730">必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。</span><span class="sxs-lookup"><span data-stu-id="c31e8-730">You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.</span></span>  <span data-ttu-id="c31e8-731">收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。</span><span class="sxs-lookup"><span data-stu-id="c31e8-731">Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.</span></span>  <span data-ttu-id="c31e8-732">从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。</span><span class="sxs-lookup"><span data-stu-id="c31e8-732">Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.</span></span>  <span data-ttu-id="c31e8-733">若要管理同步配置，请转到 `edge://settings/profiles/sync`。</span><span class="sxs-lookup"><span data-stu-id="c31e8-733">To manage sync configurations, go to `edge://settings/profiles/sync`.</span></span>  <span data-ttu-id="c31e8-734">你的同步设置可能由组织进行管理。</span><span class="sxs-lookup"><span data-stu-id="c31e8-734">Your sync settings may be managed by your organization.</span></span>
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/whitepaper-media/sync.png":::
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="地址栏" lightbox="./media/whitepaper-media/sync.png":::
    <span data-ttu-id="c31e8-736">同步设置已开启</span><span class="sxs-lookup"><span data-stu-id="c31e8-736">Sync setting is on</span></span>
 :::image-end:::  
 
@@ -442,7 +442,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-768">可使用以下组策略“[启用 Microsoft Edge 中的组件更新][DeployedgePoliciesComponentupdatesenabled]”禁用列表更新。</span><span class="sxs-lookup"><span data-stu-id="c31e8-768">You may turn off list updates using the following group policy, [Enable component updates in Microsoft Edge][DeployedgePoliciesComponentupdatesenabled].</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/tracking-prevention.png" alt-text="跟踪防护" lightbox="./media/whitepaper-media/tracking-prevention.png":::
+:::image type="complex" source="./media/whitepaper-media/tracking-prevention.png" alt-text="地址栏" lightbox="./media/whitepaper-media/tracking-prevention.png":::
    <span data-ttu-id="c31e8-770">跟踪防护</span><span class="sxs-lookup"><span data-stu-id="c31e8-770">Tracking prevention</span></span>  
 :::image-end:::  
 
@@ -484,7 +484,7 @@ Cast <span data-ttu-id="c31e8-174">在 Microsoft Edge 中，可使用 Google Cas
 
 <span data-ttu-id="c31e8-832">Windows 信息保护  \(WIP\) 可帮助防止意外泄漏公司信息。</span><span class="sxs-lookup"><span data-stu-id="c31e8-832">Windows Information Protection \(WIP\) helps prevent the accidental leaking of corporate information.</span></span>  <span data-ttu-id="c31e8-833">仅可通过组织管理的组策略供组织使用。</span><span class="sxs-lookup"><span data-stu-id="c31e8-833">It is only available for organizations through  group policies that are managed by your organization.</span></span>  <span data-ttu-id="c31e8-834">对标识为企业资产的网站启用 WIP。</span><span class="sxs-lookup"><span data-stu-id="c31e8-834">WIP is enabled for those sites that are identified as corporate assets.</span></span>  <span data-ttu-id="c31e8-835">通过地址栏中的“管理”图标标识属于企业资产的网站。</span><span class="sxs-lookup"><span data-stu-id="c31e8-835">Identify which sites are corporate assets from the management icon in the address bar.</span></span>  <span data-ttu-id="c31e8-836">WIP 强制执行某些功能，例如防止从浏览器复制和粘贴或将某些文件上传到组织之外的网站。</span><span class="sxs-lookup"><span data-stu-id="c31e8-836">WIP enforces features such as the prevention of copying and pasting from the browser or uploading certain files to sites outside your organization.</span></span>  
 
-:::image type="complex" source="./media/whitepaper-media/w-i-p.png" alt-text="Windows 信息保护" lightbox="./media/whitepaper-media/w-i-p.png":::
+:::image type="complex" source="./media/whitepaper-media/w-i-p.png" alt-text="地址栏" lightbox="./media/whitepaper-media/w-i-p.png":::
    <span data-ttu-id="c31e8-838">Windows 信息保护</span><span class="sxs-lookup"><span data-stu-id="c31e8-838">Windows Information Protection</span></span>  
 :::image-end:::  
 
