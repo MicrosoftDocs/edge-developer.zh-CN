@@ -1,13 +1,13 @@
 ---
 ms.assetid: 89ac711a-78ff-4219-8dc3-2bad2099cf49
-description: 请参阅 Microsoft Edge JSON 清单的示例以查看可能的字段值。
-title: 扩展-JSON 清单示例
+description: See an example of a Microsoft Edge JSON manifest to see possible field values.
+title: Extensions - JSON manifest example
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、css、javascript、开发人员
+keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ms.openlocfilehash: b4055524201821e3051f704b3bc9894de370c76d
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -16,11 +16,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563332"
 ---
-# <span data-ttu-id="0e67d-104">JSON 清单文件示例</span><span class="sxs-lookup"><span data-stu-id="0e67d-104">JSON manifest file example</span></span>  
+# <span data-ttu-id="86840-104">JSON manifest file example</span><span class="sxs-lookup"><span data-stu-id="86840-104">JSON manifest file example</span></span>  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
-<span data-ttu-id="0e67d-105">以下代码段提供 Microsoft Edge JSON 清单文件的示例。</span><span class="sxs-lookup"><span data-stu-id="0e67d-105">The following snippet provides an example of a Microsoft Edge JSON manifest file.</span></span>
+<span data-ttu-id="86840-105">The following snippet provides an example of a Microsoft Edge JSON manifest file.</span><span class="sxs-lookup"><span data-stu-id="86840-105">The following snippet provides an example of a Microsoft Edge JSON manifest file.</span></span>
 
 ```json
 {
