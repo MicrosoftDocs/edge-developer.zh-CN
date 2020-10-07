@@ -36,8 +36,10 @@
   href: roadmap.md
 - name: 操作步骤
   items:
+    - name: 静态链接加载器
+      href: howto/static.md
     - name: 调试 WebView2
-      href: howto/Debug.md
+      href: howto/debug.md
     - name: 使用 Edge 驱动程序实现自动化
       href: howto/webdriver.md
 - name: 参考
