@@ -1,12 +1,12 @@
 ---
-description: 打开 "网络条件" 选项卡，禁用 "自动选择"，然后从列表中选择或输入自定义字符串。
-title: 覆盖 Microsoft Edge DevTools 中的用户代理字符串
+description: Open the Network conditions tab, disable Select automatically, and choose from the list or enter a custom string.
+title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,32 +28,32 @@ ms.locfileid: "10992923"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 覆盖 Microsoft Edge DevTools 中的用户代理字符串  
+# Override the user agent string from Microsoft Edge DevTools  
 
-若要覆盖 Microsoft Edge DevTools 中的 [用户代理][MDNUserAgent] 字符串，请执行以下操作：  
+To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:  
 
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **命令菜单**  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       The **Command Menu**  
     :::image-end:::  
     
-1.  键入 `network conditions` ，选择 " **显示网络条件**"，然后按 `Enter` 以打开 " **网络条件** " 选项卡。  
-1.  在 " **用户代理** " 部分中，禁用 " **自动选择** " 复选框。  
+1.  Type `network conditions`, select **Show Network conditions**, and press `Enter` to open the **Network conditions** tab.  
+1.  In the **User agent** section, disable the **Select automatically** checkbox.  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="禁用 "自动选择"" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       禁用 "**自动选择**"  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Disable **Select automatically**  
     :::image-end:::  
     
-1.  从列表中选择用户代理字符串，或输入您自己的自定义字符串。  
+1.  Select a user agent string from the list, or enter your own custom string.  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "用户代理 |MDN"  
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User agent | MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

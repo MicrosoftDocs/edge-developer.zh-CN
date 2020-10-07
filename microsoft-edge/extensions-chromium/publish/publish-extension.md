@@ -1,12 +1,12 @@
 ---
-description: 发布 Microsoft Edge (Chromium) Microsoft Edge 加载项应用商店的扩展。
-title: 发布扩展
+description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge add-ons Store.
+title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.openlocfilehash: 4f8433e74c0fd6dab3278792b94cf3cbaac05d2c
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,162 +14,162 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015749"
 ---
-# 发布扩展  
+# Publish your extension  
 
-完成扩展的开发和测试后，您可能已准备好使用 Microsoft Edge 加载项目录分发扩展。  或者，如果您有一个您希望对 Microsoft Edge 用户可用的现有 chromium 扩展名，则可以将 [现有的 chromium 扩展移植][PortChromiumExtension] 到 microsoft edge。  
+After completing development and testing of your extension, you may be ready to distribute your extension using the Microsoft Edge add-ons catalog.  Alternatively, if you have an existing chromium extension that you want to make available to Microsoft Edge users, you may [port your existing Chromium extension][PortChromiumExtension] to Microsoft Edge.  
 
-将扩展发布到 Microsoft Edge 加载项目录会增加扩展的范围，并使其对最终用户可用。  本主题提供将扩展提交到 Microsoft Edge 加载项目录的过程的演练。  
+Publishing your extension to the Microsoft Edge add-ons catalog increases the reach of your extension and makes it available for end users.  This topic provides a walkthrough of the process to submit your extension to the Microsoft Edge add-ons catalog.  
 
-## 开始之前  
+## Before you begin  
 
-此时，你的扩展的工作原型应该准备就绪。  有关如何创建扩展的信息，请参阅 [入门教程][ExtensionsGettingStarted]。  
+At this point, you should have a working prototype of your extension ready.  For information on how to create an extension, refer to the [Getting started tutorial][ExtensionsGettingStarted].  
 
-若要将扩展发布到 Microsoft Edge 加载项网站，必须在 [合作伙伴中心][MicrosoftPartnerCenter]拥有活动的开发人员帐户。  若要打开新的开发人员帐户并注册到 Microsoft Edge 加载项程序，请按照 [开发人员注册][DeveloperRegistration] 指南中所述的过程进行操作。  
+To publish your extension to the Microsoft Edge add-ons website, you must have an active developer account on [Partner Center][MicrosoftPartnerCenter].  To open a new developer account and register to the Microsoft Edge add-ons program, follow the process mentioned in the [Developer registration][DeveloperRegistration] guide.  
 
-创建一个表示您的扩展程序包的 zip 文件。  您的扩展程序包必须包含以下文件。  
+Create a zip file that represents your extension package.  Your extension package must include the following files.  
 
-*   扩展清单，用于指定详细信息，如扩展的名称、简短说明、权限和默认语言。  
-*   您的扩展所需的图像和其他文件。  
+*   The extension manifest specifying details like the name of the extension, short description, permissions, and default language.  
+*   Images and other files required by your extension.  
 
-清单中的以下字段将自动包含在你的应用商店明细详细信息中，并且无法从 "应用商店节目表" 页面中进行修改，本主题后面部分将对此进行了介绍。  确保在将程序包上载到合作伙伴中心之前，填写字段以与 "应用商店详细信息" 页面上的首选显示匹配。  有关清单文件所需代码的示例，请查看清单文件基础知识。  
+The following fields in the manifest are automatically included in your store listing details and are not able to be modified from the store listings page, which is described later in this topic.  Ensure the fields are filled-out to match your preferred display on the store details page, before uploading your package to Partner Center.  For an example of the code required for the manifest file, review the manifest file basics.  
 
-*   `Name` 清单文件中的字段，它是 "应用商店详细信息" 页面上的 **显示名称** 。  
-*   `Description` 清单文件中的字段，这是 "应用商店详细信息" 页面上的 **简短说明** 。  提供简短的 catchy 说明，以便在你的扩展列表的顶部显示。  如果包含，扩展清单文件中指定的简短说明将显示在应用商店的列表中。  如果清单文件中未包含简短说明，则显示前几行说明。  你应提供简短说明，以避免在你的应用商店摘要页面上重复内容。  
+*   `Name` field in the manifest file, which is the **Display name** on the store details page.  
+*   `Description` field in the manifest file, which is the **Short description** on the store details page.  Provide a short, catchy description to display at the top of the listing for your extension.  When included, the short description specified in the extension manifest file is displayed in your store listing.  If a short description is not included in the manifest file, the first few lines of Description are displayed.  You should provide a brief description to avoid content repetition on your store listing page.  
 
-## 将扩展提交到 Microsoft Edge 加载项存储  
+## Submit your extension to Microsoft Edge add-ons store  
 
-若要将扩展提交到 [合作伙伴中心][MicrosoftPartnerCenter]，请使用以下步骤。  
+To submit your extension to [Partner Center][MicrosoftPartnerCenter], use the following steps.  
 
-#### 步骤1：开始新提交  
+#### Step 1:  Start a new submission  
 
-转到[开发人员仪表板][MicrosoftPartnerCenter]，然后在 "**概述**" 页上选择 "**新建扩展名**"。  
+Go to the [developer dashboard][MicrosoftPartnerCenter] and select **Create new extension** on the **Overview** page.  
 
-#### 步骤2：上载扩展包  
+#### Step 2:  Upload the extension package  
 
-使用 " **程序包** " 页面上载您的扩展程序包的 zip 文件。  您一次只能上载一个程序包。  如果 **软件包页面上的软件包** 上载未成功，您将无法继续提交。  
+Use the **Packages** page to upload the zip file of your extension package.  You are only able to upload one package at a time.  You are not able to continue with the submission if the package upload is not successful on the **Packages** page.  
 
-通过将程序包拖到 "上载" 字段，或选择 " **浏览文件**" 来上载程序包。  上载程序包后，将验证程序包。  验证成功后，查看扩展详细信息，然后选择 " **下一步** " 以继续。  如果存在验证错误，请解决问题并再次尝试上载。  
+Upload the package by either dragging the package to the upload field, or by selecting **Browse your files**.  Once the package is uploaded, your package is validated.  Once validation succeeds, review the extension details, and then select **Next** to continue.  If there are validation errors, resolve the issues and try uploading again.  
 
-#### 步骤3：提供可用性详细信息  
+#### Step 3:  Provide Availability details  
 
-在 " **可用性** " 页面上，输入有关扩展可用性的以下信息。  
+On the **Availability** page, enter the following information about the availability of your extension.  
 
-##### 可见性  
+##### Visibility  
 
-选择以下可见性选项之一，定义是否可在 Microsoft Edge 加载项目录中发现你的扩展。  
+Choose one of the following visibility options to define if your extension is discoverable in the Microsoft Edge add-ons catalog.  
 
-*   `Public` \ (默认值 \ )   
-    公共允许通过搜索、浏览 Microsoft Edge 加载项目录或在 Microsoft Edge 加载项存储中使用您的扩展的列表 URL，让所有人都能够发现扩展。  "扩展 **概述** " 页面上的 "合作伙伴中心" 仪表板上提供了 "列表" URL。  
+*   `Public` \(default\)  
+    Public allows extensions to be discoverable to everyone through search, browsing in the Microsoft Edge add-ons catalog, or using the listing URL to your extension in the Microsoft Edge add-ons store.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.  
 
 *   `Hidden`  
-    隐藏从搜索结果中删除扩展名或在 Microsoft Edge 加载项目录中浏览。  若要在 Microsoft Edge 加载项存储中分发隐藏的扩展，必须与客户共享列表 URL 和扩展。  
+    Hidden removes extensions from search results or browsing in the Microsoft Edge add-ons catalog.  To distribute hidden extensions in the Microsoft Edge add-ons store, you must share the listing URL to the extension with your customers.  
 
 > [!NOTE]
-> 您可以将您的扩展的可见性从 **公共** 更改为 **隐藏**。  当可见性设置为 "公共" 时，安装您的扩展的用户将保留对您的扩展的访问，并接收任何通过 Microsoft Edge 加载项网站提供的更新。  
+> You may change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge add-ons website.  
 
-##### 市场  
+##### Markets  
 
-定义计划提供您的扩展的特定市场。  默认情况下，所有市场均已选中，包括以后添加的任何未来市场。  或者，选择 " **更改市场**"，选择特定市场。  取消选择单个市场以排除它们，或选择 " **取消全选** "，然后添加你选择的单个市场。  
+Define the specific markets in which you plan to offer your extension.  By default, all markets have been selected including any future markets that are added later.  Alternatively, choose specific markets by selecting **Change markets**.  Deselect individual markets to exclude them, or select **Unselect all** and then add individual markets of your choice.  
 
 > [!NOTE]
-> 你可以更改提供扩展的市场。  已安装您的扩展的用户在其市场中可用时，将保留对您的扩展的访问。  但是，你的用户将无法再访问提交到 Microsoft Edge 加载项目录的任何未来更新。  
+> You may change the markets where your extension is offered.  Users who installed your extension while it was available in their market retain access to your extension.  However, your users no longer have access to any future updates submitted to the Microsoft Edge add-ons catalog.  
 
-选择 " **保存** " 以继续转到 " **属性** " 部分。  
+Select **Save** to continue to the **Properties** section.  
 
-#### 步骤4：选择扩展的属性  
+#### Step 4: Select Properties for your extension  
 
-在 " **属性" 页**上，输入以下信息以指定扩展的属性。  将在 Microsoft Edge 加载项目录中向用户显示这些属性。  
+On the **Properties page**, enter the following information to specify properties of your extension.  The properties are displayed to users in the Microsoft Edge add-ons catalog.  
 
-| 扩展属性名称 | 描述 |  
+| Extension property name | Description |  
 |:--- |:--- |  
-| 类别 \ (必需 \ )  | 最能描述您的分机的类别。  在右侧类别中列出您的扩展可帮助用户轻松地找到您的扩展并了解更多相关信息。  |  
-| 隐私策略要求 \ (必需 \ )  | 指示你的扩展是否访问、收集或传输任何个人信息。  如果选择 **"是"** ，并且不提供，则你的扩展可能会失败认证步骤 `Privacy policy URL` 。  |  
-| 隐私策略 URL | 有效的隐私策略 URL，用于传达您的扩展如何遵守隐私法律和法规。  您有责任确保您的分机符合隐私法律和法规，并提供有效的隐私政策 URL （如有必要）。  如果你的扩展正在访问、传输或收集任何个人信息，请提供隐私策略 URL。  若要确定你的扩展是否需要隐私策略，请转到 [Microsoft Edge 开发人员协议][MicrosoftAppDeveloperAgreement] 和 [microsoft edge 加载项目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
-| 网站 URL | 提供有关扩展的其他信息的网页。  `Website URL`必须指向您自己的网站上的页面，而不是 Microsoft Edge 加载项目录中您的扩展的 web 列表。  `Website URL`可帮助用户了解有关您的扩展、其功能和任何其他相关信息的更多信息。  |  
-| 支持联系人详细信息 | 您的支持网页的 URL，或电子邮件地址以联系支持团队。  |  
-| 成人内容 | 用于指定你的扩展是否包含成人内容的复选框。  扩展评级有助于确定你的扩展的目标受众的相应年龄组。  若要帮助确定你的分机号是否为成人内容，请转到 [Microsoft Edge 加载项目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
+| Category \(required\) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |  
+| Privacy policy requirements \(required\) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension may fail the certification step if you choose **Yes** and you do not provide a `Privacy policy URL`.  |  
+| Privacy policy URL | A valid privacy policy URL to communicate how your extension complies with privacy laws and regulations.  You are responsible for ensuring your extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if necessary.  Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, go to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
+| Website URL | A web page that provides additional information about your extension.  The `Website URL` must point to a page on your own website, not the web listing for your extension in the Microsoft Edge add-ons catalog.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |  
+| Support contact details | The URL to your support webpage, or the email address to contact your support team.  |  
+| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, go to [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
 
-选择 " **保存** " 以继续转到 " **应用商店节目表** " 部分。  
+Select **Save** to continue to the **Store listings** section.  
 
-#### 步骤5：添加你的扩展的应用商店列表详细信息  
+#### Step 5: Add Store listing details for your extension  
 
-在 Microsoft Edge 加载项目录上访问列表的用户将向用户显示下节中提供的信息。  虽然某些字段是可选的，但你应该提供尽可能多的信息。  在应用商店中列出的扩展所需的最低详细信息（针对扩展程序包中提及的每种语言）是 **说明** 和 **扩展存储徽标**。  
+The information provided in the following section is displayed to users that visit your listing on the Microsoft Edge add-ons catalog.  Even though some fields are optional, you should provide as much information as possible.  The minimum required details for your extension for listing in the store, for each language mentioned in your extension package, are **Description** and **Extension Store logo**.  
 
 > [!NOTE]
-> 必须填写扩展 zip 包中提及的每种语言所需的最低应用商店列表详细信息。  若要在 Microsoft Edge 加载项目录上的应用商店中添加或删除语言，必须修改扩展包中的扩展支持的语言列表，创建新的扩展名包，然后重新上载。  
+> The minimum required store listing details must be filled-out for each language mentioned in your extension zip package.  To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, you must modify the list of languages supported by your extension in the extension package, create a new extension package, and re-upload it.  
 
-| 应用商店列表属性名称 | 描述 |  
+| Store listing property name | Description |  
 |:--- |:--- |  
-| 应用商店的待售房产语言 \ (必需 \ )  | 从 " **语言** " 下拉列表中选择一种语言，然后输入该语言的应用商店详细信息。  支持多种语言的扩展必须为每种支持的语言提供 "应用商店" 列表页面。  |  
-| 显示名称 \ (必需 \ )  | 在您的扩展的清单文件中指定的扩展名的名称。  若要在提交后更改应用商店的显示名称，你可以更新清单文件中的名称，创建新的扩展包，然后重新上载它。  |  
-| 说明 \ (必需 \ )  | "说明" 字段重点介绍扩展的功能、用户应安装的原因或用户需要了解的其他相关信息。  它应少于10000个字符。  |  
-| 扩展存储徽标 \ (必需 \ )  | 表示你的公司或扩展徽标的图像，其纵横比为1，而建议的大小为 300 x 300 像素。  |  
-| 小促销磁贴 (可选 \ )  | `Small promotional tile`图像用于在应用商店中与其他扩展一起显示您的扩展名。  图像的大小应为 440 x 280 像素。  |  
-| 屏幕截图 \ (可选 \ )  | 你最多可以提交10个屏幕截图来详细描述你的扩展的功能。  屏幕截图的大小必须是 640 x 480 像素或 1280 x 800 像素。  |  
-| 大型促销磁贴 (可选 \ )  | 在应用商店中，较大的促销图块用于 Microsoft Edge 加载项网站中更突出的功能扩展。  图像（如果已提交）将对用户可见。  PNG 文件的大小必须为 1400 x 560 像素。  |  
-| YouTube 视频 URL \ (可选 \ )  | 您可以包括您的分机的促销 YouTube 视频。  `YouTube video URL`视频显示在您的扩展的 "应用商店" 页面上。  |  
-| 简短说明 \ (必需 \ )  | 若要编辑简短说明，必须更新扩展包的清单文件中的说明字段，然后重新上载它。  |  
-| 搜索词 \ (可选 \ )  | 搜索词是一个单词或短语，可帮助用户在 Microsoft Edge 加载项目录中搜索时发现你的扩展。  搜索词不会显示给用户。  |  
+| Store listing languages \(required\) | Select a language from the **Languages** dropdown and enter the store listing details for that language.  Extensions that support multiple languages must provide a store listing page for each supported language.  |  
+| Display name \(required\) | The name of your extension specified in the manifest file of your extension.  To change the store display name after submission, you may update the name in the manifest file, create a new extension package, and then re-upload it.  |  
+| Description \(required\) | The description field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.  It should be less than 10,000 characters.  |  
+| Extension Store logo \(required\) | An image that represents your company or extension logo with an aspect ratio of 1 and recommended size of 300 x 300 pixels.  |  
+| Small promotional tile \(optional\) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  |  
+| Screenshots \(optional\) | You may submit a maximum of 10 screenshots describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels, or 1280 x 800 pixels.  |  
+| Large promotional tile \(optional\) | Large promotion tiles are used in the store to feature extensions more prominently in the Microsoft Edge add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  |  
+| YouTube video URL \(optional\) | You may include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing page of your extension.  |  
+| Short description \(required\) | To edit the short description, you must update the description field in your manifest file of your extension package and re-upload it.  |  
+| Search terms \(optional\) | Search terms are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons Catalog.  The search terms are not displayed to users.  |  
 
-##### YouTube 视频 URL 要求  
+##### YouTube video URL requirements  
 
-确保您的视频满足以下要求。  
+Ensure your video meets the following requirements.  
 
-*   验证 YouTube 视频的内容是否符合 [Microsoft Edge Addons 目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies] 主题。  
-*   关闭视频上的广告。  有关详细信息，请参阅[在嵌入式视频上][GoogleYoutubeAnswer132596][设置默认广告格式][GoogleYoutubeAnswer2531367Topic7072227]和广告。  
-*   为你的视频打开 "嵌入"。  有关详细信息，请转到 " [嵌入视频" & 播放列表][GoogleYoutubeAnswer171780]。  
+*   Verify that the content of the YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies] topic.  
+*   Turn off advertisements on your video.  For more information, go to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].  
+*   Turn on embedding for your videos.  For more information, go to [Embed videos & playlists][GoogleYoutubeAnswer171780].  
 
-执行以下步骤来提交视频的 YouTube 视频 URL。  
+Perform the following steps to submit the YouTube video URL of your video.  
 
-1.  在 YouTube 上，找到要添加到应用商店列表页面的视频。  
-1.  在 "视频" 下，选择 "**共享**  >  **嵌入**"。  
-1.  复制显示的 HTML 代码。  
-1.  在 "应用商店列表详细信息" 页面上，将 HTML 代码粘贴到 `YouTube video URL` 字段中。  
+1.  On YouTube, locate the video that you want to add to your store listing page.  
+1.  Under the video, choose **Share** > **Embed**.  
+1.  Copy the HTML code that is displayed.  
+1.  On the store listing details page, paste the HTML code in the `YouTube video URL` field.  
 
-##### 搜索条件要求  
+##### Search terms requirements  
 
-搜索词必须满足以下要求。  
+Search terms must meet the following requirements.  
 
-*   您最多可以输入21个字的搜索词。  无论是用作单个单词、短语还是二者的组合，您最多只能有21个单词。  
-*   最多可达7个搜索词：单个单词或短语。  每个搜索词的字符数限制为30个字符。  
+*   You may enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you are only allowed a maximum of 21 words.  
+*   Up to a maximum of seven search terms:  single word or phrases.  Each search term has a character limit of 30 characters.  
 
-#### 步骤6：完成提交  
+#### Step 6: Complete your submission  
 
-在 " **提交您的扩展** " 页面上，为 "证书" 添加备注以帮助测试您的扩展。  
+On the **Submit your extension** page, add notes for certification to help test your extension.  
 
-##### 认证说明 (可选)   
+##### Notes for certification (Optional)  
 
-提交扩展时，请使用 " **证书说明** " 页面向认证测试人员提供其他信息。  其他信息可帮助确保正确地测试扩展。  如果您的扩展未经过完全测试，则它可能无法通过认证。  
+When submitting your extension, use the **Notes for certification** page to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension is not fully tested, it may fail certification.  
 
-请确保在必要时包含以下信息。  
+Ensure you include the following information, as necessary.  
 
-*   测试帐户的用户名和密码。  
-*   访问隐藏或锁定的功能的步骤。  
-*   根据区域或其他用户设置，功能的预期差异。  
-*   如果提交是对现有扩展的更新，请包括有关对扩展所做的更改的信息。  
-*   测试人员必须了解你的提交的任何其他信息。  
+*   User names and passwords for test accounts.  
+*   Steps to access hidden or locked features.  
+*   Expected differences in functionality based on region or other user settings.  
+*   If your submission is an update to an existing extension, include information about the changes made to the extension.  
+*   Any additional information that testers must understand about your submission.  
 
-提供信息后，选择 " **发布** " 以将扩展提交到 Microsoft Edge 加载项目录。  你的提交将继续进行认证步骤。  在提交后，认证过程可能需要长达7个工作日。  
+After providing the information, select **Publish** to submit your extension to the Microsoft Edge add-ons catalog.  Your submission proceeds to the certification step.  The certification process may take up to seven business days after your submission.  
 
-提交通过认证后，将在 Microsoft Edge 加载项目录中发布您的分机号码。  "合作伙伴中心" 仪表板中的扩展状态将更改为 `In the Store` 。  
+When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 > [!NOTE]
-> 如果你在提交或注册过程中遇到任何问题，请在 [此处][ExtensionsSupportForm] 提供支持票证或向 [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com)发送电子邮件。  
+> If you are facing any issues in the submission or registration process, file a support ticket [here][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).  
 
 <!-- links -->  
 
-[ExtensionsGettingStarted]: ../getting-started/index.md "Microsoft Edge 入门 (Chromium) 扩展 |Microsoft 文档"  
-[DeveloperRegistration]: ./create-dev-account.md "注册为 Microsoft Edge 扩展开发人员 |Microsoft 文档"  
-[PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "将 Chromium 扩展移植到 Microsoft Edge |Microsoft 文档"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons 目录开发人员策略 |Microsoft 文档"  
+[ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
+[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"  
+[PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
 
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议 |Microsoft 文档"  
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
 
-[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "扩展新的支持请求 |Microsoft 支持"  
+[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"  
 
-[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "设置默认广告格式-YouTube 帮助"  
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
 
-[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "嵌入式视频上的广告-YouTube 帮助"
-[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "& 播放列表中嵌入视频-YouTube 帮助"  
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"
+[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos & playlists - YouTube Help"  

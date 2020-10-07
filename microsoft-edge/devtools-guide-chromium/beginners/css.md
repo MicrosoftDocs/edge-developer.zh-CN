@@ -1,12 +1,12 @@
 ---
-description: CSS 入门
-title: 初学者的 DevTools：开始使用 CSS
+description: Get Started with CSS
+title: 'DevTools for beginners: Get started with CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
+keywords: microsoft edge, web developement, f12 tools, devtools
 ms.openlocfilehash: fe87b4f840c6d9dde3cdf6455700161ea8d8d31e
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,83 +28,83 @@ ms.locfileid: "10993301"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 初学者的 DevTools：开始使用 CSS  
+# DevTools for beginners: Get started with CSS  
 
-在本教程中，你将了解如何使用 CSS 对网页进行样式。  你还将了解如何使用 Microsoft Edge DevTools 来试验 CSS 更改。  
+In this tutorial, you learn how to use CSS to style a web page.  You also learn how to use Microsoft Edge DevTools to experiment with CSS changes.  
 
-以下文章是一系列教程中的第二个教程，可教你了解 web 开发和 Microsoft Edge DevTools 的基础知识。  您可以通过实际构建自己的网站来获得实际体验。  在下一步操作之前，不必完成第一个教程。  [设置代码](#set-up-your-code) 显示如何设置。  
-
-> [!NOTE]
-> 本教程适用于绝对初学者，重点介绍 **web 开发的基础知识** 和使用 DEVTOOLS 试验 CSS 的基础知识。  如果你需要仅关注 DevTools 的教程，请参阅 [查看和更改 CSS 入门][DevtoolsCssIndex]。  
-
-在教程的开头，您的网站应如下图所示。  
-
-:::image type="complex" source="../media/beginners-css-intro1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-intro1.msft.png":::
-   网站的当前外观  
-:::image-end:::  
-
-完成教程后，您的网站应如下图所示。  
-
-:::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="您的网站在教程结束时应看起来是什么样子" lightbox="../media/beginners-css-intro2.msft.png":::
-   您的网站在教程结束时应看起来是什么样子  
-:::image-end:::  
-
-## 目标  
-
-按照此教程更好地了解以下概念和任务。  
-
-*   如何使用 CSS 对网页进行样式。  
-*   如何使用 Microsoft Edge DevTools 来试验 CSS。  
-*   CSS 和 CSS 框架之间的区别。  
-
-您正在构建真正的网站。  
-
-## 必备条件  
-
-在尝试本教程之前，请完成以下先决条件。  
-
-*   完整 [入门 html 和 dom，][DevtoolsBeginnersHtml] 或者确保你对 HTML 和 dom 的理解与该教程中所讲授的内容类似。  
-*   下载 [Microsoft Edge][MicrosoftEdgeInsider] web 浏览器。  以下教程使用一组称为 Microsoft Edge DevTools 的 web 开发工具，这些工具内置于 Microsoft Edge 中。  
-
-## 设置代码  
-
-若要创建网站，必须首先完成以下操作来设置代码。  
+The following article is the second tutorial in a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You do not have to complete the first tutorial before following the second.  [Set up your code](#set-up-your-code) shows you how to get set up.  
 
 > [!NOTE]
-> 如果您已完成系列中的第一个教程，请跳至下一节。  继续使用最后一个教程中的代码， [HTML 和 DOM 入门][DevtoolsBeginnersHtml]。  
+> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, see [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
 
-1.  打开 [源代码][GlitchCookedAmphibianIndex]。  浏览器的 "聚焦" 选项卡作为 " **编辑" 选项卡**进行引用。  
+At the beginning of the tutorial, your site should look like the following figure.  
+
+:::image type="complex" source="../media/beginners-css-intro1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-intro1.msft.png":::
+   What your site currently looks like  
+:::image-end:::  
+
+After you complete the tutorial, you site should look like the following figure.  
+
+:::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-intro2.msft.png":::
+   What your site should look like at the end of the tutorial  
+:::image-end:::  
+
+## Goals  
+
+Follow this tutorial to better understand the following concepts and tasks.  
+
+*   How to use CSS to style a web page.  
+*   How to use Microsoft Edge DevTools to experiment with CSS.  
+*   The difference between CSS and CSS frameworks.  
+
+You are building a real website.  
+
+## Prerequisites  
+
+Before attempting this tutorial, complete the following prerequisites.  
+
+*   Complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] or make sure that you have an understanding of HTML and the DOM similar to what is taught in that tutorial.  
+*   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.  
+
+## Set up your code  
+
+To create your site, you must first complete the following actions to set up your code.  
+
+> [!NOTE]
+> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].  
+
+1.  Open the [source code][GlitchCookedAmphibianIndex].  The in-focus tab of your browser is referenced as the **editing tab**.  
     
-    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text=""编辑" 选项卡" lightbox="../media/beginners-css-setup1.msft.png":::
-       " **编辑** " 选项卡  
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-setup1.msft.png":::
+       The **editing** tab  
     :::image-end:::  
     
-1.  选择 **cooked-amphibian**。  将弹出一个菜单。  
+1.  Choose **cooked-amphibian**.  A menu pops up.  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text=""项目选项" 菜单" lightbox="../media/beginners-css-setup2.msft.png":::
-       "项目选项" 菜单  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-setup2.msft.png":::
+       The Project Options menu  
     :::image-end:::  
 
-1.  选择 " **Remix Project**"。  问题创建您可以编辑的项目副本。  
+1.  Choose **Remix Project**.  Glitch creates a copy of the project that you are able to edit.  
     
     > [!NOTE]
-    > 故障为新项目生成一个随机名称。  
+    > Glitch generates a random name for the new project.  
     
-1.  **在新窗口中选择 "****显示**并选择"。  将打开另一个选项卡，其中包含您的网站的实时视图。  浏览器的 "聚焦" 选项卡作为 " **实时" 选项卡**进行引用。  
+1.  Choose **Show** and select **In a New Window**.  Another tab opens with a live view of your site.  The in-focus tab of your browser is referenced as the **live tab**.  
     
-    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text=""实时" 选项卡" lightbox="../media/beginners-css-setup3.msft.png":::
-       " **实时" 选项卡**  
+    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-setup3.msft.png":::
+       The **live tab**  
     :::image-end:::  
 
-## 了解 CSS  
+## Understand CSS  
 
-**CSS** 是确定网页布局和样式的计算机语言。  下图是带有边框的段落。  
+**CSS** is a computer language that determines the layout and styling of web pages.  The following figure is a paragraph with a border.  
 
-:::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="文本已采用 CSS 样式" lightbox="../media/beginners-css-red_paragraph.msft.png":::
-   文本已采用 CSS 样式  
+:::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-red_paragraph.msft.png":::
+   The text has been styled with CSS  
 :::image-end:::  
 
-以下代码片段是用于创建上图中的段落的 HTML 和 CSS 代码。  
+The following code snippet is the HTML and CSS code used to create the paragraph in the previous figure.  
 
 ```html
 <p style="border: 1px dashed red; padding: 5px;">
@@ -112,19 +112,19 @@ ms.locfileid: "10993301"
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` 可能看起来很新。  其余内容应熟悉。  如果不是，请先 [开始使用 HTML 和 DOM][DevtoolsBeginnersHtml] ，然后再尝试以下部分。  
+`style="border: 1px dashed red; padding: 5px;"` probably looks new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] before attempting the following sections.  
 
-## 添加内联样式  
+## Add inline styles  
 
-完成以下操作以使用 **嵌入式样式** 将样式应用到单个元素。  
+Complete the following actions to use **inline styles** to apply styles to a single element.  
 
-1.  返回到 "编辑" 选项卡并打开 `index.html` 。  
+1.  Go back to the editing tab and open `index.html`.  
     
-    :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="index.html" lightbox="../media/beginners-css-inline1.msft.png":::
-       `index.html`在 "编辑" 选项卡中打开  
+    :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-inline1.msft.png":::
+       Open `index.html` in the editing tab  
     :::image-end:::  
     
-1.  添加 `style="background-color: aliceblue;"` 到您 `<nav>` 的。  在下面的代码块中，第四行代码是你需要更改的代码。  剩下的就是这样，因此您可以确保将新代码放入正确的位置。  
+1.  Add `style="background-color: aliceblue;"` to your `<nav>`.  In the code block below, the fourth line of code is the one you need to change.  The rest is just there, so you are able to ensure that you are putting the new code in the right place.  
     
     ```html
     <header>
@@ -138,15 +138,15 @@ ms.locfileid: "10993301"
     ...
     ```  
     
-1.  转到 " **实时" 选项卡** 以查看所做的更改！  现在，该分区的背景 `<nav>` 为蓝色。  
+1.  Go to the **live tab** to see the changes!  The background of the `<nav>` section is now blue.  
     
-    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text=""主页" 和 "联系人" 链接后面的背景色现在为蓝色" lightbox="../media/beginners-css-inline2.msft.png":::
-       " **主页** " 和 " **联系人** " 链接后面的背景色现在为蓝色  
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-inline2.msft.png":::
+       The background color behind the **Home** and **Contact** links is now blue  
     :::image-end:::  
     
-## 在具有内部样式表的单个页面上重新使用样式  
+## Re-use styles on a single page with internal stylesheets  
 
-在前面的代码段中，内联样式将样式应用于单个 `<p>` 标记。  
+In a previous code snippet, an inline style applied a style to a single `<p>` tag.  
 
 ```html
 <p style="border: 1px dashed red; padding: 5px;">
@@ -154,16 +154,16 @@ ms.locfileid: "10993301"
 </p>
 ```  
 
-如果您希望您的 `<p>` 网页上的所有元素的样式设置方式相同，该怎么办？  您必须将代码复制并粘贴到 `<p>` 您的网站上的每个标记中。  这是大量的时间和精力。  如果需要进行编辑，则必须再次更改每个标签。  完成以下操作以使用 **内部样式表** 编写 CSS 一次，以便它应用于多个元素。  
+What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You would have to copy and paste the code into every single `<p>` tag on your site.  That is a lot of time and effort.  And, if you needed to make an edit, you would have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
 
-1.  在 "实时" 选项卡中，选择 " **联系人** " 以转到 "联系人" 页面。  请注意 " **家庭** " 和 " **联系人**" 的字体。  
+1.  In the live tab, choose **Contact** to go to the contact page.  Notice the font of **Home** and **Contact**.  
     
-    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text=""联系人" 页面" lightbox="../media/beginners-css-internal1.msft.png":::
-       "联系人" 页面  
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-internal1.msft.png":::
+       The Contact page  
     :::image-end:::  
     
-1.  在 " **编辑器" 选项卡**中，转到 `contact.html` 。  
-1.  将以下代码添加到 `contact.html` 。  请记住，"行" `<style>` 和 "结束" 行 `</style>` 是你需要添加的内容。  其他代码就在这里，您知道在哪里放置新代码。  
+1.  In the **editor tab**, go to `contact.html`.  
+1.  Add the following code to `contact.html`.  Remember, the lines starting with `<style>` and ending with `</style>` are what you need to add.  The other code is just there so you know where to put the new code.  
     
     ```html
     ...
@@ -181,16 +181,16 @@ ms.locfileid: "10993301"
     ...
     ```  
     
-1.  返回到 " **实时" 选项卡**。  
-1.  选择 " **联系人** " 以返回到联系人页。  **家庭**和**联系人**的字体已更改。  
+1.  Go back to the **live tab**.  
+1.  Choose **Contact** to go back to the contact page.  The font of **Home** and **Contact** has changed.  
     
-    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="主页和联系人链接的字体已更改" lightbox="../media/beginners-css-internal2.msft.png":::
-       **主页**和**联系人**链接的字体已更改  
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-internal2.msft.png":::
+       The font of the **Home** and **Contact** links has changed  
     :::image-end:::  
     
-### 了解内部样式表  
+### Understand internal stylesheets  
 
-内部样式表使用 **选择器**应用样式。  选择器是可应用于一个或多个 HTML 元素的模式。  上面的代码段添加了以下样式。  
+Internal stylesheets apply styles using **selectors**.  Selectors are patterns that may apply to one or more HTML elements.  The previous code snippet added the following style.  
 
 ```html
 <style>
@@ -200,43 +200,43 @@ ms.locfileid: "10993301"
 </style>
 ```  
 
-`li a` 是转换为 " `<li>` 包含元素的任何元素" 的选择器 `<a>` 。  浏览器将更改 " **主页** " 和 " **联系人** " 链接的字体，因为每个标记组都与模式匹配。  
+`li a` is a selector that translates to "any `<li>` element that contains an `<a>` element".  The browser changes the font of the **Home** and **Contact** links because each of the tag groups match the pattern.  
 
 ```html
 <li><a href="/">Home</a></li>
 <li><a href="/contact.html">Contact</a></li>
 ```  
 
-`font-family: 'Courier New', Courier, serif` 是 **声明**。  声明由以下两个部分组成。  
+`font-family: 'Courier New', Courier, serif` is a **declaration**.  A declaration is made of following two parts.  
 
 :::row:::
    :::column span="1":::
-      **属性**  
+      **property**  
    :::column-end:::
    :::column span="1":::
       `font-family`  
    :::column-end:::
    :::column span="2":::
-      该属性描述你可以更改元素样式的一般方式。  
+      The property describes a general way that you are able to change the style of the element.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **值**  
+      **value**  
    :::column-end:::
    :::column span="1":::
       `'Courier New', Courier, serif`  
    :::column-end:::
    :::column span="2":::
-      该值确切描述元素样式应如何更改。  
+      The value describes exactly how the style of the element should change.  
    :::column-end:::
 :::row-end:::  
 
-例如， `font-family: 'Courier New', Courier, serif` 为浏览器提供以下指令： "将匹配模式的元素的字体设置 `li a` 为 `'Courier New'` 。  如果该字体不可用，请使用 `Courier` 。  如果该功能不可用，请使用 `serif` 。  
+For example, `font-family: 'Courier New', Courier, serif` gives the browser the following instruction:  "Set the font of elements that match the pattern `li a` to `'Courier New'`.  If that font is not available, use `Courier`.  If that is not available, use `serif`."  
 
-### 将多个选择器添加到规则集  
+### Add multiple selectors to a ruleset  
 
-类似于下面所示的 CSS 代码块称为 " **规则集**"。  
+A block of CSS code like what you see below is called a **ruleset**.  
 
 ```css
 li a {
@@ -244,10 +244,10 @@ li a {
 }
 ```  
 
-完成以下操作以使用逗号将多个选择器添加到规则集。  
+Complete the following actions to use commas to add multiple selectors to a ruleset.  
 
-1.  在 " **编辑器" 选项卡**中，打开 `contact.html` 。  
-1.  `li a`键入后 `, h1` 。  
+1.  In the **editor tab**, open `contact.html`.  
+1.  After `li a` type `, h1`.  
     
     ```html
     <style>
@@ -257,122 +257,122 @@ li a {
     </style>
     ```  
     
-    上面的代码片段告诉浏览器对元素的样式与 `<h1>` 与模式匹配的元素的样式相同 `li a` 。  
+    The previous code snippet tells the browser to style `<h1>` elements the same way that it styles elements that match the pattern `li a`.  
     
-1.  转到 " **实时" 选项卡**。  
-1.  选择 **联系人** 链接返回到联系人页。  现在，请 **与我联系！** 的字体与导航链接的字体相同。  
+1.  Go to the **live tab**.  
+1.  Choose the **Contact** link to go back to the contact page.  Now, **Contact Me!** has the same font as the navigation links.  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本与我联系！  现在与 "主页" 和 "联系人" 链接的字体相同" lightbox="../media/beginners-css-multiple1.msft.png":::
-       文本 **与我联系！** 现在与 " **主页** " 和 " **联系人** " 链接的字体相同  
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-multiple1.msft.png":::
+       The text **Contact Me!** now has the same font as the **Home** and **Contact** links  
     :::image-end:::  
     
-## 试用 DevTools  
+## Experiment with DevTools  
 
-随着您继续在 web 开发中成为专家，您可能会发现 CSS 非常棘手。  你可以编写一些 CSS，并希望它以一种方式显示，但浏览器执行完全不同的操作。  Microsoft Edge DevTools 使你可以轻松地体验更改，并立即查看更改对页面有何影响。  
+As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You may write some CSS and expect it to display one way, but the browser does something completely different.  Microsoft Edge DevTools makes it easy to experiment with changes and immediately see how the changes affect the page.  
 
-### 将声明添加到 DevTools 中的现有 rulest  
+### Add a declaration to an existing rulest in DevTools  
 
-完成以下操作以循环访问现有元素的样式，将声明添加到现有规则集。  
+Complete the following actions to iterate on the style of an existing element, add a declaration to an existing ruleset.  
 
-1.  将鼠标悬停在 " **主页** " 链接上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **检查**"。  
+1.  Hover on the **Home** link, open the contextual menu \(right-click\), and select **Inspect**.  
     
-    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查 "主页" 链接" lightbox="../media/beginners-css-add1.msft.png":::
-       检查 "主页" 链接  
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-add1.msft.png":::
+       Inspect the Home link  
     :::image-end:::  
     
-    DevTools 将在您的页面旁打开。  表示 Home 链接的代码在 `<a href="/">Home</a>` DOM 树中突出显示为蓝色。  代码片段和预览应熟悉 [HTML 和 DOM 入门][DevtoolsBeginnersHtml]。  
+    DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].  
     
     :::row:::
        :::column span="":::
-          下图中，在 `font-family: 'Courier New', Courier, serif` `contact.html` DOM 树下方的 " **样式** " 选项卡中显示了之前添加到的声明。  
+          In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is seen in the **Styles** tab below the DOM Tree.  
           
-          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text=""样式" 选项卡位于 DOM 树的下方" lightbox="../media/beginners-css-add2.msft.png":::
-             " **样式** " 选项卡位于 DOM 树的下方  
+          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-add2.msft.png":::
+             The **Styles** tab is below the DOM Tree  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          如果 DevTools 窗口是宽的，则 "样式" 选项卡位于 DOM 树的右侧。  
+          If your DevTools window is wide, the Styles tab is to the right of the DOM Tree.  
           
-          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text=""样式" 选项卡位于 DOM 树的右侧" lightbox="../media/beginners-css-add3.msft.png":::
-             " **样式** " 选项卡位于 DOM 树的右侧  
+          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-add3.msft.png":::
+             The **Styles** tab is to the right of the DOM Tree  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  选择下面的空行 `font-family: 'Courier New', Courier, Serif` 以添加新声明。  
+1.  Choose the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration.  
     
-    :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="添加新声明" lightbox="../media/beginners-css-add4.msft.png":::
-       添加新声明  
+    :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-add4.msft.png":::
+       Add a new declaration  
     :::image-end:::  
     
-1.  键入 `color` 并选择 `Enter` 。  "自动完成" UI 建议您键入时的选项。  
+1.  Type `color` and select `Enter`.  The autocomplete UI suggests options as you type.  
     
-    :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="键入颜色" lightbox="../media/beginners-css-add5.msft.png":::
-       类型 `color`  
+    :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-add5.msft.png":::
+       Type `color`  
     :::image-end:::  
     
-1.  键入 `magenta` 并选择 `Enter` 。  "联系人" 页面上的所有文本现在均为 "洋红"。  
+1.  Type `magenta` and select `Enter`.  All of the text on the contact page is now magenta.  
     
-    :::image type="complex" source="../media/beginners-css-add6.msft.png" alt-text="键入洋红" lightbox="../media/beginners-css-add6.msft.png":::
-       类型 `magenta`  
+    :::image type="complex" source="../media/beginners-css-add6.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-add6.msft.png":::
+       Type `magenta`  
     :::image-end:::  
     
-### 在 DevTools 中编辑声明  
+### Edit a declaration in DevTools  
 
-完成以下操作以在 DevTools 中编辑现有声明。  
+Complete the following actions to edit existing declarations in DevTools.  
 
-1.  选择旁边的洋红色方块 `magenta` 。  将弹出一个颜色选取器。  
+1.  Choose the magenta square next to `magenta`.  A color picker pops up.  
     
-    :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="颜色选取器" lightbox="../media/beginners-css-edit1.msft.png":::
-       颜色选取器  
+    :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-edit1.msft.png":::
+       The Color Picker  
     :::image-end:::  
     
-1.  使用拾色器将字体文本更改为您喜欢的颜色。  
+1.  Use the color picker to change the font text to a color that you like.  
     
-    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="通过拾色器将字体颜色更改为紫色" lightbox="../media/beginners-css-edit2.msft.png":::
-       通过拾色器将字体颜色更改为紫色  
+    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-edit2.msft.png":::
+       Change the font color to purple with the Color Picker  
     :::image-end:::  
     
-### 在 DevTools 中添加新的规则集  
+### Add a new ruleset in DevTools  
 
-完成以下操作以在 DevTools 中添加新的规则集。  
+Complete the following actions to add new rulesets in DevTools.  
 
-1.  选择 " **新建样式规则** \ (![ 新样式规则 ][ImageNewStyleRuleIcon] \ ) 它位于" **. cls**"旁边。  将显示一个包含选择器的空规则集 `a` 。  
+1.  Choose **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.  
     
-    :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则" lightbox="../media/beginners-css-rule1.msft.png":::
-       添加新规则  
+    :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-rule1.msft.png":::
+       Add a new rule  
     :::image-end:::  
     
-1.  用 `a:hover` 取代 `a`。  
+1.  Replace `a` with `a:hover`.  
     
-    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="将 with a:hover 替换为" lightbox="../media/beginners-css-rule2.msft.png":::
-       替换 `a` 为 `a:hover`  
+    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-rule2.msft.png":::
+       Replace `a` with `a:hover`  
     :::image-end:::  
     
-    `:hover` 是 **伪类**。  对可能进入特殊状态的样式元素使用伪类。  例如， `a:hover` 仅当你将鼠标悬停在某个元素上方时，该样式才会生效 `<a>` 。  
+    `:hover` is a **pseudo-class**.  Use pseudo-classes for style elements that may enter special states.  For example, the `a:hover` style only takes effect when you are hovering over an `<a>` element.  
     
-1.  在括号之间进行选择以添加新的声明。  
-1.  键入 `background-color` 声明名称，然后选择 `Enter` 。  
+1.  Choose between the brackets to add a new declaration.  
+1.  Type `background-color` for the declaration name and select `Enter`.  
     
-    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="键入背景色" lightbox="../media/beginners-css-rule3.msft.png":::
-       类型 `background-color`  
+    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-rule3.msft.png":::
+       Type `background-color`  
     :::image-end:::  
     
-1.  `green`声明值的类型，然后选择 `Enter` 。  
+1.  Type `green` for the declaration value and select `Enter`.  
     
-    :::image type="complex" source="../media/beginners-css-rule4.msft.png" alt-text="键入绿色" lightbox="../media/beginners-css-rule4.msft.png":::
-       类型 `green`  
+    :::image type="complex" source="../media/beginners-css-rule4.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-rule4.msft.png":::
+       Type `green`  
     :::image-end:::  
     
-1.  将鼠标悬停在 " **开始** " 链接上。  链接的背景变为绿色。  
+1.  Hover your mouse over the **Home** link.  The background of the link turns green.  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在 Home 链接上以显示绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
-       将鼠标悬停在 Home 链接上以显示绿色背景  
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-rule5.msft.png":::
+       Hover over the Home link to reveal its green background  
     :::image-end:::  
     
-## 跨页面使用外部样式表重新使用样式  
+## Re-use styles across pages with external stylesheets  
 
-在上一步中，你将以下代码段添加为内部样式表 `contact.html` 。  
+In a previous step, you added the following code snippet as an internal stylesheet to `contact.html`.  
 
 ```html
 ...
@@ -388,45 +388,45 @@ li a {
 ...
 ```  
 
-如果你想要以 `index.html` 相同的方式设置样式，该怎么办？  如果您有大量页面需要应用样式，该怎么办？  您必须将内部样式表复制并粘贴到您的网站上的每一个网页中。  完成以下操作以添加 **外部样式表** ，以允许你编写 CSS 一次并将其应用于多个页面。  
+What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You would have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
 
-1.  首先，重新加载 "实时" 选项卡以删除您在 DevTools 中所做的更改。  
+1.  First, reload the live tab to remove the changes that you made in DevTools.  
     
-    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text=" 刷新页面后，在 DevTools 中所做的更改将不再存在" lightbox="../media/beginners-css-external1.msft.png":::
-        刷新页面后，在 DevTools 中所做的更改将不再存在  
+    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external1.msft.png":::
+        After you refresh the page, the changes that were made in DevTools are gone  
     :::image-end:::  
     
-1.  返回 " **编辑器" 选项卡** ，然后打开 `contact.html` 。  
+1.  Go back to the **editor tab** and open `contact.html`.  
     
-    :::image type="complex" source="../media/beginners-css-external2.msft.png" alt-text="contact.html" lightbox="../media/beginners-css-external2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external2.msft.png":::
        contact.html  
     :::image-end:::  
     
-1.  删除与之间的所有内容 `<style>` `</style>` ，包括 `<style>` 和 `</style>` 。  
+1.  Delete everything between `<style>` and `</style>`, including `<style>` and `</style>`.  
     
-    :::image type="complex" source="../media/beginners-css-external3.msft.png" alt-text="已删除样式标记" lightbox="../media/beginners-css-external3.msft.png":::
-       已删除样式标记  
+    :::image type="complex" source="../media/beginners-css-external3.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external3.msft.png":::
+       The style tag has been removed  
     :::image-end:::  
     
-1.  转到 `index.html` 并 `style="background-color: aliceblue;"` 从标记中删除 `<nav>` 。  您现在已删除以前添加到网站的所有 CSS。  
+1.  Go to `index.html` and remove `style="background-color: aliceblue;"` from the `<nav>` tag.  You have now removed all of the CSS that you previously added to your site.  
     
-    :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="内联样式已从导航元素中删除" lightbox="../media/beginners-css-external4.msft.png":::
-       内联样式已从导航元素中删除  
+    :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external4.msft.png":::
+       The inline style has been removed from the nav element  
     :::image-end:::  
     
-1.  选择 " **新建文件**"。  
+1.  Choose **New File**.  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text=""新建文件" 对话框" lightbox="../media/beginners-css-external5.msft.png":::
-       "新建文件" 对话框  
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external5.msft.png":::
+       The new file dialog  
     :::image-end:::  
     
-1.  替换 `cool-file.js` 为 `style.css` ，然后选择 " **添加文件**"。  
+1.  Replace `cool-file.js` with `style.css` and choose **Add File**.  
     
-    :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="类型样式 .css" lightbox="../media/beginners-css-external6.msft.png":::
-       类型 `style.css`  
+    :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external6.msft.png":::
+       Type `style.css`  
     :::image-end:::  
     
-1.  将以下代码片段添加到 `style.css` 文件中。  
+1.  Add the following code snippet to your `style.css` file.  
     
     ```css
     li a, h1 {
@@ -440,14 +440,14 @@ li a {
     }
     ```  
     
-    :::image type="complex" source="../media/beginners-css-external7.msft.png" alt-text="将代码添加到样式 .css" lightbox="../media/beginners-css-external7.msft.png":::
-       将代码添加到 `style.css`  
+    :::image type="complex" source="../media/beginners-css-external7.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external7.msft.png":::
+       Add code to `style.css`  
     :::image-end:::  
     
-    确保已创建外部样式表。 你的 HTML 不知道它是否存在。  
+    Ensure that you have created an external stylesheet. Your HTML is not aware that it exists.  
     
-1.  打开 `index.html`。  
-1.  添加 `<link rel="stylesheet" href="style.css">` 到你的 HTML。  
+1.  Open `index.html`.  
+1.  Add `<link rel="stylesheet" href="style.css">` to your HTML.  
     
     ```html
     <head>
@@ -457,87 +457,87 @@ li a {
     </head>
     ```  
     
-    :::image type="complex" source="../media/beginners-css-external8.msft.png" alt-text="链接到样式 .css" lightbox="../media/beginners-css-external8.msft.png":::
-       链接到 `style.css`  
+    :::image type="complex" source="../media/beginners-css-external8.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external8.msft.png":::
+       Link to `style.css`  
     :::image-end:::  
     
-1.  打开 `contact.html` 文件并在其中添加链接。  
+1.  Open the `contact.html` file and add the link there.  
     
-    :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="链接到 contact.html 中的 "css"" lightbox="../media/beginners-css-external9.msft.png":::
-       链接到 `style.css` `contact.html`  
+    :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external9.msft.png":::
+       Link to `style.css` in `contact.html`  
     :::image-end:::  
     
-1.  转到 " **实时" 选项卡**。 现在，主页的字体与上一节中的字体相同，并具有蓝色导航部分。  
+1.  Go to the **live tab**.  The home page now has the same font from the last section and a blue navigation section.  
     
-    :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="主页" lightbox="../media/beginners-css-external10.msft.png":::
-       主页  
+    :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external10.msft.png":::
+       The home page  
     :::image-end:::  
     
-1.  选择 **联系人** 链接转到 "联系人" 页面。  "联系人" 页面的格式与 "主页" 的格式相同。  
+1.  Choose the **Contact** link to go to the contact page.  The contact page has the same formatting as the home page.  
     
-    :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text=""联系人" 页面" lightbox="../media/beginners-css-external11.msft.png":::
-       "联系人" 页面  
+    :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-external11.msft.png":::
+       The contact page  
     :::image-end:::  
     
-## 使用 CSS 框架  
+## Use a CSS framework  
 
-**CSS 框架** 是由其他开发者构建的样式的集合，可使创建引人注目的网站更容易。  框架提供了可在页面元素上使用的样式集合，而不是自己定义样式。  
+**CSS frameworks** are collections of styles built by other developers that make it easier to create attractive web sites.  Instead of defining styles yourself, a framework provides you a collection of styles that you are able to use on your page elements.  
 
-1.  复制以下代码：  
+1.  Copy the following code:  
     
     ```html
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     ```  
     
-1.  转到 "编辑" 选项卡，然后将代码粘贴到 `contact.html` 。  
+1.  Go to the editing tab and paste the code into `contact.html`.  
     
-    :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="链接到 contact.html 中的框架" lightbox="../media/beginners-css-framework1.msft.png":::
-       链接到中的框架 `contact.html`  
+    :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-framework1.msft.png":::
+       Link to the framework in `contact.html`  
     :::image-end:::  
     
-1.  打开 `index.html` 文件并在其中添加代码。  
+1.  Open the `index.html` file and add the code there.  
     
-    :::image type="complex" source="../media/beginners-css-framework2.msft.png" alt-text="链接到 index.html 中的框架" lightbox="../media/beginners-css-framework2.msft.png":::
-       链接到中的框架 `index.html`  
+    :::image type="complex" source="../media/beginners-css-framework2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-framework2.msft.png":::
+       Link to the framework in `index.html`  
     :::image-end:::  
     
-1.  返回到 "实时" 选项卡以查看所做的更改。  虽然元素的背景色 `<nav>` 和 `<li>` 和元素的字体 `<a>` 相同，但其他元素的字体已更改。  
+1.  Go back to the live tab to view your changes.  While the background color of the `<nav>` element and the font of the `<li>` and `<a>` elements are the same, the font of the other elements has changed.  
     
-    :::image type="complex" source="../media/beginners-css-framework3.msft.png" alt-text="主页面上的某些字体因框架而发生更改" lightbox="../media/beginners-css-framework3.msft.png":::
-       主页面上的某些字体因框架而发生更改  
+    :::image type="complex" source="../media/beginners-css-framework3.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-framework3.msft.png":::
+       Some of the font on the home page changed because of the framework  
     :::image-end:::  
     
-### 使用类  
+### Use a class  
 
-在最后一节中，你将引导数据库添加到网页，这将更改网站上某些元素的字体。  CSS 框架可帮助你通过非常少的代码对页面进行重大更改。  完成以下操作以更改页眉。  
+In the last section, you added Bootstrap to your web pages, which changed the fonts of some of the elements on your site.  CSS frameworks help you make major changes to your page with very little code.  Complete the following actions to change your header.  
 
-1.  复制以下代码片段。  
+1.  Copy the following code snippet.  
     
     ```html
     class="jumbotron jumbotron-fluid"  
     ```  
     
-1.  将上一个代码段添加到 `<header>` 中的标记 `index.html` 。  
+1.  Add the previous code snippet to your `<header>` tag in `index.html`.  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron1.msft.png" alt-text="在 index.html 中添加类" lightbox="../media/beginners-css-jumbotron1.msft.png":::
-       将类添加到 `index.html`  
+    :::image type="complex" source="../media/beginners-css-jumbotron1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-jumbotron1.msft.png":::
+       Add classes in `index.html`  
     :::image-end:::  
     
-1.  将代码添加到 `<header>` 中的标记 `contact.html` 。  
+1.  Add the code to your `<header>` tag in `contact.html`.  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron2.msft.png" alt-text="在 contact.html 中添加类" lightbox="../media/beginners-css-jumbotron2.msft.png":::
-       将类添加到 `contact.html`  
+    :::image type="complex" source="../media/beginners-css-jumbotron2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-jumbotron2.msft.png":::
+       Add classes in `contact.html`  
     :::image-end:::  
     
-1.  在 "实时" 选项卡中查看所做的更改。 页眉周围有一个大灰的框。  
+1.  View your changes in the live tab.  There is a big, grey box around your header.  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="标题现在周围有一个大灰框" lightbox="../media/beginners-css-jumbotron3.msft.png":::
-       标题现在周围有一个大灰框  
+    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-jumbotron3.msft.png":::
+       The header now has a big, grey box around it  
     :::image-end:::  
     
-### 了解类  
+### Understand classes  
 
-通过类，你可以将样式集合分配给任意元素。  `<header>`将属性设置为后，使用以下代码片段对元素应用多个样式 `class` `jumbotron` 。  
+Classes let you assign collections of styles to arbitrary elements.  Use the following code snippet to apply several styles to the `<header>` element after you set the `class` attribute to `jumbotron`.  
 
 ```css
 .jumbotron {
@@ -548,7 +548,7 @@ li a {
 }
 ```  
 
-类的一个优点是允许你将样式应用到所需的任何元素。  例如，假设你想要将某些元素的背景色设置 `<p>` 为紫色，而不是所有 `<p>` 元素。  使用以下代码片段定义类中的样式。  
+One advantage of a class is that it lets you apply styles to whatever elements you want.  For example, suppose you want to set the background color of some `<p>` elements to purple, but not all `<p>` elements.  Use the following code snippet to define the style in a class.  
 
 ```css
 .custom-background {
@@ -556,7 +556,7 @@ li a {
 }
 ```  
 
-接下来，将该类应用于 `<p>` 要样式的元素。  
+Next, apply the class to only the `<p>` elements that you want to style.  
 
 ```html
 <p>The text is not purple.</p>
@@ -565,42 +565,42 @@ li a {
 <p class="custom-background">The text is purple.</p>
 ```  
 
-### 对齐元素  
+### Align elements  
 
-完成以下操作以执行引导并提供用于对齐元素的类。  
+Complete the following actions to bootstrap and provide classes for aligning elements.  
 
-1.  返回 "编辑器" 选项卡，然后打开 `index.html` 。  
-1.  添加 `class="container-fluid"` 到您的 `<body>` 标签。  
+1.  Go back to the editor tab and open `index.html`.  
+1.  Add `class="container-fluid"` to your `<body>` tag.  
     
-    :::image type="complex" source="../media/beginners-css-align1.msft.png" alt-text="添加容器流体类" lightbox="../media/beginners-css-align1.msft.png":::
-       添加 `container-fluid` 类  
+    :::image type="complex" source="../media/beginners-css-align1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-align1.msft.png":::
+       Add the `container-fluid` class  
     :::image-end:::  
     
-1.  将您的 `<nav>` 和 `<main>` 元素包装在中 `<div class="row">` 。  请确保放 `</div>` `</main>` 在 "" 之后，才能正确关闭新标记。  
+1.  Wrap your `<nav>` and `<main>` elements in `<div class="row">`.  Make sure to put `</div>` after `</main>` in order to properly close the new tag.  
     
-    :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="添加行" lightbox="../media/beginners-css-align2.msft.png":::
-       添加行  
+    :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-align2.msft.png":::
+       Add a row  
     :::image-end:::  
     
-1.  添加 `class="col-3"` 到您的 `<nav>` 标签和 `class="col-9"` `<main>` 标签。  
+1.  Add `class="col-3"` to your `<nav>` tag and `class="col-9"` to your `<main>` tag.  
     
-    :::image type="complex" source="../media/beginners-css-align3.msft.png" alt-text="添加列3和 col-9 类" lightbox="../media/beginners-css-align3.msft.png":::
-       添加 `col-3` 和 `col-9` 类  
+    :::image type="complex" source="../media/beginners-css-align3.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-align3.msft.png":::
+       Add the `col-3` and `col-9` classes  
     :::image-end:::  
     
-1.  在 "实时" 选项卡中查看所做的更改。  
+1.  View your changes in the live tab.  
     
-    :::image type="complex" source="../media/beginners-css-align4.msft.png" alt-text="导航内容现在位于主要内容的左侧" lightbox="../media/beginners-css-align4.msft.png":::
-       导航内容现在位于主要内容的左侧  
+    :::image type="complex" source="../media/beginners-css-align4.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-align4.msft.png":::
+       The nav content is now to the left of the main content  
     :::image-end:::  
     
-## 后续步骤  
+## Next steps  
 
-恭喜！您已完成。  
+Congratulations, you are done.  
 
-*   在 web 开发中获取更好的最佳方式是构建更多网站。  不要担心会破坏内容。  只要有兴趣，您就可以轻松掌握。  
-*   若要了解有关设置网页样式的详细信息，请参阅 [CSS 简介][MDNCssFirstSteps]。  
-*   若要了解有关如何使用 DevTools 来试验页面 CSS 的详细信息，请参阅 [查看和更改 Css 入门][DevtoolsCssIndex]。  
+*   The best way to get better at web development is to build more sites.  Do not worry about breaking stuff.  Just have fun and learn as much as possible along the way.  
+*   To learn more about styling web pages, see [Introduction to CSS][MDNCssFirstSteps].  
+*   To learn more about how to use DevTools to experiment with the CSS of a page, see [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
 
 <!--- image links --->  
 
@@ -608,18 +608,18 @@ li a {
 
 <!--- links  --->  
 
-[DevtoolsBeginnersHtml]: ./html.md "初学者的 DevTools： HTML 和 DOM 入门 |Microsoft 文档"  
-[DevtoolsCssIndex]: ../css/index.md "开始使用查看和更改 CSS |Microsoft 文档"  
+[DevtoolsBeginnersHtml]: ./html.md "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"  
+[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html-cooked-amphibian |故障"  
+[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html - cooked-amphibian | Glitch"  
 
-[MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS 优先步骤 |MDN"  
+[MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS first steps | MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由 [Katherine 杰克逊][KatherineJackson] (技术编写器暂存，Chrome DevTools \ ) 。  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

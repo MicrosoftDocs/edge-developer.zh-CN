@@ -11,10 +11,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "11004098"
 ---
-以下部分是您可能已错过的 Microsoft Edge DevTools 团队的公告列表。  请参阅公告以尝试 DevTools、Visual Studio 代码扩展等中的新功能。  若要随时了解开发人员工具中的所有最新功能和最新功能，请下载 [Microsoft edge 预览频道][MicrosoftEdgePreviewChannels] 并 [关注 Twitter 上的 microsoft edge DevTools 团队][EdgeDevToolsTwitterAccount]。  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].  
 
 <!-- links -->  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter 帐户"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  

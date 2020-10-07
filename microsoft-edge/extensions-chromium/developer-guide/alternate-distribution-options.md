@@ -1,12 +1,12 @@
 ---
-description: 通过经验证的应用商店以外的机制分配扩展的过程
-title: 分发扩展的备用方法
+description: The process of distributing extension by mechanism other than verified stores
+title: Alternate Method of Distributing Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.openlocfilehash: e28a84fd75ad1ac0be2000a22c26371ca73d0293
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,28 +14,28 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015693"
 ---
-# 分发扩展的备用方法  
+# Alternate Method of Distributing Extension  
 
-如果你是要为其他软件的安装过程的一部分分发扩展的开发人员，或者是希望在其整个组织中分发扩展的网络管理员，Microsoft Edge 支持以下扩展安装方法：  
+If you are a developer who wants to distribute an Extension as part of the installation process for other software, or a network admin that want to distribute an Extension throughout their organization, Microsoft Edge supports the following Extension installation methods:  
 
-*   **仅使用 Windows 注册表 \ (Windows ) **  
+*   **Using the Windows registry \(Windows only\)**  
 
-Microsoft Edge 支持安装托管的扩展 `update_URL` 。  在 Windows 上， `update_URL` 必须指向 Microsoft Edge Addons catalog \ (Microsoft Edge Addons \ ) 必须在其中托管扩展的位置。  
+Microsoft Edge supports installing an Extension hosted at an `update_URL`.  On Windows, the `update_URL` must point to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) where the Extension must be hosted.  
 
 > [!NOTE]
-> 通过 macOS 的首选项 json 文件进行扩展的外部安装 <!--and Linux--> 尚不支持。  此功能支持将很快推出。
+> External installation of Extension via a preferences json file for macOS <!--and Linux--> are not supported yet.  This feature support will soon be available.
 
-## 使用 Windows 注册表  
+## Using the Windows registry  
 
-首先，在 Microsoft Edge Addons 中发布扩展，或将 crx 文件打包，并确保它成功安装。  
+First, publish the Extension in the Microsoft Edge Addons, or package a .crx file and make sure that it installs successfully.  
 
-通过 windows 中的注册表安装扩展的步骤如下：  
+The steps to install Extension via registry in windows are:  
 
-*   在注册表中查找或创建以下注册表项：  
-    *   32位 Windows：  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
-    *   64位 Windows：  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
-*   创建一个新的键 \ (文件夹 \ ) ，使用与扩展名 \ 的 ID 相同的扩展名 \ (例如， `aaaaaaaaaabbbbbbbbbbcccccccccc` \ ) 。  
-*   在你的扩展键中，创建一个属性， `update_url` 并将其设置为值： `https://edge.microsoft.com/extensionwebstorebase/v1/crx` ，\ (这一点指向 Microsoft Edge Addons \ ) 中的扩展 crx。 如果想要从 Chrome Web Store 安装扩展，请提供 Chrome Web Store 更新 URL `https://clients2.google.com/service/update2/crx` 。  
+*   Find or create the following key in the registry:  
+    *   32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
+    *   64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
+*   Create a new key \(folder\) under the Extensions key with the same name as the ID of your Extension \(for example, `aaaaaaaaaabbbbbbbbbbcccccccccc`\).  
+*   In your Extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this points to the crx of your extension in the Microsoft Edge Addons\). If you want to install an extension from the Chrome Web Store, please provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.  
     
     ```javascript
     {
@@ -43,15 +43,15 @@ Microsoft Edge 支持安装托管的扩展 `update_URL` 。  在 Windows 上， 
     }
     ```  
     
-*   启动浏览器并转到 `edge://extensions` ; 你应该看到列出的扩展名。  
+*   Launch the browser and go to `edge://extensions`; you should see the extension listed.  
 
-## 更新和卸载  
+## Updating and uninstalling  
 
-每次浏览器启动时，Microsoft Edge 将扫描注册表中的元数据条目，并对已安装的外部扩展进行任何必要的更改。  
+Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any necessary changes to the installed external extensions.  
 
-若要将扩展更新到新版本，请更新文件，然后更新注册表中的版本。  
+To update your extension to a new version, update the file, and then update the version in the registry.  
 
-若要卸载扩展 \ (例如，如果软件已卸载 \ ) ，请从注册表中删除您的首选项文件 \ (`aaaaaaaaaabbbbbbbbbbcccccccccc.json` \ ) 或元数据。  
+To uninstall your extension \(for example, if your software is uninstalled\), remove your preference file \(`aaaaaaaaaabbbbbbbbbbcccccccccc.json`\) or the metadata from the registry.  
 
 <!-- image links -->  
 
@@ -59,7 +59,7 @@ Microsoft Edge 支持安装托管的扩展 `update_URL` 。  在 Windows 上， 
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 可在 [此处](https://developer.chrome.com/apps/external_extensions)找到原始页面。  
+> The original page is found [here](https://developer.chrome.com/apps/external_extensions).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

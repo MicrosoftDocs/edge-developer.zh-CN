@@ -1,12 +1,12 @@
 ---
-description: 自定义 Microsoft Edge DevTools 的方法列表
-title: 自定义 Microsoft Edge DevTools
+description: A list of ways to customize Microsoft Edge DevTools
+title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 238ee27a75aa94bf986d41f00a98e5eacc806d7f
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,77 +32,77 @@ ms.locfileid: "10992993"
 
 
 
-# 自定义 Microsoft Edge DevTools   
+# Customize Microsoft Edge DevTools   
 
   
 
-此页面列出了自定义 Microsoft Edge DevTools 的方法。  
+This page lists the ways to customize Microsoft Edge DevTools.  
 
-## “设置”   
+## Settings   
 
-**设置**  > **首选项**包含用于自定义 DevTools 的许多选项。  
+**Settings** > **Preferences** contains many options for customizing DevTools.  
 
-若要打开 "设置"，请执行下列操作之一：  
+To open Settings, do one of the following:  
 
-*   `F1`当 DevTools 处于焦点时按下。  
-*   打开 **主菜单** ，然后选择 " **设置**"。  
+*   Press `F1` while DevTools is in focus.  
+*   Open the **Main Menu** and then select **Settings**.  
     
-    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="设置" lightbox="../media/customize-settings-preferences.msft.png":::
-       **设置**  
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
+       **Settings**  
     :::image-end:::  
     
-## 箱   
+## Drawer   
 
-**抽屉**包含许多隐藏的功能。  
+The **Drawer** contains many hidden features.  
 
-按 " `Escape` 打开" 或 "关闭" **抽屉**。  
+Press `Escape` to open or close the **Drawer**.  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="抽屉" lightbox="../media/customize-drawer-open.msft.png":::
-   **抽屉**  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Settings" lightbox="../media/customize-drawer-open.msft.png":::
+   The **Drawer**  
 :::image-end:::  
 
-单击 " **更多** \ (![ 更多 ][ImageMoreIcon] \ ) " 以打开其他 **抽屉** 选项卡。  
+Click **More** \(![More][ImageMoreIcon]\) to open other **Drawer** tabs.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开抽屉选项卡的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   用于打开 **抽屉** 选项卡的按钮  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Settings" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   The button to open **Drawer** tabs  
 :::image-end:::  
 
-## 重新排序面板   
+## Reorder panels   
 
-单击并拖动 "面板" 选项卡以更改其排序。  您的自定义 tab 键顺序在 DevTools 会话中保持不变。  
+Click and drag a panel tab to change its ordering.  Your custom tab order persists across DevTools sessions.  
 
 > [!NOTE]
-> 默认情况下，" **网络** 面板" 选项卡通常是从左侧起的第四个选项卡。  在下图中，" **网络** " 面板是第一个左侧的面板。  
+> By default, the **Network** panel tab is usually the fourth from the left.  In the following figure, the **Network** panel is the first from the left.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="具有自定义面板选项卡排序的 DevTools 窗口" lightbox="../media/customize-network-first-position.msft.png":::
-   具有自定义面板选项卡排序的 DevTools 窗口  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Settings" lightbox="../media/customize-network-first-position.msft.png":::
+   A DevTools window with a custom panel tab ordering  
 :::image-end:::  
 
-## 更改 DevTools 位置   
+## Change DevTools placement   
 
-请参阅 [Microsoft Edge DevTools 放置][DevToolsPlacement]。  
+See [Microsoft Edge DevTools Placement][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="取消停靠 DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
-   取消停靠 DevTools  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Settings" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   Undocked DevTools  
 :::image-end:::  
 
-## 深色主题   
+## Dark theme   
 
-请参阅 [启用深色主题][DarkTheme]。  
+See [Enable Dark Theme][DarkTheme].  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="深色主题" lightbox="../media/customize-settings-appearance-theme.msft.png":::
-   深色主题  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Settings" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   The dark theme  
 :::image-end:::  
 
-## 试验   
+## Experiments   
 
-若要启用 DevTools 试验，请完成以下操作。  
+To enable DevTools experiments, complete the following actions.  
 
-1.  转到 `edge://flags/#enable-devtools-experiments` 。  
-1.  单击**启用**。  
-1.  单击页面底部的 " **立即重新启动**"。  
+1.  Go to `edge://flags/#enable-devtools-experiments`.  
+1.  Click **Enable**.  
+1.  Click **Relaunch Now**, at the bottom of the page.  
 
-下次打开 DevTools 时，将在 "[设置](#settings)" 中显示一个名为 "**实验**" 的新页面。  
+The next time you open DevTools, a new page is displayed called **Experiments** in [Settings](#settings).  
 
 <!--  
    
@@ -116,8 +116,8 @@ ms.locfileid: "10992993"
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "更改 Microsoft Edge DevTools 位置 |Microsoft 文档"  
-[DarkTheme]: ./dark-theme.md "在 Microsoft Edge DevTools 中启用深色主题 |Microsoft 文档"  
+[DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
+[DarkTheme]: ./dark-theme.md "Enable Dark Theme in Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

@@ -1,12 +1,12 @@
 ---
-description: 辅助功能改进，使用其他语言的 DevTools 等。
-title: DevTools (Microsoft Edge 80) 中的新增功能
+description: Accessibility improvements, using the DevTools in other languages, and more.
+title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 8f82f46cd683433a37614bcf15745e1de9f31ffb
 ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
@@ -28,68 +28,68 @@ ms.locfileid: "11015466"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# DevTools (Microsoft Edge 80) 中的新增功能  
+# What's new in DevTools (Microsoft Edge 80)  
 
-## 来自 Microsoft Edge 开发人员工具团队公告  
+## Announcements from the Microsoft Edge DevTools team  
 
-以下各部分是你可能错过的 Microsoft Edge 开发人员工具团队的公告列表！ 查看它们以尝试 DevTools、Visual Studio 代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, Visual Studio Code extensions, and more.  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
 
-### 对 DevTools 的辅助功能改进  
+### Accessibility improvements to the DevTools  
 
-DevTools 团队已向 Chromium 提供170更改，以解决 DevTools 中的高影响力颜色对比度、键盘和屏幕阅读器问题。  每个构建 web 的开发人员都应该能够使用 DevTools。  
+The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.  
 
-:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="DevTools 中的性能工具改进了键盘导航和屏幕阅读器" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
-   DevTools 中的 **性能** 工具改进了键盘导航和屏幕阅读器  
+:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
+   The **Performance** tool in the DevTools with the keyboard navigation and screen reader improvements  
 :::image-end:::  
 
-希望了解如何让您的网页对所有用户都易于访问？  下载 Microsoft Edge 的 [辅助功能见解][AccessibilityInsights] 和 [webhint][WebhintBrowserExtension] 扩展以开始使用。  
+Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-如果您使用屏幕阅读器或键盘在 DevTools 中导航，请 [发推至][PostTweetEdgeDevTools] "发送反馈" 或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标！  
+If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-Chromium 问题 [#963183][CR963183]  
+Chromium issue [#963183][CR963183]  
 
-### 使用其他语言的 DevTools  
+### Using the DevTools in other languages  
 
-许多开发人员使用其他开发人员工具，如 StackOverflow 和 Visual Studio 代码，采用其母语，而不仅仅是英语。  我们很高兴宣布 DevTools 的本地化，您现在可以使用英语之外的10种语言中的一种：  
+Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:  
 
 :::row:::
    :::column span="":::
-       (简体中文 \ ) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      中文 (传统版 \ ) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      法语-fran&#231;ais
+      French – fran&#231;ais
    :::column-end:::
    :::column span="":::
-      德语-德语
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      意大利语-意大利语
-   :::column-end:::
-   :::column span="":::
-      日语- &#26085;&#26412;&#35486;
+      German - deutsch
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      朝鲜语- &#54620;&#44397;&#50612;
+      Italian - italiano
    :::column-end:::
    :::column span="":::
-      葡萄牙语-portugu&#234;s
+      Japanese - &#26085;&#26412;&#35486;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      俄语–  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+      Korean - &#54620;&#44397;&#50612;
    :::column-end:::
    :::column span="":::
-      西班牙语-espa&#241;ol
+      Portuguese - portugu&#234;s
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+   :::column-end:::
+   :::column span="":::
+      Spanish - espa&#241;ol
    :::column-end:::
 :::row-end:::
 
@@ -103,226 +103,226 @@ Chromium 问题 [#963183][CR963183]
 | Russian – русский | Spanish - español |  
 -->  
 
-导航到 `edge://flags` "启用已 **本地化的开发人员工具** " 标志并将其设置为 " **启用**"。  还将 " **开发工具" 试验** 标志设置为 " **启用**"。  重启 Microsoft Edge 并打开 DevTools。  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  DevTools 与你用于 Microsoft Edge 的语言相匹配 `edge://settings/languages` 。  
+Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.  
 
-:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="德语中的 DevTools" lightbox="../../images/2019/12/localized-devtools.msft.png":::
-   德语中的 DevTools  
+:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/localized-devtools.msft.png":::
+   The DevTools in German  
 :::image-end:::  
 
-如果您想要使用的 DevTools 语言与可用的语言不同，请 [tweet][PostTweetEdgeDevTools] ，或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标。  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
 
-Chromium 问题 [#941561][CR941561]  
+Chromium issue [#941561][CR941561]  
 
-### webhint Microsoft Edge 扩展  
+### webhint Microsoft Edge extension  
 
-Webhint Microsoft Edge 扩展使你能够轻松地浏览网页并在 DevTools 中获取有关辅助功能、浏览器兼容性、安全性、性能等的反馈。  阅读详细信息 [https://webhint.io][Webhint] 。  
+The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io][Webhint].  
 
-:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="安装 webhint 浏览器扩展时，DevTools 中的 "提示" 选项卡" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
-   安装 webhint 浏览器扩展时，DevTools 中的 " **提示** " 选项卡  
+:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
+   The **Hints** tab in the DevTools when the webhint browser extension is installed  
 :::image-end:::  
 
-[在 Microsoft Edge 中尝试 webhint 浏览器扩展][MicrosoftEdgeInsiderAddons]。  安装扩展后，打开 DevTools 并选择 "提示" 选项卡。 在此处，运行可自定义的网站扫描。  请转到 [webhint.io][WebhintBrowserExtension] 以了解更多信息。
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and select the Hints tab.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.
 
-### 3D 视图  
+### 3D View  
 
-通过浏览[文档对象模型 (DOM \ ) ][MDNDocumentObjectModel]或[z 索引][MDNZIndex]堆栈上下文，使用**3d 视图**调试 web 应用程序。  
+Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  
 
-:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="DevTools 中的3D 视图" lightbox="../../images/2019/12/3dview.msft.png":::
-   DevTools 中的**3D 视图**  
+:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/3dview.msft.png":::
+   The **3D View** in the DevTools  
 :::image-end:::  
 
-若要访问3D 视图，请导航到 `edge://flags` 并确保 " **开发人员工具实验** " 标志设置为 " **已启用**"。  重启 Microsoft Edge 并打开 DevTools。  按 `F1` DevTools 或转到 " **设置**"，导航到 " **实验** " 部分，然后选中 " **启用3d 视图** " 复选框。  现在，请按 `Ctrl`  +  `Shift`  +  `P` ，在**3d 视图**中键入，然后选择 "**显示3d 视图**"。  
+To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-我们正在处理 UI 并向3D 视图添加更多功能，请向我们发送您的 [反馈](#getting-in-touch-with-microsoft-edge-devtools-team)。  
+We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
-Chromium 问题 [#987787][CR987787]
+Chromium issue [#987787][CR987787]
 
-### Visual Studio 代码扩展  
+### Visual Studio Code extensions  
 
-DevTools 团队还发布了一些适用于 [Visual Studio 代码][VisualStudioCode] 的扩展，可让你直接从文本编辑器使用 DevTools 的强大功能。 查看以下扩展。  
+The DevTools team has also released some extensions for [Visual Studio Code][VisualStudioCode] that let you use the power of the DevTools directly from your text editor. Check out the following extensions.  
 
-#### Microsoft Edge 元素  
+#### Elements for Microsoft Edge  
 
-通过添加 [Microsoft Edge (Chromium) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual studio 代码扩展中的元素，从 Visual studio 代码中使用元素工具。  
+Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge (Chromium)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.  
 
-:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="Visual Studio 代码中使用 Microsoft Edge 扩展的元素的元素工具" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
-   Visual Studio 代码中使用 Microsoft Edge 扩展的元素的 **元素** 工具  
+:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
+   The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension  
 :::image-end:::  
 
-有关详细信息，请查看 [Microsoft Edge Visual Studio 代码扩展的元素][VisualStudioCodeElementEdgeExtension]。  
+For more information, check out [Elements for Microsoft Edge Visual Studio Code extension][VisualStudioCodeElementEdgeExtension].  
 
-#### Microsoft Edge 调试器  
+#### Debugger for Microsoft Edge  
 
-通过 [适用于 Microsoft edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio 代码扩展的调试器，直接从 Visual Studio 代码调试在 Microsoft edge 中运行的 JavaScript。  
+With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.  
 
-:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="Visual Studio 代码中 Microsoft Edge 扩展的调试器" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
-   Visual Studio 代码中 Microsoft Edge 扩展的调试器  
+:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
+   The Debugger for Microsoft Edge Extension in Visual Studio Code  
 :::image-end:::  
 
-有关详细信息，请参阅 [如何从 Visual Studio 代码调试 Microsoft Edge][VisualStudioCodeDebuggerEdgeExtension]。  
+For more information, check out [how to debug Microsoft Edge from Visual Studio Code][VisualStudioCodeDebuggerEdgeExtension].  
 
 #### webhint  
 
-当你编写网页时， [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio 代码扩展使用 `webhint` 它来改进网页！ 此扩展基于分析对工作区文件运行和报告诊断 `webhint` 。  
+The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extension uses `webhint` to improve your web page while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.  
 
-:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="在 Visual Studio 代码中分析 tsx 文件的 webhint Visual Studio 代码扩展" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
-   `.tsx`在 Visual Studio 代码中分析文件的 Webhint Visual Studio 代码扩展  
+:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
+   The webhint Visual Studio Code extension analyzing a `.tsx` file in Visual Studio Code  
 :::image-end:::  
 
-[了解有关 Visual Studio 代码 webhint 扩展的详细信息][WebhintVisualStudioCodeExtension]。  
+[Learn more about the Visual Studio Code webhint extension][WebhintVisualStudioCodeExtension].  
 
-### Visual Studio 集成
-在 Visual Studio 2019 版本16.2 或更高版本中，使用 Visual Studio 调试器调试在 Microsoft Edge 中运行的 JavaScript。  [下载 Visual Studio 2019][MicrosoftVisualStudioDownloads] 以试用此功能！  
+### Visual Studio integration
+In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!  
 
-:::image type="complex" source="../../images/2019/12/vs.msft.png" alt-text="带有在 Microsoft Edge 的 "应用"、"开发" 或 "Beta" 中启动 web 应用选项的 Visual Studio" lightbox="../../images/2019/12/vs.msft.png":::
-   带有在 Microsoft Edge 的 "应用"、"开发" 或 "Beta" 中启动 web 应用选项的 Visual Studio  
+:::image type="complex" source="../../images/2019/12/vs.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/vs.msft.png":::
+   Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
 :::image-end:::  
 
-[阅读我们的博客文章，了解如何从 Visual Studio 调试 Microsoft Edge][MicrosoftVisualStudioBlogDebugJavascript]。  
+[Read our blog post to learn how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
-### 跟踪保护控制台消息  
+### Tracking prevention Console messages  
 
-"跟踪防护" 是 Microsoft Edge 中的一项独特功能，可防止您以前未访问过的网站对您进行跟踪。  默认跟踪防护设置为平衡模式，这将阻止第三方跟踪程序和已知恶意跟踪程序，以获取平衡隐私和 web 兼容性的体验。  若要在某些跟踪器被阻止时更深入地了解网页的兼容性，我们还在跟踪器被阻止时在控制台中添加了警告消息。  
+Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.  
 
-:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="跟踪阻止阻止跟踪对存储的访问权限时的控制台中的消息" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
-   跟踪阻止阻止跟踪对存储的访问权限时的 **控制台** 中的消息  
+:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
+   Messages in the **Console** when tracking prevention blocks access to storage for a tracker  
 :::image-end:::  
 
-[阅读有关跟踪防护和隐私和 web 兼容性之间的平衡的详细信息][TrackingPrevention]。  
+[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].  
 
-## 来自 Chromium 项目的公告  
+## Announcements from the Chromium project  
 
-以下各节宣布了在 Microsoft Edge 80 中提供的其他功能，这些功能由开放的源 Chromium 项目所参与。  
+The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.  
 
-### 在控制台中支持 let 和 class redeclarations  
+### Support for let and class redeclarations in the Console  
 
-现在，该 **控制台** 支持 redeclarations `let` 和 `class` 语句。  如果 web 开发人员使用控制台体验新的 JavaScript 代码，则无法重新声明。  
+The **Console** now supports redeclarations of `let` and `class` statements.  The inability to redeclare was a common annoyance for web developers who use the Console to experiment with new JavaScript code.  
 
 > [!WARNING]
-> `let` `class` 在控制台外或单个控制台输入中的脚本中 Redeclaring 或语句仍会导致 a `SyntaxError` 。  
+> Redeclaring a `let` or `class` statement in a script outside of the Console or within a single Console input still causes a `SyntaxError`.  
 
-例如，以前，当重新声明本地变量时 `let` ，控制台引发错误：  
+For example, previously, when re-declaring a local variable with `let`, the Console threw an error:  
 
-:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="Microsoft Edge 79 中的控制台，显示允许重新声明失败" lightbox="../../images/2019/12/letbefore.msft.png":::
-   Microsoft Edge 79 中的 **控制台** ，显示 "允许重新声明" 失败  
+:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/letbefore.msft.png":::
+   The **Console** in Microsoft Edge 79 showing that the let re-declaration fails  
 :::image-end:::  
 
-现在，该控制台允许重新声明：  
+Now, the Console allows the redeclaration:  
 
-:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="Microsoft Edge 80 中的控制台，显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
-   Microsoft Edge 80 中的 **控制台** ，显示 "允许重新声明" 成功  
+:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/letafter.msft.png":::
+   The **Console** in Microsoft Edge 80 showing that the let re-declaration succeeds  
 :::image-end:::  
 
-Chromium 问题 [#1004193][CR1004193]  
+Chromium issue [#1004193][CR1004193]  
 
-### 改进的 WebAssembly 调试  
+### Improved WebAssembly debugging  
 
-DevTools 已开始支持 [DWARF 调试标准][DwarfHome]，这意味着增加了对代码执行的支持、设置断点以及解析 DevTools 中的源语言的堆栈跟踪。  
+DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
 
 <!-- [TODO: Add this link back] -->  
 <!--Check out [Improved WebAssembly debugging in Microsoft Edge DevTools][201912Webassembly] for the full story.  -->  
 
 <!-- [TODO: Replace this image with screenshot in Edge] -->  
 <!--
-:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="The new DWARF-powered WebAssembly debugging" lightbox="../../images/2019/12/wasm.msft.png":::
+:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/wasm.msft.png":::
    The new DWARF-powered WebAssembly debugging  
 :::image-end:::  
 -->  
 
-### 网络面板更新  
+### Network panel updates  
 
-#### 在 "启动器" 选项卡中请求启动器链  
+#### Request Initiator Chains in the Initiator tab  
 
-现在，你可以查看作为嵌套列表的网络请求的发起方和依赖关系。  这可能会帮助你了解请求资源的原因或特定资源的哪些网络活动 (如脚本 \ ) 导致的。  
+You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.  
 
-:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text=""启动器" 选项卡中的请求发起人链" lightbox="../../images/2019/12/initiators.msft.png":::
-   " **启动器** " 选项卡中的请求发起人链  
+:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/initiators.msft.png":::
+   A Request Initiator Chain in the **Initiator** tab  
 :::image-end:::  
 
-[在 "网络" 面板中记录网络活动][DevToolsNetworkIndex]后，单击资源，然后转到 "**启动器**" 选项卡以查看**请求启动器链**：  
+After [logging network activity in the Network panel][DevToolsNetworkIndex], click a resource and then go to the **Initiator** tab to view the **Request Initiator Chain**:  
 
-*   已 **检查的资源** 为粗体。  在上面的屏幕截图中， `ai.2.min.js` 是已检查的资源。  
-*   已检查资源上方的资源是 **启动器**。  在上面的屏幕截图中， `https://www.microsoftedgeinsider.com` 是的发起人 `ai.2.min.js` 。  换句话说， `https://www.microsoftedgeinsider.com` 导致网络请求 `ai.2.min.js` 。  
-*   已检查资源下方的资源是 **依赖关系**。  在上面的屏幕截图中， `https://dc.services.visualstudio.com/v2/track` 是的依赖项 `ai.2.min.js` 。  换句话说， `ai.2.min.js` 导致网络请求 `https://dc.services.visualstudio.com/v2/track` 。  
+*   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.  
+*   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.  
+*   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.  
 
 > [!NOTE]
-> 也可以通过按住 `Shift` 网络资源并将鼠标悬停在网络资源上来访问启动器和相关性信息。  请参阅 [查看发起人和依赖关系][DevToolsNetworkReferenceViewInitiatorsDependencies]。  
+> Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  See [View initiators and dependencies][DevToolsNetworkReferenceViewInitiatorsDependencies].  
 
-Chromium 问题 [#842488][CR842488]  
+Chromium issue [#842488][CR842488]  
 
-#### 在概述中突出显示所选的网络请求  
+#### Highlight the selected network request in the Overview  
 
-单击网络资源以对其进行检查后，网络面板 **现在将在**该资源周围放置一个蓝色边框。  这可以帮助你检测网络请求在之前或之后是否比预期发生。  
+After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的概述窗格" lightbox="../../images/2019/12/overview.msft.png":::
-   突出显示已检查资源的 **概述** 窗格  
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/overview.msft.png":::
+   The **Overview** pane highlighting the inspected resource  
 :::image-end:::  
 
-Chromium 问题 [#988253][CR988253]  
+Chromium issue [#988253][CR988253]  
 
-#### "网络" 面板中的 URL 和路径列  
+#### URL and path columns in the Network panel  
 
-使用 "**网络**" 面板中的 "新**路径**" 和 " **URL** " 列查看每个网络资源的绝对路径或完整 url。  
+Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.  
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text=""网络" 面板中的新路径和 URL 列" lightbox="../../images/2019/12/columns.msft.png":::
-   " **网络** " 面板中的新路径和 URL 列  
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/columns.msft.png":::
+   The new Path and URL columns in the **Network** panel  
 :::image-end:::  
 
-右键单击 **瀑布** 表标题，然后选择 " **路径** " 或 " **URL** " 以显示新列。  
+Right-click the **Waterfall** table header and select **Path** or **URL** to show the new columns.  
 
-Chromium 问题 [#993366][CR993366]  
+Chromium issue [#993366][CR993366]  
 
-#### 已更新的用户代理字符串  
+#### Updated User-Agent strings  
 
-DevTools 支持通过 " **网络条件** " 选项卡设置自定义用户代理字符串。 用户代理字符串会影响 `User-Agent` 附加到网络资源的 HTTP 标头以及的值 `navigator.userAgent` 。  
+DevTools supports setting a custom User-Agent string through the **Network Conditions** tab.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.  
 
-预定义的用户代理字符串已更新，以反映新式浏览器版本。  
+The predefined User-Agent strings have been updated to reflect modern browser versions.  
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text=""网络条件" 选项卡中的 "用户代理" 菜单" lightbox="../../images/2019/12/useragent.msft.png":::
-   " **网络条件** " 选项卡中的 "用户代理" 菜单  
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/useragent.msft.png":::
+   The User Agent menu in the **Network Conditions** tab  
 :::image-end:::  
 
-若要访问 **网络条件**，请 [打开命令菜单][DevToolsCommandMenuIndex] 并运行 `Show Network Conditions` 命令。  
+To access **Network Conditions**, [open the Command Menu][DevToolsCommandMenuIndex] and run the `Show Network Conditions` command.  
 
 > [!NOTE]
-> 您也可以 [在设备模式下设置用户代理的字符串][DevToolsDeviceModeIndex]。  
+> You may also [set User-Agent strings in Device Mode][DevToolsDeviceModeIndex].  
 
-Chromium 问题 [#1029031][CR1029031]  
+Chromium issue [#1029031][CR1029031]  
 
-### "审核" 面板更新  
+### Audits panel updates  
 
-#### 新的配置 UI  
+#### New configuration UI  
 
-配置 UI 具有新的响应式设计，并且限制配置选项已简化。  有关限制 UI 更改的详细信息，请参阅 [审核面板限制][GitHubGoogleChromeDevToolsAuditsPanelThrottling] 。  
+The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  See [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling] for more information on the throttling UI changes.  
 
-:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="新的配置 UI" lightbox="../../images/2019/12/start.msft.png":::
-   新的配置 UI  
+:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/start.msft.png":::
+   The new configuration UI  
 :::image-end:::  
 
-### 覆盖范围选项卡更新  
+### Coverage tab updates  
 
-#### 每个函数或每块覆盖率模式  
+#### Per-function or per-block coverage modes  
 
-" [覆盖范围" 选项卡][DevToolsCoverageIndex] 具有新的下拉菜单，可让你指定是否应 **按每个函数** 或 **每个块**收集代码覆盖率数据。  **每个块** 覆盖率更详细，但更昂贵的收集方式。  默认情况下，DevTools 使用 **每个函数** 覆盖率。  
+The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
 
 > [!CAUTION]
-> 你可能会看到 HTML 文件中的较大代码覆盖率有差异，具体取决于 **每个函数** 还是 **每块** 模式使用。  使用 **每个函数** 模式时，HTML 文件中的内联脚本将被视为函数。  如果脚本全部运行，则 DevTools 将整个脚本标记为使用的代码。  仅当脚本根本不运行时，DevTools 将脚本标记为未使用的代码。  
+> You may see large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.  
 
-:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text=""覆盖模式" 下拉菜单" lightbox="../../images/2019/12/modes.msft.png":::
-   "覆盖模式" 下拉菜单  
+:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/modes.msft.png":::
+   The coverage mode dropdown menu  
 :::image-end:::  
 
-#### 覆盖范围现在必须由页面重装启动  
+#### Coverage must now be initiated by a page reload  
 
-由于覆盖率数据不可靠，因此在没有页面重新加载的情况下切换代码覆盖率已被删除。  例如，如果运行时以前很长一段时间，并且 V8 垃圾回收器已清理过它，则可能会将函数报告为未使用。  
+Toggling code coverage without a page reload has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.  
 
-Chromium 问题 [#1004203][CR1004203]  
+Chromium issue [#1004203][CR1004203]  
 
-## 下载 Microsoft Edge 预览频道  
+## Download the Microsoft Edge preview channels  
 
-如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
+如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  The preview channels give you access to the latest DevTools features.  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -338,50 +338,50 @@ Chromium 问题 [#1004203][CR1004203]
 
 <!-- links -->  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
-[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 Microsoft Edge DevTools | 中的 "覆盖范围" 选项卡查找未使用的 JavaScript 和 CSS 代码。Microsoft 文档"  
-[DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "模拟移动区-在 Microsoft Edge DevTools 中使用设备模式模拟移动设备 |Microsoft 文档"  
-[DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "检查 Microsoft Edge DevTools 中的网络活动 |Microsoft 文档"  
-[DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "查看启动器和相关性-网络分析参考 |Microsoft 文档"  
-[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "EdgeHTML | 中的新增功能 |Microsoft 文档"  
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Microsoft Edge Visual Studio 代码扩展的调试器 |Microsoft 文档"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Microsoft Edge Visual Studio 代码扩展的元素 |Microsoft 文档"  
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference | Microsoft Docs"  
+[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "What's New in EdgeHTML | Microsoft Docs"  
+[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
+[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elements for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
 
-[CR842488]: https://crbug.com/842488 "将启动器字段添加到 "页眉" 选项卡 |Chromium Bug"  
-[CR988253]: https://crbug.com/988253 "Bug DevTools-网络请求与时间线图之间没有关联 |Chromium Bug"  
-[CR993366]: https://crbug.com/993366 "请在网络面板请求列表 | 中显示 URL 的路径部分Chromium Bug"  
-[CR1004193]: https://crbug.com/1004193 "V8 | 的复制模式Chromium Bug"  
-[CR1004203]: https://crbug.com/1004203 "使代码覆盖率非常有意义 |Chromium Bug"  
-[CR1029031]: https://crbug.com/1029031 "UA 字符串即将过时 |Chromium Bug" 
-[CR963183]: https://crbug.com/963183 "DevTools 不符合 WCAG 标准 |Chromium Bug"
-[CR941561]: https://crbug.com/941561 "DevTools | 的本地化Chromium Bug"
-[CR987787]: https://crbug.com/987787 "Dom 3D 视图 |Chromium Bug"
+[CR842488]: https://crbug.com/842488 "Add the Initiator field to the Headers tab | Chromium Bugs"  
+[CR988253]: https://crbug.com/988253 "Bug DevTools - No Association between Network request and the Timeline Graph | Chromium Bugs"  
+[CR993366]: https://crbug.com/993366 "Please show path part of URL in network panel requests list | Chromium Bugs"  
+[CR1004193]: https://crbug.com/1004193 "REPL mode for V8 | Chromium Bugs"  
+[CR1004203]: https://crbug.com/1004203 "Make Code Coverage awesome | Chromium Bugs"  
+[CR1029031]: https://crbug.com/1029031 "UA Strings are getting outdated | Chromium Bugs" 
+[CR963183]: https://crbug.com/963183 "DevTools are not WCAG compliant | Chromium Bugs"
+[CR941561]: https://crbug.com/941561 "Localizability of the DevTools | Chromium Bugs"
+[CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Bugs"
 
-[AccessibilityInsights]: https://aka.ms/a11yinsights "辅助功能见解"  
+[AccessibilityInsights]: https://aka.ms/a11yinsights "Accessibility Insights"  
 
-[DwarfHome]: https://dwarfstd.org "Dwarf 主页"  
-[GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools ' 审核面板限制-GoogleChrome/lighthouse |GitHub"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "新问题 - MicrosoftDocs/edge-developer"  
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge 预览频道"  
-[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge 预览体验计划 Addons"  
+[DwarfHome]: https://dwarfstd.org "Dwarf Home"  
+[GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling - GoogleChrome/lighthouse | GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"  
+[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
+[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider Addons"  
 [MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"  
-[MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "从 Visual Studio 中的 Microsoft Edge 调试 JavaScript |Visual Studio 博客"  
-[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "下载适用于 Windows 的 Visual Studio 2019 & Mac"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "文档对象模型 (DOM) |MDN"  
-[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-索引 |MDN"  
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | 发布推文"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter 帐户"
-[VisualStudioCode]: https://aka.ms/vscode "Visual Studio 代码"  
-[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Microsoft Edge 的调试器-Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge \ (的元素 \ ) Chromium \-Visual Studio Marketplace"  
-[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint-Visual Studio Marketplace"
+[MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Debug JavaScript in Microsoft Edge from Visual Studio | Visual Studio Blog"  
+[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Download Visual Studio 2019 for Windows \& Mac"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
+[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
+[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"  
+[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
+[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
+[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger for Microsoft Edge - Visual Studio Marketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
+[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 [Webhint]: https://aka.ms/webhint "webhint"  
-[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint 浏览器扩展 |webhint 文档"  
-[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio 代码扩展 |webhint 文档"  
-[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "改进 Microsoft Edge 博客文章中的跟踪保护"
-[TheWebWeWant]: https://aka.ms/webwewant "我们想要的网络"
+[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint Browser Extension | webhint documentation"  
+[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio Code Extension | webhint documentation"  
+[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Improving Tracking Prevention in Microsoft Edge blog post"
+[TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

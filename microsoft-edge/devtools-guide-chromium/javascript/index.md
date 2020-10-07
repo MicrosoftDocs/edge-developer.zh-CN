@@ -1,12 +1,12 @@
 ---
-description: 了解如何使用 Microsoft Edge DevTools 查找和修复 JavaScript bug。
-title: 在 Microsoft Edge DevTools 中开始使用调试 JavaScript
+description: Learn how to use Microsoft Edge DevTools to find and fix JavaScript bugs.
+title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: f8846388f92ba330940b4b6842964d96d9bbce4d
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -34,57 +34,57 @@ ms.locfileid: "10993392"
 
 
 
-# 在 Microsoft Edge DevTools 中开始使用调试 JavaScript   
+# Get started with debugging JavaScript in Microsoft Edge DevTools   
 
 
 
-本教程将指导你在 DevTools 中调试 JavaScript 问题的基本工作流。  
+This tutorial teaches you the basic workflow for debugging any JavaScript issue in DevTools.  
 
-## 步骤1：重现 bug   
+## Step 1: Reproduce the bug   
 
-在调试的第一步中始终是查找始终重现 bug 的一系列操作。  
+Finding a series of actions that consistently reproduces a bug is always the first step to debugging.  
 
-1.  单击 " **打开演示**"。  保留 `Control` \ (Windows \ ) 或 `Command` \ (macOS \ ) 并在新选项卡中打开演示。  
+1.  Click **Open Demo**.  Hold `Control` \(Windows\) or `Command` \(macOS\) and open the demo in a new tab.  
     
-    [打开演示][OpenDebugJSDemo]  
+    [Open Demo][OpenDebugJSDemo]  
     
-1.  `5`在 "**数字 1** " 文本框中输入。  
-1.  `1`在 "**数字 2** " 文本框中输入。  
-1.  单击 " **添加号码 1" 和 "数字 2**"。  按钮下方的标签显示 "" `5 + 1 = 51` 。  结果应为 `6` 。  这是你要修复的 bug。  
+1.  Enter `5` in the **Number 1** text box.  
+1.  Enter `1` in the **Number 2** text box.  
+1.  Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  This is the bug you are going to fix.  
     
-    :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="5 + 1 的结果是51，但应该是6" lightbox="../media/javascript-js-demo-bad.msft.png":::
-       Is 的结果 `5 + 1` 是 `51` ，但应该 `6`  
+    :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-js-demo-bad.msft.png":::
+       The result of `5 + 1` is `51`, but should be `6`  
     :::image-end:::  
     
-## 步骤2：熟悉 "源" 面板 UI   
+## Step 2: Get familiar with the Sources panel UI   
 
-DevTools 为不同的任务提供了许多不同的工具，例如更改 CSS、分析页面加载性能和监视网络请求。  " **源** " 面板是你在其中调试 JavaScript 的位置。  
+DevTools provides a lot of different tools for different tasks, such as changing CSS, profiling page load performance, and monitoring network requests.  The **Sources** panel is where you debug JavaScript.  
 
-1.  按 `Control` + `Shift` + `J` \ (Windows \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 打开 DevTools。  此快捷方式将打开 **控制台** 面板。  
+1.  Open DevTools by pressing `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) .  This shortcut opens the **Console** panel.  
     
-    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="控制台面板" lightbox="../media/javascript-console-empty.msft.png":::
-       **控制台**面板  
+    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-console-empty.msft.png":::
+       The **Console** panel  
     :::image-end:::  
     
-1.  单击 " **源** " 选项卡。  
+1.  Click the **Sources** tab.  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text=""源" 面板" lightbox="../media/javascript-sources-sections.msft.png":::
-       " **源** " 面板  
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-sources-sections.msft.png":::
+       The **Sources** panel  
     :::image-end:::  
     
-" **源** " 面板 UI 有3个部分。  
+The **Sources** panel UI has 3 parts.  
 
-:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text=""源" 面板 UI 的3个部分" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
-   " **源** " 面板 UI 的3个部分  
+:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+   The 3 parts of the **Sources** panel UI  
 :::image-end:::  
 
-1.  " **文件导航器** " 窗格 \ (上图中的第一节 \ ) 。  页面请求的每个文件都在此处列出。  
-1.  " **代码编辑器** " 窗格 \ (上图中的第二部分 \ ) 。  在 " **文件导航器** " 窗格中选择文件后，该文件的内容将显示在此处。  
-1.  **JavaScript 调试**窗格 \ 上图中 (第3节 ) 。  用于检查页面的 JavaScript 的各种工具。  如果 DevTools 窗口宽，此窗格将显示在 " **代码编辑器** " 窗格的右侧。  
+1.  The **File Navigator** pane \(Section 1 in the previous figure\).  Every file that the page requests is listed here.  
+1.  The **Code Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **File Navigator** pane, the contents of that file are displayed here.  
+1.  The **JavaScript Debugging** pane \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the page.  If your DevTools window is wide, this pane is displayed to the right of the **Code Editor** pane.  
     
-## 步骤3：使用断点暂停代码   
+## Step 3: Pause the code with a breakpoint   
 
-调试此类问题的常见方法是将许多语句插入到 `console.log()` 代码中，以便在脚本运行时检查值。  例如：  
+A common method for debugging a problem like this is to insert a lot of `console.log()` statements into the code, in order to inspect values as the script runs.  For example:  
 
 ```javascript
 function updateLabel() {
@@ -98,140 +98,140 @@ function updateLabel() {
 }
 ```  
 
-此 `console.log()` 方法可能会使作业完成，但 **断点** 能够更快地完成工作。  断点使你可以在运行时中间暂停代码，并在该时刻检查所有值。  与方法相比，断点有几个优点 `console.log()` ：  
+The `console.log()` method may get the job done, but **breakpoints** are able to get it done faster.  A breakpoint lets you pause your code in the middle of the runtime, and examine all values at that moment in time.  Breakpoints have a few advantages over the `console.log()` method:  
 
-*   通过 `console.log()` ，你需要手动打开源代码，查找相关代码，插入 `console.log()` 语句，然后重新加载页面，以便在控制台中查看消息。  利用断点，您可以暂停在相关代码上，而无需了解代码的结构。  
-*   在你的 `console.log()` 语句中，你需要显式指定要检查的每个值。  有了断点，DevTools 将显示当时的所有变量的值。  有时，你甚至不知道的代码会影响你的代码。  
+*   With `console.log()`, you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then reload the page in order to see the messages in the Console.  With breakpoints, you may pause on the relevant code without even knowing how the code is structured.  
+*   In your `console.log()` statements you need to explicitly specify each value that you want to inspect.  With breakpoints, DevTools shows you the values of all variables at that moment in time.  Sometimes there are variables affecting your code that you are not even aware of.  
 
-简言之，断点可帮助你查找和修复 bug，比方法更快 `console.log()` 。  
+In short, breakpoints may help you find and fix bugs faster than the `console.log()` method.  
 
-如果返回一个步骤并考虑应用的工作方式，则可以让你有兴趣地猜测) 的 sum (`5 + 1 = 51` 在 `click` 与 " **Add Number 1" 和 "number 2** " 按钮关联的事件侦听器中得到计算。  因此，你可能希望在侦听器运行的时间周围暂停代码 `click` 。  **事件侦听器断点** 使你可以执行以下操作：  
+If you take a step back and think about how the app works, you are able to make an educated guess that the incorrect sum (`5 + 1 = 51`) gets computed in the `click` event listener that is associated to the **Add Number 1 and Number 2** button.  Therefore, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do exactly that:  
 
-1.  在 " **JavaScript 调试** " 窗格中，单击 " **事件侦听器断点** " 以展开该部分。  DevTools 显示可展开的事件类别（如 **动画** 和 **剪贴板**）的列表。  
-1.  在 **鼠标** 事件类别旁边，单击 " **展开** \ (![ 展开图标 ][ImageExpandIcon] \ ) "。  DevTools 显示鼠标事件（如 **单击** 和 **mousedown**）的列表。  每个事件旁边都有一个复选框。  
-1.  选中 " **单击** " 复选框。  DevTools 现已设置为在 *任何* `click` 事件侦听器运行时自动暂停。  
+1.  In the **JavaScript Debugging** pane, click **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
+1.  Next to the **Mouse** event category, click **Expand** \(![Expand icon][ImageExpandIcon]\).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
+1.  Check the **click** checkbox.  DevTools is now set up to automatically pause when *any* `click` event listener runs.  
     
-    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="已启用 "单击" 复选框" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
-       已启用 " **单击** " 复选框  
+    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+       The **click** checkbox is enabled  
     :::image-end:::  
     
-1.  返回到演示，再次单击 " **添加号码 1" 和 "数字 2** "。  DevTools 暂停演示并突出显示 " **源** " 面板中的一行代码。  DevTools 应在的行16中暂停 `get-started.js` 。  
+1.  Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** panel.  DevTools should pause on line 16 in `get-started.js`.  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
-    如果在其他代码行上暂停，请按 " **恢复脚本执行** " \ (![ 恢复脚本执行 ][ImageResumeIcon] \ ) ，直到暂停在正确的行上。  
+    If you pause on a different line of code, press **Resume Script Execution** \(![Resume Script Execution][ImageResumeIcon]\) until you pause on the correct line.  
     
     > [!NOTE]
-    > 如果你在其他行暂停，则你有一个浏览器扩展，它 `click` 在你访问的每个页面上注册一个事件侦听器。  已暂停在扩展的 `click` 侦听器中。  如果你使用 InPrivate 模式 **浏览 private**（这将禁用所有扩展），你可能会看到每次都在所需的代码行上暂停。  
+    > If you paused on a different line, you have a browser extension that registers a `click` event listener on every page that you visit.  You were paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.  
 
 <!--todo: add inprivate section when available -->  
 
-**事件侦听器断点** 只是 DevTools 中可用的多种类型的断点之一。  它值得 memorizing 所有不同类型，因为每种类型最终有助于尽可能快地调试不同的方案。  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  It is worth memorizing all the different types, because each type ultimately helps you debug different scenarios as quickly as possible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
-## 步骤4：逐句通过代码   
+## Step 4: Step through the code   
 
-Bug 的一个常见原因是，脚本的运行顺序不正确。  单步执行你的代码，使你能够遍历代码的运行时，一次一行，然后以与预期不同的顺序确定其运行的确切位置。  立即试用：  
+One common cause of bugs is when a script runs in the wrong order.  Stepping through your code enables you to walk through the runtime of your code, one line at a time, and figure out exactly where it is running in a different order than you expected.  Try it now:  
 
-1.  单击 " **单步执行下一个函数调用** \ (![ 步骤高于下一个函数调用 ][ImageOverIcon] \ ) "。  DevTools 在不单步执行的情况下运行以下代码。  
+1.  Click **Step over next function call** \(![Step over next function call][ImageOverIcon]\).  DevTools runs the following code without stepping into it.  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
     > [!NOTE]
-    > DevTools 跳过几行代码。  这是因为 `inputsAreEmpty()` 计算结果为 false，因此语句的代码块不 `if` 会运行。  
+    > DevTools skips a few lines of code.  This is because `inputsAreEmpty()` evaluates as false, so the block of code for the `if` statement does not run.  
     
-1.  在 DevTools 的 " **源** " 面板上，单击 " **单步执行下一个函数调用** \" (![ "单步执行下一个函数调用 \ ) " 单步执行 ][ImageIntoIcon] 函数的运行时 `updateLabel()` ，一次一行。  
+1.  On the **Sources** panel of DevTools, click **Step into next function call** \(![Step into next function call][ImageIntoIcon]\) to step through the runtime of the `updateLabel()` function, one line at a time.  
     
-这是单步执行代码的基本概念。  如果你查看中的代码 `get-started.js` ，则会发现该 bug 可能位于函数中的某个位置 `updateLabel()` 。  你可以使用另一种类型的断点将代码暂停到更接近 bug 可能位置的位置，而不是单步执行每行代码。  
+That is the basic idea of stepping through code.  If you look at the code in `get-started.js`, you see that the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.  
 
-## 步骤5：设置代码行断点   
+## Step 5: Set a line-of-code breakpoint   
 
-代码行断点是最常见的断点类型。  获取要暂停的特定代码行时，请使用代码行断点：  
+Line-of-code breakpoints are the most common type of breakpoint.  When you get the specific line of code that you want to pause on, use a line-of-code breakpoint:  
 
-1.  查看以下代码中的最后一行代码 `updateLabel()` ：  
+1.  Look at the last line of code in `updateLabel()`:  
     
     ```javascript
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  在代码的左侧，你可以看到此特定代码行的行号，即 **33**。  单击 " **33**"。  DevTools 将红色图标置于 **33**的左侧。  这意味着此行上有一行代码断点。  DevTools 现在将始终暂停，然后运行此行代码。  
-1.  单击 " **恢复脚本执行** " \ (![ 恢复脚本执行 ][ImageResumeIcon] \ ) 。  脚本将继续运行，直至到达行33。  在30、31和32行上，DevTools 将在 `addend1` `addend2` `sum` 每一行的分号的右侧打印值。  
+1.  To the left of the code you see the line number of this particular line of code, which is **33**.  Click on **33**.  DevTools puts a red icon to the left of **33**.  This means that there is a line-of-code breakpoint on this line.  DevTools now always pauses before this line of code is run.  
+1.  Click **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  The script continues running until it reaches line 33.  On lines 30, 31, and 32, DevTools prints out the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
     
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools 在行32上的代码行断点处暂停" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
-       DevTools 在行32上的代码行断点处暂停  
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
+       DevTools pauses on the line-of-code breakpoint on line 32  
     :::image-end:::  
     
-## 步骤6：检查变量值   
+## Step 6: Check variable values   
 
-`addend1`、 `addend2` 和 `sum` 看起来可疑的值。  它们包装在引号中，这意味着它们是字符串。  这是介绍 bug 原因的一个好假设。  现在是收集更多信息的时候了。  DevTools 提供许多用于检查变量值的工具。  
+The values of `addend1`, `addend2`, and `sum` look suspicious.  They are wrapped in quotes, which means that they are strings.  This is a good hypothesis for the explaining the cause of the bug.  Now it is time to gather more information.  DevTools provides a lot of tools for examining variable values.  
 
-### 方法1： "范围" 窗格   
+### Method 1: The Scope pane   
 
-当你在一行代码上暂停时， **范围** 窗格将显示当前定义的本地和全局变量以及每个变量的值。  它还显示结束变量（如果适用）。  双击变量值以对其进行编辑。  如果在一行代码上未暂停，则 " **范围** " 窗格为空。  
+When you pause on a line of code, the **Scope** pane shows you what local and global variables are currently defined, along with the value of each variable.  It also shows closure variables, when applicable.  Double-click a variable value to edit it.  When you are not paused on a line of code, the **Scope** pane is empty.  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text=""范围" 窗格" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
-   " **范围** " 窗格  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
+   The **Scope** pane  
 :::image-end:::  
 
-### 方法2：监视表达式   
+### Method 2: Watch Expressions   
 
-通过 " **监视表达式** " 选项卡，你可以监视一段时间内变量的值。  顾名思义，监视表达式不仅仅局限于变量。  你可以在监视表达式中存储任何有效的 JavaScript 表达式。  立即试用：  
+The **Watch Expressions** tab lets you monitor the values of variables over time.  As the name implies, Watch Expressions are not just limited to variables.  You are able to store any valid JavaScript expression in a Watch Expression.  Try it now:  
 
-1.  单击 " **监视** " 选项卡。  
-1.  单击 " **添加表达式** \ (![ 添加表达式 ][ImageAddIcon] \ ) "。  
-1.  键入 `typeof sum`。  
-1.  按 `Enter` 。  DevTools 显示 `typeof sum: "string"` 。  冒号右侧的值是监视表达式的结果。  
+1.  Click the **Watch** tab.  
+1.  Click **Add Expression** \(![Add Expression][ImageAddIcon]\).  
+1.  Type `typeof sum`.  
+1.  Press `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
     
 > [!NOTE]
-> 在 "监视表达式" 窗格中 (右下角 \ ) 在下图中， `typeof sum` 显示监视表达式。  如果 DevTools 窗口较大，"监视表达式" 窗格位于 " **事件侦听器断点** " 窗格上方的右侧。  
+> In the Watch Expression pane \(bottom-right\) in in the following figure, the `typeof sum` Watch Expression is displayed.  If your DevTools window is large, the Watch Expression pane is on the right above the **Event Listener Breakpoints** pane.  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text=""监视表达式" 窗格" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
-   " **监视表达式** " 窗格  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+   The **Watch Expression** pane  
 :::image-end:::  
 
-如有怀疑， `sum` 当它应该是一个数字时，将被评估为字符串。  您现在已确认这是该 bug 的原因。  
+As suspected, `sum` is being evaluated as a string, when it should be a number.  You have now confirmed that this is the cause of the bug.  
 
-### 方法3：控制台   
+### Method 3: The Console   
 
-除了查看消息外 `console.log()` ，你还可以使用 Console 评估任意 JavaScript 语句。  在调试方面，您可以使用该控制台测试 bug 的潜在修复。  立即试用：  
+In addition to viewing `console.log()` messages, you may also use the Console to evaluate arbitrary JavaScript statements.  In terms of debugging, you may use the Console to test out potential fixes for bugs.  Try it now:  
 
-1.  如果您没有打开的控制台，请按 `Escape` 将其打开。  它将在 DevTools 窗口底部打开。  
-1.  在控制台中，键入 `parseInt(addend1) + parseInt(addend2)` 。  此语句之所以有效，是因为你已暂停在范围内和的代码行上 `addend1` `addend2` 。  
-1.  按 `Enter` 。  DevTools 将计算该语句并将 `6` 其打印出来，这是你希望演示产生的结果。  
+1.  If you do not have the Console drawer open, press `Escape` to open it.  It opens at the bottom of your DevTools window.  
+1.  In the Console, type `parseInt(addend1) + parseInt(addend2)`.  This statement works because you are paused on a line of code where `addend1` and `addend2` are in scope.  
+1.  Press `Enter`.  DevTools evaluates the statement and prints out `6`, which is the result you expect the demo to produce.  
     
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="在评估 parseInt (addend1 后的控制台抽屉) + parseInt (addend2) " lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
-       评估后的 **控制台** 抽屉 `parseInt(addend1) + parseInt(addend2)`  
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
+       The **Console** drawer, after evaluating `parseInt(addend1) + parseInt(addend2)`  
     :::image-end:::  
     
-## 步骤7：应用修补程序   
+## Step 7: Apply a fix   
 
-如果发现 bug 的修补程序，请通过编辑代码并重新运行演示来尝试修复。  无需离开 DevTools 即可应用此修补程序。  你可以直接在 DevTools UI 内编辑 JavaScript 代码。  立即试用：  
+If you find a fix for the bug, try out your fix by editing the code and re-running the demo.  You do not need to leave DevTools to apply the fix.  You are able to edit JavaScript code directly within the DevTools UI.  Try it now:  
 
-1.  单击 " **恢复脚本执行** " \ (![ 恢复脚本执行 ][ImageResumeIcon] \ ) 。  
-1.  在 **代码编辑器**中，将行32替换 `var sum = addend1 + addend2` 为 `var sum = parseInt(addend1) + parseInt(addend2)` 。  
-1.  按 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存所做的更改。  
-1.  单击 " **停用断点** \ (![ 停用断点 ][ImageDeactivateIcon] \ ) "。  它将更改为蓝色，以指示它处于活动状态。  设置此设置时，DevTools 忽略你设置的任何断点。  
-1.  试用具有不同值的演示。  演示现在能够正确计算。  
+1.  Click **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  
+1.  In the **Code Editor**, replace line 32, `var sum = addend1 + addend2`, with `var sum = parseInt(addend1) + parseInt(addend2)`.  
+1.  Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save your change.  
+1.  Click **Deactivate breakpoints** \(![Deactivate breakpoints][ImageDeactivateIcon]\).  It changes blue to indicate that it is active.  While this is set, DevTools ignores any breakpoints you set.  
+1.  Try out the demo with different values.  The demo now calculates correctly.  
     
 > [!CAUTION]
-> 此工作流仅将修补程序应用于浏览器中运行的代码。  它不会修复访问您的页面的所有用户的代码。  若要执行此操作，您需要修复服务器上的代码。  
+> This workflow only applies a fix to the code that is running in your browser.  It does not fix the code for all users that visit your page.  To do that, you need to fix the code that is on your servers.  
 
-## 后续步骤   
+## Next steps   
 
-恭喜你！  你现在知道如何在调试 JavaScript 时充分利用 Microsoft Edge DevTools。  您在本教程中学到的工具和方法可能会为您节省无数小时。  
+Congratulations!  You now know how to make the most of Microsoft Edge DevTools when debugging JavaScript.  The tools and methods you learned in this tutorial may save you countless hours.  
 
-本教程仅介绍两种设置断点的方法。  DevTools 提供了许多其他方法，包括以下设置。  
+This tutorial only showed you two ways to set breakpoints.  DevTools offers many other ways including the following settings.  
 
-*   仅当你提供的条件为 true 时才触发的条件断点。  
-*   已捕获或未捕获的异常上的断点。  
-*   当请求的 URL 与你提供的子字符串匹配时触发的 XHR 断点。  
+*   Conditional breakpoints that are only triggered when the condition that you provide is true.  
+*   Breakpoints on caught or uncaught exceptions.  
+*   XHR breakpoints that are triggered when the requested URL matches a substring that you provide.  
     
-有关何时以及如何使用每种类型的详细信息，请转到 [使用断点暂停代码][DevtoolsJavscriptBreakpoints]。  
+For more information about when and how to use each type, go to [Pause Your Code With Breakpoints][DevtoolsJavscriptBreakpoints].  
 
-本教程中有一些代码步进控件未介绍。  有关详细信息，请转到 [代码行][DevtoolsJavascriptReferenceStepThroughCode]。  
+There are a couple of code stepping controls that were not explained in this tutorial.  For more information, go to [Step over line of code][DevtoolsJavascriptReferenceStepThroughCode].  
 
 <!--  
  
@@ -250,12 +250,12 @@ Bug 的一个常见原因是，脚本的运行顺序不正确。  单步执行�
 
 <!-- links -->  
 
-[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "如何在 Microsoft Edge DevTools 中暂停带有断点的代码 |Microsoft 文档"
-[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "逐句通过代码-JavaScript 调试参考 |Microsoft 文档"
+[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - JavaScript debugging reference | Microsoft Docs"
 
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->  
 
-[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "打开演示 |故障"  
+[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Open Demo | Glitch"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

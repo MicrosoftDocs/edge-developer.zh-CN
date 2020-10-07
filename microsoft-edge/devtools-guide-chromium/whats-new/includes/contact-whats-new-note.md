@@ -11,23 +11,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/02/2020
 ms.locfileid: "10992882"
 ---
-使用以下选项讨论帖子中的新功能和更改，或与 DevTools 相关的任何其他内容。  
+Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
 
-*   使用 DevTools 中的 " **发送反馈** " 图标发送反馈。  
-*   Tweet [@EdgeDevTools][PostTweetEdgeDevTools]。  
-*   向 [我们所需的网站][TheWebWeWant]提交建议。  
-*   使用 " [反馈](#feedback) " 部分的文章中的文件错误。  
+*   Send your feedback using the **Send Feedback** icon in DevTools.  
+*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].  
+*   Submit a suggestion to [The Web We Want][TheWebWeWant].  
+*   File bugs on this article using the [Feedback](#feedback) section.  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的 "发送反馈" 图标" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   Microsoft Edge DevTools 中的 " **发送反馈** " 图标  
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+   The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- links -->  
 
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | 发布推文"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter 帐户"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "新问题-MicrosoftDocs/edge-开发人员-GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"  
 
-[TheWebWeWant]: https://webwewant.fyi "我们想要的网络"  
+[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  

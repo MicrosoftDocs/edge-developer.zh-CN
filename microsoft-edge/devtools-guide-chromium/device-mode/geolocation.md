@@ -1,12 +1,12 @@
 ---
-description: 打开 "传感器" 选项卡，然后从 "地理位置" 列表中选择 "坐标"。
-title: 通过 Microsoft Edge DevTools 替代地理位置
+description: Open the Sensors tab and select coordinates from the Geolocation list.
+title: Override geolocation with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 269e7ca4bf259aa168c06ac0fd915604731463c4
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,28 +28,28 @@ ms.locfileid: "10992986"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 通过 Microsoft Edge DevTools 替代地理位置  
+# Override geolocation with Microsoft Edge DevTools  
 
-许多网站利用用户位置，以便为用户提供更相关的体验。  例如，天气网站可能会在用户向网站授予访问当前用户位置的权限后，在用户区域中显示本地预测。  
+Many websites take advantage of user location in order to provide a more relevant experience for the users.  For example, a weather website may show the local forecast in a user's area, after the user has granted the website permission to access the current user location.  
 
 <!--todo: add link to user location section when available -->  
 
-如果你正在生成根据用户所在位置而更改的 UI，你可能需要确保网站在世界各地的不同位置正确运行。  若要在 Microsoft Edge DevTools 中替代您的地理位置，请完成以下操作。  
+If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.  To override your geolocation in Microsoft Edge DevTools, complete the following actions.  
 
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **命令菜单**  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       The **Command Menu**  
     :::image-end:::  
     
-1.  键入 `sensors` ，选择 " **显示传感器**"，然后按 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
-1.  从 " **地理** 位置" 列表中，选择其中一个预设城市，例如 `Tokyo` ，或选择 " **自定义位置** " 以输入自定义经度和纬度坐标，或选择 " **位置不可用** " 以查看当用户位置不可用时您的网站的行为。  
+1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
+1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.  
     
-    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="从 "地理位置" 列表中选择 "东京"" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
-       `Tokyo`从 "**地理位置**" 列表中选择  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       Select `Tokyo` from the **Geolocation** list  
     :::image-end:::  
     
-## 与 Microsoft Edge DevTools 团队取得联系
+## Getting in touch with the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

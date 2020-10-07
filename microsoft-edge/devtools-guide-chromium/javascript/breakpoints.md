@@ -1,12 +1,12 @@
 ---
-description: 了解你可以在 Microsoft Edge DevTools 中暂停代码的所有方式。
-title: 如何在 Microsoft Edge DevTools 中暂停带有断点的代码
+description: Learn about all the ways you are able to pause your code in Microsoft Edge DevTools.
+title: How To Pause Your Code With Breakpoints In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 95aba99c2cfe87f26704faa20964ace5d2abdf51
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -31,44 +31,44 @@ ms.locfileid: "10992805"
 
 
 
-# 如何在 Microsoft Edge DevTools 中暂停带有断点的代码   
+# How to pause your code with breakpoints in Microsoft Edge DevTools   
 
 
 
-使用断点暂停你的 JavaScript 代码。  本指南介绍 DevTools 中可用的每种类型的断点以及何时使用以及如何设置每种类型。  有关调试过程的动手教程，请参阅 [Microsoft Edge DevTools 中的调试 JavaScript 入门][DevtoolsJavascriptIndex]。  
+Use breakpoints to pause your JavaScript code.  This guide explains each type of breakpoint that is available in DevTools, as well as when to use and how to set each type.  For a hands-on tutorial of the debugging process, see [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].  
 
-## 有关何时使用每个断点类型的概述   
+## Overview of when to use each breakpoint type   
 
-最著名的断点类型是代码行。  但是，设置代码行的断点可能效率较低，尤其是当你不知道确切的查找位置时，或者如果你使用的是大型代码库。  通过了解如何以及何时使用其他类型的断点，你可以在调试时节省时间。  
+The most well-known type of breakpoint is line-of-code.  But line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if you are working with a large codebase.  You may save yourself time when debugging by knowing how and when to use the other types of breakpoints.  
 
-| 断点类型 | 如果要暂停，请使用此操作 .。。  |  
+| Breakpoint Type | Use This When You Want To Pause...  |  
 |:--- |:--- |  
-| [代码行](#line-of-code-breakpoints) | 在确切的代码区域中。  |  
-| [条件代码行](#conditional-line-of-code-breakpoints) | 在确切的代码区域中，但仅在某些其他条件为 true 时。  |  
-| [DOM](#dom-change-breakpoints) | 更改或删除特定的 DOM 节点或子级的代码。  |  
-| [XHR](#xhrfetch-breakpoints) | 当 XHR URL 包含字符串模式时。  |  
-| [事件侦听器](#event-listener-breakpoints) | 在事件（如）之后运行的代码上 `click` 运行。  |  
-| [异常](#exception-breakpoints) | 在引发已捕获或未捕获异常的代码行上。  |  
-| [函数](#function-breakpoints) | 每当运行特定的命令、函数或方法时。  |  
+| [Line-of-code](#line-of-code-breakpoints) | On an exact region of code.  |  
+| [Conditional line-of-code](#conditional-line-of-code-breakpoints) | On an exact region of code, but only when some other condition is true.  |  
+| [DOM](#dom-change-breakpoints) | On the code that changes or removes a specific DOM node, or the children.  |  
+| [XHR](#xhrfetch-breakpoints) | When an XHR URL contains a string pattern.  |  
+| [Event listener](#event-listener-breakpoints) | On the code that runs after an event, such as `click`, runs.  |  
+| [Exception](#exception-breakpoints) | On the line of code that is throwing a caught or uncaught exception.  |  
+| [Function](#function-breakpoints) | Whenever a specific command, function, or method is run.  |  
 
-## 代码行断点   
+## Line-of-code breakpoints   
 
-当你知道需要调查的确切代码区域时，请使用代码行断点。  在运行此行代码之前，DevTools 始终暂停。  
+Use a line-of-code breakpoint when you know the exact region of code that you need to investigate.  DevTools always pauses before this line of code is run.  
 
-在 DevTools 中设置代码行断点：  
+To set a line-of-code breakpoint in DevTools:  
 
-1.  单击 " **源** " 选项卡。  
-1.  打开包含要中断的代码行的文件。  
-1.  转到代码行。  
-1.  代码行左侧是 "行号" 列。  单击它。  "行号" 列旁边将显示一个红色图标。  
+1.  Click the **Sources** tab.  
+1.  Open the file containing the line of code on which you want to break.  
+1.  Go the line of code.  
+1.  To the left of the line of code is the line number column.  Click on it.  A red icon appears next to the line number column.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
-       代码行断点  
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+       A line-of-code breakpoint  
     :::image-end:::  
     
-### 代码中的代码行断点   
+### Line-of-code breakpoints in your code   
 
-`debugger`从代码中运行该方法以在该行上暂停。  这等效于 [代码行断点](#line-of-code-breakpoints)，只不过断点是在代码中设置的，而不是在 DevTools UI 中设置的。  
+Run the `debugger` method from your code to pause on that line.  This is equivalent to a [line-of-code breakpoint](#line-of-code-breakpoints), except that the breakpoint is set in your code, not in the DevTools UI.  
 
 ```javascript
 console.log('a');
@@ -77,114 +77,114 @@ debugger;
 console.log('c');
 ```  
 
-### 条件代码行断点   
+### Conditional line-of-code breakpoints   
 
-当你知道需要调查的确切代码区域时，请使用条件代码行断点，但只希望在其他某些条件为 true 时暂停。  
+Use a conditional line-of-code breakpoint when you know the exact region of code that you need to investigate, but you want to pause only when some other condition is true.  
 
-设置条件代码行断点：  
+To set a conditional line-of-code breakpoint:  
 
-1.  单击 " **源** " 选项卡。  
-1.  打开包含要中断的代码行的文件。  
-1.  转到代码行。  
-1.  代码行左侧是 "行号" 列。  右键单击行号。  
-1.  选择 " **添加条件断点**"。  将在代码行下方显示一个对话框。  
-1.  在对话框中输入条件。  
-1.  按 `Enter` 激活断点。  "行号" 列旁边的图标。  
+1.  Click the **Sources** tab.  
+1.  Open the file containing the line of code on which you want to break.  
+1.  Go the line of code.  
+1.  To the left of the line of code is the line number column.  Right-click the line number.  
+1.  Select **Add conditional breakpoint**.  A dialog displays underneath the line of code.  
+1.  Enter your condition in the dialog.  
+1.  Press `Enter` to activate the breakpoint.  An icon next to the line number column.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="条件代码行断点" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
-       条件代码行断点  
+    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
+       A conditional line-of-code breakpoint  
     :::image-end:::  
     
-### 管理代码行断点   
+### Manage line-of-code breakpoints   
 
-使用 " **断点** " 窗格从单个位置禁用或删除代码行断点。  
+Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from a single location.  
 
-:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text=""断点" 面板" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
-   " **断点** " 面板  
+:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
+   The **Breakpoints** panel  
 :::image-end:::  
 
-*   选中某个条目旁边的复选框以禁用该断点。  
-*   右键单击某个条目以删除该断点。  
-*   右键单击 " **断点** " 窗格中的任意位置可停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点相当于取消选中每一个断点。  停用所有断点指示 DevTools 忽略所有代码行断点，但同时保持已启用状态，以便每个断点在重新激活时保持相同的状态。  
+*   Check the checkbox next to an entry to disable that breakpoint.  
+*   Right-click an entry to remove that breakpoint.  
+*   Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text=""断点" 窗格中已停用的断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
-       " **断点** " 窗格中已停用的断点  
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
+       Deactivated breakpoints in the **Breakpoints** pane  
     :::image-end:::  
     
-## DOM 更改断点   
+## DOM change breakpoints   
 
-如果要在更改了 DOM 节点或子级的代码上暂停，请使用 DOM 更改断点。  
+Use a DOM change breakpoint when you want to pause on the code that changes a DOM node or the children.  
 
-设置 DOM 更改断点：  
+To set a DOM change breakpoint:  
 
-1.  单击 " **元素** " 选项卡。  
-1.  转到要在其上设置断点的元素。  
-1.  右键单击该元素。  
-1.  将鼠标悬停 **在 "中断"**，然后选择 " **子树修改**"、" **属性修改**" 或 " **节点删除**"。  
+1.  Click the **Elements** tab.  
+1.  Go the element on which you want to set the breakpoint.  
+1.  Right-click the element.  
+1.  Hover over **Break on**, then select **Subtree modifications**, **Attribute modifications**, or **Node removal**.  
     
-    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="用于创建 DOM 更改断点的上下文菜单" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
-       用于创建 DOM 更改断点的上下文菜单  
+    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
+       The context menu for creating a DOM change breakpoint  
     :::image-end:::  
     
-### DOM 的类型更改断点   
+### Types of DOM change breakpoints   
 
-*   **子树修改**。  当删除或添加当前选定节点的子节点时，或者子元素的内容发生更改时触发。  不会在子节点属性更改或对当前选定节点的任何更改上触发。  
-*   **属性修改**：当在当前选定的节点上添加或删除属性时，或者当属性值发生更改时触发。  
-*   **节点删除**：在删除当前选定的节点时触发。  
+*   **Subtree modifications**.  Triggered when a child of the currently-selected node is removed or added, or the contents of a child are changed.  Not triggered on child node attribute changes, or on any changes to the currently-selected node.  
+*   **Attributes modifications**: Triggered when an attribute is added or removed on the currently-selected node, or when an attribute value changes.  
+*   **Node Removal**: Triggered when the currently-selected node is removed.  
     
-## XHR/Fetch 断点   
+## XHR/Fetch breakpoints   
 
-如果你希望在 XHR 的请求 URL 包含指定的字符串时中断，请使用 XHR 断点。  DevTools 将在 XHR 运行该方法的代码行上暂停 `send()` 。  
+Use an XHR breakpoint when you want to break when the request URL of an XHR contains a specified string.  DevTools pauses on the line of code where the XHR runs the `send()` method.  
 
 > [!NOTE]
-> 此功能还适用于 [获取 API][MDNFetchApi] 请求。  
+> This feature also works with [Fetch API][MDNFetchApi] requests.  
 
-这样做很有用的一个示例是，当你看到你的页面请求不正确的 URL 时，你希望快速找到导致错误请求的 AJAX 或提取源代码。  
+One example of when this is helpful is when you see that your page is requesting an incorrect URL, and you want to quickly find the AJAX or Fetch source code that is causing the incorrect request.  
 
-设置 XHR 断点：  
+To set an XHR breakpoint:  
 
-1.  单击 " **源** " 选项卡。  
-1.  展开 " **XHR 断点** " 窗格。  
-1.  单击 " **添加断点**"。  
-1.  输入要在其上中断的字符串。  当此字符串出现在 XHR 请求 URL 中的任何位置时，DevTools 暂停。  
-1.  按 `Enter` 以确认。  
+1.  Click the **Sources** tab.  
+1.  Expand the **XHR Breakpoints** pane.  
+1.  Click **Add breakpoint**.  
+1.  Enter the string which you want to break on.  DevTools pauses when this string is present anywhere in an XHR request URL.  
+1.  Press `Enter` to confirm.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="创建 XHR 断点" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
-       创建 XHR 断点  
+    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
+       Create an XHR breakpoint  
     :::image-end:::  
     
-## 事件侦听器断点 
+## Event listener breakpoints 
 
-如果要在激发事件后运行的事件侦听器代码上暂停，请使用事件侦听器断点。  你可以选择特定事件，例如事件的类别，如 `click` 所有鼠标事件。  
+Use event listener breakpoints when you want to pause on the event listener code that runs after an event is fired.  You are able to select specific events, such as `click`, or categories of events, such as all mouse events.  
 
-1.  单击 " **源** " 选项卡。  
-1.  展开 " **事件侦听器断点** " 窗格。  DevTools 显示事件类别的列表，例如 **动画**。  
-1.  选中其中一个类别，以便在触发来自该类别的任何事件时暂停，或者展开类别并检查特定事件。  
+1.  Click the **Sources** tab.  
+1.  Expand the **Event Listener Breakpoints** pane.  DevTools shows a list of event categories, such as **Animation**.  
+1.  Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="创建事件侦听器断点" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
-       创建事件侦听器断点  
+    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
+       Create an event listener breakpoint  
     :::image-end:::  
     
-## 异常断点   
+## Exception breakpoints   
 
-当你希望在引发已捕获或未捕获异常的代码行上暂停时，请使用异常断点。  
+Use exception breakpoints when you want to pause on the line of code that is throwing a caught or uncaught exception.  
 
-1.  单击 " **源** " 选项卡。  
-1.  单击 " **异常时暂停"** (![ "异常时暂停" ][ImagePauseOnExceptionsIcon] \ ) 。  启用时图标变为蓝色。  
+1.  Click the **Sources** tab.  
+1.  Click **Pause on exceptions** \(![Pause on exceptions][ImagePauseOnExceptionsIcon]\).  The icon turns blue when enabled.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text=""在例外时暂停" 按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
-       " **在例外时暂停"** 按钮  
+    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
+       The **Pause on exceptions** button  
     :::image-end:::  
     
-1.  **可选**。  如果你还希望在捕获异常时（除了未捕获的异常）上暂停，请选中 " **捕获异常时暂停** " 复选框。  
+1.  **Optional**.  Check the **Pause On Caught Exceptions** checkbox if you also want to pause on caught exceptions, in addition to uncaught ones.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="已暂停未捕获的异常" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
-       已暂停未捕获的异常  
+    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
+       Paused on an uncaught exception  
     :::image-end:::  
     
-## 函数断点   
+## Function breakpoints   
 
-`debug(method)`如果要在运行特定函数时暂停，请运行该方法，其中 `method` 是要调试的命令、函数或方法。  你可以在 `debug()` 代码中插入 (，如 `console.log()` 语句) 或从 DevTools 控制台运行该方法。  `debug()` 等效于在函数的第一行上设置 [代码行断点](#line-of-code-breakpoints) 。  
+Run the `debug(method)` method, where `method` is the command, function, or method you want to debug, when you want to pause whenever a specific function is run.  You may insert `debug()` into your code (like a `console.log()` statement) or run the method from the DevTools Console.  `debug()` is equivalent to setting a [line-of-code breakpoint](#line-of-code-breakpoints) on the first line of the function.  
 
 ```javascript
 function sum(a, b) {
@@ -195,9 +195,9 @@ debug(sum); // Pass the function object, not a string.
 sum();
 ```  
 
-### 请确保目标函数在范围内   
+### Make sure the target function is in scope   
 
-`ReferenceError`如果要调试的函数不在作用域内，DevTools 会引发 a。  
+DevTools throws a `ReferenceError` if the function you want to debug is not in scope.  
 
 ```javascript
 (function () {
@@ -213,11 +213,11 @@ sum();
 debug(hey); // This does not work.  hey() is out of scope.
 ```  
 
-如果从 DevTools 控制台运行该方法，确保目标函数在范围内非常复杂 `debug()` 。  下面是一个策略：  
+Ensuring the target function is in scope is tricky if you are running the `debug()` method from the DevTools Console.  Here is one strategy:  
 
-1.  在函数在范围中的某个位置设置 [代码行断点](#line-of-code-breakpoints) 。
-1.  触发断点。  
-1.  `debug()`在 DevTools 控制台中运行该方法，同时代码在代码行断点处仍处于暂停状态。  
+1.  Set a [line-of-code breakpoint](#line-of-code-breakpoints) somewhere where the function is in scope.
+1.  Trigger the breakpoint.  
+1.  Run the `debug()` method in the DevTools Console while the code is still paused on your line-of-code breakpoint.  
     
 <!---  
  
@@ -231,9 +231,9 @@ debug(hey); // This does not work.  hey() is out of scope.
 
 <!-- links -->  
 
-[DevtoolsJavascriptIndex]: index.md "开始使用 Microsoft Edge DevTools 中的 JavaScript 调试 |Microsoft 文档"  
+[DevtoolsJavascriptIndex]: index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 
-[MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "获取 API |MDN"  
+[MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

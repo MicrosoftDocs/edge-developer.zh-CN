@@ -1,12 +1,12 @@
 ---
-description: 有关在 Microsoft Edge DevTools 中使用屏幕阅读器等辅助技术导航的指南。
-title: 导航 Microsoft Edge DevTools 与辅助技术
+description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
+title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 9a9accd043d05d1c55b1e79ce580f7b45711118f
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,249 +28,249 @@ ms.locfileid: "10993189"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 导航 Microsoft Edge DevTools 与辅助技术  
+# Navigate Microsoft Edge DevTools with assistive technology  
 
-以下文章旨在帮助主要依靠辅助技术（如屏幕阅读器）访问和使用 [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain]的用户。  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] 是内置于 Microsoft edge 浏览器中的一套 web 开发人员工具。  如果您要查找与改善网页辅助功能相关的 DevTools 功能，请参阅 [辅助功能参考][DevtoolsAccessibilityReference]。  
+The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  If you are looking for DevTools features related to improving the accessibility of a web page,  see [Accessibility Reference][DevtoolsAccessibilityReference].  
 
-DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项卡比其他面板和选项卡更适用于辅助技术。  本指南将指导你完成最易于访问和突出显示你可能遇到的特定问题的面板。  
+The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
 
-## 概述  
+## Overview  
 
-在开始之前，它有助于获得有关 DevTools UI 的结构的心理模型。  DevTools 分为一系列的面板，这些面板分为一个 [ARIA tablist][W3CWaiAriaTablist]。  
+Before starting, it helps to have a mental model of how the DevTools UI is structured.  DevTools is divided into a series of panels which are organized into an [ARIA tablist][W3CWaiAriaTablist].  
 
-例如：  
+For example:  
 
-*   通过 " **元素** " 面板，你可以 [查看和更改 DOM 节点] [DevtoolsDomIndexNavigateDomTreeKeyboard] 或 [CSS][DevtoolsCssIndex]。  
-*   [控制台面板][DevtoolsConsoleIndex]允许您读取 JavaScript 日志和实时编辑对象。  
+*   The **Elements** panel lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
+*   The [Console panel][DevtoolsConsoleIndex] lets you read JavaScript logs and live edit objects.  
 
-在每个面板的内容区域内，有许多不同的工具，这些工具通常称为文档中的选项卡或窗格。  
-例如，" **元素** " 面板包含用于检查事件侦听器、辅助功能树以及更多的其他选项卡。  选项卡和窗格之间的区别稍有不同。  你可能看到一个术语或另一个术语的唯一原因是与官方 DevTools 文档的其余部分保持一致。  
+Within the content area of each panel, there are a number of different tools, often referred to as tabs or panes in the documentation.  
+For instance, the **Elements** panel contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may see one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
 
-## 键盘快捷方式  
+## Keyboard shortcuts  
 
-[DevTools 键盘快捷方式参考] [DevtoolsShortcuts] 是一个非常有用的 cheatsheet。  在浏览不同的面板时，请务必将其加入书签并重新引用它。  
+The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful cheatsheet.  Be sure to bookmark it and refer back to it as you explore the different panels.  
 
-## 打开开发工具  
+## Open DevTools  
 
-若要开始使用，请参阅 [打开 Microsoft Edge DevTools] [DevtoolsOpen]。  有多种方法可以打开 DevTools，方法是通过键盘快捷方式或菜单项打开。  
+To get started, see [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
 
-## 在面板之间导航  
+## Navigate between panels  
 
-### 通过键盘导航  
+### Navigate by keyboard  
 
-*   在 DevTools 打开的情况下，选择 `Control` + `]` \ (Windows \ ) 或 `Command` + `]` \ (macOS \ ) 以重点关注下一个面板。  
-*   选择 `Control` + `[` \ (Windows \ ) 或 `Command` + `[` \ (macOS \ ) 以重点介绍上一个面板。  
-*   也可以使用将 `Shift` + `Tab` 焦点移动到面板的[ARIA tablist][W3CWaiAriaTablist]中并使用箭头键更改面板，但使用前面提到的快捷方式可能会更快。  
+*   With DevTools open, select `Control`+`]` \(Windows\) or `Command`+`]` \(macOS\) to focus the next panel.  
+*   Select `Control`+`[` \(Windows\) or `Command`+`[` \(macOS\) to focus the previous panel.  
+*   It is also possible to use `Shift`+`Tab` to move focus into the [ARIA tablist][W3CWaiAriaTablist] of a panel and use the arrow keys to change panels, though it may be faster to use the previously mentioned shortcuts.  
 
-**已知问题**  
+**Known issues**  
 
-*   在每个面板激活后，某些面板（如 " **控制台** " 和 " **性能** " 面板）可能会将焦点移到 "面板内容" 区域。  这可能导致很难通过箭头键进行导航。  
-*   将宣布所选面板的名称，但仅在它已阅读面板中的焦点内容后才会。  这可能会使错过的事情变得非常容易。  
+*   Some panels, such as the **Console** and **Performance** panels, may move focus into the panel content area as soon as each panel is activated.  This may make navigating by arrow keys difficult.  
+*   The name of the selected panel is announced, but only after it has read the focused content in the panel.  This may make it very easy to miss.  
 
-### 通过命令菜单导航  
+### Navigate by Command Menu  
 
-若要聚焦特定面板，请使用 " [命令" 菜单][DevtoolsCommandMenuIndex]：  
+To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:  
 
-1.  在 DevTools 打开的情况下，选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
-    **命令菜单**是模糊搜索记忆式键入 combobox。  
-1.  键入要打开的面板的名称，然后使用键盘上的 " `Down Arrow` 导航到正确的" 选项。  
-1.  选择 `Enter` 以运行命令。  
+1.  With DevTools open, select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+    The **Command Menu** is a fuzzy search autocomplete combobox.  
+1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
+1.  Select `Enter` to run a command.  
 
-完成以下操作以打开 " **元素** " 面板。  
+Complete the following actions to open the **Elements** panel.  
 
-1.  打开 " **命令" 菜单**。  
-1.  `E`然后键入 `L` 。  **"面板 > 显示元素**" 选项处于选中状态。  
-1.  选择 `Enter` 以运行打开面板的命令。  
+1.  Open the **Command Menu**.  
+1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
+1.  Select `Enter` to run the command that opens the panel.  
 
-以这种方式打开面板，将焦点定向到面板的内容。  在 " **元素** " 面板的情况下，焦点移到 **DOM 树**中。  
+Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** panel, focus moves into the **DOM Tree**.  
 
-## 元素面板  
+## Elements panel  
 
-### 检查页面上的元素  
+### Inspect an element on the page  
 
-1.  使用屏幕阅读器中的光标导航到要检查的元素。  
-1.  在元素上使用鼠标进行右键单击以打开上下文菜单。  
-1.  选择 " **检查** " 选项。  此 [打开元素面板并聚焦 DOM 树中的元素] [DevtoolsDomIndexViewDomNodes]。  
+1.  Navigate to the element you want to inspect using the cursor in the screen reader.  
+1.  Simulate a right-click using a mouse on the element to open the context menu.  
+1.  Choose the **Inspect** option.  This [opens the Elements panel and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].  
 
-**DOM 树**布局为[ARIA 树][W3CWaiAriaTree]。  有关示例，请参阅 [使用键盘导航 **DOM 树** ] [DevtoolsDomIndexNavigateDomTreeKeyboard]。  
+The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, see [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
-### 复制 DOM 树中元素的代码  
+### Copy the code for an element in the DOM Tree  
 
-1.  当焦点位于 **DOM 树**中的某个节点上时，将鼠标悬停在节点上并打开上下文菜单 \ (右键单击 \ ) 。  
-1.  展开 " **复制** " 选项。  
-1.  选择 " **复制 outerHTML**"。  
+1.  With focus on a node in the **DOM Tree**, hover on the node and open the contextual menu \(right-click\).  
+1.  Expand the **Copy** option.  
+1.  Select **Copy outerHTML**.  
 
-**已知问题**  
+**Known issues**  
 
-*   **复制 outerHTML** 通常不选择当前节点，而是选择父节点。  但是，该元素的内容应仍在已复制的 outerHTML 中。  
+*   **Copy outerHTML** often does not select the current node but instead selects the parent node.  However, the contents of the element should still be in the copied outerHTML.  
 
-### 在 DOM 树中修改元素的属性  
+### Modify the attributes of an element in the DOM Tree  
 
-*   将焦点置于 **DOM 树**中的某个节点上，然后选择 `Enter` 以使其可编辑。  
-*   选择 `Tab` 以在属性值之间移动。  当你听到 "space" 时，你位于空的文本输入中，并且能够键入新的属性值。  
-*   选择 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) ，接受更改并收听该元素的所有内容。  
+*   With focus on a node in the **DOM Tree**, select `Enter` to make it editable.  
+*   Select `Tab` to move between attribute values.  When you hear "space" you are inside of an empty text input and are able to type a new attribute value.  
+*   Select `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to accept the change and hear the entire contents of the element.  
 
-**已知问题**  
+**Known issues**  
 
-*   键入文本输入时，您不会收到任何反馈。  如果你进行了键入错误，并使用箭头键浏览你的输入，你也不会收到任何反馈。  检查工作的最简单方法是接受更改，然后侦听要宣布的整个元素。  
+*   When you type into the text input you get no feedback.  If you make a typo and use the arrow keys to explore your input you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.  
 
-### 在 DOM 树中编辑元素的 HTML  
+### Edit the HTML of an element in the DOM Tree  
 
-*   将焦点置于 **DOM 树**中的某个节点上，然后选择 `Enter` 以使其可编辑。  
-*   选择 `Tab` 以在属性值之间移动。  例如，当听到元素的名称（例如，在 `h2` 文本输入中）时，可能会更改元素的类型。  
-*   选择 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 以接受更改。  
+*   With focus on a node in the **DOM Tree**, select `Enter` to make it editable.  
+*   Select `Tab` to move between attribute values.  When you hear the name of the element, for instance, `h2`, you are inside of a text input and may change the type of the element.  
+*   Select `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to accept the change.  
 
-例如，当你键入 `h3` 并选择 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 时，元素的开始和结束标记会 `h3` 发生更改。  
+For example, when you type `h3` and select `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\), the start and end tags of the `h3` element change.  
 
-## "元素" 面板选项卡  
+## Elements panel tabs  
 
-" **元素** " 面板包含用于检查内容的其他选项卡，例如应用于某个元素的 CSS 或 "辅助功能" 树中的相关位置。  
+The **Elements** panel contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.  
 
-*   将焦点置于 **DOM 树**中的某个节点上，选择， `Tab` 直到听到 " **样式** " 窗格处于选中状态。  
-*   使用 `Right Arrow` 浏览其他可用的选项卡。  
+*   With focus on a node in the **DOM Tree**, select `Tab` until you hear that the **Styles** pane is selected.  
+*   Use the `Right Arrow` to explore other available tabs.  
 
-**DOM 树**将具有属性的元素 `href` 转换为可设定焦点的链接，因此你可能需要选择多次 `Tab` 才能到达 "**样式**" 窗格。  
+The **DOM Tree** turns elements with `href` attributes into focusable links, so you may need to select `Tab` more than once to reach the **Styles** pane.  
 
-**已知问题**  
+**Known issues**  
 
-" **DOM 断点** " 和 " **属性** " 选项卡不能通过键盘访问。  
+The **DOM Breakpoints** and **Properties** tabs are not keyboard accessible.  
 
-### "样式" 窗格  
+### Styles pane  
 
-在 " **样式** " 窗格中，查找用于筛选样式的控件，切换元素状态 \ (例如 [： "活动][MDNActive] " 和 [： "焦点][MDNFocus]\" ) 、切换类以及添加新类。  还有一个功能强大的样式检查工具，可用于浏览和修改当前应用于 **DOM 树**中焦点的元素的样式。  
+In the **Styles** pane find controls for filtering styles, toggling element states \(such as [:active][MDNActive] and [:focus][MDNFocus]\), toggling classes, and adding new classes.  There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.  
 
-了解 " **样式** " 窗格的关键概念是它仅显示 **DOM 树**中当前选定的节点的样式。  例如，假设你已检查完节点的样式 `<header>` ，现在想要查看节点的样式 `<footer>` 。  若要执行此操作，首先需要选择 `<footer>` **DOM 树**中的节点。  你可能会发现使用 " [检查](#inspect-an-element-on-the-page) 工作流" 来检查节点的常规邻近 `footer` 节点 \ (（如页脚中的链接 \ ) ，它侧重于 **DOM 树**），然后使用键盘导航到你感兴趣的确切节点。  
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node \(such as a link within the footer\), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you are interested.  
 
-#### 导航 "样式" 窗格  
+#### Navigate the Styles pane  
 
-因为所有样式工具都以一种方式进行连接，而另一种方式是返回到 " **样式** " 窗格，所以在此工具中首先成为专家是有意义的。  
+Because all of the style tools connect in one way or another back to the **Styles** pane, it makes sense to become an expert in this tool first.  
 
-*   将焦点置于 " **样式** " 窗格上，选择 `Tab` 以将焦点移动到其中并浏览内容。  
-*   选择 `Tab` ，直到第一个样式变为活动状态。  如果您使用的是屏幕阅读器，则第一个样式将宣布为 `element.style {}` 。  
-*   选择 `Down Arrow` 以按升序顺序导航样式列表。  屏幕阅读器将从 CSS 文件的名称、出现样式的行号以及样式的名称开始宣布每个样式。  例如，`main.css:233 .card__img {}`。  
-*   选择 `Enter` 以更详细地检查样式。  焦点从样式名称的可编辑版本开始。  
-*   选择 `Tab` 以在每个 CSS 属性的可编辑版本和相应值之间移动。  每个样式块的结尾是一个空白的可编辑文本字段，可用于添加其他 CSS 属性。  
-*   你可以继续选择在 `Tab` 样式列表中移动，或选择 `Escape` 退出模式并返回到通过箭头键导航。  
+*   With focus on the **Styles** pane, select `Tab` to move focus inside and explore the contents.  
+*   Select `Tab` until the first style becomes active.  If you are using a screen reader this first style is announced as `element.style {}`.  
+*   Select `Down Arrow` to navigate the list of styles in order of specificity.  A screen reader announces each style starting with the name of the CSS file, the line number on which the style appears, and the name of the style.  For example, `main.css:233 .card__img {}`.  
+*   Select `Enter` to inspect a style in more detail.  Focus begins on an editable version of the style name.  
+*   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you may use to add additional CSS properties.  
+*   You may continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.  
 
-有关其他快捷方式，请参阅 [样式窗格键盘参考] [DevtoolsShortcutsStylesPaneKeyboard]。  
+For additional shortcuts, see [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard].  
 
-**已知问题**  
+**Known issues**  
 
-*   如果使用 " **筛选器** 可编辑文本" 字段，则无法再导航样式列表。  
+*   If you use the **Filter** editable text field, you are no longer be able to navigate the list of styles.  
 
-#### 切换元素状态  
+#### Toggle element state  
 
-切换元素的状态，例如 `:active` 或 `:focus` ：  
+To toggle the state of an element, such as `:active` or `:focus`:  
 
-1.  导航到 " **样式** " 窗格，然后选择 `Tab` " **切换元素状态** " 按钮获得焦点。  
-1.  选择 `Enter` 以展开元素状态的集合。  元素状态显示为一组复选框。  
-1.  选择 " `Tab` 直到第一个状态" `:active` ，"有焦点"。  
-1.  选择 `Space` 以启用它。  如果 DOM 树中的当前选定元素具有 `:active` 样式，则现在将其应用。  
-1.  "保持" `Tab` 以浏览所有可用状态。  
+1.  Navigate to the **Styles** pane and select `Tab` until the **Toggle Element State** button has focus.  
+1.  Select `Enter` to expand the collection of element states.  The element states are presented as a group of checkboxes.  
+1.  Select `Tab` until the first state, `:active`, has focus.  
+1.  Select `Space` to enable it.  If the currently-selected element in the DOM Tree has an `:active` style, it is now applied.  
+1.  Hold `Tab` to explore all of the available states.  
 
-#### 添加现有类  
+#### Add an existing class  
 
-" **切换元素状态** " 按钮旁边是 " **元素类** " 按钮。  若要将焦点移动到该文件，请选择 `Tab` 并选择 `Enter` 。  焦点移到标记为 " **添加新类**" 的编辑文本字段中。  
+Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
 
-**元素类**按钮主要用于将现有类添加到元素。  例如，如果你的样式表包含名为的帮助程序类，则 `.clearfix` 可以在 `.` "编辑文本" 字段中选择以查看类的建议列表，并使用 `Down Arrow` 查找 `.clearfix` 建议。  或者键入类名，然后选择 `Enter` 应用。  
+The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may select `.` inside of the edit text field to see a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
 
-#### 添加新样式规则  
+#### Add a new style rule  
 
-" **元素类** " 按钮旁边是 " **新建样式规则** " 按钮。  若要将焦点移动到该文件，请选择 `Tab` 并选择 `Enter` 。  焦点移到 "样式" 检查器内的可编辑文本字段中。  字段的初始文本内容是 **DOM 树**中所选元素的标记名称。  
-你可以在此字段中键入所需的任何类名称，然后选择 `Tab` 将 CSS 属性分配给该字段。  
+Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.  
+You may type any class name you want into this field and then select `Tab` to assign CSS properties to it.  
 
-### 计算选项卡  
+### Computed tab  
 
-将焦点置于 " **计算** " 选项卡上，选择 `Tab` 以将焦点移动到其中并浏览内容。  在 " **计算** " 选项卡中有一些控件，用于探索哪些 CSS 属性实际应用于某个元素的具体程度。  
+With focus on the **Computed** tab, select `Tab` to move focus inside and explore the contents.  Within the **Computed** tab there are controls for exploring which CSS properties are actually applied to an element in order of specificity.  
 
 <!--todo: add computed tab section when available  -->  
 
-#### 浏览所有计算样式  
+#### Explore all computed styles  
 
-选择 `Tab` ，直到到达计算样式的集合。  它们显示为一个 [ARIA 树][W3CWaiAriaTree]。  展开 listbox 将显示哪些 CSS 选择器应用了计算样式。  这些选择程序按具体程度进行组织。  屏幕阅读器宣布计算值、当前匹配的 CSS 选择器、包含选择器的样式表的文件名以及选择器的行号。  
+Select `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA tree][W3CWaiAriaTree].  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.  
 
-**已知问题**  
+**Known issues**  
 
-*   如果使用 " **筛选** 文本" 字段，则无法再检查样式。  
+*   If you use the **Filter** text field, you are no longer able to inspect styles.  
 
-### 事件侦听器选项卡  
+### Event listeners tab  
 
-在 " **元素** " 面板中，你可以使用 " **事件侦听器** " 选项卡检查应用到元素的事件侦听器。 将焦点置于 " **样式** " 窗格上，选择 `Right Arrow` 导航到 " **事件侦听器** " 选项卡。  
+From within the **Elements** panel you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** pane, select the `Right Arrow` to navigate to the **Event Listeners** tab.  
 
-#### 浏览事件侦听器  
+#### Explore event listeners  
 
-事件侦听器以 [ARIA 树][W3CWaiAriaTree]的形式呈现。  你可以使用箭头键进行导航。  屏幕阅读器将宣布事件侦听器附加到的 DOM 对象的名称，以及定义事件侦听器和行号的文件名。  
+Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You may use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
 
-### 辅助功能窗格  
+### Accessibility pane  
 
-焦点位于 " **辅助功能** " 窗格上，选择 `Tab` 以将焦点移动到其中并浏览内容。  在 " [辅助功能" 窗格][DevtoolsAccessibilityReference] 中，有用于浏览辅助功能树、应用于元素的 ARIA 属性和计算的辅助功能属性的控件。  
+With focus on the **Accessibility** pane, select `Tab` to move focus inside and explore the contents.  On the [Accessibility pane][DevtoolsAccessibilityReference] there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
 
-#### 辅助功能树  
+#### Accessibility Tree  
 
-**辅助功能树**显示为一个[ARIA 树][W3CWaiAriaTree]，其中每个树都 `treeitem` 对应于 DOM 中的一个元素。  树宣布所选节点的已计算角色。  类中的泛型元素（如 `div` 和 `span` ）在树中被宣布为 "GenericContainer"。  使用箭头键遍历树并浏览父子关系。  
+The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where each `treeitem` corresponds to an element in the DOM.  The tree announces the computed role for the selected node.  Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  Use the arrow keys to traverse the tree and explore parent-child relationships.  
 
-**已知问题**  
+**Known issues**  
 
-*   **辅助功能**窗格使用的[ARIA 树][W3CWaiAriaTree]的类型可能无法在 Microsoft Edge 中正确地向 macOS 屏幕阅读器（如 VoiceOver）公开。  订阅 [Chromium 问题 #868480][ChromiumIssues868480] 将收到有关此问题的进度。  
-*   每个 **ARIA 属性** 和 **计算属性** 部分均标记为一个 [ARIA 树][W3CWaiAriaTree]，但每个都不是焦点管理，并且不是键盘可操作。  
+*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** pane may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480] to be informed about progress on this issue.  
+*   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree][W3CWaiAriaTree], but each does not currently have focus management and is not keyboard operable.  
 
-## 审核面板  
+## Audits panel  
 
-" **审核** " 面板你应该针对网站运行一系列测试，以检查与性能、辅助功能、SEO 以及许多其他类别相关的常见问题。  
+The **Audits** panel you should run a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
 
-### 配置和运行审核  
+### Configure and run an audit  
 
-1.  首次打开 " **审核** " 面板时，焦点将放置在窗体末尾的 " **运行审核** " 按钮上。  默认情况下，该窗体配置为对模拟的3G 连接上的每个类别使用 "移动仿真" 运行审核。  
-1.  `Shift` + `Tab` 在浏览模式下使用或向后导航以更改审核设置。  
-1.  准备好运行审核时，请导航回 " **运行审核** " 按钮并选择 `Enter` 。  
-1.  焦点将移动到带有 " **取消** " 按钮的模式窗口，使您可以退出审核。  当审核运行并多次刷新页面时，你可能会听到一系列 earcons。  
+1.  When the **Audits** panel is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
+1.  Use `Shift`+`Tab` or navigate back in Browse mode to change the audit settings.  
+1.  When you are ready to run the audit, navigate back to the **Run Audit** button and select `Enter`.  
+1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.  
 
-**已知问题**  
+**Known issues**  
 
-*   配置窗体的不同部分当前不与元素一起标记 `fieldset` 。  在浏览模式中导航以确定与每个部分关联的控件可能更容易。  
-*   审核完成运行时，没有 earcon 或活动区域公告。  通常需要30秒，之后才能导航到结果。  使用浏览模式可能是达到结果的最简单方式。  
+*   The different sections of the configuration form are not currently marked up with a `fieldset` element.  It may be easier to navigate them in Browse mode to figure out which controls are associated with each section.  
+*   There is no earcon or live region announcement when the audit is finished running.  Generally it takes about 30 seconds, after which you should be able to navigate to the results.  Using Browse mode may be the easiest way to reach the results.  
 
-### 导航审核报告  
+### Navigate the audit report  
 
-审核报告已组织为与每个审核类别对应的分区。  将打开报表，其中包含每个类别的分数列表。  这些分数也是可以用于跳转到相关部分的链接。  在每个部分中都是可扩展 `details` 元素，其中包含与已通过或失败的审核相关的信息。  默认情况下，仅显示失败的审核。  每个部分都以 `details` 包含所有已传递审核的最终元素结尾。  
+The audit report is organized into sections that correspond with each of the audit categories.  The report opens with a list of scores for each category.  These scores are also links which are able to be used to skip to the relevant sections.  Within each section are expandable `details` elements, which contain information relating to passed or failed audits.  By default, only failing audits are shown.  Each section ends with a final `details` element which contains all of the passed audits.  
 
-若要运行新审核，请使用 `Shift` + `Tab` 退出报告并查找 "**执行审核**" 按钮。  
+To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perform An Audit** button.  
 
-## 与 Microsoft Edge DevTools 团队取得联系
+## Getting in touch with the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReference]: ./reference.md "辅助功能参考 |Microsoft 文档"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "辅助功能窗格-辅助功能参考 |Microsoft 文档"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
-[DevtoolsConsoleIndex]: ../console/index.md "控制台概述 |Microsoft 文档"  
-[DevtoolsCssIndex]: ../css/index.md "开始使用查看和更改 CSS |Microsoft 文档"  
+[DevtoolsAccessibilityReference]: ./reference.md "Accessibility reference | Microsoft Docs"  
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
-[DevtoolsDomIndexViewDomNodes]: ../dom/index.md # view-dom-节点 "查看 DOM 节点-开始查看和更改 DOM |Microsoft 文档 "  
-[DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md # "导航"-dom 树-带键盘 "使用键盘浏览 DOM"-开始查看和更改 DOM |Microsoft 文档 "  
-[DevtoolsOpen]: ../open.md "打开 Microsoft Edge DevTools |Microsoft 文档 "  
-[DevtoolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools 键盘快捷方式 |Microsoft 文档 "  
-[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts.md # 样式-窗格-键盘快捷方式 "样式窗格" 键盘快捷方式-Microsoft Edge DevTools 键盘快捷方式 |Microsoft 文档 "  
+[DevtoolsDomIndexViewDomNodes]: ../dom/index.md#view-dom-nodes "View DOM nodes - Get started with viewing and changing the DOM | Microsoft Docs"  
+[DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs"  
+[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
-[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "问题 868480-将 ARIA 树作为 Mac 辅助功能中的表公开"  
+[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Issue 868480 - Expose ARIA trees as tables in Mac accessibility"  
 
-[GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "新问题-MicrosoftDocs/edge-开发人员 |GitHub"  
+[GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "New Issue - MicrosoftDocs/edge-developer | GitHub"  
 
-[MDNActive]: https://developer.mozilla.org/docs/Web/CSS/:active "：活动 |MDN"  
-[MDNFocus]: https://developer.mozilla.org/docs/Web/CSS/:focus "：焦点 |MDN"  
+[MDNActive]: https://developer.mozilla.org/docs/Web/CSS/:active ":active | MDN"  
+[MDNFocus]: https://developer.mozilla.org/docs/Web/CSS/:focus ":focus | MDN"  
 
-[MonorailChromiumIssues]: https://crbug.com "问题-chromium-Monorail"  
+[MonorailChromiumIssues]: https://crbug.com "Issues - chromium - Monorail"  
 
-[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (角色) -易于访问的富 Internet 应用 (WAI-ARIA-ARIA) 1.1 |W3C"  
-[W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "树 (角色) -易于访问的富 Internet 应用程序 (WAI-ARIA) 1.1 |W3C"  
+[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (role) - Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C"  
+[W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "tree (role) - Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面在[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation)找到，并且由 "Dodson" （ ([Rob Dodson][RobDodson] ）投稿人、Google WebFundamentals \ ) 创作。  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) and is authored by [Rob Dodson][RobDodson] \(Contributor, Google WebFundamentals\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

@@ -1,12 +1,12 @@
 ---
-description: 了解如何评估 Microsoft Edge DevTools 中的运行时性能。
-title: 即可体验分析运行时性能
+description: Learn how to evaluate runtime performance in Microsoft Edge DevTools.
+title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 65351f3846ed76ef8a27dbff2cfb08c497282d15
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,195 +28,195 @@ ms.locfileid: "10992944"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 分析运行时性能入门  
+# Get started with analyzing Runtime performance  
 
 > [!NOTE]
-> 若要了解如何使页面更快加载，请参阅 [优化网站速度][DevtoolsSpeedGetStarted]。  
+> To learn how to make your pages load faster, see [Optimize Website Speed][DevtoolsSpeedGetStarted].  
 
-运行时性能是页面运行（而不是加载）时的性能。  以下教程文章介绍了如何使用 Microsoft Edge DevTools 性能面板来分析运行时性能。  在 **RAIL** 模型方面，你在本教程中学习的技能对于分析页面的响应、动画和空闲阶段很有用。  
+Runtime performance is how your page performs when it is running, as opposed to loading.  The following tutorial article teaches you how to use the Microsoft Edge DevTools Performance panel to analyze runtime performance.  在 **RAIL** 模型方面，你在本教程中学习的技能对于分析页面的响应、动画和空闲阶段很有用。  
 
 <!--todo: add rail link when section is ready -->  
 
-## 入门  
+## Get started  
 
-在以下教程中，你将在实时页面上打开 DevTools，并使用 " **性能** " 面板查找页面上的性能瓶颈。  
+In the following tutorial, you open DevTools on a live page and use the **Performance** panel to find a performance bottleneck on the page.  
 
-1.  在 **InPrivate 模式**中打开 Microsoft Edge。  InPrivate 模式可确保 Microsoft Edge 以干净的状态运行。  例如，如果安装了大量的扩展，扩展可能会在性能测量中产生噪音。  
+1.  Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have a lot of extensions installed, the extensions may create noise in your performance measurements.  
     
     <!--TODO: replace section when updated for new Edge  -->
     
-1.  在 InPrivate 窗口中加载以下页面。  页面是你要分析的演示。  该页面显示了一堆上下移动的小图标。  
+1.  Load the following page in your InPrivate window.  The page is the demo that you are going to profile.  The page shows a bunch of little icons moving up and down.  
     
     ```https
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
-1.  选择 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 打开 DevTools。  
+1.  Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\) to open DevTools.  
     
-    :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
-       左侧为演示，右侧为 DevTools  
+    :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
+       The demo on the left, and DevTools on the right  
     :::image-end:::  
     
     > [!NOTE]
-    > 对于其余的数字，DevTools 将取消 [停靠到一个单独的窗口][DevtoolsCustomizePlacement] ，以便更好地关注内容。  
+    > For the rest of the figures, DevTools is [undocked to a separate window][DevtoolsCustomizePlacement] to better focus on the contents.  
     
-### 模拟移动 CPU  
+### Simulate a mobile CPU  
 
-与台式机和笔记本电脑相比，移动设备的 CPU 功率更小。  每当你分析页面时，都可使用 CPU 节流来模拟页面在移动设备上的表现。  
+与台式机和笔记本电脑相比，移动设备的 CPU 功率更小。  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.  
 
-1.  在 DevTools 中，选择 " **性能** " 选项卡。  
-1.  请确保已启用**屏幕截图**复选框。  
-1.  选择 " **捕获设置** \ ("！[捕获设置][ImageCaptureSettingsIcon] \ ) 。  DevTools 显示了有关如何捕获效果指标的设置。  
-1.  对于 "**CPU**"，选择 **4x 减速**。  DevTools 将 CPU 限制为比平时慢 4 倍。  
+1.  In DevTools, choose the **Performance** tab.  
+1.  Make sure that the **Screenshots** checkbox is enabled.  
+1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureSettingsIcon]\).  DevTools reveals settings related to how it captures performance metrics.  
+1.  对于 "**CPU**"，选择 **4x 减速**。  DevTools throttles your CPU so that it is 4 times slower than usual.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU 限制" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
-       CPU 限制  
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
+       CPU throttle  
     :::image-end:::  
     
     > [!NOTE]
-    > 测试其他页面时;如果你想要确保每个页面在低端移动设备上都可以正常运行，请将 CPU 限制设置为 **6x 减速**。  演示在6x 速度上不能很好地运行，因此它只是为了说明目的而使用4x 减速。  
+    > When testing other pages; if you want to ensure that each page works well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  The demo does not work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.  
     
-### 设置演示  
+### Set up the demo  
 
-很难创建适用于网站所有读者的运行时性能演示。  以下部分允许你自定义演示，以确保你的体验与屏幕截图和说明相对一致，无论你的具体设置如何。
+It is hard to create a runtime performance demo that works consistently for all readers of the website.  The following section lets you customize the demo to ensure that your experience is relatively consistent with the screenshots and descriptions, regardless of your particular set up.
 
-1.  选择 " **添加 10** " 按钮，直到蓝色图标明显比以前慢一些。  在高端计算机上，您可以选择大约20次。  
-1.  选择 " **优化**"。  蓝色图标移动速度更快、更平稳。  
+1.  Choose the **Add 10** button until the blue icons move noticeably slower than before.  On a high-end machine, you may to choose it about 20 times.  
+1.  Choose **Optimize**.  The blue icons should move faster and more smoothly.  
     
     > [!NOTE]
-    > 若要更好地显示优化版本和未经优化版本之间的差异，请选择几次 " **减 10** " 按钮，然后重试。  
-    > 如果添加太多蓝色图标，则可能会导致 CPU 的最大限制，因此你可能无法在两个版本的结果中看到重大差异。  
+    > To better display a difference between the optimized and un-optimized versions, choose the **Subtract 10** button a few times and try again.  
+    > If you add too many blue icons, you may max out the CPU and then you may not observe a major difference in the results for the two versions.  
     
-1.  选择 " **取消优化**"。  蓝色图标的移动速度较慢，并且与更多 sluggishness。  
+1.  Choose **Un-Optimize**.  The blue icons move slower and with more sluggishness again.  
     
-### 记录运行时性能  
+### Record runtime performance  
 
-运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。  
+运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  Take a recording in the Performance panel to learn how to detect the performance bottleneck in the un-optimized version.  
 
-1.  在 DevTools 中，选择 " **Record** " (！录制[ImageRecordIcon] \ ) 。  页面运行时，DevTools 将捕获效果指标。  
+1.  In DevTools, choose **Record** \(![Record][ImageRecordIcon]\).  DevTools captures performance metrics as the page runs.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="分析页面" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
-       分析页面  
+    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
+       Profile the page  
     :::image-end:::  
     
-1.  稍等几秒钟。  
-1.  选择 " **停止**"。  DevTools 停止录制，处理数据，然后在 "性能" 面板上显示结果。  
+1.  Wait a few seconds.  
+1.  Choose **Stop**.  DevTools stops recording, processes the data, then displays the results on the Performance panel.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="配置文件的结果" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
        配置文件的结果  
     :::image-end:::  
     
-哇，那是海量数据。  不要担心，此过程很快就会更有意义。  
+Wow, that is an overwhelming amount of data.  do not worry, soon the process makes more sense.  
 
-## 分析结果  
+## Analyze the results  
 
-记录页面性能后，测量页面性能的质量并找到任何原因。  
+After you record the performance of the page, measure the quality of the performance of the page and find the any causes.  
 
-### 分析每秒帧数  
+### Analyze frames per second  
 
 用于测量任何动画效果的主要指标是每秒的帧\(FPS\)。  当动画以 60 FPS运行时，用户会觉得很享受。  
 
-1.  查看 **FPS** 图表。  每当你在** FPS **上方看到红色条时，表示帧速率下降得太低，以至于可能损害用户体验。  通常，绿色条越高，FPS 越高。  
+1.  查看 **FPS** 图表。  每当你在** FPS **上方看到红色条时，表示帧速率下降得太低，以至于可能损害用户体验。  In general, the higher the green bar, the higher the FPS.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="FPS 图表" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
-       **FPS**图表  
+    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
+       The **FPS** chart  
     :::image-end:::  
     
-1.  在 **FPS** 图表下方，你将看到 **CPU** 图表。  **CPU** 图表中的颜色对应于 "性能" 面板底部 "**摘要**" 选项卡中的 "颜色"。  **CPU** 图表充满颜色意味着在录制过程中 CPU 已达到极限。  每当你看到 CPU 长时间处于满负荷状态时，就是提示你应该找到减少工作量的方法。  
+1.  Below the **FPS** chart you see the **CPU** chart.  **CPU** 图表中的颜色对应于 "性能" 面板底部 "**摘要**" 选项卡中的 "颜色"。  **CPU** 图表充满颜色意味着在录制过程中 CPU 已达到极限。  Whenever you see the CPU maxed out for long periods, it is a cue to find ways to do less work.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="CPU 图表和摘要选项卡" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
-       **CPU**图表和**摘要**选项卡  
+    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+       The **CPU** chart and **Summary** tab  
     :::image-end:::  
     
-1.  将鼠标悬停在 " **FPS**"、" **CPU**" 或 " **网络** " 图表上。  DevTools 将显示该时间点处的页面截图。  左右移动鼠标以重播录音。  该操作作为 "清理" 引用，并且对于手动分析动画进度非常有用。  
+1.  Hover on the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is referenced as scrubbing, and it is useful for manually analyzing the progression of animations.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="在录制的2500ms 标记周围查看页面的屏幕截图" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
-       在录制的2500ms 标记周围查看页面的屏幕截图  
+    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
+       View a screenshot of the page around the 2500ms mark of the recording  
     :::image-end:::  
     
-1.  在 " **框架** " 部分中，将鼠标悬停在绿色方块之一。  DevTools 将显示该特定帧的 FPS。  每帧可能远低于 60 FPS的目标。  
+1.  In the **Frames** section, hover on one of the green squares.  DevTools shows you the FPS for that particular frame.  Each frame is probably well below the target of 60 FPS.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="将鼠标悬停在框架上" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
-       将鼠标悬停在框架上  
+    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
+       Hover on a frame  
     :::image-end:::  
     
-当然，您应该会看到页面的性能不佳。  但在实际情况下，它可能不是很清楚，因此，让度量的所有工具都很方便。  
+Of course, you should see that the page is not performing well.  But in real scenarios, it may not be so clear, so having all of the tools to make measurements comes in handy.  
 
-#### 附赠：打开 FPS 计数  
+#### Bonus: Open the FPS meter  
 
-另一个非常方便的工具是 FPS 计数，可在页面运行时提供对 FPS 的实时估计。  
+Another handy tool is the FPS meter, which provides real-time estimates for FPS as the page runs.  
 
-1.  选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
-1.  开始 `Rendering` 在 " **命令" 菜单** 中键入，然后选择 " **显示呈现**"。  
-1.  在 "**绘制**" 选项卡上，启用 **FPS 计数**。  新的叠加层将显示在视线的右上角。  
+1.  Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Start typing `Rendering` in the **Command Menu** and select **Show Rendering**.  
+1.  In the **Rendering** tab, enable **FPS Meter**.  A new overlay appears in the top-right of your viewport.  
     
-    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="FPS 计数" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
-       **FPS 指示器**  
+    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
+       The **FPS meter**  
         :::image-end:::  
     
-1.  禁用 **FPS 指示器** ，然后选择 `Escape` 以关闭 " **呈现** " 选项卡。 在本教程中，您未使用 **FPS 计量** 器。  
+1.  Disable the **FPS Meter** and select `Escape` to close the **Rendering** tab.  You are not using **FPS Meter** in this tutorial.  
     
-### 查找瓶颈  
+### Find the bottleneck  
 
-经过测量并验证动画是否工作不好后，下一步是回答 "为什么？" 的问题。  
+After you measured and verified that the animation is not performing well, the next step is to answer the question "why?".  
 
-1.  未选择任何事件时，" **摘要** " 选项卡将显示活动的细目。  页面大部分时间呈现所花费的时间。  由于性能是减少工作量的艺术，因此你的目标是减少花费在进行绘制工作上的时间。  
+1.  When no events are selected, the **Summary** tab shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text=""摘要" 选项卡" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
-       " **摘要** " 选项卡  
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+       The **Summary** tab  
     :::image-end:::  
     
-1.  展开**重点**部分。  DevTools 将显示一段时间内主线程上活动的帧图表。  x 轴表示一段时间内的记录。  每个条形表示一个事件。  宽条表示该事件花费了更长的时间。  Y 轴表示调用堆叠。  当你看到事件相互叠加时，表示较高的事件导致较低的事件。  
+1.  Expand the **Main** section.  DevTools 将显示一段时间内主线程上活动的帧图表。  x 轴表示一段时间内的记录。  每个条形表示一个事件。  宽条表示该事件花费了更长的时间。  Y 轴表示调用堆叠。  When you see events stacked on top of each other, it means the upper events caused the lower events.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="主要部分" lightbox="../media/evaluate-performance-performance-main.msft.png":::
-       **主要**部分  
+    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-main.msft.png":::
+       The **Main** section  
     :::image-end:::  
     
-1.  记录中有很多数据。  放大单个事件;在 **概览**上选择、按住和 dragg 光标，这是包括 **fp**、 **CPU**和 **网络** 图表的部分。  "**重点**" 部分和 "**摘要**" 选项卡仅显示录制所选部分的信息。  
+1.  There is a lot of data in the recording.  To Zoom into a single event; choose, hold, and dragg your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** tab only display information for the selected portion of the recording.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="放大事件" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
-       放大事件  
-    :::image-end:::  
-    
-    > [!NOTE]
-    > 要进行缩放的另一种方法是，重点关注 **主要** 部分，选择背景或事件，然后选择 `W` 、、 `A` `S` 或 `D` 。  
-    
-    1.  专注于 **动画帧引发** 事件的右上角的红色三角形。  只要看到红色三角形，就会出现一条警告，指出可能存在与事件相关的问题。  
-    
-    > [!NOTE]
-    > 每当运行[ `requestAnimationFrame()`回调][MDNWebRequestAnimationFrame]时，就会发生**动画帧触发**事件。  
-    
-1.  选择 **动画帧激发** 的事件。  "**摘要**" 选项卡现在向你显示有关该事件的信息。  请注意 "**显示**" 链接。  选择后，DevTools 将突出显示发起 **动画帧触发** 事件的事件。  此外，焦点在 **app.js： 95** 链接上。  选择后，将显示源代码中的相关行。
-    
-    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="有关动画帧触发事件的详细信息" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
-       有关 **动画帧激发** 事件的详细信息  
+    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+       Zoom into an event  
     :::image-end:::  
     
     > [!NOTE]
-    > 选择事件后，使用箭头键选择其旁边的事件。  
+    > Another way to zoom, focus the **Main** section, choose the background or an event, and select `W`, `A`, `S`, or `D`.  
     
-1.  在 **app.update** 事件下，有一堆紫色事件。  如果每个紫色事件的宽度更宽，它看起来好像每个事件都有一个红色三角形。  
-1.  选择紫色 **布局** 事件之一。  DevTools 在**摘要**选项卡中提供有关事件的更多信息。确实，有关于强制回流\（换句话说，就是布局\）的警告。  
+    1.  Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever you see a red triangle, it is a warning that there may be an issue related to the event.  
     
-1.  在 "**摘要**" 选项卡中，选择 "**布局强制**" 下的 " **app.js： 71** " 链接。  DevTools 将转到强制布局的代码行。  
+    > [!NOTE]
+    > The **Animation Frame Fired** event occurs whenever a [`requestAnimationFrame()` callback][MDNWebRequestAnimationFrame] is run.  
     
-    :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="导致强制布局的代码行" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
-       导致强制布局的代码行  
+1.  Choose the **Animation Frame Fired** event.  The **Summary** tab now shows you information about that event.  Note the **Reveal** link.  After you choose it, DevTools to highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:95** link.  After you choose it, the relevant line in the source code is displayed.
+    
+    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
+       More information about the **Animation Frame Fired** event  
     :::image-end:::  
     
     > [!NOTE]
-    > 代码问题是，在每个动画帧中，它会更改每个图标的样式，然后查询页面上每个图标的位置。  由于样式已更改，因此浏览器不知道每个图标位置是否已更改，因此它必须重新布局图标才能计算新位置。  <!--  > See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
+    > After selecting an event, use the arrow keys to select the events next to it.  
+    
+1.  Under the **app.update** event, there is a bunch of purple events.  If each purple event was wider, it looks as though each one may have a red triangle on it.  
+1.  Choose one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** tab.  Indeed, there is a warning about forced reflows \(another word for layout\).  
+    
+1.  In the **Summary** tab, choose the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.  
+    
+    :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
+       The line of code that caused the forced layout  
+    :::image-end:::  
+    
+    > [!NOTE]
+    > The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser does not know if each icon position changed, so it has to re-layout the icon in order to compute the new position.  <!--  > See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
     
 <!-- todo: add layouts section when available -->
 
-要了解的很多。  现在，你在分析运行时性能的基本工作流中拥有坚实的基础。  太棒了。  
+That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.  
 
-### 附赠：分析优化的版本  
+### Bonus: Analyze the optimized version  
 
-使用您刚刚学习的工作流和工具，选择演示的 **优化** 以启用优化的代码，执行另一条性能记录，然后分析结果。  从改进的帧数到 **主** 部分中的火焰图中的事件减少，你可以看到应用的优化版本的工作量很少，从而提高性能。  
+Using the workflows and tools that you just learned, choose **Optimize** on the demo to enable the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, you are able to see that the optimized version of the app does much less work, resulting in better performance.  
 
 > [!NOTE]
-> 即使优化版本也不是很好，因为它会对 `top` 每个图标的属性进行操作。  更好的方法是保留仅影响合成的属性。  <!--  > See [Use transform and opacity changes for animations][RenderingCompositor] for more information.  -->  
+> Even the optimized version is not great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.  <!--  > See [Use transform and opacity changes for animations][RenderingCompositor] for more information.  -->  
 
 <!--todo: add rendering section when available -->
 
@@ -225,15 +225,15 @@ ms.locfileid: "10992944"
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
 
-若要更轻松地使用 "性能" 面板，请多多操练，所谓熟能生巧。  尝试分析你的页面并分析结果。  如果对结果有任何疑问，请使用 "**发送反馈**" 图标，选择 `Alt` + `Shift` + `I` \ (Windows \ ) ，选择 `Option` + `Shift` + `I` \ (macOS \ ) ，或[tweet DevTools 团队][TwitterEdgeDevtools]。  如果可能，请包括屏幕截图或指向可重现页面的链接。  
+To get more comfortable with the Performance panel, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` \(Windows\), select `Option`+`Shift`+`I` \(macOS\), or [tweet the DevTools team][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.  
 
-:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Microsoft Edge 开发人员工具中的**反馈**图标" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
-   Microsoft Edge DevTools 中的 " **发送反馈** " 图标  
+:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+   The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
 
-最后，可通过多种方法来改善运行时性能。  本文重点介绍一个特定的动画瓶颈，让你通过 "性能" 面板集中浏览，但这只是你可能遇到的多个瓶颈之一。  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
+Last, there are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour through the Performance panel, but it is only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
 *   [Optimizing JS Execution][RenderingOptimizeJS]  
@@ -246,7 +246,7 @@ See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->
 
 <!-- links -->
 
-[ DevtoolsCustomizePlacement]: ../customize/placement.md  "更改 Microsoft Edge 开发人员工具的放置位置（取消停靠、停靠至底部、停靠至左）"   
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "使用 Microsoft Edge 开发人员工具优化网站速度"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - 发布推文 | Twitter"  

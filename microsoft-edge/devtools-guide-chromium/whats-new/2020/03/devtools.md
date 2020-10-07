@@ -1,6 +1,6 @@
 ---
-description: 模仿颜色远景缺陷，在 "命令" 菜单中停靠到 "左" 等。
-title: DevTools （Microsoft Edge 83）中的新增功能
+description: Emulate color vision deficiencies, Dock To Left in the Command Menu, and more.
+title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/11/2020
@@ -36,50 +36,50 @@ ms.locfileid: "11015480"
 
 ## 来自 Microsoft Edge 开发人员工具团队公告  
 
-以下各部分是你可能错过的 Microsoft Edge 开发人员工具团队的公告列表！ 查看它们以尝试 DevTools、Visual Studio 代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, Visual Studio Code extensions, and more.  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
 
 ### 在 Windows 10 设备上远程调试 Microsoft Edge  
 
 现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此应用程序扩展了[ Windows 设备门户][WindowsUwpDebugTestPerfDevicePortal]，你可以将开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，请参阅目标列表\（Windows 10 设备上将打开 Microsoft Edge 和[ PWAs ][PprgressiveWebAppsChromiumIndex]中的所有选项卡\），然后针对远程 Windows 10 设备上运行的目标使用开发计算机上的 DevTools。  
 
-:::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
-   Microsoft [Store][MicrosoftStore]中可用的[Microsoft Edge (Beta) 应用的远程工具][RemoteTools]  
+:::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
+   The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
-[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。  通过 [发推至][PostTweetEdgeDevTools] 或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标，让我们了解你的远程调试体验！  
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-### 访问设置的新方法  
+### New ways to access Settings  
 
 你可以自定义大量的 DevTools 设置，以使 DevTools 外观、感觉和工作方式达到你的要求。 在 Microsoft Edge 83 中，访问 DevTools 中的 [设置][DevtoolsCustomizeIndexSettings] 现在更为简单。 使用 "控制台警报" 和 "主菜单" 旁边的齿轮图标打开 "设置"。  
 
-:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="齿轮图标会打开 DevTools 中的设置" lightbox="../../media/2020/03/settings.msft.png":::
-   齿轮图标将在 DevTools 中打开 " **设置** "  
+:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/settings.msft.png":::
+   The gear icon opens **Settings** in the DevTools  
 :::image-end:::  
 
-你还可以从**主菜单**下的"**更多工具**"下打开[设置][DevtoolsCustomizeIndexSettings]。
+You are also able to open [Settings][DevtoolsCustomizeIndexSettings] from the **Main Menu** under **More tools**.
 
-:::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="主菜单 > 更多工具 > 设置" lightbox="../../media/2020/03/settings2.msft.png":::
-   **主菜单**  > **更多工具**  > **设置**  
+:::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/settings2.msft.png":::
+   **Main Menu** > **More tools** > **Settings**  
 :::image-end:::  
 
-Chromium 问题 [#1050855][CR1050855]
+Chromium issue [#1050855][CR1050855]
 
 ### 新增和改进的 infobars
 
 DevTools 中的信息性通知栏 \(infobars\) 现在具有改进的外观和功能。 在 Microsoft Edge 83 中，infobars 更易于阅读和提供按钮，以便你能够立即执行相关操作。  
 
-:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="用于在 Microsoft Edge 83 中整齐打印缩小文件的信息栏" lightbox="../../media/2020/03/infobar.msft.png":::
-   用于在 Microsoft Edge 版本83中美观打印 minified 文件的信息栏  
+:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/infobar.msft.png":::
+   Infobar for pretty-printing a minified file in Microsoft Edge Version 83  
 :::image-end:::  
 
-Chromium 问题 [#1056348][CR1056348]
+Chromium issue [#1056348][CR1056348]
 
 ### 使用键盘导航颜色选取器  
 
 [颜色选取器][DevtoolsCssReferenceColorPicker] 是 "[元素][DevtoolsCssIndex]" 面板中的 GUI 用于更改 `color` 和 `background-color` 声明。  在早期版本的 Microsoft Edge 中，无法使用键盘导航 [颜色选取器][DevtoolsCssReferenceColorPicker] 的 **阴影** 部分。  
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="现在，你可以使用键盘在颜色选取器的 "阴影" 部分移动选取器" lightbox="../../media/2020/03/color-picker.msft.png":::
-   现在，你可以使用键盘移动[颜色选取器][DevtoolsCssReferenceColorPicker]的 "**底纹**" 部分中的选择器  
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/color-picker.msft.png":::
+   You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker]  
 :::image-end:::  
 
 在 Microsoft Edge 83 中，你可以使用键盘在颜色选取器的**阴影** 部分移动选取器。  
@@ -90,17 +90,17 @@ Chromium 问题 [#963183][CR963183]
 
 在 Microsoft Edge 81 及更早版本中，在 "[元素][DevtoolsCssIndex]" 面板中的 **"属性"选项卡**因页面刷新而损坏。  刷新页面时，**"属性" 选项卡** 未填充当前所选元素的属性。  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="在 Microsoft Edge 81 及更早版本中，页面刷新后，"属性" 选项卡为空白" lightbox="../../media/2020/03/properties-in-81.msft.png":::
-   在 Microsoft Edge 81 及更早版本中，在页面刷新后，" **属性" 选项卡** 为空  
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/properties-in-81.msft.png":::
+   In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh  
 :::image-end:::  
 
 在 Microsoft Edge 83 中，你现在可以在 **"属性" 选项卡**中页面刷新后看到当前所选元素的属性。  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="在 Microsoft Edge 83 中，"属性" 选项卡显示页面刷新后当前所选元素的属性" lightbox="../../media/2020/03/properties-in-82.msft.png":::
-   在 Microsoft Edge 83 中，在页面刷新后，" **属性" 选项卡** 显示当前选定元素的属性  
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/properties-in-82.msft.png":::
+   In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh  
 :::image-end:::  
 
-Chromium 问题 [#1050999][CR1050999]  
+Chromium issue [#1050999][CR1050999]  
 
 ### 使用箭头键在 "更改" 工具中滚动  
 
@@ -110,13 +110,13 @@ Chromium 问题 [#1050999][CR1050999]
 
 对缩小文件进行更改后，**"更改" 工具** 可用于水平滚动以查看所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，你可以使用箭头键水平滚动，在 "更改" 工具中查看你的缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
-   在 Microsoft Edge 83 中，你可以通过箭头键水平滚动，以在 "**更改" 工具**中查看你对 minified 代码所做的更改  
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/changes.msft.png":::
+   In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**  
 :::image-end:::  
 
-如果您使用屏幕阅读器或键盘在 DevTools 中导航，请通过 [发推至][PostTweetEdgeDevTools] 与我们联系或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标向我们发送您的反馈！  
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-Chromium 问题 [#963183][CR963183]  
+Chromium issue [#963183][CR963183]  
 
 ## 来自 Chromium 项目的公告  
 
@@ -126,11 +126,11 @@ Chromium 问题 [#963183][CR963183]
 
 打开["渲染" 选项卡][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] ，使用新的"**模拟视觉缺陷**" 功能，更好地了解有不同类型视觉缺陷的人们如何体验你的网站。  
 
-:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="模拟模糊的视觉效果" lightbox="../../media/2020/03/vision.msft.png":::
-   模拟模糊的视觉效果  
+:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/vision.msft.png":::
+   Emulating blurred vision  
 :::image-end:::  
 
-DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBlindnessTypes]。  
+DevTools is able to emulate blurred vision and the following [types of color vision deficiencies][ColorBlindnessTypes].  
 
 | 颜色视觉缺陷 | 详细信息 |  
 |:--- |:--- |  
@@ -144,9 +144,9 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。  
 
-通过 [发推至][PostTweetEdgeDevTools] 或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标发送您的反馈！  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-Chromium 问题 [#1003700][CR1003700]  
+Chromium issue [#1003700][CR1003700]  
 
 ### 模拟语言环境  
 
@@ -154,17 +154,17 @@ Chromium 问题 [#1003700][CR1003700]
 
 *   `Intl.*` 例如，API： `new Intl.NumberFormat().resolvedOptions().locale`  
 *   其他可识别语言环境的 JavaScript API，例如`String.prototype.localeCompare`和`*.prototype.toLocaleString`，例如： `123_456..toLocaleString()`  
-*   DOM API，如 `navigator.language` 和 `navigator.languages`  
-*   [接受语言][MDNAcceptLanguage]的 HTTP 请求标头  
+*   DOM APIs such as `navigator.language` and `navigator.languages`  
+*   The [Accept-Language][MDNAcceptLanguage] HTTP request header  
 
 > [!NOTE]
-> 对`navigator.language`和`navigator.languages`的更新不是立即可见的，只有在下一次导航或页面刷新后才可见。  只有后续请求才会反映对 `Accept-Language` HTTP 标头的更改。  
+> Updates to `navigator.language` and `navigator.languages` are not visible immediately, but only after the next navigation or page refresh.  只有后续请求才会反映对 `Accept-Language` HTTP 标头的更改。  
 
-:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="模拟区域设置" lightbox="../../media/2020/03/locale.msft.png":::
-   模拟区域设置  
+:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/locale.msft.png":::
+   Emulating a locale  
 :::image-end:::  
 
-若要尝试演示，请参阅[与区域设置相关的代码示例][MathiasByensLocaleDemo]。
+To try a demo, see [Locale-dependent code example][MathiasByensLocaleDemo].
 
 Chromium 问题 [#1051822][CR1051822]
 
@@ -174,33 +174,33 @@ Chromium 问题 [#1051822][CR1051822]
 
 “**状态**”列现在提供有关为何阻止请求的快速说明，以及查看该请求标头以进行进一步调试的链接：  
 
-:::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="**状态**列中的阻止请求" lightbox="../../media/2020/03/status.msft.png":::
-   " **状态** " 列中的被阻止的请求  
+:::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/status.msft.png":::
+   Blocked requests in the **Status** column  
 :::image-end:::  
 
-"**标头**" 选项卡上的 "**响应标头**" 部分提供了有关如何解决这些问题的更多指导：  
+The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="“响应标头”部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
-   " **响应标题** " 部分中的更多指导  
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/guidance.msft.png":::
+   More guidance in the **Response Headers** section  
 :::image-end:::  
 
-通过 [发推至][PostTweetEdgeDevTools] 或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标发送您的反馈！  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-Chromium 问题 [#1051466][CR1051466]  
+Chromium issue [#1051466][CR1051466]  
 
-### 用于断点、条件断点和 logpoints 的新图标  
+### New icons for breakpoints, conditional breakpoints, and logpoints  
 
-"源" 面板具有用于断点、条件断点和 logpoints 的新图标：  
+The Sources panel has new icons for breakpoints, conditional breakpoints, and logpoints:  
 
-*   断点 \ (![处](../../media/2020/03/breakpoint.msft.png)\ ) 用红色圆圈表示。  
-*   条件断点 \ (![条件断点](../../media/2020/03/conditional.msft.png)\ ) 由半红半白圆圈表示。  
-*   Logpoints \ (![Logpoint](../../media/2020/03/logpoint.msft.png)\ ) 由带有控制台图标的红色圆圈表示。  
+*   Breakpoints \(![Breakpoint](../../media/2020/03/breakpoint.msft.png)\) are represented by red circles.  
+*   Conditional Breakpoints \(![Conditional Breakpoint](../../media/2020/03/conditional.msft.png)\) are represented by half-red half-white circles.  
+*   Logpoints \(![Logpoint](../../media/2020/03/logpoint.msft.png)\) are represented by red circles with Console icons.  
 
-新图标的动机是使 UI 更适合使用其他 GUI 调试工具 \ (这种情况通常颜色为红 ) ，从而更轻松地在3个功能之间进行区分。  
+The motivation for the new icons was to make the UI more consistent with other GUI debugging tools \(which usually color breakpoints red\) and to make it easier to distinguish between the 3 features at a glance.  
 
-Chromium 问题 [#1041830][CR1041830]  
+Chromium issue [#1041830][CR1041830]  
 
-### 查看设置了特定 cookie 路径的网络请求  
+### View network requests that set a specific cookie path  
 
 在**网络**面板中使用新的`cookie-path`过滤关键字来关注设置了特定[ cookie 路径][MDNCookiePath]的网络请求。  
 
@@ -210,39 +210,39 @@ Chromium 问题 [#1041830][CR1041830]
 
 打开 ["命令菜单"][DevToolsCommandMenuIndex]，并运行" `Dock to left` "命令以将 DevTools 移到视线的左侧。  
 
-:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools 停靠在视线左侧" lightbox="../../media/2020/03/dock-to-left.msft.png":::
-   DevTools 停靠在视线左侧  
+:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/dock-to-left.msft.png":::
+   DevTools docked to the left of the viewport  
 :::image-end:::  
 
 > [!NOTE]
-> 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单][DevtoolsCustomizePlacementsChangeMainMenu]中进行访问。  Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。  
+> The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu][DevtoolsCustomizePlacementsChangeMainMenu].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.  
 
-通过 [发推至][PostTweetEdgeDevTools] 或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标发送您的反馈！  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-Chromium 问题 [#1011679][CR1011679]  
+Chromium issue [#1011679][CR1011679]  
 
 ### "审核" 面板现在是 "灯塔" 面板  
 
 DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 DevTools 运行[灯塔][GithubGoogleChromeLighthouse]，但在尝试运行时却找不到“灯塔”面板，因此**审核**面板现在是**灯塔**面板。  
 
-:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="灯塔面板" lightbox="../../media/2020/03/lighthouse.msft.png":::
-   灯塔面板  
+:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/lighthouse.msft.png":::
+   The Lighthouse panel  
 :::image-end:::  
 
 > [!NOTE]
-> **灯塔** 面板提供了指向第三方网站上托管内容的链接。  Microsoft 对这些网站及其可能收集的任何数据的内容不承担任何责任。  
+> The **Lighthouse** panel provides links to content hosted on third-party websites.  Microsoft 对这些网站及其可能收集的任何数据的内容不承担任何责任。  
 
 ### 删除文件夹中的所有本地覆盖  
 
 设置**本地覆盖**后可右键单击文件夹，然后选择新的 "**删除所有覆盖**" 选项以删除该文件夹中的所有本地覆盖。  
 
-:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
-   删除所有覆盖  
+:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/overrides.msft.png":::
+   Delete all overrides  
 :::image-end:::  
 
-通过 [发推至][PostTweetEdgeDevTools] 或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标发送您的反馈！  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-Chromium 问题 [#1016501][CR1016501]  
+Chromium issue [#1016501][CR1016501]  
 
 ### 更新的长任务 UI  
 
@@ -250,13 +250,13 @@ Chromium 问题 [#1016501][CR1016501]
 
 你已经能够[在“性能”面板中可视化长任务][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]了一段时间，但是在Microsoft Edge 83中，“性能”面板中的长任务可视化 UI 已更新。  现在，任务的长任务部分的颜色为带条纹红色背景。  
 
-:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="新的长任务 UI" lightbox="../../media/2020/03/long-task.msft.png":::
-   新的长任务 UI  
+:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/long-task.msft.png":::
+   The new Long Task UI  
 :::image-end:::  
 
-通过 [发推至][PostTweetEdgeDevTools] 或单击 " [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) " 图标发送您的反馈！  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
-Chromium 问题 [#1054447][CR1054447]  
+Chromium issue [#1054447][CR1054447]  
 
 ### "清单" 窗格中的可屏蔽图标支持  
 
@@ -266,62 +266,62 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="仅显示 "屏蔽图标的最小安全区域" 复选框" lightbox="../../media/2020/03/maskable-icons.msft.png":::
-   " **仅显示屏蔽图标的最小安全区域"** 复选框  
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+   The **Show only the minimum safe area for maskable icons** checkbox  
 :::image-end:::  
 
 > [!NOTE]
-> 此功能在 Microsoft Edge 81 中发布。  ["DevTools （Microsoft Edge 81）"][WhatsNew81]中的新增功能未涵盖 Microsoft Edge 83 中介绍的更新。  
+> This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].  
 
-## 下载 Microsoft Edge 预览频道  
+## Download the Microsoft Edge preview channels  
 
-如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
+如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  The preview channels give you access to the latest DevTools features.  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[WhatsNew81]: ../01/devtools.md "DevTools (Microsoft Edge 81) 中的新增功能 |Microsoft 文档"  
+[WhatsNew81]: ../01/devtools.md "What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
-[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "通过颜色选取器更改颜色 |Microsoft 文档"  
-[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "开始使用查看和更改 CSS |Microsoft 文档"  
-[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "从主菜单更改位置 |Microsoft 文档"  
-[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "查看主线程活动 |Microsoft 文档"  
-[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "通过 "渲染" 选项卡分析渲染性能 |Microsoft 文档"  
-[PprgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 上的渐进式 Web 应用 |Microsoft 文档"  
-[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "远程调试 Windows 10 设备入门 |Microsoft 文档"  
-[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "代码行断点-如何在 Microsoft Edge DevTools 中暂停代码和断点 |Microsoft 文档"
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "按属性筛选请求-网络分析参考 |Microsoft 文档"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置-自定义 Microsoft Edge DevTools |Microsoft 文档"  
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"  
+[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS | Microsoft Docs"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Change placement from the main menu | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "View main thread activity | Microsoft Docs"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab | Microsoft Docs"  
+[PprgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
+[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools  | Microsoft Docs"  
 
-[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows 设备门户概述"  
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"  
 
-[RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Microsoft Edge 适用的远程工具 (Beta)"  
+[RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools for Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
-[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "在适用于 Microsoft Edge 的稳定频道版本上更新"  
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Update on Stable channel releases for Microsoft Edge"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "新问题-MicrosoftDocs/edge-开发人员-GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"  
 
 [MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | 发布推文"  
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter 帐户"  
-[TheWebWeWant]: https://webwewant.fyi "我们想要的网络"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
+[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  
 
-[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "色盲类型"  
+[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Types of Colour Blindness"  
 
-[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "接受-语言 |MDN"  
-[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-Cookie |MDN"  
+[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language | MDN"  
+[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-Cookie | MDN"  
 
-[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "依赖于区域设置的代码示例"  
+[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Locale-dependent code example"  
 
 [CR963183]: https://crbug.com/963183 "问题 963183：DevTools 不符合 WCAG"  
 [CR1003700]: https://crbug.com/1003700 "问题 1003700：添加 DevTools 支持颜色视觉缺陷模拟"  
@@ -336,9 +336,9 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 [CR1056348]: https://crbug.com/1056348 "问题 1056348：信息栏组件刷新"
 
 [ COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn  "COOP 和 COEP 详解——跨域开放者策略"   
-[ COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2  "COOP 和 COEP 详解——跨域嵌入程序策略"   
+[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP and COEP explained - Cross-Origin Embedder Policy"  
 
-[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Lighthouse |GitHub"  
+[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Lighthouse | GitHub"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

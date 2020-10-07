@@ -1,12 +1,12 @@
 ---
-description: 打开 "传感器" 选项卡，然后转到 "方向" 部分。
-title: 通过 Microsoft Edge DevTools 模拟设备方向
+description: Open the Sensors tab and go to the Orientation section.
+title: Simulate Device Orientation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 42b58ef2d4b132eedad2663287894e25e72b2572
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,40 +28,40 @@ ms.locfileid: "10992930"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 通过 Microsoft Edge DevTools 模拟设备方向  
+# Simulate device orientation with Microsoft Edge DevTools  
 
-完成以下操作以模拟 Microsoft Edge DevTools 中的不同设备方向。  
+Complete the following actions to simulate different device orientations from Microsoft Edge DevTools.  
 
 <!--todo: update device orientation section when available -->  
 
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **命令菜单**  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       The **Command Menu**  
     :::image-end:::  
     
-1.  键入 `sensors` ，选择 " **显示传感器**"，然后按 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
-1.  从 " **方向** " 列表中，选择一个预设方向，例如 `Portrait upside down` ，或选择 " **自定义方向** " 以提供您自己的精确方向。  
+1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
+1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从 "方向" 列表中选择 "纵向倒置"" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             `Portrait upside down`从 "**方向**" 列表中选择  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             Select `Portrait upside down` from the **Orientation** list  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          选择 **自定义方向**后，""、"" 和 "" `alpha` 字段已 `beta` `gamma` 启用。  
+          After you select **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.  
           <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
-          您还可以通过拖动 **方向模型**来设置自定义方向。  按住 `Shift` ，然后拖动鼠标沿 `alpha` 轴旋转。  
+          You are also able to set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis.  
           
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="方向模型" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
-             **方向模型**  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+             The **Orientation Model**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

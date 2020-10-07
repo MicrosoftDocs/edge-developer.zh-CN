@@ -1,12 +1,12 @@
 ---
-description: 按帧、域、类型或其他条件组织资源。
-title: 通过 Microsoft Edge DevTools 查看页面资源
+description: Organize resources by frame, domain, type, or other criteria.
+title: View Page Resources With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 4f90927cc4044c722d9a62ab4b0427aa2753e4c5
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,129 +32,129 @@ ms.locfileid: "10993588"
 
 
 
-# 通过 Microsoft Edge DevTools 查看页面资源   
+# View page resources with Microsoft Edge DevTools   
 
   
 
-本指南将教你如何使用 Microsoft Edge DevTools 查看网页的资源。  资源是页面需要正确显示的文件。  资源示例包括 CSS、JavaScript 和 HTML 文件以及图像。  
+This guide teaches you how to use Microsoft Edge DevTools to view the resources of a web page.  Resources are the files that a page needs in order to display correctly.  Examples of resources include CSS, JavaScript, and HTML files, as well as images.  
 
-本指南假定你熟悉 [web 开发][MDNLearnWebDevelopment] 和 [Microsoft Edge DevTools][MicrosoftEdgeDevTools]的基础知识。  
+This guide assumes that you are familiar with the basics of [web development][MDNLearnWebDevelopment] and [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
-## 打开资源   
+## Open resources   
 
-当您知道要检查的资源的名称时，" **命令" 菜单** 将提供打开资源的快速方法。  
+When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.  
 
-1.  按 `Control` + `P` \ (Windows \ ) 或 `Command` + `P` \ (macOS \ ) 。  " **打开文件** " 对话框随即打开。  
+1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\).  The **Open File** dialog opens.  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text=""打开文件" 对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
-       " **打开文件** " 对话框  
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-command-menu-empty.msft.png":::
+       The **Open File** dialog  
     :::image-end:::  
     
-1.  从下拉列表中选择文件，或者开始键入文件名，然后按 `Enter` 一次 "自动完成" 框中突出显示正确的文件。  
+1.  Select the file from the dropdown, or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在 "打开文件" 对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
-       在 " **打开文件** " 对话框中键入文件名  
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-command-menu-file-search.msft.png":::
+       Type a filename in the **Open File** dialog  
     :::image-end:::  
     
-### 在 "网络" 面板中打开资源   
+### Open resources in the Network panel   
 
-请参阅 [检查资源的详细信息][DevtoolsNetworkInspectDetailsResource]。  
+See [Inspect the details of a resource][DevtoolsNetworkInspectDetailsResource].  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="在 "网络" 面板中检查资源" lightbox="../media/resources-network-response.msft.png":::
-   在 " **网络** " 面板中检查资源  
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-network-response.msft.png":::
+   Inspect a resource in the **Network** panel  
 :::image-end:::  
 
-### 从其他面板中的 "网络" 面板中显示资源   
+### Reveal resources in the Network panel from other panels   
 
-下面的 [浏览资源](#browse-resources) 部分介绍了如何从 DevTools UI 的各个部分查看资源。  如果您想要在 " **网络** " 面板中检查资源，请右键单击该资源，然后 **在 "网络" 面板中选择 "显示**"。  
+The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** panel, right-click the resource and select **Reveal in Network panel**.  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="在网络面板中显示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
-   **在网络面板中显示**  
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+   **Reveal in Network panel**  
 :::image-end:::  
 
-## 浏览资源   
+## Browse resources   
 
-### 浏览网络面板中的资源   
+### Browse resources in the Network panel   
 
-请参阅 [记录网络活动][DevtoolsNetworkLogActivity]。  
+See [Log network activity][DevtoolsNetworkLogActivity].  
 
-:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="网络日志中的页面资源" lightbox="../media/resources-network-resources.msft.png":::
-   **网络**日志中的页面资源  
+:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-network-resources.msft.png":::
+   Page resources in the **Network** Log  
 :::image-end:::  
 
-### 按目录浏览   
+### Browse by directory   
 
-若要查看按目录组织的页面资源，请执行以下操作：  
+To view the resources of a page organized by directory:  
 
-1.  单击 " **源** " 选项卡以打开 " **源** " 面板。  
-1.  单击 " **页面** " 选项卡以显示页面的资源。  **页面**窗格随即打开。  
+1.  Click the **Sources** tab to open the **Sources** panel.  
+1.  Click the **Page** tab to show the resources of the page.  The **Page** pane opens.  
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="页面窗格" lightbox="../media/resources-sources-page-empty.msft.png":::
-       **页面**窗格  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-empty.msft.png":::
+       The **Page** pane  
     :::image-end:::  
     
-    下面是上图中不明显的项目的细目。  
+    Here is a breakdown of the non-obvious items in the previous figure.  
     
-    | 页面项目 | 描述 |  
+    | Page item | Description |  
     |:--- |:--- |  
-    | `top` | 主文档 [浏览上下文][MDNInlineFrame]。 |  
-    | `airhorner.com` | 域。  嵌套在它下方的所有资源都来自该域。  例如，文件的完整 URL `comlink.global.j` 可能 `https://airhorner.com/scripts/comlink.global.js` 。 |  
-    | `scripts` | 目录。 |  
-    | `(index)` | 主 HTML 文档。 |  
-    | `sw.js` | 服务工作运行时上下文。 |  
+    | `top` | The main document [browsing context][MDNInlineFrame]. |  
+    | `airhorner.com` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.j` file is probably `https://airhorner.com/scripts/comlink.global.js`. |  
+    | `scripts` | A directory. |  
+    | `(index)` | The main HTML document. |  
+    | `sw.js` | A service worker runtime context. |  
     
-1.  单击某个资源以在 **编辑器**中查看它。  
+1.  Click a resource to view it in the **Editor**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="在编辑器中查看文件" lightbox="../media/resources-sources-page-resource.msft.png":::
-       在**编辑器**中查看文件  
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-resource.msft.png":::
+       View a file in the **Editor**  
     :::image-end:::  
     
-### 按文件名浏览   
+### Browse by filename   
 
-默认情况下， **页面** 窗格按目录对资源进行分组。  若要禁用此分组并以简单列表的形式查看每个域的资源，请执行以下操作：  
+By default the **Page** pane groups resources by directory.  To disable this grouping and view the resources for each domain as a flat list:  
 
-1.  打开 **页面** 窗格。  请参阅 [按目录浏览](#browse-by-directory)。  
-1.  单击 " **更多选项**" `...` ，然后禁用 " **按文件夹分组**"。  
+1.  Open the **Page** pane.  See [Browse by directory](#browse-by-directory).  
+1.  Click **More Options** `...` and disable **Group By Folder**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text=""按文件夹分组" 选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
-       " **按文件夹分组** " 选项  
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+       The **Group By Folder** option  
     :::image-end:::  
     
-    按文件类型对资源进行组织。  在每个文件类型中，资源按字母顺序排列。  
+    Resources are organized by file type.  Within each file type the resources are organized alphabetically.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="禁用 "按文件夹分组" 后的页面窗格" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       禁用 "**按文件夹分组**" 后的**页面**窗格  
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       The **Page** pane after disabling **Group By Folder**  
     :::image-end:::  
     
-### 按文件类型浏览   
+### Browse by file type   
 
-根据文件类型将资源组合在一起：  
+To group resources together based on their file type:  
 
-1.  单击 " **应用程序** " 选项卡。 将打开 " **应用程序** " 面板。  默认情况下， **清单** 窗格通常首先打开。  
+1.  Click the **Application** tab.  The **Application** panel opens.  By default the **Manifest** pane usually opens first.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="应用程序面板" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
-       **应用程序**面板  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+       The **Application** panel  
     :::image-end:::  
     
-1.  向下滚动到 " **框架** " 窗格。  
+1.  Scroll down to the **Frames** pane.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text=""框架" 窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
-       " **框架** " 窗格  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+       The **Frames** pane  
     :::image-end:::  
     
-1.  展开感兴趣的分区。  
-1.  单击资源进行查看。  
+1.  Expand the sections in which you are interested.  
+1.  Click a resource to view it.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在 "应用程序" 面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
-       在 " **应用程序** " 面板中查看资源  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+       View a resource in the **Application** panel  
     :::image-end:::  
     
-#### 通过 "网络" 面板中的类型浏览文件   
+#### Browse files by type in the Network panel   
 
-请参阅 [按资源类型筛选][DevtoolsNetworkFilterByResourceType]。  
+See [Filter by resource type][DevtoolsNetworkFilterByResourceType].  
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="在网络日志中筛选 CSS" lightbox="../media/resources-network-resources-filter-css.msft.png":::
-   在 **网络** 日志中筛选 CSS  
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+   Filter for CSS in the **Network** Log  
 :::image-end:::  
 
 <!--  
@@ -165,13 +165,13 @@ ms.locfileid: "10993588"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选-检查 Microsoft Edge DevTools 中的网络活动 |Microsoft 文档"  
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "检查 Microsoft Edge DevTools | 中的资源检查网络活动的详细信息 |Microsoft 文档"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "记录网络活动-在 Microsoft Edge DevTools 中检查网络活动 |Microsoft 文档"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filter by resource type - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Log network activity - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 
-[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>：嵌入式框架元素 |MDN"  
-[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "了解 web 开发 |MDN"  
+[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: The Inline Frame element | MDN"  
+[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Learn web development | MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

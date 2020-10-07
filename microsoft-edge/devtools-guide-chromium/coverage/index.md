@@ -1,12 +1,12 @@
 ---
-description: 如何在 Microsoft Edge DevTools 中查找和分析未使用的 JavaScript 和 CSS 代码。
-title: 使用 Microsoft Edge DevTools 中的 "覆盖范围" 选项卡查找未使用的 JavaScript 和 CSS 代码
+description: How to find and analyze unused JavaScript and CSS code in Microsoft Edge DevTools.
+title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 19bc15578e00e5a9f3389529f589e9790280a0e4
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,22 +32,22 @@ ms.locfileid: "10993091"
 
 
 
-# 使用 Microsoft Edge DevTools 中的 "覆盖范围" 选项卡查找未使用的 JavaScript 和 CSS 代码   
+# Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools   
 
 
 
-Microsoft Edge DevTools 中的 "覆盖范围" 选项卡可帮助你查找未使用的 JavaScript 和 CSS 代码。  删除未使用的代码可能会加速你的页面加载和保存移动用户手机网络数据。  
+The Coverage tab in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="分析代码覆盖率" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
-   分析代码覆盖率  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   Analyzing code coverage  
 :::image-end:::  
 
 > [!WARNING]
-> 查找未使用的代码相对简单。  但要重构基本代码，以便每个页面仅提供它所需的 JavaScript 和 CSS。  本指南不介绍如何重构基本代码以避免未使用的代码，因为这些 refactors 高度依赖于你的技术堆栈。  
+> Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.  This guide does not cover how to refactor a codebase to avoid unused code because these refactors depend highly on your technology stack.  
 
-## 概述   
+## Overview   
 
-装运未使用的 JavaScript 或 CSS 是 web 开发中的常见问题。  例如，假设您想要在您的页面上使用 " [引导" 按钮组件][BootstrapButtons] 。  若要使用按钮组件，需要在 HTML 中添加指向引导样式表的链接，如下所示：  
+Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use [Bootstrap button component][BootstrapButtons] on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:  
 
 ```html
 ...
@@ -59,42 +59,42 @@ Microsoft Edge DevTools 中的 "覆盖范围" 选项卡可帮助你查找未使�
 ...
 ```  
 
-此样式表不仅仅包含按钮组件的代码。  它包含 **所有** 引导组件的 CSS。  但您没有使用任何其他的引导组件。  因此，你的页面将下载一组不需要的 CSS。  此额外的 CSS 是一个问题，原因如下。  
+This stylesheet does not just include the code for the button component.  It contains the CSS for **all** of the Bootstrap components.  But you are not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it does not need.  This extra CSS is a problem for the following reasons.  
 
-*   额外的代码将减慢页面负载。  <!--See [Render-Blocking CSS][render].  -->  
-*   如果用户在移动设备上访问页面，则额外的代码将使用其手机网络数据。  
+*   The extra code slows down your page load.  <!--See [Render-Blocking CSS][render].  -->  
+*   If a user accesses the page on a mobile device, the extra code uses up their cellular data.  
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## 打开 "覆盖范围" 选项卡   
+## Open the Coverage tab   
 
-1.  [打开 "命令" 菜单][DevToolsCommandMenu]。  
-1.  开始键入 `coverage` ，选择 " **显示覆盖率** " 命令，然后按 `Enter` 运行命令。  " **覆盖范围** " 选项卡将在 **抽屉**中打开。  
+1.  [Open the Command Menu][DevToolsCommandMenu].  
+1.  Start typing `coverage`, select the **Show Coverage** command, and then press `Enter` to run the command.  The **Coverage** tab opens in the **Drawer**.  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text=""覆盖范围" 选项卡" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       " **覆盖范围** " 选项卡  
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Analyzing code coverage" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       The **Coverage** tab  
     :::image-end:::  
     
-## 记录代码覆盖率   
+## Record code coverage   
 
-1.  单击 " **覆盖范围** " 选项卡中的以下按钮之一：  
-    *   如果想要查看加载页面需要哪些代码，请单击 " **开始检测覆盖率" 并重新加载 page** \ (" ![ 开始检测覆盖率" 和 "重新加载页面 ][ImageReloadIcon] \ ) "。  
-    *   **Instrument Coverage** ![ ][ImageRecordIcon] 如果想要查看在与页面交互之后使用的代码，请单击 "检测覆盖率" (检测覆盖率 ") 。  
-1.  如果要停止记录代码覆盖率，请单击 " **停止检测覆盖率" 并显示结果** \ (![ 停止检测覆盖率和显示结果 ][ImageStopIcon] \ ) 。  
+1.  Click one of the following buttons in the **Coverage** tab:  
+    *   Click **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page][ImageReloadIcon]\) if you want to see what code is needed to load the page.  
+    *   Click **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to see what code is used after interacting with the page.  
+1.  Click **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results][ImageStopIcon]\) when you want to stop recording code coverage.  
     
-## 分析代码覆盖率   
+## Analyze code coverage   
 
-" **覆盖率** " 选项卡中的表显示分析了哪些资源，以及每个资源中使用了多少代码。  单击某一行以在 " **源** " 面板中打开该资源，并查看所使用的代码和未使用的代码的逐行划分。  
+The table in the **Coverage** tab shows you what resources were analyzed, and how much code is used within each resource.  Click a row to open that resource in the **Sources** panel and see a line-by-line breakdown of used code and unused code.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text=""代码覆盖率" 报表" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
-   "代码覆盖率" 报表  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Analyzing code coverage" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   A code coverage report  
 :::image-end:::  
 
-*   **Url**列是已分析资源的 url。  
-*   " **类型** " 列显示资源是否包含 CSS 和/或 JavaScript。  
-*   " **字节总数** " 列是资源的总大小（以字节为单位）。  
-*   " **未使用的字节** " 列表示未使用的字节数。  
-*   最后一个未命名的列是 " **字节总数** " 和 " **未使用的字节** " 列的可视化。  条的红色部分是未使用的字节。  绿色部分使用字节。  
+*   The **URL** column is the URL of the resource that was analyzed.  
+*   The **Type** column says whether the resource contains CSS, JavaScript, or both.  
+*   The **Total Bytes** column is the total size of the resource in bytes.  
+*   The **Unused Bytes** column is the number of bytes that were not used.  
+*   The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes.  
     
 <!--  
  
@@ -110,9 +110,9 @@ Microsoft Edge DevTools 中的 "覆盖范围" 选项卡可帮助你查找未使�
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 
-[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "按钮-引导"  
+[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Buttons - Bootstrap"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

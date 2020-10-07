@@ -1,12 +1,12 @@
 ---
-description: 使用控制台 API 将消息写入到控制台。
-title: 控制台 API 参考
+description: Use the Console API to write messages to the Console.
+title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,23 +28,23 @@ ms.locfileid: "10993252"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 控制台 API 参考  
+# Console API Reference  
 
-使用控制台 API 方法将消息从 JavaScript 写入控制台。  有关主题的交互式介绍，请参阅将 [消息记录到控制台的入门][DevtoolsConsoleLog]。  对于 `debug()` `monitorEvents()` 仅在 " **控制台** " 窗格中可用的便利方法，请参阅 [控制台实用工具 API 参考][DevtoolConsoleUtilities]。  
+Use the Console API methods to write messages to the Console from your JavaScript.  For an interactive introduction to the topic, see [Get Started With Logging Messages To The Console][DevtoolsConsoleLog].  For the convenience methods like `debug()` or `monitorEvents()` which are only available from the **Console** pane, see [Console Utilities API Reference][DevtoolConsoleUtilities].  
 
 ---  
 
-## 声明  
+## assert  
 
 ```javascript
 console.assert(expression, object)
 ```
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Error`  
+[Log level][DevtoolsConsoleReferencePersist]: `Error`  
 
 <!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
 
-当计算结果为时，将 [错误](#error) 写入控制台 `expression` `false` 。  
+Writes an [error](#error) to the console when `expression` evaluates to `false`.  
 
 ```javascript
 const x = 5;
@@ -53,41 +53,41 @@ const reason = 'x is expected to be less than y';
 console.assert(x < y, {x, y, reason});
 ```  
 
-:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="控制台的结果。 assert ( # A1 示例" lightbox="../media/console-demo-assert-button.msft.png":::
-   图1：示例的结果 `console.assert()`  
+:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-assert-button.msft.png":::
+   Figure 1:  The result of the `console.assert()` example  
 :::image-end:::  
 
 ---  
 
-## 消除  
+## clear  
 
 ```javascript
 console.clear()
 ```
 
-清除控制台。  
+Clears the console.  
 
 ```javascript
 console.clear();  
 ```  
 
-如果 " [保留日志][DevtoolsConsoleReferenceLevel] " 已启用， [clear](#clear) 方法将被禁用。  
+If [Preserve Log][DevtoolsConsoleReferenceLevel] is enabled, the [clear](#clear) method is disabled.  
 
-### 另请参阅  
+### See also  
 
-*   [清除控制台][DevtoolsConsoleReferenceClear]  
+*   [Clear the Console][DevtoolsConsoleReferenceClear]  
 
 ---  
 
-## 盘点  
+## count  
 
 ```javascript
 console.count([label])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-写入在同一行和同一行调用 [count](#count) 方法的次数 `label` 。  使用 [countReset](#countreset) 方法重置计数。  
+Writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.  
 
 ```javascript
 console.count();
@@ -96,8 +96,8 @@ console.count();
 console.count();
 ```  
 
-:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="Console 的结果。 count ( # A1 示例" lightbox="../media/console-demo-count-button.msft.png":::
-   图2：示例的结果 `console.count()`  
+:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-count-button.msft.png":::
+   Figure 2:  The result of the `console.count()` example  
 :::image-end:::  
 
 ---  
@@ -108,7 +108,7 @@ console.count();
 console.countReset([label])
 ```  
 
-重置计数。  
+Resets a count.  
 
 ```javascript
 console.countReset();
@@ -117,22 +117,22 @@ console.countReset('coffee');
 
 ---  
 
-## 调试  
+## debug  
 
 ```javascript
 console.debug(object [, object, ...])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Verbose`
+[Log level][DevtoolsConsoleReferencePersist]: `Verbose`
 
-除了不同日志级别的 [日志](#log) 一样。  
+Identical to [log](#log) except different log level.  
 
 ```javascript
 console.debug('debug');  
 ```  
 
-:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="控制台的结果。 debug ( # A1 示例" lightbox="../media/console-demo-debug-button.msft.png":::
-   图3：示例的结果 `console.debug()`  
+:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-debug-button.msft.png":::
+   Figure 3:  The result of the `console.debug()` example  
 :::image-end:::  
 
 ---  
@@ -143,16 +143,16 @@ console.debug('debug');
 console.dir(object)
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-打印指定对象的 JSON 表示形式。  
+Prints a JSON representation of the specified object.  
 
 ```javascript
 console.dir(document.head);
 ```  
 
-:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="Console 的结果 ( # A1 示例" lightbox="../media/console-demo-dir-button.msft.png":::
-   图4：示例的结果 `console.dir()`  
+:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-dir-button.msft.png":::
+   Figure 4:  The result of the `console.dir()` example  
 :::image-end:::  
 
 ---  
@@ -163,47 +163,47 @@ console.dir(document.head);
 console.dirxml(node)
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-打印的子代的 XML 表示形式 `node` 。  
+Prints an XML representation of the descendants of `node`.  
 
 ```javascript
 console.dirxml(document);
 ```  
 
-:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="Dirxml 的结果 ( # A1 示例" lightbox="../media/console-demo-dirxml-button.msft.png":::
-   图5：示例的结果 `console.dirxml()`  
+:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-dirxml-button.msft.png":::
+   Figure 5:  The result of the `console.dirxml()` example  
 :::image-end:::  
 
 ---  
 
-## 错误  
+## error  
 
 ```javascript
 console.error(object [, object, ...])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Error`  
+[Log level][DevtoolsConsoleReferencePersist]: `Error`  
 
-`object`将文件打印到控制台，将其格式设置为错误，并包含堆栈跟踪。  
+Prints the `object` to the Console, formats it as an error, and includes a stack trace.  
 
 ```javascript
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```  
 
-:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="控制台的结果。错误 ( # A1 示例" lightbox="../media/console-demo-error-button.msft.png":::
-   图6：示例的结果 `console.error()`  
+:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-error-button.msft.png":::
+   Figure 6:  The result of the `console.error()` example  
 :::image-end:::  
 
 ---  
 
-## 组  
+## group  
 
 ```javascript
 console.group(label)
 ```  
 
-在使用 [groupEnd](#groupend) 方法之前，直观地将邮件分组到一起。  使用 [groupCollapsed](#groupcollapsed) 方法可在初始记录到控制台时折叠组。  
+Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it is initially logged to the Console.  
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -215,8 +215,8 @@ console.info('Raph');
 console.groupEnd(label);
 ```  
 
-:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="控制台的结果。组 ( # A1 示例" lightbox="../media/console-demo-group-button.msft.png":::
-   图7：示例的结果 `console.group()`  
+:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-group-button.msft.png":::
+   Figure 7:  The result of the `console.group()` example  
 :::image-end:::  
 
 ---  
@@ -227,7 +227,7 @@ console.groupEnd(label);
 console.groupCollapsed(label)
 ```  
 
-除了在将组记录到控制台时，组初始折叠外，还与 [log](#log) 方法相同。  
+Same as the [log](#log) method, except the group is initially collapsed when it is logged to the Console.  
 
 ---  
 
@@ -237,59 +237,59 @@ console.groupCollapsed(label)
 console.groupEnd(label)
 ```  
 
-停止直观地对邮件进行分组。  请参阅 [群组](#group) 方法。  
+Stops visually grouping messages.  See the [group](#group) method.  
 
 ---  
 
-## “信息”  
+## info  
 
 ```javascript
 console.info(object [, object, ...])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-与 [log](#log) 方法相同。  
+Identical to the [log](#log) method.  
 
 ```javascript
 console.info('info');
 ```  
 
-:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="Console.info 的结果 ( # A1 示例" lightbox="../media/console-demo-info-button.msft.png":::
-   图8：示例的结果 `console.info()`  
+:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-info-button.msft.png":::
+   Figure 8:  The result of the `console.info()` example  
 :::image-end:::  
 
 ---  
 
-## 日志  
+## log  
 
 ```javascript
 console.log(object [, object, ...])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-将消息打印到控制台。  
+Prints a message to the Console.  
 
 ```javascript
 console.log('log');
 ```  
 
-:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="Console 的结果 ( # A1 示例" lightbox="../media/console-demo-log-button.msft.png":::
-   图9：示例的结果 `console.log()`  
+:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-log-button.msft.png":::
+   Figure 9:  The result of the `console.log()` example  
 :::image-end:::  
 
 ---  
 
-## 表  
+## table  
 
 ```javascript
 console.table(array)
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-将对象数组作为表进行记录。  
+Logs an array of objects as a table.  
 
 ```javascript
 console.table([
@@ -309,8 +309,8 @@ console.table([
 ]);
 ```  
 
-:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="该控制台的结果。表格 ( # A1 示例" lightbox="../media/console-demo-table-button.msft.png":::
-   图10：示例的结果 `console.table()`  
+:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-table-button.msft.png":::
+   Figure 10:  The result of the `console.table()` example  
 :::image-end:::  
 
 ---  
@@ -321,7 +321,7 @@ console.table([
 console.time([label])
 ```  
 
-启动新的计时器。  使用 [timeEnd](#timeend) 方法停止计时器并将经过的时间打印到控制台。  
+Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the Console.  
 
 ```javascript
 console.time();
@@ -331,8 +331,8 @@ for (var i = 0; i < 100000; i++) {
 console.timeEnd();
 ```  
 
-:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="控制台的结果。时间 ( # A1 示例" lightbox="../media/console-demo-time-button.msft.png":::
-   图11：示例的结果 `console.time()`  
+:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-time-button.msft.png":::
+   Figure 11:  The result of the `console.time()` example  
 :::image-end:::  
 
 ---  
@@ -343,21 +343,21 @@ console.timeEnd();
 console.timeEnd([label])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-停止计时器。  请参阅 [time](#time) 方法。  
+Stops a timer.  See the [time](#time) method.  
 
 ---  
 
-## 轨迹  
+## trace  
 
 ```javascript
 console.trace()
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-将堆栈跟踪打印到控制台。  
+Prints a stack trace to the Console.  
 
 ```javascript
 const first = () => { second(); };
@@ -367,39 +367,39 @@ const fourth = () => { console.trace(); };
 first();
 ```  
 
-:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="控制台的结果。跟踪 ( # A1 示例" lightbox="../media/console-demo-trace-button.msft.png":::
-   图12：示例的结果 `console.trace()`  
+:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-trace-button.msft.png":::
+   Figure 12:  The result of the `console.trace()` example  
 :::image-end:::  
 
 ---  
 
-## 出  
+## warn  
 
 ```javascript
 console.warn(object [, object, ...])
 ```  
 
-[日志级别][DevtoolsConsoleReferencePersist]： `Warning`  
+[Log level][DevtoolsConsoleReferencePersist]: `Warning`  
 
-将警告打印到控制台。  
+Prints a warning to the Console.  
 
 ```javascript
 console.warn('warn');
 ```  
 
-:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="控制台的结果。警告 ( # A1 示例" lightbox="../media/console-demo-warn-button.msft.png":::
-   图13：示例的结果 `console.warn()`  
+:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-warn-button.msft.png":::
+   Figure 13:  The result of the `console.warn()` example  
 :::image-end:::  
 
 <!-- links -->  
 
-[DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "在控制台中记录消息入门"  
-[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "控制台实用工具 API 参考"  
-[DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "清除控制台参考"  
-[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "跨页面加载保留消息-控制台参考"  
-[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "按日志级别筛选-控制台参考"  
+[DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
+[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API Reference"  
+[DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "Clear the Console - Console Reference"  
+[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
+[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filter by log level - Console Reference"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

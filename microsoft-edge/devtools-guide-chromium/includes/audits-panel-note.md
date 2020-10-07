@@ -12,7 +12,7 @@ ms.lasthandoff: 09/02/2020
 ms.locfileid: "10993435"
 ---
 > [!NOTE]
-> " **审核** " 面板提供了指向第三方网站上托管的内容的链接。  Microsoft 不承担任何责任，也不能控制这些网站的内容和他们可能收集的任何数据。  
+> The **Audits** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data they might collect.  
 > 
 
 <!-- image links -->  

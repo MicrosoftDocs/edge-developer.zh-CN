@@ -1,12 +1,12 @@
 ---
-description: 打开 "命令" 菜单并运行 "禁用 JavaScript" 命令。
-title: 通过 Microsoft Edge DevTools 禁用 JavaScript
+description: Open the Command Menu and run the "Disable JavaScript" command.
+title: Disable JavaScript With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: de756e04c91768c49eed50debce97ae91fdaa3bd
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,45 +28,45 @@ ms.locfileid: "10992797"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 通过 Microsoft Edge DevTools 禁用 JavaScript  
+# Disable JavaScript With Microsoft Edge DevTools  
 
-完成以下操作可查看禁用 JavaScript 时网页的外观和行为。  
+Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.  
 
-1.  [打开 Microsoft Edge DevTools][DevToolsOpen]。  
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  [Open Microsoft Edge DevTools][DevToolsOpen].  
+1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command.msft.png":::
-       **命令菜单**  
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command.msft.png":::
+       The **Command Menu**  
     :::image-end:::  
     
-1.  开始键入 `javascript` ，选择 " **禁用 JavaScript**"，然后按 `Enter` 运行命令。  JavaScript 现在已被禁用。  
+1.  Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在 "命令" 菜单中选择 "禁用 JavaScript"" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       在 "**命令" 菜单**中选择 "**禁用 JavaScript** "  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       Select **Disable JavaScript** in the **Command Menu**  
     :::image-end:::  
     
-    " **来源** " 旁边的黄色警告图标会提醒你已禁用 JavaScript。  
+    The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text=""源" 旁边的 "警告" 图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       "**源**" 旁边的 "警告" 图标  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       The warning icon next to **Sources**  
     :::image-end:::  
     
-只要已打开 DevTools，JavaScript 就会在选项卡中保持禁用状态。  
+JavaScript remains disabled in the tab for as long as you have DevTools open.  
 
-你可能需要重新加载页面以查看页面是否以及页面在加载时是否依赖 JavaScript。  
+You may want to reload the page to see if and how the page depends on JavaScript while loading.  
 
-若要重新启用 JavaScript，请完成以下操作。  
+To re-enable JavaScript, complete the following actions.  
 
-*   再次打开 " **命令" 菜单** 并运行 `Enable JavaScript` 命令。  
-*   关闭 DevTools。  
+*   Open the **Command Menu** again and run the `Enable JavaScript` command.  
+*   Close DevTools.  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
+[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

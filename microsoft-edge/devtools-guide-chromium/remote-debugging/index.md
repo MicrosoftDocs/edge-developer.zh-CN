@@ -1,12 +1,12 @@
 ---
-description: Android 设备上从 Windows 或 macOS 计算机远程调试实时内容。
-title: 远程调试 Android 设备入门
+description: Remote debug live content on an Android device from a Windows or macOS computer.
+title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: f1ed7c698f588bb4e438d1b85a0cd0d1aba42647
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,13 +28,13 @@ ms.locfileid: "10993497"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# 远程调试 Android 设备入门  
+# Get started with remote debugging Android devices  
 
-在 Android 设备上从 Windows 或 macOS 计算机远程调试实时内容。  以下教程页面教你如何完成以下操作。  
+Remote debug live content on an Android device from your Windows or macOS computer.  The following tutorial page teaches you how to complete the following actions.  
 
-*   设置 Android 设备以进行远程调试，并从开发计算机中发现它。  
-*   从开发计算机检查和调试 Android 设备上的实时内容。  
-*   将 Android 设备中的内容说明截屏视频到开发计算机上的 DevTools 实例。  
+*   Set up your Android device for remote debugging, and discover it from your development machine.  
+*   Inspect and debug live content on your Android device from your development machine.  
+*   Screencast content from your Android device onto a DevTools instance on your development machine.  
 
 <!--  
 :::image type="complex" source="../media/remote-debugging--remote-debugging.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--remote-debugging.msft.png":::
@@ -43,111 +43,111 @@ ms.locfileid: "10993497"
 -->  
 
 > [!NOTE]
-> 远程调试目前不支持 iOS 设备上的 Microsoft Edge 应用。  以下指南专门针对 Android 设备上的远程调试 Microsoft Edge。
-> 如果你有 macOS 设备，请按照 [Brightcove 调试指南][BrightcoveSupportDebuggingMobileDevices] 操作，以使用 Safari 在 iOS 设备上远程调试 Microsoft Edge。  有关 Safari 中的 Web 检查器工具的详细信息，请参阅 [Safari Web 开发工具][AppleDeveloperSafariTools]。  
+> Remote debugging the Microsoft Edge app on iOS devices is not currently supported.  The following guide is specifically focused on remote debugging Microsoft Edge on Android devices.
+> If you have a macOS device, follow the [Brightcove Debugging guide][BrightcoveSupportDebuggingMobileDevices] to remotely debug Microsoft Edge on an iOS device using Safari.  For more information about the Web Inspector tool in Safari, see [Safari Web Development Tools][AppleDeveloperSafariTools].  
 
-## 步骤1：发现 Android 设备  
+## Step 1: Discover your Android device  
 
-下面的工作流适用于大多数用户。  有关更多帮助，请参阅 [疑难解答： DevTools 未检测到 Android 设备](#troubleshooting-devtools-is-not-detecting-the-android-device) 部分。  
+The workflow below works for most users.  For more help, see the [Troubleshooting: DevTools is not detecting the Android device](#troubleshooting-devtools-is-not-detecting-the-android-device) section.  
 
-1.  打开 Android 上的 " **开发工具选项** " 屏幕。  有关详细信息，请参阅 [配置设备上的开发人员选项][AndroidDeveloperStudioDevOptions]。  
-1.  选择 " **启用 USB 调试**"。  
-1.  在开发计算机上，打开 "Microsoft Edge"。  
-1.  导航到 `edge://inspect` Microsoft Edge 中的页面。  
+1.  Open the **Developer Options** screen on your Android.  For more information, see [Configure On-Device Developer Options][AndroidDeveloperStudioDevOptions].  
+1.  Select **Enable USB Debugging**.  
+1.  On your development machine, open Microsoft Edge.  
+1.  Navigate to the `edge://inspect` page in Microsoft Edge.  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Microsoft Edge 中的 edge://inspect 页面" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
-       图 1.  `edge://inspect`Microsoft Edge 中的页面  
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
+       Figure 1.  The `edge://inspect` page in Microsoft Edge  
     :::image-end:::  
     
-1.  使用 USB 电缆将 Android 设备直接连接到开发计算机。  第一次尝试连接时，通常会看到有关检测未知设备的 DevTools 的提示。  接受 Android 设备上的 " **允许 USB 调试** " 权限提示。  
+1.  Connect your Android device directly to your development machine using a USB cable.  The first time you try to connect, you usually see prompt about DevTools detecting an unknown device.  Accept the **Allow USB Debugging** permission prompt on your Android device.  
     
-    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Android 设备上的 "允许 USB 调试" 权限提示" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
-       图 2.  Android 设备上的 " **允许 USB 调试** " 权限提示  
+    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+       Figure 2.  The **Allow USB Debugging** permission prompt on an Android device  
     :::image-end:::  
     
-1.  如果你看到 Android 设备的模型名称，则 Microsoft Edge 已成功建立与你的设备的连接。  转到 " [步骤 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) " 部分。  
+1.  If you see the model name of your Android device, then Microsoft Edge has successfully established the connection to your device.  Continue to the [Step 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) section.  
     
     <!--  
-    :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
+    :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--unknown-device.msft.png":::
        old Figure 4.  The **Remote Devices** tab has successfully detected an unknown device that is pending authorization  
     :::image-end:::
     -->  
     
-### 疑难解答： DevTools 未检测到 Android 设备  
+### Troubleshooting: DevTools is not detecting the Android device  
 
-使用以下提示来帮助你解决硬件的正确设置。  
+Use the following tips to help you troubleshoot the correct settings for your hardware.  
 
-*   如果您使用的是 USB 集线器，请尝试将 Android 设备直接连接到开发计算机。  
-*   尝试在 Android 设备和开发计算机之间拔出 USB 电缆，然后重新插入 USB 电缆。  在 Android 和开发计算机屏幕解除锁定时完成任务。  
-*   请确保您的 USB 电缆正常工作。  你应该能够从开发计算机检查 Android 设备上的文件。  
+*   If you are using a USB hub, try connecting your Android device directly to your development machine.  
+*   Try unplugging the USB cable between your Android device and development machine, and then re-plugging your USB cable.  Complete the task while your Android and development machine screens are unlocked.  
+*   Make sure that your USB cable works.  You should be able to inspect files on your Android device from your development machine.  
 
-使用以下提示来帮助验证软件是否设置正确。  
+Use the following tips to help you verify that your software is set up correctly.  
 
-*   如果开发计算机运行的是 Windows，请尝试手动安装 Android 设备的 USB 驱动程序。  有关详细信息，请参阅 [安装 OEM USB 驱动程序][AndroidDeveloperToolsOemUsb]。  
-*   某些 Windows 和 Android 设备的组合 \ (特别是 Samsung \ ) 需要其他设置。  有关详细信息，请参阅 [DevTools 设备在接通电源时不检测设备][Stackoverflow21925992]。  
+*   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, see [Install OEM USB Drivers][AndroidDeveloperToolsOemUsb].  
+*   Some combinations of Windows and Android devices \(especially Samsung\) require additional settings.  For more information, see [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].  
 
-使用以下提示可帮助你解决在 Android 设备上不能看到 " **允许 USB 调试** " 提示。  
+Use the following tips to help you troubleshoot not seeing the **Allow USB Debugging** prompt on your Android device.  
 
-*   断开连接并重新连接 USB 电缆的同时，DevTools 将集中在开发计算机上，并且显示 Android 主屏幕。  
+*   Disconnecting and then re-connecting the USB cable while DevTools is in focus on your development machine and your Android homescreen is showing.  
     
     > [!NOTE]
-    > 如果您的 Android 或开发计算机屏幕被锁定，您可能看不到提示。  
+    > You may not see the prompt if your Android or development machine screens are locked.  
 
-*   更新 Android 设备和开发计算机的显示设置，以便每个设备都不会进入睡眠状态。  
-*   将 Android 的 USB 模式设置为 PTP。  有关详细信息，请参阅 [Galaxy S4 不显示 "授权 USB 调试" 对话框][StackexchangeAndroid101933]。  
-*   从 Android 设备上的 "**开发工具选项**" 屏幕中选择 "**撤消 USB 调试授权**"，将其重置为新状态。  
+*   Updating the display settings for your Android device and development machine so that each never goes to sleep.  
+*   Setting the USB mode for Android to PTP.  For more information, see [Galaxy S4 does not show Authorize USB debugging dialog box][StackexchangeAndroid101933].  
+*   Select **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.  
 
-如果您发现此页面或 DevTools 设备上未提及的解决方案在堆栈溢出 [时未检测到设备][Stackoverflow21925992] ，请将您的解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in][Stackoverflow21925992] on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
 
-## 步骤2：从开发计算机调试 Android 设备上的内容  
+## Step 2: Debug content on your Android device from your development machine  
 
-1.  在 Android 设备上打开 Microsoft Edge。  
-1.  在 `edge://inspect` 页面中，你将看到 Android 设备的型号名称，后跟设备序列号。  在此下方，你应该看到在设备上运行的 Microsoft Edge 版本，其中版本号位于括号中。  每个打开的 Microsoft Edge 选项卡都将获取一个唯一的分区。  你可以从分区与该选项卡进行交互。  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
+1.  Open Microsoft Edge on your Android device.  
+1.  From the `edge://inspect` page, you see the model name of your Android device, followed by the device serial number.  Below that, you should see the version of Microsoft Edge running on the device, with the version number in parentheses.  Each open Microsoft Edge tab gets a unique section.  You may interact with that tab from a section.  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="已连接的远程设备" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
-       图 3.  已连接的远程设备  
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
+       Figure 3.  A connected remote device  
     :::image-end:::  
     
-1.  在 " **打开包含 url 的选项卡** " 框中，输入 url，然后选择 " **打开**"。  页面将在 Android 设备上的新选项卡中打开。  
-1.  选择您刚刚打开的 URL 旁边的 " **检查** "。  将打开一个新的 DevTools 实例。  
+1.  In the **Open tab with url** text box, enter a URL and then select **Open**.  The page opens in a new tab on your Android device.  
+1.  Select **inspect** next to the URL that you just opened.  A new DevTools instance opens.  
 
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### 更多操作：焦点、重新加载或关闭选项卡  
+### More actions: focus, reload, or close a tab  
 
-选择要关注、重新加载或关闭的选项卡旁边的 " **焦点" 选项卡**、" **重新加载**" 或 " **关闭** "。  
+Select **focus tab**, **reload**, or **close** next to the tab that you want to focus, reload, or close.  
 
-:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="用于聚焦、重新加载或关闭选项卡的按钮" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
-   图 4.  用于聚焦、重新加载或关闭选项卡的按钮  
+:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
+   Figure 4.  The buttons for focusing, reloading, or closing a tab  
 :::image-end:::  
 
-### 检查元素  
+### Inspect elements  
 
-转到 DevTools 实例的 " **元素** " 面板，将鼠标悬停在某个元素上，将其突出显示在 Android 设备的视口中。  
+Go to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
 
-您也可以在 Android 设备屏幕上选择一个元素，以便在 " **元素** " 面板中选择该元素。  选择**Select Element** ![ DevTools 实例上的 "选择元素" ][ImageSelectElementIcon] 图标，然后在 Android 设备屏幕上选择该元素。  
-
-> [!NOTE]
-> 选择第一个选项后，"**选择元素**" 已禁用，因此必须在每次使用该功能时重新启用它。  
-
-### 将 Android 屏幕说明截屏视频到开发计算机  
-
-选择 " **切换说明截屏视频** ![ 切换 ][ImageToggleScreencastIcon] " 说明截屏视频图标可在 DevTools 实例中查看 Android 设备的内容。  
-
-你可以通过以下方式与说明截屏视频交互。  
-
-*   单击被转换为点击，在设备上触发正确的触摸事件。  
-*   将计算机上的击键发送到设备。  
-*   若要模拟捏出的手势，请 `Shift` 在拖动时按住。  
-*   若要滚动，请使用触控板或鼠标滚轮，或使用鼠标指针投掷。
+You may also select an element on your Android device screen to select it in the **Elements** panel.  Select **Select Element** ![Select Element][ImageSelectElementIcon] icon on your DevTools instance, and then select the element on your Android device screen.  
 
 > [!NOTE]
-> 使用以下提示可帮助您说明截屏视频。  
+> **Select Element** is disabled after the first selection, so you must re-enable it every time you want to use the feature.  
+
+### Screencast your Android screen to your development machine  
+
+Select **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] icon to view the content of your Android device in your DevTools instance.  
+
+You are able to interact with the screencast in the following ways.  
+
+*   Clicks are translated into taps, firing proper touch events on the device.  
+*   Keystrokes on your computer are sent to the device.  
+*   To simulate a pinch gesture, hold `Shift` while dragging.  
+*   To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
+
+> [!NOTE]
+> Use the following tips to help you screencast.  
 > 
-> *   Screencasts 仅显示页面内容。  说明截屏视频的透明部分表示设备接口，如 Microsoft Edge 地址栏、Android 状态栏或 Android 键盘。  
-> *   Screencasts 会对帧速率产生负面影响。  在测量滚动或动画时禁用 screencasting，以便更准确地了解页面性能。  
-> *   如果你的 Android 设备屏幕锁定，你的说明截屏视频的内容将消失。  解锁 Android 设备屏幕以自动恢复说明截屏视频。  
+> *   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Android status bar, or the Android keyboard.  
+> *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.  
+> *   If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.  
 
 <!-- image links -->  
 
@@ -156,18 +156,18 @@ ms.locfileid: "10993497"
 
 <!-- links -->  
 
-[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "配置设备上的开发人员选项 |Android 开发人员"  
-[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "安装 OEM USB 驱动程序 |Android 开发人员"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configure on-device developer options | Android Developer"  
+[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
 
-[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari Web 开发工具 |Apple 开发人员"  
+[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari Web Development Tools | Apple Developer"  
 
-[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "在移动设备上调试 |Brightcove 支持"  
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Debugging on Mobile Devices | Brightcove Support"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
 
-[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb-Android 发烧友式堆栈交换"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb - Android Enthusiast Stack Exchange"  
 
-[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "插入堆栈内溢时，DevTools 设备不检测设备"  
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in - Stack Overflow"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

@@ -1,12 +1,12 @@
 ---
-description: 打开控制台，创建实时表达式，并将表达式设置为 activeElement。
-title: 跟踪哪些元素有焦点
+description: Open the Console, create a Live Expression, and set the expression to document.activeElement.
+title: Track Which Element Has Focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,31 +28,31 @@ ms.locfileid: "10993203"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# 跟踪哪些元素有焦点  
+# Track Which Element Has Focus  
 
-假设你要测试页面的键盘导航辅助功能。  当在页面 `Tab` 上导航键时，焦点圆圈有时会消失，因为具有焦点的元素已隐藏。  
+Suppose that you are testing the keyboard navigation accessibility of a page.  When navigating the page with the `Tab` key, the focus ring sometimes disappears because the element that has focus is hidden.  
 
-完成以下操作以在 DevTools 中跟踪重点元素。  
+Complete the following actions to track the focused element in DevTools.  
 
-1.  打开 **控制台**。  
-1.  单击 " **创建实时表达式** \ (![ 创建实时表达式 ][ImageCreateIcon] \ ) "。  
+1.  Open the **Console**.  
+1.  Click **Create Live Expression** \(![Create Live Expression][ImageCreateIcon]\).  
     
-    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建实时表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
-       创建实时表达式  
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Create a Live Expression  
     :::image-end:::  
     
-1.  键入 `document.activeElement`。  
-1.  在要保存的 **实时表达式** UI 外部单击。  
+1.  Type `document.activeElement`.  
+1.  Click outside of the **Live Expression** UI to save.  
     
-下面看到的值 `document.activeElement` 是表达式的结果。  
+The value that you see below `document.activeElement` is the result of the expression.  
 
-由于该表达式始终表示焦点元素，因此你现在可以始终跟踪哪个元素具有焦点。  
+Since that expression always represents the focused element, you now have a way to always keep track of which element has focus.  
 
-*   将鼠标悬停在结果上以突出显示视区中的焦点元素。  
-*   右键单击结果，然后在 **"元素" 面板中选择 "显示** "，以在 " **元素** " 面板上的 DOM 树中显示该元素。  
-*   右键单击结果，然后选择 " **存储为全局变量** "，创建对可以在 **控制台**中使用的节点的变量引用。  
+*   Hover over the result to highlight the focused element in the viewport.  
+*   Right-click the result and select **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** panel.  
+*   Right-click the result and select **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

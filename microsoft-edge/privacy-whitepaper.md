@@ -86,7 +86,7 @@ Microsoft Edge 每隔 24 小时下载一个支持的网站列表，其中存在�
 
 如果已启用可选的诊断数据（包括故障报告），则 Microsoft 将在 Microsoft Edge 故障或遇到其他可靠性问题时收集诊断数据。  诊断数据用于诊断和修复 Microsoft Edge 及其他 Microsoft 产品和服务的可靠性问题。  
 
-:::image type="complex" source="./media/whitepaper-media/crashes2.png" alt-text="故障" lightbox="./media/whitepaper-media/crashes2.png":::
+:::image type="complex" source="./media/whitepaper-media/crashes2.png" alt-text="地址栏" lightbox="./media/whitepaper-media/crashes2.png":::
    故障  
 :::image-end:::  
 
@@ -108,7 +108,7 @@ Microsoft 使用诊断数据来改进 Microsoft 产品和服务，确保 Microso
 
 在 Microsoft Edge 中以及使用 Microsoft Edge Web 平台的其他应用程序中使用功能和服务时，有关如何使用这些功能的诊断数据将发送到 Microsoft。  诊断数据包括安装 Microsoft Edge、功能使用情况、性能和内存使用情况等信息。  例如，如果你收藏一个网站，Microsoft Edge 团队将收到信息“已单击收藏夹按钮并已成功添加收藏夹”，但不会将具体网站设置为收藏项。  诊断数据还包含性能信息，如打开新选项卡所需的毫秒数。白皮书中提及的功能和服务收集诊断数据。  
 
-:::image type="complex" source="./media/whitepaper-media/diagnostic-data2.png" alt-text="诊断数据" lightbox="./media/whitepaper-media/diagnostic-data2.png":::
+:::image type="complex" source="./media/whitepaper-media/diagnostic-data2.png" alt-text="地址栏" lightbox="./media/whitepaper-media/diagnostic-data2.png":::
    诊断数据  
 :::image-end:::  
 
@@ -195,7 +195,7 @@ Microsoft Edge 支持 [地理位置 API][W3cGeolocationApiMain]，这允许网�
 
 在地址栏右侧，Microsoft Edge 指示什么情况下共享/不共享你的位置。  
 
-:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="位置" lightbox="./media/whitepaper-media/geolocation2.png":::
+:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="地址栏" lightbox="./media/whitepaper-media/geolocation2.png":::
    位置  
 :::image-end:::  
 
@@ -209,7 +209,7 @@ InPrivate 浏览使用启动 InPrivate 会话的配置文件中的位置权限�
 
 第一次启动浏览器时，Microsoft Edge 将提供交互式无缝体验。  作为体验的一部分，可选择将浏览器数据从其他浏览器导入到 Microsoft Edge。  在导入过程中，你可能会保留导入的数据，或者将其删除并重新开始。  数据包括收藏夹、浏览历史记录、自动填充数据、扩展、设置以及其他浏览数据。  更新到新的 Microsoft Edge 时，将自动导入旧版本 Microsoft Edge 中的浏览数据。  确认后，Microsoft Edge 将从其他浏览器导入浏览器数据（如 Google Chrome、Mozilla Firefox 或 Internet Explorer），并根据你的 OS 定义的最常用浏览器确定从中导入数据的浏览器。  导入数据全部在设备本地完成，并存储在本地，且不会发送到 Microsoft，除非你同意同步浏览数据。  
 
-:::image type="complex" source="./media/whitepaper-media/migration.png" alt-text="Import" lightbox="./media/whitepaper-media/migration.png":::
+:::image type="complex" source="./media/whitepaper-media/migration.png" alt-text="地址栏" lightbox="./media/whitepaper-media/migration.png":::
    Import  
 :::image-end:::  
 
@@ -231,7 +231,7 @@ Microsoft Edge 就安装和更新进度对 Microsoft Edge 更新服务执行 pin
 
 Microsoft Edge 通过 Internet Explorer (IE) 集成简化了体验。  Microsoft Edge 仅支持 IE 11，而 IE 模式仅在 Windows 上可用。  通过组策略，组织可以使用 IE 模式功能。  管理员选择在 Microsoft Edge 的 IE 模式下打开特定网站。  
 
-:::image type="complex" source="./media/whitepaper-media/ie-mode.png" alt-text="IE 模式" lightbox="./media/whitepaper-media/ie-mode.png":::
+:::image type="complex" source="./media/whitepaper-media/ie-mode.png" alt-text="地址栏" lightbox="./media/whitepaper-media/ie-mode.png":::
    IE 模式  
 :::image-end:::  
 
@@ -262,7 +262,7 @@ Microsoft Edge 提供了具有吸引力且以用户为中心的新选项卡页�
 
 若要增强新选项卡页面的加载时间，可在后台加载 Microsoft 新选项卡页面，以使其速度更快。 如果允许 Cookie，加载的内容可能包含 Cookie。 若要禁用后台加载 Microsoft 新选项卡页面，请转到 `edge://settings/newTabPage` ，然后关闭设置 **预加载新选项卡页面，以获得更快的体验**。 
 
-:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/whitepaper-media/n-t-p1.png":::
+:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="地址栏" lightbox="./media/whitepaper-media/n-t-p1.png":::
    “新建选项卡”页面  
 :::image-end:::  
 
@@ -384,7 +384,7 @@ macOS 上 Microsoft Edge 中的标识在 Microsoft 应用间共享。  可使用
 
 SmartScreen 旨在帮助你安全浏览 Web。  访问网站或下载文件时，SmartScreen 会检查 URL 或文件的信誉。  如果 SmartScreen 确定网站或文件有恶意，则会阻止你访问网站或下载文件。  
 
-:::image type="complex" source="./media/whitepaper-media/smart-screen.png" alt-text="SmartScreen" lightbox="./media/whitepaper-media/smart-screen.png":::
+:::image type="complex" source="./media/whitepaper-media/smart-screen.png" alt-text="地址栏" lightbox="./media/whitepaper-media/smart-screen.png":::
    SmartScreen  
 :::image-end:::  
 
@@ -420,7 +420,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  可同步收藏夹、设置、表单填充数据（地址和其他）、密码、扩展和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/whitepaper-media/sync.png":::
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="地址栏" lightbox="./media/whitepaper-media/sync.png":::
    同步设置已开启
 :::image-end:::  
 
@@ -442,7 +442,7 @@ Microsoft Edge 旨在检测和阻止已知跟踪器。  用户可以从三个跟
 
 可使用以下组策略“[启用 Microsoft Edge 中的组件更新][DeployedgePoliciesComponentupdatesenabled]”禁用列表更新。  
 
-:::image type="complex" source="./media/whitepaper-media/tracking-prevention.png" alt-text="跟踪防护" lightbox="./media/whitepaper-media/tracking-prevention.png":::
+:::image type="complex" source="./media/whitepaper-media/tracking-prevention.png" alt-text="地址栏" lightbox="./media/whitepaper-media/tracking-prevention.png":::
    跟踪防护  
 :::image-end:::  
 
@@ -484,7 +484,7 @@ Windows Defender 应用程序防护 (WDAG) 是一项适用于组织的功能。 
 
 Windows 信息保护  \(WIP\) 可帮助防止意外泄漏公司信息。  仅可通过组织管理的组策略供组织使用。  对标识为企业资产的网站启用 WIP。  通过地址栏中的“管理”图标标识属于企业资产的网站。  WIP 强制执行某些功能，例如防止从浏览器复制和粘贴或将某些文件上传到组织之外的网站。  
 
-:::image type="complex" source="./media/whitepaper-media/w-i-p.png" alt-text="Windows 信息保护" lightbox="./media/whitepaper-media/w-i-p.png":::
+:::image type="complex" source="./media/whitepaper-media/w-i-p.png" alt-text="地址栏" lightbox="./media/whitepaper-media/w-i-p.png":::
    Windows 信息保护  
 :::image-end:::  
 

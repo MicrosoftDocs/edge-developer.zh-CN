@@ -1,12 +1,12 @@
 ---
-description: 将键盘快捷方式与 Visual Studio 代码匹配、模拟 Surface 双核和 Samsung Galaxy 折页、CSS 网格覆盖改进等。
-title: DevTools (Microsoft Edge 86) 中的新增功能
+description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo and Samsung Galaxy Fold, CSS grid overlay improvements, and more.
+title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 943eca7e73385513b264feb74ec37c450d5c5a2f
 ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
@@ -14,122 +14,122 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "11004100"
 ---
-# DevTools (Microsoft Edge 86) 中的新增功能  
+# What's New In DevTools (Microsoft Edge 86)  
 
-## 来自 Microsoft Edge 开发人员工具团队公告  
+## Announcements from the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-### 将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配  
+### Match keyboard shortcuts in DevTools to Visual Studio Code  
 
-在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与 [Visual Studio 代码][VisualStudioCode]中的快捷方式相匹配。 
+In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Visual Studio Code][VisualStudioCode]. 
 
-:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
-   将 DevTools 中的键盘快捷方式与 Visual Studio 代码匹配  
+:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
+   Match keyboard shortcuts in the DevTools to Visual Studio Code  
 :::image-end:::  
 
-若要激活此功能，请导航到 [Microsoft Edge DevTools 中的自定义键盘快捷方式][DevtoolsCustomizeShortcuts]。  
+To activate this feature, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
 
-例如，在 [Visual Studio 代码][VisualStudioCodeShortcutsKeyboardWindows] 中暂停或继续运行脚本的键盘快捷方式是 `F5` 。  通过 **DevTools (默认) ** 预设，DevTools 中的同一快捷方式 `F8` ，但选择 **Visual Studio Code** 预置时，该快捷方式现在也是如此 `F5` 。  
+For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.  
 
-Chromium 问题 [#174309][CR174309]  
+Chromium issue [#174309][CR174309]  
 
-### 模拟 Surface 双核和 Samsung Galaxy 折页  
+### Emulate Surface Duo and Samsung Galaxy Fold  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code":::
+   Experimental feature  
 :::image-end:::  
 
-现在，你可以在两个新设备上测试你的网站或应用的外观：在 Microsoft Edge 中，  [Surface 双核][MicrosoftSurfaceDevicesDuo] 和 [Samsung Galaxy 折页][SamsungMobileGalaxyFold] 。  
+You are now able to test the look and feel of your website or app on two new devices:  [Surface Duo][MicrosoftSurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  
 
-若要帮助增强适用于双屏幕和可折叠设备的网站或应用，请在 [模拟设备][DevtoolsDeviceModeIndex]时使用以下功能。  
+To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].  
 
-*   [跨越][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]，即当你的网站 (或应用 \ ) 出现在两个屏幕上时。
-*   [渲染接缝][DualScreenIntroductionHowWorkSeam]，即两个屏幕之间的空间。
-*   [启用实验性 Web 平台 api][DevtoolsExperimentalFeaturesEnableExperimentalApis] 以访问新的 [CSS 媒体屏幕生成功能][DualScreenWebCssMediaSpanning] 和 [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments]。  
+*   [Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.
+*   [Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.
+*   [Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].  
 
-:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Surface 双核设备仿真" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
-   Surface 双核设备仿真  
+:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
+   Device emulation for Surface Duo  
 :::image-end:::  
 
-若要启用此实验功能，请导航到 ["启用实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] "，然后选择 " **模拟：支持双重屏幕模式**" 旁边的复选框。  
+To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Emulation: Support dual screen mode**.  
 
-有关此实验的详细信息，请导航到 " [模拟：支持双重屏幕模式][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]"。  
+For more information about this experiment, navigate to [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
 
-Chromium 问题： [#1054281][CR1054281]  
+Chromium issue: [#1054281][CR1054281]  
 
-### CSS 网格覆盖改进和新的实验性网格功能  
+### CSS grid overlay improvements and new experimental grid features  
 
-感谢您对改进的 CSS 网格覆盖的积极反馈。  现在，CSS 网格覆盖在默认情况下处于启用状态，不需要你启用实验。  
+Thank you for the positive feedback about the improved CSS grid overlays.  The CSS grid overlays are now enabled by default and do not require you to turn on an experiment.  
 
-:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="文章元素的 CSS 网格覆盖" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
-   元素的 CSS 网格覆盖 `article`  
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+   CSS grid overlay for `article` element  
 :::image-end:::  
 
 > [!NOTE]
-> 有关网格覆盖的详细信息，请转到 [CSS 网格调试功能][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]。  
+> For more information about grid overlays, go to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].  
 
-Microsoft Edge DevTools 团队和 Chrome DevTools 团队协作处理其他功能。  新功能包括在 "**元素**" 面板上的新**布局**窗格中具有持久性和可配置的多个覆盖。  
+The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** panel.  
 
-若要启用此实验功能，请导航到 ["启用实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] "，然后选中 " **启用新 CSS 网格调试功能" 旁边的复选框 (在重新启动) 后，元素的 "布局" 侧栏窗格中可用的配置选项 **。  
+To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.  
 
-有关此实验的详细信息，请导航以 [启用新的 CSS 网格调试功能][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]。  
+For more information about this experiment, navigate to [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
 
-Chromium 问题： [#1047356][CR1047356]  
+Chromium issue: [#1047356][CR1047356]  
 
-### 从控制台复制的表保留格式  
+### Table copied from the Console preserves formatting  
 
-在 Microsoft Edge 85 或更早版本中，已复制的格式 `console.table` 丢失。  如果从 [表][DevtoolsConsoleApiTable] 控制台 API 复制了输出并粘贴了该输出，则仅保留表的文本。  
+In Microsoft Edge 85 or earlier, the formatting of a copied `console.table` was lost.  If you copied the output from the [table][DevtoolsConsoleApiTable] Console API, and pasted it, only the text of the table was kept.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Microsoft Edge 85 或更早版本中的表控制台 API 输出" lightbox="../../media/2020/08/console-table-beta.msft.png":::
-         `table` Microsoft Edge 85 或更早版本中的控制台 API 输出  
+      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+         `table` Console API output in Microsoft Edge 85 or earlier  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="从 Microsoft Edge 85 或更早版本粘贴到 Visual Studio 代码的表控制台 API 输出" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` 从 Microsoft Edge 85 或更早版本粘贴到 Visual Studio 代码的控制台 API 输出  
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+         `table` Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-在 Microsoft Edge 86 或更高版本中，从 **控制台**复制表格时，格式现在将保留。  
+In Microsoft Edge 86 or later, when you copy a table from the **Console**, the formatting is now preserved.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Microsoft Edge 86 或更高版本中的表控制台 API 输出" lightbox="../../media/2020/08/console-table-canary.msft.png":::
-         `table` Microsoft Edge 86 或更高版本中的控制台 API 输出  
+      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+         `table` Console API output in Microsoft Edge 86 or later  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Microsoft Edge 86 或更高版本中粘贴到 Visual Studio 代码中的表控制台 API 输出" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` Microsoft Edge 86 或更高版本中粘贴到 Visual Studio 代码中的控制台 API 输出  
+      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+         `table` Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Chromium 问题： [#1115011] [CR1115011]  
+Chromium issue: [#1115011][CR1115011]  
 
-### 源顺序查看器，便于进行辅助功能测试  
+### Source Order Viewer for easier accessibility testing  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code":::
+   Experimental feature  
 :::image-end:::  
 
-新的辅助功能帮助程序显示源中元素的顺序。  
+The new accessibility helper displays the order of elements in the source.  
 
-:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="激活 "显示源订单"" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
-   激活 "**显示源订单**"  
+:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
+   Activate **Show source order**  
 :::image-end:::  
 
-此功能可让你更轻松地测试屏幕阅读器和键盘用户体验你的网站或应用的方式。  屏幕阅读器和键盘导航依赖于在网站或应用的源代码中按特定顺序放置的内容，以便与呈现的页面匹配。  源顺序查看器在呈现的页面和源代码之间按顺序显示潜在差异。  
+This feature makes it easier to test the way screen reader and keyboard users experience your website or app.  Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.  The Source Order Viewer displays potential differences in order between the rendered page and the source code.  
 
-若要启用此实验功能，请导航到 ["打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] "，然后选中 " **启用源订单查看器**" 旁边的复选框。  
+To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Source Order Viewer**.  
 
-有关此实验的详细信息，请导航到 [启用源订单查看器][DevtoolsExperimentalFeaturesEnableSourceOrderViewer]。  
+For more information about this experiment, navigate to [Enable Source Order Viewer][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].  
 
-Chromium 问题： [#1094406][CR1094406]  
+Chromium issue: [#1094406][CR1094406]  
 
 <!--
 ### DevTools language enhancements  
@@ -138,12 +138,12 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
          Microsoft Edge DevTools 85 and earlier in Traditional Chinese  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
          Microsoft Edge DevTools 86  or later in Traditional Chinese  
       :::image-end:::  
    :::column-end:::
@@ -154,228 +154,228 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 The current effort to improve translation quality enables easier support for more languages in the future.  
 -->  
 
-### 突出显示 "元素" 工具中的所有搜索结果  
+### Highlight all search results in Elements tool  
 
-在 Microsoft Edge 84 和85中，" **元素** " 面板中的第一个搜索结果不突出显示。  剩余的搜索结果已正确突出显示。  
+In Microsoft Edge 84 and 85, the first search result in the **Elements** panel did not highlight.  The remaining search results were highlighted correctly.  
 
-感谢您发送反馈并帮助改进 Chromium。  你的反馈发现问题 [#1103316][CR1103316] 在开放源代码 Chromium 项目中。  
+Thank you for sending your feedback and helping improve Chromium.  Your feedback uncovered Issue [#1103316][CR1103316] in the open-source Chromium project.  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 Microsoft Edge 84 或更高版本中突出显示 "元素" 面板上的第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   在 Microsoft Edge 84 或更高版本中突出显示 " **元素** " 面板上的第一个搜索结果  
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+   Highlighted first search result on **Elements** panel in Microsoft Edge 84 or later  
 :::image-end:::  
 
-此问题现已在所有版本的 Microsoft Edge 中修复。  
+The issue is now fixed in all versions of Microsoft Edge.  
 
-Chromium 问题： [#1103316][CR1103316]  
+Chromium issue: [#1103316][CR1103316]  
 
-## 来自 Chromium 项目的公告  
+## Announcements from the Chromium project  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### 新媒体面板  
+### New Media panel  
 
-DevTools 现在在 " [媒体][DevtoolsMediaIndex] " 面板中显示媒体播放器信息。  
+DevTools now displays media players information in the [Media][DevtoolsMediaIndex] panel.  
 
-若要打开新的 " **媒体** " 面板，请完成以下步骤。  
+To open the new **Media** panel, complete the following step.  
 
-1.  选择 "**自定义和控制 DevTools** \ (`...` \ ) " >**更多工具**  >  **媒体**。  
+1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.  
     
-    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体面板" lightbox="../../media/2020/08/media-panel.msft.png":::
-       新 **媒体** 面板  
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/media-panel.msft.png":::
+       New **Media** panel  
     :::image-end:::  
 
-在 DevTools 中的新 **媒体** 面板之前，有关视频播放器的日志记录和调试信息位于 " **最近使用的播放机** " 设置下。  若要打开 " **最近使用的播放器** " 设置，请转到 `edge://media-internals` 并选择 " **玩家** " 选项卡。  
+Before the new **Media** panel in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, go to `edge://media-internals` and choose the **Players** tab.  
 
-查看实时内容并更快地检查潜在问题，包括以下示例。  
+View live content and inspect potential issues more quickly, including the following examples.  
 
-*   为什么删除框架？  
-*   为什么 JavaScript 以意外的方式与玩家交互？  
+*   Why frames are dropped?  
+*   Why JavaScript is interacting with the player in an unexpected way?  
 
-### 使用 "元素" 面板上下文菜单捕获节点屏幕截图  
+### Capture node screenshots using the Elements panel context menu  
 
-现在，你可以使用 " **元素** " 面板中的上下文菜单来捕获节点屏幕截图。  
+You may now capture node screenshots using the context menu in the **Elements** panel.  
 
-例如，若要获取目录的屏幕截图，请将鼠标悬停在该元素上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **捕获节点屏幕截图**"。  
+For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.  
 
-:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
-   捕获节点屏幕截图  
+:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
+   Capture node screenshots  
 :::image-end:::  
 
-Chromium 问题： [#1100253][CR1100253]  
+Chromium issue: [#1100253][CR1100253]  
 
-### 问题工具更新  
+### Issues tool updates  
 
-**控制台**面板上的问题警告栏现在被替换为常规消息。  
+The Issues warning bar on the **Console** panel is now replaced with a regular message.  
 
 <!--todo: this figure need to be updated  -->  
 
-:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="控制台消息中的问题" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
-   控制台消息中的问题  
+:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
+   Issues in console message  
 :::image-end:::  
 
-默认情况下，在 " **问题** " 工具中，第三方 cookie 问题现已隐藏。  启用 "新建 **包含第三方 cookie 问题** " 复选框以查看问题。  
+Third-party cookie issues are now hidden by default in the **Issues** tool.  Enable the new **Include third-party cookie issues** checkbox to view the issues.  
 
-:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="第三方 cookie 问题复选框" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
-   第三方 cookie 问题复选框  
+:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
+   third-party cookie issues checkbox  
 :::image-end:::  
 
-Chromium 问题： [1096481][CR1096481]、 [1068116][CR1068116]、 [1080589][CR1080589]  
+Chromium issues: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]  
 
-### 模拟缺少的本地字体  
+### Emulate missing local fonts  
 
-打开 [渲染工具][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] 并使用新的 " **禁用本地字体** " 功能来模拟 `local()` 规则中缺少的源 `@font-face` 。  
+Open the [Rendering tool][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] and use the new **Disable local fonts** feature to emulate missing `local()` sources in `@font-face` rules.  
 
-例如，当 `Rubik` 字体安装在设备上并且 `@font-face src` 规则使用它作为 `local()` 字体时，Microsoft Edge 将使用您的设备中的本地字体文件。  
+For example, when the `Rubik` font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.  
 
-启用 " **禁用本地字体** " 时，DevTools 将忽略 `local()` 字体并从网络中提取每个字体。  
+When **Disable local fonts** is enabled, DevTools ignores the `local()` fonts and fetches each from the network.  
 
-:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="模拟缺少的本地字体" lightbox="../../media/2020/08/disable-font.msft.png":::
-   模拟缺少的本地字体  
+:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/disable-font.msft.png":::
+   Emulate missing local fonts  
 :::image-end:::  
 
-如果在开发期间使用同一字体的两个不同副本，例如以下示例。  
+If you use two different copies of the same font during development, such as the following examples.  
 
-*   设计工具的本地字体。  
-*   代码的 web 字体。  
+*   A local font for your design tools.  
+*   A web font for your code.  
 
-使用 " **禁用本地字体** "，让您能够更轻松地完成以下任务。  
+Use **Disable local fonts** to make it easier for you to complete the following tasks.  
 
-*   调试和测量 web 字体的加载性能和优化。  
-*   验证 CSS 规则的准确性 `@font-face` 。  
-*   发现设备上安装的本地版本和 web 字体之间的差异。  
+*   Debug and measure loading performance and optimization of web fonts.  
+*   Verify accuracy of your CSS `@font-face` rules.  
+*   Discover differences between local versions installed on your device and a web font.  
 
-Chromium 问题： [#384968][CR384968]  
+Chromium issue: [#384968][CR384968]  
 
-### 模拟非活动用户  
+### Emulate inactive users  
 
-" [空闲检测" API][WebDevIdleDetection] 允许开发人员检测非活动用户并对空闲状态更改做出响应。  现在，你可以使用 DevTools 来模拟用户状态和屏幕状态的 **传感器** 工具中的空闲状态更改，而不是等待实际空闲状态更改。  您可以从[抽屉][DevtoolsCustomizeIndexDrawer]打开 "**传感器**" 工具。  
+The [Idle Detection API][WebDevIdleDetection] allows developers to detect inactive users and react on idle state changes.  You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You may open the **Sensors** tool from the [Drawer][DevtoolsCustomizeIndexDrawer].  
 
-:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="模拟非活动用户" lightbox="../../media/2020/08/emulate-idle.msft.png":::
-   模拟非活动用户  
+:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/emulate-idle.msft.png":::
+   Emulate inactive users  
 :::image-end:::  
 
-Chromium 问题： [#1090802][CR1090802]  
+Chromium issue: [#1090802][CR1090802]  
 
-### 模拟首选数据-减少数据  
+### Emulate prefers-reduced-data  
 
 > [!NOTE]
-> 在 Microsoft Edge 86 中，若要启用此功能，请转到 `edge://flags#enable-experimental-web-platform-features` 并打开 **实验性 Web 平台功能** 标志。  只有启用了标志，才会显示 "模拟" 选项。  
+> In Microsoft Edge 86, to enable this feature, go to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.  The emulation option is only displayed if the flag is enabled.  
 
-" [优先-减少-数据][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] 媒体" 查询检测减少数据的用户内容首选项。  如果选中此选项，用户将收到使用较少数据的备用页面内容。  
+The [prefers-reduced-data][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] media query detects user content preferences for reduced data.  If selected, the user receives alternate page content that uses less data.  
 
-您现在可以使用 DevTools 模拟 `prefers-reduced-data` 媒体查询。  
+You may now use DevTools to emulate the `prefers-reduced-data` media query.  
 
-:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="模拟首选数据-减少数据" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
-   模拟首选数据-减少数据  
+:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
+   Emulate prefers-reduced-data  
 :::image-end:::  
 
-Chromium 问题： [#1096068][CR1096068]  
+Chromium issue: [#1096068][CR1096068]  
 
-### 对新的 JavaScript 功能的支持  
+### Support for new JavaScript features  
 
-DevTools 现已更好地支持以下 JavaScript 语言功能。  
+DevTools now have better supported the following JavaScript language features.  
 
-| JavaScript 语言功能 | 详细信息 |  
+| JavaScript language feature | Details |  
 |:--- |:--- |  
-| [逻辑赋值运算符][V8FeaturesLogicalAssignment] | DevTools 现在支持 `&&=` `||=` `??=` 在 " **控制台** " 和 " **源** " 面板中通过 "新建"、"和" 运算符进行逻辑赋值。  |  
-| 整齐打印 [数值分隔符][V8FeaturesNumericSeparators] | DevTools 现已正确打印 " **源** " 面板中的数字分隔符。  |  
+| [Logical assignment operators][V8FeaturesLogicalAssignment] | DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** panels.  |  
+| Pretty-print [numeric separators][V8FeaturesNumericSeparators] | DevTools now properly pretty-prints the numeric separators in the **Sources** panel.  |  
 
-Chromium 问题： [1086817][CR1086817]、 [1080569][CR1080569]  
+Chromium issues: [1086817][CR1086817], [1080569][CR1080569]  
 
-### Lighthouse 面板中的 Lighthouse 6。2  
+### Lighthouse 6.2 in the Lighthouse panel  
 
-**Lighthouse**面板现在正在运行 Lighthouse 6.2。  有关更改的完整列表，请转到 [Lighthouse 发行说明][GithubGooglechromeLighthouseV620]。  
+The **Lighthouse** panel is now running Lighthouse 6.2.  For a full list of changes, go to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].  
 
-Chromium 问题： [#772558][CR772558]  
+Chromium issue: [#772558][CR772558]  
 
-### "服务工作人员" 窗格中的其他来源列表已过时  
+### Deprecation of other origins listing in the Service Workers pane  
 
-DevTools 现在提供从 " **服务工作者** " 窗格 \ (**应用程序** 面板 > **服务工作者** 窗格 \ ) 的链接，以查看其他来源的服务工作人员的完整列表。  若要在不打开 DevTools 的情况下访问列表，请转到 `edge://service-worker-internals/?devtools` 。  
+DevTools now provides a link from the **Service workers** pane \(**Application** panel > **Service workers** pane\) to view the full list of service workers from other origins.  To access the list without opening the DevTools, go to `edge://service-worker-internals/?devtools`.  
 
-以前的 DevTools 显示了一个嵌套在 **应用程序** 面板 > **服务工作人员** 窗格下的列表。  
+Previously DevTools displayed a list nested under the **Application** panel > **Service workers** pane.  
 
-:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="链接到其他来源" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
-   链接到其他来源  
+:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
+   Link to other origins  
 :::image-end:::  
 
-Chromium 问题： [#807440][CR807440]  
+Chromium issue: [#807440][CR807440]  
 
-### 显示已筛选项目的覆盖范围摘要  
+### Show coverage summary for filtered items  
 
-DevTools 现已动态重新计算并显示覆盖范围信息的摘要。  当在 [覆盖范围][DevtoolsCoverageIndex] 工具中应用筛选器时，将触发动态显示。  **覆盖范围**工具始终显示所有覆盖范围信息的摘要之前。  
+DevTools now recalculate and display a summary of coverage information dynamically.  The dynamic display is triggered when filters are applied in the [Coverage][DevtoolsCoverageIndex] tool.  Before the **Coverage** tool always displayed a summary of all coverage information.  
 
-在下面的第一条数字中，摘要最初显示在 `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` 下图的第二个数字中， `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` 应用 CSS 筛选后将显示摘要。  
+In the first of the following figures, the summary initially displays `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` and in the second of the following figures, the summary displays `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` after CSS filtering is applied.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="覆盖范围摘要" lightbox="../../media/2020/08/coverage-compare.msft.png":::
-         覆盖范围摘要  
+      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+         Coverage summary  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="已筛选项目的覆盖范围摘要" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
-         已筛选项目的覆盖范围摘要  
+      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
+         Coverage summary for filtered items  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-Chromium 问题： [#1061385][CR1090802]  
+Chromium issue: [#1061385][CR1090802]  
 
-### 应用程序面板中新的 "框架详细信息" 视图  
+### New frame details view in Application panel  
 
-DevTools 现在显示每个帧的详细视图。  若要访问它，请在 "**应用程序**" 面板中的 "**框架**" 菜单下选择一个框架。  
+DevTools now show a detailed view for each frame.  To access it, choose a frame under the **Frames** menu in the **Application** panel.  
 
-:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="应用程序面板中的框架的新详细视图" lightbox="../../media/2020/08/frame-details.msft.png":::
-   **应用程序**面板中的框架的新详细视图  
+:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/frame-details.msft.png":::
+   New detailed view for a frame in **Application** panel  
 :::image-end:::  
 
-Chromium 问题： [#1093247][CR1093247]  
+Chromium issue: [#1093247][CR1093247]  
 
-#### 打开的窗口的帧详细信息  
+#### Frame details for opened windows  
 
-打开的窗口和弹出窗口现在也显示在框架树下方。  打开的窗口的详细视图包含其他安全信息。  
+Open windows and pop-up windows now display under the frame tree as well.  The detailed view of the opened windows includes additional security information.  
 
-:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="打开的窗口的新框架详细视图" lightbox="../../media/2020/08/window-opener.msft.png":::
-   打开的窗口的新框架详细视图  
+:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/window-opener.msft.png":::
+   New frame detailed view for opened windows  
 :::image-end:::  
 
-Chromium 问题： [#1107766] [CR1107766]  
+Chromium issue: [#1107766][CR1107766]  
 
-#### 安全性和隔离信息  
+#### Security and isolation information  
 
-安全上下文、 [跨起源 Embedder-策略 (COEP) ][WebDevCoopCoep]和 [基于 Opener (的合作基金) ][WebDevCoopCoep] 现在将显示在 "帧详细信息" 中。  
+Secure context, [Cross-Origin-Embedder-Policy (COEP)][WebDevCoopCoep], and [Cross-Origin-Opener-Policy (COOP)][WebDevCoopCoep] are now displayed in the frame details.  
 
-:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="安全性和隔离信息" lightbox="../../media/2020/08/coep-coop.msft.png":::
-   安全性和隔离信息  
+:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/coep-coop.msft.png":::
+   Security and isolation information  
 :::image-end:::  
 
-将来，Microsoft Edge DevTools 团队和 Chrome DevTools 团队计划向该帧的详细信息添加更多的安全信息。  
+In the future, the Microsoft Edge DevTools team and the Chrome DevTools team are planning to add more security information to the frame details.  
 
-Chromium 问题： [#1051466][CR1051466]  
+Chromium issue: [#1051466][CR1051466]  
 
-### 元素和网络面板更新  
+### Elements and Network panel updates  
 
-#### "样式" 窗格中的辅助颜色建议  
+#### Accessible color suggestion in the Styles pane  
 
-DevTools 现在提供低颜色对比度文本的颜色建议。  
+DevTools now provides color suggestions for low color contrast text.  
 
-在下面的示例中， `h1` 具有低对比度文本。  若要解决此问题，请 `color` 在 " **样式** " 窗格中打开该属性的颜色选取器。  展开 " **对比度比率** " 部分后，DevTools 将提供 AA 和 AAA 颜色建议。  选择建议的颜色以应用颜色。  
+In the example below, `h1` has low contrast text.  To fix it, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Select the suggested color to apply the color.  
 
-:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="颜色选取器建议 AA 和 AAA 颜色建议" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
-   颜色选取器建议 AA 和 AAA 颜色建议  
+:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
+   Color picker suggests AA and AAA color suggestions  
 :::image-end:::  
 
-Chromium 问题： [#1093227][CR1093227]  
+Chromium issue: [#1093227][CR1093227]  
 
-#### "元素" 面板中的 "恢复属性" 窗格  
+#### Reinstate Properties pane in the Elements panel  
 
-" **属性** " 窗格将返回。  它已 [在 Microsoft Edge 84 中弃用][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]。  Microsoft Edge DevTools 团队和 Chrome DevTools 团队是对检查元素的属性进行规划的改进。  
+The **Properties** pane is back.  It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text=""元素" 面板中的 "属性" 窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
-   "**元素**" 面板中的 "**属性**" 窗格  
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/properties-pane.msft.png":::
+   **Properties** pane in the **Elements** panel  
 :::image-end:::  
 
-Chromium 问题：  <!--  [#1105205][CR1105205],  -->  [#1116085][CR1116085]  
+Chromium issue:  <!--  [#1105205][CR1105205],  -->  [#1116085][CR1116085]  
 
 <!--  
 #### Human-readable X-Client-Data header values in the Network panel  
@@ -384,153 +384,153 @@ When inspecting a network resource in the Network panel, DevTools now formats an
 
 The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft Edge flags that are enabled in your browser.  The raw header values look like opaque strings since the values are `base-64-encoded`, serialized [protocol buffers][GoogleDevelopersProtocolBuffers].  To make the contents more transparent to developers, DevTools now shows the decoded values.  
 
-:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Human-readable `X-Client-Data` header values" lightbox="../../media/2020/08/x-client-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/x-client-data.msft.png":::
    Human-readable `X-Client-Data` header values  
 :::image-end:::  
 
 Chromium issue: [#1103854][CR1103854]  
 -->  
 
-#### "样式" 窗格中的 "自动完成" 自定义字体  
+#### Autocomplete custom fonts in the Styles pane  
 
-在编辑 "样式" 窗格中的属性时，导入的字体现在将添加到 CSS 自动完成列表 `font-family` 中。 **Styles**  
+Imported font faces are now added to the list of CSS autocompletion when editing the `font-family` property in the **Styles** pane.  
 
-例如，如果 `monospace` 是在本地计算机上安装的自定义字体，它将显示在 CSS 完成列表中。 在早期版本的 Microsoft Edge 中，字体未显示。
+For example, if `monospace` is a custom font installed on the local machine, it's displayed in the CSS completion list. In previous versions of Microsoft Edge, the font wasn't displayed.
 
-:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="自动完成自定义字体" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
-   自动完成自定义字体  
+:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
+   Autocomplete custom fonts  
 :::image-end:::  
 
-Chromium 问题： [#1106221] [CR1106221]  
+Chromium issue: [#1106221][CR1106221]  
 
-#### 在 "网络" 面板中一致地显示资源类型  
+#### Consistently display resource type in Network panel  
 
-DevTools 现在与原始网络请求一致地显示相同的资源类型，并且 `/ Redirect` 在重定向 \ (HTTP 状态代码 302 \ ) 时，附加到 " **类型** " 列的值。  
+DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.  
 
-以前 DevTools 将类型更改为 " `Other` 有时"。  
+Previously DevTools changed the type to `Other` sometimes.  
 
-:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="显示重定向资源类型" lightbox="../../media/2020/08/network-redirect.msft.png":::
-   显示重定向资源类型  
+:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/network-redirect.msft.png":::
+   Display redirect resource type  
 :::image-end:::  
 
-Chromium 问题： [#997694][CR997694]  
+Chromium issue: [#997694][CR997694]  
 
-#### 在 "元素" 和 "网络" 面板中清除按钮  
+#### Clear buttons in the Elements and Network panels  
 
-以下文本框现在具有 " **清除** " 按钮。  
+The following text boxes now have **Clear** buttons.  
 
-*   " **样式** " 窗格和 " **网络** " 面板中的 "筛选" 文本框。  
-*   " **元素** " 面板中的 "DOM 搜索" 文本框。  
+*   The filter text boxes in the **Styles** pane and **Network** panel.  
+*   The DOM search text box in the **Elements** panel.  
 
-选择 " **清除** " 按钮以删除任何输入文本。  
+Choose the **Clear** button to remove any inputted text.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text=""元素" 面板中的 "清除" 按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
-         " **元素** " 面板中的 "清除" 按钮  
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+         Clear buttons in the **Elements** panels  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text=""网络" 面板中的 "清除" 按钮" lightbox="../../media/2020/08/clear-button-network.msft.png":::
-         "  **网络** " 面板中的 "清除" 按钮  
+      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/clear-button-network.msft.png":::
+         Clear buttons in the  **Network** panels  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Chromium 问题： [#1067184][CR1067184]  
+Chromium issue: [#1067184][CR1067184]  
 
-## 下载 Microsoft Edge 预览频道  
+## Download the Microsoft Edge preview channels  
 
-如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
+如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  The preview channels give you access to the latest DevTools features.  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "DevTools "设置" 图标"  
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "DevTools Settings icon"  
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel ""元素" 面板中 "属性" 窗格的弃用-DevTools 中的新增功能 (Microsoft Edge 84) |Microsoft 文档"  
-[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS 网格调试功能-DevTools 中的新增功能 (Microsoft Edge 85) |Microsoft 文档"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Deprecation of the Properties pane in the Elements panel - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"  
+[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS grid debugging features - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "在 Microsoft Edge DevTools 中模拟移动设备 |Microsoft 文档"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools 中的键盘快捷方式 |Microsoft 文档"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "启用实验性 Api-实验性功能 |Microsoft 文档"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "模拟：支持双重屏幕模式-实验功能 |Microsoft 文档"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "启用源订单查看器-实验性功能 |Microsoft 文档"
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "模拟：支持双重屏幕模式-实验功能 |Microsoft 文档"  
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "在折叠和双屏幕设备上测试-实验功能 |Microsoft 文档"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "启用实验功能-实验功能 |Microsoft 文档"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "表-控制台 API 参考 |Microsoft 文档"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 Microsoft Edge DevTools | 中的 "覆盖范围" 选项卡查找未使用的 JavaScript 和 CSS 代码。Microsoft 文档"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "抽屉-自定义 Microsoft Edge DevTools |Microsoft 文档"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "通过 "呈现" 选项卡分析呈现性能-性能分析参考 |Microsoft 文档"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "查看和调试媒体播放器信息 |Microsoft 文档"  
+[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs"
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
+[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "table - Console API reference | Microsoft Docs"  
+[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
+[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
 
-[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "如何使用双屏幕设备的接缝简介 |Microsoft 文档"  
-[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "适用于双屏幕检测的 CSS 媒体屏幕扩展功能 |Microsoft 文档"  
-[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "用于双屏幕设备的 getWindowSegments JavaScript API |Microsoft 文档"  
+[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"  
+[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"  
+[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "The getWindowSegments JavaScript API for dual-screen devices | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio 代码 "  
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "适用于 Windows 的 Visual Studio 代码键盘快捷方式"  
+[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code "  
+[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows"  
 
-[MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "新的 Surface 双核"  
+[MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "The new Surface Duo"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter 帐户"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bug"  
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
 
-[CR174309]: https://crbug.com/174309 "DevTools：允许自定义键盘快捷方式/键绑定 |Chromium bug"
-[CR384968]: https://crbug.com/384968 "选项可忽略本地 ( # A1 字体 |Chromium bug"  
-[CR772558]: https://crbug.com/772558 "DevTools：更新到最新版本的 Lighthouse |Chromium bug"  
-[CR807440]: https://crbug.com/807440 "Chrome 通过大量的 SWs |Chromium bug"  
-[CR997694]: https://crbug.com/997694 "302状态的 XHR 请求不会显示在 "网络" 面板中的 "XHR" 筛选器 |Chromium bug"  
-[CR1047356]: https://crbug.com/1047356 "CSS 网格/Flexbox/表格工具"  
-[CR1051466]: https://crbug.com/1051466 "在 DevTools | 中支持合作基金/COEP 调试Chromium bug"  
-[CR1054281]: https://crbug.com/1054281 "功能请求： DevTools 应模拟可折叠和双屏幕设备 |Chromium bug"  
-[CR1067184]: https://crbug.com/1067184 "功能请求：网络 & 元素上的 "清除筛选" 按钮-> 样式筛选器输入 |Chromium bug"  
-[CR1068116]: https://crbug.com/1068116 "☂装运问题面板 |Chromium bug"  
-[CR1080569]: https://crbug.com/1080569 "acorn 不支持逻辑赋值运算符 |Chromium bug"  
-[CR1080589]: https://crbug.com/1080589 "按第三方/第三方对问题进行分类Chromium bug"  
-[CR1086817]: https://crbug.com/1086817 "acorn 不支持数值分隔符 |Chromium bug"  
-[CR1090802]: https://crbug.com/1090802 "模拟来自空闲检测 API 的空闲状态更改 |Chromium bug"  
-[CR1093227]: https://crbug.com/1093227 "DevTools：建议最接近的辅助颜色 |Chromium bug"  
-[CR1093247]: https://crbug.com/1093247 "在应用程序面板中显示有关框架的信息 |Chromium bug"  
-[CR1094406]: https://crbug.com/1094406 "开发人员希望使用源订单查看器 https://webwewant.fyi/wants/64/"  
-[CR1096068]: https://crbug.com/1096068 "DevTools：支持模拟 "首选-减少-数据媒体" 功能 |Chromium bug"  
-[CR1096481]: https://crbug.com/1096481 "问题横幅位置 |Chromium bug"  
-[CR1100253]: https://crbug.com/1100253 "在元素上下文菜单中添加屏幕截图节点快捷方式 |Chromium bug"  
-[CR1103316]: https://crbug.com/1103316 "在第一个搜索结果 | resolveNode 中，元素搜索不会 (突出显示文本等) Chromium bug"  
-[CR1103854]: https://crbug.com/1103854 "在开发工具 | 中取消模糊处理 X 客户端数据值 |Chromium bug"  
+[CR174309]: https://crbug.com/174309 "DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"
+[CR384968]: https://crbug.com/384968 "Option to ignore local() fonts | Chromium bugs"  
+[CR772558]: https://crbug.com/772558 "DevTools: Update to latest version of Lighthouse | Chromium bugs"  
+[CR807440]: https://crbug.com/807440 "Chrome locks up with large numbers of SWs | Chromium bugs"  
+[CR997694]: https://crbug.com/997694 "XHR requests with 302 status are not shown under the \"xhr\" filter in network panel | Chromium bugs"  
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling"  
+[CR1051466]: https://crbug.com/1051466 "Support COOP/COEP debugging in DevTools | Chromium bugs"  
+[CR1054281]: https://crbug.com/1054281 "Feature Request: DevTools should emulate foldable and dual-screen devices | Chromium bugs"  
+[CR1067184]: https://crbug.com/1067184 "Feature Request: Clear filter button on Network & Elements -> Style Filter inputs | Chromium bugs"  
+[CR1068116]: https://crbug.com/1068116 "☂ Ship issues panel | Chromium bugs"  
+[CR1080569]: https://crbug.com/1080569 "acorn doesn't support logical assignment operators | Chromium bugs"  
+[CR1080589]: https://crbug.com/1080589 "Classify issues by third-party / first-party | Chromium bugs"  
+[CR1086817]: https://crbug.com/1086817 "acorn doesn't support numeric separators | Chromium bugs"  
+[CR1090802]: https://crbug.com/1090802 "Simulate idle state changes from Idle Detection API | Chromium bugs"  
+[CR1093227]: https://crbug.com/1093227 "DevTools: suggest closest accessible color | Chromium bugs"  
+[CR1093247]: https://crbug.com/1093247 "Display info about frames in application panel | Chromium bugs"  
+[CR1094406]: https://crbug.com/1094406 "Developers want a source order viewer for AT https://webwewant.fyi/wants/64/"  
+[CR1096068]: https://crbug.com/1096068 "DevTools: support emulating the prefers-reduced-data media feature | Chromium bugs"  
+[CR1096481]: https://crbug.com/1096481 "Issues banner placement | Chromium bugs"  
+[CR1100253]: https://crbug.com/1100253 "Add screenshot node shortcut in Element context menu | Chromium bugs"  
+[CR1103316]: https://crbug.com/1103316 "Elements search does not resolveNode (highlight text, etc) on first search result | Chromium bugs"  
+[CR1103854]: https://crbug.com/1103854 "De-obfuscate X-Client-Data values in Developer Tools | Chromium bugs"  
 <!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->  
-[CR1106221]： https://crbug.com/1106221 "在样式面板中将导入的字体添加到字体系列自动完成" |Chromium bug "  
-[CR1107766]： https://crbug.com/1107766 "显示由" 窗口生成的帧的相关信息。在框架树中打开 ( # A1 "|Chromium bug "  
-[CR1115011]： https://crbug.com/1115011 "从控制台复制表时不保留表的结构 |Chromium bug "  
-[CR1116085]： https://crbug.com/1116085 "请返回 DevTools 属性检查器 |Chromium bug "  
+[CR1106221]: https://crbug.com/1106221 "Add imported fonts to the font-family autocompletion in the Styles panel | Chromium bugs"  
+[CR1107766]: https://crbug.com/1107766 "Display info about frames generated by 'window.open()' in frame tree | Chromium bugs"  
+[CR1115011]: https://crbug.com/1115011 "When copying a table from the console the structure of the table is not preserved | Chromium bugs"  
+[CR1116085]: https://crbug.com/1116085 "Please bring back the DevTools Properties inspector | Chromium bugs"  
 
-[CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "首选-减少-数据-媒体查询级别 5 |W3C CSS 工作组编辑器草稿"  
+[CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "prefers-reduced-data - Media Queries Level 5 | W3C CSS Working Group Editor Drafts"  
 
-[GithubGooglechromeLighthouseV620]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0 "v 6.2.0-GoogleChrome/lighthouse |GitHub"  
+[GithubGooglechromeLighthouseV620]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0 "v6.2.0 - GoogleChrome/lighthouse | GitHub"  
 
-[GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "协议缓冲区 |Google 开发人员"  
+[GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "Protocol Buffers | Google Developers"  
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy 折页 |美国 Samsung"  
+[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung US"  
 
-[V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "逻辑赋值 |V8"  
-[V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "数字分隔符 |V8"  
+[V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "Logical assignment | V8"  
+[V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "Numeric separators | V8"  
 
-[WebDevCoopCoep]: https://web.dev/coop-coep "使用合作基金和 COEP 将您的网站设置为 "跨原点隔离" |web 开发"  
-[WebDevIdleDetection]: https://web.dev/idle-detection "通过 "空闲检测 API" 检测非活动用户 |web 开发"  
-[WebDevNonCompositedAnimations]: https://web.dev/non-composited-animations "避免非合成动画 |web 开发"  
+[WebDevCoopCoep]: https://web.dev/coop-coep "Making your website \"cross-origin isolated\" using COOP and COEP | web.dev"  
+[WebDevIdleDetection]: https://web.dev/idle-detection "Detect inactive users with the Idle Detection API | web.dev"  
+[WebDevNonCompositedAnimations]: https://web.dev/non-composited-animations "Avoid non-composited animations | web.dev"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面可在 [此处](https://developers.google.com/web/updates/2020/08/devtools/index) 找到，并由 [Jecelyn Yeen][JecelynYeen] (开发人员和 DevTools，Chrome \ ) 。  
+> The original page is found [here](https://developers.google.com/web/updates/2020/08/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

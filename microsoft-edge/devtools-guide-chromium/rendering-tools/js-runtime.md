@@ -1,12 +1,12 @@
 ---
-description: 使用 Microsoft Edge DevTools 内存面板识别昂贵的函数。
-title: 加速 JavaScript 运行时
+description: Identify expensive functions using the Microsoft Edge DevTools Memory panel.
+title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,120 +28,120 @@ ms.locfileid: "10993581"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# 加快 JavaScript 运行时  
+# Speed up JavaScript runtime  
 
-使用 " **内存** " 面板识别昂贵的功能。  
+Identify expensive functions using the **Memory** panel.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="示例配置文件" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   示例配置文件  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Sample Profiles  
 :::image-end:::  
 
-### 摘要  
+### Summary  
 
-*   准确记录所调用的函数和 **内存面板中的分配** 采样所需的内存量。  
-*   将配置文件可视化为火焰图表。  
+*   Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** panel.  
+*   Visualize your profiles as a flame chart.  
     
-## 录制采样配置文件  
+## Record a Sampling Profile  
 
-如果注意到 jank 在 JavaScript 中，请收集采样档案。  采样配置文件显示你的页面中的函数所用的运行时间。  
+If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.  
 
-1.  转到 DevTools 的 " **内存** " 面板。  
-1.  选择 " **分配采样** " 单选按钮。  
-1.  选择**开始**。  
-1.  根据你尝试分析的内容，你可以重新加载页面、与页面交互或仅让页面运行。  
-1.  完成后选择 " **停止** " 按钮。  
+1.  Go to the **Memory** panel of DevTools.  
+1.  Select the **Allocation sampling** radio button.  
+1.  Select **Start**.  
+1.  Depending on what you are trying to analyze, you may either reload the page, interact with the page, or just let the page run.  
+1.  Select the **Stop** button when you are finished.  
     
 > [!NOTE]
-> 您也可以使用 [控制台实用工具 API][DevtoolsConsoleUtilities] 从命令行记录和分组配置文件。  
+> You may also use the [Console Utilities API][DevtoolsConsoleUtilities] to record and group profiles from the command line.  
 
-## 查看采样配置文件  
+## View Sampling Profile  
 
-完成录制后，DevTools 会自动在 "**采样配置文件**" 下填入来自录制的数据的**内存**面板。  
+When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.  
 
-默认视图为 " **粗" ("自下而上" ) **。  此视图使你能够查看哪些函数对性能有最大影响，并检查这些函数的调用路径。  
+The default view is **Heavy \(Bottom Up\)**.  This view enables you to see which functions had the most impact on performance and examine the calling paths to those functions.  
 
-### 更改排序顺序  
+### Change sort order  
 
-若要更改排序顺序，请选择 " **焦点选定函数** \ (![ 焦点选定函数 \ ) 图标" 旁边的下拉菜单 ][ImageFocusIcon] ，然后选择下列选项之一。
+To change the sorting order, select the dropdown menu next to the **focus selected function** \(![focus selected function][ImageFocusIcon]\) icon and then choose one of the following options.
 
-**图表**。  显示录制的按时间顺序的图表。  
+**Chart**.  Displays a chronological chart of the recording.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="火焰图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   火焰图  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   Flame chart  
 :::image-end:::  
 
-**粗 \ (下 ) **。  通过对性能的影响列出函数，并使你能够检查这些函数的调用路径。  这是默认视图。  
+**Heavy \(Bottom Up\)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="粗图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   粗图  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Heavy chart  
 :::image-end:::  
 
-**树 \ (页首按 ) **。  显示从调用堆栈顶部开始的调用结构的整体图片。  
+**Tree \(Top Down\)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="树形图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
-   树形图  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
+   Tree chart  
 :::image-end:::  
 
-### 排除函数  
+### Exclude functions  
 
-若要从采样配置文件中排除某个函数，请将其选中，然后选择 " **排除所选函数** \" (" ![ 排除所选函数 ][ImageExcludeIcon] \ ) " 按钮。  已排除的函数 \ (子 ) 的请求函数 \ (parent ) 已分配分配给已排除函数 \ (子 ) 的分配内存。  
+To exclude a function from your Sampling Profile, select it and then select the **exclude selected function** \(![exclude selected function][ImageExcludeIcon]\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
 
-选择 " **还原所有函数** \ (![ 还原所有函数 ][ImageRestoreIcon] \ ) " 按钮将所有已排除的函数还原到录制中。  
+Select the **restore all functions** \(![restore all functions][ImageRestoreIcon]\) button to restore all excluded functions back into the recording.  
 
-## 以图表形式查看采样配置文件  
+## View Sampling Profile as Chart  
 
-"图表" 视图提供了一段时间内采样配置文件的可视化表示形式。  
+The Chart view provides a visual representation of the Sampling Profile over time.  
 
-[录制采样配置文件](#record-a-sampling-profile)后，通过将[排序顺序更改](#change-sort-order)为**图表**，可将录制查看为火焰图表。  
+After you [record a Sampling Profile](#record-a-sampling-profile), view the recording as a flame chart by [changing the sort order](#change-sort-order) to **Chart**.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="火焰图表视图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   火焰图表视图  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   Flame chart view  
 :::image-end:::  
 
-火焰图分成两部分。  
+The flame chart is split into two parts.  
 
-| 食指 | 部件 | 描述 |  
+| index | Part | Description |  
 | --- |:--- |:--- |  
-| raid-1 | 概述 | 整个录制的鸟瞰视图。  条形图的高度对应于调用堆栈的深度。  因此，栏越高，调用堆栈越深。  |  
-| ppls-2 | 调用堆栈 | 这是在录制期间调用的函数的深入视图。  水平轴为时间，垂直轴为调用堆栈。  堆叠按从上到下排列。  因此，函数顶部称为该函数，依此类推。  |  
+| 1 | Overview | A birds-eye view of the entire recording.  The height of the bars correspond to the depth of the call stack.  So, the higher the bar, the deeper the call stack.  |  
+| 2 | Call Stacks | This is an in-depth view of the functions that were called during the recording.  The horizontal axis is time and vertical axis is the call stack.  The stacks are organized top-down.  So, the function on top called the one below it, and so on.  |  
 
-函数会随机着色。  与其他面板中使用的颜色没有关联。  但是，函数在调用中始终具有相同的颜色，以便你可以在每个运行时中查看模式。  
+Functions are colored randomly.  There is no correlation to the colors used in the other panels.  However, functions are always colored the same across invocations so that you are able to see patterns in each runtime.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="已标注的火焰图表" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
-   已标注的火焰图表  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
+   Annotated flame chart  
 :::image-end:::  
 
-高调用堆栈不一定很重要，它只意味着调用了大量函数。  但宽条表示某个函数需要很长时间才能完成。  这些是优化的候选项。  
+A tall call stack is not necessarily significant, it just means that a lot of functions were called.  But a wide bar means that a function took a long time to complete.  These are candidates for optimization.  
 
-### 放大录制的特定部分  
+### Zoom in on specific parts of recording  
 
-选择、按住，然后在概述中向左和向右拖动鼠标，以放大调用堆栈的特定部分。  缩放后，调用堆栈自动显示所选录制部分。  
+Select, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="缩放图表" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
-   缩放图表  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
+   Chart zoomed  
 :::image-end:::  
 
-### 查看函数详细信息  
+### View function details  
 
-选择一个函数以在 " **源** " 面板中查看定义。  
+Select on a function to view the definition in the **Sources** panel.  
 
-将鼠标悬停在函数上以显示名称和计时数据。  提供以下信息。  
+Hover over a function to display the name and timing data.  The following information is provided.  
 
-| 资料 | 描述 |  
+| Detail | Description |  
 |:--- |:--- |  
-| **名称** | 函数的名称。  |  
-| **自大小** | 函数的当前调用的大小，包括函数中的语句。  |  
-| **总大小** | 此函数及其调用的任何函数的当前调用的大小。  |  
-| **URL** | 函数定义在 where 的形式的位置 `base.js:261` `base.js` 是定义函数的文件的名称，并且 `261` 是定义的行号。  |  
+| **Name** | The name of the function.  |  
+| **Self size** | The size of the current invocation of the function, including only the statements in the function.  |  
+| **Total size** | The size of the current invocation of this function and any functions that it called.  |  
+| **URL** | The location of the function definition in the form of `base.js:261` where `base.js` is the name of the file where the function is defined and `261` is the line number of the definition.  |  
 <!--*   **Aggregated self time**.  Aggregate time for all invocations of the function across the recording, not including functions called by this function.  -->  
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="在图表中查看函数的详细信息" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
-   在图表中查看函数的详细信息  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+   View functions details in chart  
 :::image-end:::  
 
-## 与 Microsoft Edge DevTools 团队取得联系  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -153,13 +153,13 @@ ms.locfileid: "10993581"
 
 <!-- links -->  
 
-[DevtoolsConsoleUtilities]: ../console/utilities.md "控制台实用工具 API 参考 |Microsoft 文档"  
-[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "配置文件-控制台实用工具 API 参考 |Microsoft 文档"  
-[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd-控制台实用工具 API 参考 |Microsoft 文档"  
+[DevtoolsConsoleUtilities]: ../console/utilities.md "Console utilities API reference | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile - Console utilities API reference | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - Console utilities API reference | Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面可在 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) 找到，并由 [Kayce Basques][KayceBasques] (技术作者、Chrome DevTools \ & Lighthouse \ ) 和 [Meggin Kearney][MegginKearney] \ (技术作者 \ ) 创作。  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
