@@ -1,12 +1,12 @@
 ---
-description: Open the Command Menu and run the "Disable JavaScript" command.
-title: Disable JavaScript With Microsoft Edge DevTools
+description: 打开 "命令" 菜单并运行 "禁用 JavaScript" 命令。
+title: 通过 Microsoft Edge DevTools 禁用 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: de756e04c91768c49eed50debce97ae91fdaa3bd
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,52 +28,52 @@ ms.locfileid: "10992797"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="4fd7d-104">Disable JavaScript With Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="4fd7d-104">Disable JavaScript With Microsoft Edge DevTools</span></span>  
+# <span data-ttu-id="c1258-104">通过 Microsoft Edge DevTools 禁用 JavaScript</span><span class="sxs-lookup"><span data-stu-id="c1258-104">Disable JavaScript With Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="4fd7d-105">Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-105">Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.</span></span>  
+<span data-ttu-id="c1258-105">完成以下操作可查看禁用 JavaScript 时网页的外观和行为。</span><span class="sxs-lookup"><span data-stu-id="c1258-105">Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.</span></span>  
 
-1.  <span data-ttu-id="4fd7d-106">[Open Microsoft Edge DevTools][DevToolsOpen].</span><span class="sxs-lookup"><span data-stu-id="4fd7d-106">[Open Microsoft Edge DevTools][DevToolsOpen].</span></span>  
-1.  <span data-ttu-id="4fd7d-107">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-107">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="c1258-106">[打开 Microsoft Edge DevTools][DevToolsOpen]。</span><span class="sxs-lookup"><span data-stu-id="c1258-106">[Open Microsoft Edge DevTools][DevToolsOpen].</span></span>  
+1.  <span data-ttu-id="c1258-107">按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。</span><span class="sxs-lookup"><span data-stu-id="c1258-107">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command.msft.png":::
-       <span data-ttu-id="4fd7d-109">The **Command Menu**</span><span class="sxs-lookup"><span data-stu-id="4fd7d-109">The **Command Menu**</span></span>  
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command.msft.png":::
+       <span data-ttu-id="c1258-109">**命令菜单**</span><span class="sxs-lookup"><span data-stu-id="c1258-109">The **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="4fd7d-110">Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-110">Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.</span></span>  <span data-ttu-id="4fd7d-111">JavaScript is now disabled.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-111">JavaScript is now disabled.</span></span>  
+1.  <span data-ttu-id="c1258-110">开始键入 `javascript` ，选择 " **禁用 JavaScript**"，然后按 `Enter` 运行命令。</span><span class="sxs-lookup"><span data-stu-id="c1258-110">Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.</span></span>  <span data-ttu-id="c1258-111">JavaScript 现在已被禁用。</span><span class="sxs-lookup"><span data-stu-id="c1258-111">JavaScript is now disabled.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       <span data-ttu-id="4fd7d-113">Select **Disable JavaScript** in the **Command Menu**</span><span class="sxs-lookup"><span data-stu-id="4fd7d-113">Select **Disable JavaScript** in the **Command Menu**</span></span>  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       <span data-ttu-id="c1258-113">在 "**命令" 菜单**中选择 "**禁用 JavaScript** "</span><span class="sxs-lookup"><span data-stu-id="c1258-113">Select **Disable JavaScript** in the **Command Menu**</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="4fd7d-114">The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-114">The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.</span></span>  
+    <span data-ttu-id="c1258-114">" **来源** " 旁边的黄色警告图标会提醒你已禁用 JavaScript。</span><span class="sxs-lookup"><span data-stu-id="c1258-114">The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       <span data-ttu-id="4fd7d-116">The warning icon next to **Sources**</span><span class="sxs-lookup"><span data-stu-id="4fd7d-116">The warning icon next to **Sources**</span></span>  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       <span data-ttu-id="c1258-116">"**源**" 旁边的 "警告" 图标</span><span class="sxs-lookup"><span data-stu-id="c1258-116">The warning icon next to **Sources**</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="4fd7d-117">JavaScript remains disabled in the tab for as long as you have DevTools open.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-117">JavaScript remains disabled in the tab for as long as you have DevTools open.</span></span>  
+<span data-ttu-id="c1258-117">只要已打开 DevTools，JavaScript 就会在选项卡中保持禁用状态。</span><span class="sxs-lookup"><span data-stu-id="c1258-117">JavaScript remains disabled in the tab for as long as you have DevTools open.</span></span>  
 
-<span data-ttu-id="4fd7d-118">You may want to reload the page to see if and how the page depends on JavaScript while loading.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-118">You may want to reload the page to see if and how the page depends on JavaScript while loading.</span></span>  
+<span data-ttu-id="c1258-118">你可能需要重新加载页面以查看页面是否以及页面在加载时是否依赖 JavaScript。</span><span class="sxs-lookup"><span data-stu-id="c1258-118">You may want to reload the page to see if and how the page depends on JavaScript while loading.</span></span>  
 
-<span data-ttu-id="4fd7d-119">To re-enable JavaScript, complete the following actions.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-119">To re-enable JavaScript, complete the following actions.</span></span>  
+<span data-ttu-id="c1258-119">若要重新启用 JavaScript，请完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="c1258-119">To re-enable JavaScript, complete the following actions.</span></span>  
 
-*   <span data-ttu-id="4fd7d-120">Open the **Command Menu** again and run the `Enable JavaScript` command.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-120">Open the **Command Menu** again and run the `Enable JavaScript` command.</span></span>  
-*   <span data-ttu-id="4fd7d-121">Close DevTools.</span><span class="sxs-lookup"><span data-stu-id="4fd7d-121">Close DevTools.</span></span>  
+*   <span data-ttu-id="c1258-120">再次打开 " **命令" 菜单** 并运行 `Enable JavaScript` 命令。</span><span class="sxs-lookup"><span data-stu-id="c1258-120">Open the **Command Menu** again and run the `Enable JavaScript` command.</span></span>  
+*   <span data-ttu-id="c1258-121">关闭 DevTools。</span><span class="sxs-lookup"><span data-stu-id="c1258-121">Close DevTools.</span></span>  
 
-## <span data-ttu-id="4fd7d-122">Getting in touch with the Microsoft Edge DevTools team</span><span class="sxs-lookup"><span data-stu-id="4fd7d-122">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="c1258-122">与 Microsoft Edge 开发人员工具团队联系</span><span class="sxs-lookup"><span data-stu-id="c1258-122">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
 
 > [!NOTE]
-> <span data-ttu-id="4fd7d-124">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="4fd7d-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="4fd7d-125">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="4fd7d-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="c1258-124">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="c1258-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="c1258-125">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="c1258-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="4fd7d-127">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="4fd7d-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="c1258-127">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="c1258-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

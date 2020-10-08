@@ -1,6 +1,6 @@
 ---
-description: Gets the internal data set on JsrtContext.
-title: JsGetContextData Function | Microsoft Docs
+description: 获取 JsrtContext 上的内部数据集。
+title: JsGetContextData 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,10 +20,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563134"
 ---
-# <span data-ttu-id="ab899-103">JsGetContextData Function</span><span class="sxs-lookup"><span data-stu-id="ab899-103">JsGetContextData Function</span></span>
-<span data-ttu-id="ab899-104">Gets the internal data set on JsrtContext.</span><span class="sxs-lookup"><span data-stu-id="ab899-104">Gets the internal data set on JsrtContext.</span></span>  
+# <span data-ttu-id="6f33e-103">JsGetContextData 函数</span><span class="sxs-lookup"><span data-stu-id="6f33e-103">JsGetContextData Function</span></span>
+<span data-ttu-id="6f33e-104">获取 JsrtContext 上的内部数据集。</span><span class="sxs-lookup"><span data-stu-id="6f33e-104">Gets the internal data set on JsrtContext.</span></span>  
   
-## <span data-ttu-id="ab899-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="ab899-105">Syntax</span></span>  
+## <span data-ttu-id="6f33e-105">语法</span><span class="sxs-lookup"><span data-stu-id="6f33e-105">Syntax</span></span>  
   
 ```cpp  
 STDAPI_(JsErrorCode) JsGetContextData(  
@@ -32,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetContextData(
 );  
 ```  
   
-#### <span data-ttu-id="ab899-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="ab899-106">Parameters</span></span>  
+#### <span data-ttu-id="6f33e-106">参数</span><span class="sxs-lookup"><span data-stu-id="6f33e-106">Parameters</span></span>  
  `context`  
- <span data-ttu-id="ab899-107">The context to get the data from.</span><span class="sxs-lookup"><span data-stu-id="ab899-107">The context to get the data from.</span></span>  
+ <span data-ttu-id="6f33e-107">要从中获取数据的上下文。</span><span class="sxs-lookup"><span data-stu-id="6f33e-107">The context to get the data from.</span></span>  
   
  `data`  
- <span data-ttu-id="ab899-108">The pointer to the data where data will be returned.</span><span class="sxs-lookup"><span data-stu-id="ab899-108">The pointer to the data where data will be returned.</span></span>  
+ <span data-ttu-id="6f33e-108">指向将返回数据的数据的指针。</span><span class="sxs-lookup"><span data-stu-id="6f33e-108">The pointer to the data where data will be returned.</span></span>  
   
-## <span data-ttu-id="ab899-109">Return Value</span><span class="sxs-lookup"><span data-stu-id="ab899-109">Return Value</span></span>  
- <span data-ttu-id="ab899-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span><span class="sxs-lookup"><span data-stu-id="ab899-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span></span>  
+## <span data-ttu-id="6f33e-109">返回值</span><span class="sxs-lookup"><span data-stu-id="6f33e-109">Return Value</span></span>  
+ <span data-ttu-id="6f33e-110">`JsNoError`如果操作成功，则为代码，否则为失败代码。</span><span class="sxs-lookup"><span data-stu-id="6f33e-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span></span>  
   
-## <span data-ttu-id="ab899-111">Remarks</span><span class="sxs-lookup"><span data-stu-id="ab899-111">Remarks</span></span>  
- <span data-ttu-id="ab899-112">Requires an active script context.</span><span class="sxs-lookup"><span data-stu-id="ab899-112">Requires an active script context.</span></span>  
+## <span data-ttu-id="6f33e-111">备注</span><span class="sxs-lookup"><span data-stu-id="6f33e-111">Remarks</span></span>  
+ <span data-ttu-id="6f33e-112">需要活动脚本上下文。</span><span class="sxs-lookup"><span data-stu-id="6f33e-112">Requires an active script context.</span></span>  
   
-## <span data-ttu-id="ab899-113">Requirements</span><span class="sxs-lookup"><span data-stu-id="ab899-113">Requirements</span></span>  
- <span data-ttu-id="ab899-114">**Header:** jsrt.h</span><span class="sxs-lookup"><span data-stu-id="ab899-114">**Header:** jsrt.h</span></span>  
+## <span data-ttu-id="6f33e-113">要求</span><span class="sxs-lookup"><span data-stu-id="6f33e-113">Requirements</span></span>  
+ <span data-ttu-id="6f33e-114">**页眉：** jsrt</span><span class="sxs-lookup"><span data-stu-id="6f33e-114">**Header:** jsrt.h</span></span>  
   
-## <span data-ttu-id="ab899-115">See Also</span><span class="sxs-lookup"><span data-stu-id="ab899-115">See Also</span></span>  
- [<span data-ttu-id="ab899-116">Reference (JavaScript Runtime)</span><span class="sxs-lookup"><span data-stu-id="ab899-116">Reference (JavaScript Runtime)</span></span>](../chakra-hosting/reference-javascript-runtime.md)
+## <span data-ttu-id="6f33e-115">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6f33e-115">See Also</span></span>  
+ [<span data-ttu-id="6f33e-116">应用 (JavaScript Runtime)</span><span class="sxs-lookup"><span data-stu-id="6f33e-116">Reference (JavaScript Runtime)</span></span>](../chakra-hosting/reference-javascript-runtime.md)

@@ -1,5 +1,5 @@
 ---
-title: Windows Runtime DateTime and TimeSpan Representations
+title: Windows Runtime DateTime 和 TimeSpan 表示形式
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -24,23 +24,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942052"
 ---
-# <span data-ttu-id="8f65a-102">Windows Runtime DateTime and TimeSpan representations</span><span class="sxs-lookup"><span data-stu-id="8f65a-102">Windows Runtime DateTime and TimeSpan representations</span></span>  
+# <span data-ttu-id="ab2ac-102">Windows Runtime DateTime 和 TimeSpan 表示形式</span><span class="sxs-lookup"><span data-stu-id="ab2ac-102">Windows Runtime DateTime and TimeSpan representations</span></span>  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-<span data-ttu-id="8f65a-103">The JavaScript representation of dates and times is different from the Windows Runtime version.</span><span class="sxs-lookup"><span data-stu-id="8f65a-103">The JavaScript representation of dates and times is different from the Windows Runtime version.</span></span>  <span data-ttu-id="8f65a-104">The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).</span><span class="sxs-lookup"><span data-stu-id="8f65a-104">The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).</span></span>  <span data-ttu-id="8f65a-105">If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.</span><span class="sxs-lookup"><span data-stu-id="8f65a-105">If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.</span></span>  <span data-ttu-id="8f65a-106">JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.</span><span class="sxs-lookup"><span data-stu-id="8f65a-106">JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.</span></span>  
+<span data-ttu-id="ab2ac-103">日期和时间的 JavaScript 表示形式与 Windows 运行时版本不同。</span><span class="sxs-lookup"><span data-stu-id="ab2ac-103">The JavaScript representation of dates and times is different from the Windows Runtime version.</span></span>  <span data-ttu-id="ab2ac-104">Windows 运行时 [日期时间][UwpWindowsFoundationDatetime] 结构在 javascript 中表示为一个日期，该 [日期][MDNDate] 具有与数据 \ (匹配的后备存储 `DateTime` ，并且从 JavaScript \ ) 具有不同的范围和精度 `Date` 。</span><span class="sxs-lookup"><span data-stu-id="ab2ac-104">The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).</span></span>  <span data-ttu-id="ab2ac-105">如果你修改此自定义 `Date` 对象，它将变为标准 JavaScript `Date` 并丢失精度。</span><span class="sxs-lookup"><span data-stu-id="ab2ac-105">If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.</span></span>  <span data-ttu-id="ab2ac-106">JavaScript `Date` 值可以传递到 Windows 运行时， `DateTime` 并将进行范围检查，这可能会导致封送处理异常。</span><span class="sxs-lookup"><span data-stu-id="ab2ac-106">JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.</span></span>  
 
- <span data-ttu-id="8f65a-107">The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.</span><span class="sxs-lookup"><span data-stu-id="8f65a-107">The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.</span></span>  
+ <span data-ttu-id="ab2ac-107">Windows 运行时 [TimeSpan][UwpWindowsFoundationTimespan] 结构将转换为毫秒并作为 JavaScript 编号返回。</span><span class="sxs-lookup"><span data-stu-id="ab2ac-107">The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.</span></span>  
 
-## <span data-ttu-id="8f65a-108">See also</span><span class="sxs-lookup"><span data-stu-id="8f65a-108">See also</span></span>  
+## <span data-ttu-id="ab2ac-108">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ab2ac-108">See also</span></span>  
 
-[<span data-ttu-id="8f65a-109">Using the Windows Runtime in JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f65a-109">Using the Windows Runtime in JavaScript</span></span>][WindowsRuntimeJavascript]  
+[<span data-ttu-id="ab2ac-109">在 JavaScript 中使用 Windows 运行时</span><span class="sxs-lookup"><span data-stu-id="ab2ac-109">Using the Windows Runtime in JavaScript</span></span>][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "在 JavaScript | 中使用 Windows 运行时Microsoft 文档"  
 
-[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "DateTime Struct | Microsoft Docs"  
-[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "TimeSpan Struct | Microsoft Docs"  
+[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "DateTime 结构 |Microsoft 文档"  
+[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "TimeSpan 结构 |Microsoft 文档"  
 
-[MDNDate]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date "Date | MDN"  
+[MDNDate]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date "日期 |MDN"  
