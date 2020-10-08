@@ -1,12 +1,12 @@
 ---
-description: Features added to the Microsoft Edge DevTools in the Windows 10 Fall Creators Update (EdgeHTML 16)
-title: DevTools in EdgeHTML 16
+description: 在 Windows 10 秋季创意者更新 (EdgeHTML 16) 中添加到 Microsoft Edge DevTools 的功能
+title: EdgeHTML 16 中的 DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 16
+keywords: microsoft edge、web 开发、f12 工具、devtools、edgehtml 16
 ms.custom: seodec18
 ms.openlocfilehash: 78ede81e022cc8f0f623ecd33fd2303314ec9cb0
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,117 +15,117 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563438"
 ---
-# DevTools in the Windows 10 Fall Creators Update (EdgeHTML 16)
+# DevTools 中的 Windows 10 秋季创意者更新 (EdgeHTML 16) 
 
-With this release we started a major DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today! 
+在此版本中，我们为改进的可靠性和性能开始了重大 DevTools 重构工作，同时还添加了一组可开始使用今天的新功能！ 
 
-Here are the Microsoft Edge DevTools features that shipped with the [Windows 10 Fall Creators Update](/windows/uwp/whats-new/windows-10-build-16299) ([EdgeHTML 16](https://aka.ms/devguide_edgehtml_16)).
+下面是 [Windows 10 秋季制作者](/windows/uwp/whats-new/windows-10-build-16299) DevTools 随附的 Microsoft Edge 功能更新， ([EdgeHTML 16](https://aka.ms/devguide_edgehtml_16)) 。
 
-## Ancestor event listeners 
+## 上级事件侦听器 
 
-The **Events** pane now adds the option to view event listeners registered on any ancestor of the currently selected element (in the **Elements** panel), in addition to those on the element itself. Additionally, you can now group the event listener display by either *Event* or *Element*. 
+" **事件** " 窗格现在添加选项以查看在 " **元素** " 面板中的当前所选元素的任何上级上注册的事件侦听器，以及元素本身的 () 。 此外，你现在可以按 *事件* 或 *元素*对事件侦听器显示进行分组。 
 
-![Event listener inspection pane](../media/elements_ancestor_events.png)
+![事件侦听器检查窗格](../media/elements_ancestor_events.png)
 
-## DOM mutation breakpoints
+## DOM 转变断点
 
-You can now set DOM mutation breakpoints to break into the Debugger whenever a selected element node changes. From the **Elements** panel, rt-click on any element in the DOM tree view and select one or more of the following:
+现在，你可以将 DOM 转变断点设置为在所选元素节点发生更改时中断调试程序。 从 " **元素** " 面板中，rt-单击 DOM 树视图中的任意元素，然后选择以下一个或多个操作：
 
- - Break on Node removed
- - Break on Subtree modified
- - Break on Attribute modified
+ - 删除节点上的中断
+ - 已修改子树的中断
+ - 属性被修改时中断
 
-You can manage your mutation breakpoints from the **DOM breakpoints** pane in the **Elements** or **Debugger** panels.
+你可以从 "**元素**" 或 "**调试器**" 面板中的 " **DOM 断点**" 窗格管理变化断点。
 
-![DOM breakpoints pane](../media/elements_dom_breakpoints.png)
+![DOM 断点窗格](../media/elements_dom_breakpoints.png)
 
-## CSS at-rule support
+## CSS at 规则支持
 
-CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** pane, including animation `@keyframes` rules (currently limited to read-only), `@supports` feature queries, and `@media` queries.
+CSS "at" ( @ ) 规则现在表示在 " **样式** " 窗格上的其他 CSS 规则声明中，包括动画 `@keyframes` 规则 (当前仅限于只读) 、 `@supports` 功能查询和 `@media` 查询。
 
-![CSS at-rules inspection from the  DevTools Style pane](../media/elements_at_rules.png)
+![来自 DevTools 样式窗格的 CSS at 规则检查](../media/elements_at_rules.png)
 
-## CSS fonts pane
+## CSS 字体窗格
 
-CSS `@font-face` rules now have their own dedicated **Fonts** pane that displays where the font is loaded from (*Local* or *Network*) and how many characters are using it. If a font is loaded from the network,  DevTools will display the rule that imported it along with its alias and font type.
+CSS `@font-face` 规则现在有自己的专用 " **字体** " 窗格，显示从 (*本地* 或 *网络*) 加载字体的位置以及使用该字体的字符数。 如果从网络加载字体，DevTools 将显示导入该字体及其别名和字体类型的规则。
 
-![CSS font information](../media/elements_fonts.png)
+![CSS 字体信息](../media/elements_fonts.png)
 
-## CSS pseudo-element support
+## CSS 伪元素支持
 
-The **Styles** pane now groups pseudo-elements under their own headings and no longer displays their content as crossed out.
+" **样式** " 窗格现在将伪元素分组在其自己的标题下，不再显示其内容，如带删除线。
 
-**Before:**
+**之前：**
 <br>
-![Generated content was previously crossed out](../media/gc_before.png)
+![以前已删除生成的内容](../media/gc_before.png)
 
-**After:**
+**之后：**
 <br>
-![Generated content no longer displays with a strikethrough](../media/gc_after.png)
+![带有删除线的生成内容不再显示](../media/gc_after.png)
 
-## Console improvements
+## 增强了控制台
 
-The **Console** panel got a UX overhaul for improved usability and a faster, richer Intellisense experience.
+**控制台**面板为提高可用性和更快、更丰富的智能感知体验获得了 UX
 
-**Before:**
-![Previous console](../media/console_old.png)
+**之前：** 
+![以前的控制台](../media/console_old.png)
 
-**After:**
-![New console](../media/console_new.png)
+**在：** 
+![新的控制台](../media/console_new.png)
 
-We also added these improvements:
+我们还添加了以下改进：
 
- -  Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
+ -  用于 `Shift + Enter` 在执行命令前将另一行添加到命令 `Enter` 。  (以前有一个 *切换到多行/单行模式* 切换按钮。 ) 
 
- - The following new APIs are supported:
-    - [**console.table(***object***)**](../console/console-api.md#organizing-log-output) method
-    - [**getEventListeners(***object***)**](../console/command-line.md#event-listeners) command
-    - [**keys(***object***)**](../console/command-line.md#object-inspection) command
-    - [**values(***object***)**](../console/command-line.md#object-inspection) command
-    - [**$x(***xpath expression***)**](../console/command-line.md#dom-selectors) selector
+ - 以下新 Api 受支持：
+    - [** (***对象***) 方法的 "console" 表**](../console/console-api.md#organizing-log-output)
+    - [**getEventListeners (***对象***) **](../console/command-line.md#event-listeners) 命令
+    - [** (***对象***) **](../console/command-line.md#object-inspection) 命令的键
+    - [** (***对象***) **](../console/command-line.md#object-inspection) 命令的值
+    - [**$x (***xpath 表达式***) **](../console/command-line.md#dom-selectors) 选择器
 
- - The [**%c()**](../console/console-api.md#logging-custom-messages) formatting parameter is now supported
+ - [**% C ( # B1**](../console/console-api.md#logging-custom-messages)格式参数现已支持
 
-## Debugging improvements
+## 调试改进
 
-In addition to a suite of new features for debugging your [PWA service workers and cache](#progressive-web-app-debugging), the Debugger added these features:
+除了用于调试 [PWA 服务工作人员和缓存](#progressive-web-app-debugging)的一组新功能之外，调试器还添加了这些功能：
 
-### Consolidated debugging for shared resources
+### 共享资源的合并调试
 
-Even when a resource, such as a file loaded from CDN, is referenced multiple times throughout your code,  DevTools will now provide a single debugging instance for that file where you can then set common breakpoints which will be hit regardless of where that file is referenced. (Previously each script reference was considered a unique resource would map to a separate set of breakpoints.)
+即使在你的代码中多次引用某个资源（如从 CDN 加载的文件），DevTools 现在也会为该文件提供单个调试实例，你可以在该文件中设置将命中的常用断点，而不管该文件的引用位置。  (之前，每个脚本引用均被视为唯一资源将映射到单独的一组断点。 ) 
 
-### Live edit JavaScript with *Edit-on-idle*
+### 实时编辑 JavaScript 和 *"空闲时编辑"*
 
-You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** panel, edit, then click **Save** (or `Ctrl+S`) to test your changes next time that section of code runs. 
+现在，你可以在调试会话期间编辑 JavaScript live。 此功能已 experimentally 在 [以前](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 创意者更新*) 版本中的标志) 后面 (可用，现在是永久性的功能。 只需从 " **调试程序** " 面板中选择任意脚本文件，"编辑"，然后单击 " **保存** (" 或 " `Ctrl+S`) " 以在下次运行该代码段时测试所做的更改。 
 
-![The debugger enables you to live edit script and diff the changes](../media/debugger_edit_buttons.png) 
+![调试器使你能够实时编辑脚本并比较更改](../media/debugger_edit_buttons.png) 
 
-Click the **Compare document to original** button to view the diff of what you changed.
+单击 " **将文档与原始文档比较** " 按钮以查看更改内容的差异。
 
-![Diff view of edited code in the Debugger](../media/debugger_edit_code.png) 
+![调试器中编辑代码的比较视图](../media/debugger_edit_code.png) 
 
-Please be aware of the following constraints:
+请注意以下限制：
 
-- Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
-- Edits are saved in memory and flushed when the document is reloaded, thus you won’t be able to run edits inside a `DOMContentLoaded` handler, for example
-- Currently there’s no way (such as a **Save As** option) to save your edits to disk from  DevTools
+- 脚本编辑仅适用于外部 *.js* 文件 (且不嵌入 `<script>` 在 *.html*) 中
+- 编辑保存在内存中，并在重新加载文档时进行刷新，因此你无法在处理程序内运行编辑 `DOMContentLoaded` ，例如
+- 目前没有办法 (例如 " **另存为** " 选项) 将您的编辑内容从 DevTools 保存到磁盘。
 
-## Shortcuts
+## 快捷方式
 
-You can now launch DevTools to the last viewed panel (`Ctrl+Shift+I`) or directly to the Console (`Ctrl+Shift+J`) just like you would on other major browsers.
+现在，你可以将 DevTools 启动到最后一个已查看的面板 (`Ctrl+Shift+I`) 或直接与控制台 (`Ctrl+Shift+J`) ，就像在其他主流浏览器上一样。
 
-## Progressive Web App debugging
+## 渐进 Web 应用调试
 
-Test out the experimental support for Progressive Web Apps (PWAs) in Microsoft Edge and  DevTools by selecting the **Enable service workers** option from `about:flags` (and restarting Microsoft Edge). If a site makes use of **Service Workers** and/or the **Cache** API,  will populate entries in the **Debugger** panel for each origin, similar to how web storage and cookie inspection work.
+通过从 (和重启 Microsoft Edge) 中选择 " **启用服务工作线程** " 选项来测试累进 Web 应用 (PWAs) 在 microsoft Edge 和 DevTools 中的实验性支持 `about:flags` 。 如果网站使用 **服务工作者** 和/或 **缓存** API，将在 **调试器** 面板中为每个源填充条目，类似于 web 存储和 cookie 检查的工作方式。
 
-Clicking on a specific service worker entry will open up the **Service Worker Overview**, where you can manage the service worker registration for the given scope and force a test push notification. You can also **Stop**/**Start** individual service workers and **Inspect** them from a separate debugger window:
+单击特定的服务工作人员条目将打开 " **服务工作人员" 概览**，您可以在其中管理给定范围的服务工作人员注册并强制实施测试推送通知。 您还可以**停止** / **启动**单个服务工作人员并从单独的调试器窗口**检查**它们：
 
-![Service Worker Overview pane](../media/debugger_sw_overview.png)
+![服务工作人员概述窗格](../media/debugger_sw_overview.png)
 
-Please note the following about service worker debugging:
+请注意以下有关服务工作者调试的信息：
 
- - Debugging a service worker will launch a new instance of the DevTools separate from the page's tools because service workers can be shared across multiple tabs. 
- - The [Elements](../elements.md) and [Emulation](../emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
- - Currently network traffic for a service worker is only reported from the DevTools debugging instance for that worker, and not from the central instance for the page itself.
+ - 调试服务工作人员将启动与页面工具分开的 DevTools 的新实例，因为服务工作人员可以在多个选项卡之间共享。 
+ - 如果服务工作者在后台运行，并且不直接控制应用的前端，则服务工作器调试器中不存在 [元素](../elements.md) 和 [仿真](../emulation.md) 面板。
+ - 当前，服务工作者的网络流量仅从该工作人员的 DevTools 调试实例，而不是从页面本身的中央实例中报告。
 
-Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs).
+单击特定的缓存条目将打开 **缓存** 管理器，您可以在其中检测和删除缓存项 (*请求* 和 *响应* 键/值对) 。

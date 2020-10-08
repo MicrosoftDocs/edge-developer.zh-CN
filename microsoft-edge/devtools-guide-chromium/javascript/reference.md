@@ -1,12 +1,12 @@
 ---
-description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
-title: JavaScript Debugging Reference
+description: 了解 Microsoft Edge DevTools 调试功能的此全面参考中的新调试工作流。
+title: JavaScript 调试引用
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: f11dfb52e97dcec20d1e6c4f3adeee7010857a33
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,31 +28,31 @@ ms.locfileid: "10993420"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# JavaScript febugging reference  
+# JavaScript febugging 参考  
 
-Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.  
+通过以下完整的 Microsoft Edge DevTools 调试功能参考发现新的调试工作流。  
 
-See [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] to learn the basics of debugging.  
+有关调试的基础知识，请参阅 [开始在 Microsoft Edge DevTools 中调试 JavaScript][DevToolsJavascriptGetStarted] 。  
 
-## Pause code with breakpoints  
+## 暂停带断点的代码  
 
-Set a breakpoint so that you are able to pause your code in the middle of the runtime.  
+设置断点，以便你可以在运行时的中间暂停代码。  
 
-See [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints] to learn how to set breakpoints.  
+请参阅 [暂停带断点的代码][DevToolsJavascriptBreakpoints] ，了解如何设置断点。  
 
-## Step through code  
+## 逐句通过代码  
 
-Once your code is paused, step through it, one line at a time, investigating control flow and property values along the way.  
+代码暂停后，逐个遍历它，一次一行，以调查控制流和属性值的方式。  
 
-### Step over line of code  
+### 跳过代码行  
 
-When paused on a line of code containing a function that is not relevant to the problem you are debugging, click the **Step over** \(![Step over][ImageStepOverIcon]\) button to run the function without stepping into it.  
+当在包含与你调试的问题不相关的函数的代码行上暂停时，请单击 " **步骤超过** \ (![ ][ImageStepOverIcon] \ ) " 按钮以运行该函数，而无需单步执行该函数。  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Select Step over" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
-   Select **Step over**  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
+   选择 "**逐步骤**"  
 :::image-end:::  
 
-For example, suppose you are debugging the following code snippet.  
+例如，假设你正在调试以下代码片段。  
 
 ```javascript
 function updateHeader() {
@@ -66,17 +66,17 @@ function getName() {
 }
 ```  
 
-You are paused on `A`.  By pressing **Step over**, DevTools runs all the code in the function that you are stepping over, which is `B` and `C`.  DevTools then pauses on `D`.  
+您已暂停 `A` 。  通过按 " **逐步骤**"，DevTools 将运行你正在执行的函数中的所有代码，即 `B` 和 `C` 。  DevTools 然后暂停 `D` 。  
 
-### Step into line of code  
+### 单步执行代码行  
 
-When paused on a line of code containing a function call that is related to the problem you are debugging, click the **Step into** \(![Step into][ImageStepIntoIcon]\) button to investigate that function further.  
+当暂停包含与你正在调试的问题相关的函数调用的代码行时，请单击 **步骤** " (单步执行" ![ ) " ][ImageStepIntoIcon] 按钮，以进一步调查该功能。  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Select Step over" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
-   Select **Step into**  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
+   选择**单步**执行  
 :::image-end:::  
 
-For example, suppose you are debugging the following code snippet.  
+例如，假设你正在调试以下代码片段。  
 
 ```javascript
 function updateHeader() {
@@ -90,17 +90,17 @@ function getName() {
 }
 ```  
 
-You are paused on `A`.  By pressing **Step into**, DevTools runs this line of code, then pauses on `B`.  
+您已暂停 `A` 。  通过按 " **单步执行**"，DevTools 将运行此行代码，然后暂停 `B` 。  
 
-### Step out of line of code  
+### 跳出代码行  
 
-When paused inside of a function that is not related to the problem you are debugging, click the **Step out** \(![Step out][ImageStepOutIcon]\) button to run the rest of the code of the function.  
+当在与你调试的问题不相关的函数内暂停时，请单击 " **跳出** " (" ![ 跳出" ][ImageStepOutIcon] ) 按钮以运行函数的其余代码。  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Select Step over" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
-   Select **Step out**  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
+   选择 "**跳出**"  
 :::image-end:::  
 
-For example, suppose you are debugging the following code snippet.  
+例如，假设你正在调试以下代码片段。  
 
 ```javascript
 function updateHeader() {
@@ -114,25 +114,25 @@ function getName() {
 }
 ```  
 
-You are paused on `A`.  By pressing **Step out**, DevTools runs the rest of the code in `getName()`, which is just `B` in this example, and then pauses on `C`.  
+您已暂停 `A` 。  通过按 " **跳出**"，DevTools 将运行中的其余代码 `getName()` ，这就是在 `B` 此示例中，然后暂停 `C` 。  
 
-### Run all code up to a specific line  
+### 运行到特定行的所有代码  
 
-When debugging a long function, there may be a lot of code that is not related to the problem you are debugging.  
+调试长函数时，可能有许多与你正在调试的问题无关的代码。  
 
-You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then click the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button, but there is a faster way.  
+你可以选择单步执行所有行，但这是单调乏味的。  你可以选择在感兴趣的行上设置代码行断点，然后单击 " **恢复脚本执行** " (" ![ 恢复脚本执行" ][ImageResumeScriptExecutionIcon] \ ) 按钮，但有更快的方法。  
 
-Right-click the line of code in which you are interested, and select **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.  
+右键单击您感兴趣的代码行，然后选择 " **继续到此处**"。  DevTools 运行到该点的所有代码，然后在该行上暂停。  
 
-:::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="Select Step over" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
-   Select **Continue to here**  
+:::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
+   选择 "**继续到此处**"  
 :::image-end:::  
 
-### Restart the top function of the call stack  
+### 重启调用堆栈的 top 函数  
 
-While paused on a line of code, right-click anywhere in the **Call Stack** pane and select **Restart Frame** to pause on the first line of the top function in your call stack.  The top function is the last function that was run.  
+在一行代码中暂停时，右键单击 " **调用堆栈** " 窗格中的任意位置，然后选择 " **重新启动帧** " 以在调用堆栈中 top 函数的第一行暂停。  Top 函数是最后运行的函数。  
 
-The following code snippet is an example for you to step-through.  
+下面的代码片段是用于执行分步操作的示例。  
 
 ```javascript
 function factorial(n) {
@@ -144,77 +144,77 @@ function factorial(n) {
 }
 ```  
 
-You are paused on `A`.  After clicking **Restart Frame**, you should be paused on `B`, without ever setting a breakpoint or pressing **Resume script execution**.  
+您已暂停 `A` 。  单击 " **重启帧**" 后，你应该暂停在 `B` ，不进行任何设置断点或按 " **恢复脚本执行**"。  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Select Step over" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
-   Select **Restart Frame**  
+:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
+   选择 "**重启帧**"  
 :::image-end:::  
 
-### Resume script runtime  
+### 恢复脚本运行时  
 
-To continue the runtime after a pause of your script, click the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button.  DevTools runs the script up until the next breakpoint, if any.  
+若要在暂停脚本后继续运行时，请单击 " **恢复脚本执行** " (" ![ 恢复脚本执行" ][ImageResumeScriptExecutionIcon] \ ) 按钮。  DevTools 运行脚本，直到出现下一个断点（如果有）。  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Select Step over" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
-   Select **Resume script execution**  
+:::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
+   选择 "**恢复脚本执行**"  
 :::image-end:::  
 
-#### Force script runtime  
+#### 强制脚本运行时  
 
-To ignore all breakpoints and force your script to resume running, click and hold the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button and then select the **Force script execution** \(![Force script execution][ImageForceScriptExecutionIcon]\) button.  
+若要忽略所有断点并强制脚本恢复运行，请单击并按住 " **恢复脚本执行** " (" ![ 恢复脚本执行 \ ][ImageResumeScriptExecutionIcon] ) " 按钮，然后选择 " **强制** 脚本执行" (![ 强制脚本执行 ][ImageForceScriptExecutionIcon] \ ) "按钮。  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Select Step over" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
-   Select **Force script execution**  
+:::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
+   选择 "**强制脚本执行**"  
 :::image-end:::  
 
-### Change thread context  
+### 更改线程上下文  
 
-When working with web workers or service workers, click on a context listed in the **Threads** pane to switch to that context.  The blue arrow icon represents which context is currently selected.  
+处理 web 工作人员或服务工作者时，单击 " **线程** " 窗格中列出的上下文以切换到该上下文。  蓝色箭头图标表示当前选择的上下文。  
 
-:::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="Select Step over" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
-   The **Threads** pane  
+:::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
+   " **线程** " 窗格  
 :::image-end:::  
 
-For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** panel is showing the main script context.  By clicking on the service worker entry in the **Threads** pane, you should be able to switch to that context.  
+例如，假设你的主脚本和你的服务工作脚本中的断点暂停。  你希望查看服务工作上下文的本地属性和全局属性，但 " **源** " 面板显示的是主脚本上下文。  通过单击 " **线程** " 窗格中的 "服务工作人员" 条目，你应该能够切换到该上下文。  
 
-## View and edit local, closure, and global properties  
+## 查看和编辑本地、关闭和全局属性  
 
-While paused on a line of code, use the **Scope** pane to view and edit the values of properties and variables in the local, closure, and global scopes.  
+当在一行代码上暂停时，请使用 " **范围** " 窗格查看和编辑本地、关闭和全局范围中的属性和变量值。  
 
-*   Double-click a property value to change it.  
-*   Non-enumerable properties are greyed out.  
+*   双击属性值进行更改。  
+*   不可枚举的属性将呈灰色。  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="Select Step over" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
-   The **Scope** pane  
+:::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
+   " **范围** " 窗格  
 :::image-end:::  
 
-## View the current call stack  
+## 查看当前调用堆栈  
 
-While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.  
+当在一行代码上暂停时，请使用 " **调用堆栈** " 窗格查看向您提供此点的调用堆栈。  
 
 <!--If you are working with async code, check the **Async** checkbox to enable async call stacks.  -->  
 
-Click on an entry to jump to the line of code where that function was called.  The blue arrow icon represents which function DevTools is currently highlighting.  
+单击某个条目可跳转到调用该函数的代码行。  蓝色箭头图标表示当前突出显示的函数 DevTools。  
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Select Step over" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
-   The **Call Stack** pane  
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
+   " **调用堆栈** " 窗格  
 :::image-end:::  
 
 > [!NOTE]
-> When not paused on a line of code, the **Call Stack** pane is empty.  
+> 在代码行上未暂停时，" **调用堆栈** " 窗格为空。  
 
-### Copy stack trace  
+### 复制堆栈跟踪  
 
 <!--
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-Right-click anywhere in the **Call Stack** pane and select **Copy stack trace** to copy the current call stack to the clipboard.  
+右键单击 " **调用堆栈** " 窗格中的任意位置，然后选择 " **复制堆栈跟踪** " 将当前调用堆栈复制到剪贴板。  
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Select Step over" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
-   Select **Copy Stack Trace**  
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
+   选择 "**复制堆栈跟踪**"  
 :::image-end:::  
 
-The following code snippet is an example of the output.  
+以下代码片段是输出的示例。  
 
 ```javascript
 getNumber1 (get-started.js:35)
@@ -222,11 +222,11 @@ inputsAreEmpty (get-started.js:22)
 onClick (get-started.js:15)
 ```  
 
-## Ignore a script or pattern of scripts  
+## 忽略脚本或脚本模式  
 
-Mark a script as Library code when you want to ignore that script while debugging.  When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.  
+当你希望在调试时忽略该脚本时，请将脚本标记为库代码。  当标记为 "库代码" 时，脚本将在 " **调用堆栈** " 窗格中被遮住，当你单步执行你的代码时，将不会单步执行脚本的函数。  
 
-The following code snippet is an example for you to step-through.  
+下面的代码片段是用于执行分步操作的示例。  
 
 ```javascript
 function animate() {
@@ -236,90 +236,90 @@ function animate() {
 }
 ```  
 
-`A` is a third-party library that you trust.  If you are confident that the problem you are debugging is not related to the third-party library, then it makes sense to mark the script as **Library code**.  
+`A` 是您信任的第三方库。  如果您确信所调试的问题与第三方库无关，则将脚本标记为 **库代码**是有意义的。  
 
-### Mark a script as Library code from the Editor pane  
+### 将脚本标记为 "编辑器" 窗格中的库代码  
 
-Complete the following actions to mark a script as **Library code** from the **Editor** pane.  
+完成以下操作以将脚本标记为 "**编辑器**" 窗格中的**库代码**。  
 
-1.  Open the file.  
-1.  Right-click anywhere.  
-1.  Select **Mark as Library code**.  
+1.  打开文件。  
+1.  右键单击任意位置。  
+1.  选择 " **标记为库代码**"。  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Select Step over" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
-       Mark a script as **Library code** from the **Editor** pane  
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
+       将脚本标记为 "**编辑器**" 窗格中的**库代码**  
     :::image-end:::  
     
-### Mark a script as Library code from the Call Stack pane  
+### 将脚本标记为 "调用堆栈" 窗格中的库代码  
 
-Compelte the folliwng actions to mark a script as **Library code** from the **Call Stack** pane.  
+Compelte folliwng 操作将脚本标记为 "**调用堆栈**" 窗格中的**库代码**。  
 
-1.  Right-click on a function from the script.  
-1.  Select **Mark as Library code**.  
+1.  右键单击脚本中的函数。  
+1.  选择 " **标记为库代码**"。  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Select Step over" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
-       Mark a script as **Library code** from the **Call Stack** pane  
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+       将脚本标记为 "**调用堆栈**" 窗格中的**库代码**  
     :::image-end:::  
     
-### Mark a script as Library code from Settings  
+### 将脚本标记为来自设置的库代码  
 
-Complete the following actions to mark a single script or pattern of scripts from **Settings**.  
+完成以下操作，从 " **设置**" 中标记单个脚本或脚本模式。  
 
-1.  Open [Settings][DevToolsCustomize].  
-1.  Go to the **Library code** tab.  
-1.  Click **Add pattern**.  
-1.  Enter the script name or a regex pattern of script names to mark as **Library code**.  
-1.  Click **Add**.  
+1.  打开 " [设置][DevToolsCustomize]"。  
+1.  转到 " **库代码** " 选项卡。  
+1.  单击 " **添加图案**"。  
+1.  输入脚本名称或要标记为 **库代码**的脚本名称的正则表达式模式。  
+1.  单击**添加**。  
     
-    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Select Step over" lightbox="../media/javascript-framework-library-code.msft.png":::
-       Mark a script as **Library code** from **Settings**  
+    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-framework-library-code.msft.png":::
+       将脚本标记为来自**设置**的**库代码**  
     :::image-end:::  
     
-## Run snippets of debug code from any page   
+## 从任意页面运行调试代码片段   
 
-If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.  
+如果您发现自己在控制台中同时运行相同的调试代码，请考虑代码段。  代码段是你在 DevTools 内创作、存储和运行的运行时脚本。  
 
-See [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets] to learn more.  
+请参阅 [从任意页面运行代码片段][DevToolsJavascriptSnippets] 以了解详细信息。  
 
-## Watch the values of custom JavaScript expressions  
+## 监视自定义 JavaScript 表达式的值  
 
-Use the **Watch** pane to watch the values of custom expressions.  You may watch any valid JavaScript expression.  
+使用 " **监视** " 窗格监视自定义表达式的值。  你可能会注意到任何有效的 JavaScript 表达式。  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Select Step over" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
-   The **Watch** pane  
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+   " **监视** " 窗格  
 :::image-end:::  
 
-*   Click the **Add Expression** \(![Add Expression][ImageAddExpressionIcon]\) button to create a new watch expression.  
-*   Click the **Refresh** \(![Refresh][ImageRefreshIcon]\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
-*   Hover over an expression and click the **Delete Expression** \(![Delete Expression][ImageDeleteExpressionIcon]\) button to delete it.  
+*   单击 " **添加表达式** \ (![ 添加表达式 ][ImageAddExpressionIcon] \ ) " 按钮以创建新的监视表达式。  
+*   单击 " **刷新** \ (![ refresh ][ImageRefreshIcon] \ ) " 按钮以刷新所有现有表达式的值。  逐句通过代码时，值会自动刷新。  
+*   将鼠标悬停在某个表达式上，然后单击 " **删除表达式** \ (![ 删除表达式 ][ImageDeleteExpressionIcon] \ ) " 按钮将其删除。  
 
-## Make a minified file readable  
+## 使 minified 文件易于阅读  
 
-Click the **Format** \(![Format][ImageFormatIcon]\) button to make a minified file human-readable.  
+单击 " **格式** \ (![ 格式 ][ImageFormatIcon] \ ) " 按钮，使 minified 文件易于阅读。  
 
-:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Select Step over" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
-   The **Format** button  
+:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
+   " **格式** " 按钮  
 :::image-end:::  
 
-## Edit a script   
+## 编辑脚本   
 
-When fixing a bug, you often want to test out some changes to your JavaScript code.  You do not need to make the changes in an external editor or IDE and then reload the page.  You may edit your script in DevTools.  
+修复 bug 时，你经常希望测试对 JavaScript 代码所做的一些更改。  无需在外部编辑器或 IDE 中进行更改，然后重新加载页面。  你可以在 DevTools 中编辑脚本。  
 
-Complete the following actions to edit a script.  
+完成以下操作以编辑脚本。  
 
-1.  Open the file in the **Editor** pane of the **Sources** panel.  
-1.  Make your changes in the **Editor** pane.  
-1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
+1.  在 "**源**" 面板的 "**编辑器**" 窗格中打开该文件。  
+1.  在 " **编辑器** " 窗格中进行更改。  
+1.  按 `Ctrl` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存。  DevTools 将整个 JS 文件修补到 Microsoft Edge 的 JavaScript 引擎中。  
     
-    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Select Step over" lightbox="../media/javascript-sources-html-minified.msft.png":::
-       The **Editor** pane  
+    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="选择 &quot;逐步骤&quot;" lightbox="../media/javascript-sources-html-minified.msft.png":::
+       " **编辑器** " 窗格  
     :::image-end:::  
      
-## Disable JavaScript   
+## 禁用 JavaScript   
 
-See [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].  
+请参阅 [禁用 Microsoft Edge DevTools JavaScript][DevToolsJavascriptDisable]。  
 
-## Getting in touch with the Microsoft Edge DevTools team  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -337,11 +337,11 @@ See [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable]
 
 <!-- links -->  
 
-[DevToolsJavascriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript with Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptGetStarted]: ./index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptSnippets]: ./snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsCustomize]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptBreakpoints]: ./breakpoints.md "如何在 Microsoft Edge DevTools 中暂停带有断点的代码 |Microsoft 文档"  
+[DevToolsJavascriptDisable]: ./disable.md "通过 Microsoft Edge DevTools 禁用 JavaScript |Microsoft 文档"  
+[DevToolsJavascriptGetStarted]: ./index.md "开始使用 Microsoft Edge DevTools 中的 JavaScript 调试 |Microsoft 文档"  
+[DevToolsJavascriptSnippets]: ./snippets.md "在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段 |Microsoft 文档"  
+[DevToolsCustomize]: ../customize/index.md "自定义 Microsoft Edge DevTools |Microsoft 文档"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

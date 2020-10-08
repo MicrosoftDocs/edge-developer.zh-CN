@@ -1,5 +1,5 @@
 ---
-title: Error codes for Windows Runtime apps using JavaScript
+title: 使用 JavaScript 的 Windows 运行时应用的错误代码
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -43,59 +43,59 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942152"
 ---
-# Error codes for Windows Runtime apps using JavaScript  
+# 使用 JavaScript 的 Windows 运行时应用的错误代码  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Here are the error codes displayed by the Microsoft Visual Studio console when developing Windows Runtime apps using JavaScript.  
+下面是使用 JavaScript 开发 Windows 运行时应用时 Microsoft Visual Studio 控制台显示的错误代码。  
 
-| Error | Remarks |  
+| 错误 | 备注 |  
 |:--- |:--- |  
-| APPHOST9601: "Can`t load *remoteURI*.  An app can't load remote web content in the local context." | For more info about what's allowed in the web context, see [Features and restrictions by context][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9602: "'javascript:' is an invalid attribute value and will be ignored.  Don't use 'javascript:' URIs in the local context." | For security reasons, you can't use 'javascript:' URIs in the local context.  For more info about what's allowed in the local context, see [Features and restrictions by context][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9603: "Can't load the ActiveX plug-in that has the class ID *classID*.  Apps can't load ActiveX controls." | Windows Runtime apps using JavaScript  don't support custom Microsoft ActiveXcontrols.  If you need a UI control, use a standard web control, a controls library, or create your own custom control.  If you need to perform custom logic, create a custom Windows Runtime object instead.  For info about other HTML, CSS, and JavaScript differences, see [HTML, CSS, and JavaScript features and differences][PreviousVersionsWindowsAppsHh465380].  |  
-| APPHOST9604: "Can't navigate to *uri* because it uses an invalid character encoding.  An app can navigate only to UTF8-encoded files." | All HTML, JavaScript, and CSS accessed by a Windows Runtime must be encoded as 8-bit Unicode Transformation Format (UTF-8).  For info about other HTML, CSS, and JavaScript differences, see [HTML, CSS, and JavaScript features and differences][PreviousVersionsWindowsAppsHh465380].  |  
-| APPHOST9605: "Can't navigate to *targetURI* from *sourceURI* because the destination URI is in a higher security zone.  You can't navigate from a zone with lower security to a zone with higher security unless you're navigating to a local context URI from a web context URI and you've registered the local context URI with the MSApp.addPublicLocalApplicationUri method." | For more info, see [MSApp.addPublicLocalApplicationUri][PreviousVersionsHh771917].  |  
-| APPHOST9606: "Can't load *uri* because it uses an HTTP connection and the ms-https-connections-only meta element is present.  Only HTTPS connections are allowed when you use the ms-https-connections-only meta element.  Use an HTTPS connection or, if you don't need a secure connection, remove the meta element." | For more info, see [How to require an HTTPS connection][PreviousVersionsWindowsAppsHh452771].  |  
-| APPHOST9607: "The app can't launch the URI at *uri* because of this error: *failureCode*." | A missing resource or an invalid file are common causes of this error.  |  
-| APPHOST9608: "The app couldn't navigate to the about:blank page because of this error: *errorCode*." |  |  
+| APPHOST9601： "无法加载 *remoteURI*。  应用无法在本地上下文中加载远程 web 内容。 " | 有关 web 上下文中允许的内容的详细信息，请参阅 [上下文中的功能和限制][PreviousVersionsWindowsAppsHh465373]。  |  
+| APPHOST9602： "' javascript：" 是无效的属性值，将被忽略。  不要在本地上下文中使用 "javascript：" Uri。 " | 出于安全考虑，不能在本地上下文中使用 "javascript：" Uri。  有关本地上下文中允许的内容的详细信息，请参阅 [上下文中的功能和限制][PreviousVersionsWindowsAppsHh465373]。  |  
+| APPHOST9603： "无法加载具有类 ID *classID*的 ActiveX 插件。  应用无法加载 ActiveX 控件。 " | 使用 JavaScript 的 Windows 运行时应用不支持自定义 Microsoft ActiveXcontrols。  如果需要 UI 控件，请使用标准 web 控件、控件库或创建自己的自定义控件。  如需执行自定义逻辑，则可以创建一个自定义的 Windows 运行时对象。  有关其他 HTML、CSS 和 JavaScript 差异的信息，请参阅 [HTML、css 和 javascript 功能和差异][PreviousVersionsWindowsAppsHh465380]。  |  
+| APPHOST9604： "无法导航到 *uri* ，因为它使用了无效的字符编码。  应用只能导航到 UTF8 编码的文件。 " | Windows 运行时访问的所有 HTML、JavaScript 和 CSS 必须编码为8位 Unicode 转换格式 (UTF-8) 。  有关其他 HTML、CSS 和 JavaScript 差异的信息，请参阅 [HTML、css 和 javascript 功能和差异][PreviousVersionsWindowsAppsHh465380]。  |  
+| APPHOST9605： "无法从*sourceURI*导航到*targetURI* ，因为目标 URI 位于更高的安全区域中。  除非你从 web 上下文 URI 导航到本地上下文 uri，并且已使用 MSApp 方法注册了本地上下文 uri，否则无法从较低安全性的区域导航到具有更高安全性的区域。 | 有关详细信息，请参阅 [MSApp addPublicLocalApplicationUri][PreviousVersionsHh771917]。  |  
+| APPHOST9606： "无法加载 *uri* ，因为它使用 HTTP 连接，并且仅存在 ms-https-连接-meta 元素。  使用 ms-HTTPS-仅连接元元素时，仅允许 HTTPS 连接。  使用 HTTPS 连接，或者，如果不需要安全连接，请删除 meta 元素。 " | 有关详细信息，请参阅 [如何要求 HTTPS 连接][PreviousVersionsWindowsAppsHh452771]。  |  
+| APPHOST9607： "由于此错误，应用无法启动 *uri* 处的 Uri： *failureCode*。" | 缺少资源或无效文件是导致此错误的常见原因。  |  
+| APPHOST9608： "由于此错误，应用无法导航到" 关于：空白 "页面： *errorCode*。" |  |  
 
-| Error | Remarks |  
+| 错误 | 备注 |  
 |:--- |:--- |  
-| APPHOST9610: "The app found an error while preparing to navigate to a custom error page: *errorCode*." |  |  
-| APPHOST9611: "The app couldn't navigate to a custom error page because of this error: *errorCode*." |  |  
-| APPHOST9613: "The app couldn't navigate to *uri*  because of this error: *errorCode*." |  |  
-| APPHOST9614: "A document within an iframe requested the *requestedDocMode* doc mode, but the system enforces the *currentDocMode* doc mode.  The iframe will use the *currentDocMode* doc mode." | For more info about displaying remote web content, see [How to link to external web pages][PreviousVersionsWindowsAppsHh780594].  |  
-| APPHOST9615: "The app can't download the file at *uri* because it was invoked programmatically outside of the local context." | Occurs when content in the web context tries to programmatically download a file.  |  
-| APPHOST9616: "This URI can't use geolocation APIs.  Geolocation APIs can be invoked only from a URI that is part of the package or is included in the ApplicationContentUris element of the manifest." | For more info about what's allowed in the web context, see [Features and restrictions by context][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9617: "This URI can't use clipboard APIs.  The clipboard APIs can be invoked only from a URI that is part of the package or is included in the ApplicationContentUris element of the manifest." | For more info about what's allowed in the web context, see [Features and restrictions by context][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9618: "This URI can't use window.close.  The window.close method can be invoked only from packaged content that was loaded with an ms-appx URI scheme." | For more info about what's allowed in the web context, see [Features and restrictions by context][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9619: "The app can't navigate to *uri* because a page in the web context can't be the app's top level document.  Load the page in an iframe instead." | You can't navigate your top-level page to a remote web page, but your app can display a web page in an [iframe][MDNIframe].  For more info about displaying remote web content, see [How to link to external web pages][PreviousVersionsWindowsAppsHh780594].  |  
+| APPHOST9610： "应用在准备导航到自定义错误页面时发现错误： *errorCode*。" |  |  
+| APPHOST9611： "由于此错误，应用无法导航到自定义错误页面： *errorCode*。" |  |  
+| APPHOST9613： "由于此错误，应用无法导航到 *uri*  ： *errorCode*。" |  |  
+| APPHOST9614： "某个 iframe 中的文档请求了 *requestedDocMode* doc 模式，但系统强制使用 *currentDocMode* doc 模式。  Iframe 将使用 *currentDocMode* doc 模式。 " | 有关显示远程 web 内容的详细信息，请参阅 [如何链接到外部][PreviousVersionsWindowsAppsHh780594]网页。  |  
+| APPHOST9615： "应用无法在 *uri* 上下载文件，因为它是在本地上下文外以编程方式调用的。" | 在 web 上下文中的内容尝试以编程方式下载文件时发生。  |  
+| APPHOST9616： "此 URI 无法使用地理位置 Api。  只能从属于程序包的 URI 或包含在清单的 ApplicationContentUris 元素中的 URI 调用地理位置 Api。 | 有关 web 上下文中允许的内容的详细信息，请参阅 [上下文中的功能和限制][PreviousVersionsWindowsAppsHh465373]。  |  
+| APPHOST9617： "此 URI 无法使用剪贴板 Api。  只能从属于程序包的 URI 或包含在清单的 ApplicationContentUris 元素中的 URI 调用剪贴板 Api。 | 有关 web 上下文中允许的内容的详细信息，请参阅 [上下文中的功能和限制][PreviousVersionsWindowsAppsHh465373]。  |  
+| APPHOST9618： "此 URI 无法使用 window。关闭。  只有使用 ms-appx URI 方案加载的打包内容才能调用 close 方法。 " | 有关 web 上下文中允许的内容的详细信息，请参阅 [上下文中的功能和限制][PreviousVersionsWindowsAppsHh465373]。  |  
+| APPHOST9619： "应用无法导航到 *uri* ，因为 web 上下文中的页面不能是应用的顶级文档。  请改为加载 iframe 中的页面。 " | 不能将顶级页面导航到远程网页，但你的应用可以在 [iframe][MDNIframe]中显示网页。  有关显示远程 web 内容的详细信息，请参阅 [如何链接到外部][PreviousVersionsWindowsAppsHh780594]网页。  |  
 
-| Error | Remarks |  
+| 错误 | 备注 |  
 |:--- |:--- |  
-| APPHOST9620: "This app was closed because it used an HTTP connection and the ms-https-connections-only meta element is present.  Only HTTPS connections are allowed when you use the ms-https-connections-only meta element.  Use an HTTPS connection or, if you don't require a secure connection, remove the meta element." | For more info, see [How to require an HTTPS connection][PreviousVersionsWindowsAppsHh452771].  |  
-| APPHOST9623: "The app couldn't resolve *url* because of this error: *errorCode*." | A common cause of this error is a missing file.  |  
-| APPHOST9624: "The app can't use script to load the *url* url because the url launches another app.  Only direct user interaction can launch another app." | Apps can't launch other apps directly.  Other apps can be launched by the  user when the app implements certain contracts.  For more info, see [App contracts and extensions][PreviousVersionsWindowsAppsHh464906].  |  
-| APPHOST9626: "A direct reference to resource file `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` was detected.  This reference causes failures when used outside of the debugging environment." | Due to the file path of `logo.scale-140.png`, this PNG file is treated as a localized resource, causing the error in that localized resources cannot be referenced directly.  See [Globalizing your app (HTML)][PreviousVersionsWindowsAppsHh465006] if you intend to use this file as a language resource.  Otherwise, try renaming the problematic directory.  |  
+| APPHOST9620： "此应用已关闭，因为它使用的是 HTTP 连接，而 ms-https-仅连接的 meta 元素存在。  使用 ms-HTTPS-仅连接元元素时，仅允许 HTTPS 连接。  使用 HTTPS 连接，或者，如果不需要安全连接，请删除 meta 元素。 " | 有关详细信息，请参阅 [如何要求 HTTPS 连接][PreviousVersionsWindowsAppsHh452771]。  |  
+| APPHOST9623： "由于此错误，应用无法解析 *url* ： *errorCode*。" | 此错误的常见原因是缺少文件。  |  
+| APPHOST9624： "应用无法使用脚本加载 *url* url，因为该 url 会启动另一个应用。  只有直接用户交互才能启动另一个应用。 " | 应用无法直接启动其他应用。  其他应用可由用户在应用实现某些协定时启动。  有关详细信息，请参阅[应用合约和扩展][PreviousVersionsWindowsAppsHh464906]。  |  
+| APPHOST9626： "已检测到对资源文件的直接引用 `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` 。  此引用会导致在调试环境外使用时失败。 " | 由于文件路径的原因 `logo.scale-140.png` ，此 PNG 文件被视为本地化资源，导致不能直接引用本地化资源中的错误。  如果打算将此文件用作语言资源，请参阅将 [你的应用全球化 (HTML) ][PreviousVersionsWindowsAppsHh465006] 。  否则，请尝试重命名有问题的目录。  |  
 
-## See also  
+## 另请参阅  
 
-[Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
+[在 JavaScript 中使用 Windows 运行时][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "在 JavaScript | 中使用 Windows 运行时Microsoft 文档"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class | Microsoft Docs"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator 类 |Microsoft 文档"  
 
-[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "addPublicLocalApplicationUri method | Microsoft Docs"  
+[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "addPublicLocalApplicationUri 方法 |Microsoft 文档"  
 
-[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "How to require an HTTPS connection (HTML) | Microsoft Docs"  
-[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "App contracts and extensions (Windows Runtime apps) | Microsoft Docs"  
-[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalizing your app (HTML) | Microsoft Docs"  
-[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Features and restrictions by context (HTML) | Microsoft Docs"  
-[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "HTML, CSS, and JavaScript features and differences (HTML) | Microsoft Docs"  
-[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "How to link to external web pages (HTML) | Microsoft Docs"  
+[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "如何要求 HTTPS 连接 (HTML) |Microsoft 文档"  
+[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) " (Windows 运行时应用) 的应用合约和扩展 |Microsoft 文档"  
+[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "将应用全球化 (HTML) |Microsoft 文档"  
+[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "按上下文 (HTML) 的功能和限制 |Microsoft 文档"  
+[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Html、CSS 和 JavaScript 功能和差异 (HTML) |Microsoft 文档"  
+[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "如何链接到外部网页 (HTML) |Microsoft 文档"  
 
-[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: The Inline Frame element | MDN"  
+[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>：嵌入式框架元素 |MDN"  

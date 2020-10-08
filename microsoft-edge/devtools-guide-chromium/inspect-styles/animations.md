@@ -1,12 +1,12 @@
 ---
-description: Inspect and modify animations with the Microsoft Edge DevTools  Animation Inspector.
-title: Inspect animations
+description: 通过 Microsoft Edge DevTools 动画检查器检查和修改动画。
+title: 检查动画
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -28,69 +28,69 @@ ms.locfileid: "11015770"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Inspect animations  
+# 检查动画  
 
-Inspect and modify animations with the Microsoft Edge DevTools Animation Inspector.  
+通过 Microsoft Edge DevTools 动画检查器检查和修改动画。  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
-   animation inspector  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+   动画检查器  
 :::image-end:::  
 
-### Summary  
+### 摘要  
 
-*   Capture animations by opening the Animation Inspector.  The Animation Inspector automatically detects and sorts animations into groups.  
-*   Inspect animations by slowing down each one, replaying each one, or viewing the source code.  
-*   Modify animations by changing the timing, delay, duration, or keyframe offsets.  
+*   通过打开 "动画检查器" 捕获动画。  动画检查器会自动检测动画并将其排序为多个组。  
+*   通过减速、重放每个动画或查看源代码来检查动画。  
+*   通过更改计时、延迟、持续时间或关键帧偏移来修改动画。  
 
-## Overview  
+## 概述  
 
-The Microsoft Edge DevTools Animation Inspector has two main purposes.  
+Microsoft Edge DevTools 动画检查器有两个主要用途。  
 
-*   Inspecting animations.  You want to slow down, replay, or inspect the source code for an Animation Group.  
-*   Modifying animations.  You want to modify the timing, delay, duration, or keyframe offsets of an Animation Group.  Bezier editing and keyframe editing are currently not supported.  
+*   检查动画。  你希望减慢、重播或检查动画组的源代码。  
+*   修改动画。  要修改动画组的计时、延迟、持续时间或关键帧偏移量。  当前不支持贝塞尔编辑和关键帧编辑。  
 
-The Animation Inspector supports CSS animations, CSS transitions, and web animations.  `requestAnimationFrame` animations are currently not supported.  
+动画检查器支持 CSS 动画、CSS 转换和 web 动画。  `requestAnimationFrame` 当前不支持动画。  
 
-### What is an Animation Group?  
+### 什么是动画组？  
 
-An Animation Group is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time \(excluding delays, and so on\).  The Animation Inspector also groups the animations side-by-side.  
-In other words, a set of animations that are all triggered in the same script block are grouped together.  If an animation is asynchronous, it is placed in a separate group.  
+动画组是可能相互关联的一组动画。  目前，web 没有组动画的真正概念，因此动画设计器和开发人员必须编写和时间单个动画，以便动画呈现为一个连贯的视觉效果。  动画检查器将预测哪些动画基于开始时间 \ (不包括延迟，如此 ) 。  动画检查器还会并排对动画进行分组。  
+换句话说，在同一脚本块中同时触发的一组动画将组合在一起。  如果动画是异步的，则将其放置在单独的组中。  
 
-## Get started  
+## 入门  
 
-There are two ways to open the Animation Inspector:  
+可通过两种方式打开 "动画" 检查器：  
 
-*   Open the **Customize and Control DevTools** menu  
-    1.  Navigate to the **More tools** sub-menu.  
-    1.  Select **Animations**:  
+*   打开 " **自定义和控制" DevTools** 菜单  
+    1.  导航到 " **更多工具** " 子菜单。  
+    1.  选择 " **动画**"：  
         
-        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
-           **Animations** using Main Menu  
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+           使用主菜单的**动画**  
     :::image-end:::  
         
-*   Open the **Command Menu**  
-    1.  Type `Drawer: Show Animations`.  
+*   打开 " **命令" 菜单**  
+    1.  键入 `Drawer: Show Animations`。  
 
-The Animation Inspector opens up as a tab next to the Console Drawer.  Since the Animation Inspector is a Drawer tab, you may use the Animation Inspector from any DevTools panel.  
+"动画" 检查器将在控制台抽屉旁边的选项卡中打开。  由于动画检查器是一个抽屉选项卡，因此您可以使用任何 DevTools 面板中的动画检查器。  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
-   Empty Animation Inspector  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+   清空动画检查器  
 :::image-end:::  
 
-The Animation Inspector is grouped into four main sections \(or panes\).  This guide refers to each pane as follows:  
+动画检查器分为四个主要部分，即 " (" 或 "窗格 \ ) "。  本指南按如下方式引用每个窗格：  
 
-| Index | Pane | Description |  
+| 索引 | 窗格 | 描述 |  
 |:--- |:--- |:--- |  
-| 1 | **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
-| 2 | **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
-| 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
-| 4 | **Details** | Inspect and modify the currently selected Animation Group. |  
+| raid-1 | **控件** | 你可以从此处清除当前捕获的所有动画组，或更改当前所选动画组的速度。 |  
+| ppls-2 | **概述** | 在此处选择一个动画组以在 " **详细信息** " 窗格中检查和修改它。 |  
+| 三维空间 | **时间线** | 在此处暂停和启动动画，或跳转到动画中的特定点。 |  
+| 第 | **详细信息** | 检查和修改当前所选的动画组。 |  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
-   Annotated Animation Inspector  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+   带批注的动画检查器  
 :::image-end:::  
 
-To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, reload the page with the Animation Inspector open to detect the animation.  
+若要捕获动画，只需在动画检查器打开的情况下执行触发动画的交互。  如果动画是在页面加载时触发的，请使用动画检查器打开来重新加载页面以检测动画。  
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->  
 
@@ -98,73 +98,73 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## Inspect animations  
+## 检查动画  
 
-After you capture an animation, there are a few ways to replay it:  
+捕获动画后，有几种方法可以重播它：  
 
-*   Hover over the thumbnail in the **Overview** pane to view a preview of it.  
-*   Select the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and press the **replay** \(![replay icon][ImageReplayButtonIcon]\) icon.  The animation is replayed in the viewport.  Click on the **animation speed** \(![animation speed icons][ImageAnimationSpeedButtonsIcon]\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
-*   Click and drag the red vertical bar to scrub the viewport animation.  
+*   将鼠标悬停在 " **概述** " 窗格的缩略图上以查看它的预览。  
+*   从 " **概述** " 窗格中选择 "动画" 组 \ (，使其显示在 " **详细信息** " 窗格 \ ) 中，然后按 " **重播** \ (![ 重播" 图标 ][ImageReplayButtonIcon] \ ) 图标。  将在视区中重播动画。  单击 " **动画速度** " (![ 动画速度图标 ][ImageAnimationSpeedButtonsIcon] \ ) 图标，以更改当前所选动画组的预览速度。  您可以使用红色垂直条更改您的当前位置。  
+*   单击并拖动红色垂直条以擦除视区动画。  
     
-### View animation details  
+### 查看动画详细信息  
 
-After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation is assigned the a row.  
+捕获动画组后，从 " **概述** " 窗格中单击它以查看详细信息。  在 " **详细信息** " 窗格中，每个单独的动画都分配有一行。  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
-   Animation Group details  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+   动画组详细信息  
 :::image-end:::  
 
-Hover over an animation to highlight it in the viewport.  Click on the animation to select it in the **Elements** panel.  
+将鼠标悬停在某个动画上，将其在视区中突出显示。  单击动画以在 " **元素** " 面板中选择它。  
 
-:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
-   Hover over the animation to highlight it in viewport  
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+   将鼠标悬停在动画上以在视区中突出显示  
 :::image-end:::  
 
-The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in the following figure, sections two and three represent iterations of section one.  
+动画最左边、更暗的部分是定义。  右侧、更淡出的部分表示迭代。  例如，在下图中，第二部分和第三部分表示第一节的迭代。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
-   Diagram of animation iterations  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+   动画迭代图表  
 :::image-end:::  
 
-If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in the following figure, the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation \(`spinrightleft`\) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.  
+如果两个元素应用了相同的动画，则动画检查器会为元素分配相同的颜色。  颜色是随机的，没有任何意义。  例如，下图中，这两个元素 `div.cwccw.earlier` `div.cwccw.later` 具有相同的动画 \ (`spinrightleft` \ ) 应用，就像执行 `div.ccwcw.earlier` 和元素一样 `div.ccwcw.later` 。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
-   Color-coded animations  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+   颜色编码的动画  
 :::image-end:::  
 
-## Modify animations  
+## 修改动画  
 
-There are three ways you are able to modify an animation with the Animation Inspector.  
+你可以通过三种方式使用动画检查器修改动画。  
 
-*   Animation duration.  
-*   Keyframe timings.  
-*   Start time delay.  
+*   动画持续时间。  
+*   关键帧计时。  
+*   开始时间延迟。  
     
-In the following figure, the original animation is represented.  
+在下图中，表示原始动画。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
-   Original animation before modification  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+   修改前的原始动画  
 :::image-end:::  
 
-To change the duration of an animation, click and drag the first or last circle.  
+若要更改动画的持续时间，请单击并拖动第一个或最后一个圆。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
-   Modified duration  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+   已修改工期  
 :::image-end:::  
 
-If the animation defines any keyframe rules, then these are represented as white inner circles.  Click and drag one of these to change the timing of the keyframe.  
+如果动画定义了任何关键帧规则，则这些规则表示为白色内圆圈。  单击并拖动其中一个以更改关键帧的计时。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
-   Modified keyframe  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+   修改的关键帧  
 :::image-end:::  
 
-To add a delay to an animation, click and drag it anywhere except the circles.  
+若要向动画添加延迟，请单击并将其拖动到除圆圈外的任意位置。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
-   Modified delay  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+   修改后的延迟  
 :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

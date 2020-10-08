@@ -1,13 +1,13 @@
 ---
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
-description: Read up on resources for inclusive design tools and best practices.
-title: Accessibility - Design
+description: 了解非独占设计工具和最佳做法的资源。
+title: 辅助功能-设计
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+keywords: 辅助功能，面向开发人员的辅助功能，辅助网站，边缘，web 开发，ARIA，开发人员，UIA，UI 自动化
 ms.openlocfilehash: c9dfd6dfb9a45f7f8bb3f6d8ebad6c826f3f9e99
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -15,30 +15,30 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10562606"
 ---
-# Designing Accessible Websites
+# 设计易于访问的网站
 
-Creating an inclusive design makes technology usable by all people no matter their age, education, geographic location, language, or disability. People using technology and browsing the web have a wide range of abilities and preferences. As you design your website, keep in mind the following key accessibility scenarios:
+创建非独占设计让所有人都可以免费使用技术，无论他们年龄、教育、地理位置、语言或残疾人士。 使用技术和浏览 web 的人有多种能力和偏好。 设计网站时，请记住以下关键的辅助功能方案：
 
-* Screen readers—Users who are blind or visually impaired rely on screen readers to interpret and interact with your app's UI. Interpreting involves reading the UI element names, roles, values, and so on, and interacting with the UI involves moving the focus from one element to another and invoking functionality.
-* Keyboard accessibility—Many accessibility users rely on the keyboard to navigate and operate the UI by:
-  * Moving focus among elements by using the Tab key.
+* 屏幕阅读器-盲人或视觉障碍的用户依靠屏幕阅读器来解释应用的 UI 并与之交互。 解释涉及读取 UI 元素名称、角色、值等，并与 UI 交互，包括将焦点从一个元素移动到另一个元素并调用功能。
+* 键盘辅助功能-许多辅助功能用户依靠键盘导航和操作 UI，方法如下：
+  * 使用 Tab 键在各元素间移动焦点。
   * 使用箭头键在列表、网格、树状视图等容器元素间导航。
   * 使用 Enter 或空格键激活功能（调用操作）。
-  * Using shortcut keys to efficiently access other app functionality.
-* Accessible visual experience—Users who are visually impaired need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall. Users who are color blind need information to be conveyed in ways other than through color.
+  * 使用快捷键高效访问其他应用功能。
+* 易于访问的视觉体验：视觉障碍用户需要足够的文本内容的文本对比度，以及高对比度主题的良好视觉体验。 对于色盲用户，需要通过色彩以外的途径传递信息。
 
-Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) documentation provides techniques and best practices to help you design more accessible dynamic web applications. See [Building Accessible Websites](./build.md) for more information on building accessible websites.
+通过良好的编码做法，可解决 web 上的许多常见辅助功能问题。  [ (WCAG) 2.0 文档的 Web 内容辅助功能指南](https://www.w3.org/TR/WCAG20/)提供了帮助设计更易于访问的动态 Web 应用程序的技术和最佳做法。 有关构建易于访问的网站的详细信息，请参阅 [构建易于访问的网站](./build.md) 。
 
-## Resources
+## 资源
 
-#### [Designing for Inclusion](https://w3.org/WAI/users/Overview.html)
-Designing for Inclusion by the W3C's Web Accessibility Initiative provides resources to help you better understand users with disabilities and how to design your website with them in mind.
+#### [设计以实现包含](https://w3.org/WAI/users/Overview.html)
+通过 W3C's Web 辅助功能计划进行设计可提供资源以帮助你更好地了解残障用户以及如何在你的网站中设计你的网站。
 
-#### [Designing inclusive software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
-Designing inclusive software discusses Microsoft design principles and practices for the Universal Windows Platform (UWP).
+#### [设计非独占软件](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
+设计非独占软件讨论适用于通用 Windows 平台 (UWP) 的 Microsoft 设计原则和做法。
 
-#### [How People with Disabilities Use the Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)
-This resource by the W3C introduces how people with disabilities, including people with age-related impairments, use the Web.
+#### [残疾人士如何使用 Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)
+W3C 介绍了如何使用残疾，包括有年龄相关障碍的人士，使用 Web。
 
-#### [Inclusive Design Toolkit](https://www.microsoft.com/design/practice#howwemake-section)
-Microsoft developed the Inclusive Design Toolkit to show how human diversity can create better design constraints and how to connect seemingly niche solutions to broader markets.
+#### [非独占设计工具包](https://www.microsoft.com/design/practice#howwemake-section)
+Microsoft 开发了一个非独占设计工具包，以展示人类分集如何创建更好的设计限制以及如何将看似的小规模解决方案连接到更广泛的市场。

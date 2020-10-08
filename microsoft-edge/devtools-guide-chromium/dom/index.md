@@ -1,12 +1,12 @@
 ---
-description: How to view nodes, search for nodes, edit nodes, reference nodes in the Console, break on node changes, and more.
-title: Get Started With Viewing And Changing The DOM
+description: 如何查看节点、搜索节点、编辑节点、在控制台中引用节点、中断节点更改等。
+title: 查看和更改 DOM 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 555e627b70f0cc5e50c0676cf90067c2709a9ae3
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,311 +32,311 @@ ms.locfileid: "10992951"
 
 
 
-# Get started with viewing and changing the DOM   
+# 查看和更改 DOM 入门   
 
 
 
-Complete these interactive tutorials to learn the basics of viewing and changing the DOM of a page using Microsoft Edge DevTools.  
+完成这些交互式教程，了解有关使用 Microsoft Edge DevTools 查看和更改页面 DOM 的基础知识。  
 
-This tutorial assumes that you know the difference between the DOM and HTML.  See [Appendix: HTML versus the DOM](#appendix-html-versus-the-dom) for an explanation.  
+本教程假定你知道 DOM 和 HTML 之间的区别。  有关说明，请参阅 [附录： HTML 和 DOM](#appendix-html-versus-the-dom) 。  
 
-## Open DOM examples  
+## Open DOM 示例  
 
-1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **DOM Examples** to open in a new tab.  
+1.  保留 `Control` \ (Windows \ ) 或 `Command` \ (macOS \ ) ，然后单击 " **DOM 示例** " 以在新选项卡中打开。  
     
-    [DOM Examples][GlitchDomExamples]  
+    [DOM 示例][GlitchDomExamples]  
     
-## View DOM nodes   
+## 查看 DOM 节点   
 
-The DOM Tree of the Elements panel is where you do all DOM-related activities in DevTools.  
+在 "元素" 面板的 DOM 树中，你可以在 DevTools 中执行所有与 DOM 相关的活动。  
 
-### Inspect a node   
+### 检查节点   
 
-When you are interested in a particular DOM node, **Inspect** is a fast way to open DevTools and investigate that node.  
+当你对特定的 DOM 节点感兴趣时，请使用 " **检查** " 快速打开 DevTools 并调查该节点。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Inspect a Node**, right-click **Michelangelo** and select **Inspect**.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **检查节点**" 下，右键单击 " **Michelangelo** "，然后选择 " **检查**"。  
     
-    :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="Inspect a node" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
-       Inspect a node  
+    :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="检查节点" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
+       检查节点  
     :::image-end:::  
     
-    1.  The **Elements** panel of DevTools opens.  `<li>Michelangelo</li>` is highlighted in the **DOM Tree**.  
+    1.  将打开 DevTools 的 " **元素** " 面板。  `<li>Michelangelo</li>` 在 **DOM 树**中突出显示。  
         
-        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Inspect a node" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
-           Highlight the `Michelangelo` node  
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="检查节点" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+           突出显示 `Michelangelo` 节点  
         :::image-end:::  
         
-        1.  Click the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  
+        1.  单击 DevTools 左上角的 " **检查** \ (![ 检查 ][ImageInspectIcon] \ ) " 图标。  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
-               The **Inspect** icon  
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+               " **检查** " 图标  
             :::image-end:::  
             
-1.  Under **Inspect a Node**, click the **Tokyo** text.  Now, `<li>Tokyo</li>` is highlighted in the DOM Tree.  
+1.  在 " **检查节点**" 下，单击 " **东京** 文本"。  现在， `<li>Tokyo</li>` 在 DOM 树中突出显示。  
 
-Inspecting a node is also the first step towards viewing and changing the styles of a node.  See [Get Started With Viewing And Changing CSS][DevToolsCssGetStarted].  
+检查节点也是查看和更改节点样式的第一步。  请参阅 [查看和更改 CSS 入门][DevToolsCssGetStarted]。  
 
-### Navigate the DOM Tree with a keyboard   
+### 使用键盘导航 DOM 树   
 
-Once you have selected a node in the DOM Tree, you may navigate the DOM Tree with your keyboard.  
+选择 DOM 树中的节点后，您可以使用键盘在 DOM 树中导航。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and select **Inspect**.  `<li>Ringo</li>` is selected in the DOM Tree.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **使用键盘导航 DOM 树**" 下，右键单击 " **Ringo** "，然后选择 " **检查**"。  `<li>Ringo</li>` 在 DOM 树中处于选中状态。  
     
-    :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
-       Inspect the `Ringo` node  
+    :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
+       检查 `Ringo` 节点  
     :::image-end:::  
     
-    1.  Press the `Up` arrow key 2 times.  `<ul>` is selected.  
+    1.  按 `Up` 箭头键2次。  `<ul>` 已选中。  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
-           Inspect the `ul` node  
+        :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
+           检查 `ul` 节点  
         :::image-end:::  
         
-    1.  Press the `Left` arrow key.  The `<ul>` list collapses.  
-    1.  Press the `Left` arrow key again.  The parent of the `<ul>` node is selected.  In this case it is the `<div>` with the ID `navigate-the-dom-tree-with-a-keyboard-1`.  
-    1.  Press the `Down` arrow key 2 times so that you have re-selected the `<ul>` list that you just collapsed.  It should look like this: `<ul>... </ul>`  
-    1.  Press the `Right` arrow key.  The list expands.  
+    1.  按 `Left` 箭头键。  `<ul>`列表折叠。  
+    1.  再次按 `Left` 箭头键。  `<ul>`已选中节点的父节点。  在这种情况下，它 `<div>` 具有 ID `navigate-the-dom-tree-with-a-keyboard-1` 。  
+    1.  按 `Down` 箭头键2次，以便您重新选中 `<ul>` 刚才折叠的列表。  应如下所示： `<ul>... </ul>`  
+    1.  按 `Right` 箭头键。  该列表将展开。  
 
-### Scroll into view   
+### 滚动到视图   
 
-When viewing the DOM Tree, you may find yourself interested in a DOM node that is not currently in the viewport.  For example, suppose that you scrolled to the bottom of the page, and you are interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you are able to see the node.  
+查看 DOM 树时，你可能会发现你对当前不在视口中的 DOM 节点感兴趣。  例如，假设你滚动到页面底部，并且你对 `<h1>` 页面顶部的节点感兴趣。  "**滚动到" 视图**可快速调整视区的位置，以便您能够看到该节点。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Scroll into View**, right-click **Magritte** and select **Inspect**.  
-1.  Scroll to the bottom of the DOM Examples page.  
-1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.  
-1.  Right-click the `<li>Magritte</li>` node and select **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **滚动到视图**" 下，右键单击 " **Magritte** "，然后选择 " **检查**"。  
+1.  滚动到 "DOM 示例" 页面的底部。  
+1.  该 `<li>Magritte</li>` 节点应仍在你的 DOM 树中处于选中状态。  如果不是，请返回到 " [查看](#scroll-into-view) " 并重新开始。  
+1.  右键单击 `<li>Magritte</li>` 节点，然后选择 " **滚动到视图**"。  你的视区向后滚动，以便你可以看到 **Magritte** 节点。  如果无法看到 "**滚动到视图**" 选项，请参阅[附录： "缺少选项](#appendix-missing-options)"。
     
-    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
-       **Scroll into view**  
+    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+       **滚动到视图**  
     :::image-end:::  
 
-### Search for nodes   
+### 搜索节点   
 
-You may search the DOM Tree by string, CSS selector, or XPath selector.  
+你可以按字符串、CSS 选择器或 XPath 选择器搜索 DOM 树。  
 
-1.  Focus your cursor on the **Elements** panel.  
-1.  Press `Control`+`F` \(Windows\) or `Command`+`F` \(macOS\).  The Search bar opens at the bottom of the DOM Tree.  
-1.  Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.  
+1.  将光标聚焦在 " **元素** " 面板上。  
+1.  按 `Control` + `F` \ (Windows \ ) 或 `Command` + `F` \ (macOS \ ) 。  搜索栏将在 DOM 树的底部打开。  
+1.  键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。  
     
-    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
-       Highlight the query in the Search bar  
+    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
+       在搜索栏中突出显示查询  
     :::image-end:::  
     
-As mentioned above, the Search bar also supports CSS and XPath selectors.  
+如上文所述，搜索栏还支持 CSS 和 XPath 选择器。  
 
-## Edit the DOM   
+## 编辑 DOM   
 
-You may edit the DOM on the fly and see how those changes affect the page.  
+你可以动态编辑 DOM 并查看这些更改对页面的影响。  
 
-### Edit content   
+### 编辑内容   
 
-To edit the content of a node, double-click the content in the DOM Tree.  
+若要编辑节点的内容，请双击 DOM 树中的内容。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Edit Content**, right-click **Michelle** and select **Inspect**.  
-    1.  In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<li>` and `</li>`.  The text is highlighted to indicate that it is selected.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **编辑内容**" 下，右键单击 " **Michelle** "，然后选择 " **检查**"。  
+    1.  在 DOM 树中，双击 `Michelle` 。  换句话说，双击 and 之间的文本 `<li>` `</li>` 。  文本将突出显示，以指示它已选中。  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
-           Edit the text  
+        :::image type="complex" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
+           编辑文本  
         :::image-end:::  
         
-    1.  Delete `Michelle`, type `Leela`, then press `Enter` to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.  
+    1.  删除 `Michelle` ，键入 `Leela` ，然后按 `Enter` 以确认更改。  DOM 中的文本从 **Michelle** 更改为 **Leela**。  
 
-### Edit attributes   
+### 编辑属性   
 
-To edit attributes, double-click the attribute name or value.  Follow the instructions to learn how to add attributes to a node.  
+若要编辑属性，请双击属性名称或值。  按照说明操作，了解如何向节点添加属性。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Edit Attributes**, right-click **Howard** and select **Inspect**.  
-1.  Double-click `<li>`.  The text is highlighted to indicate that the node is selected.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **编辑属性**" 下，右键单击 " **Howard** "，然后选择 " **检查**"。  
+1.  双击 `<li>` 。  文本将突出显示，以指示节点已选中。  
     
-    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
-       Edit the node  
+    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
+       编辑节点  
     :::image-end:::  
     
-1.  Press the `Right` arrow key, add a space, type `style="background-color:gold"`, and then press `Enter`.  The background color of the node changes to gold.  
+1.  按 `Right` 箭头键，添加一个空格，键入 `style="background-color:gold"` ，然后按 `Enter` 。  节点的背景色将更改为 "金色"。  
     
-    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
-       Add a `style` attribute to the node  
+    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
+       向 `style` 节点添加属性  
     :::image-end:::  
     
-### Edit node type   
+### 编辑节点类型   
 
-To edit the type of a node, double-click the type and then type in the new type.  
+若要编辑节点类型，请双击该类型，然后键入新类型。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Edit Node Type**, right-click **Hank** and select **Inspect**.  
-    1.  Double-click `<li>`.  The text `li` is highlighted.  
-    1.  Delete `li`, type `button`, then press `Enter`.  The `<li>` node changes to a `<button>` node.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **编辑节点类型**" 下，右键单击 " **Hank** "，然后选择 " **检查**"。  
+    1.  双击 `<li>` 。  文本 `li` 突出显示。  
+    1.  删除 `li` ，键入 `button` ，然后按 `Enter` 。  `<li>`节点将更改为 `<button>` 节点。  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
-           Change the node type to `button`  
+        :::image type="complex" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
+           将节点类型更改为 `button`  
         :::image-end:::  
         
-### Reorder DOM nodes   
+### 重新排序 DOM 节点   
 
-Drag nodes to reorder them.  
+拖动节点以对其重新排序。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Reorder DOM Nodes**, right-click **Elvis Presley** and select **Inspect**.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **重新排序 DOM 节点**" 下，右键单击 " **Elvis Presley** "，然后选择 " **检查**"。  
     
     > [!NOTE]
-    > It is the last item in the list.  
+    > 它是列表中的最后一项。  
     
-    1.  In the DOM Tree, drag `<li>Elvis Presley</li>` to the top of the list.  
+    1.  在 DOM 树中，拖动 `<li>Elvis Presley</li>` 到列表的顶部。  
         
-        :::image type="complex" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
-           Drag the node to the top of the list  
+        :::image type="complex" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
+           将节点拖到列表顶部  
         :::image-end:::  
         
-### Force state   
+### 强制状态   
 
-You are able to force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`.  
+你可以强制节点保留在状态中，包括、、、 `:active` `:hover` `:focus` `:visited` 和 `:focus-within` 。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Force state**, hover over **The Lord of the Flies**.  The background color becomes orange.  
-    1.  Right-click **The Lord of the Flies** and select **Inspect**.  
-    1.  Right-click `<li class="demo--hover">The Lord of the Flies</li>` and select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix-missing-options) if you do not see this option.  The background color remains orange even though you are not actually hovering over the node.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **强制状态**" 下，将鼠标悬停在 **Lord 的**上方。  背景色变为橙色。  
+    1.  右键单击 " **飞入" 的 Lord** ，然后选择 " **检查**"。  
+    1.  右键单击 `<li class="demo--hover">The Lord of the Flies</li>` 并选择 "**强制状态**  >  **：悬停**"。  如果看不到此选项，请参阅 [附录：缺少选项](#appendix-missing-options) 。  虽然实际上不会将鼠标悬停在节点上，但背景色仍为橙色。  
 
-### Hide a node   
+### 隐藏节点   
 
-Press `H` to hide a node.  
+按 " `H` 隐藏节点"。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Hide a node**, right-click **The Stars My Destination** and select **Inspect**.  
-    1.  Press the `H` key.  The node is hidden.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **隐藏节点**" 下，右键单击 **星形 "我的目的地"** ，然后选择 " **检查**"。  
+    1.  按 `H` 键。  节点已隐藏。  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
-           What the node looks like in the DOM Tree after it is hidden  
+        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
+           节点在隐藏后在 DOM 树中的显示效果  
         :::image-end:::  
         
-    1.  Press the `H` key again.  The node is shown again.  
+    1.  再次按下 `H` 键。  将再次显示该节点。  
 
-### Delete a node   
+### 删除节点   
 
-Press `Delete` to delete a node.  
+按 `Delete` 以删除节点。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Delete a Node**, right-click **Foundation** and select **Inspect**.  
-    1.  Press the `Delete` key.  The node is deleted.  
-    1.  Press `Control`+`Z` \(Windows\) or `Command`+`Z` \(macOS\).  The last action is undone and the node reappears.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **删除节点**" 下，右键单击 " **基础** "，然后选择 " **检查**"。  
+    1.  按 `Delete` 键。  删除该节点。  
+    1.  按 `Control` + `Z` \ (Windows \ ) 或 `Command` + `Z` \ (macOS \ ) 。  最后一个操作将被撤消，并且该节点会再次出现。  
 
-## Access nodes in the Console   
+## 访问控制台中的节点   
 
-DevTools provides a few shortcuts for accessing DOM nodes from the Console, or getting JavaScript references to each one.  
+DevTools 提供了从控制台访问 DOM 节点或获取每个节点的 JavaScript 引用的一些快捷方式。  
 
-### Reference the currently-selected node with $0   
+### 引用当前选定的具有 $0 的节点   
 
-When you inspect a node, the `== $0` text next to the node means that you may reference this node in the Console with the variable `$0`.  
+检查节点时， `== $0` 节点旁边的文本意味着你可以使用该变量在控制台中引用此节点 `$0` 。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Reference the currently-selected node with $0**, right-click **The Left Hand of Darkness** and select **Inspect**.  
-    1.  Press the `Escape` key to open the Console Drawer.  
-    1.  Type `$0` and press the `Enter` key.  The result of the expression shows that `$0` evaluates to `<li>The Left Hand of Darkness</li>`.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **引用当前选定的包含 $0 的节点**" 下，右键单击 **暗度的左侧** ，然后选择 " **检查**"。  
+    1.  按 `Escape` 键打开控制台抽屉。  
+    1.  键入 `$0` ，然后按键 `Enter` 。  表达式的结果显示 `$0` 为 `<li>The Left Hand of Darkness</li>` 。  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
-            The result of the first `$0` expression in the **Console**  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
+            `$0`**控制台**中第一个表达式的结果  
         :::image-end:::  
         
-    1.  Hover over the result.  The node is highlighted in the viewport.  
-    1.  Click `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then press `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`.  
+    1.  将鼠标悬停在结果上。  节点在视区中突出显示。  
+    1.  单击 `<li>Dune</li>` DOM 树， `$0` 再次键入控制台，然后再次按下 `Enter` 。  现在， `$0` 计算结果为 `<li>Dune</li>` 。  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
-           The result of the second `$0` expression in the **Console**  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
+           控制台中第二个 `$0` 表达式的结果**Console**  
         :::image-end:::  
         
-### Store as global variable   
+### 存储为全局变量   
 
-If you need to refer back to a node many times, store it as a global variable.  
+如果需要多次引用某个节点，请将其存储为全局变量。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Store as global variable**, right-click **The Big Sleep** and select **Inspect**.  
-    1.  Right-click `<li>The Big Sleep</li>` in the DOM Tree and select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if you do not see this option.  
-    1.  Type `temp1` in the Console and then press `Enter`.  The result of the expression shows that the variable evaluates to the node.  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **存储为全局变量**" 下，右键单击 **"大睡眠"** ，然后选择 " **检查**"。  
+    1.  右键单击 `<li>The Big Sleep</li>` DOM 树，然后选择 " **存储为全局变量**"。  如果看不到此选项，请参阅 [附录：缺少选项](#appendix-missing-options) 。  
+    1.  `temp1`在控制台中键入，然后按 `Enter` 。  表达式的结果显示变量的计算结果为节点。  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
-           The result of the `temp1` expression  
+        :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
+           表达式的结果 `temp1`  
         :::image-end:::  
         
-### Copy JS path   
+### 复制 JS 路径   
 
-Copy the JavaScript path to a node when you need to reference it in an automated test.  
+如果需要在自动测试中引用节点，请将 JavaScript 路径复制到该节点。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Copy JS path**, right-click **The Brothers Karamazov** and select **Inspect**.  
-    1.  Right-click `<li>The Brothers Karamazov</li>` in the DOM Tree and select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.  
-    1.  Press `Control`+`V` \(Windows\) or `Command`+`V` \(macOS\) to paste the expression into the Console.  
-    1.  Press `Enter` to evaluate the expression.
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **复制 JS 路径**" 下，右键单击 **"比较 Karamazov"** ，然后选择 " **检查**"。  
+    1.  `<li>The Brothers Karamazov</li>`在 DOM 树中单击鼠标右键，然后选择 "**复制**  >  **复制 JS 路径**"。  `document.querySelector()`解析为该节点的表达式已复制到剪贴板。  
+    1.  按 `Control` + `V` \ (Windows \ ) 或 `Command` + `V` \ (macOS \ ) 将表达式粘贴到控制台。  
+    1.  按 `Enter` 以计算表达式。
         
-        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
-           The result of the **Copy JS Path** expression  
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+           **COPY JS 路径**表达式的结果  
         :::image-end:::  
         
-## Break on DOM changes   
+## DOM 更改时中断   
 
-DevTools enables you to pause the JavaScript of a page when the JavaScript modifies the DOM.  
+DevTools 使你能够在 JavaScript 修改 DOM 时暂停页面的 JavaScript。  
 
-### Break on attribute modifications   
+### 属性修改中断   
 
-Use attribute modification breakpoints when you want to pause the JavaScript that causes any attribute of a node to change.  
+当你希望暂停导致节点的任何属性更改的 JavaScript 时，请使用属性修改断点。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Break on attribute modifications**, right-click **Sauerkraut** and select **Inspect**.  
-    1.  In the DOM Tree, right-click `<li id="target">Sauerkraut</li>` and select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **属性修改时中断**" 下，右键单击 " **Sauerkraut** "，然后选择 " **检查**"。  
+    1.  在 DOM 树中，右键单击 `<li id="target">Sauerkraut</li>` 并选择 **"**  >  **属性修改**时中断"。  请参阅附录：如果无法看到此选项，则为 " [缺少选项](#appendix-missing-options) "。
         
-        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
-           **Break on attribute modifications**  
+        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
+           **属性修改中断**  
         :::image-end:::  
         
-    1.  In the next step you are going to be instructed to click a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must click **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\) in order to make the page scrollable again.
+    1.  在下一步中，你将指示你单击暂停页面代码的按钮。  页面暂停后，您将无法再滚动页面。  必须单击 " **恢复脚本** \ (![ 恢复脚本 ][ImageResumeScriptIcon] \ ) " 才能使页面再次滚动。
         
-        :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Inspect a node" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
-           Where to resume script running  
+        :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="检查节点" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
+           恢复运行脚本的位置  
         :::image-end:::  
         
-    1.  Click the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.  
-    1.  Click **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\), as mentioned earlier.  
+    1.  单击上面的 " **设置背景** " 按钮。  这会将 `style` 节点的属性设置为 `background-color:thistle` 。  DevTools 暂停页面并突出显示导致属性更改的代码。  
+    1.  如前面所述，单击 " **恢复脚本** \ (![ 恢复脚本 ][ImageResumeScriptIcon] \ ) "。  
     
-### Break on node removal   
+### 节点删除时中断   
 
-If you want to pause when a particular node is removed, use node removal breakpoints.  
+如果要在删除特定节点时暂停，请使用节点删除断点。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Break on Node Removal**, right-click **Neuromancer** and select **Inspect**.  
-    1.  In the DOM Tree, right-click `<li id="target">Neuromancer</li>` and select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.  
-    1.  Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.  
-    1.  Click **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\).  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **节点删除时中断**" 下，右键单击 " **Neuromancer** "，然后选择 " **检查**"。  
+    1.  在 DOM 树中，右键单击 `<li id="target">Neuromancer</li>` 并选择 **"**  >  **删除节点**时中断"。  请参阅附录：如果无法看到此选项，则为 " [缺少选项](#appendix-missing-options) "。  
+    1.  单击上面的 " **删除** " 按钮。  DevTools 暂停页面并突出显示导致节点被删除的代码。  
+    1.  单击 " **恢复脚本** \ (![ 恢复脚本 ][ImageResumeScriptIcon] \ ) "。  
     
-### Break on subtree modifications   
+### 子树修改中断   
 
-After you put a subtree modification breakpoint on a node, DevTools pauses the page when any of the descendants of the node are added or removed.  
+在节点上放置子树修改断点后，在添加或删除节点的任何子代时，DevTools 将暂停页面。  
 
-1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Break on Subtree Modifications**, right-click **A Fire Upon The Deep** and select **Inspect**.  
-    1.  In the DOM Tree, right-click `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, and select **Break On** > **Subtree Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.  
-    1.  Click **Add Child**.  The code pauses because a `<li>` node was added to the list.  
-    1.  Click **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\).  
+1.  [打开 DOM 示例](#open-dom-examples)。  
+1.  在 " **子树修改时中断**" 下，右键单击 **深度的火** ，然后选择 " **检查**"。  
+    1.  在 DOM 树中，右键单击 `<ul id="target">` （上面的节点 `<li>A Fire Upon the Deep</li>` ），然后选择 "在**Break On**  >  **子树修改**时中断"。  请参阅附录：如果无法看到此选项，则为 " [缺少选项](#appendix-missing-options) "。  
+    1.  单击 " **添加子级**"。  由于 `<li>` 节点已添加到列表，代码暂停。  
+    1.  单击 " **恢复脚本** \ (![ 恢复脚本 ][ImageResumeScriptIcon] \ ) "。  
     
-## Next steps   
+## 后续步骤   
 
-That covers most of the DOM-related features in DevTools.  You are able to discover the rest of them by right-clicking nodes in the DOM Tree and experimenting with the other options that were not covered in this tutorial.  See also [Elements panel keyboard shortcuts][DevToolsShortcutsElements].  
+这涉及 DevTools 中的大部分与 DOM 相关的功能。  你可以通过右键单击 DOM 树中的节点并试用本教程中未介绍的其他选项来发现其余部分。  另请参阅 ["元素" 面板键盘快捷方式][DevToolsShortcutsElements]。  
 
-Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to discover everything else you are able to do with DevTools.  
+查看 [Microsoft Edge DevTools 主页][MicrosoftEdgeDevTools] 以了解你可以通过 DevTools 执行的其他操作。  
 
 <!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
 
 
-## Appendix: HTML versus the DOM   
+## 附录： HTML 与 DOM   
 
-The following section quickly explains the difference between HTML and the DOM.  
+以下部分将快速介绍 HTML 和 DOM 之间的区别。  
 
 :::row:::
    :::column span="":::
-      When you use a web browser to request a page, the server returns HTML like the following code snippet  
+      使用 web 浏览器请求页面时，服务器返回类似以下代码片段的 HTML  
 
       ```html
       <!doctype html>
@@ -353,7 +353,7 @@ The following section quickly explains the difference between HTML and the DOM.
       ```  
    :::column-end:::
    :::column span="":::
-      The browser parses the HTML and creates a tree of objects like the following list.  
+      浏览器分析 HTML 并创建类似于以下列表的对象树。  
       
       ```dom
       html
@@ -367,11 +367,11 @@ The following section quickly explains the difference between HTML and the DOM.
    :::column-end:::
 :::row-end:::  
 
-This tree of objects, or nodes, representing the content of the page is called the DOM.  
+表示页面内容的此对象树（即表示页面内容的节点）称为 DOM。  
 
 :::row:::
    :::column span="":::
-      Right now it looks the same as the HTML, but suppose that the script referenced at the bottom of the HTML runs the following code snippet.  
+      现在，它看起来与 HTML 相同，但假设 HTML 底部引用的脚本运行以下代码片段。  
       
       ```javascript
       const h1 = document.querySelector('h1');
@@ -382,7 +382,7 @@ This tree of objects, or nodes, representing the content of the page is called t
       ```  
    :::column-end:::
    :::column span="":::
-      That code removes the `h1` node and adds another `p` node to the DOM.  The complete DOM now displays the following list.  
+      该代码将删除 `h1` 节点，并将另一个 `p` 节点添加到 DOM。  完整的 DOM 现在显示以下列表。  
       
       ```dom
       html
@@ -396,9 +396,9 @@ This tree of objects, or nodes, representing the content of the page is called t
    :::column-end:::
 :::row-end:::  
 
-The HTML for the page is now different than the DOM.  In other words, HTML represents initial page content, and the DOM represents current page content.  When JavaScript adds, removes, or edits nodes, the DOM becomes different than the HTML.  
+页面的 HTML 现在与 DOM 不同。  换句话说，HTML 表示初始页面内容，DOM 表示当前页面内容。  当 JavaScript 添加、删除或编辑节点时，DOM 将与 HTML 不同。  
 
-See [Introduction to the DOM][MDNIntroductionToDOM] to learn more.  
+请参阅 [DOM 简介][MDNIntroductionToDOM] 以了解详细信息。  
 
 <!--
 ## Appendix: Scroll into view   
@@ -410,17 +410,17 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
     
     > ##### Figure 19  
     > Scroll into view  
-    > :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+    > :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
    Scroll into view  
 :::image-end:::  
     -->  
 
-## Appendix: Missing options   
+## 附录：缺少选项   
 
-Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you do not see the specified option in the context menu, try right-clicking away from the node text.  
+本教程中的许多说明将指导你右键单击 DOM 树中的节点，然后从弹出的上下文菜单中选择一个选项。  如果在上下文菜单中看不到指定的选项，请尝试右键单击节点文本以外的位置。  
 
-:::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Inspect a node" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
-   Where to click if you are not seeing all the options  
+:::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="检查节点" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
+   如果未看到所有选项，请单击的位置  
 :::image-end:::  
 
 <!-- image links -->  
@@ -430,13 +430,13 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge \(Chromium\) Developer Tools | Microsoft Docs"  
-[DevToolsCssGetStarted]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
-[DevToolsShortcutsElements]: ../shortcuts.md#elements-panel-keyboard-shortcuts "Elements panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge \ (Chromium \ ) 开发工具 |Microsoft 文档"  
+[DevToolsCssGetStarted]: ../css/index.md "开始使用查看和更改 CSS |Microsoft 文档"  
+[DevToolsShortcutsElements]: ../shortcuts.md#elements-panel-keyboard-shortcuts ""元素" 面板键盘快捷方式-Microsoft Edge DevTools 键盘快捷方式 |Microsoft 文档"  
 
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM 示例 |故障"
 
-[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to the DOM | MDN"  
+[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 |MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

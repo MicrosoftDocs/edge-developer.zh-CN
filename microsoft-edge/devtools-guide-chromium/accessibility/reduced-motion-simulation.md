@@ -1,11 +1,11 @@
 ---
-title: Simulate reduced motion using developer tools (CSS Prefers Reduced Motion)
+title: 使用开发工具 (，使用 CSS 更喜欢减少运动) 来模拟减少的运动
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: f1bf90de4ac1832fff07e9ac963c26f92adeea2c
 ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
@@ -13,9 +13,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "10843982"
 ---
-# Reduced Motion Simulation  
+# 减少了运动模拟  
 
-Animation in web products may be an accessibility problem.  Operating Systems deal with the problem by including an option to turn off animations to avoid user confusion and potential health related problems such as triggering seizures.  On the web, you may use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS Media Query to detect if users prefer to not see any animations.  In your product, you may wrap your animation code in a test to avoid animations showing up for the affected users.  
+Web 产品中的动画可能是辅助功能问题。  操作系统通过包括用于关闭动画的选项来处理问题，以避免用户混淆和潜在的与运行状况相关的问题，如触发病情发作。  在 web 上，你可以使用 "按 [优先减少的动画][MDNPrefersReducedMotion] " CSS 媒体查询来检测用户是否希望看不到任何动画。  在你的产品中，你可以在测试中包装动画代码，以避免针对受影响的用户显示动画。  
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -26,30 +26,30 @@ Animation in web products may be an accessibility problem.  Operating Systems de
 }
 ```  
 
-Using the [Microsoft Edge DevTools][DevtoolsGuideChromiumMain], you may simulate this reduced motion setting without having to change your operating system.  
+使用 [Microsoft Edge DevTools][DevtoolsGuideChromiumMain]，您可以模拟此 "减少的动作" 设置，而无需更改操作系统。  
 
-1.  Open the **Command Menu**.  
-    1.  Press `Control`+`Shift`+`P`  on Windows or `Command`+`Shift`+`P` on macOS.  
+1.  打开 " **命令" 菜单**。  
+    1.  按 `Control` + `Shift` + `P` Windows 或 `Command` + `Shift` + `P` macOS。  
         
-        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           The **Command Menu**  
+        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+           **命令菜单**  
         :::image-end:::   
         
-1.  Type `reduced`, to turn the simulation on and off.  Select the option and press `Enter`.  
+1.  键入 `reduced` ，打开和关闭模拟。  选择 "" 选项，然后按 `Enter` 。  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
-       Turn on or off the **prefers reduced motion** setting from **Command Menu**  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+       打开或关闭 "**命令" 菜单**中的 "**优先减少动作**" 设置  
     :::image-end:::  
     
-1.  Refresh the current page to test whether your animations are turned off or visible.  
+1.  刷新当前页以测试动画是否处于关闭状态或是否可见。  
     
 <!-- image links -->  
 
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figure 1: The Command Menu"  
-[ImageToggleReducedMotionFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png "Figure 2: Toggle reduced motion from command palette"
+[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "图1：命令菜单"  
+[ImageToggleReducedMotionFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png "图2：切换从命令调色板缩小运动"
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools  Microsoft | Microsoft Docs"  
+[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发人员工具 Microsoft |Microsoft 文档"  
 
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  
+[MDNPrefersReducedMotion]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion "首选-减少-运动 |MDN"  

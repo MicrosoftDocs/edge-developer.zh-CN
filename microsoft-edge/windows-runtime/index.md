@@ -1,13 +1,13 @@
 ---
-description: Use the Windows Runtime (WinRT) to call native Windows APIs from your JavaScript app.
-title: Windows Runtime (WinRT) for JavaScript
+description: 使用 Windows 运行时 (WinRT) 从 JavaScript 应用调用本机 Windows Api。
+title: '适用于 JavaScript 的 Windows 运行时 (WinRT) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
-keywords: Windows Runtime, WinRT, PWA, JavaScript
+keywords: Windows 运行时、WinRT、PWA、JavaScript
 ms.openlocfilehash: e4b6eab4ecfbd26ccda8ef1c6e51a7a30dfaecfc
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -15,43 +15,43 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942205"
 ---
-# Windows Runtime (WinRT) for JavaScript  
+# 适用于 JavaScript 的 Windows 运行时 (WinRT)   
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-The [Windows Runtime](/windows/uwp/get-started/universal-application-platform-guide#how-the-universal-windows-platform-relates-to-windows-runtime-apis) \(or simply WinRT\) is the collection of native APIs that power the [Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) \(UWP\) apps that run across all [Windows 10 device families](/uwp/extension-sdks/device-families-overview).  WinRT APIs are projected into a number of different languages, including C#, C++, Visual Basic, and JavaScript.  
+[Windows 运行时](/windows/uwp/get-started/universal-application-platform-guide#how-the-universal-windows-platform-relates-to-windows-runtime-apis)\ (或 WinRT \ ) 是为在所有[Windows 10 设备系列](/uwp/extension-sdks/device-families-overview)上运行的[通用 Windows 平台](/windows/uwp/get-started/universal-application-platform-guide)\ (UWP \ ) 应用的本机 api 的集合。  WinRT Api 被投影到多种不同语言，包括 c #、c + +、Visual Basic 和 JavaScript。  
 
-As a web developer, you may request these native Windows APIs from JavaScript when your web app is [running as an installed Windows 10 app](../progressive-web-apps-edgehtml/windows-features.md#set-up-and-run-your-universal-windows-app) \(launched from the `wwahost.exe` process, rather than the browser\).  Additionally, your website running as a Windows 10 app may also use the [Microsoft Edge webview](#webview) control to display remote and local web content and [MSApp](#msapp) APIs for blob and stream handling, among other things.  
+作为 web 开发人员，当你的 web 应用 [作为已安装的 Windows 10 应用程序运行](../progressive-web-apps-edgehtml/windows-features.md#set-up-and-run-your-universal-windows-app) 时，你可能会从 JavaScript 请求这些本机 Windows api， (从该 `wwahost.exe` 进程（而不是浏览器 \ ) ）启动。  此外，作为 Windows 10 应用运行的网站还可以使用 [Microsoft Edge](#webview) web 部件控件来显示远程和本地 web 内容以及用于 blob 和流处理的 [MSApp](#msapp) api 以及其他内容。  
 
-Here are the top-level WinRT namespace areas available to all Windows 10 apps:  
+以下是所有 Windows 10 应用均可使用的顶级 WinRT 命名空间区域：  
 
-| WinRT Namespace | Description |  
+| WinRT 命名空间 | 描述 |  
 |:--- |:--- |  
-| [AI](/uwp/api/windows.AI.MachineLearning.Preview) \(Preview\) | Contains classes that enable apps to load machine learning models, bind data as inputs, and evaluate the results.  |  
-| [ApplicationModel](/uwp/api/windows.applicationmodel) | Provides an app with access to core system functionality and run-time information about the app package, and handles suspend operations.  |  
-| [Data](/uwp/api/windows.data.html) | Provides utility classes for working with various data formats, including HTML, JSON, PDF, text, and XML.  |  
-| [Devices](/uwp/api/windows.devices) | This namespace provides access to the low level device providers, including ADC, GPIO, I2 C, PWM, and SPI.  |  
-| [Foundation](/uwp/api/windows.foundation) | Enables fundamental Windows Runtime functionality, including managing asynchronous operations and accessing property stores.  This namespace also defines common value types that represent Uniform Resource Identifier \(URI\), dates and times, 2-D measurements, and other basic values.  |  
-| [Gaming](/uwp/api/windows.gaming.input) |Provides access to game controller input, the Game bar, game monitoring, and game chat.  |  
-| [Globalization](/uwp/api/windows.globalization) | Provides globalization support for language profiles, geographic regions, and international calendars.  |  
-| [Graphics](/uwp/api/windows.graphics) | Provides basic data types that contain info on how to draw graphics.  These data structs are commonly used to define how large surfaces are drawn when using the CompositionVirtualDrawingSurface class.  |  
-| [Management](/uwp/api/windows.management) | Provides capabilities to force a sync from an Mobile Device Management \(MDM\) device to the server.  This MDM sync protocol is based on the Open Mobile Alliance - Device Management standard.  |  
-| [Media](/uwp/api/windows.media) | Provides classes for creating and working with media such as photos, audio recordings and videos.  |  
-| [Networking](/uwp/api/windows.networking) | Provides access to hostnames and endpoints used by network apps.  |  
-| [Perception](/uwp/api/windows.perception) | Contains classes for perceiving the user's surroundings, letting apps locate and reason about the device relative to the surfaces and holograms around the user.  |  
-| [Security](/uwp/api/windows.security.authentication.identity) | Provides classes for user authentication, credentials management, cryptographic operations and enterprise data protection features.  |  
-| [Services](/uwp/api/windows.services.cortana) | Provides access to Microsoft services for Cortana, Maps, Microsoft Store and Targeted \(subscription\) content.  |  
-| [Storage](/uwp/api/windows.storage) | Provides classes for managing files, folders, and application settings.  |  
-| [System](/uwp/api/windows.system) | Enables system functionality such as launching apps, obtaining information about a user, and memory profiling.  |  
-| [UI](/uwp/api/windows.ui) | Provides an app with access to core system functionality and run-time information about the UI.  **NOTE**:  APIs in the `Windows.UI.Xaml` namespace are not available for JavaScript apps \(which may use the equivalent web standards-based technologies\).  |  
-| [Web](/uwp/api/windows.web) | Provides information on errors resulting from web service operations.  |  
+| [AI](/uwp/api/windows.AI.MachineLearning.Preview) \ (Preview \ )  | 包含支持应用加载计算机学习模型、将数据作为输入绑定并评估结果的类。  |  
+| [Windows.applicationmodel.calls](/uwp/api/windows.applicationmodel) | 为应用提供对核心系统功能的访问以及有关应用包的运行时信息，并处理挂起操作。  |  
+| [数据](/uwp/api/windows.data.html) | 提供用于处理各种数据格式（包括 HTML、JSON、PDF、文本和 XML）的实用工具类。  |  
+| [设备](/uwp/api/windows.devices) | 此命名空间提供对低级别设备提供程序（包括 ADC、GPIO、I2 C、PWM 和 SPI）的访问权限。  |  
+| [Foundation](/uwp/api/windows.foundation) | 启用基本 Windows 运行时功能，包括管理异步操作和访问属性存储。  此命名空间还定义了表示统一资源标识符 \ (URI \ ) 、日期和时间、二维度量值和其他基本值的常见值类型。  |  
+| [游戏](/uwp/api/windows.gaming.input) |提供对游戏控制器输入、游戏栏、游戏监视和游戏聊天的访问权限。  |  
+| [全球化](/uwp/api/windows.globalization) | 提供语言配置文件、地理区域和国际日历的全球化支持。  |  
+| [显卡](/uwp/api/windows.graphics) | 提供包含有关如何绘制图形的信息的基本数据类型。  这些数据结构通常用于定义在使用 CompositionVirtualDrawingSurface 类时如何绘制大的图面。  |  
+| [管理](/uwp/api/windows.management) | 提供强制从移动设备管理 \ (MDM \ ) 设备到服务器的同步的功能。  此 MDM 同步协议基于开放的移动联盟-设备管理标准。  |  
+| [媒体](/uwp/api/windows.media) | 提供用于创建和使用媒体（如照片、音频录制和视频）的类。  |  
+| [网络](/uwp/api/windows.networking) | 提供对网络应用使用的主机名和终结点的访问权限。  |  
+| [引起](/uwp/api/windows.perception) | 包含用于 perceiving 用户周围环境的类，使应用能够找到与用户周围的图面和全息图相关的设备和原因。  |  
+| [安全性](/uwp/api/windows.security.authentication.identity) | 提供用于用户身份验证、凭据管理、加密操作和企业数据保护功能的类。  |  
+| [服务](/uwp/api/windows.services.cortana) | 提供对 Cortana、地图、Microsoft Store 和目标 \ (订阅 \ ) 内容的 Microsoft 服务的访问权限。  |  
+| [存储](/uwp/api/windows.storage) | 提供用于管理文件、文件夹和应用程序设置的类。  |  
+| [系统](/uwp/api/windows.system) | 支持启动应用、获取有关用户的信息和内存分析等系统功能。  |  
+| [UI](/uwp/api/windows.ui) | 为应用提供对核心系统功能和有关 UI 的运行时信息的访问。  **注意**：命名空间中的 api 不可 `Windows.UI.Xaml` 用于 JavaScript 应用 \ (，这些应用可能会使用基于 web 标准的等效技术 \ ) 。  |  
+| [Web](/uwp/api/windows.web) | 提供有关 web 服务操作导致的错误的信息。  |  
 
-For more details on usage, check out [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md).  To learn how to run your website as a Windows app, try the [Tailor your PWA for Windows](../progressive-web-apps/windows-features.md) tutorial.  
+有关用法的更多详细信息，请 [在 JavaScript 中使用 Windows 运行时](./using-the-windows-runtime-in-javascript.md)查看。  若要了解如何将网站作为 Windows 应用运行，请尝试 [定制你的 PWA For windows](../progressive-web-apps/windows-features.md) 教程。  
 
 ## WebView  
 
-The [Microsoft Edge WebView](../webview.md) control enables you to host web content within your Windows 10 app.  This is similar to using an `<iframe>`, but provides a lot [more features and control](../hosting/webview.md#webview-versus-iframe) over the experience.  
+通过 [Microsoft Edge Web 视图](../webview.md) 控件，你可以在 Windows 10 应用中托管 web 内容。  这类似于使用 `<iframe>` ，但提供了 [更多功能和控制](../hosting/webview.md#webview-versus-iframe) 体验。  
 
 ## MSApp  
 
-The [MSApp](./reference/msapp.md) global object \(`window.MSApp`\) provides assorted helper functions for JavaScript-based Windows 10 apps, such as utilities for converting between web standards-based and equivalent WinRT object types.  
+[MSApp](./reference/msapp.md) global object (\ `window.MSApp` ) 为基于 JavaScript 的 Windows 10 应用提供各种帮助程序函数，例如用于在基于 web 标准和等效 WinRT 对象类型之间进行转换的实用工具。  

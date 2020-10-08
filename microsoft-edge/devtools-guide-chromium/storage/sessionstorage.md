@@ -1,12 +1,12 @@
 ---
-description: How to view and edit sessionStorage with the Session Storage pane and the Console.
-title: View And Edit Session Storage With Microsoft Edge DevTools
+description: 如何通过会话存储窗格和控制台查看和编辑 sessionStorage。
+title: 查看和编辑与 Microsoft Edge DevTools 的会话存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,81 +32,81 @@ ms.locfileid: "10993546"
 
 
 
-# View and edit Session Storage with Microsoft Edge DevTools   
+# 查看和编辑与 Microsoft Edge DevTools 的会话存储   
 
   
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [`sessionStorage`][MDNSessionStorage] key-value pairs.  
+本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [`sessionStorage`][MDNSessionStorage] 键值对。  
 
-## View sessionStorage keys and values   
+## 查看 sessionStorage 键和值   
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
+1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认显示 **清单** 窗格。  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
+       **清单**窗格  
     :::image-end:::  
     
-1.  Expand the **Session Storage** menu.  
+1.  展开 " **会话存储** " 菜单。  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       The **Session Storage** Menu  
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       **会话存储**菜单  
     :::image-end:::  
     
-1.  Select a domain to view the key-value pairs.  
+1.  选择一个域以查看键/值对。  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
-       The `sessionStorage` key-value pairs  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+       `sessionStorage`键/值对  
     :::image-end:::  
     
-1.  Select a row of the table to view the value in the viewer below the table.  
+1.  选择表中的一行以查看表下方的查看器中的值。  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
-       View the value of the `x-sid` key  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+       查看键的值 `x-sid`  
     :::image-end:::  
     
-## Create a new sessionStorage key-value pair   
+## 创建新的 sessionStorage 键值对   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
+1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
+1.  双击表格的空白部分。  DevTools 将创建一个新行，并将光标焦点放在 **键** 列中。  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
-       The empty part of the table to double-click in order to create a new key-value pair  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+       要在其中创建新的键值对的表格的空部分，请双击该部分。  
     :::image-end:::  
     
-## Edit sessionStorage keys or values   
+## 编辑 sessionStorage 键或值   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
+1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
+1.  双击 " **键** " 或 " **值** " 列中的一个单元格以编辑该注册表项或值。  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
-       Edit a `sessionStorage` key  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+       编辑 `sessionStorage` 密钥  
     :::image-end:::  
     
-## Delete sessionStorage key-value pairs   
+## 删除 sessionStorage 键值对   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Select the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Press the `Delete` key or click **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
+1.  选择要删除的键/值对。  DevTools 突出显示蓝色以指示它已选中。  
+1.  按下 `Delete` 键或单击 " **删除所选** 项 \" (" ![ 删除所选项 ][ImageDeleteIcon] \ ) "。  
     
-## Delete all sessionStorage key-value pairs for a domain   
+## 删除域的所有 sessionStorage 键值对   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Select **Clear All** \(![Clear All][ImageClearIcon]\).  
+1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
+1.  选择 **"全部清除** " (![ 全部清除 ][ImageClearIcon] \ ) 。  
     
-## Interact with sessionStorage from the Console   
+## 从控制台与 sessionStorage 交互   
 
-Since you can run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `sessionStorage` from the **Console**.  
+由于你可以在 **控制台**中运行 JavaScript，并且由于 **控制台** 有权访问页面的 JavaScript 上下文，因此可以 `sessionStorage` 从 **控制台**进行交互。  
 
-1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.  
+1.  如果你**JavaScript contexts**想要访问域的 javascript 上下文，而**Console** `sessionStorage` 不是你所在的页面之外的其他域的键值对，请使用 Javascript 上下文菜单更改该控制台的 javascript 上下文。  
     
-    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-console-domain-selection.msft.png":::
-       Change the JavaScript context of the Console  
+    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="清单窗格" lightbox="../media/storage-console-domain-selection.msft.png":::
+       更改控制台的 JavaScript 上下文  
     :::image-end:::  
     
-1.  Run your `sessionStorage` expressions in the Console, the same as you would in your JavaScript.  
+1.  `sessionStorage`在控制台中运行表达式，就像在 JavaScript 中一样。  
     
-    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-console-session-storage-keys.msft.png":::
-       Interact with `sessionStorage` from the **Console**  
+    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="清单窗格" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+       `sessionStorage`从**控制台**进行交互  
     :::image-end:::  
     
 <!--  
@@ -122,9 +122,9 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
 
-[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
+[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "SessionStorage |MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

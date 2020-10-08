@@ -1,6 +1,6 @@
 ---
-description: Gets the internal data set on JsrtContext.
-title: JsGetContextData Function | Microsoft Docs
+description: 获取 JsrtContext 上的内部数据集。
+title: JsGetContextData 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,10 +20,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563134"
 ---
-# JsGetContextData Function
-Gets the internal data set on JsrtContext.  
+# JsGetContextData 函数
+获取 JsrtContext 上的内部数据集。  
   
-## Syntax  
+## 语法  
   
 ```cpp  
 STDAPI_(JsErrorCode) JsGetContextData(  
@@ -32,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetContextData(
 );  
 ```  
   
-#### Parameters  
+#### 参数  
  `context`  
- The context to get the data from.  
+ 要从中获取数据的上下文。  
   
  `data`  
- The pointer to the data where data will be returned.  
+ 指向将返回数据的数据的指针。  
   
-## Return Value  
- The code `JsNoError` if the operation succeeded, a failure code otherwise.  
+## 返回值  
+ `JsNoError`如果操作成功，则为代码，否则为失败代码。  
   
-## Remarks  
- Requires an active script context.  
+## 备注  
+ 需要活动脚本上下文。  
   
-## Requirements  
- **Header:** jsrt.h  
+## 要求  
+ **页眉：** jsrt  
   
-## See Also  
- [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)
+## 另请参阅  
+ [应用 (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

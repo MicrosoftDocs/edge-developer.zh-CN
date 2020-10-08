@@ -1,13 +1,13 @@
 ---
 ms.assetid: ''
-description: Safely experiment for a fixed period of time and provide feedback on new platform features.
-title: Origin Trials
+description: 安全实验一段固定的时间，并提供有关新平台功能的反馈。
+title: 原始试验
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, origin trials, developer
+keywords: 边缘、web 开发、html、css、原创试验、开发人员
 ms.openlocfilehash: 470896435ab348419749a7de00adcdb83b784df3
 ms.sourcegitcommit: 5cbc9237363b3a8ba212ca128aa03c71a33ec86f
 ms.translationtype: MT
@@ -15,89 +15,89 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/02/2020
 ms.locfileid: "10846524"
 ---
-# Use Origin Trials in Microsoft Edge  
+# 在 Microsoft Edge 中使用原创试验  
 
-Developers may use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you do not need to go to `edge://flags` and turn on feature flags.  For more information, see [experimental APIs][DeveloperMicrsoftEdgeOriginTrials].  Additionally, you may provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.  
+在有限的时间段内，开发人员可以使用初始试验在活动网站上试用实验性 Api。  使用原始试验时，访问你的网站的 Microsoft Edge 用户可能会运行使用实验性 Api 的代码。  若要访问每台用户计算机上的实验性 Api，无需转到 `edge://flags` 并打开功能标志。  有关详细信息，请参阅 [实验性 api][DeveloperMicrsoftEdgeOriginTrials]。  此外，你还可以提供有关 API 设计、使用情况或你使用 Api 到浏览器工程师和 web 标准社区的体验的反馈。  
 
-## Get started using Origin Trials  
+## 开始使用初始试用版  
 
-For more information about the experimental APIs available in Microsoft Edge, see [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Ensure that you review the minimum version requirements for Microsoft Edge, and the trial end date to assess suitability of using the experimental APIs on your website.  
+有关 Microsoft Edge 中可用的实验性 Api 的详细信息，请参阅 [Microsoft Edge 原始试用开发人员控制台][DeveloperMicrsoftEdgeOriginTrials]。  确保查看 Microsoft Edge 的最低版本要求和试用结束日期，以评估在你的网站上使用实验性 Api 的适用性。  
 
 > [!NOTE]
-> An experiment may end earlier than planned if any of the following situations occur.  
-> *   A major security incident.  
-> *   If sufficient feedback is collected that indicates a major redesign is needed to meet the needs of web developers.  
-> In either case, a notification email is sent to all developers currently enrolled in the experiment.  
+> 如果出现以下情况，则实验可能比计划提前结束。  
+> *   重大安全事件。  
+> *   如果收集了足够的反馈表明需要进行重大重新设计以满足 web 开发人员的需求。  
+> 在任何一种情况下，通知电子邮件都将发送给当前注册了实验的所有开发人员。  
 
-### Register for a trial of an experimental API  
+### 注册实验性 API 的试用版  
 
-Use the following steps to register for a trial of an experimental API.  
+使用以下步骤注册实验性 API 的试用版。  
 
-1.  Visit the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.  
-1.  Choose the Register button on any of the available experiments.  
-1.  Sign into the Developer Console using your GitHub username and password.  
-1.  Choose **Authorize MicrosoftEdge**.  
-1.  Complete the form.  
+1.  访问 [Microsoft Edge 原始试用开发人员控制台][DeveloperMicrsoftEdgeOriginTrials] 页面。  
+1.  在任何可用实验中选择 "注册" 按钮。  
+1.  使用 GitHub 用户名和密码登录到开发人员控制台。  
+1.  选择 " **授权 MicrosoftEdge**"。  
+1.  填写表单。  
     
     > [!NOTE]
-    > To enroll a single or all subdomains, choose set the `Do you need to match all subdomains for the provided origin?` setting to `Yes`.  For example, `https://dev.contoso.com` is a single domain, and `https://*.contoso.com` uses a wildcard to represent all subdomains.  
+    > 若要注册单个或所有子域，请选择 "设置 `Do you need to match all subdomains for the provided origin?` 为" `Yes` 。  例如， `https://dev.contoso.com` 是单个域， `https://*.contoso.com` 使用通配符表示所有子域。  
     
     > [!IMPORTANT]
-    > The following origin formats are not allowed.  
-    > *   Specifying a subfolder on the origin.  For example, `https://contoso.com/path/subfolder`  
+    > 不允许使用以下原始格式。  
+    > *   在原始位置指定子文件夹。  例如， `https://contoso.com/path/subfolder`  
     > 
-    > *   Using an origin with query string parameters.  For example, `https://contoso.com/path/feature?query_parameter=12345`  
+    > *   将原点与查询字符串参数配合使用。  例如， `https://contoso.com/path/feature?query_parameter=12345`  
     
-1.  Choose **ACCEPT and REGISTER**.  
+1.  选择 " **接受和注册**"。  
 
-### Apply your token  
+### 应用您的令牌  
 
-A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.  To begin using the trial on your website, use either of the following methods to apply the token to your page.  
+令牌将立即生成并显示在 [Microsoft Edge 原始试验开发人员控制台][DeveloperMicrsoftEdgeOriginTrials] 页面上。  若要开始在你的网站上使用试用版，请使用以下任一方法将令牌应用于你的页面。  
 
-*   Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.  
+*   将该 `origin-trial` 属性值和你的令牌添加到 `meta` 使用实验性 API 的每个页面上的标记。  
     
     ```html
     <meta http-equiv="origin-trial" content="replace-with-your-token">
     ```  
     
-*   Add `Origin-Trial` to the HTTP response header of your server.  
+*   添加 `Origin-Trial` 到服务器的 HTTP 响应头。  
     
     ```json
     Origin-Trial: replace-with-your-token
     ```  
     
 > [!NOTE]
-> Your token is valid for 6 weeks.  Before your trial ends, reminder emails are sent to you that ask for your feedback and ask you to consider renewing your trial before your token expires.  
+> 您的令牌有效期为6周。  试用期结束之前，会向您发送提醒电子邮件，询问您的反馈，并要求您在令牌到期之前续订您的试用版。  
 
-### Opt out of an experiment  
+### 选择退出实验  
 
-To opt out of an experiment, use one of the following methods to remove your token.  
+若要退出实验，请使用以下方法之一删除你的令牌。  
 
-*   Remove the `meta` tag from every page that used the experimental API.  
+*   `meta`从使用实验 API 的每个页面中删除标记。  
     
     ```html
     <meta http-equiv="origin-trial" content="your-token">
     ```  
     
-*   Remove `Origin-Trial` from the HTTP response header of your server.  
+*   `Origin-Trial`从服务器的 HTTP 响应头中删除。  
     
     ```json
     Origin-Trial: your-token
     ```  
     
-### Detect experimental features and provide a fallback  
+### 检测实验性功能并提供回退  
 
-When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that do not support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available which may result in errors.  To avoid this situation, ensure you detect features available in your browser.  For more information, see [Implementing feature detection][MDNImplementingFeatureDetection].
+使用实验性 Api 时，请确保为网站的所有访问者提供工作体验。  访问者可以使用不支持你添加到代码中的实验性 Api 的浏览器。  此外，如果你的令牌在续订之前到期，实验性 API 将不再可用，可能会导致错误。  为避免这种情况，请确保检测浏览器中的可用功能。  有关详细信息，请参阅 [实现功能检测][MDNImplementingFeatureDetection]。
 
-### Roadmap for Allowed Origins  
+### 允许的来源路线图  
 
-The Microsoft Edge Origin Trials portal today only supports SSL Enabled Origins, which means that websites must have HTTPS properly implemented to register for an experiment.  In the future, the following secure origins are planned.  
+现在，Microsoft Edge 原始试用门户仅支持 SSL 启用的来源，这意味着网站必须正确实现 HTTPS 才能注册实验。  将来，计划提供以下安全来源。  
 
-*   Register `http://localhost` as the origin for your experiments.  To use `http://localhost` today, go to `edge://flags` and set the experiment to **Enabled**.  
-*   Use extensions with `extensions://` prefixed origins to enroll in experiments.  
+*   注册 `http://localhost` 为实验的来源。  若要 `http://localhost` 立即使用，请转到 `edge://flags` 并将实验设置为 " **启用**"。  
+*   使用具有前缀的来源的扩展名 `extensions://` 注册实验。  
     
 <!-- links -->  
 
-[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials Developer Console | Microsoft Docs"  
+[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge 原始试用开发人员控制台 |Microsoft 文档"  
 
-[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Implementing feature detection | MDN"  
+[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "实施功能检测 |MDN"  

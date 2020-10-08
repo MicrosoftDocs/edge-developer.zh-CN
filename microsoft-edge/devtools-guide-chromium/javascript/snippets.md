@@ -1,12 +1,12 @@
 ---
-description: Snippets are small scripts that you can author and run within the Sources panel of Microsoft Edge DevTools.  You can access and run them from any page.  When you run a Snippet, it runs from the context of the currently open page.
-title: Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools
+description: 代码段是可以在 Microsoft Edge DevTools 的 "源" 面板中创作和运行的小型脚本。  您可以从任何页面访问和运行它们。  运行代码段时，它从当前打开的页面的上下文中运行。
+title: 在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 5f6284179aacb471116a2d732507b010c37ef235
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,20 +32,20 @@ ms.locfileid: "10993385"
 
 
 
-# Run snippets of JavaScript on any page with Microsoft Edge DevTools   
+# 在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段   
 
 
 
-If you find yourself running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [Sources][DevToolsSourcesPanel] panel.  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
-Firefox DevTools has a feature similar to Snippets called [Scratchpad][MDNScratchpad].  
+如果你发现自己在 [控制台][DevtoolsConsoleIndex] 中重复运行相同的代码，请考虑改为将代码另存为代码段。  代码段是您在 " [源][DevToolsSourcesPanel] " 面板中创作的脚本。  他们有权访问页面的 JavaScript 上下文，您可以在任何页面上运行这些上下文。  代码段是 [bookmarklets][WikiBookmarklet]的替代方法。  
+Firefox DevTools 的功能类似于名为 " [便笺簿][MDNScratchpad]" 的 "片段"。  
 
-For example, in the following figure shows the DevTools homepage on the left and some Snippet source code on the right.  
+例如，下图显示左侧的 DevTools 主页和右侧的一些代码段源代码。  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
-   How the page looks before running the Snippet  
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+   运行代码段之前页面的外观  
 :::image-end:::  
 
-The Snippet source code from the previous figure.  
+上图中的代码段源代码。  
 
 ```javascript
 console.log('Hello, Snippets!');
@@ -55,109 +55,109 @@ p.textContent = 'Hello, Snippets!';
 document.body.appendChild(p);
 ```  
 
-In the following figure, the page appears after running the Snippet.  The **Console Drawer** pops up to display the `Hello, Snippets!` message that the Snippet logs, and the content of the page changes completely.  
+下图显示了运行代码段后的页面。  **控制台抽屉**将弹出 `Hello, Snippets!` ，显示代码片段记录的消息，并且该页面的内容将完全更改。  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
-   How the page looks after running the Snippet  
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+   运行代码段后页面的外观  
 :::image-end:::  
 
-## Open the Snippets pane   
+## 打开 "代码段" 窗格   
 
-The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** pane.  
+" **代码段** " 窗格将列出你的代码段。  若要编辑代码段，需要从 " **代码段** " 窗格中将其打开。  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
-   The **Snippets** pane  
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+   " **代码段** " 窗格  
 :::image-end:::  
 
-### Open the Snippets pane with a mouse   
+### 使用鼠标打开 "代码段" 窗格   
 
-1.  Click the **Sources** tab to open the **Sources** panel.  The **Page** pane usually opens by default.  
+1.  单击 " **源** " 选项卡以打开 " **源** " 面板。  默认情况下， **页面** 窗格通常打开。  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       The **Sources** panel with the **Page** pane open on the left  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       在左侧打开**页面**窗格的 "**源**" 面板  
     :::image-end:::  
     
-1.  Click the **Snippets** tab to open the **Snippets** pane.  You might need to click **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) in order to access the **Snippets** option.  
+1.  单击 " **代码段** " 选项卡以打开 " **代码段** " 窗格。  您可能需要单击 " **更多选项卡** \ (![ 更多选项卡 ][ImageMoreTabsIcon] \ ) " 才能访问 " **代码段** " 选项。  
     
-### Open the Snippets pane with the Command Menu   
+### 通过 "命令" 菜单打开 "代码段" 窗格   
 
-1.  Focus your cursor somewhere inside of DevTools.  
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Start typing `Snippets`, select **Show Snippets**, and then press `Enter` to run the command.  
+1.  将光标聚焦在 DevTools 内的某个位置。  
+1.  按 `Control`+`Shift`+`P` \(Windows\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。  
+1.  开始键入 `Snippets` ，选择 " **显示代码段**"，然后按 `Enter` 运行命令。  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-search-show-snippets.msft.png":::
-       The **Show Snippets** command  
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-search-show-snippets.msft.png":::
+       " **显示代码段** " 命令  
     :::image-end:::  
     
-## Create Snippets   
+## 创建代码段   
 
-### Create a Snippet through the Sources panel   
+### 通过 "源" 面板创建代码段   
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  Click **New snippet**.  
-1.  Enter a name for your Snippet then press `Enter` to save.  
+1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
+1.  单击 " **新建代码段**"。  
+1.  输入代码段的名称，然后按 " `Enter` 保存"。  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
-       Name a Snippet  
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+       为代码段命名  
     :::image-end:::  
     
-### Create a Snippet through the Command Menu   
+### 通过 "命令" 菜单创建代码段   
 
-1.  Focus your cursor somewhere inside of DevTools.  
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Start typing `Snippet`, select **Create new snippet**, then press `Enter` to run the command.  
+1.  将光标聚焦在 DevTools 内的某个位置。  
+1.  按 `Control`+`Shift`+`P` \(Windows\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。  
+1.  开始键入 `Snippet` ，选择 " **创建新代码段**"，然后按 `Enter` 运行命令。  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
-       The command for creating a new Snippet  
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+       用于创建新代码段的命令  
     :::image-end:::  
     
-See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a custom name.  
+如果想要为新的代码段提供自定义名称，请参阅 [重命名代码段](#rename-snippets) 。  
 
-## Edit Snippets   
+## 编辑代码段   
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  In the **Snippets** pane click the name of the Snippet that you want to edit in order to open it in the **Code Editor**.  
+1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
+1.  在 "代码 **段** " 窗格中，单击要编辑的代码段的名称，以便在 **代码编辑器**中将其打开。  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
-       The **Code Editor**  
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+       **代码编辑器**  
     :::image-end:::  
     
-1.  Use the **Code Editor** to add JavaScript to your Snippet.  
-1.  When an asterisk appears next to the name of your Snippet it means you have unsaved code. Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  
+1.  使用 **代码编辑器** 将 JavaScript 添加到代码段。  
+1.  当代码段名称旁边显示星号时，表示你有未保存的代码。 按 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存。  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
-       An asterisk next to the Snippet name, which indicates unsaved code  
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+       代码段名称旁边的星号，指示未保存的代码  
     :::image-end:::  
     
-## Run Snippets   
+## 运行代码段   
 
-### Run a Snippet from the Sources panel   
+### 从 "源" 面板运行代码段   
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  Click the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**.  
-1.  Click **Run Snippet** \(![Run Snippet][ImageRunSnippetIcon]\), or press `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\).  
+1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
+1.  单击要运行的代码段的名称。  代码段将在 **代码编辑器**中打开。  
+1.  单击 "**运行片段**\ (![ 运行代码段 ][ImageRunSnippetIcon] \ ) "，或按 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 。  
     
-### Run a Snippet with the Command Menu   
+### 使用 "命令" 菜单运行代码段   
 
-1.  Focus your cursor somewhere inside of DevTools.  
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Delete the `>` character and type the `!` character followed by the name of the Snippet that you want to run.  
+1.  将光标聚焦在 DevTools 内的某个位置。  
+1.  按 `Control`+`Shift`+`P` \(Windows\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。  
+1.  删除 `>` 字符，然后键入一个字符，然后键入 `!` 要运行的代码段的名称。  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="How the page looks before running the Snippet" lightbox="../media/javascript-search-run-command.msft.png":::
-       Running a Snippet from the **Command Menu**  
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-search-run-command.msft.png":::
+       从 "**命令" 菜单**运行代码段  
     :::image-end:::  
     
-1.  Press `Enter` to run the Snippet.  
+1.  按 `Enter` 运行代码段。  
 
-## Rename Snippets   
+## 重命名代码段   
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  Right-click the Snippet name and select **Rename**.  
+1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
+1.  右键单击代码段名称，然后选择 " **重命名**"。  
     
-## Delete Snippets   
+## 删除代码段   
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  Right-click the Snippet name and select **Remove**.  
+1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
+1.  右键单击代码段名称，然后选择 " **删除**"。  
     
 <!--  
  
@@ -172,11 +172,11 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 <!-- links -->  
 
-[DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"  
-[DevToolsSourcesPanel]: ../sources.md "Sources panel overview | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "控制台概述 |Microsoft 文档"  
+[DevToolsSourcesPanel]: ../sources.md ""源" 面板概述 |Microsoft 文档"  
 
-[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
-[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet - Wikipedia"  
+[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "便笺 |MDN"  
+[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet-维基百科"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

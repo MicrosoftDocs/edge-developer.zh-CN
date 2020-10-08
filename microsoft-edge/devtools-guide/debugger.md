@@ -1,12 +1,12 @@
 ---
-description: Use the Debugger to step through and troubleshoot your code.
-title: Debugger - DevTools (EdgeHTML)
+description: 使用调试程序逐句浏览代码并对代码进行故障排除。
+title: '调试器-DevTools (EdgeHTML) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
+keywords: microsoft edge、web 开发、f12 工具、devtools、调试器、调试、断点、监视、服务工作人员、缓存 api、web 存储、cookie
 ms.custom: seodec18
 ms.openlocfilehash: 722277618cd8d6d5d6dba4f2a8bd3a28b6466f77
 ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
@@ -15,244 +15,244 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/16/2020
 ms.locfileid: "10882917"
 ---
-# Debugger - DevTools (EdgeHTML)
+# 调试器-DevTools (EdgeHTML) 
 
-Use the **Debugger** to step through code, set watches and breakpoints, live edit your code and inspect your caches. Test and troubleshoot your code by:
+使用 **调试程序** 逐句通过代码、设置监视和断点、实时编辑代码和检查缓存。 通过以下方式测试和解决代码问题：
 
-- [Browsing](#resource-picker) and [searching](#file-search) code from your loaded source files
-- [Controlling the execution flow](#toolbar) as you step through your code
-- [Managing page storage resources](./storage.md#cache-manager), including the [service workers and cache](./service-workers.md), [cookies](./storage.md#cookies-list) and [web storage](./storage.md#local-and-session-storage-managers)  
-- [Setting breakpoints and live editing](#debug-window) your code as it runs
-- [Tracking and editing local variables](#watches) as you debug
-- [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed
-- [Adding specialized breakpoints](#breakpoints) for XmlHttpRequests, events and [DOM mutations](#dom-breakpoints)
+- [浏览](#resource-picker) 和 [搜索](#file-search) 加载的源文件中的代码
+- 逐句通过代码时[控制执行流程](#toolbar)
+- [管理页面存储资源](./storage.md#cache-manager)，包括 [服务工作人员和缓存](./service-workers.md)、 [cookie](./storage.md#cookies-list) 和 [web 存储](./storage.md#local-and-session-storage-managers)  
+- 在运行时[设置断点和实时编辑](#debug-window)代码
+- 调试时[跟踪和编辑本地变量](#watches)
+- 根据需要从调用堆栈中[隐藏或显示异步代码和库代码](#call-stack)
+- 为 XmlHttpRequests、事件和 DOM[添加专用断点](#breakpoints) [mutations](#dom-breakpoints)
 
-![The Microsoft Edge DevTools Debugger](./media/debugger.png)
+![Microsoft Edge DevTools 调试器](./media/debugger.png)
 
-There are three ways to begin a debugging session.
+可通过三种方式开始调试会话。
 
-1. **Set a breakpoint.** When the execution of your code reaches it, you'll enter the debugger and be able to step through your code.
-2. **Initiate a break in code.** Click the [**Break**](#toolbar) (*pause* icon) toolbar button or `Ctrl+Shift+B`. The debugger will break on the next statement of execution.
-3. **Set exception behavior.** Use the [**Change exception behavior**](#toolbar) menu (`Ctrl+Shift+E`) to break into the debugger when your code throws an exception. By default, the debugger is set to *Never break on exceptions*, but they are logged to the console.
+1. **设置断点。** 当代码执行到达时，你将进入调试器，并且能够逐句通过你的代码。
+2. **在代码中启动中断。** 单击 " [**中断**](#toolbar) (*暂停* " 图标) 工具栏按钮或 `Ctrl+Shift+B` 。 调试器将在下一执行语句中断。
+3. **设置异常行为。** 使用 " [**更改异常行为**](#toolbar) " 菜单 (`Ctrl+Shift+E`) 在代码引发异常时中断到调试器。 默认情况下，调试器设置为 *永不中断异常*，但会将其记录到控制台。
 
-## Resource picker
+## 资源选取器
 
-Often the first step in debugging is to set breakpoints in the code you're looking to troubleshoot. You can find all the code files currently loaded by the page from the *Resource picker* pane, including *.html, .css* and *.js* files.
+通常，调试的第一步是在要进行疑难解答的代码中设置断点。 你可以从 *资源选取器* 窗格（包括 *.html、.css* 和 *.js* 文件）查找页面上当前加载的所有代码文件。
 
- Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
+ 单击某个文件条目将在 " [调试" 窗口](#debug-window) 中打开该文件的选项卡，并将文件名的文本加粗，以指示此 (，如下图所示) 中的 *devtools* 文件名。 然后，可以从 " [调试" 窗口](#debug-window)在该文件中设置断点。
 
-![Debugger resource picker](./media/debugger_resource_picker.png)
+![调试器资源选取器](./media/debugger_resource_picker.png)
 
-From the *Resource picker* context menu, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
+从 *资源选取器* 上下文菜单中，你还可以将文件标记为 **库代码** (`Ctrl+L`) ，以便你可以选择在 [调试程序中跳过该代码](#debug-window) ，并将 [其从 " **调用堆栈** " 窗格中隐藏](#call-stack)。 `Ctrl+L`再次单击 " (" 或 ") " 会将文件作为我的*代码*或*库代码*切换回原来的值。
 
-### File search
+### 文件搜索
 
-Use the *Find in files* command (`Ctrl`+`Shift`+`F`) when you have a specific string of code you're trying to find in the source. The toolbar provides different search options, including regular expressions. Clicking on a search result will focus the *Debug window* on the specified file and line.
+*Find in files* `Ctrl` + `Shift` + `F` 当你有要在源中查找的特定代码字符串时，请使用 "在文件中查找" 命令 () 。 工具栏提供了不同的搜索选项，包括正则表达式。 单击搜索结果会将 *调试窗口* 重点放在指定的文件和行上。
 
-![Debugger file search pane](./media/debugger_file_search.png)
+![调试器文件搜索窗格](./media/debugger_file_search.png)
 
-## Debug window
+## 调试窗口
 
-The *Debug window* is where you set your breakpoints, step through code, and live edit your script as you debug. Click to the left of any script command to add (or remove) a **Breakpoint**. Use the right-click context menu or [**Breakpoints**](#breakpoints) pane to *Add a condition* to the breakpoint by supplying a logical expression that causes the debugger to break if it evaluates *True* at that location.
+" *调试" 窗口* 是设置断点、单步执行代码以及在调试时实时编辑脚本的位置。 单击任意脚本命令左侧的以添加 (或删除) **断点**。 使用右键单击上下文菜单或 " [**断点**](#breakpoints) " 窗格向断点 *添加条件* ，方法是提供一个逻辑表达式，该表达式会导致调试程序在该位置计算 *True* 时中断。
 
-![Debug window commands](./media/debugger_window.png)
+![调试窗口命令](./media/debugger_window.png)
 
-Other features of the debug window include controls for:
+"调试" 窗口的其他功能包括用于以下内容的控件：
 
-### 1. Code editing
+### 1. 代码编辑
 
-You can edit your JavaScript live during a debugging session. Once you make your changes, click <strong>Save</strong> (`Ctrl+S`) to test your changes next time that section of code runs. If you have unsaved code changes, an asterisk (\*) will appear before the file name in the *Debug window* tab.
+你可以在调试会话期间编辑 JavaScript live。 进行更改后，单击 " <strong> 保存 </strong> (" `Ctrl+S`) 以在下次运行该代码段时测试所做的更改。 如果你有未保存的代码更改，则 " *调试" 窗口* 选项卡中的文件名前面将显示一个星号 ( \ * ) 。
 
-Click the **Compare document to original** button to view the diff of what you changed.
+单击 " **将文档与原始文档比较** " 按钮以查看更改内容的差异。
 
-![Diff view of edited code in the Debugger](./media/debugger_edit_code.png)
+![调试器中编辑代码的比较视图](./media/debugger_edit_code.png)
 
-Please be aware of the following constraints:
+请注意以下限制：
 
-- Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
-- Edits are saved in memory and flushed when the document is reloaded, thus you won't be able to run edits inside a `DOMContentLoaded` handler, for example
-- Currently there's no way (such as a **Save As** option) to save your edits to disk from the DevTools
+- 脚本编辑仅适用于外部 *.js* 文件 (且不嵌入 `<script>` 在 *.html*) 中
+- 编辑保存在内存中，并在重新加载文档时进行刷新，因此你无法在处理程序内运行编辑 `DOMContentLoaded` ，例如
+- 目前没有办法 (例如 " **另存为** " 选项) 将您的编辑内容从 DevTools 保存到磁盘。
 
-### 2.Code formatting
+### 2. 编码格式
 
-Use these controls to format minified code for better readability as you debug:
+在调试时使用这些控件设置 minified 代码的格式以获得更好的可读性：
 
-#### Pretty print (`Ctrl+Shift+P`) 
-Adds line breaks and curly brace alignment per JavaScript conventions. Even compressed code that's been made more readable with this option may have function, selector, and variable names that are much different than in your original source code. In these cases, the [*Toggle source maps*](#source-maps) option might be available.
+####  () 打印整齐 `Ctrl+Shift+P` 
+为每个 JavaScript 约定添加换行符和花括号对齐。 使用此选项使得更易读的压缩代码可能具有与原始源代码不同的函数、选择器和变量名称。 在这些情况下，" [*切换源地图*](#source-maps) " 选项可能可用。
 
-#### Word wrap (`Alt+W`)
-Adjusts code to fit within the current margins of the debug window (eliminating the need for horizontal scrolling).
+#### Word () 换行 `Alt+W`
+调整代码以适合 "调试" 窗口的当前边距， (不再需要水平滚动) 。
 
-### 3. Code scoping
+### 3. 代码范围
 
-You can direct the debugger to ignore certain files with the **Mark as library code** (`Ctrl+L`) button. By default, the [**Debug just my code**](#toolbar) toolbar button is on, meaning that the debugger will skip over any files that you mark as *library code* and they will not appear in the debugger [call stack](#call-stack). Depressing the button (**Mark as my code**, `Ctrl+L`) will remove this flag.
+你可以通过 " **标记为库代码** " (") " 按钮指示调试器忽略某些文件 `Ctrl+L` 。 默认情况下，" [**仅调试**](#toolbar) " 工具栏按钮处于打开状态，这意味着调试器将跳过任何标记为 *库代码* 的文件，并且它们不会显示在调试器 [调用堆栈](#call-stack)中。 将按钮 (**标记为 "我的代码" 时**， `Ctrl+L`) 将删除此标志。
 
-For keeping track of libraries across debugging sessions, you can edit these files to maintain a default list or add wildcards for a domain or file type:
+为了在调试会话期间保持对库的跟踪，可以编辑这些文件以维护默认列表，或为域或文件类型添加通配符：
 
 ```JavaScript
 %APPDATA%\..\LocalLow\Microsoft\F12\header\MyCode.json and %APPDATA%\..\Local\Microsoft\F12\header\MyCode.json
 ```
 
-#### Source maps
+#### 源地图
 
-You will see the **Toggle source maps** button enabled for code written in a language that compiles to JavaScript or CSS and that provides a *source map* (an intermediate file mapping to the original source). This option directs the debugger to present the original source to use for debugging (rather than the compiled file that's *actually* running in the browser).
+你将看到 " **切换源映射** " 按钮，该按钮可用于使用编译为 JAVASCRIPT 或 CSS 的语言编写的代码，并提供 *源映射* (原始源) 的中间文件映射。 此选项指示调试器显示用于调试 (的原始源，而不是在浏览器) 中 *实际* 运行的已编译的文件。
 
-The DevTools will check if the compiler that generated the JavaScript file included a comment with the name of the map file. For example, if a compiler compressed *myfile.js* to *myfile.min.js*, it might also generate a map file, *myfile.min.js.map* and include a comment in the compressed file like this:
+DevTools 将检查生成 JavaScript 文件的编译器是否包含带有地图文件名称的注释。 例如，如果编译器将 *myfile.js* 压缩为 *myfile.min.js*，它也可能会生成映射文件， *myfile.min.js。映射* 并在压缩的文件中包含注释，如下所示：
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map
 ```
 
-![Debug file tab context menu](./media/debug_file_contextmenu.png)
+!["调试文件" 选项卡上下文菜单](./media/debug_file_contextmenu.png)
 
-If the DevTools can't find the map automatically, you can choose a source map for that file. Right-click the file's tab to find the **Choose source map** option. 
+如果 DevTools 无法自动找到地图，则可以选择该文件的源映射。 右键单击文件的选项卡以查找 " **选择源映射** " 选项。 
 
-## Toolbar
+## 工具栏
 
-Use the debugger *Toolbar* to control how you step through code, and what code to step through or ignore. From here you can also do a full text search across your code files for specific strings.
+使用调试器 *工具栏* 控制逐句通过代码的方式，以及要单步执行或忽略的代码。 在此，你还可以在代码文件中对特定字符串执行全文搜索。
 
-![Debugger toolbar](./media/debugger_toolbar.png)
+![调试器工具栏](./media/debugger_toolbar.png)
 
-### 1. Continue (`F5`) / Break (`Ctrl+Shift+B`)
- **Continue** (`F5`) continues code execution to the next breakpoint. Holding down `F5` will repeatedly move past breaks until you release it. 
+### 1. 继续 (`F5`) /中断 (`Ctrl+Shift+B`) 
+ **继续** (`F5`) 会继续向下一个断点执行代码。 按住 `F5` 将重复移动过去的工间休息，直到您释放。 
 
- **Break** (`Ctrl+Shift+B`) will break into the debugger after running the next statement.
+ **中断** (`Ctrl+Shift+B`) 将在运行下一条语句后中断到调试器。
 
-### 2. Step functions (`F11`, `Ctrl+F10`, `Shift+F11`)
- **Step into** (`F11`) steps into the function being called. 
+### 2. 步骤函数 (`F11` ， `Ctrl+F10` `Shift+F11`) 
+ **单步** 执行 (`F11`) 步骤中调用的函数。 
 
- **Step over** (`Ctrl+F10`) steps over the function being called. 
+ **跳过** (对 `Ctrl+F10` 正在调用的函数执行) 步骤。 
 
- **Step out** (`Shift+F11`) steps out of the current function and into the calling function. 
+ **跳出** (`Shift+F11` 从当前函数到调用函数) 步骤。 
 
- The debugger will step to the next statement if it is not at a function when these commands are used.
+ 如果使用这些命令时，调试器不在函数中，则调试器将单步执行到下一条语句。
 
-### 3. Break on new worker (`Ctrl+Shift+W`)
- Breaks on the creation of a new [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).
+### 3. () 的新工作人员中断 `Ctrl+Shift+W`
+ 创建新的 [web 工作人员](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)时中断。
 
-### 4. Exception control
-**Change exception behavior** (`Ctrl+Shift+E`) opens options to change how the debugger reacts to exceptions. By default exceptions are ignored by the debugger and logged to the [**Console**](./console.md). You can choose to *Break on all exceptions*, or just those not being handled by `try...catch` statements in your code (*Break on unhandled exceptions*).
+### 4. 异常控制
+**更改异常行为** (`Ctrl+Shift+E`) 打开选项以更改调试器对异常的反应方式。 默认情况下，调试器会忽略异常并将其记录到 [**控制台**](./console.md)。 你可以选择 *中断所有异常*，或者仅在你的代码中的语句未处理的情况下中断 `try...catch`) 的 *未处理异常 (中断* 。
 
-### 5. View search results
-(Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files-ctrlf) search results.
+### 5. 查看搜索结果
+ (当前已禁用。 ) " **显示/隐藏结果** " 将 [*在 "文件*](#6-find-in-files-ctrlf) 搜索结果" 中切换显示 "查找"。
 
-### 6. Find in files (`Ctrl+F`)
- **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
+### 6. 在 "文件" (中查找 `Ctrl+F`) 
+ **在 "文件" (中查找** `Ctrl+F`) 在 [*资源选取器*](#resource-picker)中的所有已加载文件中运行文本搜索。 如果找到文本，它将打开与搜索字符串匹配的第一个文件。 按 `Enter` `F3` 下或转到下一个匹配项。
 
-### 7. Debug just my code (`Ctrl+J`)
- **Debug just my code** (`Ctrl+J`) acts as a toggle to include or exclude all the files that have been marked as [library code](#3-code-scoping) as you step through the debugger.
+### 7. 调试 "仅我的代码" (`Ctrl+J`) 
+ **调试 "仅我的代码"** (`Ctrl+J`) 作为一个开关，可在单步执行调试程序时包含或排除已标记为 [库代码](#3-code-scoping) 的所有文件。
 
-### 8. Debugger connection
-**Disconnect/Connect debugger** is essentially the on/off switch for the debugger.
+### 8. 调试程序连接
+**断开连接/连接调试器** 实质上是调试器的 "开/关" 开关。
 
-## Watches
+## 项目
 
-Use the **Watches** pane to browse a catalog of all objects and variables (**Locals**), both in the local and global scope, available to the statement that is the focus of the current break in the debugger.
+使用 " **监视** " 窗格浏览所有对象和变量的目录 (本地和全局范围内的 **局部变量**) ，在调试器中作为当前中断的焦点的语句可用。
 
-![Watches pane](./media/debugger_watches.png)
+!["监视" 窗格](./media/debugger_watches.png)
 
-You can track the value of specific variables as they pass in and out of scope by adding a watch (**Add watch**, `Ctrl+W`) and modify any editable values by double-clicking on it or by selecting **Edit value** from the *Context menu*. Clear your watches using the **Delete** (`Ctrl+D`) / **Delete all** buttons or from the context menu. 
+通过添加 "监视" ("**添加手表**"， `Ctrl+W` 然后通过双击*上下文菜单*中的 "编辑值" 或从上下文菜单中选择 "**编辑值**) "，可以在传入和超出范围时跟踪特定变量的值。 使用 " **删除** " (" `Ctrl+D`) / **删除所有** 按钮" 或 "从上下文菜单中清除监视"。 
 
-## Details
+## 详细信息
 
-The *Details* pane includes the [**Callstack**](#call-stack), [**Breakpoints**](#breakpoints) and [**DOM breakpoints**](#dom-breakpoints) tabs.
+*详细信息*窗格包括 "[**调用堆栈**](#call-stack)"、"[**断点**](#breakpoints)" 和 " [**DOM 断点**](#dom-breakpoints)" 选项卡。
 
-### Call stack
+### 调用堆栈
 
-The **Call stack** tab shows the chain of functions that led to the current point of execution. The current function appears at the top, and the calling functions appear below it in reverse order.
+" **调用堆栈** " 选项卡显示导致当前执行点的函数链。 当前函数显示在顶部，并且调用函数按相反顺序显示在其下方。
 
-![Call stack pane](./media/debugger_callstack.png)
+!["调用堆栈" 窗格](./media/debugger_callstack.png)
 
-The **Show/Hide library frames** button (`Ctrl+Shift+J`) toggles the output of [library code](#3-code-scoping) from the call stack. Use the **Library code** option (`Ctrl+L`) from the right-click *Context menu* to mark (or unmark) the source of the selected frame as library code. 
+" **显示/隐藏库框架** " 按钮 (`Ctrl+Shift+J`) 从调用堆栈切换 [库代码](#3-code-scoping) 的输出。 使用**Library code** `Ctrl+L` 鼠标右键单击*上下文菜单*中 () 的库代码选项将 (或取消标记) 所选帧的来源标记为库代码。 
 
-The **Show/Hide async frames** button toggles the display of roots for asynchronous function calls.
+" **显示/隐藏异步帧** " 按钮用于切换异步函数调用的根的显示。
 
-### Breakpoints
+### 断点
 
-From the **Breakpoints** tab, you can manage you breakpoints and event tracepoints, including setting conditions, disabling and deleting them.
+从 " **断点** " 选项卡中，你可以管理断点和事件跟踪点，包括设置条件、禁用和删除它们。
 
-![Breakpoints tab](./media/debugger_breakpoints.png)
+![断点选项卡](./media/debugger_breakpoints.png)
 
-Here's a summary of the different types of breakpoints you can use for debugging.
+下面是可用于调试的不同类型的断点的摘要。
 
-Breakpoint type | Description | How to set it
+断点类型 | 描述 | 如何设置它
 :------------ | :------------ | :--------
-**Breakpoint** | Breaks into the debugger just before the specified line of code is executed. Regular breakpoints are easiest to set if you have one statement per line. | From the [Debug window](#debug-window), click in the left margin next to any line number in the code. A red dot appears and the breakpoint is set. You can jump into the source of any breakpoint by clicking on its blue text.
-**Conditional breakpoint** | Breaks if the specified condition evaluates to *true*. This is essentially an `if(condition)`  for breaking into the debugger.  | From the [Breakpoints](#breakpoints) tab, hover over an existing breakpoint and click the "pencil" button (*Add a condition to this breakpoint*), right-click an existing breakpoint and select **Condition...** from the context menu. Specify the "if" condition to be evaluated at the breakpoint location. 
-**XMLHttpRequest breakpoint** (w/optional condition) | Breaks whenever a XMLHttpRequest (XHR) request has been fulfilled. You can inspect the XHR `response` object from the [**Watches**](#watches) pane. | From the [Breakpoints](#breakpoints) tab, click the *XMLHttpRequest breakpoint* button (circle with up/down arrows). You can turn it into a *Conditional breakpoint* as described above.
-**Event tracepoint** | Calls [`console.log()`](./console/console-api.md#logging-custom-messages) with a specified string in response to a specific event. Use this for temporary console logging statements that you don't want to save directly in your event handler code. | From the [Breakpoints](#breakpoints) tab, click the *Event tracepoint* button (diamond with lightning bolt). Select an **Event** type for the trigger and a **Trace** statement for logging.
-**Event breakpoint** (w/optional condition) | Breaks whenever a specified event is fired. | From the [Breakpoints](#breakpoints) tab, click the *Event breakpoint* button (circle with lightning bolt). Select an **Event** type for the trigger and optionally, specify a **Condition** statement. 
-**DOM breakpoint** | Breaks whenever a specified element on the page is mutated, such as when its subtree is modified, its attributes change, or when it is detached from the DOM. | From the [Elements](./elements/dom-breakpoints.md) tab, right-click on a source element and select from the *DOM Breakpoints* options. Use the [**DOM breakpoints**](#dom-breakpoints) tab in either the *Debugger* or *Elements* panels to manage your breakpoints. 
+**处** | 在执行指定的代码行之前，只需中断到调试器。 如果每行有一个语句，则可以最方便地设置常规断点。 | 从 " [调试" 窗口](#debug-window)中，单击代码中任何行号旁边的左边距。 将显示一个红点，并设置断点。 你可以通过单击其蓝色文本跳转到任何断点的源。
+**条件断点** | 如果指定条件的计算结果为 *true*，则断开。 这实际上是 `if(condition)`  用于中断调试器。  | 从 " [断点](#breakpoints) " 选项卡上，将鼠标悬停在现有断点上，然后单击 "铅笔" 按钮 (*将条件添加到此断点*) ，右键单击现有断点，然后从上下文菜单中选择 " **条件 ...** "。 在断点位置指定要计算的 "if" 条件。 
+**XMLHttpRequest 断点** (w/可选条件)  | 只要满足 XMLHttpRequest (XHR) 请求时就会中断。 你可以 `response` 从 " [**监视**](#watches) " 窗格中检查 XHR 对象。 | 从 " [断点](#breakpoints) " 选项卡中，单击 " *XMLHttpRequest 断点* " 按钮 (圆圈，) 的向上/向下箭头。 你可以按照上述说明将其转换为 *条件断点* 。
+**事件跟踪点** | [`console.log()`](./console/console-api.md#logging-custom-messages)在响应特定事件时使用指定字符串的调用。 将此用于不希望直接保存在事件处理程序代码中的临时控制台日志记录语句。 | 从 " [断点](#breakpoints) " 选项卡中，单击 " *事件跟踪点* " 按钮 (带有闪电) 的菱形。 选择触发器的 **事件** 类型和用于日志记录的 **跟踪** 语句。
+ (w/可选条件) 的**事件断点** | 在引发指定事件时中断。 | 从 " [断点](#breakpoints) " 选项卡中，单击 " *事件断点* " 按钮 (带有闪电) 的圆圈。 选择触发器的 **事件** 类型，还可以指定 **条件** 语句。 
+**DOM 断点** | 只要页面上的指定元素发生改变，例如其子树被修改、其属性发生更改或从 DOM 分离时，就会中断。 | 从 " [元素](./elements/dom-breakpoints.md) " 选项卡中，右键单击源元素，然后从 " *DOM 断点* " 选项中进行选择。 使用 "*调试器*" 或 "*元素*" 面板中的 " [**DOM 断点**](#dom-breakpoints)" 选项卡来管理断点。 
 
-Conditional breakpoints and tracepoints have access to all the local and global variables currently in scope when they break into the debugger.
+条件断点和跟踪点在其中断到调试器时可以访问当前在范围内的所有局部变量和全局变量。
 
-### DOM breakpoints
+### DOM 断点
 
-Manage your DOM mutation breakpoints from the **DOM breakpoints** tab, including disabling, deleting and rebinding them.  [DOM breakpoints can be set](./elements/dom-breakpoints.md) from the *HTML tree view* in the **Elements** panel.
+从 " **dom 断点** " 选项卡管理你的 dom 转变断点，包括禁用、删除和重新绑定它们。  可以从 "**元素**" 面板中的*HTML 树视图*[设置 DOM 断点](./elements/dom-breakpoints.md)。
 
-![DOM breakpoints tab](./media/debugger_dom_breakpoints.png)
+![DOM 断点选项卡](./media/debugger_dom_breakpoints.png)
 
-The *DOM breakpoints* tab in the **Debugger** provides equivalent functionality to the *DOM breakpoints** tab on the **Elements** panel.
+**调试器**中的 " *dom 断点*" 选项卡向 "**元素**" 面板上的 " *dom 断点*" 选项卡提供等效功能。
 
-Here's more on the different types of [DOM breakpoints](./elements/dom-breakpoints.md).
+下面详细介绍了不同类型的 [DOM 断点](./elements/dom-breakpoints.md)。
 
-## Shortcuts
+## 快捷方式
 
-### Toolbar shortcuts
+### 工具栏快捷方式
 
-Action | Shortcut
+操作 | 快捷方式
 :------------ | :-------------
-Find | `Ctrl` + `F`
-Continue (from breakpoint) | `F5` or `F8`
-Fast continue | Hold `F5` or `F8`
-Continue and refresh | `Ctrl` + `Shift` + `F5`
-Break | `Ctrl` + `Shift` + `B`
-Step into | `F11`
-Step over | `F10`
-Step out | `Shift` + `F11`
-Break on new worker | `Ctrl` + `Shift` + `W`
-Change exception behavior (opens menu) | `Ctrl` + `Shift` + `E`
-Debug just my code | `Ctrl` + `J`
+查找 | `Ctrl` + `F`
+从断点继续 ()  | `F5` 或者 `F8`
+快速继续 | 保留 `F5` 或 `F8`
+继续并刷新 | `Ctrl` + `Shift` + `F5`
+进入 | `Ctrl` + `Shift` + `B`
+单步执行 | `F11`
+跳过 | `F10`
+跳出 | `Shift` + `F11`
+新工作人员中断 | `Ctrl` + `Shift` + `W`
+ (打开菜单) 更改异常行为 | `Ctrl` + `Shift` + `E`
+调试 "仅我的代码" | `Ctrl` + `J`
 
-### Resource picker shortcuts
+### 资源选取器快捷方式
 
-Action | Shortcut
+操作 | 快捷方式
 :------------ | :-------------
-Mark as my code / library code | `Ctrl` + `L`
-Open file | `Ctrl` + `O`, `Ctrl` + `P`
-Search all files | `Ctrl` + `Shift` + `F`
+标记为我的代码/库代码 | `Ctrl` + `L`
+打开文件 | `Ctrl` + `O`, `Ctrl` + `P`
+搜索所有文件 | `Ctrl` + `Shift` + `F`
 
-### Debug window shortcuts
+### 调试窗口快捷方式
 
-Action | Shortcut
+操作 | 快捷方式
 :------------ | :-------------
-Remove breakpoint | `F9`
-Disable breakpoint | `Ctrl` + `F9`
-Conditional breakpoint... | `Alt` + `F9`
-Copy | `Ctrl` + `C`
-Save | `Ctrl` + `S`
-Go to line... | `Ctrl` + `G`
-Show next statement | `Alt` + `Num` + `*`
-Run to cursor | `Ctrl` + `F10`
-Set next statement | `Ctrl` + `Shift` + `F10`
-Show in file picker | `Ctrl` + `Alt` + `P`
-Go to definition in file | `Ctrl`+`D`
-Find references in file | `Ctrl` + `Shift` + `D`
-Pretty print | `Ctrl` + `Shift` + `P`
-Word wrap | `Alt` + `W`
-Mark as my code/library code | `Ctrl` + `L`
-Disable/Enable tabs in the editor. **Note:** if you're using the keyboard to navigate in the Debugger, you won't be able to tab out of the editor until you disable tabbing | `Ctrl` + `M`
+删除断点 | `F9`
+禁用断点 | `Ctrl` + `F9`
+条件断点 .。。 | `Alt` + `F9`
+复制 | `Ctrl` + `C`
+保存 | `Ctrl` + `S`
+转到行 .。。 | `Ctrl` + `G`
+显示下一条语句 | `Alt` + `Num` + `*`
+运行到光标 | `Ctrl` + `F10`
+设置下一语句 | `Ctrl` + `Shift` + `F10`
+在文件选取器中显示 | `Ctrl` + `Alt` + `P`
+转到文件中的定义 | `Ctrl`+`D`
+在文件中查找引用 | `Ctrl` + `Shift` + `D`
+打印整齐 | `Ctrl` + `Shift` + `P`
+文字环绕 | `Alt` + `W`
+标记为我的代码/库代码 | `Ctrl` + `L`
+在编辑器中禁用/启用选项卡。 **注意：** 如果你使用键盘在调试程序中导航，则无法通过 tab 键退出编辑器，直到禁用 tab 键切换 | `Ctrl` + `M`
 
-### Shortcuts for Watches pane
+### "监视" 窗格的快捷方式
 
-Action | Shortcut
+操作 | 快捷方式
 :------------ | :-------------
-Add watch | `Ctrl` + `W`
-Delete watch | `Ctrl` + `D`
+添加手表 | `Ctrl` + `W`
+删除手表 | `Ctrl` + `D`
 
-### Shortcuts for Details pane
+### "详细信息" 窗格的快捷方式
 
-| Action                             | Shortcut                 |
+| 操作                             | 快捷方式                 |
 |:-----------------------------------|:-------------------------|
-| Show/Hide frames from library code | `Ctrl` + `Shift` + `J`   |
-| Enable all breakpoints             | `Ctrl` + `Shift` + `F11` |
+| 显示/隐藏库代码中的框架 | `Ctrl` + `Shift` + `J`   |
+| 启用所有断点             | `Ctrl` + `Shift` + `F11` |

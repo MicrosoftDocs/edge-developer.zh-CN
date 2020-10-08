@@ -11,4 +11,4 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "11004099"
 ---
-The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.  
+以下各节宣布了 Microsoft Edge 中的其他可用于开放源代码 Chromium 项目的功能。  

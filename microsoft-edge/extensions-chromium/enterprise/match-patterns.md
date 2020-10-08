@@ -1,12 +1,12 @@
 ---
-description: Enterprise policy documentation for Edge (Chromium) Extensions.
-title: Match Patterns
+description: 适用于 Edge (Chromium) 扩展的企业策略文档。
+title: 匹配模式
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
 ms.openlocfilehash: 59427769a010ca774833a809d3025e7594634202
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,19 +14,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015658"
 ---
-# Match Patterns
+# 匹配模式
 
-Host permissions and content script matching are based on a set of URLs defined by match patterns.  A match pattern is essentially a URL that begins with a permitted scheme (`http`, `https`, `file`, or `ftp`, and that can contain '`*`' characters.  The special pattern `<all_urls>` matches any URL that starts with a permitted scheme.  Each match pattern has 3 parts:  
+主机权限和内容脚本匹配基于由匹配模式定义的一组 Url。  匹配模式实质上是以允许的方案开头的 URL， (`http` 、 `https` 、 `file` 或 `ftp` ，并且可以包含 " `*` " 个字符。  特殊模式 `<all_urls>` 匹配以允许的方案开头的任何 URL。  每个匹配模式都有3个部分：  
 
-*   _scheme_ — for example, `http` or `file` or `*`  
+*   _方案_（例如 `http` 或或） `file` `*`  
 
 > [!NOTE]
-> Access to `file` URLs is not automatic.  The user must visit the Extensions management page and opt in to `file` access for each Extension that requests it.  
+> 对 `file` url 的访问不是自动的。  用户必须访问 "扩展管理" 页面，并选择为 `file` 请求它的每个扩展进行访问。  
 
-*   `_host_` — for example, `www.google.com` or `*.google.com` or `*`; if the scheme is file, there is no host part.  
-*   `_path_` — for example, `/*`, `/foo*`, or `/foo/bar`.  The path must be present in a host permission, but is always treated as `/*`.  
+*   `_host_` -例如， `www.google.com` 或 `*.google.com` `*` ; 如果方案为文件，则没有主机部件。  
+*   `_path_` -例如、、 `/*` `/foo*` 或 `/foo/bar` 。  该路径必须存在于主机权限中，但始终被视为 `/*` 。  
 
-The basic syntax:  
+基本语法：  
 
 ```shell
 <url-pattern> := <scheme>://<host><path>
@@ -35,34 +35,34 @@ The basic syntax:
 <path> := '/' <any chars>
 ```  
 
-The meaning of `*` depends on whether it is in the scheme, host, or path part.  If the scheme is `*`, then it matches either `http` or `https`, and not `file`, or `ftp`.  If the host is just `*`, then it matches any host. If the host is `*.hostname`, then it matches the specified host or any of the subdomains.  In the path section, each `*` matches 0 or more characters.  The following table shows some valid patterns.  
+的含义 `*` 取决于它是属于 "方案"、"主机" 还是 "路径" 部分。  如果方案为 `*` ，则它将匹配 `http` 或 `https` ，而不 `file` `ftp` 是或。  如果主机刚刚如此 `*` ，则它匹配任何主机。 如果主机是 `*.hostname` ，则它与指定的主机或任何子域相匹配。  在 "路径" 部分中，每个 `*` 字符均匹配0个或多个字符。  下表显示了一些有效的模式。  
 
-| Pattern | What it does | Examples of matching URLs |  
+| 模式 | 用途 | 匹配 Url 的示例 |  
 |:--- |:--- |:--- |  
-| `http://*/*` | Matches any URL that uses the http scheme | `http://www.google.com` `http://example.org/foo/bar.html` |  
-| `http://*/foo*` | Matches any URL that uses the http scheme, on any host, as long as the path starts with `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |  
-| `https://*.google.com/foo*bar` | Matches any URL that uses the https scheme, is on a `google.com` host \(such as `www.google.com`, `docs.google.com`, or `google.com`\), as long as the path starts with `/foo` and ends with `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
-| `http://example.org/foo/bar.html` | Matches the specified URL | `http://example.org/foo/bar.html` |  
-|`file:///foo*` | Matches any local file whose path starts with `/foo` | `file:///foo/bar.html` `file:///foo` |  
-| `http://127.0.0.1/*` | Matches any URL that uses the `http` scheme and is on the host `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |  
-| `*://mail.google.com/*` | Matches any URL that starts with `http://mail.google.com` or `https://mail.google.com`. | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |  
-| `<all_urls>` | Matches any URL that uses a permitted scheme. \(See the beginning of this section for the list of permitted schemes.\) | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
+| `http://*/*` | 匹配任何使用 http 方案的 URL | `http://www.google.com` `http://example.org/foo/bar.html` |  
+| `http://*/foo*` | 匹配任何主机上任何使用 http 方案的 URL，只要路径开头为 `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |  
+| `https://*.google.com/foo*bar` | 匹配任何使用 https 方案的 URL，在 `google.com` 主机 \ (（如 `www.google.com` 、 `docs.google.com` 或 `google.com` \ ) ）上，只要路径的开头 `/foo` 和结尾为 `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
+| `http://example.org/foo/bar.html` | 匹配指定的 URL | `http://example.org/foo/bar.html` |  
+|`file:///foo*` | 匹配路径以下列路径开头的任何本地文件 `/foo` | `file:///foo/bar.html` `file:///foo` |  
+| `http://127.0.0.1/*` | 匹配任何使用该 `http` 方案且位于主机上的 URL `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |  
+| `*://mail.google.com/*` | 匹配以或开头的任何 `http://mail.google.com` URL `https://mail.google.com` 。 | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |  
+| `<all_urls>` | 匹配任何使用允许的方案的 URL。 \ (有关所允许方案的列表，请参阅本部分的开头。 \n )  | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
 
-Here are some examples of `_invalid_` pattern matches:
+下面是一些 `_invalid_` 模式匹配的示例：
 
-| Bad pattern | Why it is bad |  
+| 错误模式 | 为什么不正确 |  
 |:--- |:--- |  
-| `http://www.foo.com` | No `_path_` |  
-| `http://*foo/bar` | '`*`' in the host can be followed only by a '`.`' or '`/`' |  
-| `http://foo.*.bar/baz` | If '`*`' is in the `_host_`, it must be the first character |  
-| `http:/bar` | Missing `_scheme_` separator \('`/`' should be "`//`"\) |  
-| `foo://*` | Invalid `_scheme_` |  
+| `http://www.foo.com` | 否 `_path_` |  
+| `http://*foo/bar` | 主机中的 "" `*` 只能后跟 " `.` " 或 " `/` " |  
+| `http://foo.*.bar/baz` | 如果 " `*` " 在中 `_host_` ，则必须是第一个字符 |  
+| `http:/bar` | 缺少 `_scheme_` 分隔符 \ ( ' `/` ' 应为 " `//` " \ )  |  
+| `foo://*` | 无效 `_scheme_` |  
 
-Some schemes are not supported in all contexts.
+某些方案在所有上下文中都不受支持。
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> The original page is found [here](https://developer.chrome.com/extensions/match_patterns/).  
+> 可在 [此处](https://developer.chrome.com/extensions/match_patterns/)找到原始页面。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

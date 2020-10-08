@@ -1,12 +1,12 @@
 ---
-description: The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
-title: Timeline Event Reference
+description: "\"日程表事件\" 模式显示录制时触发的所有事件。  使用日程表事件参考了解有关每个日程表事件类型的详细信息。"
+title: 时间线事件参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,122 +32,122 @@ ms.locfileid: "10992846"
 
 
 
-# Timeline Event Reference   
+# 时间线事件参考   
 
 
 
 
-The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.  
+"日程表事件" 模式显示录制时触发的所有事件。  使用日程表事件参考了解有关每个日程表事件类型的详细信息。  
 
-## Common timeline event properties  
+## 常用日程表事件属性  
 
-Certain details are present in events of all types, while some only apply to certain event types.  This section lists properties common to different event types.  Properties specific to certain event types are listed in the references for those event types that follow.  
+某些详细信息存在于所有类型的事件中，而有些仅适用于某些事件类型。  本部分列出了不同事件类型的常见属性。  以下事件类型的参考中列出了特定于某些事件类型的属性。  
 
-| Property | When is it shown |  
+| 属性 | 何时显示 |  
 |:--- |:--- |  
-| Aggregated time | For events with **nested events**, the time taken by each category of events. |  
-| Call Stack | For events with **child events**, the time taken by each category of events. |  
-| CPU time | How much CPU time the recorded event took. |  
-| Details | Other details about the event. |  
-| Duration \(at time-stamp\) | How long it took the event with all of its children to complete; timestamp is the time at which the event occurred, relative to when the recording started. |  
-| Self time | How long the event took without any of its children. |  
-| Used Heap Size | Amount of memory being used by the application when the event was recorded, and the delta \(+/-\) change in used heap size since the last sampling. |  
+| 总时间 | 对于包含 **嵌套事件**的事件，每个事件类别所花的时间。 |  
+| 调用堆栈 | 对于包含 **子事件**的事件，每个事件类别所花的时间。 |  
+| CPU 时间 | 录制事件花费的 CPU 时间。 |  
+| 详细信息 | 有关事件的其他详细信息。 |  
+| Duration \ (时间戳 \ )  | 事件与所有子元素的完全相同的时间时间戳是事件发生的时间，相对于录制开始的时间。 |  
+| 自我时间 | 事件在没有任何子级的情况下花费的时间。 |  
+| 使用的堆大小 | 在记录事件时应用程序使用的内存量，增量 \ (+/\ ) 在上次取样后使用的堆大小发生变化。 |  
 
 <!--todo: add nested and child events (timelinetool) section when available -->  
 
-## Loading events  
+## 加载事件  
 
-This section lists events that belong to Loading category and their properties.  
+此部分列出了属于加载类别及其属性的事件。  
 
-| Event | Description |  
+| 事件 | 描述 |  
 |:--- |:--- |  
-| Parse HTML |  Microsoft Edge ran the HTML parsing algorithm. |  
-| Finish Loading |  A network request completed. |  
-| Receive Data |  Data for a request was received.  There are one or more Receive Data events. |  
-| Receive Response |  The initial HTTP response from a request. |  
-| Send Request |  A network request has been sent. |  
+| 分析 HTML |  Microsoft Edge 运行了 HTML 分析算法。 |  
+| 完成加载 |  网络请求已完成。 |  
+| 接收数据 |  已收到请求的数据。  有一个或多个接收数据事件。 |  
+| 接收答复 |  来自请求的初始 HTTP 响应。 |  
+| 发送请求 |  已发送网络请求。 |  
 
-### Loading event properties  
+### 加载事件属性  
 
-| Property | Description |  
+| 属性 | 描述 |  
 |:--- |:--- |  
-| Resource | The URL of the requested resource. |  
-| Preview | Preview of the requested resource \(images only\). |  
-| Request Method | HTTP method used for the request \(`GET` or `POST`, for example\). |  
-| Status Code | HTTP response code. |  
-| MIME Type | MIME type of the requested resource. |  
-| Encoded Data Length | Length of requested resource in bytes. |  
+| 资源 | 所请求的资源的 URL。 |  
+| 预览 | 仅预览所请求的资源 \ (图像 \ ) 。 |  
+| 请求方法 | 用于请求 \ (的 HTTP 方法 `GET` `POST` ，例如 \ ) 。 |  
+| 状态代码 | HTTP 响应代码。 |  
+| MIME 类型 | 所请求资源的 MIME 类型。 |  
+| 编码数据长度 | 请求的资源的长度（以字节为单位）。 |  
 
-## Scripting events  
+## 脚本事件  
 
-This section lists events that belong to the Scripting category and their properties.  
+此部分列出了属于脚本类别及其属性的事件。  
 
-| Event | Description |  
+| 事件 | 描述 |  
 |:--- |:--- |  
-| Animation Frame Fired | A scheduled animation frame fired, and its callback handler invoked. |  
-| Cancel Animation Frame |  A scheduled animation frame was canceled. |  
-| GC Event |  Garbage collection occurred. |  
-| DOMContentLoaded |  The [DOMContentLoaded event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the page's DOM content has been loaded and parsed. |  
-| Evaluate Script | A script was evaluated. |  
-| Event | A JavaScript event \(for example, `mousedown`, or `key`\). |  
-| Function Call | A top-level JavaScript function call was made \(only appears when browser enters JavaScript engine\). |  
-| Install Timer | A timer was created with [setInterval()][MDNWindowOrWorkerGlobalScopeSetInterval] or [setTimeout()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
-| Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |  
-| Remove Timer | A previously created timer was cleared. |  
-| Time |  A script called [console.time()][ConsoleApiTime]. |  
-| Time End | A script called [console.timeEnd()][ConsoleApiTimeEnd]. |  
-| Timer Fired | A timer fired that was scheduled with `setInterval()` or `setTimeout()`. |  
-| XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |  
-| XHR Load | An `XMLHTTPRequest` finished loading. |  
+| 激发的动画帧 | 引发计划动画帧，并调用其回调处理程序。 |  
+| 取消动画帧 |  已取消计划的动画帧。 |  
+| GC 事件 |  发生垃圾回收。 |  
+| DOMContentLoaded |  浏览器激发了 [DOMContentLoaded 事件][MDNWindowDOMContentLoadedEvent] 。  当已加载和分析页面的所有 DOM 内容时，将引发此事件。 |  
+| 计算脚本 | 已评估脚本。 |  
+| 事件 | JavaScript 事件 \ (例如、 `mousedown` 或 `key` \ ) 。 |  
+| 函数调用 | 执行了顶级 JavaScript 函数调用 \ (仅当浏览器输入 JavaScript 引擎 \ ) 时才出现。 |  
+| 安装计时器 | 已使用 SetInterval 创建了计时器， [ ( # B1 ][MDNWindowOrWorkerGlobalScopeSetInterval] 或 [SetTimeout ( # B3 ][MDNWindowOrWorkerGlobalScopeSetTimeout]。 |  
+| 请求动画帧 | `requestAnimationFrame()`通话安排了一个新帧。 |  
+| 删除计时器 | 以前创建的计时器已清除。 |  
+| 时间 |  名为 console 的脚本 [。时间 ( # B1 ][ConsoleApiTime]。 |  
+| 结束时间 | 名为 [timeEnd ( # B1 ][ConsoleApiTimeEnd]的脚本。 |  
+| 计时器已激发 | 通过 or 计划引发的计时器 `setInterval()` `setTimeout()` 。 |  
+| XHR 准备状态更改 | XMLHTTPRequest 的准备状态已更改。 |  
+| XHR 负载 | `XMLHTTPRequest`已完成加载。 |  
 
-### Scripting event properties  
+### 脚本事件属性  
 
-| Property | Description |  
+| 属性 | 描述 |  
 |:--- |:--- |  
-| Timer ID | The timer ID. |  
-| Timeout | The timeout specified by the timer. |  
-| Repeats | Boolean that specifies if the timer repeats. |  
-| Function Call | A function that was invoked. |  
+| 计时器 ID | 计时器 ID。 |  
+| 超时 | 计时器指定的超时值。 |  
+| 播放 | 指定计时器是否重复的布尔值。 |  
+| 函数调用 | 已调用的函数。 |  
 
-## Rendering events  
+## 呈现事件  
 
-This section lists events that belong to Rendering category and their properties.  
+此部分列出了属于呈现类别及其属性的事件。  
 
-| Event | Description |  
+| 事件 | 描述 |  
 |:--- |:--- |  
-| Invalidate layout | The page layout was invalidated by a DOM change. |  
-| Layout | A page layout was completed. |  
-| Recalculate style | Microsoft Edge recalculated element styles. |  
-| Scroll | The content of nested view was scrolled. |  
+| 使布局无效 | DOM 更改使页面布局失效。 |  
+| 布局 | 已完成页面布局。 |  
+| 重新计算样式 | Microsoft Edge 重新计算的元素样式。 |  
+| 滚动 | 已滚动嵌套视图的内容。 |  
 
-### Rendering event properties  
+### 呈现事件属性  
 
-| Property | Description |  
+| 属性 | 描述 |  
 |:--- |:--- |  
-| Layout invalidated | For Layout records, the stack trace of the code that caused the layout to be invalidated. |  
-| Nodes that need layout | For Layout records, the number of nodes that were marked as needing layout before the relayout started.  These are normally those nodes that were invalidated by developer code, plus a path upward to relayout root. |  
-| Layout tree size | For Layout records, the total number of nodes under the relayout root \(the node that Microsoft Edge starts the relayout\). |  
-| Layout scope | Possible values are `Partial` \(the re-layout boundary is a portion of the DOM\) or `Whole document`. |  
-| Elements affected | For Recalculate style records, the number of elements affected by a style recalculation. |  
-| Styles invalidated | For Recalculate style records, provides the stack trace of the code that caused the style invalidation. |  
+| 布局无效 | 对于布局记录，导致布局失效的代码的堆栈跟踪。 |  
+| 需要布局的节点 | 对于布局记录，在 relayout 开始之前标记为需要布局的节点数。  这些节点通常是由开发人员代码无效的节点，还包括指向 relayout 根的路径。 |  
+| 布局树大小 | 对于布局记录，relayout 根节点下的节点总数 (Microsoft Edge 启动 relayout \ ) 的节点。 |  
+| 布局范围 | 可能的值为 `Partial` \ (重新布局边界是 DOM \ ) 的一部分 `Whole document` 。 |  
+| 受影响的元素 | 对于重新计算样式记录，受样式重新计算影响的元素数。 |  
+| 样式无效 | 对于 "重新计算" 样式记录，提供导致样式无效的代码的堆栈跟踪。 |  
 
-## Painting events  
+## 绘制事件  
 
-This section lists events that belong to Painting category and their properties.  
+此部分列出了属于 Painting 类别及其属性的事件。  
 
-| Event | Description |  
+| 事件 | 描述 |  
 |:--- |:--- |  
-| Composite Layers | The composited image layers for the Microsoft Edge rendering engine. |  
-| Image Decode | An image resource was decoded. |  
-| Image Resize | An image was resized from its native dimensions. |  
-| Paint | Composited layers were painted to a region of the display.  Hovering over a Paint record highlights the region of the display that was updated. |  
+| 复合图层 | Microsoft Edge 呈现引擎的合成图像图层。 |  
+| 图像解码 | 图像资源已解码。 |  
+| 图像调整大小 | 从其本机尺寸调整图像大小。 |  
+| 画图 | 复合图层已绘制到显示区域。  将鼠标悬停在 "画图" 记录上将突出显示已更新的显示区域。 |  
 
-### Painting event properties  
+### 绘制事件属性  
 
-| Property | 说明 |  
+| 属性 | 说明 |  
 |:--- |:--- |  
-| Location | For Paint events, the x and y coordinates of the paint rectangle. |  
-| Dimensions | For Paint events, the height and width of the painted region. |  
+| 位置 | 对于画图事件，绘制矩形的 x 和 y 坐标。 |  
+| 三维 | 对于 "画图" 事件，即绘制区域的高度和宽度。 |  
 
  
 
@@ -157,17 +157,17 @@ This section lists events that belong to Painting category and their properties.
 
 <!-- links -->
 
-[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"  
-[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"  
+[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "时间-控制台 API 参考"  
+[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd-控制台 API 参考"  
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
 
-[MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope.setTimeout() | MDN"  
+[MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "窗口： DOMContentLoaded 事件 |MDN"  
+[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope setInterval ( # A1 |MDN"  
+[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope setTimeout ( # A1 |MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Flavio Copes][FlavioCopes] \(Full Stack Developer\).  
+> 原始页面可在 [此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) 找到，并由 [Meggin Kearney][MegginKearney] (技术作者 \ ) 和 [Flavio Copes][FlavioCopes] (完全堆栈开发人员 \ ) 创作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

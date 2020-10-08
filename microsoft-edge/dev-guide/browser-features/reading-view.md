@@ -1,13 +1,13 @@
 ---
 ms.assetid: 2bc29371-4f2e-4b59-a588-30b107d751f6
-description: See how Microsoft Edge provides a reading view for webpages to enable add-free reading.
-title: Reading view - Dev guide
+description: 请参阅 Microsoft Edge 如何提供网页的阅读视图以启用外接程序阅读。
+title: 阅读视图-开发人员指南
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: 边缘、web 开发、html、css、javascript、开发人员
 ms.openlocfilehash: 0d2076a63f97ecf2b4699795b0036736d0f95c9c
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -15,63 +15,63 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941997"
 ---
-# Reading view  
+# 阅读视图  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Microsoft Edge provides a reading view for a more streamlined, book-like reading experience of webpages without the distraction of unrelated or other secondary content on the page.  Reading view can be toggled on or off from the **Reading view** \(book icon\) button on the address bar or with `Ctrl`+`Shift`+`R`.  Reading view extracts the following metadata from a page:  
+Microsoft Edge 为阅读视图提供了一种更简洁的、书籍喜欢的网页阅读体验，不会干扰页面上的不相关或其他辅助内容。  可在 "**阅读视图**" 中打开或关闭 "阅读视图 \ (簿图标 \ ) " 按钮，或通过 "地址栏" 或 "与" `Ctrl` + `Shift` + `R` 。  阅读视图从页面中提取以下元数据：  
 
 *   Title
-*   Author
-*   Date
-*   Publisher
-*   Dominant image\(s\)
-*   Captions of dominant image\(s\)
-*   Secondary images
-*   Main text content of the page
-*   Copyright
+*   作者
+*   日期
+*   发布者
+*   主导图像 \ (s \ ) 
+*   主图像的标题 \ (s ) 
+*   次映像
+*   页面的主要文本内容
+*   版权
 
-Users can then adjust the page contrast and font size from the Microsoft Edge **Settings** panel.  
+然后，用户可以从 "Microsoft Edge **设置** " 面板调整页面对比度和字号。  
 
-## Metadata extraction  
+## 元数据提取  
 
-Here are details of the page metadata rendered by reading view.  
+下面是 "阅读视图" 呈现的页面元数据的详细信息。  
 
 ### Title  
 
-To ensure Reading view renders your article's title:  
+若要确保阅读视图呈现文章的标题，请执行以下操作：  
 
-*   Include a `title` element in your header  
-*   Include a meta tag with `name="title"`  
-*   Match the title text in your article body with the content string of your meta tag.  Pipes \(`|`\) in your content string prevent the reader view from becoming active, try using hyphens \(`-`\) instead.  
+*   `title`在页眉中包含元素  
+*   包含 meta 标记 `name="title"`  
+*   将文章正文中的标题文本与 meta 标记的内容字符串匹配。  管道 \ (`|` 内容字符串中 ) 使 "读者" 视图变为活动状态，请尝试改用连字符 \ (`-` \ ) 。  
 
-### Author  
+### 作者  
 
-Reading View will look for an element with `class = "byline-name"`.  Best practice is to place the author name after the title and before the article body.  
+阅读视图将查找包含的元素 `class = "byline-name"` 。  最佳做法是将作者姓名置于标题之后和文章正文之前。  
 
 ```html
 <div class="byline-name">Author name</div>
 ```  
 
-### Date  
+### 日期  
 
-Reading view will render the publisher and date information together on the same line, with additional styling to highlight this information.  The article's publishing date will render exactly as it appears in the string.  Reading view does not convert to a specific date format.  
+"阅读" 视图会将发布者和日期信息一起呈现在同一行上，并提供其他样式来突出显示此信息。  项目的发布日期将完全呈现为字符串中显示的内容。  阅读视图不转换为特定的日期格式。  
 
-If you have a date in your article body and would like Reading view to render it, assign the element containing the date with the class `'dateline'`:  
+如果你的文章正文中有日期，并且希望阅读视图呈现它，请使用以下类分配包含日期的元素 `'dateline'` ：  
 
 ```html
 <div class="dateline"> Wednesday, September 18, 2013 7:38 AM </div>
 ```  
 
-If you don't have a date in the article body but would like Reading view to render the date, use the meta tag `name='displaydate'`:  
+如果在文章正文中没有日期，但希望阅读视图呈现日期，请使用 meta 标记 `name='displaydate'` ：  
 
 ```html
 <meta name="displaydate" content=" Wednesday, September 18, 2013 7:38 AM ">
 ```  
 
-### Publisher  
+### 发布者  
 
-Reading view will look for the Open Graph protocol `"og:site_name"` to render the publisher information.  It also looks for `source_organization` and `publisher` attributes in any html tag as a secondary indicator of publisher information on the page.  The publisher text will be hyperlinked to the URL of page using the Reading view page hyperlink style.  
+"阅读视图" 将查找 "打开图形" 协议 `"og:site_name"` 以呈现发布者信息。  它还 `source_organization` `publisher` 在任何 html 标记中查找和属性，作为页面上 publisher 信息的辅助指示器。  Publisher 文本将使用 "阅读视图" 页面超链接样式链接到页面的 URL。  
 
 ```html
 <meta content="Name of organization source" property="og:site_name">
@@ -79,30 +79,30 @@ Reading view will look for the Open Graph protocol `"og:site_name"` to render th
 
 ### Images  
 
-Reading view captures most raw images with width >= 400px and aspect ratio >= 1/3 and =< 3.0.  Images that do not meet these dimensions may still be extracted, such as images that are smaller than 400px in width but have captions.  The first eligible image becomes the dominant image of the article.  The dominant image is rendered as the first piece of content and given full column width.  All following images are rendered as inline images within the article.  
+"阅读" 视图捕获最大宽度为 >= 400px 和纵横比 >= 1/3 和 =< 3.0 的原始图像。  不符合这些尺寸的图像仍可提取，例如小于400px 的图像，但其宽度较小，但具有标题。  第一个符合条件的图像成为文章的主导图像。  主导图像呈现为第一条内容，并给定完整的列宽度。  所有以下图像在项目中呈现为内联图像。  
 
-### Captions  
+### 字幕  
 
-Best practice is to place images in [figure](https://developer.mozilla.org/docs/Web/HTML/Element/figure) tags with no more than two nested [figcaption](https://developer.mozilla.org/docs/Web/HTML/Element/figcaption) tags.  
+最佳做法是将图像放置在不超过两个嵌套的[figcaption](https://developer.mozilla.org/docs/Web/HTML/Element/figcaption)标记的[插图](https://developer.mozilla.org/docs/Web/HTML/Element/figure)标签中。  
 
-### Body  
+### 正文  
 
-To ensure that all the body text of your page is captured by Reading view, it helps to keep most of the article text the same font size and DOM depth.  The reading view algorithm allows for some deviation from this rule so publishers can have the freedom to add emphasis to lines or words.  
+若要确保你的页面的所有正文文本都通过 "阅读" 视图捕获，它有助于将大部分文章文本保持相同的字体大小和 DOM 深度。  "阅读" 视图算法允许使用此规则的某些差异，以便发布者可以自由地为线条或字词添加强调。  
 
-### Copyright  
+### 版权  
 
-Reading view extracts and displays copyright information denoted by meta tags with `name = "copyright"`, or if no meta tag information exists, a text node that contains the copyright \(`©`\) symbol.  Reading view displays copyright information at the end of the article main body, styled using a smaller font size than the main body text.  
+阅读视图提取并显示由 meta 标记表示的版权信息 `name = "copyright"` ，或者如果没有 meta 标记信息，则包含版权 \ (`©` \ ) 符号的文本节点。  阅读视图在文章正文正文的末尾显示版权信息，使用较小字号的字体，样式比正文文本更小。  
 
 ```html
 <meta name="copyright" content="Your copyright information">
 ```  
 
-## Opting out of Reading View  
+## 退出阅读视图  
 
-If you feel your content is not a good fit for Reading view, you can use the following meta tag to opt out of this feature:  
+如果你认为内容不适合阅读视图，可以使用以下 meta 标记来选择退出此功能：  
 
 ```html
 <meta name="IE_RM_OFF" content="true">
 ```  
 
-With this tag, the **Reading view** button will not appear in the address bar when your users view your page.  
+通过此标记，当用户查看您的页面时，地址栏中不会显示 " **阅读视图** " 按钮。  

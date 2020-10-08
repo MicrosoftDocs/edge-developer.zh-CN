@@ -1,12 +1,12 @@
 ---
-description: How to view Cache data from the Application panel of Microsoft Edge DevTools.
-title: View Cache Data With Microsoft Edge DevTools
+description: 如何从 Microsoft Edge DevTools 的应用程序面板查看缓存数据。
+title: 查看 Microsoft Edge DevTools 中的缓存数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: c920a171ec89925cc79ab741eed01e11d749bf1b
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,90 +32,90 @@ ms.locfileid: "10993294"
 
 
 
-# View cache data with Microsoft Edge DevTools   
+# 查看 Microsoft Edge DevTools 中的缓存数据   
 
 
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.  
+本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 检查 [缓存][MDNCache] 数据。  
 
-If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  See [Log network activity][DevtoolsNetworkLogActivity].  
+如果您尝试检查 [HTTP 缓存][MDNHTTPCaching] 数据，这不是您所需的指南。  在**网络日志**的 "**大小**" 列中查找信息。  请参阅 [记录网络活动][DevtoolsNetworkLogActivity]。  
 
-## View cache data   
+## 查看缓存数据   
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
+1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认情况下， **清单** 窗格是默认打开的。  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
+       **清单**窗格  
     :::image-end:::  
     
-1.  Expand the **Cache Storage** section to view available caches.  
+1.  展开 " **缓存存储** " 部分以查看可用缓存。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage.msft.png":::
-       Available caches  
+    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage.msft.png":::
+       可用缓存  
     :::image-end:::  
     
-1.  Select a cache to view the contents.  
+1.  选择缓存以查看内容。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
-       View the contents of a cache  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+       查看缓存的内容  
     :::image-end:::  
     
-1.  Select a resource to view the HTTP headers in the section below the table.  
+1.  在表下方的部分中选择要查看其 HTTP 标头的资源。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
-       View the HTTP headers of a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+       查看资源的 HTTP 标头  
     :::image-end:::  
     
-1.  Select **Preview** to view the content of a resource.  
+1.  选择 " **预览** " 以查看资源的内容。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
-       View the content of a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+       查看资源的内容  
     :::image-end:::  
     
-## Refresh a resource   
+## 刷新资源   
 
-1.  [View the data for a cache](#view-cache-data).  
-1.  Select the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
+1.  [查看缓存的数据](#view-cache-data)。  
+1.  选择要刷新的资源。  DevTools 将突出显示它以指示它已选中。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Select a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       选择资源  
     :::image-end:::  
     
-1.  Select **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+1.  选择 " **刷新** \ (![ 刷新 ][ImageRefreshIcon] \ ) "。  
     
-## Filter resources   
+## 筛选资源   
 
-1.  [View the data for a cache](#view-cache-data).  
-1.  Use the **Filter by Path** text box to filter out any resources that do not match the path that you provide.  
+1.  [查看缓存的数据](#view-cache-data)。  
+1.  使用 " **按路径筛选** " 文本框筛选出与您提供的路径不匹配的任何资源。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
-       Filter out resources that do not match the specified path  
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+       筛选出与指定路径不匹配的资源  
     :::image-end:::  
     
-## Delete a resource   
+## 删除资源   
 
-1.  [View the data for a cache](#view-cache-data).  
-1.  Select the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
+1.  [查看缓存的数据](#view-cache-data)。  
+1.  选择要删除的资源。  DevTools 将突出显示它以指示它已选中。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       Select a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       选择资源  
     :::image-end:::  
     
-1.  Select **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  选择 " **删除所选** \ (" ![ 删除所选 ][ImageDeleteIcon] \ ) "。  
     
-## Delete all cache data   
+## 删除所有缓存数据   
 
-1.  Open **Application** > **Clear Storage**.  
-1.  Make sure that the **Cache Storage** checkbox is enabled.  
+1.  打开**应用程序**  >  **清除存储**。  
+1.  请确保已启用 " **缓存存储** " 复选框。  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       The **Cache Storage** checkbox  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       " **缓存存储** " 复选框  
     :::image-end:::  
     
-1.  Select **Clear site data**.  
+1.  选择 " **清除网站数据**"。  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
-       The **Clear Site Data** button  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+       " **清除网站数据** " 按钮  
     :::image-end:::  
     
 <!--  
@@ -131,11 +131,11 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "记录网络活动 |Microsoft 文档"  
 
-[MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
-[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"  
+[MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "缓存 |MDN"  
+[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP 缓存 |MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

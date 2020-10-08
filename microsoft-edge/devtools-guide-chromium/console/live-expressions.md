@@ -1,12 +1,12 @@
 ---
-description: If you find yourself typing the same JavaScript expressions into the Console repeatedly, try Live Expressions instead.
-title: Watch JavaScript Expression Values In Real-Time With Live Expressions
+description: 如果您发现自己重复在控制台中键入相同的 JavaScript 表达式，请尝试改用实时表达式。
+title: 实时监视 JavaScript 表达式值和实时表达式
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 6b66c44b77cd50bc0c1575e5eceb7c8d1a01b709
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,22 +32,22 @@ ms.locfileid: "10993112"
 
 
 
-# Watch JavaScript Expression Values In Real-Time With Live Expressions   
+# 实时监视 JavaScript 表达式值和实时表达式   
 
   
 
-If you find yourself typing the same JavaScript expression in the Console repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  
+如果您发现自己在控制台中重复键入相同的 JavaScript 表达式，您可能会发现创建 **实时表达式**变得更容易。  使用 **实时表达式** ，您只需要键入一个表达式，然后将其固定到您的控制台顶部。  表达式的值几乎实时更新。  
 
-## Create a Live Expression   
+## 创建实时表达式   
 
-1.  [Open the Console][DevToolsConsoleReferenceOpenConsole].  
-1.  Click **Create Live Expression** \(![Create Live Expression][ImageCreateLiveExpressionIcon]\).  The **Live Expression** text box appears.  
+1.  [打开控制台][DevToolsConsoleReferenceOpenConsole]。  
+1.  单击 " **创建实时表达式** \ (![ 创建实时表达式 ][ImageCreateLiveExpressionIcon] \ ) "。  将显示 " **活动表达式** " 文本框。  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Typing document.activeElement into the Live Expression text box" lightbox="../media/console-create-live-expression.msft.png":::
-       Typing `document.activeElement` into the **Live Expression** text box  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="在 &quot;活动表达式&quot; 文本框中键入 activeElement" lightbox="../media/console-create-live-expression.msft.png":::
+       `document.activeElement`在 "**活动表达式**" 文本框中键入  
     :::image-end:::  
     
-1.  Type `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.  
+1.  键入 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 保存表达式，或在 "**实时表达式**" 文本框外单击。  
 
 <!--todo: add reference open console (open the console) section when available  -->  
 
@@ -61,7 +61,7 @@ If you find yourself typing the same JavaScript expression in the Console repeat
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Open the Console - Console Reference | Microsoft Docs"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "打开控制台-控制台参考 |Microsoft 文档"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

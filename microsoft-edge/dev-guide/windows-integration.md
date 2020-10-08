@@ -1,13 +1,13 @@
 ---
-description: Guides for Windows integration features in Microsoft Edge.
-title: Windows integration features - Dev guide
+description: Microsoft Edge 中的 Windows 集成功能指南。
+title: Windows 集成功能-开发人员指南
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.technology: windows-integration
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: 边缘、web 开发、html、css、javascript、开发人员
 ms.openlocfilehash: ba69d971c6a5006bc00f9e67517b40be1ab5692d
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -15,18 +15,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941835"
 ---
-# Windows integration features  
+# Windows 集成功能  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-## Payment Request API  
+## 付款请求 API  
 
-The [Payment Request API](./windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.  
+[支付请求 API](./windows-integration/payment-request-api.md)是一个开放的跨浏览器标准，使浏览器能够充当商家、消费者和支付方式 \ (（如信用卡）之间的媒介，例如，使用者已存储在云中的 ) 。  
 
-## Web Authentication and Windows Hello  
+## Web 身份验证和 Windows Hello  
 
-The [Web Authentication API](./windows-integration/web-authentication.md) in Microsoft Edge enables web applications to use [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics for user authentication.  
+Microsoft Edge 中的 [Web 身份验证 API](./windows-integration/web-authentication.md) 使 web 应用程序可以使用 [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) 生物识别进行用户身份验证。  
 
-## Web Notifications API  
+## Web 通知 API  
 
-The [Web Notifications API](./windows-integration/web-notifications-api.md) allows websites to send users notifications outside the context of the Microsoft Edge browser.  
+[Web 通知 API](./windows-integration/web-notifications-api.md)允许网站向 Microsoft Edge 浏览器上下文外的用户发送通知。  

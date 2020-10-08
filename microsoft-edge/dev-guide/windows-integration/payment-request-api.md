@@ -1,13 +1,13 @@
 ---
-description: Learn how thePayment Request APIenables Microsoft Edge to act as an intermediary between merchants, consumers, and consumer payment methods stored in the cloud.
-title: Payment Request API - Dev guide
+description: 了解 thePayment 请求 APIenables Microsoft Edge 如何在存储在云中的商家、消费者和消费者支付方式之间充当媒介。
+title: 付款请求 API-开发人员指南
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
-keywords: edge, web development, html, css, javascript, developer
+keywords: 边缘、web 开发、html、css、javascript、开发人员
 ms.openlocfilehash: 338940ab6f7e6bb04c6d5a8cc6ff0a198e7afbcc
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -15,39 +15,39 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941854"
 ---
-# Payment Request API (EdgeHTML)  
+# 付款请求 API (EdgeHTML)   
 
 > [!NOTE]
-> This article describes the workflow supported in the [legacy version of Microsoft Edge][MicrosoftSupport44533505].  Microsoft Edge \(Chromium\) supports the Payment Request API with a different implementation based on the Chromium project.  
+> 本文介绍 [早期版本的 Microsoft Edge][MicrosoftSupport44533505]中支持的工作流。  Microsoft Edge \ (Chromium \ ) 使用基于 Chromium 项目的不同实现支持付款请求 API。  
 
-E-commerce sales continue growing at a rapid pace.  According to [eMarketer](https://www.emarketer.com), by 2018 digital sales are forecasted to increase by 23% from the levels measured in 2013.  While consumers and businesses enjoy the convenience of e-commerce sales, challenges remain.  Today each e-commerce website owner needs to invest time to develop high quality payment checkout flows and validation rules.  Consumers need to navigate different payment checkout flows and re-enter the same payment and shipping information on every site where they shop.  This can be time consuming and frustrating for consumers, leading to a high rate of shopping cart abandonment and decreased sales for merchants.  Merchants [estimate](http://baymard.com/lists/cart-abandonment-rate) between 60% and 70% of shopping carts are abandoned.  
+电子商务销售继续以快速节奏的速度增长。  根据 [eMarketer](https://www.emarketer.com)，我们预测，2018将按2013中的级别增加23% 的数字销售。  消费者和企业享受电子商务销售的便利，但挑战仍然存在。  如今，每个电子商务网站所有者都需要花费大量时间来开发优质付款结帐流程和验证规则。  消费者需要导航不同的付款结算流程，并在他们购买的每个网站上重新输入相同的支付和运输信息。  对于消费者来说，这可能会非常耗时且令人沮丧，从而提高了购物车的 abandonment，并降低了商家的销售额。  将放弃购买车60% 和70% 之间的商家 [估计](http://baymard.com/lists/cart-abandonment-rate) 。  
 
-The [Payment Request API](https://w3.org/TR/payment-request) standardizes the payment checkout process.  This API requires less customization for web developers and provides a faster, more consistent, and therefore, less confusing experience for consumers.  Because consumers can select payment instruments and shipping addresses from their Microsoft account, they are required to enter less data to complete purchases which reduces the time and data entry required to complete a payment.  
+[付款请求 API](https://w3.org/TR/payment-request)标准化付款结算流程。  对于 web 开发人员而言，此 API 需要较少的自定义，并且为使用者提供更快、更一致且更一致的体验。  由于消费者可以从其 Microsoft 帐户选择支付方式和送货地址，因此他们需要输入较少的数据来完成购买，从而减少完成付款所需的时间和数据输入。  
 
-The [Payment Request API](https://w3.org/TR/payment-request) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.  
+[支付请求 API](https://w3.org/TR/payment-request)是一个开放的跨浏览器标准，使浏览器能够充当商家、消费者和支付方式 \ (（如信用卡）之间的媒介，例如，使用者已存储在云中的 ) 。  
   
-In summary, when using the [Payment Request API](https://w3.org/TR/payment-request), customers shop on merchant websites as normal.  When ready to pay, the merchant website calls the **Payment Request** API to create a **Payment Request** and passes the relevant payment information \(such as supported payment methods, purchase amount, currency, and so on\) to the browser.  
+总而言之，在使用 [付款请求 API](https://w3.org/TR/payment-request)时，客户以正常方式在商家网站上购物。  当准备好支付时，商家网站将调用 **付款请求** API 来创建 **付款请求** 并将相关的付款信息 \ (，例如支持的支付方式、购买金额、货币等 \ ) 浏览器。  
 
-:::image type="complex" source="../media/payment_request_construct.png" alt-text="Payment request construct" lightbox="../media/payment_request_construct.png":::
-   Payment request construct  
+:::image type="complex" source="../media/payment_request_construct.png" alt-text="付款请求构造" lightbox="../media/payment_request_construct.png":::
+   付款请求构造  
 :::image-end:::  
 
-The browser authenticates the user, enables the user to select a supported payment method on file, and processes the payment details.  The browser then sends the payment information details back to the merchant website, so that the merchant can complete the payment.  In addition to receiving payment information, the merchant can also elect to receive shipping information as part of the **Payment Request**.  
+浏览器对用户进行身份验证，允许用户选择受支持的文件支付方式，并处理付款详细信息。  然后，浏览器会将付款信息的详细信息发送回商家网站，以便商家可以完成付款。  除了接收付款信息，商家还可以选择接收作为 **付款请求**一部分的装运信息。  
 
-:::image type="complex" source="../media/payment_response_construct.png" alt-text="Payment request construct" lightbox="../media/payment_response_construct.png":::
-   Payment response construct  
+:::image type="complex" source="../media/payment_response_construct.png" alt-text="付款请求构造" lightbox="../media/payment_response_construct.png":::
+   付款响应构造  
 :::image-end:::  
 
-To see the Payment Request API in action, as well as get an overview of how to use it, check out this video.  
+若要查看付款请求 API 的工作方式，并大致了解如何使用它，请查看此视频。  
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Using-the-Payments-Request-API/player]  
 
 > [!NOTE]
-> The Payment Request API is supported in Microsoft Edge build 14992 or newer.  
+> Microsoft Edge 内部版本14992或更高版本支持付款请求 API。  
 
-## Creating a Payment Request  
+## 创建付款请求  
 
-Web pages create a **Payment Request** typically when the user initiates a payment process by clicking a "buy" button.  The **Payment Request** [constructor](/previous-versions/mt790440(v=vs.85)) includes methodData, details, and options.  
+当用户通过单击 "购买" 按钮启动付款流程时，网页通常会创建 **付款请求** 。  **付款请求**[构造函数](/previous-versions/mt790440(v=vs.85))包括 methodData、详细信息和选项。  
 
 ```javascript
 var payment = new PaymentRequest ( 
@@ -57,12 +57,12 @@ var payment = new PaymentRequest (
 ); 
 ```  
 
-The [methodData](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parameter contains a list of the payment methods and networks accepted by the website and any associated payment method specific data.  In Microsoft Edge, this list is matched with the supported payment methods that the shopper has saved in their Microsoft account and results in the "pay with" list in the payment user experience.  
+[MethodData](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params)参数包含网站接受的支付方式和网络以及任何关联的付款方式特定数据的列表。  在 Microsoft Edge 中，此列表与购物者在其 Microsoft 帐户中保存的支持支付方式相匹配，并在付款用户体验中产生 "支付方式" 列表。  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/pay_with.png" alt-text="Payment request construct" lightbox="../media/pay_with.png":::
-         The **pay with** list in the Microsoft Wallet user experience  
+      :::image type="complex" source="../media/pay_with.png" alt-text="付款请求构造" lightbox="../media/pay_with.png":::
+         Microsoft 钱包用户体验中的 " **支付方式** " 列表  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -78,19 +78,19 @@ The [methodData](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) par
    :::column-end:::
 :::row-end:::  
 
-The [details](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parameter contains information that the merchant wishes to convey to the customer about the transaction.  These include order summary items like total, tax, shipping amount, and other summary level items impacting the payment amount.  These are not intended to be order line items.  
+" [详细信息](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) " 参数包含商家希望向客户传达交易的相关信息。  其中包括影响付款金额的订单汇总项目，如 "总计"、"税金"、"运输金额" 以及其他汇总级别项目。  它们不应作为订单行项目。  
   
-The [details](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parameter is also used to define shipping options available to the customer when required.  More details are included in the **Payment Request** with Shipping section below.  
+" [详细信息](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) " 参数还用于定义在需要时可供客户使用的装运选项。  下面 **的 "发货" 部分包含更** 多详细信息。  
 
-Each [detail](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) line includes a label for the currency and the amount.  
+每个 [明细](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) 行都包含货币和金额的标签。  
 
 > [!NOTE]
-> The **Payment Request** does not calculate the sum or total of these amounts.  It is the responsibility of the merchant's website to ensure that the line items total correctly.  
+> **付款请求**不会计算这些金额的总和或总额。  由商家的网站负责确保明细项目的总数正确。  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/show_details.png" alt-text="Payment request construct" lightbox="../media/show_details.png":::
-         Subtotal, shipping, taxes, and total details  
+      :::image type="complex" source="../media/show_details.png" alt-text="付款请求构造" lightbox="../media/show_details.png":::
+         小计、运费、税金和总详细信息  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -112,16 +112,16 @@ Each [detail](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) line i
    :::column-end:::
 :::row-end:::  
 
-[PaymentRequest](/previous-versions/mt790440(v=vs.85)) does not support refunds, so the amounts should always be positive; individual list items can be negative, such as discounts.  
+[PaymentRequest](/previous-versions/mt790440(v=vs.85)) 不支持退款，因此金额应始终为正数;单个列表项可以是负数，例如折扣。  
 
-The browser will render the labels as you define them and automatically render the correct currency formatting based on the customer's locale.  Note that the labels should be rendered in the same language as your content.  
+浏览器将在你定义标签时呈现这些标签，并根据客户的区域设置自动呈现正确的货币格式。  请注意，标签应呈现为与内容相同的语言。  
 
-The [options](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parameter defines data the web page wants returned from the **Payment Request**.  This also defines the data that needs to be collected, including if shipping, email address, phone number or all are required.  
+[选项](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params)参数定义网页希望从**付款请求**返回的数据。  这还会定义需要收集的数据，包括装运、电子邮件地址、电话号码或全部必填。  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/email_snippet.png" alt-text="Payment request construct" lightbox="../media/email_snippet.png":::
-         Email address dropdown  
+      :::image type="complex" source="../media/email_snippet.png" alt-text="付款请求构造" lightbox="../media/email_snippet.png":::
+         电子邮件地址下拉列表  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -134,14 +134,14 @@ The [options](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parame
    :::column-end:::
 :::row-end:::  
 
-## Showing the Payment Request  
+## 显示付款请求  
 
-The [show()](/previous-versions/mt790448(v=vs.85)) method is called by the web page to allow the user to interact with the **Payment Request** user interface.  The [show()](/previous-versions/mt790448(v=vs.85)) method returns a Promise that will be resolved when the user authorizes the payment request.  
+[显示 ( # B1](/previous-versions/mt790448(v=vs.85))方法由网页调用，以允许用户与**付款请求**用户界面进行交互。  [Show ( # B1](/previous-versions/mt790448(v=vs.85))方法将返回一个承诺，该承诺将在用户批准付款请求时得到解决。  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/pay_screen_default.png" alt-text="Payment request construct" lightbox="../media/pay_screen_default.png":::
-         Confirm and pay details  
+      :::image type="complex" source="../media/pay_screen_default.png" alt-text="付款请求构造" lightbox="../media/pay_screen_default.png":::
+         确认和支付详细信息  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -154,63 +154,63 @@ The [show()](/previous-versions/mt790448(v=vs.85)) method is called by the web p
    :::column-end:::
 :::row-end:::  
 
-## Aborting a Payment Request  
+## 终止付款请求  
  
-The [abort()](/previous-versions/mt790437(v=vs.85)) method can be called by the web page any time after the [show()](/previous-versions/mt790448(v=vs.85)) method is called, up until the point where the Promise is resolved.  The [abort()](/previous-versions/mt790437(v=vs.85)) method will cause the browser to abort the **Payment Request** and close the **Payment Request** user interface.  For example, a web page may choose to abort if the user did not complete the transaction in the required amount of time.  
+在 "[显示" ( # B3](/previous-versions/mt790448(v=vs.85))方法被调用后，任何时候都可以随时调用[Abort ( # B1](/previous-versions/mt790437(v=vs.85))方法，直到解决该承诺的点。  [Abort ( # B1](/previous-versions/mt790437(v=vs.85))方法将导致浏览器中止**付款请求**并关闭**付款请求**用户界面。  例如，如果用户在所需的时间量内未完成事务，则可以选择终止网页。  
 
 ```javascript
 payment.abort();
 ```  
 
-## Payment Response  
-When the customer approves the **Payment Request**, a **Payment Response** is returned to the website.  The **Payment Response** includes the following:  
+## 付款答复  
+当客户批准 **付款请求**时，将向网站返回 **付款响应** 。  **付款响应**包括以下内容：  
 
- Property      | 说明 | Required | Additional Info
+ 属性      | 说明 | 必需 | 其他信息
 |---------------|-----------------|-------|-----------------|
-[methodName](/previous-versions/mt790656(v=vs.85)) | The ID for the payment method selected by the user | Y | |   
-[details](/previous-versions/mt790655(v=vs.85)) | A JSON object that includes all of the data the merchant requires to process the transaction using the selected payment method or a payment token | Y | [Basic Card](https://w3c.github.io/payment-method-basic-card) Dictionary:  cardholderName; cardNumber; expiryMonth; expiryYear; cardSecurityCode; billingAddress; |   
-[shippingAddress](/previous-versions/mt790445(v=vs.85)) | The shipping address selected by the user  |  Optional.  Required when [requestShipping](/previous-versions/mt790440(v=vs.85)#PaymentOptions) is `True`  | Address dictionary:  country; addressLine; region; city; dependentLocality; postalCode; sortingCode; languageCode; organization; recipient; phone |  
-[shippingOption](/previous-versions/mt790446(v=vs.85)) | The ID for the selected shipping option | Optional.  Required when [requestShipping](/previous-versions/mt790440(v=vs.85)#PaymentOptions) is `True`  | |   
-[payerName](/previous-versions/mt790440(v=vs.85)#PaymentOptions) | The name provided by the user  | Optional.  Required when [requestPayerName](/previous-versions/mt790440(v=vs.85)#PaymentOptions) is `True` | |  
-[payerEmail](/previous-versions/mt790440(v=vs.85)#PaymentOptions) | The email address selected by the user | Optional.  Required when [requestPayerEmail](/previous-versions/mt790440(v=vs.85)#PaymentOptions) is `True`  | |  
-[PayerPhone](/previous-versions/mt790440(v=vs.85)#PaymentOptions) | The phone number selected by the user | Optional.  Required when [requestPayerPhone](/previous-versions/mt790440(v=vs.85)#PaymentOptions) is `True` | |  
+[名称](/previous-versions/mt790656(v=vs.85)) | 用户选择的付款方式的 ID | Y | |   
+[details](/previous-versions/mt790655(v=vs.85)) | 一个 JSON 对象，其中包含商人使用所选付款方式或付款标记处理交易时所需的所有数据 | Y | [基本卡](https://w3c.github.io/payment-method-basic-card) 词典： cardholderName;cardNumber;expiryMonth;expiryYear;cardSecurityCode;billingAddress; |   
+[shippingAddress](/previous-versions/mt790445(v=vs.85)) | 用户选择的装运地址  |  可选。  [RequestShipping](/previous-versions/mt790440(v=vs.85)#PaymentOptions)时需要 `True`  | 地址词典：国家/地区;addressLine;地区—dependentLocality;邮政编码sortingCode;languageCode;所在收信电话 |  
+[shippingOption](/previous-versions/mt790446(v=vs.85)) | 所选装运选项的 ID | 可选。  [RequestShipping](/previous-versions/mt790440(v=vs.85)#PaymentOptions)时需要 `True`  | |   
+[payerName](/previous-versions/mt790440(v=vs.85)#PaymentOptions) | 用户提供的名称  | 可选。  [RequestPayerName](/previous-versions/mt790440(v=vs.85)#PaymentOptions)时需要 `True` | |  
+[payerEmail](/previous-versions/mt790440(v=vs.85)#PaymentOptions) | 用户选择的电子邮件地址 | 可选。  [RequestPayerEmail](/previous-versions/mt790440(v=vs.85)#PaymentOptions)时需要 `True`  | |  
+[PayerPhone](/previous-versions/mt790440(v=vs.85)#PaymentOptions) | 用户选择的电话号码 | 可选。  [RequestPayerPhone](/previous-versions/mt790440(v=vs.85)#PaymentOptions)时需要 `True` | |  
 
-The [details](/previous-versions/mt790655(v=vs.85)#PaymentRequest_params) JSON object in the **Payment Response** will contain the payment data required by the merchant to process a payment.  In its simplest form, the response will be a [Basic Card](https://w3c.github.io/payment-method-basic-card) payload containing cleartext payment card details.  Where merchants have arrangements with additional gateway/processor partners for them to provide payments support, the merchant may require a payload the processor can handle.  These can take the shape of a processor/gateway token or an encrypted payment instrument.  These payment methods are outside the scope of this document and will be covered in documentation specific to the processor.  Additionally, to receive a [Basic Card](https://w3c.github.io/payment-method-basic-card) response, no additional onboarding to Microsoft is required by the developer, unlike other processor/gateway specific payment methods which may require encryption key onboarding or request authorization \(oAuth\).  
+**付款响应**中的[详细信息](/previous-versions/mt790655(v=vs.85)#PaymentRequest_params)JSON 对象将包含商家处理付款所需的支付数据。  在最简单的形式中，该响应将是包含明文支付卡详细信息的 [基本卡](https://w3c.github.io/payment-method-basic-card) 负载。  如果商家与其他网关/处理器合作伙伴进行了安排以提供付款支持，则商家可能需要处理器可以处理的负载。  它们可以采用处理器/网关令牌或加密付款方式的形状。  这些支付方式超出本文档的范围，将在特定于处理器的文档中介绍。  此外，若要接收 [基本的卡](https://w3c.github.io/payment-method-basic-card) 响应，开发人员不需要额外的 Microsoft 加入 Microsoft，这与其他处理器/网关特定的支付方法（可能需要加密密钥）或请求授权 \ (oAuth \ ) 不同。  
 
-Upon receiving the **Payment Response**, the website submits the payment information to their payment processor.  The browser will display a spinner page while the payment is being processed.  
+收到 **付款响应**后，网站将向其付款处理者提交付款信息。  在处理付款时，浏览器将显示一个微调框页面。  
 
-:::image type="complex" source="../media/loading_screen.png" alt-text="Payment request construct" lightbox="../media/loading_screen.png":::
-   The page displayed when the payment is being processed  
+:::image type="complex" source="../media/loading_screen.png" alt-text="付款请求构造" lightbox="../media/loading_screen.png":::
+   处理付款时显示的页面  
 :::image-end:::  
 
-Once the payment is complete, the web page calls the [complete()](/previous-versions/mt790642(v=vs.85)) method and passes a value of **success** or **fail**.  The [complete()](/previous-versions/mt790642(v=vs.85)) method informs the browser that the purchase is finished and the appropriate terminating UI screen should be shown depending on the value of **success** or **fail**.  
+付款完成后，网页将调用 [完整的 ( # B1 ](/previous-versions/mt790642(v=vs.85)) 方法并传递 **成功** 或 **失败**的值。  [完整的 ( # B1](/previous-versions/mt790642(v=vs.85))方法通知浏览器购买已完成，并且根据**成功**或**失败**的值，应显示相应的终止 UI 屏幕。  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/response_payment-request_complete.png" alt-text="Payment request construct" lightbox="../media/response_payment-request_complete.png":::
-         The UI displayed when the purchase succeeded  
+      :::image type="complex" source="../media/response_payment-request_complete.png" alt-text="付款请求构造" lightbox="../media/response_payment-request_complete.png":::
+         购买成功时显示的 UI  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/response_payment-request_failure.png" alt-text="Payment request construct" lightbox="../media/response_payment-request_failure.png":::
-         The UI displayed when the purchase failed  
+      :::image type="complex" source="../media/response_payment-request_failure.png" alt-text="付款请求构造" lightbox="../media/response_payment-request_failure.png":::
+         当购买失败时显示的 UI  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Payment Request with Shipping  
+## 带装运的付款请求  
 
-### Shipping Address  
+### 送货地址  
 
-For sales that require shipping physical goods, a shipping address is required.  To include a shipping address, set `requestShipping = True` in the [options](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parameter of the request.  
+对于需要装运实际货物的销售，需要装运地址。  若要包括装运地址，请 `requestShipping = True` 在请求的 " [选项](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) " 参数中设置。  
 
-When the user selects or updates the shipping address, the [onshippingaddresschange](/previous-versions/mt790442(v=vs.85)) event will run.  The website, using an event listener, will be aware of the change and can then validate the address, re-calculate shipping costs and taxes, and update [shippingOptions](/previous-versions/mt790440(v=vs.85)) to reflect the changed costs and shipping options available for the address selected \(if applicable\).  
+当用户选择或更新送货地址时，将运行 [onshippingaddresschange](/previous-versions/mt790442(v=vs.85)) 事件。  使用事件侦听器的网站将知道更改，然后可以验证地址、重新计算运输成本和税款，并更新 [shippingOptions](/previous-versions/mt790440(v=vs.85)) 以反映所选地址的已更改的费用和送货选项 (\ ) 。  
 
-### Shipping Options  
+### 送货选项  
 
-Shipping options can be presented to the customer by adding [shippingOptions](/previous-versions/mt790440(v=vs.85)) to the [details](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parameter.  A default can be established by setting `selected = True` for one of the shipping options.  
+通过将 [shippingOptions](/previous-versions/mt790440(v=vs.85)) 添加到 [详细信息](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) 参数，可以向客户显示装运选项。  可通过 `selected = True` 为其中一个装运选项设置来建立默认值。  
  
-When the user selects or updates the shippingOptions, the [onshippingoptionchange](/previous-versions/mt790436(v=vs.85)) event will run.  The website, using an event listener, will be aware of the change and can update the [details](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) parameter with the correct shipping amount.  
+当用户选择或更新 shippingOptions 时，将运行 [onshippingoptionchange](/previous-versions/mt790436(v=vs.85)) 事件。  使用事件侦听器的网站将知道所做的更改，并且可以使用正确的运输金额更新 [详细信息](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) 参数。  
 
 ```javascript
 var details = {
@@ -246,15 +246,15 @@ var options = {
 }; 
 ```  
 
-## API Reference  
+## API 参考  
 
-[Payment Request API](/previous-versions/mt790447(v=vs.85))  
+[付款请求 API](/previous-versions/mt790447(v=vs.85))  
 
-## Specification
-[Payment Request API](https://w3.org/TR/payment-request)
+## 书
+[付款请求 API](https://w3.org/TR/payment-request)
 
 <!-- links -->  
 
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
 
-[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "What is Microsoft Edge Legacy?"  
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "什么是 Microsoft Edge 旧版？"  

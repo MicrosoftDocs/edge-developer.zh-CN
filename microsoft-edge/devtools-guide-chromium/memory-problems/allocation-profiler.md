@@ -1,12 +1,12 @@
 ---
-description: Use Allocation instrumentation on timeline to find objects that are not being properly garbage collected, and continue to retain memory.
-title: How to Use Allocation Instrumentation on Timeline
+description: 使用时间线上的分配检测查找未正确进行垃圾回收的对象，并继续保留内存。
+title: 如何在日程表上使用分配检测
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,80 +28,80 @@ ms.locfileid: "10993504"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# How to use Allocation instrumentation on Timeline  
+# 如何在日程表上使用分配检测  
 
-Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.  
+使用 **时间线上的分配检测** 查找未正确进行垃圾回收的对象，并继续保留内存。  
 
-## How Allocation instrumentation on timeline works  
+## 时间线上的分配规范的工作原理  
 
-**Allocation instrumentation on timeline** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.  
+**时间线上的分配规范** 将 **堆探查器** 的详细快照信息与 **性能** 面板的增量更新和跟踪组合在一起。  同样，针对对象的跟踪堆分配涉及开始录制、执行操作序列和停止录制分析。  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-**Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms\) and one final snapshot at the end of the recording.  
+"**时间线上的分配规范" 在**整个录制过程中定期执行堆快照， (在录制结束时，每隔 50 ms \ ) 和最后一个快照。  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Allocation instrumentation on timeline" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **Allocation instrumentation on timeline**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **日程表上的分配规范**  
 :::image-end:::  
 
 > [!NOTE]
-> The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.  
+> 后面的数字 `@` 是一个对象 ID，该对象 ID 持续于录制会话期间拍摄的多个快照中。  持久性对象 ID 支持堆状态之间的精确比较。  在垃圾回收过程中移动对象，因此显示对象的地址毫无意义。  
 
-## Enable Allocation Instrumentation on Timeline  
+## 在日程表上启用分配检测  
 
-Complete the following actions to begin using **Allocation instrumentation on timeline**.  
+完成以下操作以开始 **在日程表上使用分配检测**。  
 
-1.  [Open the DevTools][DevtoolsOpenIndex].  
-1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.  
-1.  Start recording.  
+1.  [打开 DevTools][DevtoolsOpenIndex]。  
+1.  打开 " **内存** " 面板，选择 " **时间线上的分配规范** " 单选按钮。  
+1.  开始录制。  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Allocation instrumentation on timeline" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Record heap allocations profiler  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       记录堆分配探查器  
     :::image-end:::  
     
-## Read a heap allocation timeline  
+## 读取堆分配日程表  
 
-The heap allocation timeline shows where objects are being created and identifies the retaining path.  In the following figure, the bars at the top indicate when new objects are found in the heap.  
+堆分配时间线显示创建对象的位置并标识保留路径。  在下图中，顶部的条指示何时在堆中找到新对象。  
 
-The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.  
+每个条形的高度对应于最近分配的对象的大小，条形图的颜色指示这些对象是否仍在最终堆快照中。  蓝色条表示在时间线结束时仍处于活动位置的对象，灰色条指示在时间线期间分配但已被垃圾回收的对象。  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Allocation instrumentation on timeline" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **Allocation instrumentation on timeline** snapshot  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **日程表快照上的分配规范**  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
-You are able to use the sliders in the timeline above to zoom into that particular snapshot and see the objects that were recently allocated at that point:  
+你可以使用上面时间线中的滑块缩放到该特定快照，并查看该位置最近分配的对象：  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Allocation instrumentation on timeline" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   Zoom into snapshot  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   放大到快照  
 :::image-end:::  
 
-Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.  
+单击堆中的特定对象时，将显示堆快照底部的保留树。  检查对象的保留路径应为你提供足够的信息，以了解未收集对象的原因，你应该更改必要的代码以删除不必要的引用。  
 
-## View memory allocation by function  
+## 按函数查看内存分配  
 
-You are able to view memory allocation by JavaScript function.  For more information, see [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+你可以通过 JavaScript 函数查看内存分配。  有关详细信息，请参阅 [通过函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。  
 
-## Getting in touch with the Microsoft Edge DevTools team  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"  
+[DevToolsOpenIndex]: ../open.md "打开 Microsoft Edge (Chromium) DevTools |Microsoft 文档"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "调查按函数进行的内存分配-修复内存问题 |Microsoft 文档"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Download a Microsoft Edge Channel"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 频道"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) and is authored by [Meggin Kearney][MegginKearney] \(Technical Writer\).  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] (技术编写器 \ ) 创作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

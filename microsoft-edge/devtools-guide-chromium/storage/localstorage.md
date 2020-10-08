@@ -1,12 +1,12 @@
 ---
-description: How to view and edit localStorage with the Local Storage pane and the Console.
-title: View And Edit Local Storage With Microsoft Edge DevTools
+description: 如何通过 "本地存储" 窗格和控制台查看和编辑 localStorage。
+title: 查看和编辑 Microsoft Edge DevTools 的本地存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: aa5365d1764ea0db537ea24464f9c76441f05322
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,81 +32,81 @@ ms.locfileid: "10993553"
 
 
 
-# View and edit local storage with Microsoft Edge DevTools   
+# 查看和编辑 Microsoft Edge DevTools 的本地存储   
 
 
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.  
+本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [localStorage][MDNWindowsLocalStorage] 键值对。  
 
-## View localStorage keys and values   
+## 查看 localStorage 键和值   
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
+1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认显示 **清单** 窗格。  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
+       **清单**窗格  
     :::image-end:::  
     
-1.  Expand the **Local Storage** menu.  
+1.  展开 " **本地存储** " 菜单。  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-local-storage.msft.png":::
-       The **Local Storage** menu  
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-local-storage.msft.png":::
+       **本地存储**菜单  
     :::image-end:::  
     
-1.  Select a domain to view the key-value pairs.  
+1.  选择一个域以查看键/值对。  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
-       The `localStorage` key-value pairs for the `https://www.bing.com` domain  
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+       `localStorage`域的键/值对 `https://www.bing.com`  
     :::image-end:::  
     
-1.  Select a row of the table to view the value in the viewer below the table.  
+1.  选择表中的一行以查看表下方的查看器中的值。  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
-       View the value of the `eventLogQueue_Online` key  
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+       查看键的值 `eventLogQueue_Online`  
     :::image-end:::  
     
-## Create a new localStorage key-value pair   
+## 创建新的 localStorage 键值对   
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
+1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
+1.  双击表格的空白部分。  DevTools 将创建一个新行，并将光标焦点放在 **键** 列中。  
     
-    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
-       The empty part of the table to double-click in order to create a new key-value pair  
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+       要在其中创建新的键值对的表格的空部分，请双击该部分。  
     :::image-end:::  
     
-## Edit localStorage keys or values   
+## 编辑 localStorage 键或值   
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
+1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
+1.  双击 " **键** " 或 " **值** " 列中的一个单元格以编辑该注册表项或值。  
     
-    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
-       Edit a `localStorage` key  
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+       编辑 `localStorage` 密钥  
     :::image-end:::  
     
-## Delete localStorage key-value pairs   
+## 删除 localStorage 键值对   
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Select the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Press the `Delete` key or click **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
+1.  选择要删除的键/值对。  DevTools 突出显示蓝色以指示它已选中。  
+1.  按下 `Delete` 键或单击 " **删除所选** 项 \" (" ![ 删除所选项 ][ImageDeleteIcon] \ ) "。  
     
-## Delete all `localStorage` key-value pairs for a domain   
+## 删除 `localStorage` 域的所有键/值对   
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Select **Clear All** \(![Clear All][ImageClearIcon]\).  
+1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
+1.  选择 **"全部清除** " (![ 全部清除 ][ImageClearIcon] \ ) 。  
     
-## Interact with localStorage from the Console   
+## 从控制台与 localStorage 交互   
 
-Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.  
+由于您能够在 **控制台**中运行 JavaScript，并且由于 **控制台** 有权访问页面的 JavaScript 上下文，因此可以 `localStorage` 从 **控制台**进行交互。  
 
-1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.  
+1.  如果要访问显示的页面以外的域的键/值对，请使用 **JavaScript 上下文** 菜单更改 **控制台** 的 JavaScript 上下文 `localStorage` 。  
     
-    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-console-local-storage.msft.png":::
-       Change the JavaScript context of the Console  
+    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="清单窗格" lightbox="../media/storage-console-local-storage.msft.png":::
+       更改控制台的 JavaScript 上下文  
     :::image-end:::  
     
-1.  Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.  
+1.  `localStorage`在控制台中运行表达式，与在 JavaScript 中执行的操作相同。  
     
-    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
-       Interact with `localStorage` from the **Console**  
+    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="清单窗格" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
+       `localStorage`从**控制台**进行交互  
     :::image-end:::  
     
 <!--  
@@ -122,9 +122,9 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
 
-[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
+[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "LocalStorage |MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

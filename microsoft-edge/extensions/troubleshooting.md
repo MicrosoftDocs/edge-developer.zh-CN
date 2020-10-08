@@ -1,13 +1,13 @@
 ---
 ms.assetid: 8b7f362f-da09-43db-8a42-cfa128c1808c
-description: Get the answers to common questions you may have while loading unpacked extensions.
-title: Extensions - Troubleshooting
+description: 获取加载解压缩扩展插件时可能会遇到的常见问题的答案。
+title: 扩展-疑难解答
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: 边缘、web 开发、html、css、javascript、开发人员
 ms.openlocfilehash: 78013876ba5c2c6c111289f46c81a9fde3ecc964
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -15,42 +15,42 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563220"
 ---
-# Troubleshooting  
+# 疑难解答  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
-If you are trying to load unpacked extensions and are experiencing issues, the info below may help:
+如果你尝试加载解包扩展且遇到问题，以下信息可能会有所帮助：
 
-## 1. I see the error "We couldn't load this extension"
+## 1. 我看到错误 "无法加载此扩展"
 
-This usually means that Microsoft Edge cannot access the extension folder you attempted to load.
+这通常意味着 Microsoft Edge 无法访问尝试加载的扩展文件夹。
 
-Here is a summary of the possible errors you may encounter:
+下面是可能遇到的可能错误的摘要：
 
-Error message | Details
+错误消息 | 详细信息
 :--------- | :------------
-Manifest parsing error: Missing or malformed manifest file. | Either the file `"manifest.json"` was not found in the specified location or there is something wrong with the file. To resolve the issue, ensure that the specified folder contains the manifest at the top-level, and double-check your commas, quotes and brackets.
-Manifest parsing error: `"content_scripts"` must define an array. | The field `"content_scripts"` should be an array. To resolve the issue, double-check your syntax. For example: `"content_scripts": [{"matches": [...],"css": [...],"js": [...] }]`
-Manifest parsing error: `"content_scripts"` must define value for `"matches"` property. | The property `"matches"` is required. To resolve the issue, specify the property’s value with an array of strings. For example: `"content_scripts": [ {... "matches": ["http://www.bing.com"] ...} ]`
-Manifest parsing error: `"content_scripts"` must reference at least one .css or .js file. | At least one property `"css"` or `"js"` is required. To resolve the issue, specify the property’s value with an array of strings. For example: `"content_scripts": [ { ... "js": ["myScript1.js", "myScript2.js"] ...} ]`
-Manifest parsing error: `"<field>"` must define value for "<property>" property. | The property `<property>` for the field `<field>` is required. To resolve the issue, specify a valid value for `<property>`.
-Manifest parsing error: `"content_scripts"` references invalid value for "run_at" field. | The property `"run_at"` specifies an unknown value. To resolve the issue, specify one of `"document_start"`, `"document_end"` or `"document_idle"`. For example: `"content_scripts": [ {... "run_at": "document_start" ... } ]`
-Manifest parsing error: Missing `"<field>"` field. | The field `<field>` is required. To resolve the issue, define the field with a valid value.
-Manifest parsing error: Invalid field `"<field1>"` found in `"<field2>"`. | The field <field1> for the field <field2> specifies an unknown value. To resolve the issue, specify a valid value for <field1>.
-Manifest parsing error: Invalid value for "<field>" field. | The field <field> specifies an unknown value. To resolve the issue, specify a valid value.
-Manifest parsing error: Extension is not supported by current version of Microsoft Edge. | The property `"minimum_edge_version"` specifies a more recent version of Microsoft Edge than the one you own. You can find the current version by opening the "..." (More) menu and then selecting "Settings" (bottom section "About this app"). To resolve the issue, either update your browser to a newer version or change the value in the manifest. For example: `"minimum_edge_version": "x.xxxx.xxxx.x"`
-Manifest parsing error: `"background"` must define value for "page" or "scripts" property. | The property "page" or "scripts" is required for the field "background". To resolve the issue, specify a string for "page" or an array of strings for "scripts". For example: `"background": { ... "scripts": ["background.js"] ... }`
-Manifest parsing error: `"background"` must define value for `"persistent"` property. | The property `"persistent"` is required. To resolve the issue, specify a true or false value. For example: `"background": {... "persistent": true ...}`
-Manifest parsing error: Only one `"browser_action"` or `"page_action"` can be defined. | An extension cannot define both a page action and a browser action at the same time. To resolve the issue, remove either one of the definitions.
-Unspecified error: `<error>` | Generic catch-all error message. `<error>` will be replaced by the specified error.
+清单分析错误：清单文件缺失或格式不正确。 | `"manifest.json"`在指定位置找不到文件，或者文件有错。 若要解决此问题，请确保指定的文件夹在顶级级别包含清单，并仔细检查逗号、引号和括号。
+清单分析错误： `"content_scripts"` 必须定义数组。 | 字段 `"content_scripts"` 应为数组。 若要解决此问题，请仔细检查语法。 例如： `"content_scripts": [{"matches": [...],"css": [...],"js": [...] }]`
+清单分析错误： `"content_scripts"` 必须定义属性的值 `"matches"` 。 | 属性 `"matches"` 是必需的。 若要解决此问题，请使用字符串数组指定该属性的值。 例如： `"content_scripts": [ {... "matches": ["http://www.bing.com"] ...} ]`
+清单分析错误： `"content_scripts"` 必须至少引用一个 .css 或 .js 文件。 | 至少有一个属性 `"css"` 或 `"js"` 需要。 若要解决此问题，请使用字符串数组指定该属性的值。 例如： `"content_scripts": [ { ... "js": ["myScript1.js", "myScript2.js"] ...} ]`
+清单分析错误： `"<field>"` 必须定义 " <property> " 属性的值。 | 字段的属性 `<property>` `<field>` 是必需的。 若要解决此问题，请为指定有效的值 `<property>` 。
+清单分析错误： `"content_scripts"` 引用的 "run_at" 字段的值无效。 | 该属性 `"run_at"` 指定未知值。 若要解决此问题，请指定其中一个 `"document_start"` `"document_end"` 或 `"document_idle"` 。 例如： `"content_scripts": [ {... "run_at": "document_start" ... } ]`
+清单分析错误：缺少 `"<field>"` 字段。 | 此字段 `<field>` 是必需的。 若要解决此问题，请使用有效的值定义字段。
+清单分析错误： `"<field1>"` 在中找到无效字段 `"<field2>"` 。 | 字段的字段 <field1> <field2> 指定未知值。 若要解决此问题，请为指定有效的值 <field1> 。
+清单分析错误： "" 字段的值无效 <field> 。 | 该字段 <field> 指定未知值。 若要解决此问题，请指定一个有效值。
+清单分析错误：当前版本的 Microsoft Edge 不支持扩展名。 | 该属性 `"minimum_edge_version"` 指定的 Microsoft Edge 版本比你拥有的版本更新。 可以通过打开 "..." (更多) 菜单，然后选择 "设置" (底部 "关于此应用" ) 来查找当前版本。 若要解决此问题，请将你的浏览器更新到较新版本或更改清单中的值。 例如： `"minimum_edge_version": "x.xxxx.xxxx.x"`
+清单分析错误： `"background"` 必须定义 "page" 或 "scripts" 属性的值。 | 字段 "background" 需要属性 "page" 或 "scripts"。 若要解决此问题，请为 "页面" 或 "脚本" 的字符串数组指定一个字符串。 例如： `"background": { ... "scripts": ["background.js"] ... }`
+清单分析错误： `"background"` 必须定义属性的值 `"persistent"` 。 | 属性 `"persistent"` 是必需的。 若要解决此问题，请指定 true 或 false 值。 例如： `"background": {... "persistent": true ...}`
+清单分析错误：只有一个 `"browser_action"` 或 `"page_action"` 可以定义。 | 扩展名不能同时定义页面操作和浏览器操作。 若要解决此问题，请删除其中一个定义。
+未指定的错误： `<error>` | 常规捕获-所有错误消息。 `<error>` 将替换为指定的错误。
 
 
-## 2. I don't see the "Load extension" button
-Until extensions are available via the Microsoft Store, this button *should* be visible by default. If you open the "More" (...) menu, select the "Extensions" menu item and don't see the button, follow these steps:
+## 2. 我看不到 "加载扩展" 按钮
+通过 Microsoft Store 可以使用扩展，默认情况下，此按钮 *应* 可见。 如果打开 "更多" ( ... ") 菜单中，选择" 扩展 "菜单项，但看不到该按钮，请按照下列步骤操作：
 
-1. In the address bar type **"about:flags"** and press the **"Enter"** key.
-2. Under the heading **"Developer settings"** make sure the checkbox next to **"Enable extension developer features"** is selected.
+1. 在地址栏中键入 **"关于：标志"** ，然后按 **"Enter"** 键。
+2. 在标题 **"开发人员设置"** 下，确保选中 **"启用扩展开发人员功能** " 旁边的复选框。
 
-   ![about flags](./media/aboutflags.PNG)  
+   ![关于标志](./media/aboutflags.PNG)  
 
-3. Close and re-open Microsoft Edge and check to see if the **"Load extension"** button is now visible.
+3. 关闭并重新打开 Microsoft Edge，查看 **"加载扩展"** 按钮是否可见。

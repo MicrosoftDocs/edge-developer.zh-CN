@@ -1,12 +1,12 @@
 ---
-description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
-title: Network Analysis reference
+description: Microsoft Edge DevTools 网络面板功能的全面参考。
+title: 网络分析参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 758623482ab2179987c6467f8e30c72d8893d710
 ms.sourcegitcommit: addfd27bb765c92880a59f259dc702f6e4e1bf28
 ms.translationtype: MT
@@ -28,62 +28,62 @@ ms.locfileid: "11092312"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Network Analysis reference  
+# 网络分析参考  
 
-Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.  
+了解在 Microsoft Edge DevTools 网络分析功能的这一全面参考中，分析页面加载方式的新方法。  
 
 <!--
 > [!NOTE]
 > This reference is based on Microsoft Edge 58.  If you use another version of Microsoft Edge, the UI, and features of DevTools may be different.  To verify which version of Microsoft Edge you are running, navigate to `edge://help`.  
 -->
 
-## Record network requests  
+## 记录网络请求  
 
-By default, DevTools record all network requests in the Network panel, so long as DevTools is open.  
+默认情况下，DevTools 在网络面板中记录所有网络请求，只要 DevTools 已打开。  
 
-:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="The Network panel" lightbox="../media/network-network-panel.msft.png":::
-   The **Network** panel  
+:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="网络面板" lightbox="../media/network-network-panel.msft.png":::
+   **网络**面板  
 :::image-end:::  
 
-### Stop recording network requests  
+### 停止记录网络请求  
 
-To stop recording requests, complete the following steps.  
+若要停止录制请求，请完成以下步骤。  
 
-1.  Select **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\) on the **Network** panel.  It turns grey to indicate that DevTools is no longer recording requests.  
-1.  Press `Control`+`E` \(Windows\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
+1.  选择 " **停止录制网络日志** \ (![ 停止 ][ImageRecordOnIcon] 在 **网络** 面板上记录网络日志 \ ) 。  它将变为灰色，指示 DevTools 不再录制请求。  
+1.  按 `Control` + `E` \ (Windows \ ) 或 `Command` + `E` \ (macOS \ ) ，同时**网络**面板处于焦点。  
 
-### Clear requests  
+### 清除请求  
 
-Select **Clear** \(![Clear][ImageClearIcon]\) on the Network panel to clear all requests from the Requests table.  
+选择 " **清除** ![ ][ImageClearIcon] 网络面板上的 \ (清除 \ ) "，清除 "请求" 表中的所有请求。  
 
-:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="The Network panel" lightbox="../media/network-network-clear-button.msft.png":::
-   The **Clear** button  
+:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="网络面板" lightbox="../media/network-network-clear-button.msft.png":::
+   " **清除** " 按钮  
 :::image-end:::  
 
-### Save requests across page loads  
+### 跨页面加载保存请求  
 
-To save requests across page loads, check the **Preserve log** checkbox on the Network panel.  DevTools saves all requests until you disable **Preserve log**.  
+若要在每个页面加载期间保存请求，请选中 "网络" 面板上的 " **保留日志** " 复选框。  DevTools 将保存所有请求，直到你禁用 **保留日志**。  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="The Network panel" lightbox="../media/network-network-preserve-log.msft.png":::
-   The **Preserve Log** checkbox  
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="网络面板" lightbox="../media/network-network-preserve-log.msft.png":::
+   " **保留日志** " 复选框  
 :::image-end:::  
 
-### Capture screenshots during page load  
+### 在页面加载期间捕获屏幕截图  
 
-Capture screenshots to analyze what displays for users while waiting for your page to load.  
+捕获屏幕截图，分析用户在等待加载页面时显示的内容。  
 
-To enable screenshots, select **Network settings** and select **Capture screenshots** checkbox on the **Network** panel.  
+若要启用屏幕截图，请选择 "**网络设置**"，然后选择**网络**面板上的 "**捕获屏幕截图**" 复选框  
 
-Refresh the page while the **Network** panel is in focus to capture screenshots.  
+在 " **网络** " 面板处于焦点时刷新页面以捕获屏幕截图。  
 
-After capturing a screenshot, you interact with it in the following ways.  
+捕获屏幕截图后，可通过以下方式与之交互。  
 
-*   Hover over a screenshot to view the point at which that screenshot was captured.  A yellow line is displayed on the **Overview** pane.  
-*   Select the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.  
-*   Double-click a thumbnail to zoom into it.  
+*   将鼠标悬停在屏幕截图上以查看捕获该屏幕截图的位置。  " **概述** " 窗格上将显示一个黄色线条。  
+*   选择屏幕的缩略图，以筛选出捕获屏幕截图后发生的任何请求。  
+*   双击缩略图以放大缩略图。  
 
-:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="The Network panel" lightbox="../media/network-network-screenshot-hover.msft.png":::
-   Hovering over a screenshot  
+:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="网络面板" lightbox="../media/network-network-screenshot-hover.msft.png":::
+   将鼠标悬停在屏幕截图上  
 :::image-end:::  
 
 <!--  ### Replay XHR request  -->
@@ -91,124 +91,124 @@ After capturing a screenshot, you interact with it in the following ways.
 <!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
 
 <!--  
-:::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="The Network panel" lightbox="../media/network-replay-xhr.msft.png":::
+:::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="网络面板" lightbox="../media/network-replay-xhr.msft.png":::
    Selecting Replay XHR  
 :::image-end:::  
 -->  
 
-## Change loading behavior  
+## 更改加载行为  
 
-### Emulate a first-time visitor by disabling the browser cache  
+### 通过禁用浏览器缓存来模拟首次访问者  
 
-To emulate how a first-time user experiences your site, check the **Disable cache** checkbox.  DevTools disables the browser cache.  This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.  
+若要模拟首次用户体验你的网站的情况，请选中 " **禁用缓存** " 复选框。  DevTools 禁用浏览器缓存。  此功能更准确地模拟了首次使用用户的体验，因为在重复访问时，将从浏览器缓存提供请求。  
 
-:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="The Network panel" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
-   The **Disable Cache** checkbox  
+:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="网络面板" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+   " **禁用缓存** " 复选框  
 :::image-end:::  
 
-#### Disable the browser cache from the Network Conditions drawer  
+#### 从网络条件抽屉中禁用浏览器缓存  
 
-If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer.  
+如果想要在其他 DevTools 面板中工作时禁用缓存，请使用网络条件抽屉。  
 
-1.  Open the **Network Conditions** drawer.  
-1.  Check or uncheck the **Disable cache** checkbox.  
+1.  打开 **网络条件** 抽屉。  
+1.  选中或取消选中 " **禁用缓存** " 复选框。  
 
 <!--todo: add network condition section when available -->  
 
-### Manually clear the browser cache  
+### 手动清除浏览器缓存  
 
-To manually clear the browser cache at any time, open the contextual menu \(right-click\) anywhere in the Requests table and select **Clear Browser Cache**.  
+若要随时手动清除浏览器缓存，请打开上下文菜单 \ (右键单击 "请求" 表中的任意位置的 "\ ) "，然后选择 " **清除浏览器缓存**"。  
 
-:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="The Network panel" lightbox="../media/network-network-clear-browser-cache.msft.png":::
-   Selecting **Clear Browser Cache**  
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="网络面板" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+   选择 "**清除浏览器缓存**"  
 :::image-end:::  
 
-### Emulate offline  
+### 模拟脱机  
 
-A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps], functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.  
+新的 web 应用类（名为 " [渐进式 Web 应用][DevtoolsProgressiveWebApps]"）使用 **服务工作人员**帮助脱机工作。  你可能会发现，在你构建此类型的应用时，快速模拟没有数据连接的设备非常有用。  
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Select the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate an offline network experience.  
+选择 " **联机** " 下拉菜单，在 " **预置**" 下搜索，然后选择 " **脱机** " 以模拟脱机网络体验。  
 
-:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="The Network panel" lightbox="../media/network-network-offline-dropdown.msft.png":::
-   The **Offline** dropdown menu  
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="网络面板" lightbox="../media/network-network-offline-dropdown.msft.png":::
+   " **脱机** " 下拉菜单  
 :::image-end:::  
 
-### Emulate slow network connections  
+### 模拟慢速网络连接  
 
-Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdown menu.  
+从 " **联机** " 下拉菜单中模拟慢速3G、快速3g 和其他连接速度。  
 
-:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="The Network panel" lightbox="../media/network-network-throttling-menu.msft.png":::
-   The **Throttling** dropdown menu  
+:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="网络面板" lightbox="../media/network-network-throttling-menu.msft.png":::
+   **限制**下拉菜单  
 :::image-end:::  
 
-You may select from different presets, such as Slow 3G or Fast 3G.  You may also add your own custom presets by opening the Throttling menu and selecting **Custom** > **Add**.  
+您可以从不同的预设（如 "低速 3G" 或 "快速 3G"）中进行选择。  您也可以通过打开 "限制" 菜单并选择 "**自定义**添加" 来添加自己的自定义预设  >  **Add**。  
 
-DevTools displays a warning icon next to the **Network** tab to remind you that throttling is enabled.  
+DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你已启用限制。  
 
-#### Emulate slow network connections from the Network Conditions drawer  
+#### 从网络条件抽屉中模拟慢速网络连接  
 
-If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.  
+如果您希望在其他 DevTools 面板中工作时限制网络连接，请使用网络条件抽屉。  
 
-1.  Open the **Network Conditions** drawer.  
-1.  Select your connection speed from the **Throttling** menu.  
+1.  打开 **网络条件** 抽屉。  
+1.  从 " **限制** " 菜单中选择连接速度。  
 
 <!--todo: add network condition section when available -->  
 
-### Manually clear browser cookies  
+### 手动清除浏览器 cookie  
 
-To manually clear browser cookies at any time, open the contextual menu \(right-click\) anywhere in the Requests table and select **Clear Browser Cookies**.  
+若要随时手动清除浏览器 cookie，请打开上下文菜单 \ (右键单击 "请求" 表中的任意位置的 "\ ) "，然后选择 " **清除浏览器 cookie**"。  
 
-:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="The Network panel" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
-   Selecting **Clear Browser Cookies**  
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="网络面板" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+   选择 "**清除浏览器 cookie** "  
 :::image-end:::  
 
-### Override the user agent  
+### 替代用户代理  
 
-To manually override the user agent, use the following steps.  
+若要手动替代用户代理，请使用以下步骤。  
 
-1.  Open the **Network Conditions** drawer.  
-1.  Uncheck **Select automatically**.  
-1.  Choose a user agent option from the menu, or enter a custom one in the text box.  
+1.  打开 **网络条件** 抽屉。  
+1.  取消选中 " **自动**"。  
+1.  从菜单中选择用户代理选项，或在文本框中输入自定义选项。  
 
 <!--todo: add network condition section when available -->  
 
-## Filter requests  
+## 筛选请求  
 
-### Filter requests by properties  
+### 按属性筛选请求  
 
-Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.  
+使用 " **筛选** " 文本框筛选按属性（如请求的域或大小）的请求。  
 
-If the text box is not displayed, the **Filters** pane is probably hidden.  
-For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).  
+如果未显示文本框，则 " **筛选器** " 窗格可能处于隐藏状态。  
+有关详细信息，请导航到 ["隐藏筛选器" 窗格](#hide-the-filters-pane)。  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="The Network panel" lightbox="../media/network-network-filters-textbox.msft.png":::
-   The **Filter** text box  
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="网络面板" lightbox="../media/network-network-filters-textbox.msft.png":::
+   " **筛选器** " 文本框  
 :::image-end:::  
 
-You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
+你可以通过使用空格分隔每个属性来同时使用多个属性。  例如， `mime-type:image/png larger-than:1K` 显示大于 1 kb 的所有 PNGs。  多属性筛选器等效于 `AND` 操作。  `OR` 当前不支持操作。  
 
-The complete list of supported properties.  
+受支持的属性的完整列表。  
 
-| Property | Details |  
+| 属性 | 详细信息 |  
 |:--- | :--- |  
-| `domain` | Only display resources from the specified domain.  You may use a wildcard character \(`*`\) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populate the autocomplete dropdown menu with all of the domains that are found. |  
-| `has-response-header` | Displays the resources that contain the specified HTTP response header.  DevTools populate the autocomplete dropdown with all of the response headers that are found. |  
-| `is` | Use `is:running` to find `WebSocket` resources. |  
-| `larger-than` | Displays resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |  
-| `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populate the dropdown with all of the HTTP methods  that are found. |  
-| `mime-type` | Displays resources of a specified MIME type.  DevTools populate the dropdown with all MIME types  that are found. |  
-| `mixed-content` | Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\). |  
-| `scheme` | Displays resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\). |  
-| `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populate the autocomplete with all of the cookie domains that are found. |  
-| `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populate the autocomplete with all of the cookie names that are found. |  
-| `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |  
-| `status-code` | Displays resources that match the specific HTTP status code.  DevTools populates the autocomplete dropdown menu with all of the status codes that are found. |  
+| `domain` | 仅显示指定域中的资源。  您可以使用通配符 \ (`*` \ ) 包含多个域。  例如， `*.com` 显示所有以结尾的域名的资源 `.com` 。  DevTools 将填充 "自动完成" 下拉菜单，其中包含找到的所有域。 |  
+| `has-response-header` | 显示包含指定的 HTTP 响应标头的资源。  DevTools 将通过找到的所有响应标题填充 "自动完成" 下拉列表。 |  
+| `is` | 用于 `is:running` 查找 `WebSocket` 资源。 |  
+| `larger-than` | 显示大于指定大小（以字节为单位）的资源。  设置值 `1000` 等效于将值设置为 `1k` 。 |  
+| `method` | 显示通过指定的 HTTP 方法类型检索的资源。  DevTools 将通过找到的所有 HTTP 方法填充下拉列表。 |  
+| `mime-type` | 显示指定 MIME 类型的资源。  DevTools 将通过找到的所有 MIME 类型填充下拉列表。 |  
+| `mixed-content` | 显示所有混合内容资源 \ (`mixed-content:all` \ ) 或仅显示当前显示的 \ (`mixed-content:displayed` \ ) 的资源。 |  
+| `scheme` | 显示通过未受保护的 HTTP \ (`scheme:http` \ ) 或受保护的 HTTPS \ (`scheme:https` \ ) 检索的资源。 |  
+| `set-cookie-domain` | 显示具有 `Set-Cookie` 与指定值匹配的属性的标题的资源 `Domain` 。  DevTools 将通过找到的所有 cookie 域填充自动完成功能。 |  
+| `set-cookie-name` | 显示具有 `Set-Cookie` 与指定值匹配的名称的标题的资源。  DevTools 将通过找到的所有 cookie 名称填充记忆式键入。 |  
+| `set-cookie-value` | 显示具有 `Set-Cookie` 与指定值匹配的值的标题的资源。  DevTools 将通过找到的所有 cookie 值填充记忆式键入。 |  
+| `status-code` | 显示与特定 HTTP 状态代码匹配的资源。  DevTools 将填充 "自动完成" 下拉菜单，其中包含找到的所有状态代码。 |  
 
-### Filter requests by type  
+### 按类型筛选请求  
 
-To filter requests by request type, select the one of the following buttons on the **Network** panel.  
+若要按请求类型筛选请求，请选择 " **网络** " 面板上的以下按钮之一。  
 
 :::row:::
    :::column span="1":::
@@ -244,7 +244,7 @@ To filter requests by request type, select the one of the following buttons on t
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Media**  
+      **媒体**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -252,7 +252,7 @@ To filter requests by request type, select the one of the following buttons on t
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Font**  
+      **字体**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -260,7 +260,7 @@ To filter requests by request type, select the one of the following buttons on t
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Doc**  
+      **首**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -268,7 +268,7 @@ To filter requests by request type, select the one of the following buttons on t
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **WS**  
+      **WS-TRUST**  
    :::column-end:::
    :::column span="2":::
       WebSocket.  
@@ -276,7 +276,7 @@ To filter requests by request type, select the one of the following buttons on t
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Manifest**  
+      **部件**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -287,199 +287,199 @@ To filter requests by request type, select the one of the following buttons on t
       **Other**  
    :::column-end:::
    :::column span="2":::
-      Any other type not listed.  
+      未列出任何其他类型。  
    :::column-end:::
 :::row-end:::  
 
-If the buttons do not display, the **Filters** pane may be hidden.  
-For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).  
+如果未显示按钮，则 " **筛选器** " 窗格可能处于隐藏状态。  
+有关详细信息，请导航到 ["隐藏筛选器" 窗格](#hide-the-filters-pane)。  
 
-To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then select.  
+若要同时启用多个类型筛选器，请按住 `Control` (Windows \ ) 或 `Command` \ (macOS \ ) 然后选择。  
 
-:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="The Network panel" lightbox="../media/network-network-type-filters.msft.png":::
-   Using the Type filters to display JS, CSS, and Document resources  
+:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="网络面板" lightbox="../media/network-network-type-filters.msft.png":::
+   使用类型筛选器显示 JS、CSS 和文档资源  
 :::image-end:::  
 
-### Filter requests by time  
+### 按时间筛选请求  
 
-Select and drag left or right on the Overview pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.  
+在 "概述" 窗格中选择并向左或向右拖动，以仅显示在该时间范围内处于活动状态的请求。  筛选器是包含的。  显示在突出显示的时间内处于活动状态的任何请求。  
 
-:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="The Network panel" lightbox="../media/network-network-overview-filter.msft.png":::
-   Filtering out any requests that were inactive around 300 ms  
+:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="网络面板" lightbox="../media/network-network-overview-filter.msft.png":::
+   筛选出 300 ms 周围处于非活动状态的任何请求  
 :::image-end:::  
 
-### Hide data URLs  
+### 隐藏数据 Url  
 
-[Data URLs][MDNHTTPDataURIs] are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.  
+[数据 url][MDNHTTPDataURIs] 是嵌入到其他文档中的小文件。  "请求" 表中显示的以数据 URL 开头的任何请求 `data:` 。  
 
-Check the **Hide data URLs** checkbox to hide the requests.  
+选中 " **隐藏数据 url** " 复选框以隐藏请求。  
 
-:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="The Network panel" lightbox="../media/network-network-hide-data-urls.msft.png":::
-   The **Hide Data URLs** checkbox  
+:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="网络面板" lightbox="../media/network-network-hide-data-urls.msft.png":::
+   " **隐藏数据 url** " 复选框  
 :::image-end:::  
 
-## Sort requests  
+## 排序请求  
 
-By default, the requests in the Requests table are sorted by initiation time, but you may sort the table using other criteria.  
+默认情况下，请求表中的请求按初始时间排序，但你可以使用其他条件对表进行排序。  
 
-### Sort by column  
+### 按列排序  
 
-Select the header of any column in the Requests to sort requests by that column.  
+选择请求中的任何列的标题，对该列的请求进行排序。  
 
-### Sort by activity phase  
+### 按活动阶段排序  
 
-To change how the Waterfall sorts requests, hover on the header of the Requests table, open the contextual menu \(right-click\), hover over **Waterfall**, and select one of the following options.  
+若要更改瀑布对请求的排序方式，请将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ (右键单击 "\ ) "，将鼠标悬停在 **瀑布**上，然后选择下列选项之一。  
 
 :::row:::
    :::column span="1":::
-      **Start Time**  
+      **开始时间**  
    :::column-end:::
    :::column span="2":::
-      The first request that was initiated is at the top.  
+      启动的第一个请求位于顶部。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Response Time**  
+      **响应时间**  
    :::column-end:::
    :::column span="2":::
-      The first request that started downloading is at the top.  
+      开始下载的第一个请求位于顶部。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **End Time**  
+      **结束时间**  
    :::column-end:::
    :::column span="2":::
-      The first request that finished is at the top.  
+      第一个已完成的请求位于顶部。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Total Duration**  
+      **总工期**  
    :::column-end:::
    :::column span="2":::
-      The request with the shortest connection settings and request or response is at the top.  
+      具有最短连接设置和请求或响应的请求位于顶部。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Latency**  
+      **滞后**  
    :::column-end:::
    :::column span="2":::
-      The request that waited the shortest time for a response is at the top.  
+      等待响应时间最短的请求位于最前面。  
    :::column-end:::
 :::row-end:::  
 
-These descriptions assume that each respective option is ranked from shortest to longest.  Selecting the header of the **Waterfall** column reverses the order.  
+这些说明假定每个各自的选项均按最短到最长的排序。  选择 **瀑布** 栏的标题将反转顺序。  
 
-:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="The Network panel" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   Sorting the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)  
+:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="网络面板" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
+   按总工期对瀑布图排序 \ (每个条形图的较亮部分是等待的时间，较暗的部分是下载字节所花费的时间 \ )   
 :::image-end:::  
 
-## Analyze requests  
+## 分析请求  
 
-So long as DevTools are open, it logs all requests in the Network panel.  
-Use the Network panel to analyze requests.  
+只要 DevTools 打开，它就会在 "网络" 面板中记录所有请求。  
+使用 "网络" 面板分析请求。  
 
-### View a log of requests  
+### 查看请求日志  
 
-Use the Requests table to view a log of all requests made while DevTools have been open.  Selecting or hovering over requests reveals more information about each item.  
+使用 "请求" 表查看在 DevTools 打开时发出的所有请求的日志。  选择或悬停的请求将显示有关每个项目的详细信息。  
 
-:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-table.msft.png":::
-   The Requests table  
+:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-table.msft.png":::
+   请求表  
 :::image-end:::  
 
-The Requests table displays the following columns by default.  
+"请求" 表默认情况下显示以下列。  
 
 :::row:::
    :::column span="1":::
-      **Name**  
+      **名称**  
    :::column-end:::
    :::column span="2":::
-      The filename of, or an identifier for, the resource.  
+      资源的文件名或标识符。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Status**  
+      **状态**  
    :::column-end:::
    :::column span="2":::
-      The HTTP status code.  
+      HTTP 状态代码。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Type**  
+      **类型**  
    :::column-end:::
    :::column span="2":::
-      The MIME type of the requested resource.  
+      所请求的资源的 MIME 类型。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Initiator**  
+      **启动**  
    :::column-end:::
    :::column span="2":::
-      The following objects or processes initiate requests.  
+      以下对象或进程启动请求。  
       
-      *   **Parser**  The HTML parser for Microsoft Edge.  
-      *   **Redirect**  An HTTP redirect.  
-      *   **Script**  A JavaScript function.  
-      *   **Other**  Some other process or action, such as navigating to a page using a link or entering a URL in the address bar.  
+      *   **分析**  程序 Microsoft Edge 的 HTML 分析程序。  
+      *   **重定向**  HTTP 重定向。  
+      *   **脚本**  JavaScript 函数。  
+      *   **其他**  某些其他进程或操作，例如，使用链接导航到页面或在地址栏中输入 URL。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Size**  
+      **大小**  
    :::column-end:::
    :::column span="2":::
-      The combined size of the response headers plus the response body, as delivered by the server.  
+      由服务器发送的响应标题和响应正文的合并大小。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Time**  
+      **时间**  
    :::column-end:::
    :::column span="2":::
-      The total duration, from the start of the request to the receipt of the final byte in the response.  
+      从请求开始到响应中最后一个字节的接收的总持续时间。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Waterfall](#view-the-timing-relationship-of-requests)  
+      [瀑布](#view-the-timing-relationship-of-requests)  
    :::column-end:::
    :::column span="2":::
-      A visual breakdown of the activity for each request.  
+      每个请求的活动的可视化细目。  
    :::column-end:::
 :::row-end:::  
 
-#### Add or remove columns  
+#### 添加或删除列  
 
-Hover on the header of the Requests table, open the contextual menu \(right-click\), and select an option to hide or show it.  Currently displayed options have checkmarks next to each item.  
+将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择一个选项以隐藏或显示它。  当前显示的选项在每个项目旁边都有复选标记。  
 
-:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-add-column.msft.png":::
-   Adding a column to the Requests table  
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-add-column.msft.png":::
+   将列添加到 "请求" 表  
 :::image-end:::  
 
-#### Add custom columns  
+#### 添加自定义列  
 
-To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and select **Response Headers** > **Manage Header Columns**.  
+若要向 "请求" 表添加自定义列，请将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 "**响应标题**"  >  **管理标题列**。  
 
-:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-add-custom.msft.png":::
-   Adding a custom column to the Requests table  
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-add-custom.msft.png":::
+   向请求表添加自定义列  
 :::image-end:::  
 
-### View the timing relationship of requests  
+### 查看请求的计时关系  
 
-Use the Waterfall to view the timing relationships of requests.  
-The default organization of the Waterfall uses the start time of the requests.  
-So, requests that are farther to the left started earlier than the requests that are farther to the right.  
+使用瀑布图查看请求的计时关系。  
+瀑布图的默认组织使用请求的开始时间。  
+因此，比右侧更远的请求更早地开始向左的请求。  
 
-To review the different ways that you may sort the Waterfall, navigate to [Sort by activity phase](#sort-by-activity-phase).  
+若要查看可对瀑布图排序的不同方式，请导航到 " [按活动排序" 阶段](#sort-by-activity-phase)。  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-waterfall.msft.png":::
-   The Waterfall column of the **Requests** pane  
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-waterfall.msft.png":::
+   " **请求** " 窗格的瀑布栏  
 :::image-end:::  
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
@@ -492,7 +492,7 @@ To review the different ways that you may sort the Waterfall, navigate to [Sort 
 To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Network panel" lightbox="../media/network-frames.msft.png":::
+:::image type="complex" source="../media/network-frames.msft.png" alt-text="网络面板" lightbox="../media/network-frames.msft.png":::
    The **Frames** tab  
 :::image-end:::  
 -->
@@ -510,267 +510,267 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 *   WebSocket opcodes are light-yellow.  
 *   Errors are light-red.  -->
 
-### View a preview of a response body  
+### 查看答复正文的预览  
 
-To view a preview of a response body, use the following steps.  
+若要查看响应正文的预览，请使用以下步骤。  
 
-1.  Select the URL of the request, under the **Name** column of the Requests table.  
-1.  Select the **Preview** tab.  
+1.  在 "请求" 表的 " **名称** " 列下，选择请求的 URL。  
+1.  选择 " **预览** " 选项卡。  
 
-This tab is mostly useful for viewing images.  
+此选项卡最适用于查看图像。  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-preview.msft.png":::
-   The **Preview** tab  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-preview.msft.png":::
+   " **预览** " 选项卡  
 :::image-end:::  
 
-### View a response body  
+### 查看答复正文  
 
-To view the response body to a request, use the following steps.  
+若要查看请求的响应正文，请使用以下步骤。  
 
-1.  Select the URL of the request, under the **Name** column of the Requests table.  
-1.  Select the **Response** tab.  
+1.  在 "请求" 表的 " **名称** " 列下，选择请求的 URL。  
+1.  选择 " **响应** " 选项卡。  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-response.msft.png":::
-   The **Response** tab  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-response.msft.png":::
+   " **响应** " 选项卡  
 :::image-end:::  
 
-### View HTTP headers  
+### 查看 HTTP 标头  
 
-To view HTTP header data about a request, use the following steps.  
+若要查看有关请求的 HTTP 标头数据，请使用以下步骤。  
 
-1.  Select the URL of the request, under the **Name** column of the Requests table.  
-1.  Select the **Headers** tab.  
+1.  在 "请求" 表的 " **名称** " 列下，选择请求的 URL。  
+1.  选择 " **页眉** " 选项卡。  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="The Network panel" lightbox="../media/network-resources-headers.msft.png":::
-   The **Headers** tab  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="网络面板" lightbox="../media/network-resources-headers.msft.png":::
+   " **页眉** " 选项卡  
 :::image-end:::  
 
-#### View HTTP header source  
+#### 查看 HTTP 域名源  
 
-By default, the Headers tab shows header names alphabetically.  To view the HTTP header names in the order received, use the following steps.  
+默认情况下，"页眉" 选项卡按字母顺序显示标题名称。  若要查看收到的订单中的 HTTP 标头名称，请使用以下步骤。  
 
-1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [View HTTP headers](#view-http-headers).  
-1.  Select **view source**, next to the **Request Header** or **Response Header** section.  
+1.  打开您感兴趣的请求的 " **标题** " 选项卡。  有关详细信息，请导航到 " [查看 HTTP 标题](#view-http-headers)"。  
+1.  选择 "**请求标头**" 或 "**响应标题**" 部分旁边的 "**查看源**"。  
 
-### View query string parameters  
+### 查看查询字符串参数  
 
-To view the query string parameters of a URL in a human-readable format, use the following steps.  
+若要以可读格式查看 URL 的查询字符串参数，请使用以下步骤。  
 
-1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [View HTTP headers](#view-http-headers).  
-1.  Go to the **Query String Parameters** section.  
+1.  打开您感兴趣的请求的 " **标题** " 选项卡。  有关详细信息，请导航到 " [查看 HTTP 标题](#view-http-headers)"。  
+1.  转到 " **查询字符串参数** " 部分。  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
-   The **Query String Parameters** section  
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+   " **查询字符串参数** " 部分  
 :::image-end:::  
 
-#### View query string parameters source  
+#### 查看查询字符串参数源  
 
-To view the query string parameter source of a request, use the following steps.  
+若要查看请求的查询字符串参数源，请使用以下步骤。  
 
-1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
-1.  Select **view source**.  
+1.  转到 "查询字符串参数" 部分。  有关详细信息，请导航到 [查看查询字符串参数](#view-query-string-parameters)。  
+1.  选择 " **查看源**"。  
 
-#### View URL-encoded query string parameters  
+#### 查看 URL 编码查询字符串参数  
 
-To view query string parameters in a human-readable format, but with encodings preserved, use the following steps.  
+若要以可读格式查看查询字符串参数，但保留编码，请使用以下步骤。  
 
-1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
-1.  Select **view URL encoded**.  
+1.  转到 "查询字符串参数" 部分。  有关详细信息，请导航到 [查看查询字符串参数](#view-query-string-parameters)。  
+1.  选择 " **查看 URL 编码**"。  
 
-### View cookies  
+### 查看 cookie  
 
-To view the cookies sent in the HTTP header of a request, use the following steps.  
+若要查看在请求的 HTTP 头中发送的 cookie，请使用以下步骤。  
 
-1.  Select the URL of the request, under the **Name** column of the Requests table.  
-1.  Select the **Cookies** tab.  
+1.  在 "请求" 表的 " **名称** " 列下，选择请求的 URL。  
+1.  选择 " **cookie** " 选项卡。  
 
 <!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-cookies.msft.png":::
-   The Cookies tab  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-cookies.msft.png":::
+   "Cookie" 选项卡  
 :::image-end:::  
 
-### View the timing breakdown of a request  
+### 查看请求的计时细目  
 
-To view the timing breakdown of a request, use the following steps.  
+若要查看请求的计时细目，请使用以下步骤。  
 
-1.  Select the URL of the request, under the **Name** column of the Requests table.  
-1.  Select the **Timing** tab.  
+1.  在 "请求" 表的 " **名称** " 列下，选择请求的 URL。  
+1.  选择 " **计时** " 选项卡。  
 
-For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).  
+若要以更快的方式访问数据，请导航到 " [预览计时分析](#preview-a-timing-breakdown)"。  
 
-For more information about each of the phases that may be displayed in the **Timing** tab, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).  
+有关 " **计时** " 选项卡中可能显示的每个阶段的详细信息，请导航到 " [计时分解" 阶段](#timing-breakdown-phases-explained)。  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-timing.msft.png":::
-   The **Timing** tab  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-timing.msft.png":::
+   " **计时** " 选项卡  
 :::image-end:::  
 
-More information about each of the phases.  
+有关每个阶段的详细信息。  
 
-For more information about accessing the view, navigate to [View timing breakdown](#view-the-timing-breakdown-of-a-request).  
+有关访问视图的详细信息，请导航到 [查看计时细目](#view-the-timing-breakdown-of-a-request)。  
 
-#### Preview a timing breakdown  
+#### 预览计时细目  
 
-To view a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.  
+若要查看请求的计时分解的预览，请在 "请求" 表的 " **瀑布** 图" 列中，将鼠标悬停在请求的条目上。  
 
-For more information about how to access the data without hovering, navigate to [View the timing breakdown of a request](#view-the-timing-breakdown-of-a-request).  
+有关如何在没有悬停的情况下访问数据的详细信息，请导航以 [查看请求的计时细目](#view-the-timing-breakdown-of-a-request)。  
 
-:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
-   Previewing the timing breakdown of a request  
+:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+   预览请求的计时细目  
 :::image-end:::  
 
-#### Timing breakdown phases explained  
+#### 已解释的计时分解阶段  
 
-More information about each of the phases that may display in the **Timing** tab.  
+有关可能在 " **计时** " 选项卡中显示的每个阶段的详细信息。  
 
 :::row:::
    :::column span="1":::
-      **Queueing**  
+      **入**  
    :::column-end:::
    :::column span="2":::
-      The browser queues requests when any of the following are true.  
-      *   Higher priority requests exist.  
-      *   Six TCP connections are open for the same origin, which is the limit.  Applies to HTTP/1.0 and HTTP/1.1 only.  
-      *   The browser is briefly allocating space in the disk cache.  
+      当以下任何条件为 true 时，浏览器将请求排队。  
+      *   存在更高优先级的请求。  
+      *   对于相同的原点，6个 TCP 连接是开放的，这是限制。  仅适用于 HTTP/1.0 和 HTTP/1.1。  
+      *   浏览器在磁盘缓存中短暂分配空间。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Stalled**  
+      **停止**  
    :::column-end:::
    :::column span="2":::
-      The request is stalled for any of the reasons described in **Queueing**.  
+      由于 " **排队**" 中所述的任何原因，请求停止。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **DNS Lookup**  
+      **DNS 查找**  
    :::column-end:::
    :::column span="2":::
-      The browser is resolving the IP address for the request.  
+      浏览器正在解析请求的 IP 地址。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Initial connection**  
+      **初始连接**  
    :::column-end:::
    :::column span="2":::
-      The browser establishes a connection including TCP handshakes, TCP retries, and negotiates a Secure Socket Layer.
+      浏览器建立一个连接，包括 TCP 握手、TCP 重试以及协商安全套接字层。
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Proxy negotiation**  
+      **代理协商**  
    :::column-end:::
    :::column span="2":::
-      The browser is negotiating the request with a [proxy server][WikiProxyServer].  
+      浏览器正使用 [代理服务器][WikiProxyServer]协商请求。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Request sent**  
+      **请求已发送**  
    :::column-end:::
    :::column span="2":::
-      The request is being sent.  
+      正在发送请求。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **ServiceWorker Preparation**  
+      **ServiceWorker 准备**  
    :::column-end:::
    :::column span="2":::
-      The browser is starting the service worker.  
+      浏览器正在启动服务工作人员。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Request to ServiceWorker**  
+      **请求 ServiceWorker**  
    :::column-end:::
    :::column span="2":::
-      The request is being sent to the service worker.  
+      请求将发送给服务工作人员。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Waiting \(TTFB\)**  
+      **正在等待 \ (TTFB \ ) **  
    :::column-end:::
    :::column span="2":::
-      The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes one round trip of latency and the time the server took to prepare the response.  
+      浏览器正在等待响应的第一个字节。  TTFB 代表第一个字节的时间。  此定时包括延迟的一次往返行程，以及服务器准备响应的时间。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Content Download**  
+      **内容下载**  
    :::column-end:::
    :::column span="2":::
-      The browser is receiving the response.  
+      浏览器正在接收响应。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Receiving Push**  
+      **接收推送**  
    :::column-end:::
    :::column span="2":::
-      The browser is receiving data for this response via HTTP/2 Server Push.  
+      浏览器正在通过 HTTP/2 服务器推送接收此响应的数据。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Reading Push**  
+      **正在读取推送**  
    :::column-end:::
    :::column span="2":::
-      The browser is reading the local data previously received.  
+      浏览器正在读取以前收到的本地数据。  
    :::column-end:::
 :::row-end:::  
 
-### View initiators and dependencies  
+### 查看启动器和相关性  
 
-To view the initiators and dependencies of a request, hold `Shift`and hover over the request in the Requests table.  DevTools colors: initiators are shown in green and dependencies are shown in red.  
+若要查看请求的发起程序和依赖关系，请 `Shift` 在请求表中保留并悬停请求。  DevTools 颜色：启动器显示为绿色，相关性显示为红色。  
 
-:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
-   Viewing the initiators and dependencies of a request  
+:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
+   查看请求的发起人和相关性  
 :::image-end:::  
 
-When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.  
+当按时间顺序对请求表进行排序时，如果将鼠标悬停在一行上，它前面的一行将显示绿色请求。  绿色请求是依赖方的发起者。  如果行上显示了另一个绿色请求，则该请求就是发起方的发起方。  以此类推。  
 
-### View load events  
+### 查看加载事件  
 
-DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the Network panel.  The `DOMContentLoaded` event is colored blue, and the `load` event is red.  
+DevTools 显示 `DOMContentLoaded` `load` 网络面板上多个位置的和事件的计时。  `DOMContentLoaded`事件颜色为蓝色， `load` 事件为红色。  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-load-events.msft.png":::
-   The locations of the `DOMContentLoaded` and `load` events on the Network panel  
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-load-events.msft.png":::
+   " `DOMContentLoaded` `load` 网络" 面板上的 "和" 事件的位置  
 :::image-end:::  
 
-### View the total number of requests  
+### 查看请求总数  
 
-The total number of requests is listed in the Summary pane, at the bottom of the Network panel.  
+请求总数将列在 "摘要" 窗格中的 "网络" 面板底部。  
 
 > [!CAUTION]
-> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests are not counted.  
+> 此号码仅跟踪自 DevTools 打开以来已记录的请求。  如果在 DevTools 打开之前发生了其他请求，则不会对这些请求进行计数。  
 
-:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="The Network panel" lightbox="../media/network-network-total-requests.msft.png":::
-   The total number of requests since DevTools were opened  
+:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="网络面板" lightbox="../media/network-network-total-requests.msft.png":::
+   自 DevTools 打开以来的请求总数  
 :::image-end:::  
 
-### View the total download size  
+### 查看总下载大小  
 
-The total download size of requests is listed in the Summary pane, at the bottom of the Network panel.  
+请求的总下载大小列在 "摘要" 窗格中的 "网络" 面板底部。  
 
 > [!CAUTION]
-> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests are not counted.  
+> 此号码仅跟踪自 DevTools 打开以来已记录的请求。  如果在 DevTools 打开之前发生了其他请求，则不会对以前的请求进行计数。  
 
-:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="The Network panel" lightbox="../media/network-network-total-download-size.msft.png":::
-   The total download size of requests  
+:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="网络面板" lightbox="../media/network-network-total-download-size.msft.png":::
+   请求的总下载大小  
 :::image-end:::  
 
-To verify how large resources are after the browser uncompresses each item, navigate to [View the uncompressed size of a resource](#view-the-uncompressed-size-of-a-resource).  
+若要验证在浏览器 uncompresses 每个项目之后是否有多大资源，请导航到 ["查看资源的未压缩大小"](#view-the-uncompressed-size-of-a-resource)。  
 
-### View the stack trace that caused a request  
+### 查看导致请求的堆栈跟踪  
 
-After a JavaScript statement requests a resource, hover over the **Initiator** column to view the stack trace leading up to the request.  
+在 JavaScript 语句请求资源后，将鼠标悬停在 **发起程序** 列上以查看该请求的最后一个堆栈跟踪。  
 
 <!-- [codepen.io/contoso/pen/yLBrOWa?editors=0010#0](https://codepen.io/contoso/pen/yLBrOWa?editors=0010#0) -->  
 
@@ -788,60 +788,60 @@ init();
 ```  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
-   The stack trace leading up to a resource request  
+:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+   堆栈跟踪导致资源请求  
 :::image-end:::  
 
-### View the uncompressed size of a resource  
+### 查看资源的未压缩大小  
 
-Select the **Use large request rows** checkbox and then look at the bottom value of the **Size** column.  
+选中 " **使用大型请求行** " 复选框，然后查看 " **大小** " 列的底部值。  
 
-:::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
-   An example of uncompressed resources  \(The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`\)  
+:::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
+   已解压缩资源的示例 (`jquery-3.3.1.min.js` 通过网络发送的文件的压缩大小是 `29.9 KB` ，而未压缩的大小为 `84.9 KB` \ )   
 :::image-end:::  
 
-## Export requests data  
+## 导出请求数据  
 
-### Save all network requests to a HAR file  
+### 将所有网络请求保存到 HAR 文件  
 
-To save all network requests to a HAR file, complete the following steps.  
+若要将所有网络请求保存到 HAR 文件，请完成以下步骤。  
 
-1.  Hover on any request in the Requests table and open the contextual menu \(right-click\).  
-1.  Select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.  
+1.  将鼠标悬停在请求表中的任何请求并打开上下文菜单 \ (右键单击 \ ) 。  
+1.  选择 " **另存为 HAR 和内容**"。  DevTools 将打开 DevTools 后出现的所有请求保存到 HAR 文件。  您无法筛选请求。  您也无法保存单个请求。  
 
-Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.  
+保存 HAR 文件后，可将其导入 DevTools 进行分析。  只需将 HAR 文件拖放到 "请求" 表中。  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
 
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-save-har-content.msft.png":::
-   Selecting **Save as HAR with Content**  
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+   选择 "**另存为 HAR 和内容**"  
 :::image-end:::  
 
-### Copy one or more requests to the clipboard  
+### 将一个或多个请求复制到剪贴板  
 
-Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover over **Copy**, and select one of the following options.  
+在 "请求" 表的 " **名称** " 列下，将鼠标悬停在请求上，打开上下文菜单 \ (右键单击 "\ ) "，将鼠标悬停在 " **复制**" 上，然后选择下列选项之一。  
 
 :::row:::
    :::column span="1":::
-      **Copy Link Address**  
+      **复制链接地址**  
    :::column-end:::
    :::column span="2":::
-      Copy the URL of the request to the clipboard.  
+      将请求的 URL 复制到剪贴板。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Copy Response**  
+      **复制答复**  
    :::column-end:::
    :::column span="2":::
-      Copy the response body to the clipboard.  
+      将响应正文复制到剪贴板。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Copy as Fetch**  
+      **复制为提取**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -849,15 +849,15 @@ Under the **Name** column of the Requests table, hover on a request, open the co
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Copy as cURL**  
+      **复制为卷曲**  
    :::column-end:::
    :::column span="2":::
-      Copy the request as a cURL command.  
+      将请求复制为卷曲命令。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Copy All as Fetch**  
+      **全部复制为提取**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -865,58 +865,58 @@ Under the **Name** column of the Requests table, hover on a request, open the co
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Copy All as cURL**  
+      **复制全部为卷曲**  
    :::column-end:::
    :::column span="2":::
-      Copy all requests as a chain of cURL commands.  
+      将所有请求复制为一个卷曲命令链。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Copy All as HAR**  
+      **全部复制到 HAR**  
    :::column-end:::
    :::column span="2":::
-      Copy all requests as HAR data.  
+      将所有请求复制到 HAR 数据。  
    :::column-end:::
 :::row-end:::  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-copy-response.msft.png":::
-   Selecting **Copy Response**  
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-copy-response.msft.png":::
+   选择 "**复制响应**"  
 :::image-end:::  
 
-## Change the layout of the Network panel  
+## 更改网络面板的布局  
 
-You may expand or collapse sections of the Network panel UI to focus important information.  
+你可以展开或折叠 "网络面板" UI 的各个部分以重点介绍重要信息。  
 
-### Hide the Filters pane  
+### 隐藏 "筛选器" 窗格  
 
-By default, DevTools show the **Filters pane**.  
-Select **Filter** \(![Filter][ImageFilterIcon]\) to hide it.  
+默认情况下，DevTools 显示 " **筛选器" 窗格**。  
+选择 " **筛选** \ (![ 筛选 ][ImageFilterIcon] \ ) " 以隐藏它。  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
-   The Hide Filters button  
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+   "隐藏筛选器" 按钮  
 :::image-end:::  
 
-### Use large request rows  
+### 使用大型请求行  
 
-Use large rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.  
+如果需要在网络请求表中有更多的空格，请使用较大的行。  在使用较大的行时，某些列还提供了一些更多的信息。  例如， **Size** 列的底部值是请求的未压缩大小。  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
-   An example of large request rows in the **Requests** pane  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   **请求**窗格中的大型请求行的示例  
 :::image-end:::  
 
-Select the **Use large request rows** checkbox to enable large rows.  
+选中 " **使用大请求行** " 复选框以启用大行。  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
-   The **Use large request rows** checkbox  
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+   " **使用大请求行** " 复选框  
 :::image-end:::  
 
-### Hide the Overview pane  
+### 隐藏 "概述" 窗格  
 
-By default, DevTools show the **Overview pane**.  Deselect the **Show Overview** checkbox to hide it.  
+默认情况下，DevTools 显示 " **概述" 窗格**。  取消选中 " **显示概述** " 复选框以将其隐藏。  
 
-:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
-   The **Show Overview** checkbox  
+:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+   " **显示概述** " 复选框  
 :::image-end:::  
 
 <!-- image links -->  
@@ -930,13 +930,13 @@ By default, DevTools show the **Overview pane**.  Deselect the **Show Overview**
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Debug Progressive Web Apps | Microsoft Docs"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "调试渐进式 Web 应用 |Microsoft 文档"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"  
+[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "数据 Url |MDN"  
 
-[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy server - Wikipedia"  
+[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "代理服务器-维基百科"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

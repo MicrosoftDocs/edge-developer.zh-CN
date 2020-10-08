@@ -1,5 +1,5 @@
 ---
-title: Considerations when Using the Windows Runtime API
+title: 使用 Windows 运行时 API 时的注意事项
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -22,81 +22,81 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942215"
 ---
-# Considerations when using the Windows Runtime API  
+# 使用 Windows 运行时 API 时的注意事项  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-You can use nearly every element of the Windows Runtime API in JavaScript.  However, there are some aspects of the JavaScript representation of Windows Runtime elements that you should keep in mind.  
+你可以在 JavaScript 中使用 Windows 运行时 API 的几乎每个元素。  但是，你应该记住 Windows 运行时元素的 JavaScript 表示方面的一些方面。  
 
 > [!IMPORTANT]
-> For information about creating Windows Runtime components in C++, C#, or Visual Basic and consuming them in JavaScript, see [Creating Windows Runtime Components in C++][WindowsUwpComponentsCreatingCpp] and [Creating Windows Runtime Components in C# and Visual Basic][WindowsUwpComponentsCreatingCsharpVb].  
+> 有关在 c + +、c # 或 Visual Basic 中创建 Windows 运行时组件并在 JavaScript 中使用它们的信息，请参阅使用 [c + + 创建 Windows 运行时组件][WindowsUwpComponentsCreatingCpp] 和使用 [c # 和 Visual Basic 创建 Windows 运行时组件][WindowsUwpComponentsCreatingCsharpVb]。  
 
-## Special cases in the JavaScript Representation of Windows Runtime types  
+## Windows 运行时类型的 JavaScript 表示中的特殊情况  
 
 :::row:::
    :::column span="1":::
-      Strings  
+      字符串  
    :::column-end:::
    :::column span="3":::
-      An uninitialized string is passed to a Windows Runtime method as the string "undefined", and a string set to `null` is passed as the string "null".  \(This is true whenever a `null` or `undefined` value is coerced to a string.\)  Before you pass a string to a Windows Runtime method, you should initialize it as the empty string \(""\).  
+      未初始化的字符串作为字符串 "undefined" 传递到 Windows 运行时方法，设置为的字符串将 `null` 作为字符串 "null" 传递。  \ (当 a `null` 或 `undefined` value 被强制转换为字符串时，这是 true。 \n ) 将字符串传递到 Windows 运行时方法之前，应将其初始化为空字符串 \ ( "" \ ) 。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Interfaces  
+      接口  
    :::column-end:::
    :::column span="3":::
-      You cannot implement a Windows Runtime interface in JavaScript.  
+      不能在 JavaScript 中实现 Windows 运行时接口。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Arrays  
+      数组  
    :::column-end:::
    :::column span="3":::
-      Windows Runtime arrays are not resizable, so methods that resize arrays in JavaScript do not work on Windows Runtime arrays.  
-      *   Arrays: If you pass a JavaScript array value to a Windows Runtime method, the array is copied.  The Windows Runtime method is not able to modify the array or its members and return it to your JavaScript app.  However, you can use typed arrays \(for example, [Int32Array Object][MDNInt32array]\), which are not copied.  
+      Windows 运行时数组不能调整大小，因此在 JavaScript 中调整数组大小的方法在 Windows 运行时数组中不起作用。  
+      *   数组：如果将 JavaScript 数组值传递给 Windows 运行时方法，则会复制该数组。  Windows 运行时方法无法修改数组或其成员，并将其返回到你的 JavaScript 应用。  但是，你可以使用类型化数组 \ (例如 [Int32Array 对象][MDNInt32array]\ ) ，这些数组不会被复制。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Structures  
+      结构  
    :::column-end:::
    :::column span="3":::
-      Windows Runtime structures are objects in JavaScript.  If you want to pass a Windows Runtime structure to a Windows Runtime method, don't instantiate the structure with the `new` keyword.  Instead, create an object and add the relevant members and their values.  The names of the members should be in camel case: `SomeStruct.firstMember`.  
+      Windows 运行时结构是 JavaScript 中的对象。  如果要将 Windows 运行时结构传递到 Windows 运行时方法，请不要使用关键字实例化结构 `new` 。  而是创建一个对象并添加相关成员及其值。  成员的名称应采用 camel 大小写形式： `SomeStruct.firstMember` 。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Objects  
+      对象  
    :::column-end:::
    :::column span="3":::
-      JavaScript objects aren't the same as managed code objects \(`System.Object`\).  You can't pass a JavaScript object to a Windows Runtime method that requires a `System.Object`.  
+      JavaScript 对象与托管代码对象 \ (`System.Object` \ ) 不同。  无法将 JavaScript 对象传递到需要的 Windows 运行时方法 `System.Object` 。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Object identity  
+      对象标识  
    :::column-end:::
    :::column span="3":::
-      In most cases, the objects passed back and forth between the Windows Runtime and JavaScript do not change.  The JavaScript engine maintains a map of known objects.  When an object is returned from the Windows Runtime it is matched against the map, and if it does not exist a new object is created.  The same procedure is followed for objects that represent interfaces that are returned by Windows Runtime methods.  There are two kinds of exceptions:  
+      在大多数情况下，在 Windows 运行时和 JavaScript 之间来回传递的对象不会发生变化。  JavaScript 引擎维护已知对象的地图。  当从 Windows 运行时返回一个对象时，它将与地图相匹配，如果不存在，则创建一个新对象。  对于表示由 Windows 运行时方法返回的接口的对象，将遵循相同的过程。  有两种类型的异常：  
       
-      *   Objects that are returned from a Windows Runtime call, and then have new \(expando\) properties added, don't retain their new properties when they are passed back to the Windows Runtime.  However, when they are returned to the JavaScript app, because they're matched to the existing object, the returned object does have the expando properties.  
-      *   Structures and delegates in Windows Runtime can't be identified as identical to previously-used structures or delegates.  Every time a structure or delegate is returned, it gets a new reference.  
+      *   从 Windows 运行时调用返回的对象，然后添加新的 \ (expando \ ) 属性，当它们传递回 Windows 运行时，不保留其新属性。  但是，当它们返回到 JavaScript 应用时，由于它们与现有对象匹配，因此返回的对象具有 expando 属性。  
+      *   Windows 运行时中的结构和委托无法标识为与以前使用的结构或委托相同。  每次返回结构或委托时，它都会获取一个新引用。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Name collisions  
+      名称冲突  
    :::column-end:::
    :::column span="3":::
-      Multiple Windows Runtime interfaces may have members with the same names.  If they are combined in a single JavaScript object (which can be a representation of a runtime class or an interface), the members are represented with fully-qualified names.  You can call these members by using the following syntax:  
+      多个 Windows 运行时接口可能具有相同名称的成员。  如果它们合并到单个 JavaScript 对象 (该对象可以是运行时类或接口) 的表示形式，则成员使用完全限定的名称表示。  你可以使用以下语法调用这些成员：  
       
       ```cpp
       Class["MemberName"](parameter)
       ```  
       
-      In the following code, two interfaces have a Draw method, and a runtime class implements both interfaces.  
+      在以下代码中，两个接口具有 Draw 方法，并且运行时类实现了这两个接口。  
       
       ```cpp
       namespace CollisionExample {
@@ -115,7 +115,7 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
       }
       ```  
       
-      Here is how you can call the above code in JavaScript.  
+      下面介绍如何在 JavaScript 中调用上述代码。  
       
       ```javascript
       var example = new ExampleObject();
@@ -126,10 +126,10 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      `Out` parameters  
+      `Out` 实参  
    :::column-end:::
    :::column span="3":::
-      If a Windows Runtime method has multiple `out` parameters, in JavaScript the method has a JavaScript object as its return value, and the object has properties that correspond to the `out` parameter.  For example, consider the following Windows Runtime signature in C++.  
+      如果 Windows 运行时方法具有多个 `out` 参数，在 JavaScript 中，该方法将 JavaScript 对象作为其返回值，并且该对象具有对应于该 `out` 参数的属性。  例如，请考虑 c + + 中的以下 Windows 运行时签名。  
       
       ```cpp
       void ExampleMethod(
@@ -138,21 +138,21 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
       )
       ```  
       
-      The JavaScript version of this signature is:  
+      此签名的 JavaScript 版本是：  
       
       ```javascript
       var returnValue = exampleMethod();
       ```  
       
-      In this example, `returnValue` is a JavaScript object that has two fields: `first` and `second`.  
+      在此示例中， `returnValue` 是具有两个字段的 JavaScript 对象： `first` 和 `second` 。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Static members  
+      静态成员  
    :::column-end:::
    :::column span="3":::
-      The Windows Runtime defines both static members and instance members.  In JavaScript, static members are added to the object that is associated with the Windows Runtime class or interface.  
+      Windows 运行时同时定义静态成员和实例成员。  在 JavaScript 中，静态成员将添加到与 Windows 运行时类或接口关联的对象。  
       
       ```javascript
       // Static method.
@@ -163,13 +163,13 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
    :::column-end:::
 :::row-end:::  
     
-For more information about the JavaScript representation of Windows Runtime basic types, see [JavaScript Representation of Windows Runtime Types][WindowsRuntimeJavascriptTypes].  
+有关 Windows 运行时基本类型的 JavaScript 表示的详细信息，请参阅 [Windows 运行时类型的 Javascript 表示形式][WindowsRuntimeJavascriptTypes]。  
 
 <!-- links -->  
  
-[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "JavaScript Representation of Windows Runtime Types | Microsoft Docs"
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Windows 运行时类型的 JavaScript 表示形式 |Microsoft 文档"
 
-[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Windows Runtime components with C++/CX | Microsoft Docs"  
-[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Windows Runtime components with C# and Visual Basic | Microsoft Docs"  
+[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "带有 c + +/CX 的 Windows 运行时组件 |Microsoft 文档"  
+[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "带有 c # 和 Visual Basic 的 Windows 运行时组件 |Microsoft 文档"  
 
-[MDNInt32array]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array "Int32Array | MDN"  
+[MDNInt32array]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array "Int32Array |MDN"  

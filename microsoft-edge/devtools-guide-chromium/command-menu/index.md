@@ -1,12 +1,12 @@
 ---
-description: A guide on how to open the Command Menu, run commands, see other actions, and more.
-title: Run Commands With The Microsoft Edge DevTools Command Menu
+description: 有关如何打开 "命令" 菜单、"运行命令"、"查看其他操作" 等的指南。
+title: 使用 Microsoft Edge 开发人员工具命令菜单运行命令
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 54dead492e7d58053efab77c82a10e7e3c912460
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,36 +32,36 @@ ms.locfileid: "10993196"
 
 
 
-# Run Commands With The Microsoft Edge DevTools Command Menu   
+# 使用 Microsoft Edge 开发人员工具命令菜单运行命令   
 
   
 
-The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].  You may be familiar with a similar feature in Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.  
+命令菜单提供了一种快速浏览 Microsoft Edge DevTools UI 和完成常见任务（如 [禁用 JavaScript][JavascriptDisable]）的方法。  你可能会熟悉 Visual Studio 代码中称为 [命令调色板][VisualStudioCodeUICommandPalette]的类似功能，这是命令菜单的初始灵感。  
 
-:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Using the Command Menu to disable JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
-   Using the Command Menu to disable JavaScript  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="使用 &quot;命令&quot; 菜单禁用 JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
+   使用 "命令" 菜单禁用 JavaScript  
 :::image-end:::  
 
-## Open the Command Menu   
+## 打开 "命令" 菜单   
 
-Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\). Or click **Customize And Control DevTools** `...` and then select **Run Command**.  
+按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。 或者单击 " **自定义和控制 DevTools** " `...` ，然后选择 " **运行命令**"。  
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Using the Command Menu to disable JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
-   Run Command  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="使用 &quot;命令&quot; 菜单禁用 JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
+   运行命令  
 :::image-end:::  
 
-## See other available actions   
+## 查看其他可用操作   
 
-If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.  
+如果您使用 " [打开命令" 菜单](#open-the-command-menu)中所述的工作流，则 "命令" 菜单将打开，其中有一个 `>` 预挂起的字符到 "命令菜单" 文本框。  
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Using the Command Menu to disable JavaScript" lightbox="../media/command-menu-run-command.msft.png":::
-   The command character  
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="使用 &quot;命令&quot; 菜单禁用 JavaScript" lightbox="../media/command-menu-run-command.msft.png":::
+   命令字符  
 :::image-end:::  
 
-Delete the `>` character and type `?` to see other actions that are available from the Command Menu.  
+删除 " `>` 字符" 和 "类型"， `?` 以查看 "命令" 菜单中提供的其他操作。  
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Using the Command Menu to disable JavaScript" lightbox="../media/command-menu-help.msft.png":::
-   Other available actions  
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="使用 &quot;命令&quot; 菜单禁用 JavaScript" lightbox="../media/command-menu-help.msft.png":::
+   其他可用操作  
 :::image-end:::  
 
  
@@ -70,9 +70,9 @@ Delete the `>` character and type `?` to see other actions that are available fr
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Disable JavaScript With Microsoft Edge DevTools | Microsoft Docs"  
+[JavascriptDisable]: ../javascript/disable.md "通过 Microsoft Edge DevTools 禁用 JavaScript |Microsoft 文档"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Command palette - Visual Studio Code UI"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "命令调色板-Visual Studio 代码 UI"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

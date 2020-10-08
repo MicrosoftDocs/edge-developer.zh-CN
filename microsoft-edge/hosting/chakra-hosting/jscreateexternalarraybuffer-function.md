@@ -1,6 +1,6 @@
 ---
-description: Creates a Javascript `ArrayBuffer` object to access external memory.
-title: JsCreateExternalArrayBuffer Function | Microsoft Docs
+description: 创建 Javascript `ArrayBuffer` 对象以访问外部内存。
+title: JsCreateExternalArrayBuffer 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,10 +20,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10563166"
 ---
-# JsCreateExternalArrayBuffer Function
-Creates a Javascript `ArrayBuffer` object to access external memory.
+# JsCreateExternalArrayBuffer 函数
+创建 Javascript `ArrayBuffer` 对象以访问外部内存。
   
-## Syntax  
+## 语法  
   
 ```cpp  
 STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(  
@@ -36,30 +36,30 @@ STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(
   
 ```  
   
-#### Parameters  
+#### 参数  
  `data`  
- A pointer to the external memory.  
+ 指向外部内存的指针。  
   
  `byteLength`  
- The number of bytes in the external memory.  
+ 外部内存中的字节数。  
   
  `finalizeCallback`  
- A callback for when the object is finalized. May be null.  
+ 终止对象时的回调。 可能为 null。  
   
  `callbackState`  
- User provided state that will be passed back to finalizeCallback.  
+ 用户提供的状态将传回 finalizeCallback。  
   
  `result`  
- The new `ArrayBuffer` object.  
+ 新 `ArrayBuffer` 对象。  
   
-## Return Value  
- The code `JsNoError` if the operation succeeded, a failure code otherwise.  
+## 返回值  
+ `JsNoError`如果操作成功，则为代码，否则为失败代码。  
   
-## Remarks  
- Requires an active script context.  
+## 备注  
+ 需要活动脚本上下文。  
   
-## Requirements  
- **Header:** jsrt.h  
+## 要求  
+ **页眉：** jsrt  
   
-## See Also  
- [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)
+## 另请参阅  
+ [应用 (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

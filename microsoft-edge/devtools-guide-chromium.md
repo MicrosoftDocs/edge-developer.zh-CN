@@ -1,13 +1,13 @@
 ---
-description: Get to know the Microsoft Edge (Chromium) Developer Tools
-title: Microsoft Edge (Chromium) Developer Tools
+description: 了解 Microsoft Edge (Chromium) 开发人员工具
+title: Microsoft Edge (Chromium) 开发人员工具
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: ba925c402d33ba75c558006c7c43c5dc05515911
 ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
@@ -15,80 +15,112 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "11003934"
 ---
-# Microsoft Edge (Chromium) Developer Tools  
+# Microsoft Edge (Chromium) 开发人员工具  
 
-Microsoft Edge has adopted the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your websites in Microsoft Edge and ensure that each works as expected even while viewed in a different Chromium-based browser \(such as Google Chrome, Vivaldi, Opera, or Brave\).  
+Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性，并减少不同基础 web 平台的碎片。  此更改使你能够更轻松地在 Microsoft Edge 中构建和测试你的网站，并确保每个网站在不同的基于 Chromium 的浏览器 (（如 Google Chrome、Vivaldi、Opera 或 Brave \ ) ）中都可以正常工作。  
 
-As the web has grown in usage across an ever-widening array of device types, the complexity and overhead involved in testing websites has exploded. Since web developers \(particularly those at small companies\) must test against so many different systems, you may find it nearly impossible to ensure that sites work well on all device types and all browsers.  Now that Microsoft Edge is based on Chromium, the Microsoft Edge team has simplified the matrix by aligning the Microsoft Edge web platform with other Chromium-based browsers and provided a best-in-class developer tooling experience, both inside the browser and with the other developer tools you use every day \(such as Visual Studio Code\).  
+随着网络在不断扩大的各种设备类型数组中的使用日益增加，测试网站所涉及的复杂性和开销也随之增加。 由于 web 开发人员在小型公司 (尤其是在小型公司 ) 必须针对如此多的不同系统进行测试，因此你可能会发现几乎无法确保网站在所有设备类型和所有浏览器上都能正常工作。  既然 Microsoft Edge 基于 Chromium，Microsoft Edge 团队通过将 Microsoft Edge web 平台与其他基于 Chromium 的浏览器相协调，并在浏览器内以及你 (每天使用的其他开发人员工具（如 Visual Studio Code \ ) ）中提供了最佳的开发工具体验。  
 
-If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools function in the same way as the developer tools you already know and use.  For more information, see [What's new in the Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromiumWhatsNewIndex].  
+如果您要签出 Microsoft Edge，并且主要是在基于 Chromium 的浏览器中开发，则应立即体验。  Microsoft Edge \ (Chromium \ ) 开发人员工具的工作方式与你已了解和使用的开发人员工具相同。  有关详细信息，请参阅 [Microsoft Edge (Chromium) DevTools 中的新增功能][DevtoolsGuideChromiumWhatsNewIndex]。  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
-If you are checking out the next version of Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
+如果您要签出下一版本的 Microsoft Edge，并且以前是在 Microsoft Edge \ (EdgeHTML \ ) 中开发的，现在您有了一些非常好的新工具，可让您在 Microsoft Edge 中更轻松、更快地构建和测试您的网站！  
 
-## Open the DevTools  
+## 打开 DevTools  
 
-If you have never used the DevTools before, the Microsoft Edge Developer Tools are a set of tools built directly into the Microsoft Edge browser.  With these DevTools, you are able to do the following.  
+如果您以前从未使用过 DevTools，则 Microsoft Edge 开发人员工具是一组直接内置于 Microsoft Edge 浏览器中的工具。  通过这些 DevTools，你可以执行以下操作。  
 
-*   Inspect and make changes to your HTML website  
-*   Edit CSS and instantly see preview how your website renders  
-*   See all the `console.log()` statements from your front-end JavaScript code  
-*   Debug your script by setting breakpoints and stepping through it line by line  
+*   检查并对 HTML 网站进行更改  
+*   编辑 CSS 并立即查看预览您的网站呈现方式  
+*   查看 `console.log()` 前端 JavaScript 代码中的所有语句  
+*   通过设置断点并逐行逐行执行调试来调试你的脚本  
 
-all directly within the browser.  These are just examples of some of the features the DevTools provide to make it easier and faster for you to build and test your websites in Microsoft Edge.  
+直接在浏览器中。  以下是 DevTools 提供的一些功能的示例，可使你在 Microsoft Edge 中构建和测试网站变得更加轻松快捷。  
 
-To open the DevTools  
+打开 DevTools  
 
-*   press `F12` 
-*   press `Ctrl`+`Shift`+`I` on Windows \(`Command`+`Option`+`I` on macOS\)  
+*   按 `F12` 
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
 
-If you want to see the HTML or CSS for an element on your site, right-click the element and select **Inspect** to jump into the Elements panel.  You may also press `Ctrl`+`Shift`+`C` on Windows \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**" 面板中查看 HTML 和 CSS。  
 
-If you want to see logs from your front-end JavaScript code or quickly run some script, press `Ctrl`+`Shift`+`J` on Windows or `Command`+`Option`+`J` on macOS to launch the Console panel in the DevTools.  
+如果您想要查看前端 JavaScript 代码中的日志或快速运行某些脚本，请按 `Ctrl` + `Shift` + `J` Windows 或 `Command` + `Option` + `J` macOS 以启动 DevTools 中的控制台面板。  
 
-## Core tools  
+## 核心工具  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
-   Microsoft Edge (Chromium) DevTools core tools  
-:::image-end::: 
-
-The Microsoft Edge \(Chromium\) DevTools include the following panels.  
-
-*   An **Elements** panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints  
-*   **控制台**，用于查看和筛选日志消息、检查 JavaScript 对象和 DOM 节点，并在所选窗口或框架的上下文中运行 JavaScript  
-*   A **Sources** panel to open and live edit your code, set breakpoints, step through code, and see the state of your website one line of JavaScript at a time  
-*   A **Network** panel to monitor and inspect requests and responses from the network and browser cache   
-*   “**性能**”面板，用于分析网站所需的时间和系统资源  
-*   A **Memory** panel to measure your use of memory resources and compare heap snapshots at different states of code runtime  
-*   An **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  You may also inspect and manage storage, databases, and caches from the **Application** panel.  
-*   A **Security** panel to debug security issues and ensure that you have properly implemented HTTPS on your website.  HTTPS provides critical security and data integrity for both your site and your users that provide personal information on your site.  
-*   An **Audits** panel \(now renamed **Lighthouse**\) to run an audit of your website.  The results of the audit help you improve the quality of your site in the following ways.  
-    *   Catch common errors related to making your website accessible, secure, performant, and so on.  
-    *   Fix each error.  
-    *   Build a PWA.  
-
-[!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
-
-Please send your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
-
-## Extensions  
-
-You may have used extensions to the DevTools to help you diagnose and debug issues when building your websites or apps.  You may acquire extensions for Microsoft Edge from the [Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] page.  From the [Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] page, you may browse DevTools extensions from the **Developer tools** category or search for a specific extension.  
-
-You may also add extensions from the [Chrome Web Store][GoogleChromeWebstoreExtensions].  
-
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools":::
-   Chrome Web Store in Microsoft Edge  
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
+   Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
-At the top, select **Allow extensions from other stores** and then select **Allow** in the dialog that appears.  
+如果您要签出下一版本的 Microsoft Edge，并且以前是在 Microsoft Edge \ (EdgeHTML \ ) 中开发的，现在您有了一些非常好的新工具，可让您在 Microsoft Edge 中更轻松、更快地构建和测试您的网站！  
 
-> [!NOTE]
-> Extensions installed from sources other than the Microsoft Store are unverified, and may affect browser performance.  
+## 打开 DevTools  
 
-Select **Add to Chrome** to add your DevTools extension to Microsoft Edge!  
+如果您以前从未使用过 DevTools，则 Microsoft Edge 开发人员工具是一组直接内置于 Microsoft Edge 浏览器中的工具。  通过这些 DevTools，你可以执行以下操作。  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools"  
+*   检查并对 HTML 网站进行更改  
+*   编辑 CSS 并立即查看预览您的网站呈现方式  
+*   查看 `console.log()` 前端 JavaScript 代码中的所有语句  
+*   通过设置断点并逐行逐行执行调试来调试你的脚本  
+
+直接在浏览器中。  以下是 DevTools 提供的一些功能的示例，可使你在 Microsoft Edge 中构建和测试网站变得更加轻松快捷。  
+
+打开 DevTools  
+
+*   按 `F12` 
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
+
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**" 类别中浏览 DevTools 扩展或搜索特定的扩展名。  
+
+您也可以添加 [Chrome Web 应用商店][GoogleChromeWebstoreExtensions]的扩展。  
+
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
+   Microsoft Edge (Chromium) DevTools  
+:::image-end:::  
+
+如果您要签出下一版本的 Microsoft Edge，并且以前是在 Microsoft Edge \ (EdgeHTML \ ) 中开发的，现在您有了一些非常好的新工具，可让您在 Microsoft Edge 中更轻松、更快地构建和测试您的网站！  
+
+## 打开 DevTools  
+
+如果您以前从未使用过 DevTools，则 Microsoft Edge 开发人员工具是一组直接内置于 Microsoft Edge 浏览器中的工具。  通过这些 DevTools，你可以执行以下操作。  
+
+*   检查并对 HTML 网站进行更改  
+*   编辑 CSS 并立即查看预览您的网站呈现方式  
+*   查看 `console.log()` 前端 JavaScript 代码中的所有语句  
+*   通过设置断点并逐行逐行执行调试来调试你的脚本  
+
+直接在浏览器中。  以下是 DevTools 提供的一些功能的示例，可使你在 Microsoft Edge 中构建和测试网站变得更加轻松快捷。  
+
+打开 DevTools  
+
+*   按 `F12` 
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
+
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**" 以将你的 DevTools 扩展添加到 Microsoft Edge！  
+
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
+   Microsoft Edge (Chromium) DevTools  
+:::image-end:::  
+
+如果您要签出下一版本的 Microsoft Edge，并且以前是在 Microsoft Edge \ (EdgeHTML \ ) 中开发的，现在您有了一些非常好的新工具，可让您在 Microsoft Edge 中更轻松、更快地构建和测试您的网站！  
+
+## 打开 DevTools  
+
+如果您以前从未使用过 DevTools，则 Microsoft Edge 开发人员工具是一组直接内置于 Microsoft Edge 浏览器中的工具。  通过这些 DevTools，你可以执行以下操作。  
+
+*   检查并对 HTML 网站进行更改  
+*   编辑 CSS 并立即查看预览您的网站呈现方式  
+*   查看 `console.log()` 前端 JavaScript 代码中的所有语句  
+*   通过设置断点并逐行逐行执行调试来调试你的脚本  
+
+直接在浏览器中。  以下是 DevTools 提供的一些功能的示例，可使你在 Microsoft Edge 中构建和测试网站变得更加轻松快捷。  
+
+打开 DevTools  
+
+*   按 `F12` 
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
+
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**"  

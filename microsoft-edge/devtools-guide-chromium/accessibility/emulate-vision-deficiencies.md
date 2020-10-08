@@ -1,11 +1,11 @@
 ---
-title: Emulate vision deficiencies in Microsoft Edge DevTools(color blindness)
+title: '模拟 Microsoft Edge DevTools 中的视觉缺陷 (色盲) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: b70499fa189d162fa7589966bab183f4c12f68f7
 ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
@@ -13,80 +13,80 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "10843919"
 ---
-# Emulate vision deficiencies
+# 模仿视觉缺陷
 
-To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][MicrosoftEdgeDevTools] enable you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
+为了更好地满足用户使用 [颜色视觉缺陷][ColorblindawarenessMain] 的需要 (色盲 ) ， [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 使您能够模拟特定的颜色视觉缺陷。  " **模拟远景缺陷** " 工具模拟以下类别。  
 
-| Color vision deficiency | Details |  
+| 颜色远景缺陷 | 详细信息 |  
 |:--- |:--- |  
-| Blurred vision | The user has difficulty focusing on fine details. |   
-| Protanopia | The user is unable to perceive any red light. |  
-| Deuteranopia | The user is unable to perceive any green light. |  
-| Tritanopia | The user is unable to perceive any blue light. |  
-| Achromatopsia | The user is unable to perceive any color, which reduces all color to a shade of grey. |  
+| 模糊视觉效果 | 用户很难关注详细信息。 |   
+| 红色盲 | 用户无法感知任何红光。 |  
+| 绿色盲 | 用户无法感知任何绿色光。 |  
+| 黄蓝色盲 | 用户无法感知任何蓝色光线。 |  
+| 全色盲 | 用户无法感知任何颜色，这种颜色会将所有颜色降低为灰色底纹。 |  
 
-## Navigate to the Rendering Tools  
+## 导航到 "渲染工具"  
 
-To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][RenderingTools].  
+若要模拟为您的 web 产品应用的远景缺陷，请打开 " [渲染工具][RenderingTools]"。  
 
-1.  Open the Rendering Tools by selecting the `...` menu item in the toolbar  
-1.  Select `More tools`  
-1.  Select `Rendering`  
+1.  通过选择 `...` 工具栏中的菜单项打开呈现工具  
+1.  选择 `More tools`  
+1.  选择 `Rendering`  
     
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Opening the **Rendering Tools**  
+    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="打开渲染工具" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+       打开 **渲染工具**  
     :::image-end:::  
 
-The **Rendering** menu appears in the drawer.  
+" **呈现** " 菜单显示在抽屉中。  
 
-1.  Scroll down to the `Emulate vision deficiencies` menu item and select the drop-down menu to display the options.  
+1.  向下滚动到 `Emulate vision deficiencies` 菜单项并选择下拉菜单以显示选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       The **Emulate vision deficiencies** menu on the **Rendering** drawer  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="打开渲染工具" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       **呈现**抽屉上的 "**模拟远景缺陷**" 菜单  
     :::image-end:::  
     
-1.  Choose an option.  
+1.  选择一个选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       The **Emulate vision deficiencies** menu options  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="打开渲染工具" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+       " **模拟远景缺陷** " 菜单选项  
     :::image-end:::  
     
-1.  The main windows displays the simulation of your selected option applied to the current page.  
+1.  主窗口显示应用到当前页面的选定选项的模拟。  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Display using **Blurred Vision** simulation  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="打开渲染工具" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             使用 **模糊视觉** 模拟显示  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Display using **Achromatopsia** simulation :::image-end:::  
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="打开渲染工具" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             使用 **Achromatopsia** 模拟进行显示 :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Use the Command Menu  
+## 使用 "命令" 菜单  
 
-You may also use **Command Menu** to access the different simulations.  
+您也可以使用 " **命令" 菜单** 访问不同的模拟。  
 
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
     
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       The **Command Menu**  
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="打开渲染工具" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+       **命令菜单**  
     :::image-end:::  
     
-1.  Type `emulate`, choose what you want to simulate and press `Enter`.  
+1.  键入 `emulate` ，选择要模拟的内容，然后按 `Enter` 。  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       The different simulation options available in the **Command Menu**  
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="打开渲染工具" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+       "**命令" 菜单**中提供的不同模拟选项  
     :::image-end:::  
     
 > [!IMPORTANT]
-> The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.  
+> " **模拟远景处理不足** " 工具模拟每个缺陷的人可以查看你的产品的具体程度。  每个人都是不同的，因此视力缺陷在人员间的严重性方面各不相同。  为了更好地满足用户需求，请避免可能出现问题的任何颜色组合。  " **模拟远景缺陷** " 工具不是产品的完全辅助功能评估。  相反，" **模拟远景缺陷** " 工具应为您提供一个良好的第一步，以避免问题。  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "The Colour Blind Awareness organisation"  
-[AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  
-[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) Rendering Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具"  
+[ColorblindawarenessMain]: http://www.colourblindawareness.org ""彩色盲人" 感知组织"  
+[AmfcbMain]: https://www.amfcb.org "色盲 (的美洲地基) AFCB "  
+[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) 着色工具"  
