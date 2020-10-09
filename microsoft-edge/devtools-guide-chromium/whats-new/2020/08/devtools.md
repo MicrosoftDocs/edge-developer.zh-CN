@@ -3,16 +3,16 @@ description: 将键盘快捷方式与 Visual Studio 代码匹配、模拟 Surfac
 title: DevTools (Microsoft Edge 86) 中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 943eca7e73385513b264feb74ec37c450d5c5a2f
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
+ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004100"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104859"
 ---
 # DevTools (Microsoft Edge 86) 中的新增功能  
 
@@ -174,7 +174,7 @@ Chromium 问题： [#1103316][CR1103316]
 
 ### 新媒体面板  
 
-DevTools 现在在 " [媒体][DevtoolsMediaIndex] " 面板中显示媒体播放器信息。  
+DevTools 现在在 " [媒体][DevtoolsMediaPanelIndex] " 面板中显示媒体播放器信息。  
 
 若要打开新的 " **媒体** " 面板，请完成以下步骤。  
 
@@ -468,7 +468,7 @@ Chromium 问题： [#1067184][CR1067184]
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 Microsoft Edge DevTools | 中的 "覆盖范围" 选项卡查找未使用的 JavaScript 和 CSS 代码。Microsoft 文档"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "抽屉-自定义 Microsoft Edge DevTools |Microsoft 文档"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "通过 "呈现" 选项卡分析呈现性能-性能分析参考 |Microsoft 文档"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "查看和调试媒体播放器信息 |Microsoft 文档"  
+[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "查看和调试媒体播放器信息 |Microsoft 文档"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "如何使用双屏幕设备的接缝简介 |Microsoft 文档"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "适用于双屏幕检测的 CSS 媒体屏幕扩展功能 |Microsoft 文档"  

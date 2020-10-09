@@ -1,94 +1,67 @@
 ---
-description: Learn what a Chromium Extension is as well as progressively build a complete picture viewing Extension that includes options, content injection, background scripts, storage and more.
-title: Getting Started With Microsoft Edge (Chromium) Extensions
+description: 了解 Chromium 扩展和构建扩展的核心概念。
+title: Microsoft Edge (Chromium) 扩展概念和体系结构
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 10/01/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
-ms.openlocfilehash: 31bb970201e8fe66c9996938fe8461d503d9c6a1
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium、web 开发、html、css、javascript、开发人员、扩展
+ms.openlocfilehash: 8ffdd19e1a1e36a4d10fdd80bd7dd5654d543527
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015721"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104726"
 ---
-# Getting Started With Microsoft Edge \(Chromium\) Extensions  
+# 扩展概念和体系结构
 
-If you want to jump directly into building your first Extension, go to part 1 of building a NASA picture of the day Extension.  
+本文提供了在构建扩展时有助于的概念的简要介绍。 若要了解 Microsoft Edge \ (Chromium \ ) 扩展，我们首先讨论多选项卡浏览器的工作方式。
 
-If you are not familiar with the Extension concepts and architecture, continue reading, and learn all about what Extensions are.  This information helps you build Extensions much more easily since you understand the motivations and architecture behind them.  
 
-## Build a NASA picture of the day Extension  
+## 了解浏览器的工作方式
 
-Each section has the completed Extension source installation package referenced in it.  
+下表列出了在构建扩展之前需要了解的有用信息。
 
-*   [Build a simple Extension that pops up NASA picture of the day](part1-simple-extension.md)  
-    *   Creating a Manifest  
-    *   Assign Extension icons  
-    *   Displaying a Pop-up Window  
-    *   Run your Extension locally in your browser \(side-loading\)  
+1.  每个浏览器选项卡都独立于每个其他选项卡。 每个选项卡都在其自己的独立于其他浏览器选项卡和线程的线程中运行。
 
-*   [Dynamically insert NASA picture below the page body tag](part2-content-scripts.md)  
-    *   Create JavaScript that inserts dynamic content script  
-    *   Define in manifest which pages get content script  
-    *   Inject content script declaratively  
-    *   Add a Button on Pop-up to send a message to content script  
-    *   Receive a message inside a content script  
+    ![每个 "浏览器" 选项卡的一个线程](media/index-image1-browsertabs.png)  
 
-## Understanding the browser before Extensions are introduced  
+2.  每个选项卡处理一个 GET 请求。  每个选项卡都使用 URL 获取单个数据流，它通常是 HTML 文档。  此单个流或页面，包括有关 JavaScript 包括标记、图像引用、CSS 引用等的说明。  所有资源都将下载到该选项卡页，然后在该选项卡中呈现页面。  
 
-### Each browser tab is isolated from every other tab  
+3.  在每个选项卡和远程服务器之间进行通信。  每个选项卡都在隔离的环境中运行。 它们仍连接到 internet，但与其他选项卡隔离。  选项卡可能运行 JavaScript 以与服务器通信。 这些服务器是在选项卡的 URL 栏中输入的第一个 GET 请求的原始服务器。  
 
-To understand what a Microsoft Edge \(Chromium\) Extension is, we first need to fully understand what a multi tab browser, like Microsoft Edge does primarily.  To start, each browser tab runs in an individual thread that effectively isolates it from other browser tabs \(or threads\).  
+4.  扩展模型使用不同的通信模型。  与选项卡页类似，扩展在独立于所有选项卡页线程的单个线程中运行。  选项卡向远程服务器发出单个 GET 请求，然后呈现页面。 但是，扩展功能类似于远程服务器。 在浏览器中安装扩展将在浏览器中创建独立的 web 服务器。 该扩展与所有选项卡页隔离。  
 
-![One thread per browser tab](media/index-image1-browsertabs.png)  
+    ![扩展使用不同的通信模型](media/index-image3-upsidedown.png)  
 
-### Each tab handles one GET request  
+## 扩展体系结构
 
-Each tab essentially uses the URL \(also known as the uniform resource locator\) to get a single stream of data which is typically an HTML document.  That single stream \(or page\), often includes instructions \(like JavaScript include tags, image references, CSS references, and more\).  Ultimately, all the resources needed are downloaded to that one tab page and typically a visualization appears which we see in the browser tab completely rendered.  
+下表列出了与扩展体系结构相关的有用信息。  
 
-### All communication from each tab is to remote servers  
+1.  扩展 web 服务器捆绑包。  扩展名是 web 资源的捆绑包。 这些 web 资源与 web 开发人员发布到 web 服务器的其他资源类似。 开发人员在构建扩展时，将这些 web 资源捆绑到一个 zip 文件中。
+    
+    Zip 文件包括 HTML、CSS、JavaScript 和图像文件。  Zip 文件的根中需要另一个文件。 此文件是清单文件，其名称为 `manifest.json` 。  它是您的扩展的蓝图，包括您的扩展的版本、标题、运行扩展所需的权限等。
 
-Understanding that each tab runs in an isolated environment means that these tabs are isolated from each other, but not the greater internet.  Typically, these tabs, running JavaScript as the defined programming language, communicate back to the server, that should be thought of as the originating server for that first GET request that was entered into the URL bar at the top of the browser tab.  
+2.  启动扩展服务器。  Web 服务器包含您的 web 包。 浏览器导航到服务器上的 Url，并下载要在浏览器中呈现的文件。 浏览器使用证书、配置文件等进行导航。  如果存在 `index.html` 文件，则该文件存储在 web 服务器上的特殊位置。  
 
-## The Extension model turns everything upside down  
+    使用扩展时，浏览器的选项卡页使用扩展运行时获取您的扩展的 web 包。  扩展运行时提供 URL 中的文件 `extension://{some-long-unique-identifier}/index.html` ，其中 `{some-long-unique-identifier}` 是在安装时分配给扩展名的唯一标识符。  每个扩展都使用不同的唯一标识符。 每个标识符指向您的浏览器中安装的 web 包。   
 
-An Extension, just like tab pages, runs in a individual thread which is completely isolated from all tab page threads that are discussed.  Unlike the tabs whose job is to typically issue a single GET request to a remote server, then display a visualization of that data in the browser, the Extension, on the other hand is the server, that previously resided on the other end of the internet connection made from a browser tab.  
+3.  扩展可以与选项卡和浏览器工具栏通信。   扩展可以与浏览器的工具栏交互。 每个扩展都在单独的线程中管理运行的选项卡页，并且每个选项卡页上的 DOM 操作是独立的  扩展使用扩展 API 在扩展和选项卡页之间通信。  此扩展 API 提供了其他功能，包括通知管理、存储管理等。  
 
-![Extension model turns server model upside down](media/index-image3-upsidedown.png)  
+    与 web 服务器一样，打开浏览器时，扩展会等待通知。  扩展和选项卡页在彼此隔离的线程中运行。 但是，开发人员可以使用扩展 API 和清单文件中的权限来允许扩展处理任何选项卡页。  
 
-This is really important to understand.  Once you create an Extension, and install it in your browser, you've created a standalone web server that is living and breathing inside of your browser but still isolated from every tab page running on that browser.  
+4. 扩展在安装时提供自愿加入权限。  扩展权限由开发人员在文件中指定 `manifest.json` 。 安装扩展时，将向用户显示有关该扩展需要运行的权限的信息。 根据所需的权限类型，扩展可以提取和使用浏览器中的信息。
 
-### The Extension web server bundle  
 
-So what is an Extension? It is a bundle \(or referred to as a zip file\) of web resources that are no different than what a web developer publishes to a web server.  
+## 后续步骤
 
-That zip file includes HTML, CSS, JavaScript, images and all the necessary assets to make a web page.  There is however, one extra file that is required in the root of this zip file, and that file is named `manifest.json`.  It is the blueprint for your Extension that includes things like what is the version of your Extension, what is the title, what privileges does it need to run and lots more.  
+ 有关 "扩展" 入门的信息，请参阅 [创建扩展教程][CreateAnExtensionPart1]。 
 
-![View of files in zip](media/index-image5-filemanager-view.png)  
 
-### Launching the Extension server  
-
-When you deploy to a web server, that web server, whether it is Apache, IIS, NGINX or any other, contains your web bundle.  When a browser navigates to a URL on a server, the `index.html` file on the web server is downloaded.  The browser navigated using certificates, configuration files, and more.  The `index.html` file is stored at some special location on the web server.   How does your Extension do the same thing?  Particularly, how is the tab page of your browser able to get to this zip file \(your Extension\)?  That is what the Extension runtime does for you.  
-
-The extension serves the files all from the URL \(uniform resource locator\) at the name `extension://{some-long-unique-identifier}/index.html`.  The name I put in brackets, `{some-long-unique-identifier}` is a unique identifier assigned to the Extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each Extension has a unique identifier that points at the zip file \(or Extension bundle\) installed inside your browser.  
-
-<!--![Unique URLS for Extensions](media/index-image4-uniqueurls.png)  -->  
-
-<!--todo: add image for unique URLs  -->  
-
-### Extensions manage and communicate with tabs and the browser toolbar  
-
-Extensions interact with the toolbar of the browser, each is able to manage all the other running tab pages in a safe way, as well as manipulating the DOM of all those tab pages.  Built into the Chromium browser is a message API that allows for communications between the Extensions and the tab pages to allow this to happen gracefully.  This API, also known as the Extensions API gives a lots of capabilities including notification management, storage management, and much more.  
-
-Just like web servers, Extensions are able to continually run \(or sleep waiting for notifications\) all the time that the browser is running.  You may think of an Extension as an orchestrator for the browser.  Again, the Extension runs completely isolated from the tab pages, but through the Extensions API, and opt-in permissions granted to the Extension, each Extension is able to virtually control any and all tab pages running in the browser.  
-
-### Extensions provide an opt-in at install time security model  
-
-Each Extension, through a declaration in the `manifest.json` file allows the person installing the Extension to give it different levels of authority.  This authority allows Extensions, when installed by a user, to opt-in so that the Extension is able to extract any information, and process that data through the Extension.  
 
 <!-- image links -->  
 
 <!-- links -->  
+
+[CreateAnExtensionPart1]: ./part1-simple-extension.md "创建扩展教程-第1部分 |Microsoft 文档"  

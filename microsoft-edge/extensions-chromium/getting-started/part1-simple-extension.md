@@ -1,63 +1,61 @@
 ---
-description: Extensions Getting Started Part 1
-title: Build A Simple Extension That Pops Up NASA Picture Of The Day
+description: 生成弹出 NASA 图片的扩展
+title: 创建扩展教程-第1部分
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 09/23/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
-ms.openlocfilehash: 826401869b98d339e9b156a3727d94bd1182063d
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium、web 开发、html、css、javascript、开发人员、扩展
+ms.openlocfilehash: 3809bfac714621cf97184127132487ed93958a2f
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015763"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104705"
 ---
-# Build A Simple Extension That Pops Up NASA Picture Of The Day 
- 
-<!--  
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
--->  
+# 创建扩展教程-第1部分  
 
-## Overview  
+## 概述  
 
-In part 1, the goal is to build a very simple Edge Chromium Extension starting with an empty directory.  The goal for this Extension is to complete the following tasks.  
+本教程的目标是构建 Microsoft Edge (Chromium) 扩展名，从空目录开始。 我们将生成一个扩展，它将弹出一天的 NASA 图片。 在本教程中，你将了解如何通过以下方式创建扩展：
 
-*   Create icons for the Extension that may be used in multiple places and in different sizes  
-*   Create a simple `manifest.json` file  
-*   Display a launch icon that when selected displays a pop-up window containing the NASA picture of the day  
+*   创建 `manifest.json` 文件。  
+*   添加图标。  
+*   打开一个默认的弹出对话框。  
 
-## The manifest file basics  
+## 开始之前
 
-Every Extension package must have a `manifest.json` file at the root.  You should think of this as the blueprint for the Extension.  It tells the browser engine what version of the Extension API the Extension expects, the name and description of the Extension, and lots of other details, many of which are discussed in this multi-part Extension Getting Started guide.  
+如果你想要测试将在本教程中生成的完成的扩展，请下载 [源代码][ArchiveExtensionGettingStartedPart1]。  
 
-Below is the simple  `manifest.json`  
+## 步骤1：创建 `manifest.json` 文件
+
+每个扩展包都必须在 `manifest.json` 根目录处拥有一个文件。  清单提供你的扩展、扩展包版本、扩展名名称和说明等详细信息。  
+
+以下代码片段概述了文件中所需的基本信息 `manifest.json` 。  
 
 ```json
 {
-    "name": "NASA Picture of the day viewer",
+    "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium Extension to show the NASA Picture of the Day."
+    "description": "A Chromium extension to display the NASA picture of the day."
 }
 ```  
 
-## Extension icons setup  
+## 步骤2：添加图标  
 
-Next add some icons to `manifest.json` file \(and create a new `/icons` directory with the icons files\).  The icons are used for the background image of the button the user selects to launch the extension \(if there is one\), and other places that are appropriate.  
+首先 `icons` 在项目中创建目录以存储图标图像文件。  图标用于用户选择以启动扩展的按钮的背景图像。  
 
-`PNG` is the recommended format, but you may also use `BMP`, `GIF`, `ICO` and `JPEG`.  It is recommended to always have at least a 128x128 pixels size icon and the browser automatically resizes it as necessary.  
-
-Your directory structure should look like the following diagram.  
-
-<!--  
-:::image type="complex" source="./media/part1-heirarchy.png" alt-text="Directory Structure&quot;:::
-   Directory Structure
+:::image type="complex" source="./media/part1-badge1.png" alt-text="工具栏上的图标以打开您的扩展&quot;:::
+   工具栏上的图标以打开您的扩展
 :::image-end:::
--->  
 
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
+对于图标，建议使用： 
+*   `PNG` 图标的格式，但你也可以使用 `BMP` 、 `GIF` `ICO` 或 `JPEG` 格式。  
+*   128 x 128 px 的图像（如有必要）根据浏览器调整大小。  
+
+项目的目录应类似于以下结构。   
 
 ```shell
 └── part1
@@ -69,14 +67,14 @@ Your directory structure should look like the following diagram.
         └── nasapod128x128.png
 ```  
 
-Your updated `manifest.json` file should appear as follows.  
+接下来，将图标添加到 `manifest.json` 文件中。 `manifest.json`用图标信息更新文件，使其与以下代码片段匹配。 `png`以下代码中列出的文件在本文前面所述的下载文件中可用。  
 
 ```json
 {
-    &quot;name&quot;: &quot;NASA Picture of the day viewer&quot;,
+    &quot;name&quot;: &quot;NASA picture of the day viewer&quot;,
     &quot;version&quot;: &quot;0.0.0.1&quot;,
     &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA Picture of the Day.&quot;,
+    &quot;description&quot;: &quot;A chromium extension to show the NASA picture of the day.&quot;,
     &quot;icons&quot;: {
         &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
         &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
@@ -86,103 +84,27 @@ Your updated `manifest.json` file should appear as follows.
 }
 ```  
 
-> [!NOTE]
-> The icon `png` files listed previous code are available in the zip download mentioned at the top of this page.  
+## 步骤3：打开默认的弹出对话框  
 
-## Adding a default pop-up dialog  
+现在，创建一个 `HTML` 在用户启动您的扩展时运行的文件。  创建 `popup.html` 在名为的目录中调用的 HTML 文件 `popup` 。  当用户选择启动扩展的图标时， `popup/popup.html` 将显示为模式对话框。  
 
-Now, create an `HTML` file that is automatically run when the user selects on the extension icon.  
-
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Directory Structure&quot;:::
-   Directory Structure
-:::image-end:::
--->  
-
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
-
-```shell
-└── part1
-    ├── _manifest.json
-    └── icons
-        ├── nasapod16x16.png
-        ├── nasapod32x32.png
-        ├── nasapod48x48.png
-        └── nasapod128x128.png
-```  
-
-Your updated `manifest.json` file should appear as follows.  
-
-```json
-{
-    &quot;name&quot;: &quot;NASA Picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA Picture of the Day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png"
-    }
-}
-```  
-
-In the `popup` directory , add the file `popup.html` and have it render the stars image.  Here is the `popup.html` file.  
+将以下代码片段中的代码添加到 `popup.html` 以显示星图像。  
 
 ```html
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>NASA Picture of the Day</title>
+        <title>NASA picture of the day</title>
     </head>
     <body>
         <div>
-            <img src="/images/stars.jpeg" alt="stars" />
+            <img src="/images/stars.jpeg" alt="Display the stars image" />
         </div>
     </body>
 </html>
 ```  
 
- Also, add an image file `images/stars.jpeg` that is referenced in the `popup.html` file.  
-
-The directory structure for the example Extension is displayed in the following diagram.  
-
-<!--  
-:::image type="complex" source="./media/part1-heirarchy1.png" alt-text="Directory Structure&quot;:::
-   Directory Structure
-:::image-end:::
--->  
-
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
-
-```shell
-└── part1
-    ├── _manifest.json
-    └── icons
-        ├── nasapod16x16.png
-        ├── nasapod32x32.png
-        ├── nasapod48x48.png
-        └── nasapod128x128.png
-```  
-
-Your updated `manifest.json` file should appear as follows.  
-
-```json
-{
-    &quot;name&quot;: &quot;NASA Picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA Picture of the Day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png":::
-   Directory Structure for Extension
-:::image-end:::
--->  
-
-<!--![Directory Structure for Extension][ImagePart1Heirarchy1]  -->  
+确保将图像文件添加 `images/stars.jpeg` 到 "images" 文件夹。  项目的目录应类似于以下结构。   
 
 ```shell
 └── part1
@@ -198,124 +120,41 @@ Your updated `manifest.json` file should appear as follows.
         └── popup.html
 ```  
 
-<!--  
-> [!NOTE]
-> The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
--->  
-
-That is everything you need to build a working Extension.  All that is left to do is test it.  
-
-The next section explains how to load the Extension \(sometimes called side loading\) into the Microsoft Edge \(Chromium\) browser to test it.  
-
-## Run your Extension locally in your browser while developing it \(side-loading\)  
-
-The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your Extensions while you are developing.  
-
-The process is quite simple.  You must first select the three dots at the top of your browser.  Next, choose `Extensions` from the context menu as shown in the following image.  
-
-:::image type="complex" source="./media/part1-threedots.png" alt-text="Directory Structure&quot;:::
-   Directory Structure
-:::image-end:::
--->  
-
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
-
-```shell
-└── part1
-    ├── _manifest.json
-    └── icons
-        ├── nasapod16x16.png
-        ├── nasapod32x32.png
-        ├── nasapod48x48.png
-        └── nasapod128x128.png
-```  
-
-Your updated `manifest.json` file should appear as follows.  
+最后，确保在 "" 下注册弹出窗口 `manifest.json` `browser_action` ，如以下代码片段所示。  
 
 ```json
 {
-    &quot;name&quot;: &quot;NASA Picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA Picture of the Day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png":::
-   Choose Extensions
-:::image-end:::
-
-<!--![Choose Extensions][ImagePart1Threedots]  -->  
-
-When you are on the **Extensions** page as shown in the following image, enable the **Developer mode** by enabling the toggle at the bottom left of the page as shown in the following image.  
-
-:::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Directory Structure&quot;:::
-   Directory Structure
-:::image-end:::
--->  
-
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
-
-```shell
-└── part1
-    ├── _manifest.json
-    └── icons
-        ├── nasapod16x16.png
-        ├── nasapod32x32.png
-        ├── nasapod48x48.png
-        └── nasapod128x128.png
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "A chromium extension to display the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    }
+}
 ```  
 
-Your updated `manifest.json` file should appear as follows.  
+## 后续步骤
+这就是开发工作扩展所需的所有内容。 现在，继续旁加载并测试您的扩展。 有关详细信息，请参阅 [旁加载扩展][TestExtensionSideload]。  
 
-```json
-{
-    &quot;name&quot;: &quot;NASA Picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA Picture of the Day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png":::
-   Enable Developer Mode
-:::image-end:::
 
-<!--![Enable Developer Mode][ImagePart1DevelopermodeToggle]  -->  
+<!-- image links -->  
 
-## Installing and updating side-loaded Extensions  
+<!--[ImagePart1Heirarchy]: ./media/part1-heirarchy.png "Directory Structure"  -->  
+<!--[ImagePart1Badge1]: ./media/part1-badge1.png "Toolbar Badge Icon"  -->  
+<!--[ImagePart1Heirarchy1]: ./media/part1-heirarchy1.png "Directory Structure for Extension"  -->  
+<!--[ImagePart1Threedots]: ./media/part1-threedots.png "Choose Extensions"  -->  
+<!--[ImagePart1DevelopermodeToggle]: ./media/part1-developermode-toggle.png "Enable Developer Mode"  -->  
+<!--[ImagePart1InstalledExtension]: ./media/part1-installed-extension.png "Installed Extensions"  -->  
 
-The first time you want to install your Extension, you choose the `Load Unpacked` option as shown in the following image.  This prompts you for a directory where you have your Extension assets file by file.  This installs the Extension as if you had downloaded it from a store.  
+<!-- links -->  
 
-:::image type="complex" source="./media/part1-installed-extension.png" alt-text="Directory Structure&quot;:::
-   Directory Structure
-:::image-end:::
--->  
+[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "已完成扩展程序包源 |Microsoft 文档"
 
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
-
-```shell
-└── part1
-    ├── _manifest.json
-    └── icons
-        ├── nasapod16x16.png
-        ├── nasapod32x32.png
-        ├── nasapod48x48.png
-        └── nasapod128x128.png
-```  
-
-Your updated `manifest.json` file should appear as follows.  
-
-```json
-{
-    &quot;name&quot;: &quot;NASA Picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA Picture of the Day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png"  
+[TestExtensionSideload]: ./extension-sideloading.md "测试您的扩展 (旁加载) |Microsoft 文档"
