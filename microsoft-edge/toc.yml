@@ -360,13 +360,16 @@
     - name: 扩展（Chromium）
       href: extensions-chromium/index.md
       items:
-        - name: 入门教程
-          href: extensions-chromium/getting-started/index.md
+        - name: 入门
           items:
-            - name: 创建简单扩展 - 第一部分
+            - name: 扩展体系结构
+              href: extensions-chromium/getting-started/index.md
+            - name: 创建扩展教程第 1 部分
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: 创建简单扩展 - 第 二 部分
+            - name: 创建扩展教程第 2 部分
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: 旁加载扩展
+              href: extensions-chromium/getting-started/extension-sideloading.md
         - name: 开发人员指南
           items:
             - name: 将 Chromium 扩展移植到 Microsoft Edge
