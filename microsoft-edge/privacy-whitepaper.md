@@ -3,7 +3,7 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2020
+ms.date: 10/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, 隐私, 白皮书, 信任
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 35227178a909ae6b378c4a17f578bac364f551c7
-ms.sourcegitcommit: ad02b0a3159eb9f111a580d1c229cb4297467210
+ms.openlocfilehash: 132b07236f31568d6f9c24b7616eb02fffe9df09
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009243"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104761"
 ---
 # Microsoft Edge 隐私白皮书  
 
@@ -96,33 +96,41 @@ Microsoft Edge 每隔 24 小时下载一个支持的网站列表，其中存在�
 
 若要从设备的文件系统中清除本地存储的故障诊断数据，请转到 `edge://crashes`，然后选择“**全部清除**”按钮。  
 
-若要在 Windows 10 上禁用故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  对于所有其他平台上的 Microsoft Edge 版本，请转到 `edge://settings/privacy`，然后禁用“**通过发送故障报告和有关如何使用浏览器的数据来改进 Microsoft 产品**”设置。  企业也可以通过[组织管理的组策略][DeployedgeEnterprisePrivacySettings]来禁用诊断数据收集功能。  
+若要在 Windows 10 上禁用故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  对于所有其他平台上的 Microsoft Edge 版本，请转到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置。  企业也可以通过[组织管理的组策略][DeployedgeEnterprisePrivacySettings]来禁用诊断数据收集功能。  
 
 ## 开发人员工具
 
 Microsoft Edge 开发人员工具提供用于网站调试和测试的工具。 若要访问开发人员工具，请打开“**设置和更多(...)**” > “**更多工具**”并选择“**开发人员工具**”。  当你在开发人员工具中启用某些功能时，Microsoft Edge 将从 Microsoft 服务器请求模块并将其下载到你的设备。  发送的模块请求是通过安全的 HTTPS 连接进行的，并且包含表示正在使用的 Microsoft Edge 版本的非唯一标识符。  需要远程下载的特定体验包括“3D 视图”和“元素工具辅助功能”窗格。  Webhint 集成需要在打开开发人员工具时自动请求的远程模块。  
 
-## 有关如何使用浏览器的诊断数据  
+## 诊断数据
 
-Microsoft 使用诊断数据来改进 Microsoft 产品和服务，确保 Microsoft 产品安全和保持最新状态，帮助更好地了解 Microsoft 产品的执行情况。 每次 Microsoft Edge 团队收集数据时，都会为你验证所做的决策是否是正确之选。  Microsoft 认可并践行信息收集最小化。  Microsoft Edge 团队致力于仅收集所需的信息，并只存储改进 Microsoft 产品和服务所需的信息。  
+Microsoft 使用诊断数据改进我们的产品和服务，确保我们的产品安全、保持最新状态且按预期运行。无论何时收集数据，我们都希望确保该方式适合你。 Microsoft 认可并践行信息收集最小化。 我们力争只收集所需信息，并仅在改进我们的产品和服务所需的时限内存储这些信息。 
 
-在 Microsoft Edge 中以及使用 Microsoft Edge Web 平台的其他应用程序中使用功能和服务时，有关如何使用这些功能的诊断数据将发送到 Microsoft。  诊断数据包括安装 Microsoft Edge、功能使用情况、性能和内存使用情况等信息。  例如，如果你收藏一个网站，Microsoft Edge 团队将收到信息“已单击收藏夹按钮并已成功添加收藏夹”，但不会将具体网站设置为收藏项。  诊断数据还包含性能信息，如打开新选项卡所需的毫秒数。白皮书中提及的功能和服务收集诊断数据。  
+Microsoft Edge 收集一系列必选诊断数据，以确保产品安全、保持最新状态且正常运行。 必选诊断数据包括设备连接、配置信息、软件设置和清单数据等数据。 Microsoft 使用这种必选诊断数据来解决问题，并确保 Microsoft 产品和服务安全可靠且正常运行。 如需详细了解所管理设备的诊断数据，请参阅[在组织中配置 Windows 诊断数据][WindowsPrivacyConfigureDiagnosticDataOrganization]和 [Microsoft Edge 诊断数据组策略](https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings)。 
 
 :::image type="complex" source="./media/whitepaper-media/diagnostic-data2.png" alt-text="地址栏" lightbox="./media/whitepaper-media/diagnostic-data2.png":::
    诊断数据  
 :::image-end:::  
 
-此外，Microsoft Edge 还收集一系列必需的诊断数据，以确保产品保持最新状态、安全可靠且正常运行。  必需的诊断数据包括设备连接、有关当前数据收集许可设置的配置信息、应用版本和安装状态。  仅可使用组织管理的组策略禁用此设置。  有关组织中诊断数据的详细信息，请参阅[在组织中配置 Windows 诊断数据][WindowsPrivacyConfigureDiagnosticDataOrganization]。  
+此外，你还可以选择共享可选诊断数据。 在使用 Microsoft Edge 功能和服务以及使用 Microsoft Edge Web 平台的其他应用程序时，Microsoft Edge 将发送有关你如何使用这些功能的可选诊断数据。 在你的授权下，这些可选诊断数据将发送到 Microsoft，以便为每个人改进 Microsoft 产品和服务。 此数据的收集或存储不会涉及你的 Microsoft 帐户。  
 
-Microsoft Edge 生成诊断数据并将其存储在本地，并定期发送给 Microsoft。  诊断数据是使用 HTTPS 发送的，并存储在 Microsoft 服务器上。  诊断数据与设备特有的标识符以及浏览器特有的可重置标识符相关联。  标识符不包含你的个人信息。  若要在 Windows 10 设备上重置浏览器特有的标识符，请打开“**开始**” > “**设置**” > “**隐私**” > “**诊断和反馈**”，在“**删除诊断数据**”下选择“**删除**”，或将“**诊断数据**”下的设置从“**完整**”更改为“**基本**”。  在其他平台上，若要生成浏览器特有的新的可重置标识符 (ID)，请转到 `edge://settings/privacy`，然后禁用“**通过发送有关如何使用浏览器的数据来改进 Microsoft 产品**”设置。  对于由组织设置的组策略管理的设备，重置 ID 功能可能有所不同。  
+可选诊断数据包括功能使用情况、性能数据、网站加载时间、内存使用情况和你所访问的网站等信息。 例如，如果你收藏一个网站，可选诊断数据包括表明已选择收藏按钮并已成功添加收藏项的信息，但不包括具体将哪个网站设置成了收藏项。  
 
-若要查看在 Windows 10 版本 1803 \（2018 年 4 月更新\）或更高版本上诊断数据查看器中与 Microsoft 共享的产品数据，请转到“**开始**” > “**设置**” > “**隐私**” > “**诊断和反馈**”，然后在“**查看诊断数据**”下选择“**打开诊断数据查看器**”。  
+有关你在 Microsoft Edge 中访问的网站的信息可帮助我们了解网站的加载速度，并为所有用户提高搜索结果的相关性。 这些数据包括有关相应网站的信息，例如你访问的页面的 URL、网站指标、页面标题、你访问该页面的方式、有关页面内容的信息，以及有关页面导航的其他相关信息。  
 
-对于其他平台或 Windows 10 版本 1803 及更低版本，若要查看诊断数据，请转到 `edge://data-viewer`。  若要查看自上次打开查看器后定期发送到 Microsoft 的数据，请转到 `edge://data-viewer`。  若要查看特定会话的哪些数据发送到 Microsoft，请刷新查看器。  用于填充 `edge://data-viewer` 的数据本地存储在设备上。  若要清除查看器中的数据，请关闭 `edge://data-viewer` 选项卡。  
+诊断数据将使用 HTTPS 发送，并存储在 Microsoft 服务器上。 在 Windows 设备上，在发送诊断数据时将随同发送设备所特有的识符。 在其他设备上，诊断数据与浏览器特有的可重置标识符相关联，该标识符是随机生成的，不包含你的个人信息。  
 
-诊断数据存储在 Microsoft 服务器上，最长可保留 18 个月。  若要删除 Windows 10 上的诊断数据，请打开“**开始**” > “**设置**” > “**隐私**” > “**诊断和反馈**”，然后在“**删除诊断数据**”下，选择“**删除**”。  仅 Windows 10 版本 1803 或更高版本支持删除诊断数据功能。  有关详细信息，请参阅 [Windows 10 中的诊断、反馈和隐私][MicrosoftSupport4468236]。  
+Microsoft Edge 团队通过限制数据访问或清除个人身份信息来尊重诊断数据的敏感性。 若要在 Windows 10 设备上重置浏览器所特有的标识符，请转到“开始” > “设置” > “隐私” > “诊断和反馈”，然后在“删除诊断数据”下选择“删除”，或者在“诊断数据”下将设置从“完整”更改为“基本”或禁用“可选诊断数据”。****************************************  
 
-对于 Windows 10 上的 Microsoft Edge，“**通过发送有关如何使用浏览器的数据来改进 Microsoft 产品**”设置取决于你的 Windows 诊断数据设置。  若要查看设置的状态，请转到 `edge://settings/privacy`。  若要更改 Windows 设置，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  在控制诊断数据收集的所有其他平台上，转到 `edge://settings/privacy`，然后禁用“**通过发送故障报告和有关如何使用浏览器的数据来改进 Microsoft 产品**”设置。  该设置用于与设备上安装 Microsoft Edge 相关联的所有配置文件。  此设置不会跨设备同步。  此设置适用于 InPrivate 浏览和来宾模式。  若要查看设备是否是由组织设置的组策略管理的，请转到 `edge://settings/privacy`。  
+在其他平台上，若要生成浏览器所特有的全新可重置标识符 \(ID\)，请转到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置。 对于由组织设置的组策略管理的设备，重置 \(ID\) 功能可能有所不同。 
+
+如果你使用的是 Windows 10 版本 1803（2018 年 4 月更新）或更高版本，若要在诊断数据查看器中查看与 Microsoft 共享的产品数据，请转到“开始****” > “设置****” > “隐私****” > “诊断和反馈****”，然后在“查看诊断数据****”下选择“打开诊断数据查看器****”。 
+
+对于其他平台或 Windows 10 版本 1803 及更低版本，，请转到 `edge://data-viewer` 查看诊断数据。 若要查看自上次打开查看器后定期发送到 Microsoft 的数据，请转到 `edge://data-viewer`。 若要查看特定会话的哪些数据发送到 Microsoft，请刷新查看器。 用于填充 `edge://data-viewer` 的数据本地存储在设备上。 若要清除查看器中的数据，请关闭 `edge://data-viewer` 选项卡。 
+
+为了帮助我们改进 Microsoft 产品和服务，去识别化和聚合的诊断数据最多可存储 2 年。 由于不会从 Microsoft 帐户中收集或保存诊断数据，因此可能无法从“[Microsoft 隐私仪表板][MicrosoftAccountPrivacy]”查看或删除诊断数据。 若要删除 Windows 10 上的诊断数据，请转到“开始****” > “设置****” > “隐私****” > “诊断和反馈 **”**，然后在“删除诊断数据**** 下选择“删除****”。 仅 Windows 10 版本 1803 或更高版本支持删除诊断数据功能。 有关详细信息，请参阅 [Windows 10 中的诊断、反馈和隐私][MicrosoftSupport4468236]。 
+
+对于 Windows 10 上的 Microsoft Edge，可选诊断数据的发送取决于你的 Windows 诊断数据设置。 该设置会反映在 `edge://settings/privacy` 中。 转到“开始****” > “设置****” > “隐私****” > “诊断和反馈****”，以更改 Windows 设置。 在所有其他平台上，若要控制诊断数据的集合，请转到 `edge://settings/privacy`，然后启用或禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”。 该设置用于与设备上安装 Microsoft Edge 相关联的所有配置文件。  此设置不会跨设备同步。 此设置适用于 InPrivate 浏览和来宾模式。 处于 InPrivate 浏览或来宾模式时，绝对不会发送有关你所访问的网站的信息。 如果设备是由组织设置的组策略管理的，则会反映在 `edge://settings/privacy` 中。  
 
 ## 数字版权管理和媒体许可证  
 
@@ -276,7 +284,7 @@ Microsoft Edge 提供了具有吸引力且以用户为中心的新选项卡页�
 
 如果你已使用 Microsoft 帐户登录到 Microsoft Edge，可以从“[Microsoft 隐私仪表板][MicrosoftAccountPrivacyAdSettings]”管理与“新建选项卡”页面相关联的浏览活动。  
 
-Microsoft Edge 收集有关如何使用新选项卡页的诊断数据，如与搜索框的交互以及单击快速链接磁贴的情况。  要启用有关如何使用新选项卡页的诊断数据的收集，请转到 `edge://settings/privacy`，然后启用“**通过发送故障报告和有关如何使用浏览器的数据来改进 Microsoft 产品**”设置。  浏览器将有关如何使用“Microsoft 资讯”页面的诊断数据发送到 Microsoft，以帮助了解用户与资讯内容的交互并改进 Microsoft 产品。  可通过选择“新建选项卡”页面上的“自定义”按钮来禁用“Microsoft 资讯内容”。  资讯数据通过 HTTPS 发送到 Microsoft，并保存长达 13 个月，之后会被聚合并进行匿名处理。  
+Microsoft Edge 收集有关如何使用新选项卡页的诊断数据，如与搜索框的交互以及单击快速链接磁贴的情况。  若要支持有关如何使用新标签页的诊断数据的收集，请转到 `edge://settings/privacy`，然后启用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置。  浏览器将有关如何使用“Microsoft 资讯”页面的诊断数据发送到 Microsoft，以帮助了解用户与资讯内容的交互并改进 Microsoft 产品。  可通过选择“新建选项卡”页面上的“自定义”按钮来禁用“Microsoft 资讯内容”。  资讯数据通过 HTTPS 发送到 Microsoft，并保存长达 13 个月，之后会被聚合并进行匿名处理。  
 
 通过“新建选项卡”页面，你还可以将自定义图像设置为背景。  图像本地存储在设备上，可通过删除图像或上传新图像进行删除。  不会向 Microsoft 发送有关图像的任何信息。  
 
@@ -356,13 +364,21 @@ Microsoft Edge 提供大声朗读功能，它向用户朗读网页内容。  若
 
 为改进 Microsoft Edge，Microsoft Edge 团队一直在向用户学习。  在学习过程中，某些用户可能会在新功能公开发布之前体验这些新功能。  若要为随机选定的用户启用新功能，Microsoft Edge 会定期向 Microsoft Edge 配置服务发送有关你的操作系统、频道、版本、国家/地区和其他设备配置数据的所需信息。  将使用你的浏览器所特有的可重置标识符发送数据。  数据通过 HTTPS 传输到服务。  这些数据用于接收更新以启用新功能，使 Microsoft Edge 保持最新状态并正常运行，以及改进 Microsoft 产品和服务。  组织还可以使用其他控制和配置。  有关组织的其他控制和配置的详细信息，请参阅 [Microsoft Edge 配置和试验][DeployedgeConfigurationExperiments]。  
 
-作为用户，你无法禁用由组织控制或配置的浏览器更新，但若要控制是否将产品使用情况数据发送到 Microsoft，请转到 `edge://settings/privacy`，在“**帮助改进 Microsoft Edge**”下更改设置。  
+作为用户，你无法禁用由组织控制或配置的浏览器更新，但若要控制是否将产品使用情况数据发送到 Microsoft，请转到 `edge://settings/privacy`，在“可选诊断数据****”下更改设置。  
 
-若要了解新功能如何影响 Microsoft Edge 和 Microsoft 服务，Microsoft Edge 将发送浏览器特有的可重置标识符，并提供一个功能标记，用于对 Microsoft Edge 和 Microsoft 服务启用的新功能进行编码。  新功能有助于为每个用户构建最佳体验和最佳的浏览器。  功能标记不是 Microsoft Edge 安装所特有的，且在共享同一组启用功能的所有 Microsoft Edge 安装中共享。  Microsoft Edge 将 HTTPS 中的信息发送给 Microsoft 服务。  浏览 InPrivate 或来宾模式时，浏览器不会发送信息。  要阻止发送数据，请转到 `edge://settings/privacy`，然后禁用“**通过发送故障报告和有关如何使用浏览器的数据来改进 Microsoft 产品**”设置。  有关如何重置浏览器特有的标识符的详细信息，请参阅“[有关如何使用浏览器的诊断数据](#diagnostic-data-about-how-you-use-the-browser)”部分。  
+若要了解新功能如何影响 Microsoft Edge 和 Microsoft 服务，Microsoft Edge 将发送浏览器特有的可重置标识符，并提供一个功能标记，用于对 Microsoft Edge 和 Microsoft 服务启用的新功能进行编码。  新功能有助于为每个用户构建最佳体验和最佳的浏览器。  功能标记不是 Microsoft Edge 安装所特有的，且在共享同一组启用功能的所有 Microsoft Edge 安装中共享。  Microsoft Edge 将 HTTPS 中的信息发送给 Microsoft 服务。  浏览 InPrivate 或来宾模式时，浏览器不会发送信息。  若要防止发送数据，请转到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置。  有关如何重置浏览器特有的标识符的详细信息，请参阅“[有关如何使用浏览器的诊断数据](#diagnostic-data)”部分。  
 
 ## 解决导航错误  
 
 如果 Microsoft Edge 检测到 SSL 连接超时、证书错误或可能由强制网络门户（例如，旅馆或机场的 Wi-Fi 网络）导致的其他网络问题，Microsoft Edge 将向 `http://edge.microsoft.com/captiveportal/generate_204` 发送请求并检查响应代码。  如果请求重定向到另一个 URL，Microsoft Edge 将在新选项卡中打开该 URL，假定该 URL 是一个登录页面。  对强制网络门户检测页面的请求为无状态服务，不会记录请求，也不会发送或保存 cookie。  在 Windows 平台上，Microsoft Edge 使用 Windows 强制网络门户服务。  否则，将使用 Microsoft Edge 强制网络门户服务。  若要关闭该服务，请转到 `edge://settings/privacy`，然后禁用“**使用 Web 服务来帮助解决导航错误**”设置。  
+
+## 安全 DNS
+
+若要导航到某个网站，浏览器需要查找网站 URL 中使用的主机名（如 example.com）的网络地址（例如，93.184.216.34）。 安全 DNS 使用某个服务通过与 DNS 服务提供商的 HTTPS 连接来执行此查找，从而保护查找免受网络上的攻击者的更改或窃听。  
+
+默认情况下，当前 DNS 服务提供商用于避免浏览中断。 并非所有服务提供商都提供安全 DNS。 为避免浏览中断，如果安全 DNS 连接失败，Microsoft Edge 将回退并使用当前 DNS 服务提供商执行未加密的 DNS 查找。 Microsoft Edge 支持使用特定的安全 DNS 提供商。 在已选择安全 DNS 提供商的情况下，当安全查找失败时，Microsoft Edge 不会回退到常规 DNS 查找。 你可以在 `edge://setting/privacy` 中选择自己的安全 DNS 设置。  
+
+默认情况下，对于属于组织的托管计算机，安全 DNS 处于关闭状态，但可以使用管理策略对其进行配置。 InPrivate 浏览使用启动 InPrivate 会话的配置文件中的安全 DNS 设置。 来宾模式将始终使用当前的服务提供商。
 
 ## 登录和标识  
 
@@ -396,7 +412,7 @@ SmartScreen 采用三种类型的信誉检查。  第一种是，SmartScreen 对
 
 SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 和文件的数据库。  此数据存储在安全的 Microsoft 服务器上，仅用于 Microsoft 安全服务。  数据不会用于以任何方式识别或瞄准你。  清除浏览缓存将清除所有本地存储的 SmartScreen URL 数据。  清除下载历史记录将删除本地存储的任何有关文件下载的 SmartScreen 数据。  
 
-默认情况下，Microsoft Edge 将启用 SmartScreen。  若要禁用 SmartScreen，请转到 `edge://settings/privacy`，在“**服务**”下禁用“**Microsoft Defender SmartScreen**”设置。  对于与设备上 Microsoft Edge 安装相关的所有配置文件，此设置相同。  此设置不会跨设备同步。  此设置适用于 InPrivate 浏览和来宾模式。  如果设备是通过组织设置的组策略进行管理的，则设置会反映在 Microsoft Edge 中。  若要查看设置，请转到 `edge://settings/privacy`。  有关 SmartScreen 的详细信息，请参阅 [SmartScreen：FAQ][MicrosoftSupport17443]。  
+默认情况下，Microsoft Edge 将启用 SmartScreen。  若要禁用 SmartScreen，请转到 `edge://settings/privacy`，在“安全性****”下禁用“Microsoft Defender SmartScreen****”设置。  对于与设备上 Microsoft Edge 安装相关的所有配置文件，此设置相同。  此设置不会跨设备同步。  此设置适用于 InPrivate 浏览和来宾模式。  如果设备是通过组织设置的组策略进行管理的，则设置会反映在 Microsoft Edge 中。  若要查看设置，请转到 `edge://settings/privacy`。  有关 SmartScreen 的详细信息，请参阅 [SmartScreen：FAQ][MicrosoftSupport17443]。  
 
 此外，SmartScreen 还可以检查下载文件的 URL，确定是否有任何内容可能归类为不需要的应用。  阻止可能不需要的应用有助于提供更高效、高性能和更愉悦的 Windows 体验。  此设置默认情况下处于禁用状态，并且仅在 Windows 10 设备上可用。  若要启用该功能，请转到 `edge://settings/privacy`，启用“**阻止可能不需要的应用**”设置。  有关如何对可能不需要的应用进行分类的详细信息，请参阅[可能不需要的应用程序 (PUA)][WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]。  有关如何配置设置的详细信息，请参阅[检测并阻止可能不需要的应用程序][WindowsSecurityThreatProtectionWindowsDefender]。  
 
@@ -432,7 +448,7 @@ InPrivate 和来宾模式浏览数据不会同步到你的 Microsoft 帐户。  
 
 ## 提示和建议
 
-Microsoft Edge 希望为你提供相关的提示和建议，以便在使用浏览器的过程中获得最佳体验。  Microsoft Edge 使用可用的设备连接和配置数据来提供相关的提示和建议。  此数据将由你的操作系统、区域设置、浏览器设置以及其他设备连接和配置数据组成。  将使用你的浏览器所特有的可重置标识符，通过安全的 HTTPS 连接发送该数据。  对于 Windows 10 设备，当 Microsoft Edge 正在设置时，我们推崇在 Windows 中享受定制体验。  [深入了解 Windows 中的定制体验][https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy]。  
+Microsoft Edge 希望为你提供相关的提示和建议，以便在使用浏览器的过程中获得最佳体验。  Microsoft Edge 使用可用的设备连接和配置数据来提供相关的提示和建议。  此数据将由你的操作系统、区域设置、浏览器设置以及其他设备连接和配置数据组成。  将使用你的浏览器所特有的可重置标识符，通过安全的 HTTPS 连接发送该数据。  对于 Windows 10 设备，当 Microsoft Edge 正在设置时，我们推崇在 Windows 中享受定制体验。  [深入了解 Windows 中的定制体验](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)。  
 
 在 InPrivate 浏览或来宾模式下，不会发送此数据。  
 
@@ -458,27 +474,13 @@ Microsoft Edge 可用于安装网站开发人员制作的 Web 应用，并固定
 
 ## WebView
 
-Microsoft Edge WebViews 允许应用开发人员在 Windows 10 和 Windows 7 上的本机应用程序中托管 Web 内容。  托管 Microsoft Edge WebView 的应用程序可能会向 Microsoft 发送诊断数据，例如，如何使用 Microsoft Edge Web 平台和你在应用程序中访问的网站。  若要启用诊断数据收集，请转到 `edge://settings/privacy`，在“**帮助改进 Microsoft Edge**”下启用该设置。  若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  若要关闭所有其他平台的诊断数据收集，请在正常浏览会话中转到 `edge://settings/privacy`，禁用“**通过发送故障报告和有关如何使用浏览器的数据来改进 Microsoft 产品**”和“**通过发送在 Microsoft Edge 中访问的网站信息来实现高效搜索和改进 Microsoft 产品**”设置。  托管 Microsoft Edge WebView 的应用程序可能会收集由开发人员的数据收集管理以及相关隐私策略所管理的其他数据。  
+Microsoft Edge WebViews 允许应用开发人员在 Windows 10 和 Windows 7 上的本机应用程序中托管 Web 内容。  托管 Microsoft Edge WebView 的应用程序可能会向 Microsoft 发送诊断数据，例如，如何使用 Microsoft Edge Web 平台和你在应用程序中访问的网站。  若要启用诊断数据收集，请转到 `edge://settings/privacy`，在“可选诊断数据****”下启用该设置。  若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  若要关闭所有其他平台的诊断数据收集，请在正常浏览会话中转到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置。  托管 Microsoft Edge WebView 的应用程序可能会收集由开发人员的数据收集管理以及相关隐私策略所管理的其他数据。  
 
-## 为提高产品和服务质量而访问的网站  
-
-如果你选择改进搜索和其他 Microsoft 产品和服务，Microsoft Edge 将向 Microsoft 发送有关你访问的网站的信息。  将聚合诊断数据，用于为所有用户改进 Microsoft 产品和服务，而不是收集或存储在你的 Microsoft 帐户中。  在 Microsoft Edge 中发送有关你访问的网站的信息，有助于 Microsoft 了解网站的加载速度，并提高搜索结果的相关性。  
-
-诊断数据包括你访问的页面的 URL、网站指标、页面标题、页面的访问方式、有关页面内容的信息，以及有关页面导航的其他相关信息。  某些诊断数据附加了设备特有的标识符。  否则，诊断数据与浏览器特有的可重置标识符相关联。  标识符不包含你的个人信息。  Microsoft Edge 团队通过限制数据访问和/或清除个人身份信息来尊重诊断数据的敏感性。  若要在 Windows 10 设备上重置浏览器特有的标识符，请打开“**开始**” > “**设置**” > “**隐私**” > “**诊断和反馈**”，在“**诊断数据**”下，将“**完整**”更改为“**基本**”。  在其他平台上，若要为你的浏览器生成一个新的可重置标识符，请转到 `edge://settings/privacy`，然后将“**通过发送在 Microsoft Edge 中访问的网站信息来实现高效搜索和改进 Microsoft 产品**”设置从“**启用**”更改为“**禁用**”。  对于由组织设置的组策略管理的设备，重置功能可能有所不同。  
-
-对于 Windows 10 上的 Microsoft Edge，该设置取决于你的 Windows 诊断数据设置。  若要查看 Microsoft Edge 中的反射设置，请转到 `edge://settings/privacy` 的“**隐私**”和“**服务**”下方。  若要更改 Windows 设置，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  在所有其他平台上，若要控制诊断数据收集，请转到 `edge://settings/privacy`，然后启用或禁用“**通过发送在 Microsoft Edge 中访问的网站信息来实现高效搜索和改进 Microsoft 产品**”设置。  对于与设备上 Microsoft Edge 安装相关的所有配置文件，此设置相同。  此设置不会跨设备同步。  若要查看设备是否是由组织设置的组策略管理的，请转到 `edge://settings/privacy`。  
-
-诊断数据在传输过程中加密，并以原始格式存储在安全的 Microsoft 服务器上长达 30 天。  去识别化并聚合诊断数据后，将删除原始诊断数据。  去识别化和聚合的诊断数据最多可存储 2 年，以继续改进 Microsoft 产品和服务。  由于不会从 Microsoft 帐户中收集或保存诊断数据，因此可能无法从“[Microsoft 隐私仪表板][MicrosoftAccountPrivacy]”查看或删除诊断数据。  在 Windows 10 设备上，若要请求删除与设备相关联的诊断数据，请打开“**开始**” > “**设置**” > “**隐私**” > “**诊断和反馈”**，然后在“**删除诊断数据**下选择“**删除**”。  在其他平台上，诊断数据将被删除或完全聚合，并在 30 天内进行匿名处理。  
-
-若要查看 Windows 10 上收集的数据，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”，然后选择“**查看诊断数据**”。  若要在其他平台上查看数据，请转到 `edge://data-viewer`。  在其他平台上，若要启用诊断数据查看器功能，请转到 `edge://settings/privacy`，然后启用“**通过发送在 Microsoft Edge 中访问的网站信息来实现高效搜索和改进 Microsoft 产品**”设置。  
-
-浏览 InPrivate 或处于来宾模式时，不会发送诊断数据。  
-
-## Windows Defender 应用程序保护  
+## Windows Defender 应用程序防护  
 
 Windows Defender 应用程序防护 (WDAG) 是一项适用于组织的功能。  当 Windows Defender 应用程序防护处于启用状态时，Microsoft Edge 将在独立容器内打开不受信任的网站，以保护组织中的资源免受恶意网站或钓鱼攻击。  该功能仅通过组织管理的组策略打开，并且仅适用于 Windows 10 的最新版本。  WDAG 收集有关在独立容器中打开不受信任的网站的产品改进诊断数据（例如打开新应用程序防护窗口所需的时间）。  
 
-在你允许的情况下，WDAG 还会收集你如何使用浏览器的信息以及所访问的网站的信息。  若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  若要禁用所有其他平台的诊断数据收集，请在正常浏览会话中转到 `edge://settings/privacy`，禁用“**通过发送故障报告和有关如何使用浏览器的数据来改进 Microsoft 产品**”和“**通过发送在 Microsoft Edge 中访问的网站信息来实现高效搜索和改进 Microsoft 产品**”设置。  
+在你允许的情况下，WDAG 还会收集你如何使用浏览器的信息以及所访问的网站的信息。  若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  若要禁止所有其他平台的诊断数据收集，请在正常浏览会话中转到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置。  
 
 ## Windows 信息保护  
 
@@ -500,7 +502,7 @@ Microsoft Edge 可通过 [Chromium][ChromiumMain] 开源项目和其他开源软
 
 Microsoft Edge 团队将始终倾听客户的意见，且非常重视客户的反馈。  若要在 Microsoft Edge 中提供反馈，请打开“**设置和更多**” > “**帮助和反馈**”并选择“**发送反馈**”。  对于渐进式 Web 应用 (PWA)，请打开“**设置和更多(...)**”并选择“**向 Microsoft 发送反馈**”。  必须提供有关反馈的详细信息，但可以选择是否提供其他信息。  如果从 Microsoft Edge 配置文件检测到电子邮件，它将预填充你所在网站的当前 URL 和相关诊断数据。  诊断数据可能包含有关已启用的 Microsoft Edge 功能和浏览器使用情况的数据。  也可以选择将屏幕截图、设备中的文件和浏览器记录包含在内。  提供的可选屏幕截图、文件或记录可能包含个人身份信息。  数据仅用于诊断和产品改进目的。  
 
-用户反馈将通过 HTTPS 安全发送到 Microsoft，并存储在安全的 Microsoft 服务器上。  如果包含电子邮件地址，且 Microsoft Edge 隐私设置中启用了“**通过发送故障报告和有关如何使用浏览器的数据来改进 Microsoft 产品**”设置，则设备上的浏览器安装所特有的标识符将与你的反馈相关联。  所有诊断数据（包括诊断日志、记录和附件）最多保存 30 天。  剩下的反馈数据（包括可选的屏幕截图）最多保存 15 个月。  如果你提供了含反馈项的电子邮件，则[请求][MicrosoftConcernPrivacy]删除反馈。  
+用户反馈将通过 HTTPS 安全发送到 Microsoft，并存储在安全的 Microsoft 服务器上。  如果你包含电子邮件地址，并且在 Microsoft Edge 隐私设置中启用了“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置，则你设备上的浏览器安装所特有的标识符将与你的反馈相关联。  所有诊断数据（包括诊断日志、记录和附件）最多保存 30 天。  剩下的反馈数据（包括可选的屏幕截图）最多保存 15 个月。  如果你提供了含反馈项的电子邮件，则[请求][MicrosoftConcernPrivacy]删除反馈。  
 
 <!-- links -->  
 
