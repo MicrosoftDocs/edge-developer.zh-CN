@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html、ICoreWebView2Environment
-ms.openlocfilehash: 3552de59b8b349c62d61ca165141d9adddd2a5a9
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: edf573bc7c4c83c7882005937db29a068ab7b015
+ms.sourcegitcommit: 2d57b515d6ccbbe24cb3a8c8f44f9c3a26fc17a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11011629"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "11115783"
 ---
 # interface ICoreWebView2Environment 
 
@@ -224,7 +224,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 ```
  当应用程序在失败时重试 CreateCoreWebView2Controller 时，建议应用程序从创建新的 WebView2 环境中重新启动。 如果发生边缘更新，则与 WebView2 环境相关联的版本可能已被删除，导致该对象不再工作。 创建新的 WebView2 环境将起作用，因为它使用最新版本。
 
-如果已存在使用相同用户数据文件夹的正在运行的实例，并且环境对象具有不同的 EnvironmentOptions，则 Web 视图创建将失败。 例如，如果已有使用一种语言创建的 Web 视图，尝试使用同一用户数据文件夹创建使用不同语言的 Web 视图将失败。
+如果已有一个正在使用相同用户数据文件夹的正在运行的实例，并且环境对象具有不同的 EnvironmentOptions，或者 HWND parentWindows 具有不同的 DPI 感知，则 Web 视图创建将失败。 例如，如果已有使用一种语言创建的 Web 视图，尝试使用同一用户数据文件夹创建使用不同语言的 Web 视图将失败。
 
 #### CreateWebResourceResponse 
 
