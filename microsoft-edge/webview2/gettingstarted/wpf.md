@@ -1,23 +1,23 @@
 ---
-description: 在 WPF 应用中将 web 内容与 Microsoft Edge Web 视图2控件一起托管
-title: 适用于 WPF 应用的 Microsoft Edge Web 视图2
+description: 适用于 WPF 应用的 WebView2 入门指南
+title: WPF 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 65cd858cc314060e75113337f0ae6efc59896a43
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 8a18d12f30872ce3dd373e40ce8c7a4f0c4edad9
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010722"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119113"
 ---
 # WPF 中的 WebView2 入门 (预览) 
 
-在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](../index.md)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](../reference/dotnet/0-9-628-reference-webview2.md)。  
+在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](../index.md)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.wpf)。  
 
 ## 必备条件  
 
@@ -39,46 +39,23 @@ ms.locfileid: "11010722"
              WPF 核心 :::image-end:::
        :::column-end:::
        :::column span="1":::
-          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="WPF 框架":::
-             WPF 框架 :::image-end:::
-       :::column-end:::
-    :::row-end:::
-    
-1.  输入 " **项目名称** " 和 " **位置**" 值。  选择 ".NET Framework 4.6.2 或更高版本" 或 ".NET Core 3.0 或更高版本"。  
+          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="WPF 核心" 或 ".NET Core 3.0 或更高版本"。  
     
     :::row:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="创建核心":::
+              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="WPF 核心":::
                  创建核心 :::image-end:::
            :::column-end:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="创建框架":::
-                 创建框架 :::image-end:::
-           :::column-end:::
-        :::row-end:::
+              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="WPF 核心" **管理 NuGet 程序包 ...**"。  
     
-1.  选择 " **创建** " 以创建项目。  
-    
-## 步骤 2-安装 WebView2 SDK  
-
-接下来，将 WebView2 SDK 添加到项目。  对于预览，使用 Nuget 安装 WebView2 SDK。  
-
-1.  打开项目上的上下文菜单 \ (右键单击 "\ ) "，然后选择 " **管理 NuGet 程序包 ...**"。  
-    
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget.exe":::
-       Nuget.exe
-    :::image-end:::
-    
-1.  `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
-
-    > [!IMPORTANT]
-    > 确保选中 " **包括预**发布"，选择 " **版本**" 中的预发布程序包，然后选择 " **安装**"。  
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="WPF 核心" **安装**"。  
   
      ![nuget.exe](./media/installnuget.PNG)
     
     全部设置为使用 WebView2 API 开始开发应用程序。  选择 `F5` 以生成并运行项目。  正在运行的项目显示一个空窗口。  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="空应用":::
+    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="WPF 核心":::
        空应用
     :::image-end:::  
     
@@ -125,7 +102,7 @@ ms.locfileid: "11010722"
     
 1.  按 `F5` 生成并运行你的项目。  确认你的 WebView2 控件是否显示 [https://www.microsoft.com](https://www.microsoft.com) 。  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
+    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="WPF 核心":::
        Microsoft.com
     :::image-end:::  
     
@@ -183,7 +160,7 @@ ms.locfileid: "11010722"
     > [!NOTE]
     > 请确保在地址栏中输入完整的 URL。  `ArgumentException`如果 URL 不以 or 开头，则会引发 `http://` a `https://` 。  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="必应":::
+    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="WPF 核心":::
        必应
     :::image-end:::
     
@@ -199,7 +176,7 @@ ms.locfileid: "11010722"
 
 有关详细信息，请参阅 [导航事件](../concepts/navigation-events.md)。  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="WPF 核心":::
    导航事件
 :::image-end:::  
 
@@ -240,7 +217,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 在运行时，你可以使用主机应用程序将 JavaScript 代码注入 WebView2 控件。  插入的 JavaScript 将应用于所有新的顶级文档和任何子框架，直到删除了 JavaScript。  插入的 JavaScript 将在创建全局对象后以及 HTML 文档中包含的任何其他脚本运行之前运行。  
 
-导航到非 HTTPS 网站时，可以使用脚本来提醒用户。  修改该 `EnsureHttps` 函数，以便它使用 [ExecuteScriptAsync](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync) 方法将脚本插入 web 内容。  
+导航到非 HTTPS 网站时，可以使用脚本来提醒用户。  修改该 `EnsureHttps` 函数，以便它使用 [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) 方法将脚本插入 web 内容。  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -256,7 +233,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 按 `F5` 生成并运行你的项目。  确认当导航到不使用 HTTPS 的网站时，应用程序是否显示警告。  
 
-:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
+:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="WPF 核心":::
    HTTPS
 :::image-end:::  
 
@@ -271,7 +248,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 在你的项目中，当 WebView2 控件导航到 URL 时，它将在地址栏中显示 URL，并向 WebView2 控件中显示的 URL 的用户发出警报。  
 
-1.  在 **MainWindow.xaml.cs**中，更新你的构造函数并创建 `InitializeAsync` 函数，如以下代码片段所示。  `InitializeAsync`函数会等待[EnsureCoreWebView2Async](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) ，因为它的初始化 `CoreWebView2` 是异步的。  
+1.  在 **MainWindow.xaml.cs**中，更新你的构造函数并创建 `InitializeAsync` 函数，如以下代码片段所示。  `InitializeAsync`函数会等待[EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) ，因为它的初始化 `CoreWebView2` 是异步的。  
     
     ```csharp
     public MainWindow()
@@ -324,7 +301,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     
     按 `F5` 生成并运行应用。  现在，地址栏在 Web 视图中显示 URI，当你成功导航到新的 URI 时，Web 视图会警告 Web 视图中显示的 URI 的用户。  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
+    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="WPF 核心":::
        addressBar
     :::image-end:::
 
@@ -333,7 +310,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 ## 后续步骤  
 
 *   有关 WebView2 功能的完整示例，请参阅 GitHub 上的 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库。  
-*   有关 WebView2 Api 的更多详细信息，请参阅 [API 参考](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md)。  
+*   有关 WebView2 Api 的更多详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)。  
 *   有关 WebView2 的详细信息，请参阅 [WebView2 资源](../index.md#next-steps)。  
 
 ## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  

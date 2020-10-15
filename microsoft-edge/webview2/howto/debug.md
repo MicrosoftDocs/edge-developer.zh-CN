@@ -3,17 +3,17 @@ description: 了解如何调试 WebView2 控件。
 title: 开始调试 WebView2 应用程序
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/21/2020
+ms.date: 10/14/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 78c0fb982de8ccce71a8df2b59447b55f64fdc2f
-ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
+ms.openlocfilehash: 25a710796b499a78a43045266058029caa890b78
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052136"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119106"
 ---
 # 开始调试 WebView2 应用程序  
 
@@ -55,7 +55,7 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
     1. 在 Visual Studio 安装程序的已安装版本上，选择 " **更多** " 按钮，然后选择 " **修改**"。  
     1. 在 Visual Studio 中的 " **工作量**" 下，选择 " **在 c + + 中的桌面开发** " 设置。  
         
-        :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio 修改工作负荷屏幕" lightbox="./media/workloads.png":::
+        :::image type="complex" source="./media/workloads.png" alt-text="DevTools 调试" lightbox="./media/workloads.png":::
             Visual Studio 修改工作负荷屏幕 :::image-end:::  
         
     1.  选择 **单个组件**。  
@@ -63,7 +63,7 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
     1.  选择 " **JavaScript 诊断** " 设置。  
     1.  选择 " **修改**"。 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio 修改单个组件选项卡" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="DevTools 调试" lightbox="./media/indivcomp.png":::
            Visual Studio 修改单个组件选项卡  
         :::image-end:::  
         
@@ -72,7 +72,7 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
     1.  在 " **配置" 属性**下，选择 " **调试**"。  
     1.  在 " **调试器类型**" 下，选择 " **JavaScript (WebView2") **。  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio 调试配置属性" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enbjs.png" alt-text="DevTools 调试" lightbox="./media/enbjs.png":::
            Visual Studio **调试** 配置属性  
         :::image-end:::  
         
@@ -80,19 +80,19 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
 
 1.  若要在源代码中设置断点，请将光标悬停在行号的左侧，然后选择设置断点。  JS/TS 调试适配器不执行源路径映射。  您必须打开与您的 WebView2 相关联的完全相同的路径。  
     
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio 添加断点" lightbox="./media/breakpoint.png"::: 
+    :::image type="complex" source="./media/breakpoint.png" alt-text="DevTools 调试" lightbox="./media/breakpoint.png"::: 
        Visual Studio 添加断点  
     :::image-end:::  
     
 1.  若要运行调试器，请选择平台的位大小，然后选择 " **本地 Windows 调试器**" 旁边的绿色 "播放" 按钮。  应用程序运行，并且调试器连接到创建的第一个 WebView2 进程。  
     
-    :::image type="complex" source="./media/run.png" alt-text=" Visual Studio 本地 Windows 调试器" lightbox="./media/run.png"::: 
+    :::image type="complex" source="./media/run.png" alt-text="DevTools 调试" lightbox="./media/run.png"::: 
        Visual Studio **本地 Windows 调试器**  
     :::image-end:::  
     
 1.  在 **调试控制台**中，查找来自调试器的输出。  
     
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio 调试控制台" lightbox="./media/console.png"::: 
+    :::image type="complex" source="./media/console.png" alt-text="DevTools 调试" lightbox="./media/console.png"::: 
        Visual Studio **调试控制台**  
     :::image-end:::  
     
@@ -119,7 +119,7 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
         
 1.  若要在源代码中设置断点，请将鼠标悬停在该行上，然后选择 `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="在 Visual Studio 代码中设置断点" lightbox="./media/breakpointvs.png":::
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="DevTools 调试" lightbox="./media/breakpointvs.png":::
        在 Visual Studio 代码中设置断点  
     :::image-end:::
     
@@ -130,13 +130,13 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
     1.  在 " **运行** " 选项卡上，从下拉菜单中选择 "启动配置"。  
     1.  若要开始调试你的应用程序，请选择 "开始调试"，这是 "启动配置" 下拉列表旁边的绿色三角形。  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio 代码运行选项卡" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text="DevTools 调试" lightbox="./media/runvs.png":::
            Visual Studio 代码运行选项卡  
         :::image-end:::  
         
 1.  打开 **调试控制台** 以查看调试输出和错误。  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio 代码调试控制台" lightbox="./media/resultsvs.png":::
+    :::image type="complex" source="./media/resultsvs.png" alt-text="DevTools 调试" lightbox="./media/resultsvs.png":::
        Visual Studio 代码调试控制台  
     :::image-end:::  
     
@@ -208,7 +208,7 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text=" 将调试输出保存到日志文件。" lightbox="./media/tracelog.png":::
+              :::image type="complex" source="./media/tracelog.png" alt-text="DevTools 调试" lightbox="./media/tracelog.png":::
                  将调试输出保存到日志文件  
               :::image-end:::  
            :::column-end:::
@@ -217,7 +217,7 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
               ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
-              :::image type="complex" source="./media/verbose.png" alt-text=" 详细输出" lightbox="./media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text="DevTools 调试" lightbox="./media/verbose.png":::
                  启用了详细跟踪的 Visual Studio 代码调试输出  
               :::image-end:::  
            :::column-end:::
@@ -236,7 +236,7 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
     使用调试程序时可能会遇到以下情况。  
 
     *   调试器不会在断点处停止，并且你拥有调试输出。  若要解决此问题，请确认带有断点的文件是由 WebView2 控件使用的同一文件。  调试器不执行源路径映射。  
-    *   无法附加到正在运行的进程，并且收到超时错误。  若要解决此问题，请确认 WebView2 控件已打开 CDP 端口。  确保  `additionalBrowserArguments`  注册表中的值正确，或者选项正确。  有关详细信息，请参阅 [additionalBrowserArguments for 新] [Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] 和 [additionalBrowserArguments for Win32] [Webview2ReferenceWin3209538Webview2IdlParameters]。  
+    *   无法附加到正在运行的进程，并且收到超时错误。  若要解决此问题，请确认 WebView2 控件已打开 CDP 端口。  确保  `additionalBrowserArguments`  注册表中的值正确，或者选项正确。  有关详细信息，请参阅 [additionalBrowserArguments for 新][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] 和 [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters]。  
     
 * * *  
 
@@ -258,8 +258,8 @@ Visual Studio 在 WebView2 应用程序中提供了用于 web 和本机代码的
 
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发人员工具"  
 
-[Webview2ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments-0.9.515-WebView2 for CoreWebView2EnvironmentOptions 类 |Microsoft 文档"  
-[Webview2ReferenceWin3209622Webview2IdlParameters]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment-Globals |Microsoft 文档"  
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions AdditionalBrowserArguments 属性 (WebView2) |Microsoft 文档"  
+[Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment-Globals |Microsoft 文档"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API 参考 |Microsoft 文档"  
 [Webview2MainNextSteps]: ../index.md#next-steps "后续步骤-Microsoft Edge WebView2 简介 (预览) |Microsoft 文档"  
 [Webview2MainGettingStarted]: ../index.md#getting-started "入门-Microsoft Edge WebView2 简介 (预览版) |Microsoft 文档"  

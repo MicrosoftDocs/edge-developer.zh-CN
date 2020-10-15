@@ -3,17 +3,17 @@ description: Win32 c + + WebView2 API 约定
 title: Win32 c + + WebView2 API 约定
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 6c596b038e871caa5a364991351636f51ef7d685
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 42f0b5c9970b2e4a6424eb70458c58a98ec8dbc7
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010682"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11118973"
 ---
 # Win32 c + + WebView2 API 约定  
 
@@ -21,7 +21,7 @@ ms.locfileid: "11010682"
 
 WebView2 Win32 c + + API 中的异步方法使用委托接口来回调你，以指示 async 方法已完成的时间、成功或失败代码以及异步方法的结果。  所有异步方法的最终参数都是一个指向你为其提供实现的委托接口的指针。  
 
-委托接口具有一个 `Invoke` 方法，该方法作为第一个参数作为 `HRESULT` 成功或失败代码。  此外，如果方法具有结果，则可能会出现第二个参数，该参数是方法的结果。  例如，[ICoreWebView2：： CapturePreview] [Webview2ReferenceWin3209538Icorewebview2CapturePreview] 方法作为最终参数接受 `ICoreWebView2CapturePreviewCompletedHandler` 指针。  若要发送 `CapturePreview` 方法请求，请提供 `ICoreWebView2CapturePreviewCompletedHandler` 你实现的指针的实例。  下面的代码片段使用一种方法实现。  
+委托接口具有一个 `Invoke` 方法，该方法作为第一个参数作为 `HRESULT` 成功或失败代码。  此外，如果方法具有结果，则可能会出现第二个参数，该参数是方法的结果。  例如， [ICoreWebView2：： CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] 方法作为最终参数接受 `ICoreWebView2CapturePreviewCompletedHandler` 指针。  若要发送 `CapturePreview` 方法请求，请提供 `ICoreWebView2CapturePreviewCompletedHandler` 你实现的指针的实例。  下面的代码片段使用一种方法实现。  
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -117,6 +117,6 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2ReferenceWin3209622Icorewebview2CapturePreview]: ../reference/win32/0-9-622/icorewebview2.md#capturepreview "CapturePreview-接口 ICoreWebView2 |Microsoft 文档"  
+[Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview-接口 ICoreWebView2 |Microsoft 文档"  
 
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "回调函数 (WRL) |Microsoft 文档"  

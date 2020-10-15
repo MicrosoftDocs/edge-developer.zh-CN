@@ -3,17 +3,17 @@ description: 了解如何开发安全的 WebView2 应用程序
 title: 开发安全 WebView2 应用程序的最佳做法
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、安全性
-ms.openlocfilehash: 774c812789bea4936611c41915e0c34f93205dba
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: d53417cc1ac98b44565692edbaec06216f7c110b
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010759"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119000"
 ---
 # 开发安全 WebView2 应用程序的最佳做法  
 
@@ -23,14 +23,14 @@ ms.locfileid: "11010759"
     *   在使用之前验证 web 消息和主机对象参数，因为 web 消息和参数可能格式不正确 \ (无意或恶意的 ) 并导致应用意外运行。
     *   始终检查 WebView2 内运行的文档的来源并评估内容的可信度。  
 1.  设计特定的 web 消息和宿主对象交互，而不是使用泛型代理。  
-1.  通过修改 [ICoreWebView2Settings (Win32) ][Webview2ReferenceWin3209622Icorewebview2settings] 或 [CoreWebView2Settings ( .net) ][Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings]，设置以下选项以限制 web 内容功能。  
+1.  通过修改 [ICoreWebView2Settings (Win32) ][Webview2ReferenceWin32Icorewebview2settings] 或 [CoreWebView2Settings ( .net) ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]，设置以下选项以限制 web 内容功能。  
     *   `AreHostObjectsAllowed` `false` 如果不希望 web 内容访问主机对象，则设置为。  
     *   `IsWebMessageEnabled` `false` 如果不希望 web 内容将 web 消息发布到本机应用程序，则设置为。  
     *   设置 `IsScriptEnabled` 为 `false` ，如果不希望 web 内容运行脚本，例如，当显示静态 html 内容 \ ) 时 (。  
     *   `AreDefaultScriptDialogsEnabled` `false` 如果不希望显示 web 内容或对话框，则设置为 `alert` `prompt` 。  
 1.  在以下步骤中，使用 `NavigationStarting` 和 `FrameNavigationStarting` 事件根据新页面的来源更新设置。  
     1.  若要防止你的应用程序导航到特定页面，请使用事件进行检查，然后阻止页面或框架导航。  
-    1.  导航到新页面时，你可能需要在 [ICoreWebView2Settings (Win32) ][Webview2ReferenceWin3209622Icorewebview2settings] 或 [CoreWebView2Settings ( .net) ][Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings] （如上文所述）调整属性值。  
+    1.  导航到新页面时，你可能需要在 [ICoreWebView2Settings (Win32) ][Webview2ReferenceWin32Icorewebview2settings] 或 [CoreWebView2Settings ( .net) ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings] （如上文所述）调整属性值。  
 1.  导航到新文档时，请使用 `ContentLoading` 事件删除使用的已公开主机对象 `RemoveHostObjectFromScript` 。  
 
 <!--## Security
@@ -45,6 +45,6 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 
 [Webview2Main]: ../index.md "Microsoft Edge WebView2 简介 (预览版) |Microsoft 文档"  
 
-[Webview2ReferenceWin3209622Icorewebview2settings]: ../reference/win32/0-9-622/icorewebview2settings.md "interface ICoreWebView2Settings |Microsoft 文档"  
+[Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interface ICoreWebView2Settings |Microsoft 文档"  
 
-[Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2settings.md "CoreWebView2Settings 类 | WebView2 类 |Microsoft 文档"  
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "CoreWebView2Settings Class (WebView2) |Microsoft 文档"  

@@ -1,25 +1,25 @@
 ---
-description: 在 WinUI 应用中将 web 内容与 Microsoft Edge Web 视图2控件一起托管
-title: 适用于 WinUI 应用的 Microsoft Edge WebView2
+description: WebView2 for WinUI 应用的入门指南
+title: WebView2 for WinUI 应用入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winui 应用、winui、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
-ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
+ms.openlocfilehash: df6ee7a7391337635a63a961f62317e5b8a67334
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934896"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119092"
 ---
 # WebView2 中的 "开始" WinUI3 (预览 ")   
 
 在本文中，开始使用 WinUI3 创建你的第一个 WebView2 应用，并了解 [Microsoft Edge WebView2 简介的主要功能 (预览版) ][Webview2Index]。  有关单个 Api 的详细信息，请参阅 [API 参考][GithubMicrosoftUiXamlSpecsWebview2]。  
 
-## 先决条件  
+## 必备条件  
 
 请确保在继续下一篇文章之前安装以下先决条件列表。  
 
@@ -47,7 +47,7 @@ ms.locfileid: "10934896"
     *   目标版本： **Windows 10 版本 1903 (内部版本 18362) ** 或更高版本。  
     *   最低版本： **Windows 10 版本 1803 (内部版本 17134) **。  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="新的通用 Windows 平台项目对话框，其中包含目标版本和最低版本的选定值。" lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="适用于 WinUI 的 Visual studio 项目创建对话框" lightbox="./media/winui-gettingstarted-projecttype.png":::
        新的通用 Windows 平台项目对话框，其中包含目标版本和最低版本的选定值。
     :::image-end:::  
     
@@ -117,7 +117,7 @@ ms.locfileid: "10934896"
     
 1.  选择 `F5` 生成并运行项目。  确认你的 WebView2 控件是否显示 [https://www.microsoft.com][|::ref1::|Main] 。  
     
-    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="显示 microsoft.com 网站的 WebView2 控件" lightbox="./media/winui-gettingstarted-part3.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="适用于 WinUI 的 Visual studio 项目创建对话框" lightbox="./media/winui-gettingstarted-part3.png":::
        显示 microsoft.com 网站的 WebView2 控件。  
     :::image-end:::  
     
@@ -177,7 +177,7 @@ ms.locfileid: "10934896"
     > [!NOTE]
     > 确保在地址栏中使用完整的 Url。 `ArgumentException` 如果 URL 不以 or 开头，将引发异常 `http://` `https://` 。  
     
-    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="Bing.com" lightbox="./media/winui-gettingstarted-bing.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="适用于 WinUI 的 Visual studio 项目创建对话框" lightbox="./media/winui-gettingstarted-bing.png":::
        Bing.com  
     :::image-end:::  
     
@@ -231,7 +231,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 宿主应用程序可能会在运行时将 JavaScript 代码注入 WebView2 控件中。  插入的 JavaScript 将应用于所有新的顶级文档和任何子框架，直到删除了 JavaScript。  插入的 JavaScript 将在创建全局对象后以及 HTML 文档中包含的任何其他脚本运行之前运行。  
 
-例如，当用户导航到非 HTTPS 网站时，添加脚本会发送警报。  修改该 `EnsureHttps` 函数以使用 [ExecuteScriptAsync][Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]将脚本注入 web 内容。  
+例如，当用户导航到非 HTTPS 网站时，添加脚本会发送警报。  修改该 `EnsureHttps` 函数以使用 [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]将脚本注入 web 内容。  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -251,7 +251,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 选择 `F5` 生成并运行项目。  确认当导航到不使用 HTTPS 的网站时，应用程序是否显示警告。  
 
-:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="显示警报对话框的 WebView2 控件" lightbox="./media/winui-gettingstarted-script.png":::
+:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="适用于 WinUI 的 Visual studio 项目创建对话框" lightbox="./media/winui-gettingstarted-script.png":::
    显示警报对话框的 WebView2 控件
 :::image-end:::  
 
@@ -264,7 +264,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 > [!NOTE]
 > 在 WebView2 Api 提供时，WinRT CoreWebView2 对象可能不可用。 若要了解哪些 Api 可用于 WebView2 控件，请参阅 [WebView2 规范][GithubMicrosoftUiXamlSpecsWebview2] 以获取可用 api 的列表。 
 
-有关 WebView2 功能的详细信息，请参阅 [WebView2 概念和操作方法指南][Webview2IndexNextSteps]以及 [WebView2 示例][GithubMicrosoftedgeWebview2samplesMain]存储库。  
+有关 WebView2 功能的详细信息，请参阅 [WebView2 概念和 How-To 指南][Webview2IndexNextSteps]和 [WebView2 示例][GithubMicrosoftedgeWebview2samplesMain]存储库。  
 
 ## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  
 
@@ -275,7 +275,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 [Webview2Index]: ../index.md "Microsoft Edge WebView2 简介 (预览版) |Microsoft 文档"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "后续步骤-Microsoft Edge WebView2 简介 (预览) |Microsoft 文档"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件 |Microsoft 文档"  
-[Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync-WebView2 | WebView2 类 |Microsoft 文档"  
+[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync (String) 方法 (WebView2) |Microsoft 文档"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "适用于 Windows 10 的程序包清单架构参考 |Microsoft 文档"  
 

@@ -3,17 +3,17 @@ description: Microsoft Edge WebView2 使用的版本化模型
 title: Microsoft Edge WebView2 的版本控制
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 3ce1f0653a14d92571f1365cbfebc8bb2215ecbe
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: b673a2b250e46959a2eabaeb88cd8535f9a271e4
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010675"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11118980"
 ---
 # 了解 WebView2 SDK 版本  
 
@@ -28,11 +28,11 @@ WebView2 依赖于 Microsoft Edge 才能正常工作。  每个 WebView2 SDK 都
 
 在预览中，发布程序包中包含以下。  
 
-*   [Win32 C/c + + api][ReferenceWin3209622]：在公开时，SDK 中的 api 应保持不变。  
+*   [Win32 C/c + + api][ReferenceWin32]：在公开时，SDK 中的 api 应保持不变。  
 
 在预览中，预发行程序包包含以下组件。  
 
-*   .NET Api： [WPF][ReferenceWpf09515]、 [WinForms][ReferenceWinforms09515]和 [Core][ReferenceDotnet09628]  
+*   .NET Api： [WPF][DotnetMicrosoftWebWebview2WpfNamespace]、 [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace]和 [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
 *   实验性 Api。  有关详细信息，请参阅 [实验性 api](#experimental-apis) 部分。  
 
 ## 实验性 API  
@@ -69,10 +69,10 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->
 
 [DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "长绿分布模式-使用 WebView2 | 的应用程序分布Microsoft 文档"  
-[ReferenceDotnet09628]: ../reference/dotnet/0-9-628-reference-webview2.md "参考 (WebView2) |Microsoft 文档"  
-[ReferenceWinforms09515]: ../reference/winforms/0-9-515-reference-webview2.md "参考 (WebView2) |Microsoft 文档"  
-[ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "参考 (WebView2) |Microsoft 文档"  
-[ReferenceWpf09515]: ../reference/wpf/0-9-515-reference-webview2.md "参考 (WebView2) |Microsoft 文档"  
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "WebView2 命名空间 |Microsoft 文档"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "WebView2 命名空间 |Microsoft 文档"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "WinForms 命名空间 | WebView2 命名空间 |Microsoft 文档"
+[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 c + + 参考 |Microsoft 文档"  
 [Releasenotes]: ../releasenotes.md "WebView2 SDK 的发行说明 |Microsoft 文档"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Microsoft Edge 频道概述 |Microsoft 文档"  

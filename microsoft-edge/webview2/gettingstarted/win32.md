@@ -1,23 +1,23 @@
 ---
-description: 将 Win32 应用中的 web 内容托管到 Microsoft Edge Web 部件2控件中
+description: 适用于 Win32 应用的 WebView2 入门指南
 title: 适用于 Win32 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 5bb2d8a1ec0d75c2cbb1d426bae6bf1cd8298592
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 906ddbea08440aaa0f1fd7e32550c3b1790ba8a1
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010710"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119099"
 ---
 # WebView2 (开发人员预览版入门)   
 
-以下内容将指导你完成 WebView2 的常用功能 [ (开发人员预览版) ][Webview2Index] ，并提供了创建你的第一个 WebView2 应用的起始点。  有关单个 WebView2 Api 的详细信息，请参阅 [API 参考][Webview2ReferenceWin3209622]。  
+以下内容将指导你完成 WebView2 的常用功能 [ (开发人员预览版) ][Webview2Index] ，并提供了创建你的第一个 WebView2 应用的起始点。  有关单个 WebView2 Api 的详细信息，请参阅 [API 参考][Webview2ReferenceWin32]。  
 
 ## 必备条件  
 
@@ -34,7 +34,7 @@ ms.locfileid: "11010710"
 
 在 Visual Studio 中，打开 `WebView2GettingStarted.sln` 。  如果使用的是早期版本的 Visual Studio，请将鼠标悬停在 **WebView2GettingStarted** 项目上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **属性**"。  在 "**配置属性**" 下的 "  >  **常规**" 下，修改**Windows SDK 版本**和**平台工具集**以使用 Win10 SDK 和 Visual Studio 工具集 \ (VS 工具集 \ ) 。  
 
-:::image type="complex" source="../media/tool-version.png" alt-text="工具版本":::
+:::image type="complex" source="../media/tool-version.png" alt-text="工具版本&quot;:::
    工具版本  
 :::image-end:::  
 
@@ -44,9 +44,19 @@ ms.locfileid: "11010710"
 
 将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **管理 Nuget 程序包**"。  
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 " **管理 Nuget 程序包**"。  
     
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理 Nuget 程序包":::
+    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="工具版本&quot;:::
+   工具版本  
+:::image-end:::  
+
+由于缺少 WebView2 头文件，Visual Studio 可能会显示一些错误，在步骤2完成后，该文件应会消失。  
+
+## 步骤 2-安装 WebView2 SDK  
+
+将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
+
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 ":::
        管理 Nuget 程序包  
     :::image-end:::  
     
@@ -56,15 +66,35 @@ ms.locfileid: "11010710"
         > [!NOTE] 
         > [Windows 实现库][GithubMicrosoftWilMain]和[Windows 运行时 c + + 模板库][CppCxWrlTemplateLibraryVS2019]是可选的，并且已添加以使该示例更易于使用 COM。  
         
-        :::image type="complex" source="../media/wil.png" alt-text="Windows 实现库":::
+        :::image type="complex" source="../media/wil.png" alt-text="工具版本&quot;:::
+   工具版本  
+:::image-end:::  
+
+由于缺少 WebView2 头文件，Visual Studio 可能会显示一些错误，在步骤2完成后，该文件应会消失。  
+
+## 步骤 2-安装 WebView2 SDK  
+
+将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
+
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 ":::
            Windows 实现库  
         :::image-end:::  
         
 1.  安装 WebView2 SDK。  
     1.  `Microsoft.Web.WebView2`在搜索栏中输入 "WebView2"，从结果中选择 "**微软**"，然后在右侧窗口中选择 "**安装**"。  Nuget 将 SDK 下载到您的计算机。  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="Nuget.exe":::
-           Nuget.exe
+        :::image type="complex" source="../media/nuget.png" alt-text="工具版本&quot;:::
+   工具版本  
+:::image-end:::  
+
+由于缺少 WebView2 头文件，Visual Studio 可能会显示一些错误，在步骤2完成后，该文件应会消失。  
+
+## 步骤 2-安装 WebView2 SDK  
+
+将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
+
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 ":::
+           Nuget 程序包管理器
         :::image-end:::  
         
 1.  将 WebView2 标头添加到你的项目。  
@@ -96,7 +126,17 @@ ms.locfileid: "11010710"
 
 按 `F5` 生成并运行示例应用。  你应该会看到一个应用，显示一个空窗口。  
 
-:::image type="complex" source="../media/empty-app.png" alt-text="空应用":::
+:::image type="complex" source="../media/empty-app.png" alt-text="工具版本&quot;:::
+   工具版本  
+:::image-end:::  
+
+由于缺少 WebView2 头文件，Visual Studio 可能会显示一些错误，在步骤2完成后，该文件应会消失。  
+
+## 步骤 2-安装 WebView2 SDK  
+
+将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
+
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 ":::
    空应用  
 :::image-end:::  
 
@@ -156,7 +196,17 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 按 `F5` 生成并运行应用。  现在，你已有一个显示 "必应" 页面的 Web 视图窗口。  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="必应窗口":::
+:::image type="complex" source="../media/bing-window.png" alt-text="工具版本&quot;:::
+   工具版本  
+:::image-end:::  
+
+由于缺少 WebView2 头文件，Visual Studio 可能会显示一些错误，在步骤2完成后，该文件应会消失。  
+
+## 步骤 2-安装 WebView2 SDK  
+
+将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
+
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 ":::
    必应窗口  
 :::image-end:::  
 
@@ -172,7 +222,17 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 有关详细信息，请参阅 [导航事件][Webview2ConceptsNavigationEvents]。  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="工具版本&quot;:::
+   工具版本  
+:::image-end:::  
+
+由于缺少 WebView2 头文件，Visual Studio 可能会显示一些错误，在步骤2完成后，该文件应会消失。  
+
+## 步骤 2-安装 WebView2 SDK  
+
+将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
+
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 ":::
    导航事件  
 :::image-end:::  
 
@@ -266,34 +326,20 @@ nullptr);
 
 按 `F5` 生成并运行应用。  导航到页面之前，应在弹出窗口中看到该 URL。  
 
-:::image type="complex" source="../media/show-url.png" alt-text="显示 url":::
-   显示 url  
+:::image type="complex" source="../media/show-url.png" alt-text="工具版本&quot;:::
+   工具版本  
 :::image-end:::  
 
-恭喜，你刚刚构建了你的第一个 WebView2 应用！  
+由于缺少 WebView2 头文件，Visual Studio 可能会显示一些错误，在步骤2完成后，该文件应会消失。  
 
-## 后续步骤  
+## 步骤 2-安装 WebView2 SDK  
 
-此页面上未介绍的许多 WebView2 功能，以下部分提供了其他资源。  
+将 WebView2 SDK 添加到项目中。  对于开发人员预览版，你可以使用 Nuget 安装 Win32 SDK。  
 
-### 另请参阅  
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 "  
 
-*   有关 WebView2 功能的完整示例，请参阅 [WEBVIEW2 API 示例][GithubMicrosoftedgeWebview2samplesApisample]。  
-*   有关使用 WebView2 生成的示例应用程序，请参阅 [WebView2Browser][GithubMicrosoftedgeWebview2browser]。  
-*   有关 WebView2 API 的详细信息，请参阅 [API 参考][Webview2ReferenceWin3209622]。  
-
-## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
-
-<!-- links -->  
-
-[Webview2Index]: ../index.md "Microsoft Edge WebView2 简介 (预览版) |Microsoft 文档"  
-[Webview2ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "参考 (WebView2) |Microsoft 文档"  
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件 |Microsoft 文档"  
-
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows 运行时 c + + 模板库 (WRL) |Microsoft 文档"  
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "演练：创建传统的 Windows 桌面应用程序 (c + +) |Microsoft 文档"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows 运行时 c + + 模板库 (WRL) |Microsoft 文档"  
+[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "演练：创建传统的 Windows 桌面应用程序 (c + +) |Microsoft 文档"  
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser-MicrosoftEdge/WebView2Browser |GitHub"  
 

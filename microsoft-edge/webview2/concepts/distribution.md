@@ -3,17 +3,17 @@ description: 使用 Microsoft Edge WebView2 发布应用时的分发选项
 title: Microsoft Edge WebView2 应用程序的分发
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 7db610ff1133b1b5b380372422f1f2f10981e583
-ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
+ms.openlocfilehash: e96ca2b26feb3883b51ad468db1fabe68ed8ad1f
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052184"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11118995"
 ---
 # 使用 WebView2 的应用程序的分发  
 
@@ -61,7 +61,7 @@ WebView2 运行时是重新分发的运行时，它充当 WebView2 应用程序�
 
 *   在应用程序设置过程中，请检查运行时是否已由下列两种情况之一安装：  
     *   检查中是否 `pv (REG_SZ)` 存在 regkey `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ，或者  
-    *   调用 WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) 并检查 versionInfo 是否为 NULL。  
+    *   调用 WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) 并检查 versionInfo 是否为 NULL。  
 *   如果未安装运行时，请使用链接以编程方式下载引导程序。  
 *   使用 "静默安装" 从提升的进程或命令提示符处调用引导 `MicrosoftEdgeWebview2Setup.exe /silent /install` 程序。  
 
@@ -75,7 +75,7 @@ WebView2 运行时是重新分发的运行时，它充当 WebView2 应用程序�
 *   在应用程序安装程序或更新程序中包括安装程序。  
 *   在应用程序设置过程中，请检查运行时是否已由下列两种情况之一安装：  
     *   检查中是否 `pv (REG_SZ)` 存在 regkey `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ，或者  
-    *   调用 WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) 并检查 versionInfo 是否为 NULL。  
+    *   调用 WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) 并检查 versionInfo 是否为 NULL。  
 *   如果运行时未安装，请从提升的进程或命令提示符处调用独立安装程序，以 `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` 进行静默式安装。  
 
 ## 固定版本分发模式  
@@ -89,6 +89,5 @@ WebView2 运行时是重新分发的运行时，它充当 WebView2 应用程序�
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "了解浏览器版本和 WebView2 |Microsoft 文档"  
-[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globals |Microsoft 文档"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 安装程序"  

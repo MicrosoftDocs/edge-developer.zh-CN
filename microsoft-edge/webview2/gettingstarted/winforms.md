@@ -1,23 +1,23 @@
 ---
-description: 在 Windows 窗体应用中将 web 内容与 Microsoft Edge Web 视图2控件一起托管
-title: 适用于 Windows 表单应用的 Microsoft Edge Web 视图2
+description: WebView2 for WinForms 应用的入门指南
+title: WebView2 for WinForms 应用入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: 885524581112a208e1e5134ecd7a6f7446e331ce
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: e9451d4bfafacf78f723be75379e57400d0ba914
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010731"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119078"
 ---
-# Windows Forms 应用中的 WebView2 入门 (预览)   
+# Windows 窗体中的 WebView2 入门 (预览)   
 
-在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](/microsoft-edge/hosting/webview2/index)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](../reference/dotnet/0-9-628-reference-webview2.md)。  
+在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](/microsoft-edge/webview2/index)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.winforms)。  
 
 ## 必备条件  
 
@@ -51,13 +51,13 @@ ms.locfileid: "11010731"
 
 1. 打开项目上的上下文菜单 \ (右键单击 "\ ) "，然后选择 " **管理 NuGet 程序包 ...**"。  
 
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget.exe":::
-       Nuget.exe :::image-end:::
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="管理 NuGet 程序包&quot;:::
+       管理 NuGet 程序包 :::image-end:::
 
-1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
+1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
 
     > [!IMPORTANT]
-    > 确保选中 " **包括预**发布"，选择 " **版本**" 中的预发布程序包，然后选择 " **安装**"。  
+    > 确保选中 &quot; **包括预**发布&quot;，选择 &quot; **版本**&quot; 中的预发布程序包，然后选择 " **安装**"。  
 
     ![nuget.exe](./media/installnuget.png)
 
@@ -70,32 +70,37 @@ ms.locfileid: "11010731"
 接下来，将 Web 视图添加到你的应用程序。  
 
 1. 打开 **Windows 窗体设计器**。  
-1. 在**工具箱**中搜索**WebView2** 。 将 **WebView2** 控件拖放到 Windows Forms 应用中
+1. 在**工具箱**中搜索**WebView2** 。 将 **WebView2** 控件拖放到 Windows Forms 应用中。
+    
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="管理 NuGet 程序包&quot;:::
+       管理 NuGet 程序包 :::image-end:::
 
-    ![>](./media/winforms-toolbox.png)
+1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
+
+    > [!IMPORTANT]
+    > 确保选中 &quot; **包括预**发布&quot;，选择 &quot; **版本**&quot; 中的预发布程序包，然后选择 ":::
+       显示 WebView2 的工具箱 :::image-end:::  
 
 1. 将 `Name` 属性更改为 `webView`。
+    
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="管理 NuGet 程序包&quot;:::
+       管理 NuGet 程序包 :::image-end:::
 
-    ![>](./media/winforms-properties.png)
+1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
+
+    > [!IMPORTANT]
+    > 确保选中 &quot; **包括预**发布&quot;，选择 &quot; **版本**&quot; 中的预发布程序包，然后选择 ":::
+       WebView2 控件的属性 :::image-end:::
 
 1. 该 `Source` 属性设置 WebView2 控件中显示的初始 URI。 将 Source 属性设置为 <https://www.microsoft.com>
+    
+    :::image type="complex" source="./media/winforms-source.png" alt-text="管理 NuGet 程序包&quot;:::
+       管理 NuGet 程序包 :::image-end:::
 
-    ![>](./media/winforms-source.png)
+1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
 
-选择 `F5` 生成并运行项目。  确认你的 WebView2 控件是否显示 [https://www.microsoft.com](https://www.microsoft.com) 。
-
-![hellowebview](./media/winforms-hellowebview.png)
-
-> [!NOTE]
-> 如果您使用的是高 DPI 监视器，则可能需要为 [高 dpi 支持配置 Windows 窗体应用](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support)。
-
-## 步骤 4-处理窗口调整大小事件
-
-将更多控件从工具箱添加到 Windows 窗体，然后相应地处理窗口大小调整事件。
-
-1. 在 **Windows 窗体设计器** 中打开 **工具箱**
-1. 将 **TextBox** 拖放到 Windows Forms 应用中。 **TextBox** `addressBar` 在 "**属性" 选项卡**中命名文本框。
-1. 将 **按钮** 拖放到 Windows 窗体应用中。 将**按钮**中的文本更改为 `Go!` 并在**Button** `goButton` "**属性" 选项卡**中命名该按钮。
+    > [!IMPORTANT]
+    > 确保选中 &quot; **包括预**发布&quot;，选择 &quot; **版本**&quot; 中的预发布程序包，然后选择 " 选项卡**中命名该按钮。
 
     应用在设计器中的外观应如下所示：
     
@@ -163,7 +168,13 @@ private void Form_Resize(object sender, EventArgs e)
 
 有关详细信息，请参阅 [导航事件](../concepts/navigation-events.md)。  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="管理 NuGet 程序包&quot;:::
+       管理 NuGet 程序包 :::image-end:::
+
+1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
+
+    > [!IMPORTANT]
+    > 确保选中 &quot; **包括预**发布&quot;，选择 &quot; **版本**&quot; 中的预发布程序包，然后选择 ":::
    导航事件
 :::image-end:::
 
@@ -296,7 +307,7 @@ async void InitializeAsync()
 ## 后续步骤 
 
 * 签出 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库，获取 WebView2's 功能的全面示例
-* 签出 [api 参考](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) 了解有关我们的 api 的更多详细信息
+* 签出 [api 参考](/dotnet/api/microsoft.web.webview2.winformswebview2) 了解有关我们的 api 的更多详细信息
 * 签出 [WebView2 资源](../index.md#next-steps) 列表以了解有关 WebView2 的详细信息
 
 
