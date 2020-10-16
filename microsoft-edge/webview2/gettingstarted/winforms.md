@@ -3,17 +3,17 @@ description: WebView2 for WinForms 应用的入门指南
 title: WebView2 for WinForms 应用入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: e9451d4bfafacf78f723be75379e57400d0ba914
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 90d25816b862d6096856faf439436706c98f7dbe
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119078"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120086"
 ---
 # Windows 窗体中的 WebView2 入门 (预览)   
 
@@ -307,7 +307,7 @@ async void InitializeAsync()
 ## 后续步骤 
 
 * 签出 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库，获取 WebView2's 功能的全面示例
-* 签出 [api 参考](/dotnet/api/microsoft.web.webview2.winformswebview2) 了解有关我们的 api 的更多详细信息
+* 签出 [api 参考](/dotnet/api/microsoft.web.webview2.winforms.webview2) 了解有关我们的 api 的更多详细信息
 * 签出 [WebView2 资源](../index.md#next-steps) 列表以了解有关 WebView2 的详细信息
 
 
