@@ -22,7 +22,7 @@ ms.locfileid: "11104698"
 
 扩展的结构类似于常规 web 应用。  它至少包含应用清单 JSON 文件，该文件包含基本平台信息、用于定义功能的 JavaScript 文件以及 HTML 和 CSS 文件，以根据需要确定用户界面 \ (的外观 \ ) 。  若要直接处理部分浏览器（如窗口或选项卡），必须发送 API 请求，并且通常按名称引用浏览器。  
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Microsoft Edge (Chromium) 扩展&quot;:::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Microsoft Edge (Chromium) 扩展":::
   Microsoft Edge \ (Chromium \ ) 扩展名  
 :::image-end:::  
 
