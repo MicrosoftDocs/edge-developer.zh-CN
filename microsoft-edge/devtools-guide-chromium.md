@@ -23,7 +23,7 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 
 如果您要签出 Microsoft Edge，并且主要是在基于 Chromium 的浏览器中开发，则应立即体验。  Microsoft Edge \ (Chromium \ ) 开发人员工具的工作方式与你已了解和使用的开发人员工具相同。  有关详细信息，请参阅 [Microsoft Edge (Chromium) DevTools 中的新增功能][DevtoolsGuideChromiumWhatsNewIndex]。  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
@@ -51,7 +51,7 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 
 ## 核心工具  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
@@ -77,7 +77,7 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 
 您也可以添加 [Chrome Web 应用商店][GoogleChromeWebstoreExtensions]的扩展。  
 
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
@@ -101,7 +101,7 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 
 如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**" 以将你的 DevTools 扩展添加到 Microsoft Edge！  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
