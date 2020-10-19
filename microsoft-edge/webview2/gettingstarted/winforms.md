@@ -51,7 +51,7 @@ ms.locfileid: "11120086"
 
 1. 打开项目上的上下文菜单 \ (右键单击 "\ ) "，然后选择 " **管理 NuGet 程序包 ...**"。  
 
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="管理 NuGet 程序包&quot;:::
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="管理 NuGet 程序包":::
        管理 NuGet 程序包 :::image-end:::
 
 1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
@@ -72,7 +72,7 @@ ms.locfileid: "11120086"
 1. 打开 **Windows 窗体设计器**。  
 1. 在**工具箱**中搜索**WebView2** 。 将 **WebView2** 控件拖放到 Windows Forms 应用中。
     
-    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="管理 NuGet 程序包&quot;:::
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="管理 NuGet 程序包":::
        管理 NuGet 程序包 :::image-end:::
 
 1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
@@ -83,7 +83,7 @@ ms.locfileid: "11120086"
 
 1. 将 `Name` 属性更改为 `webView`。
     
-    :::image type="complex" source="./media/winforms-properties.png" alt-text="管理 NuGet 程序包&quot;:::
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="管理 NuGet 程序包":::
        管理 NuGet 程序包 :::image-end:::
 
 1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
@@ -94,7 +94,7 @@ ms.locfileid: "11120086"
 
 1. 该 `Source` 属性设置 WebView2 控件中显示的初始 URI。 将 Source 属性设置为 <https://www.microsoft.com>
     
-    :::image type="complex" source="./media/winforms-source.png" alt-text="管理 NuGet 程序包&quot;:::
+    :::image type="complex" source="./media/winforms-source.png" alt-text="管理 NuGet 程序包":::
        管理 NuGet 程序包 :::image-end:::
 
 1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
@@ -168,7 +168,7 @@ private void Form_Resize(object sender, EventArgs e)
 
 有关详细信息，请参阅 [导航事件](../concepts/navigation-events.md)。  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="管理 NuGet 程序包&quot;:::
+:::image type="complex" source="../media/navigation-events.png" alt-text="管理 NuGet 程序包":::
        管理 NuGet 程序包 :::image-end:::
 
 1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 &quot; **WebView2** &quot;。  
