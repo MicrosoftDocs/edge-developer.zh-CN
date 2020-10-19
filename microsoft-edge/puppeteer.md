@@ -88,7 +88,7 @@ node example.js
 
 `puppeteer-core` 启动 Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` 页面的 800px x 600px 屏幕截图并将其保存。  你可以自定义 [setViewport ( # B1 ][PuppeteerApipagesetviewport]的页面大小。  
 
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="由 example.js 生成的 example.png 文件&quot;:::
+:::image type="complex" source="./media/puppeteer-example.png" alt-text="由 example.js 生成的 example.png 文件":::
    图1： `example.png` 生成的文件 `example.js`  
 :::image-end:::  
 
@@ -105,7 +105,7 @@ node example.js
 Microsoft Edge 开发人员团队渴望听到有关使用 Puppeteer、 `puppeteer-core` 和 Microsoft Edge 的反馈。  使用 Microsoft Edge DevTools 或 tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools]中的 &quot;**发送反馈**" 图标，让 Microsoft edge 团队知道您的想法。  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="由 example.js 生成的 example.png 文件&quot;:::
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="由 example.js 生成的 example.png 文件":::
    图1： `example.png` 生成的文件 `example.js`  
 :::image-end:::  
 
