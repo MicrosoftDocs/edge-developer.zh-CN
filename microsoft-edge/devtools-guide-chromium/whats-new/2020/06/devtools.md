@@ -41,7 +41,7 @@ Chromium 问题 [#1047356][CR1047356]
 
 ### 通过网络控制台编辑和重播请求  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能请求。:::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能请求。":::
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="实验性功能" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    使用**网络控制台**编辑和重播[NetworkLog][DevtoolsNetworkIndexLogActivity]中的请求  
@@ -83,7 +83,7 @@ Chromium 问题 [#1066579][CR1066579]
 
 ### "问题" 面板中的 webhint 反馈  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能" 面板中看到 webhint 反馈。 ::: 
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能 面板中看到 webhint 反馈。"::: 
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="实验性功能" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    "问题" 面板中的 webhint 反馈  
@@ -98,7 +98,7 @@ Chromium 问题 [#1070378][CR1070378]
 
 ### 在面板之间移动工具  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能 (底部 \ ) 面板中打开。现在，你可以通过在顶部面板和底部面板之间移动工具来自定义 DevTools 布局。:::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能 (底部 \ ) 面板中打开。现在，你可以通过在顶部面板和底部面板之间移动工具来自定义 DevTools 布局。":::
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="实验性功能" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动选项卡  
