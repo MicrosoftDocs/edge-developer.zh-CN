@@ -34,7 +34,7 @@ ms.locfileid: "11119099"
 
 在 Visual Studio 中，打开 `WebView2GettingStarted.sln` 。  如果使用的是早期版本的 Visual Studio，请将鼠标悬停在 **WebView2GettingStarted** 项目上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **属性**"。  在 "**配置属性**" 下的 "  >  **常规**" 下，修改**Windows SDK 版本**和**平台工具集**以使用 Win10 SDK 和 Visual Studio 工具集 \ (VS 工具集 \ ) 。  
 
-:::image type="complex" source="../media/tool-version.png" alt-text="工具版本&quot;:::
+:::image type="complex" source="../media/tool-version.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
@@ -46,7 +46,7 @@ ms.locfileid: "11119099"
 
 1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击 &quot;\ ) &quot;，然后选择 " **管理 Nuget 程序包**"。  
     
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="工具版本&quot;:::
+    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
@@ -66,7 +66,7 @@ ms.locfileid: "11119099"
         > [!NOTE] 
         > [Windows 实现库][GithubMicrosoftWilMain]和[Windows 运行时 c + + 模板库][CppCxWrlTemplateLibraryVS2019]是可选的，并且已添加以使该示例更易于使用 COM。  
         
-        :::image type="complex" source="../media/wil.png" alt-text="工具版本&quot;:::
+        :::image type="complex" source="../media/wil.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
@@ -83,7 +83,7 @@ ms.locfileid: "11119099"
 1.  安装 WebView2 SDK。  
     1.  `Microsoft.Web.WebView2`在搜索栏中输入 "WebView2"，从结果中选择 "**微软**"，然后在右侧窗口中选择 "**安装**"。  Nuget 将 SDK 下载到您的计算机。  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="工具版本&quot;:::
+        :::image type="complex" source="../media/nuget.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
@@ -126,7 +126,7 @@ ms.locfileid: "11119099"
 
 按 `F5` 生成并运行示例应用。  你应该会看到一个应用，显示一个空窗口。  
 
-:::image type="complex" source="../media/empty-app.png" alt-text="工具版本&quot;:::
+:::image type="complex" source="../media/empty-app.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
@@ -196,7 +196,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 按 `F5` 生成并运行应用。  现在，你已有一个显示 "必应" 页面的 Web 视图窗口。  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="工具版本&quot;:::
+:::image type="complex" source="../media/bing-window.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
@@ -222,7 +222,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 有关详细信息，请参阅 [导航事件][Webview2ConceptsNavigationEvents]。  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="工具版本&quot;:::
+:::image type="complex" source="../media/navigation-events.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
@@ -326,7 +326,7 @@ nullptr);
 
 按 `F5` 生成并运行应用。  导航到页面之前，应在弹出窗口中看到该 URL。  
 
-:::image type="complex" source="../media/show-url.png" alt-text="工具版本&quot;:::
+:::image type="complex" source="../media/show-url.png" alt-text="工具版本":::
    工具版本  
 :::image-end:::  
 
