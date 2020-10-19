@@ -31,7 +31,7 @@ ms.locfileid: "10583103"
 
 Microsoft Edge 中的辅助功能系统本身支持新式 web 标准，包括 ARIA、HTML5 和 CSS3。  下面的简化的浏览器管道关系图将网页内容置于可访问的演示文稿层中。  
 
-:::image type="complex" source="./media/accessibilityarchitecture.png" alt-text="转换为引擎模型的内容被投影到视觉对象和辅助功能视图中，显示为视觉对象或易于访问的演示文稿&quot;:::
+:::image type="complex" source="./media/accessibilityarchitecture.png" alt-text="转换为引擎模型的内容被投影到视觉对象和辅助功能视图中，显示为视觉对象或易于访问的演示文稿":::
    图 1.  转换为引擎模型的内容被投影到视觉对象和辅助功能视图中，显示为视觉对象或易于访问的演示文稿
 :::image-end:::
 
