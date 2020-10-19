@@ -18,7 +18,7 @@ ms.locfileid: "10695864"
 
 借助 [适用于 Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] 和代码扩展的调试器，逐行调试你的前端 JavaScript 代码行并 `console.log()` 直接从 [Visual Studio 代码][VisualstudioCode]中查看语句！  
 
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="适用于工作的调试器与代码扩展&quot;:::
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="适用于工作的调试器与代码扩展":::
    适用于工作的调试器与代码扩展  
 :::image-end:::
 
