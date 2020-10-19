@@ -22,17 +22,17 @@ ms.locfileid: "11104769"
 
 1.  `edge://extensions`选择浏览器顶部的三个圆点，然后选择 "**扩展**"，打开页面。
 
-       :::image type="complex" source="./media/part1-threedots.png" alt-text="打开 &quot;edge://extensions&quot; 页面&quot;:::
+       :::image type="complex" source="./media/part1-threedots.png" alt-text="打开 &quot;edge://extensions&quot; 页面":::
           打开 &quot;edge://extensions&quot; 页面 :::image-end:::
 
 1.  在的 &quot;扩展管理" 页上 `edge://extensions` ，使用页面左下角的开关启用 **开发人员模式** 。
 
-       :::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="打开 &quot;edge://extensions&quot; 页面&quot;:::
+       :::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="打开 &quot;edge://extensions&quot; 页面":::
           打开 &quot;edge://extensions&quot; 页面 :::image-end:::
 
 1.  在的 &quot;扩展管理" **加载解压缩**"。  系统将提示你输入扩展名源文件的目录。  您的扩展已安装在您的浏览器中，类似于从应用商店安装的扩展。  
 
-       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="打开 &quot;edge://extensions&quot; 页面&quot;:::
+       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="打开 &quot;edge://extensions&quot; 页面":::
           打开 &quot;edge://extensions&quot; 页面 :::image-end:::
 
 1.  在的 &quot;扩展管理" 以更新您的扩展。  
