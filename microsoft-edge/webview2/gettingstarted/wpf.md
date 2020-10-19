@@ -39,7 +39,7 @@ ms.locfileid: "11119113"
              WPF 核心 :::image-end:::
        :::column-end:::
        :::column span="1":::
-          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="WPF 核心" 或 ".NET Core 3.0 或更高版本"。  
+          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="WPF 核心 或 .NET Core 3.0 或更高版本。:::  
     
     :::row:::
            :::column span="1":::
@@ -47,9 +47,9 @@ ms.locfileid: "11119113"
                  创建核心 :::image-end:::
            :::column-end:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="WPF 核心" **管理 NuGet 程序包 ...**"。  
+              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="WPF 核心 **管理 NuGet 程序包 ...**。:::
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="WPF 核心" **安装**"。  
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="WPF 核心 **安装**。:::
   
      ![nuget.exe](./media/installnuget.PNG)
     
