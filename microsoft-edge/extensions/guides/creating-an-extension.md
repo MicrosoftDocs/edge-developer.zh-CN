@@ -21,7 +21,7 @@ ms.locfileid: "10683649"
 
 在本指南中，了解如何创建 Microsoft Edge 的扩展。  此示例扩展使你可以操作 [docs.microsoft.com][MicrosoftDocs] 页面的特定 CSS，包括创建清单文件、用户界面以及后台和内容脚本。  
 
-:::image type="complex" source="../media/color-changer_header.png" alt-text="Docs.microsoft.com 正文已更改为蓝色&quot;:::
+:::image type="complex" source="../media/color-changer_header.png" alt-text="Docs.microsoft.com 正文已更改为蓝色":::
    Docs.microsoft.com 正文已更改为蓝色
 :::image-end:::
 
@@ -88,7 +88,7 @@ ms.locfileid: "10683649"
 
 对于您的扩展，请为用户界面创建一个弹出窗口，如下所示。  
 
-:::image type="complex" source="../media/color-changer_popup.png" alt-text="Docs.microsoft.com 正文已更改为蓝色&quot;:::
+:::image type="complex" source="../media/color-changer_popup.png" alt-text="Docs.microsoft.com 正文已更改为蓝色":::
    Docs.microsoft.com 正文已更改为蓝色
 :::image-end:::
 
@@ -254,7 +254,7 @@ reset.onclick = () => {
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="../media/color-changer_header_aliceblue.png" alt-text="Docs.microsoft.com 正文已更改为蓝色&quot;:::
+      :::image type="complex" source="../media/color-changer_header_aliceblue.png" alt-text="Docs.microsoft.com 正文已更改为蓝色":::
    Docs.microsoft.com 正文已更改为蓝色
 :::image-end:::
 
@@ -311,7 +311,7 @@ reset.onclick = () => {
       <!--![Docs.microsoft.com header changed to Aliceblue][ImageColorChangerHeaderAliceblue]  -->
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.microsoft.com 正文已更改为蓝色&quot;:::
+      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.microsoft.com 正文已更改为蓝色":::
    Docs.microsoft.com 正文已更改为蓝色
 :::image-end:::
 
