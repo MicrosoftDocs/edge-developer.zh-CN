@@ -47,7 +47,7 @@ ms.locfileid: "11104705"
 
 首先 `icons` 在项目中创建目录以存储图标图像文件。  图标用于用户选择以启动扩展的按钮的背景图像。  
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="工具栏上的图标以打开您的扩展&quot;:::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="工具栏上的图标以打开您的扩展":::
    工具栏上的图标以打开您的扩展
 :::image-end:::
 
