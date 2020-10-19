@@ -18,7 +18,7 @@ ms.locfileid: "10695857"
 
 使用 [webhint][WebhintMain]（一种可自定义的 linting 工具）来改进你的网站的辅助功能、性能、跨浏览器兼容性、PWA 兼容性和安全性。  它会检查代码的最佳做法和常见错误。 此开放源代码项目（最初由 Microsoft Edge 团队开发）现在是 [OpenJS 基础][OpenjsFoundation]的一部分。  Microsoft Edge 团队继续参与社区中的 webhint 和 web 开发人员。  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Webhint 与代码扩展的屏幕截图&quot;:::
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Webhint 与代码扩展的屏幕截图":::
    Webhint 与代码扩展的屏幕截图  
 :::image-end:::
 
