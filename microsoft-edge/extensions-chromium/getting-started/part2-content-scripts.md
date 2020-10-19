@@ -61,7 +61,7 @@ ms.locfileid: "11104712"
 
 更新并打开扩展后，将打开一个显示 "显示" 按钮的弹出窗口。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="按下 &quot;扩展&quot; 图标后，popup.html 显示&quot;:::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="按下 &quot;扩展&quot; 图标后，popup.html 显示":::
    按下 &quot;扩展&quot; 图标后，popup.html 显示
 :::image-end:::
 
@@ -219,7 +219,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 现在，当您浏览到任意页面并选择您的 **扩展名** 图标时，弹出菜单显示如下。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="按下 &quot;扩展&quot; 图标后，popup.html 显示&quot;:::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="按下 &quot;扩展&quot; 图标后，popup.html 显示":::
    按下 &quot;扩展&quot; 图标后，popup.html 显示
 :::image-end:::
 
@@ -240,7 +240,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 选择该按钮后 `Display` ，将获得以下内容。  如果选择图像上的任意位置 `stars.jpeg` ，则会删除该图像元素，并且选项卡页将折叠为最初显示的内容。  
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="按下 &quot;扩展&quot; 图标后，popup.html 显示&quot;:::
+:::image type="complex" source="./media/part2-showingimage.png" alt-text="按下 &quot;扩展&quot; 图标后，popup.html 显示":::
    按下 &quot;扩展&quot; 图标后，popup.html 显示
 :::image-end:::
 
