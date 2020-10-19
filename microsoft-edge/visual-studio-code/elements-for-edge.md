@@ -18,7 +18,7 @@ ms.locfileid: "10694860"
 
 使用 [Microsoft edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] 和代码扩展的元素，在 [Visual Studio 代码][VisualstudioCode]中使用 microsoft edge 浏览器的 "元素" 工具。  通过启动或附加，元素工具连接到 Microsoft Edge 实例，显示运行时 HTML 结构，并允许你更改布局或修复样式设置问题。  
 
-:::image type="complex" source="./media/elements-for-edge.gif" alt-text="工作中的边缘与代码扩展的元素&quot;:::
+:::image type="complex" source="./media/elements-for-edge.gif" alt-text="工作中的边缘与代码扩展的元素":::
    工作中的边缘与代码扩展的元素  
 :::image-end:::
 
