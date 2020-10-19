@@ -41,7 +41,7 @@ WebDriver 使开发人员能够创建模拟用户交互的自动测试。  由�
     
 1.  导航到 [Microsoft Edge 驱动程序下载][MicrosoftDeveloperEdgeToolsWebdriverDownloads] 页面并下载与 Edge 版本号匹配的驱动程序。  
     
-    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="2020年1月14日的 Microsoft Edge 未设备的版本号 部分:::
+    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="2020年1月14日的 Microsoft Edge 未设备的版本号 部分":::
     :::image-end:::  
     
     > [!NOTE] 
