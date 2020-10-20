@@ -372,6 +372,8 @@
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: 开发人员指南
           items:
+            - name: API 支持
+              href: extensions-chromium/developer-guide/api-support.md
             - name: 将 Chromium 扩展移植到 Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: 将扩展从清单 v2 迁移到 v3
@@ -519,7 +521,7 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge 用户代理字符串
           href: web-platform/user-agent-string.md
-    - name: WebView2 (Chromium)（预览版）
+    - name: WebView2 (Chromium)
       href: webview2/toc.yml
     - name: WebVR 开发人员指南
       href: /microsoft-edge/webvr/index

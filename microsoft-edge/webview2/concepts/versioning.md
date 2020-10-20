@@ -3,59 +3,59 @@ description: Microsoft Edge WebView2 使用的版本化模型
 title: Microsoft Edge WebView2 的版本控制
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: b673a2b250e46959a2eabaeb88cd8535f9a271e4
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: a47c7295e87cf4295f8cdf898b62aa3b550aa9a5
+ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11118980"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "11120337"
 ---
 # 了解 WebView2 SDK 版本  
 
-WebView2 依赖于 Microsoft Edge 才能正常工作。  每个 WebView2 SDK 都要求安装最低版本的浏览器。  最小版本反映在 SDK 的程序包版本中。  例如，如果使用 `SDK package version 0.9.488` ，则必须使用488或更高版本的内部版本号安装 Microsoft Edge。  浏览器版本也在 WebView2 [发行说明][Releasenotes]中指定。  有关最新版本的 Microsoft Edge 浏览器的详细信息，请导航到 [浏览器频道][DeployedgeChannels]。  
+若要开发 WebView2 应用程序，必须安装 [WebView2 运行时][MicrosoftDeveloperEdgeWebview2] 或 [非稳定的 Microsoft Edge 通道][MicrosoftedgeinsiderDownload]。  SDK 的 NuGet 程序包版本中包含所需的最低版本。  例如，如果使用 `SDK package version 0.9.488` ，则必须安装 [WebView2 运行时][MicrosoftDeveloperEdgeWebview2] 或 [不稳定的 Microsoft Edge 通道][MicrosoftedgeinsiderDownload] ，其内部版本号为488或更高版本。  还在 WebView2 [发行说明][Releasenotes]中指定所需的最低版本。  WebView2 SDK 的新版本以与 Microsoft Edge (Chromium ) 浏览器相同的常规节奏提供，每六周大约每六周。  
 
-> [!NOTE]
-> WebView2 当前处于预览版中。  尽管 Web 视图团队致力于确保浏览器版本和 Sdk 之间的向后兼容性，但不能保证它，因为较新版本的浏览器可能不支持以前的 SDK 版本。  如果浏览器版本和 Sdk 之间存在重大更改，则会在 [发行说明][Releasenotes]中指定这些更改。  
-
-将来，Web 视图团队计划更改 WebView2 应用的分布模型。  有关详细信息，请导航到长 [绿分布模式][DistributionEvergreenMode]。  
+> [!IMPORTANT]
+> 开发长时间 WebView2 应用程序时，请定期针对最新版本的 WebView2 运行时和非稳定的 Microsoft Edge 浏览器测试应用程序。  由于 web 平台不断发展，因此定期测试是确保应用程序按预期执行的最佳方式。  
 
 ## 发布和预发布程序包  
 
-在预览中，发布程序包中包含以下。  
+WebView2 NuGet 程序包包含发布和预发布程序包。  
 
-*   [Win32 C/c + + api][ReferenceWin32]：在公开时，SDK 中的 api 应保持不变。  
+发布程序包向前兼容，包含 [Win32 C/c + + api][ReferenceWin32]。  此 SDK 中的 Api 完全受支持。  
 
-在预览中，预发行程序包包含以下组件。  
+预发布程序包是发布程序包的一个超集，下面列出了其他组件。  
 
 *   .NET Api： [WPF][DotnetMicrosoftWebWebview2WpfNamespace]、 [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace]和 [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
-*   实验性 Api。  有关详细信息，请参阅 [实验性 api](#experimental-apis) 部分。  
+*   实验性 Api：有关详细信息，请导航到 [实验性 api](#experimental-apis) 部分。  
 
 ## 实验性 API  
 
-Web 视图团队正在测试可能表示未来功能的实验 Api。  实验中的 Api 标记为 `experimental` 在 SDK 中。  实验性 Api 可能作为 release 程序包中的完全稳定的 Api 提供。  在发布之前，你应该会认为所有实验性 Api 都有更改。  请使用 [Web 视图反馈][GithubMicrosoftedgeWebviewfeedback]存储库评估实验性 api 并共享反馈。  
+Web 视图团队正在测试未来版本中可能包含的实验性 Api。  实验中的 Api 标记为 `experimental` 在 SDK 中。  实验性 Api 可能作为 release 程序包中的完全稳定的 Api 提供。  你可以使用 [Web 视图反馈][GithubMicrosoftedgeWebviewfeedback]存储库评估实验性 api 并共享反馈。  
 
 > [!CAUTION]
 > 避免在生产应用中使用实验性 Api。  
 
 ## 匹配 WebView2 运行时版本  
 
-使用特定 SDK 版本编写 WebView2 应用时，应用的用户可能会使用 WebView2 运行时的各种兼容版本运行该应用。  将来，较新的兼容 WebView2 运行时版本包含来自旧版兼容 WebView2 运行时版本的所有非实验性 Api 以及其他新的非实验性 Api。  
+使用特定 SDK 版本编写 WebView2 应用时，你的应用的用户可以使用多个兼容版本的 WebView2 运行时运行它。  Web 视图团队正在处理兼容的 WebView2 运行时版本，该版本包含来自以前版本的运行时和新的非实验性 Api 的非实验性 Api。  
 
-*   **Win32 C/c + +** 开发人员在使用 `QueryInterface` 获取新接口时，应检查返回值 `E_NOINTERFACE` ，这可能指示 WebView2 运行时较旧且不支持该特定接口。  
-*   **.NET and WinUI** `No such interface supported` 当使用在后续 sdk 中添加的方法、属性和事件时，.net 和 WinUI 开发人员应检查异常，当 WebView2 运行时较旧且不支持这些特定的 api 时，可能会发生这种情况。  
+请考虑以下项目，具体取决于您使用的是哪个 SDK： 
 
-如果 API 不可用，请考虑禁用关联的功能（如有可能），或者向最终用户通知他们需要更新其 WebView2 运行时版本。  
+*   **Win32 C/c + +**。  使用 `QueryInterface` 获取新接口时，请检查返回值 `E_NOINTERFACE` 。  此值可能指示 WebView2 运行时是以前的版本，并且不支持该接口。  
+*   **.Net 和 WinUI**。  `No such interface supported`在使用已添加到最新 sdk 的方法、属性和事件时，检查异常。  如果 WebView2 运行时是早期版本，并且不支持这些 Api，则可能会发生此异常。  
 
-可从 SDK 向 SDK 引入、修改和删除实验性 Api。  当尝试使用在 WebView2 运行时中不可用的实验 API 时，你可能会注意到以前描述的行为。  
+如果 API 不可用，请考虑删除关联的功能，或通知用户他们需要更新其 WebView2 运行时的版本。  
+
+可从 SDK 向 SDK 引入、修改和删除实验性 Api。  在已安装版本的 WebView2 运行时中，实验性 Api 可能不可用。  
 
 ## 路线图  
 
-在 WebView2 达到稳定的常规可用状态后，发布程序包包含所有稳定的、受支持的 Win32 C/c + + 和 .NET Api。  预发行程序包包含可能会根据你的反馈和共享见解更改的实验性 Api。  
+发布包包含所有稳定的、受支持的 Win32 C/c + + Api。  将来，发布版程序包将包含所有稳定的、受支持的 .NET Api （当它们正式可用时）。  预发行程序包包含可能会根据你的反馈和共享见解更改的实验性 Api。  
 
 <!--## Versioning  
 
@@ -66,15 +66,19 @@ After you have used a particular version of the SDK to build your app, your app 
 
 1.  When an interface is unavailable, you may consider disabling the associated feature if possible, or otherwise informing your users to update their browsers.  -->  
 
-<!--links -->
+<!--links -->  
 
-[DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "长绿分布模式-使用 WebView2 | 的应用程序分布Microsoft 文档"  
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "WebView2 命名空间 |Microsoft 文档"
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "WebView2 命名空间 |Microsoft 文档"
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "WinForms 命名空间 | WebView2 命名空间 |Microsoft 文档"
-[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 c + + 参考 |Microsoft 文档"  
 [Releasenotes]: ../releasenotes.md "WebView2 SDK 的发行说明 |Microsoft 文档"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Microsoft Edge 频道概述 |Microsoft 文档"  
 
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "WebView2 命名空间 |Microsoft 文档"  
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "WebView2 命名空间 |Microsoft 文档"  
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "WinForms 命名空间 | WebView2 命名空间 |Microsoft 文档"  
+[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 c + + 参考 |Microsoft 文档"  
+
+[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 |Microsoft 开发人员"  
+
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈-MicrosoftEdge/WebViewFeedback |GitHub"  
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"  
