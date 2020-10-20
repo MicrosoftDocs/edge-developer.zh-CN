@@ -1,93 +1,168 @@
 ---
 description: 使用 Microsoft Edge WebView2 发布应用时的分发选项
-title: Microsoft Edge WebView2 应用程序的分发
+title: Microsoft Edge WebView2 应用的分发
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: e96ca2b26feb3883b51ad468db1fabe68ed8ad1f
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: bf0a79d41d9eddf39a31426db79d502c09b782ad
+ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11118995"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "11120345"
 ---
-# <span data-ttu-id="9231c-104">使用 WebView2 的应用程序的分发</span><span class="sxs-lookup"><span data-stu-id="9231c-104">Distribution of applications using WebView2</span></span>  
+# <span data-ttu-id="e8bde-104">使用 WebView2 的应用分发</span><span class="sxs-lookup"><span data-stu-id="e8bde-104">Distribution of apps using WebView2</span></span>  
 
-<span data-ttu-id="9231c-105">分发 WebView2 应用程序时，请确保支持 web 平台-应用启动前存在 [WebView2 运行时](#understanding-the-webview2-runtime) 。</span><span class="sxs-lookup"><span data-stu-id="9231c-105">When distributing your WebView2 application, make sure the backing web platform - the [WebView2 Runtime](#understanding-the-webview2-runtime) is present before the app starts.</span></span>  <span data-ttu-id="9231c-106">本文介绍开发人员如何安装 WebView2 运行时，并使用 WebView2 应用程序的两种分布模式：长  [绿](#evergreen-distribution-mode) 和 [固定版本](#fixed-version-distribution-mode)。</span><span class="sxs-lookup"><span data-stu-id="9231c-106">This article describes how developers can install the WebView2 Runtime, and use the two distribution modes for your WebView2 application:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).</span></span>  
+<span data-ttu-id="e8bde-105">在分发 WebView2 应用时，请确保在应用启动之前，支持的 web 平台（ [WebView2 运行时][Webview2Installer]）存在。</span><span class="sxs-lookup"><span data-stu-id="e8bde-105">When distributing your WebView2 app, make sure the backing web platform, the [WebView2 Runtime][Webview2Installer], is present before the app starts.</span></span>  <span data-ttu-id="e8bde-106">本文介绍如何安装 WebView2 运行时  [，并为](#evergreen-distribution-mode) WebView2 应用使用两种分发模式：长时间和 [固定版本](#fixed-version-distribution-mode)。</span><span class="sxs-lookup"><span data-stu-id="e8bde-106">This article describes how you can install the WebView2 Runtime, and use the two distribution modes for your WebView2 app:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).</span></span>  
 
-## <span data-ttu-id="9231c-107">长绿分布模式</span><span class="sxs-lookup"><span data-stu-id="9231c-107">Evergreen distribution mode</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="9231c-108">对于大多数开发人员，建议使用长绿分布模式。</span><span class="sxs-lookup"><span data-stu-id="9231c-108">The Evergreen distribution mode is recommended for most developers.</span></span>  
-
-<span data-ttu-id="9231c-109">长时间分布模式可确保你的应用充分利用最新功能和安全更新。</span><span class="sxs-lookup"><span data-stu-id="9231c-109">The Evergreen distribution mode ensures that your app is taking advantage of the latest features and security updates.</span></span>  <span data-ttu-id="9231c-110">它具有下列特征。</span><span class="sxs-lookup"><span data-stu-id="9231c-110">It has the following characteristics.</span></span>  
-
-*   <span data-ttu-id="9231c-111">基础 web 平台 \ (WebView2 运行时 \ ) 自动更新，而不需要开发人员进行额外的工作。</span><span class="sxs-lookup"><span data-stu-id="9231c-111">The underlying web platform \(WebView2 Runtime\) updates automatically without additional effort from developers.</span></span>  
-*   <span data-ttu-id="9231c-112">所有使用长时间分布模式的应用程序都使用长绿 WebView2 运行时的共享副本，该副本节省磁盘空间。</span><span class="sxs-lookup"><span data-stu-id="9231c-112">All applications that use the Evergreen distribution mode use a shared copy of the Evergreen WebView2 Runtime, which saves disk space.</span></span>  
-
-### <span data-ttu-id="9231c-113">了解 WebView2 运行时</span><span class="sxs-lookup"><span data-stu-id="9231c-113">Understanding the WebView2 Runtime</span></span>  
-
-<span data-ttu-id="9231c-114">WebView2 运行时是重新分发的运行时，它充当 WebView2 应用程序的支持 web 平台。</span><span class="sxs-lookup"><span data-stu-id="9231c-114">WebView2 Runtime is a re-distributable runtime and serves as the backing web platform for WebView2 applications.</span></span>  <span data-ttu-id="9231c-115">此概念类似于 c + +/.NET 应用的 VC + + 或 .NET 运行时。</span><span class="sxs-lookup"><span data-stu-id="9231c-115">This concept is similar to VC++ or .NET Runtime for C++/.NET apps.</span></span>  <span data-ttu-id="9231c-116">在该环境下，将修改运行时 Microsoft Edge \ (Chromium \ ) 二进制文件，这些二进制文件经过微调并针对应用程序进行了测试。</span><span class="sxs-lookup"><span data-stu-id="9231c-116">Under the hood, the Runtime is modified Microsoft Edge \(Chromium\) binaries that are fine-tuned and tested for applications.</span></span>  <span data-ttu-id="9231c-117">在安装时，运行时不会显示为用户可见的浏览器，例如，用户没有浏览器桌面快捷方式或 "开始" 菜单项。</span><span class="sxs-lookup"><span data-stu-id="9231c-117">The Runtime won't appear as a user-visible browser upon installation, for example, users won't have a browser desktop shortcut or start menu entry.</span></span>  
-
-<span data-ttu-id="9231c-118">对于开发和测试，开发人员可以将运行时或任何非稳定的 Microsoft Edge \ (Chromium \ ) 浏览器频道用于支持的 web 平台。</span><span class="sxs-lookup"><span data-stu-id="9231c-118">For development and testing, developers may use the Runtime or any non-stable Microsoft Edge \(Chromium\) browser channel for the backing web platform.</span></span>  <span data-ttu-id="9231c-119">在生产环境中，开发人员必须确保在应用程序启动之前用户设备上存在运行时。</span><span class="sxs-lookup"><span data-stu-id="9231c-119">In production environments, developers must ensure the Runtime is present on user devices before the application starts.</span></span>  <span data-ttu-id="9231c-120">Microsoft Edge 稳定通道不可用于 WebView2 用法，防止应用在生产环境中依赖浏览器参与。</span><span class="sxs-lookup"><span data-stu-id="9231c-120">The Microsoft Edge Stable channel is unavailable for WebView2 usage to prevent apps from taking a dependency on the browser in production.</span></span>  
-
-<span data-ttu-id="9231c-121">开发人员不能在浏览器上取得依赖性，原因如下：</span><span class="sxs-lookup"><span data-stu-id="9231c-121">Developers must not take a dependency on the browser because:</span></span>  
-
-*   <span data-ttu-id="9231c-122">Microsoft Edge \ (Chromium \ ) 不保证在所有用户设备上都存在。</span><span class="sxs-lookup"><span data-stu-id="9231c-122">Microsoft Edge \(Chromium\) isn't guaranteed to be present on all user devices.</span></span>  <span data-ttu-id="9231c-123">例如，从 Windows Update 断开的设备或不是由 Microsoft 直接管理的设备，而不是由 Microsoft (直接在教育机构的大型企业/市场部 ) 中</span><span class="sxs-lookup"><span data-stu-id="9231c-123">For example, devices disconnected from Windows Update or not managed by Microsoft directly \(a large portion of the Enterprise/EDU market\) may not have the browser.</span></span>  <span data-ttu-id="9231c-124">允许开发人员分发 WebView2 运行时，可避免将浏览器作为应用的必备项。</span><span class="sxs-lookup"><span data-stu-id="9231c-124">Allowing developers to distribute the WebView2 Runtime avoids taking a dependency on the browser as a pre-requisite for apps.</span></span>
-*   <span data-ttu-id="9231c-125">浏览器和应用具有不同的用例，因此对浏览器的依赖可能会对你的应用产生意外的副作用。</span><span class="sxs-lookup"><span data-stu-id="9231c-125">Browsers and apps have different use cases, and so taking a dependency on a browser may have unintended side-effects on your apps.</span></span>  <span data-ttu-id="9231c-126">例如，IT 管理员可以针对内部网站兼容性版本控制浏览器。</span><span class="sxs-lookup"><span data-stu-id="9231c-126">For example, IT admins may version-control the browser for internal website compatibility.</span></span>  <span data-ttu-id="9231c-127">WebView2 运行时允许应用在浏览器更新处于活动的管理期间保持长绿。</span><span class="sxs-lookup"><span data-stu-id="9231c-127">WebView2 Runtime allows apps to stay evergreen while browser updates are being actively managed.</span></span>  
-*   <span data-ttu-id="9231c-128">与浏览器相反，运行时是为应用程序方案开发和测试的，在某些情况下，可能会包含在浏览器中尚不可用的 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="9231c-128">As opposed to the browser, the Runtime is developed and tested for application scenarios and in some cases may include bug fixes not yet available in the browser.</span></span>  
-
-<span data-ttu-id="9231c-129">长时间 WebView2 运行时计划在 Windows 将来的版本中传送收件箱。</span><span class="sxs-lookup"><span data-stu-id="9231c-129">The Evergreen WebView2 Runtime is planned to ship inbox in future releases of Windows.</span></span>  <span data-ttu-id="9231c-130">在运行库更广泛地可用之前，建议开发人员将运行时与其生产应用程序一起部署。</span><span class="sxs-lookup"><span data-stu-id="9231c-130">Before the Runtime becomes more universally available, developers are recommended to deploy the Runtime along with their production application.</span></span>  
-
-### <span data-ttu-id="9231c-131">部署长绿 WebView2 运行时</span><span class="sxs-lookup"><span data-stu-id="9231c-131">Deploying the Evergreen WebView2 Runtime</span></span>  
-
-<span data-ttu-id="9231c-132">设备上的所有长时间应用仅需要一个安装长绿 WebView2 运行时。</span><span class="sxs-lookup"><span data-stu-id="9231c-132">Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.</span></span>  <span data-ttu-id="9231c-133">[WebView2 运行时下载页面][Webview2Installer]上提供了许多工具，可帮助开发人员部署长时间运行时，例如：</span><span class="sxs-lookup"><span data-stu-id="9231c-133">There are a number of tools available on the [WebView2 Runtime download page][Webview2Installer] to help developers deploy the Evergreen Runtime, such as:</span></span>  
-
-*   <span data-ttu-id="9231c-134">WebView2 运行时引导程序 \ (即将发布 \ ) 是一个小的 \ (约 2 MB \ ) 安装程序。</span><span class="sxs-lookup"><span data-stu-id="9231c-134">WebView2 Runtime Bootstrapper \(to be released soon\) is a tiny \(approximately 2 MB\) installer.</span></span>  <span data-ttu-id="9231c-135">此安装程序从与用户的设备体系结构匹配的 Microsoft 服务器下载并安装长时间运行时。</span><span class="sxs-lookup"><span data-stu-id="9231c-135">This installer downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.</span></span>  
-*   <span data-ttu-id="9231c-136">链接以下载引导程序 \ (即将发布 \n ) 是供开发人员以编程方式下载引导程序的链接。</span><span class="sxs-lookup"><span data-stu-id="9231c-136">Link to download the Bootstrapper \(to be released soon\) is a link for developers to programmatically download the bootstrapper.</span></span>
-*   <span data-ttu-id="9231c-137">WebView2 运行时独立安装程序是可在脱机环境中安装长时间 WebView2 运行时的完整安装程序。</span><span class="sxs-lookup"><span data-stu-id="9231c-137">WebView2 Runtime Standalone Installer is a full installer that can install the Evergreen WebView2 Runtime in offline environments.</span></span>  
-
-<span data-ttu-id="9231c-138">当前，引导程序和独立安装程序仅支持每台计算机安装，这需要提升。</span><span class="sxs-lookup"><span data-stu-id="9231c-138">Currently, both the bootstrapper and standalone installer only support per-machine install, which requires elevation.</span></span>  <span data-ttu-id="9231c-139">如果没有提升，则会显示一个 Windows 用户帐户控制提示，要求用户提升权限。</span><span class="sxs-lookup"><span data-stu-id="9231c-139">When run without elevation, a Windows User Account Control prompt appears to ask users to elevate permissions.</span></span>  
-
-<span data-ttu-id="9231c-140">我们建议采用以下工作流，以确保在启动应用程序之前已安装运行时。</span><span class="sxs-lookup"><span data-stu-id="9231c-140">We recommend the following workflows to ensure the Runtime is already installed before your application launches.</span></span>  <span data-ttu-id="9231c-141">你可以根据你的方案调整工作流。</span><span class="sxs-lookup"><span data-stu-id="9231c-141">You may adjust your workflow depending on your scenario.</span></span>  <span data-ttu-id="9231c-142">我们还将在将来提供示例代码。</span><span class="sxs-lookup"><span data-stu-id="9231c-142">We'll also provide sample code in the future.</span></span>  
-
-#### <span data-ttu-id="9231c-143">仅联机部署</span><span class="sxs-lookup"><span data-stu-id="9231c-143">Online-only deployment</span></span>  
-
-<span data-ttu-id="9231c-144">如果您有仅限联机的部署方案，而最终用户认为有 internet 访问权限，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="9231c-144">If you have an online-only deployment scenario where end users are assumed to have internet access, perform the following steps:</span></span>  
-
-*   <span data-ttu-id="9231c-145">在应用程序设置过程中，请检查运行时是否已由下列两种情况之一安装：</span><span class="sxs-lookup"><span data-stu-id="9231c-145">During your application setup, check if the Runtime is already installed by either:</span></span>  
-    *   <span data-ttu-id="9231c-146">检查中是否 `pv (REG_SZ)` 存在 regkey `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ，或者</span><span class="sxs-lookup"><span data-stu-id="9231c-146">Inspecting if regkey `pv (REG_SZ)` exists under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}`, or</span></span>  
-    *   <span data-ttu-id="9231c-147">调用 WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) 并检查 versionInfo 是否为 NULL。</span><span class="sxs-lookup"><span data-stu-id="9231c-147">Calling WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the versionInfo is NULL.</span></span>  
-*   <span data-ttu-id="9231c-148">如果未安装运行时，请使用链接以编程方式下载引导程序。</span><span class="sxs-lookup"><span data-stu-id="9231c-148">If the Runtime isn't installed, use the link to programmatically download the bootstrapper.</span></span>  
-*   <span data-ttu-id="9231c-149">使用 "静默安装" 从提升的进程或命令提示符处调用引导 `MicrosoftEdgeWebview2Setup.exe /silent /install` 程序。</span><span class="sxs-lookup"><span data-stu-id="9231c-149">Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent /install` for silent install.</span></span>  
-
-<span data-ttu-id="9231c-150">此工作流可确保仅在需要时安装运行时，不需要打包安装程序或检测用户设备的体系结构，并且可以无提示地安装运行时。</span><span class="sxs-lookup"><span data-stu-id="9231c-150">This workflow ensures you install the Runtime only when it's needed, you're not required to package installers or detect the architecture of user devices, and can install the Runtime silently.</span></span>  <span data-ttu-id="9231c-151">你还可以选择将引导程序与你的应用程序打包，而不是按需以编程方式下载它。</span><span class="sxs-lookup"><span data-stu-id="9231c-151">You may also choose to package the bootstrapper with your application instead of programmatically downloading it on demand.</span></span>  
-
-#### <span data-ttu-id="9231c-152">脱机部署</span><span class="sxs-lookup"><span data-stu-id="9231c-152">Offline deployment</span></span>  
-
-<span data-ttu-id="9231c-153">如果你有一个脱机部署方案，其中应用部署必须完全脱机工作，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="9231c-153">If you have an offline deployment scenario where app deployment has to work entirely offline, perform the following steps:</span></span>  
-
-*   <span data-ttu-id="9231c-154">下载 [独立安装程序][Webview2Installer]。</span><span class="sxs-lookup"><span data-stu-id="9231c-154">Download the [standalone installer][Webview2Installer].</span></span>  
-*   <span data-ttu-id="9231c-155">在应用程序安装程序或更新程序中包括安装程序。</span><span class="sxs-lookup"><span data-stu-id="9231c-155">Include the installer in your application installer or updater.</span></span>  
-*   <span data-ttu-id="9231c-156">在应用程序设置过程中，请检查运行时是否已由下列两种情况之一安装：</span><span class="sxs-lookup"><span data-stu-id="9231c-156">During your application setup, check if the Runtime is already installed by either:</span></span>  
-    *   <span data-ttu-id="9231c-157">检查中是否 `pv (REG_SZ)` 存在 regkey `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ，或者</span><span class="sxs-lookup"><span data-stu-id="9231c-157">Inspecting if regkey `pv (REG_SZ)` exists under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}`, or</span></span>  
-    *   <span data-ttu-id="9231c-158">调用 WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) 并检查 versionInfo 是否为 NULL。</span><span class="sxs-lookup"><span data-stu-id="9231c-158">Calling WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the versionInfo is NULL.</span></span>  
-*   <span data-ttu-id="9231c-159">如果运行时未安装，请从提升的进程或命令提示符处调用独立安装程序，以 `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` 进行静默式安装。</span><span class="sxs-lookup"><span data-stu-id="9231c-159">If the Runtime isn't installed, invoke the standalone installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` for silent install.</span></span>  
-
-## <span data-ttu-id="9231c-160">固定版本分发模式</span><span class="sxs-lookup"><span data-stu-id="9231c-160">Fixed Version distribution mode</span></span>  
+## <span data-ttu-id="e8bde-107">长绿分布模式</span><span class="sxs-lookup"><span data-stu-id="e8bde-107">Evergreen distribution mode</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="9231c-161">固定版本分发模式尚不可用。</span><span class="sxs-lookup"><span data-stu-id="9231c-161">The Fixed Version distribution mode is not available yet.</span></span>  
+> <span data-ttu-id="e8bde-108">对于大多数开发人员，建议使用长绿分布模式。</span><span class="sxs-lookup"><span data-stu-id="e8bde-108">The Evergreen distribution mode is recommended for most developers.</span></span>  
 
-<span data-ttu-id="9231c-162">对于受限制的环境，有计划支持固定版本，以前称为 "携带"、"分发" 模式。</span><span class="sxs-lookup"><span data-stu-id="9231c-162">For constrained environments, there are plans to support a Fixed Version, previously named bring-your-own, distribution mode.</span></span>  <span data-ttu-id="9231c-163">固定版本分发模式允许开发人员选择和打包特定版本的 WebView2 运行时。</span><span class="sxs-lookup"><span data-stu-id="9231c-163">The Fixed Version distribution mode allows developers to select and package a specific version of the WebView2 Runtime.</span></span>  <span data-ttu-id="9231c-164">固定版本分发模式允许你控制你的应用程序使用哪个版本的 WebView2 运行时，以及何时更新用户计算机。</span><span class="sxs-lookup"><span data-stu-id="9231c-164">The Fixed Version distribution mode allows you to control which version of the WebView2 Runtime is used by your application, and when user machines are updated.</span></span>  <span data-ttu-id="9231c-165">固定版本分发模式不会接收任何自动更新，开发人员应计划自己应用更新。</span><span class="sxs-lookup"><span data-stu-id="9231c-165">The Fixed Version distribution mode doesn't receive any automatic updates, and developers should plan to apply updates themselves.</span></span>  
+<span data-ttu-id="e8bde-109">长时间分布模式可确保你的应用充分利用最新功能和安全更新。</span><span class="sxs-lookup"><span data-stu-id="e8bde-109">The Evergreen distribution mode ensures that your app is taking advantage of the latest features and security updates.</span></span>  <span data-ttu-id="e8bde-110">它具有下列特征。</span><span class="sxs-lookup"><span data-stu-id="e8bde-110">It has the following characteristics.</span></span>  
 
+*   <span data-ttu-id="e8bde-111">基础 web 平台 \ (WebView2 运行时 \ ) 自动更新，无需额外的精力。</span><span class="sxs-lookup"><span data-stu-id="e8bde-111">The underlying web platform \(WebView2 Runtime\) updates automatically without additional effort from you.</span></span>  
+*   <span data-ttu-id="e8bde-112">所有使用长时间分布模式的应用均使用长绿 WebView2 运行时的共享副本，该副本节省磁盘空间。</span><span class="sxs-lookup"><span data-stu-id="e8bde-112">All apps that use the Evergreen distribution mode use a shared copy of the Evergreen WebView2 Runtime, which saves disk space.</span></span>  
+    
+### <span data-ttu-id="e8bde-113">了解 WebView2 运行时</span><span class="sxs-lookup"><span data-stu-id="e8bde-113">Understanding the WebView2 Runtime</span></span>  
 
+<span data-ttu-id="e8bde-114">WebView2 运行时是可再发行的运行时，用作 WebView2 应用的支持 web 平台。</span><span class="sxs-lookup"><span data-stu-id="e8bde-114">The WebView2 Runtime is a redistributable runtime and serves as the backing web platform for WebView2 apps.</span></span>  <span data-ttu-id="e8bde-115">该概念类似于 Visual c + + 或适用于 c + +/.NET 应用的 .NET 运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-115">The concept is similar to Visual C++ or the .NET Runtime for C++/.NET apps.</span></span>  <span data-ttu-id="e8bde-116">运行时包含已修改的 Microsoft Edge \ (Chromium \ ) 二进制文件，这些二进制文件对应用进行了微调和测试。</span><span class="sxs-lookup"><span data-stu-id="e8bde-116">The Runtime contains modified Microsoft Edge \(Chromium\) binaries that are fine-tuned and tested for apps.</span></span>  <span data-ttu-id="e8bde-117">在安装时，运行时不会显示为用户可见的浏览器。</span><span class="sxs-lookup"><span data-stu-id="e8bde-117">The Runtime does not appear as a user-visible browser upon installation.</span></span>  <span data-ttu-id="e8bde-118">例如，用户没有浏览器桌面快捷方式或 "开始" 菜单项。</span><span class="sxs-lookup"><span data-stu-id="e8bde-118">For example, a user does not have a browser desktop shortcut or start menu entry.</span></span>  
+
+<span data-ttu-id="e8bde-119">在开发和测试期间，你可以使用作为后备 web 平台。</span><span class="sxs-lookup"><span data-stu-id="e8bde-119">During development and testing, you may use either as the backing web platform.</span></span>  
+
+*   <span data-ttu-id="e8bde-120">WebView2 运行时</span><span class="sxs-lookup"><span data-stu-id="e8bde-120">The WebView2 Runtime</span></span>  
+*   <span data-ttu-id="e8bde-121">任何预览体验成员 \ (非稳定 \ ) Microsoft Edge \ (Chromium \ ) 浏览器频道</span><span class="sxs-lookup"><span data-stu-id="e8bde-121">Any Insider \(non-stable\) Microsoft Edge \(Chromium\) browser channel</span></span>  
+
+<span data-ttu-id="e8bde-122">在生产环境中，必须确保用户设备上的运行时在应用启动前才存在。</span><span class="sxs-lookup"><span data-stu-id="e8bde-122">In production environments, you must ensure the Runtime is present on user devices before the app starts.</span></span>  <span data-ttu-id="e8bde-123">Microsoft Edge 稳定通道不可用于 WebView2 用法。</span><span class="sxs-lookup"><span data-stu-id="e8bde-123">The Microsoft Edge Stable channel is unavailable for WebView2 usage.</span></span>  <span data-ttu-id="e8bde-124">决策可防止应用在生产中的浏览器上参与依赖。</span><span class="sxs-lookup"><span data-stu-id="e8bde-124">The decision prevents apps from taking a dependency on the browser in production.</span></span>
+
+<span data-ttu-id="e8bde-125">不要在浏览器上执行依赖关系，原因如下：</span><span class="sxs-lookup"><span data-stu-id="e8bde-125">Do not take a dependency on the browser because:</span></span>  
+
+*   <span data-ttu-id="e8bde-126">Microsoft Edge \ (Chromium \ ) 不保证在所有用户设备上都存在。</span><span class="sxs-lookup"><span data-stu-id="e8bde-126">Microsoft Edge \(Chromium\) isn't guaranteed to be present on all user devices.</span></span>  <span data-ttu-id="e8bde-127">例如，从 Windows Update 断开的设备或不是由 Microsoft 直接管理的设备，而不是由 Microsoft (直接管理的，教育机构的大型企业和市场的 ) 可能没有浏览器。</span><span class="sxs-lookup"><span data-stu-id="e8bde-127">For example, devices disconnected from Windows Update or not managed by Microsoft directly \(a large portion of the Enterprise and EDU market\) may not have the browser.</span></span>  <span data-ttu-id="e8bde-128">允许你分发 WebView2 运行时，可避免将浏览器作为应用的必备项。</span><span class="sxs-lookup"><span data-stu-id="e8bde-128">Allowing you to distribute the WebView2 Runtime avoids taking a dependency on the browser as a pre-requisite for apps.</span></span>  
+*   <span data-ttu-id="e8bde-129">浏览器和应用具有不同的用例，因此对浏览器的依赖可能会对你的应用产生意外的副作用。</span><span class="sxs-lookup"><span data-stu-id="e8bde-129">Browsers and apps have different use cases, and so taking a dependency on a browser may have unintended side-effects on your apps.</span></span>  <span data-ttu-id="e8bde-130">例如，IT 管理员可以针对内部网站兼容性版本控制浏览器。</span><span class="sxs-lookup"><span data-stu-id="e8bde-130">For example, IT admins may version-control the browser for internal website compatibility.</span></span>  <span data-ttu-id="e8bde-131">WebView2 运行时允许应用在浏览器更新处于活动的管理期间保持长绿。</span><span class="sxs-lookup"><span data-stu-id="e8bde-131">The WebView2 Runtime allows apps to stay evergreen while browser updates are being actively managed.</span></span>  
+*   <span data-ttu-id="e8bde-132">与浏览器相反，运行时是为应用方案开发和测试的，在某些情况下，可能包括浏览器中尚不提供的 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="e8bde-132">As opposed to the browser, the Runtime is developed and tested for app scenarios and in some cases may include bug fixes not yet available in the browser.</span></span>  
+    
+<span data-ttu-id="e8bde-133">将来，长时间 WebView2 运行时将在未来版本的 Windows 中发货。</span><span class="sxs-lookup"><span data-stu-id="e8bde-133">In the future, the Evergreen WebView2 Runtime will ship in future releases of Windows.</span></span>  <span data-ttu-id="e8bde-134">将运行时与你的生产应用进行部署，直到运行时更广泛地可用。</span><span class="sxs-lookup"><span data-stu-id="e8bde-134">Deploy the Runtime with your production app until the Runtime becomes more universally available.</span></span>  
+
+### <span data-ttu-id="e8bde-135">部署长绿 WebView2 运行时</span><span class="sxs-lookup"><span data-stu-id="e8bde-135">Deploying the Evergreen WebView2 Runtime</span></span>  
+
+<span data-ttu-id="e8bde-136">设备上的所有长时间应用仅需要一个安装长绿 WebView2 运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-136">Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.</span></span>  <span data-ttu-id="e8bde-137">[WebView2 运行时下载页面][Webview2Installer]上提供了许多工具。</span><span class="sxs-lookup"><span data-stu-id="e8bde-137">There are a number of tools available on the [WebView2 Runtime download page][Webview2Installer].</span></span>  <span data-ttu-id="e8bde-138">以下工具可帮助你部署长绿运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-138">The following tools help you deploy the Evergreen Runtime.</span></span>  
+
+*   <span data-ttu-id="e8bde-139">WebView2 运行时引导程序是大约 2 MB \ ) 安装程序的小型 (。</span><span class="sxs-lookup"><span data-stu-id="e8bde-139">WebView2 Runtime Bootstrapper is a tiny \(approximately 2 MB\) installer.</span></span>  <span data-ttu-id="e8bde-140">WebView2 运行时引导程序从与用户的设备体系结构匹配的 Microsoft 服务器下载和安装长绿运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-140">WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.</span></span>  
+*   <span data-ttu-id="e8bde-141">使用链接以编程方式下载引导程序。</span><span class="sxs-lookup"><span data-stu-id="e8bde-141">Use a link to programmatically download the bootstrapper.</span></span>  
+*   <span data-ttu-id="e8bde-142">WebView2 运行时独立安装程序是可在脱机环境中安装长时间 WebView2 运行时的完整安装程序。</span><span class="sxs-lookup"><span data-stu-id="e8bde-142">WebView2 Runtime Standalone Installer is a full installer that can install the Evergreen WebView2 Runtime in offline environments.</span></span>  
+    
+<span data-ttu-id="e8bde-143">当前，引导程序和独立安装程序仅支持每台计算机安装，这需要提升。</span><span class="sxs-lookup"><span data-stu-id="e8bde-143">Currently, both the bootstrapper and standalone installer only support per-machine installs, which requires elevation.</span></span>  <span data-ttu-id="e8bde-144">如果安装程序运行时没有提升权限，系统将提示用户提升权限。</span><span class="sxs-lookup"><span data-stu-id="e8bde-144">If an installer is run without elevation, the user is prompted to elevate permissions.</span></span>  
+
+<span data-ttu-id="e8bde-145">我们建议采用以下工作流，以确保在你的应用启动之前已安装运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-145">We recommend the following workflows to ensure the Runtime is already installed before your app launches.</span></span>  <span data-ttu-id="e8bde-146">你可以根据你的方案调整工作流。</span><span class="sxs-lookup"><span data-stu-id="e8bde-146">You may adjust your workflow depending on your scenario.</span></span>  <span data-ttu-id="e8bde-147">示例代码可在 [示例][InstallerSample]存储库中使用。</span><span class="sxs-lookup"><span data-stu-id="e8bde-147">Sample code is available in the [Samples repo][InstallerSample].</span></span>  
+
+#### <span data-ttu-id="e8bde-148">仅联机部署</span><span class="sxs-lookup"><span data-stu-id="e8bde-148">Online-only deployment</span></span>  
+
+<span data-ttu-id="e8bde-149">如果您有一个仅供联机使用的部署方案，其中假设最终用户拥有 internet 访问权限，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="e8bde-149">If you have an online-only deployment scenario where end users are assumed to have internet access, complete the following steps.</span></span>  
+
+1.  <span data-ttu-id="e8bde-150">在应用设置期间，确保已安装运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-150">During your app setup, ensure the Runtime is already installed.</span></span>  <span data-ttu-id="e8bde-151">若要验证，请完成以下操作之一。</span><span class="sxs-lookup"><span data-stu-id="e8bde-151">To  verify, complete one of the following actions.</span></span>  
+    *   <span data-ttu-id="e8bde-152">检查 regkey 是否 `pv (REG_SZ)` 存在且不是 `null` 空的。</span><span class="sxs-lookup"><span data-stu-id="e8bde-152">Inspect if the `pv (REG_SZ)` regkey exists and is not `null` or empty.</span></span>  <span data-ttu-id="e8bde-153">`pv (REG_SZ)`在以下位置查找。</span><span class="sxs-lookup"><span data-stu-id="e8bde-153">Find  `pv (REG_SZ)` at the following location.</span></span>  
+        
+        ```text
+        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        ```
+          
+    *   <span data-ttu-id="e8bde-154">运行 [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] 并确保 `versionInfo` 为 `NULL` 。</span><span class="sxs-lookup"><span data-stu-id="e8bde-154">Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.</span></span>  
+1.  <span data-ttu-id="e8bde-155">如果未安装运行时，请使用链接以编程方式下载引导程序。</span><span class="sxs-lookup"><span data-stu-id="e8bde-155">If the Runtime isn't installed, use the link to programmatically download the bootstrapper.</span></span>  
+1.  <span data-ttu-id="e8bde-156">使用 "静默安装" 从提升的进程或命令提示符处调用引导 `MicrosoftEdgeWebview2Setup.exe /silent /install` 程序。</span><span class="sxs-lookup"><span data-stu-id="e8bde-156">Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent /install` for silent install.</span></span>  
+    
+<span data-ttu-id="e8bde-157">以前的工作流具有以下优点。</span><span class="sxs-lookup"><span data-stu-id="e8bde-157">The previous workflow has the following benefits.</span></span>  
+
+*   <span data-ttu-id="e8bde-158">仅在需要时或不需要打包安装程序时，才安装运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-158">Install the Runtime only when needed or when you're not required to package installers.</span></span>  
+*   <span data-ttu-id="e8bde-159">引导程序将自动检测设备体系结构并安装匹配的运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-159">The bootstrapper automatically detects device architecture and installs the matching Runtime.</span></span> 
+*   <span data-ttu-id="e8bde-160">以静默方式安装运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-160">Install the Runtime silently.</span></span>  
+    
+<span data-ttu-id="e8bde-161">你还可以选择将引导程序与你的应用打包，而不是按需以编程方式下载它。</span><span class="sxs-lookup"><span data-stu-id="e8bde-161">You may also choose to package the bootstrapper with your app instead of programmatically downloading it on demand.</span></span>  
+
+#### <span data-ttu-id="e8bde-162">脱机部署</span><span class="sxs-lookup"><span data-stu-id="e8bde-162">Offline deployment</span></span>  
+
+<span data-ttu-id="e8bde-163">如果你有一个脱机部署方案，其中应用部署必须完全脱机工作，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="e8bde-163">If you have an offline deployment scenario where app deployment has to work entirely offline, complete the following steps.</span></span>  
+
+1.  <span data-ttu-id="e8bde-164">下载 [独立安装程序][Webview2Installer]。</span><span class="sxs-lookup"><span data-stu-id="e8bde-164">Download the [standalone installer][Webview2Installer].</span></span>  
+1.  <span data-ttu-id="e8bde-165">在应用安装程序或更新程序中包括安装程序。</span><span class="sxs-lookup"><span data-stu-id="e8bde-165">Include the installer in your app installer or updater.</span></span>  
+1.  <span data-ttu-id="e8bde-166">在应用设置期间，确保已安装运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-166">During your app setup, ensure the Runtime is already installed.</span></span>  <span data-ttu-id="e8bde-167">若要验证，请完成以下操作之一。</span><span class="sxs-lookup"><span data-stu-id="e8bde-167">To  verify, complete one of the following actions.</span></span>  
+    *   <span data-ttu-id="e8bde-168">检查 regkey 是否 `pv (REG_SZ)` 存在且不是 `null` 空的。</span><span class="sxs-lookup"><span data-stu-id="e8bde-168">Inspect if the `pv (REG_SZ)` regkey exists and is not `null` or empty.</span></span>  <span data-ttu-id="e8bde-169">`pv (REG_SZ)`在以下位置查找。</span><span class="sxs-lookup"><span data-stu-id="e8bde-169">Find  `pv (REG_SZ)` at the following location.</span></span>  
+        
+        ```text
+        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        ```
+          
+    *   <span data-ttu-id="e8bde-170">运行 [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] 并确保 `versionInfo` 为 `NULL` 。</span><span class="sxs-lookup"><span data-stu-id="e8bde-170">Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.</span></span>  
+1.  <span data-ttu-id="e8bde-171">如果未安装运行时，请运行独立安装程序。</span><span class="sxs-lookup"><span data-stu-id="e8bde-171">If the Runtime isn't installed, run the standalone installer.</span></span>  <span data-ttu-id="e8bde-172">如果要运行静默安装，请从提升的进程运行安装程序，或复制并运行以下命令。</span><span class="sxs-lookup"><span data-stu-id="e8bde-172">If you want to run a silent installation, either run the installer from an elevated process or copy and run the following command.</span></span>  
+    
+    ```shell
+    MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
+    ```  
+    
+### <span data-ttu-id="e8bde-173">在长绿模式下保持兼容</span><span class="sxs-lookup"><span data-stu-id="e8bde-173">Stay compatible in Evergreen mode</span></span>
+
+<span data-ttu-id="e8bde-174">Web 不断发展。</span><span class="sxs-lookup"><span data-stu-id="e8bde-174">The Web is constantly evolving.</span></span> <span data-ttu-id="e8bde-175">长时间 WebView2 运行时保持最新，以便为你提供最新的功能和安全修补程序。</span><span class="sxs-lookup"><span data-stu-id="e8bde-175">The Evergreen WebView2 Runtime is kept up-to-date to provide you with the latest features and security fixes.</span></span>  <span data-ttu-id="e8bde-176">为了确保你的应用与 web 保持兼容，我们建议你设置测试基础结构。</span><span class="sxs-lookup"><span data-stu-id="e8bde-176">To ensure your app stays compatible with the web, we recommend you set up testing infrastructure.</span></span>
+
+<span data-ttu-id="e8bde-177">非稳定的 Microsoft Edge 通道 \ (Beta/Dev/sneak \ ) 提供一种可快速查看 WebView2 运行时中所进入的内容的功能。</span><span class="sxs-lookup"><span data-stu-id="e8bde-177">Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into what is coming next into WebView2 Runtime.</span></span>  <span data-ttu-id="e8bde-178">与开发 Microsoft Edge 网站一样，我们建议你定期测试你的 WebView2 应用。</span><span class="sxs-lookup"><span data-stu-id="e8bde-178">Just like developing websites for Microsoft Edge, we recommend that you test your WebView2 app regularly.</span></span>  <span data-ttu-id="e8bde-179">针对其中一个非稳定信道测试你的 WebView2 应用，如果出现问题，请更新你的应用或 [报告问题][GithubMicrosoftedgeWebviewfeedback] 。</span><span class="sxs-lookup"><span data-stu-id="e8bde-179">Test your WebView2 app against one of the non-stable channels, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise.</span></span> <span data-ttu-id="e8bde-180">通常情况下，推荐使用开发人员和 Beta。</span><span class="sxs-lookup"><span data-stu-id="e8bde-180">Typically Dev and Beta are the recommended channels.</span></span>  <span data-ttu-id="e8bde-181">若要帮助确定哪种频道正确，请导航到 [Microsoft Edge 频道概述][DeployEdgeMicrosoftEdgeChannels]。</span><span class="sxs-lookup"><span data-stu-id="e8bde-181">To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].</span></span>  <span data-ttu-id="e8bde-182">你可以在你的测试环境中下载 [不稳定的 Microsoft Edge 通道][DownloadNonstableEdge] ，并使用 `regkey` 或环境变量指示测试应用的通道首选项。</span><span class="sxs-lookup"><span data-stu-id="e8bde-182">You can download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.</span></span>  <span data-ttu-id="e8bde-183">有关详细信息，请导航到 [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]。</span><span class="sxs-lookup"><span data-stu-id="e8bde-183">For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].</span></span>  <span data-ttu-id="e8bde-184">您也可以使用 [WebDriver][HowtoWebdriver] 自动执行 WebView2 测试。</span><span class="sxs-lookup"><span data-stu-id="e8bde-184">You may also use [WebDriver][HowtoWebdriver] to automate WebView2 testing.</span></span>
+
+## <span data-ttu-id="e8bde-185">固定版本分发模式</span><span class="sxs-lookup"><span data-stu-id="e8bde-185">Fixed Version distribution mode</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="e8bde-186">固定版本分发模式位于公共预览版中。</span><span class="sxs-lookup"><span data-stu-id="e8bde-186">The Fixed Version distribution mode is in Public Preview.</span></span>  
+
+<span data-ttu-id="e8bde-187">固定版本分发模式以前已命名为 "携带"。</span><span class="sxs-lookup"><span data-stu-id="e8bde-187">The Fixed Version distribution mode was previously named bring-your-own.</span></span>  
+
+<span data-ttu-id="e8bde-188">对于具有严格兼容性要求的受限环境，请考虑使用固定版本分发模式。</span><span class="sxs-lookup"><span data-stu-id="e8bde-188">For constrained environments with strict compatibility requirements, consider using the Fixed Version distribution mode.</span></span>  <span data-ttu-id="e8bde-189">使用固定版本分发模式选择并打包特定版本的 WebView2 运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-189">Select and package a specific version of the WebView2 Runtime using the Fixed Version distribution mode.</span></span>  <span data-ttu-id="e8bde-190">你可以指定你的应用的运行时更新的计时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-190">You may specify the timing of Runtime updates for your app.</span></span>  <span data-ttu-id="e8bde-191">固定版本分发模式不会接收任何自动更新。</span><span class="sxs-lookup"><span data-stu-id="e8bde-191">The Fixed Version distribution mode doesn't receive any automatic updates.</span></span> <span data-ttu-id="e8bde-192">你应该计划更新你的应用和运行时。</span><span class="sxs-lookup"><span data-stu-id="e8bde-192">You should plan to update your app and the Runtime.</span></span>  
+
+<span data-ttu-id="e8bde-193">若要使用 "固定版本" 模式，</span><span class="sxs-lookup"><span data-stu-id="e8bde-193">To use the Fixed Version mode,</span></span>  
+
+*   <span data-ttu-id="e8bde-194">[下载][Webview2Installer] 已修复的版本程序包，并解压缩程序包。</span><span class="sxs-lookup"><span data-stu-id="e8bde-194">[Download][Webview2Installer] the Fixed Version package, and decompress the package.</span></span>  
+*   <span data-ttu-id="e8bde-195">在项目中包含解压缩的固定版本二进制文件。</span><span class="sxs-lookup"><span data-stu-id="e8bde-195">Include the decompressed Fixed Version binaries in your project.</span></span>  
+*   <span data-ttu-id="e8bde-196">在创建 WebView2 环境时，指示固定版本二进制文件的路径。</span><span class="sxs-lookup"><span data-stu-id="e8bde-196">Indicate the path to the Fixed Version binaries when creating the WebView2 environment.</span></span>  
+    *   <span data-ttu-id="e8bde-197">对于 Win32 C/c + +，你可以使用 [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions] 函数创建环境。</span><span class="sxs-lookup"><span data-stu-id="e8bde-197">For Win32 C/C++, you may create the environment using the [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions] function.</span></span>  <span data-ttu-id="e8bde-198">使用 `browserExecutableFolder` 参数指示固定版本二进制文件的路径。</span><span class="sxs-lookup"><span data-stu-id="e8bde-198">Use the `browserExecutableFolder` parameter to indicate the path to the Fixed Version binaries.</span></span>  
+    *   <span data-ttu-id="e8bde-199">对于 .NET，你可以执行以下任一选项来指定环境。</span><span class="sxs-lookup"><span data-stu-id="e8bde-199">For .NET, you may do either of the following options to specify the environment.</span></span>  
+        
+        > [!NOTE]
+        > <span data-ttu-id="e8bde-200">必须先指定环境，WebView2 属性才 `Source` 会生效。</span><span class="sxs-lookup"><span data-stu-id="e8bde-200">You must specify the environment before the WebView2 `Source` property takes effect.</span></span>  
+        
+        *   <span data-ttu-id="e8bde-201">`CreationProperties`在 WebView2 元素上设置 \ ([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties] / [WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]\ ) 属性。</span><span class="sxs-lookup"><span data-stu-id="e8bde-201">Set the `CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]\) property on the WebView2 element.</span></span>  <span data-ttu-id="e8bde-202">使用 `BrowserExecutableFolder` `CoreWebView2CreationProperties` \ ([WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties] / [WinForms][ReferenceWinFormsMicrosoftWebWebview2WinForms]\ ) 类中的成员指示固定版本二进制文件的路径。</span><span class="sxs-lookup"><span data-stu-id="e8bde-202">Use the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinForms]\) class to indicate the path to the Fixed Version binaries.</span></span>  
+        *   <span data-ttu-id="e8bde-203">使用 `EnsureCoreWebView2Async` \ ([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async] / [WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\ ) 指定环境。</span><span class="sxs-lookup"><span data-stu-id="e8bde-203">Use `EnsureCoreWebView2Async` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) to specify the environment.</span></span>  <span data-ttu-id="e8bde-204">使用 `browserExecutableFolder` [CoreWebView2Environment][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] 中的参数指示固定版本二进制文件的路径。</span><span class="sxs-lookup"><span data-stu-id="e8bde-204">Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] to indicate the path to the Fixed Version binaries.</span></span>  
+*   <span data-ttu-id="e8bde-205">将固定版本的二进制文件打包并与你的应用一起发送。</span><span class="sxs-lookup"><span data-stu-id="e8bde-205">Package and ship the Fixed Version binaries with your app.</span></span>  <span data-ttu-id="e8bde-206">根据需要更新二进制文件。</span><span class="sxs-lookup"><span data-stu-id="e8bde-206">Update the binaries as appropriate.</span></span>  
+    
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "了解浏览器版本和 WebView2 |Microsoft 文档"  
 
+[HowtoWebdriver]: ../howto/webdriver.md "通过 Microsoft Edge 驱动程序自动化和测试 WebView2 |Microsoft 文档"  
+
+[DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Microsoft Edge 频道概述 |Microsoft 文档"  
+
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync "CreateAsync-WebView2 | CoreWebView2Environment 类 |Microsoft 文档"  
+
+[ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "EnsureCoreWebView2Async-WebView2 | WebView2 类 |Microsoft 文档"  
+
+[ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "EnsureCoreWebView2Async-WinForms 类 | WebView2 类 |Microsoft 文档"  
+
+[ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties "CoreWebView2CreationProperties-WebView2 | CoreWebView2CreationProperties 类 |Microsoft 文档"  
+
+[ReferenceWinFormsMicrosoftWebWebview2WinForms]: /dotnet/api/microsoft.web.webview2.winforms "WinForms 类 | WebView2 类 |Microsoft 文档"  
+
+[ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties "CreationProperties-WebView2 | WebView2 类 |Microsoft 文档"  
+
+[ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "WebView2 类 | WebView2 类 |Microsoft 文档"  
+
+[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals |Microsoft 文档"  
+
+[ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString-Globals |Microsoft 文档"  
+
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 安装程序"  
+
+[InstallerSample]: https://aka.ms/wv2installersample "WebView2 安装程序示例"  
+
+[DownloadNonstableEdge]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"  
+
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈 |GitHub"  
