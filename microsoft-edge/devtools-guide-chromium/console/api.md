@@ -3,16 +3,16 @@ description: 使用控制台 API 将消息写入到控制台。
 title: 控制台 API 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 38fb3ee2345530775423ac3ec8e53e0d8de76eaf
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993252"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125284"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,7 +30,7 @@ ms.locfileid: "10993252"
 
 # 控制台 API 参考  
 
-使用控制台 API 方法将消息从 JavaScript 写入控制台。  有关主题的交互式介绍，请参阅将 [消息记录到控制台的入门][DevtoolsConsoleLog]。  对于 `debug()` `monitorEvents()` 仅在 " **控制台** " 窗格中可用的便利方法，请参阅 [控制台实用工具 API 参考][DevtoolConsoleUtilities]。  
+使用控制台 API 方法将消息从 JavaScript 写入控制台。  有关主题的交互式介绍，请导航到将 [消息记录到控制台的入门][DevtoolsConsoleLog]。  对于仅在 "控制台" 窗格中可用的便利方法（如 `debug()` 或 `monitorEvents()` ），导航到 "[控制台实用工具 API 参考][DevtoolConsoleUtilities]"。 **Console**  
 
 ---  
 
@@ -390,6 +390,10 @@ console.warn('warn');
 :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="控制台的结果。 assert ( # A1 示例" lightbox="../media/console-demo-warn-button.msft.png":::
    图13：示例的结果 `console.warn()`  
 :::image-end:::  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

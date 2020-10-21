@@ -3,16 +3,16 @@ description: 按帧、域、类型或其他条件组织资源。
 title: 通过 Microsoft Edge DevTools 查看页面资源
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4f90927cc4044c722d9a62ab4b0427aa2753e4c5
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a243a400dd85b587a8f299a6b8bc3d3d463796b0
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993588"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125396"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993588"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 通过 Microsoft Edge DevTools 查看页面资源   
+# 通过 Microsoft Edge DevTools 查看页面资源  
 
   
 
@@ -40,49 +36,49 @@ ms.locfileid: "10993588"
 
 本指南假定你熟悉 [web 开发][MDNLearnWebDevelopment] 和 [Microsoft Edge DevTools][MicrosoftEdgeDevTools]的基础知识。  
 
-## 打开资源   
+## 打开资源  
 
 当您知道要检查的资源的名称时，" **命令" 菜单** 将提供打开资源的快速方法。  
 
-1.  按 `Control` + `P` \ (Windows \ ) 或 `Command` + `P` \ (macOS \ ) 。  " **打开文件** " 对话框随即打开。  
+1.  选择 `Control` + `P` \ (Windows、Linux \ ) 或 `Command` + `P` \ (macOS \ ) 。  " **打开文件** " 对话框随即打开。  
     
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="&quot;打开文件&quot; 对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        " **打开文件** " 对话框  
     :::image-end:::  
     
-1.  从下拉列表中选择文件，或者开始键入文件名，然后按 `Enter` 一次 "自动完成" 框中突出显示正确的文件。  
+1.  从下拉列表中选择文件，或者开始键入文件名，然后选择 `Enter` 正确的文件在 "自动完成" 框中突出显示。  
     
     :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="&quot;打开文件&quot; 对话框" lightbox="../media/resources-command-menu-file-search.msft.png":::
        在 " **打开文件** " 对话框中键入文件名  
     :::image-end:::  
     
-### 在 "网络" 面板中打开资源   
+### 在 "网络" 面板中打开资源  
 
-请参阅 [检查资源的详细信息][DevtoolsNetworkInspectDetailsResource]。  
+导航以 [检查资源的详细信息][DevtoolsNetworkInspectDetailsResource]。  
 
 :::image type="complex" source="../media/resources-network-response.msft.png" alt-text="&quot;打开文件&quot; 对话框" lightbox="../media/resources-network-response.msft.png":::
    在 " **网络** " 面板中检查资源  
 :::image-end:::  
 
-### 从其他面板中的 "网络" 面板中显示资源   
+### 从其他面板中的 "网络" 面板中显示资源  
 
-下面的 [浏览资源](#browse-resources) 部分介绍了如何从 DevTools UI 的各个部分查看资源。  如果您想要在 " **网络** " 面板中检查资源，请右键单击该资源，然后 **在 "网络" 面板中选择 "显示**"。  
+下面的 [浏览资源](#browse-resources) 部分介绍了如何从 DevTools UI 的各个部分查看资源。  如果你想要检查 **网络** 面板中的资源，请右键单击该资源，然后 **在 "网络" 面板中选择 "显示**"。  
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="&quot;打开文件&quot; 对话框" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **在网络面板中显示**  
 :::image-end:::  
 
-## 浏览资源   
+## 浏览资源  
 
-### 浏览网络面板中的资源   
+### 浏览网络面板中的资源  
 
-请参阅 [记录网络活动][DevtoolsNetworkLogActivity]。  
+导航到 " [记录网络" 活动][DevtoolsNetworkLogActivity]。  
 
 :::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="&quot;打开文件&quot; 对话框" lightbox="../media/resources-network-resources.msft.png":::
    **网络**日志中的页面资源  
 :::image-end:::  
 
-### 按目录浏览   
+### 按目录浏览  
 
 若要查看按目录组织的页面资源，请执行以下操作：  
 
@@ -109,12 +105,12 @@ ms.locfileid: "10993588"
        在**编辑器**中查看文件  
     :::image-end:::  
     
-### 按文件名浏览   
+### 按文件名浏览  
 
 默认情况下， **页面** 窗格按目录对资源进行分组。  若要禁用此分组并以简单列表的形式查看每个域的资源，请执行以下操作：  
 
-1.  打开 **页面** 窗格。  请参阅 [按目录浏览](#browse-by-directory)。  
-1.  单击 " **更多选项**" `...` ，然后禁用 " **按文件夹分组**"。  
+1.  打开 **页面** 窗格。  导航到 " [按目录浏览](#browse-by-directory)"。  
+1.  选择 " **更多选项**" `...` ，然后禁用 " **按文件夹分组**"。  
     
     :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="&quot;打开文件&quot; 对话框" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        " **按文件夹分组** " 选项  
@@ -126,7 +122,7 @@ ms.locfileid: "10993588"
        禁用 "**按文件夹分组**" 后的**页面**窗格  
     :::image-end:::  
     
-### 按文件类型浏览   
+### 按文件类型浏览  
 
 根据文件类型将资源组合在一起：  
 
@@ -149,19 +145,17 @@ ms.locfileid: "10993588"
        在 " **应用程序** " 面板中查看资源  
     :::image-end:::  
     
-#### 通过 "网络" 面板中的类型浏览文件   
+#### 通过 "网络" 面板中的类型浏览文件  
 
-请参阅 [按资源类型筛选][DevtoolsNetworkFilterByResourceType]。  
+导航到 " [按资源类型筛选][DevtoolsNetworkFilterByResourceType]"。  
 
 :::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="&quot;打开文件&quot; 对话框" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    在 **网络** 日志中筛选 CSS  
 :::image-end:::  
 
-<!--  
-  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

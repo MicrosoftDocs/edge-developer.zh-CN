@@ -3,16 +3,16 @@ description: 打开控制台，创建实时表达式，并将表达式设置为 
 title: 跟踪哪些元素有焦点
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993203"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125305"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ ms.locfileid: "10993203"
 完成以下操作以在 DevTools 中跟踪重点元素。  
 
 1.  打开 **控制台**。  
-1.  单击 " **创建实时表达式** \ (![ 创建实时表达式 ][ImageCreateIcon] \ ) "。  
+1.  选择 " **创建实时表达式** \ (![ 创建实时表达式 ][ImageCreateIcon] \ ) "。  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建实时表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        创建实时表达式  
@@ -49,7 +49,7 @@ ms.locfileid: "10993203"
 由于该表达式始终表示焦点元素，因此你现在可以始终跟踪哪个元素具有焦点。  
 
 *   将鼠标悬停在结果上以突出显示视区中的焦点元素。  
-*   右键单击结果，然后在 **"元素" 面板中选择 "显示** "，以在 " **元素** " 面板上的 DOM 树中显示该元素。  
+*   右键单击结果，然后在 " **元素" 面板中选择 "显示** "，以在 " **元素** " 面板上的 DOM 树中显示该元素。  
 *   右键单击结果，然后选择 " **存储为全局变量** "，创建对可以在 **控制台**中使用的节点的变量引用。  
 
 ## 与 Microsoft Edge 开发人员工具团队联系  

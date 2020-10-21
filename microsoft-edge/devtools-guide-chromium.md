@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ba925c402d33ba75c558006c7c43c5dc05515911
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 50c4fa578ffa1738649496176cda2611625908b8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003934"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125319"
 ---
 # Microsoft Edge (Chromium) 开发人员工具  
 
@@ -23,7 +23,7 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 
 如果您要签出 Microsoft Edge，并且主要是在基于 Chromium 的浏览器中开发，则应立即体验。  Microsoft Edge \ (Chromium \ ) 开发人员工具的工作方式与你已了解和使用的开发人员工具相同。  有关详细信息，请参阅 [Microsoft Edge (Chromium) DevTools 中的新增功能][DevtoolsGuideChromiumWhatsNewIndex]。  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
@@ -43,15 +43,15 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 打开 DevTools  
 
 *   按 `F12` 
-*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 Windows/Linux \ (  
 
-如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**" 面板中查看 HTML 和 CSS。  
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  您也可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows/Linux \ (，在 &quot;**检查元素&quot; 模式**下打开 DevTools，使您可以在网站上选择元素并在 &quot;**元素**" 面板中查看 HTML 和 CSS。  
 
-如果您想要查看前端 JavaScript 代码中的日志或快速运行某些脚本，请按 `Ctrl` + `Shift` + `J` Windows 或 `Command` + `Option` + `J` macOS 以启动 DevTools 中的控制台面板。  
+如果您想要查看前端 JavaScript 代码中的日志或快速运行某些脚本，请按 `Ctrl` + `Shift` + `J` Windows/Linux 或 `Command` + `Option` + `J` macOS 以启动 DevTools 中的控制台面板。  
 
 ## 核心工具  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
@@ -71,13 +71,13 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 打开 DevTools  
 
 *   按 `F12` 
-*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 Windows/Linux \ (  
 
-如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**" 类别中浏览 DevTools 扩展或搜索特定的扩展名。  
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  您也可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows/Linux \ (，在 &quot;**检查元素&quot; 模式**下打开 DevTools，使您可以在网站上选择元素并在 &quot;**元素**" 类别中浏览 DevTools 扩展或搜索特定的扩展名。  
 
 您也可以添加 [Chrome Web 应用商店][GoogleChromeWebstoreExtensions]的扩展。  
 
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
@@ -97,11 +97,11 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 打开 DevTools  
 
 *   按 `F12` 
-*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 Windows/Linux \ (  
 
-如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**" 以将你的 DevTools 扩展添加到 Microsoft Edge！  
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  您也可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows/Linux \ (，在 &quot;**检查元素&quot; 模式**下打开 DevTools，使您可以在网站上选择元素并在 &quot;**元素**" 以将你的 DevTools 扩展添加到 Microsoft Edge！  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools&quot":::
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools&quot;:::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
@@ -121,6 +121,6 @@ Microsoft Edge 采用了 Chromium open 源项目以创建更好的 web 兼容性
 打开 DevTools  
 
 *   按 `F12` 
-*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 &quot;Windows \ (&quot;  
+*   按 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` macOS \ ) 上的 Windows/Linux \ (  
 
-如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  你还可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows \ (在 &quot;**检查元素&quot; 模式**下打开 DevTools，以便你在网站上选择元素并在 &quot;**元素**"  
+如果要查看网站上某个元素的 HTML 或 CSS，请右键单击该元素，然后选择 &quot; **检查** &quot; 以跳转到 &quot;元素&quot; 面板。  您也可以按 `Ctrl` + `Shift` + `C` `Command` + `Option` + `C` macOS \ ) 上的 Windows/Linux \ (，在 &quot;**检查元素&quot; 模式**下打开 DevTools，使您可以在网站上选择元素并在 &quot;**元素**"  

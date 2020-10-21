@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 控制台的主要用途是记录消息和�
 title: 控制台概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0cdce953b22d22f9a2bf8048a6eff89388aa6e2e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993154"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125263"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,13 @@ ms.locfileid: "10993154"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 控制台概述   
+# 控制台概述  
 
   
 
 此页面介绍 Microsoft Edge DevTools 控制台如何简化网页开发。  该控制台有2个主要用途： [查看记录的消息](#viewing-logged-messages) 和 [运行 JavaScript](#running-javascript)。  
 
-## 查看已记录的消息   
+## 查看已记录的消息  
 
 Web 开发人员通常将消息记录到控制台，以确保其 JavaScript 按预期工作。  若要记录消息，请在 JavaScript 中插入类似的表达式 `console.log('Hello, Console!')` 。  当浏览器运行你的 JavaScript 并看到类似这样的表达式时，它会将消息记录到控制台。  
 
@@ -62,7 +58,7 @@ Web 开发人员通常将消息记录到控制台，以确保其 JavaScript 按�
                   const artists = [
                       { first: 'René', last: 'Magritte' },
                       { first: 'Chaim', last: 'Soutine' },
-                      { first: 'Henri', last: 'Matisse' }
+                        
                   ];
                   console.table(artists);
                   setTimeout(() => {
@@ -92,7 +88,7 @@ Web 开发人员记录以下2个常规原因的消息。
 
 请参阅 [记录消息入门][DevtoolsConsoleLoggingMessages] ，获取有关日志记录的实际操作体验。  请参阅 [控制台 API 参考][DevToolsConsoleAPI] ，浏览完整的方法列表 `console` 。  方法之间的主要区别是显示正在记录的数据的方式。  
 
-## 运行 JavaScript   
+## 运行 JavaScript  
 
 该 **控制台** 也是一种 [复制][WikiREPLoop]。  你可以在 **控制台** 中运行 JavaScript 以与被检查的页面交互。   
 
@@ -113,16 +109,16 @@ Web 开发人员记录以下2个常规原因的消息。
    :::column-end:::
 :::row-end:::
 
-由于**控制台**对页面的[窗口][MDNWindow]具有完全访问权限，因此可以从**控制台**修改页面。  DevTools 具有几个便于检查页面的便利功能。  例如，假设你的 JavaScript 包含一个名为 `hideModal` 的函数。  运行 `debug(hideModal)` 时，在 `hideModal` 您下次运行代码时，它会暂停在第一行。  有关实用工具函数的完整列表的详细信息，请参阅 [控制台实用工具 API 参考][DevtoolsConsoleUtilitiesDebug]。  
+由于**控制台**对页面的[窗口][MDNWindow]具有完全访问权限，因此可以从**控制台**修改页面。  DevTools 具有几个便于检查页面的便利功能。  例如，假设你的 JavaScript 包含一个名为 `hideModal` 的函数。  运行 `debug(hideModal)` 时，在 `hideModal` 您下次运行代码时，它会暂停在第一行。  有关实用工具函数的完整列表的详细信息，请导航到 " [控制台实用工具 API 参考][DevtoolsConsoleUtilitiesDebug]"。  
 
 运行 JavaScript 时，不必与页面交互。  你可以使用该 **控制台** 尝试与页面无关的新代码。  例如，假设你刚刚了解内置的 JavaScript 数组 [映射 ( # B1 ][MDNMap] 方法，并且你想要进行试验。  
 **控制台**是试用该函数的好地方。  
 
-有关在 **控制台**中运行 javascript 的更多实际体验，请参阅 [运行 javascript 入门][DevtoolsConsoleRunningJavascript]。  
+有关在 **控制台**中运行 javascript 的更多实际体验，请导航到 [开始运行 javascript][DevtoolsConsoleRunningJavascript]。  
 
-   
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

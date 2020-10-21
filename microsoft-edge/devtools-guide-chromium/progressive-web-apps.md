@@ -7,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7eb71d0d57d8a9227a54b921f15dfe434ad6e65b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 80475ebcbbdd3fb04fd0196e993c933e0bdcf090
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993602"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125389"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993602"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 调试渐进式 Web 应用   
-
-
+# 调试渐进式 Web 应用  
 
 使用 **应用程序** 面板检查、修改和调试 web 应用清单、服务工作人员和服务工作人员缓存。  
 
@@ -55,7 +49,7 @@ ms.locfileid: "10993602"
 *   从 " **缓存存储** " 窗格中查看服务工作人员缓存。  
 *   从 " **清除存储** " 窗格中，注销服务工作人员并通过单个按钮单击清除所有存储和缓存。  
     
-## Web app 清单   
+## Web app 清单  
 
 如果你希望你的用户能够将应用添加到其移动 homescreens，你需要 web 应用清单。  该清单定义应用在主屏幕上的显示方式，在从主屏幕启动时，以及应用在启动时的外观。  
 
@@ -77,7 +71,7 @@ ms.locfileid: "10993602"
 *   " **标识** " 和 " **演示文稿** " 部分仅在更易于用户友好的显示中显示清单源中的字段。  
 *   " **图标** " 部分显示您已指定的每个图标。  
     
-<!--### Simulate Add to Homescreen events   -->
+<!--### Simulate Add to Homescreen events  -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -102,7 +96,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## 服务工作人员   
+## 服务工作者  
 
 服务工作者是未来 web 平台中的一种基本技术。  它们是浏览器在后台运行的脚本，这些脚本独立于网页。  这些脚本使你能够访问不需要网页或用户交互的功能，如推送通知、后台同步和脱机体验。  
 
@@ -142,7 +136,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## 服务工作人员缓存 
+## 服务工作人员缓存  
 
 " **缓存存储** " 窗格提供使用 \ (服务工作人员 \ ) [缓存 API][MDNWebCacheAPI]缓存的资源的只读列表。  
 
@@ -159,7 +153,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
    " **缓存存储** " 下拉列表  
 :::image-end:::  
 
-## 配额使用情况 
+## 配额使用情况  
 
 " **缓存存储** " 窗格中的某些响应可能标记为 "不透明"。  这是指从不同来源（例如从 **CDN** 或远程 API）检索的响应未启用 [CORS][FetchHttpCorsProtocol] 。  
 
@@ -179,7 +173,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## 清除存储空间 
+## 清除存储空间  
 
 在开发渐进式 web 应用时，" **清除存储** " 窗格是非常有用的功能。  此窗格允许你注销服务工作人员并通过单个按钮单击来清除所有缓存和存储。  <!--Check out the section below to learn more.  -->
 
@@ -189,7 +183,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
     
 <!--TODO:  Link to sections when available. -->
 
-<!--## Other Application panel guides 
+<!--## Other Application panel guides   
 
 Check out the guides below for more help on the other panes of the **Application** panel.  
 
@@ -198,13 +192,9 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-<!--TODO  -->
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-<!--  
- 
-
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

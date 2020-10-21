@@ -3,16 +3,16 @@ description: Android 设备上从 Windows 或 macOS 计算机远程调试实时�
 title: 远程调试 Android 设备入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f1ed7c698f588bb4e438d1b85a0cd0d1aba42647
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: c6bdb48460fb8f6ff26cbb02872e33cb50dd6e12
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993497"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125361"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,13 +44,13 @@ ms.locfileid: "10993497"
 
 > [!NOTE]
 > 远程调试目前不支持 iOS 设备上的 Microsoft Edge 应用。  以下指南专门针对 Android 设备上的远程调试 Microsoft Edge。
-> 如果你有 macOS 设备，请按照 [Brightcove 调试指南][BrightcoveSupportDebuggingMobileDevices] 操作，以使用 Safari 在 iOS 设备上远程调试 Microsoft Edge。  有关 Safari 中的 Web 检查器工具的详细信息，请参阅 [Safari Web 开发工具][AppleDeveloperSafariTools]。  
+> 如果你有 macOS 设备，请按照 [Brightcove 调试指南][BrightcoveSupportDebuggingMobileDevices] 操作，以使用 Safari 在 iOS 设备上远程调试 Microsoft Edge。  有关 Safari 中的 Web 检查器工具的详细信息，请导航到 [Safari Web 开发工具][AppleDeveloperSafariTools]。  
 
 ## 步骤1：发现 Android 设备  
 
-下面的工作流适用于大多数用户。  有关更多帮助，请参阅 [疑难解答： DevTools 未检测到 Android 设备](#troubleshooting-devtools-is-not-detecting-the-android-device) 部分。  
+下面的工作流适用于大多数用户。  有关更多帮助，请导航到 [疑难解答： DevTools 未检测到 Android 设备](#troubleshooting-devtools-is-not-detecting-the-android-device) 部分。  
 
-1.  打开 Android 上的 " **开发工具选项** " 屏幕。  有关详细信息，请参阅 [配置设备上的开发人员选项][AndroidDeveloperStudioDevOptions]。  
+1.  打开 Android 上的 " **开发工具选项** " 屏幕。  有关详细信息，请导航到 ["配置设备开发人员选项"][AndroidDeveloperStudioDevOptions]。  
 1.  选择 " **启用 USB 调试**"。  
 1.  在开发计算机上，打开 "Microsoft Edge"。  
 1.  导航到 `edge://inspect` Microsoft Edge 中的页面。  
@@ -59,13 +59,13 @@ ms.locfileid: "10993497"
        图 1.  `edge://inspect`Microsoft Edge 中的页面  
     :::image-end:::  
     
-1.  使用 USB 电缆将 Android 设备直接连接到开发计算机。  第一次尝试连接时，通常会看到有关检测未知设备的 DevTools 的提示。  接受 Android 设备上的 " **允许 USB 调试** " 权限提示。  
+1.  使用 USB 电缆将 Android 设备直接连接到开发计算机。  第一次尝试连接时，应显示一个提示，提示您检测未知设备 DevTools。  接受 Android 设备上的 " **允许 USB 调试** " 权限提示。  
     
     :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        图 2.  Android 设备上的 " **允许 USB 调试** " 权限提示  
     :::image-end:::  
     
-1.  如果你看到 Android 设备的模型名称，则 Microsoft Edge 已成功建立与你的设备的连接。  转到 " [步骤 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) " 部分。  
+1.  如果你的 Android 设备的型号名称已显示，则 Microsoft Edge 已成功建立与你的设备的连接。  转到 " [步骤 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) " 部分。  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -83,18 +83,18 @@ ms.locfileid: "10993497"
 
 使用以下提示来帮助验证软件是否设置正确。  
 
-*   如果开发计算机运行的是 Windows，请尝试手动安装 Android 设备的 USB 驱动程序。  有关详细信息，请参阅 [安装 OEM USB 驱动程序][AndroidDeveloperToolsOemUsb]。  
-*   某些 Windows 和 Android 设备的组合 \ (特别是 Samsung \ ) 需要其他设置。  有关详细信息，请参阅 [DevTools 设备在接通电源时不检测设备][Stackoverflow21925992]。  
+*   如果开发计算机运行的是 Windows，请尝试手动安装 Android 设备的 USB 驱动程序。  有关详细信息，请导航到 [安装 OEM USB 驱动程序][AndroidDeveloperToolsOemUsb]。  
+*   某些 Windows 和 Android 设备的组合 \ (特别是 Samsung \ ) 需要其他设置。  有关详细信息，请导航到 [DevTools 设备接通电源时不检测设备][Stackoverflow21925992]。  
 
-使用以下提示可帮助你解决在 Android 设备上不能看到 " **允许 USB 调试** " 提示。  
+如果你的 Android 设备上未显示 " **允许 USB 调试** " 提示，请使用以下提示来帮助你解决问题。  
 
 *   断开连接并重新连接 USB 电缆的同时，DevTools 将集中在开发计算机上，并且显示 Android 主屏幕。  
     
     > [!NOTE]
-    > 如果您的 Android 或开发计算机屏幕被锁定，您可能看不到提示。  
+    > 如果您的 Android 或开发计算机屏幕被锁定，则会显示提示。  
 
 *   更新 Android 设备和开发计算机的显示设置，以便每个设备都不会进入睡眠状态。  
-*   将 Android 的 USB 模式设置为 PTP。  有关详细信息，请参阅 [Galaxy S4 不显示 "授权 USB 调试" 对话框][StackexchangeAndroid101933]。  
+*   将 Android 的 USB 模式设置为 PTP。  有关详细信息，请导航到 " [Galaxy S4 不显示授权 USB 调试" 对话框][StackexchangeAndroid101933]。  
 *   从 Android 设备上的 "**开发工具选项**" 屏幕中选择 "**撤消 USB 调试授权**"，将其重置为新状态。  
 
 如果您发现此页面或 DevTools 设备上未提及的解决方案在堆栈溢出 [时未检测到设备][Stackoverflow21925992] ，请将您的解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
@@ -102,7 +102,7 @@ ms.locfileid: "10993497"
 ## 步骤2：从开发计算机调试 Android 设备上的内容  
 
 1.  在 Android 设备上打开 Microsoft Edge。  
-1.  在 `edge://inspect` 页面中，你将看到 Android 设备的型号名称，后跟设备序列号。  在此下方，你应该看到在设备上运行的 Microsoft Edge 版本，其中版本号位于括号中。  每个打开的 Microsoft Edge 选项卡都将获取一个唯一的分区。  你可以从分区与该选项卡进行交互。  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
+1.  导航到 `edge://inspect` 您的 Android 设备的型号名称，后跟设备序列号。  在此情况下，应显示设备上运行的 Microsoft Edge 版本，其中版本号位于括号中。  每个打开的 Microsoft Edge 选项卡都将获取一个唯一的分区。  你可以从分区与该选项卡进行交互。  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
        图 3.  已连接的远程设备  
@@ -126,14 +126,14 @@ ms.locfileid: "10993497"
 
 转到 DevTools 实例的 " **元素** " 面板，将鼠标悬停在某个元素上，将其突出显示在 Android 设备的视口中。  
 
-您也可以在 Android 设备屏幕上选择一个元素，以便在 " **元素** " 面板中选择该元素。  选择**Select Element** ![ DevTools 实例上的 "选择元素" ][ImageSelectElementIcon] 图标，然后在 Android 设备屏幕上选择该元素。  
+您也可以在 Android 设备屏幕上选择一个元素，以便在 " **元素** " 面板中选择该元素。  选择 DevTools 实例上的 " **选择元素** \ (![ 选择元素 ][ImageSelectElementIcon] \ ) " 图标，然后在 Android 设备屏幕上选择该元素。  
 
 > [!NOTE]
 > 选择第一个选项后，"**选择元素**" 已禁用，因此必须在每次使用该功能时重新启用它。  
 
 ### 将 Android 屏幕说明截屏视频到开发计算机  
 
-选择 " **切换说明截屏视频** ![ 切换 ][ImageToggleScreencastIcon] " 说明截屏视频图标可在 DevTools 实例中查看 Android 设备的内容。  
+选择 " **切换说明截屏视频** \ (![ 切换说明截屏视频 ][ImageToggleScreencastIcon] \ ) " 图标可在 DevTools 实例中查看 Android 设备的内容。  
 
 你可以通过以下方式与说明截屏视频交互。  
 
@@ -148,6 +148,10 @@ ms.locfileid: "10993497"
 > *   Screencasts 仅显示页面内容。  说明截屏视频的透明部分表示设备接口，如 Microsoft Edge 地址栏、Android 状态栏或 Android 键盘。  
 > *   Screencasts 会对帧速率产生负面影响。  在测量滚动或动画时禁用 screencasting，以便更准确地了解页面性能。  
 > *   如果你的 Android 设备屏幕锁定，你的说明截屏视频的内容将消失。  解锁 Android 设备屏幕以自动恢复说明截屏视频。  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: 通过 Microsoft Edge DevTools 动画检查器检查和修改动画
 title: 检查动画
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fed686c07acd0648ac512dac131d85a317fb64eb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015770"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124773"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -56,7 +56,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 动画组是可能相互关联的一组动画。  目前，web 没有组动画的真正概念，因此动画设计器和开发人员必须编写和时间单个动画，以便动画呈现为一个连贯的视觉效果。  动画检查器将预测哪些动画基于开始时间 \ (不包括延迟，如此 ) 。  动画检查器还会并排对动画进行分组。  
 换句话说，在同一脚本块中同时触发的一组动画将组合在一起。  如果动画是异步的，则将其放置在单独的组中。  
 
-## 入门  
+## 开始行动  
 
 可通过两种方式打开 "动画" 检查器：  
 

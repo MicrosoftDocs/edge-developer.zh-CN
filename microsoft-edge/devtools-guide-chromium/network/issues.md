@@ -3,16 +3,16 @@ description: 了解如何在 Microsoft Edge DevTools 的网络面板中检测网
 title: 网络问题指南
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ccd78c34a50bf235416df58aad28df9253b1b24e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993371"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125375"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,20 +28,13 @@ ms.locfileid: "10993371"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 网络问题指南   
-
-
-
+# 网络问题指南  
 
 本指南介绍如何在 Microsoft Edge DevTools 的 "网络" 面板中检测网络问题或优化机会。  
 
 请参阅 [入门][NetworkPerformance] 了解 **网络** 面板的基础知识。  
 
-## 已排队或已停止的请求   
+## 已排队或已停止的请求  
 
 **症状**  
 
@@ -63,7 +56,7 @@ ms.locfileid: "10993371"
 *   使用 HTTP/2。  请勿将域 sharding 与 HTTP/2 配合使用。  
 *   删除或推迟不必要的请求，以便提前下载关键请求。  
     
-## 在 TTFB) 的第一字节 (时间较慢   
+## 在 TTFB) 的第一字节 (时间较慢  
 
 **症状**  
 
@@ -85,7 +78,7 @@ ms.locfileid: "10993371"
 *   如果连接速度较慢，请考虑在 CDN 上托管你的内容或更改托管提供商。  
 *   如果服务器速度较慢，请考虑优化数据库查询、实现缓存或修改服务器配置。  
     
-## 缓慢的内容下载   
+## 缓慢的内容下载  
 
 **症状**  
 
@@ -107,19 +100,17 @@ ms.locfileid: "10993371"
 *   请考虑在 CDN 上托管你的内容或更改托管提供商。  
 *   通过优化您的请求发送更少的字节。  
     
-## 参与知识  
+<!--   ## Contribute knowledge  
 
-是否有网络问题应添加到本指南？  
+Do you have a network issue that should be added to this guide?  
 
-*   向 [@EdgeDevTools][MicrosoftEdgeTweet]发送 tweet。  
-*   选择 "**发送反馈**\ ![ " (发送反馈 ][ImageSendFeedbackIcon] \ ) 在 DevTools 中，或按 `Alt` + `Shift` + `I` \ (Windows \ ) 或 `Option` + `Shift` + `I` \ (macOS \ ) 提供反馈或功能请求。  
-*   在 "文档" 存储库中[打开一个问题][WebFundamentalsIssue]。  
+*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
+*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-<!--  
-  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

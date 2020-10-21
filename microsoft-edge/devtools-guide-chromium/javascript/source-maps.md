@@ -3,16 +3,16 @@ description: 即使在组合、minify 或编译之后，你的客户端代码也
 title: 将预处理代码映射到源代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993231"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124677"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -50,7 +50,7 @@ ms.locfileid: "10993231"
 
 ## 使用支持的预处理器  
 
-你需要使用能够创建源映射的 minifier。  <!--For the most popular options, see the preprocessor support section.  -->  有关扩展视图，请参阅 [源地图：语言、工具和其他信息][GitHubWikiSourceMapsLanguagesTools] wiki 网页。  
+你需要使用能够创建源映射的 minifier。  <!--For the most popular options, navigate to preprocessor support section.  -->  对于扩展视图，导航到 " [源地图"： "语言"、"工具" 和 "其他信息][GitHubWikiSourceMapsLanguagesTools] wiki" 页面。  
 
 <!--todo: add link to see the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  

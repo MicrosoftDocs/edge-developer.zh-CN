@@ -4,16 +4,16 @@ ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
 ms.date: 09/01/2020
-ms.openlocfilehash: 52fab56b92ffd19d4db1968e337ab2c5f93f6ae7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: abd837417098aa6d665bb112f99085ff2473b4ca
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992700"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124676"
 ---
 使用以下选项讨论帖子中的新功能和更改，或与 DevTools 相关的任何其他内容。  
 
-*   使用 "**发送反馈**" 图标发送反馈，或选择 `Alt` + `Shift` + `I` \ "在 DevTools 中 (Windows \ ) `Option` + `Shift` + `I` " 或 " (macOS \ ) "。  
+*   使用 "**发送反馈**" 图标发送反馈，或 `Alt` + `Shift` + `I` 在 DevTools 中选择 \ (Windows、Linux \ ) 或 `Option` + `Shift` + `I` \ (macOS \ ) 。  
 *   Tweet [@EdgeDevTools][PostTweetEdgeDevTools]。  
 *   向 [我们所需的网站][TheWebWeWant]提交建议。  
 *   使用 " [反馈](#feedback) " 部分的文章中的文件错误。  

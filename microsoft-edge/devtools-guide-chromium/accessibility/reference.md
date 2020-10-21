@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的辅助功能的全面参考。
 title: 辅助功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 39b0b8c36cea017b9976ea4e80e92ea93896a671
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: de8f4bee6fef7725af9b97fb80ab45582dfa2286
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993266"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125312"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -78,7 +78,7 @@ ms.locfileid: "10993266"
 1.  在 " **审核** " 部分中，确保已启用 **辅助功能** 。  如果要从报表中排除其他类别，请禁用其他类别。  如果想要发现提高页面质量的其他方法，请将其保留为启用状态。  
 1.  **限制**部分允许你阻止网络和 CPU，这在分析负载性能时非常有用。  此选项应与你的辅助功能分数无关，因此你可以使用你喜欢的任何内容。  
 1.  " **清除存储** " 复选框允许你在加载页面之前清除所有存储空间，或在页面加载之间保留存储。  此选项也可能与你的辅助功能分数不相关，因此你可以使用你喜欢的任何内容。  
-1.  单击 " **运行审核**"。 10到30秒后，DevTools 将提供一个报表。  你的报表提供了有关如何改进页面辅助功能的各种提示。  
+1.  选择 " **运行审核**"。 10到30秒后，DevTools 将提供一个报表。  你的报表提供了有关如何改进页面辅助功能的各种提示。  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="配置审核" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
        报表  
@@ -90,7 +90,7 @@ ms.locfileid: "10993266"
        有关审核的详细信息  
     :::image-end:::  
     
-1.  单击 " **了解详细信息** " 以查看该审核的文档。  
+1.  选择 " **了解详细信息** " 以查看该审核的文档。  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="配置审核" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        查看审核文档  
@@ -143,7 +143,7 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
 ### 查看元素的计算辅助功能属性  
 
 > [!NOTE]
-> 如果要查找计算的 CSS 属性，请参阅 " [计算" 选项卡][DevtoolsCssReferenceViewActuallyAppliedElements]。  
+> 如果你要查找计算的 CSS 属性，请导航到 ["计算" 选项卡][DevtoolsCssReferenceViewActuallyAppliedElements]。  
 
 某些辅助功能属性是由浏览器动态计算的。  这些属性显示在 "**辅助功能**" 窗格的 "**计算属性**" 部分中。  
 
@@ -186,7 +186,7 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
        可视选取器中的 " **对比度" 比率** 线  
     :::image-end:::  
     
-<!--## Feedback   -->  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

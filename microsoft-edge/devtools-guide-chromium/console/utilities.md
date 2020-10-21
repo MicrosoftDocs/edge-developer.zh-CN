@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 控制台中提供的便利命令的参考�
 title: 控制台实用工具 API 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f224bb8235437e971ff0e59c20d69e589ce520fb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993105"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125249"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -123,7 +123,7 @@ $(selector, [startNode])
    图5： `$('img')`  
 :::image-end:::  
 
-将鼠标悬停在返回的结果上，打开上下文菜单 \ (右键单击 \ ) ，然后在 " **元素" 面板中选择 "显示"** 以在 DOM 中查找它，或在 "元素" 面板中选择 "在页面上显示" 进行 **查看** 。  
+将鼠标悬停在返回的结果上，打开上下文菜单 \ (右键单击 \ ) ，然后选择 **"在元素中展示" 面板** 以在 DOM 中查找它 **，或在** "元素" 面板中选择 "显示" 以在页面上显示它。  
 
 在下图中，返回对当前所选元素的引用，并显示 src 属性。  
 
@@ -179,7 +179,7 @@ for (each in images) {
 :::image-end:::  
 
 > [!NOTE]
-> `Shift` + `Enter` 在控制台中按键以开始新行，而不运行脚本。  
+> `Shift` + `Enter` 在控制台中选择以启动新行，而不运行脚本。  
 
 ## XPath  
 
@@ -260,7 +260,7 @@ debug("debug");
 
 用于 `undebug(method)` 停止中断方法，或使用 UI 禁用所有断点。  
 
-有关断点的详细信息，请参阅 [用断点暂停代码][DevToolsJavascriptBreakpoints]。  
+有关断点的详细信息，请导航到 [暂停带有断点的代码][DevToolsJavascriptBreakpoints]。  
 
 ## dir  
 
@@ -281,7 +281,7 @@ dir(document.head);
    图14：日志 `document.head` 记录 `dir()` 方法  
 :::image-end:::  
 
-有关详细信息，请参阅 [`console.dir()`][DevToolsConsoleApiConsoleDirObject] 控制台 API 中的条目。  
+有关详细信息，请导航到 [`console.dir()`][DevToolsConsoleApiConsoleDirObject] 控制台 API 中的条目。  
 
 ## dirxml  
 
@@ -350,7 +350,7 @@ keys(object)
 例如，假设你的应用程序定义了以下对象。  
 
 ```console
-var player1 = { "name":  "Ted", "level": 42 }
+var player1 =   
 ```  
 
 在以下代码示例和图中，结果假定 `player1` 已在全局命名空间 \ (中定义，在输入之前 `keys(player1)` 和 `values(player1)` 在控制台中 ) 。  
@@ -606,6 +606,10 @@ values(object)
 ```console
 values(object);
 ```  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

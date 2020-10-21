@@ -3,16 +3,16 @@ description: 使用 Microsoft Edge DevTools 内存面板识别昂贵的函数。
 title: 加速 JavaScript 运行时
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f3cf0440579865495f4afc8b1ae4e3940af7b04f
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993581"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125354"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -28,7 +28,7 @@ ms.locfileid: "10993581"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# 加快 JavaScript 运行时  
+# 加速 JavaScript 运行时  
 
 使用 " **内存** " 面板识别昂贵的功能。  
 
@@ -47,7 +47,7 @@ ms.locfileid: "10993581"
 
 1.  转到 DevTools 的 " **内存** " 面板。  
 1.  选择 " **分配采样** " 单选按钮。  
-1.  选择**开始**。  
+1.  选择 " **开始**"。  
 1.  根据你尝试分析的内容，你可以重新加载页面、与页面交互或仅让页面运行。  
 1.  完成后选择 " **停止** " 按钮。  
     

@@ -3,16 +3,16 @@ description: 了解如何将 DevTools 内所做的更改保存到磁盘。
 title: 编辑具有工作区的文件
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: fd72021e75c536fa38c27ae17e4b1678eb4ca85f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 496bbbb34cdf900d36aa7ebfbf79ad63cdf3e6e7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992720"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125347"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,7 +81,7 @@ ms.locfileid: "10992720"
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
-    <!--1.  Select **Advanced Options** > **Download Project**.  
+    <!--1.  Choose **Advanced Options** > **Download Project**.  
     
     :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="故障项目" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
@@ -117,7 +117,7 @@ ms.locfileid: "10992720"
     
 ### 设置 DevTools  
 
-1.  选择 `Control` + `Shift` + `J` \ (Windows \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 打开 DevTools 的**控制台**面板。  
+1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 打开 DevTools 的**控制台**面板。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="故障项目" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        **控制台**面板  
@@ -207,7 +207,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  选择 " **页面** " 选项卡。  
 1.  选择 " ** (索引") **。  将打开页面的 HTML。  
 1.  用 `<h1>I ❤️  Cake</h1>` 取代 `<h1>Workspaces Demo</h1>`。  请参阅下图。  
-1.  选择 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存更改。  
+1.  选择 `Control` + `S` \ (Windows、Linux \ ) 或 `Command` + `S` \ (macOS \ ) 保存更改。  
 1.  刷新页面。  该 `<h1>` 元素仍显示新文本。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="故障项目" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -221,14 +221,14 @@ In short, the **DOM Tree** `!==` HTML.
 " **源** " 面板也是对 JavaScript 进行更改的位置。  但有时你需要在对网站进行更改时访问其他面板，如 " **元素** " 面板或 " **控制台** " 面板。  有一种方法可使 " **源** " 面板与其他面板一起打开。  
 
 1.  选择 " **元素** " 选项卡。  
-1.  选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  此时将打开 " **命令" 菜单** 。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  此时将打开 " **命令" 菜单** 。  
 1.  键入 `QS` ，然后选择 " **显示快速源**"。  在 DevTools 窗口的底部，现在有一个 " **快速源** " 选项卡。 该选项卡显示的内容 `index.html` ，这是您在 " **源** " 面板中编辑的最后一个文件。  " **快速源** " 选项卡从 " **源** " 面板提供编辑器，以便您可以在打开其他面板时编辑文件。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="故障项目" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        使用 "**命令" 菜单**打开 "**快速源**" 选项卡  
     :::image-end:::  
     
-1.  选择 `Control` + `P` \ (Windows \ ) 或 `Command` + `P` \ (macOS \ ) 打开 "**打开文件**" 对话框。  请参阅下图。  
+1.  选择 `Control` + `P` \ (Windows、Linux \ ) 或 `Command` + `P` \ (macOS \ ) 以打开 "**打开文件**" 对话框。  请参阅下图。  
 1.  键入 `script` ，然后选择 " **应用/script.js**"。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="故障项目" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -245,7 +245,7 @@ In short, the **DOM Tree** `!==` HTML.
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  选择 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存更改。  
+1.  选择 `Control` + `S` \ (Windows、Linux \ ) 或 `Command` + `S` \ (macOS \ ) 保存更改。  
 1.  刷新页面。  
     
     > [!NOTE]
@@ -263,8 +263,11 @@ In short, the **DOM Tree** `!==` HTML.
 If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
-*   [Twitter][TwitterAlphabetBrowserDevTools]  
-    -->  
+*   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: 有关如何打开 "命令" 菜单、"运行命令"、"查看其他
 title: 使用 Microsoft Edge 开发人员工具命令菜单运行命令
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 54dead492e7d58053efab77c82a10e7e3c912460
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993196"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125277"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993196"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 使用 Microsoft Edge 开发人员工具命令菜单运行命令   
+# 使用 Microsoft Edge 开发人员工具命令菜单运行命令  
 
   
 
@@ -42,15 +38,15 @@ ms.locfileid: "10993196"
    使用 "命令" 菜单禁用 JavaScript  
 :::image-end:::  
 
-## 打开 "命令" 菜单   
+## 打开 "命令" 菜单  
 
-按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。 或者单击 " **自定义和控制 DevTools** " `...` ，然后选择 " **运行命令**"。  
+选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。 或选择 " **自定义和控制 DevTools** " `...` ，然后选择 " **运行命令**"。  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="使用 &quot;命令&quot; 菜单禁用 JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
    运行命令  
 :::image-end:::  
 
-## 查看其他可用操作   
+## 查看其他可用操作  
 
 如果您使用 " [打开命令" 菜单](#open-the-command-menu)中所述的工作流，则 "命令" 菜单将打开，其中有一个 `>` 预挂起的字符到 "命令菜单" 文本框。  
 
@@ -64,9 +60,9 @@ ms.locfileid: "10993196"
    其他可用操作  
 :::image-end:::  
 
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

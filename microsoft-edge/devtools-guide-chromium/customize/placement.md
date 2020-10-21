@@ -3,16 +3,16 @@ description: 如何将 Microsoft Edge DevTools 移动到视区的底部或左侧
 title: '更改 Microsoft Edge DevTools 放置 (脱开、停靠到底部、停靠到左侧) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 65c0849af5da671bb0d76397d6d9395bc249eaac
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993007"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125046"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993007"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 更改 Microsoft Edge DevTools 放置 (脱开、停靠到底部、停靠到左侧)    
-
-
+# 更改 Microsoft Edge DevTools 放置 (脱开、停靠到底部、停靠到左侧)   
 
 默认情况下，DevTools 停靠在视区的右侧。  你还可以停靠到底部、停靠到左侧，或将 DevTools 移除到一个单独的窗口。  
 
@@ -63,15 +57,15 @@ ms.locfileid: "10993007"
    :::column-end:::
 :::row-end:::  
 
-## 从主菜单更改位置   
+## 从主菜单更改位置  
 
-1.  单击 " **自定义和控制 DevTools** \ (`...` \ ) "，然后选择 " **在单独窗口中插入** " \ (取消停靠 ![ ][ImageUndockIcon] \ ) 、 **停靠到底部** \ \ (停靠到底部 \ ) ![ ][ImageBottomIcon] 或 **停靠** 到 " ![ ][ImageLeftIcon] 左 \ (" ) 。  
+1.  选择 " **自定义和控制 DevTools** (\ `...` ) "，然后选择 " **在单独窗口中插入** " \ (取消停靠 ![ ][ImageUndockIcon] \ ) 、 **停靠到底部** \ " (停靠到底部 \ ) ![ ][ImageBottomIcon] " 或 " **停靠到左** ![ ][ImageLeftIcon] \ (" ) 。  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择 &quot;停靠到左侧&quot;" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       选择 "**在单独窗口中移除**"  
+       选择 "**在单独窗口中脱开**"  
     :::image-end:::  
     
-## 从命令菜单更改位置   
+## 从命令菜单更改位置  
 
 1.  [打开 "命令" 菜单][DevtoolsCommandMenu]。  
 1.  运行以下命令之一： `Dock To Bottom` 、 `Undock Into Separate Window` 。  当前没有停靠到左侧的命令，但您可以从 [主菜单](#change-placement-from-the-main-menu)访问它。  
@@ -80,11 +74,9 @@ ms.locfileid: "10993007"
        "取消停靠" 命令  
     :::image-end:::  
     
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: 代码段是可以在 Microsoft Edge DevTools 的 "源" 面板中�
 title: 在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5f6284179aacb471116a2d732507b010c37ef235
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: e353da76a5c354d834b69708c8a8c9e8dbdf9934
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993385"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124738"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993385"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段   
-
-
+# 在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段  
 
 如果你发现自己在 [控制台][DevtoolsConsoleIndex] 中重复运行相同的代码，请考虑改为将代码另存为代码段。  代码段是您在 " [源][DevToolsSourcesPanel] " 面板中创作的脚本。  他们有权访问页面的 JavaScript 上下文，您可以在任何页面上运行这些上下文。  代码段是 [bookmarklets][WikiBookmarklet]的替代方法。  
 Firefox DevTools 的功能类似于名为 " [便笺簿][MDNScratchpad]" 的 "片段"。  
@@ -61,7 +55,7 @@ document.body.appendChild(p);
    运行代码段后页面的外观  
 :::image-end:::  
 
-## 打开 "代码段" 窗格   
+## 打开 "代码段" 窗格  
 
 " **代码段** " 窗格将列出你的代码段。  若要编辑代码段，需要从 " **代码段** " 窗格中将其打开。  
 
@@ -69,7 +63,7 @@ document.body.appendChild(p);
    " **代码段** " 窗格  
 :::image-end:::  
 
-### 使用鼠标打开 "代码段" 窗格   
+### 使用鼠标打开 "代码段" 窗格  
 
 1.  单击 " **源** " 选项卡以打开 " **源** " 面板。  默认情况下， **页面** 窗格通常打开。  
     
@@ -77,35 +71,35 @@ document.body.appendChild(p);
        在左侧打开**页面**窗格的 "**源**" 面板  
     :::image-end:::  
     
-1.  单击 " **代码段** " 选项卡以打开 " **代码段** " 窗格。  您可能需要单击 " **更多选项卡** \ (![ 更多选项卡 ][ImageMoreTabsIcon] \ ) " 才能访问 " **代码段** " 选项。  
+1.  单击 " **代码段** " 选项卡以打开 " **代码段** " 窗格。  你可能需要选择 " **更多选项卡** \ (![ 更多" 选项卡 ][ImageMoreTabsIcon] \ ) 才能访问 " **代码段** " 选项。  
     
-### 通过 "命令" 菜单打开 "代码段" 窗格   
+### 通过 "命令" 菜单打开 "代码段" 窗格  
 
 1.  将光标聚焦在 DevTools 内的某个位置。  
-1.  按 `Control`+`Shift`+`P` \(Windows\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。  
-1.  开始键入 `Snippets` ，选择 " **显示代码段**"，然后按 `Enter` 运行命令。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "命令" 菜单。  
+1.  开始键入 `Snippets` ，选择 " **显示代码段**"，然后选择 `Enter` 运行命令。  
     
     :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-search-show-snippets.msft.png":::
        " **显示代码段** " 命令  
     :::image-end:::  
     
-## 创建代码段   
+## 创建代码段  
 
-### 通过 "源" 面板创建代码段   
+### 通过 "源" 面板创建代码段  
 
 1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
-1.  单击 " **新建代码段**"。  
-1.  输入代码段的名称，然后按 " `Enter` 保存"。  
+1.  选择 " **新建代码片断**"。  
+1.  输入代码段的名称，然后选择 " `Enter` 保存"。  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        为代码段命名  
     :::image-end:::  
     
-### 通过 "命令" 菜单创建代码段   
+### 通过 "命令" 菜单创建代码段  
 
 1.  将光标聚焦在 DevTools 内的某个位置。  
-1.  按 `Control`+`Shift`+`P` \(Windows\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。  
-1.  开始键入 `Snippet` ，选择 " **创建新代码段**"，然后按 `Enter` 运行命令。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "命令" 菜单。  
+1.  开始键入 `Snippet` ，选择 " **创建新代码段**"，然后选择 `Enter` 运行命令。  
     
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        用于创建新代码段的命令  
@@ -113,7 +107,7 @@ document.body.appendChild(p);
     
 如果想要为新的代码段提供自定义名称，请参阅 [重命名代码段](#rename-snippets) 。  
 
-## 编辑代码段   
+## 编辑代码段  
 
 1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
 1.  在 "代码 **段** " 窗格中，单击要编辑的代码段的名称，以便在 **代码编辑器**中将其打开。  
@@ -123,47 +117,45 @@ document.body.appendChild(p);
     :::image-end:::  
     
 1.  使用 **代码编辑器** 将 JavaScript 添加到代码段。  
-1.  当代码段名称旁边显示星号时，表示你有未保存的代码。 按 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 保存。  
+1.  当代码段名称旁边显示星号时，表示你有未保存的代码。 选择 `Control` + `S` \ (Windows、Linux \ ) 或 `Command` + `S` \ (macOS \ ) 保存。  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        代码段名称旁边的星号，指示未保存的代码  
     :::image-end:::  
     
-## 运行代码段   
+## 运行代码段  
 
-### 从 "源" 面板运行代码段   
+### 从 "源" 面板运行代码段  
 
 1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
 1.  单击要运行的代码段的名称。  代码段将在 **代码编辑器**中打开。  
-1.  单击 "**运行片段**\ (![ 运行代码段 ][ImageRunSnippetIcon] \ ) "，或按 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 。  
+1.  选择 "**运行片段**\ (![ 运行代码段 ][ImageRunSnippetIcon] \ ) "，或选择 `Control` + `Enter` \ (Windows、Linux \ ) 或 `Command` + `Enter` \ (macOS \ ) 。  
     
-### 使用 "命令" 菜单运行代码段   
+### 使用 "命令" 菜单运行代码段  
 
 1.  将光标聚焦在 DevTools 内的某个位置。  
-1.  按 `Control`+`Shift`+`P` \(Windows\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "命令" 菜单。  
 1.  删除 `>` 字符，然后键入一个字符，然后键入 `!` 要运行的代码段的名称。  
     
     :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="运行代码段之前页面的外观" lightbox="../media/javascript-search-run-command.msft.png":::
        从 "**命令" 菜单**运行代码段  
     :::image-end:::  
     
-1.  按 `Enter` 运行代码段。  
+1.  选择 `Enter` 以运行代码段。  
 
-## 重命名代码段   
+## 重命名代码段  
 
 1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
 1.  右键单击代码段名称，然后选择 " **重命名**"。  
     
-## 删除代码段   
+## 删除代码段  
 
 1.  [打开 " **代码段** " 窗格](#open-the-snippets-pane)。  
 1.  右键单击代码段名称，然后选择 " **删除**"。  
     
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: 了解在 Microsoft Edge DevTools 中查看和更改 CSS 的新工�
 title: CSS 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: de0fb33e1e080045383f3c0fb50919297cbff5bc
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a4c8d5ed7f3cf84f20b4b73531f871e17921b186
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993070"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125221"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 使用下列操作之一选择一个元素。  
 
 *   在视区中，将鼠标悬停在元素上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **检查**"。  
-*   在 DevTools 中，选择 "**选择元素**\ (![ 选择元素 ][ImageSelectAnElementIcon] \ ) 或选择 `Control` + `Shift` + `C` \ (Windows \ ) 或 `Command` + `Shift` + `C` \ (macOS \ ) "，然后选择视区中的元素。  
+*   在 DevTools 中，选择 "**选择元素**\ (![ 选择元素 ][ImageSelectAnElementIcon] \ ) 或选择 `Control` + `Shift` + `C` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `C` \ (macOS \ ) "，然后选择视区中的元素。  
 *   在 DevTools 中，选择 **DOM 树**中的元素。  
 *   在 DevTools 中，运行一个如 `document.querySelector('p')` 在 **控制台**中的查询，将鼠标悬停在结果上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 **"在元素中显示" 面板**。  
 
@@ -58,7 +58,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 在 " **样式** " 窗格中，选择 CSS 规则旁边的链接以打开定义该规则的外部样式表。  
 
-如果样式表是 minified，请参阅 [使 minified 文件易于阅读][DevToolsJavascriptReferenceFormat]。  
+如果样式表是 minified，请导航以 [使 minified 文件易于阅读][DevToolsJavascriptReferenceFormat]。  
 
 > [!NOTE]
 > 在下图中，选择 " `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 转到" 第2行 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` ，其中 `.content h1:first-of-type` 定义了 CSS 规则。  
@@ -145,7 +145,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
    切换 `:hover` 伪类  
 :::image-end:::  
 
-有关交互式教程，请参阅 [向类添加伪][DevToolsCSSGetStartedAddPseudoState]状态。  
+对于交互式教程，请导航到 [将伪状态添加到类][DevToolsCSSGetStartedAddPseudoState]。  
 
 ### 在打印模式下查看页面  
 
@@ -159,7 +159,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 "覆盖范围" 选项卡显示页面实际使用的 CSS。  
 
-1.  选择 `Control` + `Shift` + `P` \ `Command` + `Shift` + `P` 当 DevTools 处于焦点时， (Windows \ ) 或 \ (macOS \ ) [打开 "命令" 菜单][DevToolsCommandMenu]。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 当 DevTools 处于焦点时[打开 "命令" 菜单][DevToolsCommandMenu]。  
 1.  开始键入 `coverage` ，然后选择 " **显示覆盖率**"。  将显示 "覆盖范围" 选项卡。  
     
     :::row:::
@@ -205,7 +205,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 *   [添加内联声明](#add-an-inline-declaration)。  等效于将 `style` 属性添加到元素的 HTML。  
 *   [将声明添加到样式规则](#add-a-declaration-to-a-style-rule)。  
 
-**应该使用哪个工作流？** 在大多数情况下，你可能希望使用内联声明工作流。  内联声明具有比外部声明更高的程度，因此内联工作流可确保所做的更改会在你的预期元素中生效。  有关具体程度的详细信息，请参阅 [选择器类型][MDNSelectorTypes]。  
+**应该使用哪个工作流？** 在大多数情况下，你可能希望使用内联声明工作流。  内联声明具有比外部声明更高的程度，因此内联工作流可确保所做的更改会在你的预期元素中生效。  有关具体程度的详细信息，请导航到 [选择器类型][MDNSelectorTypes]。  
 
 如果你正在调试元素的任何样式，并且你需要专门测试在不同位置定义声明时所发生的情况，请使用其他工作流。  
 
@@ -250,10 +250,10 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 编辑声明的值时，可以使用以下键盘快捷方式将值增加一个特定的量。  
 
-*   选择 `Alt` + `Up` \ (Windows \ ) 或 `Option` + `Up` \ (macOS \ ) 递增 `0.1` 。  
+*   选择 `Alt` + `Up` \ (Windows、Linux \ ) 或 `Option` + `Up` \ (macOS \ ) 递增 `0.1` 。  
 *   选择 `Up` 以更改值 `1` ，或者 `0.1` 如果当前值介于和之间，则选择此值 `-1` `1` 。  
 *   选择 " `Shift` + `Up` 增加方式" `10` 。  
-*   选择 `Shift` + `Page Up` \ (Windows \ ) 或 `Shift` + `Command` + `Up` \ (macOS \ ) 将值增加 `100` 。  
+*   选择 `Shift` + `Page Up` \ (Windows、Linux \ ) 或 `Shift` + `Command` + `Up` \ (macOS \ ) 将值增加 `100` 。  
 
 减量也有效。  只需将上面提及的每个实例替换 `Up` 为 `Down` 。  
 
@@ -306,7 +306,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 1.  将鼠标悬停在要添加新样式规则的正上方的样式规则上。  
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  选择 **下面的 "插入样式规则** \ (" ![ 下方的 "插入样式规则 \ ][ImageNewStyleRuleIcon] ) "。  
+1.  选择 **下方的 "插入样式规则** \ (" ![ 下的 "插入样式规则" 图标 ][ImageNewStyleRuleIcon] \ ) 。  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **在下方插入样式规则**  
@@ -360,7 +360,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 1.  将鼠标悬停在要向其添加声明的样式规则上 `background-color` 。  
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  选择 " **添加背景色** \ (![ 添加背景色 ][ImageAddBackgroundColorIcon] \ ) "。  
+1.  选择 " **添加背景色** \ (![ 添加背景颜色" 图标 ][ImageAddBackgroundColorIcon] \ ) 。  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **添加背景色**  
@@ -372,7 +372,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 1.  将鼠标悬停在要向其添加声明的样式规则上 `color` 。  
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  选择 " **添加颜色** \" (" ![ 添加颜色 ][ImageAddColorIcon] \ ) "。  
+1.  选择 " **添加颜色** \" (" ![ 添加颜色" 图标 ][ImageAddColorIcon] \ ) 。  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **添加颜色**  
@@ -384,7 +384,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 1.  将鼠标悬停在要向其添加声明的样式规则上 `box-shadow` 。  
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  选择 **"添加框阴影** \ (![ 添加框阴影 ][ImageAddBoxShadowIcon] \ ) "。  
+1.  选择 **"添加框阴影** \ (![ 添加框阴影图标 ][ImageAddBoxShadowIcon] \ ) "。  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **添加框阴影**  
@@ -396,7 +396,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 1.  将鼠标悬停在要向其添加声明的样式规则上 `text-shadow` 。  
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  选择 " **添加文本阴影** \ (![ 添加文本阴影 ][ImageAddTextShadowIcon] \ ) "。  
+1.  选择 " **添加文本阴影** \ (![ 添加文字阴影图标 ][ImageAddTextShadowIcon] \ ) "。  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **添加文本阴影**  
@@ -449,7 +449,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
       **变成**  
    :::column-end:::
    :::column span="2":::
-      有关详细信息，请参阅 [使用取色器在页面上示例颜色](#sample-a-color-off-the-page-with-the-eyedropper)。  
+      有关详细信息，请 [使用取色](#sample-a-color-off-the-page-with-the-eyedropper)器导航到页面上的颜色示例。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -544,6 +544,10 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
        使用取色器  
     :::image-end:::  
     
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- image links -->  
 
 [ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  

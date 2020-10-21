@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge DevTools 查看、编辑和删除
 title: 查看、编辑和删除 Microsoft Edge DevTools 中的 Cookie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 328771aa254dac1f851535a44126ea220dc95a9c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993238"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125480"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,7 +81,7 @@ ms.locfileid: "10993238"
 
 ## 删除 Cookie  
 
-选择一个 cookie，然后选择 " **删除**所选 ![ 删除 ][ImageDeleteIcon]  " 以删除特定的 cookie。  
+选择一个 cookie，然后选择 " **删除**所选 ![ 删除" ][ImageDeleteIcon]  以删除特定的 cookie。  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    图5：删除特定的 cookie  
@@ -92,6 +92,10 @@ ms.locfileid: "10993238"
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    图6：清除所有 cookie  
 :::image-end:::  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

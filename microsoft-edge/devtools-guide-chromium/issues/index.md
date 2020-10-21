@@ -1,17 +1,18 @@
 ---
+description: 使用 "问题" 工具查找并解决您的网站的问题。
 title: 查找并修复 Microsoft Edge DevTools 问题工具的相关问题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4691db9542ecff93d1b59e243844109e0c730d23
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992818"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124724"
 ---
 <!-- Copyright Sam Dutton 
 

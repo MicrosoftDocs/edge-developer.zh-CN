@@ -3,16 +3,16 @@ description: 使用 "安全" 面板确保页面完全受 HTTPS 保护。
 title: 了解 Microsoft Edge DevTools 的安全问题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2538f80b08c8162d27f075775075a8b81c5f7725
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 09f7e641ddd8da74c361980b9ce61b212a8477fe
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993574"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125382"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993574"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 了解 Microsoft Edge DevTools 的安全问题   
+# 了解 Microsoft Edge DevTools 的安全问题  
 
   
 
@@ -40,20 +36,20 @@ ms.locfileid: "10993574"
 
 <!--todo: add section when why-https is available -->  
 
-## 打开 "安全" 面板   
+## 打开 "安全" 面板  
 
 **安全**面板是检查页面安全性的 DevTools 中的主要位置。  
 
 1.  [打开 DevTools][DevToolsOpen]。  
-1.  单击 " **安全** " 选项卡以打开 " **安全** " 面板。  
+1.  选择 " **安全** " 选项卡以打开 " **安全** " 面板。  
     
     :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板" lightbox="../media/security-security-overview-secure.msft.png":::
        **安全**面板  
     :::image-end:::  
     
-## 常见问题   
+## 常见问题  
 
-### 不安全的主要来源   
+### 不安全的主要来源  
 
 当页面的主来源不安全时， **安全概述** 显示 **此页面不安全**。  
 
@@ -70,7 +66,7 @@ ms.locfileid: "10993574"
 > [!TIP]
 > [Webhint][Webhint]中的 "[使用 HTTPS][WebhintUseHttps] " 提示可帮助自动执行确保所有 HTTP 请求定向到 HTTPS 的过程。  
 
-### 混合内容   
+### 混合内容  
 
 **混合内容** 意味着页面的主原始位置是安全的，但是页面请求的资源来自不安全来源。  混合内容页面只是部分受保护的，因为 HTTP 内容可以被嗅探者访问，并且容易受到中间人攻击。  
 
@@ -78,23 +74,23 @@ ms.locfileid: "10993574"
    混合内容  
 :::image-end:::  
 
-在上图中，单击 " **在网络面板中查看1个请求** " 以打开 " **网络** " 面板并应用 `mixed-content:displayed` 筛选器，以便 **网络日志** 仅显示不安全的资源。  
+在上图中，选择 " **在网络面板中查看1个请求** " 以打开 " **网络** " 面板并应用 `mixed-content:displayed` 筛选器，以便 **网络日志** 仅显示不安全的资源。  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="安全面板" lightbox="../media/security-network-filter.msft.png":::
    **网络日志**中的混合资源  
 :::image-end:::  
 
-## 查看详细信息   
+## 查看详细信息  
 
-### 查看主原始证书   
+### 查看主原始证书  
 
-从 **安全概述**中，单击 " **查看证书** " 以快速检查主源的证书。  
+从 **安全概述**中，选择 " **查看证书** " 以快速检查主源的证书。  
 
 :::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="安全面板" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    主原始证书  
 :::image-end:::  
 
-### 查看来源详细信息   
+### 查看来源详细信息  
 
 单击左侧导航栏中的其中一个条目以查看来源的详细信息。  从 "详细信息" 页面，您可以查看连接和证书信息。  还会显示证书透明信息（如果可用）。  
 
@@ -102,18 +98,14 @@ ms.locfileid: "10993574"
    主要来源详细信息  
 :::image-end:::  
 
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
 [DevToolsOpen]: ../open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
-
-
 [LetsEncrypt]: https://letsencrypt.org "我们的加密-免费的 SSL/TLS 证书"  
 
 [Webhint]: https://webhint.io "webhint"  

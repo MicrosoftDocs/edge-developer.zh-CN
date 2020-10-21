@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的最新实验功能
 title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/05/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: f885201ddfb7553a2b9c58a07dd52b7a77c4137a
-ms.sourcegitcommit: 0326a4082064e9cdfa602736f3f9ce7d8d294604
+ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094927"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124892"
 ---
 # 实验功能  
 
@@ -25,7 +25,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 若要在 Microsoft Edge 中打开 " (" 或 "关闭" ) 实验功能，请使用以下步骤。  
 
 1.  [打开 DevTools][DevtoolsOpen]。  
-     *   选择 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+     *   选择 `Control` + `Shift` + `I` \ (Windows、Linux \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  打开 " [设置][DevToolsCustomizeSettings] " 窗格。  
     *   选择 `Shift` + `?` 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  在 " **设置** " 窗格的左侧，选择 " **实验** " 部分。  

@@ -3,16 +3,16 @@ description: 使用 Microsoft Edge 中的虚拟设备构建移动版的第一网
 title: 在 Microsoft Edge DevTools 中模拟移动设备
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools，仿真，设备，模拟，移动
-ms.openlocfilehash: c70b81eabb145461eac7d1b9a8f438d6a18fbc89
-ms.sourcegitcommit: cc96ada9679b23feb841e46f19d8077251c4a4df
+ms.openlocfilehash: 8b636a20fcb1c55630009031ec8bf300624d03d7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997033"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125102"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -234,7 +234,7 @@ ms.locfileid: "10997033"
        网络面板中的 **限制** 列表  
     :::image-end:::  
     
-    或选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**，键入 `3G` ，然后选择 "**启用快速3g 限制**" 或 "**启用慢速3g 限制**"。  
+    或选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**，键入 `3G` ，然后选择 "**启用快速3g 限制**" 或 "**启用慢速3g 限制**"。  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        **命令菜单**  
@@ -262,7 +262,7 @@ ms.locfileid: "10997033"
    :::column-end:::
    :::column span="":::
       1.  打开 "命令" 菜单。  
-          *   选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
+          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
       1. 键入 `Sensors` ，然后选择 " **显示传感器**"。  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -291,7 +291,7 @@ ms.locfileid: "10997033"
    :::column-end:::
    :::column span="":::
       1.  打开 "命令" 菜单。  
-          *   选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
+          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
       1. 键入 `Sensors` ，然后选择 " **显示传感器**"。  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -320,7 +320,7 @@ ms.locfileid: "10997033"
    :::column-end:::
    :::column span="":::
       1.  打开 "命令" 菜单。  
-          *   选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
+          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
       1. 键入 `Network conditions` ，然后选择 " **显示网络条件**"。  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::

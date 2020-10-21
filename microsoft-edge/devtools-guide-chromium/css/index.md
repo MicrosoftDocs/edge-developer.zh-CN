@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge DevTools 查看和更改页面的
 title: 查看和更改 CSS 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f055606ff6140652341627097e7fe7b270dc929c
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 3cd833c97cb2e7b746943f18526d09481b4e3cc5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993063"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125207"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,7 +34,7 @@ ms.locfileid: "10993063"
 
 ## 打开 CSS 示例  
 
-1.  保留 `Control` \ (Windows \ ) 或 `Command` \ (macOS \ ) 并选择 " **CSS 示例** " 以在新窗口中打开。  
+1.  保留 `Control` \ (Windows、Linux \ ) 或 `Command` \ (macOS \ ) 并选择 " **CSS 示例** " 以在新窗口中打开。  
     
     [CSS 示例][GlitchDevToolsCssExamples]  
     
@@ -79,8 +79,8 @@ ms.locfileid: "10993063"
 1.  [打开 CSS 示例](#open-css-examples)。  
 1.  将鼠标悬停在 `Add A Background Color To Me!` 文本上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **检查**"。  
 1.  选择 `element.style` " **样式** " 选项卡顶部附近的。  
-1.  键入 `background-color` ，然后按 `Enter` 。  
-1.  键入 `honeydew` ，然后按 `Enter` 。  在 **DOM 树** 中，应看到已对元素应用了内联样式声明。  
+1.  键入 `background-color` 并选择 `Enter` 。  
+1.  键入 `honeydew` 并选择 `Enter` 。  在 **DOM 树** 中，应看到已对元素应用了内联样式声明。  
     
     :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="在 DOM 树中突出显示已检查的元素" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        图3： `background-color:honeydew` 使用 `element.style` " **样式** " 选项卡部分对元素应用了声明  
@@ -96,7 +96,7 @@ ms.locfileid: "10993063"
 1.  [打开 CSS 示例](#open-css-examples)。  
 1.  将鼠标悬停在 `Add A Class To Me!` 文本上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **检查**"。  
 1.  选择 **. cls**。  DevTools 将显示一个文本框，你可以在其中将类添加到所选元素。  
-1.  `color_me`在 "**添加新类**" 文本框中键入，然后按 `Enter` 。  " **添加新类** " 文本框下方将显示一个复选框，您可以在其中打开和关闭类。  如果 `Add A Class To Me!` 元素应用了任何其他类，你也可以在此处进行切换。  
+1.  `color_me`在 "**添加新类**" 文本框中键入，然后选择 `Enter` 。  " **添加新类** " 文本框下方将显示一个复选框，您可以在其中打开和关闭类。  如果 `Add A Class To Me!` 元素应用了任何其他类，你也可以在此处进行切换。  
     
     :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="在 DOM 树中突出显示已检查的元素" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
        图4： `color_me` 使用 "**样式**" 选项卡的 " **cls** " 部分将类应用于元素  
@@ -134,7 +134,7 @@ ms.locfileid: "10993063"
     > 根据 DevTools 窗口的大小，可能需要滚动到 " **样式** " 选项卡底部才能看到 " **方框模型**"。  
 
 1.  双击 **框模型**中的左边距，它当前具有 `-` 表示元素没有左边距的值。  
-1.  键入 `100px` ，然后按 `Enter` 。  **Box 模型**默认为像素，但它还接受其他值，如 `25%` 或 `10vw` 。  
+1.  键入 `100px` 并选择 `Enter` 。  **Box 模型**默认为像素，但它还接受其他值，如 `25%` 或 `10vw` 。  
     
     :::row:::
        :::column span="":::
@@ -155,7 +155,7 @@ ms.locfileid: "10993063"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。  
 
-1.  打开 "开发工具"，然后选择左上角的 "**切换设备" 工具栏**图标，或者按 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS \ ) 上的 \ (。  
+1.  打开 "开发工具"，然后选择左上角的 "**切换设备" 工具栏**图标，或选择 `Ctrl` + `Shift` + `M` \ `Cmd` + `Shift` + `M` "macOS \ ) 上的 \ ("。  
     
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="在 DOM 树中突出显示已检查的元素" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        图8：打开 "设备" 工具栏  
@@ -179,6 +179,10 @@ ms.locfileid: "10993063"
        图11：在源代码编辑器中泄漏媒体查询  
     :::image-end:::  
     
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [ DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement  "更改 Microsoft Edge 开发人员工具的放置位置（取消停靠、停靠至底部、停靠至左）"   

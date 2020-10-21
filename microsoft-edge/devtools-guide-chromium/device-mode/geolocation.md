@@ -3,16 +3,16 @@ description: 打开 "传感器" 选项卡，然后从 "地理位置" 列表中�
 title: 通过 Microsoft Edge DevTools 替代地理位置
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 269e7ca4bf259aa168c06ac0fd915604731463c4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f2bc395993ff59d88360a363b2c4bc12b570f1ab
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992986"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125011"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -36,14 +36,14 @@ ms.locfileid: "10992986"
 
 如果你正在生成根据用户所在位置而更改的 UI，你可能需要确保网站在世界各地的不同位置正确运行。  若要在 Microsoft Edge DevTools 中替代您的地理位置，请完成以下操作。  
 
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `sensors` ，选择 " **显示传感器**"，然后按 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
-1.  从 " **地理** 位置" 列表中，选择其中一个预设城市，例如 `Tokyo` ，或选择 " **自定义位置** " 以输入自定义经度和纬度坐标，或选择 " **位置不可用** " 以查看当用户位置不可用时您的网站的行为。  
+1.  键入 `sensors` ，选择 " **显示传感器**"，然后选择 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
+1.  从 " **地理** 位置" 列表中，选择其中一个预设城市，例如 `Tokyo` ，或选择 " **自定义位置** " 以输入自定义的经度和纬度坐标，或者选择 " **位置不可用** " 以查看当用户位置不可用时您的网站的行为。  
     
     :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
        `Tokyo`从 "**地理位置**" 列表中选择  

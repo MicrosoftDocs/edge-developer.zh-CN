@@ -3,16 +3,16 @@ description: 了解你可以在 Microsoft Edge DevTools 中暂停代码的所有
 title: 如何在 Microsoft Edge DevTools 中暂停带有断点的代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 95aba99c2cfe87f26704faa20964ace5d2abdf51
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 98c0e42657d9b0900d3eaca8af69f1c17abfcf06
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992805"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124808"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,19 +25,11 @@ ms.locfileid: "10992805"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# 如何在 Microsoft Edge DevTools 中暂停带有断点的代码  
 
+使用断点暂停你的 JavaScript 代码。  本指南介绍 DevTools 中可用的每种类型的断点以及何时使用以及如何设置每种类型。  有关调试过程的动手教程，请导航到 [Microsoft Edge DevTools 中的 "调试 JavaScript" 入门][DevtoolsJavascriptIndex]。  
 
-
-
-
-
-# 如何在 Microsoft Edge DevTools 中暂停带有断点的代码   
-
-
-
-使用断点暂停你的 JavaScript 代码。  本指南介绍 DevTools 中可用的每种类型的断点以及何时使用以及如何设置每种类型。  有关调试过程的动手教程，请参阅 [Microsoft Edge DevTools 中的调试 JavaScript 入门][DevtoolsJavascriptIndex]。  
-
-## 有关何时使用每个断点类型的概述   
+## 有关何时使用每个断点类型的概述  
 
 最著名的断点类型是代码行。  但是，设置代码行的断点可能效率较低，尤其是当你不知道确切的查找位置时，或者如果你使用的是大型代码库。  通过了解如何以及何时使用其他类型的断点，你可以在调试时节省时间。  
 
@@ -51,7 +43,7 @@ ms.locfileid: "10992805"
 | [异常](#exception-breakpoints) | 在引发已捕获或未捕获异常的代码行上。  |  
 | [函数](#function-breakpoints) | 每当运行特定的命令、函数或方法时。  |  
 
-## 代码行断点   
+## 代码行断点  
 
 当你知道需要调查的确切代码区域时，请使用代码行断点。  在运行此行代码之前，DevTools 始终暂停。  
 
@@ -66,7 +58,7 @@ ms.locfileid: "10992805"
        代码行断点  
     :::image-end:::  
     
-### 代码中的代码行断点   
+### 代码中的代码行断点  
 
 `debugger`从代码中运行该方法以在该行上暂停。  这等效于 [代码行断点](#line-of-code-breakpoints)，只不过断点是在代码中设置的，而不是在 DevTools UI 中设置的。  
 
@@ -77,7 +69,7 @@ debugger;
 console.log('c');
 ```  
 
-### 条件代码行断点   
+### 条件代码行断点  
 
 当你知道需要调查的确切代码区域时，请使用条件代码行断点，但只希望在其他某些条件为 true 时暂停。  
 
@@ -89,13 +81,13 @@ console.log('c');
 1.  代码行左侧是 "行号" 列。  右键单击行号。  
 1.  选择 " **添加条件断点**"。  将在代码行下方显示一个对话框。  
 1.  在对话框中输入条件。  
-1.  按 `Enter` 激活断点。  "行号" 列旁边的图标。  
+1.  选择 `Enter` 以激活断点。  "行号" 列旁边的图标。  
     
     :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="代码行断点" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
        条件代码行断点  
     :::image-end:::  
     
-### 管理代码行断点   
+### 管理代码行断点  
 
 使用 " **断点** " 窗格从单个位置禁用或删除代码行断点。  
 
@@ -111,7 +103,7 @@ console.log('c');
        " **断点** " 窗格中已停用的断点  
     :::image-end:::  
     
-## DOM 更改断点   
+## DOM 更改断点  
 
 如果要在更改了 DOM 节点或子级的代码上暂停，请使用 DOM 更改断点。  
 
@@ -120,19 +112,19 @@ console.log('c');
 1.  单击 " **元素** " 选项卡。  
 1.  转到要在其上设置断点的元素。  
 1.  右键单击该元素。  
-1.  将鼠标悬停 **在 "中断"**，然后选择 " **子树修改**"、" **属性修改**" 或 " **节点删除**"。  
+1.  将鼠标 **悬停在 "断开" 上**，然后选择 " **子树修改**、 **属性修改**或 **节点删除**"。  
     
     :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="代码行断点" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
        用于创建 DOM 更改断点的上下文菜单  
     :::image-end:::  
     
-### DOM 的类型更改断点   
+### DOM 的类型更改断点  
 
 *   **子树修改**。  当删除或添加当前选定节点的子节点时，或者子元素的内容发生更改时触发。  不会在子节点属性更改或对当前选定节点的任何更改上触发。  
 *   **属性修改**：当在当前选定的节点上添加或删除属性时，或者当属性值发生更改时触发。  
 *   **节点删除**：在删除当前选定的节点时触发。  
     
-## XHR/Fetch 断点   
+## XHR/Fetch 断点  
 
 如果你希望在 XHR 的请求 URL 包含指定的字符串时中断，请使用 XHR 断点。  DevTools 将在 XHR 运行该方法的代码行上暂停 `send()` 。  
 
@@ -145,15 +137,15 @@ console.log('c');
 
 1.  单击 " **源** " 选项卡。  
 1.  展开 " **XHR 断点** " 窗格。  
-1.  单击 " **添加断点**"。  
+1.  选择 " **添加断点**"。  
 1.  输入要在其上中断的字符串。  当此字符串出现在 XHR 请求 URL 中的任何位置时，DevTools 暂停。  
-1.  按 `Enter` 以确认。  
+1.  选择 `Enter` 以进行确认。  
     
     :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="代码行断点" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
        创建 XHR 断点  
     :::image-end:::  
     
-## 事件侦听器断点 
+## 事件侦听器断点   
 
 如果要在激发事件后运行的事件侦听器代码上暂停，请使用事件侦听器断点。  你可以选择特定事件，例如事件的类别，如 `click` 所有鼠标事件。  
 
@@ -165,12 +157,12 @@ console.log('c');
        创建事件侦听器断点  
     :::image-end:::  
     
-## 异常断点   
+## 异常断点  
 
 当你希望在引发已捕获或未捕获异常的代码行上暂停时，请使用异常断点。  
 
 1.  单击 " **源** " 选项卡。  
-1.  单击 " **异常时暂停"** (![ "异常时暂停" ][ImagePauseOnExceptionsIcon] \ ) 。  启用时图标变为蓝色。  
+1.  选择 **"异常时暂停"** (![ "异常时暂停" ][ImagePauseOnExceptionsIcon] \ ) 。  启用时图标变为蓝色。  
     
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="代码行断点" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        " **在例外时暂停"** 按钮  
@@ -182,7 +174,7 @@ console.log('c');
        已暂停未捕获的异常  
     :::image-end:::  
     
-## 函数断点   
+## 函数断点  
 
 `debug(method)`如果要在运行特定函数时暂停，请运行该方法，其中 `method` 是要调试的命令、函数或方法。  你可以在 `debug()` 代码中插入 (，如 `console.log()` 语句) 或从 DevTools 控制台运行该方法。  `debug()` 等效于在函数的第一行上设置 [代码行断点](#line-of-code-breakpoints) 。  
 
@@ -195,7 +187,7 @@ debug(sum); // Pass the function object, not a string.
 sum();
 ```  
 
-### 请确保目标函数在范围内   
+### 请确保目标函数在范围内  
 
 `ReferenceError`如果要调试的函数不在作用域内，DevTools 会引发 a。  
 
@@ -219,11 +211,9 @@ debug(hey); // This does not work.  hey() is out of scope.
 1.  触发断点。  
 1.  `debug()`在 DevTools 控制台中运行该方法，同时代码在代码行断点处仍处于暂停状态。  
     
-<!---  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

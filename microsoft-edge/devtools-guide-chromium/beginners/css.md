@@ -3,16 +3,16 @@ description: CSS 入门
 title: 初学者的 DevTools：开始使用 CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: fe87b4f840c6d9dde3cdf6455700161ea8d8d31e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 62821084af8c22809f6e14ca4038ee173efd964a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993301"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125333"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -35,7 +35,7 @@ ms.locfileid: "10993301"
 以下文章是一系列教程中的第二个教程，可教你了解 web 开发和 Microsoft Edge DevTools 的基础知识。  您可以通过实际构建自己的网站来获得实际体验。  在下一步操作之前，不必完成第一个教程。  [设置代码](#set-up-your-code) 显示如何设置。  
 
 > [!NOTE]
-> 本教程适用于绝对初学者，重点介绍 **web 开发的基础知识** 和使用 DEVTOOLS 试验 CSS 的基础知识。  如果你需要仅关注 DevTools 的教程，请参阅 [查看和更改 CSS 入门][DevtoolsCssIndex]。  
+> 本教程适用于绝对初学者，重点介绍 **web 开发的基础知识** 和使用 DEVTOOLS 试验 CSS 的基础知识。  如果你需要仅关注 DevTools 的教程，请导航到 " [查看和更改 CSS" 入门][DevtoolsCssIndex]。  
 
 在教程的开头，您的网站应如下图所示。  
 
@@ -90,7 +90,7 @@ ms.locfileid: "10993301"
     > [!NOTE]
     > 故障为新项目生成一个随机名称。  
     
-1.  **在新窗口中选择 "****显示**并选择"。  将打开另一个选项卡，其中包含您的网站的实时视图。  浏览器的 "聚焦" 选项卡作为 " **实时" 选项卡**进行引用。  
+1.  **在新窗口中选择 "****显示**"，然后选择。  将打开另一个选项卡，其中包含您的网站的实时视图。  浏览器的 "聚焦" 选项卡作为 " **实时" 选项卡**进行引用。  
     
     :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-setup3.msft.png":::
        " **实时" 选项卡**  
@@ -599,8 +599,12 @@ li a {
 恭喜！您已完成。  
 
 *   在 web 开发中获取更好的最佳方式是构建更多网站。  不要担心会破坏内容。  只要有兴趣，您就可以轻松掌握。  
-*   若要了解有关设置网页样式的详细信息，请参阅 [CSS 简介][MDNCssFirstSteps]。  
-*   若要了解有关如何使用 DevTools 来试验页面 CSS 的详细信息，请参阅 [查看和更改 Css 入门][DevtoolsCssIndex]。  
+*   若要了解有关设置网页样式的详细信息，请导航到 [CSS 简介][MDNCssFirstSteps]。  
+*   若要了解有关如何使用 DevTools 来试验页面 CSS 的详细信息，请导航到 " [查看和更改 css" 入门][DevtoolsCssIndex]。  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!--- image links --->  
 

@@ -3,16 +3,16 @@ description: 从 "设置" > 框架库代码启用 "将内容脚本标记为库�
 title: 将内容脚本标记为库代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 517e0a4e944f32d41451a0a5d9d7baa91ff97212
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2a9bca703004b6232bef857d7b9e2f45458db52d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992790"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124696"
 ---
 <!-- Copyright Kayce Basques 
 

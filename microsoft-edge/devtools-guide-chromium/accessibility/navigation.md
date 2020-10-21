@@ -3,16 +3,16 @@ description: 有关在 Microsoft Edge DevTools 中使用屏幕阅读器等辅助
 title: 导航 Microsoft Edge DevTools 与辅助技术
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 9a9accd043d05d1c55b1e79ce580f7b45711118f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f4ec63a0d432925b7db99ce695db66dd61f8bcf1
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993189"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125291"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -52,14 +52,14 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 
 ## 打开开发工具  
 
-若要开始使用，请参阅 [打开 Microsoft Edge DevTools] [DevtoolsOpen]。  有多种方法可以打开 DevTools，方法是通过键盘快捷方式或菜单项打开。  
+若要开始使用，请导航到 [打开 Microsoft Edge DevTools] [DevtoolsOpen]。  有多种方法可以打开 DevTools，方法是通过键盘快捷方式或菜单项打开。  
 
 ## 在面板之间导航  
 
 ### 通过键盘导航  
 
-*   在 DevTools 打开的情况下，选择 `Control` + `]` \ (Windows \ ) 或 `Command` + `]` \ (macOS \ ) 以重点关注下一个面板。  
-*   选择 `Control` + `[` \ (Windows \ ) 或 `Command` + `[` \ (macOS \ ) 以重点介绍上一个面板。  
+*   在 DevTools 打开状态下，选择 `Control` + `]` \ (Windows、Linux \ ) 或 `Command` + `]` \ (macOS \ ) 以重点关注下一个面板。  
+*   选择 `Control` + `[` \ (Windows、Linux \ ) 或 `Command` + `[` \ (macOS \ ) 以重点介绍上一个面板。  
 *   也可以使用将 `Shift` + `Tab` 焦点移动到面板的[ARIA tablist][W3CWaiAriaTablist]中并使用箭头键更改面板，但使用前面提到的快捷方式可能会更快。  
 
 **已知问题**  
@@ -71,7 +71,7 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 
 若要聚焦特定面板，请使用 " [命令" 菜单][DevtoolsCommandMenuIndex]：  
 
-1.  在 DevTools 打开的情况下，选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  在 DevTools 打开状态下，选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
     **命令菜单**是模糊搜索记忆式键入 combobox。  
 1.  键入要打开的面板的名称，然后使用键盘上的 " `Down Arrow` 导航到正确的" 选项。  
 1.  选择 `Enter` 以运行命令。  
@@ -92,7 +92,7 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 1.  在元素上使用鼠标进行右键单击以打开上下文菜单。  
 1.  选择 " **检查** " 选项。  此 [打开元素面板并聚焦 DOM 树中的元素] [DevtoolsDomIndexViewDomNodes]。  
 
-**DOM 树**布局为[ARIA 树][W3CWaiAriaTree]。  有关示例，请参阅 [使用键盘导航 **DOM 树** ] [DevtoolsDomIndexNavigateDomTreeKeyboard]。  
+**DOM 树**布局为[ARIA 树][W3CWaiAriaTree]。  有关示例，请导航到 [使用键盘导航 **DOM 树** ] [DevtoolsDomIndexNavigateDomTreeKeyboard]。  
 
 ### 复制 DOM 树中元素的代码  
 
@@ -108,7 +108,7 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 
 *   将焦点置于 **DOM 树**中的某个节点上，然后选择 `Enter` 以使其可编辑。  
 *   选择 `Tab` 以在属性值之间移动。  当你听到 "space" 时，你位于空的文本输入中，并且能够键入新的属性值。  
-*   选择 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) ，接受更改并收听该元素的所有内容。  
+*   选择 `Control` + `Enter` \ (Windows、Linux \ ) 或 `Command` + `Enter` \ (macOS \ ) 以接受更改并收听该元素的所有内容。  
 
 **已知问题**  
 
@@ -118,9 +118,9 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 
 *   将焦点置于 **DOM 树**中的某个节点上，然后选择 `Enter` 以使其可编辑。  
 *   选择 `Tab` 以在属性值之间移动。  例如，当听到元素的名称（例如，在 `h2` 文本输入中）时，可能会更改元素的类型。  
-*   选择 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 以接受更改。  
+*   选择 `Control` + `Enter` \ (Windows、Linux \ ) 或 `Command` + `Enter` \ (macOS \ ) 以接受更改。  
 
-例如，当你键入 `h3` 并选择 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 时，元素的开始和结束标记会 `h3` 发生更改。  
+例如，当你键入 `h3` 并选择 `Control` + `Enter` \ (Windows、Linux \ ) 或 `Command` + `Enter` \ (macOS \ ) 时，元素的开始和结束标记会 `h3` 更改。  
 
 ## "元素" 面板选项卡  
 
@@ -152,7 +152,7 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 *   选择 `Tab` 以在每个 CSS 属性的可编辑版本和相应值之间移动。  每个样式块的结尾是一个空白的可编辑文本字段，可用于添加其他 CSS 属性。  
 *   你可以继续选择在 `Tab` 样式列表中移动，或选择 `Escape` 退出模式并返回到通过箭头键导航。  
 
-有关其他快捷方式，请参阅 [样式窗格键盘参考] [DevtoolsShortcutsStylesPaneKeyboard]。  
+有关其他快捷方式，请导航到 [样式窗格键盘参考] [DevtoolsShortcutsStylesPaneKeyboard]。  
 
 **已知问题**  
 
@@ -236,7 +236,7 @@ DevTools 的辅助功能是一个正在进行的工作。  某些面板和选项
 
 若要运行新审核，请使用 `Shift` + `Tab` 退出报告并查找 "**执行审核**" 按钮。  
 
-## 与 Microsoft Edge 开发人员工具团队联系
+## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 网络面板功能的全面参考。
 title: 网络分析参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 758623482ab2179987c6467f8e30c72d8893d710
-ms.sourcegitcommit: addfd27bb765c92880a59f259dc702f6e4e1bf28
+ms.openlocfilehash: 8123fbebadf1d43fd1460ecebf91190cac793e19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "11092312"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125368"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,12 +49,12 @@ ms.locfileid: "11092312"
 
 若要停止录制请求，请完成以下步骤。  
 
-1.  选择 " **停止录制网络日志** \ (![ 停止 ][ImageRecordOnIcon] 在 **网络** 面板上记录网络日志 \ ) 。  它将变为灰色，指示 DevTools 不再录制请求。  
-1.  按 `Control` + `E` \ (Windows \ ) 或 `Command` + `E` \ (macOS \ ) ，同时**网络**面板处于焦点。  
+1.  **Stop recording network log** ![ ][ImageRecordOnIcon] 在 "**网络**" 面板上选择 "停止录制网络日志停止记录网络日志"。  它将变为灰色，指示 DevTools 不再录制请求。  
+1.  选择 `Control` + `E` \ (Windows、Linux \ ) 或 `Command` + `E` \ (macOS \ ) ，同时**网络**面板处于焦点。  
 
 ### 清除请求  
 
-选择 " **清除** ![ ][ImageClearIcon] 网络面板上的 \ (清除 \ ) "，清除 "请求" 表中的所有请求。  
+**Clear** ![ ][ImageClearIcon] 在 "网络" 面板上选择 "清除 \ (清除 \ ) "，清除 "请求" 表中的所有请求。  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="网络面板" lightbox="../media/network-network-clear-button.msft.png":::
    " **清除** " 按钮  
@@ -88,7 +88,7 @@ ms.locfileid: "11092312"
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
 
 <!--  
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="网络面板" lightbox="../media/network-replay-xhr.msft.png":::
@@ -244,7 +244,7 @@ DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你�
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **媒体**  
+      **Media**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -294,7 +294,7 @@ DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你�
 如果未显示按钮，则 " **筛选器** " 窗格可能处于隐藏状态。  
 有关详细信息，请导航到 ["隐藏筛选器" 窗格](#hide-the-filters-pane)。  
 
-若要同时启用多个类型筛选器，请按住 `Control` (Windows \ ) 或 `Command` \ (macOS \ ) 然后选择。  
+若要同时启用多个类型筛选器，请按住 `Control` (Windows、Linux \ ) 或 `Command` \ (macOS \ ) 然后选择。  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="网络面板" lightbox="../media/network-network-type-filters.msft.png":::
    使用类型筛选器显示 JS、CSS 和文档资源  
@@ -464,7 +464,7 @@ DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你�
 
 #### 添加自定义列  
 
-若要向 "请求" 表添加自定义列，请将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 "**响应标题**"  >  **管理标题列**。  
+若要向 "请求" 表添加自定义列，请将鼠标悬停在 "请求" 表的标题上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 "**响应标题**  >  **管理标题列**"。  
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-add-custom.msft.png":::
    向请求表添加自定义列  
@@ -550,7 +550,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 默认情况下，"页眉" 选项卡按字母顺序显示标题名称。  若要查看收到的订单中的 HTTP 标头名称，请使用以下步骤。  
 
 1.  打开您感兴趣的请求的 " **标题** " 选项卡。  有关详细信息，请导航到 " [查看 HTTP 标题](#view-http-headers)"。  
-1.  选择 "**请求标头**" 或 "**响应标题**" 部分旁边的 "**查看源**"。  
+1.  选择 " **查看源**"，然后选择 " **请求标头** " 或 " **响应标题** " 部分。  
 
 ### 查看查询字符串参数  
 
@@ -891,7 +891,7 @@ init();
 ### 隐藏 "筛选器" 窗格  
 
 默认情况下，DevTools 显示 " **筛选器" 窗格**。  
-选择 " **筛选** \ (![ 筛选 ][ImageFilterIcon] \ ) " 以隐藏它。  
+选择 " **筛选** \ (![ 筛选 ][ImageFilterIcon] \ ) " 将其隐藏。  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="网络面板" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    "隐藏筛选器" 按钮  
@@ -918,6 +918,10 @@ init();
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="网络面板" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    " **显示概述** " 复选框  
 :::image-end:::  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

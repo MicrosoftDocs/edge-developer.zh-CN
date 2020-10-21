@@ -3,16 +3,16 @@ description: 了解如何评估 Microsoft Edge DevTools 中的运行时性能。
 title: 即可体验分析运行时性能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 65351f3846ed76ef8a27dbff2cfb08c497282d15
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 7cb1d8f073cdb8a43093514dd7dea86d72102011
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992944"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124983"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "10992944"
 # 分析运行时性能入门  
 
 > [!NOTE]
-> 若要了解如何使页面更快加载，请参阅 [优化网站速度][DevtoolsSpeedGetStarted]。  
+> 若要了解如何使页面的加载速度更快，请导航以 [优化网站速度][DevtoolsSpeedGetStarted]。  
 
 运行时性能是页面运行（而不是加载）时的性能。  以下教程文章介绍了如何使用 Microsoft Edge DevTools 性能面板来分析运行时性能。  在 **RAIL** 模型方面，你在本教程中学习的技能对于分析页面的响应、动画和空闲阶段很有用。  
 
@@ -51,7 +51,7 @@ ms.locfileid: "10992944"
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
-1.  选择 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 打开 DevTools。  
+1.  选择 `Control` + `Shift` + `I` \ (Windows、Linux \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 打开 DevTools。  
     
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        左侧为演示，右侧为 DevTools  
@@ -67,7 +67,7 @@ ms.locfileid: "10992944"
 1.  在 DevTools 中，选择 " **性能** " 选项卡。  
 1.  请确保已启用**屏幕截图**复选框。  
 1.  选择 " **捕获设置** \ ("！[捕获设置][ImageCaptureSettingsIcon] \ ) 。  DevTools 显示了有关如何捕获效果指标的设置。  
-1.  对于 "**CPU**"，选择 **4x 减速**。  DevTools 将 CPU 限制为比平时慢 4 倍。  
+1.  对于 **CPU**，选择 **4 倍的减速**。  DevTools 将 CPU 限制为比平时慢 4 倍。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
        CPU 限制  
@@ -146,7 +146,7 @@ ms.locfileid: "10992944"
 
 另一个非常方便的工具是 FPS 计数，可在页面运行时提供对 FPS 的实时估计。  
 
-1.  选择 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
 1.  开始 `Rendering` 在 " **命令" 菜单** 中键入，然后选择 " **显示呈现**"。  
 1.  在 "**绘制**" 选项卡上，启用 **FPS 计数**。  新的叠加层将显示在视线的右上角。  
     
@@ -225,7 +225,7 @@ ms.locfileid: "10992944"
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
 
-若要更轻松地使用 "性能" 面板，请多多操练，所谓熟能生巧。  尝试分析你的页面并分析结果。  如果对结果有任何疑问，请使用 "**发送反馈**" 图标，选择 `Alt` + `Shift` + `I` \ (Windows \ ) ，选择 `Option` + `Shift` + `I` \ (macOS \ ) ，或[tweet DevTools 团队][TwitterEdgeDevtools]。  如果可能，请包括屏幕截图或指向可重现页面的链接。  
+若要更轻松地使用 "性能" 面板，请多多操练，所谓熟能生巧。  尝试分析你的页面并分析结果。  如果对结果有任何疑问，请使用 "**发送反馈**" 图标，选择 `Alt` + `Shift` + `I` \ (Windows、Linux \ ) ，选择 `Option` + `Shift` + `I` \ (macOS \ ) ，或[tweet DevTools 团队][TwitterEdgeDevtools]。  如果可能，请包括屏幕截图或指向可重现页面的链接。  
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Microsoft Edge DevTools 中的 " **发送反馈** " 图标  
@@ -243,6 +243,10 @@ See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->
 *   [Stick To Compositor-Only Properties And Manage Layer Count][RenderingManageLayers]  
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  
 -->
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 

@@ -3,16 +3,16 @@ description: 使用时间线上的分配检测查找未正确进行垃圾回收�
 title: 如何在日程表上使用分配检测
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993504"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125445"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -83,7 +83,7 @@ ms.locfileid: "10993504"
 
 ## 按函数查看内存分配  
 
-你可以通过 JavaScript 函数查看内存分配。  有关详细信息，请参阅 [通过函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。  
+你可以通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到 " [按函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]"。  
 
 ## 与 Microsoft Edge 开发人员工具团队联系  
 

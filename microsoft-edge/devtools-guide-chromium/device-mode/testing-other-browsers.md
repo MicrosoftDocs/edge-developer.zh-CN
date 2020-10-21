@@ -3,16 +3,16 @@ description: 您的工作不能确保您的网站在 Microsoft Edge 和 Android 
 title: 模拟和测试其他浏览器
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1b76447aa86837abac88bc4727eb7f4ee082342a
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1a7cc1c7e0a49760f30afdc16921824372b3a1aa
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992909"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124941"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,14 +28,7 @@ ms.locfileid: "10992909"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 模拟和测试其他浏览器   
-
-
-
+# 模拟和测试其他浏览器  
 
 您的工作不能确保您的网站在 Microsoft Edge 和 Android 中运行得非常出色。  即使设备模式能够模拟 Iphone 之类的其他设备，我们也鼓励你查看其他浏览器提供的仿真的解决方案。  
 
@@ -137,11 +130,9 @@ Microsoft Edge \ (EdgeHTML \ ) 虚拟机 \ (Vm \ ) 使你可以通过 VirtualBox
 *   [SauceLabs (商业) ][SauceLabs] 使你能够在仿真器内运行单元测试，这对于通过您的网站编写流并随后在各种设备上观看视频录制的内容非常有用。  您还可以通过您的网站进行手动测试。  
 *   [ (商业) 的任意位置的设备 ][AppExperience] 不使用模拟器，而是您能够远程控制的实时设备。  这在你需要在特定设备上重现问题且无法使用上述指南中的任何选项查看 bug 的情况下非常有用。  
 
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

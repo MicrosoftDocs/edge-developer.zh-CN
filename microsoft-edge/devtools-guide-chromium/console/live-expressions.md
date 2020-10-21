@@ -1,18 +1,18 @@
 ---
 description: 如果您发现自己重复在控制台中键入相同的 JavaScript 表达式，请尝试改用实时表达式。
-title: 实时监视 JavaScript 表达式值和实时表达式
+title: 在包含实时表达式的 Real-Time 中观看 JavaScript 表达式值
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6b66c44b77cd50bc0c1575e5eceb7c8d1a01b709
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f6787455863f738d0fa4e014ca8fc318ad83a9cb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993112"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125228"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,32 +28,24 @@ ms.locfileid: "10993112"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 实时监视 JavaScript 表达式值和实时表达式   
-
-  
+# 在包含实时表达式的 Real-Time 中观看 JavaScript 表达式值  
 
 如果您发现自己在控制台中重复键入相同的 JavaScript 表达式，您可能会发现创建 **实时表达式**变得更容易。  使用 **实时表达式** ，您只需要键入一个表达式，然后将其固定到您的控制台顶部。  表达式的值几乎实时更新。  
 
-## 创建实时表达式   
+## 创建实时表达式  
 
 1.  [打开控制台][DevToolsConsoleReferenceOpenConsole]。  
-1.  单击 " **创建实时表达式** \ (![ 创建实时表达式 ][ImageCreateLiveExpressionIcon] \ ) "。  将显示 " **活动表达式** " 文本框。  
+1.  选择 " **创建实时表达式** \ (![ 创建实时表达式 ][ImageCreateLiveExpressionIcon] \ ) "。  将显示 " **活动表达式** " 文本框。  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="在 &quot;活动表达式&quot; 文本框中键入 activeElement" lightbox="../media/console-create-live-expression.msft.png":::
        `document.activeElement`在 "**活动表达式**" 文本框中键入  
     :::image-end:::  
     
-1.  键入 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 保存表达式，或在 "**实时表达式**" 文本框外单击。  
+1.  选择 `Control` + `Enter` \ (Windows、Linux \ ) 或 `Command` + `Enter` \ (macOS \ ) 保存表达式，或在 "**活动表达式**" 文本框外选择。  
 
-<!--todo: add reference open console (open the console) section when available  -->  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
- 
-
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

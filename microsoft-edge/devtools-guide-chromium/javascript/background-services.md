@@ -3,16 +3,16 @@ description: 如何通过 Microsoft Edge DevTools 调试后台提取、后台同
 title: 通过 Microsoft Edge DevTools 调试后台服务
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1724bd3a5e45734555650c3d46e377161a3a7c65
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: fb5e408eb261ae3b2145780a1d7d5566c4501936
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992867"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124815"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,13 +27,7 @@ ms.locfileid: "10992867"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 通过 Microsoft Edge DevTools 调试后台服务   
-
-
+# 通过 Microsoft Edge DevTools 调试后台服务  
 
 Microsoft Edge DevTools 的 " **后台服务** " 部分是用于 JavaScript api 的工具集合，可使你的网站即使在用户未打开网站时也可以发送和接收更新。  
 后台服务在功能上类似于 [后台进程] [WikiBackgroundProcess]。  
@@ -47,13 +41,13 @@ Microsoft Edge DevTools 将以下每个 Api 视为后台服务：
 Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 未打开也是如此。  
 这可以帮助你确保按预期发送和接收事件。  你还可以检查每个事件的详细信息。  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-   在 " **推送消息** " 窗格中查看事件的详细信息  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   " **推送消息** " 窗格  
 :::image-end:::  
 
-## 后台获取   
+## 后台获取  
 
-*后台获取 API** 使**服务工作者**能够以后台服务的形式可靠地下载大型资源（如电影或播客）。  若要在3天内记录后台提取事件（即使 DevTools 未打开）：  
+**后台获取 API**使**服务工作者**能够以后台服务的形式可靠地下载大型资源（如电影或播客）。  若要在3天内记录后台提取事件（即使 DevTools 未打开）：  
 
 <!--Todo: add background fetch api section when available -->  
 
@@ -61,24 +55,24 @@ Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 
 1.  打开 " **应用程序** " 面板。  
 1.  打开 " **后台获取** " 窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
        " **背景获取** " 窗格  
     :::image-end:::  
     
-1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
+1.  选择 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
    触发某些后台获取活动后，DevTools 会将事件记录到表中。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
        **后台提取**窗格中的事件日志  
     :::image-end:::  
     
 1.  单击某个事件可在表下方的空间中查看其详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
        在 " **后台提取** " 窗格中查看事件的详细信息  
     :::image-end:::  
     
-## 后台同步   
+## 后台同步  
 
 **后台同步 API**使脱机**服务工作人员**能够在服务器重新建立可靠的 internet 连接后向其发送数据。  若要记录3天的后台同步事件（即使 DevTools 未打开）：  
 
@@ -88,24 +82,24 @@ Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 
 1.  打开 " **应用程序** " 面板。  
 1.  打开 " **后台同步** " 窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
        " **后台同步** " 窗格  
     :::image-end:::  
     
-1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
+1.  选择 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
    触发某些后台同步活动后，DevTools 会将事件记录到表中。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
        " **后台同步** " 窗格中的事件日志  
     :::image-end:::  
     
 1.  单击某个事件可在表下方的空间中查看其详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
        在 " **后台同步** " 窗格中查看事件的详细信息  
     :::image-end:::  
     
-## 通知 
+## 通知  
 
 **服务工作人员**从服务器收到[推送消息][MDNPush]后，服务工作人员使用[通知 API][MDNNotifications]将数据显示给用户。  要记录3天的通知（即使 DevTools 未打开）：  
 
@@ -113,24 +107,24 @@ Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 
 1.  打开 " **应用程序** " 面板。  
 1.  打开 " **通知** " 窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
        " **通知** " 窗格  
     :::image-end:::  
     
-1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
+1.  选择 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
    触发某些通知活动后，DevTools 会将事件记录到表中。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
        " **通知** " 窗格中的事件日志  
     :::image-end:::  
     
 1.  单击某个事件可在表下方的空间中查看其详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
        在 " **通知** " 窗格中查看事件的详细信息  
     :::image-end:::  
     
-## 推送邮件 
+## 推送邮件  
 
 若要向用户显示推送通知， **服务工作人员** 必须首先使用 [推送消息 API][MDNPush] 从服务器接收数据。  当服务工作者准备好显示通知时，它将使用 [通知 API][MDNNotifications]。  若要在3天内记录推送消息，即使在 DevTools 未打开的情况下也是如此：  
 
@@ -138,28 +132,26 @@ Microsoft Edge DevTools 可以记录3天的后台服务事件，即使 DevTools 
 1.  打开 " **应用程序** " 面板。  
 1.  打开 " **推送消息** " 窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
-       " **推送消息** " 窗格  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       打开 " **推送消息** " 窗格  
     :::image-end:::  
     
-1.  单击 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
+1.  选择 " **记录** \ (![ 记录 ][ImageRecordIcon] \ ) "。  
     触发某些推送消息活动后，DevTools 会将事件记录到表中。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
        " **推送消息** " 窗格中的事件日志  
     :::image-end:::  
     
-1.  单击某个事件可在表下方的空间中查看其详细信息。  
+1.  单击事件以查看表下方的空间中的详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="在 &quot;推送消息&quot; 窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="&quot;推送消息&quot; 窗格" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        在 " **推送消息** " 窗格中查看事件的详细信息  
     :::image-end:::  
     
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: 如何通过 "本地存储" 窗格和控制台查看和编辑 local
 title: 查看和编辑 Microsoft Edge DevTools 的本地存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: aa5365d1764ea0db537ea24464f9c76441f05322
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 25404e454187db941dc12d356dfe5ae7437d833b
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993553"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125417"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993553"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 查看和编辑 Microsoft Edge DevTools 的本地存储   
-
-
+# 查看和编辑 Microsoft Edge DevTools 的本地存储  
 
 本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [localStorage][MDNWindowsLocalStorage] 键值对。  
 
-## 查看 localStorage 键和值   
+## 查看 localStorage 键和值  
 
 1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认显示 **清单** 窗格。  
     
@@ -64,7 +58,7 @@ ms.locfileid: "10993553"
        查看键的值 `eventLogQueue_Online`  
     :::image-end:::  
     
-## 创建新的 localStorage 键值对   
+## 创建新的 localStorage 键值对  
 
 1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
 1.  双击表格的空白部分。  DevTools 将创建一个新行，并将光标焦点放在 **键** 列中。  
@@ -73,7 +67,7 @@ ms.locfileid: "10993553"
        要在其中创建新的键值对的表格的空部分，请双击该部分。  
     :::image-end:::  
     
-## 编辑 localStorage 键或值   
+## 编辑 localStorage 键或值  
 
 1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
 1.  双击 " **键** " 或 " **值** " 列中的一个单元格以编辑该注册表项或值。  
@@ -82,18 +76,18 @@ ms.locfileid: "10993553"
        编辑 `localStorage` 密钥  
     :::image-end:::  
     
-## 删除 localStorage 键值对   
+## 删除 localStorage 键值对  
 
 1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
 1.  选择要删除的键/值对。  DevTools 突出显示蓝色以指示它已选中。  
-1.  按下 `Delete` 键或单击 " **删除所选** 项 \" (" ![ 删除所选项 ][ImageDeleteIcon] \ ) "。  
+1.  按下 `Delete` 键或选择 " **删除所选** 项 \" (" ![ 删除所选项 \ ][ImageDeleteIcon] ) "。  
     
-## 删除 `localStorage` 域的所有键/值对   
+## 删除 `localStorage` 域的所有键/值对  
 
 1.  [查看 `localStorage` 域的键/值对](#view-localstorage-keys-and-values)。  
 1.  选择 **"全部清除** " (![ 全部清除 ][ImageClearIcon] \ ) 。  
     
-## 从控制台与 localStorage 交互   
+## 从控制台与 localStorage 交互  
 
 由于您能够在 **控制台**中运行 JavaScript，并且由于 **控制台** 有权访问页面的 JavaScript 上下文，因此可以 `localStorage` 从 **控制台**进行交互。  
 
@@ -109,11 +103,9 @@ ms.locfileid: "10993553"
        `localStorage`从**控制台**进行交互  
     :::image-end:::  
     
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

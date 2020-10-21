@@ -3,16 +3,16 @@ description: 如何通过应用程序面板和代码段查看和更改 IndexedDB
 title: 通过 Microsoft Edge DevTools 查看和更改 IndexedDB 数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6b1209ddcbfac305535d9d61e001441dbf61b6ec
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 54d232780e5e071ce34cdfb55e12daed6f631491
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993560"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125431"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993560"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# 通过 Microsoft Edge DevTools 查看和更改 IndexedDB 数据  
 
+本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看和更改 [IndexedDB][MDNIndexedDBAPI] 数据。  它假定你熟悉 DevTools。  它还假定你熟悉 IndexedDB。  如果不是，请导航到 [使用 IndexedDB][MDNUsingIndexedDB]。  
 
-
-
-# 通过 Microsoft Edge DevTools 查看和更改 IndexedDB 数据   
-
-  
-
-本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看和更改 [IndexedDB][MDNIndexedDBAPI] 数据。  它假定你熟悉 DevTools。  它还假定你熟悉 IndexedDB。  如果不是，请参阅 [使用 IndexedDB][MDNUsingIndexedDB]。  
-
-## 查看 IndexedDB 数据   
+## 查看 IndexedDB 数据  
 
 1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认情况下， **清单** 窗格是默认打开的。  
     
@@ -89,19 +83,19 @@ ms.locfileid: "10993560"
        按索引对对象存储进行排序  
     :::image-end:::  
     
-## 刷新 IndexedDB 数据   
+## 刷新 IndexedDB 数据  
 
-IndexedDB 不会实时更新 **应用程序** 面板中的值。  选择 " **刷新** \ (![ 刷新 ][ImageReloadIcon] \ ) 查看对象存储以刷新数据，或查看数据库，然后单击" **刷新数据库** "以刷新所有数据。  
+IndexedDB 不会实时更新 **应用程序** 面板中的值。  **Refresh** ![ ][ImageReloadIcon] 在查看对象存储以刷新数据时，选择 "刷新 \ (刷新 \ ) "，或者查看数据库并选择 "**刷新数据库**" 以刷新所有数据。  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    查看数据库  
 :::image-end:::  
 
-## 编辑 IndexedDB 数据   
+## 编辑 IndexedDB 数据  
 
 IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是，由于 DevTools 有权访问页面上下文，因此你可能会在 DevTools 内运行 JavaScript 代码以编辑 IndexedDB 数据。  
 
-### 用代码段编辑 IndexedDB 数据   
+### 用代码段编辑 IndexedDB 数据  
 
 [代码段][DevtoolsJavascriptSnippets] 是在 DevTools 中存储和运行 JavaScript 代码块的一种方法。  运行代码段时，会将结果记录到 **控制台**。  你可以使用代码段来运行 JavaScript 代码以编辑 IndexedDB 数据库。  
 
@@ -109,9 +103,9 @@ IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是�
    使用代码段与 IndexedDB 交互  
 :::image-end:::  
 
-## 删除 IndexedDB 数据   
+## 删除 IndexedDB 数据  
 
-### 删除 IndexedDB 键值对   
+### 删除 IndexedDB 键值对  
 
 1.  [查看 IndexedDB 对象存储](#view-indexeddb-data)。  
 1.  选择要删除的键/值对。  DevTools 将突出显示它以指示它已选中。  
@@ -120,13 +114,13 @@ IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是�
        选择一个键/值对以删除它  
     :::image-end:::  
     
-1.  按下 `Delete` 键或单击 " **删除所选** 项 \" (" ![ 删除所选项 ][ImageDeleteIcon] \ ) "。  
+1.  按下 `Delete` 键或选择 " **删除所选** 项 \" (" ![ 删除所选项 \ ][ImageDeleteIcon] ) "。  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        删除键值对后，对象存储的外观  
     :::image-end:::  
     
-### 删除对象存储中的所有键/值对   
+### 删除对象存储中的所有键/值对  
 
 1.  [查看 IndexedDB 对象存储](#view-indexeddb-data)。  
     
@@ -136,7 +130,7 @@ IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是�
     
 1.  选择 " **清除对象存储** \ (![ 清除对象存储 ][ImageClearIcon] \ ) "。  
     
-### 删除 IndexedDB 数据库   
+### 删除 IndexedDB 数据库  
 
 1.  查看要删除的[IndexedDB 数据库](#view-indexeddb-data)。  
 1.  选择 " **删除数据库**"。  
@@ -145,7 +139,7 @@ IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是�
        " **删除数据库** " 按钮  
     :::image-end:::  
     
-### 删除所有 IndexedDB 存储   
+### 删除所有 IndexedDB 存储  
 
 1.  打开 " **清除存储** " 窗格。  
 1.  确保已启用 " **IndexedDB** " 复选框。  
@@ -155,11 +149,9 @@ IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是�
        " **清除存储** " 窗格  
     :::image-end:::  
     
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

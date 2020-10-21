@@ -3,16 +3,16 @@ description: 如何从 Microsoft Edge DevTools 的应用程序面板查看缓存
 title: 查看 Microsoft Edge DevTools 中的缓存数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c920a171ec89925cc79ab741eed01e11d749bf1b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 5ab5fd0b3b504443e495f1d5108907a4551e6ac6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993294"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125438"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,19 +28,13 @@ ms.locfileid: "10993294"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 查看 Microsoft Edge DevTools 中的缓存数据   
-
-
+# 查看 Microsoft Edge DevTools 中的缓存数据  
 
 本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 检查 [缓存][MDNCache] 数据。  
 
 如果您尝试检查 [HTTP 缓存][MDNHTTPCaching] 数据，这不是您所需的指南。  在**网络日志**的 "**大小**" 列中查找信息。  请参阅 [记录网络活动][DevtoolsNetworkLogActivity]。  
 
-## 查看缓存数据   
+## 查看缓存数据  
 
 1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认情况下， **清单** 窗格是默认打开的。  
     
@@ -72,18 +66,18 @@ ms.locfileid: "10993294"
        查看资源的内容  
     :::image-end:::  
     
-## 刷新资源   
+## 刷新资源  
 
 1.  [查看缓存的数据](#view-cache-data)。  
 1.  选择要刷新的资源。  DevTools 将突出显示它以指示它已选中。  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       选择资源  
+       选择要刷新的资源  
     :::image-end:::  
     
 1.  选择 " **刷新** \ (![ 刷新 ][ImageRefreshIcon] \ ) "。  
     
-## 筛选资源   
+## 筛选资源  
 
 1.  [查看缓存的数据](#view-cache-data)。  
 1.  使用 " **按路径筛选** " 文本框筛选出与您提供的路径不匹配的任何资源。  
@@ -92,18 +86,18 @@ ms.locfileid: "10993294"
        筛选出与指定路径不匹配的资源  
     :::image-end:::  
     
-## 删除资源   
+## 删除资源  
 
 1.  [查看缓存的数据](#view-cache-data)。  
 1.  选择要删除的资源。  DevTools 将突出显示它以指示它已选中。  
     
     :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       选择资源  
+       选择要删除的资源  
     :::image-end:::  
     
 1.  选择 " **删除所选** \ (" ![ 删除所选 ][ImageDeleteIcon] \ ) "。  
     
-## 删除所有缓存数据   
+## 删除所有缓存数据  
 
 1.  打开**应用程序**  >  **清除存储**。  
 1.  请确保已启用 " **缓存存储** " 复选框。  
@@ -118,11 +112,9 @@ ms.locfileid: "10993294"
        " **清除网站数据** " 按钮  
     :::image-end:::  
     
-<!--  
-  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

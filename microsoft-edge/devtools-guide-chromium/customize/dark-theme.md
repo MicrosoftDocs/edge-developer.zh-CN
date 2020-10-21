@@ -3,16 +3,16 @@ description: 如何在 Microsoft Edge DevTools 中打开深色主题。
 title: 在 Microsoft Edge DevTools 中启用深色主题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4369d06fff8372677910e2807daa3b23c2c0e333
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 7eaedc59bf1b8ab592612f3a2006a0aac1dfbe9e
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993021"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125095"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993021"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 在 Microsoft Edge DevTools 中启用深色主题   
-
-  
+# 在 Microsoft Edge DevTools 中启用深色主题  
 
 可以在 " [设置](#set-up-dark-theme-from-settings) " 或 "命令" [菜单](#set-up-dark-theme-from-the-command-menu)中启用深色主题。  
 
@@ -42,9 +36,9 @@ ms.locfileid: "10993021"
    深色主题  
 :::image-end:::  
 
-## 从 "设置" 中设置深色主题   
+## 从 "设置" 中设置深色主题  
 
-1.  单击 " **自定义和控制 DevTools** " `...` ，然后选择 " **设置**"。  您也可以通过按下 "打开 **设置** " `F1` 。  
+1.  选择 " **自定义和控制 DevTools** \ (`...` \ ) "，然后选择 " **设置**"。  您也可以通过按下 "打开 **设置** " `F1` 。  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="深色主题" lightbox="../media/customize-options-settings.msft.png":::
        打开 **设置**  
@@ -56,20 +50,18 @@ ms.locfileid: "10993021"
        **首选项**  
     :::image-end:::  
 
-## 从 "命令" 菜单中设置深色主题   
+## 从 "命令" 菜单中设置深色主题  
 
 1.  [打开 "命令" 菜单][DevtoolsCommandMenu]。  
-1.  开始键入 `dark` ，选择 " **切换到深色主题** " 命令，然后按 `Enter` 运行命令。  
+1.  开始键入 `dark` ，选择 " **切换到深色主题** " 命令，然后选择 `Enter` 运行命令。  
     
     :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="深色主题" lightbox="../media/customize-command-menu-dark.msft.png":::
        "深色主题" 命令  
     :::image-end:::  
     
-<!--  
-   
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

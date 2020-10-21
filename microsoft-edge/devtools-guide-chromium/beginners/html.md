@@ -3,16 +3,16 @@ description: HTML 和 DOM 入门
 title: 初学者的 DevTools： HTML 和 DOM 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 182885cb97dbd1672d33b257569b0d841466985b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f17b68845ef746fa2612cdf4d02cc7e1003baabb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993280"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125298"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -28,13 +28,13 @@ ms.locfileid: "10993280"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 初学者的 DevTools： HTML 和 DOM 入门   
+# 初学者的 DevTools： HTML 和 DOM 入门  
 
 这是介绍 web 开发基础知识的一系列教程中的第一项。  你还将了解一组名为 Microsoft Edge DevTools 的 web 开发人员工具，这些工具可以提高工作效率。  
 
 在本特定教程中，你将了解有关 HTML 和 DOM 的信息。  HTML 是 web 开发的核心技术之一。  它是用于控制网页的结构和内容的语言。  DOM 还与网页的结构和内容相关，但稍后你将了解更多相关信息。  
 
-## 目标   
+## 目标  
 
 您将通过实际构建自己的网站来了解 web 开发。  当您完成 *DevTools For 初学者* 系列中的所有教程时，完成的网站将如下图所示。  
 
@@ -50,14 +50,14 @@ ms.locfileid: "10993280"
 
 您还有一个真正的网站！  你可以使用此网站主持你的简历或博客。  
 
-## 必备条件   
+## 必备条件  
 
 在尝试本教程之前，请完成以下先决条件：  
 
 *   如果您不熟悉 HTML，请阅读 [html][MDNGettingStartedHtml]入门。  
 *   下载 [Microsoft Edge][MicrosoftEdgeInsider] web 浏览器。  本教程使用一组称为 Microsoft Edge DevTools 的 web 开发工具，这些工具内置于 Microsoft Edge 中。  
 
-## 设置代码   
+## 设置代码  
 
 您将在名为 "问题" 的联机代码编辑器中构建您的网站。  
 
@@ -67,26 +67,26 @@ ms.locfileid: "10993280"
        "编辑器" 选项卡  
     :::image-end:::  
     
-1.  单击 " **alluring"-电击**。  将在左上角打开 "项目选项" 菜单。  
+1.  选择 **alluring-电击**。  将在左上角打开 "项目选项" 菜单。  
     
     :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-setup2.msft.png":::
        "项目选项" 菜单  
     :::image-end:::  
     
-1.  单击 " **Remix Project**"。  问题创建可编辑的项目副本，并随机为项目生成新名称。  内容与以前的内容相同。  
+1.  选择 " **Remix Project**"。  问题创建可编辑的项目副本，并随机为项目生成新名称。  内容与以前的内容相同。  
     
     :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-setup3.msft.png":::
        Remixed 项目  
     :::image-end:::  
     
-1.  如果您计划完成本系列中的下一个教程，请单击您的 GitHub 或 Facebook 帐户 **登录** 并登录问题。  如果您不登录，一旦关闭 "编辑" 选项卡，您将失去编辑此项目的功能。  
-1.  单击 " **显示** "，然后 **在新窗口中**选择。  将打开一个新的选项卡，显示实时页面。  此选项卡将在整个教程中称为 " **实时" 选项卡** 。  
+1.  如果你计划完成本系列中的下一个教程，请选择你的 GitHub 或 Facebook 帐户 **登录** 并登录问题。  如果您不登录，一旦关闭 "编辑" 选项卡，您将失去编辑此项目的功能。  
+1.  **在新窗口中选择 "****显示**"，然后选择。  将打开一个新的选项卡，显示实时页面。  此选项卡将在整个教程中称为 " **实时" 选项卡** 。  
     
     :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-setup4.msft.png":::
        "实时" 选项卡  
     :::image-end:::  
     
-## 添加内容   
+## 添加内容  
 
 您的网站非常空。  请按照以下步骤将一些内容添加到！  
 
@@ -140,7 +140,7 @@ ms.locfileid: "10993280"
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-add3.msft.png":::
-             新代码在 "编辑器" 选项卡中突出显示  
+             已更新的代码在 "编辑器" 选项卡中突出显示  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
@@ -168,7 +168,7 @@ ms.locfileid: "10993280"
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-add4.msft.png":::
-             新代码在 "编辑器" 选项卡中突出显示  
+             已更新的代码也会在 "编辑器" 选项卡中突出显示  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
@@ -179,11 +179,11 @@ ms.locfileid: "10993280"
        新列表在 "实时" 选项卡中可见  
     :::image-end:::  
     
-## 在 Microsoft Edge DevTools 中试用内容更改   
+## 在 Microsoft Edge DevTools 中试用内容更改  
 
 如果你正在开发一个包含大量 HTML 的大型页面，你可以想像，在 "编辑器" 选项卡和 "实时" 选项卡之间来回切换以查看你的更改，尤其是当你不确定要在页面上放置哪些内容时。  Microsoft Edge DevTools 可帮助你在不离开 "实时" 选项卡的情况下试用内容更改。  
 
-### 了解 HTML 和 DOM 之间的区别   
+### 了解 HTML 和 DOM 之间的区别  
 
 开始从 Microsoft Edge DevTools 编辑内容之前，了解 HTML 和 DOM 之间的区别很有帮助。  例如，学习的最佳方式是：  
 
@@ -213,11 +213,11 @@ ms.locfileid: "10993280"
     
 加载页面时，浏览器将获取 HTML 以创建页面的 *初始* 内容。  DOM 表示页面的 *当前* 内容，它可能会随着时间的推移而更改。  `<div>A new element!?!</div>`由于 HTML 底部的标记，可将神秘的内容添加到页面中 `<script src="new.js"></script>` 。  此标记会导致运行某些 JavaScript 代码。  在后面的教程中，你将了解有关 JavaScript 的详细信息，但现在将其视为可更改你的页面内容的编程语言。  在此特定情况下，JavaScript 代码将添加 `<div>A new element!?!</div>` 到您的页面。  这就是您的实时页面（而不是 HTML）中显示此神秘文本的原因。  
 
-### 编辑 DOM   
+### 编辑 DOM  
 
 如果想要快速试用内容更改而又不离开 "实时" 选项卡，请尝试 DevTools。  
 
-1.  在 DevTools 中，右键单击 `Your site!` 并选择 " **编辑为 HTML**"。  
+1.  在 DevTools 中，右键单击 `Your site!` ，然后选择 " **编辑为 HTML**"。  
     
     :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-edit1.msft.png":::
        将节点编辑为 HTML  
@@ -242,12 +242,12 @@ ms.locfileid: "10993280"
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-edit2.msft.png":::
-             将节点编辑为 HTML  
+             以 HTML 格式更新节点  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  按 `Control` + `Enter` \ (Windows \ ) 或 `Command` + `Enter` \ (macOS \ ) 保存所做的更改，或在框外单击。  您的更改会自动显示在您的页面的实时视图中。  文本已 `Your site!` 替换为新内容。  
+1.  选择 `Control` + `Enter` \ (Windows、Linux \ ) 或 `Command` + `Enter` \ (macOS \ ) 保存所做的更改，或在框外单击。  您的更改会自动显示在您的页面的实时视图中。  文本已 `Your site!` 替换为新内容。  
     
     :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="完成的网站" lightbox="../media/beginners-html-edit3.msft.png":::
        新内容将立即显示在页面上  
@@ -255,7 +255,7 @@ ms.locfileid: "10993280"
     
 此工作流仅适用于试用内容更改。  如果重新加载页面或关闭选项卡，所做的更改将永久消失。  如果您使用的是此工作流，而您想要保存所做的更改，您需要手动将这些更改复制到您的 HTML 中。  接下来的几个部分介绍了一些可用于更改 DOM 树内容的更多方法。  
 
-## 重新排序节点   
+## 重新排序节点  
 
 你还可以更改 DOM 节点的顺序。  例如，在网页上，导航菜单位于底部附近。  将其移动到顶部：  
 
@@ -282,7 +282,7 @@ ms.locfileid: "10993280"
        :::column-end:::
    :::row-end:::  
     
-### 删除节点   
+### 删除节点  
 
 您也可以从 DOM 树中删除节点。  
 
@@ -298,7 +298,7 @@ ms.locfileid: "10993280"
        该节点已被删除  
     :::image-end:::  
     
-## 复制更改   
+## 复制更改  
 
 即将完成。  你已在 DevTools 中对页面进行了一些更改，但这些更改尚未保存到你的源代码。  
 
@@ -348,11 +348,15 @@ ms.locfileid: "10993280"
        文件的 `index.html` 外观  
     :::image-end:::  
     
-## 后续步骤   
+## 后续步骤  
 
 *   完成本系列中的下一个教程 " [开始使用 CSS][DevToolsBeginnersCss]"，了解如何在 Microsoft Edge DevTools 中对页面进行样式更改并试验样式更改。  
 *   阅读 [对 dom 的介绍][MDNIntroductionDom] ，了解有关 DOM 的详细信息。  
 *   查看类似 [于 Web 开发简介][CourseraIntroductionToWebDevelopment] 的课程，以获得更多动手的 web 开发体验。  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!--- links --->  
 

@@ -3,16 +3,16 @@ description: 打开 "传感器" 选项卡，然后转到 "方向" 部分。
 title: 通过 Microsoft Edge DevTools 模拟设备方向
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 42b58ef2d4b132eedad2663287894e25e72b2572
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992930"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124955"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,13 +34,13 @@ ms.locfileid: "10992930"
 
 <!--todo: update device orientation section when available -->  
 
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `sensors` ，选择 " **显示传感器**"，然后按 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
+1.  键入 `sensors` ，选择 " **显示传感器**"，然后选择 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
 1.  从 " **方向** " 列表中，选择一个预设方向，例如 `Portrait upside down` ，或选择 " **自定义方向** " 以提供您自己的精确方向。  
     
     :::row:::

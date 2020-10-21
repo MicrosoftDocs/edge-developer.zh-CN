@@ -3,16 +3,16 @@ description: 了解如何将堆快照与 Microsoft Edge DevTools 堆探查器一
 title: 如何录制堆快照
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 15692b0258de6db66c0b58a2659348a6e849aaca
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 9762cb1d4932ce1a5d0b1c3944aa0b85d78b1060
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993469"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125459"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -36,7 +36,7 @@ Microsoft Edge DevTools 堆探查器显示由页面的 JavaScript 对象和相�
 
 ## 拍摄快照  
 
-在 " **内存** " 面板上，选择 " **拍摄快照**"，然后单击 " **开始**"。  您也可以按 `Ctrl` + `E` \ (Windows \ ) 或 `Cmd` + `E` \ (macOS \ ) 。  
+在 " **内存** " 面板上，选择 " **拍摄快照**"，然后选择 " **开始**"。  您也可以选择 `Ctrl` + `E` \ (Windows、Linux \ ) 或 `Cmd` + `E` \ (macOS \ ) 。  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="选择性能分析类型" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
    选择性能分析类型  
@@ -55,7 +55,7 @@ Microsoft Edge DevTools 堆探查器显示由页面的 JavaScript 对象和相�
 
 ## 清除快照  
 
-单击 " **清除所有配置文件** " 图标以从 DevTools 中删除快照 \ (以及与呈现程序进程 \ ) 关联的任何内存。  
+选择 " **清除所有配置文件** " 图标，以从 DevTools 中删除快照 \ (以及与呈现程序进程 \ ) 关联的任何内存。  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="选择性能分析类型" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    删除快照  

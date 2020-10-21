@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge DevTools 来查找更快地加载
 title: 使用 Microsoft Edge 开发人员工具优化网站速度
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: dafcb9c4d1194239baed7507e505d74d2b4ce1c8
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: af655941fdc836759651e8d8202e41d8d03331c5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993436"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125487"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993436"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# 通过 Microsoft Edge DevTools 优化网站速度   
-
-
+# 通过 Microsoft Edge DevTools 优化网站速度  
 
 ## 教程目标  
 
@@ -45,7 +39,7 @@ ms.locfileid: "10993436"
 *   你应该具有基本的 web 开发体验，类似于在此 [Web 开发类简介][CourseraIntroductionWebDevelopmentClass]中讲授的内容。  
 *   无需了解有关加载性能的任何信息。  您可以在本教程中了解它！  
 
-## 简介   
+## 简介  
 
 这是 Tony。  Tony 在猫社会中非常著名。  他已构建了一个网站，使其风扇能够了解他最喜爱的食物。  他的风扇喜欢该站点，但 Tony 会不断听到该站点加载缓慢的投诉。  Tony 已要求您帮助他提高网站的速度。  
 
@@ -53,7 +47,7 @@ ms.locfileid: "10993436"
    Tony 猫  
 :::image-end:::  
 
-## 步骤1：审核网站   
+## 步骤1：审核网站  
 
 无论何时设置以提高网站的负载性能， **都应始终从审核开始**。  
 审核具有2个重要功能：  
@@ -61,7 +55,7 @@ ms.locfileid: "10993436"
 *   它将为您创建一个 **基线** 来衡量后续更改。  
 *   它为你提供了可操作的有关哪些更改最有影响的 **提示** 。  
     
-### 设置   
+### 设置  
 
 首先，你必须设置网站，以便稍后能够对其进行更改。  
 
@@ -77,26 +71,26 @@ ms.locfileid: "10993436"
        单击 " **tony** " 后出现的菜单  
     :::image-end:::  
     
-1.  选择 " **Remix 项目**"。  项目的名称从 **tony** 更改为某个随机生成的名称。  现在，你拥有自己的代码的可编辑副本。  稍后，你可以对此代码进行更改。  
-1.  选择 " **显示** "，然后 **在新窗口中**选择。  演示将在新选项卡中打开。 此选项卡称为 " **演示" 选项卡**。 加载网站可能需要一段时间。  
+1.  选择 " **Remix Project**"。  项目的名称从 **tony** 更改为某个随机生成的名称。  现在，你拥有自己的代码的可编辑副本。  稍后，你可以对此代码进行更改。  
+1.  **在新窗口中选择 "****显示**"，然后选择。  演示将在新选项卡中打开。 此选项卡称为 " **演示" 选项卡**。 加载网站可能需要一段时间。  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
        "演示" 选项卡  
     :::image-end:::  
     
-1.  按 `Control` + `Shift` + `J` \ (Windows \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 。  Microsoft Edge DevTools 将与演示一起打开。  
+1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 。  Microsoft Edge DevTools 将与演示一起打开。  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        DevTools 和演示  
     :::image-end:::  
     
-对于本教程中的其余屏幕截图，DevTools 显示在一个单独的窗口中。  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "命令" 菜单，键入 `Undock` ，然后选择 "**在单独窗口中取消插入**"。  
+对于本教程中的其余屏幕截图，DevTools 显示在一个单独的窗口中。  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "命令" 菜单，键入 `Undock` ，然后选择 "**在单独窗口中取消插入**"。  
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="Tony 猫" lightbox="../media/speed-console.msft.png":::
    取消停靠 DevTools  
 :::image-end:::  
 
-### 建立基线   
+### 建立基线  
 
 比较基准是在改进性能方面之前如何执行网站的记录。  
 
@@ -124,7 +118,7 @@ ms.locfileid: "10993436"
        网站性能的 "审核" 面板的报表  
     :::image-end:::  
     
-#### 处理报告错误   
+#### 处理报告错误  
 
 如果你在 "审核" 面板报告中遇到错误，请尝试从 **InPrivate** 窗口运行 "演示" 选项卡，并且不会打开任何其他选项卡。  这可确保你从干净状态运行 Microsoft Edge。  Microsoft Edge 扩展通常会干扰审核过程。  
 
@@ -135,7 +129,7 @@ ms.locfileid: "10993436"
 :::image-end:::  
 -->  
 
-### 了解你的报表   
+### 了解你的报表  
 
 报表顶部的数字是网站的整体绩效分数。  稍后，在对代码进行更改时，您应看到此数字高度。  分数越高表示性能越高。  
 
@@ -149,7 +143,7 @@ ms.locfileid: "10993436"
    " **指标** " 部分  
 :::image-end:::  
 
-选择下图中突出显示的 "切换" 按钮以查看每个指标的说明，然后单击 " **了解详细** 信息" 以阅读有关每个指标的文档。  
+选择下图中突出显示的 "切换" 按钮以查看每个指标的说明，并选择 " **了解详细** 信息" 以阅读有关每个指标的文档。  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
    选择突出显示的切换按钮以展开指标项目  
@@ -191,11 +185,11 @@ ms.locfileid: "10993436"
    "已 **传递审核** " 部分  
 :::image-end:::  
 
-## 步骤2：实验   
+## 步骤2：实验  
 
 审核报告的 "机遇" 部分提供了有关如何提高页面性能的提示。  在此部分中，你将实现对基本代码的建议更改，在每次更改后审核网站，以测量它对网站速度的影响。  
 
-### 启用文本压缩   
+### 启用文本压缩  
 
 你的报告表明，避免巨大的网络负载是改善页面性能的首要机会之一。  启用文本压缩是提高页面性能的机会。  
 
@@ -234,7 +228,7 @@ ms.locfileid: "10993436"
 
 有足够的说明。  进行更改的时间！  通过添加几行代码来启用文本压缩：  
 
-1.  在 "编辑器" 选项卡中，单击 " **server.js**"。  
+1.  在 "编辑器" 选项卡中，选择 " **server.js**"。  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
        编辑 `server.js`  
@@ -259,7 +253,7 @@ ms.locfileid: "10993436"
     > [!NOTE]
     > 通常，你必须通过类似的方式安装 `compression` 程序包 `npm i -S compression` ，但已为你执行此操作。  
     
-1.  请等待部署新版本的网站。  " **工具** " 旁边的 "别致" 动画意味着该网站将重新构建并重新部署。  当 " **工具** " 旁边的动画消失时，更改即已准备就绪。  再次选择 " **显示** "，然后 **在新窗口中** 再次选择。  
+1.  请等待部署新版本的网站。  " **工具** " 旁边的 "别致" 动画意味着该网站将重新构建并重新部署。  当 " **工具** " 旁边的动画消失时，更改即已准备就绪。  再次选择 " **显示** "，然后 **在新窗口中进行** 选择。  
     
     <!--
     :::image type="complex" source="../media/speed-glitch-tony-remix-server-js-edited.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-server-js-edited.msft.png":::
@@ -294,15 +288,15 @@ ms.locfileid: "10993436"
     
 <!--  Woohoo!  That looks like progress.  -->  您的整体性能分数应增加，这意味着网站的速度会更快。  
 
-#### 现实世界中的文本压缩   
+#### 现实世界中的文本压缩  
 
 大多数服务器确实都有简单的修复程序，例如用于启用压缩的修补程序！  只需执行有关如何配置用于压缩文本的任何服务器的搜索。  
 
-### 调整图像大小   
+### 调整图像大小  
 
 你的报表指示避免大量网络负载是提高页面性能的最高机会之一。  调整图像大小有助于减小网络负载的大小。  如果你的用户在移动设备屏幕上查看你的图像，该屏幕为 500-像素宽度，则在发送1500像素范围的图像时，实际上没有任何意义。  理想情况下，发送500像素宽的图像。  
 
-1.  在报表中，单击 " **避免大量网络负载** " 以查看应调整哪些图像的大小。  它看起来是两个 jpg 文件超过了 2000 KB，这比所需的更大。  
+1.  在报表中，选择 " **避免大量网络负载** " 以查看应调整哪些图像的大小。  它看起来是两个 jpg 文件超过了 2000 KB，这比所需的更大。  
     
     <!--
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
@@ -320,7 +314,7 @@ ms.locfileid: "10993436"
     
 看起来只有更改对整体性能分数有轻微影响。  但是，分数没有明显显示的一项是保存用户的网络数据量。  旧照片的总大小约为 5.3 mb，而现在仅限于0.18 兆字节。  
 
-#### 在现实世界中调整图像大小   
+#### 在现实世界中调整图像大小  
 
 对于小型应用，像这样做时，执行一次性调整大小的方式可能足够好。  但对于大型应用，这显然是不可缩放的。  下面是在大型应用中管理图像的一些策略：  
 
@@ -334,7 +328,7 @@ ms.locfileid: "10993436"
 *   最起码，优化每个图像。  这可能会带来巨大的节约。  
   优化是指通过可减小图像文件大小的特殊程序运行图像。  有关更多提示，请参阅 [基本图像优化][EssentialImageOptimization] 。  
     
-### 消除呈现阻止资源   
+### 消除呈现阻止资源  
 
 您的最新报告表明，消除呈现阻止资源现在是最大的机会。  
 
@@ -349,7 +343,7 @@ ms.locfileid: "10993436"
        有关 **消除呈现阻止资源** 商机的详细信息  
     :::image-end:::  
     
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "命令" 菜单，开始键入 `Coverage` ，然后选择 "**显示覆盖率**"。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "命令" 菜单，开始键入 `Coverage` ，然后选择 "**显示覆盖率**"。  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        从 " **审核** " 面板中打开 "命令" 菜单  
@@ -378,14 +372,14 @@ ms.locfileid: "10993436"
 `jquery.js`和文件是否还 `lodash.js` 需要加载页面？  "请求阻止" 选项卡显示资源不可用时发生的情况。  
 
 1.  选择 " **网络** " 选项卡。  
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) ，再次打开 "命令" 菜单。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) ，再次打开 "命令" 菜单。  
 1.  开始键入 `blocking` ，然后选择 " **显示请求阻止**"。  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
        " **请求阻止** " 选项卡  
     :::image-end:::  
     
-1.  选择 " **添加模式** \ (![ 添加模式 ][ImageAddPatternIcon] \ ) "，键入 `/libs/*` ，然后按 `Enter` 进行确认。  
+1.  选择 " **添加模式** \ (![ 添加模式 ][ImageAddPatternIcon] \ ) "，键入，然后 `/libs/*` 选择 `Enter` 进行确认。  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        添加模式以阻止对目录的任何请求 `libs`  
@@ -412,7 +406,7 @@ ms.locfileid: "10993436"
        删除 "呈现阻止" 资源后的 **审核** 报告  
     :::image-end:::  
     
-#### 优化现实世界中的关键呈现路径   
+#### 优化现实世界中的关键呈现路径  
 
 **关键呈现路径**是指加载页面所需的代码。  通常，仅在页面加载期间传输关键代码，然后延缓加载所有其他内容，从而加快页面负载。  
 
@@ -423,7 +417,7 @@ ms.locfileid: "10993436"
     
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->  
 
-### 执行较少的主线程工作   
+### 执行较少的主线程工作  
 
 您的最新报告显示了 "商机" 部分中的一些小的可能节约，但如果您在 "诊断" 部分中向下查看，那么最大的瓶颈似乎是太多的主线程活动。  
 
@@ -470,7 +464,7 @@ ms.locfileid: "10993436"
     > [!NOTE]
     > 尽管你的框架所提供的请求通常不在你的控件中，但有时你可能会导致框架运行效率较低下的方式构建你的应用。  将你的应用重构为高效使用框架是一种减少主线程工作的方法。  但是，这需要深入了解你的框架的工作原理以及你自己的代码中所做的更改，以便更高效地使用框架。  
     
-1.  展开 " **下** " 部分。  此选项卡可分解最长时间的活动。  如果在下图中看不到任何内容，请单击 " **主要** 部分的标签"。  **自下而上**的部分仅显示当前已选择的任何活动或活动组的信息。  例如，如果单击其中一个 `mineBitcoin` 活动，则 " **下移** " 部分将仅显示该活动的信息。  
+1.  展开 " **下** " 部分。  此选项卡可分解最长时间的活动。  如果在 "Bottom-Up" 部分中看不到任何内容，请单击 " **主要** 部分的标签"。  **自下而上**的部分仅显示当前已选择的任何活动或活动组的信息。  例如，如果单击其中一个 `mineBitcoin` 活动，则 " **下移** " 部分将仅显示该活动的信息。  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="Tony 猫" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
        " **下** " 选项卡  
@@ -507,29 +501,27 @@ ms.locfileid: "10993436"
 
 <!--todo: add section when available -->  
 
-#### 在现实世界中执行较少的主线程工作   
+#### 在现实世界中执行较少的主线程工作  
 
 通常，" **性能** " 面板是了解你的网站在加载时所执行的活动的最常用方式，并查找删除不必要的活动的方法。  
 
 如果你更喜欢更喜欢的方法 `console.log()` ， [用户计时 API][MDNUserTimingApi] 使你可以任意标记你的应用生命周期的特定阶段，以便跟踪这些阶段所需的时间。  
 
-## 摘要   
+## 摘要  
 
 *   无论何时设置以优化网站的负载性能，都将始终从审核开始。  审核建立了一个基准，并提供了有关如何改进的提示。  
 *   一次更改一个更改，并在每次更改后审核页面，以了解该隔离更改对性能有何影响。  
 
 <!--
-## Next steps   
+## Next steps  
 
 *   Run audits on your own site!  If you need help interpreting your report, or finding ways to improve your load performance, check out [Feedback](#feedback) for ways to get help from the DevTools community.  Stack Overflow, the mailing list, or Twitter are probably best for these types of questions.  
 *   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.  
 -->  
 
-<!--  
-  
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

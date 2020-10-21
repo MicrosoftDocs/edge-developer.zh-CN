@@ -3,16 +3,16 @@ description: 在 Microsoft Edge DevTools 的 "源" 面板中查看和编辑文�
 title: 源窗格概览
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 029693ba27665a556446f4349c1517c53ff39b02
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 971ee6e112daaba828a8b754b63eee73ea51e99e
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993539"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125326"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,9 @@ ms.locfileid: "10993539"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# 源窗格概览  
 
-
-
-
-
-
-# "源" 面板概述 
-
-
-
-使用 Microsoft Edge DevTools " **源** " 面板执行 folowing 操作。  
+使用 Microsoft Edge DevTools " **源** " 面板执行下列操作。  
 
 *   [查看文件](#view-files)。  
 *   [编辑 CSS 和 JavaScript](#edit-css-and-javascript)。  
@@ -46,7 +38,7 @@ ms.locfileid: "10993539"
 *   [调试 JavaScript](#debug-javascript)。  
 *   [设置工作区](#set-up-a-workspace)，以便在 DevTools 中所做的更改将保存到文件系统上的代码。  
     
-## 查看文件 
+## 查看文件  
 
 使用 **页面** 窗格查看页面已加载的所有资源。
 
@@ -59,13 +51,13 @@ ms.locfileid: "10993539"
 *   第二级别（如 `docs.microsoft.com` 前面的图所示）表示 [原点][HtmlstandardOrigin]。  
 *   第三级、第四级等，表示从该来源加载的目录和资源。  例如，在上图中，指向资源的完整路径 `devtools-guide-chromium` 是 `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-单击 **页面** 窗格中的文件以查看 " **编辑器** " 窗格中的内容。  您可以查看任何类型的文件。  对于图像，你将看到图像的预览。  
+单击 **页面** 窗格中的文件以查看 " **编辑器** " 窗格中的内容。  您可以查看任何类型的文件。  对于图像，显示图像的预览。  
 
 :::image type="complex" source="./media/sources-editor-pane.msft.png" alt-text="页面窗格" lightbox="./media/sources-editor-pane.msft.png":::
    `a4d10f71.index-docs.js`在 "**编辑器**" 窗格中查看内容  
 :::image-end:::  
 
-## 编辑 CSS 和 JavaScript 
+## 编辑 CSS 和 JavaScript  
 
 使用 " **编辑器** " 窗格编辑 CSS 和 JavaScript。  DevTools 更新页面以运行新代码。  例如，如果通过添加下面的样式规则来编辑 CSS 文件：
 
@@ -75,21 +67,21 @@ ms.locfileid: "10993539"
 }
 ```
 
-您应看到更改立即生效。
+该更改应立即生效。
 
 :::image type="complex" source="./media/edit-css.msft.png" alt-text="页面窗格" lightbox="./media/edit-css.msft.png":::
    在 " **编辑器** " 窗格中编辑 CSS 以将副标题的文本颜色更改为红色  
 :::image-end:::  
 
-CSS 更改会立即生效，无需保存。  若要使 JavaScript 更改生效，请按 `Control` + `S` \ (Windows \ ) 或 `Command` + `S` \ (macOS \ ) 。  DevTools 不会重新运行脚本，因此只有你在函数中执行的 JavaScript 更改才会生效。  例如，在下图中，注意如何 `console.log('A')` 运行，而不是运行 `console.log('B')` 。  如果 DevTools 在进行更改后重新运行整个脚本，则文本 `A` 将被记录到 **控制台**。  
+CSS 更改会立即生效，无需保存。  若要使 JavaScript 更改生效，请选择 `Control` + `S` \ (Windows、Linux \ ) 或 `Command` + `S` \ (macOS \ ) 。  DevTools 不会重新运行脚本，因此只有你在函数中执行的 JavaScript 更改才会生效。  例如，在下图中，注意如何 `console.log('A')` 运行，而不是运行 `console.log('B')` 。  如果 DevTools 在进行更改后重新运行整个脚本，则文本 `A` 将被记录到 **控制台**。  
 
 :::image type="complex" source="./media/edit-js.msft.png" alt-text="页面窗格" lightbox="./media/edit-js.msft.png":::
    在 " **编辑器** " 窗格中编辑 JavaScript  
 :::image-end:::  
 
-DevTools 会在你重新加载页面时清除你的 CSS 和 JavaScript 更改。  请参阅 [设置工作区](#set-up-a-workspace) 以了解如何将更改保存到文件系统。  
+DevTools 会在你重新加载页面时清除你的 CSS 和 JavaScript 更改。  导航以 [设置工作区](#set-up-a-workspace) ，了解如何将更改保存到文件系统。  
 
-## 创建、保存和运行代码段 
+## 创建、保存和运行代码段  
 
 代码段是可以在任何页上运行的脚本。  假设你在 **控制台**中重复键入以下代码，以便将 jquery 库插入到页面中，以便你可以从该 **控制台**运行 jquery 命令：  
 
@@ -109,32 +101,30 @@ document.head.appendChild(script);
 
 要运行 **代码段**，请执行以下操作：
 
-*   使用 " **代码段** " 窗格打开文件，然后单击 " **运行** ![ " ("运行" 按钮 ][ImageRunIcon] \ ) 。  
-*   打开 " **[命令" 菜单][DevtoolsGuideChromiumCommandMenuIndex]**，删除 " `>` 字符"，键入 `!` **代码段**的名称，然后按 `Enter` 。  
+*   使用 " **代码段** " 窗格打开文件，然后选择 " **运行** ![ " ("运行" 按钮 ][ImageRunIcon] \ ) 。  
+*   打开 " **[命令" 菜单][DevtoolsGuideChromiumCommandMenuIndex]**，删除 " `>` 字符"，键入 `!` **代码段**的名称，然后选择 `Enter` 。  
     
-请参阅 [从任意页面运行代码片段][DevtoolsGuideChromiumJavascriptSnippets] 以了解详细信息。
+导航到 [任何页面上的运行代码片段][DevtoolsGuideChromiumJavascriptSnippets] 以了解详细信息。
 
-## 调试 JavaScript 
+## 调试 JavaScript  
 
 请 `console.log()` 考虑改用 Microsoft Edge DevTools 调试工具，而不是使用来推断 JavaScript 出现错误的位置。  一般做法是设置一个断点，该断点是代码中有意停止的位置，然后逐句通过代码的运行时，一次一行。  逐句通过代码时，你可以查看和更改所有当前定义的属性和变量的值，并在 **控制台**中运行 JavaScript 等。
 
-有关在 DevTools 中调试的基础知识，请参阅 [开始使用调试 JavaScript][DevtoolsGuideChromiumJavascriptIndex] 。
+导航到 [开始使用调试 JavaScript][DevtoolsGuideChromiumJavascriptIndex] 以了解有关在 DevTools 中调试的基础知识。
 
 :::image type="complex" source="./media/debugging.msft.png" alt-text="页面窗格" lightbox="./media/debugging.msft.png":::
    调试 JavaScript  
 :::image-end:::  
 
-## 设置工作区 
+## 设置工作区  
 
 默认情况下，当您在 " **源** " 面板中编辑文件时，当您重新加载页面时，这些更改将会丢失。  **工作区** 使你能够将在 DevTools 中所做的更改保存到你的文件系统中。  实质上，DevTools 可以用作你的代码编辑器。
 
-请参阅 [编辑包含工作区的文件][DevtoolsGuideChromiumWorkspacesIndex] 以开始使用。
+导航到 " [编辑包含工作区的文件][DevtoolsGuideChromiumWorkspacesIndex] " 以开始使用。
 
-<!--  
- 
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

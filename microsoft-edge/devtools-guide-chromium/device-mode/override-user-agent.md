@@ -3,16 +3,16 @@ description: 打开 "网络条件" 选项卡，禁用 "自动选择"，然后从
 title: 覆盖 Microsoft Edge DevTools 中的用户代理字符串
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: befbe186a5992c651f877a18f1c3232bf212394a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992923"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124948"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,13 +32,13 @@ ms.locfileid: "10992923"
 
 若要覆盖 Microsoft Edge DevTools 中的 [用户代理][MDNUserAgent] 字符串，请执行以下操作：  
 
-1.  按 `Control` + `Shift` + `P` \ (Windows \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `network conditions` ，选择 " **显示网络条件**"，然后按 `Enter` 以打开 " **网络条件** " 选项卡。  
+1.  键入 `network conditions` ，选择 " **显示网络条件**"，然后选择 `Enter` 以打开 " **网络条件** " 选项卡。  
 1.  在 " **用户代理** " 部分中，禁用 " **自动选择** " 复选框。  
     
     :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
@@ -46,7 +46,7 @@ ms.locfileid: "10992923"
     :::image-end:::  
     
 1.  从列表中选择用户代理字符串，或输入您自己的自定义字符串。  
-
+    
 ## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  

@@ -3,16 +3,16 @@ description: 如何通过会话存储窗格和控制台查看和编辑 sessionSt
 title: 查看和编辑与 Microsoft Edge DevTools 的会话存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 6543c03f04ff80b1bba1d244598a901d066db13a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993546"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125473"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993546"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# 查看和编辑与 Microsoft Edge DevTools 的会话存储   
-
-  
+# 查看和编辑与 Microsoft Edge DevTools 的会话存储  
 
 本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [`sessionStorage`][MDNSessionStorage] 键值对。  
 
-## 查看 sessionStorage 键和值   
+## 查看 sessionStorage 键和值  
 
 1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认显示 **清单** 窗格。  
     
@@ -64,7 +58,7 @@ ms.locfileid: "10993546"
        查看键的值 `x-sid`  
     :::image-end:::  
     
-## 创建新的 sessionStorage 键值对   
+## 创建新的 sessionStorage 键值对  
 
 1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
 1.  双击表格的空白部分。  DevTools 将创建一个新行，并将光标焦点放在 **键** 列中。  
@@ -73,7 +67,7 @@ ms.locfileid: "10993546"
        要在其中创建新的键值对的表格的空部分，请双击该部分。  
     :::image-end:::  
     
-## 编辑 sessionStorage 键或值   
+## 编辑 sessionStorage 键或值  
 
 1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
 1.  双击 " **键** " 或 " **值** " 列中的一个单元格以编辑该注册表项或值。  
@@ -82,18 +76,18 @@ ms.locfileid: "10993546"
        编辑 `sessionStorage` 密钥  
     :::image-end:::  
     
-## 删除 sessionStorage 键值对   
+## 删除 sessionStorage 键值对  
 
 1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
 1.  选择要删除的键/值对。  DevTools 突出显示蓝色以指示它已选中。  
-1.  按下 `Delete` 键或单击 " **删除所选** 项 \" (" ![ 删除所选项 ][ImageDeleteIcon] \ ) "。  
+1.  按下 `Delete` 键或选择 " **删除所选** 项 \" (" ![ 删除所选项 \ ][ImageDeleteIcon] ) "。  
     
-## 删除域的所有 sessionStorage 键值对   
+## 删除域的所有 sessionStorage 键值对  
 
 1.  [查看 `sessionStorage` 域的键/值对](#view-sessionstorage-keys-and-values)。  
 1.  选择 **"全部清除** " (![ 全部清除 ][ImageClearIcon] \ ) 。  
     
-## 从控制台与 sessionStorage 交互   
+## 从控制台与 sessionStorage 交互  
 
 由于你可以在 **控制台**中运行 JavaScript，并且由于 **控制台** 有权访问页面的 JavaScript 上下文，因此可以 `sessionStorage` 从 **控制台**进行交互。  
 
@@ -109,11 +103,9 @@ ms.locfileid: "10993546"
        `sessionStorage`从**控制台**进行交互  
     :::image-end:::  
     
-<!--  
-   
+## 与 Microsoft Edge 开发人员工具团队联系  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

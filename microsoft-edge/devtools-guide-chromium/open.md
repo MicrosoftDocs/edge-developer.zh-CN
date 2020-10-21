@@ -3,16 +3,16 @@ description: 打开 Microsoft Edge DevTools 的所有方法。
 title: 打开 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ffc05a1eff2cdb7f3020a7dbb853a7520a0502dd
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 298edeebc99d858306938e4a876e8ef03a371f2c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993595"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125403"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,7 +37,7 @@ ms.locfileid: "10993595"
 以下每个任务都可让你检查 DOM 节点的样式或属性。
 
 *   将鼠标悬停在元素上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **检查**"。  
-*   按 `Control` + `Shift` + `C` \ (Windows \ ) 或 `Command` + `Option` + `C` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+*   选择 `Control` + `Shift` + `C` \ (Windows、Linux \ ) 或 `Command` + `Option` + `C` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 :::image type="complex" source="./media/bing-right-click-inspect.msft.png" alt-text="* * 检查 * * 选项" lightbox="./media/bing-right-click-inspect.msft.png":::
    " **检查** " 选项  
@@ -54,13 +54,13 @@ ms.locfileid: "10993595"
     1.  [打开 DevTools](#open-microsoft-edge-devtools)。  
     1.  选择 " [控制台][DevToolsConsoleIndex] " 窗格。  
 
-*   若要直接跳转到[控制台][DevToolsConsoleIndex]窗格，请按 `Control` + `Shift` + `J` \ (Windows \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+*   若要直接跳转到[控制台][DevToolsConsoleIndex]窗格，请选择 `Control` + `Shift` + `J` \ (Windows、Linux \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 <!--See [Get Started With The Console][ConsoleGetStarted].  -->
 
 ## 打开上一个面板  
 
-若要跳转到上一个已打开的面板，请按 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+若要跳转到上一个已打开的面板，请选择 `Control` + `Shift` + `I` \ (Windows、Linux \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 ## 打开 Microsoft Edge DevTools  
 
@@ -72,7 +72,7 @@ ms.locfileid: "10993595"
     1.  选择 " **更多工具**"。  
     1.  选择 " **开发工具**"。  
     
-*   若要打开 Microsoft Edge DevTools，请按 `F12` 或 `Control` + `Shift` + `I` \ (Windows \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请参阅 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+*   若要打开 Microsoft Edge DevTools，请选择 `F12` 或 `Control` + `Shift` + `I` \ (Windows、Linux \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 
 :::image type="complex" source="./media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="* * 检查 * * 选项" lightbox="./media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    从 Microsoft Edge 主菜单打开 DevTools  
@@ -82,17 +82,17 @@ ms.locfileid: "10993595"
 
 若要在每个新选项卡上自动打开 DevTools，请从命令行打开 Microsoft Edge 并传递 `--auto-open-devtools-for-tabs` 标志。  
 
-#### [CMD (Windows) ](#tab/cmd-windows/)  
+#### [CMD (Windows) ](#tab/cmd-Windows/)  
 
-<a id="selenium-tools-install"></a>  
+<a id="auto-open-devtools-command-line"></a>  
 
 ```cmd
 start msedge --auto-open-devtools-for-tabs
 ```  
 
-#### [PowerShell (Windows) ](#tab/powershell-windows/)  
+#### [PowerShell (Windows) ](#tab/powershell-Windows/)  
 
-<a id="selenium-tools-install"></a>  
+<a id="auto-open-devtools-command-line"></a>  
 
 ```powershell
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
@@ -100,13 +100,25 @@ Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 
 #### [bash (macOS) ](#tab/bash-macos/)  
 
-<a id="selenium-tools-install"></a>  
+<a id="auto-open-devtools-command-line"></a>  
 
 ```bash
 /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```  
 
+#### [bash (Linux) ](#tab/bash-linux/)  
+
+<a id="auto-open-devtools-command-line"></a>  
+
+```bash
+microsoft-edge-dev --auto-open-devtools-for-tabs
+```  
+
 * * *  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

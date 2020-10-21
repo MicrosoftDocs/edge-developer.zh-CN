@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge 和 DevTools 查找影响页面�
 title: 修复内存问题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ef820353f81eb3fd791433e9c53434dff3b10a60
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1d8a24fc360dc307471be33544c9c707736be06d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992776"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125452"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -63,7 +63,7 @@ ms.locfileid: "10992776"
 
 使用 Microsoft Edge 浏览器任务管理器作为内存问题调查的起始点。  Microsoft Edge 浏览器任务管理器是一个实时监视器，可告诉你页面当前使用的内存量。  
 
-1.  按下 `Shift` + `Esc` 或转到 Microsoft edge 主菜单，然后选择 "**更多工具**  >  **浏览器任务管理**器" 以打开 Microsoft Edge 浏览器任务管理器。  
+1.  选择 `Shift` + `Esc` 或转到 Microsoft edge 主菜单，然后选择 "**更多工具**  >  **浏览器任务管理**器" 以打开 microsoft Edge 浏览器任务管理器。  
     
     :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="打开 Microsoft Edge 浏览器任务管理器" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        图1：打开 Microsoft Edge 浏览器任务管理器  
@@ -234,6 +234,10 @@ DevTools 显示按函数划分的内存分配。  默认视图为 ** (自下而�
 你可以使用 Microsoft Edge 浏览器任务管理器或性能内存录制来发现频繁的垃圾回收。  在 Microsoft Edge 浏览器任务管理器中，频繁上升和下降的 **内存** 或 **JavaScript 内存** 值表示频繁的垃圾回收。  在性能录制中，频繁更改 \ (升高和下降 \ ) 到 JS 堆或节点计数图指示频繁的垃圾回收。  
 
 确定问题后，您可以 **在时间线录制上使用分配检测** 来查明内存的分配位置以及导致分配的函数。  
+
+## 与 Microsoft Edge 开发人员工具团队联系  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

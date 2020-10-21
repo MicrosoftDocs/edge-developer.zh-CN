@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 的规范文档键盘快捷方式。
 title: Microsoft Edge DevTools 键盘快捷方式
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ab2e162af9b59e2ed92abc0cebf8e9fa2ac3a3d2
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 78e96fa3ae927a8aee24dfc18d4fa6ee515556a8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003948"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125340"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ ms.locfileid: "11003948"
 
 若要打开 DevTools，请在光标焦点位于浏览器视区上时选择以下键盘快捷方式。
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 打开最近使用的任何面板 | `F12` 或 `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | 打开 **控制台** 面板 | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
@@ -48,7 +48,7 @@ ms.locfileid: "11003948"
 
 以下键盘快捷方式在大多数（如果不是全部） DevTools 面板中可用。
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 显示 **设置** | `?` 或者 `F1` | `?` 或 `Function`+`F1` |  
 | 重点关注下一个面板 | `Control`+`]` | `Command`+`]` |  
@@ -73,7 +73,7 @@ ms.locfileid: "11003948"
 
 ## 元素面板键盘快捷方式  
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 撤消更改 | `Control`+`Z` | `Command`+`Z` |  
 | 恢复更改 | `Control`+`Y` | `Command`+`Shift`+`Z` |  
@@ -88,7 +88,7 @@ ms.locfileid: "11003948"
 
 ### "样式" 窗格键盘快捷方式  
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 转到声明属性值的行 | 按住 `Control` ，然后选择属性值 | 按住 `Command` ，然后选择属性值 |  
 | 循环浏览颜色值的 RBGA、HSLA 和十六进制表示形式 | 按住 `Shift` ，然后选择值旁边的 " **颜色预览** " 框 | 按住 `Shift` ，然后选择值旁边的 " **颜色预览** " 框 |  
@@ -100,7 +100,7 @@ ms.locfileid: "11003948"
 
 ## "源" 面板键盘快捷方式  
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 暂停脚本运行时 \ (如果当前正在运行 \ ) 或恢复 \ (（如果当前已暂停 \ ) ） | `F8` 或 `Control`+`\` | `F8` 或 `Command`+`\` |  
 | 跳过下一个函数调用 | `F10` 或 `Control`+`'` | `F10` 或 `Command`+`'` |  
@@ -118,7 +118,7 @@ ms.locfileid: "11003948"
 
 ### 代码编辑器键盘快捷方式  
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 删除最后一个单词中的所有字符，直至光标 | `Control`+`Delete` | `Option`+`Delete` |  
 | 添加或删除 [代码行断点][DevtoolsJavascriptBreakpointsLOC] | 将光标聚焦在行上，然后选择 `Control`+`B` | 将光标聚焦在行上，然后选择 `Command`+`B` |  
@@ -128,7 +128,7 @@ ms.locfileid: "11003948"
 
 ## 性能面板键盘快捷方式  
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 开始/停止录制 | `Control`+`E` | `Command`+`E` |  
 | 保存录制 | `Control`+`S` | `Command`+`S` |  
@@ -136,13 +136,13 @@ ms.locfileid: "11003948"
 
 ## 内存面板键盘快捷方式  
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 开始/停止录制 | `Control`+`E` | `Command`+`E` |  
 
 ## 控制台面板键盘快捷方式  
 
-| 操作 | Windows | macOS |  
+| 操作 | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | 接受 "自动完成" 建议 | `Right Arrow` 或者 `Tab` | `Right Arrow` 或者 `Tab` |  
 | 拒绝 "自动完成" 建议 | `Escape` | `Escape` |  
