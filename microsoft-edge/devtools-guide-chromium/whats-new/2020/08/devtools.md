@@ -7,12 +7,12 @@ ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: 0e759c18b5ef547bfd490f4d525930f92809a6a1
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104859"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133909"
 ---
 # DevTools (Microsoft Edge 86) 中的新增功能  
 
@@ -490,7 +490,7 @@ Chromium 问题： [#1067184][CR1067184]
 [CR772558]: https://crbug.com/772558 "DevTools：更新到最新版本的 Lighthouse |Chromium bug"  
 [CR807440]: https://crbug.com/807440 "Chrome 通过大量的 SWs |Chromium bug"  
 [CR997694]: https://crbug.com/997694 "302状态的 XHR 请求不会显示在 "网络" 面板中的 "XHR" 筛选器 |Chromium bug"  
-[CR1047356]: https://crbug.com/1047356 "CSS 网格/Flexbox/表格工具"  
+[CR1047356]: https://crbug.com/1047356 "CSS 网格/Flexbox/表格工具 |Chromium bug"  
 [CR1051466]: https://crbug.com/1051466 "在 DevTools | 中支持合作基金/COEP 调试Chromium bug"  
 [CR1054281]: https://crbug.com/1054281 "功能请求： DevTools 应模拟可折叠和双屏幕设备 |Chromium bug"  
 [CR1067184]: https://crbug.com/1067184 "功能请求：网络 & 元素上的 "清除筛选" 按钮-> 样式筛选器输入 |Chromium bug"  

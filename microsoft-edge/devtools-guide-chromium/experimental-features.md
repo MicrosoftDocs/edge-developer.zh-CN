@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的最新实验功能
 title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b620388df309109e28ab8b9c010dfd448ca906f7
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124892"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133837"
 ---
 # 实验功能  
 
@@ -31,7 +31,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 1.  在 " **设置** " 窗格的左侧，选择 " **实验** " 部分。  
     
     :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-devtools.msft.png":::
-       DevTools 设置中的实验列表  
+       DevTools**设置**中的实验列表  
     :::image-end:::  
     
 1.  在 " **实验** " 页面上，滚动浏览所有可用实验功能的列表，然后选择要测试的每个功能旁边的复选框。  
@@ -52,6 +52,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 | [启用 webhint](#enable-webhint) | 85或更高版本 |  
 | [启用网络控制台](#enable-network-console) | 85或更高版本 |  
 | [源订单查看器](#source-order-viewer) | 86或更高版本 |  
+| [启用键盘快捷方式编辑器](#enable-keyboard-shortcut-editor) | 87或更高版本 |  
 
 ### 仿真：支持双重屏幕模式  
 
@@ -92,7 +93,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 
 当您在 Microsoft Edge 的双屏幕状态下模拟 [Surface 双核][SurfaceDevicesDuo] 时，接缝 \ (在您的网站或应用上绘制的两个屏幕 ) 之间的空间。  
 
-仿真显示与你的网站 \ (或应用 \ ) 在[Surface 双核][SurfaceDevicesDuo]上的[Microsoft Edge Android 应用][GooglePlayMicrosoftEdge]中呈现的方式相匹配。  您可能需要更新您的网站 \ (或应用 \ ) ，以便更好地沿接缝显示。  有关将您的网站 \ (或 app \ ) 调整到接缝的详细信息，请导航到如何使用 Surface 双核文档中 [的接缝][DualScreenIntroductionHowWorkSeam] 。  
+仿真显示与在[Surface 双核][SurfaceDevicesDuo]上运行的[Microsoft Edge Android 应用][GooglePlayMicrosoftEdge]中呈现的你的网站 \ (或应用 \ ) 的方式相匹配。  您可能需要更新您的网站 \ (或应用 \ ) ，以便更好地沿接缝显示。  有关将您的网站 \ (或 app \ ) 调整到接缝的详细信息，请导航到 " [如何处理接缝][DualScreenIntroductionHowWorkSeam]"。  
 
 [设备工具栏][DevtoolsDeviceModeIndexSimulateMobileViewport]具有其他功能，可帮助你在多个姿势和方向中测试你的网站或应用。  选择 " **旋转** \ (![ 旋转 ][ImageRotateIcon] \ ) "，将视区旋转为横向方向。 将该功能与 **span** \ (![ span ][ImageSpanIcon] \ ) 组合在单个屏幕或折叠的姿势或已展开的屏幕或已展开的之间切换。  同时，这些功能支持在所有四种可能的姿势和方向中测试你的网站或应用。  
 
@@ -105,7 +106,8 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
-下面是可帮助你增强网站的其他资源 (或适用于双屏幕设备的应用 \ ) ：
+下面是可帮助你增强网站的其他资源 (或适用于双屏幕设备的应用 \ ) 。  
+
 *   有关在双屏幕设备上进行 web 开发的详细信息，请导航到 [双屏幕 web 体验][DualScreenWebIndex]。  
 *   安装 [Surface 双核模拟器][DualScreenAndroidUseEmulator]。  它与 Microsoft Edge 中的仿真器不同，模拟运行 Android 的 Surface 双核，并与 [Android Studio][AndroidDeveloperStudio]集成。  有关详细信息，请导航到 [获取 Surface 双核 SDK][DualScreenAndroidGetDuoSdk]。  
 
@@ -116,7 +118,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 ### 启用新的 CSS 网格调试功能  
 
-此实验功能提供了许多新的可视化效果，可帮助你调试 CSS 网格布局。  若要预览最新实验功能，请 [启用此实验](#turn-on-experimental-features) 并重新加载 DevTools。  默认情况下，此实验在 Edge 87 和更高版本中处于启用状态。  
+此实验功能提供了许多新的可视化效果，可帮助你调试 CSS 网格布局。  若要预览最新实验功能，请 [启用此实验](#turn-on-experimental-features) 并重新加载 DevTools。  此体验默认情况下在 Microsoft Edge 版本87或更高版本中打开。  
 
 #### 利用 "检查" 工具查看悬停的网格重叠  
 
@@ -128,29 +130,29 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 #### 查看永久网格覆盖  
 
-在 Edge 86 和更高版本中，实验性 CSS 网格功能还提供了启用持久网格覆盖的选项。  永久性覆盖提供多项好处。  
+在 Microsoft Edge 版本86或更高版本中，实验性 CSS 网格功能还提供了启用持久网格覆盖的选项。  永久性覆盖提供多项好处。  
 
 *   滚动、移动鼠标和使用 DevTools 的其他功能时，永久叠加在页面上保持可见。  
-*   可以同时启用多个永久覆盖，从而使你可以同时查看大量的网格布局。  
-*   永久覆盖提供许多配置选项，如隐藏或显示网格区名称、网格间隙、轨道大小等。  
+*   可以同时启用多个永久覆盖，从而允许同时查看多个网格布局。  
+*   永久覆盖提供许多配置选项，如在网格区域中隐藏或显示名称、网格间隙、轨道大小等。  
 
 切换永久网格覆盖的两种方式。  
 
-*   选择 "**元素**" 工具的 DOM 树中显示的任何网格元素旁边的**网格**菱形。  
+*   选择 "**元素**" 工具的 DOM 树中显示的任何网格元素旁边的 "**网格**" 椭圆图标。  
     
     :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/grid-adorner.msft.png":::
-       元素工具中的网格菱形  
+       " **元素** " 工具中的 "网格椭圆" 图标  
     :::image-end:::  
     
 *   打开位于 "元素" 工具中的新 **版式** 面板，然后选择要突出显示的每个网格元素旁边的复选框。  
     
     :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/grid-layout-zoom.msft.png":::
-       布局面板  
+       DevTools 中的**版式**面板  
     :::image-end:::  
     
 #### 配置永久重叠  
 
-新的 **版式** 面板，位于 " **元素** " 工具中，位于边缘86和更高版本中的 " **样式** " 和 " **计算** " 选项卡上，曲面配置选项用于永久叠加。  
+在 Microsoft Edge 版本86或更高版本中，新的 **版式** 面板位于 " **元素** " 工具中和 " **样式** " 和 " **计算** " 选项卡旁边。  " **布局** " 面板图面为永久叠加的配置选项。  
 
 :::image type="complex" source="./media/experiments-grid.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-grid.msft.png":::
    CSS 网格调试功能  
@@ -211,7 +213,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 1.  打开 " **元素** " 窗格。  
 1.  打开抽屉 \ (底部 \ ) 面板中的 " **辅助功能** " 窗格。  
-1.  在 " **源顺序查看器** " 部分中，选中 " **显示源顺序** " 复选框。  
+1.  在 " **源顺序查看器** " 部分下，选择 " **显示源顺序** " 复选框。  
 1.  突出显示任何 HTML 元素以显示页面源中顺序的覆盖图。  
 
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-source-order-viewer.msft.png":::
@@ -219,6 +221,42 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
+
+### 启用键盘快捷方式编辑器
+
+启用 " **启用键盘快捷方式编辑器** " 实验后，您现在可以自定义 DevTools 中任何操作的键盘快捷方式。  若要自定义特定操作的键盘快捷方式，请完成以下步骤。  
+
+1.  [打开 DevTools][DevtoolsOpenMain]。  
+1.  打开 " [设置][DevToolsCustomizeSettings]"。
+    *   选择 `Shift` + `?` 。  
+1.  导航到 " **快捷方式** " 页面。  
+1.  选择要自定义的操作。  
+1.  选择 " **编辑** \ (![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \ ) " 图标。  
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       从 "[设置][DevToolsCustomizeSettings]" 中的 "**快捷方式**" 页面选择要自定义的操作
+    :::image-end:::  
+    
+1.  在键盘上，选择要绑定到操作的键。
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       选择要分配给操作的键
+    :::image-end:::  
+    
+1.  若要保存新的键盘快捷方式，请选择 "选中标记 \ (![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\ ) 图标。
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       选择复选标记图标以保存新的键盘快捷方式
+    :::image-end:::  
+    
+1.  选择新的键盘快捷方式以触发 DevTools 中的操作。  
+    
+在 " **快捷方式** " 页面上， **自定义键盘快捷方式** \ (![ CustomKeyboardShortcut ][ImageCustomKeyboardShortcutIcon] \ ) 图标显示已自定义的键盘快捷方式。  若要重置所有快捷方式，请选择 " **还原默认快捷方式**"。  
+
+在编辑操作的键盘快捷方式时，若要放弃所做的更改，请选择 "X (![ XKeyboardShortcut ][ImageXKeyboardShortcutIcon] \ ) " 图标。  若要删除特定操作的快捷方式，请选择 " **删除快捷方式** \ (![ DeleteKeyboardShortcut ][ImageDeleteKeyboardShortcutIcon] \ ) " 图标。  若要为操作添加多个快捷方式，请选择 " **添加快捷方式**"。
+
+> [!NOTE]
+> 如果键盘快捷方式当前已分配给另一个操作，您将无法保存它以执行新操作。  必须先删除上一个操作的键盘快捷方式，然后再将其添加到新操作。  
 
 ## 以前的实验功能  
 
@@ -247,6 +285,11 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 [ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
 [ImageSpanIcon]: ./media/span-dark-icon.msft.png  
 [ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ./media/edit-keyboard-shortcut-icon.msft.png  
+[ImageCheckmarkKeyboardShortcutIcon]: ./media/checkmark-keyboard-shortcut-icon.msft.png  
+[ImageCustomKeyboardShortcutIcon]: ./media/custom-keyboard-shortcut-icon.msft.png  
+[ImageDeleteKeyboardShortcutIcon]: ./media/delete-keyboard-shortcut-icon.msft.png  
+[ImageXKeyboardShortcutIcon]: ./media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
@@ -256,7 +299,8 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 [DevtoolsIssues]: ./issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 |Microsoft 文档"  
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools 键盘快捷方式 |Microsoft 文档"  
 [DevtoolsOpen]: ./open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 |Microsoft 文档"
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 |Microsoft 文档"  
+[DevtoolsOpenMain]: ./open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "双屏幕 web 体验 |Microsoft 文档"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "获取 Surface 双核仿真器 |Microsoft 文档"  
