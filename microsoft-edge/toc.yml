@@ -178,6 +178,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: 代码段
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: 替代
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: 源窗格概览
               href: devtools-guide-chromium/sources.md
             - name: 调试后台服务
