@@ -525,6 +525,8 @@
       items:
         - name: Microsoft Edge 中影响网站兼容性的更改
           href: web-platform/site-impacting-changes.md
+        - name: 将用户从 IE 转到 Microsoft Edge
+          href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Microsoft Edge 中的跟踪防护
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge 用户代理字符串
