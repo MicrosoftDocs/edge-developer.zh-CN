@@ -1,20 +1,20 @@
 ---
 description: 提供可能会影响网站兼容性的高影响更改的摘要
-title: Microsoft Edge 中的影响网站兼容性的更改
+title: Microsoft Edge 中影响网站兼容性的更改
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 11/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、兼容性、web 平台
-ms.openlocfilehash: 49fbedb2fe979a52b771539c7ceedce8968c2fb4
-ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
+ms.openlocfilehash: bb4d67bf1ab6274a10a83ee750fa9db52ab85464
+ms.sourcegitcommit: 4497b399a6ddfa34163b7d3db4f76423d4da3c12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100286"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11156346"
 ---
-# Microsoft Edge 中的影响网站兼容性的更改  
+# Microsoft Edge 中影响网站兼容性的更改  
 
 web 正在不断发展，以改善用户体验、安全性和隐私性。  在某些情况下，所做的更改可能会显著影响现有页面的功能。  下表总结了 Microsoft Edge 团队当前正在跟踪的较高影响的更改。  经常查看本文;Microsoft Edge 团队将在思考演变、时间线实体化和新更改发布时，更新以下页面。  
 
@@ -28,7 +28,7 @@ web 正在不断发展，以改善用户体验、安全性和隐私性。  在�
 | 阻止混合内容下载 | [Chrome + 1](#release-comments) \ (Edge v86 \ )   |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息（包括 Google 的计划时序表进行此更改），请导航到 [Google 安全博客条目][GoogleBlogSecurity20200206]。  在 Chrome 之后的一个版本计划中，Microsoft 推出针对警告或阻止的文件类型的推出计划。  |  
 | 弃用 AppCache | [Chrome + 1](#release-comments) \ (Edge v86 \ )   |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息，请导航到 [WebDev 文档][WebDevAppCacheRemoval]。  针对 "弃用" 的 Microsoft 推出计划计划在 Chrome 之后的一个发布。  请求 [AppCache OriginTrial 令牌][AppCacheOriginTrial] 允许网站继续使用已弃用的 API，直到 Edge v90。  |  
 | 删除 Adobe Flash | Edge v88  |  | 此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息，请导航到 [Adobe Flash Chromium 路线图][ChromiumFlashRoadmapSupportRemoved]。  | 
-| 关闭和删除 FTP | Edge v88  | Edge v87 | 在 Edge v87 中，FTP 支持默认情况下处于关闭状态。  在 Edge v88 中，删除了 FTP 支持。  此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息，请导航到 [Chrome 平台状态条目][ChromePlatformStatus6246151319715840]。  |   
+| 关闭和删除 FTP | Edge v88  | Edge Beta v87 | 在 Edge Beta v87 中，默认情况下 FTP 支持处于关闭状态;在 Edge 稳定 v87 它将保持启用状态。  在 Edge v88 中，将完全删除 FTP 支持。  此更改在 Chromium 项目中发生，Microsoft Edge 基于该项目。  有关详细信息，请导航到 [Chrome 平台状态条目][ChromePlatformStatus6246151319715840]。  具有仍需要 FTP 支持的网站的企业可以通过将网站配置为使用 [IE 模式](https://docs.microsoft.com/deployedge/edge-ie-mode)继续使用 ftp。  |   
 
 ##### 发布评论  
 
@@ -64,3 +64,5 @@ web 正在不断发展，以改善用户体验、安全性和隐私性。  在�
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal/ "AppCache 删除"
 [AppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache OriginTrial 令牌"
+
+<!--todo:  cleanup links  -->  
