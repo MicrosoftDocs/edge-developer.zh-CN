@@ -504,6 +504,8 @@
               href: progressive-web-apps-edgehtml/xbox-considerations.md
         - name: Microsoft Store 中的 PWA
           href: progressive-web-apps-edgehtml/microsoft-store.md
+    - name: 编剧
+      href: playwright/index.md
     - name: Puppeteer
       href: puppeteer.md
     - name: Visual Studio
