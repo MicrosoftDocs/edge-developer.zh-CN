@@ -2,16 +2,16 @@
 description: 从 Internet Explorer 将用户移动到 Microsoft Edge
 title: 从 Internet Explorer 将用户移动到 Microsoft Edge
 author: MSEdgeTeam
-ms.date: 11/04/2020
+ms.date: 11/06/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: microsoft edge、兼容性、web 平台、internet explorer
-ms.openlocfilehash: 48f0f4121fb444d80603dcbb408397679c64753d
-ms.sourcegitcommit: 7b4441b7656c8317139650f904b70cc87797d37e
+ms.openlocfilehash: 2e1488359e405247e290ad8f6300c480a7e20af6
+ms.sourcegitcommit: 6ef48c8cda392c6bf8217cff5f696ac620d10739
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154328"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163205"
 ---
 # 从 Internet Explorer 将用户移动到 Microsoft Edge 
 
@@ -20,8 +20,7 @@ ms.locfileid: "11154328"
 本文介绍以下概念。  
 
 *   重定向的用户体验  
-*   如何将您的网站添加到 IE 兼容性列表  
-*   如何从 IE 兼容性列表中删除您的网站  
+*   如何请求列表更新  
     
 ## 为什么将网站添加到 IE 兼容性列表？  
 
@@ -32,7 +31,7 @@ IE 兼容性列表仅在发生以下操作时才会添加网站。
     
 ## 更新 IE 兼容性列表  
 
-IE 兼容性列表是 [microsoft.com][MicrosoftOfficialHome]上的一个 XML 文件。  列表会定期更新，以响应用户和网站开发人员请求添加或删除网站的请求。  对列表的更新会自动下载到用户计算机。  
+IE 兼容性列表是 [microsoft.com][MicrosoftOfficialHome]上的一个 XML 文件。  该列表会定期更新，以响应用户和网站开发人员请求以添加或删除网站。  对列表的更新会自动下载到用户计算机。  
 
 将以下信息通过电子邮件发送到 [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] ，以便在 IE 兼容性列表中添加或删除您的网站。    
 
@@ -42,9 +41,10 @@ IE 兼容性列表是 [microsoft.com][MicrosoftOfficialHome]上的一个 XML 文
 *   公司名称  
 *   街道地址  
 *   网站地址  
-<!--  *   Telephone number  -->  
-<!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
+> [!NOTE]
+> IE 兼容性列表设计为仅使用公共网站。  
+
 <!-- links -->  
 
 [MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "向 ietoedge@microsoft.com 发送电子邮件"  
