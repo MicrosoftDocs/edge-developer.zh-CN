@@ -3,17 +3,17 @@ description: 通过 Microsoft Edge WebView2 控件在 Win32、.NET、UWP 应用�
 title: Microsoft Edge WebView2 控件
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows 窗体、WinForms、WPF、.NET、WinUI、Project 留尼汪岛
-ms.openlocfilehash: 412ff112ab0eed69b63316b2916f849a32196363
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 9e5cc3a26f07a11c9fd5c21d62ecafc3ed5103f4
+ms.sourcegitcommit: c619168deea44cdec8ebc80ef9ddf1d91d5f726d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120373"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182181"
 ---
 # Microsoft Edge WebView2 简介  
 
@@ -27,15 +27,15 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 
 开发人员通常必须决定生成 web 应用程序还是本机应用程序。  决策在接触和接通电源之间的平衡。  Web 应用程序允许广泛访问。  作为 Web 开发人员，你可以在所有不同平台上重复使用大多数代码（如果不是所有代码）。  但是，本机应用程序利用整个本机平台的功能。  
 
-:::image type="complex" source="./media/WebView2/webnative.png" alt-text="什么是 Web 视图" lightbox="./media/WebView2/webnative.png":::
+:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web native" lightbox="./media/WebView2/webnative.png":::
    Web native  
 :::image-end:::  
 
 混合应用程序使开发人员能够享受这两个领域的最佳体验。  混合应用程序开发人员受益于 web 平台的 ubiquity 和强项，以及本机平台的强大功能和完整功能。  
 
-## WebView2 优惠   
+## WebView2 优惠  
 
-:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="什么是 Web 视图" lightbox="./media/WebView2/webviewreasons.png":::
+:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Web 视图原因" lightbox="./media/WebView2/webviewreasons.png":::
    Web 视图原因  
 :::image-end:::  
 
@@ -97,22 +97,24 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 
 常规可用性 \ (GA \ ) 或预览版版本在以下编程环境中可用。  
 
-*   Win32 C/c + + \ (GA \ ) 
-*   .NET Framework 4.6.2 或更高版本 \ (Preview \ )  
-*   .NET Core 3.0 或更高版本 \ (Preview \ ) 
-*   [WinUI 3.0][UwpToolkitsWinui3] \ (Preview \ ) 
+*   Win32 C/c + + \ (GA \ )   
+*   .NET Framework 4.6.2 或更高版本 \ (Preview \ )   
+*   .NET Core 3.0 或更高版本 \ (Preview \ )   
+*   [WinUI 3.0][UwpToolkitsWinui3] \ (Preview \ )   
 
 你可以在以下版本的 Windows 上运行 WebView2 应用程序。  
 
 *   Windows 10  
 *   Windows 8.1  
-*   Windows 8  
-*   Windows 7  
+*   Windows 7 \ * \ *  
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   WindowsServer 2012  
-*   Windows Server 2012R2  
-*   Windows Server 2008 R2  
+*   Windows Server 2012 R2  
+*   Windows Server 2008 R2 \ * \ *  
+
+> [!IMPORTANT]
+> \ * \ * WebView2 支持 Windows 7 和 Windows Server 2008 R2 与 Microsoft Edge 具有相同的支持周期。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。  
 
 ## 后续步骤  
 
@@ -140,7 +142,7 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 [Webview2ConceptsSecurity]: ./concepts/security.md "开发安全 WebView2 应用程序的最佳做法 |Microsoft 文档"  
 [Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "管理用户数据文件夹 |Microsoft 文档"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 |Microsoft 文档"  
-[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "WebView2 | 入门 |Microsoft 文档"   
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "WebView2 | 入门 |Microsoft 文档"  
 [Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Windows Forms 应用中的 WebView2 入门 (预览版) |Microsoft 文档"  
 [Webview2GettingstartedWinui]: ./gettingstarted/winui.md "WebView2 中的 "开始" WinUI3 () 预览 "|Microsoft 文档"  
 [Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "WPF 中的 WebView2 入门 (预览版) |Microsoft 文档"  
@@ -148,7 +150,9 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 [Webview2HowtoWebdriver]: ./howto/webdriver.md "通过 Microsoft Edge 驱动程序自动化和测试 WebView2 |Microsoft 文档"  
 [Webview2Releasenotes]: ./releasenotes.md "WebView2 SDK 的发行说明 |Microsoft 文档"  
 
-[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Windows UI 库3预览版 2 (2020 年7月) |Microsoft 文档"  
+[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Windows UI 库3预览版 2 (2020 年7月) |Microsoft 文档"  
+
+[DeployedgeMicrosoftEdgeSupportedOS]: /deployedge/microsoft-edge-supported-operating-systems "Microsoft Edge 支持的操作系统 |Microsoft 文档"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例-MicrosoftEdge/WebView2Samples |GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈-MicrosoftEdge/WebViewFeedback |GitHub" 

@@ -7,12 +7,12 @@ ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、vs 代码、visual studio 代码、调试器
-ms.openlocfilehash: 58bcbc927505f4c5a1f493349c3e9475cb75e1be
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+ms.openlocfilehash: d9f33a17db7083a6a7cbb013dbf9886755f92c5e
+ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695864"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182299"
 ---
 # Microsoft Edge 与代码扩展的调试器  
 
@@ -26,37 +26,37 @@ ms.locfileid: "10695864"
 
 ## 启动 Microsoft Edge  
 
-在 `Ctrl` + `Shift` + `D` Windows 上或 `Command` + `Shift` + `D` **活动栏**中的 macOS \ ) 导航到 &quot;调试&quot; 视图 \ (。  如果 VS 代码中没有任何配置，请按 `F5` Windows 或 macOS 或选择绿色的 &quot; **播放** &quot; 按钮。  在下拉列表中选择 &quot; **边缘** &quot;。  你应该会看到 `launch.json` 具有以下配置的文件。  
+在 `Ctrl` + `Shift` + `D` Windows 上或 `Command` + `Shift` + `D` **活动栏**中的 macOS \ ) 导航到 "调试" 视图 \ (。  如果 VS 代码中没有任何配置，请按 `F5` Windows 或 macOS 或选择绿色的 " **播放** " 按钮。  在下拉列表中选择 " **边缘** "。  你应该会看到 `launch.json` 具有以下配置的文件。  
 
 ```json
 {
-    &quot;version&quot;: &quot;0.2.0&quot;,
-    &quot;configurations&quot;: [
+    "version": "0.2.0",
+    "configurations": [
         {
-            &quot;type&quot;: &quot;edge&quot;,
-            &quot;request&quot;: &quot;launch&quot;,
-            &quot;name&quot;: &quot;Launch Edge against localhost&quot;,
-            &quot;url&quot;: &quot;http://localhost:8080&quot;,
-            &quot;webRoot&quot;: &quot;${workspaceFolder}&quot;
+            "type": "edge",
+            "request": "launch",
+            "name": "Launch Edge against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
 ```  
 
-如果您按 `F5` Windows 或 macOS 或再次选择绿色的 &quot; **播放** &quot; 按钮，则 VS 代码将启动 Microsoft Edge \ (EdgeHTML \ ) ，您可以 `8080` 直接从 VS 代码调试在端口上运行的任何 web 项目！  
+如果您按 `F5` Windows 或 macOS 或再次选择绿色的 " **播放** " 按钮，则 VS 代码将启动 Microsoft Edge \ (EdgeHTML \ ) ，您可以 `8080` 直接从 VS 代码调试在端口上运行的任何 web 项目！  
 
 ### Microsoft Edge (Chromium)  
 
-如果你想要启动 Microsoft Edge \ (Chromium \ ) ，Microsoft Edge 的下一版本，而不是 Microsoft Edge \ (EdgeHTML \ ) ，只需将 `version` 属性添加到你的现有配置中，使用 Microsoft edge \ (Chromium \ ) 启动 \ (`dev` 、 `beta` 或 \ ) `canary` 。 下面的配置将启动 Chromium 版本的 Microsoft Edge \ (\ ) 。  
+如果你想要启动 microsoft edge \ (Chromium \ ) ，microsoft edge 的下一版本，而不是 microsoft edge \ (EdgeHTML \ ) ，只需将一个 `version` 属性添加到你的现有配置中，使用 microsoft edge \ (Chromium \ ) 来启动 \ (`stable` 、 `dev` 、 `beta` 或 `canary` \ ) 。 下面的配置将启动 Chromium 版本的 Microsoft Edge \ (\ ) 。  
 
 ```json
 {
-    &quot;type&quot;: &quot;edge&quot;,
-    &quot;request&quot;: &quot;launch&quot;,
-    &quot;version&quot;: &quot;canary&quot;,
-    &quot;name&quot;: &quot;Launch Edge against localhost&quot;,
-    &quot;url&quot;: &quot;http://localhost:8080&quot;,
-    &quot;webRoot&quot;: &quot;${workspaceFolder}"
+    "type": "edge",
+    "request": "launch",
+    "version": "canary",
+    "name": "Launch Edge against localhost",
+    "url": "http://localhost:8080",
+    "webRoot": "${workspaceFolder}"
 }
 ```  
 
