@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、Windows 窗体、WinForms、WPF、.NET、WinUI、Project 留尼汪岛
-ms.openlocfilehash: 9e5cc3a26f07a11c9fd5c21d62ecafc3ed5103f4
-ms.sourcegitcommit: c619168deea44cdec8ebc80ef9ddf1d91d5f726d
+ms.openlocfilehash: 02d17b05364f02f26a4917b65ac497156be02b2e
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182181"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182365"
 ---
 # Microsoft Edge WebView2 简介  
 
@@ -97,10 +97,11 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 
 常规可用性 \ (GA \ ) 或预览版版本在以下编程环境中可用。  
 
-*   Win32 C/c + + \ (GA \ )   
-*   .NET Framework 4.6.2 或更高版本 \ (Preview \ )   
-*   .NET Core 3.0 或更高版本 \ (Preview \ )   
-*   [WinUI 3.0][UwpToolkitsWinui3] \ (Preview \ )   
+*   Win32 C/c + + \ (GA \ ) 
+*   .NET Framework 4.6.2 或更高版本
+*   .NET Core 3.1 或更高版本
+*   .NET 5
+*   [WinUI 3.0][UwpToolkitsWinui3] \ (Preview \ ) 
 
 你可以在以下版本的 Windows 上运行 WebView2 应用程序。  
 
@@ -130,7 +131,8 @@ Microsoft Edge WebView2 控件使你能够在本机应用程序中嵌入 web 技
 #### How-To 指南  
 
 *   [如何通过 WebView2 进行调试][Webview2HowtoDebug]  
-*   [通过 Microsoft Edge 驱动程序自动化和测试 WebView2][Webview2HowtoWebdriver]  
+*   [通过 Microsoft Edge 驱动程序自动化和测试 WebView2][Webview2HowtoWebdriver]
+
 
 ## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  
 

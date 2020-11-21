@@ -3,21 +3,21 @@ description: WebView2 for WinForms 应用的入门指南
 title: WebView2 for WinForms 应用入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、WebView2、Web 视图、web 视图、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: c4092c545c24bf09667a5090251b51b96259efc2
-ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
+ms.openlocfilehash: f4768c38f293d1931e625136ea7068a61176541e
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162640"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182386"
 ---
-# Windows 窗体中的 WebView2 入门 (预览)   
+# Windows 窗体中的 WebView2 入门
 
-在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2 (preview) ](/microsoft-edge/webview2/index)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.winforms)。  
+在本文中，开始创建你的第一个 WebView2 应用并了解 [WebView2](/microsoft-edge/webview2/index)的主要功能。  有关单个 Api 的详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.winforms)。  
 
 ## 必备条件  
 
@@ -47,7 +47,7 @@ ms.locfileid: "11162640"
 
 ## 步骤 2-安装 WebView2 SDK
 
-接下来，将 WebView2 SDK 添加到项目。  对于预览，使用 Nuget 安装 WebView2 SDK。  
+接下来使用 NuGet 将 WebView2 SDK 添加到项目。
 
 1. 打开项目上的上下文菜单 \ (右键单击 "\ ) "，然后选择 " **管理 NuGet 程序包 ...**"。  
 
@@ -56,12 +56,9 @@ ms.locfileid: "11162640"
 
 1. `Microsoft.Web.WebView2`在搜索栏中输入。  从搜索结果中选择 " **WebView2** "。  
 
-    > [!IMPORTANT]
-    > 确保选中 " **包括预**发布"，选择 " **版本**" 中的预发布程序包，然后选择 " **安装**"。  
-
     ![nuget.exe](./media/installnuget.png)
 
-全部设置为使用 WebView2 API 开始开发应用程序。  选择 `F5` 以生成并运行项目。  正在运行的项目显示一个空窗口。  
+全部设置为开始使用 WebView2 API 开发应用程序。  选择 `F5` 以生成并运行项目。  正在运行的项目显示一个空窗口。  
 
 ![emptyApp](./media/winforms-emptyApp.png)
 
@@ -96,11 +93,11 @@ ms.locfileid: "11162640"
 
 将更多控件从工具箱添加到 Windows 窗体，然后相应地处理窗口大小调整事件。
 
-1. 在 **Windows 窗体设计器** 中打开 **工具箱**
+1. 在**Windows 窗体设计器**中，打开 **"工具箱**"
 1. 将 **TextBox** 拖放到 Windows Forms 应用中。 **TextBox** `addressBar` 在 "**属性" 选项卡**中命名文本框。
 1. 将 **按钮** 拖放到 Windows 窗体应用中。 将**按钮**中的文本更改为 `Go!` 并在**Button** `goButton` "**属性" 选项卡**中命名该按钮。
 
-    应用在设计器中的外观应如下所示：
+    应用在设计器中的外观应如下图所示。
     
     ![设计器](./media/winforms-designer.png)
 
@@ -147,7 +144,7 @@ private void Form_Resize(object sender, EventArgs e)
     }
     ```  
 
-选择 `F5` 生成并运行项目。  在地址栏中输入新的 URL，然后单击 " **转到**"。  例如，enter `https://www.bing.com` 。  确认 WebView2 控件导航到 URL。  
+选择 `F5` 生成并运行项目。  在地址栏中输入新的 URL，然后选择 " **转到**"。  例如，enter `https://www.bing.com` 。  确认 WebView2 控件导航到 URL。  
 
 > [!NOTE]
 > 确保在地址栏中输入完整的 URL。 `ArgumentException`如果 URL 不以 or 开头的 URL，则会引发 `http://` `https://`
@@ -156,7 +153,7 @@ private void Form_Resize(object sender, EventArgs e)
 
 ## 步骤 6-导航事件  
 
-托管 WebView2 控件的应用程序将侦听在导航到网页期间由 WebView2 控件引发的以下事件。  
+在网页导航期间，WebView2 控件引发事件。 托管 WebView2 控件的应用程序将侦听以下事件。  
 
 * `NavigationStarting`  
 * `SourceChanged`  
@@ -207,7 +204,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 ## 步骤 7-脚本  
 
-在运行时，你可以使用主机应用程序将 JavaScript 代码注入 WebView2 控件。  插入的 JavaScript 将应用于所有新的顶级文档和任何子框架，直到删除了 JavaScript。  插入的 JavaScript 将在创建全局对象后以及 HTML 文档中包含的任何其他脚本运行之前运行。  
+在运行时，你可以使用主机应用程序将 JavaScript 代码注入 WebView2 控件。  插入的 JavaScript 将应用于所有新的顶级文档和任何子框架，直到删除了 JavaScript。  插入的 JavaScript 在创建全局对象之后以及 HTML 文档中包含的任何脚本之前运行。  
 
 导航到非 HTTPS 网站时，可以使用脚本来提醒用户。  修改该 `EnsureHttps` 函数，以便它使用 [ExecuteScriptAsync]() 方法将脚本插入 web 内容。  
 
@@ -255,7 +252,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
 
-1. 初始化 **CoreWebView2** 后，注册一个事件处理程序以响应 `WebMessageReceived` 。  在 " `Form1.cs` 更新" `InitializeAsync` 和 " `UpdateAddressBar` 使用以下代码片段添加" 中。  
+1. 初始化 **CoreWebView2** 后，注册一个事件处理程序以响应 `WebMessageReceived` 。  在中 `Form1.cs` ， `InitializeAsync` `UpdateAddressBar` 使用以下代码段进行更新和添加。  
 
     ```csharp
     async void InitializeAsync()
@@ -298,9 +295,11 @@ async void InitializeAsync()
 
 ## 后续步骤 
 
-* 签出 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库，获取 WebView2's 功能的全面示例
-* 签出 [api 参考](/dotnet/api/microsoft.web.webview2.winforms.webview2) 了解有关我们的 api 的更多详细信息
-* 签出 [WebView2 资源](../index.md#next-steps) 列表以了解有关 WebView2 的详细信息
+若要继续了解有关 WebView2 的详细信息，请导航到以下资源。
+
+* [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples)存储库有一个全面的 WebView2's 功能示例。
+* 有关我们的 Api 的更多详细信息，请 [参阅 API 参考](/dotnet/api/microsoft.web.webview2.winforms.webview2) 。
+* [WebView2 资源](../index.md#next-steps)。
 
 
 ## 与 Microsoft Edge Web 上的 Web Edge 团队取得联系  

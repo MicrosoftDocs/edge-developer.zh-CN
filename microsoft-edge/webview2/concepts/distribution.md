@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 89e53c43c3550d0a7a3707381cc4c76be111db28
-ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
+ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182286"
+ms.locfileid: "11182407"
 ---
 # 使用 WebView2 的应用分发  
 
@@ -125,14 +125,12 @@ Web 不断发展。  长时间 WebView2 运行时保持最新，为你提供最�
 
 非稳定的 Microsoft Edge 通道 \ (Beta/Dev/sneak \ ) 提供一种可快速查看 WebView2 运行时中所进入的内容的功能。  与开发 Microsoft Edge 网站一样，你应该定期测试你的 WebView2 应用。  针对其中一个非稳定信道测试你的 WebView2 应用，如果出现问题，请更新你的应用或 [报告问题][GithubMicrosoftedgeWebviewfeedback] 。 通常情况下，推荐使用开发人员和 Beta。  若要帮助确定哪种频道正确，请导航到 [Microsoft Edge 频道概述][DeployEdgeMicrosoftEdgeChannels]。  你可以在你的测试环境中下载 [不稳定的 Microsoft Edge 通道][DownloadNonstableEdge] ，并使用 `regkey` 或环境变量指示测试应用的通道首选项。  有关详细信息，请导航到 [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]。  您也可以使用 [WebDriver][HowtoWebdriver] 自动执行 WebView2 测试。
 
-## 固定版本分发模式  
-
-> [!NOTE]
-> 固定版本分发模式位于公共预览版中。  
-
-固定版本分发模式以前已命名为 "携带"。  
+## 固定版本分发模式   
 
 对于具有严格兼容性要求的受限环境，请考虑使用固定版本分发模式。  使用固定版本分发模式选择并打包特定版本的 WebView2 运行时。  你可以指定你的应用的运行时更新的计时。  固定版本分发模式不会接收任何自动更新。 计划更新你的应用和运行时。  
+
+> [!NOTE] 
+> 固定版本分发模式以前称为 "携带"。  
 
 若要使用 "固定版本" 模式，请完成以下操作
 

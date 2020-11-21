@@ -3,21 +3,21 @@ description: 了解 WebView2 的下一步
 title: Microsoft Edge Web Edge Web 图2的路线图
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 52a2f6d9ef3447955554a5507c3eaab39e6b6a9e
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120366"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182358"
 ---
 # Microsoft Edge WebView2 路线图  
 
-##### 上次更新时间：2020年10月  
+##### 上次更新时间：2020年11月  
 
 WebView2 控件允许开发人员在其本机应用程序中嵌入 web 技术。  下页概述了 WebView2 的预期路线图。  
 
@@ -61,7 +61,7 @@ WebView2 团队正在制定后续更新的主要成果。
 
 ## 已修复版本  
 
-[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。  当前在预览版下，它的目标是2020年第4季度正式上市。  
+[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。  固定版本已达到常规可用性 \ (GA \ ) 。  
 
 ## 常规可用性  
 
@@ -71,7 +71,7 @@ Win32 C/c + + SDK 已达到 GA。
 
 ### .NET  
 
-.NET SDK 包装 Win32 C/c + + SDK。  .NET SDK 预计将在第4季度2020中的 Win32 C/c + + GA 之后正式推出。  
+.NET SDK 已上市。 
 
 ### WinUI 3.0  
 

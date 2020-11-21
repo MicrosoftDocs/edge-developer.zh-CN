@@ -3,20 +3,20 @@ description: 添加到 Microsoft Edge (Chromium 的功能在2019年3月) DevTool
 title: Microsoft Edge (Chromium 中的新增功能 2019 3 月) DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: bf1919b0ab46df378880d664dd4e59aee96605e5
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+ms.openlocfilehash: 0b592eddbd68b3bbd8ff0a9edf9a1253bd79677e
+ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645320"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182510"
 ---
 # Microsoft Edge (Chromium) DevTools 中的新增功能
 
-非常感谢你试用下一版本的 Microsoft Edge 的预览版！ 在此版本中，我们通过使用 Chromium 开源项目，在 Microsoft Edge 的基础 web 平台中进行了重大转变。 通过此更改，你可以更轻松地在 Microsoft Edge 中构建和测试你的网站，并确保即使你的用户在不同的基于 Chromium 的浏览器中浏览（如 Google Chrome、Vivaldi、Opera 或 Brave），它们仍将按预期工作。
+非常感谢你试用新的 Microsoft Edge 预览！ 在此版本中，我们通过使用 Chromium 开源项目，在 Microsoft Edge 的基础 web 平台中进行了重大转变。 通过此更改，你可以更轻松地在 Microsoft Edge 中构建和测试你的网站，并确保即使你的用户在不同的基于 Chromium 的浏览器中浏览（如 Google Chrome、Vivaldi、Opera 或 Brave），它们仍将按预期工作。
 
 ## 新的 Microsoft Edge (Chromium) DevTools
 
@@ -24,7 +24,7 @@ ms.locfileid: "10645320"
 
 ![Microsoft Edge (Chromium) DevTools](./media/devtools.png)
 
-如果你要签出下一版本的 Microsoft Edge，并且主要是在 Microsoft Edge (EdgeHTML) 中开发的，我们将获得一些非常好的新工具，让你能够更轻松、更快地在 Microsoft Edge 中构建和测试你的网站！ 若要了解有关这些新工具的详细信息，请查看 [Microsoft Edge (Chromium) DevTools 指南](../devtools-guide-chromium.md)。
+如果你要签出新的 Microsoft Edge，并且主要是在 Microsoft Edge (EdgeHTML) 中开发的，我们将获得一些非常有用的工具，让你能够更轻松、更快地在 Microsoft Edge 中构建和测试网站！ 若要了解有关这些新工具的详细信息，请查看 [Microsoft Edge (Chromium) DevTools 指南](../devtools-guide-chromium.md)。
 
 ## 适用于 DevTools 的全新深色和浅色主题
 
@@ -58,7 +58,7 @@ ms.locfileid: "10645320"
 
 通过 Microsoft Edge 基础 web 平台中的班次，Edge DevTools 协议将不会收到任何进一步的更新。 Microsoft Edge (Chromium) DevTools 将使用 Chrome DevTools 协议或 CDP。 若要参考 CDP 中的域和方法的文档，请参阅 [cdp 查看器](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility)。
 
-在下一版本的 Microsoft Edge 中，将不支持任何带前缀的方法 `ms` 。 若要了解有关如何在 Microsoft Edge (Chromium) 中使用 CDP 的详细信息，请参阅 [DevTools 协议 (Chromium) ](../devtools-protocol-chromium.md)。
+在新的 Microsoft Edge 中，任何带前缀的方法 `ms` 将不受支持。 若要了解有关如何在 Microsoft Edge (Chromium) 中使用 CDP 的详细信息，请参阅 [DevTools 协议 (Chromium) ](../devtools-protocol-chromium.md)。
 
 ## 已知问题
 
