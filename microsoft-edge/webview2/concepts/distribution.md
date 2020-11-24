@@ -3,17 +3,17 @@ description: 使用 Microsoft Edge WebView2 发布应用时的分发选项
 title: Microsoft Edge WebView2 应用的分发
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+ms.openlocfilehash: 0cbaaeade03feac766647c55bb5edabfe8e8456e
+ms.sourcegitcommit: 7b16c3e6eb458e0b2458279c2498597fb227bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182407"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182907"
 ---
 # 使用 WebView2 的应用分发  
 
@@ -58,7 +58,7 @@ WebView2 运行时是可再发行的运行时，用作 WebView2 应用的支持 
     
 当前，引导程序和独立安装程序仅支持每台计算机安装，这需要提升。  如果安装程序运行时没有提升权限，系统将提示用户提升权限。  
 
-使用以下工作流以确保在你的应用启动之前已安装运行时。  你可以根据你的方案调整工作流。  示例代码在 [Samples 存储库] [GitHubMicrosoftedgeWebView2samplesWebview2Deployment] 中可用。  
+使用以下工作流以确保在你的应用启动之前已安装运行时。  你可以根据你的方案调整工作流。  示例代码可在 [示例][GitHubMicrosoftedgeWebView2samplesWebview2Deployment]存储库中使用。  
 
 #### 仅联机部署  
 
@@ -195,6 +195,6 @@ Web 不断发展。  长时间 WebView2 运行时保持最新，为你提供最�
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈 |GitHub"  
 
-[GitHubMicrosoftMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 部署-MicrosoftEdge/WebView2Samples |GitHub"  
+[GitHubMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 部署-MicrosoftEdge/WebView2Samples |GitHub"  
 
 [MicrosoftPlayReady]: https://www.microsoft.com/playready "Microsoft PlayReady"  
