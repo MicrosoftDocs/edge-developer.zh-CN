@@ -7,12 +7,12 @@ ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0e4b1972918797d69e2068236f6d1336c54cc858
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: b972468ad21f3a64985a00aecbe29836032b3334
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133962"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190003"
 ---
 # DevTools (Microsoft Edge 87) 中的新增功能  
 
@@ -41,14 +41,14 @@ DevTools 现在支持在顶部面板和底部面板之间移动工具。  通过
    :::column span="":::
       若要将任何顶部工具移到底部，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **移至底部**"。  
       
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="移至底部" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          移至底部  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       若要将任何底部工具移到顶部，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **移至页首**"。  
       
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/move-to-top.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="移到页首" lightbox="../../media/2020/10/move-to-top.msft.png":::
          移到页首  
       :::image-end:::  
    :::column-end:::
@@ -56,7 +56,11 @@ DevTools 现在支持在顶部面板和底部面板之间移动工具。  通过
 
 ## 使用网络控制台保存和导出  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="具有非本地化筛选器的网络工具" 旁边的复选框。  有关 **网络控制台**的详细信息，请导航以 [启用网络控制台实验功能][DevtoolsExperimentalFeaturesEnableNetworkConsole]。  此次实验现在支持下列操作。  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
+   实验性功能  
+:::image-end:::  
+
+**网络控制台**工具现在改进了与[Postman v 2.1][PostmanSchemaJsonCollectionv210Index]和[OpenAPI v2][SwaggerSpecificationV2]架构的兼容性。  若要启用实验，请导航到 ["启用实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] "，然后选择 " **启用网络控制台**" 旁边的复选框。  有关 **网络控制台**的详细信息，请导航以 [启用网络控制台实验功能][DevtoolsExperimentalFeaturesEnableNetworkConsole]。  此次实验现在支持下列操作。  
 
 *   保存和导出集合和环境。  
 *   在 **网络控制台** 工具中编辑和导出环境变量集。  
@@ -65,12 +69,12 @@ DevTools 现在支持在顶部面板和底部面板之间移动工具。  通过
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="为新环境输入名称" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
          为新环境输入名称  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="为新环境选择格式" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
          为新环境选择格式  
       :::image-end:::  
    :::column-end:::
@@ -78,17 +82,34 @@ DevTools 现在支持在顶部面板和底部面板之间移动工具。  通过
 
 ## 改进的 CSS 网格工具  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="具有非本地化筛选器的网络工具" [CSS 网格][DevtoolsCssGrid]"。  若要在 Chromium open 源代码项目中查看此功能的历史记录，请导航到 "问题 [#1047356][CR1047356]"。  此外，Microsoft Edge DevTools 团队正与 Chrome DevTools 团队和 Chromium 社区协作，将新的 flexbox 工具功能添加到 DevTools。  有关 Chromium open source 项目中的 flexbox 工具的更新，请导航到 "问题 [#1136394][CR1136394]"。  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
+   实验性功能  
+:::image-end:::  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+Microsoft Edge DevTools 现在支持用于检查、查看和调试 CSS 网格的以下功能。  
+
+*   使用 " **检查** " 工具显示简化的网格覆盖，或获取更详细的具有永久重叠的信息。  
+*   若要启用永久网格覆盖，请选择 " **元素** " 工具中网格容器元素旁边的网格图标，或在 **布局** 工具中选择网格。  
+*   你可以为多个网格启用永久覆盖。  
+*   新的 **布局** 工具使你可以轻松地切换网格覆盖并配置每个网格的外观和内容。  
+    
+默认情况下，功能处于打开状态。  有关这些功能的详细信息，请导航到 " [CSS 网格][DevtoolsCssGrid]"。  若要在 Chromium open 源代码项目中查看此功能的历史记录，请导航到 "问题 [#1047356][CR1047356]"。  此外，Microsoft Edge DevTools 团队正与 Chrome DevTools 团队和 Chromium 社区协作，将新的 flexbox 工具功能添加到 DevTools。  有关 Chromium open source 项目中的 flexbox 工具的更新，请导航到 "问题 [#1136394][CR1136394]"。  
+
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="带有网格的布局工具" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    带有网格的**布局**工具  
 :::image-end:::  
 
 ## 在 "设置" 中自定义键盘快捷方式  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="具有非本地化筛选器的网络工具" 旁边的复选框。  有关自定义和编辑快捷方式的详细信息，请导航以 [启用键盘快捷方式编辑器实验功能][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]。  若要在 Chromium open 源代码项目中查看此功能的实时更新，请导航到 "问题 [#174309][CR174309]"。  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
+   实验性功能  
+:::image-end:::  
 
-:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+现在，你可以自定义 DevTools 中任何操作的键盘快捷方式。  由于 Microsoft Edge 版本84，你可以在**Visual Studio 中选择 Visual Studio 代码**和 DevTools ([键盘快捷方式][DevtoolsCustomizeShortcuts]的**默认) **预设。  从 Microsoft Edge 版本87开始，你可以打开 " **启用键盘快捷方式编辑器** " 体验，进一步 [自定义键盘快捷方式][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]。  
+
+若要启用实验，请导航到 ["启用实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] "，然后选中 " **启用键盘快捷方式编辑器**" 旁边的复选框。  有关自定义和编辑快捷方式的详细信息，请导航以 [启用键盘快捷方式编辑器实验功能][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]。  若要在 Chromium open 源代码项目中查看此功能的实时更新，请导航到 "问题 [#174309][CR174309]"。  
+
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="用于暂停脚本的自定义快捷方式" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    用于暂停脚本的自定义快捷方式  
 :::image-end:::  
 
@@ -104,12 +125,12 @@ Visual studio 代码和**网络 For Visual Studio 代码**扩展的**元素**现
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="在完整浏览器模式下使用扩展屏幕截图" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
          在完整浏览器模式下使用扩展屏幕截图  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="在无外设模式的屏幕截图中使用扩展" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
          在无外设模式的屏幕截图中使用扩展  
       :::image-end:::  
    :::column-end:::
@@ -133,12 +154,12 @@ Visual studio 代码和**网络 For Visual Studio 代码**扩展的**元素**现
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="打开 "WebAuthn 工具"" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
          打开 " **WebAuthn** 工具"  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="WebAuthn 工具" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
          **WebAuthn** 工具  
       :::image-end:::  
    :::column-end:::
@@ -152,12 +173,12 @@ Visual studio 代码和**网络 For Visual Studio 代码**扩展的**元素**现
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开 "计算的边栏" 窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          打开 " **计算的边栏** " 窗格  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="计算的边栏窗格" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
          **计算的边栏** 窗格  
       :::image-end:::  
    :::column-end:::
@@ -167,7 +188,7 @@ Visual studio 代码和**网络 For Visual Studio 代码**扩展的**元素**现
 
 若要使用较少的滚动查看已应用的 CSS，请按 **计算** 窗格中的类别对 css 属性进行分组。  你还可以在检查你的 CSS 时有选择地将焦点放在一组相关的属性上。  从 " **元素** " 工具中，选择一个元素。  若要组 \ (或取消组合 ) CSS 属性，请切换 " **组** " 复选框。  若要在 Chromium open 源代码项目中查看此功能的实时更新，请导航到 "问题" [#1096230][CR1096230]、" [#1084673][CR1084673]" 和 " [#1106251][CR1106251]"。  
 
-:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
+:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="对 CSS 属性进行分组" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    对 CSS 属性进行分组  
 :::image-end:::  
 
@@ -189,7 +210,7 @@ performance.mark('end');
 
 然后，打开 " [性能][DevtoolsGuideChromiumEvaluatePerformanceReference] " 工具并导航到 " **计时" 部分** ，以记录你的 JavaScript 代码。  `performance.mark()`您添加的事件现在将显示在录制中。  
 
-:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/perf-mark.msft.png":::
+:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="性能。标记事件" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` 事件  
 :::image-end:::  
 
@@ -197,7 +218,7 @@ performance.mark('end');
 
 使用网络工具中的 "新建" `resource-type` 和 " `url` 关键字" 筛选网络请求。 **Network**  例如，使用 `resource-type:image` 重点关注图像的网络请求。  
 
-:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="资源类型筛选器" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    资源类型筛选器  
 :::image-end:::  
 
@@ -209,7 +230,7 @@ performance.mark('end');
 
 查看 " `reporting to` **安全 & 隔离** " 部分下的 "跨起源 Embedder 策略 \ (COEP \ ) 和跨源 Opener 策略 \ (合作基金 \ ) 终结点。  [报告 API][MdnReportingApi]定义了 `Report-To` 一个新的 HTTP 标头，为您提供了一种指定浏览器发送警告和错误的服务器终结点的方法。  若要在 Chromium open 源代码项目中查看此功能的实时更新，请导航到 "问题 [#1051466][CR1051466]"。  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="报告到终结点" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    该 `reporting to` 终结点  
 :::image-end:::  
 
@@ -217,15 +238,23 @@ performance.mark('end');
 
 DevTools 现在显示 `report-only` 设置为 "模式" 的 COEP 和市场活动的标签 `report-only` 。  若要在 Chromium open 源代码项目中查看此功能的实时更新，请导航到 "问题 [#1051466][CR1051466]"。  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="仅报告模式标签" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    `report-only`模式标签  
 :::image-end:::  
 
 ### 查看和修复 CSS 概述工具中的颜色对比度问题  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="具有非本地化筛选器的网络工具" 工具中的元素，请在列表中选择一个元素。  为了帮助解决对比度问题，Microsoft Edge DevTools [自动提供颜色建议][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]。  若要在 Chromium open 源代码项目中查看此功能的实时更新，请导航到 "问题 [#1120316][CR1120316]"。  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
+   实验性功能  
+:::image-end:::  
 
-:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/css-overview.msft.png":::
+**CSS 概述**工具现在显示页面上出现颜色对比度问题的元素列表。  下面的演示页面包含颜色对比度问题的示例。  
+
+[CSS 概述易于访问的颜色演示][GlitchCssOverviewAccessibleColorsDemo]  
+
+若要启用此实验，请在 "**设置**  >  **实验**" 下，选择 " **CSS 概述**" 复选框。  若要查看具有颜色对比度问题的元素的列表，请在 **对比度问题**中选择 " **文本**"。  若要打开 " **元素** " 工具中的元素，请在列表中选择一个元素。  为了帮助解决对比度问题，Microsoft Edge DevTools [自动提供颜色建议][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]。  若要在 Chromium open 源代码项目中查看此功能的实时更新，请导航到 "问题 [#1120316][CR1120316]"。  
+
+:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="低颜色对比度问题" lightbox="../../media/2020/10/css-overview.msft.png":::
    低颜色对比度问题  
 :::image-end:::  
 

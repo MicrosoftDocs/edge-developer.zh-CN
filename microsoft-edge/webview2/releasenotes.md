@@ -3,17 +3,17 @@ description: Microsoft Edge WebView2 SDK 的发行说明
 title: Microsoft Edge WebView2 for Win32、WPF 和 WinForms 的发行说明
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 11/24/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: f0be7602bd5fe5cf8ede5158b12cb0b957247c20
-ms.sourcegitcommit: 2d2cef9046f85ae731f8aa80b565546fcfe72e90
+ms.openlocfilehash: f0ddcbfe2d72c1285e6d4a42c3cb796b93495c55
+ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "11182840"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191441"
 ---
 # WebView2 SDK 的发行说明  
 
@@ -26,7 +26,7 @@ WebView2 团队在六周的节奏上更新 [WEBVIEW2 SDK][NuGetGallery] 。  查
 
 发布日期：2020年11月23日  
 
-[NuGet 程序包][NuGetGallery1.0.707-prerelease] \ |最低 Microsoft Edge 版本89.0.707.0。  
+[NuGet 程序包][NuGetGallery1.0.707-prerelease] \ |最低 Microsoft Edge 版本86.0.616.0。  
 
 #### 常规  
 
@@ -51,8 +51,9 @@ WebView2 团队在六周的节奏上更新 [WEBVIEW2 SDK][NuGetGallery] 。  查
 
 ###### 功能  
 
-* 在 .NET Core 3.1 + 和 .NET 5 中启用 WinForms 设计器。  
-* 改进了 .NET cookie 管理。  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\ ) 。  
+*   在 .NET Core 3.1 + 和 .NET 5 中启用 WinForms 设计器。  
+*   改进了 .NET cookie 管理。  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\ ) 。  
+*   重命名 `CoreWebView2Ready` 为 [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]。
 
 ###### Bug 修复
 
@@ -64,7 +65,7 @@ WebView2 团队在六周的节奏上更新 [WEBVIEW2 SDK][NuGetGallery] 。  查
 
 发布日期：2020年11月20日  
 
-[NuGet 程序包][NuGetGallery1.0.664.37] \ |最低 WebView2 运行时版本86.0.664.37。  
+[NuGet 程序包][NuGetGallery1.0.664.37] \ |最低 WebView2 运行时版本86.0.616.0。  
 
 #### 常规  
 
@@ -467,6 +468,8 @@ WebView2 SDK 是正式的 Win32 c + + Beta 版本，其中包含来自反馈的�
 [DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.destroywindowcore "WebView2 DestroyWindowCore (HandleRef) 方法 () |Microsoft 文档"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed]: /dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed "acceleratorkeypressed | | webview2 |Microsoft 文档"  
+
+[DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]: /dotnet/api/microsoft.web.webview2.core.corewebview2initializationcompletedeventargs "CoreWebView2InitializationCompletedEventArgs 类 |Microsoft 文档"  
 
 [ReferenceWin32Icorewebview2Addhostobjecttoscript09538]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript?view=webview2-0.9.538&preserve-view=true "AddHostObjectToScript-接口 ICoreWebView2 |Microsoft 文档"  
 [ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived 接口 ICoreWebView2Experimental |Microsoft 文档"  

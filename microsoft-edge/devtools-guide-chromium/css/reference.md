@@ -7,12 +7,12 @@ ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a4c8d5ed7f3cf84f20b4b73531f871e17921b186
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 707841901046db6a7e957771164ffb868900bdd8
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125221"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190010"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,7 +65,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 <!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
-:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="查看定义规则的样式表" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
   查看定义规则的样式表  
 :::image-end:::  
 
@@ -84,7 +84,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 在下图中，" **计算** " 选项卡显示应用于当前所选元素的 CSS 属性 `h1` 。  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-computed-h1.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="计算选项卡" lightbox="../media/css-elements-computed-h1.msft.png":::
    **计算**选项卡  
 :::image-end:::  
 
@@ -105,7 +105,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 在下图中，"**样式**" 选项卡中的 "**方框模型**" 图显示了当前所选元素的框模型 `h1` 。  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="方框模型图" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    **方框模型**图  
 :::image-end:::  
 
@@ -118,14 +118,14 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 在下图中，筛选 " **样式** " 选项卡以仅显示包含搜索查询的规则 `color` 。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="筛选 "样式" 选项卡" lightbox="../media/css-elements-styles-filter-color.msft.png":::
    筛选 " **样式** " 选项卡  
 :::image-end:::  
 
 > [!NOTE]
 > 在下图中，" **计算** " 选项卡将筛选为仅显示包含 "搜索" 查询的声明 `100%` 。  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="筛选计算的选项卡" lightbox="../media/css-elements-computed-filter-100.msft.png":::
    筛选 **计算** 的选项卡  
 :::image-end:::  
 
@@ -141,7 +141,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 在下图中，切换 `:hover` 伪类。  在视区中，验证 `background-color: cornflowerblue` 是否将声明应用于该元素，即使该元素实际上不是悬停在该元素上。  
 
-:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="切换：悬停伪类" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
    切换 `:hover` 伪类  
 :::image-end:::  
 
@@ -164,12 +164,12 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="所选元素的示例" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="从 "命令" 菜单打开 "覆盖范围" 选项卡" lightbox="../media/css-console-command-menu-coverage.msft.png":::
              从 "**命令" 菜单**打开 "**覆盖范围**" 选项卡  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="所选元素的示例" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text=""覆盖范围" 选项卡" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              " **覆盖范围** " 选项卡  
           :::image-end:::  
        :::column-end:::
@@ -177,7 +177,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     
 1.  选择 " **开始检测覆盖率" 并刷新页面** \ (" ![ 开始检测覆盖率" 并刷新页面 ][ImageRefreshIcon] \ ) 。  页面刷新，"覆盖率" 选项卡提供浏览器加载的每个文件中使用的 CSS \ (和 JavaScript ) 的概述。  绿色表示使用的 CSS。  红色表示未使用的 CSS。  
     
-    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="所选元素的示例" lightbox="../media/css-console-qs-coverage-run.msft.png":::
+    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="有关使用和未使用的 CSS (和 JavaScript) 数量的概述" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        有关使用和未使用的 CSS \ (和 JavaScript \ ) 多少的概述  
     :::image-end:::  
 
@@ -186,7 +186,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     > [!NOTE]
     > 在下图中，行145到147和149到 151 `b66bc881.site-ltr.css` 未使用，而使用行163到166。  
     
-    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="所选元素的示例" lightbox="../media/css-sources-css-coverage.msft.png":::
+    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="已使用和未使用的 CSS 的逐行划分" lightbox="../media/css-sources-css-coverage.msft.png":::
        已使用和未使用的 CSS 的逐行划分  
     :::image-end:::  
     
@@ -221,7 +221,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 在下图中，"" `margin-top` 和 " `background-color` 属性" 已应用于所选元素。  在 **DOM 树** 中，验证声明是否反映在元素的 `style` 属性中。  
 
-:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="添加内联声明" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
    添加内联声明  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  输入属性名称，然后选择 `Enter` 。  
 1.  输入该属性的有效值，然后选择 `Enter` 。  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="将声明添加到样式规则" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
    将 `border-bottom-style:groove` 声明添加到样式规则  
 :::image-end:::  
 
@@ -242,7 +242,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 选择并编辑声明的名称或值，以对其进行更改。  请参阅使用快捷键的 [键盘快捷方式更改声明值](#change-declaration-values-with-keyboard-shortcuts) ，快速将值按 `0.1` 、、 `1` `10` 或单位递减或递减 `100` 。  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="更改声明的值" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
    更改声明的值 `border-bottom-style`  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  在 " **添加新类** " 文本框中输入类的名称。  
 1.  选择 `Enter` 。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text=""元素类" 窗格" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
    " **元素类** " 窗格  
 :::image-end:::  
 
@@ -288,7 +288,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 在下图中，DevTools 将添加 `h1.devsite-page-title` 样式规则，然后选择 " **新建样式规则**"。  
 
-:::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-style-new.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="添加新样式规则" lightbox="../media/css-elements-styles-style-new.msft.png":::
    添加新样式规则  
 :::image-end:::  
 
@@ -296,7 +296,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 [添加新样式规则](#add-a-style-rule)时，选择并保留**新的样式**规则 \ (" ![ 新建样式规则 \ ) "，选择要向 ][ImageNewStyleRuleIcon] 其添加样式规则的样式表。  
 
-:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="选择样式表" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    选择样式表  
 :::image-end:::  
 
@@ -308,7 +308,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
 1.  选择 **下方的 "插入样式规则** \ (" ![ 下的 "插入样式规则" 图标 ][ImageNewStyleRuleIcon] \ ) 。  
 
-:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="在下方插入样式规则" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **在下方插入样式规则**  
 :::image-end:::  
 
@@ -326,7 +326,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     > [!NOTE]
     > 在下图中，将鼠标悬停在 `.header-holder.has-default-focus` 样式规则上方，并显示 "样式规则" 部分右下角的 " **更多操作** "。  
     
-    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="显示更多操作" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
        显示 **更多操作** \ (`...` \ )   
     :::image-end:::  
     
@@ -335,7 +335,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     > [!NOTE]
     > 将鼠标悬停在**更多操作**之后，将显示 "**下方的插入样式规则**" 操作。  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text=""更多操作" 工具栏" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        " **更多操作** " 工具栏  
     :::image-end:::  
     
@@ -350,7 +350,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 下图中， `margin-top` 当前所选元素的属性已关闭。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="切换声明" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
    切换声明  
 :::image-end:::  
 
@@ -362,7 +362,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
 1.  选择 " **添加背景色** \ (![ 添加背景颜色" 图标 ][ImageAddBackgroundColorIcon] \ ) 。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="添加背景色" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **添加背景色**  
 :::image-end:::  
 
@@ -374,7 +374,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
 1.  选择 " **添加颜色** \" (" ![ 添加颜色" 图标 ][ImageAddColorIcon] \ ) 。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="添加颜色" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **添加颜色**  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
 1.  选择 **"添加框阴影** \ (![ 添加框阴影图标 ][ImageAddBoxShadowIcon] \ ) "。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="添加框阴影" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **添加框阴影**  
 :::image-end:::  
 
@@ -398,7 +398,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  [显示 " **更多操作** " 工具栏](#reveal-the-more-actions-toolbar)。  
 1.  选择 " **添加文本阴影** \ (![ 添加文字阴影图标 ][ImageAddTextShadowIcon] \ ) "。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="添加文本阴影" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **添加文本阴影**  
 :::image-end:::  
 
@@ -414,19 +414,19 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     > [!NOTE]
     > 在下图中，左侧的小方块 `rgba(0, 0, 0, 0.7)` 是该颜色的预览。  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="颜色预览" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
        颜色预览  
     :::image-end:::  
     
 1.  选择 "预览" 以打开 " **颜色选取器**"。  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="颜色选取器" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
        **颜色选取器**  
     :::image-end:::  
     
 下图，并列出了 **颜色选取器**的每个 UI 元素的 descries。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="颜色选取器，批注" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
    **颜色选取器**，批注  
 :::image-end:::  
 
@@ -540,7 +540,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     > [!NOTE]
     > 在下图中， **颜色选取器** 显示当前颜色值 `rgba(0,0,0,0.7)` ，它接近黑色。  选择特定颜色后，该特定颜色应更改为当前在视区中突出显示的黑色版本。  
     
-    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="所选元素的示例" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="使用取色器" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
        使用取色器  
     :::image-end:::  
     
