@@ -522,7 +522,11 @@
         - name: webhint
           href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
-      href: webdriver-chromium.md
+      items:
+        - name: 即刻体验
+          href: webdriver-chromium/index.md
+        - name: 功能和 Edge 选项
+          href: webdriver-chromium/capabilities-edge-options.md
     - name: WebDriver (EdgeHTML)
       href: webdriver.md
     - name: Web 平台 (Chromium)
