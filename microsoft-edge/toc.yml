@@ -82,6 +82,8 @@
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D 视图
           href: devtools-guide-chromium/3d-view/index.md
+        - name: 服务工作者
+          href: devtools-guide-chromium/service-workers/index.md
         - name: 面向初学者的开发工具
           items:
             - name: HTML 和 DOM
