@@ -3,17 +3,17 @@ description: 使用 Microsoft Edge 驱动程序自动处理和测试 WebView2 �
 title: 通过 Microsoft Edge 驱动程序自动化和测试 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、edge、ICoreWebView2、ICoreWebView2Controller、Selenium、Microsoft Edge 驱动程序
-ms.openlocfilehash: 6f7f84fa88a57e54d7b5143a489d1138c7426d88
-ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
+ms.openlocfilehash: 2af1ce222abb1dc7a279afc05e87e7e42a45fe9e
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11191448"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11191615"
 ---
 # 通过 Microsoft Edge 驱动程序自动化和测试 WebView2  
 
@@ -23,7 +23,7 @@ ms.locfileid: "11191448"
 
 ## 步骤1：下载 WebView2API 示例  
 
-如果您没有现有的 WebView2 项目，请下载 [WebView2API 示例应用][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]，该示例是最新 WebView2 SDK 的综合示例。  确保已满足 [WebView2API 示例应用的先决条件][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]。 
+如果您没有现有的 WebView2 项目，请下载 [WebView2API 示例应用][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]，该示例是最新 WebView2 SDK 的综合示例。  确保已满足 [WebView2API 示例应用的先决条件][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]。  
 
 克隆存储库后，在 Visual Studio 中生成项目。  其外观应如下图所示。  
 
@@ -70,7 +70,7 @@ ms.locfileid: "11191448"
        下载 NuGet 程序包  
     :::image-end:::  
     
-1.  在搜索栏中输入 **Selenium** ，从结果中选择 **Selenium** ，并确保 " **包括预发布**" 旁边的复选框。 在右侧窗口中，确保已将 **版本** 设置为 **安装 4.0.0-alpha04** 或更高版本，然后选择 " **安装**"。  Nuget 将 Selenium 下载到您的计算机。  
+1.  `Selenium.WebDriver`在搜索栏中输入，从结果中选择**Selenium** ，并确保 "**包括预发布**" 旁边的复选框。  在右侧窗口中，确保已将 **版本** 设置为 **安装 4.0.0-alpha04** 或更高版本，然后选择 " **安装**"。  NuGet 将 Selenium 下载到您的计算机。  
     
     若要了解有关 Selenium WebDriver NuGet 包的详细信息，请导航到 [Selenium WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04]。  
     
@@ -158,8 +158,8 @@ ms.locfileid: "11191448"
 
 <!-- links -->  
 
-[WebdriverChromium]: ../../webdriver-chromium.md "使用 WebDriver (Chromium) 进行测试自动化 |Microsoft 文档"  
-[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium.md#download-microsoft-edge-driver "下载 Microsoft Edge 驱动程序-使用 WebDriver (Chromium) 测试自动化 |Microsoft 文档"  
+[WebdriverChromium]: ../../webdriver-chromium/index.md "使用 WebDriver (Chromium) 进行测试自动化 |Microsoft 文档"  
+[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "下载 Microsoft Edge 驱动程序-使用 WebDriver (Chromium) 测试自动化 |Microsoft 文档"  
 [WebViewIndex]: ../index.md "Microsoft Edge WebView2 简介-Microsoft 文档"  
 [Webview2Releasenotes]: ../releasenotes.md "WebView2 SDK 的发行说明 |Microsoft 文档"  
 

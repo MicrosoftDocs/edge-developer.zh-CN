@@ -1,20 +1,20 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: 浏览 (ARIA) 的最佳做法和易于访问的富 Internet 应用程序，以便创建易于访问的网站。
-title: 辅助功能-构建
+title: 构建 |功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能，面向开发人员的辅助功能，辅助网站，边缘，web 开发，ARIA，开发人员，UIA，UI 自动化
 ms.custom: seodec18
-ms.openlocfilehash: 4412fef6bb78b5a393ccafd5a2cfa79aba223141
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7a8ff5082132ec3270a6e01af594a5bd9fb35389
+ms.sourcegitcommit: 5d3802721036dc7cd90e9e6f7ac90dc3acc24eec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562611"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191548"
 ---
 # 构建易于访问的网站
 Web 使用 HTML、CSS 和 JavaScript 的组合生成了动态、复杂的网站、应用程序和用户界面。  但是，如果在设计和构建时不考虑辅助功能，则依赖 [辅助技术](https://webaim.org/articles/motor/assistive) 浏览 web 的用户很难使用这些复杂的网站。 构建残疾人士易于访问的网站需要有关用户界面的语义信息。 这允许辅助技术（如屏幕阅读器）传达必要的信息，以帮助具有各种功能的人员使用该网站。
@@ -56,6 +56,44 @@ ARIA 状态和属性是 aria 的前缀属性，提供有关对象的特定信息
 通过 W3C 转到 ["角色" 模型](https://www.w3.org/TR/wai-aria-1.1/#roles) 以查看角色、属性和状态的完整列表。
 
 有关 ARIA 的详细信息，请参阅 " [资源](#resources) " 部分中的 ARIA。
+
+## 辅助技术兼容性测试  
+
+验证正在构建的网站是否适用于真正的辅助技术是确保你的残障人士获得良好体验的最佳方式。  由于很多辅助技术使用键盘，因此测试网站的键盘辅助功能是一个很好的开始位置。  [键盘兼容性测试][W3cPerspectiveVideosKeyboard] 验证用户是否可以访问所有交互式控件，而无需使用鼠标。  Microsoft 的 microsoft [辅助功能见解][AccessibilityinsightsWebOverview] 是 microsoft Edge 和 Chrome 的浏览器扩展，可指导你并显示一些常见问题。  
+
+确信你的网站在使用键盘时工作良好，请使用其他辅助技术（如屏幕阅读器）试用它。  它在以下情况下发现问题。
+
+*   HTML、ARIA 和 CSS。  
+*   功能或技术对辅助技术的支持级别。  
+    
+不同的浏览器可能将元素映射到平台辅助功能 Api，与 Microsoft Edge 不同。  构建你的界面时，请务必考虑每个差异。  
+
+WebAIM 通过 [屏幕阅读器][WebaimProjectsScreenreadersurvey8] 和 [弱视][WebaimProjectsLowvisionsurvey2] 用户执行调查，帮助你确定要测试的辅助技术和浏览器。  
+
+### 了解如何测试  
+
+辅助技术是复杂的工具。  不要假设你可以使用辅助技术立即开始测试，而无需事先了解它的工作原理。  学习使用屏幕阅读器进行测试有一个特别陡的学习曲线。  初级用户屏幕阅读器用户可能假设问题与屏幕阅读器的误用有关时出现屏幕阅读器错误。  
+
+有关学习通过辅助技术进行测试的详细信息，请导航到 WebAIM 上 [的屏幕阅读器进行测试][WebaimArticlesScreenreaderTesting] 。  
+
+### 本地测试  
+
+大多数设备都包含操作系统内置的辅助技术。  Microsoft Windows 包括 [Windows 讲述人][MicrosoftSupport22798] 屏幕阅读器和 [windows 放大镜][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]。  可下载第三方辅助技术，如 [NVDA][NvaccessAboutNvda]、 [FreedomscientificSoftwareJaws]和 [ZoomText][FreedomscientificSoftwareZoomtext] 。  Apple macOS 包括 [VoiceOver][AppleAccessibilityMacVision] 屏幕阅读器。  和 iOS、Android 和 Linux 都支持各种辅助技术。  
+
+### 在虚拟机和模拟器中测试  
+
+在 "macOS" 下，如果要使用仅适用于 Windows 的辅助技术（如 Windows "讲述人" 或 "NVDA"）进行测试，请创建 Windows 虚拟机。  具有 Microsoft Edge \ (EdgeHTML \ ) 和 IE 的虚拟机可在 " [虚拟机下载" 页面][MicrosoftDeveloperEdgeVms]上 VirtualBox 和 VMWare。  
+
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] 包含一个用于测试 [Android 辅助功能套件][GooglePlayStoreAndroidAccessibilitySuite]中的辅助技术的模拟器。  按照说明 [设置虚拟设备][AndroidDeveloperDevicesManagingAvdsHtml] 并 [启动模拟器][AndroidDeveloperDevicesEmulatorHtml]，然后从 GooglePlay 应用商店安装 [Android 辅助功能套件][GooglePlayStoreAndroidAccessibilitySuite] 。  
+
+> [!NOTE]
+> IOS 模拟器当前不包含 VoiceOver。  
+
+### 基于云的测试工具  
+
+如果你的操作系统上不能使用辅助技术，或者你无法在虚拟机或模拟器上安装，那么下一步是基于云的辅助技术测试工具。  
+
+*   [Assistiv Labs (商业) ][AssistivlabsMain] 使你能够通过任何现代 web 浏览器手动测试辅助技术。  选择辅助技术和浏览器，它将你与你可以交互的虚拟机、模拟器或真正设备连接起来。  
 
 ## 资源
 
@@ -141,3 +179,35 @@ Web 辅助功能评估工具列表，可帮助确定网站是否满足辅助功�
 
 #### [Web 辅助功能：了解每个人的影响和好处](https://w3.org/WAI/perspectives/)
 W3C 关于辅助功能和每个人的好处的影响的一系列简短的课程视频。
+
+<!-- links -->  
+
+<!--todo: link updates and acrolinx  -->  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "虚拟机 |Microsoft Edge 开发人员"  
+
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 ""讲述人" 的完整指南 |Microsoft 支持"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "使用放大镜使屏幕上的项目更易于查看 |Microsoft 支持"  
+
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Web 辅助功能见解 |辅助功能见解"  
+
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "创建和管理虚拟设备 |Android 开发人员"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "在 Android 模拟器上运行应用 |Android 开发人员"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "下载 Android Studio |Android 开发人员"  
+
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "视觉辅助功能-Mac |Apple"  
+
+[AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
+
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "JAWS® |自由科学"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText |自由科学"  
+
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android 辅助功能套件 |GooglePlay 商店"  
+
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "关于 NVDA |NV 访问"  
+
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "键盘兼容性 |W3C"  
+
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "对视力不佳的用户的调查 \ #2 结果 |WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "屏幕阅读器用户调查 \ #8 结果 |WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "通过屏幕阅读器进行测试 |WebAIM"  

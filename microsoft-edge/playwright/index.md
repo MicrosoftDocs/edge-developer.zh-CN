@@ -1,21 +1,21 @@
 ---
 description: 在 Microsoft Edge 中使用 Playwright 自动处理和测试
-title: Playwright
+title: 编剧
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge、web 开发、开发人员、工具、自动化、测试、playwright、node、javascript、npm
-ms.openlocfilehash: 419d534b3757609528f05bac50ce55bad9dafec4
-ms.sourcegitcommit: 5af0ba56a93871eb4890d1aa7c56c3524c2261de
+ms.openlocfilehash: ac03923fb25da00f07cb70e81ac06b106a6e1452
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160165"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11192210"
 ---
-# Playwright  
+# 编剧  
 
 [Playwright][|::ref1::|Main] 是一种 [Node.js][NodejsMain] 库，可通过单个 API 自动化 [Chromium][ChromiumHome]、 [Firefox][FirefoxMain]和 [WebKit][|::ref2::|Main] 。  Playwright 的构建使跨浏览器 web 自动化功能变得非常绿、功能可靠且速度更快。  由于 [Microsoft edge 是在开放源代码 Chromium web 平台上构建][MicrosoftBlogsWindowsExperience20181206]的，因此 Playwright 也可以自动执行 Microsoft edge。  
 
@@ -100,7 +100,7 @@ Playwright 启动 Microsoft Edge，导航到 `https://www.microsoft.com/edge` �
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium.md "WebDriver (Chromium) |Microsoft 文档"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) |Microsoft 文档"  
 [PuppeteerMain]: ../puppeteer.md "Puppeteer |Microsoft 文档"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge：通过更多打开源协作提高 web 效果 |Microsoft 体验博客"  
@@ -109,11 +109,11 @@ Playwright 启动 Microsoft Edge，导航到 `https://www.microsoft.com/edge` �
 
 [ChromiumHome]: https://www.chromium.org/Home "Chromium |Chromium 项目"  
 
-[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"
+[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "边缘-路径 |npm"
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "边缘-路径 |npm"  
 
 [PlaywrightMain]: https://playwright.dev "Playwright"  
 [PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Playwright API 参考"  
@@ -123,6 +123,6 @@ Playwright 启动 Microsoft Edge，导航到 `https://www.microsoft.com/edge` �
 [PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright |GitHub"  
 [PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Playwright 存储库中的新问题 |GitHub"  
 
-[WebKitMain]: https://webkit.org "WebKit"
+[WebKitMain]: https://webkit.org "WebKit"  
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "无外设浏览器 |科"  

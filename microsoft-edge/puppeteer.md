@@ -3,23 +3,23 @@ description: 在 Microsoft Edge 中使用 Puppeteer 自动处理和测试
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge，web 开发，开发人员，工具，自动化，测试
-ms.openlocfilehash: bef3f0d7472f7bc595998829546fb540041f20fc
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: e92a863f28c96157b4c7692bd88ba6884cbf8f52
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986155"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11192231"
 ---
 # Puppeteer  
 
-[Puppeteer][|::ref1::|Main] 是一个 [节点][NodejsMain] 库，它提供了一个高级 API，可通过 [DevTools 协议][GithubChromedevtoolsProtocol]控制 Microsoft Edge \ (Chromium \ ) 。  默认情况下，Puppeteer 运行无 [头][WikiHeadlessBrowser] ，这意味着你看不到 UI，而是必须使用命令行。  您也可以将 Puppeteer 配置为运行完整 \ (非外设 \ ) Microsoft Edge 或 Chromium。  
+[Puppeteer][|::ref1::|Main] 是一个 [节点][NodejsMain] 库，它提供了一个高级 API，用于控制 Microsoft Edge \ (Chromium \ ) 使用 [DevTools 协议][GithubChromedevtoolsProtocol]。  默认情况下，Puppeteer 启动无 [头浏览器][WikiHeadlessBrowser] 。  无外设浏览器不显示 UI，因此必须使用命令行。  您也可以将 Puppeteer 配置为同时运行完全 \ (非无外设 \ ) Microsoft Edge。  
 
-默认情况下，当你安装 Puppeteer 时，安装程序将下载 [Chromium][ChromiumHome]的最新版本， [还会生成 Microsoft Edge][MicrosoftBlogsWindowsExperience20181206]的 "开放源代码浏览器"。  如果已安装了 Microsoft Edge \ (Chromium \ ) ，则可以使用 [puppeteer-core][PuppeteerApivscore]。  `puppeteer-core` 是一种轻量级版本的 Puppeteer，用于启动现有的浏览器安装，如 Microsoft Edge \ (Chromium \ ) 。  若要下载 Microsoft Edge \ (Chromium \ ) ，请参阅 [下载 Microsoft Edge 预览体验成员频道][MicrosoftedgeinsiderDownload]。
+默认情况下，当你安装 Puppeteer 时，安装程序将下载 [Chromium][ChromiumHome]的最新版本， [还会生成 Microsoft Edge][MicrosoftBlogsWindowsExperience20181206]的 "开放源代码浏览器"。  如果已安装了 Microsoft Edge \ (Chromium \ ) ，则可以使用 [puppeteer-core][PuppeteerApivscore]。  `puppeteer-core` 是一种轻量级版本的 Puppeteer，用于启动现有的浏览器安装，如 Microsoft Edge \ (Chromium \ ) 。  若要下载 Microsoft Edge \ (Chromium \ ) ，请导航到 " [下载 Microsoft Edge 预览体验计划" 频道][MicrosoftedgeinsiderDownload]。  
 
 ## 安装 puppeteer  
 
@@ -40,7 +40,7 @@ yarn add puppeteer-core
 
 `puppeteer-core` 应熟悉其他浏览器测试框架（如 [WebDriver][WebDriverEdgehtmlMain]）的用户。  创建一个浏览器实例，打开一个页面，然后使用 Puppeteer API 对其进行操作。  在以下代码示例中， `puppeteer-core` 启动 Microsoft Edge \ (Chromium \ ) ，导航到 `https://www.microsoftedgeinsider.com` 并将屏幕截图另存为 `example.png` 。  
 
-复制下面的代码示例并将其另存为 `example.js` 。  
+复制以下代码片段并将其另存为 `example.js` 。  
 
 ```javascript
 const puppeteer = require('puppeteer-core');
@@ -80,46 +80,61 @@ const EDGE_PATH = edgePaths.getEdgePath();
 > [!NOTE]
 > Microsoft Edge \ (EdgeHTML \ ) 不起作用 `puppeteer-core` 。  必须安装 [Microsoft Edge 预览体验成员频道][MicrosoftedgeinsiderDownload] 才能继续关注此示例。  
 
-现在 `example.js` 从命令行运行。  
+现在， `example.js` 从命令行运行。  
 
 ```shell
 node example.js
 ```  
 
-`puppeteer-core` 启动 Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` 页面的 800px x 600px 屏幕截图并将其保存。  你可以自定义 [setViewport ( # B1 ][PuppeteerApipagesetviewport]的页面大小。  
+`puppeteer-core` 启动 Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` 并保存网页的屏幕截图。  在 [setViewport ( # B1 ][PuppeteerApipagesetviewport]中自定义屏幕截图大小。  
 
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="由 example.js 生成的 example.png 文件":::
-   图1： `example.png` 生成的文件 `example.js`  
+:::image type="complex" source="./media/puppeteer-example.png" alt-text="由 example.js 生成的 example.png 文件" lightbox="./media/puppeteer-example.png":::
+   `example.png`生成的文件 `example.js`  
 :::image-end:::  
 
-<!--  
-> ##### Figure 1  
-> The `example.png` file produced by `example.js`  
-> ![The example.png file produced by example.js](./media/puppeteer-example.png)  
--->  
-
-这只是由 Puppeteer 和的自动化和测试方案所支持的简单示例 `puppeteer-core` 。  有关 Puppeteer 及其工作原理的详细信息，请参阅 [Puppeteer][|::ref2::|Main]。  
+下面的简单示例使用由 Puppeteer 和支持的自动化和测试方案 `puppeteer-core` 。  有关 Puppeteer 及其工作原理的详细信息，请导航到 [Puppeteer][|::ref2::|Main]。  
 
 ## 与 Microsoft Edge 开发人员工具团队联系  
 
-Microsoft Edge 开发人员团队渴望听到有关使用 Puppeteer、 `puppeteer-core` 和 Microsoft Edge 的反馈。  使用 Microsoft Edge DevTools 或 tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools]中的 &quot;**发送反馈**" 图标，让 Microsoft edge 团队知道您的想法。  
+Microsoft Edge 开发人员团队渴望听到有关使用 Puppeteer、 `puppeteer-core` 和 Microsoft Edge 的反馈。  使用 Microsoft Edge DevTools 或 tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools]中的 "**发送反馈**" 图标，让 Microsoft edge 团队知道您的想法。  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="由 example.js 生成的 example.png 文件":::
-   图1： `example.png` 生成的文件 `example.js`  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的 "发送反馈" 图标" lightbox="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+   Microsoft Edge DevTools 中的 " **发送反馈** " 图标  
 :::image-end:::  
 
-<!--  
-> ##### Figure 1  
-> The `example.png` file produced by `example.js`  
-> ![The example.png file produced by example.js](./media/puppeteer-example.png)  
--->  
+<!--## See also  
 
-这只是由 Puppeteer 和的自动化和测试方案所支持的简单示例 `puppeteer-core` 。  有关 Puppeteer 及其工作原理的详细信息，请参阅 [Puppeteer][|::ref2::|Main]。  
+*   [WebDriver (Chromium)][WebdriverChromiumMain]  
+*   [WebDriver (EdgeHTML)][WebdriverEdgehtmlMain]  
+*   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]  
+*   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
+*   [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]  
+*   [Chromium on The Chromium Projects][ChromiumHome]  
+*   [Node.js][NodejsMain]  
+*   [Puppeteer][PuppeteerMain]  
+*   [puppeteer vs. puppeteer-core][PuppeteerApivscore]  
+*   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]  
+*   [Headless browser on Wikipedia][WikiHeadlessBrowser]  -->  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+<!-- links -->  
 
-Microsoft Edge 开发人员团队渴望听到有关使用 Puppeteer、 `puppeteer-core` 和 Microsoft Edge 的反馈。  使用 Microsoft Edge DevTools 或 tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools]中的 &quot;**发送反馈**"  
+[WebdriverChromiumMain]: ./webdriver-chromium "WebDriver (Chromium) |Microsoft 文档"  
+[WebdriverEdgehtmlMain]: ./webdriver.md "WebDriver (EdgeHTML) |Microsoft 文档"  
+
+[GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools 协议查看器 |GitHub"  
+
+[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge：通过更多打开源协作提高 web 效果 |Microsoft 体验博客"  
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"  
+
+[ChromiumHome]: https://www.chromium.org/Home "Chromium |Chromium 项目"  
+
+[NodejsMain]: https://nodejs.org "Node.js"  
+
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "边缘路径 |npm"  
+
+[PuppeteerMain]: https://pptr.dev "Puppeteer"  
 [PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "puppeteer 与 puppeteer-核心 |Puppeteer"  
 [PuppeteerApipagesetviewport]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport "setViewport (视区) |Puppeteer"  
 
