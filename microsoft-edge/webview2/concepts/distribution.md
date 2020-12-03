@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 0cbaaeade03feac766647c55bb5edabfe8e8456e
-ms.sourcegitcommit: 7b16c3e6eb458e0b2458279c2498597fb227bc8c
+ms.openlocfilehash: 14f252b0155beb6bfce0b01dc080900f2d3e57ee
+ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "11182907"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195164"
 ---
 # 使用 WebView2 的应用分发  
 
@@ -76,7 +76,7 @@ WebView2 运行时是可再发行的运行时，用作 WebView2 应用的支持 
         在32位 Windows 上  
         
         ```text
-        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
     *   运行 [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] 并确保 `versionInfo` 为 `NULL` 。  
@@ -109,7 +109,7 @@ WebView2 运行时是可再发行的运行时，用作 WebView2 应用的支持 
         在32位 Windows 上  
         
         ```text
-        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
     *   运行 [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] 并确保 `versionInfo` 为 `NULL` 。  
