@@ -287,7 +287,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 *   使用 DevTools 中的 " **发送反馈** " 图标发送反馈  
 *   向 [@EdgeDevTools][TwitterEdgedevtools] 发送推文  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的 "发送反馈" 图标" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的 发送反馈 图标"::: lightbox="./media/bing-devtools-send-feedback.msft.png":::
    Microsoft Edge DevTools 中的 " **发送反馈** " 图标  
 :::image-end:::  
 
