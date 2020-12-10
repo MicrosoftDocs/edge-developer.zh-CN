@@ -123,7 +123,7 @@ ms.locfileid: "11203968"
 
 ## 合成图层
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text=""复合图层" 窗格" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="复合图层 窗格"::: lightbox="../media/experiments-layers.msft.png":::
    "**复合图层**" 窗格
 :::image-end:::  
 
