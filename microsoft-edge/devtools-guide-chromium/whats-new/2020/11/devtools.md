@@ -66,7 +66,7 @@ Microsoft Edge 开发现在支持 Ubuntu、Debian、Fedora 和 openSUSE 分布�
 
 现在，你可以将 **层** 内容与 z 索引值和文档对象模型（ (DOM \ ) ）可视化。  此功能可帮助你在不切换 [3d 视图][Devtools3dViewIndex] 和 **分层** 工具的情况下进行调试。  为了获得全面的可视化调试体验， [现在组合了3D 视图和复合图层][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]。  
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text=""复合图层" 窗格" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="复合图层 窗格"::: lightbox="../../media/2020/11/experiments-layers.msft.png":::
    "**复合图层**" 窗格  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ Microsoft Edge 开发现在支持 Ubuntu、Debian、Fedora 和 openSUSE 分布�
 1.  导航到**应用程序**  >  **服务工作人员**。  
 1.  选择 " **网络请求**"。  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="从 "服务工作人员" 窗格打开网络工具" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="从 服务工作人员 窗格打开网络工具"::: lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        从 "**服务工作人员**" 窗格打开**网络**工具
     :::image-end:::  
     
