@@ -3,17 +3,17 @@ description: 了解 Microsoft Edge (Chromium) 开发人员工具
 title: Microsoft Edge (Chromium) 开发人员工具
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/23/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ffc31dad9e641adfb9f1ae0b5b88b29192ea4152
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+ms.openlocfilehash: 8f773db3d175f8b5128e1558809334c8f2de4bd7
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182496"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204003"
 ---
 # Microsoft Edge (Chromium) 开发人员工具  
 
@@ -112,7 +112,7 @@ Microsoft Edge \ (Chromium \ ) DevTools 包括以下面板。
 | 切换 " **检查元素" 模式** ，使您可以选择网站上的元素并在 " **元素** " 面板中查看 HTML 和 CSS | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | 显示命令菜单 | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | 显示/隐藏抽屉 | `Esc` | `Esc` |  
-| 恢复.  这将刷新使用缓存的页面。  | `F5` 或 `Ctrl`+`R` | `Command`+`R` |  
+| 刷新。  这将刷新使用缓存的页面。  | `F5` 或 `Ctrl`+`R` | `Command`+`R` |  
 | 硬刷新。  这会强制 Microsoft Edge 再次下载资源并重新加载。  已使用的资源可能来自缓存的版本 | `Ctrl`+`F5` 或 `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | 在当前面板中搜索文本。  在 "审核"、"应用程序" 和 "安全" 面板中不受支持 | `Ctrl`+`F` | `Command`+`F` |  
 | 在抽屉中显示 "搜索" 面板，用于在所有已加载的资源中搜索文本 | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
@@ -140,7 +140,7 @@ Microsoft Edge \ (Chromium \ ) DevTools 包括以下面板。
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "初学者的 DevTools： HTML 和 DOM 入门 |Microsoft 文档"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools "Microsoft Edge 中的新增功能 (Chromium) DevTools |Microsoft 文档"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Microsoft Edge 中的新增功能 (Chromium) DevTools |Microsoft 文档"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chromium) DevTools 协议 |Microsoft 文档"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge 加载项"  

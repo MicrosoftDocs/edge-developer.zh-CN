@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的最新实验功能
 title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools、实验
-ms.openlocfilehash: ddedf62ff27023751c511a7d2e34b6ea14461db5
-ms.sourcegitcommit: be42902c404e9f9ac2d661df9c55de3db4d956a5
+ms.openlocfilehash: b2b2e591834f1c75d51ec98523e2752d67a2d354
+ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160362"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203897"
 ---
 # 实验功能  
 
@@ -25,7 +25,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 若要在 Microsoft Edge 中打开 " (" 或 "关闭" ) 实验功能，请完成以下步骤。  
 
 1.  [打开 DevTools][DevtoolsOpen]。  
-     *   选择 `Control` + `Shift` + `I` \ (Windows、Linux \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
+    *   选择 `Control` + `Shift` + `I` \ (Windows、Linux \ ) 或 `Command` + `Option` + `I` \ (macOS \ ) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  打开 " [设置][DevToolsCustomizeSettings] " 窗格。  
     *   选择 `Shift` + `?` 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  在 " **设置** " 窗格的左侧，选择 " **实验** " 部分。  
@@ -36,7 +36,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
     
 1.  在 " **实验** " 页面上，滚动浏览所有可用实验功能的列表，然后选择要测试的每个功能旁边的复选框。  
 1.  关闭并重新打开 Microsoft Edge DevTools。  
-
+    
 > [!NOTE]
 > 实验性功能将不断更新，并可能导致性能问题。  若要关闭实验功能，请打开 " **试验** " 页面，然后清除要关闭的实验功能的复选框。  
 
@@ -61,7 +61,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 
 *   [Surface 双核][SurfaceDevicesDuo]  
 *   [Samsung Galaxy 折页][SamsungMobileGalaxyFold]  
-
+    
 模拟设备并在以下姿势之间切换。  
 
 *   单屏幕或折叠的状况  
@@ -80,7 +80,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验功能的访问权限�
 1.  导航到 `edge://flags` 。  
 1.  在 " **搜索标志** " 文本框中，输入 `Experimental Web Platform features` ，选择实验性的 **Web 平台功能** 标志，将 " **已禁用** " 更改为 " **已启用**"。  
 1.  重启 Microsoft Edge。  
-
+    
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="启用实验性 Web 平台功能标志" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    启用实验性 Web 平台功能标志  
 :::image-end:::  
@@ -111,7 +111,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 *   有关在双屏幕设备上进行 web 开发的详细信息，请导航到 [双屏幕 web 体验][DualScreenWebIndex]。  
 *   安装 [Surface 双核模拟器][DualScreenAndroidUseEmulator]。  它与 Microsoft Edge 中的仿真器不同，模拟运行 Android 的 Surface 双核，并与 [Android Studio][AndroidDeveloperStudio]集成。  有关详细信息，请导航到 [获取 Surface 双核 SDK][DualScreenAndroidGetDuoSdk]。  
-
+    
 > [!NOTE]
 > 以下是当前已知问题的列表。  
 > 
@@ -136,7 +136,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 *   滚动、移动鼠标和使用 DevTools 的其他功能时，永久叠加在页面上保持可见。  
 *   可以同时启用多个永久覆盖，从而允许同时查看多个网格布局。  
 *   永久覆盖提供许多配置选项，如在网格区域中隐藏或显示名称、网格间隙、轨道大小等。  
-
+    
 切换永久网格覆盖的两种方式。  
 
 *   选择 "**元素**" 工具的 DOM 树中显示的任何网格元素旁边的 "**网格**" 椭圆图标。  
@@ -179,7 +179,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 *   性能  
 *    (PWAs) 的渐进式 Web 应用  
 *   其他常见 web 开发问题  
-
+    
 [Webhint][WebhintMain]实验将在 "[问题][DevtoolsIssues]" 面板中显示 webhint 反馈。  选择一个问题以显示解决方案文档和您的网站上受影响的资源列表。  选择资源链接以打开 DevTools 中的相关 **网络**、 **源**或 **元素** 窗格。  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text=""问题" 面板中的 webhint 反馈" lightbox="./media/experiments-webhint.msft.png":::
@@ -199,7 +199,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  打开上下文菜单 \ (右键单击 \ ) ，然后选择 " **编辑并重播**"。  
 1.  当 **网络控制台** 打开时，请编辑网络请求信息。  
 1.  选择 " **发送**"。  
-
+    
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="控制台抽屉中的网络控制台" lightbox="./media/network-network-console.msft.png":::
    **控制台**抽屉中的**网络控制台**  
 :::image-end:::  
@@ -216,7 +216,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  打开抽屉 \ (底部 \ ) 面板中的 " **辅助功能** " 窗格。  
 1.  在 " **源顺序查看器** " 部分下，选择 " **显示源顺序** " 复选框。  
 1.  突出显示任何 HTML 元素以显示页面源中顺序的覆盖图。  
-
+    
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text=""辅助功能" 窗格中的 "源顺序查看器"" lightbox="./media/experiments-source-order-viewer.msft.png":::
    "**辅助功能**" 窗格中的 "**源顺序查看器**"  
 :::image-end:::  
@@ -265,13 +265,10 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 现在，你可以在 z 索引和文档对象模型 \ (DOM \ ) 中可视化层。  此功能可帮助你在不切换上下文的情况下进行调试。  您发现减少上下文切换是一个主要难点。  你编写的代码对你的 web 应用的影响并非总是很清楚。  为了获得全面的可视化调试体验，现在组合了3D 视图和复合图层。  启用实验后，确保重新启动 DevTools。  若要使用 **合成图层**，请完成以下步骤。  
 
-<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
-1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
-1.  Open the Devtools.  -->  
 1.  在抽屉上，选择 " **3D 视图** " 工具。  
 1.  打开 " **复合图层** " 窗格。  
 1.  将显示应用的所有已绘制的图层。  在你自己的 web 应用中试用此功能。  
-
+    
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text=""复合图层" 窗格" lightbox="./media/experiments-layers.msft.png":::
    "**复合图层**" 窗格  
 :::image-end:::  

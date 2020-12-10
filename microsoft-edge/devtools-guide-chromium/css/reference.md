@@ -7,12 +7,12 @@ ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 707841901046db6a7e957771164ffb868900bdd8
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: 83edc15549b4f8e668af99a4d95966736aaa0992
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11190010"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204010"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -321,7 +321,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 
 完成以下操作以显示 " **更多操作** " 工具栏。  
 
-1.  在 " **样式** " 选项卡中，将鼠标悬停在样式规则上。  **More Actions** `...` "样式规则" 部分右下角显示了 "更多操作 \ (\ ) "。  
+1.  在 " **样式** " 选项卡中，将鼠标悬停在样式规则上。  **** `...` "样式规则" 部分右下角显示了 "更多操作 \ (\ ) "。  
     
     > [!NOTE]
     > 在下图中，将鼠标悬停在 `.header-holder.has-default-focus` 样式规则上方，并显示 "样式规则" 部分右下角的 " **更多操作** "。  
@@ -544,6 +544,8 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
        使用取色器  
     :::image-end:::  
     
+<!--todo:  add the section on the Angle clock section for What's New 88.  -->  
+
 ## 与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  

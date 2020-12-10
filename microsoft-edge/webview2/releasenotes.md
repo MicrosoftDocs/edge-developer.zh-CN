@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 34063aee7bec324464cf592e6aab8ca499e9c944
-ms.sourcegitcommit: 1a35a0d52c412c503d742e66f25c4e97286a3919
+ms.openlocfilehash: 2859f931aea8963e8a50835110914a216811c191
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203621"
+ms.locfileid: "11204017"
 ---
 # WebView2 SDK 的发行说明  
 
@@ -53,7 +53,7 @@ WebView2 团队在六周的节奏上更新 [WEBVIEW2 SDK][NuGetGallery] 。  查
 
 *   在 .NET Core 3.1 + 和 .NET 5 中启用 WinForms 设计器。  
 *   改进了 .NET cookie 管理。  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\ ) 。  
-*   重命名 `CoreWebView2Ready` 为 [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]。  
+*   替换 `CoreWebView2Ready` 为 [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]。  
 
 ###### Bug 修复
 
@@ -298,7 +298,7 @@ WebView2 SDK 是正式的 Win32 c + + Beta 版本，其中包含来自反馈的�
 *   添加了对 `beforeunload` JavaScript 对话框事件的对话框类型的支持并添加了 [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin32Icorewebview2CoreWebview2ScriptDialogKind09430] 枚举条目。  
 *   将 [GetHeaders][ReferenceWin32Icorewebview2httprequestheadersGetheaders09430] 添加到 HttpRequestHeaders， [GetHeader][ReferenceWin32Icorewebview2httpresponseheadersGetheader09430] 到 HttpResponseHeaders，并将 [get_HasCurrentHeader][ReferenceWin32Icorewebview2httpheaderscollectioniteratorGetHascurrentheader09430] 属性添加到 HttpHeadersCollectionIterator。  
 *   > [!IMPORTANT]
-    > **重大更改**：已修改 `DevToolsProtocolEventReceived` 的行为。  现在，你可以为特定的 DevTools 协议事件创建[DevToolsProtocolEventReceiver][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430] ，并使用[add_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430]remove_DevToolsProtocolEventReceived 订阅/取消订阅此类事件 / [remove_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430]。
+    > **重大更改**：已修改 `DevToolsProtocolEventReceived` 的行为。  现在，你可以为特定的 DevTools 协议事件创建[DevToolsProtocolEventReceiver][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430] ，并使用[add_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430]remove_DevToolsProtocolEventReceived 订阅/取消订阅此类事件 / [][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430]。
 *   > [!IMPORTANT]
     > **重大更改**：已将 `WebMessageReceivedEventArgs` [Get_WebMessageAsString][ReferenceWin32Iwebview2webmessagereceivedeventargsGetWebmessageasstring08190] 属性更改为 [TryGetWebMessageAsString][ReferenceWin32Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring09430] 方法。  
 *   > [!IMPORTANT]
