@@ -118,7 +118,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 > [!NOTE]
 > 在下图中，筛选 " **样式** " 选项卡以仅显示包含搜索查询的规则 `color` 。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="筛选 "样式" 选项卡" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="筛选 样式 选项卡"::: lightbox="../media/css-elements-styles-filter-color.msft.png":::
    筛选 " **样式** " 选项卡  
 :::image-end:::  
 
@@ -164,12 +164,12 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="从 "命令" 菜单打开 "覆盖范围" 选项卡" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="从 命令 菜单打开 覆盖范围 选项卡"::: lightbox="../media/css-console-command-menu-coverage.msft.png":::
              从 "**命令" 菜单**打开 "**覆盖范围**" 选项卡  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text=""覆盖范围" 选项卡" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="覆盖范围 选项卡"::: lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              " **覆盖范围** " 选项卡  
           :::image-end:::  
        :::column-end:::
@@ -266,7 +266,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
 1.  在 " **添加新类** " 文本框中输入类的名称。  
 1.  选择 `Enter` 。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text=""元素类" 窗格" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="元素类 窗格"::: lightbox="../media/css-elements-styles-filter-classes.msft.png":::
    " **元素类** " 窗格  
 :::image-end:::  
 
@@ -335,7 +335,7 @@ DevTools 的 " **元素** " 面板使你可以一次查看或更改一个元素�
     > [!NOTE]
     > 将鼠标悬停在**更多操作**之后，将显示 "**下方的插入样式规则**" 操作。  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text=""更多操作" 工具栏" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="更多操作 工具栏"::: lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        " **更多操作** " 工具栏  
     :::image-end:::  
     
