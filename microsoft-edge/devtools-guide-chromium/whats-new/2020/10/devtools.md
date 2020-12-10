@@ -154,7 +154,7 @@ Visual studio 代码和**网络 For Visual Studio 代码**扩展的**元素**现
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="打开 "WebAuthn 工具"" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="打开 WebAuthn 工具"::: lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
          打开 " **WebAuthn** 工具"  
       :::image-end:::  
    :::column-end:::  
@@ -173,7 +173,7 @@ Visual studio 代码和**网络 For Visual Studio 代码**扩展的**元素**现
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开 "计算的边栏" 窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开 计算的边栏 窗格"::: lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          打开 " **计算的边栏** " 窗格  
       :::image-end:::  
    :::column-end:::  
