@@ -125,7 +125,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 " **检查** " 工具提供了一种通过鼠标悬停在网站中来标识和可视化 CSS 网格布局的快速方法。  选择 DevTools 左上角的 " **检查** \ (![ 检查 ](./media/inspect-icon.msft.png) \ ) " 图标。  然后，将鼠标悬停在正在调试的网站上的网格元素上。  大纲显示在网格周围，阴影指示网格间隙的位置（如果存在）。  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="通过 "检查" 工具查看网格" lightbox="./media/grid-inspect.msft.png":::
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="通过 检查 工具查看网格"::: lightbox="./media/grid-inspect.msft.png":::
    通过 "检查" 工具查看网格  
 :::image-end:::  
 
@@ -141,7 +141,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 *   选择 "**元素**" 工具的 DOM 树中显示的任何网格元素旁边的 "**网格**" 椭圆图标。  
     
-    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text=""元素" 工具中的 "网格椭圆" 图标" lightbox="./media/grid-adorner.msft.png":::
+    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="元素 工具中的 网格椭圆 图标"::: lightbox="./media/grid-adorner.msft.png":::
        " **元素** " 工具中的 "网格椭圆" 图标  
     :::image-end:::  
     
@@ -182,7 +182,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
     
 [Webhint][WebhintMain]实验将在 "[问题][DevtoolsIssues]" 面板中显示 webhint 反馈。  选择一个问题以显示解决方案文档和您的网站上受影响的资源列表。  选择资源链接以打开 DevTools 中的相关 **网络**、 **源**或 **元素** 窗格。  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text=""问题" 面板中的 webhint 反馈" lightbox="./media/experiments-webhint.msft.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="问题 面板中的 webhint 反馈"::: lightbox="./media/experiments-webhint.msft.png":::
    " **问题** " 面板中的 webhint 反馈  
 :::image-end:::  
 
@@ -217,7 +217,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  在 " **源顺序查看器** " 部分下，选择 " **显示源顺序** " 复选框。  
 1.  突出显示任何 HTML 元素以显示页面源中顺序的覆盖图。  
     
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text=""辅助功能" 窗格中的 "源顺序查看器"" lightbox="./media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="辅助功能 窗格中的 源顺序查看器"::: lightbox="./media/experiments-source-order-viewer.msft.png":::
    "**辅助功能**" 窗格中的 "**源顺序查看器**"  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  选择要自定义的操作。  
 1.  选择 " **编辑** \ (![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \ ) " 图标。  
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从 "设置" 中的 "快捷方式" 页面选择要自定义的操作" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从 设置 中的 快捷方式 页面选择要自定义的操作"::: lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        从 "[设置][DevToolsCustomizeSettings]" 中的 "**快捷方式**" 页面选择要自定义的操作
     :::image-end:::  
     
@@ -269,7 +269,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  打开 " **复合图层** " 窗格。  
 1.  将显示应用的所有已绘制的图层。  在你自己的 web 应用中试用此功能。  
     
-:::image type="complex" source="./media/experiments-layers.msft.png" alt-text=""复合图层" 窗格" lightbox="./media/experiments-layers.msft.png":::
+:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="复合图层 窗格"::: lightbox="./media/experiments-layers.msft.png":::
    "**复合图层**" 窗格  
 :::image-end:::  
 
