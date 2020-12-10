@@ -51,7 +51,7 @@ ms.locfileid: "11203904"
 
 **** ![ ][ImageClearIcon] 在 "**网络**" 面板上选择 "清除 \ (清除 \ ) "，清除 "请求" 表中的所有请求。  
 
-:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text=""清除" 按钮" lightbox="../media/network-network-clear-button.msft.png":::
+:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="清除 按钮"::: lightbox="../media/network-network-clear-button.msft.png":::
    " **清除** " 按钮  
 :::image-end:::  
 
@@ -59,7 +59,7 @@ ms.locfileid: "11203904"
 
 若要跨页面加载保存请求，请在 " **网络** " 面板上，打开 " **保留日志** " 复选框。  DevTools 将保存所有请求，直到你禁用 **保留日志**。  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text=""保留日志" 复选框" lightbox="../media/network-network-preserve-log.msft.png":::
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="保留日志 复选框"::: lightbox="../media/network-network-preserve-log.msft.png":::
    " **保留日志** " 复选框  
 :::image-end:::  
 
@@ -97,7 +97,7 @@ ms.locfileid: "11203904"
 
 若要模拟首次用户体验你的网站的方式，请打开 " **禁用缓存** " 复选框。  DevTools 禁用浏览器缓存。  此功能更准确地模拟了首次使用用户的体验，因为在重复访问时，将从浏览器缓存提供请求。  
 
-:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text=""禁用缓存" 复选框" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="禁用缓存 复选框"::: lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
    " **禁用缓存** " 复选框  
 :::image-end:::  
 
@@ -114,7 +114,7 @@ ms.locfileid: "11203904"
 
 若要随时手动清除浏览器缓存，请打开上下文菜单 \ (右键单击 "请求" 表中的任意位置的 "\ ) "，然后选择 " **清除浏览器缓存**"。  
 
-:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="选择 "清除浏览器缓存"" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="选择 清除浏览器缓存"::: lightbox="../media/network-network-clear-browser-cache.msft.png":::
    选择 "**清除浏览器缓存**"  
 :::image-end:::  
 
@@ -126,7 +126,7 @@ ms.locfileid: "11203904"
 
 选择 " **联机** " 下拉菜单，在 " **预置**" 下搜索，然后选择 " **脱机** " 以模拟脱机网络体验。  
 
-:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text=""脱机" 下拉菜单" lightbox="../media/network-network-offline-dropdown.msft.png":::
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="脱机 下拉菜单"::: lightbox="../media/network-network-offline-dropdown.msft.png":::
    " **脱机** " 下拉菜单  
 :::image-end:::  
 
@@ -155,7 +155,7 @@ DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你�
 
 若要随时手动清除浏览器 cookie，请将鼠标悬停在 "请求" 表中的任意位置，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **清除浏览器 cookie**"。  
 
-:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择 "清除浏览器 Cookie"" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择 清除浏览器 Cookie"::: lightbox="../media/network-network-clear-browser-cookies.msft.png":::
    选择 "**清除浏览器 cookie** "  
 :::image-end:::  
 
@@ -178,7 +178,7 @@ DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你�
 如果未显示文本框，则 " **筛选器** " 窗格可能处于隐藏状态。  
 有关详细信息，请导航到 ["隐藏筛选器" 窗格](#hide-the-filters-pane)。  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text=""筛选器" 文本框" lightbox="../media/network-network-filters-textbox.msft.png":::
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="筛选器 文本框"::: lightbox="../media/network-network-filters-textbox.msft.png":::
    " **筛选器** " 文本框  
 :::image-end:::  
 
@@ -309,7 +309,7 @@ DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你�
 
 若要隐藏请求，请关闭 " **隐藏数据 url** " 复选框。  
 
-:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text=""隐藏数据 Url" 复选框" lightbox="../media/network-network-hide-data-urls.msft.png":::
+:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="隐藏数据 Url 复选框"::: lightbox="../media/network-network-hide-data-urls.msft.png":::
    " **隐藏数据 url** " 复选框  
 :::image-end:::  
 
@@ -473,7 +473,7 @@ DevTools 将在 " **网络** " 选项卡旁显示一个警告图标，提醒你�
 
 若要查看可对瀑布图排序的不同方式，请导航到 " [按活动排序" 阶段](#sort-by-activity-phase)。  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text=""请求" 窗格的瀑布栏" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="请求 窗格的瀑布栏"::: lightbox="../media/network-network-requests-waterfall.msft.png":::
    " **请求** " 窗格的瀑布栏  
 :::image-end:::  
 
@@ -514,7 +514,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 "预览" 选项卡主要用于显示图像。  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text=""预览" 选项卡" lightbox="../media/network-network-resources-preview.msft.png":::
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="预览 选项卡"::: lightbox="../media/network-network-resources-preview.msft.png":::
    " **预览** " 选项卡  
 :::image-end:::  
 
@@ -525,7 +525,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 1.  在 "请求" 表的 " **名称** " 列下，选择请求的 URL。  
 1.  选择 " **响应** " 选项卡。  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text=""响应" 选项卡" lightbox="../media/network-network-resources-response.msft.png":::
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="响应 选项卡"::: lightbox="../media/network-network-resources-response.msft.png":::
    " **响应** " 选项卡  
 :::image-end:::  
 
@@ -536,7 +536,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 1.  在 "请求" 表的 " **名称** " 列下，选择请求的 URL。  
 1.  选择 " **页眉** " 选项卡。  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text=""页眉" 选项卡" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="页眉 选项卡"::: lightbox="../media/network-resources-headers.msft.png":::
    " **页眉** " 选项卡  
 :::image-end:::  
 
@@ -554,7 +554,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 1.  打开您感兴趣的请求的 " **标题** " 选项卡。  有关详细信息，请导航到 " [显示 HTTP 标头](#display-http-headers)"。  
 1.  转到 " **查询字符串参数** " 部分。  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text=""查询字符串参数" 部分" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="查询字符串参数 部分"::: lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
    " **查询字符串参数** " 部分  
 :::image-end:::  
 
@@ -584,7 +584,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text=""Cookie" 选项卡" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Cookie 选项卡"::: lightbox="../media/network-network-resources-cookies.msft.png":::
    "Cookie" 选项卡  
 :::image-end:::  
 
@@ -599,7 +599,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 有关 " **计时** " 选项卡中可能显示的每个阶段的详细信息，请导航到 " [计时分解" 阶段](#timing-breakdown-phases-explained)。  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text=""计时" 选项卡" lightbox="../media/network-network-resources-timing.msft.png":::
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="计时 选项卡"::: lightbox="../media/network-network-resources-timing.msft.png":::
    " **计时** " 选项卡  
 :::image-end:::  
 
@@ -811,7 +811,7 @@ init();
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择 "另存为 HAR 和内容"" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择 另存为 HAR 和内容"::: lightbox="../media/network-network-requests-save-har-content.msft.png":::
    选择 "**另存为 HAR 和内容**"  
 :::image-end:::  
 
@@ -888,7 +888,7 @@ init();
 :::row-end:::  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="选择 "复制答复"" lightbox="../media/network-network-requests-copy-response.msft.png":::
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="选择 复制答复"::: lightbox="../media/network-network-requests-copy-response.msft.png":::
    选择 "**复制答复**"  
 :::image-end:::  
 
@@ -931,7 +931,7 @@ init();
 默认情况下，DevTools 显示 " **筛选器** " 窗格。  
 选择 " **筛选** \ (![ 筛选 ][ImageFilterIcon] \ ) " 将其隐藏。  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text=""隐藏筛选器" 按钮" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="隐藏筛选器 按钮"::: lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    "隐藏筛选器" 按钮  
 :::image-end:::  
 
@@ -945,7 +945,7 @@ init();
 
 若要启用较大的行，请打开 " **使用大型请求行** " 复选框。  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text=""使用大请求行" 复选框" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="使用大请求行 复选框"::: lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
    " **使用大请求行** " 复选框  
 :::image-end:::  
 
@@ -953,7 +953,7 @@ init();
 
 默认情况下，DevTools 显示 " **概述** " 窗格。  若要隐藏它，请关闭 " **显示概述** " 复选框。  
 
-:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text=""显示概述" 复选框" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="显示概述 复选框"::: lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    " **显示概述** " 复选框  
 :::image-end:::  
 
