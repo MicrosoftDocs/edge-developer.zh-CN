@@ -1,24 +1,24 @@
 ### YamlMime:Hub
 title: Microsoft Edge 文档
-summary: 了解 Microsoft Edge 文档。  了解如何通过浏览面向开发人员、管理员和用户的文档、教程和示例来使用 Microsoft Edge。
+summary: 浏览 Microsoft Edge 文档。  通过浏览开发人员、管理员和用户的文档、教程和示例，了解如何使用 Microsoft Edge。
 brand: m365
 metadata:
   title: Microsoft Edge 文档
-  description: 适用于开发人员、IT 管理员和浏览器用户的 Microsoft Edge 信息;包括 DevTools、Extensions、PWAs、WebDriver 等。
+  description: 开发人员、IT 管理员和浏览器用户的 Microsoft Edge 信息;包括 DevTools、扩展、PWA、WebDriver 等。
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 10/14/2020
+  ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 9400bf4be62a4050b7d6511386ee5e66777b18fd
-  ms.sourcegitcommit: 1ad087b00df16fd7718a5d95226de57e29b335e1
+  ms.openlocfilehash: 29518882f80892eb5799a2cda7991963aa55ba60
+  ms.sourcegitcommit: 92e1fa81efe2d176353b5e81098b0761c3539d55
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/14/2020
-  ms.locfileid: "11117810"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "11205747"
 highlightedContent:
   items:
-  - title: 'Microsoft Edge (正式的稳定频道) '
+  - title: 'Microsoft Edge (官方稳定渠道) '
     itemType: download
     url: https://www.microsoft.com/edge
   - title: Microsoft Edge Insider Channels
@@ -33,14 +33,14 @@ highlightedContent:
   - title: 如何使用 Microsoft Edge
     itemType: learn
     url: https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support
-  - title: 在企业中管理 Microsoft Edge
+  - title: 在企业版中管理 Microsoft Edge
     itemType: learn
     url: /deployedge/index
-  - title: 探索 web 开发人员功能
+  - title: 发现 Web 开发人员功能
     itemType: learn
     url: /microsoft-edge/index#microsoft-edge-for-developers
 conceptualContent:
-  title: Microsoft Edge 企业版
+  title: 适用于企业的 Microsoft Edge
   items:
   - title: 了解有关企业中的 Microsoft Edge 的信息
     links:
@@ -85,10 +85,10 @@ conceptualContent:
     - itemType: reference
       text: 更新策略参考
       url: /deployedge/microsoft-edge-update-policies
-  - title: 与企业社区接洽
+  - title: 与企业社区互动
     links:
     - itemType: reference
-      text: '企业技术社区 (预览体验成员) '
+      text: '企业技术社区 (会员中心) '
       url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
   - title: 适用于企业的扩展
     links:
@@ -106,7 +106,7 @@ additionalContent:
       links:
       - text: DevTools 概述
         url: /microsoft-edge/devtools-guide-chromium
-      - text: 初学者的 DevTools
+      - text: 面向初学者的开发工具
         url: /microsoft-edge/devtools-guide-chromium/beginners/html
       - text: 键盘快捷方式
         url: /microsoft-edge/devtools-guide-chromium/shortcuts
@@ -116,7 +116,7 @@ additionalContent:
         url: /microsoft-edge/devtools-guide-chromium/open
       - text: CSS
         url: /microsoft-edge/devtools-guide-chromium/css/index
-    - title: 测试 & 自动化
+    - title: 测试&自动化
       links:
       - text: 辅助功能
         url: /microsoft-edge/accessibility
@@ -126,23 +126,23 @@ additionalContent:
         url: /microsoft-edge/webdriver-chromium
       - text: Puppeteer
         url: /microsoft-edge/puppeteer
-      - text: '互操作 (网站兼容性) '
+      - text: '互操作 (站点兼容性) '
         url: /microsoft-edge/web-platform/site-impacting-changes
       - text: webhint
         url: https://webhint.io/docs/user-guide
       - text: 性能分析
         url: /microsoft-edge/performance-analysis
-    - title: 开始使用扩展
+    - title: 扩展入门
       links:
       - text: 扩展概述
         url: /microsoft-edge/extensions-chromium/index
       - text: 入门教程
         url: /microsoft-edge/extensions-chromium/getting-started/index
-      - text: 创建简单的扩展名
+      - text: 创建简单扩展
         url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
     - title: 扩展：开发人员指南
       links:
-      - text: 端口 Chromium 到 Microsoft Edge 的扩展
+      - text: 将 Chromium 扩展端口移植到 Microsoft Edge
         url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
       - text: 分发扩展的备用方法
         url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
@@ -152,13 +152,13 @@ additionalContent:
       links:
       - text: 分步发布过程
         url: /microsoft-edge/extensions-chromium/publish/publish-extension
-      - text: 打开开发者帐户
+      - text: 打开开发人员帐户
         url: /microsoft-edge/extensions-chromium/publish/create-dev-account
       - text: 更新扩展列表
         url: /microsoft-edge/extensions-chromium/publish/update
       - text: 管理帐户设置
         url: /microsoft-edge/extensions-chromium/publish/manage-settings
-    - title: 扩展： Microsoft Edge Addons 策略
+    - title: 扩展：Microsoft Edge 加载项策略
       links:
       - text: 内容安全策略
         url: /microsoft-edge/extensions-chromium/store-policies/csp
@@ -166,11 +166,11 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
     - title: 渐进式 Web 应用
       links:
-      - text: '概述 (Chromium) '
+      - text: 'Chromium (概述) '
         url: /microsoft-edge/progressive-web-apps-chromium/index
-      - text: " (Chromium 的渐进式 Web 应用入门) "
+      - text: '使用渐进式 Web 应用 (Chromium) '
         url: /microsoft-edge/progressive-web-apps-chromium/get-started
-      - text: 将 DevTools 与渐进式 Web 应用配合使用
+      - text: 将 DevTools 与渐进式 Web 应用一同使用
         url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
       - text: 脱机方案
         url: /microsoft-edge/progressive-web-apps-chromium/offline
@@ -192,19 +192,19 @@ additionalContent:
         url: /microsoft-edge/webview2/webview2-api-reference
   - title: 帮助和支持
     items:
-    - summary: 通过 Microsoft 问答&的社区专家获取建议和解答
-      title: Microsoft 问答&社区支持
+    - summary: 从 Microsoft 问答社区专家&解答
+      title: Microsoft 问答&支持
       url: /answers/topics/ms-edge.html
-    - summary: Microsoft 承诺确保你的应用在 Microsoft Edge 上正常工作。  如果你在最新版本的 Edge 中遇到业务应用或网站问题，Microsoft 可帮助你修复应用和网站，无需额外费用。  请参阅提供资格要求的详细信息。
-      title: 免费获得使用应用程序确保的成本帮助
-      url: /fasttrack/win-10-microsoft-edge
-    - summary: 如果您的企业需要对 Microsoft Edge 的即时技术支持，则可使用各种计划帮助您获得所需级别的支持，从而获得 Microsoft 的1:1 支持。
-      title: Microsoft 商业版支持
+    - summary: Microsoft 致力于确保你的应用在 Microsoft Edge 上正常工作。  如果在最新版本的 Edge 上遇到业务应用或网站问题，Microsoft 将帮助你修复应用和网站，无需额外付费。  有关资格要求，请参阅产品/服务详细信息。
+      title: 使用应用保证获取低成本帮助
+      url: https://fasttrack.microsoft.com/portal
+    - summary: 如果你的企业需要立即为 Microsoft Edge 提供技术支持，可以使用各种计划从 Microsoft 获得 1：1 支持，以帮助你获得所需的支持级别。
+      title: Microsoft 商业支持
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-    - summary: 帮助用户提供有用的支持资源。
+    - summary: 为用户提供有用的支持资源。
       title: 用户支持
       url: https://support.microsoft.com/microsoft-edge
-  - title: 参考和旧式文档
+  - title: 参考和旧文档
     items:
     - title: 参考
       links:
@@ -216,9 +216,9 @@ additionalContent:
         url: /microsoft-edge/visual-studio-code/index
       - text: 隐私白皮书
         url: /microsoft-edge/privacy-whitepaper
-    - title: Microsoft Edge 旧式文档
+    - title: Microsoft Edge 旧版文档
       links:
-      - text: " (EdgeHTML 的开发指南) "
+      - text: 'EdgeHTML (开发人员) '
         url: /microsoft-edge/dev-guide
       - text: 开发人员工具 (EdgeHTML)
         url: /microsoft-edge/devtools-guide
@@ -226,7 +226,7 @@ additionalContent:
         url: /microsoft-edge/devtools-protocol/index
       - text: 扩展 (EdgeHTML)
         url: /microsoft-edge/extensions/index
-      - text: PWAs (EdgeHTML) 入门
+      - text: 'EdgeHTML (PWA) '
         url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
       - text: JavaScript 运行时托管
         url: /microsoft-edge/hosting/javascript-runtime-hosting
