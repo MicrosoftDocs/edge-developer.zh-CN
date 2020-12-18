@@ -1,0 +1,224 @@
+# - name: Legacy Microsoft Edge documentation
+expanded: true
+items:
+  - name: 旧版开发人员指南
+    items:
+      - name: EdgeHtml (开发人员) 概述
+        href: dev-guide/index.md
+      - name: EdgeHTML 新增功能
+        href: dev-guide/whats-new.md
+        items:
+          - name: EdgeHTML 17
+            href: dev-guide/whats-new/edgeHTML-17.md
+          - name: EdgeHTML 16
+            href: dev-guide/whats-new/edgeHTML-16.md
+          - name: EdgeHTML 15
+            href: dev-guide/whats-new/edgeHTML-15.md
+          - name: EdgeHTML 14
+            href: dev-guide/whats-new/edgeHTML-14.md
+          - name: EdgeHTML 13
+            href: dev-guide/whats-new/edgeHTML-13.md
+          - name: EdgeHTML 12
+            href: dev-guide/whats-new/edgeHTML-12.md
+            items:
+              - name: JavaScript 版本信息
+                href: dev-guide/whats-new/javascript-version-information.md
+      - name: 浏览器功能
+        href: dev-guide/browser-features.md
+        items:
+          - name: 自动播放策略
+            href: dev-guide/browser-features/autoplay-policies.md
+          - name: Flash
+            href: dev-guide/browser-features/flash.md
+          - name: 阅读视图
+            href: dev-guide/browser-features/reading-view.md
+          - name: 搜索提供程序发现
+            href: dev-guide/browser-features/search-provider-discovery.md
+      - name: Windows 集成功能
+        href: dev-guide/windows-integration.md
+        items:
+          - name: 付款请求 API
+            href: dev-guide/windows-integration/Payment-Request-API.md
+          - name: Web 身份验证
+            href: dev-guide/windows-integration/web-authentication.md
+          - name: Web 通知 API
+            href: dev-guide/windows-integration/web-Notifications-API.md
+  - name: 旧版开发工具
+    items:
+      - name: 开发工具 (EdgeHTML) 概述
+        href: devtools-guide/index.md
+      - name: 新增功能
+        href: devtools-guide/whats-new.md
+        items:
+          - name: EdgeHTML 17
+            href: devtools-guide/whats-new/edgehtml-17.md
+          - name: EdgeHTML 16
+            href: devtools-guide/whats-new/edgehtml-16.md
+      - name: 元素
+        href: devtools-guide/elements.md
+        items:
+          - name: 样式
+            href: devtools-guide/elements/styles.md
+          - name: 已计算
+            href: devtools-guide/elements/computed.md
+          - name: 事件
+            href: devtools-guide/elements/events.md
+          - name: DOM 断点
+            href: devtools-guide/elements/dom-breakpoints.md
+          - name: 字体
+            href: devtools-guide/elements/fonts.md
+          - name: 辅助功能
+            href: devtools-guide/elements/accessibility.md
+          - name: 更改
+            href: devtools-guide/elements/changes.md
+      - name: 控制台
+        href: devtools-guide/console.md
+        items:
+          - name: 主机 API
+            href: devtools-guide/console/console-api.md
+          - name: 命令行
+            href: devtools-guide/console/command-line.md
+          - name: 错误和状态代码
+            href: devtools-guide/console/error-and-status-codes.md
+      - name: 调试程序
+        href: devtools-guide/debugger.md
+      - name: 网络
+        href: devtools-guide/network.md
+      - name: 性能
+        href: devtools-guide/performance.md
+      - name: 内存
+        href: devtools-guide/memory.md
+      - name: 存储
+        href: devtools-guide/storage.md
+      - name: 服务工作者
+        href: devtools-guide/service-workers.md
+      - name: 枚举
+        href: devtools-guide/emulation.md
+  - name: 旧版开发工具协议
+    items:
+      - name: 开发人员工具协议 (EdgeHTML)
+        href: devtools-protocol/index.md
+      - name: 0.1
+        href: devtools-protocol/0.1/index.md
+        items:
+          - name: 客户端
+            href: devtools-protocol/0.1/clients.md
+          - name: HTTP 终结点
+            href: devtools-protocol/0.1/http.md
+          - name: 域
+            href: devtools-protocol/0.1/domains/index.md
+            items:
+              - name: 调试程序
+                href: devtools-protocol/0.1/domains/debugger.md
+              - name: 页面
+                href: devtools-protocol/0.1/domains/page.md
+              - name: 运行时
+                href: devtools-protocol/0.1/domains/runtime.md
+              - name: 架构
+                href: devtools-protocol/0.1/domains/schema.md
+      - name: 0.2
+        href: devtools-protocol/0.2/index.md
+        items:
+          - name: 客户端
+            href: devtools-protocol/0.2/clients.md
+          - name: HTTP 终结点
+            href: devtools-protocol/0.2/http.md
+          - name: 域
+            href: devtools-protocol/0.2/domains/index.md
+            items:
+              - name: CSS
+                href: devtools-protocol/0.2/domains/css.md
+              - name: DOM
+                href: devtools-protocol/0.2/domains/dom.md
+              - name: DOMDebugger
+                href: devtools-protocol/0.2/domains/domdebugger.md
+              - name: 调试程序
+                href: devtools-protocol/0.2/domains/debugger.md
+              - name: 覆盖
+                href: devtools-protocol/0.2/domains/overlay.md
+              - name: 页面
+                href: devtools-protocol/0.2/domains/page.md
+              - name: 运行时
+                href: devtools-protocol/0.2/domains/runtime.md
+              - name: 架构
+                href: devtools-protocol/0.2/domains/schema.md
+  - name: 旧版扩展
+    items:
+      - name: 扩展 (EdgeHTML)
+        href: extensions/index.md
+      - name: API 支持
+        href: extensions/API-support.md
+        items:
+          - name: 扩展 API 路线图
+            href: extensions/API-support/extension-API-roadmap.md
+          - name: 支持的 API
+            href: extensions/API-support/supported-APIs.md
+          - name: 支持的清单密钥
+            href: extensions/API-support/supported-manifest-keys.md
+            items:
+              - name: JSON 清单示例
+                href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
+      - name: 适用于企业的扩展
+        href: extensions/extensions-for-enterprise.md
+      - name: 即刻体验
+        href: extensions/getting-started.md
+      - name: 指南
+        href: extensions/guides.md
+        items:
+          - name: 辅助功能
+            href: extensions/guides/accessibility.md
+          - name: 添加和删除扩展
+            href: extensions/guides/adding-and-removing-extensions.md
+          - name: 创建扩展
+            href: extensions/guides/creating-an-extension.md
+          - name: 调试扩展
+            href: extensions/guides/debugging-extensions.md
+          - name: 设计
+            href: extensions/guides/design.md
+          - name: 国际化
+            href: extensions/guides/internationalization.md
+          - name: 本机消息传递
+            href: extensions/guides/native-messaging.md
+          - name: 打包
+            href: extensions/guides/packaging.md
+            items:
+              - name: 创建和测试扩展包
+                href: extensions/guides/packaging/creating-and-testing-extension-packages.md
+              - name: Windows 开发人员中心扩展
+                href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
+              - name: 本地化扩展包
+                href: extensions/guides/packaging/localizing-extension-packages.md
+              - name: 使用 ManifoldJS 打包扩展
+                href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
+              - name: 运行 Windows 应用认证工具包
+                href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
+          - name: 移植 Chrome 扩展
+            href: extensions/guides/porting-Chrome-extensions.md
+      - name: 提示和技巧
+        href: extensions/tips-and-tricks.md
+      - name: 疑难解答
+        href: extensions/troubleshooting.md
+  - name: 旧版托管
+    href: hosting/toc.md
+  - name: 旧版性能分析
+    href: performance-analysis/index.md
+  - name: 旧版渐进式 Web 应用
+    items:
+      - name: 渐进式 Web 应用 (EdgeHTML)
+        href: progressive-web-apps/index.md
+      - name: PWA (EdgeHTML) 入门
+        href: progressive-web-apps/get-started.md
+      - name: 为 Windows 定制你的 PWA
+        href: progressive-web-apps/windows-features.md
+        items:
+          - name: 适用于 Xbox 的 PWA
+            href: progressive-web-apps/xbox-considerations.md
+      - name: Microsoft Store 中的 PWA
+        href: progressive-web-apps/microsoft-store.md
+  - name: 旧版 WebDriver
+    items:
+      - name: WebDriver (EdgeHTML) 概述
+        href: webdriver/index.md
+  - name: Windows 运行时 (WinRT)
+    href: windows-runtime/toc.yml
+    topicHref: windows-runtime/index.md
