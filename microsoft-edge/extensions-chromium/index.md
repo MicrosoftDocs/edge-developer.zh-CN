@@ -1,34 +1,34 @@
 ---
-description: Microsoft Edge (Chromium) 扩展以及构建和发布浏览器扩展的概述。
+description: Microsoft Edge (Chromium) 扩展以及生成和发布浏览器扩展的概述。
 title: Microsoft Edge (Chromium) 扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 10/27/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: 边缘、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员、chromium 扩展
-ms.openlocfilehash: 85858fc7e1159db3175c3a67c3cfd5f6dfbb448f
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， chromium 扩展
+ms.openlocfilehash: 04b9ffb7ec175bad4f980310819ea6d3551ef9f8
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104698"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230941"
 ---
-# Microsoft Edge (Chromium) 扩展 
+# Microsoft Edge (Chromium) 扩展概述 
 
-扩展是您 (开发人员的小程序 \ ) 可能会用来将新功能添加到 Microsoft Edge \ (Chromium \ ) 或修改现有功能。  扩展旨在通过提供对目标受众非常重要的小功能来改善用户的日常浏览体验。  
+扩展是开发人员 \ (\) 可能用于将新功能添加到 Microsoft Edge \ (Chromium\) 或修改现有功能的一个小程序。  扩展旨在通过提供对目标受众非常重要的小范围功能来改进用户日常浏览体验。  
 
-如果你的想法或产品依赖于特定的 web 浏览器的可用性，或者补充你希望提供的功能扩展现有网站的浏览体验，则可以创建扩展。  附带体验的示例包括 adblockers 和密码管理器。  
+如果您的想法或产品依赖于特定 Web 浏览器的可用性，您可以创建扩展，也可以增强要提供的功能扩展现有网站的浏览体验。  配套体验的示例包括 adblockers 和密码管理器。  
 
-扩展的结构类似于常规 web 应用。  它至少包含应用清单 JSON 文件，该文件包含基本平台信息、用于定义功能的 JavaScript 文件以及 HTML 和 CSS 文件，以根据需要确定用户界面 \ (的外观 \ ) 。  若要直接处理部分浏览器（如窗口或选项卡），必须发送 API 请求，并且通常按名称引用浏览器。  
+扩展的结构类似于常规 Web 应用。  它至少包括一个包含基本平台信息的应用清单 JSON 文件、一个定义功能的 JavaScript 文件，以及一个 HTML 和 CSS 文件，用于确定用户界面 \ (的外观（如果需要\) ）。  若要直接使用部分浏览器（如窗口或选项卡），必须发送 API 请求并经常按名称引用浏览器。  
 
 :::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Microsoft Edge (Chromium) 扩展":::
-  Microsoft Edge \ (Chromium \ ) 扩展名  
+  Microsoft Edge \ (Chromium\) 扩展  
 :::image-end:::  
 
 ## 基本指南  
 
-一些最热门的浏览器可用于包含 Safari、Firefox、Chrome、Opera、Brave 和 Microsoft Edge。  开始扩展开发教程和文档检索的好地方是由浏览器组织托管的网站。  下表不是明确的，请将其用作有用的起始点。  
+要构建的一些最受欢迎的浏览器包括 Safari、Firefox、Chrome、Opera、Opera 和 Microsoft Edge。  浏览器组织托管的网站是开始扩展开发教程和文档研究的地方。  下表并不明确，请使用它作为一个有用的起点。  
 
 | Web 浏览器 | 基于 Chromium？ | 扩展开发主页 |  
 |:--- |:--- |:--- |  
@@ -36,105 +36,105 @@ ms.locfileid: "11104698"
 | Firefox | 否 | [developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions][MDNWebextensions] |  
 | 镶边 | 是 | [developer.chrome.com/extensions][ChromeDeveloperExtensions] |  
 | Opera | 是 | [dev.opera.com/extensions][OperaDevExtensions] |  
-| Brave | 是 | 使用 [Chrome Web Store][GoogleChromeWebstoreCategoryExtensions] |  
-| 新的 Microsoft Edge | 是 | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
+| 百万 | 是 | 使用 [Chrome Web 应用商店][GoogleChromeWebstoreCategoryExtensions] |  
+| 新 Microsoft Edge | 是 | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
 
 > [!IMPORTANT]
-> 网站的许多教程都使用特定于浏览器的 Api，这些 Api 可能与你要开发的浏览器不匹配。  在大多数情况下，Chromium 扩展在不同的 Chromium 浏览器中工作，并且 Api 按预期工作。  只有一些较少的常见 Api 才能严格地特定于浏览器。  有关教程的链接，请参阅另 [请参阅](#see-also)。  
+> 许多网站教程使用与要开发浏览器不匹配的特定于浏览器的 API。  在大多数情况下，Chromium 扩展的工作方式与不同 Chromium 浏览器相同，API 按预期工作。  只有一些不太常见的 API 可能完全特定于浏览器。  有关指向教程的链接，请参阅 [另请参阅](#see-also)。  
 
-## 为什么 Chromium？
+## 为什么使用 Chromium？
 
-如果你的目标是将扩展发布到尽可能多的浏览器扩展存储，则必须针对多个版本对其进行修改，以便在每个不同的浏览器环境中进行目标和运行。  与其他扩展类型不同， [Safari 扩展][AppleDeveloperSafariservicesAppExtensions]可以利用 web 和本机代码与对应的本机应用程序进行通信。  [Firefox 扩展][MDNWebextensions] 与其他扩展类型共享更多的内容，但也有一些 [差异][ExtensionworkshopPorting] 需要考虑。  但有一些好消息，上面的图表中的最后四个浏览器能够利用相同的代码程序包，并最大程度地减少更改和维护并行版本的要求。  这是因为浏览器基于 [Chromium 开放源代码项目][|::ref1::|Home]。  
+如果您的目标是将扩展发布到尽可能多的浏览器扩展存储，则必须针对多个版本对其进行修改，以便定位并在每个不同的浏览器环境中运行。  [与其他扩展][AppleDeveloperSafariservicesAppExtensions]类型不同，Safari 扩展可能利用 Web 和本机代码与对应的本机应用程序进行通信。  [Firefox 扩展][MDNWebextensions] 与其他扩展类型共享得更为常见，但还需要考虑 [一些][ExtensionworkshopPorting] 差异。  但是，有一些好消息;上图中的最后四个浏览器能够利用同一代码包，并最大限度地减少更改和维护并行版本的需求。  这是因为浏览器基于 [Chromium 开放源代码项目][|::ref1::|Home]。  
 
-通过创建 Chromium 扩展，你可以写入最少的代码，以最大程度地增加目标扩展存储的数量，并且最终可以找到并获取你的扩展的用户数。  
+通过创建 Chromium 扩展，您可以编写最少的代码，以最大程度地增加目标扩展存储的数量，并最终增加能够查找和获取扩展的用户数。  
 
-以下内容主要关注 Chromium 扩展。  
+以下内容主要侧重于 Chromium 扩展。  
 
 ## 浏览器兼容性和扩展测试  
 
-有时，Chromium 浏览器之间不存在 API 奇偶校验。  例如，标识和支付 Api 之间存在差异。  为确保您的扩展满足客户期望值，请通过官方浏览器文档（如 [Chrome api][ChromeDeveloperExtensionsApiIndex]、 [Opera 支持的扩展 Api][OperaDevExtensionsApis]和 [端口 CHROME (扩展][ExtensionsChromiumDeveloperGuidePortChrome]）查看 API 状态，Chromium) Edge。  
+有时，Chromium 浏览器之间不存在 API 奇偶校验。  例如，标识和付款 API 存在差异。  若要确保扩展符合客户期望，请通过官方浏览器文档（如[Chrome API、Opera][ChromeDeveloperExtensionsApiIndex]中支持的[][OperaDevExtensionsApis]扩展 API 和 Microsoft [ (Chromium][ExtensionsChromiumDeveloperGuidePortChrome]) Edge 的端口 Chrome 扩展）查看 API 状态。  
 
-根据你所需的 Api，这些差异可能意味着你必须在每个应用商店的代码中创建稍有不同的代码包。  
+根据你需要的 API，这些差异可能意味着你必须创建略有不同的代码包，每个存储的代码差异很小。  
 
-开发扩展时，在将扩展提交到浏览器存储之前，你可以在浏览器中旁加载，以在不同的环境中对其进行测试。  
+开发扩展时，你可以先在浏览器中旁加载它，以在不同环境中测试它，然后再将扩展提交到浏览器存储。  
 
 ## 将扩展发布到浏览器存储  
 
-你可以在以下浏览器存储中提交和查找浏览器扩展。  
+你可以提交并查找以下浏览器存储中的浏览器扩展。  
 
 *   [Firefox 浏览器加载项][MozillaAddonsFirefoxExtensions]  
 *   [Chrome Web Store][GoogleChromeWebstoreCategoryExtensions]  
-*   [Opera addons][OperaAddonsExtensions]  
+*   [操作加载项][OperaAddonsExtensions]  
 *   [Microsoft Edge 加载项][MicrosoftEdgeAddonsCategoryExtensions]  
 
-某些商店允许您从其他浏览器下载列出的扩展。  从另一个浏览器下载可能会将您 (开发人员 \ ) 的工作，如果用户能够导航到不同浏览器中的现有应用商店列表，则可以删除向其他商店提交的要求。  但是，浏览器存储不保证跨浏览器访问。  为了确保你的用户能够在不同的浏览器中找到你的扩展，你应该在每个浏览器扩展存储中维护一个列表。  
+某些应用商店允许你从其他浏览器下载列出的扩展。  从另一个浏览器下载可以提前节省开发人员 \ (\) 工作量，并删除在用户能够跨不同浏览器导航到现有应用商店一览时提交到其他应用商店的要求。  但是，浏览器存储无法保证跨浏览器访问。  若要确保用户能够在不同的浏览器中查找扩展，应维护每个浏览器扩展存储上的一览。  
 
-扩展可能具有重叠的访问群体，这些受众经常使用多个浏览器，或者你可能会发现它应该面向的读者不是以前的浏览器。  若要实现此目的，现有的 Chromium 扩展可能会从一个浏览器迁移到另一个浏览器。  
+扩展可能具有经常使用多个浏览器的重叠访问群体，或者你可能会发现它应面向之前没有访问群体。  为此，现有 Chromium 扩展可能从一个浏览器迁移到另一个浏览器。  
 
 ### 将现有扩展迁移到 Microsoft Edge  
 
-如果你已为另一个 Chromium 浏览器开发了扩展，并且想要提供它并确保它通过 Microsoft Edge 工作，则不必重写你的扩展。  只要你使用的 Api 在不同的浏览器上可用，或者存在提供所需功能的其他 Api，将现有的 Chromium 扩展迁移到其他 Chromium 浏览器就非常简单。  
+如果你已针对另一个 Chromium 浏览器开发了扩展，并且想要提供它并确保它通过 Microsoft Edge 运行，则不需要重写扩展。  将现有 Chromium 扩展迁移到其他 Chromium 浏览器非常简单，只要你使用的 API 在不同浏览器上可用，或者存在提供所需功能的其他 API。  
 
-有关移植你的 Chrome 扩展的详细信息，请参阅 [向 Microsoft (Chromium) Edge 的端口 Chrome 扩展][ExtensionsChromiumDeveloperGuidePortChrome]。  将扩展移植到目标浏览器后，下一步是发布它。  
+有关移植 Chrome 扩展详细信息，请参阅将 Chrome 扩展移植到 Microsoft ([Chromium) Edge。][ExtensionsChromiumDeveloperGuidePortChrome]  将扩展移植到目标浏览器后，下一步是发布它。  
 
 ### 发布到 Microsoft Edge 加载项网站  
 
-若要开始将扩展发布到 Microsoft Edge，您必须注册一个包含 MSA 电子邮件帐户的 [开发者帐户][MicrosoftDeveloperRegistration] \ ( @outlook .com、@live ) .com 等，以便在应用商店中提交您的扩展列表。  选择要注册的电子邮件地址时，请考虑是否必须与组织中的其他人一起转移或共享该扩展名的所有权。  注册完成后，您可以创建一个新的向应用商店提交的扩展。  
+若要开始将扩展发布到 Microsoft Edge，必须使用[][MicrosoftDeveloperRegistration]MSA 电子邮件帐户 \ (@outlook.com、@live.com 等注册开发人员帐户\) 才能在应用商店中提交扩展列表。  选择要注册的电子邮件地址时，请考虑是否必须与组织其他人转移或共享扩展的所有权。  注册完成后，你可以创建新的到应用商店的扩展提交。  
 
 若要将扩展提交到应用商店，必须满足以下要求。  
 
-*   存档 \ ( .zip \ ) 文件，其中包含你的代码文件。  
-*   所有所需的视觉资源，包括徽标和小型促销图块。  
-*   可选促销媒体，如屏幕截图、较大的促销图块、URL 或与您的分机的视频相结合的任意组合。  
-*   描述你的扩展的信息，如名称、简短说明、详细说明和指向隐私策略的链接。  
+*   包含代码文件的存档 \ (.zip\) 文件。  
+*   所有必需的视觉资源，包括徽标和小型促销磁贴。  
+*   可选促销媒体，如屏幕截图、较大的促销磁贴、URL 或你的扩展视频的任意组合。  
+*   描述扩展的信息，例如名称、简短说明、长描述和隐私策略链接。  
 
 > [!NOTE]
-> 不同的存储可能具有不同的提交要求。  上面的列表总结了将扩展发布到 Microsoft Edge 的 [要求][ExtensionsChromiumPublish] 。  
+> 不同的应用商店可能有不同的提交要求。  上述列表 [总结了向][ExtensionsChromiumPublish] Microsoft Edge 发布扩展的要求。  
 
-完成提交过程后，将审阅您的扩展，并通过或失败认证过程。  将通知所有者，并根据需要执行后续步骤。  如果你向应用商店提交更新的扩展名（包括对扩展列表详细信息的更新），则会启动新的审阅过程。  
+完成提交过程后，你的扩展将经过审查，并且通过或未能通过认证过程。  将通知所有者结果，并按需要提供下一步。  如果向应用商店提交更新的扩展，包括扩展一览详细信息的更新，将启动新的审阅过程。  
 
 ## 另请参阅  
 
 *   [移植 Google Chrome 扩展][ExtensionworkshopPorting]  
-*   [构建 Safari 应用扩展][AppleDeveloperSafariservicesAppExtensionsBuilding]  
-*   [你的第一个扩展 (Firefox) ][MDNWebextensionsYourFirst]  
-*   [入门教程 (Chrome) ][ChromeDeveloperExtensionsGetstarted]  
-*   [ (Opera 入门) ][OperaDevExtensionsGettingStarted]  
-*   [Microsoft Edge 入门 (Chromium) 扩展][ExtensionsChromiumGettingStartedIndex]  
+*   [生成 Safari 应用扩展][AppleDeveloperSafariservicesAppExtensionsBuilding]  
+*   [Firefox (的第一个) ][MDNWebextensionsYourFirst]  
+*   [Chrome (入门) ][ChromeDeveloperExtensionsGetstarted]  
+*   [操作 (入门) ][OperaDevExtensionsGettingStarted]  
+*   [Microsoft Edge (Chromium) 扩展入门][ExtensionsChromiumGettingStartedIndex]  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md &quot;将端口 Chrome 扩展到 Microsoft (Chromium) Edge |Microsoft 文档&quot;  
-[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md &quot;Microsoft Edge 入门 (Chromium) 扩展 |Microsoft 文档&quot;  
-[ExtensionsChromiumPublish]: ./publish/publish-extension.md &quot;发布扩展 |Microsoft 文档&quot;  
+[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "将 Chrome 扩展移植到 Microsoft (Chromium) Edge |Microsoft Docs"  
+[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Microsoft Edge (Chromium) 扩展入门 |Microsoft Docs"  
+[ExtensionsChromiumPublish]: ./publish/publish-extension.md "发布扩展 |Microsoft Docs"  
 
-[MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions &quot;开发 Microsoft Edge 的扩展 |Microsoft 开发人员&quot;  
-[MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration &quot;合作伙伴中心 |Microsoft 开发人员&quot;  
+[MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "开发 Microsoft Edge 扩展 |Microsoft 开发人员"  
+[MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "合作伙伴中心 |Microsoft 开发人员"  
 
-[MicrosoftEdgeAddonsCategoryExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions &quot;Microsoft Edge 的扩展 |Microsoft Edge&quot;  
+[MicrosoftEdgeAddonsCategoryExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge 的扩展 |Microsoft Edge"  
 
-[AppleDeveloperSafariservicesAppExtensions]: https://developer.apple.com/documentation/safariservices/safari_app_extensions &quot;Safari 应用扩展 |Apple 开发人员&quot;  
-[AppleDeveloperSafariservicesAppExtensionsBuilding]: https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension &quot;构建 Safari 应用扩展 |Apple 开发人员&quot;  
+[AppleDeveloperSafariservicesAppExtensions]: https://developer.apple.com/documentation/safariservices/safari_app_extensions "Safari 应用扩展 |Apple 开发人员"  
+[AppleDeveloperSafariservicesAppExtensionsBuilding]: https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension "生成 Safari 应用扩展 |Apple 开发人员"  
 
-[ChromeDeveloperExtensions]: https://developer.chrome.com/extensions &quot;什么是扩展？ |Chrome 开发人员&quot;  
-[ChromeDeveloperExtensionsApiIndex]: https://developer.chrome.com/extensions/api_index &quot;Chrome Api |Chrome 开发人员&quot;  
-[ChromeDeveloperExtensionsGetstarted]: https://developer.chrome.com/extensions/getstarted &quot;入门教程 |Chrome 开发人员&quot;  
+[ChromeDeveloperExtensions]: https://developer.chrome.com/extensions "什么是扩展？ |Chrome 开发人员"  
+[ChromeDeveloperExtensionsApiIndex]: https://developer.chrome.com/extensions/api_index "Chrome API |Chrome 开发人员"  
+[ChromeDeveloperExtensionsGetstarted]: https://developer.chrome.com/extensions/getstarted "入门教程 |Chrome 开发人员"  
 
-[ChromiumHome]: https://www.chromium.org/Home &quot;Chromium&quot;  
+[ChromiumHome]: https://www.chromium.org/Home "Chromium"  
 
-[ExtensionworkshopPorting]: https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension &quot;移植 Google Chrome 扩展 |延长研讨会&quot;  
+[ExtensionworkshopPorting]: https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension "移植 Google Chrome 扩展 |扩展研讨会"  
 
-[GoogleChromeWebstoreCategoryExtensions]: https://chrome.google.com/webstore/category/extensions &quot;扩展名 |Chrome Web Store&quot;  
+[GoogleChromeWebstoreCategoryExtensions]: https://chrome.google.com/webstore/category/extensions "扩展 |Chrome Web Store"  
 
-[MDNWebextensions]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions &quot;浏览器扩展 |MDN&quot;  
-[MDNWebextensionsYourFirst]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension &quot;您的第一个扩展 |MDN&quot;  
+[MDNWebextensions]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions "浏览器扩展 |MDN"  
+[MDNWebextensionsYourFirst]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension "你的第一个扩展 |MDN"  
 
-[MozillaAddonsFirefoxExtensions]: https://addons.mozilla.org/firefox/extensions &quot;扩展名 |Firefox 的加载项&quot;  
+[MozillaAddonsFirefoxExtensions]: https://addons.mozilla.org/firefox/extensions "扩展 |Firefox 加载项"  
 
-[OperaAddonsExtensions]: https://addons.opera.com/extensions &quot;扩展名 |Opera Addons&quot;  
+[OperaAddonsExtensions]: https://addons.opera.com/extensions "扩展 |Opera Addons"  
 
-[OperaDevExtensions]: https://dev.opera.com/extensions &quot;扩展文档 |开发人员的 Opera&quot;  
-[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis &quot;Opera 中支持的扩展 Api |开发人员的 Opera&quot;  
-[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started &quot;入门 |开发人员的 Opera"  
+[OperaDevExtensions]: https://dev.opera.com/extensions "扩展文档 |Dev.Opera"  
+[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "操作中支持的扩展 API |Dev.Opera"  
+[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started "入门 |Dev.Opera"  

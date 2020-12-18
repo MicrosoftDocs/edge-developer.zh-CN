@@ -1,18 +1,18 @@
 ---
-description: 打开 "命令" 菜单并运行 "禁用 JavaScript" 命令。
-title: 通过 Microsoft Edge DevTools 禁用 JavaScript
+description: 打开命令菜单并运行"禁用 JavaScript"命令。
+title: 使用 Microsoft Edge DevTools 禁用 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4a200e2faa303a12d46fe2daf7ba89226a985b1f
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: f7aafee4b05f843319a4a744e6cba148d4642667
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124717"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230668"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,45 +28,45 @@ ms.locfileid: "11124717"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 通过 Microsoft Edge DevTools 禁用 JavaScript  
+# 使用 Microsoft Edge DevTools 禁用 JavaScript  
 
-完成以下操作可查看禁用 JavaScript 时网页的外观和行为。  
+完成以下操作以查看禁用 JavaScript 时网页的外观和行为。  
 
-1.  [打开 Microsoft Edge DevTools][DevToolsOpen]。  
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  [打开 Microsoft Edge DevTools。][DevToolsOpen]  
+1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  开始键入 `javascript` ，选择 " **禁用 JavaScript**"，然后选择 `Enter` 运行命令。  JavaScript 现在已被禁用。  
+1.  开始键入 `javascript` ，选择 **"禁用 JavaScript"，** 然后选择 `Enter` 运行命令。  JavaScript 现已禁用。  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       在 "**命令" 菜单**中选择 "**禁用 JavaScript** "  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择"禁用 JavaScript"" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       在 **命令菜单中** 选择"禁用 **JavaScript"**  
     :::image-end:::  
     
-    " **来源** " 旁边的黄色警告图标会提醒你已禁用 JavaScript。  
+    源旁边的黄色警告 **图标** 提醒你已禁用 JavaScript。  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       "**源**" 旁边的 "警告" 图标  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="源旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       源旁边的警告 **图标**  
     :::image-end:::  
     
-只要已打开 DevTools，JavaScript 就会在选项卡中保持禁用状态。  
+只要打开 DevTools，JavaScript 在选项卡中保持禁用状态。  
 
-你可能需要重新加载页面以查看页面是否以及页面在加载时是否依赖 JavaScript。  
+您可能需要重新加载页面，以查看页面在加载时是否以及如何依赖 JavaScript。  
 
 若要重新启用 JavaScript，请完成以下操作。  
 
-*   再次打开 " **命令" 菜单** 并运行 `Enable JavaScript` 命令。  
+*   再次打开 **命令菜单** 并运行 `Enable JavaScript` 命令。  
 *   关闭 DevTools。  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## 联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "打开 Microsoft Edge DevTools |Microsoft 文档"  
+[DevToolsOpen]: ../open/index.md "打开 Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

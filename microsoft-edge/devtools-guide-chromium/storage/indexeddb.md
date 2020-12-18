@@ -1,18 +1,18 @@
 ---
-description: 如何通过应用程序面板和代码段查看和更改 IndexedDB 数据。
-title: 通过 Microsoft Edge DevTools 查看和更改 IndexedDB 数据
+description: 如何使用应用程序面板和代码段查看和更改 IndexedDB 数据。
+title: 使用 Microsoft Edge DevTools 查看和更改 IndexedDB 数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 54d232780e5e071ce34cdfb55e12daed6f631491
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 03e6d04050677a0ba153c6adc06dd795cc42115d
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125431"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231200"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,79 +28,79 @@ ms.locfileid: "11125431"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# 通过 Microsoft Edge DevTools 查看和更改 IndexedDB 数据  
+# 使用 Microsoft Edge DevTools 查看和更改 IndexedDB 数据  
 
-本指南介绍如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看和更改 [IndexedDB][MDNIndexedDBAPI] 数据。  它假定你熟悉 DevTools。  它还假定你熟悉 IndexedDB。  如果不是，请导航到 [使用 IndexedDB][MDNUsingIndexedDB]。  
+本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看和更改 [IndexedDB][MDNIndexedDBAPI] 数据。  它假定你熟悉 DevTools。  它还假定你熟悉 IndexedDB。  如果不是，请导航到["使用 IndexedDB"。][MDNUsingIndexedDB]  
 
 ## 查看 IndexedDB 数据  
 
-1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  默认情况下， **清单** 窗格是默认打开的。  
+1.  选择 **"应用程序"** 选项卡以打开 **应用程序** 工具。  清单 **窗格** 通常默认打开。  
     
     :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest-empty.msft.png":::
-       **清单**窗格  
+       清单**窗格**  
     :::image-end:::  
     
-1.  展开 " **IndexedDB** " 菜单以查看哪些数据库可用。  
+1.  展开 **IndexedDB** 菜单，查看哪些数据库可用。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="IndexedDB 菜单" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
        **IndexedDB**菜单  
     :::image-end:::  
     
-    *   \ (![ 数据库图标 ][ImageDatabaseIcon] \ ) `notes - https://mdn.github.io` 表示数据库，其中 `notes` 是数据库的名称， `https://mdn.github.io` 是访问数据库的来源。  
-    *   \ (![ 对象存储图标 ][ImageObjectStoreIcon] \ ) `notes` 是对象存储。  
-    *   "**标题**" 和 "**正文**" 是[索引][MDNUsingIndexedDBUsingIndex]。  
+    *   \ (Database ![ icon ][ImageDatabaseIcon] \) `notes - https://mdn.github.io` represents a database， where is the name `notes` of the database and is the origin that `https://mdn.github.io` accesses the database.  
+    *   \ (![ 对象存储图标 ][ImageObjectStoreIcon] \) `notes` 对象存储。  
+    *   **标题** 和 **正文** 是 [索引][MDNUsingIndexedDBUsingIndex]。  
     
     > [!NOTE]
-    > **已知限制**  第三方数据库不可见。  例如，如果你使用将 `<iframe>` 广告嵌入到你的页面上，而你的广告网络使用 IndexedDB，则你的广告网络的 IndexedDB 数据将不可见。  请参阅 [问题 #943770][ChromiumIssue943770]。  
+    > **已知限制**  第三方数据库不可见。  例如，如果使用 an 在页面上嵌入广告，并且广告网络使用 `<iframe>` IndexedDB，则广告网络的 IndexedDB 数据将不可见。  导航到[#943770。][ChromiumIssue943770]  
     
-1.  选择一个数据库以查看原始版本号和版本号。  
+1.  选择一个数据库来查看源和版本号。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
-       **Notes**数据库  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="备注数据库" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+       **备注**数据库  
     :::image-end:::  
     
-1.  选择一个对象存储以查看键/值对。  
+1.  选择对象存储查看键值对。  
     
     > [!NOTE]
-    > IndexedDB 数据不会实时更新。  请参阅 [刷新 IndexedDB 数据](#refresh-indexeddb-data)。  
+    > IndexedDB 数据不会实时更新。  导航到 [刷新 IndexedDB 数据](#refresh-indexeddb-data)。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
-       **Notes**对象存储  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="notes 对象存储" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+       **notes**对象存储  
     :::image-end:::  
     
-    *   **Total entries** 指对象存储中的键值对的总数。  
-    *   "**密钥生成器" 值**是下一个可用键。  此字段仅在使用 [密钥生成器][MDNBasicConceptsKeyGenerator]时显示。  
+    *   **总条目** 是对象存储中键值对的总数。  
+    *   **密钥生成器值** 是下一个可用密钥。  此字段仅在使用密钥生成器 [时显示][MDNBasicConceptsKeyGenerator]。  
     
-1.  在 " **值** " 列中选择一个单元格以展开该值。  
+1.  选择" **值"列中** 的单元格以展开该值。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="查看 IndexedDB 值" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
        查看 **IndexedDB** 值  
     :::image-end:::  
     
-1.  选择下图中的 " **标题** " 或 " **正文** " 等索引，以便根据该索引的值对对象存储进行排序。  
+1.  选择一个索引，如**** 下图中**** 的标题或正文，以根据该索引的值对对象存储进行排序。  
    
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="按索引对对象存储进行排序" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
        按索引对对象存储进行排序  
     :::image-end:::  
     
 ## 刷新 IndexedDB 数据  
 
-IndexedDB 不会实时更新 **应用程序** 面板中的值。  **Refresh** ![ ][ImageReloadIcon] 在查看对象存储以刷新数据时，选择 "刷新 \ (刷新 \ ) "，或者查看数据库并选择 "**刷新数据库**" 以刷新所有数据。  
+应用程序工具中的 IndexedDB 值不会实时更新。 ****  选择 **"刷新** (刷新\) 对象存储时刷新数据，或查看数据库，然后选择"刷新数据库"以 ![ ][ImageReloadIcon] 刷新所有数据。 ****  
 
-:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="查看数据库" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    查看数据库  
 :::image-end:::  
 
 ## 编辑 IndexedDB 数据  
 
-IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是，由于 DevTools 有权访问页面上下文，因此你可能会在 DevTools 内运行 JavaScript 代码以编辑 IndexedDB 数据。  
+无法从应用程序工具编辑 IndexedDB 键 **和** 值。  但是，由于 DevTools 可以访问页面上下文，因此您可以在 DevTools 中运行 JavaScript 代码来编辑 IndexedDB 数据。  
 
-### 用代码段编辑 IndexedDB 数据  
+### 使用代码段编辑 IndexedDB 数据  
 
-[代码段][DevtoolsJavascriptSnippets] 是在 DevTools 中存储和运行 JavaScript 代码块的一种方法。  运行代码段时，会将结果记录到 **控制台**。  你可以使用代码段来运行 JavaScript 代码以编辑 IndexedDB 数据库。  
+[代码][DevtoolsJavascriptSnippets] 段是一种在 DevTools 中存储和运行 JavaScript 代码块的方法。  运行代码段时，结果将记录到 **控制台**。  可以使用代码段运行 JavaScript 代码来编辑 IndexedDB 数据库。  
 
-:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="清单窗格" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
-   使用代码段与 IndexedDB 交互  
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="使用代码段与 IndexedDB 进行交互" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+   使用代码段与 IndexedDB 进行交互  
 :::image-end:::  
 
 ## 删除 IndexedDB 数据  
@@ -108,48 +108,48 @@ IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是�
 ### 删除 IndexedDB 键值对  
 
 1.  [查看 IndexedDB 对象存储](#view-indexeddb-data)。  
-1.  选择要删除的键/值对。  DevTools 将突出显示它以指示它已选中。  
+1.  选择要删除的键值对。  DevTools 突出显示它以指示已选中。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
-       选择一个键/值对以删除它  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="选择键值对以将其删除" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+       选择键值对以将其删除  
     :::image-end:::  
     
-1.  按下 `Delete` 键或选择 " **删除所选** 项 \" (" ![ 删除所选项 \ ][ImageDeleteIcon] ) "。  
+1.  按该 `Delete` 键或选择****"删除所选\ (![ 删除所选 ][ImageDeleteIcon] \) 。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
-       删除键值对后，对象存储的外观  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="对象存储在键值对被删除后的外观" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+       对象存储在键值对被删除后的外观  
     :::image-end:::  
     
-### 删除对象存储中的所有键/值对  
+### 删除对象存储中所有键值对  
 
 1.  [查看 IndexedDB 对象存储](#view-indexeddb-data)。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="查看对象存储" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
        查看对象存储  
     :::image-end:::  
     
-1.  选择 " **清除对象存储** \ (![ 清除对象存储 ][ImageClearIcon] \ ) "。  
+1.  Choose **Clear object store** \ (Clear object store ![ ][ImageClearIcon] \) .  
     
 ### 删除 IndexedDB 数据库  
 
-1.  查看要删除的[IndexedDB 数据库](#view-indexeddb-data)。  
-1.  选择 " **删除数据库**"。  
+1.  [查看要删除的 IndexedDB](#view-indexeddb-data) 数据库。  
+1.  选择 **"删除数据库"。**  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
-       " **删除数据库** " 按钮  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text=""删除数据库"按钮" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+       " **删除数据库"** 按钮  
     :::image-end:::  
     
 ### 删除所有 IndexedDB 存储  
 
-1.  打开 " **清除存储** " 窗格。  
-1.  确保已启用 " **IndexedDB** " 复选框。  
-1.  选择 " **清除网站数据**"。  
+1.  打开 **"清除存储"** 窗格。  
+1.  确保已启用 **IndexedDB** 复选框。  
+1.  选择 **"清除网站数据"。**  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
-       " **清除存储** " 窗格  
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text=""清除存储"窗格" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+       " **清除存储"** 窗格  
     :::image-end:::  
     
-## 与 Microsoft Edge 开发人员工具团队联系  
+## 联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -163,15 +163,15 @@ IndexedDB 键和值不能通过 **应用程序** 面板进行编辑。  但是�
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "在具有 Microsoft Edge DevTools 的任何页面上运行 JavaScript 片段 |Microsoft 文档"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 |Microsoft Docs"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "使用 Microsoft Edge DevTools 在任何页面上运行 JavaScript 代码段 |Microsoft Docs"  
 
-[ChromiumIssue943770]: https://crbug.com/943770 "943770-DevTools： Show iframe IndexedDB 数据库-chromium-Monorail"  
+[ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools：显示 iframe IndexedDB 数据库 - chromium - Monorail"  
 
-[MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "密钥生成器-基本概念 |MDN"  
+[MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "密钥生成器 - 基本概念 |MDN"  
 [MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API |MDN"  
 [MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "使用 IndexedDB |MDN"  
-[MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "使用索引-使用 IndexedDB |MDN"  
+[MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "使用索引 - 使用 IndexedDB |MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

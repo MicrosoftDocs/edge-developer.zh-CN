@@ -1,18 +1,18 @@
 ---
-description: 打开 "呈现" 选项卡，然后选择 "模拟 CSS 媒体" > "打印"。
-title: '强制 Microsoft Edge DevTools 到打印预览模式 (CSS 打印媒体类型) '
+description: 打开"呈现"选项卡并选择"模拟 CSS 媒体">"print"。
+title: '强制 Microsoft Edge DevTools 进入打印预览模式 (CSS 打印媒体类型) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: d4e8e06d60461ac4cdcab8686a18a0698d52f6e3
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: a036e710de998f03e876126581956929d8652f1e
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125116"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230920"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,33 +28,33 @@ ms.locfileid: "11125116"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 强制 Microsoft Edge DevTools 到打印预览模式 (CSS 打印媒体类型)   
+# 强制 Microsoft Edge DevTools 使用 CSS 打印媒体类型 (打印预览模式)   
 
-" [打印媒体" 查询][MDNUsingMediaQueries] 将控制页面打印时的外观。  若要强制页面进入 "打印预览" 模式，请执行以下操作：  
+打印 [媒体查询][MDNUsingMediaQueries] 控制页面在打印时的外观。  若要强制页面进入打印预览模式：  
 
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `rendering` ，选择 " **显示呈现**"，然后选择 `Enter` 。  
-1.  在 " **模拟 CSS 媒体** " 下，选择 " **打印**"。  
+1.  键入 `rendering` ，选择 **"显示呈现**"，然后选择 `Enter` 。  
+1.  在 **"模拟 CSS 媒体"下**，选择 **"打印"。**  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="命令菜单" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="打印预览模式" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        打印预览模式  
     :::image-end:::  
     
-在此处，您可以查看和更改您的 CSS，就像任何其他网页一样。  请参阅 [查看和更改 CSS 入门][DevToolsCSSGetStarted]。  
+可以在此处查看和更改 CSS，就像任何其他网页一样。  导航到["查看和更改 CSS 入门"。][DevToolsCSSGetStarted]  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## 联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) 开发工具 |Microsoft 文档"  
-[DevToolsCSSGetStarted]: ./index.md "开始使用查看和更改 CSS |Microsoft 文档"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 |Microsoft Docs"  
+[DevToolsCSSGetStarted]: ./index.md "开始查看和更改 CSS |Microsoft Docs"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "使用媒体查询 |MDN"  
 

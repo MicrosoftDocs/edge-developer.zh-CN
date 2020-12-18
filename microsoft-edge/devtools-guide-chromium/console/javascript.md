@@ -3,16 +3,16 @@ description: 了解如何在控制台中运行 JavaScript。
 title: 开始在控制台中运行 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6537cb07b52ef6b8be4b1ea7d9420bf2307d3fd5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: ecd1a2fffb311990b6e743e99d038f1f2a519ee4
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125242"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231088"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,55 +30,55 @@ ms.locfileid: "11125242"
 
 # 开始在控制台中运行 JavaScript  
 
-此交互式教程介绍如何在 Microsoft Edge DevTools **控制台**中运行 JavaScript。  有关如何将消息记录到 **控制台**的详细信息，请导航到 [记录消息的入门][DevToolsConsoleLoggingMessages]。  有关如何暂停 JavaScript 代码并逐行执行一行的详细信息，请导航到 [开始使用调试 JavaScript][DevToolsJavascriptIndex]。  
+此交互式教程介绍如何在 Microsoft Edge DevTools 控制台中运行**JavaScript。**  若要详细了解如何将消息记录到**控制台，** 请导航到"日志记录消息[入门"。][DevToolsConsoleLoggingMessages]  若要详细了解如何暂停 JavaScript 代码并一次单步执行一行，请导航到"调试[JavaScript 入门"。][DevToolsJavascriptIndex]  
 
-:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="该控制台" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-   该 **控制台**  
+:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="控制台" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+   **控制台**  
 :::image-end:::  
 
 ## 概述  
 
-该 **控制台** 是一个 [复制][WikiReadEvalPrintLoop]，它代表读取、计算、打印和循环。  它将读取你在其中键入的 JavaScript，计算你的代码，打印你的 [表达式][2alityExpressionsVersusStatements]的结果，然后循环回到第一步。  
+控制台**是**[一个 REPL，][WikiReadEvalPrintLoop]它代表读取、评估、打印和循环。  它读取您键入的 JavaScript，计算代码，输出表达式的结果，然后循环回第一步。 [][2alityExpressionsVersusStatements]  
 
 ## 设置 DevTools  
 
-本教程旨在让你打开演示并自行尝试所有工作流。  当您进行物理跟踪时，更有可能会在以后记忆工作流。
+本教程旨在让你打开演示并自己尝试所有工作流。  当您实际跟进时，您以后更有可能会记住工作流。
 
-1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 以打开**控制台**。  
-1.  保留 `Control` \ (Windows、Linux \ ) 或 `Command` \ (macOS \ ) 并选择 "要在新窗口中打开的 **控制台 Javascript 示例** "。  
+1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 打开**控制台**。  
+1.  按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，然后选择控制台 **Javascript 示例** 以在一个新窗口中打开。  
     
     *   [控制台 Javascript 示例][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="该控制台" lightbox="../media/console-javascript-example-console-empty.msft.png":::
-       控制台 JavaScript 示例页面位于左侧，DevTools 在右侧  
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="左侧的控制台 JavaScript 示例页面，右侧为 DevTools" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       左侧的控制台 JavaScript 示例页面，右侧为 DevTools  
     :::image-end:::  
     
 ## 查看和更改页面的 JavaScript 或 DOM  
 
-生成或调试页面时，在 **控制台** 中运行语句以更改页面的外观和运行方式通常很有用。  
+生成或调试页面时，在控制台中运行语句以更改页面的外观或运行**** 方式通常很有用。  
     
-1.  注意按钮中的文本。  
-1.  `document.getElementById('hello').textContent = 'Hello, Console!'`在**控制台**中键入，然后选择 `Enter` 以计算表达式。  注意按钮内的文本如何更改。  
+1.  请注意按钮中的文本。  
+1.  在 `document.getElementById('hello').textContent = 'Hello, Console!'` 控制台 **中键入** ，然后选择 `Enter` 计算表达式。  请注意按钮内的文本如何更改。  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="该控制台" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
-       计算表达式后的 **控制台** 外观  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="评估表达式后控制台的外观" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       评估 **表达式** 后控制台的外观  
     :::image-end:::  
     
-    在你所评估的代码下方看到 `"Hello, Console!"` 。  撤回复制操作的4个步骤：读取、评估、打印、循环。  在计算代码后，复制将打印表达式的结果。  因此 `"Hello, Console!"` 必须是评估结果 `document.getElementById('hello').textContent = 'Hello, Console!'` 。  
+    在评估的代码下方，你将看到 `"Hello, Console!"` 。  回顾 REPL 的 4 个步骤：读取、评估、打印、循环。  在计算代码后，REPL 将输出表达式的结果。  因此 `"Hello, Console!"` ，计算的结果必须是 `document.getElementById('hello').textContent = 'Hello, Console!'` 。  
     
-## 运行与页面无关的任意 JavaScript  
+## 运行与页面不相关的任意 JavaScript  
 
-有时，你只需要一个代码背景，你可以在其中测试某些代码，或者尝试你不熟悉的新 JavaScript 功能。  控制台是这些类型的实验的理想位置。  
+有时，你只需一个代码场，可以在其中测试一些代码，或尝试你不熟悉的新 JavaScript 功能。  控制台 **是** 这些类型的实验的一个理想位置。  
 
-1.  `5 + 15`在控制台中键入，然后选择 `Enter` 以计算表达式。 该控制台将打印出你的代码下方的表达式的结果。  在下图中，你的 **控制台** 应在计算表达式后显示结果。  
+1.  在 `5 + 15` 控制台中键入并选择 `Enter` 计算表达式。 控制台将输出代码下面的表达式结果。  下图中 **，控制台应在** 计算表达式后显示结果。  
 
-1.  在 **控制台**中键入以下代码。  尝试按字符键入，而不是复制粘贴。  
+1.  在控制台中键入以下 **代码**。  请尝试按字符键入它，而不是复制粘贴它。  
     
     ```javascript
     function add(a, b=20)
     ```  
     
-    如果不熟悉 `b=20` 语法，请导航以 [定义函数参数的默认值][Esma6DefaultParameterValues]。  
+    如果您不熟悉语法， `b=20` 请导航以 [定义函数参数的默认值][Esma6DefaultParameterValues]。  
     
 1.  现在，运行刚定义的函数。  
     
@@ -89,13 +89,13 @@ ms.locfileid: "11125242"
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="该控制台" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-             在计算代码段中的表达式后，将显示该**控制台**  
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="控制台在评估代码段中的表达式后显示" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+             控制台 **在** 评估代码段中的表达式后显示  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-    `add(25)` 计算结果为 `45` ：当 `add` 调用函数时不带第二个参数时， `b` 默认为 `20` 。  
+    `add(25)` 计算结果为 ，因为在没有第二个参数的情况下调用函数 `45` `add` `b` 时，默认为 `20` 。  
 
 ## 后续步骤  
 
@@ -103,34 +103,34 @@ ms.locfileid: "11125242"
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools 允许你在运行期间暂停脚本。  暂停时，您可以使用该 **控制台** 查看和更改 `window` `DOM` 该时刻的页面或页面。  工作流可用于功能强大的调试工作流。  对于交互式教程，请导航到 [开始使用调试 JavaScript][DevToolsJavascriptIndex]。  
+DevTools 允许你在运行期间暂停脚本。  暂停时，可以使用控制台在此时查看和更改**** 页面或 `window` `DOM` 页面。  工作流可创建功能强大的调试工作流。  对于交互式教程，导航到["调试 JavaScript 入门"。][DevToolsJavascriptIndex]  
 
-该 **控制台** 还具有一组便利功能，使您能够更轻松地与页面交互。  例如：  
+控制台 **还** 具有一组方便功能，可更轻松地与页面进行交互。  例如：  
 
-*   键入，而不是键入 `document.querySelector()` 来选择元素 `$()` 。  此语法是 jQuery 的灵感，但实际上并不是 jQuery。  它只是的一个别名 `document.querySelector()` 。  
-*   `debug(function)` 在该函数的第一行上有效地设置断点。  
+*   不要键入 `document.querySelector()` 以选择元素，请键入 `$()` 。  此语法受 jQuery 启发，但实际上并不是 jQuery。  它只是一个别名 `document.querySelector()` 。  
+*   `debug(function)` 有效设置该函数的第一行上的断点。  
 *   `keys(object)` 返回包含指定对象的键的数组。  
 
-有关便利函数的详细信息，请导航到 [控制台实用工具 API 参考][DevToolsConsoleUtilities]。  
+有关便利函数详细信息，请导航到 [控制台实用程序 API 参考][DevToolsConsoleUtilities]。  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## 联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: ./log.md "在控制台中记录邮件的入门 |Microsoft 文档"  
-[DevToolsConsoleReference]: ./reference.md#run-javascript "控制台参考 |Microsoft 文档"  
-[DevToolsConsoleUtilities]: ./utilities.md "控制台实用工具 API 参考 |Microsoft 文档"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "在 Microsoft Edge DevTools 中开始使用调试 JavaScript"  
+[DevToolsConsoleLoggingMessages]: ./log.md "开始在控制台中记录消息 |Microsoft Docs"  
+[DevToolsConsoleReference]: ./reference.md#run-javascript "控制台参考 |Microsoft Docs"  
+[DevToolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 |Microsoft Docs"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "开始在 Microsoft Edge DevTools 中调试 JavaScript |Microsoft Docs"  
 
-[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "JavaScript 中的表达式和语句"  
+[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "JavaScript 中的表达式与语句"  
 
-[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "默认参数值-扩展参数处理-ECMAScript 6 ——新功能：概述 & 比较"  
+[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "默认参数值 - 扩展参数处理 - ECMAScript 6 — 新功能：概述&比较"  
 
-[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "控制台 Javascript 示例 |故障"  
+[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "控制台 Javascript 示例 |小故障"  
 
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "阅读-评估-"打印循环"-维基百科"  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read–eval-print 循环 - Wikipedia"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

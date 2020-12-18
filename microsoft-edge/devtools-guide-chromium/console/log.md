@@ -1,18 +1,18 @@
 ---
 description: 了解如何将消息记录到控制台。
-title: 在控制台中记录消息入门
+title: 开始在控制台中记录消息
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 96e3ad76fb86e32cf58abe6187fa0d6e75a2c00a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 2f91f1847bf5469e8106edc21553172fc06db9ee
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125270"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231109"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,21 +28,21 @@ ms.locfileid: "11125270"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 在控制台中记录消息入门  
+# 开始在控制台中记录消息  
 
-此交互式教程介绍如何在 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 控制台中记录和筛选邮件。  
+此交互式教程介绍如何在 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 控制台中记录并筛选消息。  
 
-:::image type="complex" source="../media/console-ars-technica-console-onload.msft.png" alt-text="控制台中的消息" lightbox="../media/console-ars-technica-console-onload.msft.png":::
-   **控制台**中的消息  
+:::image type="complex" source="../media/console-ars-technica-console-onload.msft.png" alt-text="控制台中的邮件" lightbox="../media/console-ars-technica-console-onload.msft.png":::
+   控制台中的 **邮件**  
 :::image-end:::  
 
-本教程旨在按顺序完成。  它假定你了解 web 开发的基础知识，例如如何使用 JavaScript 向页面添加交互。  
+本教程旨在按顺序排列。  它假定你了解 Web 开发的基础，例如如何使用 JavaScript 向页面添加交互性。  
 
 ## 设置演示和 DevTools  
 
-本教程旨在使您能够打开演示并自行尝试所有工作流。  当您进行物理跟踪时，更有可能会在以后记忆工作流。  
+本教程旨在让你能够打开演示并自己尝试所有工作流。  当您实际跟进时，您以后更有可能会记住工作流。  
 
-1.  保留 `Control` \ (Windows、Linux \ ) 或 `Command` \ (macOS \ ) 并选择 " **控制台日志示例** " 以在新选项卡中打开。  
+1.  按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，**** 然后选择控制台日志示例以在新选项卡中打开。  
     
     [控制台日志示例][GlitchDevToolsConsoleLogExamples]
     
@@ -50,235 +50,235 @@ ms.locfileid: "11125270"
     > [!TIP]
     > Move the demo to a separate window.  
     > 
-    > :::image type="complex" source="../media/log-set-up-1.msft.png" alt-text="控制台中的消息" lightbox="../media/log-set-up-1.msft.png":::
+    > :::image type="complex" source="../media/log-set-up-1.msft.png" alt-text="The tutorial on the left, and the demo on the right" lightbox="../media/log-set-up-1.msft.png":::
     >    The tutorial on the left, and the demo on the right  
     > :::image-end:::  
     -->
     
-1.  聚焦演示，然后选择 `Control` + `Shift` + `J` \ (Windows、Linux \ ) 或 `Command` + `Option` + `J` \ (macOS \ ) 打开 DevTools。  默认情况下，DevTools 将在演示右侧打开。  
+1.  关注演示，然后选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 打开 DevTools。  默认情况下，DevTools 将在演示右侧打开。  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/console-example-devtools-right-console.msft.png" alt-text="控制台中的消息" lightbox="../media/console-example-devtools-right-console.msft.png":::
+          :::image type="complex" source="../media/console-example-devtools-right-console.msft.png" alt-text="DevTools 将在演示右侧打开" lightbox="../media/console-example-devtools-right-console.msft.png":::
              DevTools 将在演示右侧打开  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           > [!TIP]
-          > [将 DevTools 停靠在窗口底部][DevToolsCustomizePlacement]。  
+          > [窗口底部的扩展坞 DevTools。][DevToolsCustomizePlacement]  
           
-          :::image type="complex" source="../media/console-example-devtools-bottom-console.msft.png" alt-text="控制台中的消息" lightbox="../media/console-example-devtools-bottom-console.msft.png":::
-             DevTools 停靠在演示底部  
+          :::image type="complex" source="../media/console-example-devtools-bottom-console.msft.png" alt-text="停靠在演示底部的 DevTools" lightbox="../media/console-example-devtools-bottom-console.msft.png":::
+             停靠在演示底部的 DevTools  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="":::
           > [!TIP]
-          > [将 DevTools 取消停靠到一个单独的窗口中][DevToolsCustomizePlacement]。  
+          > [将 DevTools 撤消到单独的窗口中][DevToolsCustomizePlacement]。  
           
-          :::image type="complex" source="../media/console-example-devtools-separate-console-browse.msft.png" alt-text="控制台中的消息" lightbox="../media/console-example-devtools-separate-console-browse.msft.png":::
+          :::image type="complex" source="../media/console-example-devtools-separate-console-browse.msft.png" alt-text="单独窗口中的浏览器" lightbox="../media/console-example-devtools-separate-console-browse.msft.png":::
              单独窗口中的浏览器  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           > [!TIP]
-          > [将 DevTools 取消停靠到一个单独的窗口中][DevToolsCustomizePlacement]。  
+          > [将 DevTools 撤消到单独的窗口中][DevToolsCustomizePlacement]。  
           
-          :::image type="complex" source="../media/console-example-devtools-separate-console-devtools.msft.png" alt-text="控制台中的消息" lightbox="../media/console-example-devtools-separate-console-devtools.msft.png":::
-             DevTools 在单独窗口中取消停靠  
+          :::image type="complex" source="../media/console-example-devtools-separate-console-devtools.msft.png" alt-text="DevTools 在单独的窗口中取消停靠" lightbox="../media/console-example-devtools-separate-console-devtools.msft.png":::
+             DevTools 在单独的窗口中取消停靠  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
 ## 查看从 JavaScript 记录的消息  
 
-您在控制台中看到的大多数消息来自于编写页面 JavaScript 的 web 开发人员。  本部分的目标是介绍你可能会在控制台中看到的不同消息类型，并介绍如何从你自己的 JavaScript 中自己记录每种消息类型。  
+控制台中显示的大多数消息来自编写页面**** JavaScript 的 Web 开发人员。  本节的目标是向你介绍你可能在控制台中查看的不同邮件类型，并说明如何从自己的 JavaScript 自行**** 记录每封邮件类型。  
 
-1.  单击演示中的 " **日志信息** " 按钮。  `Hello, Console!` 记录到控制台。
+1.  在 **演示中选择** "日志信息"按钮。  `Hello, Console!` 记录到控制台。
     
-    :::image type="complex" source="../media/console-log-info.msft.png" alt-text="控制台中的消息" lightbox="../media/console-log-info.msft.png":::
-       单击 "**日志信息**" 后的**控制台**  
+    :::image type="complex" source="../media/console-log-info.msft.png" alt-text="选择日志信息后的控制台" lightbox="../media/console-log-info.msft.png":::
+       选择 **日志** 信息后的 **控制台**  
     :::image-end:::  
     
-1.  `Hello, Console!`在控制台中的邮件旁边，选择 " **log.js： 2**"。  "源" 面板将打开并突出显示导致消息登录到控制台的代码行。  当页面的 JavaScript 运行时，将记录此消息 `console.log('Hello, Console!')` 。
+1.  在控制台 `Hello, Console!` 中的消息旁边，选择**log.js：2。**  "源"面板将打开，并突出显示导致消息记录到控制台的代码行。  当页面的 JavaScript 运行时，已记录消息 `console.log('Hello, Console!')` 。
     
-    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="控制台中的消息" lightbox="../media/console-sources-logjs.msft.png":::
-       单击后，DevTools 将打开 " **源** " 面板 `log.js:2`  
+    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="选择"源"面板后，DevTools 将打开log.js：2" lightbox="../media/console-sources-logjs.msft.png":::
+       选择后，DevTools **将打开** "源"面板 `log.js:2`  
     :::image-end:::  
     
-1.  使用以下任一工作流向后导航到 **控制台** ：  
+1.  使用下列 **任一工作流** 导航回控制台：  
     
-    *   单击 " **控制台** " 选项卡。  
-    *   选择 `Control` + `[` \ (Windows、Linux \ ) 或 `Command` + `[` \ (macOS \ ) ，直到控制台面板处于焦点。  
-    *   [打开 "命令" 菜单][DevToolsCommandMenu]，开始键入 `Console` ，选择 " **显示控制台面板** " 命令，然后选择 `Enter` 。  
+    *   选择" **控制台"** 选项卡。  
+    *   选择 `Control` + `[` \ (Windows、Linux\) 或 `Command` + `[` \ (macOS\) ，**** 直到控制台面板聚焦。  
+    *   [打开命令菜单][DevToolsCommandMenu]，键入 `Console` ，选择显示 **控制台面板** 命令，然后选择 `Enter` 。  
     
-1.  单击演示中的 " **日志警告** " 按钮。  `Abandon Hope All Ye Who Enter` 记录到控制台。  此类消息的格式是警告。  
+1.  在演示 **中选择** "日志警告"按钮。  `Abandon Hope All Ye Who Enter` 记录到 **控制台**。  如下所示的邮件是警告。  
     
-    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="控制台中的消息" lightbox="../media/console-log-warning.msft.png":::
-       选择 "**日志警告**" 后的**控制台**  
+    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="选择日志警告后的控制台" lightbox="../media/console-log-warning.msft.png":::
+       选择 **日志** 警告后的 **控制台**  
     :::image-end:::  
     
     > [!TIP]
-    > 如果想要查看导致邮件以特定方式记录的代码，请单击脚本 \ (，例如 `log.js:12` \ ) 查看导致邮件格式的代码。  
+    > 如果要显示导致邮件以特定方式记录的代码，请选择脚本 \ (例如 \) 以查看导致邮件格式化的代码。 `log.js:12`  
 
-1.  单击 " **展开** " (![ 展开 ][ImageExpandIcon] "在" 前面的 \ ) 图标 `Abandon Hope All Ye Who Enter` 。  DevTools 显示调用的 [堆栈跟踪][WikiStackTrace] 。  
+1.  选择 **前面的"展开** (![ ][ImageExpandIcon] 展开\) 图标 `Abandon Hope All Ye Who Enter` 。  DevTools [显示调用][WikiStackTrace] 前导的堆栈跟踪。  
     
-    :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="控制台中的消息" lightbox="../media/console-log-warning-expanded.msft.png":::
+    :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="堆栈跟踪" lightbox="../media/console-log-warning-expanded.msft.png":::
        堆栈跟踪  
     :::image-end:::  
     
-    堆栈跟踪告诉你调用了名为的函数 `logWarning` ，而该函数又称为一个名为的函数 `quoteDante` 。  换句话说，首先发生的调用位于堆栈跟踪的底部。  你可以随时通过调用来记录堆栈跟踪 `console.trace()` 。  
+    堆栈跟踪会告知您，已运行命名的函数 `logWarning` ，而该函数又运行名为函数 `quoteDante` 。  换句话说，首先发生的请求位于堆栈跟踪的底部。  你随时可能通过运行来记录堆栈跟踪 `console.trace()` 。  
 
-1.  选择 " **日志错误**"。  已记录以下错误消息： `I'm sorry, Dave.  I'm afraid I can't do that.`  
+1.  选择 **"日志错误"。**  将记录以下错误消息： `I'm sorry, Dave.  I'm afraid I can't do that.`  
     
-    :::image type="complex" source="../media/console-log-error.msft.png" alt-text="控制台中的消息" lightbox="../media/console-log-error.msft.png":::
-       一条错误消息  
+    :::image type="complex" source="../media/console-log-error.msft.png" alt-text="错误消息" lightbox="../media/console-log-error.msft.png":::
+       错误消息  
     :::image-end:::  
     
-1.  选择 " **日志表**"。  将有关著名音乐家的表格记录到控制台。  
+1.  选择 **"日志表"。**  有关艺术家的表被记录到 **控制台**。  
     
     > [!NOTE]
-    > `birthday`列仅填充一行。  查看代码以确定该代码的原因。
+    > 该 `birthday` 列只填充一行。  查看代码以确定原因。
     
-    :::image type="complex" source="../media/console-log-table.msft.png" alt-text="控制台中的消息" lightbox="../media/console-log-table.msft.png":::
-       **控制台**中的表  
+    :::image type="complex" source="../media/console-log-table.msft.png" alt-text="控制台中的表" lightbox="../media/console-log-table.msft.png":::
+       控制台中的 **表**  
     :::image-end:::  
     
-1.  选择 " **日志组**"。  4个著名的犯罪 turtles 的名称在标签下分组 `Adolescent Irradiated Espionage Tortoises` 。  
+1.  选择 **日志组**。  4 个动物、反犯罪者的名称将分组在标签 `Adolescent Irradiated Espionage Tortoises` 下。  
     
-    :::image type="complex" source="../media/console-log-group.msft.png" alt-text="控制台中的消息" lightbox="../media/console-log-group.msft.png":::
-       **控制台**中的一组消息  
+    :::image type="complex" source="../media/console-log-group.msft.png" alt-text="控制台中的一组消息" lightbox="../media/console-log-group.msft.png":::
+       控制台中的一组 **消息**  
     :::image-end:::  
     
-1.  选择 " **日志自定义**"。  带有红色边框和蓝色背景的消息将记录到控制台。  
+1.  选择 **"日志自定义"。**  红色边框和蓝色背景的消息将记录到控制台。  
     
-    :::image type="complex" source="../media/console-log-custom.msft.png" alt-text="控制台中的消息" lightbox="../media/console-log-custom.msft.png":::
-       在**控制台**中自定义格式的邮件  
+    :::image type="complex" source="../media/console-log-custom.msft.png" alt-text="控制台中具有自定义格式的邮件" lightbox="../media/console-log-custom.msft.png":::
+       控制台中具有自定义格式 **的邮件**  
     :::image-end:::  
     
-此处的主要概念是，当你希望从 JavaScript 将消息记录到控制台时，请使用其中一种 `console` 方法。  每种方法设置邮件的格式都不同。  
+此处的主要想法是，当你希望从 JavaScript 将消息记录到控制台时，可使用其中一 `console` 种方法。  每种方法对邮件的格式不同。  
 
-此部分中介绍的方法甚至更多。  本教程介绍如何浏览方法的其余部分。  
+方法比本节中演示的方法更多。  本教程介绍如何浏览其余方法。  
 
 ## 查看浏览器记录的消息  
 
-浏览器也将消息记录到控制台。  当页面出现问题时，通常会发生这种情况。  
+浏览器将消息记录到控制台。  当页面出现问题时，通常会发生这种情况。  
 
-1.  选择 " **原因 404**"。  浏览器记录网络错误的 HTTP 状态代码， `404` 因为该页的 JavaScript 尝试提取不存在的文件。  
+1.  选择 **原因 404**。  浏览器记录网络错误的 HTTP 状态代码 `404` ，因为页面的 JavaScript 尝试获取不存在的文件。  
     
-    :::image type="complex" source="../media/console-cause-404.msft.png" alt-text="控制台中的消息" lightbox="../media/console-cause-404.msft.png":::
-       `404`**控制台**中的错误  
+    :::image type="complex" source="../media/console-cause-404.msft.png" alt-text="控制台中的 404 错误" lightbox="../media/console-cause-404.msft.png":::
+       控制台 `404` 中的 **错误**  
     :::image-end:::  
     
-1.  选择 " **导致错误**"。  `TypeError`由于 JavaScript 尝试更新不存在的 DOM 节点，因此浏览器将记录未捕获。  
+1.  选择 **"原因错误"。**  浏览器将记录未记录， `TypeError` 因为 JavaScript 正在尝试更新不存在的 DOM 节点。  
     
-    :::image type="complex" source="../media/console-cause-error.msft.png" alt-text="控制台中的消息" lightbox="../media/console-cause-error.msft.png":::
-       A `TypeError` 在**控制台**中  
+    :::image type="complex" source="../media/console-cause-error.msft.png" alt-text="控制台中的 TypeError" lightbox="../media/console-cause-error.msft.png":::
+       控制台 `TypeError` 中的**** A  
     :::image-end:::  
     
-1.  单击 " **日志级别** " 下拉列表，并启用 " **详细** " 选项（如果已禁用）。  在下一节中了解有关筛选的详细信息。  您需要执行此操作，以确保您记录的下一条消息是可见的。  
+1.  Choose the **Log Levels** dropdown and enable the **Verbose** option if it is disabled.  你将在下一节中了解有关筛选功能的内容。  需要这样做以确保记录的下一条消息可见。  
     
     > [!NOTE]
-    > 如果 "默认级别" 下拉列表处于禁用状态，您可能需要关闭 **控制台** 边栏。  有关 **控制台** 边栏的详细信息，请按以下消息源进行筛选。
+    > 如果"默认级别"下拉列表处于禁用状态，您可能需要关闭 **控制台** 边栏。  按下面的消息源进行筛选，了解有关控制台边 **栏** 的详细信息。
     
-    :::image type="complex" source="../media/console-cause-error-log-levels.msft.png" alt-text="控制台中的消息" lightbox="../media/console-cause-error-log-levels.msft.png":::
+    :::image type="complex" source="../media/console-cause-error-log-levels.msft.png" alt-text="启用详细日志级别" lightbox="../media/console-cause-error-log-levels.msft.png":::
        启用详细日志级别  
     :::image-end:::  
     
-1.  选择 " **导致冲突**"。  该页面将在几秒钟后停止响应，然后浏览器将消息记录 `[Violation] 'click' handler took 3000ms` 到控制台。  确切持续时间可能会有所不同。  
+1.  选择 **"原因冲突"。**  页面在几秒钟后将无响应，然后浏览器将消息记录 `[Violation] 'click' handler took 3000ms` 到控制台。  确切的持续时间可能会有所不同。  
     
-    :::image type="complex" source="../media/console-cause-violation.msft.png" alt-text="控制台中的消息" lightbox="../media/console-cause-violation.msft.png":::
-       **控制台**中的冲突  
+    :::image type="complex" source="../media/console-cause-violation.msft.png" alt-text="控制台中的冲突" lightbox="../media/console-cause-violation.msft.png":::
+       控制台中的 **冲突**  
     :::image-end:::  
     
 ## 筛选邮件  
 
-在某些页面上，你会看到该控制台会使消息淹没。  DevTools 提供了多种不同的方法来筛选出与手边的任务无关的邮件。  
+在某些网页上，你查看 **控制台** 时收到大量消息。  DevTools 提供了许多不同的方法来筛选出与当前任务不相关的邮件。  
 
 ### 按日志级别筛选  
 
-每个 `console` 方法都分配了一个严重性级别： `Verbose` 、、 `Info` `Warning` 或 `Error` 。  例如， `console.log()` 是一种 `Info` 级别的消息，而 `console.error()` 是一种 `Error` 级别的消息。  
+每个 `console` 方法都分配有一个严重性级别：、、 `Verbose` `Info` `Warning` 或 `Error` 。  例如， `console.log()` 是 `Info` -level 消息， `console.error()` 而 `Error` -level 消息。  
 
-1.  单击 " **日志级别** " 下拉列表并禁用 **错误**。  如果该级别旁边不再有选中标记，则该级别将被禁用。  `Error`级别消息消失。  
+1.  选择 **"日志级别**"下拉列表并禁用 **"错误"。**  当一个级别旁边不再有选中标记时，该级别将被禁用。  `Error`-level 消息将消失。  
     
-    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="控制台中的消息" lightbox="../media/console-cause-violation-log-levels.msft.png":::
-       在**控制台**中禁用错误级别消息  
+    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="在控制台中禁用错误级别消息" lightbox="../media/console-cause-violation-log-levels.msft.png":::
+       在控制台中禁用错误级别 **消息**  
     :::image-end:::  
     
-1.  再次单击 " **日志级别** " 下拉列表，然后重新启用 **错误**。  `Error`级邮件再次出现。  
+1.  再次**选择"日志**级别"下拉列表，然后重新启用 **"错误"。**  `Error`-level 消息将重新出现。  
 
-### 按文本进行筛选  
+### 按文本筛选  
 
-如果只希望查看包含确切字符串的邮件，请将该字符串键入到 " **筛选器** " 文本框中。  
+当只想查看包含确切字符串的邮件时，在"筛选器"文本框中 **键入该字符串** 。  
 
-1.  在 `Dave` " **筛选器** " 文本框中键入内容。  不包含该字符串的所有消息 `Dave` 均被隐藏。  您可能还会看到 `Adolescent Irradiated Espionage Tortoises` 标签。  这是一个 bug。  
+1.  键入 `Dave` 到“**筛选器**”文本框。  不包含字符串的所有邮件 `Dave` 都处于隐藏状态。  还可以查看 `Adolescent Irradiated Espionage Tortoises` 标签。  这是一个 bug。  
     
-    :::image type="complex" source="../media/console-all-messages-text-filter.msft.png" alt-text="控制台中的消息" lightbox="../media/console-all-messages-text-filter.msft.png":::
-       筛选出不包含的任何邮件 `Dave`  
+    :::image type="complex" source="../media/console-all-messages-text-filter.msft.png" alt-text="筛选掉不包含 Dave 的任何邮件" lightbox="../media/console-all-messages-text-filter.msft.png":::
+       筛选掉任何不包含的邮件 `Dave`  
     :::image-end:::  
     
-1.  `Dave`从 "**筛选器**" 文本框中删除。  所有邮件再次出现。  
+1.  从 `Dave` " **筛选器"** 文本框中删除。  将重新显示所有消息。  
 
 ### 按正则表达式筛选  
 
-当你想要显示包含文本模式的所有消息（而不是特定字符串）时，请使用 [正则表达式][MDNRegularExpressions]。  
+当您想要显示包含文本模式（而不是特定字符串）的所有邮件时，请使用 [正则表达式][MDNRegularExpressions]。  
 
-1.  在 `/^[AH]/` " **筛选器** " 文本框中键入内容。  在 [RegExr][|::ref1::|Main] 中键入此模式，获取对其执行操作的说明。  
+1.  键入 `/^[AH]/` 到“**筛选器**”文本框。  在 [RegExr 中键入此模式][|::ref1::|Main] ，以说明它正在做什么。  
     
-    :::image type="complex" source="../media/console-all-messages-regex-filter.msft.png" alt-text="控制台中的消息" lightbox="../media/console-all-messages-regex-filter.msft.png":::
+    :::image type="complex" source="../media/console-all-messages-regex-filter.msft.png" alt-text="筛选出与模式不匹配的任何邮件" lightbox="../media/console-all-messages-regex-filter.msft.png":::
        筛选出与模式不匹配的任何邮件 `/^[AH]/`  
     :::image-end:::  
     
-1.  `/^[AH]/`从 "**筛选器**" 文本框中删除。  所有邮件都将再次显示。  
+1.  从 `/^[AH]/` " **筛选器"** 文本框中删除。  所有邮件再次可见。  
 
-### 按消息源筛选  
+### 按邮件源筛选  
 
-如果只希望查看来自特定 URL 的邮件，请使用 **边栏**。  
+当你只想查看来自特定 URL 的消息时，请使用 **边栏**。  
 
-1.  选择 " **显示控制台边栏** \ (![ 显示控制台边栏 ][ImageShowConsoleSidebarIcon] \ ) "。  
+1.  Choose **Show Console Sidebar** \ (![ Show Console Sidebar ][ImageShowConsoleSidebarIcon] \) .  
     
-    :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="控制台中的消息" lightbox="../media/console-sidebar-all-messages.msft.png":::
+    :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="边栏" lightbox="../media/console-sidebar-all-messages.msft.png":::
        边栏  
     :::image-end:::  
     
-1.  单击邮件数旁边的 " **展开** \ (![ 展开 ][ImageExpandIcon] \ ) " 图标。  在下图中，邮件数显示为 **13 条消息**。  **边栏**显示导致记录消息的 url 的列表。  例如， `log.js` 导致了11条消息。  
+1.  Choose the **Expand** \ (![ Expand ][ImageExpandIcon] \) icon next to the number of messages.  在下图中，邮件数指示为 **13 个邮件**。  **边栏**显示导致记录消息的 URL 列表。  例如， `log.js` 导致 11 条消息。  
     
-    :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="控制台中的消息" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
-       查看边栏中的邮件源  
+    :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="查看边栏中的消息源" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
+       在边栏中查看消息源  
     :::image-end:::  
     
-### 按用户消息筛选  
+### 按用户邮件筛选  
 
-较早版本中，当您单击 " **日志信息**" 时，将调用一个脚本，以便 `console.log('Hello, Console!')` 将消息记录到控制台。  从属于此类的 JavaScript 记录的消息称为 " **用户消息**"。  相比之下，当你单击 " **原因 404**" 时，浏览器记录了一个 `Error` 级别消息，指出找不到所请求的资源。  类似消息被视为 **浏览器消息**。  使用 **边栏** 筛选出浏览器消息，并仅显示用户消息。  
+之前，选择"日志 **信息**"时，会指定一个脚本，用于 `console.log('Hello, Console!')` 将消息记录到控制台。  从 JavaScript 中记录的消息（如下所示）称为 **用户消息**。  相比之下，当你选择 **"原因 404"** 时，浏览器会记录一条 -level 消息，指出找不到请求 `Error` 的资源。  类似消息被视为浏览器 **消息**。  使用 **边栏筛选** 掉浏览器消息，并只显示用户消息。  
 
-1.  选择 " **9 个用户消息**"。  浏览器消息处于隐藏状态。  
+1.  选择 **9 个用户消息**。  浏览器消息处于隐藏状态。  
     
-    :::image type="complex" source="../media/console-sidebar-user-messages.msft.png" alt-text="控制台中的消息" lightbox="../media/console-sidebar-user-messages.msft.png":::
-       筛选出浏览器消息  
+    :::image type="complex" source="../media/console-sidebar-user-messages.msft.png" alt-text="筛选掉浏览器消息" lightbox="../media/console-sidebar-user-messages.msft.png":::
+       筛选掉浏览器消息  
     :::image-end:::  
     
-1.  选择 **13 条消息** ，再次显示所有消息。  
+1.  选择 **"13 条消息** "可再次显示所有邮件。  
 
-## 将控制台与任何其他面板一起使用  
+## 将控制台与任何其他面板一同使用  
 
-如果正在编辑样式，但需要快速检查控制台日志是否有什么内容？  使用抽屉。  
+如果要编辑样式，但需要快速检查控制台日志中的某内容，该做什么？  使用"箱"。  
 
-1.  单击 " **元素** " 选项卡。  
-1.  选择 `Escape` 。  将打开**抽屉**的 "**控制台**" 选项卡。  它具有您在整个教程中使用的控制台面板的所有功能。  
+1.  选择" **元素"** 选项卡。  
+1.  选择 `Escape`。  将 **打开** "箱" **的"控制台"** 选项卡。  它拥有你在整个教程中一直使用的控制台面板的所有功能。  
     
-    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="控制台中的消息" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
-         **抽屉**中的 "**控制台**" 选项卡  
+    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text=""箱"中的"控制台"选项卡" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
+         " **箱"** 中的"控制台" **选项卡**  
     :::image-end:::  
     
 <!--## Next steps  -->
 
 <!--
-*   See [Console Reference][DevToolsConsoleApi] to explore more features and workflows related to the Console UI.
-*   See [Console API Reference][DevToolsConsoleReference] to learn more about all of the `console` methods that were demonstrated in [View messages logged from JavaScript(#view-messages-logged-from-javascript) and explore the other `console` methods that were not covered in this tutorial.  
-*   See [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
+*   Navigate to [Console Reference][DevToolsConsoleApi] to explore more features and workflows related to the Console UI.
+*   Navigate to [Console API Reference][DevToolsConsoleReference] to learn more about all of the `console` methods that were demonstrated in [View messages logged from JavaScript(#view-messages-logged-from-javascript) and explore the other `console` methods that were not covered in this tutorial.  
+*   Navigate to [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## 联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -289,19 +289,19 @@ ms.locfileid: "11125270"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge \ (Chromium \ ) 开发工具 |Microsoft 文档"  
-[DevToolsCommandMenu]: ../command-menu/index.md "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
-[DevToolsCustomizePlacement]: ../customize/placement.md "更改 Microsoft Edge DevTools 位置 |Microsoft 文档"  
-[DevToolsConsoleApi]: ./api.md "控制台 API 参考 |Microsoft 文档"  
-[DevToolsConsoleReference]: ./reference.md "控制台参考 |Microsoft 文档"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \ (Chromium\) 开发人员工具 |Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft Docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "更改 Microsoft Edge DevTools 放置 | Microsoft Docs"  
+[DevToolsConsoleApi]: ./api.md "控制台 API 参考 |Microsoft Docs"  
+[DevToolsConsoleReference]: ./reference.md "控制台参考 |Microsoft Docs"  
 
-[GlitchDevToolsConsoleLogExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/log.html "记录消息入门 |故障"  
+[GlitchDevToolsConsoleLogExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/log.html "日志记录消息入门 |小故障"  
 
 [MDNRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "正则表达式 |MDN"  
 
 [RegExrMain]: https://regexr.com "RegExr"  
 
-[WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "堆栈跟踪-维基百科"  
+[WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "堆栈跟踪 - Wikipedia"  
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/log)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  

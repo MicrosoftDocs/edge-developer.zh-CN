@@ -1,18 +1,18 @@
 ---
-description: 使用时间线上的分配检测查找未正确进行垃圾回收的对象，并继续保留内存。
+description: 使用时间线上的分配检测查找未正确垃圾回收的对象，并继续保留内存。
 title: 如何在日程表上使用分配检测
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125445"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230913"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,80 +28,80 @@ ms.locfileid: "11125445"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# 如何在日程表上使用分配检测  
+# 如何在时间线上使用分配检测  
 
-使用 **时间线上的分配检测** 查找未正确进行垃圾回收的对象，并继续保留内存。  
+使用 **时间线上的分配检测** 查找未正确垃圾回收的对象，并继续保留内存。  
 
-## 时间线上的分配规范的工作原理  
+## 日程表上的分配检测的工作原理  
 
-**时间线上的分配规范** 将 **堆探查器** 的详细快照信息与 **性能** 面板的增量更新和跟踪组合在一起。  同样，针对对象的跟踪堆分配涉及开始录制、执行操作序列和停止录制分析。  
+**时间线上的分配检测** 将堆配置文件 **器** 的详细快照信息与性能面板的增量更新和 **跟踪** 相结合。  同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-"**时间线上的分配规范" 在**整个录制过程中定期执行堆快照， (在录制结束时，每隔 50 ms \ ) 和最后一个快照。  
+**时间线上的分配检测** 在整个录制 \ (定期获取堆快照，频率与记录末尾每 50 毫秒) 一次快照的频率一样。  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **日程表上的分配规范**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="时间线上的分配检测" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **时间线上的分配检测**  
 :::image-end:::  
 
 > [!NOTE]
-> 后面的数字 `@` 是一个对象 ID，该对象 ID 持续于录制会话期间拍摄的多个快照中。  持久性对象 ID 支持堆状态之间的精确比较。  在垃圾回收过程中移动对象，因此显示对象的地址毫无意义。  
+> The number after `@` is an object ID that persists across the multiple snapshots taken during the recording session.  持久对象 ID 支持堆栈状态之间的精确比较。  对象在垃圾回收过程中移动，因此显示对象的地址没有任何意义。  
 
-## 在日程表上启用分配检测  
+## 在时间线上启用分配检测  
 
-完成以下操作以开始 **在日程表上使用分配检测**。  
+完成以下操作以在时间线 **上开始使用分配检测**。  
 
 1.  [打开 DevTools][DevtoolsOpenIndex]。  
-1.  打开 " **内存** " 面板，选择 " **时间线上的分配规范** " 单选按钮。  
+1.  打开内存 **面板** ，选择日程表 **单选按钮上的分配** 检测。  
 1.  开始录制。  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="记录堆分配探查器" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
        记录堆分配探查器  
     :::image-end:::  
     
-## 读取堆分配日程表  
+## 读取堆分配时间线  
 
-堆分配时间线显示创建对象的位置并标识保留路径。  在下图中，顶部的条指示何时在堆中找到新对象。  
+堆分配时间线显示对象的创建位置，并标识保留路径。  在下图中，顶部的条形指示在堆中何时找到新对象。  
 
-每个条形的高度对应于最近分配的对象的大小，条形图的颜色指示这些对象是否仍在最终堆快照中。  蓝色条表示在时间线结束时仍处于活动位置的对象，灰色条指示在时间线期间分配但已被垃圾回收的对象。  
+每个栏的高度对应于最近分配的对象的大小，而条形的颜色指示这些对象是否仍位于最终堆快照中。  蓝色条指示仍位于时间线末尾的对象，灰色条指示在时间线期间分配但之后已被垃圾回收的对象。  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **日程表快照上的分配规范**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="时间线快照上的分配检测" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **时间线快照上的分配** 检测  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
-你可以使用上面时间线中的滑块缩放到该特定快照，并查看该位置最近分配的对象：  
+可以使用上述时间线中的滑块放大该特定快照，并查看此时最近分配的对象：  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="日程表上的分配规范" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   放大到快照  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="放大快照" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   放大快照  
 :::image-end:::  
 
-单击堆中的特定对象时，将显示堆快照底部的保留树。  检查对象的保留路径应为你提供足够的信息，以了解未收集对象的原因，你应该更改必要的代码以删除不必要的引用。  
+单击堆中的特定对象将显示堆快照底部部分的保留树。  检查对象的保留路径应为您提供足够的信息，以理解为何未收集该对象，并且应进行必要的代码更改以删除不必要的引用。  
 
-## 按函数查看内存分配  
+## 按功能查看内存分配  
 
-你可以通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到 " [按函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]"。  
+你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## 联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "打开 Microsoft Edge (Chromium) DevTools |Microsoft 文档"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "调查按函数进行的内存分配-修复内存问题 |Microsoft 文档"  
+[DevToolsOpenIndex]: ../open/index.md "打开 Microsoft Edge (Chromium) DevTools |Microsoft Docs"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "按功能调查内存分配 - 修复内存问题 |Microsoft Docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 频道"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 渠道"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] (技术编写器 \ ) 创作。  
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

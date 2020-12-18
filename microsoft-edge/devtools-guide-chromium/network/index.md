@@ -3,16 +3,16 @@ description: 有关 Microsoft Edge DevTools 中最受欢迎的网络相关功能
 title: 检查 Microsoft Edge DevTools 中的网络活动
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a55ff05e29817c483cbf13b8713ef37cf96424d5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
-ms.translationtype: HT
+ms.openlocfilehash: 1874c6222798755aa5ad7002e22b0cef00c8fd41
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125424"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230976"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,7 +49,7 @@ ms.locfileid: "11125424"
 *   确保资源上载或下载实际正在进行。  
 *   检查单个资源的属性，如 HTTP 标头、内容、大小等。  
     
-如果要寻找提高页面加载性能的方法，请**不要**从网络面板开始。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  请参阅“[优化网站速度][DevtoolsSpeedGetStarted]”。  
+如果要寻找提高页面加载性能的方法，请不要从网络**工具开始**。 ****  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到["优化网站速度"。][DevtoolsSpeedGetStarted]  
 
 ## 打开“网络”面板  
 
@@ -69,7 +69,7 @@ ms.locfileid: "11125424"
     :::image-end:::  
     -->
     
-1.  按 `Control`+`Shift`+`J` \ (Windows、Linux\) 或 `Command`+`Option`+`J` \(macOS\) [打开 DevTools][DevToolsOpen]。  **控制台**面板打开。  
+1.  按 `Control`+`Shift`+`J` \ (Windows、Linux\) 或 `Command`+`Option`+`J` \(macOS\) [打开 DevTools][DevToolsOpen]。  控制台 **工具** 将打开。  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        **控制台**  
@@ -126,7 +126,7 @@ ms.locfileid: "11125424"
 网络日志的列是可配置的。  您可以隐藏您未使用的列。  
 默认情况下，还有许多列处于隐藏状态，您可能会发现这些列很有用。  
 
-1.  右键单击“网络日志”表的标头，然后选择“**域**”。  现在将显示每个资源的域。  
+1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \ (右键单击\) ，然后选择"**域"。**  现在将显示每个资源的域。  
     
     :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用“域”列" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        启用“域”列  
@@ -139,7 +139,7 @@ ms.locfileid: "11125424"
 
 用于构建站点的计算机的网络连接可能比用户的移动设备的网络连接速度快。  通过限制页面，可以更好地了解页面在移动设备上加载所花的时间。  
 
-1.  选择“**限制**”下拉列表，它默认设置为“**联机**”。  
+1.  选择 **"限制"** 下拉列表，默认情况下设置为 **"联机** "。  
     
     :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="启用限制" lightbox="../media/network-glitch-network-throttling.msft.png":::
        启用限制  
@@ -166,8 +166,8 @@ ms.locfileid: "11125424"
 
 屏幕截图使你可以查看页面在加载时的外观。  
 
-1.  选择 \(![网络设置][ImageSettingsIcon] \) 选择**捕获屏幕截图**复选框。
-1.  再次通过**空缓存和硬重新加载**工作流重新加载页面。  如果需要有关操作方式的提醒，请参阅“[模拟较慢的连接](#simulate-a-slower-network-connection)”。  
+1.  Choose \ (![ Network settings ][ImageSettingsIcon] \) and turn on the Capture **screenshots** checkbox.
+1.  使用空缓存和硬重新加载 **工作流再次刷新** 页面。  如果需要有关操作方式的 [提醒](#simulate-a-slower-network-connection) ，请导航到"模拟较慢的连接"。  
     “屏幕截图”窗格提供页面在加载过程中各个点的显示方式的缩略图。  
     
     :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="页面加载的屏幕截图" lightbox="../media/network-glitch-network-screenshots.msft.png":::
@@ -180,37 +180,37 @@ ms.locfileid: "11125424"
        第一张屏幕截图期间发生的网络活动  
     :::image-end:::  
     
-1.  在此选择 \(![网络设置][ImageSettingsIcon]\) ，然后取消选中“**捕获屏幕截图**”复选框以关闭“屏幕截图”窗格。
-1.  再次重新加载页面。  
+1.  再次选择 (网络设置 \) 并关闭"捕获屏幕截图" ![ ][ImageSettingsIcon] 复选框**** 以关闭"屏幕截图"窗格。
+1.  再次刷新页面。  
     
 ## 检查资源的详细信息  
 
 选择资源以了解有关它详细信息。  立即尝试：  
 
-1.  选择 `getstarted.html`。  将显示**标头**选项卡。  使用此选项卡检查 HTTP 标头。  
+1.  选择 `getstarted.html` 。  将显示**标头**选项卡。  使用此选项卡检查 HTTP 标头。  
     
     :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="“标头”选项卡" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        “**标头**”选项卡  
     :::image-end:::  
     
-1.  选择“**预览**” 选项卡。 显示 HTML 的基本呈现。  
+1.  选择 **"预览"** 选项卡。 显示 HTML 的基本呈现。  
     
     :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="“预览”选项卡" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
        “**预览**”选项卡  
     :::image-end:::  
     
-    当 API 以 HTML 格式返回错误代码时，此选项卡非常有用。  您可能会发现，读取呈现的 HTML 比 HTML 源代码更容易，在检查图像时也更容易阅读。  
+    当 API 以 HTML 格式返回错误代码时，选项卡非常有用。  您可能会发现，读取呈现的 HTML 比 HTML 源代码更容易，在检查图像时也更容易阅读。  
 
-1.  选择“**响应**”选项卡。 将显示 HTML 源代码。  
+1.  选择" **响应"** 选项卡。 将显示 HTML 源代码。  
     
     :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="“响应”选项卡" lightbox="../media/network-glitch-network-resources-response.msft.png":::
        “**响应**” 选项卡  
     :::image-end:::  
     
     > [!TIP]
-    > 缩小文件时，选择“**响应**”选项卡底部的“**格式**” \(![格式][ImageFormatIcon] \) 按钮会重新设置文件内容的格式，以提高可读性。   
+    > 缩小文件时，选择"响应"选项卡底部的****"格式 "\ (格式 \) 按钮以重新设置文件内容的格式，以 ![ ][ImageFormatIcon] 用于可读性。 ****  
     
-1.  选择“**计时**“选项卡。将显示此资源的网络活动的细分。  
+1.  选择 **"计时"** 选项卡。 将显示资源的网络活动的细分。  
     
     :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="“计时”选项卡" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
        “**计时**”选项卡  
@@ -262,7 +262,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
    “**筛选器**”工具栏  
 :::image-end:::  
 
-默认情况下应启用“**筛选器**”工具栏。  如果不是：  
+默认情况下 **，"** 筛选器"工具栏应打开。  如果不是：  
 
 1.  选择**筛选器** \(![筛选器][ImageFilterIcon]\)来显示它。  
     
@@ -383,7 +383,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "筛选器请求 - 网络分析参考 | Microsoft Docs"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "隐藏“概述”窗格 - 网络分析参考 | Microsoft Docs"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "按属性筛选请求 - 网络分析参考 | Microsoft Docs"
-[DevToolsOpen]: ../open.md "打开 Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "打开 Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "使用 Microsoft Edge DevTools 优化网站速度 | Microsoft Docs"  
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "检查网络活动演示 | 小故障"  
