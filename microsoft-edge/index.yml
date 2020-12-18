@@ -10,12 +10,12 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 29518882f80892eb5799a2cda7991963aa55ba60
-  ms.sourcegitcommit: 92e1fa81efe2d176353b5e81098b0761c3539d55
+  ms.openlocfilehash: 815394fd9d3f548f511c1c015e8a7ce5e8c2ba89
+  ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/10/2020
-  ms.locfileid: "11205747"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "11231165"
 highlightedContent:
   items:
   - title: 'Microsoft Edge (官方稳定渠道) '
@@ -102,9 +102,9 @@ additionalContent:
   sections:
   - title: 适用于开发人员的 Microsoft Edge
     items:
-    - title: DevTools
+    - title: 开发工具
       links:
-      - text: DevTools 概述
+      - text: 开发工具概述
         url: /microsoft-edge/devtools-guide-chromium
       - text: 面向初学者的开发工具
         url: /microsoft-edge/devtools-guide-chromium/beginners/html
@@ -126,7 +126,7 @@ additionalContent:
         url: /microsoft-edge/webdriver-chromium
       - text: Puppeteer
         url: /microsoft-edge/puppeteer
-      - text: '互操作 (站点兼容性) '
+      - text: 网站兼容性
         url: /microsoft-edge/web-platform/site-impacting-changes
       - text: webhint
         url: https://webhint.io/docs/user-guide
@@ -142,7 +142,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
     - title: 扩展：开发人员指南
       links:
-      - text: 将 Chromium 扩展端口移植到 Microsoft Edge
+      - text: 将 Chromium 扩展移植到 Microsoft Edge
         url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
       - text: 分发扩展的备用方法
         url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
@@ -218,19 +218,5 @@ additionalContent:
         url: /microsoft-edge/privacy-whitepaper
     - title: Microsoft Edge 旧版文档
       links:
-      - text: 'EdgeHTML (开发人员) '
-        url: /microsoft-edge/dev-guide
-      - text: 开发人员工具 (EdgeHTML)
-        url: /microsoft-edge/devtools-guide
-      - text: 开发人员工具协议 (EdgeHTML)
-        url: /microsoft-edge/devtools-protocol/index
-      - text: 扩展 (EdgeHTML)
-        url: /microsoft-edge/extensions/index
-      - text: 'EdgeHTML (PWA) '
-        url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-      - text: JavaScript 运行时托管
-        url: /microsoft-edge/hosting/javascript-runtime-hosting
-      - text: WebVR 开发人员指南
-        url: /microsoft-edge/webvr/index
-      - text: Windows 运行时 (WinRT)
-        url: /microsoft-edge/windows-runtime
+      - text: Microsoft Edge 旧版文档
+        url: /microsoft-edge/edgehtml/index
