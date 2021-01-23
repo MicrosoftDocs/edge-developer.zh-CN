@@ -10,12 +10,12 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 815394fd9d3f548f511c1c015e8a7ce5e8c2ba89
-  ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
+  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "11231165"
+  ms.lasthandoff: 01/23/2021
+  ms.locfileid: "11297721"
 highlightedContent:
   items:
   - title: 'Microsoft Edge (官方稳定渠道) '
@@ -73,7 +73,7 @@ conceptualContent:
     links:
     - itemType: reference
       text: 安全性
-      url: /deployedge/security-overview
+      url: /deployedge/ms-edge-security-for-business
     - itemType: reference
       text: 隐私
       url: /deployedge/microsoft-edge-enterprise-privacy-settings
@@ -142,7 +142,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
     - title: 扩展：开发人员指南
       links:
-      - text: 将 Chromium 扩展移植到 Microsoft Edge
+      - text: 将 Chromium 扩展端口移植到 Microsoft Edge
         url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
       - text: 分发扩展的备用方法
         url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
@@ -186,7 +186,7 @@ additionalContent:
         url: /microsoft-edge/webview2/gettingstarted/win32
       - text: WPF 中的 WebView2 入门
         url: /microsoft-edge/webview2/gettingstarted/wpf
-      - text: Windows 窗体应用中的 WebView2 入门
+      - text: Windows Forms 应用中的 WebView2 入门
         url: /microsoft-edge/webview2/gettingstarted/winforms
       - text: 参考
         url: /microsoft-edge/webview2/webview2-api-reference
@@ -201,7 +201,7 @@ additionalContent:
     - summary: 如果你的企业需要立即为 Microsoft Edge 提供技术支持，可以使用各种计划从 Microsoft 获得 1：1 支持，以帮助你获得所需的支持级别。
       title: Microsoft 商业支持
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-    - summary: 为用户提供有用的支持资源。
+    - summary: 为用户提供了有用的支持资源。
       title: 用户支持
       url: https://support.microsoft.com/microsoft-edge
   - title: 参考和旧文档
