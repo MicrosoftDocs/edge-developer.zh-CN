@@ -44,7 +44,7 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
 
 以下各节介绍 Microsoft Edge 中提供的新实验功能。  
 
-| 实验性功能 | Microsoft Edge 版本 |  
+| 实验功能 | Microsoft Edge 版本 |  
 |:--- |:--- |  
 | [模拟：支持双屏幕模式](#emulation-support-dual-screen-mode) | 84 或更高版本 |  
 | [启用新的 CSS 网格调试功能](#enable-new-css-grid-debugging-features) | 85 或更高版本 |  
@@ -78,7 +78,7 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
 若要使用 [CSS 媒体屏幕跨越][DualScreenDocsCssMedia] 功能以及 [JavaScript getWindowSegments API，][DualScreenDocsJSAPI]请打开 `Experimental Web Platform features` Microsoft Edge 中的标志。  完成以下步骤。  
 
 1.  导航到 `edge://flags` 。  
-1.  在搜索**标志**文本框中，输入 `Experimental Web Platform features` 、选择实验**Web 平台功能**标志，然后更改为 **"已禁用"。** ****  
+1.  在**搜索标志**文本框中，输入、选择实验 Web 平台功能标志，并更改为 `Experimental Web Platform features` **"已禁用"。** **** ****  
 1.  重启 Microsoft Edge。  
     
 :::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="启用实验性 Web 平台功能标志" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
@@ -88,21 +88,21 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
 > [!NOTE]
 > 如果你使用[CSS][DualScreenDocsCssMedia]媒体查询或[JavaScript Windows 段枚举 API][DualScreenDocsJSAPI]增强[Surface Duo][SurfaceDevicesDuo]的网站或应用，则还必须在[Surface Duo][SurfaceDevicesDuo]设备上的[Android Microsoft Edge][GooglePlayMicrosoftEdge]应用中启用实验性**Web**平台功能标志。  
 > 
-> 如果在桌面[Microsoft Edge][MicrosoftEdge]中启用实验性**Web**平台功能标志，并且在 Android [Microsoft Edge][GooglePlayMicrosoftEdge]应用中禁用，则桌面 Microsoft Edge 的 Surface Duo 模拟器中的网站或应用的行为与[Surface Duo][SurfaceDevicesDuo]上的[Android Microsoft Edge][GooglePlayMicrosoftEdge]应用不匹配。  确保标志在 Android 和桌面版 Microsoft Edge 之间匹配，以在桌面版 Microsoft Edge 中成功使用 Surface Duo [仿真器][MicrosoftEdge]。  
+> 如果在桌面[Microsoft Edge][MicrosoftEdge]中启用实验性**Web**平台功能标志，并且在 Android [Microsoft Edge][GooglePlayMicrosoftEdge]应用中禁用，则桌面 Microsoft Edge 的 Surface Duo 仿真器中的网站或应用的行为与[Surface Duo][SurfaceDevicesDuo]上的[Android Microsoft Edge][GooglePlayMicrosoftEdge]应用不匹配。  确保标志在 Android 和桌面版 Microsoft Edge 之间匹配，以在桌面版 Microsoft Edge 中成功使用 Surface Duo [仿真器][MicrosoftEdge]。  
 
-#### 在可折叠和双屏幕设备上测试  
+#### 在可折叠和双屏幕设备上进行测试  
 
 当你在 Microsoft Edge 中模拟双屏幕状态中的 [Surface Duo][SurfaceDevicesDuo] 时，两个屏幕之间的 (\) 将绘制在网站或应用上。  
 
-模拟显示与您的网站 \ (或 app\) 在 Surface Duo 上运行的 Microsoft [Edge Android][GooglePlayMicrosoftEdge] 应用中的呈现 [方式相匹配][SurfaceDevicesDuo]。  你可能需要更新网站 \ (或 app\) ，以更好地显示网站。  若要详细了解如何调整网站 \ (或 app\) 以适应变化，请导航到"如何使用[此目录"。][DualScreenIntroductionHowWorkSeam]  
+模拟显示与您的网站 \ (或 app\) 在 Surface Duo 上运行的 Microsoft [Edge Android][GooglePlayMicrosoftEdge] 应用中的呈现 [方式相匹配][SurfaceDevicesDuo]。  你可能需要更新网站 \ (app\) ，以更好地显示网站。  若要详细了解如何调整您的网站 \ (或 app\) 以适应变化，请导航到"如何使用[此目录"。][DualScreenIntroductionHowWorkSeam]  
 
 设备 [工具栏][DevtoolsDeviceModeIndexSimulateMobileViewport] 具有其他功能，可帮助你以多种状态和方向测试网站或应用。  Choose **Rotate** \ (![ Rotate ][ImageRotateIcon] \) to rotate the viewport to landscape orientation. 将此功能与 **Span** \ (Span \) 相结合，以在单屏或折叠、双屏或展开状态 ![ ][ImageSpanIcon] 之间进行切换。  这些功能共同支持在所有四种可能状态和方向中测试网站或应用。  
 
 :::image type="complex" source="../media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="双屏幕和可折叠设备状态和方向的矩阵" lightbox="../media/experiments-dual-screen-emulation-rotate-span.msft.png":::
-   双屏幕和可折叠设备状态和方向的矩阵  
+   双屏和可折叠设备的状态和方向矩阵  
 :::image-end:::  
 
-实验 **Web 平台功能** \ (![ ExperimentalApis \) 图标显示实验 Web ][ImageExperimentalApisIcon] **平台功能标志** 的状态。  如果此标志已打开，则突出显示该图标。  如果关闭标志，则不突出显示图标。  若要打开 \ (或关闭\) ，请导航到并 `edge://flags` 切换该标志。  
+实验 **性 Web 平台功能** \ (![ ExperimentalApis ][ImageExperimentalApisIcon] \) 图标显示实验性 **Web 平台功能标志** 的状态。  如果标志已打开，则突出显示图标。  如果关闭标志，则不突出显示图标。  若要打开 \ (或关闭\) ，请导航到该标志 `edge://flags` 并切换该标志。  
 
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
@@ -123,7 +123,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 #### 使用"检查"工具查看悬停网格覆盖  
 
-检查 **工具** 提供了一种快速方法，通过将鼠标悬停在网站中的 CSS 网格布局上来标识和可视化这些布局。  选择**** ![ DevTools (左上角的"检查) 检查 \) ][ImageInspectIcon] 图标。  然后，将鼠标悬停在要调试的网站上 Grid 元素上。  边框显示在网格周围，底纹表示网格间隙的位置（如果存在）。  
+检查 **工具** 提供了一种快速方法，通过将鼠标悬停在网站中的 CSS 网格布局上来识别并可视化这些布局。  选择**** ![ DevTools (左上角的"检查) 检查 \) ][ImageInspectIcon] 图标。  然后，将鼠标悬停在要调试的网站上 Grid 元素上。  边框显示在网格周围，底纹指示网格间隙的位置（如果存在）。  
 
 :::image type="complex" source="../media/grid-inspect.msft.png" alt-text="使用"检查"工具查看网格" lightbox="../media/grid-inspect.msft.png":::
    使用"检查"工具 **查看** 网格  
@@ -131,7 +131,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 #### 查看持久网格覆盖  
 
-在 Microsoft Edge 版本 86 或更高版本中，实验 CSS 网格功能还提供了启用持久网格覆盖的选项。  永久性覆盖具有多个优势。  
+在 Microsoft Edge 版本 86 或更高版本中，实验 CSS 网格功能还提供了启用持久网格覆盖的选项。  持久覆盖具有多个优势。  
 
 *   滚动、移动鼠标并使用 DevTools 的其他功能时，永久性覆盖在页面上仍然可见。  
 *   可以同时启用多个永久性覆盖，从而允许您一次查看多个网格布局。  
@@ -161,7 +161,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 ### 支持在面板之间移动选项卡  
 
-通常，元素和网络等工具**** 只能在位于**** DevTools 顶部的主面板中打开。  工具（**如 3D**视图和问题）通常仅在位于**** DevTools 底部的"箱"面板中打开。 ****  选择实验后，您可以在顶部和底部面板之间移动工具。  若要移动工具，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到顶部"或"**** 移动到**底部"。**   此实验允许你自定义 DevTools 布局。  若要显示或隐藏 **"箱"** 面板，请选择 `Escape` 。  
+通常，元素和网络等工具**** 只能在位于**** DevTools 顶部的主面板中打开。  工具（**如 3D 视图**和问题）通常仅在位于**** DevTools 底部的"箱"面板中打开。 ****  选择实验后，您可以在顶部和底部面板之间移动工具。  若要移动工具，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到顶部"或"**** 移动到**底部"。**   此实验允许你自定义 DevTools 布局。  若要显示或隐藏 **"箱"** 面板，请选择 `Escape` 。  
 
 :::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="在面板之间移动选项卡" lightbox="../media/experiments-move-panels.msft.png":::
    在面板之间移动选项卡  
@@ -280,7 +280,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 *   [3D 视图][Devtools3dViewIndex] 现在可用，在 Microsoft Edge 版本 83 或更高版本中默认处于打开状态。  
 *   [自定义键盘快捷方式][DevtoolsCustomKeyboardShortcuts] 现在可用，在 Microsoft Edge 版本 86 或更高版本中默认处于打开状态。  
 
-## 提供有关实验性功能的反馈  
+## 提供有关实验功能的反馈  
 
 提供有关 Microsoft Edge DevTools 实验或与 DevTools 相关的任何其他内容的反馈。  
 
@@ -313,20 +313,20 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 [Devtools3dViewIndex]: ../3d-view/index.md "3D 视图 | Microsoft Docs"  
 [DevToolsCustomizeSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "在 Microsoft Edge DevTools 中通过设备模式模拟移动设备 |Microsoft Edge"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "在 Microsoft Edge DevTools |Microsoft Edge"  
 [DevtoolsIssues]: ../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
-[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 |Microsoft Docs"  
-[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "在 Microsoft Edge DevTools 中自定义键盘快捷方式 |Microsoft Docs"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs"  
+[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "自定义 Microsoft Edge DevTools |Microsoft Docs"  
 [DevtoolsOpenMain]: ../open/index.md "打开 Microsoft Edge DevTools | Microsoft Docs"  
 
-[DualScreenWebIndex]: /dual-screen/web/index "双屏 Web 体验 |Microsoft Docs"  
-[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "获取 Surface Duo 仿真器 |Microsoft Docs"  
-[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "如何使用设备 - 双屏设备简介 |Microsoft Docs"  
-[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "使用 Surface Duo 仿真器 |Microsoft Docs"  
-[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "用于双屏幕检测的 CSS 媒体屏幕跨越功能 |Microsoft Docs"  
+[DualScreenWebIndex]: /dual-screen/web/index "双屏幕 Web 体验|Microsoft Docs"  
+[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "获取 Surface Duo 仿真器|Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "如何使用设备 - 双屏幕设备简介|Microsoft Docs"  
+[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "使用 Surface Duo 仿真器|Microsoft Docs"  
+[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "用于双屏检测方法的 CSS 媒体屏幕|Microsoft Docs"  
 [DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "适用于双屏幕设备的 getWindowSegments JavaScript API |Microsoft Docs"  
 
-[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "远程桌面客户端 |Microsoft Docs"
+[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "远程桌面客户端|Microsoft Docs"
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
 
@@ -336,7 +336,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 [GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge |Google Play"  
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "百分百 |Samsung"  
+[SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "百年百|Samsung"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools |Twitter"  
 
