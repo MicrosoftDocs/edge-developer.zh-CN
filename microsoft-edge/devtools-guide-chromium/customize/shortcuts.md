@@ -23,7 +23,7 @@ ms.locfileid: "11230906"
     *   选择 `Shift` + `?` 。  
 1.  导航到 **"快捷方式"** 页。  
     
-    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text=""设置"中的"快捷方式"页" lightbox="../media/settings-shortcuts.msft.png":::
+    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="设置中的快捷方式页" lightbox="../media/settings-shortcuts.msft.png":::
        " **设置"** 中的"快捷方式 **"页**  
     :::image-end:::  
     
