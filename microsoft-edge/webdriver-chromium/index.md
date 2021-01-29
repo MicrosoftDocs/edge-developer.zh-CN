@@ -42,7 +42,7 @@ ms.locfileid: "11231125"
     
 1.  导航到 [Microsoft Edge 驱动程序下载][MicrosoftDeveloperEdgeToolsWebdriverDownloads] 页面，并下载与 Microsoft Edge 的版本号匹配的驱动程序。  
     
-    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Microsoft Edge 驱动程序页的"下载"部分":::
+    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Microsoft Edge 驱动程序页的下载部分":::
        Microsoft Edge 驱动程序页的"下载 ["][MicrosoftDeveloperEdgeToolsWebdriver] 部分
     :::image-end:::  
     
