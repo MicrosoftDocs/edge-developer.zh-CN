@@ -42,7 +42,7 @@ ms.locfileid: "11231186"
     
 1.  展开 **"本地存储"** 菜单。  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text=""本地存储"菜单" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="本地存储菜单" lightbox="../media/storage-application-local-storage.msft.png":::
        " **本地存储"** 菜单  
     :::image-end:::  
     
