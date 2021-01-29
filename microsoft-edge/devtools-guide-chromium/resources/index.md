@@ -42,13 +42,13 @@ ms.locfileid: "11230773"
 
 1.  选择 `Control` + `P` \ (Windows、Linux\) `Command` + `P` 或 \ (macOS\) 。  将 **打开"打开文件** "对话框。  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text=""打开文件"对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="打开文件对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        " **打开文件"** 对话框  
     :::image-end:::  
     
 1.  从下拉列表中选择文件，或开始键入文件名，在自动完成框中突出显示正确的文件后 `Enter` 选择。  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在"打开文件"对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在打开文件对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
        在"打开文件"对话框中 **键入** 文件名  
     :::image-end:::  
     
@@ -56,7 +56,7 @@ ms.locfileid: "11230773"
 
 导航[到"检查资源的详细信息"。][DevtoolsNetworkInspectDetailsResource]  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="检查"网络"面板中的资源" lightbox="../media/resources-network-response.msft.png":::
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="检查网络面板中的资源" lightbox="../media/resources-network-response.msft.png":::
    检查"网络" **面板中的** 资源  
 :::image-end:::  
 
@@ -64,7 +64,7 @@ ms.locfileid: "11230773"
 
 下面的 ["](#browse-resources) 浏览资源"部分显示如何从 DevTools UI 的各个部分查看资源。  如果你想要检查网络面板中的资源，请右键**** 单击该资源，然后选择"网络 **"面板中的"展示"。**  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text=""在网络"面板中显示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="在网络面板中显示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **"在网络"面板中显示**  
 :::image-end:::  
 
@@ -112,13 +112,13 @@ ms.locfileid: "11230773"
 1.  打开 **"页面"** 窗格。  导航到["按目录浏览"。](#browse-by-directory)  
 1.  选择 **"更多** `...` 选项"并禁用 **"按文件夹分组"。**  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text=""按文件夹分组"选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="按文件夹分组选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        " **按文件夹分组"** 选项  
     :::image-end:::  
     
     资源按文件类型组织。  在每个文件类型中，资源按字母顺序进行组织。  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="禁用"按文件夹分组"后的"页面"窗格" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="禁用按文件夹分组后的页面窗格" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        禁用 **"** 按文件夹分组" **后的"页面"窗格**  
     :::image-end:::  
     
@@ -141,7 +141,7 @@ ms.locfileid: "11230773"
 1.  展开感兴趣的部分。  
 1.  单击某个资源进行查看。  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在"应用程序"面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在应用程序面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        在"应用程序"面板 **中查看** 资源  
     :::image-end:::  
     
