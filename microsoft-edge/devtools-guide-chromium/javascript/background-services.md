@@ -55,7 +55,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 1.  打开 **应用程序** 工具。  
 1.  打开 **"后台提取"** 窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text=""后台提取"窗格" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="后台提取窗格" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
        " **后台提取"** 窗格  
     :::image-end:::  
     
@@ -68,7 +68,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
     
 1.  单击事件以查看表下方空白区域的详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="在"后台提取"窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="在后台提取窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
        在"后台提取"窗格中查看 **事件** 的详细信息  
     :::image-end:::  
     
@@ -82,7 +82,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 1.  打开 **应用程序** 工具。  
 1.  打开 **"后台同步"** 窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text=""后台同步"窗格" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="后台同步窗格" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
        " **后台同步"** 窗格  
     :::image-end:::  
     
@@ -95,7 +95,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
     
 1.  单击事件以查看表下方空白区域的详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="在"后台同步"窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="在后台同步窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
        在"后台同步"窗格中查看 **事件** 的详细信息  
     :::image-end:::  
     
@@ -132,7 +132,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 1.  打开 **应用程序** 工具。  
 1.  打开 **"推送消息"** 窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="打开"推送消息"窗格" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="打开推送消息窗格" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
        打开 **"推送消息"** 窗格  
     :::image-end:::  
     
@@ -145,7 +145,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
     
 1.  单击事件以查看表下方空白区域的详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="在"推送消息"窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="在推送消息窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        在"推送消息"窗格中查看**事件的详细信息**  
     :::image-end:::  
     
