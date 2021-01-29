@@ -73,7 +73,7 @@ DevTools 自动放大大部分活动发生的记录部分。
 
 打开" **屏幕截图"** 复选框，在录制时捕获每个帧的屏幕截图。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text=""屏幕截图"复选框" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text="屏幕截图复选框" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
    " **屏幕截图"** 复选框  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ DevTools 自动放大大部分活动发生的记录部分。
 
 Choose **Capture settings** \ (Capture settings ![ ][ImageCaptureSettingsIcon] \) to expose more settings related to how DevTools captures performance recordings.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text=""捕获设置"部分" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="捕获设置部分" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    " **捕获设置"** 部分  
 :::image-end:::  
 
@@ -175,7 +175,7 @@ Choose **Capture settings** \ (Capture settings ![ ][ImageCaptureSettingsIcon] \
 
 将鼠标向左或向右拖动到 **"概述** "中，选择录制的一部分。  概述**是**包含**FPS、CPU**和******NET**图表的部分。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="将鼠标拖动到"概述"中以缩放" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="将鼠标拖动到概述中以缩放" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
    将鼠标拖动到 **"概述"中** 以缩放  
 :::image-end:::  
 
@@ -221,7 +221,7 @@ Choose **Capture settings** \ (Capture settings ![ ][ImageCaptureSettingsIcon] \
 
 选择事件以在"摘要"选项卡中查看 **有关它** 的信息。 DevTools 概述了选定的事件。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="有关"摘要"选项卡中的匿名函数详细信息" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="有关摘要选项卡中的匿名函数详细信息" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
    有关"摘要 `anonymous` "选项卡中函数**** 详细信息  
 :::image-end:::  
 
@@ -264,7 +264,7 @@ DevTools 为脚本分配随机颜色。  在上图中，来自一个脚本的函
 
 " **呼叫树** "选项卡仅显示在录制的选定部分期间的活动。  导航 [到"选择录音的一部分](#select-a-portion-of-a-recording) "，了解如何选择部分。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text=""呼叫树"选项卡" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="呼叫树选项卡" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
    " **呼叫树"** 选项卡  
 :::image-end:::  
 
@@ -286,7 +286,7 @@ Choose **Show Heaviest Stack** \ (Show ![ Heaviest Stack ][ImageShowHeaviestStac
 
 The **Bottom-Up** tab only displays activities during the selected portion of the recording.  导航 [到"选择录音的一部分](#select-a-portion-of-a-recording) "，了解如何选择部分。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text=""Bottom-Up"选项卡" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="Bottom-Up选项卡" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
    " **下向上"** 选项卡  
 :::image-end:::  
 
@@ -302,7 +302,7 @@ The **Bottom-Up** tab only displays activities during the selected portion of th
 
 " **事件日志** "选项卡仅显示记录选定部分期间的活动。  导航 [到"选择录音的一部分](#select-a-portion-of-a-recording) "，了解如何选择部分。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text=""事件日志"选项卡" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="事件日志选项卡" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
    " **事件日志"** 选项卡  
 :::image-end:::  
 
@@ -332,7 +332,7 @@ The **Bottom-Up** tab only displays activities during the selected portion of th
 
 查看 **"Raster"部分中的栅格** 活动。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text=""Raster"部分" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text="Raster部分" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
    **"Raster"** 部分  
 :::image-end:::  
 
@@ -340,7 +340,7 @@ The **Bottom-Up** tab only displays activities during the selected portion of th
 
 使用 **"交互"** 部分查找和分析在录制过程中发生的用户交互。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text=""交互"部分" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="交互部分" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
    " **交互"** 部分  
 :::image-end:::  
 
@@ -378,7 +378,7 @@ DevTools 提供了多种分析每秒帧数的方法：
 
 选择一个框架，在"摘要"选项卡中查看有关 **框架** 详细信息。 DevTools 以蓝色概述了选定的框架。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="在"摘要"选项卡中查看框架" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="在摘要选项卡中查看框架" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
    在"摘要"选项卡 **中查看** 框架  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ DevTools 提供了多种分析每秒帧数的方法：
 
 展开 **"网络** "部分以查看记录期间发生的网络请求的瀑布。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text=""网络"部分" lightbox="../media/evaluate-performance-performance-network.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="网络部分" lightbox="../media/evaluate-performance-performance-network.msft.png":::
    " **网络"** 部分  
 :::image-end:::  
 
@@ -425,7 +425,7 @@ DevTools 提供了多种分析每秒帧数的方法：
 
 打开" **内存"** 复选框以查看上次录制中的内存指标。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text=""内存"复选框" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text="内存复选框" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
    " **内存"** 复选框  
 :::image-end:::  
 
@@ -460,13 +460,13 @@ DevTools**在"摘要**"选项卡上方显示新的**内存**图表。 NET 图表
 
 您还可以通过选择"框架"部分中的框架 **来查看屏幕截图** 。  DevTools 在"摘要"选项卡中显示屏幕截图 **的较小** 版本。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="查看"摘要"选项卡中的屏幕截图" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="查看摘要选项卡中的屏幕截图" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
    查看"摘要" **选项卡中的** 屏幕截图  
 :::image-end:::  
 
 在"摘要"选项卡 **中选择缩略图** ，放大屏幕截图。  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="放大"摘要"选项卡中的屏幕截图" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="放大摘要选项卡中的屏幕截图" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
    放大"摘要"选项卡**中的屏幕截图**  
 :::image-end:::  
 
@@ -477,7 +477,7 @@ DevTools**在"摘要**"选项卡上方显示新的**内存**图表。 NET 图表
 1.  [打开高级画图检测](#turn-on-advanced-paint-instrumentation)。  
 1.  选择"框架" **部分中的** 图文框。  DevTools 在"事件日志"选项卡旁**** 的新"层"选项卡中显示有关**图层**的信息。  
     
-    :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text=""层"窗格" lightbox="../media/evaluate-performance-layers-all.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="层窗格" lightbox="../media/evaluate-performance-layers-all.msft.png":::
        " **层"** 窗格  
     :::image-end:::  
     
@@ -500,7 +500,7 @@ DevTools**在"摘要**"选项卡上方显示新的**内存**图表。 NET 图表
 1.  [打开](#turn-on-advanced-paint-instrumentation)。  
 1.  选择 **"主** "部分 **中的 Paint** 事件。  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text=""绘制配置文件器"选项卡" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="绘制配置文件器选项卡" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
        " **绘制配置文件器"** 选项卡  
     :::image-end:::  
     
@@ -513,7 +513,7 @@ DevTools**在"摘要**"选项卡上方显示新的**内存**图表。 NET 图表
 1.  [打开命令菜单][DevToolsCommandMenu]。  
 1.  开始键入并选择 `Rendering` `Show Rendering` 。  DevTools **在** DevTools 窗口底部显示"呈现"选项卡。  
     
-    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text=""呈现"选项卡" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="呈现选项卡" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
        " **呈现"** 选项卡  
     :::image-end:::  
     
