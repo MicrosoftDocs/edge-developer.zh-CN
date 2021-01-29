@@ -64,7 +64,7 @@ Visual Studio WebView2 应用程序中为 Web 和本机代码提供各种调试�
     1.  选择 **JavaScript 诊断** 设置。  
     1.  选择 **"修改"。** 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio"修改单个组件"选项卡" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio修改单个组件选项卡" lightbox="./media/indivcomp.png":::
            Visual Studio"修改单个组件"选项卡  
         :::image-end:::  
         
@@ -131,7 +131,7 @@ Visual Studio WebView2 应用程序中为 Web 和本机代码提供各种调试�
     1.  在 **"运行** "选项卡上，从下拉菜单中选择启动配置。  
     1.  若要开始调试应用程序，请选择"开始调试"，这是启动配置下拉列表旁边的绿色三角形。  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio"代码运行"选项卡" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio代码运行选项卡" lightbox="./media/runvs.png":::
            Visual Studio"代码运行"选项卡  
         :::image-end:::  
         
