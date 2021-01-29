@@ -26,7 +26,7 @@ ms.locfileid: "11230629"
 
 打开 Microsoft Edge 的 [桌面实例][MicrosoftEdge]，然后导航到 `edge://inspect` 。  
 
-:::image type="complex" source="../media/remote-debugging-surface-duo-inspect-page.msft.png" alt-text="桌面edge://inspect Microsoft Edge 中的"页面"" lightbox="../media/remote-debugging-surface-duo-inspect-page.msft.png":::
+:::image type="complex" source="../media/remote-debugging-surface-duo-inspect-page.msft.png" alt-text="桌面edge://inspect Microsoft Edge 中的页面" lightbox="../media/remote-debugging-surface-duo-inspect-page.msft.png":::
    `edge://inspect`桌面版 Microsoft Edge 中的页面  
 :::image-end:::
 
