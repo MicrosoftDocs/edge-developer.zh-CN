@@ -42,13 +42,13 @@ ms.locfileid: "11230822"
 
 1.  向下滚动到 `Emulate vision deficiencies` 菜单项，然后选择下拉菜单以显示选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现箱上的"模拟视觉缺陷"菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现箱上的模拟视觉缺陷菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        呈现 **箱上的"模拟** 视觉缺陷 **"** 菜单  
     :::image-end:::  
     
 1.  选择一个选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text=""模拟视觉缺陷"菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="模拟视觉缺陷菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        " **模拟视觉缺陷"** 菜单选项  
     :::image-end:::  
     
