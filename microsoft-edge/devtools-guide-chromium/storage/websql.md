@@ -80,7 +80,7 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 1.  [查看 Web 应用程序表中的SQL数据](#view-web-sql-data)。  
 1.  使用 **"可见列** "文本框指定要显示哪些列。  提供列名称作为 CSV 列表。  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="使用"可见列"文本框减少显示的列数" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="使用可见列文本框减少显示的列数" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
        使用 **"可见列** "文本框减少显示的列数  
     :::image-end:::  
     
@@ -89,13 +89,13 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 1.  打开 **"清除存储"** 窗格。  
 1.  确保 Web **SQL复选框** 已打开。  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text=""Web SQL复选框" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Web SQL复选框" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
        "Web **SQL** 复选框  
     :::image-end:::  
     
 1.  选择 **"清除网站数据"。**  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text=""清除网站数据"按钮" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="清除网站数据按钮" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
        " **清除网站数据"** 按钮  
     :::image-end:::  
     
