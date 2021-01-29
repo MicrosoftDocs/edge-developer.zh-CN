@@ -103,7 +103,7 @@ ms.locfileid: "11231109"
     
 1.  在控制台 `Hello, Console!` 中的消息旁边，选择**log.js：2。**  "源"面板将打开，并突出显示导致消息记录到控制台的代码行。  当页面的 JavaScript 运行时，已记录消息 `console.log('Hello, Console!')` 。
     
-    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="选择"源"面板后，DevTools 将打开log.js：2" lightbox="../media/console-sources-logjs.msft.png":::
+    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="选择源面板后，DevTools 将打开log.js：2" lightbox="../media/console-sources-logjs.msft.png":::
        选择后，DevTools **将打开** "源"面板 `log.js:2`  
     :::image-end:::  
     
@@ -267,7 +267,7 @@ ms.locfileid: "11231109"
 1.  选择" **元素"** 选项卡。  
 1.  选择 `Escape`。  将 **打开** "箱" **的"控制台"** 选项卡。  它拥有你在整个教程中一直使用的控制台面板的所有功能。  
     
-    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text=""箱"中的"控制台"选项卡" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
+    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="箱中的控制台选项卡" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
          " **箱"** 中的"控制台" **选项卡**  
     :::image-end:::  
     
