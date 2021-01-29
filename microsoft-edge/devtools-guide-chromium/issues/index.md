@@ -48,14 +48,14 @@ Microsoft **Edge** DevTools 中的"问题"工具可以减少控制台的通知�
        :::column span="":::
           选择黄色 **警告栏中** 的"转到问题"按钮。  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="检测到问题时，转到黄色警告栏中的"问题"按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="检测到问题时，转到黄色警告栏中的问题按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
              检测到 **问题时** ，黄色警告栏中的"转到问题"按钮。  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           或者，从" **更多** 工具" **菜单中选择"问题** "。  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text=""更多工具"菜单中的问题工具" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="更多工具菜单中的问题工具" lightbox="../media//issues-more-tools-menu.msft.png":::
              **"** 更多工具 **"菜单中的问题** 工具  
           :::image-end:::  
        :::column-end:::
@@ -63,13 +63,13 @@ Microsoft **Edge** DevTools 中的"问题"工具可以减少控制台的通知�
     
 1.  如有必要 **，选择"重新加载** 页面"按钮。  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的"问题"工具（具有"重新加载"页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的问题工具（具有重新加载页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
        **DevTools** Drawer 中的"问题"工具（ **具有"重新加载"页面按钮** ）  
     :::image-end:::  
 
     控制台中报告 **的问题很难** 理解，如下图中的 Cookie 警告。  根据报告的问题，可能不明确您必须执行哪些工作。  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools Drawer 中具有三个 Cookie 问题的"问题"工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools Drawer 中具有三个 Cookie 问题的问题工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
        **DevTools** Drawer 中具有三个 Cookie 问题的"问题"工具  
     :::image-end:::  
     
@@ -79,7 +79,7 @@ DevTools Drawer 中的"问题"工具以结构化、聚合且可操作的方式�
 
 1.  在"问题"工具 **中选择** 一个项目，获取有关如何解决问题和查找受影响资源的指南。  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="将跨站点 Cookie 标记为"问题"工具中打开的安全问题" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="将跨站点 Cookie 标记为问题工具中打开的安全问题" lightbox="../media/issues-tab-issue-open.msft.png":::
        **将跨站点 Cookie 标记为** "问题"工具中打开 **的** 安全问题  
     :::image-end:::  
     
@@ -92,7 +92,7 @@ DevTools Drawer 中的"问题"工具以结构化、聚合且可操作的方式�
     
 1.  选择受影响的 **资源中的项目** 以查看详细信息。  在下面的示例中，将 **跨站点 Cookie** 标记为安全问题会影响一个 Cookie 和两个请求。  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="受影响的资源在"问题箱"选项卡中打开" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="受影响的资源在问题箱选项卡中打开" lightbox="../media/issues-tab-affected-resources.msft.png":::
        受影响的资源在 DevTools **Drawer** 的"问题"工具中打开  
     :::image-end:::  
     
