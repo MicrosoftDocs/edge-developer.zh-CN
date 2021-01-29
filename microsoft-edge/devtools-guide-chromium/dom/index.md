@@ -57,13 +57,13 @@ ms.locfileid: "11231102"
     
     1.  将 **打开** DevTools 的元素面板。  `<li>Michelangelo</li>` 在 **DOM 树中突出显示**。  
         
-        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="突出显示"一文集"节点" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="突出显示一文集节点" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
            突出显示 `Michelangelo` 节点  
         :::image-end:::  
         
         1.  单击**** ![ DevTools (左上角的"检查) 检查 \) ][ImageInspectIcon] 图标。  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text=""检查"图标" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="检查图标" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                " **检查"** 图标  
             :::image-end:::  
             
