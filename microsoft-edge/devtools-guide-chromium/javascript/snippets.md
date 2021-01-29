@@ -75,7 +75,7 @@ ms.locfileid: "11230955"
 
 1.  选择" **源"** 选项卡以打开 **"源"** 工具。  默认情况下 **，"** 页面"窗格通常打开。  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="左侧打开"页面"窗格的"源"工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="左侧打开页面窗格的源工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
        左侧 **打开** "页面" **窗格** 的"源"工具  
     :::image-end:::  
     
@@ -87,7 +87,7 @@ ms.locfileid: "11230955"
 1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令菜单。  
 1.  键入 `Snippets` ， **选择"显示**代码段"，然后选择 `Enter` 运行命令。  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text=""显示代码段"命令" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="显示代码段命令" lightbox="../media/javascript-search-show-snippets.msft.png":::
        " **显示代码段"** 命令  
     :::image-end:::  
     
