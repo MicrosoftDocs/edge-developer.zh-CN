@@ -109,7 +109,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 应用程序**面板**中的"服务工作者****"窗格是 DevTools 中用于检查和调试服务工作者的主要位置。  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text=""服务工作人员"窗格" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="服务工作人员窗格" lightbox="../media/service-workers-pane.msft.png":::
    " **服务工作人员"** 窗格  
 :::image-end:::  
 
