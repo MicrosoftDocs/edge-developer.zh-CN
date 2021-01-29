@@ -39,7 +39,7 @@ ms.locfileid: "11238217"
 *   将鼠标悬停在元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
 *   选择 `Control` + `Shift` + `C` \ (Windows、Linux\) `Command` + `Option` + `C` 或 \ (macOS\) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。  
 
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text=""检查"选项" lightbox="../media/bing-right-click-inspect.msft.png":::
+:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="检查选项" lightbox="../media/bing-right-click-inspect.msft.png":::
    " **检查"** 选项  
 :::image-end:::  
 
