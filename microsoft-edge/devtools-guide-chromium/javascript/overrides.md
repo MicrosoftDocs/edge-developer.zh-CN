@@ -67,11 +67,11 @@ ms.locfileid: "11230962"
 
 在源**编辑器**上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \ (右键单击\) ，然后选择"保存**替代"。**  
 
-:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在"源"编辑器中，添加要覆盖的文件的名称" lightbox="../media/javascript-overrides-file-name.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在源编辑器中，添加要覆盖的文件的名称" lightbox="../media/javascript-overrides-file-name.msft.png":::
    在 **"源** "编辑器中，添加要覆盖的文件的名称  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择"保存替代"" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择保存替代" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    在上下文菜单上，选择 **"保存替代"**  
 :::image-end:::  
 
