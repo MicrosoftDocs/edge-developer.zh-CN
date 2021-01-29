@@ -125,7 +125,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 检查 **工具** 提供了一种快速方法，通过将鼠标悬停在网站中的 CSS 网格布局上来识别并可视化这些布局。  选择**** ![ DevTools (左上角的"检查) 检查 \) ][ImageInspectIcon] 图标。  然后，将鼠标悬停在要调试的网站上 Grid 元素上。  边框显示在网格周围，底纹指示网格间隙的位置（如果存在）。  
 
-:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="使用"检查"工具查看网格" lightbox="../media/grid-inspect.msft.png":::
+:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="使用检查工具查看网格" lightbox="../media/grid-inspect.msft.png":::
    使用"检查"工具 **查看** 网格  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  选择要自定义的操作。  
 1.  选择 **编辑** \ (![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \) 图标。  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从"设置"中的"快捷方式"页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从设置中的快捷方式页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        从"设置"中的"快捷方式 **"** 页选择要自定义 [的操作][DevToolsCustomizeSettings]
     :::image-end:::  
     
