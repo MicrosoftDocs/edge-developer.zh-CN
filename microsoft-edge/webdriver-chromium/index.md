@@ -1,23 +1,23 @@
 ---
 description: 了解如何在 Microsoft Edge 中测试网站或应用，或者使用 WebDriver 自动执行浏览器。
-title: WebDriver (Chromium)
+title: 将 WebDriver (Chromium) 用于测试自动化
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: 5e881eec59c966fd4fa6d35118032a3a51e7b9e5
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 295985734d93c5912922be22c0af0c0e33e00a54
+ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "11306246"
 ---
-# 使用 WebDriver (Chromium) 测试自动化概述  
+# 将 WebDriver (Chromium) 用于测试自动化  
 
-利用 WebDriver，你可以\ (开发人员\) 创建模拟用户交互的自动测试。  由于以下原因，WebDriver 测试和模拟不同于 JavaScript 单元测试。  
+WebDriver 允许开发人员创建模拟用户交互的自动化测试。  WebDriver 测试和模拟与 JavaScript 单元测试不同，因为 WebDriver：  
 
 *   访问在浏览器中运行的 JavaScript 不可用的功能和信息。  
 *   更精确地模拟用户事件或操作系统级事件。  
@@ -42,7 +42,7 @@ ms.locfileid: "11231125"
     
 1.  导航到 [Microsoft Edge 驱动程序下载][MicrosoftDeveloperEdgeToolsWebdriverDownloads] 页面，并下载与 Microsoft Edge 的版本号匹配的驱动程序。  
     
-    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Microsoft Edge 驱动程序页的下载部分":::
+    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Microsoft Edge 驱动程序页的"下载"部分":::
        Microsoft Edge 驱动程序页的"下载 ["][MicrosoftDeveloperEdgeToolsWebdriver] 部分
     :::image-end:::  
     
@@ -55,16 +55,16 @@ ms.locfileid: "11231125"
 
 必须下载的最后一个组件是特定语言的客户端驱动程序，用于将代码 \ (Python、Java、C\#、Ruby、JavaScript\) 转换为 Microsoft Edge \ (Chromium\) 中运行的命令。  
 
-[下载你选择的 WebDriver 语言绑定][SeleniumDownloads]。  Microsoft Edge 团队建议使用 [Selenium 4.00-alpha05][NugetPackagesSeleniumWebdriver400alpha05] 或更高版本，因为它支持 Microsoft Edge \ (Chromium\) 。  但是，你可以控制所有较旧版本的 Selenium 中的 Microsoft Edge \ (Chromium\) ，包括当前稳定的 Selenium 3 版本。  
+[下载你选择的 WebDriver 语言绑定][SeleniumDownloads]。  Microsoft Edge 团队建议使用 [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] 或更高版本，因为它支持 Microsoft Edge \ (Chromium\) 。  但是，你可以控制所有较旧版本的 Selenium 中的 Microsoft Edge \ (Chromium\) ，包括当前稳定的 Selenium 3 版本。  
 
 > [!IMPORTANT]
-> 如果之前使用和类自动执行或测试 Microsoft Edge \ (Chromium\) ，则 WebDriver 代码不会在 Microsoft Edge 版本 80 或更高版本中 `ChromeDriver` `ChromeOptions` 运行。  若要解决此问题，请更新测试以使用 `EdgeOptions` 该类并安装 Microsoft [Edge 驱动程序][MicrosoftDeveloperEdgeToolsWebdriver]。  
+> 如果之前使用和类自动执行或测试 Microsoft Edge \ (Chromium\) ，则 WebDriver 代码不会在 Microsoft Edge 版本 `ChromeDriver` `ChromeOptions` 80 或更高版本中运行。  若要解决此问题，请更新测试以使用 `EdgeOptions` 该类并下载 Microsoft [Edge 驱动程序][MicrosoftDeveloperEdgeToolsWebdriver]。  
 
 ### 使用 Selenium 3  
 
 如果你已使用 [Selenium 3，][|::ref1::|]你可能已有浏览器测试，并且想要添加 Microsoft Edge \ (Chromium\) 的覆盖范围，而无需更改 Selenium 版本。  若要使用 [Selenium 3][|::ref2::|] 为 Microsoft Edge \ (EdgeHTML\) 和 Microsoft Edge \ (Chromium\) 编写自动测试，请安装适用于 Microsoft Edge 的 [Selenium 工具][GithubMicrosoftEdgeSeleniumTools] 程序包以使用更新的驱动程序。  工具 `EdgeDriver` `EdgeDriverService` 中包含的类与 Selenium 4 中的内置等效项完全兼容。  
 
-使用以下步骤将适用于 Microsoft Edge 和[Selenium 3][|::ref3::|]的[Selenium 工具][GithubMicrosoftEdgeSeleniumTools]添加到项目中。
+使用以下步骤将适用于 Microsoft Edge 和[Selenium 3][|::ref3::|]的[Selenium 工具][GithubMicrosoftEdgeSeleniumTools]添加到项目中。  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -82,6 +82,22 @@ ms.locfileid: "11231125"
 pip install msedge-selenium-tools selenium==3.141
 ```  
 
+#### [Java	](#tab/java/)  
+
+<a id="selenium-tools-install"></a>  
+
+如果你Java Maven，请通过向文件添加以下依赖项来添加[msedge-selenium-tools-java：][SonatypeMavenRepositorySearch] `pom.xml`  
+
+```xml
+<dependency>
+    <groupId>com.microsoft.edge</groupId>
+    <artifactId>msedge-selenium-tools-java</artifactId>
+    <version>[3.141.0,)</version>
+</dependency>
+```  
+
+The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page.][GithubMicrosoftEdgeSeleniumToolsReleases]  
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="selenium-tools-install"></a>  
@@ -94,43 +110,15 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 * * *  
 
-## 将 Microsoft Edge (Chromium) WebDriver
+## 使用 WebDriver (Microsoft Edge) Chromium  
 
-可以使用 Selenium 3 或 4 运行以下示例。  若要与 Selenium 3 一起使用，必须安装适用于 Microsoft Edge 的 [Selenium][GithubMicrosoftEdgeSeleniumTools] 工具包。  
+若要使用 WebDriver 自动化浏览器，必须先使用首选的 WebDriver 语言绑定启动 WebDriver 会话。  会话是浏览器的单个运行实例，可以使用 WebDriver 命令进行控制。  启动 WebDriver 会话将启动一个新的浏览器实例。  启动的浏览器将保持打开状态，直到您关闭 WebDriver 会话。  
 
-### 基本用法  
+以下内容将引导你使用 Selenium 启动与 Microsoft Edge \ (Chromium\) 的 WebDriver 会话。  可以使用 Selenium 3 或 4 运行这些示例。  若要与 Selenium 3 一起使用，必须安装适用于 Microsoft Edge 的 [Selenium][GithubMicrosoftEdgeSeleniumTools] 工具包。  
 
-若要与 Microsoft Edge \ (EdgeHTML\) 一起使用，请创建类的默认 `EdgeDriver` 实例。  
+### 自动化 Microsoft Edge (Chromium)   
 
-#### [C#](#tab/c-sharp/)  
-
-<a id="basic-usage-code"></a>  
-
-```csharp
-var driver = new EdgeDriver();
-```  
-
-#### [Python](#tab/python/)  
-
-<a id="basic-usage-code"></a>  
-
-```python
-driver = Edge()
-```  
-
-#### [JavaScript](#tab/javascript/)  
-
-<a id="basic-usage-code"></a>  
-
-```javascript
-let driver = edge.Driver.createSession();
-```  
-
-* * *  
-
-### 驱动 Microsoft Edge (Chromium)   
-
-若要与 Microsoft Edge \ (Chromium\) 一起使用，请创建一个新类，并传递属性设置为 `EdgeDriver` `EdgeOptions` `UseChromium` `true` 的对象。  
+Selenium 使用 `EdgeDriver` 该类管理 Microsoft Edge \ (Chromium\) 会话。 若要启动会话并自动执行 Microsoft Edge \ (Chromium\) ，请创建一个新对象，并传递一个属性设置为 `EdgeDriver` `EdgeOptions` `UseChromium` `true` 的对象。  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -154,6 +142,16 @@ options.use_chromium = True
 driver = Edge(options)
 ```  
 
+#### [Java	](#tab/java/)  
+
+<a id="driving-microsoft-edge-chromium-code"></a>  
+
+该类 `EdgeDriver` 仅支持 Microsoft Edge (Chromium) ，不支持 Microsoft Edge (EdgeHTML) 。 对于基本用法，你可以创建一个 `EdgeDriver` 而不提供 `EdgeOptions` 。  
+
+```java
+EdgeDriver driver = new EdgeDriver();
+```  
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="driving-microsoft-edge-chromium-code"></a>  
@@ -168,11 +166,11 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 > [!NOTE]
-> 如果你的 IT 管理员将[DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability]策略设置为 ，Microsoft Edge 驱动程序无法驱动 `2` Microsoft Edge ([Chromium) ][MicrosoftEdge]因为驱动程序使用[Microsoft Edge DevTools。][DevToolsMain] [][MicrosoftDeveloperEdgeToolsWebdriver]  确保[将 DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability]策略设置为或自动执行 Microsoft Edge (`0` `1` [Chromium) 。 ][MicrosoftEdge]  
+> 如果你的 IT 管理员将[DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]策略设置为 ，Microsoft Edge 驱动程序无法驱动 `2` Microsoft Edge (Chromium) 因为驱动程序使用[Microsoft Edge DevTools。][DevtoolsIndex] [][MicrosoftDeveloperEdgeToolsWebdriver]  确保 [将 DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] 策略设置为或自动执行 Microsoft Edge (`0` `1` Chromium) 。  
 
 ### 选择特定浏览器二进制文件 (仅 Chromium)   
 
-你可以将该类 `EdgeOptions` 与 Microsoft Edge \ (Chromium\) 。  例如，可以使用 [Microsoft Edge][MicrosoftedgeinsiderDownload] 预览频道（如 Microsoft Edge Beta）运行测试。  
+可以使用特定的 Microsoft Edge \ (Chromium\) 启动 WebDriver 会话。  例如，可以使用 [Microsoft Edge][MicrosoftedgeinsiderDownload] 预览频道（如 Microsoft Edge Beta）运行测试。  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -198,6 +196,17 @@ options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Applicati
 driver = Edge(options)
 ```  
 
+#### [Java	](#tab/java/)  
+
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
+
+```java
+EdgeOptions options = new EdgeOptions();
+options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\msedge.exe");
+
+EdgeDriver driver = new EdgeDriver(options);
+```  
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
@@ -205,7 +214,7 @@ driver = Edge(options)
 ```javascript
 let options = new edge.Options();
 options.setEdgeChromium(true);
-options.setBinaryPath("C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe");
+options.setBinaryPath("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\msedge.exe");
 
 let driver = edge.Driver.createSession(options);
 ```  
@@ -220,7 +229,7 @@ let driver = edge.Driver.createSession(options);
 
 使用类创建类实例时，它会为 `EdgeDriver` `EdgeOptions` Microsoft Edge `EdgeDriverService` \ (EdgeHTML\) 或 Microsoft Edge \ (Chromium\) 创建和启动相应的类。  
 
-如果要创建一个 ，请创建一个为 `EdgeDriverService` Microsoft Edge \ (Chromium\) 方法 `CreateChromiumService()` 。  您可能会发现它可用于其他自定义项，如在下面的代码中启用详细日志输出。  
+如果要创建一个 ，请创建一个为 `EdgeDriverService` Microsoft Edge \ (Chromium\) 方法 `CreateChromiumService()` 。  当您需要添加自定义项时，您可能会发现它非常有用。 例如，以下代码开始详细日志输出。  
 
 ```csharp
 using (var service = EdgeDriverService.CreateChromiumService())
@@ -232,7 +241,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 ```  
 
 > [!NOTE] 
->在传递给实例时，不需要 `EdgeOptions` `EdgeDriverService` 提供 `EdgeDriver` 对象。 该类使用 `EdgeDriver` Microsoft Edge \ (EdgeHTML\) 或 Microsoft Edge \ (Chromium\) 的默认选项，具体取决于你提供的服务。  
+>在传递给实例时，不需要 `EdgeOptions` `EdgeDriverService` 提供 `EdgeDriver` 对象。  该类根据你提供的服务使用 `EdgeDriver` Microsoft Edge \ (EdgeHTML\) 或 Microsoft Edge \ (Chromium\) 的默认选项。  
 > 但是，如果要同时提供这两个类和类，请确保为相同版本的 Microsoft Edge 配置这两 `EdgeDriverService` `EdgeOptions` 者。  例如，在该类中不能使用默认的 Microsoft Edge \ (EdgeHTML\) 类和 `EdgeDriverService` Chromium `EdgeOptions` 属性。  该类 `EdgeDriver` 会引发错误，以防止使用不同的版本。  
 
 #### [Python](#tab/python/)  
@@ -246,12 +255,25 @@ service_args = ['--verbose']
 driver = Edge(service_args = service_args)
 ```  
 
+#### [Java	](#tab/java/)  
+
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
+
+使用此方法 `createDefaultService()` 创建为 Microsoft `EdgeDriverService` Edge \ (Chromium\) 。 驱动程序服务Java系统属性Java自定义。 例如，以下代码使用 `"webdriver.edge.verboseLogging"` 该属性启用详细日志输出。  
+
+```java
+System.setProperty("webdriver.edge.verboseLogging", "true");
+EdgeDriverService service = EdgeDriverService.createDefaultService();
+EdgeOptions options = new EdgeOptions();
+EdgeDriver driver = new EdgeDriver(service, options);
+```  
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-使用 JavaScript 时，使用类 `Service` 创建和 `ServiceBuilder` 配置。  或者，你可以将对象传递给该对象，该对象将启动 `Service` `Driver` \ (并停止\) 服务。  
-若要配置 `Service` ，请运行类中的其他 `ServiceBuilder` 方法，然后再使用 `build()` 该方法。  然后作为 `service` 参数在方法中 `Driver.createSession()` 传递。  
+使用 JavaScript 时，使用类 `Service` 创建和 `ServiceBuilder` 配置 。  或者，你可以将对象传递给该对象，该对象将启动 `Service` `Driver` \ (并停止\) 服务。  
+若要配置 `Service` ，请运行类中的另一 `ServiceBuilder` 个方法，然后再 `build()` 使用该方法。  然后作为 `service` 参数在方法中 `Driver.createSession()` 传递。  
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
@@ -262,7 +284,7 @@ let driver = edge.Driver.createSession(options, service);
 
 ### 使用Chromium-Specific选项  
 
-如果将该属性设置为 ，可以使用类访问与自动执行其他 Chromium 浏览器时相同的 `UseChromium` `true` 特定于 `EdgeOptions` [Chromium][SeleniumWebDriverChromeoptionsClass] 的属性和方法。  
+如果将该属性设置为 ，则您可以使用类访问与自动执行其他 Chromium 浏览器时所使用的特定于 `UseChromium` `true` `EdgeOptions` [Chromium][WebdriverCapabilitiesEdgeOptions] 的属性和方法相同的属性和方法。  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -286,6 +308,16 @@ options.add_argument("headless")
 options.add_argument("disable-gpu")
 ```  
 
+#### [Java	](#tab/java/)  
+
+<a id="using-chromium-specific-options-code"></a>  
+
+```java
+EdgeOptions options = new EdgeOptions();
+options.addArguments("headless");
+options.addArguments("disable-gpu");
+```  
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="using-chromium-specific-options-code"></a>  
@@ -295,7 +327,7 @@ let options = new edge.Options();
 options.setEdgeChromium(true);
 options.addArguments("headless");
 options.addArguments("disable-gpu");
-```
+```  
 
 * * *  
 
@@ -322,11 +354,15 @@ choco install selenium-chromium-edge-driver
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```  
 
-有关详细信息，请参阅 [Docker Hub 上的容器][DockerHubMsedgedriver]。  
+有关详细信息，请导航到 Docker Hub 上的 [msedgedriver 容器][DockerHubMsedgedriver]。  
+
+## 后续步骤
+
+若要了解有关 WebDriver 以及如何使用 Selenium 编写自动 WebDriver 测试的信息，请导航到 [Selenium 文档][SeleniumDocumentation]。  
 
 ## 联系 Microsoft Edge DevTools 团队  
 
-Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Microsoft Edge 的反馈。  若要让团队了解你的想法，请选择 Microsoft **** Edge DevTools 中的"发送反馈"图标或发送推文[@EdgeDevTools。][TwitterTweetEdgeDevTools]  
+Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Microsoft Edge 的反馈。  若要向团队发送你的问题和意见，请选择 Microsoft **** Edge DevTools 中的"发送反馈"图标或发送推文[@EdgeDevTools。][TwitterTweetEdgeDevTools]  
 
 :::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Microsoft **Edge** DevTools 中的"发送反馈"图标  
@@ -334,18 +370,20 @@ Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Micros
 
 <!-- links -->  
 
-[DevToolsMain]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 |Microsoft Docs"
-[Webdriver]: ../webdriver/index.md "WebDriver (EdgeHTML) |Microsoft Docs"  
+[DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"  
+[WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "功能和 EdgeOptions |Microsoft Docs"  
+<!--[Webdriver]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
-[DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - 策略 |Microsoft Docs"  
+[DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - 策略|Microsoft Docs"  
 
-[Chocolatey]: https://chocolatey.org "百年 |百万软件"  
-[ChocolateyPackagesSeleniumChromiumEdgeDriver]: https://chocolatey.org/packages/selenium-chromium-edge-driver "Selenium Chromium Edge 驱动程序 |百年"  
+[Chocolatey]: https://chocolatey.org "百年|百万软件"  
+[ChocolateyPackagesSeleniumChromiumEdgeDriver]: https://chocolatey.org/packages/selenium-chromium-edge-driver "Selenium Chromium Edge 驱动程序|百年"  
 
 [DockerHub]: https://hub.docker.com "Docker Hub"  
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver |Docker 中心"  
 
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools |GitHub"  
+[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools |GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium |GitHub"  
 
 [JavaScriptnpm]: https://www.npmjs.com/ "npm"  
@@ -362,15 +400,17 @@ Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Micros
 [NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet.CommandLine |NuGet 库"  
 [NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "Microsoft.Edge.SeleniumTools |NuGet 库"  
 [NugetPackagesSeleniumWebdriver31410]: https://www.nuget.org/packages/Selenium.WebDriver/3.141.0 "Selenium.WebDriver 3.141.0 |NuGet 库"  
-[NugetPackagesSeleniumWebdriver400alpha05]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha05 "Selenium.WebDriver 4.0.0-alpha05 |NuGet 库"  
+[NugetPackagesSeleniumWebdriver400alpha07]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha07 "Selenium.WebDriver 4.0.0-alpha07 |NuGet 库"  
 
-[PythonPip]: https://pypi.org/project/pip/ "pip |PyPI"  
+[PythonPip]: https://pypi.org/project/pip/ "管道|PyPI"  
 [PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "msedge-selenium-tools |PyPI"  
 [PythonSelenium]: https://pypi.org/project/selenium/ "selenium |PyPI"
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
-[SeleniumDownloads]: https://selenium.dev/downloads "下载 |Selenium"  
-[SeleniumWebDriverChromeoptionsClass]: https://www.selenium.dev/selenium/docs/api/dotnet/?topic=html/T_OpenQA_Selenium_Chrome_ChromeOptions.htm "ChromeOptions 类 - WebDriver |Selenium"  
+[SeleniumDocumentation]: https://www.selenium.dev/documentation "Selenium 浏览器自动化项目 ：：Selenium 文档"  
+[SeleniumDownloads]: https://selenium.dev/downloads "下载|Selenium"  
+
+[SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "sonatype Maven 中央存储库搜索|com.microsoft.edge：msedge-selenium-tools-java"
 
 [TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools |发布推文"  
 
@@ -378,4 +418,4 @@ Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Micros
 
 [W3CWebdriver]: https://w3.org/TR/webdriver2 "WebDriver |W3C"  
 
-[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "无头浏览器 |Wikipedia"  
+[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "无头浏览器|Wikipedia"  
