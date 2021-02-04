@@ -3,16 +3,16 @@ description: Linux 上的 Microsoft Edge、”问题“工具中改进的 Webhin
 title: DevTools 中的新增功能 (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: a9c262075f3d541861ed825a8da96b3a86956c0e
-ms.sourcegitcommit: c06a4ece7bcbfeae4677d15fca677ca42a0373b9
-ms.translationtype: HT
+ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "11229472"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313084"
 ---
 # DevTools 中的新增功能 (Microsoft Edge 88)  
 
@@ -62,7 +62,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 现在，你可以可视化显示 **Layers** 内容与 z-index 值和文档对象模型\ (DOM\)。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]。  
 
@@ -222,7 +222,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```  
+```
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS 角度" lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS 角度  
@@ -329,7 +329,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ## 下载 Microsoft Edge 预览频道  
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [Microsoft Edge 预览频道] [MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [Microsoft Edge][MicrosoftEdgePreviewChannels] 预览频道作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
 
 ## 联系 Microsoft Edge DevTools 团队  
 
@@ -360,6 +360,8 @@ background: linear-gradient(100deg, lightblue, pink);
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "下载 Microsoft Edge 预览体验成员频道"  
 
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"  
@@ -370,7 +372,7 @@ background: linear-gradient(100deg, lightblue, pink);
 [CR1035309]: https://crbug.com/1035309 "问题 1035309：DevTools 应始终使用 MB 而不是 mebibyte 表示兆字节 | Chromium 漏洞"  
 [CR1051466]: https://crbug.com/1051466 "问题 1051466：在 DevTools 中支持 COOP/COEP 调试 | Chromium 漏洞"  
 [CR1058836]: https://crbug.com/1058836 "问题 1058836：关于 Wasm 调试的 UX 问题 | Chromium 漏洞"  
-[CR1071432]: https://crbug.com/1071432 "问题 1071432：☂️ Wasm 基本开发人员体验 | Chromium Bug"  
+[CR1071432]: https://crbug.com/1071432 "问题 1071432：☂︝ Wasm 基本开发人员体验|Chromium Bug"  
 [CR1107766]: https://crbug.com/1107766 "问题 1107766：显示有关框架树中的 "window.open ()" 生成的框架的信息 |Chromium 漏洞"  
 [CR1122507]: https://crbug.com/1122507 "问题 1122507：框架树视图中的 Surface 工作线程信息 | Chromium 漏洞"  
 [CR1126178]: https://crbug.com/1126178 "问题 1126178：☂ DevTools：CSS <类型> 组件 | Chromium 漏洞"  

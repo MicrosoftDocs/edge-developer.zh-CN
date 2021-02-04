@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的最新实验功能
 title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， 实验
-ms.openlocfilehash: fbdeeb08599285a9cfa6edd467282cfbabbadd74
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232377"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313041"
 ---
 # 实验功能  
 
@@ -26,12 +26,12 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
 
 1.  [打开 DevTools。][DevtoolsOpenMain]  
     *   选择 `Control` + `Shift` + `I` \ (Windows、Linux\) `Command` + `Option` + `I` 或 \ (macOS\) 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
-1.  打开 ["设置"][DevToolsCustomizeSettings] 窗格。  
+1.  打开 ["设置"][DevToolsCustomizeIndexSettings] 窗格。  
     *   选择 `Shift` + `?` 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
-1.  在"设置"窗格的 **左侧，选择** " **实验"** 部分。  
+1.  在"设置"窗格的 **左侧，选择** "实验 **"** 部分。  
     
-    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="DevTools 设置中的实验列表" lightbox="../media/experiments-devtools.msft.png":::
-       DevTools 设置中的实验 **列表**  
+    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text=""设置"中的"实验"页" lightbox="../media/experiments-devtools.msft.png":::
+       " **设置"** 中的"实验 **"页**  
     :::image-end:::  
     
 1.  在 **"实验** "页上，滚动浏览所有可用实验功能的列表，并选中要测试的每个功能旁边的复选框。  
@@ -46,76 +46,15 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
 
 | 实验功能 | Microsoft Edge 版本 |  
 |:--- |:--- |  
-| [模拟：支持双屏幕模式](#emulation-support-dual-screen-mode) | 84 或更高版本 |  
-| [启用新的 CSS 网格调试功能](#enable-new-css-grid-debugging-features) | 85 或更高版本 |  
-| [支持在面板之间移动选项卡](#enable-support-to-move-tabs-between-panels) | 85 或更高版本 |  
 | [启用 Webhint](#enable-webhint) | 85 或更高版本 |  
 | [启用网络控制台](#enable-network-console) | 85 或更高版本 |  
 | [源订单查看器](#source-order-viewer) | 86 或更高版本 |  
 | [启用键盘快捷方式编辑器](#enable-keyboard-shortcut-editor) | 87 或更高版本 |  
-| [在 3D 视图中打开复合层](#turn-on-composited-layers-in-3d-view) | 87 或更高版本 |  
-
-### 模拟：支持双屏幕模式  
-
-提供在 Microsoft Edge 中模拟两个新的双屏幕和可折叠设备的其他功能。  
-
-*   [Surface Duo][SurfaceDevicesDuo]  
-*   [三星百合][SamsungMobileGalaxyFold]  
-    
-模拟设备，并切换以下状态。  
-
-*   单屏或折叠状态  
-*   双屏或展开状态  
-    
-启用实验性 Web 平台[API，](#enable-experimental-apis)并使用[CSS 媒体][DualScreenDocsCssMedia]屏幕跨越功能以及[JavaScript getWindowSegments API][DualScreenDocsJSAPI]增强适用于双屏幕和可折叠设备的网站 \ (或 app\) 。  
-
-:::image type="complex" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="在 Microsoft Edge 中模拟 Surface Duo" lightbox="../media/experiments-surface-duo-emulation.msft.png":::  
-   在 Microsoft Edge 中模拟 Surface Duo  
-:::image-end:::  
-
-#### 启用实验性 API  
-
-若要使用 [CSS 媒体屏幕跨越][DualScreenDocsCssMedia] 功能以及 [JavaScript getWindowSegments API，][DualScreenDocsJSAPI]请打开 `Experimental Web Platform features` Microsoft Edge 中的标志。  完成以下步骤。  
-
-1.  导航到 `edge://flags` 。  
-1.  在**搜索标志**文本框中，输入、选择实验 Web 平台功能标志，并更改为 `Experimental Web Platform features` **"已禁用"。** **** ****  
-1.  重启 Microsoft Edge。  
-    
-:::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="启用实验性 Web 平台功能标志" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
-   启用实验性 Web 平台功能标志  
-:::image-end:::  
-
-> [!NOTE]
-> 如果你使用[CSS][DualScreenDocsCssMedia]媒体查询或[JavaScript Windows 段枚举 API][DualScreenDocsJSAPI]增强[Surface Duo][SurfaceDevicesDuo]的网站或应用，则还必须在[Surface Duo][SurfaceDevicesDuo]设备上的[Android Microsoft Edge][GooglePlayMicrosoftEdge]应用中启用实验性**Web**平台功能标志。  
-> 
-> 如果在桌面[Microsoft Edge][MicrosoftEdge]中启用实验性**Web**平台功能标志，并且在 Android [Microsoft Edge][GooglePlayMicrosoftEdge]应用中禁用，则桌面 Microsoft Edge 的 Surface Duo 仿真器中的网站或应用的行为与[Surface Duo][SurfaceDevicesDuo]上的[Android Microsoft Edge][GooglePlayMicrosoftEdge]应用不匹配。  确保标志在 Android 和桌面版 Microsoft Edge 之间匹配，以在桌面版 Microsoft Edge 中成功使用 Surface Duo [仿真器][MicrosoftEdge]。  
-
-#### 在可折叠和双屏幕设备上进行测试  
-
-当你在 Microsoft Edge 中模拟双屏幕状态中的 [Surface Duo][SurfaceDevicesDuo] 时，两个屏幕之间的 (\) 将绘制在网站或应用上。  
-
-模拟显示与您的网站 \ (或 app\) 在 Surface Duo 上运行的 Microsoft [Edge Android][GooglePlayMicrosoftEdge] 应用中的呈现 [方式相匹配][SurfaceDevicesDuo]。  你可能需要更新网站 \ (app\) ，以更好地显示网站。  若要详细了解如何调整您的网站 \ (或 app\) 以适应变化，请导航到"如何使用[此目录"。][DualScreenIntroductionHowWorkSeam]  
-
-设备 [工具栏][DevtoolsDeviceModeIndexSimulateMobileViewport] 具有其他功能，可帮助你以多种状态和方向测试网站或应用。  Choose **Rotate** \ (![ Rotate ][ImageRotateIcon] \) to rotate the viewport to landscape orientation. 将此功能与 **Span** \ (Span \) 相结合，以在单屏或折叠、双屏或展开状态 ![ ][ImageSpanIcon] 之间进行切换。  这些功能共同支持在所有四种可能状态和方向中测试网站或应用。  
-
-:::image type="complex" source="../media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="双屏幕和可折叠设备状态和方向的矩阵" lightbox="../media/experiments-dual-screen-emulation-rotate-span.msft.png":::
-   双屏和可折叠设备的状态和方向矩阵  
-:::image-end:::  
-
-实验 **性 Web 平台功能** \ (![ ExperimentalApis ][ImageExperimentalApisIcon] \) 图标显示实验性 **Web 平台功能标志** 的状态。  如果标志已打开，则突出显示图标。  如果关闭标志，则不突出显示图标。  若要打开 \ (或关闭\) ，请导航到该标志 `edge://flags` 并切换该标志。  
-
-<!-- Commenting out until the icon issue is fixed in Edge Canary
-The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
-
-下面是可帮助您增强双屏幕设备的网站 \ (或 app\) 的其他资源。  
-
-*   有关在双屏设备上进行 Web 开发的信息，请导航到 [双屏幕 Web 体验][DualScreenWebIndex]。  
-*   安装 [Surface Duo 仿真器][DualScreenAndroidUseEmulator]。  它不同于 Microsoft Edge 中的仿真器，模拟运行 Android 的 Surface Duo，并且与 [Android Studio 集成][AndroidDeveloperStudio]。  有关详细信息，请导航到["获取 Surface Duo SDK"。][DualScreenAndroidGetDuoSdk]  
-    
-> [!NOTE]
-> 以下是当前已知问题的列表。  
-> 
-> *   当使用 [Microsoft 远程桌面客户端][RemoteDesktopClientDocs] 连接到远程电脑并模拟 Surface [Duo][SurfaceDevicesDuo] 或 [Samsung 一][SamsungMobileGalaxyFold]起折叠时，指针可能会抖动或抖动。  如果遇到问题，请 [发送反馈](#providing-feedback-on-experimental-features)。  
+| [在 3D 视图中启用复合层](#enable-composited-layers-in-3d-view) | 87 或更高版本 |  
+| [在"样式"窗格中启用新的字体编辑器工具](#) | 89 或更高版本 |  
+| [启用新的 CSS Flexbox 调试功能](#enable-new-css-flexbox-debugging-features) | 89 或更高版本 |  
+| [启用 + 按钮选项卡菜单以打开更多工具](#enable--button-tab-menus-to-open-more-tools) | 89 或更高版本 |  
+| [启用欢迎选项卡](#enable-welcome-tool) | 89 或更高版本 |  
 
 ### 启用新的 CSS 网格调试功能  
 
@@ -123,15 +62,15 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 #### 使用"检查"工具查看悬停网格覆盖  
 
-检查 **工具** 提供了一种快速方法，通过将鼠标悬停在网站中的 CSS 网格布局上来识别并可视化这些布局。  选择**** ![ DevTools (左上角的"检查) 检查 \) ][ImageInspectIcon] 图标。  然后，将鼠标悬停在要调试的网站上 Grid 元素上。  边框显示在网格周围，底纹指示网格间隙的位置（如果存在）。  
+检查 **工具** 提供了一种快速方法，通过将鼠标悬停在网站中的 CSS 网格布局上来识别并可视化这些布局。  选择**** ![ DevTools (左上角的"检查) 检查 \) ](../media/inspect-icon.msft.png) 图标。  然后，将鼠标悬停在要调试的网站上 Grid 元素上。  边框显示在网格周围，底纹指示网格间隙的位置（如果存在）。  
 
-:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="使用检查工具查看网格" lightbox="../media/grid-inspect.msft.png":::
+:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="使用"检查"工具查看网格" lightbox="../media/grid-inspect.msft.png":::
    使用"检查"工具 **查看** 网格  
 :::image-end:::  
 
 #### 查看持久网格覆盖  
 
-在 Microsoft Edge 版本 86 或更高版本中，实验 CSS 网格功能还提供了启用持久网格覆盖的选项。  持久覆盖具有多个优势。  
+在 Microsoft Edge 版本 86 或更高版本中，实验 CSS 网格功能还提供了启用持久网格覆盖的选项。  永久性覆盖具有多个优势。  
 
 *   滚动、移动鼠标并使用 DevTools 的其他功能时，永久性覆盖在页面上仍然可见。  
 *   可以同时启用多个永久性覆盖，从而允许您一次查看多个网格布局。  
@@ -153,7 +92,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
     
 #### 配置永久性覆盖  
 
-在 Microsoft Edge 版本 86**** 或更高版本中，新的布局面板位于 **"** 元素"工具**** 中的"样式"和"**计算"选项卡**旁边。  布局 **面板** 显示持久覆盖的配置选项。  
+在 Microsoft Edge 版本 86**** 或更高版本中，新的布局面板位于 **"** 元素"工具**** 中的"样式"和"**计算**"选项卡旁边。  布局 **面板** 显示持久覆盖的配置选项。  
 
 :::image type="complex" source="../media/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../media/experiments-grid.msft.png":::
    CSS 网格调试功能  
@@ -161,7 +100,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 ### 支持在面板之间移动选项卡  
 
-通常，元素和网络等工具**** 只能在位于**** DevTools 顶部的主面板中打开。  工具（**如 3D 视图**和问题）通常仅在位于**** DevTools 底部的"箱"面板中打开。 ****  选择实验后，您可以在顶部和底部面板之间移动工具。  若要移动工具，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到顶部"或"**** 移动到**底部"。**   此实验允许你自定义 DevTools 布局。  若要显示或隐藏 **"箱"** 面板，请选择 `Escape` 。  
+通常，元素和网络等工具**** 只能在位于**** DevTools 顶部的主面板中打开。  工具（**如 3D**视图和问题）通常仅在位于**** DevTools 底部的"箱"面板中打开。 ****  选择实验后，您可以在顶部和底部面板之间移动工具。  若要移动工具，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到顶部"或"**** 移动到**底部"。**   此实验允许你自定义 DevTools 布局。  若要显示或隐藏 **"箱"** 面板，请选择 `Escape` 。  
 
 :::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="在面板之间移动选项卡" lightbox="../media/experiments-move-panels.msft.png":::
    在面板之间移动选项卡  
@@ -192,7 +131,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 **网络控制台** 是通过 HTTP 进行综合网络请求的实验的工作主题。  可以使用网络 **控制台** 实验发送 Web API 请求。  
 
-启用实验后，请确保重新启动 DevTools。  若要使用 **网络控制台**，请完成以下步骤。  
+打开实验后，请确保重新启动 DevTools。  若要使用 **网络控制台**，请完成以下步骤。  
 
 1.  打开 **"网络"** 窗格。  
 1.  查找要更改和重新发送的网络请求。  
@@ -208,62 +147,64 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 ### 源订单查看器  
 
-**源顺序查看器** 是显示页面源中元素顺序的实验。  屏幕显示顺序可能与源的顺序不同，这会使屏幕阅读器和键盘用户混淆。  使用 **源订单查看器** 实验可查找屏幕显示顺序和源顺序之间的差异。  
+**源订单查看器** 是显示网页源中元素顺序的实验。  屏幕显示顺序可能与源的顺序不同，这会使屏幕阅读器和键盘用户混淆。  使用 **源订单查看器** 实验可查找屏幕显示顺序和源顺序之间的差异。  
 
-启用实验后，请确保重新启动 DevTools。  若要使用 **源订单查看器**，请完成以下步骤。  
+打开实验后，请确保重新启动 DevTools。  若要使用 **源订单查看器**，请完成以下步骤。  
 
-1.  打开 **"元素"** 窗格。  
-1.  打开 **"下角** "\ (面板中的"辅助功能) 窗格。  
+1.  打开 **"元素"** 工具。  
+1.  在 **底部\下** 角的 (打开) 窗格。  
 1.  在" **源订单查看器"** 部分下，选中" **显示源订单"** 复选框。  
-1.  突出显示任何 HTML 元素以显示页面源中顺序的覆盖。  
+1.  突出显示任何 HTML 元素以显示网页源中订单的覆盖层。  
     
 :::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="辅助功能窗格中的源订单查看器" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **辅助功能窗格中**的**源订单查看器**  
+   **辅助功能窗格中** 的 **源订单** 查看器  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
 ### 启用键盘快捷方式编辑器
 
-打开 **"启用键盘** 快捷方式编辑器"实验后，你现在可以自定义 DevTools 中任何动作的键盘快捷方式。  若要为特定操作自定义键盘快捷方式，请完成以下步骤。  
+打开 **"启用键盘快捷方式编辑器** "实验后，你可以为 DevTools 中任何操作自定义键盘快捷方式。  若要为特定操作自定义键盘快捷方式，请完成以下步骤。  
 
 1.  [打开 DevTools。][DevtoolsOpenMain]  
-1.  打开["设置"。][DevToolsCustomizeSettings]
+1.  打开["设置"。][DevToolsCustomizeIndexSettings]  
     *   选择 `Shift` + `?` 。  
 1.  导航到 **"快捷方式"** 页。  
 1.  选择要自定义的操作。  
-1.  选择 **编辑** \ (![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \) 图标。  
+1.  选择 **编辑** \ (![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \) 图标。  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从设置中的快捷方式页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
-       从"设置"中的"快捷方式 **"** 页选择要自定义 [的操作][DevToolsCustomizeSettings]
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从"设置"中的"快捷方式"页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       从"设置"中的"快捷方式 **"** 页选择要自定义 [的操作][DevToolsCustomizeIndexSettings]  
     :::image-end:::  
     
-1.  在键盘上，选择要绑定到该操作的键。
+1.  在键盘上，选择要绑定到该操作的键。  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="选择要分配给该操作的键" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       选择要分配给该操作的键
+       选择要分配给该操作的键  
     :::image-end:::  
     
-1.  若要保存新的键盘快捷方式，请选择选中标记 \ (![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) 图标。
+1.  若要保存新的键盘快捷方式，请选择选中标记 \ (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) 图标。  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="选择选中标记图标以保存新的键盘快捷方式" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       选择选中标记图标以保存新的键盘快捷方式
+       选择选中标记图标以保存新的键盘快捷方式  
     :::image-end:::  
     
 1.  选择新的键盘快捷方式以在 DevTools 中触发该操作。  
     
-在 **"快捷方式"** 页上，自定义键盘快捷方式 **\ (** ![ CustomKeyboardShortcut ][ImageCustomKeyboardShortcutIcon] \) 图标显示已自定义的键盘快捷方式。  若要重置所有快捷方式，请选择"**还原默认快捷方式"。**  
+在 **"快捷方式"** 页上，自定义键盘快捷方式 **\ (** ![ CustomKeyboardShortcut ](../media/custom-keyboard-shortcut-icon.msft.png) \) 图标显示自定义的键盘快捷方式。  若要重置所有快捷方式，请选择"**还原默认快捷方式"。**  
 
-编辑操作键盘快捷方式时，若要放弃所做的更改，请选择 X \ (![ XKeyboardShortcut ][ImageXKeyboardShortcutIcon] \) 图标。  若要删除特定操作快捷方式，请选择"删除"快捷方式 **\ (** ![ DeleteKeyboardShortcut ][ImageDeleteKeyboardShortcutIcon] \) 图标。  若要为操作添加多个快捷方式，请选择"**添加快捷方式"。**
+若要在编辑操作键盘快捷方式时放弃所做的更改，请选择 X \ (![ XKeyboardShortcut ](../media/discard-changes-keyboard-shortcut-icon.msft.png) \) 图标。  若要删除特定操作快捷方式，请选择"删除"快捷方式 **\ (** ![ DeleteKeyboardShortcut ](../media/delete-keyboard-shortcut-icon.msft.png) \) 图标。  若要为操作添加多个快捷方式，请选择"**添加快捷方式"。**  
 
 > [!NOTE]
 > 如果键盘快捷方式当前已分配给另一个操作，则不能将其保存以用于新操作。  必须先删除上一个操作键盘快捷方式，然后将其添加到新操作。  
 
-<!--Available in Microsoft Edge version 87 and later.  -->
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
-### 在 3D 视图中打开复合层
+### 在 3D 视图中启用复合层  
 
-现在，您可以可视化 Z 索引和文档对象模型 \ (DOM\) 。  此功能可帮助您在不经常切换上下文的情况下进行调试。  您确定减少上下文切换是一个主要的难点。  您编写的代码对 Web 应用有何影响并不总是很明显。  为获得全面的视觉调试体验， 已将3D 视图和复合层组合到一起。  启用实验后，请确保重新启动 DevTools。  若要使用 **复合层**，请完成以下步骤。  
+现在，您可以可视化 Z 索引和文档对象模型 \ (DOM\) 。  此功能可帮助您在不经常切换上下文的情况下进行调试。  您确定减少上下文切换是一个主要的难点。  您编写的代码对 Web 应用有何影响并不总是很明显。  为获得全面的视觉调试体验， 已将3D 视图和复合层组合到一起。  
+
+打开实验后，请确保重新启动 DevTools。  若要使用 **复合层**，请完成以下步骤。  
 
 1.  在箱中，选择 **3D 视图** 工具。  
 1.  打开 **"复合层"** 窗格。  
@@ -275,18 +216,112 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
 
+### 在"样式"窗格中启用新的字体编辑器工具  
+
+现在可以使用新的可视 [字体编辑器][DevtoolsInspectStylesEditFonts] 编辑字体。  使用它定义字体和字体特征。  可视 **字体编辑器** 可帮助您完成以下操作。  
+
+*   在不同字体属性的单位之间切换  
+*   在不同字体属性的关键字之间切换  
+*   转换单位  
+*   生成准确的 CSS 代码  
+    
+打开实验后，请确保重新启动 DevTools。  若要使用新的可视化 **字体编辑器**，请完成以下步骤。  
+
+1.  打开 **"元素"** 工具。  
+1.  打开 **"样式"** 窗格。  
+1.  选择 **"字体编辑器"** 图标。  
+    
+有关新的可视字体**编辑器的详细信息，** 请导航到 DevTools 的"样式"窗格中的"编辑 CSS[字体样式和设置"。][DevtoolsInspectStylesEditFonts]  
+
+:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="突出显示可视字体编辑器窗格" lightbox="../media/font-editor-open.msft.png":::
+   突出显示 **可视字体编辑器** 窗格  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
+### 启用新的 CSS Flexbox 调试功能  
+
+此实验性功能提供了许多新的可视化效果，可帮助你调试 CSS 弹性框布局。  若要预览最新的实验功能， [请打开此实验](#turn-on-experimental-features) 并重新加载 DevTools。  
+
+#### 使用 Inspect 工具在 Flexbox 布局上显示永久性覆盖  
+
+检查 **工具** 提供了一种快速方法，通过将鼠标悬停在网站中的 CSS 弹性框布局上来识别并可视化它们。  选择**** ![ DevTools (左上角的"检查) 检查 \) ](../media/inspect-icon.msft.png) 图标。  然后，在调试网站时，将鼠标悬停在弹性容器上，以在弹性容器周围显示轮廓。  
+
+:::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="使用检查工具显示 Flexbox 容器" lightbox="../media/flexbox-hover.msft.png":::
+   使用检查工具显示 Flexbox**容器**  
+:::image-end:::  
+
+#### 在 Flexbox 布局上显示永久性覆盖  
+
+在 Microsoft Edge 版本 89 或更高版本中，实验 CSS Flexbox 功能还提供了在 Flexbox 布局上打开永久性覆盖的选项。  持久覆盖具有以下优点。  
+
+*   滚动、移动鼠标并使用 DevTools 的其他功能时，永久性覆盖在网页上仍然可见。
+*   可以同时使用多个永久性覆盖，以便一次查看多个 Flexbox 布局。  
+*   持久覆盖提供颜色配置选项。  
+    
+若要切换 Flexbox 布局上的永久性覆盖，请使用下列操作之一。  
+
+*   选择 **"元素"** 工具的 DOM 树中显示的任意 Flexbox 容器旁边的 Flexbox **椭圆图标** 。  
+*   打开位于 **"元素**"工具中的新布局**** 面板，并选中要突出显示的每个 Flexbox 容器旁边的复选框。  
+    
+:::image type="complex" source="../media/flexbox-overlay.msft.png" alt-text="DevTools 中的弹性图标和布局面板" lightbox="../media/flexbox-overlay.msft.png":::
+   DevTools 中的弹性图标和布局面板****  
+:::image-end:::  
+
+#### 配置永久性覆盖  
+
+若要为 CSS 网格或 Flexbox 布局配置持久覆盖的选项，请使用"布局 **"** 窗格。  布局**窗格**位于"样式"和"**** 计算"窗格旁边的 **"** 元素 **"工具**中。  
+
+:::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="布局面板" lightbox="../media/flexbox-layout.msft.png":::
+   布局面板  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
+### 启用 + 按钮选项卡菜单以打开更多工具  
+
+现在，可以使用新的"更多工具"\ (**** `+` \) 图标打开更多工具。  打开"启用 **+** "按钮选项卡菜单以打开更多工具实验并重新加载 DevTools 后，在 DevTools 顶部的选项卡组右侧显示加号 `+` \ (\) 。  若要显示可以添加到选项卡栏的其他工具的列表，请选择新的"更多工具"\ (**** `+` \) 图标。  
+
+:::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具" lightbox="../media/experiments-more-tools-button.msft.png":::
+   **顶部窗格中** 的更多工具
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
+### 启用欢迎工具
+
+此实验将 **"新增功能"** 工具替换为新的 **欢迎** 工具。  它显示以下内容的刷新设计。  
+
+*   指向开发人员文档的链接  
+*   最新功能  
+*   发行说明  
+*   联系 Microsoft Edge DevTools 团队的选项  
+    
+每次 **更新** 到 Microsoft Edge 后，欢迎工具都会自动打开。  若要防止每次更新后显示**** 欢迎工具，请清除"欢迎"工具标题下**** 每个更新后"打开"选项卡**旁边的**复选框。  
+
+如果你更喜欢原始的新增**功能工具，** 请[导航到"][DevtoolsCustomizeIndexSettings]设置实验"并删除  >  ****"启用欢迎"**选项卡旁边的复选框**。  
+
+:::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="欢迎工具" lightbox="../media/experiments-welcome.msft.png":::
+   **欢迎** 工具  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
 ## 以前的实验功能  
 
 *   [3D 视图][Devtools3dViewIndex] 现在可用，在 Microsoft Edge 版本 83 或更高版本中默认处于打开状态。  
+*   [在 Microsoft][DevtoolsMoveTabs] Edge 版本 85 或更高版本中，现已启用支持以在面板之间移动选项卡，并且默认情况下处于打开状态。  
 *   [自定义键盘快捷方式][DevtoolsCustomKeyboardShortcuts] 现在可用，在 Microsoft Edge 版本 86 或更高版本中默认处于打开状态。  
-
-## 提供有关实验功能的反馈  
+*   [模拟：支持双屏][DevtoolsDeviceModeDualScreenAndFoldables] 模式现在可用，在 Microsoft Edge 版本 89 或更高版本中默认处于打开状态。  
+*   [在][DevtoolsCssGrid] Microsoft Edge 版本 89 或更高版本中，现已启用新的 CSS 网格调试功能，并且默认处于打开状态。  
+    
+## 提供有关实验性功能的反馈  
 
 提供有关 Microsoft Edge DevTools 实验或与 DevTools 相关的任何其他内容的反馈。  
 
 *   使用 DevTools 中的 **"发送反馈** "图标发送反馈  
 *   向 [@EdgeDevTools][TwitterEdgedevtools] 发送推文  
-
+    
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    Microsoft Edge DevTools 中的“**发送反馈**”图标  
 :::image-end:::  
@@ -297,23 +332,14 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 -->  
 
-<!-- image links -->  
-
-[ImageCheckmarkKeyboardShortcutIcon]: ../media/checkmark-keyboard-shortcut-icon.msft.png  
-[ImageCustomKeyboardShortcutIcon]: ../media/custom-keyboard-shortcut-icon.msft.png  
-[ImageDeleteKeyboardShortcutIcon]: ../media/delete-keyboard-shortcut-icon.msft.png  
-[ImageEditKeyboardShortcutIcon]: ../media/edit-keyboard-shortcut-icon.msft.png  
-[ImageExperimentalApisIcon]: ../media/experimental-apis-dark-icon.msft.png  
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
-[ImageSpanIcon]: ../media/span-dark-icon.msft.png  
-[ImageXKeyboardShortcutIcon]: ../media/discard-changes-keyboard-shortcut-icon.msft.png  
-
 <!-- links -->  
 
 [Devtools3dViewIndex]: ../3d-view/index.md "3D 视图 | Microsoft Docs"  
-[DevToolsCustomizeSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: ../css/grid.md "检查 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsMoveTabs]: ../customize/index.md "自定义 Microsoft Edge DevTools |Microsoft Docs"  
+[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "在 Microsoft Edge DevTools |Microsoft Edge"  
+[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "在 DevTools | 中的"样式"窗格中编辑 CSS 字体样式和|Microsoft Docs"  
 [DevtoolsIssues]: ../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs"  
 [DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "自定义 Microsoft Edge DevTools |Microsoft Docs"  
@@ -337,6 +363,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 [GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge |Google Play"  
 
 [SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "百年百|Samsung"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "模拟 Microsoft Edge DevTools |Microsoft Docs"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools |Twitter"  
 
