@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的最新实验功能
 title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， 实验
-ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 32eaa3e8d41efefa669142297891e7c62cf4eb5b
+ms.sourcegitcommit: d53421b7219ad87fa9d58f601d9c61ee44c2e43a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313041"
+ms.locfileid: "11313463"
 ---
 # <span data-ttu-id="90d99-104">实验功能</span><span class="sxs-lookup"><span data-stu-id="90d99-104">Experimental features</span></span>  
 
@@ -51,7 +51,7 @@ ms.locfileid: "11313041"
 | [<span data-ttu-id="90d99-131">源订单查看器</span><span class="sxs-lookup"><span data-stu-id="90d99-131">Source Order Viewer</span></span>](#source-order-viewer) | <span data-ttu-id="90d99-132">86 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-132">86 or later</span></span> |  
 | [<span data-ttu-id="90d99-133">启用键盘快捷方式编辑器</span><span class="sxs-lookup"><span data-stu-id="90d99-133">Enable keyboard shortcut editor</span></span>](#enable-keyboard-shortcut-editor) | <span data-ttu-id="90d99-134">87 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-134">87 or later</span></span> |  
 | [<span data-ttu-id="90d99-135">在 3D 视图中启用复合层</span><span class="sxs-lookup"><span data-stu-id="90d99-135">Enable Composited Layers in 3D View</span></span>](#enable-composited-layers-in-3d-view) | <span data-ttu-id="90d99-136">87 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-136">87 or later</span></span> |  
-| [<span data-ttu-id="90d99-137">在"样式"窗格中启用新的字体编辑器工具</span><span class="sxs-lookup"><span data-stu-id="90d99-137">Enable new Font Editor tool within the Styles pane</span></span>](#) | <span data-ttu-id="90d99-138">89 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-138">89 or later</span></span> |  
+| [<span data-ttu-id="90d99-137">在"样式"窗格中启用新的字体编辑器工具</span><span class="sxs-lookup"><span data-stu-id="90d99-137">Enable new Font Editor tool within the Styles pane</span></span>](#enable-new-font-editor-tool-within-the-styles-pane) | <span data-ttu-id="90d99-138">89 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-138">89 or later</span></span> |  
 | [<span data-ttu-id="90d99-139">启用新的 CSS Flexbox 调试功能</span><span class="sxs-lookup"><span data-stu-id="90d99-139">Enable new CSS Flexbox debugging features</span></span>](#enable-new-css-flexbox-debugging-features) | <span data-ttu-id="90d99-140">89 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-140">89 or later</span></span> |  
 | [<span data-ttu-id="90d99-141">启用 + 按钮选项卡菜单以打开更多工具</span><span class="sxs-lookup"><span data-stu-id="90d99-141">Enable + button tab menus to open more tools</span></span>](#enable--button-tab-menus-to-open-more-tools) | <span data-ttu-id="90d99-142">89 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-142">89 or later</span></span> |  
 | [<span data-ttu-id="90d99-143">启用欢迎选项卡</span><span class="sxs-lookup"><span data-stu-id="90d99-143">Enable Welcome tab</span></span>](#enable-welcome-tool) | <span data-ttu-id="90d99-144">89 或更高版本</span><span class="sxs-lookup"><span data-stu-id="90d99-144">89 or later</span></span> |  
