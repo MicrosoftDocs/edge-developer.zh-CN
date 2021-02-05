@@ -3,16 +3,16 @@ description: 现在欢迎使用"新增功能"工具、"样式"窗格中的可视
 title: 'Microsoft Edge 89 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: cfaee927d2d914cf0d816505ea2cf6b36a225d64
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 0a8a5e69281ced9421733059b554bd8cb997c7cd
+ms.sourcegitcommit: 085046a5885c68243b763aaf6809fea43452403a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313135"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313774"
 ---
 # Microsoft Edge 89 (DevTools 中的新增)   
 
@@ -45,15 +45,15 @@ Microsoft **Edge** DevTools 中的新增功能工具现在具有新外观和新�
 *   转换单位  
 *   生成准确的 CSS 代码  
     
-若要打开此实验，请[导航到"][DevtoolsCustomizeIndexSettings]设置实验"，并在"样式"窗格中选中"启用新  >  **** 字体编辑器工具"**旁边的复选框**。  有关详细信息，请导航到 DevTools 的"样式"窗格中的"编辑[CSS 字体样式和设置"。][DevtoolsInspectStylesEditFonts]  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1093229][CR1093229]。  
+若要打开此实验，请[导航到"][DevtoolsCustomizeIndexSettings]设置实验"，并在"样式"窗格中选中"启用新  >  **** 字体编辑器工具"**旁边的复选框**。  有关详细信息，请导航到 DevTools 的"样式"窗格中的"编辑[CSS 字体样式和设置"。][DevtoolsInspectStylesEditFonts]  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1093229。][CR1093229]  
 
-:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="可视化字体编辑器在样式窗格中突出显示" lightbox="../../media/2021/01/visual-font-editor.msft.png":::
+:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="可视化字体编辑器在"样式"窗格中突出显示" lightbox="../../media/2021/01/visual-font-editor.msft.png":::
    可视化 **字体编辑器** 在" **样式"窗格中** 突出显示  
 :::image-end:::  
 
 ## CSS Flexbox 调试工具  
 
-Flexbox 调试功能正在积极开发中。  若要打开以下两项功能的实验，请导航到"设置[][DevtoolsCustomizeIndexSettings]实验"，并选中"启用新的 CSS 弹性框调试功能  >  ******"旁边的复选框**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1136394][CR1136394] 和 [1139949][CR1139949]。  
+Flexbox 调试功能正在积极开发中。  若要打开以下两项功能的实验，请导航到"设置[][DevtoolsCustomizeIndexSettings]实验"，并选中"启用新的 CSS 弹性框调试功能  >  ******"旁边的复选框**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题[1136394"][CR1136394]和["1139949"。][CR1139949]  
 
 ### 新的 Flexbox (弹性) 图标有助于标识和显示弹性容器  
 
@@ -78,7 +78,7 @@ Flexbox 调试功能正在积极开发中。  若要打开以下两项功能的�
          **突出显示的 Flexbox** \ (`flex` \) 图标和网页 :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="布局窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text=""布局"窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
          "**布局"窗格中**突出显示的弹性框**覆盖**  
       :::image-end:::  
    :::column-end:::
@@ -132,13 +132,13 @@ Flexbox 调试功能正在积极开发中。  若要打开以下两项功能的�
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->  
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->  
 
-编辑 CSS 时，将获取功能下拉列表。  此功能不适用于辅助技术的用户，因为它在 Microsoft Edge 版本 89 中公布。  辅助技术的用户现在可以在"样式"窗格中导航 CSS**建议。**  在 Microsoft Edge 版本 88 及更早版本中，当用户在"样式"窗格中编辑 CSS 时浏览建议列表时，会公布辅助 `Suggestion` 技术。 ****  在 Microsoft Edge 版本 89 中，辅助技术的用户现在会听到当前建议的位置和计数。  每个建议在用户浏览建议列表时进行公布，如建议 3/5。  若要了解有关在 DevTools 中编写 CSS 的更多信息，请导航到["更改 CSS"。][DevtoolsCssReferenceChangeCss]  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1157329][CR1157329]。  
+编辑 CSS 时，将获取功能下拉列表。  此功能不适用于辅助技术的用户，因为它在 Microsoft Edge 版本 89 中公布。  辅助技术的用户现在可以在"样式"窗格中导航 CSS**建议。**  在 Microsoft Edge 版本 88 及更早版本中，当用户在"样式"窗格中编辑 CSS 时浏览建议列表时，会公布辅助 `Suggestion` 技术。 ****  在 Microsoft Edge 版本 89 中，辅助技术的用户现在会听到当前建议的位置和计数。  每个建议在用户浏览建议列表时进行公布，如建议 3/5。  若要了解有关在 DevTools 中编写 CSS 的更多信息，请导航到["更改 CSS"。][DevtoolsCssReferenceChangeCss]  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1157329。][CR1157329]  
 
-<!--To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.  -->  
+若要在打开此实验后观看显示和朗读多个建议的视频，请导航到 ["Voiceover"，](https://youtu.be/9TcUpleEwwA) 宣布在 YouTube 上显示开发工具选项。  
 
-打开此实验后，以下视频链接将显示并朗读多个建议。  
-
-> [!VIDEO https://youtu.be/9TcUpleEwwA]  
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text=""样式"窗格中突出显示的建议" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+   " `suggestion` 样式"窗格中 **突出显示** 的列表  
+:::image-end:::  
 
 ## 模拟 Surface Duo 和 Samsung 一起折叠  
 
@@ -155,7 +155,7 @@ Flexbox 调试功能正在积极开发中。  若要打开以下两项功能的�
 *   [跨越，][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]即你的网站 \ (或 app\) 跨两个屏幕显示。  
 *   [呈现接][DualScreenIntroductionHowToWorkWithSeam]层，这是两个屏幕之间的空间。  
     
-若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1054281][CR1054281]。  
+若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1054281。][CR1054281]  
 
 :::image type="complex" source="../../media/2021/01/emulate-surface-device-surface-duo.msft.png" alt-text="模拟双屏幕" lightbox="../../media/2021/01/emulate-surface-device-surface-duo.msft.png":::
    模拟双屏幕  
@@ -178,7 +178,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 ### 捕获视图之外的节点屏幕截图  
 
-在 Microsoft Edge 版本 89 中，节点屏幕截图更加准确，即使节点中的内容在视口中不可见，也捕获整个节点。  在元素 **工具** 中，将鼠标悬停在某个元素上，打开上下文菜单 \ (右键单击\) ，然后选择"捕获 **"节点屏幕截图**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1003629][CR1003629]。  
+在 Microsoft Edge 版本 89 中，节点屏幕截图更加准确，即使节点中的内容在视口中不可见，也捕获整个节点。  在元素 **工具** 中，将鼠标悬停在某个元素上，打开上下文菜单 \ (右键单击\) ，然后选择"捕获 **"节点屏幕截图**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题[1003629"。][CR1003629]  
 
 :::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="在元素工具的上下文菜单上突出显示的捕获节点屏幕截图" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    **在元素工具** 的上下文菜单上突出显示 **的捕获节点** 屏幕截图  
@@ -188,7 +188,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 支持强制使用 ：target CSS 状态  
 
-你现在可以使用 DevTools 强制使用 [：target][MdnDocsWebCssTarget] CSS 伪类。  当唯一元素 \ (\) 具有与 URL 片段匹配的元素时，将触发伪 `:target` `id` 类。  例如 `http://www.example.com/index.html#section1` ，URL 将触发 HTML 元素 `:target` 上的伪类 `id="section1"` 。  若要尝试突出显示第 1 节的演示，请导航到 [CSS ：target 演示][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1]。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1156628][CR1156628]。  
+你现在可以使用 DevTools 强制使用 [：target][MdnDocsWebCssTarget] CSS 伪类。  当唯一元素 \ (\) 具有与 URL 片段匹配的元素时，将触发伪 `:target` `id` 类。  例如 `http://www.example.com/index.html#section1` ，URL 将触发 HTML 元素 `:target` 上的伪类 `id="section1"` 。  若要尝试突出显示第 1 节的演示，请导航到 [CSS ：target 演示][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1]。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1156628。][CR1156628]  
 
 :::row:::
    :::column span="":::
@@ -205,15 +205,15 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 使用重复元素复制元素  
 
-使用新的 **Duplicate 元素** 快捷方式克隆元素。  在元素 **工具** 中，将鼠标悬停在元素上，打开上下文菜单 \ (右键单击\) ，选择 **Duplicate 元素**。  在所选元素下创建一个新元素。  若要使用键盘快捷方式复制元素，请选择 `Shift` + `Alt` + `Down Arrow` \ (Windows/Linux\) 或 `Shift` + `Option` + `Down Arrow` \ (macOS\) 。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1150797][CR1150797]。  
+使用新的 **Duplicate 元素** 快捷方式克隆元素。  在元素 **工具** 中，将鼠标悬停在元素上，打开上下文菜单 \ (右键单击\) ，选择 **Duplicate 元素**。  在所选元素下创建一个新元素。  若要使用键盘快捷方式复制元素，请选择 `Shift` + `Alt` + `Down Arrow` \ (Windows/Linux\) 或 `Shift` + `Option` + `Down Arrow` \ (macOS\) 。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1150797。][CR1150797]  
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Duplicate 元素在元素工具中某个元素的上下文菜单中突出显示" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Duplicate 元素在"元素"工具中某个元素的上下文菜单中突出显示" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    Duplicate**元素**在"元素"工具中某个元素的**上下文菜单中突出显示**  
 :::image-end:::  
 
 #### 自定义 CSS 属性的颜色选取器  
 
-" **样式"** 窗格现在显示自定义 CSS 属性的颜色选取器。  若要循环访问颜色值的 RGBA、HSLA 和 Hex 格式，请按住并选择 `Shift` 颜色选取器。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1147016][CR1147016]。  
+" **样式"** 窗格现在显示自定义 CSS 属性的颜色选取器。  若要循环访问颜色值的 RGBA、HSLA 和 Hex 格式，请按住并选择 `Shift` 颜色选取器。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1147016。][CR1147016]  
 
 :::image type="complex" source="../../media/2021/01/elements-styles-change-color-format.msft.png" alt-text="自定义 CSS 属性的颜色选取器" lightbox="../../media/2021/01/elements-styles-change-color-format.msft.png":::
    自定义 CSS 属性的颜色选取器  
@@ -256,13 +256,13 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
    :::column-end:::
 :::row-end:::  
 
-若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1152391][CR1152391]。  
+若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1152391。][CR1152391]  
 
 ### Cookie 更新  
 
 #### 显示 URL 解码 Cookie 的新选项  
 
-现在，你可以选择在 Cookie 窗格中显示 URL 解码的 **Cookie** 值。  若要显示解码的 Cookie，请导航**到应用程序**Cookie 窗格，选择列表上的任何 Cookie，然后选择"显示  >  **** 已解码**的 URL"旁边的复选框**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[997625][CR997625]。  
+现在，你可以选择在 Cookie 窗格中显示 URL 解码的 **Cookie** 值。  若要显示解码的 Cookie，请导航**到应用程序**Cookie 窗格，选择列表上的任何 Cookie，然后选择"显示  >  **** 已解码**的 URL"旁边的复选框**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[997625。][CR997625]  
 
 :::image type="complex" source="../../media/2021/01/application-cookies-show-url-decoded.msft.png" alt-text="显示 URL 解码 Cookie 的选项" lightbox="../../media/2021/01/application-cookies-show-url-decoded.msft.png":::
    用于显示 URL 解码 Cookie 的选项  
@@ -270,7 +270,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 筛选和清除可见的 Cookie  
 
-在 Microsoft Edge 版本 88**** 或更早版本中，应用程序工具仅提供一种使用"清除所有 Cookie"按钮清除所有**Cookie**的方法。  在 Microsoft Edge 版本 89 中，你现在可以选择"清除筛选的 **Cookie"，** 以仅删除筛选的 Cookie。  若要筛选 Cookie，请导航到 **"应用程序**  >  **Cookie"，** 并在 **"筛选器**"文本框中键入。  若要删除显示的 Cookie，请选择" **清除筛选的 Cookie"** 按钮。  若要显示所有其他 Cookie，请清除筛选器文本。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[978059][CR978059]。  
+在 Microsoft Edge 版本 88**** 或更早版本中，应用程序工具仅提供一种使用"清除所有 Cookie"按钮清除所有**Cookie**的方法。  在 Microsoft Edge 版本 89 中，你现在可以选择"清除筛选的 **Cookie"，** 以仅删除筛选的 Cookie。  若要筛选 Cookie，请导航到 **"应用程序**  >  **Cookie"，** 并在 **"筛选器**"文本框中键入。  若要删除显示的 Cookie，请选择" **清除筛选的 Cookie"** 按钮。  若要显示所有其他 Cookie，请清除筛选器文本。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[978059。][CR978059]  
 
 :::image type="complex" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="仅清除可见的 Cookie" lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
    仅清除可见的 Cookie  
@@ -282,7 +282,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 若要清除网站数据和所有 Cookie，请导航到**应用程序**  >  **存储**。  选中包含第三方**Cookie 旁边的**复选框，然后选择"**清除网站数据"。**  
 
-若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1012337][CR1012337]。  
+若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1012337。][CR1012337]  
 
 :::image type="complex" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="清除第三方 Cookie 的选项" lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
    清除第三方 Cookie 的选项  
@@ -292,7 +292,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 持久记录网络日志设置  
 
-在 Microsoft Edge 版本 88 或更早版本中，DevTools 在网页刷新时重置记录网络日志设置。 ****  在 Microsoft Edge 版本 89 中，DevTools 现在保留 **记录网络日志** 设置。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1122580][CR1122580]。  
+在 Microsoft Edge 版本 88 或更早版本中，DevTools 在网页刷新时重置记录网络日志设置。 ****  在 Microsoft Edge 版本 89 中，DevTools 现在保留 **记录网络日志** 设置。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1122580。][CR1122580]  
 
 :::image type="complex" source="../../media/2021/01/network-log.msft.png" alt-text="记录网络日志" lightbox="../../media/2021/01/network-log.msft.png":::
    记录网络日志  
@@ -300,7 +300,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 联机选项现在无限制选项  
 
-网络仿真选项**Online**现已重命名为"无**限制"。**  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1028078][CR1028078]。  
+网络仿真选项**Online**现已重命名为"无**限制"。**  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1028078。][CR1028078]  
 
 :::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="无限制选项" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
    **无限制** 选项  
@@ -310,7 +310,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 复制控制台和源工具中的对象  
 
-现在可以在控制台和源工具 **中** 复制 **对象** 值。  使用大型对象时，复制对象值的能力非常有用。  若要查看 Chromium 开源项目中此功能的历史记录，请导航到"问题"[1148353][CR1148353] 和 [1149859][CR1149859]。  
+现在可以在控制台和源工具 **中** 复制 **对象** 值。  使用大型对象时，复制对象值的能力非常有用。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题[1148353"][CR1148353]和["1149859"。][CR1149859]  
 
 :::row:::
    :::column span="":::
@@ -335,7 +335,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 在"源"工具和"样式"窗格中复制文件名  
 
-现在，可以使用上下文菜单复制文件名。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1155120][CR1155120]。  
+现在，可以使用上下文菜单复制文件名。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题[1155120"。][CR1155120]  
 
 :::row:::
    :::column span="":::
@@ -352,7 +352,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在样式窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在"样式"窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
          在"样式"窗格中 **复制** 文件名  
       :::image-end:::  
    :::column-end:::
@@ -362,7 +362,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 #### 框架详细信息中的服务工作者信息  
 
-DevTools 现在在父框架下列出一个专用服务工作者。  下图显示了服务工作者的详细信息。  若要显示服务工作者的详细信息，请导航到 **"应用程序**  >  **框架**  >  `top`  >  **服务**工作者"，然后选择一个服务工作者。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1122507][CR1122507]。  
+DevTools 现在在父框架下列出一个专用服务工作者。  下图显示了服务工作者的详细信息。  若要显示服务工作者的详细信息，请导航到 **"应用程序**  >  **框架**  >  `top`  >  **服务**工作者"，然后选择一个服务工作者。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1122507。][CR1122507]  
 
 :::image type="complex" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="框架详细信息中的服务工作者信息" lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
    **框架** 详细信息中的 **服务工作者** 信息  
@@ -370,7 +370,7 @@ DevTools 现在在父框架下列出一个专用服务工作者。  下图显示
 
 #### 在帧详细信息中测量内存信息  
 
-API `performance.measureMemory()` 状态现在显示在 **API** 可用性部分下。  新 `performance.measureMemory()` API 估计整个网页的内存使用率。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1139899][CR1139899]。  
+API `performance.measureMemory()` 状态现在显示在 **API** 可用性部分下。  新 `performance.measureMemory()` API 估计整个网页的内存使用率。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1139899。][CR1139899]  
 
 :::image type="complex" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="测量内存" lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
    测量内存  
@@ -378,7 +378,7 @@ API `performance.measureMemory()` 状态现在显示在 **API** 可用性部分�
 
 ### 性能工具中丢弃的帧  
 
-在性能 [工具中分析负载性能时，"][DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]框架 **"部分现在** 将丢弃的帧标记为红色。  若要显示帧速率，请将鼠标悬停在丢弃的帧上。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1075865][CR1075865]。  
+在性能 [工具中分析负载性能时，"][DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]框架 **"部分现在** 将丢弃的帧标记为红色。  若要显示帧速率，请将鼠标悬停在丢弃的帧上。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1075865。][CR1075865]  
 
 :::image type="complex" source="../../media/2021/01/performance-frames-dropped-frames-red.msft.png" alt-text="丢弃的帧" lightbox="../../media/2021/01/performance-frames-dropped-frames-red.msft.png":::
    丢弃的帧  
@@ -394,7 +394,7 @@ APCA 高级感知对比度[算法 (APCA) ][GithubW3cSilverGuidelinesMethodsMetho
 *   颜色的空间属性，包括文本和背景之间的感知对比度。  
 *   包含环境光、周围和预期用途的上下文的空间属性。  
     
-若要打开此实验，请导航到[][DevtoolsCustomizeIndexSettings]"设置实验"，并选中"启用新的高级感知对比度算法 (APCA) 替换以前的对比度比率  >  ******和 AA/AAA 指南"旁边的复选框**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到"问题"[1121900][CR1121900]。  
+若要打开此实验，请导航到[][DevtoolsCustomizeIndexSettings]"设置实验"，并选中"启用新的高级感知对比度算法 (APCA) 替换以前的对比度比率  >  ******和 AA/AAA 指南"旁边的复选框**。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1121900。][CR1121900]  
 
 :::image type="complex" source="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png" alt-text="颜色选取器中的 APCA" lightbox="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png":::
    颜色选取器中的 APCA  
@@ -445,39 +445,29 @@ APCA 高级感知对比度[算法 (APCA) ][GithubW3cSilverGuidelinesMethodsMetho
 [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code |Visual Studio市场"  
 [VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "适用于 Microsoft Edge |Visual Studio市场"  
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"  
-
-<!--[CR174309]: https://crbug.com/174309 "Issue 174309: DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"  -->  
-<!--[CR772558]: https://crbug.com/772558 "Issue 772558: DevTools: Update to latest version of Lighthouse | Chromium bugs"  -->  
-[CR978059]："问题 978059：在筛选 Cookie 时删除它们，删除所有 Cookie，而不只是删除已筛选| https://crbug.com/978059 Chromium bug"  
-[CR997625]：" https://crbug.com/997625 问题 997625：新功能|需要查看 Cookie 中 url 解码值的选项|Chromium bug"  
-[CR1003629]："问题 https://crbug.com/1003629 1003629：捕获节点不再屏幕截图折叠下方节点。 |Chromium bug"  
-[CR1012337]："问题 https://crbug.com/1012337 1012337：清除网站数据会破坏非 Google 网站上 Google 会话|Chromium bug"  
-[CR1028078]："问题 https://crbug.com/1028078 1028078：联机和脱机在列表中彼此|Chromium bug"  
-[CR1054281]：" https://crbug.com/1054281 问题 1054281：功能请求：DevTools 应模拟可折叠和双屏幕设备|Chromium bug"  
-<!--[CR1073909]: https://crbug.com/1073909 "Issue 1073909: BLOCKED | Chromium bugs"  -->  
-[CR1075865]：" https://crbug.com/1075865 问题 1075865：在 devtools 时间线中显示丢弃|Chromium bug"  
-[CR1093229]：" https://crbug.com/1093229 问题 1093229：DevTools：提供专用的字样编辑器 UI |Chromium bug"  
-[CR1121900]：" https://crbug.com/1121900 问题 1121900：DevTools：根据新规范更新对比度计算|Chromium bug"  
-[CR1122507]：" https://crbug.com/1122507 问题 1122507：帧树视图中的 Surface 工作|Chromium bug"  
-[CR1122580]：" https://crbug.com/1122580 问题 1122580：无法禁用重新加载时的网络|Chromium bug"  
-<!--[CR1126824]: https://crbug.com/1126824 "Issue 1126824: ☂ Support Trust Token debugging in DevTools | Chromium bugs"  -->  
-[CR1136394]：" https://crbug.com/1136394 问题 1136394：Flexbox 工具|Chromium bug"  
-<!--[CR1137837]: https://crbug.com/1137837 "Issue 1137837: ☂ Improve Trusted Types support in DevTools | Chromium bugs"  -->  
-[CR1139899]：" https://crbug.com/1139899 问题 1139899：报告帧详细信息视图中的 API |Chromium bug"  
-[CR1139949]：" https://crbug.com/1139949 问题 1139949：Flexbox 覆盖|Chromium bug"  
-<!--[CR1142804]: https://crbug.com/1142804 "Issue 1142804: Implement break-on-trusted-type-violation | Chromium bugs"  -->  
-<!--[CR1144127]: https://crbug.com/1144127 "Issue 1144127: BLOCKED | Chromium bugs"  -->  
-[CR1147016]：" https://crbug.com/1147016 问题 1147016：颜色选取器不显示在 var () 函数中。 |Chromium bug"  
-[CR1148353]：" https://crbug.com/1148353 问题 1148353：功能请求：从 devtools 控制台文件复制|Chromium bug"  
-[CR1149859]：" https://crbug.com/1149859 问题 1149859： [功能请求][控制台] 将复制对象添加到剪贴板项目到上下文菜单|Chromium bug"  
-[CR1150797]：" https://crbug.com/1150797 问题 1150797：在元素面板菜单中添加重复元素上下文|Chromium bug"  
-<!--[CR1150883]: https://crbug.com/1150883 "Issue 1150883: Remove TT messages from the console but keep underlining in the sources tab | Chromium bugs"  -->  
-<!--[CR1152290]: https://crbug.com/1152290 "Issue 1152290: Devtools support for QuicTransport | Chromium bugs"  -->  
-[CR1152391]：" https://crbug.com/1152391 问题 1152391：支持在样式面板中复制 CSS 上下文|Chromium bug"  
-[CR1155120]：" https://crbug.com/1155120 问题 1155120：[FR]支持复制文件名和行号|Chromium bug"  
-[CR1156628]：" https://crbug.com/1156628 问题 1156628：DevTools：添加对 ：target in force 元素状态功能|Chromium bug"  
-[CR1157329]："问题 1157329：辅助功能 - 讲述人：讲述人未在"样式"选项卡中公布适用于代码的建议的计数 https://crbug.com/1157329 和|Chromium bug"  
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium Bug"  
+[CR978059]: https://crbug.com/978059 "问题 978059：在筛选 Cookie 时删除 Cookie，删除所有 Cookie，而不只是删除所有已筛选|Chromium Bug"  
+[CR997625]: https://crbug.com/997625 "问题 997625：新功能|需要查看 Cookie 中 url 解码值的选项|Chromium Bug"  
+[CR1003629]: https://crbug.com/1003629 "问题 1003629：捕获节点不再屏幕截图显示折叠下方的节点。|Chromium Bug"  
+[CR1012337]: https://crbug.com/1012337 "问题 1012337：清除网站数据会破坏非 Google 网站上 Google 会话|Chromium Bug"  
+[CR1028078]: https://crbug.com/1028078 "问题 1028078：联机和脱机在列表中彼此|Chromium Bug"  
+[CR1054281]: https://crbug.com/1054281 "问题 1054281：功能请求：DevTools 应模拟可折叠和双屏幕设备|Chromium Bug"  
+[CR1075865]: https://crbug.com/1075865 "问题 1075865：在开发工具时间线中显示丢弃|Chromium Bug"  
+[CR1093229]: https://crbug.com/1093229 "问题 1093229：DevTools：提供专用的字样编辑器 UI |Chromium Bug"  
+[CR1121900]: https://crbug.com/1121900 "问题 1121900：DevTools：根据新规范更新对比度计算|Chromium Bug"  
+[CR1122507]: https://crbug.com/1122507 "问题 1122507：框架树视图中的 Surface 工作线程信息 | Chromium 漏洞"  
+[CR1122580]: https://crbug.com/1122580 "问题 1122580：重新加载时无法禁用网络|Chromium Bug"  
+[CR1136394]: https://crbug.com/1136394 "问题 1136394：Flexbox 工具 | Chromium 漏洞"  
+[CR1139899]: https://crbug.com/1139899 "问题 1139899：在框架详细信息视图中报告封闭的 API 的可用性 | Chromium 漏洞"  
+[CR1139949]: https://crbug.com/1139949 "问题 1139949：弹性框覆盖|Chromium Bug"  
+[CR1147016]: https://crbug.com/1147016 "问题 1147016：颜色选取器不显示在 var () 函数中。|Chromium Bug"  
+[CR1148353]: https://crbug.com/1148353 "问题 1148353：功能请求：从开发工具控制台复制|Chromium Bug"  
+[CR1149859]: https://crbug.com/1149859 "问题 1149859：[功能请求][控制台]将复制对象添加到剪贴板项目到上下文菜单|Chromium Bug"  
+[CR1150797]: https://crbug.com/1150797 "问题 1150797：在元素面板菜单中添加重复元素上下文|Chromium Bug"  
+[CR1152391]: https://crbug.com/1152391 "问题 1152391：支持在样式面板中复制 CSS 上下文|Chromium Bug"  
+[CR1155120]: https://crbug.com/1155120 "问题 1155120：[FR]支持复制文件名和行号|Chromium Bug"  
+[CR1156628]: https://crbug.com/1156628 "问题 1156628：DevTools：添加对 ：target in force 元素状态功能|Chromium Bug"  
+[CR1157329]: https://crbug.com/1157329 "问题 1157329：辅助功能 - 讲述人：讲述人未在"样式"选项卡中宣布可用于代码的建议的计数和|Chromium Bug"  
 
 [MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target "：target |MDN"  
 
