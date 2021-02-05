@@ -30,12 +30,12 @@ CSS 在近些年为版式提供了更好的支持。  有数十种不同的 CSS 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/font-editor-icon.msft.png" alt-text=""样式"窗格中用于编辑字体设置的图标" lightbox="../media/font-editor-icon.msft.png":::
+      :::image type="complex" source="../media/font-editor-icon.msft.png" alt-text="样式窗格中用于编辑字体设置的图标" lightbox="../media/font-editor-icon.msft.png":::
          " **样式"窗格中** 用于编辑字体设置的图标  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="字体编辑器在"样式"窗格顶部打开" lightbox="../media/font-editor-open.msft.png":::
+      :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="字体编辑器在样式窗格顶部打开" lightbox="../media/font-editor-open.msft.png":::
          字体 **编辑器** 在"样式"窗格 **顶部** 打开  
       :::image-end:::  
    :::column-end:::
@@ -49,7 +49,7 @@ CSS 在近些年为版式提供了更好的支持。  有数十种不同的 CSS 
 
 字体系列选择器是可视化字体编辑器 **的上半部分**。  若要选择 CSS 规则的字体，在 CSS 编辑器中，使用 **字体系列** 选择器。  您可以针对每个 CSS 规则选择主字体和回退字体。  
 
-:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="字体编辑器在"样式"窗格顶部打开，其中突出显示了字体系列选择器" lightbox="../media/font-editor-font-family.msft.png":::
+:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="字体编辑器在样式窗格顶部打开，其中突出显示了字体系列选择器" lightbox="../media/font-editor-font-family.msft.png":::
    字体**编辑器在**"样式"窗格顶部**打开，其中****突出显示了字体系列**选择器  
 :::image-end:::  
 
@@ -60,7 +60,7 @@ CSS 在近些年为版式提供了更好的支持。  有数十种不同的 CSS 
 1.  常规字体系列，例如或 `serif` `sans-serif` 。  
 1.  全局值，例如 `inherit` ， `initial` 和 `unset` 。  
     
-:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="字体编辑器在"样式"窗格顶部打开，其中突出显示了字体系列选择器" lightbox="../media/font-editor-font-family-list.msft.png":::
+:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="字体编辑器在样式窗格顶部打开，其中突出显示了字体系列选择器" lightbox="../media/font-editor-font-family-list.msft.png":::
    字体**编辑器在**"样式"窗格顶部**打开，其中****突出显示了字体系列**选择器  
 :::image-end:::  
 
@@ -77,7 +77,7 @@ CSS 在近些年为版式提供了更好的支持。  有数十种不同的 CSS 
 
 您可以在可视字体编辑器的下半部分更改 CSS **字体属性**。  可以使用任何 UI 控件更改字号、行高、字体粗细和字母间距。  所做的更改会立即在浏览器中应用。  
 
-:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="字体编辑器在"样式"窗格顶部打开，其中突出显示了 CSS 属性" lightbox="../media/font-editor-css-properties.msft.png":::
+:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="字体编辑器在样式窗格顶部打开，其中突出显示了 CSS 属性" lightbox="../media/font-editor-css-properties.msft.png":::
    字体 **编辑器在** "样式"窗格顶部 **打开，其中** 突出显示了 CSS 属性  
 :::image-end:::  
 
