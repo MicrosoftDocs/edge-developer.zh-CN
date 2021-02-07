@@ -277,7 +277,9 @@
               href: extensions-chromium/publish/submission-states.md
             - name: 管理帐户设置
               href: extensions-chromium/publish/manage-settings.md
-        - name: Microsoft Edge 外接程序策略
+            - name: 联系我们
+              href: extensions-chromium/publish/contact-us.md
+        - name: Microsoft Edge 加载项策略
           items:
             - name: 内容安全策略
               href: extensions-chromium/store-policies/csp.md
