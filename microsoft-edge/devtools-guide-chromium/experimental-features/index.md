@@ -30,7 +30,7 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
     *   选择 `Shift` + `?` 。  有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevToolsShortcuts]。  
 1.  在"设置"窗格的 **左侧，选择** "实验 **"** 部分。  
     
-    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text=""设置"中的"实验"页" lightbox="../media/experiments-devtools.msft.png":::
+    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="设置中的实验页" lightbox="../media/experiments-devtools.msft.png":::
        " **设置"** 中的"实验 **"页**  
     :::image-end:::  
     
@@ -64,7 +64,7 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
 
 检查 **工具** 提供了一种快速方法，通过将鼠标悬停在网站中的 CSS 网格布局上来识别并可视化这些布局。  选择**** ![ DevTools (左上角的"检查) 检查 \) ](../media/inspect-icon.msft.png) 图标。  然后，将鼠标悬停在要调试的网站上 Grid 元素上。  边框显示在网格周围，底纹指示网格间隙的位置（如果存在）。  
 
-:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="使用"检查"工具查看网格" lightbox="../media/grid-inspect.msft.png":::
+:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="使用检查工具查看网格" lightbox="../media/grid-inspect.msft.png":::
    使用"检查"工具 **查看** 网格  
 :::image-end:::  
 
@@ -173,7 +173,7 @@ Microsoft Edge DevTools 提供对仍处于开发中的实验性功能的访问�
 1.  选择要自定义的操作。  
 1.  选择 **编辑** \ (![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \) 图标。  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从"设置"中的"快捷方式"页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从设置中的快捷方式页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        从"设置"中的"快捷方式 **"** 页选择要自定义 [的操作][DevToolsCustomizeIndexSettings]  
     :::image-end:::  
     
