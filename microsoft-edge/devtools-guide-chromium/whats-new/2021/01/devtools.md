@@ -47,7 +47,7 @@ Microsoft **Edge** DevTools 中的新增功能工具现在具有新外观和新�
     
 若要打开此实验，请[导航到"][DevtoolsCustomizeIndexSettings]设置实验"，并在"样式"窗格中选中"启用新  >  **** 字体编辑器工具"**旁边的复选框**。  有关详细信息，请导航到 DevTools 的"样式"窗格中的"编辑[CSS 字体样式和设置"。][DevtoolsInspectStylesEditFonts]  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1093229。][CR1093229]  
 
-:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="可视化字体编辑器在"样式"窗格中突出显示" lightbox="../../media/2021/01/visual-font-editor.msft.png":::
+:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="可视化字体编辑器在样式窗格中突出显示" lightbox="../../media/2021/01/visual-font-editor.msft.png":::
    可视化 **字体编辑器** 在" **样式"窗格中** 突出显示  
 :::image-end:::  
 
@@ -78,7 +78,7 @@ Flexbox 调试功能正在积极开发中。  若要打开以下两项功能的�
          **突出显示的 Flexbox** \ (`flex` \) 图标和网页 :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text=""布局"窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="布局窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
          "**布局"窗格中**突出显示的弹性框**覆盖**  
       :::image-end:::  
    :::column-end:::
@@ -136,7 +136,7 @@ Flexbox 调试功能正在积极开发中。  若要打开以下两项功能的�
 
 若要在打开此实验后观看显示和朗读多个建议的视频，请导航到 ["Voiceover"，](https://youtu.be/9TcUpleEwwA) 宣布在 YouTube 上显示开发工具选项。  
 
-:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text=""样式"窗格中突出显示的建议" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="样式窗格中突出显示的建议" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
    " `suggestion` 样式"窗格中 **突出显示** 的列表  
 :::image-end:::  
 
@@ -207,7 +207,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
 
 使用新的 **Duplicate 元素** 快捷方式克隆元素。  在元素 **工具** 中，将鼠标悬停在元素上，打开上下文菜单 \ (右键单击\) ，选择 **Duplicate 元素**。  在所选元素下创建一个新元素。  若要使用键盘快捷方式复制元素，请选择 `Shift` + `Alt` + `Down Arrow` \ (Windows/Linux\) 或 `Shift` + `Option` + `Down Arrow` \ (macOS\) 。  若要查看 Chromium 开放源代码项目中此功能的历史记录，请导航到问题[1150797。][CR1150797]  
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Duplicate 元素在"元素"工具中某个元素的上下文菜单中突出显示" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Duplicate 元素在元素工具中某个元素的上下文菜单中突出显示" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    Duplicate**元素**在"元素"工具中某个元素的**上下文菜单中突出显示**  
 :::image-end:::  
 
@@ -352,7 +352,7 @@ Microsoft [Edge 开发人员][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDev
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在"样式"窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在样式窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
          在"样式"窗格中 **复制** 文件名  
       :::image-end:::  
    :::column-end:::
