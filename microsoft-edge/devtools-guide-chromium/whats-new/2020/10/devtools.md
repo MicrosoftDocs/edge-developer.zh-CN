@@ -3,16 +3,16 @@ description: 新的 CSS 网格调试工具、Webauthn 工具、可移动工具�
 title: 'Microsoft Edge 87 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 01/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: cf3a685a1a4e9a3f13d2401a6294058a71dd5104
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 88e6678880172a7a494bcf73c74874aeb70c24b9
+ms.sourcegitcommit: e737277744dd25a7585c113eef22a2aa4d4c167f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313028"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "11325957"
 ---
 # Microsoft Edge 87 (DevTools 中的新增)   
 
@@ -173,7 +173,7 @@ Microsoft Edge DevTools 现在支持以下功能来检查、查看和调试 CSS 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开计算边栏窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开"计算边栏"窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          打开 **"计算边栏"** 窗格  
       :::image-end:::  
    :::column-end:::  
@@ -346,4 +346,4 @@ DevTools 现在显示 `report-only` 设置为模式的 COEP 和 COOP `report-onl
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
