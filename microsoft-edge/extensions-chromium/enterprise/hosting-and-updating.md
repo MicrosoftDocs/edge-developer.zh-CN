@@ -1,48 +1,43 @@
 ---
-description: 扩展企业文档，用于 Edge (Chromium) 扩展。
-title: 托管和更新
+description: 在企业中托管和发布 Microsoft Edge (Chromium) 。
+title: 在 Microsoft Edge 加载项存储中发布和更新扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: 91fdd5c2f625890653085e8999da3e513b072348
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015700"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327685"
 ---
-# Web 应用商店托管和更新  
+# 在 Microsoft Edge 加载项存储中发布和更新扩展  
 
-大多数扩展均托管在 [Microsoft Edge 预览体验计划 Addons 目录 \ (Microsoft Edge 预览体验成员 Addons \ ) ][MicrosoftStoreExtensions] 中，以最佳方式保护用户免受恶意扩展。  
+大多数扩展都发布到 Microsoft [Edge 加载项][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] 存储，以保护用户免受恶意扩展的攻击。  
 
-## 托管  
+## 发布扩展选项  
 
-所有扩展都将作为特殊的 ZIP 文件分配给用户，使用 crx 后缀。  Microsoft Edge Addons 中托管的扩展将作为 .zip 文件上传。 发布过程会自动将 .zip 转换为 crx 文件。  
+所有扩展作为带有后缀的特殊存档 \ (`.zip` \) 分发给 `.crx` 用户。  发布到 Microsoft Edge 加载项存储的扩展作为文件 `.zip` 上载。  发布过程会自动将文件 `.zip` 转换为 `.crx` 文件。  
 
-Microsoft Edge Addons 托管规则有两个例外：  
+以下两种方案不要求您在 Microsoft Edge 加载项存储中发布扩展。  
 
-1.  通过企业策略分配的扩展。  
-1.  在开发人员模式下，从本地计算机解压缩扩展目录。  
+*   使用企业策略分发的扩展。  
+*   当 Microsoft Edge 处于开发人员模式时，在本地计算机上使用未打包的扩展目录。  
 
-## 更新  
+## 扩展的更新
 
-Microsoft Edge 浏览器会定期检查已安装扩展和更新的新版本，无需用户干预。  
-
-> [!NOTE]
-> 将添加计划添加在 Microsoft Edge Addons 上更新扩展的步骤。  
-
-<!-- image links -->
+Microsoft Edge 浏览器会定期检查已安装扩展的新版本，并更新每个扩展，而无需用户干预。  
 
 <!-- links -->  
 
-[MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "扩展-Microsoft Edge 预览体验计划 Addons"  
+[MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "扩展 - Microsoft Edge 预览体验成员|Microsoft"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 可在 [此处](https://developer.chrome.com/extensions/hosting)找到原始页面。  
+> 原始页面位于 [此处](https://developer.chrome.com/extensions/hosting)。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

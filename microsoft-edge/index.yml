@@ -1,21 +1,21 @@
 ### YamlMime:Hub
 title: Microsoft Edge 文档
-summary: 浏览 Microsoft Edge 文档。  通过浏览开发人员、管理员和用户的文档、教程和示例，了解如何使用 Microsoft Edge。
+summary: 浏览 Microsoft Edge 文档。  了解如何通过浏览开发人员、管理员和用户的文档、教程和示例来使用 Microsoft Edge。
 brand: m365
 metadata:
   title: Microsoft Edge 文档
-  description: 开发人员、IT 管理员和浏览器用户的 Microsoft Edge 信息;包括 DevTools、扩展、PWA、WebDriver 等。
+  description: 适用于开发人员、IT 管理员和浏览器用户的 Microsoft Edge 信息;包括 DevTools、扩展、PWA、WebDriver 等。
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/10/2020
+  ms.date: 02/04/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
-  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+  ms.openlocfilehash: 150dcdf1a5d4f5ac06a4d0b105f89a05907d7ddb
+  ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/23/2021
-  ms.locfileid: "11297721"
+  ms.lasthandoff: 02/13/2021
+  ms.locfileid: "11327628"
 highlightedContent:
   items:
   - title: 'Microsoft Edge (官方稳定渠道) '
@@ -33,7 +33,7 @@ highlightedContent:
   - title: 如何使用 Microsoft Edge
     itemType: learn
     url: https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support
-  - title: 在企业版中管理 Microsoft Edge
+  - title: 在企业中管理 Microsoft Edge
     itemType: learn
     url: /deployedge/index
   - title: 发现 Web 开发人员功能
@@ -88,7 +88,7 @@ conceptualContent:
   - title: 与企业社区互动
     links:
     - itemType: reference
-      text: '企业技术社区 (会员中心) '
+      text: '企业技术社区 (预览体验成员) '
       url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
   - title: 适用于企业的扩展
     links:
@@ -142,7 +142,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
     - title: 扩展：开发人员指南
       links:
-      - text: 将 Chromium 扩展端口移植到 Microsoft Edge
+      - text: 将 Chromium 扩展移植到 Microsoft Edge
         url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
       - text: 分发扩展的备用方法
         url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
@@ -168,7 +168,7 @@ additionalContent:
       links:
       - text: 'Chromium (概述) '
         url: /microsoft-edge/progressive-web-apps-chromium/index
-      - text: '使用渐进式 Web 应用 (Chromium) '
+      - text: '渐进式 Web 应用和 chromium (入门) '
         url: /microsoft-edge/progressive-web-apps-chromium/get-started
       - text: 将 DevTools 与渐进式 Web 应用一同使用
         url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
@@ -186,7 +186,7 @@ additionalContent:
         url: /microsoft-edge/webview2/gettingstarted/win32
       - text: WPF 中的 WebView2 入门
         url: /microsoft-edge/webview2/gettingstarted/wpf
-      - text: Windows Forms 应用中的 WebView2 入门
+      - text: Windows 窗体应用中的 WebView2 入门
         url: /microsoft-edge/webview2/gettingstarted/winforms
       - text: 参考
         url: /microsoft-edge/webview2/webview2-api-reference
@@ -195,16 +195,16 @@ additionalContent:
     - summary: 从 Microsoft 问答社区专家&解答
       title: Microsoft 问答&支持
       url: /answers/topics/ms-edge.html
-    - summary: Microsoft 致力于确保你的应用在 Microsoft Edge 上正常工作。  如果在最新版本的 Edge 上遇到业务应用或网站问题，Microsoft 将帮助你修复应用和网站，无需额外付费。  有关资格要求，请参阅产品/服务详细信息。
-      title: 使用应用保证获取低成本帮助
+    - summary: Microsoft 致力于确保你的应用在 Microsoft Edge 上正常工作。  如果在最新版本的 Edge 上遇到业务应用或网站问题，Microsoft 会帮助你修复应用和网站，无需额外付费。  有关资格要求，请参阅产品/服务详细信息。
+      title: 使用应用保证获取无费用帮助
       url: https://fasttrack.microsoft.com/portal
-    - summary: 如果你的企业需要立即为 Microsoft Edge 提供技术支持，可以使用各种计划从 Microsoft 获得 1：1 支持，以帮助你获得所需的支持级别。
+    - summary: 如果你的企业需要立即为 Microsoft Edge 提供技术支持，可以使用各种计划从 Microsoft 获得 1：1 支持，以帮助你获得所需级别的支持。
       title: Microsoft 商业支持
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-    - summary: 为用户提供了有用的支持资源。
+    - summary: 为用户提供有用的支持资源。
       title: 用户支持
       url: https://support.microsoft.com/microsoft-edge
-  - title: 参考和旧文档
+  - title: 参考和旧版文档
     items:
     - title: 参考
       links:

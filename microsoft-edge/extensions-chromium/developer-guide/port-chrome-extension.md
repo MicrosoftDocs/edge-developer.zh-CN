@@ -1,49 +1,50 @@
 ---
 description: 将 Chrome 扩展移植到 Microsoft Edge 的过程。
-title: 将端口 Chrome 扩展到 Microsoft Edge
+title: 将 Chrome 扩展移植到 Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 0f767107bfb259476d1ab35d081fb9bb05c81b46
-ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
+keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11195157"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327692"
 ---
-# 移植分机  
+# 移植扩展  
 
-Microsoft Edge 允许你将 Chrome 扩展移植到最少的更改。  Chrome 支持的扩展 Api 和清单键是与 Microsoft Edge 兼容的代码。  有关 Microsoft Edge 支持的 Api 的列表，请导航到 [API 支持][ExtensionApiSupport]。  
+Microsoft Edge 允许你以最少的更改移植 Chrome 扩展。  Chrome 支持的扩展 API 和清单密钥与 Microsoft Edge 代码兼容。  有关 Microsoft Edge 支持的 API 列表，请导航到 [API 支持][ExtensionApiSupport]。  
 
 若要移植 Chrome 扩展，请完成以下步骤。  
 
-1.  使用 Microsoft Edge 扩展 [支持的 api][ExtensionApiSupport] 列表查看你的扩展中使用的 Chrome 扩展 api。  
+1.  使用 Microsoft Edge 扩展支持的 API 列表查看扩展中使用的 Chrome[扩展 API。][ExtensionApiSupport]  
     
     > [!NOTE]
-    > 如果你的扩展使用的 Api 不受 Microsoft Edge 支持，则它不能直接移植。  
+    > 如果你的扩展使用 Microsoft Edge 不支持的 API，它可能不会直接移植。  
     
-1.  如果 `Chrome` 要在扩展名的名称或说明中使用该名称，请为 rebrand 的扩展名 `Microsoft Edge` 。  必须执行此步骤才能传递认证过程。  
-1.  通过 [旁加载你的扩展][ExtensionsGettingStartedExtensionSideloading]来测试你的扩展，以检查它在 Microsoft Edge 中是否正常工作。  
-1.  如果你面临任何问题，你可以使用 DevTools 在 Microsoft Edge 中调试你的扩展 [，或者与我们联系][mailtoExtensionMicrosoft]。  
-1.  按照 [发布指南][ExtensionsPublishPublishExtension] ，在 Microsoft Edge 加载项存储上发布扩展。  
+1.  在清单文件中，将 `update_URL` 字段设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  该值指向 Microsoft Edge 加载项存储中的扩展文件，并允许 `.crx` Microsoft Edge 检查扩展更新。  
+1.  如果在扩展的名称或说明中使用，则使用重新 `Chrome` 命名扩展 `Microsoft Edge` 。  若要通过认证过程，需要更改。  
+1.  通过旁加载扩展，测试扩展以检查它在 Microsoft Edge [中是否正常工作][ExtensionsGettingStartedExtensionSideloading]。  
+1.  如果面临任何问题，可以使用 DevTools 在 Microsoft Edge 中调试扩展， [或联系我们][mailtoExtensionMicrosoft]。  
+1.  按照 [发布指南在][ExtensionsPublishPublishExtension] Microsoft Edge 加载项存储上发布扩展。  
     
     > [!NOTE]
-    > 如果扩展使用 API 与本机应用交换消息 `chrome.runtime.connectNative` ，请确保在 `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` 本机消息主机清单文件中设置为。  这使应用能够标识扩展。  
+    > 如果扩展使用本机应用交换邮件，请确保在本机邮件主机清单文件中 `chrome.runtime.connectNative` `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` 设置为。  该设置允许应用标识你的扩展。  
     
 ## 后续步骤  
 
-扩展程序包准备好发布到 Microsoft Edge 加载项存储后， [创建一个开发者帐户][ExtensionsPublishCreateDevAccount] 并 [发布您的扩展][ExtensionsPublishPublishExtension]。  
+在扩展包准备好在 Microsoft Edge 加载项存储中发布后，创建开发人员[帐户][ExtensionsPublishCreateDevAccount][并发布扩展][ExtensionsPublishPublishExtension]。  
 
 <!-- links -->  
 
-[ExtensionApiSupport]: ./api-support.md "API 支持 |Microsoft 文档"  
-[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "旁加载您的分机 |Microsoft 文档"  
-[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "开发人员注册 |Microsoft 文档"  
-[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "发布您的分机 |Microsoft 文档"  
+[ExtensionApiSupport]: ./api-support.md "API 支持|Microsoft Docs"  
+[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "旁加载扩展|Microsoft Docs"  
+[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "开发人员注册|Microsoft Docs"  
+[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "发布扩展|Microsoft Docs"  
 
-[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "一次性付款 |Chrome 开发人员"  
+[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "一次付款|Chrome 开发人员"  
 
 [mailtoExtensionMicrosoft]: mailto:ext_dev_support@microsoft.com "ext_dev_support@microsoft.com"  

@@ -1,33 +1,33 @@
 ---
-description: 本机消息文档
+description: 本机消息传递文档
 title: 本机消息传递
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/06/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: c5da9acf79225c88ad5829c2b7f57d1d833ca49b
-ms.sourcegitcommit: 75c200a029d19fe372c1505c0006dbfbfad90bf5
+keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: 2d629762d4c7c75832905cfbf8c2d5311191092d
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100250"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327699"
 ---
 # 本机消息传递  
 
-扩展使用消息传递 Api 与用户设备上安装的本机 Win32 应用程序进行通信。  本机应用程序主机使用标准输入和标准输出发送和接收带有扩展的消息。  使用本机消息的扩展安装在与任何其他扩展类似的 Microsoft Edge 中。  但是，本机应用程序不是由 Microsoft Edge 安装或管理的。  
+扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用程序进行通信。  本机应用程序主机使用标准输入和标准输出发送和接收扩展的邮件。  使用本机消息传递的扩展安装在 Microsoft Edge 中，与任何其他扩展类似。  但是，Microsoft Edge 不会安装或管理本机应用程序。  
 
-若要获取扩展和本机应用程序主机，您有两种分布模型。  
+若要获取扩展和本机应用程序主机，有两个分发模型。  
 
-*   将您的扩展和主机打包在一起。  当用户安装程序包时，将同时安装扩展和主机。
-*   使用 [Microsoft Edge 加载项存储区][EdgeAddons]安装你的扩展，并且你的扩展会提示用户安装主机。  
+*   将扩展和主机打包在一起。  当用户安装程序包时，将同时安装扩展和主机。  
+*   使用 [Microsoft Edge 加载项] [MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]存储安装扩展，扩展会提示用户安装主机。  
 
-若要创建用于通过本机应用程序主机发送和接收消息的扩展，请参阅以下步骤。  
+若要创建扩展以使用本机应用程序主机发送和接收邮件，请参阅以下步骤。  
 
-## 步骤 1-将权限添加到扩展清单  
+## 步骤 1 - 向扩展清单添加权限  
 
-`nativeMessaging`在扩展名的文件中添加对**manifest.js**的权限。  下面的代码片段是 **manifest.js**的示例。  
+将 `nativeMessaging` 权限添加到扩展 **manifest.js** 文件的权限。  下面的代码段是一个有关manifest.js** 的示例**。  
 
 ```json
     {
@@ -45,9 +45,15 @@ ms.locfileid: "11100250"
     }
 ```  
 
-## 步骤 2-创建本机消息主机清单文件  
+## 步骤 2 - 创建本机邮件主机清单文件  
 
-本机应用程序必须提供本机消息主机清单文件。  清单文件包含本机消息传递主机运行时的路径、与扩展的通信方法，以及与其通信的允许扩展名的列表。  浏览器读取并验证本机消息主机清单。  浏览器不会安装或管理本机消息主机清单文件。  
+本机应用程序必须提供本机邮件主机清单文件。  清单文件包含以下信息。  
+
+*   本机消息传递主机运行时的路径。  
+*   与扩展通信的方法。  
+*   它所通信的允许的扩展的列表。  
+    
+浏览器读取并验证本机邮件主机清单。  浏览器不会安装或管理本机邮件主机清单文件。  
 
 ```json
     {
@@ -61,17 +67,17 @@ ms.locfileid: "11100250"
     }
 ```  
 
-主机清单文件必须是包含以下键的有效 JSON 文件。  
+主机清单文件必须是包含以下密钥的有效 JSON 文件。  
 
 :::row:::
    :::column span="1":::
       `name`  
    :::column-end:::
    :::column span="2":::
-      指定本机消息主机的名称。  客户端将此字符串传递给 `runtime.connectNative` 或 `runtime.sendNativeMessage` 。  
+      指定本机消息传递主机的名称。  客户端将此字符串传递给 `runtime.connectNative` 或 `runtime.sendNativeMessage` 。  
       
-      *   此值必须仅包含小写字母数字字符、下划线和点状。  
-      *   此值不能以点开始或结束，并且一个点后面不得跟另一个点。  
+      *   此值只能包含小写字母数字字符、下划线和点。  
+      *   此值不得以点开始或结尾，并且一个点不得后跟另一个点。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -87,12 +93,12 @@ ms.locfileid: "11100250"
       `path`  
    :::column-end:::
    :::column span="2":::
-      指定本机消息主机二进制文件的路径。  
+      指定本机消息传递主机二进制文件的路径。  
       
-      *   在 Windows 设备上，你可以使用包含清单文件的目录的相对路径。  
+      *   在 Windows 设备上，可以使用包含清单文件的目录的相对路径。  
       *   在 macOS 和 Linux 上，路径必须是绝对路径。  
       
-      主进程从设置为包含主机二进制文件的目录的当前目录开始。  例如，\ (Windows \ ) ，如果此参数设置为 `C:\Application\nm_host.exe` ，将使用当前目录 \ (\ ) 启动二进制文件 `C:\Application\` 。  
+      主机进程从当前目录设置为包含主机二进制文件的目录开始。  例如 \ (Windows\) ，如果此参数设置为 ，则使用当前目录 `C:\Application\nm_host.exe` \ (`C:\Application\` \) 启动二进制文件。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -100,7 +106,7 @@ ms.locfileid: "11100250"
       `type`  
    :::column-end:::
    :::column span="2":::
-      指定用于与本机消息主机通信的接口的类型。  此值指示 Microsoft Edge 使用 `stdin` 和与 `stdout` 主机通信。  
+      指定用于与本机消息传递主机进行通信的接口的类型。  此值指示 Microsoft Edge 使用 `stdin` 主机 `stdout` 并与主机通信。  
       唯一可接受的值为 `stdio` 。  
    :::column-end:::
 :::row-end:::  
@@ -109,7 +115,7 @@ ms.locfileid: "11100250"
       `allowed_origins` 
    :::column-end:::
    :::column span="2":::
-      指定有权访问本机消息主机的扩展列表。  若要使你的应用程序能够识别扩展并与之通信，请在你的本机消息主机清单文件中设置以下值。  
+      指定有权访问本机邮件主机的扩展的列表。  若要使应用程序能够标识扩展并与扩展通信，请在你的本机邮件主机清单文件中设置以下值。  
       
       ```json
       "allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]
@@ -117,26 +123,26 @@ ms.locfileid: "11100250"
    :::column-end:::
 :::row-end:::  
 
-旁加载您的扩展，以通过主机测试本机消息传递。  
+旁加载扩展以测试主机的本机消息传递。  
 若要在开发和检索期间旁加载扩展 `microsoft_catalog_extension_id` ，请完成以下步骤。  
 
-1.  导航到 `edge://extensions` ，然后打开 "开发人员模式切换" 按钮。  
-1.  选择 " **加载解包**"，然后选择扩展包到旁加载。  
-1.  选择“确定”****。
-1.  导航到 `edge://extensions` 页面并验证您的扩展是否已列出。  
-1.  将密钥从 `microsoft_catalog_extension_id` 页面上的扩展列表中的 \ (ID \ ) 复制。
+1.  导航 `edge://extensions` 到 ，然后打开开发人员模式切换按钮。  
+1.  选择 **"加载解压缩"，** 然后选择要旁加载的扩展包。  
+1.  选择“确定”****。  
+1.  导航 `edge://extensions` 到页面并验证扩展是否列出。  
+1.  从页面上的扩展 `microsoft_catalog_extension_id` (\ (ID\) 复制密钥。  
 
-准备好将扩展分发给用户后，将扩展发布到 Microsoft Edge 加载项存储。  已发布扩展的扩展 ID 可能与在旁加载你的扩展时使用的 ID 不同。  如果 ID 已更改，请 `allowed_origins` 在具有已发布扩展的 ID 的主机清单文件中更新。  
+准备好将扩展分发给用户时，将扩展发布到 Microsoft Edge 加载项存储。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 ID 在主机清单 `allowed_origins` 文件中进行更新。  
 
-## 步骤 3-将本机消息主机清单文件复制到系统  
+## 步骤 3 - 将本机邮件主机清单文件复制到系统  
 
-最后一步是将本机消息主机清单文件复制到计算机，并确保它配置正确。  若要确保清单文件放置在预期位置，请完成以下步骤。  该位置因平台而异。  
+最后一步是将本机邮件主机清单文件复制到计算机，并确保清单文件配置正确。  若要确保清单文件放置在预期位置，请完成以下步骤。  位置因平台而异。  
 
 ### [Windows](#tab/windows/)  
 
 <a id="copy-manifest-file"></a>  
 
-清单文件可能位于文件系统中的任何位置。  应用程序安装程序必须创建一个注册表项，并将该注册表项的默认值设置为清单文件的完整路径。  以下命令是注册表项的示例。  
+清单文件可能位于文件系统中的任何位置。  应用程序安装程序必须创建注册表项，将注册表项的默认值设置为清单文件的完整路径。  以下命令是注册表项的示例。  
 
 ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application
@@ -146,9 +152,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.m
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application
 ```
 
-将注册表项添加到具有清单键的目录中。  
+使用清单项向目录添加注册表项。  
 
-*   在命令提示符下运行命令。    
+*   在命令提示符中运行命令。  
     
     1.  运行以下命令。  
         
@@ -156,7 +162,7 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my
         REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
         ```  
     
-*   创建一个 `.reg` 文件并运行它。  
+*   创建 `.reg` 并运行文件。  
     
     1.  将以下命令复制到 `.reg` 文件中。  
         
@@ -166,9 +172,9 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my
         @="C:\\path\\to\\nmh-manifest.json"
         ```  
         
-    1.  运行该 `.reg` 文件。  
+    1.  运行 `.reg` 该文件。  
     
-Microsoft Edge 首先查询32位注册表，然后是64位注册表来标识本机消息主机。  如果将上述 `.reg` 文件作为批处理脚本的一部分运行，请确保使用管理员命令提示符运行它。  
+Microsoft Edge 查询后 `HKEY_CURRENT_USER` 跟的根键 `HKEY_LOCAL_MACHINE` 。  在这两项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机邮件主机。  注册表项指定本机邮件主机清单的位置。  如果 Microsoft Edge 在之前列出的任何位置找到注册表项，则它不会查询此段落中列出的位置。  如果作为批处理脚本的一部分运行上述文件，请确保使用管理员命令提示符 `.reg` 运行该文件。  
 
 ### [macOS](#tab/macos/)  
 
@@ -176,25 +182,25 @@ Microsoft Edge 首先查询32位注册表，然后是64位注册表来标识本�
 
 若要存储清单文件，请完成以下操作之一。  
 
-*   系统范围内可供所有用户使用的本机消息传递主机存储在固定位置。  例如，清单文件必须存储在以下位置。 
+*   可供所有用户使用的系统范围的本机邮件主机存储在固定位置。  例如，清单文件必须存储在以下位置。  
     
     ```bash
     /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json
     ```  
     
-*   特定于用户的本机消息主机（仅适用于当前用户）位于 `NativeMessagingHosts` 用户配置文件目录中的子目录中。  例如，清单文件必须存储在以下位置。  
+*   用户特定的本机消息传递主机（仅对当前用户可用）位于用户配置文件目录中的子 `NativeMessagingHosts` 目录中。  例如，清单文件必须存储在以下位置。  
     
     ```bash
     ~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/com.my_company.my_application.json
     ```  
     
-    `{Channel_Name}`In `Microsoft Edge {Channel_Name}` 必须是下列值之一。  
+    in  `{Channel_Name}` `Microsoft Edge {Channel_Name}` 必须是下列值之一。  
     
     *   Canary  
     *   Dev  
     *   Beta  
 
-    使用稳定通道时， `{Channel_Name}` 不是必需的。  
+    使用 Stable 渠道 `{Channel_Name}` 时，不需要。  
 
 ### [Linux](#tab/linux/)  
 
@@ -202,13 +208,13 @@ Microsoft Edge 首先查询32位注册表，然后是64位注册表来标识本�
 
 若要存储清单文件，请完成以下操作之一。  
 
-*   系统范围内可供所有用户使用的本机消息传递主机存储在固定位置。  清单文件必须存储在以下位置。  
+*   可供所有用户使用的系统范围的本机邮件主机存储在固定位置。  清单文件必须存储在以下位置。  
     
     ```bash
     /etc/opt/edge/native-messaging-hosts
     ```
     
-*   特定于用户的本机消息主机（仅适用于当前用户）位于 `NativeMessagingHosts` 用户配置文件目录中的子目录中。  清单文件必须存储在以下位置。  
+*   用户特定的本机消息传递主机（仅对当前用户可用）位于用户配置文件目录中的子 `NativeMessagingHosts` 目录中。  清单文件必须存储在以下位置。  
     
     ```bash
     ~/.config/microsoft-edge/NativeMessagingHosts
@@ -217,18 +223,20 @@ Microsoft Edge 首先查询32位注册表，然后是64位注册表来标识本�
 * * *  
 
 > [!NOTE]
-> 确保在清单文件上提供读取权限，并确保在主机运行时上运行权限。  
+> 确保对清单文件提供读取权限，并运行主机运行时的权限。  
 
 <!-- links -->  
 
+
+ [MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge 加载项"
+
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 可在 [此处](https://developer.chrome.com/extensions/nativeMessaging)找到原始页面。  
+> 原始页面位于 [此处](https://developer.chrome.com/extensions/nativeMessaging)。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
-[EdgeAddons]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge 加载项"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
