@@ -1,67 +1,72 @@
 ---
-description: 在 Microsoft Store 上更新扩展的过程。
+description: 从 Microsoft Edge 加载项存储更新或删除扩展的过程
 title: 更新扩展列表
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: 0d4512331b4f9542921d2063c908b5e9d4251074
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: 930d0f835e89451d09743a20ac4097c596ea5c30
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015673"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327482"
 ---
-# <span data-ttu-id="bb453-104">更新扩展列表</span><span class="sxs-lookup"><span data-stu-id="bb453-104">Update An Extension Listing</span></span>  
+# <span data-ttu-id="dc13e-104">更新或删除扩展</span><span class="sxs-lookup"><span data-stu-id="dc13e-104">Update or remove your extension</span></span>  
 
-<span data-ttu-id="bb453-105">在 Microsoft Edge Addons 目录 \ (Microsoft Edge Addons \ ) 中更新现有列表。</span><span class="sxs-lookup"><span data-stu-id="bb453-105">Update an existing listing in Microsoft Edge Addons catalog \(Microsoft Edge Addons\).</span></span>  <span data-ttu-id="bb453-106">你可以随时更改已发布的扩展。</span><span class="sxs-lookup"><span data-stu-id="bb453-106">You may change a published Extension at any time.</span></span>  <span data-ttu-id="bb453-107">更新时，无需更新整个扩展即可进行少量更改，如更新说明或徽标。</span><span class="sxs-lookup"><span data-stu-id="bb453-107">While you are updating, you do not have to update the entire Extension to make few changes such as updating description or logo.</span></span>  <span data-ttu-id="bb453-108">但是，如果你更新扩展程序包，则只需记住每次增加版本号。</span><span class="sxs-lookup"><span data-stu-id="bb453-108">But if you update your Extension package, just remember to increase the version number each time.</span></span>  
+<span data-ttu-id="dc13e-105">你随时可能会更新提交的扩展，或者从 Microsoft Edge 加载项存储中删除已发布的扩展列表。</span><span class="sxs-lookup"><span data-stu-id="dc13e-105">You may update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons store at any time.</span></span>  
 
-## <span data-ttu-id="bb453-109">更新已发布的扩展</span><span class="sxs-lookup"><span data-stu-id="bb453-109">Update an already published Extension</span></span>  
-
-<span data-ttu-id="bb453-110">若要更新您的列表，请按照下列步骤操作：</span><span class="sxs-lookup"><span data-stu-id="bb453-110">To update your listing, follow these steps:</span></span>  
-
-1.  <span data-ttu-id="bb453-111">转到 [开发人员仪表板][MicrosoftPartnerCenter]。</span><span class="sxs-lookup"><span data-stu-id="bb453-111">Go to your [developer dashboard][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="bb453-112">从 "概述" 页中，单击要更新的列表。</span><span class="sxs-lookup"><span data-stu-id="bb453-112">From the Overview page, click the listing which you want to update.</span></span>  <span data-ttu-id="bb453-113">这将显示发布期间填写的提交表单详细信息。</span><span class="sxs-lookup"><span data-stu-id="bb453-113">This brings up the submission form details which you filled out during publishing.</span></span>  
-1.  <span data-ttu-id="bb453-114">对程序包、说明、图形资源或其他设置进行所需的更改。</span><span class="sxs-lookup"><span data-stu-id="bb453-114">Make the changes you want to the package, description, graphic assets, or other settings.</span></span>  <span data-ttu-id="bb453-115">如果更新程序包文件，请确保清单中的版本高于以前的程序包版本。</span><span class="sxs-lookup"><span data-stu-id="bb453-115">If you update the package file, make sure that the version in the manifest is higher than the previous package version.</span></span>
-1.  <span data-ttu-id="bb453-116">进行更改后，单击 "保存"，然后单击 "发布"。</span><span class="sxs-lookup"><span data-stu-id="bb453-116">After making changes, click Save and then Publish.</span></span>
-1.  <span data-ttu-id="bb453-117">访问 " [合作伙伴中心][MicrosoftPartnerCenter] 开发人员" 仪表板，以查看从更改为的列表的状态 `In the store` `In the store.  Certification in progress` 。</span><span class="sxs-lookup"><span data-stu-id="bb453-117">Visit the [Partner Center][MicrosoftPartnerCenter] developer dashboard to see the status of your listing changed from `In the store` to `In the store.  Certification in progress`.</span></span>  
+## <span data-ttu-id="dc13e-106">更新 Microsoft Edge 加载项存储上的扩展</span><span class="sxs-lookup"><span data-stu-id="dc13e-106">Update your extension on the Microsoft Edge Add-ons store</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="bb453-118">更新发布过程的持续时间范围从几小时到几天。</span><span class="sxs-lookup"><span data-stu-id="bb453-118">The duration of the update publishing process ranges from a few hours to few days.</span></span>  
+> <span data-ttu-id="dc13e-107">更新到扩展的认证过程持续时间可能从几小时到几天。</span><span class="sxs-lookup"><span data-stu-id="dc13e-107">The duration of the certification process for an update to an extension may take from a few hours to few days.</span></span>  
 
-<span data-ttu-id="bb453-119">`Status`显示列后 `In the store` ，您的扩展更新在 Microsoft Edge Addons 中可用。</span><span class="sxs-lookup"><span data-stu-id="bb453-119">Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Addons.</span></span>  
+### <span data-ttu-id="dc13e-108">更新 Microsoft Edge 加载项存储中的现有扩展</span><span class="sxs-lookup"><span data-stu-id="dc13e-108">Update an existing extension in the Microsoft Edge Add-ons store</span></span>  
 
-## <span data-ttu-id="bb453-120">在认证步骤中更新扩展</span><span class="sxs-lookup"><span data-stu-id="bb453-120">Update an Extension during certification step</span></span>  
+<span data-ttu-id="dc13e-109">若要更新应用商店上的扩展，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="dc13e-109">To update your extension on the store, complete the following steps.</span></span>  
 
-<span data-ttu-id="bb453-121">你可以在提交之前先提交并更新你的扩展提交，然后再输入发布步骤。</span><span class="sxs-lookup"><span data-stu-id="bb453-121">You may edit and update your Extension submission after submitting prior to it entering the Publish step.</span></span>  <span data-ttu-id="bb453-122">您可以在与您的[合作伙伴中心][MicrosoftPartnerCenter]的列表关联的 "**扩展概述**" 页面上检查您的扩展的状态。</span><span class="sxs-lookup"><span data-stu-id="bb453-122">You may check the status of your Extension on the **Extension Overview** page associated with your listing on [Partner Center][MicrosoftPartnerCenter].</span></span>  
+1.  <span data-ttu-id="dc13e-110">导航到 [开发人员仪表板][MicrosoftPartnerCenter] ，然后选择想要更新的扩展。</span><span class="sxs-lookup"><span data-stu-id="dc13e-110">Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that you wish to update.</span></span>  
+1.  <span data-ttu-id="dc13e-111">更新扩展包或扩展的元数据。</span><span class="sxs-lookup"><span data-stu-id="dc13e-111">Update either the extension package or the metadata of the extension.</span></span>  <span data-ttu-id="dc13e-112">如果更新扩展包，请确保增加清单文件中的版本。</span><span class="sxs-lookup"><span data-stu-id="dc13e-112">If you update the extension package, ensure that you increase the version in the manifest file.</span></span>  
+1.  <span data-ttu-id="dc13e-113">进行更改后，选择"**保存**发布"以  >  \*\*\*\* 更新扩展列表，然后开始认证过程。</span><span class="sxs-lookup"><span data-stu-id="dc13e-113">After you make the changes, choose **Save** > **Publish** to update your extension listing, and start the certification process.</span></span>  
+1.  <span data-ttu-id="dc13e-114">列 `Status` 显示后 `In the store` ，扩展更新在 Microsoft Edge 加载项存储中可用。</span><span class="sxs-lookup"><span data-stu-id="dc13e-114">After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons store.</span></span>  
+    
+### <span data-ttu-id="dc13e-115">在认证步骤中更新扩展</span><span class="sxs-lookup"><span data-stu-id="dc13e-115">Update your extension during the certification step</span></span>  
 
-<span data-ttu-id="bb453-123">若要编辑你的提交，你可以执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="bb453-123">To edit your submission, you may follow these steps:</span></span>  
+<span data-ttu-id="dc13e-116">虽然你的扩展仍处于认证阶段，在将其发布到 Microsoft Edge 加载项存储之前，你可以更新它。</span><span class="sxs-lookup"><span data-stu-id="dc13e-116">While your extension is still in the certification stage, and before it gets published to the Microsoft Edge Add-ons store, you may update it.</span></span> <span data-ttu-id="dc13e-117">如果你的扩展未能通过认证过程，你可能需要更新你的扩展。</span><span class="sxs-lookup"><span data-stu-id="dc13e-117">If your extension fails the certification process, you may also need to update your extension.</span></span>    
 
-1.  <span data-ttu-id="bb453-124">转到 [开发人员仪表板][MicrosoftPartnerCenter]。</span><span class="sxs-lookup"><span data-stu-id="bb453-124">Go to your [developer dashboard][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="bb453-125">从 " **概述** " 页中，单击要更新的列表。</span><span class="sxs-lookup"><span data-stu-id="bb453-125">From the **Overview** page, click the listing which you want to update.</span></span>  <span data-ttu-id="bb453-126">这将显示发布期间填写的提交表单详细信息。</span><span class="sxs-lookup"><span data-stu-id="bb453-126">This brings up the submission form details which you filled out during publishing.</span></span>  
-1.  <span data-ttu-id="bb453-127">使用左侧导航栏转到 " **扩展概述** " 部分，如下所示。</span><span class="sxs-lookup"><span data-stu-id="bb453-127">Go to **Extension overview** section using the left navigation bar as shown.</span></span>  <span data-ttu-id="bb453-128">通过单击 " **取消提交** " 按钮取消当前提交。</span><span class="sxs-lookup"><span data-stu-id="bb453-128">Cancel the current submission by clicking **Cancel submission** button.</span></span>  
-1.  <span data-ttu-id="bb453-129">移至其他分区并对程序包、说明、图形资源或其他设置进行所需的更改。</span><span class="sxs-lookup"><span data-stu-id="bb453-129">Move to other section and make the changes you want to the package, description, graphic assets or other settings.</span></span>  <span data-ttu-id="bb453-130">如果更新程序包文件，请确保清单中的版本高于以前的程序包版本。</span><span class="sxs-lookup"><span data-stu-id="bb453-130">If you update the package file, make sure that the version in the manifest is higher than the previous package version.</span></span>  
-1.  <span data-ttu-id="bb453-131">进行更改后，单击 " **保存** "，然后单击 " **发布**"。</span><span class="sxs-lookup"><span data-stu-id="bb453-131">After making changes, click **Save** and then **Publish**.</span></span>  
+<span data-ttu-id="dc13e-118">若要检查扩展的状态，请导航到与合作伙伴中心上的一览 [相关联的仪表板][MicrosoftPartnerCenter]。</span><span class="sxs-lookup"><span data-stu-id="dc13e-118">To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].</span></span>  
 
+<span data-ttu-id="dc13e-119">若要编辑提交，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="dc13e-119">To edit your submission, complete the following steps.</span></span>  
+
+1.  <span data-ttu-id="dc13e-120">导航到 [开发人员仪表板][MicrosoftPartnerCenter] ，然后选择想要更新的扩展。</span><span class="sxs-lookup"><span data-stu-id="dc13e-120">Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that you wish to update.</span></span>  <span data-ttu-id="dc13e-121">将显示你在上一次提交期间填写的信息。</span><span class="sxs-lookup"><span data-stu-id="dc13e-121">The information you filled out during the previous submission is displayed.</span></span>  
+1.  <span data-ttu-id="dc13e-122">若要打开 **"扩展概述** "部分，请使用左侧导航栏。</span><span class="sxs-lookup"><span data-stu-id="dc13e-122">To open the **Extension overview** section, use the left navigation bar.</span></span>  <span data-ttu-id="dc13e-123">若要取消当前提交，请选择"**取消提交"。**</span><span class="sxs-lookup"><span data-stu-id="dc13e-123">To cancel the current submission, choose **Cancel submission**.</span></span>  
+1.  <span data-ttu-id="dc13e-124">移动到其他部分并更新扩展包或扩展的元数据。</span><span class="sxs-lookup"><span data-stu-id="dc13e-124">Move to other sections and update either the extension package or the metadata of the extension.</span></span>  <span data-ttu-id="dc13e-125">如果更新扩展包，请确保增加清单文件中的版本，以匹配自上一个程序包版本以来的更改。</span><span class="sxs-lookup"><span data-stu-id="dc13e-125">If you update the extension package, ensure that you increase the version in the manifest file to match changes since the previous package version.</span></span>  
+1.  <span data-ttu-id="dc13e-126">进行更改后，选择"**保存**  >  **发布"。**</span><span class="sxs-lookup"><span data-stu-id="dc13e-126">After making changes, choose **Save** > **Publish**.</span></span>  
+    
 > [!IMPORTANT]
-> <span data-ttu-id="bb453-132">此过程将停止并从我们的认证管道中删除当前提交，新的评论将从最新的提交开始。</span><span class="sxs-lookup"><span data-stu-id="bb453-132">This process stops and removes your current submission from our certification pipeline and a new review starts with the latest submission.</span></span>  
+> <span data-ttu-id="dc13e-127">此过程将停止并删除 Microsoft Edge 扩展认证管道中的当前提交，并从最新提交开始新评审。</span><span class="sxs-lookup"><span data-stu-id="dc13e-127">The process stops and removes your current submission from the Microsoft Edge extensions certification pipeline and a new review starts with the latest submission.</span></span>  
 
-> [!NOTE]
-> <span data-ttu-id="bb453-133">更新发布过程的持续时间范围从几小时到几天。</span><span class="sxs-lookup"><span data-stu-id="bb453-133">The duration of the update publishing process ranges from a few hours to few days.</span></span>  
+### <span data-ttu-id="dc13e-128">在认证失败后更新扩展</span><span class="sxs-lookup"><span data-stu-id="dc13e-128">Update your extension after it failed the certification</span></span>  
 
-<span data-ttu-id="bb453-134">`Status`显示列后 `In the store` ，您的扩展更新在 Microsoft Edge Addons 中可用。</span><span class="sxs-lookup"><span data-stu-id="bb453-134">Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Addons.</span></span>  
+<span data-ttu-id="dc13e-129">扩展失败认证过程后，需要更新扩展并重新提交包含反馈的扩展。</span><span class="sxs-lookup"><span data-stu-id="dc13e-129">After your extension failed the certification process, you need to update your extension and resubmit your extension that incorporates the feedback.</span></span>  
 
-## <span data-ttu-id="bb453-135">从 Microsoft Edge Addons 中删除您的扩展</span><span class="sxs-lookup"><span data-stu-id="bb453-135">Remove your Extension from Microsoft Edge Addons</span></span>  
+<span data-ttu-id="dc13e-130">若要编辑扩展，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="dc13e-130">To edit your extension, complete the following steps.</span></span>  
 
-<span data-ttu-id="bb453-136">若要从 Microsoft Edge Addons 删除扩展，请执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="bb453-136">To remove your Extension from Microsoft Edge Addons, do the following:</span></span>  
+1.  <span data-ttu-id="dc13e-131">导航到 [开发人员仪表板并选择][MicrosoftPartnerCenter] 未通过认证过程的扩展。</span><span class="sxs-lookup"><span data-stu-id="dc13e-131">Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that failed the certification process.</span></span>  
+1.  <span data-ttu-id="dc13e-132">更新扩展包或包含从认证过程收到的反馈的元数据。</span><span class="sxs-lookup"><span data-stu-id="dc13e-132">Update either the extension package or the metadata incorporating the feedback received from the certification process.</span></span>  <span data-ttu-id="dc13e-133">如果更新扩展包，请确保增加清单文件中的版本。</span><span class="sxs-lookup"><span data-stu-id="dc13e-133">If you update the extension package, ensure that you increase the version in the manifest file.</span></span>  
+1.  <span data-ttu-id="dc13e-134">进行更改后，选择"**保存**  >  **发布"。**</span><span class="sxs-lookup"><span data-stu-id="dc13e-134">After making changes, choose **Save** > **Publish**.</span></span>  
+    
+## <span data-ttu-id="dc13e-135">从 Microsoft Edge 加载项存储中删除扩展</span><span class="sxs-lookup"><span data-stu-id="dc13e-135">Remove extensions from the Microsoft Edge Add-ons store</span></span>  
 
-1.  <span data-ttu-id="bb453-137">转到 [开发人员仪表板][MicrosoftPartnerCenter]。</span><span class="sxs-lookup"><span data-stu-id="bb453-137">Go to your [developer dashboard][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="bb453-138">从 " **概述** " 页中，单击要删除的列表。</span><span class="sxs-lookup"><span data-stu-id="bb453-138">From the **Overview** page, click the listing which you want to remove.</span></span>  
-1.  <span data-ttu-id="bb453-139">打开您的列表的 **扩展概述** 页面。</span><span class="sxs-lookup"><span data-stu-id="bb453-139">Open **Extension Overview** page of your listing.</span></span>  
-1.  <span data-ttu-id="bb453-140">单击 " **取消发布**"。</span><span class="sxs-lookup"><span data-stu-id="bb453-140">Click **Unpublish**.</span></span>  <span data-ttu-id="bb453-141">此 unpublishes Microsoft Edge Addons 中的列表。</span><span class="sxs-lookup"><span data-stu-id="bb453-141">This unpublishes the listing from Microsoft Edge Addons.</span></span>  
+<span data-ttu-id="dc13e-136">若要从 Microsoft Edge 加载项存储中删除扩展，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="dc13e-136">To remove your extension from the Microsoft Edge Add-ons store, complete the following steps.</span></span>  
 
-<span data-ttu-id="bb453-142">这些步骤将从 Microsoft Edge Addons 中删除扩展，这意味着新用户无法找到你的扩展或安装它，但已安装该扩展的用户可能会继续使用它。</span><span class="sxs-lookup"><span data-stu-id="bb453-142">These steps remove the Extension from Microsoft Edge Addons, that means new users are not able to find your Extension or install it, but users who already installed the Extension may continue to use it.</span></span>  
-
-<!-- image links -->  
+1.  <span data-ttu-id="dc13e-137">导航到 [开发人员仪表板][MicrosoftPartnerCenter]。</span><span class="sxs-lookup"><span data-stu-id="dc13e-137">Navigate to your [developer dashboard][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="dc13e-138">在"仪表板"页中，选择要删除的一览。</span><span class="sxs-lookup"><span data-stu-id="dc13e-138">From the Dashboard page, choose the listing to remove.</span></span>  
+1.  <span data-ttu-id="dc13e-139">选择 **列表上的扩展** 概述。</span><span class="sxs-lookup"><span data-stu-id="dc13e-139">Choose **Extension Overview** on your listing.</span></span>  
+1.  <span data-ttu-id="dc13e-140">选择 **"取消发布** "以从 Microsoft Edge 加载项存储中删除列表。</span><span class="sxs-lookup"><span data-stu-id="dc13e-140">Choose **Unpublish** to remove the listing from the Microsoft Edge Add-ons store.</span></span>  
+    
+<span data-ttu-id="dc13e-141">您的扩展现已从 Microsoft Edge 加载项存储中删除。</span><span class="sxs-lookup"><span data-stu-id="dc13e-141">Your extension is now removed from the Microsoft Edge Add-ons store.</span></span>  <span data-ttu-id="dc13e-142">已安装扩展的用户可能会继续使用它，但新用户找不到它。</span><span class="sxs-lookup"><span data-stu-id="dc13e-142">Users who already installed your extension may continue to use it, but new users don't find it.</span></span>  
 
 <!-- links -->  
 
