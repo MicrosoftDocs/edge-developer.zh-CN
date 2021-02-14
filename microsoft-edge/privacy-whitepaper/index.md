@@ -3,7 +3,7 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, 隐私, 白皮书, 信任
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: e34228f7b094fbf11320da7d9523f04d2a550aae
-ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+ms.openlocfilehash: f62fae09c5d52dd2bdb67f0bbceb0ee394c97ea3
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297735"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327664"
 ---
 # Microsoft Edge 隐私白皮书  
 
@@ -227,7 +227,7 @@ InPrivate 浏览使用启动 InPrivate 会话的配置文件中的位置权限�
 
 可在 Windows 和 macOS 等平台上下载和安装 Microsoft Edge。  Microsoft Edge 使用更新服务使 Microsoft Edge 版本处于最新状态，并确保安全。  
 
-下载和安装 Microsoft Edge 时，将在安装过程中向 Microsoft 发送设备相关信息（如发布频道、基本硬件信息、更新标识符、设备特有的标识符，以及浏览器所特有的可重置标识符）。  设备的 IP 地址将发送到更新服务，但会清除最后一个数字来增强隐私保护。  在每个浏览会话过程中，将创建一个随机生成的新令牌来安装 Microsoft Edge 的更新版本。  令牌不与任何个人信息相关联，仅用于安装和更新过程以及改进更新服务。  
+下载并安装或更新 Microsoft Edge 时，在安装或更新过程中，将向Microsoft发送有关设备的信息，如发布渠道、基本硬件信息、更新标识符、设备特有的标识符及浏览器特有的可重置标识符。  设备的 IP 地址将发送到更新服务，但会清除最后一个数字来增强隐私保护。  在每个浏览会话过程中，将创建一个随机生成的新令牌来安装 Microsoft Edge 的更新版本。  令牌不与任何个人信息相关联，仅用于安装和更新过程以及改进更新服务。  
 
 Microsoft Edge 就安装和更新进度对 Microsoft Edge 更新服务执行 ping 操作。  如果安装或更新失败，并且启用了故障报告，则会创建一个日志并发送到 Microsoft。  有关向 Microsoft 发送故障报告的详细信息，请参阅[故障](#crashes)部分。  Microsoft 收集有关 Microsoft Edge 的下载方式、成功安装以及任何卸载的信息，以便更好地理解如何成功下载 Microsoft Edge。  
 
@@ -387,7 +387,9 @@ Microsoft Edge 可帮助你在在线购物时查找优惠券和更优惠的价�
    购物和优惠券  
 :::image-end:::  
 
-为了帮助你在在线购物和使用“集锦”时找到最佳价格，Microsoft Edge 将在本地确定你所查看的页面或集锦项目是否为产品详细信息页面。  如果你正在查看产品详细信息页面，Microsoft Edge 会将产品详细信息发送给购物服务，包括删除了个人身份信息的 URL。 我们还会将产品价格、产品图像、产品名称、评级和评论以及有关 Microsoft Edge 和你的操作系统版本的信息发送给该服务。  此数据使用随机生成的标识符通过 HTTPS 发送。  Microsoft 购物服务将为同一产品返回其他零售商的价格。  
+为了帮助在网上购物时找到最优惠的价格，Microsoft Edge会在本地确定正在查看的页面或收藏品是否是产品详情页。  如果你正在查看产品详细信息页面，Microsoft Edge 会将产品详细信息发送给购物服务，包括删除了个人身份信息的 URL。 我们还会将产品价格、产品图像、产品名称、评级和评论以及有关 Microsoft Edge 和你的操作系统版本的信息发送给该服务。  此数据使用随机生成的标识符通过 HTTPS 发送。  Microsoft 购物服务将为同一产品返回其他零售商的价格。  
+
+如果访问一个购物域，并且是一个现有的必应 Rebates用户，Microsoft Edge将把该域与cookies一起发送到Microsoft购物服务，以检索你的必应 Rebates配置文件和该域的现金回馈优惠。 如果选择激活现金返还，Microsoft Edge将把网址发送到Microsoft购物服务，以接收关联URL。 设备上可能会存储Cookies，以正确归属返利提供者。 
 
 默认情况下，将为所有用户启用购物服务。  若要更改 Microsoft Edge 中的购物设置，请导航到 `edge://settings/privacy`，然后关闭“**通过在 Microsoft Edge 中购物来节省时间和金钱**”。  InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。  
 
@@ -445,7 +447,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 ## Sync  
 
-使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  可同步浏览历史记录、收藏夹、设置、表单填充数据（地址和其他）、密码、扩展和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
+使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  你可以同步浏览历史记录、收藏夹、设置、表单填充数据 \ (地址等\)、密码、扩展、打开的选项卡和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
 :::image type="complex" source="./media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/sync.png":::
    同步设置已开启
