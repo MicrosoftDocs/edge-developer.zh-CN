@@ -267,11 +267,11 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: 发布到 Microsoft Store
           items:
-            - name: 发布扩展
-              href: extensions-chromium/publish/publish-extension.md
             - name: 开发人员注册
               href: extensions-chromium/publish/create-dev-account.md
-            - name: 更新扩展列表
+            - name: 发布扩展
+              href: extensions-chromium/publish/publish-extension.md
+            - name: 更新扩展
               href: extensions-chromium/publish/update.md
             - name: 提交状态
               href: extensions-chromium/publish/submission-states.md
