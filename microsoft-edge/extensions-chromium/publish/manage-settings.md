@@ -3,16 +3,16 @@ description: 管理 Microsoft Edge 合作伙伴中心帐户指南
 title: 管理帐户设置
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: f929d087ecde0face752a4c3ce9b5fc6bbd9919d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: f74f16692af41557a495ae73dfc20b7422d18208
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327510"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343113"
 ---
 # 管理帐户设置  
 
@@ -26,11 +26,11 @@ ms.locfileid: "11327510"
 *   指向查看信息的其他页面的链接。  
 *   编辑帐户信息。  
     
-在 **"帐户详细信息** "部分中，查看帐户的状态和类型。  此处还显示卖家 ID 和其他发布者 ID 信息。  这些值由 Microsoft 分配，用于唯一标识开发人员帐户，并且只读。  
+在 **"帐户详细信息** "部分中，查看帐户的状态和类型。  卖家 ID 和其他发布者 ID 信息也显示在"帐户详细信息 **"部分。**  这些值由 Microsoft 分配，用于唯一标识开发人员帐户，并且只读。  
 
 ## 联系人详细信息  
 
-" **联系人信息** "部分显示创建帐户时提供的详细信息。  Microsoft Edge 扩展团队使用联系人详细信息来联系你有关你的帐户的信息。  此处显示名称 Microsoft Edge 加载项存储中显示的发布者。  
+" **联系人信息** "部分显示创建帐户时提供的详细信息。  Microsoft Edge 扩展团队使用联系人详细信息来联系你有关你的帐户的信息。  还将显示名称 Microsoft Edge 加载项存储中显示的发布者"联系人信息 **"** 部分。  
   
 如果联系人信息发生更改，请编辑 **"联系人信息"** 部分。  选择 **"** 更新"，进行更改，然后选择"保存 **"。**  还可以 **选择左侧导航** 菜单中的"联系人信息"以打开 **"联系人信息"** 部分。  
 

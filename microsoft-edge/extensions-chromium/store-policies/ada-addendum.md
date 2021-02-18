@@ -1,18 +1,18 @@
 ---
-description: 边缘开发人员 ADA 附录
+description: Microsoft Edge 开发人员 ADA 附录
 title: ADA 附录
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 8f6df89fc48b3492d0e27183c90d29f79861b064
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 89d29d3772934f9e1b4545d2a9e383ed6510df40
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327672"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343085"
 ---
 # Microsoft Edge 计划用户的应用开发人员协议附录  
 
@@ -40,4 +40,4 @@ ms.locfileid: "11327672"
 
 <!-- links -->  
 
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge 加载项目录开发人员策略|Microsoft Docs"  
+[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge 加载项存储开发人员策略|Microsoft Docs"  

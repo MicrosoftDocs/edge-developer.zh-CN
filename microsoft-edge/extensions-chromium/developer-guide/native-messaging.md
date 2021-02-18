@@ -3,16 +3,16 @@ description: 本机消息传递文档
 title: 本机消息传递
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 2d629762d4c7c75832905cfbf8c2d5311191092d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: d9c2370d6a4f9f7cd25001c1c58ce266423af19a
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327699"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343064"
 ---
 # 本机消息传递  
 
@@ -123,7 +123,7 @@ ms.locfileid: "11327699"
    :::column-end:::
 :::row-end:::  
 
-旁加载扩展以测试主机的本机消息传递。  
+旁加载扩展以测试主机的本机消息。  
 若要在开发和检索期间旁加载扩展 `microsoft_catalog_extension_id` ，请完成以下步骤。  
 
 1.  导航 `edge://extensions` 到 ，然后打开开发人员模式切换按钮。  
@@ -200,7 +200,7 @@ Microsoft Edge 查询后 `HKEY_CURRENT_USER` 跟的根键 `HKEY_LOCAL_MACHINE` �
     *   Dev  
     *   Beta  
 
-    使用 Stable 渠道 `{Channel_Name}` 时，不需要。  
+    使用 Stable 渠道 `{Channel_Name}` 时，不是必需的。  
 
 ### [Linux](#tab/linux/)  
 

@@ -1,22 +1,22 @@
 ---
-description: 了解如何注册开发人员帐户以将扩展发布到 Microsoft Edge 加载项存储。
+description: 了解如何注册开发人员帐户以将扩展发布到 Microsoft Edge 加载项存储
 title: 注册为 Microsoft Edge 扩展开发人员以发布扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 8277390bb78e6692345e9c30ef26f60528655374
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 0c3b4d70da214a171b7a6ebb308e89bad2ab16c2
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327517"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343057"
 ---
 # 注册为 Microsoft Edge 扩展开发人员  
 
-若要将扩展提交到 Microsoft Edge 加载项目录，您必须在 Microsoft Edge 计划中注册为开发人员。  Microsoft Edge 计划位于合作伙伴[中心。][MicrosoftPartnerCenter]  
+若要将扩展提交到 Microsoft Edge 加载项存储，您必须在 Microsoft Edge 计划中注册为开发人员。  Microsoft Edge 计划位于合作伙伴[中心。][MicrosoftPartnerCenter]  
 
 > [!IMPORTANT]
 > 将扩展提交到 Microsoft Edge 计划时无需任何注册费用。  
@@ -57,7 +57,7 @@ ms.locfileid: "11327517"
           **帐户类型**  
        :::column-end:::
        :::column span="2":::
-          合作伙伴中心中的 Microsoft [Edge 计划][MicrosoftPartnerCenter] 同时提供个人和公司帐户。  这些帐户在下列项目符号中进行了详细介绍。  这两种帐户类型均允许您将扩展发布到 Microsoft Edge 加载项目录。  
+          合作伙伴中心中的 Microsoft [Edge 计划][MicrosoftPartnerCenter] 同时提供个人和公司帐户。  这些帐户在下列项目符号中进行了详细介绍。  这两种帐户类型都允许您将扩展发布到 Microsoft Edge 加载项存储。  
           
           > [!IMPORTANT]
           > 注册后，你无法更改此字段的值。  
@@ -75,7 +75,7 @@ ms.locfileid: "11327517"
           **发布者显示名称**  
        :::column-end:::
        :::column span="2":::
-          此字段包含在 Microsoft Edge 加载项目录中显示的名称。  只有在名称可用且您具有使用该名称的权利时，才能使用该名称。  公司帐户必须使用组织的注册公司名称。  
+          此字段包含 Microsoft Edge 加载项存储中显示的名称。  只有在名称可用且您具有使用该名称的权利时，才能使用该名称。  公司帐户必须使用组织的注册公司名称。  
           
           > [!NOTE]
           > 此字段的最大长度为 50 个字符。  

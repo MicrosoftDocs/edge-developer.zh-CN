@@ -1,18 +1,18 @@
 ---
-description: 将 Chrome 扩展移植到 Microsoft Edge 的过程。
+description: 将 Chrome 扩展移植到 Microsoft Edge 的过程
 title: 将 Chrome 扩展移植到 Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6be7d788ac22232475e278ae9a5b04de9b6e17f7
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327692"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343134"
 ---
 # 移植扩展  
 
@@ -27,7 +27,7 @@ Microsoft Edge 允许你以最少的更改移植 Chrome 扩展。  Chrome 支持
     
 1.  在清单文件中，将 `update_URL` 字段设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  该值指向 Microsoft Edge 加载项存储中的扩展文件，并允许 `.crx` Microsoft Edge 检查扩展更新。  
 1.  如果在扩展的名称或说明中使用，则使用重新 `Chrome` 命名扩展 `Microsoft Edge` 。  若要通过认证过程，需要更改。  
-1.  通过旁加载扩展，测试扩展以检查它在 Microsoft Edge [中是否正常工作][ExtensionsGettingStartedExtensionSideloading]。  
+1.  通过旁加载扩展测试扩展以检查它在 Microsoft Edge [中是否正常工作][ExtensionsGettingStartedExtensionSideloading]。  
 1.  如果面临任何问题，可以使用 DevTools 在 Microsoft Edge 中调试扩展， [或联系我们][mailtoExtensionMicrosoft]。  
 1.  按照 [发布指南在][ExtensionsPublishPublishExtension] Microsoft Edge 加载项存储上发布扩展。  
     

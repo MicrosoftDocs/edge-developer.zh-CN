@@ -1,30 +1,30 @@
 ---
-description: 将 Microsoft Edge (Chromium) 扩展发布到 Microsoft Edge 加载项应用商店
+description: 将 Microsoft Edge (Chromium) 扩展发布到 Microsoft Edge 加载项存储
 title: 发布扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: b03a74d1faef914298729020e3c9ca4d465e0443
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6784995f3e06bb6786315ea1040f9673dcaa76dd
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327673"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343127"
 ---
 # 发布扩展  
 
-开发和测试扩展后，即可分发扩展。 使用 Microsoft Edge 加载项目录分发扩展。  若要为 Microsoft Edge 用户释放现有 Chromium 扩展，请导航 [到移植现有的 Chromium 扩展][PortChromiumExtension]。  
+开发和测试扩展后，即可分发扩展。 使用 Microsoft Edge 加载项存储分发扩展。  若要为 Microsoft Edge 用户释放现有 Chromium 扩展，请导航 [到移植现有的 Chromium 扩展][PortChromiumExtension]。  
 
-将扩展发布到 Microsoft Edge 加载项目录，以扩大扩展范围，使其可供 Microsoft Edge 用户使用。  本文提供将扩展提交到 Microsoft Edge 加载项目录的过程。  
+将扩展发布到 Microsoft Edge 加载项存储，以扩大扩展范围，使其可供 Microsoft Edge 用户使用。  本文提供将扩展提交到 Microsoft Edge 加载项存储的过程。  
 
 ## 开始之前  
 
 你应该准备好扩展的一个工作原型。  若要了解如何创建扩展，请参阅 [入门教程][ExtensionsGettingStarted]。  
 
-若要将扩展发布到 Microsoft Edge 加载项目录，请使用合作伙伴中心上的活动开发人员 [帐户][MicrosoftPartnerCenter]。  如果你没有开发人员帐户，请创建新的开发人员帐户。  若要打开新的开发人员帐户并注册到 Microsoft Edge 加载项计划，请导航到 [开发人员注册][DeveloperRegistration]。  
+若要将扩展发布到 Microsoft Edge 加载项存储，请使用合作伙伴中心上的活动开发人员 [帐户][MicrosoftPartnerCenter]。  如果你没有开发人员帐户，请创建新的开发人员帐户。  若要打开新的开发人员帐户并注册到 Microsoft Edge 加载项计划，请导航到 [开发人员注册][DeveloperRegistration]。  
 
 创建表示扩展包的 zip 文件。  扩展包必须包含以下文件。  
 
@@ -56,13 +56,13 @@ ms.locfileid: "11327673"
 
 ##### 可见性  
 
-选择以下可见性选项之一，以定义你的扩展在 Microsoft Edge 加载项目录中是否可发现。  
+选择以下可见性选项之一，以定义你的扩展在 Microsoft Edge 加载项存储中是否可发现。  
 
 *   `Public` \ (default\)   
-    公共允许所有人通过搜索、在 Microsoft Edge 加载项目录中浏览，或者使用 Microsoft Edge 加载项存储中扩展的一览 URL 来发现扩展。  在合作伙伴中心仪表板的"扩展概述"页上，列表 **URL** 可用。  
+    公共允许所有人通过搜索、在 Microsoft Edge 加载项存储中浏览，或者使用 Microsoft Edge 加载项存储中扩展的一览 URL 来发现扩展。  在合作伙伴中心仪表板的"扩展概述"页上，列表 **URL** 可用。  
     
 *   `Hidden`  
-    隐藏将删除搜索结果或 Microsoft Edge 加载项目录中的浏览扩展。  若要在 Microsoft Edge 加载项存储中分发隐藏扩展，必须与客户共享扩展的一览 URL。  
+    隐藏将删除搜索结果或 Microsoft Edge 加载项存储中的浏览扩展。  若要在 Microsoft Edge 加载项存储中分发隐藏扩展，必须与客户共享扩展的一览 URL。  
     
 > [!NOTE]
 > 你可以将扩展的可见性从 **"** 公共"更改为 **"隐藏"。**  当可见性设置为公共时安装扩展的用户将保留对扩展的访问权限，并接收通过 Microsoft Edge 加载项网站提供的任何更新。  
@@ -72,22 +72,22 @@ ms.locfileid: "11327673"
 定义计划提供扩展的特定市场。  市场默认设置是所有市场，包括以后添加的任何未来市场。  若要选择特定市场，请选择"**更改市场"。**  切换个别市场以排除每个市场，或选择****"全部取消选择"，然后添加你选择的个别市场。  
 
 > [!NOTE]
-> 你可以更改提供扩展的市场。  在用户市场中提供扩展时安装扩展的用户将保留对扩展的访问权限。  但是，用户无法访问提交到 Microsoft Edge 加载项目录的任何未来更新。  
+> 你可以更改提供扩展的市场。  在用户市场中提供扩展时安装扩展的用户将保留对扩展的访问权限。  但是，用户无法访问提交到 Microsoft Edge 加载项存储的任何未来更新。  
 
 选择 **"** 保存"以继续" **属性"** 部分。  
 
 #### 步骤 4：选择扩展的属性  
 
-在 **"属性"** 页上，输入以下信息以指定扩展的属性。  这些属性向 Microsoft Edge 加载项目录中的用户显示。  
+在 **"属性"** 页上，输入以下信息以指定扩展的属性。  这些属性向 Microsoft Edge 加载项存储中的用户显示。  
 
 | 扩展属性名称 | 描述 |  
 |:--- |:--- |  
 | Category \ (required\)  | 最能描述扩展的类别。  在正确的类别中列出你的扩展可帮助用户轻松找到你的扩展并了解有关它更多内容。  |  
 | 隐私策略要求 \ (必需\)  | 指示您的分机是否访问、收集或传输任何个人信息。  如果选择"是"并且未提供，你的扩展**** 可能无法通过认证步骤 `Privacy policy URL` 。  |  
-| 隐私策略 URL | 一个有效的隐私策略 URL，用于传达你的扩展如何遵循隐私法律和法规。  你负责确保你的扩展遵循隐私法律和法规。  如果扩展正在访问、传输或收集任何个人信息，你还需要负责提供隐私策略 URL。  若要确定扩展是否要求隐私策略，请导航到 [Microsoft Edge][MicrosoftAppDeveloperAgreement] 开发人员协议和 [Microsoft Edge 加载项目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
-| 网站 URL | 提供有关扩展的其他信息的网页。  必须指向您自己的网站上的页面，而不是 Microsoft Edge 加载项目录中扩展 `Website URL` 的 Web 列表。  帮助 `Website URL` 用户了解有关扩展、其功能和任何其他相关信息的更多信息。  |  
+| 隐私策略 URL | 一个有效的隐私策略 URL，用于传达你的扩展如何遵循隐私法律和法规。  你负责确保你的扩展遵循隐私法律和法规。  如果扩展正在访问、传输或收集任何个人信息，你还需要负责提供隐私策略 URL。  若要确定扩展是否要求隐私策略，请导航到 [Microsoft Edge 开发人员][MicrosoftAppDeveloperAgreement] 协议 [和 Microsoft Edge 加载项存储开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
+| 网站 URL | 提供有关扩展的其他信息的网页。  必须指向您自己的网站上的页面，而不是 Microsoft Edge 加载项存储中扩展的 Web `Website URL` 列表。  帮助 `Website URL` 用户了解有关扩展、其功能和任何其他相关信息的更多信息。  |  
 | 支持联系人详细信息 | 支持网页的 URL，或联系支持团队的电子邮件地址。  |  
-| 成熟内容 | 用于指定扩展是否包含成熟内容的复选框。  扩展分级有助于确定扩展的目标受众的适当年龄组。  若要帮助确定扩展是否具有成熟内容，请导航到 [Microsoft Edge 加载项目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
+| 成熟内容 | 用于指定扩展是否包含成熟内容的复选框。  扩展分级有助于确定扩展的目标受众的适当年龄组。  若要帮助确定扩展是否具有成熟内容，请导航到 [Microsoft Edge 加载项应用商店开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
 
 选择 **"** 保存"以继续" **应用商店一览"** 部分。  
 
@@ -96,13 +96,13 @@ ms.locfileid: "11327673"
 
 #### 步骤 5：添加扩展的应用商店一览详细信息  
 
-以下部分中提供的信息向查看 Microsoft Edge 加载项目录列表的用户显示。  即使某些字段是可选的，您也应提供尽可能多的信息。  若要在应用商店中列出扩展，需要以下详细信息。  
+以下部分中提供的信息向查看 Microsoft Edge 加载项商店一览的用户显示。  即使某些字段是可选的，您也应提供尽可能多的信息。  若要在应用商店中列出扩展，需要以下详细信息。  
 
 *   **扩展** 包中每种语言的说明。  
 *   **扩展包** 中每种语言的扩展存储徽标。  
     
 > [!NOTE]
-> 必须至少为扩展 zip 包中提到的一种语言填写所需的最低应用商店一览详细信息。  若要在 Microsoft Edge 加载项目录上的应用商店一览中添加或删除语言，请使用"应用商店一**** 览"页上的"添加语言 **"下拉列表。**  此外，你可以选择使用语言详细信息页面上的重复功能按钮跨其他语言复制资源。  
+> 必须至少为扩展 zip 包中提到的一种语言填写所需的最低应用商店一览详细信息。  若要在 Microsoft Edge 加载项商店的应用商店一览中添加或删除语言，请使用"应用商店一**** 览"页上的"添加语言 **"下拉列表。**  此外，你可以选择使用语言详细信息页面上的重复功能按钮跨其他语言复制资源。  
 
 | 语言详细信息属性名称 | 描述 |  
 |:--- |:--- |  
@@ -114,13 +114,13 @@ ms.locfileid: "11327673"
 | 大型促销磁贴 \ (可选\)  | `Large promotion tiles` 在 Microsoft Edge 加载项网站中更醒目地在应用商店中用于功能扩展。  图像（如果已提交）对用户可见。  PNG 文件的大小必须为 1400 x 560 像素。  此外，你可以选择使用重复按钮将资源从一种语言复制到所有其他语言。  在上传该语言的促销磁贴后，可以在该字段后找到该按钮。  |  
 | YouTube 视频 URL \ (可选\)  | 可以包括扩展的促销 YouTube 视频。  视频 `YouTube video URL` 将显示在扩展的应用商店一览页面上。  |  
 | 简短说明 \ (必填\)  | 若要编辑 `short description` ，必须更新扩展包的清单文件中的描述字段，然后重新加载它。  |  
-| 搜索词 \ (可选\)  | `Search terms` 是单个字词或短语，可帮助用户在 Microsoft Edge 加载项目录中搜索时发现扩展。  搜索词不会向用户显示。  |  
+| 搜索词 \ (可选\)  | `Search terms` 是单个字词或短语，可帮助用户在 Microsoft Edge 加载项存储中搜索时发现扩展。  搜索词不会向用户显示。  |  
 
 ##### YouTube 视频 URL 要求  
 
 确保视频满足以下要求。  
 
-*   验证 YouTube 视频的内容是否遵循 [Microsoft Edge 加载项目录开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  
+*   验证 YouTube 视频的内容是否遵循 [Microsoft Edge 加载项存储开发人员策略][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  
 *   关闭视频上的广告。  有关详细信息，请[导航到"][GoogleYoutubeAnswer2531367Topic7072227]在嵌入式视频上设置默认广告格式[和广告"。][GoogleYoutubeAnswer132596]  
 *   为视频启用嵌入。  有关详细信息，请导航到" [在播放列表&视频][GoogleYoutubeAnswer171780]。  
     
@@ -154,9 +154,9 @@ ms.locfileid: "11327673"
 *   如果你的提交是对现有扩展的更新，请包含有关对扩展所做的更改的信息。  
 *   测试人员必须了解的有关你的提交的其他信息。  
 
-提供信息后，选择" **发布** "将扩展提交到 Microsoft Edge 加载项目录。  你的提交将继续执行认证步骤。  提交后，认证过程最多可能需要 7 个工作日。  
+提供信息后，选择" **发布** "将扩展提交到 Microsoft Edge 加载项存储。  你的提交将继续执行认证步骤。  提交后，认证过程最多可能需要 7 个工作日。  
 
-当你的提交通过认证时，你的扩展将发布到 Microsoft Edge 加载项目录中。  合作伙伴中心仪表板中扩展的状态将更改为 `In the Store` 。  
+当你的提交通过认证时，你的扩展将发布到 Microsoft Edge 加载项存储中。  合作伙伴中心仪表板中扩展的状态将更改为 `In the Store` 。  
 
 > [!NOTE]
 > 如果你在提交或注册过程中遇到任何问题，请向扩展新支持请求提交支持票证[][ExtensionsSupportForm]，或向用户[ext_dev_support@microsoft.com。][MailtoExtDevSupportMicrosoftCom]  
@@ -166,7 +166,7 @@ ms.locfileid: "11327673"
 [ExtensionsGettingStarted]: ../getting-started/index.md "Microsoft Edge (Chromium) Extensions |Microsoft Docs"  
 [DeveloperRegistration]: ./create-dev-account.md "注册为 Microsoft Edge 扩展开发人员|Microsoft Docs"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "将 Chromium 扩展移植到 Microsoft Edge |Microsoft Docs"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge 加载项目录开发人员策略|Microsoft Docs"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge 加载项存储开发人员策略|Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议|Microsoft Docs"  
 

@@ -1,34 +1,34 @@
 ---
-description: Microsoft Edge 加载项目录开发人员策略。
-title: Microsoft Edge 加载项目录开发人员策略
+description: Microsoft Edge 加载项存储开发人员策略
+title: Microsoft Edge 加载项存储开发人员策略
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 5c2a8dd816a28a35b6e7b725d5106814e401f6ec
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: cc34a95e08d01ebee54581222d0eb9fefa3dc458
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327643"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343078"
 ---
-# Microsoft Edge 加载项目录开发人员策略  
+# Microsoft Edge 加载项存储开发人员策略  
 
 ## 本文档的简介和目标  
 
-感谢你有兴趣开发 Microsoft Edge 加载项目录的扩展。  Microsoft Edge 加载项目录开发人员策略 \ (加载项目录开发人员策略\) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类[][MicrosoftPartnerCenter]扩展。  
+感谢你有兴趣开发 Microsoft Edge 加载项存储的扩展。  Microsoft Edge 加载项存储开发人员策略 \ (加载项应用商店开发人员策略\) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供[][MicrosoftPartnerCenter]此类扩展。  
 
 ## 原则  
 
 下面是一些入门准则：  
 
-*   应在 Microsoft Edge 的扩展中提供独特且不同的值。  提供从 Microsoft Edge 加载项目录 \ (Microsoft Edge 加载项\) 下载扩展的极具吸引力的原因。  
+*   应在 Microsoft Edge 的扩展中提供独特且不同的值。  提供从 Microsoft Edge 加载项存储 \ (Microsoft Edge 加载项\) 下载扩展的极具吸引力) 。  
 *   不得在扩展功能、谁提供扩展等方面误导我们的联合用户。  
 *   不得尝试欺骗用户、系统或生态系统。  我们的 Microsoft Edge 加载项中不存在任何类型的欺诈;是否进行评级和审核操作、信用卡欺诈或其他欺诈活动。  
     
-遵循 Microsoft Edge 加载项存储开发人员策略应有助于做出选择，以增强扩展的吸引力和受众。  
+遵循 Microsoft Edge 加载项应用商店开发人员策略应有助于做出选择，以增强扩展的吸引力和受众。  
 
 扩展对于亿万用户的体验至关重要。  我们期待体验你创建并很高兴帮助你向世界提供扩展。  
 
@@ -211,7 +211,7 @@ ms.locfileid: "11327643"
 
 #### 1.9.4 通知的用途  
 
-从扩展发送的通知必须与该扩展或你在 Microsoft Edge 加载项目录中发布的其他扩展相关，并且不得包含与扩展不相关的任何类型的促销邮件。  
+从扩展发送的通知必须与该扩展或你在 Microsoft Edge 加载项存储中发布的其他扩展相关，并且不得包含与扩展不相关的任何类型的促销邮件。  
 
 ### 1.10 广告行为准则和内容  
 
