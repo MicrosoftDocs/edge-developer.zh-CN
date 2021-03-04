@@ -7,18 +7,18 @@ ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: f56586fa77e34da7884d9d7c565b8cbcc4106c4a
+ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313084"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387286"
 ---
-# DevTools 中的新增功能 (Microsoft Edge 88)  
+# <a name="whats-new-in-devtools-microsoft-edge-88"></a>DevTools 中的新增功能 (Microsoft Edge 88)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## Microsoft Edge 和 Microsoft Edge 驱动程序现在可在 Linux 上使用  
+## <a name="microsoft-edge-and-microsoft-edge-driver-now-available-on-linux"></a>Microsoft Edge 和 Microsoft Edge 驱动程序现在可在 Linux 上使用  
 
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->  
 <!-- Subtitle: Get Microsoft Edge Dev on Ubuntu, Debian, Fedora, and openSUSE distributions and start automating in CI/CD environments with Microsoft Edge Driver. -->  
@@ -31,7 +31,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    Microsoft Edge Linux 版中的 DevTools  
 :::image-end:::  
 
-## “问题”工具中改进的 Web 提示和平台提示  
+## <a name="improved-webhint-and-platform-tips-in-the-issues-tool"></a>“问题”工具中改进的 Web 提示和平台提示  
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
@@ -57,7 +57,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    **问题** 工具  
 :::image-end:::  
 
-## 复合层现在采用 3D 视图  
+## <a name="composited-layers-are-now-in-3d-view"></a>复合层现在采用 3D 视图  
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
@@ -70,7 +70,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    **复合层** 窗格  
 :::image-end:::  
 
-## “样式”窗格中的 CSS 变量定义  
+## <a name="css-variable-definitions-in-styles-pane"></a>“样式”窗格中的 CSS 变量定义  
 
 <!-- Title: Jump to CSS variable definitions  -->  
 <!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->  
@@ -93,7 +93,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    :::column-end:::
 :::row-end:::  
 
-## 服务工作线程调试改进  
+## <a name="service-worker-debugging-improvements"></a>服务工作线程调试改进  
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
@@ -102,7 +102,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 请求路由显示基于通过服务工作线程运行的网络请求的 `startup` 和 `fetch` 事件。  通过 **应用程序** 或 **网络工具** 访问时间线。  如果遇到服务工作线程问题，并且希望查看 `startup` 或 `fetch` 事件是否出错，时间线会有所帮助。  
 
-### 应用程序工具  
+### <a name="application-tool"></a>应用程序工具  
 
 <!-- Title: Open Network tool from the Service Workers pane  -->  
 <!-- Subtitle: Display additional context when debugging a service worker.  -->  
@@ -128,7 +128,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
        关闭 **工具箱** 以返回 **网络** 工具  
     :::image-end:::  
     
-### 网络工具  
+### <a name="network-tool"></a>网络工具  
 
 调试通过服务工作线程运行的网络请求。  您还可以从 **应用程序** 工具打开网络请求。  对于每个请求，DevTools 在 [计时][DevtoolsNetworkReferenceViewTimingBreakdownRequest] 窗格中显示以下信息。  
 
@@ -141,7 +141,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    **计时** 窗格  
 :::image-end:::  
 
-### 源工具  
+### <a name="sources-tool"></a>源工具  
 
 在旧版 Microsoft Edge 中，调用堆栈的深度级别仅限于服务工作线程中的 JavaScript 代码。  在 Microsoft Edge 88 中，调用堆栈现在显示通过服务工作线程运行的请求发起程序。  
 
@@ -160,7 +160,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    :::column-end:::
 :::row-end:::  
 
-## 复制网络请求的属性值  
+## <a name="copy-property-value-of-a-network-request"></a>复制网络请求的属性值  
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->  
 <!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the contextual menu.  -->  
@@ -185,7 +185,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    :::column-end:::
 :::row-end:::  
 
-## 自定义多键连发键盘快捷方式  
+## <a name="customize-multi-press-keyboard-shortcuts"></a>自定义多键连发键盘快捷方式  
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->  
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->  
@@ -200,7 +200,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    多键连发键盘快捷方式  
 :::image-end:::  
 
-## DevTools 现已匹配浏览器语言  
+## <a name="devtools-now-match-browser-language"></a>DevTools 现已匹配浏览器语言  
 
 在 Microsoft Edge 版本 87 中，如果在 [DevTools 设置][DevtoolsCustomizeIndexSettings] 中打开 **匹配浏览器语言** 设置，则 DevTools 不会匹配浏览器语言。  在 Microsoft Edge 版本 88 中，如果打开 **匹配浏览器语言** 设置，则 DevTools 现在与浏览器语言匹配。  有关 **Match 浏览器语言** DevTools 设置的详细信息，请导航至 [更改 DevTools 语言设置][DevtoolsCustomizeLocalization]。  
 
@@ -208,11 +208,11 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    **匹配浏览器语言** DevTools 设置（日语）  
 :::image-end:::  
 
-## 来自 Chromium 项目的公告  
+## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### 全新 CSS 角度可视化工具  
+### <a name="new-css-angle-visualization-tools"></a>全新 CSS 角度可视化工具  
 
 现在，DevTools 可以更好地支持 CSS 角度调试。  如果页面上 HTML 元素应用 CSS 角度，**样式** 工具中该角度旁边会显示一个时钟图标。  若要切换时钟覆盖层，请选择时钟图标。  若要更改角度，请选择时钟中的任何位置或拖动指针。  若要更改角度值，还可使用鼠标和键盘快捷方式。  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  若要在 Chromium 开源项目中查看此功能实时更新，请导航到“问题” [1126178][CR1126178] 和 [1138633][CR1138633]。  
 
@@ -222,13 +222,13 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```
+```  
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS 角度" lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS 角度  
 :::image-end:::  
 
-### 模拟存储窗格中的存储配额大小  
+### <a name="simulate-storage-quota-size-in-the-storage-pane"></a>模拟存储窗格中的存储配额大小  
 
 现在，可以在 **存储** 窗格中重写存储配额大小。  此功能允许你模拟不同的设备，并测试网站或应用在低磁盘可用性场景中的行为。  若要模拟存储配额，请完成以下操作。  
 
@@ -242,7 +242,7 @@ background: linear-gradient(100deg, lightblue, pink);
    模拟存储配额大小  
 :::image-end:::  
 
-### 报告网络工具中的 CORS 错误  
+### <a name="report-cors-errors-in-the-network-tool"></a>报告网络工具中的 CORS 错误  
 
 通过导航至 [CORS 错误演示][GlitchCorsErrors] 尝试此功能。  打开 **网络** 工具，刷新页面，并观察失败的 CORS 网络请求。  状态列显示 **CORS 错误**。  将鼠标悬停在错误上时，工具提示现在将显示错误代码。  在 Microsoft Edge 版本 87 及更早版本中，DevTools 只显示CORS 错误的一般 **（失败）** 状态。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至问题[1141824][CR1141824]。  
 
@@ -250,9 +250,9 @@ background: linear-gradient(100deg, lightblue, pink);
    CORS 错误  
 :::image-end:::  
 
-### 框架详细信息视图更新  
+### <a name="frame-details-view-updates"></a>框架详细信息视图更新  
 
-#### 框架详细信息视图中的跨域隔离信息  
+#### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>框架详细信息视图中的跨域隔离信息  
 
 现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 区域显示 `SharedArrayBuffer` \ (\) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated]。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899][CR1139899]。  
 
@@ -260,7 +260,7 @@ background: linear-gradient(100deg, lightblue, pink);
    跨域信息  
 :::image-end:::  
 
-#### 框架详细信息视图中的新 Web 工作线程信息  
+#### <a name="new-web-workers-information-in-the-frame-details-view"></a>框架详细信息视图中的新 Web 工作线程信息  
 
 现在，DevTools 在相关的父框架下组织 Web 工作线程。  例如，如果 `someName` 框架创建 `worker.js`，则 `worker.js` 出现在 **框架** 列表中的 `someName` 之下。  若要查看 web 工作线程的详细信息，请完成以下操作。  
 
@@ -275,7 +275,7 @@ background: linear-gradient(100deg, lightblue, pink);
    Web 工作线程信息  
 :::image-end:::  
 
-#### 显示已打开窗口的原框架详细信息  
+#### <a name="display-opener-frame-details-for-opened-windows"></a>显示已打开窗口的原框架详细信息  
 
 现在，DevTools 在相关的父 [框架][MdnWindowFrames] 下组织已打开的 [窗口][MdnWindowConstructors]。  例如，如果 `top` 框架打开 `Window` 到 `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`， 则框架 `Window` 将显示在 **列表** 中的 `top` 之下。  
 
@@ -297,7 +297,7 @@ background: linear-gradient(100deg, lightblue, pink);
    已打开框架的详细信息  
 :::image-end:::  
 
-### 复制网络发起程序堆栈跟踪  
+### <a name="copy-stacktrace-for-network-initiator"></a>复制网络发起程序堆栈跟踪  
 
 若要将堆栈跟踪复制到剪贴板，请完成以下操作。  
 
@@ -310,7 +310,7 @@ background: linear-gradient(100deg, lightblue, pink);
    复制堆栈跟踪  
 :::image-end:::  
 
-### 鼠标悬停时预览 Wasm 变量值  
+### <a name="preview-wasm-variable-value-on-mouseover"></a>鼠标悬停时预览 Wasm 变量值  
 
 代码暂停时，使用此功能检查 WebAssembly\(Wasm\) 变量的值。  若要显示变量的当前值，请将鼠标悬停在变量上。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1058836][CR1058836] 和 [1071432][CR1071432]。  
 
@@ -318,7 +318,7 @@ background: linear-gradient(100deg, lightblue, pink);
    鼠标悬停时预览 Wasm 变量  
 :::image-end:::  
 
-### 文件和内存大小的一致度量单位  
+### <a name="consistent-units-of-measurement-for-sizes-of-files-and-memory"></a>文件和内存大小的一致度量单位  
 
 现在，DevTools 始终使用 `kB` 显示文件和内存的大小。  以前的 DevTools 混合 `kB` 和 `KiB`。
 
@@ -327,11 +327,11 @@ background: linear-gradient(100deg, lightblue, pink);
     
 例如，**网络** 工具以前在标签中使用 `kB`，但在计算中使用 `KiB`。  您的反馈表明这种前后矛盾导致混淆。  若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1035309][CR1035309]。  
 
-## 下载 Microsoft Edge 预览频道  
+## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道  
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [Microsoft Edge][MicrosoftEdgePreviewChannels] 预览频道作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [Microsoft Edge][MicrosoftEdgePreviewChannels] 预览通道作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
 
-## 联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -372,7 +372,7 @@ background: linear-gradient(100deg, lightblue, pink);
 [CR1035309]: https://crbug.com/1035309 "问题 1035309：DevTools 应始终使用 MB 而不是 mebibyte 表示兆字节 | Chromium 漏洞"  
 [CR1051466]: https://crbug.com/1051466 "问题 1051466：在 DevTools 中支持 COOP/COEP 调试 | Chromium 漏洞"  
 [CR1058836]: https://crbug.com/1058836 "问题 1058836：关于 Wasm 调试的 UX 问题 | Chromium 漏洞"  
-[CR1071432]: https://crbug.com/1071432 "问题 1071432：☂︝ Wasm 基本开发人员体验|Chromium Bug"  
+[CR1071432]: https://crbug.com/1071432 "问题 1071432：☂️ Wasm 基本开发人员体验 | Chromium Bug"  
 [CR1107766]: https://crbug.com/1107766 "问题 1107766：显示有关框架树中的 "window.open ()" 生成的框架的信息 |Chromium 漏洞"  
 [CR1122507]: https://crbug.com/1122507 "问题 1122507：框架树视图中的 Surface 工作线程信息 | Chromium 漏洞"  
 [CR1126178]: https://crbug.com/1126178 "问题 1126178：☂ DevTools：CSS <类型> 组件 | Chromium 漏洞"  
