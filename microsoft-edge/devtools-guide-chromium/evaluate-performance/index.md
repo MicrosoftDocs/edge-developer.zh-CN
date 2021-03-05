@@ -162,7 +162,7 @@ ms.locfileid: "11124983"
 
 1.  当没有选择事件时，“**摘要**”选项卡会显示活动的分类。  页面大部分时间都在渲染。  由于性能是减少工作量的艺术，因此你的目标是减少花费在进行绘制工作上的时间。  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text=""摘要" 选项卡" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="摘要 选项卡" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
        **摘要** 选项卡  
     :::image-end:::  
     

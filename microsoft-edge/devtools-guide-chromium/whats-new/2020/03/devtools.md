@@ -78,7 +78,7 @@ Chromium 问题 [#1056348][CR1056348]
 
 [颜色选取器][DevtoolsCssReferenceColorPicker] 是 "[元素][DevtoolsCssIndex]" 面板中的 GUI 用于更改 `color` 和 `background-color` 声明。  在早期版本的 Microsoft Edge 中，无法使用键盘导航 [颜色选取器][DevtoolsCssReferenceColorPicker] 的 **阴影** 部分。  
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="现在，你可以使用键盘在颜色选取器的 "阴影" 部分移动选取器" lightbox="../../media/2020/03/color-picker.msft.png":::
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="现在，你可以使用键盘在颜色选取器的 阴影 部分移动选取器" lightbox="../../media/2020/03/color-picker.msft.png":::
    现在，你可以使用键盘在 [颜色选取器][DevtoolsCssReferenceColorPicker]的**阴影** 部分移动选取器  
 :::image-end:::  
 
@@ -90,13 +90,13 @@ Chromium 问题 [#963183][CR963183]
 
 在 Microsoft Edge 81 及更早版本中，在 "[元素][DevtoolsCssIndex]" 面板中的 **"属性"选项卡**因页面刷新而损坏。  刷新页面时，**"属性" 选项卡** 未填充当前所选元素的属性。  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="在 Microsoft Edge 81 及更早版本中，页面刷新后，"属性" 选项卡为空白" lightbox="../../media/2020/03/properties-in-81.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="在 Microsoft Edge 81 及更早版本中，页面刷新后，属性 选项卡为空白" lightbox="../../media/2020/03/properties-in-81.msft.png":::
    在 Microsoft Edge 81 及更早版本中，在页面刷新后，**"属性" 选项卡** 是空白的  
 :::image-end:::  
 
 在 Microsoft Edge 83 中，你现在可以在 **"属性" 选项卡**中页面刷新后看到当前所选元素的属性。  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="在 Microsoft Edge 83 中，"属性" 选项卡显示页面刷新后当前所选元素的属性" lightbox="../../media/2020/03/properties-in-82.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="在 Microsoft Edge 83 中，属性 选项卡显示页面刷新后当前所选元素的属性" lightbox="../../media/2020/03/properties-in-82.msft.png":::
    在 Microsoft Edge 83 中，**"属性" 选项卡** 显示页面刷新后当前所选元素的属性  
 :::image-end:::  
 
@@ -110,7 +110,7 @@ Chromium 问题 [#1050999][CR1050999]
 
 对缩小文件进行更改后，**"更改" 工具** 可用于水平滚动以查看所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，你可以使用箭头键水平滚动，在 "更改" 工具中查看你的缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，你可以使用箭头键水平滚动，在 更改 工具中查看你的缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
    在 Microsoft Edge 83 中，可使用箭头键水平滚动，查看 **"更改" 工具**中对缩小代码所做的更改  
 :::image-end:::  
 
