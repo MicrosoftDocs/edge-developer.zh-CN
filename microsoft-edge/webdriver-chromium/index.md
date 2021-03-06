@@ -8,85 +8,85 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: b3b8a4ef2174c7f313fe9ee71bedbdf5e2f9b771
-ms.sourcegitcommit: f95812c4e1b7277f67c6c4891be2779cc1b5bdf1
+ms.openlocfilehash: 87855fad02243a9d86053e43b5523013644f7e35
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "11343786"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398831"
 ---
-# <span data-ttu-id="db79c-104">使用 WebDriver (Chromium) 实现测试自动化</span><span class="sxs-lookup"><span data-stu-id="db79c-104">Use WebDriver (Chromium) for test automation</span></span>  
+# <a name="use-webdriver-chromium-for-test-automation"></a><span data-ttu-id="84da0-104">使用 WebDriver (Chromium) 实现测试自动化</span><span class="sxs-lookup"><span data-stu-id="84da0-104">Use WebDriver (Chromium) for test automation</span></span>  
 
-<span data-ttu-id="db79c-105">WebDriver 允许开发人员创建模拟用户交互的自动测试。</span><span class="sxs-lookup"><span data-stu-id="db79c-105">WebDriver allows developers to create automated tests that simulate user interaction.</span></span>  <span data-ttu-id="db79c-106">WebDriver 测试和模拟与 JavaScript 单元测试有以下不同。</span><span class="sxs-lookup"><span data-stu-id="db79c-106">WebDriver tests and simulations differ from JavaScript unit tests in the following ways.</span></span>  
+<span data-ttu-id="84da0-105">WebDriver 允许开发人员创建模拟用户交互的自动测试。</span><span class="sxs-lookup"><span data-stu-id="84da0-105">WebDriver allows developers to create automated tests that simulate user interaction.</span></span>  <span data-ttu-id="84da0-106">WebDriver 测试和模拟与 JavaScript 单元测试有以下不同。</span><span class="sxs-lookup"><span data-stu-id="84da0-106">WebDriver tests and simulations differ from JavaScript unit tests in the following ways.</span></span>  
 
-*   <span data-ttu-id="db79c-107">访问在浏览器中运行的 JavaScript 不可用的功能和信息。</span><span class="sxs-lookup"><span data-stu-id="db79c-107">Accesses functionality and information not available to JavaScript running in browsers.</span></span>  
-*   <span data-ttu-id="db79c-108">更精确地模拟用户事件或操作系统级事件。</span><span class="sxs-lookup"><span data-stu-id="db79c-108">Simulates user events or OS-level events more accurately.</span></span>  
-*   <span data-ttu-id="db79c-109">在单个测试会话中管理多个窗口、选项卡和网页。</span><span class="sxs-lookup"><span data-stu-id="db79c-109">Manages multiple windows, tabs, and webpages in a single test session.</span></span>  
-*   <span data-ttu-id="db79c-110">在特定的计算机上运行 Microsoft Edge 的多个会话。</span><span class="sxs-lookup"><span data-stu-id="db79c-110">Runs multiple sessions of Microsoft Edge on a specific machine.</span></span>  
+*   <span data-ttu-id="84da0-107">访问在浏览器中运行的 JavaScript 不可用的功能和信息。</span><span class="sxs-lookup"><span data-stu-id="84da0-107">Accesses functionality and information not available to JavaScript running in browsers.</span></span>  
+*   <span data-ttu-id="84da0-108">更精确地模拟用户事件或操作系统级事件。</span><span class="sxs-lookup"><span data-stu-id="84da0-108">Simulates user events or OS-level events more accurately.</span></span>  
+*   <span data-ttu-id="84da0-109">在单个测试会话中管理多个窗口、选项卡和网页。</span><span class="sxs-lookup"><span data-stu-id="84da0-109">Manages multiple windows, tabs, and webpages in a single test session.</span></span>  
+*   <span data-ttu-id="84da0-110">在特定的计算机上运行 Microsoft Edge 的多个会话。</span><span class="sxs-lookup"><span data-stu-id="84da0-110">Runs multiple sessions of Microsoft Edge on a specific machine.</span></span>  
     
-<span data-ttu-id="db79c-111">以下部分介绍如何开始使用 Microsoft Edge 的 WebDriver \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="db79c-111">The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).</span></span>  
+<span data-ttu-id="84da0-111">以下部分介绍如何开始使用 Microsoft Edge 的 WebDriver \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="84da0-111">The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).</span></span>  
 
-## <span data-ttu-id="db79c-112">安装 Microsoft Edge (Chromium) </span><span class="sxs-lookup"><span data-stu-id="db79c-112">Install Microsoft Edge (Chromium)</span></span>  
+## <a name="install-microsoft-edge-chromium"></a><span data-ttu-id="84da0-112">安装 Microsoft Edge (Chromium) </span><span class="sxs-lookup"><span data-stu-id="84da0-112">Install Microsoft Edge (Chromium)</span></span>  
 
-<span data-ttu-id="db79c-113">确保安装[Microsoft Edge (Chromium) 。 ][MicrosoftEdge]</span><span class="sxs-lookup"><span data-stu-id="db79c-113">Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].</span></span>  <span data-ttu-id="db79c-114">若要确认已安装 Microsoft Edge \ (Chromium\) ，请导航到并验证版本号是 `edge://settings/help` 版本 75 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="db79c-114">To confirm that you have Microsoft Edge \(Chromium\) installed, navigate to `edge://settings/help`, and verify the version number is version 75 or later.</span></span>  
+<span data-ttu-id="84da0-113">确保安装[Microsoft Edge (Chromium) 。 ][MicrosoftEdge]</span><span class="sxs-lookup"><span data-stu-id="84da0-113">Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].</span></span>  <span data-ttu-id="84da0-114">若要确认已安装 Microsoft Edge \ (Chromium\) ，请导航到并验证版本号是 `edge://settings/help` 版本 75 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="84da0-114">To confirm that you have Microsoft Edge \(Chromium\) installed, navigate to `edge://settings/help`, and verify the version number is version 75 or later.</span></span>  
 
-## <span data-ttu-id="db79c-115">下载 Microsoft Edge 驱动程序</span><span class="sxs-lookup"><span data-stu-id="db79c-115">Download Microsoft Edge Driver</span></span>  
+## <a name="download-microsoft-edge-driver"></a><span data-ttu-id="84da0-115">下载 Microsoft Edge 驱动程序</span><span class="sxs-lookup"><span data-stu-id="84da0-115">Download Microsoft Edge Driver</span></span>  
 
-<span data-ttu-id="db79c-116">若要开始自动执行测试，请使用以下步骤来确保安装的 WebDriver 版本与浏览器版本相匹配。</span><span class="sxs-lookup"><span data-stu-id="db79c-116">To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.</span></span>  
+<span data-ttu-id="84da0-116">若要开始自动执行测试，请使用以下步骤来确保安装的 WebDriver 版本与浏览器版本相匹配。</span><span class="sxs-lookup"><span data-stu-id="84da0-116">To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.</span></span>  
 
-1.  <span data-ttu-id="db79c-117">若要显示 Microsoft Edge 的版本，请导航到 `edge://settings/help` 。</span><span class="sxs-lookup"><span data-stu-id="db79c-117">To display the version of Microsoft Edge, navigate to `edge://settings/help`.</span></span>  
+1.  <span data-ttu-id="84da0-117">若要显示 Microsoft Edge 的版本，请导航到 `edge://settings/help` 。</span><span class="sxs-lookup"><span data-stu-id="84da0-117">To display the version of Microsoft Edge, navigate to `edge://settings/help`.</span></span>  
     
     :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="2021 年 2 月 10 日 Microsoft Edge Canary 的生成号" lightbox="./media/microsoft-edge-version.msft.png":::
-       <span data-ttu-id="db79c-119">2021 年 2 月 10 日 Microsoft Edge Canary 的生成号</span><span class="sxs-lookup"><span data-stu-id="db79c-119">The build number for Microsoft Edge Canary on February 10, 2021</span></span>  
+       <span data-ttu-id="84da0-119">2021 年 2 月 10 日 Microsoft Edge Canary 的生成号</span><span class="sxs-lookup"><span data-stu-id="84da0-119">The build number for Microsoft Edge Canary on February 10, 2021</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="db79c-120">导航到[Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]驱动程序\*\*\*\* 的"下载"部分，并下载与 Microsoft Edge 的版本号匹配的 WebDriver。</span><span class="sxs-lookup"><span data-stu-id="db79c-120">Navigate to [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver], under the **Downloads** section, and download the WebDriver that matches the version number of Microsoft Edge.</span></span>  
+1.  <span data-ttu-id="84da0-120">导航到[Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]驱动程序\*\*\*\* 的"下载"部分，并下载与 Microsoft Edge 的版本号匹配的 WebDriver。</span><span class="sxs-lookup"><span data-stu-id="84da0-120">Navigate to [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver], under the **Downloads** section, and download the WebDriver that matches the version number of Microsoft Edge.</span></span>  
     
     :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Microsoft Edge 驱动程序上的"下载"部分" lightbox="./media/microsoft-edge-driver-install.msft.png":::
-       <span data-ttu-id="db79c-122">Microsoft **Edge** 驱动程序上的 ["下载"部分][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]</span><span class="sxs-lookup"><span data-stu-id="db79c-122">The **Downloads** section on [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]</span></span>  
+       <span data-ttu-id="84da0-122">Microsoft **Edge** 驱动程序上的 ["下载"部分][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]</span><span class="sxs-lookup"><span data-stu-id="84da0-122">The **Downloads** section on [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]</span></span>  
     :::image-end:::  
     
     <!--  
     > [!NOTE] 
     > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge \(EdgeHTML\)][Webdriver].  
     -->  
+    
+## <a name="choose-a-webdriver-language-binding"></a><span data-ttu-id="84da0-123">选择 WebDriver 语言绑定</span><span class="sxs-lookup"><span data-stu-id="84da0-123">Choose a WebDriver language binding</span></span>  
 
-## <span data-ttu-id="db79c-123">选择 WebDriver 语言绑定</span><span class="sxs-lookup"><span data-stu-id="db79c-123">Choose a WebDriver language binding</span></span>  
+<span data-ttu-id="84da0-124">必须下载的最后一个组件是特定语言的客户端驱动程序，用于将代码 \ (Python、Java、C\#、Ruby、JavaScript\) 转换为 Microsoft Edge \ (Chromium\) 中运行的命令。</span><span class="sxs-lookup"><span data-stu-id="84da0-124">The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).</span></span>  
 
-<span data-ttu-id="db79c-124">必须下载的最后一个组件是特定语言的客户端驱动程序，用于将代码 \ (Python、Java、C\#、Ruby、JavaScript\) 转换为 Microsoft Edge \ (Chromium\) 中运行的命令。</span><span class="sxs-lookup"><span data-stu-id="db79c-124">The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).</span></span>  
-
-<span data-ttu-id="db79c-125">[下载你选择的 WebDriver 语言绑定][SeleniumDownloads]。</span><span class="sxs-lookup"><span data-stu-id="db79c-125">[Download the WebDriver language binding of your choice][SeleniumDownloads].</span></span>  <span data-ttu-id="db79c-126">Microsoft Edge 团队建议使用 [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] 或更高版本，因为它支持 Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="db79c-126">The Microsoft Edge team recommends [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] or later, because it supports Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="db79c-127">但是，你可以控制 Microsoft Edge \ (Chromium\) 在所有旧版本的 Selenium 中，包括当前稳定的 Selenium 3 版本。</span><span class="sxs-lookup"><span data-stu-id="db79c-127">However, you may control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.</span></span>  
+<span data-ttu-id="84da0-125">[下载你选择的 WebDriver 语言绑定][SeleniumDownloads]。</span><span class="sxs-lookup"><span data-stu-id="84da0-125">[Download the WebDriver language binding of your choice][SeleniumDownloads].</span></span>  <span data-ttu-id="84da0-126">Microsoft Edge 团队建议使用 [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] 或更高版本，因为它支持 Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="84da0-126">The Microsoft Edge team recommends [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] or later, because it supports Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="84da0-127">但是，你可以控制 Microsoft Edge \ (Chromium\) 在所有旧版本的 Selenium 中，包括当前稳定的 Selenium 3 版本。</span><span class="sxs-lookup"><span data-stu-id="84da0-127">However, you may control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.</span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="db79c-128">如果您之前使用和类自动或测试了 Microsoft Edge \ (Chromium\) ，则 WebDriver 代码不会在 Microsoft Edge 版本 `ChromeDriver` `ChromeOptions` 80 或更高版本中运行。</span><span class="sxs-lookup"><span data-stu-id="db79c-128">If you previously automated or tested Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.</span></span>  <span data-ttu-id="db79c-129">若要解决此问题，请更新测试以使用 `EdgeOptions` 类并下载 Microsoft [Edge 驱动程序][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]。</span><span class="sxs-lookup"><span data-stu-id="db79c-129">To solve the problem, update your tests to use the `EdgeOptions` class and download [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].</span></span>  
+> <span data-ttu-id="84da0-128">如果您之前使用和类自动或测试了 Microsoft Edge \ (Chromium\) ，则 WebDriver 代码不会在 Microsoft Edge 版本 `ChromeDriver` `ChromeOptions` 80 或更高版本中运行。</span><span class="sxs-lookup"><span data-stu-id="84da0-128">If you previously automated or tested Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.</span></span>  <span data-ttu-id="84da0-129">若要解决此问题，请更新测试以使用 `EdgeOptions` 该类并下载 Microsoft [Edge 驱动程序][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]。</span><span class="sxs-lookup"><span data-stu-id="84da0-129">To solve the problem, update your tests to use the `EdgeOptions` class and download [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].</span></span>  
 
-### <span data-ttu-id="db79c-130">使用 Selenium 3</span><span class="sxs-lookup"><span data-stu-id="db79c-130">Use Selenium 3</span></span>  
+### <a name="use-selenium-3"></a><span data-ttu-id="84da0-130">使用 Selenium 3</span><span class="sxs-lookup"><span data-stu-id="84da0-130">Use Selenium 3</span></span>  
 
-<span data-ttu-id="db79c-131">如果你已使用 [Selenium 3，][|::ref1::|]你可能已有浏览器测试，并且希望添加 Microsoft Edge \ (Chromium\) 的覆盖范围，而无需更改 Selenium 版本。</span><span class="sxs-lookup"><span data-stu-id="db79c-131">If you already use [Selenium 3][|::ref1::|], you may have existing browser tests and want to add coverage for Microsoft Edge \(Chromium\) without changing your version of Selenium.</span></span>  <span data-ttu-id="db79c-132">若要使用 [Selenium 3][|::ref2::|] 为 Microsoft Edge \ (EdgeHTML\) 和 Microsoft Edge \ (Chromium\) 编写自动测试，请安装适用于 Microsoft Edge 的 [Selenium 工具][GithubMicrosoftEdgeSeleniumTools] 包以使用更新的驱动程序。</span><span class="sxs-lookup"><span data-stu-id="db79c-132">To use [Selenium 3][|::ref2::|] to write automated tests for both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\), install the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package to use the updated driver.</span></span>  <span data-ttu-id="db79c-133">工具 `EdgeDriver` `EdgeDriverService` 中包含的类与 Selenium 4 中的内置等效项完全兼容。</span><span class="sxs-lookup"><span data-stu-id="db79c-133">The `EdgeDriver` and `EdgeDriverService` classes included in the tools are fully compatible with the built-in equivalents in Selenium 4.</span></span>  
+<span data-ttu-id="84da0-131">如果你已使用 [Selenium 3，][|::ref1::|]你可能已有浏览器测试，并且想要添加 Microsoft Edge \ (Chromium\) 的覆盖范围，而无需更改 Selenium 版本。</span><span class="sxs-lookup"><span data-stu-id="84da0-131">If you already use [Selenium 3][|::ref1::|], you may have existing browser tests and want to add coverage for Microsoft Edge \(Chromium\) without changing your version of Selenium.</span></span>  <span data-ttu-id="84da0-132">若要使用 [Selenium 3][|::ref2::|] 为 Microsoft Edge \ (EdgeHTML\) 和 Microsoft Edge \ (Chromium\) 编写自动测试，请安装适用于 Microsoft Edge 的 [Selenium 工具][GithubMicrosoftEdgeSeleniumTools] 包以使用更新的驱动程序。</span><span class="sxs-lookup"><span data-stu-id="84da0-132">To use [Selenium 3][|::ref2::|] to write automated tests for both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\), install the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package to use the updated driver.</span></span>  <span data-ttu-id="84da0-133">工具 `EdgeDriver` 中包含的类与 Selenium 4 中的内置等效项 `EdgeDriverService` 完全兼容。</span><span class="sxs-lookup"><span data-stu-id="84da0-133">The `EdgeDriver` and `EdgeDriverService` classes included in the tools are fully compatible with the built-in equivalents in Selenium 4.</span></span>  
 
-<span data-ttu-id="db79c-134">使用以下步骤将适用于 Microsoft Edge 和[Selenium 3][|::ref3::|]的[Selenium 工具][GithubMicrosoftEdgeSeleniumTools]添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="db79c-134">Use the following steps to add the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] and [Selenium 3][|::ref3::|] to your project.</span></span>  
+<span data-ttu-id="84da0-134">使用以下步骤将适用于 Microsoft Edge 和[Selenium 3][|::ref3::|]的[Selenium 工具][GithubMicrosoftEdgeSeleniumTools]添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="84da0-134">Use the following steps to add the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] and [Selenium 3][|::ref3::|] to your project.</span></span>  
 
-#### [<span data-ttu-id="db79c-135">C#</span><span class="sxs-lookup"><span data-stu-id="db79c-135">C#</span></span>](#tab/c-sharp/)  
-
-<a id="selenium-tools-install"></a>  
-
-<span data-ttu-id="db79c-136">使用[NuGet CLI][NugetCLI]或 Visual Studio 将[Microsoft.Edge.SeleniumTools][NugetPackagesMicrosoftEdgeSeleniumtools]和[Selenium.WebDriver][NugetPackagesSeleniumWebdriver31410] [包添加到 .NET Visual Studio。][VisualStudio]</span><span class="sxs-lookup"><span data-stu-id="db79c-136">Add the [Microsoft.Edge.SeleniumTools][NugetPackagesMicrosoftEdgeSeleniumtools] and [Selenium.WebDriver][NugetPackagesSeleniumWebdriver31410] packages to your .NET project using the [NuGet CLI][NugetCLI] or [Visual Studio][VisualStudio].</span></span>  
-
-#### [<span data-ttu-id="db79c-137">Python</span><span class="sxs-lookup"><span data-stu-id="db79c-137">Python</span></span>](#tab/python/)  
+#### [<a name="c"></a><span data-ttu-id="84da0-135">C#</span><span class="sxs-lookup"><span data-stu-id="84da0-135">C#</span></span>](#tab/c-sharp/)  
 
 <a id="selenium-tools-install"></a>  
 
-<span data-ttu-id="db79c-138">使用 [管道][PythonPip] 安装 [msedge-selenium-tools][PythonSeleniumTools] 和 [selenium][PythonSelenium] 程序包。</span><span class="sxs-lookup"><span data-stu-id="db79c-138">Use [pip][PythonPip] to install the [msedge-selenium-tools][PythonSeleniumTools] and [selenium][PythonSelenium] packages.</span></span>  
+<span data-ttu-id="84da0-136">使用[NuGet CLI][NugetCLI]或 Visual Studio 将[Microsoft.Edge.SeleniumTools][NugetPackagesMicrosoftEdgeSeleniumtools]和[Selenium.WebDriver][NugetPackagesSeleniumWebdriver31410] [包添加到 .NET Visual Studio。][VisualStudio]</span><span class="sxs-lookup"><span data-stu-id="84da0-136">Add the [Microsoft.Edge.SeleniumTools][NugetPackagesMicrosoftEdgeSeleniumtools] and [Selenium.WebDriver][NugetPackagesSeleniumWebdriver31410] packages to your .NET project using the [NuGet CLI][NugetCLI] or [Visual Studio][VisualStudio].</span></span>  
+
+#### [<a name="python"></a><span data-ttu-id="84da0-137">Python</span><span class="sxs-lookup"><span data-stu-id="84da0-137">Python</span></span>](#tab/python/)  
+
+<a id="selenium-tools-install"></a>  
+
+<span data-ttu-id="84da0-138">使用 [管道][PythonPip] 安装 [msedge-selenium-tools][PythonSeleniumTools] 和 [selenium][PythonSelenium] 程序包。</span><span class="sxs-lookup"><span data-stu-id="84da0-138">Use [pip][PythonPip] to install the [msedge-selenium-tools][PythonSeleniumTools] and [selenium][PythonSelenium] packages.</span></span>  
 
 ```python
 pip install msedge-selenium-tools selenium==3.141
 ```  
 
-#### [<span data-ttu-id="db79c-139">Java	</span><span class="sxs-lookup"><span data-stu-id="db79c-139">Java</span></span>](#tab/java/)  
+#### [<a name="java"></a><span data-ttu-id="84da0-139">Java	</span><span class="sxs-lookup"><span data-stu-id="84da0-139">Java</span></span>](#tab/java/)  
 
 <a id="selenium-tools-install"></a>  
 
-<span data-ttu-id="db79c-140">如果你Java Maven，将以下依赖项复制并粘贴到文件以添加 `pom.xml` [msedge-selenium-tools-java][SonatypeMavenRepositorySearch]。</span><span class="sxs-lookup"><span data-stu-id="db79c-140">If your Java project uses Maven, copy and paste the following dependency to your `pom.xml` file to add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch].</span></span>  
+<span data-ttu-id="84da0-140">如果你Java Maven，将以下依赖项复制并粘贴到文件以添加 `pom.xml` [msedge-selenium-tools-java][SonatypeMavenRepositorySearch]。</span><span class="sxs-lookup"><span data-stu-id="84da0-140">If your Java project uses Maven, copy and paste the following dependency to your `pom.xml` file to add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch].</span></span>  
 
 ```xml
 <dependency>
@@ -96,13 +96,13 @@ pip install msedge-selenium-tools selenium==3.141
 </dependency>
 ```  
 
-<span data-ttu-id="db79c-141">The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page.][GithubMicrosoftEdgeSeleniumToolsReleases]</span><span class="sxs-lookup"><span data-stu-id="db79c-141">The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page][GithubMicrosoftEdgeSeleniumToolsReleases].</span></span>  
+<span data-ttu-id="84da0-141">The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page.][GithubMicrosoftEdgeSeleniumToolsReleases]</span><span class="sxs-lookup"><span data-stu-id="84da0-141">The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page][GithubMicrosoftEdgeSeleniumToolsReleases].</span></span>  
 
-#### [<span data-ttu-id="db79c-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db79c-142">JavaScript</span></span>](#tab/javascript/)  
+#### [<a name="javascript"></a><span data-ttu-id="84da0-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="84da0-142">JavaScript</span></span>](#tab/javascript/)  
 
 <a id="selenium-tools-install"></a>  
 
-<span data-ttu-id="db79c-143">使用 [npm][JavaScript|::ref4::|] 安装 [edge-selenium-tools][JavaScriptSeleniumTools] 和 [selenium-webdriver][JavaScriptSelenium] 程序包。</span><span class="sxs-lookup"><span data-stu-id="db79c-143">Use [npm][JavaScript|::ref4::|] to install the [edge-selenium-tools][JavaScriptSeleniumTools] and [selenium-webdriver][JavaScriptSelenium] packages.</span></span>  
+<span data-ttu-id="84da0-143">使用 [npm][JavaScript|::ref4::|] 安装 [edge-selenium-tools][JavaScriptSeleniumTools] 和 [selenium-webdriver][JavaScriptSelenium] 程序包。</span><span class="sxs-lookup"><span data-stu-id="84da0-143">Use [npm][JavaScript|::ref4::|] to install the [edge-selenium-tools][JavaScriptSeleniumTools] and [selenium-webdriver][JavaScriptSelenium] packages.</span></span>  
 
 ```javascript
 npm install @microsoft/edge-selenium-tools selenium-webdriver
@@ -110,17 +110,17 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 * * *  
 
-## <span data-ttu-id="db79c-144">使用 WebDriver (Microsoft Edge) Chromium</span><span class="sxs-lookup"><span data-stu-id="db79c-144">Automate Microsoft Edge (Chromium) with WebDriver</span></span>  
+## <a name="automate-microsoft-edge-chromium-with-webdriver"></a><span data-ttu-id="84da0-144">使用 WebDriver (Microsoft Edge) Chromium</span><span class="sxs-lookup"><span data-stu-id="84da0-144">Automate Microsoft Edge (Chromium) with WebDriver</span></span>  
 
-<span data-ttu-id="db79c-145">若要使用 WebDriver 自动执行浏览器，必须先使用首选的 WebDriver 语言绑定启动 WebDriver 会话。</span><span class="sxs-lookup"><span data-stu-id="db79c-145">To automate a browser using WebDriver, you must first start a WebDriver session using your preferred WebDriver language binding.</span></span>  <span data-ttu-id="db79c-146">会话是使用 WebDriver 命令控制的浏览器的单个运行实例。</span><span class="sxs-lookup"><span data-stu-id="db79c-146">A session is a single running instance of a browser controlled using WebDriver commands.</span></span>  <span data-ttu-id="db79c-147">启动 WebDriver 会话以启动新的浏览器实例。</span><span class="sxs-lookup"><span data-stu-id="db79c-147">Start a WebDriver session to launch a new browser instance.</span></span>  <span data-ttu-id="db79c-148">在关闭 WebDriver 会话之前，启动的浏览器实例保持打开状态。</span><span class="sxs-lookup"><span data-stu-id="db79c-148">The launched browser instance remains open until you close the WebDriver session.</span></span>  
+<span data-ttu-id="84da0-145">若要使用 WebDriver 自动执行浏览器，必须先使用首选的 WebDriver 语言绑定启动 WebDriver 会话。</span><span class="sxs-lookup"><span data-stu-id="84da0-145">To automate a browser using WebDriver, you must first start a WebDriver session using your preferred WebDriver language binding.</span></span>  <span data-ttu-id="84da0-146">会话是使用 WebDriver 命令控制的浏览器的单个运行实例。</span><span class="sxs-lookup"><span data-stu-id="84da0-146">A session is a single running instance of a browser controlled using WebDriver commands.</span></span>  <span data-ttu-id="84da0-147">启动 WebDriver 会话以启动新的浏览器实例。</span><span class="sxs-lookup"><span data-stu-id="84da0-147">Start a WebDriver session to launch a new browser instance.</span></span>  <span data-ttu-id="84da0-148">在关闭 WebDriver 会话之前，启动的浏览器实例保持打开状态。</span><span class="sxs-lookup"><span data-stu-id="84da0-148">The launched browser instance remains open until you close the WebDriver session.</span></span>  
 
-<span data-ttu-id="db79c-149">以下内容将引导你使用 Selenium 启动与 Microsoft Edge \ (Chromium\) 的 WebDriver 会话。</span><span class="sxs-lookup"><span data-stu-id="db79c-149">The following content walks you through using Selenium to start a WebDriver session with Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="db79c-150">可以使用 Selenium 3 或 4 运行示例。</span><span class="sxs-lookup"><span data-stu-id="db79c-150">You may run the examples using either Selenium 3 or 4.</span></span>  <span data-ttu-id="db79c-151">若要与 Selenium 3 一起使用，必须安装适用于 Microsoft Edge 的 [Selenium][GithubMicrosoftEdgeSeleniumTools] 工具包。</span><span class="sxs-lookup"><span data-stu-id="db79c-151">To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.</span></span>  
+<span data-ttu-id="84da0-149">以下内容将引导你使用 Selenium 启动与 Microsoft Edge \ (Chromium\) 的 WebDriver 会话。</span><span class="sxs-lookup"><span data-stu-id="84da0-149">The following content walks you through using Selenium to start a WebDriver session with Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="84da0-150">可以使用 Selenium 3 或 4 运行示例。</span><span class="sxs-lookup"><span data-stu-id="84da0-150">You may run the examples using either Selenium 3 or 4.</span></span>  <span data-ttu-id="84da0-151">若要与 Selenium 3 一起使用，必须安装适用于 Microsoft Edge 的 [Selenium][GithubMicrosoftEdgeSeleniumTools] 工具包。</span><span class="sxs-lookup"><span data-stu-id="84da0-151">To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.</span></span>  
 
-### <span data-ttu-id="db79c-152">自动执行 Microsoft Edge (Chromium) </span><span class="sxs-lookup"><span data-stu-id="db79c-152">Automate Microsoft Edge (Chromium)</span></span>  
+### <a name="automate-microsoft-edge-chromium"></a><span data-ttu-id="84da0-152">自动执行 Microsoft Edge (Chromium) </span><span class="sxs-lookup"><span data-stu-id="84da0-152">Automate Microsoft Edge (Chromium)</span></span>  
 
-<span data-ttu-id="db79c-153">Selenium 使用 `EdgeDriver` 类管理 Microsoft Edge \ (Chromium\) 会话。</span><span class="sxs-lookup"><span data-stu-id="db79c-153">Selenium uses the `EdgeDriver` class to manage a Microsoft Edge \(Chromium\) session.</span></span>  <span data-ttu-id="db79c-154">若要启动会话并自动执行 Microsoft Edge \ (Chromium\) ，请创建一个新对象，并传递一个属性设置为 `EdgeDriver` `EdgeOptions` `UseChromium` `true` 的对象。</span><span class="sxs-lookup"><span data-stu-id="db79c-154">To start a session and automate Microsoft Edge \(Chromium\), create a new `EdgeDriver` object and pass it an `EdgeOptions` object with the `UseChromium` property set to `true`.</span></span>  
+<span data-ttu-id="84da0-153">Selenium 使用 `EdgeDriver` 类管理 Microsoft Edge \ (Chromium\) 会话。</span><span class="sxs-lookup"><span data-stu-id="84da0-153">Selenium uses the `EdgeDriver` class to manage a Microsoft Edge \(Chromium\) session.</span></span>  <span data-ttu-id="84da0-154">若要启动会话并自动执行 Microsoft Edge \ (Chromium\) ，请创建一个新对象，并传递一个属性设置为 `EdgeDriver` `EdgeOptions` `UseChromium` `true` 的对象。</span><span class="sxs-lookup"><span data-stu-id="84da0-154">To start a session and automate Microsoft Edge \(Chromium\), create a new `EdgeDriver` object and pass it an `EdgeOptions` object with the `UseChromium` property set to `true`.</span></span>  
 
-#### [<span data-ttu-id="db79c-155">C#</span><span class="sxs-lookup"><span data-stu-id="db79c-155">C#</span></span>](#tab/c-sharp/)  
+#### [<a name="c"></a><span data-ttu-id="84da0-155">C#</span><span class="sxs-lookup"><span data-stu-id="84da0-155">C#</span></span>](#tab/c-sharp/)  
 
 <a id="drive-microsoft-edge-chromium-code"></a>  
 
@@ -131,7 +131,7 @@ options.UseChromium = true;
 var driver = new EdgeDriver(options);
 ```  
 
-#### [<span data-ttu-id="db79c-156">Python</span><span class="sxs-lookup"><span data-stu-id="db79c-156">Python</span></span>](#tab/python/)  
+#### [<a name="python"></a><span data-ttu-id="84da0-156">Python</span><span class="sxs-lookup"><span data-stu-id="84da0-156">Python</span></span>](#tab/python/)  
 
 <a id="drive-microsoft-edge-chromium-code"></a>  
 
@@ -139,20 +139,20 @@ var driver = new EdgeDriver(options);
 options = EdgeOptions()
 options.use_chromium = True
 
-driver = Edge(options)
+driver = Edge(options = options)
 ```  
 
-#### [<span data-ttu-id="db79c-157">Java	</span><span class="sxs-lookup"><span data-stu-id="db79c-157">Java</span></span>](#tab/java/)  
+#### [<a name="java"></a><span data-ttu-id="84da0-157">Java	</span><span class="sxs-lookup"><span data-stu-id="84da0-157">Java</span></span>](#tab/java/)  
 
 <a id="drive-microsoft-edge-chromium-code"></a>  
 
-<span data-ttu-id="db79c-158">该类 `EdgeDriver` 仅支持 Microsoft Edge \ (Chromium\) ，并且不支持 Microsoft Edge \ (EdgeHTML\) 。</span><span class="sxs-lookup"><span data-stu-id="db79c-158">The `EdgeDriver` class only supports Microsoft Edge \(Chromium\), and doesn't support Microsoft Edge \(EdgeHTML\).</span></span>  <span data-ttu-id="db79c-159">对于基本用法，你可以创建一个 `EdgeDriver` 而不提供 `EdgeOptions` 。</span><span class="sxs-lookup"><span data-stu-id="db79c-159">For basic usage, you may create an `EdgeDriver` without providing `EdgeOptions`.</span></span>  
+<span data-ttu-id="84da0-158">该类 `EdgeDriver` 仅支持 Microsoft Edge \ (Chromium\) ，并且不支持 Microsoft Edge \ (EdgeHTML\) 。</span><span class="sxs-lookup"><span data-stu-id="84da0-158">The `EdgeDriver` class only supports Microsoft Edge \(Chromium\), and doesn't support Microsoft Edge \(EdgeHTML\).</span></span>  <span data-ttu-id="84da0-159">对于基本用法，你可以创建一个 `EdgeDriver` 而不提供 `EdgeOptions` 。</span><span class="sxs-lookup"><span data-stu-id="84da0-159">For basic usage, you may create an `EdgeDriver` without providing `EdgeOptions`.</span></span>  
 
 ```java
 EdgeDriver driver = new EdgeDriver();
 ```  
 
-#### [<span data-ttu-id="db79c-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db79c-160">JavaScript</span></span>](#tab/javascript/)  
+#### [<a name="javascript"></a><span data-ttu-id="84da0-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="84da0-160">JavaScript</span></span>](#tab/javascript/)  
 
 <a id="drive-microsoft-edge-chromium-code"></a>  
 
@@ -166,13 +166,13 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 > [!NOTE]
-> <span data-ttu-id="db79c-161">如果你的 IT 管理员将[DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]策略设置为 ，Microsoft Edge 驱动程序将被阻止驱动 `2` Microsoft Edge \ (Chromium\) ，因为驱动程序使用[Microsoft Edge DevTools。][DevtoolsIndex] [][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]</span><span class="sxs-lookup"><span data-stu-id="db79c-161">If your IT admin has set the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy to `2`,  [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] is blocked from driving Microsoft Edge \(Chromium\), because the driver uses the [Microsoft Edge DevTools][DevtoolsIndex].</span></span>  <span data-ttu-id="db79c-162">确保 [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] 策略设置为或自动执行 Microsoft Edge (`0` `1` Chromium) 。</span><span class="sxs-lookup"><span data-stu-id="db79c-162">Ensure the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy is set to `0` or `1` to automate Microsoft Edge (Chromium).</span></span>  
+> <span data-ttu-id="84da0-161">如果你的 IT 管理员将[DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]策略设置为 ，Microsoft Edge 驱动程序将被阻止驱动 `2` Microsoft Edge \ (Chromium\) ，因为驱动程序使用[Microsoft Edge DevTools。][DevtoolsIndex] [][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]</span><span class="sxs-lookup"><span data-stu-id="84da0-161">If your IT admin has set the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy to `2`,  [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] is blocked from driving Microsoft Edge \(Chromium\), because the driver uses the [Microsoft Edge DevTools][DevtoolsIndex].</span></span>  <span data-ttu-id="84da0-162">确保 [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] 策略设置为或自动执行 Microsoft Edge (`0` `1` Chromium) 。</span><span class="sxs-lookup"><span data-stu-id="84da0-162">Ensure the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy is set to `0` or `1` to automate Microsoft Edge (Chromium).</span></span>  
 
-### <span data-ttu-id="db79c-163">选择"特定浏览器二进制文件 (仅 chromium") </span><span class="sxs-lookup"><span data-stu-id="db79c-163">Choose Specific Browser Binaries (Chromium-Only)</span></span>  
+### <a name="choose-specific-browser-binaries-chromium-only"></a><span data-ttu-id="84da0-163">选择"特定浏览器二进制文件 (仅 chromium") </span><span class="sxs-lookup"><span data-stu-id="84da0-163">Choose Specific Browser Binaries (Chromium-Only)</span></span>  
 
-<span data-ttu-id="db79c-164">可以使用特定的 Microsoft Edge \ (Chromium\) 启动 WebDriver 会话。</span><span class="sxs-lookup"><span data-stu-id="db79c-164">You may start a WebDriver session with specific Microsoft Edge \(Chromium\) binaries.</span></span>  <span data-ttu-id="db79c-165">例如，可以使用 [Microsoft Edge][MicrosoftedgeinsiderDownload] 预览频道（如 Microsoft Edge Beta）运行测试。</span><span class="sxs-lookup"><span data-stu-id="db79c-165">For example, you may run tests using the [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.</span></span>  
+<span data-ttu-id="84da0-164">可以使用特定的 Microsoft Edge \ (Chromium\) 启动 WebDriver 会话。</span><span class="sxs-lookup"><span data-stu-id="84da0-164">You may start a WebDriver session with specific Microsoft Edge \(Chromium\) binaries.</span></span>  <span data-ttu-id="84da0-165">例如，可以使用 [Microsoft Edge][MicrosoftedgeinsiderDownload] 预览频道（如 Microsoft Edge Beta）运行测试。</span><span class="sxs-lookup"><span data-stu-id="84da0-165">For example, you may run tests using the [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.</span></span>  
 
-#### [<span data-ttu-id="db79c-166">C#</span><span class="sxs-lookup"><span data-stu-id="db79c-166">C#</span></span>](#tab/c-sharp/)  
+#### [<a name="c"></a><span data-ttu-id="84da0-166">C#</span><span class="sxs-lookup"><span data-stu-id="84da0-166">C#</span></span>](#tab/c-sharp/)  
 
 <a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
@@ -184,7 +184,7 @@ options.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Beta\Applicatio
 var driver = new EdgeDriver(options);
 ```  
 
-#### [<span data-ttu-id="db79c-167">Python</span><span class="sxs-lookup"><span data-stu-id="db79c-167">Python</span></span>](#tab/python/)  
+#### [<a name="python"></a><span data-ttu-id="84da0-167">Python</span><span class="sxs-lookup"><span data-stu-id="84da0-167">Python</span></span>](#tab/python/)  
 
 <a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
@@ -193,10 +193,10 @@ options = EdgeOptions()
 options.use_chromium = True
 options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
 
-driver = Edge(options)
+driver = Edge(options = options)
 ```  
 
-#### [<span data-ttu-id="db79c-168">Java	</span><span class="sxs-lookup"><span data-stu-id="db79c-168">Java</span></span>](#tab/java/)  
+#### [<a name="java"></a><span data-ttu-id="84da0-168">Java	</span><span class="sxs-lookup"><span data-stu-id="84da0-168">Java</span></span>](#tab/java/)  
 
 <a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
@@ -207,7 +207,7 @@ options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\m
 EdgeDriver driver = new EdgeDriver(options);
 ```  
 
-#### [<span data-ttu-id="db79c-169">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db79c-169">JavaScript</span></span>](#tab/javascript/)  
+#### [<a name="javascript"></a><span data-ttu-id="84da0-169">JavaScript</span><span class="sxs-lookup"><span data-stu-id="84da0-169">JavaScript</span></span>](#tab/javascript/)  
 
 <a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
@@ -221,15 +221,15 @@ let driver = edge.Driver.createSession(options);
 
 * * *  
 
-### <span data-ttu-id="db79c-170">自定义 Microsoft Edge 驱动程序服务</span><span class="sxs-lookup"><span data-stu-id="db79c-170">Customize the Microsoft Edge Driver Service</span></span>  
+### <a name="customize-the-microsoft-edge-driver-service"></a><span data-ttu-id="84da0-170">自定义 Microsoft Edge 驱动程序服务</span><span class="sxs-lookup"><span data-stu-id="84da0-170">Customize the Microsoft Edge Driver Service</span></span>  
 
-#### [<span data-ttu-id="db79c-171">C#</span><span class="sxs-lookup"><span data-stu-id="db79c-171">C#</span></span>](#tab/c-sharp/)  
+#### [<a name="c"></a><span data-ttu-id="84da0-171">C#</span><span class="sxs-lookup"><span data-stu-id="84da0-171">C#</span></span>](#tab/c-sharp/)  
 
 <a id="customize-microsoft-edge-driver-services-code"></a>  
 
-<span data-ttu-id="db79c-172">使用类创建类实例时，它会为 `EdgeOptions` `EdgeDriver` Microsoft Edge `EdgeDriverService` \ (EdgeHTML\) 或 Microsoft Edge \ (Chromium\) 创建和启动相应的类。</span><span class="sxs-lookup"><span data-stu-id="db79c-172">When you use the `EdgeOptions` class to create an `EdgeDriver` class instance, it creates and launches the appropriate `EdgeDriverService` class for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\).</span></span>  
+<span data-ttu-id="84da0-172">使用类创建类实例时，它会为 `EdgeOptions` `EdgeDriver` Microsoft Edge `EdgeDriverService` \ (EdgeHTML\) 或 Microsoft Edge \ (Chromium\) 创建和启动相应的类。</span><span class="sxs-lookup"><span data-stu-id="84da0-172">When you use the `EdgeOptions` class to create an `EdgeDriver` class instance, it creates and launches the appropriate `EdgeDriverService` class for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\).</span></span>  
 
-<span data-ttu-id="db79c-173">如果要创建一个，请使用该方法创建一个为 `EdgeDriverService` `CreateChromiumService()` Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="db79c-173">If you want to create an `EdgeDriverService`, use the `CreateChromiumService()` method to create one configured for Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="db79c-174">`CreateChromiumService()`当您需要添加自定义项时，此方法非常有用。</span><span class="sxs-lookup"><span data-stu-id="db79c-174">The `CreateChromiumService()` method is useful when you need to add customizations.</span></span>  <span data-ttu-id="db79c-175">例如，以下代码开始详细日志输出。</span><span class="sxs-lookup"><span data-stu-id="db79c-175">For example, the following code starts verbose log output.</span></span>  
+<span data-ttu-id="84da0-173">如果要创建一个，请使用该方法创建一个为 `EdgeDriverService` `CreateChromiumService()` Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="84da0-173">If you want to create an `EdgeDriverService`, use the `CreateChromiumService()` method to create one configured for Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="84da0-174">`CreateChromiumService()`当您需要添加自定义项时，此方法非常有用。</span><span class="sxs-lookup"><span data-stu-id="84da0-174">The `CreateChromiumService()` method is useful when you need to add customizations.</span></span>  <span data-ttu-id="84da0-175">例如，以下代码开始详细日志输出。</span><span class="sxs-lookup"><span data-stu-id="84da0-175">For example, the following code starts verbose log output.</span></span>  
 
 ```csharp
 using (var service = EdgeDriverService.CreateChromiumService())
@@ -241,25 +241,25 @@ using (var service = EdgeDriverService.CreateChromiumService())
 ```  
 
 > [!NOTE] 
-><span data-ttu-id="db79c-176">当传递到实例时，不需要 `EdgeOptions` 提供 `EdgeDriverService` `EdgeDriver` 对象。</span><span class="sxs-lookup"><span data-stu-id="db79c-176">You do not need to provide the `EdgeOptions` object when you pass `EdgeDriverService` to the `EdgeDriver` instance.</span></span>  <span data-ttu-id="db79c-177">该类根据你提供的服务使用 `EdgeDriver` Microsoft Edge \ (EdgeHTML\) 或 Microsoft Edge \ (Chromium\) 的默认选项。</span><span class="sxs-lookup"><span data-stu-id="db79c-177">The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) based on the service you provide.</span></span>  
-> <span data-ttu-id="db79c-178">但是，如果要同时提供这两个类和类，请确保为相同版本的 Microsoft Edge 配置 `EdgeDriverService` `EdgeOptions` 这两者。</span><span class="sxs-lookup"><span data-stu-id="db79c-178">However, if you want to provide both `EdgeDriverService` and `EdgeOptions` classes, ensure that both are configured for the same version of Microsoft Edge.</span></span>  <span data-ttu-id="db79c-179">例如，可以使用类中的默认 Microsoft Edge \ (EdgeHTML\) 类和 `EdgeDriverService` Chromium `EdgeOptions` 属性。</span><span class="sxs-lookup"><span data-stu-id="db79c-179">For example, you may use a default Microsoft Edge \(EdgeHTML\) `EdgeDriverService` class and Chromium properties in the `EdgeOptions` class.</span></span>  <span data-ttu-id="db79c-180">该类 `EdgeDriver` 将引发错误，以防止使用不同的版本。</span><span class="sxs-lookup"><span data-stu-id="db79c-180">The `EdgeDriver` class throws an error to prevent using different versions.</span></span>  
+><span data-ttu-id="84da0-176">当传递到实例时， `EdgeOptions` 不需要提供 `EdgeDriverService` `EdgeDriver` 对象。</span><span class="sxs-lookup"><span data-stu-id="84da0-176">You do not need to provide the `EdgeOptions` object when you pass `EdgeDriverService` to the `EdgeDriver` instance.</span></span>  <span data-ttu-id="84da0-177">该类根据你提供的服务使用 `EdgeDriver` Microsoft Edge \ (EdgeHTML\) 或 Microsoft Edge \ (Chromium\) 的默认选项。</span><span class="sxs-lookup"><span data-stu-id="84da0-177">The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) based on the service you provide.</span></span>  
+> <span data-ttu-id="84da0-178">但是，如果要同时提供这两个类和类，请确保为相同版本的 Microsoft Edge 配置 `EdgeDriverService` `EdgeOptions` 这两者。</span><span class="sxs-lookup"><span data-stu-id="84da0-178">However, if you want to provide both `EdgeDriverService` and `EdgeOptions` classes, ensure that both are configured for the same version of Microsoft Edge.</span></span>  <span data-ttu-id="84da0-179">例如，可以使用类中的默认 Microsoft Edge \ (EdgeHTML\) 类和 `EdgeDriverService` Chromium `EdgeOptions` 属性。</span><span class="sxs-lookup"><span data-stu-id="84da0-179">For example, you may use a default Microsoft Edge \(EdgeHTML\) `EdgeDriverService` class and Chromium properties in the `EdgeOptions` class.</span></span>  <span data-ttu-id="84da0-180">该类 `EdgeDriver` 将引发错误，以防止使用不同的版本。</span><span class="sxs-lookup"><span data-stu-id="84da0-180">The `EdgeDriver` class throws an error to prevent using different versions.</span></span>  
 
-#### [<span data-ttu-id="db79c-181">Python</span><span class="sxs-lookup"><span data-stu-id="db79c-181">Python</span></span>](#tab/python/)  
+#### [<a name="python"></a><span data-ttu-id="84da0-181">Python</span><span class="sxs-lookup"><span data-stu-id="84da0-181">Python</span></span>](#tab/python/)  
 
 <a id="customize-microsoft-edge-driver-services-code"></a>  
 
-<span data-ttu-id="db79c-182">使用 Python 时， `Edge` 对象将创建和管理 `EdgeService` 。</span><span class="sxs-lookup"><span data-stu-id="db79c-182">When you use Python, the `Edge` object creates and manages the `EdgeService`.</span></span>  <span data-ttu-id="db79c-183">若要配置 `EdgeService` ，请向对象传递 `Edge` 额外参数，如以下代码所示。</span><span class="sxs-lookup"><span data-stu-id="db79c-183">To configure the `EdgeService`, pass extra arguments to the `Edge` object as indicated in the following code.</span></span>  
+<span data-ttu-id="84da0-182">使用 Python 时， `Edge` 对象将创建和管理 `EdgeService` 。</span><span class="sxs-lookup"><span data-stu-id="84da0-182">When you use Python, the `Edge` object creates and manages the `EdgeService`.</span></span>  <span data-ttu-id="84da0-183">若要配置 `EdgeService` ，请向对象传递 `Edge` 额外参数，如以下代码所示。</span><span class="sxs-lookup"><span data-stu-id="84da0-183">To configure the `EdgeService`, pass extra arguments to the `Edge` object as indicated in the following code.</span></span>  
 
 ```python
 service_args = ['--verbose']
 driver = Edge(service_args = service_args)
 ```  
 
-#### [<span data-ttu-id="db79c-184">Java	</span><span class="sxs-lookup"><span data-stu-id="db79c-184">Java</span></span>](#tab/java/)  
+#### [<a name="java"></a><span data-ttu-id="84da0-184">Java	</span><span class="sxs-lookup"><span data-stu-id="84da0-184">Java</span></span>](#tab/java/)  
 
 <a id="customize-microsoft-edge-driver-services-code"></a>  
 
-<span data-ttu-id="db79c-185">使用此方法 `createDefaultService()` 创建为 Microsoft `EdgeDriverService` Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="db79c-185">Use the `createDefaultService()` method to create an `EdgeDriverService` configured for Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="db79c-186">使用Java属性自定义驱动程序服务Java。</span><span class="sxs-lookup"><span data-stu-id="db79c-186">Use Java system properties to customize driver services in Java.</span></span>  <span data-ttu-id="db79c-187">例如，以下代码使用 `"webdriver.edge.verboseLogging"` 该属性打开详细日志输出。</span><span class="sxs-lookup"><span data-stu-id="db79c-187">For example, the following code uses the `"webdriver.edge.verboseLogging"` property to turn on verbose log output.</span></span>  
+<span data-ttu-id="84da0-185">使用此方法 `createDefaultService()` 创建为 Microsoft `EdgeDriverService` Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="84da0-185">Use the `createDefaultService()` method to create an `EdgeDriverService` configured for Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="84da0-186">使用Java属性自定义驱动程序服务Java。</span><span class="sxs-lookup"><span data-stu-id="84da0-186">Use Java system properties to customize driver services in Java.</span></span>  <span data-ttu-id="84da0-187">例如，以下代码使用 `"webdriver.edge.verboseLogging"` 该属性打开详细日志输出。</span><span class="sxs-lookup"><span data-stu-id="84da0-187">For example, the following code uses the `"webdriver.edge.verboseLogging"` property to turn on verbose log output.</span></span>  
 
 ```java
 System.setProperty("webdriver.edge.verboseLogging", "true");
@@ -268,12 +268,12 @@ EdgeOptions options = new EdgeOptions();
 EdgeDriver driver = new EdgeDriver(service, options);
 ```  
 
-#### [<span data-ttu-id="db79c-188">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db79c-188">JavaScript</span></span>](#tab/javascript/)  
+#### [<a name="javascript"></a><span data-ttu-id="84da0-188">JavaScript</span><span class="sxs-lookup"><span data-stu-id="84da0-188">JavaScript</span></span>](#tab/javascript/)  
 
 <a id="customize-microsoft-edge-driver-services-code"></a>  
 
-<span data-ttu-id="db79c-189">使用 JavaScript 时，使用类 `Service` 创建和 `ServiceBuilder` 配置。</span><span class="sxs-lookup"><span data-stu-id="db79c-189">When you use JavaScript, create and configure a `Service` with the `ServiceBuilder` class.</span></span>  <span data-ttu-id="db79c-190">（可选）你可以将对象传递给该对象，该对象将启动 `Service` `Driver` \ (并停止\) 服务。</span><span class="sxs-lookup"><span data-stu-id="db79c-190">Optionally, you may pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.</span></span>  
-<span data-ttu-id="db79c-191">若要配置 `Service` ，请使用该方法之前在 `ServiceBuilder` 类中运行另一 `build()` 个方法。</span><span class="sxs-lookup"><span data-stu-id="db79c-191">To configure the `Service`, run another method in the `ServiceBuilder` class before you use the `build()` method.</span></span>  <span data-ttu-id="db79c-192">然后作为 `service` 参数在方法中 `Driver.createSession()` 传递。</span><span class="sxs-lookup"><span data-stu-id="db79c-192">Then pass the `service` as a parameter in the `Driver.createSession()` method.</span></span>  
+<span data-ttu-id="84da0-189">使用 JavaScript 时，使用类 `Service` 创建和 `ServiceBuilder` 配置。</span><span class="sxs-lookup"><span data-stu-id="84da0-189">When you use JavaScript, create and configure a `Service` with the `ServiceBuilder` class.</span></span>  <span data-ttu-id="84da0-190">（可选）你可以将对象传递给该对象，该对象将启动 `Service` `Driver` \ (并停止\) 服务。</span><span class="sxs-lookup"><span data-stu-id="84da0-190">Optionally, you may pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.</span></span>  
+<span data-ttu-id="84da0-191">若要配置 `Service` ，请使用方法之前在 `ServiceBuilder` 类中运行另一 `build()` 个方法。</span><span class="sxs-lookup"><span data-stu-id="84da0-191">To configure the `Service`, run another method in the `ServiceBuilder` class before you use the `build()` method.</span></span>  <span data-ttu-id="84da0-192">然后作为 `service` 参数在方法中 `Driver.createSession()` 传递。</span><span class="sxs-lookup"><span data-stu-id="84da0-192">Then pass the `service` as a parameter in the `Driver.createSession()` method.</span></span>  
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
@@ -282,11 +282,11 @@ let driver = edge.Driver.createSession(options, service);
 
 * * *  
 
-### <span data-ttu-id="db79c-193">使用Chromium-Specific选项</span><span class="sxs-lookup"><span data-stu-id="db79c-193">Use Chromium-Specific Options</span></span>  
+### <a name="use-chromium-specific-options"></a><span data-ttu-id="84da0-193">使用Chromium-Specific选项</span><span class="sxs-lookup"><span data-stu-id="84da0-193">Use Chromium-Specific Options</span></span>  
 
-<span data-ttu-id="db79c-194">如果将该属性设置为 ，可以使用类访问与自动执行其他 Chromium 浏览器时所使用的相同 `UseChromium` `true` `EdgeOptions` [Chromium][WebdriverCapabilitiesEdgeOptions] 特定属性和方法。</span><span class="sxs-lookup"><span data-stu-id="db79c-194">If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][WebdriverCapabilitiesEdgeOptions] that are used when you automate other Chromium browsers.</span></span>  
+<span data-ttu-id="84da0-194">如果将该属性设置为 ，可以使用类访问与自动执行其他 Chromium 浏览器时所使用的相同 `UseChromium` `true` `EdgeOptions` [Chromium][WebdriverCapabilitiesEdgeOptions] 特定属性和方法。</span><span class="sxs-lookup"><span data-stu-id="84da0-194">If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][WebdriverCapabilitiesEdgeOptions] that are used when you automate other Chromium browsers.</span></span>  
 
-#### [<span data-ttu-id="db79c-195">C#</span><span class="sxs-lookup"><span data-stu-id="db79c-195">C#</span></span>](#tab/c-sharp/)  
+#### [<a name="c"></a><span data-ttu-id="84da0-195">C#</span><span class="sxs-lookup"><span data-stu-id="84da0-195">C#</span></span>](#tab/c-sharp/)  
 
 <a id="use-chromium-specific-options-code"></a>  
 
@@ -297,7 +297,7 @@ options.AddArgument("headless");
 options.AddArgument("disable-gpu");
 ```  
 
-#### [<span data-ttu-id="db79c-196">Python</span><span class="sxs-lookup"><span data-stu-id="db79c-196">Python</span></span>](#tab/python/)  
+#### [<a name="python"></a><span data-ttu-id="84da0-196">Python</span><span class="sxs-lookup"><span data-stu-id="84da0-196">Python</span></span>](#tab/python/)  
 
 <a id="use-chromium-specific-options-code"></a>  
 
@@ -308,7 +308,7 @@ options.add_argument("headless")
 options.add_argument("disable-gpu")
 ```  
 
-#### [<span data-ttu-id="db79c-197">Java	</span><span class="sxs-lookup"><span data-stu-id="db79c-197">Java</span></span>](#tab/java/)  
+#### [<a name="java"></a><span data-ttu-id="84da0-197">Java	</span><span class="sxs-lookup"><span data-stu-id="84da0-197">Java</span></span>](#tab/java/)  
 
 <a id="use-chromium-specific-options-code"></a>  
 
@@ -318,7 +318,7 @@ options.addArguments("headless");
 options.addArguments("disable-gpu");
 ```  
 
-#### [<span data-ttu-id="db79c-198">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db79c-198">JavaScript</span></span>](#tab/javascript/)  
+#### [<a name="javascript"></a><span data-ttu-id="84da0-198">JavaScript</span><span class="sxs-lookup"><span data-stu-id="84da0-198">JavaScript</span></span>](#tab/javascript/)  
 
 <a id="use-chromium-specific-options-code"></a>  
 
@@ -332,40 +332,40 @@ options.addArguments("disable-gpu");
 * * *  
 
 > [!NOTE]
-> <span data-ttu-id="db79c-199">如果该属性设置为 ，则不能对 `UseChromium` `true` Microsoft Edge \ (EdgeHTML\) 。</span><span class="sxs-lookup"><span data-stu-id="db79c-199">If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge \(EdgeHTML\).</span></span>  
+> <span data-ttu-id="84da0-199">如果该属性设置为 ，则不能对 `UseChromium` `true` Microsoft Edge \ (EdgeHTML\) 。</span><span class="sxs-lookup"><span data-stu-id="84da0-199">If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge \(EdgeHTML\).</span></span>  
 
-## <span data-ttu-id="db79c-200">其他 WebDriver 安装选项</span><span class="sxs-lookup"><span data-stu-id="db79c-200">Other WebDriver installation options</span></span>  
+## <a name="other-webdriver-installation-options"></a><span data-ttu-id="84da0-200">其他 WebDriver 安装选项</span><span class="sxs-lookup"><span data-stu-id="84da0-200">Other WebDriver installation options</span></span>  
 
-### <span data-ttu-id="db79c-201">百年</span><span class="sxs-lookup"><span data-stu-id="db79c-201">Chocolatey</span></span>  
+### <a name="chocolatey"></a><span data-ttu-id="84da0-201">百年</span><span class="sxs-lookup"><span data-stu-id="84da0-201">Chocolatey</span></span>  
 
-<span data-ttu-id="db79c-202">如果你将 [一角化][Chocolatey] 用作程序包管理器，请运行以下命令来安装 Microsoft Edge 驱动程序。</span><span class="sxs-lookup"><span data-stu-id="db79c-202">If you use [Chocolatey][Chocolatey] as your package manager, run the following command to install the Microsoft Edge Driver.</span></span>  
+<span data-ttu-id="84da0-202">如果使用 ["小天][Chocolatey] "作为程序包管理器，请运行以下命令来安装 Microsoft Edge 驱动程序。</span><span class="sxs-lookup"><span data-stu-id="84da0-202">If you use [Chocolatey][Chocolatey] as your package manager, run the following command to install the Microsoft Edge Driver.</span></span>  
 
 ```console
 choco install selenium-chromium-edge-driver
 ```  
 
-<span data-ttu-id="db79c-203">有关详细信息，请导航到 [Selenium Chromium Edge Driver onMiumy][ChocolateyPackagesSeleniumChromiumEdgeDriver]。</span><span class="sxs-lookup"><span data-stu-id="db79c-203">For more information, navigate to [Selenium Chromium Edge Driver on Chocolatey][ChocolateyPackagesSeleniumChromiumEdgeDriver].</span></span>  
+<span data-ttu-id="84da0-203">有关详细信息，请导航到 [Selenium Chromium Edge Driver onMiumy][ChocolateyPackagesSeleniumChromiumEdgeDriver]。</span><span class="sxs-lookup"><span data-stu-id="84da0-203">For more information, navigate to [Selenium Chromium Edge Driver on Chocolatey][ChocolateyPackagesSeleniumChromiumEdgeDriver].</span></span>  
 
-### <span data-ttu-id="db79c-204">Docker</span><span class="sxs-lookup"><span data-stu-id="db79c-204">Docker</span></span>  
+### <a name="docker"></a><span data-ttu-id="84da0-204">Docker</span><span class="sxs-lookup"><span data-stu-id="84da0-204">Docker</span></span>  
 
-<span data-ttu-id="db79c-205">如果使用 [Docker，][DockerHub]请运行以下命令来下载预配置映像，预安装了 Microsoft Edge \ (Chromium\) 和 [Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] 驱动程序。</span><span class="sxs-lookup"><span data-stu-id="db79c-205">If you use [Docker][DockerHub], run the following command to download a pre-configured image with Microsoft Edge \(Chromium\) and [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] pre-installed.</span></span>  
+<span data-ttu-id="84da0-205">如果使用 [Docker，][DockerHub]请运行以下命令来下载预配置映像（预安装 Microsoft Edge \ (Chromium\) 和 [Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] 驱动程序）。</span><span class="sxs-lookup"><span data-stu-id="84da0-205">If you use [Docker][DockerHub], run the following command to download a pre-configured image with Microsoft Edge \(Chromium\) and [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] pre-installed.</span></span>  
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```  
 
-<span data-ttu-id="db79c-206">有关详细信息，请导航到 Docker Hub 上的 [msedgedriver 容器][DockerHubMsedgedriver]。</span><span class="sxs-lookup"><span data-stu-id="db79c-206">For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].</span></span>  
+<span data-ttu-id="84da0-206">有关详细信息，请导航到 Docker Hub 上的 [msedgedriver 容器][DockerHubMsedgedriver]。</span><span class="sxs-lookup"><span data-stu-id="84da0-206">For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].</span></span>  
 
-## <span data-ttu-id="db79c-207">后续步骤</span><span class="sxs-lookup"><span data-stu-id="db79c-207">Next steps</span></span>  
+## <a name="next-steps"></a><span data-ttu-id="84da0-207">后续步骤</span><span class="sxs-lookup"><span data-stu-id="84da0-207">Next steps</span></span>  
 
-<span data-ttu-id="db79c-208">若要了解有关 WebDriver 以及如何使用 Selenium 编写自动 WebDriver 测试的信息，请导航到 [Selenium 文档][SeleniumDocumentation]。</span><span class="sxs-lookup"><span data-stu-id="db79c-208">To learn more about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].</span></span>  
+<span data-ttu-id="84da0-208">若要了解有关 WebDriver 以及如何使用 Selenium 编写自动 WebDriver 测试的信息，请导航到 [Selenium 文档][SeleniumDocumentation]。</span><span class="sxs-lookup"><span data-stu-id="84da0-208">To learn more about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].</span></span>  
 
-## <span data-ttu-id="db79c-209">联系 Microsoft Edge 开发工具团队</span><span class="sxs-lookup"><span data-stu-id="db79c-209">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="84da0-209">联系 Microsoft Edge 开发工具团队</span><span class="sxs-lookup"><span data-stu-id="84da0-209">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
-<span data-ttu-id="db79c-210">Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Microsoft Edge 的反馈。</span><span class="sxs-lookup"><span data-stu-id="db79c-210">The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.</span></span>  <span data-ttu-id="db79c-211">若要向团队发送问题和意见，请选择 Microsoft Edge \*\*\*\* DevTools 中的"发送反馈"图标或发送推文[@EdgeDevTools。][TwitterTweetEdgeDevTools]</span><span class="sxs-lookup"><span data-stu-id="db79c-211">To send the team your questions and comments, choose the **Send Feedback** icon in the Microsoft Edge DevTools or send a tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].</span></span>  
+<span data-ttu-id="84da0-210">Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Microsoft Edge 的反馈。</span><span class="sxs-lookup"><span data-stu-id="84da0-210">The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.</span></span>  <span data-ttu-id="84da0-211">若要向团队发送问题和意见，请选择 Microsoft Edge \*\*\*\* DevTools 中的"发送反馈"图标或发送推文[@EdgeDevTools。][TwitterTweetEdgeDevTools]</span><span class="sxs-lookup"><span data-stu-id="84da0-211">To send the team your questions and comments, choose the **Send Feedback** icon in the Microsoft Edge DevTools or send a tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].</span></span>  
 
 :::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
-   <span data-ttu-id="db79c-213">Microsoft **Edge** DevTools 中的"发送反馈"图标</span><span class="sxs-lookup"><span data-stu-id="db79c-213">The **Send Feedback** icon in the Microsoft Edge DevTools</span></span>  
+   <span data-ttu-id="84da0-213">Microsoft Edge DevTools 中的**发送反馈**图标</span><span class="sxs-lookup"><span data-stu-id="84da0-213">The **Send Feedback** icon in the Microsoft Edge DevTools</span></span>  
 :::image-end:::  
 
 <!-- links -->  

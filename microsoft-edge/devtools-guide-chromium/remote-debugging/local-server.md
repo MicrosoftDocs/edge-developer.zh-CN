@@ -1,18 +1,18 @@
 ---
-description: 在开发计算机 web 服务器上托管网站，然后从 Android 设备访问内容。
+description: 在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。
 title: 访问本地服务器
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f994092460f090743119d7304bfe12aa28556b19
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 16c9927ce4548d71681d35e643aea0a6c44ec75a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125410"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398208"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,108 +28,108 @@ ms.locfileid: "11125410"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="b3101-104">访问本地服务器</span><span class="sxs-lookup"><span data-stu-id="b3101-104">Access local servers</span></span>  
+# <a name="access-local-servers"></a><span data-ttu-id="0396c-104">访问本地服务器</span><span class="sxs-lookup"><span data-stu-id="0396c-104">Access local servers</span></span>  
 
-<span data-ttu-id="b3101-105">在开发计算机 web 服务器上托管网站，然后从 Android 设备访问内容。</span><span class="sxs-lookup"><span data-stu-id="b3101-105">Host a site on a development machine web server, then access the content from an Android device.</span></span>  
+<span data-ttu-id="0396c-105">在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。</span><span class="sxs-lookup"><span data-stu-id="0396c-105">Host a site on a development machine web server, then access the content from an Android device.</span></span>  
 
-<span data-ttu-id="b3101-106">使用 USB 电缆和 Microsoft Edge DevTools，从开发计算机运行网站，然后在 Android 设备上查看网站。</span><span class="sxs-lookup"><span data-stu-id="b3101-106">With a USB cable and Microsoft Edge DevTools, run a site from a development machine and then view the site on an Android device.</span></span>  
+<span data-ttu-id="0396c-106">使用 USB 电缆和 Microsoft Edge DevTools，从开发计算机运行站点，然后在 Android 设备上查看站点。</span><span class="sxs-lookup"><span data-stu-id="0396c-106">With a USB cable and Microsoft Edge DevTools, run a site from a development machine and then view the site on an Android device.</span></span>  
 
-### <span data-ttu-id="b3101-107">摘要</span><span class="sxs-lookup"><span data-stu-id="b3101-107">Summary</span></span>  
+### <a name="summary"></a><span data-ttu-id="0396c-107">摘要</span><span class="sxs-lookup"><span data-stu-id="0396c-107">Summary</span></span>  
 
-*   <span data-ttu-id="b3101-108">通过端口转发，你可以查看由 Android 设备上的开发计算机中运行的 web 服务器托管的内容。</span><span class="sxs-lookup"><span data-stu-id="b3101-108">Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.</span></span>  
-*   <span data-ttu-id="b3101-109">如果 web 服务器使用自定义域，请将 Android 设备设置为使用自定义域映射访问该域中的内容。</span><span class="sxs-lookup"><span data-stu-id="b3101-109">If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.</span></span>  
+*   <span data-ttu-id="0396c-108">通过端口转发，您可以查看在 Android 设备上开发计算机上运行的 Web 服务器承载的内容。</span><span class="sxs-lookup"><span data-stu-id="0396c-108">Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.</span></span>  
+*   <span data-ttu-id="0396c-109">如果 Web 服务器使用的是自定义域，请设置 Android 设备以使用自定义域映射访问该域中的内容。</span><span class="sxs-lookup"><span data-stu-id="0396c-109">If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.</span></span>  
 
-## <span data-ttu-id="b3101-110">设置端口转发</span><span class="sxs-lookup"><span data-stu-id="b3101-110">Set up port forwarding</span></span>  
+## <a name="set-up-port-forwarding"></a><span data-ttu-id="0396c-110">设置端口转发</span><span class="sxs-lookup"><span data-stu-id="0396c-110">Set up port forwarding</span></span>  
 
-<span data-ttu-id="b3101-111">通过端口转发，Android 设备可以访问在开发计算机上运行的 web 服务器上承载的内容。</span><span class="sxs-lookup"><span data-stu-id="b3101-111">Port forwarding enables your Android device to access content that is being hosted on the web server running in your development machine.</span></span>  <span data-ttu-id="b3101-112">端口转发的工作原理是在 Android 设备上创建一个映射到开发计算机上的 TCP 端口的侦听 TCP 端口。</span><span class="sxs-lookup"><span data-stu-id="b3101-112">Port forwarding works by creating a listening TCP port on your Android device that maps to a TCP port on your development machine.</span></span>  <span data-ttu-id="b3101-113">端口之间的流量通过 Android 设备和开发计算机之间的 USB 连接进行传输，因此连接不依赖于你的网络配置。</span><span class="sxs-lookup"><span data-stu-id="b3101-113">Traffic between the ports travel through the USB connection between your Android device and development machine, so the connection does not depend on your network configuration.</span></span>  
+<span data-ttu-id="0396c-111">通过端口转发，Android 设备可以访问托管在开发计算机中运行的 Web 服务器上的内容。</span><span class="sxs-lookup"><span data-stu-id="0396c-111">Port forwarding enables your Android device to access content that is being hosted on the web server running in your development machine.</span></span>  <span data-ttu-id="0396c-112">端口转发的工作原理是，在 Android 设备上创建映射到开发计算机上 TCP 端口的侦听 TCP 端口。</span><span class="sxs-lookup"><span data-stu-id="0396c-112">Port forwarding works by creating a listening TCP port on your Android device that maps to a TCP port on your development machine.</span></span>  <span data-ttu-id="0396c-113">端口之间的流量通过 Android 设备和开发计算机之间的 USB 连接传输，因此连接不依赖于网络配置。</span><span class="sxs-lookup"><span data-stu-id="0396c-113">Traffic between the ports travel through the USB connection between your Android device and development machine, so the connection does not depend on your network configuration.</span></span>  
 
-<span data-ttu-id="b3101-114">要启用端口转发，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="b3101-114">To enable port forwarding:</span></span>  
+<span data-ttu-id="0396c-114">启用端口转发：</span><span class="sxs-lookup"><span data-stu-id="0396c-114">To enable port forwarding:</span></span>  
 
-1.  <span data-ttu-id="b3101-115">在开发计算机和 Android 设备之间设置 [远程调试][RemoteDebuggingGettingStarted] 。</span><span class="sxs-lookup"><span data-stu-id="b3101-115">Set up [remote debugging][RemoteDebuggingGettingStarted] between your development machine and your Android device.</span></span>  <span data-ttu-id="b3101-116">完成后，你应在 " **检查设备** " 对话框的左侧菜单中看到 Android 设备和 **连接** 状态指示器。</span><span class="sxs-lookup"><span data-stu-id="b3101-116">When you are finished, you should see your Android device in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.</span></span>  
-1.  <span data-ttu-id="b3101-117">在 DevTools 中的 " **检查设备** " 对话框中，启用 **端口转发**。</span><span class="sxs-lookup"><span data-stu-id="b3101-117">In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.</span></span>  
-1.  <span data-ttu-id="b3101-118">选择 " **添加规则**"。</span><span class="sxs-lookup"><span data-stu-id="b3101-118">Choose **Add rule**.</span></span>  
+1.  <span data-ttu-id="0396c-115">在 [开发计算机和][RemoteDebuggingGettingStarted] Android 设备之间设置远程调试。</span><span class="sxs-lookup"><span data-stu-id="0396c-115">Set up [remote debugging][RemoteDebuggingGettingStarted] between your development machine and your Android device.</span></span>  <span data-ttu-id="0396c-116">完成后，Android 设备应显示在"检查设备"对话框的左侧菜单**和"已**连接\*\*\*\* 状态"指示器中。</span><span class="sxs-lookup"><span data-stu-id="0396c-116">When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.</span></span>  
+1.  <span data-ttu-id="0396c-117">在 **DevTools 中的** "检查设备"对话框中，启用 **端口转发**。</span><span class="sxs-lookup"><span data-stu-id="0396c-117">In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.</span></span>  
+1.  <span data-ttu-id="0396c-118">选择 **"添加规则"。**</span><span class="sxs-lookup"><span data-stu-id="0396c-118">Choose **Add rule**.</span></span>  
     
     :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="添加端口转发规则" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
-       <span data-ttu-id="b3101-120">添加端口转发规则</span><span class="sxs-lookup"><span data-stu-id="b3101-120">Adding a port forwarding rule</span></span>  
+       <span data-ttu-id="0396c-120">添加端口转发规则</span><span class="sxs-lookup"><span data-stu-id="0396c-120">Adding a port forwarding rule</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="b3101-121">在左侧的 " **设备端口** " 文本框中，输入 `localhost` 要在 Android 设备上访问该网站的端口号。</span><span class="sxs-lookup"><span data-stu-id="b3101-121">In the **Device port** textbox on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.</span></span>  <span data-ttu-id="b3101-122">例如，如果您想要从 enter 访问网站 `localhost:5000` `5000` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-122">For example, if you wanted to access the site from `localhost:5000` enter `5000`.</span></span>  
-1.  <span data-ttu-id="b3101-123">在右侧的 " **本地地址** " 文本框中，输入你的网站在你的开发计算机上运行的 web 服务器上的 IP 地址或主机名，后跟端口号。</span><span class="sxs-lookup"><span data-stu-id="b3101-123">In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.</span></span>  <span data-ttu-id="b3101-124">例如，如果您的网站在进入时 `localhost:7331` 运行 `localhost:7331` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-124">For example, if your site is running on `localhost:7331` enter `localhost:7331`.</span></span>  
-1.  <span data-ttu-id="b3101-125">选择“添加”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b3101-125">Choose **Add**.</span></span>  
+1.  <span data-ttu-id="0396c-121">在左侧 **的** "设备端口文本框"中，输入希望其能够访问 Android 设备上的 `localhost` 站点的端口号。</span><span class="sxs-lookup"><span data-stu-id="0396c-121">In the **Device port** textbox on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.</span></span>  <span data-ttu-id="0396c-122">例如，如果要从 enter 访问 `localhost:5000` 网站 `5000` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-122">For example, if you wanted to access the site from `localhost:5000` enter `5000`.</span></span>  
+1.  <span data-ttu-id="0396c-123">在右侧 **本地** 地址文本框中，输入在开发计算机中运行的 Web 服务器上承载网站的 IP 地址或主机名，后跟端口号。</span><span class="sxs-lookup"><span data-stu-id="0396c-123">In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.</span></span>  <span data-ttu-id="0396c-124">例如，如果您的网站在 Enter 上运行 `localhost:7331` `localhost:7331` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-124">For example, if your site is running on `localhost:7331` enter `localhost:7331`.</span></span>  
+1.  <span data-ttu-id="0396c-125">选择“**添加**”。</span><span class="sxs-lookup"><span data-stu-id="0396c-125">Choose **Add**.</span></span>  
     
-<span data-ttu-id="b3101-126">端口转发现已设置。</span><span class="sxs-lookup"><span data-stu-id="b3101-126">Port forwarding is now set up.</span></span>  <span data-ttu-id="b3101-127">在 " **检查设备** " 对话框内的设备上的选项卡上，查看端口的状态指示器。</span><span class="sxs-lookup"><span data-stu-id="b3101-127">See the status indicator for the port forward on the tab on your device within the **Inspect Devices** dialog.</span></span>  
+<span data-ttu-id="0396c-126">现已设置端口转发。</span><span class="sxs-lookup"><span data-stu-id="0396c-126">Port forwarding is now set up.</span></span>  <span data-ttu-id="0396c-127">在"检查设备"对话框中，查看设备上选项卡上端口向前 **的状态** 指示器。</span><span class="sxs-lookup"><span data-stu-id="0396c-127">Review the status indicator for the port forward on the tab on your device within the **Inspect Devices** dialog.</span></span>  
 
-:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="添加端口转发规则" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
-   <span data-ttu-id="b3101-129">端口转发状态</span><span class="sxs-lookup"><span data-stu-id="b3101-129">Port forwarding status</span></span>  
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="端口转发状态" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+   <span data-ttu-id="0396c-129">端口转发状态</span><span class="sxs-lookup"><span data-stu-id="0396c-129">Port forwarding status</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b3101-130">若要查看内容，请在 Android 设备上打开 Microsoft Edge，然后转到在 `localhost` " **设备端口** " 字段中指定的端口。</span><span class="sxs-lookup"><span data-stu-id="b3101-130">To view the content, open up Microsoft Edge on your Android device and go to the `localhost` port that you specified in the **Device port** field.</span></span>  <span data-ttu-id="b3101-131">例如，如果您 `5000` 在 "" 字段中输入，请访问 `localhost:5000` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-131">For example, if you entered `5000` in the field, visit `localhost:5000`.</span></span>  
+<span data-ttu-id="0396c-130">若要查看内容，请打开 Android 设备上的 Microsoft Edge，然后转到你在"设备端口" `localhost` 字段中指定的 **端口** 。</span><span class="sxs-lookup"><span data-stu-id="0396c-130">To view the content, open up Microsoft Edge on your Android device and go to the `localhost` port that you specified in the **Device port** field.</span></span>  <span data-ttu-id="0396c-131">例如，如果在字段中 `5000` 输入，请访问 `localhost:5000` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-131">For example, if you entered `5000` in the field, visit `localhost:5000`.</span></span>  
 
-## <span data-ttu-id="b3101-132">映射到自定义本地域</span><span class="sxs-lookup"><span data-stu-id="b3101-132">Map to custom local domains</span></span>  
+## <a name="map-to-custom-local-domains"></a><span data-ttu-id="0396c-132">映射到自定义本地域</span><span class="sxs-lookup"><span data-stu-id="0396c-132">Map to custom local domains</span></span>  
 
-<span data-ttu-id="b3101-133">自定义域映射使你能够从使用自定义域的开发计算机上的 web 服务器查看 Android 设备上的内容。</span><span class="sxs-lookup"><span data-stu-id="b3101-133">Custom domain mapping enables you to view content on an Android device from a web server on your development machine that is using a custom domain.</span></span>  
+<span data-ttu-id="0396c-133">通过自定义域映射，您可以查看 Android 设备上使用自定义域的开发计算机上 Web 服务器的内容。</span><span class="sxs-lookup"><span data-stu-id="0396c-133">Custom domain mapping enables you to view content on an Android device from a web server on your development machine that is using a custom domain.</span></span>  
 
-<span data-ttu-id="b3101-134">例如，假设您的网站使用的第三方 JavaScript 库仅适用于域 `microsoft-edge.devtools` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-134">For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.</span></span>  <span data-ttu-id="b3101-135">因此，你在开发计算机上的文件中创建一个条目， `hosts` 以便将此域映射到 `localhost` \ (例如 `127.0.0.1 microsoft-edge.devtools` \ ) 。</span><span class="sxs-lookup"><span data-stu-id="b3101-135">So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` \(for example, `127.0.0.1 microsoft-edge.devtools`\).</span></span>  <span data-ttu-id="b3101-136">设置自定义域映射和端口转发后，在 Android 设备上的 URL 处查看网站 `microsoft-edge.devtools` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-136">After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.</span></span>  
+<span data-ttu-id="0396c-134">例如，假设您的网站使用仅在域上工作的第三方 JavaScript 库 `microsoft-edge.devtools` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-134">For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.</span></span>  <span data-ttu-id="0396c-135">因此，在开发计算机上创建文件条目，以将此域映射到 `hosts` `localhost` \ (例如 `127.0.0.1 microsoft-edge.devtools` ，\) 。</span><span class="sxs-lookup"><span data-stu-id="0396c-135">So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` \(for example, `127.0.0.1 microsoft-edge.devtools`\).</span></span>  <span data-ttu-id="0396c-136">设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-136">After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.</span></span>  
 
-### <span data-ttu-id="b3101-137">设置到代理服务器的端口转发</span><span class="sxs-lookup"><span data-stu-id="b3101-137">Set up port forwarding to proxy server</span></span>  
+### <a name="set-up-port-forwarding-to-proxy-server"></a><span data-ttu-id="0396c-137">设置到代理服务器的端口转发</span><span class="sxs-lookup"><span data-stu-id="0396c-137">Set up port forwarding to proxy server</span></span>  
 
-<span data-ttu-id="b3101-138">若要映射自定义域，必须在开发计算机上运行代理服务器。</span><span class="sxs-lookup"><span data-stu-id="b3101-138">To map a custom domain you must run a proxy server on your development machine.</span></span>  <span data-ttu-id="b3101-139">代理服务器的示例包括 [Charles][CharlesWebDebuggingProxy]、 [Squid][SquidOptimisingWebDelivery]和 [Fiddler][FiddlerWebDebuggingProxy]。</span><span class="sxs-lookup"><span data-stu-id="b3101-139">Examples of proxy servers are [Charles][CharlesWebDebuggingProxy], [Squid][SquidOptimisingWebDelivery], and [Fiddler][FiddlerWebDebuggingProxy].</span></span>  
+<span data-ttu-id="0396c-138">若要映射自定义域，必须在开发计算机上运行代理服务器。</span><span class="sxs-lookup"><span data-stu-id="0396c-138">To map a custom domain you must run a proxy server on your development machine.</span></span>  <span data-ttu-id="0396c-139">代理服务器的示例包括[，而Fiddler][CharlesWebDebuggingProxy]就是[][SquidOptimisingWebDelivery][这些代理服务器][FiddlerWebDebuggingProxy]。</span><span class="sxs-lookup"><span data-stu-id="0396c-139">Examples of proxy servers are [Charles][CharlesWebDebuggingProxy], [Squid][SquidOptimisingWebDelivery], and [Fiddler][FiddlerWebDebuggingProxy].</span></span>  
 
-<span data-ttu-id="b3101-140">若要设置到代理的端口转发，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="b3101-140">To set up port forwarding to a proxy:</span></span>  
+<span data-ttu-id="0396c-140">设置到代理的端口转发：</span><span class="sxs-lookup"><span data-stu-id="0396c-140">To set up port forwarding to a proxy:</span></span>  
 
-1.  <span data-ttu-id="b3101-141">运行代理服务器并记录它所使用的端口。</span><span class="sxs-lookup"><span data-stu-id="b3101-141">Run the proxy server and record the port that it is using.</span></span>  
+1.  <span data-ttu-id="0396c-141">运行代理服务器并记录它使用的端口。</span><span class="sxs-lookup"><span data-stu-id="0396c-141">Run the proxy server and record the port that it is using.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="b3101-142">代理服务器和 web 服务器必须在不同的端口上运行。</span><span class="sxs-lookup"><span data-stu-id="b3101-142">The proxy server and your web server must run on different ports.</span></span>  
+    > <span data-ttu-id="0396c-142">代理服务器和 Web 服务器必须在不同的端口上运行。</span><span class="sxs-lookup"><span data-stu-id="0396c-142">The proxy server and your web server must run on different ports.</span></span>  
     
-1.  <span data-ttu-id="b3101-143">设置将 [端口转发](#set-up-port-forwarding) 到 Android 设备。</span><span class="sxs-lookup"><span data-stu-id="b3101-143">Set up [port forwarding](#set-up-port-forwarding) to your Android device.</span></span>  <span data-ttu-id="b3101-144">对于 " **本地地址** " 字段，输入 `localhost:` 后跟代理服务器运行的端口。</span><span class="sxs-lookup"><span data-stu-id="b3101-144">For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.</span></span>  <span data-ttu-id="b3101-145">例如，如果它在端口上运行 `8000` ，请导航到 `localhost:8000` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-145">For example, if it is running on port `8000`, navigate to `localhost:8000`.</span></span>  <span data-ttu-id="b3101-146">在 " **设备端口** " 字段中输入希望 Android 设备侦听的号码，例如 `3333` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-146">In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.</span></span>  
+1.  <span data-ttu-id="0396c-143">设置 [到 Android 设备的](#set-up-port-forwarding) 端口转发。</span><span class="sxs-lookup"><span data-stu-id="0396c-143">Set up [port forwarding](#set-up-port-forwarding) to your Android device.</span></span>  <span data-ttu-id="0396c-144">对于 **本地地址** 字段，输入后跟 `localhost:` 运行代理服务器的端口。</span><span class="sxs-lookup"><span data-stu-id="0396c-144">For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.</span></span>  <span data-ttu-id="0396c-145">例如，如果它在端口上运行 `8000` ，请导航到 `localhost:8000` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-145">For example, if it is running on port `8000`, navigate to `localhost:8000`.</span></span>  <span data-ttu-id="0396c-146">在 **设备端口** 字段中，输入希望 Android 设备侦听的号码，例如 `3333` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-146">In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.</span></span>  
     
-### <span data-ttu-id="b3101-147">在设备上配置代理服务器设置</span><span class="sxs-lookup"><span data-stu-id="b3101-147">Configure proxy settings on your device</span></span>  
+### <a name="configure-proxy-settings-on-your-device"></a><span data-ttu-id="0396c-147">在设备上配置代理设置</span><span class="sxs-lookup"><span data-stu-id="0396c-147">Configure proxy settings on your device</span></span>  
 
-<span data-ttu-id="b3101-148">接下来，你需要将 Android 设备配置为与代理服务器通信。</span><span class="sxs-lookup"><span data-stu-id="b3101-148">Next, you need to configure your Android device to communicate with the proxy server.</span></span>  
+<span data-ttu-id="0396c-148">接下来，你需要将 Android 设备配置为与代理服务器进行通信。</span><span class="sxs-lookup"><span data-stu-id="0396c-148">Next, you need to configure your Android device to communicate with the proxy server.</span></span>  
 
-1.  <span data-ttu-id="b3101-149">在 Android 设备上，转到 "**设置**  >  **wi-fi**"。</span><span class="sxs-lookup"><span data-stu-id="b3101-149">On your Android device go to **Settings** > **Wi-Fi**.</span></span>  
-1.  <span data-ttu-id="b3101-150">长按您当前连接的网络的名称。</span><span class="sxs-lookup"><span data-stu-id="b3101-150">Long-press the name of the network to which you are currently connected.</span></span>  
+1.  <span data-ttu-id="0396c-149">在 Android 设备上，导航到"**设置**  >  **WLAN"。**</span><span class="sxs-lookup"><span data-stu-id="0396c-149">On your Android device, navigate to **Settings** > **Wi-Fi**.</span></span>  
+1.  <span data-ttu-id="0396c-150">长按当前连接的网络的名称。</span><span class="sxs-lookup"><span data-stu-id="0396c-150">Long-press the name of the network to which you are currently connected.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="b3101-151">代理设置适用于每个网络。</span><span class="sxs-lookup"><span data-stu-id="b3101-151">Proxy settings apply per network.</span></span>  
+    > <span data-ttu-id="0396c-151">代理设置适用于每个网络。</span><span class="sxs-lookup"><span data-stu-id="0396c-151">Proxy settings apply per network.</span></span>  
     
-1.  <span data-ttu-id="b3101-152">选择 " **修改网络**"。</span><span class="sxs-lookup"><span data-stu-id="b3101-152">Choose **Modify network**.</span></span>  
-1.  <span data-ttu-id="b3101-153">选择 " **高级选项**"。</span><span class="sxs-lookup"><span data-stu-id="b3101-153">Choose **Advanced options**.</span></span>  <span data-ttu-id="b3101-154">将显示代理设置。</span><span class="sxs-lookup"><span data-stu-id="b3101-154">The proxy settings display.</span></span>  
-1.  <span data-ttu-id="b3101-155">选择 " **代理** " 菜单，然后选择 " **手动**"。</span><span class="sxs-lookup"><span data-stu-id="b3101-155">Select the **Proxy** menu and choose **Manual**.</span></span>  
-1.  <span data-ttu-id="b3101-156">对于 " **代理主机名** " 字段，请输入 `localhost` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-156">For the **Proxy hostname** field, enter `localhost`.</span></span>  
-1.  <span data-ttu-id="b3101-157">对于 " **代理服务器端口** " 字段，输入您在上一节中为 " **设备端口** " 输入的端口号。</span><span class="sxs-lookup"><span data-stu-id="b3101-157">For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.</span></span>  
-1.  <span data-ttu-id="b3101-158">选择 " **保存**"。</span><span class="sxs-lookup"><span data-stu-id="b3101-158">Choose **Save**.</span></span>  
+1.  <span data-ttu-id="0396c-152">选择 **"修改网络"。**</span><span class="sxs-lookup"><span data-stu-id="0396c-152">Choose **Modify network**.</span></span>  
+1.  <span data-ttu-id="0396c-153">选择 **"高级"选项**。</span><span class="sxs-lookup"><span data-stu-id="0396c-153">Choose **Advanced options**.</span></span>  <span data-ttu-id="0396c-154">显示代理设置。</span><span class="sxs-lookup"><span data-stu-id="0396c-154">The proxy settings display.</span></span>  
+1.  <span data-ttu-id="0396c-155">选择代理**菜单**，然后选择"**手动"。**</span><span class="sxs-lookup"><span data-stu-id="0396c-155">Choose the **Proxy** menu and choose **Manual**.</span></span>  
+1.  <span data-ttu-id="0396c-156">对于" **代理主机名"** 字段，输入 `localhost` 。</span><span class="sxs-lookup"><span data-stu-id="0396c-156">For the **Proxy hostname** field, enter `localhost`.</span></span>  
+1.  <span data-ttu-id="0396c-157">对于 **"代理端口** "字段，输入在上一部分中为 **设备端口** 输入的端口号。</span><span class="sxs-lookup"><span data-stu-id="0396c-157">For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.</span></span>  
+1.  <span data-ttu-id="0396c-158">选择 **"保存"。**</span><span class="sxs-lookup"><span data-stu-id="0396c-158">Choose **Save**.</span></span>  
     
-<span data-ttu-id="b3101-159">通过这些设置，你的设备会将其所有请求转发到你的开发计算机上的代理。</span><span class="sxs-lookup"><span data-stu-id="b3101-159">With these settings, your device forwards all of its requests to the proxy on your development machine.</span></span>  <span data-ttu-id="b3101-160">代理代表你的设备发出请求，因此对自定义本地域的请求已正确解析。</span><span class="sxs-lookup"><span data-stu-id="b3101-160">The proxy makes requests on behalf of your device, so requests to your customized local domain are properly resolved.</span></span>  
+<span data-ttu-id="0396c-159">借助这些设置，你的设备会将它的所有请求转发到开发计算机上代理。</span><span class="sxs-lookup"><span data-stu-id="0396c-159">With these settings, your device forwards all of its requests to the proxy on your development machine.</span></span>  <span data-ttu-id="0396c-160">代理代表设备提出请求，因此正确解决了对自定义本地域的请求。</span><span class="sxs-lookup"><span data-stu-id="0396c-160">The proxy makes requests on behalf of your device, so requests to your customized local domain are properly resolved.</span></span>  
 
-<span data-ttu-id="b3101-161">现在，在 Android 设备上访问自定义域，就像在开发计算机上一样。</span><span class="sxs-lookup"><span data-stu-id="b3101-161">Now access custom domains on your Android device just like on the development machine.</span></span>  
+<span data-ttu-id="0396c-161">现在访问 Android 设备上的自定义域，就像在开发计算机上一样。</span><span class="sxs-lookup"><span data-stu-id="0396c-161">Now access custom domains on your Android device just like on the development machine.</span></span>  
 
-<span data-ttu-id="b3101-162">如果您的 web 服务器在非标准端口上运行，请记住在从 Android 设备请求内容时指定该端口。</span><span class="sxs-lookup"><span data-stu-id="b3101-162">If your web server is running off of a non-standard port, remember to specify the port when requesting the content from your Android device.</span></span>  <span data-ttu-id="b3101-163">例如，如果 web 服务器在端口上使用自定义域 `microsoft-edge.devtools` `7331` ，则当您从 Android 设备查看网站时，应使用 URL `microsoft-edge.devtools:7331` 。</span><span class="sxs-lookup"><span data-stu-id="b3101-163">For example, if your web server is using the custom domain `microsoft-edge.devtools` on port `7331`, when you view the site from your Android device you should be using the URL `microsoft-edge.devtools:7331`.</span></span>  
+<span data-ttu-id="0396c-162">如果 Web 服务器运行的是非标准端口，请记住在从 Android 设备请求内容时指定端口。</span><span class="sxs-lookup"><span data-stu-id="0396c-162">If your web server is running off of a non-standard port, remember to specify the port when requesting the content from your Android device.</span></span>  <span data-ttu-id="0396c-163">例如，如果 Web 服务器在端口上使用自定义域，则当您从 Android 设备查看网站时 `microsoft-edge.devtools` `7331` ，应该使用 `microsoft-edge.devtools:7331` URL。</span><span class="sxs-lookup"><span data-stu-id="0396c-163">For example, if your web server is using the custom domain `microsoft-edge.devtools` on port `7331`, when you view the site from your Android device you should be using the URL `microsoft-edge.devtools:7331`.</span></span>  
 
 > [!TIP]
-> <span data-ttu-id="b3101-164">若要恢复正常浏览，请记住在从开发计算机断开连接后还原 Android 设备上的代理设置。</span><span class="sxs-lookup"><span data-stu-id="b3101-164">To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.</span></span>  
+> <span data-ttu-id="0396c-164">若要恢复正常浏览，请记住在断开与开发计算机连接后恢复 Android 设备上的代理设置。</span><span class="sxs-lookup"><span data-stu-id="0396c-164">To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.</span></span>  
 
-## <span data-ttu-id="b3101-165">与 Microsoft Edge 开发人员工具团队联系</span><span class="sxs-lookup"><span data-stu-id="b3101-165">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="0396c-165">联系 Microsoft Edge 开发工具团队</span><span class="sxs-lookup"><span data-stu-id="0396c-165">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: ./index.md "开始使用 "远程调试 Android 设备" |Microsoft 文档"  
+[RemoteDebuggingGettingStarted]: ./index.md "开始远程调试 Android 设备|Microsoft Docs"  
 
-[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web 调试代理"  
+[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "而将调试代理"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid：优化 Web 送达"  
+[SquidOptimisingWebDelivery]: https://www.squid-cache.org "quid ： 改进 Web 传递"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler-免费 Web 调试代理"  
+[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - 免费 Web 调试代理"  
 
 > [!NOTE]
-> <span data-ttu-id="b3101-170">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="b3101-170">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="b3101-171">原始页面可在 [此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) 找到，并由 [Kayce Basques][KayceBasques] (技术作者、Chrome DevTools \ & Lighthouse \ ) 和 [Meggin Kearney][MegginKearney] \ (技术作者 \ ) 创作。</span><span class="sxs-lookup"><span data-stu-id="b3101-171">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).</span></span>  
+> <span data-ttu-id="0396c-170">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="0396c-170">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="0396c-171">原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)由[一位（][KayceBasques]该链接人）\ (Technical Writer、Chrome DevTools \& Lighthouse\) 和[Meggin Kearney][MegginKearney] \ (Tech Writer\) 创作。</span><span class="sxs-lookup"><span data-stu-id="0396c-171">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="b3101-173">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="b3101-173">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="0396c-173">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="0396c-173">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
