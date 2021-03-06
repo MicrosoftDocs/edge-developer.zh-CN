@@ -3,320 +3,162 @@ description: DevTools 协议版本 0.2 (EdgeHTML) 页面域参考。 与检查�
 title: '页面域 - DevTools 协议版本 0.2 (EdgeHTML) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2f1849a2e2aa2f53cef9dff5d03ac991d368a6f3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d969dd100164ace61445a4618174cfa943dcfd2b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232083"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398845"
 ---
-# 页面域 - DevTools 协议版本 0.2 (EdgeHTML)   
+# <a name="page-domain---devtools-protocol-version-02-edgehtml"></a>页面域 - DevTools 协议版本 0.2 (EdgeHTML)   
 
-与检查的页面相关的操作和事件属于页面域。
+与检查的页面相关的操作和事件属于页面域。  
 
-| | |
-|-|-|
-| [**方法**](#methods) | [启用](#enable)， [禁用](#disable)， [导航](#navigate)， [getFrameTree](#getframetree) |
-| [**事件**](#events) | [frameAttached](#frameattached)， [frameDetached](#framedetached)， [frameNavigated](#framenavigated)， [loadEventFired](#loadeventfired)， [domContentEventFired](#domcontenteventfired) |
-| [**类型**](#types) | [FrameId](#frameid)， [Frame](#frame)， [FrameTree](#frametree) |
-## 方法
+| 分类 | 成员 |  
+|:--- |:--- |  
+| [方法](#methods) | [enable](#enable)， [disable](#disable)， [navigate](#navigate)， [getFrameTree](#getframetree) |  
+| [事件](#events) | [frameAttached](#frameattached)， [frameDetached](#framedetached)， [frameNavigated](#framenavigated)， [loadEventFired](#loadeventfired)， [domContentEventFired](#domcontenteventfired) |  
+| [类型](#types) | [FrameId](#frameid)、 [Frame](#frame)、 [FrameTree](#frametree) |  
 
-### “启用”
-启用页面域通知。
+## <a name="methods"></a>方法  
 
-</p>
+### <a name="enable"></a>“启用”  
 
----
+启用页面域通知。  
 
-### “禁用”
-禁用页面域通知。
+&nbsp;  
 
-</p>
+---  
 
----
+### <a name="disable"></a>“禁用”  
 
-### 导航
-将当前页面导航到给定 URL。
+禁用页面域通知。  
 
-<table>
-    <thead>
-        <tr>
-            <th>参数</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>导航到页面的 URL。</td>
-        </tr>
-        <tr>
-            <td>frameId <br/> <i>可选</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>要导航的框架 ID。 如果未指定，将导航到顶部页面。</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>返回</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>将导航的框架 ID。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+&nbsp;  
 
----
+---  
 
-### getFrameTree
-返回当前框架树结构。
+### <a name="navigate"></a>导航  
 
-<table>
-    <thead>
-        <tr>
-            <th>返回</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameTree</td>
-            <td><a href="#frametree"><code class="flyout">FrameTree</code></a></td>
-            <td>显示框架树结构。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+将当前页面导航到给定 URL。  
 
----
+| 参数 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| url | `string` | 导航到页面的 URL。 |  
+| frameId \ (optional\)  | [FrameId](#frameid) | 要导航的框架 ID。  如果未指定，将导航顶部页面。 |  
 
-## 事件
+| 返回 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | 将导航的帧 ID。 |  
 
-### frameAttached
-当框架已连接到其父级时触发。
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>参数</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>已附加的帧的 ID。</td>
-        </tr>
-        <tr>
-            <td>parentFrameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>父框架标识符。</td>
-        </tr>
-        <tr>
-            <td>stack <br/> <i>可选</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>框架的附加时间 JavaScript 堆栈跟踪，仅在框架从脚本启动时设置。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getframetree"></a>getFrameTree  
 
----
+返回当前框架树结构。  
 
-### frameDetached
-当框架与父级分离时触发。
+| 返回 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| frameTree | [FrameTree](#frametree) | 显示框架树结构。 |  
 
-<table>
-    <thead>
-        <tr>
-            <th>参数</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>已分离的帧的 ID。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+## <a name="events"></a>事件  
 
-### frameNavigated
-帧导航完成后触发。
+### <a name="frameattached"></a>frameAttached  
 
-<table>
-    <thead>
-        <tr>
-            <th>参数</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frame</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Frame 对象。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+当框架已连接到其父级时触发。  
 
----
+| 参数 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | 已附加的帧的 ID。 |  
+| parentFrameId | [FrameId](#frameid) | 父帧标识符。 |  
+| stack \ (optional\)  | [Runtime.StackTrace](./runtime.md#stacktrace) | 框架的附加时间 JavaScript 堆栈跟踪，仅在框架从脚本启动时设置。 |  
 
-### loadEventFired
-对应于 window.onload 事件。
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>参数</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>timestamp</td>
-            <td><code class="flyout">number</code></td>
-            <td>自纪元以来的毫秒数。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="framedetached"></a>frameDetached  
 
----
+当框架与父级分离时触发。  
 
-### domContentEventFired
-对应于 document.onDOMContentLoaded 事件。
+| 参数 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | 已分离的帧的 ID。 |  
 
-<table>
-    <thead>
-        <tr>
-            <th>参数</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>timestamp</td>
-            <td><code class="flyout">number</code></td>
-            <td>自纪元以来的毫秒数。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+### <a name="framenavigated"></a>frameNavigated  
 
-## 类型
+帧导航完成后触发。  
 
-### <a name="frameid"></a> FrameId `string`
+| 参数 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| frame | [帧](#frame) | Frame 对象。 |  
 
-唯一帧标识符。
+---  
 
-</p>
+### <a name="loadeventfired"></a>loadEventFired  
 
----
+对应于 `window.onload` 事件。  
 
-### <a name="frame"></a> 帧 `object`
+| 参数 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | 自纪元以来的毫秒数。 |  
 
-有关页面上框架的信息。
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>属性</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>帧唯一标识符。</td>
-        </tr>
-        <tr>
-            <td>parentId <br/> <i>可选</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>父框架唯一标识符。</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>可选</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>标记中指定的框架名称。</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>框架文档的 URL。</td>
-        </tr>
-        <tr>
-            <td>securityOrigin</td>
-            <td><code class="flyout">string</code></td>
-            <td>框架文档的安全来源。</td>
-        </tr>
-        <tr>
-            <td>mimeType</td>
-            <td><code class="flyout">string</code></td>
-            <td>框架文档的 mimeType，由浏览器确定。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domcontenteventfired"></a>domContentEventFired  
 
----
+对应于 `document.onDOMContentLoaded` 事件。  
 
-### <a name="frametree"></a> FrameTree `object`
+| 参数 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | 自纪元以来的毫秒数。 |  
 
-有关 Frame 层次结构的信息。
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>属性</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frame</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>此树项的框架信息。</td>
-        </tr>
-        <tr>
-            <td>childFrames <br/> <i>可选</i></td>
-            <td><a href="#frametree"><code class="flyout">FrameTree[]</code></a></td>
-            <td>子框架。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+## <a name="types"></a>类型  
 
----
+### <a name="frameid-string"></a>FrameId 字符串  
+
+<a name="frameid"></a>  
+
+唯一的帧标识符。  
+
+&nbsp;  
+
+---  
+
+### <a name="frame-object"></a>Frame 对象  
+
+<a name="frame"></a>  
+
+有关页面上框架的信息。  
+
+| 属性 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| id | [FrameId](#frameid) | 帧唯一标识符。 |  
+| parentId \ (optional\)  | [FrameId](#frameid) | 父帧唯一标识符。 |  
+| name \ (optional\)  | `string` | 标记中指定的框架名称。 |  
+| url | `string` | 框架文档的 URL。 |  
+| securityOrigin | `string` | 框架文档的安全来源。 |  
+| mimeType | `string` | 框架文档的 mimeType，由浏览器确定。 |  
+
+---  
+
+### <a name="frametree-object"></a>FrameTree 对象  
+
+<a name="frametree"></a>  
+
+有关 Frame 层次结构的信息。  
+
+| 属性 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| frame | [帧](#frame) | 此树项的框架信息。 |  
+| childFrames \ (optional\)  | [FrameTree[]](#frametree) | 子框架。 |  
+
+---  

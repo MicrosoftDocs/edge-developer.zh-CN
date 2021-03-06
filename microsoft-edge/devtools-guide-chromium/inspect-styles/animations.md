@@ -1,18 +1,18 @@
 ---
-description: 通过 Microsoft Edge DevTools 动画检查器检查和修改动画。
+description: 使用 Microsoft Edge DevTools 动画检查器检查和修改动画。
 title: 检查动画
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: fed686c07acd0648ac512dac131d85a317fb64eb
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 742096f13179de2ad1a95dc9fa62d2bbf3d7c226
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124773"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397732"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,69 +28,69 @@ ms.locfileid: "11124773"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# 检查动画  
+# <a name="inspect-animations"></a>检查动画  
 
-通过 Microsoft Edge DevTools 动画检查器检查和修改动画。  
+使用 Microsoft Edge DevTools 动画检查器检查和修改动画。  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
    动画检查器  
 :::image-end:::  
 
-### 摘要  
+### <a name="summary"></a>摘要  
 
-*   通过打开 "动画检查器" 捕获动画。  动画检查器会自动检测动画并将其排序为多个组。  
-*   通过减速、重放每个动画或查看源代码来检查动画。  
+*   通过打开动画检查器捕获动画。  动画检查器自动检测动画并按组排序。  
+*   通过减慢每个动画的速度、重播每个动画或查看源代码来检查动画。  
 *   通过更改计时、延迟、持续时间或关键帧偏移来修改动画。  
 
-## 概述  
+## <a name="overview"></a>概述  
 
 Microsoft Edge DevTools 动画检查器有两个主要用途。  
 
-*   检查动画。  你希望减慢、重播或检查动画组的源代码。  
-*   修改动画。  要修改动画组的计时、延迟、持续时间或关键帧偏移量。  当前不支持贝塞尔编辑和关键帧编辑。  
+*   检查动画。  你想要减慢、重播或检查动画组的源代码。  
+*   修改动画。  你想要修改动画组的计时、延迟、持续时间或关键帧偏移。  贝塞尔编辑和关键帧编辑当前不受支持。  
 
-动画检查器支持 CSS 动画、CSS 转换和 web 动画。  `requestAnimationFrame` 当前不支持动画。  
+动画检查器支持 CSS 动画、CSS 过渡和 Web 动画。  `requestAnimationFrame` 动画当前不受支持。  
 
-### 什么是动画组？  
+### <a name="what-is-an-animation-group"></a>什么是动画组？  
 
-动画组是可能相互关联的一组动画。  目前，web 没有组动画的真正概念，因此动画设计器和开发人员必须编写和时间单个动画，以便动画呈现为一个连贯的视觉效果。  动画检查器将预测哪些动画基于开始时间 \ (不包括延迟，如此 ) 。  动画检查器还会并排对动画进行分组。  
-换句话说，在同一脚本块中同时触发的一组动画将组合在一起。  如果动画是异步的，则将其放置在单独的组中。  
+动画组是一组相互相关的动画。  目前，Web 没有组动画的真实概念，因此运动设计人员和开发人员必须撰写各个动画并设置动画时间，以便动画呈现为一个一致的视觉效果。  动画检查器根据开始时间 \ (排除延迟等来预测相关的动画\) 。  动画检查器还会将动画并排分组。  
+换句话说，在同一脚本块中触发的一组动画组合在一起。  如果动画是异步的，则它放置在单独的组中。  
 
-## 开始行动  
+## <a name="get-started"></a>入门  
 
-可通过两种方式打开 "动画" 检查器：  
+有两种方法可以打开动画检查器：  
 
-*   打开 " **自定义和控制" DevTools** 菜单  
-    1.  导航到 " **更多工具** " 子菜单。  
-    1.  选择 " **动画**"：  
+*   打开 **"自定义和控制 DevTools"** 菜单  
+    1.  导航到 **"更多工具"** 子菜单。  
+    1.  选择 **动画**：  
         
-        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
-           使用主菜单的**动画**  
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="使用主菜单的动画" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+           **使用主** 菜单的动画  
     :::image-end:::  
         
-*   打开 " **命令" 菜单**  
+*   打开 **命令菜单**  
     1.  键入 `Drawer: Show Animations`。  
 
-"动画" 检查器将在控制台抽屉旁边的选项卡中打开。  由于动画检查器是一个抽屉选项卡，因此您可以使用任何 DevTools 面板中的动画检查器。  
+动画检查器将在控制台工具 **旁边** 打开。  由于动画检查器是一个"箱"工具，因此可以使用任意 DevTools 面板中的动画检查器。  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
-   清空动画检查器  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="空动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+   空动画检查器  
 :::image-end:::  
 
-动画检查器分为四个主要部分，即 " (" 或 "窗格 \ ) "。  本指南按如下方式引用每个窗格：  
+动画检查器分为四个主要部分\ (或窗格\) 。  本指南引用每个窗格，如下所示：  
 
-| 索引 | 窗格 | 描述 |  
+| 索引 | 窗格 | 说明 |  
 |:--- |:--- |:--- |  
-| raid-1 | **控件** | 你可以从此处清除当前捕获的所有动画组，或更改当前所选动画组的速度。 |  
-| ppls-2 | **概述** | 在此处选择一个动画组以在 " **详细信息** " 窗格中检查和修改它。 |  
-| 三维空间 | **时间线** | 在此处暂停和启动动画，或跳转到动画中的特定点。 |  
-| 第 | **详细信息** | 检查和修改当前所选的动画组。 |  
+| 1 | **控件** | 你可以在此处清除所有当前捕获的动画组，或更改当前选定的动画组的速度。 |  
+| 2 | **概述** | 选择此处的动画组以检查和修改详细信息 **窗格中** 的动画组。 |  
+| 3 | **时间线** | 从此处暂停并启动动画，或跳转到动画中的特定点。 |  
+| 4 | **详细信息** | 检查和修改当前选定的动画组。 |  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
-   带批注的动画检查器  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="批注动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+   批注动画检查器  
 :::image-end:::  
 
-若要捕获动画，只需在动画检查器打开的情况下执行触发动画的交互。  如果动画是在页面加载时触发的，请使用动画检查器打开来重新加载页面以检测动画。  
+若要捕获动画，只需执行在动画检查器打开时触发动画的交互。  如果在页面加载时触发动画，则刷新页面，同时打开动画检查器以检测动画。  
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->  
 
@@ -98,73 +98,73 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## 检查动画  
+## <a name="inspect-animations"></a>检查动画  
 
-捕获动画后，有几种方法可以重播它：  
+捕获动画后，有多种方式可以重播它：  
 
-*   将鼠标悬停在 " **概述** " 窗格的缩略图上以查看它的预览。  
-*   从 " **概述** " 窗格中选择 "动画" 组 \ (，使其显示在 " **详细信息** " 窗格 \ ) 中，然后按 " **重播** \ (![ 重播" 图标 ][ImageReplayButtonIcon] \ ) 图标。  将在视区中重播动画。  单击 " **动画速度** " (![ 动画速度图标 ][ImageAnimationSpeedButtonsIcon] \ ) 图标，以更改当前所选动画组的预览速度。  您可以使用红色垂直条更改您的当前位置。  
-*   单击并拖动红色垂直条以擦除视区动画。  
+*   将鼠标悬停在"概述 **"窗格中** 的缩略图上，查看预览。  
+*   从概述窗格 \ (**** 选择动画组，以便它显示在详细信息窗格\) 并选择**重播** **** \ (![ 重播图标 ][ImageReplayButtonIcon] \) 图标。  动画在视口中重播。  选择 **动画速度** \ (动画速度图标 \) 图标以更改当前选定的 ![ ][ImageAnimationSpeedButtonsIcon] 动画组的预览速度。  可以使用红色竖线更改当前位置。  
+*   选择并拖动红色垂直条以擦除视区动画。  
     
-### 查看动画详细信息  
+### <a name="view-animation-details"></a>查看动画详细信息  
 
-捕获动画组后，从 " **概述** " 窗格中单击它以查看详细信息。  在 " **详细信息** " 窗格中，每个单独的动画都分配有一行。  
+捕获动画组后，从"概述"窗格中选择它**** 以查看详细信息。  在 **"详细信息** "窗格中，为每个单独的动画分配一行。  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画组详细信息" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
    动画组详细信息  
 :::image-end:::  
 
-将鼠标悬停在某个动画上，将其在视区中突出显示。  单击动画以在 " **元素** " 面板中选择它。  
+将鼠标悬停在动画上以在视口中突出显示它。  选择动画以在"元素"工具 **中选择** 它。  
 
-:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
-   将鼠标悬停在动画上以在视区中突出显示  
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="将鼠标悬停在动画上以在视口中突出显示它" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+   将鼠标悬停在动画上以在视口中突出显示它  
 :::image-end:::  
 
-动画最左边、更暗的部分是定义。  右侧、更淡出的部分表示迭代。  例如，在下图中，第二部分和第三部分表示第一节的迭代。  
+动画最左边最暗的部分就是定义。  右侧，更淡出的部分表示迭代。  例如，下图中第二节和三节表示第一节的迭代。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
-   动画迭代图表  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="动画迭代关系图" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+   动画迭代关系图  
 :::image-end:::  
 
-如果两个元素应用了相同的动画，则动画检查器会为元素分配相同的颜色。  颜色是随机的，没有任何意义。  例如，下图中，这两个元素 `div.cwccw.earlier` `div.cwccw.later` 具有相同的动画 \ (`spinrightleft` \ ) 应用，就像执行 `div.ccwcw.earlier` 和元素一样 `div.ccwcw.later` 。  
+如果两个元素应用了相同的动画，动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素应用了相同的动画 `div.cwccw.earlier` `div.cwccw.later` \ (`spinrightleft` \) ，就像和 `div.ccwcw.earlier` `div.ccwcw.later` 元素一样。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
-   颜色编码的动画  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码动画" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+   颜色编码动画  
 :::image-end:::  
 
-## 修改动画  
+## <a name="modify-animations"></a>修改动画  
 
-你可以通过三种方式使用动画检查器修改动画。  
+有三种方法可以使用动画检查器修改动画。  
 
 *   动画持续时间。  
 *   关键帧计时。  
 *   开始时间延迟。  
     
-在下图中，表示原始动画。  
+下图显示了原始动画。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="修改前的原始动画" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
    修改前的原始动画  
 :::image-end:::  
 
-若要更改动画的持续时间，请单击并拖动第一个或最后一个圆。  
+若要更改动画的持续时间，请选择并拖动第一个或最后一个圆。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
-   已修改工期  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="修改的持续时间" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+   修改的持续时间  
 :::image-end:::  
 
-如果动画定义了任何关键帧规则，则这些规则表示为白色内圆圈。  单击并拖动其中一个以更改关键帧的计时。  
+如果动画定义任何关键帧规则，则这些规则表示为白色内部圆。  选择并拖动其中一个以更改关键帧的计时。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
-   修改的关键帧  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="修改后的关键帧" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+   修改后的关键帧  
 :::image-end:::  
 
-若要向动画添加延迟，请单击并将其拖动到除圆圈外的任意位置。  
+若要向动画添加延迟，请选择它并将其拖动到除圆之外的任何位置。  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
-   修改后的延迟  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="修改的延迟" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+   修改的延迟  
 :::image-end:::  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

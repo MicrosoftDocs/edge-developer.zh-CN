@@ -1,18 +1,18 @@
 ---
 description: 如何在 Microsoft Edge DevTools 中查找和分析未使用的 JavaScript 和 CSS 代码。
-title: 使用 Microsoft Edge DevTools 中的 "覆盖范围" 选项卡查找未使用的 JavaScript 和 CSS 代码
+title: 在 Microsoft Edge DevTools 中查找包含覆盖面板的未使用的 JavaScript 和 CSS 代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 08c4daaabd30296b53ad57a81caa0e7b155a4fc9
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125186"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398761"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,20 @@ ms.locfileid: "11125186"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 使用 Microsoft Edge DevTools 中的 "覆盖范围" 选项卡查找未使用的 JavaScript 和 CSS 代码  
+# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 中的"覆盖"面板查找未使用的 JavaScript 和 CSS 代码  
 
-Microsoft Edge DevTools 中的 "覆盖范围" 选项卡可帮助你查找未使用的 JavaScript 和 CSS 代码。  删除未使用的代码可能会加速你的页面加载和保存移动用户手机网络数据。  
+Microsoft **Edge** DevTools 中的"覆盖"面板可帮助你查找未使用的 JavaScript 和 CSS 代码。  删除未使用的代码可能会加快页面加载速度并保存移动用户的手机网络数据。  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="分析代码覆盖率" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
-   分析代码覆盖率  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="分析代码覆盖" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   分析代码覆盖  
 :::image-end:::  
 
 > [!WARNING]
-> 查找未使用的代码相对简单。  但要重构基本代码，以便每个页面仅提供它所需的 JavaScript 和 CSS。  本指南不介绍如何重构基本代码以避免未使用的代码，因为这些 refactors 高度依赖于你的技术堆栈。  
+> 查找未使用的代码相对容易。  但是，重构代码库以便每个页面仅提供所需的 JavaScript 和 CSS 可能比较困难。  本指南未涵盖如何重构代码库以避免未使用的代码，因为这些重构高度依赖于你的技术堆栈。  
 
-## 概述  
+## <a name="overview"></a>概述  
 
-装运未使用的 JavaScript 或 CSS 是 web 开发中的常见问题。  例如，假设您想要在您的页面上使用 " [引导" 按钮组件][BootstrapButtons] 。  若要使用按钮组件，需要在 HTML 中添加指向引导样式表的链接，如下所示：  
+寄送未使用的 JavaScript 或 CSS 是 Web 开发中的常见问题。  例如，假设你想要在页面上使用 [Bootstrap][BootstrapButtons] 按钮组件。  若要使用按钮组件，你需要在 HTML 中添加指向 Bootstrap 样式表的链接，如下所示：  
 
 ```html
 ...
@@ -53,44 +53,44 @@ Microsoft Edge DevTools 中的 "覆盖范围" 选项卡可帮助你查找未使�
 ...
 ```  
 
-此样式表不仅仅包含按钮组件的代码。  它包含 **所有** 引导组件的 CSS。  但您没有使用任何其他的引导组件。  因此，你的页面将下载一组不需要的 CSS。  此额外的 CSS 是一个问题，原因如下。  
+此样式表不仅包括按钮组件的代码。  它包含所有 Bootstrap 组件的 CSS。 ****  但是，你未使用任何其他 Bootstrap 组件。  因此，你的页面正在下载一组不需要的 CSS。  此额外的 CSS 是一个问题，原因如下。  
 
-*   额外的代码将减慢页面负载。  <!--See [Render-Blocking CSS][render].  -->  
-*   如果用户在移动设备上访问页面，则额外的代码将使用其手机网络数据。  
+*   额外的代码会降低页面加载速度。  <!--Navigate to [Render-Blocking CSS][render].  -->  
+*   如果用户访问移动设备上的页面，则额外的代码会使用其手机网络数据。  
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## 打开 "覆盖范围" 选项卡  
+## <a name="open-the-coverage-panel"></a>打开"覆盖"面板  
 
-1.  [打开 "命令" 菜单][DevToolsCommandMenu]。  
-1.  开始键入 `coverage` ，选择 " **显示覆盖率** " 命令，然后选择 `Enter` 运行命令。  " **覆盖范围** " 选项卡将在 **抽屉**中打开。  
+1.  [打开命令菜单][DevToolsCommandMenu]。  
+1.  开始键入 `coverage` ，选择 **"显示** 覆盖范围"命令，然后选择 `Enter` 运行该命令。  " **覆盖** "面板在"箱 **"中打开**。  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="分析代码覆盖率" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       " **覆盖范围** " 选项卡  
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text=""覆盖"面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       " **覆盖"** 面板  
     :::image-end:::  
     
-## 记录代码覆盖率  
+## <a name="record-code-coverage"></a>记录代码覆盖范围  
 
-1.  单击 " **覆盖范围** " 选项卡中的以下按钮之一：  
-    *   如果想要查看加载页面所需的代码，请选择 " **开始检测覆盖率" 和 "重新加载页面** \ (![ 开始检测覆盖率" 和 "重新加载页面 ][ImageReloadIcon] \ ) "。  
-    *   **Instrument Coverage** ![ ][ImageRecordIcon] 如果想要查看在与页面交互之后使用的代码，请选择 "仪器覆盖率 \ (仪器覆盖范围 \ ) "。  
-1.  选择 " **停止检测覆盖率" 并显示结果** \ (![ 停止检测覆盖率和显示结果 \ ][ImageStopIcon] ) 要停止记录代码覆盖率。  
+1.  在"覆盖"面板中选择以下 **按钮之** 一。  
+    *   如果你想要 **查看加载** 页面所需的代码，请选择"开始检测覆盖和重新加载" (开始检测覆盖和重新加载页面 ![ ][ImageReloadIcon] \) 。  
+    *   Choose **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to review what code is used after interacting with the page.  
+1.  选择 **"停止检测** 范围"， (停止检测范围，在要停止录制代码覆盖时显示 ![ ][ImageStopIcon] 结果 \) 。  
     
-## 分析代码覆盖率  
+## <a name="analyze-code-coverage"></a>分析代码覆盖范围  
 
-" **覆盖率** " 选项卡中的表显示分析了哪些资源，以及每个资源中使用了多少代码。  单击某一行以在 " **源** " 面板中打开该资源，并查看所使用的代码和未使用的代码的逐行划分。  
+"覆盖 **"面板中的** 表显示已分析的资源，以及每个资源中使用的代码数。  选择一行以在"源"面板**** 中打开该资源，并查看已用代码和未使用的代码的行细分。  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="分析代码覆盖率" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
-   "代码覆盖率" 报表  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="代码覆盖报告" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   代码覆盖报告  
 :::image-end:::  
 
-*   **Url**列是已分析资源的 url。  
-*   " **类型** " 列显示资源是否包含 CSS 和/或 JavaScript。  
-*   " **字节总数** " 列是资源的总大小（以字节为单位）。  
-*   " **未使用的字节** " 列表示未使用的字节数。  
-*   最后一个未命名的列是 " **字节总数** " 和 " **未使用的字节** " 列的可视化。  条的红色部分是未使用的字节。  绿色部分使用字节。  
+*   **URL**列是已分析资源的 URL。  
+*   " **类型** "列显示资源是否包含 CSS、JavaScript 或两者。  
+*   " **总字节** 数"列是资源的总大小（以字节为单位）。  
+*   " **未使用的字节** 数"列是未使用的字节数。  
+*   最后一个未命名的列是总字节 **数和** 未使用字节数 **列的可视化** 效果。  条形图的红色部分为未使用的字节。  绿色部分使用字节。  
     
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -102,9 +102,9 @@ Microsoft Edge DevTools 中的 "覆盖范围" 选项卡可帮助你查找未使�
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "通过 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft 文档"  
+[DevToolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令|Microsoft Docs"  
 
-[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "按钮-引导"  
+[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "按钮 - Bootstrap"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

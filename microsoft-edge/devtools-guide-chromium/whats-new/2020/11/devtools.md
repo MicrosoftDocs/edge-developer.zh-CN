@@ -3,16 +3,16 @@ description: Linux 上的 Microsoft Edge、”问题“工具中改进的 Webhin
 title: DevTools 中的新增功能 (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: f56586fa77e34da7884d9d7c565b8cbcc4106c4a
-ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
+ms.openlocfilehash: 7d24d1ba6fe33a7420ff34376c981d608a4e30af
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387286"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397572"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-88"></a>DevTools 中的新增功能 (Microsoft Edge 88)  
 
@@ -98,9 +98,9 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
 
-[网络](#network-tool)、[应用程序](#application-tool) 和 [源](#sources-tool) 工具中的以下新功能可帮助您构建 [PWA][ProgressiveWebAppsChromiumIndex]。  在调试服务工作线程遇到困难时，请使用以下功能。  
+[网络](#network-tool)、[应用程序](#application-tool) 和 [源](#sources-tool) 工具中的以下新功能可帮助您构建 [PWA][ProgressiveWebAppsIndex]。  在调试服务工作线程遇到困难时，请使用以下功能。  
 
-请求路由显示基于通过服务工作线程运行的网络请求的 `startup` 和 `fetch` 事件。  通过 **应用程序** 或 **网络工具** 访问时间线。  如果遇到服务工作线程问题，并且希望查看 `startup` 或 `fetch` 事件是否出错，时间线会有所帮助。  
+请求路由显示基于通过服务工作线程运行的网络请求的 `startup` 和 `fetch` 事件。  通过 **应用程序** 或 **网络工具** 访问时间线。  当你遇到服务工作者的问题，并且想要显示事件或事件是否出错时，时间线 `startup` 会 `fetch` 有所帮助。  
 
 ### <a name="application-tool"></a>应用程序工具  
 
@@ -179,8 +179,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="将属性值粘贴到 Visual Studio 代码" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         将属性值粘贴到 Visual Studio 代码  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="将属性值粘贴到 Microsoft Visual Studio 代码中" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         将属性值粘贴到 Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -351,10 +351,10 @@ background: linear-gradient(100deg, lightblue, pink);
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 上的渐进式 Web 应用 | Microsoft Docs"  
+[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 上的渐进式 Web 应用 | Microsoft Docs"  
 
-[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "在“设置”中自定义键盘快捷方式 - DeVTools 的新增功能 (Microsoft Edge 87)| Microsoft Docs"  
-[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#webhint-feedback-in-the-issues-panel "问题面板中的 webhint 反馈 - DeVTools 的新增功能 (Microsoft Edge 85) | Microsoft Docs"  
+[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "在“设置”中自定义键盘快捷方式 - DeVTools 的新增功能 (Microsoft Edge 87)| Microsoft Docs"  
+[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "问题面板中的 webhint 反馈 - DeVTools 的新增功能 (Microsoft Edge 85) | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "下载 WebDriver | Microsoft 开发人员"  
 

@@ -1,18 +1,18 @@
 ---
 description: CSS 入门
-title: 初学者的 DevTools：开始使用 CSS
+title: 适用于初学者的 DevTools：CSS 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 62821084af8c22809f6e14ca4038ee173efd964a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge， Web 开发， f12 工具， devtools
+ms.openlocfilehash: 7aa33c339a7d130265660e4a4af6f50dde7e3e90
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125333"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398397"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -28,83 +28,83 @@ ms.locfileid: "11125333"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 初学者的 DevTools：开始使用 CSS  
+# <a name="devtools-for-beginners-get-started-with-css"></a>适用于初学者的 DevTools：CSS 入门  
 
-在本教程中，你将了解如何使用 CSS 对网页进行样式。  你还将了解如何使用 Microsoft Edge DevTools 来试验 CSS 更改。  
+本教程介绍如何使用 CSS 设置网页样式。  此外，还了解如何使用 Microsoft Edge DevTools 试验 CSS 更改。  
 
-以下文章是一系列教程中的第二个教程，可教你了解 web 开发和 Microsoft Edge DevTools 的基础知识。  您可以通过实际构建自己的网站来获得实际体验。  在下一步操作之前，不必完成第一个教程。  [设置代码](#set-up-your-code) 显示如何设置。  
+以下文章是一系列教程的第二个教程，该教程将指导你 Web 开发和 Microsoft Edge DevTools 的基础知识。  通过实际构建自己的网站，你可以获得实践体验。  在学习第二个教程之前，不需要完成第一个教程。  [设置代码将](#set-up-your-code) 演示如何进行设置。  
 
 > [!NOTE]
-> 本教程适用于绝对初学者，重点介绍 **web 开发的基础知识** 和使用 DEVTOOLS 试验 CSS 的基础知识。  如果你需要仅关注 DevTools 的教程，请导航到 " [查看和更改 CSS" 入门][DevtoolsCssIndex]。  
+> 本教程专为完全初学者设计，重点介绍 **Web** 开发基础知识和使用 DevTools 试验 CSS 的基础知识。  如果你需要一个仅侧重于 DevTools 的教程，请导航到"查看和更改 CSS 入门["。][DevtoolsCssIndex]  
 
-在教程的开头，您的网站应如下图所示。  
+在本教程的开头，您的网站应如下所示。  
 
-:::image type="complex" source="../media/beginners-css-intro1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-intro1.msft.png":::
-   网站的当前外观  
+:::image type="complex" source="../media/beginners-css-intro1.msft.png" alt-text="网站当前的外观" lightbox="../media/beginners-css-intro1.msft.png":::
+   网站当前的外观  
 :::image-end:::  
 
-完成教程后，您的网站应如下图所示。  
+完成本教程后，网站应如下所示。  
 
-:::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-intro2.msft.png":::
-   您的网站在教程结束时应看起来是什么样子  
+:::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="你的网站在本教程末尾应的外观" lightbox="../media/beginners-css-intro2.msft.png":::
+   你的网站在本教程末尾应的外观  
 :::image-end:::  
 
-## 目标  
+## <a name="goals"></a>目标  
 
-按照此教程更好地了解以下概念和任务。  
+按照本教程更好地了解以下概念和任务。  
 
-*   如何使用 CSS 对网页进行样式。  
-*   如何使用 Microsoft Edge DevTools 来试验 CSS。  
-*   CSS 和 CSS 框架之间的区别。  
+*   如何使用 CSS 设置网页样式。  
+*   如何使用 Microsoft Edge DevTools 试验 CSS。  
+*   CSS 和 CSS 框架的区别。  
 
-您正在构建真正的网站。  
+你正在构建一个真实的网站。  
 
-## 必备条件  
+## <a name="prerequisites"></a>必备条件  
 
 在尝试本教程之前，请完成以下先决条件。  
 
-*   完整 [入门 html 和 dom，][DevtoolsBeginnersHtml] 或者确保你对 HTML 和 dom 的理解与该教程中所讲授的内容类似。  
-*   下载 [Microsoft Edge][MicrosoftEdgeInsider] web 浏览器。  以下教程使用一组称为 Microsoft Edge DevTools 的 web 开发工具，这些工具内置于 Microsoft Edge 中。  
+*   完成 [HTML 和 DOM][DevtoolsBeginnersHtml] 入门，或确保你了解 HTML 和 DOM，与本教程中介绍的内容类似。  
+*   下载 [Microsoft Edge][MicrosoftEdgeInsider] Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具，称为 Microsoft Edge DevTools。  
 
-## 设置代码  
+## <a name="set-up-your-code"></a>设置代码  
 
-若要创建网站，必须首先完成以下操作来设置代码。  
+若要创建网站，必须先完成以下操作以设置代码。  
 
 > [!NOTE]
-> 如果您已完成系列中的第一个教程，请跳至下一节。  继续使用最后一个教程中的代码， [HTML 和 DOM 入门][DevtoolsBeginnersHtml]。  
+> 如果已完成系列的第一个教程，请跳到下一节。  继续使用上一教程中的代码，即 [HTML 和 DOM 入门][DevtoolsBeginnersHtml]。  
 
-1.  打开 [源代码][GlitchCookedAmphibianIndex]。  浏览器的 "聚焦" 选项卡作为 " **编辑" 选项卡**进行引用。  
+1.  打开 [源代码][GlitchCookedAmphibianIndex]。  浏览器的"焦点内"选项卡被引用为 **编辑选项卡**。  
     
-    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-setup1.msft.png":::
-       " **编辑** " 选项卡  
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="编辑选项卡" lightbox="../media/beginners-css-setup1.msft.png":::
+       编辑**选项卡**  
     :::image-end:::  
     
-1.  选择 **cooked-amphibian**。  将弹出一个菜单。  
+1.  Choose **cooked-amphibian**.  弹出菜单。  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-setup2.msft.png":::
-       "项目选项" 菜单  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text=""项目选项"菜单" lightbox="../media/beginners-css-setup2.msft.png":::
+       "项目选项"菜单  
     :::image-end:::  
 
-1.  选择 " **Remix Project**"。  问题创建您可以编辑的项目副本。  
+1.  选择 **"重新混合项目"。**  小故障将创建您能够编辑的项目的副本。  
     
     > [!NOTE]
-    > 故障为新项目生成一个随机名称。  
+    > 小故障为新项目生成随机名称。  
     
-1.  **在新窗口中选择 "****显示**"，然后选择。  将打开另一个选项卡，其中包含您的网站的实时视图。  浏览器的 "聚焦" 选项卡作为 " **实时" 选项卡**进行引用。  
+1.  选择 **"显示**"，**然后选择"新建窗口"。**  另一个选项卡将打开，其中显示网站实时视图。  浏览器的"焦点内"选项卡被引用为实时 **选项卡**。  
     
-    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-setup3.msft.png":::
-       " **实时" 选项卡**  
+    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="实时选项卡" lightbox="../media/beginners-css-setup3.msft.png":::
+       实时 **选项卡**  
     :::image-end:::  
 
-## 了解 CSS  
+## <a name="understand-css"></a>了解 CSS  
 
-**CSS** 是确定网页布局和样式的计算机语言。  下图是带有边框的段落。  
+**CSS** 是一种计算机语言，用于确定网页的布局和样式。  下图是带边框的段落。  
 
-:::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-red_paragraph.msft.png":::
-   文本已采用 CSS 样式  
+:::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="文本已使用 CSS 设置样式" lightbox="../media/beginners-css-red_paragraph.msft.png":::
+   文本已使用 CSS 设置样式  
 :::image-end:::  
 
-以下代码片段是用于创建上图中的段落的 HTML 和 CSS 代码。  
+下面的代码段是用于创建上图中的段落的 HTML 和 CSS 代码。  
 
 ```html
 <p style="border: 1px dashed red; padding: 5px;">
@@ -112,19 +112,19 @@ ms.locfileid: "11125333"
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` 可能看起来很新。  其余内容应熟悉。  如果不是，请先 [开始使用 HTML 和 DOM][DevtoolsBeginnersHtml] ，然后再尝试以下部分。  
+`style="border: 1px dashed red; padding: 5px;"` 可能看起来是全新的。  其余部分看起来应该很熟悉。  如果没有，请 [完成 HTML 和 DOM][DevtoolsBeginnersHtml] 入门，然后再尝试以下部分。  
 
-## 添加内联样式  
+## <a name="add-inline-styles"></a>添加内联样式  
 
-完成以下操作以使用 **嵌入式样式** 将样式应用到单个元素。  
+完成以下操作以使用 **内联样式将** 样式应用于单个元素。  
 
-1.  返回到 "编辑" 选项卡并打开 `index.html` 。  
+1.  返回到编辑选项卡并打开 `index.html` 。  
     
-    :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-inline1.msft.png":::
-       `index.html`在 "编辑" 选项卡中打开  
+    :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="index.html" lightbox="../media/beginners-css-inline1.msft.png":::
+       在 `index.html` 编辑选项卡中打开  
     :::image-end:::  
     
-1.  添加 `style="background-color: aliceblue;"` 到您 `<nav>` 的。  在下面的代码块中，第四行代码是你需要更改的代码。  剩下的就是这样，因此您可以确保将新代码放入正确的位置。  
+1.  添加到 `style="background-color: aliceblue;"` 你的 `<nav>` 。  在下面的代码块中，需要更改第四行代码。  其余代码就在这里，因此可以确保将新代码放在正确的位置。  
     
     ```html
     <header>
@@ -138,15 +138,15 @@ ms.locfileid: "11125333"
     ...
     ```  
     
-1.  转到 " **实时" 选项卡** 以查看所做的更改！  现在，该分区的背景 `<nav>` 为蓝色。  
+1.  若要显示更改，请导航到活动 **选项卡**。 分区的背景现在 `<nav>` 为蓝色。  
     
-    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-inline2.msft.png":::
-       " **主页** " 和 " **联系人** " 链接后面的背景色现在为蓝色  
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text=""主页"和"联系人"链接背后的背景色现在为蓝色" lightbox="../media/beginners-css-inline2.msft.png":::
+       "主页" **和"联系人** "链接 **背后的背景色** 现在为蓝色  
     :::image-end:::  
     
-## 在具有内部样式表的单个页面上重新使用样式  
+## <a name="re-use-styles-on-a-single-page-with-internal-stylesheets"></a>在包含内部样式表的单个页面上重新使用样式  
 
-在前面的代码段中，内联样式将样式应用于单个 `<p>` 标记。  
+在以前的代码段中，内联样式将样式应用于单个 `<p>` 标记。  
 
 ```html
 <p style="border: 1px dashed red; padding: 5px;">
@@ -154,16 +154,16 @@ ms.locfileid: "11125333"
 </p>
 ```  
 
-如果您希望您的 `<p>` 网页上的所有元素的样式设置方式相同，该怎么办？  您必须将代码复制并粘贴到 `<p>` 您的网站上的每个标记中。  这是大量的时间和精力。  如果需要进行编辑，则必须再次更改每个标签。  完成以下操作以使用 **内部样式表** 编写 CSS 一次，以便它应用于多个元素。  
+如果希望网页上的所有元素都以相同方式设置样式 `<p>` ，该做什么？  您必须将代码复制并粘贴到网站上 `<p>` 每个标记中。  这是一项大量的时间和精力。  如果需要进行编辑，必须再次更改每个标记。  完成以下操作以使用内部样式 **表** 编写 CSS 一次，以便应用于多个元素。  
 
-1.  在 "实时" 选项卡中，选择 " **联系人** " 以转到 "联系人" 页面。  请注意 " **家庭** " 和 " **联系人**" 的字体。  
+1.  在活动选项卡中，选择 **"联系人"** 以导航到联系人页面。  请注意"主页" **和** "联系人 **"的字体**。  
     
-    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-internal1.msft.png":::
-       "联系人" 页面  
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text=""联系人"页" lightbox="../media/beginners-css-internal1.msft.png":::
+       "联系人"页  
     :::image-end:::  
     
-1.  在 " **编辑器" 选项卡**中，转到 `contact.html` 。  
-1.  将以下代码添加到 `contact.html` 。  请记住，"行" `<style>` 和 "结束" 行 `</style>` 是你需要添加的内容。  其他代码就在这里，您知道在哪里放置新代码。  
+1.  在 **编辑器选项卡中**，打开 `contact.html` 。  
+1.  将以下代码添加到 `contact.html` 。  请记住，需要添加以开始 `<style>` 和结尾 `</style>` 的行。  其他代码就在这里，以便你知道在何处放入新代码。  
     
     ```html
     ...
@@ -181,16 +181,16 @@ ms.locfileid: "11125333"
     ...
     ```  
     
-1.  返回到 " **实时" 选项卡**。  
-1.  选择 " **联系人** " 以返回到联系人页。  **家庭**和**联系人**的字体已更改。  
+1.  返回到实时 **选项卡**。  
+1.  选择 **"** 联系人"返回到联系人页面。  "主页 **"和** " **联系人"的** 字体已更改。  
     
-    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-internal2.msft.png":::
-       **主页**和**联系人**链接的字体已更改  
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text=""主页"和"联系人"链接的字体已更改" lightbox="../media/beginners-css-internal2.msft.png":::
+       "主页" **和** " **联系人"链接的** 字体已更改  
     :::image-end:::  
     
-### 了解内部样式表  
+### <a name="understand-internal-stylesheets"></a>了解内部样式表  
 
-内部样式表使用 **选择器**应用样式。  选择器是可应用于一个或多个 HTML 元素的模式。  上面的代码段添加了以下样式。  
+内部样式表使用选择器应用 **样式**。  选择器是可能应用于一个或多个 HTML 元素的模式。  前面的代码段添加了以下样式。  
 
 ```html
 <style>
@@ -200,24 +200,24 @@ ms.locfileid: "11125333"
 </style>
 ```  
 
-`li a` 是转换为 " `<li>` 包含元素的任何元素" 的选择器 `<a>` 。  浏览器将更改 " **主页** " 和 " **联系人** " 链接的字体，因为每个标记组都与模式匹配。  
+`li a` 是一个转换为" `<li>` 包含元素的任何元素 `<a>` "的选择器。  浏览器更改"主页"和"**** 联系人 **"** 链接的字体，因为每个标记组都匹配模式。  
 
 ```html
 <li><a href="/">Home</a></li>
 <li><a href="/contact.html">Contact</a></li>
 ```  
 
-`font-family: 'Courier New', Courier, serif` 是 **声明**。  声明由以下两个部分组成。  
+`font-family: 'Courier New', Courier, serif` 是一个 **声明**。  声明由以下两部分组成。  
 
 :::row:::
    :::column span="1":::
-      **属性**  
+      **property**  
    :::column-end:::
    :::column span="1":::
       `font-family`  
    :::column-end:::
    :::column span="2":::
-      该属性描述你可以更改元素样式的一般方式。  
+      该属性描述一种能够更改元素样式的常规方法。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -228,15 +228,15 @@ ms.locfileid: "11125333"
       `'Courier New', Courier, serif`  
    :::column-end:::
    :::column span="2":::
-      该值确切描述元素样式应如何更改。  
+      该值准确描述了元素的样式应该如何更改。  
    :::column-end:::
 :::row-end:::  
 
-例如， `font-family: 'Courier New', Courier, serif` 为浏览器提供以下指令： "将匹配模式的元素的字体设置 `li a` 为 `'Courier New'` 。  如果该字体不可用，请使用 `Courier` 。  如果该功能不可用，请使用 `serif` 。  
+例如， `font-family: 'Courier New', Courier, serif` 为浏览器提供以下指令："将匹配模式的元素的字体设置为 `li a` `'Courier New'` 。  如果该字体不可用，请使用 `Courier` 。  如果不可用，请使用 `serif` 。"  
 
-### 将多个选择器添加到规则集  
+### <a name="add-multiple-selectors-to-a-ruleset"></a>向规则集添加多个选择器  
 
-类似于下面所示的 CSS 代码块称为 " **规则集**"。  
+类似以下代码段的 CSS 代码块称为 **规则集**。  
 
 ```css
 li a {
@@ -246,8 +246,8 @@ li a {
 
 完成以下操作以使用逗号将多个选择器添加到规则集。  
 
-1.  在 " **编辑器" 选项卡**中，打开 `contact.html` 。  
-1.  `li a`键入后 `, h1` 。  
+1.  在 **编辑器选项卡中**，打开 `contact.html` 。  
+1.  键入 `li a` `, h1` 后 。  
     
     ```html
     <style>
@@ -257,122 +257,122 @@ li a {
     </style>
     ```  
     
-    上面的代码片段告诉浏览器对元素的样式与 `<h1>` 与模式匹配的元素的样式相同 `li a` 。  
+    前面的代码段指示浏览器设置元素样式的方式与设置 `<h1>` 与模式匹配的元素的样式相同 `li a` 。  
     
-1.  转到 " **实时" 选项卡**。  
-1.  选择 **联系人** 链接返回到联系人页。  现在，请 **与我联系！** 的字体与导航链接的字体相同。  
+1.  导航到 **活动选项卡**。  
+1.  选择 **"联系人** "链接返回到联系人页面。  现在， **联系我！** 具有与导航链接相同的字体。  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-multiple1.msft.png":::
-       文本 **与我联系！** 现在与 " **主页** " 和 " **联系人** " 链接的字体相同  
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本"联系我"  现在具有与"主页"和"联系人"链接相同的字体" lightbox="../media/beginners-css-multiple1.msft.png":::
+       文本" **联系我"** 现在具有与"主页"和 **"联系人** " **链接相同的** 字体  
     :::image-end:::  
     
-## 试用 DevTools  
+## <a name="experiment-with-devtools"></a>使用 DevTools 进行试验  
 
-随着您继续在 web 开发中成为专家，您可能会发现 CSS 非常棘手。  你可以编写一些 CSS，并希望它以一种方式显示，但浏览器执行完全不同的操作。  Microsoft Edge DevTools 使你可以轻松地体验更改，并立即查看更改对页面有何影响。  
+当你继续成为 Web 开发专家的旅程时，你可能会发现 CSS 很棘手。  你可以编写一些 CSS，并期望它以一种方式显示，但浏览器会进行完全不同的操作。  通过 Microsoft Edge DevTools，可以轻松试验更改并立即显示更改对页面的影响。  
 
-### 将声明添加到 DevTools 中的现有 rulest  
+### <a name="add-a-declaration-to-an-existing-rulest-in-devtools"></a>将声明添加到 DevTools 中的现有规则  
 
-完成以下操作以循环访问现有元素的样式，将声明添加到现有规则集。  
+完成以下操作以对现有元素的样式进行轮访问，向现有规则集添加声明。  
 
-1.  将鼠标悬停在 " **主页** " 链接上，打开上下文菜单 \ (右键单击 "\ ) "，然后选择 " **检查**"。  
+1.  悬停在"主页 **"** 链接上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
     
-    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-add1.msft.png":::
-       检查 "主页" 链接  
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查"主页"链接" lightbox="../media/beginners-css-add1.msft.png":::
+       检查"主页"链接  
     :::image-end:::  
     
-    DevTools 将在您的页面旁打开。  表示 Home 链接的代码在 `<a href="/">Home</a>` DOM 树中突出显示为蓝色。  代码片段和预览应熟悉 [HTML 和 DOM 入门][DevtoolsBeginnersHtml]。  
+    DevTools 将随页面一起打开。  表示"主页"链接的代码在 `<a href="/">Home</a>` DOM 树中突出显示为蓝色。  代码段和预览应该熟悉 HTML 和 [DOM][DevtoolsBeginnersHtml]入门。  
     
     :::row:::
        :::column span="":::
-          下图中，在 `font-family: 'Courier New', Courier, serif` `contact.html` DOM 树下方的 " **样式** " 选项卡中显示了之前添加到的声明。  
+          下图中，您之前添加到的声明显示在 `font-family: 'Courier New', Courier, serif` `contact.html` DOM 树下方的 **"** 样式"选项卡中。  
           
-          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-add2.msft.png":::
-             " **样式** " 选项卡位于 DOM 树的下方  
+          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text=""样式"选项卡位于 DOM 树下方" lightbox="../media/beginners-css-add2.msft.png":::
+             " **样式"** 选项卡位于 DOM 树下方  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          如果 DevTools 窗口是宽的，则 "样式" 选项卡位于 DOM 树的右侧。  
+          如果 DevTools 窗口很宽，则"样式"选项卡位于 DOM 树的右侧。  
           
-          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-add3.msft.png":::
-             " **样式** " 选项卡位于 DOM 树的右侧  
+          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text=""样式"选项卡位于 DOM 树的右侧" lightbox="../media/beginners-css-add3.msft.png":::
+             " **样式** "选项卡位于 DOM 树的右侧  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
 1.  选择下面的空行 `font-family: 'Courier New', Courier, Serif` 以添加新声明。  
     
-    :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-add4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="添加新声明" lightbox="../media/beginners-css-add4.msft.png":::
        添加新声明  
     :::image-end:::  
     
-1.  键入 `color` 并选择 `Enter` 。  "自动完成" UI 建议您键入时的选项。  
+1.  键入 `color` 并选择 `Enter`。  键入时，自动完成 UI 会推荐选项。  
     
-    :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-add5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="类型颜色" lightbox="../media/beginners-css-add5.msft.png":::
        类型 `color`  
     :::image-end:::  
     
-1.  键入 `magenta` 并选择 `Enter` 。  "联系人" 页面上的所有文本现在均为 "洋红"。  
+1.  键入 `magenta` 并选择 `Enter`。  联系人页面上的所有文本现在都为洋红色。  
     
-    :::image type="complex" source="../media/beginners-css-add6.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-add6.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add6.msft.png" alt-text="类型洋红色" lightbox="../media/beginners-css-add6.msft.png":::
        类型 `magenta`  
     :::image-end:::  
     
-### 在 DevTools 中编辑声明  
+### <a name="edit-a-declaration-in-devtools"></a>在 DevTools 中编辑声明  
 
-完成以下操作以在 DevTools 中编辑现有声明。  
+完成以下操作以编辑 DevTools 中的现有声明。  
 
-1.  选择旁边的洋红色方块 `magenta` 。  将弹出一个颜色选取器。  
+1.  选择旁边的洋红色正方形 `magenta` 。  颜色选取器弹出。  
     
-    :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-edit1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="颜色选取器" lightbox="../media/beginners-css-edit1.msft.png":::
        颜色选取器  
     :::image-end:::  
     
-1.  使用拾色器将字体文本更改为您喜欢的颜色。  
+1.  使用颜色选取器将字体文本更改为您喜欢的颜色。  
     
-    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-edit2.msft.png":::
-       通过拾色器将字体颜色更改为紫色  
+    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="使用颜色选取器将字体颜色更改为紫色" lightbox="../media/beginners-css-edit2.msft.png":::
+       使用颜色选取器将字体颜色更改为紫色  
     :::image-end:::  
     
-### 在 DevTools 中添加新的规则集  
+### <a name="add-a-new-ruleset-in-devtools"></a>在 DevTools 中添加新的规则集  
 
 完成以下操作以在 DevTools 中添加新的规则集。  
 
-1.  选择 " **新建样式规则** \ (![ 新样式规则 ][ImageNewStyleRuleIcon] \ ) 它位于" **. cls**"旁边。  将显示一个包含选择器的空规则集 `a` 。  
+1.  Choose **New Style Rule** \ (New Style Rule ![ ][ImageNewStyleRuleIcon] \) which is next to **.cls**.  空的规则集显示为 `a` 选择器。  
     
-    :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-rule1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则" lightbox="../media/beginners-css-rule1.msft.png":::
        添加新规则  
     :::image-end:::  
     
 1.  用 `a:hover` 取代 `a`。  
     
-    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-rule2.msft.png":::
-       替换 `a` 为 `a:hover`  
+    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="将 a 替换为 a：hover" lightbox="../media/beginners-css-rule2.msft.png":::
+       替换为 `a` `a:hover`  
     :::image-end:::  
     
-    `:hover` 是 **伪类**。  对可能进入特殊状态的样式元素使用伪类。  例如， `a:hover` 仅当你将鼠标悬停在某个元素上方时，该样式才会生效 `<a>` 。  
+    `:hover` 是 **伪类**。  对可能进入特殊状态样式元素使用伪类。  例如， `a:hover` 样式仅在将鼠标悬停在元素上时 `<a>` 生效。  
     
-1.  在括号之间进行选择以添加新的声明。  
-1.  键入 `background-color` 声明名称，然后选择 `Enter` 。  
+1.  在括号之间选择以添加新声明。  
+1.  键入 `background-color` 声明名称并选择 `Enter` 。  
     
-    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-rule3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="键入背景色" lightbox="../media/beginners-css-rule3.msft.png":::
        类型 `background-color`  
     :::image-end:::  
     
-1.  `green`声明值的类型，然后选择 `Enter` 。  
+1.  键入 `green` 声明值并选择 `Enter` 。  
     
-    :::image type="complex" source="../media/beginners-css-rule4.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-rule4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule4.msft.png" alt-text="键入绿色" lightbox="../media/beginners-css-rule4.msft.png":::
        类型 `green`  
     :::image-end:::  
     
-1.  将鼠标悬停在 " **开始** " 链接上。  链接的背景变为绿色。  
+1.  将鼠标悬停在"主页 **"链接** 上。  链接的背景变为绿色。  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-rule5.msft.png":::
-       将鼠标悬停在 Home 链接上以显示绿色背景  
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在"主页"链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
+       将鼠标悬停在"主页"链接上以显示其绿色背景  
     :::image-end:::  
     
-## 跨页面使用外部样式表重新使用样式  
+## <a name="re-use-styles-across-pages-with-external-stylesheets"></a>在具有外部样式表的页面之间重新使用样式  
 
-在上一步中，你将以下代码段添加为内部样式表 `contact.html` 。  
+在上一步中，您将以下代码段作为内部样式表添加到 `contact.html` 。  
 
 ```html
 ...
@@ -388,45 +388,45 @@ li a {
 ...
 ```  
 
-如果你想要以 `index.html` 相同的方式设置样式，该怎么办？  如果您有大量页面需要应用样式，该怎么办？  您必须将内部样式表复制并粘贴到您的网站上的每一个网页中。  完成以下操作以添加 **外部样式表** ，以允许你编写 CSS 一次并将其应用于多个页面。  
+如果要以相同方式 `index.html` 设置样式，该做什么？  如果您具有大量要应用样式的页面，该做什么？  您必须将内部样式表复制并粘贴到您的网站上的每个网页中。  完成以下操作以添加 **外部** 样式表，以允许您编写 CSS 一次，并应用到多个页面。  
 
-1.  首先，重新加载 "实时" 选项卡以删除您在 DevTools 中所做的更改。  
+1.  首先，刷新实时选项卡以删除你在 DevTools 中所做的更改。  
     
-    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external1.msft.png":::
-        刷新页面后，在 DevTools 中所做的更改将不再存在  
+    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text=" 刷新页面后，在 DevTools 中所做的更改将消失" lightbox="../media/beginners-css-external1.msft.png":::
+        刷新页面后，在 DevTools 中所做的更改将消失  
     :::image-end:::  
     
-1.  返回 " **编辑器" 选项卡** ，然后打开 `contact.html` 。  
+1.  返回到编辑器 **选项卡并** 打开 `contact.html` 。  
     
-    :::image type="complex" source="../media/beginners-css-external2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external2.msft.png" alt-text="contact.html" lightbox="../media/beginners-css-external2.msft.png":::
        contact.html  
     :::image-end:::  
     
-1.  删除与之间的所有内容 `<style>` `</style>` ，包括 `<style>` 和 `</style>` 。  
+1.  删除与 `<style>` 之间、包括 `</style>` 和 `<style>` 之间的所有内容 `</style>` 。  
     
-    :::image type="complex" source="../media/beginners-css-external3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external3.msft.png":::
-       已删除样式标记  
+    :::image type="complex" source="../media/beginners-css-external3.msft.png" alt-text="样式标记已删除" lightbox="../media/beginners-css-external3.msft.png":::
+       样式标记已删除  
     :::image-end:::  
     
-1.  转到 `index.html` 并 `style="background-color: aliceblue;"` 从标记中删除 `<nav>` 。  您现在已删除以前添加到网站的所有 CSS。  
+1.  打开 `index.html` 并 `style="background-color: aliceblue;"` 删除 `<nav>` 标记。  现在，您已删除之前添加到网站的所有 CSS。  
     
-    :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="内联样式已从导航元素中删除" lightbox="../media/beginners-css-external4.msft.png":::
        内联样式已从导航元素中删除  
     :::image-end:::  
     
-1.  选择 " **新建文件**"。  
+1.  选择 **"新建文件"。**  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external5.msft.png":::
-       "新建文件" 对话框  
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="新文件对话框" lightbox="../media/beginners-css-external5.msft.png":::
+       新文件对话框  
     :::image-end:::  
     
-1.  替换 `cool-file.js` 为 `style.css` ，然后选择 " **添加文件**"。  
+1.  替换为 `cool-file.js` 并选择 `style.css` **"添加文件"。**  
     
-    :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external6.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="Type style.css" lightbox="../media/beginners-css-external6.msft.png":::
        类型 `style.css`  
     :::image-end:::  
     
-1.  将以下代码片段添加到 `style.css` 文件中。  
+1.  将以下代码段添加到 `style.css` 文件。  
     
     ```css
     li a, h1 {
@@ -440,14 +440,14 @@ li a {
     }
     ```  
     
-    :::image type="complex" source="../media/beginners-css-external7.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external7.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external7.msft.png" alt-text="将代码添加到 style.css" lightbox="../media/beginners-css-external7.msft.png":::
        将代码添加到 `style.css`  
     :::image-end:::  
     
-    确保已创建外部样式表。 你的 HTML 不知道它是否存在。  
+    确保您已创建外部样式表。 您的 HTML 不知道它是否存在。  
     
 1.  打开 `index.html`。  
-1.  添加 `<link rel="stylesheet" href="style.css">` 到你的 HTML。  
+1.  添加到 `<link rel="stylesheet" href="style.css">` HTML。  
     
     ```html
     <head>
@@ -457,31 +457,31 @@ li a {
     </head>
     ```  
     
-    :::image type="complex" source="../media/beginners-css-external8.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external8.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external8.msft.png" alt-text="链接到 style.css" lightbox="../media/beginners-css-external8.msft.png":::
        链接到 `style.css`  
     :::image-end:::  
     
-1.  打开 `contact.html` 文件并在其中添加链接。  
+1.  打开 `contact.html` 文件并添加链接。  
     
-    :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external9.msft.png":::
-       链接到 `style.css` `contact.html`  
+    :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="链接到 contact.html 中的 style.css" lightbox="../media/beginners-css-external9.msft.png":::
+       链接到 `style.css` in `contact.html`  
     :::image-end:::  
     
-1.  转到 " **实时" 选项卡**。 现在，主页的字体与上一节中的字体相同，并具有蓝色导航部分。  
+1.  导航到 **活动选项卡**。 主页上一节和蓝色导航部分现在具有相同的字体。  
     
-    :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external10.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="主页" lightbox="../media/beginners-css-external10.msft.png":::
        主页  
     :::image-end:::  
     
-1.  选择 **联系人** 链接转到 "联系人" 页面。  "联系人" 页面的格式与 "主页" 的格式相同。  
+1.  选择 **"联系人** "链接以导航到联系人页面。  联系人页面的格式与主页的格式相同。  
     
-    :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-external11.msft.png":::
-       "联系人" 页面  
+    :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="联系人页面" lightbox="../media/beginners-css-external11.msft.png":::
+       联系人页面  
     :::image-end:::  
     
-## 使用 CSS 框架  
+## <a name="use-a-css-framework"></a>使用 CSS 框架  
 
-**CSS 框架** 是由其他开发者构建的样式的集合，可使创建引人注目的网站更容易。  框架提供了可在页面元素上使用的样式集合，而不是自己定义样式。  
+**CSS 框架** 是由其他开发人员构建的样式集合，可更轻松地创建极具吸引力的网站。  框架提供了一组可以在页面元素上使用的样式，而不是自己定义样式。  
 
 1.  复制以下代码：  
     
@@ -489,55 +489,55 @@ li a {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     ```  
     
-1.  转到 "编辑" 选项卡，然后将代码粘贴到 `contact.html` 。  
+1.  打开编辑选项卡，然后将代码粘贴到 `contact.html` 。  
     
-    :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-framework1.msft.png":::
-       链接到中的框架 `contact.html`  
+    :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="指向 contact.html 中的框架的链接" lightbox="../media/beginners-css-framework1.msft.png":::
+       链接到 `contact.html`  
     :::image-end:::  
     
-1.  打开 `index.html` 文件并在其中添加代码。  
+1.  打开 `index.html` 文件并添加代码。  
     
-    :::image type="complex" source="../media/beginners-css-framework2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-framework2.msft.png":::
-       链接到中的框架 `index.html`  
+    :::image type="complex" source="../media/beginners-css-framework2.msft.png" alt-text="指向 index.html 中的框架的链接" lightbox="../media/beginners-css-framework2.msft.png":::
+       链接到 `index.html`  
     :::image-end:::  
     
-1.  返回到 "实时" 选项卡以查看所做的更改。  虽然元素的背景色 `<nav>` 和 `<li>` 和元素的字体 `<a>` 相同，但其他元素的字体已更改。  
+1.  返回到实时选项卡以查看更改。  虽然元素的背景颜色与 and 元素的字体相同，但其他元素的 `<nav>` `<li>` `<a>` 字体已更改。  
     
-    :::image type="complex" source="../media/beginners-css-framework3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-framework3.msft.png":::
-       主页面上的某些字体因框架而发生更改  
+    :::image type="complex" source="../media/beginners-css-framework3.msft.png" alt-text="主页上的一些字体因框架而更改" lightbox="../media/beginners-css-framework3.msft.png":::
+       主页上的一些字体因框架而更改  
     :::image-end:::  
     
-### 使用类  
+### <a name="use-a-class"></a>使用类  
 
-在最后一节中，你将引导数据库添加到网页，这将更改网站上某些元素的字体。  CSS 框架可帮助你通过非常少的代码对页面进行重大更改。  完成以下操作以更改页眉。  
+在上一节中，你向网页添加了 Bootstrap，这更改了网站上某些元素的字体。  CSS 框架可帮助你使用非常少的代码对页面进行重大更改。  完成以下操作以更改标头。  
 
-1.  复制以下代码片段。  
+1.  复制以下代码段。  
     
     ```html
     class="jumbotron jumbotron-fluid"  
     ```  
     
-1.  将上一个代码段添加到 `<header>` 中的标记 `index.html` 。  
+1.  将前面的代码段添加到 `<header>` 您的标记中 `index.html` 。  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-jumbotron1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-jumbotron1.msft.png" alt-text="在 index.html 中添加类" lightbox="../media/beginners-css-jumbotron1.msft.png":::
        将类添加到 `index.html`  
     :::image-end:::  
     
-1.  将代码添加到 `<header>` 中的标记 `contact.html` 。  
+1.  将代码添加到 `<header>` 您的标记中 `contact.html` 。  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-jumbotron2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-jumbotron2.msft.png" alt-text="在 contact.html 中添加类" lightbox="../media/beginners-css-jumbotron2.msft.png":::
        将类添加到 `contact.html`  
     :::image-end:::  
     
-1.  在 "实时" 选项卡中查看所做的更改。 页眉周围有一个大灰的框。  
+1.  在实时选项卡中查看更改。 标题周围有一个大的灰色框。  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-jumbotron3.msft.png":::
-       标题现在周围有一个大灰框  
+    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="标题现在四周有一个大的灰色框" lightbox="../media/beginners-css-jumbotron3.msft.png":::
+       标题现在四周有一个大的灰色框  
     :::image-end:::  
     
-### 了解类  
+### <a name="understand-classes"></a>了解类  
 
-通过类，你可以将样式集合分配给任意元素。  `<header>`将属性设置为后，使用以下代码片段对元素应用多个样式 `class` `jumbotron` 。  
+类使你可以将样式集合分配给任意元素。  将属性设置为后，使用以下代码段将多个样式应用到 `<header>` `class` 元素 `jumbotron` 。  
 
 ```css
 .jumbotron {
@@ -548,7 +548,7 @@ li a {
 }
 ```  
 
-类的一个优点是允许你将样式应用到所需的任何元素。  例如，假设你想要将某些元素的背景色设置 `<p>` 为紫色，而不是所有 `<p>` 元素。  使用以下代码片段定义类中的样式。  
+类的一个优点是，它允许您将样式应用于所需的任何元素。  例如，假设你想要将某些元素的背景色设置为 `<p>` 紫色，但不是所有 `<p>` 元素。  使用以下代码段定义类中的样式。  
 
 ```css
 .custom-background {
@@ -556,7 +556,7 @@ li a {
 }
 ```  
 
-接下来，将该类应用于 `<p>` 要样式的元素。  
+接下来，将类仅应用于 `<p>` 要设置样式的元素。  
 
 ```html
 <p>The text is not purple.</p>
@@ -565,44 +565,44 @@ li a {
 <p class="custom-background">The text is purple.</p>
 ```  
 
-### 对齐元素  
+### <a name="align-elements"></a>对齐元素  
 
-完成以下操作以执行引导并提供用于对齐元素的类。  
+完成以下操作以引导并提供用于对齐元素的类。  
 
-1.  返回 "编辑器" 选项卡，然后打开 `index.html` 。  
-1.  添加 `class="container-fluid"` 到您的 `<body>` 标签。  
+1.  返回到编辑器选项卡并打开 `index.html` 。  
+1.  添加到 `class="container-fluid"` 标记 `<body>` 。  
     
-    :::image type="complex" source="../media/beginners-css-align1.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-align1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-align1.msft.png" alt-text="添加容器流类" lightbox="../media/beginners-css-align1.msft.png":::
        添加 `container-fluid` 类  
     :::image-end:::  
     
-1.  将您的 `<nav>` 和 `<main>` 元素包装在中 `<div class="row">` 。  请确保放 `</div>` `</main>` 在 "" 之后，才能正确关闭新标记。  
+1.  将你的 `<nav>` 和 `<main>` 元素包装在 `<div class="row">` .  请务必放在 `</div>` 后 `</main>` ，以便正确关闭新标记。  
     
-    :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-align2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="添加行" lightbox="../media/beginners-css-align2.msft.png":::
        添加行  
     :::image-end:::  
     
-1.  添加 `class="col-3"` 到您的 `<nav>` 标签和 `class="col-9"` `<main>` 标签。  
+1.  添加到 `class="col-3"` 标记 `<nav>` 和 `class="col-9"` `<main>` 标记。  
     
-    :::image type="complex" source="../media/beginners-css-align3.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-align3.msft.png":::
-       添加 `col-3` 和 `col-9` 类  
+    :::image type="complex" source="../media/beginners-css-align3.msft.png" alt-text="添加 col-3 和 col-9 类" lightbox="../media/beginners-css-align3.msft.png":::
+       添加 `col-3` and `col-9` 类  
     :::image-end:::  
     
-1.  在 "实时" 选项卡中查看所做的更改。  
+1.  在实时选项卡中查看更改。  
     
-    :::image type="complex" source="../media/beginners-css-align4.msft.png" alt-text="网站的当前外观" lightbox="../media/beginners-css-align4.msft.png":::
-       导航内容现在位于主要内容的左侧  
+    :::image type="complex" source="../media/beginners-css-align4.msft.png" alt-text="导航内容现在位于主内容的左侧" lightbox="../media/beginners-css-align4.msft.png":::
+       导航内容现在位于主内容的左侧  
     :::image-end:::  
     
-## 后续步骤  
+## <a name="next-steps"></a>后续步骤  
 
-恭喜！您已完成。  
+恭喜！你已完成。  
 
-*   在 web 开发中获取更好的最佳方式是构建更多网站。  不要担心会破坏内容。  只要有兴趣，您就可以轻松掌握。  
-*   若要了解有关设置网页样式的详细信息，请导航到 [CSS 简介][MDNCssFirstSteps]。  
-*   若要了解有关如何使用 DevTools 来试验页面 CSS 的详细信息，请导航到 " [查看和更改 css" 入门][DevtoolsCssIndex]。  
+*   更好地进行 Web 开发的最佳方法就是生成更多网站。  不要担心破坏内容。  只需在一边玩得一样有趣，然后尽可能学习。  
+*   若要了解有关设置网页样式的信息，请导航到 [CSS 简介][MDNCssFirstSteps]。  
+*   若要了解有关如何使用 DevTools 试验页面 CSS 的信息，请导航到"查看和更改 CSS 入门["。][DevtoolsCssIndex]  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -612,18 +612,18 @@ li a {
 
 <!--- links  --->  
 
-[DevtoolsBeginnersHtml]: ./html.md "初学者的 DevTools： HTML 和 DOM 入门 |Microsoft 文档"  
-[DevtoolsCssIndex]: ../css/index.md "开始使用查看和更改 CSS |Microsoft 文档"  
+[DevtoolsBeginnersHtml]: ./html.md "适用于初学者的 DevTools：HTML 和 DOM |Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"  
 
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html-cooked-amphibian |故障"  
+[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html - 已|小故障"  
 
-[MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS 优先步骤 |MDN"  
+[MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS 第一|MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由 [Katherine 杰克逊][KatherineJackson] (技术编写器暂存，Chrome DevTools \ ) 。  
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/beginners/css) 由一名技术编写器 ([Chrome][KatherineJackson] DevTools\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

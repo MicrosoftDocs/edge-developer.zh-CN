@@ -1,18 +1,18 @@
 ---
-description: 使用 Microsoft Edge 中的虚拟设备构建移动版的第一网站。
-title: 在 Microsoft Edge DevTools 中模拟移动设备
+description: 使用 Microsoft Edge 中的虚拟设备构建移动第一网站。
+title: 模拟 Microsoft Edge DevTools 中的移动设备
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge，web 开发，f12 工具，devtools，仿真，设备，模拟，移动
-ms.openlocfilehash: 8b636a20fcb1c55630009031ec8bf300624d03d7
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge， Web 开发， f12 工具， devtools， 模拟， 设备， 模拟， 移动
+ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125102"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398782"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,314 +28,314 @@ ms.locfileid: "11125102"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 在 Microsoft Edge DevTools 中模拟移动设备  
+# <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>模拟 Microsoft Edge DevTools 中的移动设备  
 
-使用 **设备仿真** 来大致了解你的页面在移动设备上的外观和响应。  Microsoft Edge DevTools 提供了一系列功能，可帮助你模拟移动设备。  集合包含以下功能。  
+使用 **设备仿真** 来大致了解页面在移动设备上的外观和响应方式。  Microsoft Edge DevTools 提供了一组功能，可帮助你模拟移动设备。  该集合包括以下功能。  
 
-*   [模拟移动视区](#simulate-a-mobile-viewport)  
-*   [阻止网络](#throttle-the-network-only)  
-*   [调节 CPU](#throttle-the-cpu-only)  
+*   [模拟移动视口](#simulate-a-mobile-viewport)  
+*   [限制网络](#throttle-the-network-only)  
+*   [限制 CPU](#throttle-the-cpu-only)  
 *   [模拟地理位置](#override-geolocation)  
 *   [设置方向](#set-orientation)  
 *   [设置用户代理字符串](#set-user-agent-string)  
 
-## 限制  
+## <a name="limitations"></a>限制  
 
-**设备模拟** 是你的页面在移动设备上的 [第一顺序近似值][WikiApproximation] 。  **设备仿真** 实际上并不在移动设备上运行代码。  而是从便携式计算机或桌面模拟移动用户体验。  
+**设备仿真** 是 [移动设备中][WikiApproximation] 页面外观的一级近似值。  **设备仿真** 实际上不会在移动设备上运行你的代码。  相反，你可以模拟笔记本电脑或台式机的移动用户体验。  
 
-移动设备的某些方面从不在 DevTools 中进行模拟。  例如，移动 Cpu 的体系结构不同于便携式计算机或桌面 Cpu 的体系结构。  如果有疑问，最佳做法是在移动设备上实际运行您的页面。  在页面实际在移动设备上运行时，可使用 [远程调试] [DevToolsRemoteDebugging] 与你的计算机中的页面代码进行交互。  当您与代码交互时，您可以查看、更改、调试、配置文件或全部四种。  您的计算机可能是笔记本或台式计算机。  
+从不会在 DevTools 中模拟移动设备的某些方面。  例如，移动 CPU 的体系结构不同于笔记本电脑或台式机 CPU 的体系结构。  当有疑问时，最佳匹配是在移动设备上实际运行页面。  使用 [Remote Debugging][DevToolsRemoteDebugging] 与计算机中的页面代码进行交互，同时你的页面实际运行在移动设备上。  当你与代码交互时，可以查看、更改、调试、配置文件或全部四者。  你的计算机可能是笔记本或台式计算机。  
 
-## 模拟移动视区  
+## <a name="simulate-a-mobile-viewport"></a>模拟移动视口  
 
-选择 " **切换设备仿真**  \ (![ 切换设备" 工具栏 ][ImageDeviceToolbarIcon] \ ) 或选择 " **自定义和控制 DevTools** \ (`...` \" ) > **设备仿真** "打开可使您模拟移动视区的 UI。  
+Choose **Toggle device emulation**  \ (![ Toggle Device Toolbar ][ImageDeviceToolbarIcon] \) or choose Customize **and control DevTools** \ (`...` \) > Device **emulation** to open the UI that enables you to simulate a mobile viewport.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-    "设备" 工具栏  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+    设备工具栏  
 :::image-end:::  
 
-默认情况下，设备工具栏将在 "响应式" 视区模式下打开。  
+默认情况下，设备工具栏在响应式视口模式下打开。  
 
-### 响应式视区模式  
+### <a name="responsive-viewport-mode"></a>响应式视口模式  
 
-若要跨多个屏幕大小快速测试页面的外观，请拖动图柄以将视区大小调整为所需的尺寸。  您也可以在 "宽度" 和 "高度" 框中输入特定值。  在下图中，宽度设置为 `626` ，高度设置为 `516` 。  
+若要跨多个屏幕大小快速测试页面的外观，请拖动手柄以将视口大小调整为所需尺寸。  还可以在宽度和高度框中输入特定值。  在下图中，宽度设置为 ，高度 `626` 设置为 `516` 。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
-    在 "响应" 视口模式下更改视区尺寸的控制滑块  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="在响应式视口模式下更改视口尺寸的句柄" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+    在响应式视口模式下更改视口尺寸的句柄  
 :::image-end:::  
 
-#### 显示媒体查询  
+#### <a name="show-media-queries"></a>显示媒体查询  
 
-如果你已在页面上定义了媒体查询，则通过在你的视区上方显示媒体查询断点，跳转到这些媒体查询将生效的视区维度。  选择 "**更多选项**"  >  **显示媒体查询**。  
+如果已定义页面上的媒体查询，请跳转到视口维度，这些媒体查询将在视口上方显示媒体查询断点，以生效。  选择 **"更多**  >  **选项"显示媒体查询**。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="显示媒体查询" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
    **显示媒体查询**  
 :::image-end:::  
 
 选择一个断点以更改视区的宽度，以便触发媒体查询。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
-   选择断点以更改视区的宽度  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="选择断点以更改视口的宽度" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+   选择断点以更改视口的宽度  
 :::image-end:::  
 
-#### 设置设备类型  
+#### <a name="set-the-device-type"></a>设置设备类型  
 
-使用 **设备类型** 列表来模拟移动设备或桌面设备。  
+使用 **"设备类型** "列表模拟移动设备或桌面设备。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
-   **设备类型**列表  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="设备类型列表" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+   设备 **类型** 列表  
 :::image-end:::  
 
-下表介绍了可用设备类型选项之间的差异。  呈现方法列引用 Microsoft Edge 是否将页面呈现为移动设备或桌面视区。  光标图标列指悬停在页面上时看到的光标类型。  "触发事件" 列指 `touch` `click` 当您与页面交互时，页面是触发还是事件。  
+下表介绍了可用设备类型选项之间的差异。  呈现方法列是指 Microsoft Edge 是将页面呈现为移动视图还是桌面视口。  光标图标列是指在页面上悬停时显示的游标类型。  触发的事件列是指当您与页面交互时页面是否触发 `touch` `click` 或事件。  
 
 | 选项 | 呈现方法 | 光标图标 | 触发的事件 |  
 |:--- |:--- |:--- |:--- |  
 | 移动版 | 移动版 | 圆形 | 触摸 |  
-| 移动 \ (无接触 \ )  | 移动版 | 正常 | 单击 |  
-| 桌面 | 桌面 | 正常 | 单击 |  
-| 桌面 (触控 \ )  | 桌面 | 圆形 | 触摸 |  
+| 移动 \ (触摸\)  | 移动版 | 正常 | 选择 |  
+| 桌面 | 桌面 | 正常 | 选择 |  
+| 桌面 \ (触摸\)  | 桌面 | 圆形 | 触摸 |  
 
 > [!NOTE]
-> 如果未显示 "**设备类型**" 列表，请选择 "**更多选项**"  >  **添加设备类型**。  
+> 如果未**显示设备类型**列表，请选择"**更多选项**  >  **添加设备类型"。**  
 
-### 移动设备视区模式  
+### <a name="mobile-device-viewport-mode"></a>移动设备视口模式  
 
-若要模拟特定移动设备的尺寸，请从 **设备** 列表中选择该设备。  
+若要模拟特定移动设备的尺寸，请从"设备"列表中选择 **该设备** 。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
-   **设备**列表  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="设备列表" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+   设备**列表**  
 :::image-end:::  
 
-#### 将视区旋转到横向方向  
+#### <a name="rotate-the-viewport-to-landscape-orientation"></a>将视口旋转至横向  
 
-以横向方向测试您的网页。  
+在横向方向测试网页。  
 
-*   若要将视区旋转到横向方向，请选择 " **旋转** \ (![ 旋转 ][ImageRotateIcon] \ ) "。  
+*   若要将视口旋转到横向方向，请选择 **"旋转** (旋转 ![ ][ImageRotateIcon] \) 。  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="横向显示的页面" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        横向显示的页面  
     :::image-end:::  
     
 > [!NOTE]
-> 如果**设备工具栏**较窄，"**旋转**" 按钮将消失。  
+> 如果 **设备** 工具栏较窄 **，"旋转** "按钮将消失。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-   " **设备" 工具栏**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   设备 **工具栏**  
 :::image-end:::  
 
-有关详细信息，请转到 [设置方向](#set-orientation)。  
+有关详细信息，请导航到"[设置方向"。](#set-orientation)  
 
-#### 显示设备帧  
+#### <a name="show-device-frame"></a>显示设备框架  
 
-当模拟特定移动设备（如 iPhone 6）的尺寸时，将在视区周围显示物理设备帧。  
+模拟特定移动设备（如 iPhone 6）的尺寸时，在视口周围显示物理设备框架。  
 
-1.  打开 " **更多选项**"。  
-1.  选择 " **显示设备帧**"。  
+1.  打开 **更多选项**。  
+1.  选择 **"显示设备框架"。**  
 
 > [!NOTE]
-> 如果您没有看到特定设备的设备框架，则意味着 DevTools 没有该选项的图片。  
+> 如果未显示特定设备的设备框架，则意味着 DevTools 没有适用于该选项的图文。  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
-         显示设备帧  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="显示设备框架" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+         显示设备框架  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
-         IPhone 6 的设备帧  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="iPhone 6 的设备框架" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         iPhone 6 的设备框架  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-#### 添加自定义移动设备  
+#### <a name="add-a-custom-mobile-device"></a>添加自定义移动设备  
 
-如果默认列表中未包括所需的移动设备选项，则可以添加自定义设备。  若要添加自定义设备，请完成以下步骤。  
+如果默认列表中未包含所需的移动设备选项，可以添加自定义设备。  若要添加自定义设备，请完成以下步骤。  
 
-1.  选择 " **设备** 列表" > " **编辑**"。  
+1.  选择" **编辑** > **列表**。  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-       选择 "**编辑**"  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="选择"编辑"" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       选择 **"编辑"**  
     :::image-end:::  
     
-1.  选择 " **添加自定义设备**"。  
-1.  在 **模拟设备**上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  [设备像素比率][MDNWindowDevicePixelRatio]、[用户代理字符串][MDNUserAgent]和[设备类型](#set-the-device-type)字段是可选的。  "设备类型" 字段默认为 " **移动**"。  
+1.  选择 **"添加自定义设备"。**  
+1.  在 **模拟设备上**，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  设备[像素比率][MDNWindowDevicePixelRatio]、[用户代理字符串][MDNUserAgent][和设备类型](#set-the-device-type)字段是可选的。  设备类型字段默认为**移动。**  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="创建自定义设备" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
        创建自定义设备  
     :::image-end:::  
     
-### 显示标尺  
+### <a name="show-rulers"></a>显示标尺  
 
-如果需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 "**更多选项**"  >  **显示 "标尺**" 以在视区左侧和左侧显示标尺。  
+如果需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 **"更多**  >  **选项"显示标**尺以显示视区上方和左侧的标尺。  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="用于显示标尺的菜单项" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
          用于显示标尺的菜单项  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
-         视区左侧和左侧的标尺  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="视口上方和左侧的标尺" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+         视口上方和左侧的标尺  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### 缩放视区  
+### <a name="zoom-the-viewport"></a>缩放视口  
 
-若要以多个缩放级别测试页面的外观，请使用 " **缩放** " 列表放大或缩小。  
+若要在多个缩放级别测试页面的外观，请使用 **"** 缩放"列表进行放大或缩小。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
-   **缩放**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+   **Zoom**  
 :::image-end:::  
 
-## 限制网络和 CPU  
+## <a name="throttle-the-network-and-cpu"></a>限制网络和 CPU  
 
-移动设备通常具有网络和 CPU 限制。  确保你可以测试页面的加载速度以及它在不同 internet 和 CPU 速度中的响应速度。  
+移动设备通常具有网络和 CPU 约束。  确保测试页面加载速度以及页面如何以不同的 Internet 和 CPU 速度响应。  
 
 限制网络和 CPU。  
 
-1.  选择 " **限制** 列表"，然后将预置更改为 " **中层移动** " 或 " **低端手机**"。  
-    *   中层**移动**模拟 `fast 3G` 和限制你的 CPU。  这比平时慢4倍。  
-    *   **低端移动** 模拟 `slow 3G` 和限制您的 CPU。  这比平时慢六倍。  
+1.  选择 **限制** 列表，将预设更改为 **中层移动** 或 **低端移动**。  
+    *   **中间层移动** 可模拟 `fast 3G` 并限制 CPU。  它比正常速度慢四倍。  
+    *   **低端移动** 将模拟 `slow 3G` 并限制 CPU。  它比正常速度慢六倍。  
     
-所有限制都基于便携式计算机或桌面机的正常功能。  
+所有限制都基于笔记本电脑或台式机的正常功能。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
-   "设备" 工具栏中的 " **限制** " 列表  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="设备工具栏中的限制列表" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   设备 **工具栏** 中的限制列表  
 :::image-end:::  
 
 > [!NOTE]
-> 如果 " **限制" 列表** 处于隐藏状态，则你的 **设备工具栏** 太窄。  若要访问 **限制列表**，请增大 "设备" **工具栏**的宽度。  
+> 如果 **"限制"列表** 处于隐藏状态， **则设备工具栏** 过窄。  若要访问 **限制列表**，请增加设备 **工具栏的宽度**。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-   " **设备" 工具栏**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   设备 **工具栏**  
 :::image-end:::  
 
-### 仅调节 CPU  
+### <a name="throttle-the-cpu-only"></a>仅限制 CPU  
 
 若要仅限制 CPU 而不是网络，请完成以下步骤。
 
-1.  选择 " **性能** " 面板，然后选择 " **捕获设置** \ (![ 捕获设置 ][ImageCaptureIcon] \ ) "。
-1.  选择**CPU**  >  **4x 减速**或**6x 减速**。
+1.  选择 **"性能** "面板 **，然后选择"** 捕获设置" ("捕获设置 ![ ][ImageCaptureIcon] ") 。
+1.  选择**CPU**  >  **4 倍慢或** **6 倍慢**。
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
-       "**性能**" 面板中的**CPU**列表  
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="性能面板中的 CPU 列表" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+       性能**面板中的****CPU**列表  
     :::image-end:::  
     
-### 仅限制网络  
+### <a name="throttle-the-network-only"></a>仅限制网络  
 
 若要仅限制网络，请完成以下步骤。
 
-1.  选择 " **网络** " 面板。
-1.  选择 "**联机**  >  **快速 3g** " 或 "**低速 3g**"。
+1.  选择 **"网络"** 工具。
+1.  选择 **"**  >  **联机快速 3G"或**"**慢速 3G"。**
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-network-throttle.msft.png":::
-       网络面板中的 **限制** 列表  
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表" lightbox="../media/device-mode-network-throttle.msft.png":::
+       网络 **面板** 中的限制列表  
     :::image-end:::  
     
-    或选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**，键入 `3G` ，然后选择 "**启用快速3g 限制**" 或 "**启用慢速3g 限制**"。  
+    或者，选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) **** `3G` ******** 打开命令菜单，键入并选择"启用快速 3G 限制"或"启用慢速 3G 限制"。  
     
-    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-您也可以从 " **性能** " 面板设置网络限制。  
+您还可以从"性能"面板设置 **网络** 限制。  
 
-1.  选择 **"捕获设置** \ (![ 捕获设置 ][ImageCaptureIcon] \ ) "，然后选择 " **网络** " 列表，并将预设置更改为 " **快速 3g** " 或 " **低速 3g**"。  
+1.  Choose **Capture Settings** \ (Capture Settings ![ ][ImageCaptureIcon] \) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
-       从 **性能** 面板设置网络限制  
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从"性能"面板设置网络限制" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+       从"性能"面板设置 **网络** 限制  
     :::image-end:::  
     
-## 替代地理位置  
+## <a name="override-geolocation"></a>替代地理位置  
 
 :::row:::
    :::column span="":::
-      如果你的页面依赖于移动设备上的地理位置信息来正确呈现，请使用地理位置替代 UI 来提供不同的 geolocations。  
+      如果你的页面依赖于移动设备中的地理位置信息来正确呈现，则使用地理位置替代 UI 提供不同的地理位置。  
 
-      1.  选择 "**自定义和控制 DevTools** \ (`...` \ ) " > "**其他工具**  >  **传感器**"。  
+      1.  Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Sensors**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         地理位置的**传感器**  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="地理位置传感器" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **地理位置** 传感器  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  打开 "命令" 菜单。  
-          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
-      1. 键入 `Sensors` ，然后选择 " **显示传感器**"。  
+      1.  打开“命令菜单”。  
+          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。  
+      1. 键入 `Sensors` ，然后选择 **"显示传感器"。**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         **显示** 地理位置的传感器  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示地理位置传感器" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **显示地理位置** 传感器  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-在 " **传感器** " 面板上，你可以使用 " **位置** " 下拉菜单选择 DevTools 中包含的预设位置之一。  若要输入自定义位置，请选择 " **其他" ...** 并输入自定义位置的坐标。  当位置信息不可用时，若要在错误状态中测试页面，请选择 " **位置不可用**"。  
+在 **"传感器"** 面板上，可以使用"位置"下拉菜单选择 DevTools 中包含的预设位置之**** 一。  若要输入自定义位置，请选择"其他 **...** 并输入自定义位置的坐标。  若要在位置信息不可用时测试页面错误状态，请选择"**位置不可用"。**  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
-    选择了预设位置的 "**传感器**" 面板。  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的传感器面板" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+    **选择预设** 位置的传感器面板。  
 :::image-end:::
 
-## 设置方向  
+## <a name="set-orientation"></a>设置方向  
 
 :::row:::
    :::column span="":::
-      如果页面依赖于移动设备上的方向信息来正确呈现，请打开 "方向" UI。  
+      如果页面依赖于移动设备中的方向信息来正确呈现，请打开方向 UI。  
 
-      1.  选择 "**自定义和控制 DevTools** \ (`...` \ ) " > "**其他工具**  >  **传感器**"。  
+      1.  Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Sensors**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         方向**传感器**  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="方向传感器" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **方向** 传感器  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  打开 "命令" 菜单。  
-          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
-      1. 键入 `Sensors` ，然后选择 " **显示传感器**"。  
+      1.  打开“命令菜单”。  
+          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。  
+      1. 键入 `Sensors` ，然后选择 **"显示传感器"。**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         **显示** 方向的传感器  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示方向传感器" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **显示方向** 传感器  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-在 " **传感器** " 面板上，您可以从 " **方向** " 下拉菜单中选择预设方向。  若要输入自己的方向，请选择 " **自定义方向**"，然后输入您自己的 [alpha][MDNDeviceOrientaitonAlpha]、 [beta][MDNDeviceOrientaitonBeta]和 [伽玛][MDNDeviceOrientaitonGamma] 值。  
+在 **"传感器"** 面板上，你可以从"方向"下拉菜单中选择**** 预设方向。  若要输入你自己的方向，请选择 **"自定义方向**"，然后输入你自己的[alpha、beta][MDNDeviceOrientaitonAlpha]和[][MDNDeviceOrientaitonBeta][gamma][MDNDeviceOrientaitonGamma]值。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
-    "**传感器**" 面板上的**方向**选项  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text=""传感器"面板上的方向选项" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+    **"** 传感器 **"面板上的方向** 选项  
 :::image-end:::  
 
-## 设置用户代理字符串  
+## <a name="set-user-agent-string"></a>设置用户代理字符串  
 
 :::row:::
    :::column span="":::
-      如果页面依赖于移动设备的用户代理字符串来正确呈现，请使用 " **网络条件** " 面板提供不同的用户代理字符串。  
+      如果页面依赖于移动设备中的用户代理字符串来正确呈现，请使用"网络条件"面板提供**** 不同的用户代理字符串。  
       
-      1.  选择 "**自定义和控制 DevTools** \ (`...` \ ) " >**更多工具**  >  **网络条件**。  
+      1.  Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Network conditions**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
-         "**更多工具**" 菜单中的**网络条件**输入  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text=""更多工具"菜单中的网络条件条目" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+         **"更多** 工具" **菜单中的网络条件** 条目  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  打开 "命令" 菜单。  
-          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 。  
-      1. 键入 `Network conditions` ，然后选择 " **显示网络条件**"。  
+      1.  打开“命令菜单”。  
+          *   选择 `Control` + `Shift` + `P` \ (Windows、Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。  
+      1. 键入 `Network conditions` ，然后选择 **"显示网络条件"。**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
          **显示网络条件**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-在 " **用户代理**" 旁边，清除 " **自动选择** " 复选框。  然后，选择 " **自定义 ...** " 以从预定义的用户代理字符串列表中进行选择。  若要输入自己的用户代理字符串，请在 " **输入自定义用户代理**" 中输入字符串。  
+在 **用户代理旁边，** 清除" **自动选择"** 复选框。  然后，选择 **"自定义..."，** 从预定义的用户代理字符串列表中选择。  若要输入您自己的用户代理字符串，请在"输入自定义用户代理 **"中输入字符串**。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="&quot;设备&quot; 工具栏" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
-    在 macOS 上将用户代理字符串设置为 Microsoft Edge  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="将用户代理字符串设置为 macOS 上的 Microsoft Edge" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+    将用户代理字符串设置为 macOS 上的 Microsoft Edge  
 :::image-end:::  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -348,15 +348,15 @@ ms.locfileid: "11125102"
 <!-- links -->  
 
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
-[DevToolsRemoteDebugging]: ../remote-debugging/index.md "开始使用远程调试 Android 设备" |Microsoft 文档 "  
+[DevToolsRemoteDebugging]： ../remote-debugging/index.md"开始远程调试 Android 设备|Microsoft Docs"  
 
-[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "DevicePixelRatio |MDN"  
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "用户代理 |MDN"  
-[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent |MDN"  
-[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent |MDN"  
-[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent |MDN"  
+[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio |MDN"  
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "用户代理|MDN"  
+[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent.alpha |MDN"  
+[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent.beta |MDN"  
+[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent.gamma |MDN"  
 
-[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "近似值-第一顺序-维基百科的顺序"  
+[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "近似顺序 - 一级 - Wikipedia"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

@@ -1,32 +1,32 @@
 ---
-description: '如何从 Visual Studio 代码调试 Microsoft Edge (Chromium) 和 Microsoft Edge (EdgeHTML) '
-title: '从 Visual Studio 代码调试 Microsoft Edge (Chromium) '
+description: 如何从 (代码中调试 Microsoft Edge) Chromium (EdgeHTML) Microsoft Edge Visual Studio
+title: 从代码 (Microsoft Edge) Chromium Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools、vs 代码、visual studio 代码、调试器
-ms.openlocfilehash: df15b76cc26ad01d3b8508362aa4b86998f8b41b
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， debugger
+ms.openlocfilehash: e36348fc1ef5e30a511e6eda73c7646a85d8717e
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182503"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399293"
 ---
-# Microsoft Edge Visual Studio 代码扩展的调试器  
+# <a name="debugger-for-microsoft-edge-visual-studio-code-extension"></a>Microsoft Edge 调试器Visual Studio代码扩展  
 
-通过 [适用于 Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio 代码扩展的调试器，逐行调试你的前端 JavaScript 代码行并 `console.log()` 直接从 [Visual Studio 代码][VisualstudioCode]中查看语句！  
+使用 [调试器 for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio 代码扩展，按行调试前端 JavaScript 代码，并直接从 Visual Studio `console.log()` [代码查看语句][VisualstudioCode]！  
 
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="工作中的边缘 Visual Studio 代码扩展的调试器" lightbox="./media/debugger-for-edge.gif":::
-   工作中的边缘 Visual Studio 代码扩展的调试器  
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="工作中的边缘Visual Studio代码扩展的调试程序" lightbox="./media/debugger-for-edge.gif":::
+   工作中的边缘Visual Studio代码扩展的调试程序  
 :::image-end:::
 
 <!--![Debugger for Edge Visual Studio Code extension at work][ImageGifDebuggerEdge]  -->  
 
-## 启动 Microsoft Edge  
+## <a name="launching-microsoft-edge"></a>启动 Microsoft Edge  
 
-在 `Ctrl` + `Shift` + `D` Windows 上或 `Command` + `Shift` + `D` **活动栏**中的 macOS \ ) 导航到 "调试" 视图 \ (。  如果 Visual Studio 代码中没有任何配置，请按 `F5` Windows 或 macOS 或选择绿色的 " **播放** " 按钮。  在下拉列表中选择 " **边缘** "。  你应该会看到 `launch.json` 具有以下配置的文件。  
+导航到"调试"视图 \ (`Ctrl` + `Shift` + `D` Windows 或 `Command` + `Shift` + `D` macOS\) **中的"调试"视图**。  如果你的"代码"中没有任何Visual Studio，请在 Windows 或 `F5` macOS 上选择，或选择绿色"播放 **"** 按钮。  在 **下拉列表** 中选择"边缘"。  应看到具有以下 `launch.json` 配置的文件。  
 
 ```json
 {
@@ -43,11 +43,11 @@ ms.locfileid: "11182503"
 }
 ```  
 
-如果您按 `F5` Windows 或 macOS 或再次选择绿色的 " **播放** " 按钮，Visual studio 代码将启动 Microsoft Edge \ (EdgeHTML \ ) ，您可以 `8080` 直接从 Visual Studio 代码调试在端口上运行的任何 web 项目！  
+如果在 Windows 或 macOS 上选择或再次选择绿色"播放"按钮，Visual Studio 代码将启动 `F5` Microsoft Edge \ (EdgeHTML\) 并且你可以直接从 Visual Studio Code 调试在端口上运行**** 的任何 `8080` Web 项目！  
 
-### Microsoft Edge (Chromium)  
+### <a name="microsoft-edge-chromium"></a>Microsoft Edge (Chromium)  
 
-如果你想要启动 Microsoft Edge \ (Chromium \ ) ，则新的 Microsoft Edge，而不是 Microsoft Edge \ (EdgeHTML \ ) ，只需将 `version` 属性添加到你的现有配置中，使用 Microsoft edge \ (Chromium \ ) 启动 \ (`dev` 、 `beta` 或 `canary` \ ) 。  下面的配置将启动 Chromium 版本的 Microsoft Edge \ (\ ) 。  
+如果要启动 Microsoft Edge \ (Chromium\) ，则新的 Microsoft Edge（而不是 Microsoft Edge \ (EdgeHTML\) ）只需使用要启动的 Microsoft `version` Edge \ (Chromium\) 版本向现有配置添加一个属性，即要启动 \ (或 `dev` `beta` `canary` \) 。  下面的配置将启动 Canary 版本的 Microsoft Edge \ (Chromium\) 。  
 
 ```json
 {
@@ -60,15 +60,15 @@ ms.locfileid: "11182503"
 }
 ```  
 
-## 附加到 Microsoft Edge  
+## <a name="attaching-to-microsoft-edge"></a>附加到 Microsoft Edge  
 
-将 Visual Studio 代码附加到 Microsoft Edge \ (Chromium \ ) 。  在终端中，运行以下命令。  
+将Visual Studio代码附加到 Microsoft Edge \ (Chromium\) 。  从终端运行以下命令。  
 
 ```shell
 start msedge --remote-debugging-port=9222
 ```  
 
-将下面的配置添加到你的 `launch.json` 文件。   
+将下面的配置添加到 `launch.json` 文件。   
 
 ```json
 {
@@ -79,26 +79,26 @@ start msedge --remote-debugging-port=9222
 }
 ```  
 
-如果现在运行此配置，Visual Studio 代码将附加到 Microsoft Edge \ (Chromium \ ) 并开始调试。  
+如果现在运行此配置，Visual Studio代码附加到 Microsoft Edge \ (Chromium\) 并开始调试。  
 
-## 与 Microsoft Edge Visual Studio 代码扩展团队的元素保持联系    
+## <a name="getting-in-touch-with-the-elements-for-microsoft-edge-visual-studio-code-extension-team"></a>与 Microsoft Edge 和代码扩展Visual Studio元素联系    
 
-通过在扩展的[GitHub][GithubMicrosoftVscodeEdgeDebug2]存储库中[归档问题][GithubMicrosoftVscodeEdgeDebug2NewIssue]来发送反馈。  请包含调试适配器日志文件，该文件是在具有名称的目录中的每个运行中创建的 `%temp%` `vscode-edge-debug2.txt` 。  将此文件拖动到问题注释中，将其上传到 GitHub。  
+通过向扩展 [的][GithubMicrosoftVscodeEdgeDebug2NewIssue] [GitHub][GithubMicrosoftVscodeEdgeDebug2] 存储库中提交问题来发送反馈。  请包含调试适配器日志文件，这是为目录中每个运行创建的名称 `%temp%` `vscode-edge-debug2.txt` 。  将此文件拖动到问题注释中，以将其上载到 GitHub。  
 
-为了帮助使 Microsoft Edge Visual Studio 代码扩展的元素更好，你的发布是欢迎的！  在扩展的 [GitHub][GithubMicrosoftVscodeEdgeDebug2] 存储库中查找所需的所有内容。  
+为了帮助使 Microsoft Edge 元素Visual Studio代码扩展，欢迎你做出自己的贡献！  在扩展的 [GitHub][GithubMicrosoftVscodeEdgeDebug2] 存储库中查找入门所需的一切。  
 
 
 <!-- image links -->  
 
 <!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge Visual Studio Code extension in action"  -->  
-[ImagePngDebuggerEdge]：/media/debugger-for-edge.png "操作中的边缘 Visual Studio 代码扩展的调试程序"  
+[ImagePngDebuggerEdge]：./media/debugger-for-edge.png"调试器Visual Studio运行中的 Edge Visual Studio代码扩展"  
 
 <!--links -->  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "文档 |Visual Studio 代码"   
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio代码"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "文档|Visual Studio代码"   
 
 [GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "microsoft/vscode-edge-debug2 |GitHub"  
-[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "新问题-microsoft/vscode-debug2 |GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "新问题 - microsoft/vscode-edge-debug2 |GitHub"  
 
-[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Microsoft Edge 的调试器 |Visual Studio Marketplace"  
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "适用于 Microsoft Edge |Visual Studio市场"  

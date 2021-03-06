@@ -3,83 +3,67 @@ description: DevTools 协议版本 0.1 (EdgeHTML) 页面域参考。 与检查�
 title: '页面域 - DevTools 协议版本 0.1 (EdgeHTML) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 55575e54b9125d7ff544c23c81da4b15d3b56fb1
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: b04b0685a6b465d40e999a2a48d370573a3058d8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232473"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399146"
 ---
-# 页面域 - DevTools 协议版本 0.1 (EdgeHTML)   
+# <a name="page-domain---devtools-protocol-version-01-edgehtml"></a>页面域 - DevTools 协议版本 0.1 (EdgeHTML)   
 
-与检查的页面相关的操作和事件属于页面域。
+与检查的页面相关的操作和事件属于页面域。  
 
-| | |
-|-|-|
-| [**方法**](#methods) | [启用](#enable)， [禁用](#disable)， [导航](#navigate) |
-| [**类型**](#types) | [FrameId](#frameid) |
-## 方法
+| 分类 | 成员 |  
+|:--- |:--- |  
+| [**方法**](#methods) | [启用](#enable)， [禁用](#disable)， [导航](#navigate) |  
+| [**类型**](#types) | [FrameId](#frameid) |  
 
-### “启用”
-启用页面域通知。
+## <a name="methods"></a>方法  
 
+### <a name="enable"></a>“启用”  
 
----
+启用页面域通知。  
 
-### “禁用”
-禁用页面域通知。
+&nbsp;  
 
+---  
 
----
+### <a name="disable"></a>“禁用”  
 
-### 导航
-将当前页面导航到给定 URL。
+禁用页面域通知。  
 
-<table>
-    <thead>
-        <tr>
-            <th>参数</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>导航到页面的 URL。</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>返回</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td><span><b>实验。 </b></span>将导航的框架 ID。</td>
-        </tr>
-    </tbody>
-</table>
+&nbsp;  
 
----
+---  
 
-## 类型
+### <a name="navigate"></a>导航  
 
-### <a name="frameid"></a> FrameId `string`
+将当前页面导航到给定 URL。  
 
-唯一帧标识符。
+| 参数 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| url | `string` | 要导航到页面的 URL。 |  
 
+| 返回 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | **实验**性 。  将导航的帧 ID。 |  
 
----
+---  
+
+## <a name="types"></a>类型  
+
+### <a name="frameid-string"></a>FrameId 字符串  
+
+<a name="frameid"></a>  
+
+唯一的帧标识符。  
+
+&nbsp;  
+
+---  

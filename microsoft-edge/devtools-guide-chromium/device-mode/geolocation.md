@@ -1,18 +1,18 @@
 ---
-description: 打开 "传感器" 选项卡，然后从 "地理位置" 列表中选择 "坐标"。
-title: 通过 Microsoft Edge DevTools 替代地理位置
+description: 打开传感器工具，然后从"地理位置"列表中选择坐标。
+title: 使用 Microsoft Edge DevTools 替代地理位置
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f2bc395993ff59d88360a363b2c4bc12b570f1ab
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 8f6ad09b2f8db110f6743aae32e16cc9b1185400
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125011"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398999"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,28 +28,28 @@ ms.locfileid: "11125011"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 通过 Microsoft Edge DevTools 替代地理位置  
+# <a name="override-geolocation-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 替代地理位置  
 
-许多网站利用用户位置，以便为用户提供更相关的体验。  例如，天气网站可能会在用户向网站授予访问当前用户位置的权限后，在用户区域中显示本地预测。  
+许多网站利用用户位置来为用户提供更相关的体验。  例如，在用户授予网站访问当前用户位置的权限后，天气网站可能会显示用户区域中的本地天气预报。  
 
 <!--todo: add link to user location section when available -->  
 
-如果你正在生成根据用户所在位置而更改的 UI，你可能需要确保网站在世界各地的不同位置正确运行。  若要在 Microsoft Edge DevTools 中替代您的地理位置，请完成以下操作。  
+如果要生成根据用户所在的位置更改的 UI，你可能希望确保网站在世界各地的不同位置正常运行。  若要替代 Microsoft Edge DevTools 中的地理位置，请完成以下操作。  
 
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `sensors` ，选择 " **显示传感器**"，然后选择 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
-1.  从 " **地理** 位置" 列表中，选择其中一个预设城市，例如 `Tokyo` ，或选择 " **自定义位置** " 以输入自定义的经度和纬度坐标，或者选择 " **位置不可用** " 以查看当用户位置不可用时您的网站的行为。  
+1.  键入 `sensors` ，选择 **"显示传感器"，** 然后选择 `Enter` 。  传感器 **工具** 在 DevTools 窗口底部打开。  
+1.  从"**** 地理位置"列表中选择预设城市之一，如"自定义位置"以输入自定义经度和纬度坐标，或选择"位置不可用"以显示用户位置不可用时网站的行为方式。 `Tokyo` **** ****  
     
-    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
-       `Tokyo`从 "**地理位置**" 列表中选择  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="从地理位置列表中选择东京" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       从 `Tokyo` "**地理位置"列表中选择**  
     :::image-end:::  
     
-## 与 Microsoft Edge 开发人员工具团队联系
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

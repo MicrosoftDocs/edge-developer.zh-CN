@@ -3,16 +3,16 @@ description: Microsoft Edge DevTools 中的辅助功能的全面参考。
 title: 辅助功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: de8f4bee6fef7725af9b97fb80ab45582dfa2286
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125312"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398334"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,165 +28,165 @@ ms.locfileid: "11125312"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# 辅助功能参考  
+# <a name="accessibility-reference"></a>辅助功能参考  
 
-此页面是 Microsoft Edge DevTools 中辅助功能的完整参考。  它适用于以下情况的 web 开发人员：  
+此页面全面引用了 Microsoft Edge DevTools 中的辅助功能。  它适用于 Web 开发人员，这些开发人员：  
 
-*   对 DevTools 有一个基本的理解，例如如何将其打开。  
+*   对 DevTool 有基本的了解，例如如何打开它。  
 *   熟悉 [辅助功能原则和最佳做法][MDNAccessibility]。  
     
-本参考旨在帮助你发现 DevTools 中提供的所有工具，这些工具可帮助你检查页面的辅助功能。  
+此参考的目的是帮助你发现 DevTools 中提供的所有工具，这些工具可帮助你检查页面的辅助功能。  
 
-如果要查找有关使用辅助技术（如屏幕阅读器）导航 DevTools 的帮助，请参阅 [使用辅助技术导航 Microsoft Edge DevTools][DevtoolsAccessibilityNavigation] 。  
+如果你正在寻找有关使用辅助技术（如屏幕阅读器）导航 DevTools 的帮助，请导航到使用辅助技术导航[Microsoft Edge DevTools。][DevtoolsAccessibilityNavigation]  
 
-## Microsoft Edge DevTools 中辅助功能的概述  
+## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Microsoft Edge DevTools 中的辅助功能概述  
 
-本部分介绍 DevTools 如何融入你的整体辅助功能工具包。  
+本部分介绍 DevTools 如何适应整个辅助功能工具包。  
 
-确定页面是否可访问时，需要考虑两个常见问题：  
+在确定页面是否可访问时，需要注意两个一般问题：  
 
-1.  是否可以使用键盘或 [屏幕阅读器][MDNScreenReader]导航页面？  
-1.  页面元素是否已正确标记为屏幕阅读器？  
+1.  能否使用键盘或屏幕阅读器导航 [页面][MDNScreenReader]？  
+1.  页面元素是否针对屏幕阅读器正确标记？  
     
-通常，DevTools 应帮助你修复与 #2 问题相关的错误，因为这些错误非常容易以自动方式进行检测。  问题 #1 同样重要，但很遗憾，DevTools 不会对您有所帮助。  查找与问题相关的错误的唯一方式 #1 是尝试自己在页面上使用键盘或屏幕阅读器。  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
+通常，DevTools 应帮助你修复与问题#2，因为这些错误易于自动检测。  问题#1同样重要，但遗憾的是，DevTools 没有帮助。  查找与问题问题相关的错误的唯一#1是尝试使用具有键盘或屏幕阅读器的页面。  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## 审核页面的辅助功能  
+## <a name="audit-the-accessibility-of-a-page"></a>审核页面的辅助功能  
 
 > [!NOTE]
-> " **审核** " 面板提供了指向第三方网站上托管的内容的链接。  Microsoft 不承担任何责任，也不能控制这些网站的内容和可能收集的任何数据。  
+> 审核 **工具** 提供指向第三方网站上承载的内容的链接。  Microsoft 不负责也不控制这些网站的内容以及可能收集的任何数据。  
 
-一般情况下，使用 "审核" 面板确定是否：  
+通常，使用审核面板确定是否：  
 
-*   已正确标记屏幕阅读器的页面。  
-*   页面上的文本元素具有足够的对比度比率。  请参阅 [查看颜色选取器中的文本元素的对比度](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker)。  
+*   为屏幕阅读器正确标记了页面。  
+*   页面上的文本元素具有足够的对比度比率。  导航 [到查看颜色选取器中文本元素的对比率](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker)。  
 
-若要审核页面，请执行以下操作：  
+审核页面：  
 
-1.  转到要审核的 URL。  
-1.  在 DevTools 中，单击 " **审核** " 选项卡。 DevTools 显示了各种配置选项。  
+1.  导航到要审核的 URL。  
+1.  在 DevTools 中，选择 **"审核"** 工具。  DevTools 显示各种配置选项。  
     
     :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="配置审核" lightbox="../media/accessibility-audits-pane.msft.png":::
        配置审核  
     :::image-end:::  
     
     > [!NOTE]
-    > 本部分中的屏幕截图是使用版本79的 Microsoft Edge 所得到的。  你可以检查你正在运行的版本 `edge://version` 。  " **审核** " 面板 UI 在早期版本的 Microsoft Edge 中看起来有所不同，但常规工作流是相同的。  
+    > 本部分中的屏幕截图是 Microsoft Edge 版本 79 的屏幕截图。  你可以检查运行的版本 `edge://version` 。  在 **早期版本** 的 Microsoft Edge 中，审核工具 UI 看起来不同，但常规工作流相同。  
     
-1.  对于 " **设备**"，如果要模拟移动设备，请选择 " **移动** "。  此选项将更改你的用户代理字符串并调整视区的大小。  如果页面的移动版本显示不同于桌面版本，此选项可能会对审核结果产生显著影响。  
-1.  在 " **审核** " 部分中，确保已启用 **辅助功能** 。  如果要从报表中排除其他类别，请禁用其他类别。  如果想要发现提高页面质量的其他方法，请将其保留为启用状态。  
-1.  **限制**部分允许你阻止网络和 CPU，这在分析负载性能时非常有用。  此选项应与你的辅助功能分数无关，因此你可以使用你喜欢的任何内容。  
-1.  " **清除存储** " 复选框允许你在加载页面之前清除所有存储空间，或在页面加载之间保留存储。  此选项也可能与你的辅助功能分数不相关，因此你可以使用你喜欢的任何内容。  
-1.  选择 " **运行审核**"。 10到30秒后，DevTools 将提供一个报表。  你的报表提供了有关如何改进页面辅助功能的各种提示。  
+1.  对于**设备****，如果要**模拟移动设备，请选择"移动"。  此选项将更改用户代理字符串并调整视口的大小。  如果页面的移动版本显示方式与桌面版本不同，此选项可能会对审核结果产生显著影响。  
+1.  在 **"审核"** 部分中，确保 **已启用** 辅助功能。  如果要从报告中排除其他类别，请禁用这些类别。  如果希望发现其他提高页面质量的方法，请将其保持启用状态。  
+1.  **限制部分允许你**限制网络和 CPU，这在分析负载性能时很有用。  此选项应该与你的辅助功能分数无关，因此你可以使用你喜欢的任何内容。  
+1.  " **清除存储** "复选框允许你在加载页面之前清除所有存储，或在页面加载之间保留存储。  此选项也可能与辅助功能分数无关，因此可以使用您喜欢的任何内容。  
+1.  选择 **"运行审核"。** 10 到 30 秒后，DevTools 提供一个报告。  你的报告为你提供了有关如何改进页面辅助功能的各种提示。  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="配置审核" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
-       报表  
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="报告" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
+       报告  
     :::image-end:::  
     
-1.  单击审核以了解详细信息。  
+1.  选择审核以了解有关它更多信息。  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="配置审核" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
-       有关审核的详细信息  
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="有关审核详细信息" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
+       有关审核详细信息  
     :::image-end:::  
     
-1.  选择 " **了解详细信息** " 以查看该审核的文档。  
+1.  选择 **"了解更多** "以查看该审核的文档。  
     
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="配置审核" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="查看审核文档" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        查看审核文档  
     :::image-end:::  
     
-### 另请参阅： aXe 扩展名  
+### <a name="see-also-axe-extension"></a>另请参阅：aXe 扩展  
 
-您可能希望使用 [aXe 扩展][ChromeWebStoreAxe] ，而不是 " **审核** " 面板。  
-AXe 扩展通常提供相同的信息，因为它是为 "审核" 面板加电的基础引擎。  AXe 扩展具有不同的 UI，并以略微不同的方式描述审核。  
-AXe 扩展在 " **审核** " 面板上的一个优点是，它使您能够检查和突出显示失败的节点。  
+你可能更喜欢使用 [aXe 扩展，][ChromeWebStoreAxe] 而不是 **审核** 工具。  
+aXe 扩展通常提供相同的信息，因为它是支持审核面板的基础引擎。  aXe 扩展具有不同的 UI，并且对审核的介绍略有不同。  
+aXe 扩展比审核工具具有的一**** 个优势是，它使您能够检查和突出显示失败节点。  
 
-:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="配置审核" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
-   AXe 扩展  
+:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="aXe 扩展" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
+   aXe 扩展  
 :::image-end:::  
 
-## 辅助功能窗格  
+## <a name="the-accessibility-panel"></a>辅助功能面板  
 
-在 " **辅助功能** " 窗格中，你可以查看 DOM 节点的辅助功能树、ARIA 属性和计算的辅助功能属性。  
+辅助功能 **面板** 是查看 DOM 节点的辅助功能树、ARIA 属性和计算辅助功能属性的地方。  
 
-打开 " **辅助功能** " 窗格：  
+若要打开 **辅助功能面板** ，请：  
 
-1.  单击 " **元素** " 选项卡。  
-1.  在 **DOM 树**中，选择要检查的元素。  
-1.  单击 " **辅助功能** " 选项卡。 此选项卡可能隐藏在 " **更多选项卡** \ (![ 更多选项卡 ][ImageMoreTabsIcon] \ ) " 按钮之后。  
+1.  选择 **"元素"** 工具。  
+1.  在 **DOM 树中**，选择要检查的元素。  
+1.  选择 **"辅助功能"** 面板。  This panel may be hidden behind the **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) button.  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   `h1`在 "**辅助功能**" 窗格中检查 DevTools 主页的元素  
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="在辅助功能面板中检查 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+   检查 `h1` 辅助功能面板中的 DevTools **主页** 元素  
 :::image-end:::  
 
-### 查看辅助功能树中元素的位置  
+### <a name="view-the-position-of-an-element-in-the-accessibility-tree"></a>查看元素在辅助功能树中的位置  
 
-[辅助功能树][MDNAccessibilityTree]是 DOM 树的子集。  它仅包含 DOM 树中的元素，这些元素适用于在屏幕阅读器中显示页面的内容。  
+辅助功能 [树是][MDNAccessibilityTree] DOM 树的子集。  它仅包含 DOM 树中的元素，这些元素对于在屏幕阅读器中显示页面内容非常有用。  
 
-在 "辅助 [功能" 窗格](#the-accessibility-pane)的 "辅助功能" 树中检查元素的位置。  
+从辅助功能面板检查元素在辅助功能树 [中](#the-accessibility-panel) 的位置。  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
-   **辅助功能树**部分  
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text=""辅助功能树"部分" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+   " **辅助功能树"** 部分  
 :::image-end:::  
 
-### 查看元素的 ARIA 属性  
+### <a name="view-the-aria-attributes-of-an-element"></a>查看元素的 ARIA 属性  
 
-ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确地表示页面的内容。  
+ARIA 属性确保屏幕阅读器具有正确表示页面内容所需的全部信息。  
 
-在 " [辅助功能" 窗格](#the-accessibility-pane)中查看元素的 ARIA 属性。  
+在辅助功能面板中查看 [元素的](#the-accessibility-panel) ARIA 属性。  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   **ARIA 属性**部分  
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="ARIA 属性部分" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+   ARIA **属性** 部分  
 :::image-end:::  
 
-### 查看元素的计算辅助功能属性  
+### <a name="view-the-computed-accessibility-properties-of-an-element"></a>查看元素的计算辅助功能属性  
 
 > [!NOTE]
-> 如果你要查找计算的 CSS 属性，请导航到 ["计算" 选项卡][DevtoolsCssReferenceViewActuallyAppliedElements]。  
+> 如果要查找计算的 CSS 属性，请导航到 ["计算"][DevtoolsCssReferenceViewActuallyAppliedElements] 面板。  
 
-某些辅助功能属性是由浏览器动态计算的。  这些属性显示在 "**辅助功能**" 窗格的 "**计算属性**" 部分中。  
+某些辅助功能属性由浏览器动态计算。  这些属性显示在辅助功能面板的 **"计算属性****"部分**。  
 
-在 " [辅助功能" 窗格](#the-accessibility-pane)中查看元素的计算辅助功能属性。  
+在辅助功能面板中查看元素 [的计算辅助功能属性](#the-accessibility-panel) 。  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   "**辅助功能**" 窗格的 "**计算属性**" 部分  
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="辅助功能面板的"计算属性"部分" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+   **辅助功能面板**的"计算**属性"** 部分  
 :::image-end:::  
 
-## 查看颜色选取器中的文本元素的对比度比率  
+## <a name="view-the-contrast-ratio-of-a-text-element-in-the-color-picker"></a>查看颜色选取器中文本元素的对比率  
 
-某些视力较差的人看不到非常明亮或非常暗的区域。  所有内容往往都看起来几乎相同，这使区分轮廓和边缘变得很困难。  
+一些低视力用户不会将区域视为非常亮或非常暗。  所有内容通常以相同的亮度显示，这使得难以区分轮廓和边缘。  
 
-对比度比率测量文本前景和背景之间的亮度差异。  如果文本的对比度较低，则这些视力较差的用户可能会以空白屏幕的形式体验您的网站。  
+对比率测量文本的前景和背景之间的亮度差异。  如果你的文本具有较低的对比度比率，那么这些低视力用户可能会将你的网站实际体验为空白屏幕。  
 
-颜色选取器可帮助你验证文本是否满足建议的对比度比率：  
+颜色选取器可帮助你验证文本是否满足建议的对比率级别：  
 
-1.  单击 " **元素** " 选项卡。  
-1.  在 **DOM 树**中，选择要检查的文本元素。  
+1.  选择 **"元素"** 工具。  
+1.  在 **DOM 树中**，选择要检查的文本元素。  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       检查**DOM 树**中的段落  
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="检查 DOM 树中的段落" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+       检查 **DOM 树中的段落**  
     :::image-end:::  
     
-1.  在 " **样式** " 窗格中，单击元素值旁边的颜色方块 `color` 。  
+1.  在 **"样式** "面板中，选择元素值 `color` 旁边的颜色正方形。  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="元素的颜色属性" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
        `color`元素的属性  
     :::image-end:::  
     
-1.  检查拾色器的 " **对比度比率** " 部分。  一个复选标记表示该元素满足 [最低建议][W3CContrastMinimum]。  两个复选标记表示它符合 [增强的建议][W3CContrastEnhanced]。  
+1.  检查 **颜色选取** 器中的"对比率"部分。  一个选中标记表示元素满足最低 [建议][W3CContrastMinimum]。  两个选中标记表示它符合增强 [的建议][W3CContrastEnhanced]。  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       颜色选取器的 " **对比度比率** " 部分显示2个复选标记，值为 `13.97`  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器中的"对比率"部分显示 2 个选中标记，值为 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+       颜色 **选取** 器中的"对比率"部分显示 2 个选中标记和一个 `13.97`  
     :::image-end:::  
     
-1.  单击 " **对比度比率** " 部分可查看详细信息。  可视选取器中的颜色选取器顶部会显示一条线。  如果当前颜色满足建议，则行的同一侧的任何内容也满足建议。  如果当前颜色不符合建议，则同一侧的任何内容也不能满足建议。  
+1.  有关详细信息，请选择" **对比度比率"** 部分。  在颜色选取器顶部的可视化选取器中显示一行。  如果当前颜色符合建议，则线条同一侧上任何内容也符合建议。  如果当前颜色不满足建议，则同一侧上任何内容也不符合建议。  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="配置审核" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       可视选取器中的 " **对比度" 比率** 线  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="可视选取器中的对比率线" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+       可视 **选取** 器中的对比率线  
     :::image-end:::  
     
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -196,17 +196,17 @@ ARIA 属性确保屏幕阅读器具有它们所需的所有信息，以便正确
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "导航 Microsoft Edge DevTools 与辅助技术 |Microsoft 文档"  
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "仅查看实际应用到元素 CSS 引用的 CSS |Microsoft 文档"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "使用辅助技术工具导航 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "仅查看实际应用于元素的 CSS - CSS 参考|Microsoft Docs"  
 
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe-Web 辅助功能测试-Chrome Web Store"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web 辅助功能测试 - Chrome Web Store"  
 
 [MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "辅助功能树 (AOM) |MDN"  
-[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "辅助功能 |MDN"  
-[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "屏幕阅读器 |MDN"  
+[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "辅助功能|MDN"  
+[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "屏幕阅读器|MDN"  
 
-[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "对比度 (增强) 级 AAA |W3C"  
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "对比度 (最低) 级别 AA |W3C"  
+[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "增强 (AAA 级别的) 对比度|W3C"  
+[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "对比度 (最低) AA 级别|W3C"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

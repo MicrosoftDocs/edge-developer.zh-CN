@@ -3,16 +3,16 @@ description: 了解如何在 Microsoft Edge DevTools 的网络面板中检测网
 title: 网络问题指南
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 12cc447fa9d8ef8624e8528430eabc25ab523dd0
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125375"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398271"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,77 +28,77 @@ ms.locfileid: "11125375"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 网络问题指南  
+# <a name="network-issues-guide"></a>网络问题指南  
 
-本指南介绍如何在 Microsoft Edge DevTools 的 "网络" 面板中检测网络问题或优化机会。  
+本指南演示如何在 Microsoft Edge DevTools 的网络面板中检测网络问题或优化机会。  
 
-请参阅 [入门][NetworkPerformance] 了解 **网络** 面板的基础知识。  
+若要了解网络工具**的基础知识，** 请导航到["入门"。][NetworkPerformance]  
 
-## 已排队或已停止的请求  
+## <a name="queued-or-stalled-requests"></a>排队或停止的请求  
 
 **症状**  
 
-同时下载六个请求。  之后，一系列请求将排队或停止。  当前六个请求中的一个完成时，队列中的请求之一将开始。  
+同时下载六个请求。  之后，一系列请求将排入队列或停止。  前六个请求之一完成之后，队列中的一个请求将启动。  
 
-在下图中的 **瀑布** 图中，资源的前六个请求 `edge-iconx1024.msft.png` 同时开始。  后续请求将停止，直到一个初始六个完成。  
+在 **下图的"瀑布** "中，资产前六个 `edge-iconx1024.msft.png` 请求同时启动。  后续请求将停止，直到原始六个请求之一完成。  
 
 :::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="网络面板中排队或停止的系列的示例" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   **网络**面板中排队或停止的系列的示例  
+   网络工具中排队或停止的 **系列** 的示例  
 :::image-end:::  
 
 **原因**  
 
-在单个域上发出的请求过多。  在 HTTP/1.0 或 HTTP/1.1 连接上，Microsoft Edge 允许每个主机最多同时有6个 TCP 连接。  
+对单个域提出的请求过多。  在 HTTP/1.0 或 HTTP/1.1 连接上，Microsoft Edge 允许每个主机最多同时连接六个 TCP 连接。  
 
-**固定**  
+**修补程序**  
 
-*   如果必须使用 HTTP/1.0 或 HTTP/1.1，则实现域 sharding。  
-*   使用 HTTP/2。  请勿将域 sharding 与 HTTP/2 配合使用。  
-*   删除或推迟不必要的请求，以便提前下载关键请求。  
+*   如果必须使用 HTTP/1.0 或 HTTP/1.1，则实现域分片。  
+*   使用 HTTP/2。  请勿将域分片与 HTTP/2 一同使用。  
+*   删除或延迟不必要的请求，以便更早地下载关键请求。  
     
-## 在 TTFB) 的第一字节 (时间较慢  
+## <a name="slow-time-to-first-byte-ttfb"></a>第一个字节的 (TTFB)   
 
 **症状**  
 
-一个请求花费了很长时间等待接收来自服务器的第一个字节。  
+请求需要很长时间来等待从服务器接收第一个字节。  
 
-在下图中， **瀑布** 图中的长绿条指示请求已等待很长时间。  这是通过使用配置文件来限制网络速度和增加延迟而进行模拟的。  
+下图中，瀑布中的绿色长条指示请求等待很长时间****。  这是使用配置文件来限制网络速度并添加延迟的模拟。  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="网络面板中排队或停止的系列的示例" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
-   在第一个字节时间较慢的请求示例  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="第一个字节时间较慢的请求示例" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   第一个字节时间较慢的请求示例  
 :::image-end:::  
 
 **原因**  
 
-*   客户端和服务器之间的连接速度较慢。  
-*   服务器响应速度较慢。  在本地托管服务器，以确定它是较慢的连接还是服务器。  如果您在访问本地服务器时仍有较慢的第一个字节 \ (TTFB \ ) ，则服务器速度较慢。  
+*   客户端和服务器之间的连接速度很慢。  
+*   服务器响应缓慢。  在本地托管服务器，以确定它是连接速度慢还是速度较慢的服务器。  如果在访问本地服务器时仍 (到第一字节 \) TTFB\) ，则服务器速度很慢。  
     
-**固定**  
+**修补程序**  
 
-*   如果连接速度较慢，请考虑在 CDN 上托管你的内容或更改托管提供商。  
-*   如果服务器速度较慢，请考虑优化数据库查询、实现缓存或修改服务器配置。  
+*   如果连接速度较慢，请考虑在 CDN 上托管内容或更改宿主提供商。  
+*   如果服务器运行缓慢，请考虑优化数据库查询、实现缓存或修改服务器配置。  
     
-## 缓慢的内容下载  
+## <a name="slow-content-download"></a>慢速内容下载  
 
 **症状**  
 
-下载请求需要较长时间。  
+下载请求需要很长时间。  
 
-在下图中，在 "瀑布" 旁边的 " **瀑布** 图" 中，长的蓝条表示下载时间较长。  
+下图中，瀑布旁的蓝色长条表示下载需要**** 很长时间。  
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="网络面板中排队或停止的系列的示例" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
-   需要很长时间才能下载的请求的示例  
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="需要很长时间下载的请求示例" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   需要很长时间下载的请求示例  
 :::image-end:::  
 
 **原因**  
 
-*   客户端和服务器之间的连接速度较慢。  
+*   客户端和服务器之间的连接速度很慢。  
 *   正在下载大量内容。  
     
-**固定**  
+**修补程序**  
 
-*   请考虑在 CDN 上托管你的内容或更改托管提供商。  
-*   通过优化您的请求发送更少的字节。  
+*   请考虑在 CDN 上托管内容或更改宿主提供商。  
+*   通过优化请求发送更少的字节。  
     
 <!--   ## Contribute knowledge  
 
@@ -108,7 +108,7 @@ Do you have a network issue that should be added to this guide?
 *   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -118,7 +118,7 @@ Do you have a network issue that should be added to this guide?
 
 <!-- links -->  
 
-[NetworkPerformance]: ./index.md "检查 Microsoft Edge DevTools 中的网络活动 |Microsoft 文档"  
+[NetworkPerformance]: ./index.md "检查 Microsoft Edge DevTools |Microsoft Docs"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 
@@ -126,7 +126,7 @@ Do you have a network issue that should be added to this guide?
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面可在 [此处](https://developers.google.com/web/tools/chrome-devtools/network/issues) 找到，并由 [Kayce Basques][KayceBasques] (技术作者、Chrome DevTools \ & Lighthouse \ ) 和 [Jonathan Garbee][JonathanGarbee] \ (Google Developer for Web ) 技术。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由一名（该链接可能链接可能 (）由一名技术编写者[、Chrome][KayceBasques] DevTools \& Lighthouse\) 和[House Garbee][JonathanGarbee] \ (Google Developer Expert for Web Technology\) 创作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

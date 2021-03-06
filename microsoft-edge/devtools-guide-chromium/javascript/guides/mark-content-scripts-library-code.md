@@ -1,18 +1,18 @@
 ---
-description: 从 "设置" > 框架库代码启用 "将内容脚本标记为库代码"。
+description: 从"设置"和"框架库代码"中>"将内容脚本标记为库代码"。
 title: 将内容脚本标记为库代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2a9bca703004b6232bef857d7b9e2f45458db52d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124696"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398950"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,26 +28,26 @@ ms.locfileid: "11124696"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 将内容脚本标记为库代码  
+# <a name="mark-content-scripts-as-library-code"></a>将内容脚本标记为库代码  
 
-使用 Microsoft Edge DevTools 的 " **源** " 面板 [逐句通过代码][DevToolsJavascriptStepThroughCode]时，有时你会在无法识别的代码上暂停。  你可能已暂停已安装的其中一个 Microsoft Edge 扩展的代码。  完成以下步骤，不要暂停扩展代码。  
+使用 Microsoft **** Edge DevTools 的"[][DevToolsJavascriptStepThroughCode]源"面板逐步执行代码时，有时会暂停你无法识别的代码。  您可能在已安装的 Microsoft Edge 扩展之一的代码上暂停。  完成以下步骤，以不暂停扩展代码。  
 
-1.  打开 DevTools，选择 " **自定义和控制" DevTools** \ (`...` \ ) 然后选择 " **设置**"。  您也可以通过**Settings**选择打开设置 `F1` 。  
+1.  打开 DevTools，选择"自定义和控制**DevTools** \ (`...` \) >**设置"。**  您也可以通过选择 **来** 打开"设置 `F1` "。  
 
-1.  选择打开 "**设置**" 的 "**框架库代码**" 部分的 "**库代码**" 选项卡。  
-1.  启用 "将 **内容脚本标记为库代码** " 复选框。  
+1.  选择 **打开** "设置"的 **"框架库** 代码"一节的库代码 **面板**。  
+1.  打开" **将内容脚本标记为库代码"** 复选框。  
     
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用 &quot;将内容脚本标记为库代码&quot; 复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       启用 "将 **内容脚本标记为库代码** " 复选框  
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用"将内容脚本标记为库代码"复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+       启用" **将内容脚本标记为库代码"** 复选框  
     :::image-end:::  
     
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "步骤4：逐句通过代码-开始在 Microsoft Edge DevTools 中调试 JavaScriptMicrosoft 文档"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "步骤 4：逐步完成代码 - 开始在 Microsoft Edge DevTools |Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

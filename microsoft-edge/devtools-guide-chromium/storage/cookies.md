@@ -1,18 +1,18 @@
 ---
-description: 了解如何使用 Microsoft Edge DevTools 查看、编辑和删除页面的 HTTP cookie。
-title: 查看、编辑和删除 Microsoft Edge DevTools 中的 Cookie
+description: 了解如何使用 Microsoft Edge DevTools 查看、编辑和删除页面的 HTTP Cookie。
+title: 使用 Microsoft Edge DevTools 查看、编辑和删除 Cookie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 328771aa254dac1f851535a44126ea220dc95a9c
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 9c040aaa30142c2759c67b2c034d3a9271ca0a64
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125480"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397746"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,72 +28,72 @@ ms.locfileid: "11125480"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 查看、编辑和删除 Microsoft Edge DevTools 中的 cookie  
+# <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看、编辑和删除 Cookie  
 
-[HTTP cookie][MDNHTTPCookies] 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  Cookie 也是由您在 web 上看到的所有令人讨厌的 "此页面使用 cookies" 同意表单的原因。  以下指南教你如何查看、编辑和删除具有 [Microsoft Edge DevTools][MicrosoftEdgeDevTools]的页面的 HTTP cookie。  
+[HTTP Cookie][MDNHTTPCookies] 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  Cookie 也是导致此页使用跨 Web 找到的 **Cookie** 同意表单的所有令人厌烦的原因。  以下指南指导你如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools]查看、编辑和删除网页的 HTTP Cookie。  
 
-## 打开 "Cookie" 窗格  
+## <a name="open-the-cookies-pane"></a>打开 Cookie 窗格  
 
-1.  [打开 DevTools][DevToolsOpen]。  
-1.  选择 " **应用程序** " 选项卡以打开 " **应用程序** " 面板。  将打开 " **清单** " 窗格。  
+1.  [打开 DevTools。][DevToolsOpen]  
+1.  选择 **"应用程序"** 选项卡以打开 **应用程序** 面板。  清单 **窗格** 应打开。  
     
     :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest-empty.msft.png":::
-       图1：清单窗格  
+       图 1：清单窗格  
     :::image-end:::  
 
-1.  在 " **存储** " 下展开 " **cookie**"，然后选择一个原点。  
+1.  在 **"存储** " **下展开 Cookie，** 然后选择源。  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
-       图2： "Cookie" 窗格  
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Cookie 窗格" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+       图 2：Cookie 窗格  
     :::image-end:::  
 
-## 字段  
+## <a name="fields"></a>字段  
 
 **Cookies**表包含以下字段。  
 
 *   **名称**。  Cookie 的名称。  
 *   **值**。  Cookie 的值。  
-*   **域**。  允许接收该 cookie 的主机。  请参阅 [Cookie 范围][MDNHTTPCookiesScope]。  
-*   **路径**。  必须存在于请求的 URL 中才能发送页眉的 URL `Cookie` 。  请参阅 [Cookie 范围][MDNHTTPCookiesScope]。  
-*   **过期/最大存留期**。  Cookie 的到期日期或最长期限。  请参阅 [永久 cookie][MDNHTTPCookiesPermanent]。  对于 [会话 cookie][MDNHTTPCookiesSession] ，此值始终为 `Session` 。  
+*   **域**。  允许接收 Cookie 的主机。  导航到 [Cookie 的范围][MDNHTTPCookiesScope]。  
+*   **路径**。  请求的 URL 中必须存在的 URL 才能发送 `Cookie` 标头。  导航到 [Cookie 的范围][MDNHTTPCookiesScope]。  
+*   **到期 / 最大期限**。  Cookie 的到期日期或最长期限。  导航到[永久 Cookie。][MDNHTTPCookiesPermanent]  对于 [会话 Cookie，][MDNHTTPCookiesSession] 此值始终为 `Session` 。  
 *   **大小**。  Cookie 的大小（以字节为单位）。  
-*   **HTTP**。  如果为 true，则此字段指示应仅通过 HTTP 使用该 cookie，并且不允许 JavaScript 修改。  请参阅 [HttpOnly cookie][MDNHTTPCookiesSecure]。  
-*   **安全**。  如果为 true，则此字段指示该 cookie 必须仅通过安全的 HTTPS 连接发送到服务器。  请参阅 [安全 cookie][MDNHTTPCookiesSecure]。  
-*   **SameSite**。  包含 `strict` 或 `lax` 如果 cookie 使用实验性的 [Samesite][MDNHTTPCookiesSamesite] 属性。  
-*   **优先级**。  包含 `low` ， `medium` \ (默认 \ ) ，或者 `high` cookie 使用的是已否决的 [cookie 优先级][ChromiumIssue232693] 属性。
+*   **HTTP**。  如果为 true，则此字段指示仅应该通过 HTTP 使用 Cookie，不允许进行 JavaScript 修改。  导航到[HttpOnly Cookie。][MDNHTTPCookiesSecure]  
+*   **安全**。  如果为 true，则此字段指示 Cookie 必须仅通过安全的 HTTPS 连接发送到服务器。  导航到[安全 Cookie。][MDNHTTPCookiesSecure]  
+*   **SameSite**。  包含 `strict` Cookie 或 Cookie `lax` 是否使用实验 [性 Samesite][MDNHTTPCookiesSamesite] 属性。  
+*   **优先级**。  包含 `low` `medium` ，\ (default\) ，或者 Cookie 是否使用已弃 `high` 用 [Cookie Priority][ChromiumIssue232693] 属性。
 
-## 筛选 cookie  
+## <a name="filter-cookies"></a>筛选 Cookie  
 
-使用 " **筛选** " 文本框按 **名称** 或 **值**筛选 cookie。  不支持按其他字段进行筛选。  
+使用**筛选器**文本框按名称或**值筛选****Cookie。**  不支持按其他字段进行筛选。  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
-   图3：筛选出不包含文本的任何 cookie `ID`  
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="筛选出不包含文本 ID 的任何 Cookie" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+   图 3：筛选出不包含文本的任何 Cookie `ID`  
 :::image-end:::  
 
-## 编辑 cookie  
+## <a name="edit-a-cookie"></a>编辑 Cookie  
 
-" **名称**"、" **值**"、" **域**"、" **路径**" 和 "有效期" **/"最大年龄** " 域可编辑  
-双击字段以对其进行编辑。  
+名称 **、****值、****域**、**路径**和**过期/最大期限**字段是可编辑的。  
+双击字段进行编辑。  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
-   图4：将 cookie 的名称设置为 `DEVTOOLS!`  
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="将 Cookie 的名称设置为 DEVTOOLS！" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+   图 4：将 Cookie 的名称设置为 `DEVTOOLS!`  
 :::image-end:::  
 
-## 删除 Cookie  
+## <a name="delete-cookies"></a>删除 Cookie  
 
-选择一个 cookie，然后选择 " **删除**所选 ![ 删除" ][ImageDeleteIcon]  以删除特定的 cookie。  
+选择 Cookie，然后选择 **"** 删除所选 \ (![ 删除所选 ][ImageDeleteIcon] \) 删除特定 Cookie。  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
-   图5：删除特定的 cookie  
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="删除特定 Cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+   图 5：删除特定 Cookie  
 :::image-end:::  
 
-选择 " **清除**全部 ![ 清除" ][ImageClearIcon]  以删除所有 cookie。  
+Choose **Clear All** \ (Clear All ![ ][ImageClearIcon] \) to delete all cookies.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
-   图6：清除所有 cookie  
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="清除所有 Cookie" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+   图 6：清除所有 Cookie  
 :::image-end:::  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -107,14 +107,14 @@ ms.locfileid: "11125480"
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "打开 Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium 问题232693：为 Cookies 实施优先级字段 |Chromium Bug"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium 问题 232693：实现 Cookie 服务优先级|Chromium Bugs"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "HTTP cookie |MDN"  
-[MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "HTTP cookie-永久 cookie |MDN"  
-[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "HTTP cookie-SameSite cookie |MDN"  
-[MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "HTTP cookie-cookie 范围 |MDN"  
-[MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "HTTP cookie-安全和 HttpOnly cookie |MDN"  
-[MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "HTTP cookie-会话 cookie |MDN"  
+[MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "HTTP Cookie - 永久 cookie |MDN"  
+[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "HTTP Cookie - SameSite cookie |MDN"  
+[MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "HTTP Cookie - Cookie |MDN"  
+[MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "HTTP Cookie - 安全 Cookie 和 HttpOnly cookie |MDN"  
+[MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "HTTP Cookie - 会话|MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

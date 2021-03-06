@@ -1,27 +1,27 @@
 ---
-title: 使用 Web 应用清单将渐进式 Web 应用集成到操作系统中
+title: 使用 Web 应用清单将渐进式 Web 应用集成到操作系统
 description: 了解如何使用 Web 应用清单将渐进式 Web 应用集成到操作系统中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: f493ae0c3cef3a1950b2207d66fef65055b2d959
-ms.sourcegitcommit: d9cc829deb709b0866f6b43a5f4733682ddae5ca
+keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， Windows， UWP， Microsoft Store
+ms.openlocfilehash: 0063323b1fde94d84e70df51170726325dd0f2a9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "10659291"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399097"
 ---
-# 使用 Web 应用清单将渐进式 Web 应用集成到操作系统中
+# <a name="use-the-web-app-manifest-to-integrate-your-progressive-web-app-into-the-operating-system"></a>使用 Web 应用清单将渐进式 Web 应用集成到操作系统
 
-网站的 Web 应用清单控制在设备上安装时的渐进式 Web 应用（PWA）的外观和行为。  在最基本的级别上，清单提供有关你的应用的名称、用于在系统菜单中表示你的应用的图标以及操作系统 \ （OS \）在标题栏中使用的主题颜色的详细信息。  清单还使你能够解锁功能，从而允许你的应用与系统上的其他本机应用的行为类似。  
+网站的 Web 应用清单控制在设备上安装渐进式 Web App \ (PWA\) 的外观和行为。  在最基本的级别，清单提供有关应用名称、用于表示系统菜单中应用的图标以及主题颜色（操作系统 \ (OS\) 在标题栏中使用）的详细信息。  清单还使你能够解锁强大的功能，使应用能够像系统上的其他本机应用一样运行。  
 
-## 使用快捷方式提供对功能的快速访问  
+## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>使用快捷方式快速访问功能  
 
-大多数操作系统通过连接到应用图标的上下文菜单上的快捷方式，提供对关键应用功能的快速访问。  若要在 PWA 中使用快捷方式，请 `shortcuts` 在 Web 应用清单中包含该属性。  以下代码片段显示了如何在 web 应用清单中定义快捷方式。  
+大多数操作系统都使用连接到应用图标的上下文菜单上的快捷方式快速访问关键应用功能。  若要在 PWA 中使用快捷方式，请包含 `shortcuts` Web 应用清单中的属性。  以下代码段显示如何在 Web 应用清单中定义快捷方式。  
 
 ```json
 "shortcuts": [
@@ -45,11 +45,11 @@ ms.locfileid: "10659291"
 ]
 ```  
 
-添加到完整的 Web 应用清单时，添加前面的代码片段可在应用图标上的上下文菜单上启用两个快捷方式。  第一个命名 `Play Later` 并具有自定义图标。  第二个命名 `Subscriptions` 和没有图标，因为该 `icons` 属性是可选的。  该 `description` 属性也是可选的，可用于提供辅助功能的其他信息。  
+添加到完整的 Web 应用清单时，添加前面的代码段可在应用图标上的上下文菜单上启用两个快捷方式。  第一个名称已 `Play Later` 命名，并且具有自定义图标。  第二个属性已命名， `Subscriptions` 没有图标， `icons` 因为该属性是可选的。  `description`该属性也是可选的，可用于为辅助功能提供其他信息。  
 
-## 将你的应用标识为共享目标
+## <a name="identify-your-app-as-a-share-target"></a>将应用标识为共享目标
 
-许多操作系统使用户能够使用本机应用程序快速共享链接和文件。 累进 Web 应用还可通过 `share_target` Web 应用清单的成员参与此功能。 使用 share_target，定义 "操作" 页（类似于窗体）和预期传递到其中的参数。 以下代码片段显示了如何使用的示例 `share_target` 。
+许多操作系统使用户能够快速与本机应用程序共享链接和文件。 渐进式 Web 应用也可使用 Web 应用清单的成员参与 `share_target` 此功能。  使用 `share_target` ，定义 `"action"` 页面 \ (类似于 form\) 以及要传入的参数。  下面的代码段显示了如何使用的示例 `share_target` 。
 
 ```json
 "share_target": {
@@ -62,18 +62,21 @@ ms.locfileid: "10659291"
 }
 ```
 
-添加到 Web 应用部件清单时，会将 "/share.html" 确定为共享的操作页面。 此外，它还定义将传递到该操作页面的三个参数： "title"、"text" 和 "url"。 这些参数将存储在[ShareData](https://wicg.github.io/web-share#dom-sharedata)对象的 "name"、"description" 和 "link" 属性中。 默认情况下，操作页面接收这些参数作为 GET 请求的一部分，但你可以 `method` 像处理 web 窗体一样指定请求和编码 \ （as `enctype` \）。
+添加到 Web 应用清单时，这将建立 `"/share.html"` 为共享的操作页。 此外，它还定义了将传递给该操作页的三个参数：和 `"title"` `"text"` `"url"` 。  这些参数将存储在 ， 和 `"name"` `"description"` `"link"` [ShareData][GitHubWicgWebShareDomSharedata] 对象的属性中。  默认情况下，操作页作为 GET 请求的一部分接收参数，但 `method` 您可以将请求和编码 \ (指定为 \) ，就像在 Web 表单上一样 `enctype` 。
 
-## 另请参阅  
+## <a name="see-also"></a>另请参阅  
 
-若要了解有关 Web 应用清单的详细信息，请参阅以下相关主题列表。  
+若要了解有关 Web 应用清单的信息，请导航到以下相关主题列表。  
 
-* [Web 应用清单][MDNWebAppManifests]  
-* [Web 共享目标][WICGShareTarget]
-* [Web 共享][WICGShare]
-
+*   [Web 应用清单][MDNWebAppManifests]  
+*   [Web 共享目标][GitHubWicgWebShareTarget]
+*   [Web 共享][GithubW3cWebShare]
+    
 <!-- links -->  
 
-[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web 应用清单 |MDN"  
-[WICGShareTarget]: https://wicg.github.io/web-share-target/ "Web 共享目标 API |WICG"
-[WICGShare]: https://w3c.github.io/web-share/ "Web 共享 API |WICG"
+[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web 应用清单|MDN"  
+
+[GitHubWicgWebShareTarget]: https://wicg.github.io/web-share-target "Web 共享目标 API |WICG"
+[GitHubWicgWebShareDomSharedata]: https://wicg.github.io/web-share#dom-sharedata "ShareData 字典 - Web 共享 API |WICG"  
+
+[GithubW3cWebShare]: https://w3c.github.io/web-share/ "Web 共享 API |WICG"

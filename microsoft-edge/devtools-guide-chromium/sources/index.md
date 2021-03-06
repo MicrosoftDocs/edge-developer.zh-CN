@@ -3,16 +3,16 @@ description: 在 Microsoft Edge DevTools 的"源"面板中显示和编辑文件�
 title: 源窗格概览
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b90f927670146c004a335256ace28203219442eb
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232168"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397760"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,22 +28,22 @@ ms.locfileid: "11232168"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 源窗格概览  
+# <a name="sources-panel-overview"></a>源窗格概览  
 
 使用 Microsoft Edge DevTools **源** 面板执行以下操作。  
 
 *   [显示文件](#display-files)。  
 *   [编辑 CSS 和 JavaScript](#edit-css-and-javascript)。  
-*   [创建和保存**JavaScript**](#create-save-and-run-snippets)的代码段，您可以在任何网页上运行这些代码段。  **代码段** 类似于 bookmarklet。  
+*   [创建和**保存 JavaScript**](#create-save-and-run-snippets)的代码段，您可以在任何网页上运行这些代码段。  **代码段** 类似于 bookmarklet。  
 *   [调试 JavaScript](#debug-javascript)。  
 *   [设置 Workspace](#set-up-a-workspace)，以便将你在 DevTools 中所做的更改保存到文件系统上的代码中。  
     
-## 显示文件  
+## <a name="display-files"></a>显示文件  
 
-使用 **"页面** "窗格显示页面加载的所有资源。
+使用 **页面** 面板;显示页面加载的所有资源。
 
-:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="“页面”窗格" lightbox="../media/sources-page-pane.msft.png":::
-   **页面** 窗格  
+:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text=""页面"面板" lightbox="../media/sources-page-pane.msft.png":::
+   " **页面"** 面板  
 :::image-end:::  
 
 **页面** 窗格的组织方式：  
@@ -51,13 +51,13 @@ ms.locfileid: "11232168"
 *   二级，如上图中 `docs.microsoft.com` 所示，表示 [起源][HtmlstandardOrigin]。  
 *   第三级、第四级等表示从该起源加载的目录和资源。  例如，在上图中，资源 `devtools-guide-chromium` 的完整路径为 `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-在"页面"窗格中 **选择** 一个文件，以显示 **编辑器窗格中的内容** 。  可以显示任何类型的文件。  对于图像，将显示图像的预览。  
+在"页面"面板**中选择**一个文件，以显示编辑器**窗格中的内容。**  可以显示任何类型的文件。  对于图像，将显示图像的预览。  
 
 :::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="在编辑器窗格中a4d10f71.index-docs.js内容" lightbox="../media/sources-editor-pane.msft.png":::
-   在编辑器窗格中 `a4d10f71.index-docs.js` **显示内容**  
+   在编辑器面板 `a4d10f71.index-docs.js` **中显示内容**  
 :::image-end:::  
 
-## 编辑 CSS 和 JavaScript  
+## <a name="edit-css-and-javascript"></a>编辑 CSS 和 JavaScript  
 
 使用 **编辑器** 窗格编辑 CSS 和 JavaScript。  DevTools 更新页面以运行新代码。  例如，如果通过添加以下样式规则编辑 CSS 文件：
 
@@ -73,17 +73,17 @@ ms.locfileid: "11232168"
    编辑 **编辑器** 窗格中的CSS，将字幕的文本颜色更改为红色  
 :::image-end:::  
 
-CSS 更改会立即生效，无需保存。  若要使 JavaScript 更改生效，请选择 `Control` + `S`\(Windows、Linux\) 或 `Command` + `S`\(macOS\)。  DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改就是你在函数内部所做的更改。  例如，在下图中，请注意 `console.log('A')` 如何没有运行，而 `console.log('B')` 则运行。  If DevTools 在更改后重新运行整个脚本，则文本 `A` 已经记录到 **控制台**。  
+CSS 更改会立即生效，无需保存。  若要使 JavaScript 更改生效，请选择 `Control` + `S`\(Windows、Linux\) 或 `Command` + `S`\(macOS\)。  DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改就是你在函数内部所做的更改。  例如，在下图中，请注意 `console.log('A')` 如何没有运行，而 `console.log('B')` 则运行。  如果 DevTools 在更改后重新运行整个脚本，则文本 `A` 将记录到 **控制台**。  
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="在编辑器窗格中编辑 JavaScript" lightbox="../media/edit-js.msft.png":::
-   在 **编辑器** 窗格中编辑 JavaScript  
+   在编辑器面板中 **编辑** JavaScript  
 :::image-end:::  
 
-在重新加载页面时，DevTools 会清除 CSS 和 JavaScript 更改。  导航至 [设置工作区](#set-up-a-workspace)，了解如何将更改保存到文件系统。  
+在刷新页面时，DevTools 会清除 CSS 和 JavaScript 更改。  导航至 [设置工作区](#set-up-a-workspace)，了解如何将更改保存到文件系统。  
 
-## 创建、保存和运行代码段  
+## <a name="create-save-and-run-snippets"></a>创建、保存和运行代码段  
 
-代码段是您可以在任何页面上运行的脚本。  假设你在控制台中重复键入以下代码，以便将**** jQuery 库插入页面，以便你可以从控制台运行 jQuery**命令**。  
+代码段是您可以在任何页面上运行的脚本。  假设您在控制台中重复键入以下代码，以便将**** jQuery 库插入页面，以便从控制台运行 jQuery**命令**。  
 
 ```javascript
 let script = document.createElement('script');
@@ -101,12 +101,12 @@ document.head.appendChild(script);
 
 若要运行 **代码段**：
 
-*   使用 **代码段** 窗格打开文件， 然后选择 **运行**\（![运行按钮][ImageRunIcon]\）。  
+*   使用代码段 **面板打开文件** ， **然后选择"运行** (![ ][ImageRunIcon] \) 。  
 *   打开 [命令菜单][DevtoolsGuideChromiumCommandMenuIndex]，删除 `>` 字符，键入 `!` ，键入代码段 **的名称**，然后选择 `Enter` 。  
     
 导航至 [从任何页面运行代码段][DevtoolsGuideChromiumJavascriptSnippets] 以了解更多信息。
 
-## 调试 JavaScript  
+## <a name="debug-javascript"></a>调试 JavaScript  
 
 请考虑改为使用 Microsoft Edge DevTools 调试工具，而不是通过`console.log()` 推断 JavaScript 出错的地方。  一般想法是设置断点，这是代码中的一个有意停止位置，然后逐步执行代码的运行时，每次一行。  在逐步执行代码时，可以显示和更改所有当前定义的属性和变量的值，在控制台中运行 JavaScript 等。 ****
 
@@ -116,13 +116,13 @@ document.head.appendChild(script);
    调试 JavaScript  
 :::image-end:::  
 
-## 设置工作区  
+## <a name="set-up-a-workspace"></a>设置工作区  
 
-默认情况下，当您在源工具中编辑文件时，**** 这些更改在重新加载页面时将丢失。  **工作区** 使您能够将你在 DevTools 中所做的更改保存到文件系统。  实质上，DevTools 能够用作代码编辑器。
+默认情况下，在源工具中编辑文件时，刷新**** 页面时这些更改将丢失。  **工作区** 使您能够将你在 DevTools 中所做的更改保存到文件系统。  实质上，DevTools 能够用作代码编辑器。
 
 导航到 [使用工作区编辑文件][DevtoolsGuideChromiumWorkspacesIndex] 以开始操作。
 
-## 联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -132,12 +132,12 @@ document.head.appendChild(script);
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 |Microsoft Docs"  
-[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "开始在 Microsoft Edge DevTools 中调试 JavaScript |Microsoft Docs"  
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "使用 Microsoft Edge DevTools 在任何页面上运行 JavaScript 代码段 |Microsoft Docs"  
-[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "使用 Workspaces 编辑文件 |Microsoft Docs"  
+[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "开始在 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "在具有 Microsoft Edge DevTools 应用程序的任何页面上运行 JavaScript |Microsoft Docs"  
+[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "使用 Workspaces |Microsoft Docs"  
 
-[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin |HTML Standard"  
+[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "源|HTML Standard"  
 
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "框架|W3C"  
 

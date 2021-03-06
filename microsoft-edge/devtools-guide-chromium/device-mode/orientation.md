@@ -1,18 +1,18 @@
 ---
-description: 打开 "传感器" 选项卡，然后转到 "方向" 部分。
-title: 通过 Microsoft Edge DevTools 模拟设备方向
+description: 打开传感器工具并导航到"方向"部分。
+title: 使用 Microsoft Edge DevTools 模拟设备方向
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 754df3b271b44f986802c2847862624f6a8b5bd9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124955"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398712"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,40 +28,40 @@ ms.locfileid: "11124955"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 通过 Microsoft Edge DevTools 模拟设备方向  
+# <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 模拟设备方向  
 
-完成以下操作以模拟 Microsoft Edge DevTools 中的不同设备方向。  
+完成以下操作以模拟来自 Microsoft Edge DevTools 的不同设备方向。  
 
 <!--todo: update device orientation section when available -->  
 
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `sensors` ，选择 " **显示传感器**"，然后选择 `Enter` 。  " **传感器** " 选项卡将在 DevTools 窗口底部打开。  
-1.  从 " **方向** " 列表中，选择一个预设方向，例如 `Portrait upside down` ，或选择 " **自定义方向** " 以提供您自己的精确方向。  
+1.  键入 `sensors` ，选择 **"显示传感器"，** 然后选择 `Enter` 。  传感器 **工具** 在 DevTools 窗口底部打开。  
+1.  从 **"方向**"列表中，选择预设方向之一，例如，或选择"自定义方向" `Portrait upside down` 来提供你自己的精确方向。 ****  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             `Portrait upside down`从 "**方向**" 列表中选择  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从"方向"列表中选择纵向向下" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             从 `Portrait upside down` "**入职培训"列表中选择**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          选择 **自定义方向**后，""、"" 和 "" `alpha` 字段已 `beta` `gamma` 启用。  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
+          选择自定义 **方向后**，将启用 `alpha` ， `beta` 和 `gamma` 字段。  
+          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
-          您还可以通过拖动 **方向模型**来设置自定义方向。  按住 `Shift` ，然后拖动鼠标沿 `alpha` 轴旋转。  
+          您还可以通过拖动方向模型来设置 **自定义方向**。  在 `Shift` 拖动以沿轴旋转之前 `alpha` 按住。  
           
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
-             **方向模型**  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="方向模型" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+             方向 **模型**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

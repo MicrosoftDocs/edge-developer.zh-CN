@@ -1,26 +1,26 @@
 ---
-description: 边缘 (Chromium) 扩展的内容安全策略。
-title: " (CSP) 的内容安全策略"
+description: Edge 和 Chromium (扩展) 安全策略。
+title: '内容安全策略 (CSP) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium、扩展开发、浏览器扩展、addons、合作伙伴中心、开发人员
-ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: 8307482e780b4d631edffd976cca7ba724e2ad40
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015714"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397515"
 ---
-# 内容安全策略 \ (CSP \ )   
+# <a name="content-security-policy-csp"></a>内容安全策略 \ (CSP\)   
 
-为了减少可能出现的跨网站脚本问题的大型类，Microsoft Edge 扩展系统合并了 [内容安全策略的一般概念 \ (CSP \ ) ][W3CContentSecurityPolicy]。  这引入了一些相当严格的策略，使扩展在默认情况下更安全，并使你能够创建和强制管理可由你的扩展和应用程序加载和运行的内容类型的规则。  
+为了缓解大量潜在的跨站点脚本问题，Microsoft Edge 扩展系统已纳入内容安全策略 [\ (CSP\) ][W3CContentSecurityPolicy]的一般概念。  这引入了一些相当严格的策略，这些策略使扩展在默认情况下更加安全，并让你能够创建和实施规则，以管理扩展和应用程序可能加载和运行的内容类型。  
 
-通常，CSP 适用于由你的扩展加载或运行的资源的 block/allowlisting 机制。  为你的扩展定义合理的策略使你能够仔细考虑你的扩展需要的资源，并要求浏览器确保这些资源是你的扩展有权访问的唯一资源。  这些策略不仅可提供主机权限，还可提供延长请求的安全性;它们是一种额外的保护层，而不是替代。  
+通常，CSP 用作扩展加载或运行的资源块/允许列表机制。  通过为扩展定义合理的策略，可以仔细考虑扩展所需的资源，并要求浏览器确保这些是扩展有权访问的唯一资源。  这些策略在扩展请求的主机权限之上提供安全性;它们是一层额外的保护，而不是替代。  
 
-在 web 上，此类策略是通过 HTTP 头或元素定义的 `meta` 。  在 Microsoft Edge 扩展系统内部，这两种机制都不是一种合适的机制。  相反，扩展策略是通过 `manifest.json` 扩展名的文件定义的，如下所示：  
+在 Web 上，此类策略通过 HTTP 标头或元素 `meta` 定义。  在 Microsoft Edge 扩展系统中，两者都不是适当的机制。  相反，扩展策略是使用扩展文件定义的 `manifest.json` ，如下所示：  
 
 ```javascript
 {
@@ -30,21 +30,21 @@ ms.locfileid: "11015714"
 }
 ```  
 
-> 有关 CSP 语法的完整详细信息，请参阅 [内容安全策略规范][W3CContentSecurityPolicy] 和 HTML5Rocks 上的 ["内容安全策略简介" 一][HTML5RocksIntroductionContentSecurityPolicy] 文。  
+> 有关 CSP 语法的完整详细信息，请查看内容安全策略规范以及 HTML5Rocks 上的"内容[][HTML5RocksIntroductionContentSecurityPolicy]安全策略简介"一文。 [][W3CContentSecurityPolicy]  
 
-## 默认策略限制  
+## <a name="default-policy-restrictions"></a>默认策略限制  
 
-未定义 a 的程序包不 `manifest_version` 具有默认内容安全策略。  选择2的 `manifest_version` 默认内容安全策略是：  
+未定义内容的包 `manifest_version` 没有默认内容安全策略。  选择 `manifest_version` 2 的程序包具有以下默认内容安全策略。  
 
 ```javascript
 script-src 'self'; object-src 'self'
 ```  
 
-此策略通过以下三种方式来限制扩展和应用程序，从而增加安全性：  
+该策略通过以下三种方式限制扩展和应用程序来增加安全性：  
 
-**已禁用 Eval 和相关函数**  
+**Eval 和相关函数已禁用**  
 
-如下代码不起作用：  
+如下所示的代码不起作用：  
 
 ```javascript
 alert(eval("foo.bar.baz"));
@@ -53,7 +53,7 @@ window.setInterval("alert('hi')", 10);
 new Function("return foo.bar.baz");
 ```  
 
-按如下方式计算 JavaScript 的字符串是常见的 XSS 攻击媒介。  应改为编写如下代码：
+按如下所示评估 JavaScript 字符串是一种常见的 XSS 攻击途径。  相反，应编写类似代码：
 
 ```javascript
 alert(foo && foo.bar && foo.bar.baz);
@@ -62,11 +62,11 @@ window.setInterval(function() { alert('hi'); }, 10);
 function() { return foo && foo.bar && foo.bar.baz };
 ```  
 
-**内联 JavaScript 不运行**  
+**未运行内联 JavaScript**  
 
-内联 JavaScript 不会运行。  此限制 bans 内联 `<script>` 块和内联事件处理程序（如） `<button onclick="...">` 。
+不运行内联 JavaScript。  此限制同时禁止内联 `<script>` 块和内联事件处理程序，如 `<button onclick="...">` 。
 
-第一次限制是通过使您不能意外运行由恶意的第三方提供的脚本来擦除跨站点脚本攻击的大型类。  但是，它需要你编写代码，以便在内容和行为之间进行完全分离，而你应该做的只是 (的，对吧？ \ ) 。  示例可能会更清楚。  你可能会尝试编写一个浏览器操作弹出窗口，将其作为单个 `pop-up.html` 容器：  
+第一个限制通过使您无法意外运行恶意第三方提供的脚本来擦除大量跨网站脚本攻击。  但是，它确实需要你在内容和行为 \ (之间以干净分隔方式编写代码，正确吗？\) 。  示例可以使这一点更加清晰。  您可以尝试将浏览器操作弹出窗口编写为一个包含 `pop-up.html` ：  
 
 ```html
 <!doctype html>
@@ -99,14 +99,14 @@ function() { return foo && foo.bar && foo.bar.baz };
 </html>
 ```  
 
-必须更改三项内容才能按预期方式执行此操作：  
+若要使此操作按预期方式工作，必须更改三项内容：  
 
-*   `clickHandler`定义必须移到外部 JavaScript 文件 \ (`popup.js` 可能是一个很好的目标) 。  
-*   内联事件处理程序定义必须被重写 `addEventListener` 并提取到中 `popup.js` 。  
-    如果当前正在使用类似代码启动程序，请 `<body onload="main();">` 考虑通过挂钩到 `DOMContentLoaded` 文档事件或窗口事件来替换它 `load` ，具体取决于你的要求。  使用以前的，因为它通常会更快地触发。  
+*   必须将 `clickHandler` 定义移动到外部 JavaScript 文件 \ (`popup.js` 可能是一个不错的) 。  
+*   必须重写内联事件处理程序定义，并 `addEventListener` 提取到 `popup.js` 中。  
+    如果当前使用类似代码启动程序，请考虑通过挂钩到文档事件或窗口事件来替换它， `<body onload="main();">` `DOMContentLoaded` `load` 具体取决于您的要求。  使用前者，因为它通常更快速地触发。  
 
-*   `setTimeout`必须重写该调用，以避免将字符串转换为 `"awesome(); totallyAwesome()"` 运行的 JavaScript。  
-    这些更改可能类似于以下内容：  
+*   `setTimeout`必须重写调用以避免将字符串 `"awesome(); totallyAwesome()"` 转换为 JavaScript 以运行。  
+    这些更改可能如下所示：  
 
 ```javascript
 function awesome() {
@@ -154,9 +154,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 **仅加载本地脚本和对象资源**  
 
-脚本和对象资源只能从扩展包加载，而不能从 web 上加载。  这可确保你的扩展仅运行你专门批准的代码，防止活动网络攻击者恶意重定向你的资源请求。  
+脚本和对象资源只能从扩展包加载，而不是从整个 Web 加载。  这将确保您的扩展仅运行您专门批准的代码，从而阻止活动网络攻击者恶意重定向资源请求。  
 
-不要编写依赖于 jQuery \ (或任何其他库 \ ) 从外部 CDN 加载的代码，请考虑在扩展程序包中包含 jQuery 的特定版本。  也就是说，而不是：  
+请考虑将 jQuery 的特定版本包括在扩展包中，而不是编写依赖于 jQuery \ (或其他任何库\) 从外部 CDN 加载的代码。  也就是说，而不是：  
 
 ```html
 <!doctype html>
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </html>
 ```  
 
-下载文件，将其包含在程序包中，然后编写：  
+下载文件，将该文件包括在程序包中，然后编写：  
 
 ```html
 <!doctype html>
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </html>
 ```  
 
-## 放松默认策略  
+## <a name="relaxing-the-default-policy"></a>使默认策略更轻松  
 
 **内联脚本**  
 
@@ -194,67 +194,67 @@ document.addEventListener('DOMContentLoaded', function () {
 
 As of Chrome 46, -->  
 
-通过指定策略中的源代码的 base64 编码哈希，可以允许内联脚本。  此哈希必须以已使用的哈希算法 \ (sha256、sha384 或 sha512 \ ) 为前缀。  有关示例，请参阅 [ \<script\> 元素的哈希使用情况][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] 。  
+通过指定策略中源代码的 base64 编码哈希，可以允许内联脚本。  此哈希必须以使用的哈希算法 \ (sha256、sha384 或 sha512\) 。  例如，导航到 [元素的哈希 \<script\> 用法][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]。  
 
 **远程脚本**  
 
-如果你需要某些外部 JavaScript 或对象资源，你可以通过 allowlisting 安全来源（应接受脚本）将策略放宽到有限的范围。  验证使用扩展权限提升权限加载的运行时资源是否与你所需的资源完全一致，并且不会由活动网络攻击者替换。  由于 [中间人攻击][WikiManMiddleAttacks] 在 HTTP 上是简单且不可检测的，因此不接受这些来源。  
+如果您需要一些外部 JavaScript 或对象资源，则可能会允许列出应接受脚本的安全来源，从而在一定程度上放松策略。  验证使用提升的扩展权限加载的运行时资源是否正是您期望的资源，并且不会替换为活动网络攻击者。  由于 [中间人攻击][WikiManMiddleAttacks] 在 HTTP 上既简单又无法检测，因此不接受这些来源。  
 
-目前，开发人员可以使用以下方案 allowlist 来源：、、 `blob` `filesystem` `https` 和 `extension` 。  必须为和方案显式指定源的主机部分 `https` `extension` 。  不允许使用常规通配符，如 https：、 `https://*` 和 `https://*.com` 不允许; `https://*.example.com` 允许使用子域通配符。  [公用后缀列表][PublicSuffixList]中的域也被视为常规顶级域。  若要从这些域加载资源，子域必须明确列出。  例如，无效 `https://*.cloudfront.net` ，但 `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` 能够 allowlisted。  
+目前，开发人员能够允许具有以下方案列出源：、、 `blob` `filesystem` `https` 和 `extension` 。  必须为和方案显式指定源的 `https` 主机 `extension` 部分。  不允许使用诸如 https：等常规通配符;允许使用子域通配符（ `https://*` `https://*.com` `https://*.example.com` 如此类）。  公共后缀 [列表中的域][PublicSuffixList] 也被视为通用顶级域。  若要从这些域加载资源，必须显式列出子域。  例如 `https://*.cloudfront.net` ，无效，但 `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` 能够 `allowlisted` 。  
 
-为了便于开发，通过 HTTP 从本地计算机上的服务器加载的资源可以 allowlisted。  你可以在或的任何端口上 allowlist 脚本和对象 `http://127.0.0.1` 源 `http://localhost` 。  
+为了便于开发，通过 HTTP 从本地计算机上服务器加载的资源可以 `allowlisted` 。  您可以允许列表脚本和对象源在任何端口的任一 `http://127.0.0.1` 或 `http://localhost` 。  
 
 > [!NOTE]
-> 对通过 HTTP 加载的资源的限制仅适用于直接运行的资源。  例如，您仍然可以免费连接到您喜欢的任何来源的 XMLHTTPRequest 连接;默认策略不会 `connect-src` 以任何方式限制或任何其他 CSP 指令。  
+> 对通过 HTTP 加载的资源的限制仅适用于直接运行的资源。  例如，您仍可以自由连接到您喜欢的任何源;默认策略不会以任何方式限制 `XMLHTTPRequest` `connect-src` 或其他任何 CSP 指令。  
 
-允许通过 HTTPS 从 example.com 加载脚本资源的松散策略定义可能如下所示：  
+允许通过 HTTPS 加载脚本资源的宽松策略定义可能 `example.com` 如下所示：  
 
 ```javascript
 "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
 ```  
 
 > [!NOTE]
-> `script-src`和 `object-src` 均由策略定义。  Microsoft Edge 不接受不将每个值限制为 \ (至少 \ ) ' ' 的策略 `self` 。  
+> 两 `script-src` `object-src` 者均由策略定义。  Microsoft Edge 不接受不将每个值限制为 \ (\) ' `self` 的策略。  
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->  
 
 **评估的 JavaScript**  
 
-策略 `eval()` 和相关函数（如、 `setTimeout(String)` `setInterval(String)` 和）可以 `new Function(String)` 通过添加 `unsafe-eval` 到你的策略来放松：  
+针对策略和相关函数（如 ， ）并能够通过向策略添加 `eval()` `setTimeout(String)` `setInterval(String)` `new Function(String)` 来 `unsafe-eval` 轻松：  
 
 ```javascript
 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 ```  
 
-但是，我们强烈建议您执行此操作。  这些函数是 notorious XSS 攻击媒介。  
+但是，应避免制定策略。  这些函数是主要 XSS 攻击途径。  
 
-## 加强默认策略  
+## <a name="tightening-the-default-policy"></a>强化默认策略  
 
-当然，你可以将此政策提升到扩展所允许的任何程度，以便在方便的时候提高安全性。  若要指定你的扩展只能加载任何类型 \ (图像的资源，如此 ) 来自关联的扩展程序包的资源，例如 `default-src 'self'` 可能适合的策略。  
+当然，你可以将此策略严格到扩展允许的任何程度，以便以便利为代价提高安全性。  若要指定你的扩展只能从关联的扩展包加载任何类型的 \ (图像等\) 资源，例如，策略可能 `default-src 'self'` 适合。  
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->  
 
-## 内容脚本  
+## <a name="content-scripts"></a>内容脚本  
 
-正在讨论的策略适用于扩展的背景页和事件页面。  内容脚本对扩展内容脚本的应用方式更复杂。  
+正在讨论的策略适用于扩展的后台页面和事件页面。  内容脚本如何应用于扩展的内容脚本更为复杂。  
 
-内容脚本通常不受扩展的 CSP 制约。  由于内容脚本并非 HTML，因此这种情况的主要影响是即使扩展的 CSP 不指定，它们也可能会使用 `eval` `unsafe-eval` ，但不建议这样做。  此外，页面的 CSP 不适用于内容脚本。  更复杂的是 `<script>` 内容脚本创建并放置在其运行的页面的 DOM 中的标记。  这些脚本将作为即将转发的 DOM 插入脚本进行引用。  
+内容脚本通常不受扩展 CSP 的遵守。  由于内容脚本不是 HTML，因此主要影响是即使扩展 CSP 未指定，它们也可能使用，尽管 `eval` `unsafe-eval` 不建议这样做。  此外，页面的 CSP 不适用于内容脚本。  更复杂的是内容脚本创建并放入所运行页面 `<script>` 的 DOM 中的标记。  这些脚本将作为 DOM 注入脚本进行引用。  
 
-在插入到页面后立即运行的 DOM 插入的脚本将按预期的方式运行。  想象一个内容脚本，其中包含以下代码作为一个简单的示例：  
+注入页面后立即运行的 DOM 注入脚本将如预期运行。  假设一个包含以下代码的内容脚本是一个简单示例：  
 
 ```javascript
 document.write("<script>alert(1);</script>");
  ```  
 
-此内容脚本立即导致 `alert` `document.write()` 。  请注意，无论页面可能指定的策略如何，都会运行此操作。
-但是，该行为将在该 DOM 插入脚本和任何不会在注入时立即运行的脚本中变得更复杂。  假设你的扩展正在页面上运行，该页面提供指定的关联 CSP `script-src 'self'` 。  现在，假设内容脚本运行以下代码：  
+此内容脚本会立即 `alert` 在 `document.write()` .  请注意，无论页面可以指定何种策略，都会运行此代码。
+但是，行为在 DOM 注入脚本内部以及任何在注入时不立即运行的脚本中都变得更加复杂。  假设你的扩展在提供指定关联的云解决方案提供商的页面上运行 `script-src 'self'` 。  现在，假设内容脚本运行以下代码：  
 
 ```javascript
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```  
 
-如果用户单击该按钮， `onclick` 脚本将不会运行。  这是因为脚本不会立即运行，并且代码不会被解释为内容脚本的一部分，因此不会将该 click 事件视为内容脚本的一部分，因此该页面的 CSP (不是扩展名 \ ) 会限制该行为。  由于该 CSP 不指定，因此 `unsafe-inline` 内联事件处理程序被阻止。  
-在这种情况下，实现所需行为的正确方法可能是 `onclick` 通过内容脚本中的函数添加处理程序，如下所示：  
+如果用户选择该按钮， `onclick` 则脚本不会运行。  这是因为脚本未立即运行，并且代码在未被视为内容脚本的一部分之前不会解释，因此页面 `click` \ (而不是 Extension\) 的 CSP 将限制行为。  由于该 CSP 未指定， `unsafe-inline` 内联事件处理程序将被阻止。  
+在这种情况下实现所需行为的正确方法可能是将处理程序添加为内容脚本中的函数， `onclick` 如下所示：  
 
 ```javascript
 document.write("<button id='mybutton'>click me</button>'");
@@ -264,7 +264,7 @@ button.onclick = function() {
 };
 ```  
 
-如果内容脚本运行以下内容，则会出现另一个类似问题：  
+如果内容脚本运行以下内容，也会出现另一个类似问题：  
 
 ```javascript
 var script = document.createElement('script');
@@ -272,7 +272,7 @@ script.innerHTML = 'alert(1);'
 document.getElementById('body').appendChild(script);
 ```  
 
-在这种情况下，脚本将运行，并显示警报。  但是，请考虑以下情况：  
+在这种情况下，脚本将运行并显示警报。  但是，请看一下这种情况：  
 
 ```javascript
 var script = document.createElement('script');
@@ -280,22 +280,22 @@ script.innerHTML = 'eval("alert(1);")';
 =document.getElementById('body').appendChild(script);
 ```  
 
-运行初始脚本时，将 `eval` 阻止呼叫。  也就是说，在允许初始脚本运行时，脚本内的行为由页面的 CSP 管制。  
-因此，根据你在扩展中编写 DOM 插入的脚本的方式，对页面的 CSP 所做的更改可能会影响你的扩展的行为。  由于页面的 CSP 不会影响内容脚本，因此这是将尽可能多的扩展放入内容脚本（而不是 DOM 插入的脚本）的重要理由。  
+初始脚本运行时，将阻止 `eval` 对的调用。  也就是说，虽然允许初始脚本运行时，但脚本内的行为由页面的 CSP 进行控制。  
+因此，根据在扩展中编写 DOM 注入脚本的方法，对页面 CSP 的更改可能会影响扩展的行为。  由于内容脚本不受页面 CSP 的影响，因此，这是将扩展尽可能多的行为放入内容脚本（而不是 DOM 注入脚本）的一个重要原因。  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "内容安全策略简介-HTML5 Rocks"  
-[PublicSuffixList]: https://publicsuffix.org/list "查看公用后缀列表"  
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "\ <脚本 \ > 元素-内容安全策略级别2的哈希使用情况"  
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "内容安全策略级别3"  
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "中间人攻击-维基百科"  
+[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "内容安全策略策略|HTML5 元素"  
+[PublicSuffixList]: https://publicsuffix.org/list "查看公共后缀列表"  
+[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "\<script\> 元素的哈希用法 - 内容安全策略级别 2 |W3C"  
+[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "内容安全策略级别 3 |W3C"  
+[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "中间人攻击|Wikipedia"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 可在 [此处](https://developer.chrome.com/extensions/contentSecurityPolicy)找到原始页面。  
+> 原始页面位于 [此处](https://developer.chrome.com/extensions/contentSecurityPolicy)。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

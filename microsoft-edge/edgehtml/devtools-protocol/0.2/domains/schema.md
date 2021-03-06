@@ -1,79 +1,51 @@
 ---
-description: DevTools 协议版本 0.2 (架构域的 EdgeHTML) 参考。 提供有关协议架构的信息。
+description: DevTools 协议版本 0.2 (EdgeHTML) 架构域参考。 提供有关协议架构的信息。
 title: '架构域 - DevTools 协议版本 0.2 (EdgeHTML) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 53038a02844fafc9550a6ac26303620a1a0183f8
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 6844939f452bc96980d6d67d4652adcc7c078c7a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232078"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398145"
 ---
-# 架构域 - DevTools 协议版本 0.2 (EdgeHTML)   
+# <a name="schema-domain---devtools-protocol-version-02-edgehtml"></a>架构域 - DevTools 协议版本 0.2 (EdgeHTML)   
 
-提供有关协议架构的信息。
+提供有关协议架构的信息。  
 
-| | |
-|-|-|
-| [**方法**](#methods) | [getDomains](#getdomains) |
-| [**类型**](#types) | [域](#domain) |
-## 方法
+| 分类 | 成员 |  
+|:--- |:--- |  
+| [方法](#methods) | [getDomains](#getdomains) |  
+| [类型](#types) | [Domain 对象](#domain) |  
 
-### getDomains
-返回支持的域。
+## <a name="methods"></a>方法  
 
-<table>
-    <thead>
-        <tr>
-            <th>返回</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>域</td>
-            <td><a href="#domain"><code class="flyout">Domain[]</code></a></td>
-            <td>受支持的域列表。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getdomains"></a>getDomains  
 
----
+返回支持的域。  
 
-## 类型
+| 返回 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| 域 | [域[]](#domain) | 受支持的域列表。 |  
 
-### <a name="domain"></a> 域 `object`
+---  
 
-协议域的说明。
+## <a name="types"></a>类型  
 
-<table>
-    <thead>
-        <tr>
-            <th>属性</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>域名。</td>
-        </tr>
-        <tr>
-            <td>version</td>
-            <td><code class="flyout">string</code></td>
-            <td>域版本。</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domain-object"></a>Domain 对象  
 
----
+<a name="domain"></a>  
+
+协议域的说明。  
+
+| 属性 | 类型 | 详细信息 |  
+|:--- |:--- |:--- |  
+| name | `string` | 域名。 |  
+| version | `string` | 域版本。 |  
+
+---  

@@ -1,18 +1,18 @@
 ---
-description: 打开 "网络条件" 选项卡，禁用 "自动选择"，然后从列表中选择或输入自定义字符串。
+description: 打开"网络条件"工具，自动禁用"选择"，然后从列表中选择或输入自定义字符串。
 title: 覆盖 Microsoft Edge DevTools 中的用户代理字符串
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: befbe186a5992c651f877a18f1c3232bf212394a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: a0ba10b551b4853cf204656ca7a9fb014323986b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124948"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398691"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,32 +28,32 @@ ms.locfileid: "11124948"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 覆盖 Microsoft Edge DevTools 中的用户代理字符串  
+# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>覆盖 Microsoft Edge DevTools 中的用户代理字符串  
 
-若要覆盖 Microsoft Edge DevTools 中的 [用户代理][MDNUserAgent] 字符串，请执行以下操作：  
+若要覆盖[][MDNUserAgent]Microsoft Edge DevTools 中的用户代理字符串，  
 
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux \ ) 或 `Command` + `Shift` + `P` \ (macOS \ ) 打开 "**命令" 菜单**。  
+1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `network conditions` ，选择 " **显示网络条件**"，然后选择 `Enter` 以打开 " **网络条件** " 选项卡。  
-1.  在 " **用户代理** " 部分中，禁用 " **自动选择** " 复选框。  
+1.  键入 `network conditions` ，选择 **"显示网络条件**"，然后选择 `Enter` 以打开 **"网络条件"** 工具。  
+1.  在 **"用户代理"** 部分，关闭"自动 **选择"** 复选框。  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       禁用 "**自动选择**"  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭"自动选择"" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       关闭" **自动选择"**  
     :::image-end:::  
     
 1.  从列表中选择用户代理字符串，或输入您自己的自定义字符串。  
     
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "用户代理 |MDN"  
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "用户代理|MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

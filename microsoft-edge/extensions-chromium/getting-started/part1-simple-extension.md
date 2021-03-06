@@ -1,38 +1,38 @@
 ---
-description: 生成弹出 NASA 图片的扩展
-title: 创建扩展教程-第1部分
+description: 构建一个扩展，该扩展弹出当天的"开始"菜单图片
+title: 创建扩展教程 - 第 1 部分
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/23/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium、web 开发、html、css、javascript、开发人员、扩展
-ms.openlocfilehash: 3809bfac714621cf97184127132487ed93958a2f
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
+ms.openlocfilehash: dfbe7893ce576c223d2b1d39ec21b6c5f46d8356
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104705"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397508"
 ---
-# 创建扩展教程-第1部分  
+# <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分  
 
-## 概述  
+## <a name="overview"></a>概述  
 
-本教程的目标是构建 Microsoft Edge (Chromium) 扩展名，从空目录开始。 我们将生成一个扩展，它将弹出一天的 NASA 图片。 在本教程中，你将了解如何通过以下方式创建扩展：
+本教程的目标是从空目录开始构建 Microsoft Edge (Chromium) 扩展。  你正在构建一个扩展，该扩展将弹出当天的"开始"菜单图片。 在本教程中，了解如何通过完成以下操作来创建扩展。  
 
 *   创建 `manifest.json` 文件。  
 *   添加图标。  
-*   打开一个默认的弹出对话框。  
+*   打开默认弹出对话框。  
 
-## 开始之前
+## <a name="before-you-begin"></a>开始之前
 
-如果你想要测试将在本教程中生成的完成的扩展，请下载 [源代码][ArchiveExtensionGettingStartedPart1]。  
+若要测试本教程中构建的已完成扩展，请下载 [源代码][ArchiveExtensionGettingStartedPart1]。  
 
-## 步骤1：创建 `manifest.json` 文件
+## <a name="step-1-create-a-manifestjson-file"></a>步骤 1：创建manifest.js文件
 
-每个扩展包都必须在 `manifest.json` 根目录处拥有一个文件。  清单提供你的扩展、扩展包版本、扩展名名称和说明等详细信息。  
+每个扩展包的根 `manifest.json` 目录都必须有一个文件。  清单提供扩展的详细信息、扩展包版本、扩展名称和说明等。  
 
-以下代码片段概述了文件中所需的基本信息 `manifest.json` 。  
+下面的代码段概述了文件所需的基本 `manifest.json` 信息。  
 
 ```json
 {
@@ -43,17 +43,17 @@ ms.locfileid: "11104705"
 }
 ```  
 
-## 步骤2：添加图标  
+## <a name="step-2-add-icons"></a>步骤 2：添加图标  
 
-首先 `icons` 在项目中创建目录以存储图标图像文件。  图标用于用户选择以启动扩展的按钮的背景图像。  
+首先在 `icons` 项目中创建用于存储图标图像文件的目录。  图标用于用户选择启动扩展的按钮的背景图像。  
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="工具栏上的图标以打开您的扩展":::
-   工具栏上的图标以打开您的扩展
-:::image-end:::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="工具栏上的图标以打开扩展":::
+   工具栏上的图标以打开扩展  
+:::image-end:::  
 
-对于图标，建议使用： 
-*   `PNG` 图标的格式，但你也可以使用 `BMP` 、 `GIF` `ICO` 或 `JPEG` 格式。  
-*   128 x 128 px 的图像（如有必要）根据浏览器调整大小。  
+对于图标，我们建议使用： 
+*   `PNG` 图标的格式，但您也可以使用 ， `BMP` `GIF` 或 `ICO` `JPEG` 格式。  
+*   128 x 128 像素的图像，如有必要，浏览器会调整大小。  
 
 项目的目录应类似于以下结构。   
 
@@ -67,28 +67,28 @@ ms.locfileid: "11104705"
         └── nasapod128x128.png
 ```  
 
-接下来，将图标添加到 `manifest.json` 文件中。 `manifest.json`用图标信息更新文件，使其与以下代码片段匹配。 `png`以下代码中列出的文件在本文前面所述的下载文件中可用。  
+接下来，将图标添加到 `manifest.json` 文件中。 使用 `manifest.json` 图标信息更新文件，以便与以下代码段匹配。 `png`以下代码中列出的文件在本文前面提到的下载文件中可用。  
 
 ```json
 {
-    &quot;name&quot;: &quot;NASA picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA picture of the day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png"
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "A chromium extension to show the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
     }
 }
 ```  
 
-## 步骤3：打开默认的弹出对话框  
+## <a name="step-3-open-a-default-pop-up-dialog"></a>步骤 3：打开默认弹出对话框  
 
-现在，创建一个 `HTML` 在用户启动您的扩展时运行的文件。  创建 `popup.html` 在名为的目录中调用的 HTML 文件 `popup` 。  当用户选择启动扩展的图标时， `popup/popup.html` 将显示为模式对话框。  
+现在，创建 `HTML` 一个文件，以在用户启动扩展时运行。  创建在名为 . `popup.html` 的目录中命名的 HTML 文件 `popup` 。  当用户选择图标以启动扩展时， `popup/popup.html` 将显示为模式对话框。  
 
-将以下代码片段中的代码添加到 `popup.html` 以显示星图像。  
+添加以下代码段中的代码以显示 `popup.html` 星形图像。  
 
 ```html
 <html lang="en">
@@ -104,7 +104,7 @@ ms.locfileid: "11104705"
 </html>
 ```  
 
-确保将图像文件添加 `images/stars.jpeg` 到 "images" 文件夹。  项目的目录应类似于以下结构。   
+确保将图像文件 `images/stars.jpeg` 添加到 images 文件夹中。  项目的目录应类似于以下结构。   
 
 ```shell
 └── part1
@@ -120,7 +120,7 @@ ms.locfileid: "11104705"
         └── popup.html
 ```  
 
-最后，确保在 "" 下注册弹出窗口 `manifest.json` `browser_action` ，如以下代码片段所示。  
+最后，确保将弹出窗口注册到下 `manifest.json` `browser_action` ，如下面的代码片段所示。  
 
 ```json
 {
@@ -140,9 +140,8 @@ ms.locfileid: "11104705"
 }
 ```  
 
-## 后续步骤
-这就是开发工作扩展所需的所有内容。 现在，继续旁加载并测试您的扩展。 有关详细信息，请参阅 [旁加载扩展][TestExtensionSideload]。  
-
+## <a name="next-steps"></a>后续步骤
+这是开发工作扩展所需的一切。  现在，继续旁加载并测试扩展。 有关详细信息，请导航到 [旁加载扩展][TestExtensionSideload]。  
 
 <!-- image links -->  
 
@@ -155,6 +154,6 @@ ms.locfileid: "11104705"
 
 <!-- links -->  
 
-[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "已完成扩展程序包源 |Microsoft 文档"
+[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "已完成的扩展包源|Microsoft Docs"
 
-[TestExtensionSideload]: ./extension-sideloading.md "测试您的扩展 (旁加载) |Microsoft 文档"
+[TestExtensionSideload]: ./extension-sideloading.md "测试扩展 (旁加载) |Microsoft Docs"

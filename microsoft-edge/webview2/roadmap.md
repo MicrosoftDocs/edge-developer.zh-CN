@@ -1,39 +1,40 @@
 ---
-description: 了解 WebView2 的下一步
-title: Microsoft Edge Web Edge Web 图2的路线图
+description: 了解 WebView2 接下来将做什么
+title: Microsoft Edge WebView 2 路线图
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
+ms.openlocfilehash: 0f51b5cab32bdb9b9aa9b6baceef5fe5a17eea54
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182358"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398411"
 ---
-# Microsoft Edge WebView2 路线图  
-
-##### 上次更新时间：2020年11月  
-
-WebView2 控件允许开发人员在其本机应用程序中嵌入 web 技术。  下页概述了 WebView2 的预期路线图。  
+# <a name="microsoft-edge-webview2-roadmap"></a>Microsoft Edge WebView2 路线图  
 
 > [!NOTE]
-> WebView2 正在进行活动开发，并根据市场变化和客户反馈继续发展路线图，因此请注意，此处概述的计划不详尽，并且可能会发生更改。  
+> 上次更新时间：2020 年 11 月  
 
-如果对路线图有疑问或问题，请在 [反馈][GithubMicrosoftedgeWebviewfeedbackMain]存储库中提供反馈。  
+WebView2 控件允许开发人员在其本机应用程序中嵌入 Web 技术。  以下页面概述了 WebView2 的潜在路线图。  
 
-WebView2 团队正在制定后续更新的主要成果。  
+> [!NOTE]
+> WebView2 正在积极开发，路线图将继续根据市场变化和客户反馈不断发展，因此请注意，此处概述的计划并不详尽，可能会发生变化。  
+
+如果您对路线图有疑问或疑问，请从反馈存储库 [提供反馈][GithubMicrosoftedgeWebviewfeedbackMain]。  
+
+WebView2 团队正在规划以下主要工作，以用于将来的更新。  
 
 :::row:::
    :::column span="1":::
       WebView2 运行时安装程序  
    :::column-end:::
    :::column span="2":::
-      *   2020年4季度
+      *   2020 年第 4 季度
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -41,49 +42,49 @@ WebView2 团队正在制定后续更新的主要成果。
       已修复版本  
    :::column-end:::
    :::column span="2":::
-      *   2020年4季度  
+      *   2020 年第 4 季度  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      常规可用性  
+      通用  
    :::column-end:::
    :::column span="2":::
-      *   Win32 C/c + + \ (第4季度 2020 \ )   
-      *    (第4季度 2020 \ ) 的 .NET \  
+      *   Win32 C/C++ \ (Q4 2020\)   
+      *   .NET \ (Q4 2020\)   
       *   [WinUI 3.0][GithubMicrosoftUiXamlRoadmap]  
    :::column-end:::
 :::row-end:::  
 
-## WebView2 运行时和安装程序  
+## <a name="webview2-runtime-and-installer"></a>WebView2 运行时和安装程序  
 
-使用长[绿分布模型][ConceptDistributionEvergreenModel]，你可以将 WebView2 运行时作为目标或链接到你的用户计算机。  长绿 WebView2 运行时和安装程序已达到常规可用性 (\ ) 。  
+[通过常青分发模型][ConceptDistributionEvergreenModel] ，你可以将 WebView2 运行时的目标安装或链接安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已达到通用版本 \ (GA\) 。  
 
-## 已修复版本  
+## <a name="fixed-version"></a>固定版本  
 
-[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。  固定版本已达到常规可用性 \ (GA \ ) 。  
+[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。  固定版本已达到通用版本 \ (GA\) 。  
 
-## 常规可用性  
+## <a name="general-availability"></a>一般可用性  
 
-### Win32 C/c + +  
+### <a name="win32-cc"></a>Win32 C/C++  
 
-Win32 C/c + + SDK 已达到 GA。  
+Win32 C/C++ SDK 已到达 GA。  
 
-### .NET  
+### <a name="net"></a>.NET  
 
-.NET SDK 已上市。 
+.NET SDK 已到达 GA。 
 
-### WinUI 3.0  
+### <a name="winui-30"></a>WinUI 3.0  
 
-你可以使用 [WIN UI 3.0][UwpToolkitsWinui3Index]（当前在 alpha 中）访问 UWP 应用程序中的 WebView2。  有关保持最新状态的详细信息，请参阅 [WINDOWS UI 库路线图][GithubMicrosoftUiXamlRoadmap]。  
+可以使用 Win [UI 3.0（][UwpToolkitsWinui3Index]当前采用 alpha）在 UWP 应用程序中访问 WebView2。  有关保持最新状态的信息，请导航到 [Windows UI 库路线图][GithubMicrosoftUiXamlRoadmap]。  
 
 <!-- links -->  
 
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "长绿分布模型-使用 WebView2 | 的应用程序分布Microsoft 文档"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "固定版本分布模型-使用 WebView2 | 的应用程序的分发Microsoft 文档"  
+[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "常青分布模型 - 使用 WebView2 |Microsoft Docs"  
+[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "固定版本分发模型 - 使用 WebView2 |Microsoft Docs"  
 
-[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI 库3.0 预览 1 (可能 2020) |Microsoft 文档"  
+[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (2020 年 5 月) |Microsoft Docs"  
 
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Web 视图反馈-MicrosoftEdge/WebViewFeedback |GitHub"  
+[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
 
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Windows UI 库路线图-microsoft/microsoft-UI-xaml |GitHub"  
+[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Windows UI 库路线图 - microsoft/microsoft-ui-xaml |GitHub"  

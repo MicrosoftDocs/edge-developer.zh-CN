@@ -1,103 +1,103 @@
 ---
 ms.assetid: ''
-description: 安全实验一段固定的时间，并提供有关新平台功能的反馈。
+description: 安全试验固定一段时间，并提供有关新平台功能的反馈。
 title: 原始试验
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 边缘、web 开发、html、css、原创试验、开发人员
-ms.openlocfilehash: 470896435ab348419749a7de00adcdb83b784df3
-ms.sourcegitcommit: 5cbc9237363b3a8ba212ca128aa03c71a33ec86f
+keywords: edge， Web 开发， html， css， 源试用版， 开发人员
+ms.openlocfilehash: cc03ec556d4b32ca37cebcd4ee7ba155bfe4404b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "10846524"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397543"
 ---
-# 在 Microsoft Edge 中使用原创试验  
+# <a name="use-origin-trials-in-microsoft-edge"></a>在 Microsoft Edge 中使用源试用版  
 
-在有限的时间段内，开发人员可以使用初始试验在活动网站上试用实验性 Api。  使用原始试验时，访问你的网站的 Microsoft Edge 用户可能会运行使用实验性 Api 的代码。  若要访问每台用户计算机上的实验性 Api，无需转到 `edge://flags` 并打开功能标志。  有关详细信息，请参阅 [实验性 api][DeveloperMicrsoftEdgeOriginTrials]。  此外，你还可以提供有关 API 设计、使用情况或你使用 Api 到浏览器工程师和 web 标准社区的体验的反馈。  
+开发人员可以使用源试用版在有限的一段时间内在实时网站上试用实验性 API。  使用源试用版时，访问站点的 Microsoft Edge 用户可能会运行使用实验性 API 的代码。  若要访问每个用户计算机上实验性 API，无需转到 `edge://flags` 并打开功能标志。  有关详细信息，请导航到[实验 API。][DeveloperMicrsoftEdgeOriginTrials]  此外，你可以向浏览器工程师和 Web 标准社区提供有关 API 设计、用例或使用 API 的体验的反馈。  
 
-## 开始使用初始试用版  
+## <a name="get-started-using-origin-trials"></a>开始使用源试用版  
 
-有关 Microsoft Edge 中可用的实验性 Api 的详细信息，请参阅 [Microsoft Edge 原始试用开发人员控制台][DeveloperMicrsoftEdgeOriginTrials]。  确保查看 Microsoft Edge 的最低版本要求和试用结束日期，以评估在你的网站上使用实验性 Api 的适用性。  
+有关 Microsoft Edge 中提供的实验性 API 详细信息，请导航到 [Microsoft Edge 源试用版开发人员控制台][DeveloperMicrsoftEdgeOriginTrials]。  确保查看 Microsoft Edge 的最低版本要求和试用结束日期，以评估在网站上使用实验性 API 的适用性。  
 
 > [!NOTE]
-> 如果出现以下情况，则实验可能比计划提前结束。  
+> 如果发生以下任一情况，则实验可能会早于计划结束。  
 > *   重大安全事件。  
-> *   如果收集了足够的反馈表明需要进行重大重新设计以满足 web 开发人员的需求。  
-> 在任何一种情况下，通知电子邮件都将发送给当前注册了实验的所有开发人员。  
+> *   如果收集到足够的反馈，表明需要进行重大重新设计以满足 Web 开发人员的需求。  
+> 无论哪种情况，都向当前在实验中注册的所有开发人员发送通知电子邮件。  
 
-### 注册实验性 API 的试用版  
+### <a name="register-for-a-trial-of-an-experimental-api"></a>注册实验性 API 试用版  
 
-使用以下步骤注册实验性 API 的试用版。  
+使用以下步骤注册实验性 API 试用版。  
 
-1.  访问 [Microsoft Edge 原始试用开发人员控制台][DeveloperMicrsoftEdgeOriginTrials] 页面。  
-1.  在任何可用实验中选择 "注册" 按钮。  
-1.  使用 GitHub 用户名和密码登录到开发人员控制台。  
-1.  选择 " **授权 MicrosoftEdge**"。  
+1.  访问 [Microsoft Edge Origin Trials 开发人员控制台][DeveloperMicrsoftEdgeOriginTrials] 页。  
+1.  选择任何可用实验上的"注册"按钮。  
+1.  使用 GitHub 用户名和密码登录开发人员控制台。  
+1.  选择 **"授权 MicrosoftEdge"。**  
 1.  填写表单。  
     
     > [!NOTE]
-    > 若要注册单个或所有子域，请选择 "设置 `Do you need to match all subdomains for the provided origin?` 为" `Yes` 。  例如， `https://dev.contoso.com` 是单个域， `https://*.contoso.com` 使用通配符表示所有子域。  
+    > 若要注册单个或所有子域，请选择将 `Do you need to match all subdomains for the provided origin?` 设置设置为 `Yes` 。  例如， `https://dev.contoso.com` 是单个域， `https://*.contoso.com` 并使用通配符表示所有子域。  
     
     > [!IMPORTANT]
-    > 不允许使用以下原始格式。  
-    > *   在原始位置指定子文件夹。  例如， `https://contoso.com/path/subfolder`  
+    > 不允许以下源格式。  
+    > *   指定源上的子文件夹。  例如， `https://contoso.com/path/subfolder`  
     > 
-    > *   将原点与查询字符串参数配合使用。  例如， `https://contoso.com/path/feature?query_parameter=12345`  
+    > *   将原点与查询字符串参数一同使用。  例如， `https://contoso.com/path/feature?query_parameter=12345`  
     
-1.  选择 " **接受和注册**"。  
+1.  选择 **"接受"并注册**。  
+    
+### <a name="apply-your-token"></a>应用令牌  
 
-### 应用您的令牌  
+将立即生成令牌，并显示在 Microsoft [Edge 源试用版开发人员控制台][DeveloperMicrsoftEdgeOriginTrials] 页面上。  若要开始在网站上使用试用版，请使用以下任一方法将令牌应用到你的页面。  
 
-令牌将立即生成并显示在 [Microsoft Edge 原始试验开发人员控制台][DeveloperMicrsoftEdgeOriginTrials] 页面上。  若要开始在你的网站上使用试用版，请使用以下任一方法将令牌应用于你的页面。  
-
-*   将该 `origin-trial` 属性值和你的令牌添加到 `meta` 使用实验性 API 的每个页面上的标记。  
+*   将 `origin-trial` 属性值和令牌添加到使用实验性 API 的每一 `meta` 页上的标记中。  
     
     ```html
     <meta http-equiv="origin-trial" content="replace-with-your-token">
     ```  
     
-*   添加 `Origin-Trial` 到服务器的 HTTP 响应头。  
+*   添加到 `Origin-Trial` 服务器的 HTTP 响应标头。  
     
     ```json
     Origin-Trial: replace-with-your-token
     ```  
     
 > [!NOTE]
-> 您的令牌有效期为6周。  试用期结束之前，会向您发送提醒电子邮件，询问您的反馈，并要求您在令牌到期之前续订您的试用版。  
+> 你的令牌有效期为 6 周。  在试用结束之前，会向你发送提醒电子邮件，请求你提供反馈，并要求你考虑在令牌过期之前续订试用版。  
 
-### 选择退出实验  
+### <a name="opt-out-of-an-experiment"></a>选择退出实验  
 
-若要退出实验，请使用以下方法之一删除你的令牌。  
+若要选择退出实验，请使用以下方法之一删除令牌。  
 
-*   `meta`从使用实验 API 的每个页面中删除标记。  
+*   从每个使用实验性 API 的页面 `meta` 中删除标记。  
     
     ```html
     <meta http-equiv="origin-trial" content="your-token">
     ```  
     
-*   `Origin-Trial`从服务器的 HTTP 响应头中删除。  
+*   从 `Origin-Trial` 服务器的 HTTP 响应标头中删除。  
     
     ```json
     Origin-Trial: your-token
     ```  
     
-### 检测实验性功能并提供回退  
+### <a name="detect-experimental-features-and-provide-a-fallback"></a>检测实验功能并提供回退  
 
-使用实验性 Api 时，请确保为网站的所有访问者提供工作体验。  访问者可以使用不支持你添加到代码中的实验性 Api 的浏览器。  此外，如果你的令牌在续订之前到期，实验性 API 将不再可用，可能会导致错误。  为避免这种情况，请确保检测浏览器中的可用功能。  有关详细信息，请参阅 [实现功能检测][MDNImplementingFeatureDetection]。
+使用实验性 API 时，请确保为网站的所有访问者提供工作体验。  访问者可能会使用不支持添加到代码中的实验性 API 的浏览器。  此外，如果你的令牌在续订之前过期，实验性 API 将不再可用，这可能会导致错误。  若要避免这种情况，请确保检测到浏览器中可用的功能。  有关详细信息，请导航到["实现功能检测"。][MDNImplementingFeatureDetection]
 
-### 允许的来源路线图  
+### <a name="roadmap-for-allowed-origins"></a>允许来源的路线图  
 
-现在，Microsoft Edge 原始试用门户仅支持 SSL 启用的来源，这意味着网站必须正确实现 HTTPS 才能注册实验。  将来，计划提供以下安全来源。  
+Microsoft Edge Origin Trials 门户现在仅支持启用 SSL 的源，这意味着网站必须正确实现 HTTPS 才能注册实验。  将来，将规划以下安全源。  
 
-*   注册 `http://localhost` 为实验的来源。  若要 `http://localhost` 立即使用，请转到 `edge://flags` 并将实验设置为 " **启用**"。  
-*   使用具有前缀的来源的扩展名 `extensions://` 注册实验。  
+*   注册 `http://localhost` 为实验的来源。  若要在 `http://localhost` 今天使用，请导航 `edge://flags` 到实验，将实验设置为 **"已启用"。**  
+*   使用具有前缀 `extensions://` 来源的扩展以注册实验。  
     
 <!-- links -->  
 
-[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge 原始试用开发人员控制台 |Microsoft 文档"  
+[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials 开发人员控制台|Microsoft Docs"  
 
-[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "实施功能检测 |MDN"  
+[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "实现功能检测|MDN"  

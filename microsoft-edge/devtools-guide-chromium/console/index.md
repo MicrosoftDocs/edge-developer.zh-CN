@@ -1,18 +1,18 @@
 ---
-description: Microsoft Edge DevTools 控制台的主要用途是记录消息和运行 JavaScript。
+description: Microsoft Edge DevTools 控制台的主要用途是记录消息并运行 JavaScript。
 title: 控制台概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 496caa4d304d9511d4b1c341846f377899ba4597
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125263"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399118"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,15 +28,15 @@ ms.locfileid: "11125263"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# 控制台概述  
+# <a name="console-overview"></a>控制台概述  
 
   
 
-此页面介绍 Microsoft Edge DevTools 控制台如何简化网页开发。  该控制台有2个主要用途： [查看记录的消息](#viewing-logged-messages) 和 [运行 JavaScript](#running-javascript)。  
+此页面介绍了 Microsoft Edge DevTools 控制台如何更轻松地开发网页。  控制台**有**两个主要用途：[查看记录的消息](#viewing-logged-messages)和[运行 JavaScript。](#running-javascript)  
 
-## 查看已记录的消息  
+## <a name="viewing-logged-messages"></a>查看记录的消息  
 
-Web 开发人员通常将消息记录到控制台，以确保其 JavaScript 按预期工作。  若要记录消息，请在 JavaScript 中插入类似的表达式 `console.log('Hello, Console!')` 。  当浏览器运行你的 JavaScript 并看到类似这样的表达式时，它会将消息记录到控制台。  
+Web 开发人员通常会将消息记录到控制台，以确保其 JavaScript 正常工作。  若要记录消息，请将类似表达式插入 `console.log('Hello, Console!')` JavaScript 中。  当浏览器运行 JavaScript 并处理类似表达式时，浏览器会向控制台记录 **消息**。  
 
 :::row:::
    :::column span="":::
@@ -71,66 +71,66 @@ Web 开发人员通常将消息记录到控制台，以确保其 JavaScript 按�
       ```  
    :::column-end:::
    :::column span="":::
-      在下图中， **控制台** 显示加载页面并等待3秒钟的结果。  
+      下图中 **，控制台显示** 加载页面并等待 3 秒的结果。  
       
       :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="控制台面板" lightbox="../media/console-console-demo.msft.png":::
-         **控制台**面板  
+         控制台**工具**  
       :::image-end:::  
       
       尝试确定哪些代码行导致浏览器记录消息。  
    :::column-end:::
 :::row-end:::  
 
-Web 开发人员记录以下2个常规原因的消息。  
+Web 开发人员出于以下 2 个一般原因记录消息。  
 
 *   确保代码按正确的顺序运行。  
-*   在某一时间点检查变量的值。  
+*   检查某个时刻的变量值。  
 
-请参阅 [记录消息入门][DevtoolsConsoleLoggingMessages] ，获取有关日志记录的实际操作体验。  请参阅 [控制台 API 参考][DevToolsConsoleAPI] ，浏览完整的方法列表 `console` 。  方法之间的主要区别是显示正在记录的数据的方式。  
+若要获得日志记录的动手体验，请导航到"[日志记录消息入门"。][DevtoolsConsoleLoggingMessages]  若要浏览方法的完整 `console` 列表，请导航到控制台 [API 参考][DevToolsConsoleAPI]。  方法之间的主要区别在于所记录数据的显示方式。  
 
-## 运行 JavaScript  
+## <a name="running-javascript"></a>运行 JavaScript  
 
-该 **控制台** 也是一种 [复制][WikiREPLoop]。  你可以在 **控制台** 中运行 JavaScript 以与被检查的页面交互。   
+控制台**也是**一个[REPL。][WikiREPLoop]  您可以在控制台中运行 JavaScript **以与** 正在检查的页面进行交互。   
 
 :::row:::
    :::column span="":::
-      在下图中， **控制台** 显示在 DevTools 主页的旁边。  
+      下图中， **控制台显示在** DevTools 主页旁边。  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="控制台面板" lightbox="../media/devtools-console-empty.msft.png":::
-         DevTools 主页旁边的 **控制台** 面板  
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="DevTools 主页旁边的控制台工具" lightbox="../media/devtools-console-empty.msft.png":::
+         DevTools 主页旁边的控制台工具****  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      在下图中，使用 **控制台** 更改页面的顶部标题后，将显示相同的页面。
+      在下图中，使用控制台更改页面顶部标题后将显示同**** 一页。
       
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="控制台面板" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         使用 **控制台** 更改页面的顶部标题  
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="使用控制台更改页面顶部标题" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         使用 **控制台** 更改页面顶部标题  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-由于**控制台**对页面的[窗口][MDNWindow]具有完全访问权限，因此可以从**控制台**修改页面。  DevTools 具有几个便于检查页面的便利功能。  例如，假设你的 JavaScript 包含一个名为 `hideModal` 的函数。  运行 `debug(hideModal)` 时，在 `hideModal` 您下次运行代码时，它会暂停在第一行。  有关实用工具函数的完整列表的详细信息，请导航到 " [控制台实用工具 API 参考][DevtoolsConsoleUtilitiesDebug]"。  
+从控制台修改页面 **是可能的** ，因为 **控制台** 具有对页面 [窗口][MDNWindow] 的完全访问权限。  DevTools 具有一些方便功能，可更轻松地检查页面。  例如，假设你的 JavaScript 包含一个称为 `hideModal` .的函数。  运行 `debug(hideModal)` 将暂停下一次运行时代码的第 `hideModal` 一行。  有关实用程序函数的完整列表详细信息，请导航到 [控制台实用工具 API 参考][DevtoolsConsoleUtilitiesDebug]。  
 
-运行 JavaScript 时，不必与页面交互。  你可以使用该 **控制台** 尝试与页面无关的新代码。  例如，假设你刚刚了解内置的 JavaScript 数组 [映射 ( # B1 ][MDNMap] 方法，并且你想要进行试验。  
-**控制台**是试用该函数的好地方。  
+运行 JavaScript 时，不需要与页面交互。  您可以使用控制台 **来** 尝试与页面无关的新代码。  例如，假设你刚刚了解了内置的 JavaScript 数组映射 [ () ][MDNMap] 方法，并且你想要试验它。  
+**控制台**是试用该函数的一个好位置。  
 
-有关在 **控制台**中运行 javascript 的更多实际体验，请导航到 [开始运行 javascript][DevtoolsConsoleRunningJavascript]。  
+有关在控制台中运行 JavaScript 的更多实践体验 **，请导航**到"运行 JavaScript 入门["。][DevtoolsConsoleRunningJavascript]  
 
-## 与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "控制台 API 参考 |Microsoft 文档"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "在控制台中记录邮件的入门 |Microsoft 文档"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "开始在控制台中运行 JavaScript |Microsoft 文档"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "调试-控制台实用工具 API 参考 |Microsoft 文档"  
+[DevToolsConsoleAPI]: ./api.md "控制台 API 参考|Microsoft Docs"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "开始在控制台中记录|Microsoft Docs"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "开始在控制台中运行 JavaScript |Microsoft Docs"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug - 控制台实用工具 API 参考|Microsoft Docs"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map " ( # A1 | 的数组MDN"  
-[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口 |MDN"  
+[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map () |MDN"  
+[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口|MDN"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "阅读-评估-"打印循环"-维基百科"  
+[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval–print 循环 - Wikipedia"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

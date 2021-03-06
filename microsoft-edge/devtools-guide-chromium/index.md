@@ -7,29 +7,29 @@ ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 05b757b7cb399815d072b9d6038873cfd118a59d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: fa407393f8ecb79a3382294742bf9061787ec04a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327489"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397699"
 ---
-# Microsoft Edge (Chromium) 开发人员工具概述  
+# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge (Chromium) 开发人员工具概述  
 
 Microsoft Edge 已采用 Chromium 开放源代码项目。  新的 Microsoft Edge 浏览器可提供更好的 Web 兼容性并减少不同 Web 平台的碎片。  此更改应便于你在 Microsoft Edge 中生成和测试网页。  新的 Microsoft Edge 应在其他基于 Chromium 的浏览器中打开时帮助网页按预期工作。  基于 Chromium 的浏览器包括 Google Chrome、Vivaldi、Opera、Opera 和新的 Microsoft Edge。  
 
-在不断扩展的设备类型数组中，Web 的使用已增长。  测试网页所涉及的复杂性和开销迅速增加。  您需要针对许多不同的系统测试 Web 开发人员。  为了确保网页在所有设备类型和浏览器上正常工作，你可能会发现它几乎不可能，尤其是当你在一家小型公司工作时。  新的 Microsoft Edge 现在基于 Chromium。  Microsoft Edge 团队通过使 Microsoft Edge Web 平台与其他基于 Chromium 的浏览器保持一致来简化矩阵。  新的 Microsoft Edge 提供了一流的开发体验。  体验在浏览器内以及你日常使用的其他开发人员工具（如 Visual Studio 代码）中实现。  
+在不断扩展的设备类型数组中，Web 的使用已增长。  测试网页所涉及的复杂性和开销迅速增加。  您需要针对许多不同的系统测试 Web 开发人员。  为了确保网页在所有设备类型和浏览器中正常工作，你可能会发现它几乎不可能，尤其是在你在一家小型公司工作时。  新的 Microsoft Edge 现在基于 Chromium。  Microsoft Edge 团队通过使 Microsoft Edge Web 平台与其他基于 Chromium 的浏览器保持一致来简化矩阵。  新的 Microsoft Edge 提供了一流的开发体验。  体验是在浏览器内以及你日常使用的其他开发人员工具（如 Visual Studio 代码）中完成的。  
 
-作为基于 Chromium 的浏览器开发人员，你应该对新的 Microsoft Edge 浏览器感到熟悉。  Microsoft Edge \ (Chromium\) DevTools 工作，就像你已了解和使用开发人员工具一样。  Microsoft Edge \ (Chromium\) 开发人员工具通常称为 Microsoft Edge \ (Chromium\) DevTools 或 DevTools。  有关详细信息，请导航到 Microsoft Edge 中的新增功能[ (Chromium) DevTools。][DevtoolsGuideChromiumWhatsNewIndex]  
+作为基于 Chromium 的浏览器开发人员，你应该熟悉新的 Microsoft Edge 浏览器。  Microsoft Edge \ (Chromium\) DevTools 的正常工作，就像你已了解和使用开发人员工具一样。  Microsoft Edge \ (Chromium\) 开发人员工具通常称为 Microsoft Edge \ (Chromium\) DevTools 或 DevTools。  有关详细信息，请导航到 Microsoft Edge 中的新增功能[ (Chromium) DevTools。][DevtoolsGuideChromiumWhatsNewIndex]  
 
 :::image type="complex" source="./media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools" lightbox="./media/devtools.png":::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
-如果你之前为 Microsoft Edge \ (EdgeHTML\) 开发并评估新的 Microsoft Edge，它现在提供了出色的新工具，便于你更轻松快速地生成和测试网页。  
+如果你之前为 Microsoft Edge \ (EdgeHTML\) 开发，并且正在评估新的 Microsoft Edge，它现在将提供出色的新工具，便于你更轻松快速地生成和测试网页。  
 
-## 打开 DevTools  
+## <a name="open-the-devtools"></a>打开 DevTools  
 
 Microsoft Edge DevTools 是直接内置于 Microsoft Edge 浏览器的一组工具。  DevTools 允许你直接在浏览器中执行以下所有任务。  
 
@@ -49,7 +49,7 @@ DevTools 提供的更多功能示例，使你在 Microsoft Edge 中生成和测�
 
 如果要从前端 JavaScript 代码查看日志或快速运行某些脚本，请打开 **控制台**。   若要在**** DevTools 中启动控制台工具，请选择 `Ctrl` + `Shift` + `J` \ (Windows/Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
 
-## 核心工具  
+## <a name="core-tools"></a>核心工具  
 
 :::image type="complex" source="./media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools 核心工具" lightbox="./media/devtools-core-tools.png":::
    Microsoft Edge (Chromium) DevTools 核心工具  
@@ -64,19 +64,19 @@ Microsoft Edge \ (Chromium\) DevTools 包括以下工具。
 *   **用于**配置文件网站所需的时间和系统资源的性能工具  
 *   **内存工具**，用于测量内存资源的使用，并比较代码运行时不同状态中的堆快照  
 *   **用于检查**、修改和调试 Web 应用清单、服务工作者和服务工作器缓存的应用程序工具。  您还可以从应用程序工具检查和管理存储、数据库 **和** 缓存。  
-*   **用于**调试安全问题并确保已正确实现网页上的 HTTPS 的安全工具。  HTTPS 为您的网站和用户提供您网站上的个人信息提供了关键安全性和数据完整性。  
-*   审核 **工具** \ (现在重命名为 **Lighthouse**\) 以运行对网页的审核。  审核结果可帮助你通过以下方式提高网站质量。  
+*   **用于**调试安全问题并确保你已正确在网页上实现 HTTPS 的安全工具。  HTTPS 为您的网站和用户提供您网站上的个人信息提供了关键安全性和数据完整性。  
+*   审核 **工具** \ (现在重命名为 **Lighthouse**\) ，以运行对网页的审核。  审核结果可帮助你通过以下方式提高网站质量。  
     *   捕获与使网页可访问性、安全性、性能等相关的常见错误。  
     *   修复每个错误。  
     *   生成 PWA。  
         
 [!INCLUDE [audits-panel-note](./includes/audits-panel-note.md)]  
 
-发送 [反馈和功能请求](#getting-in-touch-with-the-microsoft-edge-devtools-team)。  
+发送 [反馈和特性请求](#getting-in-touch-with-the-microsoft-edge-devtools-team)。  
 
-## Extensions  
+## <a name="extensions"></a>Extensions  
 
-在生成网页 \ (或应用\) 时，你可能已使用扩展访问过 DevTools。 Microsoft Edge 扩展从 [Microsoft Edge 加载项获取][MicrosoftEdgeAddonsExtensions]。  在[Microsoft Edge 加载项上][MicrosoftEdgeAddonsExtensions]，从开发人员工具类别浏览 DevTools 扩展或搜索特定扩展。 ****  
+在生成网页 \ (或 apps\) 时，你可能会使用扩展访问 DevTools。 Microsoft Edge 扩展从 [Microsoft Edge 加载项获取][MicrosoftEdgeAddonsExtensions]。  在[Microsoft Edge 加载项上][MicrosoftEdgeAddonsExtensions]，从开发人员工具类别浏览 DevTools 扩展或搜索特定扩展。 ****  
 
 您还可以从 [Chrome Web Store 添加扩展][GoogleChromeWebstoreExtensions]。  
 
@@ -87,7 +87,7 @@ Microsoft Edge \ (Chromium\) DevTools 包括以下工具。
 在顶部，选择"允许来自其他存储的扩展 **"，** 然后在出现的**** 对话框中选择"允许"。  
 
 > [!NOTE]
-> 从 Microsoft Store 非源安装的扩展未经验证，可能会影响浏览器性能。  
+> 从 Microsoft Store 外的来源安装的扩展未经验证，可能会影响浏览器性能。  
 
 选择 **"添加到 Chrome"** 以将 DevTools 扩展添加到 Microsoft Edge。  
 
@@ -95,7 +95,7 @@ Microsoft Edge \ (Chromium\) DevTools 包括以下工具。
    将 Chrome Web Store 中的扩展添加到 Microsoft Edge  
 :::image-end:::  
 
-## 快捷方式  
+## <a name="shortcuts"></a>快捷方式  
 
 以下快捷方式控制主 DevTools 窗口、跨所有工具或同时使用这两种工具。  
 
@@ -113,25 +113,25 @@ Microsoft Edge \ (Chromium\) DevTools 包括以下工具。
 | 显示命令菜单 | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | 显示/隐藏"箱" | `Esc` | `Esc` |  
 | 刷新。  使用缓存刷新网页。  | `F5` 或 `Ctrl`+`R` | `Command`+`R` |  
-| 硬刷新。  强制 Microsoft Edge 再次下载资源并重新加载。  使用的资源可能来自缓存版本 | `Ctrl`+`F5` 或 `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| 搜索当前面板中的文本。  审核、应用程序和安全工具中不受支持 | `Ctrl`+`F` | `Command`+`F` |  
+| 硬刷新。  强制 Microsoft Edge 重新下载资源并重新加载。  使用的资源可能来自缓存版本 | `Ctrl`+`F5` 或 `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| 在当前面板中搜索文本。  审核、应用程序和安全工具中不受支持 | `Ctrl`+`F` | `Command`+`F` |  
 | 在"箱"中显示搜索工具，可让你跨所有加载的资源搜索文本 | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
 | 在"源"面板中打开文件 | `Ctrl`+`O` 或 `Ctrl`+`P` | `Command`+`O` 或 `Command`+`P` |  
 | 放大 | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | 缩小 | `Ctrl`+`-` | `Command`+`-` |  
 | 还原默认缩放级别 | `Ctrl`+`0` | `Command`+`0` |  
-| 运行代码段 | `Ctrl`+`O``Ctrl` + `P` 或 ， `!` 键入后跟脚本的名称，然后按 `Enter` | 按 `Command` + `O` or `Command` + `P` ， `!` 键入后跟脚本名称，然后按 `Enter` |  
+| 运行代码段 | `Ctrl`+`O``Ctrl` + `P` or ， type followed `!` by the name of the script， then select `Enter` | Select `Command` + `O` or `Command` + `P` ， type `!` followed by the name of the script， then select `Enter` |  
 | 在新建选项卡中显示不可编辑的 HTML 源代码 | `Ctrl`+`U` | 不适用 |  
 
 > [!NOTE]
 > 如果在断点处调试并暂停，则 **刷新** 快捷方式将首先恢复运行时。  
 
-## 另请参阅  
+## <a name="see-also"></a>另请参阅  
 
 *   [适用于初学者的 DevTools：HTML 和 DOM 入门][DevtoolsGuideChromiumBeginnersHtml]  
 *   [Microsoft Edge (Chromium) DevTools 协议][DevtoolsProtocolChromiumIndex]  
     
-## 联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
