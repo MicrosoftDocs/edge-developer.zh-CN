@@ -3,25 +3,79 @@ description: Microsoft Edge WebView2 SDK 发行说明
 title: 适用于 Win32、WPF 和 WinForms 的 Microsoft Edge WebView2 发行说明
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/16/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: d00d0629b7598b4a82c184441a09b79c59fd3df8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c3a541560394f2e144f1ffbbd621c800c415602d
+ms.sourcegitcommit: 140e09e508fa97f2d124f264d7d2ff77d12d1ffb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399265"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11399835"
 ---
 # <a name="release-notes-for-webview2-sdk"></a>WebView2 SDK 发行说明  
 
 WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以下内容，获取有关产品公告、添加、修改和 API 的变更最新信息。  
 
 > [!NOTE]
-> 确保在更新 NuGet 程序包后重新编译应用。  该团队建议使用 Canary 渠道使用预发行程序包进行开发，使用已发布程序包时使用常青运行时。  有关详细信息，请导航到["版本控制"。][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions]  
+> 确保在更新 NuGet 程序包后重新编译应用。  WebView 团队建议使用 Canary 通道使用预发布包进行开发，使用已发布包时使用常青运行时。  有关详细信息，请导航到["版本控制"。][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions]  
  
+<!--## 1.0.816-prerelease  
+
+Release Date: March 8, 2021  
+
+[NuGet package][NuGetGallery1.0.816-prerelease] \| Microsoft Edge version 86.0.616.0 or newer  
+
+### General  
+
+#### Features  
+
+*   Extended `ProcessFailed` event that it will now be raised for non-renderer child processes and frame renderers.  
+*   Added experimental [AreBrowserAcceleratorKeysEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210811GetArebrowseracceleratorkeysenabled] setting.  You may choose to keeps the browser from responding to accelerator keys related to navigation, printing, saving, and other browser-specific functions.  
+*   Added iframe support for `AddScriptToExecuteOnDocumentCreated`.  
+    
+#### Promotion
+
+*   [UserAgent][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] API is now promoted to public.  
+*   Rasterization Scale APIs ([RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] property,  [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] event, [BoundsMode property][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsmode], and [ShouldDetectMonitorScaleChanges][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShoulddetectmonitorscalechanges] property) are now promoted to public.  
+    
+#### Bug fixes  
+
+*   Expanded supported C++ and .NET project types such as MFC and ATL.  \([\#506][GithubMicrosoftedgeWebviewfeedbackIssue506], [\#669][GithubMicrosoftedgeWebviewfeedbackIssue669], and [\#851][GithubMicrosoftedgeWebviewfeedbackIssue851]\).  
+*   Fixed a bug that WebView2 Runtime leaks Inbound firewall entry.  
+*   Fixed setting Response during WebResourceRequested event.  \([\#568][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  
+*   Fixed a bug that navigating to `edge://` causes browser process to exit.  \([\#604][GithubMicrosoftedgeWebviewfeedbackIssue604]\).  
+*   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode. 
+    -->  
+
+## <a name="1077444"></a>1.0.774.44  
+
+发布日期：2021 年 3 月 8 日  
+
+[NuGet 程序包][NuGetGallery1.0.774.44] \|WebView2 运行时版本 86.0.616.0 或更高版本。  
+
+### <a name="general"></a>常规  
+
+#### <a name="features"></a>功能  
+
+*   在 WebView2 中关闭各种 Microsoft Edge 浏览器服务。  
+*   可视托管 API 现已普遍可用。  
+
+#### <a name="promotions"></a>促销  
+
+*   以下实验 API 现已提升为 Stable。  
+    *   [DPI 支持][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] 相关 API  
+    *   可视托管 API  
+    *   [SetVirtualHostNameToFolderMapping][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseSetvirtualhostnametofoldermapping]  
+    *   [TrySuspend 和 Resume][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseTrysuspend]  
+    *   [DefaultBackgroundColor][Webview2ReferenceWin32Icorewebview2controller2ViewWebview210790PrereleaseGetDefaultbackgroundcolor]  
+        
+#### <a name="bug-fixes"></a>Bug 修复  
+
+*   修复了在可视化托管模式下将 WebView2 限制为屏幕大小的 Bug。  
+    
 ## <a name="10790-prerelease"></a>1.0.790-prerelease  
 
 发布日期：2021 年 2 月 10 日  
@@ -34,9 +88,9 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 > **中断更改**：已弃用 WebView2 预发布包 1.0.781。  停止使用程序包 1.0.781 进行开发。  
 
 > [!IMPORTANT]
-> WebView2 预发布包 0.9.430 已弃用，并且将从即将发布的版本中删除。  如果 WebView 应用使用包，我们建议更新到较新的程序包。  
+> WebView2 预发布包 0.9.430 已弃用，并随下一版本一起删除。  如果 WebView 应用使用包，WebView 团队会建议你使用较新的程序包。  
 
-##### <a name="features"></a>功能  
+#### <a name="features"></a>功能  
 
 *   添加了 [TrySuspend 和 Resume][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseTrysuspend] 方法以暂停和恢复 WebViews。  
 *   添加了 [SetVirtualHostNameToFolderMapping][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseSetvirtualhostnametofoldermapping] 方法，该方法将虚拟主机名映射到目录路径。  \ ([\#37][GithubMicrosoftedgeWebviewfeedbackIssue37] [、\#161][GithubMicrosoftedgeWebviewfeedbackIssue161]和 [\#212][GithubMicrosoftedgeWebviewfeedbackIssue212]\) 。  
@@ -44,9 +98,8 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 *   添加了 [UserAgent][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210790PrereleaseGetUseragent] 属性，以获取或设置用户代理。  \ ([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\) 。  
 *   用 `CreateCookieWithCookie` 该方法替换 `CopyCookie` 了该方法。  
 *   添加了使用 [ICoreWebView2CompositionController][Webview2ReferenceWin32Icorewebview2compositioncontrollerViewWebview210790Prerelease] 接口的可视托管支持，该接口使用来自 的 `CreateCoreWebView2CompositionController` 新方法创建 `ICoreWebView2Environment3` 。  
-
     
-##### <a name="bug-fixes"></a>Bug 修复  
+#### <a name="bug-fixes"></a>Bug 修复  
 
 *   在 WebView2 中关闭 Microsoft Edge 购物功能。  
 *   关闭 PDF 查看器中的 `AreDefaultContextMenusEnabled` 上下文菜单。 `false`  \ ([\#605][GithubMicrosoftedgeWebviewfeedbackIssue605]\) 。  
@@ -61,17 +114,15 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 *   减少了高 CPU 使用率问题。  \ ([\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\) 。  
 *   修复了弃用 1.0.781 预发行程序包的问题。 [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] 和 [\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\) 。  
     
-##### <a name="promotions"></a>促销  
+#### <a name="promotions"></a>促销  
 
 *   以下实验 API 现已提升为 Stable。  
-    *   可视托管 API。  
+    *   可视托管 API  
     *   [SetVirtualHostNameToFolderMapping][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseSetvirtualhostnametofoldermapping]  
-    *   [TrySuspend 和 Resume][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseTrysuspend]  
-    *   [DefaultBackgroundColor][Webview2ReferenceWin32Icorewebview2controller2ViewWebview210790PrereleaseGetDefaultbackgroundcolor]  
-    
-#### <a name="net"></a>.NET  
+        
+### <a name="net"></a>.NET  
 
-##### <a name="bug-fixes"></a>Bug 修复  
+#### <a name="bug-fixes"></a>Bug 修复  
 
 *   修复了使用 WPF SDK 的 WebView 应用崩溃的错误。  当使用 F4 键关闭窗口时发生崩溃。  \ ([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\) 。  
 *   WebView2 初始化屏幕现在是透明的，而不是灰色的。  \ ([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\) 。  
@@ -82,7 +133,9 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery1.0.705.50] \|WebView2 运行时版本 86.0.616.0 或更高版本  
 
-##### <a name="promotions"></a>促销  
+### <a name="general"></a>常规  
+
+#### <a name="promotions"></a>促销  
 
 *   以下实验 API 现已提升为 Stable。  
     *   [WebResourceResponseReceived API][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived]  
@@ -97,12 +150,12 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery1.0.721-prerelease] \|Microsoft Edge 版本 86.0.616.0 或更高版本  
 
-#### <a name="general"></a>常规  
+### <a name="general"></a>常规  
 
 > [!IMPORTANT]
 > **中断更改**：弃用 WebView2 预发行版程序包 1.0.707 和程序包 0.9.628。  停止使用程序包 1.0.707 和 package0.9.628 进行开发。  
 
-###### <a name="features"></a>功能  
+#### <a name="features"></a>功能  
 
 *   添加了 [WebView2 组策略][DeployedgeMicrosoftEdgeWebviewPolicies]。  有关建议做法的信息，请导航到 [WebView2 的组策略][Webview2ConceptsEnterpriseGroupPoliciesForWebview2]。  
 *   > [!IMPORTANT]
@@ -114,7 +167,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
     
 *   添加了对 WebView2 [中的][Webview2ReferenceWin32Icorewebview2experimentalcompositioncontroller3ViewWebview210721Prerelease] 拖放功能的支持。  
 *   添加了 API 以处理 DPI 支持。  
-    *   添加了 [RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] 属性以更改 WebView 内容和 UI 弹出窗口以及关联的 [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] 事件的 DPI 比例。  
+    *   添加了 [RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] 属性以更改 WebView 内容和 UI 弹出窗口以及关联的 [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] 事件的 DPI 缩放。  
     *   添加了 [ShouldDetectMonitorScaleChanges][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShoulddetectmonitorscalechanges] 属性以根据需要 `RasterizationScale` 自动更新属性。  
     *   添加了 [BoundsMode][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsmode] 属性，以指定边界是逻辑像素并允许 WebView 用于 `RasterizationScale` WebView2 像素显示，WebView 使用 与 获取物理 `RasterizationScale` `Bounds` 大小。  
 *   更新 `NewWindowRequested` 了要处理的事件和 `Ctrl` + `click` `Shift` + `click` 。  \ ([\#168][GithubMicrosoftedgeWebviewfeedbackIssue168] 和 [\#371][GithubMicrosoftedgeWebviewfeedbackIssue371]\) 。  
@@ -125,15 +178,15 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
     *   [DOMContentLoaded API][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddDomcontentloaded]  
     *   [WebView 环境属性][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseGetEnvironment]  
         
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
-###### <a name="features"></a>功能  
+#### <a name="features"></a>功能  
 
 *   在 .NET Core 3.1+ 和 .NET 5 中打开 WinForms 设计器。  
 *   改进了 .NET Cookie 管理。  \ ([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\) 。  
 *   替换为 `CoreWebView2Ready` [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]。  
 
-###### <a name="bug-fixes"></a>Bug 修复
+#### <a name="bug-fixes"></a>Bug 修复
 
 *   添加了 [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] 事件以支持 WebView2 中的 AcceleratorKey 选择。  \ ([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\) 。  
 *   从输出到 WebView2 文件夹中删除了不必要的文件。  \ ([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\) 。  
@@ -145,19 +198,19 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery1.0.664.37] \|WebView2 运行时版本 86.0.616.0 或更高版本。  
 
-#### <a name="general"></a>常规  
+### <a name="general"></a>常规  
 
 > [!IMPORTANT]
 > **公告**：.NET WPF/WinForms WebView2 SDK 现已正式发布 \ (GA\) 。  从此版本开始，发布 SDK 是向前兼容的。  有关详细信息，请导航到 [GA 公告博客文章][MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]。  
 
-###### <a name="features"></a>功能  
+#### <a name="features"></a>功能  
 
 *   .NET WPF/WinForms WebView2 现已普遍可用 \ (GA\) 。  
 *   固定分发 \ (自带\) 模式达到 GA。  
     
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
-###### <a name="bug-fixes"></a>Bug 修复  
+#### <a name="bug-fixes"></a>Bug 修复  
 
 *   `CoreWebView2NewWindowRequestedEventArgs.Handled` 阻止打开新窗口。  \ ([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549] 和 [\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\) 。  
     
@@ -167,11 +220,11 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery1.0.674-prerelease] \|WebView2 运行时版本 86.0.616.0 或更高版本。  
 
-#### <a name="general"></a>常规  
+### <a name="general"></a>常规  
 
 *   添加了 [NavigateWithWebResourceRequest][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseNavigatewithwebresourcerequest] 方法，可在导航过程中提供发布数据或其他请求标头。  
 *   添加了 [DOMContentLoaded][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseAddDomcontentloaded] 事件，该事件在加载和分析初始 HTML 文档时运行。  
-*   在 [WebView2][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetEnvironment] 上添加了 Environment 属性。  此属性公开创建 WebView2 实例的 WebView2 环境。  
+*   在 WebView2 上添加了 [Environment][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetEnvironment] 属性。  此属性公开创建 WebView2 实例的 WebView2 环境。  
 *   添加了 [允许开发人员][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetCookiemanager] 对 WebView2 会话进行身份验证或从 WebView 检索 Cookie 以验证其他工具的 Cookie 管理 API。  Webview 团队正在计划进行特定于语言或框架的改进。  有关详细信息，请导航到 [API 审阅：Cookie 管理][GithubMicrosoftedgeWebview2AnnouncementIssue2]。  
 *   更新[了 WebResourceResponseReceived][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseAddWebresourceresponsereceived]事件，向[WebResourceResponseView：：GetContent][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponseviewViewWebview210674PrereleaseGetcontent]添加了不可变的[WebResourceResponseView][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponseviewViewWebview210674Prerelease]和[WebResourceResponseReceivedEventArgs：:P opulateResponseContent。][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsViewWebview209628PrereleasePopulateresponsecontent]  
 *   在 WebView2 中 ([Microsoft Defender 应用程序防护) WDAG。][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]  
@@ -179,7 +232,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 *   为可视化托管中的输入方法添加了修复 Bug。  
 *   删除了使用 `version.lib` WebView2 静态库时的要求。  
     
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
 *   更新 [了 CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] 类以公开 `CoreWebView2Environment` 变量。  
 *   将命名空间中自定义 EventArgs 类的实现更改为 `Microsoft.Web.WebView2.Core` [System.EventArgs][DotnetApiSystemEventargs] 或 [System.ComponentModel.CancelEventArgs 的子类][DotnetApiSystemComponentmodelCancelEventargs]。  \ ([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)   
@@ -197,7 +250,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery1.0.622.22] \|WebView2 运行时版本 86.0.616.0 或更高版本。  
 
-#### <a name="general"></a>常规  
+### <a name="general"></a>常规  
 
 > [!IMPORTANT]
 > **公告**：Win32 C/C++ WebView2 现已正式发布 \ (GA\) 。  从此版本开始，发布 SDK 是向前兼容的。  有关详细信息，请导航到 [GA 公告博客文章][WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]。  
@@ -211,7 +264,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery0.9.622.11] \|WebView2 运行时版本 86.0.616.0 或更高版本。  
 
-#### <a name="general"></a>常规  
+### <a name="general"></a>常规  
 
 *   > [!IMPORTANT]
     > **公告**：此 SDK 是 WebView2 Win32 C/C++ GA 候选发布。  GA 版本应使用相同的 API 接口和功能。  
@@ -221,7 +274,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 *   进行了 `ICoreWebView2NewWindowRequestedEventArgs` 更新以包括[WindowFeatures][Webview2ReferenceWin32Icorewebview2newwindowrequestedeventargsViewWebview209622GetWindowfeatures]属性和关联的[ICoreWebView2WindowFeatures。][Webview2ReferenceWin32Icorewebview2windowfeaturesViewWebview209622]  \ ([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\) 。  
 *   更新 `System.Windows.Rect`  为 `System.Drawing.Rectangle` 使用 ，而不是 `System.Windows.Rect` \ ([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\) 。  
 *   更新了 NewWindowRequested 事件以处理 `window.open()` 不带参数的请求。  \ ([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\) 。  
-*   [使用指定的 AdditionalBrowserArguments][Webview2ReferenceWin32Icorewebview2environmentoptionsViewWebview209622PutAdditionalbrowserarguments] `ICoreWebView2EnvironmentOptions` 不会替代环境变量或注册表值。  有关详细信息，请导航到 [CreateCoreWebView2EnvironmentWithOptions][Webview2ReferenceWin32Webview2IdlViewWebview209622Createcorewebview2environmentwithoptions]。  
+*   [使用指定的 AdditionalBrowserArguments][Webview2ReferenceWin32Icorewebview2environmentoptionsViewWebview209622PutAdditionalbrowserarguments] 不会替代环境变量或 `ICoreWebView2EnvironmentOptions` 注册表值。  有关详细信息，请导航到 [CreateCoreWebView2EnvironmentWithOptions][Webview2ReferenceWin32Webview2IdlViewWebview209622Createcorewebview2environmentwithoptions]。  
     
 ## <a name="09579"></a>0.9.579  
 
@@ -229,7 +282,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery0.9.579] \|Microsoft Edge 版本 86.0.579.0。  
 
-#### <a name="general"></a>常规  
+### <a name="general"></a>常规  
 
 *   > [!IMPORTANT]
     > **公告**：将发布常青 WebView2 运行时和安装程序进行预览。  有关详细信息，请导航到["WebView2 的分发"。][Webview2ConceptsDistributionUnderstandRuntimeInstaller]  
@@ -247,12 +300,12 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
     
 *   添加了 WebView 工作线程改进。  \ ([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\) 。  
 *   在 WebView 中关闭弹出窗口阻止程序。  有关详细信息，请导航到 [事件中的 IsUserInitiated][Webview2ReferenceWin32Icorewebview2newwindowrequestedeventargsViewWebview209538GetIsuserinitiated] `NewWindowRequested` 属性。  
-*   确保为 运行 WebView 导航启动事件 `about:blank` 。  现在，会针对所有导航运行事件，但不支持和忽略 `NavigationStarting` `about:blank` 对或 iframe `srcdoc` 的取消。  
+*   确保为 运行 WebView 导航启动事件 `about:blank` 。  现在，所有导航都运行事件，但不支持和忽略 `NavigationStarting` 对 `about:blank` iframe 的 `srcdoc` 取消。  
 *   在 `edge://` WebView 中阻止了一些 URI 方案。  
-*   在 [WebView2 环境选项上添加了实验性 IsSingleSignOnUsingOSPrimaryAccountEnabled][Webview2ReferenceWin32Icorewebview2experimentalenvironmentoptionsViewWebview209538PrereleaseGetIssinglesignonusingosprimaryaccountenabled] 属性，以打开 WebView 的条件访问。  
+*   在 WebView2 环境选项上添加了实验 [性 IsSingleSignOnUsingOSPrimaryAccountEnabled][Webview2ReferenceWin32Icorewebview2experimentalenvironmentoptionsViewWebview209538PrereleaseGetIssinglesignonusingosprimaryaccountenabled] 属性，以打开 WebView 的条件访问。  
 *   添加了实验 [性 WebResourceResponseReceived][Webview2ReferenceWin32Icorewebview2experimentalViewWebview209538PrereleaseAddWebresourceresponsereceived] 事件，该事件在 WebView 接收并处理来自 WebResource 请求的响应之后运行。  响应对象中包含身份验证标头（如果有）。  
     
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
 *   改进了 WPF 焦点处理。  \ ([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\) 。  
 *   在 `ZoomFactor` WPF Webview2 控制器上添加了属性。  
@@ -261,12 +314,12 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 
 [NuGet 程序包][NuGetGallery0.9.538] \|Microsoft Edge 版本 85.0.538.0。  
 
-#### <a name="general"></a>常规  
+### <a name="general"></a>常规  
 
 *   放弃对 WebView2 SDK 版本 [0.8.149 的支持](#08149)。  WebView2 建议使用最新版本的 WebView2 保持最新。  
-*   更新了组策略，以考虑何时修改 Microsoft Edge 浏览器的配置文件路径 [\ (#179][GithubMicrosoftedgeWebviewfeedbackIssue179]\) 。  
+*   更新了组策略，用于考虑何时修改 Microsoft Edge 浏览器的配置文件路径 [\ (#179][GithubMicrosoftedgeWebviewfeedbackIssue179]\) 。  
     
-#### <a name="win32-cc"></a>Win32 C/C++  
+### <a name="win32-cc"></a>Win32 C/C++  
 
 *   添加了 [ICoreWebView2ExperimentalNewWindowRequestedEventArgs：：get_WindowFeatures，][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview209538PrereleaseGetWindowfeatures]在运行并关联 `window.open()` [ICoreWebView2ExperimentalWindowFeatures][Webview2ReferenceWin32Icorewebview2experimentalwindowfeaturesViewWebview209538Prerelease] \ ([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\) 时触发。  
 *   > [!IMPORTANT]
@@ -279,7 +332,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
     
 *   更新 [了 AddHostObjectToScript][Webview2ReferenceWin32Icorewebview2ViewWebview209538ddhostobjecttoscript]。  原始主机对象序列化器标记现在设置为代理对象。  然后在 JavaScript 回调 \ (#148 \) 中作为参数传递时，主机 [对象序列化器][GithubMicrosoftedgeWebviewfeedbackIssue148]标记将序列化回主机) 。  
     
-#### <a name="net-09538-pre-release"></a>.NET (0.9.538 预发行版)   
+### <a name="net-09538-pre-release"></a>.NET (0.9.538 预发行版)   
 
 *   发布了 WinForms 和 WPF WebView2API 示例，这是 WebView2 SDK 的全面指南。  有关详细信息，请导航到["示例存储库"。][GithubMicrosoftedgeWebview2samplesMain]  
 *   添加了对可视托管和窗口功能实验 [性 API 的支持][Webview2ConceptsVersioningExperimentalApis]。  
@@ -293,7 +346,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 [NuGet 程序包][NuGetGallery0.9.515-prerelease] \|Microsoft Edge 版本 84.0.515.0。  
 
 *   > [!IMPORTANT]
-    > **公告**：WebView2 现在支持预发行包中的 .NET Framework 4.6.2 或更高版本和 .NET Core 3.0**** 或更高版本上的 Windows 窗体和 WPF。  
+    > **公告**：WebView2 现在支持预发行包中的 .NET Framework 4.6.2 或更高版本和 .NET Core 3.0 或更高版本上的 Windows 窗体 **和**WPF。  
     
 *   有关生成 WPF 应用的信息，请导航到 [WPF][Webview2GettingstartedWpf] 入门指南和特定于 WPF 的 API 的 WebView2 [WPF][DotnetApiMicrosoftWebWebview2Wpf] 参考。  
 *   有关生成 Windows 窗体应用的信息，请导航到 [Windows 窗体][Webview2GettingstartedWinforms] 入门指南和适用于 Windows 窗体特定 API 的 WebView2 [Windows][DotnetApiMicrosoftWebWebview2Winforms] 窗体参考。  
@@ -342,11 +395,10 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 *   更新了远程对象注入以支持 .NET `IDispatch` 实现 \ ([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\) 。  
 *   更新 [了 NewWindowRequested][Webview2ReferenceWin32Icorewebview2ViewWebview209488AddNewwindowrequested] 事件以处理来自上下文菜单 \ ([#108][GithubMicrosoftedgeWebviewfeedbackIssue108]\) 的请求。  
 *   发布了第一个单独的 WebView2 预发布包，您可以在其中访问可视托管 API。  WebView 团队更新 [了 APISample][GithubMicrosoftedgeWebview2samplesMain] 以包含新的实验 API。  
-    
     *   添加了 [ICoreWebView2ExperimentalCompositionController][Webview2ReferenceWin32Icorewebview2experimentalcompositioncontrollerViewWebview209488Prerelease] 接口，以连接到合成树并为 WebView 提供输入。  
     *   添加了 [ICoreWebView2ExperimentalPointerInfo，][Webview2ReferenceWin32Icorewebview2experimentalpointerinfoViewWebview209488Prerelease]其中包含来自 `POINTER_INFO` .  此对象将传递给 SendPointerInput，以将指针输入注入 WebView。  
     *   添加了 [ICoreWebView2ExperimentalCursorChangedEventHandler，][Webview2ReferenceWin32Icorewebview2experimentalcursorchangedeventhandlerViewWebview209488Prerelease]告知应用何时应更改 WebView 上的鼠标光标。  当鼠标悬停在 WebView 中的文本框上时，光标会从箭头变为选择器。  The `cursor` property on the `CompositionController` tells the app what the mouse cursor should currently be for the WebView.  
-    
+        
 ## <a name="09430"></a>0.9.430  
 
 [NuGet 程序包][NuGetGallery0.9.430] \|Microsoft Edge 版本 82.0.430.0。  
@@ -354,7 +406,7 @@ WebView2 团队以六周节奏更新[WebView2 SDK。][NuGetGallery]  查看以�
 WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项功能请求。  WebView 团队尝试通过发生重大变化来限制发布数量。  作为一般可用性方法，Beta 版本中包含一些重大更改。  
 
 *   > [!IMPORTANT]
-    > **更改：** 随着最终发布接近，WebView 团队将 *前缀 IWebView2WebView*   重命名为 *ICoreWebView2，*   以确保 WebView2 API 与 Windows API 命名约定一致。  此外，为了利用 UI 框架中的 WebView2 SDK，WebView 团队分为 `ICoreWebView2` [ICoreWebView2][Webview2ReferenceWin32Icorewebview2ViewWebview209430]和[ICoreWebView2Host。][Webview2ReferenceWin32Icorewebview2hostViewWebview209430]  `ICoreWebView2Host` 支持调整大小、显示和隐藏、焦点和其他与窗口和合成相关的功能。  ICoreWebView2 支持所有其他 WebView2 功能。  若要了解有关合并更改的信息，请导航到 [WebView2][GithubMicrosoftedgeWebview2samplesPr17] [APISample][GithubMicrosoftedgeWebview2samplesMain] 项目中的 WebView2 拉取请求。  
+    > **中断更改**：随着最终发布接近，WebView 团队将前缀重命名为，以确保 `IWebView2WebView` `ICoreWebView2` WebView2 API 与 Windows API 命名约定一致。  此外，为了利用 UI 框架中的 WebView2 SDK，WebView 团队分为 `ICoreWebView2` [ICoreWebView2][Webview2ReferenceWin32Icorewebview2ViewWebview209430]和[ICoreWebView2Host。][Webview2ReferenceWin32Icorewebview2hostViewWebview209430]  `ICoreWebView2Host` 支持调整大小、显示和隐藏、焦点和其他与窗口和合成相关的功能。  ICoreWebView2 支持所有其他 WebView2 功能。  若要了解有关合并更改的信息，请导航到 [WebView2][GithubMicrosoftedgeWebview2samplesPr17] [APISample][GithubMicrosoftedgeWebview2samplesMain] 项目中的 WebView2 拉取请求。  
     
 *   > [!IMPORTANT]
     > **重大更改**：将[DocumentStateChanged][Webview2ReferenceWin32Iwebview2webviewViewWebview208355AddDocumentstatechanged]拆分为三个组件[：SourceChanged、ContentLoading][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddSourcechanged]和[HistoryChanged。][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddHistorychanged] [][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddContentloading]  现在，当源 URL 更改时 `SourceChanged` ，将运行该事件。  更改历史记录状态时 `HistoryChanged` ，将运行该事件。  加载新文档时，该事件在初始脚本 `ContentLoading` 之前运行。  
@@ -388,7 +440,7 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 *   添加了对除英语 \ (#30 [\) ][GithubMicrosoftedgeWebviewfeedbackIssue30]之外的所有语言的 IME 支持。  
 *   更新了事件的 API `WebResourceRequested` 图面以响应 Bug 报告。  现在，已弃用创建时同时指定筛选器和事件。  若要创建 Web 资源请求的事件，add_WebResourceRequested[][Webview2ReferenceWin32Iwebview2webview5ViewWebview208355AddWebresourcerequested]添加事件，使用[AddWebResourceRequestedFilter][Webview2ReferenceWin32Iwebview2webview5ViewWebview208355Addwebresourcerequestedfilter]添加筛选器。  [RemoveWebResourceRequestedFilter][Webview2ReferenceWin32Iwebview2webview5ViewWebview208355Removewebresourcerequestedfilter]删除筛选器 \ (#36 [][GithubMicrosoftedgeWebviewfeedbackIssue36]\) [\ (#74][GithubMicrosoftedgeWebviewfeedbackIssue74]\) 。  
 *   > [!IMPORTANT]
-    > **中断更改**：修改的全屏行为。  已弃用 [IsFullScreenAllowed][Webview2ReferenceWin32Iwebview2settingsViewWebview208355GetIsfullscreenallowedDeprecated]。  现在，默认情况下，如果 WebView \ (中的元素（如视频\) ）设置为全屏显示，它将填充 WebView 的界限。  使用 [ContainsFullScreenElementChanged][Webview2ReferenceWin32Iwebview2containsfullscreenelementchangedeventhandlerViewWebview208355] 事件 [和][Webview2ReferenceWin32Iwebview2webview5ViewWebview208355GetContainsfullscreenelement] get_ContainsFullScreenElement指定当元素要进入全屏模式时应用应如何调整 WebView 的大小。  
+    > **中断更改**：已修改全屏行为。  已弃用 [IsFullScreenAllowed][Webview2ReferenceWin32Iwebview2settingsViewWebview208355GetIsfullscreenallowedDeprecated]。  现在，默认情况下，如果 WebView \ (中的元素（如视频\) ）设置为全屏显示，它将填充 WebView 的界限。  使用 [ContainsFullScreenElementChanged][Webview2ReferenceWin32Iwebview2containsfullscreenelementchangedeventhandlerViewWebview208355] 事件 [和][Webview2ReferenceWin32Iwebview2webview5ViewWebview208355GetContainsfullscreenelement] get_ContainsFullScreenElement指定当元素要进入全屏模式时应用应如何调整 WebView 的大小。  
     
 ## <a name="08314"></a>0.8.314  
 
@@ -460,6 +512,8 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 [Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "WPF 中 WebView2 |Microsoft Docs"  
 [Webview2HowtoDebug]: ./howto/debug.md "如何使用 WebView2 控件进行开发时|Microsoft Docs"  
 
+[Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210811GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings?view=webview2-1.0.816&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeyPressed - 接口 ICoreWebView2ExperimentalSettings |Microsoft Docs" 
+
 [Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddDomcontentloaded]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_domcontentloaded "add_DOMContentLoaded - 接口ICoreWebView2_2 |Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived - 接口 ICoreWebView2 |Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseGetEnvironment]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#get_environment "ICoreWebView2CookieManager |Microsoft Docs" 
@@ -513,7 +567,7 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209430GetAreremoteobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed - 接口 ICoreWebView2Settings |Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209430GetIszoomcontrolenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_iszoomcontrolenabled "get_IsZoomControlEnabled - 接口 ICoreWebView2Settings |Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetAreremoteobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed - 接口 ICoreWebView2Settings |Microsoft Docs" 
-[Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetIsbuiltinerrorpageenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled " |Microsoft Docs" 
+[Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetIsbuiltinerrorpageenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled "get_IsBuiltInErrorPageEnabled - 接口 ICoreWebView2Settings |Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209538GetArehostobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.538&preserve-view=true#get_arehostobjectsallowed "get_AreHostObjectsAllowed - 接口 ICoreWebView2Settings |Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2ViewWebview209430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true "interface ICoreWebView2 |Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2ViewWebview209430AddContentloading]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_contentloading "add_ContentLoading - 接口 ICoreWebView2 |Microsoft Docs" 
@@ -644,14 +698,19 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 [GithubMicrosoftedgeWebviewfeedbackIssue432]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/432 "MicrosoftEdge/WebViewFeedback 问题 432 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue442]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/442 "MicrosoftEdge/WebViewFeedback 问题 442 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue461]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/461 "MicrosoftEdge/WebViewFeedback 问题 461 的反馈存储库"  
+[GithubMicrosoftedgeWebviewfeedbackIssue506]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/506 "MicrosoftEdge/WebViewFeedback 问题 506 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue525]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/525 "MicrosoftEdge/WebViewFeedback 问题 525 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue549]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/549 "MicrosoftEdge/WebViewFeedback 问题 549 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue560]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/560 "MicrosoftEdge/WebViewFeedback 问题 560 的反馈存储库"  
+[GithubMicrosoftedgeWebviewfeedbackIssue568]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/568 "MicrosoftEdge/WebViewFeedback 问题 568 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue585]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/585 "MicrosoftEdge/WebViewFeedback 问题 585 的反馈存储库"  
+[GithubMicrosoftedgeWebviewfeedbackIssue604]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/604 "MicrosoftEdge/WebViewFeedback 问题 604 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue605]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/605 "MicrosoftEdge/WebViewFeedback 问题 605 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue611]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/611 "MicrosoftEdge/WebViewFeedback 问题 611 的反馈存储库"  
+[GithubMicrosoftedgeWebviewfeedbackIssue669]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/669 "MicrosoftEdge/WebViewFeedback 问题 669 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue691]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/691 "MicrosoftEdge/WebViewFeedback 问题 691 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue816]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/816 "MicrosoftEdge/WebViewFeedback 问题 816 的反馈存储库"  
+[GithubMicrosoftedgeWebviewfeedbackIssue851]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/851 "MicrosoftEdge/WebViewFeedback 问题 851 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue875]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/875 "MicrosoftEdge/WebViewFeedback 问题 875 的反馈存储库"  
 [GithubMicrosoftedgeWebviewfeedbackIssue878]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/878 "MicrosoftEdge/WebViewFeedback 问题 878 的反馈存储库"  
 
@@ -679,6 +738,8 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 [NuGetGallery1.0.674-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "NuGet 库|Microsoft.Web.WebView2 v1.0.674 预发行"  
 [NuGetGallery1.0.705.50]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50 "NuGet 库|Microsoft.Web.WebView2 v1.0.705.50"  
 [NuGetGallery1.0.721-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.721-prerelease "NuGet 库|Microsoft.Web.WebView2 v1.0.721 预发行"  
+[NuGetGallery1.0.774.44]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.774.44 "NuGet 库|Microsoft.Web.WebView2 v1.0.774.44"  
 [NuGetGallery1.0.790-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "NuGet 库|Microsoft.Web.WebView2 v1.0.790 预发行"  
+[NuGetGallery1.0.816-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.816-prerelease "NuGet 库|Microsoft.Web.WebView2 v1.0.816 预发行"  
 
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "宣布推出 Microsoft Edge WebView2 通用|Microsoft Edge 博客"  
