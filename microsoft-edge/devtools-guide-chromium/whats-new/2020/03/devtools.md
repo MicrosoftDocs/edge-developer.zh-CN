@@ -3,16 +3,16 @@ description: 模拟命令菜单中的颜色视觉缺陷、停靠到左侧等。
 title: DevTools （Microsoft Edge 83）中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 158d91e3d9c925beebe03a1baa8d6308b650262b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f97155b12a679f630ce80c007e7f0ca693e19876
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398943"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408351"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,257 +27,256 @@ ms.locfileid: "11398943"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="whats-new-in-devtools-microsoft-edge-83"></a><span data-ttu-id="07a81-104">DevTools （Microsoft Edge 83）中的新增功能</span><span class="sxs-lookup"><span data-stu-id="07a81-104">What's New In DevTools (Microsoft Edge 83)</span></span>  
 
-# <a name="whats-new-in-devtools-microsoft-edge-83"></a><span data-ttu-id="1ec5e-104">DevTools （Microsoft Edge 83）中的新增功能</span><span class="sxs-lookup"><span data-stu-id="1ec5e-104">What's New In DevTools (Microsoft Edge 83)</span></span>  
+<span data-ttu-id="07a81-105">按照更新的 Chromium 计划，我们将调整即将推出的 Microsoft Edge 版本的计划，并取消 Microsoft Edge 82 版本。</span><span class="sxs-lookup"><span data-stu-id="07a81-105">Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release.</span></span> <span data-ttu-id="07a81-106">有关详细信息，请查看我们的 [博客文章][WindowsBlogStableRelease]。</span><span class="sxs-lookup"><span data-stu-id="07a81-106">Check out our [blog post][WindowsBlogStableRelease] for more info.</span></span>  
 
-<span data-ttu-id="1ec5e-105">按照更新的 Chromium 计划，我们将调整即将推出的 Microsoft Edge 版本的计划，并取消 Microsoft Edge 82 版本。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-105">Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release.</span></span> <span data-ttu-id="1ec5e-106">有关详细信息，请查看我们的 [博客文章][WindowsBlogStableRelease]。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-106">Check out our [blog post][WindowsBlogStableRelease] for more info.</span></span>  
+<span data-ttu-id="07a81-107">下面是 Microsoft Edge 83 的 DevTools 中提供的新功能。</span><span class="sxs-lookup"><span data-stu-id="07a81-107">Here are the new features available in the DevTools in Microsoft Edge 83.</span></span>  
 
-<span data-ttu-id="1ec5e-107">下面是 Microsoft Edge 83 的 DevTools 中提供的新功能。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-107">Here are the new features available in the DevTools in Microsoft Edge 83.</span></span>  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="07a81-108">来自 Microsoft Edge 开发人员工具团队公告</span><span class="sxs-lookup"><span data-stu-id="07a81-108">Announcements from the Microsoft Edge DevTools team</span></span>  
 
-## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="1ec5e-108">来自 Microsoft Edge 开发人员工具团队公告</span><span class="sxs-lookup"><span data-stu-id="1ec5e-108">Announcements from the Microsoft Edge DevTools team</span></span>  
+<span data-ttu-id="07a81-109">以下各节列出了你可能错过的 Microsoft Edge DevTools 团队中的通知。</span><span class="sxs-lookup"><span data-stu-id="07a81-109">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="07a81-110">请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。</span><span class="sxs-lookup"><span data-stu-id="07a81-110">Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.</span></span>  <span data-ttu-id="07a81-111">若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。</span><span class="sxs-lookup"><span data-stu-id="07a81-111">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
 
-<span data-ttu-id="1ec5e-109">以下各节列出了你可能从 Microsoft Edge DevTools 团队错过的公告。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-109">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="1ec5e-110">查看通知以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-110">Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.</span></span>  <span data-ttu-id="1ec5e-111">若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-111">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
+### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a><span data-ttu-id="07a81-112">在 Windows 10 设备上远程调试 Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="07a81-112">Remotely debug Microsoft Edge on Windows 10 Devices</span></span>  
 
-### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a><span data-ttu-id="1ec5e-112">在 Windows 10 设备上远程调试 Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="1ec5e-112">Remotely debug Microsoft Edge on Windows 10 Devices</span></span>  
-
-<span data-ttu-id="1ec5e-113">现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-113">The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].</span></span>  <span data-ttu-id="1ec5e-114">使用此应用扩展了 Windows [Device Portal，][WindowsUwpDebugTestPerfDevicePortal]你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 1 (0 设备，显示 Microsoft Edge 中所有选项卡以及 Windows 10 设备上打开的所有选项卡\) 的目标列表\) ，并针对在远程 Windows 10 设备上运行的目标使用开发计算机上 DevTools。 [][ProgressiveWebAppsChromiumIndex]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-114">Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, display a list of targets \(all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.</span></span>  
+<span data-ttu-id="07a81-113">现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。</span><span class="sxs-lookup"><span data-stu-id="07a81-113">The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].</span></span>  <span data-ttu-id="07a81-114">使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \ (Microsoft Edge 中所有选项卡和 [PBA][ProgressiveWebAppsChromiumIndex] 在 Windows 10 设备上打开\) ，并针对在远程 Windows 10 设备上运行的目标使用开发计算机上 DevTools。</span><span class="sxs-lookup"><span data-stu-id="07a81-114">Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, display a list of targets \(all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
-   <span data-ttu-id="1ec5e-116">[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用</span><span class="sxs-lookup"><span data-stu-id="1ec5e-116">The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]</span></span>  
+   <span data-ttu-id="07a81-116">[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用</span><span class="sxs-lookup"><span data-stu-id="07a81-116">The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-117">[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-117">[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].</span></span>  <span data-ttu-id="1ec5e-118">通过推文或选择发送反馈图标，让我们[][PostTweetEdgeDevTools]了解远程[调试](#getting-in-touch-with-microsoft-edge-devtools-team)体验！</span><span class="sxs-lookup"><span data-stu-id="1ec5e-118">Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="07a81-117">[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。</span><span class="sxs-lookup"><span data-stu-id="07a81-117">[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].</span></span>  <span data-ttu-id="07a81-118">通过推文或选择发送反馈图标，告诉我们[][PostTweetEdgeDevTools]你的远程[调试](#getting-in-touch-with-microsoft-edge-devtools-team)体验！</span><span class="sxs-lookup"><span data-stu-id="07a81-118">Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-### <a name="new-ways-to-access-settings"></a><span data-ttu-id="1ec5e-119">访问设置的新方法</span><span class="sxs-lookup"><span data-stu-id="1ec5e-119">New ways to access Settings</span></span>  
+### <a name="new-ways-to-access-settings"></a><span data-ttu-id="07a81-119">访问设置的新方法</span><span class="sxs-lookup"><span data-stu-id="07a81-119">New ways to access Settings</span></span>  
 
-<span data-ttu-id="1ec5e-120">你可以自定义大量的 DevTools 设置，以使 DevTools 外观、感觉和工作方式达到你的要求。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-120">There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need.</span></span> <span data-ttu-id="1ec5e-121">在 Microsoft Edge 83 中，访问 DevTools 中的 [设置][DevtoolsCustomizeIndexSettings] 现在更为简单。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-121">In Microsoft Edge 83, accessing [Settings][DevtoolsCustomizeIndexSettings] in the DevTools is now much easier.</span></span>  <span data-ttu-id="1ec5e-122">使用 "控制台警报" 和 "主菜单" 旁边的齿轮图标打开 "设置"。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-122">Open Settings with the gear icon next to Console alerts and the main menu.</span></span>  
+<span data-ttu-id="07a81-120">你可以自定义大量的 DevTools 设置，以使 DevTools 外观、感觉和工作方式达到你的要求。</span><span class="sxs-lookup"><span data-stu-id="07a81-120">There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need.</span></span> <span data-ttu-id="07a81-121">在 Microsoft Edge 83 中，访问 DevTools 中的 [设置][DevtoolsCustomizeIndexSettings] 现在更为简单。</span><span class="sxs-lookup"><span data-stu-id="07a81-121">In Microsoft Edge 83, accessing [Settings][DevtoolsCustomizeIndexSettings] in the DevTools is now much easier.</span></span>  <span data-ttu-id="07a81-122">使用 "控制台警报" 和 "主菜单" 旁边的齿轮图标打开 "设置"。</span><span class="sxs-lookup"><span data-stu-id="07a81-122">Open Settings with the gear icon next to Console alerts and the main menu.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="齿轮图标会打开 DevTools 中的设置" lightbox="../../media/2020/03/settings.msft.png":::
-   <span data-ttu-id="1ec5e-124">齿轮图标将 **打开** DevTools 中的"设置"</span><span class="sxs-lookup"><span data-stu-id="1ec5e-124">The gear icon opens **Settings** in the DevTools</span></span>  
+   <span data-ttu-id="07a81-124">齿轮图标将 **打开** DevTools 中的"设置"</span><span class="sxs-lookup"><span data-stu-id="07a81-124">The gear icon opens **Settings** in the DevTools</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-125">你还可以从**主菜单**下的"**更多工具**"下打开[设置][DevtoolsCustomizeIndexSettings]。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-125">You are also able to open [Settings][DevtoolsCustomizeIndexSettings] from the **Main Menu** under **More tools**.</span></span>
+<span data-ttu-id="07a81-125">你还可以从**主菜单**下的"**更多工具**"下打开[设置][DevtoolsCustomizeIndexSettings]。</span><span class="sxs-lookup"><span data-stu-id="07a81-125">You are also able to open [Settings][DevtoolsCustomizeIndexSettings] from the **Main Menu** under **More tools**.</span></span>
 
 :::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="主菜单 > 更多工具 > 设置" lightbox="../../media/2020/03/settings2.msft.png":::
-   <span data-ttu-id="1ec5e-127">**主菜单**  > **更多工具**  > **设置**</span><span class="sxs-lookup"><span data-stu-id="1ec5e-127">**Main Menu** > **More tools** > **Settings**</span></span>  
+   <span data-ttu-id="07a81-127">**主菜单**  > **更多工具**  > **设置**</span><span class="sxs-lookup"><span data-stu-id="07a81-127">**Main Menu** > **More tools** > **Settings**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-128">Chromium 问题 [#1050855][CR1050855]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-128">Chromium issue [#1050855][CR1050855]</span></span>
+<span data-ttu-id="07a81-128">Chromium 问题 [#1050855][CR1050855]</span><span class="sxs-lookup"><span data-stu-id="07a81-128">Chromium issue [#1050855][CR1050855]</span></span>
 
-### <a name="new-and-improved-infobars"></a><span data-ttu-id="1ec5e-129">新增和改进的 infobars</span><span class="sxs-lookup"><span data-stu-id="1ec5e-129">New and improved infobars</span></span>
+### <a name="new-and-improved-infobars"></a><span data-ttu-id="07a81-129">新增和改进的 infobars</span><span class="sxs-lookup"><span data-stu-id="07a81-129">New and improved infobars</span></span>
 
-<span data-ttu-id="1ec5e-130">DevTools 中的信息性通知栏 \(infobars\) 现在具有改进的外观和功能。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-130">Informational notification bars \(infobars\) in DevTools now have an improved look and more functionality.</span></span> <span data-ttu-id="1ec5e-131">在 Microsoft Edge 83 中，infobars 更易于阅读和提供按钮，以便你能够立即执行相关操作。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-131">In Microsoft Edge 83, infobars are easier to read and provide buttons so you are able to take the relevant action right away.</span></span>  
+<span data-ttu-id="07a81-130">DevTools 中的信息性通知栏 \(infobars\) 现在具有改进的外观和功能。</span><span class="sxs-lookup"><span data-stu-id="07a81-130">Informational notification bars \(infobars\) in DevTools now have an improved look and more functionality.</span></span> <span data-ttu-id="07a81-131">在 Microsoft Edge 83 中，infobars 更易于阅读和提供按钮，以便你能够立即执行相关操作。</span><span class="sxs-lookup"><span data-stu-id="07a81-131">In Microsoft Edge 83, infobars are easier to read and provide buttons so you are able to take the relevant action right away.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="用于在 Microsoft Edge 83 中整齐打印缩小文件的信息栏" lightbox="../../media/2020/03/infobar.msft.png":::
-   <span data-ttu-id="1ec5e-133">用于在 Microsoft Edge 版本 83 中打印缩小文件的信息栏</span><span class="sxs-lookup"><span data-stu-id="1ec5e-133">Infobar for pretty-printing a minified file in Microsoft Edge Version 83</span></span>  
+   <span data-ttu-id="07a81-133">用于在 Microsoft Edge 版本 83 中打印缩小文件的信息栏</span><span class="sxs-lookup"><span data-stu-id="07a81-133">Infobar for pretty-printing a minified file in Microsoft Edge Version 83</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-134">Chromium 问题 [#1056348][CR1056348]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-134">Chromium issue [#1056348][CR1056348]</span></span>
+<span data-ttu-id="07a81-134">Chromium 问题 [#1056348][CR1056348]</span><span class="sxs-lookup"><span data-stu-id="07a81-134">Chromium issue [#1056348][CR1056348]</span></span>
 
-### <a name="navigate-the-color-picker-with-your-keyboard"></a><span data-ttu-id="1ec5e-135">使用键盘导航颜色选取器</span><span class="sxs-lookup"><span data-stu-id="1ec5e-135">Navigate the Color Picker with your keyboard</span></span>  
+### <a name="navigate-the-color-picker-with-your-keyboard"></a><span data-ttu-id="07a81-135">使用键盘导航颜色选取器</span><span class="sxs-lookup"><span data-stu-id="07a81-135">Navigate the Color Picker with your keyboard</span></span>  
 
-<span data-ttu-id="1ec5e-136">[颜色选取器][DevtoolsCssReferenceColorPicker] 是 "[元素][DevtoolsCssIndex]" 面板中的 GUI 用于更改 `color` 和 `background-color` 声明。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-136">The [Color Picker][DevtoolsCssReferenceColorPicker] is a GUI in the [Elements panel][DevtoolsCssIndex] for changing `color` and `background-color` declarations.</span></span>  <span data-ttu-id="1ec5e-137">在早期版本的 Microsoft Edge 中，无法使用键盘导航 [颜色选取器][DevtoolsCssReferenceColorPicker] 的 **阴影** 部分。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-137">In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker] with the keyboard.</span></span>  
+<span data-ttu-id="07a81-136">[颜色选取器][DevtoolsCssReferenceColorPicker] 是 "[元素][DevtoolsCssIndex]" 面板中的 GUI 用于更改 `color` 和 `background-color` 声明。</span><span class="sxs-lookup"><span data-stu-id="07a81-136">The [Color Picker][DevtoolsCssReferenceColorPicker] is a GUI in the [Elements panel][DevtoolsCssIndex] for changing `color` and `background-color` declarations.</span></span>  <span data-ttu-id="07a81-137">在早期版本的 Microsoft Edge 中，无法使用键盘导航 [颜色选取器][DevtoolsCssReferenceColorPicker] 的 **阴影** 部分。</span><span class="sxs-lookup"><span data-stu-id="07a81-137">In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker] with the keyboard.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="现在，你可以使用键盘在颜色选取器的 阴影 部分移动选取器" lightbox="../../media/2020/03/color-picker.msft.png":::
-   <span data-ttu-id="1ec5e-139">现在，你可以使用键盘在 [颜色选取器][DevtoolsCssReferenceColorPicker]的**阴影** 部分移动选取器</span><span class="sxs-lookup"><span data-stu-id="1ec5e-139">You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker]</span></span>  
+   <span data-ttu-id="07a81-139">现在，你可以使用键盘在 [颜色选取器][DevtoolsCssReferenceColorPicker]的**阴影** 部分移动选取器</span><span class="sxs-lookup"><span data-stu-id="07a81-139">You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker]</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-140">在 Microsoft Edge 83 中，你可以使用键盘在颜色选取器的**阴影** 部分移动选取器。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-140">In Microsoft Edge 83, you are now able to use the keyboard to move the selector in the **Shades** section of the Color Picker.</span></span>  
+<span data-ttu-id="07a81-140">在 Microsoft Edge 83 中，你可以使用键盘在颜色选取器的**阴影** 部分移动选取器。</span><span class="sxs-lookup"><span data-stu-id="07a81-140">In Microsoft Edge 83, you are now able to use the keyboard to move the selector in the **Shades** section of the Color Picker.</span></span>  
 
-<span data-ttu-id="1ec5e-141">Chromium 问题 [#963183][CR963183]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-141">Chromium issue [#963183][CR963183]</span></span>  
+<span data-ttu-id="07a81-141">Chromium 问题 [#963183][CR963183]</span><span class="sxs-lookup"><span data-stu-id="07a81-141">Chromium issue [#963183][CR963183]</span></span>  
 
-### <a name="properties-tab-now-populates-after-a-page-refresh"></a><span data-ttu-id="1ec5e-142">现在，刷新页面后将填充“属性”选项卡</span><span class="sxs-lookup"><span data-stu-id="1ec5e-142">Properties tab now populates after a page refresh</span></span>  
+### <a name="properties-tab-now-populates-after-a-page-refresh"></a><span data-ttu-id="07a81-142">现在，刷新页面后将填充“属性”选项卡</span><span class="sxs-lookup"><span data-stu-id="07a81-142">Properties tab now populates after a page refresh</span></span>  
 
-<span data-ttu-id="1ec5e-143">在 Microsoft Edge 81 及更早版本中，在 "[元素][DevtoolsCssIndex]" 面板中的 **"属性"选项卡**因页面刷新而损坏。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-143">In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][DevtoolsCssIndex] was broken by page refreshes.</span></span>  <span data-ttu-id="1ec5e-144">刷新页面时，**"属性" 选项卡** 未填充当前所选元素的属性。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-144">When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.</span></span>  
+<span data-ttu-id="07a81-143">在 Microsoft Edge 81 及更早版本中，在 "[元素][DevtoolsCssIndex]" 面板中的 **"属性"选项卡**因页面刷新而损坏。</span><span class="sxs-lookup"><span data-stu-id="07a81-143">In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][DevtoolsCssIndex] was broken by page refreshes.</span></span>  <span data-ttu-id="07a81-144">刷新页面时，**"属性" 选项卡** 未填充当前所选元素的属性。</span><span class="sxs-lookup"><span data-stu-id="07a81-144">When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="在 Microsoft Edge 81 及更早版本中，页面刷新后，属性 选项卡为空白" lightbox="../../media/2020/03/properties-in-81.msft.png":::
-   <span data-ttu-id="1ec5e-146">在 Microsoft Edge 81 及更早版本中，在页面刷新后，**"属性" 选项卡** 是空白的</span><span class="sxs-lookup"><span data-stu-id="1ec5e-146">In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh</span></span>  
+   <span data-ttu-id="07a81-146">在 Microsoft Edge 81 及更早版本中，在页面刷新后，**"属性" 选项卡** 是空白的</span><span class="sxs-lookup"><span data-stu-id="07a81-146">In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-147">在 Microsoft Edge 83 中，现在可以在页面刷新后在"属性"选项卡中显示当前选定 **元素的属性**。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-147">In Microsoft Edge 83, you are now able to display the properties of the currently-selected element after a page refresh in the **Properties tab**.</span></span>  
+<span data-ttu-id="07a81-147">在 Microsoft Edge 83 中，现在可以在页面刷新后在"属性"选项卡中显示当前 **所选元素的属性**。</span><span class="sxs-lookup"><span data-stu-id="07a81-147">In Microsoft Edge 83, you are now able to display the properties of the currently-selected element after a page refresh in the **Properties tab**.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="在 Microsoft Edge 83 中，属性 选项卡显示页面刷新后当前所选元素的属性" lightbox="../../media/2020/03/properties-in-82.msft.png":::
-   <span data-ttu-id="1ec5e-149">在 Microsoft Edge 83 中，**"属性" 选项卡** 显示页面刷新后当前所选元素的属性</span><span class="sxs-lookup"><span data-stu-id="1ec5e-149">In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh</span></span>  
+   <span data-ttu-id="07a81-149">在 Microsoft Edge 83 中，**"属性" 选项卡** 显示页面刷新后当前所选元素的属性</span><span class="sxs-lookup"><span data-stu-id="07a81-149">In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-150">Chromium 问题 [#1050999][CR1050999]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-150">Chromium issue [#1050999][CR1050999]</span></span>  
+<span data-ttu-id="07a81-150">Chromium 问题 [#1050999][CR1050999]</span><span class="sxs-lookup"><span data-stu-id="07a81-150">Chromium issue [#1050999][CR1050999]</span></span>  
 
-### <a name="use-the-arrow-keys-to-scroll-in-the-changes-tool"></a><span data-ttu-id="1ec5e-151">使用箭头键在 "更改" 工具中滚动</span><span class="sxs-lookup"><span data-stu-id="1ec5e-151">Use the arrow keys to scroll in the Changes tool</span></span>  
+### <a name="use-the-arrow-keys-to-scroll-in-the-changes-tool"></a><span data-ttu-id="07a81-151">使用箭头键在 "更改" 工具中滚动</span><span class="sxs-lookup"><span data-stu-id="07a81-151">Use the arrow keys to scroll in the Changes tool</span></span>  
 
-<span data-ttu-id="1ec5e-152">**"更改" 工具** 跟踪你对 DevTools 中的 CSS 或 JavaScript 所做的任何更改。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-152">The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.</span></span>  <span data-ttu-id="1ec5e-153">您可以使用"更改"工具快速\*\*\*\* 显示所有更改，并返回编辑器/IDE。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-153">You are able to use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.</span></span>  
+<span data-ttu-id="07a81-152">**"更改" 工具** 跟踪你对 DevTools 中的 CSS 或 JavaScript 所做的任何更改。</span><span class="sxs-lookup"><span data-stu-id="07a81-152">The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.</span></span>  <span data-ttu-id="07a81-153">可以使用"更改"工具快速\*\*\*\* 显示所有更改，并返回编辑器/IDE。</span><span class="sxs-lookup"><span data-stu-id="07a81-153">You are able to use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.</span></span>  
 
-<span data-ttu-id="1ec5e-154">若要打开**更改工具**，请在 `Ctrl` + `Shift` + `P` DevTools 中选择以打开命令[菜单并][DevToolsCommandMenuIndex]键入 `changes` 。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-154">To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and type `changes`.</span></span>  <span data-ttu-id="1ec5e-155">选择并运行 **"显示更改**"命令以在\*\*\*\* DevTools 箱中打开"更改"工具。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-155">choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.</span></span>  
+<span data-ttu-id="07a81-154">若要打开**更改工具，** 请在 `Ctrl` + `Shift` + `P` DevTools 中选择以打开命令[菜单][DevToolsCommandMenuIndex]并键入 `changes` 。</span><span class="sxs-lookup"><span data-stu-id="07a81-154">To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and type `changes`.</span></span>  <span data-ttu-id="07a81-155">选择并运行"**显示更改"** 命令以在\*\*\*\* DevTools 箱中打开"更改"工具。</span><span class="sxs-lookup"><span data-stu-id="07a81-155">choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.</span></span>  
 
-<span data-ttu-id="1ec5e-156">对缩小文件进行更改后，"更改"工具使您能够水平滚动\*\*\*\* 以显示所有缩小代码。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-156">When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.</span></span>  <span data-ttu-id="1ec5e-157">从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-157">Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.</span></span>  
+<span data-ttu-id="07a81-156">对缩小文件进行更改后，"更改"工具允许您水平滚动\*\*\*\* 以显示所有缩小代码。</span><span class="sxs-lookup"><span data-stu-id="07a81-156">When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.</span></span>  <span data-ttu-id="07a81-157">从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。</span><span class="sxs-lookup"><span data-stu-id="07a81-157">Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
-   <span data-ttu-id="1ec5e-159">在 Microsoft Edge 83 中，可以使用箭头键水平滚动以显示在"更改"工具中对缩小代码 **所做的更改**</span><span class="sxs-lookup"><span data-stu-id="1ec5e-159">In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display the changes you made to your minified code in the **Changes tool**</span></span>  
+   <span data-ttu-id="07a81-159">在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码 **所做的更改**</span><span class="sxs-lookup"><span data-stu-id="07a81-159">In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display the changes you made to your minified code in the **Changes tool**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-160">如果你使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文[][PostTweetEdgeDevTools]或选择"发送反馈"图标向我们发送[反馈](#getting-in-touch-with-microsoft-edge-devtools-team)！</span><span class="sxs-lookup"><span data-stu-id="1ec5e-160">If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="07a81-160">如果使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文或[][PostTweetEdgeDevTools]选择"发送反馈"图标向我们发送[反馈](#getting-in-touch-with-microsoft-edge-devtools-team)！</span><span class="sxs-lookup"><span data-stu-id="07a81-160">If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-<span data-ttu-id="1ec5e-161">Chromium 问题 [#963183][CR963183]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-161">Chromium issue [#963183][CR963183]</span></span>  
+<span data-ttu-id="07a81-161">Chromium 问题 [#963183][CR963183]</span><span class="sxs-lookup"><span data-stu-id="07a81-161">Chromium issue [#963183][CR963183]</span></span>  
 
-## <a name="announcements-from-the-chromium-project"></a><span data-ttu-id="1ec5e-162">来自 Chromium 项目的公告</span><span class="sxs-lookup"><span data-stu-id="1ec5e-162">Announcements from the Chromium project</span></span>  
+## <a name="announcements-from-the-chromium-project"></a><span data-ttu-id="07a81-162">来自 Chromium 项目的公告</span><span class="sxs-lookup"><span data-stu-id="07a81-162">Announcements from the Chromium project</span></span>  
 
-<span data-ttu-id="1ec5e-163">以下各部分公布了 Microsoft Edge 83 中提供的其他功能，这些功能是对开源 Chromium 项目的贡献。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-163">The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.</span></span>  
+<span data-ttu-id="07a81-163">以下各部分公布了 Microsoft Edge 83 中提供的其他功能，这些功能是对开源 Chromium 项目的贡献。</span><span class="sxs-lookup"><span data-stu-id="07a81-163">The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.</span></span>  
 
-### <a name="emulate-vision-deficiencies"></a><span data-ttu-id="1ec5e-164">模仿视觉缺陷</span><span class="sxs-lookup"><span data-stu-id="1ec5e-164">Emulate vision deficiencies</span></span>  
+### <a name="emulate-vision-deficiencies"></a><span data-ttu-id="07a81-164">模仿视觉缺陷</span><span class="sxs-lookup"><span data-stu-id="07a81-164">Emulate vision deficiencies</span></span>  
 
-<span data-ttu-id="1ec5e-165">打开["渲染" 选项卡][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] ，使用新的"**模拟视觉缺陷**" 功能，更好地了解有不同类型视觉缺陷的人们如何体验你的网站。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-165">Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.</span></span>  
+<span data-ttu-id="07a81-165">打开["渲染" 选项卡][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] ，使用新的"**模拟视觉缺陷**" 功能，更好地了解有不同类型视觉缺陷的人们如何体验你的网站。</span><span class="sxs-lookup"><span data-stu-id="07a81-165">Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="模拟模糊的视觉效果" lightbox="../../media/2020/03/vision.msft.png":::
-   <span data-ttu-id="1ec5e-167">模拟模糊的视觉效果</span><span class="sxs-lookup"><span data-stu-id="1ec5e-167">Emulating blurred vision</span></span>  
+   <span data-ttu-id="07a81-167">模拟模糊的视觉效果</span><span class="sxs-lookup"><span data-stu-id="07a81-167">Emulating blurred vision</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-168">DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBlindnessTypes]。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-168">DevTools is able to emulate blurred vision and the following [types of color vision deficiencies][ColorBlindnessTypes].</span></span>  
+<span data-ttu-id="07a81-168">DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBlindnessTypes]。</span><span class="sxs-lookup"><span data-stu-id="07a81-168">DevTools is able to emulate blurred vision and the following [types of color vision deficiencies][ColorBlindnessTypes].</span></span>  
 
-| <span data-ttu-id="1ec5e-169">颜色视觉缺陷</span><span class="sxs-lookup"><span data-stu-id="1ec5e-169">Color Vision Deficiency</span></span> | <span data-ttu-id="1ec5e-170">详细信息</span><span class="sxs-lookup"><span data-stu-id="1ec5e-170">Details</span></span> |  
+| <span data-ttu-id="07a81-169">颜色视觉缺陷</span><span class="sxs-lookup"><span data-stu-id="07a81-169">Color Vision Deficiency</span></span> | <span data-ttu-id="07a81-170">详细信息</span><span class="sxs-lookup"><span data-stu-id="07a81-170">Details</span></span> |  
 |:--- |:--- |  
-| <span data-ttu-id="1ec5e-171">红色盲</span><span class="sxs-lookup"><span data-stu-id="1ec5e-171">Protanopia</span></span> | <span data-ttu-id="1ec5e-172">无法感觉任何红色的光线。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-172">The inability to perceive any red light.</span></span> |  
-| <span data-ttu-id="1ec5e-173">绿色盲</span><span class="sxs-lookup"><span data-stu-id="1ec5e-173">Deuteranopia</span></span> | <span data-ttu-id="1ec5e-174">无法感觉任何绿色的光线。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-174">The inability to perceive any green light.</span></span> |  
-| <span data-ttu-id="1ec5e-175">黄蓝色盲</span><span class="sxs-lookup"><span data-stu-id="1ec5e-175">Tritanopia</span></span> | <span data-ttu-id="1ec5e-176">无法感觉任何蓝色的光线。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-176">The inability to perceive any blue light.</span></span> |  
-| <span data-ttu-id="1ec5e-177">全色盲</span><span class="sxs-lookup"><span data-stu-id="1ec5e-177">Achromatopsia</span></span> | <span data-ttu-id="1ec5e-178">无法感觉任何颜色，灰色阴影除外\（极少\）。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-178">The inability to perceive any color, except for shades of grey \(extremely rare\).</span></span> |  
+| <span data-ttu-id="07a81-171">红色盲</span><span class="sxs-lookup"><span data-stu-id="07a81-171">Protanopia</span></span> | <span data-ttu-id="07a81-172">无法感觉任何红色的光线。</span><span class="sxs-lookup"><span data-stu-id="07a81-172">The inability to perceive any red light.</span></span> |  
+| <span data-ttu-id="07a81-173">绿色盲</span><span class="sxs-lookup"><span data-stu-id="07a81-173">Deuteranopia</span></span> | <span data-ttu-id="07a81-174">无法感觉任何绿色的光线。</span><span class="sxs-lookup"><span data-stu-id="07a81-174">The inability to perceive any green light.</span></span> |  
+| <span data-ttu-id="07a81-175">黄蓝色盲</span><span class="sxs-lookup"><span data-stu-id="07a81-175">Tritanopia</span></span> | <span data-ttu-id="07a81-176">无法感觉任何蓝色的光线。</span><span class="sxs-lookup"><span data-stu-id="07a81-176">The inability to perceive any blue light.</span></span> |  
+| <span data-ttu-id="07a81-177">全色盲</span><span class="sxs-lookup"><span data-stu-id="07a81-177">Achromatopsia</span></span> | <span data-ttu-id="07a81-178">无法感觉任何颜色，灰色阴影除外\（极少\）。</span><span class="sxs-lookup"><span data-stu-id="07a81-178">The inability to perceive any color, except for shades of grey \(extremely rare\).</span></span> |  
 
-<span data-ttu-id="1ec5e-179">存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-179">Less extreme versions of these color vision deficiencies exist, and in fact they are more common.</span></span>  
-<span data-ttu-id="1ec5e-180">例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-180">For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light).</span></span> <span data-ttu-id="1ec5e-181">但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同情况 \ (能够感知更多/更少的相关颜色\) 。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-181">However, these **-omaly** vision deficiencies are not as clearly defined:  every person with such a vision deficiency is different and may see things differently \(being able to perceive more/less of the relevant colors\).</span></span>  
+<span data-ttu-id="07a81-179">存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。</span><span class="sxs-lookup"><span data-stu-id="07a81-179">Less extreme versions of these color vision deficiencies exist, and in fact they are more common.</span></span>  
+<span data-ttu-id="07a81-180">例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。</span><span class="sxs-lookup"><span data-stu-id="07a81-180">For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light).</span></span> <span data-ttu-id="07a81-181">但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。</span><span class="sxs-lookup"><span data-stu-id="07a81-181">However, these **-omaly** vision deficiencies are not as clearly defined:  every person with such a vision deficiency is different and may see things differently \(being able to perceive more/less of the relevant colors\).</span></span>  
 
-<span data-ttu-id="1ec5e-182">通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-182">By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.</span></span>  
+<span data-ttu-id="07a81-182">通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="07a81-182">By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.</span></span>  
 
-<span data-ttu-id="1ec5e-183">通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="1ec5e-183">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="07a81-183">通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="07a81-183">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-<span data-ttu-id="1ec5e-184">Chromium 问题 [#1003700][CR1003700]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-184">Chromium issue [#1003700][CR1003700]</span></span>  
+<span data-ttu-id="07a81-184">Chromium 问题 [#1003700][CR1003700]</span><span class="sxs-lookup"><span data-stu-id="07a81-184">Chromium issue [#1003700][CR1003700]</span></span>  
 
-### <a name="emulate-locales"></a><span data-ttu-id="1ec5e-185">模拟语言环境</span><span class="sxs-lookup"><span data-stu-id="1ec5e-185">Emulate locales</span></span>  
+### <a name="emulate-locales"></a><span data-ttu-id="07a81-185">模拟语言环境</span><span class="sxs-lookup"><span data-stu-id="07a81-185">Emulate locales</span></span>  
 
-<span data-ttu-id="1ec5e-186">通过在**传感器**  >  **位置**中设置位置来模拟语言环境。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-186">Emulate locales by setting a location in **Sensors** > **Location**.</span></span> <span data-ttu-id="1ec5e-187">[打开**命令菜单** ][DevToolsCommandMenuIndex]，然后键入`Sensors`以访问**传感器**选项卡。执行完这些操作后，DevTools 会修改当前的默认语言环境，从而影响以下代码。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-187">[Open the **Command Menu**][DevToolsCommandMenuIndex] and type `Sensors` to access the **Sensors** tab.  After performing these actions, DevTools modifies the current default locale, affecting the following code.</span></span>  
+<span data-ttu-id="07a81-186">通过在**传感器**  >  **位置**中设置位置来模拟语言环境。</span><span class="sxs-lookup"><span data-stu-id="07a81-186">Emulate locales by setting a location in **Sensors** > **Location**.</span></span> <span data-ttu-id="07a81-187">[打开**命令菜单** ][DevToolsCommandMenuIndex]，然后键入`Sensors`以访问**传感器**选项卡。执行完这些操作后，DevTools 会修改当前的默认语言环境，从而影响以下代码。</span><span class="sxs-lookup"><span data-stu-id="07a81-187">[Open the **Command Menu**][DevToolsCommandMenuIndex] and type `Sensors` to access the **Sensors** tab.  After performing these actions, DevTools modifies the current default locale, affecting the following code.</span></span>  
 
-*   `Intl.*` <span data-ttu-id="1ec5e-188">例如，API：</span><span class="sxs-lookup"><span data-stu-id="1ec5e-188">APIs, for example:</span></span> `new Intl.NumberFormat().resolvedOptions().locale`  
-*   <span data-ttu-id="1ec5e-189">其他可识别语言环境的 JavaScript API，例如`String.prototype.localeCompare`和`*.prototype.toLocaleString`，例如：</span><span class="sxs-lookup"><span data-stu-id="1ec5e-189">Other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and `*.prototype.toLocaleString`, for example:</span></span> `123_456..toLocaleString()`  
-*   <span data-ttu-id="1ec5e-190">DOM API，如 `navigator.language` 和</span><span class="sxs-lookup"><span data-stu-id="1ec5e-190">DOM APIs such as `navigator.language` and</span></span> `navigator.languages`  
-*   <span data-ttu-id="1ec5e-191">[接受语言][MDNAcceptLanguage]HTTP 请求标头</span><span class="sxs-lookup"><span data-stu-id="1ec5e-191">The [Accept-Language][MDNAcceptLanguage] HTTP request header</span></span>  
+*   `Intl.*` <span data-ttu-id="07a81-188">例如，API：</span><span class="sxs-lookup"><span data-stu-id="07a81-188">APIs, for example:</span></span> `new Intl.NumberFormat().resolvedOptions().locale`  
+*   <span data-ttu-id="07a81-189">其他可识别语言环境的 JavaScript API，例如`String.prototype.localeCompare`和`*.prototype.toLocaleString`，例如：</span><span class="sxs-lookup"><span data-stu-id="07a81-189">Other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and `*.prototype.toLocaleString`, for example:</span></span> `123_456..toLocaleString()`  
+*   <span data-ttu-id="07a81-190">DOM API，如 `navigator.language` 和</span><span class="sxs-lookup"><span data-stu-id="07a81-190">DOM APIs such as `navigator.language` and</span></span> `navigator.languages`  
+*   <span data-ttu-id="07a81-191">[接受语言][MDNAcceptLanguage]HTTP 请求标头</span><span class="sxs-lookup"><span data-stu-id="07a81-191">The [Accept-Language][MDNAcceptLanguage] HTTP request header</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="1ec5e-192">对`navigator.language`和`navigator.languages`的更新不是立即可见的，只有在下一次导航或页面刷新后才可见。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-192">Updates to `navigator.language` and `navigator.languages` are not visible immediately, but only after the next navigation or page refresh.</span></span>  <span data-ttu-id="1ec5e-193">只有后续请求才会反映对 `Accept-Language` HTTP 标头的更改。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-193">Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.</span></span>  
+> <span data-ttu-id="07a81-192">对`navigator.language`和`navigator.languages`的更新不是立即可见的，只有在下一次导航或页面刷新后才可见。</span><span class="sxs-lookup"><span data-stu-id="07a81-192">Updates to `navigator.language` and `navigator.languages` are not visible immediately, but only after the next navigation or page refresh.</span></span>  <span data-ttu-id="07a81-193">只有后续请求才会反映对 `Accept-Language` HTTP 标头的更改。</span><span class="sxs-lookup"><span data-stu-id="07a81-193">Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="模拟区域设置" lightbox="../../media/2020/03/locale.msft.png":::
-   <span data-ttu-id="1ec5e-195">模拟区域设置</span><span class="sxs-lookup"><span data-stu-id="1ec5e-195">Emulating a locale</span></span>  
+   <span data-ttu-id="07a81-195">模拟区域设置</span><span class="sxs-lookup"><span data-stu-id="07a81-195">Emulating a locale</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-196">若要试用演示，请导航到与 [区域设置相关的代码示例][MathiasByensLocaleDemo]。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-196">To try a demo, navigate to [Locale-dependent code example][MathiasByensLocaleDemo].</span></span>
+<span data-ttu-id="07a81-196">若要尝试演示，请导航到与 [区域设置相关的代码示例][MathiasByensLocaleDemo]。</span><span class="sxs-lookup"><span data-stu-id="07a81-196">To try a demo, navigate to [Locale-dependent code example][MathiasByensLocaleDemo].</span></span>
 
-<span data-ttu-id="1ec5e-197">Chromium 问题 [#1051822][CR1051822]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-197">Chromium issue [#1051822][CR1051822]</span></span>
+<span data-ttu-id="07a81-197">Chromium 问题 [#1051822][CR1051822]</span><span class="sxs-lookup"><span data-stu-id="07a81-197">Chromium issue [#1051822][CR1051822]</span></span>
 
-### <a name="cross-origin-embedder-policy-coep-debugging"></a><span data-ttu-id="1ec5e-198">跨域嵌入程序策略 (COEP) 调试</span><span class="sxs-lookup"><span data-stu-id="1ec5e-198">Cross-Origin Embedder Policy (COEP) debugging</span></span>  
+### <a name="cross-origin-embedder-policy-coep-debugging"></a><span data-ttu-id="07a81-198">跨域嵌入程序策略 (COEP) 调试</span><span class="sxs-lookup"><span data-stu-id="07a81-198">Cross-Origin Embedder Policy (COEP) debugging</span></span>  
 
-<span data-ttu-id="1ec5e-199">"网络" 面板现在提供[跨域嵌入程序策略 (COEP)][COEP] 调试信息。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-199">The Network panel now provides [Cross-Origin Embedder Policy][COEP] debugging information.</span></span>  
+<span data-ttu-id="07a81-199">"网络" 面板现在提供[跨域嵌入程序策略 (COEP)][COEP] 调试信息。</span><span class="sxs-lookup"><span data-stu-id="07a81-199">The Network panel now provides [Cross-Origin Embedder Policy][COEP] debugging information.</span></span>  
 
-<span data-ttu-id="1ec5e-200">“**状态**”列现在提供有关为何阻止请求的快速说明，以及查看该请求标头以进行进一步调试的链接：</span><span class="sxs-lookup"><span data-stu-id="1ec5e-200">The **Status** column now provides a quick explanation of why a request was blocked as well as a link to view the headers of that request for further debugging:</span></span>  
+<span data-ttu-id="07a81-200">“**状态**”列现在提供有关为何阻止请求的快速说明，以及查看该请求标头以进行进一步调试的链接：</span><span class="sxs-lookup"><span data-stu-id="07a81-200">The **Status** column now provides a quick explanation of why a request was blocked as well as a link to view the headers of that request for further debugging:</span></span>  
 
 :::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="**状态**列中的阻止请求" lightbox="../../media/2020/03/status.msft.png":::
-   <span data-ttu-id="1ec5e-202">"状态"**列中阻止的请求**</span><span class="sxs-lookup"><span data-stu-id="1ec5e-202">Blocked requests in the **Status** column</span></span>  
+   <span data-ttu-id="07a81-202">"状态"**列中阻止的请求**</span><span class="sxs-lookup"><span data-stu-id="07a81-202">Blocked requests in the **Status** column</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-203">"**标头**" 选项卡上的 "**响应标头**" 部分提供了有关如何解决这些问题的更多指导：</span><span class="sxs-lookup"><span data-stu-id="1ec5e-203">The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:</span></span>  
+<span data-ttu-id="07a81-203">"**标头**" 选项卡上的 "**响应标头**" 部分提供了有关如何解决这些问题的更多指导：</span><span class="sxs-lookup"><span data-stu-id="07a81-203">The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:</span></span>  
 
 :::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="“响应标头”部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
-   <span data-ttu-id="1ec5e-205">"响应头" **部分中的更多** 指南</span><span class="sxs-lookup"><span data-stu-id="1ec5e-205">More guidance in the **Response Headers** section</span></span>  
+   <span data-ttu-id="07a81-205">"响应头" **部分中的更多** 指南</span><span class="sxs-lookup"><span data-stu-id="07a81-205">More guidance in the **Response Headers** section</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-206">通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="1ec5e-206">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="07a81-206">通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="07a81-206">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-<span data-ttu-id="1ec5e-207">Chromium 问题 [#1051466][CR1051466]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-207">Chromium issue [#1051466][CR1051466]</span></span>  
+<span data-ttu-id="07a81-207">Chromium 问题 [#1051466][CR1051466]</span><span class="sxs-lookup"><span data-stu-id="07a81-207">Chromium issue [#1051466][CR1051466]</span></span>  
 
-### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a><span data-ttu-id="1ec5e-208">断点、条件断点和登录点的新图标</span><span class="sxs-lookup"><span data-stu-id="1ec5e-208">New icons for breakpoints, conditional breakpoints, and logpoints</span></span>  
+### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a><span data-ttu-id="07a81-208">断点、条件断点和登录点的新图标</span><span class="sxs-lookup"><span data-stu-id="07a81-208">New icons for breakpoints, conditional breakpoints, and logpoints</span></span>  
 
-<span data-ttu-id="1ec5e-209">"源"面板具有用于断点、条件断点和日志点的新图标：</span><span class="sxs-lookup"><span data-stu-id="1ec5e-209">The Sources panel has new icons for breakpoints, conditional breakpoints, and logpoints:</span></span>  
+<span data-ttu-id="07a81-209">"源"面板具有用于断点、条件断点和日志点的新图标：</span><span class="sxs-lookup"><span data-stu-id="07a81-209">The Sources panel has new icons for breakpoints, conditional breakpoints, and logpoints:</span></span>  
 
-*   <span data-ttu-id="1ec5e-210">断点 \ (</span><span class="sxs-lookup"><span data-stu-id="1ec5e-210">Breakpoints \(</span></span>![断点](../../media/2020/03/breakpoint.msft.png)<span data-ttu-id="1ec5e-212">\) 用红色圆圈表示。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-212">\) are represented by red circles.</span></span>  
-*   <span data-ttu-id="1ec5e-213">条件断点 \ (</span><span class="sxs-lookup"><span data-stu-id="1ec5e-213">Conditional Breakpoints \(</span></span>![条件断点](../../media/2020/03/conditional.msft.png)<span data-ttu-id="1ec5e-215">\) 用半红半白圆表示。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-215">\) are represented by half-red half-white circles.</span></span>  
-*   <span data-ttu-id="1ec5e-216">Logpoints \ (</span><span class="sxs-lookup"><span data-stu-id="1ec5e-216">Logpoints \(</span></span>![Logpoint](../../media/2020/03/logpoint.msft.png)<span data-ttu-id="1ec5e-218">\) 用带控制台图标的红色圆圈表示。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-218">\) are represented by red circles with Console icons.</span></span>  
+*   <span data-ttu-id="07a81-210">断点 \ (</span><span class="sxs-lookup"><span data-stu-id="07a81-210">Breakpoints \(</span></span>![断点](../../media/2020/03/breakpoint.msft.png)<span data-ttu-id="07a81-212">\) 用红色圆圈表示。</span><span class="sxs-lookup"><span data-stu-id="07a81-212">\) are represented by red circles.</span></span>  
+*   <span data-ttu-id="07a81-213">条件断点 \ (</span><span class="sxs-lookup"><span data-stu-id="07a81-213">Conditional Breakpoints \(</span></span>![条件断点](../../media/2020/03/conditional.msft.png)<span data-ttu-id="07a81-215">\) 用半红半白圆表示。</span><span class="sxs-lookup"><span data-stu-id="07a81-215">\) are represented by half-red half-white circles.</span></span>  
+*   <span data-ttu-id="07a81-216">Logpoints \ (</span><span class="sxs-lookup"><span data-stu-id="07a81-216">Logpoints \(</span></span>![Logpoint](../../media/2020/03/logpoint.msft.png)<span data-ttu-id="07a81-218">\) 用带控制台图标的红色圆圈表示。</span><span class="sxs-lookup"><span data-stu-id="07a81-218">\) are represented by red circles with Console icons.</span></span>  
 
-<span data-ttu-id="1ec5e-219">新图标的动机是使 UI 与其他 GUI 调试工具 \ (（通常为红色\) 颜色断点）更加一致，并便于一目了然地区分这 3 个功能。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-219">The motivation for the new icons was to make the UI more consistent with other GUI debugging tools \(which usually color breakpoints red\) and to make it easier to distinguish between the 3 features at a glance.</span></span>  
+<span data-ttu-id="07a81-219">新图标的动机是使 UI 与其他 GUI 调试工具 \ (（通常为红色\) 颜色断点）更加一致，并便于一目了然地区分这 3 个功能。</span><span class="sxs-lookup"><span data-stu-id="07a81-219">The motivation for the new icons was to make the UI more consistent with other GUI debugging tools \(which usually color breakpoints red\) and to make it easier to distinguish between the 3 features at a glance.</span></span>  
 
-<span data-ttu-id="1ec5e-220">Chromium 问题 [#1041830][CR1041830]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-220">Chromium issue [#1041830][CR1041830]</span></span>  
+<span data-ttu-id="07a81-220">Chromium 问题 [#1041830][CR1041830]</span><span class="sxs-lookup"><span data-stu-id="07a81-220">Chromium issue [#1041830][CR1041830]</span></span>  
 
-### <a name="view-network-requests-that-set-a-specific-cookie-path"></a><span data-ttu-id="1ec5e-221">查看设置了特定 cookie 路径的网络请求</span><span class="sxs-lookup"><span data-stu-id="1ec5e-221">View network requests that set a specific cookie path</span></span>  
+### <a name="view-network-requests-that-set-a-specific-cookie-path"></a><span data-ttu-id="07a81-221">查看设置了特定 cookie 路径的网络请求</span><span class="sxs-lookup"><span data-stu-id="07a81-221">View network requests that set a specific cookie path</span></span>  
 
-<span data-ttu-id="1ec5e-222">使用网络工具中的新筛选器关键字可专注于设置特定 `cookie-path` Cookie 路径的网络\*\*\*\*[请求][MDNCookiePath]。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-222">Use the new `cookie-path` filter keyword in the **Network** tool to focus on the network requests that set a specific [cookie path][MDNCookiePath].</span></span>  
+<span data-ttu-id="07a81-222">使用网络工具中的新筛选器关键字可以专注于设置特定 Cookie `cookie-path` 路径的网络[请求][MDNCookiePath]。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="07a81-222">Use the new `cookie-path` filter keyword in the **Network** tool to focus on the network requests that set a specific [cookie path][MDNCookiePath].</span></span>  
 
-<span data-ttu-id="1ec5e-223">查看[按属性过滤请求][DevtoolsNetworkReferenceFilterRequestsProperties]以发现更多关键词，例如`cookie-path`。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-223">Check out [Filter requests by properties][DevtoolsNetworkReferenceFilterRequestsProperties] to discover more keywords like `cookie-path`.</span></span>
+<span data-ttu-id="07a81-223">查看[按属性过滤请求][DevtoolsNetworkReferenceFilterRequestsProperties]以发现更多关键词，例如`cookie-path`。</span><span class="sxs-lookup"><span data-stu-id="07a81-223">Check out [Filter requests by properties][DevtoolsNetworkReferenceFilterRequestsProperties] to discover more keywords like `cookie-path`.</span></span>
 
-### <a name="dock-to-left-from-the-command-menu"></a><span data-ttu-id="1ec5e-224">从 "命令" 菜单向左停靠</span><span class="sxs-lookup"><span data-stu-id="1ec5e-224">Dock to left from the Command Menu</span></span>  
+### <a name="dock-to-left-from-the-command-menu"></a><span data-ttu-id="07a81-224">从 "命令" 菜单向左停靠</span><span class="sxs-lookup"><span data-stu-id="07a81-224">Dock to left from the Command Menu</span></span>  
 
-<span data-ttu-id="1ec5e-225">打开 ["命令菜单"][DevToolsCommandMenuIndex]，并运行" `Dock to left` "命令以将 DevTools 移到视线的左侧。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-225">Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` command to move DevTools to the left of your viewport.</span></span>  
+<span data-ttu-id="07a81-225">打开 ["命令菜单"][DevToolsCommandMenuIndex]，并运行" `Dock to left` "命令以将 DevTools 移到视线的左侧。</span><span class="sxs-lookup"><span data-stu-id="07a81-225">Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` command to move DevTools to the left of your viewport.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools 停靠在视线左侧" lightbox="../../media/2020/03/dock-to-left.msft.png":::
-   <span data-ttu-id="1ec5e-227">DevTools 停靠在视线左侧</span><span class="sxs-lookup"><span data-stu-id="1ec5e-227">DevTools docked to the left of the viewport</span></span>  
+   <span data-ttu-id="07a81-227">DevTools 停靠在视线左侧</span><span class="sxs-lookup"><span data-stu-id="07a81-227">DevTools docked to the left of the viewport</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="1ec5e-228">自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单][DevtoolsCustomizePlacementsChangeMainMenu]中进行访问。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-228">The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu][DevtoolsCustomizePlacementsChangeMainMenu].</span></span>  <span data-ttu-id="1ec5e-229">Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-229">The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.</span></span>  
+> <span data-ttu-id="07a81-228">自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单][DevtoolsCustomizePlacementsChangeMainMenu]中进行访问。</span><span class="sxs-lookup"><span data-stu-id="07a81-228">The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu][DevtoolsCustomizePlacementsChangeMainMenu].</span></span>  <span data-ttu-id="07a81-229">Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。</span><span class="sxs-lookup"><span data-stu-id="07a81-229">The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.</span></span>  
 
-<span data-ttu-id="1ec5e-230">通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="1ec5e-230">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="07a81-230">通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="07a81-230">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-<span data-ttu-id="1ec5e-231">Chromium 问题 [#1011679][CR1011679]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-231">Chromium issue [#1011679][CR1011679]</span></span>  
+<span data-ttu-id="07a81-231">Chromium 问题 [#1011679][CR1011679]</span><span class="sxs-lookup"><span data-stu-id="07a81-231">Chromium issue [#1011679][CR1011679]</span></span>  
 
-### <a name="the-audits-panel-is-now-the-lighthouse-panel"></a><span data-ttu-id="1ec5e-232">"审核" 面板现在是 "灯塔" 面板</span><span class="sxs-lookup"><span data-stu-id="1ec5e-232">The Audits panel is now the Lighthouse panel</span></span>  
+### <a name="the-audits-panel-is-now-the-lighthouse-panel"></a><span data-ttu-id="07a81-232">"审核" 面板现在是 "灯塔" 面板</span><span class="sxs-lookup"><span data-stu-id="07a81-232">The Audits panel is now the Lighthouse panel</span></span>  
 
-<span data-ttu-id="1ec5e-233">DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 DevTools 运行[灯塔][GithubGoogleChromeLighthouse]，但在尝试运行时却找不到“灯塔”面板，因此**审核**面板现在是**灯塔**面板。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-233">The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][GithubGoogleChromeLighthouse] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.</span></span>  
+<span data-ttu-id="07a81-233">DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 DevTools 运行[灯塔][GithubGoogleChromeLighthouse]，但在尝试运行时却找不到“灯塔”面板，因此**审核**面板现在是**灯塔**面板。</span><span class="sxs-lookup"><span data-stu-id="07a81-233">The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][GithubGoogleChromeLighthouse] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="灯塔面板" lightbox="../../media/2020/03/lighthouse.msft.png":::
-   <span data-ttu-id="1ec5e-235">灯塔面板</span><span class="sxs-lookup"><span data-stu-id="1ec5e-235">The Lighthouse panel</span></span>  
+   <span data-ttu-id="07a81-235">灯塔面板</span><span class="sxs-lookup"><span data-stu-id="07a81-235">The Lighthouse panel</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="1ec5e-236">**灯塔** 面板提供了指向第三方网站上托管内容的链接。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-236">The **Lighthouse** panel provides links to content hosted on third-party websites.</span></span>  <span data-ttu-id="1ec5e-237">Microsoft 对这些网站及其可能收集的任何数据的内容不承担任何责任。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-237">Microsoft is not responsible for and has no control over the content of these sites and any data they may collect.</span></span>  
+> <span data-ttu-id="07a81-236">**灯塔** 面板提供了指向第三方网站上托管内容的链接。</span><span class="sxs-lookup"><span data-stu-id="07a81-236">The **Lighthouse** panel provides links to content hosted on third-party websites.</span></span>  <span data-ttu-id="07a81-237">Microsoft 对这些网站及其可能收集的任何数据的内容不承担任何责任。</span><span class="sxs-lookup"><span data-stu-id="07a81-237">Microsoft is not responsible for and has no control over the content of these sites and any data they may collect.</span></span>  
 
-### <a name="delete-all-local-overrides-in-a-folder"></a><span data-ttu-id="1ec5e-238">删除文件夹中的所有本地覆盖</span><span class="sxs-lookup"><span data-stu-id="1ec5e-238">Delete all Local Overrides in a folder</span></span>  
+### <a name="delete-all-local-overrides-in-a-folder"></a><span data-ttu-id="07a81-238">删除文件夹中的所有本地覆盖</span><span class="sxs-lookup"><span data-stu-id="07a81-238">Delete all Local Overrides in a folder</span></span>  
 
-<span data-ttu-id="1ec5e-239">设置本地覆盖\*\*\*\* 后，你可以将鼠标悬停在目录中，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该文件夹中\*\*\*\* 的所有本地覆盖。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-239">After setting up **Local Overrides** you may hover on a directory, open the contextual menu \(right-click\), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.</span></span>  
+<span data-ttu-id="07a81-239">设置本地覆盖\*\*\*\* 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该\*\*\*\* 文件夹中的所有局部覆盖。</span><span class="sxs-lookup"><span data-stu-id="07a81-239">After setting up **Local Overrides** you may hover on a directory, open the contextual menu \(right-click\), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
-   <span data-ttu-id="1ec5e-241">删除所有覆盖</span><span class="sxs-lookup"><span data-stu-id="1ec5e-241">Delete all overrides</span></span>  
+   <span data-ttu-id="07a81-241">删除所有覆盖</span><span class="sxs-lookup"><span data-stu-id="07a81-241">Delete all overrides</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-242">通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="1ec5e-242">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="07a81-242">通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="07a81-242">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-<span data-ttu-id="1ec5e-243">Chromium 问题 [#1016501][CR1016501]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-243">Chromium issue [#1016501][CR1016501]</span></span>  
+<span data-ttu-id="07a81-243">Chromium 问题 [#1016501][CR1016501]</span><span class="sxs-lookup"><span data-stu-id="07a81-243">Chromium issue [#1016501][CR1016501]</span></span>  
 
-### <a name="updated-long-tasks-ui"></a><span data-ttu-id="1ec5e-244">更新的长任务 UI</span><span class="sxs-lookup"><span data-stu-id="1ec5e-244">Updated Long tasks UI</span></span>  
+### <a name="updated-long-tasks-ui"></a><span data-ttu-id="07a81-244">更新的长任务 UI</span><span class="sxs-lookup"><span data-stu-id="07a81-244">Updated Long tasks UI</span></span>  
 
-<span data-ttu-id="1ec5e-245">**长任务**是长时间垄断了主线程，从而导致网页冻结的 JavaScript 代码。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-245">A **Long Task** is JavaScript code that monopolizes the main thread for a long time, causing a web page to freeze.</span></span>  
+<span data-ttu-id="07a81-245">**长任务**是长时间垄断了主线程，从而导致网页冻结的 JavaScript 代码。</span><span class="sxs-lookup"><span data-stu-id="07a81-245">A **Long Task** is JavaScript code that monopolizes the main thread for a long time, causing a web page to freeze.</span></span>  
 
-<span data-ttu-id="1ec5e-246">你已经能够[在“性能”面板中可视化长任务][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]了一段时间，但是在Microsoft Edge 83中，“性能”面板中的长任务可视化 UI 已更新。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-246">You have been able to [visualize Long Tasks in the Performance panel][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.</span></span>  <span data-ttu-id="1ec5e-247">现在，任务的长任务部分的颜色为带条纹红色背景。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-247">The Long Task portion of a task is now colored with a striped red background.</span></span>  
+<span data-ttu-id="07a81-246">你已经能够[在“性能”面板中可视化长任务][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]了一段时间，但是在Microsoft Edge 83中，“性能”面板中的长任务可视化 UI 已更新。</span><span class="sxs-lookup"><span data-stu-id="07a81-246">You have been able to [visualize Long Tasks in the Performance panel][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.</span></span>  <span data-ttu-id="07a81-247">现在，任务的长任务部分的颜色为带条纹红色背景。</span><span class="sxs-lookup"><span data-stu-id="07a81-247">The Long Task portion of a task is now colored with a striped red background.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="新的长任务 UI" lightbox="../../media/2020/03/long-task.msft.png":::
-   <span data-ttu-id="1ec5e-249">新的长任务 UI</span><span class="sxs-lookup"><span data-stu-id="1ec5e-249">The new Long Task UI</span></span>  
+   <span data-ttu-id="07a81-249">新的长任务 UI</span><span class="sxs-lookup"><span data-stu-id="07a81-249">The new Long Task UI</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1ec5e-250">通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="1ec5e-250">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="07a81-250">通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！</span><span class="sxs-lookup"><span data-stu-id="07a81-250">Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-<span data-ttu-id="1ec5e-251">Chromium 问题 [#1054447][CR1054447]</span><span class="sxs-lookup"><span data-stu-id="1ec5e-251">Chromium issue [#1054447][CR1054447]</span></span>  
+<span data-ttu-id="07a81-251">Chromium 问题 [#1054447][CR1054447]</span><span class="sxs-lookup"><span data-stu-id="07a81-251">Chromium issue [#1054447][CR1054447]</span></span>  
 
-### <a name="maskable-icon-support-in-the-manifest-pane"></a><span data-ttu-id="1ec5e-252">"清单" 窗格中的可屏蔽图标支持</span><span class="sxs-lookup"><span data-stu-id="1ec5e-252">Maskable icon support in the Manifest pane</span></span>  
+### <a name="maskable-icon-support-in-the-manifest-pane"></a><span data-ttu-id="07a81-252">"清单" 窗格中的可屏蔽图标支持</span><span class="sxs-lookup"><span data-stu-id="07a81-252">Maskable icon support in the Manifest pane</span></span>  
 
-<span data-ttu-id="1ec5e-253">Android Oreo 引入了自适应图标，可在不同的设备模型之间显示各种形状中的应用图标。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-253">Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.</span></span>  <span data-ttu-id="1ec5e-254">**可屏蔽图标**是支持自适应图标的新图标格式，使你可以确保[ PWA ][ProgressiveWebAppsChromiumIndex]图标在支持可屏蔽图标标准的设备上看起来不错。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-254">**Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA][ProgressiveWebAppsChromiumIndex] icon looks good on devices that support the maskable icons standard.</span></span>  
+<span data-ttu-id="07a81-253">Android Oreo 引入了自适应图标，可在不同的设备模型之间显示各种形状中的应用图标。</span><span class="sxs-lookup"><span data-stu-id="07a81-253">Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.</span></span>  <span data-ttu-id="07a81-254">**可屏蔽图标**是支持自适应图标的新图标格式，使你可以确保[ PWA ][ProgressiveWebAppsChromiumIndex]图标在支持可屏蔽图标标准的设备上看起来不错。</span><span class="sxs-lookup"><span data-stu-id="07a81-254">**Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA][ProgressiveWebAppsChromiumIndex] icon looks good on devices that support the maskable icons standard.</span></span>  
 
-<span data-ttu-id="1ec5e-255">在**清单**窗格中启用新的**仅显示可屏蔽图标的最小安全区域**复选框，以检查可屏蔽图标在 Android Oreo 设备上看起来是否良好。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-255">Enable the new **Show only the minimum safe area for maskable icons** checkbox in the **Manifest** pane to check that your maskable icon looks good on Android Oreo devices.</span></span>  
+<span data-ttu-id="07a81-255">在**清单**窗格中启用新的**仅显示可屏蔽图标的最小安全区域**复选框，以检查可屏蔽图标在 Android Oreo 设备上看起来是否良好。</span><span class="sxs-lookup"><span data-stu-id="07a81-255">Enable the new **Show only the minimum safe area for maskable icons** checkbox in the **Manifest** pane to check that your maskable icon looks good on Android Oreo devices.</span></span>  
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
 :::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="仅显示可屏蔽图标的最小安全区域复选框" lightbox="../../media/2020/03/maskable-icons.msft.png":::
-   <span data-ttu-id="1ec5e-257">" **仅显示可屏蔽图标的最小安全区域"** 复选框</span><span class="sxs-lookup"><span data-stu-id="1ec5e-257">The **Show only the minimum safe area for maskable icons** checkbox</span></span>  
+   <span data-ttu-id="07a81-257">" **仅显示可屏蔽图标的最小安全区域"** 复选框</span><span class="sxs-lookup"><span data-stu-id="07a81-257">The **Show only the minimum safe area for maskable icons** checkbox</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="1ec5e-258">此功能在 Microsoft Edge 81 中发布。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-258">This feature launched in Microsoft Edge 81.</span></span>  <span data-ttu-id="1ec5e-259">["DevTools （Microsoft Edge 81）"][WhatsNew81]中的新增功能未涵盖 Microsoft Edge 83 中介绍的更新。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-259">The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].</span></span>  
+> <span data-ttu-id="07a81-258">此功能在 Microsoft Edge 81 中发布。</span><span class="sxs-lookup"><span data-stu-id="07a81-258">This feature launched in Microsoft Edge 81.</span></span>  <span data-ttu-id="07a81-259">["DevTools （Microsoft Edge 81）"][WhatsNew81]中的新增功能未涵盖 Microsoft Edge 83 中介绍的更新。</span><span class="sxs-lookup"><span data-stu-id="07a81-259">The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].</span></span>  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a><span data-ttu-id="1ec5e-260">下载 Microsoft Edge 预览频道</span><span class="sxs-lookup"><span data-stu-id="1ec5e-260">Download the Microsoft Edge preview channels</span></span>  
+## <a name="download-the-microsoft-edge-preview-channels"></a><span data-ttu-id="07a81-260">下载 Microsoft Edge 预览频道</span><span class="sxs-lookup"><span data-stu-id="07a81-260">Download the Microsoft Edge preview channels</span></span>  
 
-<span data-ttu-id="1ec5e-261">如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-261">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="1ec5e-262">预览频道使你能够访问最新的 DevTools 功能。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-262">The preview channels give you access to the latest DevTools features.</span></span>  
+<span data-ttu-id="07a81-261">如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。</span><span class="sxs-lookup"><span data-stu-id="07a81-261">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="07a81-262">预览频道使你能够访问最新的 DevTools 功能。</span><span class="sxs-lookup"><span data-stu-id="07a81-262">The preview channels give you access to the latest DevTools features.</span></span>  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a><span data-ttu-id="1ec5e-263">联系 Microsoft Edge DevTools 团队</span><span class="sxs-lookup"><span data-stu-id="1ec5e-263">Getting in touch with Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a><span data-ttu-id="07a81-263">联系 Microsoft Edge DevTools 团队</span><span class="sxs-lookup"><span data-stu-id="07a81-263">Getting in touch with Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -344,11 +343,11 @@ ms.locfileid: "11398943"
 [GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "灯塔 | GitHub"  
 
 > [!NOTE]
-> <span data-ttu-id="1ec5e-305">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-305">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="1ec5e-306">原始页面位于[此处](https://developers.google.com/web/updates/2020/03/devtools/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-306">The original page is found [here](https://developers.google.com/web/updates/2020/03/devtools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="07a81-305">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="07a81-305">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="07a81-306">原始页面位于[此处](https://developers.google.com/web/updates/2020/03/devtools/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="07a81-306">The original page is found [here](https://developers.google.com/web/updates/2020/03/devtools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="1ec5e-308">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="1ec5e-308">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="07a81-308">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="07a81-308">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

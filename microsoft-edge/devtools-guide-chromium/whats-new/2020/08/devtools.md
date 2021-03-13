@@ -1,135 +1,148 @@
 ---
-description: 将键盘快捷方式匹配到Visual Studio代码、模拟 Surface Duo 和 Samsung 一起折叠、CSS 网格覆盖改进等。
+description: 将键盘快捷方式与Visual Studio代码匹配，模拟 Surface Duo 和 Samsung Fold、CSS 网格覆盖改进等。
 title: 'Microsoft Edge 86 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 3853f097877fc45b14ceb0674309cb35b58a0aa6
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a981c8b1a2658ba8cf771096e63001f7d6f69616
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398614"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408344"
 ---
-# <a name="whats-new-in-devtools-microsoft-edge-86"></a><span data-ttu-id="b836b-104">Microsoft Edge 86 (DevTools 中的新增) </span><span class="sxs-lookup"><span data-stu-id="b836b-104">What's New In DevTools (Microsoft Edge 86)</span></span>  
+<!-- Copyright Jecelyn Yeen 
 
-## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="b836b-105">来自 Microsoft Edge 开发人员工具团队公告</span><span class="sxs-lookup"><span data-stu-id="b836b-105">Announcements from the Microsoft Edge DevTools team</span></span>  
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
+# <a name="whats-new-in-devtools-microsoft-edge-86"></a><span data-ttu-id="4bc6c-104">Microsoft Edge 86 (开发人员工具中的新增) </span><span class="sxs-lookup"><span data-stu-id="4bc6c-104">What's New In DevTools (Microsoft Edge 86)</span></span>  
+
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="4bc6c-105">来自 Microsoft Edge 开发人员工具团队公告</span><span class="sxs-lookup"><span data-stu-id="4bc6c-105">Announcements from the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a><span data-ttu-id="b836b-106">将 DevTools 中的键盘快捷方式与Visual Studio代码匹配</span><span class="sxs-lookup"><span data-stu-id="b836b-106">Match keyboard shortcuts in DevTools to Visual Studio Code</span></span>  
+### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a><span data-ttu-id="4bc6c-106">将 DevTools 中的键盘快捷方式与Visual Studio代码匹配</span><span class="sxs-lookup"><span data-stu-id="4bc6c-106">Match keyboard shortcuts in DevTools to Visual Studio Code</span></span>  
 
-<span data-ttu-id="b836b-107">在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与 Microsoft Visual Studio [代码中的快捷方式匹配][VisualStudioCode]。</span><span class="sxs-lookup"><span data-stu-id="b836b-107">In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Microsoft Visual Studio Code][VisualStudioCode].</span></span>  
+<span data-ttu-id="4bc6c-107">在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与 Microsoft Visual Studio [Code 中的快捷方式相匹配][VisualStudioCode]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-107">In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Microsoft Visual Studio Code][VisualStudioCode].</span></span>  
 
-:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio代码匹配" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
-   <span data-ttu-id="b836b-109">将 DevTools 中的键盘快捷方式与Visual Studio代码匹配</span><span class="sxs-lookup"><span data-stu-id="b836b-109">Match keyboard shortcuts in the DevTools to Visual Studio Code</span></span>  
+:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与代码Visual Studio匹配" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
+   <span data-ttu-id="4bc6c-109">将 DevTools 中的键盘快捷方式与代码Visual Studio匹配</span><span class="sxs-lookup"><span data-stu-id="4bc6c-109">Match keyboard shortcuts in the DevTools to Visual Studio Code</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-110">若要激活此功能，请导航到 ["自定义 Microsoft Edge DevTools"中的键盘快捷方式][DevtoolsCustomizeShortcuts]。</span><span class="sxs-lookup"><span data-stu-id="b836b-110">To activate this feature, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].</span></span>  
+<span data-ttu-id="4bc6c-110">若要激活此功能，请导航到 Microsoft [Edge DevTools][DevtoolsCustomizeShortcuts]中的自定义键盘快捷方式。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-110">To activate this feature, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].</span></span>  
 
-<span data-ttu-id="b836b-111">例如，用于暂停或继续运行代码中的脚本的键盘 [快捷方式Visual Studio为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="b836b-111">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.</span></span>  <span data-ttu-id="b836b-112">使用**DevTools (默认**) 预设，在 DevTools 中相同的快捷方式是，但当你选择 Visual Studio 代码预设时， `F8` 该快捷方式现在也是\*\*\*\* `F5` 。</span><span class="sxs-lookup"><span data-stu-id="b836b-112">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
+<span data-ttu-id="4bc6c-111">例如，用于暂停或继续运行代码中的脚本的键盘快捷方式 [Visual Studio为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-111">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.</span></span>  <span data-ttu-id="4bc6c-112">使用**DevTools (** Default) 预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` \*\*\*\* `F5` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-112">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
 
-<span data-ttu-id="b836b-113">Chromium 问题 [#174309][CR174309]</span><span class="sxs-lookup"><span data-stu-id="b836b-113">Chromium issue [#174309][CR174309]</span></span>  
+<span data-ttu-id="4bc6c-113">Chromium [问题#174309][CR174309]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-113">Chromium issue [#174309][CR174309]</span></span>  
 
-### <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a><span data-ttu-id="b836b-114">模拟 Surface Duo 和 Samsung 一起折叠</span><span class="sxs-lookup"><span data-stu-id="b836b-114">Emulate Surface Duo and Samsung Galaxy Fold</span></span>  
+### <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a><span data-ttu-id="4bc6c-114">模拟 Surface Duo 和 Samsung 为 Fold</span><span class="sxs-lookup"><span data-stu-id="4bc6c-114">Emulate Surface Duo and Samsung Galaxy Fold</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   <span data-ttu-id="b836b-116">实验性功能</span><span class="sxs-lookup"><span data-stu-id="b836b-116">Experimental feature</span></span>  
+   <span data-ttu-id="4bc6c-116">实验性功能</span><span class="sxs-lookup"><span data-stu-id="4bc6c-116">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-117">现在，你能够在两台新设备上测试网站或应用的外观：Microsoft Edge 中的 Surface  [Duo 和][MicrosoftSurfaceDevicesDuo] [Samsung 更新][SamsungMobileGalaxyFold] 折线。</span><span class="sxs-lookup"><span data-stu-id="b836b-117">You are now able to test the look and feel of your website or app on two new devices:  [Surface Duo][MicrosoftSurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.</span></span>  
+<span data-ttu-id="4bc6c-117">现在，你能够在两台新设备上测试网站或应用的外观：Microsoft Edge 中的 Surface [Duo][MicrosoftSurfaceDevicesDuo]和[Samsung Foldy Fold。][SamsungMobileGalaxyFold]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-117">You are now able to test the look and feel of your website or app on two new devices:  [Surface Duo][MicrosoftSurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.</span></span>  
 
-<span data-ttu-id="b836b-118">为了帮助增强适用于双屏和可折叠设备的网站或应用，在模拟设备时，请使用 [以下功能][DevtoolsDeviceModeIndex]。</span><span class="sxs-lookup"><span data-stu-id="b836b-118">To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].</span></span>  
+<span data-ttu-id="4bc6c-118">为了帮助增强用于双屏和可折叠设备的网站或应用，在模拟设备时使用以下 [功能][DevtoolsDeviceModeIndex]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-118">To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].</span></span>  
 
-*   <span data-ttu-id="b836b-119">[跨越，][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]即你的网站 \ (或 app\) 跨两个屏幕显示。</span><span class="sxs-lookup"><span data-stu-id="b836b-119">[Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.</span></span>
-*   <span data-ttu-id="b836b-120">[呈现接层][DualScreenIntroductionHowWorkSeam]，这是两个屏幕之间的空间。</span><span class="sxs-lookup"><span data-stu-id="b836b-120">[Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.</span></span>
-*   <span data-ttu-id="b836b-121">[使实验性 Web 平台 API][DevtoolsExperimentalFeaturesEnableExperimentalApis]能够访问新的[CSS 媒体][DualScreenWebCssMediaSpanning]屏幕跨越功能以及[JavaScript getWindowSegments API。][DualScreenWebJavascriptGetwindowsegments]</span><span class="sxs-lookup"><span data-stu-id="b836b-121">[Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].</span></span>  
+*   <span data-ttu-id="4bc6c-119">[跨区][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]，即你的网站 \ (或 app\) 显示在两个屏幕上时。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-119">[Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.</span></span>
+*   <span data-ttu-id="4bc6c-120">[呈现接层][DualScreenIntroductionHowWorkSeam]，这是两个屏幕之间的空间。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-120">[Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.</span></span>
+*   <span data-ttu-id="4bc6c-121">[启用实验性 Web 平台 API][DevtoolsExperimentalFeaturesEnableExperimentalApis]以访问新的[CSS 媒体][DualScreenWebCssMediaSpanning]屏幕跨越功能以及[JavaScript getWindowSegments API。][DualScreenWebJavascriptGetwindowsegments]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-121">[Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].</span></span>  
 
-:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Surface Duo 的设备仿真" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
-   <span data-ttu-id="b836b-123">Surface Duo 的设备仿真</span><span class="sxs-lookup"><span data-stu-id="b836b-123">Device emulation for Surface Duo</span></span>  
+:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Surface Duo 的设备模拟" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
+   <span data-ttu-id="4bc6c-123">Surface Duo 的设备模拟</span><span class="sxs-lookup"><span data-stu-id="4bc6c-123">Device emulation for Surface Duo</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-124">若要打开此实验功能，请导航到" [打开实验][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] 功能"并选择模拟旁边的复选框： **支持双屏模式**。</span><span class="sxs-lookup"><span data-stu-id="b836b-124">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Emulation: Support dual screen mode**.</span></span>  
+<span data-ttu-id="4bc6c-124">若要启用此实验功能，请 [导航到打开][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] 实验功能，然后选择模拟 **：支持双屏**模式旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-124">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Emulation: Support dual screen mode**.</span></span>  
 
-<span data-ttu-id="b836b-125">有关此实验的信息，请导航到仿真 [：支持双屏模式][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]。</span><span class="sxs-lookup"><span data-stu-id="b836b-125">For more information about this experiment, navigate to [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].</span></span>  
+<span data-ttu-id="4bc6c-125">有关此实验详细信息，请导航到仿真 [：支持双屏模式][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-125">For more information about this experiment, navigate to [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].</span></span>  
 
-<span data-ttu-id="b836b-126">Chromium 问题 [：#1054281][CR1054281]</span><span class="sxs-lookup"><span data-stu-id="b836b-126">Chromium issue: [#1054281][CR1054281]</span></span>  
+<span data-ttu-id="4bc6c-126">Chromium 问题 [：#1054281][CR1054281]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-126">Chromium issue: [#1054281][CR1054281]</span></span>  
 
-### <a name="css-grid-overlay-improvements-and-new-experimental-grid-features"></a><span data-ttu-id="b836b-127">CSS 网格覆盖改进和新的实验网格功能</span><span class="sxs-lookup"><span data-stu-id="b836b-127">CSS grid overlay improvements and new experimental grid features</span></span>  
+### <a name="css-grid-overlay-improvements-and-new-experimental-grid-features"></a><span data-ttu-id="4bc6c-127">CSS 网格覆盖改进和新的实验网格功能</span><span class="sxs-lookup"><span data-stu-id="4bc6c-127">CSS grid overlay improvements and new experimental grid features</span></span>  
 
-<span data-ttu-id="b836b-128">感谢你提供有关改进的 CSS 网格覆盖的正面反馈。</span><span class="sxs-lookup"><span data-stu-id="b836b-128">Thank you for the positive feedback about the improved CSS grid overlays.</span></span>  <span data-ttu-id="b836b-129">CSS 网格覆盖现在默认启用，不需要你打开实验。</span><span class="sxs-lookup"><span data-stu-id="b836b-129">The CSS grid overlays are now enabled by default and do not require you to turn on an experiment.</span></span>  
+<span data-ttu-id="4bc6c-128">感谢你提供有关改进的 CSS 网格覆盖的正面反馈。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-128">Thank you for the positive feedback about the improved CSS grid overlays.</span></span>  <span data-ttu-id="4bc6c-129">CSS 网格覆盖现在默认启用，不需要你启用实验。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-129">The CSS grid overlays are now enabled by default and do not require you to turn on an experiment.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="文章元素的 CSS 网格覆盖" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
-   <span data-ttu-id="b836b-131">元素的 CSS 网格 `article` 覆盖</span><span class="sxs-lookup"><span data-stu-id="b836b-131">CSS grid overlay for `article` element</span></span>  
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="article 元素的 CSS 网格覆盖" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+   <span data-ttu-id="4bc6c-131">元素的 CSS 网格 `article` 覆盖</span><span class="sxs-lookup"><span data-stu-id="4bc6c-131">CSS grid overlay for `article` element</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="b836b-132">有关网格覆盖层详细信息，请导航到 [CSS 网格调试功能][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]。</span><span class="sxs-lookup"><span data-stu-id="b836b-132">For more information about grid overlays, navigate to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].</span></span>  
+> <span data-ttu-id="4bc6c-132">有关网格覆盖层详细信息，请导航到 [CSS 网格调试功能][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-132">For more information about grid overlays, navigate to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].</span></span>  
 
-<span data-ttu-id="b836b-133">Microsoft Edge DevTools 团队和 Chrome DevTools 团队协作处理其他功能。</span><span class="sxs-lookup"><span data-stu-id="b836b-133">The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.</span></span>  <span data-ttu-id="b836b-134">新功能包括多个覆盖，这些覆盖从"元素"工具上的新"布局\*\*\*\*"窗格持久且**可配置**。</span><span class="sxs-lookup"><span data-stu-id="b836b-134">The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.</span></span>  
+<span data-ttu-id="4bc6c-133">Microsoft Edge DevTools 团队和 Chrome DevTools 团队共同协作开发其他功能。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-133">The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.</span></span>  <span data-ttu-id="4bc6c-134">新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"\*\*\*\* 工具上的新"布局"窗格**可配置**。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-134">The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.</span></span>  
 
-<span data-ttu-id="b836b-135">若要启用此实验性功能，请导航[][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]到"打开实验功能"并选择"启用新的 CSS 网格调试功能 (配置选项旁边的复选框，这些配置选项在重启后在元素的布局边栏窗格中 \*\*) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="b836b-135">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.</span></span>  
+<span data-ttu-id="4bc6c-135">若要启用此实验性功能，请导航[][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]到"打开实验功能"，并选中"重启后元素"中的"布局边栏"窗格中"启用新的 CSS 网格调试功能\*\* (配置\*\*选项"旁边的复选框) 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-135">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.</span></span>  
 
-<span data-ttu-id="b836b-136">有关此实验的信息，请导航到["启用新的 CSS 网格调试功能"。][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]</span><span class="sxs-lookup"><span data-stu-id="b836b-136">For more information about this experiment, navigate to [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].</span></span>  
+<span data-ttu-id="4bc6c-136">有关此实验详细信息，请导航到启用 [新的 CSS 网格调试功能][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-136">For more information about this experiment, navigate to [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].</span></span>  
 
-<span data-ttu-id="b836b-137">Chromium 问题 [：#1047356][CR1047356]</span><span class="sxs-lookup"><span data-stu-id="b836b-137">Chromium issue: [#1047356][CR1047356]</span></span>  
+<span data-ttu-id="4bc6c-137">Chromium 问题 [：#1047356][CR1047356]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-137">Chromium issue: [#1047356][CR1047356]</span></span>  
 
-### <a name="table-copied-from-the-console-preserves-formatting"></a><span data-ttu-id="b836b-138">从控制台复制的表保留格式</span><span class="sxs-lookup"><span data-stu-id="b836b-138">Table copied from the Console preserves formatting</span></span>  
+### <a name="table-copied-from-the-console-preserves-formatting"></a><span data-ttu-id="4bc6c-138">从控制台复制的表保留格式</span><span class="sxs-lookup"><span data-stu-id="4bc6c-138">Table copied from the Console preserves formatting</span></span>  
 
-<span data-ttu-id="b836b-139">在 Microsoft Edge 85 或更早版本中，复制的格式 `console.table` 丢失。</span><span class="sxs-lookup"><span data-stu-id="b836b-139">In Microsoft Edge 85 or earlier, the formatting of a copied `console.table` was lost.</span></span>  <span data-ttu-id="b836b-140">如果复制了来自 [表控制台][DevtoolsConsoleApiTable] API 的输出并粘贴它，则只保留该表的文本。</span><span class="sxs-lookup"><span data-stu-id="b836b-140">If you copied the output from the [table][DevtoolsConsoleApiTable] Console API, and pasted it, only the text of the table was kept.</span></span>  
+<span data-ttu-id="4bc6c-139">在 Microsoft Edge 85 或更早版本中，复制的格式 `console.table` 丢失。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-139">In Microsoft Edge 85 or earlier, the formatting of a copied `console.table` was lost.</span></span>  <span data-ttu-id="4bc6c-140">如果从表控制台 API 复制[][DevtoolsConsoleApiTable]并粘贴了输出，则仅保留表的文本。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-140">If you copied the output from the [table][DevtoolsConsoleApiTable] Console API, and pasted it, only the text of the table was kept.</span></span>  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Microsoft Edge 85 或更早版本中的表控制台 API 输出" lightbox="../../media/2020/08/console-table-beta.msft.png":::
-         `table` <span data-ttu-id="b836b-142">Microsoft Edge 85 或更早版本中的控制台 API 输出</span><span class="sxs-lookup"><span data-stu-id="b836b-142">Console API output in Microsoft Edge 85 or earlier</span></span>  
+      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="表 Microsoft Edge 85 或更早版本中的控制台 API 输出" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+         `table` <span data-ttu-id="4bc6c-142">Microsoft Edge 85 或更早版本中的控制台 API 输出</span><span class="sxs-lookup"><span data-stu-id="4bc6c-142">Console API output in Microsoft Edge 85 or earlier</span></span>  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="Microsoft Edge 85 或更早版本粘贴到 Visual Studio 代码的表控制台 API 输出" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` <span data-ttu-id="b836b-144">Microsoft Edge 85 或更早版本粘贴到 Visual Studio 代码中的控制台 API 输出</span><span class="sxs-lookup"><span data-stu-id="b836b-144">Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code</span></span>  
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 Microsoft Edge 85 或更早版本粘贴到 microsoft Edge 85 或更早版本Visual Studio代码" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+         `table` <span data-ttu-id="4bc6c-144">Microsoft Edge 85 或更早版本粘贴到 microsoft Edge 85 或早期版本中的控制台 API Visual Studio代码</span><span class="sxs-lookup"><span data-stu-id="4bc6c-144">Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="b836b-145">在 Microsoft Edge 86 或更高版本中，从 **控制台**复制表时，格式设置现已保留。</span><span class="sxs-lookup"><span data-stu-id="b836b-145">In Microsoft Edge 86 or later, when you copy a table from the **Console**, the formatting is now preserved.</span></span>  
+<span data-ttu-id="4bc6c-145">在 Microsoft Edge 86 或更高版本中，从 **控制台**复制表时，格式设置现已保留。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-145">In Microsoft Edge 86 or later, when you copy a table from the **Console**, the formatting is now preserved.</span></span>  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Microsoft Edge 86 或更高版本中的表控制台 API 输出" lightbox="../../media/2020/08/console-table-canary.msft.png":::
-         `table` <span data-ttu-id="b836b-147">Microsoft Edge 86 或更高版本中的控制台 API 输出</span><span class="sxs-lookup"><span data-stu-id="b836b-147">Console API output in Microsoft Edge 86 or later</span></span>  
+      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="表 Microsoft Edge 86 或更高版本中的控制台 API 输出" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+         `table` <span data-ttu-id="4bc6c-147">Microsoft Edge 86 或更高版本中的控制台 API 输出</span><span class="sxs-lookup"><span data-stu-id="4bc6c-147">Console API output in Microsoft Edge 86 or later</span></span>  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Microsoft Edge 86 或更高版本的表控制台 API 输出粘贴到Visual Studio代码" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` <span data-ttu-id="b836b-149">Microsoft Edge 86 或更高版本的控制台 API 输出粘贴到Visual Studio代码</span><span class="sxs-lookup"><span data-stu-id="b836b-149">Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code</span></span>  
+      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 Microsoft Edge 86 或更高版本的控制台 API 输出粘贴到 Visual Studio 代码中" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+         `table` <span data-ttu-id="4bc6c-149">Microsoft Edge 86 或更高版本的控制台 API 输出粘贴到Visual Studio代码中</span><span class="sxs-lookup"><span data-stu-id="4bc6c-149">Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="b836b-150">Chromium 问题：[#1115011][CR1115011]</span><span class="sxs-lookup"><span data-stu-id="b836b-150">Chromium issue: [#1115011][CR1115011]</span></span>  
+<span data-ttu-id="4bc6c-150">Chromium 问题：[#1115011][CR1115011]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-150">Chromium issue: [#1115011][CR1115011]</span></span>  
 
-### <a name="source-order-viewer-for-easier-accessibility-testing"></a><span data-ttu-id="b836b-151">源订单查看器，便于辅助功能测试</span><span class="sxs-lookup"><span data-stu-id="b836b-151">Source Order Viewer for easier accessibility testing</span></span>  
+### <a name="source-order-viewer-for-easier-accessibility-testing"></a><span data-ttu-id="4bc6c-151">源订单查看器，便于辅助功能测试</span><span class="sxs-lookup"><span data-stu-id="4bc6c-151">Source Order Viewer for easier accessibility testing</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   <span data-ttu-id="b836b-153">实验性功能</span><span class="sxs-lookup"><span data-stu-id="b836b-153">Experimental feature</span></span>  
+   <span data-ttu-id="4bc6c-153">实验性功能</span><span class="sxs-lookup"><span data-stu-id="4bc6c-153">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-154">新的辅助功能帮助程序显示源中元素的顺序。</span><span class="sxs-lookup"><span data-stu-id="b836b-154">The new accessibility helper displays the order of elements in the source.</span></span>  
+<span data-ttu-id="4bc6c-154">新的辅助功能帮助程序显示源中元素的顺序。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-154">The new accessibility helper displays the order of elements in the source.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="激活"显示源顺序"" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
-   <span data-ttu-id="b836b-156">激活 **"显示源顺序"**</span><span class="sxs-lookup"><span data-stu-id="b836b-156">Activate **Show source order**</span></span>  
+:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="激活 显示源顺序" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
+   <span data-ttu-id="4bc6c-156">激活 **显示源顺序**</span><span class="sxs-lookup"><span data-stu-id="4bc6c-156">Activate **Show source order**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-157">利用此功能，可以更轻松地测试屏幕阅读器和键盘用户体验网站或应用的方式。</span><span class="sxs-lookup"><span data-stu-id="b836b-157">This feature makes it easier to test the way screen reader and keyboard users experience your website or app.</span></span>  <span data-ttu-id="b836b-158">屏幕阅读器和键盘导航取决于网站或应用的源代码中按特定顺序放置的内容，以便与呈现的页面匹配。</span><span class="sxs-lookup"><span data-stu-id="b836b-158">Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.</span></span>  <span data-ttu-id="b836b-159">源订单查看器显示呈现的页面和源代码之间潜在的顺序差异。</span><span class="sxs-lookup"><span data-stu-id="b836b-159">The Source Order Viewer displays potential differences in order between the rendered page and the source code.</span></span>  
+<span data-ttu-id="4bc6c-157">利用此功能，可以更轻松地测试屏幕阅读器和键盘用户体验网站或应用的方式。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-157">This feature makes it easier to test the way screen reader and keyboard users experience your website or app.</span></span>  <span data-ttu-id="4bc6c-158">屏幕阅读器和键盘导航取决于网站或应用的源代码中按特定顺序放置的内容，以便与呈现的页面匹配。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-158">Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.</span></span>  <span data-ttu-id="4bc6c-159">源顺序查看器显示呈现的页面和源代码之间潜在的顺序差异。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-159">The Source Order Viewer displays potential differences in order between the rendered page and the source code.</span></span>  
 
-<span data-ttu-id="b836b-160">若要打开此实验性功能，请导航到 ["打开实验][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] 功能"，然后选择"启用源 **订单查看器"旁边的复选框**。</span><span class="sxs-lookup"><span data-stu-id="b836b-160">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Source Order Viewer**.</span></span>  
+<span data-ttu-id="4bc6c-160">若要启用此实验功能，请导航到打开 [实验][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] 功能，然后选择启用 **源订单**查看器旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-160">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Source Order Viewer**.</span></span>  
 
-<span data-ttu-id="b836b-161">有关此实验详细信息，请导航到["启用源订单查看器"。][DevtoolsExperimentalFeaturesEnableSourceOrderViewer]</span><span class="sxs-lookup"><span data-stu-id="b836b-161">For more information about this experiment, navigate to [Enable Source Order Viewer][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].</span></span>  
+<span data-ttu-id="4bc6c-161">有关此实验详细信息，请导航到"[启用源订单查看器"。][DevtoolsExperimentalFeaturesEnableSourceOrderViewer]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-161">For more information about this experiment, navigate to [Enable Source Order Viewer][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].</span></span>  
 
-<span data-ttu-id="b836b-162">Chromium 问题 [：#1094406][CR1094406]</span><span class="sxs-lookup"><span data-stu-id="b836b-162">Chromium issue: [#1094406][CR1094406]</span></span>  
+<span data-ttu-id="4bc6c-162">Chromium 问题 [：#1094406][CR1094406]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-162">Chromium issue: [#1094406][CR1094406]</span></span>  
 
 <!--
 ### DevTools language enhancements  
@@ -154,228 +167,228 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 The current effort to improve translation quality enables easier support for more languages in the future.  
 -->  
 
-### <a name="highlight-all-search-results-in-elements-tool"></a><span data-ttu-id="b836b-163">在"元素"工具中突出显示所有搜索结果</span><span class="sxs-lookup"><span data-stu-id="b836b-163">Highlight all search results in Elements tool</span></span>  
+### <a name="highlight-all-search-results-in-elements-tool"></a><span data-ttu-id="4bc6c-163">在"元素"工具中突出显示所有搜索结果</span><span class="sxs-lookup"><span data-stu-id="4bc6c-163">Highlight all search results in Elements tool</span></span>  
 
-<span data-ttu-id="b836b-164">在 Microsoft Edge 84 和 85 中\*\*\*\*，"元素"工具的第一个搜索结果未突出显示。</span><span class="sxs-lookup"><span data-stu-id="b836b-164">In Microsoft Edge 84 and 85, the first search result in the **Elements** tool did not highlight.</span></span>  <span data-ttu-id="b836b-165">其余搜索结果已正确突出显示。</span><span class="sxs-lookup"><span data-stu-id="b836b-165">The remaining search results were highlighted correctly.</span></span>  
+<span data-ttu-id="4bc6c-164">在 Microsoft Edge 84 和 85 中\*\*\*\*，"元素"工具的第一个搜索结果未突出显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-164">In Microsoft Edge 84 and 85, the first search result in the **Elements** tool did not highlight.</span></span>  <span data-ttu-id="4bc6c-165">其余搜索结果已正确突出显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-165">The remaining search results were highlighted correctly.</span></span>  
 
-<span data-ttu-id="b836b-166">感谢你发送反馈并帮助改进 Chromium。</span><span class="sxs-lookup"><span data-stu-id="b836b-166">Thank you for sending your feedback and helping improve Chromium.</span></span>  <span data-ttu-id="b836b-167">您的反馈发现了#1103316 [][CR1103316] Chromium 项目中的问题。</span><span class="sxs-lookup"><span data-stu-id="b836b-167">Your feedback uncovered Issue [#1103316][CR1103316] in the open-source Chromium project.</span></span>  
+<span data-ttu-id="4bc6c-166">感谢你发送反馈并帮助改进 Chromium。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-166">Thank you for sending your feedback and helping improve Chromium.</span></span>  <span data-ttu-id="4bc6c-167">您的反馈发现了#1103316 [][CR1103316] Chromium 项目中的问题。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-167">Your feedback uncovered Issue [#1103316][CR1103316] in the open-source Chromium project.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="突出显示 Microsoft Edge 84 或更高版本中的"元素"面板上的第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   <span data-ttu-id="b836b-169">在 Microsoft Edge \*\*\*\* 84 或更高版本的元素工具上突出显示第一个搜索结果</span><span class="sxs-lookup"><span data-stu-id="b836b-169">Highlighted first search result on **Elements** tool in Microsoft Edge 84 or later</span></span>  
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 Microsoft Edge 84 或更高版本的元素面板上突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+   <span data-ttu-id="4bc6c-169">在 Microsoft Edge 84 **或更高版本** 的元素工具上突出显示第一个搜索结果</span><span class="sxs-lookup"><span data-stu-id="4bc6c-169">Highlighted first search result on **Elements** tool in Microsoft Edge 84 or later</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-170">此问题现已在 Microsoft Edge 的所有版本中得到解决。</span><span class="sxs-lookup"><span data-stu-id="b836b-170">The issue is now fixed in all versions of Microsoft Edge.</span></span>  
+<span data-ttu-id="4bc6c-170">此问题现已在所有版本的 Microsoft Edge 中修复。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-170">The issue is now fixed in all versions of Microsoft Edge.</span></span>  
 
-<span data-ttu-id="b836b-171">Chromium 问题 [：#1103316][CR1103316]</span><span class="sxs-lookup"><span data-stu-id="b836b-171">Chromium issue: [#1103316][CR1103316]</span></span>  
+<span data-ttu-id="4bc6c-171">Chromium 问题 [：#1103316][CR1103316]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-171">Chromium issue: [#1103316][CR1103316]</span></span>  
 
-## <a name="announcements-from-the-chromium-project"></a><span data-ttu-id="b836b-172">来自 Chromium 项目的公告</span><span class="sxs-lookup"><span data-stu-id="b836b-172">Announcements from the Chromium project</span></span>  
+## <a name="announcements-from-the-chromium-project"></a><span data-ttu-id="4bc6c-172">来自 Chromium 项目的公告</span><span class="sxs-lookup"><span data-stu-id="4bc6c-172">Announcements from the Chromium project</span></span>  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### <a name="new-media-tool"></a><span data-ttu-id="b836b-173">新媒体工具</span><span class="sxs-lookup"><span data-stu-id="b836b-173">New Media tool</span></span>  
+### <a name="new-media-tool"></a><span data-ttu-id="4bc6c-173">新媒体工具</span><span class="sxs-lookup"><span data-stu-id="4bc6c-173">New Media tool</span></span>  
 
-<span data-ttu-id="b836b-174">DevTools 现在在媒体工具中显示 [媒体播放器][DevtoolsMediaPanelIndex] 信息。</span><span class="sxs-lookup"><span data-stu-id="b836b-174">DevTools now displays media players information in the [Media][DevtoolsMediaPanelIndex] tool.</span></span>  
+<span data-ttu-id="4bc6c-174">DevTools 现在在媒体工具中显示媒体 [播放器][DevtoolsMediaPanelIndex] 信息。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-174">DevTools now displays media players information in the [Media][DevtoolsMediaPanelIndex] tool.</span></span>  
 
-<span data-ttu-id="b836b-175">若要打开新的 **媒体** 工具，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="b836b-175">To open the new **Media** tool, complete the following step.</span></span>  
+<span data-ttu-id="4bc6c-175">若要打开新的 **媒体工具** ，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-175">To open the new **Media** tool, complete the following step.</span></span>  
 
-1.  <span data-ttu-id="b836b-176">Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Media**.</span><span class="sxs-lookup"><span data-stu-id="b836b-176">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.</span></span>  
+1.  <span data-ttu-id="4bc6c-176">Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Media**.</span><span class="sxs-lookup"><span data-stu-id="4bc6c-176">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.</span></span>  
     
     :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具" lightbox="../../media/2020/08/media-panel.msft.png":::
-       <span data-ttu-id="b836b-178">新 **媒体** 工具</span><span class="sxs-lookup"><span data-stu-id="b836b-178">New **Media** tool</span></span>  
+       <span data-ttu-id="4bc6c-178">新 **媒体** 工具</span><span class="sxs-lookup"><span data-stu-id="4bc6c-178">New **Media** tool</span></span>  
     :::image-end:::  
 
-<span data-ttu-id="b836b-179">在 DevTools 中的新 **媒体** 工具之前，有关视频播放器的日志记录和调试信息位于"最近使用播放器 **"** 设置下。</span><span class="sxs-lookup"><span data-stu-id="b836b-179">Before the new **Media** tool in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.</span></span>  <span data-ttu-id="b836b-180">若要打开 **"最近的玩家"** 设置，请导航 `edge://media-internals` 到并选择 **"玩家"** 工具。</span><span class="sxs-lookup"><span data-stu-id="b836b-180">To open the **Recent Players** setting, navigate to `edge://media-internals` and choose the **Players** tool.</span></span>  
+<span data-ttu-id="4bc6c-179">在 DevTools 中的新 **媒体** 工具之前，有关视频播放器的日志记录和调试信息位于" **最近使用播放器"** 设置下。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-179">Before the new **Media** tool in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.</span></span>  <span data-ttu-id="4bc6c-180">若要打开" **最近的玩家"** 设置，请导航 `edge://media-internals` 到并选择 **"玩家"** 工具。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-180">To open the **Recent Players** setting, navigate to `edge://media-internals` and choose the **Players** tool.</span></span>  
 
-<span data-ttu-id="b836b-181">更快速地查看实时内容并检查潜在问题，包括以下示例。</span><span class="sxs-lookup"><span data-stu-id="b836b-181">View live content and inspect potential issues more quickly, including the following examples.</span></span>  
+<span data-ttu-id="4bc6c-181">更快查看实时内容并检查潜在问题，包括以下示例。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-181">View live content and inspect potential issues more quickly, including the following examples.</span></span>  
 
-*   <span data-ttu-id="b836b-182">为什么丢弃帧？</span><span class="sxs-lookup"><span data-stu-id="b836b-182">Why frames are dropped?</span></span>  
-*   <span data-ttu-id="b836b-183">为什么 JavaScript 以意外方式与玩家交互？</span><span class="sxs-lookup"><span data-stu-id="b836b-183">Why JavaScript is interacting with the player in an unexpected way?</span></span>  
+*   <span data-ttu-id="4bc6c-182">为什么丢弃帧？</span><span class="sxs-lookup"><span data-stu-id="4bc6c-182">Why frames are dropped?</span></span>  
+*   <span data-ttu-id="4bc6c-183">为什么 JavaScript 以意外方式与玩家交互？</span><span class="sxs-lookup"><span data-stu-id="4bc6c-183">Why JavaScript is interacting with the player in an unexpected way?</span></span>  
 
-### <a name="capture-node-screenshots-using-the-elements-tool-context-menu"></a><span data-ttu-id="b836b-184">使用"元素"工具上下文菜单捕获节点屏幕截图</span><span class="sxs-lookup"><span data-stu-id="b836b-184">Capture node screenshots using the Elements tool context menu</span></span>  
+### <a name="capture-node-screenshots-using-the-elements-tool-context-menu"></a><span data-ttu-id="4bc6c-184">使用"元素"工具上下文菜单捕获节点屏幕截图</span><span class="sxs-lookup"><span data-stu-id="4bc6c-184">Capture node screenshots using the Elements tool context menu</span></span>  
 
-<span data-ttu-id="b836b-185">现在，可以使用"元素"工具中的上下文菜单捕获 **节点** 屏幕截图。</span><span class="sxs-lookup"><span data-stu-id="b836b-185">You may now capture node screenshots using the context menu in the **Elements** tool.</span></span>  
+<span data-ttu-id="4bc6c-185">现在，可以使用"元素"工具中的上下文菜单捕获 **节点屏幕截图** 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-185">You may now capture node screenshots using the context menu in the **Elements** tool.</span></span>  
 
-<span data-ttu-id="b836b-186">例如，若要获取目录的屏幕截图，请将鼠标悬停在元素上，打开上下文菜单 \ (右键单击\) ，然后选择"捕获" **节点屏幕截图**。</span><span class="sxs-lookup"><span data-stu-id="b836b-186">For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.</span></span>  
+<span data-ttu-id="4bc6c-186">例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择捕获 **节点屏幕截图**。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-186">For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
-   <span data-ttu-id="b836b-188">捕获节点屏幕截图</span><span class="sxs-lookup"><span data-stu-id="b836b-188">Capture node screenshots</span></span>  
+   <span data-ttu-id="4bc6c-188">捕获节点屏幕截图</span><span class="sxs-lookup"><span data-stu-id="4bc6c-188">Capture node screenshots</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-189">Chromium 问题 [：#1100253][CR1100253]</span><span class="sxs-lookup"><span data-stu-id="b836b-189">Chromium issue: [#1100253][CR1100253]</span></span>  
+<span data-ttu-id="4bc6c-189">Chromium 问题 [：#1100253][CR1100253]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-189">Chromium issue: [#1100253][CR1100253]</span></span>  
 
-### <a name="issues-tool-updates"></a><span data-ttu-id="b836b-190">问题工具更新</span><span class="sxs-lookup"><span data-stu-id="b836b-190">Issues tool updates</span></span>  
+### <a name="issues-tool-updates"></a><span data-ttu-id="4bc6c-190">问题工具更新</span><span class="sxs-lookup"><span data-stu-id="4bc6c-190">Issues tool updates</span></span>  
 
-<span data-ttu-id="b836b-191">控制台工具上的"问题"\*\*\*\* 警告栏现在替换为常规消息。</span><span class="sxs-lookup"><span data-stu-id="b836b-191">The Issues warning bar on the **Console** tool is now replaced with a regular message.</span></span>  
+<span data-ttu-id="4bc6c-191">控制台工具上的" **问题"警告** 栏现已替换为常规消息。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-191">The Issues warning bar on the **Console** tool is now replaced with a regular message.</span></span>  
 
 <!--todo: this figure need to be updated  -->  
 
 :::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="控制台消息中的问题" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
-   <span data-ttu-id="b836b-193">控制台消息中的问题</span><span class="sxs-lookup"><span data-stu-id="b836b-193">Issues in console message</span></span>  
+   <span data-ttu-id="4bc6c-193">控制台消息中的问题</span><span class="sxs-lookup"><span data-stu-id="4bc6c-193">Issues in console message</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-194">默认情况下，第三方 Cookie 问题在"问题"工具 **中处于隐藏** 状态。</span><span class="sxs-lookup"><span data-stu-id="b836b-194">Third-party cookie issues are now hidden by default in the **Issues** tool.</span></span>  <span data-ttu-id="b836b-195">启用新的 **"包含第三方 Cookie 问题** "复选框以查看问题。</span><span class="sxs-lookup"><span data-stu-id="b836b-195">Enable the new **Include third-party cookie issues** checkbox to view the issues.</span></span>  
+<span data-ttu-id="4bc6c-194">默认情况下，第三方 Cookie 问题在"问题"工具中 **处于隐藏** 状态。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-194">Third-party cookie issues are now hidden by default in the **Issues** tool.</span></span>  <span data-ttu-id="4bc6c-195">启用新的 **"包含第三方 Cookie 问题** "复选框以查看问题。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-195">Enable the new **Include third-party cookie issues** checkbox to view the issues.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="第三方 Cookie 问题复选框" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
-   <span data-ttu-id="b836b-197">第三方 Cookie 问题复选框</span><span class="sxs-lookup"><span data-stu-id="b836b-197">third-party cookie issues checkbox</span></span>  
+   <span data-ttu-id="4bc6c-197">第三方 Cookie 问题复选框</span><span class="sxs-lookup"><span data-stu-id="4bc6c-197">third-party cookie issues checkbox</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-198">Chromium 问题：1096481、1068116、1080589 [][CR1096481] [][CR1068116] [][CR1080589]</span><span class="sxs-lookup"><span data-stu-id="b836b-198">Chromium issues: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]</span></span>  
+<span data-ttu-id="4bc6c-198">Chromium 问题：1096481、1068116、1080589 [][CR1096481] [][CR1068116] [][CR1080589]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-198">Chromium issues: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]</span></span>  
 
-### <a name="emulate-missing-local-fonts"></a><span data-ttu-id="b836b-199">模拟缺少的本地字体</span><span class="sxs-lookup"><span data-stu-id="b836b-199">Emulate missing local fonts</span></span>  
+### <a name="emulate-missing-local-fonts"></a><span data-ttu-id="4bc6c-199">模拟缺少的本地字体</span><span class="sxs-lookup"><span data-stu-id="4bc6c-199">Emulate missing local fonts</span></span>  
 
-<span data-ttu-id="b836b-200">打开 [呈现工具并使用][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] 新的"禁用本地 **字体** "功能模拟规则 `local()` 中缺少 `@font-face` 的源。</span><span class="sxs-lookup"><span data-stu-id="b836b-200">Open the [Rendering tool][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] and use the new **Disable local fonts** feature to emulate missing `local()` sources in `@font-face` rules.</span></span>  
+<span data-ttu-id="4bc6c-200">打开 ["呈现"工具][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] 并使用新的 **"禁用本地字体"功能** 模拟规则 `local()` 中缺少 `@font-face` 的源。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-200">Open the [Rendering tool][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] and use the new **Disable local fonts** feature to emulate missing `local()` sources in `@font-face` rules.</span></span>  
 
-<span data-ttu-id="b836b-201">例如，当字体安装在设备上并且规则使用它作为字体时，Microsoft Edge 将使用设备中的本地 `Rubik` `@font-face src` `local()` 字体文件。</span><span class="sxs-lookup"><span data-stu-id="b836b-201">For example, when the `Rubik` font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.</span></span>  
+<span data-ttu-id="4bc6c-201">例如，当字体安装在你的设备上并且该规则使用它作为字体时，Microsoft Edge 将使用你的设备中的 `Rubik` `@font-face src` `local()` 本地字体文件。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-201">For example, when the `Rubik` font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.</span></span>  
 
-<span data-ttu-id="b836b-202">启用 **"禁用本地字体** "后，DevTools 将忽略 `local()` 这些字体，然后从网络提取每个字体。</span><span class="sxs-lookup"><span data-stu-id="b836b-202">When **Disable local fonts** is enabled, DevTools ignores the `local()` fonts and fetches each from the network.</span></span>  
+<span data-ttu-id="4bc6c-202">启用 **"禁用本地** 字体"后，DevTools 将忽略 `local()` 字体，并提取网络的每个字体。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-202">When **Disable local fonts** is enabled, DevTools ignores the `local()` fonts and fetches each from the network.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="模拟缺少的本地字体" lightbox="../../media/2020/08/disable-font.msft.png":::
-   <span data-ttu-id="b836b-204">模拟缺少的本地字体</span><span class="sxs-lookup"><span data-stu-id="b836b-204">Emulate missing local fonts</span></span>  
+   <span data-ttu-id="4bc6c-204">模拟缺少的本地字体</span><span class="sxs-lookup"><span data-stu-id="4bc6c-204">Emulate missing local fonts</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-205">如果在开发过程中使用同一字体的两个不同副本，例如以下示例。</span><span class="sxs-lookup"><span data-stu-id="b836b-205">If you use two different copies of the same font during development, such as the following examples.</span></span>  
+<span data-ttu-id="4bc6c-205">如果在开发过程中使用同一字体的两个不同副本，例如以下示例。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-205">If you use two different copies of the same font during development, such as the following examples.</span></span>  
 
-*   <span data-ttu-id="b836b-206">设计工具的本地字体。</span><span class="sxs-lookup"><span data-stu-id="b836b-206">A local font for your design tools.</span></span>  
-*   <span data-ttu-id="b836b-207">代码的 Web 字体。</span><span class="sxs-lookup"><span data-stu-id="b836b-207">A web font for your code.</span></span>  
+*   <span data-ttu-id="4bc6c-206">设计工具的本地字体。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-206">A local font for your design tools.</span></span>  
+*   <span data-ttu-id="4bc6c-207">代码的 Web 字体。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-207">A web font for your code.</span></span>  
 
-<span data-ttu-id="b836b-208">使用 **"禁用本地字体** "可以更轻松地完成以下任务。</span><span class="sxs-lookup"><span data-stu-id="b836b-208">Use **Disable local fonts** to make it easier for you to complete the following tasks.</span></span>  
+<span data-ttu-id="4bc6c-208">使用 **"禁用本地** 字体"可以更轻松地完成以下任务。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-208">Use **Disable local fonts** to make it easier for you to complete the following tasks.</span></span>  
 
-*   <span data-ttu-id="b836b-209">调试并度量 Web 字体的加载性能和优化。</span><span class="sxs-lookup"><span data-stu-id="b836b-209">Debug and measure loading performance and optimization of web fonts.</span></span>  
-*   <span data-ttu-id="b836b-210">验证 CSS 规则 `@font-face` 的准确性。</span><span class="sxs-lookup"><span data-stu-id="b836b-210">Verify accuracy of your CSS `@font-face` rules.</span></span>  
-*   <span data-ttu-id="b836b-211">发现设备上安装的本地版本与 Web 字体之间的差异。</span><span class="sxs-lookup"><span data-stu-id="b836b-211">Discover differences between local versions installed on your device and a web font.</span></span>  
+*   <span data-ttu-id="4bc6c-209">调试并度量 Web 字体的加载性能和优化。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-209">Debug and measure loading performance and optimization of web fonts.</span></span>  
+*   <span data-ttu-id="4bc6c-210">验证 CSS 规则 `@font-face` 的准确性。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-210">Verify accuracy of your CSS `@font-face` rules.</span></span>  
+*   <span data-ttu-id="4bc6c-211">发现设备上安装的本地版本与 Web 字体之间的差异。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-211">Discover differences between local versions installed on your device and a web font.</span></span>  
 
-<span data-ttu-id="b836b-212">Chromium 问题 [：#384968][CR384968]</span><span class="sxs-lookup"><span data-stu-id="b836b-212">Chromium issue: [#384968][CR384968]</span></span>  
+<span data-ttu-id="4bc6c-212">Chromium 问题 [：#384968][CR384968]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-212">Chromium issue: [#384968][CR384968]</span></span>  
 
-### <a name="emulate-inactive-users"></a><span data-ttu-id="b836b-213">模拟非活动用户</span><span class="sxs-lookup"><span data-stu-id="b836b-213">Emulate inactive users</span></span>  
+### <a name="emulate-inactive-users"></a><span data-ttu-id="4bc6c-213">模拟非活动用户</span><span class="sxs-lookup"><span data-stu-id="4bc6c-213">Emulate inactive users</span></span>  
 
-<span data-ttu-id="b836b-214">空闲 [检测 API][WebDevIdleDetection] 允许开发人员检测非活动用户，并响应空闲状态更改。</span><span class="sxs-lookup"><span data-stu-id="b836b-214">The [Idle Detection API][WebDevIdleDetection] allows developers to detect inactive users and react on idle state changes.</span></span>  <span data-ttu-id="b836b-215">你现在可以使用 DevTools 在传感器工具中模拟用户状态和屏幕\*\*\*\* 状态中的空闲状态更改，而不是等待实际空闲状态更改。</span><span class="sxs-lookup"><span data-stu-id="b836b-215">You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.</span></span>  <span data-ttu-id="b836b-216">You may open the **Sensors** tool from the [Drawer][DevtoolsCustomizeIndexDrawer].</span><span class="sxs-lookup"><span data-stu-id="b836b-216">You may open the **Sensors** tool from the [Drawer][DevtoolsCustomizeIndexDrawer].</span></span>  
+<span data-ttu-id="4bc6c-214">空闲 [检测 API][WebDevIdleDetection] 允许开发人员检测非活动用户，并响应空闲状态更改。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-214">The [Idle Detection API][WebDevIdleDetection] allows developers to detect inactive users and react on idle state changes.</span></span>  <span data-ttu-id="4bc6c-215">你现在可以使用 DevTools 在 **传感器** 工具中模拟用户状态和屏幕状态中的空闲状态更改，而不是等待实际空闲状态更改。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-215">You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.</span></span>  <span data-ttu-id="4bc6c-216">You may open the **Sensors** tool from the [Drawer][DevtoolsCustomizeIndexDrawer].</span><span class="sxs-lookup"><span data-stu-id="4bc6c-216">You may open the **Sensors** tool from the [Drawer][DevtoolsCustomizeIndexDrawer].</span></span>  
 
 :::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="模拟非活动用户" lightbox="../../media/2020/08/emulate-idle.msft.png":::
-   <span data-ttu-id="b836b-218">模拟非活动用户</span><span class="sxs-lookup"><span data-stu-id="b836b-218">Emulate inactive users</span></span>  
+   <span data-ttu-id="4bc6c-218">模拟非活动用户</span><span class="sxs-lookup"><span data-stu-id="4bc6c-218">Emulate inactive users</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-219">Chromium 问题 [：#1090802][CR1090802]</span><span class="sxs-lookup"><span data-stu-id="b836b-219">Chromium issue: [#1090802][CR1090802]</span></span>  
+<span data-ttu-id="4bc6c-219">Chromium 问题 [：#1090802][CR1090802]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-219">Chromium issue: [#1090802][CR1090802]</span></span>  
 
-### <a name="emulate-prefers-reduced-data"></a><span data-ttu-id="b836b-220">模拟首选-减少数据</span><span class="sxs-lookup"><span data-stu-id="b836b-220">Emulate prefers-reduced-data</span></span>  
+### <a name="emulate-prefers-reduced-data"></a><span data-ttu-id="4bc6c-220">模拟 prefers-reduced-data</span><span class="sxs-lookup"><span data-stu-id="4bc6c-220">Emulate prefers-reduced-data</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="b836b-221">在 Microsoft Edge 86 中，若要启用此功能，请导航到实验 `edge://flags#enable-experimental-web-platform-features` **性 Web 平台功能标志并打开它** 。</span><span class="sxs-lookup"><span data-stu-id="b836b-221">In Microsoft Edge 86, to enable this feature, navigate to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.</span></span>  <span data-ttu-id="b836b-222">只有在启用标志时，才显示模拟选项。</span><span class="sxs-lookup"><span data-stu-id="b836b-222">The emulation option is only displayed if the flag is enabled.</span></span>  
+> <span data-ttu-id="4bc6c-221">在 Microsoft Edge 86 中，若要启用此功能，请导航到"实验 `edge://flags#enable-experimental-web-platform-features` **性 Web 平台功能"标志并打开** 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-221">In Microsoft Edge 86, to enable this feature, navigate to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.</span></span>  <span data-ttu-id="4bc6c-222">模拟选项仅在启用标志时显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-222">The emulation option is only displayed if the flag is enabled.</span></span>  
 
-<span data-ttu-id="b836b-223">首选 [的缩减数据][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] 媒体查询可检测减少数据的用户内容首选项。</span><span class="sxs-lookup"><span data-stu-id="b836b-223">The [prefers-reduced-data][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] media query detects user content preferences for reduced data.</span></span>  <span data-ttu-id="b836b-224">如果选中，用户将收到使用较少数据的备用页面内容。</span><span class="sxs-lookup"><span data-stu-id="b836b-224">If selected, the user receives alternate page content that uses less data.</span></span>  
+<span data-ttu-id="4bc6c-223">首选 [的缩减数据][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] 媒体查询可检测减少数据的用户内容首选项。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-223">The [prefers-reduced-data][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] media query detects user content preferences for reduced data.</span></span>  <span data-ttu-id="4bc6c-224">如果选中，用户将接收使用较少数据的备用页面内容。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-224">If selected, the user receives alternate page content that uses less data.</span></span>  
 
-<span data-ttu-id="b836b-225">你现在可以使用 DevTools 模拟 `prefers-reduced-data` 媒体查询。</span><span class="sxs-lookup"><span data-stu-id="b836b-225">You may now use DevTools to emulate the `prefers-reduced-data` media query.</span></span>  
+<span data-ttu-id="4bc6c-225">你现在可以使用 DevTools 模拟 `prefers-reduced-data` 媒体查询。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-225">You may now use DevTools to emulate the `prefers-reduced-data` media query.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="模拟首选-减少数据" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
-   <span data-ttu-id="b836b-227">模拟首选-减少数据</span><span class="sxs-lookup"><span data-stu-id="b836b-227">Emulate prefers-reduced-data</span></span>  
+:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="模拟 prefers-reduced-data" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
+   <span data-ttu-id="4bc6c-227">模拟 prefers-reduced-data</span><span class="sxs-lookup"><span data-stu-id="4bc6c-227">Emulate prefers-reduced-data</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-228">Chromium 问题 [：#1096068][CR1096068]</span><span class="sxs-lookup"><span data-stu-id="b836b-228">Chromium issue: [#1096068][CR1096068]</span></span>  
+<span data-ttu-id="4bc6c-228">Chromium 问题 [：#1096068][CR1096068]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-228">Chromium issue: [#1096068][CR1096068]</span></span>  
 
-### <a name="support-for-new-javascript-features"></a><span data-ttu-id="b836b-229">支持新的 JavaScript 功能</span><span class="sxs-lookup"><span data-stu-id="b836b-229">Support for new JavaScript features</span></span>  
+### <a name="support-for-new-javascript-features"></a><span data-ttu-id="4bc6c-229">支持新的 JavaScript 功能</span><span class="sxs-lookup"><span data-stu-id="4bc6c-229">Support for new JavaScript features</span></span>  
 
-<span data-ttu-id="b836b-230">DevTools 现在更好地支持以下 JavaScript 语言功能。</span><span class="sxs-lookup"><span data-stu-id="b836b-230">DevTools now have better supported the following JavaScript language features.</span></span>  
+<span data-ttu-id="4bc6c-230">DevTools 现在更好地支持以下 JavaScript 语言功能。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-230">DevTools now have better supported the following JavaScript language features.</span></span>  
 
-| <span data-ttu-id="b836b-231">JavaScript 语言功能</span><span class="sxs-lookup"><span data-stu-id="b836b-231">JavaScript language feature</span></span> | <span data-ttu-id="b836b-232">详细信息</span><span class="sxs-lookup"><span data-stu-id="b836b-232">Details</span></span> |  
+| <span data-ttu-id="4bc6c-231">JavaScript 语言功能</span><span class="sxs-lookup"><span data-stu-id="4bc6c-231">JavaScript language feature</span></span> | <span data-ttu-id="4bc6c-232">详细信息</span><span class="sxs-lookup"><span data-stu-id="4bc6c-232">Details</span></span> |  
 |:--- |:--- |  
-| [<span data-ttu-id="b836b-233">逻辑赋值运算符</span><span class="sxs-lookup"><span data-stu-id="b836b-233">Logical assignment operators</span></span>][V8FeaturesLogicalAssignment] | <span data-ttu-id="b836b-234">DevTools 现在支持使用控制台和源工具中的新运算符和运算符 `&&=` `||=` `??=` 进行逻辑\*\*\*\* 分配。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="b836b-234">DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.</span></span>  |  
-| <span data-ttu-id="b836b-235">彩色数字 [分隔符][V8FeaturesNumericSeparators]</span><span class="sxs-lookup"><span data-stu-id="b836b-235">Pretty-print [numeric separators][V8FeaturesNumericSeparators]</span></span> | <span data-ttu-id="b836b-236">DevTools 现在在源工具中正确打印数字 **分隔** 符。</span><span class="sxs-lookup"><span data-stu-id="b836b-236">DevTools now properly pretty-prints the numeric separators in the **Sources** tool.</span></span>  |  
+| [<span data-ttu-id="4bc6c-233">逻辑赋值运算符</span><span class="sxs-lookup"><span data-stu-id="4bc6c-233">Logical assignment operators</span></span>][V8FeaturesLogicalAssignment] | <span data-ttu-id="4bc6c-234">DevTools 现在支持使用控制台和源工具中的新 、 和 运算符 `&&=` `||=` `??=` 进行逻辑分配。 \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4bc6c-234">DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.</span></span>  |  
+| <span data-ttu-id="4bc6c-235">彩色数字 [分隔符][V8FeaturesNumericSeparators]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-235">Pretty-print [numeric separators][V8FeaturesNumericSeparators]</span></span> | <span data-ttu-id="4bc6c-236">DevTools 现在在"源"工具中正确打印数字 **分隔** 符。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-236">DevTools now properly pretty-prints the numeric separators in the **Sources** tool.</span></span>  |  
 
-<span data-ttu-id="b836b-237">Chromium 问题 [：1086817][CR1086817] [、1080569][CR1080569]</span><span class="sxs-lookup"><span data-stu-id="b836b-237">Chromium issues: [1086817][CR1086817], [1080569][CR1080569]</span></span>  
+<span data-ttu-id="4bc6c-237">Chromium 问题 [：1086817][CR1086817] [、1080569][CR1080569]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-237">Chromium issues: [1086817][CR1086817], [1080569][CR1080569]</span></span>  
 
-### <a name="lighthouse-62-in-the-lighthouse-panel"></a><span data-ttu-id="b836b-238">Lighthouse 面板中的 Lighthouse 6.2</span><span class="sxs-lookup"><span data-stu-id="b836b-238">Lighthouse 6.2 in the Lighthouse panel</span></span>  
+### <a name="lighthouse-62-in-the-lighthouse-panel"></a><span data-ttu-id="4bc6c-238">Lighthouse 面板中的 Lighthouse 6.2</span><span class="sxs-lookup"><span data-stu-id="4bc6c-238">Lighthouse 6.2 in the Lighthouse panel</span></span>  
 
-<span data-ttu-id="b836b-239">**Lighthouse**工具现在运行 Lighthouse 6.2。</span><span class="sxs-lookup"><span data-stu-id="b836b-239">The **Lighthouse** tool is now running Lighthouse 6.2.</span></span>  <span data-ttu-id="b836b-240">有关更改的完整列表，请导航到 [Lighthouse 发行说明][GithubGooglechromeLighthouseV620]。</span><span class="sxs-lookup"><span data-stu-id="b836b-240">For a full list of changes, navigate to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].</span></span>  
+<span data-ttu-id="4bc6c-239">**Lighthouse**工具现在运行 Lighthouse 6.2。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-239">The **Lighthouse** tool is now running Lighthouse 6.2.</span></span>  <span data-ttu-id="4bc6c-240">有关更改的完整列表，请导航到 ["Lighthouse"发行说明][GithubGooglechromeLighthouseV620]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-240">For a full list of changes, navigate to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].</span></span>  
 
-<span data-ttu-id="b836b-241">Chromium 问题 [：#772558][CR772558]</span><span class="sxs-lookup"><span data-stu-id="b836b-241">Chromium issue: [#772558][CR772558]</span></span>  
+<span data-ttu-id="4bc6c-241">Chromium 问题 [：#772558][CR772558]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-241">Chromium issue: [#772558][CR772558]</span></span>  
 
-### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a><span data-ttu-id="b836b-242">服务工作人员窗格中其他源列表的弃用</span><span class="sxs-lookup"><span data-stu-id="b836b-242">Deprecation of other origins listing in the Service Workers pane</span></span>  
+### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a><span data-ttu-id="4bc6c-242">在"服务工作者"窗格中弃用其他源列表</span><span class="sxs-lookup"><span data-stu-id="4bc6c-242">Deprecation of other origins listing in the Service Workers pane</span></span>  
 
-<span data-ttu-id="b836b-243">DevTools 现在提供来自服务工作者\*\*\*\* 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。</span><span class="sxs-lookup"><span data-stu-id="b836b-243">DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.</span></span>  <span data-ttu-id="b836b-244">若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。</span><span class="sxs-lookup"><span data-stu-id="b836b-244">To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.</span></span>  
+<span data-ttu-id="4bc6c-243">DevTools 现在提供来自服务工作者\*\*\*\* 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-243">DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.</span></span>  <span data-ttu-id="4bc6c-244">若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-244">To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.</span></span>  
 
-<span data-ttu-id="b836b-245">以前，DevTools 显示一个嵌套在**应用程序工具>\*\*\*\*服务工作者窗格下**的列表。</span><span class="sxs-lookup"><span data-stu-id="b836b-245">Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.</span></span>  
+<span data-ttu-id="4bc6c-245">以前，DevTools 显示一个嵌套在\*\*\*\*"应用程序工具""服务>**窗格下**的列表。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-245">Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="链接到其他源" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
-   <span data-ttu-id="b836b-247">链接到其他源</span><span class="sxs-lookup"><span data-stu-id="b836b-247">Link to other origins</span></span>  
+:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="链接到其他来源" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
+   <span data-ttu-id="4bc6c-247">链接到其他来源</span><span class="sxs-lookup"><span data-stu-id="4bc6c-247">Link to other origins</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-248">Chromium 问题 [：#807440][CR807440]</span><span class="sxs-lookup"><span data-stu-id="b836b-248">Chromium issue: [#807440][CR807440]</span></span>  
+<span data-ttu-id="4bc6c-248">Chromium 问题 [：#807440][CR807440]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-248">Chromium issue: [#807440][CR807440]</span></span>  
 
-### <a name="show-coverage-summary-for-filtered-items"></a><span data-ttu-id="b836b-249">显示已筛选项目的覆盖摘要</span><span class="sxs-lookup"><span data-stu-id="b836b-249">Show coverage summary for filtered items</span></span>  
+### <a name="show-coverage-summary-for-filtered-items"></a><span data-ttu-id="4bc6c-249">显示已筛选项目的范围摘要</span><span class="sxs-lookup"><span data-stu-id="4bc6c-249">Show coverage summary for filtered items</span></span>  
 
-<span data-ttu-id="b836b-250">DevTools 现在动态重新计算并显示覆盖信息的摘要。</span><span class="sxs-lookup"><span data-stu-id="b836b-250">DevTools now recalculate and display a summary of coverage information dynamically.</span></span>  <span data-ttu-id="b836b-251">在"覆盖"工具中应用筛选器时 [，将触发][DevtoolsCoverageIndex] 动态显示。</span><span class="sxs-lookup"><span data-stu-id="b836b-251">The dynamic display is triggered when filters are applied in the [Coverage][DevtoolsCoverageIndex] tool.</span></span>  <span data-ttu-id="b836b-252">在 **"覆盖** "工具始终显示所有覆盖信息的摘要之前。</span><span class="sxs-lookup"><span data-stu-id="b836b-252">Before the **Coverage** tool always displayed a summary of all coverage information.</span></span>  
+<span data-ttu-id="4bc6c-250">DevTools 现在动态重新计算并显示覆盖信息的摘要。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-250">DevTools now recalculate and display a summary of coverage information dynamically.</span></span>  <span data-ttu-id="4bc6c-251">在覆盖工具中应用筛选器时， [将触发动态][DevtoolsCoverageIndex] 显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-251">The dynamic display is triggered when filters are applied in the [Coverage][DevtoolsCoverageIndex] tool.</span></span>  <span data-ttu-id="4bc6c-252">在 **覆盖工具** 始终显示所有覆盖信息的摘要之前。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-252">Before the **Coverage** tool always displayed a summary of all coverage information.</span></span>  
 
-<span data-ttu-id="b836b-253">在下列第一个图表中，摘要最初显示，在下列第二个图表上，摘要在 `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` 应用 CSS 筛选 `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` 后显示。</span><span class="sxs-lookup"><span data-stu-id="b836b-253">In the first of the following figures, the summary initially displays `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` and in the second of the following figures, the summary displays `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` after CSS filtering is applied.</span></span>  
+<span data-ttu-id="4bc6c-253">在下图的第一个中，摘要最初显示，在下图的第二个汇总中，将在应用 CSS 筛选 `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` 后显示摘要。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-253">In the first of the following figures, the summary initially displays `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` and in the second of the following figures, the summary displays `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` after CSS filtering is applied.</span></span>  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="范围摘要" lightbox="../../media/2020/08/coverage-compare.msft.png":::
-         <span data-ttu-id="b836b-255">范围摘要</span><span class="sxs-lookup"><span data-stu-id="b836b-255">Coverage summary</span></span>  
+      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="覆盖摘要" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+         <span data-ttu-id="4bc6c-255">覆盖摘要</span><span class="sxs-lookup"><span data-stu-id="4bc6c-255">Coverage summary</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="已筛选项目的范围摘要" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
-         <span data-ttu-id="b836b-257">已筛选项目的范围摘要</span><span class="sxs-lookup"><span data-stu-id="b836b-257">Coverage summary for filtered items</span></span>  
+         <span data-ttu-id="4bc6c-257">已筛选项目的范围摘要</span><span class="sxs-lookup"><span data-stu-id="4bc6c-257">Coverage summary for filtered items</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-<span data-ttu-id="b836b-258">Chromium 问题 [：#1061385][CR1090802]</span><span class="sxs-lookup"><span data-stu-id="b836b-258">Chromium issue: [#1061385][CR1090802]</span></span>  
+<span data-ttu-id="4bc6c-258">Chromium 问题 [：#1061385][CR1090802]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-258">Chromium issue: [#1061385][CR1090802]</span></span>  
 
-### <a name="new-frame-details-view-in-application-panel"></a><span data-ttu-id="b836b-259">应用程序面板中的新帧详细信息视图</span><span class="sxs-lookup"><span data-stu-id="b836b-259">New frame details view in Application panel</span></span>  
+### <a name="new-frame-details-view-in-application-panel"></a><span data-ttu-id="4bc6c-259">应用程序面板中的新帧详细信息视图</span><span class="sxs-lookup"><span data-stu-id="4bc6c-259">New frame details view in Application panel</span></span>  
 
-<span data-ttu-id="b836b-260">DevTools 现在显示每个帧的详细视图。</span><span class="sxs-lookup"><span data-stu-id="b836b-260">DevTools now show a detailed view for each frame.</span></span>  <span data-ttu-id="b836b-261">若要访问它，请选择"应用程序"工具 **中的"** 框架"菜单 **下的** 图文框。</span><span class="sxs-lookup"><span data-stu-id="b836b-261">To access it, choose a frame under the **Frames** menu in the **Application** tool.</span></span>  
+<span data-ttu-id="4bc6c-260">DevTools 现在显示每个帧的详细视图。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-260">DevTools now show a detailed view for each frame.</span></span>  <span data-ttu-id="4bc6c-261">若要访问它，请选择"应用程序"工具中" **框架** "菜单下的 **图** 文框。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-261">To access it, choose a frame under the **Frames** menu in the **Application** tool.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="应用程序面板中框架的新详细视图" lightbox="../../media/2020/08/frame-details.msft.png":::
-   <span data-ttu-id="b836b-263">应用程序工具中 **框架的新详细** 视图</span><span class="sxs-lookup"><span data-stu-id="b836b-263">New detailed view for a frame in **Application** tool</span></span>  
+   <span data-ttu-id="4bc6c-263">应用程序工具中帧的新 **详细** 视图</span><span class="sxs-lookup"><span data-stu-id="4bc6c-263">New detailed view for a frame in **Application** tool</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-264">Chromium 问题 [：#1093247][CR1093247]</span><span class="sxs-lookup"><span data-stu-id="b836b-264">Chromium issue: [#1093247][CR1093247]</span></span>  
+<span data-ttu-id="4bc6c-264">Chromium 问题 [：#1093247][CR1093247]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-264">Chromium issue: [#1093247][CR1093247]</span></span>  
 
-#### <a name="frame-details-for-opened-windows"></a><span data-ttu-id="b836b-265">打开的窗口的框架详细信息</span><span class="sxs-lookup"><span data-stu-id="b836b-265">Frame details for opened windows</span></span>  
+#### <a name="frame-details-for-opened-windows"></a><span data-ttu-id="4bc6c-265">打开的窗口的框架详细信息</span><span class="sxs-lookup"><span data-stu-id="4bc6c-265">Frame details for opened windows</span></span>  
 
-<span data-ttu-id="b836b-266">打开窗口和弹出窗口现在也显示在框架树下。</span><span class="sxs-lookup"><span data-stu-id="b836b-266">Open windows and pop-up windows now display under the frame tree as well.</span></span>  <span data-ttu-id="b836b-267">打开的窗口的详细视图包括其他安全信息。</span><span class="sxs-lookup"><span data-stu-id="b836b-267">The detailed view of the opened windows includes additional security information.</span></span>  
+<span data-ttu-id="4bc6c-266">打开窗口，弹出窗口现在也显示在框架树下。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-266">Open windows and pop-up windows now display under the frame tree as well.</span></span>  <span data-ttu-id="4bc6c-267">打开的窗口的详细视图包括其他安全信息。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-267">The detailed view of the opened windows includes additional security information.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="打开的窗口的新框架详细视图" lightbox="../../media/2020/08/window-opener.msft.png":::
-   <span data-ttu-id="b836b-269">打开的窗口的新框架详细视图</span><span class="sxs-lookup"><span data-stu-id="b836b-269">New frame detailed view for opened windows</span></span>  
+   <span data-ttu-id="4bc6c-269">打开的窗口的新框架详细视图</span><span class="sxs-lookup"><span data-stu-id="4bc6c-269">New frame detailed view for opened windows</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-270">Chromium 问题：[#1107766][CR1107766]</span><span class="sxs-lookup"><span data-stu-id="b836b-270">Chromium issue: [#1107766][CR1107766]</span></span>  
+<span data-ttu-id="4bc6c-270">Chromium 问题：[#1107766][CR1107766]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-270">Chromium issue: [#1107766][CR1107766]</span></span>  
 
-#### <a name="security-and-isolation-information"></a><span data-ttu-id="b836b-271">安全和隔离信息</span><span class="sxs-lookup"><span data-stu-id="b836b-271">Security and isolation information</span></span>  
+#### <a name="security-and-isolation-information"></a><span data-ttu-id="4bc6c-271">安全和隔离信息</span><span class="sxs-lookup"><span data-stu-id="4bc6c-271">Security and isolation information</span></span>  
 
-<span data-ttu-id="b836b-272">安全上下文 [、Cross-Origin-Embedder-Policy (COEP) ][WebDevCoopCoep]和 [Cross-Origin-Opener-Policy (COOP) 现在 ][WebDevCoopCoep] 显示在帧详细信息中。</span><span class="sxs-lookup"><span data-stu-id="b836b-272">Secure context, [Cross-Origin-Embedder-Policy (COEP)][WebDevCoopCoep], and [Cross-Origin-Opener-Policy (COOP)][WebDevCoopCoep] are now displayed in the frame details.</span></span>  
+<span data-ttu-id="4bc6c-272">安全上下文 [、Cross-Origin-Embedder-Policy (COEP) ][WebDevCoopCoep]和 [Cross-Origin-Opener-Policy (COOP) ][WebDevCoopCoep] 现在显示在帧详细信息中。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-272">Secure context, [Cross-Origin-Embedder-Policy (COEP)][WebDevCoopCoep], and [Cross-Origin-Opener-Policy (COOP)][WebDevCoopCoep] are now displayed in the frame details.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="安全和隔离信息" lightbox="../../media/2020/08/coep-coop.msft.png":::
-   <span data-ttu-id="b836b-274">安全和隔离信息</span><span class="sxs-lookup"><span data-stu-id="b836b-274">Security and isolation information</span></span>  
+   <span data-ttu-id="4bc6c-274">安全和隔离信息</span><span class="sxs-lookup"><span data-stu-id="4bc6c-274">Security and isolation information</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-275">将来，Microsoft Edge DevTools 团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。</span><span class="sxs-lookup"><span data-stu-id="b836b-275">In the future, the Microsoft Edge DevTools team and the Chrome DevTools team are planning to add more security information to the frame details.</span></span>  
+<span data-ttu-id="4bc6c-275">将来，Microsoft Edge DevTools 团队和 Chrome DevTools 团队计划向帧详细信息添加更多安全信息。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-275">In the future, the Microsoft Edge DevTools team and the Chrome DevTools team are planning to add more security information to the frame details.</span></span>  
 
-<span data-ttu-id="b836b-276">Chromium 问题 [：#1051466][CR1051466]</span><span class="sxs-lookup"><span data-stu-id="b836b-276">Chromium issue: [#1051466][CR1051466]</span></span>  
+<span data-ttu-id="4bc6c-276">Chromium 问题 [：#1051466][CR1051466]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-276">Chromium issue: [#1051466][CR1051466]</span></span>  
 
-### <a name="elements-and-network-panel-updates"></a><span data-ttu-id="b836b-277">元素和网络面板更新</span><span class="sxs-lookup"><span data-stu-id="b836b-277">Elements and Network panel updates</span></span>  
+### <a name="elements-and-network-panel-updates"></a><span data-ttu-id="4bc6c-277">元素和网络面板更新</span><span class="sxs-lookup"><span data-stu-id="4bc6c-277">Elements and Network panel updates</span></span>  
 
-#### <a name="accessible-color-suggestion-in-the-styles-pane"></a><span data-ttu-id="b836b-278">"样式"窗格中的辅助颜色建议</span><span class="sxs-lookup"><span data-stu-id="b836b-278">Accessible color suggestion in the Styles pane</span></span>  
+#### <a name="accessible-color-suggestion-in-the-styles-pane"></a><span data-ttu-id="4bc6c-278">"样式"窗格中的可访问颜色建议</span><span class="sxs-lookup"><span data-stu-id="4bc6c-278">Accessible color suggestion in the Styles pane</span></span>  
 
-<span data-ttu-id="b836b-279">DevTools 现在提供低色对比度文本的颜色建议。</span><span class="sxs-lookup"><span data-stu-id="b836b-279">DevTools now provides color suggestions for low color contrast text.</span></span>  
+<span data-ttu-id="4bc6c-279">DevTools 现在为低颜色对比度文本提供颜色建议。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-279">DevTools now provides color suggestions for low color contrast text.</span></span>  
 
-<span data-ttu-id="b836b-280">在下面的示例中， `h1` 具有低对比度文本。</span><span class="sxs-lookup"><span data-stu-id="b836b-280">In the example below, `h1` has low contrast text.</span></span>  <span data-ttu-id="b836b-281">若要修复此问题，请打开"样式"窗格中 `color` 属性 **的颜色** 选取器。</span><span class="sxs-lookup"><span data-stu-id="b836b-281">To fix it, open the color picker of the `color` property in the **Styles** pane.</span></span>  <span data-ttu-id="b836b-282">展开"对 **比率"部分** 后，DevTools 将提供 AA 和 AAA 颜色建议。</span><span class="sxs-lookup"><span data-stu-id="b836b-282">After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.</span></span>  <span data-ttu-id="b836b-283">选择建议的颜色以应用颜色。</span><span class="sxs-lookup"><span data-stu-id="b836b-283">Choose the suggested color to apply the color.</span></span>  
+<span data-ttu-id="4bc6c-280">在下面的示例中， `h1` 具有低对比度文本。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-280">In the example below, `h1` has low contrast text.</span></span>  <span data-ttu-id="4bc6c-281">若要修复此问题，请打开"样式"窗格中 `color` 属性 **的颜色选取** 器。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-281">To fix it, open the color picker of the `color` property in the **Styles** pane.</span></span>  <span data-ttu-id="4bc6c-282">展开"对比率 **"部分** 后，DevTools 将提供 AA 和 AAA 颜色建议。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-282">After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.</span></span>  <span data-ttu-id="4bc6c-283">选择建议的颜色以应用该颜色。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-283">Choose the suggested color to apply the color.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="颜色选取器建议 AA 和 AAA 颜色建议" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
-   <span data-ttu-id="b836b-285">颜色选取器建议 AA 和 AAA 颜色建议</span><span class="sxs-lookup"><span data-stu-id="b836b-285">Color picker suggests AA and AAA color suggestions</span></span>  
+   <span data-ttu-id="4bc6c-285">颜色选取器建议 AA 和 AAA 颜色建议</span><span class="sxs-lookup"><span data-stu-id="4bc6c-285">Color picker suggests AA and AAA color suggestions</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-286">Chromium 问题 [：#1093227][CR1093227]</span><span class="sxs-lookup"><span data-stu-id="b836b-286">Chromium issue: [#1093227][CR1093227]</span></span>  
+<span data-ttu-id="4bc6c-286">Chromium 问题 [：#1093227][CR1093227]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-286">Chromium issue: [#1093227][CR1093227]</span></span>  
 
-#### <a name="reinstate-properties-pane-in-the-elements-panel"></a><span data-ttu-id="b836b-287">"元素"面板中的"恢复属性"窗格</span><span class="sxs-lookup"><span data-stu-id="b836b-287">Reinstate Properties pane in the Elements panel</span></span>  
+#### <a name="reinstate-properties-pane-in-the-elements-panel"></a><span data-ttu-id="4bc6c-287">恢复"元素"面板中的"属性"窗格</span><span class="sxs-lookup"><span data-stu-id="4bc6c-287">Reinstate Properties pane in the Elements panel</span></span>  
 
-<span data-ttu-id="b836b-288">" **属性** "窗格已返回。</span><span class="sxs-lookup"><span data-stu-id="b836b-288">The **Properties** pane is back.</span></span>  <span data-ttu-id="b836b-289">它在 [Microsoft Edge 84 中已弃用][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]。</span><span class="sxs-lookup"><span data-stu-id="b836b-289">It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].</span></span>  <span data-ttu-id="b836b-290">Microsoft Edge DevTools 团队和 Chrome DevTools 团队正在计划改进以检查元素的属性。</span><span class="sxs-lookup"><span data-stu-id="b836b-290">The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.</span></span>  
+<span data-ttu-id="4bc6c-288">" **属性** "窗格已返回。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-288">The **Properties** pane is back.</span></span>  <span data-ttu-id="4bc6c-289">它在 [Microsoft Edge 84 中已弃用][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-289">It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].</span></span>  <span data-ttu-id="4bc6c-290">Microsoft Edge DevTools 团队和 Chrome DevTools 团队正在计划针对检查元素属性的改进。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-290">The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text=""元素"面板中的"属性"窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
-   <span data-ttu-id="b836b-292">**"** 元素"工具 **中的"属性"** 窗格</span><span class="sxs-lookup"><span data-stu-id="b836b-292">**Properties** pane in the **Elements** tool</span></span>  
+   <span data-ttu-id="4bc6c-292">**"** 元素"工具 **中的"属性"** 窗格</span><span class="sxs-lookup"><span data-stu-id="4bc6c-292">**Properties** pane in the **Elements** tool</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-293">Chromium 问题：</span><span class="sxs-lookup"><span data-stu-id="b836b-293">Chromium issue:</span></span>  <!--  [#1105205][CR1105205],  -->  <span data-ttu-id="b836b-294">[#1116085][CR1116085]</span><span class="sxs-lookup"><span data-stu-id="b836b-294">[#1116085][CR1116085]</span></span>  
+<span data-ttu-id="4bc6c-293">Chromium 问题：</span><span class="sxs-lookup"><span data-stu-id="4bc6c-293">Chromium issue:</span></span>  <!--  [#1105205][CR1105205],  -->  <span data-ttu-id="4bc6c-294">[#1116085][CR1116085]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-294">[#1116085][CR1116085]</span></span>  
 
 <!--  
 #### Human-readable X-Client-Data header values in the Network panel  
@@ -391,59 +404,59 @@ The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft 
 Chromium issue: [#1103854][CR1103854]  
 -->  
 
-#### <a name="autocomplete-custom-fonts-in-the-styles-pane"></a><span data-ttu-id="b836b-295">在"样式"窗格中自动完成自定义字体</span><span class="sxs-lookup"><span data-stu-id="b836b-295">Autocomplete custom fonts in the Styles pane</span></span>  
+#### <a name="autocomplete-custom-fonts-in-the-styles-pane"></a><span data-ttu-id="4bc6c-295">在"样式"窗格中自动完成自定义字体</span><span class="sxs-lookup"><span data-stu-id="4bc6c-295">Autocomplete custom fonts in the Styles pane</span></span>  
 
-<span data-ttu-id="b836b-296">现在，在"样式"窗格中编辑属性时，导入的字体将添加到 CSS `font-family` 自动完成列表中。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="b836b-296">Imported font faces are now added to the list of CSS autocompletion when editing the `font-family` property in the **Styles** pane.</span></span>  
+<span data-ttu-id="4bc6c-296">现在，在"样式"窗格中编辑属性时，导入的字体将添加到 CSS `font-family` **自动完成** 列表中。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-296">Imported font faces are now added to the list of CSS autocompletion when editing the `font-family` property in the **Styles** pane.</span></span>  
 
-<span data-ttu-id="b836b-297">例如， `monospace` 如果本地计算机上安装了自定义字体，则它会显示在 CSS 完成列表中。</span><span class="sxs-lookup"><span data-stu-id="b836b-297">For example, if `monospace` is a custom font installed on the local machine, it displays in the CSS completion list.</span></span>  <span data-ttu-id="b836b-298">在以前版本的 Microsoft Edge 中，不显示字体。</span><span class="sxs-lookup"><span data-stu-id="b836b-298">In previous versions of Microsoft Edge, the font was not displayed.</span></span>
+<span data-ttu-id="4bc6c-297">例如，如果 `monospace` 是本地计算机上安装的自定义字体，则它显示在 CSS 完成列表中。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-297">For example, if `monospace` is a custom font installed on the local machine, it displays in the CSS completion list.</span></span>  <span data-ttu-id="4bc6c-298">在以前版本的 Microsoft Edge 中，不显示字体。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-298">In previous versions of Microsoft Edge, the font was not displayed.</span></span>
 
 :::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="自动完成自定义字体" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
-   <span data-ttu-id="b836b-300">自动完成自定义字体</span><span class="sxs-lookup"><span data-stu-id="b836b-300">Autocomplete custom fonts</span></span>  
+   <span data-ttu-id="4bc6c-300">自动完成自定义字体</span><span class="sxs-lookup"><span data-stu-id="4bc6c-300">Autocomplete custom fonts</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-301">Chromium 问题：[#1106221][CR1106221]</span><span class="sxs-lookup"><span data-stu-id="b836b-301">Chromium issue: [#1106221][CR1106221]</span></span>  
+<span data-ttu-id="4bc6c-301">Chromium 问题：[#1106221][CR1106221]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-301">Chromium issue: [#1106221][CR1106221]</span></span>  
 
-#### <a name="consistently-display-resource-type-in-network-panel"></a><span data-ttu-id="b836b-302">在"网络"面板中一致地显示资源类型</span><span class="sxs-lookup"><span data-stu-id="b836b-302">Consistently display resource type in Network panel</span></span>  
+#### <a name="consistently-display-resource-type-in-network-panel"></a><span data-ttu-id="4bc6c-302">在网络面板中一致地显示资源类型</span><span class="sxs-lookup"><span data-stu-id="4bc6c-302">Consistently display resource type in Network panel</span></span>  
 
-<span data-ttu-id="b836b-303">DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \ (HTTP 状态代码 `/ Redirect` 302\) 时追加到 Type\*\*\*\* 列值。</span><span class="sxs-lookup"><span data-stu-id="b836b-303">DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.</span></span>  
+<span data-ttu-id="4bc6c-303">DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \ (HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4bc6c-303">DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.</span></span>  
 
-<span data-ttu-id="b836b-304">以前，DevTools 有时将类型 `Other` 更改为。</span><span class="sxs-lookup"><span data-stu-id="b836b-304">Previously DevTools changed the type to `Other` sometimes.</span></span>  
+<span data-ttu-id="4bc6c-304">以前，DevTools 有时将类型 `Other` 更改为 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-304">Previously DevTools changed the type to `Other` sometimes.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="显示重定向资源类型" lightbox="../../media/2020/08/network-redirect.msft.png":::
-   <span data-ttu-id="b836b-306">显示重定向资源类型</span><span class="sxs-lookup"><span data-stu-id="b836b-306">Display redirect resource type</span></span>  
+   <span data-ttu-id="4bc6c-306">显示重定向资源类型</span><span class="sxs-lookup"><span data-stu-id="4bc6c-306">Display redirect resource type</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b836b-307">Chromium 问题 [：#997694][CR997694]</span><span class="sxs-lookup"><span data-stu-id="b836b-307">Chromium issue: [#997694][CR997694]</span></span>  
+<span data-ttu-id="4bc6c-307">Chromium 问题 [：#997694][CR997694]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-307">Chromium issue: [#997694][CR997694]</span></span>  
 
-#### <a name="clear-buttons-in-the-elements-and-network-tools"></a><span data-ttu-id="b836b-308">清除元素和网络工具中的按钮</span><span class="sxs-lookup"><span data-stu-id="b836b-308">Clear buttons in the Elements and Network tools</span></span>  
+#### <a name="clear-buttons-in-the-elements-and-network-tools"></a><span data-ttu-id="4bc6c-308">"元素和网络"工具中的"清除"按钮</span><span class="sxs-lookup"><span data-stu-id="4bc6c-308">Clear buttons in the Elements and Network tools</span></span>  
 
-<span data-ttu-id="b836b-309">以下文本框现在具有 **"清除"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="b836b-309">The following text boxes now have **Clear** buttons.</span></span>  
+<span data-ttu-id="4bc6c-309">以下文本框现在具有 **"清除"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-309">The following text boxes now have **Clear** buttons.</span></span>  
 
-*   <span data-ttu-id="b836b-310">"样式"窗格**和网络工具中的\*\*\*\*筛选器**文本框。</span><span class="sxs-lookup"><span data-stu-id="b836b-310">The filter text boxes in the **Styles** pane and **Network** tool.</span></span>  
-*   <span data-ttu-id="b836b-311">元素工具中的 DOM **搜索文本框** 。</span><span class="sxs-lookup"><span data-stu-id="b836b-311">The DOM search text box in the **Elements** tool.</span></span>  
+*   <span data-ttu-id="4bc6c-310">"样式"窗格和网络 **工具** 中的 **筛选器** 文本框。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-310">The filter text boxes in the **Styles** pane and **Network** tool.</span></span>  
+*   <span data-ttu-id="4bc6c-311">元素工具中的 DOM **搜索文本框** 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-311">The DOM search text box in the **Elements** tool.</span></span>  
 
-<span data-ttu-id="b836b-312">选择 **"清除** "按钮可删除任何输入的文本。</span><span class="sxs-lookup"><span data-stu-id="b836b-312">Choose the **Clear** button to remove any inputted text.</span></span>  
+<span data-ttu-id="4bc6c-312">选择" **清除"** 按钮以删除任何输入的文本。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-312">Choose the **Clear** button to remove any inputted text.</span></span>  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="清除"元素"面板中的按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
-         <span data-ttu-id="b836b-314">"元素"工具中的 **"清除"** 按钮</span><span class="sxs-lookup"><span data-stu-id="b836b-314">Clear buttons in the **Elements** tools</span></span>  
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text=""元素"面板中的"清除"按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+         <span data-ttu-id="4bc6c-314">"元素"工具中的 **"清除"** 按钮</span><span class="sxs-lookup"><span data-stu-id="4bc6c-314">Clear buttons in the **Elements** tools</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="清除网络面板中的按钮" lightbox="../../media/2020/08/clear-button-network.msft.png":::
-         <span data-ttu-id="b836b-316">清除网络工具  **中的** 按钮</span><span class="sxs-lookup"><span data-stu-id="b836b-316">Clear buttons in the  **Network** tools</span></span>  
+         <span data-ttu-id="4bc6c-316">网络工具中的  **"清除"** 按钮</span><span class="sxs-lookup"><span data-stu-id="4bc6c-316">Clear buttons in the  **Network** tools</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="b836b-317">Chromium 问题 [：#1067184][CR1067184]</span><span class="sxs-lookup"><span data-stu-id="b836b-317">Chromium issue: [#1067184][CR1067184]</span></span>  
+<span data-ttu-id="4bc6c-317">Chromium 问题 [：#1067184][CR1067184]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-317">Chromium issue: [#1067184][CR1067184]</span></span>  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a><span data-ttu-id="b836b-318">下载 Microsoft Edge 预览频道</span><span class="sxs-lookup"><span data-stu-id="b836b-318">Download the Microsoft Edge preview channels</span></span>  
+## <a name="download-the-microsoft-edge-preview-channels"></a><span data-ttu-id="4bc6c-318">下载 Microsoft Edge 预览频道</span><span class="sxs-lookup"><span data-stu-id="4bc6c-318">Download the Microsoft Edge preview channels</span></span>  
 
-<span data-ttu-id="b836b-319">如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。</span><span class="sxs-lookup"><span data-stu-id="b836b-319">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="b836b-320">预览频道使你能够访问最新的 DevTools 功能。</span><span class="sxs-lookup"><span data-stu-id="b836b-320">The preview channels give you access to the latest DevTools features.</span></span>  
+<span data-ttu-id="4bc6c-319">如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-319">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="4bc6c-320">预览频道使你能够访问最新的 DevTools 功能。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-320">The preview channels give you access to the latest DevTools features.</span></span>  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a><span data-ttu-id="b836b-321">联系 Microsoft Edge DevTools 团队</span><span class="sxs-lookup"><span data-stu-id="b836b-321">Getting in touch with Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a><span data-ttu-id="4bc6c-321">联系 Microsoft Edge DevTools 团队</span><span class="sxs-lookup"><span data-stu-id="4bc6c-321">Getting in touch with Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -453,11 +466,11 @@ Chromium issue: [#1103854][CR1103854]
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "元素面板中的"属性"窗格弃用 - Microsoft Edge 84 (DevTools 中的新增) |Microsoft Docs"  
-[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS 网格调试功能 - Microsoft Edge 85 (DevTools 中的新增) |Microsoft Docs"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel ""元素"面板中的"属性"窗格弃用 - DevTools (Microsoft Edge 84) |Microsoft Docs"  
+[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS 网格调试功能 - Microsoft Edge 85 (中的新增功能) |Microsoft Docs"  
 
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools 工具中的键盘|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "启用实验性 API - 实验|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "模拟：支持双屏幕模式 - 实验|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "启用源订单查看器 - 实验|Microsoft Docs"
@@ -465,19 +478,19 @@ Chromium issue: [#1103854][CR1103854]
 [DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "在可折叠和双屏幕设备上进行测试 - 实验|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "打开实验性功能 - 实验|Microsoft Docs"  
 [DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "表 - 控制台 API 参考|Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "在 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 Microsoft Edge DevTools | 中的"覆盖"选项卡查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "箱 - 自定义 Microsoft Edge DevTools |Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "使用"呈现"选项卡分析呈现性能 - 性能分析参考|Microsoft Docs"  
 [DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "查看和调试媒体播放器|Microsoft Docs"  
 
-[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "如何使用接点 - 双屏设备简介|Microsoft Docs"  
-[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "用于双屏幕检测的 CSS 媒体屏幕|Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "如何使用设备 - 双屏幕设备应用|Microsoft Docs"  
+[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "用于双屏检测方法的 CSS 媒体屏幕跨越|Microsoft Docs"  
 [DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "适用于双屏幕设备的 getWindowSegments JavaScript API |Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio代码 "  
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Windows 的代码键盘快捷方式"  
+[VisualStudioCode]: https://code.visualstudio.com "Visual Studio 代码 "  
+[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Windows 的键盘快捷方式"  
 
 [MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "新的 Surface Duo"  
 
@@ -486,54 +499,54 @@ Chromium issue: [#1103854][CR1103854]
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"  
 
 [CR174309]: https://crbug.com/174309 "DevTools：允许自定义键盘快捷方式/键绑定|Chromium Bug"
-[CR384968]: https://crbug.com/384968 "用于忽略本地字体 () 选项|Chromium Bug"  
+[CR384968]: https://crbug.com/384968 "忽略本地字体 () 选项|Chromium Bug"  
 [CR772558]: https://crbug.com/772558 "DevTools：更新到最新版本的 Lighthouse |Chromium Bug"  
 [CR807440]: https://crbug.com/807440 "Chrome 会锁定大量 SW |Chromium Bug"  
-[CR997694]: https://crbug.com/997694 "状态为 302 的 XHR 请求不会显示在网络面板中的"xhr"筛选器|Chromium Bug"  
-[CR1047356]: https://crbug.com/1047356 "CSS 网格/Flexbox/Table 工具|Chromium Bug"  
+[CR997694]: https://crbug.com/997694 "网络面板筛选器中的"xhr\"筛选器下不会显示状态为 302 的 XHR |Chromium Bug"  
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table 工具|Chromium Bug"  
 [CR1051466]: https://crbug.com/1051466 "支持 DevTools | 中的 COOP/COEP 调试Chromium Bug"  
 [CR1054281]: https://crbug.com/1054281 "功能请求：DevTools 应模拟可折叠和双屏幕设备|Chromium Bug"  
-[CR1067184]: https://crbug.com/1067184 "功能请求：清除 Network & 元素上的筛选器>样式筛选器|Chromium Bug"  
+[CR1067184]: https://crbug.com/1067184 "功能请求：清除 Network & 元素上的筛选器按钮 -> 样式筛选器|Chromium Bug"  
 [CR1068116]: https://crbug.com/1068116 "☂发货问题面板|Chromium Bug"  
-[CR1080569]: https://crbug.com/1080569 "acorn 不支持逻辑分配运算符|Chromium Bug"  
-[CR1080589]: https://crbug.com/1080589 "按第三方/第一方网站分类|Chromium Bug"  
+[CR1080569]: https://crbug.com/1080569 "视点不支持逻辑赋值运算符|Chromium Bug"  
+[CR1080589]: https://crbug.com/1080589 "按第三方/第一方分类|Chromium Bug"  
 [CR1086817]: https://crbug.com/1086817 "acorn 不支持数字分隔符|Chromium Bug"  
 [CR1090802]: https://crbug.com/1090802 "模拟空闲检测 API 中的空闲状态|Chromium Bug"  
 [CR1093227]: https://crbug.com/1093227 "DevTools：建议最接近的辅助颜色|Chromium Bug"  
-[CR1093247]: https://crbug.com/1093247 "显示有关应用程序面板中框架|Chromium Bug"  
+[CR1093247]: https://crbug.com/1093247 "在应用程序面板应用程序中显示有关框架|Chromium Bug"  
 [CR1094406]: https://crbug.com/1094406 "开发人员需要 AT 的源订单查看器 https://webwewant.fyi/wants/64/"  
-[CR1096068]: https://crbug.com/1096068 "DevTools：支持模拟首选的减少数据媒体功能|Chromium Bug"  
+[CR1096068]: https://crbug.com/1096068 "DevTools：支持模拟首选的缩减数据媒体|Chromium Bug"  
 [CR1096481]: https://crbug.com/1096481 "问题横幅放置|Chromium Bug"  
 [CR1100253]: https://crbug.com/1100253 "在元素上下文菜单菜单中添加屏幕截图节点|Chromium Bug"  
-[CR1103316]: https://crbug.com/1103316 "元素搜索不会解析Node (突出显示文本等) 第一个搜索结果|Chromium Bug"  
-[CR1103854]: https://crbug.com/1103854 "开发人员工具中心中的 X-Client-Data 值|Chromium Bug"  
+[CR1103316]: https://crbug.com/1103316 "元素搜索不会解析第一 (搜索结果上突出显示) 文本等|Chromium Bug"  
+[CR1103854]: https://crbug.com/1103854 "开发人员工具工具中的模糊处理 X-Client-Data |Chromium Bug"  
 <!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->  
-<span data-ttu-id="b836b-369">[CR1106221]："将导入的字体添加到"样式"面板中的字体系列 https://crbug.com/1106221 |Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="b836b-369">[CR1106221]: https://crbug.com/1106221 "Add imported fonts to the font-family autocompletion in the Styles panel | Chromium bugs"</span></span>  
-<span data-ttu-id="b836b-370">[CR1107766]："显示有关框架树中 https://crbug.com/1107766 由"window.open () "生成的帧|Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="b836b-370">[CR1107766]: https://crbug.com/1107766 "Display info about frames generated by 'window.open()' in frame tree | Chromium bugs"</span></span>  
-<span data-ttu-id="b836b-371">[CR1115011]："从控制台复制表时，不会保留该表 https://crbug.com/1115011 |Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="b836b-371">[CR1115011]: https://crbug.com/1115011 "When copying a table from the console the structure of the table is not preserved | Chromium bugs"</span></span>  
-<span data-ttu-id="b836b-372">[CR1116085]：" https://crbug.com/1116085 请返回 DevTools 属性检查器|Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="b836b-372">[CR1116085]: https://crbug.com/1116085 "Please bring back the DevTools Properties inspector | Chromium bugs"</span></span>  
+<span data-ttu-id="4bc6c-369">[CR1106221]：" "将导入的字体添加到样式面板中的字体系列 https://crbug.com/1106221 自动完成|Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="4bc6c-369">[CR1106221]: https://crbug.com/1106221 "Add imported fonts to the font-family autocompletion in the Styles panel | Chromium bugs"</span></span>  
+<span data-ttu-id="4bc6c-370">[CR1107766]："显示有关由框架树树中的 https://crbug.com/1107766 'window.open () '生成的帧|Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="4bc6c-370">[CR1107766]: https://crbug.com/1107766 "Display info about frames generated by 'window.open()' in frame tree | Chromium bugs"</span></span>  
+<span data-ttu-id="4bc6c-371">[CR1115011]：" 从控制台复制表时，表的结构不会保留在| https://crbug.com/1115011 Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="4bc6c-371">[CR1115011]: https://crbug.com/1115011 "When copying a table from the console the structure of the table is not preserved | Chromium bugs"</span></span>  
+<span data-ttu-id="4bc6c-372">[CR1116085]： https://crbug.com/1116085 "Please bring back the DevTools Properties inspector |Chromium bug"</span><span class="sxs-lookup"><span data-stu-id="4bc6c-372">[CR1116085]: https://crbug.com/1116085 "Please bring back the DevTools Properties inspector | Chromium bugs"</span></span>  
 
-[CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "prefers-reduced-data - 媒体查询级别 5 |W3C CSS 工作组编辑器草稿"  
+[CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "prefers-reduced-data - 第 5 级媒体|W3C CSS 工作组编辑器草稿"  
 
 [GithubGooglechromeLighthouseV620]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0 "v6.2.0 - GoogleChrome/lighthouse |GitHub"  
 
 [GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "协议缓冲区|Google 开发人员"  
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "百分百折|三星美国"  
+[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "百合|Samsung US"  
 
 [V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "逻辑分配|V8"  
 [V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "数字分隔符|V8"  
 
-[WebDevCoopCoep]: https://web.dev/coop-coep "使用 COOP 和 COEP 方法使您的网站"跨源隔离|web.dev"  
+[WebDevCoopCoep]: https://web.dev/coop-coep "使用 COOP 和 COEP 工具使您的网站"跨源隔离|web.dev"  
 [WebDevIdleDetection]: https://web.dev/idle-detection "使用空闲检测 API 工具检测非活动|web.dev"  
-[WebDevNonCompositedAnimations]: https://web.dev/non-composited-animations "避免使用非复合动画|web.dev"  
+[WebDevNonCompositedAnimations]: https://web.dev/non-composited-animations "避免使用非复合|web.dev"  
 
 > [!NOTE]
-> <span data-ttu-id="b836b-382">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="b836b-382">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="b836b-383">原始页面位于 [此处](https://developers.google.com/web/updates/2020/08/devtools/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。</span><span class="sxs-lookup"><span data-stu-id="b836b-383">The original page is found [here](https://developers.google.com/web/updates/2020/08/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
+> <span data-ttu-id="4bc6c-382">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-382">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="4bc6c-383">原始页面位于 [此处](https://developers.google.com/web/updates/2020/08/devtools/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-383">The original page is found [here](https://developers.google.com/web/updates/2020/08/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="b836b-385">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="b836b-385">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="4bc6c-385">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-385">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
