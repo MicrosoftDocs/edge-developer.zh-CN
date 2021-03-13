@@ -3,17 +3,30 @@ description: Linux 上的 Microsoft Edge、”问题“工具中改进的 Webhin
 title: DevTools 中的新增功能 (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 7d24d1ba6fe33a7420ff34376c981d608a4e30af
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a36029aa97604b6aea20f232d329ce3805a3144
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397572"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408365"
 ---
+<!-- Copyright Jecelyn Yeen 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # <a name="whats-new-in-devtools-microsoft-edge-88"></a>DevTools 中的新增功能 (Microsoft Edge 88)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
@@ -100,7 +113,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 [网络](#network-tool)、[应用程序](#application-tool) 和 [源](#sources-tool) 工具中的以下新功能可帮助您构建 [PWA][ProgressiveWebAppsIndex]。  在调试服务工作线程遇到困难时，请使用以下功能。  
 
-请求路由显示基于通过服务工作线程运行的网络请求的 `startup` 和 `fetch` 事件。  通过 **应用程序** 或 **网络工具** 访问时间线。  当你遇到服务工作者的问题，并且想要显示事件或事件是否出错时，时间线 `startup` 会 `fetch` 有所帮助。  
+请求路由显示基于通过服务工作线程运行的网络请求的 `startup` 和 `fetch` 事件。  通过 **应用程序** 或 **网络工具** 访问时间线。  当你遇到服务工作人员的问题，并且想要在 或 事件出错时显示时间线 `startup` `fetch` 帮助。  
 
 ### <a name="application-tool"></a>应用程序工具  
 
@@ -179,8 +192,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="将属性值粘贴到 Microsoft Visual Studio 代码中" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         将属性值粘贴到 Microsoft Visual Studio Code  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="将属性值粘贴到 Microsoft Visual Studio Code 中" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         将属性值粘贴到 Microsoft Visual Studio Code 中  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -329,7 +342,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道  
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [Microsoft Edge][MicrosoftEdgePreviewChannels] 预览通道作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [Microsoft Edge 预览][MicrosoftEdgePreviewChannels] 通道作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 

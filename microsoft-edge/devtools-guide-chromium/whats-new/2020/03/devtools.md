@@ -3,16 +3,16 @@ description: 模拟命令菜单中的颜色视觉缺陷、停靠到左侧等。
 title: DevTools （Microsoft Edge 83）中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 158d91e3d9c925beebe03a1baa8d6308b650262b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f97155b12a679f630ce80c007e7f0ca693e19876
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398943"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408351"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398943"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="whats-new-in-devtools-microsoft-edge-83"></a>DevTools （Microsoft Edge 83）中的新增功能  
 
 按照更新的 Chromium 计划，我们将调整即将推出的 Microsoft Edge 版本的计划，并取消 Microsoft Edge 82 版本。 有关详细信息，请查看我们的 [博客文章][WindowsBlogStableRelease]。  
@@ -36,17 +35,17 @@ ms.locfileid: "11398943"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告  
 
-以下各节列出了你可能从 Microsoft Edge DevTools 团队错过的公告。  查看通知以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
+以下各节列出了你可能错过的 Microsoft Edge DevTools 团队中的通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>在 Windows 10 设备上远程调试 Microsoft Edge  
 
-现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此应用扩展了 Windows [Device Portal，][WindowsUwpDebugTestPerfDevicePortal]你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 1 (0 设备，显示 Microsoft Edge 中所有选项卡以及 Windows 10 设备上打开的所有选项卡\) 的目标列表\) ，并针对在远程 Windows 10 设备上运行的目标使用开发计算机上 DevTools。 [][ProgressiveWebAppsChromiumIndex]  
+现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \ (Microsoft Edge 中所有选项卡和 [PBA][ProgressiveWebAppsChromiumIndex] 在 Windows 10 设备上打开\) ，并针对在远程 Windows 10 设备上运行的目标使用开发计算机上 DevTools。  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用  
 :::image-end:::  
 
-[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。  通过推文或选择发送反馈图标，让我们[][PostTweetEdgeDevTools]了解远程[调试](#getting-in-touch-with-microsoft-edge-devtools-team)体验！  
+[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。  通过推文或选择发送反馈图标，告诉我们[][PostTweetEdgeDevTools]你的远程[调试](#getting-in-touch-with-microsoft-edge-devtools-team)体验！  
 
 ### <a name="new-ways-to-access-settings"></a>访问设置的新方法  
 
@@ -94,7 +93,7 @@ Chromium 问题 [#963183][CR963183]
    在 Microsoft Edge 81 及更早版本中，在页面刷新后，**"属性" 选项卡** 是空白的  
 :::image-end:::  
 
-在 Microsoft Edge 83 中，现在可以在页面刷新后在"属性"选项卡中显示当前选定 **元素的属性**。  
+在 Microsoft Edge 83 中，现在可以在页面刷新后在"属性"选项卡中显示当前 **所选元素的属性**。  
 
 :::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="在 Microsoft Edge 83 中，属性 选项卡显示页面刷新后当前所选元素的属性" lightbox="../../media/2020/03/properties-in-82.msft.png":::
    在 Microsoft Edge 83 中，**"属性" 选项卡** 显示页面刷新后当前所选元素的属性  
@@ -104,17 +103,17 @@ Chromium 问题 [#1050999][CR1050999]
 
 ### <a name="use-the-arrow-keys-to-scroll-in-the-changes-tool"></a>使用箭头键在 "更改" 工具中滚动  
 
-**"更改" 工具** 跟踪你对 DevTools 中的 CSS 或 JavaScript 所做的任何更改。  您可以使用"更改"工具快速**** 显示所有更改，并返回编辑器/IDE。  
+**"更改" 工具** 跟踪你对 DevTools 中的 CSS 或 JavaScript 所做的任何更改。  可以使用"更改"工具快速**** 显示所有更改，并返回编辑器/IDE。  
 
-若要打开**更改工具**，请在 `Ctrl` + `Shift` + `P` DevTools 中选择以打开命令[菜单并][DevToolsCommandMenuIndex]键入 `changes` 。  选择并运行 **"显示更改**"命令以在**** DevTools 箱中打开"更改"工具。  
+若要打开**更改工具，** 请在 `Ctrl` + `Shift` + `P` DevTools 中选择以打开命令[菜单][DevToolsCommandMenuIndex]并键入 `changes` 。  选择并运行"**显示更改"** 命令以在**** DevTools 箱中打开"更改"工具。  
 
-对缩小文件进行更改后，"更改"工具使您能够水平滚动**** 以显示所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。  
+对缩小文件进行更改后，"更改"工具允许您水平滚动**** 以显示所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。  
 
 :::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
-   在 Microsoft Edge 83 中，可以使用箭头键水平滚动以显示在"更改"工具中对缩小代码 **所做的更改**  
+   在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码 **所做的更改**  
 :::image-end:::  
 
-如果你使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文[][PostTweetEdgeDevTools]或选择"发送反馈"图标向我们发送[反馈](#getting-in-touch-with-microsoft-edge-devtools-team)！  
+如果使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文或[][PostTweetEdgeDevTools]选择"发送反馈"图标向我们发送[反馈](#getting-in-touch-with-microsoft-edge-devtools-team)！  
 
 Chromium 问题 [#963183][CR963183]  
 
@@ -140,11 +139,11 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 | 全色盲 | 无法感觉任何颜色，灰色阴影除外\（极少\）。 |  
 
 存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。  
-例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同情况 \ (能够感知更多/更少的相关颜色\) 。  
+例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。  
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1003700][CR1003700]  
 
@@ -164,7 +163,7 @@ Chromium 问题 [#1003700][CR1003700]
    模拟区域设置  
 :::image-end:::  
 
-若要试用演示，请导航到与 [区域设置相关的代码示例][MathiasByensLocaleDemo]。
+若要尝试演示，请导航到与 [区域设置相关的代码示例][MathiasByensLocaleDemo]。
 
 Chromium 问题 [#1051822][CR1051822]
 
@@ -184,7 +183,7 @@ Chromium 问题 [#1051822][CR1051822]
    "响应头" **部分中的更多** 指南  
 :::image-end:::  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1051466][CR1051466]  
 
@@ -202,7 +201,7 @@ Chromium 问题 [#1041830][CR1041830]
 
 ### <a name="view-network-requests-that-set-a-specific-cookie-path"></a>查看设置了特定 cookie 路径的网络请求  
 
-使用网络工具中的新筛选器关键字可专注于设置特定 `cookie-path` Cookie 路径的网络****[请求][MDNCookiePath]。  
+使用网络工具中的新筛选器关键字可以专注于设置特定 Cookie `cookie-path` 路径的网络[请求][MDNCookiePath]。 ****  
 
 查看[按属性过滤请求][DevtoolsNetworkReferenceFilterRequestsProperties]以发现更多关键词，例如`cookie-path`。
 
@@ -217,7 +216,7 @@ Chromium 问题 [#1041830][CR1041830]
 > [!NOTE]
 > 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单][DevtoolsCustomizePlacementsChangeMainMenu]中进行访问。  Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1011679][CR1011679]  
 
@@ -234,13 +233,13 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖  
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录中，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该文件夹中**** 的所有本地覆盖。  
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。  
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖  
 :::image-end:::  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1016501][CR1016501]  
 
@@ -254,7 +253,7 @@ Chromium 问题 [#1016501][CR1016501]
    新的长任务 UI  
 :::image-end:::  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择发送反馈图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1054447][CR1054447]  
 
