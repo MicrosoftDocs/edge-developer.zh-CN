@@ -403,8 +403,10 @@
               href: webview2/howto/static.md
             - name: 调试 WebView2
               href: webview2/howto/debug.md
-            - name: 使用 Edge 驱动程序实现自动化
+            - name: 使用 Microsoft Edge 驱动程序实现自动化
               href: webview2/howto/webdriver.md
+            - name: 在 WebView2 中使用 Chromium 开发工具协议
+              href: webview2/howto/chromium-devtools-protocol.md
         - name: 参考
           href: webview2/webview2-api-reference.md
           items:
