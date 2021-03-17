@@ -1,18 +1,18 @@
 ---
-description: 如何将 Microsoft Edge DevTools 移到视口底部或左侧，或移动到单独的窗口。
-title: '将 Microsoft Edge DevTools 放置 (取消停靠、停靠到底部、将扩展坞更改为左侧) '
+description: 如何将 Microsoft Edge DevTools 移动到视口的底部或左侧，或移动到单独的窗口。
+title: '将 Microsoft Edge DevTools (Undock、Dock To Bottom、Dock To Left) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: e3160999a1072afffdc5c5d44f8fc60fab65d264
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399029"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439175"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,9 +28,9 @@ ms.locfileid: "11399029"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>将 Microsoft Edge DevTools 放置 (取消停靠、停靠到底部、将扩展坞更改为左侧)   
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>将 Microsoft Edge DevTools (Undock、Dock To Bottom、Dock To Left)   
 
-默认情况下，DevTools 停靠在视区右侧。  还可以停靠到底部、停靠到左侧或将 DevTool 停靠到单独的窗口。  
+默认情况下，DevTools 固定到视口的右侧。  还可以停靠到底部、停靠到左侧或将 DevTools 撤消到单独的窗口。  
 
 :::row:::
    :::column span="":::
@@ -59,34 +59,28 @@ ms.locfileid: "11399029"
 
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置  
 
-1.  Choose **Customize and Control DevTools** `...` \ (\) and choose **Undock into Separate Window** \ (![ Undock ][ImageUndockIcon] \) ， **Dock to Bottom** \ (Dock to Bottom ![ ][ImageBottomIcon] \) ， or **Dock To Left** \ (Dock to Left ![ ][ImageLeftIcon] \) .  
+1.  选择"自定义和控制**DevTools** \ (`...` \) "，然后选择"撤消**** 停靠到单独的窗口 \ (Undock \) "、"停靠到底部 \ (扩展坞到底部 \) "或"停靠到左侧 "\ (扩展坞向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择"撤消到单独的窗口"" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       选择 **"撤消到单独的窗口"**  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择"取消停靠到单独的窗口"" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       选择 **"取消停靠到单独的窗口"**  
     :::image-end:::  
     
 ## <a name="change-placement-from-the-command-menu"></a>从命令菜单更改位置  
 
 1.  [打开命令菜单][DevtoolsCommandMenu]。  
-1.  运行以下命令之一： `Dock To Bottom` `Undock Into Separate Window` .  当前没有用于左停靠的命令，但你可以从主菜单 [访问它](#change-placement-from-the-main-menu)。  
+1.  运行以下命令之一 `Dock To Bottom` `Undock Into Separate Window` ：、。  当前没有用于左停靠的命令，但你可以从主菜单 [访问它](#change-placement-from-the-main-menu)。  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Undock 命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       Undock 命令  
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="undock 命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       undock 命令  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageUndockIcon]: ../media/undock-icon.msft.png  
-[ImageBottomIcon]: ../media/bottom-icon.msft.png  
-[ImageLeftIcon]: ../media/left-icon.msft.png  
-
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令|Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单菜单运行|Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

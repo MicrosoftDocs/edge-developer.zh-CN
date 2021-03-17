@@ -1,18 +1,18 @@
 ---
-description: 如何使用本地存储窗格和控制台查看和编辑 localStorage。
+description: 如何使用"本地存储"窗格和控制台查看和编辑 localStorage。
 title: 使用 Microsoft Edge DevTools 查看和编辑本地存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c68f11b8ba2c10a0792f10acf5c5ededf2ad8e8d
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 4eebf3108e7b1c6ecaecbfed445e8f3fe26215c4
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231186"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439673"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,21 +28,21 @@ ms.locfileid: "11231186"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# 使用 Microsoft Edge DevTools 查看和编辑本地存储  
+# <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看和编辑本地存储  
 
 本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [localStorage][MDNWindowsLocalStorage] 键值对。  
 
-## 查看 localStorage 键和值  
+## <a name="view-localstorage-keys-and-values"></a>查看 localStorage 键和值  
 
-1.  选择 **"应用程序"** 选项卡以打开 **应用程序** 工具。  默认情况下 **显示** 清单窗格。  
+1.  选择" **应用程序"** 选项卡以打开 **"应用程序"** 工具。  " **清单** "窗格默认显示。  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
        清单**窗格**  
     :::image-end:::  
     
-1.  展开 **"本地存储"** 菜单。  
+1.  展开" **本地存储"** 菜单。  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="本地存储菜单" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text=""本地存储"菜单" lightbox="../media/storage-application-local-storage.msft.png":::
        " **本地存储"** 菜单  
     :::image-end:::  
     
@@ -52,13 +52,13 @@ ms.locfileid: "11231186"
        `localStorage`域的键值 `https://www.bing.com` 对  
     :::image-end:::  
     
-1.  选择表的一行以查看表下方的查看器中的值。  
+1.  选择表格的一行以查看表格下方的查看器中的值。  
     
     :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="查看键eventLogQueue_Online值" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
        查看键 `eventLogQueue_Online` 的值  
     :::image-end:::  
     
-## 创建新的 localStorage 键值对  
+## <a name="create-a-new-localstorage-key-value-pair"></a>创建新的 localStorage 键值对  
 
 1.  [查看域的 localStorage 键值对](#view-localstorage-keys-and-values)。  
 1.  双击表格的空部分。  DevTools 创建一个新行，并焦点在键列中 **的** 光标。  
@@ -67,54 +67,49 @@ ms.locfileid: "11231186"
        要双击以创建新的键值对的表的空部分  
     :::image-end:::  
     
-## 编辑 localStorage 键或值  
+## <a name="edit-localstorage-keys-or-values"></a>编辑 localStorage 键或值  
 
 1.  [查看域的 localStorage 键值对](#view-localstorage-keys-and-values)。  
 1.  双击"键"或"值****"**列中的单元格**以编辑该键或值。  
     
-    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="编辑 localStorage 密钥" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="编辑 localStorage 项" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
        编辑 `localStorage` 密钥  
     :::image-end:::  
     
-## 删除 localStorage 键值对  
+## <a name="delete-localstorage-key-value-pairs"></a>删除 localStorage 键值对  
 
 1.  [查看 `localStorage` 域的键值对](#view-localstorage-keys-and-values)。  
 1.  选择要删除的键值对。  DevTools 突出显示蓝色以指示已选中。  
-1.  Select the `Delete` key or choose Delete **Selected** \ (Delete ![ Selected ][ImageDeleteIcon] \) .  
+1.  选择该 `Delete` 键或选择****"删除所选 \ (![ 删除所选 ](../media/delete-icon.msft.png) \) "。  
     
-## 删除 `localStorage` 域的所有键值对  
+## <a name="delete-all-localstorage-key-value-pairs-for-a-domain"></a>删除 `localStorage` 域的所有键值对  
 
 1.  [查看 `localStorage` 域的键值对](#view-localstorage-keys-and-values)。  
-1.  Choose **Clear All** \ (Clear All ![ ][ImageClearIcon] \) .  
+1.  Choose **Clear All** \ (Clear All ![ ](../media/clear-icon.msft.png) \) .  
     
-## 从控制台与 localStorage 交互  
+## <a name="interact-with-localstorage-from-the-console"></a>从控制台与 localStorage 交互  
 
-由于可以在控制台中运行 JavaScript，并且**** 由于控制台可以访问页面的**** JavaScript 上下文，因此可以与控制台 `localStorage` **进行交互**。  
+由于可以在控制台中运行 JavaScript，并且**** 由于**控制台**可以访问页面的 JavaScript 上下文，因此可以与控制台 `localStorage` **进行交互**。  
 
-1.  如果要访问显示的页面外域的键值对，请使用**JavaScript**上下文菜单更改控制台的 JavaScript**** `localStorage` 上下文。  
+1.  如果要访问显示的页外域的键值对，请使用**JavaScript**上下文菜单更改控制台的 JavaScript**** `localStorage` 上下文。  
     
     :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="更改控制台的 JavaScript 上下文" lightbox="../media/storage-console-local-storage.msft.png":::
        更改控制台的 JavaScript 上下文  
     :::image-end:::  
     
-1.  在 `localStorage` 控制台中运行表达式，与在 JavaScript 中运行一样。  
+1.  在 `localStorage` 控制台中运行表达式，与在 JavaScript 中一样。  
     
     :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="从控制台与 localStorage 交互" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
        从控制台 `localStorage` **进行交互**  
     :::image-end:::  
     
-## 联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 |Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage |MDN"  
 

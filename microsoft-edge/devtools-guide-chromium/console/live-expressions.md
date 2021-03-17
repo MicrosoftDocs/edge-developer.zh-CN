@@ -1,18 +1,18 @@
 ---
-description: 如果发现自己在控制台中重复键入相同的 JavaScript 表达式，请尝试使用 Live Expressions。
-title: 使用 Live Expressions 实时监视 JavaScript 表达式值
+description: 如果您发现自己在控制台中重复键入相同的 JavaScript 表达式，请尝试 Live Expressions。
+title: 使用 Live Expressions 实时观看 JavaScript 表达式值
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 5bc49b60cc1c1dfb41c793c3fec7681fb6415e4c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: af920de1c395489dc09b83f3cc0f24814c4f5cbe
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398796"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439224"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,17 @@ ms.locfileid: "11398796"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>使用 Live Expressions 实时监视 JavaScript 表达式值  
+# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>使用 Live Expressions 实时观看 JavaScript 表达式值  
 
-如果你发现自己在控制台中重复键入相同的 JavaScript 表达式，你可能会发现创建 Live **Expression**更容易。  使用 **Live Expressions，** 键入一次表达式，然后将其固定到控制台的顶部。  表达式的值几乎实时更新。  
+如果你发现自己在控制台中重复键入相同的 JavaScript 表达式，你可能会发现创建 Live **Expression**更容易。  使用 **Live Expressions，** 键入表达式一次，然后将其固定到控制台顶部。  表达式的值几乎实时更新。  
 
-## <a name="create-a-live-expression"></a>创建动态表达式  
+## <a name="create-a-live-expression"></a>创建实时表达式  
 
 1.  [打开控制台][DevToolsConsoleReferenceOpenConsole]。  
-1.  Choose **Create Live Expression** \ (Create Live Expression ![ ][ImageCreateLiveExpressionIcon] \) .  将显示 **"实时表达式** "文本框。  
+1.  Choose **Create Live Expression** \ (Create Live Expression ![ ](../media/create-live-expression-icon.msft.png) \) .  将显示 **"Live Expression"** 文本框。  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="在 Live Expression 文本框中键入 document.activeElement" lightbox="../media/console-create-live-expression.msft.png":::
-       键入 `document.activeElement` Live **Expression** 文本框  
+       在 `document.activeElement` Live **Expression 文本框中** 键入内容  
     :::image-end:::  
     
 1.  选择 `Control` + `Enter` \ (Windows、Linux\) 或 `Command` + `Enter` \ (macOS\) **** 保存表达式，或在 Live Expression 文本框外部选择。  
@@ -47,13 +47,9 @@ ms.locfileid: "11398796"
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
-
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "打开控制台 - 控制台参考|Microsoft Docs"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "打开控制台 - 控制台|Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

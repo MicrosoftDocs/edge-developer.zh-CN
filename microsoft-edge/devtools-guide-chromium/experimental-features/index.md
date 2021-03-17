@@ -3,16 +3,31 @@ description: Microsoft Edge DevTools 中的最新实验功能
 title: 实验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 实验
-ms.openlocfilehash: 612b3b83aee1ee9035982e58e008395ec3645b2b
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+no-loc:
+- Enable webhint
+- Enable Network Console
+- Source Order Viewer
+- Enable Composited Layers in 3D View
+- Enable new Font Editor tool within the Styles pane
+- Enable new CSS Flexbox debugging features
+- Enable + button tab menus to open more tools
+- Enable Welcome tab
+- 3D View
+- Turn on support to move tabs between panels
+- Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code
+- Edit keyboard shortcuts for any action in the DevTools
+- Turn on new CSS grid debugging features
+- 'Emulation: Support dual screen mode'
+ms.openlocfilehash: c76830cb8bbcc597aa026f58e1926cd2f9bc2d62
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408302"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439582"
 ---
 # <a name="experimental-features"></a>实验功能  
 
@@ -46,16 +61,16 @@ Microsoft Edge DevTools 提供对仍在开发中的实验性功能的访问权�
 
 | 实验性功能 | Microsoft Edge 版本 |  
 |:--- |:--- |  
-| [启用 Webhint](#enable-webhint) | 85 或更高版本 |  
-| [启用网络控制台](#enable-network-console) | 85 或更高版本 |  
-| [源订单查看器](#source-order-viewer) | 86 或更高版本 |  
-| [在 3D 视图中启用复合层](#enable-composited-layers-in-3d-view) | 87 或更高版本 |  
-| [在"样式"窗格中启用新的字体编辑器工具](#enable-new-font-editor-tool-within-the-styles-pane) | 89 或更高版本 |  
-| [启用新的 CSS Flexbox 调试功能](#enable-new-css-flexbox-debugging-features) | 89 或更高版本 |  
-| [启用 + 按钮选项卡菜单以打开更多工具](#enable--button-tab-menus-to-open-more-tools) | 89 或更高版本 |  
-| ["启用欢迎"选项卡](#enable-welcome-tool) | 89 或更高版本 |  
+| [Enable webhint](#enable-webhint) | 85 或更高版本 |  
+| [Enable Network Console](#enable-network-console) | 85 或更高版本 |  
+| [Source Order Viewer](#source-order-viewer) | 86 或更高版本 |  
+| [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view) | 87 或更高版本 |  
+| [Enable new Font Editor tool within the Styles pane](#enable-new-font-editor-tool-within-the-styles-pane) | 89 或更高版本 |  
+| [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 或更高版本 |  
+| [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 或更高版本 |  
+| [Enable Welcome tab](#enable-welcome-tab) | 89 或更高版本 |  
 
-### <a name="enable-webhint"></a>启用 Webhint  
+### Enable webhint  
 
 [webhint][WebhintMain] 是一个开放源代码工具，可为网站和本地网页提供实时反馈。  Webhint 提供 [的反馈类型][WebhintMain]。  
 
@@ -74,7 +89,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验性功能的访问权�
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### <a name="enable-network-console"></a>启用网络控制台  
+### Enable Network Console  
 
 **网络控制台** 是实验通过 HTTP 提出综合网络请求的工作主题。  可以使用网络 **控制台实验** 发送 Web API 请求。  
 
@@ -92,30 +107,29 @@ Microsoft Edge DevTools 提供对仍在开发中的实验性功能的访问权�
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### <a name="source-order-viewer"></a>源订单查看器  
+### Source Order Viewer  
 
-**源订单** 查看器是显示网页源中元素顺序的实验。  屏幕显示顺序可能与源的顺序不同，这会使屏幕阅读器和键盘用户混淆。  使用 **"源顺序查看器** "实验可查找屏幕显示顺序和源顺序之间的差异。  
+**Source Order Viewer** 是显示网页源中元素顺序的实验。  屏幕显示顺序可能与源的顺序不同，这会使屏幕阅读器和键盘用户混淆。  使用 **Source Order Viewer** 实验查找屏幕显示顺序和源的顺序之间的差异。  
 
-打开实验后，请确保重新启动 DevTools。  若要使用 **源订单查看器**，请完成以下步骤。  
+打开实验后，请确保重新启动 DevTools。  若要使用 **Source Order Viewer** ，请完成以下步骤。  
 
 1.  打开 **"元素"** 工具。  
 1.  打开 **"辅助功能"** 窗格， (底部\) 面板。  
-1.  在" **源订单查看器"** 部分下，选中" **显示源订单"** 复选框。  
+1.  在部分 **Source Order Viewer** 下，选中" **显示源订单"** 复选框。  
 1.  突出显示任何 HTML 元素以显示网页源中顺序的覆盖。  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=""辅助功能"窗格中的"源订单查看器"" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **"辅助功能"** 窗格中 **的"源订单查看器** "  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (源订单查看器) ：：： 在辅助功能窗格中" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：： **Source Order Viewer** 在**辅助功能窗格中**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
-### <a name="enable-composited-layers-in-3d-view"></a>在 3D 视图中启用复合层  
+### Enable Composited Layers in 3D View  
 
-现在，你可以将 Layers 与 z 索引和文档对象模型 \ (DOM\) 一起可视化。  此功能可帮助您在不经常切换上下文的情况下进行调试。  您确定减少上下文切换是一个主要的难点。  并非始终清楚您编写的代码对 Web 应用有何影响。  为获得全面的视觉调试体验， 已将3D 视图和复合层组合到一起。  
+现在，你可以将 Layers 与 z 索引和文档对象模型 \ (DOM\) 一起可视化。  此功能可帮助您在不经常切换上下文的情况下进行调试。  您确定减少上下文切换是一个主要的难点。  并非始终清楚您编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在组合了 和 3D View 复合层。  
 
 打开实验后，请确保重新启动 DevTools。  若要使用 **复合层**，请完成以下步骤。  
 
-1.  在"箱"上，选择 **"3D 视图"** 工具。  
+1.  在"箱"上，选择 **3D View** 工具。  
 1.  打开 **"复合层"** 窗格。  
 1.  将显示应用的所有绘制图层。  使用你自己的 Web 应用试用此功能。  
     
@@ -125,7 +139,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验性功能的访问权�
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
 
-### <a name="enable-new-font-editor-tool-within-the-styles-pane"></a>在"样式"窗格中启用新的字体编辑器工具  
+### Enable new Font Editor tool within the Styles pane  
 
 现在，可以使用新的可视 [字体编辑器][DevtoolsInspectStylesEditFonts] 来编辑字体。  使用它定义字体和字体特征。  可视 **字体编辑器** 可帮助您完成以下操作。  
 
@@ -148,7 +162,7 @@ Microsoft Edge DevTools 提供对仍在开发中的实验性功能的访问权�
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### <a name="enable-new-css-flexbox-debugging-features"></a>启用新的 CSS Flexbox 调试功能  
+### Enable new CSS Flexbox debugging features  
 
 此实验性功能提供了许多新的可视化效果，可帮助你调试 CSS Flexbox 布局。  若要预览最新的实验功能， [请打开此实验](#turn-on-experimental-features) 并重新加载 DevTools。  
 
@@ -187,9 +201,9 @@ Inspect **工具** 提供了一种快速方法，通过将鼠标悬停在网站�
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### <a name="enable--button-tab-menus-to-open-more-tools"></a>启用 + 按钮选项卡菜单以打开更多工具  
+### Enable + button tab menus to open more tools  
 
-现在，可以使用新的"更多工具"\ (**** `+` \) 图标打开更多工具。  打开"启用 **+** 按钮"选项卡菜单以打开更多工具实验并重新加载 DevTools 后，DevTools 顶部的选项卡组右侧将显示加号 \ (`+` \) 。  若要显示可添加到选项卡栏的其他工具的列表，请选择新的"更多工具"\ (**** `+` \) 图标。  
+现在，可以使用新的"更多工具"\ (**** `+` \) 图标打开更多工具。  打开实验并重新加载 DevTools 后，在 DevTools 顶部的选项卡组右侧显示加号 **Enable + button tab menus to open more tools** `+` \ (\) 。  若要显示可添加到选项卡栏的其他工具的列表，请选择新的"更多工具"\ (**** `+` \) 图标。  
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具" lightbox="../media/experiments-more-tools-button.msft.png":::
    **顶部窗格中** 的更多工具
@@ -197,7 +211,7 @@ Inspect **工具** 提供了一种快速方法，通过将鼠标悬停在网站�
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### <a name="enable-welcome-tool"></a>启用欢迎工具
+### Enable Welcome tab
 
 此实验使用新的欢迎 **工具** 替换新增 **功能** 工具。  它显示以下内容的刷新设计。  
 
@@ -208,7 +222,7 @@ Inspect **工具** 提供了一种快速方法，通过将鼠标悬停在网站�
     
 每次 **更新** Microsoft Edge 后，欢迎工具都会自动打开。  若要防止每次更新后显示**欢迎**工具，请清除"欢迎使用工具"标题**** 下每个更新后"打开"**** 选项卡旁边的复选框。  
 
-如果你更喜欢原始的**新增**功能工具，请导航到设置实验[][DevtoolsCustomizeIndexSettings]并删除"  >  **** 启用欢迎"选项卡旁边的**复选框**。  
+如果你更喜欢原始的**新增功能**工具，请[导航到设置][DevtoolsCustomizeIndexSettings]  >  **实验**并删除 旁边的复选框 **Enable Welcome tab** 。  
 
 :::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="欢迎工具" lightbox="../media/experiments-welcome.msft.png":::
    **欢迎** 工具  
@@ -218,14 +232,13 @@ Inspect **工具** 提供了一种快速方法，通过将鼠标悬停在网站�
 
 ## <a name="previous-experimental-features"></a>以前的实验功能  
 
-*   [3D 视图][Devtools3dViewIndex] 现在可用，在 Microsoft Edge 版本 83 或更高版本中默认处于打开状态。  
-*   [启用支持以在面板][DevtoolsCustomizeIndex] 之间移动选项卡现在可用，Microsoft Edge 版本 85 或更高版本中默认处于打开状态。  
-*   [将 DevTools][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] 中的键盘快捷方式与 Microsoft Visual Studio Code 现在可用，在 Microsoft Edge 版本 86 或更高版本中默认处于打开状态。  
-*   [编辑 DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] 中任何操作键盘快捷方式现已可用，在 Microsoft Edge 版本 89 或更高版本中默认处于打开状态。  
-*   [启用新的 CSS 网格调试功能][DevtoolsCssGrid] 现已可用，在 Microsoft Edge 版本 89 或更高版本中默认处于打开状态。  
-*   [模拟：支持双屏模式][DevtoolsDeviceModeDualScreenAndFoldables] 现在可用，在 Microsoft Edge 版本 90 或更高版本中默认处于打开状态。  
+*   [3D View][Devtools3dViewIndex] 现在可用，在 Microsoft Edge 版本 83 或更高版本中默认处于打开状态。  
+*   [Turn on support to move tabs between panels][DevtoolsCustomizeIndex] 现在可用，在 Microsoft Edge 版本 85 或更高版本中默认处于打开状态。  
+*   [Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] 现在可用，在 Microsoft Edge 版本 86 或更高版本中默认处于打开状态。  
+*   [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] 现在可用，在 Microsoft Edge 版本 89 或更高版本中默认处于打开状态。  
+*   [Turn on new CSS grid debugging features][DevtoolsCssGrid] 现在可用，在 Microsoft Edge 版本 89 或更高版本中默认处于打开状态。  
+*   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] 现在可用，在 Microsoft Edge 版本 90 或更高版本中默认处于打开状态。  
 
-    
 ## <a name="providing-feedback-on-experimental-features"></a>提供有关实验性功能的反馈  
 
 提供有关 Microsoft Edge DevTools 实验或与 DevTools 相关的任何其他内容的反馈。  
@@ -245,12 +258,12 @@ Inspect **工具** 提供了一种快速方法，通过将鼠标悬停在网站�
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: ../3d-view/index.md "3D 视图 | Microsoft Docs"  
+[Devtools3dViewIndex]: ../3d-view/index.md "：：：no-loc (3D 视图) ：：： |Microsoft Docs"  
 [DevtoolsCssGrid]: ../css/grid.md "检查 Microsoft Edge DevTools |Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "自定义 Microsoft Edge DevTools |Microsoft Docs"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "编辑 DevTools 工具中任何操作|Microsoft Docs"  
-[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "将 DevTools 中的键盘快捷方式与 Microsoft Visual Studio Code |Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "：：：no-loc (编辑 DevTools 工具中任何操作) ：：： |Microsoft Docs"  
+[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "：：：no-loc (将 DevTools 中的键盘快捷方式与 Microsoft Visual Studio Code) ：：： |Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "在 Microsoft Edge DevTools 服务中通过设备模式模拟移动设备|Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "在 DevTools | 中的"样式"窗格中编辑 CSS 字体样式和|Microsoft Docs"  
 [DevtoolsIssuesIndex]: ../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  

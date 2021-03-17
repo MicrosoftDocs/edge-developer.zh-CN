@@ -3,16 +3,16 @@ description: 了解如何在 Microsoft Edge DevTools 的网络面板中检测网
 title: 网络问题指南
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 12cc447fa9d8ef8624e8528430eabc25ab523dd0
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9b92ca7b759fab80d7d829b31f605ccb8062a816
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398271"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439617"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -30,37 +30,37 @@ ms.locfileid: "11398271"
 
 # <a name="network-issues-guide"></a>网络问题指南  
 
-本指南演示如何在 Microsoft Edge DevTools 的网络面板中检测网络问题或优化机会。  
+本指南显示了如何在 Microsoft Edge DevTools 的网络面板中检测网络问题或优化机会。  
 
-若要了解网络工具**的基础知识，** 请导航到["入门"。][NetworkPerformance]  
+若要了解网络工具**的基础知识**，请导航到"[入门"。][NetworkPerformance]  
 
 ## <a name="queued-or-stalled-requests"></a>排队或停止的请求  
 
 **症状**  
 
-同时下载六个请求。  之后，一系列请求将排入队列或停止。  前六个请求之一完成之后，队列中的一个请求将启动。  
+同时下载六个请求。  之后，一系列请求将排队或停止。  前六个请求之一完成之后，队列中的一个请求将启动。  
 
-在 **下图的"瀑布** "中，资产前六个 `edge-iconx1024.msft.png` 请求同时启动。  后续请求将停止，直到原始六个请求之一完成。  
+在 **下图的瀑布** 中，资产前六个 `edge-iconx1024.msft.png` 请求同时开始。  后续请求将停止，直到原始六个请求中的一个完成。  
 
 :::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="网络面板中排队或停止的系列的示例" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   网络工具中排队或停止的 **系列** 的示例  
+   Network 工具中排队或停止的 **系列** 的示例  
 :::image-end:::  
 
 **原因**  
 
 对单个域提出的请求过多。  在 HTTP/1.0 或 HTTP/1.1 连接上，Microsoft Edge 允许每个主机最多同时连接六个 TCP 连接。  
 
-**修补程序**  
+**修复**  
 
-*   如果必须使用 HTTP/1.0 或 HTTP/1.1，则实现域分片。  
-*   使用 HTTP/2。  请勿将域分片与 HTTP/2 一同使用。  
-*   删除或延迟不必要的请求，以便更早地下载关键请求。  
+*   如果必须使用 HTTP/1.0 或 HTTP/1.1，则实现域 sharding。  
+*   使用 HTTP/2。  不要将域分片与 HTTP/2 一同使用。  
+*   删除或延迟不必要的请求，以便之前下载关键请求。  
     
-## <a name="slow-time-to-first-byte-ttfb"></a>第一个字节的 (TTFB)   
+## <a name="slow-time-to-first-byte-ttfb"></a>从 TTFB 文件 (字节)   
 
 **症状**  
 
-请求需要很长时间来等待从服务器接收第一个字节。  
+请求花费很长时间来等待从服务器接收第一个字节。  
 
 下图中，瀑布中的绿色长条指示请求等待很长时间****。  这是使用配置文件来限制网络速度并添加延迟的模拟。  
 
@@ -71,9 +71,9 @@ ms.locfileid: "11398271"
 **原因**  
 
 *   客户端和服务器之间的连接速度很慢。  
-*   服务器响应缓慢。  在本地托管服务器，以确定它是连接速度慢还是速度较慢的服务器。  如果在访问本地服务器时仍 (到第一字节 \) TTFB\) ，则服务器速度很慢。  
+*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是速度慢。  如果访问本地服务器时，仍 (到第一字节 \ (TTFB\) ，则服务器速度很慢。  
     
-**修补程序**  
+**修复**  
 
 *   如果连接速度较慢，请考虑在 CDN 上托管内容或更改宿主提供商。  
 *   如果服务器运行缓慢，请考虑优化数据库查询、实现缓存或修改服务器配置。  
@@ -95,7 +95,7 @@ ms.locfileid: "11398271"
 *   客户端和服务器之间的连接速度很慢。  
 *   正在下载大量内容。  
     
-**修补程序**  
+**修复**  
 
 *   请考虑在 CDN 上托管内容或更改宿主提供商。  
 *   通过优化请求发送更少的字节。  
@@ -105,16 +105,12 @@ ms.locfileid: "11398271"
 Do you have a network issue that should be added to this guide?  
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSendFeedbackIcon]: ../media/smile-icon.msft.png  
 
 <!-- links -->  
 
@@ -126,7 +122,7 @@ Do you have a network issue that should be added to this guide?
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由一名（该链接可能链接可能 (）由一名技术编写者[、Chrome][KayceBasques] DevTools \& Lighthouse\) 和[House Garbee][JonathanGarbee] \ (Google Developer Expert for Web Technology\) 创作。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由位于此处的一位用户创作，作者是 (技术编写者[，Chrome][KayceBasques] DevTools \& Lighthouse\) 和[一个][JonathanGarbee]Google Developer Expert for Web Technology\) （该链接可能 (Google Developer Expert for Web Technology\) ）。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
