@@ -6,10 +6,10 @@ ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
 ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2021
 ms.locfileid: "11439694"
@@ -49,7 +49,7 @@ ms.locfileid: "11439694"
 *   确保资源上载或下载实际正在进行。  
 *   检查单个资源的属性，如 HTTP 标头、内容、大小等。  
     
-如果要寻找提高页面加载性能的方法，请不要从网络**工具**开始。 ****  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到 [优化网站速度][DevtoolsSpeedGetStarted]。  
+如果正在寻找提高页面加载性能的方法，**不要** 开始于 **网络**工具。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到 [优化网站速度][DevtoolsSpeedGetStarted]。  
 
 ## <a name="open-the-network-panel"></a>打开“网络”面板  
 
@@ -69,7 +69,7 @@ ms.locfileid: "11439694"
     :::image-end:::  
     -->
     
-1.  若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  将 **打开控制台** 工具。  
+1.  若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\)。  将 **打开控制台** 工具。  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        **控制台**  
@@ -180,14 +180,14 @@ ms.locfileid: "11439694"
        第一张屏幕截图期间发生的网络活动  
     :::image-end:::  
     
-1.  再次选择 (网络设置 \) "，然后关闭"捕获屏幕截图" ![ ](../media/settings-icon.msft.png) 复选框以关闭"屏幕截图"窗格。 ****
+1.  再次选择 \（!["网络](../media/settings-icon.msft.png)\）"，然后关闭" **捕获屏幕截图** 复选框，关闭"屏幕截图"窗格。
 1.  再次刷新页面。  
     
 ## <a name="inspect-the-details-of-the-resource"></a>检查资源的详细信息  
 
 选择资源以了解有关它的信息。  立即尝试：  
 
-1.  选择 `getstarted.html` 。  将显示 **"标题** "面板。  使用此面板检查 HTTP 标头。  
+1.  选择 `getstarted.html`。  将显示 **"标题** "面板。  使用此面板检查 HTTP 标头。  
     
     :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text=""标题"面板" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        " **标题"** 面板  
@@ -208,7 +208,7 @@ ms.locfileid: "11439694"
     :::image-end:::  
     
     > [!TIP]
-    > 缩小文件时，选择"响应"面板底部的"格式**\ (** ![ 格式 \) "按钮，以重新设置文件内容的格式，提高 ](../media/format-icon.msft.png) 可读性。 ****  
+    > 缩小文件后，选择 **响应** 面板底部的![格式  \（](../media/format-icon.msft.png)**** \ **） 按钮，以重新设置文件内容的格式供阅读。**  
     
 1.  选择" **计时"** 面板。  将显示资源的网络活动的细分。  
     
@@ -355,7 +355,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 ## <a name="conclusion"></a>总结  
 
-恭喜，你已完成本教程。  现在，你已了解如何使用**** Microsoft Edge DevTools 中的网络工具！
+恭喜，你已完成本教程。  现在，你已了解如何使用Microsoft Edge DevTools 中的**网络**工具！
 
 导航到“[网络参考][DevtoolsNetworkReference]”以发现与检查网络活动相关的更多 DevTools 功能。  
 
