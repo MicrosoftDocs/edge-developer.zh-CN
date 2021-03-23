@@ -78,7 +78,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-现在，你可以可视化显示 **Layers** 内容与 z-index 值和文档对象模型\ (DOM\)。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]。  
+现在，你可以可视化显示 **Layers** 内容与 z-index 值和文档对象模型\(DOM\)。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]。  
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **复合层** 窗格  
@@ -268,7 +268,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 #### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>框架详细信息视图中的跨域隔离信息  
 
-现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 区域显示 `SharedArrayBuffer` \ (\) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated]。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899][CR1139899]。  
+现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 区域显示 `SharedArrayBuffer` \(SAB\) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated]。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899][CR1139899]。  
 
 :::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="跨域信息" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    跨域信息  
