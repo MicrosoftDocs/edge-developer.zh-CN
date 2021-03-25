@@ -6,10 +6,10 @@ ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
 ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2021
 ms.locfileid: "11439315"
@@ -30,19 +30,19 @@ ms.locfileid: "11439315"
 
 # <a name="view-cache-data-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看缓存数据  
 
-本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 检查 [缓存][MDNCache] 数据。  
+本指南将演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 检查[缓存][MDNCache]数据。  
 
-如果您尝试检查 HTTP [缓存][MDNHTTPCaching] 数据，则这不是您需要的指南。  在网络日志 的 **"大小** "列中 **查找信息**。  导航到 [记录网络活动][DevtoolsNetworkLogActivity]。  
+如果要尝试检查 http [缓存][MDNHTTPCaching] 数据，则这不是你想要的指南。  在"网络日志"字段的 **大小** 列中 **信息**。  导航到 [记录网络][DevtoolsNetworkLogActivity]。  
 
 ## <a name="view-cache-data"></a>查看缓存数据  
 
-1.  选择" **应用程序"** 选项卡以打开" **应用程序"** 面板。  " **清单** "窗格通常默认打开。  
+1.  选择**应用程序**选项卡打开**应用程序**工具。  通常默认**清单**窗格打开。  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
-       清单**窗格**  
+       **清单**窗格  
     :::image-end:::  
     
-1.  展开" **缓存存储** "部分以查看可用缓存。  
+1.  展开 **缓存存储** 部分以查看可用的缓存。  
     
     :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="可用缓存" lightbox="../media/storage-application-cache-storage.msft.png":::
        可用缓存  
@@ -54,13 +54,13 @@ ms.locfileid: "11439315"
        查看缓存的内容  
     :::image-end:::  
     
-1.  选择一个资源以查看表下方部分中的 HTTP 标头。  
+1.  选择资源以查看表下部分中的 HTTP 标题。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="查看资源的 HTTP 标头" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
-       查看资源的 HTTP 标头  
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="查看资源的 HTTP 标题" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+       查看资源的 HTTP 标题  
     :::image-end:::  
     
-1.  选择 **"** 预览"以查看资源的内容。  
+1.  选择 **预览** 以查看资源的内容。  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="查看资源的内容" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
        查看资源的内容  
@@ -68,57 +68,57 @@ ms.locfileid: "11439315"
     
 ## <a name="refresh-a-resource"></a>刷新资源  
 
-1.  [查看缓存的数据](#view-cache-data)。  
-1.  选择要刷新的资源。  DevTools 突出显示它以指示已选择它。  
+1.  [查看缓存](#view-cache-data)。  
+1.  选择要刷新的资源。  DevTools 会突出显示它以表明已选中。  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="选择要刷新的资源" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
        选择要刷新的资源  
     :::image-end:::  
     
-1.  Choose **Refresh** \ (![ Refresh ](../media/refresh-icon.msft.png) \) .  
+1.  选择**刷新** \(![Refresh](../media/refresh-icon.msft.png)\)。  
     
 ## <a name="filter-resources"></a>筛选资源  
 
-1.  [查看缓存的数据](#view-cache-data)。  
-1.  使用 **"按路径筛选** "文本框筛选出与提供的路径不匹配的任何资源。  
+1.  [查看缓存](#view-cache-data)。  
+1.  使用 **路径筛选"** 文本框来筛选与提供的路径不匹配的资源。  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="筛选出与指定路径不匹配的资源" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
-       筛选出与指定路径不匹配的资源  
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="筛选与指定路径不匹配的资源" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+       筛选与指定路径不匹配的资源  
     :::image-end:::  
     
 ## <a name="delete-a-resource"></a>删除资源  
 
-1.  [查看缓存的数据](#view-cache-data)。  
-1.  选择要删除的资源。  DevTools 突出显示它以指示已选择它。  
+1.  [查看缓存](#view-cache-data)。  
+1.  选择要删除的资源。  DevTools 会突出显示它以表明已选中。  
     
     :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="选择要删除的资源" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
        选择要删除的资源  
     :::image-end:::  
     
-1.  Choose **Delete Selected** \ (Delete Selected ![ ](../media/delete-icon.msft.png) \) .  
+1.  选择 **删除** \（![删除](../media/delete-icon.msft.png)\）。  
     
 ## <a name="delete-all-cache-data"></a>删除所有缓存数据  
 
-1.  打开**应用程序**  >  **清除存储**。  
-1.  确保" **缓存存储"** 复选框已启用。  
+1.  打开**应用程序** > **存储空间**。  
+1.  确保已启用" **缓存存储** 复选框。  
     
     :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text=""缓存存储"复选框" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       " **缓存存储"** 复选框  
+       " **缓存存储** 复选框  
     :::image-end:::  
     
-1.  选择 **"清除网站数据"。**  
+1.  选择**清除网站数据**。  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text=""清除网站数据"按钮" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
-       " **清除网站数据"** 按钮  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="清除网站数据按钮" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+       **清除网站数据**按钮  
     :::image-end:::  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "记录网络活动|Microsoft Docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "缓存|MDN"  
