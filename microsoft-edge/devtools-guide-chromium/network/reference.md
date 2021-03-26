@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
 ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2021
 ms.locfileid: "11439701"
@@ -34,22 +34,22 @@ ms.locfileid: "11439701"
 
 ## <a name="record-network-requests"></a>记录网络请求  
 
-默认情况下，只要 DevTools 是打开的，DevTools 就将记录网络工具中所有的网络请求。 ****  
+默认情况下，只要开发人员工具处于打开状态，它就会在“**网络**”工具中记录所有网络请求。  
 
 :::image type="complex" source="../media/network-network-panel.msft.png" alt-text="“网络”面板" lightbox="../media/network-network-panel.msft.png":::
-   网络**工具**  
+   “**网络**”工具  
 :::image-end:::  
 
 ### <a name="stop-recording-network-requests"></a>停止记录网络请求  
 
 若要停止记录请求，请完成以下步骤。  
 
-1.  在" **网络"** 工具上，选择"停止 **录制网络** 日志 \ (![ 停止录制网络日志 ](../media/record-on-icon.msft.png) \) "。  它变为灰色，表示开发工具不再记录请求。  
-1.  当 `Control` + `E` 网络 (焦点时，选择\ (Windows、Linux\) 或 `Command` + `E` \ (macOS\) 。 ****  
+1.  在“**网络**”工具上，选择“**停止记录网络日志**（“![停止记录网络日志](../media/record-on-icon.msft.png)”）。  它变为灰色，表示开发人员工具不再记录请求。  
+1.  当“**网络**”工具成为焦点时，选择 `Control`+`E`（Windows、Linux）或 `Command`+`E`(macOS)。  
 
 ### <a name="clear-requests"></a>清除请求  
 
-在 **"网络** (选择" ![ 清除 ](../media/clear-requests-icon.msft.png) ) "以清除"请求"**** 表中的所有请求。  
+在“**网络**”工具上选择“**清除**”（“![清除](../media/clear-requests-icon.msft.png)”），从“请求”表中清除所有请求。  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="“清除”按钮" lightbox="../media/network-network-clear-button.msft.png":::
    “**清除**”按钮  
@@ -57,7 +57,7 @@ ms.locfileid: "11439701"
 
 ### <a name="save-requests-across-page-loads"></a>跨页面加载保存请求  
 
-若要跨页面加载保存请求，在 **"** 网络"工具上，打开" **保留日志"** 复选框。  开发工具保存所有请求，直到禁用“**保留日志**”。  
+若要跨页面加载保存请求，请在“**网络**”工具上启用“**保留日志**”复选框。  开发人员工具将保存所有请求，直到禁用“**保留日志**”。  
 
 :::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="“保留日志”复选框" lightbox="../media/network-network-preserve-log.msft.png":::
    “**保留日志**”复选框  
@@ -67,9 +67,9 @@ ms.locfileid: "11439701"
 
 捕获屏幕截图以分析在等待页面加载时为用户显示的内容。  
 
-若要启用屏幕截图，请选择"**网络设置"，****在"网络**"工具上，打开"**捕获屏幕截图"** 复选框。  
+若要启用屏幕截图，请选择“**网络设置**”，然后在“**网络**”工具上，启用“**捕获屏幕截图**”复选框。  
 
-在网络工具 **聚焦时刷新** 页面以捕获屏幕截图。  
+在“**网络**”工具成为焦点时刷新页面以捕获屏幕截图。  
 
 截图后，可通过以下方式与之交互。  
 
@@ -138,9 +138,9 @@ ms.locfileid: "11439701"
    “**限制**”下拉菜单  
 :::image-end:::  
 
-可以选择不同的预设，如慢速 3G 或快速 3G。  要添加自定义预设，请打开“限制”菜单，然后选择“**自定义** > **添加**”。  
+可以选择不同的预设，如慢速 3G 或快速 3G。  若要添加自定义预设，请打开“限制”菜单，然后选择“**自定义**” > “**添加**”。  
 
-DevTools 在"网络"工具旁边**** 显示一个警告图标，提醒你已启用限制。  
+开发人员工具会在“**网络**”工具旁边显示一个警告图标，提醒已启用限制。  
 
 #### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>从“网络条件”抽屉模拟慢速网络连接  
 
@@ -203,7 +203,7 @@ DevTools 在"网络"工具旁边**** 显示一个警告图标，提醒你已启�
 
 ### <a name="filter-requests-by-type"></a>按类型筛选请求  
 
-若要按请求类型筛选请求，请选择"网络"工具上的以下 **按钮之** 一。  
+若要按请求类型筛选请求，请选择“**网络**”工具上的以下按钮之一。  
 
 :::row:::
    :::column span="1":::
@@ -374,7 +374,7 @@ DevTools 在"网络"工具旁边**** 显示一个警告图标，提醒你已启�
 
 ## <a name="analyze-requests"></a>分析请求  
 
-只要 DevTools 已打开，它便在网络工具中记录 **所有** 请求。  
+只要开发人员工具处于打开状态，它就会在“**网络**”工具中记录所有请求。  
 使用“网络”面板分析请求。  
 
 ### <a name="display-a-log-of-requests"></a>显示请求日志  
@@ -509,50 +509,50 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 若要显示响应正文的预览，请使用以下步骤。  
 
-1.  在“请求”表的“**名称**”列下，单击请求的 URL。  
-1.  选择" **预览"** 面板。  
+1.  在“请求”表的“**名称**”列下，选择请求的 URL。  
+1.  选择“**预览**”面板。  
 
-“预览”选项卡在查看图像时最有用。  
+“预览”选项卡在显示图像时最有用。  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="预览面板" lightbox="../media/network-network-resources-preview.msft.png":::
-   预览**面板**  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="“预览”面板" lightbox="../media/network-network-resources-preview.msft.png":::
+   “**预览**”面板  
 :::image-end:::  
 
 ### <a name="display-a-response-body"></a>显示响应正文  
 
 要显示请求的响应主体，请使用以下步骤。  
 
-1.  在“请求”表的“**名称**”列下，单击请求的 URL。  
-1.  选择" **响应"** 面板。  
+1.  在“请求”表的“**名称**”列下，选择请求的 URL。  
+1.  选择“**响应**”面板。  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="响应面板" lightbox="../media/network-network-resources-response.msft.png":::
-   响应**面板**  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="“响应”面板" lightbox="../media/network-network-resources-response.msft.png":::
+   “**响应**”面板  
 :::image-end:::  
 
 ### <a name="display-http-headers"></a>显示 HTTP 标头  
 
 要显示有关请求的 HTTP 标头数据，请使用以下步骤。  
 
-1.  在“请求”表的“**名称**”列下，单击请求的 URL。  
-1.  选择" **标头** ""psanel"。  
+1.  在“请求”表的“**名称**”列下，选择请求的 URL。  
+1.  选择“**标头**”面板。  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text=""标题"面板" lightbox="../media/network-resources-headers.msft.png":::
-   " **标题"** 面板  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="“标头”面板" lightbox="../media/network-resources-headers.msft.png":::
+   “**标头**”面板  
 :::image-end:::  
 
 #### <a name="display-http-header-source"></a>显示 HTTP 标头源  
 
-默认情况下，" **标题"** 面板按字母顺序显示邮件头名称。  若要按接收的顺序显示 HTTP 标头名称，请使用以下步骤。  
+默认情况下，“**标头**”面板按字母顺序显示标头名称。  若要按接收的顺序显示 HTTP 标头名称，请使用以下步骤。  
 
-1.  打开 **您感兴趣的** 请求的标题面板。  有关详细信息，请导航到“[显示 HTTP 标头](#display-http-headers)”。  
+1.  打开感兴趣的请求的“**标头**”面板。  有关详细信息，请导航到“[显示 HTTP 标头](#display-http-headers)”。  
 1.  单击“**请求标题**”或“**响应标题**”部分旁边的**查看源**。  
 
 ### <a name="display-query-string-parameters"></a>显示查询字符串参数  
 
 若要以可读格式显示 URL 的查询字符串参数，请使用以下步骤。  
 
-1.  打开 **您感兴趣的** 请求的标题面板。  有关详细信息，请导航到“[显示 HTTP 标头](#display-http-headers)”。  
-1.  导航到" **查询字符串参数"** 部分。  
+1.  打开感兴趣的请求的“**标头**”面板。  有关详细信息，请导航到“[显示 HTTP 标头](#display-http-headers)”。  
+1.  导航到“**查询字符串参数**”部分。  
 
 :::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="“查询字符串参数”部分" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
    “**查询字符串参数**”部分  
@@ -562,45 +562,45 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 若要显示请求的查询字符串参数源，请使用以下步骤。  
 
-1.  导航到"查询字符串参数"部分。  有关详细信息，请导航到“[显示查询字符串参数](#display-query-string-parameters)”。  
+1.  导航到“查询字符串参数”部分。  有关详细信息，请导航到“[显示查询字符串参数](#display-query-string-parameters)”。  
 1.  选择“**查看源**”。  
 
 #### <a name="display-url-encoded-query-string-parameters"></a>显示 URL 编码的查询字符串参数  
 
 若要以可读格式显示查询字符串参数，但保留编码，请使用以下步骤。  
 
-1.  导航到"查询字符串参数"部分。  有关详细信息，请导航到“[显示查询字符串参数](#display-query-string-parameters)”。  
+1.  导航到“查询字符串参数”部分。  有关详细信息，请导航到“[显示查询字符串参数](#display-query-string-parameters)”。  
 1.  选择**查看 URL 编码**。  
 
 ### <a name="display-cookies"></a>显示 Cookie  
 
 若要显示请求的 HTTP 标头中发送的 Cookie，请使用以下步骤。  
 
-1.  在“请求”表的“**名称**”列下，单击请求的 URL。  
-1.  选择 **"Cookie"** 面板。  
+1.  在“请求”表的“**名称**”列下，选择请求的 URL。  
+1.  选择“**Cookie**”面板。  
 
 <!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Cookie 面板" lightbox="../media/network-network-resources-cookies.msft.png":::
-   Cookie 面板  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="“Cookie”面板" lightbox="../media/network-network-resources-cookies.msft.png":::
+   “Cookie”面板  
 :::image-end:::  
 
 ### <a name="display-the-timing-breakdown-of-a-request"></a>显示请求的计时细分  
 
 若要显示请求的计时细分，请使用以下步骤。  
 
-1.  在“请求”表的“**名称**”列下，单击请求的 URL。  
-1.  选择" **计时"** 面板。  
+1.  在“请求”表的“**名称**”列下，选择请求的 URL。  
+1.  选择“**计时**”面板。  
 
-若要更快地访问数据，请导航到“[预览时间细分](#preview-a-timing-breakdown)”。  
+若要更快地访问数据，请导航到“[预览计时细分](#preview-a-timing-breakdown)”。  
 
-有关"计时"面板中可能显示的每个阶段的信息，请导航到****"已解释的计时[细分阶段"。](#timing-breakdown-phases-explained)  
+有关“**计时**”面板中可能显示的各阶段详细信息，请导航到“[计时细分阶段说明](#timing-breakdown-phases-explained)”。  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text=""计时"面板" lightbox="../media/network-network-resources-timing.msft.png":::
-   " **计时"** 面板  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="“计时”面板" lightbox="../media/network-network-resources-timing.msft.png":::
+   “**计时**”面板  
 :::image-end:::  
 
 有关各阶段的更多信息。  
@@ -619,7 +619,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 #### <a name="timing-breakdown-phases-explained"></a>计时细分阶段说明  
 
-有关"计时"面板中可能显示 **的每个阶段的信息** 。  
+有关“**计时**”面板中可能显示的各阶段的详细信息。  
 
 :::row:::
    :::column span="1":::
@@ -734,18 +734,18 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 ### <a name="display-load-events"></a>显示加载事件  
 
-DevTools 在网络工具 `DOMContentLoaded` 上的多个 `load` 位置显示 和 事件的计时****。  `DOMContentLoaded` 事件颜色为蓝色，`load` 事件颜色为红色。  
+开发人员工具在“**网络**”工具的多个位置显示 `DOMContentLoaded` 和 `load` 事件的计时。  `DOMContentLoaded` 事件颜色为蓝色，`load` 事件颜色为红色。  
 
 :::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="“网络”面板上 DOMContentLoaded 和加载事件的位置" lightbox="../media/network-network-requests-load-events.msft.png":::
-   "网络"工具 `DOMContentLoaded` 上的 `load` 和 **事件** 的位置  
+   “**网络**”工具上 `DOMContentLoaded` 和 `load` 事件的位置  
 :::image-end:::  
 
 ### <a name="display-the-total-number-of-requests"></a>显示请求总数  
 
-请求总数在"网络"工具底部的"摘要****"**窗格中列出。**  
+请求总数列在“**网络**”工具底部的“**摘要**”窗格中。  
 
 > [!CAUTION]
-> 此数字仅跟踪自打开开发工具以来记录的请求。  如果在打开开发工具之前发生了其他请求，则不计算这些请求。  
+> 此数字仅跟踪自打开开发人员工具以来记录的请求。  如果在打开开发工具之前发生了其他请求，则不计算这些请求。  
 
 :::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="自打开开发工具以来的请求总数" lightbox="../media/network-network-total-requests.msft.png":::
    自打开开发工具以来的请求总数  
@@ -753,10 +753,10 @@ DevTools 在网络工具 `DOMContentLoaded` 上的多个 `load` 位置显示 和
 
 ### <a name="display-the-total-download-size"></a>显示总下载大小  
 
-请求的总下载大小在网络工具底部的摘要**窗格中列出。** ****  
+请求的总下载大小列在“**网络**”工具底部的“**摘要**”窗格中。  
 
 > [!CAUTION]
-> 此数字仅跟踪自打开开发工具以来记录的请求。  如果在打开开发工具之前发生了其他请求，则不计算以前的请求。  
+> 此数字仅跟踪自打开开发人员工具以来记录的请求。  如果在打开开发工具之前发生了其他请求，则不计算以前的请求。  
 
 :::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="请求的总下载大小" lightbox="../media/network-network-total-download-size.msft.png":::
    请求的总下载大小  
@@ -899,12 +899,12 @@ init();
 :::row:::
    :::column span="":::
         :::image type="complex" source="../media/network-header-copy-property-value.msft.png" alt-text="复制上下文菜单中的值" lightbox="../media/network-header-copy-property-value.msft.png":::
-          **复制上下文菜单中的值**  
+          上下文菜单中的“**复制值**”  
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio代码，包含格式化响应 JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
-          在 Microsoft 代码中粘贴格式化响应 JSON Visual Studio JSON  
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="具有格式化响应 JSON 的 Microsoft Visual Studio Code" lightbox="../media/network-header-paste-property-value.msft.png":::
+          在 Microsoft Visual Studio Code 中粘贴格式化响应 JSON  
         :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -920,13 +920,13 @@ init();
     *   查询字符串参数  
     *   请求标头  
     *   响应标头  
-1.  打开上下文菜单 \（右键单击\）> **复制值**。  现在，你可以将该值粘贴到任何编辑器中来查看它。  
+1.  打开上下文菜单（右键单击）>“**复制值**”。  现在可以将该值粘贴到任何编辑器中以查看它。  
     
 ## <a name="change-the-layout-of-the-network-panel"></a>更改“网络”面板的布局  
 
-可以展开或折叠网络工具 UI **的各个部分** ，以重点关注重要信息。  
+可以展开或折叠“**网络**”工具用户界面的各部分，以集中重要信息。  
 
-### <a name="hide-the-filters-pane"></a>隐藏筛选器窗格  
+### <a name="hide-the-filters-pane"></a>隐藏“筛选器”窗格  
 
 默认情况下，开发工具显示“**筛选器**”窗格。  
 选择**筛选器** \(![筛选器](../media/filter-icon.msft.png)\)来隐藏它。  
