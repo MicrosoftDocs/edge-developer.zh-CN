@@ -1,15 +1,15 @@
 ---
 description: 如何在 Microsoft Edge DevTools 中查找和分析未使用的 JavaScript 和 CSS 代码。
-title: 在 Microsoft Edge DevTools 中通过覆盖面板查找未使用的 JavaScript 和 CSS 代码
+title: 使用 Microsoft Edge DevTools 中的“覆盖范围”面板查找未使用的 JavaScript 和 CSS 代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
 ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2021
 ms.locfileid: "11439196"
@@ -28,20 +28,20 @@ ms.locfileid: "11439196"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a><span data-ttu-id="72793-104">使用 Microsoft Edge DevTools 中的覆盖面板查找未使用的 JavaScript 和 CSS 代码</span><span class="sxs-lookup"><span data-stu-id="72793-104">Find unused JavaScript and CSS code with the Coverage panel in Microsoft Edge DevTools</span></span>  
+# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a><span data-ttu-id="ef4b0-104">使用 Microsoft Edge DevTools 中的“覆盖范围”面板查找未使用的 JavaScript 和 CSS 代码</span><span class="sxs-lookup"><span data-stu-id="ef4b0-104">Find unused JavaScript and CSS code with the Coverage panel in Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="72793-105">Microsoft **Edge** DevTools 中的"覆盖"面板可帮助你查找未使用的 JavaScript 和 CSS 代码。</span><span class="sxs-lookup"><span data-stu-id="72793-105">The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.</span></span>  <span data-ttu-id="72793-106">删除未使用的代码可能会加快页面加载速度并保存移动用户的手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="72793-106">Removing unused code may speed up your page load and save your mobile users cellular data.</span></span>  
+<span data-ttu-id="ef4b0-105">Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未使用的 JavaScript 和 CSS 代码。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-105">The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.</span></span>  <span data-ttu-id="ef4b0-106">删除未使用的代码可能会加快页面加载速度并保存移动用户的手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-106">Removing unused code may speed up your page load and save your mobile users cellular data.</span></span>  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="分析代码范围" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
-   <span data-ttu-id="72793-108">分析代码范围</span><span class="sxs-lookup"><span data-stu-id="72793-108">Analyzing code coverage</span></span>  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="正在分析代码覆盖范围" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   <span data-ttu-id="ef4b0-108">正在分析代码覆盖范围</span><span class="sxs-lookup"><span data-stu-id="ef4b0-108">Analyzing code coverage</span></span>  
 :::image-end:::  
 
 > [!WARNING]
-> <span data-ttu-id="72793-109">查找未使用的代码相对容易。</span><span class="sxs-lookup"><span data-stu-id="72793-109">Finding unused code is relatively easy.</span></span>  <span data-ttu-id="72793-110">但重构代码库以便每个页面仅提供所需的 JavaScript 和 CSS 可能非常困难。</span><span class="sxs-lookup"><span data-stu-id="72793-110">But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.</span></span>  <span data-ttu-id="72793-111">本指南未涵盖如何重构基本代码以避免未使用的代码，因为这些重构高度依赖于你的技术堆栈。</span><span class="sxs-lookup"><span data-stu-id="72793-111">This guide does not cover how to refactor a codebase to avoid unused code because these refactors depend highly on your technology stack.</span></span>  
+> <span data-ttu-id="ef4b0-109">查找未使用的代码相对容易。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-109">Finding unused code is relatively easy.</span></span>  <span data-ttu-id="ef4b0-110">但重构代码库以便每个页面仅提供所需的 JavaScript 和 CSS 可能非常困难。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-110">But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.</span></span>  <span data-ttu-id="ef4b0-111">本指南未涵盖如何重构基本代码以避免未使用的代码，因为这些重构高度依赖于你的技术堆叠。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-111">This guide does not cover how to refactor a codebase to avoid unused code because these refactors depend highly on your technology stack.</span></span>  
 
-## <a name="overview"></a><span data-ttu-id="72793-112">概述</span><span class="sxs-lookup"><span data-stu-id="72793-112">Overview</span></span>  
+## <a name="overview"></a><span data-ttu-id="ef4b0-112">概述</span><span class="sxs-lookup"><span data-stu-id="ef4b0-112">Overview</span></span>  
 
-<span data-ttu-id="72793-113">寄送未使用的 JavaScript 或 CSS 是 Web 开发中的一个常见问题。</span><span class="sxs-lookup"><span data-stu-id="72793-113">Shipping unused JavaScript or CSS is a common problem in web development.</span></span>  <span data-ttu-id="72793-114">例如，假设你想要在页面上使用 [Bootstrap][BootstrapButtons] 按钮组件。</span><span class="sxs-lookup"><span data-stu-id="72793-114">For example, suppose that you want to use [Bootstrap button component][BootstrapButtons] on your page.</span></span>  <span data-ttu-id="72793-115">若要使用按钮组件，你需要在 HTML 中添加指向 Bootstrap 样式表的链接，如下所示：</span><span class="sxs-lookup"><span data-stu-id="72793-115">To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:</span></span>  
+<span data-ttu-id="ef4b0-113">寄送未使用的 JavaScript 或 CSS 是 web 开发中的一个常见问题。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-113">Shipping unused JavaScript or CSS is a common problem in web development.</span></span>  <span data-ttu-id="ef4b0-114">例如，假设你想要在页面上使用“[Bootstrap 按钮组件][BootstrapButtons]”。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-114">For example, suppose that you want to use [Bootstrap button component][BootstrapButtons] on your page.</span></span>  <span data-ttu-id="ef4b0-115">若要使用按钮组件，你需要在 HTML 中添加指向 Bootstrap 样式表的链接，如下所示：</span><span class="sxs-lookup"><span data-stu-id="ef4b0-115">To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:</span></span>  
 
 ```html
 ...
@@ -53,59 +53,59 @@ ms.locfileid: "11439196"
 ...
 ```  
 
-<span data-ttu-id="72793-116">此样式表不仅包括按钮组件的代码。</span><span class="sxs-lookup"><span data-stu-id="72793-116">This stylesheet does not just include the code for the button component.</span></span>  <span data-ttu-id="72793-117">它包含所有 Bootstrap 组件的 CSS。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="72793-117">It contains the CSS for **all** of the Bootstrap components.</span></span>  <span data-ttu-id="72793-118">但是，你未使用任何其他 Bootstrap 组件。</span><span class="sxs-lookup"><span data-stu-id="72793-118">But you are not using any of the other Bootstrap components.</span></span>  <span data-ttu-id="72793-119">因此，您的页面正在下载一组不需要的 CSS。</span><span class="sxs-lookup"><span data-stu-id="72793-119">So your page is downloading a bunch of CSS that it does not need.</span></span>  <span data-ttu-id="72793-120">由于以下原因，此额外的 CSS 是一个问题。</span><span class="sxs-lookup"><span data-stu-id="72793-120">This extra CSS is a problem for the following reasons.</span></span>  
+<span data-ttu-id="ef4b0-116">此样式表不仅包括按钮组件的代码。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-116">This stylesheet does not just include the code for the button component.</span></span>  <span data-ttu-id="ef4b0-117">它包含**所有**Bootstrap 组件的 CSS。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-117">It contains the CSS for **all** of the Bootstrap components.</span></span>  <span data-ttu-id="ef4b0-118">但是，你未使用任何其他 Bootstrap 组件。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-118">But you are not using any of the other Bootstrap components.</span></span>  <span data-ttu-id="ef4b0-119">因此，你的页面正在下载一组不需要的 CSS。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-119">So your page is downloading a bunch of CSS that it does not need.</span></span>  <span data-ttu-id="ef4b0-120">由于以下原因，此额外的 CSS 是一个问题。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-120">This extra CSS is a problem for the following reasons.</span></span>  
 
-*   <span data-ttu-id="72793-121">额外的代码会降低页面加载速度。</span><span class="sxs-lookup"><span data-stu-id="72793-121">The extra code slows down your page load.</span></span>  <!--Navigate to [Render-Blocking CSS][render].  -->  
-*   <span data-ttu-id="72793-122">如果用户在移动设备上访问页面，则额外的代码会使用其手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="72793-122">If a user accesses the page on a mobile device, the extra code uses up their cellular data.</span></span>  
+*   <span data-ttu-id="ef4b0-121">额外的代码会降低页面加载速度。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-121">The extra code slows down your page load.</span></span>  <!--Navigate to [Render-Blocking CSS][render].  -->  
+*   <span data-ttu-id="ef4b0-122">如果用户在移动设备上访问页面，则额外的代码会使用其手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-122">If a user accesses the page on a mobile device, the extra code uses up their cellular data.</span></span>  
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## <a name="open-the-coverage-panel"></a><span data-ttu-id="72793-123">打开"覆盖"面板</span><span class="sxs-lookup"><span data-stu-id="72793-123">Open the Coverage panel</span></span>  
+## <a name="open-the-coverage-panel"></a><span data-ttu-id="ef4b0-123">打开“覆盖范围”面板</span><span class="sxs-lookup"><span data-stu-id="ef4b0-123">Open the Coverage panel</span></span>  
 
-1.  <span data-ttu-id="72793-124">[打开命令菜单][DevToolsCommandMenu]。</span><span class="sxs-lookup"><span data-stu-id="72793-124">[Open the Command Menu][DevToolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="72793-125">开始键入 `coverage` ，选择 **"显示覆盖"** 命令，然后选择 `Enter` 以运行该命令。</span><span class="sxs-lookup"><span data-stu-id="72793-125">Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.</span></span>  <span data-ttu-id="72793-126">" **覆盖"** 面板在"箱" **中打开**。</span><span class="sxs-lookup"><span data-stu-id="72793-126">The **Coverage** panel opens in the **Drawer**.</span></span>  
+1.  <span data-ttu-id="ef4b0-124">[打开“命令”菜单][DevToolsCommandMenu]。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-124">[Open the Command Menu][DevToolsCommandMenu].</span></span>  
+1.  <span data-ttu-id="ef4b0-125">开始键入`coverage`，选择“**显示覆盖范围**”命令，然后选择`Enter`以运行该命令。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-125">Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.</span></span>  <span data-ttu-id="ef4b0-126">在“**工具箱**”中打开“**覆盖范围**”面板。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-126">The **Coverage** panel opens in the **Drawer**.</span></span>  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="覆盖面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       <span data-ttu-id="72793-128">覆盖**面板**</span><span class="sxs-lookup"><span data-stu-id="72793-128">The **Coverage** panel</span></span>  
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="“覆盖范围”面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       <span data-ttu-id="ef4b0-128">“**覆盖范围**”面板</span><span class="sxs-lookup"><span data-stu-id="ef4b0-128">The **Coverage** panel</span></span>  
     :::image-end:::  
     
-## <a name="record-code-coverage"></a><span data-ttu-id="72793-129">记录代码覆盖范围</span><span class="sxs-lookup"><span data-stu-id="72793-129">Record code coverage</span></span>  
+## <a name="record-code-coverage"></a><span data-ttu-id="ef4b0-129">记录代码覆盖范围</span><span class="sxs-lookup"><span data-stu-id="ef4b0-129">Record code coverage</span></span>  
 
-1.  <span data-ttu-id="72793-130">在"覆盖"面板中选择以下 **按钮之** 一。</span><span class="sxs-lookup"><span data-stu-id="72793-130">Choose one of the following buttons in the **Coverage** panel.</span></span>  
-    *   <span data-ttu-id="72793-131">Choose **Start Instrumenting Coverage and Reload Page** \ (Start ![ Instrumenting Coverage and Reload Page ](../media/reload-icon.msft.png) \) if you want to review what code is needed to load the page.</span><span class="sxs-lookup"><span data-stu-id="72793-131">Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png)\) if you want to review what code is needed to load the page.</span></span>  
-    *   <span data-ttu-id="72793-132">如果你想要 **查看** 与页面交互后使用的代码，请选择"检测范围 \ (检测范围 ![ ](../media/record-icon.msft.png) \) "。</span><span class="sxs-lookup"><span data-stu-id="72793-132">Choose **Instrument Coverage** \(![Instrument Coverage](../media/record-icon.msft.png)\) if you want to review what code is used after interacting with the page.</span></span>  
-1.  <span data-ttu-id="72793-133">选择 **停止检测** 覆盖和显示结果 \ (停止检测范围，当你想要停止记录代码覆盖范围时，) 显示 ![ ](../media/stop-icon.msft.png) 结果 \) 。</span><span class="sxs-lookup"><span data-stu-id="72793-133">Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)\) when you want to stop recording code coverage.</span></span>  
+1.  <span data-ttu-id="ef4b0-130">在“**覆盖范围**”面板中选择以下按钮之一。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-130">Choose one of the following buttons in the **Coverage** panel.</span></span>  
+    *   <span data-ttu-id="ef4b0-131">若要查看加载页面所需的代码，选择“**开始检测覆盖范围并重新加载页面**” \(“![开始检测覆盖范围并重新加载页面](../media/reload-icon.msft.png)”\)。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-131">Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png)\) if you want to review what code is needed to load the page.</span></span>  
+    *   <span data-ttu-id="ef4b0-132">若要查看与页面交互后使用的代码，选择“**检测覆盖范围**” \(“![检测覆盖范围](../media/record-icon.msft.png)”\)。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-132">Choose **Instrument Coverage** \(![Instrument Coverage](../media/record-icon.msft.png)\) if you want to review what code is used after interacting with the page.</span></span>  
+1.  <span data-ttu-id="ef4b0-133">若要停止记录代码覆盖范围，选择“**停止检测覆盖范围并显示结果**” \(“![停止检测覆盖范围并显示结果](../media/stop-icon.msft.png)”\)。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-133">Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)\) when you want to stop recording code coverage.</span></span>  
     
-## <a name="analyze-code-coverage"></a><span data-ttu-id="72793-134">分析代码覆盖范围</span><span class="sxs-lookup"><span data-stu-id="72793-134">Analyze code coverage</span></span>  
+## <a name="analyze-code-coverage"></a><span data-ttu-id="ef4b0-134">分析代码覆盖范围</span><span class="sxs-lookup"><span data-stu-id="ef4b0-134">Analyze code coverage</span></span>  
 
-<span data-ttu-id="72793-135">"覆盖 **"面板** 中的表显示已分析的资源，以及每个资源中使用的代码数。</span><span class="sxs-lookup"><span data-stu-id="72793-135">The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.</span></span>  <span data-ttu-id="72793-136">选择一行以在"源"面板\*\*\*\* 中打开该资源，并查看已使用代码和未使用代码的行细分。</span><span class="sxs-lookup"><span data-stu-id="72793-136">Choose a row to open that resource in the **Sources** panel and review a line-by-line breakdown of used code and unused code.</span></span>  
+<span data-ttu-id="ef4b0-135">“**覆盖范围**”面板中的表显示已分析的资源，以及每个资源中使用的代码数。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-135">The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.</span></span>  <span data-ttu-id="ef4b0-136">选择一行以在“**资源**”面板中打开该资源，然后逐行查看已使用代码和未使用代码的细分。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-136">Choose a row to open that resource in the **Sources** panel and review a line-by-line breakdown of used code and unused code.</span></span>  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="代码覆盖报告" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
-   <span data-ttu-id="72793-138">代码覆盖报告</span><span class="sxs-lookup"><span data-stu-id="72793-138">A code coverage report</span></span>  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="代码覆盖范围报告" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   <span data-ttu-id="ef4b0-138">代码覆盖范围报告</span><span class="sxs-lookup"><span data-stu-id="ef4b0-138">A code coverage report</span></span>  
 :::image-end:::  
 
-*   <span data-ttu-id="72793-139">**URL**列是已分析资源的 URL。</span><span class="sxs-lookup"><span data-stu-id="72793-139">The **URL** column is the URL of the resource that was analyzed.</span></span>  
-*   <span data-ttu-id="72793-140">" **类型** "列显示资源是包含 CSS、JavaScript 还是同时包含这两者。</span><span class="sxs-lookup"><span data-stu-id="72793-140">The **Type** column says whether the resource contains CSS, JavaScript, or both.</span></span>  
-*   <span data-ttu-id="72793-141">" **字节** 总数"列是资源的总大小（以字节为单位）。</span><span class="sxs-lookup"><span data-stu-id="72793-141">The **Total Bytes** column is the total size of the resource in bytes.</span></span>  
-*   <span data-ttu-id="72793-142">" **未使用的字节** 数"列是未使用的字节数。</span><span class="sxs-lookup"><span data-stu-id="72793-142">The **Unused Bytes** column is the number of bytes that were not used.</span></span>  
-*   <span data-ttu-id="72793-143">最后一个未命名的列是"总字节数\*\*\*\*"和"**未使用字节"列的**可视化。</span><span class="sxs-lookup"><span data-stu-id="72793-143">The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.</span></span>  <span data-ttu-id="72793-144">条形的红色部分是未使用的字节。</span><span class="sxs-lookup"><span data-stu-id="72793-144">The red section of the bar is unused bytes.</span></span>  <span data-ttu-id="72793-145">绿色部分使用字节。</span><span class="sxs-lookup"><span data-stu-id="72793-145">The green section is used bytes.</span></span>  
+*   <span data-ttu-id="ef4b0-139">“**URL**”列是已分析资源的 URL。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-139">The **URL** column is the URL of the resource that was analyzed.</span></span>  
+*   <span data-ttu-id="ef4b0-140">“**类型**”列显示资源是否包含 CSS、JavaScript 还是同时包含两者。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-140">The **Type** column says whether the resource contains CSS, JavaScript, or both.</span></span>  
+*   <span data-ttu-id="ef4b0-141">“**字节总数**”列是资源的总大小（以字节为单位）。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-141">The **Total Bytes** column is the total size of the resource in bytes.</span></span>  
+*   <span data-ttu-id="ef4b0-142">“**未使用字节数**”列是没有使用的字节数。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-142">The **Unused Bytes** column is the number of bytes that were not used.</span></span>  
+*   <span data-ttu-id="ef4b0-143">最后一个未命名列是“**总字节数**”和“**未使用字节数**”列的可视化效果。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-143">The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.</span></span>  <span data-ttu-id="ef4b0-144">条形图的红色部分是未使用字节数。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-144">The red section of the bar is unused bytes.</span></span>  <span data-ttu-id="ef4b0-145">绿色部分是已使用字节数。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-145">The green section is used bytes.</span></span>  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="72793-146">联系 Microsoft Edge 开发工具团队</span><span class="sxs-lookup"><span data-stu-id="72793-146">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="ef4b0-146">联系 Microsoft Edge DevTools 团队</span><span class="sxs-lookup"><span data-stu-id="ef4b0-146">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单菜单运行|Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令| Microsoft Docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "按钮 - Bootstrap"  
 
 > [!NOTE]
-> <span data-ttu-id="72793-149">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="72793-149">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="72793-150">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/coverage/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="72793-150">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="ef4b0-149">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-149">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="ef4b0-150">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/coverage/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-150">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="72793-152">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="72793-152">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="ef4b0-152">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="ef4b0-152">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
