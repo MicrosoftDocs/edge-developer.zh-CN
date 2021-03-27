@@ -1,15 +1,15 @@
 ---
-description: 在 Microsoft Edge DevTools 中发现用于查看和更改 CSS 的新工作流。
+description: 探索 Microsoft Edge DevTools 中用于查看和更改 CSS 的新工作流。
 title: CSS 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
 ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2021
 ms.locfileid: "11439301"
@@ -30,38 +30,38 @@ ms.locfileid: "11439301"
 
 # <a name="css-reference"></a>CSS 参考  
 
-以下有关查看和更改 CSS 的 Microsoft Edge DevTools 功能的综合参考中发现新工作流。  
+在以下与查看和更改 CSS 相关的 Microsoft Edge DevTools 功能综合参考中发现新的工作流。  
 
-若要了解基础知识，请导航到查看 [和更改 CSS 入门][DevToolsCSSGetStarted]。  
+若要了解基础知识，请导航到 [“查看和更改 CSS 入门”][DevToolsCSSGetStarted]。  
 
 ## <a name="choose-an-element"></a>选择元素  
 
-DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。 ****  选定元素在 **DOM 树中突出显示**。  元素的样式显示在" **样式"窗格中** 。  对于教程，导航到[查看元素 的 CSS。][DevToolsCSSGetStartedTutorial]  
+DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  所选元素在 **“DOM 树”** 上突出显示。  元素的样式显示在 **“样式”** 窗格中。  有关教程，请导航到 [查看元素的 CSS][DevToolsCSSGetStartedTutorial]。  
 
 > [!NOTE]
-> 在下图中，DOM 树中突出显示 `h1` **的元素** 是所选元素。  在右侧，元素的样式显示在" **样式"窗格中** 。  在左侧，该元素在视口中突出显示，但仅仅是因为鼠标当前正悬停在**DOM 树 中。**  
+> 下图中，**“DOM 树”** 中突出显示的 `h1` 元素就是所选元素。  在右侧的样式窗格中显示了元素的 **“样式”**。  在左侧，该元素在视区中突出显示，但只是因为当前在 **“DOM 树”** 中鼠标正悬停在它上方。  
 
-:::image type="complex" source="../media/css-elements-styles-h1.msft.png" alt-text="选定元素的示例" lightbox="../media/css-elements-styles-h1.msft.png":::
-   选定元素的示例  
+:::image type="complex" source="../media/css-elements-styles-h1.msft.png" alt-text="所选元素的示例" lightbox="../media/css-elements-styles-h1.msft.png":::
+   所选元素的示例  
 :::image-end:::  
 
 使用以下操作之一选择元素。  
 
-*   在视口中，将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
-*   在 DevTools 中，选择"选择元素**\ (** 选择元素 ![ \) "或选择 ](../media/select-an-element-icon.msft.png) `Control` + `Shift` + `C` \ (Windows、Linux\) 或 `Command` + `Shift` + `C` \ (macOS\) ，然后选择视口中的元素。  
-*   在 DevTools 中，选择 **DOM**树中的 元素。  
-*   在 DevTools 中，像在控制台中一样运行查询，将鼠标悬停在结果上，打开上下文菜单 \ (右键单击\) ，然后选择"元素"面板中的 `document.querySelector('p')` "**展示"。** ****  
+*   在你的视区中，将鼠标悬停在元素上，打开上下文菜单 \(右键单击)，然后选择**检查**。  
+*   在 DevTools 中，选择 **“选择元素”** \(![“选择元素”](../media/select-an-element-icon.msft.png)\) 或选择 `Control`+`Shift`+`C` \(Windows，Linux\) 或 `Command`+`Shift`+`C` \(macOS\)，然后在视区中选择该元素。  
+*   在 DevTools 中，选择 **“DOM 树”** 中的元素。  
+*   在 DevTools 中，运行一个查询 (如在 **控制台** 中的 `document.querySelector('p')`)，将鼠标悬停在结果上，打开上下文菜单 \(右键单击\)，然后选择 **“在元素面板上显示 “**。  
 
 ## <a name="view-css"></a>查看 CSS  
 
-### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a>查看定义规则的外部样式表  
+### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a>查看已定义规则的外部样式表  
 
-在 **"样式** "窗格中，选择 CSS 规则旁边的链接以打开定义该规则的外部样式表。  
+在 **“样式”** 窗格中，选择 CSS 规则旁边的链接，以打开定义该规则的外部样式表。  
 
-如果样式表已缩小，请导航到"[使缩小文件可读"。][DevToolsJavascriptReferenceFormat]  
+如果是缩小样式表，请导航到 [使缩小文件可读][DevToolsJavascriptReferenceFormat]。  
 
 > [!NOTE]
-> 在下图中，选择后，您将进入 定义 CSS 规则的第 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` `.content h1:first-of-type` 行。  
+> 在下图中，当你选择 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 后，将会带你到定义了 `.content h1:first-of-type` CSS 规则的 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` 行2。  
 
 <!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
@@ -71,128 +71,128 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
 
 ### <a name="view-only-the-css-that-is-actually-applied-to-an-element"></a>仅查看实际应用于元素的 CSS  
 
-" **样式** "面板显示应用于元素的所有规则，包括已替代的声明。  如果对重写声明不感兴趣，请使用 **Computed** 面板仅查看实际应用于元素的 CSS。  
+**“样式”** 面板显示应用于元素的所有规则，包括已覆盖声明。  当你对覆盖声明不感兴趣时，使用 **“计算”** 面板仅查看实际应用于元素的 CSS。  
 
 1.  [选择元素](#choose-an-element)。  
-1.  导航到 **"元素"工具** 中的"计算 **"** 面板。  
+1.  导航到 **“元素”** 工具中的 **“计算”** 面板。  
 
 > [!NOTE]
-> 在宽的 DevTools 窗口中****，计算面板不存在。  "计算" **面板的内容** 显示在" **样式"面板** 上。  
+> 在宽的 DevTools 窗口中，**“计算”** 面板不存在。  **“计算”** 面板中的内容会在 **“样式”** 面板中显示。  
 
-继承的属性是不透明的。  若要显示所有继承的值，请选中" **全部显示"** 复选框。  
+继承的属性不透明。  若要显示所有继承的值，请选中 **“显示所有”** 复选框。  
 
 > [!NOTE]
-> 下图中，" **计算** "面板显示应用于当前选定元素的 CSS `h1` 属性。  
+> 下图中，**“计算”** 面板显示应用于当前所选 `h1` 元素的 CSS 属性。  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="计算面板" lightbox="../media/css-elements-computed-h1.msft.png":::
-   **计算面板**  
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="“计算”面板" lightbox="../media/css-elements-computed-h1.msft.png":::
+   **“计算”** 面板  
 :::image-end:::  
 
 ### <a name="view-css-properties-in-alphabetical-order"></a>按字母顺序查看 CSS 属性  
 
-使用 **"计算"** 面板。  导航[到"仅查看实际应用于元素的 CSS"。](#view-only-the-css-that-is-actually-applied-to-an-element)  
+使用 **“计算”** 面板。  导航到 [仅查看实际应用于元素的 CSS](#view-only-the-css-that-is-actually-applied-to-an-element)。  
 
 ### <a name="view-inherited-css-properties"></a>查看继承的 CSS 属性  
 
-选中" **计算"面板** 中的"全部 **显示"** 复选框。  导航[到"仅查看实际应用于元素的 CSS"。](#view-only-the-css-that-is-actually-applied-to-an-element)  
+选中 **“计算”** 面板中的 **“显示所有”** 复选框。  导航到 [仅查看实际应用于元素的 CSS](#view-only-the-css-that-is-actually-applied-to-an-element)。  
 
 ### <a name="view-the-box-model-for-an-element"></a>查看元素的框模型  
 
-若要查看 [元素的框][MDNBoxModel] 模型，请导航到" **样式"** 面板。  如果你的 DevTools 窗口较窄，则 **框** 模型图位于面板的底部。  
+若要查看元素的 [框模型][MDNBoxModel]，请导航到 **“样式”** 面板。  如果 DevTools 窗口较窄，则 **框模型** 图位于面板的底部。  
 
 选择并编辑值以更改值。  
 
 > [!NOTE]
-> 在下图中 **，"样式** "面板中的"方框模型 **"图显示** 当前所选元素的框 `h1` 模型。  
+> 下图中，**“样式”** 面板中的 **“框模型”** 图显示当前所选 `h1` 元素的框模型。  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="方框模型图" lightbox="../media/css-elements-styles-h1-2.msft.png":::
-   方框 **模型** 图  
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="框模型图" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+   **“框模型”** 图  
 :::image-end:::  
 
 ### <a name="search-and-filter-the-css-of-an-element"></a>搜索和筛选元素的 CSS  
 
-使用 **"样式**"和"计算****"面板**** 上的"筛选器"文本框搜索特定的 CSS 属性或值。  
+使用 **“样式”** 和 **“计算”** 面板上的 **“过滤器”** 文本框来搜索特定的 CSS 属性或值。  
 
-若要同时在计算面板 **中搜索继承** 的属性，请选中" **全部显示"** 复选框。  
+若要在 **“计算”** 面板中同时搜索继承属性，请选中 **“全部显示”** 复选框。  
 
 > [!NOTE]
-> 在下图中， **将筛选"样式** "面板，以只显示包含搜索查询 的规则 `color` 。  
+> 下图中，筛选 **“样式”** 面板为只显示包含搜索查询的 `color` 规则。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="筛选"样式"面板" lightbox="../media/css-elements-styles-filter-color.msft.png":::
-   筛选 **"样式"** 面板  
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="筛选“样式”面板" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+   筛选 **“样式”** 面板  
 :::image-end:::  
 
 > [!NOTE]
-> 在下图中， **将筛选计算** 面板以只显示包含搜索查询 的声明 `100%` 。  
+> 下图中，筛选 **“计算”** 面板以仅显示包含搜索查询 `100%` 的声明。  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="筛选"计算"面板" lightbox="../media/css-elements-computed-filter-100.msft.png":::
-   筛选 **"计算"** 面板  
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="筛选 “计算” 面板" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+   筛选 **“计算”** 面板  
 :::image-end:::  
 
 ### <a name="toggle-a-pseudo-class"></a>切换伪类  
 
-完成以下操作以切换伪类，如 `:active` 、 `:focus` 、 或 `:hover` `:visited` 。  
+完成以下操作以切换如 `:active`、`:focus`、`:hover` 或 `:visited` 的伪类。  
 
 1.  [选择元素](#choose-an-element)。  
-1.  在" **元素"** 工具上，导航到 **"样式"** 面板。  
-1.  选择 **：hov**。  
-1.  检查要启用的伪类。  
+1.  在 **“元素”** 工具上，导航到 **“样式”** 面板。  
+1.  选择 **:hov**。  
+1.  勾选要启用的伪类。  
 
 > [!NOTE]
-> 在下图中，切换 `:hover` 伪类。  在视口中，验证声明是否应用于元素，即使该元素实际上并未悬停在 `background-color: cornflowerblue` 上方。  
+> 下图中，切换 `:hover` 伪类。  在视区中验证 `background-color: cornflowerblue` 声明是否正应用于该元素上，即使该元素实际上并未悬停。  
 
-:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="切换 ：hover 伪类" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="切换 :hover 伪类" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
    切换 `:hover` 伪类  
 :::image-end:::  
 
-对于交互式教程，导航到["将伪状态添加到类"。][DevToolsCSSGetStartedAddPseudoState]  
+对于交互式教程，请导航到 [“向类添加伪静态”][DevToolsCSSGetStartedAddPseudoState]。  
 
 ### <a name="view-a-page-in-print-mode"></a>在打印模式下查看页面  
 
-完成以下操作以在打印模式下查看页面。  
+在打印模式下完成以下操作以查看页面。  
 
-1.  [打开命令菜单][DevToolsCommandMenu]。  
-1.  开始键入并选择 `Rendering` `Show Rendering` 。  
-1.  对于"**模拟 CSS 媒体**"下拉列表，选择"打印 **"。**  
+1.  [打开“命令”菜单][DevToolsCommandMenu]。  
+1.  开始键入 `Rendering` 并选择 `Show Rendering`。  
+1.  对于 **“模拟 CSS 媒体”** 下拉菜单中，请选择 **打印**。  
 
-### <a name="view-used-and-unused-css-with-the-coverage-tool"></a>使用"覆盖"工具查看已用和未使用的 CSS  
+### <a name="view-used-and-unused-css-with-the-coverage-tool"></a>使用覆盖工具查看已使用和未使用的 CSS  
 
-覆盖 **工具** 显示页面实际使用的 CSS。  
+**“覆盖”** 工具显示页面实际使用 CSS。  
 
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 而 DevTools 位于[][DevToolsCommandMenu]焦点中以打开命令菜单。  
-1.  开始键入并选择 `coverage` "显示**覆盖"。**  将显示 **"覆盖** "工具。  
+1.  在 DevTools 处于焦点时，选择 `Control`+`Shift`+`P` \(Windows，Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 时 [打开命令菜单][DevToolsCommandMenu]。  
+1.  开始键入 `coverage` 并选择 **“显示范围”**。  出现 **“覆盖”** 工具。  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="从命令菜单打开覆盖工具" lightbox="../media/css-console-command-menu-coverage.msft.png":::
-             从命令 **菜单** 打开覆盖 **工具**  
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="从命令菜单中打开 “覆盖” 工具" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+             从 **“命令”** 菜单中打开 **“覆盖”** 工具  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="覆盖工具" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
-             覆盖**工具**  
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="“覆盖”工具" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+             **覆盖**工具  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  选择 **开始检测覆盖范围并刷新** 页面 \ (![ 开始检测范围并刷新 ](../media/refresh-icon.msft.png) 页面 \) 。  页面刷新和覆盖工具概述了**** 浏览器加载的每个文件使用多少 CSS \ (和 JavaScript\) 。  绿色表示使用的 CSS。  红色表示未使用的 CSS。  
+1.  选择 **“开始仪表覆盖并刷新页面”** \(![开始仪表覆盖并刷新页面](../media/refresh-icon.msft.png)\)。  页面将刷新，**“覆盖”** 工具将提供浏览器加载的每个文件中使用多少 CSS \(和 JavaScript\) 的概述。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。  
     
-    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="使用和未使用 CSS (JavaScript) 概述" lightbox="../media/css-console-qs-coverage-run.msft.png":::
-       使用和未使用 CSS \ (JavaScript\) 的概述  
+    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="已使用的和未使用的 CSS (和JavaScript) 的概述" lightbox="../media/css-console-qs-coverage-run.msft.png":::
+       已使用的和未使用的 CSS \(和JavaScript\) 的概述  
     :::image-end:::  
 
-1.  若要显示 CSS 使用的明细数据，请选择 CSS 文件。  
+1.  若要显示已使用 CSS 的逐行分类，请选择 CSS 文件。  
     
     > [!NOTE]
-    > 在下图中，未使用第 145 至 147 行以及 149 到 151 行，而 `b66bc881.site-ltr.css` 使用第 163 至 166 行。  
+    > 在下图中， `b66bc881.site-ltr.css` 的 145 至 147 行和 149 至 151 行未使用，而 163 至 166 行已使用。  
     
-    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="已使用和未使用的 CSS 的行细分" lightbox="../media/css-sources-css-coverage.msft.png":::
-       已使用和未使用的 CSS 的行细分  
+    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="已使用和未使用 CSS 的逐行细目" lightbox="../media/css-sources-css-coverage.msft.png":::
+       已使用和未使用 CSS 的逐行细目  
     :::image-end:::  
     
 ### <a name="force-print-preview-mode"></a>强制打印预览模式  
 
-导航到 [强制 DevTools 进入打印预览模式][DevToolsCssPrintPreview]。  
+导航到 [“强制 DevTools 进入打印预览模式”][DevToolsCssPrintPreview]。  
 
 ## <a name="change-css"></a>更改 CSS  
 
@@ -200,155 +200,155 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
 
 ### <a name="add-a-css-declaration-to-an-element"></a>向元素添加 CSS 声明  
 
-声明的顺序会影响元素的样式，请使用以下列表来帮助你以不同方式添加声明。  
+声明顺序会影响元素的样式，请使用以下列表来帮助以不同方式添加声明。  
 
-*   [添加内嵌声明](#add-an-inline-declaration)。  相当于将 `style` 属性添加到元素的 HTML。  
-*   [向样式规则添加声明](#add-a-declaration-to-a-style-rule)。  
+*   [添加内联声明](#add-an-inline-declaration)。  相当于向元素的 HTML 添加 `style` 属性。  
+*   [向“样式规则”添加声明](#add-a-declaration-to-a-style-rule)。  
 
-**您应该使用什么工作流？** 对于大多数方案，您可能想要使用内嵌声明工作流。  内嵌声明比外部声明具有更高的特定性，因此内联工作流可确保更改在预期元素中生效。  有关特定性详细信息，请导航到选择 [器类型][MDNSelectorTypes]。  
+**该使用什么工作流?** 多数情况下，可能需要使用内联声明工作流。  内联声明具有比外部声明更高的特定性，因此内联工作流可确保更改在预期元素中生效。  有关特定性详细信息，请导航到 [“选择器类型”][MDNSelectorTypes]。  
 
-如果要调试元素的任何样式，并且需要专门测试在不同位置定义声明时会发生什么情况，请使用其他工作流。  
+如果要调试任何元素样式，并且需要专门测试在不同位置定义声明时的情况，请使用其他工作流。  
 
-#### <a name="add-an-inline-declaration"></a>添加内嵌声明  
+#### <a name="add-an-inline-declaration"></a>添加内联声明  
 
-完成以下操作以添加内嵌声明。  
+完成以下操作以添加内联声明。  
 
 1.  [选择元素](#choose-an-element)。  
-1.  在 **"样式** "窗格中，在 **element.style** 节的括号之间选择。  光标聚焦，允许您输入文本。  
-1.  输入属性名称并选择 `Enter` 。  
-1.  输入该属性的有效值，然后选择 `Enter` 。  在 **DOM 树**中，验证 `style` 属性已添加到 元素。  
+1.  在 **“样式”** 窗格中，选择 **element.style** 的括号。  光标聚焦，以允许输入文本。  
+1.  输入属性名称，然后选择 `Enter`。  
+1.  为该属性输入有效值，然后选择 `Enter`。  在 **DOM 树** 中，验证 `style` 属性是否已添加到元素中。  
 
 > [!NOTE]
-> 在下图中，和 `margin-top` `background-color` 属性已应用于选定元素。  在 **DOM 树** 中，验证声明是否反映在 `style` 元素的 属性中。  
+> 下图中，`margin-top` 和 `background-color` 属性已应用于所选元素。  在 **DOM 树** 验证声明是否反映在元素的 `style` 属性中。  
 
-:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="添加内嵌声明" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
-   添加内嵌声明  
+:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="添加内联声明" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+   添加内联声明  
 :::image-end:::  
 
 #### <a name="add-a-declaration-to-a-style-rule"></a>向样式规则添加声明  
 
-完成以下操作以向现有样式规则添加声明。  
+完成以下操作以将声明添加到现有样式规则中。  
 
 1.  [选择元素](#choose-an-element)。  
-1.  在 **"样式** "窗格中，在要添加声明的样式规则的括号之间选择。  光标聚焦，允许您输入文本。  
-1.  输入属性名称并选择 `Enter` 。  
-1.  输入该属性的有效值，然后选择 `Enter` 。  
+1.  在 **“样式”** 窗格中，选择要添加声明的样式规则括号。  光标聚焦，以允许输入文本。  
+1.  输入属性名称，然后选择 `Enter`。  
+1.  为该属性输入有效值，然后选择 `Enter`。  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="向样式规则添加声明" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="正在向样式规则添加声明" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
    将 `border-bottom-style:groove` 声明添加到样式规则  
 :::image-end:::  
 
 ### <a name="change-a-declaration-name-or-value"></a>更改声明名称或值  
 
-选择并编辑声明的名称或值以对其进行更改。  对于通过、或单位快速递增或缩小值的快捷方式，请导航到"使用键盘快捷方式 `0.1` `1` `10` `100` [更改声明值"。](#change-declaration-values-with-keyboard-shortcuts)  
+选择并编辑声明的名称或值以对其进行更改。  对于通过 `0.1`、`1`、`10` 或 `100` 单位以快速递增或递减值的快捷方式，请导航到 [“使用键盘快捷方式更改声明值”](#change-declaration-values-with-keyboard-shortcuts)。  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="更改声明的值" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
-   更改声明 `border-bottom-style` 的值  
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="更改声明值" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
+   更改 `border-bottom-style` 声明值  
 :::image-end:::  
 
 ### <a name="change-declaration-values-with-keyboard-shortcuts"></a>使用键盘快捷方式更改声明值  
 
-编辑声明的值时，可以使用以下键盘快捷方式将值增加一定量。  
+编辑声明的值时，可以使用以下键盘快捷方式将该值增加特定的数量。  
 
-*   选择 `Alt` + `Up` \ (Windows、Linux\) 或 `Option` + `Up` \ (macOS\) 递增 `0.1` 。  
-*   选择 将值更改为 ，如果当前值介于 和 之间，则按 `Up` `1` `0.1` `-1` 更改 `1` 值。  
-*   选择 `Shift` + `Up` 以按 递增 `10` 。  
-*   选择 `Shift` + `Page Up` \ (Windows、Linux\) 或 `Shift` + `Command` + `Up` \ (macOS\) `100` 将值递增。  
+*   选择`Alt`+`Up` \(Windows，Linux\) 或 `Option`+`Up` \(macOS\) 按 `0.1` 增量。  
+*   选择 `Up` 按 `1` 改变数值，如果当前值介于 `-1` 和 `1` 之间则按 `0.1` 改变。  
+*   选择 `Shift`+`Up` 按 `10` 增量。  
+*   选择 `Shift`+`Page Up` \(Windows，Linux\) 或 `Shift`+`Command`+`Up` \(macOS\) 按 `100` 增量。  
 
-减减也有效。  只需将上述每个 `Up` 实例替换为 `Down` 。  
+缩量也可以。  只要把上面提到的 `Up` 的每个实例都换成 `Down` 即可。  
 
 ### <a name="add-a-class-to-an-element"></a>向元素添加类  
 
-完成以下操作以向元素中添加类。  
+完成以下操作以向元素添加类。  
 
-1.  [选择 DOM](#choose-an-element) 树 **中的 元素**。  
-1.  选择 **".cls"。**  
-1.  在"添加新类"文本框 **中输入类** 的名称。  
+1.  在 ** DOM 树** 中 [选择元素](#choose-an-element)。  
+1.  选择 **.cls**。  
+1.  在 **“添加新类”** 文本框中输入类的名称。  
 1.  选择 `Enter`。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text=""元素类"窗格" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
-   " **元素类"** 窗格  
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="“元素课堂”窗格" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+   **“元素课堂”** 窗格  
 :::image-end:::  
 
 ### <a name="toggle-a-class"></a>切换类  
 
 完成以下操作以启用或禁用元素上的类。  
 
-1.  [选择 DOM](#choose-an-element) 树 **中的 元素**。  
-1.  打开 **"元素类"** 窗格。  导航到["将类添加到元素"。](#add-a-class-to-an-element)  在" **添加新类** "文本框下方是应用于特定元素的所有类。  
-1.  切换要打开或关闭的类旁边的复选框。  
+1.  在 ** DOM 树** 中 [选择元素](#choose-an-element)。  
+1.  打开 **“元素类”** 窗格。  导航到 [向元素添加类](#add-a-class-to-an-element)。  在 **“添加新类”** 文本框下方是应用于特定元素的所有类。  
+1.  切换要打开或关闭类旁边的复选框。  
 
 ### <a name="add-a-style-rule"></a>添加样式规则  
 
-完成以下操作以添加新的样式规则。  
+完成以下操作以添加新样式规则。  
 
 1.  [选择元素](#choose-an-element)。  
-1.  Choose **New Style Rule** \ (New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) .  DevTools 在 **element.style 规则下插入一个新** 规则。  
+1.  选择 **“新样式规则”** \(![新样式规则](../media/new-style-rule-icon.msft.png)\)。  DevTools 在 **element.style** 规则下方插入新规则。  
 
 > [!NOTE]
-> 在下图中，DevTools 在选择"新建样式规则"后 `h1.devsite-page-title` **添加样式规则**。  
+> 下图中，DevTools 在选择 **“新样式规则”** 后添加 `h1.devsite-page-title` 样式规则。  
 
 :::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="添加新的样式规则" lightbox="../media/css-elements-styles-style-new.msft.png":::
    添加新的样式规则  
 :::image-end:::  
 
-#### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>选择要向哪个样式表添加规则  
+#### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>选择要添加规则的样式表  
 
-添加新[样式规则](#add-a-style-rule)时，选择并按住"新建**** 样式规则" ("新建样式规则) 以选择要向哪个样式 ![ ](../media/new-style-rule-icon.msft.png) 表添加样式规则。  
+[添加新样式规则](#add-a-style-rule)时，选择并按住 **“新样式规则”** \(![新样式规则](../media/new-style-rule-icon.msft.png)\) 以选择要添加样式规则的样式表。  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="选择样式表" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    选择样式表  
 :::image-end:::  
 
-#### <a name="add-a-style-rule-to-a-specific-location"></a>将样式规则添加到特定位置  
+#### <a name="add-a-style-rule-to-a-specific-location"></a>向特定位置添加样式规则  
 
-完成以下操作，将样式规则添加到"样式"面板中的 **特定** 位置。  
+完成以下操作以将样式规则添加到 **“样式“** 面板的特定位置。  
 
-1.  将鼠标悬停在要添加新样式规则的正上方的样式规则上。  
-1.  [显示" **更多操作"** 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  Choose **Insert Style Rule below** \ (Insert Style Rule below icon ![ ](../media/new-style-rule-icon.msft.png) \) .  
+1.  将鼠标悬停在要添加新样式规则正上方的样式规则上。  
+1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。  
+1.  选择 **插入“样式规则”** \(![在图标下方插入样式规则](../media/new-style-rule-icon.msft.png)\)。  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="在下方插入样式规则" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **在下方插入样式规则**  
 :::image-end:::  
 
-### <a name="reveal-the-more-actions-toolbar"></a>显示"更多操作"工具栏  
+### <a name="reveal-the-more-actions-toolbar"></a>显示“更多操作”工具栏  
 
-" **更多操作** "工具栏允许您执行以下操作。  
+通过 **“更多操作”** 工具栏，可执行以下操作。  
 
-*   在重点样式规则正下方插入样式规则。  
-*   将 `background-color` 、 `color` `box-shadow` 、 或 `text-shadow` 声明添加到你侧重于的样式规则。  
+*   直接在所关注样式规则下面插入样式规则。  
+*   向所关注的样式规则添加`background-color`、`color`、`box-shadow` 或 `text-shadow` 声明。  
 
-完成以下操作以显示"更多 **操作"** 工具栏。  
+完成以下操作以显示 **“更多操作”** 工具栏。  
 
-1.  在" **样式"** 面板中，将鼠标悬停在样式规则上。  **更多操作** \ (\) 在样式规则部分右下 `...` 角显示。  
+1.  在 **“样式”** 面板中，将鼠标悬停在样式规则上。  在样式规则部分的右下角显示 **“更多操作”** \(`...`\)。  
     
     > [!NOTE]
-    > 在下图中，将鼠标悬停在样式规则上，"更多操作"显示于样式规则节的 `.header-holder.has-default-focus` 右下角。 ****  
+    > 下图中，将鼠标悬停在 `.header-holder.has-default-focus` 样式规则上，在样式规则部分的右下方会显示出 **“更多操作”**。  
     
-    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="显示更多操作" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
-       显示 **更多操作** \ (`...` \)   
+    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="显示“更多操作”" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+       显示 **“更多操作”** \(`...`\)  
     :::image-end:::  
     
-1.  将鼠标 **悬停在"更多** 操作 (`...` \) 可显示上述操作。  
+1.  将鼠标停留在 **“更多行动”** \(`...`\) 上，可以看到上面提到的操作。  
     
     > [!NOTE]
-    > 将 **鼠标悬停在"更多** 操作"上后，显示"插入样式规则下方 **"操作**。  
+    > 将鼠标悬停在 **“更多动作“** 上，就会显示出 **“下方插入样式规则”** 操作。  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text=""更多操作"工具栏" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
-       " **更多操作"** 工具栏  
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="“更多操作”工具栏" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+       **“更多操作”** 工具栏  
     :::image-end:::  
     
 ### <a name="toggle-a-declaration"></a>切换声明  
 
-完成创建操作以在 \ (或 off\) 上切换单个) 。  
+完成下面的操作来切换单个声明的开启 (或关闭)。  
 
 1.  [选择元素](#choose-an-element)。  
-1.  在 **"样式** "窗格中，将鼠标悬停在定义声明的规则上。  每个声明旁边都显示一个复选框。  
-1.  选中\ (或取消选中\) 声明旁边的复选框。  取消选中声明时，DevTools 会交叉它以指示它不再处于活动状态。  
+1.  在 **“样式”** 窗格中，将鼠标悬停在定义声明的规则上。  每个声明旁边将显示复选框。  
+1.  选中 \(或取消选中\) 声明旁边的复选框。  取消选中声明时，DevTools 会将它划掉，表示它不再是活跃。  
 
 > [!NOTE]
-> 在下图中， `margin-top` 当前所选元素的属性已切换为关闭。  
+> 下图中，当前选中元素的 `margin-top` 属性已关闭。  
 
 :::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="切换声明" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
    切换声明  
@@ -356,23 +356,23 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
 
 ### <a name="add-a-background-color-declaration"></a>添加背景色声明  
 
-完成以下操作以向 `background-color` 元素添加声明。  
+完成以下操作，向元素添加 `background-color` 声明。  
 
-1.  将鼠标悬停在要添加声明的样式 `background-color` 规则上。  
-1.  [显示" **更多操作"** 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  Choose **Add Background Color** \ (Add Background Color icon ![ ](../media/add-background-color-icon.msft.png) \) .  
+1.  将鼠标悬停在要添加 `background-color` 声明的样式规则上。  
+1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。  
+1.  选择 **“添加背景色”** \(![添加背景色图标](../media/add-background-color-icon.msft.png)\)。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="添加背景色" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
-   **添加背景色**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="背景色" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
+   **背景色**  
 :::image-end:::  
 
 ### <a name="add-a-color-declaration"></a>添加颜色声明  
 
-完成以下操作以向 `color` 元素添加声明。  
+完成以下操作，向元素添加 `color` 声明。  
 
-1.  将鼠标悬停在要添加声明的样式 `color` 规则上。  
-1.  [显示" **更多操作"** 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  Choose **Add Color** \ (Add Color icon ![ ](../media/add-color-icon.msft.png) \) .  
+1.  将鼠标悬停在要添加 `color` 声明的样式规则上。  
+1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。  
+1.  选择 **“添加颜色”** \(![添加颜色图标](../media/add-color-icon.msft.png)\)。  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="添加颜色" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **添加颜色**  
@@ -380,11 +380,11 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
 
 ### <a name="add-a-box-shadow-declaration"></a>添加框阴影声明  
 
-完成以下操作以向 `box-shadow` 元素添加声明。  
+完成以下操作以向元素添加 `box-shadow` 声明。  
 
-1.  将鼠标悬停在要添加声明的样式 `box-shadow` 规则上。  
-1.  [显示" **更多操作"** 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  Choose **Add Box Shadow** \ (Add Box Shadow icon ![ ](../media/add-box-shadow-icon.msft.png) \) .  
+1.  将鼠标悬停在要添加 `box-shadow` 声明的样式规则上。  
+1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。  
+1.  选择 **添加狂阴影** \(![添加框阴影图标](../media/add-box-shadow-icon.msft.png)\)。  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="添加框阴影" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **添加框阴影**  
@@ -392,27 +392,27 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
 
 ### <a name="add-a-text-shadow-declaration"></a>添加文本阴影声明  
 
-完成以下操作以向 `text-shadow` 元素添加声明。  
+完成以下操作，向元素添加 `text-shadow` 声明。  
 
-1.  将鼠标悬停在要添加声明的样式 `text-shadow` 规则上。  
-1.  [显示" **更多操作"** 工具栏](#reveal-the-more-actions-toolbar)。  
-1.  Choose **Add Text Shadow** \ (Add Text Shadow icon ![ ](../media/add-text-shadow-icon.msft.png) \) .  
+1.  将鼠标悬停在要添加 `text-shadow` 声明的样式规则上。  
+1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。  
+1.  选择 **“添加文本阴影”** \(![添加文本阴影图标](../media/add-text-shadow-icon.msft.png)\)。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="添加文本阴影" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
-   **添加文本阴影**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="添加文字阴影" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
+   **添加文字阴影**  
 :::image-end:::  
 
 ### <a name="change-colors-with-the-color-picker"></a>使用颜色选取器更改颜色  
 
-颜色 **选取器** 提供用于更改和声明 `color` 的 `background-color` GUI。  
+**颜色选取器** 为更改 `color` 和 `background-color` 声明提供 GUI。  
 
-完成以下操作以打开 **颜色选取器**。  
+完成以下操作以打开 **“颜色选取器”**。  
 
 1.  [选择元素](#choose-an-element)。  
-1.  在 **"样式** "面板中，查找要更改的 、 或类似 `color` `background-color` 声明。  在 、 或类似值的左侧，有一个小 `color` `background-color` 正方形，它是颜色预览。  
+1.  在 **“样式”** 面板中，找到 `color`、`background-color` 或要更改的类似声明。  在 `color`、`background-color` 或类似值左侧有个颜色预览的小方块。  
     
     > [!NOTE]
-    > 在下图中，左侧的小正方形 `rgba(0, 0, 0, 0.7)` 是该颜色的预览。  
+    > 下图中，`rgba(0, 0, 0, 0.7)` 左侧的小方块是该颜色的预览。  
     
     :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="颜色预览" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
        颜色预览  
@@ -421,13 +421,13 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
 1.  选择预览以打开 **颜色选取器**。  
     
     :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="颜色选取器" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
-       颜色 **选取器**  
+       **颜色选取器**  
     :::image-end:::  
     
-下图和列表对颜色选取器的每个 UI 元素的**descries。**  
+下图和列表介绍了了每个 **颜色选取器** 的 UI 元素。  
 
-:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="已批注的颜色选取器" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
-   已 **批注的颜色**选取器  
+:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="颜色选取器，已批注" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+   **颜色选取器**，已批注  
 :::image-end:::  
 
 :::row:::
@@ -435,7 +435,7 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       1  
    :::column-end:::
    :::column span="1":::
-      **底纹**  
+      **色调**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -446,10 +446,10 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       2  
    :::column-end:::
    :::column span="1":::
-      **目视器**  
+      **取色器**  
    :::column-end:::
    :::column span="2":::
-      有关详细信息，请导航到使用目 [视器从页面上采样颜色](#sample-a-color-off-the-page-with-the-eyedropper)。  
+      有关详细信息，请导航到 [用“取色器“在页面上打样着色](#sample-a-color-off-the-page-with-the-eyedropper)。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -460,7 +460,7 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       **复制到剪贴板**  
    :::column-end:::
    :::column span="2":::
-      将 **"显示值"** 复制到剪贴板。  
+      将 **“显示值”** 复制到剪贴板。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -471,7 +471,7 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       **显示值**  
    :::column-end:::
    :::column span="2":::
-      颜色的 RGBA、HSLA 或 Hex 表示形式。  
+      颜色的 RGBA、HSLA 或十六进制表示形式。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -482,7 +482,7 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       **调色板**  
    :::column-end:::
    :::column span="2":::
-      选择其中一个正方形以将颜色更改为该正方形。  
+      选择其中一个方块以更改该方块的颜色。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -490,7 +490,7 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       6  
    :::column-end:::
    :::column span="1":::
-      **Hue**  
+      **色调**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -501,7 +501,7 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       7  
    :::column-end:::
    :::column span="1":::
-      **Opacity**  
+      **不透明度**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -515,7 +515,7 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       **显示值切换器**  
    :::column-end:::
    :::column span="2":::
-      在当前颜色的 RGBA、HSLA 和 Hex 表示法之间进行切换。  
+      在当前颜色的 RGBA、HSLA 和十六进制表示形式之间切换。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -526,22 +526,22 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
       **调色板切换器**  
    :::column-end:::
    :::column span="2":::
-      在"材料 [设计"调色板][MaterialDesignColorSystem]、自定义调色板或页面颜色调色板之间进行切换。  DevTools 根据它在样式表内找到的颜色生成页面调色板。  
+      在 [“材质设计调色板”][MaterialDesignColorSystem]、“自定义调色板”或“页面颜色调色板”之间切换。  DevTools 根据在样式表中所找到的颜色来生成页面调色板。  
    :::column-end:::
 :::row-end:::  
 
-#### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>使用目视器为页面采样颜色  
+#### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>用“取色器“在页面上打样着色  
 
-打开颜色 **选取器**时，取色器 **\ (** 取色器 ![ ](../media/eyedropper-icon.msft.png) \) 默认打开。  完成以下操作，将所选颜色更改为页面上的某种其他颜色。  
+打开 **“颜色选取器”** 时，**“取色器”** \(![取色器](../media/eyedropper-icon.msft.png)\) 默认打开。  完成以下操作，可将页面上的所选颜色改为其他颜色。  
 
-1.  将鼠标悬停在视口中的目标颜色上。  
-1.  选择确认。  
+1.  将鼠标悬停在视区中的目标颜色上。  
+1.  选择以确认。  
     
     > [!NOTE]
-    > 在下图中，颜色 **选取** 器显示 的当前颜色值 `rgba(0,0,0,0.7)` 接近黑色。  选择后，特定颜色应更改为当前在视口中突出显示的黑色版本。  
+    > 下图中，**“颜色选取器”** 显示接近黑色的电流 `rgba(0,0,0,0.7)` 颜色值。  特定的颜色应该更改为在你选择后变为当前视区中高亮的黑色版本。  
     
-    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="使用目视器" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
-       使用目视器  
+    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="使用取色器" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+       使用取色器  
     :::image-end:::  
     
 <!--todo:  add the section on the Angle clock section for What's New 88.  -->  
@@ -552,16 +552,16 @@ DevTools 的 Elements 工具允许你一次查看或更改一个元素的 CSS。
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge 开发工具命令菜单运行命令"  
-[DevToolsCSSGetStarted]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"  
-[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "向类添加伪状态 - 查看和更改 CSS |Microsoft Docs"  
-[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "查看元素的 CSS - 查看和更改 CSS |Microsoft Docs"  
-[DevToolsCssPrintPreview]: ../css/print-preview.md "强制 Microsoft Edge DevTools 进入打印预览模式 (CSS 打印媒体类型) |Microsoft Docs"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "使缩小文件可读 - JavaScript 调试|Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge 开发工具命令菜单运行命令 | Microsoft Docs"  
+[DevToolsCSSGetStarted]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档 | Microsoft Docs"  
+[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class " 向类添加伪状态 - 查看和更改 CSS 入门 | Microsoft Docs"  
+[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "查看元素的 CSS - 查看和更改 CSS 入门 | Microsoft Docs"  
+[DevToolsCssPrintPreview]: ../css/print-preview.md "强制 Microsoft Edge DevTools 进入打印预览模式(CSS 打印媒体类型) | Microsoft Docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "使缩小的文件可读 - JavaScript 调试参考 | Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "颜色系统 - 材料设计"  
-[MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "方框模型|MDN"  
-[MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "选择器类型 - 特定|MDN"  
+[MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "框模型 | MDN"  
+[MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "选择器类型 - 特异性 | MDN"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

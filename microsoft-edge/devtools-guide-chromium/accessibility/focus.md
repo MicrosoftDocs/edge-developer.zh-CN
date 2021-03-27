@@ -1,15 +1,15 @@
 ---
-description: 打开控制台，创建 Live Expression，将表达式设置为 document.activeElement。
+description: 打开控制台，创建一个动态表达式，然后将表达式设置为document.activeElement。
 title: 跟踪哪些元素有焦点
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge,web 开发,f12 工具,开发工具
 ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
 ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2021
 ms.locfileid: "11439168"
@@ -30,27 +30,27 @@ ms.locfileid: "11439168"
 
 # <a name="track-which-element-has-focus"></a>跟踪哪些元素有焦点  
 
-假设您正在测试页面的键盘导航辅助功能。  当使用键导航页面时，焦点环有时会消失 `Tab` ，因为具有焦点的元素已被隐藏。  
+假设正在测试页面的键盘导航辅助功能。  使用`Tab`键浏览页面时，聚焦环有时会消失，因为具有焦点的元素被隐藏。  
 
-完成以下操作以跟踪 DevTools 中聚焦的元素。  
+完成以下操作以跟踪开发工具中具有焦点的元素。  
 
-1.  打开 **控制台**。  
-1.  Choose **Create Live Expression** \ (Create Live Expression ![ ](../media/create-live-expression-icon.msft.png) \) .  
+1.  打开“**控制台**”。  
+1.  选择“**创建动态表达式**” \(![创建动态表达式](../media/create-live-expression-icon.msft.png)\)。  
     
-    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建实时表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
-       创建实时表达式  
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建动态表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       创建动态表达式  
     :::image-end:::  
     
 1.  键入 `document.activeElement`。  
-1.  选择要保存的 **Live Expression** UI 外部。  
+1.  选择要保存的**动态表达式** UI 的外部。  
     
-下面显示的值 `document.activeElement` 是表达式的结果。  
+`document.activeElement` 下面显示的值是表达式的结果。  
 
-由于该表达式始终表示聚焦元素，因此你现在有一种方法可以始终跟踪哪个元素具有焦点。  
+由于该表达式始终代表着焦点的元素，因此现在可以始终跟踪哪个元素具有焦点。  
 
-*   将鼠标悬停在结果上以突出显示视口中聚焦的元素。  
-*   将鼠标悬停在结果上，打开上下文菜单 \ (右键单击\) ，然后选择"元素"**** 面板中的"展示"以在"元素"工具上的 DOM 树中**显示元素。**  
-*   将鼠标悬停在结果上，打开上下文菜单 \ (右键单击\) ，然后选择"存储"**** 作为全局变量以创建对可以在控制台中使用的节点的变量**引用**。  
+*   将鼠标悬停在结果上，以在视区中突出显示焦点元素。  
+*   将鼠标悬停在结果上，打开上下文菜单 \ (右键单击\) ，然后选择“**在元素面板显示**”以在“**元素**”工具上显示 DOM 树中的元素。  
+*   将鼠标悬停在结果上，打开上下文菜单 \ (右键单击\)，然后选择“**存储为全局变量**”，以创建对可以在**控制台**中所使用节点的变量引用。  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 

@@ -1,6 +1,6 @@
 ---
 description: 了解如何在 Microsoft Edge DevTools 中评估运行时性能。
-title: 即可体验分析运行时性能
+title: 分析运行时性能入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
 ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2021
 ms.locfileid: "11439610"
@@ -64,9 +64,9 @@ ms.locfileid: "11439610"
 
 与台式机和笔记本电脑相比，移动设备的 CPU 功率更小。  每当你分析页面时，都可使用 CPU 节流来模拟页面在移动设备上的表现。  
 
-1.  在 DevTools 中，选择 **"性能"** 工具。  
-1.  确保你选择"屏幕截图"旁边的 **复选框**。  
-1.  Choose **Capture Settings** \ (Capture Settings ![ ](../media/capture-settings-icon.msft.png) \) .  DevTools 显示了有关如何捕获效果指标的设置。  
+1.  在 DevTools 中，选择“**性能**”工具。  
+1.  确保你选择“**屏幕截图**”旁边的复选框。  
+1.  选择**捕获设置** \(![捕获设置](../media/capture-settings-icon.msft.png)\)。  DevTools 显示了与捕获效果指标有关的设置。  
 1.  对于**CPU**，请选择**4倍减速**。  DevTools 将 CPU 限制为比平时慢 4 倍。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU 限制" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -93,7 +93,7 @@ ms.locfileid: "11439610"
 
 运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。  
 
-1.  在 DevTools**** 中，选择"记录 ![ " ("记录 ](../media/record-icon.msft.png) ") "。  页面运行时，DevTools 将捕获效果指标。  
+1.  在 DevTools 中，选择“**记录** \(![记录](../media/record-icon.msft.png))”。  页面运行时，DevTools 将捕获效果指标。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        配置文件页面  
@@ -116,13 +116,13 @@ ms.locfileid: "11439610"
 
 用于测量任何动画效果的主要指标是每秒的帧\(FPS\)。  当动画以 60 FPS运行时，用户会觉得很享受。  
 
-1.  查看 **FPS** 图表。  每当红色条显示在 **FPS**上方时，这意味着帧速率下降得过低，可能损害用户体验。  通常，绿色条越高，FPS 越高。  
+1.  查看 **FPS** 图表。  每当红色条显示在 **FPS**上方时，这意味着帧速率下降得过低，可能破坏用户体验。  通常，绿色条越高，FPS 越高。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="FPS 图表" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
        **FPS** 图表  
     :::image-end:::  
     
-1.  在 **FPS** 图表下方， **显示 CPU** 图表。  CPU**图表中的颜色对应于**"性能"面板底部的"摘要****"面板中的颜色。  **CPU** 图表充满颜色意味着在录制过程中 CPU 已达到极限。  每当 CPU 长时间达到最大值时，你应该找到减少工作的方法指示器。  
+1.  在 **FPS** 图表下方，显示 **CPU** 图表。  **CPU** 图表中的颜色对应于“性能”面板底部的“**摘要**”面板中的颜色。  **CPU** 图表充满颜色意味着在录制过程中 CPU 已达到极限。  每当 CPU 长时间达到最大值时，这意味着你应该寻找减少工作的办法。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="CPU 图表和摘要面板" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
        **CPU**图表和**摘要**面板  
@@ -148,31 +148,31 @@ ms.locfileid: "11439610"
 
 1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
 1.  在**命令菜单**中开始键入`Rendering`，然后选择**显示渲染**.  
-1.  在呈现 **工具** 中，打开 **FPS 指示器**。  新的叠加层将显示在视线的右上角。  
+1.  在呈现**工具** 中，打开 **FPS 指示器**。  新的叠加层将显示在视线的右上角。  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="FPS 计数" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        **FPS 计数**  
         :::image-end:::  
     
-1.  关闭 **FPS 指示器并选择** 关闭 `Escape` **呈现工具** 。  本教程中未 **使用 FPS** 指示器。  
+1.  关闭 **FPS 计数**并选择 `Escape` 来关闭**呈现**工具。  本教程中未使用 **FPS 计数**。  
     
 ### <a name="find-the-bottleneck"></a>查找瓶颈  
 
 当测量并验证动画表现不佳之后，下一步就是要回答“为什么？”的问题。  
 
-1.  未选择任何事件时 **，"摘要"** 面板将显示活动的细目。  页面大部分时间都在渲染。  由于性能是减少工作量的艺术，因此你的目标是减少花费在进行绘制工作上的时间。  
+1.  未选择任何事件时，“**摘要**”面板将显示活动的细目。  页面大部分时间都在渲染。  由于性能是减少工作量的艺术，因此你的目标是减少花费在进行绘制工作上的时间。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="摘要面板" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
        摘要**面板**  
     :::image-end:::  
     
-1.  展开**重点**部分。  DevTools 将显示一段时间内主线程上活动的帧图表。  x 轴表示一段时间内的记录。  每个条形表示一个事件。  宽条表示该事件花费了更长的时间。  Y 轴表示调用堆叠。  当事件堆叠在一起时，这意味着上面的事件导致了较低的事件。  
+1.  展开**重点**部分。  DevTools 将显示一段时间内主线程上活动的帧图表。  x 轴表示一段时间内的记录。  每个条形表示一个事件。  宽条表示该事件花费了更长的时间。  Y 轴表示调用堆叠。  当事件堆叠在一起时，这意味着上面的事件导致了下面的事件。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="主要部分" lightbox="../media/evaluate-performance-performance-main.msft.png":::
        **主要**部分  
     :::image-end:::  
     
-1.  记录中有很多数据。  如果要放大单个事件；请选择、按住并将光标拖动到**Overview**上，即包括**FPS**、**CPU**和**NET**图表的部分。  " **主** 节"和" **摘要** "面板仅显示所选部分录制的信息。  
+1.  记录中有很多数据。  如果要放大单个事件；请选择、按住并将光标拖动到**Overview**上，即包括**FPS**、**CPU**和**NET**图表的部分。  “**主**”节和“**摘要**”面板仅显示所选部分录制的信息。  
     
     :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="放大事件" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
        放大事件  
@@ -181,12 +181,12 @@ ms.locfileid: "11439610"
     > [!NOTE]
     > 另一种缩放方式，将聚焦在 **主** 部分，选择背景或事件，然后选择 `W`、 `A`、 `S`或 `D`。  
     
-    1.  重点关注 **动画帧触发**事件右上角的红色三角形。  每当显示红色三角形时，都会显示一条警告，指出可能有与事件相关的问题。  
+    1.  重点关注**动画帧触发**事件右上角的红色三角形。  每当显示红色三角形时，都会显示一条警告，指出可能有与事件相关的问题。  
     
     > [!NOTE]
-    > 每当 **运行** [requestAnimationFrame][MDNWebRequestAnimationFrame] 或 () 时，将发生 Animation Frame Fired 事件。  
+    > 每当运行 [requestAnimationFrame()][MDNWebRequestAnimationFrame] 时，将发生 **动画帧触发**事件。  
     
-1.  选择 **动画帧触发**事件。  " **摘要** "面板现在将显示有关该事件的信息。  请注意 "**显示**" 链接。  选择后，DevTools 将突出显示启动 **动画帧触发** 事件。  另外，请关注**app.js:95**链接。  选择后，将显示源代码中的相关行。
+1.  选择**动画帧触发**事件。  “**摘要**”面板现在将显示有关该事件的信息。  请注意“**显示**”链接。  选择后，DevTools 将突出显示启动 **动画帧触发** 事件。  另外，请关注**app.js:95**链接。  选择后，将显示源代码中的相关行。
     
     :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="有关动画帧触发事件的详细信息" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
        有关**动画帧触发**事件的详细信息  
@@ -196,9 +196,9 @@ ms.locfileid: "11439610"
     > 选择事件后，使用箭头键选择事件旁边的事件。  
     
 1.  在 **app.update** 事件下，有一堆紫色事件。  如果每个紫色事件都比较宽，看起来每个事件上可能都有个红色三角形。  
-1.  选择紫色 **布局**事件之一。  DevTools 在摘要面板中提供有关 **事件** 详细信息。  实际上，存在一条有关强制重排 \ (layout\) 的警告。  
+1.  选择一个紫色的**布局**事件。  DevTools 在**摘要**面板中提供了有关事件详细信息。  实际上，存在一条有关 layout\) 强制重排 \(another 的警告。  
     
-1.  在摘要 **面板中** ，选择布局强制 ** 下的app.js：71** **链接**。  DevTools 将转到强制布局的代码行。  
+1.  在**摘要**面板中，选择**布局强制**下的 **app.js:71** 链接。  DevTools 将转到强制布局的代码行。  
     
     :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="导致强制布局的代码行" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
        导致强制布局的代码行  
@@ -213,10 +213,10 @@ ms.locfileid: "11439610"
 
 ### <a name="bonus-analyze-the-optimized-version"></a>附赠：分析优化的版本  
 
-使用刚学到的工作流和工具，在演示中选择"**** 优化"以打开优化的代码，执行另一个性能记录，然后分析结果。  从改进的帧速率到 **主** 部分中绘制图表的事件减少，应用的优化版本执行的工作要少得多，从而产生更好的性能。  
+使用刚学到的工作流和工具，在演示中选择“**优化**”以打开优化的代码，执行另一个性能记录，然后分析结果。  从改进的帧速率到“**主**”节中绘制图表事件的减少，应用的优化版本执行的工作要少得多，从而产生更好的性能。  
 
 > [!NOTE]
-> 即使优化版本也不很好，因为它可以操纵每个图标的`top`属性。  更好的方法是保留仅影响合成的属性。  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  
+> 即使优化版本也有不足，因为它可以操纵每个图标的 `top` 属性。  更好的方法是保留仅影响合成的属性。  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  
 
 <!--todo: add rendering section when available -->
 
@@ -225,7 +225,7 @@ ms.locfileid: "11439610"
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->  
 
-为了更加熟悉性能 **工具** ，实践非常完美。  试着对页面进行剖析并分析结果。  如果对结果有任何疑问，请使用**发送反馈** 图标，选择 `Alt`+`Shift`+`I`  \(Windows, Linux\)，选择 `Option`+`Shift`+`I`  \(macOS\)， 或[发 tweet 给 DevTools 团队][TwitterEdgeDevtools]。  如果可能，请包括屏幕截图或指向可重现页面的链接。  
+为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果对结果有任何疑问，请使用**发送反馈** 图标，选择 `Alt`+`Shift`+`I`  \(Windows, Linux\)，选择 `Option`+`Shift`+`I`  \(macOS\)， 或[发 tweet 给 DevTools 团队][TwitterEdgeDevtools]。  如果可能，请包括屏幕截图或指向可重现页面的链接。  
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Microsoft Edge 开发人员工具中的**反馈**图标" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标  
