@@ -1,90 +1,89 @@
 ---
 description: 适用于 WinUI 应用的 WebView2 入门指南
-title: 适用于 WinUI 应用的 WebView2 入门
+title: WinUI 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 5188a735eaf635c3b3bc0eead6f4ee4f3a83f1c4
-ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
+keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
+ms.openlocfilehash: 52d84afb6f9fe1e120f75525b2669a797309fdfe
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "11306150"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461204"
 ---
-# <span data-ttu-id="064eb-104">WinUI 3 预览版中的 WebView2 (入门) </span><span class="sxs-lookup"><span data-stu-id="064eb-104">Getting started with WebView2 in WinUI 3 (Preview)</span></span>  
+# <a name="getting-started-with-webview2-in-winui-3-preview"></a><span data-ttu-id="71ef6-104">WinUI 3 预览版中的 WebView2 (入门) </span><span class="sxs-lookup"><span data-stu-id="71ef6-104">Getting started with WebView2 in WinUI 3 (Preview)</span></span>  
 
-<span data-ttu-id="064eb-105">本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。</span><span class="sxs-lookup"><span data-stu-id="064eb-105">In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].</span></span>  <span data-ttu-id="064eb-106">你的第一个 WebView2 应用使用 WinUI3。</span><span class="sxs-lookup"><span data-stu-id="064eb-106">Your first WebView2 app uses WinUI3.</span></span>  <span data-ttu-id="064eb-107">有关各个 API 详细信息，请导航到 [API 参考][GithubMicrosoftUiXamlSpecsWebview2]。</span><span class="sxs-lookup"><span data-stu-id="064eb-107">For more information on individual APIs, navigate to [API reference][GithubMicrosoftUiXamlSpecsWebview2].</span></span>  
+<span data-ttu-id="71ef6-105">本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-105">In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].</span></span>  <span data-ttu-id="71ef6-106">你的第一个 WebView2 应用使用 WinUI3。</span><span class="sxs-lookup"><span data-stu-id="71ef6-106">Your first WebView2 app uses WinUI3.</span></span>  <span data-ttu-id="71ef6-107">有关各个 API 的信息，请导航到 [API 参考][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-107">For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].</span></span>  
 
-## <span data-ttu-id="064eb-108">必备条件</span><span class="sxs-lookup"><span data-stu-id="064eb-108">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="71ef6-108">必备条件</span><span class="sxs-lookup"><span data-stu-id="71ef6-108">Prerequisites</span></span>  
 
-<span data-ttu-id="064eb-109">确保先安装以下先决条件列表，然后再继续。</span><span class="sxs-lookup"><span data-stu-id="064eb-109">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
+<span data-ttu-id="71ef6-109">请确保先安装以下先决条件列表，然后再继续。</span><span class="sxs-lookup"><span data-stu-id="71ef6-109">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
 
-*   <span data-ttu-id="064eb-110">[WebView2][Webview2Installer] 运行时或任何 [Microsoft Edge (chromium) ][MicrosoftedgeinsiderDownload] 安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上。</span><span class="sxs-lookup"><span data-stu-id="064eb-110">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.</span></span>  <span data-ttu-id="064eb-111">有关 Windows 10 详细信息，请导航到 [Windows 更新：常见问题][MicrosoftSupport12373]解答。</span><span class="sxs-lookup"><span data-stu-id="064eb-111">For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].</span></span>  
+*   <span data-ttu-id="71ef6-110">安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView2][Webview2Installer]运行时或任何[Microsoft Edge (Chromium][MicrosoftedgeinsiderDownload]) 非稳定渠道。</span><span class="sxs-lookup"><span data-stu-id="71ef6-110">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.</span></span>  <span data-ttu-id="71ef6-111">有关 Windows 10 详细信息，请导航到 [Windows 更新：常见问题][MicrosoftSupport12373]解答 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-111">For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="064eb-112">WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。</span><span class="sxs-lookup"><span data-stu-id="064eb-112">The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.</span></span>  
+    > <span data-ttu-id="71ef6-112">WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。</span><span class="sxs-lookup"><span data-stu-id="71ef6-112">The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.</span></span>  
     
-*   <span data-ttu-id="064eb-113">[Visual Studio][MicrosoftVisualstudioMain] 2019 版本 16.9 预览版。</span><span class="sxs-lookup"><span data-stu-id="064eb-113">[Visual Studio][MicrosoftVisualstudioMain] 2019, version 16.9 Preview.</span></span>  <span data-ttu-id="064eb-114">有关详细信息，请导航到[Windows UI 库 3 预览版 3。][WindowsAppsWinui3ConfigureYourDevEnvironment]</span><span class="sxs-lookup"><span data-stu-id="064eb-114">For more information, navigate to [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].</span></span>  
-    
-    *   <span data-ttu-id="064eb-115">在安装客户端时，请包含Visual Studio。</span><span class="sxs-lookup"><span data-stu-id="064eb-115">Include the following workloads when you install Visual Studio.</span></span>  
-        *   <span data-ttu-id="064eb-116">.NET 桌面开发 \ (安装程序还安装 .NET 5\) </span><span class="sxs-lookup"><span data-stu-id="064eb-116">.NET Desktop Development \(the installer also installs .NET 5\)</span></span>  
-        *   <span data-ttu-id="064eb-117">通用 Windows 平台开发</span><span class="sxs-lookup"><span data-stu-id="064eb-117">Universal Windows Platform development</span></span>  
-    *   <span data-ttu-id="064eb-118">若要生成 C++ 应用，还必须包括以下工作负载。</span><span class="sxs-lookup"><span data-stu-id="064eb-118">To build C++ apps, you must also include the following workloads.</span></span>  
-        *   <span data-ttu-id="064eb-119">使用 C++ 进行桌面开发</span><span class="sxs-lookup"><span data-stu-id="064eb-119">Desktop development with C++</span></span>  
-        *   <span data-ttu-id="064eb-120">通用 Windows 平台 (C++ \ (v142\) 通用 Windows 平台工具可选组件。</span><span class="sxs-lookup"><span data-stu-id="064eb-120">The C++ \(v142\) Universal Windows Platform tools optional component for the Universal Windows Platform workload.</span></span>  <span data-ttu-id="064eb-121">有关详细信息， **请导航到** 右侧窗格中"通用 **Windows** 平台开发"部分下的"安装详细信息"。</span><span class="sxs-lookup"><span data-stu-id="064eb-121">For more information,  navigate to **Installation Details** under the **Universal Windows Platform development** section, on the right pane.</span></span>  
+*   <span data-ttu-id="71ef6-113">[Visual Studio][MicrosoftVisualstudioMain] 2019 版本 16.9 预览版。</span><span class="sxs-lookup"><span data-stu-id="71ef6-113">[Visual Studio][MicrosoftVisualstudioMain] 2019, version 16.9 Preview.</span></span>  <span data-ttu-id="71ef6-114">有关详细信息，请导航到 [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-114">For more information, navigate to [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].</span></span>  
+    *   <span data-ttu-id="71ef6-115">安装客户端时，请包含Visual Studio。</span><span class="sxs-lookup"><span data-stu-id="71ef6-115">Include the following workloads when you install Visual Studio.</span></span>  
+        *   <span data-ttu-id="71ef6-116">.NET 桌面开发 \ (安装程序还会安装 .NET 5\) </span><span class="sxs-lookup"><span data-stu-id="71ef6-116">.NET Desktop Development \(the installer also installs .NET 5\)</span></span>  
+        *   <span data-ttu-id="71ef6-117">通用 Windows 平台开发</span><span class="sxs-lookup"><span data-stu-id="71ef6-117">Universal Windows Platform development</span></span>  
+    *   <span data-ttu-id="71ef6-118">若要生成 C++ 应用，还必须包括以下工作负载。</span><span class="sxs-lookup"><span data-stu-id="71ef6-118">To build C++ apps, you must also include the following workloads.</span></span>  
+        *   <span data-ttu-id="71ef6-119">使用 C++ 进行桌面开发</span><span class="sxs-lookup"><span data-stu-id="71ef6-119">Desktop development with C++</span></span>  
+        *   <span data-ttu-id="71ef6-120">通用 Windows 平台工作负载的 C++ \ (v142\) 通用 Windows 平台工具可选组件。</span><span class="sxs-lookup"><span data-stu-id="71ef6-120">The C++ \(v142\) Universal Windows Platform tools optional component for the Universal Windows Platform workload.</span></span>  <span data-ttu-id="71ef6-121">有关详细信息，请 **导航到右侧** 窗格中"通用 **Windows** 平台开发"部分下的"安装详细信息"。</span><span class="sxs-lookup"><span data-stu-id="71ef6-121">For more information,  navigate to **Installation Details** under the **Universal Windows Platform development** section, on the right pane.</span></span>  
         
-## <span data-ttu-id="064eb-122">步骤 0 - Visual Studio设置</span><span class="sxs-lookup"><span data-stu-id="064eb-122">Step 0 - Visual Studio settings</span></span>  
+## <a name="step-0---visual-studio-settings"></a><span data-ttu-id="71ef6-122">步骤 0 - Visual Studio设置</span><span class="sxs-lookup"><span data-stu-id="71ef6-122">Step 0 - Visual Studio settings</span></span>  
 
-1.  <span data-ttu-id="064eb-123">确保你的系统已启用 NuGet 程序包[源nuget.org。][NugetHome] 有关详细信息，请导航到[常见 NuGet][NugetConsumePackagesConfiguringNugetBehavior]配置[和 Windows 社区Toolkit。][WindowsCommunitytoolkit]</span><span class="sxs-lookup"><span data-stu-id="064eb-123">Ensure your system has a NuGet package source enabled for [nuget.org][NugetHome].  For more information, navigate to [Common NuGet configurations][NugetConsumePackagesConfiguringNugetBehavior] and [Windows Community Toolkit][WindowsCommunitytoolkit].</span></span>  
-1.  <span data-ttu-id="064eb-124">下载并安装 [WinUI 3 Preview 3 VSIX 程序包][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]。</span><span class="sxs-lookup"><span data-stu-id="064eb-124">Download and install the [WinUI 3 Preview 3 VSIX package][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates].</span></span>  <span data-ttu-id="064eb-125">安装程序将 WinUI 3 项目模板和包含 WinUI 3 库的 NuGet 包添加到 Visual Studio 2019。</span><span class="sxs-lookup"><span data-stu-id="064eb-125">The installer adds both the WinUI 3 project templates and the NuGet package containing the WinUI 3 libraries to Visual Studio 2019.</span></span>  
+1.  <span data-ttu-id="71ef6-123">确保你的系统已启用 NuGet 程序包源[nuget.org。][NugetHome] 有关详细信息，请导航到通用[NuGet 配置][NugetConsumePackagesConfiguringNugetBehavior]和[Windows 社区Toolkit。][WindowsCommunitytoolkit]</span><span class="sxs-lookup"><span data-stu-id="71ef6-123">Ensure your system has a NuGet package source enabled for [nuget.org][NugetHome].  For more information, navigate to [Common NuGet configurations][NugetConsumePackagesConfiguringNugetBehavior] and [Windows Community Toolkit][WindowsCommunitytoolkit].</span></span>  
+1.  <span data-ttu-id="71ef6-124">下载并安装 [WinUI 3 Preview 3 VSIX 程序包][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-124">Download and install the [WinUI 3 Preview 3 VSIX package][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates].</span></span>  <span data-ttu-id="71ef6-125">安装程序会将包含 WinUI 3 库的 WinUI 3 项目模板和 NuGet 包添加到 Visual Studio 2019。</span><span class="sxs-lookup"><span data-stu-id="71ef6-125">The installer adds both the WinUI 3 project templates and the NuGet package containing the WinUI 3 libraries to Visual Studio 2019.</span></span>  
     
-    <span data-ttu-id="064eb-126">有关如何将程序包添加到加载项的说明Visual Studio导航到"查找和使用Visual Studio `VSIX` [扩展"][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]。</span><span class="sxs-lookup"><span data-stu-id="064eb-126">For instructions on how to add the `VSIX` package to Visual Studio, navigate to [Finding and Using Visual Studio Extensions][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].</span></span>
+    <span data-ttu-id="71ef6-126">有关如何将程序包添加到应用 `VSIX` Visual Studio，请导航到查找和使用Visual Studio[扩展。][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]</span><span class="sxs-lookup"><span data-stu-id="71ef6-126">For instructions on how to add the `VSIX` package to Visual Studio, navigate to [Finding and Using Visual Studio Extensions][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].</span></span>
     
-1.  <span data-ttu-id="064eb-127">若要访问开发人员特定的所有Visual Studio功能，请打开 [开发人员模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。</span><span class="sxs-lookup"><span data-stu-id="064eb-127">To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].</span></span>  
+1.  <span data-ttu-id="71ef6-127">若要访问所有特定于开发人员Visual Studio功能，请打开开发人员 [模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-127">To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].</span></span>  
     
-## <span data-ttu-id="064eb-128">步骤 1 - 创建项目</span><span class="sxs-lookup"><span data-stu-id="064eb-128">Step 1 - Create Project</span></span>  
+## <a name="step-1---create-project"></a><span data-ttu-id="71ef6-128">步骤 1 - 创建项目</span><span class="sxs-lookup"><span data-stu-id="71ef6-128">Step 1 - Create Project</span></span>  
 
-<span data-ttu-id="064eb-129">从包含单个主窗口的基本桌面项目开始。</span><span class="sxs-lookup"><span data-stu-id="064eb-129">Start with a basic desktop project that contains a single main window.</span></span>  
+<span data-ttu-id="71ef6-129">从包含单个主窗口的基本桌面项目开始。</span><span class="sxs-lookup"><span data-stu-id="71ef6-129">Start with a basic desktop project that contains a single main window.</span></span>  
 
-1.  <span data-ttu-id="064eb-130">在Visual Studio中，**选择"新建项目"。**</span><span class="sxs-lookup"><span data-stu-id="064eb-130">In Visual Studio, choose **Create a new project**.</span></span>  
-1.  <span data-ttu-id="064eb-131">在项目下拉列表中，分别选择**C#** **、Windows\*\*\*\*和 WinUI。**</span><span class="sxs-lookup"><span data-stu-id="064eb-131">In the project drop-down, choose **C#**, **Windows**, and **WinUI** respectively.</span></span>  
+1.  <span data-ttu-id="71ef6-130">In Visual Studio， choose **Create a new project**.</span><span class="sxs-lookup"><span data-stu-id="71ef6-130">In Visual Studio, choose **Create a new project**.</span></span>  
+1.  <span data-ttu-id="71ef6-131">在项目下拉列表中，分别选择**C#、Windows**和\*\*\*\*\*\*WinUI。\*\*</span><span class="sxs-lookup"><span data-stu-id="71ef6-131">In the project drop-down, choose **C#**, **Windows**, and **WinUI** respectively.</span></span>  
     
     :::image type="complex" source="./media/winui-gettingstarted-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio" lightbox="./media/winui-gettingstarted-selections.png":::
-        <span data-ttu-id="064eb-133">使用项目创建一个新的 WinUI Visual Studio</span><span class="sxs-lookup"><span data-stu-id="064eb-133">Create a new WinUI project using Visual Studio</span></span>
+        <span data-ttu-id="71ef6-133">使用项目创建一个新的 WinUI Visual Studio</span><span class="sxs-lookup"><span data-stu-id="71ef6-133">Create a new WinUI project using Visual Studio</span></span>
     :::image-end:::  
     
-1.  <span data-ttu-id="064eb-134">Choose \*\*Blank App， Packaged (WinUI in Desktop) \*\*  >  **Next**.</span><span class="sxs-lookup"><span data-stu-id="064eb-134">Choose **Blank App, Packaged (WinUI in Desktop)** > **Next**.</span></span>  
-1.  <span data-ttu-id="064eb-135">输入项目名称。</span><span class="sxs-lookup"><span data-stu-id="064eb-135">Enter a project name.</span></span>
-1.  <span data-ttu-id="064eb-136">根据需要选择选项。</span><span class="sxs-lookup"><span data-stu-id="064eb-136">Choose options as needed.</span></span>  
-1.  <span data-ttu-id="064eb-137">选择“**创建**”。</span><span class="sxs-lookup"><span data-stu-id="064eb-137">Choose **Create**.</span></span>  
-1.  <span data-ttu-id="064eb-138">在 **"新建通用 Windows 平台项目**"中，选择以下值，然后选择"**确定"。**</span><span class="sxs-lookup"><span data-stu-id="064eb-138">In **New Universal Windows Platform Project**, choose the following values, and then choose **OK**.</span></span>  
-    *   <span data-ttu-id="064eb-139">**目标版本\*\*\*\*：Windows 10 版本 1903 (版本 18362**) 或更高版本</span><span class="sxs-lookup"><span data-stu-id="064eb-139">**Target version**:  **Windows 10, version 1903 (build 18362)** or later</span></span>  
-    *   <span data-ttu-id="064eb-140">\*\*最低版本\*\*\*\*：Windows 10 版本 1803 (版本 17134) \*\*</span><span class="sxs-lookup"><span data-stu-id="064eb-140">**Minimum version**:  **Windows 10, version 1803 (build 17134)**</span></span>  
+1.  <span data-ttu-id="71ef6-134">Choose \*\*Blank App， Packaged (WinUI in Desktop) \*\*  >  **Next**.</span><span class="sxs-lookup"><span data-stu-id="71ef6-134">Choose **Blank App, Packaged (WinUI in Desktop)** > **Next**.</span></span>  
+1.  <span data-ttu-id="71ef6-135">输入项目名称。</span><span class="sxs-lookup"><span data-stu-id="71ef6-135">Enter a project name.</span></span>
+1.  <span data-ttu-id="71ef6-136">根据需要选择选项。</span><span class="sxs-lookup"><span data-stu-id="71ef6-136">Choose options as needed.</span></span>  
+1.  <span data-ttu-id="71ef6-137">选择“**创建**”。</span><span class="sxs-lookup"><span data-stu-id="71ef6-137">Choose **Create**.</span></span>  
+1.  <span data-ttu-id="71ef6-138">在 **"新建通用 Windows 平台项目**"中，选择以下值，然后选择"确定 **"。**</span><span class="sxs-lookup"><span data-stu-id="71ef6-138">In **New Universal Windows Platform Project**, choose the following values, and then choose **OK**.</span></span>  
+    *   <span data-ttu-id="71ef6-139">**目标版本\*\*\*\*：Windows 10 版本 1903 (版本 18362**) 或更高版本</span><span class="sxs-lookup"><span data-stu-id="71ef6-139">**Target version**:  **Windows 10, version 1903 (build 18362)** or later</span></span>  
+    *   <span data-ttu-id="71ef6-140">\*\*最低版本\*\*\*\*：Windows 10 版本 1803 (版本 17134) \*\*</span><span class="sxs-lookup"><span data-stu-id="71ef6-140">**Minimum version**:  **Windows 10, version 1803 (build 17134)**</span></span>  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text=""新建通用 Windows 平台项目"对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-gettingstarted-projecttype.png":::
-       <span data-ttu-id="064eb-142">"新建通用 Windows 平台项目"对话框，包含为目标版本和最低版本选择的值。</span><span class="sxs-lookup"><span data-stu-id="064eb-142">The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version.</span></span>
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text=""新建通用 Windows 平台项目"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-gettingstarted-projecttype.png":::
+       <span data-ttu-id="71ef6-142">"新建通用 Windows 平台项目"对话框，包含"目标版本"和"最低版本"的选定值。</span><span class="sxs-lookup"><span data-stu-id="71ef6-142">The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version.</span></span>
     :::image-end:::  
     
-1.  <span data-ttu-id="064eb-143">在解决方案资源管理器中，将生成两个项目。</span><span class="sxs-lookup"><span data-stu-id="064eb-143">In the Solution Explorer, two projects are generated.</span></span>  
-    *   <span data-ttu-id="064eb-144">\*\*你的项目名称 (桌面) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="064eb-144">**Your project name (Desktop)**.</span></span>  <span data-ttu-id="064eb-145">桌面项目包含应用的代码。</span><span class="sxs-lookup"><span data-stu-id="064eb-145">The Desktop project contains the code for your app.</span></span>  <span data-ttu-id="064eb-146">该文件 `App.xaml.cs` 定义一 `Application` 个表示应用实例的类。</span><span class="sxs-lookup"><span data-stu-id="064eb-146">The `App.xaml.cs` file defines an `Application` class that represents your app instance.</span></span>  <span data-ttu-id="064eb-147">`MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。</span><span class="sxs-lookup"><span data-stu-id="064eb-147">The `MainWindow.xaml.cs` file defines a `MainWindow` class that represents the main window displayed by your app instance.</span></span>  <span data-ttu-id="064eb-148">类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。</span><span class="sxs-lookup"><span data-stu-id="064eb-148">The classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.</span></span>  
-    *   <span data-ttu-id="064eb-149">\*\*你的项目名称 (包) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="064eb-149">**Your project name (Package)**.</span></span>  <span data-ttu-id="064eb-150">包项目是一个 Windows 应用程序打包项目，配置为将应用构建到 MSIX 包中以用于部署。</span><span class="sxs-lookup"><span data-stu-id="064eb-150">The Package project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment.</span></span>  <span data-ttu-id="064eb-151">该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。</span><span class="sxs-lookup"><span data-stu-id="064eb-151">The project contains the package manifest for your app, and is the startup project for your solution by default.</span></span>  <span data-ttu-id="064eb-152">有关详细信息，请导航到在 Windows [10][UwpSchemasAppxpackageUapmanifestRoot]的 Visual Studio 和程序包清单架构参考中为[MSIX 打包][WindowsMsixDesktopToUwpPackagingDotNet]设置桌面应用程序。</span><span class="sxs-lookup"><span data-stu-id="064eb-152">For more information, navigate to [Set up your desktop application for MSIX packaging in Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] and [Package manifest schema reference for Windows 10][UwpSchemasAppxpackageUapmanifestRoot].</span></span>  
-1.  <span data-ttu-id="064eb-153">在解决方案资源管理器中，若要显示代码，请打开 `MainWindow.xaml` 文件。</span><span class="sxs-lookup"><span data-stu-id="064eb-153">In the Solution Explorer, to display the code, open the `MainWindow.xaml` file.</span></span>  <span data-ttu-id="064eb-154">若要运行项目并显示带按钮的窗口，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="064eb-154">To run your project and display a window with a button, select `F5`.</span></span>  
+1.  <span data-ttu-id="71ef6-143">在"解决方案资源管理器"中，将生成两个项目。</span><span class="sxs-lookup"><span data-stu-id="71ef6-143">In the Solution Explorer, two projects are generated.</span></span>  
+    *   <span data-ttu-id="71ef6-144">\*\*你的项目名称 (桌面) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="71ef6-144">**Your project name (Desktop)**.</span></span>  <span data-ttu-id="71ef6-145">桌面项目包含你的应用的代码。</span><span class="sxs-lookup"><span data-stu-id="71ef6-145">The Desktop project contains the code for your app.</span></span>  <span data-ttu-id="71ef6-146">`App.xaml.cs`该文件定义一个 `Application` 表示应用实例的类。</span><span class="sxs-lookup"><span data-stu-id="71ef6-146">The `App.xaml.cs` file defines an `Application` class that represents your app instance.</span></span>  <span data-ttu-id="71ef6-147">`MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。</span><span class="sxs-lookup"><span data-stu-id="71ef6-147">The `MainWindow.xaml.cs` file defines a `MainWindow` class that represents the main window displayed by your app instance.</span></span>  <span data-ttu-id="71ef6-148">这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。</span><span class="sxs-lookup"><span data-stu-id="71ef6-148">The classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.</span></span>  
+    *   <span data-ttu-id="71ef6-149">\*\*你的项目名称 (包) \*\*。</span><span class="sxs-lookup"><span data-stu-id="71ef6-149">**Your project name (Package)**.</span></span>  <span data-ttu-id="71ef6-150">包项目是一个 Windows 应用程序打包项目，配置为将应用生成到 MSIX 包中进行部署。</span><span class="sxs-lookup"><span data-stu-id="71ef6-150">The Package project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment.</span></span>  <span data-ttu-id="71ef6-151">该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。</span><span class="sxs-lookup"><span data-stu-id="71ef6-151">The project contains the package manifest for your app, and is the startup project for your solution by default.</span></span>  <span data-ttu-id="71ef6-152">有关详细信息，请导航到在 Windows 10 的程序包清单Visual Studio设置 [MSIX][WindowsMsixDesktopToUwpPackagingDotNet] 打包 [的桌面应用程序][UwpSchemasAppxpackageUapmanifestRoot]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-152">For more information, navigate to [Set up your desktop application for MSIX packaging in Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] and [Package manifest schema reference for Windows 10][UwpSchemasAppxpackageUapmanifestRoot].</span></span>  
+1.  <span data-ttu-id="71ef6-153">在"解决方案资源管理器"中，若要显示代码，请打开 `MainWindow.xaml` 文件。</span><span class="sxs-lookup"><span data-stu-id="71ef6-153">In the Solution Explorer, to display the code, open the `MainWindow.xaml` file.</span></span>  <span data-ttu-id="71ef6-154">若要运行项目并显示带按钮的窗口，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-154">To run your project and display a window with a button, select `F5`.</span></span>  
     
-## <span data-ttu-id="064eb-155">步骤 2 - 向项目添加 WebView2 控件</span><span class="sxs-lookup"><span data-stu-id="064eb-155">Step 2 - Add a WebView2 control to your project</span></span>  
+## <a name="step-2---add-a-webview2-control-to-your-project"></a><span data-ttu-id="71ef6-155">步骤 2 - 将 WebView2 控件添加到项目中</span><span class="sxs-lookup"><span data-stu-id="71ef6-155">Step 2 - Add a WebView2 control to your project</span></span>  
 
-<span data-ttu-id="064eb-156">向项目添加 WebView2 控件。</span><span class="sxs-lookup"><span data-stu-id="064eb-156">Add a WebView2 control to your project.</span></span>  
+<span data-ttu-id="71ef6-156">将 WebView2 控件添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="71ef6-156">Add a WebView2 control to your project.</span></span>  
 
-1.  <span data-ttu-id="064eb-157">在 `MainWindow.xaml` 文件中，若要添加 WebView2 XAML 命名空间，在标记内插入以下 `<Window/>` 行。</span><span class="sxs-lookup"><span data-stu-id="064eb-157">In the `MainWindow.xaml` file, to add the WebView2 XAML namespace, insert the following line inside the `<Window/>` tag.</span></span>  
+1.  <span data-ttu-id="71ef6-157">在 `MainWindow.xaml` 文件中，若要添加 WebView2 XAML 命名空间，在 标记内插入以下 `<Window/>` 行。</span><span class="sxs-lookup"><span data-stu-id="71ef6-157">In the `MainWindow.xaml` file, to add the WebView2 XAML namespace, insert the following line inside the `<Window/>` tag.</span></span>  
     
     ```xml
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     ```  
     
-    <span data-ttu-id="064eb-158">确保你的代码 `MainWindow.xaml` 与以下代码段类似。</span><span class="sxs-lookup"><span data-stu-id="064eb-158">Ensure your code in `MainWindow.xaml` is similar to the following code snippet.</span></span>  
+    <span data-ttu-id="71ef6-158">确保 中的 `MainWindow.xaml` 代码类似于以下代码段。</span><span class="sxs-lookup"><span data-stu-id="71ef6-158">Ensure your code in `MainWindow.xaml` is similar to the following code snippet.</span></span>  
     
     ```xml
     <Window
@@ -105,7 +104,7 @@ ms.locfileid: "11306150"
     </Window>
     ```  
     
-1.  <span data-ttu-id="064eb-159">若要添加 WebView2 控件，请将标记 `<StackPanel>` 替换为以下代码段。</span><span class="sxs-lookup"><span data-stu-id="064eb-159">To add the WebView2 control, replace the `<StackPanel>` tags with the following code snippet.</span></span>  <span data-ttu-id="064eb-160">该属性 `Source` 设置 WebView2 控件中显示的初始 URI。</span><span class="sxs-lookup"><span data-stu-id="064eb-160">The `Source` property sets the initial URI displayed in the WebView2 control.</span></span>  
+1.  <span data-ttu-id="71ef6-159">若要添加 WebView2 控件，请将 `<StackPanel>` 标记替换为以下代码段。</span><span class="sxs-lookup"><span data-stu-id="71ef6-159">To add the WebView2 control, replace the `<StackPanel>` tags with the following code snippet.</span></span>  <span data-ttu-id="71ef6-160">属性 `Source` 设置 WebView2 控件中显示的初始 URI。</span><span class="sxs-lookup"><span data-stu-id="71ef6-160">The `Source` property sets the initial URI displayed in the WebView2 control.</span></span>  
     
     ```xml  
     <Grid>
@@ -125,30 +124,30 @@ ms.locfileid: "11306150"
     </Grid>
     ```  
     
-1.  <span data-ttu-id="064eb-161">在 `MainWindow.xaml.cs` 文件中，注释掉以下行。</span><span class="sxs-lookup"><span data-stu-id="064eb-161">In the `MainWindow.xaml.cs` file, comment out the following line.</span></span>
+1.  <span data-ttu-id="71ef6-161">在 `MainWindow.xaml.cs` 文件中，注释掉以下行。</span><span class="sxs-lookup"><span data-stu-id="71ef6-161">In the `MainWindow.xaml.cs` file, comment out the following line.</span></span>
     
     ```xml
         // myButton.Content = "Clicked";     
     ```  
     
-1.  <span data-ttu-id="064eb-162">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="064eb-162">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="064eb-163">确保显示 WebView2 控件 [https://www.microsoft.com][|::ref1::|Main] 。</span><span class="sxs-lookup"><span data-stu-id="064eb-163">Ensure your WebView2 control displays [https://www.microsoft.com][|::ref1::|Main].</span></span>  
+1.  <span data-ttu-id="71ef6-162">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-162">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="71ef6-163">确保 WebView2 控件显示 [https://www.microsoft.com][|::ref1::|Main] 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-163">Ensure your WebView2 control displays [https://www.microsoft.com][|::ref1::|Main].</span></span>  
     
-    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="WebView2 控件显示microsoft.com" lightbox="./media/winui-gettingstarted-part3.png":::
-       <span data-ttu-id="064eb-165">WebView2 控件显示microsoft.com</span><span class="sxs-lookup"><span data-stu-id="064eb-165">WebView2 control displays microsoft.com</span></span>  
+    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="WebView2 控件显示 microsoft.com" lightbox="./media/winui-gettingstarted-part3.png":::
+       <span data-ttu-id="71ef6-165">WebView2 控件显示 microsoft.com</span><span class="sxs-lookup"><span data-stu-id="71ef6-165">WebView2 control displays microsoft.com</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="064eb-166">步骤 3 - 添加导航控件</span><span class="sxs-lookup"><span data-stu-id="064eb-166">Step 3 - Add navigation controls</span></span>  
+## <a name="step-3---add-navigation-controls"></a><span data-ttu-id="71ef6-166">步骤 3 - 添加导航控件</span><span class="sxs-lookup"><span data-stu-id="71ef6-166">Step 3 - Add navigation controls</span></span>  
 
-<span data-ttu-id="064eb-167">若要允许用户控制 WebView2 控件中显示的网页，请向应用添加地址栏。</span><span class="sxs-lookup"><span data-stu-id="064eb-167">To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to your app.</span></span>  
+<span data-ttu-id="71ef6-167">若要允许用户控制 WebView2 控件中显示的网页，请向应用添加地址栏。</span><span class="sxs-lookup"><span data-stu-id="71ef6-167">To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to your app.</span></span>  
 
-1.  <span data-ttu-id="064eb-168">在 `MainWindow.xaml` 文件中，将以下代码段复制并粘贴到 `<Grid>` 包含该元素 `WebView2` 的元素中。</span><span class="sxs-lookup"><span data-stu-id="064eb-168">In the `MainWindow.xaml` file, copy and paste the following code snippet inside the `<Grid>` element that contains the `WebView2` element.</span></span>  
+1.  <span data-ttu-id="71ef6-168">在文件中，将以下代码段复制并粘贴 `MainWindow.xaml` 到包含 `<Grid>` 元素的元素 `WebView2` 中。</span><span class="sxs-lookup"><span data-stu-id="71ef6-168">In the `MainWindow.xaml` file, copy and paste the following code snippet inside the `<Grid>` element that contains the `WebView2` element.</span></span>  
     
     ```xml
         <TextBox Name="addressBar" Grid.Column="0"/>
         <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
     ```  
     
-    <span data-ttu-id="064eb-169">确保 `<Grid>` 该文件中的 `MainWindow.xaml` 元素类似于以下代码段。</span><span class="sxs-lookup"><span data-stu-id="064eb-169">Ensure your `<Grid>` element in the `MainWindow.xaml` file is similar to the following code snippet.</span></span>  
+    <span data-ttu-id="71ef6-169">确保 `<Grid>` 该文件中的 `MainWindow.xaml` 元素类似于以下代码段。</span><span class="sxs-lookup"><span data-stu-id="71ef6-169">Ensure your `<Grid>` element in the `MainWindow.xaml` file is similar to the following code snippet.</span></span>  
     
     ```xml
     <Grid>
@@ -171,7 +170,7 @@ ms.locfileid: "11306150"
     </Grid>
     ```  
     
-1.  <span data-ttu-id="064eb-170">在 `MainWindow.xaml.cs` 文件中，将以下代码段复制到 ，将 WebView2 控件导航到地址栏中 `myButton_Click` 输入的 URL。</span><span class="sxs-lookup"><span data-stu-id="064eb-170">In the `MainWindow.xaml.cs` file, copy the following code snippet into `myButton_Click`, which navigates the WebView2 control to the URL entered in the address bar.</span></span>  
+1.  <span data-ttu-id="71ef6-170">在 文件中，将以下代码段复制到 中，该代码段将 WebView2 控件导航到地址栏中 `MainWindow.xaml.cs` `myButton_Click` 输入的 URL。</span><span class="sxs-lookup"><span data-stu-id="71ef6-170">In the `MainWindow.xaml.cs` file, copy the following code snippet into `myButton_Click`, which navigates the WebView2 control to the URL entered in the address bar.</span></span>  
     
     ```csharp
     private void myButton_Click(object sender, RoutedEventArgs e)
@@ -188,18 +187,18 @@ ms.locfileid: "11306150"
     }
     ```  
     
-    <span data-ttu-id="064eb-171">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="064eb-171">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="064eb-172">在地址栏中输入新 URL，然后选择"**转到"。**</span><span class="sxs-lookup"><span data-stu-id="064eb-172">Enter a new URL in the address bar, and then choose **Go**.</span></span>  <span data-ttu-id="064eb-173">例如，输入 `https://www.bing.com` 。</span><span class="sxs-lookup"><span data-stu-id="064eb-173">For example, enter `https://www.bing.com`.</span></span>  
+    <span data-ttu-id="71ef6-171">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-171">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="71ef6-172">在地址栏中输入新 URL，然后选择"转到 **"。**</span><span class="sxs-lookup"><span data-stu-id="71ef6-172">Enter a new URL in the address bar, and then choose **Go**.</span></span>  <span data-ttu-id="71ef6-173">例如，输入 `https://www.bing.com` 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-173">For example, enter `https://www.bing.com`.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="064eb-174">确保在地址栏中输入完整 URL。</span><span class="sxs-lookup"><span data-stu-id="064eb-174">Ensure you enter complete URLs in the address bar.</span></span>  `ArgumentException` <span data-ttu-id="064eb-175">如果 URL 不以 或 为起始，则会引发 `http://` 异常 `https://` 。</span><span class="sxs-lookup"><span data-stu-id="064eb-175">exceptions are thrown if the URL does not start with `http://` or `https://`.</span></span>  
+    > <span data-ttu-id="71ef6-174">确保在地址栏中输入完整 URL。</span><span class="sxs-lookup"><span data-stu-id="71ef6-174">Ensure you enter complete URLs in the address bar.</span></span>  `ArgumentException` <span data-ttu-id="71ef6-175">如果 URL 不以 或 为起始，则会引发 `http://` 异常 `https://` 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-175">exceptions are thrown if the URL does not start with `http://` or `https://`.</span></span>  
     
     :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="bing.com" lightbox="./media/winui-gettingstarted-bing.png":::
-       <span data-ttu-id="064eb-177">bing.com</span><span class="sxs-lookup"><span data-stu-id="064eb-177">bing.com</span></span>  
+       <span data-ttu-id="71ef6-177">bing.com</span><span class="sxs-lookup"><span data-stu-id="71ef6-177">bing.com</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="064eb-178">步骤 4 - 导航事件</span><span class="sxs-lookup"><span data-stu-id="064eb-178">Step 4 - Navigation events</span></span>  
+## <a name="step-4---navigation-events"></a><span data-ttu-id="71ef6-178">步骤 4 - 导航事件</span><span class="sxs-lookup"><span data-stu-id="71ef6-178">Step 4 - Navigation events</span></span>  
 
-<span data-ttu-id="064eb-179">承载 WebView2 控件的应用会侦听 WebView2 控件在网页导航期间引发以下事件。</span><span class="sxs-lookup"><span data-stu-id="064eb-179">Apps that host WebView2 controls listen for the following events that are raised by WebView2 controls during webpage navigation.</span></span>  
+<span data-ttu-id="71ef6-179">承载 WebView2 控件的应用侦听 WebView2 控件在网页导航过程中引发以下事件。</span><span class="sxs-lookup"><span data-stu-id="71ef6-179">Apps that host WebView2 controls listen for the following events that are raised by WebView2 controls during webpage navigation.</span></span>  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -208,17 +207,17 @@ ms.locfileid: "11306150"
 *   `NavigationCompleted`  
 
 > [!NOTE]
-> <span data-ttu-id="064eb-180">如果 HTTP 重定向发生，则一行 `NavigationStarting` 中有多个事件。</span><span class="sxs-lookup"><span data-stu-id="064eb-180">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.</span></span>  
+> <span data-ttu-id="71ef6-180">如果发生 HTTP 重定向，则一行 `NavigationStarting` 中有多个事件。</span><span class="sxs-lookup"><span data-stu-id="71ef6-180">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.</span></span>  
 
-<span data-ttu-id="064eb-181">有关详细信息，请导航到 [导航事件][Webviews2ConceptsNavigationEvents]。</span><span class="sxs-lookup"><span data-stu-id="064eb-181">For more information, navigate to [Navigation Events][Webviews2ConceptsNavigationEvents].</span></span>  
+<span data-ttu-id="71ef6-181">有关详细信息，请导航到["导航事件"。][Webviews2ConceptsNavigationEvents]</span><span class="sxs-lookup"><span data-stu-id="71ef6-181">For more information, navigate to [Navigation Events][Webviews2ConceptsNavigationEvents].</span></span>  
 
-<span data-ttu-id="064eb-182">发生错误时，将引发以下事件，并可能导航到错误网页。</span><span class="sxs-lookup"><span data-stu-id="064eb-182">When errors occur, the following events are raised and may navigate to an error webpage.</span></span>  
+<span data-ttu-id="71ef6-182">发生错误时，将引发以下事件，并可能导航到错误网页。</span><span class="sxs-lookup"><span data-stu-id="71ef6-182">When errors occur, the following events are raised and may navigate to an error webpage.</span></span>  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
      
-<span data-ttu-id="064eb-183">作为如何使用事件的示例，请为取消任何非 HTTPS 请求注册 `NavigationStarting` 处理程序。</span><span class="sxs-lookup"><span data-stu-id="064eb-183">As an example of how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests.</span></span>  <span data-ttu-id="064eb-184">在 `MainWindow.xaml.cs` 中，修改构造函数以注册 `EnsureHttps` ，并添加 `EnsureHttps` 函数，以便它匹配以下代码段。</span><span class="sxs-lookup"><span data-stu-id="064eb-184">In `MainWindow.xaml.cs`, modify the constructor to register `EnsureHttps`, and add the `EnsureHttps` function so that it matches the following code snippet.</span></span>  
+<span data-ttu-id="71ef6-183">作为如何使用事件的示例，请注册用于取消任何非 `NavigationStarting` HTTPS 请求的处理程序。</span><span class="sxs-lookup"><span data-stu-id="71ef6-183">As an example of how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests.</span></span>  <span data-ttu-id="71ef6-184">在 `MainWindow.xaml.cs` 中，修改构造函数以注册 `EnsureHttps` ，并添加 `EnsureHttps` 函数，以便与以下代码段匹配。</span><span class="sxs-lookup"><span data-stu-id="71ef6-184">In `MainWindow.xaml.cs`, modify the constructor to register `EnsureHttps`, and add the `EnsureHttps` function so that it matches the following code snippet.</span></span>  
 
 ```csharp
 public MainWindow()
@@ -241,16 +240,16 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 }
 ```  
 
-<span data-ttu-id="064eb-185">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="064eb-185">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="064eb-186">确保阻止导航到 HTTP 网站，并允许 HTTPS 网站导航。</span><span class="sxs-lookup"><span data-stu-id="064eb-186">Ensure navigation is blocked to HTTP sites, and allowed for HTTPS sites.</span></span>  
+<span data-ttu-id="71ef6-185">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-185">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="71ef6-186">确保阻止导航到 HTTP 网站，并且允许 HTTPS 网站导航。</span><span class="sxs-lookup"><span data-stu-id="71ef6-186">Ensure navigation is blocked to HTTP sites, and allowed for HTTPS sites.</span></span>  
 
-## <span data-ttu-id="064eb-187">步骤 5 - 脚本</span><span class="sxs-lookup"><span data-stu-id="064eb-187">Step 5 - Scripting</span></span>  
+## <a name="step-5---scripting"></a><span data-ttu-id="71ef6-187">步骤 5 - 脚本</span><span class="sxs-lookup"><span data-stu-id="71ef6-187">Step 5 - Scripting</span></span>  
 
-<span data-ttu-id="064eb-188">在运行时，可以使用主机应用将 JavaScript 代码注入 WebView2 控件。</span><span class="sxs-lookup"><span data-stu-id="064eb-188">You may use host apps to inject JavaScript code into WebView2 controls at runtime.</span></span>  <span data-ttu-id="064eb-189">你可以让 WebView 运行任意 JavaScript 或添加初始化脚本。</span><span class="sxs-lookup"><span data-stu-id="064eb-189">You may task WebView to run arbitrary JavaScript or add initialization scripts.</span></span>  <span data-ttu-id="064eb-190">在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。</span><span class="sxs-lookup"><span data-stu-id="064eb-190">The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.</span></span>  <span data-ttu-id="064eb-191">注入的 JavaScript 以特定计时运行。</span><span class="sxs-lookup"><span data-stu-id="064eb-191">The injected JavaScript is run with specific timing.</span></span>  
+<span data-ttu-id="71ef6-188">你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。</span><span class="sxs-lookup"><span data-stu-id="71ef6-188">You may use host apps to inject JavaScript code into WebView2 controls at runtime.</span></span>  <span data-ttu-id="71ef6-189">你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。</span><span class="sxs-lookup"><span data-stu-id="71ef6-189">You may task WebView to run arbitrary JavaScript or add initialization scripts.</span></span>  <span data-ttu-id="71ef6-190">在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。</span><span class="sxs-lookup"><span data-stu-id="71ef6-190">The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.</span></span>  <span data-ttu-id="71ef6-191">注入的 JavaScript 以特定计时运行。</span><span class="sxs-lookup"><span data-stu-id="71ef6-191">The injected JavaScript is run with specific timing.</span></span>  
 
-*   <span data-ttu-id="064eb-192">创建全局对象后运行它。</span><span class="sxs-lookup"><span data-stu-id="064eb-192">Run it after the creation of the global object.</span></span>  
-*   <span data-ttu-id="064eb-193">在 HTML 文档中包含的任何其他脚本运行之前运行它。</span><span class="sxs-lookup"><span data-stu-id="064eb-193">Run it before any other script included in the HTML document is run.</span></span>  
+*   <span data-ttu-id="71ef6-192">创建全局对象后运行它。</span><span class="sxs-lookup"><span data-stu-id="71ef6-192">Run it after the creation of the global object.</span></span>  
+*   <span data-ttu-id="71ef6-193">在运行 HTML 文档中包含的任何其他脚本之前运行它。</span><span class="sxs-lookup"><span data-stu-id="71ef6-193">Run it before any other script included in the HTML document is run.</span></span>  
 
-<span data-ttu-id="064eb-194">例如，添加在用户导航到非 HTTPS 网站时发送警报的脚本。</span><span class="sxs-lookup"><span data-stu-id="064eb-194">As an example, add scripts that send an alert when a user navigates to non-HTTPS sites.</span></span>  <span data-ttu-id="064eb-195">修改 `EnsureHttps` 函数以将脚本注入使用 [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]的 Web 内容。</span><span class="sxs-lookup"><span data-stu-id="064eb-195">Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].</span></span>  
+<span data-ttu-id="71ef6-194">例如，添加在用户导航到非 HTTPS 网站时发送警报的脚本。</span><span class="sxs-lookup"><span data-stu-id="71ef6-194">As an example, add scripts that send an alert when a user navigates to non-HTTPS sites.</span></span>  <span data-ttu-id="71ef6-195">修改 `EnsureHttps` 函数以将脚本注入到使用 [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]的 Web 内容中。</span><span class="sxs-lookup"><span data-stu-id="71ef6-195">Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].</span></span>  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -268,31 +267,33 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 }
 ```  
 
-<span data-ttu-id="064eb-196">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="064eb-196">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="064eb-197">确保应用在导航到任何非 HTTPS 网站时显示警报。</span><span class="sxs-lookup"><span data-stu-id="064eb-197">Ensure your app displays an alert when you navigate to any non-HTTPS websites.</span></span>  
+<span data-ttu-id="71ef6-196">若要生成并运行项目，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="71ef6-196">To build and run your project, select `F5`.</span></span>  <span data-ttu-id="71ef6-197">确保应用在导航到任何非 HTTPS 网站时显示警报。</span><span class="sxs-lookup"><span data-stu-id="71ef6-197">Ensure your app displays an alert when you navigate to any non-HTTPS websites.</span></span>  
 
 :::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="WebView2 控件显示警报对话框" lightbox="./media/winui-gettingstarted-script.png":::
-   <span data-ttu-id="064eb-199">WebView2 控件显示警报对话框</span><span class="sxs-lookup"><span data-stu-id="064eb-199">WebView2 control displays an alert dialog</span></span>
+   <span data-ttu-id="71ef6-199">WebView2 控件显示警报对话框</span><span class="sxs-lookup"><span data-stu-id="71ef6-199">WebView2 control displays an alert dialog</span></span>
 :::image-end:::  
 
-<span data-ttu-id="064eb-200">恭喜！你生成了第一个 WebView2 应用。</span><span class="sxs-lookup"><span data-stu-id="064eb-200">Congratulations, you built your first WebView2 app.</span></span>  
+<span data-ttu-id="71ef6-200">恭喜！你生成了第一个 WebView2 应用。</span><span class="sxs-lookup"><span data-stu-id="71ef6-200">Congratulations, you built your first WebView2 app.</span></span>  
 
-## <span data-ttu-id="064eb-201">后续步骤</span><span class="sxs-lookup"><span data-stu-id="064eb-201">Next steps</span></span>  
+## <a name="next-steps"></a><span data-ttu-id="71ef6-201">后续步骤</span><span class="sxs-lookup"><span data-stu-id="71ef6-201">Next steps</span></span>  
 
-<span data-ttu-id="064eb-202">若要继续了解有关 WebView2 的更多内容，请导航到以下资源。</span><span class="sxs-lookup"><span data-stu-id="064eb-202">To continue learning more about WebView2, navigate to the following resources.</span></span>  
+<span data-ttu-id="71ef6-202">若要继续了解有关 WebView2 的更多内容，请导航到以下资源。</span><span class="sxs-lookup"><span data-stu-id="71ef6-202">To continue learning more about WebView2, navigate to the following resources.</span></span>  
 
-### <span data-ttu-id="064eb-203">另请参阅</span><span class="sxs-lookup"><span data-stu-id="064eb-203">See also</span></span>  
+### <a name="see-also"></a><span data-ttu-id="71ef6-203">另请参阅</span><span class="sxs-lookup"><span data-stu-id="71ef6-203">See also</span></span>  
 
-*   <span data-ttu-id="064eb-204">有关 WebView2 功能的综合示例，请导航到[WebView2Samples。][GithubMicrosoftedgeWebview2samplesMain]</span><span class="sxs-lookup"><span data-stu-id="064eb-204">For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].</span></span>  
-*   <span data-ttu-id="064eb-205">有关 WebView2 的信息，请导航到 [WebView2 资源][Webview2IndexNextSteps]。</span><span class="sxs-lookup"><span data-stu-id="064eb-205">For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].</span></span>  
+*   <span data-ttu-id="71ef6-204">有关 WebView2 功能的综合示例，请导航到 [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-204">For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].</span></span>  
+*   <span data-ttu-id="71ef6-205">有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]</span><span class="sxs-lookup"><span data-stu-id="71ef6-205">For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="064eb-206">WinRT CoreWebView2 对象在发布 WebView2 API 时可能不可用。</span><span class="sxs-lookup"><span data-stu-id="064eb-206">The WinRT CoreWebView2 object may not be available with the release of the WebView2 API.</span></span>  <span data-ttu-id="064eb-207">若要了解哪些 API 可用于 WebView2 控件，请导航到 [WebView2 Spec，][GithubMicrosoftUiXamlSpecsWebview2] 查看可用的 API 列表。</span><span class="sxs-lookup"><span data-stu-id="064eb-207">To understand which APIs are available to WebView2 controls, navigate to [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available.</span></span>  
+    > <span data-ttu-id="71ef6-206">WinRT CoreWebView2 对象在发布 WebView2 API 时可能不可用。</span><span class="sxs-lookup"><span data-stu-id="71ef6-206">The WinRT CoreWebView2 object may not be available with the release of the WebView2 API.</span></span>  <span data-ttu-id="71ef6-207">若要了解哪些 API 可用于 WebView2 控件，请导航到 [WebView2 Spec，][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] 了解可用的 API 列表。</span><span class="sxs-lookup"><span data-stu-id="71ef6-207">To understand which APIs are available to WebView2 controls, navigate to [WebView2 Spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available.</span></span>  
     
-*   <span data-ttu-id="064eb-208">有关 WebView2 API 的详细信息，请导航到 [WebView2 规范][GithubMicrosoftUiXamlSpecsWebview2]。</span><span class="sxs-lookup"><span data-stu-id="064eb-208">For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2].</span></span>  
+*   <span data-ttu-id="71ef6-208">有关 WebView2 API 的详细信息，请导航到 [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。</span><span class="sxs-lookup"><span data-stu-id="71ef6-208">For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].</span></span>  
     
-## <span data-ttu-id="064eb-209">与 Microsoft Edge WebView 团队联系</span><span class="sxs-lookup"><span data-stu-id="064eb-209">Getting in touch with the Microsoft Edge WebView team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a><span data-ttu-id="71ef6-209">与 Microsoft Edge WebView 团队联系</span><span class="sxs-lookup"><span data-stu-id="71ef6-209">Getting in touch with the Microsoft Edge WebView team</span></span>  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+<span data-ttu-id="71ef6-210">若要发送特定于 WinUI 的功能请求或 Bug，请导航到"问题[- microsoft/microsoft-ui-xaml"，][GithubMicrosoftMicrosoftUiXamlIssues]然后选择"**新问题"。**</span><span class="sxs-lookup"><span data-stu-id="71ef6-210">To send your WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and choose **New issue**.</span></span>  
 
 <!-- links -->  
 
@@ -305,14 +306,15 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Windows 10 应用商店的程序包清单架构|Microsoft Docs"  
 
-[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用"管理扩展"对话框安装 - 管理扩展Visual Studio |Microsoft Docs"  
+[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用"管理扩展"对话框安装 - 管理 Visual Studio |Microsoft Docs"  
 
-[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "配置你的开发环境 - Windows UI Library 3.0 Preview 1 (2020 年 5 月) |Microsoft Docs"  
+[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "配置开发环境 - Windows UI Library 3.0 Preview 1 (2020 年 5 月) |Microsoft Docs"  
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows 社区Toolkit文档|Microsoft Docs"  
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "将桌面应用程序设置为 MSIX 打包Visual Studio |Microsoft Docs"  
-[WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "为设备启用开发|Microsoft Docs"  
+[WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "启用设备进行开发|Microsoft Docs"  
 
-[GithubMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 规范 - microsoft/microsoft-ui-xaml-specs |GitHub"  
+[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "问题 - microsoft/microsoft-ui-xaml |GitHub"  
+[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 规范 - microsoft/microsoft-ui-xaml-specs |GitHub"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
@@ -329,7 +331,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3 项目模板|Visual Studio市场"  
+[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3 项目|Visual Studio Marketplace"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
