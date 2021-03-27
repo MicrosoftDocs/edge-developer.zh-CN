@@ -3,19 +3,19 @@ description: 了解如何使用 Microsoft Edge WebView2 Chromium DevTools 协议
 title: 在 WebView2 中使用 Chrome DevTools 协议
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Chrome DevTools 协议
-ms.openlocfilehash: 0f7a2dd4bb3b1621e854cd4c0c5410e64d3c03ff
-ms.sourcegitcommit: 0ef5bb3933cde8a466f2931b824f07b4995cfe5e
+ms.openlocfilehash: 86846ee195406f78d5fd7c369f375ed1e359101a
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "11409306"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461197"
 ---
-# <a name="use-chromium-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chromium DevTools 协议  
+# <a name="use-chromium-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chromium 开发工具协议  
 
 [Chromium DevTools 协议][GitHubChromedevtoolsDevtoolsProtocol]提供用于检测、检查、调试和配置文件基于 Chromium 的浏览器的 API。  Chromium DevTools 协议是 Microsoft Edge \ (Chromium\) DevTools 的基础。  对 WebView2 平台中未实现的功能使用 Chromium DevTools 协议。  有关 Chromium DevTools 协议功能的信息，请导航到 [Chromium DevTools 协议][GitHubChromedevtoolsDevtoolsProtocol]。  
 
@@ -26,7 +26,7 @@ ms.locfileid: "11409306"
 
 若要在 WebView2 中使用 Chromium DevTools 协议 API，请使用以下任一操作。  
 
-*   安装并使用 [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 程序包 \ (.NET\) 。  
+*   安装并使用 [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 程序包 \ (.NET\) 。  
 *   运行下列方法之一。  
     *   [.NET：CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString] [、GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]  
     *   Win32  [C/C++：CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod] [、ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]  
@@ -34,9 +34,9 @@ ms.locfileid: "11409306"
 ## <a name="use-devtoolsprotocolhelper-preview"></a>使用 DevToolsProtocolHelper (Preview) 
 
 > [!NOTE]
-> [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 程序包目前处于技术预览阶段。  在预览版中，请勿在生产应用中使用程序包。
+> [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 程序包目前处于技术预览阶段。  在预览版中，请勿在生产应用中使用程序包。
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] 是 WebView2 团队创建的 NuGet 包，可轻松访问 Chromium DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chromium DevTools 协议中使用地理位置功能。  你可以遵循类似的模式来使用其他 Chromium DevTools 协议功能。  
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] 是 WebView2 团队创建的 NuGet 包，可轻松访问 Chromium DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chromium DevTools 协议中使用地理位置功能。  你可以遵循类似的模式来使用其他 Chromium DevTools 协议功能。  
 
 ## <a name="step-1-create-a-webpage-to-find-your-geolocation"></a>步骤 1：创建网页以查找地理位置  
 
@@ -200,4 +200,4 @@ WebView2 团队没有 Chromium DevTools 协议。
 
 [ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "错误报告|Chromium Bug"  
 
-[NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension |NuGet QA 库"  
+[NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension |NuGet QA 库"  

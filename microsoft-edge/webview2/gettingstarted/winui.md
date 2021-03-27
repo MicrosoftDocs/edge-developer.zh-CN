@@ -1,57 +1,56 @@
 ---
 description: 适用于 WinUI 应用的 WebView2 入门指南
-title: 适用于 WinUI 应用的 WebView2 入门
+title: WinUI 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET
-ms.openlocfilehash: 5188a735eaf635c3b3bc0eead6f4ee4f3a83f1c4
-ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
+keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
+ms.openlocfilehash: 52d84afb6f9fe1e120f75525b2669a797309fdfe
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "11306150"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461204"
 ---
-# WinUI 3 预览版中的 WebView2 (入门)   
+# <a name="getting-started-with-webview2-in-winui-3-preview"></a>WinUI 3 预览版中的 WebView2 (入门)   
 
-本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  你的第一个 WebView2 应用使用 WinUI3。  有关各个 API 详细信息，请导航到 [API 参考][GithubMicrosoftUiXamlSpecsWebview2]。  
+本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  你的第一个 WebView2 应用使用 WinUI3。  有关各个 API 的信息，请导航到 [API 参考][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。  
 
-## 必备条件  
+## <a name="prerequisites"></a>必备条件  
 
-确保先安装以下先决条件列表，然后再继续。  
+请确保先安装以下先决条件列表，然后再继续。  
 
-*   [WebView2][Webview2Installer] 运行时或任何 [Microsoft Edge (chromium) ][MicrosoftedgeinsiderDownload] 安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上。  有关 Windows 10 详细信息，请导航到 [Windows 更新：常见问题][MicrosoftSupport12373]解答。  
+*   安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView2][Webview2Installer]运行时或任何[Microsoft Edge (Chromium][MicrosoftedgeinsiderDownload]) 非稳定渠道。  有关 Windows 10 详细信息，请导航到 [Windows 更新：常见问题][MicrosoftSupport12373]解答 。  
     
     > [!NOTE]
     > WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。  
     
-*   [Visual Studio][MicrosoftVisualstudioMain] 2019 版本 16.9 预览版。  有关详细信息，请导航到[Windows UI 库 3 预览版 3。][WindowsAppsWinui3ConfigureYourDevEnvironment]  
-    
-    *   在安装客户端时，请包含Visual Studio。  
-        *   .NET 桌面开发 \ (安装程序还安装 .NET 5\)   
+*   [Visual Studio][MicrosoftVisualstudioMain] 2019 版本 16.9 预览版。  有关详细信息，请导航到 [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment]。  
+    *   安装客户端时，请包含Visual Studio。  
+        *   .NET 桌面开发 \ (安装程序还会安装 .NET 5\)   
         *   通用 Windows 平台开发  
     *   若要生成 C++ 应用，还必须包括以下工作负载。  
         *   使用 C++ 进行桌面开发  
-        *   通用 Windows 平台 (C++ \ (v142\) 通用 Windows 平台工具可选组件。  有关详细信息， **请导航到** 右侧窗格中"通用 **Windows** 平台开发"部分下的"安装详细信息"。  
+        *   通用 Windows 平台工作负载的 C++ \ (v142\) 通用 Windows 平台工具可选组件。  有关详细信息，请 **导航到右侧** 窗格中"通用 **Windows** 平台开发"部分下的"安装详细信息"。  
         
-## 步骤 0 - Visual Studio设置  
+## <a name="step-0---visual-studio-settings"></a>步骤 0 - Visual Studio设置  
 
-1.  确保你的系统已启用 NuGet 程序包[源nuget.org。][NugetHome] 有关详细信息，请导航到[常见 NuGet][NugetConsumePackagesConfiguringNugetBehavior]配置[和 Windows 社区Toolkit。][WindowsCommunitytoolkit]  
-1.  下载并安装 [WinUI 3 Preview 3 VSIX 程序包][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]。  安装程序将 WinUI 3 项目模板和包含 WinUI 3 库的 NuGet 包添加到 Visual Studio 2019。  
+1.  确保你的系统已启用 NuGet 程序包源[nuget.org。][NugetHome] 有关详细信息，请导航到通用[NuGet 配置][NugetConsumePackagesConfiguringNugetBehavior]和[Windows 社区Toolkit。][WindowsCommunitytoolkit]  
+1.  下载并安装 [WinUI 3 Preview 3 VSIX 程序包][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]。  安装程序会将包含 WinUI 3 库的 WinUI 3 项目模板和 NuGet 包添加到 Visual Studio 2019。  
     
-    有关如何将程序包添加到加载项的说明Visual Studio导航到"查找和使用Visual Studio `VSIX` [扩展"][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]。
+    有关如何将程序包添加到应用 `VSIX` Visual Studio，请导航到查找和使用Visual Studio[扩展。][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]
     
-1.  若要访问开发人员特定的所有Visual Studio功能，请打开 [开发人员模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
+1.  若要访问所有特定于开发人员Visual Studio功能，请打开开发人员 [模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
     
-## 步骤 1 - 创建项目  
+## <a name="step-1---create-project"></a>步骤 1 - 创建项目  
 
 从包含单个主窗口的基本桌面项目开始。  
 
-1.  在Visual Studio中，**选择"新建项目"。**  
-1.  在项目下拉列表中，分别选择**C#** **、Windows****和 WinUI。**  
+1.  In Visual Studio， choose **Create a new project**.  
+1.  在项目下拉列表中，分别选择**C#、Windows**和******WinUI。**  
     
     :::image type="complex" source="./media/winui-gettingstarted-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio" lightbox="./media/winui-gettingstarted-selections.png":::
         使用项目创建一个新的 WinUI Visual Studio
@@ -61,30 +60,30 @@ ms.locfileid: "11306150"
 1.  输入项目名称。
 1.  根据需要选择选项。  
 1.  选择“**创建**”。  
-1.  在 **"新建通用 Windows 平台项目**"中，选择以下值，然后选择"**确定"。**  
+1.  在 **"新建通用 Windows 平台项目**"中，选择以下值，然后选择"确定 **"。**  
     *   **目标版本****：Windows 10 版本 1903 (版本 18362**) 或更高版本  
     *   **最低版本****：Windows 10 版本 1803 (版本 17134) **  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="新建通用 Windows 平台项目对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-gettingstarted-projecttype.png":::
-       "新建通用 Windows 平台项目"对话框，包含为目标版本和最低版本选择的值。
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text=""新建通用 Windows 平台项目"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-gettingstarted-projecttype.png":::
+       "新建通用 Windows 平台项目"对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::  
     
-1.  在解决方案资源管理器中，将生成两个项目。  
-    *   **你的项目名称 (桌面) 。 **  桌面项目包含应用的代码。  该文件 `App.xaml.cs` 定义一 `Application` 个表示应用实例的类。  `MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。  
-    *   **你的项目名称 (包) 。 **  包项目是一个 Windows 应用程序打包项目，配置为将应用构建到 MSIX 包中以用于部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到在 Windows [10][UwpSchemasAppxpackageUapmanifestRoot]的 Visual Studio 和程序包清单架构参考中为[MSIX 打包][WindowsMsixDesktopToUwpPackagingDotNet]设置桌面应用程序。  
-1.  在解决方案资源管理器中，若要显示代码，请打开 `MainWindow.xaml` 文件。  若要运行项目并显示带按钮的窗口，请选择 `F5` 。  
+1.  在"解决方案资源管理器"中，将生成两个项目。  
+    *   **你的项目名称 (桌面) 。 **  桌面项目包含你的应用的代码。  `App.xaml.cs`该文件定义一个 `Application` 表示应用实例的类。  `MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。  
+    *   **你的项目名称 (包) **。  包项目是一个 Windows 应用程序打包项目，配置为将应用生成到 MSIX 包中进行部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到在 Windows 10 的程序包清单Visual Studio设置 [MSIX][WindowsMsixDesktopToUwpPackagingDotNet] 打包 [的桌面应用程序][UwpSchemasAppxpackageUapmanifestRoot]。  
+1.  在"解决方案资源管理器"中，若要显示代码，请打开 `MainWindow.xaml` 文件。  若要运行项目并显示带按钮的窗口，请选择 `F5` 。  
     
-## 步骤 2 - 向项目添加 WebView2 控件  
+## <a name="step-2---add-a-webview2-control-to-your-project"></a>步骤 2 - 将 WebView2 控件添加到项目中  
 
-向项目添加 WebView2 控件。  
+将 WebView2 控件添加到项目中。  
 
-1.  在 `MainWindow.xaml` 文件中，若要添加 WebView2 XAML 命名空间，在标记内插入以下 `<Window/>` 行。  
+1.  在 `MainWindow.xaml` 文件中，若要添加 WebView2 XAML 命名空间，在 标记内插入以下 `<Window/>` 行。  
     
     ```xml
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     ```  
     
-    确保你的代码 `MainWindow.xaml` 与以下代码段类似。  
+    确保 中的 `MainWindow.xaml` 代码类似于以下代码段。  
     
     ```xml
     <Window
@@ -105,7 +104,7 @@ ms.locfileid: "11306150"
     </Window>
     ```  
     
-1.  若要添加 WebView2 控件，请将标记 `<StackPanel>` 替换为以下代码段。  该属性 `Source` 设置 WebView2 控件中显示的初始 URI。  
+1.  若要添加 WebView2 控件，请将 `<StackPanel>` 标记替换为以下代码段。  属性 `Source` 设置 WebView2 控件中显示的初始 URI。  
     
     ```xml  
     <Grid>
@@ -131,17 +130,17 @@ ms.locfileid: "11306150"
         // myButton.Content = "Clicked";     
     ```  
     
-1.  若要生成并运行项目，请选择 `F5` 。  确保显示 WebView2 控件 [https://www.microsoft.com][|::ref1::|Main] 。  
+1.  若要生成并运行项目，请选择 `F5` 。  确保 WebView2 控件显示 [https://www.microsoft.com][|::ref1::|Main] 。  
     
-    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="WebView2 控件显示microsoft.com" lightbox="./media/winui-gettingstarted-part3.png":::
-       WebView2 控件显示microsoft.com  
+    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="WebView2 控件显示 microsoft.com" lightbox="./media/winui-gettingstarted-part3.png":::
+       WebView2 控件显示 microsoft.com  
     :::image-end:::  
     
-## 步骤 3 - 添加导航控件  
+## <a name="step-3---add-navigation-controls"></a>步骤 3 - 添加导航控件  
 
 若要允许用户控制 WebView2 控件中显示的网页，请向应用添加地址栏。  
 
-1.  在 `MainWindow.xaml` 文件中，将以下代码段复制并粘贴到 `<Grid>` 包含该元素 `WebView2` 的元素中。  
+1.  在文件中，将以下代码段复制并粘贴 `MainWindow.xaml` 到包含 `<Grid>` 元素的元素 `WebView2` 中。  
     
     ```xml
         <TextBox Name="addressBar" Grid.Column="0"/>
@@ -171,7 +170,7 @@ ms.locfileid: "11306150"
     </Grid>
     ```  
     
-1.  在 `MainWindow.xaml.cs` 文件中，将以下代码段复制到 ，将 WebView2 控件导航到地址栏中 `myButton_Click` 输入的 URL。  
+1.  在 文件中，将以下代码段复制到 中，该代码段将 WebView2 控件导航到地址栏中 `MainWindow.xaml.cs` `myButton_Click` 输入的 URL。  
     
     ```csharp
     private void myButton_Click(object sender, RoutedEventArgs e)
@@ -188,7 +187,7 @@ ms.locfileid: "11306150"
     }
     ```  
     
-    若要生成并运行项目，请选择 `F5` 。  在地址栏中输入新 URL，然后选择"**转到"。**  例如，输入 `https://www.bing.com` 。  
+    若要生成并运行项目，请选择 `F5` 。  在地址栏中输入新 URL，然后选择"转到 **"。**  例如，输入 `https://www.bing.com` 。  
     
     > [!NOTE]
     > 确保在地址栏中输入完整 URL。  `ArgumentException` 如果 URL 不以 或 为起始，则会引发 `http://` 异常 `https://` 。  
@@ -197,9 +196,9 @@ ms.locfileid: "11306150"
        bing.com  
     :::image-end:::  
     
-## 步骤 4 - 导航事件  
+## <a name="step-4---navigation-events"></a>步骤 4 - 导航事件  
 
-承载 WebView2 控件的应用会侦听 WebView2 控件在网页导航期间引发以下事件。  
+承载 WebView2 控件的应用侦听 WebView2 控件在网页导航过程中引发以下事件。  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -208,9 +207,9 @@ ms.locfileid: "11306150"
 *   `NavigationCompleted`  
 
 > [!NOTE]
-> 如果 HTTP 重定向发生，则一行 `NavigationStarting` 中有多个事件。  
+> 如果发生 HTTP 重定向，则一行 `NavigationStarting` 中有多个事件。  
 
-有关详细信息，请导航到 [导航事件][Webviews2ConceptsNavigationEvents]。  
+有关详细信息，请导航到["导航事件"。][Webviews2ConceptsNavigationEvents]  
 
 发生错误时，将引发以下事件，并可能导航到错误网页。  
 
@@ -218,7 +217,7 @@ ms.locfileid: "11306150"
 *   `ContentLoading`  
 *   `HistoryChanged`  
      
-作为如何使用事件的示例，请为取消任何非 HTTPS 请求注册 `NavigationStarting` 处理程序。  在 `MainWindow.xaml.cs` 中，修改构造函数以注册 `EnsureHttps` ，并添加 `EnsureHttps` 函数，以便它匹配以下代码段。  
+作为如何使用事件的示例，请注册用于取消任何非 `NavigationStarting` HTTPS 请求的处理程序。  在 `MainWindow.xaml.cs` 中，修改构造函数以注册 `EnsureHttps` ，并添加 `EnsureHttps` 函数，以便与以下代码段匹配。  
 
 ```csharp
 public MainWindow()
@@ -241,16 +240,16 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 }
 ```  
 
-若要生成并运行项目，请选择 `F5` 。  确保阻止导航到 HTTP 网站，并允许 HTTPS 网站导航。  
+若要生成并运行项目，请选择 `F5` 。  确保阻止导航到 HTTP 网站，并且允许 HTTPS 网站导航。  
 
-## 步骤 5 - 脚本  
+## <a name="step-5---scripting"></a>步骤 5 - 脚本  
 
-在运行时，可以使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以让 WebView 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。  注入的 JavaScript 以特定计时运行。  
+你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。  注入的 JavaScript 以特定计时运行。  
 
 *   创建全局对象后运行它。  
-*   在 HTML 文档中包含的任何其他脚本运行之前运行它。  
+*   在运行 HTML 文档中包含的任何其他脚本之前运行它。  
 
-例如，添加在用户导航到非 HTTPS 网站时发送警报的脚本。  修改 `EnsureHttps` 函数以将脚本注入使用 [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]的 Web 内容。  
+例如，添加在用户导航到非 HTTPS 网站时发送警报的脚本。  修改 `EnsureHttps` 函数以将脚本注入到使用 [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]的 Web 内容中。  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -276,23 +275,25 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 恭喜！你生成了第一个 WebView2 应用。  
 
-## 后续步骤  
+## <a name="next-steps"></a>后续步骤  
 
 若要继续了解有关 WebView2 的更多内容，请导航到以下资源。  
 
-### 另请参阅  
+### <a name="see-also"></a>另请参阅  
 
-*   有关 WebView2 功能的综合示例，请导航到[WebView2Samples。][GithubMicrosoftedgeWebview2samplesMain]  
-*   有关 WebView2 的信息，请导航到 [WebView2 资源][Webview2IndexNextSteps]。  
+*   有关 WebView2 功能的综合示例，请导航到 [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain]。  
+*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
     
     > [!NOTE]
-    > WinRT CoreWebView2 对象在发布 WebView2 API 时可能不可用。  若要了解哪些 API 可用于 WebView2 控件，请导航到 [WebView2 Spec，][GithubMicrosoftUiXamlSpecsWebview2] 查看可用的 API 列表。  
+    > WinRT CoreWebView2 对象在发布 WebView2 API 时可能不可用。  若要了解哪些 API 可用于 WebView2 控件，请导航到 [WebView2 Spec，][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] 了解可用的 API 列表。  
     
-*   有关 WebView2 API 的详细信息，请导航到 [WebView2 规范][GithubMicrosoftUiXamlSpecsWebview2]。  
+*   有关 WebView2 API 的详细信息，请导航到 [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。  
     
-## 与 Microsoft Edge WebView 团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 Microsoft Edge WebView 团队联系  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+若要发送特定于 WinUI 的功能请求或 Bug，请导航到"问题[- microsoft/microsoft-ui-xaml"，][GithubMicrosoftMicrosoftUiXamlIssues]然后选择"**新问题"。**  
 
 <!-- links -->  
 
@@ -305,14 +306,15 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Windows 10 应用商店的程序包清单架构|Microsoft Docs"  
 
-[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用"管理扩展"对话框安装 - 管理扩展Visual Studio |Microsoft Docs"  
+[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用"管理扩展"对话框安装 - 管理 Visual Studio |Microsoft Docs"  
 
-[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "配置你的开发环境 - Windows UI Library 3.0 Preview 1 (2020 年 5 月) |Microsoft Docs"  
+[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "配置开发环境 - Windows UI Library 3.0 Preview 1 (2020 年 5 月) |Microsoft Docs"  
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows 社区Toolkit文档|Microsoft Docs"  
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "将桌面应用程序设置为 MSIX 打包Visual Studio |Microsoft Docs"  
-[WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "为设备启用开发|Microsoft Docs"  
+[WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "启用设备进行开发|Microsoft Docs"  
 
-[GithubMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 规范 - microsoft/microsoft-ui-xaml-specs |GitHub"  
+[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "问题 - microsoft/microsoft-ui-xaml |GitHub"  
+[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 规范 - microsoft/microsoft-ui-xaml-specs |GitHub"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
@@ -329,7 +331,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3 项目模板|Visual Studio市场"  
+[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3 项目|Visual Studio Marketplace"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
