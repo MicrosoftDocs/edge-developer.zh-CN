@@ -3,16 +3,16 @@ description: 从 Windows 或 macOS 计算机在 Android 设备上远程调试实
 title: Android 设备远程调试入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: d69fd4832991826c76f47daea399bdd89e981bb4
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 2beab5bf6d4b58dc93d883f5114e168213053e84
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461211"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439563"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,6 +27,7 @@ ms.locfileid: "11461211"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+
 # <a name="get-started-with-remote-debugging-android-devices"></a><span data-ttu-id="e9e50-104">Android 设备远程调试入门</span><span class="sxs-lookup"><span data-stu-id="e9e50-104">Get started with remote debugging Android devices</span></span>  
 
 <span data-ttu-id="e9e50-105">从你的 Windows 或 macOS 计算机在 Android 设备上远程调试实时内容。</span><span class="sxs-lookup"><span data-stu-id="e9e50-105">Remote debug live content on an Android device from your Windows or macOS computer.</span></span>  <span data-ttu-id="e9e50-106">下面的教程页面指导你如何完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="e9e50-106">The following tutorial page teaches you how to complete the following actions.</span></span>  
