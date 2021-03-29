@@ -81,7 +81,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="force-garbage-collection-while-recording"></a>录制时强制收集垃圾  
 
-录制页面时，选择 **“回收垃圾”** \ (![“回收垃圾图标”](../media/collect-garbage-icon.msft.png)\) 以强制回收垃圾。  
+录制页面时，选择 **“回收垃圾”** \(![“回收垃圾图标”](../media/collect-garbage-icon.msft.png)\) 以强制回收垃圾。  
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="回收垃圾" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    回收垃圾  

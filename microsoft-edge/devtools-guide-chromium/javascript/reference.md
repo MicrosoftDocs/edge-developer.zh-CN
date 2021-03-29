@@ -309,7 +309,7 @@ function animate() {
 
 1.  在“**源**”面板的“**编辑器**”窗格中打开文件。  
 1.  在“**编辑器**”窗格中进行更改。  
-1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \ (macOS\) 进行保存。  DevTools 将整个 JS 文件修补到 Microsoft Edge 的 JavaScript 引擎中。  
+1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 进行保存。  DevTools 将整个 JS 文件修补到 Microsoft Edge 的 JavaScript 引擎中。  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="“编辑器”窗格" lightbox="../media/javascript-sources-html-minified.msft.png":::
        “**编辑器**”窗格  

@@ -274,7 +274,7 @@ li a {
 
 完成以下操作以对现有元素的样式进行访问，向现有规则集添加声明。  
 
-1.  将鼠标悬停在**主页链接**上，打开上下文菜单 \ (右键单击\) ，然后选择**检查**。  
+1.  将鼠标悬停在**主页链接**上，打开上下文菜单 \(右键单击\) ，然后选择**检查**。  
     
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查"主页"链接" lightbox="../media/beginners-css-add1.msft.png":::
        检查"主页"链接  
@@ -337,7 +337,7 @@ li a {
 
 完成以下操作以在 DevTools 中添加新的规则集。  
 
-1.  Choose **New Style Rule** \ (New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。  
+1.  Choose **New Style Rule** \(New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则" lightbox="../media/beginners-css-rule1.msft.png":::
        添加新规则  

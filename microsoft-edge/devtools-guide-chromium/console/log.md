@@ -236,13 +236,13 @@ ms.locfileid: "11439287"
 
 如果只想查看来自特定 URL 的邮件，请使用 **边栏**。  
 
-1.  选择 **显示控制台边栏** \ (![ 显示控制器边栏 ](../media/show-console-sidebar-icon.msft.png) \)。  
+1.  选择 **显示控制台边栏** \(![ 显示控制器边栏 ](../media/show-console-sidebar-icon.msft.png) \)。  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="边栏" lightbox="../media/console-sidebar-all-messages.msft.png":::
        边栏  
     :::image-end:::  
     
-1.  选择“邮件数”旁边的 **“展开”** \ (![“展开”](../media/expand-icon.msft.png) \)。  在下图中，邮件数指示为 **“13 邮件”**。  **边栏**显示导致记录消息的 URL 列表。  例如， `log.js` 导致 11 条消息。  
+1.  选择“邮件数”旁边的 **“展开”** \(![“展开”](../media/expand-icon.msft.png) \)。  在下图中，邮件数指示为 **“13 邮件”**。  **边栏**显示导致记录消息的 URL 列表。  例如， `log.js` 导致 11 条消息。  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="在边栏中查看消息源" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        在边栏中查看消息源  
@@ -283,7 +283,7 @@ ms.locfileid: "11439287"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \ (Chromium\) 开发人员工具 | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) 开发人员工具 | Microsoft Docs"  
 [DevToolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单菜单运行 | Microsoft Docs"  
 [DevToolsCustomizePlacement]: ../customize/placement.md "更改 Microsoft Edge DevTools 放置 | Microsoft Docs"  
 [DevToolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"  

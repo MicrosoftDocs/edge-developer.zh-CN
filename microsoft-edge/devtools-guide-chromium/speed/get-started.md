@@ -78,13 +78,13 @@ ms.locfileid: "11439442"
        演示选项卡  
     :::image-end:::  
     
-1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\)。  Microsoft Edge 开发人员工具将在演示旁边打开。  
+1.  选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\)。  Microsoft Edge 开发人员工具将在演示旁边打开。  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="开发人员工具和演示" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        开发人员工具和演示  
     :::image-end:::  
     
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\)，打开“命令菜单”，键入`Undock` ，然后选择**移除进单独窗口**。  
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)，打开“命令菜单”，键入`Undock` ，然后选择**移除进单独窗口**。  
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="移除的开发人员工具" lightbox="../media/speed-console.msft.png":::
    移除的开发人员工具  
@@ -343,7 +343,7 @@ ms.locfileid: "11439442"
        有关**消除阻止渲染资源机会**的详细信息  
     :::image-end:::  
     
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\)， 打开“命令菜单”，开始键入 `Coverage` ，然后选择**显示覆盖**。  
+1.  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)， 打开“命令菜单”，开始键入 `Coverage` ，然后选择**显示覆盖**。  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="从“审核”面板打开“命令菜单”" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        从**审核**面板打开“命令菜单”  
@@ -372,7 +372,7 @@ ms.locfileid: "11439442"
 加载页面时是否需要`jquery.js`和`lodash.js`文件？  **请求阻止**工具显示资源不可用时会发生的状况。  
 
 1.  选择**网络**工具。  
-1.  选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) ，再次打开“命令菜单”。  
+1.  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\) ，再次打开“命令菜单”。  
 1.  开始键入`blocking`，然后选择**显示请求阻止**。  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="“请求”阻止工具" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::

@@ -47,7 +47,7 @@ ms.locfileid: "11439449"
 
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区  
 
-选择“**切换设备仿真**”\（![切换设备工具栏](../media/toggle-device-toolbar-dark-icon.msft.png)\）或选择“**自定义和控制DevTools**”\ (`...`\)>“**设备仿真**”，以打开用于模拟移动视区的 UI。  
+选择“**切换设备仿真**”\（![切换设备工具栏](../media/toggle-device-toolbar-dark-icon.msft.png)\）或选择“**自定义和控制DevTools**”\(`...`\)>“**设备仿真**”，以打开用于模拟移动视区的 UI。  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     设备工具栏  
@@ -262,7 +262,7 @@ ms.locfileid: "11439449"
    :::column-end:::
    :::column span="":::
       1.  打开命令菜单。  
-          *   选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\)。  
+          *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
       1. 键入 `Sensors`，然后选择“**显示传感器**”。  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="针对地理位置显示传感器" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -291,7 +291,7 @@ ms.locfileid: "11439449"
    :::column-end:::
    :::column span="":::
       1.  打开命令菜单。  
-          *   选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\)。  
+          *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
       1. 键入 `Sensors`，然后选择“**显示传感器**”。  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="针对方向显示传感器" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -320,7 +320,7 @@ ms.locfileid: "11439449"
    :::column-end:::
    :::column span="":::
       1.  打开命令菜单。  
-          *   选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\)。  
+          *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
       1. 键入 `Network conditions`，然后选择“**显示网络条件**”。  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::

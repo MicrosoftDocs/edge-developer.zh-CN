@@ -40,7 +40,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 若要在 Microsoft Edge 中打开\（或关闭\）试验功能，请完成以下步骤。  
 
 1.  [打开 DevTools][DevtoolsOpenIndex]。  
-    *   选择 `Control`+`Shift`+`I` \(Windows, Linux\) 或 `Command`+`Option`+`I` \(macOS\)。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
+    *   选择 `Control` + `Shift` + `I` \(Windows、Linux\) 或 `Command` + `Option` + `I` \(macOS\)。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
 1.  打开“[设置][DevToolsCustomizeIndexSettings]”窗格。  
     *   选择 `Shift`+`?`。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
 1.  在“**设置**”窗格左侧，选择“**试验**”部分。  
