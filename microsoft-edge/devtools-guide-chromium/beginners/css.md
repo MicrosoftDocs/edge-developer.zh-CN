@@ -73,16 +73,16 @@ ms.locfileid: "11439435"
 > [!NOTE]
 > 如果已完成系列的第一个教程，请跳到下一部分。  继续使用上一教程 HTML 和 [DOM 入门中的代码][DevtoolsBeginnersHtml]。  
 
-1.  打开 [源代码][GlitchCookedAmphibianIndex]。  浏览器的"焦点内"选项卡被引用为 **"编辑"选项卡**。  
+1.  打开 [源代码][GlitchCookedAmphibianIndex]。  浏览器的"焦点内"选项卡被引用为 **编辑选项卡**。  
     
-    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text=""编辑"选项卡" lightbox="../media/beginners-css-setup1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="编辑选项卡" lightbox="../media/beginners-css-setup1.msft.png":::
        " **编辑"** 选项卡  
     :::image-end:::  
     
 1.  选择 **"cooked-amphibian"。**  弹出一个菜单。  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text=""项目选项"菜单" lightbox="../media/beginners-css-setup2.msft.png":::
-       "项目选项"菜单  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="项目选项菜单" lightbox="../media/beginners-css-setup2.msft.png":::
+       项目选项菜单  
     :::image-end:::  
 
 1.  选择 **"重新混合项目"。**  Glitch 将创建一个您可以编辑的项目副本。  
@@ -121,7 +121,7 @@ ms.locfileid: "11439435"
 1.  返回到编辑选项卡并打开`index.html`。  
     
     :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="index.html" lightbox="../media/beginners-css-inline1.msft.png":::
-       在 `index.html` "编辑"选项卡中打开  
+       在 `index.html` 编辑选项卡中打开  
     :::image-end:::  
     
 1.  添加到 `style="background-color: aliceblue;"` 你的 `<nav>`。  在下面的代码块中，需要更改的第四行代码。  其余代码就在这里，因此可以确保将新代码放在正确的位置。  
@@ -140,8 +140,8 @@ ms.locfileid: "11439435"
     
 1.  若要显示更改，请导航到活动 **选项卡**。 分区的背景 `<nav>` 现在为蓝色。  
     
-    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text=""主页"和"联系人"链接背后的背景色现在为蓝色" lightbox="../media/beginners-css-inline2.msft.png":::
-       现在，**“主页”** 和 **“联系人”** 链接后面的背景颜色为蓝色  
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="主页和联系人链接背后的背景色现在为蓝色" lightbox="../media/beginners-css-inline2.msft.png":::
+       现在，**主页**和**联系人**链接后面的背景颜色为蓝色  
     :::image-end:::  
     
 ## <a name="re-use-styles-on-a-single-page-with-internal-stylesheets"></a>在包含内部样式表的单个页面上重新使用样式  
@@ -158,8 +158,8 @@ ms.locfileid: "11439435"
 
 1.  在活动选项卡中，选择 **"联系人"** 以导航到联系人页面。  请注意** Home**和**Contact**的字体。  
     
-    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text=""联系人"页" lightbox="../media/beginners-css-internal1.msft.png":::
-       "联系人"页  
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="联系人页" lightbox="../media/beginners-css-internal1.msft.png":::
+       联系人页  
     :::image-end:::  
     
 1.  在编辑器 **选项卡中，** 打开 `contact.html`。  
@@ -184,7 +184,7 @@ ms.locfileid: "11439435"
 1.  返回到实时 **选项卡**。  
 1.  选择 **联系人** 以返回联系人页面。  **Home** 和 **"联系人** 字体已更改。  
     
-    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text=""主页"和"联系人"链接的字体已更改" lightbox="../media/beginners-css-internal2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="主页和联系人链接的字体已更改" lightbox="../media/beginners-css-internal2.msft.png":::
        **家庭**和**联系人**链接的字体已更改  
     :::image-end:::  
     
@@ -262,7 +262,7 @@ li a {
 1.  导航到实时 **选项卡**。  
 1.  选择 **"联系人** "链接返回到联系人页面。  现在， **联系我！** 具有与导航链接相同的字体。  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本"联系我"！  现在字体与"主页"和"联系人"链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与"主页"和"联系人"链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
        文本" **联系我"！** 现在字体与 **"主页"** 和 **"联系人"** 链接相同  
     :::image-end:::  
     
@@ -276,8 +276,8 @@ li a {
 
 1.  将鼠标悬停在**主页链接**上，打开上下文菜单 \(右键单击\) ，然后选择**检查**。  
     
-    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查"主页"链接" lightbox="../media/beginners-css-add1.msft.png":::
-       检查"主页"链接  
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查主页链接" lightbox="../media/beginners-css-add1.msft.png":::
+       检查主页链接  
     :::image-end:::  
     
     DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  [HTML和DOM入门][DevtoolsBeginnersHtml]应该熟悉代码片段和预览。  
@@ -286,14 +286,14 @@ li a {
        :::column span="":::
           在下图中，`font-family: 'Courier New', Courier, serif`您先前添加的声明`contact.html`显示在DOM树下方的 **“样式”** 选项卡中。  
           
-          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text=""样式"选项卡位于 DOM 树下方" lightbox="../media/beginners-css-add2.msft.png":::
+          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="样式选项卡位于 DOM 树下方" lightbox="../media/beginners-css-add2.msft.png":::
              " **样式"** 选项卡位于 DOM 树下方  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          如果 DevTools 窗口很宽，则"样式"选项卡位于 DOM 树的右侧。  
+          如果 DevTools 窗口很宽，则样式选项卡位于 DOM 树的右侧。  
           
-          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text=""样式"选项卡位于 DOM 树的右侧" lightbox="../media/beginners-css-add3.msft.png":::
+          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text="样式选项卡位于 DOM 树的右侧" lightbox="../media/beginners-css-add3.msft.png":::
              " **样式** "选项卡位于 DOM 树的右侧  
           :::image-end:::  
        :::column-end:::

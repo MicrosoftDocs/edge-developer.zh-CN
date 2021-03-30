@@ -102,8 +102,8 @@ ms.locfileid: "11439315"
 1.  打开**应用程序** > **存储空间**。  
 1.  确保已启用" **缓存存储** 复选框。  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text=""缓存存储"复选框" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       " **缓存存储** 复选框  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="缓存存储复选框" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       **缓存存储** 复选框  
     :::image-end:::  
     
 1.  选择**清除网站数据**。  

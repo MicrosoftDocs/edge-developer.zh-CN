@@ -51,7 +51,7 @@ ms.locfileid: "11439694"
     
 如果正在寻找提高页面加载性能的方法，**不要** 开始于 **网络**工具。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到 [优化网站速度][DevtoolsSpeedGetStarted]。  
 
-## <a name="open-the-network-panel"></a>打开“网络”面板  
+## <a name="open-the-network-panel"></a>打开网络面板  
 
 若要在本教程中取得最大功能，请打开演示并试用演示页面上的功能。  
 
@@ -128,8 +128,8 @@ ms.locfileid: "11439694"
 
 1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \ (右键单击\) ，然后选择"域 **"。**  现在将显示每个资源的域。  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用“域”列" lightbox="../media/network-glitch-network-edit-column.msft.png":::
-       启用“域”列  
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用域列" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+       启用域列  
     :::image-end:::  
     
     > [!TIP]
@@ -147,8 +147,8 @@ ms.locfileid: "11439694"
     
 1.  选择“**慢速 3G**”。  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="选择"慢速 3G"" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
-       选择"慢速 3G"  
+    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="选择慢速 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+       选择慢速 3G  
     :::image-end:::  
     
 1.  长按**Reload** \(![Reload](../media/refresh-icon.msft.png)\) ，然后选择“**空缓存和硬重新加载**”。  
@@ -189,7 +189,7 @@ ms.locfileid: "11439694"
 
 1.  选择 `getstarted.html`。  将显示 **"标题** "面板。  使用此面板检查 HTTP 标头。  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text=""标题"面板" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="标头面板" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        " **标题"** 面板  
     :::image-end:::  
     
@@ -212,7 +212,7 @@ ms.locfileid: "11439694"
     
 1.  选择" **计时"** 面板。  将显示资源的网络活动的细分。  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text=""计时"面板" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="计时面板" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
        " **计时"** 面板  
     :::image-end:::  
     
@@ -232,7 +232,7 @@ ms.locfileid: "11439694"
 
 1.  选择**搜索** \(![搜索](../media/search-icon.msft.png)\)。  搜索窗格将打开到网络日志的左侧。  
     
-    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="“搜索”窗格" lightbox="../media/network-glitch-network-search-empty.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="搜索窗格" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        “**搜索**”窗格  
     :::image-end:::  
     
@@ -242,10 +242,10 @@ ms.locfileid: "11439694"
        以下项的搜索结果 `Cache-Control`  
     :::image-end:::  
     
-1.  选择一个结果以查看其中找到结果的资源。  如果要查看资源的详细信息，请选择直接转到它的结果。  例如，如果在标头中发现查询，则 **"标题"面板** 将打开。   如果在内容中发现查询，将打开 **"响应"** 面板。  
+1.  选择一个结果以查看其中找到结果的资源。  如果要查看资源的详细信息，请选择直接转到它的结果。  例如，如果在标头中发现查询，则 **标题面板** 将打开。   如果在内容中发现查询，将打开 **"响应"** 面板。  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text=""标题"面板中突出显示的搜索结果" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
-       "标题"面板中 **突出显示的** 搜索结果  
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="标题面板中突出显示的搜索结果" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+       标题面板中 **突出显示的** 搜索结果  
     :::image-end:::  
     
 1.  关闭"搜索"窗格和 **"标题"** 面板。  
@@ -258,7 +258,7 @@ ms.locfileid: "11439694"
 
 DevTools 提供了许多工作流，用于筛选出与当前任务不相关的资源。  
 
-:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="“筛选器”工具栏" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="筛选器工具栏" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
    “**筛选器**”工具栏  
 :::image-end:::  
 

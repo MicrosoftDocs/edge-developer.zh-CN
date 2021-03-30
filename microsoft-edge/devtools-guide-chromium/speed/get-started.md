@@ -98,7 +98,7 @@ ms.locfileid: "11439442"
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
-    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="“审核”工具" lightbox="../media/speed-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="审核工具" lightbox="../media/speed-audits-performance.msft.png":::
        **审核**工具  
     :::image-end:::  
     
@@ -139,14 +139,14 @@ ms.locfileid: "11439442"
 
 **指标**部分提供站点性能的定量测量。  每个指标提供对性能不同方面的见解。  例如，**首次内容绘制**会告知内容首次绘制到屏幕的时间，这是用户感知页面加载的重要里程碑，而**可交互时间**则会标记页面似乎准备就绪，足以处理用户交互的时间点。  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text=""指标"部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="指标部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
    **指标**部分  
 :::image-end:::  
 
 选择下图中突出显示的切换按钮，显示每个指标的说明，然后选择 **了解更多信息**，阅读相关文档。  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="选择突出显示的切换按钮，展开"指标"项" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
-   选择突出显示的切换按钮，展开"指标"项  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="选择突出显示的切换按钮，展开指标项" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
+   选择突出显示的切换按钮，展开指标项  
 :::image-end:::  
 
 以下"指标"是页面加载外观屏幕截图的集合。  
@@ -157,7 +157,7 @@ ms.locfileid: "11439442"
 
 **机会**部分提供如何改进此特定页面加载性能的特定提示。  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text=""机会"部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="机会部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
    **机会**部分  
 :::image-end:::  
 
@@ -175,19 +175,19 @@ ms.locfileid: "11439442"
 
 **诊断**部分提供影响页面加载时间的因素的详细信息。  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="“诊断”部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="诊断部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
    **诊断**部分  
 :::image-end:::  
 
 **通过审核**部分显示站点正确执行的内容。  选择并展开此部分。  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text=""通过审核"部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="通过审核部分" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
    **通过审核** 部分  
 :::image-end:::  
 
 ## <a name="step-2-experiment"></a>步骤 2：试验  
 
-审核报告中的"机会"部分提供如何改进页面性能的提示。  在此部分，你将对基本代码实施建议性更改，并在每次更改后审核站点，从而测量更改对站点速度的影响。  
+审核报告中的机会部分提供如何改进页面性能的提示。  在此部分，你将对基本代码实施建议性更改，并在每次更改后审核站点，从而测量更改对站点速度的影响。  
 
 ### <a name="enable-text-compression"></a>启用文本压缩  
 
@@ -199,7 +199,7 @@ ms.locfileid: "11439442"
 
 1.  选择**网络**工具。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="“网络”面板" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="网络面板" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
        **网络**工具  
     :::image-end:::  
     
@@ -220,7 +220,7 @@ ms.locfileid: "11439442"
 1.  选择`bundle.js`。  
 1.  选择**标头**面板。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text=""标头"面板" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="标头面板" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
        **标头**面板  
     :::image-end:::  
     
@@ -271,7 +271,7 @@ ms.locfileid: "11439442"
     
 1.  现在，`bundle.js`的**响应标头**部分应包含`content-encoding: gzip`标头。
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="现在，“响应标头"部分包含 content-encoding 标头" lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="现在，响应标头部分包含 content-encoding 标头" lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
        现在，**响应标头**部分包含 content-encoding 标头  
     :::image-end:::  
     
@@ -282,8 +282,8 @@ ms.locfileid: "11439442"
 1.  保留设置与之前相同。  
 1.  选择**运行审核**。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="启用文本压缩后的“审核”报告" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
-       启用文本压缩后的“审核”报告  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="启用文本压缩后的审核报告" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
+       启用文本压缩后的审核报告  
     :::image-end:::  
     
 <!--  Woohoo!  That looks like progress.  -->  总体性能分数应已提高，这意味着站点速度加快。  
@@ -308,8 +308,8 @@ ms.locfileid: "11439442"
 1.  将`const dir = 'big'`替换为`const dir = 'small'`。  此目录包含已调整大小的相同图像的副本。  
 1.  再次审核页面，显示更改对加载性能的影响。  
     
-    :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="调整图像大小后的“审核”报告" lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
-       调整图像大小后的“审核”报告  
+    :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="调整图像大小后的审核报告" lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
+       调整图像大小后的审核报告  
     :::image-end:::  
     
 更改显示仅对总体性能分数产生了细微影响。  但是，分数并未明确显示你为用户节省的网络数据量。  旧照片的总大小约为 5.3 MB，而现在仅约 0.18 MB。  
@@ -345,23 +345,23 @@ ms.locfileid: "11439442"
     
 1.  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)， 打开“命令菜单”，开始键入 `Coverage` ，然后选择**显示覆盖**。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="从“审核”面板打开“命令菜单”" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="从审核面板打开命令菜单" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        从**审核**面板打开“命令菜单”  
     :::image-end:::  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="“覆盖”工具" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="覆盖工具" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
        **覆盖**工具  
     :::image-end:::  
     
 1.  选择**刷新** \(![Refresh](../media/reload-icon.msft.png)\)。  **覆盖**工具概述了加载页面时 `bundle.js`、`jquery.js`和`lodash.js`中运行的代码量。  在下图中，约 76% 的 jQuery 文件和 30% 的 Lodash 文件未被使用。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="”覆盖“报告" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
-       ”覆盖“报告  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="覆盖报告" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
+       覆盖报告  
     :::image-end:::  
     
 1.  选择**jquery.js**行。  在"源"面板中，开发人员工具会打开文件。  如果旁边是蓝色条，则表示运行了代码行。  红色条则表示未运行，且页面加载时绝不需要。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在"源"面板中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在源面板中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
        在**源**面板中查看 jQuery 文件  
     :::image-end:::  
     
@@ -375,7 +375,7 @@ ms.locfileid: "11439442"
 1.  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\) ，再次打开“命令菜单”。  
 1.  开始键入`blocking`，然后选择**显示请求阻止**。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="“请求”阻止工具" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="请求阻止工具" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
        **请求阻止**工具  
     :::image-end:::  
     
@@ -387,7 +387,7 @@ ms.locfileid: "11439442"
     
 1.  刷新页面。  jQuery 和 Lodash 请求为红色，意味着请求被阻止。   页面仍在加载且为交互式，因此似乎根本不需要这些资源！  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text=""网络"面板显示请求已被阻止" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="网络面板显示请求已被阻止" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
        **网络**工具显示请求已被阻止  
     :::image-end:::  
     
@@ -402,7 +402,7 @@ ms.locfileid: "11439442"
 1.  等待站点重新生成和部署。  
 1.  从**审核**工具再次审核页面。  总体分数应再次提高。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="删除阻止渲染资源后的“审核”报告" lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="删除阻止渲染资源后的审核报告" lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
        删除阻止渲染资源后的**审核**报告  
     :::image-end:::  
     
@@ -419,7 +419,7 @@ ms.locfileid: "11439442"
 
 ### <a name="do-less-main-thread-work"></a>减少主线程工作  
 
-最新报告的"机会"部分表明存在一些细微的潜在节省，但如果往下查看"诊断"部分，似乎最大的瓶颈是主线程活动过多。  
+最新报告的机会部分表明存在一些细微的潜在节省，但如果往下查看"诊断"部分，似乎最大的瓶颈是主线程活动过多。  
 
 在主线程中，浏览器执行显示页面所需的多数工作，例如分析和运行 HTML、CSS 和 JavaScript。  
 
@@ -430,14 +430,14 @@ ms.locfileid: "11439442"
 1.  将**网络**设置为**慢速 3G**，**CPU**设置为**6x 减速**。  移动设备的硬件约束通常比笔记本电脑或台式机多，因此这些设置可以让你就像使用不那么强大的设备一样体验页面加载。  
 1.  选择**刷新** \(![Refresh](../media/reload-icon.msft.png)\)。  开发人员工具会刷新页面，然后生成加载页面所执行的所有工作的可视化效果。  此可视化效果称为**跟踪**。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="页面加载“性能”工具跟踪" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="页面加载性能工具跟踪" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        页面加载**性能**工具跟踪  
     :::image-end:::  
     
 跟踪从左到右，按时间顺序显示活动。  顶部的 FPS、CPU 和 NET 图表概述了每秒帧数、CPU 活动以及网络活动。  下图中黄色突出显示的信息块表明，CPU 完全忙于脚本活动。  这表明你可以减少 JavaScript 工作，从而加快页面加载速度。  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="跟踪的“概述”部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
-   跟踪的“概述”部分  
+:::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="跟踪的概述部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
+   跟踪的概述部分  
 :::image-end:::  
 
 调查跟踪，查找减少 JavaScript 工作的方法：  
@@ -451,7 +451,7 @@ ms.locfileid: "11439442"
 1.  再次选择**计时**，折叠该部分。  
 1.  浏览**主要**部分。  此部分从左到右，按时间顺序显示了主线程活动的记录。  y 轴（从上到下）表示事件发生的原因。  例如，在下图中，`Evaluate Script`事件导致`(anonymous)`函数运行，继而导致`(anonymous)`运行，然后导致`__webpack__require__`运行，以此类推。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="“主要”部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="主要部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
        **主要**部分  
     :::image-end:::  
     
@@ -466,7 +466,7 @@ ms.locfileid: "11439442"
     
 1.  展开**自上而下**部分。  此选项卡将分解占用时间最多的活动。  如果“自上而下”部分未显示任何内容，请选择**主要**部分的标签。  **自上而下**部分只显示当前选择的活动或活动组的信息。  例如，如果选择`mineBitcoin`中的一个活动，则**自上而下**部将只显示该活动的信息。   
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="“自下而上”选项卡" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="自下而上选项卡" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
        **自上而下**选项卡  
     :::image-end:::  
     
@@ -479,8 +479,8 @@ ms.locfileid: "11439442"
 1.  等待新内部版本部署。  
 1.  再次审核页面。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png" alt-text="配置 webpack 使用生产模式后的“审核”报告" lightbox="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png":::
-       配置 webpack 使用生产模式后的“审核”报告  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png" alt-text="配置 webpack 使用生产模式后的审核报告" lightbox="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png":::
+       配置 webpack 使用生产模式后的审核报告  
     :::image-end:::  
     
 通过删除对`mineBitcoin`的请求减少 JavaScript 活动：  
@@ -490,8 +490,8 @@ ms.locfileid: "11439442"
 1.  等待新内部版本部署。  
 1.  再次审核页面。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png" alt-text="删除不必要的 JavaScript 工作后的“审核”报告" lightbox="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png":::
-       删除不必要的 JavaScript 工作后的“审核”报告  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png" alt-text="删除不必要的 JavaScript 工作后的审核报告" lightbox="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png":::
+       删除不必要的 JavaScript 工作后的审核报告  
     :::image-end:::  
     
 最后更改似乎大幅提升了性能！  

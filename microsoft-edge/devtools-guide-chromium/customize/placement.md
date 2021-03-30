@@ -34,12 +34,12 @@ ms.locfileid: "11439175"
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择"停靠到左侧"" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择停靠到左侧" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
          当你希望应用本机保护时，可选择 `Dock To Left`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="选择"停靠到底部"" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="选择停靠到底部" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
          当你希望应用本机保护时，可选择 `Dock To Bottom`  
       :::image-end:::  
    :::column-end:::
@@ -61,7 +61,7 @@ ms.locfileid: "11439175"
 
 1.  选择 **自定义和控制 DevTools** \（`...`\） 并选择 **取消停靠为单独的窗口** \（![取消停靠](../media/undock-icon.msft.png)\）、 **停靠到** 底部 \（![停靠到底部](../media/bottom-icon.msft.png)\），或 **停靠到左侧** \（![停靠到](../media/left-icon.msft.png)\）。  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择"取消停靠到单独的窗口"" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        选择 **停靠到单独的窗口位置**  
     :::image-end:::  
     
@@ -70,8 +70,8 @@ ms.locfileid: "11439175"
 1.  [打开“命令”菜单][DevtoolsCommandMenu]。  
 1.  运行下列命令之一： `Dock To Bottom`、 `Undock Into Separate Window`。  当前没有向左停靠的命令，但你可能从"另一个"主 [访问](#change-placement-from-the-main-menu)。  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text=""取消停靠"命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       "取消停靠"命令  
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="取消停靠命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       取消停靠命令  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
