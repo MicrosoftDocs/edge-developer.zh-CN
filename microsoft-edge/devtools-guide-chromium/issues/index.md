@@ -75,11 +75,11 @@ ms.locfileid: "11398971"
     
 ## <a name="view-items-in-the-issues-tool"></a><span data-ttu-id="eebac-128">查看问题工具中的项目</span><span class="sxs-lookup"><span data-stu-id="eebac-128">View items in the Issues tool</span></span>  
 
-<span data-ttu-id="eebac-129">DevTools Drawer 中的"问题"工具以结构化、聚合且可操作的方式显示警告。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="eebac-129">The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.</span></span>  
+<span data-ttu-id="eebac-129">DevTools Drawer 中的"问题"工具以结构化、聚合且可操作的方式显示警告。 </span><span class="sxs-lookup"><span data-stu-id="eebac-129">The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.</span></span>  
 
 1.  <span data-ttu-id="eebac-130">在"问题"工具 **中选择** 一个项目，获取有关如何解决问题和查找受影响资源的指南。</span><span class="sxs-lookup"><span data-stu-id="eebac-130">Choose an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="将跨站点 Cookie 标记为"问题"工具中打开的安全问题" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="将跨站点 Cookie 标记为问题工具中打开的安全问题" lightbox="../media/issues-tab-issue-open.msft.png":::
        <span data-ttu-id="eebac-132">**将跨站点 Cookie 标记为**"问题"工具中打开**的安全问题**</span><span class="sxs-lookup"><span data-stu-id="eebac-132">**Mark cross-site cookies as Secure** issue open in the **Issues** tool</span></span>  
     :::image-end:::  
     

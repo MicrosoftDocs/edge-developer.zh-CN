@@ -36,9 +36,9 @@ ms.locfileid: "11398222"
 
 ## <a name="open-resources"></a><span data-ttu-id="03ddd-109">打开资源</span><span class="sxs-lookup"><span data-stu-id="03ddd-109">Open resources</span></span>  
 
-<span data-ttu-id="03ddd-110">当您知道要检查的资源的名称时，命令菜单提供了一种快速打开\*\*\*\* 资源的方法。</span><span class="sxs-lookup"><span data-stu-id="03ddd-110">When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.</span></span>  
+<span data-ttu-id="03ddd-110">当您知道要检查的资源的名称时，命令菜单提供了一种快速打开 资源的方法。</span><span class="sxs-lookup"><span data-stu-id="03ddd-110">When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.</span></span>  
 
-1.  <span data-ttu-id="03ddd-111">选择 `Control` + `P` \ (Windows、Linux\) `Command` + `P` 或 \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="03ddd-111">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).</span></span>  <span data-ttu-id="03ddd-112">将 **打开"打开文件** "对话框。</span><span class="sxs-lookup"><span data-stu-id="03ddd-112">The **Open File** dialog opens.</span></span>  
+1.  <span data-ttu-id="03ddd-111">选择 `Control` + `P` \(Windows、Linux\) `Command` + `P` 或 \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="03ddd-111">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).</span></span>  <span data-ttu-id="03ddd-112">将 **打开"打开文件** "对话框。</span><span class="sxs-lookup"><span data-stu-id="03ddd-112">The **Open File** dialog opens.</span></span>  
     
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="打开文件对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        <span data-ttu-id="03ddd-114">" **打开文件"** 对话框</span><span class="sxs-lookup"><span data-stu-id="03ddd-114">The **Open File** dialog</span></span>  
@@ -60,7 +60,7 @@ ms.locfileid: "11398222"
 
 ### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a><span data-ttu-id="03ddd-122">显示来自其他面板的网络工具中的资源</span><span class="sxs-lookup"><span data-stu-id="03ddd-122">Reveal resources in the Network tool from other panels</span></span>  
 
-<span data-ttu-id="03ddd-123">下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 的各个部分的资源。</span><span class="sxs-lookup"><span data-stu-id="03ddd-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="03ddd-124">如果你曾经想要检查**网络**工具中的资源，请将鼠标悬停在资源上，打开上下文菜单 \ (右键单击\) ，然后选择"网络"面板中的"展示 **"。**</span><span class="sxs-lookup"><span data-stu-id="03ddd-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
+<span data-ttu-id="03ddd-123">下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 的各个部分的资源。</span><span class="sxs-lookup"><span data-stu-id="03ddd-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="03ddd-124">如果你曾经想要检查**网络**工具中的资源，请将鼠标悬停在资源上，打开上下文菜单 \(右键单击\) ，然后选择"网络"面板中的"展示 **"。**</span><span class="sxs-lookup"><span data-stu-id="03ddd-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="在网络面板中显示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **<span data-ttu-id="03ddd-126">"在网络"面板中显示</span><span class="sxs-lookup"><span data-stu-id="03ddd-126">Reveal in Network panel</span></span>**  
@@ -139,7 +139,7 @@ ms.locfileid: "11398222"
 1.  <span data-ttu-id="03ddd-173">展开感兴趣的部分。</span><span class="sxs-lookup"><span data-stu-id="03ddd-173">Expand the sections in which you are interested.</span></span>  
 1.  <span data-ttu-id="03ddd-174">选择一个资源进行查看。</span><span class="sxs-lookup"><span data-stu-id="03ddd-174">Choose a resource to view it.</span></span>  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在"应用程序"面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在应用程序面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        <span data-ttu-id="03ddd-176">在"应用程序"面板 **中查看** 资源</span><span class="sxs-lookup"><span data-stu-id="03ddd-176">View a resource in the **Application** panel</span></span>  
     :::image-end:::  
     

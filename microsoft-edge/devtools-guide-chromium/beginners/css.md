@@ -156,7 +156,7 @@ ms.locfileid: "11439435"
 
 <span data-ttu-id="b9794-172">如果您希望网页上的所有元素都以相同的方式设置样式 `<p>` ，应该如何？</span><span class="sxs-lookup"><span data-stu-id="b9794-172">What if you wanted all of the `<p>` elements on your webpage to be styled the same way?</span></span>  <span data-ttu-id="b9794-173">您必须将代码复制并粘贴到网站上 `<p>` 每个标记中。</span><span class="sxs-lookup"><span data-stu-id="b9794-173">You have to copy and paste the code into every single `<p>` tag on your site.</span></span>  <span data-ttu-id="b9794-174">这是一项大量的时间和精力。</span><span class="sxs-lookup"><span data-stu-id="b9794-174">That is a lot of time and effort.</span></span>  <span data-ttu-id="b9794-175">如果需要进行编辑，必须再次更改每个标记。</span><span class="sxs-lookup"><span data-stu-id="b9794-175">And, if you needed to make an edit, you have to change every tag again.</span></span>  <span data-ttu-id="b9794-176">完成以下操作以使用 **Internal 样式表** 编写 CSS 一次，以便它适用于多个元素。</span><span class="sxs-lookup"><span data-stu-id="b9794-176">Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.</span></span>  
 
-1.  <span data-ttu-id="b9794-177">在活动选项卡中，选择 **"联系人"** 以导航到联系人页面。</span><span class="sxs-lookup"><span data-stu-id="b9794-177">In the live tab, choose **Contact** to navigate to the contact page.</span></span>  <span data-ttu-id="b9794-178">请注意\*\* Home**和**Contact\*\*的字体。</span><span class="sxs-lookup"><span data-stu-id="b9794-178">Notice the font of **Home** and **Contact**.</span></span>  
+1.  <span data-ttu-id="b9794-177">在活动选项卡中，选择 **"联系人"** 以导航到联系人页面。</span><span class="sxs-lookup"><span data-stu-id="b9794-177">In the live tab, choose **Contact** to navigate to the contact page.</span></span>  <span data-ttu-id="b9794-178">请注意 Home**和**Contact 的字体。</span><span class="sxs-lookup"><span data-stu-id="b9794-178">Notice the font of **Home** and **Contact**.</span></span>  
     
     :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="联系人页" lightbox="../media/beginners-css-internal1.msft.png":::
        <span data-ttu-id="b9794-180">联系人页</span><span class="sxs-lookup"><span data-stu-id="b9794-180">The Contact page</span></span>  
@@ -262,7 +262,7 @@ li a {
 1.  <span data-ttu-id="b9794-211">导航到实时 **选项卡**。</span><span class="sxs-lookup"><span data-stu-id="b9794-211">Navigate to the **live tab**.</span></span>  
 1.  <span data-ttu-id="b9794-212">选择 **"联系人** "链接返回到联系人页面。</span><span class="sxs-lookup"><span data-stu-id="b9794-212">Choose the **Contact** link to go back to the contact page.</span></span>  <span data-ttu-id="b9794-213">现在， **联系我！**</span><span class="sxs-lookup"><span data-stu-id="b9794-213">Now, **Contact Me!**</span></span> <span data-ttu-id="b9794-214">具有与导航链接相同的字体。</span><span class="sxs-lookup"><span data-stu-id="b9794-214">has the same font as the navigation links.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与"主页"和"联系人"链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与主页和联系人链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
        <span data-ttu-id="b9794-217">文本" **联系我"！**</span><span class="sxs-lookup"><span data-stu-id="b9794-217">The text **Contact Me!**</span></span> <span data-ttu-id="b9794-218">现在字体与 **"主页"** 和 **"联系人"** 链接相同</span><span class="sxs-lookup"><span data-stu-id="b9794-218">now has the same font as the **Home** and **Contact** links</span></span>  
     :::image-end:::  
     
@@ -366,7 +366,7 @@ li a {
     
 1.  <span data-ttu-id="b9794-276">将鼠标悬停在"主页 **"链接** 上。</span><span class="sxs-lookup"><span data-stu-id="b9794-276">Hover your mouse over the **Home** link.</span></span>  <span data-ttu-id="b9794-277">链接的背景变为绿色。</span><span class="sxs-lookup"><span data-stu-id="b9794-277">The background of the link turns green.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在"主页"链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在主页链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
        <span data-ttu-id="b9794-279">将鼠标悬停在"主页"链接上以显示其绿色背景</span><span class="sxs-lookup"><span data-stu-id="b9794-279">Hover on the Home link to reveal its green background</span></span>  
     :::image-end:::  
     
@@ -416,7 +416,7 @@ li a {
     
 1.  <span data-ttu-id="b9794-299">选择 **"新建文件"。**</span><span class="sxs-lookup"><span data-stu-id="b9794-299">Choose **New File**.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text=""新建文件"对话框" lightbox="../media/beginners-css-external5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="新建文件对话框" lightbox="../media/beginners-css-external5.msft.png":::
        <span data-ttu-id="b9794-301">"新建文件"对话框</span><span class="sxs-lookup"><span data-stu-id="b9794-301">The new file dialog</span></span>  
     :::image-end:::  
     

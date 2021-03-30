@@ -444,7 +444,7 @@ ms.locfileid: "11439442"
 
 1.  <span data-ttu-id="df4f6-389">选择并展开**计时** 部分。</span><span class="sxs-lookup"><span data-stu-id="df4f6-389">Choose the **Timings** section to expand it.</span></span>  <span data-ttu-id="df4f6-390">基于 React 中可能存在许多[计时][MDNUserTimingApi]测量的事实，Tony 的应用似乎正使用 React 的开发模式。</span><span class="sxs-lookup"><span data-stu-id="df4f6-390">Based on the fact that there may be a bunch of [Timings][MDNUserTimingApi] measures from React, it seems like Tony's app is using the development mode of React.</span></span>  <span data-ttu-id="df4f6-391">切换到 React 的生产模式可能会产生一些简单的性能优势。</span><span class="sxs-lookup"><span data-stu-id="df4f6-391">Switching to the production mode of React may yield some easy performance wins.</span></span>  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text=""计时"部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="计时部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        <span data-ttu-id="df4f6-393">**计时**部分</span><span class="sxs-lookup"><span data-stu-id="df4f6-393">The **Timings** section</span></span>  
     :::image-end:::  
     
