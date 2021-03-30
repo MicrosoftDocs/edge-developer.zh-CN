@@ -63,7 +63,7 @@ ms.locfileid: "11399090"
         
     1.  <span data-ttu-id="c4682-124">在 `aloha` 类中，查找样式的值 `padding` 并复制它。</span><span class="sxs-lookup"><span data-stu-id="c4682-124">In the `aloha` class, find the value for the `padding` style and copy it.</span></span>  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于已检查的元素在"样式"面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于已检查的元素在样式面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            <span data-ttu-id="c4682-126">CSS 类应用于选定的元素，例如 `aloha` ，显示在 **样式面板** 中</span><span class="sxs-lookup"><span data-stu-id="c4682-126">CSS classes is applied to the selected element, such as `aloha`, are displayed in the **Styles** panel</span></span>  
         :::image-end:::  
         
@@ -82,7 +82,7 @@ ms.locfileid: "11399090"
 1.  <span data-ttu-id="c4682-134">键入 `background-color` 并选择 `Enter`。</span><span class="sxs-lookup"><span data-stu-id="c4682-134">Type `background-color` and select `Enter`.</span></span>  
 1.  <span data-ttu-id="c4682-135">键入 `honeydew` 并选择 `Enter`。</span><span class="sxs-lookup"><span data-stu-id="c4682-135">Type `honeydew` and select `Enter`.</span></span>  <span data-ttu-id="c4682-136">在 **DOM 树**中，将显示应用于元素的内联样式声明。</span><span class="sxs-lookup"><span data-stu-id="c4682-136">In the **DOM Tree**, an inline style declaration applied to the element is displayed.</span></span>  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用"样式"面板向元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用样式面板向元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        <span data-ttu-id="c4682-138">使用 `background-color:honeydew` "样式"面板部分将声明应用于 `element.style` \*\*\*\* 元素</span><span class="sxs-lookup"><span data-stu-id="c4682-138">The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel</span></span>  
     :::image-end:::  
     

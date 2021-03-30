@@ -23,7 +23,7 @@ ms.locfileid: "11408283"
     *   <span data-ttu-id="8184b-109">选择 `Shift` + `?` 。</span><span class="sxs-lookup"><span data-stu-id="8184b-109">Select `Shift`+`?`.</span></span>  
 1.  <span data-ttu-id="8184b-110">导航到 **"快捷方式"** 页。</span><span class="sxs-lookup"><span data-stu-id="8184b-110">Navigate to the **Shortcuts** page.</span></span>  
     
-    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text=""设置"中的"快捷方式"页" lightbox="../media/settings-shortcuts.msft.png":::
+    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="设置中的快捷方式页" lightbox="../media/settings-shortcuts.msft.png":::
        <span data-ttu-id="8184b-112">" **设置"中的** "快捷方式 **"页**</span><span class="sxs-lookup"><span data-stu-id="8184b-112">The **Shortcuts** page in **Settings**</span></span>  
     :::image-end:::  
     
@@ -48,7 +48,7 @@ ms.locfileid: "11408283"
 1.  <span data-ttu-id="8184b-125">选择要自定义的操作。</span><span class="sxs-lookup"><span data-stu-id="8184b-125">Choose the action you want to customize.</span></span>  <span data-ttu-id="8184b-126">例如，在调试 **器部分中** ，查找并选择 **暂停脚本执行** 操作。</span><span class="sxs-lookup"><span data-stu-id="8184b-126">For example, in the **Debugger** section, find and select the **Pause script execution** action.</span></span>  
 1.  <span data-ttu-id="8184b-127">选择" **编辑** \ (![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \) "图标。</span><span class="sxs-lookup"><span data-stu-id="8184b-127">Choose the **Edit** \(![EditKeyboardShortcut](../media/edit-keyboard-shortcut-icon.msft.png)\) icon.</span></span>  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从"设置"中的"快捷方式"页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="从设置中的快捷方式页选择要自定义的操作" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        <span data-ttu-id="8184b-129">从"设置"中的"快捷方式 ["页选择要](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) 自定义 [的操作][DevToolsCustomizeSettings]</span><span class="sxs-lookup"><span data-stu-id="8184b-129">Choose the action to customize from the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) page in [Settings][DevToolsCustomizeSettings]</span></span>  
     :::image-end:::  
     

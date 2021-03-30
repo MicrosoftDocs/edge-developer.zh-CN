@@ -41,7 +41,7 @@ ms.locfileid: "11398558"
     
 1.  <span data-ttu-id="bf614-110">开始键入， `javascript` 选择 **"禁用 JavaScript"，** 然后选择 `Enter` 运行命令。</span><span class="sxs-lookup"><span data-stu-id="bf614-110">Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.</span></span>  <span data-ttu-id="bf614-111">JavaScript 现已禁用。</span><span class="sxs-lookup"><span data-stu-id="bf614-111">JavaScript is now disabled.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择"禁用 JavaScript"" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择禁用 JavaScript" lightbox="../media/javascript-console-command-javascript.msft.png":::
        <span data-ttu-id="bf614-113">在**命令菜单中选择"禁用 JavaScript"** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="bf614-113">Choose **Disable JavaScript** in the **Command Menu**</span></span>  
     :::image-end:::  
     

@@ -39,7 +39,7 @@ ms.locfileid: "11398264"
 *   <span data-ttu-id="7ad11-108">将鼠标悬停在元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="7ad11-108">Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
 *   <span data-ttu-id="7ad11-109">选择 `Control` + `Shift` + `C` \ (Windows、Linux\) `Command` + `Option` + `C` 或 \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-109">Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\).</span></span>  <span data-ttu-id="7ad11-110">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-110">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text=""检查"选项" lightbox="../media/bing-right-click-inspect.msft.png":::
+:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="检查选项" lightbox="../media/bing-right-click-inspect.msft.png":::
    <span data-ttu-id="7ad11-112">" **检查"** 选项</span><span class="sxs-lookup"><span data-stu-id="7ad11-112">The **Inspect** option</span></span>  
 :::image-end:::  
 

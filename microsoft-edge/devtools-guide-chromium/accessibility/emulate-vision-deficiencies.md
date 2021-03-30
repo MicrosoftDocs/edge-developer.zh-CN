@@ -42,13 +42,13 @@ ms.locfileid: "11397872"
 
 1.  <span data-ttu-id="517de-127">向下滚动到 `Emulate vision deficiencies` 菜单项，然后选择下拉菜单以显示选项。</span><span class="sxs-lookup"><span data-stu-id="517de-127">Scroll down to the `Emulate vision deficiencies` menu item and choose the drop-down menu to display the options.</span></span>  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现器上的"模拟视力缺陷"菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现器上的模拟视力缺陷菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        <span data-ttu-id="517de-129">呈现 **器上的"模拟** 视觉缺陷 **"** 菜单</span><span class="sxs-lookup"><span data-stu-id="517de-129">The **Emulate vision deficiencies** menu on the **Rendering** drawer</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="517de-130">选择一个选项。</span><span class="sxs-lookup"><span data-stu-id="517de-130">Choose an option.</span></span>  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text=""模拟视力缺陷"菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="模拟视力缺陷菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        <span data-ttu-id="517de-132">" **模拟视觉缺陷"菜单** 选项</span><span class="sxs-lookup"><span data-stu-id="517de-132">The **Emulate vision deficiencies** menu options</span></span>  
     :::image-end:::  
     

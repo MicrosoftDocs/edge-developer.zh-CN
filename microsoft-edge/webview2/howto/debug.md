@@ -64,7 +64,7 @@ ms.locfileid: "11399842"
     1.  <span data-ttu-id="0f54b-137">选择 **JavaScript 诊断** 设置。</span><span class="sxs-lookup"><span data-stu-id="0f54b-137">Choose the **JavaScript diagnostics** setting.</span></span>  
     1.  <span data-ttu-id="0f54b-138">选择 **"修改"。**</span><span class="sxs-lookup"><span data-stu-id="0f54b-138">Choose **Modify**.</span></span> 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio"修改单个组件"选项卡" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio 修改单个组件选项卡" lightbox="./media/indivcomp.png":::
            <span data-ttu-id="0f54b-140">Visual Studio"修改单个组件"选项卡</span><span class="sxs-lookup"><span data-stu-id="0f54b-140">Visual Studio Modifying Individual Components Tab</span></span>  
         :::image-end:::  
         
@@ -134,7 +134,7 @@ ms.locfileid: "11399842"
     1.  <span data-ttu-id="0f54b-171">在 **"运行** "选项卡上，从下拉菜单中选择启动配置。</span><span class="sxs-lookup"><span data-stu-id="0f54b-171">On the **Run** tab, choose the launch configuration from the dropdown menu.</span></span>  
     1.  <span data-ttu-id="0f54b-172">若要开始调试应用，请选择"开始调试"，这是启动配置下拉列表旁边的绿色三角形。</span><span class="sxs-lookup"><span data-stu-id="0f54b-172">To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.</span></span>  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio"代码运行"选项卡" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio代码运行选项卡" lightbox="./media/runvs.png":::
            <span data-ttu-id="0f54b-174">Visual Studio"代码运行"选项卡</span><span class="sxs-lookup"><span data-stu-id="0f54b-174">Visual Studio Code Run tab</span></span>  
         :::image-end:::  
         

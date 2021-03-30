@@ -69,7 +69,7 @@ ms.locfileid: "11397927"
     
 1.  <span data-ttu-id="0b921-133">选择 **"启发式"。**</span><span class="sxs-lookup"><span data-stu-id="0b921-133">Choose **alluring-shock**.</span></span>  <span data-ttu-id="0b921-134">将在左上角打开"项目选项"菜单。</span><span class="sxs-lookup"><span data-stu-id="0b921-134">The Project Options menu opens in the top-left corner.</span></span>  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text=""项目选项"菜单" lightbox="../media/beginners-html-setup2.msft.png":::
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="项目选项菜单" lightbox="../media/beginners-html-setup2.msft.png":::
        <span data-ttu-id="0b921-136">"项目选项"菜单</span><span class="sxs-lookup"><span data-stu-id="0b921-136">The Project Options menu</span></span>  
     :::image-end:::  
     

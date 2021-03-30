@@ -210,7 +210,7 @@ reset.onclick = () => {
       <!--![Docs.microsoft.com header changed to Aliceblue][ImageColorChangerHeaderAliceblue]  -->
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.microsoft.com头更改为"一角"":::
+      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.microsoft.com头更改为一角":::
          <span data-ttu-id="2a6c7-185">Docs.microsoft.com头更改为"一角"</span><span class="sxs-lookup"><span data-stu-id="2a6c7-185">Docs.microsoft.com header changed to Cornsilk</span></span> :::image-end:::
       
       <!--![Docs.microsoft.com header changed to Cornsilk][ImageColorChangerHeaderCornsilk]  -->

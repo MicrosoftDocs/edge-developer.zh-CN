@@ -109,7 +109,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <span data-ttu-id="618ce-125">应用程序**面板**中的"服务工作人员\*\*\*\*"窗格是 DevTools 中用于检查和调试服务工作者的主要位置。</span><span class="sxs-lookup"><span data-stu-id="618ce-125">The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.</span></span>  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text=""服务工作人员"窗格" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="服务工作人员窗格" lightbox="../media/service-workers-pane.msft.png":::
    <span data-ttu-id="618ce-127">" **服务工作人员"** 窗格</span><span class="sxs-lookup"><span data-stu-id="618ce-127">The **Service Workers** pane</span></span>  
 :::image-end:::  
 
@@ -149,7 +149,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <span data-ttu-id="618ce-160">如果您打开了两个或多个缓存，则缓存会显示在下面的 **"** 缓存存储"下拉列表下。</span><span class="sxs-lookup"><span data-stu-id="618ce-160">If you have two or more caches open, the caches display under the following **Cache Storage** dropdown.</span></span>  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text=""缓存存储"下拉列表" lightbox="../media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="缓存存储下拉列表" lightbox="../media/cache-pane-cache-storage.msft.png":::
    <span data-ttu-id="618ce-162">" **缓存存储"** 下拉列表</span><span class="sxs-lookup"><span data-stu-id="618ce-162">The **Cache Storage** dropdown</span></span>  
 :::image-end:::  
 

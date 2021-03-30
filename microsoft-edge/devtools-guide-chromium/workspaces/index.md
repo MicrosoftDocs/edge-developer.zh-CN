@@ -210,7 +210,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  <span data-ttu-id="63627-188">选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="63627-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
 1.  <span data-ttu-id="63627-189">刷新页面。</span><span class="sxs-lookup"><span data-stu-id="63627-189">Refresh the page.</span></span>  <span data-ttu-id="63627-190">该 `<h1>` 元素仍在显示新文本。</span><span class="sxs-lookup"><span data-stu-id="63627-190">The `<h1>` element is still displaying the new text.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从"源"面板更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从源面板更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        <span data-ttu-id="63627-192">从"源" **面板更改** HTML</span><span class="sxs-lookup"><span data-stu-id="63627-192">Change HTML from the **Sources** panel</span></span>  
     :::image-end:::  
     

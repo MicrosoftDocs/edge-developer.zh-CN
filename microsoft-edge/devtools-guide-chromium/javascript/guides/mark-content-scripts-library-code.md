@@ -37,7 +37,7 @@ ms.locfileid: "11398950"
 1.  <span data-ttu-id="b2286-110">选择 **打开** "设置"的 **"框架库** 代码"一节的库代码 **面板**。</span><span class="sxs-lookup"><span data-stu-id="b2286-110">Choose the **Library code** panel which opens the **Framework Library Code** section of **Settings**.</span></span>  
 1.  <span data-ttu-id="b2286-111">打开" **将内容脚本标记为库代码"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="b2286-111">Turn on the **Mark content scripts as Library code** checkbox.</span></span>  
     
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用"将内容脚本标记为库代码"复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用将内容脚本标记为库代码复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
        <span data-ttu-id="b2286-113">启用" **将内容脚本标记为库代码"** 复选框</span><span class="sxs-lookup"><span data-stu-id="b2286-113">Enable the **Mark content scripts as Library code** checkbox</span></span>  
     :::image-end:::  
     

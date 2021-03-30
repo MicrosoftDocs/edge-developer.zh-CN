@@ -123,7 +123,7 @@ ms.locfileid: "11203968"
 
 ## <span data-ttu-id="9f455-196">合成图层</span><span class="sxs-lookup"><span data-stu-id="9f455-196">Composited layers</span></span>
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text=""复合图层" 窗格" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="复合图层 窗格" lightbox="../media/experiments-layers.msft.png":::
    <span data-ttu-id="9f455-198">"**复合图层**" 窗格</span><span class="sxs-lookup"><span data-stu-id="9f455-198">**Composited Layers** pane</span></span>
 :::image-end:::  
 

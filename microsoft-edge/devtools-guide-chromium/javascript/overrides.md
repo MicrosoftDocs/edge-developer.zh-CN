@@ -67,11 +67,11 @@ ms.locfileid: "11230962"
 
 <span data-ttu-id="bd63f-140">在源**编辑器**上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \ (右键单击\) ，然后选择"保存**替代"。**</span><span class="sxs-lookup"><span data-stu-id="bd63f-140">On the **Sources** editor, hover on the file name of your chosen file, open the contextual menu \(right-click\), and choose **Save for overrides**.</span></span>  
 
-:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在"源"编辑器中，添加要覆盖的文件的名称" lightbox="../media/javascript-overrides-file-name.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在源编辑器中，添加要覆盖的文件的名称" lightbox="../media/javascript-overrides-file-name.msft.png":::
    <span data-ttu-id="bd63f-142">在 **"源** "编辑器中，添加要覆盖的文件的名称</span><span class="sxs-lookup"><span data-stu-id="bd63f-142">In the **Sources** editor, add the name of the file to overrides</span></span>  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择"保存替代"" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择保存替代" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    <span data-ttu-id="bd63f-144">在上下文菜单上，选择 **"保存替代"**</span><span class="sxs-lookup"><span data-stu-id="bd63f-144">On the context menu, choose **Save for overrides**</span></span>  
 :::image-end:::  
 

@@ -111,13 +111,13 @@ start msedge –remote-debugging-port=9222
 
 <span data-ttu-id="c2c8c-170">从Visual Studio，打开 **"调试"** 菜单，然后选择 **"附加到进程"** 或选择 `Ctrl` + `Alt` + `P` 。</span><span class="sxs-lookup"><span data-stu-id="c2c8c-170">From Visual Studio, open the **Debug** menu and choose **Attach to Process** or select `Ctrl`+`Alt`+`P`.</span></span>  
 
-:::image type="complex" source="./media/attach-to-process.png" alt-text="选择"附加到进程"Visual Studio" lightbox="./media/attach-to-process.png":::
+:::image type="complex" source="./media/attach-to-process.png" alt-text="选择附加到进程 Visual Studio" lightbox="./media/attach-to-process.png":::
    <span data-ttu-id="c2c8c-172">选择 **"附加到进程"Visual Studio**</span><span class="sxs-lookup"><span data-stu-id="c2c8c-172">Choose **Attach to Process** in Visual Studio</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="c2c8c-173">从"**附加到进程**"对话框中，将**连接**类型设置为\*\*Chrome devtools 协议 websocket， (身份验证) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="c2c8c-173">From the **Attach to Process** dialog, set **Connection type** to **Chrome devtools protocol websocket (no authentication)**.</span></span>  <span data-ttu-id="c2c8c-174">在 **"连接目标** 文本框"中， `http://localhost:9222/` 键入并选择 `Enter` 。</span><span class="sxs-lookup"><span data-stu-id="c2c8c-174">In the **Connecting target** textbox, type `http://localhost:9222/` and select `Enter`.</span></span>  <span data-ttu-id="c2c8c-175">查看"附加到进程"对话框中列出的 Microsoft Edge 中已打开**选项卡的列表。**</span><span class="sxs-lookup"><span data-stu-id="c2c8c-175">Review the list of open tabs you have in Microsoft Edge listed out in the **Attach to Process** dialog.</span></span>  
 
-:::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置"附加到进程"对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
+:::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置附加到进程对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
    <span data-ttu-id="c2c8c-177">配置 **"附加到进程"** 对话框Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c2c8c-177">Configure the **Attach to Process** dialog in Visual Studio</span></span>  
 :::image-end:::  
 
@@ -129,7 +129,7 @@ start msedge –remote-debugging-port=9222
 
 <span data-ttu-id="c2c8c-184">Microsoft Visual Studio 和 Microsoft Edge 团队希望了解有关如何在 Visual Studio 中使用 JavaScript。</span><span class="sxs-lookup"><span data-stu-id="c2c8c-184">The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.</span></span>  <span data-ttu-id="c2c8c-185">若要发送反馈，请选择"发送反馈"**图标Visual Studio推**文[@VisualStudio@EdgeDevTools。][TwitterIntentTweetViualstudioEdgdevtools]</span><span class="sxs-lookup"><span data-stu-id="c2c8c-185">To send your feedback, choose the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].</span></span>  
 
-:::image type="complex" source="./media/feedback-icon.png" alt-text=""发送反馈"图标Visual Studio" lightbox="./media/feedback-icon.png":::
+:::image type="complex" source="./media/feedback-icon.png" alt-text="发送反馈图标Visual Studio" lightbox="./media/feedback-icon.png":::
    <span data-ttu-id="c2c8c-187">" **发送反馈** "图标Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c2c8c-187">The **Send Feedback** icon in Visual Studio</span></span>  
 :::image-end:::  
 

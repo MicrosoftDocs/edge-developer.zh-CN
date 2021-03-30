@@ -40,13 +40,13 @@ ms.locfileid: "11398222"
 
 1.  <span data-ttu-id="03ddd-111">选择 `Control` + `P` \ (Windows、Linux\) `Command` + `P` 或 \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="03ddd-111">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).</span></span>  <span data-ttu-id="03ddd-112">将 **打开"打开文件** "对话框。</span><span class="sxs-lookup"><span data-stu-id="03ddd-112">The **Open File** dialog opens.</span></span>  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text=""打开文件"对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="打开文件对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        <span data-ttu-id="03ddd-114">" **打开文件"** 对话框</span><span class="sxs-lookup"><span data-stu-id="03ddd-114">The **Open File** dialog</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="03ddd-115">从下拉列表中选择文件，或开始键入文件名，在自动完成框中突出显示正确的文件后 `Enter` 选择。</span><span class="sxs-lookup"><span data-stu-id="03ddd-115">Choose the file from the dropdown, or start typing the filename and select `Enter` once the correct file is highlighted in the autocomplete box.</span></span>  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在"打开文件"对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在打开文件对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
        <span data-ttu-id="03ddd-117">在"打开文件"对话框中 **键入** 文件名</span><span class="sxs-lookup"><span data-stu-id="03ddd-117">Type a filename in the **Open File** dialog</span></span>  
     :::image-end:::  
     
@@ -62,7 +62,7 @@ ms.locfileid: "11398222"
 
 <span data-ttu-id="03ddd-123">下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 的各个部分的资源。</span><span class="sxs-lookup"><span data-stu-id="03ddd-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="03ddd-124">如果你曾经想要检查**网络**工具中的资源，请将鼠标悬停在资源上，打开上下文菜单 \ (右键单击\) ，然后选择"网络"面板中的"展示 **"。**</span><span class="sxs-lookup"><span data-stu-id="03ddd-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text=""在网络"面板中显示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="在网络面板中显示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **<span data-ttu-id="03ddd-126">"在网络"面板中显示</span><span class="sxs-lookup"><span data-stu-id="03ddd-126">Reveal in Network panel</span></span>**  
 :::image-end:::  
 
@@ -83,7 +83,7 @@ ms.locfileid: "11398222"
 1.  <span data-ttu-id="03ddd-134">选择 **"源** "工具打开"源 **"** 面板。</span><span class="sxs-lookup"><span data-stu-id="03ddd-134">Choose the **Sources** tool to open the **Sources** panel.</span></span>  
 1.  <span data-ttu-id="03ddd-135">选择 **"页面** "面板以显示页面的资源。</span><span class="sxs-lookup"><span data-stu-id="03ddd-135">Choose the **Page** panel to show the resources of the page.</span></span>  <span data-ttu-id="03ddd-136">将 **打开"页面** "窗格。</span><span class="sxs-lookup"><span data-stu-id="03ddd-136">The **Page** pane opens.</span></span>  
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="“页面”窗格" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="页面窗格" lightbox="../media/resources-sources-page-empty.msft.png":::
        <span data-ttu-id="03ddd-138">" **页面"** 面板</span><span class="sxs-lookup"><span data-stu-id="03ddd-138">The **Page** panel</span></span>  
     :::image-end:::  
     
@@ -110,13 +110,13 @@ ms.locfileid: "11398222"
 1.  <span data-ttu-id="03ddd-155">打开 **"页面"** 面板。</span><span class="sxs-lookup"><span data-stu-id="03ddd-155">Open the **Page** panel.</span></span>  <span data-ttu-id="03ddd-156">导航到["按目录浏览"。](#browse-by-directory)</span><span class="sxs-lookup"><span data-stu-id="03ddd-156">Navigate to [Browse by directory](#browse-by-directory).</span></span>  
 1.  <span data-ttu-id="03ddd-157">选择 **"更多选项** `...` "并禁用 **"按文件夹分组"。**</span><span class="sxs-lookup"><span data-stu-id="03ddd-157">Choose **More Options** `...` and disable **Group By Folder**.</span></span>  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text=""按文件夹分组"选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="按文件夹分组选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        <span data-ttu-id="03ddd-159">" **按文件夹分组"** 选项</span><span class="sxs-lookup"><span data-stu-id="03ddd-159">The **Group By Folder** option</span></span>  
     :::image-end:::  
     
     <span data-ttu-id="03ddd-160">资源按文件类型组织。</span><span class="sxs-lookup"><span data-stu-id="03ddd-160">Resources are organized by file type.</span></span>  <span data-ttu-id="03ddd-161">在每个文件类型中，资源按字母顺序组织。</span><span class="sxs-lookup"><span data-stu-id="03ddd-161">Within each file type the resources are organized alphabetically.</span></span>  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="禁用"按文件夹分组"后的页面面板" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="禁用按文件夹分组后的页面面板" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        <span data-ttu-id="03ddd-163">禁用 **"** 按文件夹分组" **后的页面面板**</span><span class="sxs-lookup"><span data-stu-id="03ddd-163">The **Page** panel after disabling **Group By Folder**</span></span>  
     :::image-end:::  
     

@@ -48,14 +48,14 @@ ms.locfileid: "11398971"
        :::column span="":::
           <span data-ttu-id="eebac-115">选择黄色 **警告栏中** 的"转到问题"按钮。</span><span class="sxs-lookup"><span data-stu-id="eebac-115">Choose the **Go to Issues** button in the yellow warning bar.</span></span>  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时，转到黄色警告栏中的"问题"按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时，转到黄色警告栏中的问题按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
              <span data-ttu-id="eebac-117">检测到 **问题时** ，黄色警告栏中的"转到问题"按钮。</span><span class="sxs-lookup"><span data-stu-id="eebac-117">The **Go to Issues** button in the yellow warning bar when Issues are detected.</span></span>  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           <span data-ttu-id="eebac-118">或者，从"**更多**工具"**菜单中选择"问题"。**</span><span class="sxs-lookup"><span data-stu-id="eebac-118">Alternatively, choose **Issues** from the **More tools** menu.</span></span>  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text=""更多工具"菜单中的"问题"工具" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="更多工具菜单中的问题工具" lightbox="../media//issues-more-tools-menu.msft.png":::
              <span data-ttu-id="eebac-120">**"** 更多工具 **"菜单中的"问题"** 工具</span><span class="sxs-lookup"><span data-stu-id="eebac-120">**Issues** tool in **More tools** menu</span></span>  
           :::image-end:::  
        :::column-end:::
@@ -63,13 +63,13 @@ ms.locfileid: "11398971"
     
 1.  <span data-ttu-id="eebac-121">如有必要 **，选择"重新加载** "页面按钮。</span><span class="sxs-lookup"><span data-stu-id="eebac-121">Choose the **Reload page** button, if necessary.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中"重新加载"页面按钮中的"问题"工具" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中重新加载页面按钮中的问题工具" lightbox="../media/issues-tab-before-refresh.msft.png":::
        <span data-ttu-id="eebac-123">**DevTools** Drawer 中"重新加载"页面 **按钮中的"问题"** 工具</span><span class="sxs-lookup"><span data-stu-id="eebac-123">**Issues** tool in the DevTools Drawer with **Reload page** button</span></span>  
     :::image-end:::  
 
     <span data-ttu-id="eebac-124">控制台中报告 **的问题很难** 理解，如下图中的 Cookie 警告。</span><span class="sxs-lookup"><span data-stu-id="eebac-124">The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.</span></span>  <span data-ttu-id="eebac-125">根据报告的问题，可能不明确您必须执行哪些工作。</span><span class="sxs-lookup"><span data-stu-id="eebac-125">Based upon the reported issues, it may not be clear what you must do.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="具有三个 Cookie 问题的 DevTools Drawer 中的"问题"工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="具有三个 Cookie 问题的 DevTools Drawer 中的问题工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
        <span data-ttu-id="eebac-127">**具有** 三个 Cookie 问题的 DevTools Drawer 中的问题工具</span><span class="sxs-lookup"><span data-stu-id="eebac-127">**Issues** tool in the DevTools Drawer with three cookie issues</span></span>  
     :::image-end:::  
     
@@ -92,7 +92,7 @@ ms.locfileid: "11398971"
     
 1.  <span data-ttu-id="eebac-138">选择受影响 **资源中的项目** 以查看详细信息。</span><span class="sxs-lookup"><span data-stu-id="eebac-138">Choose items in **AFFECTED RESOURCES** to view details.</span></span>  <span data-ttu-id="eebac-139">在下面的示例中，将 **跨站点 Cookie** 标记为安全问题会影响一个 Cookie 和两个请求。</span><span class="sxs-lookup"><span data-stu-id="eebac-139">In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="受影响的资源在"问题"工具中打开" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="受影响的资源在问题工具中打开" lightbox="../media/issues-tab-affected-resources.msft.png":::
        <span data-ttu-id="eebac-141">受影响的资源在 DevTools **的"** 问题"工具中打开</span><span class="sxs-lookup"><span data-stu-id="eebac-141">Affected resources open in the **Issues** tool in the DevTools Drawer</span></span>  
     :::image-end:::  
     

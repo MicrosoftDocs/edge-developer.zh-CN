@@ -57,7 +57,7 @@ ms.locfileid: "11399028"
 
 <span data-ttu-id="aab54-118">默认情况下，某些工具在主面板中打开，而其他工具显示在"箱 **"中**。</span><span class="sxs-lookup"><span data-stu-id="aab54-118">By default, some tools open in the main panel, while others appear in the **Drawer**.</span></span>  <span data-ttu-id="aab54-119">选择 **"更多** \ (`...` \) "以在"箱"中打开 **工具**。</span><span class="sxs-lookup"><span data-stu-id="aab54-119">Choose **More** \(`...`\) to open a tool in the **Drawer**.</span></span>  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="打开"箱"按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="打开箱按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    <span data-ttu-id="aab54-121">打开"箱 **"按钮**</span><span class="sxs-lookup"><span data-stu-id="aab54-121">The button to open the **Drawer**</span></span>  
 :::image-end:::  
 
@@ -71,7 +71,7 @@ ms.locfileid: "11399028"
     
 *   <span data-ttu-id="aab54-126">若要将工具从主面板移动到工具箱，请将鼠标悬停在工具上，打开上下文菜单 \ (右键单击\) 并选择"移动到**底部"。**</span><span class="sxs-lookup"><span data-stu-id="aab54-126">To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu \(right-click\) and choose **Move to bottom**.</span></span>  
     
-    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到"箱"" lightbox="../media/move-to-drawer.msft.png":::
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到箱" lightbox="../media/move-to-drawer.msft.png":::
        <span data-ttu-id="aab54-128">将工具从主面板移动到 **"箱"**</span><span class="sxs-lookup"><span data-stu-id="aab54-128">Move tool from the main panel to the **Drawer**</span></span>
     :::image-end:::  
     

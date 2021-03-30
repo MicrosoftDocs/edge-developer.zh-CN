@@ -45,7 +45,7 @@ ms.locfileid: "11398712"
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从"方向"列表中选择纵向向下" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从方向列表中选择纵向向下" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
              <span data-ttu-id="47691-113">从 `Portrait upside down` "**入职培训"列表中选择**</span><span class="sxs-lookup"><span data-stu-id="47691-113">Choose `Portrait upside down` from the **Orientation** list</span></span>  
           :::image-end:::  
        :::column-end:::

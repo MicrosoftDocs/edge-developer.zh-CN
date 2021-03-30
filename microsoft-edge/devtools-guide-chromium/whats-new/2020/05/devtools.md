@@ -118,7 +118,7 @@ ms.locfileid: "11408323"
 
 <span data-ttu-id="36e87-164">在 Microsoft Edge 84 中，\*\*\*\* 当您在网络日志中为资源打开网络工具中的"详细信息"窗格时，它[现在将具有焦点][DevToolsNetworkLog]。 [][DevToolsNetworkDetails]</span><span class="sxs-lookup"><span data-stu-id="36e87-164">In Microsoft Edge 84, the [Details pane][DevToolsNetworkDetails] in the **Network** tool now takes focus when you open it for a resource in the [Network Log][DevToolsNetworkLog].</span></span>  <span data-ttu-id="36e87-165">此更改允许屏幕阅读器读出"详细信息"窗格的内容并 **与之** 交互。</span><span class="sxs-lookup"><span data-stu-id="36e87-165">This change allows screen readers to read out and interact with the content of the **Details** pane.</span></span>  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text=""网络"面板中的"详细信息"窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="网络面板中的详细信息窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
    <span data-ttu-id="36e87-167">" **网络** "工具中的" **详细信息** "窗格在打开时将焦点</span><span class="sxs-lookup"><span data-stu-id="36e87-167">The **Details** pane in the **Network** tool takes focus when opened</span></span>
 :::image-end:::  
 
@@ -134,7 +134,7 @@ ms.locfileid: "11408323"
 
 <span data-ttu-id="36e87-176">To get started， navigate to [Find and Fix Problems with the Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].</span><span class="sxs-lookup"><span data-stu-id="36e87-176">To get started, navigate to [Find And Fix Problems With The Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].</span></span>  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools"箱"中的"问题"工具" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools箱中的问题工具" lightbox="../../media/2020/05/issues.msft.png":::
    <span data-ttu-id="36e87-178">DevTools"箱"中的"问题"工具\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="36e87-178">The **Issues** tool in the DevTools Drawer</span></span>  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ ms.locfileid: "11408323"
 
 <span data-ttu-id="36e87-227">当你通过选择值来选择[][DevtoolsCssReferenceColorPicker]颜色选取器或在"样式"窗格中的颜色表示形式\*\*\*\* 之间交替选择颜色时，将显示空格分隔 `Shift` `background-color` 的参数语法。</span><span class="sxs-lookup"><span data-stu-id="36e87-227">When you choose colors with the [Color Picker][DevtoolsCssReferenceColorPicker] or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.</span></span>  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在"样式"窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在样式窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
   <span data-ttu-id="36e87-229">在"样式"窗格中使用 **空格分隔** 的参数</span><span class="sxs-lookup"><span data-stu-id="36e87-229">Using space-separated arguments in the **Styles** pane</span></span>  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ ms.locfileid: "11408323"
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text=""清单"窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="清单窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   <span data-ttu-id="36e87-247">"清单"窗格中 **的应用** 快捷方式</span><span class="sxs-lookup"><span data-stu-id="36e87-247">App shortcuts in the **Manifest** pane</span></span>  
 :::image-end:::  
 
