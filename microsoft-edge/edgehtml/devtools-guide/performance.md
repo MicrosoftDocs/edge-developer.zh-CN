@@ -33,7 +33,7 @@ ms.locfileid: "11232143"
 
 ### <span data-ttu-id="3be63-114">工具栏</span><span class="sxs-lookup"><span data-stu-id="3be63-114">Toolbar</span></span>
 
-<span data-ttu-id="3be63-115">使用**工具栏上的**"开始停止  /  \*\*\*\*" (或) 启动和结束 `Ctrl+E` 性能跟踪。</span><span class="sxs-lookup"><span data-stu-id="3be63-115">Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace.</span></span> <span data-ttu-id="3be63-116">在"性能"选项卡上，绿色指示器\*\*\*\* 将闪烁以指示正在录制。</span><span class="sxs-lookup"><span data-stu-id="3be63-116">A green indicator will apear on the **Performance** tab to indicate a recording is in progress.</span></span> 
+<span data-ttu-id="3be63-115">使用**工具栏上的**"开始停止  /  " (或) 启动和结束 `Ctrl+E` 性能跟踪。</span><span class="sxs-lookup"><span data-stu-id="3be63-115">Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace.</span></span> <span data-ttu-id="3be63-116">在"性能"选项卡上，绿色指示器 将闪烁以指示正在录制。</span><span class="sxs-lookup"><span data-stu-id="3be63-116">A green indicator will apear on the **Performance** tab to indicate a recording is in progress.</span></span> 
 
 ![性能面板工具栏](./media/performance_toolbar.png)
 
@@ -57,9 +57,9 @@ ms.locfileid: "11232143"
 
  - <span data-ttu-id="3be63-133">**时间线上的应用** 生命周期标记 (如页面导航 [、DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded)和页面 [加载) 记录](https://developer.mozilla.org/docs/Web/Events/load) 配置文件时自动记录。</span><span class="sxs-lookup"><span data-stu-id="3be63-133">**App lifecycle marks** on the timeline (such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/docs/Web/Events/load)) are automatically logged as you record a profile.</span></span>
 
- - <span data-ttu-id="3be63-134">**用户标记** 是自定义标记，你可以选择从代码或 DevTools 控制台内调用 [Performance.mark () ](https://developer.mozilla.org/docs/Web/API/Performance/mark) 方法进行 [**添加**](./console.md)。</span><span class="sxs-lookup"><span data-stu-id="3be63-134">**User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md).</span></span> <span data-ttu-id="3be63-135">可以使用[Performance.measure () ](https://developer.mozilla.org/docs/Web/API/Performance/measure)方法将开始标记和结束标记分组为一个命名度量值。 \*\* \*\*</span><span class="sxs-lookup"><span data-stu-id="3be63-135">You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/docs/Web/API/Performance/measure) method.</span></span> 
+ - <span data-ttu-id="3be63-134">**用户标记** 是自定义标记，你可以选择从代码或 DevTools 控制台内调用 [Performance.mark () ](https://developer.mozilla.org/docs/Web/API/Performance/mark) 方法进行 [**添加**](./console.md)。</span><span class="sxs-lookup"><span data-stu-id="3be63-134">**User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md).</span></span> <span data-ttu-id="3be63-135">可以使用[Performance.measure () ](https://developer.mozilla.org/docs/Web/API/Performance/measure)方法将开始标记和结束标记分组为一个命名度量值。  </span><span class="sxs-lookup"><span data-stu-id="3be63-135">You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/docs/Web/API/Performance/measure) method.</span></span> 
 
-<span data-ttu-id="3be63-136">选择一个时间范围后，可以从工具栏进一步放大，或者重置缩放和\*\*\*\* 清除选择以\*\*\*\* 返回到性能跟踪视图的完整视图 (未选择任何) 。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="3be63-136">Once you have selected a time range, you can further **Zoom in** from the toolbar, or **Reset zoom** and **Clear selection** to return to the full view of the performance trace (with no time range selected).</span></span> <span data-ttu-id="3be63-137">这些控件也可从右键单击上下文菜单中获得。</span><span class="sxs-lookup"><span data-stu-id="3be63-137">These controls are also available from the right-click context menu.</span></span>
+<span data-ttu-id="3be63-136">选择一个时间范围后，可以从工具栏进一步放大，或者重置缩放和 清除选择以 返回到性能跟踪视图的完整视图 (未选择任何) 。 </span><span class="sxs-lookup"><span data-stu-id="3be63-136">Once you have selected a time range, you can further **Zoom in** from the toolbar, or **Reset zoom** and **Clear selection** to return to the full view of the performance trace (with no time range selected).</span></span> <span data-ttu-id="3be63-137">这些控件也可从右键单击上下文菜单中获得。</span><span class="sxs-lookup"><span data-stu-id="3be63-137">These controls are also available from the right-click context menu.</span></span>
 
 ![性能面板时间线](./media/performance_timeline.png)
 
@@ -137,11 +137,11 @@ ms.locfileid: "11232143"
 
 1. **<span data-ttu-id="3be63-222">事件列表排序控件</span><span class="sxs-lookup"><span data-stu-id="3be63-222">Event list sort control</span></span>**
 
-    <span data-ttu-id="3be63-223">使用"**按下拉列表排序**"控件在开始时间或[](#event-list)持续时间之间切换事件\*\* 列表顺序 (*包括) 。*</span><span class="sxs-lookup"><span data-stu-id="3be63-223">Use the **Sort by** dropdown control to toggle the [Event list](#event-list) order between *Start time* or *Duration (inclusive*).</span></span> <span data-ttu-id="3be63-224">这还会更改所选日程表 [详细信息的视图](#selected-timeline-details)。</span><span class="sxs-lookup"><span data-stu-id="3be63-224">This also changes the view of the [Selected timeline details](#selected-timeline-details).</span></span>
+    <span data-ttu-id="3be63-223">使用"**按下拉列表排序**"控件在开始时间或[](#event-list)持续时间之间切换事件 列表顺序 (*包括) 。*</span><span class="sxs-lookup"><span data-stu-id="3be63-223">Use the **Sort by** dropdown control to toggle the [Event list](#event-list) order between *Start time* or *Duration (inclusive*).</span></span> <span data-ttu-id="3be63-224">这还会更改所选日程表 [详细信息的视图](#selected-timeline-details)。</span><span class="sxs-lookup"><span data-stu-id="3be63-224">This also changes the view of the [Selected timeline details](#selected-timeline-details).</span></span>
 
 2. **<span data-ttu-id="3be63-225">按帧分组事件</span><span class="sxs-lookup"><span data-stu-id="3be63-225">Group events by frame</span></span>**
 
-    <span data-ttu-id="3be63-226">使用按\*\*\*\* 帧切换的组顶级事件，将顶级事件 (HTML 分析、布局 *、DOM*事件等 ) 分组到其相应的工作单元 (或"frame") 中（动画/视觉更新发生期间）。</span><span class="sxs-lookup"><span data-stu-id="3be63-226">Use the **Group top level events by frames** toggle to group top-level events (*HTML parsing, Layout, DOM event,* etc.) into their corresponding unit of work (or "frame") during periods of time where animations/visual updates were occurring.</span></span> <span data-ttu-id="3be63-227">帧被视为与其他事件一样，因此可以排序/筛选它们，并提供在事件列表中单击时包含\*\*[时间摘要](#event-list)。</span><span class="sxs-lookup"><span data-stu-id="3be63-227">The frames are treated like other events, so they can be sorted/filtered and provide an *Inclusive time* summary when clicked in the [Event list](#event-list).</span></span>
+    <span data-ttu-id="3be63-226">使用按 帧切换的组顶级事件，将顶级事件 (HTML 分析、布局 *、DOM*事件等 ) 分组到其相应的工作单元 (或"frame") 中（动画/视觉更新发生期间）。</span><span class="sxs-lookup"><span data-stu-id="3be63-226">Use the **Group top level events by frames** toggle to group top-level events (*HTML parsing, Layout, DOM event,* etc.) into their corresponding unit of work (or "frame") during periods of time where animations/visual updates were occurring.</span></span> <span data-ttu-id="3be63-227">帧被视为与其他事件一样，因此可以排序/筛选它们，并提供在事件列表中单击时包含[时间摘要](#event-list)。</span><span class="sxs-lookup"><span data-stu-id="3be63-227">The frames are treated like other events, so they can be sorted/filtered and provide an *Inclusive time* summary when clicked in the [Event list](#event-list).</span></span>
 
 3. **<span data-ttu-id="3be63-228">事件列表筛选器控件</span><span class="sxs-lookup"><span data-stu-id="3be63-228">Event list filter controls</span></span>**
 
@@ -162,9 +162,9 @@ ms.locfileid: "11232143"
 
 <span data-ttu-id="3be63-238">事件*列表*按时间顺序列出所选时间跨度内发生的[](#cpu-utilization)浏览器子系统事件。</span><span class="sxs-lookup"><span data-stu-id="3be63-238">The *Event list* gives you a chronological list of [browser subsystem events](#cpu-utilization) that occurred during the selected span of time.</span></span> 
 
-<span data-ttu-id="3be63-239">单击任何条目以填充 **该项目的 Selected** 事件详细信息图表。</span><span class="sxs-lookup"><span data-stu-id="3be63-239">Click on any entry to populate the **Selected event details** chart for that item.</span></span> <span data-ttu-id="3be63-240">具有嵌套事件/函数的条目将显示其执行函数所花费的包含的\*\* (\*\* 时间及其调用**) 的其他任何函数，以及仅在调用函数本身的正文中花费**的独占\*\* (时间（) 次）。</span><span class="sxs-lookup"><span data-stu-id="3be63-240">Entries with nested events / functions will show their **inclusive** (time spent executing the function *and* any other functions it called) and **exclusive** (time spent only within the body of the calling function itself) times displayed in the chart.</span></span>
+<span data-ttu-id="3be63-239">单击任何条目以填充 **该项目的 Selected** 事件详细信息图表。</span><span class="sxs-lookup"><span data-stu-id="3be63-239">Click on any entry to populate the **Selected event details** chart for that item.</span></span> <span data-ttu-id="3be63-240">具有嵌套事件/函数的条目将显示其执行函数所花费的包含的 ( 时间及其调用**) 的其他任何函数，以及仅在调用函数本身的正文中花费**的独占 (时间（) 次）。</span><span class="sxs-lookup"><span data-stu-id="3be63-240">Entries with nested events / functions will show their **inclusive** (time spent executing the function *and* any other functions it called) and **exclusive** (time spent only within the body of the calling function itself) times displayed in the chart.</span></span>
 
-<span data-ttu-id="3be63-241">右键单击任何项以打开上下文菜单以仅筛选时间线到该事件，并查看调试器 (或元素面板中负责事件的源代码[\*\*\*\*](./debugger.md)（如果适用) ）。 [\*\*\*\*](./elements.md)</span><span class="sxs-lookup"><span data-stu-id="3be63-241">Right-click on any entry to open the context menu to filter the timeline to only that event and view the source code responsible for the event in the [**Debugger**](./debugger.md) (or [**Elements**](./elements.md) panel, if applicable).</span></span>
+<span data-ttu-id="3be63-241">右键单击任何项以打开上下文菜单以仅筛选时间线到该事件，并查看调试器 (或元素面板中负责事件的源代码[](./debugger.md)（如果适用) ）。 [](./elements.md)</span><span class="sxs-lookup"><span data-stu-id="3be63-241">Right-click on any entry to open the context menu to filter the timeline to only that event and view the source code responsible for the event in the [**Debugger**](./debugger.md) (or [**Elements**](./elements.md) panel, if applicable).</span></span>
 
 ### <span data-ttu-id="3be63-242">选定的日程表详细信息</span><span class="sxs-lookup"><span data-stu-id="3be63-242">Selected timeline details</span></span>
 
@@ -172,7 +172,7 @@ ms.locfileid: "11232143"
 
 ### <span data-ttu-id="3be63-245">选定的事件详细信息</span><span class="sxs-lookup"><span data-stu-id="3be63-245">Selected event details</span></span>
 
-<span data-ttu-id="3be63-246">此报告提供有关所选事件的详细信息，包括开始时间、执行\*\* 线程类型 (例如，下载 *、UI、\*\*呈现*) 以及\*\* 特定于特定事件类型的其他上下文详细信息。</span><span class="sxs-lookup"><span data-stu-id="3be63-246">This report provides further information about the selected event, including *Start time*, the executing thread type (for example, *Download*, *UI*, *Render*), and other contextual details specific to the specific event type.</span></span> <span data-ttu-id="3be63-247">例如， *事件侦听器* 类型提供指向回调函数和计划调用 *堆栈* 的 *调试程序链接*。</span><span class="sxs-lookup"><span data-stu-id="3be63-247">For example, *Event listener* types provide debugger links to the *Callback function* and *Scheduling call stack*.</span></span>
+<span data-ttu-id="3be63-246">此报告提供有关所选事件的详细信息，包括开始时间、执行 线程类型 (例如，下载 *、UI、呈现*) 以及 特定于特定事件类型的其他上下文详细信息。</span><span class="sxs-lookup"><span data-stu-id="3be63-246">This report provides further information about the selected event, including *Start time*, the executing thread type (for example, *Download*, *UI*, *Render*), and other contextual details specific to the specific event type.</span></span> <span data-ttu-id="3be63-247">例如， *事件侦听器* 类型提供指向回调函数和计划调用 *堆栈* 的 *调试程序链接*。</span><span class="sxs-lookup"><span data-stu-id="3be63-247">For example, *Event listener* types provide debugger links to the *Callback function* and *Scheduling call stack*.</span></span>
 
 ## <span data-ttu-id="3be63-248">JavaScript 调用堆栈</span><span class="sxs-lookup"><span data-stu-id="3be63-248">JavaScript call stacks</span></span>
 
@@ -201,7 +201,7 @@ ms.locfileid: "11232143"
 
 ### <span data-ttu-id="3be63-273">启动分析会话时出错</span><span class="sxs-lookup"><span data-stu-id="3be63-273">An error occurred while starting the profiling session</span></span>
 
-<span data-ttu-id="3be63-274">如果看到以下错误消息：在"\*\*\*\* 性能"工具中启动分析会话时出错，请按照以下步骤操作以寻找解决方法。</span><span class="sxs-lookup"><span data-stu-id="3be63-274">If you see this error message: **An error occurred while starting the profiling session** in the Performance tool, follow these steps for a workaround.</span></span>
+<span data-ttu-id="3be63-274">如果看到以下错误消息：在" 性能"工具中启动分析会话时出错，请按照以下步骤操作以寻找解决方法。</span><span class="sxs-lookup"><span data-stu-id="3be63-274">If you see this error message: **An error occurred while starting the profiling session** in the Performance tool, follow these steps for a workaround.</span></span>
 
 1. <span data-ttu-id="3be63-275">按 `Windows Key`  +  `R` 。</span><span class="sxs-lookup"><span data-stu-id="3be63-275">Press `Windows Key` + `R`.</span></span>
 
@@ -225,7 +225,7 @@ ms.locfileid: "11232143"
 
 ### <span data-ttu-id="3be63-288">停止分析会话时出错。</span><span class="sxs-lookup"><span data-stu-id="3be63-288">An error occurred while stopping the profiling session.</span></span>
 
-<span data-ttu-id="3be63-289">如果看到以下错误消息：在停止\*\*\*\* 性能工具中的分析会话时出错，请按照以下步骤操作以寻找解决方法。</span><span class="sxs-lookup"><span data-stu-id="3be63-289">If you see this error message: **An error occurred while stopping the profiling session** in the Performance tool, follow these steps for a workaround.</span></span>
+<span data-ttu-id="3be63-289">如果看到以下错误消息：在停止 性能工具中的分析会话时出错，请按照以下步骤操作以寻找解决方法。</span><span class="sxs-lookup"><span data-stu-id="3be63-289">If you see this error message: **An error occurred while stopping the profiling session** in the Performance tool, follow these steps for a workaround.</span></span>
 
 1. <span data-ttu-id="3be63-290">按 `Windows Key`  +  `R` 。</span><span class="sxs-lookup"><span data-stu-id="3be63-290">Press `Windows Key` + `R`.</span></span>
 

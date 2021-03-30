@@ -48,9 +48,9 @@ ms.locfileid: "11232276"
 !["$$"选择器的示例使用](../media/console_cmd_$$.png)
 
 ### <span data-ttu-id="e04bf-130">$0、$1、$2,...</span><span class="sxs-lookup"><span data-stu-id="e04bf-130">$0, $1, $2,...</span></span>
-<span data-ttu-id="e04bf-131">返回"元素"面板中选定的[\*\*\*\*](../elements.md)最后一个元素，其中表示当前选定的项，是之前选定的项， `$0` `$1` 等等。</span><span class="sxs-lookup"><span data-stu-id="e04bf-131">Returns the last elements selected in the [**Elements**](../elements.md) panel, where `$0` represents the currently selected item, `$1` was the selected item before that, and so on.</span></span>
+<span data-ttu-id="e04bf-131">返回"元素"面板中选定的[](../elements.md)最后一个元素，其中表示当前选定的项，是之前选定的项， `$0` `$1` 等等。</span><span class="sxs-lookup"><span data-stu-id="e04bf-131">Returns the last elements selected in the [**Elements**](../elements.md) panel, where `$0` represents the currently selected item, `$1` was the selected item before that, and so on.</span></span>
 
-<span data-ttu-id="e04bf-132">示例：打开"元素"选项卡上的\*\*\*\* DevTools，按以激活 Select 元素工具，然后使用鼠标单击此页上 `CTRL + B` 的某个区域。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="e04bf-132">Example: Open  DevTools to the **Elements** tab, press `CTRL + B` to activate the **Select element** tool and click some area on this page with your mouse.</span></span> <span data-ttu-id="e04bf-133">现在打开控制台并键入 `$0` 以返回你刚刚单击的元素。</span><span class="sxs-lookup"><span data-stu-id="e04bf-133">Now open the Console and type `$0` to return the element you just clicked.</span></span>
+<span data-ttu-id="e04bf-132">示例：打开"元素"选项卡上的 DevTools，按以激活 Select 元素工具，然后使用鼠标单击此页上 `CTRL + B` 的某个区域。 </span><span class="sxs-lookup"><span data-stu-id="e04bf-132">Example: Open  DevTools to the **Elements** tab, press `CTRL + B` to activate the **Select element** tool and click some area on this page with your mouse.</span></span> <span data-ttu-id="e04bf-133">现在打开控制台并键入 `$0` 以返回你刚刚单击的元素。</span><span class="sxs-lookup"><span data-stu-id="e04bf-133">Now open the Console and type `$0` to return the element you just clicked.</span></span>
 
 !["$0"选择器的示例使用](../media/console_cmd_$0.png)
 

@@ -34,12 +34,12 @@ ms.locfileid: "11397816"
 
 ## <a name="how-allocation-instrumentation-on-timeline-works"></a><span data-ttu-id="815d7-106">日程表上的分配检测的工作原理</span><span class="sxs-lookup"><span data-stu-id="815d7-106">How Allocation instrumentation on timeline works</span></span>  
 
-<span data-ttu-id="815d7-107">**时间线上的分配检测**将堆探查器的详细快照信息与\*\*\*\* 性能面板的增量更新和**跟踪**相结合。</span><span class="sxs-lookup"><span data-stu-id="815d7-107">**Allocation instrumentation on timeline** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.</span></span>  <span data-ttu-id="815d7-108">同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。</span><span class="sxs-lookup"><span data-stu-id="815d7-108">Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.</span></span>  
+<span data-ttu-id="815d7-107">**时间线上的分配检测**将堆探查器的详细快照信息与 性能面板的增量更新和**跟踪**相结合。</span><span class="sxs-lookup"><span data-stu-id="815d7-107">**Allocation instrumentation on timeline** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.</span></span>  <span data-ttu-id="815d7-108">同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。</span><span class="sxs-lookup"><span data-stu-id="815d7-108">Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.</span></span>  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-<span data-ttu-id="815d7-109">**时间线上的分配** 检测会在整个录制 \ (中定期获取堆快照) 每 50 毫秒\) 一次在录制结束时获取一个最终快照。</span><span class="sxs-lookup"><span data-stu-id="815d7-109">**Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms\) and one final snapshot at the end of the recording.</span></span>  
+<span data-ttu-id="815d7-109">**时间线上的分配** 检测会在整个录制 \(中定期获取堆快照) 每 50 毫秒\) 一次在录制结束时获取一个最终快照。</span><span class="sxs-lookup"><span data-stu-id="815d7-109">**Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms\) and one final snapshot at the end of the recording.</span></span>  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="时间线上的分配检测" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **<span data-ttu-id="815d7-111">时间线上的分配检测</span><span class="sxs-lookup"><span data-stu-id="815d7-111">Allocation instrumentation on timeline</span></span>**  
@@ -101,7 +101,7 @@ ms.locfileid: "11397816"
 
 > [!NOTE]
 > <span data-ttu-id="815d7-141">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="815d7-141">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="815d7-142">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。</span><span class="sxs-lookup"><span data-stu-id="815d7-142">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) and is authored by [Meggin Kearney][MegginKearney] \(Technical Writer\).</span></span>  
+> <span data-ttu-id="815d7-142">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由 [Meggin Kearney][MegginKearney] \(Technical Writer\) 。</span><span class="sxs-lookup"><span data-stu-id="815d7-142">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) and is authored by [Meggin Kearney][MegginKearney] \(Technical Writer\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="815d7-144">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="815d7-144">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

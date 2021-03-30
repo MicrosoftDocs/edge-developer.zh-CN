@@ -35,7 +35,7 @@ ms.locfileid: "11397879"
 
 #### [<a name="how-to-meet-wcag-20"></a><span data-ttu-id="447f7-114">如何满足 WCAG 2.0</span><span class="sxs-lookup"><span data-stu-id="447f7-114">How to Meet WCAG 2.0</span></span>](https://www.w3.org/WAI/WCAG20/quickref)  
 
-<span data-ttu-id="447f7-115">有关 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求的快速参考 (成功) 和技术。</span><span class="sxs-lookup"><span data-stu-id="447f7-115">A quick reference to Web Content Accessibility Guidelines \(WCAG\) 2.0 requirements (success criteria) and techniques.</span></span>
+<span data-ttu-id="447f7-115">有关 Web 内容辅助功能指南 \(WCAG\) 2.0 要求的快速参考 (成功) 和技术。</span><span class="sxs-lookup"><span data-stu-id="447f7-115">A quick reference to Web Content Accessibility Guidelines \(WCAG\) 2.0 requirements (success criteria) and techniques.</span></span>
 
 #### [<a name="html5accessibility"></a><span data-ttu-id="447f7-116">HTML5Accessibility</span><span class="sxs-lookup"><span data-stu-id="447f7-116">HTML5Accessibility</span></span>](https://html5accessibility.com)  
 

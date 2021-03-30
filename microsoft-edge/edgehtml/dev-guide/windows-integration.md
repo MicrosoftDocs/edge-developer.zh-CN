@@ -22,7 +22,7 @@ ms.locfileid: "11232304"
 
 ## <span data-ttu-id="6af65-105">付款请求 API</span><span class="sxs-lookup"><span data-stu-id="6af65-105">Payment Request API</span></span>  
 
-<span data-ttu-id="6af65-106">付款请求 [API](./windows-integration/payment-request-api.md) 是一个开放的跨浏览器标准，使浏览器能够充当商家、消费者以及消费者存储在云中的付款方式 \ (（如信用卡\) ）之间的中介。</span><span class="sxs-lookup"><span data-stu-id="6af65-106">The [Payment Request API](./windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.</span></span>  
+<span data-ttu-id="6af65-106">付款请求 [API](./windows-integration/payment-request-api.md) 是一个开放的跨浏览器标准，使浏览器能够充当商家、消费者以及消费者存储在云中的付款方式 \(（如信用卡\) ）之间的中介。</span><span class="sxs-lookup"><span data-stu-id="6af65-106">The [Payment Request API](./windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.</span></span>  
 
 ## <span data-ttu-id="6af65-107">Web 身份验证和 Windows Hello</span><span class="sxs-lookup"><span data-stu-id="6af65-107">Web Authentication and Windows Hello</span></span>  
 

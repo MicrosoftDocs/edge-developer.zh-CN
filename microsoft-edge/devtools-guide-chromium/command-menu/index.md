@@ -38,7 +38,7 @@ ms.locfileid: "11398026"
 
 ## <a name="open-the-command-menu"></a><span data-ttu-id="a8312-109">打开命令菜单</span><span class="sxs-lookup"><span data-stu-id="a8312-109">Open the Command Menu</span></span>  
 
-<span data-ttu-id="a8312-110">选择 `Control` + `Shift` + `P` \ (Windows、Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="a8312-110">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="a8312-111">或者选择 **"自定义和控制 DevTools** \ (`...` \) >**运行命令"。**</span><span class="sxs-lookup"><span data-stu-id="a8312-111">Or choose **Customize And Control DevTools** \(`...`\) > **Run Command**.</span></span>  
+<span data-ttu-id="a8312-110">选择 `Control` + `Shift` + `P` \(Windows、Linux\) `Command` + `Shift` + `P` 或 \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="a8312-110">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="a8312-111">或者选择 **"自定义和控制 DevTools** \(`...` \) >**运行命令"。**</span><span class="sxs-lookup"><span data-stu-id="a8312-111">Or choose **Customize And Control DevTools** \(`...`\) > **Run Command**.</span></span>  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令" lightbox="../media/command-menu-options-run-command.msft.png":::
    <span data-ttu-id="a8312-113">运行命令</span><span class="sxs-lookup"><span data-stu-id="a8312-113">Run Command</span></span>  

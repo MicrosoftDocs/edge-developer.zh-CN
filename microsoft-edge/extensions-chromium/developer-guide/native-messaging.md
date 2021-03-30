@@ -27,7 +27,7 @@ ms.locfileid: "11343064"
 
 ## <span data-ttu-id="e166f-114">步骤 1 - 向扩展清单添加权限</span><span class="sxs-lookup"><span data-stu-id="e166f-114">Step 1 - Add permissions to the extension manifest</span></span>  
 
-<span data-ttu-id="e166f-115">将 `nativeMessaging` 权限添加到扩展 **manifest.js** 文件的权限。</span><span class="sxs-lookup"><span data-stu-id="e166f-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="e166f-116">下面的代码段是一个有关manifest.js\*\* 的示例\*\*。</span><span class="sxs-lookup"><span data-stu-id="e166f-116">The following code snippet is an example of **manifest.json**.</span></span>  
+<span data-ttu-id="e166f-115">将 `nativeMessaging` 权限添加到扩展 **manifest.js** 文件的权限。</span><span class="sxs-lookup"><span data-stu-id="e166f-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="e166f-116">下面的代码段是一个有关manifest.js 的示例。</span><span class="sxs-lookup"><span data-stu-id="e166f-116">The following code snippet is an example of **manifest.json**.</span></span>  
 
 ```json
     {
@@ -98,7 +98,7 @@ ms.locfileid: "11343064"
       *   <span data-ttu-id="e166f-132">在 Windows 设备上，可以使用包含清单文件的目录的相对路径。</span><span class="sxs-lookup"><span data-stu-id="e166f-132">On Windows devices, you may use relative paths to the directory that contains the manifest file.</span></span>  
       *   <span data-ttu-id="e166f-133">在 macOS 和 Linux 上，路径必须是绝对路径。</span><span class="sxs-lookup"><span data-stu-id="e166f-133">On macOS and Linux, the path must be absolute.</span></span>  
       
-      <span data-ttu-id="e166f-134">主机进程从当前目录设置为包含主机二进制文件的目录开始。</span><span class="sxs-lookup"><span data-stu-id="e166f-134">The host process starts with the current directory set to the directory that contains the host binary.</span></span>  <span data-ttu-id="e166f-135">例如 \ (Windows\) ，如果此参数设置为 ，则使用当前目录 `C:\Application\nm_host.exe` \ (`C:\Application\` \) 启动二进制文件。</span><span class="sxs-lookup"><span data-stu-id="e166f-135">For example \(Windows\), if this parameter is set to `C:\Application\nm_host.exe`, the binary is started using the current directory \(`C:\Application\`\).</span></span>  
+      <span data-ttu-id="e166f-134">主机进程从当前目录设置为包含主机二进制文件的目录开始。</span><span class="sxs-lookup"><span data-stu-id="e166f-134">The host process starts with the current directory set to the directory that contains the host binary.</span></span>  <span data-ttu-id="e166f-135">例如 \(Windows\) ，如果此参数设置为 ，则使用当前目录 `C:\Application\nm_host.exe` \(`C:\Application\` \) 启动二进制文件。</span><span class="sxs-lookup"><span data-stu-id="e166f-135">For example \(Windows\), if this parameter is set to `C:\Application\nm_host.exe`, the binary is started using the current directory \(`C:\Application\`\).</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -128,9 +128,9 @@ ms.locfileid: "11343064"
 
 1.  <span data-ttu-id="e166f-143">导航 `edge://extensions` 到 ，然后打开开发人员模式切换按钮。</span><span class="sxs-lookup"><span data-stu-id="e166f-143">Navigate to `edge://extensions`, and then turn on the Developer mode toggle button.</span></span>  
 1.  <span data-ttu-id="e166f-144">选择 **"加载解压缩"，** 然后选择要旁加载的扩展包。</span><span class="sxs-lookup"><span data-stu-id="e166f-144">Choose **Load unpacked**, and then select your extension package to sideload.</span></span>  
-1.  <span data-ttu-id="e166f-145">选择“确定”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="e166f-145">Choose **OK**.</span></span>  
+1.  <span data-ttu-id="e166f-145">选择“确定”。</span><span class="sxs-lookup"><span data-stu-id="e166f-145">Choose **OK**.</span></span>  
 1.  <span data-ttu-id="e166f-146">导航 `edge://extensions` 到页面并验证扩展是否列出。</span><span class="sxs-lookup"><span data-stu-id="e166f-146">Navigate to `edge://extensions` page and verify your extension is listed.</span></span>  
-1.  <span data-ttu-id="e166f-147">从页面上的扩展 `microsoft_catalog_extension_id` (\ (ID\) 复制密钥。</span><span class="sxs-lookup"><span data-stu-id="e166f-147">Copy the key from `microsoft_catalog_extension_id` \(ID\) from the extension listing on the page.</span></span>  
+1.  <span data-ttu-id="e166f-147">从页面上的扩展 `microsoft_catalog_extension_id` (\(ID\) 复制密钥。</span><span class="sxs-lookup"><span data-stu-id="e166f-147">Copy the key from `microsoft_catalog_extension_id` \(ID\) from the extension listing on the page.</span></span>  
 
 <span data-ttu-id="e166f-148">准备好将扩展分发给用户时，将扩展发布到 Microsoft Edge 加载项存储。</span><span class="sxs-lookup"><span data-stu-id="e166f-148">When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons store.</span></span>  <span data-ttu-id="e166f-149">已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。</span><span class="sxs-lookup"><span data-stu-id="e166f-149">The extension ID of the published extension may differ from the ID used while sideloading your extension.</span></span>  <span data-ttu-id="e166f-150">如果 ID 发生更改，则使用已发布扩展的 ID 在主机清单 `allowed_origins` 文件中进行更新。</span><span class="sxs-lookup"><span data-stu-id="e166f-150">If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.</span></span>  
 

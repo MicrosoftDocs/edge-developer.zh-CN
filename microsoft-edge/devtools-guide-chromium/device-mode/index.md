@@ -217,7 +217,7 @@ ms.locfileid: "11439449"
 <span data-ttu-id="66df6-234">若要仅限制 CPU 而不限制网络，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="66df6-234">To throttle the CPU only and not the network, complete the following steps.</span></span>
 
 1.  <span data-ttu-id="66df6-235">选择“**性能**”面板，然后选择“**捕获设置**”\（![捕获设置](../media/capture-settings-icon.msft.png)\）。</span><span class="sxs-lookup"><span data-stu-id="66df6-235">Choose the **Performance** panel, and choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\).</span></span>
-1.  <span data-ttu-id="66df6-236">选择 **CPU**  > **速度降低至 1/4\*\*\*\* 1/6**。</span><span class="sxs-lookup"><span data-stu-id="66df6-236">Choose **CPU** > **4x slowdown** or **6x slowdown**.</span></span>
+1.  <span data-ttu-id="66df6-236">选择 **CPU**  > **速度降低至 1/4 1/6**。</span><span class="sxs-lookup"><span data-stu-id="66df6-236">Choose **CPU** > **4x slowdown** or **6x slowdown**.</span></span>
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="“性能”面板中的“CPU”列表" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
        <span data-ttu-id="66df6-238">“**性能**”面板中的“**CPU**”列表</span><span class="sxs-lookup"><span data-stu-id="66df6-238">The **CPU** list in the **Performance** panel</span></span>  

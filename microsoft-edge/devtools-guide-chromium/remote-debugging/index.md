@@ -126,10 +126,10 @@ ms.locfileid: "11439563"
 
 <span data-ttu-id="e9e50-173">导航到开发工具实例的“**元素**”工具，然后将鼠标悬停在某个元素上以在 Android 设备的视口中突出显示。</span><span class="sxs-lookup"><span data-stu-id="e9e50-173">Navigate to the **Elements** tool of your DevTools instance, and hover on an element to highlight it in the viewport of your Android device.</span></span>  
 
-<span data-ttu-id="e9e50-174">还可以在 Android 设备屏幕上选择一个元素，然后在“\*\*元素 \*\*”工具中将其选中。</span><span class="sxs-lookup"><span data-stu-id="e9e50-174">You may also select an element on your Android device screen to select it in the **Elements** tool.</span></span>  <span data-ttu-id="e9e50-175">选择开发工具实例中“**选择元素**” \(![选择元素](../media/select-element-icon.msft.png)\)图标，然后在 Android 设备屏幕上选择元素。</span><span class="sxs-lookup"><span data-stu-id="e9e50-175">Choose **Select Element** \(![Select Element](../media/select-element-icon.msft.png)\) icon on your DevTools instance, and then select the element on your Android device screen.</span></span>  
+<span data-ttu-id="e9e50-174">还可以在 Android 设备屏幕上选择一个元素，然后在“元素 ”工具中将其选中。</span><span class="sxs-lookup"><span data-stu-id="e9e50-174">You may also select an element on your Android device screen to select it in the **Elements** tool.</span></span>  <span data-ttu-id="e9e50-175">选择开发工具实例中“**选择元素**” \(![选择元素](../media/select-element-icon.msft.png)\)图标，然后在 Android 设备屏幕上选择元素。</span><span class="sxs-lookup"><span data-stu-id="e9e50-175">Choose **Select Element** \(![Select Element](../media/select-element-icon.msft.png)\) icon on your DevTools instance, and then select the element on your Android device screen.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="e9e50-176">第一次选择后将禁用“\*\* 选择元素\*\*”，因此每次使用功能时都必须重新启用。</span><span class="sxs-lookup"><span data-stu-id="e9e50-176">**Select Element** is disabled after the first selection, so you must re-enable it every time you want to use the feature.</span></span>  
+> <span data-ttu-id="e9e50-176">第一次选择后将禁用“ 选择元素”，因此每次使用功能时都必须重新启用。</span><span class="sxs-lookup"><span data-stu-id="e9e50-176">**Select Element** is disabled after the first selection, so you must re-enable it every time you want to use the feature.</span></span>  
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a><span data-ttu-id="e9e50-177">将 Android 屏幕截屏到开发计算机</span><span class="sxs-lookup"><span data-stu-id="e9e50-177">Screencast your Android screen to your development machine</span></span>  
 

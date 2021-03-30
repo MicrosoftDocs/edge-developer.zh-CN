@@ -50,19 +50,19 @@ ms.locfileid: "11398411"
       <span data-ttu-id="5a10b-115">通用</span><span class="sxs-lookup"><span data-stu-id="5a10b-115">General Availability</span></span>  
    :::column-end:::
    :::column span="2":::
-      *   <span data-ttu-id="5a10b-116">Win32 C/C++ \ (Q4 2020\) </span><span class="sxs-lookup"><span data-stu-id="5a10b-116">Win32 C/C++ \(Q4 2020\)</span></span>  
-      *   <span data-ttu-id="5a10b-117">.NET \ (Q4 2020\) </span><span class="sxs-lookup"><span data-stu-id="5a10b-117">.NET \(Q4 2020\)</span></span>  
+      *   <span data-ttu-id="5a10b-116">Win32 C/C++ \(Q4 2020\) </span><span class="sxs-lookup"><span data-stu-id="5a10b-116">Win32 C/C++ \(Q4 2020\)</span></span>  
+      *   <span data-ttu-id="5a10b-117">.NET \(Q4 2020\) </span><span class="sxs-lookup"><span data-stu-id="5a10b-117">.NET \(Q4 2020\)</span></span>  
       *   [<span data-ttu-id="5a10b-118">WinUI 3.0</span><span class="sxs-lookup"><span data-stu-id="5a10b-118">WinUI 3.0</span></span>][GithubMicrosoftUiXamlRoadmap]  
    :::column-end:::
 :::row-end:::  
 
 ## <a name="webview2-runtime-and-installer"></a><span data-ttu-id="5a10b-119">WebView2 运行时和安装程序</span><span class="sxs-lookup"><span data-stu-id="5a10b-119">WebView2 Runtime and Installer</span></span>  
 
-<span data-ttu-id="5a10b-120">[通过常青分发模型][ConceptDistributionEvergreenModel] ，你可以将 WebView2 运行时的目标安装或链接安装到用户计算机上。</span><span class="sxs-lookup"><span data-stu-id="5a10b-120">[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.</span></span>  <span data-ttu-id="5a10b-121">Evergreen WebView2 运行时和安装程序已达到通用版本 \ (GA\) 。</span><span class="sxs-lookup"><span data-stu-id="5a10b-121">The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).</span></span>  
+<span data-ttu-id="5a10b-120">[通过常青分发模型][ConceptDistributionEvergreenModel] ，你可以将 WebView2 运行时的目标安装或链接安装到用户计算机上。</span><span class="sxs-lookup"><span data-stu-id="5a10b-120">[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.</span></span>  <span data-ttu-id="5a10b-121">Evergreen WebView2 运行时和安装程序已达到通用版本 \(GA\) 。</span><span class="sxs-lookup"><span data-stu-id="5a10b-121">The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).</span></span>  
 
 ## <a name="fixed-version"></a><span data-ttu-id="5a10b-122">固定版本</span><span class="sxs-lookup"><span data-stu-id="5a10b-122">Fixed version</span></span>  
 
-<span data-ttu-id="5a10b-123">[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。</span><span class="sxs-lookup"><span data-stu-id="5a10b-123">[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.</span></span>  <span data-ttu-id="5a10b-124">固定版本已达到通用版本 \ (GA\) 。</span><span class="sxs-lookup"><span data-stu-id="5a10b-124">The Fixed Version has reached General Availability \(GA\).</span></span>  
+<span data-ttu-id="5a10b-123">[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。</span><span class="sxs-lookup"><span data-stu-id="5a10b-123">[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.</span></span>  <span data-ttu-id="5a10b-124">固定版本已达到通用版本 \(GA\) 。</span><span class="sxs-lookup"><span data-stu-id="5a10b-124">The Fixed Version has reached General Availability \(GA\).</span></span>  
 
 ## <a name="general-availability"></a><span data-ttu-id="5a10b-125">一般可用性</span><span class="sxs-lookup"><span data-stu-id="5a10b-125">General availability</span></span>  
 

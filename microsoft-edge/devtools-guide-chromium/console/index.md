@@ -97,11 +97,11 @@ ms.locfileid: "11399118"
       <span data-ttu-id="a4408-125">下图中， **控制台显示在** DevTools 主页旁边。</span><span class="sxs-lookup"><span data-stu-id="a4408-125">In the following figure, the **Console** is shown next to the DevTools homepage.</span></span>  
       
       :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="DevTools 主页旁边的控制台工具" lightbox="../media/devtools-console-empty.msft.png":::
-         <span data-ttu-id="a4408-127">DevTools 主页旁边的控制台工具\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="a4408-127">The **Console** tool next to the DevTools homepage</span></span>  
+         <span data-ttu-id="a4408-127">DevTools 主页旁边的控制台工具</span><span class="sxs-lookup"><span data-stu-id="a4408-127">The **Console** tool next to the DevTools homepage</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="a4408-128">在下图中，使用控制台更改页面顶部标题后将显示同\*\*\*\* 一页。</span><span class="sxs-lookup"><span data-stu-id="a4408-128">In the following figure, the same page is shown after using the **Console** to change the top heading of the page.</span></span>
+      <span data-ttu-id="a4408-128">在下图中，使用控制台更改页面顶部标题后将显示同 一页。</span><span class="sxs-lookup"><span data-stu-id="a4408-128">In the following figure, the same page is shown after using the **Console** to change the top heading of the page.</span></span>
       
       :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="使用控制台更改页面顶部标题" lightbox="../media/devtools-console-h1-changed.msft.png":::
          <span data-ttu-id="a4408-130">使用 **控制台** 更改页面顶部标题</span><span class="sxs-lookup"><span data-stu-id="a4408-130">Use the **Console** to change the top heading of the page</span></span>  

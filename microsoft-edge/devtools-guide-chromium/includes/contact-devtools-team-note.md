@@ -13,7 +13,7 @@ ms.locfileid: "11205640"
 ---
 <span data-ttu-id="b38b6-101">使用以下选项讨论帖子中的新功能和更改，或与 DevTools 相关的任何其他内容。</span><span class="sxs-lookup"><span data-stu-id="b38b6-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
 
-*   <span data-ttu-id="b38b6-102">使用“**发送反馈**”图标发送反馈，或在 DevTools 中选择`Alt`+`Shift`+`I` \ (Windows、Linux\) 或 `Option`+`Shift`+`I` \ (macOS\)。</span><span class="sxs-lookup"><span data-stu-id="b38b6-102">Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.</span></span>  
+*   <span data-ttu-id="b38b6-102">使用“**发送反馈**”图标发送反馈，或在 DevTools 中选择`Alt`+`Shift`+`I` \(Windows、Linux\) 或 `Option`+`Shift`+`I` \(macOS\)。</span><span class="sxs-lookup"><span data-stu-id="b38b6-102">Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.</span></span>  
 *   <span data-ttu-id="b38b6-103">发推 [@EdgeDevTools][PostTweetEdgeDevTools]。</span><span class="sxs-lookup"><span data-stu-id="b38b6-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span></span>  
 *   <span data-ttu-id="b38b6-104">向[我们想要的 Web][TheWebWeWant] 提交建议。</span><span class="sxs-lookup"><span data-stu-id="b38b6-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
 *   <span data-ttu-id="b38b6-105">若要提交有关本文的错误，请使用以下“**反馈**” 部分。</span><span class="sxs-lookup"><span data-stu-id="b38b6-105">To file bugs about this article, use the following **Feedback** section.</span></span>  

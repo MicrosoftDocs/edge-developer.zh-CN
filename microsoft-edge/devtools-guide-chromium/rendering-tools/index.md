@@ -78,7 +78,7 @@ ms.locfileid: "11397998"
 
 ### <a name="style-tools"></a><span data-ttu-id="85d68-150">样式：工具</span><span class="sxs-lookup"><span data-stu-id="85d68-150">Style: Tools</span></span>  
 
-<span data-ttu-id="85d68-151">在"性能"工具 **中录制** 。</span><span class="sxs-lookup"><span data-stu-id="85d68-151">Take a recording in the **Performance** tool.</span></span>  <span data-ttu-id="85d68-152">检查录制大型事件 `Recalculate Style` \ (紫色\) 。</span><span class="sxs-lookup"><span data-stu-id="85d68-152">Check the recording for large `Recalculate Style` events \(displayed in purple\).</span></span>  
+<span data-ttu-id="85d68-151">在"性能"工具 **中录制** 。</span><span class="sxs-lookup"><span data-stu-id="85d68-151">Take a recording in the **Performance** tool.</span></span>  <span data-ttu-id="85d68-152">检查录制大型事件 `Recalculate Style` \(紫色\) 。</span><span class="sxs-lookup"><span data-stu-id="85d68-152">Check the recording for large `Recalculate Style` events \(displayed in purple\).</span></span>  
 
 <!--todo: add Recording section when available  -->  
 
@@ -158,7 +158,7 @@ ms.locfileid: "11397998"
 
 ### <a name="paint-and-composite-tools"></a><span data-ttu-id="85d68-204">绘制和复合：工具</span><span class="sxs-lookup"><span data-stu-id="85d68-204">Paint and composite: Tools</span></span>  
 
-<span data-ttu-id="85d68-205">想知道绘制需要多久或多久发生一次画？</span><span class="sxs-lookup"><span data-stu-id="85d68-205">Want to know how long painting takes or how often painting occurs?</span></span>  <span data-ttu-id="85d68-206">检查["性能"面板][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]中的"启用高级\*\*\*\* 绘制检测"设置，然后录制。</span><span class="sxs-lookup"><span data-stu-id="85d68-206">Check the [Enable advanced paint instrumentation][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] setting in the **Performance** panel and then take a recording.</span></span>  <span data-ttu-id="85d68-207">如果大部分呈现时间都用于绘制，则存在绘制问题。</span><span class="sxs-lookup"><span data-stu-id="85d68-207">If most of your rendering time is spent painting, you have paint problems.</span></span>  
+<span data-ttu-id="85d68-205">想知道绘制需要多久或多久发生一次画？</span><span class="sxs-lookup"><span data-stu-id="85d68-205">Want to know how long painting takes or how often painting occurs?</span></span>  <span data-ttu-id="85d68-206">检查["性能"面板][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]中的"启用高级 绘制检测"设置，然后录制。</span><span class="sxs-lookup"><span data-stu-id="85d68-206">Check the [Enable advanced paint instrumentation][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] setting in the **Performance** panel and then take a recording.</span></span>  <span data-ttu-id="85d68-207">如果大部分呈现时间都用于绘制，则存在绘制问题。</span><span class="sxs-lookup"><span data-stu-id="85d68-207">If most of your rendering time is spent painting, you have paint problems.</span></span>  
 
 <!--
 :::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -216,7 +216,7 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 > [!NOTE]
 > <span data-ttu-id="85d68-226">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="85d68-226">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="85d68-227">原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)由[一位（][KayceBasques]该链接人）\ (Technical Writer、Chrome DevTools \& Lighthouse\) 和[Meggin Kearney][MegginKearney] \ (Tech Writer\) 创作。</span><span class="sxs-lookup"><span data-stu-id="85d68-227">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).</span></span>  
+> <span data-ttu-id="85d68-227">原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)由[一位（][KayceBasques]该链接人）\(Technical Writer、Chrome DevTools \& Lighthouse\) 和[Meggin Kearney][MegginKearney] \(Tech Writer\) 创作。</span><span class="sxs-lookup"><span data-stu-id="85d68-227">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="85d68-229">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="85d68-229">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

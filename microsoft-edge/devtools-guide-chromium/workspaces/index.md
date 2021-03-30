@@ -117,7 +117,7 @@ ms.locfileid: "11399244"
     
 ### <a name="set-up-devtools"></a><span data-ttu-id="63627-144">设置 DevTools</span><span class="sxs-lookup"><span data-stu-id="63627-144">Set up DevTools</span></span>  
 
-1.  <span data-ttu-id="63627-145">选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 打开 DevTools\*\*\*\* 的控制台面板。</span><span class="sxs-lookup"><span data-stu-id="63627-145">Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.</span></span>  
+1.  <span data-ttu-id="63627-145">选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 打开 DevTools 的控制台面板。</span><span class="sxs-lookup"><span data-stu-id="63627-145">Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        <span data-ttu-id="63627-147">控制台**面板**</span><span class="sxs-lookup"><span data-stu-id="63627-147">The **Console** panel</span></span>  
@@ -152,7 +152,7 @@ ms.locfileid: "11399244"
     
 1.  <span data-ttu-id="63627-164">选择 **"元素"** 工具。</span><span class="sxs-lookup"><span data-stu-id="63627-164">Choose the **Elements** tool.</span></span>  
 1.  <span data-ttu-id="63627-165">将元素的 `color` 属性值 `<h1>` 更改为你最喜爱的颜色。</span><span class="sxs-lookup"><span data-stu-id="63627-165">Change the value of the `color` property of the `<h1>` element to your favorite color.</span></span>  
-    <span data-ttu-id="63627-166">请记住，您需要选择 DOM 树中的元素，才能在"样式"窗格中显示应用于该元素的 `<h1>` CSS\*\*\*\* 规则。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="63627-166">Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to display the CSS rules applied to it in the **Styles** pane.</span></span>  <span data-ttu-id="63627-167">旁边的绿色点表示你进行的任何更改 `styles.css:1` 都映射到 `~/Desktop/app/styles.css` 。</span><span class="sxs-lookup"><span data-stu-id="63627-167">The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.</span></span>  
+    <span data-ttu-id="63627-166">请记住，您需要选择 DOM 树中的元素，才能在"样式"窗格中显示应用于该元素的 `<h1>` CSS 规则。 </span><span class="sxs-lookup"><span data-stu-id="63627-166">Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to display the CSS rules applied to it in the **Styles** pane.</span></span>  <span data-ttu-id="63627-167">旁边的绿色点表示你进行的任何更改 `styles.css:1` 都映射到 `~/Desktop/app/styles.css` 。</span><span class="sxs-lookup"><span data-stu-id="63627-167">The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="文件链接的绿色指示器" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        <span data-ttu-id="63627-169">文件链接的绿色指示器</span><span class="sxs-lookup"><span data-stu-id="63627-169">The green indicator that the file is linked</span></span>  
@@ -205,9 +205,9 @@ In short, the **DOM Tree** `!==` HTML.
 
 1.  <span data-ttu-id="63627-182">选择 **"源"** 工具。</span><span class="sxs-lookup"><span data-stu-id="63627-182">Choose the **Sources** tool.</span></span>  
 1.  <span data-ttu-id="63627-183">选择 **"页面"** 面板。</span><span class="sxs-lookup"><span data-stu-id="63627-183">Choose the **Page** panel.</span></span>  
-1.  <span data-ttu-id="63627-184">选择\*\* (索引) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="63627-184">Choose **(index)**.</span></span>  <span data-ttu-id="63627-185">将打开页面的 HTML。</span><span class="sxs-lookup"><span data-stu-id="63627-185">The HTML for the page opens.</span></span>  
+1.  <span data-ttu-id="63627-184">选择 (索引) 。 </span><span class="sxs-lookup"><span data-stu-id="63627-184">Choose **(index)**.</span></span>  <span data-ttu-id="63627-185">将打开页面的 HTML。</span><span class="sxs-lookup"><span data-stu-id="63627-185">The HTML for the page opens.</span></span>  
 1.  <span data-ttu-id="63627-186">用 `<h1>I ❤️  Cake</h1>` 取代 `<h1>Workspaces Demo</h1>`。</span><span class="sxs-lookup"><span data-stu-id="63627-186">Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.</span></span>  <span data-ttu-id="63627-187">查看下图。</span><span class="sxs-lookup"><span data-stu-id="63627-187">Review the following figure.</span></span>  
-1.  <span data-ttu-id="63627-188">选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="63627-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
+1.  <span data-ttu-id="63627-188">选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="63627-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
 1.  <span data-ttu-id="63627-189">刷新页面。</span><span class="sxs-lookup"><span data-stu-id="63627-189">Refresh the page.</span></span>  <span data-ttu-id="63627-190">该 `<h1>` 元素仍在显示新文本。</span><span class="sxs-lookup"><span data-stu-id="63627-190">The `<h1>` element is still displaying the new text.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从源面板更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -218,18 +218,18 @@ In short, the **DOM Tree** `!==` HTML.
     
 ## <a name="step-4-save-a-javascript-change-to-disk"></a><span data-ttu-id="63627-195">步骤 4：将 JavaScript 更改保存到磁盘</span><span class="sxs-lookup"><span data-stu-id="63627-195">Step 4: Save a JavaScript change to disk</span></span>  
 
-<span data-ttu-id="63627-196">源 **面板** 也是对 JavaScript 进行更改的位置。</span><span class="sxs-lookup"><span data-stu-id="63627-196">The **Sources** panel is also the place to make changes to JavaScript.</span></span>  <span data-ttu-id="63627-197">但有时，你需要访问其他面板，如 **元素** 工具或 **控制台** 面板，同时对网站进行更改。</span><span class="sxs-lookup"><span data-stu-id="63627-197">But sometimes you need to access other panels, such as the **Elements** tool or the **Console** panel, while making changes to your site.</span></span>  <span data-ttu-id="63627-198">有一种方法可以与其他面板一\*\*\*\* 起打开"源"面板。</span><span class="sxs-lookup"><span data-stu-id="63627-198">There is a way to have the **Sources** panel open alongside other panels.</span></span>  
+<span data-ttu-id="63627-196">源 **面板** 也是对 JavaScript 进行更改的位置。</span><span class="sxs-lookup"><span data-stu-id="63627-196">The **Sources** panel is also the place to make changes to JavaScript.</span></span>  <span data-ttu-id="63627-197">但有时，你需要访问其他面板，如 **元素** 工具或 **控制台** 面板，同时对网站进行更改。</span><span class="sxs-lookup"><span data-stu-id="63627-197">But sometimes you need to access other panels, such as the **Elements** tool or the **Console** panel, while making changes to your site.</span></span>  <span data-ttu-id="63627-198">有一种方法可以与其他面板一 起打开"源"面板。</span><span class="sxs-lookup"><span data-stu-id="63627-198">There is a way to have the **Sources** panel open alongside other panels.</span></span>  
 
 1.  <span data-ttu-id="63627-199">选择 **"元素"** 工具。</span><span class="sxs-lookup"><span data-stu-id="63627-199">Choose the **Elements** tool.</span></span>  
-1.  <span data-ttu-id="63627-200">选择 `Control` + `Shift` + `P` \ (Windows、Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="63627-200">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  <span data-ttu-id="63627-201">命令 **菜单** 将打开。</span><span class="sxs-lookup"><span data-stu-id="63627-201">The **Command Menu** opens.</span></span>  
-1.  <span data-ttu-id="63627-202">键入 `QS` ，然后选择"**显示快速源"。**</span><span class="sxs-lookup"><span data-stu-id="63627-202">Type `QS`, then choose **Show Quick Source**.</span></span>  <span data-ttu-id="63627-203">在 DevTools 窗口底部，现在有一个 **快速源** 面板。</span><span class="sxs-lookup"><span data-stu-id="63627-203">At the bottom of your DevTools window there is now a **Quick Source** panel.</span></span>  <span data-ttu-id="63627-204">面板显示内容，这是你在"源"面板中编辑的最后 `index.html` **一** 个文件。</span><span class="sxs-lookup"><span data-stu-id="63627-204">The panel is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.</span></span>  <span data-ttu-id="63627-205">快速**源**面板提供了"源"面板中的编辑器\*\*\*\*，以便您可以在打开其他面板的同时编辑文件。</span><span class="sxs-lookup"><span data-stu-id="63627-205">The **Quick Source** panel gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.</span></span>  
+1.  <span data-ttu-id="63627-200">选择 `Control` + `Shift` + `P` \(Windows、Linux\) `Command` + `Shift` + `P` 或 \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="63627-200">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  <span data-ttu-id="63627-201">命令 **菜单** 将打开。</span><span class="sxs-lookup"><span data-stu-id="63627-201">The **Command Menu** opens.</span></span>  
+1.  <span data-ttu-id="63627-202">键入 `QS` ，然后选择"**显示快速源"。**</span><span class="sxs-lookup"><span data-stu-id="63627-202">Type `QS`, then choose **Show Quick Source**.</span></span>  <span data-ttu-id="63627-203">在 DevTools 窗口底部，现在有一个 **快速源** 面板。</span><span class="sxs-lookup"><span data-stu-id="63627-203">At the bottom of your DevTools window there is now a **Quick Source** panel.</span></span>  <span data-ttu-id="63627-204">面板显示内容，这是你在"源"面板中编辑的最后 `index.html` **一** 个文件。</span><span class="sxs-lookup"><span data-stu-id="63627-204">The panel is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.</span></span>  <span data-ttu-id="63627-205">快速**源**面板提供了"源"面板中的编辑器，以便您可以在打开其他面板的同时编辑文件。</span><span class="sxs-lookup"><span data-stu-id="63627-205">The **Quick Source** panel gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开快速源面板" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        <span data-ttu-id="63627-207">使用 **命令菜单打开快速** 源 **面板**</span><span class="sxs-lookup"><span data-stu-id="63627-207">Open the **Quick Source** panel using **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="63627-208">选择 `Control` + `P` \ (Windows、Linux\) 或 `Command` + `P` \ (macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="63627-208">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="63627-209">查看下图。</span><span class="sxs-lookup"><span data-stu-id="63627-209">Review the following figure.</span></span>  
-1.  <span data-ttu-id="63627-210">键入 `script` ，然后选择\*\*应用/script.js。 \*\*</span><span class="sxs-lookup"><span data-stu-id="63627-210">Type `script`, then choose **app/script.js**.</span></span>  
+1.  <span data-ttu-id="63627-208">选择 `Control` + `P` \(Windows、Linux\) 或 `Command` + `P` \(macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="63627-208">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="63627-209">查看下图。</span><span class="sxs-lookup"><span data-stu-id="63627-209">Review the following figure.</span></span>  
+1.  <span data-ttu-id="63627-210">键入 `script` ，然后选择应用/script.js。 </span><span class="sxs-lookup"><span data-stu-id="63627-210">Type `script`, then choose **app/script.js**.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js打开文件对话框打开" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        <span data-ttu-id="63627-212">使用 `script.js` "打开 **文件"对话框** 打开</span><span class="sxs-lookup"><span data-stu-id="63627-212">Open `script.js` using the **Open File** dialog</span></span>  
@@ -238,14 +238,14 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > <span data-ttu-id="63627-213">演示 `Save Changes To Disk With Workspaces` 中的链接会定期设置样式。</span><span class="sxs-lookup"><span data-stu-id="63627-213">The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.</span></span>  
     
-1.  <span data-ttu-id="63627-214">使用"快速源"**面板script.js下面的\*\*\*\*代码。**</span><span class="sxs-lookup"><span data-stu-id="63627-214">Add the following code to the bottom of **script.js** using the **Quick Source** panel.</span></span>  
+1.  <span data-ttu-id="63627-214">使用"快速源"**面板script.js下面的代码。**</span><span class="sxs-lookup"><span data-stu-id="63627-214">Add the following code to the bottom of **script.js** using the **Quick Source** panel.</span></span>  
     
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  <span data-ttu-id="63627-215">选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="63627-215">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
+1.  <span data-ttu-id="63627-215">选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="63627-215">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
 1.  <span data-ttu-id="63627-216">刷新页面。</span><span class="sxs-lookup"><span data-stu-id="63627-216">Refresh the page.</span></span>  
     
     > [!NOTE]
@@ -290,7 +290,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \ (computer networking\) - Wikipedia"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
 
 > [!NOTE]
 > <span data-ttu-id="63627-231">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="63627-231">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

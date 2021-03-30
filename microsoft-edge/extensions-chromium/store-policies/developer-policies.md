@@ -18,13 +18,13 @@ ms.locfileid: "11343078"
 
 ## <span data-ttu-id="276c9-105">本文档的简介和目标</span><span class="sxs-lookup"><span data-stu-id="276c9-105">Introduction and Objective of this document</span></span>  
 
-<span data-ttu-id="276c9-106">感谢你有兴趣开发 Microsoft Edge 加载项存储的扩展。</span><span class="sxs-lookup"><span data-stu-id="276c9-106">Thank you for your interest in developing extensions for the Microsoft Edge Add-ons store.</span></span>  <span data-ttu-id="276c9-107">Microsoft Edge 加载项存储开发人员策略 \ (加载项应用商店开发人员策略\) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供[][MicrosoftPartnerCenter]此类扩展。</span><span class="sxs-lookup"><span data-stu-id="276c9-107">The Microsoft Edge Add-ons store developer policies \(Add-ons store developer policies\) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.</span></span>  
+<span data-ttu-id="276c9-106">感谢你有兴趣开发 Microsoft Edge 加载项存储的扩展。</span><span class="sxs-lookup"><span data-stu-id="276c9-106">Thank you for your interest in developing extensions for the Microsoft Edge Add-ons store.</span></span>  <span data-ttu-id="276c9-107">Microsoft Edge 加载项存储开发人员策略 \(加载项应用商店开发人员策略\) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供[][MicrosoftPartnerCenter]此类扩展。</span><span class="sxs-lookup"><span data-stu-id="276c9-107">The Microsoft Edge Add-ons store developer policies \(Add-ons store developer policies\) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.</span></span>  
 
 ## <span data-ttu-id="276c9-108">原则</span><span class="sxs-lookup"><span data-stu-id="276c9-108">Principles</span></span>  
 
 <span data-ttu-id="276c9-109">下面是一些入门准则：</span><span class="sxs-lookup"><span data-stu-id="276c9-109">A few principles to get you started:</span></span>  
 
-*   <span data-ttu-id="276c9-110">应在 Microsoft Edge 的扩展中提供独特且不同的值。</span><span class="sxs-lookup"><span data-stu-id="276c9-110">You should offer unique and distinct value within your extensions for Microsoft Edge.</span></span>  <span data-ttu-id="276c9-111">提供从 Microsoft Edge 加载项存储 \ (Microsoft Edge 加载项\) 下载扩展的极具吸引力) 。</span><span class="sxs-lookup"><span data-stu-id="276c9-111">Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store \(Microsoft Edge Add-ons\).</span></span>  
+*   <span data-ttu-id="276c9-110">应在 Microsoft Edge 的扩展中提供独特且不同的值。</span><span class="sxs-lookup"><span data-stu-id="276c9-110">You should offer unique and distinct value within your extensions for Microsoft Edge.</span></span>  <span data-ttu-id="276c9-111">提供从 Microsoft Edge 加载项存储 \(Microsoft Edge 加载项\) 下载扩展的极具吸引力) 。</span><span class="sxs-lookup"><span data-stu-id="276c9-111">Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store \(Microsoft Edge Add-ons\).</span></span>  
 *   <span data-ttu-id="276c9-112">不得在扩展功能、谁提供扩展等方面误导我们的联合用户。</span><span class="sxs-lookup"><span data-stu-id="276c9-112">You must not mislead our joint users about what your extension does, who is offering it, and so on.</span></span>  
 *   <span data-ttu-id="276c9-113">不得尝试欺骗用户、系统或生态系统。</span><span class="sxs-lookup"><span data-stu-id="276c9-113">You must not attempt to cheat users, the system or the ecosystem.</span></span>  <span data-ttu-id="276c9-114">我们的 Microsoft Edge 加载项中不存在任何类型的欺诈;是否进行评级和审核操作、信用卡欺诈或其他欺诈活动。</span><span class="sxs-lookup"><span data-stu-id="276c9-114">There is no place in our Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.</span></span>  
     
@@ -56,7 +56,7 @@ ms.locfileid: "11343078"
 
 #### <span data-ttu-id="276c9-131">1.1.5 提供适当的详细信息</span><span class="sxs-lookup"><span data-stu-id="276c9-131">1.1.5 Provide appropriate details</span></span>  
 
-<span data-ttu-id="276c9-132">您必须提供有关扩展和扩展一览 \ (metadata\) 功能的详细信息。</span><span class="sxs-lookup"><span data-stu-id="276c9-132">You must provide distinct and informative details about your extension and the functionality in listing \(metadata\) for your extension.</span></span>  <span data-ttu-id="276c9-133">你的扩展必须提供有价值且高质量的用户体验。</span><span class="sxs-lookup"><span data-stu-id="276c9-133">Your extension must provide a valuable and quality user experience.</span></span>  <span data-ttu-id="276c9-134">你的扩展还必须在 Microsoft Edge 加载项中具有活动状态。</span><span class="sxs-lookup"><span data-stu-id="276c9-134">Your extension must also have an active presence in Microsoft Edge Add-ons.</span></span>  
+<span data-ttu-id="276c9-132">您必须提供有关扩展和扩展一览 \(metadata\) 功能的详细信息。</span><span class="sxs-lookup"><span data-stu-id="276c9-132">You must provide distinct and informative details about your extension and the functionality in listing \(metadata\) for your extension.</span></span>  <span data-ttu-id="276c9-133">你的扩展必须提供有价值且高质量的用户体验。</span><span class="sxs-lookup"><span data-stu-id="276c9-133">Your extension must provide a valuable and quality user experience.</span></span>  <span data-ttu-id="276c9-134">你的扩展还必须在 Microsoft Edge 加载项中具有活动状态。</span><span class="sxs-lookup"><span data-stu-id="276c9-134">Your extension must also have an active presence in Microsoft Edge Add-ons.</span></span>  
 
 #### <span data-ttu-id="276c9-135">1.1.6 稳定性和性能</span><span class="sxs-lookup"><span data-stu-id="276c9-135">1.1.6 Stability and Performance</span></span>  
 
@@ -72,7 +72,7 @@ ms.locfileid: "11343078"
 
 <span data-ttu-id="276c9-143">对浏览器设置的任何更改都应明确记录在扩展说明中。</span><span class="sxs-lookup"><span data-stu-id="276c9-143">Any alteration to the browser settings should be explicitly documented in the description of your extension.</span></span>  
 
-<span data-ttu-id="276c9-144">您的扩展可能仅修改关键设置，以将 Microsoft 网页或服务替换为第三方 \ (（例如，要求使用第三方搜索引擎）或将主页设置为第三方 Web 属性\) （如果你被此类第三方雇用或以其他方式关联）。</span><span class="sxs-lookup"><span data-stu-id="276c9-144">Your extension may only revise key settings to replace a Microsoft webpage or service with that of a third-party \(such as require use of a third-party search engine or set the home page to a third-party web property\) if you are employed by or otherwise associated with such third-party.</span></span>  
+<span data-ttu-id="276c9-144">您的扩展可能仅修改关键设置，以将 Microsoft 网页或服务替换为第三方 \(（例如，要求使用第三方搜索引擎）或将主页设置为第三方 Web 属性\) （如果你被此类第三方雇用或以其他方式关联）。</span><span class="sxs-lookup"><span data-stu-id="276c9-144">Your extension may only revise key settings to replace a Microsoft webpage or service with that of a third-party \(such as require use of a third-party search engine or set the home page to a third-party web property\) if you are employed by or otherwise associated with such third-party.</span></span>  
 
 ### <span data-ttu-id="276c9-145">1.2 安全性</span><span class="sxs-lookup"><span data-stu-id="276c9-145">1.2 Security</span></span>  
 
@@ -89,7 +89,7 @@ ms.locfileid: "11343078"
 
 #### <span data-ttu-id="276c9-152">1.2.3 依赖其他软件</span><span class="sxs-lookup"><span data-stu-id="276c9-152">1.2.3 Dependency on other software</span></span>  
 
-<span data-ttu-id="276c9-153">扩展可能依赖于非集成软件 \ (例如其他产品、模块或服务\) 以提供主要功能，但您必须在说明中披露依赖项</span><span class="sxs-lookup"><span data-stu-id="276c9-153">Your extension may depend on non-integrated software \(such as another product, module, or service\) to deliver the primary functionality, provided you disclose the dependency in the description</span></span>  
+<span data-ttu-id="276c9-153">扩展可能依赖于非集成软件 \(例如其他产品、模块或服务\) 以提供主要功能，但您必须在说明中披露依赖项</span><span class="sxs-lookup"><span data-stu-id="276c9-153">Your extension may depend on non-integrated software \(such as another product, module, or service\) to deliver the primary functionality, provided you disclose the dependency in the description</span></span>  
 
 #### <span data-ttu-id="276c9-154">1.2.4 扩展更新</span><span class="sxs-lookup"><span data-stu-id="276c9-154">1.2.4 Extensions Update</span></span>  
 
@@ -125,7 +125,7 @@ ms.locfileid: "11343078"
 
 #### <span data-ttu-id="276c9-176">1.5.1 仅在必要时收集个人信息</span><span class="sxs-lookup"><span data-stu-id="276c9-176">1.5.1 Collect Personal Information only when necessary</span></span>  
 
-<span data-ttu-id="276c9-177">您的扩展可能会收集、访问、使用或传输个人信息 \ (包括 Web 浏览活动\) ;仅在需要且仅在公开公开、面向用户的功能中使用时。</span><span class="sxs-lookup"><span data-stu-id="276c9-177">Your extension may collect, access, use, or transmit Personal Information \(including web browsing activity\); only if required by and only for use in a prominently disclosed, user-facing feature.</span></span>  
+<span data-ttu-id="276c9-177">您的扩展可能会收集、访问、使用或传输个人信息 \(包括 Web 浏览活动\) ;仅在需要且仅在公开公开、面向用户的功能中使用时。</span><span class="sxs-lookup"><span data-stu-id="276c9-177">Your extension may collect, access, use, or transmit Personal Information \(including web browsing activity\); only if required by and only for use in a prominently disclosed, user-facing feature.</span></span>  
 
 #### <span data-ttu-id="276c9-178">1.5.2 维护隐私策略</span><span class="sxs-lookup"><span data-stu-id="276c9-178">1.5.2 Maintain a privacy policy</span></span>  
 
@@ -179,13 +179,13 @@ ms.locfileid: "11343078"
 
 *   <span data-ttu-id="276c9-217">如果你的扩展用于促进或收集社会性贡献，或进行促销性宣传活动或比赛，则必须遵循适用法律。</span><span class="sxs-lookup"><span data-stu-id="276c9-217">If your extension is used to facilitate or collect charitable contributions or to conduct a promotional sweepstakes or contest, you must do so in compliance with applicable law.</span></span>  
 *   <span data-ttu-id="276c9-218">您还必须明确声明，Microsoft 不是此次促销活动的集资者或主办方。</span><span class="sxs-lookup"><span data-stu-id="276c9-218">You must also state clearly that Microsoft is not the fundraiser or sponsor of the promotion.</span></span>  
-*   <span data-ttu-id="276c9-219">在扩展中出售的产品内产品/服务不得转换为任何合法有效的货币 \ (如美元、欧元等\) 或任何物理商品或服务。</span><span class="sxs-lookup"><span data-stu-id="276c9-219">In-product offerings sold in your extension must not be converted to any legally valid currency \(such as USD, Euro, and so on\) or any physical goods or services.</span></span>  
+*   <span data-ttu-id="276c9-219">在扩展中出售的产品内产品/服务不得转换为任何合法有效的货币 \(如美元、欧元等\) 或任何物理商品或服务。</span><span class="sxs-lookup"><span data-stu-id="276c9-219">In-product offerings sold in your extension must not be converted to any legally valid currency \(such as USD, Euro, and so on\) or any physical goods or services.</span></span>  
     
 <span data-ttu-id="276c9-220">以下要求适用于使用安全第三方购买 API：</span><span class="sxs-lookup"><span data-stu-id="276c9-220">The following requirements apply to your use of a secure third-party purchase API:</span></span>  
 
 *   <span data-ttu-id="276c9-221">在交易时或收集用户的任何付款或财务信息时;您的扩展必须标识商业交易提供商、对用户进行身份验证，并获取交易的用户确认。</span><span class="sxs-lookup"><span data-stu-id="276c9-221">At the time of the transaction or when you collect any payment or financial information from the user; your extension must identify the commerce transaction provider, authenticate the user, and obtain user confirmation for the transaction.</span></span>  <span data-ttu-id="276c9-222">商业交易提供商维护一个安全的金融交换平台。</span><span class="sxs-lookup"><span data-stu-id="276c9-222">A commerce transaction provider maintains a secure platform for financial exchanges.</span></span>  
 *   <span data-ttu-id="276c9-223">您的扩展可能为用户提供保存此身份验证的能力，但用户必须能够要求每次事务进行身份验证或关闭产品内事务。</span><span class="sxs-lookup"><span data-stu-id="276c9-223">Your extension may offer users the ability to save this authentication, but users must have the ability to either require an authentication on every transaction or to turn off in-product transactions.</span></span>  
-*   <span data-ttu-id="276c9-224">如果您的扩展收集信用卡信息，或者使用收集信用卡信息的第三方付款处理器，则付款处理必须符合当前的 PCI 数据安全标准 \ (PCI DSS\) 。</span><span class="sxs-lookup"><span data-stu-id="276c9-224">If your extension collects credit card information or uses a third-party payment processor that collects credit card information, the payment processing must meet the current PCI Data Security Standard \(PCI DSS\).</span></span>  
+*   <span data-ttu-id="276c9-224">如果您的扩展收集信用卡信息，或者使用收集信用卡信息的第三方付款处理器，则付款处理必须符合当前的 PCI 数据安全标准 \(PCI DSS\) 。</span><span class="sxs-lookup"><span data-stu-id="276c9-224">If your extension collects credit card information or uses a third-party payment processor that collects credit card information, the payment processing must meet the current PCI Data Security Standard \(PCI DSS\).</span></span>  
     
 #### <span data-ttu-id="276c9-225">1.8.2 泄漏付费功能</span><span class="sxs-lookup"><span data-stu-id="276c9-225">1.8.2 Disclosing paid features</span></span>  
 
@@ -193,7 +193,7 @@ ms.locfileid: "11343078"
 
 ### <span data-ttu-id="276c9-230">1.9 通知</span><span class="sxs-lookup"><span data-stu-id="276c9-230">1.9 Notifications</span></span>  
 
-<span data-ttu-id="276c9-231">你的扩展必须遵守通知的系统设置。</span><span class="sxs-lookup"><span data-stu-id="276c9-231">Your extension must respect system settings for notifications.</span></span>  <span data-ttu-id="276c9-232">这意味着向用户显示广告和通知时，无论通知是否由 Microsoft 推送通知服务 \ (MPNS\) 、Windows 推送通知服务 \ (WNS\) 或其他任何服务提供，都必须与用户首选项一致。</span><span class="sxs-lookup"><span data-stu-id="276c9-232">This means any presentation of ads and notifications to users must be consistent with user preferences, regardless of whether the notifications are provided by the Microsoft Push Notification Service \(MPNS\), Windows Push Notification Service \(WNS\), or any other service.</span></span>  <span data-ttu-id="276c9-233">如果用户在特定于产品或系统范围内禁用通知，扩展必须保持功能。</span><span class="sxs-lookup"><span data-stu-id="276c9-233">If the user disables notifications, either on a product-specific or system-wide basis, your extension must remain functional.</span></span>  
+<span data-ttu-id="276c9-231">你的扩展必须遵守通知的系统设置。</span><span class="sxs-lookup"><span data-stu-id="276c9-231">Your extension must respect system settings for notifications.</span></span>  <span data-ttu-id="276c9-232">这意味着向用户显示广告和通知时，无论通知是否由 Microsoft 推送通知服务 \(MPNS\) 、Windows 推送通知服务 \(WNS\) 或其他任何服务提供，都必须与用户首选项一致。</span><span class="sxs-lookup"><span data-stu-id="276c9-232">This means any presentation of ads and notifications to users must be consistent with user preferences, regardless of whether the notifications are provided by the Microsoft Push Notification Service \(MPNS\), Windows Push Notification Service \(WNS\), or any other service.</span></span>  <span data-ttu-id="276c9-233">如果用户在特定于产品或系统范围内禁用通知，扩展必须保持功能。</span><span class="sxs-lookup"><span data-stu-id="276c9-233">If the user disables notifications, either on a product-specific or system-wide basis, your extension must remain functional.</span></span>  
 
 <span data-ttu-id="276c9-234">如果你的产品使用 MPNS 或 WNS 传输通知，它必须符合以下要求：</span><span class="sxs-lookup"><span data-stu-id="276c9-234">If your product uses MPNS or WNS to transmit notifications, it must comply with the following requirements:</span></span>  
 
@@ -245,7 +245,7 @@ ms.locfileid: "11343078"
 
 ## <span data-ttu-id="276c9-259">2 内容策略</span><span class="sxs-lookup"><span data-stu-id="276c9-259">2 Content Policies</span></span>  
 
-<span data-ttu-id="276c9-260">以下策略适用于内容和元数据 \ (包括发布者名称、扩展名、扩展图标、扩展说明、扩展屏幕截图、扩展预告片和预告片缩略图，以及 Microsoft Edge 加载项中提供用于分发的其他任何扩展元数据\) 。</span><span class="sxs-lookup"><span data-stu-id="276c9-260">The following policies apply to content and metadata \(including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata\) offered for distribution in Microsoft Edge Add-ons.</span></span>  <span data-ttu-id="276c9-261">内容是指扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。</span><span class="sxs-lookup"><span data-stu-id="276c9-261">Content means the images, sounds, videos and text contained in your extension, the tiles, notifications, error messages or ads exposed through your extension, and anything delivered from a server or to which your extension connects.</span></span>  <span data-ttu-id="276c9-262">由于世界各地都使用扩展和 Microsoft Edge 加载项，因此这些要求在地区和文化规范的上下文中进行解释和应用。</span><span class="sxs-lookup"><span data-stu-id="276c9-262">Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.</span></span>  
+<span data-ttu-id="276c9-260">以下策略适用于内容和元数据 \(包括发布者名称、扩展名、扩展图标、扩展说明、扩展屏幕截图、扩展预告片和预告片缩略图，以及 Microsoft Edge 加载项中提供用于分发的其他任何扩展元数据\) 。</span><span class="sxs-lookup"><span data-stu-id="276c9-260">The following policies apply to content and metadata \(including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata\) offered for distribution in Microsoft Edge Add-ons.</span></span>  <span data-ttu-id="276c9-261">内容是指扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。</span><span class="sxs-lookup"><span data-stu-id="276c9-261">Content means the images, sounds, videos and text contained in your extension, the tiles, notifications, error messages or ads exposed through your extension, and anything delivered from a server or to which your extension connects.</span></span>  <span data-ttu-id="276c9-262">由于世界各地都使用扩展和 Microsoft Edge 加载项，因此这些要求在地区和文化规范的上下文中进行解释和应用。</span><span class="sxs-lookup"><span data-stu-id="276c9-262">Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.</span></span>  
 
 ### <span data-ttu-id="276c9-263">2.1 Microsoft Edge 加载项目录一览的内容要求</span><span class="sxs-lookup"><span data-stu-id="276c9-263">2.1 Content Requirements for Microsoft Edge Addon Catalog Listing</span></span>  
 
@@ -260,11 +260,11 @@ ms.locfileid: "11343078"
 
 #### <span data-ttu-id="276c9-269">2.3.1 要求</span><span class="sxs-lookup"><span data-stu-id="276c9-269">2.3.1 Requirements</span></span>  
 
-<span data-ttu-id="276c9-270">扩展不得包含任何促进或宣传以下实际活动的内容：\ (\) 极端或无端暴力;\ (b\) 违反;\ (c\) 非法武器;或 \ (d\) 对人员、动物或真实或个人属性使用武器。</span><span class="sxs-lookup"><span data-stu-id="276c9-270">Your extension must not contain any content that facilitates or glamorizes the following real world activities: \(a\) extreme or gratuitous violence; \(b\) human rights violations; \(c\) the creation of illegal weapons; or \(d\) the use of weapons against a person, animal, or real or personal property.</span></span>  
+<span data-ttu-id="276c9-270">扩展不得包含任何促进或宣传以下实际活动的内容：\(\) 极端或无端暴力;\(b\) 违反;\(c\) 非法武器;或 \(d\) 对人员、动物或真实或个人属性使用武器。</span><span class="sxs-lookup"><span data-stu-id="276c9-270">Your extension must not contain any content that facilitates or glamorizes the following real world activities: \(a\) extreme or gratuitous violence; \(b\) human rights violations; \(c\) the creation of illegal weapons; or \(d\) the use of weapons against a person, animal, or real or personal property.</span></span>  
 
 #### <span data-ttu-id="276c9-271">2.3.2 责任</span><span class="sxs-lookup"><span data-stu-id="276c9-271">2.3.2 Responsibility</span></span>  
 
-<span data-ttu-id="276c9-272">你的扩展不得：\ (\) 给最终用户或任何其他人员或动物带来安全风险，也不得对最终用户或其他任何人或动物造成危害、损害或其他任何损害;或 \ (b\) 对真实或个人属性带来风险或造成损坏。</span><span class="sxs-lookup"><span data-stu-id="276c9-272">Your extension must not: \(a\) pose a safety risk to, nor result in discomfort, injury or any other harm to end users or to any other person or animal; or \(b\) pose a risk of or result in damage to real or personal property.</span></span>  <span data-ttu-id="276c9-273">你单独负责所有扩展安全测试、证书获取以及任何相应功能安全措施的实施。</span><span class="sxs-lookup"><span data-stu-id="276c9-273">You are solely responsible for all extension safety testing, certificate acquisition, and implementation of any appropriate feature safeguards.</span></span>  <span data-ttu-id="276c9-274">不得禁用任何平台安全或舒适功能，并且必须在扩展中包括所有适用的法律要求和行业标准警告、通知和免责声明。</span><span class="sxs-lookup"><span data-stu-id="276c9-274">You must not disable any platform safety or comfort features and you must include all applicable legally required and industry-standard warnings, notices, and disclaimers in your extension.</span></span>  
+<span data-ttu-id="276c9-272">你的扩展不得：\(\) 给最终用户或任何其他人员或动物带来安全风险，也不得对最终用户或其他任何人或动物造成危害、损害或其他任何损害;或 \(b\) 对真实或个人属性带来风险或造成损坏。</span><span class="sxs-lookup"><span data-stu-id="276c9-272">Your extension must not: \(a\) pose a safety risk to, nor result in discomfort, injury or any other harm to end users or to any other person or animal; or \(b\) pose a risk of or result in damage to real or personal property.</span></span>  <span data-ttu-id="276c9-273">你单独负责所有扩展安全测试、证书获取以及任何相应功能安全措施的实施。</span><span class="sxs-lookup"><span data-stu-id="276c9-273">You are solely responsible for all extension safety testing, certificate acquisition, and implementation of any appropriate feature safeguards.</span></span>  <span data-ttu-id="276c9-274">不得禁用任何平台安全或舒适功能，并且必须在扩展中包括所有适用的法律要求和行业标准警告、通知和免责声明。</span><span class="sxs-lookup"><span data-stu-id="276c9-274">You must not disable any platform safety or comfort features and you must include all applicable legally required and industry-standard warnings, notices, and disclaimers in your extension.</span></span>  
 
 ### <span data-ttu-id="276c9-275">2.4 破坏性、中性、Slandatory 和威胁</span><span class="sxs-lookup"><span data-stu-id="276c9-275">2.4 Defamatory, Libelous, Slanderous, and Threatening</span></span>  
 
@@ -318,7 +318,7 @@ ms.locfileid: "11343078"
 
 #### <span data-ttu-id="276c9-311">2.12.2 分级更改</span><span class="sxs-lookup"><span data-stu-id="276c9-311">2.12.2 Ratings Change</span></span>  
 
-<span data-ttu-id="276c9-312">如果您的扩展提供的内容 \ (如用户生成的内容、零售内容或其他基于 Web 的内容\) 可能适用于比分配分级更高的年龄分级，则必须要求用户选择通过使用内容筛选器或使用预先存在的帐户登录来接收此类内容。</span><span class="sxs-lookup"><span data-stu-id="276c9-312">If your extension provides content \(such as user-generated, retail, or other web-based content\) that might be appropriate for a higher age rating than the assigned rating, you must require users to opt into receiving such content by using a content filter or by signing in with a pre-existing account.</span></span>  
+<span data-ttu-id="276c9-312">如果您的扩展提供的内容 \(如用户生成的内容、零售内容或其他基于 Web 的内容\) 可能适用于比分配分级更高的年龄分级，则必须要求用户选择通过使用内容筛选器或使用预先存在的帐户登录来接收此类内容。</span><span class="sxs-lookup"><span data-stu-id="276c9-312">If your extension provides content \(such as user-generated, retail, or other web-based content\) that might be appropriate for a higher age rating than the assigned rating, you must require users to opt into receiving such content by using a content filter or by signing in with a pre-existing account.</span></span>  
 
 ### <span data-ttu-id="276c9-313">2.13 视频</span><span class="sxs-lookup"><span data-stu-id="276c9-313">2.13 Videos</span></span>  
 
@@ -326,7 +326,7 @@ ms.locfileid: "11343078"
 
 <!-- links -->  
 
-[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "清除默认策略 - 内容安全策略 \ (CSP\) |Microsoft Docs"  
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "清除默认策略 - 内容安全策略 \(CSP\) |Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议|Microsoft Docs"  
 [MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "Microsoft 如何识别恶意软件和可能不需要的应用程序|Microsoft Docs"  

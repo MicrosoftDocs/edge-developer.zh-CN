@@ -17,7 +17,7 @@ ms.locfileid: "11461176"
 ---
 # <a name="understand-webview2-sdk-versions"></a><span data-ttu-id="4f73a-104">了解 WebView2 SDK 版本</span><span class="sxs-lookup"><span data-stu-id="4f73a-104">Understand WebView2 SDK versions</span></span>  
 
-<span data-ttu-id="4f73a-105">新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \ (Chromium\) 浏览器相同，大约每六周发布一次。</span><span class="sxs-lookup"><span data-stu-id="4f73a-105">New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.</span></span>  
+<span data-ttu-id="4f73a-105">新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \(Chromium\) 浏览器相同，大约每六周发布一次。</span><span class="sxs-lookup"><span data-stu-id="4f73a-105">New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.</span></span>  
 
 ## <a name="release-and-prerelease-package"></a><span data-ttu-id="4f73a-106">发布和预发布包</span><span class="sxs-lookup"><span data-stu-id="4f73a-106">Release and prerelease package</span></span>  
 

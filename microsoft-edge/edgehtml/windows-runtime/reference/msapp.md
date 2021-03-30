@@ -19,7 +19,7 @@ ms.locfileid: "11439722"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-<span data-ttu-id="750ec-106">MSApp 对象及其成员仅支持使用 JavaScript \ (包括访问 Windows API 功能\) 的 Windows 应用。</span><span class="sxs-lookup"><span data-stu-id="750ec-106">The MSApp object and its members are supported only for Windows apps using JavaScript \(including PWAs accessing Windows API features\).</span></span>  <span data-ttu-id="750ec-107">MSApp 对象仅存在于通过 ms-appx URI 方案加载的 Windows 应用中 HTML 文档的本地上下文中;否则，该对象不存在 (因此，该对象的方法和属性均) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-107">The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn't exist (and consequently, none of its methods and properties are available).</span></span>  
+<span data-ttu-id="750ec-106">MSApp 对象及其成员仅支持使用 JavaScript \(包括访问 Windows API 功能\) 的 Windows 应用。</span><span class="sxs-lookup"><span data-stu-id="750ec-106">The MSApp object and its members are supported only for Windows apps using JavaScript \(including PWAs accessing Windows API features\).</span></span>  <span data-ttu-id="750ec-107">MSApp 对象仅存在于通过 ms-appx URI 方案加载的 Windows 应用中 HTML 文档的本地上下文中;否则，该对象不存在 (因此，该对象的方法和属性均) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-107">The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn't exist (and consequently, none of its methods and properties are available).</span></span>  
 
 <span data-ttu-id="750ec-108">它提供可帮助您创建 [Blob](https://developer.mozilla.org/docs/Web/API/Blob) 和 [MSStream 对象的帮助程序](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx) 函数。</span><span class="sxs-lookup"><span data-stu-id="750ec-108">It provides helper functions that enable you to create [Blob](https://developer.mozilla.org/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx) objects.</span></span>  
 
@@ -352,7 +352,7 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-220">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-220">Type</span></span> | <span data-ttu-id="750ec-221">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-221">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-222">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-222">DOMString</span></span> | <span data-ttu-id="750ec-223">数据的内容类型。</span><span class="sxs-lookup"><span data-stu-id="750ec-223">Content type of the data.</span></span>  <span data-ttu-id="750ec-224">此字符串的格式应为 RFC 2616 的第 3.7 节中定义的媒体类型令牌中指定的格式。</span><span class="sxs-lookup"><span data-stu-id="750ec-224">This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616.</span></span>  <span data-ttu-id="750ec-225">\ ([请参阅 MIME 类型，] (https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) 如 `text/plain` `text/html` 、、 、 、 等 `image/jpeg` `image/png` `audio/mpeg` `audio/ogg` `audio/*` `video/mp4` \) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-225">\([See MIME types,](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) such as `text/plain`, `text/html`, `image/jpeg`, `image/png`, `audio/mpeg`, `audio/ogg`, `audio/*`, `video/mp4`, and so on\).</span></span>  
+      | <span data-ttu-id="750ec-222">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-222">DOMString</span></span> | <span data-ttu-id="750ec-223">数据的内容类型。</span><span class="sxs-lookup"><span data-stu-id="750ec-223">Content type of the data.</span></span>  <span data-ttu-id="750ec-224">此字符串的格式应为 RFC 2616 的第 3.7 节中定义的媒体类型令牌中指定的格式。</span><span class="sxs-lookup"><span data-stu-id="750ec-224">This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616.</span></span>  <span data-ttu-id="750ec-225">\([请参阅 MIME 类型，] (https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) 如 `text/plain` `text/html` 、、 、 、 等 `image/jpeg` `image/png` `audio/mpeg` `audio/ogg` `audio/*` `video/mp4` \) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-225">\([See MIME types,](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) such as `text/plain`, `text/html`, `image/jpeg`, `image/png`, `audio/mpeg`, `audio/ogg`, `audio/*`, `video/mp4`, and so on\).</span></span>  
       
       `inputStream` <span data-ttu-id="750ec-226">[in]</span><span class="sxs-lookup"><span data-stu-id="750ec-226">[in]</span></span>
       
@@ -375,7 +375,7 @@ var result = MSApp.method;
    :::column span="":::
       **<span data-ttu-id="750ec-235">备注</span><span class="sxs-lookup"><span data-stu-id="750ec-235">Remarks</span></span>**  
       
-      <span data-ttu-id="750ec-236">此方法采用内容类型和 `IInputStream` 引用。</span><span class="sxs-lookup"><span data-stu-id="750ec-236">This method takes a content-type, and the `IInputStream` reference.</span></span>  <span data-ttu-id="750ec-237">然后，该方法验证传入的流引用是一个类型实例，如果没有， `IInputStream` 则引发 `DOMException TYPE_MISMATCH_ERR` 。</span><span class="sxs-lookup"><span data-stu-id="750ec-237">The method then verifies that the stream reference passed in is an instance of type `IInputStream` and if not, throws `DOMException TYPE_MISMATCH_ERR`.</span></span>  <span data-ttu-id="750ec-238">如果未发生错误， `createStreamFromInputStream` 则从它的输入 `MSStream` \ (\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-238">If no error occurs, `createStreamFromInputStream` creates an `MSStream` \(from its inputs\).</span></span>  
+      <span data-ttu-id="750ec-236">此方法采用内容类型和 `IInputStream` 引用。</span><span class="sxs-lookup"><span data-stu-id="750ec-236">This method takes a content-type, and the `IInputStream` reference.</span></span>  <span data-ttu-id="750ec-237">然后，该方法验证传入的流引用是一个类型实例，如果没有， `IInputStream` 则引发 `DOMException TYPE_MISMATCH_ERR` 。</span><span class="sxs-lookup"><span data-stu-id="750ec-237">The method then verifies that the stream reference passed in is an instance of type `IInputStream` and if not, throws `DOMException TYPE_MISMATCH_ERR`.</span></span>  <span data-ttu-id="750ec-238">如果未发生错误， `createStreamFromInputStream` 则从它的输入 `MSStream` \(\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-238">If no error occurs, `createStreamFromInputStream` creates an `MSStream` \(from its inputs\).</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -427,7 +427,7 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-258">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-258">Type</span></span> | <span data-ttu-id="750ec-259">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-259">Description</span></span> |  
       |:---- |:--- |   
-      | <span data-ttu-id="750ec-260">Any</span><span class="sxs-lookup"><span data-stu-id="750ec-260">Any</span></span> | <span data-ttu-id="750ec-261">作为参数 1 等传递给同步Callback 回调函数 \ (的一系列可选参数) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-261">An optional series of arguments that are passed to the synchronousCallback callback function \(as parameters 1 and so on\).</span></span>  |  
+      | <span data-ttu-id="750ec-260">Any</span><span class="sxs-lookup"><span data-stu-id="750ec-260">Any</span></span> | <span data-ttu-id="750ec-261">作为参数 1 等传递给同步Callback 回调函数 \(的一系列可选参数) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-261">An optional series of arguments that are passed to the synchronousCallback callback function \(as parameters 1 and so on\).</span></span>  |  
    :::column-end:::
    :::column span="":::
       **<span data-ttu-id="750ec-262">返回值</span><span class="sxs-lookup"><span data-stu-id="750ec-262">Return value</span></span>**  
@@ -448,7 +448,7 @@ var result = MSApp.method;
       
       <span data-ttu-id="750ec-271">`asynchronousCallback`callback 参数可以是任何函数。</span><span class="sxs-lookup"><span data-stu-id="750ec-271">The `asynchronousCallback` callback parameter can be any function.</span></span>  <span data-ttu-id="750ec-272">如果参数在 参数 `priority` 之后提供，则所有参数都将传递给回调函数。</span><span class="sxs-lookup"><span data-stu-id="750ec-272">If arguments are provided after the `priority` parameter, they will all be passed to the callback function.</span></span>  
       
-      <span data-ttu-id="750ec-273">与 `execAtPriority` 不同，回调函数返回的任何对象 `asynchronousCallback` 将被忽略 \ (，并且不会通过 `execAsyncAtPriority` \) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-273">Unlike `execAtPriority`, any object returned by the `asynchronousCallback` callback function is ignored \(and not returned via `execAsyncAtPriority`\).</span></span>  
+      <span data-ttu-id="750ec-273">与 `execAtPriority` 不同，回调函数返回的任何对象 `asynchronousCallback` 将被忽略 \(，并且不会通过 `execAsyncAtPriority` \) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-273">Unlike `execAtPriority`, any object returned by the `asynchronousCallback` callback function is ignored \(and not returned via `execAsyncAtPriority`\).</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -495,14 +495,14 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-290">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-290">Type</span></span> | <span data-ttu-id="750ec-291">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-291">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-292">Any</span><span class="sxs-lookup"><span data-stu-id="750ec-292">Any</span></span> | <span data-ttu-id="750ec-293">作为参数 1 等传递给回调函数 `synchronousCallback` \ (一系列可选参数) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-293">An optional series of arguments that are passed to the `synchronousCallback` callback function \(as parameters 1 and so on\).</span></span>  
+      | <span data-ttu-id="750ec-292">Any</span><span class="sxs-lookup"><span data-stu-id="750ec-292">Any</span></span> | <span data-ttu-id="750ec-293">作为参数 1 等传递给回调函数 `synchronousCallback` \(一系列可选参数) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-293">An optional series of arguments that are passed to the `synchronousCallback` callback function \(as parameters 1 and so on\).</span></span>  
    :::column-end:::
    :::column span="":::
       **<span data-ttu-id="750ec-294">返回值</span><span class="sxs-lookup"><span data-stu-id="750ec-294">Return value</span></span>**  
       
       | <span data-ttu-id="750ec-295">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-295">Type</span></span> | <span data-ttu-id="750ec-296">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-296">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-297">Any</span><span class="sxs-lookup"><span data-stu-id="750ec-297">Any</span></span> | <span data-ttu-id="750ec-298">返回回调 `synchronousCallback` \ (的返回值（如果适用) ）。</span><span class="sxs-lookup"><span data-stu-id="750ec-298">Returns the return value of the `synchronousCallback` callback \(as applicable\).</span></span>  |  
+      | <span data-ttu-id="750ec-297">Any</span><span class="sxs-lookup"><span data-stu-id="750ec-297">Any</span></span> | <span data-ttu-id="750ec-298">返回回调 `synchronousCallback` \(的返回值（如果适用) ）。</span><span class="sxs-lookup"><span data-stu-id="750ec-298">Returns the return value of the `synchronousCallback` callback \(as applicable\).</span></span>  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -514,7 +514,7 @@ var result = MSApp.method;
    :::column span="":::
       **<span data-ttu-id="750ec-301">备注</span><span class="sxs-lookup"><span data-stu-id="750ec-301">Remarks</span></span>**  
       
-      <span data-ttu-id="750ec-302">提供的 `synchronousCallback` 回调方法将同步执行。</span><span class="sxs-lookup"><span data-stu-id="750ec-302">The provided `synchronousCallback` callback method is execute synchronously.</span></span>  <span data-ttu-id="750ec-303">当前上下文优先级更改为所提供的优先级值 (在提供的回调函数的持续时间内) priority 参数所给定的优先级值。</span><span class="sxs-lookup"><span data-stu-id="750ec-303">The current contextual priority is changed to the provided priority value (given by the priority argument) for the duration of the provided callback function.</span></span>  <span data-ttu-id="750ec-304">执行完回调函数后，优先级将返回到调用之前的 `execAtPriority` 上一个值。</span><span class="sxs-lookup"><span data-stu-id="750ec-304">Once the callback function finishes executing, priority is returned to the previous value prior to the `execAtPriority` call.</span></span>  <span data-ttu-id="750ec-305">的返回 `execAtPriority` 值是回调方法 \ (\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-305">The return value from `execAtPriority` is the return value of the callback method \(as provided\).</span></span>  
+      <span data-ttu-id="750ec-302">提供的 `synchronousCallback` 回调方法将同步执行。</span><span class="sxs-lookup"><span data-stu-id="750ec-302">The provided `synchronousCallback` callback method is execute synchronously.</span></span>  <span data-ttu-id="750ec-303">当前上下文优先级更改为所提供的优先级值 (在提供的回调函数的持续时间内) priority 参数所给定的优先级值。</span><span class="sxs-lookup"><span data-stu-id="750ec-303">The current contextual priority is changed to the provided priority value (given by the priority argument) for the duration of the provided callback function.</span></span>  <span data-ttu-id="750ec-304">执行完回调函数后，优先级将返回到调用之前的 `execAtPriority` 上一个值。</span><span class="sxs-lookup"><span data-stu-id="750ec-304">Once the callback function finishes executing, priority is returned to the previous value prior to the `execAtPriority` call.</span></span>  <span data-ttu-id="750ec-305">的返回 `execAtPriority` 值是回调方法 \(\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-305">The return value from `execAtPriority` is the return value of the callback method \(as provided\).</span></span>  
       
       <span data-ttu-id="750ec-306">`synchronousCallback`callback 参数可以是任何函数。</span><span class="sxs-lookup"><span data-stu-id="750ec-306">The `synchronousCallback` callback parameter can be any function.</span></span>  <span data-ttu-id="750ec-307">如果在 priority 参数之后提供了任何参数，则这些参数将传递给提供的回调方法。</span><span class="sxs-lookup"><span data-stu-id="750ec-307">If any arguments are provided after the priority parameter, they will be passed to the provided callback method.</span></span>  <span data-ttu-id="750ec-308">如果 callback 参数返回值，则此值也将成为 的 `execAtPriority` 返回值。</span><span class="sxs-lookup"><span data-stu-id="750ec-308">If the callback parameter returns a value, this value becomes the return value for `execAtPriority` as well.</span></span>  
    :::column-end:::
@@ -576,7 +576,7 @@ var result = MSApp.method;
    :::column span="":::
       **<span data-ttu-id="750ec-321">备注</span><span class="sxs-lookup"><span data-stu-id="750ec-321">Remarks</span></span>**  
       
-      <span data-ttu-id="750ec-322">此方法返回当前的上下文优先级 \ ([MSApp 常量](#msapp-constants)\) ，可通过 和 `execAtPriority` 进行更改 `execAsyncAtPriority` 。</span><span class="sxs-lookup"><span data-stu-id="750ec-322">This method returns the current contextual priority \(see [MSApp Constants](#msapp-constants)\), which can be changed via `execAtPriority` and `execAsyncAtPriority`.</span></span>  
+      <span data-ttu-id="750ec-322">此方法返回当前的上下文优先级 \([MSApp 常量](#msapp-constants)\) ，可通过 和 `execAtPriority` 进行更改 `execAsyncAtPriority` 。</span><span class="sxs-lookup"><span data-stu-id="750ec-322">This method returns the current contextual priority \(see [MSApp Constants](#msapp-constants)\), which can be changed via `execAtPriority` and `execAsyncAtPriority`.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -827,7 +827,7 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-403">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-403">Type</span></span> | <span data-ttu-id="750ec-404">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-404">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-405">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-405">DOMString</span></span> | <span data-ttu-id="750ec-406">优先级值 \ (请参阅 [MSApp Constants](#msapp-constants)\) specifying the priority level and above to query for any outstanding queued work。</span><span class="sxs-lookup"><span data-stu-id="750ec-406">A priority value \(see [MSApp Constants](#msapp-constants)\) specifying the priority level and above to query for any outstanding queued work.</span></span>  |  
+      | <span data-ttu-id="750ec-405">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-405">DOMString</span></span> | <span data-ttu-id="750ec-406">优先级值 \(请参阅 [MSApp Constants](#msapp-constants)\) specifying the priority level and above to query for any outstanding queued work。</span><span class="sxs-lookup"><span data-stu-id="750ec-406">A priority value \(see [MSApp Constants](#msapp-constants)\) specifying the priority level and above to query for any outstanding queued work.</span></span>  |  
    :::column-end:::
    :::column span="":::
       **<span data-ttu-id="750ec-407">返回值</span><span class="sxs-lookup"><span data-stu-id="750ec-407">Return value</span></span>**  
@@ -846,7 +846,7 @@ var result = MSApp.method;
    :::column span="":::
       **<span data-ttu-id="750ec-414">备注</span><span class="sxs-lookup"><span data-stu-id="750ec-414">Remarks</span></span>**  
       
-      <span data-ttu-id="750ec-415">此方法为 JavaScript 代码提供了一种方法，用于确定各个优先级 `isTaskScheduledAtPriorityOrHigher` 级别 \ (或更高版本\) 是否有待处理的工作，目的是调用 JavaScript 代码随后可以决定获得更高优先级的工作。</span><span class="sxs-lookup"><span data-stu-id="750ec-415">The `isTaskScheduledAtPriorityOrHigher` method provides a means for JavaScript code to determine if there is pending work at the various priority levels \(or above\) with the intent that the calling JavaScript code can then decide to yield to higher priority work.</span></span>  
+      <span data-ttu-id="750ec-415">此方法为 JavaScript 代码提供了一种方法，用于确定各个优先级 `isTaskScheduledAtPriorityOrHigher` 级别 \(或更高版本\) 是否有待处理的工作，目的是调用 JavaScript 代码随后可以决定获得更高优先级的工作。</span><span class="sxs-lookup"><span data-stu-id="750ec-415">The `isTaskScheduledAtPriorityOrHigher` method provides a means for JavaScript code to determine if there is pending work at the various priority levels \(or above\) with the intent that the calling JavaScript code can then decide to yield to higher priority work.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -882,7 +882,7 @@ var result = MSApp.method;
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="750ec-418">用于避免刷新每次激活事件 \ (之前) 页面重新加载的开始路径 (例如单击通知或固定磁贴\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-418">Used to avoid a refresh of the start path (page reload) before every activate event \(such as clicking a notification or a pinned tile\).</span></span>  
+      <span data-ttu-id="750ec-418">用于避免刷新每次激活事件 \(之前) 页面重新加载的开始路径 (例如单击通知或固定磁贴\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-418">Used to avoid a refresh of the start path (page reload) before every activate event \(such as clicking a notification or a pinned tile\).</span></span>  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -896,7 +896,7 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-420">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-420">Type</span></span> | <span data-ttu-id="750ec-421">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-421">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-422">布尔</span><span class="sxs-lookup"><span data-stu-id="750ec-422">Boolean</span></span> | <span data-ttu-id="750ec-423">使用 始终跳过刷新页面重新加载 (路径，) 直接跳转以触发 `MSApp.pageHandlesAllApplicationActivations(true)` `WebUIApplication` 激活的事件。</span><span class="sxs-lookup"><span data-stu-id="750ec-423">Use `MSApp.pageHandlesAllApplicationActivations(true)` to always skip refreshing the start path (page reload) and instead jump straight to firing the `WebUIApplication` activated event.</span></span>  <span data-ttu-id="750ec-424">要求所有页面单独处理激活事件。</span><span class="sxs-lookup"><span data-stu-id="750ec-424">Requires that all pages handle activation events separately.</span></span>  <span data-ttu-id="750ec-425">将此方法定义为 ，单击激活事件 `true` \ (如 notification\) 不会触发重新加载，这是单页应用避免重新加载页面的必备条件。</span><span class="sxs-lookup"><span data-stu-id="750ec-425">By defining this method as `true`, clicking an activated event \(like a notification\) will not trigger the reload, an essential for single-page apps wishing to avoid page reloads.</span></span>  |  
+      | <span data-ttu-id="750ec-422">布尔</span><span class="sxs-lookup"><span data-stu-id="750ec-422">Boolean</span></span> | <span data-ttu-id="750ec-423">使用 始终跳过刷新页面重新加载 (路径，) 直接跳转以触发 `MSApp.pageHandlesAllApplicationActivations(true)` `WebUIApplication` 激活的事件。</span><span class="sxs-lookup"><span data-stu-id="750ec-423">Use `MSApp.pageHandlesAllApplicationActivations(true)` to always skip refreshing the start path (page reload) and instead jump straight to firing the `WebUIApplication` activated event.</span></span>  <span data-ttu-id="750ec-424">要求所有页面单独处理激活事件。</span><span class="sxs-lookup"><span data-stu-id="750ec-424">Requires that all pages handle activation events separately.</span></span>  <span data-ttu-id="750ec-425">将此方法定义为 ，单击激活事件 `true` \(如 notification\) 不会触发重新加载，这是单页应用避免重新加载页面的必备条件。</span><span class="sxs-lookup"><span data-stu-id="750ec-425">By defining this method as `true`, clicking an activated event \(like a notification\) will not trigger the reload, an essential for single-page apps wishing to avoid page reloads.</span></span>  |  
    :::column-end:::
    :::column span="":::
       **<span data-ttu-id="750ec-426">返回值</span><span class="sxs-lookup"><span data-stu-id="750ec-426">Return value</span></span>**
@@ -978,7 +978,7 @@ var result = MSApp.method;
       
       <span data-ttu-id="750ec-447">`suppressSubdownloadCredentialPrompts`该方法控制应用在下载资源期间是否禁止潜在的身份验证提示。</span><span class="sxs-lookup"><span data-stu-id="750ec-447">The `suppressSubdownloadCredentialPrompts` method controls whether an app suppresses potential authentication prompts during the download of resources.</span></span>  <span data-ttu-id="750ec-448">默认行为是禁止显示凭据提示。</span><span class="sxs-lookup"><span data-stu-id="750ec-448">The default behavior is to not suppress credential prompts.</span></span>  
       
-      `suppressSubdownloadCredentialPrompts` <span data-ttu-id="750ec-449">供可能加载大量需要身份验证的资源的应用程序使用，例如邮件应用程序 \ (其中可能包含一个新闻稿，其中包含许多图像，其中每个图像都需要身份验证\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-449">is intended for use by apps which may load an excessive number of resources that require authentication, such as a mail app \(which could contain a newsletter containing a number of images where each image requires authentication\).</span></span>  
+      `suppressSubdownloadCredentialPrompts` <span data-ttu-id="750ec-449">供可能加载大量需要身份验证的资源的应用程序使用，例如邮件应用程序 \(其中可能包含一个新闻稿，其中包含许多图像，其中每个图像都需要身份验证\) 。</span><span class="sxs-lookup"><span data-stu-id="750ec-449">is intended for use by apps which may load an excessive number of resources that require authentication, such as a mail app \(which could contain a newsletter containing a number of images where each image requires authentication\).</span></span>  
       
       <span data-ttu-id="750ec-450">禁止显示凭据提示时，在访问需要身份验证的资源时，将不会显示用于向服务器进行身份验证的对话框，并且不会下载该资源。</span><span class="sxs-lookup"><span data-stu-id="750ec-450">When suppressing credential prompts, dialogs for authenticating to servers will not be shown when accessing resources that require authentication, and the resource will not be downloaded.</span></span>  <span data-ttu-id="750ec-451">请注意，不会影响代理身份验证或客户端认证请求对话框等其他可能提示，也不会 `suppressSubdownloadCredentialPrompts` 影响 XHR。</span><span class="sxs-lookup"><span data-stu-id="750ec-451">Note that `suppressSubdownloadCredentialPrompts` does not impact other possible prompts such as proxy authentication or client certification request dialogs, nor does it impact XHR.</span></span>  
       
@@ -1078,7 +1078,7 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-477">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-477">Type</span></span> | <span data-ttu-id="750ec-478">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-478">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-479">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-479">DOMString</span></span> | <span data-ttu-id="750ec-480">当 `current` 与适当的方法 \ (See also section\) 一起使用时，该方法将在执行请求的操作时使用当前上下文优先级。</span><span class="sxs-lookup"><span data-stu-id="750ec-480">When `current` is used with the appropriate method \(See also section\), the method will use the current contextual priority when executing the requested operation.</span></span>  |  
+      | <span data-ttu-id="750ec-479">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-479">DOMString</span></span> | <span data-ttu-id="750ec-480">当 `current` 与适当的方法 \(See also section\) 一起使用时，该方法将在执行请求的操作时使用当前上下文优先级。</span><span class="sxs-lookup"><span data-stu-id="750ec-480">When `current` is used with the appropriate method \(See also section\), the method will use the current contextual priority when executing the requested operation.</span></span>  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -1089,7 +1089,7 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-482">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-482">Type</span></span> | <span data-ttu-id="750ec-483">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-483">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-484">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-484">DOMString</span></span> | <span data-ttu-id="750ec-485">当与适当的方法 `high` \ (See also section\) 一同使用时，该方法在执行请求的操作时将使用高于正常优先级的优先级，并且将在任何现有的普通优先级工作之前调度该操作。</span><span class="sxs-lookup"><span data-stu-id="750ec-485">When `high` is used with the appropriate method \(See also section\), the method will use higher than normal priority when executing the requested operation and will be dispatch the operation before any existing normal priority work.</span></span>  |  
+      | <span data-ttu-id="750ec-484">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-484">DOMString</span></span> | <span data-ttu-id="750ec-485">当与适当的方法 `high` \(See also section\) 一同使用时，该方法在执行请求的操作时将使用高于正常优先级的优先级，并且将在任何现有的普通优先级工作之前调度该操作。</span><span class="sxs-lookup"><span data-stu-id="750ec-485">When `high` is used with the appropriate method \(See also section\), the method will use higher than normal priority when executing the requested operation and will be dispatch the operation before any existing normal priority work.</span></span>  |  
    :::column-end:::
    :::column span="":::
       #### <a name="idle"></a><span data-ttu-id="750ec-486">Idle</span><span class="sxs-lookup"><span data-stu-id="750ec-486">Idle</span></span>  
@@ -1098,7 +1098,7 @@ var result = MSApp.method;
       
       | <span data-ttu-id="750ec-487">类型</span><span class="sxs-lookup"><span data-stu-id="750ec-487">Type</span></span> | <span data-ttu-id="750ec-488">描述</span><span class="sxs-lookup"><span data-stu-id="750ec-488">Description</span></span> |  
       |:---- |:--- |  
-      | <span data-ttu-id="750ec-489">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-489">DOMString</span></span> | <span data-ttu-id="750ec-490">当与适当的方法 `ideal` \ (See also section\) 一同使用时，该方法在执行请求的操作时将使用低于正常优先级的优先级，并且将在任何现有的普通优先级工作之后调度该操作。</span><span class="sxs-lookup"><span data-stu-id="750ec-490">When `ideal` is used with the appropriate method \(See also section\), the method will use lower than normal priority when executing the requested operation and will be dispatch the operation after any existing normal priority work.</span></span>  |  
+      | <span data-ttu-id="750ec-489">DOMString</span><span class="sxs-lookup"><span data-stu-id="750ec-489">DOMString</span></span> | <span data-ttu-id="750ec-490">当与适当的方法 `ideal` \(See also section\) 一同使用时，该方法在执行请求的操作时将使用低于正常优先级的优先级，并且将在任何现有的普通优先级工作之后调度该操作。</span><span class="sxs-lookup"><span data-stu-id="750ec-490">When `ideal` is used with the appropriate method \(See also section\), the method will use lower than normal priority when executing the requested operation and will be dispatch the operation after any existing normal priority work.</span></span>  |  
    :::column-end:::
 :::row-end:::  
 :::row:::

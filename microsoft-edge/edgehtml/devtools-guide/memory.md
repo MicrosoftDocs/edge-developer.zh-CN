@@ -32,10 +32,10 @@ ms.locfileid: "11232124"
 
 ## <span data-ttu-id="8a676-114">工具栏</span><span class="sxs-lookup"><span data-stu-id="8a676-114">Toolbar</span></span>
 
-1. <span data-ttu-id="8a676-115">\*\*启动/停止分析会话 (Ctrl+E) ： \*\*打开探查器后，你可以跟踪内存使用情况并获取堆的快照。</span><span class="sxs-lookup"><span data-stu-id="8a676-115">**Start/Stop profiling session (Ctrl+E)**: Turning on the profiler enables you to track memory usage and take snapshots of the heap.</span></span>
-2. <span data-ttu-id="8a676-116">\*\*将分析会话 (Ctrl+O) ： \*\*加载保存的 DevTools 内存诊断会话。</span><span class="sxs-lookup"><span data-stu-id="8a676-116">**Import profiling session (Ctrl+O)**: Load a saved  DevTools memory diagnostic session.</span></span>
-3. <span data-ttu-id="8a676-117">\*\*将分析会话 (Ctrl+S) ： \*\*将当前诊断会话保存到磁盘。</span><span class="sxs-lookup"><span data-stu-id="8a676-117">**Export profiling session (Ctrl+S)**: Save the current diagnostic session to disk.</span></span>
-4. <span data-ttu-id="8a676-118">\*\*使用 Ctrl (Shift+T) \*\*获取堆快照：记录给定时间点的当前内存分配。</span><span class="sxs-lookup"><span data-stu-id="8a676-118">**Take heap snapshot (Ctrl+Shift+T)**: Record current memory allocations for a given point of time.</span></span>
+1. <span data-ttu-id="8a676-115">启动/停止分析会话 (Ctrl+E) ： 打开探查器后，你可以跟踪内存使用情况并获取堆的快照。</span><span class="sxs-lookup"><span data-stu-id="8a676-115">**Start/Stop profiling session (Ctrl+E)**: Turning on the profiler enables you to track memory usage and take snapshots of the heap.</span></span>
+2. <span data-ttu-id="8a676-116">将分析会话 (Ctrl+O) ： 加载保存的 DevTools 内存诊断会话。</span><span class="sxs-lookup"><span data-stu-id="8a676-116">**Import profiling session (Ctrl+O)**: Load a saved  DevTools memory diagnostic session.</span></span>
+3. <span data-ttu-id="8a676-117">将分析会话 (Ctrl+S) ： 将当前诊断会话保存到磁盘。</span><span class="sxs-lookup"><span data-stu-id="8a676-117">**Export profiling session (Ctrl+S)**: Save the current diagnostic session to disk.</span></span>
+4. <span data-ttu-id="8a676-118">使用 Ctrl (Shift+T) 获取堆快照：记录给定时间点的当前内存分配。</span><span class="sxs-lookup"><span data-stu-id="8a676-118">**Take heap snapshot (Ctrl+Shift+T)**: Record current memory allocations for a given point of time.</span></span>
 
 
 ## <span data-ttu-id="8a676-119">内存使用时间线</span><span class="sxs-lookup"><span data-stu-id="8a676-119">Memory usage timeline</span></span>
@@ -78,7 +78,7 @@ ms.locfileid: "11232124"
 
 <span data-ttu-id="8a676-143">显示堆栈上对象的实例计数和总大小，对象类型。</span><span class="sxs-lookup"><span data-stu-id="8a676-143">Shows the instance count and total size of objects on the heap, grouped by object type.</span></span> <span data-ttu-id="8a676-144">默认情况下，这些实例按实例计数排序。</span><span class="sxs-lookup"><span data-stu-id="8a676-144">By default, these are sorted by instance count.</span></span>
 
-<span data-ttu-id="8a676-145">选择上半部分"类型"窗格中\*\* 的对象时，下[](#object-references)窗格中的"对象引用"表将列出指向该对象的所有对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-145">When you select an object in the upper *Types* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.</span></span>
+<span data-ttu-id="8a676-145">选择上半部分"类型"窗格中 的对象时，下[](#object-references)窗格中的"对象引用"表将列出指向该对象的所有对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-145">When you select an object in the upper *Types* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.</span></span>
 
 #### <span data-ttu-id="8a676-146">根</span><span class="sxs-lookup"><span data-stu-id="8a676-146">Roots</span></span>
 
@@ -90,7 +90,7 @@ ms.locfileid: "11232124"
 
 <span data-ttu-id="8a676-150">显示堆栈上具有对其他对象的独占引用的对象的列表。</span><span class="sxs-lookup"><span data-stu-id="8a676-150">Shows a list of objects on the heap that have exclusive references to other objects.</span></span> <span data-ttu-id="8a676-151">管理程序按保留大小进行排序，以指示使用最可能最轻松释放的内存的对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-151">Dominators are sorted by retained size to indicate the objects consuming the most memory that are potentially easiest to free.</span></span>
 
-<span data-ttu-id="8a676-152">下面是如何解释"类型"、"根"\*\* 和"管理程序"*视图中的列*：</span><span class="sxs-lookup"><span data-stu-id="8a676-152">Here's how to interpret the columns in the *Types, Roots* and *Dominators* views:</span></span>
+<span data-ttu-id="8a676-152">下面是如何解释"类型"、"根" 和"管理程序"*视图中的列*：</span><span class="sxs-lookup"><span data-stu-id="8a676-152">Here's how to interpret the columns in the *Types, Roots* and *Dominators* views:</span></span>
 
 <span data-ttu-id="8a676-153">列</span><span class="sxs-lookup"><span data-stu-id="8a676-153">Column</span></span> | <span data-ttu-id="8a676-154">描述</span><span class="sxs-lookup"><span data-stu-id="8a676-154">Description</span></span>
 :------------ | :-------------
@@ -100,7 +100,7 @@ ms.locfileid: "11232124"
 <span data-ttu-id="8a676-162">保留大小</span><span class="sxs-lookup"><span data-stu-id="8a676-162">Retained size</span></span> | <span data-ttu-id="8a676-163">对象大小加上没有其他父对象的所有子对象的大小。</span><span class="sxs-lookup"><span data-stu-id="8a676-163">Object size plus the size of all child objects that have no other parents.</span></span> <span data-ttu-id="8a676-164">出于实用目的，这是对象保留的内存量，因此，如果删除对象，将回收指定内存量。</span><span class="sxs-lookup"><span data-stu-id="8a676-164">For practical purposes, this is the amount of memory retained by the object, so if you delete the object you reclaim the specified amount of memory.</span></span>
 <span data-ttu-id="8a676-165">Count</span><span class="sxs-lookup"><span data-stu-id="8a676-165">Count</span></span> | <span data-ttu-id="8a676-166">对象实例的数量。</span><span class="sxs-lookup"><span data-stu-id="8a676-166">Number of object instances.</span></span> <span data-ttu-id="8a676-167">此值仅在"类型"视图中显示。</span><span class="sxs-lookup"><span data-stu-id="8a676-167">This value appears only in the Types view.</span></span>
 
-<span data-ttu-id="8a676-168">选择上窗格中的对象时，下窗格中\*\* 的"对象引用"表将[](#object-references)列出指向该对象的所有对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-168">When you select an object in the upper *Dominators* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.</span></span>
+<span data-ttu-id="8a676-168">选择上窗格中的对象时，下窗格中 的"对象引用"表将[](#object-references)列出指向该对象的所有对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-168">When you select an object in the upper *Dominators* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.</span></span>
 
 ### <span data-ttu-id="8a676-169">筛选器</span><span class="sxs-lookup"><span data-stu-id="8a676-169">Filters</span></span>
 
@@ -109,14 +109,14 @@ ms.locfileid: "11232124"
 ![内置和对象 ID 的筛选器](./media/memory_filter.png)
 
 1. <span data-ttu-id="8a676-172">**标识符筛选器**：通过搜索特定对象标识符筛选出数据</span><span class="sxs-lookup"><span data-stu-id="8a676-172">**Identifier filter**: Filter out data by searching for a particular object identifier</span></span>
-2. <span data-ttu-id="8a676-173">**按管理**程序分组：只有具有对其他对象的\*\* 独占引用的对象显示在对象的顶级视图中 (这是 *"Dominators"* 选项卡视图中的默认) 。</span><span class="sxs-lookup"><span data-stu-id="8a676-173">**Group by dominator**: Only objects with *exclusive* references to other objects are shown in the top-level view of objects (this is the default view in the *Dominators* tab).</span></span>
+2. <span data-ttu-id="8a676-173">**按管理**程序分组：只有具有对其他对象的 独占引用的对象显示在对象的顶级视图中 (这是 *"Dominators"* 选项卡视图中的默认) 。</span><span class="sxs-lookup"><span data-stu-id="8a676-173">**Group by dominator**: Only objects with *exclusive* references to other objects are shown in the top-level view of objects (this is the default view in the *Dominators* tab).</span></span>
 3. <span data-ttu-id="8a676-174">**内置 /ID 筛选器**：默认情况下 [，JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects) 内置对象包含在列表中。</span><span class="sxs-lookup"><span data-stu-id="8a676-174">**Built-ins / IDs filter**: By default, [JavaScript built-in objects](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects) are included in the list.</span></span> <span data-ttu-id="8a676-175">如果有多个需要区分的匿名对象，则列出对象 ID 会很有用。</span><span class="sxs-lookup"><span data-stu-id="8a676-175">Listing object IDs can be useful if there are multiple anonymous objects which need to be differentiated.</span></span>
 
 <span data-ttu-id="8a676-176">" *类型"* 视图、"根视图"和"管理 *程序* "视图各有其自己的筛选器，因此切换到其他视图时不会保留该筛选器。</span><span class="sxs-lookup"><span data-stu-id="8a676-176">The *Types, Roots* and *Dominators* views each has its own filter, so the filter isn't preserved when you switch to another view.</span></span>
 
 ### <span data-ttu-id="8a676-177">对象引用</span><span class="sxs-lookup"><span data-stu-id="8a676-177">Object references</span></span>
 
-<span data-ttu-id="8a676-178">在[**"类型**](#types)"[**和"管理程序**](#dominators)"视图中，下窗格包含一\*\*\*\* 个显示共享引用的对象引用列表。</span><span class="sxs-lookup"><span data-stu-id="8a676-178">In the [**Types**](#types) and [**Dominators**](#dominators) views, the lower pane contains an **Object references** list that displays shared references.</span></span> <span data-ttu-id="8a676-179">在上窗格中选择一个对象时，此列表将显示指向该对象的所有对象，即使选定对象保持活动状态的对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-179">When you choose an object in the upper pane, this list displays all objects that point to that object--in other words, the objects that are keeping the selected object alive.</span></span>
+<span data-ttu-id="8a676-178">在[**"类型**](#types)"[**和"管理程序**](#dominators)"视图中，下窗格包含一 个显示共享引用的对象引用列表。</span><span class="sxs-lookup"><span data-stu-id="8a676-178">In the [**Types**](#types) and [**Dominators**](#dominators) views, the lower pane contains an **Object references** list that displays shared references.</span></span> <span data-ttu-id="8a676-179">在上窗格中选择一个对象时，此列表将显示指向该对象的所有对象，即使选定对象保持活动状态的对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-179">When you choose an object in the upper pane, this list displays all objects that point to that object--in other words, the objects that are keeping the selected object alive.</span></span>
 
 <span data-ttu-id="8a676-180">循环引用使用星号 (\*) 和信息性工具提示显示，并且不能展开。</span><span class="sxs-lookup"><span data-stu-id="8a676-180">Circular references are shown with an asterisk (\*) and informational tooltip, and cannot be expanded.</span></span> <span data-ttu-id="8a676-181">否则，它们会阻止您向上移动引用树并标识保留内存的对象。</span><span class="sxs-lookup"><span data-stu-id="8a676-181">Otherwise, they would prevent you from walking up the reference tree and identifying objects that are retaining memory.</span></span>
 
@@ -124,7 +124,7 @@ ms.locfileid: "11232124"
 
 ### <span data-ttu-id="8a676-184">快照比较</span><span class="sxs-lookup"><span data-stu-id="8a676-184">Snapshot comparison</span></span>
 
-<span data-ttu-id="8a676-185">单击快照 [摘要磁贴上的快照比较](#snapshot-details) 选项卡或比较 [链接](#snapshot-summary)  将显示两个快照之间的信息差异。</span><span class="sxs-lookup"><span data-stu-id="8a676-185">Clicking on a [snapshot comparison tab](#snapshot-details) or comparison link on the [snapshot summary tile](#snapshot-summary)  will show a diff of information between the two snapshots.</span></span> <span data-ttu-id="8a676-186">在比较窗格中，"Dominators"视图、"\*\* 类型"视图和"[\*\*](#snapshot-details)根"视图提供与单个快照相同的快照详细信息，并包含以下附加值： \*\*</span><span class="sxs-lookup"><span data-stu-id="8a676-186">In the comparison pane, the *Dominators, Types* and *Roots* views provide the same [*snapshot details*](#snapshot-details) you would see for a single snapshots, with these additional values:</span></span>
+<span data-ttu-id="8a676-185">单击快照 [摘要磁贴上的快照比较](#snapshot-details) 选项卡或比较 [链接](#snapshot-summary)  将显示两个快照之间的信息差异。</span><span class="sxs-lookup"><span data-stu-id="8a676-185">Clicking on a [snapshot comparison tab](#snapshot-details) or comparison link on the [snapshot summary tile](#snapshot-summary)  will show a diff of information between the two snapshots.</span></span> <span data-ttu-id="8a676-186">在比较窗格中，"Dominators"视图、" 类型"视图和"[](#snapshot-details)根"视图提供与单个快照相同的快照详细信息，并包含以下附加值： </span><span class="sxs-lookup"><span data-stu-id="8a676-186">In the comparison pane, the *Dominators, Types* and *Roots* views provide the same [*snapshot details*](#snapshot-details) you would see for a single snapshots, with these additional values:</span></span>
 
 <span data-ttu-id="8a676-187">列</span><span class="sxs-lookup"><span data-stu-id="8a676-187">Column</span></span> | <span data-ttu-id="8a676-188">描述</span><span class="sxs-lookup"><span data-stu-id="8a676-188">Description</span></span>
 :------------ | :-------------
@@ -159,7 +159,7 @@ ms.locfileid: "11232124"
 
 ### <span data-ttu-id="8a676-212">启动分析会话时出错</span><span class="sxs-lookup"><span data-stu-id="8a676-212">An error occurred while starting the profiling session</span></span>
 
-<span data-ttu-id="8a676-213">如果看到以下错误消息：在"\*\*\*\* 内存"工具中启动分析会话时出错，请按照以下步骤操作以寻找解决方法。</span><span class="sxs-lookup"><span data-stu-id="8a676-213">If you see this error message: **An error occurred while starting the profiling session** in the Memory tool, follow these steps for a workaround.</span></span>
+<span data-ttu-id="8a676-213">如果看到以下错误消息：在" 内存"工具中启动分析会话时出错，请按照以下步骤操作以寻找解决方法。</span><span class="sxs-lookup"><span data-stu-id="8a676-213">If you see this error message: **An error occurred while starting the profiling session** in the Memory tool, follow these steps for a workaround.</span></span>
 
 1. <span data-ttu-id="8a676-214">按 `Windows Key`  +  `R` 。</span><span class="sxs-lookup"><span data-stu-id="8a676-214">Press `Windows Key` + `R`.</span></span>
 

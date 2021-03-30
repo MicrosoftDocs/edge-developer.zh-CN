@@ -52,7 +52,7 @@ ms.locfileid: "11232629"
 }
 ```  
 
-<span data-ttu-id="47e26-122">如果浏览器操作已由扩展设置，则它在选择"更多\*\* (...) "\*\* 后显示在"操作"菜单中，或者显示在地址栏旁的"显示"按钮已由用户打开\*\*\*\* 的情况下显示在地址栏的右侧。</span><span class="sxs-lookup"><span data-stu-id="47e26-122">If the browser action has been set by the extension, it appears either in the Actions menu after selecting **More(...)**,  or to the right of the address bar if **Show button next to the address bar** has been toggled on by the user.</span></span>  
+<span data-ttu-id="47e26-122">如果浏览器操作已由扩展设置，则它在选择"更多 (...) " 后显示在"操作"菜单中，或者显示在地址栏旁的"显示"按钮已由用户打开 的情况下显示在地址栏的右侧。</span><span class="sxs-lookup"><span data-stu-id="47e26-122">If the browser action has been set by the extension, it appears either in the Actions menu after selecting **More(...)**,  or to the right of the address bar if **Show button next to the address bar** has been toggled on by the user.</span></span>  
 
 :::row:::
    :::column span="1":::
@@ -83,7 +83,7 @@ ms.locfileid: "11232629"
 
 ##### <span data-ttu-id="47e26-133">管理 UI</span><span class="sxs-lookup"><span data-stu-id="47e26-133">Management UI</span></span>  
 
-<span data-ttu-id="47e26-134">当用户通过转到"更多扩展\*\* (...) \*\*菜单并选择"扩展"导航到扩展窗格时，将在扩展名旁边显示\*\*\*\* 一个图标。</span><span class="sxs-lookup"><span data-stu-id="47e26-134">When users navigate to the extensions pane by going to the **More(...)** menu and selecting **Extensions**, an icon is displayed next to the name of the extension.</span></span>  
+<span data-ttu-id="47e26-134">当用户通过转到"更多扩展 (...) 菜单并选择"扩展"导航到扩展窗格时，将在扩展名旁边显示 一个图标。</span><span class="sxs-lookup"><span data-stu-id="47e26-134">When users navigate to the extensions pane by going to the **More(...)** menu and selecting **Extensions**, an icon is displayed next to the name of the extension.</span></span>  
 
 <span data-ttu-id="47e26-135">应指定以下图标大小。</span><span class="sxs-lookup"><span data-stu-id="47e26-135">You should specify the following icon sizes.</span></span>  
 
@@ -114,8 +114,8 @@ ms.locfileid: "11232629"
 
 | <span data-ttu-id="47e26-145">大小</span><span class="sxs-lookup"><span data-stu-id="47e26-145">Size</span></span> | <span data-ttu-id="47e26-146">详细信息</span><span class="sxs-lookup"><span data-stu-id="47e26-146">Details</span></span> |  
 |:--- |:--- |  
-| <span data-ttu-id="47e26-147">44px</span><span class="sxs-lookup"><span data-stu-id="47e26-147">44px</span></span> | <span data-ttu-id="47e26-148">在 Windows UI \ (**应用列表中使用**，**设置**  \>  **系统**应用  \>  **&功能**\) 。</span><span class="sxs-lookup"><span data-stu-id="47e26-148">Used in the Windows UI \(**App List**, **Settings** \> **System** \> **Apps & features**\).</span></span> |  
-| <span data-ttu-id="47e26-149">50px</span><span class="sxs-lookup"><span data-stu-id="47e26-149">50px</span></span> | <span data-ttu-id="47e26-150">打包要求 \ (在任意位置\) 。</span><span class="sxs-lookup"><span data-stu-id="47e26-150">Packaging requirement \(not visible anywhere\).</span></span> |  
+| <span data-ttu-id="47e26-147">44px</span><span class="sxs-lookup"><span data-stu-id="47e26-147">44px</span></span> | <span data-ttu-id="47e26-148">在 Windows UI \(**应用列表中使用**，**设置**  \>  **系统**应用  \>  **&功能**\) 。</span><span class="sxs-lookup"><span data-stu-id="47e26-148">Used in the Windows UI \(**App List**, **Settings** \> **System** \> **Apps & features**\).</span></span> |  
+| <span data-ttu-id="47e26-149">50px</span><span class="sxs-lookup"><span data-stu-id="47e26-149">50px</span></span> | <span data-ttu-id="47e26-150">打包要求 \(在任意位置\) 。</span><span class="sxs-lookup"><span data-stu-id="47e26-150">Packaging requirement \(not visible anywhere\).</span></span> |  
 | <span data-ttu-id="47e26-151">150px</span><span class="sxs-lookup"><span data-stu-id="47e26-151">150px</span></span> | <span data-ttu-id="47e26-152">用作 Microsoft Store 的图标。</span><span class="sxs-lookup"><span data-stu-id="47e26-152">Used as the icon for the Microsoft Store.</span></span> |  
 
 

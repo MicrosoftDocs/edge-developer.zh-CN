@@ -31,7 +31,7 @@ ms.locfileid: "11461492"
 
 <span data-ttu-id="2ee66-105">使用 Microsoft Edge 开发人员工具在本机 Android 应用中调试 Android WebView。</span><span class="sxs-lookup"><span data-stu-id="2ee66-105">Debug Android WebViews in your native Android apps using Microsoft Edge Developer Tools.</span></span>  
 
-<span data-ttu-id="2ee66-106">在 Android 4.4 \ (KitKat\) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。</span><span class="sxs-lookup"><span data-stu-id="2ee66-106">On Android 4.4 \(KitKat\) or later, use DevTools to debug WebView content in native Android apps.</span></span>  
+<span data-ttu-id="2ee66-106">在 Android 4.4 \(KitKat\) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。</span><span class="sxs-lookup"><span data-stu-id="2ee66-106">On Android 4.4 \(KitKat\) or later, use DevTools to debug WebView content in native Android apps.</span></span>  
 
 ### <a name="summary"></a><span data-ttu-id="2ee66-107">摘要</span><span class="sxs-lookup"><span data-stu-id="2ee66-107">Summary</span></span>  
 
@@ -94,7 +94,7 @@ The gray graphics listed with the Android WebView represent its size and positio
 
 > [!NOTE]
 > <span data-ttu-id="2ee66-129">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="2ee66-129">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="2ee66-130">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由 [Meggin Kearney][MegginKearney] \ (Tech Writer\) 。</span><span class="sxs-lookup"><span data-stu-id="2ee66-130">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\).</span></span>  
+> <span data-ttu-id="2ee66-130">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由 [Meggin Kearney][MegginKearney] \(Tech Writer\) 。</span><span class="sxs-lookup"><span data-stu-id="2ee66-130">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="2ee66-132">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="2ee66-132">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

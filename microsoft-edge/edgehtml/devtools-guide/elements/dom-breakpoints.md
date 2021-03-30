@@ -22,7 +22,7 @@ ms.locfileid: "11232298"
 
 <span data-ttu-id="648e1-106">只要选定元素节点发生更改，就可以使用 DOM 破坏断点来中断调试程序。</span><span class="sxs-lookup"><span data-stu-id="648e1-106">You can use DOM mutation breakpoints to break into the debugger whenever a selected element node changes.</span></span> <span data-ttu-id="648e1-107">这有助于跟踪导致 UI 出现视觉故障的代码，而无需在 *EdgeHTML* 中可触发此类更改的 450 多个 DOM API 上设置单独的断点。</span><span class="sxs-lookup"><span data-stu-id="648e1-107">This is helpful for tracking down the code responsible for causing visual glitches with your UI without having to set individual breakpoints on each of the 450+ DOM APIs in *EdgeHTML* that can trigger such changes.</span></span> 
 
-<span data-ttu-id="648e1-108">若要设置 DOM 断点，请右键单击"元素"\*\*\*\* 面板*HTML 树视图中*的任何元素以打开上下文菜单。</span><span class="sxs-lookup"><span data-stu-id="648e1-108">To set a DOM breakpoint, right-click on any element in the **Elements** panel *HTML tree view* to open the context menu.</span></span>
+<span data-ttu-id="648e1-108">若要设置 DOM 断点，请右键单击"元素" 面板*HTML 树视图中*的任何元素以打开上下文菜单。</span><span class="sxs-lookup"><span data-stu-id="648e1-108">To set a DOM breakpoint, right-click on any element in the **Elements** panel *HTML tree view* to open the context menu.</span></span>
 
 ![DOM 断点上下文菜单](../media/elements_dom_breakpoints_contextmenu.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "11232298"
 
  - <span data-ttu-id="648e1-114">**修改属性时中断**：在值中添加、删除或更改选定元素的属性时，中断调试程序。</span><span class="sxs-lookup"><span data-stu-id="648e1-114">**Break on Attribute modified**: Break into the debugger when an attribute of the selected element is added, removed or changed in value.</span></span>
 
-<span data-ttu-id="648e1-115">**然后，DOM**断点窗格将列出所选元素 (，具体操作是生成一个选择器，该选择器描述其在 DOM) 中的位置，以及已设置删除 (*节点*、修改了子树、修改了属性的断点) 。</span><span class="sxs-lookup"><span data-stu-id="648e1-115">The **DOM breakpoints** pane will then list the selected element (by generating a selector describing its location in the DOM) and the types of breakpoints you have set (*Node removed, Subtree modified, Attribute modified*).</span></span> <span data-ttu-id="648e1-116">在此处，您还可以使用 (按钮\*\* 从 rt-click 上下文\*\* 菜单) 或一次重新绑定、禁用或删除断点 (断点) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="648e1-116">From here, you can also *rebind*, *disable*, or *delete* your breakpoints, individually (from the rt-click context menu) or all at once (using the buttons).</span></span>
+<span data-ttu-id="648e1-115">**然后，DOM**断点窗格将列出所选元素 (，具体操作是生成一个选择器，该选择器描述其在 DOM) 中的位置，以及已设置删除 (*节点*、修改了子树、修改了属性的断点) 。</span><span class="sxs-lookup"><span data-stu-id="648e1-115">The **DOM breakpoints** pane will then list the selected element (by generating a selector describing its location in the DOM) and the types of breakpoints you have set (*Node removed, Subtree modified, Attribute modified*).</span></span> <span data-ttu-id="648e1-116">在此处，您还可以使用 (按钮 从 rt-click 上下文 菜单) 或一次重新绑定、禁用或删除断点 (断点) 。 </span><span class="sxs-lookup"><span data-stu-id="648e1-116">From here, you can also *rebind*, *disable*, or *delete* your breakpoints, individually (from the rt-click context menu) or all at once (using the buttons).</span></span>
 
 ![DOM 断点窗格](../media/elements_dom_breakpoints.png)
 
@@ -42,7 +42,7 @@ ms.locfileid: "11232298"
 
 <span data-ttu-id="648e1-119">断点存储在 (范围设置为在开发人员工具设置) 中设置的页面的 URL。</span><span class="sxs-lookup"><span data-stu-id="648e1-119">Breakpoints are stored (and scoped to the URL of the page they're set within) as part of your DevTools settings.</span></span> <span data-ttu-id="648e1-120">重新加载页面或关闭并重新打开工具时，DevTools 将尝试将断点重新绑定到其关联元素。</span><span class="sxs-lookup"><span data-stu-id="648e1-120">When the page is reloaded or the tools are closed and reopened, DevTools will attempt to rebind your breakpoints to their associated elements.</span></span>
 
-<span data-ttu-id="648e1-121">无法自动重新绑定的断点在断点圆圈上用警告图标指示。</span><span class="sxs-lookup"><span data-stu-id="648e1-121">Breakpoints that couldn't be automatically rebinded are indicated with a warning icon on the breakpoint circle.</span></span> <span data-ttu-id="648e1-122">对于这些元素，你可以等待在 DOM ( (中出现相应元素后\*\*\*\*，使用重新绑定断点按钮和/或上下文菜单选项) 手动重新绑定元素) ，或者完全删除断点。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="648e1-122">For these, you can wait to rebind the element manually (using the **Rebind breakpoint** button and/or context menu option) once a corresponding element appears in the DOM (and the breakpoint icon no longer shows the warning indicator), or **Delete** the breakpoint altogether.</span></span>
+<span data-ttu-id="648e1-121">无法自动重新绑定的断点在断点圆圈上用警告图标指示。</span><span class="sxs-lookup"><span data-stu-id="648e1-121">Breakpoints that couldn't be automatically rebinded are indicated with a warning icon on the breakpoint circle.</span></span> <span data-ttu-id="648e1-122">对于这些元素，你可以等待在 DOM ( (中出现相应元素后，使用重新绑定断点按钮和/或上下文菜单选项) 手动重新绑定元素) ，或者完全删除断点。 </span><span class="sxs-lookup"><span data-stu-id="648e1-122">For these, you can wait to rebind the element manually (using the **Rebind breakpoint** button and/or context menu option) once a corresponding element appears in the DOM (and the breakpoint icon no longer shows the warning indicator), or **Delete** the breakpoint altogether.</span></span>
 
 ![未绑定断点指示器](../media/elements_dom_breakpoint_unbound.png)
 

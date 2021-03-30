@@ -21,7 +21,7 @@ ms.locfileid: "11232259"
 > [!NOTE]
 > <span data-ttu-id="95c66-105">新版 Microsoft Edge 是使用 Chromium 构建的，并从版本 75 开始。</span><span class="sxs-lookup"><span data-stu-id="95c66-105">The new Microsoft Edge is built using Chromium, and starts at version 75.</span></span>  <span data-ttu-id="95c66-106">有关详细信息，请 [下载新的 Microsoft Edge，][MicrosoftNewEdge]并尝试使用新的 Microsoft Edge ([Chromium) 开发人员工具][DevtoolsGuideChromium]。</span><span class="sxs-lookup"><span data-stu-id="95c66-106">For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromium].</span></span>  
 > 
-> <span data-ttu-id="95c66-107">若要模拟新 DevTools 中的不同设备、浏览器、屏幕大小和分辨率，请导航到 Microsoft [Edge \ (Chromium\) DevTools 中的"模拟移动设备"。][DevtoolsGuideChromiumDeviceMode]</span><span class="sxs-lookup"><span data-stu-id="95c66-107">To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge \(Chromium\) DevTools][DevtoolsGuideChromiumDeviceMode].</span></span>  
+> <span data-ttu-id="95c66-107">若要模拟新 DevTools 中的不同设备、浏览器、屏幕大小和分辨率，请导航到 Microsoft [Edge \(Chromium\) DevTools 中的"模拟移动设备"。][DevtoolsGuideChromiumDeviceMode]</span><span class="sxs-lookup"><span data-stu-id="95c66-107">To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge \(Chromium\) DevTools][DevtoolsGuideChromiumDeviceMode].</span></span>  
 
 <span data-ttu-id="95c66-108">**模拟面板**可帮助执行下列活动。</span><span class="sxs-lookup"><span data-stu-id="95c66-108">The **Emulation** panel helps with the following activities.</span></span>    
 
@@ -73,7 +73,7 @@ ms.locfileid: "11232259"
 
 ### <span data-ttu-id="95c66-142">Orientation</span><span class="sxs-lookup"><span data-stu-id="95c66-142">Orientation</span></span>  
 
-<span data-ttu-id="95c66-143">从横向**或\*\*\*\*纵向模式**选择。</span><span class="sxs-lookup"><span data-stu-id="95c66-143">Choose from **Landscape** or **Portrait** mode.</span></span>  
+<span data-ttu-id="95c66-143">从横向**或纵向模式**选择。</span><span class="sxs-lookup"><span data-stu-id="95c66-143">Choose from **Landscape** or **Portrait** mode.</span></span>  
 
 ### <span data-ttu-id="95c66-144">分辨率</span><span class="sxs-lookup"><span data-stu-id="95c66-144">Resolution</span></span>  
 

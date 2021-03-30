@@ -41,7 +41,7 @@ ms.locfileid: "11398712"
     :::image-end:::  
     
 1.  <span data-ttu-id="47691-109">键入 `sensors` ，选择 **"显示传感器"，** 然后选择 `Enter` 。</span><span class="sxs-lookup"><span data-stu-id="47691-109">Type `sensors`, choose **Show Sensors**, and select `Enter`.</span></span>  <span data-ttu-id="47691-110">传感器 **工具** 在 DevTools 窗口底部打开。</span><span class="sxs-lookup"><span data-stu-id="47691-110">The **Sensors** tool opens at the bottom of your DevTools window.</span></span>  
-1.  <span data-ttu-id="47691-111">从 **"方向**"列表中，选择预设方向之一，例如，或选择"自定义方向" `Portrait upside down` 来提供你自己的精确方向。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="47691-111">From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.</span></span>  
+1.  <span data-ttu-id="47691-111">从 **"方向**"列表中，选择预设方向之一，例如，或选择"自定义方向" `Portrait upside down` 来提供你自己的精确方向。 </span><span class="sxs-lookup"><span data-stu-id="47691-111">From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.</span></span>  
     
     :::row:::
        :::column span="":::

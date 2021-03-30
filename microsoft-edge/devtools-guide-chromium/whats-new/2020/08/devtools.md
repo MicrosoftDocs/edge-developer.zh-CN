@@ -43,7 +43,7 @@ ms.locfileid: "11408344"
 
 <span data-ttu-id="4bc6c-110">若要激活此功能，请导航到 Microsoft [Edge DevTools][DevtoolsCustomizeShortcuts]中的自定义键盘快捷方式。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-110">To activate this feature, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].</span></span>  
 
-<span data-ttu-id="4bc6c-111">例如，用于暂停或继续运行代码中的脚本的键盘快捷方式 [Visual Studio为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-111">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.</span></span>  <span data-ttu-id="4bc6c-112">使用**DevTools (** Default) 预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` \*\*\*\* `F5` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-112">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
+<span data-ttu-id="4bc6c-111">例如，用于暂停或继续运行代码中的脚本的键盘快捷方式 [Visual Studio为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-111">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.</span></span>  <span data-ttu-id="4bc6c-112">使用**DevTools (** Default) 预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8`  `F5` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-112">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
 
 <span data-ttu-id="4bc6c-113">Chromium [问题#174309][CR174309]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-113">Chromium issue [#174309][CR174309]</span></span>  
 
@@ -57,7 +57,7 @@ ms.locfileid: "11408344"
 
 <span data-ttu-id="4bc6c-118">为了帮助增强用于双屏和可折叠设备的网站或应用，在模拟设备时使用以下 [功能][DevtoolsDeviceModeIndex]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-118">To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].</span></span>  
 
-*   <span data-ttu-id="4bc6c-119">[跨区][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]，即你的网站 \ (或 app\) 显示在两个屏幕上时。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-119">[Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.</span></span>
+*   <span data-ttu-id="4bc6c-119">[跨区][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]，即你的网站 \(或 app\) 显示在两个屏幕上时。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-119">[Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.</span></span>
 *   <span data-ttu-id="4bc6c-120">[呈现接层][DualScreenIntroductionHowWorkSeam]，这是两个屏幕之间的空间。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-120">[Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.</span></span>
 *   <span data-ttu-id="4bc6c-121">[启用实验性 Web 平台 API][DevtoolsExperimentalFeaturesEnableExperimentalApis]以访问新的[CSS 媒体][DualScreenWebCssMediaSpanning]屏幕跨越功能以及[JavaScript getWindowSegments API。][DualScreenWebJavascriptGetwindowsegments]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-121">[Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].</span></span>  
 
@@ -82,9 +82,9 @@ ms.locfileid: "11408344"
 > [!NOTE]
 > <span data-ttu-id="4bc6c-132">有关网格覆盖层详细信息，请导航到 [CSS 网格调试功能][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-132">For more information about grid overlays, navigate to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].</span></span>  
 
-<span data-ttu-id="4bc6c-133">Microsoft Edge DevTools 团队和 Chrome DevTools 团队共同协作开发其他功能。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-133">The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.</span></span>  <span data-ttu-id="4bc6c-134">新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"\*\*\*\* 工具上的新"布局"窗格**可配置**。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-134">The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.</span></span>  
+<span data-ttu-id="4bc6c-133">Microsoft Edge DevTools 团队和 Chrome DevTools 团队共同协作开发其他功能。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-133">The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.</span></span>  <span data-ttu-id="4bc6c-134">新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素" 工具上的新"布局"窗格**可配置**。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-134">The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.</span></span>  
 
-<span data-ttu-id="4bc6c-135">若要启用此实验性功能，请导航[][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]到"打开实验功能"，并选中"重启后元素"中的"布局边栏"窗格中"启用新的 CSS 网格调试功能\*\* (配置\*\*选项"旁边的复选框) 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-135">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.</span></span>  
+<span data-ttu-id="4bc6c-135">若要启用此实验性功能，请导航[][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]到"打开实验功能"，并选中"重启后元素"中的"布局边栏"窗格中"启用新的 CSS 网格调试功能 (配置选项"旁边的复选框) 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-135">To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.</span></span>  
 
 <span data-ttu-id="4bc6c-136">有关此实验详细信息，请导航到启用 [新的 CSS 网格调试功能][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-136">For more information about this experiment, navigate to [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].</span></span>  
 
@@ -169,7 +169,7 @@ The current effort to improve translation quality enables easier support for mor
 
 ### <a name="highlight-all-search-results-in-elements-tool"></a><span data-ttu-id="4bc6c-163">在"元素"工具中突出显示所有搜索结果</span><span class="sxs-lookup"><span data-stu-id="4bc6c-163">Highlight all search results in Elements tool</span></span>  
 
-<span data-ttu-id="4bc6c-164">在 Microsoft Edge 84 和 85 中\*\*\*\*，"元素"工具的第一个搜索结果未突出显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-164">In Microsoft Edge 84 and 85, the first search result in the **Elements** tool did not highlight.</span></span>  <span data-ttu-id="4bc6c-165">其余搜索结果已正确突出显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-165">The remaining search results were highlighted correctly.</span></span>  
+<span data-ttu-id="4bc6c-164">在 Microsoft Edge 84 和 85 中，"元素"工具的第一个搜索结果未突出显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-164">In Microsoft Edge 84 and 85, the first search result in the **Elements** tool did not highlight.</span></span>  <span data-ttu-id="4bc6c-165">其余搜索结果已正确突出显示。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-165">The remaining search results were highlighted correctly.</span></span>  
 
 <span data-ttu-id="4bc6c-166">感谢你发送反馈并帮助改进 Chromium。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-166">Thank you for sending your feedback and helping improve Chromium.</span></span>  <span data-ttu-id="4bc6c-167">您的反馈发现了#1103316 [][CR1103316] Chromium 项目中的问题。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-167">Your feedback uncovered Issue [#1103316][CR1103316] in the open-source Chromium project.</span></span>  
 
@@ -191,7 +191,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4bc6c-175">若要打开新的 **媒体工具** ，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-175">To open the new **Media** tool, complete the following step.</span></span>  
 
-1.  <span data-ttu-id="4bc6c-176">Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Media**.</span><span class="sxs-lookup"><span data-stu-id="4bc6c-176">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.</span></span>  
+1.  <span data-ttu-id="4bc6c-176">Choose **Customize and control DevTools** \(`...` \) > More **tools**  >  **Media**.</span><span class="sxs-lookup"><span data-stu-id="4bc6c-176">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.</span></span>  
     
     :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具" lightbox="../../media/2020/08/media-panel.msft.png":::
        <span data-ttu-id="4bc6c-178">新 **媒体** 工具</span><span class="sxs-lookup"><span data-stu-id="4bc6c-178">New **Media** tool</span></span>  
@@ -208,7 +208,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4bc6c-185">现在，可以使用"元素"工具中的上下文菜单捕获 **节点屏幕截图** 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-185">You may now capture node screenshots using the context menu in the **Elements** tool.</span></span>  
 
-<span data-ttu-id="4bc6c-186">例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择捕获 **节点屏幕截图**。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-186">For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.</span></span>  
+<span data-ttu-id="4bc6c-186">例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \(右键单击\) ，然后选择捕获 **节点屏幕截图**。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-186">For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    <span data-ttu-id="4bc6c-188">捕获节点屏幕截图</span><span class="sxs-lookup"><span data-stu-id="4bc6c-188">Capture node screenshots</span></span>  
@@ -290,7 +290,7 @@ The current effort to improve translation quality enables easier support for mor
 
 | <span data-ttu-id="4bc6c-231">JavaScript 语言功能</span><span class="sxs-lookup"><span data-stu-id="4bc6c-231">JavaScript language feature</span></span> | <span data-ttu-id="4bc6c-232">详细信息</span><span class="sxs-lookup"><span data-stu-id="4bc6c-232">Details</span></span> |  
 |:--- |:--- |  
-| [<span data-ttu-id="4bc6c-233">逻辑赋值运算符</span><span class="sxs-lookup"><span data-stu-id="4bc6c-233">Logical assignment operators</span></span>][V8FeaturesLogicalAssignment] | <span data-ttu-id="4bc6c-234">DevTools 现在支持使用控制台和源工具中的新 、 和 运算符 `&&=` `||=` `??=` 进行逻辑分配。 \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4bc6c-234">DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.</span></span>  |  
+| [<span data-ttu-id="4bc6c-233">逻辑赋值运算符</span><span class="sxs-lookup"><span data-stu-id="4bc6c-233">Logical assignment operators</span></span>][V8FeaturesLogicalAssignment] | <span data-ttu-id="4bc6c-234">DevTools 现在支持使用控制台和源工具中的新 、 和 运算符 `&&=` `||=` `??=` 进行逻辑分配。  </span><span class="sxs-lookup"><span data-stu-id="4bc6c-234">DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.</span></span>  |  
 | <span data-ttu-id="4bc6c-235">彩色数字 [分隔符][V8FeaturesNumericSeparators]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-235">Pretty-print [numeric separators][V8FeaturesNumericSeparators]</span></span> | <span data-ttu-id="4bc6c-236">DevTools 现在在"源"工具中正确打印数字 **分隔** 符。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-236">DevTools now properly pretty-prints the numeric separators in the **Sources** tool.</span></span>  |  
 
 <span data-ttu-id="4bc6c-237">Chromium 问题 [：1086817][CR1086817] [、1080569][CR1080569]</span><span class="sxs-lookup"><span data-stu-id="4bc6c-237">Chromium issues: [1086817][CR1086817], [1080569][CR1080569]</span></span>  
@@ -303,9 +303,9 @@ The current effort to improve translation quality enables easier support for mor
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a><span data-ttu-id="4bc6c-242">在"服务工作者"窗格中弃用其他源列表</span><span class="sxs-lookup"><span data-stu-id="4bc6c-242">Deprecation of other origins listing in the Service Workers pane</span></span>  
 
-<span data-ttu-id="4bc6c-243">DevTools 现在提供来自服务工作者\*\*\*\* 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-243">DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.</span></span>  <span data-ttu-id="4bc6c-244">若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-244">To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.</span></span>  
+<span data-ttu-id="4bc6c-243">DevTools 现在提供来自服务工作者 窗格 \(**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-243">DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.</span></span>  <span data-ttu-id="4bc6c-244">若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-244">To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.</span></span>  
 
-<span data-ttu-id="4bc6c-245">以前，DevTools 显示一个嵌套在\*\*\*\*"应用程序工具""服务>**窗格下**的列表。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-245">Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.</span></span>  
+<span data-ttu-id="4bc6c-245">以前，DevTools 显示一个嵌套在"应用程序工具""服务>**窗格下**的列表。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-245">Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="链接到其他来源" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    <span data-ttu-id="4bc6c-247">链接到其他来源</span><span class="sxs-lookup"><span data-stu-id="4bc6c-247">Link to other origins</span></span>  
@@ -418,7 +418,7 @@ Chromium issue: [#1103854][CR1103854]
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a><span data-ttu-id="4bc6c-302">在网络面板中一致地显示资源类型</span><span class="sxs-lookup"><span data-stu-id="4bc6c-302">Consistently display resource type in Network panel</span></span>  
 
-<span data-ttu-id="4bc6c-303">DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \ (HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4bc6c-303">DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.</span></span>  
+<span data-ttu-id="4bc6c-303">DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \(HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 </span><span class="sxs-lookup"><span data-stu-id="4bc6c-303">DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.</span></span>  
 
 <span data-ttu-id="4bc6c-304">以前，DevTools 有时将类型 `Other` 更改为 。</span><span class="sxs-lookup"><span data-stu-id="4bc6c-304">Previously DevTools changed the type to `Other` sometimes.</span></span>  
 

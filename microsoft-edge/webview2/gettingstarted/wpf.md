@@ -23,14 +23,14 @@ ms.locfileid: "11306143"
 
 <span data-ttu-id="5dd1f-108">在继续之前，请确保安装以下先决条件列表。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-108">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
 
-*   <span data-ttu-id="5dd1f-109">[WebView2][Webview2Installer] 运行时或任何 [Microsoft Edge (chromium) ][MicrosoftedgeinsiderDownload] 安装在受支持的操作系统 \ (当前为 Windows 10、Windows 8.1 和 Windows 7\) 。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-109">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
+*   <span data-ttu-id="5dd1f-109">[WebView2][Webview2Installer] 运行时或任何 [Microsoft Edge (chromium) ][MicrosoftedgeinsiderDownload] 安装在受支持的操作系统 \(当前为 Windows 10、Windows 8.1 和 Windows 7\) 。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-109">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
 *   <span data-ttu-id="5dd1f-110">[Visual Studio][MicrosoftVisualstudioMain] 2017 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-110">[Visual Studio][MicrosoftVisualstudioMain] 2017 or later.</span></span>  
     
 ## <span data-ttu-id="5dd1f-111">步骤 1 - 创建单窗口应用</span><span class="sxs-lookup"><span data-stu-id="5dd1f-111">Step 1 - Create a single-window app</span></span>  
 
 <span data-ttu-id="5dd1f-112">从包含单个主窗口的基本桌面项目开始。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-112">Start with a basic desktop project that contains a single main window.</span></span>  
 
-1.  <span data-ttu-id="5dd1f-113">In Visual Studio， choose **WPF .NET Core App** \ (or **WPF .NET Framework App**\) > **Next**.</span><span class="sxs-lookup"><span data-stu-id="5dd1f-113">In Visual Studio, choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.</span></span>  
+1.  <span data-ttu-id="5dd1f-113">In Visual Studio， choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.</span><span class="sxs-lookup"><span data-stu-id="5dd1f-113">In Visual Studio, choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.</span></span>  
     
     :::row:::
        :::column span="1":::
@@ -43,7 +43,7 @@ ms.locfileid: "11306143"
        :::column-end:::
     :::row-end:::
     
-1.  <span data-ttu-id="5dd1f-118">输入 **项目名称和** 位置 **的值**。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-118">Enter values for **Project name** and **Location**.</span></span>  <span data-ttu-id="5dd1f-119">选择 **.NET Framework 4.6.2** 或更高版本 \ (或 **.NET Core 3.0** 或更高版本\) 。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-119">Choose **.NET Framework 4.6.2** or later \(or **.NET Core 3.0** or later\).</span></span>  
+1.  <span data-ttu-id="5dd1f-118">输入 **项目名称和** 位置 **的值**。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-118">Enter values for **Project name** and **Location**.</span></span>  <span data-ttu-id="5dd1f-119">选择 **.NET Framework 4.6.2** 或更高版本 \(或 **.NET Core 3.0** 或更高版本\) 。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-119">Choose **.NET Framework 4.6.2** or later \(or **.NET Core 3.0** or later\).</span></span>  
     
     :::row:::
            :::column span="1":::
@@ -62,7 +62,7 @@ ms.locfileid: "11306143"
 
 <span data-ttu-id="5dd1f-126">使用 NuGet 将 WebView2 SDK 添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="5dd1f-126">Use NuGet to add the WebView2 SDK to the project.</span></span>  
 
-1.  <span data-ttu-id="5dd1f-127">悬停在项目上，打开上下文菜单\ (右键单击\) ，然后选择"管理 NuGet 程序包 **..."。**</span><span class="sxs-lookup"><span data-stu-id="5dd1f-127">Hover on the projecty, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.</span></span>  
+1.  <span data-ttu-id="5dd1f-127">悬停在项目上，打开上下文菜单\(右键单击\) ，然后选择"管理 NuGet 程序包 **..."。**</span><span class="sxs-lookup"><span data-stu-id="5dd1f-127">Hover on the projecty, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.</span></span>  
     
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="管理 NuGet 程序包":::
        <span data-ttu-id="5dd1f-129">管理 NuGet 程序包</span><span class="sxs-lookup"><span data-stu-id="5dd1f-129">Manage NuGet packages</span></span>

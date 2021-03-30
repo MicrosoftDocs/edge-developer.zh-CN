@@ -16,7 +16,7 @@ ms.locfileid: "11398103"
 ---
 # <a name="supported-apis-for-microsoft-edge-extensions"></a><span data-ttu-id="fc80f-104">Microsoft Edge 扩展支持的 API</span><span class="sxs-lookup"><span data-stu-id="fc80f-104">Supported APIs for Microsoft Edge extensions</span></span>
 
-<span data-ttu-id="fc80f-105">下表提供了在构建 Microsoft Edge \ (Chromium\) 扩展时可以使用的 API 列表。</span><span class="sxs-lookup"><span data-stu-id="fc80f-105">The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge \(Chromium\) browser.</span></span>
+<span data-ttu-id="fc80f-105">下表提供了在构建 Microsoft Edge \(Chromium\) 扩展时可以使用的 API 列表。</span><span class="sxs-lookup"><span data-stu-id="fc80f-105">The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge \(Chromium\) browser.</span></span>
 
 | <span data-ttu-id="fc80f-106">API</span><span class="sxs-lookup"><span data-stu-id="fc80f-106">API</span></span>                                   | <span data-ttu-id="fc80f-107">说明</span><span class="sxs-lookup"><span data-stu-id="fc80f-107">Description</span></span>                                            
 |---------------------------------------|----------------------------------------------------------|

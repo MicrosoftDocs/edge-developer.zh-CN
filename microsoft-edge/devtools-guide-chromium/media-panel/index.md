@@ -30,7 +30,7 @@ ms.locfileid: "11398404"
 
 # <a name="view-and-debug-media-players-information"></a><span data-ttu-id="efa46-104">查看和调试媒体播放器信息</span><span class="sxs-lookup"><span data-stu-id="efa46-104">View and debug media players information</span></span>  
 
-<span data-ttu-id="efa46-105">使用\*\*\*\* Microsoft Edge DevTools 中的媒体工具查看信息，并按浏览器选项卡调试媒体播放器。</span><span class="sxs-lookup"><span data-stu-id="efa46-105">Use the **Media** tool in Microsoft Edge DevTools to view information and debug the media players per browser tab.</span></span>  
+<span data-ttu-id="efa46-105">使用 Microsoft Edge DevTools 中的媒体工具查看信息，并按浏览器选项卡调试媒体播放器。</span><span class="sxs-lookup"><span data-stu-id="efa46-105">Use the **Media** tool in Microsoft Edge DevTools to view information and debug the media players per browser tab.</span></span>  
 
 ## <a name="open-the-media-tool"></a><span data-ttu-id="efa46-106">打开媒体工具</span><span class="sxs-lookup"><span data-stu-id="efa46-106">Open the Media tool</span></span>  
 
@@ -92,12 +92,12 @@ ms.locfileid: "11398404"
 
 <span data-ttu-id="efa46-135">有时，您可以在网页上运行多个媒体播放器，或者使用相同的浏览器选项卡浏览不同的网页，每个网页都有媒体播放器。</span><span class="sxs-lookup"><span data-stu-id="efa46-135">Sometimes you run more than one media player on a webpage, or use the same browser tab to browse different webpages, each with media players.</span></span>
 
-<span data-ttu-id="efa46-136">你可以选择隐藏 \ (或显示\) 每个媒体播放器，以简化调试体验。</span><span class="sxs-lookup"><span data-stu-id="efa46-136">You may choose to hide \(or show\) each media player for an easier debugging experience.</span></span>  
+<span data-ttu-id="efa46-136">你可以选择隐藏 \(或显示\) 每个媒体播放器，以简化调试体验。</span><span class="sxs-lookup"><span data-stu-id="efa46-136">You may choose to hide \(or show\) each media player for an easier debugging experience.</span></span>  
 
 1.  <span data-ttu-id="efa46-137">使用同一浏览器选项卡浏览到多个不同的视频网页。</span><span class="sxs-lookup"><span data-stu-id="efa46-137">Browse to several different video webpages using the same browser tab.</span></span>  
 1.  <span data-ttu-id="efa46-138">若要隐藏媒体播放器，请完成以下操作之一。</span><span class="sxs-lookup"><span data-stu-id="efa46-138">To hide media players, complete one of the following actions.</span></span>  
-    *   <span data-ttu-id="efa46-139">若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏**播放器"。**</span><span class="sxs-lookup"><span data-stu-id="efa46-139">To hide one media player, hover on a media player, open the contextual menu \(right-click\), and choose **Hide player**.</span></span>  
-    *   <span data-ttu-id="efa46-140">若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏所有其他 **"。**</span><span class="sxs-lookup"><span data-stu-id="efa46-140">To hide all of the other media players, hover on a media player, open the contextual menu \(right-click\), and choose **Hide all others**.</span></span>  
+    *   <span data-ttu-id="efa46-139">若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"隐藏**播放器"。**</span><span class="sxs-lookup"><span data-stu-id="efa46-139">To hide one media player, hover on a media player, open the contextual menu \(right-click\), and choose **Hide player**.</span></span>  
+    *   <span data-ttu-id="efa46-140">若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"隐藏所有其他 **"。**</span><span class="sxs-lookup"><span data-stu-id="efa46-140">To hide all of the other media players, hover on a media player, open the contextual menu \(right-click\), and choose **Hide all others**.</span></span>  
     
     :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="隐藏媒体播放器" lightbox="../media/media-panel-hide-show.msft.png":::
        <span data-ttu-id="efa46-142">隐藏媒体播放器</span><span class="sxs-lookup"><span data-stu-id="efa46-142">Hide media players</span></span>  
@@ -105,7 +105,7 @@ ms.locfileid: "11398404"
     
 ## <a name="export-media-player-information"></a><span data-ttu-id="efa46-143">导出媒体播放器信息</span><span class="sxs-lookup"><span data-stu-id="efa46-143">Export media player information</span></span>  
 
-1.  <span data-ttu-id="efa46-144">若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"保存播放器 **信息**"。</span><span class="sxs-lookup"><span data-stu-id="efa46-144">To download the media player info as a JSON file, hover on a media player, open the contextual menu \(right-click\), and choose **Save player info**.</span></span>  
+1.  <span data-ttu-id="efa46-144">若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"保存播放器 **信息**"。</span><span class="sxs-lookup"><span data-stu-id="efa46-144">To download the media player info as a JSON file, hover on a media player, open the contextual menu \(right-click\), and choose **Save player info**.</span></span>  
     
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="导出媒体信息" lightbox="../media/media-panel-save.msft.png":::
        <span data-ttu-id="efa46-146">导出媒体信息</span><span class="sxs-lookup"><span data-stu-id="efa46-146">Export media information</span></span>  

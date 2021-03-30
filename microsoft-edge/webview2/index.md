@@ -73,7 +73,7 @@ ms.locfileid: "11182365"
       <span data-ttu-id="89eef-137">通过常规的平台更新和安全修补程序依赖最新版本的 Chromium。</span><span class="sxs-lookup"><span data-stu-id="89eef-137">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
    :::column-end:::
    :::column span="1":::
-      <span data-ttu-id="89eef-138">已**修复**的 \ (即将推出 \ ) </span><span class="sxs-lookup"><span data-stu-id="89eef-138">**Fixed** \(coming soon\)</span></span>  
+      <span data-ttu-id="89eef-138">已**修复**的 \(即将推出 \ ) </span><span class="sxs-lookup"><span data-stu-id="89eef-138">**Fixed** \(coming soon\)</span></span>  
       <span data-ttu-id="89eef-139">选择将 Chromium 位打包在你的应用程序中。</span><span class="sxs-lookup"><span data-stu-id="89eef-139">Choose to package the Chromium bits in your application.</span></span>  
    :::column-end:::
    :::column span="1":::
@@ -95,27 +95,27 @@ ms.locfileid: "11182365"
 
 ## <span data-ttu-id="89eef-151">支持的平台</span><span class="sxs-lookup"><span data-stu-id="89eef-151">Supported platforms</span></span>  
 
-<span data-ttu-id="89eef-152">常规可用性 \ (GA \ ) 或预览版版本在以下编程环境中可用。</span><span class="sxs-lookup"><span data-stu-id="89eef-152">A General Availability \(GA\) or Preview version is available on the following programming environments.</span></span>  
+<span data-ttu-id="89eef-152">常规可用性 \(GA \ ) 或预览版版本在以下编程环境中可用。</span><span class="sxs-lookup"><span data-stu-id="89eef-152">A General Availability \(GA\) or Preview version is available on the following programming environments.</span></span>  
 
-*   <span data-ttu-id="89eef-153">Win32 C/c + + \ (GA \ ) </span><span class="sxs-lookup"><span data-stu-id="89eef-153">Win32 C/C++ \(GA\)</span></span>
+*   <span data-ttu-id="89eef-153">Win32 C/c + + \(GA \ ) </span><span class="sxs-lookup"><span data-stu-id="89eef-153">Win32 C/C++ \(GA\)</span></span>
 *   <span data-ttu-id="89eef-154">.NET Framework 4.6.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="89eef-154">.NET Framework 4.6.2 or later</span></span>
 *   <span data-ttu-id="89eef-155">.NET Core 3.1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="89eef-155">.NET Core 3.1 or later</span></span>
 *   <span data-ttu-id="89eef-156">.NET 5</span><span class="sxs-lookup"><span data-stu-id="89eef-156">.NET 5</span></span>
-*   <span data-ttu-id="89eef-157">[WinUI 3.0][UwpToolkitsWinui3] \ (Preview \ ) </span><span class="sxs-lookup"><span data-stu-id="89eef-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
+*   <span data-ttu-id="89eef-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview \ ) </span><span class="sxs-lookup"><span data-stu-id="89eef-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
 
 <span data-ttu-id="89eef-158">你可以在以下版本的 Windows 上运行 WebView2 应用程序。</span><span class="sxs-lookup"><span data-stu-id="89eef-158">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
 
 *   <span data-ttu-id="89eef-159">Windows 10</span><span class="sxs-lookup"><span data-stu-id="89eef-159">Windows 10</span></span>  
 *   <span data-ttu-id="89eef-160">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="89eef-160">Windows 8.1</span></span>  
-*   <span data-ttu-id="89eef-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="89eef-161">Windows 7 \*\*</span></span>  
+*   <span data-ttu-id="89eef-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="89eef-161">Windows 7 </span></span>  
 *   <span data-ttu-id="89eef-162">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="89eef-162">Windows Server 2019</span></span>  
 *   <span data-ttu-id="89eef-163">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="89eef-163">Windows Server 2016</span></span>  
 *   <span data-ttu-id="89eef-164">WindowsServer 2012</span><span class="sxs-lookup"><span data-stu-id="89eef-164">Windows Server 2012</span></span>  
 *   <span data-ttu-id="89eef-165">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="89eef-165">Windows Server 2012 R2</span></span>  
-*   <span data-ttu-id="89eef-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="89eef-166">Windows Server 2008 R2 \*\*</span></span>  
+*   <span data-ttu-id="89eef-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="89eef-166">Windows Server 2008 R2 </span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="89eef-167">\ \* \ \* WebView2 支持 Windows 7 和 Windows Server 2008 R2 与 Microsoft Edge 具有相同的支持周期。</span><span class="sxs-lookup"><span data-stu-id="89eef-167">\*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="89eef-168">有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。</span><span class="sxs-lookup"><span data-stu-id="89eef-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
+> <span data-ttu-id="89eef-167">\ \* \ \* WebView2 支持 Windows 7 和 Windows Server 2008 R2 与 Microsoft Edge 具有相同的支持周期。</span><span class="sxs-lookup"><span data-stu-id="89eef-167"> WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="89eef-168">有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。</span><span class="sxs-lookup"><span data-stu-id="89eef-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
 
 ## <span data-ttu-id="89eef-169">后续步骤</span><span class="sxs-lookup"><span data-stu-id="89eef-169">Next steps</span></span>  
 

@@ -38,7 +38,7 @@ ms.locfileid: "11399020"
 
 ## <a name="set-up-dark-theme-from-settings"></a><span data-ttu-id="4af6a-108">从"设置"设置深色主题</span><span class="sxs-lookup"><span data-stu-id="4af6a-108">Set up dark theme from Settings</span></span>  
 
-1.  <span data-ttu-id="4af6a-109">Choose **Customize and Control DevTools** \ (`...` \) > **Settings**.</span><span class="sxs-lookup"><span data-stu-id="4af6a-109">Choose **Customize And Control DevTools** \(`...`\) > **Settings**.</span></span>  <span data-ttu-id="4af6a-110">您也可以通过选择 **来** 打开"设置 `F1` "。</span><span class="sxs-lookup"><span data-stu-id="4af6a-110">You may also open **Settings** by selecting `F1`.</span></span>  
+1.  <span data-ttu-id="4af6a-109">Choose **Customize and Control DevTools** \(`...` \) > **Settings**.</span><span class="sxs-lookup"><span data-stu-id="4af6a-109">Choose **Customize And Control DevTools** \(`...`\) > **Settings**.</span></span>  <span data-ttu-id="4af6a-110">您也可以通过选择 **来** 打开"设置 `F1` "。</span><span class="sxs-lookup"><span data-stu-id="4af6a-110">You may also open **Settings** by selecting `F1`.</span></span>  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="打开“设置”" lightbox="../media/customize-options-settings.msft.png":::
        <span data-ttu-id="4af6a-112">打开 **设置**</span><span class="sxs-lookup"><span data-stu-id="4af6a-112">Open **Settings**</span></span>  

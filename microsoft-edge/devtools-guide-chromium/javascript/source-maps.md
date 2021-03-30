@@ -57,9 +57,9 @@ ms.locfileid: "11398390"
 
 <span data-ttu-id="9e0ea-117">通常将以下类型的预处理器与源地图结合使用：</span><span class="sxs-lookup"><span data-stu-id="9e0ea-117">The following types of preprocessors are commonly used in combination with Source Maps:</span></span>  
 
-*   <span data-ttu-id="9e0ea-118">Transpilers [\ (L][BabelJS]， [Traceur][GitHubWikiGoogleTraceurCompiler]\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-118">Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)</span></span>  
-*   <span data-ttu-id="9e0ea-119">编译器 \ ([关闭编译器][GitHubGoogleClosureCompiler]， [TypeScript][|::ref1::|Main]， [CoffeeScript][|::ref2::|Main]， [) ][DartMain]</span><span class="sxs-lookup"><span data-stu-id="9e0ea-119">Compilers \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dart][DartMain]\)</span></span>  
-*   <span data-ttu-id="9e0ea-120">Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-120">Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)</span></span>  
+*   <span data-ttu-id="9e0ea-118">Transpilers [\(L][BabelJS]， [Traceur][GitHubWikiGoogleTraceurCompiler]\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-118">Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)</span></span>  
+*   <span data-ttu-id="9e0ea-119">编译器 \([关闭编译器][GitHubGoogleClosureCompiler]， [TypeScript][|::ref1::|Main]， [CoffeeScript][|::ref2::|Main]， [) ][DartMain]</span><span class="sxs-lookup"><span data-stu-id="9e0ea-119">Compilers \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dart][DartMain]\)</span></span>  
+*   <span data-ttu-id="9e0ea-120">Minifiers \([UglifyJS][GitHubMishooUglifyJS]\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-120">Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)</span></span>  
     
 ## <a name="source-maps-in-devtools-sources-panel"></a><span data-ttu-id="9e0ea-121">DevTools 源面板中的源地图</span><span class="sxs-lookup"><span data-stu-id="9e0ea-121">Source Maps in DevTools Sources panel</span></span>  
 
@@ -69,7 +69,7 @@ ms.locfileid: "11398390"
 
 ### <a name="enable-source-maps-in-settings"></a><span data-ttu-id="9e0ea-130">在设置中启用源地图</span><span class="sxs-lookup"><span data-stu-id="9e0ea-130">Enable Source Maps in settings</span></span>  
 
-<span data-ttu-id="9e0ea-131">默认情况下启用源地图</span><span class="sxs-lookup"><span data-stu-id="9e0ea-131">Source Maps are enabled by default</span></span><!-- \(as of Microsoft Edge 39\)--><span data-ttu-id="9e0ea-132">，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \ (`...` \) > **Settings**.</span><span class="sxs-lookup"><span data-stu-id="9e0ea-132">, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** \(`...`\) > **Settings**.</span></span>  <span data-ttu-id="9e0ea-133">在 **"首选项"** 窗格的 **"源**"下，打开 **"启用 JavaScript 源映射"。**</span><span class="sxs-lookup"><span data-stu-id="9e0ea-133">On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.</span></span>  <span data-ttu-id="9e0ea-134">还可以启用"启用**CSS 源映射"。**</span><span class="sxs-lookup"><span data-stu-id="9e0ea-134">You may also turn on the **Enable CSS Source Maps**.</span></span>  
+<span data-ttu-id="9e0ea-131">默认情况下启用源地图</span><span class="sxs-lookup"><span data-stu-id="9e0ea-131">Source Maps are enabled by default</span></span><!-- \(as of Microsoft Edge 39\)--><span data-ttu-id="9e0ea-132">，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \(`...` \) > **Settings**.</span><span class="sxs-lookup"><span data-stu-id="9e0ea-132">, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** \(`...`\) > **Settings**.</span></span>  <span data-ttu-id="9e0ea-133">在 **"首选项"** 窗格的 **"源**"下，打开 **"启用 JavaScript 源映射"。**</span><span class="sxs-lookup"><span data-stu-id="9e0ea-133">On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.</span></span>  <span data-ttu-id="9e0ea-134">还可以启用"启用**CSS 源映射"。**</span><span class="sxs-lookup"><span data-stu-id="9e0ea-134">You may also turn on the **Enable CSS Source Maps**.</span></span>  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **<span data-ttu-id="9e0ea-136">启用 JavaScript 源映射</span><span class="sxs-lookup"><span data-stu-id="9e0ea-136">Enable JavaScript Source Maps</span></span>**  
@@ -79,8 +79,8 @@ ms.locfileid: "11398390"
 
 <span data-ttu-id="9e0ea-138">当调试代码和源地图启用时，源地图会显示在两处：</span><span class="sxs-lookup"><span data-stu-id="9e0ea-138">When debugging your code and Source Maps enabled, Source Maps show in two places:</span></span>  
 
-1.  <span data-ttu-id="9e0ea-139">在控制台 \ (指向源的链接应为原始文件，而不是生成的\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-139">In the console \(the link to source should be the original file, not the generated one\)</span></span>  
-1.  <span data-ttu-id="9e0ea-140">单步执行代码 \ (调用堆栈中的链接应打开原始源文件\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-140">When stepping through code \(the links in the call stack should open the original source file\)</span></span>  
+1.  <span data-ttu-id="9e0ea-139">在控制台 \(指向源的链接应为原始文件，而不是生成的\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-139">In the console \(the link to source should be the original file, not the generated one\)</span></span>  
+1.  <span data-ttu-id="9e0ea-140">单步执行代码 \(调用堆栈中的链接应打开原始源文件\) </span><span class="sxs-lookup"><span data-stu-id="9e0ea-140">When stepping through code \(the links in the call stack should open the original source file\)</span></span>  
     
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
@@ -138,7 +138,7 @@ ms.locfileid: "11398390"
 
 > [!NOTE]
 > <span data-ttu-id="9e0ea-168">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="9e0ea-168">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="9e0ea-169">原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX\) 创作。</span><span class="sxs-lookup"><span data-stu-id="9e0ea-169">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).</span></span>  
+> <span data-ttu-id="9e0ea-169">原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] \(Tech Writer\) 和[Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX\) 创作。</span><span class="sxs-lookup"><span data-stu-id="9e0ea-169">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="9e0ea-171">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="9e0ea-171">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

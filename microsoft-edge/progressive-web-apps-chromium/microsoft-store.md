@@ -16,7 +16,7 @@ ms.locfileid: "11461491"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a><span data-ttu-id="3172d-104">将渐进式 Web 应用发布到 Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="3172d-104">Publish your Progressive Web App to the Microsoft Store</span></span>  
 
-<span data-ttu-id="3172d-105">将渐进式 Web 应用 \ (PWA\) 发布到 [Microsoft Store][WindowsUwpPublishIndex] 具有以下优点。</span><span class="sxs-lookup"><span data-stu-id="3172d-105">Publishing your Progressive Web App \(PWA\) to the [Microsoft Store][WindowsUwpPublishIndex] brings the following advantages.</span></span>  
+<span data-ttu-id="3172d-105">将渐进式 Web 应用 \(PWA\) 发布到 [Microsoft Store][WindowsUwpPublishIndex] 具有以下优点。</span><span class="sxs-lookup"><span data-stu-id="3172d-105">Publishing your Progressive Web App \(PWA\) to the [Microsoft Store][WindowsUwpPublishIndex] brings the following advantages.</span></span>  
 
 :::row:::
    :::column span="1":::

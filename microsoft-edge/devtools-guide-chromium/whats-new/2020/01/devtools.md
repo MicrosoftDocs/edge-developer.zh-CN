@@ -53,7 +53,7 @@ ms.locfileid: "11408358"
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="d8a9d-121">中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="d8a9d-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
+      <span data-ttu-id="d8a9d-121">中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="d8a9d-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
    :::column-end:::
    :::column span="":::
       <span data-ttu-id="d8a9d-122">繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="d8a9d-122">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>
@@ -128,7 +128,7 @@ ms.locfileid: "11408358"
 
 ### <a name="3d-view"></a><span data-ttu-id="d8a9d-148">3D 视图</span><span class="sxs-lookup"><span data-stu-id="d8a9d-148">3D View</span></span>  
 
-<span data-ttu-id="d8a9d-149">使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
+<span data-ttu-id="d8a9d-149">使用 **3D 视图** 通过浏览文档对象模型 [\(DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2020/01/3dview.msft.png":::
    <span data-ttu-id="d8a9d-151">DevTools 中的 3D 视图</span><span class="sxs-lookup"><span data-stu-id="d8a9d-151">The 3D View in the DevTools</span></span>  
@@ -146,7 +146,7 @@ ms.locfileid: "11408358"
 
 #### <a name="elements-for-microsoft-edge"></a><span data-ttu-id="d8a9d-158">Microsoft Edge 的元素</span><span class="sxs-lookup"><span data-stu-id="d8a9d-158">Elements for Microsoft Edge</span></span>  
 
-<span data-ttu-id="d8a9d-159">通过添加 [Microsoft Edge \ (Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio 代码扩展，在 Visual Studio Code 内使用 Elements 工具。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-159">Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span></span>  
+<span data-ttu-id="d8a9d-159">通过添加 [Microsoft Edge \(Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio 代码扩展，在 Visual Studio Code 内使用 Elements 工具。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-159">Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="使用 Microsoft Edge Visual Studio元素的代码中的元素工具" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    <span data-ttu-id="d8a9d-161">使用 **Microsoft** Edge Visual Studio元素的代码中的元素工具</span><span class="sxs-lookup"><span data-stu-id="d8a9d-161">The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension</span></span>  
@@ -186,7 +186,7 @@ ms.locfileid: "11408358"
 
 ### <a name="tracking-prevention-console-messages"></a><span data-ttu-id="d8a9d-180">跟踪防护控制台消息</span><span class="sxs-lookup"><span data-stu-id="d8a9d-180">Tracking prevention Console messages</span></span>  
 
-<span data-ttu-id="d8a9d-181">跟踪防护是 Microsoft Edge 中一项独特的功能，可保护你免受之前未访问过的网站的跟踪。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-181">Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you have not visited before.</span></span>  <span data-ttu-id="d8a9d-182">默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-182">The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.</span></span>  <span data-ttu-id="d8a9d-183">为了让你深入了解阻止某些跟踪程序时网页的兼容性，当跟踪器被阻止时，控制台中添加了警告消息。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="d8a9d-183">To give you more insight into the compatibility of your web page when certain trackers are blocked, warning messages were added in the **Console** when a tracker is blocked.</span></span>  
+<span data-ttu-id="d8a9d-181">跟踪防护是 Microsoft Edge 中一项独特的功能，可保护你免受之前未访问过的网站的跟踪。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-181">Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you have not visited before.</span></span>  <span data-ttu-id="d8a9d-182">默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-182">The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.</span></span>  <span data-ttu-id="d8a9d-183">为了让你深入了解阻止某些跟踪程序时网页的兼容性，当跟踪器被阻止时，控制台中添加了警告消息。 </span><span class="sxs-lookup"><span data-stu-id="d8a9d-183">To give you more insight into the compatibility of your web page when certain trackers are blocked, warning messages were added in the **Console** when a tracker is blocked.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/tracking-prevention.msft.png" alt-text="跟踪防护时控制台中的邮件阻止对跟踪器存储的访问" lightbox="../../images/2020/01/tracking-prevention.msft.png":::
    <span data-ttu-id="d8a9d-185">跟踪防护 **时控制台** 中的邮件阻止对跟踪器存储的访问</span><span class="sxs-lookup"><span data-stu-id="d8a9d-185">Messages in the **Console** when tracking prevention blocks access to storage for a tracker</span></span>  
@@ -214,7 +214,7 @@ ms.locfileid: "11408358"
 
 <span data-ttu-id="d8a9d-196">相关功能：</span><span class="sxs-lookup"><span data-stu-id="d8a9d-196">Related features:</span></span>  
 
-*   <span data-ttu-id="d8a9d-197">打开[命令菜单][CommandMenu]并运行命令，在启用"显示设备框架"菜单后，为包含 Moto G4 硬件 (的视口拍摄 `Capture screenshot`) 。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="d8a9d-197">Open the [Command Menu][CommandMenu] and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).</span></span>  
+*   <span data-ttu-id="d8a9d-197">打开[命令菜单][CommandMenu]并运行命令，在启用"显示设备框架"菜单后，为包含 Moto G4 硬件 (的视口拍摄 `Capture screenshot`) 。 </span><span class="sxs-lookup"><span data-stu-id="d8a9d-197">Open the [Command Menu][CommandMenu] and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).</span></span>  
 *   <span data-ttu-id="d8a9d-198">[限制网络和 CPU][ThrottleNetworkAndCpu] 以更精确地模拟移动用户的 Web 浏览条件。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-198">[Throttle the network and CPU][ThrottleNetworkAndCpu] to more accurately simulate a mobile user's web browsing conditions.</span></span>  
 
 <span data-ttu-id="d8a9d-199">Chromium [问题#924693][CR924693]</span><span class="sxs-lookup"><span data-stu-id="d8a9d-199">Chromium issue [#924693][CR924693]</span></span>  
@@ -250,7 +250,7 @@ ms.locfileid: "11408358"
 
 #### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a><span data-ttu-id="d8a9d-215">复制为Node.js提取以包含 Cookie 数据</span><span class="sxs-lookup"><span data-stu-id="d8a9d-215">Copy as Node.js fetch to include cookie data</span></span>  
 
-<span data-ttu-id="d8a9d-216">若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \ (右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` \*\*\*\*  >  **提取"。**</span><span class="sxs-lookup"><span data-stu-id="d8a9d-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
+<span data-ttu-id="d8a9d-216">若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \(右键单击\) ，然后选择"复制复制"作为"Node.js `fetch`   >  **提取"。**</span><span class="sxs-lookup"><span data-stu-id="d8a9d-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="作为提取Node.js复制" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    <span data-ttu-id="d8a9d-218">作为提取Node.js复制</span><span class="sxs-lookup"><span data-stu-id="d8a9d-218">Copy as Node.js fetch</span></span>  
@@ -294,7 +294,7 @@ ms.locfileid: "11408358"
 
 ### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a><span data-ttu-id="d8a9d-239">用于禁用滚动过文件末尾的设置</span><span class="sxs-lookup"><span data-stu-id="d8a9d-239">Setting for disabling scrolling past the end of a file</span></span>  
 
-<span data-ttu-id="d8a9d-240">打开["][Settings]设置"，\*\*\*\* 然后禁用"首选项源  >  \*\*\*\*  >  **""** 允许滚动到文件末尾"以禁用默认 UI 行为，该行为允许你在"源"面板中的\*\*\*\* 文件末尾良好滚动。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-240">Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
+<span data-ttu-id="d8a9d-240">打开["][Settings]设置"， 然后禁用"首选项源  >    >  **""** 允许滚动到文件末尾"以禁用默认 UI 行为，该行为允许你在"源"面板中的 文件末尾良好滚动。</span><span class="sxs-lookup"><span data-stu-id="d8a9d-240">Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="禁用 允许滚动到文件的末尾" lightbox="../../images/2020/01/settings.msft.png":::
    <span data-ttu-id="d8a9d-242">禁用 **"设置"中的"允许滚动过文件** 末尾"</span><span class="sxs-lookup"><span data-stu-id="d8a9d-242">Disabling **Allow scrolling past end of file** in Settings</span></span>  
@@ -329,7 +329,7 @@ ms.locfileid: "11408358"
 
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio 代码"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Microsoft Edge 调试程序 - Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge 的元素 \ (Chromium\) - Visual Studio Marketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge 的元素 \(Chromium\) - Visual Studio Marketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 
 [TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "改进 Microsoft Edge 中的跟踪防护博客文章"

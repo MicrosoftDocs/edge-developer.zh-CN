@@ -54,4 +54,4 @@ ms.locfileid: "11232238"
 
    ![关于标志](./media/aboutflags.PNG)  
 
-3. <span data-ttu-id="1a7ca-167">关闭并重新打开 Microsoft Edge 并检查"加载\*\*\*\* 扩展"按钮现在是否可见。</span><span class="sxs-lookup"><span data-stu-id="1a7ca-167">Close and re-open Microsoft Edge and check to see if the **"Load extension"** button is now visible.</span></span>
+3. <span data-ttu-id="1a7ca-167">关闭并重新打开 Microsoft Edge 并检查"加载 扩展"按钮现在是否可见。</span><span class="sxs-lookup"><span data-stu-id="1a7ca-167">Close and re-open Microsoft Edge and check to see if the **"Load extension"** button is now visible.</span></span>

@@ -29,7 +29,7 @@
 
 *   <span data-ttu-id="6775d-120">添加页面时，您必须在页面中添加一个 [toc.md项，](./microsoft-edge/toc.yml) 这样它就会出现。</span><span class="sxs-lookup"><span data-stu-id="6775d-120">When adding a page, you must add an entry for it in [toc.md](./microsoft-edge/toc.yml) for it to appear.</span></span>
 *   <span data-ttu-id="6775d-121">目录可能包含 `readme.md` 更多目录</span><span class="sxs-lookup"><span data-stu-id="6775d-121">A directory may contain more directories or `readme.md`s</span></span>
-*   <span data-ttu-id="6775d-122">文件夹/目录名称是短划线分隔的 \ (例如 `f12-tools` ，\) 和小写。</span><span class="sxs-lookup"><span data-stu-id="6775d-122">Folder/directory names are dash-separated \(for example, `f12-tools`\) and lowercase.</span></span>  <span data-ttu-id="6775d-123">目录用于网站的 `docs.microsoft.com` URL。</span><span class="sxs-lookup"><span data-stu-id="6775d-123">Directories are used in URLs on the `docs.microsoft.com` site.</span></span>  <span data-ttu-id="6775d-124">避免使用下划线、PascalCase 或 camelCase。</span><span class="sxs-lookup"><span data-stu-id="6775d-124">Avoid using underscores, PascalCase, or camelCase.</span></span>  
+*   <span data-ttu-id="6775d-122">文件夹/目录名称是短划线分隔的 \(例如 `f12-tools` ，\) 和小写。</span><span class="sxs-lookup"><span data-stu-id="6775d-122">Folder/directory names are dash-separated \(for example, `f12-tools`\) and lowercase.</span></span>  <span data-ttu-id="6775d-123">目录用于网站的 `docs.microsoft.com` URL。</span><span class="sxs-lookup"><span data-stu-id="6775d-123">Directories are used in URLs on the `docs.microsoft.com` site.</span></span>  <span data-ttu-id="6775d-124">避免使用下划线、PascalCase 或 camelCase。</span><span class="sxs-lookup"><span data-stu-id="6775d-124">Avoid using underscores, PascalCase, or camelCase.</span></span>  
 
 ### <a name="other-text-elements"></a><span data-ttu-id="6775d-125">其他文本元素</span><span class="sxs-lookup"><span data-stu-id="6775d-125">Other text elements</span></span>  
 
@@ -52,7 +52,7 @@
 
 ### <a name="displaying-code"></a><span data-ttu-id="6775d-138">显示代码</span><span class="sxs-lookup"><span data-stu-id="6775d-138">Displaying code</span></span>  
 
-<span data-ttu-id="6775d-139">可以使用内联 `code` Markdown 语法 \ (backticks\) 。</span><span class="sxs-lookup"><span data-stu-id="6775d-139">You may use inline `code` Markdown syntax \(with the backticks\).</span></span>  
+<span data-ttu-id="6775d-139">可以使用内联 `code` Markdown 语法 \(backticks\) 。</span><span class="sxs-lookup"><span data-stu-id="6775d-139">You may use inline `code` Markdown syntax \(with the backticks\).</span></span>  
 
 <span data-ttu-id="6775d-140">或者，你可以显示代码块。</span><span class="sxs-lookup"><span data-stu-id="6775d-140">Or you may display blocks of code.</span></span>  <span data-ttu-id="6775d-141">以下代码段是 css 示例。</span><span class="sxs-lookup"><span data-stu-id="6775d-141">The following code snippet is a css example.</span></span>  
 
@@ -104,7 +104,7 @@ body {
 
 ![笔记模式](./media/notes.png)
 
-<span data-ttu-id="6775d-162">对于多行块注释，在每个注释行的前面使用大于 \ (\) 的字符，如以下示例 `>` 所示。</span><span class="sxs-lookup"><span data-stu-id="6775d-162">For multi-line blockquote notes, use a greater-than \(`>`\) character in front of each line of the notes as displayed in the following example.</span></span>  
+<span data-ttu-id="6775d-162">对于多行块注释，在每个注释行的前面使用大于 \(\) 的字符，如以下示例 `>` 所示。</span><span class="sxs-lookup"><span data-stu-id="6775d-162">For multi-line blockquote notes, use a greater-than \(`>`\) character in front of each line of the notes as displayed in the following example.</span></span>  
 
 ```md
 > This is a line in a blockquote.  

@@ -39,7 +39,7 @@ ms.locfileid: "11232492"
 
 ![网络探查器工具栏](./media/network_toolbar.png)
 
-1. <span data-ttu-id="f7d36-119">**开始/停止分析会话**：默认情况下，网络分析已打开，网络流量将记录在 [**网络分析器**](#network-request-list) 列表中。</span><span class="sxs-lookup"><span data-stu-id="f7d36-119">**Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-request-list) list.</span></span> <span data-ttu-id="f7d36-120">你可以关闭网络捕获，并按"\*\*\*\* 停止 `Ctrl+E` () 按钮。</span><span class="sxs-lookup"><span data-stu-id="f7d36-120">You can turn off network capture with the **Stop** (`Ctrl+E`) button.</span></span>
+1. <span data-ttu-id="f7d36-119">**开始/停止分析会话**：默认情况下，网络分析已打开，网络流量将记录在 [**网络分析器**](#network-request-list) 列表中。</span><span class="sxs-lookup"><span data-stu-id="f7d36-119">**Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-request-list) list.</span></span> <span data-ttu-id="f7d36-120">你可以关闭网络捕获，并按" 停止 `Ctrl+E` () 按钮。</span><span class="sxs-lookup"><span data-stu-id="f7d36-120">You can turn off network capture with the **Stop** (`Ctrl+E`) button.</span></span>
 
 2. <span data-ttu-id="f7d36-121">**导出为 HAR：** 可以将当前网络分析会话 () 为 JSON 格式的 HTTP 存档 (`Ctrl+S` HAR [) ](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) 文件。</span><span class="sxs-lookup"><span data-stu-id="f7d36-121">**Export as HAR**: You can save the current network profiling session (`Ctrl+S`) as a JSON-formatted [HTTP Archive (HAR)](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) file.</span></span> 
 
@@ -80,7 +80,7 @@ ms.locfileid: "11232492"
 
 ### <span data-ttu-id="f7d36-160">摘要栏</span><span class="sxs-lookup"><span data-stu-id="f7d36-160">Summary bar</span></span>
 
-<span data-ttu-id="f7d36-161">网络面板底部的栏汇总了\*\*\*\* 网络分析会话期间 HTTP 网络错误、请求、传输的数据和加载时间的总次数 (即，自 DevTools 打开并记录网络流量) 。</span><span class="sxs-lookup"><span data-stu-id="f7d36-161">The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since  DevTools were opened and recording network traffic).</span></span>
+<span data-ttu-id="f7d36-161">网络面板底部的栏汇总了 网络分析会话期间 HTTP 网络错误、请求、传输的数据和加载时间的总次数 (即，自 DevTools 打开并记录网络流量) 。</span><span class="sxs-lookup"><span data-stu-id="f7d36-161">The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since  DevTools were opened and recording network traffic).</span></span>
 
 ![网络摘要栏](./media/network_summary_bar.png)
 
@@ -88,11 +88,11 @@ ms.locfileid: "11232492"
 
 <span data-ttu-id="f7d36-165">**DOM** 加载时间是指从分析会话开始到 [触发 DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) 事件以指示页面文档的结构已加载和分析 (但不必是任何样式表、图像或子框架) 。</span><span class="sxs-lookup"><span data-stu-id="f7d36-165">**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).</span></span>
 
-<span data-ttu-id="f7d36-166">\*\*\*\* 页面加载时间是指从分析会话开始到触发加载事件以指示页面文档已完全[](https://developer.mozilla.org/docs/Web/Events/load)加载 (及其所有资源) 的时间。</span><span class="sxs-lookup"><span data-stu-id="f7d36-166">**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.</span></span>
+<span data-ttu-id="f7d36-166"> 页面加载时间是指从分析会话开始到触发加载事件以指示页面文档已完全[](https://developer.mozilla.org/docs/Web/Events/load)加载 (及其所有资源) 的时间。</span><span class="sxs-lookup"><span data-stu-id="f7d36-166">**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.</span></span>
 
 ## <span data-ttu-id="f7d36-167">请求详细信息</span><span class="sxs-lookup"><span data-stu-id="f7d36-167">Request details</span></span>
 
-<span data-ttu-id="f7d36-168">单击"网络摘要"列表中的[**任何**](#network-summary)条目将打开"请求详细信息[\*\*\*\*](#request-details)"窗格，并包含以下每个选项卡中的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f7d36-168">Clicking on any entry in the [**Network summary**](#network-summary) list will open the [**Request details**](#request-details) pane with further information in each of the following tabs.</span></span>
+<span data-ttu-id="f7d36-168">单击"网络摘要"列表中的[**任何**](#network-summary)条目将打开"请求详细信息[](#request-details)"窗格，并包含以下每个选项卡中的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f7d36-168">Clicking on any entry in the [**Network summary**](#network-summary) list will open the [**Request details**](#request-details) pane with further information in each of the following tabs.</span></span>
 
 ![网络请求详细信息窗格](./media/network_request_details.png)
 
@@ -190,7 +190,7 @@ ms.locfileid: "11232492"
 
 5. <span data-ttu-id="f7d36-230">关闭 Microsoft Edge 开发人员工具和选项卡。打开新选项卡，导航到页面，然后按 `F12` 。</span><span class="sxs-lookup"><span data-stu-id="f7d36-230">Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.</span></span>
 
-6. <span data-ttu-id="f7d36-231">现在，应该会看到"网络"旁边的"\*\*\*\* 播放"锁屏提醒和网页的网络请求。</span><span class="sxs-lookup"><span data-stu-id="f7d36-231">You should now see a Play badge next to **Network** and the network requests for your webpage.</span></span>
+6. <span data-ttu-id="f7d36-231">现在，应该会看到"网络"旁边的" 播放"锁屏提醒和网页的网络请求。</span><span class="sxs-lookup"><span data-stu-id="f7d36-231">You should now see a Play badge next to **Network** and the network requests for your webpage.</span></span>
 ![known-issues-4](./media/known_issues_4-network.PNG)
 
 <span data-ttu-id="f7d36-233">是否仍遇到问题？</span><span class="sxs-lookup"><span data-stu-id="f7d36-233">Still running into problems?</span></span> <span data-ttu-id="f7d36-234">请使用"发送反馈"图标 **向我们发送反馈** ！</span><span class="sxs-lookup"><span data-stu-id="f7d36-234">Please send us your feedback using the **Send feedback** icon!</span></span> 
@@ -214,7 +214,7 @@ ms.locfileid: "11232492"
 
 5. <span data-ttu-id="f7d36-245">关闭 Microsoft Edge 开发人员工具和选项卡。打开新选项卡，导航到页面，然后按 `F12` 。</span><span class="sxs-lookup"><span data-stu-id="f7d36-245">Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.</span></span>
 
-6. <span data-ttu-id="f7d36-246">现在，应该会看到"网络"旁边的"\*\*\*\* 播放"锁屏提醒和网页的网络请求。</span><span class="sxs-lookup"><span data-stu-id="f7d36-246">You should now see a Play badge next to **Network** and the network requests for your webpage.</span></span>
+6. <span data-ttu-id="f7d36-246">现在，应该会看到"网络"旁边的" 播放"锁屏提醒和网页的网络请求。</span><span class="sxs-lookup"><span data-stu-id="f7d36-246">You should now see a Play badge next to **Network** and the network requests for your webpage.</span></span>
 ![known-issues-4](./media/known_issues_4-network.PNG)
 
 <span data-ttu-id="f7d36-248">是否仍遇到问题？</span><span class="sxs-lookup"><span data-stu-id="f7d36-248">Still running into problems?</span></span> <span data-ttu-id="f7d36-249">请使用"发送反馈"图标 **向我们发送反馈** ！</span><span class="sxs-lookup"><span data-stu-id="f7d36-249">Please send us your feedback using the **Send feedback** icon!</span></span> 

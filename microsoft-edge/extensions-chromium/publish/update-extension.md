@@ -29,7 +29,7 @@ ms.locfileid: "11343158"
 
 1.  <span data-ttu-id="dc13e-110">导航到 [开发人员仪表板][MicrosoftPartnerCenter] ，然后选择想要更新的扩展。</span><span class="sxs-lookup"><span data-stu-id="dc13e-110">Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that you wish to update.</span></span>  
 1.  <span data-ttu-id="dc13e-111">更新扩展包或扩展的元数据。</span><span class="sxs-lookup"><span data-stu-id="dc13e-111">Update either the extension package or the metadata of the extension.</span></span>  <span data-ttu-id="dc13e-112">如果更新扩展包，请确保增加清单文件中的版本。</span><span class="sxs-lookup"><span data-stu-id="dc13e-112">If you update the extension package, ensure that you increase the version in the manifest file.</span></span>  
-1.  <span data-ttu-id="dc13e-113">进行更改后，选择"**保存**发布"以  >  \*\*\*\* 更新扩展列表，然后开始认证过程。</span><span class="sxs-lookup"><span data-stu-id="dc13e-113">After you make the changes, choose **Save** > **Publish** to update your extension listing, and start the certification process.</span></span>  
+1.  <span data-ttu-id="dc13e-113">进行更改后，选择"**保存**发布"以  >   更新扩展列表，然后开始认证过程。</span><span class="sxs-lookup"><span data-stu-id="dc13e-113">After you make the changes, choose **Save** > **Publish** to update your extension listing, and start the certification process.</span></span>  
 1.  <span data-ttu-id="dc13e-114">列 `Status` 显示后 `In the store` ，扩展更新在 Microsoft Edge 加载项存储中可用。</span><span class="sxs-lookup"><span data-stu-id="dc13e-114">After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons store.</span></span>  
     
 ### <span data-ttu-id="dc13e-115">在认证步骤中更新扩展</span><span class="sxs-lookup"><span data-stu-id="dc13e-115">Update your extension during the certification step</span></span>  

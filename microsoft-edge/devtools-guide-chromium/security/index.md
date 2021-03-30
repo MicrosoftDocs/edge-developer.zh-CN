@@ -51,7 +51,7 @@ ms.locfileid: "11397774"
 
 ### <a name="non-secure-main-origins"></a><span data-ttu-id="ed4e5-112">非安全主源</span><span class="sxs-lookup"><span data-stu-id="ed4e5-112">Non-secure main origins</span></span>  
 
-<span data-ttu-id="ed4e5-113">当页面的主来源不安全时，安全**概述指出\*\*\*\*此页面不安全**。</span><span class="sxs-lookup"><span data-stu-id="ed4e5-113">When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.</span></span>  
+<span data-ttu-id="ed4e5-113">当页面的主来源不安全时，安全**概述指出此页面不安全**。</span><span class="sxs-lookup"><span data-stu-id="ed4e5-113">When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.</span></span>  
 
 :::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="非安全页面" lightbox="../media/security-security-overview-non-secure.msft.png":::
    <span data-ttu-id="ed4e5-115">非安全页面</span><span class="sxs-lookup"><span data-stu-id="ed4e5-115">A non-secure page</span></span>  
@@ -74,7 +74,7 @@ ms.locfileid: "11397774"
    <span data-ttu-id="ed4e5-129">混合内容</span><span class="sxs-lookup"><span data-stu-id="ed4e5-129">Mixed content</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="ed4e5-130">在上图中，选择"网络"面板中的"视图**1"** 请求以打开**网络**工具并应用筛选器，以便网络日志只显示 `mixed-content:displayed` \*\*\*\* 非安全资源。</span><span class="sxs-lookup"><span data-stu-id="ed4e5-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
+<span data-ttu-id="ed4e5-130">在上图中，选择"网络"面板中的"视图**1"** 请求以打开**网络**工具并应用筛选器，以便网络日志只显示 `mixed-content:displayed`  非安全资源。</span><span class="sxs-lookup"><span data-stu-id="ed4e5-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="网络日志中的混合资源" lightbox="../media/security-network-filter.msft.png":::
    <span data-ttu-id="ed4e5-132">网络日志中的 **混合资源**</span><span class="sxs-lookup"><span data-stu-id="ed4e5-132">Mixed resources in the **Network Log**</span></span>  

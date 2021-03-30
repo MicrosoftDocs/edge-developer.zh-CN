@@ -17,7 +17,7 @@ ms.locfileid: "11231214"
 ---
 # <span data-ttu-id="19ff9-105">Windows 上的渐进式 Web 应用概述</span><span class="sxs-lookup"><span data-stu-id="19ff9-105">Progressive Web Apps on Windows overview</span></span>  
 
-<span data-ttu-id="19ff9-106">[渐进式 Web][MDNApps] 应用 \ (PWA\) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的本机、类似应用的体验。</span><span class="sxs-lookup"><span data-stu-id="19ff9-106">[Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices.</span></span>  <span data-ttu-id="19ff9-107">PWA 是逐步增强的网站 [，其功能][AListApartUnderstandingProgressiveEnhancement] 与支持平台上的本机应用类似。</span><span class="sxs-lookup"><span data-stu-id="19ff9-107">PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.</span></span>  <span data-ttu-id="19ff9-108">PWA 的特性结合了最好的 Web 和本机应用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-108">The qualities of a PWA combine the best of the web and native apps.</span></span>  
+<span data-ttu-id="19ff9-106">[渐进式 Web][MDNApps] 应用 \(PWA\) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的本机、类似应用的体验。</span><span class="sxs-lookup"><span data-stu-id="19ff9-106">[Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices.</span></span>  <span data-ttu-id="19ff9-107">PWA 是逐步增强的网站 [，其功能][AListApartUnderstandingProgressiveEnhancement] 与支持平台上的本机应用类似。</span><span class="sxs-lookup"><span data-stu-id="19ff9-107">PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.</span></span>  <span data-ttu-id="19ff9-108">PWA 的特性结合了最好的 Web 和本机应用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-108">The qualities of a PWA combine the best of the web and native apps.</span></span>  
 
 :::row:::
     :::column:::
@@ -70,17 +70,17 @@ ms.locfileid: "11231214"
 :::row-end:::  
 
 
-<span data-ttu-id="19ff9-125">生成 \ (或转换\) 现有网站转换为 PWA，以增强用户参与度。</span><span class="sxs-lookup"><span data-stu-id="19ff9-125">Build \(or convert\) your existing website to a PWA to enhance your engagement with your users.</span></span>  <span data-ttu-id="19ff9-126">增强功能包括推送通知、类似应用的集成和脱机支持。</span><span class="sxs-lookup"><span data-stu-id="19ff9-126">Enhancements include push notifications, app-like integration, and offline support.</span></span>  <span data-ttu-id="19ff9-127">继续构建开放 Web 上的受众，以便用户通过搜索和链接共享发现 PWA。</span><span class="sxs-lookup"><span data-stu-id="19ff9-127">Continue to build your audience on the open web for users to discover your PWA through search and link-sharing.</span></span>  <span data-ttu-id="19ff9-128">最好使用 Web 服务器代码更新应用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-128">Best of all, your app is updated in using your web server code.</span></span>  
+<span data-ttu-id="19ff9-125">生成 \(或转换\) 现有网站转换为 PWA，以增强用户参与度。</span><span class="sxs-lookup"><span data-stu-id="19ff9-125">Build \(or convert\) your existing website to a PWA to enhance your engagement with your users.</span></span>  <span data-ttu-id="19ff9-126">增强功能包括推送通知、类似应用的集成和脱机支持。</span><span class="sxs-lookup"><span data-stu-id="19ff9-126">Enhancements include push notifications, app-like integration, and offline support.</span></span>  <span data-ttu-id="19ff9-127">继续构建开放 Web 上的受众，以便用户通过搜索和链接共享发现 PWA。</span><span class="sxs-lookup"><span data-stu-id="19ff9-127">Continue to build your audience on the open web for users to discover your PWA through search and link-sharing.</span></span>  <span data-ttu-id="19ff9-128">最好使用 Web 服务器代码更新应用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-128">Best of all, your app is updated in using your web server code.</span></span>  
 
 ## <span data-ttu-id="19ff9-129">Microsoft Edge 上的 PWA (Chromium) </span><span class="sxs-lookup"><span data-stu-id="19ff9-129">PWAs on Microsoft Edge (Chromium)</span></span>  
 
-<span data-ttu-id="19ff9-130">构建面向 Web 标准 API 的渐进式 Web 应用时，应用程序可能会跨平台和设备部署，并尽可能利用特定于设备的功能。</span><span class="sxs-lookup"><span data-stu-id="19ff9-130">When you build a Progressive Web App targeting web standard APIs, your application may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.</span></span>  <span data-ttu-id="19ff9-131">Microsoft Edge \ (Chromium\) 中的 PWA 为您的网站添加了以下优势。</span><span class="sxs-lookup"><span data-stu-id="19ff9-131">PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.</span></span>  
+<span data-ttu-id="19ff9-130">构建面向 Web 标准 API 的渐进式 Web 应用时，应用程序可能会跨平台和设备部署，并尽可能利用特定于设备的功能。</span><span class="sxs-lookup"><span data-stu-id="19ff9-130">When you build a Progressive Web App targeting web standard APIs, your application may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.</span></span>  <span data-ttu-id="19ff9-131">Microsoft Edge \(Chromium\) 中的 PWA 为您的网站添加了以下优势。</span><span class="sxs-lookup"><span data-stu-id="19ff9-131">PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.</span></span>  
 
 *   <span data-ttu-id="19ff9-132">你的应用基于基于标准的 Web 平台构建。</span><span class="sxs-lookup"><span data-stu-id="19ff9-132">Your app is built on a standards-based web platform.</span></span>  
 *   <span data-ttu-id="19ff9-133">使用户可以直接从浏览器安装应用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-133">Enables your users to install your app directly from the browser.</span></span>  
 *   <span data-ttu-id="19ff9-134">使用户无需基于应用商店的部署或注册即可安装应用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-134">Enables your users to install your app without a Store-based deployment or registration.</span></span>  
     
-<span data-ttu-id="19ff9-135">桌面 PWA 在任何 Microsoft Edge \ (Chromium\) 都受支持。</span><span class="sxs-lookup"><span data-stu-id="19ff9-135">Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available.</span></span> <span data-ttu-id="19ff9-136">Microsoft Edge \ (Chromium\) 在 Windows 7、Windows 10 和 macOS 上可用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-136">Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.</span></span>  <span data-ttu-id="19ff9-137">其中包括以下好处。</span><span class="sxs-lookup"><span data-stu-id="19ff9-137">The following benefits are included.</span></span>  
+<span data-ttu-id="19ff9-135">桌面 PWA 在任何 Microsoft Edge \(Chromium\) 都受支持。</span><span class="sxs-lookup"><span data-stu-id="19ff9-135">Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available.</span></span> <span data-ttu-id="19ff9-136">Microsoft Edge \(Chromium\) 在 Windows 7、Windows 10 和 macOS 上可用。</span><span class="sxs-lookup"><span data-stu-id="19ff9-136">Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.</span></span>  <span data-ttu-id="19ff9-137">其中包括以下好处。</span><span class="sxs-lookup"><span data-stu-id="19ff9-137">The following benefits are included.</span></span>  
 
 *   <span data-ttu-id="19ff9-138">可以直接在浏览器中使用导航栏中的 **"** 安装"图标安装应用程序。</span><span class="sxs-lookup"><span data-stu-id="19ff9-138">Applications may be installed directly from within the browser using the **Install** icon in the navigation bar.</span></span>  
     
@@ -88,7 +88,7 @@ ms.locfileid: "11231214"
        <span data-ttu-id="19ff9-140">安装应用程序飞出和图标</span><span class="sxs-lookup"><span data-stu-id="19ff9-140">Install application flyout and icon</span></span>  
     :::image-end:::  
     
-*   <span data-ttu-id="19ff9-141">也可以从"设置应用"菜单安装、运行**和管理**  >  \*\*\*\* 应用程序</span><span class="sxs-lookup"><span data-stu-id="19ff9-141">Applications may also be installed, run, and managed from the **Settings** > **Apps** menu</span></span>  
+*   <span data-ttu-id="19ff9-141">也可以从"设置应用"菜单安装、运行**和管理**  >   应用程序</span><span class="sxs-lookup"><span data-stu-id="19ff9-141">Applications may also be installed, run, and managed from the **Settings** > **Apps** menu</span></span>  
     
     :::image type="complex" source="./media/app_menus.png" alt-text="设置下的应用程序菜单项" lightbox="./media/app_menus.png":::
        <span data-ttu-id="19ff9-143">设置下的应用程序菜单项</span><span class="sxs-lookup"><span data-stu-id="19ff9-143">Application menu items under settings</span></span>  
@@ -96,7 +96,7 @@ ms.locfileid: "11231214"
     
 *   <span data-ttu-id="19ff9-144">Web 通知已集成到 Windows 通知系统中</span><span class="sxs-lookup"><span data-stu-id="19ff9-144">Web Notifications are integrated into the Windows notification system</span></span>  
 *   <span data-ttu-id="19ff9-145">具有安装应用程序的浏览器配置文件的共享 Cookie 存储</span><span class="sxs-lookup"><span data-stu-id="19ff9-145">Shared cookie store with the browser profile that installed the app</span></span>  
-*   <span data-ttu-id="19ff9-146">使用"设置"和更多 **\ (** \) 菜单访问其他浏览器功能，包括证书验证、网站权限、跟踪保护和 `...` 浏览器扩展</span><span class="sxs-lookup"><span data-stu-id="19ff9-146">Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions</span></span>  
+*   <span data-ttu-id="19ff9-146">使用"设置"和更多 **\(** \) 菜单访问其他浏览器功能，包括证书验证、网站权限、跟踪保护和 `...` 浏览器扩展</span><span class="sxs-lookup"><span data-stu-id="19ff9-146">Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions</span></span>  
 *   <span data-ttu-id="19ff9-147">对 [用于调试应用的 Microsoft Edge DevTools][DevtoolsProgressiveWebApps] 的完全访问权限</span><span class="sxs-lookup"><span data-stu-id="19ff9-147">Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app</span></span>  
     
 > [!IMPORTANT]
@@ -114,7 +114,7 @@ ms.locfileid: "11231214"
       [<span data-ttu-id="19ff9-153">HTTPS</span><span class="sxs-lookup"><span data-stu-id="19ff9-153">HTTPS</span></span>][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="19ff9-154">通过为服务器或应用通信提供安全连接来保护用户。</span><span class="sxs-lookup"><span data-stu-id="19ff9-154">Protects your users by providing a secure connection for server or app communication.</span></span>  <span data-ttu-id="19ff9-155">服务工作人员和其他 PWA 技术仅适用于通过安全连接 \ (或用于调试 `localhost` 目的\) 。</span><span class="sxs-lookup"><span data-stu-id="19ff9-155">Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).</span></span>  
+      <span data-ttu-id="19ff9-154">通过为服务器或应用通信提供安全连接来保护用户。</span><span class="sxs-lookup"><span data-stu-id="19ff9-154">Protects your users by providing a secure connection for server or app communication.</span></span>  <span data-ttu-id="19ff9-155">服务工作人员和其他 PWA 技术仅适用于通过安全连接 \(或用于调试 `localhost` 目的\) 。</span><span class="sxs-lookup"><span data-stu-id="19ff9-155">Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::

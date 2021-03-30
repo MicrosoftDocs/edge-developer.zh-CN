@@ -18,7 +18,7 @@ ms.locfileid: "11232268"
 ---
 # <span data-ttu-id="1d5b0-104">字体</span><span class="sxs-lookup"><span data-stu-id="1d5b0-104">Fonts</span></span>
 
-<span data-ttu-id="1d5b0-105">查看有关 CSS 规则的信息，包括字体 (本地或网络) 以及页面上使用这些规则 `@font-face` 的字符数。 \*\* \*\*</span><span class="sxs-lookup"><span data-stu-id="1d5b0-105">View information about your CSS `@font-face` rules, including where fonts are being loaded (*Local* or *Network*) and how many characters on the page are using them.</span></span>
+<span data-ttu-id="1d5b0-105">查看有关 CSS 规则的信息，包括字体 (本地或网络) 以及页面上使用这些规则 `@font-face` 的字符数。  </span><span class="sxs-lookup"><span data-stu-id="1d5b0-105">View information about your CSS `@font-face` rules, including where fonts are being loaded (*Local* or *Network*) and how many characters on the page are using them.</span></span>
 
 <span data-ttu-id="1d5b0-106">对于从网络加载的字体，DevTools 将显示导入它的规则以及别名和字体类型。</span><span class="sxs-lookup"><span data-stu-id="1d5b0-106">For fonts loaded from the network, DevTools will display the rule that imported it along with alias and font type.</span></span>
 

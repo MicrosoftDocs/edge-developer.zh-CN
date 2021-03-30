@@ -41,7 +41,7 @@ ms.locfileid: "11439224"
        <span data-ttu-id="10177-113">将 `document.activeElement` 键入**动态表达式**文本框</span><span class="sxs-lookup"><span data-stu-id="10177-113">Typing `document.activeElement` into the **Live Expression** text box</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="10177-114">选择`Control`+`Enter` \(Windows、Linux\) 或 `Command`+`Enter` \(macOS\) 以保存表达式，或选择“\*\* 动态表达式\*\*”文本框之外的内容。</span><span class="sxs-lookup"><span data-stu-id="10177-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
+1.  <span data-ttu-id="10177-114">选择`Control`+`Enter` \(Windows、Linux\) 或 `Command`+`Enter` \(macOS\) 以保存表达式，或选择“ 动态表达式”文本框之外的内容。</span><span class="sxs-lookup"><span data-stu-id="10177-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="10177-115">联系 Microsoft Edge 开发工具团队</span><span class="sxs-lookup"><span data-stu-id="10177-115">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 

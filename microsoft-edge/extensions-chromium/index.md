@@ -34,7 +34,7 @@ ms.locfileid: "11327524"
 <span data-ttu-id="a494f-117">若要直接使用部分浏览器（如窗口或选项卡），必须发送 API 请求，并通常按名称引用浏览器。</span><span class="sxs-lookup"><span data-stu-id="a494f-117">To work directly with part of the browser, such as a window or tab, you must send API requests and often reference the browser by name.</span></span>  
 
 :::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Microsoft Edge (Chromium) 扩展" lightbox="./media/example-extension-screenshot.png":::
-  <span data-ttu-id="a494f-119">Microsoft Edge \ (Chromium\) 扩展</span><span class="sxs-lookup"><span data-stu-id="a494f-119">A Microsoft Edge \(Chromium\) extension</span></span>  
+  <span data-ttu-id="a494f-119">Microsoft Edge \(Chromium\) 扩展</span><span class="sxs-lookup"><span data-stu-id="a494f-119">A Microsoft Edge \(Chromium\) extension</span></span>  
 :::image-end:::  
 
 ## <span data-ttu-id="a494f-120">基本指南</span><span class="sxs-lookup"><span data-stu-id="a494f-120">Basic guidance</span></span>  
@@ -98,7 +98,7 @@ ms.locfileid: "11327524"
 
 <span data-ttu-id="a494f-189">若要向应用商店提交扩展，请确保提供以下项目。</span><span class="sxs-lookup"><span data-stu-id="a494f-189">To submit your extension to the store, ensure you provide the following items.</span></span>  
 
-*   <span data-ttu-id="a494f-190">包含代码文件的存档 \ (`.zip`\) 文件。</span><span class="sxs-lookup"><span data-stu-id="a494f-190">An archive \(`.zip`\) file that contains your code files.</span></span>  
+*   <span data-ttu-id="a494f-190">包含代码文件的存档 \(`.zip`\) 文件。</span><span class="sxs-lookup"><span data-stu-id="a494f-190">An archive \(`.zip`\) file that contains your code files.</span></span>  
 *   <span data-ttu-id="a494f-191">所有必需的视觉资源，包括徽标和小型促销磁贴。</span><span class="sxs-lookup"><span data-stu-id="a494f-191">All required visual assets, which include a logo and small promotional tile.</span></span>  
 *   <span data-ttu-id="a494f-192">可选促销媒体，如屏幕截图、促销贴片和视频 URL。</span><span class="sxs-lookup"><span data-stu-id="a494f-192">Optional promotional media, such as screenshots, promotional tiles, and a video URL.</span></span>  
 *   <span data-ttu-id="a494f-193">描述扩展名的信息，如名称、简短描述和隐私策略链接。</span><span class="sxs-lookup"><span data-stu-id="a494f-193">Information that describes your extension such as the name, short description, and a privacy policy link.</span></span>  

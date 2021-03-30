@@ -28,7 +28,7 @@ ms.locfileid: "11399272"
 
 ## <a name="configuration"></a><span data-ttu-id="77fee-113">配置</span><span class="sxs-lookup"><span data-stu-id="77fee-113">Configuration</span></span>  
 
-<span data-ttu-id="77fee-114">此扩展使用默认配置 [json][GithubWebhintioIndexjson] 文件，该文件激活 HTML、CSS、模板系统 \ (JSX/TSX、Angular 等\) 、JavaScript/TypeScript 等的提示和分析程序。</span><span class="sxs-lookup"><span data-stu-id="77fee-114">This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems \(JSX/TSX, Angular, and so on\), JavaScript/TypeScript, and more.</span></span>  
+<span data-ttu-id="77fee-114">此扩展使用默认配置 [json][GithubWebhintioIndexjson] 文件，该文件激活 HTML、CSS、模板系统 \(JSX/TSX、Angular 等\) 、JavaScript/TypeScript 等的提示和分析程序。</span><span class="sxs-lookup"><span data-stu-id="77fee-114">This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems \(JSX/TSX, Angular, and so on\), JavaScript/TypeScript, and more.</span></span>  
 
 ```json
 {

@@ -30,7 +30,7 @@ ms.locfileid: "11230934"
 | <span data-ttu-id="34849-112">API</span><span class="sxs-lookup"><span data-stu-id="34849-112">API</span></span>  | <span data-ttu-id="34849-113">描述</span><span class="sxs-lookup"><span data-stu-id="34849-113">Description</span></span>  |
 |:--- |:--- |  
 | [<span data-ttu-id="34849-114">ExecuteScriptAsync</span><span class="sxs-lookup"><span data-stu-id="34849-114">ExecuteScriptAsync</span></span>][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | <span data-ttu-id="34849-115">在 WebView 控件中运行 JavaScript。</span><span class="sxs-lookup"><span data-stu-id="34849-115">Run JavaScript in a WebView control.</span></span> <span data-ttu-id="34849-116">有关详细信息，请导航到"入门"教程。</span><span class="sxs-lookup"><span data-stu-id="34849-116">For more information, navigate to the Getting Started tutorial.</span></span> |
-| [<span data-ttu-id="34849-117">OnDocumentCreatedAsync</span><span class="sxs-lookup"><span data-stu-id="34849-117">OnDocumentCreatedAsync</span></span>][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | <span data-ttu-id="34849-118">创建文档对象模型 \ (DOM\) 时运行。</span><span class="sxs-lookup"><span data-stu-id="34849-118">Runs when the Document Object Model \(DOM\) is created.</span></span> |
+| [<span data-ttu-id="34849-117">OnDocumentCreatedAsync</span><span class="sxs-lookup"><span data-stu-id="34849-117">OnDocumentCreatedAsync</span></span>][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | <span data-ttu-id="34849-118">创建文档对象模型 \(DOM\) 时运行。</span><span class="sxs-lookup"><span data-stu-id="34849-118">Runs when the Document Object Model \(DOM\) is created.</span></span> |
       
 ## <span data-ttu-id="34849-119">方案：运行专用脚本文件</span><span class="sxs-lookup"><span data-stu-id="34849-119">Scenario:  Running a dedicated script file</span></span>  
 
@@ -94,7 +94,7 @@ ms.locfileid: "11230934"
 <span data-ttu-id="34849-146">首先，浏览当前上下文菜单功能。</span><span class="sxs-lookup"><span data-stu-id="34849-146">To begin, explore the current contextual menu functionality.</span></span>  
 
 1.  <span data-ttu-id="34849-147">运行项目。</span><span class="sxs-lookup"><span data-stu-id="34849-147">Run your project.</span></span>  
-1.  <span data-ttu-id="34849-148">将鼠标悬停在 WebView2 控件上的任意位置，然后打开上下文菜单 \ (右键单击\) 。</span><span class="sxs-lookup"><span data-stu-id="34849-148">Hover anywhere on the WebView2 control and open the context menu \(right-click\).</span></span>  <span data-ttu-id="34849-149">上下文菜单显示默认选项。</span><span class="sxs-lookup"><span data-stu-id="34849-149">The context menu displays the default choices.</span></span>  
+1.  <span data-ttu-id="34849-148">将鼠标悬停在 WebView2 控件上的任意位置，然后打开上下文菜单 \(右键单击\) 。</span><span class="sxs-lookup"><span data-stu-id="34849-148">Hover anywhere on the WebView2 control and open the context menu \(right-click\).</span></span>  <span data-ttu-id="34849-149">上下文菜单显示默认选项。</span><span class="sxs-lookup"><span data-stu-id="34849-149">The context menu displays the default choices.</span></span>  
     
     :::image type="complex" source="./media/contextmenu.png" alt-text="显示默认选项的上下文菜单" lightbox="./media/contextmenu.png":::
        <span data-ttu-id="34849-151">显示默认选项的上下文菜单</span><span class="sxs-lookup"><span data-stu-id="34849-151">The context menu showing the default choices</span></span>  
@@ -108,7 +108,7 @@ ms.locfileid: "11230934"
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
 
-1.  <span data-ttu-id="34849-154">再次运行代码。</span><span class="sxs-lookup"><span data-stu-id="34849-154">Run the code again.</span></span>  <span data-ttu-id="34849-155">确认无法打开上下文菜单 \ (右键单击\) 。</span><span class="sxs-lookup"><span data-stu-id="34849-155">Confirm that you're not able to open a context menu \(right-click\).</span></span>  
+1.  <span data-ttu-id="34849-154">再次运行代码。</span><span class="sxs-lookup"><span data-stu-id="34849-154">Run the code again.</span></span>  <span data-ttu-id="34849-155">确认无法打开上下文菜单 \(右键单击\) 。</span><span class="sxs-lookup"><span data-stu-id="34849-155">Confirm that you're not able to open a context menu \(right-click\).</span></span>  
    
 ## <span data-ttu-id="34849-156">另请参阅</span><span class="sxs-lookup"><span data-stu-id="34849-156">See also</span></span>  
 

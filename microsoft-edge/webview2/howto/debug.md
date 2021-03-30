@@ -25,7 +25,7 @@ ms.locfileid: "11399842"
 
 *   <span data-ttu-id="0f54b-111">选择 `F12`。</span><span class="sxs-lookup"><span data-stu-id="0f54b-111">Select `F12`.</span></span>  
 *   <span data-ttu-id="0f54b-112">选择 `Ctrl` + `Shift` + `I` 。</span><span class="sxs-lookup"><span data-stu-id="0f54b-112">Select `Ctrl`+`Shift`+`I`.</span></span>  
-*   <span data-ttu-id="0f54b-113">打开上下文菜单 \ (右键单击\) 并选择 `Inspect` 。</span><span class="sxs-lookup"><span data-stu-id="0f54b-113">Open the context menu \(right-click\) and choose `Inspect`.</span></span>  
+*   <span data-ttu-id="0f54b-113">打开上下文菜单 \(右键单击\) 并选择 `Inspect` 。</span><span class="sxs-lookup"><span data-stu-id="0f54b-113">Open the context menu \(right-click\) and choose `Inspect`.</span></span>  
     
 <span data-ttu-id="0f54b-114">有关详细信息，请导航到 [DevTools 概述][DevtoolsGuideChromiumMain]。</span><span class="sxs-lookup"><span data-stu-id="0f54b-114">For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain].</span></span>  
 
@@ -38,7 +38,7 @@ ms.locfileid: "11399842"
 <span data-ttu-id="0f54b-118">Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。</span><span class="sxs-lookup"><span data-stu-id="0f54b-118">Visual Studio provides various debugging tools for web and native code in WebView2 apps.</span></span>  <span data-ttu-id="0f54b-119">在Visual Studio部分中，主要侧重于调试 WebView 控件，但其他 Visual Studio 方法也照常可用。</span><span class="sxs-lookup"><span data-stu-id="0f54b-119">In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.</span></span>  <span data-ttu-id="0f54b-120">使用以下过程仅调试 Win32 应用或 Office 外接程序中的 Web 和本机代码。</span><span class="sxs-lookup"><span data-stu-id="0f54b-120">Use the following process to debug web and native code in Win32 apps or Office Add-ins only.</span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="0f54b-121">在附加了本机调试Visual Studio中调试应用时，选择可能会触发 `F12` 本机调试器，而不是开发人员工具。</span><span class="sxs-lookup"><span data-stu-id="0f54b-121">When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.</span></span>  <span data-ttu-id="0f54b-122">选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 \ (右键单击\) 以避免这种情况。</span><span class="sxs-lookup"><span data-stu-id="0f54b-122">Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.</span></span>  
+> <span data-ttu-id="0f54b-121">在附加了本机调试Visual Studio中调试应用时，选择可能会触发 `F12` 本机调试器，而不是开发人员工具。</span><span class="sxs-lookup"><span data-stu-id="0f54b-121">When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.</span></span>  <span data-ttu-id="0f54b-122">选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 \(右键单击\) 以避免这种情况。</span><span class="sxs-lookup"><span data-stu-id="0f54b-122">Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.</span></span>  
 
 <span data-ttu-id="0f54b-123">开始之前，请确保满足以下要求。</span><span class="sxs-lookup"><span data-stu-id="0f54b-123">Before you begin, ensure the following requirements are met.</span></span>  
 
@@ -69,9 +69,9 @@ ms.locfileid: "11399842"
         :::image-end:::  
         
 1.  <span data-ttu-id="0f54b-141">为 WebView2 应用启用脚本调试。</span><span class="sxs-lookup"><span data-stu-id="0f54b-141">Enable script debugging for WebView2 apps.</span></span>  
-    1.  <span data-ttu-id="0f54b-142">在 WebView2 项目中，打开上下文菜单 \ (右键单击\) ，然后选择"**属性"。**</span><span class="sxs-lookup"><span data-stu-id="0f54b-142">In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.</span></span>  
+    1.  <span data-ttu-id="0f54b-142">在 WebView2 项目中，打开上下文菜单 \(右键单击\) ，然后选择"**属性"。**</span><span class="sxs-lookup"><span data-stu-id="0f54b-142">In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.</span></span>  
     1.  <span data-ttu-id="0f54b-143">在"**配置属性"下**，选择 **"调试"。**</span><span class="sxs-lookup"><span data-stu-id="0f54b-143">Under the **Configuration Properties**, choose **Debugging**.</span></span>  
-    1.  <span data-ttu-id="0f54b-144">在**调试器类型下**，选择\*\*JavaScript (WebView2) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="0f54b-144">Under the **Debugger Type**, choose **JavaScript (WebView2)**.</span></span>  
+    1.  <span data-ttu-id="0f54b-144">在**调试器类型下**，选择JavaScript (WebView2) 。 </span><span class="sxs-lookup"><span data-stu-id="0f54b-144">Under the **Debugger Type**, choose **JavaScript (WebView2)**.</span></span>  
         
         :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio调试配置属性" lightbox="./media/enbjs.png":::
            <span data-ttu-id="0f54b-146">Visual Studio **调试** 配置属性</span><span class="sxs-lookup"><span data-stu-id="0f54b-146">Visual Studio **Debugging** Configuration Property</span></span>  

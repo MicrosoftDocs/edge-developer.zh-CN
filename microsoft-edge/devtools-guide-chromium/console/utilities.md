@@ -45,7 +45,7 @@ $_
 
 <span data-ttu-id="ec411-110">返回最近计算表达式的值。</span><span class="sxs-lookup"><span data-stu-id="ec411-110">Returns the value of the most recently evaluated expression.</span></span>  
 
-<span data-ttu-id="ec411-111">下图中将计算一个简单的表达式 \ (`2 + 2` \) \ 。</span><span class="sxs-lookup"><span data-stu-id="ec411-111">In the following figure, a simple expression \(`2 + 2`\) is evaluated.</span></span>  <span data-ttu-id="ec411-112">然后 `$_` 计算该属性，其中包含相同的值。</span><span class="sxs-lookup"><span data-stu-id="ec411-112">The `$_` property is then evaluated, which contains the same value.</span></span>  
+<span data-ttu-id="ec411-111">下图中将计算一个简单的表达式 \(`2 + 2` \) \ 。</span><span class="sxs-lookup"><span data-stu-id="ec411-111">In the following figure, a simple expression \(`2 + 2`\) is evaluated.</span></span>  <span data-ttu-id="ec411-112">然后 `$_` 计算该属性，其中包含相同的值。</span><span class="sxs-lookup"><span data-stu-id="ec411-112">The `$_` property is then evaluated, which contains the same value.</span></span>  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式" lightbox="../media/console-arithmatic.msft.png":::
    <span data-ttu-id="ec411-114">图  `$_` 1：是最近评估的表达式</span><span class="sxs-lookup"><span data-stu-id="ec411-114">Figure 1:  `$_` is the most recently evaluated expression</span></span>  
@@ -63,7 +63,7 @@ $_
 $0
 ```  
 
-<span data-ttu-id="ec411-120">返回最近选择的元素或 JavaScript 对象。</span><span class="sxs-lookup"><span data-stu-id="ec411-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="ec411-121">返回第二个最近选择一个，等等。</span><span class="sxs-lookup"><span data-stu-id="ec411-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="ec411-122">、、和命令用作对在 Elements 工具中检查的最后 `$0` `$1` `$2` `$3` `$4` 五个 DOM\*\*\*\*\*\*\*\* 元素或内存工具中选定的最后五个 JavaScript 堆对象的历史引用。</span><span class="sxs-lookup"><span data-stu-id="ec411-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
+<span data-ttu-id="ec411-120">返回最近选择的元素或 JavaScript 对象。</span><span class="sxs-lookup"><span data-stu-id="ec411-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="ec411-121">返回第二个最近选择一个，等等。</span><span class="sxs-lookup"><span data-stu-id="ec411-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="ec411-122">、、和命令用作对在 Elements 工具中检查的最后 `$0` `$1` `$2` `$3` `$4` 五个 DOM 元素或内存工具中选定的最后五个 JavaScript 堆对象的历史引用。</span><span class="sxs-lookup"><span data-stu-id="ec411-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
 
 :::row:::
    :::column span="1":::
@@ -123,7 +123,7 @@ $(selector, [startNode])
    <span data-ttu-id="ec411-136">图 5：</span><span class="sxs-lookup"><span data-stu-id="ec411-136">Figure 5:  The</span></span> `$('img')`  
 :::image-end:::  
 
-<span data-ttu-id="ec411-137">将鼠标悬停在返回的结果上，打开上下文菜单 \ (右键单击\) ，然后选择"元素面板中的\*\*\*\* 展示"以在 DOM 中查找它，或滚动到**视图**以显示在页面上。</span><span class="sxs-lookup"><span data-stu-id="ec411-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
+<span data-ttu-id="ec411-137">将鼠标悬停在返回的结果上，打开上下文菜单 \(右键单击\) ，然后选择"元素面板中的 展示"以在 DOM 中查找它，或滚动到**视图**以显示在页面上。</span><span class="sxs-lookup"><span data-stu-id="ec411-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
 
 <span data-ttu-id="ec411-138">在下图中，将返回对当前选定元素的引用，并显示 src 属性。</span><span class="sxs-lookup"><span data-stu-id="ec411-138">In the following figure, a reference to the currently selected element is returned and the src property is displayed.</span></span>  
 
@@ -297,7 +297,7 @@ dirxml(object)
 inspect(object/method)
 ```  
 
-<span data-ttu-id="ec411-194">在相应的面板中打开并选择指定的元素或对象：DOM 元素的元素\*\*\*\* 工具或 JavaScript 堆对象的\*\*\*\* Memory 工具。</span><span class="sxs-lookup"><span data-stu-id="ec411-194">Opens and selects the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.</span></span>  
+<span data-ttu-id="ec411-194">在相应的面板中打开并选择指定的元素或对象：DOM 元素的元素 工具或 JavaScript 堆对象的 Memory 工具。</span><span class="sxs-lookup"><span data-stu-id="ec411-194">Opens and selects the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.</span></span>  
 
 <span data-ttu-id="ec411-195">在下面的代码示例和图中，将在 `document.body` Elements 工具 **中** 打开。</span><span class="sxs-lookup"><span data-stu-id="ec411-195">In the following code sample and figure, the `document.body` opens in the **Elements** tool.</span></span>  
 
@@ -317,7 +317,7 @@ inspect(document.body);
 getEventListeners(object)
 ```  
 
-<span data-ttu-id="ec411-200">返回指定对象上注册的事件侦听器。</span><span class="sxs-lookup"><span data-stu-id="ec411-200">Returns the event listeners registered on the specified object.</span></span>  <span data-ttu-id="ec411-201">返回值是包含每个已注册事件类型 \ (如 `click` `keydown` 或 \) 的数组的对象。</span><span class="sxs-lookup"><span data-stu-id="ec411-201">The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).</span></span>  <span data-ttu-id="ec411-202">每个数组的成员都是描述为每种类型注册的侦听器的对象。</span><span class="sxs-lookup"><span data-stu-id="ec411-202">The members of each array are objects that describe the listener registered for each type.</span></span>  <span data-ttu-id="ec411-203">下面的代码示例图列出了在文档对象上注册的所有事件侦听器。</span><span class="sxs-lookup"><span data-stu-id="ec411-203">In the following code sample figure, all of the event listeners registered on the document object are listed.</span></span>  
+<span data-ttu-id="ec411-200">返回指定对象上注册的事件侦听器。</span><span class="sxs-lookup"><span data-stu-id="ec411-200">Returns the event listeners registered on the specified object.</span></span>  <span data-ttu-id="ec411-201">返回值是包含每个已注册事件类型 \(如 `click` `keydown` 或 \) 的数组的对象。</span><span class="sxs-lookup"><span data-stu-id="ec411-201">The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).</span></span>  <span data-ttu-id="ec411-202">每个数组的成员都是描述为每种类型注册的侦听器的对象。</span><span class="sxs-lookup"><span data-stu-id="ec411-202">The members of each array are objects that describe the listener registered for each type.</span></span>  <span data-ttu-id="ec411-203">下面的代码示例图列出了在文档对象上注册的所有事件侦听器。</span><span class="sxs-lookup"><span data-stu-id="ec411-203">In the following code sample figure, all of the event listeners registered on the document object are listed.</span></span>  
 
 ```console
 getEventListeners(document);
@@ -353,7 +353,7 @@ keys(object)
 var player1 =   
 ```  
 
-<span data-ttu-id="ec411-217">在下面的代码示例和图中，为了简单起见，在键入之前和在控制台中) 在全局命名空间 \ (中定义 `player1` `keys(player1)` `values(player1)` 结果。</span><span class="sxs-lookup"><span data-stu-id="ec411-217">In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.</span></span>  
+<span data-ttu-id="ec411-217">在下面的代码示例和图中，为了简单起见，在键入之前和在控制台中) 在全局命名空间 \(中定义 `player1` `keys(player1)` `values(player1)` 结果。</span><span class="sxs-lookup"><span data-stu-id="ec411-217">In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.</span></span>  
 
 ```console
 keys(player1)
@@ -419,7 +419,7 @@ monitorEvents(window, ["resize", "scroll"]);
 | `touch` | <span data-ttu-id="ec411-239">"touchcancel"、"touchend"、"touchmove"、"touchstart"</span><span class="sxs-lookup"><span data-stu-id="ec411-239">"touchcancel", "touchend", "touchmove", "touchstart"</span></span> |  
 | `control` | <span data-ttu-id="ec411-240">"blur"、"change"、"focus"、"reset"、"resize"、"scroll"、"select"、"submit"、"zoom"</span><span class="sxs-lookup"><span data-stu-id="ec411-240">"blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom"</span></span> |  
 
-<span data-ttu-id="ec411-241">在下面的代码示例中，当前在 Elements 工具中选择了与输入文本字段上的事件 `key` `key` 对应的事件类型。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="ec411-241">In the following code sample, the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** tool.</span></span>  
+<span data-ttu-id="ec411-241">在下面的代码示例中，当前在 Elements 工具中选择了与输入文本字段上的事件 `key` `key` 对应的事件类型。 </span><span class="sxs-lookup"><span data-stu-id="ec411-241">In the following code sample, the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** tool.</span></span>  
 
 ```console
 monitorEvents($0, "key");
@@ -588,7 +588,7 @@ unmonitorEvents(object[, events])
 unmonitorEvents(window);
 ```  
 
-<span data-ttu-id="ec411-283">还可以有选择地停止监视对象上的特定事件。</span><span class="sxs-lookup"><span data-stu-id="ec411-283">You may also selectively stop monitoring specific events on an object.</span></span>  <span data-ttu-id="ec411-284">例如，以下代码开始监视当前选定元素上的所有事件，然后停止 `mouse` `mousemove` 监视事件 \ (可能以减少控制台输出\) 。</span><span class="sxs-lookup"><span data-stu-id="ec411-284">For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events \(perhaps to reduce noise in the console output\).</span></span>  
+<span data-ttu-id="ec411-283">还可以有选择地停止监视对象上的特定事件。</span><span class="sxs-lookup"><span data-stu-id="ec411-283">You may also selectively stop monitoring specific events on an object.</span></span>  <span data-ttu-id="ec411-284">例如，以下代码开始监视当前选定元素上的所有事件，然后停止 `mouse` `mousemove` 监视事件 \(可能以减少控制台输出\) 。</span><span class="sxs-lookup"><span data-stu-id="ec411-284">For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events \(perhaps to reduce noise in the console output\).</span></span>  
 
 ```console
 monitorEvents($0, "mouse");

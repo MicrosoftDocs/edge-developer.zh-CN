@@ -15,18 +15,18 @@ ms.locfileid: "11232504"
 ---
 # <span data-ttu-id="c962b-103">Microsoft Edge (Chromium) DevTools 协议概述</span><span class="sxs-lookup"><span data-stu-id="c962b-103">Microsoft Edge (Chromium) DevTools Protocol overview</span></span>  
 
-<span data-ttu-id="c962b-104">随着 Microsoft Edge 的基础 Web 平台向 Chromium 的转移 [，Microsoft Edge (EdgeHTML) DevTools 协议将不会](../edgehtml/devtools-protocol/index.md) 接收任何进一步的更新。</span><span class="sxs-lookup"><span data-stu-id="c962b-104">With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) will not be receiving any further updates.</span></span>  <span data-ttu-id="c962b-105">Microsoft Edge \ (Chromium\) DevTools 协议将匹配 Chrome DevTools 协议的 API。</span><span class="sxs-lookup"><span data-stu-id="c962b-105">The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.</span></span>  
+<span data-ttu-id="c962b-104">随着 Microsoft Edge 的基础 Web 平台向 Chromium 的转移 [，Microsoft Edge (EdgeHTML) DevTools 协议将不会](../edgehtml/devtools-protocol/index.md) 接收任何进一步的更新。</span><span class="sxs-lookup"><span data-stu-id="c962b-104">With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) will not be receiving any further updates.</span></span>  <span data-ttu-id="c962b-105">Microsoft Edge \(Chromium\) DevTools 协议将匹配 Chrome DevTools 协议的 API。</span><span class="sxs-lookup"><span data-stu-id="c962b-105">The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.</span></span>  
 
 <span data-ttu-id="c962b-106">可以通过引用 [Chrome DevTools](https://chromedevtools.github.io/devtools-protocol/tot/)协议查看器找到有关这些域和方法的文档。</span><span class="sxs-lookup"><span data-stu-id="c962b-106">You can find documentation on those domains and methods by referring to the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot/).</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="c962b-107">`ms` [Microsoft Edge \ (EdgeHTML) DevTools](../edgehtml/devtools-protocol/index.md)协议中前缀的任何方法在 Microsoft Edge \ (Chromium\) DevTools 协议中不再受支持。</span><span class="sxs-lookup"><span data-stu-id="c962b-107">Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.</span></span>  
+> <span data-ttu-id="c962b-107">`ms` [Microsoft Edge \(EdgeHTML) DevTools](../edgehtml/devtools-protocol/index.md)协议中前缀的任何方法在 Microsoft Edge \(Chromium\) DevTools 协议中不再受支持。</span><span class="sxs-lookup"><span data-stu-id="c962b-107">Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.</span></span>  
 
 ## <span data-ttu-id="c962b-108">使用 DevTools 协议</span><span class="sxs-lookup"><span data-stu-id="c962b-108">Using the DevTools Protocol</span></span>  
 
-<span data-ttu-id="c962b-109">下面将了解如何将自定义工具客户端附加到 Microsoft Edge \ (Chromium\) 中的 DevTools Server。</span><span class="sxs-lookup"><span data-stu-id="c962b-109">Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).</span></span>  
+<span data-ttu-id="c962b-109">下面将了解如何将自定义工具客户端附加到 Microsoft Edge \(Chromium\) 中的 DevTools Server。</span><span class="sxs-lookup"><span data-stu-id="c962b-109">Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).</span></span>  
 
-1.  <span data-ttu-id="c962b-110">确保关闭 Microsoft Edge \ (Chromium\) 实例。</span><span class="sxs-lookup"><span data-stu-id="c962b-110">Ensure all instances of Microsoft Edge \(Chromium\) are closed.</span></span>  
+1.  <span data-ttu-id="c962b-110">确保关闭 Microsoft Edge \(Chromium\) 实例。</span><span class="sxs-lookup"><span data-stu-id="c962b-110">Ensure all instances of Microsoft Edge \(Chromium\) are closed.</span></span>  
 1.  <span data-ttu-id="c962b-111">使用远程调试 (启动 Microsoft Edge \) Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="c962b-111">Launch Microsoft Edge \(Chromium\) with the remote debugging port:.</span></span> 
     
     ```shell
@@ -49,7 +49,7 @@ ms.locfileid: "11232504"
 
 ## <span data-ttu-id="c962b-115">DevTools 协议 HTTP 终结点</span><span class="sxs-lookup"><span data-stu-id="c962b-115">DevTools Protocol HTTP Endpoints</span></span>  
 
-<span data-ttu-id="c962b-116">Microsoft Edge \ (Chromium\) DevTools 协议支持以下 HTTP 终结点。</span><span class="sxs-lookup"><span data-stu-id="c962b-116">The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.</span></span>  
+<span data-ttu-id="c962b-116">Microsoft Edge \(Chromium\) DevTools 协议支持以下 HTTP 终结点。</span><span class="sxs-lookup"><span data-stu-id="c962b-116">The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.</span></span>  
 
 ## <span data-ttu-id="c962b-117">/json/version</span><span class="sxs-lookup"><span data-stu-id="c962b-117">/json/version</span></span>  
 
@@ -108,7 +108,7 @@ ms.locfileid: "11232504"
 
 ## <span data-ttu-id="c962b-133">/json/close</span><span class="sxs-lookup"><span data-stu-id="c962b-133">/json/close</span></span>  
 
-<span data-ttu-id="c962b-134">关闭目标进程 \ (例如，在 Microsoft Edge \ (Chromium\) 中，关闭页面选项卡\) 。</span><span class="sxs-lookup"><span data-stu-id="c962b-134">Closes down the target process \(for example, in Microsoft Edge \(Chromium\), closes the page tab\).</span></span>  
+<span data-ttu-id="c962b-134">关闭目标进程 \(例如，在 Microsoft Edge \(Chromium\) 中，关闭页面选项卡\) 。</span><span class="sxs-lookup"><span data-stu-id="c962b-134">Closes down the target process \(for example, in Microsoft Edge \(Chromium\), closes the page tab\).</span></span>  
 
 **<span data-ttu-id="c962b-135">参数</span><span class="sxs-lookup"><span data-stu-id="c962b-135">Parameters</span></span>**  
 
@@ -130,7 +130,7 @@ String(“Target is closing”)
 
 ### <span data-ttu-id="c962b-145">/msedge/json/list</span><span class="sxs-lookup"><span data-stu-id="c962b-145">/msedge/json/list</span></span>  
 
-<span data-ttu-id="c962b-146">提供所有进程 \ (候选列表，包括 `msedge.exe` [PBA](../progressive-web-apps-chromium/index.md) 和 Windows 10 设备上所有 Microsoft Edge\) 实例的所有选项卡进行调试。</span><span class="sxs-lookup"><span data-stu-id="c962b-146">Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 device for debugging.</span></span>  
+<span data-ttu-id="c962b-146">提供所有进程 \(候选列表，包括 `msedge.exe` [PBA](../progressive-web-apps-chromium/index.md) 和 Windows 10 设备上所有 Microsoft Edge\) 实例的所有选项卡进行调试。</span><span class="sxs-lookup"><span data-stu-id="c962b-146">Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 device for debugging.</span></span>  
 
 **<span data-ttu-id="c962b-147">参数</span><span class="sxs-lookup"><span data-stu-id="c962b-147">Parameters</span></span>**  
 

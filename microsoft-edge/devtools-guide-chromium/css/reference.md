@@ -261,7 +261,7 @@ ms.locfileid: "11439301"
 
 <span data-ttu-id="b000e-246">完成以下操作以向元素添加类。</span><span class="sxs-lookup"><span data-stu-id="b000e-246">Complete the following actions to add a class to an element.</span></span>  
 
-1.  <span data-ttu-id="b000e-247">在 \*\* DOM 树\*\* 中 [选择元素](#choose-an-element)。</span><span class="sxs-lookup"><span data-stu-id="b000e-247">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
+1.  <span data-ttu-id="b000e-247">在  DOM 树 中 [选择元素](#choose-an-element)。</span><span class="sxs-lookup"><span data-stu-id="b000e-247">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
 1.  <span data-ttu-id="b000e-248">选择 **.cls**。</span><span class="sxs-lookup"><span data-stu-id="b000e-248">Choose **.cls**.</span></span>  
 1.  <span data-ttu-id="b000e-249">在 **“添加新类”** 文本框中输入类的名称。</span><span class="sxs-lookup"><span data-stu-id="b000e-249">Enter the name of the class in the **Add New Class** text box.</span></span>  
 1.  <span data-ttu-id="b000e-250">选择 `Enter`。</span><span class="sxs-lookup"><span data-stu-id="b000e-250">Select `Enter`.</span></span>  
@@ -274,7 +274,7 @@ ms.locfileid: "11439301"
 
 <span data-ttu-id="b000e-254">完成以下操作以启用或禁用元素上的类。</span><span class="sxs-lookup"><span data-stu-id="b000e-254">Complete the following actions to enable or disable a class on an element.</span></span>  
 
-1.  <span data-ttu-id="b000e-255">在 \*\* DOM 树\*\* 中 [选择元素](#choose-an-element)。</span><span class="sxs-lookup"><span data-stu-id="b000e-255">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
+1.  <span data-ttu-id="b000e-255">在  DOM 树 中 [选择元素](#choose-an-element)。</span><span class="sxs-lookup"><span data-stu-id="b000e-255">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
 1.  <span data-ttu-id="b000e-256">打开 **“元素类”** 窗格。</span><span class="sxs-lookup"><span data-stu-id="b000e-256">Open the **Element Classes** pane.</span></span>  <span data-ttu-id="b000e-257">导航到 [向元素添加类](#add-a-class-to-an-element)。</span><span class="sxs-lookup"><span data-stu-id="b000e-257">Navigate to [Add a class to an element](#add-a-class-to-an-element).</span></span>  <span data-ttu-id="b000e-258">在 **“添加新类”** 文本框下方是应用于特定元素的所有类。</span><span class="sxs-lookup"><span data-stu-id="b000e-258">Below the **Add New Class** text box are all of the classes applied to the specific element.</span></span>  
 1.  <span data-ttu-id="b000e-259">切换要打开或关闭类旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="b000e-259">Toggle the checkbox next to the class that you want to turn on or off.</span></span>  
 

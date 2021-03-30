@@ -79,7 +79,7 @@ ms.locfileid: "11397927"
        <span data-ttu-id="0b921-141">重新混合的项目</span><span class="sxs-lookup"><span data-stu-id="0b921-141">The remixed project</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="0b921-142">如果你计划完成本系列中的下一个教程，请选择"登录"，\*\*\*\* 然后使用 GitHub 或 Facebook 帐户登录小故障。</span><span class="sxs-lookup"><span data-stu-id="0b921-142">If you plan on completing the next tutorial in this series, choose **Sign In** and sign into Glitch with your GitHub or Facebook account.</span></span>  <span data-ttu-id="0b921-143">如果选择不登录帐户，则关闭编辑选项卡后将失去编辑项目的能力。</span><span class="sxs-lookup"><span data-stu-id="0b921-143">If you choose to not sign into your account, you lose the ability to edit the project after you close the editing tab.</span></span>  
+1.  <span data-ttu-id="0b921-142">如果你计划完成本系列中的下一个教程，请选择"登录"， 然后使用 GitHub 或 Facebook 帐户登录小故障。</span><span class="sxs-lookup"><span data-stu-id="0b921-142">If you plan on completing the next tutorial in this series, choose **Sign In** and sign into Glitch with your GitHub or Facebook account.</span></span>  <span data-ttu-id="0b921-143">如果选择不登录帐户，则关闭编辑选项卡后将失去编辑项目的能力。</span><span class="sxs-lookup"><span data-stu-id="0b921-143">If you choose to not sign into your account, you lose the ability to edit the project after you close the editing tab.</span></span>  
 1.  <span data-ttu-id="0b921-144">选择 **"显示**"，**然后选择"新建窗口"。**</span><span class="sxs-lookup"><span data-stu-id="0b921-144">Choose **Show** and choose **In a New Window**.</span></span>  <span data-ttu-id="0b921-145">将打开一个新选项卡，显示实时页面。</span><span class="sxs-lookup"><span data-stu-id="0b921-145">A new tab opens, showing you the live page.</span></span>  <span data-ttu-id="0b921-146">此选项卡在本教程 **中称为实时** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="0b921-146">This tab is called the **live tab** throughout this tutorial.</span></span>  
     
     :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="实时选项卡" lightbox="../media/beginners-html-setup4.msft.png":::
@@ -199,7 +199,7 @@ ms.locfileid: "11397927"
        <span data-ttu-id="0b921-184">可以在以下 `A new element!?!` 内容中找到该文本：</span><span class="sxs-lookup"><span data-stu-id="0b921-184">The mystery text `A new element!?!` is nowhere to be found in</span></span> `index.html`  
     :::image-end:::  
     
-1.  <span data-ttu-id="0b921-185">返回到实时**选项卡**，悬停在 `A new element!?!` 上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0b921-185">Go back to the **live tab**, hover on `A new element!?!`, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+1.  <span data-ttu-id="0b921-185">返回到实时**选项卡**，悬停在 `A new element!?!` 上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0b921-185">Go back to the **live tab**, hover on `A new element!?!`, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
     
     :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="检查某些文本" lightbox="../media/beginners-html-dom3.msft.png":::
        <span data-ttu-id="0b921-187">检查某些文本</span><span class="sxs-lookup"><span data-stu-id="0b921-187">Inspecting some text</span></span>  
@@ -217,7 +217,7 @@ ms.locfileid: "11397927"
 
 <span data-ttu-id="0b921-201">如果你想要在不离开实时选项卡的情况下快速试验内容更改，请尝试使用 DevTools。</span><span class="sxs-lookup"><span data-stu-id="0b921-201">If you want to quickly experiment with content changes without ever leaving the live tab, try DevTools.</span></span>  
 
-1.  <span data-ttu-id="0b921-202">在 DevTools 中，悬停在上，打开上下文菜单 `Your site!` \ (右键单击\) ，然后选择"编辑**为 HTML"。**</span><span class="sxs-lookup"><span data-stu-id="0b921-202">In DevTools, hover on `Your site!`, open the contextual menu \(right-click\), and choose **Edit as HTML**.</span></span>  
+1.  <span data-ttu-id="0b921-202">在 DevTools 中，悬停在上，打开上下文菜单 `Your site!` \(右键单击\) ，然后选择"编辑**为 HTML"。**</span><span class="sxs-lookup"><span data-stu-id="0b921-202">In DevTools, hover on `Your site!`, open the contextual menu \(right-click\), and choose **Edit as HTML**.</span></span>  
     
     :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="将节点编辑为 HTML" lightbox="../media/beginners-html-edit1.msft.png":::
        <span data-ttu-id="0b921-204">将节点编辑为 HTML</span><span class="sxs-lookup"><span data-stu-id="0b921-204">Editing the node as HTML</span></span>  
@@ -247,7 +247,7 @@ ms.locfileid: "11397927"
        :::column-end:::
     :::row-end:::  
     
-1.  <span data-ttu-id="0b921-208">选择 `Control` + `Enter` \ (Windows、Linux\) 或 `Command` + `Enter` \ (macOS\) 保存更改，或在框外选择。</span><span class="sxs-lookup"><span data-stu-id="0b921-208">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or choose outside of the box.</span></span>  <span data-ttu-id="0b921-209">你的更改会自动显示在页面实时视图中。</span><span class="sxs-lookup"><span data-stu-id="0b921-209">Your changes automatically show up in the live view of your page.</span></span>  <span data-ttu-id="0b921-210">文本 `Your site!` 已替换为新内容。</span><span class="sxs-lookup"><span data-stu-id="0b921-210">The text `Your site!` has been replaced with the new content.</span></span>  
+1.  <span data-ttu-id="0b921-208">选择 `Control` + `Enter` \(Windows、Linux\) 或 `Command` + `Enter` \(macOS\) 保存更改，或在框外选择。</span><span class="sxs-lookup"><span data-stu-id="0b921-208">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or choose outside of the box.</span></span>  <span data-ttu-id="0b921-209">你的更改会自动显示在页面实时视图中。</span><span class="sxs-lookup"><span data-stu-id="0b921-209">Your changes automatically show up in the live view of your page.</span></span>  <span data-ttu-id="0b921-210">文本 `Your site!` 已替换为新内容。</span><span class="sxs-lookup"><span data-stu-id="0b921-210">The text `Your site!` has been replaced with the new content.</span></span>  
     
     :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上" lightbox="../media/beginners-html-edit3.msft.png":::
        <span data-ttu-id="0b921-212">新内容会立即显示在页面上</span><span class="sxs-lookup"><span data-stu-id="0b921-212">The new content shows up immediately on the page</span></span>  

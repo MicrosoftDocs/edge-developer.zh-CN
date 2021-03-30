@@ -23,7 +23,7 @@ ms.locfileid: "11306164"
 
 <span data-ttu-id="a77c4-108">确保先安装以下先决条件列表，然后再继续。</span><span class="sxs-lookup"><span data-stu-id="a77c4-108">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
 
-*   <span data-ttu-id="a77c4-109">[WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2] 运行时或任何 [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] 安装在受支持的操作系统 \ (当前为 Windows 10、Windows 8.1 和 Windows 7\) 。</span><span class="sxs-lookup"><span data-stu-id="a77c4-109">[WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
+*   <span data-ttu-id="a77c4-109">[WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2] 运行时或任何 [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] 安装在受支持的操作系统 \(当前为 Windows 10、Windows 8.1 和 Windows 7\) 。</span><span class="sxs-lookup"><span data-stu-id="a77c4-109">[WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
     
     > [!NOTE]
     > <span data-ttu-id="a77c4-110">WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。</span><span class="sxs-lookup"><span data-stu-id="a77c4-110">The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.</span></span>  
@@ -55,7 +55,7 @@ ms.locfileid: "11306164"
 
 <span data-ttu-id="a77c4-124">使用 NuGet 将 WebView2 SDK 添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="a77c4-124">Use NuGet to add the WebView2 SDK to the project.</span></span>  
 
-1.  <span data-ttu-id="a77c4-125">将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理**NuGet 程序包..."。**</span><span class="sxs-lookup"><span data-stu-id="a77c4-125">Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.</span></span>  
+1.  <span data-ttu-id="a77c4-125">将鼠标悬停在项目上，打开上下文菜单 \(右键单击\) ，然后选择"管理**NuGet 程序包..."。**</span><span class="sxs-lookup"><span data-stu-id="a77c4-125">Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.</span></span>  
     
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="管理 NuGet 程序包":::
        <span data-ttu-id="a77c4-127">管理 NuGet 程序包</span><span class="sxs-lookup"><span data-stu-id="a77c4-127">Manage NuGet Packages</span></span>
@@ -78,10 +78,10 @@ ms.locfileid: "11306164"
 <span data-ttu-id="a77c4-137">将 WebView 添加到你的应用。</span><span class="sxs-lookup"><span data-stu-id="a77c4-137">Add a WebView to your app.</span></span>  
 
 1.  <span data-ttu-id="a77c4-138">打开 **Windows 窗体设计器**。</span><span class="sxs-lookup"><span data-stu-id="a77c4-138">Open the **Windows Forms Designer**.</span></span>  
-1.  <span data-ttu-id="a77c4-139">在工具箱**中搜索 WebView2。** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="a77c4-139">Search for **WebView2** in the **Toolbox**.</span></span>  
+1.  <span data-ttu-id="a77c4-139">在工具箱**中搜索 WebView2。** </span><span class="sxs-lookup"><span data-stu-id="a77c4-139">Search for **WebView2** in the **Toolbox**.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="a77c4-140">如果使用的是 Visual Studio 2017，默认情况下 **，WebView2** 可能不会显示在 **工具箱中**。</span><span class="sxs-lookup"><span data-stu-id="a77c4-140">If you are using Visual Studio 2017, by default **WebView2** may not display in the **Toolbox**.</span></span>  <span data-ttu-id="a77c4-141">若要启用该行为 **，请选择"** 工具  >  **选项**常规  >  \*\*\*\*>**将"自动填充**工具箱"设置设置为 `True` 。</span><span class="sxs-lookup"><span data-stu-id="a77c4-141">To enable the behavior, choose **Tools** > **Options** > **General** > set the **Automatically Populate Toolbox** setting to `True`.</span></span>  
+    > <span data-ttu-id="a77c4-140">如果使用的是 Visual Studio 2017，默认情况下 **，WebView2** 可能不会显示在 **工具箱中**。</span><span class="sxs-lookup"><span data-stu-id="a77c4-140">If you are using Visual Studio 2017, by default **WebView2** may not display in the **Toolbox**.</span></span>  <span data-ttu-id="a77c4-141">若要启用该行为 **，请选择"** 工具  >  **选项**常规  >  >**将"自动填充**工具箱"设置设置为 `True` 。</span><span class="sxs-lookup"><span data-stu-id="a77c4-141">To enable the behavior, choose **Tools** > **Options** > **General** > set the **Automatically Populate Toolbox** setting to `True`.</span></span>  
     
     <span data-ttu-id="a77c4-142">将 **WebView2 控件** 拖放到 Windows 窗体应用。</span><span class="sxs-lookup"><span data-stu-id="a77c4-142">Drag and drop the **WebView2** control into the Windows Forms App.</span></span>
     

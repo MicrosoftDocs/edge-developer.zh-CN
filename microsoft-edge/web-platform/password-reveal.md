@@ -16,7 +16,7 @@ ms.locfileid: "11327709"
 ---
 # <span data-ttu-id="bf77e-104">自定义密码显示按钮</span><span class="sxs-lookup"><span data-stu-id="bf77e-104">Customize the password reveal button</span></span>  
 
-<span data-ttu-id="bf77e-105">`password`Microsoft Edge 中的输入类型包括**密码显示**控件。</span><span class="sxs-lookup"><span data-stu-id="bf77e-105">The `password` input type in Microsoft Edge includes a **password reveal** control.</span></span>  <span data-ttu-id="bf77e-106">用户可以选择密码 **输入按钮** 来显示 **密码** 字段。</span><span class="sxs-lookup"><span data-stu-id="bf77e-106">A user may choose the **password input** button to reveal the **password** field.</span></span>  <span data-ttu-id="bf77e-107">显示 **的密码** 字段可帮助用户验证密码是否正确。</span><span class="sxs-lookup"><span data-stu-id="bf77e-107">The revealed **password** field helps the user verify if the password is correctly.</span></span>  <span data-ttu-id="bf77e-108">在用户输入密码字段中的文本后，\*\*\*\* 用户可以选择密码显示按钮或选择切换\*\*\*\* 输入 `Alt` + `F8` 的可见性。</span><span class="sxs-lookup"><span data-stu-id="bf77e-108">After a user has entered text in the **password** field, a user may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of the input.</span></span>  
+<span data-ttu-id="bf77e-105">`password`Microsoft Edge 中的输入类型包括**密码显示**控件。</span><span class="sxs-lookup"><span data-stu-id="bf77e-105">The `password` input type in Microsoft Edge includes a **password reveal** control.</span></span>  <span data-ttu-id="bf77e-106">用户可以选择密码 **输入按钮** 来显示 **密码** 字段。</span><span class="sxs-lookup"><span data-stu-id="bf77e-106">A user may choose the **password input** button to reveal the **password** field.</span></span>  <span data-ttu-id="bf77e-107">显示 **的密码** 字段可帮助用户验证密码是否正确。</span><span class="sxs-lookup"><span data-stu-id="bf77e-107">The revealed **password** field helps the user verify if the password is correctly.</span></span>  <span data-ttu-id="bf77e-108">在用户输入密码字段中的文本后， 用户可以选择密码显示按钮或选择切换 输入 `Alt` + `F8` 的可见性。</span><span class="sxs-lookup"><span data-stu-id="bf77e-108">After a user has entered text in the **password** field, a user may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of the input.</span></span>  
 
 :::row:::
    :::column span="":::
@@ -50,7 +50,7 @@ ms.locfileid: "11327709"
 
 ## <span data-ttu-id="bf77e-123">自定义控件样式</span><span class="sxs-lookup"><span data-stu-id="bf77e-123">Customize the control style</span></span>  
 
-<span data-ttu-id="bf77e-124">你可以改为修改密码显示按钮的样式，以更好地匹配网站的视觉语言，\*\*\*\* 而不是完全删除控件。</span><span class="sxs-lookup"><span data-stu-id="bf77e-124">Instead of fully removing the control, you may instead modify the styling of the **password reveal** button to better match the visual language of the website.</span></span>  <span data-ttu-id="bf77e-125">以下代码段提供了此类样式的示例。</span><span class="sxs-lookup"><span data-stu-id="bf77e-125">The following snippet provides an example of such styling.</span></span>  
+<span data-ttu-id="bf77e-124">你可以改为修改密码显示按钮的样式，以更好地匹配网站的视觉语言， 而不是完全删除控件。</span><span class="sxs-lookup"><span data-stu-id="bf77e-124">Instead of fully removing the control, you may instead modify the styling of the **password reveal** button to better match the visual language of the website.</span></span>  <span data-ttu-id="bf77e-125">以下代码段提供了此类样式的示例。</span><span class="sxs-lookup"><span data-stu-id="bf77e-125">The following snippet provides an example of such styling.</span></span>  
 
 ```css
 ::-ms-reveal {
@@ -62,7 +62,7 @@ ms.locfileid: "11327709"
 
 <span data-ttu-id="bf77e-126">设置密码显示按钮样式时，请记住 **以下** 事项。</span><span class="sxs-lookup"><span data-stu-id="bf77e-126">Keep the following things in mind when you style the **password reveal** button.</span></span>  
 
-*   <span data-ttu-id="bf77e-127">眼睛图标实现为背景图像。</span><span class="sxs-lookup"><span data-stu-id="bf77e-127">The eye icon implements as a background image.</span></span>  <span data-ttu-id="bf77e-128">若要向密码显示按钮添加背景\*\*\*\* 色，请使用 CSS `background-color` 属性而不是 `background` 速记属性。</span><span class="sxs-lookup"><span data-stu-id="bf77e-128">To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.</span></span>  
+*   <span data-ttu-id="bf77e-127">眼睛图标实现为背景图像。</span><span class="sxs-lookup"><span data-stu-id="bf77e-127">The eye icon implements as a background image.</span></span>  <span data-ttu-id="bf77e-128">若要向密码显示按钮添加背景 色，请使用 CSS `background-color` 属性而不是 `background` 速记属性。</span><span class="sxs-lookup"><span data-stu-id="bf77e-128">To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.</span></span>  
 *   <span data-ttu-id="bf77e-129">你可以调整密码显示按钮 **的大小和** 比例。</span><span class="sxs-lookup"><span data-stu-id="bf77e-129">You may adjust the size and scale of the **password reveal** button.</span></span>  
     
     > [!NOTE]
@@ -76,12 +76,12 @@ ms.locfileid: "11327709"
 
 *   <span data-ttu-id="bf77e-135">如果焦点从密码字段 **移** 开，浏览器将删除 **密码显示** 按钮。</span><span class="sxs-lookup"><span data-stu-id="bf77e-135">If focus moves away from the **password** field, the browser removes the **password reveal** button.</span></span>  
 *   <span data-ttu-id="bf77e-136">如果脚本修改 **密码** 字段，浏览器将删除 **密码显示** 按钮。</span><span class="sxs-lookup"><span data-stu-id="bf77e-136">If scripts modify the **password** field, the browser removes the **password reveal** button.</span></span>  
-*   <span data-ttu-id="bf77e-137">如果用户删除密码**显示按钮，** 则用户必须先删除密码字段的内容，然后密码显示**按钮**才能\*\*\*\* 再次显示。</span><span class="sxs-lookup"><span data-stu-id="bf77e-137">If a user removes the **password reveal** button, the user must delete the contents of the **password** field before the **password reveal** button displays again.</span></span>  
+*   <span data-ttu-id="bf77e-137">如果用户删除密码**显示按钮，** 则用户必须先删除密码字段的内容，然后密码显示**按钮**才能 再次显示。</span><span class="sxs-lookup"><span data-stu-id="bf77e-137">If a user removes the **password reveal** button, the user must delete the contents of the **password** field before the **password reveal** button displays again.</span></span>  
     
     > [!NOTE]
     > <span data-ttu-id="bf77e-138">如果用户离开未锁定的设备，此功能可防止某人进行细微的调整以查看密码。</span><span class="sxs-lookup"><span data-stu-id="bf77e-138">This feature prevents someone from making a minor adjustment to view the password, should the user step away from an unlocked device.</span></span>
     
-<span data-ttu-id="bf77e-139">如果**密码字段**使用密码管理器自动填充\*\*\*\*，则密码显示按钮不可用。</span><span class="sxs-lookup"><span data-stu-id="bf77e-139">The **password reveal** button is unavailable if the **password** field autofills using the password manager.</span></span>  
+<span data-ttu-id="bf77e-139">如果**密码字段**使用密码管理器自动填充，则密码显示按钮不可用。</span><span class="sxs-lookup"><span data-stu-id="bf77e-139">The **password reveal** button is unavailable if the **password** field autofills using the password manager.</span></span>  
 
 <!-- links -->  
 

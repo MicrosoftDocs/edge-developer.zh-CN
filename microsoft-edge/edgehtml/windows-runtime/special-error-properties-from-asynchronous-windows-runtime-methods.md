@@ -28,8 +28,8 @@ ms.locfileid: "11398838"
 
 <span data-ttu-id="60b64-107">在调试模式下，由 Windows 运行时异步操作失败导致的错误对象具有以下特殊属性：</span><span class="sxs-lookup"><span data-stu-id="60b64-107">An error object that results from a failed Windows Runtime asynchronous operation in debug mode has the following special properties:</span></span>  
 
-*   `asyncOpSource` <span data-ttu-id="60b64-108">\ (Object\) 获取生成错误的调用的原始位置的信息。</span><span class="sxs-lookup"><span data-stu-id="60b64-108">\(Object\) Gets information about the original location where the call that produced an error was made.</span></span>  <span data-ttu-id="60b64-109">属性 \ (String\) 在发起异步操作的用户代码中 `asyncOpSource.originatingCall` 显示位置。</span><span class="sxs-lookup"><span data-stu-id="60b64-109">The property `asyncOpSource.originatingCall` \(String\) displays the location in the user's code that originated the asynchronous operation.</span></span>  
-*   <span data-ttu-id="60b64-110">asyncOpType \ (String\) 获取引发错误的异步操作类型的名称。</span><span class="sxs-lookup"><span data-stu-id="60b64-110">asyncOpType \(String\) Gets the name of the asynchronous operation type that raised the error.</span></span>  
+*   `asyncOpSource` <span data-ttu-id="60b64-108">\(Object\) 获取生成错误的调用的原始位置的信息。</span><span class="sxs-lookup"><span data-stu-id="60b64-108">\(Object\) Gets information about the original location where the call that produced an error was made.</span></span>  <span data-ttu-id="60b64-109">属性 \(String\) 在发起异步操作的用户代码中 `asyncOpSource.originatingCall` 显示位置。</span><span class="sxs-lookup"><span data-stu-id="60b64-109">The property `asyncOpSource.originatingCall` \(String\) displays the location in the user's code that originated the asynchronous operation.</span></span>  
+*   <span data-ttu-id="60b64-110">asyncOpType \(String\) 获取引发错误的异步操作类型的名称。</span><span class="sxs-lookup"><span data-stu-id="60b64-110">asyncOpType \(String\) Gets the name of the asynchronous operation type that raised the error.</span></span>  
     
 <span data-ttu-id="60b64-111">有关异步操作错误的详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="60b64-111">For more information about errors with asynchronous operations, see:</span></span>  
 

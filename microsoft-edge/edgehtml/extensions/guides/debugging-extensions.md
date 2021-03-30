@@ -33,7 +33,7 @@ ms.locfileid: "11399363"
 
 <span data-ttu-id="79dbf-111">若要开始调试扩展的后台脚本，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="79dbf-111">To start debugging the background script of your extension:</span></span>  
 
-1.  <span data-ttu-id="79dbf-112">单击 **"更多 (...) \*\*\*\*后跟"扩展**"转到扩展窗格。</span><span class="sxs-lookup"><span data-stu-id="79dbf-112">Click on **More (...)** followed by **Extensions** to go into the extension pane.</span></span>  
+1.  <span data-ttu-id="79dbf-112">单击 **"更多 (...) 后跟"扩展**"转到扩展窗格。</span><span class="sxs-lookup"><span data-stu-id="79dbf-112">Click on **More (...)** followed by **Extensions** to go into the extension pane.</span></span>  
     
     ![“更多”按钮](../media/morebutton.png)  
     
@@ -56,7 +56,7 @@ ms.locfileid: "11399363"
 
 <span data-ttu-id="79dbf-125">若要开始调试扩展的内容脚本，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="79dbf-125">To start debugging the content script of your extension:</span></span>  
 
-1.  <span data-ttu-id="79dbf-126">通过导航到"更多\*\* (...) **按钮并选择 F12 开发人员工具或按键盘来启动**F12。\*\* `F12`</span><span class="sxs-lookup"><span data-stu-id="79dbf-126">Launch F12 by either navigating to the **More (...)** button and selecting **F12 Developer Tools** or by pressing `F12` on your keyboard.</span></span>  
+1.  <span data-ttu-id="79dbf-126">通过导航到"更多 (...) **按钮并选择 F12 开发人员工具或按键盘来启动**F12。 `F12`</span><span class="sxs-lookup"><span data-stu-id="79dbf-126">Launch F12 by either navigating to the **More (...)** button and selecting **F12 Developer Tools** or by pressing `F12` on your keyboard.</span></span>  
 1.  <span data-ttu-id="79dbf-127">导航到并选择扩展的内容脚本。</span><span class="sxs-lookup"><span data-stu-id="79dbf-127">Navigate to and select your extension's content script.</span></span>  <span data-ttu-id="79dbf-128">当前运行的扩展的内容脚本将用每个扩展的不同文件夹描述。</span><span class="sxs-lookup"><span data-stu-id="79dbf-128">Content scripts for extensions currently running will be depicted by a different folder for each extension.</span></span>  
     
     > [!NOTE]

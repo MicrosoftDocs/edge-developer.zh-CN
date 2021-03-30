@@ -48,7 +48,7 @@ ms.locfileid: "11398684"
 
 ### <a name="edgehtml-emulation"></a><span data-ttu-id="1c5ef-117">EdgeHTML 仿真</span><span class="sxs-lookup"><span data-stu-id="1c5ef-117">EdgeHTML emulation</span></span>  
 
-<span data-ttu-id="1c5ef-118">若要模拟 Windows 手机，请使用 Microsoft Edge \ (EdgeHTML\) [内置的模拟][DevToolsEdgeHtmlEmulation]。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-118">To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][DevToolsEdgeHtmlEmulation].</span></span>  
+<span data-ttu-id="1c5ef-118">若要模拟 Windows 手机，请使用 Microsoft Edge \(EdgeHTML\) [内置的模拟][DevToolsEdgeHtmlEmulation]。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-118">To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][DevToolsEdgeHtmlEmulation].</span></span>  
 
 <span data-ttu-id="1c5ef-119">使用 [IE 11 模拟][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-119">Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page may look in older versions of Internet Explorer.</span></span>  
 
@@ -112,7 +112,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 <span data-ttu-id="1c5ef-139">完成后，了解如何通过 Apple 开发人员文档使用 [模拟器][AppleSimulatorHelp]。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-139">When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="1c5ef-140">若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请打开它，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \ (右键单击\) ，然后选择"保持为扩展坞 **"。**</span><span class="sxs-lookup"><span data-stu-id="1c5ef-140">To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu \(right-click\), and choose **Keep in Dock**.</span></span>  <span data-ttu-id="1c5ef-141">现在只需在需要图标时选择它。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-141">Now just choose the icon whenever you need it.</span></span>  
+> <span data-ttu-id="1c5ef-140">若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请打开它，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \(右键单击\) ，然后选择"保持为扩展坞 **"。**</span><span class="sxs-lookup"><span data-stu-id="1c5ef-140">To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu \(right-click\), and choose **Keep in Dock**.</span></span>  <span data-ttu-id="1c5ef-141">现在只需在需要图标时选择它。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-141">Now just choose the icon whenever you need it.</span></span>  
 
 ###  <a name="microsoft-edge-edgehtml"></a><span data-ttu-id="1c5ef-142">Microsoft Edge (EdgeHTML) </span><span class="sxs-lookup"><span data-stu-id="1c5ef-142">Microsoft Edge (EdgeHTML)</span></span>  
 
@@ -120,7 +120,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    <span data-ttu-id="1c5ef-144">新式 IE VM</span><span class="sxs-lookup"><span data-stu-id="1c5ef-144">Modern IE VM</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1c5ef-145">Microsoft Edge \ (EdgeHTML\) 虚拟机 \ (VM\) 使您能够通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-145">Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).</span></span>  <span data-ttu-id="1c5ef-146">在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-146">Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].</span></span>  
+<span data-ttu-id="1c5ef-145">Microsoft Edge \(EdgeHTML\) 虚拟机 \(VM\) 使您能够通过 VirtualBox \(或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-145">Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).</span></span>  <span data-ttu-id="1c5ef-146">在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-146">Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].</span></span>  
 
 ## <a name="cloud-based-emulators-and-simulators"></a><span data-ttu-id="1c5ef-147">基于云的模拟器和模拟器</span><span class="sxs-lookup"><span data-stu-id="1c5ef-147">Cloud-based emulators and simulators</span></span>  
 
@@ -156,7 +156,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 
 > [!NOTE]
 > <span data-ttu-id="1c5ef-171">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-171">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="1c5ef-172">原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由 Google (的[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate 创作|工具、性能、动画、UX\) 。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-172">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).</span></span>  
+> <span data-ttu-id="1c5ef-172">原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由 Google (的[Meggin Kearney][MegginKearney] \(Tech Writer\) 和[Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate 创作|工具、性能、动画、UX\) 。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-172">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="1c5ef-174">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="1c5ef-174">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

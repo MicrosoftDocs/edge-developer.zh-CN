@@ -22,17 +22,17 @@ ms.locfileid: "11232261"
 
 ![样式窗格](../media/elements_styles.png)
 
-<span data-ttu-id="4b21d-108">可以通过单击 **"a："** 按钮来显示伪状态面板。</span><span class="sxs-lookup"><span data-stu-id="4b21d-108">You can display the pseudo states panel by clicking the "**a:**" button.</span></span> <span data-ttu-id="4b21d-109">通过单击""按钮或右键单击"样式"窗格中的任意位置以打开上下文菜单来定义 **+** 新的样式规则。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4b21d-109">Define a new style rule by clicking the "**+**" button or right-clicking anywhere in the **Styles** pane to open the context menu.</span></span>
+<span data-ttu-id="4b21d-108">可以通过单击 **"a："** 按钮来显示伪状态面板。</span><span class="sxs-lookup"><span data-stu-id="4b21d-108">You can display the pseudo states panel by clicking the "**a:**" button.</span></span> <span data-ttu-id="4b21d-109">通过单击""按钮或右键单击"样式"窗格中的任意位置以打开上下文菜单来定义 **+** 新的样式规则。 </span><span class="sxs-lookup"><span data-stu-id="4b21d-109">Define a new style rule by clicking the "**+**" button or right-clicking anywhere in the **Styles** pane to open the context menu.</span></span>
 
 ![样式窗格按钮和上下文菜单](../media/elements_styles_buttons.png)
 
 ## <span data-ttu-id="4b21d-111">编辑伪元素</span><span class="sxs-lookup"><span data-stu-id="4b21d-111">Editing pseudo elements</span></span>
 
-<span data-ttu-id="4b21d-112">使用"样式"窗格添加、编辑和删除伪元素和伪状态。</span><span class="sxs-lookup"><span data-stu-id="4b21d-112">Use the Styles pane to add, edit, and delete pseudo elements and pseudo states.</span></span> <span data-ttu-id="4b21d-113">若要将 CSS 伪状态应用于选定元素，请打开\*\* 伪状态 (**a：** 按钮) 并选中所需的类。</span><span class="sxs-lookup"><span data-stu-id="4b21d-113">To apply a CSS pseudo state to the selected element, open the *Pseudo states panel* (**a:** button) and tick the desired class.</span></span>
+<span data-ttu-id="4b21d-112">使用"样式"窗格添加、编辑和删除伪元素和伪状态。</span><span class="sxs-lookup"><span data-stu-id="4b21d-112">Use the Styles pane to add, edit, and delete pseudo elements and pseudo states.</span></span> <span data-ttu-id="4b21d-113">若要将 CSS 伪状态应用于选定元素，请打开 伪状态 (**a：** 按钮) 并选中所需的类。</span><span class="sxs-lookup"><span data-stu-id="4b21d-113">To apply a CSS pseudo state to the selected element, open the *Pseudo states panel* (**a:** button) and tick the desired class.</span></span>
 
 ![样式窗格中的伪类](../media/elements_styles_pseudo_states.png)
 
-<span data-ttu-id="4b21d-115">若要添加伪元素，请单击"新建 (规则"按钮) 编辑，就像编辑常规 **+** 样式表一样。 \*\*</span><span class="sxs-lookup"><span data-stu-id="4b21d-115">To add a pseudo element, click the **+** (*New style rule*) button and edit as you would a regular stylesheet.</span></span>
+<span data-ttu-id="4b21d-115">若要添加伪元素，请单击"新建 (规则"按钮) 编辑，就像编辑常规 **+** 样式表一样。 </span><span class="sxs-lookup"><span data-stu-id="4b21d-115">To add a pseudo element, click the **+** (*New style rule*) button and edit as you would a regular stylesheet.</span></span>
 
 ![从"样式"窗格添加伪元素](../media/elements_styles_pseudo_element.png)
 

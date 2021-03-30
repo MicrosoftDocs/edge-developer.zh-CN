@@ -20,14 +20,14 @@ ms.locfileid: "11232572"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-<span data-ttu-id="22e08-105">Microsoft Edge 提供了一个阅读视图，使网页的阅读体验更简洁、更像书籍一样，而不会分散页面上无关内容或其他辅助内容的干扰。</span><span class="sxs-lookup"><span data-stu-id="22e08-105">Microsoft Edge provides a reading view for a more streamlined, book-like reading experience of webpages without the distraction of unrelated or other secondary content on the page.</span></span>  <span data-ttu-id="22e08-106">阅读视图可以从阅读视图**\ (** 书籍图标\) 按钮或与中切换 `Ctrl` + `Shift` + `R` 。</span><span class="sxs-lookup"><span data-stu-id="22e08-106">Reading view can be toggled on or off from the **Reading view** \(book icon\) button on the address bar or with `Ctrl`+`Shift`+`R`.</span></span>  <span data-ttu-id="22e08-107">阅读视图从页面中提取以下元数据：</span><span class="sxs-lookup"><span data-stu-id="22e08-107">Reading view extracts the following metadata from a page:</span></span>  
+<span data-ttu-id="22e08-105">Microsoft Edge 提供了一个阅读视图，使网页的阅读体验更简洁、更像书籍一样，而不会分散页面上无关内容或其他辅助内容的干扰。</span><span class="sxs-lookup"><span data-stu-id="22e08-105">Microsoft Edge provides a reading view for a more streamlined, book-like reading experience of webpages without the distraction of unrelated or other secondary content on the page.</span></span>  <span data-ttu-id="22e08-106">阅读视图可以从阅读视图**\(** 书籍图标\) 按钮或与中切换 `Ctrl` + `Shift` + `R` 。</span><span class="sxs-lookup"><span data-stu-id="22e08-106">Reading view can be toggled on or off from the **Reading view** \(book icon\) button on the address bar or with `Ctrl`+`Shift`+`R`.</span></span>  <span data-ttu-id="22e08-107">阅读视图从页面中提取以下元数据：</span><span class="sxs-lookup"><span data-stu-id="22e08-107">Reading view extracts the following metadata from a page:</span></span>  
 
 *   <span data-ttu-id="22e08-108">Title</span><span class="sxs-lookup"><span data-stu-id="22e08-108">Title</span></span>
 *   <span data-ttu-id="22e08-109">作者</span><span class="sxs-lookup"><span data-stu-id="22e08-109">Author</span></span>
 *   <span data-ttu-id="22e08-110">日期</span><span class="sxs-lookup"><span data-stu-id="22e08-110">Date</span></span>
 *   <span data-ttu-id="22e08-111">发布者</span><span class="sxs-lookup"><span data-stu-id="22e08-111">Publisher</span></span>
-*   <span data-ttu-id="22e08-112">基准图像\ (\) </span><span class="sxs-lookup"><span data-stu-id="22e08-112">Dominant image\(s\)</span></span>
-*   <span data-ttu-id="22e08-113">基准图像的标题\ (s\) </span><span class="sxs-lookup"><span data-stu-id="22e08-113">Captions of dominant image\(s\)</span></span>
+*   <span data-ttu-id="22e08-112">基准图像\(\) </span><span class="sxs-lookup"><span data-stu-id="22e08-112">Dominant image\(s\)</span></span>
+*   <span data-ttu-id="22e08-113">基准图像的标题\(s\) </span><span class="sxs-lookup"><span data-stu-id="22e08-113">Captions of dominant image\(s\)</span></span>
 *   <span data-ttu-id="22e08-114">辅助图像</span><span class="sxs-lookup"><span data-stu-id="22e08-114">Secondary images</span></span>
 *   <span data-ttu-id="22e08-115">页面的主文本内容</span><span class="sxs-lookup"><span data-stu-id="22e08-115">Main text content of the page</span></span>
 *   <span data-ttu-id="22e08-116">版权</span><span class="sxs-lookup"><span data-stu-id="22e08-116">Copyright</span></span>
@@ -44,7 +44,7 @@ ms.locfileid: "11232572"
 
 *   <span data-ttu-id="22e08-122">在 `title` 标头中包括元素</span><span class="sxs-lookup"><span data-stu-id="22e08-122">Include a `title` element in your header</span></span>  
 *   <span data-ttu-id="22e08-123">包含元标记</span><span class="sxs-lookup"><span data-stu-id="22e08-123">Include a meta tag with</span></span> `name="title"`  
-*   <span data-ttu-id="22e08-124">将文章正文中的标题文本与元标记的内容字符串相匹配。</span><span class="sxs-lookup"><span data-stu-id="22e08-124">Match the title text in your article body with the content string of your meta tag.</span></span>  <span data-ttu-id="22e08-125">管道 \ (\) 防止读者视图变为活动状态，请尝试改为使用连字符 `|` \ (`-` \) 。</span><span class="sxs-lookup"><span data-stu-id="22e08-125">Pipes \(`|`\) in your content string prevent the reader view from becoming active, try using hyphens \(`-`\) instead.</span></span>  
+*   <span data-ttu-id="22e08-124">将文章正文中的标题文本与元标记的内容字符串相匹配。</span><span class="sxs-lookup"><span data-stu-id="22e08-124">Match the title text in your article body with the content string of your meta tag.</span></span>  <span data-ttu-id="22e08-125">管道 \(\) 防止读者视图变为活动状态，请尝试改为使用连字符 `|` \(`-` \) 。</span><span class="sxs-lookup"><span data-stu-id="22e08-125">Pipes \(`|`\) in your content string prevent the reader view from becoming active, try using hyphens \(`-`\) instead.</span></span>  
 
 ### <span data-ttu-id="22e08-126">作者</span><span class="sxs-lookup"><span data-stu-id="22e08-126">Author</span></span>  
 
@@ -92,7 +92,7 @@ ms.locfileid: "11232572"
 
 ### <span data-ttu-id="22e08-150">版权</span><span class="sxs-lookup"><span data-stu-id="22e08-150">Copyright</span></span>  
 
-<span data-ttu-id="22e08-151">阅读视图提取并显示由元标记表示的版权信息，如果不存在元标记信息，则显示包含版权 `name = "copyright"` \ (`©` \) 符号的文本节点。</span><span class="sxs-lookup"><span data-stu-id="22e08-151">Reading view extracts and displays copyright information denoted by meta tags with `name = "copyright"`, or if no meta tag information exists, a text node that contains the copyright \(`©`\) symbol.</span></span>  <span data-ttu-id="22e08-152">阅读视图在文章正文的末尾显示版权信息，其样式使用比正文文本更小的字体大小。</span><span class="sxs-lookup"><span data-stu-id="22e08-152">Reading view displays copyright information at the end of the article main body, styled using a smaller font size than the main body text.</span></span>  
+<span data-ttu-id="22e08-151">阅读视图提取并显示由元标记表示的版权信息，如果不存在元标记信息，则显示包含版权 `name = "copyright"` \(`©` \) 符号的文本节点。</span><span class="sxs-lookup"><span data-stu-id="22e08-151">Reading view extracts and displays copyright information denoted by meta tags with `name = "copyright"`, or if no meta tag information exists, a text node that contains the copyright \(`©`\) symbol.</span></span>  <span data-ttu-id="22e08-152">阅读视图在文章正文的末尾显示版权信息，其样式使用比正文文本更小的字体大小。</span><span class="sxs-lookup"><span data-stu-id="22e08-152">Reading view displays copyright information at the end of the article main body, styled using a smaller font size than the main body text.</span></span>  
 
 ```html
 <meta name="copyright" content="Your copyright information">
@@ -106,4 +106,4 @@ ms.locfileid: "11232572"
 <meta name="IE_RM_OFF" content="true">
 ```  
 
-<span data-ttu-id="22e08-155">通过此标记，当用户\*\*\*\* 查看页面时，"阅读视图"按钮不会显示在地址栏中。</span><span class="sxs-lookup"><span data-stu-id="22e08-155">With this tag, the **Reading view** button will not appear in the address bar when your users view your page.</span></span>  
+<span data-ttu-id="22e08-155">通过此标记，当用户 查看页面时，"阅读视图"按钮不会显示在地址栏中。</span><span class="sxs-lookup"><span data-stu-id="22e08-155">With this tag, the **Reading view** button will not appear in the address bar when your users view your page.</span></span>  

@@ -53,7 +53,7 @@ ms.locfileid: "11408309"
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="b9e7a-121">中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="b9e7a-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
+      <span data-ttu-id="b9e7a-121">中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="b9e7a-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
    :::column-end:::
    :::column span="":::
       <span data-ttu-id="b9e7a-122">繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="b9e7a-122">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>
@@ -124,13 +124,13 @@ ms.locfileid: "11408309"
 
 ### <a name="3d-view"></a><span data-ttu-id="b9e7a-148">3D 视图</span><span class="sxs-lookup"><span data-stu-id="b9e7a-148">3D View</span></span>  
 
-<span data-ttu-id="b9e7a-149">使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
+<span data-ttu-id="b9e7a-149">使用 **3D 视图** 通过浏览文档对象模型 [\(DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
 
 :::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2019/12/3dview.msft.png":::
    <span data-ttu-id="b9e7a-151">DevTools 中的 **3D** 视图</span><span class="sxs-lookup"><span data-stu-id="b9e7a-151">The **3D View** in the DevTools</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b9e7a-152">若要访问 3D 视图，请导航到 `edge://flags` 并确保开发人员 **工具实验** 标记设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-152">To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.</span></span>  <span data-ttu-id="b9e7a-153">重新启动 Microsoft Edge 并打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-153">Restart Microsoft Edge and open the DevTools.</span></span>  <span data-ttu-id="b9e7a-154">在 `F1` "DevTools"中选择或打开\*\*\*\*"设置实验"部分，然后打开  >  \*\*\*\*"**启用 3D 视图"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-154">Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.</span></span>  <span data-ttu-id="b9e7a-155">现在，选择 `Ctrl`  +  `Shift`  +  `P` ，在**3D 视图中键入 ，** 然后选择**显示 3D 视图**。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-155">Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.</span></span>  
+<span data-ttu-id="b9e7a-152">若要访问 3D 视图，请导航到 `edge://flags` 并确保开发人员 **工具实验** 标记设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-152">To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.</span></span>  <span data-ttu-id="b9e7a-153">重新启动 Microsoft Edge 并打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-153">Restart Microsoft Edge and open the DevTools.</span></span>  <span data-ttu-id="b9e7a-154">在 `F1` "DevTools"中选择或打开"设置实验"部分，然后打开  >  "**启用 3D 视图"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-154">Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.</span></span>  <span data-ttu-id="b9e7a-155">现在，选择 `Ctrl`  +  `Shift`  +  `P` ，在**3D 视图中键入 ，** 然后选择**显示 3D 视图**。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-155">Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.</span></span>  
 
 <span data-ttu-id="b9e7a-156">We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).</span><span class="sxs-lookup"><span data-stu-id="b9e7a-156">We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).</span></span>  
 
@@ -182,7 +182,7 @@ ms.locfileid: "11408309"
 
 ### <a name="tracking-prevention-console-messages"></a><span data-ttu-id="b9e7a-183">跟踪防护控制台消息</span><span class="sxs-lookup"><span data-stu-id="b9e7a-183">Tracking prevention Console messages</span></span>  
 
-<span data-ttu-id="b9e7a-184">跟踪防护是 Microsoft Edge 中一项独特的功能，可阻止你在访问网站之前被网站跟踪。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-184">Tracking prevention is a unique feature in Microsoft Edge that blocks you from being tracked by a website before you visited it.</span></span>  <span data-ttu-id="b9e7a-185">默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-185">The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.</span></span>  <span data-ttu-id="b9e7a-186">为了让你深入了解阻止某些跟踪程序时网页的兼容性，Microsoft Edge 团队在控制台中添加了跟踪程序被阻止时警告消息。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="b9e7a-186">To give you more insight into the compatibility of your web page when certain trackers are blocked, The Microsoft Edge team added warning messages in the **Console** when a tracker is blocked.</span></span>  
+<span data-ttu-id="b9e7a-184">跟踪防护是 Microsoft Edge 中一项独特的功能，可阻止你在访问网站之前被网站跟踪。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-184">Tracking prevention is a unique feature in Microsoft Edge that blocks you from being tracked by a website before you visited it.</span></span>  <span data-ttu-id="b9e7a-185">默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-185">The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.</span></span>  <span data-ttu-id="b9e7a-186">为了让你深入了解阻止某些跟踪程序时网页的兼容性，Microsoft Edge 团队在控制台中添加了跟踪程序被阻止时警告消息。 </span><span class="sxs-lookup"><span data-stu-id="b9e7a-186">To give you more insight into the compatibility of your web page when certain trackers are blocked, The Microsoft Edge team added warning messages in the **Console** when a tracker is blocked.</span></span>  
 
 :::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="跟踪防护时控制台中的邮件阻止对跟踪器存储的访问" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
    <span data-ttu-id="b9e7a-188">跟踪防护 **时控制台** 中的邮件阻止对跟踪器存储的访问</span><span class="sxs-lookup"><span data-stu-id="b9e7a-188">Messages in the **Console** when tracking prevention blocks access to storage for a tracker</span></span>  
@@ -204,13 +204,13 @@ ms.locfileid: "11408309"
 <span data-ttu-id="b9e7a-196">例如，以前，当使用 重新声明本地变量时， `let` 控制台会出错：</span><span class="sxs-lookup"><span data-stu-id="b9e7a-196">For example, previously, when re-declaring a local variable with `let`, the Console threw an error:</span></span>  
 
 :::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="Microsoft Edge 79 中的控制台显示允许重新声明失败" lightbox="../../images/2019/12/letbefore.msft.png":::
-   <span data-ttu-id="b9e7a-198">Microsoft \*\*\*\* Edge 79 中的控制台显示允许重新声明失败</span><span class="sxs-lookup"><span data-stu-id="b9e7a-198">The **Console** in Microsoft Edge 79 showing that the let re-declaration fails</span></span>  
+   <span data-ttu-id="b9e7a-198">Microsoft  Edge 79 中的控制台显示允许重新声明失败</span><span class="sxs-lookup"><span data-stu-id="b9e7a-198">The **Console** in Microsoft Edge 79 showing that the let re-declaration fails</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="b9e7a-199">现在，控制台允许重新声明：</span><span class="sxs-lookup"><span data-stu-id="b9e7a-199">Now, the Console allows the redeclaration:</span></span>  
 
 :::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="Microsoft Edge 80 中的控制台显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
-   <span data-ttu-id="b9e7a-201">Microsoft \*\*\*\* Edge 80 中的控制台显示允许重新声明成功</span><span class="sxs-lookup"><span data-stu-id="b9e7a-201">The **Console** in Microsoft Edge 80 showing that the let re-declaration succeeds</span></span>  
+   <span data-ttu-id="b9e7a-201">Microsoft  Edge 80 中的控制台显示允许重新声明成功</span><span class="sxs-lookup"><span data-stu-id="b9e7a-201">The **Console** in Microsoft Edge 80 showing that the let re-declaration succeeds</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="b9e7a-202">Chromium [问题#1004193][CR1004193]</span><span class="sxs-lookup"><span data-stu-id="b9e7a-202">Chromium issue [#1004193][CR1004193]</span></span>  
@@ -233,7 +233,7 @@ ms.locfileid: "11408309"
 
 #### <a name="request-initiator-chains-in-the-initiator-panel"></a><span data-ttu-id="b9e7a-206">发起者面板中的请求发起人链</span><span class="sxs-lookup"><span data-stu-id="b9e7a-206">Request Initiator Chains in the Initiator panel</span></span>  
 
-<span data-ttu-id="b9e7a-207">现在，你可以将网络请求的发起方和依赖项作为嵌套列表进行查看。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-207">You are now able to view the initiators and dependencies of a network request as a nested list.</span></span>  <span data-ttu-id="b9e7a-208">这可以帮助您了解请求资源的原因，或特定资源 \ (（如 script\) 导致的网络活动。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-208">This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.</span></span>  
+<span data-ttu-id="b9e7a-207">现在，你可以将网络请求的发起方和依赖项作为嵌套列表进行查看。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-207">You are now able to view the initiators and dependencies of a network request as a nested list.</span></span>  <span data-ttu-id="b9e7a-208">这可以帮助您了解请求资源的原因，或特定资源 \(（如 script\) 导致的网络活动。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-208">This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.</span></span>  
 
 :::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="发起者面板中的请求发起人链" lightbox="../../images/2019/12/initiators.msft.png":::
    <span data-ttu-id="b9e7a-210">发起者面板中的请求 **发起人** 链</span><span class="sxs-lookup"><span data-stu-id="b9e7a-210">A Request Initiator Chain in the **Initiator** panel</span></span>  
@@ -268,7 +268,7 @@ ms.locfileid: "11408309"
    <span data-ttu-id="b9e7a-232">网络工具中的新 **路径和** URL 列</span><span class="sxs-lookup"><span data-stu-id="b9e7a-232">The new Path and URL columns in the **Network** tool</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b9e7a-233">若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \ (righ-click\) ，然后选择**路径**或**URL。**</span><span class="sxs-lookup"><span data-stu-id="b9e7a-233">To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.</span></span>  
+<span data-ttu-id="b9e7a-233">若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \(righ-click\) ，然后选择**路径**或**URL。**</span><span class="sxs-lookup"><span data-stu-id="b9e7a-233">To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.</span></span>  
 
 <span data-ttu-id="b9e7a-234">Chromium [问题#993366][CR993366]</span><span class="sxs-lookup"><span data-stu-id="b9e7a-234">Chromium issue [#993366][CR993366]</span></span>  
 
@@ -306,7 +306,7 @@ ms.locfileid: "11408309"
 <span data-ttu-id="b9e7a-252">覆盖 [工具][DevToolsCoverageIndex] 具有新的下拉菜单，允许你指定是按函数还是 **按块收集** 代码 **覆盖数据**。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-252">The [Coverage][DevToolsCoverageIndex] tool has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.</span></span>  <span data-ttu-id="b9e7a-253">**每个块** 覆盖更加详细，但收集成本也更高。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-253">**Per block** coverage is more detailed but also far more expensive to collect.</span></span>  <span data-ttu-id="b9e7a-254">默认情况下，DevTools **现在按** 功能范围使用。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-254">DevTools uses **per function** coverage by default now.</span></span>  
 
 > [!CAUTION]
-> <span data-ttu-id="b9e7a-255">你可能会注意到 HTML 文件的代码覆盖差异很大，具体取决于是按函数\*\*\*\* 还是**按块模式**使用。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-255">You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.</span></span>  <span data-ttu-id="b9e7a-256">在按 **函数模式使用** 时，HTML 文件中内联脚本被视为函数。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-256">When using **per function** mode, inline scripts in HTML files are treated as functions.</span></span>  <span data-ttu-id="b9e7a-257">如果脚本完全运行，则 DevTools 将整个脚本标记为已用代码。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-257">If the script runs at all then DevTools marks the entire script as used code.</span></span>  <span data-ttu-id="b9e7a-258">只有当脚本完全不运行时，DevTools 才将脚本标记为未使用的代码。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-258">Only if the script does not run at all does DevTools mark the script as unused code.</span></span>  
+> <span data-ttu-id="b9e7a-255">你可能会注意到 HTML 文件的代码覆盖差异很大，具体取决于是按函数 还是**按块模式**使用。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-255">You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.</span></span>  <span data-ttu-id="b9e7a-256">在按 **函数模式使用** 时，HTML 文件中内联脚本被视为函数。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-256">When using **per function** mode, inline scripts in HTML files are treated as functions.</span></span>  <span data-ttu-id="b9e7a-257">如果脚本完全运行，则 DevTools 将整个脚本标记为已用代码。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-257">If the script runs at all then DevTools marks the entire script as used code.</span></span>  <span data-ttu-id="b9e7a-258">只有当脚本完全不运行时，DevTools 才将脚本标记为未使用的代码。</span><span class="sxs-lookup"><span data-stu-id="b9e7a-258">Only if the script does not run at all does DevTools mark the script as unused code.</span></span>  
 
 :::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="覆盖模式下拉菜单" lightbox="../../images/2019/12/modes.msft.png":::
    <span data-ttu-id="b9e7a-260">覆盖模式下拉菜单</span><span class="sxs-lookup"><span data-stu-id="b9e7a-260">The coverage mode dropdown menu</span></span>  
@@ -369,7 +369,7 @@ ms.locfileid: "11408309"
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter 帐户"
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio 代码"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Microsoft Edge 调试程序 - Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge 的元素 \ (Chromium\) - Visual Studio Marketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge 的元素 \(Chromium\) - Visual Studio Marketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 [Webhint]: https://aka.ms/webhint "webhint"  
 [WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint 浏览器扩展|webhint 文档"  

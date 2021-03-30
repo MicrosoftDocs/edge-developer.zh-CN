@@ -36,8 +36,8 @@ ms.locfileid: "11398264"
 
 <span data-ttu-id="7ad11-107">通过以下每个任务，您可以检查 DOM 节点的样式或属性。</span><span class="sxs-lookup"><span data-stu-id="7ad11-107">Each of the following tasks enable you to inspect the styles or attributes of a DOM node.</span></span>
 
-*   <span data-ttu-id="7ad11-108">将鼠标悬停在元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="7ad11-108">Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
-*   <span data-ttu-id="7ad11-109">选择 `Control` + `Shift` + `C` \ (Windows、Linux\) `Command` + `Option` + `C` 或 \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-109">Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\).</span></span>  <span data-ttu-id="7ad11-110">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-110">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
+*   <span data-ttu-id="7ad11-108">将鼠标悬停在元素上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="7ad11-108">Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+*   <span data-ttu-id="7ad11-109">选择 `Control` + `Shift` + `C` \(Windows、Linux\) `Command` + `Option` + `C` 或 \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-109">Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\).</span></span>  <span data-ttu-id="7ad11-110">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-110">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
 :::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="检查选项" lightbox="../media/bing-right-click-inspect.msft.png":::
    <span data-ttu-id="7ad11-112">" **检查"** 选项</span><span class="sxs-lookup"><span data-stu-id="7ad11-112">The **Inspect** option</span></span>  
@@ -54,13 +54,13 @@ ms.locfileid: "11398264"
     1.  <span data-ttu-id="7ad11-116">[打开 DevTools](#open-microsoft-edge-devtools)。</span><span class="sxs-lookup"><span data-stu-id="7ad11-116">[Open DevTools](#open-microsoft-edge-devtools).</span></span>  
     1.  <span data-ttu-id="7ad11-117">选择 [控制台][DevtoolsConsoleIndex] 窗格。</span><span class="sxs-lookup"><span data-stu-id="7ad11-117">Choose the [Console][DevtoolsConsoleIndex] pane.</span></span>  
 
-*   <span data-ttu-id="7ad11-118">若要直接跳转到控制台[窗格中][DevtoolsConsoleIndex]，请选择"windows (`Control` + `Shift` + `J` Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-118">To jump straight into the [Console][DevtoolsConsoleIndex] pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="7ad11-119">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-119">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
+*   <span data-ttu-id="7ad11-118">若要直接跳转到控制台[窗格中][DevtoolsConsoleIndex]，请选择"windows (`Control` + `Shift` + `J` Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-118">To jump straight into the [Console][DevtoolsConsoleIndex] pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="7ad11-119">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-119">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
 ## <a name="open-the-previous-panel"></a><span data-ttu-id="7ad11-120">打开上一个面板</span><span class="sxs-lookup"><span data-stu-id="7ad11-120">Open the previous panel</span></span>  
 
-<span data-ttu-id="7ad11-121">若要跳转到已打开的上一个面板，请选择 `Control` + `Shift` + `I` "Windows (、Linux\) 或 `Command` + `Option` + `I` \ (macOS\) "。</span><span class="sxs-lookup"><span data-stu-id="7ad11-121">To jump to the previous panel that you had open, select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  <span data-ttu-id="7ad11-122">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-122">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
+<span data-ttu-id="7ad11-121">若要跳转到已打开的上一个面板，请选择 `Control` + `Shift` + `I` "Windows (、Linux\) 或 `Command` + `Option` + `I` \(macOS\) "。</span><span class="sxs-lookup"><span data-stu-id="7ad11-121">To jump to the previous panel that you had open, select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  <span data-ttu-id="7ad11-122">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-122">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
 ## <a name="open-microsoft-edge-devtools"></a><span data-ttu-id="7ad11-123">打开 Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="7ad11-123">Open Microsoft Edge DevTools</span></span>  
 
@@ -68,10 +68,10 @@ ms.locfileid: "11398264"
 
 *   <span data-ttu-id="7ad11-125">使用 Microsoft Edge UI。</span><span class="sxs-lookup"><span data-stu-id="7ad11-125">Use the Microsoft Edge UI.</span></span>  
     
-    1.  <span data-ttu-id="7ad11-126">选择**设置和更多 \ (** `...` \) 图标>**更多工具**  >   **开发人员工具**。</span><span class="sxs-lookup"><span data-stu-id="7ad11-126">Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.</span></span>  
+    1.  <span data-ttu-id="7ad11-126">选择**设置和更多 \(** `...` \) 图标>**更多工具**  >   **开发人员工具**。</span><span class="sxs-lookup"><span data-stu-id="7ad11-126">Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.</span></span>  
     
 *   <span data-ttu-id="7ad11-127">使用键盘。</span><span class="sxs-lookup"><span data-stu-id="7ad11-127">Use the keyboard.</span></span>  
-    *   <span data-ttu-id="7ad11-128">选择 `F12` 或 `Control` + `Shift` + `I` \ (Windows、Linux\) `Command` + `Option` + `I` 或 \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-128">Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  
+    *   <span data-ttu-id="7ad11-128">选择 `F12` 或 `Control` + `Shift` + `I` \(Windows、Linux\) `Command` + `Option` + `I` 或 \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-128">Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  
 
 <span data-ttu-id="7ad11-129">有关详细信息，请导航到 [Microsoft Edge DevTools 键盘快捷方式][DevtoolsShortcutsIndex]。</span><span class="sxs-lookup"><span data-stu-id="7ad11-129">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
@@ -121,14 +121,14 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 <span data-ttu-id="7ad11-139">若要更改 `F12` 打开 DevTools 的键盘快捷方式设置，请完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="7ad11-139">To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="7ad11-140">Choose the icon the **Settings and more** \ (`...` \) icon > **Settings**.</span><span class="sxs-lookup"><span data-stu-id="7ad11-140">Choose the icon the **Settings and more** \(`...`\) icon > **Settings**.</span></span>  
+1.  <span data-ttu-id="7ad11-140">Choose the icon the **Settings and more** \(`...` \) icon > **Settings**.</span><span class="sxs-lookup"><span data-stu-id="7ad11-140">Choose the icon the **Settings and more** \(`...`\) icon > **Settings**.</span></span>  
 1.  <span data-ttu-id="7ad11-141">在 **搜索设置中**，输入 `Developer Tools` 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-141">In **Search settings**, enter `Developer Tools`.</span></span>  
     
     :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="按 F12 键时打开 DevTools 设置" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
        <span data-ttu-id="7ad11-143">按 **F12 键时打开 DevTools** 设置</span><span class="sxs-lookup"><span data-stu-id="7ad11-143">The **Open the DevTools when the F12 key is pressed** setting</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7ad11-144">选择 **"按 F12** 键时打开 DevTools"，将设置切换为关闭 \ (或打开\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-144">Choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off \(or on\).</span></span>  <span data-ttu-id="7ad11-145">将设置切换为关闭以阻止 `F12` 键盘快捷方式打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="7ad11-145">Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.</span></span>  
+1.  <span data-ttu-id="7ad11-144">选择 **"按 F12** 键时打开 DevTools"，将设置切换为关闭 \(或打开\) 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-144">Choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off \(or on\).</span></span>  <span data-ttu-id="7ad11-145">将设置切换为关闭以阻止 `F12` 键盘快捷方式打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="7ad11-145">Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.</span></span>  
     
     :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="按下 F12 键时打开 DevTools 设置已关闭" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
        <span data-ttu-id="7ad11-147">按下 **F12 键时打开 DevTools** 设置已关闭</span><span class="sxs-lookup"><span data-stu-id="7ad11-147">The **Open the DevTools when the F12 key is pressed** setting is turned off</span></span>  
@@ -140,7 +140,7 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
     > <span data-ttu-id="7ad11-149">在按下 F12 键时关闭"打开 **DevTools"** 设置后，若要打开 DevTools，请完成以下操作之一。</span><span class="sxs-lookup"><span data-stu-id="7ad11-149">After you turn off the **Open the DevTools when the F12 key is pressed** setting, to open the DevTools, complete one of the following actions.</span></span>  
     > 
     > *   <span data-ttu-id="7ad11-150">选择 `Ctrl` + `Shift` + `I` 。</span><span class="sxs-lookup"><span data-stu-id="7ad11-150">Select `Ctrl`+`Shift`+`I`.</span></span>  
-    > *   <span data-ttu-id="7ad11-151">打开上下文菜单 \ (右键单击\) > **检查**。</span><span class="sxs-lookup"><span data-stu-id="7ad11-151">Open the contextual menu \(right-click\) > **Inspect**.</span></span>  
+    > *   <span data-ttu-id="7ad11-151">打开上下文菜单 \(右键单击\) > **检查**。</span><span class="sxs-lookup"><span data-stu-id="7ad11-151">Open the contextual menu \(right-click\) > **Inspect**.</span></span>  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="7ad11-152">联系 Microsoft Edge 开发工具团队</span><span class="sxs-lookup"><span data-stu-id="7ad11-152">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 

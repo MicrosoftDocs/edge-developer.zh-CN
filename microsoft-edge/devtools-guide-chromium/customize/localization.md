@@ -16,14 +16,14 @@ ms.locfileid: "11398986"
 ---
 # <a name="change-devtools-language-settings"></a><span data-ttu-id="6336e-104">更改 DevTools 语言设置</span><span class="sxs-lookup"><span data-stu-id="6336e-104">Change DevTools language settings</span></span>  
 
-<span data-ttu-id="6336e-105">默认情况下，如果开发人员工具是除英语\ (之外当前支持的十种语言之一，则其与浏览器语言) 。</span><span class="sxs-lookup"><span data-stu-id="6336e-105">Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported \(in addition to English\).</span></span>  
+<span data-ttu-id="6336e-105">默认情况下，如果开发人员工具是除英语\(之外当前支持的十种语言之一，则其与浏览器语言) 。</span><span class="sxs-lookup"><span data-stu-id="6336e-105">Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported \(in addition to English\).</span></span>  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="6336e-106">中文 \ (简体\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="6336e-106">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>  
+      <span data-ttu-id="6336e-106">中文 \(简体\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="6336e-106">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>  
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="6336e-107">中文 \ (繁体\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="6336e-107">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>  
+      <span data-ttu-id="6336e-107">中文 \(繁体\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="6336e-107">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,7 +63,7 @@ ms.locfileid: "11398986"
    <span data-ttu-id="6336e-117">日语版 DevTools</span><span class="sxs-lookup"><span data-stu-id="6336e-117">DevTools in Japanese</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="6336e-118">如果要将 DevTools 还原为英语，请导航到["DevTools][DevtoolsCustomizeIndexSettings]设置"或选择"首选项"，然后关闭 `F1` \*\*\*\*\*\*"匹配浏览器语言\*\*"复选框。</span><span class="sxs-lookup"><span data-stu-id="6336e-118">If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.</span></span>  
+<span data-ttu-id="6336e-118">如果要将 DevTools 还原为英语，请导航到["DevTools][DevtoolsCustomizeIndexSettings]设置"或选择"首选项"，然后关闭 `F1` "匹配浏览器语言"复选框。</span><span class="sxs-lookup"><span data-stu-id="6336e-118">If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.</span></span>  
 
 <!-- links -->  
 

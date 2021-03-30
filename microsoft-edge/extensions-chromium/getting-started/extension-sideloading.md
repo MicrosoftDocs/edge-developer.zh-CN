@@ -16,7 +16,7 @@ ms.locfileid: "11104769"
 ---
 # <span data-ttu-id="398b6-104">旁加载扩展</span><span class="sxs-lookup"><span data-stu-id="398b6-104">Sideload an extension</span></span>
 
-<span data-ttu-id="398b6-105">在开发期间，你可以使用 Microsoft Edge \ (Chromium \ ) 浏览器来安全地运行和调试扩展。</span><span class="sxs-lookup"><span data-stu-id="398b6-105">During development, you may use the Microsoft Edge \(Chromium\) browser to run and debug your extension safely.</span></span> <span data-ttu-id="398b6-106">通过在浏览器中本地加载您的扩展，可以运行和测试您的扩展。</span><span class="sxs-lookup"><span data-stu-id="398b6-106">By sideloading your extension locally in your browser, you can run and test your extension.</span></span> <span data-ttu-id="398b6-107">本文介绍如何将扩展旁加载到 Microsoft Edge 中。</span><span class="sxs-lookup"><span data-stu-id="398b6-107">This article explains how to sideload extensions into Microsoft Edge.</span></span>
+<span data-ttu-id="398b6-105">在开发期间，你可以使用 Microsoft Edge \(Chromium \ ) 浏览器来安全地运行和调试扩展。</span><span class="sxs-lookup"><span data-stu-id="398b6-105">During development, you may use the Microsoft Edge \(Chromium\) browser to run and debug your extension safely.</span></span> <span data-ttu-id="398b6-106">通过在浏览器中本地加载您的扩展，可以运行和测试您的扩展。</span><span class="sxs-lookup"><span data-stu-id="398b6-106">By sideloading your extension locally in your browser, you can run and test your extension.</span></span> <span data-ttu-id="398b6-107">本文介绍如何将扩展旁加载到 Microsoft Edge 中。</span><span class="sxs-lookup"><span data-stu-id="398b6-107">This article explains how to sideload extensions into Microsoft Edge.</span></span>
 
 <span data-ttu-id="398b6-108">若要旁加载您的分机号，请按照下列步骤操作。</span><span class="sxs-lookup"><span data-stu-id="398b6-108">To sideload your extension, follow these steps.</span></span>
 

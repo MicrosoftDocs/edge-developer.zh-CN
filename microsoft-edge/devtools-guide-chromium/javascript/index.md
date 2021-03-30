@@ -39,8 +39,8 @@ ms.locfileid: "11439463"
     
     [<span data-ttu-id="afbcb-110">打开演示</span><span class="sxs-lookup"><span data-stu-id="afbcb-110">Open Demo</span></span>][OpenDebugJSDemo]  
     
-1.  <span data-ttu-id="afbcb-111">在“\*\*数字 1 \*\*”文本框中输入 `5`。</span><span class="sxs-lookup"><span data-stu-id="afbcb-111">Enter `5` in the **Number 1** text box.</span></span>  
-1.  <span data-ttu-id="afbcb-112">在“\*\*数字 2 \*\*”文本框中输入 `1`。</span><span class="sxs-lookup"><span data-stu-id="afbcb-112">Enter `1` in the **Number 2** text box.</span></span>  
+1.  <span data-ttu-id="afbcb-111">在“数字 1 ”文本框中输入 `5`。</span><span class="sxs-lookup"><span data-stu-id="afbcb-111">Enter `5` in the **Number 1** text box.</span></span>  
+1.  <span data-ttu-id="afbcb-112">在“数字 2 ”文本框中输入 `1`。</span><span class="sxs-lookup"><span data-stu-id="afbcb-112">Enter `1` in the **Number 2** text box.</span></span>  
 1.  <span data-ttu-id="afbcb-113">选择“**添加数字 1 和数字 2**”。</span><span class="sxs-lookup"><span data-stu-id="afbcb-113">Choose **Add Number 1 and Number 2**.</span></span>  <span data-ttu-id="afbcb-114">按钮下方的标签显示 `5 + 1 = 51`。</span><span class="sxs-lookup"><span data-stu-id="afbcb-114">The label below the button says `5 + 1 = 51`.</span></span>  <span data-ttu-id="afbcb-115">结果应为 `6`。</span><span class="sxs-lookup"><span data-stu-id="afbcb-115">The result should be `6`.</span></span>  <span data-ttu-id="afbcb-116">接下来，修复作为 bug 的加法错误。</span><span class="sxs-lookup"><span data-stu-id="afbcb-116">Next, fix the addition error that is the bug.</span></span>  
     
     :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="5 + 1 的结果为 51，但应为 6" lightbox="../media/javascript-js-demo-bad.msft.png":::
@@ -134,7 +134,7 @@ function updateLabel() {
     > [!NOTE]
     > <span data-ttu-id="afbcb-179">开发工具跳过几行代码。</span><span class="sxs-lookup"><span data-stu-id="afbcb-179">DevTools skips a few lines of code.</span></span>  <span data-ttu-id="afbcb-180">这是因为 `inputsAreEmpty()` 的计算结果为 false，因此 `if` 语句的代码块不会运行。</span><span class="sxs-lookup"><span data-stu-id="afbcb-180">This is because `inputsAreEmpty()` evaluates as false, so the block of code for the `if` statement does not run.</span></span>  
     
-1.  <span data-ttu-id="afbcb-181">在开发工具的“\*\* 源**”工具上，选择”**单步执行下一函数调用\*\*” \(![单步执行下一函数调用](../media/step-into-icon.msft.png)\) 以逐步运行 `updateLabel()` 函数，一次一行。</span><span class="sxs-lookup"><span data-stu-id="afbcb-181">On the **Sources** tool of DevTools, choose **Step into next function call** \(![Step into next function call](../media/step-into-icon.msft.png)\) to step through the runtime of the `updateLabel()` function, one line at a time.</span></span>  
+1.  <span data-ttu-id="afbcb-181">在开发工具的“ 源**”工具上，选择”**单步执行下一函数调用” \(![单步执行下一函数调用](../media/step-into-icon.msft.png)\) 以逐步运行 `updateLabel()` 函数，一次一行。</span><span class="sxs-lookup"><span data-stu-id="afbcb-181">On the **Sources** tool of DevTools, choose **Step into next function call** \(![Step into next function call](../media/step-into-icon.msft.png)\) to step through the runtime of the `updateLabel()` function, one line at a time.</span></span>  
     
 <span data-ttu-id="afbcb-182">一次查看一行是单步执行代码的基本概念。</span><span class="sxs-lookup"><span data-stu-id="afbcb-182">Reviewing one line at a time is the basic idea of stepping through code.</span></span>  <span data-ttu-id="afbcb-183">如果查看 `get-started.js` 中的代码，则该错误可能在 `updateLabel()` 函数中。</span><span class="sxs-lookup"><span data-stu-id="afbcb-183">If you review the code in `get-started.js`, the bug is probably somewhere in the `updateLabel()` function.</span></span>  <span data-ttu-id="afbcb-184">可以使用另一种类型的断点来将代码暂停在错误的可能位置附近，而不是单步执行代码的每一行。</span><span class="sxs-lookup"><span data-stu-id="afbcb-184">Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.</span></span>  
 

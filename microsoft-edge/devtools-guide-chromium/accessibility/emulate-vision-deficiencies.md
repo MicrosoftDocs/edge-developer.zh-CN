@@ -16,7 +16,7 @@ ms.locfileid: "11397872"
 ---
 # <a name="emulate-vision-deficiencies"></a><span data-ttu-id="517de-104">模仿视觉缺陷</span><span class="sxs-lookup"><span data-stu-id="517de-104">Emulate vision deficiencies</span></span>
 
-<span data-ttu-id="517de-105">为了更好地满足色 [盲用户][ColorblindawarenessMain] \ (色盲\) 的需求 [，Microsoft Edge DevTools][DevtoolsIndex] 允许你模拟特定的颜色视觉缺陷。</span><span class="sxs-lookup"><span data-stu-id="517de-105">To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate specific color vision deficiencies.</span></span>  <span data-ttu-id="517de-106">模拟 **视觉缺陷** 工具模拟以下类别。</span><span class="sxs-lookup"><span data-stu-id="517de-106">The **Emulate vision deficiencies** tool simulates the following categories.</span></span>  
+<span data-ttu-id="517de-105">为了更好地满足色 [盲用户][ColorblindawarenessMain] \(色盲\) 的需求 [，Microsoft Edge DevTools][DevtoolsIndex] 允许你模拟特定的颜色视觉缺陷。</span><span class="sxs-lookup"><span data-stu-id="517de-105">To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate specific color vision deficiencies.</span></span>  <span data-ttu-id="517de-106">模拟 **视觉缺陷** 工具模拟以下类别。</span><span class="sxs-lookup"><span data-stu-id="517de-106">The **Emulate vision deficiencies** tool simulates the following categories.</span></span>  
 
 | <span data-ttu-id="517de-107">颜色视力缺陷</span><span class="sxs-lookup"><span data-stu-id="517de-107">Color vision deficiency</span></span> | <span data-ttu-id="517de-108">详细信息</span><span class="sxs-lookup"><span data-stu-id="517de-108">Details</span></span> |  
 |:--- |:--- |  
@@ -70,7 +70,7 @@ ms.locfileid: "11397872"
 
 <span data-ttu-id="517de-139">您还可以使用 **命令菜单** 访问不同的模拟。</span><span class="sxs-lookup"><span data-stu-id="517de-139">You may also use **Command Menu** to access the different simulations.</span></span>  
 
-1.  <span data-ttu-id="517de-140">选择 `Control` + `Shift` + `P` \ (Windows/Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开**命令菜单**。</span><span class="sxs-lookup"><span data-stu-id="517de-140">Select `Control`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="517de-140">选择 `Control` + `Shift` + `P` \(Windows/Linux\) 或 `Command` + `Shift` + `P` \(macOS\) 打开**命令菜单**。</span><span class="sxs-lookup"><span data-stu-id="517de-140">Select `Control`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        <span data-ttu-id="517de-142">**命令菜单**</span><span class="sxs-lookup"><span data-stu-id="517de-142">The **Command Menu**</span></span>  
