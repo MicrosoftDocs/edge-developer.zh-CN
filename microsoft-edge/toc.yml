@@ -383,7 +383,9 @@
               href: webview2/gettingstarted/winui.md
         - name: 概念
           items:
-            - name: 分发我的应用
+            - name: Microsoft Edge 与 WebView2 之间的区别
+              href: webview2/concepts/browserfeatures.md
+            - name: 发布我的应用
               href: webview2/concepts/distribution.md
             - name: 管理用户数据文件夹
               href: webview2/concepts/userdatafolder.md
