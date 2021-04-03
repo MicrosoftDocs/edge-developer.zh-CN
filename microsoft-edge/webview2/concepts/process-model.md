@@ -1,46 +1,86 @@
 ---
-description: 流程模型
-title: 流程模型
+description: 进程模型
+title: 过程模型|WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 02/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、web 视图、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 8548308896815266fbd1e150da979b56cfb268e2
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
+ms.openlocfilehash: 149234fe99485460f9d0c677b176a42d3b1e5050
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895537"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11470849"
 ---
-# 流程模型  
+# <a name="process-model"></a>进程模型  
 
-WebView2 使用与 Microsoft Edge 浏览器相同的进程模型。  有关浏览器进程模型的详细信息，请参阅[浏览器体系结构-内部查看新式 web 浏览器][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]。 
+:::row:::
+   :::column span="1":::
+      支持的平台：
+   :::column-end:::
+   :::column span="2":::
+      Win32、Windows Forms、WinUi、WPF
+   :::column-end:::
+:::row-end:::  
 
-一个浏览器进程与该文章中所述的呈现程序进程和其他实用工具进程相关联。  此外，在 WebView2 的情况下，存在使用 WebView2 请求进程的主机应用。  
+WebView2 使用与 Microsoft Edge 浏览器相同的进程模型。  有关浏览器进程模型详细信息，请导航到"浏览器体系结构[- 内部查看新式 Web 浏览器"。][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]  
 
-:::image type="complex" source="../media/process-model-1.png" alt-text="Process 1" lightbox="../media/process-model-1.png":::
-   Process 1  
+一个浏览器进程与呈现器进程和其他实用程序进程关联，如本文中所述。  此外，如果指定了 WebView2，主机应用请求进程将使用 WebView2。  
+
+:::image type="complex" source="../media/process-model-1.png" alt-text="进程 1" lightbox="../media/process-model-1.png":::
+   进程 1  
 :::image-end:::  
 
-在为任何 WebView2 请求进程的用户会话中为每个用户的数据文件夹指定一个浏览器进程，指定该用户数据文件夹。  这意味着一个浏览器进程可能正在为多个请求进程提供服务，而一个请求进程可能正在使用多个浏览器进程。  
+浏览器进程仅与一个用户数据文件夹相关联。  请求进程可以指定多个用户数据文件夹。  指定多个用户数据文件夹的请求进程与相同数量的浏览器进程关联。  
+例如，请求访问两个用户数据文件夹的请求进程使用两个浏览器进程。  
 
-:::image type="complex" source="../media/process-model-2.png" alt-text="过程2" lightbox="../media/process-model-2.png":::
-   过程2  
+:::image type="complex" source="../media/process-model-2.png" alt-text="过程 2" lightbox="../media/process-model-2.png":::
+   过程 2  
 :::image-end:::  
 
-浏览器进程具有一些关联的呈现器进程。  根据需要创建浏览器进程，以便在 WebView2 的不同实例中服务潜在的多个帧。  呈现器进程的数量因网站隔离浏览器功能和在 WebView2 相关联的实例中呈现的唯一断开的来源的数量而异。  以前的内容中介绍了网站隔离浏览器功能。  
+浏览器进程与多个呈现器进程关联。  WebView 2 实例创建一个浏览器进程来为框架提供服务。  浏览器进程可能与多个帧关联。  浏览器进程可能与 WebView2 的不同实例相关联。  呈现进程数因以下条件而异。  
 
-`CoreWebView2Environment`表示用户数据文件夹和浏览器进程。  不 `CoreWebView2` 会直接对应于任何一组进程，因为各种呈现程序进程由 WebView2 使用，具体取决于前面所述的网站隔离。  
+*   在浏览器中使用网站隔离功能。  
+*   在关联的 WebView2 实例中呈现的已断开连接源的数量。  
 
-你可以使用的事件来响应在这些浏览器和呈现器进程中崩溃和挂起 `ProcessFailed` `CoreWebView2` 。  
+网站隔离浏览器功能在上一内容中进行了介绍。 
+<!--todo:  which previous content?  -->  
+ 
 
-你可以使用的方法安全地关闭关联浏览器和呈现器进程 `Close` `CoreWebView2Controller` 。  
+`CoreWebView2Environment`表示用户数据文件夹和浏览器进程。  不直接对应于任何一组进程，因为 WebView2 使用各种呈现器进程，具体取决于前面所述的 `CoreWebView2` 网站隔离。  
 
-若要从 WebView2 实例的**DevTools**窗口中打开浏览器任务管理器窗口，您可以选择 `Shift` + `Escape` 或悬停在 DevTools 窗口标题栏上，打开上下文菜单 \ （右键单击 \），然后选择 `Browser task manager` 。  将显示与你的 WebView2 的浏览器进程关联的所有进程，包括相关用途。  
+若要对浏览器和呈现器进程中的崩溃和挂起做出反应，请使用 `ProcessFailed` 的 事件 `CoreWebView2` 。  
+
+若要安全关闭关联的浏览器和呈现器进程，请使用 的 `Close` `CoreWebView2Controller` 方法。  
+
+若要从 WebView2 实例的 **DevTools** 窗口打开浏览器任务管理器窗口，请完成以下操作。  
+
+*   选择 `Shift`+`Escape`。  
+*   将鼠标悬停在 DevTools 窗口标题栏上，打开上下文菜单 \ (右键单击\) ，然后选择 `Browser task manager` 。  
+
+将显示与 WebView2 的浏览器进程关联的所有进程，包括关联目的。  
+
+## <a name="see-also"></a>另请参阅  
+
+*   若要开始使用 WebView2，请导航到 ["WebView2 入门指南"][Webview2IndexGettingStarted] 指南。  
+*   有关 WebView2 功能的综合示例，请导航到 GitHub 上的 [WebView2Samples][GithubMicrosoftedgeWebview2samples] 存储库。  
+*   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]。  
+*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 Microsoft Edge WebView 团队联系  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "浏览器体系结构-在新式 web 浏览器中查看（第1部分）"  
+[Webview2IndexGettingStarted]: ../index.md#getting-started "入门 - Microsoft Edge WebView2 |Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
+
+[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "浏览器体系结构 - 内部查看新式 Web 浏览器 (第 1 部分) "  

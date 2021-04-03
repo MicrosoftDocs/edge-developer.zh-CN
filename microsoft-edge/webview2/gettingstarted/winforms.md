@@ -1,29 +1,29 @@
 ---
 description: 适用于 WinForms 应用的 WebView2 入门指南
-title: 适用于 WinForms 应用的 WebView2 入门
+title: WinForms 应用的 WebView2 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview2、WebView、webview、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、边缘 html、入门、入门、.NET、windows 表单
-ms.openlocfilehash: 45a3b59733a57975e373df2e21258198645be2d4
-ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
+keywords: WebView2、webview2、WebView、webview、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET、windows 窗体
+ms.openlocfilehash: 9d797e87ff8b5f11d957442c2cea08ae2f8c66a7
+ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "11306164"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11470863"
 ---
-# Windows 窗体中的 WebView2 入门
+# <a name="getting-started-with-webview2-in-windows-forms"></a>Windows 窗体中的 WebView2 入门
 
-本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  有关各个 API 详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2Winforms]。  
+本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  有关各个 API 的信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2Winforms]。  
 
-## 必备条件  
+## <a name="prerequisites"></a>必备条件  
 
-确保先安装以下先决条件列表，然后再继续。  
+请确保先安装以下先决条件列表，然后再继续。  
 
-*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2] 运行时或任何 [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] 安装在受支持的操作系统 \ (当前为 Windows 10、Windows 8.1 和 Windows 7\) 。  
+*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2] 运行时或任何 [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] 安装在受支持的操作系统 \ (当前为 Windows 10、Windows 8.1 和 Windows 7\) 上的非稳定通道。  
     
     > [!NOTE]
     > WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。  
@@ -31,19 +31,19 @@ ms.locfileid: "11306164"
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 或更高版本。  
     
 > [!NOTE]
-> WebView2 当前不支持 .NET 5 和 .NET Core 设计器。
+> WebView2 当前不支持 .NET 5 和 .NET Core 设计器。  
 
-## 步骤 1 - 创建单窗口应用
+## <a name="step-1---create-a-single-window-app"></a>步骤 1 - 创建单窗口应用
 
 从包含单个主窗口的基本桌面项目开始。  
 
-1.  In Visual Studio， choose **Windows Forms .NET Framework App**  >  **Next.**
+1.  In Visual Studio， choose **Windows Forms .NET Framework App**  >  **Next**.
     
     :::image type="complex" source="./media/winforms-newproject.png" alt-text="新建项目" lightbox="./media/winforms-newproject.png":::
        新建项目  
     :::image-end:::
     
-1.  输入 **项目名称和** 位置 **的值**。  选择 **.NET Framework 4.6.2** 或更高版本。  
+1.  输入**项目名称和位置****的值**。  选择 **.NET Framework 4.6.2** 或更高版本。  
     
     :::image type="complex" source="./media/winforms-startproj.png" alt-text="启动项目" lightbox="./media/winforms-startproj.png":::
        启动项目  
@@ -51,17 +51,17 @@ ms.locfileid: "11306164"
     
 1.  若要创建项目，请选择"创建 **"。**
     
-## 步骤 2 - 安装 WebView2 SDK
+## <a name="step-2---install-webview2-sdk"></a>步骤 2 - 安装 WebView2 SDK
 
 使用 NuGet 将 WebView2 SDK 添加到项目中。  
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理**NuGet 程序包..."。**  
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择管理**NuGet 程序包...。**  
     
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="管理 NuGet 程序包":::
        管理 NuGet 程序包
     :::image-end:::
     
-1.  在搜索栏中，键入> `Microsoft.Web.WebView2` **选择 Microsoft.Web.WebView2。**  
+1.  在搜索栏中，键入"> `Microsoft.Web.WebView2` **选择"Microsoft.Web.WebView2"。**  
     
     :::image type="complex" source="./media/installnuget.png" alt-text="NuGet" lightbox="./media/installnuget.png":::
        NuGet  
@@ -73,7 +73,7 @@ ms.locfileid: "11306164"
        空应用  
     :::image-end:::
     
-## 步骤 3 - 创建单个 WebView  
+## <a name="step-3---create-a-single-webview"></a>步骤 3 - 创建单个 WebView  
 
 将 WebView 添加到你的应用。  
 
@@ -81,12 +81,12 @@ ms.locfileid: "11306164"
 1.  在工具箱**中搜索 WebView2。** ****  
     
     > [!NOTE]
-    > 如果使用的是 Visual Studio 2017，默认情况下 **，WebView2** 可能不会显示在 **工具箱中**。  若要启用该行为 **，请选择"** 工具  >  **选项**常规  >  ****>**将"自动填充**工具箱"设置设置为 `True` 。  
+    > 如果使用的是 Visual Studio 2017，则 **默认情况下 WebView2** 可能不会显示在工具箱 **中**。  若要启用此行为，请选择"**工具**  >  **""** 选项  >  ****>"**自动填充工具箱**"设置设置为 `True` 。  
     
     将 **WebView2 控件** 拖放到 Windows 窗体应用。
     
     :::image type="complex" source="./media/winforms-toolbox.png" alt-text="显示 WebView2 的工具箱":::
-       显示 WebView2 的工具箱
+       显示 WebView2 的工具箱  
     :::image-end:::  
 
 1.  将 `(Name)` 属性设置为 `webView`。
@@ -95,10 +95,10 @@ ms.locfileid: "11306164"
        WebView2 控件的属性
     :::image-end:::
 
-1.  该属性 `Source` 设置 WebView2 控件中显示的初始 URI。  将 `Source` 属性设置为 `https://www.microsoft.com`。  
+1.  属性 `Source` 设置 WebView2 控件中显示的初始 URI。  将 `Source` 属性设置为 `https://www.microsoft.com`。  
     
     :::image type="complex" source="./media/winforms-source.png" alt-text="WebView2 控件的 Source 属性":::
-       **WebView2**控件的 Source 属性
+       WebView2 控件的 **Source** 属性
     :::image-end:::  
 
 若要生成并运行项目，请选择 `F5` 。  确保 WebView2 控件显示 [https://www.microsoft.com][|::ref1::|Main] 。
@@ -108,23 +108,23 @@ ms.locfileid: "11306164"
 :::image-end:::  
 
 > [!NOTE]
-> 如果正在处理高 DPI 监视器，可能需要将 Windows[窗体应用配置为支持高 DPI。][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]  
+> 如果正在处理高 DPI 监视器，可能需要将 Windows [窗体][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]应用配置为高 DPI 支持。  
 
-## 步骤 4 - 处理窗口调整大小事件
+## <a name="step-4---handle-window-resize-events"></a>步骤 4 - 处理窗口大小事件  
 
-从工具箱向 Windows 窗体添加更多控件，然后适当地处理窗口大小事件。
+从工具箱向 Windows 窗体中添加更多控件，然后适当地处理窗口大小事件。  
 
-1.  在 **Windows 窗体设计器中**，打开 **工具箱**
-1.  将 **TextBox 拖放** 到 Windows Forms App 中。  在"**属性"选项卡**中，命名**TextBox。** `addressBar`
-1.  将按钮 **拖放** 到 Windows 窗体应用。  将按钮中的 **文本更改为** 属性选项卡中的 `Go!` **按钮** `goButton` 并 **命名**。
-
-    应用应如设计器中的下图所示。
+1.  在 **Windows 窗体设计器中**， **打开工具箱**。  
+1.  将 **TextBox 拖放** 到 Windows 窗体应用中。  将 **"属性"选项卡中的 TextBox** `addressBar` **命名**。  
+1.  将 **按钮拖放到** Windows 窗体应用中。  将"按钮"中的**文本** `Go!` 更改为 ，并**** 命名"属性"选项卡 `goButton` **中的"按钮"。**  
     
-    :::image type="complex" source="./media/winforms-designer.png" alt-text="designer" lightbox="./media/winforms-designer.png":::
-       designer  
+    应用应如设计器中的下图所示。  
+    
+    :::image type="complex" source="./media/winforms-designer.png" alt-text="WinForms 设计器" lightbox="./media/winforms-designer.png":::
+       WinForms 设计器  
     :::image-end:::  
 
-1.  在 `Form1.cs` 文件中，定义以在调整应用窗口 `Form_Resize` 大小时保持控件就位。
+1.  在 `Form1.cs` 文件中，定义 `Form_Resize` 以在调整应用窗口大小时保持控件就位。
 
 ```csharp
 public Form1()
@@ -147,17 +147,25 @@ private void Form_Resize(object sender, EventArgs e)
    应用  
 :::image-end:::
 
-## 步骤 5 - 导航
+## <a name="step-5---navigation"></a>步骤 5 - 导航
 
-添加允许用户通过向应用添加地址栏来更改 WebView2 控件显示的 URL 的能力。
+添加允许用户通过向应用添加地址栏来更改 WebView2 控件显示的 URL 的能力。  
 
+1.  选择 `F5` 以生成并运行项目。  确认应用显示类似于以下屏幕截图。  
+    
+    :::image type="complex" source="./media/winforms-app.png" alt-text="WinForms 应用" lightbox="./media/winforms-app.png":::
+       WinForms 应用  
+    :::image-end:::  
+    
 1.  在 `Form1.cs` 文件中，若要添加 `CoreWebView2` 命名空间，请将以下代码段插入顶部。  
 
+1.  在 `Form1.cs` 添加 `CoreWebView2` 命名空间时，在 的顶部插入以下代码段 `Form1.cs` 。  
+    
     ```csharp
     using Microsoft.Web.WebView2.Core;
     ```
 
-1.  在 **Windows 窗体设计器中**，双击按钮 `Go!` 以 `goButton_Click` 在文件中创建 `Form1.cs` 方法。  在函数中复制并粘贴以下代码段。  现在， `goButton_Click` 该函数将 WebView 导航到地址栏中输入的 URL。
+1.  在 **Windows 窗体设计器中**，双击按钮 `Go!` 以 `goButton_Click` 在文件中创建 `Form1.cs` 方法。  复制以下代码段并将其粘贴到 函数中。  现在， `goButton_Click` 函数将 WebView 导航到地址栏中输入的 URL。
 
     ```csharp
     private void goButton_Click(object sender, EventArgs e)
@@ -169,18 +177,18 @@ private void Form_Resize(object sender, EventArgs e)
     }
     ```  
 
-若要生成并运行项目，请选择 `F5` 。  在地址栏中输入新 URL，然后选择 **"转到"。**  例如，输入 `https://www.bing.com` 。  确保 WebView2 控件导航到 URL。  
+若要生成并运行项目，请选择 `F5` 。  在地址栏中输入新 URL，然后选择"转到 **"。**  例如，输入 `https://www.bing.com` 。  确保 WebView2 控件导航到 URL。  
 
 > [!NOTE]
-> 确保在地址栏中输入完整 URL。  如果 `ArgumentException` URL 不以或 `http://` `https://`
+> 确保在地址栏中输入完整 URL。  如果 `ArgumentException` URL 不以 或 为起始，则 `http://` 会引发 。 `https://`
 
 :::image type="complex" source="./media/winforms-bing.png" alt-text="bing.com" lightbox="./media/winforms-bing.png":::
    bing.com  
 :::image-end:::
 
-## 步骤 6 - 导航事件  
+## <a name="step-6---navigation-events"></a>步骤 6 - 导航事件  
 
-在网页导航过程中，WebView2 控件引发事件。  承载 WebView2 控件的应用侦听以下事件。  
+在网页导航期间，WebView2 控件将引发事件。  承载 WebView2 控件的应用侦听以下事件。  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -188,7 +196,7 @@ private void Form_Resize(object sender, EventArgs e)
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-有关详细信息，请导航到 [导航事件][Webview2ConceptsNavigationEvents]。  
+有关详细信息，请导航到["导航事件"。][Webview2ConceptsNavigationEvents]  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
    导航事件
@@ -201,9 +209,9 @@ private void Form_Resize(object sender, EventArgs e)
 *   `HistoryChanged`  
 
 > [!NOTE]
-> 如果 HTTP 重定向发生，则一行 `NavigationStarting` 中有多个事件。  
+> 如果发生 HTTP 重定向，则一行 `NavigationStarting` 中有多个事件。  
 
-若要演示如何使用这些事件，请首先为取消不使用 HTTPS 的任何请求注册 `NavigationStarting` 处理程序。  
+若要演示如何使用事件，请首先注册一个处理程序，以取消不使用 `NavigationStarting` HTTPS 的任何请求。  
 
 在 `Form1.cs` 文件中，更新构造函数以匹配以下代码段并添加 `EnsureHttps` 函数。  
 
@@ -226,18 +234,18 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```
 
-在构造函数中，EnsureHttps 在 WebView2 控件上的事件上注册为 `NavigationStarting` 事件处理程序。  
+在构造函数中 `EnsureHttps` ，注册为 WebView2 控件上事件 `NavigationStarting` 的事件处理程序。  
 
 若要生成并运行项目，请选择 `F5` 。  确保导航到 HTTP 网站时，WebView 保持不变。  但是，WebView 将导航到 HTTPS 网站。
 
-## 步骤 7 - 脚本  
+## <a name="step-7---scripting"></a>步骤 7 - 脚本  
 
-在运行时，可以使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以让 WebView 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。  注入的 JavaScript 以特定计时运行。  
+你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。  注入的 JavaScript 以特定计时运行。  
 
 *   创建全局对象后运行它。  
-*   在 HTML 文档中包含的任何其他脚本运行之前运行它。  
+*   在运行 HTML 文档中包含的任何其他脚本之前运行它。  
 
-例如，添加在用户导航到非 HTTPS 网站时发送警报的脚本。  修改 `EnsureHttps` 函数以将脚本注入使用 [ExecuteScriptAsync][DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync] 方法的 Web 内容。  
+例如，添加在用户导航到非 HTTPS 网站时发送警报的脚本。  修改 `EnsureHttps` 函数以将脚本注入到使用 [ExecuteScriptAsync][DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync] 方法的 Web 内容中。  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -251,24 +259,24 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-若要生成并运行项目，请选择 `F5` 。  确保应用在您导航到不使用 HTTPS 的网站时显示警报。  
+若要生成并运行项目，请选择 `F5` 。  当你导航到不使用 HTTPS 的网站时，请确保应用显示一个警报。  
 
 :::image type="complex" source="./media/winforms-https.png" alt-text="https" lightbox="./media/winforms-https.png":::
    https  
 :::image-end:::
 
-## 步骤 8 - 主机和 Web 内容之间的通信  
+## <a name="step-8---communication-between-host-and-web-content"></a>步骤 8 - 主机和 Web 内容之间的通信  
 
-主机和 Web 内容可能用于相互 `postMessage` 通信，如下所示：  
+主机和 Web 内容可能 `postMessage` 用于相互通信，如下所示：  
 
-*   WebView2 控件中的 Web 内容可能 `window.chrome.webview.postMessage` 用于向主机发布消息。  主机使用主机上注册的任何邮件 `WebMessageReceived` 处理邮件。  
-*   使用 或 将消息张贴到 WebView2 控件中的 `CoreWebView2.PostWebMessageAsString` Web 内容 `CoreWebView2.PostWebMessageAsJSON` 。  这些消息被添加到的处理程序捕获 `window.chrome.webview.addEventListener` 。  
+*   WebView2 控件中的 Web 内容可能 `window.chrome.webview.postMessage` 用于向主机发布消息。  主机使用主机上注册的任何消息 `WebMessageReceived` 处理邮件。  
+*   使用 或 将消息张贴到 WebView2 控件中的 `CoreWebView2.PostWebMessageAsString` Web 内容 `CoreWebView2.PostWebMessageAsJSON` 。  添加到 的处理程序会捕获这些消息 `window.chrome.webview.addEventListener` 。  
 
-通信机制使用本机功能将消息从 Web 内容传递给主机。  
+通信机制使用本机功能将来自 Web 内容的消息传递给主机。  
 
 在项目中，当 WebView2 控件导航到 URL 时，它会在地址栏中显示 URL，并通知用户 WebView2 控件中显示的 URL。  
 
-1.  在 `Form1.cs` 文件中，更新构造函数并创建 `InitializeAsync` 一个函数以匹配以下代码段。  该 `InitializeAsync` 函数等待 [EnsureCoreWebView2Async，][DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async] 因为初始化 `CoreWebView2` 是异步的。  
+1.  在 `Form1.cs` 文件中，更新构造函数并创建 `InitializeAsync` 一个函数以匹配以下代码段。  函数 `InitializeAsync` awaits [EnsureCoreWebView2Async，][DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async] 因为 的初始化 `CoreWebView2` 是异步的。  
 
     ```csharp
     public Form1()
@@ -285,7 +293,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
 
-1.  初始化 `CoreWebView2` 后，注册要响应的事件处理程序 `WebMessageReceived` 。  在 `Form1.cs` 文件中， `InitializeAsync` 使用下面的代码 `UpdateAddressBar` 段更新和添加。  
+1.  初始化 `CoreWebView2` 后，注册事件处理程序以响应 `WebMessageReceived` 。  在 `Form1.cs` 文件中， `InitializeAsync` 使用下面的代码 `UpdateAddressBar` 段更新和添加。  
 
     ```csharp
     async void InitializeAsync()
@@ -302,12 +310,12 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
 
-1.  为了使 WebView 能够发送和响应 Web 消息，在初始化后，主机在 Web 内容中注入脚本 `CoreWebView2` 以：  
+1.  为了使 WebView 能够发送和响应 Web 消息，在初始化后，主机将 Web 内容中的脚本注入 `CoreWebView2` 到：  
 
     1.  使用 将 URL 发送到主机 `postMessage` 。
     1.  注册事件处理程序以打印从主机发送的消息。  
 
-在 `Form1.cs` 文件中，更新 `InitializeAsync` 以匹配以下代码段。  
+在 `Form1.cs` 文件中，进行更新 `InitializeAsync` 以匹配以下代码段。  
 
 ```csharp
 async void InitializeAsync()
@@ -320,7 +328,7 @@ async void InitializeAsync()
 }
 ```  
 
-若要生成并运行应用，请选择 `F5` 。  现在，地址栏在 WebView2 控件中显示 URI。  此外，当您成功导航到新 URL 时，WebView 会向用户通知 WebView 中显示的 URL。  
+若要生成并运行应用，请选择 `F5` 。  现在，地址栏在 WebView2 控件中显示 URI。  此外，当你成功导航到新 URL 时，WebView 会向用户通知 WebView 中显示的 URL。  
 
 :::image type="complex" source="./media/winforms-finalapp.png" alt-text="最终应用" lightbox="./media/winforms-finalapp.png":::
    最终应用  
@@ -328,17 +336,17 @@ async void InitializeAsync()
 
 恭喜！你生成了第一个 WebView2 应用。  
 
-## 后续步骤  
+## <a name="next-steps"></a>后续步骤  
 
 若要继续了解有关 WebView2 的更多内容，请导航到以下资源。  
 
-### 另请参阅  
+### <a name="see-also"></a>另请参阅  
 
-*   有关 WebView2 功能的综合示例，请导航到[WebView2Samples。][GithubMicrosoftedgeWebview2samplesMain]  
-*   有关 WebView2 的信息，请导航到 [WebView2 资源][Webview2IndexNextSteps]。  
+*   有关 WebView2 功能的综合示例，请导航到 [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain]。  
+*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
 *   有关 WebView2 API 的详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WinformsWebview2]。  
 
-## 与 Microsoft Edge WebView 团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 Microsoft Edge WebView 团队联系  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -352,7 +360,7 @@ async void InitializeAsync()
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "WebView2.EnsureCoreWebView2Async (CoreWebView2Environment) 方法|Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync "WebView2.ExecuteScriptAsync (String) 方法|Microsoft Docs"  
 
-[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "为 Windows Forms 应用配置高 DPI 支持 - Windows 窗体应用程序中的高 DPI |Microsoft Docs"  
+[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "配置 Windows 窗体应用以支持高 DPI - Windows 窗体应用中的高 DPI |Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
 

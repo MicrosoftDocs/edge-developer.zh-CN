@@ -5,10 +5,10 @@ ms.prod: microsoft-edge
 ms.topic: include
 ms.date: 12/09/2020
 ms.openlocfilehash: 8c0d978497b443701d8db3f694f89cd92f79c524
-ms.sourcegitcommit: ae1e6a7db70b97dc0f7f12feafd3ea88bfdca7ed
+ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 04/02/2021
 ms.locfileid: "11205640"
 ---
 使用以下选项讨论帖子中的新功能和更改，或与 DevTools 相关的任何其他内容。  
