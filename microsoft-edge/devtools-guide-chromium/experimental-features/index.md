@@ -118,7 +118,8 @@ ms.locfileid: "11439582"
 1.  <span data-ttu-id="54aae-166">在 **Source Order Viewer** 部分下，选择“**显示源顺序**”复选框。</span><span class="sxs-lookup"><span data-stu-id="54aae-166">Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.</span></span>  
 1.  <span data-ttu-id="54aae-167">突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。</span><span class="sxs-lookup"><span data-stu-id="54aae-167">Highlight any HTML element to display an overlay that the order in the webpage source.</span></span>  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::<span data-ttu-id="54aae-168">no-loc（源订单查看器）:::在辅助功能窗格中" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** 在“**辅助功能**”窗格中</span><span class="sxs-lookup"><span data-stu-id="54aae-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
