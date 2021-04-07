@@ -3,17 +3,17 @@ description: 渐进式 Web (Chromium) 在 Windows 10 上本地运行。  下面�
 title: Windows 上的渐进式 Web 应用
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， Windows， UWP， Microsoft Store
-ms.openlocfilehash: 2850c983c1dae34362a43be9cd33abbfd0df77cf
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: be832ee5c0ad395dae7b4946c41da157ab5cd9ba
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474887"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480186"
 ---
 # <a name="progressive-web-apps-on-windows-overview"></a>Windows 上的渐进式 Web 应用概述  
 
@@ -183,7 +183,7 @@ ms.locfileid: "11474887"
 :::row-end:::  
 
 > [!NOTE]
-> 若要将 PWA 转换为 [Microsoft Store][MicrosoftDeveloperStore] 应用，请导航到[Microsoft Store 中的渐进式 Web (EdgeHTML) ][PwaEdgehtmlMicrosoftStore]。  
+> 若要将 PWA 转换为 [Microsoft Store][MicrosoftDeveloperStore] 应用，请导航到 Microsoft Store 中的渐进式 Web [应用][PwaChromiumMicrosoftStore]。  
   
 ## <a name="see-also"></a>另请参阅  
 
@@ -204,6 +204,8 @@ ms.locfileid: "11474887"
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "模拟和测试其他浏览器|Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "调试渐进式 Web 应用|Microsoft Docs"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "将渐进式 Web 应用发布到 Microsoft Store |Microsoft Docs"
+
+
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows 推送通知服务 (WNS) 概述|Microsoft Docs"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "针对 Xbox 和电视|Microsoft Docs"  
