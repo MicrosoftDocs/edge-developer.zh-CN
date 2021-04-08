@@ -3,16 +3,16 @@ description: 辅助功能改进、在其他语言中使用 DevTools 等。
 title: 'Microsoft Edge 80 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 7758b7f8ed55bb766abc56d6dd29ec124617e7ff
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 31e18091a9f86b7b8a4e123b24e3d312689301ef
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408309"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481483"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -120,7 +120,7 @@ Webhint Microsoft Edge 扩展允许你轻松扫描网页，并获取有关辅助
    安装 **Webhint** 浏览器扩展时 DevTools 中的 Hints 工具  
 :::image-end:::  
 
-[尝试 Microsoft Edge 中的 Webhint 浏览器扩展][MicrosoftEdgeInsiderAddons]。  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  请 [前往webhint.io][WebhintBrowserExtension] 了解更多信息。
+[尝试 Microsoft Edge 中的 Webhint 浏览器扩展][MicrosoftEdgeInsiderAddons]。  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  请 [前往][WebhintBrowserExtension] webhint.io 了解更多信息。
 
 ### <a name="3d-view"></a>3D 视图  
 
@@ -326,18 +326,13 @@ Chromium [问题#1004203][CR1004203]
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<!-- image links -->  
-
-<!--[../../images/2019/12/wasm.msft.png]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
-
 <!-- links -->  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"  
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
 [DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 Microsoft Edge 开发人员工具中的覆盖工具查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
 [DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "模拟移动视区 - 在 Microsoft Edge DevTools |Microsoft Docs"  
 [DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "检查 Microsoft Edge DevTools |Microsoft Docs"  
 [DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "视图发起方和依赖关系 - 网络分析参考|Microsoft Docs"  
-[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "EdgeHTML |Microsoft Docs"  
 [VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Microsoft Edge 代码Visual Studio调试器|Microsoft Docs"  
 [VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Microsoft Edge 代码扩展Visual Studio元素|Microsoft Docs"  
 

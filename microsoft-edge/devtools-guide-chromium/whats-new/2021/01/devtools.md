@@ -3,17 +3,17 @@ description: “新增功能”工具现在为“欢迎”，内含“样式”�
 title: DevTools 中的新增功能 (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: f04884c4022394ad96f1bd47236047d16ae5ccb9
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439645"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481357"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -98,9 +98,9 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
    :::column-end:::
 :::row-end:::  
 
-### <a name="display-alignment-icons-and-gridlines-when-flexbox-layouts-change-using-css-properties"></a>使用 CSS 属性更改弹性框布局时显示对齐图标和网格线  
+### <a name="display-alignment-icons-and-visual-guides-when-flexbox-layouts-change-using-css-properties"></a>使用 CSS 属性更改弹性框布局时显示对齐图标和可视化向导  
 
-<!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
