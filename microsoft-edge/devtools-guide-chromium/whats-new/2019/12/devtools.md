@@ -254,7 +254,7 @@ ms.locfileid: "11481483"
 
 <span data-ttu-id="1c838-224">选择网络资源以检查它后，网络面板现在在概述中为资源设置蓝色 **边框**。</span><span class="sxs-lookup"><span data-stu-id="1c838-224">After you choose a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.</span></span>  <span data-ttu-id="1c838-225">这可以帮助您检测网络请求是早于还是晚于预期发生。</span><span class="sxs-lookup"><span data-stu-id="1c838-225">This is able to help you detect if the network request is happening earlier or later than expected.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的"概述"窗格" lightbox="../../images/2019/12/overview.msft.png":::
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的概述窗格" lightbox="../../images/2019/12/overview.msft.png":::
    <span data-ttu-id="1c838-227">突出显示 **已** 检查资源的"概述"窗格</span><span class="sxs-lookup"><span data-stu-id="1c838-227">The **Overview** pane highlighting the inspected resource</span></span>  
 :::image-end:::  
 
@@ -264,11 +264,11 @@ ms.locfileid: "11481483"
 
 <span data-ttu-id="1c838-230">使用"**网络"** 工具**中的新"** 路径"和 **"URL"** 列显示每个网络资源的绝对路径或完整 URL。</span><span class="sxs-lookup"><span data-stu-id="1c838-230">Use the new **Path** and **URL** columns in the **Network** tool to display the absolute path or full URL of each network resource.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text=""网络"面板中的新"路径"和"URL"列" lightbox="../../images/2019/12/columns.msft.png":::
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="网络面板中的新路径和URL列" lightbox="../../images/2019/12/columns.msft.png":::
    <span data-ttu-id="1c838-232">网络工具中的新 **路径和** URL 列</span><span class="sxs-lookup"><span data-stu-id="1c838-232">The new Path and URL columns in the **Network** tool</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="1c838-233">若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \ (righ-click\) ，然后选择**路径**或**URL。**</span><span class="sxs-lookup"><span data-stu-id="1c838-233">To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.</span></span>  
+<span data-ttu-id="1c838-233">若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \(righ-click\) ，然后选择**路径**或**URL。**</span><span class="sxs-lookup"><span data-stu-id="1c838-233">To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.</span></span>  
 
 <span data-ttu-id="1c838-234">Chromium [问题#993366][CR993366]</span><span class="sxs-lookup"><span data-stu-id="1c838-234">Chromium issue [#993366][CR993366]</span></span>  
 
@@ -278,7 +278,7 @@ ms.locfileid: "11481483"
 
 <span data-ttu-id="1c838-238">预定义User-Agent字符串已更新，以反映新式浏览器版本。</span><span class="sxs-lookup"><span data-stu-id="1c838-238">The predefined User-Agent strings have been updated to reflect modern browser versions.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text=""网络条件"面板中的"用户代理"菜单" lightbox="../../images/2019/12/useragent.msft.png":::
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="网络条件面板中的用户代理菜单" lightbox="../../images/2019/12/useragent.msft.png":::
    <span data-ttu-id="1c838-240">"网络条件"面板中的" **用户代理"** 菜单</span><span class="sxs-lookup"><span data-stu-id="1c838-240">The User Agent menu in the **Network Conditions** panel</span></span>  
 :::image-end:::  
 
