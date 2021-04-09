@@ -45,7 +45,7 @@ ms.locfileid: "11481393"
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择检查" lightbox="./media/devtools-intro-inspect.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择"检查"" lightbox="./media/devtools-intro-inspect.msft.png":::  
          <span data-ttu-id="d3e73-128">从 **任何元素** 上的上下文菜单中选择"检查"</span><span class="sxs-lookup"><span data-stu-id="d3e73-128">Choose **Inspect** from the contextual menu on any element</span></span>  
       :::image-end:::  
    :::column-end:::  
@@ -93,12 +93,12 @@ ms.locfileid: "11481393"
 :::row-end:::  
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择扩展坞到右侧" lightbox="media/devtools-intro-docking-right.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择"扩展坞到右侧"" lightbox="media/devtools-intro-docking-right.msft.png":::  
          <span data-ttu-id="d3e73-159">选择 **"扩展坞到右侧"**</span><span class="sxs-lookup"><span data-stu-id="d3e73-159">Choose **Dock To Right**</span></span>  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择"取消停靠到单独的窗口"" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
          <span data-ttu-id="d3e73-161">选择 **"取消停靠到单独的窗口"**</span><span class="sxs-lookup"><span data-stu-id="d3e73-161">Choose **Undock into separate window**</span></span>  
       :::image-end:::  
    :::column-end:::  
@@ -110,7 +110,7 @@ ms.locfileid: "11481393"
 
 <span data-ttu-id="d3e73-167">DevTools 在几年内逐渐增加。</span><span class="sxs-lookup"><span data-stu-id="d3e73-167">DevTools grew over a period of several years.</span></span>  <span data-ttu-id="d3e73-168">你可能假设首次打开任何工具时很难了解 DevTools。</span><span class="sxs-lookup"><span data-stu-id="d3e73-168">You may assume that DevTools are difficult to learn when you first open any of tools.</span></span>  <span data-ttu-id="d3e73-169">以下文本快速介绍了不同的部分。</span><span class="sxs-lookup"><span data-stu-id="d3e73-169">The following text quickly introduces the different parts.</span></span>  <span data-ttu-id="d3e73-170">主工具栏为您提供了一些部分，这些部分按从左到右的顺序排序。</span><span class="sxs-lookup"><span data-stu-id="d3e73-170">The main toolbar offers you a few sections and the sections are ordered from left to right.</span></span>  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。  顺序：检查工具、设备仿真工具、工具选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。" lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。  顺序：检查工具、设备仿真工具、"工具"选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。" lightbox="./media/devtools-intro-menu-bar.msft.png":::  
    <span data-ttu-id="d3e73-173">包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。</span><span class="sxs-lookup"><span data-stu-id="d3e73-173">Screenshot of the menu bar of the DevTools with labels that explain the different sections.</span></span>  <span data-ttu-id="d3e73-174">顺序：检查工具、设备仿真工具、"工具"选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。</span><span class="sxs-lookup"><span data-stu-id="d3e73-174">In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Settings, Feedback, Customize, and Close.</span></span>  
 :::image-end:::  
 
@@ -220,7 +220,7 @@ ms.locfileid: "11481393"
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "开始分析运行时性能|Microsoft Docs"  
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "试验功能 | Microsoft Docs"  
 [DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "修复内存|Microsoft Docs"  
-[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "在"样式"窗格中编辑 CSS 字体样式|Microsoft Docs"  
+[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "在&quot;样式&quot;窗格中编辑 CSS 字体样式|Microsoft Docs"  
 [DevtoolsGuideIssuesIndex]: ./issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "在 Microsoft Edge 开发人员工具中调试 JavaScript 入门 | Microsoft Docs"  
 [DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "使用 Microsoft Edge DevTools 工具替代具有本地副本的网页|Microsoft Docs"  
