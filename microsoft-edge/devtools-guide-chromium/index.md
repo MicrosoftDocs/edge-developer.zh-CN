@@ -220,7 +220,7 @@ DevTools 团队在 DevTools 中提供新功能作为实验。  若要获取实�
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "开始分析运行时性能|Microsoft Docs"  
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "试验功能 | Microsoft Docs"  
 [DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "修复内存|Microsoft Docs"  
-[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "在"样式"窗格中编辑 CSS 字体样式|Microsoft Docs"  
+[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "在&quot;样式&quot;窗格中编辑 CSS 字体样式|Microsoft Docs"  
 [DevtoolsGuideIssuesIndex]: ./issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "在 Microsoft Edge 开发人员工具中调试 JavaScript 入门 | Microsoft Docs"  
 [DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "使用 Microsoft Edge DevTools 工具替代具有本地副本的网页|Microsoft Docs"  
