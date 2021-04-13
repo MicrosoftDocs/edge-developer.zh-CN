@@ -3,16 +3,16 @@ description: Microsoft Edge for Web Apps 中的最新实验功能
 title: 实验功能|渐进式 Web 应用
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 实验， 渐进式 Web 应用， Web 应用， PWA， PWA
-ms.openlocfilehash: 587797bc8577f1c1aaca42394eecb997d21e9955
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: 5ab2ab0a727d1eb52f61a01ea64b52bc1c09abce
+ms.sourcegitcommit: f6a3ab7b13adf05dbe7a4bf65ee67c9b0f6fab95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474954"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11482146"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>渐进式 Web 应用和 PBA (实验)   
 
@@ -62,7 +62,8 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
 | 功能 | Microsoft Edge 版本 | 平台 |  
 |:--- |:--- |:--- |  
 | [URI 协议处理](#uri-protocol-handling) | 91 或更高版本 | Windows |    
-| [URL 链接处理](#url-link-handling) | 91 或更高版本 | Windows|  
+| [URL 链接处理](#url-link-handling) | 91 或更高版本 | Windows|
+| [适用于桌面应用的窗口控件覆盖层](#window-controls-overlay-for-installed-desktop-web-apps) | 91 或更高版本 | Windows 10|   
 | [在操作系统登录时运行](#run-on-os-login) | 88 或更高版本 | 全部 |  
 | [快捷方式](#shortcuts) | 87 或更高版本 | 全部 |  
 | [文件处理](#file-handling) | 83 或更高版本 | 所有桌面 |  
@@ -171,7 +172,7 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
 
 如果 URI 与 中的一个源字符串匹配，并且浏览器验证源是否同意允许此应用程序处理此类 URI，PWA 将匹配用于 URL 处理的 `url_handlers` URI。  
 
-成员包含一个源，该源包含请求的 PWA 的范围和其他 `url_handlers` 不相关的源。  不将 URI 限制为与请求的 PWA 相同的范围或域，允许您对相同内容使用不同的域名，但使用相同的 PWA 处理它们。  
+成员 `url_handlers` 包含一个包含请求 PWA 的范围和其他不相关的源的源。  不将 URI 限制为与请求的 PWA 相同的范围或域，允许您对相同内容使用不同的域名，但使用相同的 PWA 处理它们。  
 
 #### <a name="wildcard-matching"></a>通配符匹配  
 
@@ -181,107 +182,105 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
 
 例如， `url_handlers` 成员值设置为 `*.contoso.com` matches 和 `tenant.contoso.com` `www.tenant.contoso.com` ，但不匹配 `contoso.com` 。  
 
-<!-- Hold for future release -->  
-<!--  ## Window Controls Overlay for installed desktop web apps  
+## <a name="window-controls-overlay-for-installed-desktop-web-apps"></a>窗口控件 已安装桌面 Web 应用的覆盖层  
 
-To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
+若要为桌面安装的 Web 应用创建沉浸式标题栏（如本机应用），"窗口控件覆盖"功能将完成以下操作。 ****  
     
-1.  Removes the system reserved title bar.  It usually spans the width of the client frame.  
-1.  Replaces it with an overlay.  It contains just the critical system required window controls necessary for a user to control the window itself.  
+1.  删除系统保留的标题栏。  它通常跨越客户端框架的宽度。  
+1.  将其替换为覆盖层。  它仅包含用户控制窗口本身所需的关键系统所需窗口控件。  
     
-After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.  
-    
-### Examples of title bar area customization  
+提供覆盖后，可使用整个 Web 客户端区域。  此功能包括清单更新。  它提供用于确定覆盖的大小和位置的方法，以帮助你安排内容。  
 
-This feature is based on the ability in native apps to customize the title bar.  You may customize a title bar for important app actions or notifications.  Review the following examples for Microsoft Visual Studio Code and Microsoft Teams.  
+若要预览适用于 Windows 10 的 Microsoft Edge 中的窗口[](#turn-on-experimental-features)控件覆盖，请导航到"打开实验性功能"并导航到"**桌面 PWA 窗口控件覆盖"。**   
 
-#### Visual Studio Code  
+### <a name="examples-of-title-bar-area-customization"></a>标题栏区域自定义示例  
 
-Microsoft Visual Studio Code is a popular editor built on Electron that ships on multiple desktop platforms.  
+此功能基于本机应用中自定义标题栏的功能。  你可以自定义重要应用操作或通知的标题栏。  查看 Microsoft Visual Studio Code 和 Microsoft Teams 的以下示例。  
 
-The following example displays how Visual Studio Code uses the title bar to maximize available screen real estate to include the current file name and top-level menu structure in the title bar.  
+#### <a name="visual-studio-code"></a>Visual Studio Code  
 
-:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="An example of the title bar in Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
-   An example of the title bar in Visual Studio Code  
+Microsoft Visual Studio Code 是一款基于位于多个桌面平台上的"小程序"构建的热门编辑器。  
+
+以下示例显示Visual Studio代码如何使用标题栏来最大化可用屏幕空间以在标题栏中包括当前文件名和顶级菜单结构。  
+
+:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="代码标题栏中Visual Studio示例" lightbox="../media/visual-studio-code-title-customization.png":::
+   代码标题栏中Visual Studio示例  
 :::image-end:::  
 
-#### Microsoft Teams  
+#### <a name="microsoft-teams"></a>Microsoft Teams  
 
-Workplace collaboration and communication tool Microsoft Teams is also built with Electron and available on multiple desktop platforms.  In the following example, Microsoft Teams displays `back` and `forward` navigation buttons, a search box, and user profile controls.  
+Workplace collaboration and communication tool Microsoft Teams is also built with Teams and available on multiple desktop platforms.  在下面的示例中，Microsoft Teams 显示 `back` 和 `forward` 导航按钮、搜索框和用户配置文件控件。  
 
-:::image type="complex" source="../media/teams-title-customization.png" alt-text="An example of the title bar in Microsoft Teams" lightbox="../media/teams-title-customization.png":::
-   An example of the title bar in Microsoft Teams  
+:::image type="complex" source="../media/teams-title-customization.png" alt-text="Microsoft Teams 中标题栏的示例" lightbox="../media/teams-title-customization.png":::
+   Microsoft Teams 中标题栏的示例  
 :::image-end:::  
 
-### Overlay Window Controls on a Frameless Window  
+### <a name="overlay-window-controls-on-a-frameless-window"></a>无框架窗口上的覆盖窗口控件  
 
-To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI except for the window controls provided as an overlay.  
-The window controls overlay ensures users still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the controls in the overlay.
+为了最大化 Web 内容的可地址区域，浏览器会创建无框架窗口。  无框架窗口删除所有浏览器 UI，但作为覆盖提供的窗口控件除外。  窗口控件覆盖允许用户仍最小化、最大化、还原和关闭应用。  它还提供对使用 Web 应用菜单的相关浏览器控件的访问。  对于基于 Chromium 的浏览器，覆盖层包括以下控件。  
 
-*   A draggable region the same width and height of each of the window control buttons  
-*   The **Settings and more** \(...\) button  
-*   The window control buttons minimize, maximize, restore, and close  
+*   每个窗口控件按钮的宽度和高度相同的可拖动区域  
+*   " **设置"和更多** \ (...\) 按钮  
+*   窗口控件按钮最小化、最大化、还原和关闭  
     
-The following scenarios include when browser displays other content in the controls overlay.  
+除了前面列出的控件之外，覆盖层中显示的 UI 将在以下方案中动态调整大小。  
 
-*   When an installed web app is launched, the origin of the webpage displays to the left of the **Settings and more** \(...\) menu for a few seconds and then disappears.  
-*   If a user interacts with an extension using the **Settings and more** \(...\) menu, the icon of the extension displays in the overlay to the left of the three-dot menu.  After you exit any extension dialog, the icon is removed from the overlay.  
+*   启动已安装的 Web 应用后，网页的原点会在"设置"和更多**** \ (...\) 菜单的左侧显示几秒钟，然后消失。  
+*   如果用户使用"设置"菜单和更多**** \ (...\) 菜单与扩展进行交互，则扩展的图标显示在三点菜单左侧的覆盖中。  退出任何扩展对话框后，图标将从覆盖层中删除。  
     
-| Language direction | Overlay location | Details |  
+| 语言方向 | 覆盖位置 | 详细信息 |  
 |:--- |:--- |:--- |  
-| Left-to-right \(LTR\) | Upper left of the client area | The controls are flipped |  
-| Right-to-left \(RTL\) | Upper right corner of the client area |  |  
+| 从左到右 \ (LTR\)  | 客户区域左上角 | 翻转控件 |  
+| 从右到左 \ (RTL\)  | 工作区的右上角 |  |  
 
->[!IMPORTANT]
-> The overlay is always on top of the Z-index of the web content and accepts all user input without flowing it through to the web content.  
+> [!IMPORTANT]
+> 覆盖始终位于 Web 内容的 Z 索引顶部，并接受所有用户输入，而不会将输入流到 Web 内容。  
 
-### Working around the Window Controls Overlay  
+### <a name="working-around-the-window-controls-overlay"></a>处理窗口控件覆盖层  
 
-Your web content must be aware of the reserved area for the controls overlay.  Ensure the reserved area doesn't expect user interaction.  Query the browser for the bounding rectangle and visibility of the controls overlay.  The information is provided to you through JavaScript APIs and CSS environment variables.  
+Web 内容必须知道控件覆盖的保留区域。  确保保留区域不需要用户交互。  在浏览器中查询控件覆盖的矩形边界和可见性。  该信息通过 JavaScript API 和 CSS 环境变量提供给你。  
 
-#### JavaScript APIs  
+#### <a name="javascript-apis"></a>JavaScript API  
 
-A new `windowControlsOverlay` object on the `window.navigator` property allows you to query the bounding rectangle of the controls overlay.  
+属性 `windowControlsOverlay` 上的新 `window.navigator` 对象允许您查询控件覆盖的边框。  
 
-The `windowControlsOverlay` object has the following two objects.  
+对象 `windowControlsOverlay` 具有以下两个对象。  
 
-*   `getBoundingClientRect()` returns a `DOMRect` object.  The `DOMRect` object represents the area under the window controls overlay.  
-*   `visible` is a boolean that indicates that the controls overlay is rendered and displayed.  
+*   `getBoundingClientRect()`  返回一个 `DOMRect` 对象。  对象 `DOMRect` 表示窗口控件覆盖层下的区域。  
+*   `visible` 是一个 boolean 值，指示呈现和显示控件覆盖。  
     
 > [!IMPORTANT]
-> For privacy reasons, the `windowControlsOverlay` isn't accessible to `iframe` elements in the web content.  
+> 出于隐私原因，Web 内容中的 `windowControlsOverlay` `iframe` 元素无法访问 。  
 
-Whenever the overlay is resized, a `geometrychange` event runs on the `navigator.windowControlsOverlay` object to notify the client to recalculate the content layout.  The recalculated content layout is based on the new bounding rectangle of the overlay.  
+每当调整覆盖大小时，都会在对象上运行一个事件，以通知客户端 `geometrychange` `navigator.windowControlsOverlay` 重新计算内容布局。  重新计算的内容布局基于覆盖层的新边界矩形。  
 
-#### CSS Environment Variables  
+#### <a name="css-environment-variables"></a>CSS 环境变量  
 
-Besides the JavaScript API, you may use CSS to query the bounding rectangle of the controls overlay.  Use the following four new CSS environment variables to accomplish to query.  
+除了 JavaScript API 之外，您还可以使用 CSS 查询控件覆盖的边框。  使用以下四个新的 CSS 环境变量完成查询。  
 
 *   `titlebar-area-x`  
 *   `titlebar-area-y`  
 *   `titlebar-area-width`  
 *   `titlebar-area-height`  
     
-### Define Draggable Regions in Web Content  
+### <a name="define-draggable-regions-in-web-content"></a>在 Web 内容中定义可拖动区域  
 
-Users expect to grab and drag the upper region of a window.  To accommodate the expectation, declare specific parts of the web content as draggable.  
-To specify an element is draggable, use the webkit proprietary `-webkit-app-region` CSS property.  The CSS working group continues efforts to standardize the `app-region` property.  
+用户希望抓取和拖动窗口的上半部分。  若要满足预期要求，请声明 Web 内容的特定部分为可拖动。  
+若要指定元素是可拖动的，请使用 WebKit 专有 `-webkit-app-region` CSS 属性。  CSS 工作组将继续努力标准化 `app-region` 该属性。  
 
-To preview this feature in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
+### <a name="custom-title-bar-example"></a>自定义标题栏示例  
 
-### Custom title bar example  
+以下示例显示新功能如何使用自定义标题栏创建 Web 应用。  
 
-The following example displays how the new features create a web app with a custom title bar.  
-
-:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="Example of a custom title bar in Microsoft Teams" lightbox="../media/teams-title-customization-example.png":::
-   Example of a custom title bar in Microsoft Teams  
+:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="Microsoft Teams 中的自定义标题栏示例" lightbox="../media/teams-title-customization-example.png":::
+   Microsoft Teams 中的自定义标题栏示例  
 :::image-end:::  
 
-#### manifest.webmanifest  
+#### <a name="manifestwebmanifest"></a>manifest.webmanifest  
 
-In the manifest, set `display_override` array to  `window-controls-overlay`.  Set the `theme_color` to your choice of color for the title bar.  Set the display mode to an appropriate fallback for when either `display_override` or `window-controls-overlay` isn't supported.  
+在清单中，将 `display_override` array 设置为  `window-controls-overlay` 。  将 `theme_color` 设置为标题栏的颜色选择。  在任一项或不受支持时，将显示模式 `display_override` `window-controls-overlay` 设置为适当的回退。  
 
-The following code snippet includes the recommended manifest updates.  
+以下代码段包括建议的清单更新。  
 
 ```json
 {
@@ -294,14 +293,14 @@ The following code snippet includes the recommended manifest updates.
 }
 ```  
 
-### index.html  
+### <a name="indexhtml"></a>index.html  
 
-The following IDs represent the two main regions of the webpage.  
+以下 ID 表示网页的两个主要区域。  
 
 *   `titleBarContainer`  
 *   `mainContent`  
     
-The `div` element with the `titleBar` ID is set to `draggable` and the search box `input` child element is set to `nonDraggable`.  
+ID `div` 为 `titleBar` 的 元素设置为 ， `draggable` 搜索框 `input` 子元素设置为 `nonDraggable` 。  
 
 ```html
 <div id="titleBar" class=" draggable">
@@ -310,7 +309,7 @@ The `div` element with the `titleBar` ID is set to `draggable` and the search bo
 </div>
 ```
 
-In the `div` element with the `titleBarContainer` ID, the `div` with the `titleBar` ID represents the visible portion of the title bar area.  
+在具有 ID 的 元素中，具有 ID 的 表示标题栏区域中 `div` `titleBarContainer` `div` `titleBar` 的可见部分。  
 
 ```html
 <!DOCTYPE html>
@@ -329,14 +328,14 @@ In the `div` element with the `titleBarContainer` ID, the `div` with the `titleB
         <input class="nonDraggable" type="text" placeholder="Search"></input>
       </div>
     </div>
-    <div id="mainContent">The rest of the webpage</div>
+    <div id="mainContent"><!-- The rest of the webpage --></div>
   </body>
 </html>
 ```  
 
-### style.css  
+### <a name="stylecss"></a>style.css  
 
-The draggable and non-draggable regions are set using `-webkit-app-region: drag` and `-webkit-app-region: no-drag`.  
+使用 和 设置可拖动和非可拖动 `-webkit-app-region: drag` 区域 `-webkit-app-region: no-drag` 。  
 
 ```css
 .draggable {
@@ -352,7 +351,7 @@ The draggable and non-draggable regions are set using `-webkit-app-region: drag`
 }
 ```  
 
-For the `body` element, margins are set to `0` to ensure the title bar reaches to the edges of the window.  
+对于 `body` 元素，边距设置为 ，以确保标题栏 `0` 到达窗口的边缘。  
 
 ```css
 body {
@@ -361,7 +360,7 @@ body {
 }
 ```  
 
-The `titleBarContainer` ID uses `position: absolute` and sets the `top` to `titlebar-area-inset-top`, which attaches the container to the top of the webpage.  The `bottom` is set to `titlebar-area-inset-bottom` and falls back to `100% - var(--fallback-title-bar-height)` if the window controls overlay isn't visible.  The background color of the `titleBarContainer` ID is the same as the `theme_color`.  The width is set to `100%`, so that the `div` element fills the width of the webpage and flows under the overlay when it's visible for a contiguous appearance.  
+`titleBarContainer`ID 使用 `position: absolute` 并设置 `top` `titlebar-area-inset-top` ，将容器附加到网页顶部。  `bottom`如果窗口控件覆盖层不可见，则 设置为 并 `titlebar-area-inset-bottom` `100% - var(--fallback-title-bar-height)` 恢复为 。  ID 的背景 `titleBarContainer` 颜色与 `theme_color` 相同。  宽度设置为 ，以便元素填充网页的宽度，并且当对于连续外观可见时，该元素将流动在 `100%` `div` 覆盖层下。  
 
 ```css
 #titleBarContainer {
@@ -373,7 +372,7 @@ The `titleBarContainer` ID uses `position: absolute` and sets the `top` to `titl
 }
 ```  
 
-The `titleBar` ID also uses `position: absolute` and `top: titlebar-area-inset-top` to attaches it to the top of the window.  By default, it consumes the full width of the window.  The `left` and `right` edges are set to `titlebar-area-inset-left` and `titlebar-area-inset-right` respectively, both fall back to `0` when the values aren't set.  It also sets `user-select: none` to prevent any attempts to drag the window consumed instead it highlights text in the `div` element.  
+`titleBar`ID 还使用 `position: absolute` 和 `top: titlebar-area-inset-top` ，以将它附加到窗口顶部。  默认情况下，它使用窗口的完整宽度。  和 边缘分别设置为 和 ，两者在未 `left` `right` 设置值 `titlebar-area-inset-left` `titlebar-area-inset-right` `0` 时回退。  它还设置 `user-select: none` 阻止任何尝试拖动占用的窗口，而是突出显示元素中的 `div` 文本。  
 
 ```css
 #titleBar {
@@ -403,7 +402,7 @@ The `titleBar` ID also uses `position: absolute` and `top: titlebar-area-inset-t
 }
 ```
 
-The container for the `mainContent` ID is also fixed in place with `position: absolute` and is attached to the bottom of the webpage.  The `height` is set to `titlebar-area-inset-bottom` and falls back to `100% - var(--fallback-titlebar-height)` to fill the remaining space below the title bar.  It sets `overflow-y: scroll` to allow the contents to scroll vertically in the container.  
+ID 的 `mainContent` 容器也与 固定在一起 `position: absolute` ，并附加到网页底部。  `height`设置为 并 `titlebar-area-inset-bottom` 回滚以填充 `100% - var(--fallback-titlebar-height)` 标题栏下方的剩余空间。  它 `overflow-y: scroll` 设置 允许内容在容器中垂直滚动。  
 
 ```css
 #mainContent {
@@ -416,9 +415,9 @@ The container for the `mainContent` ID is also fixed in place with `position: ab
 }
 ```
 
-For cases where the browser doesn't support the window controls overlay, a CSS variable is added to set a default height for the title bar.  The bounds of the `titleBarContainer` and `mainContent` IDs are initially set to fill the entire client area, and you don't need to change it if the overlay isn't supported.  
+对于浏览器不支持窗口控件覆盖的情况，添加 CSS 变量以设置标题栏的默认高度。  和 ID 的界限最初设置为填充整个客户端区域，如果覆盖层不受支持，则不需要 `titleBarContainer` `mainContent` 更改。  
 
-The following code snippet includes all of the recommended css updates.
+以下代码段包括所有建议的 CSS 更新。
 
 ```css
 :root {
@@ -485,7 +484,6 @@ body {
   overflow-y: scroll;
 }
 ```  
--->  
 
 ## <a name="run-on-os-login"></a>在操作系统登录时运行  
 
@@ -496,7 +494,7 @@ body {
 
 ### <a name="turn-on-run-on-os-login"></a>打开"在操作系统登录时运行"  
 
-若要为 PWA 启用 **"在操作系统**登录时运行"功能，[](#turn-on-experimental-features)请导航到"打开实验性功能"，然后打开"在操作系统登录时**运行桌面 PWA"。**  
+若要预览 PWA**的"在操作系统**登录时运行"功能，[](#turn-on-experimental-features)请导航到"打开实验性功能"，然后打开"在操作系统登录时**运行桌面 PWA"。**  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="打开在操作系统登录实验上运行的桌面 PBA" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    打开在**操作系统登录实验上运行的桌面 PBA**  
@@ -566,7 +564,7 @@ body {
 
 基于 Chromium 的浏览器正在测试和塑造此功能。  有关详细信息（包括代码示例），请导航到["允许 Web 应用程序成为文件处理程序"。][WebDevFileHandling]  
 
-若要预览适用于桌面 OS 的 Microsoft Edge 中的文件处理，请导航到打开实验[性](#turn-on-experimental-features)功能，然后打开文件**处理 API。**  
+若要预览适用于 Windows 10 的 Microsoft Edge 中的文件处理，请导航到打开实验[性](#turn-on-experimental-features)功能，然后打开文件**处理 API。**  
     
 ## <a name="providing-feedback-on-experimental-features"></a>提供有关试验功能的反馈  
 
