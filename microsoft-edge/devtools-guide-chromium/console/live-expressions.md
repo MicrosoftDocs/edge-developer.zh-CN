@@ -1,64 +1,95 @@
 ---
 description: 如果发现自己在控制台中重复键入相同的JavaScript表达式，请尝试使用动态表达式。
-title: 使用动态表达式实时监视 JavaScript 表达式值
+title: 使用 Live Expressions 实时观看 JavaScript 表达式值
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: af920de1c395489dc09b83f3cc0f24814c4f5cbe
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439224"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483119"
 ---
-<!-- Copyright Kayce Basques 
+# <a name="monitor-changes-in-javascript-using-live-expressions"></a><span data-ttu-id="8356a-104">使用 Live Expressions 监视 JavaScript 中的更改</span><span class="sxs-lookup"><span data-stu-id="8356a-104">Monitor changes in JavaScript using Live Expressions</span></span>  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+<span data-ttu-id="8356a-105">**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。</span><span class="sxs-lookup"><span data-stu-id="8356a-105">**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.</span></span>    <span data-ttu-id="8356a-106">你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是使许多控制台消息阅读和 **导航**。</span><span class="sxs-lookup"><span data-stu-id="8356a-106">Instead of having many Console messages to read and navigate, you may pin your specific JavaScript expressions to the top of the **Console**.</span></span>  
 
-       https://www.apache.org/licenses/LICENSE-2.0
+## <a name="add-a-new-live-expression"></a><span data-ttu-id="8356a-107">添加新实时表达式</span><span class="sxs-lookup"><span data-stu-id="8356a-107">Add a new live expression</span></span>  
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
+<span data-ttu-id="8356a-108">To start， choose the **Create live expression** \ (eye\) button next to the **Filter** textbox.</span><span class="sxs-lookup"><span data-stu-id="8356a-108">To start, choose the **Create live expression** \(eye\) button next to the **Filter** textbox.</span></span>  <span data-ttu-id="8356a-109">选择它后，将显示一个文本框，供您在文本框中输入新表达式。</span><span class="sxs-lookup"><span data-stu-id="8356a-109">After you choose it, a textbox is displayed for you to enter your new expression in it.</span></span>  
 
-# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a><span data-ttu-id="10177-104">使用动态表达式实时监视 JavaScript 表达式值</span><span class="sxs-lookup"><span data-stu-id="10177-104">Watch JavaScript expression values in real-time with Live Expressions</span></span>  
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择"新建实时表达式"按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
+    <span data-ttu-id="8356a-111">选择 `New live expression` 按钮以打开文本框以键入表达式</span><span class="sxs-lookup"><span data-stu-id="8356a-111">Choose the `New live expression` button to open a textbox to type an expression</span></span>  
+:::image-end:::  
 
-<span data-ttu-id="10177-105">如果发现自己在控制台中重复键入相同的JavaScript表达式，则可能会发现创建**实时表达式**更容易。</span><span class="sxs-lookup"><span data-stu-id="10177-105">If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.</span></span>  <span data-ttu-id="10177-106">使用**实时表达式**键入表达式一次，然后将其固定到控制台顶部。</span><span class="sxs-lookup"><span data-stu-id="10177-106">With **Live Expressions** you type an expression once and then pin it to the top of your Console.</span></span>  <span data-ttu-id="10177-107">表达式的值几乎实时更新。</span><span class="sxs-lookup"><span data-stu-id="10177-107">The value of the expression updates in near real-time.</span></span>  
+<span data-ttu-id="8356a-112">**Live Expressions** 可能是任何有效的 JavaScript 表达式。</span><span class="sxs-lookup"><span data-stu-id="8356a-112">**Live Expressions** may be any valid JavaScript expression.</span></span>  <span data-ttu-id="8356a-113">若要尝试，请完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="8356a-113">To try it, complete the following actions.</span></span>  
 
-## <a name="create-a-live-expression"></a><span data-ttu-id="10177-108">创建动态表达式</span><span class="sxs-lookup"><span data-stu-id="10177-108">Create a Live Expression</span></span>  
+1.  <span data-ttu-id="8356a-114">打开 **Live Expression** 文本框。</span><span class="sxs-lookup"><span data-stu-id="8356a-114">Open the **Live Expression** textbox.</span></span>  
+1.  <span data-ttu-id="8356a-115">键入 `document.activeElement`。</span><span class="sxs-lookup"><span data-stu-id="8356a-115">Type `document.activeElement`.</span></span>  
+1.  <span data-ttu-id="8356a-116">若要保存表达式，请完成以下操作之一。</span><span class="sxs-lookup"><span data-stu-id="8356a-116">To save the expression, complete one of the following actions.</span></span>  
+    *   <span data-ttu-id="8356a-117">选择 `Control`+`Enter`（Windows、Linux）或 `Command`+`Enter` (macOS)。</span><span class="sxs-lookup"><span data-stu-id="8356a-117">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).</span></span>  
+    *   <span data-ttu-id="8356a-118">在 **"Live Expression"文本框之外** 选择。</span><span class="sxs-lookup"><span data-stu-id="8356a-118">Choose outside the **Live Expression** textbox.</span></span>  
+        
+<span data-ttu-id="8356a-119">表达式现在为活动表达式， `body` 并显示为结果。</span><span class="sxs-lookup"><span data-stu-id="8356a-119">The expression is now live and displays `body` as the result.</span></span>  
 
-1.  <span data-ttu-id="10177-109">[打开控制台][DevToolsConsoleReferenceOpenConsole]。</span><span class="sxs-lookup"><span data-stu-id="10177-109">[Open the Console][DevToolsConsoleReferenceOpenConsole].</span></span>  
-1.  <span data-ttu-id="10177-110">选择“**创建动态表达式**” \(![创建动态表达式](../media/create-live-expression-icon.msft.png)\)。</span><span class="sxs-lookup"><span data-stu-id="10177-110">Choose **Create Live Expression** \(![Create Live Expression](../media/create-live-expression-icon.msft.png)\).</span></span>  <span data-ttu-id="10177-111">“**创建动态表达式**”文本框出现。</span><span class="sxs-lookup"><span data-stu-id="10177-111">The **Live Expression** text box appears.</span></span>  
+:::image type="complex" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="document.activeElement 实时表达式将正文显示为结果" lightbox="../media/console-live-expressions-document-active-element.msft.png":::
+    <span data-ttu-id="8356a-121">结果中 `document.activeElement` 显示正文的 Live 表达式</span><span class="sxs-lookup"><span data-stu-id="8356a-121">Live expression for `document.activeElement` displays body as the result</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="8356a-122">如果在网页中导航，值将发生更改。</span><span class="sxs-lookup"><span data-stu-id="8356a-122">If you navigate around the webpage, the value changes.</span></span>  <span data-ttu-id="8356a-123">例如，在下图中，在网页中打开搜索菜单，表达式现在 `button.nav-bar-button.focus-visible` 显示为值。</span><span class="sxs-lookup"><span data-stu-id="8356a-123">For example, in the following figure you open the search menu in the webpage and the expression now displays `button.nav-bar-button.focus-visible` as the value.</span></span>  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="若要更改 Live Expression 的值，请与网页上的不同元素交互" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
+    <span data-ttu-id="8356a-125">若要更改 **Live Expression 的值，** 请与网页上的不同元素交互</span><span class="sxs-lookup"><span data-stu-id="8356a-125">To change the value of the **Live Expression**, interact with different elements on the webpage</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="8356a-126">若要再次更改该值，请打开并选择网页上的"搜索"文本框。</span><span class="sxs-lookup"><span data-stu-id="8356a-126">To change the value again, open and choose the Search textbox on the webpage.</span></span>  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="导航到网页中的不同元素以更新 Live Expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+    <span data-ttu-id="8356a-128">导航到网页中的不同元素以更新 Live **Expression**</span><span class="sxs-lookup"><span data-stu-id="8356a-128">Navigate to a different element in the webpage to update the **Live Expression**</span></span>  
+:::image-end:::  
+
+## <a name="remove-live-expressions"></a><span data-ttu-id="8356a-129">删除 Live Expressions</span><span class="sxs-lookup"><span data-stu-id="8356a-129">Remove Live Expressions</span></span>  
+
+<span data-ttu-id="8356a-130">只要 **使 Live Expression** 保持活动状态，该表达式就可用。</span><span class="sxs-lookup"><span data-stu-id="8356a-130">A **Live Expression** is available as long as you keep it active.</span></span>  <span data-ttu-id="8356a-131">若要删除 Live **Expression，** 请选择它的 `x` 旁边。</span><span class="sxs-lookup"><span data-stu-id="8356a-131">To get rid of a **Live Expression**, choose the `x` next to it.</span></span>  
+
+:::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="若要删除 Live Expressions，请选择其旁边的 x" lightbox="../media/console-live-expressions-remove.msft.png":::
+    <span data-ttu-id="8356a-133">若要删除 **Live Expressions，** 请选择 `x` 其旁边的</span><span class="sxs-lookup"><span data-stu-id="8356a-133">To remove **Live Expressions**, choose the `x` next to it</span></span>  
+:::image-end:::  
+
+## <a name="replace-console-logging-with-live-expressions"></a><span data-ttu-id="8356a-134">将控制台日志记录替换为 Live Expressions</span><span class="sxs-lookup"><span data-stu-id="8356a-134">Replace Console logging with Live Expressions</span></span>  
+
+<span data-ttu-id="8356a-135">您可以创建多个表达式，并跨浏览器会话和窗口保留每个表达式。</span><span class="sxs-lookup"><span data-stu-id="8356a-135">You may create as many expressions as you want and persist each across browser sessions and windows.</span></span>  <span data-ttu-id="8356a-136">**实时** 表达式是一种减少调试工作流中的噪音的方法。</span><span class="sxs-lookup"><span data-stu-id="8356a-136">**Live Expressions** are a way to cut down on noise in your debugging workflow.</span></span>  
+
+<span data-ttu-id="8356a-137">例如，您希望监视当前网页中的鼠标移动。</span><span class="sxs-lookup"><span data-stu-id="8356a-137">For example, you want to monitor the mouse movement in the current webpage.</span></span>  <span data-ttu-id="8356a-138">导航到 ["记录鼠标移动][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]"演示，打开 **控制台**，并四处移动鼠标以显示包含大量信息的日志。</span><span class="sxs-lookup"><span data-stu-id="8356a-138">Navigate to [Logging Mouse Movement demo][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml], open the **Console**, and move your mouse around to display the logs with a lot of information.</span></span>  
+
+:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="控制台显示有关鼠标位置的很多信息" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+    <span data-ttu-id="8356a-140">**控制台** 显示有关鼠标位置的很多信息</span><span class="sxs-lookup"><span data-stu-id="8356a-140">**Console** displays much information on mouse position</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="8356a-141">大量信息不仅会减慢调试过程，还易于错过想要查看的更改。</span><span class="sxs-lookup"><span data-stu-id="8356a-141">The large amount of information not only slows your debug process, but also makes it easy to miss the changes you want to review.</span></span>  <span data-ttu-id="8356a-142">当 **控制台** 显示更多消息并移动鼠标时，你想要查看的值将滚动到屏幕上。</span><span class="sxs-lookup"><span data-stu-id="8356a-142">As the **Console** displays more messages and you move your mouse, the values you want to review scroll off the screen.</span></span>  
+
+<span data-ttu-id="8356a-143">若要尝试 **Live Expressions** 作为替代方法，请完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="8356a-143">To try **Live Expressions** as an alternative, complete the following actions.</span></span>  
+
+1.  <span data-ttu-id="8356a-144">导航到鼠标 [移动而不记录演示][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]。</span><span class="sxs-lookup"><span data-stu-id="8356a-144">Navigate to the [Mouse movement without logging demo][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml].</span></span>  
+1.  <span data-ttu-id="8356a-145">为 和 创建 **Live** `x` `y` Expressions。</span><span class="sxs-lookup"><span data-stu-id="8356a-145">Create **Live Expressions** for `x` and `y`.</span></span>  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="在动态表达式文本框中键入 document.activeElement" lightbox="../media/console-create-live-expression.msft.png":::
-       <span data-ttu-id="10177-113">将 `document.activeElement` 键入**动态表达式**文本框</span><span class="sxs-lookup"><span data-stu-id="10177-113">Typing `document.activeElement` into the **Live Expression** text box</span></span>  
-    :::image-end:::  
-    
-1.  <span data-ttu-id="10177-114">选择`Control`+`Enter` \(Windows、Linux\) 或 `Command`+`Enter` \(macOS\) 以保存表达式，或选择“ 动态表达式”文本框之外的内容。</span><span class="sxs-lookup"><span data-stu-id="10177-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
+<span data-ttu-id="8356a-146">使用**Live Expressions 时**，始终在屏幕的相同部分获取信息，并保留控制台\*\*\*\* 日志，查看不会更改太多值。</span><span class="sxs-lookup"><span data-stu-id="8356a-146">When you use **Live Expressions**, you always get the information on the same part of your screen and keep **Console** logs for values that don't change as much.</span></span>
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="10177-115">联系 Microsoft Edge 开发工具团队</span><span class="sxs-lookup"><span data-stu-id="10177-115">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="将鼠标的 x 和 y 位置显示为 Live Expressions" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+    <span data-ttu-id="8356a-148">将 `x` 鼠标 `y` 的 和 位置显示为 Live **Expressions**</span><span class="sxs-lookup"><span data-stu-id="8356a-148">Display the `x` and `y` position of the mouse as **Live Expressions**</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="8356a-149">**Live Expressions** 以独占方式在计算机上运行，无需更改代码中要显示任何内容。</span><span class="sxs-lookup"><span data-stu-id="8356a-149">**Live Expressions** run exclusively on your computer and you don't need to change anything in your code to display.</span></span>  <span data-ttu-id="8356a-150">**实时** 表达式是确保您仅显示要调试的信息的一种很好的方法。</span><span class="sxs-lookup"><span data-stu-id="8356a-150">**Live Expressions** are a great way to ensure that you only display the information you want to debug.</span></span>  <span data-ttu-id="8356a-151">此外 **，Live Expressions** 还可帮助您限制用户计算机上的噪音。</span><span class="sxs-lookup"><span data-stu-id="8356a-151">Also, **Live Expressions** help you limit the noise on your users' computers.</span></span>
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="8356a-152">与 Microsoft Edge 开发人员工具团队联系</span><span class="sxs-lookup"><span data-stu-id="8356a-152">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "打开控制台 - 控制台参考 | Microsoft Docs"  
-
-> [!NOTE]
-> <span data-ttu-id="10177-117">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="10177-117">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="10177-118">原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。</span><span class="sxs-lookup"><span data-stu-id="10177-118">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
-
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="10177-120">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="10177-120">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "控制台消息示例：使用表|GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "无需日志记录即可移动鼠标|GitHub"  
