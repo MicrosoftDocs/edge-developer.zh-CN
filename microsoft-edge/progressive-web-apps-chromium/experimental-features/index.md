@@ -7,12 +7,12 @@ ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 实验， 渐进式 Web 应用， Web 应用， PWA， PWA
-ms.openlocfilehash: 5ab2ab0a727d1eb52f61a01ea64b52bc1c09abce
-ms.sourcegitcommit: f6a3ab7b13adf05dbe7a4bf65ee67c9b0f6fab95
+ms.openlocfilehash: 20bc4c90c1fe30be360b44294966415823f9b3a6
+ms.sourcegitcommit: 4c6b74b9cdfca73c410d9eba9b42d229b695ee4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "11482146"
+ms.locfileid: "11482441"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>渐进式 Web 应用和 PBA (实验)   
 
@@ -94,7 +94,7 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
     
 如果多个应用注册协议，则向用户显示提示。  用户从操作系统或浏览器呈现的列表中选择相应的应用。  
 
-若要在 Windows 上的 Microsoft Edge 中[](#turn-on-experimental-features)预览协议处理，请导航到打开实验性功能，然后打开**桌面 Web 应用支持协议处理程序**。  
+若要在 Windows 上的 Microsoft Edge 中[](#turn-on-experimental-features)预览协议处理，请导航到打开实验性功能，然后打开**桌面 PWA 协议处理**。  
 
 有关为协议处理程序运行的源试用版详细信息，请导航到注册 [Web 应用协议处理程序注册][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]。  
 

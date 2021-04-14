@@ -1,145 +1,192 @@
 ---
-description: Microsoft Edge DevTools 控制台的主要用途是记录消息并运行 JavaScript。
-title: 控制台概述
+description: Microsoft Edge 开发人员工具中的控制台工具简介。
+title: 使用控制台
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 496caa4d304d9511d4b1c341846f377899ba4597
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399118"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483183"
 ---
-<!-- Copyright Kayce Basques 
+# <a name="use-the-console"></a>使用控制台  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表包含一些任务。  
 
-       https://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
-
-# <a name="console-overview"></a>控制台概述  
-
-  
-
-此页面介绍了 Microsoft Edge DevTools 控制台如何更轻松地开发网页。  控制台**有**两个主要用途：[查看记录的消息](#viewing-logged-messages)和[运行 JavaScript。](#running-javascript)  
-
-## <a name="viewing-logged-messages"></a>查看记录的消息  
-
-Web 开发人员通常会将消息记录到控制台，以确保其 JavaScript 正常工作。  若要记录消息，请将类似表达式插入 `console.log('Hello, Console!')` JavaScript 中。  当浏览器运行 JavaScript 并处理类似表达式时，浏览器会向控制台记录 **消息**。  
+*   了解为什么某些内容在当前项目中无法工作， [并跟踪问题][DevtoolsConsoleConsoleDebugJavascript]。  
+*   [以日志消息获取有关浏览器中][DevtoolsConsoleConsoleFilters] Web 项目的信息。  
+*   [将信息][DevtoolsConsoleConsoleLog] 记录在脚本中以便进行调试。  
+*   [尝试 JavaScript 表达式][DevtoolsConsoleConsoleJavascript] 在 [REPL 环境中][WikiReadEvalPrintLoop] 活动。  
+*   使用 JavaScript[与浏览器中][DevtoolsConsoleConsoleDomInteraction]的 Web 项目交互。  
+    
+控制台 **是** 一款很好的配套工具，可用于其他工具。  控制台 **提供了** 一种使用 JavaScript 编写功能、检查和处理当前网页的功能强大的方法。  
 
 :::row:::
    :::column span="":::
-      页面的 HTML 和 JavaScript。  
-      
-      ```html
-      <!doctype html>
-      <html>
-          <head>
-              <title>Console Demo</title>
-          </head>
-          <body>
-              <h1>Hello, World!</h1>
-              <script>
-                  console.log('Loading!');
-                  const h1 = document.querySelector('h1');
-                  console.log(h1.textContent);
-                  console.assert(document.querySelector('h2'), 'h2 not found!');
-                  const artists = [
-                      { first: 'René', last: 'Magritte' },
-                      { first: 'Chaim', last: 'Soutine' },
-                        
-                  ];
-                  console.table(artists);
-                  setTimeout(() => {
-                      h1.textContent = 'Hello, Console!';
-                      console.log(h1.textContent);
-                  }, 3000);
-              </script>
-          </body>
-      </html>
-      ```  
+      :::image type="complex" source="../media/console-intro-console-main.msft.png" alt-text="控制台工具在上方面板中打开" lightbox="../media/console-intro-console-main.msft.png":::
+         控制台 **工具** 在上方面板中打开  
+      :::image-end:::  
    :::column-end:::
    :::column span="":::
-      下图中 **，控制台显示** 加载页面并等待 3 秒的结果。  
-      
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="控制台面板" lightbox="../media/console-console-demo.msft.png":::
-         控制台**工具**  
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开"元素"工具" lightbox="../media/console-intro-console-panel.msft.png":::
+         **下** 面板中的控制台，其上方打开 **"元素** "工具  
       :::image-end:::  
-      
-      尝试确定哪些代码行导致浏览器记录消息。  
    :::column-end:::
 :::row-end:::  
 
-Web 开发人员出于以下 2 个一般原因记录消息。  
+直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
 
-*   确保代码按正确的顺序运行。  
-*   检查某个时刻的变量值。  
+## <a name="error-reports-and-console"></a>错误报告和控制台  
 
-若要获得日志记录的动手体验，请导航到"[日志记录消息入门"。][DevtoolsConsoleLoggingMessages]  若要浏览方法的完整 `console` 列表，请导航到控制台 [API 参考][DevToolsConsoleAPI]。  方法之间的主要区别在于所记录数据的显示方式。  
+**控制台** 是报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，DevTools 中的****"设置"图标旁边会显示一个按钮，该按钮提供错误和警告的数量。  选择它以打开 **控制台** 并显示问题。  有关详细信息，请导航到"[控制台"中报告的"调试错误"。][DevtoolsConsoleConsoleDebugJavascript]  
 
-## <a name="running-javascript"></a>运行 JavaScript  
+:::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息" lightbox="../media/console-debug-displays-error.msft.png":::
+   DevTools 提供有关控制台中错误 **的详细信息**  
+:::image-end:::  
 
-控制台**也是**一个[REPL。][WikiREPLoop]  您可以在控制台中运行 JavaScript **以与** 正在检查的页面进行交互。   
+## <a name="inspect-and-filter-information-on-the-current-webpage"></a>检查和筛选当前网页上的信息  
 
-:::row:::
-   :::column span="":::
-      下图中， **控制台显示在** DevTools 主页旁边。  
-      
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="DevTools 主页旁边的控制台工具" lightbox="../media/devtools-console-empty.msft.png":::
-         DevTools 主页旁边的控制台工具****  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      在下图中，使用控制台更改页面顶部标题后将显示同**** 一页。
-      
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="使用控制台更改页面顶部标题" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         使用 **控制台** 更改页面顶部标题  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::
+当你在网页上打开 DevTools 时，你很可能会显示记录到控制台的一些 **信息**。  当您需要识别重要信息时，信息量将成为一个问题。  若要查看需要采取措施的重要信息，请使用 DevTools [中的问题][DevtoolsIssuesIndex] 工具。  大部分噪音仍然存在，这就是在控制台中了解自动日志和 [筛选器][DevtoolsConsoleConsoleFilters] 选项的一个好 **办法的原因**。  
 
-从控制台修改页面 **是可能的** ，因为 **控制台** 具有对页面 [窗口][MDNWindow] 的完全访问权限。  DevTools 具有一些方便功能，可更轻松地检查页面。  例如，假设你的 JavaScript 包含一个称为 `hideModal` .的函数。  运行 `debug(hideModal)` 将暂停下一次运行时代码的第 `hideModal` 一行。  有关实用程序函数的完整列表详细信息，请导航到 [控制台实用工具 API 参考][DevtoolsConsoleUtilitiesDebug]。  
+:::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="包含控制台的完整消息的 DevTools" lightbox="../media/console-intro-noise.msft.png":::
+   包含控制台的完整 **消息** 的 DevTools  
+:::image-end:::  
 
-运行 JavaScript 时，不需要与页面交互。  您可以使用控制台 **来** 尝试与页面无关的新代码。  例如，假设你刚刚了解了内置的 JavaScript 数组映射 [ () ][MDNMap] 方法，并且你想要试验它。  
-**控制台**是试用该函数的一个好位置。  
+## <a name="log-information-to-display-in-the-console"></a>要显示在控制台中的日志信息  
 
-有关在控制台中运行 JavaScript 的更多实践体验 **，请导航**到"运行 JavaScript 入门["。][DevtoolsConsoleRunningJavascript]  
+控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要尝试，请完成以下操作。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+1.  若要打开**控制台**，请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
+1.  导航到 [控制台消息示例：日志、信息、错误和警告][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]，或在控制台中复制并运行以下 **代码段**。  
+    
+    ```javascript
+    console.log('This is a log message');
+    console.info('This is some information'); 
+    console.error('This is an error');
+    console.warn('This is a warning');
+    console.log(document.body.getBoundingClientRect());
+    console.table(document.body.getBoundingClientRect());
+    let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
+    console.groupCollapsed('Technolgies');
+    technologies.forEach(tech => {console.info(tech);})
+    console.groupEnd('Technolgies');
+    ```  
+    
+1.  控制台 **显示** 结果。  
+    
+    :::image type="complex" source="../media/console-intro-logging.msft.png" alt-text="控制台已满由演示代码导致的消息" lightbox="../media/console-intro-logging.msft.png":::
+       **控制台** 已满由演示代码导致的消息  
+    :::image-end:::  
+    
+使用控制台 时，可以使用许多有用的 **方法**。  有关详细信息，请导航到"[控制台"工具中的"记录消息"。][DevtoolsConsoleConsoleLog]  
+
+## <a name="try-your-javascript-live-in-the-console"></a>在控制台中尝试 JavaScript 实时  
+
+**控制台**不仅仅是记录信息的位置。  控制台 **是** 一个 [REPL][WikiReadEvalPrintLoop] 环境。  在控制台中编写任何 JavaScript **时**，代码会立即运行。  你会发现测试一些新的 JavaScript 功能或执行一些快速计算会很有用。  此外，还可以从新式编辑环境获取所有预期功能，如自动完成、语法突出显示和历史记录。  若要尝试，请完成以下操作。  
+
+1.  导航到 **控制台**。  
+1.  键入 `2 + 2`。  
+    
+控制台 **将在** 以下行 `4` 中显示结果。  此 **"期待** "评估功能可用于调试和验证代码中没有出错。  
+
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="控制台会在你键入时显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   **控制台**会在您键入 `2 + 2` 实时内容时显示它的结果  
+:::image-end:::  
+
+若要在控制台中运行 JavaScript**** 表达式并选择性地显示结果，请选择 `Enter` 。  然后，你可以编写下一个 JavaScript 代码以在控制台 **中运行**。  
+
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="连续运行几行 JavaScript 代码" lightbox="../media/console-javascript-several-expressions.msft.png":::
+   连续运行几行 JavaScript 代码  
+:::image-end:::  
+
+默认情况下，在单行中运行 JavaScript 代码。  若要运行一行，请键入 JavaScript，然后选择 `Enter` 。  若要绕绕单行限制，请选择 `Shift` + `Enter` 而不是 `Enter` 。  与其他命令行体验类似，若要访问之前的 JavaScript 命令，请选择 `Arrow-Up` 。  控制台的自动完成 **功能是了解** 不熟悉的方法的一种很好的方法。  若要尝试，请完成以下操作。  
+
+1.  打开“**控制台**”。  
+1.  键入 `doc`。  
+1.  从 `document` 下拉菜单中选择。  
+1.  选择 `tab` 密钥进行选择。  
+1.  键入 `.bo`。  
+1.  选择 `tab` 获取 `document.body` 。  
+1.  键入另 `.` 一个，以显示当前网页正文中可用的属性和方法的完整列表。  
+    
+有关使用控制台的所有方法详细信息，请导航到****[作为 JavaScript 环境的控制台][DevtoolsConsoleConsoleJavascript]。  
+
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="JavaScript 表达式的控制台自动完成" lightbox="../media/console-javascript-autocomplete.msft.png":::
+   **** JavaScript 表达式的控制台自动完成  
+:::image-end:::  
+
+## <a name="interact-with-the-current-webpage-in-the-browser"></a>在浏览器中与当前网页交互  
+
+**控制台**有权访问浏览器[的 Window][MdnDocsWebApiWindow]对象。  您可以编写与当前网页交互的脚本。  若要尝试，请完成以下操作。  
+
+1.  打开“**控制台**”。  
+1.  复制并粘贴以下代码段。  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML
+    ```  
+    
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="复制顶部标题 (h1) DOM 中的内容并显示在控制台中" lightbox="../media/console-intro-reading-DOM.msft.png":::
+   从 DOM 复制顶部标题 `h1` \ (\) 内容，并显示在 **控制台中**  
+:::image-end:::  
+
+您还可以更改它，而不是仅从网页中读取。  若要尝试，请完成以下操作。  
+
+1.  打开“**控制台**”。  
+1.  复制并粘贴以下代码段。  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML = 'Rocking the Console';
+    ```  
+    
+:::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="在控制台中向 DOM 写入文本" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+   在控制台中向 DOM 写入 **文本**  
+:::image-end:::  
+
+将网页的主要标题更改为 **"摇动控制台"。**  控制台 **实用程序** 方法使访问和操作当前网页变得容易。  有关详细信息，请导航到 [控制台实用程序 API 参考][DevtoolsConsoleUtilities]。  例如，若要在当前网页中所有链接周围添加绿色边框，请完成以下操作。  
+
+1.  打开“**控制台**”。  
+1.  复制并粘贴以下代码段。  
+    
+    ```javascript
+    $$('a').forEach(a => a.style.border='1px solid lime');
+    ```  
+    
+
+:::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="使用控制台操作选定元素" lightbox="../media/console-intro-changing-styles.msft.png":::
+    使用控制台操作选定 **元素**  
+:::image-end:::  
+
+有关使用 DOM 的信息，请导航到"[使用控制台与 DOM 进行交互"。][DevtoolsConsoleConsoleDomInteraction]  
+
+## <a name="learn-more-about-console"></a>详细了解控制台  
+
+有关控制台详细信息 **，** 请导航到"控制台[][DevtoolsConsoleReference]参考["、"控制台实用程序 API][DevtoolsConsoleUtilities]参考"和"[控制台 API 参考"。][DevtoolsConsoleApi]  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "控制台 API 参考|Microsoft Docs"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "开始在控制台中记录|Microsoft Docs"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "开始在控制台中运行 JavaScript |Microsoft Docs"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug - 控制台实用工具 API 参考|Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"  
+[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "在控制台控制台中报告的调试|Microsoft Docs"  
+[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "使用控制台与 DOM 服务器|Microsoft Docs" 
+[DevtoolsConsoleConsoleFilters]: ./console-filters.md "筛选控制台消息|Microsoft Docs"  
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "在控制台工具控制台中记录|Microsoft Docs"  
+[DevtoolsConsoleReference]: ./reference.md "控制台参考|Microsoft Docs"  
+[DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map () |MDN"  
-[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口|MDN"  
+[DevtoolsIssuesIndex]: ../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval–print 循环 - Wikipedia"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "控制台消息示例：日志、信息、错误和警告|GitHub"  
 
-> [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
+[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口|MDN"  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval–print 循环|Wikipedia"  

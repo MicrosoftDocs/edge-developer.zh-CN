@@ -174,13 +174,19 @@
                 - name: 控制台概述
                   href: devtools-guide-chromium/console/index.md
                 - name: 日志消息
-                  href: devtools-guide-chromium/console/log.md
+                  href: devtools-guide-chromium/console/console-log.md
                 - name: 运行 JavaScript
-                  href: devtools-guide-chromium/console/javascript.md
+                  href: devtools-guide-chromium/console/console-javascript.md
                 - name: 参考
                   href: devtools-guide-chromium/console/reference.md
                 - name: 实时观看 JavaScript 表达式
                   href: devtools-guide-chromium/console/live-expressions.md
+                - name: 调试控制台错误
+                  href: devtools-guide-chromium/console/console-debug-javascript.md
+                - name: 与 DOM 交互
+                  href: devtools-guide-chromium/console/console-dom-interaction.md
+                - name: 筛选控制台消息
+                  href: devtools-guide-chromium/console/console-filters.md
             - name: 覆盖范围
               href: devtools-guide-chromium/coverage/index.md
             - name: 元素

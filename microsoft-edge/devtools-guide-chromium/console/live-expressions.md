@@ -1,64 +1,95 @@
 ---
 description: 如果发现自己在控制台中重复键入相同的JavaScript表达式，请尝试使用动态表达式。
-title: 使用动态表达式实时监视 JavaScript 表达式值
+title: 使用 Live Expressions 实时观看 JavaScript 表达式值
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: af920de1c395489dc09b83f3cc0f24814c4f5cbe
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439224"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483119"
 ---
-<!-- Copyright Kayce Basques 
+# <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是使许多控制台消息阅读和 **导航**。  
 
-       https://www.apache.org/licenses/LICENSE-2.0
+## <a name="add-a-new-live-expression"></a>添加新实时表达式  
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
+To start， choose the **Create live expression** \ (eye\) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。  
 
-# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>使用动态表达式实时监视 JavaScript 表达式值  
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择"新建实时表达式"按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
+    选择 `New live expression` 按钮以打开文本框以键入表达式  
+:::image-end:::  
 
-如果发现自己在控制台中重复键入相同的JavaScript表达式，则可能会发现创建**实时表达式**更容易。  使用**实时表达式**键入表达式一次，然后将其固定到控制台顶部。  表达式的值几乎实时更新。  
+**Live Expressions** 可能是任何有效的 JavaScript 表达式。  若要尝试，请完成以下操作。  
 
-## <a name="create-a-live-expression"></a>创建动态表达式  
+1.  打开 **Live Expression** 文本框。  
+1.  键入 `document.activeElement`。  
+1.  若要保存表达式，请完成以下操作之一。  
+    *   选择 `Control`+`Enter`（Windows、Linux）或 `Command`+`Enter` (macOS)。  
+    *   在 **"Live Expression"文本框之外** 选择。  
+        
+表达式现在为活动表达式， `body` 并显示为结果。  
 
-1.  [打开控制台][DevToolsConsoleReferenceOpenConsole]。  
-1.  选择“**创建动态表达式**” \(![创建动态表达式](../media/create-live-expression-icon.msft.png)\)。  “**创建动态表达式**”文本框出现。  
+:::image type="complex" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="document.activeElement 实时表达式将正文显示为结果" lightbox="../media/console-live-expressions-document-active-element.msft.png":::
+    结果中 `document.activeElement` 显示正文的 Live 表达式  
+:::image-end:::  
+
+如果在网页中导航，值将发生更改。  例如，在下图中，在网页中打开搜索菜单，表达式现在 `button.nav-bar-button.focus-visible` 显示为值。  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="若要更改 Live Expression 的值，请与网页上的不同元素交互" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
+    若要更改 **Live Expression 的值，** 请与网页上的不同元素交互  
+:::image-end:::  
+
+若要再次更改该值，请打开并选择网页上的"搜索"文本框。  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="导航到网页中的不同元素以更新 Live Expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+    导航到网页中的不同元素以更新 Live **Expression**  
+:::image-end:::  
+
+## <a name="remove-live-expressions"></a>删除 Live Expressions  
+
+只要 **使 Live Expression** 保持活动状态，该表达式就可用。  若要删除 Live **Expression，** 请选择它的 `x` 旁边。  
+
+:::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="若要删除 Live Expressions，请选择其旁边的 x" lightbox="../media/console-live-expressions-remove.msft.png":::
+    若要删除 **Live Expressions，** 请选择 `x` 其旁边的  
+:::image-end:::  
+
+## <a name="replace-console-logging-with-live-expressions"></a>将控制台日志记录替换为 Live Expressions  
+
+您可以创建多个表达式，并跨浏览器会话和窗口保留每个表达式。  **实时** 表达式是一种减少调试工作流中的噪音的方法。  
+
+例如，您希望监视当前网页中的鼠标移动。  导航到 ["记录鼠标移动][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]"演示，打开 **控制台**，并四处移动鼠标以显示包含大量信息的日志。  
+
+:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="控制台显示有关鼠标位置的很多信息" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+    **控制台** 显示有关鼠标位置的很多信息  
+:::image-end:::  
+
+大量信息不仅会减慢调试过程，还易于错过想要查看的更改。  当 **控制台** 显示更多消息并移动鼠标时，你想要查看的值将滚动到屏幕上。  
+
+若要尝试 **Live Expressions** 作为替代方法，请完成以下操作。  
+
+1.  导航到鼠标 [移动而不记录演示][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]。  
+1.  为 和 创建 **Live** `x` `y` Expressions。  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="在动态表达式文本框中键入 document.activeElement" lightbox="../media/console-create-live-expression.msft.png":::
-       将 `document.activeElement` 键入**动态表达式**文本框  
-    :::image-end:::  
-    
-1.  选择`Control`+`Enter` \(Windows、Linux\) 或 `Command`+`Enter` \(macOS\) 以保存表达式，或选择“** 动态表达式**”文本框之外的内容。  
+使用**Live Expressions 时**，始终在屏幕的相同部分获取信息，并保留控制台**** 日志，查看不会更改太多值。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="将鼠标的 x 和 y 位置显示为 Live Expressions" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+    将 `x` 鼠标 `y` 的 和 位置显示为 Live **Expressions**  
+:::image-end:::  
+
+**Live Expressions** 以独占方式在计算机上运行，无需更改代码中要显示任何内容。  **实时** 表达式是确保您仅显示要调试的信息的一种很好的方法。  此外 **，Live Expressions** 还可帮助您限制用户计算机上的噪音。
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "打开控制台 - 控制台参考 | Microsoft Docs"  
-
-> [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
-
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "控制台消息示例：使用表|GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "无需日志记录即可移动鼠标|GitHub"  
