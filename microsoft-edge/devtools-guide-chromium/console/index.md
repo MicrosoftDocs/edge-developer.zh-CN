@@ -33,7 +33,7 @@ ms.locfileid: "11483183"
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开"元素"工具" lightbox="../media/console-intro-console-panel.msft.png":::
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开元素工具" lightbox="../media/console-intro-console-panel.msft.png":::
          <span data-ttu-id="53c37-117">**下** 面板中的控制台，其上方打开 **"元素** "工具</span><span class="sxs-lookup"><span data-stu-id="53c37-117">**Console** in the lower panel with the **Elements** tool open above it</span></span>  
       :::image-end:::  
    :::column-end:::
