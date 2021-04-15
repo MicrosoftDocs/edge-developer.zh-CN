@@ -22,7 +22,7 @@ ms.locfileid: "11483119"
 
 <span data-ttu-id="8356a-108">To start， choose the **Create live expression** \ (eye\) button next to the **Filter** textbox.</span><span class="sxs-lookup"><span data-stu-id="8356a-108">To start, choose the **Create live expression** \(eye\) button next to the **Filter** textbox.</span></span>  <span data-ttu-id="8356a-109">选择它后，将显示一个文本框，供您在文本框中输入新表达式。</span><span class="sxs-lookup"><span data-stu-id="8356a-109">After you choose it, a textbox is displayed for you to enter your new expression in it.</span></span>  
 
-:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择"新建实时表达式"按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择新建实时表达式按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
     <span data-ttu-id="8356a-111">选择 `New live expression` 按钮以打开文本框以键入表达式</span><span class="sxs-lookup"><span data-stu-id="8356a-111">Choose the `New live expression` button to open a textbox to type an expression</span></span>  
 :::image-end:::  
 
