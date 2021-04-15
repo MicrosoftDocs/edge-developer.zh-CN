@@ -69,13 +69,13 @@ document.querySelector('header').style.border = '2em solid green'
 1.  <span data-ttu-id="58f2a-132">选择它，DevTools 跳转到 **"元素"** 工具。</span><span class="sxs-lookup"><span data-stu-id="58f2a-132">Choose it and DevTools jumps to the **Elements** tool.</span></span>  
 1.  <span data-ttu-id="58f2a-133">选择 `...` DOM 视图中元素旁边的菜单。</span><span class="sxs-lookup"><span data-stu-id="58f2a-133">Choose the `...` menu next to the element in the DOM view.</span></span>  
     
-    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在"元素"工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
+    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在元素工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         <span data-ttu-id="58f2a-135">所选元素显示在"元素"工具的 DOM **树中，** 选择溢出菜单以获取更多功能</span><span class="sxs-lookup"><span data-stu-id="58f2a-135">The chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="58f2a-136">打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。</span><span class="sxs-lookup"><span data-stu-id="58f2a-136">Open the contextual menu and choose `Copy` > `Copy JS Path`.</span></span>  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从"元素"工具的 DOM 视图中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从元素工具的 DOM 视图中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         <span data-ttu-id="58f2a-138">从"元素"工具的 DOM 视图中的元素复制 JavaScript**路径**</span><span class="sxs-lookup"><span data-stu-id="58f2a-138">Copy the JavaScript path from an element in the DOM view of the **Elements** tool</span></span>  
     :::image-end:::  
     
