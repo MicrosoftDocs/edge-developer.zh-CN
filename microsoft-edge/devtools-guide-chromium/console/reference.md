@@ -67,7 +67,7 @@ ms.locfileid: "11483263"
 
 <span data-ttu-id="146c9-126">若要从命令**菜单**打开控制台工具[][DevtoolsCommandMenuIndex]，请键入 ，然后运行旁边有"箱"锁屏提醒的"显示 `Console` 控制台"命令。 \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="146c9-126">To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.</span></span>  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在"箱"中显示 **Console** 工具" lightbox="../media/console-command-menu-show-console.msft.png":::
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在箱中显示 **Console** 工具" lightbox="../media/console-command-menu-show-console.msft.png":::
    <span data-ttu-id="146c9-128">运行命令以在"箱 **"** 中显示控制台 **工具**</span><span class="sxs-lookup"><span data-stu-id="146c9-128">Run the command to display the **Console** tool in the **Drawer**</span></span>  
 :::image-end:::  
 
