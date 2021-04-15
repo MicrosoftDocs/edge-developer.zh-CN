@@ -52,7 +52,7 @@ ms.locfileid: "11483367"
 
 <span data-ttu-id="c72f0-134">[正则表达式是][MdnDocsWebJavascriptGuideRegularExpressions] 筛选邮件的一种强大方法。</span><span class="sxs-lookup"><span data-stu-id="c72f0-134">[Regular expressions][MdnDocsWebJavascriptGuideRegularExpressions] are a powerful way to filter messages.</span></span>  <span data-ttu-id="c72f0-135">例如，在 `/^Tracking/` **筛选器文本框中** 键入以仅显示以术语 开始的邮件 `Tracking` 。</span><span class="sxs-lookup"><span data-stu-id="c72f0-135">For example, type `/^Tracking/` into the **Filter** textbox to only displays messages that start with the term `Tracking`.</span></span>  <span data-ttu-id="c72f0-136">如果你不熟悉正则表达式 [，RegExr][|::ref1::|Main] 是了解使用正则表达式的一个很好的资源。</span><span class="sxs-lookup"><span data-stu-id="c72f0-136">If you're unfamiliar with regular expressions, [RegExr][|::ref1::|Main] is a great resource to learn about using regular expressions.</span></span>
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用"筛选器"文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用筛选器文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
     <span data-ttu-id="c72f0-138">使用"筛选器"文本框 `filter` 中的正则表达式显示以 **单词开始** 的邮件</span><span class="sxs-lookup"><span data-stu-id="c72f0-138">Displays the messages that start with the word `filter` using a regular expression in the **Filter** textbox</span></span>  
 :::image-end:::  
 
