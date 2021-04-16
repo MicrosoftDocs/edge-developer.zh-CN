@@ -1,6 +1,6 @@
 ---
-description: 了解 Microsoft Edge (Chromium) 开发人员工具
-title: Microsoft Edge (Chromium) 开发人员工具概述
+description: 了解 Microsoft Edge \(Chromium\) 开发人员工具。
+title: Microsoft Edge （Chromium） 开发人员工具概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/07/2021
@@ -10,12 +10,12 @@ ms.technology: devtools
 keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: 3d91b0754f84579d770940503cf4a252e3926416
 ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "11481393"
 ---
-# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge (Chromium) 开发人员工具概述  
+# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge （Chromium） 开发人员工具概述  
 
 安装 Microsoft Edge 时，将获取浏览器。 此外，您还可以获得检查、调试甚至创建 Web 项目的强大方法。  浏览器附带的开发人员工具基于 Chromium 开放源代码项目中的工具，因此您可能已经熟悉这些工具。  若要使本文中的说明保持简短， `Microsoft Edge Developer Tools` 现在称为 `DevTools` 。  
 
@@ -67,7 +67,7 @@ ms.locfileid: "11481393"
 1.  选择" **自定义和控制 DevTools** \ (`...` \) "按钮。  
 1.  在相对于页面 \ (**扩展**坞端 \) 的**DevTools**的右侧，选择"扩展**坞端**"选项。  
     
-有关详细信息，请导航到更改[Microsoft Edge DevTools 放置位置 (Undock、Dock To Bottom、Dock To Left) 。 ][DevtoolsGuideCustomizePlacement]  
+有关详细信息，请导航到"更改 Microsoft Edge DevTools [位置（"取消停靠"，"停靠到底部"，"停靠到左侧"）][DevtoolsGuideCustomizePlacement]。  
 
 :::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="DevTools 中扩展坞侧菜单的屏幕截图" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
    DevTools 中扩展坞侧菜单的屏幕截图  
@@ -75,19 +75,19 @@ ms.locfileid: "11481393"
 
 在 **扩展坞端**中，选择以下任一布局选项。  
 
-*   **取消停靠到单独的窗口**。   帮助你使用多个监视器，或者如果你需要在全屏应用上工作。  
-*   **扩展坞向左或****扩展坞向右**。  有助于将 DevTools 与 Web 产品并排使用，并且当你模拟移动设备时，它非常出色。  The **Dock to left** and Dock to **right** options work best with high-resolution displays.  有关模拟设备的信息，请导航到 Microsoft [Edge DevTools][DevtoolsGuideDeviceModeIndex]中的"模拟移动设备"。  
-*   **停靠到底部**。  当你没有足够的水平显示空间，或者你想要在 DOM 或控制台中调试长文本时，可帮助 **你**。  
+*   **取消停靠为单独的窗口**。   帮助你使用多个监视器，或者如果你需要在全屏应用上工作。  
+*   **扩展坞向左或****扩展坞向右**。  有助于将 DevTools 与 Web 产品并排使用，并且当你模拟移动设备时，它非常出色。  **停靠到左侧**，**停靠到右侧**选项与高分辨率显示效果最佳。  有关放大设备详细信息，请导航到 [Microsoft Edge DevTools 设备中的模拟][DevtoolsGuideDeviceModeIndex]。  
+*   **停靠到底部**。  当您没有足够的水平显示空间或想要在DOM或**Console**中调试长文本时，此功能将为您提供帮助。  
     
 :::row:::  
    :::column span="":::  
       :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="选择停靠到左侧" lightbox="./media/devtools-intro-docking-left.msft.png":::  
-         选择 **"停靠到左侧"**  
+         选择 **停靠到左侧**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
       :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="选择停靠到底部" lightbox="media/devtools-intro-docking-bottom.msft.png":::  
-         选择 **"扩展坞到底部"**  
+         选择 **固定到底部**  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
@@ -99,7 +99,7 @@ ms.locfileid: "11481393"
    :::column-end:::  
    :::column span="":::  
       :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择"取消停靠到单独的窗口"" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
-         选择 **"取消停靠到单独的窗口"**  
+         选择 **停靠到单独的窗口位置**  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
@@ -116,8 +116,8 @@ DevTools 在几年内逐渐增加。  你可能假设首次打开任何工具时
 
 *   "检查工具"允许您选择当前网页上的某个元素。  激活后，你可以将鼠标移动到网页的不同部分，以获取有关元素和颜色覆盖的详细信息以显示尺寸、填充和边距。  
     
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Screenshot of the inspect tool with the first headline of this article chosen" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
-       Screenshot of the inspect tool with the first headline of this article chosen  
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="具有所选文章第一个标题的检查工具的屏幕截图" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       具有所选文章第一个标题的检查工具的屏幕截图  
     :::image-end:::  
     
 *   [设备仿真工具][DevtoolsGuideDeviceModeIndex]在仿真设备模式下显示当前 Web 产品。  **设备仿真工具**允许你在调整浏览器大小时运行和测试产品的反应。  它还为你提供移动设备上的布局和行为估计。  
@@ -134,15 +134,15 @@ DevTools 在几年内逐渐增加。  你可能假设首次打开任何工具时
     
 在"工具"选项卡组中，你可以打开 DevTools 中提供的不同工具。  以下列表介绍了 DevTools 中最常用的工具。  
 
-*   **欢迎**使用 。  包括有关 DevTools 的新功能、如何联系团队的信息，并提供有关某些功能的信息。  
+*   **欢迎**。  包括有关 DevTools 的新功能、如何联系团队的信息，并提供有关某些功能的信息。  
 *   **元素**。  允许您编辑或检查 HTML 和 CSS。  您可以在工具中编辑这两项操作，在浏览器中实时显示更改。  
-*   [控制台][DevtoolsGuideConsoleIndex]。  允许您显示和筛选日志消息。  日志消息是浏览器的自动日志，如网络请求和开发人员生成的日志。  还可以在当前窗口或框架的上下文中直接在**** 控制台中运行 JavaScript。  
+*   [控制台][DevtoolsGuideConsoleIndex]。  允许您显示和筛选日志消息。  日志消息是浏览器的自动日志，如网络请求和开发人员生成的日志。  您也可以在当前窗口或框架的上下文中直接在**控制台**中运行JavaScript。  
 *   [源][DevtoolsGuideSourcesIndex]。  代码编辑器和 JavaScript 调试程序。  可以编辑项目、维护代码段和调试当前项目。  
-*   [网络][DevtoolsGuideNetworkIndex]。  允许您监视和检查来自网络和浏览器缓存的请求或响应。  你可以筛选请求和响应以满足您的需求并模拟不同的网络条件。  其他专用工具也可用，如**性能**、内存、******应用程序****、安全性和****审核**。  
+*   [网络][DevtoolsGuideNetworkIndex]。  允许从网络和浏览器缓存中监视和检查请求或响应。  你可以筛选请求和响应以满足您的需求并模拟不同的网络条件。  其他专用工具也可用，例如 **性能**、 **内存**、 **应用程序**、 **安全性**和 **审核**。  
 
 ## <a name="power-tip-use-the-command-menu"></a>电源提示：使用命令菜单  
 
-DevTools 提供了许多要用于 Web 产品的特性和功能。  通过多种方式访问 DevTools 的不同部分，但访问所需的功能的最快方式是使用命令菜单。  有关详细信息，请导航到使用 [Microsoft Edge DevTools][DevtoolsGuideCommandMenuIndex]命令菜单运行命令。  若要打开命令菜单，请完成以下操作之一。  
+DevTools 提供了许多要用于 Web 产品的特性和功能。  通过多种方式访问 DevTools 的不同部分，但访问所需的功能的最快方式是使用命令菜单。  有关详细信息，请导航到 [Microsoft Edge DevTools 命令菜单导航到"运行"][DevtoolsGuideCommandMenuIndex]。  若要打开命令菜单，请完成以下操作之一。  
 
 *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
 *   Choose **Customize and Control DevTools** \ (`...` \) ， and then choose **Run Command**.  
@@ -151,7 +151,7 @@ DevTools 提供了许多要用于 Web 产品的特性和功能。  通过多种�
 DevTools 中命令菜单的屏幕截图  
 :::image-end:::  
 
-命令菜单允许你键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入 **"更改"** 一词，然后选择"**箱显示更改"。**  The **Changes** tool opens which is useful when you edit CSS, but is difficult to find in the DevTools UI.  
+命令菜单允许你键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入 **"更改"** 一词，然后选择"**箱显示更改"。**  " **更改** 工具将在编辑 CSS 时打开，但很难在 DevTools UI 中查找。  
 
 :::row:::  
    :::column span="":::  
@@ -161,7 +161,7 @@ DevTools 中命令菜单的屏幕截图
    :::column-end:::  
    :::column span="":::  
       :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开"更改"工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
-         打开"更改" **工具的** DevTools  
+         打开"开发工具 **更改** 工具的 DevTools  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
@@ -170,10 +170,10 @@ DevTools 中命令菜单的屏幕截图
 
 可自定义 DevTools 以满足你的需求或工作方式。  若要更改设置，请完成以下操作之一。  
 
-*   Choose **Settings** \ (the gear icon on the top right\)   
-*   选择 `F1` 或 `?` 。  
+*   选择 **设置** （右上角的齿轮图标\）  
+*   选择 `F1` 或 `?`。  
     
-在 **首选项部分中** ，你可以更改 DevTools 的几个部分。  例如，可以使用"匹配浏览器语言 **"设置** 在浏览器中使用的 DevTools 中使用相同的语言。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。  
+在 **首选项部分中** ，你可以更改 DevTools 的几个部分。  例如，你可能使用" **与浏览器语言** 设置在 DevTools 中使用相同的语言，该语言在浏览器中使用。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。  
 
 :::image type="complex" source="media/devtools-intro-all-settings.msft.png" alt-text="DevTools 中所有设置的屏幕截图" lightbox="./media/devtools-intro-all-settings.msft.png":::  
    DevTools 中所有设置的屏幕截图  
@@ -182,10 +182,10 @@ DevTools 中命令菜单的屏幕截图
 还可以更改高级功能的设置，包括以下功能。    
 
 *   [工作区][DevtoolsGuideWorkspacesIndex]。  
-*   具有"忽略列表"的 **筛选器库代码**。  
-*   定义 **你想要** 包括在设备模拟和测试模式下的设备。  有关详细信息，请导航到在 [Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex]中模拟移动设备。  
+*   具有 **"忽略列表"** 的筛选器库代码。  
+*   定义 **设备** 模拟和测试模式下要包括的设备。  有关详细信息，请导航到 [在Microsoft Edge DevTools中模拟移动设备][DevtoolsGuideDeviceModeIndex]。  
 *   选择网络 **限制** 配置文件。  
-*   定义模拟 **的位置**。  
+*   定义模拟 **位置**。  
 *   自定义键盘快捷方式。  若要在 DevTools 和代码Visual Studio快捷方式，请完成以下操作。  
     1.  从**预设中选择"匹配快捷方式"。**  
     1.  选择**Visual Studio代码"。**  
@@ -194,15 +194,15 @@ DevTools 中命令菜单的屏幕截图
        所有键盘快捷方式和菜单的屏幕截图，这些快捷方式与代码中的快捷方式Visual Studio匹配  
     :::image-end:::  
     
-## <a name="try-experimental-features"></a>试用实验性功能  
+## <a name="try-experimental-features"></a>试用实验功能  
 
-DevTools 团队在 DevTools 中提供新功能作为实验。  若要获取实验的完整列表，请导航到"DevTools**设置**"，然后选择"实验 **"。**  你可以打开或关闭每个实验。  帮助确定哪一个实验对你有价值。  有关实验详细信息，请导航到实验 [功能][DevtoolsGuideExperimentalFeaturesIndex]。  
+DevTools 团队在 DevTools 中提供新功能作为实验。  若要获取完整列表，请导航到 DevTools **设置**，然后选择**实验**。  你可以打开或关闭每个实验。  帮助确定哪一个实验对你有价值。  有关详细信息，请导航到[实验功能][DevtoolsGuideExperimentalFeaturesIndex]。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
-如果你想要预览 [DevTools][DevtoolsGuideWhatsNew202102Devtools]中提供的最新功能，请下载 [Microsoft Edge Canary][MicrosoftedgeinsiderDownload]，它在夜间生成。  
+如果你想要 [预览即将向 DevTools][DevtoolsGuideWhatsNew202102Devtools]提供的最新功能，请下载 [Microsoft Edge Canary][MicrosoftedgeinsiderDownload]，它内部版本为晚上。  
 
 ## <a name="see-also"></a>另请参阅  
 
@@ -211,28 +211,28 @@ DevTools 团队在 DevTools 中提供新功能作为实验。  若要获取实�
     
 <!-- links -->  
 
-[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "适用于初学者的 DevTools：HTML 和 DOM |Microsoft Docs"  
-[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单菜单运行 | Microsoft Docs"  
+[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "适合初学者的 DevTools：HTML 和 DOM |Microsoft Docs"  
+[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "控制台概述 | Microsoft Docs"  
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "将 Microsoft Edge DevTools (Undock、Dock To Bottom、Dock To Left) |Microsoft Docs"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "更改 Microsoft Edge DevTools 位置（撤消停靠、停靠到底部、停靠到左侧）|Microsoft Docs"  
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
-[DevtoolsGuideDomIndex]: ./dom/index.md "开始查看和更改 DOM |Microsoft Docs"  
+[DevtoolsGuideDomIndex]: ./dom/index.md "查看和更改 CSS 入门 | Microsoft 文档 | Microsoft Docs"  
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "开始分析运行时性能|Microsoft Docs"  
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "试验功能 | Microsoft Docs"  
-[DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "修复内存|Microsoft Docs"  
+[DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "修复内存问题|Microsoft Docs"  
 [DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "在&quot;样式&quot;窗格中编辑 CSS 字体样式|Microsoft Docs"  
 [DevtoolsGuideIssuesIndex]: ./issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "在 Microsoft Edge 开发人员工具中调试 JavaScript 入门 | Microsoft Docs"  
-[DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "使用 Microsoft Edge DevTools 工具替代具有本地副本的网页|Microsoft Docs"  
+[DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "使用 Microsoft Edge DevTools 应用替代具有本地副本的网页|Microsoft Docs"  
 [DevtoolsGuideNetworkIndex]: ./network/index.md "检查 Microsoft Edge DevTools |Microsoft Docs"  
 [DevtoolsGuideOpenIndex]: ./open/index.md "打开 Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "分析运行时性能|Microsoft Docs"  
 [DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs"  
 [DevtoolsGuideSourcesIndex]: ./sources/index.md "源工具概述 | Microsoft Docs"  
 [DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "使用 Microsoft Edge DevTools 工具查看和编辑|Microsoft Docs"  
-[DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "Microsoft Edge 90 (DevTools 中的新增) |Microsoft Docs"  
-[DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "使用 Workspaces |Microsoft Docs"  
-[DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge (Chromium) DevTools 协议概述|Microsoft Docs"  
+[DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "DevTools （Microsoft Edge 90） 中的新增功能|Microsoft Docs"  
+[DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "使用工作区列表编辑|Microsoft Docs"  
+[DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge （Chromium） DevTools 协议概述|Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge 加载项"  
 
