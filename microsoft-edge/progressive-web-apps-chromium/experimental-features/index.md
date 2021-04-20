@@ -3,16 +3,16 @@ description: Microsoft Edge for Web Apps 中的最新实验功能
 title: 实验功能|渐进式 Web 应用
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 实验， 渐进式 Web 应用， Web 应用， PWA， PWA
-ms.openlocfilehash: 20bc4c90c1fe30be360b44294966415823f9b3a6
-ms.sourcegitcommit: 4c6b74b9cdfca73c410d9eba9b42d229b695ee4a
+ms.openlocfilehash: 641b6fd5185e7f96289c1de6482764979ee0981d
+ms.sourcegitcommit: 9cc54ba3e731ecc8b713c3cf215018848f7405b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11482441"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "11496753"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>渐进式 Web 应用和 PBA (实验)   
 
@@ -61,7 +61,7 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
 
 | 功能 | Microsoft Edge 版本 | 平台 |  
 |:--- |:--- |:--- |  
-| [URI 协议处理](#uri-protocol-handling) | 91 或更高版本 | Windows |    
+| [URI 协议处理](#uri-protocol-handling) | 91 或更高版本 | Windows 和 Linux |    
 | [URL 链接处理](#url-link-handling) | 91 或更高版本 | Windows|
 | [适用于桌面应用的窗口控件覆盖层](#window-controls-overlay-for-installed-desktop-web-apps) | 91 或更高版本 | Windows 10|   
 | [在操作系统登录时运行](#run-on-os-login) | 88 或更高版本 | 全部 |  

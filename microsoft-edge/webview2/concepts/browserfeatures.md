@@ -1,5 +1,5 @@
 ---
-description： Microsoft Edge 和 WebView2 标题之间的功能差异：Microsoft Edge 和 WebView2 之间的功能差异作者：MSEdgeTeam ms.author： msedgedevrel ms.date： 03/31/2021 ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView、WebView2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、edge html no-loc：
+description： Microsoft Edge 和 WebView2 标题之间的功能差异：Microsoft Edge 和 WebView2 之间的功能差异作者：MSEdgeTeam ms.author： msedgedevrel ms.date： 04/19/2021 ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView、WebView2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、edge html no-loc：
 - "Autofill for Addresses"
 - "Autofill for Passwords"
 - "Autofill for Payments""
@@ -27,7 +27,7 @@ description： Microsoft Edge 和 WebView2 标题之间的功能差异：Microso
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge 和 WebView2 之间的浏览器功能差异  
 
-WebView2 基于新的 Microsoft Edge 浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。   本文提供以下信息。  
+WebView2 基于新的 Microsoft Edge 浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。  本文提供以下信息。  
 
 *   修改后的浏览器功能和支持信息。   
 *   启用或关闭功能的功能。  
@@ -67,6 +67,7 @@ WebView2 基于新的 Microsoft Edge 浏览器。  你有机会将功能从浏�
 | Immersive Reader | 关闭 | 否 | 此功能取决于用于交互的浏览器 UI。  此功能已关闭。  |  
 | Intrusive Ads | 关闭 | 否 | 此功能已关闭。  |  
 | 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不得打开或关闭这些快捷方式。  相反，您可以使用 事件侦听组合键 `AcceleratorKeyPressed` ，并根据需要创建自定义响应。  有关详细信息，请导航到"[其他键盘快捷方式信息"。](#additional-keyboard-shortcuts-information) |  
+| 推送通知 | 关闭 | 否 | WebView2 中未实现此功能。  有关详细信息，请导航到添加对[HTML5 通知 API (#308) 。 ][GithubMicrosoftedgeWebview2feedbackIssues308] |  
 | Read Aloud | 关闭 | 否 | 此功能已关闭。  |  
 | Smart Screen | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  此外，您还可以关闭 Smart Screen 使用命令行开关。  |  
 | Translate | 关闭 | 否 | 此功能已关闭。  |  
@@ -178,8 +179,7 @@ Microsoft Edge 和 WebView2 支持键盘快捷方式或键绑定。  Microsoft E
 
 > [!Note] 
 > 若要单独自定义任何键，请使用 [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] 事件。  
-  
-  
+
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview2-team"></a>与 Microsoft Edge WebView2 团队联系  
 
 [!INCLUDE [contact WebView2 team note](../includes/contact-webview-team-note.md)]  
@@ -191,5 +191,7 @@ Microsoft Edge 和 WebView2 支持键盘快捷方式或键绑定。  Microsoft E
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed 事件|Microsoft Docs"  
 
 [DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "添加对 HTML5 通知 API (#308) |GitHub"  
 
 [PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "Chromium 命令行开关列表|Peter Beverloo"  
