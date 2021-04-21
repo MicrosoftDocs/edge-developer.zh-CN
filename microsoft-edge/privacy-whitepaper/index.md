@@ -3,7 +3,7 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/11/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, 隐私, 白皮书, 信任
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 5a951d11883983bd0c7b58de7bafe3bbfdc57d09
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 52eb4e47ae70a222b24a70d5903f84e20058685b
+ms.sourcegitcommit: 1b1f099d9b0a8310784ccc8afd641e0708609602
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399335"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "11496937"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书  
 
@@ -36,7 +36,7 @@ ms.locfileid: "11399335"
 
 为了更快地浏览和搜索，在地址栏中输入内容时，会将输入的字符发送到你的默认搜索提供程序，搜索提供程序将发送回建议的搜索查询。  地址栏将输入分类为 URL、搜索或未知。  该信息以及所选的建议、选择位置和其他地址栏数据将发送到你的默认搜索提供程序。  如果你的搜索提供程序为必应，则浏览器所特有的可重置标识符会与数据一起发送，以了解搜索查询和查询会话。  其他自动建议服务标识符将发送到你的默认搜索引擎，以完成搜索建议。  将你的 IP 地址和 cookie 发送到你的默认搜索提供程序，以提高搜索结果的相关性。  当你选择地址栏向提供商发出通知以便其提供建议时，将向你的默认搜索提供程序发送信号。  输入的字符和搜索查询不会发送给 Microsoft，除非你的搜索提供程序是必应。  若要将数据发送到默认搜索提供程序，请导航到 `edge://settings/privacy`，然后在“服务”**** 下，选择“地址栏”****，并启用“使用我输入的字符显示搜索和网站建议”**** 设置。  如果禁用此设置，则输入的字符将不再发送到默认搜索提供程序。  搜索查询仍将发送到默认搜索提供程序，以提供搜索结果。  如果 Microsoft Edge 检测到地址栏中的输入内容可能包含敏感信息（如身份验证凭据、本地文件名或通常加密的 URL 数据），则不会发送输入的文本。  如果你希望 Microsoft Edge 收集有关地址栏的诊断数据（包括所有搜索提供程序提供的查询数），请导航到 `edge://settings/privacy`，在“个性化 Web 体验”**** 下，启用“通过允许 Microsoft 使用来自此帐户的浏览历史记录来个性化广告、搜索、资讯和其他 Microsoft 服务以改进 Web 体验”**** 设置。  
 
-击键和你访问的网站将按配置文件本地存储在设备上。  若要删除数据，请导航到 `edge://settings/clearBrowserData`，在“清除浏览数据”**** 窗口中，选中“浏览历史记录”**** 复选框，然后选择“立即清除”**** 按钮。  如果必应是你的默认搜索提供程序，并且你已登录必应，则可以通过“Microsoft 隐私仪表板”[][MicrosoftAccountPrivacy]删除搜索。  若要清除浏览历史记录，并删除地址栏中出现的建议网站，请导航到 `edge://history`，然后选择“清除浏览数据”****。  若要清除 Microsoft 从 Windows 10 上的地址栏和搜索建议功能中收集的数据，请打开“**开始**” > “**设置**” > “**隐私**” > “**诊断和反馈**”，然后在“**删除诊断数据**”下选择“**删除**”。  所有其他数据将在 36 个月后删除。  
+键入的字符和访问的网站存储在每个配置文件上的本地设备上。  若要删除数据，请转到 `edge://settings/clearBrowserData`，在“**清除浏览数据**”窗口中，选中“**浏览历史记录**”复选框，然后选择“**立即清除**”按钮。  如果必应是你的默认搜索提供程序，并且你已登录必应，则可以通过“Microsoft 隐私仪表板”[][MicrosoftAccountPrivacy]删除搜索。  若要清除浏览历史记录，并删除地址栏中出现的建议网站，请导航到 `edge://history`，然后选择“清除浏览数据”****。  若要清除 Microsoft 从 Windows 10 上的地址栏和搜索建议功能中收集的数据，请打开“**开始**” > “**设置**” > “**隐私**” > “**诊断和反馈**”，然后在“**删除诊断数据**”下选择“**删除**”。  所有其他数据将在 36 个月后删除。  
 
 如果你使用 Microsoft 工作或学校帐户登录到 Microsoft Edge，并且可以使用 Microsoft 搜索，则会随查询发送代表你的帐户的匿名令牌，以提供帐户特定功能，例如特定于贵公司的结果。  
 
@@ -258,6 +258,23 @@ Internet Explorer 浏览数据本地存储在 Microsoft Edge 和 Internet Explor
 
 使用 Microsoft Edge 中的“跳转列表”，你可以通过将鼠标悬停在任务栏中的 Microsoft Edge 图标上并打开上下文菜单\（右键单击\）轻松找到最近关闭的网站。  为每个配置文件本地存储最后三个关闭的选项卡。  若要从 Windows 10 的“跳转列表”中删除网站，请将鼠标悬停在每个网站上并打开上下文菜单 \（右键单击 \）。  若要清除或更改跳转列表中最近关闭的选项卡的显示，请导航到 `edge://settings/privacy`，然后选择“选择每次关闭浏览器时要清除的内容”**** 设置。  使用 InPrivate 窗口时，Microsoft Edge 不会将关闭的选项卡信息添加到“跳转列表”。  使用来宾模式时，“跳转列表”不可用。  有关清除浏览数据的详细信息，请导航到[查看和删除 Microsoft Edge 中的浏览器历史记录][MicrosoftSupport10607]。  
 
+## <a name="kids-mode"></a>儿童模式
+
+儿童模式是专为 Microsoft Edge 中的儿童设计的便捷浏览模式。  有了儿童友好功能和安全护栏，“儿童模式”是儿童安全浏览网络的理想之地。  儿童模式包括自定义浏览器主题、家庭友好内容、基于允许列表浏览、必应安全搜索设置为严格和密码要求退出等功能。  儿童模式不需要子帐户或个人资料，因此你无法登录儿童模式。  
+
+:::image type="complex" source="./media/kids-mode.png" alt-text="儿童模式" lightbox="./media/kids-mode.png":::
+   儿童模式  
+:::image-end:::  
+
+在儿童模式下浏览仅限于儿童友好网站的默认列表。  导航时，网站会与允许的网站的本地列表进行比较。  在儿童模式下访问的网站不能在 [family.microsoft.com][MicrosoftAccountFamilyMain] 查看，因为在儿童模式下浏览不会与任何帐户相关联。  可以通过启动儿童模式的个人资料添加允许的网站例外。  如果同步已打开，这些例外会同步到启动儿童模式的配置文件。  
+
+为了增强儿童模式体验，Microsoft Edge 向 Microsoft 必应和 Microsoft 新闻的标题请求添加了一个安全关键字。  安全关键字有助于筛选掉不适当的搜索结果和新闻。  儿童模式设置 Microsoft Edge 设置的首选项，例如将跟踪防护设置为严格以阻止网站上大多数跟踪器。  关闭时清除浏览数据也已被打开，这将在儿童模式关闭时清除 Cookie 和其他网站数据等内容。  若要在儿童模式下随时清除浏览数据，请完成以下操作。  
+
+1.  选择 **"设置**  >  **""隐私"。**  
+1.  选择 **"选择要清除哪些项目"。**  
+    
+儿童模式不会收集用于新闻源或其他 Microsoft 服务个性化的数据。  你不得更改儿童模式的隐私设置。  其他设置（如 Windows Defender SmartScreen 和诊断数据）根据启动儿童模式的个人资料进行配置。  若要详细了解如何使用浏览器和 Windows Defender SmartScreen 的诊断数据，请导航到 [诊断数据](#diagnostic-data)和[SmartScreen](#smartscreen)。  
+
 ## <a name="network-time"></a>网络时间  
 
 Microsoft Edge 使用 Microsoft 网络时间服务来跟踪来自外部源（如时间服务器）的时间。  通过随机间隔或当 Microsoft Edge 遇到过期的 SSL 证书时，Microsoft Edge 可能会向 Microsoft 发送请求，以获取来自受信任源的时间。  如果 Microsoft Edge 检测到系统时钟不准确，将会更频繁地发出请求。  如果用户更改了操作系统上的时间且该时间与正确时区相冲突，则会导致系统时钟不准确。  Microsoft 网络时间服务用于获取协调世界时 (UTC)。  请求中不包含 cookie 或用户标识符，并且不会记录任何数据。  
@@ -379,19 +396,22 @@ Microsoft Edge 提供大声朗读功能，它向用户朗读网页内容。  若
 
 ## <a name="shopping"></a>购物
 
-Microsoft Edge 可帮助你在在线购物时查找优惠券和更优惠的价格。  为了帮助你在在线购物时查找优惠券，Microsoft Edge 将从 Microsoft 购物服务在本地下载一个购物域列表到客户端。  当你转到某个网站时，Microsoft Edge 会在本地确定你所在的网站是否为购物域。  如果该网站被确定为购物域，Microsoft Edge 将向 Microsoft 购物服务发送删除了个人身份信息的 URL。  购物服务将返回该网站的所有可用优惠券。  
+Microsoft Edge可以帮助您在在线购物时找到优惠券，折扣和更优惠的价格。  为帮助你在在线购物时查找赠券或最适合的价格，Microsoft Edge 从 Microsoft 购物服务将本地购物域列表下载到客户。  浏览网站或将项目保存到收藏时，Microsoft Edge 本地确定访问的网站是购物域还是产品详细信息网页。  如果网站被标识为购物网页，Microsoft Edge 会向 Microsoft 购物服务发送包含个人身份信息的 URL。  Microsoft 还会向该服务发送产品价格、产品图像、产品名称、评级和评论，以及 Microsoft Edge 和操作系统版本的信息。  数据通过 HTTPS 发送，并包含随机生成的标识符和 Cookie（如果允许 Cookie）。  Microsoft Edge 购物功能要求与必应共享 Cookie 信息。  例如，Cookie 可用于调试、欺诈检测和分析。  Microsoft 购物服务返回其他零售商提供的价格、历史价格趋势和该网站的任何可用赠券。  
 
-当你应用优惠券时，Cookie 将存储在你的设备上以正确分配优惠券提供商。  只有在优惠券成功应用到购物车后，我们信任的优惠券提供商才会保存 Cookie。  在应用优惠券后，有关优惠券成功与否的信息将发送回 Microsoft 购物服务，以帮助我们了解哪些优惠券成功或失败。  发送到 Microsoft 购物服务的数据将通过 HTTPS 发送，并包含随机生成的标识符，其在每次优惠券查找时都会更改。  
+当你应用优惠券时，Cookie 将存储在你的设备上以正确分配优惠券提供商。  仅在成功在购物车应用赠券后，Microsoft 信任的赠券提供商才保存 Cookie。  在应用优惠券后，有关优惠券成功与否的信息将发送回 Microsoft 购物服务，以帮助我们了解哪些优惠券成功或失败。  发送到Microsoft购物服务的数据通过HTTPS发送，带有随机生成的标识符，该标识符随优惠券查找而变化。  
 
 :::image type="complex" source="./media/shopping.png" alt-text="购物和优惠券" lightbox="./media/shopping.png":::
    购物和优惠券  
 :::image-end:::  
 
-为了帮助在网上购物时找到最优惠的价格，Microsoft Edge会在本地确定正在查看的页面或收藏品是否是产品详情页。  如果你正在查看产品详细信息页面，Microsoft Edge 会将产品详细信息发送给购物服务，包括删除了个人身份信息的 URL。 我们还会将产品价格、产品图像、产品名称、评级和评论以及有关 Microsoft Edge 和你的操作系统版本的信息发送给该服务。  此数据使用随机生成的标识符通过 HTTPS 发送。  Microsoft 购物服务将为同一产品返回其他零售商的价格。  
+如果你访问购物域，并且你是现有的必应奖励用户，Microsoft Edge 会随 Cookie 一起将域发送到 Microsoft 购物服务，以检索你的必应退款配置文件和该域的退款优惠。  如果选择激活现金返还，Microsoft Edge将把网址发送到Microsoft购物服务，以接收关联URL。  设备上可能会存储Cookies，以正确归属返利提供者。  
 
-如果访问一个购物域，并且是一个现有的必应 Rebates用户，Microsoft Edge将把该域与cookies一起发送到Microsoft购物服务，以检索你的必应 Rebates配置文件和该域的现金回馈优惠。 如果选择激活现金返还，Microsoft Edge将把网址发送到Microsoft购物服务，以接收关联URL。 设备上可能会存储Cookies，以正确归属返利提供者。 
+默认情况下，将为所有用户启用购物服务。  若要更改 Microsoft Edge 中的购物设置，请完成以下操作。  
 
-默认情况下，将为所有用户启用购物服务。  若要更改 Microsoft Edge 中的购物设置，请导航到 `edge://settings/privacy`，然后关闭“**通过在 Microsoft Edge 中购物来节省时间和金钱**”。  InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。  
+1.  导航到 `edge://settings/privacy`。  
+1.  关闭" **在 Microsoft Edge 中购物节省时间和资金"** 设置。  
+    
+InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。  
 
 ## <a name="sign-in-and-identity"></a>登录和标识  
 
@@ -515,7 +535,7 @@ Microsoft Edge 可通过 [Chromium][ChromiumMain] 开源项目和其他开源软
 
 Microsoft Edge 团队将始终倾听客户的意见，且非常重视客户的反馈。  若要在 Microsoft Edge 中提供反馈，请打开“**设置和更多**” > “**帮助和反馈**”并选择“**发送反馈**”。  对于渐进式 Web 应用 (PWA)，请打开“**设置和更多(...)**”并选择“**向 Microsoft 发送反馈**”。  必须提供有关反馈的详细信息，但可以选择是否提供其他信息。  如果从 Microsoft Edge 配置文件检测到电子邮件，它将预填充你所在网站的当前 URL 和相关诊断数据。  诊断数据可能包含有关已启用的 Microsoft Edge 功能和浏览器使用情况的数据。  也可以选择将屏幕截图、设备中的文件和浏览器记录包含在内。  提供的可选屏幕截图、文件或记录可能包含个人身份信息。  数据仅用于诊断和产品改进目的。  
 
-用户反馈将通过 HTTPS 安全发送到 Microsoft，并存储在安全的 Microsoft 服务器上。  如果你包含电子邮件地址，并且在 Microsoft Edge 隐私设置中启用了“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置，则你设备上的浏览器安装所特有的标识符将与你的反馈相关联。  所有诊断数据（包括诊断日志、记录和附件）最多保存 30 天。  剩下的反馈数据（包括可选的屏幕截图）最多保存 15 个月。  如果你提供了含反馈项的电子邮件，则[请求][MicrosoftConcernPrivacy]删除反馈。  
+用户反馈将通过 HTTPS 安全发送到 Microsoft，并存储在安全的 Microsoft 服务器上。  如果你包含电子邮件地址，并且在 Microsoft Edge 隐私设置中启用了“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置，则你设备上的浏览器安装所特有的标识符将与你的反馈相关联。  如果你使用 Microsoft 帐户登录到 Microsoft Edge，则你的反馈与帐户相关联。  所有诊断数据（包括诊断日志、记录和附件）最多保存 30 天。  剩下的反馈数据（包括可选的屏幕截图）最多保存 15 个月。  如果你提供了含反馈项的电子邮件，则[请求][MicrosoftConcernPrivacy]删除反馈。  
 
 <!-- links -->  
 
