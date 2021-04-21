@@ -3,17 +3,17 @@ description: 了解如何在 Microsoft Edge 中测试网站或应用，或者使
 title: 使用 WebDriver (Chromium) 实现测试自动化
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: ad7a7f276dbf71d25be03d041161ead599b82f04
-ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
+ms.openlocfilehash: 0a5a6cde75621f0dda1e98b0c7b471b1456bf430
+ms.sourcegitcommit: 518c1116dc5e6968edf92730906aa0e72dbf945d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11480179"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "11496967"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>使用 WebDriver (Chromium) 实现测试自动化  
 
@@ -34,16 +34,19 @@ WebDriver 允许开发人员创建模拟用户交互的自动测试。  WebDrive
 
 若要开始自动执行测试，请使用以下步骤来确保安装的 WebDriver 版本与浏览器版本相匹配。  
 
-1.  若要显示 Microsoft Edge 的版本，请导航到 `edge://settings/help` 。  
+1.  查找你的 Microsoft Edge 版本。  
+    1.  导航到 `edge://settings/help` 。  
+        
+        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Microsoft Edge 2021 年 4 月 15 日内部版本号" lightbox="./media/microsoft-edge-version.msft.png":::
+           Microsoft Edge 2021 年 4 月 15 日内部版本号  
+        :::image-end:::  
+        
+1.  导航到 [Microsoft Edge 驱动程序][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]。  
+1.  导航到 **获取最新版本**。  
+1.  选择与 Microsoft Edge 的版本号匹配的频道版本。  
     
-    :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="2021 年 2 月 10 日 Microsoft Edge Canary 的生成号" lightbox="./media/microsoft-edge-version.msft.png":::
-       2021 年 2 月 10 日 Microsoft Edge Canary 的生成号  
-    :::image-end:::  
-    
-1.  导航到["Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]驱动程序****"，在"下载"部分下，下载与 Microsoft Edge 的版本号匹配的 WebDriver。  
-    
-    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Microsoft Edge 驱动程序上的下载部分" lightbox="./media/microsoft-edge-driver-install.msft.png":::
-       Microsoft **Edge** 驱动程序上的 [下载部分][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Microsoft Edge 驱动程序网页上的获取最新版本部分" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+       Microsoft **Edge 驱动程序网页上的** 获取 [最新版本][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] 部分  
     :::image-end:::  
     
     <!--  
@@ -358,9 +361,9 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 ## <a name="next-steps"></a>后续步骤  
 
-若要了解有关 WebDriver 以及如何使用 Selenium 编写自动 WebDriver 测试的信息，请导航到 [Selenium 文档][SeleniumDocumentation]。  
+有关 WebDriver 和如何使用 Selenium 编写自动 WebDriver 测试的信息，请导航到 [Selenium 文档][SeleniumDocumentation]。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Microsoft Edge 的反馈。  若要向团队发送你的问题和意见，请选择 Microsoft **** Edge DevTools 中的"发送反馈"图标[或][TwitterTweetEdgeDevTools]发送推文@EdgeDevTools。  
 
@@ -391,7 +394,7 @@ Microsoft Edge 团队希望倾听你有关使用 WebDriver、Selenium 和 Micros
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools |npm"  
 [JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "selenium-webdriver |npm"  
 
-[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "WebDriver |Microsoft 开发人员"  
+[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Microsoft Edge 驱动程序|Microsoft Edge 开发人员"  
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "下载新版 Microsoft Edge 浏览器"  
 
