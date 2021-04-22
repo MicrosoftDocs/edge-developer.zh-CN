@@ -3,16 +3,16 @@ description: 3D 视图Visual Studio Microsoft Edge 集成等。
 title: 'Microsoft Edge 81 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 204a596e2497415eefeeb8aa819106635ff30caa
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: ddd48b78c59e26edc9bca159f5ddf684015ae980
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408358"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514408"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -124,7 +124,7 @@ Webhint Microsoft Edge 扩展允许你轻松扫描网页，并获取有关辅助
    安装 **Webhint** 浏览器扩展时 DevTools 中的 Hints 工具  
 :::image-end:::  
 
-[尝试 Microsoft Edge 中的 Webhint 浏览器扩展][MicrosoftEdgeInsiderAddons]。  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  请 [前往webhint.io][WebhintBrowserExtension] 了解更多信息。  
+[尝试 Microsoft Edge 中的 Webhint 浏览器扩展][MicrosoftEdgeInsiderAddons]。  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  请 [前往][WebhintBrowserExtension] webhint.io 了解更多信息。  
 
 ### <a name="3d-view"></a>3D 视图  
 
@@ -316,9 +316,9 @@ Chromium [问题#985402][CR985402]
 
 [DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "模拟移动视区 - 在 Microsoft Edge DevTools |Microsoft Docs"
 [DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "显示设备帧 - 在 Microsoft Edge 开发人员工具工具中通过设备模式模拟|Microsoft Docs"
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"  
+[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
 [ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "限制网络和 CPU - 在 Microsoft Edge DevTools |Microsoft Docs"
-[Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools |Microsoft Docs"
+[Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
 [MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio |Microsoft Docs"  
 [CookiesFields]: /microsoft-edge/devtools-guide-chromium/storage/cookies#fields "字段 - 使用 Microsoft Edge DevTools 工具查看、编辑和删除|Microsoft Docs"  
 
@@ -341,7 +341,7 @@ Chromium [问题#985402][CR985402]
 
 [CR924693]: https://crbug.com/924693 "功能请求：将 Moto G4 添加到设备模式列表|Chromium Bug"  
 [CR1030258]: https://crbug.com/1030258 "CR 1030258 |Chromium Bug"  
-[CR1026879]: https://crbug.com/1026879 "开发人员控制台中的"Cookie"选项卡不再显示优先级|Chromium Bug"  
+[CR1026879]: https://crbug.com/1026879 "开发人员控制台中的&quot;Cookie&quot;选项卡不再显示优先级|Chromium Bug"  
 [CR1029826]: https://crbug.com/1029826 "network tab -> right choose to request -> copy -> copy as fetch does not copy cookies |Chromium Bug"  
 [CR985402]: https://crbug.com/985402 "Web 应用清单图标错误字符串令人困惑|Chromium Bug"  
 [CR963183]: https://crbug.com/963183 "DevTools 不符合 WCAG |Chromium Bug"  
@@ -365,7 +365,7 @@ Chromium [问题#985402][CR985402]
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/updates/2020/01/devtools/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
+> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-81)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

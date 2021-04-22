@@ -3,16 +3,16 @@ description: 新的 CSS 网格调试工具、Webauthn 工具、可移动工具�
 title: 'Microsoft Edge 87 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 53aa8f20ba400c7ff95432b1e752f1f008dac919
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 0f4e0aaeba55f584697d1817f7ea54044dfdd380
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408330"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514352"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -69,8 +69,8 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 ## <a name="save-and-export-using-the-network-console"></a>使用网络控制台保存和导出  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 网络 **控制台** 工具现在改进了与 [Postman v2.1][PostmanSchemaJsonCollectionv210Index] 和 [OpenAPI v2 架构][SwaggerSpecificationV2] 的兼容性。  若要启用实验，请导航到打开 [实验][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] 功能，然后选择启用网络控制台旁边的 **复选框**。  有关网络控制台 **详细信息，请**导航到启用 [网络控制台实验功能][DevtoolsExperimentalFeaturesEnableNetworkConsole]。  此实验现在支持以下操作。  
@@ -95,8 +95,8 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 ## <a name="improved-css-grid-tooling"></a>改进的 CSS 网格工具  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 Microsoft Edge DevTools 现在支持以下功能来检查、查看和调试 CSS 网格。  
@@ -112,10 +112,10 @@ Microsoft Edge DevTools 现在支持以下功能来检查、查看和调试 CSS 
    **具有** 网格的布局工具  
 :::image-end:::  
 
-## <a name="customize-keyboard-shortcuts-in-settings"></a>在"设置"中自定义键盘快捷方式  
+## <a name="customize-keyboard-shortcuts-in-settings"></a>在“设置”中自定义键盘快捷方式  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 现在，你可以为 DevTools 中任何操作自定义键盘快捷方式。  自 Microsoft Edge 版本 84 起，你可以选择使用 Visual Studio **Code** 和 **DevTools ** (键盘快捷方式) [预设][DevtoolsCustomizeShortcuts]。  从 Microsoft Edge 版本 87 开始，你可以打开启用 **键盘快捷方式编辑器** 实验以进一 [步自定义键盘快捷方式][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]。  
@@ -178,7 +178,7 @@ Code **Visual Studio Network** **for Visual Studio Code** 扩展的元素现在�
    :::column-end:::
 :::row-end:::  
 
-### <a name="elements-tool-updates"></a>元素工具更新  
+### <a name="elements-tool-updates"></a>“元素”工具更新  
 
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>查看"样式"窗格中的"计算边栏"窗格  
 
@@ -257,8 +257,8 @@ DevTools 现在显示设置为模式的 COEP 和 `report-only` COOP `report-only
 
 ### <a name="view-and-fix-color-contrast-issues-in-the-css-overview-tool"></a>在 CSS 概述工具中查看和修复颜色对比度问题  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素列表。  下面的演示页面包含颜色对比度问题的示例。  
@@ -281,13 +281,13 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool ""元素"工具中的"属性"窗格弃用 - DevTools (Microsoft Edge 84 中的新增) |Microsoft Docs"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "&quot;元素&quot;工具中的&quot;属性&quot;窗格弃用 - DevTools (Microsoft Edge 84 中的新增) |Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS 网格调试功能 - Microsoft Edge 85 (中的新增功能) |Microsoft Docs"  
-[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane ""样式"窗格中的可访问颜色建议 - Microsoft Edge 86 (中的新增功能) |Microsoft Docs"  
+[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "&quot;样式&quot;窗格中的可访问颜色建议 - Microsoft Edge 86 (中的新增功能) |Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
 [DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "最近选择的元素或 JavaScript 对象 - 控制台实用程序 API |Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools 工具中的键盘|Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
 [DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "性能分析参考|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "模拟：支持双屏幕模式 - 实验|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "启用实验性 API - 实验|Microsoft Docs"  
@@ -298,11 +298,11 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 [DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "在可折叠和双屏幕设备上进行测试 - 实验|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "打开实验性功能 - 实验|Microsoft Docs"  
 [DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "表 - 控制台 API 参考|Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 Microsoft Edge DevTools | 中的"覆盖"选项卡查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
+[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 Microsoft Edge DevTools | 中的&quot;覆盖&quot;选项卡查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
 [DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "检查 CSS 网格|Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "箱 - 自定义 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "使用"呈现"选项卡分析呈现性能 - 性能分析参考|Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "使用&quot;呈现&quot;选项卡分析呈现性能 - 性能分析参考|Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "查看和调试媒体播放器|Microsoft Docs"  
 [DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "按属性筛选请求 - 网络分析参考|Microsoft Docs"  
 [DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "模拟验证器，并调试 Microsoft Edge DevTools |Microsoft Docs"  
@@ -321,21 +321,21 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 [CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table 工具|Chromium Bug"  
 [CR1051466]: https://crbug.com/1051466 "支持 DevTools | 中的 COOP/COEP 调试Chromium Bug"  
 [CR1073899]: https://crbug.com/1073899 "计算样式选项卡在响应模式下消失|Chromium Bug"  
-[CR1075732]: https://crbug.com/1075732 "DevTools 个性化 - "开发工具"选项卡|Chromium Bug"  
+[CR1075732]: https://crbug.com/1075732 "DevTools 个性化 - &quot;开发工具&quot;选项卡|Chromium Bug"  
 [CR1084673]: https://crbug.com/1084673 "DevTools：改进我们呈现 CSS 自定义属性 ( (，) 。CSS 变量) 及其值|Chromium Bug"  
 [CR1093687]: https://crbug.com/1093687 "创建用于创建和重播综合网络请求|Chromium Bug"  
 [CR1096230]: https://crbug.com/1096230 "在计算样式窗格中按类别分组 CSS |Chromium Bug"  
 [CR1104188]: https://crbug.com/1104188 "在搜索完整 URL 搜索时，网络工具搜索找不到|Chromium Bug"  
-[CR1106251]: https://crbug.com/1106251 "☂ DevTools：改进"计算样式"选项卡|Chromium Bug"  
+[CR1106251]: https://crbug.com/1106251 "☂ DevTools：改进&quot;计算样式&quot;选项卡|Chromium Bug"  
 [CR1120316]: https://crbug.com/1120316 "突出显示 CSS 概述和颜色>对比度|Chromium Bug"  
 [CR1121141]: https://crbug.com/1121141 "允许在网络日志日志中按资源类型|Chromium Bug"  
-[CR1121312]: https://crbug.com/1121312 "设置应从"更多工具"菜单中删除|Chromium Bug"  
+[CR1121312]: https://crbug.com/1121312 "设置应从&quot;更多工具&quot;菜单中删除|Chromium Bug"  
 [CR1136394]: https://crbug.com/1136394 "Flexbox 工具|Chromium Bug"  
 [CR1136655]: https://crbug.com/1136655 "开发工具：本地化 V2 |Chromium Bug"  
 
 [MdnReportingApi]: https://developer.mozilla.org/docs/Web/API/Reporting_API "报告 API |MDN"  
 
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools |GitHub"  
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 
 [GithubGoogleChromeLighthouseReleasesV641]: https://github.com/GoogleChrome/lighthouse/releases/v6.4.1 "v6.4.1 - GoogleChrome/lighthouse |GitHub"  
 
@@ -351,7 +351,7 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/updates/2020/10/devtools/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-87)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

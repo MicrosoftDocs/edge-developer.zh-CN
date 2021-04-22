@@ -3,16 +3,16 @@ description: CSS 网格调试功能、使用网络控制台编辑和重播请求
 title: 'Microsoft Edge 85 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 9031f817a6079f64352c261a70eb9581213bf8c7
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 5bd013fae617e9759aa91949acccf936d85f7160
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408316"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514359"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -35,8 +35,8 @@ ms.locfileid: "11408316"
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，网格工具的更多改进即将推出。  
@@ -54,8 +54,8 @@ Chromium [问题#1047356][CR1047356]
 
 ### <a name="edit-and-replay-requests-with-the-network-console"></a>使用网络控制台编辑和重播请求  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 你现在可以使用网络控制台**在**网络日志中对请求使用[编辑和][DevtoolsNetworkIndexLogActivity]**重播**。  
@@ -100,8 +100,8 @@ Chromium [问题#1066579][CR1066579]
 
 ### <a name="webhint-feedback-in-the-issues-panel"></a>问题面板中的 webhint 反馈  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 [webhint][WebhintMain] 是一个开放源代码工具，提供有关网站的辅助功能、跨浏览器兼容性、安全性、性能、PWA 和其他常见 Web 开发问题实时反馈。  查看"问题"面板中的 [webhint][DevtoolsIssues] 反馈。  
@@ -119,8 +119,8 @@ Chromium [问题#1070378][CR1070378]
 
 ### <a name="move-tools-between-panels"></a>在面板之间移动工具  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能":::
-   实验性功能  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+   试验功能  
 :::image-end:::  
 
 通常，元素和网络等工具**** 只能在**** DevTools 的主 \ (\) 面板中打开。  同样，诸如**3D 视图**和**** 问题等工具可能只能在 DevTools (底部\) 面板中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。  
@@ -334,10 +334,10 @@ Chromium 问题 [#1041830][CR1041830]
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
+[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
 [DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "使用 Microsoft Edge 开发工具命令菜单运行命令"
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "箱 - 自定义 Microsoft Edge DevTools |Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "打开实验性功能 - 实验|Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
 [DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"
 [DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "编辑 CSS 和 JavaScript - 源面板概述|Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "记录网络活动 - 检查 Microsoft Edge DevTools |Microsoft Docs"
@@ -355,7 +355,7 @@ Chromium 问题 [#1041830][CR1041830]
 [CR955497]: https://crbug.com/955497 "PBA 应用图标快捷方式菜单|Chromium Bug"  
 [CR974550]: https://crbug.com/974550 "Perf 面板和 performanceObserver 组件之间的指标不匹配|Chromium Bug"  
 [CR1041830]: https://crbug.com/1041830 "改进断点|Chromium Bug"  
-[CR1055875]: https://crbug.com/1055875 "关闭并重新打开"开发人员工具"菜单后，"所选上下文仅控制台"设置的值不会|Chromium Bug"  
+[CR1055875]: https://crbug.com/1055875 "关闭并重新打开&quot;开发人员工具&quot;菜单后，&quot;所选上下文仅控制台&quot;设置的值不会|Chromium Bug"  
 [CR1066579]: https://crbug.com/1066579 "DevTools： Show ServiceWorkers Fetch Timeline per request in Network panel |Chromium Bug"  
 [CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience |Chromium Bug"  
 [CR1073899]: https://crbug.com/1073899 "计算样式选项卡在响应模式下消失|Chromium Bug"  
@@ -412,7 +412,7 @@ Chromium 问题 [#1041830][CR1041830]
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/updates/2020/06/devtools/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-85)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

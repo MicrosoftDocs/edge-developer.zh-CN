@@ -3,16 +3,16 @@ description: 辅助功能改进、在其他语言中使用 DevTools 等。
 title: 'Microsoft Edge 80 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 31e18091a9f86b7b8a4e123b24e3d312689301ef
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: 1388cbf62bd341837d92c51ad137f3909e60e476
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481483"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514394"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -338,7 +338,7 @@ Chromium [问题#1004203][CR1004203]
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
 
-[CR842488]: https://crbug.com/842488 "将 Initiator 字段添加到"标题"选项卡|Chromium Bug"  
+[CR842488]: https://crbug.com/842488 "将 Initiator 字段添加到&quot;标题&quot;选项卡|Chromium Bug"  
 [CR988253]: https://crbug.com/988253 "Bug DevTools - 网络请求与时间线图之间没有|Chromium Bug"  
 [CR993366]: https://crbug.com/993366 "请在网络面板请求列表中显示 URL 的路径部分|Chromium Bug"  
 [CR1004193]: https://crbug.com/1004193 "V8 | 的 REPL 模式Chromium Bug"  
@@ -374,7 +374,7 @@ Chromium [问题#1004203][CR1004203]
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/updates/2019/12/devtools/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
+> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-80)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

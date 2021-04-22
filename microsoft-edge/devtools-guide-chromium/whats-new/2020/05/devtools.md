@@ -3,16 +3,16 @@ description: 在 Windows 高对比度模式下使用 DevTools、匹配 DevTools 
 title: 'Microsoft Edge 84 (DevTools 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 3264292721d5e4385b0e6d256d042c76182c21c7
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 01d41fe5400dde427a0ac73870ace0e1211f429a
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408323"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514387"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,13 +73,13 @@ Chromium [问题#174309][CR174309]
 使用 [Surface Duo 仿真][DualScreensAndroidEmulator]器，你可以测试 Web 内容在可折叠和双屏幕设备的新类上呈现方式。  仿真器运行 Android 操作系统并提供 [Microsoft Edge Android 应用][AndroidEdge]。  在 Microsoft Edge 应用中加载 Web [内容，][AndroidEdge] 然后使用 [Microsoft Edge DevTools 调试它][DevToolsChromiumGuide]。  
 
 :::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="在 Surface Duo 仿真器上运行的 Microsoft Edge 应用" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
-   Surface Duo 模拟器上的 Microsoft Edge 应用  
+   Surface Duo 仿真程序上的 Microsoft Edge 应用  
 :::image-end:::  
 
 Microsoft Edge 桌面实例中的页面显示 `edge://inspect` **SurfaceD一个Emulator，** 其中列出了在 Surface Duo 仿真器上运行的已打开选项卡或[][DesktopEdge][PWA。][PwaIndex] [][DualScreensAndroidEmulator]  
 
-:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="the edge://inspect page displays a list of the open tabs in the Microsoft Edge app running on the emulator" lightbox="../../media/2020/05/edge-inspect.msft.png":::
-   该 `edge://inspect` 页面在模拟器上运行的 Microsoft Edge 应用中显示打开的选项卡列表
+:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="edge://inspect 页面在模拟器上运行的 Microsoft Edge 应用程序中显示打开选项卡的列表" lightbox="../../media/2020/05/edge-inspect.msft.png":::
+   `edge://inspect` 页面在模拟器上运行的 Microsoft Edge 应用程序中显示打开选项卡的列表
 :::image-end:::  
 
 选择要**调试**的选项卡或 PWA 的"检查"以打开[Microsoft Edge DevTools。][DevToolsChromiumGuide]  [按照分步指南在 Surface Duo][DevToolsRemoteDebugDuoEmulator]仿真器上远程调试 Web 内容。  
@@ -293,8 +293,8 @@ Elements **** 工具中的"**属性**"窗格已弃用。  改为 `console.dir($0
 [DevtoolsConsoleUtilitiesDom]: /microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "最近选择的元素或 JavaScript 对象 - 控制台实用程序 API |Microsoft Docs"  
 [DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "使用颜色选取器更改颜色 - CSS |Microsoft Docs"  
 [DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "箱 - 自定义|Microsoft Docs"  
-[DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "查找并修复 Microsoft Edge"开发工具问题"选项卡|Microsoft Docs"  
+[DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
+[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "查找并修复 Microsoft Edge&quot;开发工具问题&quot;选项卡|Microsoft Docs"  
 [DevToolsRemoteDebugAndroid]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "远程调试 Android 设备|Microsoft Docs"  
 [DevToolsRemoteDebugDuoEmulator]: /microsoft-edge/devtools-guide-chromium/remote-debugging/surface-duo-emulator "远程调试 Surface Duo 仿真器|Microsoft Docs"  
 [DevToolsRemoteDebugWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "远程调试 Windows 10 设备|Microsoft Docs"  
@@ -317,15 +317,15 @@ Elements **** 工具中的"**属性**"窗格已弃用。  改为 `console.dir($0
 [CR1054381]: https://crbug.com/1054381 "CR 1054381 |Chromium Bug"  
 [CR1068116]: https://crbug.com/1068116 "发货问题面板|Chromium Bug"  
 [CR1072952]: https://crbug.com/1072952 "DevTools：颜色选取器应生成新式 CSS 颜色语法|Chromium Bug"  
-[CR1075437]: https://crbug.com/1075437 "DevTools：添加对 CSS"revert"关键字/值|Chromium Bug"  
+[CR1075437]: https://crbug.com/1075437 "DevTools：添加对 CSS&quot;revert&quot;关键字/值|Chromium Bug"  
 [CR1076112]: https://crbug.com/1076112 "Devtools 个性化设置 - 箱大小调整器"  
 [CR1081486]: https://crbug.com/1081486 "对于屏幕广播模式下的导航按钮，键盘焦点不可见|Chromium Bug"  
-[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus 应为"已实现"，而不是"已解决"|V8 bug"  
+[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus 应为&quot;已实现&quot;，而不是&quot;已解决&quot;|V8 bug"  
 
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "从颜色 3 - CSS 颜色模块级别 4 更改|W3C CSS 工作组编辑器草稿"  
-[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. 前景色："颜色"- CSS 颜色模块级别 4 |W3C CSS 工作组编辑器草稿"  
+[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. 前景色：&quot;颜色&quot;- CSS 颜色模块级别 4 |W3C CSS 工作组编辑器草稿"  
 
-[DesktopEdge]: https://www.microsoft.com/edge/ "引入新的 Microsoft Edge"  
+[DesktopEdge]: https://www.microsoft.com/edge/ "推出新的 Microsoft Edge"  
 
 [GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "状态和状态 - 空位/承诺-取消|GitHub"  
 
@@ -356,7 +356,7 @@ Elements **** 工具中的"**属性**"窗格已弃用。  改为 `console.dir($0
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于[此处](https://developers.google.com/web/updates/2020/05/devtools/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
+> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-84)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
