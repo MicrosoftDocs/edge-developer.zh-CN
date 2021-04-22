@@ -3,17 +3,17 @@ description: CSS 弹性框调试支持、网页上的性能提示显示、问题
 title: DevTools 中的新增功能 (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: e220bbbe0a545b7cc539d0c77deb2ecb070decc0
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439743"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514401"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -360,7 +360,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/updates/2021/02/devtools/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-90)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

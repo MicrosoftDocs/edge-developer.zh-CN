@@ -3,17 +3,17 @@ description: Linux 上的 Microsoft Edge、”问题“工具中改进的 Webhin
 title: DevTools 中的新增功能 (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a63515060d989a84838e4a9ba7f803184a3fc91f
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439273"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514373"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -387,7 +387,7 @@ background: linear-gradient(100deg, lightblue, pink);
 [CR1051466]: https://crbug.com/1051466 "问题 1051466：在 DevTools 中支持 COOP/COEP 调试 | Chromium 漏洞"  
 [CR1058836]: https://crbug.com/1058836 "问题 1058836：关于 Wasm 调试的 UX 问题 | Chromium 漏洞"  
 [CR1071432]: https://crbug.com/1071432 "问题 1071432：☂️ Wasm 基本开发人员体验 | Chromium Bug"  
-[CR1107766]: https://crbug.com/1107766 "问题 1107766：显示有关框架树中的 "window.open ()" 生成的框架的信息 |Chromium 漏洞"  
+[CR1107766]: https://crbug.com/1107766 "问题 1107766：显示有关框架树中的 &quot;window.open ()&quot; 生成的框架的信息 |Chromium 漏洞"  
 [CR1122507]: https://crbug.com/1122507 "问题 1122507：框架树视图中的 Surface 工作线程信息 | Chromium 漏洞"  
 [CR1126178]: https://crbug.com/1126178 "问题 1126178：☂ DevTools：CSS <类型> 组件 | Chromium 漏洞"  
 [CR1130556]: https://crbug.com/1130556 "问题 1130556：DevTools：测试映像回退（模拟） | Chromium 漏洞"  
@@ -419,7 +419,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/updates/2020/11/devtools/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-88)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

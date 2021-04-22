@@ -3,17 +3,17 @@ description: “新增功能”工具现在为“欢迎”，内含“样式”�
 title: DevTools 中的新增功能 (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/19/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: ec14d802af52c0bb2e658549f48764279c787f47
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481357"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514366"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -492,7 +492,7 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/updates/2021/01/devtools/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-89)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
