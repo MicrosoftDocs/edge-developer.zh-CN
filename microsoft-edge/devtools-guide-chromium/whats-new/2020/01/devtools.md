@@ -225,7 +225,7 @@ ms.locfileid: "11514408"
 
 <span data-ttu-id="d7736-202">"应用程序"面板中的"Cookie"窗格现在显示带黄色背景的阻止的 Cookie。</span><span class="sxs-lookup"><span data-stu-id="d7736-202">The Cookies pane in the Application panel now displays blocked cookies with a yellow background.</span></span>  
 
-:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text=""应用程序"面板的"Cookie"窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
+:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text="应用程序面板的Cookie窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
    <span data-ttu-id="d7736-204">"应用程序"面板的"Cookie"窗格中阻止的 Cookie</span><span class="sxs-lookup"><span data-stu-id="d7736-204">Blocked cookies in the Cookies pane of the Application panel</span></span>  
 :::image-end:::  
 
@@ -300,7 +300,7 @@ ms.locfileid: "11514408"
    <span data-ttu-id="d7736-242">禁用 **"设置"中的"允许滚动过文件** 末尾"</span><span class="sxs-lookup"><span data-stu-id="d7736-242">Disabling **Allow scrolling past end of file** in Settings</span></span>  
 :::image-end:::  
 
-:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在"源"面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
+:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在源面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
    <span data-ttu-id="d7736-244">滚动过文件末尾现在在"源"面板中处于禁用状态</span><span class="sxs-lookup"><span data-stu-id="d7736-244">Scrolling past the end of a file is now disabled in the Sources panel</span></span>  
 :::image-end:::  
 
