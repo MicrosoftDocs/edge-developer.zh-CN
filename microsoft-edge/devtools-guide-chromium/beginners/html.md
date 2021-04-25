@@ -189,7 +189,7 @@ ms.locfileid: "11397927"
 
 1.  <span data-ttu-id="00e9d-176">导航到实时 **选项卡**。 在页面底部，显示 `A new element!?!` 文本。</span><span class="sxs-lookup"><span data-stu-id="00e9d-176">Navigate to the **live tab**.  At the bottom of your page, the text `A new element!?!` is displayed.</span></span>  
     
-    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="在页面底部，文本为新元素" <span data-ttu-id="00e9d-178">显示</span><span class="sxs-lookup"><span data-stu-id="00e9d-178">is displayed</span></span>" lightbox="../media/beginners-html-dom1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="在页面底部，文本为新元素!?!" <span data-ttu-id="00e9d-178">显示</span><span class="sxs-lookup"><span data-stu-id="00e9d-178">is displayed</span></span>" lightbox="../media/beginners-html-dom1.msft.png":::
        <span data-ttu-id="00e9d-179">在页面底部显示 `A new element!?!` 文本</span><span class="sxs-lookup"><span data-stu-id="00e9d-179">At the bottom of the page the text `A new element!?!` is displayed</span></span>  
     :::image-end:::  
     
