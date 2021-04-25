@@ -86,7 +86,7 @@ ms.locfileid: "11514359"
 
 <span data-ttu-id="3c740-136">网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。</span><span class="sxs-lookup"><span data-stu-id="3c740-136">The **Timing** tab of the **Network** tool now includes `respondWith` service worker events.</span></span>  <span data-ttu-id="3c740-137">服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。</span><span class="sxs-lookup"><span data-stu-id="3c740-137">The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text=""网络面板的计时选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="网络面板的计时选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    <span data-ttu-id="3c740-139">网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件</span><span class="sxs-lookup"><span data-stu-id="3c740-139">The `respondWith` service worker event in the **Timing** tab of the **Network** tool</span></span>  
 :::image-end:::  
 
