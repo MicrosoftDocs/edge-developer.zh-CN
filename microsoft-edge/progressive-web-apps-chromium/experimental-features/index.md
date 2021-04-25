@@ -509,7 +509,7 @@ body {
 1.  <span data-ttu-id="b63c3-313">将鼠标悬停在你的应用上。</span><span class="sxs-lookup"><span data-stu-id="b63c3-313">Hover on your app.</span></span>  
 1.  <span data-ttu-id="b63c3-314">打开上下文菜单 \ (右键单击\) 然后在登录时选择 **"启动应用"。**</span><span class="sxs-lookup"><span data-stu-id="b63c3-314">Open the contextual menu \(right-click\) and then choose **Start app when you sign in**.</span></span>  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在 Microsoft Edge 中登录功能时，使用上下文菜单打开"开始"应用" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在 Microsoft Edge 中登录功能时，使用上下文菜单打开开始应用" lightbox="../media/turn-on-run-on-os-login-flag.png":::
        <span data-ttu-id="b63c3-316">在 Microsoft Edge 中登录功能时 **，** 使用上下文菜单打开"开始"应用</span><span class="sxs-lookup"><span data-stu-id="b63c3-316">Use the contextual menu to turn on the **Start app when you sign in** feature in Microsoft Edge</span></span>  
     :::image-end:::  
     
