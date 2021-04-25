@@ -384,7 +384,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="3feb5-288">" **属性** "窗格已返回。</span><span class="sxs-lookup"><span data-stu-id="3feb5-288">The **Properties** pane is back.</span></span>  <span data-ttu-id="3feb5-289">它在 [Microsoft Edge 84 中已弃用][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]。</span><span class="sxs-lookup"><span data-stu-id="3feb5-289">It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].</span></span>  <span data-ttu-id="3feb5-290">Microsoft Edge DevTools 团队和 Chrome DevTools 团队正在计划针对检查元素属性的改进。</span><span class="sxs-lookup"><span data-stu-id="3feb5-290">The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text=""元素"面板中的"属性"窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="元素面板中的属性窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
    <span data-ttu-id="3feb5-292">**"** 元素"工具 **中的"属性"** 窗格</span><span class="sxs-lookup"><span data-stu-id="3feb5-292">**Properties** pane in the **Elements** tool</span></span>  
 :::image-end:::  
 
@@ -439,7 +439,7 @@ Chromium issue: [#1103854][CR1103854]
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text=""元素"面板中的"清除"按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="元素面板中的清除按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          <span data-ttu-id="3feb5-314">"元素"工具中的 **"清除"** 按钮</span><span class="sxs-lookup"><span data-stu-id="3feb5-314">Clear buttons in the **Elements** tools</span></span>  
       :::image-end:::  
    :::column-end:::
