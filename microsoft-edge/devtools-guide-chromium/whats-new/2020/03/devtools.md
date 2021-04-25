@@ -109,7 +109,7 @@ ms.locfileid: "11514415"
 
 <span data-ttu-id="cfc2c-156">对缩小文件进行更改后，"更改"工具允许您水平滚动\*\*\*\* 以显示所有缩小代码。</span><span class="sxs-lookup"><span data-stu-id="cfc2c-156">When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.</span></span>  <span data-ttu-id="cfc2c-157">从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。</span><span class="sxs-lookup"><span data-stu-id="cfc2c-157">Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在更改工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
    <span data-ttu-id="cfc2c-159">在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码 **所做的更改**</span><span class="sxs-lookup"><span data-stu-id="cfc2c-159">In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display the changes you made to your minified code in the **Changes tool**</span></span>  
 :::image-end:::  
 
