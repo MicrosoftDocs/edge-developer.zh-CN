@@ -123,14 +123,14 @@
               href: devtools-guide-chromium/ie-mode/index.md
             - name: Javascript 疑难解答
               items:
-                - name: JavaScript 调试引用
+                - name: 使用调试程序功能
                   href: devtools-guide-chromium/javascript/reference.md
+                - name: 使用断点暂停代码
+                  href: devtools-guide-chromium/javascript/breakpoints.md
                 - name: 将预处理代码映射到源代码
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: 将内容脚本标记为库代码
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                - name: 使用断点暂停代码
-                  href: devtools-guide-chromium/javascript/breakpoints.md
             - name: 内存故障排除
               items:
                 - name: 内存术语
@@ -241,16 +241,14 @@
               href: devtools-guide-chromium/security/index.md
             - name: 源
               items:
-                - name: 源窗格概览
+                - name: 源工具概述
                   href: devtools-guide-chromium/sources/index.md
-                - name: JavaScript 调试引用
-                  href: devtools-guide-chromium/javascript/reference.md
-                - name: 禁用 JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
                 - name: 替代
                   href: devtools-guide-chromium/javascript/overrides.md
-                - name: 代码段
+                - name: 代码片段
                   href: devtools-guide-chromium/javascript/snippets.md
+                - name: 禁用 JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
         - name: 参考
