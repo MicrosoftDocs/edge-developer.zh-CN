@@ -186,7 +186,7 @@ ms.locfileid: "11514352"
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开"计算边栏"窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开计算边栏窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          <span data-ttu-id="dad91-205">打开 **"计算边栏"** 窗格</span><span class="sxs-lookup"><span data-stu-id="dad91-205">Open the **Computed sidebar** pane</span></span>  
       :::image-end:::  
    :::column-end:::  
