@@ -48,7 +48,7 @@ ms.locfileid: "11514434"
         
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在"元素"工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
+      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在元素工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
          <span data-ttu-id="3291f-117">在"元素"工具中选择 **带下划线** 的错误</span><span class="sxs-lookup"><span data-stu-id="3291f-117">Choose the underlined error in the **Elements** tool</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -76,7 +76,7 @@ ms.locfileid: "11514434"
 
 <span data-ttu-id="3291f-128">若要显示有关如何使用 DevTools 的信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个大纲区域上。</span><span class="sxs-lookup"><span data-stu-id="3291f-128">To display more information about how to use the DevTools, turn on Tooltips, and then hover on each outlined region of the DevTools.</span></span>  
 
-:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="将鼠标悬停在"问题"工具突出显示区域中的任何位置，以显示更多详细信息" lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="将鼠标悬停在问题工具突出显示区域中的任何位置，以显示更多详细信息" lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
    <span data-ttu-id="3291f-130">将鼠标悬停在"问题"工具突出显示区域 **中的任何位置，** 以显示更多详细信息</span><span class="sxs-lookup"><span data-stu-id="3291f-130">Hover on anywhere in the highlighted region of the **Issues** tool to display more details</span></span>  
 :::image-end:::  
 
@@ -143,7 +143,7 @@ Most operating systems require square icons.  Please include at least one square
 
 <span data-ttu-id="3291f-164">从\*\*\*\* [Microsoft Edge 版本 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]开始，"样式"窗格显示 CSS 变量并提供指向每个变量的定义的链接。</span><span class="sxs-lookup"><span data-stu-id="3291f-164">Starting in [Microsoft Edge version 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane], the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.</span></span>  <span data-ttu-id="3291f-165">在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。</span><span class="sxs-lookup"><span data-stu-id="3291f-165">In Microsoft Edge version 91 or later, you may use the arrow keys to easily navigate to CSS variables.</span></span>  <span data-ttu-id="3291f-166">若要在"样式 **"窗格中打开** 定义，请将鼠标悬停在变量上，然后选择 `Enter` 。</span><span class="sxs-lookup"><span data-stu-id="3291f-166">To open the definition in the **Styles** pane, hover on a variable, and then select `Enter`.</span></span>  <span data-ttu-id="3291f-167">有关 CSS 变量详细信息，请导航到使用 CSS 自定义属性 ([变量) 。 ][MdnDocsWebCssUsingCssCustomProperties]</span><span class="sxs-lookup"><span data-stu-id="3291f-167">For more information about CSS variables, navigate to [Using CSS custom properties (variables)][MdnDocsWebCssUsingCssCustomProperties].</span></span>  <span data-ttu-id="3291f-168">若要在 Chromium 开源项目中查看此功能实时更新，请导航到"问题[1187735"。][CR1187735]</span><span class="sxs-lookup"><span data-stu-id="3291f-168">To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [1187735][CR1187735].</span></span>  
 
-:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在"样式"窗格中突出显示" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在样式窗格中突出显示" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    <span data-ttu-id="3291f-170">" `--theme-body-background` 样式"窗格中突出显示的\*\*\*\* CSS 变量</span><span class="sxs-lookup"><span data-stu-id="3291f-170">The `--theme-body-background` CSS variable highlighted in the **Styles** pane</span></span>  
 :::image-end:::  
 
@@ -154,7 +154,7 @@ Most operating systems require square icons.  Please include at least one square
 
 <span data-ttu-id="3291f-172">问题 **工具** 显示改进网站的建议，包括辅助功能、性能、安全性等。</span><span class="sxs-lookup"><span data-stu-id="3291f-172">The **Issues** tool displays recommendations to improve your website, including accessibility, performance, security, and so on.</span></span> <span data-ttu-id="3291f-173">根据你的反馈，现在会自动按严重性对问题进行排序。</span><span class="sxs-lookup"><span data-stu-id="3291f-173">Based on your feedback, issues are now automatically sorted by severity.</span></span>  <span data-ttu-id="3291f-174">在每个反馈类别中，每个标记为"错误"的问题\*\*\*\* 首先出现，然后关注标记为"警告"的每个\*\*\*\* 问题，然后每个标记为"提示"**的问题**。</span><span class="sxs-lookup"><span data-stu-id="3291f-174">In each feedback category, each issue marked as an **Error** appears first, followed each issue marked as a **Warning**, then each issue marked as a **Tip**.</span></span>  <span data-ttu-id="3291f-175">为了帮助你优化问题，为将来的更新计划了额外的筛选器选项。</span><span class="sxs-lookup"><span data-stu-id="3291f-175">To help you refine your issues, extra filter options are planned for a future update.</span></span>  <span data-ttu-id="3291f-176">若要详细了解如何查看问题，请导航到查找并 [修复 Microsoft Edge DevTools 问题工具中的问题][DevtoolsIssuesIndex]。</span><span class="sxs-lookup"><span data-stu-id="3291f-176">For more information about how to review issues, navigate to [Find and fix problems with the Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].</span></span>  
 
-:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text=""问题"工具按严重性显示排序的问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="问题工具按严重性显示排序的问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    <span data-ttu-id="3291f-178">" **问题** "工具按严重性显示排序的问题</span><span class="sxs-lookup"><span data-stu-id="3291f-178">The **Issues** tool displays sorted issues by severity</span></span>  
 :::image-end:::  
 
