@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 3d50b7b105aa9a9018ba61e44147f46f3d340079
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: dd865f346046cb6706e71fdb3cc869950b2b4352
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439512"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519357"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,9 @@ ms.locfileid: "11439512"
 
 # <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>如何在 Microsoft Edge 开发工具中使用断点暂停代码  
 
-使用断点暂停 JavaScript 代码。  本指南介绍开发工具中提供的每种断点类型，以及何时使用以及如何设置每种类型。  有关调试过程的实践教程，请导航到[在 Microsoft Edge DevTools 中调试 JavaScript 入门][DevtoolsJavascriptIndex]。  
+使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
+
+有关使用现有网页的介绍性教程，请导航到 [开始在 Microsoft Edge DevTools][DevtoolsJavascriptIndex]中调试 JavaScript。
 
 ## <a name="overview-of-when-to-use-each-breakpoint-type"></a>何时使用各断点类型的概述  
 
@@ -214,13 +216,23 @@ debug(hey); // This does not work.  hey() is out of scope.
 1.  触发断点。  
 1.  代码仍在代码行断点处暂停时，在开发工具控制台中运行 `debug()` 方法。  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+## <a name="related-articles"></a>相关文章
+
+*   [使用调试器功能][DevtoolsJavascriptReference] - 使用"源"工具 **中的调试器** UI。
+*   [在 Microsoft Edge DevTools][DevtoolsJavascriptIndex] 中调试 JavaScript 入门 - 使用现有网页的介绍性教程。
+*   [源工具概述][DevtoolsSourcesIndex]- 调试器是源工具**** 的一部分，其中包括 JavaScript 编辑器。
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
+[DevtoolsJavascriptReference]: ./reference.md "使用调试器功能|Microsoft Docs"  
+
 [DevtoolsJavascriptIndex]: index.md "在 Microsoft Edge 开发工具中调试 JavaScript 入门 | Microsoft Docs"  
+
+[DevtoolsSourcesIndex]: ../sources/index.md "源工具概述 | Microsoft Docs"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"  
 

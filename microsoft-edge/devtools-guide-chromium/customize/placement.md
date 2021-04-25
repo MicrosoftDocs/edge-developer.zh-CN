@@ -1,18 +1,18 @@
 ---
 description: 如何将 Microsoft Edge DevTools 移动到视区底部或左侧或单独的窗口。
-title: 更改 Microsoft Edge DevTools 位置（撤消停靠、停靠到底部、停靠到左侧）
+title: '将 Microsoft Edge DevTools (Undock，扩展坞更改为底部，将扩展坞更改为左侧) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439175"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519154"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,39 @@ ms.locfileid: "11439175"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>更改 Microsoft Edge DevTools 位置（撤消停靠、停靠到底部、停靠到左侧）  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>将 Microsoft Edge DevTools (Undock，扩展坞更改为底部，将扩展坞更改为左侧)   
 
-默认情况下，DevTools 停靠在视区右侧。  也可停靠到底部、停靠到左侧或取消停靠 DevTools 到单独的窗口。  
+默认情况下，DevTools 固定在视口窗口 (右侧) 。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择停靠到左侧" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         当你希望应用本机保护时，可选择 `Dock To Left`  
+      DevTools 固定到窗口左侧：
+   :::column-end:::
+   :::column span="":::
+      DevTools 固定到窗口底部：
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择"扩展坞"向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         选择 **"扩展坞"向左**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="选择停靠到底部" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         当你希望应用本机保护时，可选择 `Dock To Bottom`  
+         当你希望应用本机保护时，可选择 `Dock to bottom`  
       :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监视器：
+
+:::row:::
+   :::column span="":::
+      浏览器窗口：
+   :::column-end:::
+   :::column span="":::
+      DevTools 在单独的窗口中取消停靠：
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -59,7 +78,7 @@ ms.locfileid: "11439175"
 
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置  
 
-1.  选择 **自定义和控制 DevTools** \（`...`\） 并选择 **取消停靠为单独的窗口** \（![取消停靠](../media/undock-icon.msft.png)\）、 **停靠到** 底部 \（![停靠到底部](../media/bottom-icon.msft.png)\），或 **停靠到左侧** \（![停靠到](../media/left-icon.msft.png)\）。  
+1.  选择"自定义和控制**DevTools** \ (\) "，然后选择"撤消停靠到单独的窗口 `...` \ (**** Undock \) "，"扩展坞到底部 \ (扩展坞"到底部 \) ，或"扩展坞向左 \ (扩展坞"向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        选择 **停靠到单独的窗口位置**  
@@ -67,11 +86,19 @@ ms.locfileid: "11439175"
     
 ## <a name="change-placement-from-the-command-menu"></a>从命令菜单更改位置  
 
-1.  [打开“命令”菜单][DevtoolsCommandMenu]。  
-1.  运行下列命令之一： `Dock To Bottom`、 `Undock Into Separate Window`。  当前没有向左停靠的命令，但你可能从"另一个"主 [访问](#change-placement-from-the-main-menu)。  
+1.  [在 Windows/Linux][DevtoolsCommandMenu]或 macOS 上选择 ， `Shift` + `Ctrl` + `P` 打开 `Command` + `Shift` + `P` 命令菜单。  
+1.  在 `>` 字符后输入 `dock` ，然后选择以下命令之一：  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="取消停靠命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       取消停靠命令  
+    *  **扩展坞到底部**
+    *  **扩展坞向左**
+    *  **扩展坞向右**
+    *  **还原最后一个扩展坞位置**
+    *  **撤消停靠到单独的窗口中**
+    
+    您还可以从主菜单访问 [命令](#change-placement-from-the-main-menu)。 
+    
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Undock 命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Undock 命令  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  

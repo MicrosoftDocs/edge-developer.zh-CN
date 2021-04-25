@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439442"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519609"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -359,13 +359,13 @@ ms.locfileid: "11439442"
        覆盖报告  
     :::image-end:::  
     
-1.  选择**jquery.js**行。  在"源"面板中，开发人员工具会打开文件。  如果旁边是蓝色条，则表示运行了代码行。  红色条则表示未运行，且页面加载时绝不需要。  
+1.  选择 `jquery.js` 行。  DevTools 在"源" **工具中** 打开文件。  如果代码行运行，则旁边将显示一个蓝色条。  红色栏表示代码行未运行，并且肯定不需要在加载网页时运行。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在源面板中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
-       在**源**面板中查看 jQuery 文件  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在"源"工具中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+       在"源"工具 **中查看** jQuery 文件  
     :::image-end:::  
     
-1.  滚动一下 jQuery 代码。  一些获取"运行"的行实际只是备注。  通过删除备注的缩小工具运行此代码是减少此文件大小的另一种方法。  
+1.  滚动浏览 jQuery 代码。  某些运行的行实际上只是注释。  若要去除注释并减少文件大小，请通过微型程序应用或脚本运行代码。  
 
 简言之，当你使用自己的代码时，**覆盖**工具可以帮助你逐行分析代码，并只交付页面加载所需的代码。  
 

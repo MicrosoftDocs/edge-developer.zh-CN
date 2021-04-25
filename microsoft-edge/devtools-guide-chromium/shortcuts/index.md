@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439589"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519406"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +62,7 @@ ms.locfileid: "11439589"
 | 硬刷新 | `Control`+`F5` 或 `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | 在当前窗格中搜索文本。  **审核**、** 应用程序 **和**安全**工具不支持 | `Control`+`F` | `Command`+`F` |  
 | 在“[抽屉][DevtoolsCustomizeIndexDrawer]”中打开“**搜索**”选项卡，可以在所有加载的资源中搜索文本 | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| 在**源**窗格中打开文件 | `Control`+`O` 或 `Control`+`P` | `Command`+`O` 或 `Command`+`P` |  
+| 在"源"工具 **中打开** 文件 | `Control`+`O` 或 `Control`+`P` | `Command`+`O` 或 `Command`+`P` |  
 | 放大 | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | 缩小 | `Control`+`-` | `Command`+`-` |  
 | 还原默认缩放级别 | `Control`+`0` | `Command`+`0` |  

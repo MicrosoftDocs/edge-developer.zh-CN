@@ -1,18 +1,18 @@
 ---
-description: 从"设置"和"框架库代码"中>"将内容脚本标记为库代码"。
+description: 从"设置"和"框架库代码">"将内容脚本标记为库代码"。
 title: 将内容脚本标记为库代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: c1571ab909aac09e4593413e96f7d4b7723c7759
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398950"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519343"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,18 +30,17 @@ ms.locfileid: "11398950"
 
 # <a name="mark-content-scripts-as-library-code"></a>将内容脚本标记为库代码  
 
-使用 Microsoft **** Edge DevTools 的"[][DevToolsJavascriptStepThroughCode]源"面板逐步执行代码时，有时会暂停你无法识别的代码。  您可能在已安装的 Microsoft Edge 扩展之一的代码上暂停。  完成以下步骤，以不暂停扩展代码。  
+使用 **"源"** 工具逐步执行 [代码时][DevToolsJavascriptStepThroughCode]，有时会对无法识别的代码暂停。  您可能暂停了已安装的 Microsoft Edge 扩展之一的代码。  若要不在扩展代码上暂停，请完成以下操作。  
 
-1.  打开 DevTools，选择"自定义和控制**DevTools** \ (`...` \) >**设置"。**  您也可以通过选择 **来** 打开"设置 `F1` "。  
-
-1.  选择 **打开** "设置"的 **"框架库** 代码"一节的库代码 **面板**。  
+1.  在 DevTools 中，在右上角选择齿轮图标" (**设置** ") 。  此时将出现**设置**页面。  
+1.  在"**设置"下**，选择"**忽略列表"。**  将显示 **"设置"的** "框架库 **代码"** 部分。  
 1.  打开" **将内容脚本标记为库代码"** 复选框。  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用"将内容脚本标记为库代码"复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
        启用" **将内容脚本标记为库代码"** 复选框  
     :::image-end:::  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 

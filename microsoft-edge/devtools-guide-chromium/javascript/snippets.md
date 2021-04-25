@@ -1,18 +1,18 @@
 ---
 description: 代码片段是在 Microsoft Edge DevTools 的源工具中创作和运行的小型脚本。  可以通过任何网页访问和运行资源。  当你运行代码片段时，它是通过当前打开网页的上下文运行。
-title: 使用 Microsoft Edge DevTools 在任何页面上运行 JavaScript 代码片段
+title: 使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 779c3dcec66b6b5df3e38abe9ee458bca7dc0c45
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 00c612a1573c7446711a2dc9d22985c83140eecd
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439421"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519427"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -63,27 +63,27 @@ ms.locfileid: "11439421"
    运行代码片段后的网页  
 :::image-end:::  
 
-## <a name="open-the-snippets-pane"></a>打开代码片段窗格  
+## <a name="open-the-snippets-tab"></a>打开"代码段"选项卡  
 
-**代码片段**窗格将列出代码片段。  当要编辑代码片段时，需要从**代码片段**窗格中将其打开。  
+左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="代码片段窗格" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
-   **代码片段**窗格  
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text=""代码段"选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+   " **代码段"** 选项卡  
 :::image-end:::  
 
-### <a name="open-the-snippets-pane-with-a-mouse"></a>用鼠标打开代码片段窗格  
+### <a name="open-the-snippets-tab-with-a-mouse"></a>用鼠标打开"代码段"选项卡  
 
-1.  选择**源**选项卡以打开**源**工具。  通常默认**页面**窗格打开。  
+1.  选择" **源"** 选项卡。 将显示 **"源** "工具。  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="源工具的页面窗格在左侧打开" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       **源**工具的**页面**窗格在左侧打开  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开"页面"选项卡的"源"工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       在 **左侧** 打开" **页面"** 选项卡的"源"工具  
     :::image-end:::  
     
-1.  选择**代码片段**选项卡以打开 **代码片段**窗格。  若要访问**代码片段**选项，则需选择**更多选项卡**\(![更多选项卡](../media/more-tabs-icon.msft.png)\)。  
+1.  在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \ (![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。  
     
-### <a name="open-the-snippets-pane-with-the-command-menu"></a>使用命令菜单打开代码片段窗格  
+### <a name="open-the-snippets-tab-with-the-command-menu"></a>使用命令菜单打开"代码段"选项卡  
 
-1.  将光标停在 DevTools 中的任一位置。  
+1.  在 DevTools 中选择任何内容，以便 DevTools 具有焦点。  
 1.  选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。  
 1.  键入 `Snippets`，选择**显示代码片段**，然后选择 `Enter` 运行命令。  
     
@@ -93,11 +93,11 @@ ms.locfileid: "11439421"
     
 ## <a name="create-snippets"></a>创建代码片段  
 
-### <a name="create-a-snippet-through-the-sources-panel"></a>通过源面板创建代码片段  
+### <a name="create-a-snippet-through-the-sources-tool"></a>通过"源"工具创建代码段  
 
-1.  [打开**代码片段**窗格](#open-the-snippets-pane)。  
+1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
 1.  选择“**新建代码片段**”。  
-1.  输入代码片段的名称，然后选择 `Enter` 进行保存。  
+1.  输入代码段的名称，然后选择 `Enter` 。  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="为代码片段命名" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        为代码片段命名  
@@ -117,8 +117,8 @@ ms.locfileid: "11439421"
 
 ## <a name="edit-snippets"></a>编辑代码片段  
 
-1.  [打开**代码片段**窗格](#open-the-snippets-pane)。  
-1.  在**代码片段**窗格中，选择要编辑的代码片段的名称。  它将在**代码编辑器**中打开。  
+1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
+1.  在 **"代码段** "选项卡中，选择要编辑的代码段的名称。  它将在**代码编辑器**中打开。  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="代码编辑器" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        代码**编辑器**  
@@ -133,11 +133,11 @@ ms.locfileid: "11439421"
     
 ## <a name="run-snippets"></a>运行代码片段  
 
-### <a name="run-a-snippet-from-the-sources-panel"></a>通过源面板运行代码片段  
+### <a name="run-a-snippet-from-the-sources-tool"></a>从源工具运行代码段  
 
-1.  [打开**代码片段**窗格](#open-the-snippets-pane)。  
+1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
 1.  选择要运行的代码片段的名称。  代码片段将在**代码编辑器**中打开。  
-1.  选择**运行代码片段** \(![Run Snippet](../media/run-snippet-icon.msft.png)\)，或选择`Control`+`Enter` \(Windows, Linux\) 或 `Command`+`Enter` \(macOS\)。  
+1.  Choose **Run snippet** \ (Run Snippet ![ ](../media/run-snippet-icon.msft.png) \) .
     
 ### <a name="run-a-snippet-with-the-command-menu"></a>使用命令菜单运行代码片段  
 
@@ -153,12 +153,12 @@ ms.locfileid: "11439421"
 
 ## <a name="rename-snippets"></a>重命名代码片段  
 
-1.  [打开**代码片段**窗格](#open-the-snippets-pane)。  
+1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
 1.  将鼠标悬停在代码片段名称上，打开上下文菜单\（右键单击\），然后选择**重命名**。  
     
 ## <a name="delete-snippets"></a>删除代码片段  
 
-1.  [打开**代码片段**窗格](#open-the-snippets-pane)。  
+1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
 1.  将鼠标悬停在代码片段名称上，打开上下文菜单\（右键单击\），然后选择**删除**。  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  

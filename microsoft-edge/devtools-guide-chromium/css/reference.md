@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: bddbf14e73f5c29bfd4757c9cd6d255f419c331f
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439301"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519329"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -56,9 +56,9 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 ### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a>查看已定义规则的外部样式表  
 
-在 **“样式”** 窗格中，选择 CSS 规则旁边的链接，以打开定义该规则的外部样式表。  
+在 **“样式”** 窗格中，选择 CSS 规则旁边的链接，以打开定义该规则的外部样式表。  样式表将在"源" **工具的** "编辑器" **窗格中** 打开。  
 
-如果是缩小样式表，请导航到 [使缩小文件可读][DevToolsJavascriptReferenceFormat]。  
+如果样式表缩小，请选择"编辑器"窗格**** 底部的"格式 ![ \ (格式 ](../media/format-icon.msft.png) **\) "** 按钮。  有关详细信息，请导航到[重新设置一个缩小的 JavaScript 文件与非常打印。][DevToolsJavascriptReferenceFormat]  
 
 > [!NOTE]
 > 在下图中，当你选择 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 后，将会带你到定义了 `.content h1:first-of-type` CSS 规则的 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` 行2。  
@@ -557,7 +557,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 [DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class " 向类添加伪状态 - 查看和更改 CSS 入门 | Microsoft Docs"  
 [DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "查看元素的 CSS - 查看和更改 CSS 入门 | Microsoft Docs"  
 [DevToolsCssPrintPreview]: ../css/print-preview.md "强制 Microsoft Edge DevTools 进入打印预览模式(CSS 打印媒体类型) | Microsoft Docs"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "使缩小的文件可读 - JavaScript 调试参考 | Microsoft Docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "重新设置缩小的 JavaScript 文件，并采用非常打印的字体 - 使用调试器|Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "颜色系统 - 材料设计"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "框模型 | MDN"  

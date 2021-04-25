@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: a8fccdcabf03f3894a9a11246b90db4686fd953e
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439196"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519315"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -78,7 +78,7 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
     
 ## <a name="analyze-code-coverage"></a>分析代码覆盖范围  
 
-“**覆盖范围**”面板中的表显示已分析的资源，以及每个资源中使用的代码数。  选择一行以在“**资源**”面板中打开该资源，然后逐行查看已使用代码和未使用代码的细分。  
+“**覆盖范围**”面板中的表显示已分析的资源，以及每个资源中使用的代码数。  选择一行以在"源"工具**** 中打开该资源，并查看已用代码和未使用代码的行细分。  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="代码覆盖范围报告" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    代码覆盖范围报告  

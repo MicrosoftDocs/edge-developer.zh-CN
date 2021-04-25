@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: bbfb766bcc03e4c4fe0f975f1ecfccbef08084be
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: a60bd0c734df18ba7424cde6a828abbd9e7135a9
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439463"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519371"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ ms.locfileid: "11439463"
 
 查找一系列持续重现 Bug 的操作始终是调试的第一步。  
 
-1.  选择“**打开演示**”。  按住 `Control` \(Windows, Linux\) 或 `Command` \(macOS\) ，然后在新的浏览器选项卡中打开演示。  
+1.  选择以下"**打开演示**"链接，然后打开新选项卡中的网页。 若要打开新选项卡中的演示，请选择并按住 `Ctrl` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，然后选择"打开演示 **"。**  
     
     [打开演示][OpenDebugJSDemo]  
     
@@ -69,9 +69,9 @@ ms.locfileid: "11439463"
    **源**工具 UI 的 3 个部分  
 :::image-end:::  
 
-1.  **文件导航器**窗格\(上图中的第 1 部分\)。  此处列出了网页请求的所有文件。  
-1.  **代码编辑器**窗格\(上图中的第 2 部分\)。  在**文件导航器**窗格中选择一个文件后，文件的内容在此处显示。  
-1.  **JavaScript 调试**窗格\(上图中的第 3 部分\)。  用于检查网页的 JavaScript 的各种工具。  如果开发工具的窗口很宽，则此窗格显示在**代码编辑器**窗格的右侧。  
+1.  上 **图中导航器** 窗格 \ (第 1 部分) 。  此处列出了网页请求的所有文件。  
+1.  " **编辑器** "窗格 \ (上图第 2 部分) 。  在导航器窗格中选择文件 **后** ，此窗格将显示该文件的内容。  
+1.  调试 **器窗格** \ (图\第 3 部分) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口很宽，则此窗格显示在"编辑器"窗格 **的右侧** 。  
     
 ## <a name="step-3-pause-the-code-with-a-breakpoint"></a>步骤 3：使用断点暂停代码  
 
@@ -98,7 +98,7 @@ function updateLabel() {
 
 如果退后一步，想一想应用程序的工作方式，可能会做出有根据的猜测，即在与**添加数字 1 和数字 2**按钮相关联的 `click`事件侦听器中计算出错误的总和 \(`5 + 1 = 51`\)。  因此，可能想在 `click` 侦听器运行期间暂停代码。  **事件侦听器断点**可以完全实现此要求：  
 
-1.  在 “**JavaScript 调试**”窗格中，选择“**事件侦听器断点**”以展开该部分。  开发工具显示可展开事件类别的列表，如**动画**和**剪贴板**。  
+1.  在调试 **器窗格中** ，选择 **"事件侦听器断点"** 以展开部分。  开发工具显示可展开事件类别的列表，如**动画**和**剪贴板**。  
 1.  在**鼠标**事件类别旁，选择“**展开**” \(![展开图标](../media/expand-icon.msft.png)\)。  开发工具显示鼠标事件的列表，如**单击**和**鼠标按下**。  每个事件旁边都有一个复选框。  
 1.  选中“**单击**”旁边的复选框。  现在开发工具设置为在运行任何 `click` 事件侦听器时自动暂停。  
     
@@ -119,7 +119,7 @@ function updateLabel() {
 
 <!--todo: add inprivate section when available -->  
 
-**事件侦听器断点**只是开发工具中提供的许多类型的断点之一。  记住所有不同的类型，以帮助你尽快调试不同的方案。  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**事件侦听器断点**只是开发工具中提供的许多类型的断点之一。  记住所有不同的类型，以帮助你尽快调试不同的方案。  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->  
 
 ## <a name="step-4-step-through-the-code"></a>步骤 4：单步执行代码  
 
@@ -159,37 +159,37 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 `addend1`、`addend2` 和 `sum` 的值看起来可疑。  这些值用引号括起来。  引号表示此值是一个字符串，这是解释错误原因的一个很好的假设。  收集有关情况的更多信息。  开发工具提供了许多用于检查变量值的工具。  
 
-### <a name="method-1-the-scope-panel"></a>方法 1：作用域窗格  
+### <a name="method-1-the-scope-pane"></a>方法 1：范围窗格  
 
-如果暂停在一行代码上，**作用域**面板将显示当前定义的局部变量和全局变量以及每个变量的值。  如果适用，它还会显示关闭变量。  双击变量值进行编辑。  如果未在代码行上暂停，则“**作用域**”窗格为空。  
+如果暂停一行代码，"范围"窗格**** 将显示当前定义的本地和全局变量以及每个变量的值。  如果适用，它还会显示关闭变量。  双击变量值进行编辑。  如果不在代码行上暂停，则 **"范围"** 窗格为空。  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="作用域窗格" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="范围窗格" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
    **作用域**窗格  
 :::image-end:::  
 
 ### <a name="method-2-watch-expressions"></a>方法 2：监视表达式  
 
-通过**监视表达式**窗格，可随着时间监视变量值。  正如该名称所示， **监视表达式**不限于变量。  可以将任何有效的 JavaScript 表达式存储在**监视表达式**中。  立即尝试。  
+监视 **窗格** 允许您监视变量的值，例如 (或) `sum` 表达式 (如 `typeof sum`) 。  可以将任何有效的 JavaScript 表达式存储在监视表达式中。  
 
-1.  选择**监视**窗格。  
-1.  选择**添加表达式** \(![添加表达式](../media/add-expression-icon.msft.png)\)。  
+1.  选择" **监视"** 窗格。  
+1.  Choose **Add watch expression** \ (Add watch expression ![ ](../media/add-expression-icon.msft.png) \) .  
 1.  键入 `typeof sum`。  
-1.  选择 `Enter`。  开发工具显示 `typeof sum: "string"`。  冒号右边的值是监视表达式的结果。  
+1.  选择 `Enter`。  DevTools 显示 `typeof sum: "string"` 。  冒号右边的值是监视表达式的结果。  
     
 > [!NOTE]
-> 在下图的“**监视表达式**窗格”\(右下\)中，显示 `typeof sum`“监视表达式”。  如果开发工具窗口很大，则**监视表达式**窗格位于**事件侦听器断点**窗格的右侧。  
+> 下图中，监视 `typeof sum` 表达式显示在"监视" **窗格中** 。  如果 DevTools 窗口很宽，**** 则"监视"窗格显示在**** 调试器窗格中，然后显示在右侧。  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="监视表达式窗格" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
-   **监视表达式**窗格  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="监视窗格" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+   “**监视**”窗格  
 :::image-end:::  
 
 正如猜想的那样，如果应为数字， `sum` 被评估为字符串。  现在确认值类型是 Bug 的原因。  
 
 ### <a name="method-3-the-console"></a>方法 3：控制台  
 
-**控制台**允许查看 `console.log()` 消息，也可以使用它来评估任意 JavaScript 语句。  为了进行调试，可以使用**控制台**测试潜在的 bug 修补程序。  立即尝试。  
+**控制台**允许你查看 `console.log()` 输出。  当调试程序暂停在**** 代码语句上时，您还可以使用控制台评估任意 JavaScript 语句。  对于调试，可以使用 **控制台** 测试潜在 Bug 修复。
 
-1.  如果**控制台**工具已关闭，请选择 `Escape` 以将其打开。  **控制台**工具将在开发工具窗口的下部窗格中打开。  
+1.  如果**控制台**工具已关闭，请选择 `Esc` 以将其打开。  控制台 **工具** 将在 DevTools 窗口的下窗格中打开。  
 1.  在**控制台**中，键入 `parseInt(addend1) + parseInt(addend2)`。  工具的语句暂停在作用域为 `addend1` 和 `addend2` 的代码行上。  
 1.  选择 `Enter`。  开发工具将评估该语句并打印 `6`，这是预期演示生成的结果。  
     
@@ -199,39 +199,46 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
     
 ## <a name="step-7-apply-a-fix"></a>步骤 7：应用修补程序  
 
-如果找到该 Bug 的修补程序，请通过编辑代码并重新运行演示来尝试修复。  可以直接在开发工具 UI 中编辑 JavaScript 代码并应用修补程序。  立即尝试。  
+我们已确定该 Bug 的可能修复方法。  接下来，直接在 DevTools UI 中编辑 JavaScript 代码，然后重新运行演示以测试修复，如下所示。
 
 1.  选择“**继续脚本执行**” \(继续脚本执行 ![ ](../media/resume-script-run-icon.msft.png) \)。  
-1.  在**代码编辑器**中，将第 32 行、`var sum = addend1 + addend2` 替换为 `var sum = parseInt(addend1) + parseInt(addend2)`。  
+1.  在" **编辑器"** 窗格中，将行替换为 `var sum = addend1 + addend2` `var sum = parseInt(addend1) + parseInt(addend2)` 。  
 1.  选择 `Control`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 以保存更改。  
 1.  选择“**停用断点**” \(![停用断点](../media/deactivate-breakpoints-button-icon.msft.png) \)。  它将更改蓝色，以指示选项处于活动状态。  设置“**停用断点**”时，开发工具会忽略你设置的任何断点。  
 1.  尝试使用具有不同值的演示。  演示现在计算正确。  
     
 > [!CAUTION]
-> 此工作流程仅将修复程序应用于浏览器中正在运行的代码。  它不会修复访问网页的所有用户的代码。  为此，需要修复服务器上的代码。  
+> 此工作流仅对从服务器发送的代码的本地副本应用修补程序。  调试项目时，确定修补程序后，你仍然需要将修复应用到服务器上代码，例如编辑本地源代码，然后将固定代码重新部署到服务器。
 
 ## <a name="next-steps"></a>后续步骤  
 
 祝贺你！  现在，你已了解如何在调试 JavaScript 时充分利用 Microsoft Edge 开发工具。  本文中学习的工具和方法可以为你节省很多时间。  
 
-本文仅为你提供两种设置断点的方法。  开发工具提供了许多其他方法，包括以下设置。  
+本文介绍了两种设置断点的方法。  DevTools 还提供了在满足某些条件时设置断点以暂停代码的方法，例如：
 
 *   仅在提供的条件为 true 时触发的条件断点。  
 *   已捕获或未捕获异常的断点。  
 *   请求的 URL 与提供的子字符串匹配时触发的 XHR 断点。  
     
-有关何时以及如何使用每种类型的更多信息，请导航至[使用断点暂停代码][DevtoolsJavscriptBreakpoints]。  
+有关何时以及如何使用每种类型的信息，请导航到"使用断点[暂停代码"。][DevToolsJavscriptBreakpoints]  
 
-本文不介绍几个代码单步执行控件。  有关详细信息，请导航到“[单步跳过代码行][DevtoolsJavascriptReferenceStepThroughCode]”。  
+本文不介绍几个代码单步执行控件。  有关详细信息，请导航到"使用 [调试器][DevToolsJavascriptReferenceStepThroughCode] 功能"文章中的逐行代码。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+### <a name="see-also"></a>另请参阅
+
+*   [使用调试器功能][DevToolsJavascriptReference] - 使用"源"工具中的调试器 UI。
+*   [源工具概述][DevToolsSourcesIndex] - 介绍 JavaScript 调试工具和代码编辑器。
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
-[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "单步执行代码 - JavaScript 调试引用 |Microsoft Docs"
+[DevToolsJavascriptReference]: ./reference.md "使用调试器功能|Microsoft Docs"  
+[DevToolsSourcesIndex]: ../sources/index.md "源工具概述 | Microsoft Docs"  
+[DevToolsJavscriptBreakpoints]: ./breakpoints.md "如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
+[DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "分步执行代码 - 使用调试器|Microsoft Docs"
 
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->  
 
