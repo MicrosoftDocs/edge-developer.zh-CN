@@ -118,7 +118,7 @@ ms.locfileid: "11514387"
 
 <span data-ttu-id="f3944-164">在 Microsoft Edge 84 中，\*\*\*\* 当您在网络日志中为资源打开网络工具中的"详细信息"窗格时，它[现在将具有焦点][DevToolsNetworkLog]。 [][DevToolsNetworkDetails]</span><span class="sxs-lookup"><span data-stu-id="f3944-164">In Microsoft Edge 84, the [Details pane][DevToolsNetworkDetails] in the **Network** tool now takes focus when you open it for a resource in the [Network Log][DevToolsNetworkLog].</span></span>  <span data-ttu-id="f3944-165">此更改允许屏幕阅读器读出"详细信息"窗格的内容并 **与之** 交互。</span><span class="sxs-lookup"><span data-stu-id="f3944-165">This change allows screen readers to read out and interact with the content of the **Details** pane.</span></span>  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text=""网络面板中的详细信息窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="网络面板中的详细信息窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
    <span data-ttu-id="f3944-167">" **网络** "工具中的" **详细信息** "窗格在打开时将焦点</span><span class="sxs-lookup"><span data-stu-id="f3944-167">The **Details** pane in the **Network** tool takes focus when opened</span></span>
 :::image-end:::  
 
