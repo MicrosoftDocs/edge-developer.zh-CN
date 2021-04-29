@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 19bc0c5600ebd072ad9a6aa61d2a965e999865ce
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+ms.openlocfilehash: 47f24b160797ce0ab7a7cb6a656c4f6b4e5696ac
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11306157"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526064"
 ---
 # <a name="getting-started-with-webview2"></a>WebView2 入门  
 
@@ -287,10 +287,9 @@ nullptr);
 
 ## <a name="next-steps"></a>后续步骤  
 
-本文未涵盖许多 WebView2 功能，下一节提供了更多资源。  
+有关本文未涵盖的其他 WebView2 功能，请查看以下资源。  
 
-### <a name="see-also"></a>另请参阅  
-
+*   若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。  
 *   有关 WebView2 功能的综合示例，请导航到 [WebView2 API 示例][GithubMicrosoftedgeWebview2samplesApisample]。  
 *   对于使用 WebView2 生成的示例应用，导航到 [WebView2Browser][GithubMicrosoftedgeWebview2browser]。  
 *   有关 WebView2 API 的详细信息，请导航到 [API 参考][Webview2ReferenceWin32]。  
@@ -301,6 +300,7 @@ nullptr);
 
 <!-- links -->  
 
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 |Microsoft Edge 开发人员"  
 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ 参考|Microsoft Docs"  

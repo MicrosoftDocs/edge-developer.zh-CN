@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: 9d797e87ff8b5f11d957442c2cea08ae2f8c66a7
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+ms.openlocfilehash: 408d225c6c0abe54483226e7004a386d367d65ab
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11470863"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526085"
 ---
 # <a name="getting-started-with-webview2-in-windows-forms"></a>Windows 窗体中的 WebView2 入门
 
@@ -340,8 +340,7 @@ async void InitializeAsync()
 
 若要继续了解有关 WebView2 的更多内容，请导航到以下资源。  
 
-### <a name="see-also"></a>另请参阅  
-
+*   若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。  
 *   有关 WebView2 功能的综合示例，请导航到 [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain]。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
 *   有关 WebView2 API 的详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WinformsWebview2]。  
@@ -352,6 +351,7 @@ async void InitializeAsync()
 
 <!-- links -->  
 
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 (预览版) |Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"  
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: 52d84afb6f9fe1e120f75525b2669a797309fdfe
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 8ecc40a1940bfb656e2dfdc7ab6f57effa90717d
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461204"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526057"
 ---
 # <a name="getting-started-with-webview2-in-winui-3-preview"></a>WinUI 3 预览版中的 WebView2 (入门)   
 
@@ -279,8 +279,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 若要继续了解有关 WebView2 的更多内容，请导航到以下资源。  
 
-### <a name="see-also"></a>另请参阅  
-
+*   若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。  
 *   有关 WebView2 功能的综合示例，请导航到 [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain]。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
     
@@ -296,6 +295,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 若要发送特定于 WinUI 的功能请求或 Bug，请导航到"问题[- microsoft/microsoft-ui-xaml"，][GithubMicrosoftMicrosoftUiXamlIssues]然后选择"**新问题"。**  
 
 <!-- links -->  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Microsoft Edge WebView2 (预览版) |Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 (预览版) |Microsoft Docs"  
@@ -306,7 +306,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Windows 10 应用商店的程序包清单架构|Microsoft Docs"  
 
-[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用"管理扩展"对话框安装 - 管理 Visual Studio |Microsoft Docs"  
+[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用&quot;管理扩展&quot;对话框安装 - 管理 Visual Studio |Microsoft Docs"  
 
 [WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "配置开发环境 - Windows UI Library 3.0 Preview 1 (2020 年 5 月) |Microsoft Docs"  
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows 社区Toolkit文档|Microsoft Docs"  

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2， webview2， WebView， webview， wpf 应用， wpf， edge， CoreWebView2， 浏览器控件， edge html， 入门， 入门， .NET
-ms.openlocfilehash: 14e6b64e36f6354554957d2c7953f789024d23c9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 1ced88ebd80d663ac2bd25840174d8505729bf32
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470835"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526078"
 ---
 # <a name="getting-started-with-webview2-in-wpf"></a>WPF 中的 WebView2 入门
 
@@ -335,8 +335,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 若要继续了解有关 WebView2 的更多内容，请导航到以下资源。  
 
-### <a name="see-also"></a>另请参阅  
-
+*   若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。  
 *   有关 WebView2 功能的综合示例，请导航到 GitHub 上的 [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] 存储库。  
 *   有关 WebView2 API 的更多详细信息，请导航到 [API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。](../index.md#next-steps)  
@@ -347,6 +346,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 <!-- links -->  
  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf 命名空间|Microsoft Docs"  
