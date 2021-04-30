@@ -409,6 +409,8 @@
               href: webview2/concepts/versioning.md
             - name: 线程模型
               href: webview2/concepts/threading-model.md
+            - name: WebView2 开发的最佳做法
+              href: webview2/concepts/developer-guide.md
             - name: Win32 API 约定
               href: webview2/concepts/win32-api-conventions.md
         - name: 发行说明
