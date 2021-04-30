@@ -36,7 +36,7 @@ ms.locfileid: "11519235"
 
 <span data-ttu-id="214b4-121">现在导航 `edge://flags` 到 Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="214b4-121">Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="214b4-122">在 **"搜索标志"** 中，键入 **"通过 Windows Device Portal 启用远程调试"。**</span><span class="sxs-lookup"><span data-stu-id="214b4-122">In **Search flags**, type in **Enable remote debugging through Windows Device Portal**.</span></span>  <span data-ttu-id="214b4-123">将标志设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="214b4-123">Set that flag to **Enabled**.</span></span>  <span data-ttu-id="214b4-124">然后，选择" **重启"** 按钮以重新启动 Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="214b4-124">Then, choose the **Restart** button to restart Microsoft Edge \(Chromium\).</span></span>  
 
-:::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="将"通过 Windows Device Portal 启用远程调试"标志设置为"已启用"" lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
+:::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="将通过 Windows Device Portal 启用远程调试标志设置为已启用" lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
    <span data-ttu-id="214b4-126">将 **"通过 Windows Device Portal 启用远程调试"标志** 设置为 **"已启用"**</span><span class="sxs-lookup"><span data-stu-id="214b4-126">Setting the **Enable remote debugging through Windows Device Portal** flag to **Enabled**</span></span>  
 :::image-end:::  
 
@@ -47,7 +47,7 @@ ms.locfileid: "11519235"
 > [!NOTE]
 > <span data-ttu-id="214b4-129">如果你 **使用** Windows 10 版本 1809 或更早版本， ([Microsoft Edge ][MicrosoftStoreApps9p6cmfv44zlt]) 的"获取"按钮可能处于禁用状态。</span><span class="sxs-lookup"><span data-stu-id="214b4-129">The **Get** button for the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] may be disabled if you are on Windows 10 version 1809 or earlier.</span></span>  <span data-ttu-id="214b4-130">若要设置主机 \ (debuggee\) 计算机，它必须运行 Windows 10 版本 1903 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="214b4-130">To set up the host \(debuggee\) machine, it must be running Windows 10 version 1903 or later.</span></span>  <span data-ttu-id="214b4-131">更新主机 \ (debuggee\) 计算机以获取 Microsoft Edge [ (Beta ][MicrosoftStoreApps9p6cmfv44zlt]) 。</span><span class="sxs-lookup"><span data-stu-id="214b4-131">Update the host \(debuggee\) machine to acquire the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].</span></span>  
 
-:::image type="complex" source="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png" alt-text="Microsoft Store 中的 Microsoft Edge 远程工具 \ (Beta\) " lightbox="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png":::
+:::image type="complex" source="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png" alt-text="Microsoft Store 中的 Microsoft Edge 远程工具 \(Beta\)" lightbox="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png":::
    <span data-ttu-id="214b4-133">Microsoft [Store 中适用于 Microsoft Edge (Beta) ][MicrosoftStoreApps9p6cmfv44zlt] 的 [远程工具][MicrosoftStoreAppsWindows]</span><span class="sxs-lookup"><span data-stu-id="214b4-133">The [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] in the [Microsoft Store][MicrosoftStoreAppsWindows]</span></span>  
 :::image-end:::  
 
@@ -70,7 +70,7 @@ ms.locfileid: "11519235"
 
 <span data-ttu-id="214b4-150">请注意 Connect 下显示计算机 IP 地址和连接 **端口，使用：**。</span><span class="sxs-lookup"><span data-stu-id="214b4-150">Note the machine IP address and connection port displayed under **Connect using:**.</span></span>  <span data-ttu-id="214b4-151">下图中的 IP 地址为 ， `192.168.86.78` 连接端口为 `50080` 。</span><span class="sxs-lookup"><span data-stu-id="214b4-151">The IP address in the image below is `192.168.86.78` and the connection port is `50080`.</span></span>  
 
-:::image type="complex" source="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png" alt-text="记下"设置"中的 IP 地址和连接端口" lightbox="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png":::
+:::image type="complex" source="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png" alt-text="记下设置中的 IP 地址和连接端口" lightbox="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png":::
    <span data-ttu-id="214b4-153">记下"设置"中的 IP 地址和 **连接端口**</span><span class="sxs-lookup"><span data-stu-id="214b4-153">Note the IP address and connection port in the **Settings**</span></span>  
 :::image-end:::  
 
@@ -84,7 +84,7 @@ ms.locfileid: "11519235"
 
 <span data-ttu-id="214b4-162">现在导航 `edge://flags` 到 Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="214b4-162">Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="214b4-163">在 **"搜索标志"** 中，键入"启用远程**Windows 设备调试 edge://inspect"。**</span><span class="sxs-lookup"><span data-stu-id="214b4-163">In **Search flags**, type in **Enable remote Windows device debugging in edge://inspect**.</span></span>  <span data-ttu-id="214b4-164">将标志设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="214b4-164">Set that flag to **Enabled**.</span></span>  <span data-ttu-id="214b4-165">然后，选择" **重启"** 按钮以重新启动 Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="214b4-165">Then, choose the **Restart** button to restart Microsoft Edge \(Chromium\).</span></span>  
 
-:::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png" alt-text="将"启用远程 Windows 设备调试"edge://inspect 设置为"已启用"" lightbox="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png":::
+:::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png" alt-text="将启用远程 Windows 设备调试 edge://inspect 设置为已启用" lightbox="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png":::
    <span data-ttu-id="214b4-167">将" **启用远程 Windows 设备调试"edge://inspect** 设置为 **"已启用"**</span><span class="sxs-lookup"><span data-stu-id="214b4-167">Setting the **Enable remote Windows device debugging through edge://inspect** flag to **Enabled**</span></span>  
 :::image-end:::  
 

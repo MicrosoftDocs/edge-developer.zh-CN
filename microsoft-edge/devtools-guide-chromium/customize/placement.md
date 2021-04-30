@@ -42,7 +42,7 @@ ms.locfileid: "11519154"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择"扩展坞"向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择扩展坞向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
          <span data-ttu-id="dd058-110">选择 **"扩展坞"向左**</span><span class="sxs-lookup"><span data-stu-id="dd058-110">Choose **Dock to left**</span></span>  
       :::image-end:::  
    :::column-end:::

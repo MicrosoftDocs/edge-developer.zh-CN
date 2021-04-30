@@ -36,7 +36,7 @@ ms.locfileid: "11519343"
 1.  <span data-ttu-id="edd15-110">在"**设置"下**，选择"**忽略列表"。**</span><span class="sxs-lookup"><span data-stu-id="edd15-110">Below **Settings**, choose **Ignore List**.</span></span>  <span data-ttu-id="edd15-111">将显示 **"设置"的** "框架库 **代码"** 部分。</span><span class="sxs-lookup"><span data-stu-id="edd15-111">The **Framework Library Code** section of **Settings** appears.</span></span>  
 1.  <span data-ttu-id="edd15-112">打开" **将内容脚本标记为库代码"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="edd15-112">Turn on the **Mark content scripts as Library code** checkbox.</span></span>  
     
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用"将内容脚本标记为库代码"复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用将内容脚本标记为库代码复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
        <span data-ttu-id="edd15-114">启用" **将内容脚本标记为库代码"** 复选框</span><span class="sxs-lookup"><span data-stu-id="edd15-114">Enable the **Mark content scripts as Library code** checkbox</span></span>  
     :::image-end:::  
     

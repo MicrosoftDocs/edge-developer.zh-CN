@@ -125,7 +125,7 @@ ms.locfileid: "11519420"
 1.  <span data-ttu-id="56970-148">导航到 **"源"** 工具。</span><span class="sxs-lookup"><span data-stu-id="56970-148">Navigate to the **Sources** tool.</span></span>  
 1.  <span data-ttu-id="56970-149">在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="56970-149">In the **Navigator** pane (on the left), choose the **Filesystem** tab.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text=""文件系统"选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="文件系统选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        <span data-ttu-id="56970-151">" **文件系统"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="56970-151">The **Filesystem** tab</span></span>  
     :::image-end:::  
     
@@ -134,7 +134,7 @@ ms.locfileid: "11519420"
 1.  <span data-ttu-id="56970-154">选择 **"** 允许"以授予 DevTools 读取和写入目录的权限。</span><span class="sxs-lookup"><span data-stu-id="56970-154">Choose **Allow** to give DevTools permission to read and write to the directory.</span></span>  
     <span data-ttu-id="56970-155">在" **文件系统"** 选项卡中，现在，、 和 旁边将出现 `index.html` `script.js` 一个绿色点 `styles.css` 。</span><span class="sxs-lookup"><span data-stu-id="56970-155">In the **Filesystem** tab, a green dot now appears next to `index.html`, `script.js`, and `styles.css`.</span></span>  <span data-ttu-id="56970-156">绿色点表示 DevTools 已建立页面的网络资源与 中的文件之间的映射 `~/Desktop/app` 。</span><span class="sxs-lookup"><span data-stu-id="56970-156">A green dot indicates that DevTools has established a mapping between a network resource of the page, and the file in `~/Desktop/app`.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text=""文件系统"选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="文件系统选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        <span data-ttu-id="56970-158">" **文件系统** "选项卡现在指示本地文件和网络文件之间的映射</span><span class="sxs-lookup"><span data-stu-id="56970-158">The **Filesystem** tab now indicates a mapping between the local files and the network ones</span></span>  
     :::image-end:::  
     
@@ -209,7 +209,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  <span data-ttu-id="56970-188">选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="56970-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
 1.  <span data-ttu-id="56970-189">刷新页面。</span><span class="sxs-lookup"><span data-stu-id="56970-189">Refresh the page.</span></span>  <span data-ttu-id="56970-190">`<h1>`刷新页面后，元素将继续显示新文本。</span><span class="sxs-lookup"><span data-stu-id="56970-190">The `<h1>` element continues to display the new text after the page is refreshed.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从"源"工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从源工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        <span data-ttu-id="56970-192">从"源"工具 **更改** HTML</span><span class="sxs-lookup"><span data-stu-id="56970-192">Change HTML from the **Sources** tool</span></span>  
     :::image-end:::  
     
@@ -232,7 +232,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  <span data-ttu-id="56970-207">选择 `Control` + `P` \ (Windows、Linux\) 或 `Command` + `P` \ (macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="56970-207">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="56970-208">查看下图。</span><span class="sxs-lookup"><span data-stu-id="56970-208">Review the following figure.</span></span>  
 1.  <span data-ttu-id="56970-209">键入 `script` ，然后选择 \*\*"app/script.js"。 \*\*</span><span class="sxs-lookup"><span data-stu-id="56970-209">Type `script`, then choose **app/script.js**.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件"对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        <span data-ttu-id="56970-211">使用 `script.js` "打开 **文件"对话框** 打开</span><span class="sxs-lookup"><span data-stu-id="56970-211">Open `script.js` using the **Open File** dialog</span></span>  
     :::image-end:::  
     

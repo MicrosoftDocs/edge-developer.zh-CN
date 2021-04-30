@@ -64,7 +64,7 @@ ms.locfileid: "11526057"
     *   <span data-ttu-id="2ea1c-139">**目标版本\*\*\*\*：Windows 10 版本 1903 (版本 18362**) 或更高版本</span><span class="sxs-lookup"><span data-stu-id="2ea1c-139">**Target version**:  **Windows 10, version 1903 (build 18362)** or later</span></span>  
     *   <span data-ttu-id="2ea1c-140">\*\*最低版本\*\*\*\*：Windows 10 版本 1803 (版本 17134) \*\*</span><span class="sxs-lookup"><span data-stu-id="2ea1c-140">**Minimum version**:  **Windows 10, version 1803 (build 17134)**</span></span>  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text=""新建通用 Windows 平台项目"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="新建通用 Windows 平台项目对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-gettingstarted-projecttype.png":::
        <span data-ttu-id="2ea1c-142">"新建通用 Windows 平台项目"对话框，包含"目标版本"和"最低版本"的选定值。</span><span class="sxs-lookup"><span data-stu-id="2ea1c-142">The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version.</span></span>
     :::image-end:::  
     

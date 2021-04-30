@@ -40,13 +40,13 @@ ms.locfileid: "11519441"
 
 1.  <span data-ttu-id="67451-111">选择 `Control`+`P`（Windows、Linux）或 `Command`+`P` (macOS)。</span><span class="sxs-lookup"><span data-stu-id="67451-111">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).</span></span>  <span data-ttu-id="67451-112">将 **打开"打开文件** "对话框。</span><span class="sxs-lookup"><span data-stu-id="67451-112">The **Open File** dialog opens.</span></span>  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text=""打开文件"对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="打开文件对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        <span data-ttu-id="67451-114">" **打开文件"** 对话框</span><span class="sxs-lookup"><span data-stu-id="67451-114">The **Open File** dialog</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="67451-115">从下拉列表中选择文件，或开始键入文件名，在自动完成框中突出显示正确的文件后 `Enter` 选择。</span><span class="sxs-lookup"><span data-stu-id="67451-115">Choose the file from the dropdown, or start typing the filename and select `Enter` once the correct file is highlighted in the autocomplete box.</span></span>  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在"打开文件"对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在打开文件对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
        <span data-ttu-id="67451-117">在"打开文件" **对话框中键入** 文件名</span><span class="sxs-lookup"><span data-stu-id="67451-117">Type a filename in the **Open File** dialog</span></span>  
     :::image-end:::  
     
@@ -62,7 +62,7 @@ ms.locfileid: "11519441"
 
 <span data-ttu-id="67451-123">下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。</span><span class="sxs-lookup"><span data-stu-id="67451-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="67451-124">如果你曾经想要在网络工具中检查资源，\*\*\*\* 请将鼠标悬停在资源上，打开上下文菜单 \ (右键单击\) ，然后选择"网络"面板中的"**展示"。**</span><span class="sxs-lookup"><span data-stu-id="67451-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text=""网络"面板中的"展示"" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="网络面板中的展示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **<span data-ttu-id="67451-126">"网络"面板中的"展示"</span><span class="sxs-lookup"><span data-stu-id="67451-126">Reveal in Network panel</span></span>**  
 :::image-end:::  
 
@@ -84,7 +84,7 @@ ms.locfileid: "11519441"
 1.  <span data-ttu-id="67451-135">选择 **"源**"工具，然后在左上角的\*\*\*\*"导航器"窗格中，选择"**页面"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="67451-135">Choose the **Sources** tool, and then in the **Navigator** pane in the upper left, choose the **Page** tab.</span></span>
 1.  <span data-ttu-id="67451-136">Choose the **More options** (...) button to the right of the **Page** tab， and then choose Group **by folder**.</span><span class="sxs-lookup"><span data-stu-id="67451-136">Choose the **More options** (...) button to the right of the **Page** tab, and then choose **Group by folder**.</span></span>
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text=""源"工具的"导航器"窗格中的"页面"选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="源工具的导航器窗格中的页面选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
        <span data-ttu-id="67451-138">" **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="67451-138">The **Page** tab in the **Navigator** pane of the **Sources** tool</span></span>  
     :::image-end:::  
     
@@ -112,13 +112,13 @@ ms.locfileid: "11519441"
 1.  <span data-ttu-id="67451-156">在左侧 **导航器** (窗格中，) " **页面"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="67451-156">In the **Navigator** pane (on the left), choose the **Page** tab.</span></span>  
 1.  <span data-ttu-id="67451-157">选择 **"更多选项** `...` "，然后清除"按文件夹 **分组"旁边的选中标记**。</span><span class="sxs-lookup"><span data-stu-id="67451-157">Choose **More options** `...` and then clear the checkmark next to **Group by folder**.</span></span>  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text=""按文件夹分组"选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="按文件夹分组选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        <span data-ttu-id="67451-159">" **按文件夹分组"** 选项</span><span class="sxs-lookup"><span data-stu-id="67451-159">The **Group by folder** option</span></span>  
     :::image-end:::  
     
     <span data-ttu-id="67451-160">资源按文件类型进行组织。</span><span class="sxs-lookup"><span data-stu-id="67451-160">Resources are organized by file type.</span></span>  <span data-ttu-id="67451-161">在每个文件类型内，资源按字母顺序进行组织。</span><span class="sxs-lookup"><span data-stu-id="67451-161">Within each file type, the resources are organized alphabetically.</span></span>  
 
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除"按文件夹分组"复选框后的"页面"选项卡" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除按文件夹分组复选框后的页面选项卡" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        <span data-ttu-id="67451-163">清除 **"** 按文件夹分组"复选框后的"页面 **"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="67451-163">The **Page** tab after clearing the **Group by folder** check mark</span></span>  
     :::image-end:::  
     
@@ -134,14 +134,14 @@ ms.locfileid: "11519441"
     
 1.  <span data-ttu-id="67451-170">向下滚动到"框架 **"** 窗格。</span><span class="sxs-lookup"><span data-stu-id="67451-170">Scroll down to the **Frames** pane.</span></span>  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text=""框架"窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="框架窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        <span data-ttu-id="67451-172">" **框架"** 窗格</span><span class="sxs-lookup"><span data-stu-id="67451-172">The **Frames** pane</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="67451-173">展开您感兴趣的部分。</span><span class="sxs-lookup"><span data-stu-id="67451-173">Expand the sections in which you are interested.</span></span>  
 1.  <span data-ttu-id="67451-174">选择一个资源进行查看。</span><span class="sxs-lookup"><span data-stu-id="67451-174">Choose a resource to view it.</span></span>  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在"应用程序"面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在应用程序面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        <span data-ttu-id="67451-176">在"应用程序"面板 **中查看** 资源</span><span class="sxs-lookup"><span data-stu-id="67451-176">View a resource in the **Application** panel</span></span>  
     :::image-end:::  
     

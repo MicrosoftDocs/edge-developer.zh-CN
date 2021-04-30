@@ -71,7 +71,7 @@ ms.locfileid: "11519434"
    <span data-ttu-id="faefb-141">在 **"源** "编辑器中，将文件的名称添加到替代</span><span class="sxs-lookup"><span data-stu-id="faefb-141">In the **Sources** editor, add the name of the file to overrides</span></span>  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择"保存替代"" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择保存替代" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    <span data-ttu-id="faefb-143">在上下文菜单上，选择 **"保存替代"**</span><span class="sxs-lookup"><span data-stu-id="faefb-143">On the context menu, choose **Save for overrides**</span></span>  
 :::image-end:::  
 
@@ -102,7 +102,7 @@ ms.locfileid: "11519434"
    :::column span="":::
       <span data-ttu-id="faefb-156">在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。</span><span class="sxs-lookup"><span data-stu-id="faefb-156">On the **Sources** tool, in the **Page** section, hover on any file, open the contextual menu \(right-click\), and add it to overrides.</span></span>  <span data-ttu-id="faefb-157">同样，已位于替代文件夹中的文件在图标上还有一个紫色点。</span><span class="sxs-lookup"><span data-stu-id="faefb-157">Again, files that are already in your overrides folder have a purple dot on the icon.</span></span>  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从"源"工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从源工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          <span data-ttu-id="faefb-159">从"源"工具 **中选择** 文件进行替代</span><span class="sxs-lookup"><span data-stu-id="faefb-159">Choose a file from the **Sources** tool for overrides</span></span>  
       :::image-end:::  
    :::column-end:::
