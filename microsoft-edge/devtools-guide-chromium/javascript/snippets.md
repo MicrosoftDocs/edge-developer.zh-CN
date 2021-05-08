@@ -67,7 +67,7 @@ ms.locfileid: "11519427"
 
 <span data-ttu-id="ebd89-125">左侧**导航**器窗格中的"代码\*\*\*\* 段"选项卡列出了您的代码段。</span><span class="sxs-lookup"><span data-stu-id="ebd89-125">The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets.</span></span>  <span data-ttu-id="ebd89-126">当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。</span><span class="sxs-lookup"><span data-stu-id="ebd89-126">When you want to edit a Snippet, you need to open it from the **Snippets** tab.</span></span>  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="代码段选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text=""代码段"选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    <span data-ttu-id="ebd89-128">" **代码段"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="ebd89-128">The **Snippets** tab</span></span>  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ ms.locfileid: "11519427"
 
 1.  <span data-ttu-id="ebd89-130">选择" **源"** 选项卡。 将显示 **"源** "工具。</span><span class="sxs-lookup"><span data-stu-id="ebd89-130">Choose the **Sources** tab.  The **Sources** tool appears.</span></span>  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开页面选项卡的源工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开"页面"选项卡的"源"工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
        <span data-ttu-id="ebd89-132">在 **左侧** 打开" **页面"** 选项卡的"源"工具</span><span class="sxs-lookup"><span data-stu-id="ebd89-132">The **Sources** tool with the **Page** tab open on the left</span></span>  
     :::image-end:::  
     

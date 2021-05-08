@@ -43,13 +43,13 @@ ms.locfileid: "11519350"
     
 1.  <span data-ttu-id="17f76-111">开始键入 ， `javascript` 选择 **"禁用 JavaScript"，** 然后选择 `Enter` 运行命令。</span><span class="sxs-lookup"><span data-stu-id="17f76-111">Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.</span></span>  <span data-ttu-id="17f76-112">JavaScript 现已禁用。</span><span class="sxs-lookup"><span data-stu-id="17f76-112">JavaScript is now disabled.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择禁用 JavaScript" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择"禁用 JavaScript"" lightbox="../media/javascript-console-command-javascript.msft.png":::
        <span data-ttu-id="17f76-114">在 **命令菜单中选择** "禁用 **JavaScript"**</span><span class="sxs-lookup"><span data-stu-id="17f76-114">Choose **Disable JavaScript** in the **Command Menu**</span></span>  
     :::image-end:::  
     
     <span data-ttu-id="17f76-115">源旁边的黄色 **警告图标提醒** 你 JavaScript 已禁用。</span><span class="sxs-lookup"><span data-stu-id="17f76-115">The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="源旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text=""源"旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        <span data-ttu-id="17f76-117">"源"旁边的警告 **图标**</span><span class="sxs-lookup"><span data-stu-id="17f76-117">The warning icon next to **Sources**</span></span>  
     :::image-end:::  
     
