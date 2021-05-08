@@ -16,7 +16,7 @@ ms.locfileid: "11526156"
 ---
 # <a name="customize-the-password-reveal-button"></a>自定义密码显示按钮  
 
-`password`Microsoft Edge 中的输入类型包括**密码显示**控件。  用户可以选择密码 **输入按钮** 来显示 **密码** 字段。  显示 **的密码** 字段可帮助用户验证密码是否正确。  在用户输入密码字段中的文本后，**** 用户可以选择密码显示按钮或选择**** `Alt` + `F8` 切换输入的可见性。  
+该 `password` 控件中的输入Microsoft Edge包括**密码显示**控件。  用户可以选择密码 **输入按钮** 来显示 **密码** 字段。  显示 **的密码** 字段可帮助用户验证密码是否正确。  在用户输入密码字段中的文本后，**** 用户可以选择密码显示按钮或选择**** `Alt` + `F8` 切换输入的可见性。  
 
 :::row:::
    :::column span="":::
@@ -34,7 +34,7 @@ ms.locfileid: "11526156"
    :::column-end:::
 :::row-end:::  
 
-默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从 Microsoft Edge 版本 87 开始，用户或 [企业][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] 可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数 Microsoft Edge 用户拥有默认体验。  
+默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从 Microsoft Edge版本 87 开始，用户或[企业][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。  
 
 ## <a name="remove-the-password-reveal-control"></a>删除密码显示控件  
 

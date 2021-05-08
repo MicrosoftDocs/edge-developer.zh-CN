@@ -179,7 +179,7 @@ document.head.appendChild(script);
 *   在 DevTools 中的任何位置，在 `Ctrl` + `P` Windows/Linux 或 `Command` + `P` macOS 上选择。  将显示&quot;命令菜单&quot;，并列出&quot;源&quot;工具的&quot;导航器&quot;**** 窗格选项卡上**的所有**资源。  
 *   或者，在&quot;源&quot;工具中****&quot;导航器&quot;窗格的**** 选项卡旁边，选择&quot;... ** (****更多**选项") 按钮，然后选择"**打开文件"。**  
 
-若要显示和选取所有 .js 文件的列表，请键入 `.js` 。
+若要显示并选取所有文件.js，请键入 `.js` 。
 
 :::image type="complex" source="../media/sources-command-menu-to-open-file.msft.png" alt-text="使用命令菜单打开文件" lightbox="../media/sources-command-menu-to-open-file.msft.png":::
    使用命令菜单打开文件
@@ -295,7 +295,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 ### <a name="mapping-minified-code-to-your-source-code-to-show-readable-code"></a>将缩小代码映射到源代码以显示可读代码
 
-来自预处理器的源映射会导致 DevTools 加载原始 JavaScript 源文件以及服务器返回的缩小的转换后的 JavaScript 文件。  然后，在设置断点并逐步执行代码时查看原始源文件。  同时，Microsoft Edge 实际上是在运行缩小代码。  
+来自预处理器的源映射会导致 DevTools 加载原始 JavaScript 源文件以及服务器返回的缩小的转换后的 JavaScript 文件。  然后，在设置断点并逐步执行代码时查看原始源文件。  同时，Microsoft Edge运行缩小代码。  
 
 在 **"编辑器**"窗格中，如果右键单击 JavaScript 文件，然后选择****"添加源映射"，将出现一个弹出框，包含"源**映射 URL"** 文本框和"添加 **"** 按钮。
 
@@ -304,9 +304,9 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 ### <a name="transformations-from-source-code-to-compiled-front-end-code"></a>从源代码转换到编译的前端代码
 
-如果使用转换 JavaScript 文件（如 React）的框架，本地源 JavaScript 可能不同于服务器返回的前端 JavaScript。  此方案不支持工作区，但在此方案中支持源代码映射。  
+如果使用转换 JavaScript 文件（如 React）的框架，则本地源 JavaScript 可能不同于服务器返回的前端 JavaScript。  此方案不支持工作区，但在此方案中支持源代码映射。  
 
-在开发环境中，服务器可能包括源地图和 React `.ts` 的原始或 `.jsx` 文件。  源 **工具** 显示这些文件，但不允许编辑这些文件。  当你设置断点并使用调试器时，DevTools 将显示原始或文件，但实际上是分步调试 `.ts` `.jsx` JavaScript 文件缩小版本。
+在开发环境中，服务器可能包括源地图和原始或 `.ts` `.jsx` 用于React。  源 **工具** 显示这些文件，但不允许编辑这些文件。  当你设置断点并使用调试器时，DevTools 将显示原始或文件，但实际上是分步调试 `.ts` `.jsx` JavaScript 文件缩小版本。
 
 在此方案中， **源** 工具可用于检查和逐步执行从服务器返回的转换的前端 JavaScript。  使用调试器定义 Watch 表达式，并使用控制台输入 JavaScript 表达式以操作范围内的数据。
 
@@ -372,7 +372,7 @@ CSS 更改会立即生效;无需手动保存更改。
 | \: | **转到行** | 转到行号。 |
 | \@ | **转到符号** | 转到函数。  键入 时，命令菜单会列出在"编辑器"窗格中打开的 `@` JavaScript 文件中找到的函数。 |
    
-有关详细信息，请参阅使用 [Microsoft Edge DevTools][DevToolsCommandMenuIndex]命令菜单运行命令。
+有关详细信息，请参阅 Run [commands with the Microsoft Edge DevTools Command Menu][DevToolsCommandMenuIndex]。
 
 ### <a name="displaying-source-files-when-using-a-different-tool"></a>使用不同的工具时显示源文件
 
@@ -400,21 +400,21 @@ CSS 更改会立即生效;无需手动保存更改。
 *   监视 JavaScript 表达式的值。
 *   查看调用堆栈 (到目前为止函数调用的顺序) 。
 
-DevTools 中的调试器旨在外观、感觉和工作，就像 [Visual Studio Code][CodeVisualStudioComDocsEditorDebugging] 中的调试器，以及 Visual Studio 中的 [调试器][DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]。
+DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code][CodeVisualStudioComDocsEditorDebugging]中的调试器[Visual Studio。][DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]
 
 以下小节包括调试：
 *   [使用调试器的基本方法](#the-basic-approach-to-using-a-debugger)
 *   [调试器监视和作用域比 console.log 的优点](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
-*   [直接从代码Visual Studio调试](#debug-from-visual-studio-code-directly)
+*   [直接从Visual Studio Code调试](#debug-from-visual-studio-code-directly)
 *   [有关调试的文章](#articles-about-debugging)
 
 ### <a name="the-basic-approach-to-using-a-debugger"></a>使用调试器的基本方法
 
-若要对 JavaScript 代码进行故障排除，可以在" `console.log()` 编辑器"窗格中 **插入** 语句。  另一种功能更强大的方法是使用 Microsoft Edge DevTools 的调试器。  熟悉调试器方法后，使用调试器实际上可以比 `console.log()` 更简单。
+若要对 JavaScript 代码进行故障排除，可以在" `console.log()` 编辑器"窗格中 **插入** 语句。  另一种更强大的方法是使用 DevTools Microsoft Edge调试器。  熟悉调试器方法后，使用调试器实际上可以比 `console.log()` 更简单。
 
 若要在网页上使用调试器，通常设置断点，然后从网页发送表单，如下所示：
 
-1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页 [：Demo： Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted]。
+1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页[：Demo： 入门使用 DevTools Microsoft Edge (Chromium) JavaScript。][DevtoolsGlitchMeDebugJsGetStarted]
 
 1.  选择 `F12` 以打开 **"DevTools"** 窗口，然后选择"源 **"** 选项卡。
 
@@ -454,23 +454,23 @@ DevTools 中的调试器旨在外观、感觉和工作，就像 [Visual Studio C
 
 刷新网页时，将保留断点和监视表达式。
 
-### <a name="debug-from-visual-studio-code-directly"></a>直接从代码Visual Studio调试
+### <a name="debug-from-visual-studio-code-directly"></a>直接从Visual Studio Code调试
 
-若要使用功能更加完整的 Visual Studio Code 调试程序，而不是使用 DevTools 调试程序，请使用 **Microsoft Edge Tools for VS Code** extension for Visual Studio Code。
+若要使用功能更加完整的 Visual Studio Code 调试程序，而不是使用 DevTools 调试器，请使用**Microsoft Edge Tools for VS Code** extension for Visual Studio Code。
 
-:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="The Microsoft Edge Tools for VS Code extension for Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
-   The **Microsoft Edge Tools for VS Code** extension for Visual Studio Code  
+:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="Microsoft Edge工具VS Code扩展Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
+   Microsoft Edge**工具VS Code**扩展Visual Studio Code  
 :::image-end:::  
 
-此扩展提供从 Microsoft **** Edge 开发人员**代码内访问**Microsoft Edge DevTools Visual Studio工具。  
+此扩展提供对开发人员工具**的元素**Microsoft Edge**** 网络工具的访问，从 Microsoft Visual Studio Code。  
 
-有关详细信息，[请参阅Visual Studio代码][DevToolsVSCodeIndex]概述和 GitHub 自述文件页[，Microsoft Edge 开发人员工具 for Visual Studio Code。][GithubMicrosoftVscodeEdgeDevtools]
+有关详细信息，请参阅 Visual Studio Code[概述][DevToolsVSCodeIndex]和 GitHub 自述Microsoft Edge开发人员[工具Visual Studio Code。][GithubMicrosoftVscodeEdgeDevtools]
 
 ### <a name="articles-about-debugging"></a>有关调试的文章
 
 以下文章涵盖调试 **器** 窗格和断点：
 
-*   [开始在 Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptIndex] 中调试 JavaScript - 使用 (简单的项目) 屏幕捕获的教程。
+*   [在开发人员工具中Microsoft Edge JavaScript][DevtoolsGuideChromiumJavascriptIndex] - 使用 (简单的项目) 屏幕捕获的教程。
 
 *   [使用调试器功能][DevToolsJavaScriptReference] - 如何使用调试器设置断点、逐步调试代码、查看和修改变量值、观看 JavaScript 表达式以及查看调用堆栈。
 
@@ -486,9 +486,9 @@ DevTools 中的调试器旨在外观、感觉和工作，就像 [Visual Studio C
 [DevToolsBeginnersHtml]: ../beginners/html.md "适合初学者的 DevTools：HTML 和 DOM |Microsoft Docs"
 [DevToolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"  
-[DevToolsCustomizePlacement]: ../customize/placement.md "将 Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) |Microsoft Docs"
+[DevToolsCustomizePlacement]: ../customize/placement.md "将Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) |Microsoft Docs"
 [DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "在 Microsoft Edge 开发人员工具中调试 JavaScript 入门 | Microsoft Docs"  
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "使用 Microsoft Edge DevTools 工具在任意网页上运行 JavaScript |Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "使用 DevTools 工具在任意网页上Microsoft Edge JavaScript |Microsoft Docs"  
 [DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "使用工作区列表编辑|Microsoft Docs"  
 [DevToolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "在&quot;样式&quot;窗格中编辑 CSS 字体样式|Microsoft Docs"
 [DevToolsJavaScriptBreakpoints]: ../javascript/breakpoints.md "使用断点或断点暂停|Microsoft Docs"
@@ -497,13 +497,13 @@ DevTools 中的调试器旨在外观、感觉和工作，就像 [Visual Studio C
 [DevToolsJavaScriptReference]: ../javascript/reference.md "使用调试器功能|Microsoft Docs"
 [DevToolsJavaScriptReferenceReformat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "重新设置缩小的 JavaScript 文件，并采用非常打印的字体 - 使用调试器|Microsoft Docs"
 [DevToolsJavaScriptSourceMaps]: ../javascript/source-maps.md "将预处理的代码映射到源代码|Microsoft Docs"
-[DevToolsVSCodeIndex]: ../../visual-studio-code/index.md "Visual Studio代码概述|Microsoft Docs"
+[DevToolsVSCodeIndex]: ../../visual-studio-code/index.md "Visual Studio Code概述|Microsoft Docs"
 [ExtensionsChromiumGetstartPart2ContentScripts]: ../../extensions-chromium/getting-started/part2-content-scripts.md "创建扩展教程第 2 部分|Microsoft Docs"
 <!-- external: -->
-[CodeVisualStudioComDocsEditorDebugging]: https://code.visualstudio.com/docs/editor/debugging "调试 - Visual Studio代码|Microsoft Docs"
+[CodeVisualStudioComDocsEditorDebugging]: https://code.visualstudio.com/docs/editor/debugging "调试 - Visual Studio Code |Microsoft Docs"
 [DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]: https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger "使用调试器工具Visual Studio代码|Microsoft Docs"
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "Microsoft Edge 开发人员工具Visual Studio代码|GitHub"
-[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "演示：开始在 DevTools) 使用 Microsoft Edge (Chromium 调试 JavaScript |Microsoft Docs"
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "Microsoft Edge开发人员工具Visual Studio Code |GitHub"
+[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "演示：入门开发人员工具Microsoft Edge (Chromium) 调试 JavaScript |Microsoft Docs"
 [HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "源|HTML Standard"  
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "框架|W3C"  
 [MDNContentScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts "内容脚本|MDN"  

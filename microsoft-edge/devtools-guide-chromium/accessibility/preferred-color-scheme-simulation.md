@@ -1,6 +1,6 @@
 ---
-description: 强制 Microsoft Edge DevTools 进入配色方案预览模式。
-title: '强制 Microsoft Edge DevTools 进入配色方案预览模式 (CSS 首选配色) '
+description: 强制Microsoft Edge开发人员工具进入配色方案预览模式。
+title: '强制Microsoft Edge开发工具进入配色方案预览模式 (CSS 首选配色方案) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -16,7 +16,7 @@ ms.locfileid: "11519147"
 ---
 # <a name="dark-or-light-color-scheme-simulation"></a>深色或浅色配色方案模拟  
 
-操作系统具有一种以较暗或更浅的颜色显示任何应用程序的方法。  在深色模式下操作系统中具有浅色主题的 Web 产品很正常，并且对于一些用户来说可能是一个辅助功能问题。  在 Web 上，可以使用首选配色 [方案][MDNPrefersColorScheme] CSS 媒体查询检测用户是否希望以较暗或更浅的配色方案显示产品。  使用 [Microsoft Edge DevTools][DevtoolsIndex] 模拟从深色模式到浅色模式的变化，而无需更改整个操作系统。  
+操作系统具有一种以较暗或更浅的颜色显示任何应用程序的方法。  在深色模式下操作系统中具有浅色主题的 Web 产品很正常，并且对于一些用户来说可能是一个辅助功能问题。  在 Web 上，可以使用首选配色 [方案][MDNPrefersColorScheme] CSS 媒体查询检测用户是否希望以较暗或更浅的配色方案显示产品。  使用[Microsoft Edge工具][DevtoolsIndex]模拟从深色模式到浅色模式的变化，而无需更改整个操作系统。  
 
 1.  打开“**命令菜单**”。  
     1.  选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。  
@@ -36,16 +36,16 @@ ms.locfileid: "11519147"
 
 1.  选择配色方案后，刷新当前文档以显示模拟模式。  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Microsoft Edge DevTools 中的模拟光模式" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
-       Microsoft Edge DevTools 中的模拟光模式  
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="DevTools Microsoft Edge模拟光模式" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+       DevTools Microsoft Edge模拟光模式  
     :::image-end:::  
     
-    像查看任何其他网页一样查看和更改 CSS。  有关详细信息，请导航到"[查看和更改 CSS 入门"。][DevtoolsCssIndex]  
+    像查看任何其他网页一样查看和更改 CSS。  有关详细信息，请导航到"使用[入门和更改 CSS"。][DevtoolsCssIndex]  
 
 <!-- links -->  
 
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
-[DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "在 Microsoft Edge 开发人员工具中启用深色|Microsoft Docs"
+[DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "在 DevTools Microsoft Edge中启用深色|Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"  
 
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme |MDN"  

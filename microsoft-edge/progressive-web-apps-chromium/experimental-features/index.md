@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge for Web Apps 中的最新实验功能
+description: Microsoft Edge Web Apps 中的最新实验功能
 title: 实验功能|渐进式 Web 应用
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -16,9 +16,9 @@ ms.locfileid: "11496753"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>渐进式 Web 应用和 PBA (实验)   
 
-Microsoft Edge 提供对仍在开发中的实验性功能的访问权限。  若要确定每个功能是否就绪以及何时发布每个功能，请进行测试 [并提供反馈](#providing-feedback-on-experimental-features)。  
+Microsoft Edge提供对仍在开发中的实验性功能的访问权限。  若要确定每个功能是否就绪以及何时发布每个功能，请进行测试 [并提供反馈](#providing-feedback-on-experimental-features)。  
 
-实验功能在 Microsoft Edge 的所有渠道中均可用，但最新的实验功能仅在 Microsoft Edge Canary 渠道中可用。  
+实验功能在所有渠道中Microsoft Edge，但最新的实验功能仅在 Microsoft Edge Canary 渠道 中提供。  
 
 ## <a name="turn-on-experimental-features"></a>打开试验功能  
 
@@ -27,9 +27,9 @@ Microsoft Edge 提供对仍在开发中的实验性功能的访问权限。  若
 1.  打开 Microsoft Edge。   
     
     > [!NOTE]
-    > 确保使用本文中列出的实验的 Microsoft Edge 版本。  导航到 [实验功能](#features-that-are-available-to-test)。  
+    > 确保使用Microsoft Edge列出实验的最新版本。  导航到 [实验功能](#features-that-are-available-to-test)。  
     
-1.  导航到 `edge://flags` 。  
+1.  导航到 `edge://flags`。  
 1.  导航到相关实验。  
 1.  选择实验说明旁边的下拉菜单并选择 `Enabled` 。  
     
@@ -38,7 +38,7 @@ Microsoft Edge 提供对仍在开发中的实验性功能的访问权限。  若
     :::image-end:::  
     
     > [!NOTE]
-    > 每个实验通常都有一个下拉菜单来选择以下值。  如果实验功能在实验上没有条目，则提供**** 说明以使用命令行使用该功能启动 Microsoft Edge。
+    > 每个实验通常都有一个下拉菜单来选择以下值。  如果实验功能没有"实验"条目，则提供**** 说明以Microsoft Edge命令行开始使用该功能。
     > 
     > *   `Default`  
     > *   `Disabled`  
@@ -48,16 +48,16 @@ Microsoft Edge 提供对仍在开发中的实验性功能的访问权限。  若
     
 ### <a name="origin-trials"></a>原始试验  
 
-Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  你可能想要对网站使用源试用版来应用特定功能。  如果你是网站所有者，你可以注册源试用版。  源试用版向访问你的网站的 Microsoft Edge 用户提供一定比例的功能。
+Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  你可能想要对网站使用源试用版来应用特定功能。  如果你是网站所有者，你可以注册源试用版。  源试用版向访问你的Microsoft Edge的用户提供一定比例的功能。
 
-有关源试用版详细信息，请导航到 [Microsoft Edge Origin Trials 开发人员控制台][MicrosoftDeveloperMicrosoftEdgeOriginTrials]。  
+有关源试用版详细信息，请导航到Microsoft Edge[源试用版开发人员控制台。][MicrosoftDeveloperMicrosoftEdgeOriginTrials]  
     
 > [!NOTE]
 > 实验性功能会不断更新，并且可能会导致性能问题。  若要关闭实验功能，请导航到打开 [实验](#turn-on-experimental-features)功能，导航到实验，然后选择 `Disabled` 。  
 
 ## <a name="features-that-are-available-to-test"></a>可供测试的功能  
 
-以下列表介绍了可在 Microsoft Edge 上测试和验证的新实验性 Web 应用功能。  
+以下列表介绍了新的实验性 Web 应用功能，这些功能可用于测试和验证Microsoft Edge。  
 
 | 功能 | Microsoft Edge 版本 | 平台 |  
 |:--- |:--- |:--- |  
@@ -77,24 +77,24 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
 
 此功能允许您完成以下操作。  
 
-*   使用 Web 应用程序的清单向主机操作系统注册 PWA
-*   声明 PWA 处理特定 URI 协议  
+*   使用 web PWA清单向主机操作系统注册你的应用程序
+*   声明PWA处理特定 URI 协议  
      
-将 PWA 注册为协议处理程序后，当用户选择具有特定方案（如浏览器或本机应用）的超链接时，已注册的 PWA 由操作系统激活并接收 `mailto://` `web+music://` URI。  
+将 PWA 注册为协议处理程序后，当用户使用特定方案（如浏览器或本机应用）选择超链接时，操作系统将激活注册的 PWA 并接收 `mailto://` `web+music://` URI。  
 
 此功能要求你更新 Web 应用清单以在需要指定两个字段的 `protocol_handlers` 数组中包括数组：  
 
 *   `protocol`：用于处理请求的协议，例如 或 `mailto` `web+jngl` 。  
 *   `url`：处理协议的应用作用域中的 HTTPS URI。  将来，计划替换以协议处理程序方案开始的 `%s` URI。  
     
-更新清单以支持要注册的协议。  启用此功能后，Microsoft Edge 将完成以下操作。  
+更新清单以支持要注册的协议。  启用此功能后，Microsoft Edge执行以下操作。  
 
 1.  检测清单中的更改  
 1.  为协议注册应用  
     
 如果多个应用注册协议，则向用户显示提示。  用户从操作系统或浏览器呈现的列表中选择相应的应用。  
 
-若要在 Windows 上的 Microsoft Edge 中[](#turn-on-experimental-features)预览协议处理，请导航到打开实验性功能，然后打开**桌面 PWA 协议处理**。  
+若要在 Windows 上预览 Microsoft Edge 中的协议Windows，[请导航到](#turn-on-experimental-features)"打开实验性功能"并打开"桌面PWA**协议处理"。**  
 
 有关为协议处理程序运行的源试用版详细信息，请导航到注册 [Web 应用协议处理程序注册][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]。  
 
@@ -132,13 +132,13 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
  
 ## <a name="url-link-handling"></a>URL 链接处理  
 
-统一资源定位器 \ (URL\) 是一种 URI。  当渐进 Web 应用 \ (PWA\) 注册为 https URI 的处理程序时，创建更具吸引力的体验。  PBA 可能会请求在激活关联的 URI 时启动。  例如，如果用户从电子邮件中选择指向新闻文章的链接。  用于显示新闻文章的关联 PWA 将自动启动以处理链接的激活。  
+统一资源定位器 \ (URL\) 是一种 URI。  当渐进 Web 应用 \ (PWA\) 注册为 https URI 的处理程序时，创建更具吸引力的体验。  PBA 可能会请求在激活关联的 URI 时启动。  例如，如果用户从电子邮件中选择指向新闻文章的链接。  用于PWA新闻文章的关联内容将自动启动以处理链接激活。  
 
-此功能允许您使用 Web 应用程序清单向浏览器注册 PWA，并声明浏览器处理特定链接。  若要在浏览器中注册 PWA，请向清单 `url_handlers` 文件添加可选成员。  `url_handlers`成员是 `object[]` 一个 ，用于对应用希望处理的 URI 的来源进行分组。  
+此功能允许你使用 Web PWA向浏览器注册网站，并声明浏览器处理特定链接。  若要向PWA注册网站，请向清单 `url_handlers` 文件添加可选成员。  `url_handlers`成员是 `object[]` 一个 ，用于对应用希望处理的 URI 的来源进行分组。  
 
 浏览器使用位于源上的 `web-app-origin-association` JSON 文件验证链接处理。  源文件进一步微调源的包含路径或排除路径。  有关测试 URL 处理程序的详细说明，请导航到[作为 URL 处理程序的 PWA。][GithubWicgPwaUrlHandlerBlobMainExplainerMd]  
 
-若要在 Windows 上的 Microsoft Edge 中预览 URL 链接处理，请导航到"[打开](#turn-on-experimental-features)实验性功能"，然后打开"**桌面 PWA URL 处理"。**  
+To preview URL link handling in Microsoft Edge on Windows， navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on Desktop PWA URL **Handling**.  
 
 ### <a name="example-of-the-url_handlers-in-the-manifest"></a>清单url_handlers示例  
 
@@ -170,9 +170,9 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
 }
 ```  
 
-如果 URI 与 中的一个源字符串匹配，并且浏览器验证源是否同意允许此应用程序处理此类 URI，PWA 将匹配用于 URL 处理的 `url_handlers` URI。  
+如果PWA URI 与 中的一个源字符串匹配，并且浏览器验证源是否同意允许此应用处理此类 URI，该 URI 将匹配 URL 处理。 `url_handlers`  
 
-成员 `url_handlers` 包含一个包含请求 PWA 的范围和其他不相关的源的源。  不将 URI 限制为与请求的 PWA 相同的范围或域，允许您对相同内容使用不同的域名，但使用相同的 PWA 处理它们。  
+`url_handlers`成员包含包含请求源的范围和其他不相关的PWA。  不将 URI 限制为与请求的 URI 相同的范围或域PWA允许对相同内容使用不同的域名，但使用相同的域名PWA。  
 
 #### <a name="wildcard-matching"></a>通配符匹配  
 
@@ -191,42 +191,42 @@ Microsoft Edge 有时使用源试用版来测试特定域或网站的功能。  
     
 提供覆盖后，可使用整个 Web 客户端区域。  此功能包括清单更新。  它提供用于确定覆盖的大小和位置的方法，以帮助你安排内容。  
 
-若要预览适用于 Windows 10 的 Microsoft Edge 中的窗口[](#turn-on-experimental-features)控件覆盖，请导航到"打开实验性功能"并导航到"**桌面 PWA 窗口控件覆盖"。**   
+若要预览窗口中窗口控件覆盖Microsoft Edge Windows 10，请导航到打开实验性功能并导航[](#turn-on-experimental-features)到桌面PWA**窗口控件覆盖**。   
 
 ### <a name="examples-of-title-bar-area-customization"></a>标题栏区域自定义示例  
 
-此功能基于本机应用中自定义标题栏的功能。  你可以自定义重要应用操作或通知的标题栏。  查看 Microsoft Visual Studio Code 和 Microsoft Teams 的以下示例。  
+此功能基于本机应用中自定义标题栏的功能。  你可以自定义重要应用操作或通知的标题栏。  查看以下代码和Microsoft Visual Studio示例Microsoft Teams。  
 
 #### <a name="visual-studio-code"></a>Visual Studio Code  
 
-Microsoft Visual Studio Code 是一款基于位于多个桌面平台上的"小程序"构建的热门编辑器。  
+Microsoft Visual Studio代码是在位于多个桌面平台上的"部署"上构建的常用编辑器。  
 
-以下示例显示Visual Studio代码如何使用标题栏来最大化可用屏幕空间以在标题栏中包括当前文件名和顶级菜单结构。  
+以下示例显示Visual Studio Code栏以最大化可用屏幕空间以在标题栏中包括当前文件名和顶级菜单结构。  
 
-:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="代码标题栏中Visual Studio示例" lightbox="../media/visual-studio-code-title-customization.png":::
-   代码标题栏中Visual Studio示例  
+:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="标题栏中的示例Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
+   标题栏中的示例Visual Studio Code  
 :::image-end:::  
 
 #### <a name="microsoft-teams"></a>Microsoft Teams  
 
-Workplace collaboration and communication tool Microsoft Teams is also built with Teams and available on multiple desktop platforms.  在下面的示例中，Microsoft Teams 显示 `back` 和 `forward` 导航按钮、搜索框和用户配置文件控件。  
+Workplace collaboration and communication tool Microsoft Teams is built with Desktop and available on multiple desktop platforms.  在下面的示例中，Microsoft Teams和导航 `back` `forward` 按钮、搜索框和用户配置文件控件。  
 
-:::image type="complex" source="../media/teams-title-customization.png" alt-text="Microsoft Teams 中标题栏的示例" lightbox="../media/teams-title-customization.png":::
-   Microsoft Teams 中标题栏的示例  
+:::image type="complex" source="../media/teams-title-customization.png" alt-text="标题栏中的示例Microsoft Teams" lightbox="../media/teams-title-customization.png":::
+   标题栏中的示例Microsoft Teams  
 :::image-end:::  
 
 ### <a name="overlay-window-controls-on-a-frameless-window"></a>无框架窗口上的覆盖窗口控件  
 
-为了最大化 Web 内容的可地址区域，浏览器会创建无框架窗口。  无框架窗口删除所有浏览器 UI，但作为覆盖提供的窗口控件除外。  窗口控件覆盖允许用户仍最小化、最大化、还原和关闭应用。  它还提供对使用 Web 应用菜单的相关浏览器控件的访问。  对于基于 Chromium 的浏览器，覆盖层包括以下控件。  
+为了最大化 Web 内容的可地址区域，浏览器会创建无框架窗口。  无框架窗口删除所有浏览器 UI，但作为覆盖提供的窗口控件除外。  窗口控件覆盖允许用户仍最小化、最大化、还原和关闭应用。  它还提供对使用 Web 应用菜单的相关浏览器控件的访问。  对于Chromium浏览器，覆盖层包括以下控件。  
 
 *   每个窗口控件按钮的宽度和高度相同的可拖动区域  
-*   " **设置"和更多** \ (...\) 按钮  
+*   The**设置 and more** \ (...\) button  
 *   窗口控件按钮最小化、最大化、还原和关闭  
     
 除了前面列出的控件之外，覆盖层中显示的 UI 将在以下方案中动态调整大小。  
 
-*   启动已安装的 Web 应用后，网页的原点会在"设置"和更多**** \ (...\) 菜单的左侧显示几秒钟，然后消失。  
-*   如果用户使用"设置"菜单和更多**** \ (...\) 菜单与扩展进行交互，则扩展的图标显示在三点菜单左侧的覆盖中。  退出任何扩展对话框后，图标将从覆盖层中删除。  
+*   启动已安装的 Web 应用后，网页的原点会在**设置**左侧显示更多 \ (...\) 菜单几秒钟，然后消失。  
+*   如果用户使用**设置**和更多 \ (...\) 菜单与扩展进行交互，则扩展的图标显示在三点菜单左侧的覆盖中。  退出任何扩展对话框后，图标将从覆盖层中删除。  
     
 | 语言方向 | 覆盖位置 | 详细信息 |  
 |:--- |:--- |:--- |  
@@ -272,8 +272,8 @@ Web 内容必须知道控件覆盖的保留区域。  确保保留区域不需�
 
 以下示例显示新功能如何使用自定义标题栏创建 Web 应用。  
 
-:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="Microsoft Teams 中的自定义标题栏示例" lightbox="../media/teams-title-customization-example.png":::
-   Microsoft Teams 中的自定义标题栏示例  
+:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="自定义标题栏中的示例Microsoft Teams" lightbox="../media/teams-title-customization-example.png":::
+   自定义标题栏中的示例Microsoft Teams  
 :::image-end:::  
 
 #### <a name="manifestwebmanifest"></a>manifest.webmanifest  
@@ -487,14 +487,14 @@ body {
 
 ## <a name="run-on-os-login"></a>在操作系统登录时运行  
 
-此功能允许你将应用配置为在用户登录 Microsoft Windows 时自动启动。  多个应用类利用此功能。  应用类包括电子邮件、聊天、监视仪表板和实时数据显示应用。  该功能允许用户在用户登录到操作系统后尽快使用应用。  此功能自动启动 PWA 的方式与手动启动 PWA 的方式相同。  
+此功能允许你将应用配置为在用户登录到 Microsoft Windows。  多个应用类利用此功能。  应用类包括电子邮件、聊天、监视仪表板和实时数据显示应用。  该功能允许用户在用户登录到操作系统后尽快使用应用。  此功能将自动启动PWA启动方式与手动启动方式相同。  
 
 > [!IMPORTANT]
 > **在操作系统登录上运行** 是一 [项强大的功能][GithubW3cPermissionsPowerfulFeature]。  用户应决定是否为已安装的 Web 应用启用该功能。  
 
 ### <a name="turn-on-run-on-os-login"></a>打开"在操作系统登录时运行"  
 
-若要预览 PWA**的"在操作系统**登录时运行"功能，[](#turn-on-experimental-features)请导航到"打开实验性功能"，然后打开"在操作系统登录时**运行桌面 PWA"。**  
+若要预览适用于**** 你的用户的运行操作系统登录PWA，请导航到打开实验性功能，[](#turn-on-experimental-features)然后打开在操作系统登录上运行的桌面**PWA。**  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="打开在操作系统登录实验上运行的桌面 PBA" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    打开在**操作系统登录实验上运行的桌面 PBA**  
@@ -502,28 +502,28 @@ body {
 
 ### <a name="turn-on-the-feature-for-the-installed-web-app"></a>打开已安装的 Web 应用的功能  
 
-若要为已安装 `Start app when you sign in` 的 PWA 启用该功能， 
+若要为已安装 `Start app when you sign in` 的 PWA， 
 
 1.  打开 Microsoft Edge。   
-1.  导航到 `edge://apps` 。  
+1.  导航到 `edge://apps`。  
 1.  将鼠标悬停在你的应用上。  
 1.  打开上下文菜单 \ (右键单击\) 然后在登录时选择 **"启动应用"。**  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在 Microsoft Edge 中登录功能时，使用上下文菜单打开"开始"应用" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-       在 Microsoft Edge 中登录功能时 **，** 使用上下文菜单打开"开始"应用  
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在应用中登录功能时，使用上下文菜单打开"开始"Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+       使用上下文菜单在用户登录**功能时打开"开始"Microsoft Edge**  
     :::image-end:::  
     
 ## <a name="shortcuts"></a>快捷方式  
 
-`Shortcuts` 是清单文件的一个新增成员。  它允许你在 Web 应用中定义指向部件、关键网页或操作的链接。  Microsoft Windows 将其集成为 **Jumplists**。  **Jumplist 定义** 在下列 UI 元素之一上打开上下文菜单 \ (右键单击\) 时出现的弹出菜单。  
+`Shortcuts` 是清单文件的一个新增成员。  它允许你在 Web 应用中定义指向部件、关键网页或操作的链接。  Microsoft Windows将其集成为**Jumplists**。  **Jumplist 定义** 在下列 UI 元素之一上打开上下文菜单 \ (右键单击\) 时出现的弹出菜单。  
 
 *   "开始"菜单上的磁贴  
 *   任务栏上的图标  
     
 当用户调用快捷方式时，用户将导航到该快捷方式的成员 `url` 指定的地址。  
   
-:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Windows 10 上的 Jumplist 示例" lightbox="../media/jumplists-on-windows-10.png":::
-   Windows 10 **上的 Jumplist** 示例  
+:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Jumplists 示例Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
+   **Jumplists 示例Windows 10**  
 :::image-end:::  
 
 ### <a name="shortcuts-in-the-manifest-file"></a>清单文件的快捷方式  
@@ -562,26 +562,26 @@ body {
 
 注册为文件类型处理程序的能力在试验阶段。  你可以指定应用在清单条目中处理的文件类型。  在安装过程中，用户的主机操作系统将你的应用注册为列出的文件类型的文件处理程序。  确保应用启动代码中存在此功能， `launchQueue` 并确保它处理文件。  
 
-基于 Chromium 的浏览器正在测试和塑造此功能。  有关详细信息（包括代码示例），请导航到["允许 Web 应用程序成为文件处理程序"。][WebDevFileHandling]  
+Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括代码示例），请导航到["允许 Web 应用程序成为文件处理程序"。][WebDevFileHandling]  
 
-若要预览适用于 Windows 10 的 Microsoft Edge 中的文件处理，请导航到打开实验[性](#turn-on-experimental-features)功能，然后打开文件**处理 API。**  
+若要预览 Microsoft Edge for Windows 10 中的文件处理，请导航到[](#turn-on-experimental-features)"打开实验性功能"，然后打开"文件**处理 API"。**  
     
 ## <a name="providing-feedback-on-experimental-features"></a>提供有关试验功能的反馈  
 
-提供有关 Microsoft Edge Web 应用实验的反馈。  
+提供有关 Web Microsoft Edge实验的反馈。  
 
-*   使用 **设置和更多** \ (`...` \) > 将反馈发送到 Microsoft **发送反馈**。  
+*   使用更多**\设置**\ (`...` \) > 将反馈发送给 Microsoft 发送**反馈**。  
 *   选择 `Alt` + `Shift` + `I` 。  
     
-:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="从 PWA 发送反馈" lightbox="../media/send-feedback-from-progressive-web-app.png":::
-   从 PWA 发送反馈  
+:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="从用户发送PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
+   从用户发送PWA  
 :::image-end:::  
 
 <!-- links -->  
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
 
-[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "源试用版|Microsoft Edge 开发人员"  
+[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "源试用版|Microsoft Edge开发人员"  
 [MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "注册 Web 应用协议处理程序|Microsoft 开发人员"  
 
 [MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]: https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers "基于 Web 的协议处理程序|MDN"  

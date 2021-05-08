@@ -186,13 +186,13 @@ PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需�
 
 ### <a name="step-2---subscribe-to-push-notifications"></a>步骤 2 - 订阅推送通知  
 
-服务工作人员在 PWA 中处理推送事件和 Toast 通知交互。  若要将 PWA 订阅到服务器推送通知，请确保满足以下条件。  
+服务工作人员在 PWA 中处理推送事件和 Toast 通知交互。  若要订阅PWA推送通知，请确保满足以下条件。  
 
-*   已安装、激活和注册 PWA  
-*   完成订阅任务的代码位于 PWA 的主 UI 线程上  
+*   你的PWA安装、激活和注册  
+*   用于完成订阅任务的代码位于应用程序主 UI 线程PWA  
 *   您具有网络连接  
     
-在新建推送订阅之前，Microsoft Edge 会验证用户是否授予了 PWA 接收通知的权限。  如果没有，浏览器会提示用户授予权限。  如果权限被拒绝，则引发 `registration.pushManager.subscribe` 的请求将引发 `DOMException` ，必须处理。  有关权限管理的更多信息，请导航到 [Microsoft Edge 中的推送通知][WindowsBlogsWebNotificationsEdge]。  
+在新建推送订阅之前，Microsoft Edge验证用户是否被授予PWA接收通知的权限。  如果没有，浏览器会提示用户授予权限。  如果权限被拒绝，则引发 `registration.pushManager.subscribe` 的请求将引发 `DOMException` ，必须处理。  有关权限管理 More on， navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
 
 在文件中 `pwabuilder-sw-register.js` ，附加以下代码段。  
 
@@ -236,11 +236,11 @@ function urlBase64ToUint8Array(base64String) {
 
 ### <a name="step-3---listen-for-push-notifications"></a>步骤 3 - 侦听推送通知  
 
-在 PWA 中创建订阅后，向服务工作者添加处理程序以响应推送事件。  推送事件从服务器发送以显示 Toast 通知。  Toast 通知显示已接收邮件的数据。  若要完成以下任务，必须添加 `click` 处理程序。  
+在服务中创建订阅PWA，将处理程序添加到服务工作者以响应推送事件。  推送事件从服务器发送以显示 Toast 通知。  Toast 通知显示已接收邮件的数据。  若要完成以下任务，必须添加 `click` 处理程序。  
 
 *   消除 Toast 通知  
 *   打开、聚焦或打开所有打开的窗口并聚焦  
-*   打开并聚焦一个新窗口以显示 PWA 客户端页面  
+*   打开并聚焦一个新窗口，以显示PWA页  
     
 在你的 `pwabuilder-sw.js` 文件中，添加以下处理程序。  
 
@@ -280,15 +280,15 @@ self.addEventListener('notificationclick', function (event) {
 
 ### <a name="step-4---try-it-out"></a>步骤 4 - 试用  
 
-若要测试 PWA 的推送通知，请完成以下步骤。  
+若要为用户测试推送通知PWA，请完成以下步骤。  
 
-1.  在 中导航到 `http://localhost:3000` PWA。  当服务工作者激活并尝试订阅 PWA 推送通知时，Microsoft Edge 会提示您允许 PWA 显示通知。  选择 **"允许"。**  
+1.  导航到 PWA `http://localhost:3000` 。。  当服务工作者激活并尝试订阅PWA推送通知时，Microsoft Edge提示你允许PWA显示通知。  选择 **"允许"。**  
     
     :::image type="complex" source="./media/notification-permission.png" alt-text="用于启用通知的权限对话框" lightbox="./media/notification-permission.png":::
        用于启用通知的权限对话框  
     :::image-end:::  
     
-1.  模拟服务器端推送通知。  在浏览器中打开 PWA 后，选择 `http://localhost:3000` `F12` 打开 DevTools。  选择 **"**  >  **应用程序服务工作者**  >  **推送**"将测试推送通知发送到 PWA。  
+1.  模拟服务器端推送通知。  在浏览器中PWA打开应用后，选择 `http://localhost:3000` `F12` 打开 DevTools。  选择 **"**  >  **应用程序服务工作者**  >  **推送**"将测试推送通知发送到PWA。  
     
     :::row:::
        :::column span="":::
@@ -299,10 +299,10 @@ self.addEventListener('notificationclick', function (event) {
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          如果未选择 \ (或 activate\) toast 通知，系统会在几秒钟后自动关闭它，并会在 Windows 操作中心中将其排队。  
+          如果未选择 \ (或 activate\) toast 通知，系统会在几秒钟后自动将其关闭，Windows操作中心中将其排好队列。  
           
-          :::image type="complex" source="./media/windows-action-center.png" alt-text="Windows 操作中心中的通知" lightbox="./media/windows-action-center.png":::
-             Windows 操作中心中的通知  
+          :::image type="complex" source="./media/windows-action-center.png" alt-text="Windows操作中心中的通知" lightbox="./media/windows-action-center.png":::
+             Windows操作中心中的通知  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
@@ -322,11 +322,11 @@ self.addEventListener('notificationclick', function (event) {
 
 *   [MDN Web 文档上的渐进 Web 应用][MDNProgressiveWebApps]  
 *   [渐进式 Web 应用 web.dev][WebDevProgressiveWebApps]  
-*   [作为渐进 Web 应用的][HackerNewsProgressiveWebApps] 黑客新闻阅读器 - 比较用于实现示例 \ (黑客新闻阅读器\) PWA 的不同框架和性能模式。  
+*   [作为渐进 Web 应用的][HackerNewsProgressiveWebApps]黑客新闻阅读器 - 比较用于实现示例 \ (黑客新闻阅读器\) PWA 的不同框架和性能模式。  
 *   [为 PBA 提供一些支持][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [渐进式 Web 应用的渐进路线图][CloudfourThinksProgressiveRoadmapYourWebApp]  
 *   [使用渐进 Web 应用的脱机 POS][MediumWebEdgeOfflinePostsProgressiveWebApps]  
-*   [PWA 问答&A][AaronGustafsonNotebookPwaQa]  
+*   [PWA问答&][AaronGustafsonNotebookPwaQa]  
 *   [Web 上的百年][JoretegBlogBettingWeb]  
 *   [命名渐进式 Web 应用][Fberriman20170626NamingProgressiveWebApps]  
 *   [设计和生成不带框架的渐进式 Web (第 1) ][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
@@ -337,18 +337,18 @@ self.addEventListener('notificationclick', function (event) {
 
 <!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "使用代码Node.js将 Visual Studio 应用部署到 Azure |Microsoft Docs"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "使用 Node.js 将应用部署到 Azure Visual Studio Code |Microsoft Docs"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "创建 Azure 免费帐户|Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Web 应用|Microsoft Azure"  
 
-[WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Microsoft Edge |Windows 博客"  
+[WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Web 通知Microsoft Edge |Windows博客"  
 
 [VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio 代码"  
 
-[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA 问答&A"  
+[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA问答&"  
 
-[BrowserStackTestEdgeBrowser]: https://www.browserstack.com/test-on-microsoft-edge-browser "在 Windows 10 版本上免费 Microsoft Edge 浏览器|BrowserStack"  
+[BrowserStackTestEdgeBrowser]: https://www.browserstack.com/test-on-microsoft-edge-browser "Microsoft Edge浏览器测试Windows 10 |BrowserStack"  
 
 [CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "渐进式 Web 应用的渐进路线图"  
 
@@ -383,8 +383,8 @@ self.addEventListener('notificationclick', function (event) {
 
 [ProgressiveWebApps]: https://pwa.rocks "渐进式 Web 应用"  
 
-[PwaBuilder]: https://www.pwabuilder.com "PWA 生成器"  
-[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "服务工作|PWA 生成器"  
+[PwaBuilder]: https://www.pwabuilder.com "PWA生成器"  
+[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "服务工作|PWA生成器"  
 
 [ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "推送丰富演示|ServiceWorker Cookbook"  
 

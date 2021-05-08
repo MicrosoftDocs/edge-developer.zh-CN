@@ -1,12 +1,12 @@
 ---
 description: 波浪下划线突出显示元素工具、服务工作者更新时间线等中的代码问题。
-title: 'Microsoft Edge 91 (DevTools 中的新增) '
+title: 'DevTools (Microsoft Edge 91 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/21/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 3a2be4d309432de4421af73ca7b4d21734ad5221
 ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "11514434"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="whats-new-in-devtools-microsoft-edge-91"></a>Microsoft Edge 91 (中的开发人员工具中的新增)   
+# <a name="whats-new-in-devtools-microsoft-edge-91"></a>DevTools (Microsoft Edge 91 中的新增)   
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
@@ -36,7 +36,7 @@ ms.locfileid: "11514434"
 <!--  Title: Get code hints in Elements tool  -->  
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->  
 
-在大多数新式 ID 中，文本下的波浪下划线指示语法错误。   在 Microsoft Edge 版本 91 或更高版本中，在"元素"工具的 **DOM** 视图中，在 HTML 下 **显示波浪下划线** 。  波浪下划线表示与辅助功能、兼容性、性能等相关的代码问题和建议。  若要详细了解如何查看和编辑问题，请导航到查找并修复 [Microsoft Edge DevTools 问题工具中的问题][DevtoolsIssuesIndex]。  
+在大多数新式 ID 中，文本下的波浪下划线指示语法错误。   在 Microsoft Edge 91 或更高版本中，在"元素"工具的**DOM**视图中，HTML 下会显示**波浪下划线。**  波浪下划线表示与辅助功能、兼容性、性能等相关的代码问题和建议。  若要详细了解如何查看和编辑问题，请导航到查找并修复开发人员Microsoft Edge[工具中的问题][DevtoolsIssuesIndex]。  
 
 若要打开 **问题** 工具并了解有关该问题以及如何修复它，请完成以下操作之一。  
 
@@ -87,7 +87,7 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 <!--  Title: The tasks associated with your Service Worker  -->  
 <!--  Subtitle: Debug with Service Worker Update Cycle  -->  
 
-在 Microsoft Edge 版本 91 或更高版本中，如果您是渐进式 Web 应用或服务工作者开发人员，您可以在应用程序工具中将服务工作者的更新生命周期显示为 **时间线** 。  此功能可帮助您了解服务工作者在下列每个阶段所花的时间。  
+在 Microsoft Edge 91 或更高版本中，如果您是渐进式 Web 应用或服务工作者开发人员，您可以在应用程序工具中将服务工作者的更新生命周期显示为**时间线**。  此功能可帮助您了解服务工作者在下列每个阶段所花的时间。  
 
 *   **安装**  
 *   **Wait**  
@@ -97,14 +97,14 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
    查看 **服务** 工作者 **的更新周期** 中的时间线  
 :::image-end:::  
 
-有关服务工作者的生命周期详细信息，请导航到"服务工作[线程生命周期"。][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]  有关在 DevTools 中为渐进式 Web 应用和服务工作者调试工具的信息，请导航到"[服务工作器改进"。][DevtoolsServiceWorkerIndex]  若要在 Chromium 开源项目中查看此功能实时更新，请导航到"问题[1066604"。][CR1066604]  
+有关服务工作者的生命周期详细信息，请导航到"服务工作[线程生命周期"。][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]  有关在 DevTools 中为渐进式 Web 应用和服务工作者调试工具的信息，请导航到"[服务工作器改进"。][DevtoolsServiceWorkerIndex]  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1066604"。][CR1066604]  
 
 ## <a name="progressive-web-apps-no-longer-display-warnings-for-non-square-icons"></a>渐进式 Web 应用不再显示非方形图标的警告  
 
 <!--  Title: Non-square icons in app manifest no longer produce warnings  -->  
 <!--  Subtitle: As long as square icons are included in the app manifest, non-square icons no longer produce warnings  -->  
 
-在[Microsoft Edge 版本 90][DevtoolsWhatsNew202102Devtools]或更早版本中，如果在 PWA 的 Web 应用程序清单中包含非**** 方形图标，则应用程序工具中的"清单"**** 部分将在"错误和警告"下显示每个非方形图标的警告。 ****  在 Microsoft Edge 版本 91**** 或更高版本中****，如果至少提供一个正方形图标，则应用程序工具中的清单部分不会显示警告。  如果未提供任何方形图标，则会显示一条警告消息。  
+在 Microsoft Edge 版本[90][DevtoolsWhatsNew202102Devtools]或更早版本中，如果您在 PWA 的 Web 应用清单中包含非方形图标，则应用程序工具中的"清单****"部分将在"错误和**** 警告"下显示每个非方形图标的警告。 ****  在Microsoft Edge版本 91 或更高版本中，**** 如果至少提供一**** 个正方形图标，则应用程序工具中的清单部分不会显示警告。  如果未提供任何方形图标，则会显示一条警告消息。  
 
 ```output
 Most operating systems require square icons.  Please include at least one square icon in the array.  
@@ -123,17 +123,17 @@ Most operating systems require square icons.  Please include at least one square
    :::column-end:::
 :::row-end:::  
 
-若要在 Web 应用程序清单中查看错误和警告，请导航到 **"应用程序"** 工具并选择"清单 **"** 部分。  错误和警告列在"错误和警告 **"** 标题下。  有关 Web 应用部件清单的信息，请导航到"使用 Web 应用清单"将 [渐进式 Web 应用集成到操作系统中][ProgressiveWebAppsWebappmanifests]。  若要创建要包括在 Web 应用清单中的图标，请导航到 [PWABuilder Image Generator][PwabuilderImagegenerator]。  若要在 Chromium 开源项目中查看此功能实时更新，请导航到"问题[1185945"。][CR1185945]  
+若要在 Web 应用程序清单中查看错误和警告，请导航到 **"应用程序"** 工具并选择"清单 **"** 部分。  错误和警告列在"错误和警告 **"** 标题下。  有关 Web 应用部件清单的信息，请导航到"使用 Web 应用清单"将 [渐进式 Web 应用集成到操作系统中][ProgressiveWebAppsWebappmanifests]。  若要创建要包括在 Web 应用清单中的图标，请导航到 [PWABuilder Image Generator][PwabuilderImagegenerator]。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1185945"。][CR1185945]  
 
-## <a name="localized-devtools-now-supported-in-chromium-based-browsers"></a>基于 Chromium 的浏览器现在支持本地化的 DevTools  
+## <a name="localized-devtools-now-supported-in-chromium-based-browsers"></a>本地化的 DevTools 现在Chromium的浏览器中受支持  
 
 <!--  Title: Localization for all  -->  
 <!--  Subtitle: Match browser language enabled to all Chromium-based browsers  -->  
 
-从 [Microsoft Edge 版本 81 开始][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]，Microsoft Edge DevTools 以你自己的语言显示。  许多开发人员使用 StackOverflow 等其他开发人员工具，并使用Visual Studio语言编写 Code，而不只是使用英语。  Microsoft Edge DevTools 团队、Chrome DevTools 团队和 Google Lighthouse 团队协作，在所有基于 Chromium 的浏览器中提供相同的体验。  若要详细了解如何在语言中使用 DevTools，请导航到"[更改 DevTools 语言设置"。][DevtoolsCustomizeLocalization]  有关 Chromium 开放源代码项目中有关此功能的协作信息，请导航到[1136655。][CR1136655]  
+从 Microsoft Edge[版本 81][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]开始，Microsoft Edge开发人员工具以你自己的语言显示。  许多开发人员使用 StackOverflow 等其他开发人员工具，Visual Studio Code语言进行开发，而不只是使用英语。  开发人员Microsoft Edge、Chrome DevTools 团队和 Google Lighthouse 团队协作，在所有基于 Chromium 的浏览器中提供相同的体验。  若要详细了解如何在语言中使用 DevTools，请导航到"[更改 DevTools 语言设置"。][DevtoolsCustomizeLocalization]  有关开放源代码项目中有关此功能的协作Chromium，请导航到[1136655。][CR1136655]  
 
-:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge 浏览器和 DevTools 设置为日语" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
-   Microsoft Edge 浏览器和 DevTools 设置为日语  
+:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge浏览器和 DevTools 设置为日语" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
+   Microsoft Edge浏览器和 DevTools 设置为日语  
 :::image-end:::  
 
 ## <a name="use-the-keyboard-to-navigate-to-css-variables"></a>使用键盘导航到 CSS 变量  
@@ -141,7 +141,7 @@ Most operating systems require square icons.  Please include at least one square
 <!--  Title: Navigate to CSS variables with the arrow keys  -->  
 <!--  Subtitle: In the Styles pane, use the arrow keys to choose CSS variables.  Select `Enter` to see the variable definition.  -->  
 
-从**** [Microsoft Edge 版本 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]开始，"样式"窗格显示 CSS 变量并提供指向每个变量的定义的链接。  在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。  若要在"样式 **"窗格中打开** 定义，请将鼠标悬停在变量上，然后选择 `Enter` 。  有关 CSS 变量详细信息，请导航到使用 CSS 自定义属性 ([变量) 。 ][MdnDocsWebCssUsingCssCustomProperties]  若要在 Chromium 开源项目中查看此功能实时更新，请导航到"问题[1187735"。][CR1187735]  
+从[Microsoft Edge版本 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]开始，"**** 样式"窗格将显示 CSS 变量并提供指向每个变量的定义的链接。  在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。  若要在"样式 **"窗格中打开** 定义，请将鼠标悬停在变量上，然后选择 `Enter` 。  有关 CSS 变量详细信息，请导航到使用 CSS 自定义属性 ([变量) 。 ][MdnDocsWebCssUsingCssCustomProperties]  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1187735"。][CR1187735]  
 
 :::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在"样式"窗格中突出显示" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    " `--theme-body-background` 样式"窗格中突出显示的**** CSS 变量  
@@ -152,18 +152,18 @@ Most operating systems require square icons.  Please include at least one square
 <!-- Title: Display Issues in severity order  -->  
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->  
 
-问题 **工具** 显示改进网站的建议，包括辅助功能、性能、安全性等。 根据你的反馈，现在会自动按严重性对问题进行排序。  在每个反馈类别中，每个标记为"错误"的问题**** 首先出现，然后关注标记为"警告"的每个**** 问题，然后每个标记为"提示"**的问题**。  为了帮助你优化问题，为将来的更新计划了额外的筛选器选项。  若要详细了解如何查看问题，请导航到查找并 [修复 Microsoft Edge DevTools 问题工具中的问题][DevtoolsIssuesIndex]。  
+问题 **工具** 显示改进网站的建议，包括辅助功能、性能、安全性等。 根据你的反馈，现在会自动按严重性对问题进行排序。  在每个反馈类别中，每个标记为"错误"的问题**** 首先出现，然后关注标记为"警告"的每个**** 问题，然后每个标记为"提示"**的问题**。  为了帮助你优化问题，为将来的更新计划了额外的筛选器选项。  若要详细了解如何查看问题，请导航到查找并修复开发人员Microsoft Edge[工具中的问题][DevtoolsIssuesIndex]。  
 
 :::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text=""问题"工具按严重性显示排序的问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    " **问题** "工具按严重性显示排序的问题  
 :::image-end:::  
 
-## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-117"></a>Microsoft Edge 开发人员工具Visual Studio代码版本 1.1.7  
+## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-117"></a>Microsoft Edge开发人员工具Visual Studio Code 1.1.7 版  
 
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->  
 <!-- Subtitle: Increased target closure reliability, automatically update the side panel, new contextual menu for settings and Changelog, and more. -->  
 
-Microsoft [Edge Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] version 1.1.7 提供了来自 Microsoft Edge 版本 [88][DevtoolsWhatsNew202011Devtools]的 DevTools。  此扩展现在ARM设备，不再依赖于 [Debugger for Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerForEdge] 扩展。  版本 1.1.7 包括以下 Bug 修复和改进。  
+Microsoft Edge [Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] version 1.1.7 提供了来自 Microsoft Edge 版本[88 的][DevtoolsWhatsNew202011Devtools]DevTools。  此扩展现在ARM设备，不再依赖调试器[进行Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerForEdge]扩展。  版本 1.1.7 包括以下 Bug 修复和改进。  
 
 *   更新了目标关闭的可靠性。  
 *   更新了侧面板，以在调试创建或销毁的目标时自动刷新。  
@@ -194,13 +194,13 @@ Lorem al lorem et Chromium  To review the history of this feature in the Chromiu
 
 <!-- links -->  
 
-[DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]: ../../2020/01/devtools.md#using-the-devtools-in-other-languages "以其他语言使用 DevTools - Microsoft Edge 81 (中的新增功能) |Microsoft Docs"  
-[DevtoolsWhatsNew202011Devtools]: ../../2020/11/devtools.md "Microsoft Edge 88 (DevTools 中的新增) |Microsoft Docs"  
-[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#css-variable-definitions-in-styles-pane "&quot;样式&quot;窗格中的 CSS 变量定义 - Microsoft Edge 88 (DevTools 中的新增功能) |Microsoft Docs"  
+[DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]: ../../2020/01/devtools.md#using-the-devtools-in-other-languages "以其他语言使用 DevTools - DevTools (Microsoft Edge 81) |Microsoft Docs"  
+[DevtoolsWhatsNew202011Devtools]: ../../2020/11/devtools.md "DevTools (Microsoft Edge 88) |Microsoft Docs"  
+[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#css-variable-definitions-in-styles-pane "样式窗格中的 CSS 变量定义 - DevTools (Microsoft Edge 88 中的新增) |Microsoft Docs"  
 [DevtoolsWhatsNew202102Devtools]: ../02/devtools.md "DevTools （Microsoft Edge 90） 中的新增功能|Microsoft Docs"  
-[DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "在焦点模式下将工具组合在一起 - Microsoft Edge 90 (中的新增功能) |Microsoft Docs"  
+[DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "在焦点模式下将工具组合在一起 - DevTools (Microsoft Edge 90 中的新增) |Microsoft Docs"  
 
-[DevtoolsCommandMenuIndexOpenCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index#open-the-command-menu "打开命令菜单 - 使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"  
+[DevtoolsCommandMenuIndexOpenCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index#open-the-command-menu "打开命令菜单 - 使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "更改 DevTools 语言设置 | Microsoft Docs"  
 [DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
 [DevtoolsServiceWorkerIndex]: /microsoft-edge/devtools-guide-chromium/service-workers/index "服务工作者改进|Microsoft Docs"  

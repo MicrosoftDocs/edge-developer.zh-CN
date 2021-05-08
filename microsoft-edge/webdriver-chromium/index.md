@@ -35,7 +35,7 @@ WebDriver 允许开发人员创建模拟用户交互的自动测试。  WebDrive
 若要开始自动执行测试，请使用以下步骤来确保安装的 WebDriver 版本与浏览器版本相匹配。  
 
 1.  查找你的 Microsoft Edge 版本。  
-    1.  导航到 `edge://settings/help` 。  
+    1.  导航到 `edge://settings/help`。  
         
         :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Microsoft Edge 2021 年 4 月 15 日内部版本号" lightbox="./media/microsoft-edge-version.msft.png":::
            Microsoft Edge 2021 年 4 月 15 日内部版本号  

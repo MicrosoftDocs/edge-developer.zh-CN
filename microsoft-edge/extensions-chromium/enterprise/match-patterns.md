@@ -1,5 +1,5 @@
 ---
-description: Edge 和 Chromium (扩展) 策略文档。
+description: Enterprise Edge (Chromium) 扩展的策略文档。
 title: 匹配模式
 author: MSEdgeTeam
 ms.author: msedgedevrel

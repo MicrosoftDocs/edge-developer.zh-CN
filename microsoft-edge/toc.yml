@@ -382,21 +382,21 @@
         - name: 入门
           items:
             - name: Win32
-              href: webview2/gettingstarted/win32.md
+              href: webview2/get-started/win32.md
             - name: WPF
-              href: webview2/gettingstarted/wpf.md
+              href: webview2/get-started/wpf.md
             - name: Windows 窗体
-              href: webview2/gettingstarted/winforms.md
+              href: webview2/get-started/winforms.md
             - name: WinUI 3.0
-              href: webview2/gettingstarted/winui.md
+              href: webview2/get-started/winui.md
         - name: 概念
           items:
             - name: Microsoft Edge 与 WebView2 之间的区别
-              href: webview2/concepts/browserfeatures.md
+              href: webview2/concepts/browser-features.md
             - name: 发布我的应用
               href: webview2/concepts/distribution.md
             - name: 管理用户数据文件夹
-              href: webview2/concepts/userdatafolder.md
+              href: webview2/concepts/user-data-folder.md
             - name: 管理 WebView2 应用程序
               href: webview2/concepts/enterprise.md
             - name: 导航事件
@@ -414,21 +414,21 @@
             - name: Win32 API 约定
               href: webview2/concepts/win32-api-conventions.md
         - name: 发行说明
-          href: webview2/releasenotes.md
+          href: webview2/release-notes.md
         - name: 路线图
           href: webview2/roadmap.md
         - name: 操作步骤
           items:
             - name: WebView2 中的扩展 JavaScript 方案
-              href: webview2/howto/js.md
+              href: webview2/how-to/javascript.md
             - name: 静态链接加载器
-              href: webview2/howto/static.md
+              href: webview2/how-to/static.md
             - name: 调试 WebView2
-              href: webview2/howto/debug.md
+              href: webview2/how-to/debug.md
             - name: 使用 Microsoft Edge 驱动程序实现自动化
-              href: webview2/howto/webdriver.md
+              href: webview2/how-to/webdriver.md
             - name: 在 WebView2 中使用 Chromium 开发工具协议
-              href: webview2/howto/chromium-devtools-protocol.md
+              href: webview2/how-to/chromium-devtools-protocol.md
         - name: 参考
           href: webview2/webview2-api-reference.md
           items:

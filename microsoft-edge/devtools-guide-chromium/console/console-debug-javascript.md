@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: ebd12f8932332b3e63162ab6952577bdb43bbccd
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -92,8 +92,8 @@ ms.locfileid: "11483348"
 
 To review no errors in the **Console**， navigate to [Fixed network error reported in Console][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml].  
 
-:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="没有任何错误的示例从 GitHub 加载信息并显示信息" lightbox="../media/console-debug-network-error-fixed.msft.png":::
-   没有任何错误的示例从 GitHub 加载信息并显示信息  
+:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="不带任何错误的示例从 GitHub并显示信息" lightbox="../media/console-debug-network-error-fixed.msft.png":::
+   不带任何错误的示例从 GitHub并显示信息  
 :::image-end:::  
 
 确保提供防御性编码技术以避免以前的用户体验。  此外，请确保代码捕获错误，并显示控制台中的 **每个错误**。  在控制台 [和 UI 中导航到网络错误报告][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] 并查看以下项目。  
@@ -190,7 +190,7 @@ there();
    从控制台创建的 **跟踪**  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

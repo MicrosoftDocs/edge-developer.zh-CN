@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: ddd48b78c59e26edc9bca159f5ddf684015ae980
 ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
@@ -229,16 +229,16 @@ Chromium [问题#924693][CR924693]
    "应用程序"面板的"Cookie"窗格中阻止的 Cookie  
 :::image-end:::  
 
-Chromium [问题#1030258][CR1030258]  <!-- inaccessible  -->  
+Chromium问题[#1030258][CR1030258]  <!-- inaccessible  -->  
 
 #### <a name="cookie-priority-in-the-cookie-pane"></a>Cookie 窗格中的 Cookie 优先级  
 
 网络和应用程序 **工具中的** Cookie **表现在** 包含"优先级 **"** 列。  
 
 > [!CAUTION]
-> 基于 Chromium 的浏览器（如 Microsoft Edge）是唯一支持 Cookie 优先级的浏览器。  
+> Chromium的浏览器（如 Microsoft Edge）是唯一支持 Cookie 优先级的浏览器。  
 
-Chromium [问题#1026879][CR1026879]  
+Chromium问题[#1026879][CR1026879]  
 
 #### <a name="edit-all-cookie-values"></a>编辑所有 Cookie 值  
 
@@ -256,17 +256,17 @@ Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单�
    作为提取Node.js复制  
 :::image-end:::  
 
-Chromium [问题#1029826][CR1029826]  
+Chromium问题[#1029826][CR1029826]  
 
 ### <a name="more-accurate-web-app-manifest-icons"></a>更准确的 Web 应用清单图标  
 
-以前，应用程序面板中的"清单"窗格发送了自己的请求，以显示 Web 应用部件清单图标。  DevTools 现在显示与 Microsoft Edge 使用完全相同的清单图标。  
+以前，应用程序面板中的"清单"窗格发送了自己的请求，以显示 Web 应用部件清单图标。  DevTools 现在显示你使用的完全相同Microsoft Edge图标。  
 
 :::image type="complex" source="../../images/2020/01/manifesticons.msft.png" alt-text="清单窗格中的图标" lightbox="../../images/2020/01/manifesticons.msft.png":::
    清单窗格中的图标  
 :::image-end:::  
 
-Chromium [问题#985402][CR985402]  
+Chromium问题[#985402][CR985402]  
 
 ### <a name="hover-on-css-content-properties-to-display-unescaped-values"></a>将鼠标悬停在 CSS 内容属性上以显示未转义的值  
 
@@ -294,10 +294,10 @@ Chromium [问题#985402][CR985402]
 
 ### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a>用于禁用滚动过文件末尾的设置  
 
-打开["][Settings]设置"，**** 然后禁用"首选项源  >  ****  >  **""** 允许滚动到文件末尾"以禁用默认 UI 行为，该行为允许你在"源"面板中的**** 文件末尾良好滚动。  
+打开[设置，][Settings]然后禁用首选项源**** 允许滚动文件末尾以禁用默认 UI 行为，该行为允许你在"源"面板中的文件末尾良好  >  ****  >  **** 滚动。 ****  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="禁用 允许滚动到文件的末尾" lightbox="../../images/2020/01/settings.msft.png":::
-   禁用 **"设置"中的"允许滚动过文件** 末尾"  
+   禁用**允许滚动到文件末尾设置**  
 :::image-end:::  
 
 :::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在"源"面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
@@ -314,39 +314,39 @@ Chromium [问题#985402][CR985402]
 
 <!-- links -->  
 
-[DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "模拟移动视区 - 在 Microsoft Edge DevTools |Microsoft Docs"
-[DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "显示设备帧 - 在 Microsoft Edge 开发人员工具工具中通过设备模式模拟|Microsoft Docs"
+[DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "模拟移动视区 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
+[DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "显示设备帧 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
 [CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
-[ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "限制网络和 CPU - 在 Microsoft Edge DevTools |Microsoft Docs"
+[ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "限制网络和 CPU - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
 [Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
 [MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio |Microsoft Docs"  
-[CookiesFields]: /microsoft-edge/devtools-guide-chromium/storage/cookies#fields "字段 - 使用 Microsoft Edge DevTools 工具查看、编辑和删除|Microsoft Docs"  
+[CookiesFields]: /microsoft-edge/devtools-guide-chromium/storage/cookies#fields "字段 - 使用 DevTools Microsoft Edge、查看、编辑和|Microsoft Docs"  
 
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "适用于 Microsoft Edge Visual Studio代码扩展的调试程序"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Microsoft Edge 代码Visual Studio元素"  
+[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "调试程序Microsoft Edge Visual Studio Code扩展"  
+[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "扩展Microsoft Edge Visual Studio Code元素"  
 
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge 预览频道"  
 
-[VisualStudioCode]: https://aka.ms/vscode "Visual Studio 代码"  
-[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Microsoft Edge 调试程序 - Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge 的元素 \ (Chromium\) - Visual Studio Marketplace"  
+[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
+[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "调试程序Microsoft Edge - Visual Studio市场"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge \ (Chromium\) - Visual Studio Marketplace 的元素"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 
-[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "改进 Microsoft Edge 中的跟踪防护博客文章"
+[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "改进跟踪防护Microsoft Edge博客文章"
 
-[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge 预览体验成员加载项"  
+[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge预览体验成员加载项"  
 [MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "下载 Visual Studio 2019 for Windows & Mac"  
 
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | 发布推文"  
 
-[CR924693]: https://crbug.com/924693 "功能请求：将 Moto G4 添加到设备模式列表|Chromium Bug"  
-[CR1030258]: https://crbug.com/1030258 "CR 1030258 |Chromium Bug"  
-[CR1026879]: https://crbug.com/1026879 "开发人员控制台中的&quot;Cookie&quot;选项卡不再显示优先级|Chromium Bug"  
-[CR1029826]: https://crbug.com/1029826 "network tab -> right choose to request -> copy -> copy as fetch does not copy cookies |Chromium Bug"  
-[CR985402]: https://crbug.com/985402 "Web 应用清单图标错误字符串令人困惑|Chromium Bug"  
-[CR963183]: https://crbug.com/963183 "DevTools 不符合 WCAG |Chromium Bug"  
-[CR941561]: https://crbug.com/941561 "DevTools 工具的本地化|Chromium Bug"  
-[CR987787]: https://crbug.com/987787 "Dom 3D 视图|Chromium Bug"  
+[CR924693]: https://crbug.com/924693 "功能请求：将 Moto G4 添加到设备模式列表|ChromiumBug"  
+[CR1030258]: https://crbug.com/1030258 "CR 1030258 |ChromiumBug"  
+[CR1026879]: https://crbug.com/1026879 "开发人员控制台中的&quot;Cookie&quot;选项卡不再显示优先级|ChromiumBug"  
+[CR1029826]: https://crbug.com/1029826 "network tab -> right choose to request -> copy -> copy as fetch does not copy cookies |ChromiumBug"  
+[CR985402]: https://crbug.com/985402 "Web 应用清单图标错误字符串令人困惑|ChromiumBug"  
+[CR963183]: https://crbug.com/963183 "DevTools 不符合 WCAG |ChromiumBug"  
+[CR941561]: https://crbug.com/941561 "DevTools 工具的本地化|ChromiumBug"  
+[CR987787]: https://crbug.com/987787 "Dom 3D 视图|ChromiumBug"  
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "未转义 CSS 内容的演示"  
 
@@ -361,7 +361,7 @@ Chromium [问题#985402][CR985402]
 [Webhint]: https://aka.ms/webhint "webhint"  
 
 [WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint 浏览器扩展|webhint 文档"  
-[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio代码扩展|webhint 文档"  
+[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio Code Extension |webhint 文档"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

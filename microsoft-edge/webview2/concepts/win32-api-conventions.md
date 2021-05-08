@@ -3,17 +3,17 @@ description: Win32 C++ WebView2 API 约定
 title: Win32 C++ WebView2 API 约定
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: b47e53a4846d4bb662ae108c6445a6c2a615722a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b5a86751bfe3386058812ca166fa7cf9e0e201dc
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470856"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535641"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定  
 
@@ -141,7 +141,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 ## <a name="see-also"></a>另请参阅  
 
-*   若要开始使用 WebView2 Win32 C/C++，请导航到 [WebView2 入门][Webview2IndexGettingStarted] 指南。  
+*   若要开始使用 WebView2 Win32 C/C++，请导航到 [WebView2][Webview2IndexGetStarted] 指南。  
 *   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]。  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 Microsoft Edge WebView 团队联系  
@@ -150,7 +150,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "WebView2 应用程序|Microsoft Docs"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "WebView2 |Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - 接口 ICoreWebView2 |Microsoft Docs"  
 

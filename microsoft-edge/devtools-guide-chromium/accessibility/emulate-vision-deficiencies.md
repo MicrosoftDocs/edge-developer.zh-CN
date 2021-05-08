@@ -1,6 +1,6 @@
 ---
-description: 模拟 Microsoft Edge DevTools 中的视觉缺陷。
-title: '模拟 Microsoft Edge DevTools 中的视觉缺陷 (色盲) '
+description: 在 DevTools 中模拟Microsoft Edge缺陷。
+title: '在 DevTools Microsoft Edge色盲 (中模拟视觉缺陷) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/09/2021
@@ -16,7 +16,7 @@ ms.locfileid: "11519168"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
-为了更好地满足色 [盲用户][ColorblindawarenessMain] \ (色盲\) 的需要 [，Microsoft Edge DevTools][DevtoolsIndex] 允许你模拟特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。  
+为了更好地满足色[盲用户][ColorblindawarenessMain]\ (色盲\) 的需求，Microsoft Edge [DevTools][DevtoolsIndex]允许你模拟特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。  
 
 | 色盲 | 详细信息 |  
 |:--- |:--- |  

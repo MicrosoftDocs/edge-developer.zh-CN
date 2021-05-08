@@ -3,17 +3,17 @@ description: 导航
 title: 导航|WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: e87994d6205f81e01385a131e17091d0c8b001d5
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d133bfb99808d0e036c4b46be9ef82039aee49eb
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470842"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535704"
 ---
 # <a name="navigation-events"></a>导航事件  
 
@@ -26,9 +26,9 @@ ms.locfileid: "11470842"
    :::column-end:::
 :::row-end:::  
 
-导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到 [WebView2 入门指南][Webview2IndexGettingStarted]。  
+导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到 [WebView2 入门指南][Webview2IndexGetStarted]。  
 
-<!--todo:  Move the relevant information out of the getting started guide to better focus the content and leave the most concise elements in the getting started guide.  -->   
+<!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->   
 
 导航事件的正常顺序为 `NavigationStarting` `SourceChanged` 、、、 `ContentLoading` `HistoryChanged` 和 `NavigationCompleted` 。  以下事件描述每次导航期间 WebView2 的状态。  
 
@@ -66,7 +66,7 @@ ms.locfileid: "11470842"
 
 ## <a name="see-also"></a>另请参阅  
 
-*   若要开始使用 WebView2，请导航到 ["WebView2 入门指南"][Webview2IndexGettingStarted] 指南。  
+*   若要开始使用 WebView2，请导航到 ["WebView2 入门指南"][Webview2IndexGetStarted] 指南。  
 *   有关 WebView2 功能的综合示例，请导航到 GitHub 上的 [WebView2Samples][GithubMicrosoftedgeWebview2samples] 存储库。  
 *   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
@@ -77,7 +77,7 @@ ms.locfileid: "11470842"
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "入门 - Microsoft Edge WebView2 |Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "入门 - Microsoft Edge WebView2 |Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"  

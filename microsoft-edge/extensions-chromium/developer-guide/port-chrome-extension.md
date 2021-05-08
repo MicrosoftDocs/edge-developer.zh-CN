@@ -25,18 +25,18 @@ Microsoft Edge 允许你以最少的更改移植 Chrome 扩展。  Chrome 支持
     > [!NOTE]
     > 如果你的扩展使用 Microsoft Edge 不支持的 API，它可能不会直接移植。  
     
-1.  在清单文件中，将 `update_URL` 字段设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  该值指向 Microsoft Edge 加载项存储中的扩展文件，并允许 `.crx` Microsoft Edge 检查扩展更新。  
-1.  如果在扩展的名称或说明中使用，则使用重新 `Chrome` 命名扩展 `Microsoft Edge` 。  若要通过认证过程，需要更改。  
-1.  通过旁加载扩展测试扩展以检查它在 Microsoft Edge [中是否正常工作][ExtensionsGettingStartedExtensionSideloading]。  
-1.  如果面临任何问题，可以使用 DevTools 在 Microsoft Edge 中调试扩展， [或联系我们][mailtoExtensionMicrosoft]。  
-1.  按照 [发布指南在][ExtensionsPublishPublishExtension] Microsoft Edge 加载项存储上发布扩展。  
+1.  在清单文件中，将 `update_URL` 字段设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  值指向 Microsoft Edge 加载项存储中的扩展文件，并允许 `.crx` Microsoft Edge 检查扩展更新。  
+1.  如果在 `Chrome` 扩展的名称或说明中使用的，则使用 重新命名扩展 `Microsoft Edge` 。  若要通过认证过程，需要更改。  
+1.  通过旁加载扩展来测试扩展，以检查它在 Microsoft Edge [中是否正常工作][ExtensionsGettingStartedExtensionSideloading]。  
+1.  如果面临任何问题，可以使用 DevTools 在 Microsoft Edge 中调试扩展，或 [联系我们][mailtoExtensionMicrosoft]。  
+1.  按照 [发布指南在][ExtensionsPublishPublishExtension] Microsoft Edge 加载项应用商店中发布扩展。  
     
     > [!NOTE]
-    > 如果扩展使用本机应用交换邮件，请确保在本机邮件主机清单文件中 `chrome.runtime.connectNative` `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` 设置为。  该设置允许应用标识你的扩展。  
+    > 如果扩展使用 与本机应用交换邮件，请确保在本机消息传递主机清单 `chrome.runtime.connectNative` `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` 文件中设置为 。  该设置允许应用标识你的扩展。  
     
 ## 后续步骤  
 
-在扩展包准备好在 Microsoft Edge 加载项存储中发布后，创建开发人员[帐户][ExtensionsPublishCreateDevAccount][并发布扩展][ExtensionsPublishPublishExtension]。  
+准备好在 Microsoft Edge 加载项应用商店中发布扩展包后，创建开发人员帐户[并][ExtensionsPublishCreateDevAccount][发布扩展][ExtensionsPublishPublishExtension]。  
 
 <!-- links -->  
 

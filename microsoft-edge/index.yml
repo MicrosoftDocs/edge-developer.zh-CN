@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft Edge 文档
-summary: 浏览 Microsoft Edge 文档。  了解如何通过浏览开发人员、管理员和用户的文档、教程和示例来使用 Microsoft Edge。
+summary: 浏览Microsoft Edge文档。  了解如何通过浏览Microsoft Edge、管理员和用户的文档、教程和示例来使用 Web 应用程序。
 brand: m365
 metadata:
   title: Microsoft Edge 文档
-  description: 适用于开发人员、IT 管理员和浏览器用户的 Microsoft Edge 信息;包括 DevTools、Extensions、PWA、WebDriver 等。
+  description: Microsoft Edge、IT 管理员和浏览器用户的信息;包括 DevTools、Extensions、PWA、WebDriver 等。
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
@@ -24,17 +24,17 @@ highlightedContent:
     - title: 获取支持
       itemType: reference
       url: /microsoft-edge/index#help-and-support
-    - title: 如何使用 Microsoft Edge
+    - title: 如何使用Microsoft Edge
       itemType: learn
       url: 'https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support'
-    - title: 在企业版中管理 Microsoft Edge
+    - title: 管理Microsoft Edge中的Enterprise
       itemType: learn
       url: /deployedge/index
     - title: 发现 Web 开发人员功能
       itemType: learn
       url: /microsoft-edge/index#microsoft-edge-for-developers
 conceptualContent:
-  title: 适用于企业的 Microsoft Edge
+  title: Microsoft Edge Enterprise
   items:
     - title: 了解有关企业中的 Microsoft Edge 的信息
       links:
@@ -82,7 +82,7 @@ conceptualContent:
     - title: 与企业社区互动
       links:
         - itemType: reference
-          text: '企业技术社区 (预览体验成员) '
+          text: 'Enterprise预览体验成员 (社区) '
           url: 'https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise'
     - title: 适用于企业的扩展
       links:
@@ -94,7 +94,7 @@ conceptualContent:
           url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
 additionalContent:
   sections:
-    - title: 适用于开发人员的 Microsoft Edge
+    - title: Microsoft Edge开发人员
       items:
         - title: 开发工具
           links:
@@ -136,13 +136,13 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
         - title: 扩展：开发人员指南
           links:
-            - text: 将 Chromium 扩展移植到 Microsoft Edge
+            - text: 将Chromium扩展移植到Microsoft Edge
               url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
             - text: 分发扩展的备用方法
               url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
             - text: 本机消息传递
               url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
-        - title: 扩展：发布到 Microsoft Store
+        - title: 扩展：发布到Microsoft Store
           links:
             - text: 分步发布过程
               url: /microsoft-edge/extensions-chromium/publish/publish-extension
@@ -152,7 +152,7 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: 管理帐户设置
               url: /microsoft-edge/extensions-chromium/publish/manage-settings
-        - title: 扩展：Microsoft Edge 加载项策略
+        - title: 扩展：Microsoft Edge加载项策略
           links:
             - text: 内容安全策略
               url: /microsoft-edge/extensions-chromium/store-policies/csp
@@ -160,9 +160,9 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
         - title: 渐进式 Web 应用
           links:
-            - text: 'Chromium (概述) '
+            - text: '概述 (Chromium) '
               url: /microsoft-edge/progressive-web-apps-chromium/index
-            - text: '使用渐进式 Web 应用 (Chromium) '
+            - text: '渐进式 Web 应用 (Chromium) '
               url: /microsoft-edge/progressive-web-apps-chromium/get-started
             - text: 将 DevTools 与渐进式 Web 应用一同使用
               url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
@@ -180,19 +180,19 @@ additionalContent:
               url: /microsoft-edge/webview2/gettingstarted/win32
             - text: WPF 中的 WebView2 入门
               url: /microsoft-edge/webview2/gettingstarted/wpf
-            - text: Windows 窗体应用中的 WebView2 入门
+            - text: Windows Forms 应用中的 WebView2 入门
               url: /microsoft-edge/webview2/gettingstarted/winforms
             - text: 参考
               url: /microsoft-edge/webview2/webview2-api-reference
     - title: 帮助和支持
       items:
         - summary: 从 Microsoft 问答社区专家&解答
-          title: Microsoft 问答上的&支持
+          title: CommunityMicrosoft 问答&支持
           url: /answers/topics/ms-edge.html
-        - summary: Microsoft 致力于确保你的应用在 Microsoft Edge 上正常工作。  如果在最新版本的 Edge 上遇到业务应用或网站问题，Microsoft 将帮助你修复应用和网站，无需额外付费。  有关资格要求，请参阅产品/服务详细信息。
+        - summary: Microsoft 致力于确保你的应用在 Microsoft Edge。  如果在最新版本的 Edge 上遇到业务应用或网站问题，Microsoft 将帮助你修复应用和网站，无需额外付费。  有关资格要求，请参阅产品/服务详细信息。
           title: 使用应用保证获取无成本帮助
           url: 'https://fasttrack.microsoft.com/portal'
-        - summary: 如果你的企业需要立即为 Microsoft Edge 提供技术支持，可以使用各种计划提供来自 Microsoft 的一对一支持，以帮助你获得所需的支持级别。
+        - summary: 如果你的企业需要立即为 Microsoft Edge 技术支持，可以使用各种计划提供来自 Microsoft 的一对一支持，以帮助你获得所需的支持级别。
           title: Microsoft 支持企业
           url: 'https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207'
         - summary: 为用户提供了有用的支持资源。

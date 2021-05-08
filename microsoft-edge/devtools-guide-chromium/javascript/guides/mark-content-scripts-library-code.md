@@ -1,5 +1,5 @@
 ---
-description: 从"设置"和"框架库代码">"将内容脚本标记为库代码"。
+description: 从框架库代码启用"将内容脚本标记为设置 >库代码"。
 title: 将内容脚本标记为库代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -30,10 +30,10 @@ ms.locfileid: "11519343"
 
 # <a name="mark-content-scripts-as-library-code"></a>将内容脚本标记为库代码  
 
-使用 **"源"** 工具逐步执行 [代码时][DevToolsJavascriptStepThroughCode]，有时会对无法识别的代码暂停。  您可能暂停了已安装的 Microsoft Edge 扩展之一的代码。  若要不在扩展代码上暂停，请完成以下操作。  
+使用 **"源"** 工具逐步执行 [代码时][DevToolsJavascriptStepThroughCode]，有时会对无法识别的代码暂停。  您可能暂停了已安装的一个 Microsoft Edge 扩展的代码。  若要不在扩展代码上暂停，请完成以下操作。  
 
-1.  在 DevTools 中，在右上角选择齿轮图标" (**设置** ") 。  此时将出现**设置**页面。  
-1.  在"**设置"下**，选择"**忽略列表"。**  将显示 **"设置"的** "框架库 **代码"** 部分。  
+1.  在 DevTools 的右上角，选择齿轮图标** (设置) 。**  此时将出现**设置**页面。  
+1.  在 **"设置"** 下，选择"**忽略列表"。**  将显示 **"框架**库代码 **"设置**显示。  
 1.  打开" **将内容脚本标记为库代码"** 复选框。  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用"将内容脚本标记为库代码"复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
@@ -46,7 +46,7 @@ ms.locfileid: "11519343"
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "步骤 4：逐步完成代码 - 开始在 Microsoft Edge DevTools |Microsoft Docs"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "步骤 4：逐步执行代码 - 开始在 DevTools Microsoft Edge中调试 JavaScript |Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

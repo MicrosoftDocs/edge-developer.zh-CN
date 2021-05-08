@@ -1,6 +1,6 @@
 ---
 description: 有关打开命令菜单、运行命令、查看其他操作等的指南。
-title: 使用 Microsoft Edge DevTools 命令菜单运行命令
+title: 使用开发人员工具Microsoft Edge菜单运行命令
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -28,9 +28,9 @@ ms.locfileid: "11519189"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>使用 Microsoft Edge DevTools 命令菜单运行命令  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>使用开发人员工具Microsoft Edge菜单运行命令  
 
-命令菜单提供了一种快速的方式来导航 Microsoft Edge DevTools UI 和完成常见任务，例如 [禁用 JavaScript][JavascriptDisable]。  你可能熟悉 Microsoft Visual Studio Code 中称为命令调色板的类似功能，[][VisualStudioCodeUICommandPalette]这是命令菜单的原始灵感。  
+命令菜单提供了在 DevTools UI Microsoft Edge导航和完成常见任务（如[禁用 JavaScript）的快速方法][JavascriptDisable]。  你可能熟悉命令调色板Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感[][VisualStudioCodeUICommandPalette]。  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="使用命令菜单禁用 JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    使用命令菜单禁用 JavaScript  
@@ -64,9 +64,9 @@ ms.locfileid: "11519189"
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "使用 Microsoft Edge DevTools 工具禁用 JavaScript |Microsoft Docs"  
+[JavascriptDisable]: ../javascript/disable.md "使用开发人员工具Microsoft Edge JavaScript |Microsoft Docs"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "命令调色板 - Visual Studio代码 UI"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "命令调色板 - Visual Studio Code UI"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

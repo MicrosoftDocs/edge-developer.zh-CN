@@ -1,12 +1,12 @@
 ---
-description: 打开"呈现"工具，然后选择"模拟 CSS 媒体>打印。
-title: '强制 Microsoft Edge DevTools 进入打印预览模式 (CSS 打印媒体类型) '
+description: 打开"呈现"工具，然后选择"模拟 CSS 媒体>打印"。
+title: '强制 Microsoft Edge DevTools 使用 CSS 打印媒体类型 (打印预览模式) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 0123b7abf475212304f654c04bc232e3e96f0bda
 ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
@@ -30,7 +30,7 @@ ms.locfileid: "11399076"
 
 # <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>强制 Microsoft Edge DevTools 进入打印预览模式  
 
-打印 [媒体查询][MDNUsingMediaQueries] 控制页面在打印时的外观。  若要强制页面进入打印预览模式，  
+打印 [媒体查询][MDNUsingMediaQueries] 控制页面在打印时的外观。  若要强制页面进入打印预览模式：  
 
 1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
@@ -38,22 +38,22 @@ ms.locfileid: "11399076"
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `rendering` ，选择 **"显示呈现"，** 然后选择 `Enter` 。  
-1.  在 **"模拟 CSS 媒体"下**，选择 **"打印"。**  
+1.  键入 `rendering` ，选择 **"显示呈现**"，然后选择 `Enter` 。  
+1.  在"**模拟 CSS 媒体"下**，选择"**打印"。**  
     
     :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="打印预览模式" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        打印预览模式  
     :::image-end:::  
     
-可以在此处显示和更改 CSS，就像任何其他网页一样。  导航到["开始查看和更改 CSS"。][DevToolsCSSGetStarted]  
+可以在此处显示和更改 CSS，就像任何其他网页一样。  导航到“[查看和更改 CSS 入门][DevToolsCSSGetStarted]”。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
 [DevToolsCSSGetStarted]: ./index.md "开始查看和更改 CSS |Microsoft Docs"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "使用媒体查询|MDN"  

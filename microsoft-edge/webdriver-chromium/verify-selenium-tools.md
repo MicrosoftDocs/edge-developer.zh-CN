@@ -1,6 +1,6 @@
 ---
-description: 有关验证适用于 Microsoft Edge 的 Selenium 工具的 GPG 签名的信息。
-title: 验证 Microsoft Edge 的 Selenium 工具下载
+description: 有关验证 Selenium Tools for Microsoft Edge签名的信息。
+title: 正在验证 Microsoft Edge 的 Selenium 工具下载
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/29/2021
@@ -15,17 +15,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/30/2021
 ms.locfileid: "11306268"
 ---
-# 验证 Microsoft Edge 的 Selenium 工具下载  
+# 验证 Selenium Tools for Microsoft Edge  
 
-本文提供在验证 [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases]发行版的签名时使用的公钥。  
+本文提供在验证[Selenium Tools][GithubMicrosoftEdgeSeleniumToolsReleases]for Microsoft Edge 的签名时使用的公钥。  
 
-适用于 [Java Microsoft][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Edge 的 Selenium 工具][GithubMicrosoftEdgeSeleniumToolsReleases] 版本使用 [GPG 进行签名][Gnupg]。  
+适用于[Java的][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium 工具Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases]使用[GPG 进行签名][Gnupg]。  
 
-使用以下密钥验证 Microsoft Edge 开发人员工具团队提供的 [程序包的签名][TwitterEdgeDevTools]。  
+使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名][TwitterEdgeDevTools]。  
 
-## 用于验证 Microsoft Edge 的 Selenium 工具的公钥  
+## 用于验证 Selenium Tools for Microsoft Edge  
 
-*   **公钥 ID**：Microsoft Edge 开发人员工具团队 [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
+*   **公钥 ID：Microsoft Edge**开发人员工具团队[EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
 *   **公钥指纹**： `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
 
 ```output
@@ -58,4 +58,4 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 
 [MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge：msedge-selenium-tools-java |sonatype Maven 中央存储库搜索"  
 
-[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools |Twitter"  
+[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"  

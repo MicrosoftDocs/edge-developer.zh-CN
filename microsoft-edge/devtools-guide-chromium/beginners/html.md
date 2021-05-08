@@ -199,7 +199,7 @@ ms.locfileid: "11397927"
        将在中 `A new element!?!` 找到的线索文本 `index.html`  
     :::image-end:::  
     
-1.  返回到实时 **选项卡**，将鼠标悬停在 `A new element!?!`上，打开上下文菜单 \（右键单击\），然后选择 **检查**。  
+1.  返回到实时 **选项卡**，将鼠标悬停在 `A new element!?!`上，打开上下文菜单 \(右键单击\），然后选择 **检查**。  
     
     :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="检查某些文本" lightbox="../media/beginners-html-dom3.msft.png":::
        检查某些文本  
@@ -217,7 +217,7 @@ ms.locfileid: "11397927"
 
 如果你想要在不离开动态选项卡的情况下快速试验内容更改，请尝试使用 DevTools。  
 
-1.  在 DevTools 中，将鼠标悬停在 `Your site!`上，打开上下文菜单 \（右键单击\），然后选择 **HTML 格式编辑**。  
+1.  在 DevTools 中，将鼠标悬停在 `Your site!`上，打开上下文菜单 \(右键单击\），然后选择 **HTML 格式编辑**。  
     
     :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="将节点编辑为 HTML" lightbox="../media/beginners-html-edit1.msft.png":::
        将节点编辑为 HTML  
@@ -247,7 +247,7 @@ ms.locfileid: "11397927"
        :::column-end:::
     :::row-end:::  
     
-1.  选择 `Control` + `Enter` \ (Windows、Linux\) 或 `Command` + `Enter` \ (macOS\) 保存更改，或在框中选择。  更改将自动显示在页面实时视图中。  文本 `Your site!` 已替换为新内容。  
+1.  选择 `Control` + `Enter` \(Windows、Linux\) 或 `Command` + `Enter` \(macOS\) 保存更改，或在框中选择。  更改将自动显示在页面实时视图中。  文本 `Your site!` 已替换为新内容。  
     
     :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上" lightbox="../media/beginners-html-edit3.msft.png":::
        新内容会立即显示在页面上  
@@ -373,7 +373,7 @@ ms.locfileid: "11397927"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者 [Katherine Jackson][KatherineJackson] \（技术作家 Intern，Chrome DevTools\）。  
+> 原始页面 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者 [Katherine Jackson][KatherineJackson] \(技术作家 Intern，Chrome DevTools\）。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

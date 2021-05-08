@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge 开发人员工具中的控制台工具简介。
+description: 控制台工具在开发人员工具Microsoft Edge简介。
 title: 使用控制台
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -43,7 +43,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 ## <a name="error-reports-and-console"></a>错误报告和控制台  
 
-**控制台** 是报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，DevTools 中的****"设置"图标旁边会显示一个按钮，该按钮提供错误和警告的数量。  选择它以打开 **控制台** 并显示问题。  有关详细信息，请导航到"[控制台"中报告的"调试错误"。][DevtoolsConsoleConsoleDebugJavascript]  
+**控制台** 是报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，在 DevTools**** 设置图标旁边会显示一个按钮，该图标提供错误和警告的数量。  选择它以打开 **控制台** 并显示问题。  有关详细信息，请导航到"[控制台"中报告的"调试错误"。][DevtoolsConsoleConsoleDebugJavascript]  
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools 提供有关控制台中错误 **的详细信息**  
@@ -168,7 +168,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 有关控制台详细信息 **，** 请导航到"控制台[][DevtoolsConsoleReference]参考["、"控制台实用程序 API][DevtoolsConsoleUtilities]参考"和"[控制台 API 参考"。][DevtoolsConsoleApi]  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

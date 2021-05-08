@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 80b0e4368b1c8feaf28a58ac2e3bd9c1ea2f1f92
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -102,7 +102,7 @@ document.querySelector('header').style.border = '2em solid green'
 *   `$x()` 允许您使用 XPATH 选择 DOM 元素。
 *   `$()` `$$()`和 是 和 的 `document.querySelector()` 较短版本 `document.querySelectorAll()` 。  
     
-例如，以下代码段检索网页 \ (中所有的链接，就像 \) 的简短内容一样，将链接显示为可排序表，以复制并粘贴到 Excel 中。 `$$('a')` `document.querySelectorAll('a')`
+例如，以下代码段检索网页 \ (中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`
 
 ```javascript
 console.table($$('a'),['href','text']);
@@ -261,7 +261,7 @@ unmonitorEvents($0, 'key');
 *   将控制台脚本**存储为**[代码段][DevToolsJavascriptSnippets]。  
 *   使用键盘快捷方式或编辑器在网页中运行脚本。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

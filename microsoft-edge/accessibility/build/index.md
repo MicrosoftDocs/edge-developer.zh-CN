@@ -20,13 +20,13 @@ ms.locfileid: "11480151"
 
 Web 填充了动态且复杂的网站、应用程序和用户界面，这些网站、应用程序和用户界面是使用 HTML、CSS 和 JavaScript 的组合构建的。  但是，当设计和构建时没有考虑辅助功能时，依赖辅助技术来浏览 Web 的人很难使用这些复杂的网站。 [](https://webaim.org/articles/motor/assistive) 构建可供残障人士访问的网站需要有关用户界面的语义信息。 这允许辅助技术（如屏幕阅读器）传达必要的信息，以帮助具有各种功能的人使用网站。
 
-有关 Microsoft Edge 支持哪些新 HTML5 功能可访问的信息，请访问[HTML5Accessibility。](https://html5accessibility.com)
+访问[HTML5Accessibility，](https://html5accessibility.com)了解哪些新 HTML5 功能可供 Microsoft Edge。
 
 ## <a name="how-accessibility-works"></a>辅助功能的工作原理
 
-辅助技术添加计算机通常没有的功能。 例如，视觉受损的用户可能将键盘与辅助技术（如屏幕阅读器）结合使用，而不是直接将浏览器与鼠标和屏幕结合使用。 对于 Microsoft 平台和 Web 上的应用程序，辅助技术与 Microsoft [UI](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx)自动化、特定于应用程序的对象模型（如 Microsoft Edge 中的文档对象模型 (DOM) ）或这些对象模型的组合进行交互。
+辅助技术添加计算机通常没有的功能。 例如，视觉受损的用户可能将键盘与辅助技术（如屏幕阅读器）结合使用，而不是直接将浏览器与鼠标和屏幕结合使用。 对于 Microsoft 平台和 Web 上的应用程序，辅助技术与 Microsoft [UI 自动化](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx)、特定于应用程序的对象模型（如 Microsoft Edge 中的文档对象模型 (DOM) ）或这些对象模型的组合交互。
 
-对于 Web 开发人员，某些 HTML 元素会映射到 UI 自动化对象，因此在选择这些 HTML 元素时，开发人员可以使用内置于这些元素的辅助功能属性和事件。 开发网站时，通常只需关注确保 API 正确写入 (或指定适当的元素) ，以便应用程序可访问。 有关详细信息， [请参阅 Microsoft Edge 中的 ARIA](./ARIA-and-UI-Automation.md) 和 UI 自动化。  有关可访问的通用 Windows 平台 (UWP) 应用的信息，请导航到 Windows 开发人员[](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility)中心中的辅助功能主题。
+对于 Web 开发人员，某些 HTML 元素会映射到 UI 自动化对象，因此在选择这些 HTML 元素时，开发人员可以使用内置于这些元素的辅助功能属性和事件。 开发网站时，通常只需关注确保 API 正确写入 (或指定适当的元素) ，以便应用程序可访问。 有关详细信息，[请参阅 ARIA 和 Microsoft Edge](./ARIA-and-UI-Automation.md) UI 自动化。  有关可访问的 Universal Windows Platform (UWP) 应用的信息，请导航到 Windows 开发人员中心[](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility)中的辅助功能主题。
 
 通过良好的编码实践，可以解决与动态内容相关的许多常见辅助功能问题，并且 [WCAG 2.0](https://go.microsoft.com/fwlink/p/?LinkID=24629) 文档包括许多技术和最佳实践，可帮助你创建更易于访问的动态 Web 应用程序。 但是，即使正确编码，也不必访问动态内容。 [可访问的富 Internet 应用程序 (ARIA) ](#aria) 可帮助解决此问题。  
 
@@ -62,14 +62,14 @@ ARIA 状态和属性是 aria 前缀的属性，可提供有关对象的特定信
 
 ## <a name="assistive-technology-compatibility-testing"></a>辅助技术兼容性测试  
 
-验证正在构建的网站是否使用真实的辅助技术是确保残障用户获得良好体验的最佳方法。  由于许多辅助技术都使用键盘，因此测试网站的键盘辅助功能是一个很好的起点。  [键盘兼容性][W3cPerspectiveVideosKeyboard] 测试验证用户是否无需鼠标即可访问所有交互式控件。  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] 是 Microsoft Edge 和 Chrome 的浏览器扩展，可指导你并展示一些常见问题。  
+验证正在构建的网站是否使用真实的辅助技术是确保残障用户获得良好体验的最佳方法。  由于许多辅助技术都使用键盘，因此测试网站的键盘辅助功能是一个很好的起点。  [键盘兼容性][W3cPerspectiveVideosKeyboard] 测试验证用户是否无需鼠标即可访问所有交互式控件。  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview]是适用于 Microsoft Edge 和 Chrome 的浏览器扩展，可指导你并展示一些常见问题。  
 
 一旦确信你的网站能很好地使用键盘，请通过其他辅助技术（如屏幕阅读器）试用它。  它可发现以下问题。
 
 *   您的 HTML、ARIA 和 CSS。  
 *   对功能或技术的辅助技术的支持级别。  
     
-不同的浏览器可能以不同于 Microsoft Edge 的方式将元素映射到平台辅助功能 API。  在构建接口时，考虑每个差异非常重要。  
+不同的浏览器可能将元素映射到平台辅助功能 API 的方式与Microsoft Edge。  在构建接口时，考虑每个差异非常重要。  
 
 WebAIM 与屏幕[阅读器][WebaimProjectsScreenreadersurvey8]和低视力[][WebaimProjectsLowvisionsurvey2]用户进行调查，帮助你确定要测试哪些辅助技术和浏览器。  
 
@@ -81,11 +81,11 @@ WebAIM 与屏幕[阅读器][WebaimProjectsScreenreadersurvey8]和低视力[][Web
 
 ### <a name="testing-locally"></a>本地测试  
 
-大多数设备包括内置于操作系统的辅助技术。  Microsoft Windows 包括 [Windows 讲述人][MicrosoftSupport22798] 屏幕阅读器和 [Windows 放大镜][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]。  可以下载第三方辅助技术，如[NVDA、FreedomscientificSoftwareJaws]和[ZoomText。][FreedomscientificSoftwareZoomtext] [][NvaccessAboutNvda]  Apple macOS 包括 [VoiceOver][AppleAccessibilityMacVision] 屏幕阅读器。  iOS、Android 和 Linux 都支持各种辅助技术。  
+大多数设备包括内置于操作系统的辅助技术。  Microsoft Windows包括屏幕[阅读器Windows 讲述人][MicrosoftSupport22798]和Windows[放大镜][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]。  可以下载第三方辅助技术，如[NVDA、FreedomscientificSoftwareJaws]和[ZoomText。][FreedomscientificSoftwareZoomtext] [][NvaccessAboutNvda]  Apple macOS 包括 [VoiceOver][AppleAccessibilityMacVision] 屏幕阅读器。  iOS、Android 和 Linux 都支持各种辅助技术。  
 
 ### <a name="testing-in-virtual-machines-and-emulators"></a>虚拟机和仿真器中的测试  
 
-在 macOS 下，如果你希望使用仅适用于 Windows 的辅助技术（如 Windows 讲述人或 NVDA）进行测试，请创建 Windows 虚拟机。  具有 Microsoft Edge \ (EdgeHTML\) 和 IE 的虚拟机可用于虚拟机下载页面上的 VirtualBox 和[VMWare。][MicrosoftDeveloperEdgeVms]  
+在 macOS 下，如果你希望使用仅适用于 Windows（如 Windows 讲述人 或 NVDA）的辅助技术进行测试，Windows虚拟机。  具有 Microsoft Edge \ (EdgeHTML\) 和 IE 的虚拟机可用于虚拟机下载页上的 VirtualBox 和[VMWare。][MicrosoftDeveloperEdgeVms]  
 
 [Android Studio][AndroidDeveloperSdkInstallingStudioHtml] 包含一个仿真器，用于测试 Android 辅助功能套件 [中的辅助技术][GooglePlayStoreAndroidAccessibilitySuite]。  按照说明 [设置虚拟设备][AndroidDeveloperDevicesManagingAvdsHtml] 并启动 [仿真][AndroidDeveloperDevicesEmulatorHtml]器，然后从 GooglePlay 商店安装 [Android][GooglePlayStoreAndroidAccessibilitySuite] 辅助功能套件。  
 
@@ -102,9 +102,9 @@ WebAIM 与屏幕[阅读器][WebaimProjectsScreenreadersurvey8]和低视力[][Web
 
 ### <a name="accessibility-basics"></a>辅助功能基础知识
 
-#### [<a name="the-a11y-project"></a>A11Y 项目](http://a11yproject.com/)
+#### [<a name="the-a11y-project"></a>A11Y Project](http://a11yproject.com/)
 
-A11Y 项目是社区推动的一项工作，用于简化 Web 辅助功能。 查看[A11Y 项目](https://a11yproject.com/)网站，了解基本的辅助功能原则、辅助功能模式和小组件库，以及辅助功能[](https://a11yproject.com/patterns)软件、博客、[](http://a11yproject.com/resources.html)书籍和工具上的资源。
+A11Y Project是社区推动的一项工作，用于简化 Web 辅助功能。 查看[A11Y](https://a11yproject.com/) Project了解基本的辅助功能原则、辅助功能模式和小组件库，以及辅助功能软件、博客、[](https://a11yproject.com/patterns)书籍和工具上的[](http://a11yproject.com/resources.html)资源。
 
 #### [<a name="web-accessibility-initiative-wai"></a>Web 辅助功能计划 (，) ](https://w3.org/WAI/)
 
@@ -140,13 +140,13 @@ OpenAjax 联盟网站是验证一些适用于一个使用一百万位用户规�
 
 #### [<a name="patterns"></a>模式](http://a11yproject.com/patterns.html)
 
-[A11Y 项目](http://a11yproject.com/) 提供了一个可访问小组件和模式（如菜单、按钮、工具提示等）的库。
+[A11Y Project](http://a11yproject.com/)提供了一个可访问小组件和模式（如菜单、按钮、工具提示等）的库。
 
 ### <a name="accessibility-techniques--tools"></a>辅助功能技术&工具
 
-#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>辅助功能：为 Microsoft Edge 创建辅助扩展图标](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility)
+#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>辅助功能：为用户创建辅助扩展Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility)
 
-获取有关为 Microsoft Edge 创建辅助扩展图标的指南。
+获取有关为用户创建辅助扩展图标Microsoft Edge。
 
 #### [<a name="accessible-name-and-description-computation-and-mappings-11"></a>辅助名称和说明：计算和映射 1.1](https://www.w3.org/TR/accname-1.1/)
 
@@ -162,7 +162,7 @@ OpenAjax 联盟网站是验证一些适用于一个使用一百万位用户规�
 
 #### [<a name="building-accessible-websites-just-got-a-lot-easier"></a>构建可访问的网站变得更加简单](https://blogs.msdn.microsoft.com/webdev/2016/05/02/building-accessible-websites-just-got-a-lot-easier/)
 
-本 .NET Web 开发和工具博客文章Visual Studio扩展 Web [辅助功能检查器](https://go.microsoft.com/fwlink/p/?linkid=841539)。
+本 .NET Web 开发和工具博客文章Visual Studio扩展 Web[辅助功能检查器](https://go.microsoft.com/fwlink/p/?linkid=841539)。
 
 #### [<a name="core-accessibility-api-mappings-11"></a>核心辅助功能 API 映射 1.1](https://www.w3.org/TR/core-aam-1.1/)
 
@@ -180,21 +180,21 @@ OpenAjax 联盟网站是验证一些适用于一个使用一百万位用户规�
 
 此 W3C 映射文档说明了 HTML5.1 元素和属性如何映射到平台辅助功能 API。
 
-#### [<a name="quick-tips"></a>快速提示](http://a11yproject.com/#Quick-tips)
+#### [<a name="quick-tips"></a>快速使用技巧](http://a11yproject.com/#Quick-tips)
 
-[A11Y](http://a11yproject.com/)项目关于辅助功能的快速 Web 开发提示列表。
+[A11Y](http://a11yproject.com/)工具中有关辅助功能的快速 Web 开发Project。
 
 #### [<a name="site-scan"></a>网站扫描](https://developer.microsoft.com/microsoft-edge/tools/staticscan/)
 
-Microsoft Edge 开发人员中心上的站点扫描工具会检查过期库、布局问题和辅助功能问题。
+Microsoft Edge Dev 中心上的"网站扫描"工具检查过期库、布局问题和辅助功能问题。
 
 #### [<a name="techniques-for-wcag-20"></a>WCAG 2.0 的技术](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
 
 W3C 中的技术，为 Web 开发人员提供有关满足 Web 内容辅助功能指南 ([WCAG) 2.0 成功](https://w3.org/TR/WCAG20/) 标准的指导。
 
-#### [<a name="tips-on-developing-for-web-accessibility"></a>有关开发 Web 辅助功能的提示](https://w3.org/WAI/gettingstarted/tips/developing.html)
+#### [<a name="tips-on-developing-for-web-accessibility"></a>使用技巧 Web 辅助功能开发](https://w3.org/WAI/gettingstarted/tips/developing.html)
 
-W3C 中有关开发残障人士更容易访问的 Web 内容的提示。
+使用技巧 W3C 中有关开发残障人士更容易访问的 Web 内容的信息。
 
 #### [<a name="wai-aria-authoring-practices-11"></a>WAI-ARIA 创作实践 1.1](http://w3c.github.io/aria-practices/)
 
@@ -216,9 +216,9 @@ W3C 关于辅助功能的影响和每个人的权益的一系列简短情境视�
 
 <!--todo: link updates and acrolinx  -->  
 
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "虚拟机|Microsoft Edge 开发人员"  
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "虚拟机|Microsoft Edge开发人员"  
 
-[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "讲述人工具的完整|Microsoft 支持"  
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "完整指南讲述人 |Microsoft 支持"  
 [MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "使用放大镜使屏幕上的内容更易于查看|Microsoft 支持"  
 
 [AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "适用于 Web 网站的辅助功能见解|辅助功能见解"  

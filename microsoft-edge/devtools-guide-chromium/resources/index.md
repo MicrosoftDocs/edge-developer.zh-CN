@@ -90,7 +90,7 @@ ms.locfileid: "11519441"
     
     下面细目了上图中的不明显项。  
     
-    | 页面项 | 描述 |  
+    | 页面项 | 说明 |  
     |:--- |:--- |  
     | `top` | 主文档 [浏览上下文][MDNInlineFrame]。 |  
     | `airhorner.com` | 域。  嵌套在它下的所有资源都来自该域。  例如，文件的完整 URL `comlink.global.j` 可能是 `https://airhorner.com/scripts/comlink.global.js` 。 |  

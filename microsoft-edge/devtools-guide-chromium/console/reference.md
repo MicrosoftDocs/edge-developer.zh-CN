@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge DevTools 中控制台 UI 的每种功能和行为的全面参考。
+description: 针对开发人员工具中控制台 UI 的每种功能Microsoft Edge全面参考。
 title: 控制台参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -29,7 +29,7 @@ ms.locfileid: "11483263"
    limitations under the License.  -->
 # <a name="console-reference"></a>控制台参考  
 
-本文引用了与 Microsoft Edge DevTools 控制台相关的功能。  它假定你已熟悉使用控制台查看记录的消息并运行 JavaScript。  如果没有，请导航到开始在控制台中运行 [JavaScript][DevtoolsConsoleConsoleJavascript] 和 [开始在控制台中记录消息][DevtoolsConsoleConsoleLog]。  
+本文引用了与开发人员工具控制台Microsoft Edge相关的功能。  它假定你已熟悉使用控制台查看记录的消息并运行 JavaScript。  如果没有，请导航到开始在控制台中运行 [JavaScript][DevtoolsConsoleConsoleJavascript] 和 [开始在控制台中记录消息][DevtoolsConsoleConsoleLog]。  
 
 如果要查找对函数（如 ）的 API 引用，请 `console.log()` 导航到"[控制台 API 参考"。][DevToolsConsoleApi]  有关 `monitorEvents()` 等函数的参考，请导航到[控制台实用工具 API 参考][DevToolsConsoleUtilities]。  
 
@@ -73,7 +73,7 @@ ms.locfileid: "11483263"
 
 ### <a name="open-console-settings"></a>打开控制台设置  
 
-Choose the **Console Settings** \ (Console Settings ![ icon ](../media/settings-button-icon.msft.png) \) button.  
+Choose the **Console 设置**\ (Console 设置 ![ icon ](../media/settings-button-icon.msft.png) \) button.  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **控制台设置**  
@@ -104,11 +104,11 @@ Choose the **Console Settings** \ (Console Settings ![ icon ](../media/settings-
 
 ### <a name="turn-off-message-grouping"></a>关闭邮件分组  
 
-若要关闭控制台的默认邮件分组**行为**，请打开"控制台设置[](#open-console-settings)"，然后选中"类似组 **"旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。  
+若要关闭控制台的默认邮件分组**行为**，请打开控制台[设置并选中](#open-console-settings)类似组**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。  
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求  
 
-若要在每次发生时记录所有和请求到控制台，请打开控制台设置，然后选择 `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**旁边的复选框。 **** [](#open-console-settings)  
+若要在每次发生时将所有和请求记录到控制台，请打开控制台 `XMLHttpRequest` `Fetch` 设置，然后选择 Log **XMLHttpRequests**[旁边的](#open-console-settings)复选框。 ****  
 
 :::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="记录 XMLHttpRequest 和 Fetch 请求" lightbox="../media/console-xhr-fetch.msft.png":::
    记录 `XMLHttpRequest` 和 `Fetch` 请求  
@@ -128,11 +128,11 @@ Choose the **Console Settings** \ (Console Settings ![ icon ](../media/settings-
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息  
 
-加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时保留消息， [请打开控制台设置](#open-console-settings) ，然后选中"保留日志 **"旁边的复选框**。  
+加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保留消息，请[打开控制台设置](#open-console-settings)并选中"保留日志"旁边的**复选框**。  
 
 ### <a name="hide-network-messages"></a>隐藏网络消息  
 
-Microsoft Edge 的默认操作是，将网络消息记录到 **控制台**。  在下图中，选择的消息表示 的 HTTP 状态代码 `429` 。  
+用户的默认操作Microsoft Edge将网络消息记录到**控制台**。  在下图中，选择的消息表示 的 HTTP 状态代码 `429` 。  
 
 :::image type="complex" source="../media/console-show-network.msft.png" alt-text="控制台中的 429 消息" lightbox="../media/console-show-network.msft.png":::
    **控制台**中的 `429` 消息  
@@ -204,7 +204,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 ### <a name="filter-out-messages-from-different-contexts"></a>筛选出不同上下文的消息  
 
-假设您网页上有一个 (广告\) 广告。  广告嵌入在 中 `<iframe>` ，在控制台 中生成许多 **消息**。  由于广告在不同的[JavaScript](#choose-javascript-context)上下文中运行，因此隐藏消息的一个方法就是打开"控制台[](#open-console-settings)设置"，并选中"仅**所选上下文"旁边的复选框**。  
+假设您网页上有一个 (广告\) 广告。  广告嵌入在 中 `<iframe>` ，在控制台 中生成许多 **消息**。  由于广告在不同的[JavaScript](#choose-javascript-context)上下文中运行，因此隐藏消息的一个方法就是打开控制台设置选中"仅上下文["](#open-console-settings)旁边的**复选框**。  
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>筛选出与正则表达式模式不匹配的邮件  
 
@@ -235,7 +235,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
     
 ### <a name="turn-off-autocomplete-from-history"></a>从历史记录中关闭自动完成  
 
-键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开" [控制台](#open-console-settings) 设置"并删除"自动 **完成自历史记录** "复选框旁边的复选框。  
+键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开控制台[设置并删除](#open-console-settings)"自动**完成**自历史记录"复选框旁边的复选框。  
 
 > [!NOTE]
 > 在下图中，`document.querySelector('a')` 和 `document.querySelector('img')` 是之前评估的表达式。  

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
-description: 查看有助于评估网站辅助功能的工具和测试过程。
+description: 查看有助于评估网站的辅助功能的工具和测试过程。
 title: 辅助功能 - 测试
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -17,38 +17,38 @@ ms.locfileid: "11397879"
 ---
 # <a name="accessibility-testing"></a>辅助功能测试  
 
-辅助功能测试是一种可用性测试，用于验证您的网站是否受所有人员使用。 请查看 W3C [辅助功能](https://www.w3.org/wiki/Accessibility_testing) 测试页面，了解应何时进行测试、测试要求、应测试网站的人等。
+辅助功能测试是可用性测试的一种形式，用于验证你的网站是否受所有人员使用。 请查看 W3C[](https://www.w3.org/wiki/Accessibility_testing)辅助功能测试页，了解应何时进行测试、测试要求、应测试网站的人等。
 
-使用以下工具和测试创建程序评估您的网站的辅助功能：
+使用以下工具和测试创建程序评估网站辅助功能：
 
 #### [<a name="accessibility-evaluation-resources"></a>辅助功能评估资源](https://www.w3.org/WAI/eval/Overview.html)  
 
-辅助功能评估资源是 W3C 的多页资源，概述了评估网站辅助功能的不同方法。
+辅助功能评估资源是 W3C 的一个多页资源，概述了用于评估网站辅助功能的不同方法。
 
 #### [<a name="assistive-technology-compatibility-tests"></a>辅助技术兼容性测试](http://www.powermapper.com/tests)  
 
-显示不同内容类型和 (标准在 AT 和 AT 辅助技术（如屏幕阅读器) ）中的行为的测试结果。
+显示不同内容类型和标准在辅助技术（如屏幕阅读器 (AT) 的行为的测试结果。
 
-#### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>轻松检查 – 首次查看 Web 辅助功能](https://www.w3.org/WAI/eval/preliminary.html)  
+#### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>轻松检查 – Web 辅助功能的首次评审](https://www.w3.org/WAI/eval/preliminary.html)  
 
-一系列由一系列快速检查的，该检查可帮助你评估网页的辅助功能。
+由一系列由用户进行快速检查的，可帮助您评估网页的辅助功能。
 
 #### [<a name="how-to-meet-wcag-20"></a>如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)  
 
-有关 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求的快速参考 (成功) 和技术。
+快速参考 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求 (成功) 和技术。
 
 #### [<a name="html5accessibility"></a>HTML5Accessibility](https://html5accessibility.com)  
 
-此网站测试主要浏览器支持哪些新的 HTML5 功能。 
+此网站测试哪些新的 HTML5 功能可供主要浏览器访问。 
 
 #### [<a name="webhint"></a>webhint](https://webhint.io)  
 
-使用 [Webhint](https://webhint.io/) 检查过时库、安全改进、性能问题、辅助功能问题等。
+使用 [webhint](https://webhint.io/) 检查过时库、安全改进、性能问题、辅助功能问题等。
 
 #### [<a name="web-accessibility-checker"></a>Web 辅助功能检查器](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)  
 
-在Visual Studio Web 应用上执行辅助功能检查ASP.NET扩展。
+在Visual Studio Web 应用上执行辅助功能检查的 ASP.NET 扩展。
 
 #### [<a name="web-accessibility-evaluation-tools-list"></a>Web 辅助功能评估工具列表](https://www.w3.org/WAI/ER/tools/index.html)  
 
-可帮助确定网站是否满足辅助功能准则的 Web 辅助功能评估工具列表。
+可帮助确定网站是否满足辅助功能指南的 Web 辅助功能评估工具列表。

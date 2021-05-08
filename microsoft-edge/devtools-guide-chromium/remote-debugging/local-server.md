@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
 ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
@@ -31,7 +31,7 @@ ms.locfileid: "11461260"
 
 在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。  
 
-使用 USB 电缆和 Microsoft Edge DevTools，从开发计算机运行站点，然后在 Android 设备上查看站点。  
+使用 USB 电缆和 Microsoft Edge DevTools，从开发计算机运行网站，然后在 Android 设备上查看网站。  
 
 ### <a name="summary"></a>摘要  
 
@@ -62,7 +62,7 @@ ms.locfileid: "11461260"
    端口转发状态  
 :::image-end:::  
 
-若要查看内容，请打开 Android 设备上的 Microsoft Edge，然后转到在"设备端口"字段中 `localhost` **指定的端口** 。  例如，如果在 字段中输入 `5000` ，请访问 `localhost:5000` 。  
+若要查看内容，请打开Microsoft Edge Android 设备上的端口，然后转到在"设备端口"字段中 `localhost` **指定的**端口。  例如，如果在 字段中输入 `5000` ，请访问 `localhost:5000` 。  
 
 ## <a name="map-to-custom-local-domains"></a>映射到自定义本地域  
 
@@ -87,7 +87,7 @@ ms.locfileid: "11461260"
 
 接下来，你需要将 Android 设备配置为与代理服务器通信。  
 
-1.  在 Android 设备上，导航到"**设置**  >  **""WLAN"。**  
+1.  在 Android 设备上，导航到**设置**  >  **Wlan"。**  
 1.  长按当前连接到的网络的名称。  
     
     > [!NOTE]
@@ -109,7 +109,7 @@ ms.locfileid: "11461260"
 > [!TIP]
 > 若要恢复正常浏览，请记得在断开与开发计算机连接后在 Android 设备上还原代理设置。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

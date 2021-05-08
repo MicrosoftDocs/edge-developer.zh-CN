@@ -16,12 +16,12 @@ ms.locfileid: "11475209"
 ---
 # <a name="native-messaging"></a>本机消息传递  
 
-扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在 Microsoft Edge 中，与任何其他扩展类似。  但是，Microsoft Edge 不会安装或管理本机应用。  
+扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge任何其他扩展类似。  但是，本机应用不是由用户安装或Microsoft Edge。  
 
 若要获取扩展和本机应用主机，你有两个分发模型。  
 
 *   将扩展和主机打包在一起。  当用户安装程序包时，将同时安装扩展和主机。  
-*   使用 [Microsoft Edge][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]加载项存储安装扩展，扩展会提示用户安装主机。  
+*   使用加载项Microsoft Edge安装扩展[][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]，扩展会提示用户安装主机。  
 
 若要创建扩展以通过本机应用主机发送和接收消息，请完成以下步骤。  
 
@@ -116,10 +116,10 @@ ms.locfileid: "11475209"
       
       指定本机消息传递主机二进制文件的路径。  
       
-      *   在 Windows 设备上，可以使用包含清单文件的目录的相对路径。  
+      *   在Windows设备上，可以使用包含清单文件的目录的相对路径。  
       *   在 macOS 和 Linux 上，路径必须为绝对路径。  
           
-      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 \ (Windows\) ，如果参数设置为 ，则使用当前目录 `C:\App\nm_host.exe` \ (`C:\App\` \) 启动二进制文件。  
+      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 \ (Windows\) ，如果参数设置为 ，则使用当前目录 `C:\App\nm_host.exe` \ (\) 启动二 `C:\App\` 进制文件。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -131,7 +131,7 @@ ms.locfileid: "11475209"
    :::column span="3":::
       ---  
       
-      指定用于与本机消息传递主机通信的接口的类型。  该值指示 Microsoft Edge `stdin` 使用和 `stdout` 与主机通信。  
+      指定用于与本机消息传递主机通信的接口的类型。  该值指示Microsoft Edge `stdin` 与主机 `stdout` 通信。  
       唯一可接受的值为 `stdio` 。  
    :::column-end:::
 :::row-end:::  
@@ -161,7 +161,7 @@ ms.locfileid: "11475209"
 1.  导航到 `edge://extensions` 页面并验证扩展是否列出。  
 1.  从页面上的扩展 `microsoft_catalog_extension_id` (\ (ID\) 复制该密钥。  
     
-准备好将扩展分发给用户后，将扩展发布到 Microsoft Edge 加载项应用商店。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。  
+准备好将扩展分发给用户时，将扩展发布到Microsoft Edge加载项商店。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。  
 
 ## <a name="step-3---copy-the-native-messaging-host-manifest-file-to-your-system"></a>步骤 3 - 将本机消息传递主机清单文件复制到系统中  
 
@@ -204,7 +204,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.m
         
     1.  运行 `.reg` 文件。  
         
-Microsoft Edge 查询后 `HKEY_CURRENT_USER` 跟 的根键 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果 Microsoft Edge 的注册表项没有主机清单的位置，Chromium 和 Chrome 注册表位置将用作回退选项。  如果 Microsoft Edge 在以前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
+Microsoft Edge查询后跟 `HKEY_CURRENT_USER` 的根键 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果注册表项的Microsoft Edge没有主机清单的位置，Chromium Chrome 注册表位置将用作回退选项。  如果Microsoft Edge在先前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
 
 以下列表是注册表位置的搜索顺序。  
 
@@ -225,7 +225,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```  
  
 > [!NOTE] 
-> 如果在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须在主机清单文件的 中添加与这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`  
+> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须添加与主机清单文件的 中的这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`  
 
 ### [<a name="macos"></a>macOS](#tab/macos/)  
 

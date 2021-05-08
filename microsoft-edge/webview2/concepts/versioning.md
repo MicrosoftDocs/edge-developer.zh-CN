@@ -1,19 +1,19 @@
 ---
-description: 用于 Microsoft Edge WebView2 的版本模型
+description: 用于 WebView2 Microsoft Edge模型
 title: 了解 WebView2 SDK 版本
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: b292f59e264293a958eb619d04b751203cb517ac
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 18ae2b8feb9310798f78e67cbb767d0642d83d24
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461176"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535711"
 ---
 # <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本  
 
@@ -21,7 +21,7 @@ ms.locfileid: "11461176"
 
 ## <a name="release-and-prerelease-package"></a>发布和预发布包  
 
-WebView2 NuGet 程序包包含发布和预发布包。  
+WebView2 NuGet包同时包含发布和预发布包。  
 
 发布 **包与** 向前兼容，并包含以下组件。  
 
@@ -51,11 +51,11 @@ WebView2 应用要求用户安装 [WebView2 运行时][MicrosoftDeveloperEdgeWeb
 
 如果 WebView2 运行时更新已停止，请确保了解应用所需的 [WebView2 运行时][MicrosoftDeveloperEdgeWebview2] 的最低版本。  请考虑以下两项：  
 
-1.  若要成功加载 webview2 实例，需要 SDK 的最低版本，可以在要加载的最低 Microsoft [][Webview2Releasenotes] Edge 版本下的 WebView2**发行说明找到**。  SDK 需要加载的最低版本仅在 Web 平台发生重大变化时更改。  例如，对于 SDK [版本 1.0.622.22，][Webview2Releasenotes1062222]必须安装具有内部版本号或更新版本的 [WebView2 运行时][MicrosoftDeveloperEdgeWebview2] 或非稳定 [Microsoft Edge][MicrosoftedgeinsiderDownload] 通道 `86.0.616.0` 。   
-1.  支持应用中的接口和 API 所需的 NuGet 程序包的最低必需版本位于完全 API 兼容性下的 WebView2 [][Webview2Releasenotes]**发行说明中**。  新接口和 API 会定期添加到 WebView2。  捆绑在 SDK 中的 API 和接口需要不同版本的 WebView2 运行时，因为 API 和接口会在不同的时间添加到 SDK 中。  所需的 WebView2 运行时版本与首次引入 API 的 SDK 版本的内部版本号（即第三个数字）匹配。  例如，在 SDK 版本 [1.0.622.22][Webview2Releasenotes1062222] 中添加的新 API 或接口需要 WebView2 运行时版本 `86.0.622.0` 或更高版本。  在稍后的 SDK 版本中添加的 API 或接口需要与 SDK 版本号相同的 WebView2 运行时。  若要帮助你确定 WebView2 运行时版本是否支持接口或 API，请导航到确定 [WebView2 运行时要求](#determine-webview2-runtime-requirement)。  
+1.  若要成功加载 webview2 实例，需要 SDK 的最低版本，可以在要加载的最低 Microsoft Edge[][Webview2ReleaseNotes]版本下的 WebView2 发行说明**找到**。  SDK 需要加载的最低版本仅在 Web 平台发生重大变化时更改。  例如，对于 SDK[版本 1.0.622.22，][Webview2ReleaseNotes1062222]必须安装内部版本号或更高版本的[WebView2][MicrosoftDeveloperEdgeWebview2]运行时或非稳定[Microsoft Edge][MicrosoftedgeinsiderDownload]通道。 `86.0.616.0`   
+1.  支持应用中的接口和 API 所需的最低 NuGet 程序包版本位于完全 API 兼容性下的[WebView2][Webview2ReleaseNotes]**发行说明中**。  新接口和 API 会定期添加到 WebView2。  捆绑在 SDK 中的 API 和接口需要不同版本的 WebView2 运行时，因为 API 和接口会在不同的时间添加到 SDK 中。  所需的 WebView2 运行时版本与首次引入 API 的 SDK 版本的内部版本号（即第三个数字）匹配。  例如，在 SDK 版本 [1.0.622.22][Webview2ReleaseNotes1062222] 中添加的新 API 或接口需要 WebView2 运行时版本 `86.0.622.0` 或更高版本。  在稍后的 SDK 版本中添加的 API 或接口需要与 SDK 版本号相同的 WebView2 运行时。  若要帮助你确定 WebView2 运行时版本是否支持接口或 API，请导航到确定 [WebView2 运行时要求](#determine-webview2-runtime-requirement)。  
     
 > [!IMPORTANT]
-> 开发 [Evergreen WebView2][Webview2ConceptsDistributionEvergreenDistributionMode]应用时，定期针对最新版本的 WebView2 运行时和非稳定 Microsoft Edge 渠道测试你的应用。  由于 Web 平台在不断演变，因此定期测试是确保应用按预期运行的最佳方法。  
+> 在开发[Evergreen WebView2][Webview2ConceptsDistributionEvergreenDistributionMode]应用时，定期针对最新版本的 WebView2 运行时和非稳定 Microsoft Edge测试你的应用。  由于 Web 平台在不断演变，因此定期测试是确保应用按预期运行的最佳方法。  
 
 ### <a name="determine-webview2-runtime-requirement"></a>确定 WebView2 运行时要求  
 
@@ -79,17 +79,17 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->  
 
 [Webview2ConceptsDistributionEvergreenDistributionMode]: ./distribution.md#evergreen-distribution-mode "常青分发模式 - 使用 WebView2 分配|Microsoft Docs"  
-[Webview2Releasenotes]: ../releasenotes.md "WebView2 SDK |Microsoft Docs"  
-[Webview2Releasenotes1062222]: ../releasenotes.md#1062222 "1.0.622.22 - WebView2 SDK |Microsoft Docs"   
+[Webview2ReleaseNotes]: ../release-notes.md "WebView2 SDK |Microsoft Docs"  
+[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - WebView2 SDK |Microsoft Docs"   
 
-[DeployedgeChannels]: /deployedge/microsoft-edge-channels "Microsoft Edge 频道概述|Microsoft Docs"  
+[DeployedgeChannels]: /deployedge/microsoft-edge-channels "频道Microsoft Edge概述|Microsoft Docs"  
 
 [DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core 命名空间|Microsoft Docs"  
 [DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf 命名空间|Microsoft Docs"  
 [DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms 命名空间|Microsoft Docs"  
 [ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ 参考|Microsoft Docs"  
 
-[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 |Microsoft 开发人员"  
+[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft EdgeWebView2 |Microsoft 开发人员"  
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
 [GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCppL622]: https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622 "第 622 行 - AppWindow.cpp - MicrosoftEdge/WebView2Samples |GitHub"  

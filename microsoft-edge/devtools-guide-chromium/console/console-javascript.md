@@ -1,5 +1,5 @@
 ---
-description: 将 Microsoft Edge 开发人员工具内的控制台工具用作 JavaScript 环境的简介。
+description: 将控制台工具用作 JavaScript Microsoft Edge开发人员工具简介。
 title: 作为 JavaScript 环境的控制台
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -79,7 +79,7 @@ ms.locfileid: "11483350"
 
 除了在你自己的脚本中， **控制台** 还 [支持顶级 await][GithubTc39ProposalTopLevelAwait] 在它内运行任意异步 JavaScript。  例如，使用 API 时 `fetch` 无需使用 `await` async 函数包装语句。  
 
-若要获取 Microsoft Edge 开发人员工具 for [Visual Studio GitHub][GithubMicrosoftVscodeEdgeDevtools] 存储库中存档的最后 50 个问题，请完成以下操作。  
+若要获取 Microsoft Edge 开发人员工具 Visual Studio Code [GitHub][GithubMicrosoftVscodeEdgeDevtools]存储库上归档的最后 50 个问题，请完成以下操作。  
 
 1.  打开“**控制台**”。  
 1.  复制并粘贴以下代码段，获取包含 10 个条目的对象。  
@@ -110,7 +110,7 @@ copy(await (await fetch(
 
 使用 **控制台** 作为实践 JavaScript 功能和进行一些快速计算很好的方法。  真正的功能是，您有权访问 [window][MdnDocsWebApiWindow] 对象。  你可以 [与控制台 中的 DOM 交互][DevtoolsConsoleConsoleDomInteraction]。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

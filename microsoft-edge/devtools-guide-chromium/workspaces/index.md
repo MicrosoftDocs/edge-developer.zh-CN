@@ -57,7 +57,7 @@ ms.locfileid: "11519420"
 
 工作区已知无法与以下框架一起工作。  
 
-*   创建 React 应用  
+*   创建React应用  
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
@@ -108,7 +108,7 @@ ms.locfileid: "11519420"
        :::column-end:::
     :::row-end:::  
     
-1.  在 Microsoft Edge 中打开一个选项卡，然后导航到本地托管的站点版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号][WikiPortURLs] 可能不同。  
+1.  在网站中Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号][WikiPortURLs] 可能不同。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        演示  
@@ -287,7 +287,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "源地图简介|Treehouse 博客"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "源源地图 |Treehouse 博客"  
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 

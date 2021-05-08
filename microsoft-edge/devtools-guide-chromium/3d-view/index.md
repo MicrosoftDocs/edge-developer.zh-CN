@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: bd91939a19f02a426834a85ef92eca388f8f1eda
 ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
 ms.translationtype: MT
@@ -124,18 +124,18 @@ ms.locfileid: "11203968"
 ## <a name="composited-layers"></a>复合层
 
 :::image type="complex" source="../media/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../media/experiments-layers.msft.png":::
-   **复合层**窗格
+   **复合层** 窗格
 :::image-end:::  
 
-The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  你仍然可以访问每个图层的详细信息，并且具有慢 **滚动通道** 和 **绘制**。
+The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  你仍然可以访问每个图层的详细信息，并拥有慢速**滚动****画图。**
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
-Microsoft Edge Devtools 团队正在处理 UI，并基于你的反馈向 3D 视图添加更多功能。  发送反馈以帮助改进 Microsoft Edge DevTools。  在**** DevTools 中选择"发送反馈"图标或在 Windows/Linux 或 macOS 上选择，然后输入你为 `Alt` + `Shift` + `I` `Option` + `Shift` + `I` DevTools 提供的任何反馈或功能请求。  
+开发人员Microsoft Edge团队正在处理 UI，并基于你的反馈向 3D 视图添加更多功能。  发送反馈以帮助改进开发人员Microsoft Edge开发工具。  在**** DevTools 中选择"发送反馈"图标，或在 Windows/Linux 或 macOS 上选择，然后输入你的 `Alt` + `Shift` + `I` `Option` + `Shift` + `I` DevTools 的任何反馈或功能请求。  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge DevTools 3D 视图 - MicrosoftEdge/DevToolsSamples |GitHub"  
+[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft EdgeDevTools 3D 视图 - MicrosoftEdge/DevToolsSamples |GitHub"  
 
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "文档对象模型 (DOM) |MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index |MDN"  

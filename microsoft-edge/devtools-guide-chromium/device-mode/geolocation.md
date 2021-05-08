@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 8f6ad09b2f8db110f6743aae32e16cc9b1185400
 ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
@@ -34,7 +34,7 @@ ms.locfileid: "11398999"
 
 <!--todo: add link to user location section when available -->  
 
-如果要生成根据用户所在的位置更改的 UI，你可能希望确保网站在世界各地的不同位置正常运行。  若要替代 Microsoft Edge DevTools 中的地理位置，请完成以下操作。  
+如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要替代 Microsoft Edge DevTools 中的地理位置，请完成以下操作。  
 
 1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
@@ -42,8 +42,8 @@ ms.locfileid: "11398999"
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `sensors` ，选择 **"显示传感器"，** 然后选择 `Enter` 。  传感器 **工具** 在 DevTools 窗口底部打开。  
-1.  从"**** 地理位置"列表中选择预设城市之一，如"自定义位置"以输入自定义经度和纬度坐标，或选择"位置不可用"以显示用户位置不可用时网站的行为方式。 `Tokyo` **** ****  
+1.  键入 `sensors` ，选择 **显示传感器**，然后选择 `Enter` 。  传感器 **工具** 将在 DevTools 窗口底部打开。  
+1.  从"**** 地理位置"列表中选择预设城市之一（如 ），或选择"自定义位置"以输入自定义经度和纬度坐标，或选择"位置不可用"以显示当用户的位置不可用时网站的行为方式。 `Tokyo` **** ****  
     
     :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="从地理位置列表中选择东京" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
        从 `Tokyo` "**地理位置"列表中选择**  

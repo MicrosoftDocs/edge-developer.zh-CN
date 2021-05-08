@@ -2,16 +2,16 @@
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则  
 
-此项目已采用 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct)。  
-有关详细信息，请参阅行为准则 [常见问题解答](https://opensource.microsoft.com/codeofconduct/faq) 或 [opencode@microsoft.com任何其他问题](mailto:opencode@microsoft.com) 或意见。  
+此项目采用 Microsoft [开放源代码行为准则](https://opensource.microsoft.com/codeofconduct)。  
+有关详细信息，请参阅行为准则 [常见问题解答](https://opensource.microsoft.com/codeofconduct/faq) ， [或](mailto:opencode@microsoft.com) opencode@microsoft.com 问题或意见进行联系。  
 
 ## <a name="legal-notices"></a>法律声明  
 
-Microsoft 和任何参与者在 Creative [Commons Attribution 4.0 国际](https://creativecommons.org/licenses/by/4.0/legalcode)公共许可证下授予你 Microsoft 文档和此存储库中其他内容的许可证，[](./LICENSE)导航到许可证文件，并授予你 MIT 许可证下存储库中任何代码的[](https://opensource.org/licenses/MIT)许可证，导航到[LICENSE-CODE](./LICENSE-CODE)文件。  
+Microsoft 和任何参与者在[Creative Commons Attribution 4.0 国际](https://creativecommons.org/licenses/by/4.0/legalcode)公共许可证下授予你 Microsoft 文档和此存储库中其他内容的许可证，导航到[许可证](./LICENSE)文件，并授予你 MIT 许可证下存储库中任何代码的[](https://opensource.org/licenses/MIT)许可证，导航到[LICENSE-CODE](./LICENSE-CODE)文件。  
 
 本文档中引用的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务是 Microsoft 在美国和/或其他国际/地区的商标或注册商标。  
 此项目的许可证并未授予你使用任何 Microsoft 名称、徽标或商标的权利。  
-可以在以下网站找到 Microsoft 一般商标指南 [https://go.microsoft.com/fwlink/?LinkID=254653](https://go.microsoft.com/fwlink/?LinkID=254653) 。  
+可以在 上找到 Microsoft 一般商标准则 [https://go.microsoft.com/fwlink/?LinkID=254653](https://go.microsoft.com/fwlink/?LinkID=254653) 。  
 
 隐私信息位于 [https://privacy.microsoft.com](https://privacy.microsoft.com) 。  
 
@@ -19,40 +19,40 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 
 ## <a name="contributing"></a>参与  
 
-这是托管在 的 Microsoft **Edge** 文档的存储库 [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/index) 。  
+这是托管在 的Microsoft Edge**文档**存储库 [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/index) 。  
 
-如果你想要包含新的覆盖范围或提供反馈，请考虑 [提供](./CONTRIBUTING.md)。  您可以编辑现有内容、添加新内容或创建新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  Microsoft Edge 团队查看您的建议，并努力将建议纳入文档。  
+如果你想要包含新的覆盖范围或提供反馈，请考虑 [提供](./CONTRIBUTING.md)。  您可以编辑现有内容、添加新内容或创建新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  工作组Microsoft Edge查看您的建议，并努力将这些建议纳入文档。  
 
-查找" [状态"页](https://developer.microsoft.com/microsoft-edge/status) 的数据，  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) 位置为：  该页面提供了 Microsoft Edge 中 Web 平台功能的最新实现状态 `Status` 和未来计划。
+查找"状态" [页的数据](https://developer.microsoft.com/microsoft-edge/status) ，位置为  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) ：。  此页面 `Status` 提供了 Web 平台功能的最新实现状态和未来Microsoft Edge。
 
 ### <a name="conventions"></a>约定  
 
-*   添加页面时，您必须在页面中添加一个 [toc.md项，](./microsoft-edge/toc.yml) 这样它就会出现。
-*   目录可能包含 `readme.md` 更多目录
-*   文件夹/目录名称是短划线分隔的 \ (例如 `f12-tools` ，\) 和小写。  目录用于网站的 `docs.microsoft.com` URL。  避免使用下划线、PascalCase 或 camelCase。  
+*   添加页面时，必须在页面中添加一个 [toc.md，它](./microsoft-edge/toc.yml) 将显示在页面中。
+*   目录可能包含更多目录或 `readme.md` s
+*   文件夹/目录名称是短划线分隔的 \ (例如 `f12-tools` ，\) 小写。  目录用于网站的 `docs.microsoft.com` URL。  避免使用下划线、PascalCase 或 camelCase。  
 
 ### <a name="other-text-elements"></a>其他文本元素  
 
 这些其他文本元素具有可用的样式：  
 
-*   未排序列表  
+*   无序列表  
 *   具有常规项目符号  
     *   您还可以嵌套项目符号。  
     *   项目符号列表应具有多个条目。  
 *   标准排列 
 
 1.  已排序列表。  
-1.  使用常规的西文样式编号。  
+1.  使用常规的西文编号。  
 1.  应仅在列表确实具有顺序时使用。  
 
 ---  
 
 水平规则可用。  请慎用水平规则来减少混乱。  
-避免将水平规则与标题标记一同使用;一些标题已使用线条样式作为视觉层次结构。  
+避免将水平规则与标题标记一同使用;一些标题已对可视化层次结构使用线条样式。  
 
 ### <a name="displaying-code"></a>显示代码  
 
-可以使用内联 `code` Markdown 语法 \ (backticks\) 。  
+你可以将内联 `code` Markdown 语法 \ (backticks\) 。  
 
 或者，你可以显示代码块。  以下代码段是 css 示例。  
 
@@ -64,19 +64,19 @@ body {
 
 ### <a name="tables"></a>表  
 
-| 可以 | 使用标头 | 表上 |  
+| 可以 | 使用标头 | 表上的 |  
 |:--- |:--- |:--- |  
 | 左对齐 | 除非# | 456 |  
 | 文本值 | 更多文本 | $0.00 |  
 
 ### <a name="notes"></a>注释  
 
-请谨慎使用备注。  这些块旨在突出显示"请勿错过"信息。  
+请慎用笔记。  这些块旨在突出显示"不要错过"信息。  
 
-目前已设置四个不同版本的注释样式。  
+四个不同的笔记版本当前已设置样式。  
 
 *   注意  
-*   警告  
+*   WARNING  
 *   提示  
 *   重要提示  
 
@@ -104,7 +104,7 @@ body {
 
 ![笔记模式](./media/notes.png)
 
-对于多行块注释，在每个注释行的前面使用大于 \ (\) 的字符，如以下示例 `>` 所示。  
+对于多行块注释，在每个注释行前面使用大于 `>` \ (\) 字符，如以下示例所示。  
 
 ```md
 > This is a line in a blockquote.  
@@ -114,7 +114,7 @@ body {
 
 ### <a name="images"></a>Images  
 
-图像应存储在目录中，并且使用图像脚本 `media` 的相对路径进行引用。  
+图像应存储在目录中，并且使用图像脚本 `media` 通过相对路径引用。  
 
 <!--  `![Note patterns](media/notes.png)`  -->  
 

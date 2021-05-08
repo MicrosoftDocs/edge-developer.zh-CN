@@ -1,12 +1,12 @@
 ---
-description: 开始使用 Microsoft Edge 开发人员工具在本机 Android 应用中远程调试 WebView。
-title: 远程调试 Android WebViews 入门
+description: 使用开发人员工具在本机 Android 应用中开始使用远程调试 Microsoft Edge WebView。
+title: Android WebViews 远程调试入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 4d389473673791d91c38e252c919378c4725db6b
 ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.locfileid: "11461492"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="get-started-with-remote-debugging-android-webviews"></a>远程调试 Android WebViews 入门  
+# <a name="get-started-with-remote-debugging-android-webviews"></a>Android WebViews 远程调试入门  
 
-使用 Microsoft Edge 开发人员工具在本机 Android 应用中调试 Android WebView。  
+使用开发人员工具在本机 Android 应用中Microsoft Edge Android WebView。  
 
 在 Android 4.4 \ (KitKat\) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。  
 
 ### <a name="summary"></a>摘要  
 
-*   在本机 Android 应用中打开 Android WebView 调试;在 Microsoft Edge DevTools 中调试 Android WebView。  
+*   在本机 Android 应用中打开 Android WebView 调试;在 DevTools Microsoft Edge Android WebViews。  
 *   若要显示启用调试的 Android WebView 列表，请导航到 `edge://inspect` 。  
 *   使用通过远程调试调试网页的相同方式调试 Android [WebView。][RemoteDebuggingGettingStarted]  
 
@@ -75,20 +75,20 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 The gray graphics listed with the Android WebView represent its size and position relative to the screen of the device.  If your Android WebViews have titles set, the titles are listed as well.  
 -->  
 
-## <a name="troubleshoot"></a>疑难解答  
+## <a name="troubleshoot"></a>排除故障  
 
 你的 Android WebView 不会显示在 `edge://inspect` 页面上？  
 
 *   验证已针对你的应用打开 Android WebView 调试。  
 *   在你的设备上，使用你想要调试的 Android WebView 打开应用。  然后，刷新 `edge://inspect` 。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: ./index.md "远程调试 Android 设备|Microsoft Docs"  
+[RemoteDebuggingGettingStarted]: ./index.md "入门远程调试 Android 设备|Microsoft Docs"  
 
 [AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled]: https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean) "setWebContentsDebuggingEnabled - WebView |Android 开发人员"  
 

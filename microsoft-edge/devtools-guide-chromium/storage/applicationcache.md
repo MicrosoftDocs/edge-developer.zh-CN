@@ -1,6 +1,6 @@
 ---
-description: 如何从 Microsoft Edge DevTools 的应用程序面板查看应用程序缓存数据。
-title: 使用 Microsoft Edge DevTools 查看应用程序缓存数据
+description: 如何从开发人员工具的应用程序面板中查看Microsoft Edge缓存数据。
+title: 使用 DevTools Microsoft Edge应用程序缓存数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/11/2020
@@ -28,12 +28,12 @@ ms.locfileid: "11519140"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看应用程序缓存数据  
+# <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge应用程序缓存数据  
 
 > [!WARNING]
 > 应用程序缓存 API [正在从 Web 平台中删除][HTMLStandardOfflineWebApplications]。  
 
-本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 检查 [应用程序缓存][MDNWebAPIsWindowApplicationCache] 资源。  
+本指南演示如何使用[DevTools Microsoft Edge检查][MicrosoftEdgeDevTools][应用程序缓存][MDNWebAPIsWindowApplicationCache]资源。  
 
 ## <a name="view-application-cache-data"></a>查看应用程序缓存数据  
 

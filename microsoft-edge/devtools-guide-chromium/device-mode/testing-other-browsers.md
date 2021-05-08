@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
 ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
@@ -129,7 +129,7 @@ Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 使您能够通过 Virtual
 *   [使用 Commercial (Labs) ][SauceLabs] 可以在仿真器内运行单元测试，这可能非常有用，可用于编写通过网站的流脚本，并随后在各种设备上观看有关此内容的视频录制。  您还可以对网站执行手动测试。  
 *   [商业 (设备) ][AppExperience] 不使用仿真器，而是使用你可以远程控制的真实设备。  如果你需要在特定设备上重现问题，并且可能未使用之前指南中的任一选项显示 Bug，这将非常有用。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

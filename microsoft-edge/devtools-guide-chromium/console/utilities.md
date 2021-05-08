@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge DevTools 控制台中提供的便利命令参考。
+description: 开发人员工具控制台中提供的便利Microsoft Edge引用。
 title: 控制台实用工具 API 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: c6a0356bd590809f9164aa62fd42156f901cef0f
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -37,7 +37,7 @@ ms.locfileid: "11483280"
 *   监视 DOM 事件  
     
 > [!WARNING]
-> 以下命令仅适用于 Microsoft Edge DevTools **控制台**。  如果从脚本运行，则命令不起作用。  
+> 以下命令仅适用于开发人员Microsoft Edge**控制台**。  如果从脚本运行，则命令不起作用。  
 
 有关 和 方法以及方法其余部分的信息， `console.log()` `console.error()` `console.*` 请导航到"控制台 API[参考"。][DevToolsConsoleApi]  
 
@@ -297,7 +297,7 @@ debug(method)
 ```  
 
 >[!NOTE]
-> [Chromium 问题#1050237][CR1050237]函数跟踪 `debug()` Bug。  如果遇到问题，请尝试改为 [使用断][DevtoolsJavascriptBreakpoints] 点。  
+> Chromium[跟踪#1050237][CR1050237] Bug 时出现 `debug()` 的问题。  如果遇到问题，请尝试改为 [使用断][DevtoolsJavascriptBreakpoints] 点。  
 
 请求指定方法时，调试程序在 Sources 工具的 方法内调用**和中断。**  它允许你逐步调试代码。  
 
@@ -313,7 +313,7 @@ debug("debug");
 
 用于 `undebug(method)` 停止方法上的中断，或使用 UI 关闭所有断点。  
 
-有关断点详细信息，请导航到如何使用 [Microsoft Edge DevTools][DevtoolsJavascriptBreakpoints]中的断点暂停代码。  
+有关断点详细信息，请导航到如何在[DevTools][DevtoolsJavascriptBreakpoints]中暂停包含断Microsoft Edge代码。  
 
 ---  
 
@@ -760,7 +760,7 @@ values(object);
 
 ---  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

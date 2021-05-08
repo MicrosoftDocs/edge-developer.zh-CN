@@ -19,8 +19,8 @@ ms.locfileid: "11408283"
 " **设置"** 中的" [快捷方式"][DevToolsCustomizeSettings] 页提供了 [DevTools][DevToolsShortcuts] 中的键盘快捷方式列表，以及自定义 [快捷方式的功能](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code)。  若要导航到 **"快捷方式"** 页，请完成以下步骤。  
 
 1.  [打开 DevTools][DevtoolsOpenMain]。  
-1.  打开 [设置][DevToolsCustomizeSettings]。
-    *   选择 `Shift` + `?` 。  
+1.  打开“[设置][DevToolsCustomizeSettings]”。
+    *   选择 `Shift`+`?`。  
 1.  导航到 **"快捷方式"** 页。  
     
     :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text=""设置"中的"快捷方式"页" lightbox="../media/settings-shortcuts.msft.png":::
@@ -59,7 +59,7 @@ ms.locfileid: "11408283"
        选择要分配给该操作的密钥  
     :::image-end:::  
     
-1.  若要保存新的键盘快捷方式，请选择选中标记 \ (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) 图标。
+1.  若要保存新的键盘快捷方式，请选择选中标记 \ (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)）图标。
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="选择选中标记图标以保存新的键盘快捷方式" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        选择选中标记图标以保存新的键盘快捷方式  
@@ -78,7 +78,7 @@ ms.locfileid: "11408283"
 
 [DevToolsCustomizeSettings]: ./index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsOpenMain]: ../open/index.md "打开 Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Microsoft Visual Studio Code"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Windows 键盘的键盘快捷方式|Microsoft Visual Studio Code"  

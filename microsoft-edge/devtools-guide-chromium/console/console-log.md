@@ -1,12 +1,12 @@
 ---
-description: 如何在 Microsoft Edge DevTools 控制台中记录消息并运行 JavaScript。
+description: 如何在开发人员工具控制台中记录Microsoft Edge JavaScript。
 title: 在控制台工具中记录消息
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: d48a48de7b261a628ac99f58680deb119268a980
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -207,7 +207,7 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 
 您可能会尝试将日志方法用作调试网页的主要方式，因为日志方法易于使用。  请考虑任何请求 `console.log()` 的结果。  Live 产品不应使用用于调试的任何日志。  它可能会向用户显示内部信息。  控制台中创建的噪音 **非常** 强烈。  当您使用 [断点调试][DevtoolsJavascriptBreakpoints] 或 [Live Expressions][DevtoolsConsoleLiveExpressions]时，您可能会发现您的工作流更有效，并且您获得更好的结果。  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

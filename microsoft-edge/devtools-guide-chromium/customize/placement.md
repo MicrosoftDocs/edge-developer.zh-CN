@@ -1,6 +1,6 @@
 ---
 description: 如何将 Microsoft Edge DevTools 移动到视区底部或左侧或单独的窗口。
-title: '将 Microsoft Edge DevTools (Undock，扩展坞更改为底部，将扩展坞更改为左侧) '
+title: '将Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
@@ -28,7 +28,7 @@ ms.locfileid: "11519154"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>将 Microsoft Edge DevTools (Undock，扩展坞更改为底部，将扩展坞更改为左侧)   
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>将Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧)   
 
 默认情况下，DevTools 固定在视口窗口 (右侧) 。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
 
@@ -86,7 +86,7 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
     
 ## <a name="change-placement-from-the-command-menu"></a>从命令菜单更改位置  
 
-1.  [在 Windows/Linux][DevtoolsCommandMenu]或 macOS 上选择 ， `Shift` + `Ctrl` + `P` 打开 `Command` + `Shift` + `P` 命令菜单。  
+1.  [打开命令菜单][DevtoolsCommandMenu]，选择 `Shift` + `Ctrl` + `P` "Windows/Linux"或 `Command` + `Shift` + `P` macOS。  
 1.  在 `>` 字符后输入 `dock` ，然后选择以下命令之一：  
     
     *  **扩展坞到底部**

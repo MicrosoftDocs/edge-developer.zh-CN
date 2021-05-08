@@ -31,7 +31,7 @@ ms.locfileid: "11461502"
 
 若要使用大部分 `chrome.*` API，扩展必须在清单 `permissions` 中声明 。  您可以使用下表中的权限字符串声明权限，或使用模式来匹配类似的字符串。  如果扩展受到恶意软件的攻击，权限有助于限制扩展。  在安装使用权限警告的扩展之前，可能会向用户显示某些权限。  
 
-如果 API 要求你在清单中声明权限，请查看该 API 的文档以了解所需的权限。  例如，"存储 API"页描述如何声明 `storage` 权限。  
+如果 API 要求你在清单中声明权限，请查看该 API 的文档以了解所需的权限。  例如，存储 API 页面介绍了如何声明 `storage` 权限。  
 
 以下代码段概述了如何在清单文件中声明权限。  
 
@@ -51,7 +51,7 @@ ms.locfileid: "11461502"
 |:--- |:--- |  
 | `activeTab` | 请求根据规范向扩展授予 `activeTab` 权限。 |  
 | `alarms` | 授予对 API 的扩展 `chrome.alarms` 访问权限。 |  
-| `background` | 使 Microsoft Edge 提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge 将在用户登录到用户计算机后以及用户启动 Microsoft Edge 之前以不明显方式 `background` 运行。  该权限还使 Microsoft Edge 继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |  
+| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  当任何安装的扩展具有权限时，Microsoft Edge在用户登录到用户计算机时，以及用户启动 Microsoft Edge 之前，将以不明显方式 `background` Microsoft Edge。  权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |  
 | `bookmarks` | 授予对 API 的扩展 `chrome.bookmarks` 访问权限。 |  
 | `browsingData` | 授予对 API 的扩展 `chrome.browsingData` 访问权限。 |  
 | `certificateProvider` | 授予对 API 的扩展 `chrome.certificateProvider` 访问权限。 |  

@@ -1,12 +1,12 @@
 ---
 description: CSS 网格调试功能、使用网络控制台编辑和重播请求等。
-title: 'Microsoft Edge 85 (DevTools 中的新增) '
+title: 'DevTools (Microsoft Edge 85) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
+keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.openlocfilehash: 5bd013fae617e9759aa91949acccf936d85f7160
 ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
@@ -27,11 +27,11 @@ ms.locfileid: "11514359"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="whats-new-in-devtools-microsoft-edge-85"></a>Microsoft Edge 85 (开发人员工具中的新增)   
+# <a name="whats-new-in-devtools-microsoft-edge-85"></a>DevTools 85 (Microsoft Edge中的新增)   
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告  
 
-以下各节列出了你可能错过的 Microsoft Edge DevTools 团队中的通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最好的功能，请下载 [Microsoft Edge][MicrosoftEdgePreviewChannels] 预览频道，并按照 Twitter 上的 Microsoft [Edge DevTools 团队进行跟踪][EdgeDevToolsTwitterAccount]。  
+以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览][MicrosoftEdgePreviewChannels]频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队。][EdgeDevToolsTwitterAccount]  
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能  
 
@@ -39,7 +39,7 @@ ms.locfileid: "11514359"
    试验功能  
 :::image-end:::  
 
-Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，网格工具的更多改进即将推出。  
+开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，以将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，网格工具的更多改进即将推出。  
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS 网格调试功能
@@ -50,7 +50,7 @@ Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和 Chromium 社�
 > 
 > 若要使用示例试用实验，请导航到 [CSS 网格规划器示例][CodepenRachelweilYzwBzKM]。  
 
-Chromium [问题#1047356][CR1047356]  
+Chromium问题[#1047356][CR1047356]  
 
 ### <a name="edit-and-replay-requests-with-the-network-console"></a>使用网络控制台编辑和重播请求  
 
@@ -80,7 +80,7 @@ Chromium [问题#1047356][CR1047356]
 > 
 > 打开网络 [日志][DevtoolsNetworkIndexLogActivity]，打开上下文菜单 \ (右键单击\) ，然后选择编辑 **和重播**。  
 
-Chromium [问题#1093687][CR1093687]  
+Chromium问题[#1093687][CR1093687]  
 
 ### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>服务工作者 respondWith"计时"选项卡中的事件  
 
@@ -96,7 +96,7 @@ Chromium [问题#1093687][CR1093687]
    展开 **收到的响应** 以显示来自响应的其他 `fetch` 信息  
 :::image-end:::  
 
-Chromium [问题#1066579][CR1066579]  
+Chromium问题[#1066579][CR1066579]  
 
 ### <a name="webhint-feedback-in-the-issues-panel"></a>问题面板中的 webhint 反馈  
 
@@ -115,7 +115,7 @@ Chromium [问题#1066579][CR1066579]
 > 
 > 打开" [问题][DevtoolsIssues] "面板以显示来自 Webhint 的反馈。  
 
-Chromium [问题#1070378][CR1070378]  
+Chromium问题[#1070378][CR1070378]  
 
 ### <a name="move-tools-between-panels"></a>在面板之间移动工具  
 
@@ -132,27 +132,27 @@ Chromium [问题#1070378][CR1070378]
 > [!NOTE]
 > 若要启用实验，请导航到打开 [实验][DevtoolsExperimentalFeaturesTurnOn] 功能，然后选择启用支持以在面板之间 **移动选项卡旁边的复选框**。  
 
-Chromium [问题#897944][CR897944]  
+Chromium问题[#897944][CR897944]  
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示  
 
-在 Microsoft Edge 83 和 84 中，使用水平滚动条显示的"网络日志"中"发起者[][DevtoolsNetworkIndexLogActivity]"列的工具提示（显示资源请求的原因）。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。  
+在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志[][DevtoolsNetworkIndexLogActivity]"中，显示资源请求的原因。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Microsoft Edge 84 中的发起人工具提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
-   Microsoft Edge 84 中的发起人工具提示  
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+   84 中的发起Microsoft Edge提示  
 :::image-end:::  
 
-从 Microsoft Edge 85 开始，现在可以在工具提示中显示发起者调用堆栈，而无需水平滚动。  
+从 Microsoft Edge 85 开始，现在可以在工具提示中显示 Initiator 调用堆栈，而无需水平滚动。  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Microsoft Edge 85 中的发起人工具提示" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
-   Microsoft Edge 85 中的发起人工具提示
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="85 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+   85 中的发起Microsoft Edge提示
 :::image-end:::  
 
-Chromium [问题#1069404][CR1069404]  
+Chromium问题[#1069404][CR1069404]  
 
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告  
 
-以下各节宣布 Microsoft Edge 85 中提供的其他功能已参与开放源代码 Chromium 项目。  
+以下各节宣布 85 Microsoft Edge开放源代码管理项目中提供的其他Chromium功能。  
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>CSS-in-JS 框架的样式编辑  
 
@@ -168,26 +168,26 @@ Chromium [问题#1069404][CR1069404]
 
 通过使用 [CSS-in-JS][CodepenZoherghadyaliAbdgrpz]的示例试用此功能。
 
-Chromium [问题#946975][CR946975]  
+Chromium问题[#946975][CR946975]  
 
 ### <a name="lighthouse-6-in-the-lighthouse-panel"></a>Lighthouse 面板中的"浅楼 6"  
 
 **"灯楼**"面板现在运行"Lighthouse 6"。  有关所有更改的完整列表，请导航到 [v6.0.0 发行说明][GithubGoogleChromeLighthouse600]。  
 
-Lighthouse 6.0 向报告引入了三个新指标：最大内容画图 \ (LCP\) 、累积布局班次 \ (CLS\) 和总阻止时间 \ (TBT\) 。  
+Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 \ (LCP\) 、累积布局班次 \ (CLS\) 和总阻止时间 \ (TBT\) 。  
 
 性能分数公式也进行了重新加权，以更好地反映用户的加载体验。  
 
-Chromium [问题#772558][CR772558]  
+Chromium问题[#772558][CR772558]  
 
-#### <a name="first-meaningful-paint-deprecation"></a>First Meaningful Paint deprecation  
+#### <a name="first-meaningful-paint-deprecation"></a>First Meaningful 画图弃用  
 
-First Meaningful Paint \ (FMP\) 在 Lighthouse 6.0 中已弃用。  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful Paint** 是 FMP 的建议替换。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
+First Meaningful 画图 \ (FMP\) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
 
-Chromium [问题#1096008][CR1096008]  
+Chromium问题[#1096008][CR1096008]  
 
 ### <a name="support-for-new-javascript-features"></a>支持新的 JavaScript 功能  
 
@@ -218,7 +218,7 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能。
    :::column-end:::
 :::row-end:::  
 
-Chromium[][CR1073903]问题[#1073903、#1083214、#1083797][CR1083214] [][CR1083797]  
+[][CR1083797] [][CR1073903]Chromium、#1073903、#1083214、#1083797 [][CR1083214]  
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告  
 
@@ -235,7 +235,7 @@ Chromium[][CR1073903]问题[#1073903、#1083214、#1083797][CR1083214] [][CR1083
    应用快捷方式警告  
 :::image-end:::  
 
-Chromium [问题#955497][CR955497]  
+Chromium问题[#955497][CR955497]  
 
 ### <a name="consistent-display-of-the-computed-pane"></a>"计算"窗格的一致显示  
 
@@ -245,30 +245,30 @@ Chromium [问题#955497][CR955497]
    即使**** DevTools 较窄，计算窗格也一致显示为单独的窗格。
 :::image-end:::  
 
-Chromium [问题#1073899][CR1073899]  
+Chromium问题[#1073899][CR1073899]  
 
 ### <a name="bytecode-offsets-for-webassembly-files"></a>WebAssembly 文件的字节码偏移  
 
 DevTools 现在使用字节码偏移来显示 Wasm 反汇编的行号。  
 行号使查看二进制数据更加清晰，并且与 Wasm 运行时引用位置的方式更加一致。  
 
-Chromium [问题#1071432][CR1071432]  
+Chromium问题[#1071432][CR1071432]  
 
 ### <a name="line-wise-copy-and-cut-in-sources-panel"></a>在"源面板"中按照行进行复制和剪切  
 
 当在"源"面板编辑器中执行复制[][DevtoolsSourcesEditCssJavascript]或剪切操作时，DevTools 会复制或剪切当前内容行。  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行，并粘贴到Visual Studio代码" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到[Visual Studio Code 中][VisualStudioCode]。 ****
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。][VisualStudioCode] ****
 :::image-end:::  
 
-Chromium [问题#800028][CR800028]
+Chromium问题[#800028][CR800028]
 
 ### <a name="console-settings-updates"></a>控制台设置更新  
 
 #### <a name="ungroup-same-console-messages"></a>取消同一控制台消息的组  
 
-控制台 **设置中的** "组相似"切换现在适用于重复消息。  以前，它只应用于类似的邮件。  
+控制台**控制台中的**组相似设置现在适用于重复消息。  以前，它只应用于类似的邮件。  
 
 例如，以前，DevTools 未取消分组邮件，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。  
 
@@ -278,17 +278,17 @@ Chromium [问题#800028][CR800028]
 
 通过向控制台发送重复消息的示例试用 [此功能][CodepenZoherghadyaliZyrjgdJ]。  
 
-Chromium [问题#1082963][CR1082963]  
+Chromium问题[#1082963][CR1082963]  
 
 ### <a name="persisting-selected-context-only-settings"></a>持久化"仅选定上下文"设置  
 
-控制台 **设置中的"仅** 所选上下文"设置现已保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台设置选项一致。  
+控制台**控制台中的"所选**上下文设置现在保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。  
 
 :::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="选定的仅上下文设置" lightbox="../../media/2020/06/selected-context.msft.png":::
    **选定的仅上下文** 设置  
 :::image-end:::  
 
-Chromium [问题#1055875][CR1055875]  
+Chromium问题[#1055875][CR1055875]  
 
 ### <a name="performance-panel-updates"></a>性能面板更新  
 
@@ -300,7 +300,7 @@ Chromium [问题#1055875][CR1055875]
    JavaScript 编译缓存信息  
 :::image-end:::  
 
-Chromium [问题#912581][CR912581]  
+Chromium问题[#912581][CR912581]  
 
 #### <a name="navigation-timing-alignment-in-the-performance-panel"></a>"性能"面板中的导航计时对齐方式  
 
@@ -310,13 +310,13 @@ Chromium [问题#912581][CR912581]
    在性能工具中 **对齐导航** 计时  
 :::image-end:::  
 
-第一个绘制、第一个内容绘制和最大内容绘制事件的时间更新为相对于导航的开始，这意味着计时与 `DOMContentLoaded` 报告的时间匹配 `PerformanceObserver` 。  
+First 画图、First Contentful 画图 和 Largest Contentful 画图 事件的时间更新为相对于导航的开始，这意味着计时与 报告 `DOMContentLoaded` 的时间匹配 `PerformanceObserver` 。  
 
-Chromium [问题#974550][CR974550]  
+Chromium问题[#974550][CR974550]  
 
 ### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>断点、条件断点和登录点的新图标  
 
-" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像代码和Visual Studio[一][VisualStudioCode][Visual Studio。][VisualStudio]  添加图标以区分条件断点和日志点。  
+" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像Visual Studio Code Visual Studio [][VisualStudioCode] [。][VisualStudio]  添加图标以区分条件断点和日志点。  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点" lightbox="../../media/2020/06/breakpoints.msft.png":::
    断点  
@@ -340,7 +340,7 @@ Chromium 问题 [#1041830][CR1041830]
 [DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
 [DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"
 [DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "编辑 CSS 和 JavaScript - 源面板概述|Microsoft Docs"  
-[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "记录网络活动 - 检查 Microsoft Edge DevTools |Microsoft Docs"
+[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "CSS-in-JS 框架样式编辑|CodePen"
 [CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "将重复消息发送到控制台|CodePen"

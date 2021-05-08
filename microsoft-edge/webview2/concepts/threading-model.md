@@ -3,17 +3,17 @@ description: 线程模型
 title: 线程模型|WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/29/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 7b447f5cc5fcce3439166638d47a0b87e5536c0a
-ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
+ms.openlocfilehash: 9a7ce3d66e53b832d4430afb153e6539d97e5db7
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "11462041"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535606"
 ---
 # <a name="threading-model"></a>线程模型 
 
@@ -69,7 +69,7 @@ private async void Button_Click(object sender, EventArgs e)
 
 ## <a name="see-also"></a>另请参阅  
 
-*   若要开始使用 WebView2，请导航到 ["WebView2 入门指南"][Webview2IndexGettingStarted] 指南。  
+*   若要开始使用 WebView2，请导航到 ["WebView2 入门指南"][Webview2IndexGetStarted] 指南。  
 *   有关 WebView2 功能的综合示例，请导航到 GitHub 上的 [WebView2Samples][GithubMicrosoftedgeWebview2samples] 存储库。  
 *   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
@@ -80,7 +80,7 @@ private async void Button_Click(object sender, EventArgs e)
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "入门 - Microsoft Edge WebView2 |Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "入门 - Microsoft Edge WebView2 |Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"  
