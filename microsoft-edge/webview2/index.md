@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project
-ms.openlocfilehash: 154c18a3cc9236a8abd286918d72e1a1968fea38
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 9c1aa073294fc649223da19c44850dc4335f6c00
+ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535720"
+ms.locfileid: "11536823"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>WebView2 Microsoft Edge简介  
 
-利用 Microsoft Edge WebView2 控件，可以将 Web 技术 \ (HTML、CSS 和 JavaScript\) 嵌入本机应用中。  WebView2 控件使用[Microsoft Edge (Chromium) ][MicrosoftedgeinsiderMain]作为呈现引擎，以在本机应用中显示 Web 内容。  使用 WebView2，你可以将 Web 代码嵌入本机应用的不同部分。  在单个 WebView 实例中生成所有本机应用。  若要了解如何开始生成 WebView2 应用，请导航到["入门"。](#get-started)  
+WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 \ (HTML、CSS 和 JavaScript\) 嵌入本机应用中。  WebView2 控件使用[Microsoft Edge (Chromium) ][MicrosoftedgeinsiderMain]作为呈现引擎，以在本机应用中显示 Web 内容。  使用 WebView2，你可以将 Web 代码嵌入本机应用的不同部分。  在单个 WebView 实例中生成所有本机应用。  若要了解如何开始生成 WebView2 应用，请导航到["入门"。](#get-started)  
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="什么是 WebView？" lightbox="./media/WebView2/what-webview.png":::
    什么是 WebView？  
@@ -38,60 +38,102 @@ ms.locfileid: "11535720"
     
 ## <a name="webview2-benefits"></a>WebView2 优势   
 
-<!--  
-:::image type="complex" source="./media/WebView2/webview-reasons.png" alt-text="WebView reasons" lightbox="./media/WebView2/webview-reasons.png":::
-   WebView reasons  
-:::image-end:::    
--->  
-
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset.msft.png":::  
-      **Web 生态系统 \&技能集**  
+      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-rapid-innovation-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support-small.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### <a name="web-ecosystem--skillset"></a>Web 生态系统&技能集  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="rapid-innovation"></a>快速创新  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="windows-7-8-and-10-support"></a>Windows 7、8 和 10 支持  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       利用 Web 生态系统内存在的整个 Web 平台、库、工具和人才。  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-rapid-innovation.msft.png":::  
-      **快速创新**  
       Web 开发允许更快地部署和迭代。  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support.msft.png":::  
-      **Windows 7、8 和 10 支持**  
       支持跨 Windows 7、Windows 8 和 Windows 10。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-native-capabilities.msft.png":::  
-      **本机功能**  
+      :::image type="icon" source="./media/webview-reasons-native-capabilities-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-code-sharing-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-microsoft-support-small.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### <a name="native-capabilities"></a>本机功能  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="code-sharing"></a>代码共享  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="microsoft-support"></a>Microsoft 支持  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       访问完整的本机 API 集。  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-code-sharing.msft.png":::  
-      **代码共享**  
       向代码库添加 Web 代码可增强跨多个平台的重用。  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-microsoft-support.msft.png":::  
-      **Microsoft 支持**  
       当 WebView2 在通用版本 \ (GA\) 发布时，Microsoft 提供支持并添加新功能) 。  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-evergreen.msft.png":::  
-      **常青分布**  
+      :::image type="icon" source="./media/webview-reasons-evergreen-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### <a name="evergreen-distribution"></a>常青分布  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="fixed"></a>已修复  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="incremental-adoption"></a>增量采用  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       依赖最新版 Chromium定期平台更新和安全修补程序。  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-fixed.msft.png":::  
-      **已修复**  
       \ (即将推出\) 选择在应用中打包Chromium位。  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-incremental-adoption.msft.png":::  
-      **增量采用**  
       将 Web 组件分片添加到应用。  
    :::column-end:::
 :::row-end:::  
