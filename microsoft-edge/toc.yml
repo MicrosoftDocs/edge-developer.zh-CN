@@ -365,7 +365,9 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge 用户代理字符串
           href: web-platform/user-agent-string.md
-    - name: Web 我们希望概述
+        - name: 自定义“密码显示”按钮
+          href: web-platform/password-reveal.md
+    - name: “我们想要的网络”概述
       href: web-we-want/index.md
     - name: WebDriver
       items:
