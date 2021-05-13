@@ -1,18 +1,18 @@
 ---
-description: 自定义 Microsoft Edge DevTools 的方法列表
+description: 自定义开发人员工具Microsoft Edge列表
 title: 自定义 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 2b242fcb74b7c8cdbca2d523c55ab4e5eed56b45
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0be3219579794dca28f71e336da1154f31f2d2be
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399028"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564383"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,19 +27,18 @@ ms.locfileid: "11399028"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="customize-microsoft-edge-devtools"></a>自定义 Microsoft Edge DevTools  
 
-此页面列出了自定义 Microsoft Edge DevTools 的方法。  
+此页面列出了自定义 DevTools Microsoft Edge的方法。  
 
 ## <a name="settings"></a>“设置”  
 
 **设置**  > **首选项**包含许多用于自定义 DevTools 的选项。  
 
-若要打开"设置"，请完成以下操作之一。  
+若要打开设置，请完成以下操作之一。  
 
 *   在 `F1` DevTools 成为焦点时选择。  
-*   打开主**菜单，****然后选择设置**。  
+*   打开主**菜单，** 然后选择 **"设置"。**  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="设置" lightbox="../media/customize-settings-preferences.msft.png":::
    **设置**  
@@ -89,7 +88,7 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 
 ## <a name="change-devtools-placement"></a>更改 DevTools 位置  
 
-导航到 [Microsoft Edge DevTools 放置][DevToolsPlacement]。  
+导航到[Microsoft Edge开发人员工具放置][DevToolsPlacement]" 。  
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="移除的开发人员工具" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    移除的开发人员工具  
@@ -111,7 +110,7 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 1.  选择"**启用"。**  
 1.  选择 **页面底部的"现在**重新启动"。  
 
-下次打开 DevTools 时，将在"设置"中显示名为 **"实验**["的新页面](#settings)。  
+下次打开 DevTools 时，名为 **"** 实验"的新页面[将显示在设置。](#settings)  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系  
 
@@ -124,7 +123,7 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 <!-- links -->  
 
 [DevToolsPlacement]: ./placement.md "更改 Microsoft Edge DevTools 放置 | Microsoft Docs"  
-[DarkTheme]: ./dark-theme.md "在 Microsoft Edge 开发人员工具中启用深色|Microsoft Docs"  
+[DarkTheme]: ./dark-theme.md "在 DevTools Microsoft Edge中启用深色|Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
@@ -136,4 +135,4 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

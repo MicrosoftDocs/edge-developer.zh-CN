@@ -3,16 +3,16 @@ description: Microsoft Edge 开发工具辅助功能的综合参考。
 title: 辅助功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: a82dec6ffd7e3fb44143ea103fc9756afcd1a161
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439252"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564572"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439252"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="accessibility-reference"></a>辅助功能参考  
 
 本页是 Microsoft Edge 开发工具辅助功能的综合参考。  适用于以下 web 开发人员：   
@@ -214,4 +213,4 @@ ARIA 属性可确保屏幕阅读器拥有正确显示页面内容需要的所有
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

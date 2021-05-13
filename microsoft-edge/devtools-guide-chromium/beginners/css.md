@@ -3,16 +3,16 @@ description: CSS 入门
 title: 适用于初学者的 DevTools：CSS 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools
-ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 6f34cfa8610848505c8aa795c4fab16e5d2a98ed
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439435"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564642"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -619,7 +619,7 @@ li a {
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者 [Katherine Jackson][KatherineJackson] \（技术作家 Intern，Chrome DevTools\）。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Writer][KatherineJackson] \ (Technical Writer，Chrome DevTools\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
@@ -627,5 +627,5 @@ li a {
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

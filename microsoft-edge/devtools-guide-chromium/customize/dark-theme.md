@@ -1,18 +1,18 @@
 ---
-description: 如何在 Microsoft Edge DevTools 中打开深色主题。
-title: 在 Microsoft Edge DevTools 中启用深色主题
+description: 如何在 DevTools 中打开Microsoft Edge主题。
+title: 在 DevTools 中Microsoft Edge深色主题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: dc857a65deef9b62614da79d2648c8b92ac9db07
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2ba44f03cabe215a6eb524f34921671919bde421
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399020"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564376"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,21 +27,20 @@ ms.locfileid: "11399020"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="enable-dark-theme-in-microsoft-edge-devtools"></a>在 DevTools 中Microsoft Edge深色主题  
 
-# <a name="enable-dark-theme-in-microsoft-edge-devtools"></a>在 Microsoft Edge DevTools 中启用深色主题  
-
-You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the [Command Menu](#set-up-dark-theme-from-the-command-menu).  
+You may enable dark theme in[设置](#set-up-dark-theme-from-settings)or the [Command Menu](#set-up-dark-theme-from-the-command-menu).  
 
 :::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="深色主题" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
    深色主题  
 :::image-end:::  
 
-## <a name="set-up-dark-theme-from-settings"></a>从"设置"设置深色主题  
+## <a name="set-up-dark-theme-from-settings"></a>从主题设置深色设置  
 
-1.  Choose **Customize and Control DevTools** \ (`...` \) > **Settings**.  您也可以通过选择 **打开设置** `F1` 。  
+1.  Choose **Customize and Control DevTools** \ (`...` \) >**设置**.  您也可以通过选择**设置**打开" `F1` "。  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="打开“设置”" lightbox="../media/customize-options-settings.msft.png":::
-       打开 **设置**  
+       打开**设置**  
     :::image-end:::  
 
 1.  在"**首选项"窗格**的"**外观"下**，选择"**深色**  >  **主题"。**  
@@ -77,4 +76,4 @@ You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

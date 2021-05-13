@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge 开发人员工具找到加快网
 title: 使用 Microsoft Edge 开发人员工具优化网站速度
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 304cf9e36260b8637af38ed0dfe1ba91f3a56504
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519609"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564880"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519609"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>使用 Microsoft Edge 开发人员工具优化网站速度  
 
 ## <a name="goal-of-tutorial"></a>教程目标  
@@ -546,4 +545,4 @@ ms.locfileid: "11519609"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

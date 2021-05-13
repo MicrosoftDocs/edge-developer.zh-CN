@@ -1,18 +1,18 @@
 ---
-description: 了解如何使用 Microsoft Edge DevTools 查看和更改页面的 CSS。
+description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
 title: 查看和更改 CSS 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: b3d19d34f329fec7a3903fb37e8be3558ba4d31d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bc629286530e709bef0e04a671f1a0e56eee48ea
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399090"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564446"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,14 +27,13 @@ ms.locfileid: "11399090"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-css"></a>查看和更改 CSS 入门  
 
-完成这些交互式教程，了解使用 Microsoft Edge DevTools 查看和更改页面 CSS 的基础知识。  
+完成这些交互式教程，了解使用 DevTools 查看和更改页面 CSS Microsoft Edge基础知识。  
 
 ## <a name="open-css-examples"></a>Open CSS 示例  
 
-1.  按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) 并选择 **"CSS** 示例"以在新窗口中打开。  
+1.  保留 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) 并选择 **"CSS**示例"以在新窗口中打开。  
     
     [CSS 示例][GlitchDevToolsCssExamples]  
     
@@ -201,4 +200,4 @@ ms.locfileid: "11399090"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

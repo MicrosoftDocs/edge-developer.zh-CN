@@ -1,18 +1,18 @@
 ---
 description: 打开"网络条件"工具，禁用"自动选择"，然后从列表中选择或输入自定义字符串。
-title: 覆盖 Microsoft Edge DevTools 中的用户代理字符串
+title: 替代 DevTools 中的Microsoft Edge字符串
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: a0ba10b551b4853cf204656ca7a9fb014323986b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 50d831847342c749cd36f203998351d53325a6f8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398691"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564292"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398691"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>替代 DevTools 中的Microsoft Edge字符串  
 
-# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>覆盖 Microsoft Edge DevTools 中的用户代理字符串  
-
-若要覆盖[][MDNUserAgent]Microsoft Edge DevTools 中的用户代理字符串：：  
+若要覆盖[DevTools 中的][MDNUserAgent]用户Microsoft Edge字符串：  
 
 1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
@@ -65,4 +64,4 @@ ms.locfileid: "11398691"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

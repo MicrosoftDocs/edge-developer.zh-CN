@@ -3,26 +3,26 @@ description: 在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn。
 title: 在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 3200f22485bfd642a37a7d34ac727b8da4500d06
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d5eeedfaa98e56bbba81634685a223844803a1ad
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231179"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564033"
 ---
-# 在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn  
+# <a name="emulate-authenticators-and-debug-webauthn-in-microsoft-edge-devtools"></a>在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn  
 
 使用 Microsoft Edge DevTools 中的**WebAuthn**工具创建基于软件的虚拟验证器并与之交互，而不是使用物理验证器在网站或应用中调试 Web 身份验证。  
 
-## 开始之前  
+## <a name="before-you-begin"></a>开始之前  
 
 Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的位置][GithubW3cWebauthn]。  
 
-## 设置 WebAuthn 工具  
+## <a name="set-up-the-webauthn-tool"></a>设置 WebAuthn 工具  
 
 1.  导航到使用 WebAuthn 的网页，如以下演示网站。  
     
@@ -45,7 +45,7 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
     
 1.  在" **新建验证器"** 部分，配置以下选项。  
     
-    | 选项 | Value | 详细信息 |  
+    | 选项 | 值 | 详细信息 |  
     |:--- |:--- |:--- |  
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] 或 [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | 虚拟验证器用于编码和解码的协议 |  
     | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟选定的传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举][GithubW3cWebauthnEnumTransport] |  
@@ -65,7 +65,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    无凭据  
 :::image-end:::  
 
-## 注册新凭据  
+## <a name="register-a-new-credential"></a>注册新凭据  
 
 若要注册新凭据，请完成以下步骤。  有关注册新凭据时[Web 身份验证 API][GithubW3cWebauthn]正在执行哪些操作的信息，请导航到"[新建凭据"。][GithubW3cWebauthnSctnCreatecredential]  
 
@@ -78,7 +78,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
     
 在演示网站上，选择"验证 **"** 按钮。  确认"[凭据"表中的][GithubW3cWebauthnSctnSignCounter]凭据的"签名计数****"增加了 1，这表示[authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion]操作成功。  
 
-## 导出和删除凭据  
+## <a name="export-and-remove-credentials"></a>导出和删除凭据  
 
 若要导出或删除凭据，请选择"导出 **"** 或" **删除"** 按钮。  
 
@@ -86,7 +86,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    导出或删除凭据  
 :::image-end:::  
 
-## 重命名验证器  
+## <a name="rename-an-authenticator"></a>重命名验证器  
 
 若要重命名验证器，请完成以下步骤。  
 
@@ -97,7 +97,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    重命名验证器  
 :::image-end:::  
 
-## 设置活动验证器  
+## <a name="set-the-active-authenticator"></a>设置活动验证器  
 
 将自动激活新创建的验证器。  若要使用另一个虚拟验证器，请选择验证器旁边的 **"** 活动"单选按钮。  
 
@@ -108,7 +108,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    设置活动验证器  
 :::image-end:::  
 
-## 删除虚拟验证器  
+## <a name="remove-a-virtual-authenticator"></a>删除虚拟验证器  
 
 若要删除虚拟验证器，请选择验证器旁边的"删除 **"** 按钮。  
 
@@ -116,7 +116,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    删除验证器  
 :::image-end:::  
 
-## 联系 Microsoft Edge 开发人员工具团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发人员工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -147,4 +147,4 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

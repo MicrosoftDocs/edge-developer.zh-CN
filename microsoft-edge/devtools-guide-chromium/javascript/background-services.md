@@ -3,16 +3,16 @@ description: 如何使用 Microsoft Edge DevTools 调试后台提取、后台同
 title: 使用 Microsoft Edge DevTools 调试后台服务
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 4f5f52bcde976cea8432e3160a792438e5603e21
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439526"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564194"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439526"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-background-services-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 调试后台服务  
 
 Microsoft Edge DevTools 的**后台服务**部分是 JavaScript API 的一个工具集合，使你的网站能够在用户未打开网站时发送和接收更新。  
@@ -175,4 +174,4 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

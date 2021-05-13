@@ -3,18 +3,18 @@ description: 在 DevTools 中模拟Microsoft Edge缺陷。
 title: '在 DevTools Microsoft Edge色盲 (中模拟视觉缺陷) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/09/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 8c3f3a34c441692117906f51c3d8430e79fd72b1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 1ab224f1dc70618dbef77ec6e6dbc22a0d1f47fb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519168"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564600"
 ---
-# <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
+# <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷  
 
 为了更好地满足色[盲用户][ColorblindawarenessMain]\ (色盲\) 的需求，Microsoft Edge [DevTools][DevtoolsIndex]允许你模拟特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。  
 
@@ -37,7 +37,7 @@ ms.locfileid: "11519168"
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="打开呈现工具" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        打开 **呈现工具**  
     :::image-end:::  
-
+    
 " **呈现** "菜单显示在箱中。  
 
 1.  向下滚动到 `Emulate vision deficiencies` 菜单项并选择下拉菜单以显示选项。  
@@ -90,6 +90,6 @@ ms.locfileid: "11519168"
 [DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "分析运行时性能|Microsoft Docs"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "光盲意识组织"  
+[ColorblindawarenessMain]: https://www.colourblindawareness.org "光盲意识组织"  
 
 [AmfcbMain]: https://www.amfcb.org "American Foundation for the Color Blind (AFCB) "  

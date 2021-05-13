@@ -3,16 +3,16 @@ description: 如何使用“本地存储”窗格和控制台查看和编辑 loc
 title: 使用 Microsoft Edge DevTools 查看和编辑本地存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 4eebf3108e7b1c6ecaecbfed445e8f3fe26215c4
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 5088a1b9d7ab2b92051d099e76b8b07bbd5db5f8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439673"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565048"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439673"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看和编辑本地存储  
 
 本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [localStorage][MDNWindowsLocalStorage] 键值对。  
@@ -61,9 +60,9 @@ ms.locfileid: "11439673"
 ## <a name="create-a-new-localstorage-key-value-pair"></a>创建新的 localStorage 键值对  
 
 1.  [查看域的 localStorage 键值对](#view-localstorage-keys-and-values)。  
-1.  双击表的空白部分。  DevTools 创建新行，并将光标停留在**键**列。  
+1.  双击表的空白部分。  DevTools 将新建行，并将光标停留在**键**列。  
     
-    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="双击表的空白部分以创建新键值对" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="为了新建键值对要双击的表的空白部分" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
        双击表的空白部分以创建新键值对  
     :::image-end:::  
     
@@ -79,7 +78,7 @@ ms.locfileid: "11439673"
 ## <a name="delete-localstorage-key-value-pairs"></a>删除 localStorage 键值对  
 
 1.  [查看域的`localStorage`键值对](#view-localstorage-keys-and-values)。  
-1.  选择要删除的键值对。  DevTools 突出显示蓝色以指示已选中。  
+1.  选择要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。  
 1.  选择`Delete`键或选择“**删除所选**”\(“![删除所选](../media/delete-icon.msft.png)”\)。  
     
 ## <a name="delete-all-localstorage-key-value-pairs-for-a-domain"></a>删除域的所有`localStorage`键值对  
@@ -123,4 +122,4 @@ ms.locfileid: "11439673"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

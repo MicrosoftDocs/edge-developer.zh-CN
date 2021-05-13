@@ -3,22 +3,21 @@ description: 了解在开发 WebView2 应用程序时要使用的开发最佳做
 title: WebView2 开发的最佳做法
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/11/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、edge、最佳做法
-ms.openlocfilehash: 3982f47e0fe58287582915673d4ba0de0365a55d
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 5a11f01ec07aea12599c8bdb8428d451ad7bd013
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535655"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564747"
 ---
 # <a name="webview2-development-best-practices"></a>WebView2 开发的最佳做法  
 
 每个开发团队在构建其应用程序时都遵循不同的做法。 生成 WebView2 应用程序时，建议遵循一些做法。 本文概述了在构建基于生产环境的 WebView2 应用程序时的建议和最佳做法。
-
 
 ## <a name="use-evergreen-webview2-runtime-recommended"></a>使用 Evergreen WebView2 运行时 (推荐)   
 
@@ -36,9 +35,10 @@ WebView2 应用程序需要同时在计算机上安装 Webview2 SDK 和 WebView2
 
 如果使用 Evergreen WebView2 运行时，则在某些情况下可能不会将运行时更新为使用最新版本。 例如，当用户无法访问 Internet 时，该环境中不会自动更新运行时。 此外，使用某些组策略将暂停 WebView2 更新。 当你将更新推送到 WebView2 应用程序时，应用程序可能会中断，因为它使用的较新的 API 在安装的运行时中不可用。   
  
-若要解决此问题，可以在代码调用 API 之前测试 API 在已安装的运行时中的可用性。 此较新功能测试与其他 Web 开发最佳实践类似，这些最佳实践在使用新的 Web API 之前检测支持的功能。 若要测试已安装运行时中的 API 可用性，请使用：
-* `queryinterface`C/C++ 中的 。 
-* .NET 或 WinUI 中的 try/catch 块。 
+若要解决此问题，可以在代码调用 API 之前测试 API 在已安装的运行时中的可用性。 此较新功能测试与其他 Web 开发最佳实践类似，这些最佳实践在使用新的 Web API 之前检测支持的功能。 若要测试已安装运行时中的 API 可用性，请使用：  
+
+*   `queryinterface`C/C++ 中的 。 
+*   .NET 或 WinUI 中的 try/catch 块。 
     
 有关详细信息，请导航到确定 [WebView2 运行时要求][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]。  
 
@@ -58,7 +58,6 @@ WebView2 应用创建用户数据文件夹来存储 Cookie、凭据、权限等�
 ## <a name="follow-recommended-webview2-security-best-practices"></a>遵循建议的 WebView2 安全性最佳做法 
 对于任何 WebView2 应用程序，请确保遵循我们建议的 WebView2 安全性最佳做法。  有关详细信息，请导航到 [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity]。  
 
-
 <!-- links -->  
 
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "部署 Evergreen WebView2 运行时 - 使用 WebView2 |Microsoft Docs"  
@@ -71,5 +70,7 @@ WebView2 应用创建用户数据文件夹来存储 Cookie、凭据、权限等�
 [Webview2GetStartedWinforms]: ../get-started/winforms.md "Windows Forms | 中的 WebView2 入门Microsoft Docs"  
 [Webview2GetStartedWinui]: ../get-started/winui.md "WinUI 3 预览版中的 WebView2 (入门) |Microsoft Docs"  
 [Webview2GetStartedWpf]: ../get-started/wpf.md "WPF | 中的 WebView2 入门Microsoft Docs"  
-[Webview2ReferenceaddNewBrowserVersionAvailable]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable |Microsoft Docs"  
-[Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable 事件|Microsoft Docs"  
+
+[Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable |Microsoft Docs"  
+
+[Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable 事件|Microsoft Docs"  

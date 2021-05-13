@@ -3,7 +3,7 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, 隐私, 白皮书, 信任
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 52eb4e47ae70a222b24a70d5903f84e20058685b
-ms.sourcegitcommit: 1b1f099d9b0a8310784ccc8afd641e0708609602
+ms.openlocfilehash: ac07c968bbbf7f995018aa326a3f8781bda11e74
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "11496937"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564859"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书  
 
@@ -104,7 +104,7 @@ Microsoft Edge 开发人员工具提供用于网站调试和测试的工具。 �
 
 Microsoft 使用诊断数据改进我们的产品和服务，确保我们的产品安全、保持最新状态且按预期运行。无论何时收集数据，我们都希望确保该方式适合你。 Microsoft 认可并践行信息收集最小化。 我们力争只收集所需信息，并仅在改进我们的产品和服务所需的时限内存储这些信息。 
 
-Microsoft Edge 收集一系列必选诊断数据，以确保产品安全、保持最新状态且正常运行。 必选诊断数据包括设备连接、配置信息、软件设置和清单数据等数据。 Microsoft 使用这种必选诊断数据来解决问题，并确保 Microsoft 产品和服务安全可靠且正常运行。 如需详细了解所管理设备的诊断数据，请导航到[在组织中配置 Windows 诊断数据][WindowsPrivacyConfigureDiagnosticDataOrganization]和 [Microsoft Edge 诊断数据组策略](https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings)。 
+Microsoft Edge 收集一系列必选诊断数据，以确保产品安全、保持最新状态且正常运行。 必选诊断数据包括设备连接、配置信息、软件设置和清单数据等数据。 Microsoft 使用这种必选诊断数据来解决问题，并确保 Microsoft 产品和服务安全可靠且正常运行。 如需详细了解所管理设备的诊断数据，请导航到[在组织中配置 Windows 诊断数据][WindowsPrivacyConfigureDiagnosticDataOrganization]和 [Microsoft Edge 诊断数据组策略](/deployedge/microsoft-edge-enterprise-privacy-settings)。  
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="诊断数据" lightbox="./media/diagnostic-data2.png":::
    诊断数据  

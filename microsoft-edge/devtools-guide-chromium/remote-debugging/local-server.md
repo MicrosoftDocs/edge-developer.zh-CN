@@ -3,16 +3,16 @@ description: 在开发计算机 Web 服务器上承载网站，然后从 Android
 title: 访问本地服务器
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461260"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565090"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,7 +72,7 @@ ms.locfileid: "11461260"
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>设置到代理服务器的端口转发  
 
-若要映射自定义域，必须在开发计算机上运行代理服务器。  代理服务器的示例包括[，即，用户][CharlesWebDebuggingProxy][、Squid 和][SquidOptimisingWebDelivery] [Fiddler。][FiddlerWebDebuggingProxy]  
+若要映射自定义域，必须在开发计算机上运行代理服务器。  代理服务器的示例包括[，即，用户][CharlesWebDebuggingProxy][、Squid 和][SquidCacheWiki] [Fiddler。][TelerikFiddler]  
 
 设置到代理的端口转发：  
 
@@ -119,9 +119,9 @@ ms.locfileid: "11461260"
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Debugg Web Debugging Proxy"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid ： Deliverying Web Delivery"  
+[SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki 代理 Wiki"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - 免费 Web 调试代理"  
+[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - 免费 Web 调试代理"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
@@ -133,5 +133,5 @@ ms.locfileid: "11461260"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

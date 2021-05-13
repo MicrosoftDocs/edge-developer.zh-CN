@@ -3,16 +3,16 @@ description: 波浪下划线突出显示元素工具、服务工作者更新时�
 title: 'DevTools (Microsoft Edge 91 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 3a2be4d309432de4421af73ca7b4d21734ad5221
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 473b2537b631a77a182c04b6986051a4ce7aae03
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514434"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564817"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -196,17 +196,17 @@ Lorem al lorem et Chromium  To review the history of this feature in the Chromiu
 
 [DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]: ../../2020/01/devtools.md#using-the-devtools-in-other-languages "以其他语言使用 DevTools - DevTools (Microsoft Edge 81) |Microsoft Docs"  
 [DevtoolsWhatsNew202011Devtools]: ../../2020/11/devtools.md "DevTools (Microsoft Edge 88) |Microsoft Docs"  
-[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#css-variable-definitions-in-styles-pane "样式窗格中的 CSS 变量定义 - DevTools (Microsoft Edge 88 中的新增) |Microsoft Docs"  
+[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: ../../../whats-new/2020/11/devtools.md#css-variable-definitions-in-styles-pane "样式窗格中的 CSS 变量定义 - DevTools (Microsoft Edge 88 中的新增) |Microsoft Docs"  
 [DevtoolsWhatsNew202102Devtools]: ../02/devtools.md "DevTools （Microsoft Edge 90） 中的新增功能|Microsoft Docs"  
 [DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "在焦点模式下将工具组合在一起 - DevTools (Microsoft Edge 90 中的新增) |Microsoft Docs"  
 
-[DevtoolsCommandMenuIndexOpenCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index#open-the-command-menu "打开命令菜单 - 使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"  
-[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "更改 DevTools 语言设置 | Microsoft Docs"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
-[DevtoolsServiceWorkerIndex]: /microsoft-edge/devtools-guide-chromium/service-workers/index "服务工作者改进|Microsoft Docs"  
+[DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "打开命令菜单 - 使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
+[DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "服务工作者改进|Microsoft Docs"  
 
-[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: /microsoft-edge/progressive-web-apps-chromium/serviceworker#the-service-worker-lifecycle "服务工作线程生命周期 - 使用服务工作者管理网络请求和推送通知|Microsoft Docs"  
-[ProgressiveWebAppsWebappmanifests]: /microsoft-edge/progressive-web-apps-chromium/webappmanifests "使用 Web 应用清单将渐进式 Web 应用集成到操作系统|Microsoft Docs"  
+[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/serviceworker.md#the-service-worker-lifecycle "服务工作线程生命周期 - 使用服务工作者管理网络请求和推送通知|Microsoft Docs"  
+[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/webappmanifests.md "使用 Web 应用清单将渐进式 Web 应用集成到操作系统|Microsoft Docs"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->  
@@ -238,5 +238,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 -->

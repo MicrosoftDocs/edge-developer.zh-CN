@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge DevTools 查看、编辑和删除
 title: 使用 Microsoft Edge DevTools 查看、编辑和删除 Cookie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 4f5a352445bd13b82ada82df3a528a1e80aa144e
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439680"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565055"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439680"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看、编辑和删除 Cookie  
 
 [HTTP Cookie][MDNHTTPCookies] 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  Cookie 也是导致各种网页上出现麻烦的 **此页面使用 Cookie** 许可表单的源头。  以下指南将指导你如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除网页的 HTTP Cookie。  
@@ -121,4 +120,4 @@ ms.locfileid: "11439680"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

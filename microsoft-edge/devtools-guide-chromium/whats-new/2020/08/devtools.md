@@ -3,16 +3,16 @@ description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和
 title: 'DevTools (Microsoft Edge 86) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: f1227f0869aa753c2d05980c712ca3453adfd041
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: ec2219e9ebdd5d79c61bcaa813f7784246b1f5d0
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514380"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564943"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -35,7 +35,7 @@ ms.locfileid: "11514380"
 
 ### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式与Visual Studio Code  
 
-在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与代码 中的Microsoft Visual Studio[匹配][VisualStudioCode]。  
+在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与代码 中的Microsoft Visual Studio[匹配][VisualStudioCodeMain]。  
 
 :::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
    将 DevTools 中的键盘快捷方式与Visual Studio Code  
@@ -57,17 +57,17 @@ Chromium问题[#174309][CR174309]
 
 为帮助增强用于双屏幕和可折叠设备的网站或应用，请在[模拟设备][DevtoolsDeviceModeIndex]时使用以下功能。  
 
-*   [跨越][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]，即你的网站（或应用）跨两个屏幕显示。
+*   [跨越][DevtoolsDeviceModeDualScreenAndFoldables]，即你的网站（或应用）跨两个屏幕显示。
 *   [呈现接缝][DualScreenIntroductionHowWorkSeam]，即两个屏幕之间的空间。
-*   [启用实验性 Web 平台 API][DevtoolsExperimentalFeaturesEnableExperimentalApis]以访问新的[CSS 媒体][DualScreenWebCssMediaSpanning]屏幕跨越功能以及[JavaScript getWindowSegments API。][DualScreenWebJavascriptGetwindowsegments]  
+*   启用实验性 Web 平台 API 以访问新的[CSS 媒体][DualScreenWebCssMediaSpanning]屏幕跨越功能以及[JavaScript getWindowSegments API。][DualScreenWebJavascriptGetwindowsegments]  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Surface Duo 的设备模拟" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Surface Duo 的设备模拟  
 :::image-end:::  
 
-若要启用此实验功能，请 [导航到打开][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] 实验功能，然后选择模拟 **：支持双屏**模式旁边的复选框。  
+若要启用此实验功能，请导航到[打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]，然后选择"模拟 **： 支持双**屏幕模式"旁边的复选框。  
 
-有关此实验详细信息，请导航到仿真 [：支持双屏模式][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]。  
+有关此功能的信息，请导航到模拟开发人员工具中的双屏幕和可折叠Microsoft Edge[设备][DevtoolsDeviceModeDualScreenAndFoldables]。  
 
 Chromium问题[：#1054281][CR1054281]  
 
@@ -84,9 +84,9 @@ Chromium问题[：#1054281][CR1054281]
 
 开发人员Microsoft Edge团队和 Chrome DevTools 团队共同协作开发其他功能。  新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"**** 工具上的新"布局"窗格**可配置**。  
 
-若要启用此实验性功能，请导航[][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]到"打开实验功能"，并选中"重启后元素"中的"布局边栏"窗格中"启用新的 CSS 网格调试功能** (配置**选项"旁边的复选框) 。  
+若要启用此实验功能，请导航到[打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]，然后选择"重启) 后的元素"中的"启用新的 **CSS 网格 **调试功能 (配置选项"旁边的复选框。  
 
-有关此实验详细信息，请导航到启用 [新的 CSS 网格调试功能][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]。  
+有关此功能详细信息，请导航到"检查[开发人员工具Microsoft Edge CSS 网格"][DevtoolsCssGrid]。  
 
 Chromium问题[：#1047356][CR1047356]  
 
@@ -138,9 +138,9 @@ Chromium问题：[#1115011][CR1115011]
 
 利用此功能，可以更轻松地测试屏幕阅读器和键盘用户体验网站或应用的方式。  屏幕阅读器和键盘导航取决于网站或应用的源代码中按特定顺序放置的内容，以便与呈现的页面匹配。  源顺序查看器显示呈现的页面和源代码之间潜在的顺序差异。  
 
-若要启用此实验功能，请导航到打开 [实验][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] 功能，然后选择启用 **源订单**查看器旁边的复选框。  
+若要启用此实验功能，请导航到[打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]，然后选择"启用源订单查看器"旁边的**复选框。**  
 
-有关此实验详细信息，请导航到"[启用源订单查看器"。][DevtoolsExperimentalFeaturesEnableSourceOrderViewer]  
+有关此实验的更多信息，请导航到 [Source Order Viewer][DevtoolsExperimentalFeaturesSourceOrderViewer]。  
 
 Chromium问题[：#1094406][CR1094406]  
 
@@ -187,7 +187,7 @@ Chromium问题[：#1103316][CR1103316]
 
 ### <a name="new-media-tool"></a>新媒体工具  
 
-DevTools 现在在媒体工具中显示媒体 [播放器][DevtoolsMediaPanelIndex] 信息。  
+DevTools 现在在 [Media][DevtoolsMediaPanelIndex] 工具中显示媒体播放器信息。  
 
 若要打开新的 **媒体工具** ，请完成以下步骤。  
 
@@ -460,28 +460,25 @@ Chromium问题[：#1067184][CR1067184]
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<!-- image links -->  
-
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "DevTools 设置图标"  
-
 <!-- links -->  
 
 [DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "&quot;元素&quot;面板中的&quot;属性&quot;窗格弃用 - DevTools (Microsoft Edge 84) |Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS 网格调试功能 - DevTools (Microsoft Edge 85) |Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "启用实验性 API - 实验|Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "模拟：支持双屏幕模式 - 实验|Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "启用源订单查看器 - 实验|Microsoft Docs"
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "模拟：支持双屏幕模式 - 实验|Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "在可折叠和双屏幕设备上进行测试 - 实验|Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "表 - 控制台 API 参考|Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 DevTools Microsoft Edge中的&quot;覆盖&quot;选项卡查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "使用&quot;呈现&quot;选项卡分析呈现性能 - 性能分析参考|Microsoft Docs"  
-[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "查看和调试媒体播放器|Microsoft Docs"  
+[DevtoolsConsoleApiTable]: ../../../console/api.md#table "表 - 控制台 API 参考|Microsoft Docs"  
+[DevtoolsCoverageIndex]: ../../../coverage/index.md "使用 DevTools Microsoft Edge中的&quot;覆盖&quot;选项卡查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
+[DevtoolsCssGrid]: ../../../css/grid.md "检查 Microsoft Edge DevTools 中的 CSS 网格 | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "在 DevTools Microsoft Edge中模拟双屏幕和可折叠|Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "使用呈现工具分析呈现性能 - 性能分析|Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]： ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation： Support dual screen mode - Experimental features |Microsoft Docs"  
+[DevtoolsExperimentalFeaturesSourceOrderViewer]： ../../../experimental-features/index.md#source-order-viewer "Source Order Viewer - Experimental features |Microsoft Docs"
+<!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]： ../../../experimental-features/index.md#turn-on-experimental-features "Turn on experimental features - Experimental features |Microsoft Docs"  
+[DevtoolsMediaPanelIndex]： ../../../media-panel/index.md "View and debug media players information |Microsoft Docs"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "如何处理接缝 - 双屏幕设备简介| Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "用于双屏幕检测的 CSS 媒体屏幕跨越功能 | Microsoft Docs"  
@@ -489,7 +486,7 @@ Chromium问题[：#1067184][CR1067184]
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code键盘快捷方式Windows"  
 
 [MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "新的 Surface Duo"  
@@ -551,4 +548,4 @@ Chromium问题[：#1067184][CR1067184]
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

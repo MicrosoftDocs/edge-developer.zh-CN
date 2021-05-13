@@ -3,16 +3,16 @@ description: 使用 Microsoft Edge 中的虚拟设备构建移动优先的网站
 title: 在 Microsoft Edge DevTools 中模拟移动设备
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439449"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564404"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439449"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>在 Microsoft Edge DevTools 中模拟移动设备  
 
 使用“**设备仿真**”来大致了解你的页面在移动设备上的外观和响应方式。  Microsoft Edge DevTools 提供了一系列功能，可帮助你模拟移动设备。  该系列包括以下功能。  
@@ -362,4 +361,4 @@ ms.locfileid: "11439449"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
-description: 你的作业不会以确保你的站点在 Microsoft Edge 和 Android 中运行出色结束。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。
+description: 你的作业不会以确保你的网站在 android 和 Microsoft Edge运行。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。
 title: 模拟和测试其他浏览器
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: f2ca56c2e15f578a970e6ceb84b1554bfda53862
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481364"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564278"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -29,7 +29,7 @@ ms.locfileid: "11481364"
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>模拟和测试其他浏览器  
 
-你的作业不会以确保你的站点在 Microsoft Edge 和 Android 中运行出色结束。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。  
+你的作业不会以确保你的网站在 android 和 Microsoft Edge运行。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。  
 
 ### <a name="summary"></a>摘要  
 
@@ -47,7 +47,7 @@ Firefox 具有响应 [式][MDNResponsiveDesignMode] 设计视图，该视图鼓�
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟  
 
-若要模拟 Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
+若要模拟Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
 
 使用 [IE 11 仿真][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。  
 
@@ -63,12 +63,12 @@ Firefox 具有响应 [式][MDNResponsiveDesignMode] 设计视图，该视图鼓�
 :::image-end:::  
 -->  
 
-目前，无法将 Microsoft Edge 安装在 Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium 内容 Shell 和 Firefox for Android，我们将在本指南的稍后部分介绍这些内容。  Chromium 内容 Shell 运行与 Microsoft Edge 相同的 Chromium 呈现引擎，但不带任何特定于浏览器的功能。  
+目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium Shell 和 Firefox for Android，我们将在本指南的稍后部分介绍这些内容。  Chromium内容命令行管理程序Chromium呈现引擎Microsoft Edge，但不带任何特定于浏览器的功能。  
 
 Android 仿真器附带 Android SDK，你需要下载为 Android [Studio][AndroidStudioDownload]的一部分。  然后按照说明[设置虚拟设备并][AndroidStudioCreateManageVirtualDevices][启动仿真器][AndroidStudioRunAppsAndroidEmulator]。  
 启动仿真器后，选择浏览器图标，在适用于 Android 的旧股票浏览器上测试你的网站。  
 
-#### <a name="chromium-content-shell-on-android"></a>Android 上的 Chromium 内容 shell  
+#### <a name="chromium-content-shell-on-android"></a>Chromium Android 上的内容 shell  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
@@ -76,7 +76,7 @@ Android 仿真器附带 Android SDK，你需要下载为 Android [Studio][Androi
 :::image-end:::  
 -->  
 
-若要安装适用于 Android 的 Chromium 内容 Shell，请保持仿真器运行并运行以下命令。  
+若要安装适用于 Android Chromium命令行管理程序，请保持仿真器运行并运行以下命令。  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -84,7 +84,7 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-现在，您可以使用 Chromium 内容 Shell 测试您的网站。  
+现在，您可以使用内容命令行管理程序测试Chromium网站。  
 
 #### <a name="firefox-on-android"></a>Android 上的 Firefox  
 
@@ -94,7 +94,7 @@ chmod u+x ./chromium-android-installer/*.sh
 :::image-end:::  
 -->  
 
-与 Chromium 内容 Shell 类似，您可以获取 APK 以将 Firefox 安装到仿真器上。  
+与内容Chromium类似，您可以获取 APK 以将 Firefox 安装到仿真器上。  
 
 [下载正确的 .apk 文件][MozillaFirefoxDownload]。  
 
@@ -119,7 +119,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    新式 IE VM  
 :::image-end:::  
 
-Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 使您能够通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
+Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 可使你通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
 
 ## <a name="cloud-based-emulators-and-simulators"></a>基于云的模拟器和模拟器  
 
@@ -163,6 +163,6 @@ Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 使您能够通过 Virtual
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[PaulBakaus]: https://developers.google.com/web/resources/contributors/pbakaus  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus  

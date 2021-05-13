@@ -3,16 +3,16 @@ description: 辅助功能改进、在其他语言中使用 DevTools 等。
 title: 'DevTools (Microsoft Edge 80) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 1388cbf62bd341837d92c51ad137f3909e60e476
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 58e5bf43720c7ba94a721804eb44d82ba657b599
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514394"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564992"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -217,7 +217,7 @@ Chromium问题[#1004193][CR1004193]
 
 ### <a name="improved-webassembly-debugging"></a>改进的 WebAssembly 调试  
 
-DevTools 已开始支持 [DEBUGG 调试标准][DwarfHome]，这意味着增加了对在 DevTools 中单步执行代码、设置断点和解析源语言中的堆栈跟踪的支持。  
+DevTools 已开始支持 DEBUGG 调试标准，这意味着增加了对在 DevTools 中单步执行代码、设置断点和解析源语言中的堆栈跟踪的支持。  
 
 <!-- [TODO: Add this link back] -->  
 <!--Check out [Improved WebAssembly debugging in Microsoft Edge DevTools][201912Webassembly] for the full story.  -->  
@@ -246,7 +246,7 @@ DevTools 已开始支持 [DEBUGG 调试标准][DwarfHome]，这意味着增加�
 *   已检查资源下方的资源是 **依赖项**。  在以上屏幕截图中 `https://dc.services.visualstudio.com/v2/track` ， 是 的依赖项 `ai.2.min.js` 。  换句话说，导致 `ai.2.min.js` 对 的网络请求 `https://dc.services.visualstudio.com/v2/track` 。  
 
 > [!NOTE]
-> 通过按住并悬停在网络资源上，也可以访问发起方 `Shift` 和依赖关系信息。  导航到 [查看发起方和依赖项][DevToolsNetworkReferenceViewInitiatorsDependencies]。  
+> 通过按住并悬停在网络资源上，也可以访问发起方 `Shift` 和依赖关系信息。  导航到 [查看发起方和依赖项][DevToolsNetworkReferenceDisplayInitiatorsDependencies]。  
 
 Chromium问题[#842488][CR842488]  
 
@@ -328,13 +328,13 @@ Chromium问题[#1004203][CR1004203]
 
 <!-- links -->  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
-[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "使用 DevTools Microsoft Edge中的覆盖工具查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
-[DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "模拟移动视区 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"  
-[DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "检查 Microsoft Edge DevTools |Microsoft Docs"  
-[DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "视图发起方和依赖关系 - 网络分析参考|Microsoft Docs"  
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "调试程序Microsoft Edge Visual Studio Code扩展|Microsoft Docs"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "扩展Microsoft Edge Visual Studio Code元素|Microsoft Docs"  
+[DevToolsCommandMenuIndex]: ../../../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
+[DevToolsCoverageIndex]: ../../../coverage/index.md "使用 DevTools Microsoft Edge中的覆盖工具查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
+[DevToolsDeviceModeIndex]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视区 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"  
+[DevToolsNetworkIndex]: ../../../network/index.md "检查 Microsoft Edge DevTools |Microsoft Docs"  
+[DevToolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "显示发起方和依赖项 - 网络分析参考|Microsoft Docs"  
+[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "调试程序Microsoft Edge Visual Studio Code扩展|Microsoft Docs"  
+[VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "扩展Microsoft Edge Visual Studio Code元素|Microsoft Docs"  
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
 
@@ -350,7 +350,6 @@ Chromium问题[#1004203][CR1004203]
 
 [AccessibilityInsights]: https://aka.ms/a11yinsights "辅助功能见解"  
 
-[DwarfHome]: https://dwarfstd.org "百万家庭"  
 [GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools 的审核面板限制 - GoogleChrome/lighthouse |GitHub"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "新问题 - MicrosoftDocs/edge-developer"  
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge 预览频道"  
@@ -382,4 +381,4 @@ Chromium问题[#1004203][CR1004203]
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
 description: 打开命令菜单并运行"禁用 JavaScript"命令。
-title: 使用 Microsoft Edge DevTools 禁用 JavaScript
+title: 使用开发人员工具Microsoft Edge JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 665181b14e6fa5e86950a27822d52395f49f5b92
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: c9b5605aff5680ff0f44386c4a69e4c9f7c08cc8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519350"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564159"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519350"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="disable-javascript-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 禁用 JavaScript  
+# <a name="disable-javascript-with-microsoft-edge-devtools"></a>使用开发人员工具Microsoft Edge JavaScript  
 
 若要在浏览器不支持 JavaScript 时查看网页的呈现效果，请暂时关闭 JavaScript。
 
@@ -80,4 +79,4 @@ ms.locfileid: "11519350"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

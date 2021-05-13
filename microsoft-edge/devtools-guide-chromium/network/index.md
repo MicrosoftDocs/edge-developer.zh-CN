@@ -3,16 +3,16 @@ description: 有关 Microsoft Edge DevTools 中最受欢迎的网络相关功能
 title: 检查 Microsoft Edge DevTools 中的网络活动
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439694"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565041"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439694"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-network-activity-in-microsoft-edge-devtools"></a>检查 Microsoft Edge DevTools 中的网络活动  
 
 这是一个动手教程，介绍了一些最常用的 DevTools 功能，这些功能与检查页面的网络活动相关。  
@@ -389,4 +388,4 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

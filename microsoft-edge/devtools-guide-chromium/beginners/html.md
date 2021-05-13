@@ -3,16 +3,16 @@ description: HTML 和 DOM 入门
 title: 适合初学者的 DevTools：HTML 和 DOM 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools
-ms.openlocfilehash: 6ca27b720a17928545712666e43495c4da2fb880
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
-ms.translationtype: HT
+ms.openlocfilehash: d2893021f5e19ffb714215b27edadba08c8d6f71
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397927"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564565"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397927"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>适合初学者的 DevTools：HTML 和 DOM 入门  
 
 这是一系列教程中第一个介绍 Web 开发基础知识的教程。  了解一组 Web 开发人员工具（名为 Microsoft Edge DevTools）可能会提高工作效率。  
@@ -269,18 +268,24 @@ ms.locfileid: "11397927"
     
     :::row:::
        :::column span="":::
+          &nbsp;  
+       :::column-end:::
+       :::column span="":::
+          `<nav>`节点现在显示在页面顶部。  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="":::
           :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="将导航节点拖动到顶部" lightbox="../media/beginners-html-reorder2.msft.png":::
              将导航节点拖动到顶部  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          `<nav>`节点现在显示在页面顶部。  
-          
           :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="导航节点位于页面顶部" lightbox="../media/beginners-html-reorder3.msft.png":::
              导航节点位于页面顶部  
           :::image-end:::  
        :::column-end:::
-   :::row-end:::  
+    :::row-end:::  
     
 ### <a name="delete-a-node"></a>删除节点  
 
@@ -373,7 +378,7 @@ ms.locfileid: "11397927"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者 [Katherine Jackson][KatherineJackson] \(技术作家 Intern，Chrome DevTools\）。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Writer][KatherineJackson] \ (Technical Writer，Chrome DevTools\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
@@ -381,5 +386,5 @@ ms.locfileid: "11397927"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

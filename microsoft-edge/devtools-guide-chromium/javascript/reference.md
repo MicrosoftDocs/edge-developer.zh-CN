@@ -3,16 +3,16 @@ description: 在此 Microsoft Edge DevTools 调试功能的全面参考中发现
 title: 使用调试程序功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 6fb90a70e0aac9f556fa9f5f02afee1fd5b4962e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 6b15d317d4c720ab5ad76b7047532df101f69376
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519602"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564124"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11519602"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="use-the-debugger-features"></a>使用调试程序功能
 
-本文介绍了如何使用 Microsoft Edge DevTools 中的调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅使用断点 [暂停代码][DevToolsJavascriptBreakpoints]。  
+本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅使用断点 [暂停代码][DevToolsJavascriptBreakpoints]。  
 
-若要了解调试的基础知识，请导航到 [Microsoft Edge DevTools][DevToolsJavascriptGetStarted]中的调试 JavaScript 入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
+若要了解调试的基础知识，请导航到[Microsoft Edge DevTools][DevToolsJavascriptGetStarted]中调试 JavaScript 的入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
 
 ## <a name="view-and-edit-javascript-code"></a>查看和编辑 JavaScript 代码
 
@@ -43,7 +42,7 @@ ms.locfileid: "11519602"
 1.  导航到 **"源"** 工具。  
 1.  在 **导航器窗格中** ，选择你的文件，以在编辑器窗格中 **打开** 它。
 1.  在" **编辑器"** 窗格中，编辑文件。  
-1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 进行保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。  
+1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 进行保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge。  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="编辑器窗格" lightbox="../media/javascript-sources-html-minified.msft.png":::
        “**编辑器**”窗格  
@@ -308,7 +307,7 @@ function animate() {
     
 ### <a name="mark-a-script-as-library-code-from-settings"></a>在设置中将脚本标记为库代码  
 
-若要从"设置"中标记单个脚本或脚本**模式：**  
+若要标记脚本的单个脚本或脚本模式 **，设置：**  
 
 1.  打开“[设置][DevToolsCustomize]”。  
 1.  导航到“**库代码**”设置。  
@@ -328,9 +327,9 @@ function animate() {
 
 ## <a name="see-also"></a>另请参阅  
 
-*   [Microsoft Edge DevTools][DevToolsJavascriptGetStarted] 中的调试 JavaScript 入门 - 使用现有代码和屏幕捕获的简单简短教程。
+*   [入门调试 JavaScript 在 Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - 使用现有代码的简单简短教程，包含屏幕捕获。
 *   [源工具概述][DevToolsSourcesIndex] - **源工具** 包括 JavaScript 调试程序和编辑程序。
-*   [使用 Microsoft Edge DevTools 禁用 JavaScript。][DevToolsJavascriptDisable]
+*   [使用 DevTools Microsoft Edge JavaScript。][DevToolsJavascriptDisable]
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
@@ -355,4 +354,4 @@ function animate() {
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

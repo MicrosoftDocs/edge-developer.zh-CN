@@ -3,16 +3,16 @@ description: 如何从开发人员工具的应用程序面板中查看Microsoft 
 title: 使用 DevTools Microsoft Edge应用程序缓存数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: cbe6623aa3132db4d01cd6b440702eb157525eed
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: ec0d1a003e621ecc2220c3eb0d03992bcd8fffa1
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519140"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565020"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,11 +27,12 @@ ms.locfileid: "11519140"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge应用程序缓存数据  
 
 > [!WARNING]
 > 应用程序缓存 API [正在从 Web 平台中删除][HTMLStandardOfflineWebApplications]。  
+
+<!--todo: Replace [HTMLStandardOfflineWebApplications] with [WebDevAppcacheRemoval].  -->  
 
 本指南演示如何使用[DevTools Microsoft Edge检查][MicrosoftEdgeDevTools][应用程序缓存][MDNWebAPIsWindowApplicationCache]资源。  
 
@@ -81,6 +82,8 @@ ms.locfileid: "11519140"
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "应用程序缓存缓存中的|MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache - Web API |MDN"  
 
+[WebDevAppcacheRemoval]: https://web.dev/appcache-removal "准备 AppCache 删除|web.dev"  
+
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
@@ -91,4 +94,4 @@ ms.locfileid: "11519140"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

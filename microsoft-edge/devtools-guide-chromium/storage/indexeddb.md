@@ -3,16 +3,16 @@ description: 如何使用应用程序面板和代码段查看和更改 IndexedDB
 title: 使用 Microsoft Edge DevTools 查看和更改 IndexedDB 数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: b0927ab436d1278f50b0dee099ba3526e5506762
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439708"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564803"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439708"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-change-indexeddb-data-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看和更改 IndexedDB 数据  
 
 本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看和更改 [IndexedDB][MDNIndexedDBAPI] 数据。  本文假定你熟悉 DevTools。  本文还假定你熟悉 IndexedDB。  如果没有，导航到“[使用 IndexedDB][MDNUsingIndexedDB]”。  
@@ -36,7 +35,7 @@ ms.locfileid: "11439708"
 
 1.  选择“**应用程序**”选项卡以打开**应用程序**工具。  “**清单**”窗格通常默认打开。  
     
-    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="“清单”窗格" lightbox="../media/storage-application-manifest-empty.msft.png":::
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest-empty.msft.png":::
        “**清单**”窗格  
     :::image-end:::  
     
@@ -175,4 +174,4 @@ ms.locfileid: "11439708"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

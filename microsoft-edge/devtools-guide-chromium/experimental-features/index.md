@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: c76830cb8bbcc597aa026f58e1926cd2f9bc2d62
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
-ms.translationtype: HT
+ms.openlocfilehash: 8f85bab4b1229a13f3b0185c65da900573380811
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11439582"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564236"
 ---
 # <a name="experimental-features"></a>试验功能  
 
@@ -247,7 +247,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 *   向 [@EdgeDevTools][TwitterEdgedevtools] 发送推文  
     
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的发送反馈图标" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   Microsoft Edge DevTools 中的**发送反馈**图标  
+   Microsoft Edge DevTools 中的“**发送反馈**”图标  
 :::image-end:::  
 
 <!--  
@@ -264,6 +264,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools ":::no-loc（为 DevTools 中的任何操作编辑键盘快捷方式）::: | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code ":::no-loc（将 DevTools 中的键盘快捷方式与 Microsoft Visual Studio Code 相匹配）::: | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "在 DevTools Microsoft Edge中模拟双屏幕和可折叠|Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "在 Microsoft Edge DevTools 中通过设备模式模拟移动设备 | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"  
 [DevtoolsIssuesIndex]: ../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
@@ -271,8 +272,6 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"  
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
-
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "在 Microsoft Edge DevTools 中模拟双屏幕可折叠设备 | Microsoft Docs"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 

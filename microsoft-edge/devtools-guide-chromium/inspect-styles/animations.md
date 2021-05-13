@@ -3,16 +3,16 @@ description: 使用 Microsoft Edge DevTools 动画检查器检查和修改动画
 title: 检查动画
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: a695517cb56da057e62293b5ca92b22058602f44
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439540"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564215"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439540"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-animations"></a>检查动画  
 
 使用 Microsoft Edge DevTools 动画检查器检查和修改动画。  
@@ -66,11 +65,11 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="使用主菜单的动画" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            使用主菜单的**动画**  
-    :::image-end:::  
+        :::image-end:::  
         
 *   打开**命令菜单**  
     1.  键入 `Drawer: Show Animations`。  
-
+        
 动画检查器将在控制台工具旁**打开**。  由于动画检查器是一个箱工具，因此你可以从任何 DevTools 面板使用动画检查器。  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="空动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
@@ -168,11 +167,6 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-(../media/animation-speed-buttons-icon.msft.png): ../media/animation-speed-buttons-icon.msft.png  
-(../media/replay-button-icon.msft.png): ../media/replay-button-icon.msft.png  
-
 <!-- links -->  
 
 > [!NOTE]
@@ -185,4 +179,4 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

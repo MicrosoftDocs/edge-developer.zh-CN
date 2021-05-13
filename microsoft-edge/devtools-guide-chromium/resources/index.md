@@ -1,18 +1,18 @@
 ---
 description: 按帧、域、类型或其他条件组织资源。
-title: 使用 Microsoft Edge DevTools 查看页面资源
+title: 使用 DevTools Microsoft Edge页面资源
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 818b93c1c07a93baa8972a530871d20446fd687f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 415ed45bf650aa6800ab674cce74179f783a82c7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519441"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565069"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11519441"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="view-page-resources-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge页面资源  
 
-# <a name="view-page-resources-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看页面资源  
+本指南指导你如何使用 Microsoft Edge Tools 查看网页的资源。  资源是页面为了正确显示而需要的文件。  资源示例包括 CSS、JavaScript 和 HTML 文件以及图像。  
 
-本指南指导你如何使用 Microsoft Edge DevTools 查看网页的资源。  资源是页面为了正确显示而需要的文件。  资源示例包括 CSS、JavaScript 和 HTML 文件以及图像。  
-
-本指南假定你熟悉 Web 开发和 Microsoft Edge [][MDNLearnWebDevelopment] [DevTools][MicrosoftEdgeDevTools]的基础知识。  
+本指南假定你熟悉 Web 开发和开发工具Microsoft Edge[基础知识][MicrosoftEdgeDevTools]。 [][MDNLearnWebDevelopment]  
 
 ## <a name="open-resources"></a>打开资源  
 
@@ -160,9 +159,9 @@ ms.locfileid: "11519441"
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选 - 检查 Microsoft Edge DevTools |Microsoft Docs"  
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "检查资源的详细信息 - 检查 Microsoft Edge DevTools |Microsoft Docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "记录网络活动 - 检查 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "检查资源的详细信息 - 检查开发人员工具Microsoft Edge中的网络|Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"  
 
 [MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>：内联 Frame 元素|MDN"  
 [MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "了解 Web 开发|MDN"  
@@ -177,4 +176,4 @@ ms.locfileid: "11519441"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

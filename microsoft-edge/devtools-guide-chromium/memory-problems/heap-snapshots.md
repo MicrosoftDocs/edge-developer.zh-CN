@@ -3,16 +3,16 @@ description: 了解如何使用 DevTools 堆Microsoft Edge器记录堆快照并�
 title: 如何记录堆快照
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: ce7a6f972bed386f96312808428bd74f1241668f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 5f097cc45facc7f366a99a9564cf6f3d443f2058
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397802"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565013"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397802"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="how-to-record-heap-snapshots"></a>如何记录堆快照  
 
 了解如何使用 DevTools 堆Microsoft Edge器记录堆快照并查找内存泄漏。  
@@ -285,5 +284,5 @@ leafRef = null;
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

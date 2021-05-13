@@ -3,16 +3,16 @@ description: 使用媒体工具查看信息并按浏览器选项卡调试媒体�
 title: 查看和调试媒体播放器信息
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0d2a60c31d5239a4b47102ae96a713b8bfcf46f3
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398404"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564061"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398404"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-debug-media-players-information"></a>查看和调试媒体播放器信息  
 
-使用**** Microsoft Edge DevTools 中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。  
+使用**** DevTools Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。  
 
 ## <a name="open-the-media-tool"></a>打开媒体工具  
 
@@ -76,7 +75,7 @@ ms.locfileid: "11398404"
     
 ### <a name="remote-debugging"></a>远程调试  
 
-从 Windows 或 macOS 计算机查看 Android 设备上的媒体播放器信息。  
+在 Android 设备上从计算机或 macOS Windows媒体播放器信息。  
 
 1.  若要设置远程调试，请导航到开始 [远程调试 Android 设备][DevtoolsGuideChromiumRemoteDebuggingIndex]。  
 1.  远程查看媒体播放器信息。  
@@ -117,7 +116,7 @@ ms.locfileid: "11398404"
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "在 DevTools (打开 Microsoft Edge) Chromium |Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "打开Microsoft Edge (Chromium) DevTools |Microsoft Docs"  
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"  
 
@@ -133,5 +132,5 @@ ms.locfileid: "11398404"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
 

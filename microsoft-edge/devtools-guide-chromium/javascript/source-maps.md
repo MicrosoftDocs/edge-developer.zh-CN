@@ -3,16 +3,16 @@ description: 即使组合、缩小或编译客户端代码，也保持其可读�
 title: 将预处理的代码映射到源代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c04d1ec02b188cc7ec8ab2598b395dbeb4431c46
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 3240e437a917dd7074a0584b91dcc6c34576ca24
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519413"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564047"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,23 +27,22 @@ ms.locfileid: "11519413"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="map-preprocessed-code-to-source-code"></a>将预处理的代码映射到源代码  
 
 即使组合、缩小或编译客户端代码，也保持其可读和可调试。  使用源映射将源代码映射到已编译的代码。  
 
 ### <a name="summary"></a>摘要  
 
-*   使用"源地图"将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。  
-*   只能使用能够生成源地图的预处理器。  
-*   验证 Web 服务器能否提供源地图。  
+*   使用 source 地图将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。  
+*   只能使用能够生成源处理器的预处理器地图。  
+*   验证 Web 服务器能否为源服务器地图。  
     
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
 ## <a name="get-started-with-preprocessors"></a>预处理器入门  
 
-本文介绍了如何在 DevTools 源工具中与 JavaScript 源映射进行交互。  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
+本文介绍如何在 DevTools 源工具地图 JavaScript Source 对象进行交互。  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
@@ -55,29 +54,29 @@ ms.locfileid: "11519413"
 <!--todo: add link to display the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-通常将以下类型的预处理器与源地图结合使用：  
+通常将以下类型的预处理器与 Source 地图：  
 
 *   Transpilers [\ (，Traceur][BabelJS] [][GitHubWikiGoogleTraceurCompiler]\)   
 *   Compilers \ ([Closure Compiler][GitHubGoogleClosureCompiler]， [TypeScript][|::ref1::|Main]， [CoffeeScript][|::ref2::|Main]，[则 ) ][DartMain]  
 *   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)   
     
-## <a name="source-maps-in-devtools-sources-tool"></a>DevTools 源工具中的源地图  
+## <a name="source-maps-in-devtools-sources-tool"></a>DevTools 地图工具中的源源  
 
-来自预处理器的源地图除了缩小文件外，还会导致 DevTools 加载原始文件。  然后，使用原始文件设置断点并逐步执行代码。  同时，Microsoft Edge 实际上是在运行缩小代码。  通过运行代码，你可以错觉运行生产中的开发网站。  
+来自地图的源文件会导致 DevTools 加载原始文件以及缩小的文件。  然后，使用原始文件设置断点并逐步执行代码。  同时，Microsoft Edge运行缩小代码。  通过运行代码，你可以错觉运行生产中的开发网站。  
 
-在 DevTools 中运行源地图时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 中的源地图使用源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。  
+在 DevTools 地图源客户端时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。  
 
-### <a name="enable-source-maps-in-settings"></a>在设置中启用源地图  
+### <a name="enable-source-maps-in-settings"></a>在设置地图源源  
 
-默认情况下启用源地图<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \ (`...` \) > **Settings**.  在首选项**窗格的****源下**，启用**JavaScript 源映射**。  还可以启用"启用**CSS 源映射"。**  
+源地图默认启用<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \ (`...` \) >**设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**  
 :::image-end:::  
 
-### <a name="debugging-with-source-maps"></a>使用源地图调试  
+### <a name="debugging-with-source-maps"></a>使用 Source 地图  
 
-调试代码并启用源地图时，源地图显示在两处：  
+调试代码并启用地图时，源地图显示在两处：  
 
 1.  在控制台 \ (源的链接应该是原始文件，而不是生成的\)   
 1.  单步执行代码 \ (调用堆栈中的链接应打开原始源文件\)   
@@ -146,6 +145,6 @@ ms.locfileid: "11519413"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[PaulBakaus]: https://developers.google.com/web/resources/contributors/pbakaus  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus  

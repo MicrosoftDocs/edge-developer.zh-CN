@@ -3,16 +3,16 @@ description: 打开控制台，创建一个动态表达式，然后将表达式�
 title: 跟踪哪些元素有焦点
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: e7d7bc9ebf8dd891bf7531d8dd283801a01fc3c1
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439168"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564593"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439168"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="track-which-element-has-focus"></a>跟踪哪些元素有焦点  
 
 假设正在测试页面的键盘导航辅助功能。  使用`Tab`键浏览页面时，聚焦环有时会消失，因为具有焦点的元素被隐藏。  
@@ -68,4 +67,4 @@ ms.locfileid: "11439168"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

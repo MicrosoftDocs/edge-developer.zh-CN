@@ -3,16 +3,16 @@ description: CSS 网格调试功能、使用网络控制台编辑和重播请求
 title: 'DevTools (Microsoft Edge 85) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 5bd013fae617e9759aa91949acccf936d85f7160
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 75642a7f0fa8d6fae2f4daead84e2fc77df21e29
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514359"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564926"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -256,7 +256,7 @@ Chromium问题[#1071432][CR1071432]
 
 ### <a name="line-wise-copy-and-cut-in-sources-panel"></a>在"源面板"中按照行进行复制和剪切  
 
-当在"源"面板编辑器中执行复制[][DevtoolsSourcesEditCssJavascript]或剪切操作时，DevTools 会复制或剪切当前内容行。  
+当在"源"面板编辑器中执行复制[][DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]或剪切操作时，DevTools 会复制或剪切当前内容行。  
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。][VisualStudioCode] ****
@@ -334,13 +334,13 @@ Chromium 问题 [#1041830][CR1041830]
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "使用 Microsoft Edge 开发工具命令菜单运行命令"
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
-[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"
-[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "编辑 CSS 和 JavaScript - 源面板概述|Microsoft Docs"  
-[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../../../command-menu.md "使用 Microsoft Edge 开发工具命令菜单运行命令"
+[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
+[DevtoolsIssues]: ../../../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"
+[DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "使用编辑器窗格查看或编辑文件 - 源面板概述|Microsoft Docs"  
+[DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "CSS-in-JS 框架样式编辑|CodePen"
 [CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "将重复消息发送到控制台|CodePen"
@@ -420,5 +420,5 @@ Chromium 问题 [#1041830][CR1041830]
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

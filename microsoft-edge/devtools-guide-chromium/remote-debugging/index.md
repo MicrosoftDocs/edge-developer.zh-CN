@@ -3,16 +3,16 @@ description: 从 Windows 或 macOS 计算机在 Android 设备上远程调试实
 title: Android 设备远程调试入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: d69fd4832991826c76f47daea399bdd89e981bb4
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: d5a5ea8faef40925fb0fb986eb984ac9ae4f051b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461211"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565104"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -159,7 +159,7 @@ ms.locfileid: "11461211"
 
 [AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari Web 开发工具| Apple 开发人员"  
 
-[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "在移动设备上调试 | Brightcove 支持"  
+[BrightcoveSupportDebuggingMobileDevices]: https://general.support.brightcove.com/developer/debugging-mobile-devices.html "在移动设备上调试 | Brightcove 支持"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
 
@@ -177,4 +177,4 @@ ms.locfileid: "11461211"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

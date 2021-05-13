@@ -1,18 +1,18 @@
 ---
 description: 打开传感器工具，然后从"地理位置"列表中选择坐标。
-title: 使用 Microsoft Edge DevTools 替代地理位置
+title: 使用 DevTools Microsoft Edge地理位置
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 8f6ad09b2f8db110f6743aae32e16cc9b1185400
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 5e162d5591dec4013a899a16b0c56fd09d58610f
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398999"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564327"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,14 +27,13 @@ ms.locfileid: "11398999"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="override-geolocation-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 替代地理位置  
+# <a name="override-geolocation-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge地理位置  
 
 许多网站利用用户位置来为用户提供更相关的体验。  例如，在用户授予网站访问当前用户位置的权限后，天气网站可能会显示用户区域中的本地天气预报。  
 
 <!--todo: add link to user location section when available -->  
 
-如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要替代 Microsoft Edge DevTools 中的地理位置，请完成以下操作。  
+如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要在 DevTools 中Microsoft Edge地理位置，请完成以下操作。  
 
 1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
@@ -67,4 +66,4 @@ ms.locfileid: "11398999"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: 在日程表上使用分配检测来查找未正确进行垃圾回�
 title: 如何在时间线上使用分配检测
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a02249840256b1e5a2469a253d765eb888527662
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397816"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564082"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397816"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # <a name="how-to-use-allocation-instrumentation-on-timeline"></a>如何在时间线上使用分配检测  
 
 在 **日程表上使用分配** 检测来查找未正确进行垃圾回收的对象，并继续保留内存。  
@@ -91,13 +90,13 @@ ms.locfileid: "11397816"
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open/index.md "在 DevTools (打开 Microsoft Edge) Chromium |Microsoft Docs"
+[DevToolsOpenIndex]: ../open/index.md "打开Microsoft Edge (Chromium) DevTools |Microsoft Docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "按功能调查内存分配 - 修复内存|Microsoft Docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 渠道"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "下载Microsoft Edge频道"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
@@ -109,5 +108,5 @@ ms.locfileid: "11397816"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

@@ -3,16 +3,16 @@ description: 模拟命令菜单中的颜色视觉缺陷、停靠到左侧等。
 title: DevTools （Microsoft Edge 83）中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c329dfba980b882b6e538447e52902e4d0cc985b
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: e5fa4b066e47b0779fcdf2b3e814c598e9615ccf
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514415"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564950"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -105,7 +105,7 @@ Chromium 问题 [#1050999][CR1050999]
 
 **"更改" 工具** 跟踪你对 DevTools 中的 CSS 或 JavaScript 所做的任何更改。  可以使用"更改"工具快速**** 显示所有更改，并返回编辑器/IDE。  
 
-若要打开**更改工具，** 请在 `Ctrl` + `Shift` + `P` DevTools 中选择以打开命令[菜单][DevToolsCommandMenuIndex]并键入 `changes` 。  选择并运行"**显示更改"** 命令以在**** DevTools 箱中打开"更改"工具。  
+若要打开**更改工具，** 请在 `Ctrl` + `Shift` + `P` DevTools 中选择以打开命令[菜单][DevtoolsCommandMenuIndex]并键入 `changes` 。  选择并运行"**显示更改"** 命令以在**** DevTools 箱中打开"更改"工具。  
 
 对缩小文件进行更改后，"更改"工具允许您水平滚动**** 以显示所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。  
 
@@ -123,7 +123,7 @@ Chromium 问题 [#963183][CR963183]
 
 ### <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷  
 
-打开["渲染" 选项卡][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] ，使用新的"**模拟视觉缺陷**" 功能，更好地了解有不同类型视觉缺陷的人们如何体验你的网站。  
+打开["渲染" 选项卡][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool] ，使用新的"**模拟视觉缺陷**" 功能，更好地了解有不同类型视觉缺陷的人们如何体验你的网站。  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="模拟模糊的视觉效果" lightbox="../../media/2020/03/vision.msft.png":::
    模拟模糊的视觉效果  
@@ -149,7 +149,7 @@ Chromium 问题 [#1003700][CR1003700]
 
 ### <a name="emulate-locales"></a>模拟语言环境  
 
-通过在**传感器**  >  **位置**中设置位置来模拟语言环境。 [打开**命令菜单** ][DevToolsCommandMenuIndex]，然后键入`Sensors`以访问**传感器**选项卡。执行完这些操作后，DevTools 会修改当前的默认语言环境，从而影响以下代码。  
+通过在**传感器**  >  **位置**中设置位置来模拟语言环境。 [打开**命令菜单** ][DevtoolsCommandMenuIndex]，然后键入`Sensors`以访问**传感器**选项卡。执行完这些操作后，DevTools 会修改当前的默认语言环境，从而影响以下代码。  
 
 *   `Intl.*` 例如，API： `new Intl.NumberFormat().resolvedOptions().locale`  
 *   其他可识别语言环境的 JavaScript API，例如`String.prototype.localeCompare`和`*.prototype.toLocaleString`，例如： `123_456..toLocaleString()`  
@@ -207,7 +207,7 @@ Chromium 问题 [#1041830][CR1041830]
 
 ### <a name="dock-to-left-from-the-command-menu"></a>从 "命令" 菜单向左停靠  
 
-打开 ["命令菜单"][DevToolsCommandMenuIndex]，并运行" `Dock to left` "命令以将 DevTools 移到视线的左侧。  
+打开 ["命令菜单"][DevtoolsCommandMenuIndex]，并运行" `Dock to left` "命令以将 DevTools 移到视线的左侧。  
 
 :::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools 停靠在视线左侧" lightbox="../../media/2020/03/dock-to-left.msft.png":::
    DevTools 停靠在视线左侧  
@@ -284,17 +284,18 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 
 [WhatsNew81]: ../01/devtools.md "DevTools 中的新增功能 (Microsoft Edge 81) | Microsoft Docs"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge 开发工具命令菜单运行命令"  
-[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "使用颜色选取器更改颜色|Microsoft Docs"  
-[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "查看和更改 CSS 入门 | Microsoft 文档"  
-[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "从主菜单菜单更改|Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "查看主线程活动|Microsoft Docs"  
-[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "使用&quot;呈现&quot;选项卡功能分析|Microsoft Docs"  
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 应用上的渐进式 Web |Microsoft Docs"  
-[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "远程调试 Windows 10 设备|Microsoft Docs"  
-[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "代码行断点 - 如何在 Microsoft Edge DevTools |Microsoft Docs"
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "按属性筛选请求 - 网络分析参考|Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "使用 Microsoft Edge 开发工具命令菜单运行命令 | Microsoft Docs"  
+[DevtoolsCssIndex]: ../../../css/index.md "查看和更改 CSS 入门 | Microsoft 文档 | Microsoft Docs"  
+[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "使用颜色选取器更改颜色|Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools |Microsoft Docs"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: ../../../customize/placement.md#change-placement-from-the-main-menu "从主菜单菜单更改|Microsoft Docs"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "使用呈现工具分析呈现|Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "查看主线程活动|Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "代码行断点 - 如何使用 DevTools Microsoft Edge中的断点暂停|Microsoft Docs"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "按属性筛选请求 - 网络分析参考|Microsoft Docs"  
+[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "远程调试 Windows 10 设备|Microsoft Docs"  
+
+[ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"  
 
 [WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows 设备门户概述"  
 
@@ -305,17 +306,18 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "在适用于 Microsoft Edge 的稳定频道版本上更新"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "新问题 - MicrosoftDocs/edge-developer - GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Devtools%20Docs%20Feedback] "新问题 - MicrosoftDocs/edge-developer - GitHub"  
 
-[MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
+[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
+[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio 代码"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | 发布推文"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter 帐户"  
-[TheWebWeWant]: https://webwewant.fyi "我们想要的网络"  
+[TheWebWeWantMain]: https://webwewant.fyi "我们想要的网络"  
 
 [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "色盲类型"  
+<!-- this link must be http, not https -->  
 
 [MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "接受语言|MDN"  
 [MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Cookie 设置|MDN"  
@@ -349,4 +351,4 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

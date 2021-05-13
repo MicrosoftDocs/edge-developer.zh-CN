@@ -1,18 +1,18 @@
 ---
 description: 打开"呈现"工具，然后选择"模拟 CSS 媒体>打印"。
-title: '强制 Microsoft Edge DevTools 使用 CSS 打印媒体类型 (打印预览模式) '
+title: '强制Microsoft Edge开发人员工具进入打印预览模式 (CSS 打印媒体类型) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0123b7abf475212304f654c04bc232e3e96f0bda
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6c49d956a9a7185b162ca8e2996e7b3e715b40ab
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399076"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564425"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11399076"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>强制 Microsoft Edge DevTools 进入打印预览模式  
+# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>强制Microsoft Edge开发人员工具进入打印预览模式  
 
 打印 [媒体查询][MDNUsingMediaQueries] 控制页面在打印时的外观。  若要强制页面进入打印预览模式：  
 
@@ -68,4 +67,4 @@ ms.locfileid: "11399076"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

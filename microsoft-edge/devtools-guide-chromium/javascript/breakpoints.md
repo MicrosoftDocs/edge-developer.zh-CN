@@ -3,16 +3,16 @@ description: 了解在 Microsoft Edge 开发工具中暂停代码的所有方法
 title: 如何在 Microsoft Edge 开发工具中使用断点暂停代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: dd865f346046cb6706e71fdb3cc869950b2b4352
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: fda536deb7177b933013120fc11b0896acfbbe5c
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519357"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564173"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,12 +27,11 @@ ms.locfileid: "11519357"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>如何在 Microsoft Edge 开发工具中使用断点暂停代码  
 
 使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请导航到 [开始在 Microsoft Edge DevTools][DevtoolsJavascriptIndex]中调试 JavaScript。
+有关使用现有网页的介绍性教程，请导航到在开发人员工具中Microsoft Edge [JavaScript 入门][DevtoolsJavascriptIndex]。
 
 ## <a name="overview-of-when-to-use-each-breakpoint-type"></a>何时使用各断点类型的概述  
 
@@ -219,7 +218,7 @@ debug(hey); // This does not work.  hey() is out of scope.
 ## <a name="related-articles"></a>相关文章
 
 *   [使用调试器功能][DevtoolsJavascriptReference] - 使用"源"工具 **中的调试器** UI。
-*   [在 Microsoft Edge DevTools][DevtoolsJavascriptIndex] 中调试 JavaScript 入门 - 使用现有网页的介绍性教程。
+*   [在 DevTools][DevtoolsJavascriptIndex] Microsoft Edge JavaScript 入门 - 使用现有网页的介绍性教程。
 *   [源工具概述][DevtoolsSourcesIndex]- 调试器是源工具**** 的一部分，其中包括 JavaScript 编辑器。
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
@@ -246,4 +245,4 @@ debug(hey); // This does not work.  hey() is out of scope.
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

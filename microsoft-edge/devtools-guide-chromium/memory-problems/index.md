@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge 和 DevTools 查找影响页面�
 title: 修复内存问题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: afaea8ca561bd975490d9153cda40877786a0f08
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3b2405d23dd6ee349484c9ba66d195e3ed12144b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397830"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565027"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397830"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="fix-memory-problems"></a>修复内存问题  
 
 了解如何使用 Microsoft Edge 和 DevTools 查找影响页面性能的内存问题，包括内存泄漏、内存不足和频繁垃圾回收。  
@@ -231,7 +230,7 @@ DevTools 显示按功能分配内存的细目。  默认视图为 **"高 (从 **
 
 如果页面似乎频繁暂停，则可能有垃圾回收问题。  
 
-可以使用 Microsoft Edge 浏览器任务管理器或性能内存记录来发现频繁垃圾回收。  在 Microsoft Edge 浏览器任务管理器中，经常出现和下降 **的内存** 或 **JavaScript 内存** 值表示频繁垃圾回收。  在性能记录中，频繁更改 \ (和下降\) JS 堆或节点计数图指示频繁进行垃圾回收。  
+您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中，频繁更改 \ (和下降\) JS 堆或节点计数图指示频繁进行垃圾回收。  
 
 确定问题后，可以在时间线记录上使用 **Allocation instrumentation** 来查明内存的分配位置以及导致分配的函数。  
 
@@ -263,4 +262,4 @@ DevTools 显示按功能分配内存的细目。  默认视图为 **"高 (从 **
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: 用户期望交互式和流畅的页面。  像素管道中的每�
 title: 分析运行时性能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d5c37c188ae9038a7baafc936d2a02299def6366
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397998"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564705"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397998"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="analyze-runtime-performance"></a>分析运行时性能  
 
 用户期望交互式和流畅的页面。  像素管道中的每个阶段都代表引入 jank 的机会。  了解用于识别和修复降低运行时性能的常见问题的工具和策略。  
@@ -177,7 +176,7 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 | 问题 | 示例 | 解决方案 |  
 |:--- |:--- |:--- |  
-| 影响响应或动画的画图风暴。  | 影响响应或动画的大画区或昂贵的画图。  | 避免绘制、升级要移动到其自己的图层的元素、使用转换和不透明度。  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| 画图响应或动画的风暴。  | 影响响应或动画的大画区或昂贵的画图。  | 避免绘制、升级要移动到其自己的图层的元素、使用转换和不透明度。  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
 | 影响动画的层爆炸。  | 过多元素的过度提示会 `translateZ(0)` 大大影响动画性能。  | 尽量少地提升至层，并且仅在你知道它提供切实改进时。  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
@@ -224,5 +223,5 @@ Check out the **Rendering** panel for further configurations that are able to he
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

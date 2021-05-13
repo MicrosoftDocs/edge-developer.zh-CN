@@ -3,16 +3,16 @@ description: 使用开发人员工具在本机 Android 应用中开始使用远�
 title: Android WebViews 远程调试入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 4d389473673791d91c38e252c919378c4725db6b
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 75d948465c62c63c9ccbe0fcd46616819a04e79d
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461492"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565076"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -102,5 +102,5 @@ The gray graphics listed with the Android WebView represent its size and positio
 [CCA4IL]: http://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
