@@ -3,16 +3,16 @@ description: 探索 Microsoft Edge DevTools 中用于查看和更改 CSS 的新�
 title: CSS 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: bddbf14e73f5c29bfd4757c9cd6d255f419c331f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 0680b08c9809698c1db6c186a7be76a93c31df4b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519329"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564474"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519329"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="css-reference"></a><span data-ttu-id="22c2c-104">CSS 参考</span><span class="sxs-lookup"><span data-stu-id="22c2c-104">CSS reference</span></span>  
 
 <span data-ttu-id="22c2c-105">在以下与查看和更改 CSS 相关的 Microsoft Edge DevTools 功能综合参考中发现新的工作流。</span><span class="sxs-lookup"><span data-stu-id="22c2c-105">Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.</span></span>  
@@ -573,4 +572,4 @@ ms.locfileid: "11519329"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

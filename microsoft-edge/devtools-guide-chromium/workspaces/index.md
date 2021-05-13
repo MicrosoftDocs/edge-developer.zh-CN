@@ -3,16 +3,16 @@ description: 了解如何将 DevTools 中所做的更改保存到磁盘。
 title: 使用工作区编辑文件
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 640bb80e01f776c763af053cf8354ce90cf52e93
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519420"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564663"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519420"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="edit-files-with-workspaces"></a><span data-ttu-id="dcf10-104">使用工作区编辑文件</span><span class="sxs-lookup"><span data-stu-id="dcf10-104">Edit files with Workspaces</span></span>  
 
 <span data-ttu-id="dcf10-105">本教程提供设置和使用 Workspace 的动手实践。</span><span class="sxs-lookup"><span data-stu-id="dcf10-105">This tutorial provides hands-on practice in setting up and using a Workspace.</span></span>  <span data-ttu-id="dcf10-106">将文件添加到 Workspace 后，在 DevTools 中的源代码中所做的更改将保存在本地计算机上，并且在您刷新网页后将保留。</span><span class="sxs-lookup"><span data-stu-id="dcf10-106">After you add files to a Workspace, the changes that you make in your source code within DevTools are saved on your local computer, and are preserved after you refresh the webpage.</span></span>  
@@ -303,4 +302,4 @@ If you have more feedback on the topics or anything else, please use any of the 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

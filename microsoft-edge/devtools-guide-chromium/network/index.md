@@ -3,16 +3,16 @@ description: 有关 Microsoft Edge DevTools 中最受欢迎的网络相关功能
 title: 检查 Microsoft Edge DevTools 中的网络活动
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439694"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565041"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439694"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-network-activity-in-microsoft-edge-devtools"></a><span data-ttu-id="72c7f-104">检查 Microsoft Edge DevTools 中的网络活动</span><span class="sxs-lookup"><span data-stu-id="72c7f-104">Inspect network activity in Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="72c7f-105">这是一个动手教程，介绍了一些最常用的 DevTools 功能，这些功能与检查页面的网络活动相关。</span><span class="sxs-lookup"><span data-stu-id="72c7f-105">This is a hands-on tutorial of some of the most commonly-used DevTools features related to inspecting network activity for a page.</span></span>  
@@ -69,7 +68,7 @@ ms.locfileid: "11439694"
     :::image-end:::  
     -->
     
-1.  <span data-ttu-id="72c7f-121">若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\)。</span><span class="sxs-lookup"><span data-stu-id="72c7f-121">To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="72c7f-122">将 **打开控制台** 工具。</span><span class="sxs-lookup"><span data-stu-id="72c7f-122">The **Console** tool opens.</span></span>  
+1.  <span data-ttu-id="72c7f-121">若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\)。</span><span class="sxs-lookup"><span data-stu-id="72c7f-121">To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="72c7f-122">将 **打开控制台** 工具。</span><span class="sxs-lookup"><span data-stu-id="72c7f-122">The **Console** tool opens.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        <span data-ttu-id="72c7f-124">**控制台**</span><span class="sxs-lookup"><span data-stu-id="72c7f-124">The **Console**</span></span>  
@@ -126,7 +125,7 @@ ms.locfileid: "11439694"
 <span data-ttu-id="72c7f-169">网络日志的列是可配置的。</span><span class="sxs-lookup"><span data-stu-id="72c7f-169">The columns of the Network Log are configurable.</span></span>  <span data-ttu-id="72c7f-170">您可以隐藏您未使用的列。</span><span class="sxs-lookup"><span data-stu-id="72c7f-170">You may hide columns that you are not using.</span></span>  
 <span data-ttu-id="72c7f-171">默认情况下，还有许多列处于隐藏状态，您可能会发现这些列很有用。</span><span class="sxs-lookup"><span data-stu-id="72c7f-171">There are also many columns that are hidden by default which you may find useful.</span></span>  
 
-1.  <span data-ttu-id="72c7f-172">将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \(右键单击\) ，然后选择"域 **"。**</span><span class="sxs-lookup"><span data-stu-id="72c7f-172">Hover on the header of the Network Log table, open the contextual menu \(right-click\), and choose **Domain**.</span></span>  <span data-ttu-id="72c7f-173">现在将显示每个资源的域。</span><span class="sxs-lookup"><span data-stu-id="72c7f-173">The domain of each resource is now shown.</span></span>  
+1.  <span data-ttu-id="72c7f-172">将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \ (右键单击\) ，然后选择"域 **"。**</span><span class="sxs-lookup"><span data-stu-id="72c7f-172">Hover on the header of the Network Log table, open the contextual menu \(right-click\), and choose **Domain**.</span></span>  <span data-ttu-id="72c7f-173">现在将显示每个资源的域。</span><span class="sxs-lookup"><span data-stu-id="72c7f-173">The domain of each resource is now shown.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用域列" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        <span data-ttu-id="72c7f-175">启用域列</span><span class="sxs-lookup"><span data-stu-id="72c7f-175">Enable the Domain column</span></span>  
@@ -166,7 +165,7 @@ ms.locfileid: "11439694"
 
 <span data-ttu-id="72c7f-194">屏幕截图显示网页在加载时的外观。</span><span class="sxs-lookup"><span data-stu-id="72c7f-194">Screenshots display how a webpage looks over time while it loads.</span></span>  
 
-1.  <span data-ttu-id="72c7f-195">Choose \(![ Network settings ](../media/settings-icon.msft.png) \) and turn on the Capture **screenshots** checkbox.</span><span class="sxs-lookup"><span data-stu-id="72c7f-195">Choose \(![Network settings](../media/settings-icon.msft.png)\) and turn on the **Capture screenshots** checkbox.</span></span>
+1.  <span data-ttu-id="72c7f-195">Choose \ (![ Network settings ](../media/settings-icon.msft.png) \) and turn on the Capture **screenshots** checkbox.</span><span class="sxs-lookup"><span data-stu-id="72c7f-195">Choose \(![Network settings](../media/settings-icon.msft.png)\) and turn on the **Capture screenshots** checkbox.</span></span>
 1.  <span data-ttu-id="72c7f-196">使用"空缓存"和"硬重新加载 **"工作流再次刷新** 页面。</span><span class="sxs-lookup"><span data-stu-id="72c7f-196">Refresh the page again using the **Empty Cache And Hard Reload** workflow.</span></span>  <span data-ttu-id="72c7f-197">如果需要 [有关操作方式的提醒](#simulate-a-slower-network-connection) ，请导航到"模拟较慢的连接"。</span><span class="sxs-lookup"><span data-stu-id="72c7f-197">Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.</span></span>  
     <span data-ttu-id="72c7f-198">Screenshots panel provides thumbnails of how the page looked at various points during the loading process.</span><span class="sxs-lookup"><span data-stu-id="72c7f-198">The Screenshots panel provides thumbnails of how the page looked at various points during the loading process.</span></span>  
     
@@ -208,7 +207,7 @@ ms.locfileid: "11439694"
     :::image-end:::  
     
     > [!TIP]
-    > <span data-ttu-id="72c7f-225">缩小文件后，选择 **响应** 面板底部的![格式  \（](../media/format-icon.msft.png) \ **） 按钮，以重新设置文件内容的格式供阅读。**</span><span class="sxs-lookup"><span data-stu-id="72c7f-225">When a file is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.</span></span>  
+    > <span data-ttu-id="72c7f-225">缩小文件后，选择 **响应** 面板底部的![格式  \（](../media/format-icon.msft.png)\*\*\*\* \ **） 按钮，以重新设置文件内容的格式供阅读。**</span><span class="sxs-lookup"><span data-stu-id="72c7f-225">When a file is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.</span></span>  
     
 1.  <span data-ttu-id="72c7f-226">选择" **计时"** 面板。</span><span class="sxs-lookup"><span data-stu-id="72c7f-226">Choose the **Timing** panel.</span></span>  <span data-ttu-id="72c7f-227">将显示资源的网络活动的细分。</span><span class="sxs-lookup"><span data-stu-id="72c7f-227">A breakdown of the network activity for the resource is displayed.</span></span>  
     
@@ -308,7 +307,7 @@ ms.locfileid: "11439694"
        <span data-ttu-id="72c7f-287">只显示 CSS 文件</span><span class="sxs-lookup"><span data-stu-id="72c7f-287">Show CSS files only</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="72c7f-288">若要同时显示脚本，请选择并按住 `Control` \(Windows、Linux\) 或 `Command` \(macOS\) ，然后选择**JS。**</span><span class="sxs-lookup"><span data-stu-id="72c7f-288">To also display scripts, select and hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.</span></span>  
+1.  <span data-ttu-id="72c7f-288">若要同时显示脚本，请选择并按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，然后选择**JS。**</span><span class="sxs-lookup"><span data-stu-id="72c7f-288">To also display scripts, select and hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        <span data-ttu-id="72c7f-290">只显示 CSS 和 JS 文件</span><span class="sxs-lookup"><span data-stu-id="72c7f-290">Show CSS and JS files only</span></span>  
@@ -389,4 +388,4 @@ ms.locfileid: "11439694"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

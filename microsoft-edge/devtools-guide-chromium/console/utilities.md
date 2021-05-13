@@ -3,16 +3,16 @@ description: 开发人员工具控制台中提供的便利Microsoft Edge引用�
 title: 控制台实用工具 API 参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c6a0356bd590809f9164aa62fd42156f901cef0f
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: 436f2807c5fab1723ca6cc93fddc68d9ecf12db7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483280"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564530"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -790,4 +790,4 @@ values(object);
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

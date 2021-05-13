@@ -3,16 +3,16 @@ description: 如何将 Microsoft Edge DevTools 移动到视区底部或左侧或
 title: '将Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 3c6dbf3e4a72b793997fcbe0970c88e4bee07caf
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519154"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564362"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519154"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a><span data-ttu-id="fd3db-104">将Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) </span><span class="sxs-lookup"><span data-stu-id="fd3db-104">Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)</span></span>  
 
 <span data-ttu-id="fd3db-105">默认情况下，DevTools 固定在视口窗口 (右侧) 。</span><span class="sxs-lookup"><span data-stu-id="fd3db-105">By default, DevTools is docked to the right of your viewport (window).</span></span>  <span data-ttu-id="fd3db-106">还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。</span><span class="sxs-lookup"><span data-stu-id="fd3db-106">You may also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.</span></span>
@@ -119,4 +118,4 @@ ms.locfileid: "11519154"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

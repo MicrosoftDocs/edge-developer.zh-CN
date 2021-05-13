@@ -3,16 +3,16 @@ description: 了解如何使用 Microsoft Edge 开发工具查找并修复 JavaS
 title: 在 Microsoft Edge DevTools 中调试 JavaScript 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: a60bd0c734df18ba7424cde6a828abbd9e7135a9
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 90a979cebcb74a118cb1d8ce88d48c7ac64c7a6d
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519371"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564089"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -254,4 +254,4 @@ function updateLabel() {
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

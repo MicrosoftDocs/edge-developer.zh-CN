@@ -3,16 +3,16 @@ description: 使用 Microsoft Edge 中的虚拟设备构建移动优先的网站
 title: 在 Microsoft Edge DevTools 中模拟移动设备
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439449"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564404"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439449"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a><span data-ttu-id="66df6-104">在 Microsoft Edge DevTools 中模拟移动设备</span><span class="sxs-lookup"><span data-stu-id="66df6-104">Emulate mobile devices in Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="66df6-105">使用“**设备仿真**”来大致了解你的页面在移动设备上的外观和响应方式。</span><span class="sxs-lookup"><span data-stu-id="66df6-105">Use **Device emulation** to approximate how your page looks and responds on a mobile device.</span></span>  <span data-ttu-id="66df6-106">Microsoft Edge DevTools 提供了一系列功能，可帮助你模拟移动设备。</span><span class="sxs-lookup"><span data-stu-id="66df6-106">The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.</span></span>  <span data-ttu-id="66df6-107">该系列包括以下功能。</span><span class="sxs-lookup"><span data-stu-id="66df6-107">The collection includes the following features.</span></span>  
@@ -217,7 +216,7 @@ ms.locfileid: "11439449"
 <span data-ttu-id="66df6-234">若要仅限制 CPU 而不限制网络，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="66df6-234">To throttle the CPU only and not the network, complete the following steps.</span></span>
 
 1.  <span data-ttu-id="66df6-235">选择“**性能**”面板，然后选择“**捕获设置**”\（![捕获设置](../media/capture-settings-icon.msft.png)\）。</span><span class="sxs-lookup"><span data-stu-id="66df6-235">Choose the **Performance** panel, and choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\).</span></span>
-1.  <span data-ttu-id="66df6-236">选择 **CPU**  > **速度降低至 1/4 1/6**。</span><span class="sxs-lookup"><span data-stu-id="66df6-236">Choose **CPU** > **4x slowdown** or **6x slowdown**.</span></span>
+1.  <span data-ttu-id="66df6-236">选择 **CPU**  > **速度降低至 1/4\*\*\*\* 1/6**。</span><span class="sxs-lookup"><span data-stu-id="66df6-236">Choose **CPU** > **4x slowdown** or **6x slowdown**.</span></span>
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="“性能”面板中的“CPU”列表" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
        <span data-ttu-id="66df6-238">“**性能**”面板中的“**CPU**”列表</span><span class="sxs-lookup"><span data-stu-id="66df6-238">The **CPU** list in the **Performance** panel</span></span>  
@@ -362,4 +361,4 @@ ms.locfileid: "11439449"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

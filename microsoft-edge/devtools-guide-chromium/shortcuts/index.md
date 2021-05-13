@@ -3,16 +3,16 @@ description: Microsoft Edge 开发工具键盘快捷方式的规范文档。
 title: Microsoft Edge 开发工具键盘快捷方式
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: f2b10bc763073632975248cd5a9caa523702e869
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519406"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565097"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519406"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="microsoft-edge-devtools-keyboard-shortcuts"></a><span data-ttu-id="a135f-104">Microsoft Edge 开发工具键盘快捷方式</span><span class="sxs-lookup"><span data-stu-id="a135f-104">Microsoft Edge DevTools keyboard shortcuts</span></span>  
 
 <span data-ttu-id="a135f-105">本文引用了 Microsoft Edge 开发工具中的键盘快捷方式。</span><span class="sxs-lookup"><span data-stu-id="a135f-105">This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.</span></span>
@@ -178,4 +177,4 @@ ms.locfileid: "11519406"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

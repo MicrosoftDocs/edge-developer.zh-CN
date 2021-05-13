@@ -3,16 +3,16 @@ description: 在 Microsoft Edge DevTools 中记录和分析性能所有方法的
 title: 性能分析引用
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 5cd7c4aee6eb5f0c48f783e250efa1ef69010fc4
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439687"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564348"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439687"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="performance-analysis-reference"></a><span data-ttu-id="765b1-104">性能分析引用</span><span class="sxs-lookup"><span data-stu-id="765b1-104">Performance analysis reference</span></span>  
 
 <span data-ttu-id="765b1-105">本页是与分析性能相关 Microsoft Edge DevTools 功能的综合参考。</span><span class="sxs-lookup"><span data-stu-id="765b1-105">This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.</span></span>  
@@ -594,4 +593,4 @@ ms.locfileid: "11439687"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

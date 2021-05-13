@@ -3,16 +3,16 @@ description: 有关打开命令菜单、运行命令、查看其他操作等的�
 title: 使用开发人员工具Microsoft Edge菜单运行命令
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: b815934da73f9f023629564da7bea14da166ff9b
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 973b440a27b0c4c06ba118fc09e4162a8fa346e8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519189"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564488"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519189"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a><span data-ttu-id="3ec11-104">使用开发人员工具Microsoft Edge菜单运行命令</span><span class="sxs-lookup"><span data-stu-id="3ec11-104">Run commands with the Microsoft Edge DevTools Command Menu</span></span>  
 
 <span data-ttu-id="3ec11-105">命令菜单提供了在 DevTools UI Microsoft Edge导航和完成常见任务（如[禁用 JavaScript）的快速方法][JavascriptDisable]。</span><span class="sxs-lookup"><span data-stu-id="3ec11-105">The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].</span></span>  <span data-ttu-id="3ec11-106">你可能熟悉命令调色板Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感[][VisualStudioCodeUICommandPalette]。</span><span class="sxs-lookup"><span data-stu-id="3ec11-106">You may be familiar with a similar feature in Microsoft Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.</span></span>  
@@ -78,4 +77,4 @@ ms.locfileid: "11519189"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

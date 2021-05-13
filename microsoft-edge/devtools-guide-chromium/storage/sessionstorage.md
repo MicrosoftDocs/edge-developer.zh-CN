@@ -3,16 +3,16 @@ description: 如何使用会话存储窗格和控制台查看和编辑 sessionSt
 title: 使用 Microsoft Edge DevTools 查看和编辑会话存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 6d686a6eb7bc6fca46d65c46fa9c5aee044ec052
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439659"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565062"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439659"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a><span data-ttu-id="27b44-104">使用 Microsoft Edge DevTools 查看和编辑会话存储</span><span class="sxs-lookup"><span data-stu-id="27b44-104">View and edit Session Storage with Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="27b44-105">本指南将演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [sessionStorage][MDNSessionStorage] 键值对。</span><span class="sxs-lookup"><span data-stu-id="27b44-105">This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [sessionStorage][MDNSessionStorage] key-value pairs.</span></span>  
@@ -123,4 +122,4 @@ ms.locfileid: "11439659"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

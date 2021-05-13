@@ -3,16 +3,16 @@ description: 如何查看节点、搜索节点、编辑节点、引用控制台�
 title: 查看和更改 DOM 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439238"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564285"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439238"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-the-dom"></a><span data-ttu-id="32708-104">查看和更改 DOM 入门</span><span class="sxs-lookup"><span data-stu-id="32708-104">Get started with viewing and changing the DOM</span></span>  
 
 <span data-ttu-id="32708-105">完成这些交互式教程以了解使用 Microsoft Edge 开发人员工具查看和更改页面 DOM 的基础知识。</span><span class="sxs-lookup"><span data-stu-id="32708-105">Complete these interactive tutorials to learn the basics of viewing and changing the DOM of a page using Microsoft Edge DevTools.</span></span>  
@@ -437,4 +436,4 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

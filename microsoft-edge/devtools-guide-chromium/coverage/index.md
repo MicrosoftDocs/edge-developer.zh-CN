@@ -3,16 +3,16 @@ description: 如何在 Microsoft Edge DevTools 中查找和分析未使用的 Ja
 title: 使用 Microsoft Edge DevTools 中的“覆盖范围”面板查找未使用的 JavaScript 和 CSS 代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: a8fccdcabf03f3894a9a11246b90db4686fd953e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: b31d14feac13a907ca0c5ce7ef702bcdef375ad5
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519315"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564460"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519315"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a><span data-ttu-id="baff0-104">使用 Microsoft Edge DevTools 中的“覆盖范围”面板查找未使用的 JavaScript 和 CSS 代码</span><span class="sxs-lookup"><span data-stu-id="baff0-104">Find unused JavaScript and CSS code with the Coverage panel in Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="baff0-105">Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未使用的 JavaScript 和 CSS 代码。</span><span class="sxs-lookup"><span data-stu-id="baff0-105">The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.</span></span>  <span data-ttu-id="baff0-106">删除未使用的代码可能会加快页面加载速度并保存移动用户的手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="baff0-106">Removing unused code may speed up your page load and save your mobile users cellular data.</span></span>  
@@ -110,4 +109,4 @@ ms.locfileid: "11519315"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

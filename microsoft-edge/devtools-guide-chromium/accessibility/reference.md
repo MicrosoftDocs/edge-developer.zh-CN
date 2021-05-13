@@ -3,16 +3,16 @@ description: Microsoft Edge 开发工具辅助功能的综合参考。
 title: 辅助功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
-ms.translationtype: HT
+ms.openlocfilehash: a82dec6ffd7e3fb44143ea103fc9756afcd1a161
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439252"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564572"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439252"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="accessibility-reference"></a><span data-ttu-id="f66fb-104">辅助功能参考</span><span class="sxs-lookup"><span data-stu-id="f66fb-104">Accessibility reference</span></span>  
 
 <span data-ttu-id="f66fb-105">本页是 Microsoft Edge 开发工具辅助功能的综合参考。</span><span class="sxs-lookup"><span data-stu-id="f66fb-105">This page is a comprehensive reference of accessibility features in Microsoft Edge DevTools.</span></span>  <span data-ttu-id="f66fb-106">适用于以下 web 开发人员： </span><span class="sxs-lookup"><span data-stu-id="f66fb-106">It is intended for web developers who:</span></span>  
@@ -76,7 +75,7 @@ ms.locfileid: "11439252"
     
 1.  <span data-ttu-id="f66fb-135">对于“**设备**”，如果要模拟移动设备，请选择“**移动设备**”。</span><span class="sxs-lookup"><span data-stu-id="f66fb-135">For **Device**, choose **Mobile** if you want to simulate a mobile device.</span></span>  <span data-ttu-id="f66fb-136">此选项将更改用户代理字符串并调整视口的大小。</span><span class="sxs-lookup"><span data-stu-id="f66fb-136">This option changes your user agent string and resizes the viewport.</span></span>  <span data-ttu-id="f66fb-137">如果页面的移动版本显示方式与桌面版本不同，则此选项可能会显著影响审核结果。</span><span class="sxs-lookup"><span data-stu-id="f66fb-137">If the mobile version of the page displays differently than the desktop version, this option may have a significant effect on the results of your audit.</span></span>  
 1.  <span data-ttu-id="f66fb-138">在“**审核**”部分中，确保已启用“**辅助功能**”。</span><span class="sxs-lookup"><span data-stu-id="f66fb-138">In the **Audits** section, make sure that **Accessibility** is enabled.</span></span>  <span data-ttu-id="f66fb-139">如果要从报告中排除其他类别，请禁用它们。</span><span class="sxs-lookup"><span data-stu-id="f66fb-139">Disable the other categories if you want to exclude them from your report.</span></span>  <span data-ttu-id="f66fb-140">如果希望发现其他方法提高页面质量，请将其保持启用状态。</span><span class="sxs-lookup"><span data-stu-id="f66fb-140">Leave them enabled if you want to discover other ways to improve the quality of your page.</span></span>  
-1.  <span data-ttu-id="f66fb-141">“限制 ”部分可让你限制网络和 CPU，这在分析负载性能时非常有用。</span><span class="sxs-lookup"><span data-stu-id="f66fb-141">The **Throttling** section lets you throttle the network and CPU, which is useful when analyzing load performance.</span></span>  <span data-ttu-id="f66fb-142">此选项应该与辅助功能分数无关，因此可以使用自己喜欢的任何内容。</span><span class="sxs-lookup"><span data-stu-id="f66fb-142">This option should be irrelevant to your accessibility score, so you may use whatever you prefer.</span></span>  
+1.  <span data-ttu-id="f66fb-141">“\*\*限制 \*\*”部分可让你限制网络和 CPU，这在分析负载性能时非常有用。</span><span class="sxs-lookup"><span data-stu-id="f66fb-141">The **Throttling** section lets you throttle the network and CPU, which is useful when analyzing load performance.</span></span>  <span data-ttu-id="f66fb-142">此选项应该与辅助功能分数无关，因此可以使用自己喜欢的任何内容。</span><span class="sxs-lookup"><span data-stu-id="f66fb-142">This option should be irrelevant to your accessibility score, so you may use whatever you prefer.</span></span>  
 1.  <span data-ttu-id="f66fb-143">“**清除存储空间**”复选框可让你在加载页面之前清除所有存储，或在页面加载之间保留存储。</span><span class="sxs-lookup"><span data-stu-id="f66fb-143">The **Clear Storage** checkbox lets you clear all storage before loading the page, or preserve storage between page loads.</span></span>  <span data-ttu-id="f66fb-144">此选项还可能与辅助功能分数无关，因此可以使用自己喜欢的任何内容。</span><span class="sxs-lookup"><span data-stu-id="f66fb-144">This option is also probably irrelevant to your accessibility score, so you may use whatever you prefer.</span></span>  
 1.  <span data-ttu-id="f66fb-145">选择“**运行审核**”。</span><span class="sxs-lookup"><span data-stu-id="f66fb-145">Choose **Run Audits**.</span></span> <span data-ttu-id="f66fb-146">10 到 30 秒后，开发工具将提供一个报告。</span><span class="sxs-lookup"><span data-stu-id="f66fb-146">After 10 to 30 seconds, DevTools provides a report.</span></span>  <span data-ttu-id="f66fb-147">你的报告为你提供有关如何提高页面辅助功能的各种提示。</span><span class="sxs-lookup"><span data-stu-id="f66fb-147">Your report gives you various tips on how to improve the accessibility of the page.</span></span>  
     
@@ -214,4 +213,4 @@ ms.locfileid: "11439252"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: 有关使用辅助技术（如屏幕阅读器）导航 Microsoft Ed
 title: 使用辅助技术导航 Microsoft Edge 开发工具
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 343ce99188234b40dd8554e3db8bf303876e7b2f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cf2742dfb08ee482b26fe43417b7454e5b6ff809
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398432"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564579"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398432"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a><span data-ttu-id="aa4e2-104">使用辅助技术导航 Microsoft Edge 开发工具</span><span class="sxs-lookup"><span data-stu-id="aa4e2-104">Navigate Microsoft Edge DevTools with assistive technology</span></span>  
 
 <span data-ttu-id="aa4e2-105">以下文章旨在帮助主要依赖于辅助技术（如屏幕阅读器）的用户访问和使用 [Microsoft Edge 开发工具][MicrosoftEdgeDevtoolsMain]。</span><span class="sxs-lookup"><span data-stu-id="aa4e2-105">The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].</span></span>  <span data-ttu-id="aa4e2-106">[Microsoft Edge 开发工具][MicrosoftEdgeDevtoolsMain] 是内置于 Microsoft Edge 浏览器的一套 Web 开发人员工具。</span><span class="sxs-lookup"><span data-stu-id="aa4e2-106">[Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.</span></span>  <span data-ttu-id="aa4e2-107">如果正在查找与改进网页辅助功能相关的开发工具功能，请导航到[辅助功能参考][DevtoolsAccessibilityReference]。</span><span class="sxs-lookup"><span data-stu-id="aa4e2-107">If you are looking for DevTools features related to improving the accessibility of a web page,  navigate to [Accessibility Reference][DevtoolsAccessibilityReference].</span></span>  
@@ -278,5 +277,5 @@ ms.locfileid: "11398432"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[RobDodson]: https://developers.google.com/web/resources/contributors/robdodson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[RobDodson]: https://developers.google.com/web/resources/contributors#rob-dodson  
