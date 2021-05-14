@@ -3,17 +3,17 @@ description: Linux 上的 Microsoft Edge、”问题“工具中改进的 Webhin
 title: DevTools 中的新增功能 (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: a63515060d989a84838e4a9ba7f803184a3fc91f
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 6fd9f9ca2c19c8db74036fb54efadb7be8566fd7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514373"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564117"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -39,7 +39,7 @@ ms.locfileid: "11514373"
 
 Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上受到支持。  直接从 [Microsoft Edge 预览体验成员网站][MicrosoftinsiderDownloadPlatformLinux] 下载并安装 Microsoft Edge Dev `.deb` 或 `.rpm` 程序包，或使用 Linux 发行版的标准程序包管理工具。  
 
-如果你在连续集成和交付\(CI/CD\) 解决方案中使用 Linux 环境，Microsoft Edge 驱动程序也可在 Linux 上使用。  若要开始使用 Microsoft Edge 驱动程序自动执行 Microsoft Edge Dev，请导航至 [Microsoft Edge 驱动程序下载页][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]。  有关自动执行 Microsoft Edge Dev 以及 Microsoft Edge 驱动程序的帮助，请导航到 [使用 WebDriver (Chromium) 测试自动化][WebDriverChromiumMain]。  
+如果你在连续集成和交付\(CI/CD\) 解决方案中使用 Linux 环境，Microsoft Edge 驱动程序也可在 Linux 上使用。  若要开始使用 Microsoft Edge 驱动程序自动执行 Microsoft Edge Dev，请导航至 [Microsoft Edge 驱动程序下载页][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]。  有关自动执行 Microsoft Edge Dev 以及 Microsoft Edge 驱动程序的帮助，请导航到 [使用 WebDriver (Chromium) 测试自动化][WebdriverChromiumMain]。  
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Microsoft Edge Linux 版中的 DevTools" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    Microsoft Edge Linux 版中的 DevTools  
@@ -50,7 +50,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
 
-开源工具 [Webhint][WebhintMain] 为网站和本地网页提供实时反馈。  从 [Microsoft Edge 版本 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel] 开始，在 [问题][DevtoolsIssuesIndex] 工具中审阅 Webhint 反馈。  现在，通过添加以下类别，可以更轻松地审阅 **问题** 工具中出现的问题。  
+开源工具 [Webhint][WebhintMain] 为网站和本地网页提供实时反馈。  自 [Microsoft Edge 版本 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel] 开始，在[问题] [DevtoolsIssuesIndex]工具中查看Webhint 反馈。  现在，通过添加以下类别，可以更轻松地审阅 **问题** 工具中出现的问题。  
 
 *   [辅助功能][WebhintUserGuideHintsAccessibility]  
 *   [兼容性][WebhintUserGuideHintsCompatibility]  
@@ -78,7 +78,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-现在，你可以可视化显示 **Layers** 内容与 z-index 值和文档对象模型\(DOM\)。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]。  
+现在，你可以可视化显示 **Layers** 内容与 z-index 值和文档对象模型\(DOM\)。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][Devtools3dViewIndex]。  
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **复合层** 窗格  
@@ -144,7 +144,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
     
 ### <a name="network-tool"></a>网络工具  
 
-调试通过服务工作线程运行的网络请求。  您还可以从 **应用程序** 工具打开网络请求。  对于每个请求，DevTools 在 [计时][DevtoolsNetworkReferenceViewTimingBreakdownRequest] 窗格中显示以下信息。  
+调试通过服务工作线程运行的网络请求。  您还可以从 **应用程序** 工具打开网络请求。  对于每个请求，开发工具在 [Timing][DevtoolsNetworkReferenceDisplayTimingBreakdownRequest] 窗格中显示以下信息。  
 
 *   请求开示和启动持续时间。  
 *   对服务工作线程注册的更改。  
@@ -206,7 +206,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-[自 Microsoft Edge 版本 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings] 起，可以为 DevTools 中任何操作自定义键盘快捷方式。  在 Microsoft Edge 版本 88 中，现在可以创建多键连发快捷方式。  若要在 DevTools 中为某个操作设置快捷方式，请导航至 [设置][DevtoolsCustomizeIndexSettings] > **实验**，并选中 **启用键盘快捷方式编辑器** 旁边的复选框。  有关自定义和编辑快捷方式详细信息，请导航至 [启用键盘快捷方式编辑器实验功能][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]。  
+[自 Microsoft Edge 版本 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings] 起，可以为 DevTools 中任何操作自定义键盘快捷方式。  在 Microsoft Edge 版本 88 中，现在可以创建多键连发快捷方式。  若要在 DevTools 中为某个操作设置快捷方式，请导航至 [设置][DevtoolsCustomizeIndexSettings] > **实验**，并选中 **启用键盘快捷方式编辑器** 旁边的复选框。  有关自定义和编辑快捷方式的详细信息，请导航到“[编辑开发工具中任何操作的键盘快捷方式][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]”。  
 
 例如，红色高亮显示的是为 **开始录制事件** 操作而自定义的多键连发键盘快捷方式。  若要在 Chromium 开源项目中查看此功能实时更新，请导航至 [问题 #174309][CR174309]。  
 
@@ -351,24 +351,26 @@ background: linear-gradient(100deg, lightblue, pink);
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: /microsoft-edge/devtools-guide-chromium/3d-view/index "3D 视图 | Microsoft Docs"  
-[DevtoolsConsoleIndex]: /microsoft-edge/devtools-guide-chromium/console/index "控制台概述 | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "更改 DevTools 语言设置 | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "启用键盘快捷方式编辑器 - 实验功能 | microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "在 3D 视图中打开复合层 - 实验功能 | Microsoft Docs"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
-[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: /microsoft-edge/devtools-guide-chromium/network/reference#copy-formatted-response-json-to-the-clipboard "将格式化的响应 JSON 复制到剪贴板 - 网络分析参考 | Microsoft Docs"  
-[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: /microsoft-edge/devtools-guide-chromium/network/reference#view-the-timing-breakdown-of-a-request "查看请求的时间分析 - 网络分析参考 | Microsoft Docs"  
-[WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "使用 WebDriver (Chromium) 测试自动化 | Microsoft Docs"  
-
-<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
-
-[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 上的渐进式 Web 应用 | Microsoft Docs"  
-
 [WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "在“设置”中自定义键盘快捷方式 - DeVTools 的新增功能 (Microsoft Edge 87)| Microsoft Docs"  
 [WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "问题面板中的 webhint 反馈 - DeVTools 的新增功能 (Microsoft Edge 85) | Microsoft Docs"  
+
+[Devtools3dViewIndex]: ../../../3d-view/index.md "3D 视图 | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../../../console/index.md "控制台概述 | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "为 DevTools 中的任何操作编辑键盘快捷方式 | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
+<!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
+[DevtoolsIssuesIndex]: ../../../issues/index.md“查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs”  
+[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"  
+[DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request "Display the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
+
+<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
+
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"  
+
+[WebdriverChromiumMain]: ../../../../webdriver-chromium/index.md "使用 WebDriver (Chromium) 测试自动化 | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "下载 WebDriver | Microsoft 开发人员"  
 
@@ -376,7 +378,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio 代码"  
+[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio 代码"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"  
 
@@ -427,4 +429,4 @@ background: linear-gradient(100deg, lightblue, pink);
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

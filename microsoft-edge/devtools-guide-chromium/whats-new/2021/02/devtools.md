@@ -3,17 +3,17 @@ description: CSS 弹性框调试支持、网页上的性能提示显示、问题
 title: DevTools 中的新增功能 (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: a6682043166909bf75a875b72058cc9839c5b43b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514401"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564845"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -274,7 +274,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-此试验在“**元素**”工具中提供**完整的辅助功能树视图**。  “[辅助功能][DevtoolsAccessibilityReferenceTheAccessibilityPane]”窗格提供部分辅助功能树视图，其显示从根节点到被检查节点的直接上级链。  
+此试验在“**元素**”工具中提供**完整的辅助功能树视图**。  “[辅助功能][DevtoolsAccessibilityReferenceAccessibilityPanel]”窗格提供部分辅助功能树视图，其显示从根节点到被检查节点的直接上级链。  
 启用此试验并重新加载 DevTools 后，请选择以下按钮之一以在“元素”工具中切换网页上所有元素的显示。  
 
 *   若要显示完整的辅助功能树视图，请选择“**切换到辅助功能树视图**”。  
@@ -305,19 +305,19 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "“辅助功能”窗格 - 辅助功能参考 | Microsoft Docs"  
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "按日志级别筛选 - 控制台参考 | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "筛选消息 - 控制台参考 | Microsoft Docs"  
-[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "打开控制台边栏 - 控制台参考 | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "启用 + 按钮选项卡菜单以打开更多工具 - 试验功能 | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
-[DevtoolsNetworkReferenceAddRemoveColumns]: /microsoft-edge/devtools-guide-chromium/network/reference#add-or-remove-columns "添加或删除列 - 网络分析参考 | Microsoft Docs"  
-[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#display-initiators-and-dependencies "显示发起程序和依赖项 - 网络分析参考 | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "“辅助功能”窗格 - 辅助功能参考 | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "按日志级别筛选 - 控制台参考 | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "筛选消息 - 控制台参考 | Microsoft Docs"  
+[DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "打开控制台边栏 - 控制台参考 | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "启用 + 按钮选项卡菜单以打开更多工具 - 试验功能 | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
+[DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "添加或删除列 - 网络分析参考 | Microsoft Docs"  
+[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "显示发起程序和依赖项 - 网络分析参考 | Microsoft Docs"  
 
-[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Windows 上的渐进式 Web 应用概述 | Microsoft Docs"  
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用概述 | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"  
 
@@ -368,4 +368,4 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

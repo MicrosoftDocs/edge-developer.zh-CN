@@ -3,17 +3,17 @@ description: “新增功能”工具现在为“欢迎”，内含“样式”�
 title: DevTools 中的新增功能 (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: ec14d802af52c0bb2e658549f48764279c787f47
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 6d1952832c84dc159222a8aa16aa0ffe11edff34
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514366"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564922"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -166,7 +166,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
     
 启用“**试验 Web 平台功能**”以访问新的 [CSS 媒体屏幕跨越功能][DualScreenWebCssMediaSpanning]和 [getWindowSegments JavaScript API][DualScreenWebJavascriptGetwindowsegments]。  导航至 `edge://flags`，然后切换“**试验 Web 平台功能**”旁边的标记。  为帮助增强用于双屏幕和可折叠设备的网站或应用，请在[模拟设备][DevtoolsDeviceModeIndex]时使用以下功能。  
 
-*   [跨越][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]，即你的网站（或应用）跨两个屏幕显示。  
+*   [跨越][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]，即你的网站（或应用）跨两个屏幕显示。  
 *   [呈现接缝][DualScreenIntroductionHowToWorkWithSeam]，即两个屏幕之间的空间。  
     
 若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1054281][CR1054281]。  
@@ -180,7 +180,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 适用于 Microsoft Visual Studio Code 的 [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] 扩展版本 1.1.2 自上一个版本以来有以下更改。  Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新到版本 1.1.2，请导航至“[手动更新扩展][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]”。  
 
 *   为目标列表上的每个项目添加了“**关闭实例**”按钮 ([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248])  
-*   将 [Microsoft Edge DevTools][DevtoolsMain] 版本从 84.0.522.63 升级到 [85.0.564.40][DevtoolsWhatsNew85] ([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235])  
+*   将 [Microsoft Edge DevTools][DevtoolsIndex] 版本从 84.0.522.63 升级到 [85.0.564.40][DevtoolsWhatsNew85] ([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235])  
 *   将 [Microsoft Edge 调试程序][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]作为依赖项包括在内 ([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233])  
 *   已实施设置选项以更改扩展主题 ([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229])  
     
@@ -426,16 +426,16 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "DevTools 中的新增功能 (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "查看颜色选取器中的文本元素的对比率 - 辅助功能参考 | Microsoft Docs"  
-[DevtoolsCssReferenceChangeCss]: /microsoft-edge/devtools-guide-chromium/css/reference#change-css "更改 CSS - CSS 参考 |Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: microsoft-edge/devtools-guide-chromium/customize/shortcuts "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
-[DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/device-mode/dual-screen-and-foldables#testing-on-foldable-and-dual-screen-devices "在可折叠和双屏幕设备上进行测试 - 在 Microsoft Edge DevTools 中模拟双屏幕和可折叠设备 | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "模拟移动视区 - 在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-load-performance "记录负载性能 - 性能分析参考 | Microsoft Docs"  
-[DevtoolsInspectStylesEditFonts]: /microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"  
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium/index "Microsoft Edge (Chromium) 开发人员工具概述 | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "查看颜色选取器中的文本元素的对比率 - 辅助功能参考 | Microsoft Docs"  
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "更改 CSS - CSS 参考 |Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "在可折叠和双屏幕设备上进行测试 - 在 Microsoft Edge DevTools 中模拟双屏幕和可折叠设备 | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视区 - 在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "记录负载性能 - 性能分析参考 | Microsoft Docs"  
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) 开发人员工具概述|Microsoft Docs"  
+[DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"  
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "如何处理接缝 - 双屏幕设备简介| Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "用于双屏幕检测的 CSS 媒体屏幕跨越功能 | Microsoft Docs"  
@@ -500,6 +500,6 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 
 [SpanningPlaceholder]: link-t-b-d "跨区占位符"  
