@@ -16,13 +16,13 @@ ms.locfileid: "11104769"
 ---
 # <span data-ttu-id="cc37a-104">旁加载扩展</span><span class="sxs-lookup"><span data-stu-id="cc37a-104">Sideload an extension</span></span>
 
-<span data-ttu-id="cc37a-105">在开发期间，可以使用 Microsoft Edge \ (Chromium\) 浏览器安全运行和调试扩展。</span><span class="sxs-lookup"><span data-stu-id="cc37a-105">During development, you may use the Microsoft Edge \(Chromium\) browser to run and debug your extension safely.</span></span> <span data-ttu-id="cc37a-106">通过在你的浏览器中本地旁加载扩展，你可以运行和测试扩展。</span><span class="sxs-lookup"><span data-stu-id="cc37a-106">By sideloading your extension locally in your browser, you can run and test your extension.</span></span> <span data-ttu-id="cc37a-107">本文介绍如何将扩展旁加载到Microsoft Edge。</span><span class="sxs-lookup"><span data-stu-id="cc37a-107">This article explains how to sideload extensions into Microsoft Edge.</span></span>
+<span data-ttu-id="cc37a-105">在开发期间，可以使用 Microsoft Edge \(Chromium\) 浏览器安全运行和调试扩展。</span><span class="sxs-lookup"><span data-stu-id="cc37a-105">During development, you may use the Microsoft Edge \(Chromium\) browser to run and debug your extension safely.</span></span> <span data-ttu-id="cc37a-106">通过在你的浏览器中本地旁加载扩展，你可以运行和测试扩展。</span><span class="sxs-lookup"><span data-stu-id="cc37a-106">By sideloading your extension locally in your browser, you can run and test your extension.</span></span> <span data-ttu-id="cc37a-107">本文介绍如何将扩展旁加载到Microsoft Edge。</span><span class="sxs-lookup"><span data-stu-id="cc37a-107">This article explains how to sideload extensions into Microsoft Edge.</span></span>
 
 <span data-ttu-id="cc37a-108">若要旁加载扩展，请按照以下步骤操作。</span><span class="sxs-lookup"><span data-stu-id="cc37a-108">To sideload your extension, follow these steps.</span></span>
 
 1.  <span data-ttu-id="cc37a-109">通过 `edge://extensions` 选择浏览器顶部的三个点，然后选择扩展打开 **页面**。</span><span class="sxs-lookup"><span data-stu-id="cc37a-109">Open the `edge://extensions` page by choosing the three dots at the top of your browser, and then selecting **Extensions**.</span></span>
 
-       :::image type="complex" source="./media/part1-threedots.png" alt-text="打开"edge://extensions"页":::
+       :::image type="complex" source="./media/part1-threedots.png" alt-text="打开 edge://extensions 页":::
           <span data-ttu-id="cc37a-111">打开"edge://extensions"页</span><span class="sxs-lookup"><span data-stu-id="cc37a-111">Open the edge://extensions page</span></span> :::image-end:::
 
 1.  <span data-ttu-id="cc37a-112">在扩展管理页面的 `edge://extensions` 上，使用\*\*\*\* 页面左下角的开关打开开发人员模式。</span><span class="sxs-lookup"><span data-stu-id="cc37a-112">On the extension management page at `edge://extensions`, turn on **Developer mode** using the toggle at the bottom left of the page.</span></span>

@@ -16,7 +16,7 @@ ms.locfileid: "11387270"
 ---
 # <a name="visual-studio"></a><span data-ttu-id="84fc4-104">Visual Studio</span><span class="sxs-lookup"><span data-stu-id="84fc4-104">Visual Studio</span></span>  
 
-<span data-ttu-id="84fc4-105">Microsoft [Visual Studio][MicrosoftVisualstudioVs] 是一个集成开发环境 \ (IDE\) 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-105">Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment \(IDE\).</span></span>   <span data-ttu-id="84fc4-106">使用它来编辑、调试、生成和发布 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="84fc4-106">Use it to edit, debug, build, and publish your web apps.</span></span>  <span data-ttu-id="84fc4-107">它是一个功能丰富的程序，可用于 Web 开发的许多方面。</span><span class="sxs-lookup"><span data-stu-id="84fc4-107">It is a feature-rich program that may be used for many aspects of your web development.</span></span>  <span data-ttu-id="84fc4-108">在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能以便于开发过程。</span><span class="sxs-lookup"><span data-stu-id="84fc4-108">Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.</span></span>  
+<span data-ttu-id="84fc4-105">Microsoft [Visual Studio][MicrosoftVisualstudioVs] 是一个集成开发环境 \(IDE\) 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-105">Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment \(IDE\).</span></span>   <span data-ttu-id="84fc4-106">使用它来编辑、调试、生成和发布 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="84fc4-106">Use it to edit, debug, build, and publish your web apps.</span></span>  <span data-ttu-id="84fc4-107">它是一个功能丰富的程序，可用于 Web 开发的许多方面。</span><span class="sxs-lookup"><span data-stu-id="84fc4-107">It is a feature-rich program that may be used for many aspects of your web development.</span></span>  <span data-ttu-id="84fc4-108">在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能以便于开发过程。</span><span class="sxs-lookup"><span data-stu-id="84fc4-108">Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.</span></span>  
 
 *   <span data-ttu-id="84fc4-109">编译器</span><span class="sxs-lookup"><span data-stu-id="84fc4-109">compilers</span></span>  
 *   <span data-ttu-id="84fc4-110">代码完成工具</span><span class="sxs-lookup"><span data-stu-id="84fc4-110">code completion tools</span></span>  
@@ -52,7 +52,7 @@ ms.locfileid: "11387270"
 
 <span data-ttu-id="84fc4-132">创建项目后，打开 `ClientApp/src/components/Counter.js` 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-132">After you create your project, open `ClientApp/src/components/Counter.js`.</span></span>  <span data-ttu-id="84fc4-133">现在，若要Visual Studio JavaScript，请选择绿色"播放"按钮和\*\*IIS Express\*\*\*\*\*\* 旁边的下拉列表。</span><span class="sxs-lookup"><span data-stu-id="84fc4-133">Now, to use Visual Studio to debug JavaScript, choose the dropdown next to the green **Play** button and **IIS Express**.</span></span>  
 
-:::image type="complex" source="./media/vs-dropdown.png" alt-text="绿色"播放"按钮和 IIS Express 旁边的下拉列表" lightbox="./media/vs-dropdown.png":::
+:::image type="complex" source="./media/vs-dropdown.png" alt-text="绿色播放按钮和 IIS Express 旁边的下拉列表" lightbox="./media/vs-dropdown.png":::
    <span data-ttu-id="84fc4-135">绿色"播放"**按钮和\*\*\*\*IIS Express 旁边的下拉列表**</span><span class="sxs-lookup"><span data-stu-id="84fc4-135">The dropdown next to the green **Play** button and **IIS Express**</span></span>  
 :::image-end:::  
 
@@ -69,7 +69,7 @@ ms.locfileid: "11387270"
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="84fc4-143">如果选择 Microsoft Edge \ (EdgeHTML\) ，Visual Studio启动它，而不是 Microsoft Edge \ (Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-143">If you choose Microsoft Edge \(EdgeHTML\), Visual Studio launches it instead of Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="84fc4-144">安装[Microsoft Edge][MicrosoftedgeinsiderDownload]的预览频道之一，或确保计算机上安装的 Microsoft Edge 版本是 Microsoft Edge \ (Chromium\) 而不是 Microsoft Edge \ (EdgeHTML\) 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-144">[Install the one of the preview channels of Microsoft Edge][MicrosoftedgeinsiderDownload] or ensure that the version of Microsoft Edge installed on your machine is Microsoft Edge \(Chromium\) and not Microsoft Edge \(EdgeHTML\).</span></span>  
+> <span data-ttu-id="84fc4-143">如果选择 Microsoft Edge \(EdgeHTML\) ，Visual Studio启动它，而不是 Microsoft Edge \(Chromium\) 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-143">If you choose Microsoft Edge \(EdgeHTML\), Visual Studio launches it instead of Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="84fc4-144">安装[Microsoft Edge][MicrosoftedgeinsiderDownload]的预览频道之一，或确保计算机上安装的 Microsoft Edge 版本是 Microsoft Edge \(Chromium\) 而不是 Microsoft Edge \(EdgeHTML\) 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-144">[Install the one of the preview channels of Microsoft Edge][MicrosoftedgeinsiderDownload] or ensure that the version of Microsoft Edge installed on your machine is Microsoft Edge \(Chromium\) and not Microsoft Edge \(EdgeHTML\).</span></span>  
 
 <span data-ttu-id="84fc4-145">现在，Visual Studio配置正确，选择绿色 **"播放"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="84fc4-145">Now that Visual Studio is correctly configured, choose the green **Play** button.</span></span>  <span data-ttu-id="84fc4-146">Visual Studio生成应用、启动 Web 服务器、启动 Microsoft Edge，然后导航到 或在 中 `https://localhost:44362/` 指定的任何端口 `launchSettings.json` 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-146">Visual Studio builds your app, start the web server, launch Microsoft Edge, and navigate to `https://localhost:44362/` or whatever port is specified in `launchSettings.json`.</span></span>  
 
@@ -111,13 +111,13 @@ start msedge –remote-debugging-port=9222
 
 <span data-ttu-id="84fc4-170">从Visual Studio，**打开"调试**"菜单并选择 **"附加到进程"或**选择 `Ctrl` + `Alt` + `P` 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-170">From Visual Studio, open the **Debug** menu and choose **Attach to Process** or select `Ctrl`+`Alt`+`P`.</span></span>  
 
-:::image type="complex" source="./media/attach-to-process.png" alt-text="选择"附加到进程"Visual Studio" lightbox="./media/attach-to-process.png":::
+:::image type="complex" source="./media/attach-to-process.png" alt-text="选择附加到进程 Visual Studio" lightbox="./media/attach-to-process.png":::
    <span data-ttu-id="84fc4-172">选择 **"附加到进程** "Visual Studio</span><span class="sxs-lookup"><span data-stu-id="84fc4-172">Choose **Attach to Process** in Visual Studio</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="84fc4-173">从附加到**进程对话框中**，将**连接**类型设置为\*\*Chrome devtools 协议 websocket (无身份验证) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="84fc4-173">From the **Attach to Process** dialog, set **Connection type** to **Chrome devtools protocol websocket (no authentication)**.</span></span>  <span data-ttu-id="84fc4-174">在" **连接目标** "文本框中，键入 `http://localhost:9222/` 并选择 `Enter` 。</span><span class="sxs-lookup"><span data-stu-id="84fc4-174">In the **Connecting target** textbox, type `http://localhost:9222/` and select `Enter`.</span></span>  <span data-ttu-id="84fc4-175">查看"附加到进程"对话框中列出的 Microsoft Edge 中已打开的 **选项卡** 列表。</span><span class="sxs-lookup"><span data-stu-id="84fc4-175">Review the list of open tabs you have in Microsoft Edge listed out in the **Attach to Process** dialog.</span></span>  
 
-:::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置"附加到进程"对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
+:::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置附加到进程对话框 Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
    <span data-ttu-id="84fc4-177">Configure the **Attach to Process** dialog in Visual Studio</span><span class="sxs-lookup"><span data-stu-id="84fc4-177">Configure the **Attach to Process** dialog in Visual Studio</span></span>  
 :::image-end:::  
 
@@ -129,7 +129,7 @@ start msedge –remote-debugging-port=9222
 
 <span data-ttu-id="84fc4-184">Microsoft Visual Studio 和 Microsoft Edge 团队希望详细了解如何在 Visual Studio 中使用 JavaScript。</span><span class="sxs-lookup"><span data-stu-id="84fc4-184">The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.</span></span>  <span data-ttu-id="84fc4-185">若要发送反馈，请选择"发送反馈 **"图标Visual Studio**推文[@VisualStudio@EdgeDevTools。][TwitterIntentTweetViualstudioEdgdevtools]</span><span class="sxs-lookup"><span data-stu-id="84fc4-185">To send your feedback, choose the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].</span></span>  
 
-:::image type="complex" source="./media/feedback-icon.png" alt-text=""发送反馈"图标Visual Studio" lightbox="./media/feedback-icon.png":::
+:::image type="complex" source="./media/feedback-icon.png" alt-text="发送反馈图标Visual Studio" lightbox="./media/feedback-icon.png":::
    <span data-ttu-id="84fc4-187">" **发送反馈** "图标Visual Studio</span><span class="sxs-lookup"><span data-stu-id="84fc4-187">The **Send Feedback** icon in Visual Studio</span></span>  
 :::image-end:::  
 

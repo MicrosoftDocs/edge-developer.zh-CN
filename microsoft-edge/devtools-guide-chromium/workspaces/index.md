@@ -115,7 +115,7 @@ ms.locfileid: "11564663"
     
 ### <a name="set-up-devtools"></a><span data-ttu-id="dcf10-144">设置 DevTools</span><span class="sxs-lookup"><span data-stu-id="dcf10-144">Set up DevTools</span></span>  
 
-1.  <span data-ttu-id="dcf10-145">选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 打开 DevTools\*\*\*\* 的控制台面板。</span><span class="sxs-lookup"><span data-stu-id="dcf10-145">Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.</span></span>  
+1.  <span data-ttu-id="dcf10-145">选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 打开 DevTools\*\*\*\* 的控制台面板。</span><span class="sxs-lookup"><span data-stu-id="dcf10-145">Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        <span data-ttu-id="dcf10-147">控制台**面板**</span><span class="sxs-lookup"><span data-stu-id="dcf10-147">The **Console** panel</span></span>  
@@ -124,7 +124,7 @@ ms.locfileid: "11564663"
 1.  <span data-ttu-id="dcf10-148">导航到 **"源"** 工具。</span><span class="sxs-lookup"><span data-stu-id="dcf10-148">Navigate to the **Sources** tool.</span></span>  
 1.  <span data-ttu-id="dcf10-149">在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="dcf10-149">In the **Navigator** pane (on the left), choose the **Filesystem** tab.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text=""文件系统"选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="文件系统选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        <span data-ttu-id="dcf10-151">" **文件系统"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="dcf10-151">The **Filesystem** tab</span></span>  
     :::image-end:::  
     
@@ -133,7 +133,7 @@ ms.locfileid: "11564663"
 1.  <span data-ttu-id="dcf10-154">选择 **"** 允许"以授予 DevTools 读取和写入目录的权限。</span><span class="sxs-lookup"><span data-stu-id="dcf10-154">Choose **Allow** to give DevTools permission to read and write to the directory.</span></span>  
     <span data-ttu-id="dcf10-155">在" **文件系统"** 选项卡中，现在，、 和 旁边将出现 `index.html` `script.js` 一个绿色点 `styles.css` 。</span><span class="sxs-lookup"><span data-stu-id="dcf10-155">In the **Filesystem** tab, a green dot now appears next to `index.html`, `script.js`, and `styles.css`.</span></span>  <span data-ttu-id="dcf10-156">绿色点表示 DevTools 已建立页面的网络资源与 中的文件之间的映射 `~/Desktop/app` 。</span><span class="sxs-lookup"><span data-stu-id="dcf10-156">A green dot indicates that DevTools has established a mapping between a network resource of the page, and the file in `~/Desktop/app`.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text=""文件系统"选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="文件系统选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        <span data-ttu-id="dcf10-158">" **文件系统** "选项卡现在指示本地文件和网络文件之间的映射</span><span class="sxs-lookup"><span data-stu-id="dcf10-158">The **Filesystem** tab now indicates a mapping between the local files and the network ones</span></span>  
     :::image-end:::  
     
@@ -205,10 +205,10 @@ In short, the **DOM Tree** `!==` HTML.
 1.  <span data-ttu-id="dcf10-183">在左侧 **导航器** (窗格中，) " **页面"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="dcf10-183">In the **Navigator** pane (on the left), choose the **Page** tab.</span></span>  
 1.  <span data-ttu-id="dcf10-184">选择\*\* (索引) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="dcf10-184">Choose **(index)**.</span></span>  <span data-ttu-id="dcf10-185">将打开页面的 HTML。</span><span class="sxs-lookup"><span data-stu-id="dcf10-185">The HTML for the page opens.</span></span>  
 1.  <span data-ttu-id="dcf10-186">将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。</span><span class="sxs-lookup"><span data-stu-id="dcf10-186">Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.</span></span>  <span data-ttu-id="dcf10-187">查看下图。</span><span class="sxs-lookup"><span data-stu-id="dcf10-187">Review the following figure.</span></span>  
-1.  <span data-ttu-id="dcf10-188">选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="dcf10-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
+1.  <span data-ttu-id="dcf10-188">选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="dcf10-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
 1.  <span data-ttu-id="dcf10-189">刷新页面。</span><span class="sxs-lookup"><span data-stu-id="dcf10-189">Refresh the page.</span></span>  <span data-ttu-id="dcf10-190">`<h1>`刷新页面后，元素将继续显示新文本。</span><span class="sxs-lookup"><span data-stu-id="dcf10-190">The `<h1>` element continues to display the new text after the page is refreshed.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从"源"工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从源工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        <span data-ttu-id="dcf10-192">从"源"工具 **更改** HTML</span><span class="sxs-lookup"><span data-stu-id="dcf10-192">Change HTML from the **Sources** tool</span></span>  
     :::image-end:::  
     
@@ -228,7 +228,7 @@ In short, the **DOM Tree** `!==` HTML.
        <span data-ttu-id="dcf10-206">使用 **命令菜单** 打开快速 **源工具**</span><span class="sxs-lookup"><span data-stu-id="dcf10-206">Open the **Quick Source** tool by using the **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="dcf10-207">选择 `Control` + `P` \ (Windows、Linux\) 或 `Command` + `P` \ (macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="dcf10-207">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="dcf10-208">查看下图。</span><span class="sxs-lookup"><span data-stu-id="dcf10-208">Review the following figure.</span></span>  
+1.  <span data-ttu-id="dcf10-207">选择 `Control` + `P` \(Windows、Linux\) 或 `Command` + `P` \(macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="dcf10-207">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="dcf10-208">查看下图。</span><span class="sxs-lookup"><span data-stu-id="dcf10-208">Review the following figure.</span></span>  
 1.  <span data-ttu-id="dcf10-209">键入 `script` ，然后选择 \*\*"app/script.js"。 \*\*</span><span class="sxs-lookup"><span data-stu-id="dcf10-209">Type `script`, then choose **app/script.js**.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件"对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -245,7 +245,7 @@ In short, the **DOM Tree** `!==` HTML.
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  <span data-ttu-id="dcf10-214">选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="dcf10-214">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
+1.  <span data-ttu-id="dcf10-214">选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。</span><span class="sxs-lookup"><span data-stu-id="dcf10-214">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
 1.  <span data-ttu-id="dcf10-215">刷新页面。</span><span class="sxs-lookup"><span data-stu-id="dcf10-215">Refresh the page.</span></span>  
     
     > [!NOTE]
@@ -290,7 +290,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \ (computer networking\) - Wikipedia"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
 
 > [!NOTE]
 > <span data-ttu-id="dcf10-230">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="dcf10-230">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

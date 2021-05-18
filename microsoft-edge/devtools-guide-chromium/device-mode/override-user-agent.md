@@ -40,7 +40,7 @@ ms.locfileid: "11564292"
 1.  <span data-ttu-id="e3ae0-109">键入 `network conditions` ，选择 **"显示网络条件**"，然后选择 `Enter` 以打开 **"网络条件"** 工具。</span><span class="sxs-lookup"><span data-stu-id="e3ae0-109">Type `network conditions`, choose **Show Network conditions**, and select `Enter` to open the **Network conditions** tool.</span></span>  
 1.  <span data-ttu-id="e3ae0-110">在" **用户代理"** 部分，关闭" **自动选择"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="e3ae0-110">In the **User agent** section, turn off the **Select automatically** checkbox.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭"自动选择"" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭自动选择" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
        <span data-ttu-id="e3ae0-112">关闭" **自动选择"**</span><span class="sxs-lookup"><span data-stu-id="e3ae0-112">Turn off **Select automatically**</span></span>  
     :::image-end:::  
     

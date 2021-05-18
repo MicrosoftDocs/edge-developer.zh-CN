@@ -25,7 +25,7 @@ ms.locfileid: "11483348"
    <span data-ttu-id="4f2cf-110">DevTools 提供有关控制台中错误 **的详细信息**</span><span class="sxs-lookup"><span data-stu-id="4f2cf-110">DevTools gives detailed information about the error in the **Console**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="4f2cf-111">从信息中，您可能会发现错误位于文件的第 16 `error.html` 行。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-111">From the information, you may gather that the error is on line 16 of the `error.html` file.</span></span>  <span data-ttu-id="4f2cf-112">如果选择控制台右侧的链接，它会将你指向"源"工具，并突出显示包含 `error.html:16` 错误的代码行。 \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4f2cf-112">If you choose the `error.html:16` link on the right of the **Console**, it takes you to the **Sources** tool and highlights the line of code with the error.</span></span>  
+<span data-ttu-id="4f2cf-111">从信息中，您可能会发现错误位于文件的第 16 `error.html` 行。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-111">From the information, you may gather that the error is on line 16 of the `error.html` file.</span></span>  <span data-ttu-id="4f2cf-112">如果选择控制台右侧的链接，它会将你指向"源"工具，并突出显示包含 `error.html:16` 错误的代码行。\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4f2cf-112">If you choose the `error.html:16` link on the right of the **Console**, it takes you to the **Sources** tool and highlights the line of code with the error.</span></span>  
 
 :::image type="complex" source="../media/console-debug-displays-in-sources.msft.png" alt-text="源工具突出显示导致错误的代码行" lightbox="../media/console-debug-displays-in-sources.msft.png":::
    <span data-ttu-id="4f2cf-114">源 **工具** 突出显示导致错误的代码行</span><span class="sxs-lookup"><span data-stu-id="4f2cf-114">The **Sources** tool highlights the line of code that causes the error</span></span>  
@@ -46,17 +46,17 @@ ms.locfileid: "11483348"
 *   <span data-ttu-id="4f2cf-124">以 HTTP 方法开头，后 `GET` 跟 URI 的网络错误。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-124">A network error that starts with `GET` HTTP method followed by a URI.</span></span>  
 *   <span data-ttu-id="4f2cf-125">错误 `Uncaught (in promise) TypeError: data.forEach is not a function` 。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-125">An `Uncaught (in promise) TypeError: data.forEach is not a function` error.</span></span>  
     
-<span data-ttu-id="4f2cf-126">如果你在控制台 `network-error.html:40` 中选择链接，DevTools 将你指向**源**工具。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4f2cf-126">If you choose the `network-error.html:40` link in the **Console**, DevTools takes you to the **Sources** tool.</span></span>  <span data-ttu-id="4f2cf-127">有问题的代码行突出显示，后跟 `error` \ (`x` \) 按钮。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-127">The problematic line of code is highlighted and followed by an `error` \(`x`\) button.</span></span>  <span data-ttu-id="4f2cf-128">若要显示 `Failed to load resource: the server responded with a status of 404 ()` 错误消息，请选择错误 \ (\*\*\*\* `x` \) 按钮。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-128">To display the `Failed to load resource: the server responded with a status of 404 ()` error message, choose the **error** \(`x`\) button.</span></span>  
+<span data-ttu-id="4f2cf-126">如果你在控制台 `network-error.html:40` 中选择链接，DevTools 将你指向**源**工具。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4f2cf-126">If you choose the `network-error.html:40` link in the **Console**, DevTools takes you to the **Sources** tool.</span></span>  <span data-ttu-id="4f2cf-127">有问题的代码行突出显示，后跟 `error` \(`x` \) 按钮。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-127">The problematic line of code is highlighted and followed by an `error` \(`x`\) button.</span></span>  <span data-ttu-id="4f2cf-128">若要显示 `Failed to load resource: the server responded with a status of 404 ()` 错误消息，请选择错误 \(\*\*\*\* `x` \) 按钮。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-128">To display the `Failed to load resource: the server responded with a status of 404 ()` error message, choose the **error** \(`x`\) button.</span></span>  
 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="选择网页的链接和发生错误的代码行将打开"源"工具" lightbox="../media/console-debug-network-error-code-line.msft.png":::
+      :::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="选择网页的链接和发生错误的代码行将打开源工具" lightbox="../media/console-debug-network-error-code-line.msft.png":::
          <span data-ttu-id="4f2cf-130">选择网页的链接和发生错误的代码行将打开 **"源"** 工具</span><span class="sxs-lookup"><span data-stu-id="4f2cf-130">Choose the link to the webpage and code where the error occurs line opens the **Sources** tool</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-debug-network-error-sources.msft.png" alt-text="若要在 JavaScript 中查找错误，请使用"源"工具" lightbox="../media/console-debug-network-error-sources.msft.png":::
+      :::image type="complex" source="../media/console-debug-network-error-sources.msft.png" alt-text="若要在 JavaScript 中查找错误，请使用源工具" lightbox="../media/console-debug-network-error-sources.msft.png":::
          <span data-ttu-id="4f2cf-132">若要在 JavaScript 中查找错误，请使用 **"源"** 工具</span><span class="sxs-lookup"><span data-stu-id="4f2cf-132">To find the error in JavaScript, use the **Sources** tool</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -73,20 +73,20 @@ ms.locfileid: "11483348"
 
 :::row:::
     :::column:::
-        :::image type="complex" source="../media/console-debug-network-error-network.msft.png" alt-text=""网络"工具显示有关失败请求详细信息" lightbox="../media/console-debug-network-error-network.msft.png":::
+        :::image type="complex" source="../media/console-debug-network-error-network.msft.png" alt-text="网络工具显示有关失败请求详细信息" lightbox="../media/console-debug-network-error-network.msft.png":::
            <span data-ttu-id="4f2cf-140">" **网络** "工具显示有关失败请求详细信息</span><span class="sxs-lookup"><span data-stu-id="4f2cf-140">The **Network** tool displays more information about the failed request</span></span>  
         :::image-end:::  
     :::column-end:::
     :::column:::
-        :::image type="complex" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="检查"网络"工具中的标头可能会提供更多信息" lightbox="../media/console-debug-network-error-network-detail.msft.png":::
+        :::image type="complex" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="检查网络工具中的标头可能会提供更多信息" lightbox="../media/console-debug-network-error-network-detail.msft.png":::
            <span data-ttu-id="4f2cf-142">检查" **网络"工具** 中的标头可能会提供更多信息</span><span class="sxs-lookup"><span data-stu-id="4f2cf-142">Inspect the headers in the **Network** tool may give more insight</span></span>  
         :::image-end:::  
     :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="4f2cf-143">问题是什么？</span><span class="sxs-lookup"><span data-stu-id="4f2cf-143">What was the problem?</span></span>  <span data-ttu-id="4f2cf-144">两个斜杠字符 `//` \ (\) 出现在请求的 URI 中的单词 `repos` 后。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-144">Two slash characters \(`//`\) occur in the requested URI after the word `repos`.</span></span>  <span data-ttu-id="4f2cf-145">打开" **源"** 工具并检查第 26 行。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-145">Open the **Sources** tool and inspect line 26.</span></span>  <span data-ttu-id="4f2cf-146">尾部斜杠字符 \ (\) 出现在基本 `/` URI 的末尾。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-146">A trailing slash character \(`/`\) occurs at the end of the base URI.</span></span>  
+<span data-ttu-id="4f2cf-143">问题是什么？</span><span class="sxs-lookup"><span data-stu-id="4f2cf-143">What was the problem?</span></span>  <span data-ttu-id="4f2cf-144">两个斜杠字符 `//` \(\) 出现在请求的 URI 中的单词 `repos` 后。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-144">Two slash characters \(`//`\) occur in the requested URI after the word `repos`.</span></span>  <span data-ttu-id="4f2cf-145">打开" **源"** 工具并检查第 26 行。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-145">Open the **Sources** tool and inspect line 26.</span></span>  <span data-ttu-id="4f2cf-146">尾部斜杠字符 \(\) 出现在基本 `/` URI 的末尾。</span><span class="sxs-lookup"><span data-stu-id="4f2cf-146">A trailing slash character \(`/`\) occurs at the end of the base URI.</span></span>  
 
-:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text=""源"工具显示包含错误的代码行" lightbox="../media/console-debug-network-error-code-error.msft.png":::
+:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="源工具显示包含错误的代码行" lightbox="../media/console-debug-network-error-code-error.msft.png":::
    <span data-ttu-id="4f2cf-148">" **源** "工具显示包含错误的代码行</span><span class="sxs-lookup"><span data-stu-id="4f2cf-148">The **Sources** tool displays the line of code with the error</span></span>  
 :::image-end:::  
 

@@ -64,7 +64,7 @@ ms.locfileid: "11564926"
    <span data-ttu-id="e5fe1-125">使用网络控制台在 [NetworkLog][DevtoolsNetworkIndexLogActivity] 中编辑和 **重播请求**</span><span class="sxs-lookup"><span data-stu-id="e5fe1-125">Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="e5fe1-126">网络控制台是一个新 **面板，它将** 在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-126">A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.</span></span>  <span data-ttu-id="e5fe1-127">若要显示从服务器返回的响应，请编辑请求 \ (\) 并选择"发送 **"。**</span><span class="sxs-lookup"><span data-stu-id="e5fe1-127">To display the response returned from the server, edit the request \(if needed\) and select **Send**.</span></span>  
+<span data-ttu-id="e5fe1-126">网络控制台是一个新 **面板，它将** 在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-126">A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.</span></span>  <span data-ttu-id="e5fe1-127">若要显示从服务器返回的响应，请编辑请求 \(\) 并选择"发送 **"。**</span><span class="sxs-lookup"><span data-stu-id="e5fe1-127">To display the response returned from the server, edit the request \(if needed\) and select **Send**.</span></span>  
 
 <span data-ttu-id="e5fe1-128">您还可以使用网络 **控制台** 直接从 DevTools 创建和发送 HTTP 请求。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-128">You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.</span></span>  
 
@@ -73,12 +73,12 @@ ms.locfileid: "11564926"
 :::image-end:::  
 
 > [!TIP]
-> <span data-ttu-id="e5fe1-131">若要在 **主 \ (** top\) 面板（而不是 [DevTools 箱][DevtoolsCustomizeIndexDrawer]）中显示网络控制台，请导航到在面板 [之间移动工具](#move-tools-between-panels)。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-131">To display **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).</span></span>  
+> <span data-ttu-id="e5fe1-131">若要在 **主 \(** top\) 面板（而不是 [DevTools 箱][DevtoolsCustomizeIndexDrawer]）中显示网络控制台，请导航到在面板 [之间移动工具](#move-tools-between-panels)。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-131">To display **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).</span></span>  
 
 > [!NOTE]
 > <span data-ttu-id="e5fe1-132">若要启用实验，请导航到打开 [实验][DevtoolsExperimentalFeaturesTurnOn] 功能，然后选择启用网络 **控制台旁边的复选框**。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-132">To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable Network Console**.</span></span>  
 > 
-> <span data-ttu-id="e5fe1-133">打开网络 [日志][DevtoolsNetworkIndexLogActivity]，打开上下文菜单 \ (右键单击\) ，然后选择编辑 **和重播**。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-133">Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and choose **Edit and Replay**.</span></span>  
+> <span data-ttu-id="e5fe1-133">打开网络 [日志][DevtoolsNetworkIndexLogActivity]，打开上下文菜单 \(右键单击\) ，然后选择编辑 **和重播**。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-133">Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and choose **Edit and Replay**.</span></span>  
 
 <span data-ttu-id="e5fe1-134">Chromium问题[#1093687][CR1093687]</span><span class="sxs-lookup"><span data-stu-id="e5fe1-134">Chromium issue [#1093687][CR1093687]</span></span>  
 
@@ -86,7 +86,7 @@ ms.locfileid: "11564926"
 
 <span data-ttu-id="e5fe1-136">网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-136">The **Timing** tab of the **Network** tool now includes `respondWith` service worker events.</span></span>  <span data-ttu-id="e5fe1-137">服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-137">The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text=""网络"面板的"计时"选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="网络面板的计时选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    <span data-ttu-id="e5fe1-139">网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件</span><span class="sxs-lookup"><span data-stu-id="e5fe1-139">The `respondWith` service worker event in the **Timing** tab of the **Network** tool</span></span>  
 :::image-end:::  
 
@@ -123,7 +123,7 @@ ms.locfileid: "11564926"
    <span data-ttu-id="e5fe1-156">试验功能</span><span class="sxs-lookup"><span data-stu-id="e5fe1-156">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="e5fe1-157">通常，元素和网络等工具\*\*\*\* 只能在\*\*\*\* DevTools 的主 \ (\) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="e5fe1-158">同样，诸如**3D 视图**和\*\*\*\* 问题等工具可能只能在 DevTools (底部\) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="e5fe1-159">现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
+<span data-ttu-id="e5fe1-157">通常，元素和网络等工具\*\*\*\* 只能在\*\*\*\* DevTools 的主 \(\) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="e5fe1-158">同样，诸如**3D 视图**和\*\*\*\* 问题等工具可能只能在 DevTools (底部\) 面板中打开。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="e5fe1-159">现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    <span data-ttu-id="e5fe1-161">在面板之间移动工具</span><span class="sxs-lookup"><span data-stu-id="e5fe1-161">Move tools between panels</span></span>  
@@ -160,7 +160,7 @@ ms.locfileid: "11564926"
 
 <span data-ttu-id="e5fe1-178">现在您可以使用可构造样式表编辑在 JavaScript [中添加的样式][WicgConstructStylesheet]。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-178">You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].</span></span>  <span data-ttu-id="e5fe1-179">可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式][MdnShadowDom]。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-179">Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].</span></span>  
 
-<span data-ttu-id="e5fe1-180">例如，使用 `h1` `CSSStyleSheet` \ (CSSOM API\) 添加的样式以前不可编辑。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-180">For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.</span></span>  <span data-ttu-id="e5fe1-181">样式现在在"样式"面板中 **可** 编辑。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-181">The styles are editable now in the **Styles** panel.</span></span>  
+<span data-ttu-id="e5fe1-180">例如，使用 `h1` `CSSStyleSheet` \(CSSOM API\) 添加的样式以前不可编辑。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-180">For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.</span></span>  <span data-ttu-id="e5fe1-181">样式现在在"样式"面板中 **可** 编辑。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-181">The styles are editable now in the **Styles** panel.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="将随 CSSStyleSheet 一起添加的 h1 样式的背景属性从粉色更改为浅色" lightbox="../../media/2020/06/css-in-js.msft.png":::
    <span data-ttu-id="e5fe1-183">将 `background` 随 一起 `h1` 添加的样式 `CSSStyleSheet` 的属性从 更改 `pink` 到 `lightblue` 。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-183">Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.</span></span>
@@ -174,7 +174,7 @@ ms.locfileid: "11564926"
 
 <span data-ttu-id="e5fe1-187">**"灯楼**"面板现在运行"Lighthouse 6"。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-187">The **Lighthouse** panel is now running Lighthouse 6.</span></span>  <span data-ttu-id="e5fe1-188">有关所有更改的完整列表，请导航到 [v6.0.0 发行说明][GithubGoogleChromeLighthouse600]。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-188">For a full list of all changes, navigate to [v6.0.0 release notes][GithubGoogleChromeLighthouse600].</span></span>  
 
-<span data-ttu-id="e5fe1-189">Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 \ (LCP\) 、累积布局班次 \ (CLS\) 和总阻止时间 \ (TBT\) 。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-189">Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).</span></span>  
+<span data-ttu-id="e5fe1-189">Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 \(LCP\) 、累积布局班次 \(CLS\) 和总阻止时间 \(TBT\) 。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-189">Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).</span></span>  
 
 <span data-ttu-id="e5fe1-190">性能分数公式也进行了重新加权，以更好地反映用户的加载体验。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-190">The performance score formula has also been reweighted to better reflect the loading experience of the user.</span></span>  
 
@@ -182,7 +182,7 @@ ms.locfileid: "11564926"
 
 #### <a name="first-meaningful-paint-deprecation"></a><span data-ttu-id="e5fe1-192">First Meaningful 画图弃用</span><span class="sxs-lookup"><span data-stu-id="e5fe1-192">First Meaningful Paint deprecation</span></span>  
 
-<span data-ttu-id="e5fe1-193">First Meaningful 画图 \ (FMP\) is deprecated in Lighthouse 6.0.</span><span class="sxs-lookup"><span data-stu-id="e5fe1-193">First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.</span></span>  <span data-ttu-id="e5fe1-194">FMP 也从"性能" **面板中删除** 。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-194">FMP has also been removed from the **Performance** panel.</span></span>  <span data-ttu-id="e5fe1-195">**最大的 Contentful 画图**FMP 的建议替代项。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-195">**Largest Contentful Paint** is the recommended replacement for FMP.</span></span>  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
+<span data-ttu-id="e5fe1-193">First Meaningful 画图 \(FMP\) is deprecated in Lighthouse 6.0.</span><span class="sxs-lookup"><span data-stu-id="e5fe1-193">First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.</span></span>  <span data-ttu-id="e5fe1-194">FMP 也从"性能" **面板中删除** 。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-194">FMP has also been removed from the **Performance** panel.</span></span>  <span data-ttu-id="e5fe1-195">**最大的 Contentful 画图**FMP 的建议替代项。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-195">**Largest Contentful Paint** is the recommended replacement for FMP.</span></span>  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
@@ -229,7 +229,7 @@ ms.locfileid: "11564926"
 <span data-ttu-id="e5fe1-208">" **清单** "窗格现在显示针对以下条件的警告。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-208">The **Manifest** pane now shows warnings for the following conditions.</span></span>  
 
 * <span data-ttu-id="e5fe1-209">应用快捷方式图标小于 96x96 像素</span><span class="sxs-lookup"><span data-stu-id="e5fe1-209">The app shortcut icons are smaller than 96x96 pixels</span></span>  
-* <span data-ttu-id="e5fe1-210">应用快捷方式图标和清单图标不是方形 \ (，因为图标将被忽略\) </span><span class="sxs-lookup"><span data-stu-id="e5fe1-210">The app shortcut icons and manifest icons are not square \(since the icons are ignored\)</span></span>  
+* <span data-ttu-id="e5fe1-210">应用快捷方式图标和清单图标不是方形 \(，因为图标将被忽略\) </span><span class="sxs-lookup"><span data-stu-id="e5fe1-210">The app shortcut icons and manifest icons are not square \(since the icons are ignored\)</span></span>  
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    <span data-ttu-id="e5fe1-212">应用快捷方式警告</span><span class="sxs-lookup"><span data-stu-id="e5fe1-212">App shortcut warnings</span></span>  
@@ -272,7 +272,7 @@ ms.locfileid: "11564926"
 
 <span data-ttu-id="e5fe1-233">例如，以前，DevTools 未取消分组邮件，即使未取消选中" `hello` **组** 相似"。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="e5fe1-234">现在， `hello` 邮件已取消组合。</span><span class="sxs-lookup"><span data-stu-id="e5fe1-234">Now, the `hello` messages are ungrouped.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中"类似组"时，hello 消息将取消分组" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中类似组时，hello 消息将取消分组" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    <span data-ttu-id="e5fe1-236">取消 **选中"类似** 组"时 `hello` ，邮件将取消分组</span><span class="sxs-lookup"><span data-stu-id="e5fe1-236">When **Group similar** is unchecked, the `hello` messages are ungrouped</span></span>
 :::image-end:::  
 

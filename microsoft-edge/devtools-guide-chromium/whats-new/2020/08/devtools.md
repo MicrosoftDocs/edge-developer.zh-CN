@@ -43,7 +43,7 @@ ms.locfileid: "11564943"
 
 <span data-ttu-id="1cdee-110">若要激活此功能，请导航到自定义开发人员工具中的Microsoft Edge[快捷方式][DevtoolsCustomizeShortcuts]。</span><span class="sxs-lookup"><span data-stu-id="1cdee-110">To activate this feature, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].</span></span>  
 
-<span data-ttu-id="1cdee-111">例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-111">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.</span></span>  <span data-ttu-id="1cdee-112">使用\*\*DevTools (Default) \*\*预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` \*\*\*\* `F5` 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-112">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
+<span data-ttu-id="1cdee-111">例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-111">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.</span></span>  <span data-ttu-id="1cdee-112">使用\*\*DevTools (Default) \*\*预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8``F5` 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-112">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
 
 <span data-ttu-id="1cdee-113">Chromium问题[#174309][CR174309]</span><span class="sxs-lookup"><span data-stu-id="1cdee-113">Chromium issue [#174309][CR174309]</span></span>  
 
@@ -173,7 +173,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="1cdee-166">感谢你发送反馈并帮助改进Chromium。</span><span class="sxs-lookup"><span data-stu-id="1cdee-166">Thank you for sending your feedback and helping improve Chromium.</span></span>  <span data-ttu-id="1cdee-167">您的反馈发现了开放[#1103316][CR1103316]中的问题Chromium问题。</span><span class="sxs-lookup"><span data-stu-id="1cdee-167">Your feedback uncovered Issue [#1103316][CR1103316] in the open-source Chromium project.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的"元素"Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的元素Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
    <span data-ttu-id="1cdee-169">在 84 或更高版本中的 **"** 元素"Microsoft Edge突出显示第一个搜索结果</span><span class="sxs-lookup"><span data-stu-id="1cdee-169">Highlighted first search result on **Elements** tool in Microsoft Edge 84 or later</span></span>  
 :::image-end:::  
 
@@ -191,7 +191,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="1cdee-175">若要打开新的 **媒体工具** ，请完成以下步骤。</span><span class="sxs-lookup"><span data-stu-id="1cdee-175">To open the new **Media** tool, complete the following step.</span></span>  
 
-1.  <span data-ttu-id="1cdee-176">Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Media**.</span><span class="sxs-lookup"><span data-stu-id="1cdee-176">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.</span></span>  
+1.  <span data-ttu-id="1cdee-176">Choose **Customize and control DevTools** \(`...` \) > More **tools**  >  **Media**.</span><span class="sxs-lookup"><span data-stu-id="1cdee-176">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.</span></span>  
     
     :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具" lightbox="../../media/2020/08/media-panel.msft.png":::
        <span data-ttu-id="1cdee-178">新 **媒体** 工具</span><span class="sxs-lookup"><span data-stu-id="1cdee-178">New **Media** tool</span></span>  
@@ -208,7 +208,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="1cdee-185">现在，可以使用"元素"工具中的上下文菜单捕获 **节点屏幕截图** 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-185">You may now capture node screenshots using the context menu in the **Elements** tool.</span></span>  
 
-<span data-ttu-id="1cdee-186">例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择捕获 **节点屏幕截图**。</span><span class="sxs-lookup"><span data-stu-id="1cdee-186">For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.</span></span>  
+<span data-ttu-id="1cdee-186">例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \(右键单击\) ，然后选择捕获 **节点屏幕截图**。</span><span class="sxs-lookup"><span data-stu-id="1cdee-186">For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.</span></span>  
 
 :::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    <span data-ttu-id="1cdee-188">捕获节点屏幕截图</span><span class="sxs-lookup"><span data-stu-id="1cdee-188">Capture node screenshots</span></span>  
@@ -290,7 +290,7 @@ The current effort to improve translation quality enables easier support for mor
 
 | <span data-ttu-id="1cdee-231">JavaScript 语言功能</span><span class="sxs-lookup"><span data-stu-id="1cdee-231">JavaScript language feature</span></span> | <span data-ttu-id="1cdee-232">详细信息</span><span class="sxs-lookup"><span data-stu-id="1cdee-232">Details</span></span> |  
 |:--- |:--- |  
-| [<span data-ttu-id="1cdee-233">逻辑赋值运算符</span><span class="sxs-lookup"><span data-stu-id="1cdee-233">Logical assignment operators</span></span>][V8FeaturesLogicalAssignment] | <span data-ttu-id="1cdee-234">DevTools 现在支持使用控制台和源工具中的新 、 和 运算符 `&&=` `||=` `??=` 进行逻辑分配。 \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="1cdee-234">DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.</span></span>  |  
+| [<span data-ttu-id="1cdee-233">逻辑赋值运算符</span><span class="sxs-lookup"><span data-stu-id="1cdee-233">Logical assignment operators</span></span>][V8FeaturesLogicalAssignment] | <span data-ttu-id="1cdee-234">DevTools 现在支持使用控制台和源工具中的新 、 和 运算符 `&&=` `||=` `??=` 进行逻辑分配。\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="1cdee-234">DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.</span></span>  |  
 | <span data-ttu-id="1cdee-235">彩色数字 [分隔符][V8FeaturesNumericSeparators]</span><span class="sxs-lookup"><span data-stu-id="1cdee-235">Pretty-print [numeric separators][V8FeaturesNumericSeparators]</span></span> | <span data-ttu-id="1cdee-236">DevTools 现在在"源"工具中正确打印数字 **分隔** 符。</span><span class="sxs-lookup"><span data-stu-id="1cdee-236">DevTools now properly pretty-prints the numeric separators in the **Sources** tool.</span></span>  |  
 
 <span data-ttu-id="1cdee-237">Chromium问题[：1086817][CR1086817] [、1080569][CR1080569]</span><span class="sxs-lookup"><span data-stu-id="1cdee-237">Chromium issues: [1086817][CR1086817], [1080569][CR1080569]</span></span>  
@@ -303,7 +303,7 @@ The current effort to improve translation quality enables easier support for mor
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a><span data-ttu-id="1cdee-242">在"服务工作者"窗格中弃用其他源列表</span><span class="sxs-lookup"><span data-stu-id="1cdee-242">Deprecation of other origins listing in the Service Workers pane</span></span>  
 
-<span data-ttu-id="1cdee-243">DevTools 现在提供来自服务工作者\*\*\*\* 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。</span><span class="sxs-lookup"><span data-stu-id="1cdee-243">DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.</span></span>  <span data-ttu-id="1cdee-244">若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-244">To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.</span></span>  
+<span data-ttu-id="1cdee-243">DevTools 现在提供来自服务工作者\*\*\*\* 窗格 \(**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。</span><span class="sxs-lookup"><span data-stu-id="1cdee-243">DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.</span></span>  <span data-ttu-id="1cdee-244">若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-244">To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.</span></span>  
 
 <span data-ttu-id="1cdee-245">以前，DevTools 显示一个嵌套在\*\*\*\*"应用程序工具""服务>**窗格下**的列表。</span><span class="sxs-lookup"><span data-stu-id="1cdee-245">Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.</span></span>  
 
@@ -384,7 +384,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="1cdee-288">" **属性** "窗格已返回。</span><span class="sxs-lookup"><span data-stu-id="1cdee-288">The **Properties** pane is back.</span></span>  <span data-ttu-id="1cdee-289">它在[84 Microsoft Edge弃用][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]。</span><span class="sxs-lookup"><span data-stu-id="1cdee-289">It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].</span></span>  <span data-ttu-id="1cdee-290">开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划对检查元素属性的改进。</span><span class="sxs-lookup"><span data-stu-id="1cdee-290">The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text=""元素"面板中的"属性"窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="元素面板中的属性窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
    <span data-ttu-id="1cdee-292">**"** 元素"工具 **中的"属性"** 窗格</span><span class="sxs-lookup"><span data-stu-id="1cdee-292">**Properties** pane in the **Elements** tool</span></span>  
 :::image-end:::  
 
@@ -418,7 +418,7 @@ Chromium issue: [#1103854][CR1103854]
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a><span data-ttu-id="1cdee-302">在网络面板中一致地显示资源类型</span><span class="sxs-lookup"><span data-stu-id="1cdee-302">Consistently display resource type in Network panel</span></span>  
 
-<span data-ttu-id="1cdee-303">DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \ (HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="1cdee-303">DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.</span></span>  
+<span data-ttu-id="1cdee-303">DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \(HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="1cdee-303">DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.</span></span>  
 
 <span data-ttu-id="1cdee-304">以前，DevTools 有时将类型 `Other` 更改为 。</span><span class="sxs-lookup"><span data-stu-id="1cdee-304">Previously DevTools changed the type to `Other` sometimes.</span></span>  
 
@@ -439,7 +439,7 @@ Chromium issue: [#1103854][CR1103854]
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text=""元素"面板中的"清除"按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="元素面板中的清除按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          <span data-ttu-id="1cdee-314">"元素"工具中的 **"清除"** 按钮</span><span class="sxs-lookup"><span data-stu-id="1cdee-314">Clear buttons in the **Elements** tools</span></span>  
       :::image-end:::  
    :::column-end:::

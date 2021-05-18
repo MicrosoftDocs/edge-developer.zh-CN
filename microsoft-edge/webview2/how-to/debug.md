@@ -25,7 +25,7 @@ ms.locfileid: "11535820"
 
 *   <span data-ttu-id="ae813-111">选择 `F12`。</span><span class="sxs-lookup"><span data-stu-id="ae813-111">Select `F12`.</span></span>  
 *   <span data-ttu-id="ae813-112">选择 `Ctrl` + `Shift` + `I` 。</span><span class="sxs-lookup"><span data-stu-id="ae813-112">Select `Ctrl`+`Shift`+`I`.</span></span>  
-*   <span data-ttu-id="ae813-113">打开上下文菜单 \ (右键单击\) 并选择 `Inspect` 。</span><span class="sxs-lookup"><span data-stu-id="ae813-113">Open the context menu \(right-click\) and choose `Inspect`.</span></span>  
+*   <span data-ttu-id="ae813-113">打开上下文菜单 \(右键单击\) 并选择 `Inspect` 。</span><span class="sxs-lookup"><span data-stu-id="ae813-113">Open the context menu \(right-click\) and choose `Inspect`.</span></span>  
     
 <span data-ttu-id="ae813-114">有关详细信息，请导航到["DevTools 概述"。][DevtoolsGuideChromiumMain]</span><span class="sxs-lookup"><span data-stu-id="ae813-114">For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain].</span></span>  
 
@@ -38,7 +38,7 @@ ms.locfileid: "11535820"
 <span data-ttu-id="ae813-118">Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。</span><span class="sxs-lookup"><span data-stu-id="ae813-118">Visual Studio provides various debugging tools for web and native code in WebView2 apps.</span></span>  <span data-ttu-id="ae813-119">在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。</span><span class="sxs-lookup"><span data-stu-id="ae813-119">In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.</span></span>  <span data-ttu-id="ae813-120">使用以下过程仅调试 Win32 应用或 Office 外接程序中的 Web 和本机代码。</span><span class="sxs-lookup"><span data-stu-id="ae813-120">Use the following process to debug web and native code in Win32 apps or Office Add-ins only.</span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="ae813-121">当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机 `F12` 调试器，而不是开发人员工具。</span><span class="sxs-lookup"><span data-stu-id="ae813-121">When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.</span></span>  <span data-ttu-id="ae813-122">Select `Ctrl` + `Shift` + `I` ， or use the context menu \ (right-click\) to avoid the situation.</span><span class="sxs-lookup"><span data-stu-id="ae813-122">Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.</span></span>  
+> <span data-ttu-id="ae813-121">当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机 `F12` 调试器，而不是开发人员工具。</span><span class="sxs-lookup"><span data-stu-id="ae813-121">When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.</span></span>  <span data-ttu-id="ae813-122">Select `Ctrl` + `Shift` + `I` ， or use the context menu \(right-click\) to avoid the situation.</span><span class="sxs-lookup"><span data-stu-id="ae813-122">Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.</span></span>  
 
 <span data-ttu-id="ae813-123">开始之前，请确保满足以下要求。</span><span class="sxs-lookup"><span data-stu-id="ae813-123">Before you begin, ensure the following requirements are met.</span></span>  
 
@@ -63,12 +63,12 @@ ms.locfileid: "11535820"
     1.  <span data-ttu-id="ae813-137">选择 **"JavaScript 诊断"** 设置。</span><span class="sxs-lookup"><span data-stu-id="ae813-137">Choose the **JavaScript diagnostics** setting.</span></span>  
     1.  <span data-ttu-id="ae813-138">选择 **"修改"。**</span><span class="sxs-lookup"><span data-stu-id="ae813-138">Choose **Modify**.</span></span> 
         
-        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio"修改单个组件"选项卡" lightbox="./media/indiv-comp.png":::
+        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio 修改单个组件选项卡" lightbox="./media/indiv-comp.png":::
            <span data-ttu-id="ae813-140">Visual Studio"修改单个组件"选项卡</span><span class="sxs-lookup"><span data-stu-id="ae813-140">Visual Studio Modifying Individual Components Tab</span></span>  
         :::image-end:::  
         
 1.  <span data-ttu-id="ae813-141">为 WebView2 应用启用脚本调试。</span><span class="sxs-lookup"><span data-stu-id="ae813-141">Enable script debugging for WebView2 apps.</span></span>  
-    1.  <span data-ttu-id="ae813-142">在 WebView2 项目中，打开上下文菜单 \ (右键单击\) ，然后选择"属性 **"。**</span><span class="sxs-lookup"><span data-stu-id="ae813-142">In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.</span></span>  
+    1.  <span data-ttu-id="ae813-142">在 WebView2 项目中，打开上下文菜单 \(右键单击\) ，然后选择"属性 **"。**</span><span class="sxs-lookup"><span data-stu-id="ae813-142">In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.</span></span>  
     1.  <span data-ttu-id="ae813-143">在"**配置属性"下**，选择 **"调试"。**</span><span class="sxs-lookup"><span data-stu-id="ae813-143">Under the **Configuration Properties**, choose **Debugging**.</span></span>  
     1.  <span data-ttu-id="ae813-144">在调试**器类型下**，选择 \*\*"JavaScript (WebView2) "。 \*\*</span><span class="sxs-lookup"><span data-stu-id="ae813-144">Under the **Debugger Type**, choose **JavaScript (WebView2)**.</span></span>  
         
@@ -133,7 +133,7 @@ ms.locfileid: "11535820"
     1.  <span data-ttu-id="ae813-171">在" **运行** "选项卡上，从下拉菜单中选择启动配置。</span><span class="sxs-lookup"><span data-stu-id="ae813-171">On the **Run** tab, choose the launch configuration from the dropdown menu.</span></span>  
     1.  <span data-ttu-id="ae813-172">若要开始调试你的应用，请选择"开始调试"，这是启动配置下拉列表旁边的绿色三角形。</span><span class="sxs-lookup"><span data-stu-id="ae813-172">To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.</span></span>  
         
-        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio代码运行"选项卡" lightbox="./media/run-vs.png":::
+        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio代码运行选项卡" lightbox="./media/run-vs.png":::
            <span data-ttu-id="ae813-174">Visual Studio代码运行"选项卡</span><span class="sxs-lookup"><span data-stu-id="ae813-174">Visual Studio Code Run tab</span></span>  
         :::image-end:::  
         

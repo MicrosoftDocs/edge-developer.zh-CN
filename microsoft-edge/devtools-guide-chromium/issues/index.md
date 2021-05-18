@@ -47,14 +47,14 @@ ms.locfileid: "11564180"
        :::column span="":::
           <span data-ttu-id="15342-115">选择黄色 **警告栏中** 的"转到问题"按钮。</span><span class="sxs-lookup"><span data-stu-id="15342-115">Choose the **Go to Issues** button in the yellow warning bar.</span></span>  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时转到黄色警告栏中的"问题"按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时转到黄色警告栏中的问题按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
              <span data-ttu-id="15342-117">检测到 **问题时** ，黄色警告栏中的"转到问题"按钮。</span><span class="sxs-lookup"><span data-stu-id="15342-117">The **Go to Issues** button in the yellow warning bar when Issues are detected.</span></span>  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           <span data-ttu-id="15342-118">或者，从"更多**工具"\*\*\*\*菜单中选择"问题**"。</span><span class="sxs-lookup"><span data-stu-id="15342-118">Alternatively, choose **Issues** from the **More tools** menu.</span></span>  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text=""更多工具"菜单中的"问题"工具" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="更多工具菜单中的问题工具" lightbox="../media//issues-more-tools-menu.msft.png":::
              <span data-ttu-id="15342-120">**"** 更多工具 **"菜单中的"问题"** 工具</span><span class="sxs-lookup"><span data-stu-id="15342-120">**Issues** tool in **More tools** menu</span></span>  
           :::image-end:::  
        :::column-end:::
@@ -62,13 +62,13 @@ ms.locfileid: "11564180"
     
 1.  <span data-ttu-id="15342-121">如有必要 **，选择"重新加载** 页面"按钮。</span><span class="sxs-lookup"><span data-stu-id="15342-121">Choose the **Reload page** button, if necessary.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的"问题"工具（具有"重新加载"页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的问题工具（具有重新加载页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
        <span data-ttu-id="15342-123">**DevTools** Drawer 中的"问题"工具（ **具有"重新加载"页面按钮** ）</span><span class="sxs-lookup"><span data-stu-id="15342-123">**Issues** tool in the DevTools Drawer with **Reload page** button</span></span>  
     :::image-end:::  
 
     <span data-ttu-id="15342-124">控制台中报告 **的问题很难** 理解，如下图中的 Cookie 警告。</span><span class="sxs-lookup"><span data-stu-id="15342-124">The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.</span></span>  <span data-ttu-id="15342-125">根据报告的问题，可能不清楚必须执行哪些工作。</span><span class="sxs-lookup"><span data-stu-id="15342-125">Based upon the reported issues, it may not be clear what you must do.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools 箱中具有三个 Cookie 问题的"问题"工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools 箱中具有三个 Cookie 问题的问题工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
        <span data-ttu-id="15342-127">**DevTools** 箱中具有三个 Cookie 问题的"问题"工具</span><span class="sxs-lookup"><span data-stu-id="15342-127">**Issues** tool in the DevTools Drawer with three cookie issues</span></span>  
     :::image-end:::  
     
@@ -78,7 +78,7 @@ ms.locfileid: "11564180"
 
 1.  <span data-ttu-id="15342-130">在问题工具 **中选择** 一个项目，获取有关如何修复问题和查找受影响资源的指南。</span><span class="sxs-lookup"><span data-stu-id="15342-130">Choose an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="在"问题"工具中将跨站点 Cookie 标记为"打开安全问题"" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="在问题工具中将跨站点 Cookie 标记为打开安全问题" lightbox="../media/issues-tab-issue-open.msft.png":::
        <span data-ttu-id="15342-132">**在"问题"工具中将** 跨站点 Cookie 标记为"打开 **安全问题** "</span><span class="sxs-lookup"><span data-stu-id="15342-132">**Mark cross-site cookies as Secure** issue open in the **Issues** tool</span></span>  
     :::image-end:::  
     
@@ -126,7 +126,7 @@ ms.locfileid: "11564180"
 
 > [!NOTE]
 > <span data-ttu-id="15342-157">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="15342-157">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="15342-158">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \ (Developer Advocate\) 。</span><span class="sxs-lookup"><span data-stu-id="15342-158">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).</span></span>  
+> <span data-ttu-id="15342-158">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \(Developer Advocate\) 。</span><span class="sxs-lookup"><span data-stu-id="15342-158">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).</span></span>  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="15342-160">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="15342-160">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 

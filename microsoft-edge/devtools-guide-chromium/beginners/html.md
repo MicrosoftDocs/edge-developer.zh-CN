@@ -188,7 +188,7 @@ ms.locfileid: "11564565"
 
 1.  <span data-ttu-id="88b07-176">导航到实时 **选项卡**。 在页面底部，显示 `A new element!?!` 文本。</span><span class="sxs-lookup"><span data-stu-id="88b07-176">Navigate to the **live tab**.  At the bottom of your page, the text `A new element!?!` is displayed.</span></span>  
     
-    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="在页面底部，文本为"新元素!?! <span data-ttu-id="88b07-178">显示</span><span class="sxs-lookup"><span data-stu-id="88b07-178">is displayed</span></span>" lightbox="../media/beginners-html-dom1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="在页面底部，文本为新元素!?! 显示" lightbox="../media/beginners-html-dom1.msft.png":::
        <span data-ttu-id="88b07-179">在页面底部显示 `A new element!?!` 文本</span><span class="sxs-lookup"><span data-stu-id="88b07-179">At the bottom of the page the text `A new element!?!` is displayed</span></span>  
     :::image-end:::  
     
@@ -378,7 +378,7 @@ ms.locfileid: "11564565"
 
 > [!NOTE]
 > <span data-ttu-id="88b07-262">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="88b07-262">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="88b07-263">原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Writer][KatherineJackson] \ (Technical Writer，Chrome DevTools\) 。</span><span class="sxs-lookup"><span data-stu-id="88b07-263">The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).</span></span>  
+> <span data-ttu-id="88b07-263">原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Writer][KatherineJackson] \(Technical Writer，Chrome DevTools\) 。</span><span class="sxs-lookup"><span data-stu-id="88b07-263">The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="88b07-265">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="88b07-265">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

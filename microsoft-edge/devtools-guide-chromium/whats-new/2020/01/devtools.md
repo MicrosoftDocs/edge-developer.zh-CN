@@ -53,7 +53,7 @@ ms.locfileid: "11564957"
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="6649f-121">中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="6649f-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
+      <span data-ttu-id="6649f-121">中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="6649f-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
    :::column-end:::
    :::column span="":::
       <span data-ttu-id="6649f-122">繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="6649f-122">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>
@@ -128,7 +128,7 @@ ms.locfileid: "11564957"
 
 ### <a name="3d-view"></a><span data-ttu-id="6649f-148">3D 视图</span><span class="sxs-lookup"><span data-stu-id="6649f-148">3D View</span></span>  
 
-<span data-ttu-id="6649f-149">使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="6649f-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
+<span data-ttu-id="6649f-149">使用 **3D 视图** 通过浏览文档对象模型 [\(DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="6649f-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2020/01/3dview.msft.png":::
    <span data-ttu-id="6649f-151">DevTools 中的 3D 视图</span><span class="sxs-lookup"><span data-stu-id="6649f-151">The 3D View in the DevTools</span></span>  
@@ -146,7 +146,7 @@ ms.locfileid: "11564957"
 
 #### <a name="elements-for-microsoft-edge"></a><span data-ttu-id="6649f-158">用于Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="6649f-158">Elements for Microsoft Edge</span></span>  
 
-<span data-ttu-id="6649f-159">通过添加[\Microsoft Edge\ (Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 元素工具。</span><span class="sxs-lookup"><span data-stu-id="6649f-159">Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span></span>  
+<span data-ttu-id="6649f-159">通过添加[\Microsoft Edge\(Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 元素工具。</span><span class="sxs-lookup"><span data-stu-id="6649f-159">Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="使用元素扩展Visual Studio Code元素的 Microsoft Edge 工具" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    <span data-ttu-id="6649f-161">元素**工具**Visual Studio Code元素扩展Microsoft Edge元素</span><span class="sxs-lookup"><span data-stu-id="6649f-161">The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension</span></span>  
@@ -225,7 +225,7 @@ ms.locfileid: "11564957"
 
 <span data-ttu-id="6649f-202">"应用程序"面板中的"Cookie"窗格现在显示带黄色背景的阻止的 Cookie。</span><span class="sxs-lookup"><span data-stu-id="6649f-202">The Cookies pane in the Application panel now displays blocked cookies with a yellow background.</span></span>  
 
-:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text=""应用程序"面板的"Cookie"窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
+:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text="应用程序面板的 Cookie 窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
    <span data-ttu-id="6649f-204">"应用程序"面板的"Cookie"窗格中阻止的 Cookie</span><span class="sxs-lookup"><span data-stu-id="6649f-204">Blocked cookies in the Cookies pane of the Application panel</span></span>  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ ms.locfileid: "11564957"
 
 #### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a><span data-ttu-id="6649f-215">复制为Node.js提取以包含 Cookie 数据</span><span class="sxs-lookup"><span data-stu-id="6649f-215">Copy as Node.js fetch to include cookie data</span></span>  
 
-<span data-ttu-id="6649f-216">若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \ (右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` \*\*\*\*  >  **提取"。**</span><span class="sxs-lookup"><span data-stu-id="6649f-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
+<span data-ttu-id="6649f-216">若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \(右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` >  **提取"。**</span><span class="sxs-lookup"><span data-stu-id="6649f-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="作为提取Node.js复制" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    <span data-ttu-id="6649f-218">作为提取Node.js复制</span><span class="sxs-lookup"><span data-stu-id="6649f-218">Copy as Node.js fetch</span></span>  
@@ -294,7 +294,7 @@ ms.locfileid: "11564957"
 
 ### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a><span data-ttu-id="6649f-239">用于禁用滚动过文件末尾的设置</span><span class="sxs-lookup"><span data-stu-id="6649f-239">Setting for disabling scrolling past the end of a file</span></span>  
 
-<span data-ttu-id="6649f-240">打开[设置，][DevtoolsCustomizeIndexSettings]然后禁用首选项源\*\*\*\* 允许滚动文件末尾以禁用默认 UI 行为，该行为允许你在"源"面板中的文件末尾良好  >  \*\*\*\*  >  \*\*\*\* 滚动。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="6649f-240">Open [Settings][DevtoolsCustomizeIndexSettings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
+<span data-ttu-id="6649f-240">打开[设置，][DevtoolsCustomizeIndexSettings]然后禁用首选项源\*\*\*\* 允许滚动文件末尾以禁用默认 UI 行为，该行为允许你在"源"面板中的文件末尾良好  >  > 滚动。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="6649f-240">Open [Settings][DevtoolsCustomizeIndexSettings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="禁用 允许滚动到文件的末尾" lightbox="../../images/2020/01/settings.msft.png":::
    <span data-ttu-id="6649f-242">禁用**允许滚动到文件末尾设置**</span><span class="sxs-lookup"><span data-stu-id="6649f-242">Disabling **Allow scrolling past end of file** in Settings</span></span>  
@@ -330,7 +330,7 @@ ms.locfileid: "11564957"
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "调试程序Microsoft Edge |Visual StudioMarketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge \ (Chromium\) |Visual StudioMarketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge \(Chromium\) |Visual StudioMarketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint |Visual StudioMarketplace"
 
 [TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79 "改进跟踪防护Microsoft Edge博客文章"

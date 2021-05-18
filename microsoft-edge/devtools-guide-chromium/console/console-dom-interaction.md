@@ -69,13 +69,13 @@ document.querySelector('header').style.border = '2em solid green'
 1.  <span data-ttu-id="deb10-132">选择它，DevTools 跳转到 **"元素"** 工具。</span><span class="sxs-lookup"><span data-stu-id="deb10-132">Choose it and DevTools jumps to the **Elements** tool.</span></span>  
 1.  <span data-ttu-id="deb10-133">选择 `...` DOM 视图中元素旁边的菜单。</span><span class="sxs-lookup"><span data-stu-id="deb10-133">Choose the `...` menu next to the element in the DOM view.</span></span>  
     
-    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在"元素"工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
+    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在元素工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         <span data-ttu-id="deb10-135">所选元素显示在"元素"工具的 DOM **树中，** 选择溢出菜单以获取更多功能</span><span class="sxs-lookup"><span data-stu-id="deb10-135">The chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="deb10-136">打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。</span><span class="sxs-lookup"><span data-stu-id="deb10-136">Open the contextual menu and choose `Copy` > `Copy JS Path`.</span></span>  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从"元素"工具的 DOM 视图中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从元素工具的 DOM 视图中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         <span data-ttu-id="deb10-138">从"元素"工具的 DOM 视图中的元素复制 JavaScript**路径**</span><span class="sxs-lookup"><span data-stu-id="deb10-138">Copy the JavaScript path from an element in the DOM view of the **Elements** tool</span></span>  
     :::image-end:::  
     
@@ -102,7 +102,7 @@ document.querySelector('header').style.border = '2em solid green'
 *   `$x()` <span data-ttu-id="deb10-154">允许您使用 XPATH 选择 DOM 元素。</span><span class="sxs-lookup"><span data-stu-id="deb10-154">allows you to choose DOM elements using XPATH.</span></span>
 *   `$()` <span data-ttu-id="deb10-155">`$$()`和 是 和 的 `document.querySelector()` 较短版本 `document.querySelectorAll()` 。</span><span class="sxs-lookup"><span data-stu-id="deb10-155">and `$$()` are shorter versions of for `document.querySelector()` and `document.querySelectorAll()`.</span></span>  
     
-<span data-ttu-id="deb10-156">例如，以下代码段检索网页 \ (中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`</span><span class="sxs-lookup"><span data-stu-id="deb10-156">For example, the following code snippet retrieves all the links in the webpage \(as `$$('a')` is short for `document.querySelectorAll('a')`\) and displays the links as a sortable table to copy and paste, for example, into Excel.</span></span>
+<span data-ttu-id="deb10-156">例如，以下代码段检索网页 \(中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`</span><span class="sxs-lookup"><span data-stu-id="deb10-156">For example, the following code snippet retrieves all the links in the webpage \(as `$$('a')` is short for `document.querySelectorAll('a')`\) and displays the links as a sortable table to copy and paste, for example, into Excel.</span></span>
 
 ```javascript
 console.table($$('a'),['href','text']);

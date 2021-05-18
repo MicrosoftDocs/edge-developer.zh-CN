@@ -26,7 +26,7 @@ ms.locfileid: "11564712"
 
 <span data-ttu-id="cbe76-122">下图显示了导航器窗格\*\*\*\*，其中突出显示了 DevTools 左上角的红色框，右上角突出显示了"编辑器"\*\*\*\* 窗格，底部突出显示了"**调试器**"窗格。</span><span class="sxs-lookup"><span data-stu-id="cbe76-122">The following figure shows the **Navigator** pane highlighted with a red box in the upper left corner of DevTools, the **Editor** pane highlighted in the upper right, and the **Debugger** pane highlighted on the bottom.</span></span>  <span data-ttu-id="cbe76-123">最左侧是浏览器窗口的主要部分，显示呈现的网页灰显，因为调试程序暂停在断点上：</span><span class="sxs-lookup"><span data-stu-id="cbe76-123">On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint:</span></span>
 
-:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text=""源"工具的窗格，布局较窄" lightbox="../media/sources-panes-narrow-layout.msft.png":::
+:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="源工具的窗格，布局较窄" lightbox="../media/sources-panes-narrow-layout.msft.png":::
    <span data-ttu-id="cbe76-125">"源"工具的窗格，布局较窄</span><span class="sxs-lookup"><span data-stu-id="cbe76-125">The panes of the Sources tool, in narrow layout</span></span>  
 :::image-end:::  
 
@@ -42,13 +42,13 @@ ms.locfileid: "11564712"
 
 ## <a name="using-the-navigator-pane-to-select-files"></a><span data-ttu-id="cbe76-132">使用导航器窗格选择文件</span><span class="sxs-lookup"><span data-stu-id="cbe76-132">Using the Navigator pane to select files</span></span>
 
-<span data-ttu-id="cbe76-133">使用 **左侧\ (** 导航器窗格 \) 导航从服务器返回的资源之间导航以构建当前网页。</span><span class="sxs-lookup"><span data-stu-id="cbe76-133">Use the **Navigator** pane \(on the left\) to navigate among the resources that are returned from the server to construct the current webpage.</span></span>  <span data-ttu-id="cbe76-134">选择文件、图像和其他资源，并查看其路径。</span><span class="sxs-lookup"><span data-stu-id="cbe76-134">Select files, images, and other resources, and view their paths.</span></span>  
+<span data-ttu-id="cbe76-133">使用 **左侧\(** 导航器窗格 \) 导航从服务器返回的资源之间导航以构建当前网页。</span><span class="sxs-lookup"><span data-stu-id="cbe76-133">Use the **Navigator** pane \(on the left\) to navigate among the resources that are returned from the server to construct the current webpage.</span></span>  <span data-ttu-id="cbe76-134">选择文件、图像和其他资源，并查看其路径。</span><span class="sxs-lookup"><span data-stu-id="cbe76-134">Select files, images, and other resources, and view their paths.</span></span>  
 
 :::image type="complex" source="../media/navigator-pane.msft.png" alt-text="导航器窗格" lightbox="../media/navigator-pane.msft.png":::
    <span data-ttu-id="cbe76-136">导航 **器** 窗格</span><span class="sxs-lookup"><span data-stu-id="cbe76-136">The **Navigator** pane</span></span>
 :::image-end:::  
 
-<span data-ttu-id="cbe76-137">若要访问导航器窗格的任何隐藏选项卡，请选择"更多选项卡 ![ ](../media/more-tabs-icon.msft.png) \ (**更多选项卡**\) "。</span><span class="sxs-lookup"><span data-stu-id="cbe76-137">To access any hidden tabs of the Navigator pane, select ![More tabs](../media/more-tabs-icon.msft.png) \(**More tabs**\).</span></span>
+<span data-ttu-id="cbe76-137">若要访问导航器窗格的任何隐藏选项卡，请选择"更多选项卡 ![ ](../media/more-tabs-icon.msft.png) \(**更多选项卡**\) "。</span><span class="sxs-lookup"><span data-stu-id="cbe76-137">To access any hidden tabs of the Navigator pane, select ![More tabs](../media/more-tabs-icon.msft.png) \(**More tabs**\).</span></span>
 
 <span data-ttu-id="cbe76-138">以下子部分涵盖导航器窗格：</span><span class="sxs-lookup"><span data-stu-id="cbe76-138">The following subsections cover the Navigator pane:</span></span>  
 
@@ -63,7 +63,7 @@ ms.locfileid: "11564712"
 
 <span data-ttu-id="cbe76-146">使用**导航**器窗格的"\*\*\*\* 页面"选项卡浏览从服务器返回的文件系统以构建当前网页。</span><span class="sxs-lookup"><span data-stu-id="cbe76-146">Use the **Page** tab of the **Navigator** pane to explore the file system that's returned from the server to construct the current webpage.</span></span>  <span data-ttu-id="cbe76-147">选择要查看、编辑和调试的 JavaScript 文件。</span><span class="sxs-lookup"><span data-stu-id="cbe76-147">Select a JavaScript file to view, edit, and debug it.</span></span>  <span data-ttu-id="cbe76-148">" **页面** "选项卡列出了页面已加载的所有资源。</span><span class="sxs-lookup"><span data-stu-id="cbe76-148">The **Page** tab lists all of the resources that the page has loaded.</span></span>
 
-:::image type="complex" source="../media/sources-page-tab.msft.png" alt-text=""源"工具的"导航器"窗格中的"页面"选项卡" lightbox="../media/sources-page-tab.msft.png":::
+:::image type="complex" source="../media/sources-page-tab.msft.png" alt-text="源工具的导航器窗格中的页面选项卡" lightbox="../media/sources-page-tab.msft.png":::
    <span data-ttu-id="cbe76-150">" **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="cbe76-150">The **Page** tab in the **Navigator** pane of the **Sources** tool</span></span>
 :::image-end:::  
 
@@ -86,7 +86,7 @@ ms.locfileid: "11564712"
 
 <span data-ttu-id="cbe76-162">若要更改资源的分组时间，请进行配置：</span><span class="sxs-lookup"><span data-stu-id="cbe76-162">To change how resources are grouped:</span></span>
 
-1.  <span data-ttu-id="cbe76-163">在左侧\导航器窗格 \ (上的选项卡旁边，) ... **\ (** **更多**选项 \) 按钮。</span><span class="sxs-lookup"><span data-stu-id="cbe76-163">Next to the tabs on the Navigator pane \(on the left\), select the **...** \(**More options**\) button.</span></span>  <span data-ttu-id="cbe76-164">将显示菜单。</span><span class="sxs-lookup"><span data-stu-id="cbe76-164">A menu appears.</span></span>  
+1.  <span data-ttu-id="cbe76-163">在左侧\导航器窗格 \(上的选项卡旁边，) ... **\(** **更多**选项 \) 按钮。</span><span class="sxs-lookup"><span data-stu-id="cbe76-163">Next to the tabs on the Navigator pane \(on the left\), select the **...** \(**More options**\) button.</span></span>  <span data-ttu-id="cbe76-164">将显示菜单。</span><span class="sxs-lookup"><span data-stu-id="cbe76-164">A menu appears.</span></span>  
 1.  <span data-ttu-id="cbe76-165">选择或清除" **按文件夹分组"** 选项。</span><span class="sxs-lookup"><span data-stu-id="cbe76-165">Select or clear the **Group by folder** option.</span></span>  
     
 ### <a name="using-the-filesystem-tab-to-define-a-local-workspace"></a><span data-ttu-id="cbe76-166">使用"文件系统"选项卡定义本地 Workspace</span><span class="sxs-lookup"><span data-stu-id="cbe76-166">Using the Filesystem tab to define a local Workspace</span></span>
@@ -94,7 +94,7 @@ ms.locfileid: "11564712"
 <span data-ttu-id="cbe76-167">使用导航**器**窗格的"文件系统\*\*\*\*"选项卡将文件添加到工作区，以便你在 DevTools 中所做的更改保存到本地文件系统。</span><span class="sxs-lookup"><span data-stu-id="cbe76-167">Use the **Filesystem** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.</span></span>  
 <span data-ttu-id="cbe76-168">Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示。</span><span class="sxs-lookup"><span data-stu-id="cbe76-168">A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools.</span></span>  
 
-:::image type="complex" source="../media/sources-filesystem-tab.msft.png" alt-text="工作区的"文件系统"选项卡" lightbox="../media/sources-filesystem-tab.msft.png":::
+:::image type="complex" source="../media/sources-filesystem-tab.msft.png" alt-text="工作区的文件系统选项卡" lightbox="../media/sources-filesystem-tab.msft.png":::
    <span data-ttu-id="cbe76-170">工作区 **的"** 文件系统"选项卡</span><span class="sxs-lookup"><span data-stu-id="cbe76-170">The **Filesystem** tab, for a Workspace</span></span>
 :::image-end:::  
 
@@ -106,10 +106,10 @@ ms.locfileid: "11564712"
 
 ### <a name="using-the-overrides-tab-to-override-server-files-with-local-files"></a><span data-ttu-id="cbe76-181">使用"覆盖"选项卡覆盖包含本地文件的服务器文件</span><span class="sxs-lookup"><span data-stu-id="cbe76-181">Using the Overrides tab to override server files with local files</span></span>
 
-<span data-ttu-id="cbe76-182">使用**导航器**窗格的"替代\*\*\*\*"选项卡可覆盖页面资源 \ (例如 images\) 本地文件夹中的文件。</span><span class="sxs-lookup"><span data-stu-id="cbe76-182">Use the **Overrides** tab of the **Navigator** pane to override page assets \(such as images\) with files from a local folder.</span></span>  
+<span data-ttu-id="cbe76-182">使用**导航器**窗格的"替代\*\*\*\*"选项卡可覆盖页面资源 \(例如 images\) 本地文件夹中的文件。</span><span class="sxs-lookup"><span data-stu-id="cbe76-182">Use the **Overrides** tab of the **Navigator** pane to override page assets \(such as images\) with files from a local folder.</span></span>  
 <span data-ttu-id="cbe76-183">此选项卡中的项目会覆盖服务器发送到浏览器的内容，即使服务器已发送资产。</span><span class="sxs-lookup"><span data-stu-id="cbe76-183">Items in this tab override what the server sends to the browser, even after the server has sent the assets.</span></span>  
 
-:::image type="complex" source="../media/overrides-tab.msft.png" alt-text="导航器窗格的"替代"选项卡" lightbox="../media/overrides-tab.msft.png":::
+:::image type="complex" source="../media/overrides-tab.msft.png" alt-text="导航器窗格的替代选项卡" lightbox="../media/overrides-tab.msft.png":::
    <span data-ttu-id="cbe76-185">导航 **器** 窗格的" **替代"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="cbe76-185">The **Overrides** tab of the **Navigator** pane</span></span>
 :::image-end:::  
 
@@ -126,7 +126,7 @@ ms.locfileid: "11564712"
 
 <span data-ttu-id="cbe76-193">使用**导航器**窗格的"内容\*\*\*\* 脚本"选项卡查看已安装的扩展Microsoft Edge加载的任何内容脚本。</span><span class="sxs-lookup"><span data-stu-id="cbe76-193">Use the **Content scripts** tab of the **Navigator** pane to view any content scripts that were loaded by a Microsoft Edge extension that you installed.</span></span>  
 
-:::image type="complex" source="../media/content-scripts-tab.msft.png" alt-text="导航器窗格的"内容脚本"选项卡" lightbox="../media/content-scripts-tab.msft.png":::
+:::image type="complex" source="../media/content-scripts-tab.msft.png" alt-text="导航器窗格的内容脚本选项卡" lightbox="../media/content-scripts-tab.msft.png":::
    <span data-ttu-id="cbe76-195">导航 **器** 窗格的"内容 **脚本"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="cbe76-195">The **Content scripts** tab of the **Navigator** pane</span></span>
 :::image-end:::  
 
@@ -155,12 +155,12 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```  
 
-<span data-ttu-id="cbe76-206">相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。</span><span class="sxs-lookup"><span data-stu-id="cbe76-206">Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.</span></span>  <span data-ttu-id="cbe76-207">选择 `Ctrl` + `S` \ (Windows/Linux\) 或 `Command` + `S` \ (macOS\) 时，DevTools 会将**代码段**保存到文件系统。</span><span class="sxs-lookup"><span data-stu-id="cbe76-207">When you select `Ctrl`+`S` \(Windows/Linux\) or `Command`+`S` \(macOS\), DevTools saves the **Snippet** to your file system.</span></span>  
+<span data-ttu-id="cbe76-206">相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。</span><span class="sxs-lookup"><span data-stu-id="cbe76-206">Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.</span></span>  <span data-ttu-id="cbe76-207">选择 `Ctrl` + `S` \(Windows/Linux\) 或 `Command` + `S` \(macOS\) 时，DevTools 会将**代码段**保存到文件系统。</span><span class="sxs-lookup"><span data-stu-id="cbe76-207">When you select `Ctrl`+`S` \(Windows/Linux\) or `Command`+`S` \(macOS\), DevTools saves the **Snippet** to your file system.</span></span>  
 
 <span data-ttu-id="cbe76-208">有多种方法可以运行代码段：</span><span class="sxs-lookup"><span data-stu-id="cbe76-208">There are multiple ways to run a Snippet:</span></span>  
 
-*   <span data-ttu-id="cbe76-209">在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。</span><span class="sxs-lookup"><span data-stu-id="cbe76-209">In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.</span></span>  <span data-ttu-id="cbe76-210">然后在编辑器窗格的底部，选择运行 **\ (** ![ 运行按钮 ](../media/run-snippet-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-210">Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).</span></span>  
-*   <span data-ttu-id="cbe76-211">当 DevTools 具有焦点时，选择 `Ctrl` + `P` \ (Windows/Linux\) 或 `Command` + `P` \ (macOS\) 打开命令[菜单][DevToolsCommandMenuIndex] `!` ，然后键入 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-211">When DevTools has focus, select `Ctrl`+`P` \(Windows/Linux\) or `Command`+`P` \(macOS\) to open the [Command Menu][DevToolsCommandMenuIndex], and then type `!`.</span></span>  
+*   <span data-ttu-id="cbe76-209">在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。</span><span class="sxs-lookup"><span data-stu-id="cbe76-209">In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.</span></span>  <span data-ttu-id="cbe76-210">然后在编辑器窗格的底部，选择运行 **\(** ![ 运行按钮 ](../media/run-snippet-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-210">Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).</span></span>  
+*   <span data-ttu-id="cbe76-211">当 DevTools 具有焦点时，选择 `Ctrl` + `P` \(Windows/Linux\) 或 `Command` + `P` \(macOS\) 打开命令[菜单][DevToolsCommandMenuIndex] `!` ，然后键入 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-211">When DevTools has focus, select `Ctrl`+`P` \(Windows/Linux\) or `Command`+`P` \(macOS\) to open the [Command Menu][DevToolsCommandMenuIndex], and then type `!`.</span></span>  
     
 <span data-ttu-id="cbe76-212">代码段 类似于小书签。</span><span class="sxs-lookup"><span data-stu-id="cbe76-212">Snippets are similar to bookmarklets.</span></span>
 
@@ -173,7 +173,7 @@ document.head.appendChild(script);
 <span data-ttu-id="cbe76-216">若要打开文件，除了使用"源"工具\*\*\*\* 中的"导航器"窗格\*\*\*\* 外，还可以在 DevTools 中的任何位置使用命令菜单。</span><span class="sxs-lookup"><span data-stu-id="cbe76-216">To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the Command Menu from anywhere within DevTools.</span></span>
 
 *   <span data-ttu-id="cbe76-217">在 DevTools 中的任何位置，在 `Ctrl` + `P` Windows/Linux 或 `Command` + `P` macOS 上选择。</span><span class="sxs-lookup"><span data-stu-id="cbe76-217">From anywhere in DevTools, select `Ctrl`+`P` on Windows/Linux or `Command`+`P` on macOS.</span></span>  <span data-ttu-id="cbe76-218">将显示"命令菜单"，并列出"源"工具的"导航器"\*\*\*\* 窗格选项卡上**的所有**资源。</span><span class="sxs-lookup"><span data-stu-id="cbe76-218">The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.</span></span>  
-*   <span data-ttu-id="cbe76-219">或者，在"源"工具中\*\*\*\*"导航器"窗格的\*\*\*\* 选项卡旁边，选择 **"...** \ (**更多选项**\) "按钮，然后选择"打开**文件"。**</span><span class="sxs-lookup"><span data-stu-id="cbe76-219">Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** \(**More options**\) button, and then select **Open File**.</span></span>  
+*   <span data-ttu-id="cbe76-219">或者，在"源"工具中\*\*\*\*"导航器"窗格的\*\*\*\* 选项卡旁边，选择 **"...** \(**更多选项**\) "按钮，然后选择"打开**文件"。**</span><span class="sxs-lookup"><span data-stu-id="cbe76-219">Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** \(**More options**\) button, and then select **Open File**.</span></span>  
 
 <span data-ttu-id="cbe76-220">若要显示并选取所有文件.js，请键入 `.js` 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-220">To display and pick from a list of all .js files, type `.js`.</span></span>
 
@@ -189,7 +189,7 @@ document.head.appendChild(script);
 
 <span data-ttu-id="cbe76-227">使用 **"** 编辑器"窗格查看从服务器返回的前端文件，以撰写当前网页，包括 JavaScript、HTML、CSS 和图像文件。</span><span class="sxs-lookup"><span data-stu-id="cbe76-227">Use the **Editor** pane to view the front-end files that are returned from the server to compose the current webpage, including JavaScript, HTML, CSS, and image files.</span></span>  <span data-ttu-id="cbe76-228">在编辑器窗格中编辑前端文件时，DevTools 将更新网页以运行修改后的代码。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cbe76-228">When you edit the front-end files in the **Editor** pane, DevTools updates the webpage to run the modified code.</span></span>  
 
-:::image type="complex" source="../media/editor-pane.msft.png" alt-text=""源"工具中的"编辑器"窗格" lightbox="../media/editor-pane.msft.png":::
+:::image type="complex" source="../media/editor-pane.msft.png" alt-text="源工具中的编辑器窗格" lightbox="../media/editor-pane.msft.png":::
    <span data-ttu-id="cbe76-230">" **源** "工具中的" **编辑器"** 窗格</span><span class="sxs-lookup"><span data-stu-id="cbe76-230">The **Editor** pane in the **Sources** tool</span></span>  
 :::image-end:::
 
@@ -223,7 +223,7 @@ document.head.appendChild(script);
    <span data-ttu-id="cbe76-256">在 **编辑器** 窗格中编辑 JavaScript</span><span class="sxs-lookup"><span data-stu-id="cbe76-256">Editing JavaScript in the **Editor** pane</span></span>  
 :::image-end:::
 
-<span data-ttu-id="cbe76-257">若要将文件加载到编辑器窗格中，请使用左侧\导航\*\*\*\* 器窗格中的" ("选项卡) 。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cbe76-257">To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane \(on the left\).</span></span>  <span data-ttu-id="cbe76-258">或使用命令菜单\*\*\*\*，如下所示：在 DevTools 的右上角，选择"自定义和控制**DevTools** \ (`...` \) "，然后选择"打开**文件"。**</span><span class="sxs-lookup"><span data-stu-id="cbe76-258">Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** \(`...`\) and then select **Open File**.</span></span>
+<span data-ttu-id="cbe76-257">若要将文件加载到编辑器窗格中，请使用左侧\导航\*\*\*\* 器窗格中的" ("选项卡) 。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cbe76-257">To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane \(on the left\).</span></span>  <span data-ttu-id="cbe76-258">或使用命令菜单\*\*\*\*，如下所示：在 DevTools 的右上角，选择"自定义和控制**DevTools** \(`...` \) "，然后选择"打开**文件"。**</span><span class="sxs-lookup"><span data-stu-id="cbe76-258">Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** \(`...`\) and then select **Open File**.</span></span>
 
 #### <a name="save-and-undo"></a><span data-ttu-id="cbe76-259">保存和撤消</span><span class="sxs-lookup"><span data-stu-id="cbe76-259">Save and Undo</span></span>
 
@@ -240,11 +240,11 @@ document.head.appendChild(script);
 
 <span data-ttu-id="cbe76-267">若要在当前文件中查找文本，请选择"编辑器"\*\*\*\* 窗格赋予其焦点，然后在 `Ctrl` + `F` Windows/Linux 或 `Command` + `F` macOS 上选择。</span><span class="sxs-lookup"><span data-stu-id="cbe76-267">To find text in the current file, select the **Editor** pane to give it focus, and then select `Ctrl`+`F` on Windows/Linux, or `Command`+`F` on macOS.</span></span>  
 
-:::image type="complex" source="../media/find-replace.msft.png" alt-text="在"源"工具的"编辑器"窗格中查找和替换" lightbox="../media/find-replace.msft.png":::
+:::image type="complex" source="../media/find-replace.msft.png" alt-text="在源工具的编辑器窗格中查找和替换" lightbox="../media/find-replace.msft.png":::
    <span data-ttu-id="cbe76-269">**在\*\*\*\*"源"** 工具**的"编辑器**"窗格中查找和**替换**</span><span class="sxs-lookup"><span data-stu-id="cbe76-269">**Find** and **Replace**, in the **Editor** pane of the **Sources** tool</span></span>
 :::image-end:::
 
-<span data-ttu-id="cbe76-270">若要查找和替换文本，请选择"\*\*\*\* 查找"文本框左侧的"替换 \ (**A-\>B**\) "**按钮**。</span><span class="sxs-lookup"><span data-stu-id="cbe76-270">To find and replace text, select the **Replace** \(**A-\>B**\) button to the left of the **Find** textbox.</span></span>  <span data-ttu-id="cbe76-271">查看 **可** 编辑 (时，>**A-\>B**\) 按钮出现。</span><span class="sxs-lookup"><span data-stu-id="cbe76-271">The **Replace** \(**A-\>B**\) button appears when viewing an editable file.</span></span>
+<span data-ttu-id="cbe76-270">若要查找和替换文本，请选择"\*\*\*\* 查找"文本框左侧的"替换 \(**A-\>B**\) "**按钮**。</span><span class="sxs-lookup"><span data-stu-id="cbe76-270">To find and replace text, select the **Replace** \(**A-\>B**\) button to the left of the **Find** textbox.</span></span>  <span data-ttu-id="cbe76-271">查看 **可** 编辑 (时，>**A-\>B**\) 按钮出现。</span><span class="sxs-lookup"><span data-stu-id="cbe76-271">The **Replace** \(**A-\>B**\) button appears when viewing an editable file.</span></span>
 
 #### <a name="showing-the-changes-you-made"></a><span data-ttu-id="cbe76-272">显示所做的更改</span><span class="sxs-lookup"><span data-stu-id="cbe76-272">Showing the changes you made</span></span>
 
@@ -252,7 +252,7 @@ document.head.appendChild(script);
 
 <span data-ttu-id="cbe76-274">The **Drawer** opens at the bottom of DevTools， showing your changes within the **Changes** tab.</span><span class="sxs-lookup"><span data-stu-id="cbe76-274">The **Drawer** opens at the bottom of DevTools, showing your changes within the **Changes** tab.</span></span>
 
-:::image type="complex" source="../media/local-modifications.msft.png" alt-text="在"箱"的"更改"选项卡中显示本地修改" lightbox="../media/local-modifications.msft.png":::
+:::image type="complex" source="../media/local-modifications.msft.png" alt-text="在箱的更改选项卡中显示本地修改" lightbox="../media/local-modifications.msft.png":::
    <span data-ttu-id="cbe76-276">在 **"箱"** 的"更改 **"选项卡** 中显示本地 **修改**</span><span class="sxs-lookup"><span data-stu-id="cbe76-276">Showing **Local Modifications**, in the **Changes** tab of the **Drawer**</span></span>
 :::image-end:::
 
@@ -271,16 +271,16 @@ document.head.appendChild(script);
 
 ### <a name="reformatting-a-minified-javascript-file-with-pretty-print"></a><span data-ttu-id="cbe76-286">使用非常打印重新格式化缩小的 JavaScript 文件</span><span class="sxs-lookup"><span data-stu-id="cbe76-286">Reformatting a minified JavaScript file with pretty-print</span></span>
 
-<span data-ttu-id="cbe76-287">若要使用"花式打印"重新设置文件的格式，使其可读，请在"编辑器\*\*\*\*"窗格底部选择"真字打印"按钮 ![ \ (Format ](../media/format-icon.msft.png) \) （显示为大括号）。</span><span class="sxs-lookup"><span data-stu-id="cbe76-287">To use pretty-print to reformat a file to make it readable, select the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.</span></span>  <span data-ttu-id="cbe76-288">或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。</span><span class="sxs-lookup"><span data-stu-id="cbe76-288">Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.</span></span>
+<span data-ttu-id="cbe76-287">若要使用"花式打印"重新设置文件的格式，使其可读，请在"编辑器\*\*\*\*"窗格底部选择"真字打印"按钮 ![ \(Format ](../media/format-icon.msft.png) \) （显示为大括号）。</span><span class="sxs-lookup"><span data-stu-id="cbe76-287">To use pretty-print to reformat a file to make it readable, select the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.</span></span>  <span data-ttu-id="cbe76-288">或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。</span><span class="sxs-lookup"><span data-stu-id="cbe76-288">Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.</span></span>
 
-:::image type="complex" source="../media/minified.msft.png" alt-text=""彩色打印"按钮" lightbox="../media/minified.msft.png":::
+:::image type="complex" source="../media/minified.msft.png" alt-text="彩色打印按钮" lightbox="../media/minified.msft.png":::
    <span data-ttu-id="cbe76-290">" **彩色打印"** 按钮</span><span class="sxs-lookup"><span data-stu-id="cbe76-290">The **Pretty print** button</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="cbe76-291">重新格式化的文件显示在新选项卡中， `:formatted` 并附加到文件名后面。</span><span class="sxs-lookup"><span data-stu-id="cbe76-291">The reformatted file appears in a new tab, with `:formatted` appended to the file name.</span></span>  <span data-ttu-id="cbe76-292">重新格式化的代码是只读的。</span><span class="sxs-lookup"><span data-stu-id="cbe76-292">The reformatted code is read-only.</span></span>  
 
 :::image type="complex" source="../media/pretty-printed.msft.png" alt-text="用 JavaScript 文件重新格式化 (的) 非常打印的字体" lightbox="../media/pretty-printed.msft.png":::
-   <span data-ttu-id="cbe76-294">一个非常打印的 \ (格式化\) JavaScript 文件</span><span class="sxs-lookup"><span data-stu-id="cbe76-294">A pretty-printed \(reformatted\) JavaScript file</span></span>  
+   <span data-ttu-id="cbe76-294">一个非常打印的 \(格式化\) JavaScript 文件</span><span class="sxs-lookup"><span data-stu-id="cbe76-294">A pretty-printed \(reformatted\) JavaScript file</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="cbe76-295">若要使重新格式化的文件滚动到在缩小文件中选择的代码：</span><span class="sxs-lookup"><span data-stu-id="cbe76-295">To make the reformatted file scroll to the code that you select in the minified file:</span></span>  
@@ -360,9 +360,9 @@ h1 {
 
 ### <a name="going-to-a-line-number-or-function"></a><span data-ttu-id="cbe76-347">访问行号或函数</span><span class="sxs-lookup"><span data-stu-id="cbe76-347">Going to a line number or function</span></span>
 
-<span data-ttu-id="cbe76-348">若要转到在编辑器窗格中打开的文件中行号或符号 \ (如函数名称\) ，可以使用命令菜单，而不是滚动整个文件。</span><span class="sxs-lookup"><span data-stu-id="cbe76-348">To go to a line number or symbol \(such as a function name\) in the file which is open in the Editor pane, you can use the Command Menu, rather than scrolling through the file.</span></span>
+<span data-ttu-id="cbe76-348">若要转到在编辑器窗格中打开的文件中行号或符号 \(如函数名称\) ，可以使用命令菜单，而不是滚动整个文件。</span><span class="sxs-lookup"><span data-stu-id="cbe76-348">To go to a line number or symbol \(such as a function name\) in the file which is open in the Editor pane, you can use the Command Menu, rather than scrolling through the file.</span></span>
 
-1.  <span data-ttu-id="cbe76-349">在 **导航器窗格中** ，选择省略号 \ (`...` \) \ (**更多选项**\) ，然后选择打开 **文件**。</span><span class="sxs-lookup"><span data-stu-id="cbe76-349">In the **Navigator** pane, select the ellipses \(`...`\) \(**More options**\), and then select **Open File**.</span></span>  <span data-ttu-id="cbe76-350">将显示"命令菜单"。</span><span class="sxs-lookup"><span data-stu-id="cbe76-350">The Command Menu appears.</span></span>  
+1.  <span data-ttu-id="cbe76-349">在 **导航器窗格中** ，选择省略号 \(`...` \) \(**更多选项**\) ，然后选择打开 **文件**。</span><span class="sxs-lookup"><span data-stu-id="cbe76-349">In the **Navigator** pane, select the ellipses \(`...`\) \(**More options**\), and then select **Open File**.</span></span>  <span data-ttu-id="cbe76-350">将显示"命令菜单"。</span><span class="sxs-lookup"><span data-stu-id="cbe76-350">The Command Menu appears.</span></span>  
 1.  <span data-ttu-id="cbe76-351">键入下列字符之一：</span><span class="sxs-lookup"><span data-stu-id="cbe76-351">Type one of the following characters:</span></span>  
      
 | <span data-ttu-id="cbe76-352">Character</span><span class="sxs-lookup"><span data-stu-id="cbe76-352">Character</span></span> | <span data-ttu-id="cbe76-353">命令名称</span><span class="sxs-lookup"><span data-stu-id="cbe76-353">Command name</span></span> | <span data-ttu-id="cbe76-354">用途</span><span class="sxs-lookup"><span data-stu-id="cbe76-354">Purpose</span></span> |  
@@ -379,7 +379,7 @@ h1 {
 1.  <span data-ttu-id="cbe76-366">选择除"源"工具 **外** 的其他工具，如 **"元素"** 工具。</span><span class="sxs-lookup"><span data-stu-id="cbe76-366">Select a tool other than the **Sources** tool, such as the **Elements** tool.</span></span>  
 1.  <span data-ttu-id="cbe76-367">选择 `Ctrl` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。</span><span class="sxs-lookup"><span data-stu-id="cbe76-367">Select `Ctrl`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  <span data-ttu-id="cbe76-368">命令菜单将打开。</span><span class="sxs-lookup"><span data-stu-id="cbe76-368">The Command Menu opens.</span></span>  
 1.  <span data-ttu-id="cbe76-369">键入 `Quick Source` ，然后选择"显示**快速源"。**</span><span class="sxs-lookup"><span data-stu-id="cbe76-369">Type `Quick Source`, and then select **Show Quick Source**.</span></span>  <span data-ttu-id="cbe76-370">在"DevTools"窗口的底部，将显示"箱"，并选中 **"快速源"** 面板。</span><span class="sxs-lookup"><span data-stu-id="cbe76-370">At the bottom of the DevTools window, the Drawer appears, with the **Quick Source** panel selected.</span></span>  <span data-ttu-id="cbe76-371">快速**源**面板包含你在源工具中编辑的最后一个文件，\*\*\*\* 该文件位于 DevTools 代码编辑器的精简版本中。</span><span class="sxs-lookup"><span data-stu-id="cbe76-371">The **Quick Source** panel contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.</span></span>  
-1.  <span data-ttu-id="cbe76-372">选择 `Ctrl` + `P` \ (Windows、Linux\) 或 `Command` + `P` \ (macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="cbe76-372">Select `Ctrl`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  
+1.  <span data-ttu-id="cbe76-372">选择 `Ctrl` + `P` \(Windows、Linux\) 或 `Command` + `P` \(macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="cbe76-372">Select `Ctrl`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  
     
 ## <a name="using-the-debugger-pane-to-debug-javascript-code"></a><span data-ttu-id="cbe76-373">使用调试器窗格调试 JavaScript 代码</span><span class="sxs-lookup"><span data-stu-id="cbe76-373">Using the Debugger pane to debug JavaScript code</span></span>
 
@@ -388,7 +388,7 @@ h1 {
 
 <span data-ttu-id="cbe76-376">借助调试器，你可以逐步调试代码，同时观察你指定的任何 JavaScript 表达式。</span><span class="sxs-lookup"><span data-stu-id="cbe76-376">With the debugger, you step through the code, while watching any JavaScript expressions you specify.</span></span>  <span data-ttu-id="cbe76-377">观察并手动更改变量值，并自动显示当前语句范围内哪些变量。</span><span class="sxs-lookup"><span data-stu-id="cbe76-377">Watch and manually change variable values, and automatically show which variables are in-scope for the current statement.</span></span>
 
-:::image type="complex" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text=""源"工具的"调试器"窗格  " lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
+:::image type="complex" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text="源工具的调试器窗格" lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
    <span data-ttu-id="cbe76-379">**"源"** 工具的"**调试器"** 窗格</span><span class="sxs-lookup"><span data-stu-id="cbe76-379">The **Debugger** pane of the **Sources** tool</span></span>  
 :::image-end:::  
 
@@ -398,7 +398,7 @@ h1 {
 *   <span data-ttu-id="cbe76-382">逐步执行代码。</span><span class="sxs-lookup"><span data-stu-id="cbe76-382">Stepping through code.</span></span>  
 *   <span data-ttu-id="cbe76-383">查看和编辑属性和变量。</span><span class="sxs-lookup"><span data-stu-id="cbe76-383">Viewing and editing properties and variables.</span></span>  
 *   <span data-ttu-id="cbe76-384">监视 JavaScript 表达式的值。</span><span class="sxs-lookup"><span data-stu-id="cbe76-384">Watching the values of JavaScript expressions.</span></span>  
-*   <span data-ttu-id="cbe76-385">查看调用堆栈\ (函数调用的顺序\) 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-385">Viewing the call stack\ (the sequence of function calls so far\).</span></span>  
+*   <span data-ttu-id="cbe76-385">查看调用堆栈\(函数调用的顺序\) 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-385">Viewing the call stack\(the sequence of function calls so far\).</span></span>  
     
 <span data-ttu-id="cbe76-386">DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code][VisualStudioCodeDocsEditorDebugging]中的调试器[Visual Studio。][VisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]</span><span class="sxs-lookup"><span data-stu-id="cbe76-386">The debugger in DevTools is designed to look, feel, and work like [the debugger in Visual Studio Code][VisualStudioCodeDocsEditorDebugging] and [the debugger in Visual Studio][VisualStudioDebuggerNavigatingThroughCodeWithTheDebugger].</span></span>
 
@@ -417,7 +417,7 @@ h1 {
 
 1.  <span data-ttu-id="cbe76-397">在浏览器的新选项卡中打开网页。</span><span class="sxs-lookup"><span data-stu-id="cbe76-397">Open the webpage in a new tab of the browser.</span></span>  <span data-ttu-id="cbe76-398">例如，在一个新选项卡中打开此表单网页[：Demo： 入门使用 DevTools Microsoft Edge (Chromium) JavaScript。][GlitchMicrosoftEdgeChromiumDevtoolsDebugJsGetStarted]</span><span class="sxs-lookup"><span data-stu-id="cbe76-398">For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][GlitchMicrosoftEdgeChromiumDevtoolsDebugJsGetStarted].</span></span>  
 1.  <span data-ttu-id="cbe76-399">选择 `F12` 以打开 **"DevTools"** 窗口，然后选择"源 **"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="cbe76-399">Select `F12` to open the **DevTools** window, and then select the **Sources** tab.</span></span>  
-1.  <span data-ttu-id="cbe76-400">在导航**器**窗格 \ (左侧\) ，选择"页面"选项卡，然后选择 JavaScript\*\*\*\* 文件，例如 `get-started.js` 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-400">In the **Navigator** pane \(on the left\), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.</span></span>  
+1.  <span data-ttu-id="cbe76-400">在导航**器**窗格 \(左侧\) ，选择"页面"选项卡，然后选择 JavaScript\*\*\*\* 文件，例如 `get-started.js` 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-400">In the **Navigator** pane \(on the left\), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.</span></span>  
 1.  <span data-ttu-id="cbe76-401">在 **"编辑器** "窗格中，选择可疑代码行附近的行号，以在该行上设置断点。</span><span class="sxs-lookup"><span data-stu-id="cbe76-401">In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.</span></span>  <span data-ttu-id="cbe76-402">在下图中，在 行 上设置了断点 `var sum = addend1 + addend2;` 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-402">In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.</span></span>  
 1.  <span data-ttu-id="cbe76-403">在网页中，输入值并提交表单。</span><span class="sxs-lookup"><span data-stu-id="cbe76-403">In the webpage, enter values and submit the form.</span></span>  <span data-ttu-id="cbe76-404">例如，输入数字，如 `5` 和 `1` ，然后选择按钮添加数字 **1 和数字 2**。</span><span class="sxs-lookup"><span data-stu-id="cbe76-404">For example, enter numbers, such as `5` and `1`, then select the button **Add Number 1 and Number 2**.</span></span>  
     
@@ -430,7 +430,7 @@ h1 {
     <span data-ttu-id="cbe76-409">在上图中，我们添加了 Watch 表达式和 ，并跨 `sum` `typeof sum` 断点添加了两行。</span><span class="sxs-lookup"><span data-stu-id="cbe76-409">In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.</span></span>  
     
 1.  <span data-ttu-id="cbe76-410">检查"范围"窗格中 **的值，** 其中显示当前断点范围内的所有变量或属性及其值。</span><span class="sxs-lookup"><span data-stu-id="cbe76-410">Examine the values in the **Scope** pane, which shows all variables or properties that are in-scope for the current breakpoint, and their values.</span></span>  <span data-ttu-id="cbe76-411">或者，在"监视"窗格中 **添加** 表达式。</span><span class="sxs-lookup"><span data-stu-id="cbe76-411">Or, add expressions in the **Watch** pane.</span></span>  <span data-ttu-id="cbe76-412">这些表达式与在语句中编写以调试代码 `console.log` 的表达式相同。</span><span class="sxs-lookup"><span data-stu-id="cbe76-412">These expressions are the same expressions that you would write within a `console.log` statement to debug your code.</span></span>  <span data-ttu-id="cbe76-413">若要运行 JavaScript 命令以操作当前上下文中的数据，请使用 **控制台**。</span><span class="sxs-lookup"><span data-stu-id="cbe76-413">To run JavaScript commands to manipulate data in the current context, use the **Console**.</span></span>  <span data-ttu-id="cbe76-414">若要打开控制台，请选择 `Esc` 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-414">To open the console, select `Esc`.</span></span>  
-1.  <span data-ttu-id="cbe76-415">使用调试器窗格顶部的控件（如 Step **\ (** \*\*\*\* `F9` \) ）逐步调试代码。</span><span class="sxs-lookup"><span data-stu-id="cbe76-415">Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** \(`F9`\).</span></span>
+1.  <span data-ttu-id="cbe76-415">使用调试器窗格顶部的控件（如 Step **\(**`F9` \) ）逐步调试代码。</span><span class="sxs-lookup"><span data-stu-id="cbe76-415">Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** \(`F9`\).</span></span>
     
 #### <a name="see-also"></a><span data-ttu-id="cbe76-416">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cbe76-416">See also</span></span>
 
@@ -446,7 +446,7 @@ h1 {
     
 <span data-ttu-id="cbe76-423">当变量在范围内时，其值将自动显示在调试器窗格的"范围"部分，并且也会覆盖在计算位置的" `sum` `sum` 编辑器"\*\*\*\*\*\*\*\* `sum` 窗格中。</span><span class="sxs-lookup"><span data-stu-id="cbe76-423">When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the **Debugger** pane, and are also overlaid in the Editor pane where `sum` is calculated.</span></span>  <span data-ttu-id="cbe76-424">因此，您可能不需要为 定义 Watch 表达式 `sum` 。</span><span class="sxs-lookup"><span data-stu-id="cbe76-424">So you probably wouldn't need to define a Watch expression for `sum`.</span></span>
 
-<span data-ttu-id="cbe76-425">调试程序提供比语句更丰富、更灵活的显示 `console.log` 和环境。</span><span class="sxs-lookup"><span data-stu-id="cbe76-425">The debugger gives a richer, more flexible display and environment than a `console.log` statement.</span></span>  <span data-ttu-id="cbe76-426">例如，在调试器中，在逐步调试代码时，可以显示和更改所有当前定义的属性和变量的值。</span><span class="sxs-lookup"><span data-stu-id="cbe76-426">For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.</span></span>  <span data-ttu-id="cbe76-427">还可以在控制台中发出 JavaScript\*\*\*\* 语句，例如更改作用域内数组中的值。</span><span class="sxs-lookup"><span data-stu-id="cbe76-427">You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.</span></span>  <span data-ttu-id="cbe76-428">\ (若要显示控制台，请选择 **Esc**.\) </span><span class="sxs-lookup"><span data-stu-id="cbe76-428">\(To display the Console, select **Esc**.\)</span></span>
+<span data-ttu-id="cbe76-425">调试程序提供比语句更丰富、更灵活的显示 `console.log` 和环境。</span><span class="sxs-lookup"><span data-stu-id="cbe76-425">The debugger gives a richer, more flexible display and environment than a `console.log` statement.</span></span>  <span data-ttu-id="cbe76-426">例如，在调试器中，在逐步调试代码时，可以显示和更改所有当前定义的属性和变量的值。</span><span class="sxs-lookup"><span data-stu-id="cbe76-426">For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.</span></span>  <span data-ttu-id="cbe76-427">还可以在控制台中发出 JavaScript\*\*\*\* 语句，例如更改作用域内数组中的值。</span><span class="sxs-lookup"><span data-stu-id="cbe76-427">You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.</span></span>  <span data-ttu-id="cbe76-428">\(若要显示控制台，请选择 **Esc**.\) </span><span class="sxs-lookup"><span data-stu-id="cbe76-428">\(To display the Console, select **Esc**.\)</span></span>
 
 <span data-ttu-id="cbe76-429">刷新网页时，将保留断点和监视表达式。</span><span class="sxs-lookup"><span data-stu-id="cbe76-429">Breakpoints and Watch expressions are preserved when you refresh the webpage.</span></span>
 

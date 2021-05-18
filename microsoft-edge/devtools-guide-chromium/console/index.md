@@ -33,13 +33,13 @@ ms.locfileid: "11483183"
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开"元素"工具" lightbox="../media/console-intro-console-panel.msft.png":::
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开元素工具" lightbox="../media/console-intro-console-panel.msft.png":::
          <span data-ttu-id="621f7-117">**下** 面板中的控制台，其上方打开 **"元素** "工具</span><span class="sxs-lookup"><span data-stu-id="621f7-117">**Console** in the lower panel with the **Elements** tool open above it</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="621f7-118">直接打开控制台的最快方法为选择\*\*\*\* `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="621f7-118">The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  
+<span data-ttu-id="621f7-118">直接打开控制台的最快方法为选择\*\*\*\* `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="621f7-118">The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  
 
 ## <a name="error-reports-and-console"></a><span data-ttu-id="621f7-119">错误报告和控制台</span><span class="sxs-lookup"><span data-stu-id="621f7-119">Error reports and Console</span></span>  
 
@@ -61,7 +61,7 @@ ms.locfileid: "11483183"
 
 <span data-ttu-id="621f7-134">控制台最常见的用例是使用 方法\*\*\*\* 或其他类似方法从脚本 `console.log()` 中记录信息。</span><span class="sxs-lookup"><span data-stu-id="621f7-134">The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.</span></span>  <span data-ttu-id="621f7-135">若要尝试，请完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="621f7-135">To try it, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="621f7-136">若要打开**控制台**，请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="621f7-136">To open **Console**, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  
+1.  <span data-ttu-id="621f7-136">若要打开**控制台**，请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。</span><span class="sxs-lookup"><span data-stu-id="621f7-136">To open **Console**, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  
 1.  <span data-ttu-id="621f7-137">导航到 [控制台消息示例：日志、信息、错误和警告][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]，或在控制台中复制并运行以下 **代码段**。</span><span class="sxs-lookup"><span data-stu-id="621f7-137">Navigate to [Console messages examples: log, info, error and warn][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml], or copy and run the following code snippet in the **Console**.</span></span>  
     
     ```javascript
@@ -132,7 +132,7 @@ ms.locfileid: "11483183"
     ```  
     
 :::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="复制顶部标题 (h1) DOM 中的内容并显示在控制台中" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   <span data-ttu-id="621f7-183">从 DOM 复制顶部标题 `h1` \ (\) 内容，并显示在 **控制台中**</span><span class="sxs-lookup"><span data-stu-id="621f7-183">Copy the top heading \(`h1`\) content from the DOM and display in the **Console**</span></span>  
+   <span data-ttu-id="621f7-183">从 DOM 复制顶部标题 `h1` \(\) 内容，并显示在 **控制台中**</span><span class="sxs-lookup"><span data-stu-id="621f7-183">Copy the top heading \(`h1`\) content from the DOM and display in the **Console**</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="621f7-184">您还可以更改它，而不是仅从网页中读取。</span><span class="sxs-lookup"><span data-stu-id="621f7-184">Instead of only reading from the webpage, you may also change it.</span></span>  <span data-ttu-id="621f7-185">若要尝试，请完成以下操作。</span><span class="sxs-lookup"><span data-stu-id="621f7-185">To try it, complete the following actions.</span></span>  

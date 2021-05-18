@@ -58,9 +58,9 @@ ms.locfileid: "11564670"
 
 <span data-ttu-id="924fd-123">若要尝试实验，请设置选择或选择 DevTools 右上角的 Devtools 设置 图标图标，打开 `?` ![ ](../../../media/settings-icon.msft.png) DevTools 对象。</span><span class="sxs-lookup"><span data-stu-id="924fd-123">To try the experiment, open DevTools Settings by selecting `?` or choosing the ![Devtools Settings icon](../../../media/settings-icon.msft.png) icon in the top-right corner of the DevTools.</span></span>  <span data-ttu-id="924fd-124">导航到**实验部分**，并选中\*\*启用自定义键盘快捷方式设置选项卡 (重新加载) 。 \*\*</span><span class="sxs-lookup"><span data-stu-id="924fd-124">Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.</span></span>  <span data-ttu-id="924fd-125">现在重新加载 DevTools，再次设置打开"工具"，然后导航到 **"快捷方式"** 部分。</span><span class="sxs-lookup"><span data-stu-id="924fd-125">Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.</span></span>  
 
-<span data-ttu-id="924fd-126">在 **"从预设 (匹配快捷方式) 选择"DevTools**) \*\*\*\* 默认选项"，然后选择 **"Visual Studio Code"。**</span><span class="sxs-lookup"><span data-stu-id="924fd-126">Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.</span></span>  <span data-ttu-id="924fd-127">DevTools 中的键盘快捷方式现在与开发人员工具中的等效操作Visual Studio Code。</span><span class="sxs-lookup"><span data-stu-id="924fd-127">The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.</span></span>  
+<span data-ttu-id="924fd-126">在 **"从预设 (匹配快捷方式) 选择"DevTools**)默认选项"，然后选择 **"Visual Studio Code"。**</span><span class="sxs-lookup"><span data-stu-id="924fd-126">Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.</span></span>  <span data-ttu-id="924fd-127">DevTools 中的键盘快捷方式现在与开发人员工具中的等效操作Visual Studio Code。</span><span class="sxs-lookup"><span data-stu-id="924fd-127">The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.</span></span>  
 
-<span data-ttu-id="924fd-128">例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为][VisualStudioCodeShortcuts] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="924fd-128">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcuts] is `F5`.</span></span>  <span data-ttu-id="924fd-129">使用\*\*DevTools (Default) \*\*预设，DevTools 中的同一快捷方式是，但具有 Visual Studio Code 预设，该快捷方式现在也是 `F8` \*\*\*\* `F5` 。</span><span class="sxs-lookup"><span data-stu-id="924fd-129">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
+<span data-ttu-id="924fd-128">例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为][VisualStudioCodeShortcuts] `F5` 。</span><span class="sxs-lookup"><span data-stu-id="924fd-128">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcuts] is `F5`.</span></span>  <span data-ttu-id="924fd-129">使用\*\*DevTools (Default) \*\*预设，DevTools 中的同一快捷方式是，但具有 Visual Studio Code 预设，该快捷方式现在也是 `F8``F5` 。</span><span class="sxs-lookup"><span data-stu-id="924fd-129">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
 
 <span data-ttu-id="924fd-130">此功能目前作为实验在 Microsoft Edge 84 中可用，因此[请与团队](#getting-in-touch-with-microsoft-edge-devtools-team)分享你的反馈！</span><span class="sxs-lookup"><span data-stu-id="924fd-130">The feature is currently available in Microsoft Edge 84 as an experiment, so please share your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) with the team!</span></span>  
 
@@ -118,7 +118,7 @@ ms.locfileid: "11564670"
 
 <span data-ttu-id="924fd-164">在 Microsoft Edge 84 中，[][DevtoolsNetworkDetails]当您在网络日志中\*\*\*\* 为资源打开"网络"工具中的"详细信息"窗格时，它[现在将具有焦点][DevtoolsNetworkLog]。</span><span class="sxs-lookup"><span data-stu-id="924fd-164">In Microsoft Edge 84, the [Details pane][DevtoolsNetworkDetails] in the **Network** tool now takes focus when you open it for a resource in the [Network Log][DevtoolsNetworkLog].</span></span>  <span data-ttu-id="924fd-165">此更改允许屏幕阅读器读出"详细信息"窗格的内容并 **与之** 交互。</span><span class="sxs-lookup"><span data-stu-id="924fd-165">This change allows screen readers to read out and interact with the content of the **Details** pane.</span></span>  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text=""网络"面板中的"详细信息"窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="网络面板中的详细信息窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
    <span data-ttu-id="924fd-167">" **网络** "工具中的" **详细信息** "窗格在打开时将焦点</span><span class="sxs-lookup"><span data-stu-id="924fd-167">The **Details** pane in the **Network** tool takes focus when opened</span></span>
 :::image-end:::  
 
@@ -134,7 +134,7 @@ ms.locfileid: "11564670"
 
 <span data-ttu-id="924fd-176">To get started， navigate to [Find and Fix Problems with the Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].</span><span class="sxs-lookup"><span data-stu-id="924fd-176">To get started, navigate to [Find And Fix Problems With The Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].</span></span>  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools"箱"中的"问题"工具" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools 箱中的问题工具" lightbox="../../media/2020/05/issues.msft.png":::
    <span data-ttu-id="924fd-178">DevTools"箱"中的"问题"工具\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="924fd-178">The **Issues** tool in the DevTools Drawer</span></span>  
 :::image-end:::  
 
@@ -158,7 +158,7 @@ ms.locfileid: "11564670"
 
 #### <a name="view-total-blocking-time-information-in-the-footer"></a><span data-ttu-id="924fd-186">查看页脚中的总阻止时间信息</span><span class="sxs-lookup"><span data-stu-id="924fd-186">View Total Blocking Time information in the footer</span></span>  
 
-<span data-ttu-id="924fd-187">记录负载性能后，"性能\*\*\*\*"面板现在在页脚中 (总阻止时间 \) TBT\) 信息。</span><span class="sxs-lookup"><span data-stu-id="924fd-187">After recording your load performance, the **Performance** panel now shows Total Blocking Time \(TBT\) information in the footer.</span></span>  <span data-ttu-id="924fd-188">TBT 是一种负载性能指标，有助于量化页面使用所花的时间。</span><span class="sxs-lookup"><span data-stu-id="924fd-188">TBT is a load performance metric that helps quantify how long a page takes to become usable.</span></span>  <span data-ttu-id="924fd-189">它实质上测量页面显示为可用 \ (，因为内容呈现到屏幕\) ;但实际上并不可用，因为 JavaScript 会阻止主线程，因此页面不会响应用户输入。</span><span class="sxs-lookup"><span data-stu-id="924fd-189">It essentially measures how long a page appears to be usable \(because the content is rendered to the screen\); but is not actually usable, because JavaScript is blocking the main thread and therefore the page does not respond to user input.</span></span>  <span data-ttu-id="924fd-190">TBT 是估计第一次输入延迟的主要指标。</span><span class="sxs-lookup"><span data-stu-id="924fd-190">TBT is the main metric for approximating First Input Delay.</span></span>  
+<span data-ttu-id="924fd-187">记录负载性能后，"性能\*\*\*\*"面板现在在页脚中 (总阻止时间 \) TBT\) 信息。</span><span class="sxs-lookup"><span data-stu-id="924fd-187">After recording your load performance, the **Performance** panel now shows Total Blocking Time \(TBT\) information in the footer.</span></span>  <span data-ttu-id="924fd-188">TBT 是一种负载性能指标，有助于量化页面使用所花的时间。</span><span class="sxs-lookup"><span data-stu-id="924fd-188">TBT is a load performance metric that helps quantify how long a page takes to become usable.</span></span>  <span data-ttu-id="924fd-189">它实质上测量页面显示为可用 \(，因为内容呈现到屏幕\) ;但实际上并不可用，因为 JavaScript 会阻止主线程，因此页面不会响应用户输入。</span><span class="sxs-lookup"><span data-stu-id="924fd-189">It essentially measures how long a page appears to be usable \(because the content is rendered to the screen\); but is not actually usable, because JavaScript is blocking the main thread and therefore the page does not respond to user input.</span></span>  <span data-ttu-id="924fd-190">TBT 是估计第一次输入延迟的主要指标。</span><span class="sxs-lookup"><span data-stu-id="924fd-190">TBT is the main metric for approximating First Input Delay.</span></span>  
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->  
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->  
@@ -178,7 +178,7 @@ ms.locfileid: "11564670"
 
 #### <a name="layout-shift-events-in-the-new-experience-section"></a><span data-ttu-id="924fd-197">新"体验"部分中的布局 Shift 事件</span><span class="sxs-lookup"><span data-stu-id="924fd-197">Layout Shift events in the new Experience section</span></span>  
 
-<span data-ttu-id="924fd-198">"**性能"\*\*\*\*面板的新"** 体验"部分可帮助你检测布局移动。</span><span class="sxs-lookup"><span data-stu-id="924fd-198">The new **Experience** section of the **Performance** panel helps you detect layout shifts.</span></span>  <span data-ttu-id="924fd-199">累积布局班次 \ (CLS\) 是一个指标，可帮助你量化不需要的视觉不稳定。</span><span class="sxs-lookup"><span data-stu-id="924fd-199">Cumulative Layout Shift \(CLS\) is a metric that helps you quantify unwanted visual instability.</span></span>
+<span data-ttu-id="924fd-198">"**性能"\*\*\*\*面板的新"** 体验"部分可帮助你检测布局移动。</span><span class="sxs-lookup"><span data-stu-id="924fd-198">The new **Experience** section of the **Performance** panel helps you detect layout shifts.</span></span>  <span data-ttu-id="924fd-199">累积布局班次 \(CLS\) 是一个指标，可帮助你量化不需要的视觉不稳定。</span><span class="sxs-lookup"><span data-stu-id="924fd-199">Cumulative Layout Shift \(CLS\) is a metric that helps you quantify unwanted visual instability.</span></span>
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
@@ -233,7 +233,7 @@ ms.locfileid: "11564670"
 
 <span data-ttu-id="924fd-227">当你通过选择值来选择[][DevtoolsCssReferenceColorPicker]颜色选取器或在"样式"窗格中的颜色表示形式\*\*\*\* 之间交替选择颜色时，将显示空格分隔 `Shift` `background-color` 的参数语法。</span><span class="sxs-lookup"><span data-stu-id="924fd-227">When you choose colors with the [Color Picker][DevtoolsCssReferenceColorPicker] or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.</span></span>  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在"样式"窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在样式窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
   <span data-ttu-id="924fd-229">在"样式"窗格中使用 **空格分隔** 的参数</span><span class="sxs-lookup"><span data-stu-id="924fd-229">Using space-separated arguments in the **Styles** pane</span></span>  
 :::image-end:::  
 
@@ -247,7 +247,7 @@ ms.locfileid: "11564670"
 
 ### <a name="deprecation-of-the-properties-pane-in-the-elements-panel"></a><span data-ttu-id="924fd-235">在"元素"面板中弃用"属性"窗格</span><span class="sxs-lookup"><span data-stu-id="924fd-235">Deprecation of the Properties pane in the Elements panel</span></span>  
 
-<span data-ttu-id="924fd-236">Elements \*\*\*\* 工具中的"**属性**"窗格已弃用。</span><span class="sxs-lookup"><span data-stu-id="924fd-236">The **Properties** pane in the **Elements** tool is deprecated.</span></span>  <span data-ttu-id="924fd-237">改为 `console.dir($0)` 在 **控制台** 中运行。</span><span class="sxs-lookup"><span data-stu-id="924fd-237">Run `console.dir($0)` in the **Console** instead.</span></span>  
+<span data-ttu-id="924fd-236">Elements工具中的"**属性**"窗格已弃用。</span><span class="sxs-lookup"><span data-stu-id="924fd-236">The **Properties** pane in the **Elements** tool is deprecated.</span></span>  <span data-ttu-id="924fd-237">改为 `console.dir($0)` 在 **控制台** 中运行。</span><span class="sxs-lookup"><span data-stu-id="924fd-237">Run `console.dir($0)` in the **Console** instead.</span></span>  
 
 :::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="已弃用的属性窗格" lightbox="../../media/2020/05/properties.msft.png":::
    <span data-ttu-id="924fd-239">已弃**用的属性窗格**</span><span class="sxs-lookup"><span data-stu-id="924fd-239">The deprecated **Properties** pane</span></span>  
@@ -266,7 +266,7 @@ ms.locfileid: "11564670"
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text=""清单"窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="清单窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   <span data-ttu-id="924fd-247">"清单"窗格中 **的应用** 快捷方式</span><span class="sxs-lookup"><span data-stu-id="924fd-247">App shortcuts in the **Manifest** pane</span></span>  
 :::image-end:::  
 

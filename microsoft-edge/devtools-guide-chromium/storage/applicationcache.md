@@ -46,7 +46,7 @@ ms.locfileid: "11565020"
 
 1.  <span data-ttu-id="a3537-111">展开" **应用程序缓存** "部分并选择缓存以查看资源。</span><span class="sxs-lookup"><span data-stu-id="a3537-111">Expand the **Application Cache** section and choose a cache to view the resources.</span></span>  
     
-    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text=""应用程序缓存"窗格" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="应用程序缓存窗格" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
        <span data-ttu-id="a3537-113">" **应用程序缓存"** 窗格</span><span class="sxs-lookup"><span data-stu-id="a3537-113">The **Application Cache** pane</span></span>  
     :::image-end:::  
 

@@ -262,7 +262,7 @@ li a {
 1.  <span data-ttu-id="9e286-211">导航到实时 **选项卡**。</span><span class="sxs-lookup"><span data-stu-id="9e286-211">Navigate to the **live tab**.</span></span>  
 1.  <span data-ttu-id="9e286-212">选择 **"联系人** "链接返回到联系人页面。</span><span class="sxs-lookup"><span data-stu-id="9e286-212">Choose the **Contact** link to go back to the contact page.</span></span>  <span data-ttu-id="9e286-213">现在， **联系我！**</span><span class="sxs-lookup"><span data-stu-id="9e286-213">Now, **Contact Me!**</span></span> <span data-ttu-id="9e286-214">具有与导航链接相同的字体。</span><span class="sxs-lookup"><span data-stu-id="9e286-214">has the same font as the navigation links.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与"主页"和"联系人"链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与主页和联系人链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
        <span data-ttu-id="9e286-217">文本" **联系我"！**</span><span class="sxs-lookup"><span data-stu-id="9e286-217">The text **Contact Me!**</span></span> <span data-ttu-id="9e286-218">现在字体与 **"主页"** 和 **"联系人"** 链接相同</span><span class="sxs-lookup"><span data-stu-id="9e286-218">now has the same font as the **Home** and **Contact** links</span></span>  
     :::image-end:::  
     
@@ -366,7 +366,7 @@ li a {
     
 1.  <span data-ttu-id="9e286-276">将鼠标悬停在"主页 **"链接** 上。</span><span class="sxs-lookup"><span data-stu-id="9e286-276">Hover your mouse over the **Home** link.</span></span>  <span data-ttu-id="9e286-277">链接的背景变为绿色。</span><span class="sxs-lookup"><span data-stu-id="9e286-277">The background of the link turns green.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在"主页"链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在主页链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
        <span data-ttu-id="9e286-279">将鼠标悬停在"主页"链接上以显示其绿色背景</span><span class="sxs-lookup"><span data-stu-id="9e286-279">Hover on the Home link to reveal its green background</span></span>  
     :::image-end:::  
     
@@ -392,7 +392,7 @@ li a {
 
 1.  <span data-ttu-id="9e286-286">首先，刷新实时选项卡以删除你在 DevTools 中所做的更改。</span><span class="sxs-lookup"><span data-stu-id="9e286-286">First, refresh the live tab to remove the changes that you made in DevTools.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text=" 刷新页面后，在 DevTools 中所做的更改将消失" lightbox="../media/beginners-css-external1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text="刷新页面后，在 DevTools 中所做的更改将消失" lightbox="../media/beginners-css-external1.msft.png":::
         <span data-ttu-id="9e286-288">刷新页面后，在 DevTools 中所做的更改将消失</span><span class="sxs-lookup"><span data-stu-id="9e286-288">After you refresh the page, the changes that were made in DevTools are gone</span></span>  
     :::image-end:::  
     
@@ -619,7 +619,7 @@ li a {
 
 > [!NOTE]
 > <span data-ttu-id="9e286-388">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="9e286-388">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="9e286-389">原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Writer][KatherineJackson] \ (Technical Writer，Chrome DevTools\) 。</span><span class="sxs-lookup"><span data-stu-id="9e286-389">The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).</span></span>  
+> <span data-ttu-id="9e286-389">原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Writer][KatherineJackson] \(Technical Writer，Chrome DevTools\) 。</span><span class="sxs-lookup"><span data-stu-id="9e286-389">The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="9e286-391">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="9e286-391">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

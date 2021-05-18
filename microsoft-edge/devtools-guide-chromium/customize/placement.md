@@ -41,7 +41,7 @@ ms.locfileid: "11564362"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择"扩展坞"向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择扩展坞向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
          <span data-ttu-id="fd3db-110">选择 **"扩展坞"向左**</span><span class="sxs-lookup"><span data-stu-id="fd3db-110">Choose **Dock to left**</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -77,7 +77,7 @@ ms.locfileid: "11564362"
 
 ## <a name="change-placement-from-the-main-menu"></a><span data-ttu-id="fd3db-120">从主菜单更改位置</span><span class="sxs-lookup"><span data-stu-id="fd3db-120">Change placement from the main menu</span></span>  
 
-1.  <span data-ttu-id="fd3db-121">选择"自定义和控制**DevTools** \ (\) "，然后选择"撤消停靠到单独的窗口 `...` \ (\*\*\*\* Undock \) "，"扩展坞到底部 \ (扩展坞"到底部 \) ，或"扩展坞向左 \ (扩展坞"向左 ![ ](../media/undock-icon.msft.png) \*\*\*\* ![ ](../media/bottom-icon.msft.png) \*\*\*\* ![ ](../media/left-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="fd3db-121">Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock to bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock to left](../media/left-icon.msft.png)\).</span></span>  
+1.  <span data-ttu-id="fd3db-121">选择"自定义和控制**DevTools** \(\) "，然后选择"撤消停靠到单独的窗口 `...` \(\*\*\*\* Undock \) "，"扩展坞到底部 \(扩展坞"到底部 \) ，或"扩展坞向左 \(扩展坞"向左 ![ ](../media/undock-icon.msft.png)![ ](../media/bottom-icon.msft.png)![ ](../media/left-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="fd3db-121">Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock to bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock to left](../media/left-icon.msft.png)\).</span></span>  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        <span data-ttu-id="fd3db-123">选择 **停靠到单独的窗口位置**</span><span class="sxs-lookup"><span data-stu-id="fd3db-123">Choose **Undock into separate window**</span></span>  

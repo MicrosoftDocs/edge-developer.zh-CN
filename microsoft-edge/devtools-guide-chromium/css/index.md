@@ -33,17 +33,17 @@ ms.locfileid: "11564446"
 
 ## <a name="open-css-examples"></a><span data-ttu-id="0ba3d-106">Open CSS 示例</span><span class="sxs-lookup"><span data-stu-id="0ba3d-106">Open CSS Examples</span></span>  
 
-1.  <span data-ttu-id="0ba3d-107">保留 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) 并选择 **"CSS**示例"以在新窗口中打开。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-107">Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **CSS Examples** to open in a new window.</span></span>  
+1.  <span data-ttu-id="0ba3d-107">保留 `Control` \(Windows、Linux\) 或 `Command` \(macOS\) 并选择 **"CSS**示例"以在新窗口中打开。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-107">Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **CSS Examples** to open in a new window.</span></span>  
     
     [<span data-ttu-id="0ba3d-108">CSS 示例</span><span class="sxs-lookup"><span data-stu-id="0ba3d-108">CSS Examples</span></span>][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > <span data-ttu-id="0ba3d-109">如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (中显示的视口 \) ，请选择"自定义和控制**DevTools"。** `...`</span><span class="sxs-lookup"><span data-stu-id="0ba3d-109">If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in the following figure\), choose **Customize and control DevTools** `...`.</span></span>  <span data-ttu-id="0ba3d-110">在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-110">On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.</span></span>  
+    > <span data-ttu-id="0ba3d-109">如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\(中显示的视口 \) ，请选择"自定义和控制**DevTools"。** `...`</span><span class="sxs-lookup"><span data-stu-id="0ba3d-109">If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in the following figure\), choose **Customize and control DevTools** `...`.</span></span>  <span data-ttu-id="0ba3d-110">在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-110">On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.</span></span>  
     
 ## <a name="view-the-css-for-an-element"></a><span data-ttu-id="0ba3d-111">查看元素的 CSS</span><span class="sxs-lookup"><span data-stu-id="0ba3d-111">View the CSS for an element</span></span>  
 
 1.  <span data-ttu-id="0ba3d-112">[打开 CSS 示例](#open-css-examples)。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-112">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="0ba3d-113">将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-113">Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+1.  <span data-ttu-id="0ba3d-113">将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-113">Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
     1.  <span data-ttu-id="0ba3d-114">在 DevTools 中，在 **"元素** "工具的 **"DOM 树** "面板中， `Inspect Me!` 元素突出显示。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-114">In DevTools, on the **Elements** tool, in the **DOM Tree** panel, the `Inspect Me!` element is highlighted.</span></span>  
         
         :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="检查的元素在 DOM 树中突出显示" lightbox="../media/css-elements-inspect-me.msft.png":::
@@ -52,7 +52,7 @@ ms.locfileid: "11564446"
         
     1.  <span data-ttu-id="0ba3d-117">在 `Inspect Me!` 元素中，找到 属性的值 `data-message` 并复制它。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-117">In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.</span></span>  
 1.  <span data-ttu-id="0ba3d-118">在页面上的" \*\*值 `data-message` \*\* "文本框中，输入值。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-118">On the page, in the **Value of `data-message`:** textbox, enter the value.</span></span>  
-1.  <span data-ttu-id="0ba3d-119">将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-119">Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+1.  <span data-ttu-id="0ba3d-119">将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-119">Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
     1.  <span data-ttu-id="0ba3d-120">在 DevTools 中的" **元素** "工具上，选择 **"样式"** 面板。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-120">In DevTools, on the **Elements** tool, select the **Styles** panel.</span></span>  
     1.  <span data-ttu-id="0ba3d-121">在 **"样式"** 面板中， `Inspect Me!` 元素突出显示。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-121">In the **Styles** panel, the `Inspect Me!` element is highlighted.</span></span>  
     1.  <span data-ttu-id="0ba3d-122">在 `Inspect Me!` 元素中，查找 `aloha` 类规则。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-122">In the `Inspect Me!` element, find the `aloha` class rule.</span></span>  
@@ -62,7 +62,7 @@ ms.locfileid: "11564446"
         
     1.  <span data-ttu-id="0ba3d-124">在 `aloha` 类中，查找样式的值 `padding` 并复制它。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-124">In the `aloha` class, find the value for the `padding` style and copy it.</span></span>  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在"样式"面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在样式面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            <span data-ttu-id="0ba3d-126">CSS 类应用于选定的元素，例如 ， `aloha` 显示在" **样式"** 面板中</span><span class="sxs-lookup"><span data-stu-id="0ba3d-126">CSS classes is applied to the selected element, such as `aloha`, are displayed in the **Styles** panel</span></span>  
         :::image-end:::  
         
@@ -76,12 +76,12 @@ ms.locfileid: "11564446"
 > <span data-ttu-id="0ba3d-130">完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-130">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
 
 1.  <span data-ttu-id="0ba3d-131">[打开 CSS 示例](#open-css-examples)。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-131">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="0ba3d-132">将鼠标悬停在 `Add A Background Color To Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-132">Hover on the `Add A Background Color To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+1.  <span data-ttu-id="0ba3d-132">将鼠标悬停在 `Add A Background Color To Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-132">Hover on the `Add A Background Color To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
 1.  <span data-ttu-id="0ba3d-133">选择 `element.style` "样式"面板 **顶部** 附近的选项。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-133">Choose `element.style` near the top of the **Styles** panel.</span></span>  
 1.  <span data-ttu-id="0ba3d-134">键入 `background-color` 并选择 `Enter`。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-134">Type `background-color` and select `Enter`.</span></span>  
 1.  <span data-ttu-id="0ba3d-135">键入 `honeydew` 并选择 `Enter`。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-135">Type `honeydew` and select `Enter`.</span></span>  <span data-ttu-id="0ba3d-136">在 **DOM 树中**，将显示应用于元素的内联样式声明。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-136">In the **DOM Tree**, an inline style declaration applied to the element is displayed.</span></span>  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用"样式"面板向 元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用样式面板向 元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        <span data-ttu-id="0ba3d-138">使用 `background-color:honeydew` "样式"面板的 部分 `element.style` 将声明 **应用于** 元素</span><span class="sxs-lookup"><span data-stu-id="0ba3d-138">The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel</span></span>  
     :::image-end:::  
     
@@ -93,7 +93,7 @@ ms.locfileid: "11564446"
 > <span data-ttu-id="0ba3d-141">完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-141">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
 
 1.  <span data-ttu-id="0ba3d-142">[打开 CSS 示例](#open-css-examples)。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-142">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="0ba3d-143">将鼠标悬停在 `Add A Class To Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-143">Hover on the `Add A Class To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+1.  <span data-ttu-id="0ba3d-143">将鼠标悬停在 `Add A Class To Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-143">Hover on the `Add A Class To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
 1.  <span data-ttu-id="0ba3d-144">选择 **.cls**。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-144">Choose **.cls**.</span></span>  <span data-ttu-id="0ba3d-145">DevTools 显示一个文本框，你可以将类添加到所选元素。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-145">DevTools reveals a text box where you may add classes to the selected element.</span></span>  
 1.  <span data-ttu-id="0ba3d-146">在 `color_me` "添加新 **类"** 文本框中键入 ，然后选择 `Enter` 。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-146">Type `color_me` in the **Add new class** text box and then select `Enter`.</span></span>  <span data-ttu-id="0ba3d-147">"添加新 **类"文本框** 下方将出现一个复选框，可在其中打开和关闭该类。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-147">A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.</span></span>  <span data-ttu-id="0ba3d-148">如果 `Add A Class To Me!` 元素应用了任何其他类，则还可以在此处切换每个类。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-148">If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.</span></span>  
     
@@ -110,7 +110,7 @@ ms.locfileid: "11564446"
 
 1.  <span data-ttu-id="0ba3d-155">[打开 CSS 示例](#open-css-examples)。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-155">[Open CSS Examples](#open-css-examples).</span></span>  
 1.  <span data-ttu-id="0ba3d-156">将鼠标悬停在 `Hover Over Me!` 文本上。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-156">Hover on the `Hover Over Me!` text.</span></span>  <span data-ttu-id="0ba3d-157">背景色更改。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-157">The background color changes.</span></span>  
-1.  <span data-ttu-id="0ba3d-158">将鼠标悬停在 `Hover Over Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-158">Hover on the `Hover Over Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+1.  <span data-ttu-id="0ba3d-158">将鼠标悬停在 `Hover Over Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-158">Hover on the `Hover Over Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
 1.  <span data-ttu-id="0ba3d-159">在"**样式"** 面板中，选择 **"：hov"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-159">In the **Styles** panel, choose **:hov**.</span></span>  
 1.  <span data-ttu-id="0ba3d-160">选中 **"：hover"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-160">Check the **:hover** checkbox.</span></span>  <span data-ttu-id="0ba3d-161">背景颜色会像以前一样更改，即使你实际上并未将鼠标悬停在元素上。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-161">The background color changes like before, even though you are not actually hovering over the element.</span></span>  
     
@@ -126,7 +126,7 @@ ms.locfileid: "11564446"
 > <span data-ttu-id="0ba3d-166">完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-166">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
 
 1.  <span data-ttu-id="0ba3d-167">[打开 CSS 示例](#open-css-examples)。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-167">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="0ba3d-168">将鼠标悬停在 `Change My Margin!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-168">Hover on the `Change My Margin!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+1.  <span data-ttu-id="0ba3d-168">将鼠标悬停在 `Change My Margin!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**</span><span class="sxs-lookup"><span data-stu-id="0ba3d-168">Hover on the `Change My Margin!` text, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
 1.  <span data-ttu-id="0ba3d-169">在" **样式"** 面板的"方框模型 **"** 图表中，将鼠标悬停在 **填充上**。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-169">In the **Box Model** diagram in the **Styles** panel, hover on **padding**.</span></span>  <span data-ttu-id="0ba3d-170">元素的填充在视口中突出显示。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-170">The padding of an element is highlighted in the viewport.</span></span>  
 
     > [!NOTE]
@@ -154,7 +154,7 @@ ms.locfileid: "11564446"
 
 <span data-ttu-id="0ba3d-183">如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-183">If you want to debug or test the Media Queries you defined in your CSS, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="0ba3d-184">打开开发人员工具并选择左上方第\*\*\*\* 二个"切换设备"工具栏图标，或在 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\ (选择 \) 。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-184">Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or select `Ctrl`+`Shift`+`M` \(`Cmd`+`Shift`+`M` on macOS\).</span></span>  
+1.  <span data-ttu-id="0ba3d-184">打开开发人员工具并选择左上方第\*\*\*\* 二个"切换设备"工具栏图标，或在 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\(选择 \) 。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-184">Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or select `Ctrl`+`Shift`+`M` \(`Cmd`+`Shift`+`M` on macOS\).</span></span>  
     
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="打开设备工具栏" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        <span data-ttu-id="0ba3d-186">打开设备工具栏</span><span class="sxs-lookup"><span data-stu-id="0ba3d-186">Open the device toolbar</span></span>  
@@ -172,7 +172,7 @@ ms.locfileid: "11564446"
        <span data-ttu-id="0ba3d-194">从预览栏中选择媒体查询</span><span class="sxs-lookup"><span data-stu-id="0ba3d-194">Choose Media Query from preview bar</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="0ba3d-195">若要调试媒体查询，并打开编辑器中的 CSS 文件;将鼠标悬停在任何栏分段上，打开上下文菜单 `Sources` \ (右键单击\) ，然后选择 `reveal in source code` 。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-195">To debug media queries and open the CSS file in the `Sources` editor; hover on any of the bar segments, open the contextual menu \(right-click\), and select `reveal in source code`.</span></span>  
+1.  <span data-ttu-id="0ba3d-195">若要调试媒体查询，并打开编辑器中的 CSS 文件;将鼠标悬停在任何栏分段上，打开上下文菜单 `Sources` \(右键单击\) ，然后选择 `reveal in source code` 。</span><span class="sxs-lookup"><span data-stu-id="0ba3d-195">To debug media queries and open the CSS file in the `Sources` editor; hover on any of the bar segments, open the contextual menu \(right-click\), and select `reveal in source code`.</span></span>  
     
     :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="在源编辑器中显示媒体查询" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
        <span data-ttu-id="0ba3d-197">在源编辑器中显示媒体查询</span><span class="sxs-lookup"><span data-stu-id="0ba3d-197">Reveal Media Queries in Sources Editor</span></span>  

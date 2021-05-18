@@ -53,7 +53,7 @@ ms.locfileid: "11564992"
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="07d85-121">中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="07d85-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
+      <span data-ttu-id="07d85-121">中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="07d85-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
    :::column-end:::
    :::column span="":::
       <span data-ttu-id="07d85-122">繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="07d85-122">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>
@@ -124,13 +124,13 @@ ms.locfileid: "11564992"
 
 ### <a name="3d-view"></a><span data-ttu-id="07d85-148">3D 视图</span><span class="sxs-lookup"><span data-stu-id="07d85-148">3D View</span></span>  
 
-<span data-ttu-id="07d85-149">使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="07d85-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
+<span data-ttu-id="07d85-149">使用 **3D 视图** 通过浏览文档对象模型 [\(DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="07d85-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
 
 :::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2019/12/3dview.msft.png":::
    <span data-ttu-id="07d85-151">DevTools 中的 **3D** 视图</span><span class="sxs-lookup"><span data-stu-id="07d85-151">The **3D View** in the DevTools</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="07d85-152">若要访问 3D 视图，请导航到 `edge://flags` 并确保开发人员 **工具实验** 标记设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="07d85-152">To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.</span></span>  <span data-ttu-id="07d85-153">重新启动Microsoft Edge并打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="07d85-153">Restart Microsoft Edge and open the DevTools.</span></span>  <span data-ttu-id="07d85-154">在 DevTools 中选择或打开设置实验"部分，然后打开 `F1` \*\*\*\*  >  \*\*\*\*"**启用 3D 视图"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="07d85-154">Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.</span></span>  <span data-ttu-id="07d85-155">现在，选择 `Ctrl`  +  `Shift`  +  `P` ，在**3D 视图中键入 ，** 然后选择**显示 3D 视图**。</span><span class="sxs-lookup"><span data-stu-id="07d85-155">Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.</span></span>  
+<span data-ttu-id="07d85-152">若要访问 3D 视图，请导航到 `edge://flags` 并确保开发人员 **工具实验** 标记设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="07d85-152">To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.</span></span>  <span data-ttu-id="07d85-153">重新启动Microsoft Edge并打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="07d85-153">Restart Microsoft Edge and open the DevTools.</span></span>  <span data-ttu-id="07d85-154">在 DevTools 中选择或打开设置实验"部分，然后打开 `F1` >  \*\*\*\*"**启用 3D 视图"** 复选框。</span><span class="sxs-lookup"><span data-stu-id="07d85-154">Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.</span></span>  <span data-ttu-id="07d85-155">现在，选择 `Ctrl`  +  `Shift`  +  `P` ，在**3D 视图中键入 ，** 然后选择**显示 3D 视图**。</span><span class="sxs-lookup"><span data-stu-id="07d85-155">Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.</span></span>  
 
 <span data-ttu-id="07d85-156">We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).</span><span class="sxs-lookup"><span data-stu-id="07d85-156">We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).</span></span>  
 
@@ -204,13 +204,13 @@ ms.locfileid: "11564992"
 <span data-ttu-id="07d85-196">例如，以前，当使用 重新声明本地变量时， `let` 控制台会出错：</span><span class="sxs-lookup"><span data-stu-id="07d85-196">For example, previously, when re-declaring a local variable with `let`, the Console threw an error:</span></span>  
 
 :::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="Microsoft Edge 79 中的控制台显示允许重新声明失败" lightbox="../../images/2019/12/letbefore.msft.png":::
-   <span data-ttu-id="07d85-198">Microsoft Edge \*\*\*\* 79 中的控制台显示允许重新声明失败</span><span class="sxs-lookup"><span data-stu-id="07d85-198">The **Console** in Microsoft Edge 79 showing that the let re-declaration fails</span></span>  
+   <span data-ttu-id="07d85-198">Microsoft Edge79 中的控制台显示允许重新声明失败</span><span class="sxs-lookup"><span data-stu-id="07d85-198">The **Console** in Microsoft Edge 79 showing that the let re-declaration fails</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="07d85-199">现在，控制台允许重新声明：</span><span class="sxs-lookup"><span data-stu-id="07d85-199">Now, the Console allows the redeclaration:</span></span>  
 
 :::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="80 Microsoft Edge中的控制台显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
-   <span data-ttu-id="07d85-201">Microsoft Edge \*\*\*\* 80 中的控制台显示允许重新声明成功</span><span class="sxs-lookup"><span data-stu-id="07d85-201">The **Console** in Microsoft Edge 80 showing that the let re-declaration succeeds</span></span>  
+   <span data-ttu-id="07d85-201">Microsoft Edge80 中的控制台显示允许重新声明成功</span><span class="sxs-lookup"><span data-stu-id="07d85-201">The **Console** in Microsoft Edge 80 showing that the let re-declaration succeeds</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="07d85-202">Chromium问题[#1004193][CR1004193]</span><span class="sxs-lookup"><span data-stu-id="07d85-202">Chromium issue [#1004193][CR1004193]</span></span>  
@@ -233,7 +233,7 @@ ms.locfileid: "11564992"
 
 #### <a name="request-initiator-chains-in-the-initiator-panel"></a><span data-ttu-id="07d85-206">发起者面板中的请求发起人链</span><span class="sxs-lookup"><span data-stu-id="07d85-206">Request Initiator Chains in the Initiator panel</span></span>  
 
-<span data-ttu-id="07d85-207">现在，你可以将网络请求的发起方和依赖项作为嵌套列表进行查看。</span><span class="sxs-lookup"><span data-stu-id="07d85-207">You are now able to view the initiators and dependencies of a network request as a nested list.</span></span>  <span data-ttu-id="07d85-208">这可以帮助您了解请求资源的原因，或特定资源 \ (（如 script\) 导致的网络活动。</span><span class="sxs-lookup"><span data-stu-id="07d85-208">This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.</span></span>  
+<span data-ttu-id="07d85-207">现在，你可以将网络请求的发起方和依赖项作为嵌套列表进行查看。</span><span class="sxs-lookup"><span data-stu-id="07d85-207">You are now able to view the initiators and dependencies of a network request as a nested list.</span></span>  <span data-ttu-id="07d85-208">这可以帮助您了解请求资源的原因，或特定资源 \(（如 script\) 导致的网络活动。</span><span class="sxs-lookup"><span data-stu-id="07d85-208">This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.</span></span>  
 
 :::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="发起者面板中的请求发起人链" lightbox="../../images/2019/12/initiators.msft.png":::
    <span data-ttu-id="07d85-210">发起者面板中的请求 **发起人** 链</span><span class="sxs-lookup"><span data-stu-id="07d85-210">A Request Initiator Chain in the **Initiator** panel</span></span>  
@@ -254,7 +254,7 @@ ms.locfileid: "11564992"
 
 <span data-ttu-id="07d85-224">选择网络资源以检查它后，网络面板现在在概述中为资源设置蓝色 **边框**。</span><span class="sxs-lookup"><span data-stu-id="07d85-224">After you choose a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.</span></span>  <span data-ttu-id="07d85-225">这可以帮助您检测网络请求是早于还是晚于预期发生。</span><span class="sxs-lookup"><span data-stu-id="07d85-225">This is able to help you detect if the network request is happening earlier or later than expected.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的"概述"窗格" lightbox="../../images/2019/12/overview.msft.png":::
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的概述窗格" lightbox="../../images/2019/12/overview.msft.png":::
    <span data-ttu-id="07d85-227">突出显示 **已** 检查资源的"概述"窗格</span><span class="sxs-lookup"><span data-stu-id="07d85-227">The **Overview** pane highlighting the inspected resource</span></span>  
 :::image-end:::  
 
@@ -264,11 +264,11 @@ ms.locfileid: "11564992"
 
 <span data-ttu-id="07d85-230">使用"**网络"** 工具**中的新"** 路径"和 **"URL"** 列显示每个网络资源的绝对路径或完整 URL。</span><span class="sxs-lookup"><span data-stu-id="07d85-230">Use the new **Path** and **URL** columns in the **Network** tool to display the absolute path or full URL of each network resource.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text=""网络"面板中的新"路径"和"URL"列" lightbox="../../images/2019/12/columns.msft.png":::
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="网络面板中的新路径和URL列" lightbox="../../images/2019/12/columns.msft.png":::
    <span data-ttu-id="07d85-232">网络工具中的新 **路径和** URL 列</span><span class="sxs-lookup"><span data-stu-id="07d85-232">The new Path and URL columns in the **Network** tool</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="07d85-233">若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \ (righ-click\) ，然后选择**路径**或**URL。**</span><span class="sxs-lookup"><span data-stu-id="07d85-233">To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.</span></span>  
+<span data-ttu-id="07d85-233">若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \(righ-click\) ，然后选择**路径**或**URL。**</span><span class="sxs-lookup"><span data-stu-id="07d85-233">To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.</span></span>  
 
 <span data-ttu-id="07d85-234">Chromium问题[#993366][CR993366]</span><span class="sxs-lookup"><span data-stu-id="07d85-234">Chromium issue [#993366][CR993366]</span></span>  
 
@@ -278,7 +278,7 @@ ms.locfileid: "11564992"
 
 <span data-ttu-id="07d85-238">预定义User-Agent字符串已更新，以反映新式浏览器版本。</span><span class="sxs-lookup"><span data-stu-id="07d85-238">The predefined User-Agent strings have been updated to reflect modern browser versions.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text=""网络条件"面板中的"用户代理"菜单" lightbox="../../images/2019/12/useragent.msft.png":::
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="网络条件面板中的用户代理菜单" lightbox="../../images/2019/12/useragent.msft.png":::
    <span data-ttu-id="07d85-240">"网络条件"面板中的" **用户代理"** 菜单</span><span class="sxs-lookup"><span data-stu-id="07d85-240">The User Agent menu in the **Network Conditions** panel</span></span>  
 :::image-end:::  
 
@@ -363,7 +363,7 @@ ms.locfileid: "11564992"
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter 帐户"
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "调试程序Microsoft Edge - Visual Studio市场"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge \ (Chromium\) - Visual Studio Marketplace 的元素"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge \(Chromium\) - Visual Studio Marketplace 的元素"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 [Webhint]: https://aka.ms/webhint "webhint"  
 [WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint 浏览器扩展|webhint 文档"  

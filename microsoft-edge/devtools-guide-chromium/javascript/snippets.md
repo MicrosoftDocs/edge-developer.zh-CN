@@ -66,7 +66,7 @@ ms.locfileid: "11564110"
 
 <span data-ttu-id="ebd89-125">左侧**导航**器窗格中的"代码\*\*\*\* 段"选项卡列出了您的代码段。</span><span class="sxs-lookup"><span data-stu-id="ebd89-125">The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets.</span></span>  <span data-ttu-id="ebd89-126">当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。</span><span class="sxs-lookup"><span data-stu-id="ebd89-126">When you want to edit a Snippet, you need to open it from the **Snippets** tab.</span></span>  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text=""代码段"选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="代码段选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    <span data-ttu-id="ebd89-128">" **代码段"** 选项卡</span><span class="sxs-lookup"><span data-stu-id="ebd89-128">The **Snippets** tab</span></span>  
 :::image-end:::  
 
@@ -74,11 +74,11 @@ ms.locfileid: "11564110"
 
 1.  <span data-ttu-id="ebd89-130">选择" **源"** 选项卡。 将显示 **"源** "工具。</span><span class="sxs-lookup"><span data-stu-id="ebd89-130">Choose the **Sources** tab.  The **Sources** tool appears.</span></span>  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开"页面"选项卡的"源"工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开页面选项卡的源工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
        <span data-ttu-id="ebd89-132">在 **左侧** 打开" **页面"** 选项卡的"源"工具</span><span class="sxs-lookup"><span data-stu-id="ebd89-132">The **Sources** tool with the **Page** tab open on the left</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="ebd89-133">在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \ (![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="ebd89-133">In the **Navigator** pane (on the left), choose the **Snippets** tab.  To access the **Snippets** option, you may need to choose **More tabs** \(![More tabs](../media/more-tabs-icon.msft.png)\).</span></span>  
+1.  <span data-ttu-id="ebd89-133">在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \(![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="ebd89-133">In the **Navigator** pane (on the left), choose the **Snippets** tab.  To access the **Snippets** option, you may need to choose **More tabs** \(![More tabs](../media/more-tabs-icon.msft.png)\).</span></span>  
     
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a><span data-ttu-id="ebd89-134">使用命令菜单打开"代码段"选项卡</span><span class="sxs-lookup"><span data-stu-id="ebd89-134">Open the Snippets tab with the Command Menu</span></span>  
 
@@ -136,7 +136,7 @@ ms.locfileid: "11564110"
 
 1.  <span data-ttu-id="ebd89-167">[打开"代码段"选项卡](#open-the-snippets-tab)。</span><span class="sxs-lookup"><span data-stu-id="ebd89-167">[Open the Snippets tab](#open-the-snippets-tab).</span></span>  
 1.  <span data-ttu-id="ebd89-168">选择要运行的代码片段的名称。</span><span class="sxs-lookup"><span data-stu-id="ebd89-168">Choose the name of the Snippet that you want to run.</span></span>  <span data-ttu-id="ebd89-169">代码片段将在**代码编辑器**中打开。</span><span class="sxs-lookup"><span data-stu-id="ebd89-169">The Snippet opens in the **Code Editor**.</span></span>  
-1.  <span data-ttu-id="ebd89-170">Choose **Run snippet** \ (Run Snippet ![ ](../media/run-snippet-icon.msft.png) \) .</span><span class="sxs-lookup"><span data-stu-id="ebd89-170">Choose **Run snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\).</span></span>
+1.  <span data-ttu-id="ebd89-170">Choose **Run snippet** \(Run Snippet ![ ](../media/run-snippet-icon.msft.png) \) .</span><span class="sxs-lookup"><span data-stu-id="ebd89-170">Choose **Run snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\).</span></span>
     
 ### <a name="run-a-snippet-with-the-command-menu"></a><span data-ttu-id="ebd89-171">使用命令菜单运行代码片段</span><span class="sxs-lookup"><span data-stu-id="ebd89-171">Run a Snippet with the Command Menu</span></span>  
 

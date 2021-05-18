@@ -53,7 +53,7 @@ ms.locfileid: "11564523"
 
 ### <a name="open-the-console-tool-in-the-drawer"></a><span data-ttu-id="161fd-119">打开工具箱中的控制台工具</span><span class="sxs-lookup"><span data-stu-id="161fd-119">Open the Console tool in the Drawer</span></span>  
 
-<span data-ttu-id="161fd-120">选择 `Esc` 或选择 **"自定义和控制 DevTools** \ (`...` \) "，然后选择"显示控制台**箱"。**</span><span class="sxs-lookup"><span data-stu-id="161fd-120">Select `Esc` or choose **Customize and control DevTools** \(`...`\) and then choose **Show console drawer**.</span></span>  
+<span data-ttu-id="161fd-120">选择 `Esc` 或选择 **"自定义和控制 DevTools** \(`...` \) "，然后选择"显示控制台**箱"。**</span><span class="sxs-lookup"><span data-stu-id="161fd-120">Select `Esc` or choose **Customize and control DevTools** \(`...`\) and then choose **Show console drawer**.</span></span>  
 
 :::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="显示控制台工具箱" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **<span data-ttu-id="161fd-122">显示控制台工具箱</span><span class="sxs-lookup"><span data-stu-id="161fd-122">Show console drawer</span></span>**  
@@ -65,15 +65,15 @@ ms.locfileid: "11564523"
    <span data-ttu-id="161fd-125">**“抽屉”** 中的 **控制台** 工具</span><span class="sxs-lookup"><span data-stu-id="161fd-125">The **Console** tool in the **Drawer**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="161fd-126">若要从命令**菜单**打开控制台工具[][DevtoolsCommandMenuIndex]，请键入 ，然后运行旁边有"箱"锁屏提醒的"显示 `Console` 控制台"命令。 \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="161fd-126">To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.</span></span>  
+<span data-ttu-id="161fd-126">若要从命令**菜单**打开控制台工具[][DevtoolsCommandMenuIndex]，请键入 ，然后运行旁边有"箱"锁屏提醒的"显示 `Console` 控制台"命令。\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="161fd-126">To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.</span></span>  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在"箱"中显示 **Console** 工具" lightbox="../media/console-command-menu-show-console.msft.png":::
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在箱中显示 **Console** 工具" lightbox="../media/console-command-menu-show-console.msft.png":::
    <span data-ttu-id="161fd-128">运行命令以在"箱 **"** 中显示控制台 **工具**</span><span class="sxs-lookup"><span data-stu-id="161fd-128">Run the command to display the **Console** tool in the **Drawer**</span></span>  
 :::image-end:::  
 
 ### <a name="open-console-settings"></a><span data-ttu-id="161fd-129">打开控制台设置</span><span class="sxs-lookup"><span data-stu-id="161fd-129">Open Console Settings</span></span>  
 
-<span data-ttu-id="161fd-130">Choose the **Console 设置**\ (Console 设置 ![ icon ](../media/settings-button-icon.msft.png) \) button.</span><span class="sxs-lookup"><span data-stu-id="161fd-130">Choose the **Console Settings** \(![Console Settings icon](../media/settings-button-icon.msft.png)\) button.</span></span>  
+<span data-ttu-id="161fd-130">Choose the **Console 设置**\(Console 设置 ![ icon ](../media/settings-button-icon.msft.png) \) button.</span><span class="sxs-lookup"><span data-stu-id="161fd-130">Choose the **Console Settings** \(![Console Settings icon](../media/settings-button-icon.msft.png)\) button.</span></span>  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **<span data-ttu-id="161fd-132">控制台设置</span><span class="sxs-lookup"><span data-stu-id="161fd-132">Console Settings</span></span>**  
@@ -92,7 +92,7 @@ ms.locfileid: "11564523"
     
 ### <a name="open-the-console-sidebar"></a><span data-ttu-id="161fd-141">打开控制台边栏</span><span class="sxs-lookup"><span data-stu-id="161fd-141">Open the Console Sidebar</span></span>  
 
-<span data-ttu-id="161fd-142">若要显示 **边栏**，请选择显示 **控制台边** 栏 \ (![ 显示控制台边栏 ](../media/show-console-sidebar-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="161fd-142">To display the **Sidebar**, choose **Show console sidebar** \(![Show console sidebar](../media/show-console-sidebar-icon.msft.png)\).</span></span>  <span data-ttu-id="161fd-143">**边栏**可帮助你进行筛选。</span><span class="sxs-lookup"><span data-stu-id="161fd-143">The **Sidebar** is helps you filter.</span></span>  
+<span data-ttu-id="161fd-142">若要显示 **边栏**，请选择显示 **控制台边** 栏 \(![ 显示控制台边栏 ](../media/show-console-sidebar-icon.msft.png) \) 。</span><span class="sxs-lookup"><span data-stu-id="161fd-142">To display the **Sidebar**, choose **Show console sidebar** \(![Show console sidebar](../media/show-console-sidebar-icon.msft.png)\).</span></span>  <span data-ttu-id="161fd-143">**边栏**可帮助你进行筛选。</span><span class="sxs-lookup"><span data-stu-id="161fd-143">The **Sidebar** is helps you filter.</span></span>  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="控制台边栏" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **<span data-ttu-id="161fd-145">控制台边栏</span><span class="sxs-lookup"><span data-stu-id="161fd-145">Console Sidebar</span></span>**  
@@ -168,7 +168,7 @@ ms.locfileid: "11564523"
 
 <span data-ttu-id="161fd-181">若要筛选邮件，请选择" **日志级别** "下拉列表，然后选择 `Verbose` `Info` 、、 `Warning` 或 `Error` 。</span><span class="sxs-lookup"><span data-stu-id="161fd-181">To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.</span></span>  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="“日志级别”下拉列表" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="日志级别下拉列表" lightbox="../media/console-log-level-default-levels.msft.png":::
    <span data-ttu-id="161fd-183">“**日志级别**”下拉列表</span><span class="sxs-lookup"><span data-stu-id="161fd-183">The **Log Levels** dropdown</span></span>  
 :::image-end:::  
 
@@ -248,7 +248,7 @@ ms.locfileid: "11564523"
 
 <span data-ttu-id="161fd-237">**"JavaScript**上下文"下拉列表的默认选项位于**顶部**，它表示主[网页的浏览][MdnDocsGlossaryBrowsingContext]上下文。</span><span class="sxs-lookup"><span data-stu-id="161fd-237">The default option for the **JavaScript Context** dropdown is **top**, which represents the [browsing context][MdnDocsGlossaryBrowsingContext] of the main webpage.</span></span>  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="“JavaScript 上下文”下拉列表" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="JavaScript 上下文下拉列表" lightbox="../media/console-dom-level-top.msft.png":::
    <span data-ttu-id="161fd-239">“**JavaScript 上下文**”下拉列表</span><span class="sxs-lookup"><span data-stu-id="161fd-239">The **JavaScript Context** dropdown</span></span>  
 :::image-end:::  
 
@@ -262,8 +262,8 @@ ms.locfileid: "11564523"
 
 <span data-ttu-id="161fd-246">若要清除 **控制台**，请完成以下任何工作流。</span><span class="sxs-lookup"><span data-stu-id="161fd-246">To clear the **Console**, complete any of the following workflows.</span></span>  
 
-*   <span data-ttu-id="161fd-247">选择" **清除控制台** \ (![ 清除控制台 ](../media/clear-console-button-icon.msft.png) \) "按钮。</span><span class="sxs-lookup"><span data-stu-id="161fd-247">Choose the **Clear Console** \(![Clear Console](../media/clear-console-button-icon.msft.png)\) button.</span></span>  
-*   <span data-ttu-id="161fd-248">将鼠标悬停在消息上，打开上下文菜单 \ (右键单击\) ，然后选择"清除**控制台"。**</span><span class="sxs-lookup"><span data-stu-id="161fd-248">Hover on a message, open the contextual menu \(right-click\), and choose **Clear Console**.</span></span>  
+*   <span data-ttu-id="161fd-247">选择" **清除控制台** \(![ 清除控制台 ](../media/clear-console-button-icon.msft.png) \) "按钮。</span><span class="sxs-lookup"><span data-stu-id="161fd-247">Choose the **Clear Console** \(![Clear Console](../media/clear-console-button-icon.msft.png)\) button.</span></span>  
+*   <span data-ttu-id="161fd-248">将鼠标悬停在消息上，打开上下文菜单 \(右键单击\) ，然后选择"清除**控制台"。**</span><span class="sxs-lookup"><span data-stu-id="161fd-248">Hover on a message, open the contextual menu \(right-click\), and choose **Clear Console**.</span></span>  
 *   <span data-ttu-id="161fd-249">在**控制台**中输入 `clear()`，然后选择 `Enter`。</span><span class="sxs-lookup"><span data-stu-id="161fd-249">Enter `clear()` in the **Console** and select `Enter`.</span></span>  
 *   <span data-ttu-id="161fd-250">从 JavaScript 中为你的网页运行 `console.clear()`。</span><span class="sxs-lookup"><span data-stu-id="161fd-250">Run `console.clear()` from the JavaScript for your webpage.</span></span>  
 *   <span data-ttu-id="161fd-251">在聚焦**控制台**时选择 `Control`+`L`。</span><span class="sxs-lookup"><span data-stu-id="161fd-251">Select `Control`+`L` while the **Console** is in focus.</span></span>  

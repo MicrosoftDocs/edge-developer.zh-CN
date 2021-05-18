@@ -39,7 +39,7 @@ ms.locfileid: "11564950"
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a><span data-ttu-id="9578a-112">在 Windows 10 设备上远程调试 Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="9578a-112">Remotely debug Microsoft Edge on Windows 10 Devices</span></span>  
 
-<span data-ttu-id="9578a-113">现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。</span><span class="sxs-lookup"><span data-stu-id="9578a-113">The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].</span></span>  <span data-ttu-id="9578a-114">使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \ (Microsoft Edge 中所有选项卡，PBA 在 Windows 10 设备上打开\) ，并针对在远程[][ProgressiveWebAppsChromiumIndex]Windows 10 设备上运行的目标使用开发计算机上 DevTools。</span><span class="sxs-lookup"><span data-stu-id="9578a-114">Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, display a list of targets \(all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.</span></span>  
+<span data-ttu-id="9578a-113">现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。</span><span class="sxs-lookup"><span data-stu-id="9578a-113">The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].</span></span>  <span data-ttu-id="9578a-114">使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \(Microsoft Edge 中所有选项卡，PBA 在 Windows 10 设备上打开\) ，并针对在远程[][ProgressiveWebAppsChromiumIndex]Windows 10 设备上运行的目标使用开发计算机上 DevTools。</span><span class="sxs-lookup"><span data-stu-id="9578a-114">Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, display a list of targets \(all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    <span data-ttu-id="9578a-116">[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用</span><span class="sxs-lookup"><span data-stu-id="9578a-116">The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]</span></span>  
@@ -109,7 +109,7 @@ ms.locfileid: "11564950"
 
 <span data-ttu-id="9578a-156">对缩小文件进行更改后，"更改"工具允许您水平滚动\*\*\*\* 以显示所有缩小代码。</span><span class="sxs-lookup"><span data-stu-id="9578a-156">When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.</span></span>  <span data-ttu-id="9578a-157">从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。</span><span class="sxs-lookup"><span data-stu-id="9578a-157">Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在更改工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
    <span data-ttu-id="9578a-159">在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码**所做的更改**</span><span class="sxs-lookup"><span data-stu-id="9578a-159">In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display the changes you made to your minified code in the **Changes tool**</span></span>  
 :::image-end:::  
 
@@ -139,7 +139,7 @@ ms.locfileid: "11564950"
 | <span data-ttu-id="9578a-177">全色盲</span><span class="sxs-lookup"><span data-stu-id="9578a-177">Achromatopsia</span></span> | <span data-ttu-id="9578a-178">无法感觉任何颜色，灰色阴影除外\（极少\）。</span><span class="sxs-lookup"><span data-stu-id="9578a-178">The inability to perceive any color, except for shades of grey \(extremely rare\).</span></span> |  
 
 <span data-ttu-id="9578a-179">存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。</span><span class="sxs-lookup"><span data-stu-id="9578a-179">Less extreme versions of these color vision deficiencies exist, and in fact they are more common.</span></span>  
-<span data-ttu-id="9578a-180">例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。</span><span class="sxs-lookup"><span data-stu-id="9578a-180">For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light).</span></span> <span data-ttu-id="9578a-181">但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。</span><span class="sxs-lookup"><span data-stu-id="9578a-181">However, these **-omaly** vision deficiencies are not as clearly defined:  every person with such a vision deficiency is different and may see things differently \(being able to perceive more/less of the relevant colors\).</span></span>  
+<span data-ttu-id="9578a-180">例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。</span><span class="sxs-lookup"><span data-stu-id="9578a-180">For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light).</span></span> <span data-ttu-id="9578a-181">但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \(能够感知更多/更少的相关颜色\) 。</span><span class="sxs-lookup"><span data-stu-id="9578a-181">However, these **-omaly** vision deficiencies are not as clearly defined:  every person with such a vision deficiency is different and may see things differently \(being able to perceive more/less of the relevant colors\).</span></span>  
 
 <span data-ttu-id="9578a-182">通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="9578a-182">By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.</span></span>  
 
@@ -179,7 +179,7 @@ ms.locfileid: "11564950"
 
 <span data-ttu-id="9578a-203">"**标头**" 选项卡上的 "**响应标头**" 部分提供了有关如何解决这些问题的更多指导：</span><span class="sxs-lookup"><span data-stu-id="9578a-203">The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:</span></span>  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="“响应标头”部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="响应标头部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
    <span data-ttu-id="9578a-205">"响应头" **部分中的更多** 指南</span><span class="sxs-lookup"><span data-stu-id="9578a-205">More guidance in the **Response Headers** section</span></span>  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ ms.locfileid: "11564950"
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a><span data-ttu-id="9578a-238">删除文件夹中的所有本地覆盖</span><span class="sxs-lookup"><span data-stu-id="9578a-238">Delete all Local Overrides in a folder</span></span>  
 
-<span data-ttu-id="9578a-239">设置本地覆盖\*\*\*\* 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该\*\*\*\* 文件夹中的所有局部覆盖。</span><span class="sxs-lookup"><span data-stu-id="9578a-239">After setting up **Local Overrides** you may hover on a directory, open the contextual menu \(right-click\), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.</span></span>  
+<span data-ttu-id="9578a-239">设置本地覆盖\*\*\*\* 后，你可以将鼠标悬停在目录上，打开上下文菜单 \(右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该\*\*\*\* 文件夹中的所有局部覆盖。</span><span class="sxs-lookup"><span data-stu-id="9578a-239">After setting up **Local Overrides** you may hover on a directory, open the contextual menu \(right-click\), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.</span></span>  
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    <span data-ttu-id="9578a-241">删除所有覆盖</span><span class="sxs-lookup"><span data-stu-id="9578a-241">Delete all overrides</span></span>  
