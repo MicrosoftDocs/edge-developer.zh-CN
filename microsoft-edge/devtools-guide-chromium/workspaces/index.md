@@ -231,7 +231,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  <span data-ttu-id="dcf10-207">选择 `Control` + `P` \(Windows、Linux\) 或 `Command` + `P` \(macOS\) 打开 **"打开文件"** 对话框。</span><span class="sxs-lookup"><span data-stu-id="dcf10-207">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="dcf10-208">查看下图。</span><span class="sxs-lookup"><span data-stu-id="dcf10-208">Review the following figure.</span></span>  
 1.  <span data-ttu-id="dcf10-209">键入 `script` ，然后选择 \*\*"app/script.js"。 \*\*</span><span class="sxs-lookup"><span data-stu-id="dcf10-209">Type `script`, then choose **app/script.js**.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件"对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        <span data-ttu-id="dcf10-211">使用 `script.js` "打开 **文件"对话框** 打开</span><span class="sxs-lookup"><span data-stu-id="dcf10-211">Open `script.js` using the **Open File** dialog</span></span>  
     :::image-end:::  
     

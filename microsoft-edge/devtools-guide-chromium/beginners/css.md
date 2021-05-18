@@ -416,7 +416,7 @@ li a {
     
 1.  <span data-ttu-id="9e286-299">选择 **"新建文件"。**</span><span class="sxs-lookup"><span data-stu-id="9e286-299">Choose **New File**.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text=""新建文件"对话框" lightbox="../media/beginners-css-external5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="新建文件对话框" lightbox="../media/beginners-css-external5.msft.png":::
        <span data-ttu-id="9e286-301">"新建文件"对话框</span><span class="sxs-lookup"><span data-stu-id="9e286-301">The new file dialog</span></span>  
     :::image-end:::  
     

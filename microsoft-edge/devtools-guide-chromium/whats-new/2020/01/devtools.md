@@ -300,7 +300,7 @@ ms.locfileid: "11564957"
    <span data-ttu-id="6649f-242">禁用**允许滚动到文件末尾设置**</span><span class="sxs-lookup"><span data-stu-id="6649f-242">Disabling **Allow scrolling past end of file** in Settings</span></span>  
 :::image-end:::  
 
-:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在"源"面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
+:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在源面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
    <span data-ttu-id="6649f-244">滚动过文件末尾现在在"源"面板中处于禁用状态</span><span class="sxs-lookup"><span data-stu-id="6649f-244">Scrolling past the end of a file is now disabled in the Sources panel</span></span>  
 :::image-end:::  
 
