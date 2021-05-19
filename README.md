@@ -2,8 +2,7 @@
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则  
 
-此项目采用 Microsoft [开放源代码行为准则](https://opensource.microsoft.com/codeofconduct)。  
-有关详细信息，请参阅行为准则 [常见问题解答](https://opensource.microsoft.com/codeofconduct/faq) ， [或](mailto:opencode@microsoft.com) opencode@microsoft.com 问题或意见进行联系。  
+有关 Microsoft 开放源代码行为准则的信息，请导航到["Microsoft 开放源代码行为准则"。](CODE_OF_CONDUCT.md)  
 
 ## <a name="legal-notices"></a>法律声明  
 
@@ -19,15 +18,15 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 
 ## <a name="contributing"></a>参与  
 
-这是托管在 的Microsoft Edge**文档**存储库 [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/index) 。  
+这是托管在 的Microsoft Edge**文档**存储库 [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge/index) 。  
 
 如果你想要包含新的覆盖范围或提供反馈，请考虑 [提供](./CONTRIBUTING.md)。  您可以编辑现有内容、添加新内容或创建新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  工作组Microsoft Edge查看您的建议，并努力将这些建议纳入文档。  
 
-查找"状态" [页的数据](https://developer.microsoft.com/microsoft-edge/status) ，位置为  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) ：。  此页面 `Status` 提供了 Web 平台功能的最新实现状态和未来Microsoft Edge。
+查找"状态"网页 [的数据](https://developer.microsoft.com/microsoft-edge/status) ，位置为  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) ：。  网页 `Status` 提供了 Web 平台功能的最新实现状态和Microsoft Edge。
 
 ### <a name="conventions"></a>约定  
 
-*   添加页面时，必须在页面中添加一个 [toc.md，它](./microsoft-edge/toc.yml) 将显示在页面中。
+*   在添加网页时，必须在网页中添加一个 [toc.md，这样](./microsoft-edge/toc.yml) 它就会出现。
 *   目录可能包含更多目录或 `readme.md` s
 *   文件夹/目录名称是短划线分隔的 \ (例如 `f12-tools` ，\) 小写。  目录用于网站的 `docs.microsoft.com` URL。  避免使用下划线、PascalCase 或 camelCase。  
 
@@ -40,11 +39,11 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
     *   您还可以嵌套项目符号。  
     *   项目符号列表应具有多个条目。  
 *   标准排列 
-
+    
 1.  已排序列表。  
 1.  使用常规的西文编号。  
 1.  应仅在列表确实具有顺序时使用。  
-
+    
 ---  
 
 水平规则可用。  请慎用水平规则来减少混乱。  
@@ -52,7 +51,7 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 
 ### <a name="displaying-code"></a>显示代码  
 
-你可以将内联 `code` Markdown 语法 \ (backticks\) 。  
+可以使用内联 `code` markdown 语法 \ (backticks\) 。  
 
 或者，你可以显示代码块。  以下代码段是 css 示例。  
 
@@ -79,7 +78,7 @@ body {
 *   WARNING  
 *   提示  
 *   重要提示  
-
+    
 这些注释分别与以下代码段类似。  
 
 ```md
@@ -108,9 +107,9 @@ body {
 
 ```md
 > This is a line in a blockquote.  
-> My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the Markdown.  
+> My text may wrap to more than one line when the markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the markdown.  
 > This is another line in a blockquote.  
-```
+```  
 
 ### <a name="images"></a>Images  
 

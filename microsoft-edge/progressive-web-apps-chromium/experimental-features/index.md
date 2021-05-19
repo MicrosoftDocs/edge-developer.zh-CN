@@ -3,16 +3,16 @@ description: Microsoft Edge Web Apps 中的最新实验功能
 title: 实验功能|渐进式 Web 应用
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/19/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 实验， 渐进式 Web 应用， Web 应用， PWA， PWA
-ms.openlocfilehash: 641b6fd5185e7f96289c1de6482764979ee0981d
-ms.sourcegitcommit: 9cc54ba3e731ecc8b713c3cf215018848f7405b9
+ms.openlocfilehash: 4a50b925e002746357b2b770b199d84772b456f5
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "11496753"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574587"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>渐进式 Web 应用和 PBA (实验)   
 
@@ -68,7 +68,6 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  �
 | [快捷方式](#shortcuts) | 87 或更高版本 | 全部 |  
 | [文件处理](#file-handling) | 83 或更高版本 | 所有桌面 |  
 
-
 ## <a name="uri-protocol-handling"></a>URI 协议处理  
 
 统一资源标识符 \ (URI\) 可用于定义使用 HTTP 或 FTP 协议的网页和 Web 内容的链接。  URI 可用于描述指向您编成架构中任何内容的链接。  例如，协议用于描述电子邮件链接，操作系统 `mailto://` \ (OS\) 或浏览器决定哪个网页或应用应处理该协议。  
@@ -79,7 +78,7 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  �
 
 *   使用 web PWA清单向主机操作系统注册你的应用程序
 *   声明PWA处理特定 URI 协议  
-     
+    
 将 PWA 注册为协议处理程序后，当用户使用特定方案（如浏览器或本机应用）选择超链接时，操作系统将激活注册的 PWA 并接收 `mailto://` `web+music://` URI。  
 
 此功能要求你更新 Web 应用清单以在需要指定两个字段的 `protocol_handlers` 数组中包括数组：  
@@ -485,6 +484,8 @@ body {
 }
 ```  
 
+Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括代码示例），请导航到自定义窗口标题PWA[窗口控件覆盖。][WebDevWindowControlsOverlay]  
+
 ## <a name="run-on-os-login"></a>在操作系统登录时运行  
 
 此功能允许你将应用配置为在用户登录到 Microsoft Windows。  多个应用类利用此功能。  应用类包括电子邮件、聊天、监视仪表板和实时数据显示应用。  该功能允许用户在用户登录到操作系统后尽快使用应用。  此功能将自动启动PWA启动方式与手动启动方式相同。  
@@ -591,3 +592,4 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 [GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "作为 URL 处理程序的 PWA |GitHub"  
 
 [WebDevFileHandling]: https://web.dev/file-handling "让 Web 应用程序成为文件处理程序|web.dev"  
+[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "自定义窗口控件覆盖PWA标题栏|web.dev"  
