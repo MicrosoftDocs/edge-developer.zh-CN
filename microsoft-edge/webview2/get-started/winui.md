@@ -56,15 +56,15 @@ ms.locfileid: "11574580"
         <span data-ttu-id="4f515-133">使用项目创建一个新的 WinUI Visual Studio</span><span class="sxs-lookup"><span data-stu-id="4f515-133">Create a new WinUI project using Visual Studio</span></span>
     :::image-end:::  
     
-1.  <span data-ttu-id="4f515-134">Choose \*\*Blank App， Packaged (WinUI in Desktop) \*\*  >  **Next**.</span><span class="sxs-lookup"><span data-stu-id="4f515-134">Choose **Blank App, Packaged (WinUI in Desktop)** > **Next**.</span></span>  
+1.  <span data-ttu-id="4f515-134">Choose **Blank App， Packaged (WinUI in Desktop)**  >  **Next**.</span><span class="sxs-lookup"><span data-stu-id="4f515-134">Choose **Blank App, Packaged (WinUI in Desktop)** > **Next**.</span></span>  
 1.  <span data-ttu-id="4f515-135">输入项目名称。</span><span class="sxs-lookup"><span data-stu-id="4f515-135">Enter a project name.</span></span>
 1.  <span data-ttu-id="4f515-136">根据需要选择选项。</span><span class="sxs-lookup"><span data-stu-id="4f515-136">Choose options as needed.</span></span>  
 1.  <span data-ttu-id="4f515-137">选择“**创建**”。</span><span class="sxs-lookup"><span data-stu-id="4f515-137">Choose **Create**.</span></span>  
 1.  <span data-ttu-id="4f515-138">在 **"新建通用Windows平台Project**中，选择以下值，然后选择"确定 **"。**</span><span class="sxs-lookup"><span data-stu-id="4f515-138">In **New Universal Windows Platform Project**, choose the following values, and then choose **OK**.</span></span>  
     *   <span data-ttu-id="4f515-139">**目标版本\*\*\*\*：Windows 10版本 1903 (版本 18362**) 或更高版本</span><span class="sxs-lookup"><span data-stu-id="4f515-139">**Target version**:  **Windows 10, version 1903 (build 18362)** or later</span></span>  
-    *   <span data-ttu-id="4f515-140">\*\*最低版本\*\*\*\*：Windows 10版本 1803 (版本 17134) \*\*</span><span class="sxs-lookup"><span data-stu-id="4f515-140">**Minimum version**:  **Windows 10, version 1803 (build 17134)**</span></span>  
+    *   <span data-ttu-id="4f515-140">**最低版本** **：Windows 10版本 1803 (版本 17134)**</span><span class="sxs-lookup"><span data-stu-id="4f515-140">**Minimum version**:  **Windows 10, version 1803 (build 17134)**</span></span>  
         
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text=""新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="新建通用Windows平台Project对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
        <span data-ttu-id="4f515-142">"新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。</span><span class="sxs-lookup"><span data-stu-id="4f515-142">The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version.</span></span>
     :::image-end:::  
     
