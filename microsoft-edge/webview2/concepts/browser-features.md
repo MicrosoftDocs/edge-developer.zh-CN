@@ -1,5 +1,5 @@
 ---
-description： Microsoft Edge 和 WebView2 标题之间的功能差异
+description: Microsoft Edge 和 WebView2 标题之间的功能差异
 title: Microsoft Edge 和 WebView2 之间的功能差异作者
 ms.author: msedgedevrel
 ms.date: 05/06/2021
