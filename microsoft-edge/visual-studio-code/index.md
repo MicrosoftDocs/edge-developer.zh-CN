@@ -51,7 +51,7 @@ ms.locfileid: "11230689"
    :::column-end:::
 :::row-end:::  
 
-## <span data-ttu-id="49a4a-123">调试程序Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="49a4a-123">Debugger for Microsoft Edge</span></span>  
+## <a name="debugger-for-microsoft-edge"></a><span data-ttu-id="49a4a-123">调试程序Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="49a4a-123">Debugger for Microsoft Edge</span></span>  
 
 <span data-ttu-id="49a4a-124">使用[调试器 for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code 扩展，可以分行调试前端 JavaScript 代码，并直接从 Visual Studio Code `console.log()` [查看语句][VisualstudioCode]。</span><span class="sxs-lookup"><span data-stu-id="49a4a-124">With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode].</span></span>  
       
@@ -61,7 +61,7 @@ ms.locfileid: "11230689"
    <span data-ttu-id="49a4a-129">**调试器Microsoft Edge Visual Studio Code**扩展</span><span class="sxs-lookup"><span data-stu-id="49a4a-129">**Debugger for Microsoft Edge** Visual Studio Code extension in action</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="49a4a-130">Microsoft Edge工具Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="49a4a-130">Microsoft Edge Tools for Visual Studio Code</span></span>
+## <a name="microsoft-edge-tools-for-visual-studio-code"></a><span data-ttu-id="49a4a-130">Microsoft Edge工具Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="49a4a-130">Microsoft Edge Tools for Visual Studio Code</span></span>
 
 <span data-ttu-id="49a4a-131">使用[Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code 扩展，请使用 Microsoft Edge\*\*\*\* 浏览器的 Elements Visual Studio Code。</span><span class="sxs-lookup"><span data-stu-id="49a4a-131">With the [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code extension, use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.</span></span>  <span data-ttu-id="49a4a-132">用于以下操作。</span><span class="sxs-lookup"><span data-stu-id="49a4a-132">Use it for the following actions.</span></span>  
 
@@ -76,7 +76,7 @@ ms.locfileid: "11230689"
    <span data-ttu-id="49a4a-139">**Microsoft Edge工具Visual Studio Code Visual Studio Code**扩展</span><span class="sxs-lookup"><span data-stu-id="49a4a-139">**Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension in action</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="49a4a-140">webhint</span><span class="sxs-lookup"><span data-stu-id="49a4a-140">webhint</span></span>  
+## <a name="webhint"></a><span data-ttu-id="49a4a-140">webhint</span><span class="sxs-lookup"><span data-stu-id="49a4a-140">webhint</span></span>  
       
 <span data-ttu-id="49a4a-141">使用 [Webhint（][WebhintMain]一个可自定义的 Lint 工具）可改进网站的以下功能。</span><span class="sxs-lookup"><span data-stu-id="49a4a-141">Use [webhint][WebhintMain], a customizable linting tool, to improve the following functionality of your site.</span></span>  
 

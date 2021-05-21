@@ -108,7 +108,7 @@ ms.locfileid: "11327524"
 
 <span data-ttu-id="a494f-196">成功提交扩展后，扩展将经历审核过程，它将通过或不通过认证过程。</span><span class="sxs-lookup"><span data-stu-id="a494f-196">After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.</span></span>  <span data-ttu-id="a494f-197">向所有者通知结果，并按需要提供下一步步骤。</span><span class="sxs-lookup"><span data-stu-id="a494f-197">Owners are notified of the outcome and given next steps as required.</span></span>  <span data-ttu-id="a494f-198">如果向应用商店提交扩展更新，则会启动新的审阅过程。</span><span class="sxs-lookup"><span data-stu-id="a494f-198">If you submit an extension update to the store, a new review process is started.</span></span>  
 
-## <span data-ttu-id="a494f-199">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a494f-199">See also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="a494f-199">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a494f-199">See also</span></span>  
 
 *   [<span data-ttu-id="a494f-200">移植 Google Chrome 扩展</span><span class="sxs-lookup"><span data-stu-id="a494f-200">Port a Google Chrome extension</span></span>][ExtensionworkshopPorting]  
 *   [<span data-ttu-id="a494f-201">构建 Safari 应用扩展</span><span class="sxs-lookup"><span data-stu-id="a494f-201">Build a Safari App extension</span></span>][AppleDeveloperSafariservicesAppExtensionsBuilding]  
