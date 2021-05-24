@@ -363,8 +363,8 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Microsoft Edge 中的跟踪防护
           href: web-platform/tracking-prevention.md
-        - name: Microsoft Edge 用户代理字符串
-          href: web-platform/user-agent-string.md
+        - name: 如何检测网站中的 Microsoft Edge
+          href: web-platform/user-agent-guidance.md
         - name: 自定义“密码显示”按钮
           href: web-platform/password-reveal.md
     - name: “我们想要的网络”概述

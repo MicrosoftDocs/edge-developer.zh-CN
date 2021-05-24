@@ -202,8 +202,8 @@ additionalContent:
       items:
         - title: 参考
           links:
-            - text: Microsoft Edge 用户代理字符串
-              url: /microsoft-edge/web-platform/user-agent-string
+            - text: 如何检测Microsoft Edge网站中的内容
+              url: /microsoft-edge/web-platform/user-agent-guidance
             - text: 平台状态
               url: 'https://developer.microsoft.com/microsoft-edge/platform/status'
             - text: Visual Studio Code
