@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: 48af14c33a368a3449acb88b4dfb875ad5398e7a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c5a17cbc55c6ccb42e06369474cd274d70742494
+ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397914"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "11579727"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分  
   
@@ -26,7 +26,7 @@ ms.locfileid: "11397914"
 *   将内容页包含到现有浏览器选项卡中  
 *   让内容页侦听弹出窗口中的邮件并做出响应  
 
-你将了解如何更新弹出菜单，以将静态启动图像替换为标题和标准 HTML 按钮。  选中该按钮时，会将嵌入扩展中的星形图像传递给内容页。  该图像将插入到活动的浏览器选项卡中。请按照以下步骤了解更多详细信息。
+你将了解如何更新弹出菜单，以将静态星形图像替换为标题和标准 HTML 按钮。  选中该按钮时，会将嵌入扩展中的星形图像传递给内容页。  该图像将插入到活动的浏览器选项卡中。请按照以下步骤了解更多详细信息。
 
 1.  从弹出窗口中删除图像，并将其替换为按钮  
 
