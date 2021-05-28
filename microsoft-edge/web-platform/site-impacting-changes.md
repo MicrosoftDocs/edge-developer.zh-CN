@@ -3,16 +3,16 @@ description: 提供可能会影响站点兼容性的高影响更改的摘要
 title: Microsoft Edge 中影响网站兼容性的更改
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台
-ms.openlocfilehash: 810c4e0a3e4c719987fbc374330599a58f055166
-ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
+ms.openlocfilehash: 7db00ced1db767d3ec092c33369cbed1845ac65e
+ms.sourcegitcommit: dfc6bc1bad5fc9d38b6eb3bcacf9ebb317b3bdf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "11574573"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "11586202"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Microsoft Edge 中影响网站兼容性的更改  
 
@@ -34,7 +34,8 @@ Microsoft Edge项目对 Web 平台进行几乎所有上游Chromium更改。  原
 | 删除 Adobe Flash | Edge v88  |  | 此更改发生在Chromium项目上，Microsoft Edge项目。  有关详细信息，请导航到[Adobe Flash Chromium路线图][ChromiumFlashRoadmapSupportRemoved]。  | 
 | 关闭和删除 FTP | Edge v88  | Edge Beta v87 | 在 Edge Beta v87 中，FTP 支持默认处于关闭状态;在 Edge Stable v87 中保持启用状态。  在 Edge v88 中，完全删除了 FTP 支持。  此更改发生在Chromium项目上，Microsoft Edge项目。  有关详细信息，请导航到 [Chrome 平台状态条目][ChromestatusFeature6246151319715840]。  具有仍然需要 FTP 支持的网站的企业可以通过将站点配置为使用 [IE][DeployedgeEdgeIeMode]模式来继续使用 FTP。  | 
 | 自动升级混合内容图像 | Edge v88  |  | 对图像的非安全 \ (HTTP\) 会自动升级到 HTTPS;如果图像无法通过 HTTPS 访问，则图像下载将失败。 组 [策略][DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls] 可用于控制此功能。 此更改发生在Chromium项目上，Microsoft Edge项目。 有关详细信息，请导航到 [Chrome 平台状态条目][ChromestatusFeature4926989725073408]。  | 
-| 阻止第三方 Cookie 时不允许 HTTP 身份验证  | Edge v87  |  | 从 Edge v87 开始，当针对第三方请求（使用[BlockThirdPartyCookies][DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies]策略或通过边缘 设置 页面）阻止 Cookie 时，也会禁止 HTTP 身份验证。 如果托管列表的终结点Enterprise HTTP[][DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy]身份验证，此更改可能会影响Internet Explorer模式站点列表下载。  若要允许将 Cookie 和 HTTP 身份验证同时用于Enterprise站点列表下载，请向[CookiesAllowedForURLs][DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls]策略添加匹配的 URL 模式。  |   
+| 阻止第三方 Cookie 时不允许 HTTP 身份验证  | Edge v87  |  | 从 Edge v87 开始，当阻止第三方请求的 Cookie 时，使用 [BlockThirdPartyCookies][DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies] 策略或 中的开关也会禁止 `edge://settings` HTTP 身份验证。 如果托管列表的终结点Enterprise HTTP[][DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy]身份验证，此更改可能会影响Internet Explorer模式站点列表下载。  若要允许将 Cookie 和 HTTP 身份验证同时用于Enterprise站点列表下载，请向[CookiesAllowedForURLs][DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls]策略添加匹配的 URL 模式。  |
+| 在 TLS 中删除 3DES  | Edge v93  |  | 从 Edge v93 开始，将TLS_RSA_WITH_3DES_EDE_CBC_SHA密码套件的支持。 此更改发生在Chromium项目上，Microsoft Edge项目。 有关详细信息，请导航到 [Chrome 平台状态条目][ChromestatusFeature6678134168485888]。 此外，在 Edge v93 中，兼容性策略可用于支持需要保留与过时服务器的兼容性的方案。 此兼容性策略将过时，并停止在 Edge v95 中运行。 请确保在更新之前更新受影响的服务器。 |
 
 ##### <a name="release-comments"></a>发布注释  
 
@@ -70,6 +71,7 @@ Microsoft Edge项目对 Web 平台进行几乎所有上游Chromium更改。  原
 [ChromestatusFeature5088147346030592]: https://chromestatus.com/feature/5088147346030592 "Cookie 默认为 SameSite=Lax |Chrome 平台状态"  
 [ChromestatusFeature6246151319715840]: https://chromestatus.com/feature/6246151319715840 "弃用 FTP 支持|Chrome 平台状态"  
 [ChromestatusFeature6251880185331712]: https://chromestatus.com/feature/6251880185331712 "引用器策略：默认为 strict-origin-when-cross-origin |Chrome 平台状态"  
+[ChromestatusFeature6678134168485888]: https://chromestatus.com/feature/6678134168485888 "在 TLS 服务中删除 3DES |Chrome 平台状态"
 
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash 支持已从目标Chromium (：Chrome 88+ - 2021 年 1 月 2021) - Flash 路线图|Chromium项目"  
 
