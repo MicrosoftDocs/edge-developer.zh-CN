@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 74d7b61c8eca1155b545b7e81627a652bf336e66
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: d9901f9c39dabfab111eb7e0c34a3e267a317110
+ms.sourcegitcommit: 59d8043e37b89da814f63bc85daf84e0e7167eab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483070"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "11586386"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -68,7 +68,7 @@ ms.locfileid: "11483070"
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
-<gupdate xmlns='http://www.microsoft.com/update2/response' protocol='2.0'>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'>
     <updatecheck codebase='http://contoso.com/mytestextension/mte_v2.crx' version='2.0' />
   </app>
