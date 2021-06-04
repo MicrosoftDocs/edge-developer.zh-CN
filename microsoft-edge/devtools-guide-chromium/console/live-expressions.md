@@ -22,7 +22,7 @@ ms.locfileid: "11483119"
 
 To start， choose the **Create live expression** \(eye\) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。  
 
-:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择"新建实时表达式"按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择新建实时表达式按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
     选择 `New live expression` 按钮以打开文本框以键入表达式  
 :::image-end:::  
 

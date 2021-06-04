@@ -255,7 +255,7 @@ DevTools 中的图像预览已增强，可显示更多信息，包括以下详�
     
 若要在开放源代码项目中查看此功能的历史记录，Chromium问题 [1162042][CR1162042]。  
 
-:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新增更多网络条件...按钮将打开"网络条件"工具以配置内容编码" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
+:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新增更多网络条件...按钮将打开网络条件工具以配置内容编码" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    新建 **更多网络条件...** 按钮将打开 **网络条件** 工具进行配置 `Content-Encoding`  
 :::image-end:::  
 

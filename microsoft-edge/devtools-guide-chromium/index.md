@@ -110,7 +110,7 @@ DevTools 为您提供了一项令人惊叹的功能，可以检查、调试和�
 
 DevTools 在几年内逐渐增加。  你可能假设首次打开任何工具时很难了解 DevTools。  以下文本快速介绍了不同的部分。  主工具栏为您提供了一些部分，这些部分按从左到右的顺序排序。  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。  顺序：检查工具、设备仿真工具、"工具"选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。" lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。  顺序：检查工具、设备仿真工具、工具选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。" lightbox="./media/devtools-intro-menu-bar.msft.png":::  
    包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。  顺序：检查工具、设备仿真工具、"工具"选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。  
 :::image-end:::  
 

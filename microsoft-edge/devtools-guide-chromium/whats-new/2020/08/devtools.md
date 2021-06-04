@@ -173,7 +173,7 @@ The current effort to improve translation quality enables easier support for mor
 
 感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开放[#1103316][CR1103316]中的问题Chromium问题。  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的"元素"Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的元素Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
    在 84 或更高版本中的 **"** 元素"Microsoft Edge突出显示第一个搜索结果  
 :::image-end:::  
 

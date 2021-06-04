@@ -262,7 +262,7 @@ li a {
 1.  导航到实时 **选项卡**。  
 1.  选择 **"联系人** "链接返回到联系人页面。  现在， **联系我！** 具有与导航链接相同的字体。  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与"主页"和"联系人"链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与主页和联系人链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
        文本" **联系我"！** 现在字体与 **"主页"** 和 **"联系人"** 链接相同  
     :::image-end:::  
     

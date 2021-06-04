@@ -115,7 +115,7 @@ ms.locfileid: "11564663"
     
 ### <a name="set-up-devtools"></a>设置 DevTools  
 
-1.  选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 打开 DevTools**** 的控制台面板。  
+1.  选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 打开 DevTools 的控制台面板。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        控制台**面板**  
@@ -231,7 +231,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  选择 `Control` + `P` \(Windows、Linux\) 或 `Command` + `P` \(macOS\) 打开 **"打开文件"** 对话框。  查看下图。  
 1.  键入 `script` ，然后选择 **"app/script.js"。 **  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件"对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        使用 `script.js` "打开 **文件"对话框** 打开  
     :::image-end:::  
     

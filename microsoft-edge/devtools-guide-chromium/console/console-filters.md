@@ -52,7 +52,7 @@ ms.locfileid: "11483367"
 
 [正则表达式是][MdnDocsWebJavascriptGuideRegularExpressions] 筛选邮件的一种强大方法。  例如，在 `/^Tracking/` **筛选器文本框中** 键入以仅显示以术语 开始的邮件 `Tracking` 。  如果你不熟悉正则表达式 [，RegExr][|::ref1::|Main] 是了解使用正则表达式的一个很好的资源。
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用"筛选器"文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用筛选器文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
     使用"筛选器"文本框 `filter` 中的正则表达式显示以 **单词开始** 的邮件  
 :::image-end:::  
 

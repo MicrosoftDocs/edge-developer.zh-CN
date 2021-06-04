@@ -47,7 +47,7 @@ DevTools Microsoft Edge中的问题工具可以减少控制台的通知疲劳和
        :::column span="":::
           选择黄色 **警告栏中** 的"转到问题"按钮。  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时转到黄色警告栏中的"问题"按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时转到黄色警告栏中的问题按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
              检测到 **问题时** ，黄色警告栏中的"转到问题"按钮。  
           :::image-end:::  
        :::column-end:::
@@ -62,13 +62,13 @@ DevTools Microsoft Edge中的问题工具可以减少控制台的通知疲劳和
     
 1.  如有必要 **，选择"重新加载** 页面"按钮。  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的"问题"工具（具有"重新加载"页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的问题工具（具有重新加载页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
        **DevTools** Drawer 中的"问题"工具（ **具有"重新加载"页面按钮** ）  
     :::image-end:::  
 
     控制台中报告 **的问题很难** 理解，如下图中的 Cookie 警告。  根据报告的问题，可能不清楚必须执行哪些工作。  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools 箱中具有三个 Cookie 问题的"问题"工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools 箱中具有三个 Cookie 问题的问题工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
        **DevTools** 箱中具有三个 Cookie 问题的"问题"工具  
     :::image-end:::  
     

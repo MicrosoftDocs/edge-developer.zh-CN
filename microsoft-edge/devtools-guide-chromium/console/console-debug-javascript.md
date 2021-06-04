@@ -78,7 +78,7 @@ ms.locfileid: "11483348"
         :::image-end:::  
     :::column-end:::
     :::column:::
-        :::image type="complex" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="检查"网络"工具中的标头可能会提供更多信息" lightbox="../media/console-debug-network-error-network-detail.msft.png":::
+        :::image type="complex" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="检查网络工具中的标头可能会提供更多信息" lightbox="../media/console-debug-network-error-network-detail.msft.png":::
            检查" **网络"工具** 中的标头可能会提供更多信息  
         :::image-end:::  
     :::column-end:::

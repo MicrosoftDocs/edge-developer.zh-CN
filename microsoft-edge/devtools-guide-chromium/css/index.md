@@ -62,7 +62,7 @@ ms.locfileid: "11564446"
         
     1.  在 `aloha` 类中，查找样式的值 `padding` 并复制它。  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在"样式"面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在样式面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            CSS 类应用于选定的元素，例如 ， `aloha` 显示在" **样式"** 面板中  
         :::image-end:::  
         
@@ -81,7 +81,7 @@ ms.locfileid: "11564446"
 1.  键入 `background-color` 并选择 `Enter`。  
 1.  键入 `honeydew` 并选择 `Enter`。  在 **DOM 树中**，将显示应用于元素的内联样式声明。  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用"样式"面板向 元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用样式面板向 元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        使用 `background-color:honeydew` "样式"面板的 部分 `element.style` 将声明 **应用于** 元素  
     :::image-end:::  
     

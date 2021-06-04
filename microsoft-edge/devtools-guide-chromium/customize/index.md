@@ -56,7 +56,7 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 
 默认情况下，某些工具在主面板中打开，而其他工具显示在"箱 **"中**。  选择 **"更多** \(`...` \) "以在"箱"中打开 **工具**。  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开"箱"的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开箱的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    用于打开"箱 **"的按钮**  
 :::image-end:::  
 
@@ -64,7 +64,7 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 
 *   若要将工具从工具箱移动到主面板，请将鼠标悬停在工具上，打开上下文菜单 \(右键单击\) 然后选择"移动到**顶部"。**  
     
-    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="将工具从"箱"移到主面板" lightbox="../media/move-from-drawer.msft.png":::
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="将工具从箱移到主面板" lightbox="../media/move-from-drawer.msft.png":::
        将工具从 **"箱"** 移到主面板  
     :::image-end:::  
     

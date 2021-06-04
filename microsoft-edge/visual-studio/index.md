@@ -111,13 +111,13 @@ start msedge –remote-debugging-port=9222
 
 从Visual Studio，**打开"调试**"菜单并选择 **"附加到进程"或**选择 `Ctrl` + `Alt` + `P` 。  
 
-:::image type="complex" source="./media/attach-to-process.png" alt-text="选择"附加到进程"Visual Studio" lightbox="./media/attach-to-process.png":::
+:::image type="complex" source="./media/attach-to-process.png" alt-text="选择附加到进程Visual Studio" lightbox="./media/attach-to-process.png":::
    选择 **"附加到进程** "Visual Studio  
 :::image-end:::  
 
 从附加到**进程对话框中**，将**连接**类型设置为**Chrome devtools 协议 websocket (无身份验证) 。 **  在" **连接目标** "文本框中，键入 `http://localhost:9222/` 并选择 `Enter` 。  查看"附加到进程"对话框中列出的 Microsoft Edge 中已打开的 **选项卡** 列表。  
 
-:::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置"附加到进程"对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
+:::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置附加到进程对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
    Configure the **Attach to Process** dialog in Visual Studio  
 :::image-end:::  
 

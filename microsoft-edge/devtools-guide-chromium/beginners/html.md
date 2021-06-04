@@ -188,7 +188,7 @@ ms.locfileid: "11564565"
 
 1.  导航到实时 **选项卡**。 在页面底部，显示 `A new element!?!` 文本。  
     
-    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="在页面底部，文本为"新元素!?! 显示" lightbox="../media/beginners-html-dom1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="在页面底部，文本为新元素!?! 显示" lightbox="../media/beginners-html-dom1.msft.png":::
        在页面底部显示 `A new element!?!` 文本  
     :::image-end:::  
     

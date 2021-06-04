@@ -300,7 +300,7 @@ Chromium问题[#985402][CR985402]
    禁用**允许滚动到文件末尾设置**  
 :::image-end:::  
 
-:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在"源"面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
+:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在源面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
    滚动过文件末尾现在在"源"面板中处于禁用状态  
 :::image-end:::  
 
