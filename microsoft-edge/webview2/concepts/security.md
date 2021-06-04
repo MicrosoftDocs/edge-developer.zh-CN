@@ -26,7 +26,7 @@ ms.locfileid: "11119000"
 1.  设置以下选项，通过修改 [Win32 (或 CoreWebView2Settings) ICoreWebView2Settings ][Webview2ReferenceWin32Icorewebview2settings] [ (.NET) 来 ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]限制 Web 内容 A2.NET) 。  
     *   如果您 `AreHostObjectsAllowed` `false` 不期望 Web 内容访问主机对象，则设置为 。  
     *   如果预计 Web 内容不会向本机应用程序发布 Web 消息 `IsWebMessageEnabled` `false` ，则设置为 。  
-    *   设置为 ，如果您不期望 Web 内容运行脚本 `IsScriptEnabled` `false` \ (例如，当显示静态 html content\) 。  
+    *   设置为 ，如果您不期望 Web 内容运行脚本 `IsScriptEnabled` `false` \(例如，当显示静态 html content\) 。  
     *   如果 `AreDefaultScriptDialogsEnabled` `false` 预计 Web 内容不会显示或对话框，则设置为 `alert` `prompt` 。  
 1.  在以下步骤中，使用 `NavigationStarting` 和 `FrameNavigationStarting` 事件根据新页面的来源更新设置。  
     1.  若要阻止应用程序导航到特定页面，请使用事件检查然后阻止页面或框架导航。  

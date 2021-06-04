@@ -176,7 +176,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 6. 添加 jQuery 并理解关联的线程  
 
-在你要注入的内容脚本中，计划使用 jQuery \ (`$` \) 。  你添加了 jQuery 的缩小版本，并作为 放入扩展包 `lib\jquery.min.js` 中。  这些内容脚本在单个沙盒中运行，这意味着注入到页面中的 jQuery `popup.js` 不会与内容共享。  
+在你要注入的内容脚本中，计划使用 jQuery \(`$` \) 。  你添加了 jQuery 的缩小版本，并作为 放入扩展包 `lib\jquery.min.js` 中。  这些内容脚本在单个沙盒中运行，这意味着注入到页面中的 jQuery `popup.js` 不会与内容共享。  
 
 请记住，即使浏览器选项卡上的 JavaScript 在加载的网页上运行，注入的任何内容也无法访问它。  注入的 JavaScript 仅有权访问该浏览器选项卡中加载的实际 DOM。  
 
@@ -213,7 +213,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 *   第一个脚本行将一个必须作为类分配给元素的节动态插入到 DOM **\<style\>** `slide-image` 标头 `img` 中。  
 *   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该 `slide-image` `imageDivId` 图像元素的 ID。  
-*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面 \ (以及事件侦听器 `click` \) 。  
+*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面 \(以及事件侦听器 `click` \) 。  
 
 8. 添加功能以在选中时删除显示的图像  
 

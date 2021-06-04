@@ -35,7 +35,7 @@ ms.locfileid: "11564768"
 
 ## <a name="object-sizes"></a>对象大小  
 
-将内存视为包含基元类型 \ (如数字和字符串\) 和对象 \ (associative arrays\) 。  它可能会显示为具有许多互连点的图形，如下图所示。  
+将内存视为包含基元类型 \(如数字和字符串\) 和对象 \(associative arrays\) 。  它可能会显示为具有许多互连点的图形，如下图所示。  
 
 :::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="内存的视觉表示形式" lightbox="../media/memory-problems-thinkgraph.msft.png":::
    内存的视觉表示形式  
@@ -46,7 +46,7 @@ ms.locfileid: "11564768"
 *   直接由 对象。  
 *   隐式保留对其他对象的引用，从而阻止垃圾收集器自动释放这些对象。  
 
-当使用 DevTools \ (中的内存面板时，你可能会发现自己正在查看一些不同的信息列。使用该工具可调查 Memory **\) **下发现的内存问题。 [][DevtoolsMemoryProblemsHeapSnapshots]  两个突出的项是 **浅** 表大小和 **保留大小**，但这表示什么？  
+当使用 DevTools \(中的内存面板时，你可能会发现自己正在查看一些不同的信息列。使用该工具可调查 Memory **\) **下发现的内存问题。 [][DevtoolsMemoryProblemsHeapSnapshots]  两个突出的项是 **浅** 表大小和 **保留大小**，但这表示什么？  
 
 :::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="浅表和保留大小" lightbox="../media/memory-problems-shallow-retained.msft.png":::
    浅表和保留大小  
@@ -68,7 +68,7 @@ ms.locfileid: "11564768"
 
 存在大量内部垃圾回收器根，其中大多数对用户不感兴趣。  从应用程序的角度来看，有以下类型的根。  
 
-*   窗口全局对象 \ (iframe\) 。  在堆快照中，字段指示窗口最短保留 `distance` 路径上的属性引用数。  
+*   窗口全局对象 \(iframe\) 。  在堆快照中，字段指示窗口最短保留 `distance` 路径上的属性引用数。  
 *   文档 DOM 树，由通过遍历文档可到达的所有本机 DOM 节点组成。  并非所有节点都有 JavaScript 包装器，但如果节点有包装器，则节点在文档处于活动状态时处于活动状态。  
 *   有时对象由源工具和控制台中的调试上下文保留，**** 例如控制台评估之后****。  使用清除的控制台工具 **创建** 堆快照，在"源"工具的调试器中没有活动的 **断** 点。
 
@@ -90,7 +90,7 @@ ms.locfileid: "11564768"
 
 堆是互连对象的网络。  在数学世界，此结构称为 **图形或** 内存图。  图形由**通过边缘连接的**节点构造，两者都是**** 给定的标签。  
 
-*   **节点**\ (**或对象**\) 标有用于生成节点的构造函数函数的名称****。  
+*   **节点**\(**或对象**\) 标有用于生成节点的构造函数函数的名称****。  
 *   **边缘** 使用属性 的名称 **标记**。  
 
 了解如何 [使用堆配置文件器记录配置文件][DevtoolsMemoryProblemsHeapSnapshots]。  在下图中，内存工具中堆快照记录中的一些 [值得注意的事项包括][DevtoolsMemoryProblemsHeapSnapshots] 距离：垃圾回收器根之间的距离。  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，则值得调查。  
@@ -123,21 +123,21 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 ## <a name="v8-specifics"></a>V8 特定内容  
 
-分析内存时，了解堆快照为何以特定方式显示非常有用。  本节介绍一些与内存相关的主题，这些主题专门与 **V8 JavaScript** 虚拟机 \ (V8 VM 或 VM\) 。  
+分析内存时，了解堆快照为何以特定方式显示非常有用。  本节介绍一些与内存相关的主题，这些主题专门与 **V8 JavaScript** 虚拟机 \(V8 VM 或 VM\) 。  
 
 ### <a name="javascript-object-representation"></a>JavaScript 对象表示形式  
 
 有三种基元类型：  
 
-*   数字 \ (例如 `3.14159...` \)   
-*   布尔值 \ (`true` `false` 或 \)   
-*   字符串 \ (例如 `"Werner Heisenberg"` \)   
+*   数字 \(例如 `3.14159...` \)   
+*   布尔值 \(`true` `false` 或 \)   
+*   字符串 \(例如 `"Werner Heisenberg"` \)   
 
 基元无法引用其他值，并且始终是叶节点或终止节点。  
 
 **数字** 可以存储为：  
 
-*   称为小整数 **\ (** **SMI**s\) 的直接 31 位整数值，或  
+*   称为小整数 **\(** **SMI**s\) 的直接 31 位整数值，或  
 *   堆对象，称为 **堆数**。 堆编号用于存储不适合 SMI 表单的值（如双精度数）或需要对**** 值进行装箱时（例如设置其属性）。 ****  
 
 **字符串** 可以存储在：  
@@ -145,7 +145,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 *   **VM 堆**， 或
 *   在呈现 **器的内存外部**。  创建 **包装** 对象并用于访问外部存储，例如，存储从 Web 接收的脚本源和其他内容，而不是复制到 VM 堆。
 
-新 JavaScript 对象的内存从专用 JavaScript 堆 \ (**或 VM 堆**\) 。  这些对象由 V8 中的垃圾回收器管理，因此，只要至少有一个强引用，它们就保持活动状态。  
+新 JavaScript 对象的内存从专用 JavaScript 堆 \(**或 VM 堆**\) 。  这些对象由 V8 中的垃圾回收器管理，因此，只要至少有一个强引用，它们就保持活动状态。  
 
 不在 JavaScript 堆中任何内容都称为 **本机对象**。  与堆对象相反，本机对象在生命周期内不由 V8 垃圾回收器管理，并且只能使用 JavaScript 包装对象从 JavaScript 访问。  
 
@@ -185,7 +185,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) ，由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) ，由 [Meggin Kearney][MegginKearney] \(Technical Writer\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

@@ -80,7 +80,7 @@ ms.locfileid: "11564404"
 
 使用“**设备类型**”列表模拟移动设备或桌面设备。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="“设备类型”列表" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="设备类型列表" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
    “**设备类型**”列表  
 :::image-end:::  
 
@@ -152,7 +152,7 @@ ms.locfileid: "11564404"
 
 1.  选择“**设备**”列表>“**编辑**”。  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="选择“编辑”" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="选择编辑" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
        选择“**编辑**”  
     :::image-end:::  
     
@@ -218,7 +218,7 @@ ms.locfileid: "11564404"
 1.  选择“**性能**”面板，然后选择“**捕获设置**”\（![捕获设置](../media/capture-settings-icon.msft.png)\）。
 1.  选择 **CPU**  > **速度降低至 1/4**** 1/6**。
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="“性能”面板中的“CPU”列表" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="性能面板中的CPU列表" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
        “**性能**”面板中的“**CPU**”列表  
     :::image-end:::  
     
@@ -229,7 +229,7 @@ ms.locfileid: "11564404"
 1.  选择“**网络**”工具。
 1.  选择“**联机**” > “**快速 3G**”或“**慢速 3G**”。
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="“网络”面板中的“限制”列表" lightbox="../media/device-mode-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表" lightbox="../media/device-mode-network-throttle.msft.png":::
        “网络”面板中的“**限制**”列表  
     :::image-end:::  
     
@@ -243,7 +243,7 @@ ms.locfileid: "11564404"
 
 1.  选择“**捕获设置**”\（![捕获设置](../media/capture-settings-icon.msft.png)\），然后选择“**网络**”列表，并将预设更改为“**快速 3G**”或“**慢速 3G**”。  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从“性能”面板设置网络限制" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从性能面板设置网络限制" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        从“**性能**”面板设置网络限制  
     :::image-end:::  
     
@@ -272,7 +272,7 @@ ms.locfileid: "11564404"
 
 在“**传感器**”面板上，可以使用“**位置**”下拉菜单选择 DevTools 中包含的预设位置之一。  若要输入自定义位置，请选择“**其他...**”， 然后输入自定义位置的坐标。  若要在位置信息不可用时在错误状态下测试页面，请选择“**位置不可用**”。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的“传感器”面板" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的传感器面板" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
     已选择预设位置的“**传感器**”面板。  
 :::image-end:::
 
@@ -301,7 +301,7 @@ ms.locfileid: "11564404"
 
 在“**传感器**”面板上，可以从“**方向**”下拉菜单中选择预设方向。  若要输入自己的方向，请选择“**自定义方向**”，然后输入自己的 [alpha][MDNDeviceOrientaitonAlpha]、 [beta][MDNDeviceOrientaitonBeta]和 [gamma][MDNDeviceOrientaitonGamma] 值。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="“传感器”面板上的方向选项" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="传感器面板上的方向选项" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
     “**传感器**”面板上的**方向**选项  
 :::image-end:::  
 
@@ -313,7 +313,7 @@ ms.locfileid: "11564404"
       
       1.  选择“**自定义和控制 DevTools**”\(`...`\) >“**更多工具**” > “**网络条件**”。  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="“更多工具”菜单中的“网络条件”条目" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="更多工具菜单中的网络条件条目" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          “**更多工具**”菜单中的“**网络条件**”条目  
       :::image-end:::  
    :::column-end:::

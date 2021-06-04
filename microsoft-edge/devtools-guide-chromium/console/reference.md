@@ -53,7 +53,7 @@ ms.locfileid: "11564523"
 
 ### <a name="open-the-console-tool-in-the-drawer"></a>打开工具箱中的控制台工具  
 
-选择 `Esc` 或选择 **"自定义和控制 DevTools** \ (`...` \) "，然后选择"显示控制台**箱"。**  
+选择 `Esc` 或选择 **"自定义和控制 DevTools** \(`...` \) "，然后选择"显示控制台**箱"。**  
 
 :::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="显示控制台工具箱" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **显示控制台工具箱**  
@@ -67,13 +67,13 @@ ms.locfileid: "11564523"
 
 若要从命令**菜单**打开控制台工具[][DevtoolsCommandMenuIndex]，请键入 ，然后运行旁边有"箱"锁屏提醒的"显示 `Console` 控制台"命令。 **** ****  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在"箱"中显示 **Console** 工具" lightbox="../media/console-command-menu-show-console.msft.png":::
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在箱中显示 **Console** 工具" lightbox="../media/console-command-menu-show-console.msft.png":::
    运行命令以在"箱 **"** 中显示控制台 **工具**  
 :::image-end:::  
 
 ### <a name="open-console-settings"></a>打开控制台设置  
 
-Choose the **Console 设置**\ (Console 设置 ![ icon ](../media/settings-button-icon.msft.png) \) button.  
+Choose the **Console 设置**\(Console 设置 ![ icon ](../media/settings-button-icon.msft.png) \) button.  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **控制台设置**  
@@ -92,7 +92,7 @@ Choose the **Console 设置**\ (Console 设置 ![ icon ](../media/settings-butto
     
 ### <a name="open-the-console-sidebar"></a>打开控制台边栏  
 
-若要显示 **边栏**，请选择显示 **控制台边** 栏 \ (![ 显示控制台边栏 ](../media/show-console-sidebar-icon.msft.png) \) 。  **边栏**可帮助你进行筛选。  
+若要显示 **边栏**，请选择显示 **控制台边** 栏 \(![ 显示控制台边栏 ](../media/show-console-sidebar-icon.msft.png) \) 。  **边栏**可帮助你进行筛选。  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="控制台边栏" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **控制台边栏**  
@@ -168,7 +168,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 若要筛选邮件，请选择" **日志级别** "下拉列表，然后选择 `Verbose` `Info` 、、 `Warning` 或 `Error` 。  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="“日志级别”下拉列表" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="日志级别下拉列表" lightbox="../media/console-log-level-default-levels.msft.png":::
    “**日志级别**”下拉列表  
 :::image-end:::  
 
@@ -248,7 +248,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 **"JavaScript**上下文"下拉列表的默认选项位于**顶部**，它表示主[网页的浏览][MdnDocsGlossaryBrowsingContext]上下文。  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="“JavaScript 上下文”下拉列表" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="JavaScript 上下文下拉列表" lightbox="../media/console-dom-level-top.msft.png":::
    “**JavaScript 上下文**”下拉列表  
 :::image-end:::  
 
@@ -262,8 +262,8 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 若要清除 **控制台**，请完成以下任何工作流。  
 
-*   选择" **清除控制台** \ (![ 清除控制台 ](../media/clear-console-button-icon.msft.png) \) "按钮。  
-*   将鼠标悬停在消息上，打开上下文菜单 \ (右键单击\) ，然后选择"清除**控制台"。**  
+*   选择" **清除控制台** \(![ 清除控制台 ](../media/clear-console-button-icon.msft.png) \) "按钮。  
+*   将鼠标悬停在消息上，打开上下文菜单 \(右键单击\) ，然后选择"清除**控制台"。**  
 *   在**控制台**中输入 `clear()`，然后选择 `Enter`。  
 *   从 JavaScript 中为你的网页运行 `console.clear()`。  
 *   在聚焦**控制台**时选择 `Control`+`L`。  

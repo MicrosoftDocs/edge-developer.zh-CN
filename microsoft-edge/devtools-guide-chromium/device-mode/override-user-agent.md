@@ -40,7 +40,7 @@ ms.locfileid: "11564292"
 1.  键入 `network conditions` ，选择 **"显示网络条件**"，然后选择 `Enter` 以打开 **"网络条件"** 工具。  
 1.  在" **用户代理"** 部分，关闭" **自动选择"** 复选框。  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭"自动选择"" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭自动选择" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
        关闭" **自动选择"**  
     :::image-end:::  
     

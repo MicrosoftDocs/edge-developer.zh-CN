@@ -52,7 +52,7 @@ ms.locfileid: "11535704"
    :::column-end:::
 :::row-end:::
 
-使用导航 ID \ (`NavigationId` event\) 跟踪每个新文档的导航事件。  每次 `NavigationId` 成功导航到新文档时，WebView 事件都会更改。  
+使用导航 ID \(`NavigationId` event\) 跟踪每个新文档的导航事件。  每次 `NavigationId` 成功导航到新文档时，WebView 事件都会更改。  
 
  具有不同事件实例的 `NavigationId` 导航事件可能会重叠。  例如，启动导航事件时，必须等待相关 `NavigationStarting` 事件。  如果随后启动另一个导航，则应该会看到第一个导航的事件，后跟第二个导航的事件，然后是第一个导航的事件，然后是第二个导航的所有其他相应导航事件。 `NavigationStarting` `NavigationStarting` `NavigationCompleted`  
  

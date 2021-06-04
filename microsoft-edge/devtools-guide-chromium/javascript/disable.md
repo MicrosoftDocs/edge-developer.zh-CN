@@ -42,13 +42,13 @@ ms.locfileid: "11564159"
     
 1.  开始键入 ， `javascript` 选择 **"禁用 JavaScript"，** 然后选择 `Enter` 运行命令。  JavaScript 现已禁用。  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择"禁用 JavaScript"" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择禁用 JavaScript" lightbox="../media/javascript-console-command-javascript.msft.png":::
        在 **命令菜单中选择** "禁用 **JavaScript"**  
     :::image-end:::  
     
     源旁边的黄色 **警告图标提醒** 你 JavaScript 已禁用。  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text=""源"旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="源旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        "源"旁边的警告 **图标**  
     :::image-end:::  
     

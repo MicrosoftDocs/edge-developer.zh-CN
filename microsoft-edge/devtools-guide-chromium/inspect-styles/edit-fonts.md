@@ -32,12 +32,12 @@ ms.locfileid: "11439491"
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/font-editor-icon.msft.png" alt-text="“样式”窗格中用于编辑字体设置的图标" lightbox="../media/font-editor-icon.msft.png":::
+      :::image type="complex" source="../media/font-editor-icon.msft.png" alt-text="样式窗格中用于编辑字体设置的图标" lightbox="../media/font-editor-icon.msft.png":::
          “**样式**”窗格中用于编辑字体设置的图标  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开" lightbox="../media/font-editor-open.msft.png":::
+      :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="字体编辑器在样式窗格顶部打开" lightbox="../media/font-editor-open.msft.png":::
          “**字体编辑器**”在“**样式**”窗格顶部打开  
       :::image-end:::  
    :::column-end:::
@@ -51,7 +51,7 @@ ms.locfileid: "11439491"
 
 “字体系列”选择器位于可视“**字体编辑器**”的上部。  若要选择 CSS 规则的字体，请在 CSS 编辑器中使用“**字体系列**”选择器。  可为每个 CSS 规则选择主字体和回退字体。  
 
-:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开，突出显示“字体系列”选择器" lightbox="../media/font-editor-font-family.msft.png":::
+:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="字体编辑器在样式窗格顶部打开，突出显示字体系列选择器" lightbox="../media/font-editor-font-family.msft.png":::
    “**字体编辑器**”在“**样式**”窗格顶部打开，突出显示“**字体系列**”选择器  
 :::image-end:::  
 
@@ -62,7 +62,7 @@ ms.locfileid: "11439491"
 1.  常规字体系列，如 `serif` 或 `sans-serif`。  
 1.  全局值，如 `inherit`、`initial` 和 `unset`。  
     
-:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开，突出显示“字体系列”选择器" lightbox="../media/font-editor-font-family-list.msft.png":::
+:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="字体编辑器在样式窗格顶部打开，突出显示字体系列选择器" lightbox="../media/font-editor-font-family-list.msft.png":::
    “**字体编辑器**”在“**样式**”窗格顶部打开，突出显示“**字体系列**”选择器  
 :::image-end:::  
 
@@ -79,7 +79,7 @@ ms.locfileid: "11439491"
 
 可在可视“**字体编辑器**”的下部更改 CSS 字体属性。  可使用任何用户界面控件更改字体大小、线条高度、字体粗细和字母间距。  所做的更改将立即在浏览器中应用。  
 
-:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开，突出显示 CSS 属性" lightbox="../media/font-editor-css-properties.msft.png":::
+:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="字体编辑器在样式窗格顶部打开，突出显示 CSS 属性" lightbox="../media/font-editor-css-properties.msft.png":::
    “**字体编辑器**”在“**样式**”窗格顶部打开，突出显示 CSS 属性  
 :::image-end:::  
 

@@ -66,7 +66,7 @@ ms.locfileid: "11398453"
 > [!NOTE]
 > 1.  如果配置中没有任何Visual Studio Code，请完成以下操作之一。  
 >     *   选择 `F5`。  
->     *   选择" **播放** \ (绿色\) 按钮。  
+>     *   选择" **播放** \(绿色\) 按钮。  
 > 1.  在下拉列表中 **，选择下拉列表** 中的"边缘"。  
 > 1.  `launch.json`应显示包含以下配置的文件。  
 >     
@@ -88,7 +88,7 @@ ms.locfileid: "11398453"
 
 1.  若要从"**元素"Visual Studio Code，** 请完成以下操作之一。 
     *   选择 `F5`。  
-    *   选择" **播放** \ (绿色\) 按钮。  
+    *   选择" **播放** \(绿色\) 按钮。  
          
 现在，您可以执行以下操作。  
 
@@ -99,7 +99,7 @@ ms.locfileid: "11398453"
 
 若要打开浏览器并将实例附加到Visual Studio Code，请完成以下步骤。 
 
-1.  若要打开 \Microsoft Edge \ (Chromium\) 的实例，请复制并运行以下命令。  
+1.  若要打开 \Microsoft Edge \(Chromium\) 的实例，请复制并运行以下命令。  
     
     ```shell
     start msedge --remote-debugging-port=9222
@@ -121,7 +121,7 @@ ms.locfileid: "11398453"
 1.  In Visual Studio Code， open the **Debugger** drop-down menu and choose **Attach to Microsoft Edge and open the developer tools**.  
 1.  若要从"**元素"Visual Studio Code，** 请完成以下操作之一。 
     *   选择 `F5`。  
-    *   选择" **播放** \ (绿色\) 按钮。  
+    *   选择" **播放** \(绿色\) 按钮。  
          
 现在，您可以执行以下操作。  
 

@@ -23,12 +23,12 @@ ms.locfileid: "11343057"
 
 ## 开始之前  
 
-如果你没有帐户，或者如果你有合作伙伴中心的现有商业帐户，请创建一个新的 Microsoft 帐户[ (MSA) ][WindowsCommunityEverythingAboutMicrosoftAccounts]注册到 Microsoft Edge 计划。  若要创建 Microsoft 帐户 \ (Outlook/live/Hotmail\) ，请完成以下操作。  
+如果你没有帐户，或者如果你有合作伙伴中心的现有商业帐户，请创建一个新的 Microsoft 帐户[ (MSA) ][WindowsCommunityEverythingAboutMicrosoftAccounts]注册到 Microsoft Edge 计划。  若要创建 Microsoft 帐户 \(Outlook/live/Hotmail\) ，请完成以下操作。  
 
 1.  导航到 [account.microsoft.com][MicrosoftAccount]。  
 1.  选择 **"创建 Microsoft 帐户"。**  
     
-如果你在合作伙伴中心注册了开发人员帐户，请使用相应的 Microsoft 帐户 \ (MSA\) 登录到你的开发人员帐户，然后注册 Microsoft Edge 计划。  
+如果你在合作伙伴中心注册了开发人员帐户，请使用相应的 Microsoft 帐户 \(MSA\) 登录到你的开发人员帐户，然后注册 Microsoft Edge 计划。  
 
 > [!NOTE]
 > 如今，Microsoft Edge不支持使用工作或学校帐户注册。  将来，Microsoft Edge扩展团队计划支持将 Azure AD 租户链接到 MSA 帐户进行扩展管理。  

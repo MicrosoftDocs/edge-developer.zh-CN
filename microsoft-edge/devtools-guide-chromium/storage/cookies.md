@@ -42,7 +42,7 @@ ms.locfileid: "11565055"
 
 1.  在“**存储**“下，展开 “**Cookie**”，然后选择一个源。  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="“Cookie”窗格" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Cookie窗格" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        图 2：“Cookie” 窗格  
     :::image-end:::  
 

@@ -41,7 +41,7 @@ ms.locfileid: "11564845"
 
 若要启用试验，请导航至“[启用试验功能][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools：焦点模式 UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]。  
 
-:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示“活动栏”" lightbox="../../media/2021/02/focus-mode.msft.png":::
+:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示活动栏" lightbox="../../media/2021/02/focus-mode.msft.png":::
    显示“**活动栏**”  
 :::image-end:::  
 
@@ -52,7 +52,7 @@ ms.locfileid: "11564845"
 
 DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  选择“**活动栏**”底部的“帮助”(`?`) 图标，以便在 DevTools 中切换工具提示。  当工具提示打开时，请将鼠标悬停在 DevTools 的每个概述区域上，以了解有关如何使用工具的更多信息。  若要启用试验，请导航至“[启用试验功能][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools：焦点模式 UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]。  
 
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="选择“活动栏”中的“帮助”(?) 图标以显示工具提示" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="选择活动栏中的帮助(?) 图标以显示工具提示" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
    选择“**活动栏**”中的“帮助”(`?`) 图标以显示工具提示  
 :::image-end:::  
 
@@ -126,7 +126,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="“布局”窗格中的“弹性框”部分" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="布局窗格中的弹性框部分" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
          “**布局**”窗格中的“**弹性框**”部分  
       :::image-end:::  
    :::column-end:::
@@ -168,7 +168,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="从 Microsoft Edge 90 开始，如果你选择控制台边栏并将鼠标悬停在“默认级别”上，它不会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
+      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="从 Microsoft Edge 90 开始，如果你选择控制台边栏并将鼠标悬停在默认级别上，它不会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
          从 Microsoft Edge 90 开始，如果你选择**控制台边栏**并将鼠标悬停在“**默认级别**”上，它不会突出显示  
       :::image-end:::  
    :::column-end:::
@@ -209,7 +209,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 现在，“**控制台**”现在将显示更详细的[渐进式 Web 应用 (PWA)][ProgressiveWebAppsIndex] 可安装性警告消息，其中包含指向“[改进渐进式 Web 应用脱机支持检测][ChromeDeveloperBlogImprovedPwaOfflineDetection]”的链接。  
 
-:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="“控制台”工具中的 PWA 可安装性警告" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
+:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="控制台工具中的 PWA 可安装性警告" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
    “**控制台**”工具中的 PWA 可安装性警告  
 :::image-end:::  
 
@@ -236,12 +236,12 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="在上下文菜单中，选择“远程地址空间”" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="在上下文菜单中，选择远程地址空间" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
          在上下文菜单中，选择“**远程地址空间**”  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="“请求”表现在显示“远程地址空间”列" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="请求表现在显示远程地址空间列" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
          “请求”表现在显示“**远程地址空间**”列 :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -258,7 +258,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 “**应用程序**”工具中的“**Cookie**”窗格现在显示每个 Cookie 的 `SameParty` 属性。  `SameParty` 属性是一个新的布尔属性，用于指示在对相同[第一方集][GithubPrivacycgFirstPartySets]的起源的请求中是否包含 cookie。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1161427][CR1161427]。  
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="“Cookie”窗格中的“SameParty”列" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="Cookie窗格中的SameParty列" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    “**Cookie**”窗格中的“**SameParty**”列  
 :::image-end:::  
 

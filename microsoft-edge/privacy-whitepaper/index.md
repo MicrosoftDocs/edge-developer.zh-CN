@@ -285,7 +285,7 @@ Microsoft Edge 提供了具有吸引力且以用户为中心的新选项卡页�
 
 若要增强新选项卡页面的加载时间，可在后台加载 Microsoft 新选项卡页面，以使其速度更快。 如果允许 Cookie，加载的内容可能包含 Cookie。 若要禁用后台加载 Microsoft 新选项卡页面，请导航到 `edge://settings/newTabPage` ，然后关闭设置“预加载新选项卡页面，以获得更快的体验”****。 
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/n-t-p1.png":::
+:::image type="complex" source="./media/n-t-p1.png" alt-text="新建选项卡页面" lightbox="./media/n-t-p1.png":::
    “新建选项卡”页面  
 :::image-end:::  
 
@@ -467,7 +467,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 ## <a name="sync"></a>同步  
 
-使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  你可以同步浏览历史记录、收藏夹、设置、表单填充数据 \ (地址等\)、密码、扩展、打开的选项卡和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
+使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  你可以同步浏览历史记录、收藏夹、设置、表单填充数据 \(地址等\)、密码、扩展、打开的选项卡和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
 :::image type="complex" source="./media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/sync.png":::
    同步设置已开启
@@ -497,7 +497,7 @@ Microsoft Edge 旨在检测和阻止已知跟踪器。  用户可以从三个跟
 
 ## <a name="translate"></a>翻译  
 
-在 Microsoft Edge 中，你可以浏览 Web 并将网页翻译为你选择的语言。  内置翻译功能使用设备上的一项服务，可对页面的随机部分进行采样，以检测原始语言。  如果检测到的语言不是其中一种默认语言，则 Microsoft Edge 会将该网页翻译为所显示的语言或你选择的其他语言。  Microsoft Edge 不会在未经你允许的情况下翻译网页。  若要翻译网页，请打开上下文菜单 \ (右键单击\) ，然后选择"翻译"****。  为了翻译网页，Microsoft Edge 通过安全 HTTPS 连接将页面的内容和随机生成的令牌发送到 Microsoft Azure 翻译服务。  存储的页面内容不用于任何目的。  若要停止 Microsoft Edge 提供的网页翻译功能，请导航到 `edge://settings/languages`，然后禁用“主动翻译非你所读语言的页面”**** 设置。  
+在 Microsoft Edge 中，你可以浏览 Web 并将网页翻译为你选择的语言。  内置翻译功能使用设备上的一项服务，可对页面的随机部分进行采样，以检测原始语言。  如果检测到的语言不是其中一种默认语言，则 Microsoft Edge 会将该网页翻译为所显示的语言或你选择的其他语言。  Microsoft Edge 不会在未经你允许的情况下翻译网页。  若要翻译网页，请打开上下文菜单 \(右键单击\) ，然后选择"翻译"****。  为了翻译网页，Microsoft Edge 通过安全 HTTPS 连接将页面的内容和随机生成的令牌发送到 Microsoft Azure 翻译服务。  存储的页面内容不用于任何目的。  若要停止 Microsoft Edge 提供的网页翻译功能，请导航到 `edge://settings/languages`，然后禁用“主动翻译非你所读语言的页面”**** 设置。  
 
 ## <a name="web-apps-and-pinned-sites"></a>Web 应用和已固定网站  
 

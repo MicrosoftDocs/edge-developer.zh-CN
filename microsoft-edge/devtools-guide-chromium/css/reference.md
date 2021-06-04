@@ -57,7 +57,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 在 **“样式”** 窗格中，选择 CSS 规则旁边的链接，以打开定义该规则的外部样式表。  样式表将在"源" **工具的** "编辑器" **窗格中** 打开。  
 
-如果样式表缩小，请选择"编辑器"窗格**** 底部的"格式 ![ \ (格式 ](../media/format-icon.msft.png) **\) "** 按钮。  有关详细信息，请导航到[重新设置一个缩小的 JavaScript 文件与非常打印。][DevToolsJavascriptReferenceFormat]  
+如果样式表缩小，请选择"编辑器"窗格**** 底部的"格式 ![ \(格式 ](../media/format-icon.msft.png) **\) "** 按钮。  有关详细信息，请导航到[重新设置一个缩小的 JavaScript 文件与非常打印。][DevToolsJavascriptReferenceFormat]  
 
 > [!NOTE]
 > 在下图中，当你选择 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 后，将会带你到定义了 `.content h1:first-of-type` CSS 规则的 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` 行2。  
@@ -83,7 +83,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 > [!NOTE]
 > 下图中，**“计算”** 面板显示应用于当前所选 `h1` 元素的 CSS 属性。  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="“计算”面板" lightbox="../media/css-elements-computed-h1.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="计算面板" lightbox="../media/css-elements-computed-h1.msft.png":::
    **“计算”** 面板  
 :::image-end:::  
 
@@ -117,14 +117,14 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 > [!NOTE]
 > 下图中，筛选 **“样式”** 面板为只显示包含搜索查询的 `color` 规则。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="筛选“样式”面板" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="筛选样式面板" lightbox="../media/css-elements-styles-filter-color.msft.png":::
    筛选 **“样式”** 面板  
 :::image-end:::  
 
 > [!NOTE]
 > 下图中，筛选 **“计算”** 面板以仅显示包含搜索查询 `100%` 的声明。  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="筛选 “计算” 面板" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="筛选 计算 面板" lightbox="../media/css-elements-computed-filter-100.msft.png":::
    筛选 **“计算”** 面板  
 :::image-end:::  
 
@@ -163,12 +163,12 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="从命令菜单中打开 “覆盖” 工具" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="从命令菜单中打开 覆盖 工具" lightbox="../media/css-console-command-menu-coverage.msft.png":::
              从 **“命令”** 菜单中打开 **“覆盖”** 工具  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="“覆盖”工具" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="覆盖工具" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              **覆盖**工具  
           :::image-end:::  
        :::column-end:::
@@ -265,7 +265,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 1.  在 **“添加新类”** 文本框中输入类的名称。  
 1.  选择 `Enter`。  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="“元素课堂”窗格" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="元素课堂窗格" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
    **“元素课堂”** 窗格  
 :::image-end:::  
 
@@ -325,7 +325,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
     > [!NOTE]
     > 下图中，将鼠标悬停在 `.header-holder.has-default-focus` 样式规则上，在样式规则部分的右下方会显示出 **“更多操作”**。  
     
-    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="显示“更多操作”" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="显示更多操作" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
        显示 **“更多操作”** \(`...`\)  
     :::image-end:::  
     
@@ -334,7 +334,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
     > [!NOTE]
     > 将鼠标悬停在 **“更多动作“** 上，就会显示出 **“下方插入样式规则”** 操作。  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="“更多操作”工具栏" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="更多操作工具栏" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        **“更多操作”** 工具栏  
     :::image-end:::  
     

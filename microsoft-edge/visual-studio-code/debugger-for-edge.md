@@ -43,11 +43,11 @@ ms.locfileid: "11399293"
 }
 ```  
 
-如果在 Windows 或 macOS 上选择或再次选择绿色"播放"按钮，Visual Studio Code 将启动 `F5` Microsoft Edge \ (**** EdgeHTML\) 并且你可以调试你直接从 Visual Studio Code 端口运行的任何 Web `8080` 项目！  
+如果在 Windows 或 macOS 上选择或再次选择绿色"播放"按钮，Visual Studio Code 将启动 `F5` Microsoft Edge \(**** EdgeHTML\) 并且你可以调试你直接从 Visual Studio Code 端口运行的任何 Web `8080` 项目！  
 
 ### <a name="microsoft-edge-chromium"></a>Microsoft Edge (Chromium)  
 
-如果要启动 Microsoft Edge \ (Chromium\) ，则新的 Microsoft Edge（而不是 Microsoft Edge \ (EdgeHTML\) ）只需使用要启动的 Microsoft Edge \ (Chromium\) 版本向现有配置添加属性，以启动 `version` `dev` \ (、或 `beta` `canary` \) 。  下面的配置将启动 Canary 版本的 Microsoft Edge \ (Chromium\) 。  
+如果要启动 Microsoft Edge \(Chromium\) ，则新的 Microsoft Edge（而不是 Microsoft Edge \(EdgeHTML\) ）只需使用要启动的 Microsoft Edge \(Chromium\) 版本向现有配置添加属性，以启动 `version` `dev` \(、或 `beta` `canary` \) 。  下面的配置将启动 Canary 版本的 Microsoft Edge \(Chromium\) 。  
 
 ```json
 {
@@ -62,7 +62,7 @@ ms.locfileid: "11399293"
 
 ## <a name="attaching-to-microsoft-edge"></a>附加到Microsoft Edge  
 
-将Visual Studio Code附加到Microsoft Edge \ (Chromium\) 。  从终端运行以下命令。  
+将Visual Studio Code附加到Microsoft Edge \(Chromium\) 。  从终端运行以下命令。  
 
 ```shell
 start msedge --remote-debugging-port=9222
@@ -79,7 +79,7 @@ start msedge --remote-debugging-port=9222
 }
 ```  
 
-如果现在运行此配置，Visual Studio Code连接到 Microsoft Edge \ (Chromium\) 并开始调试。  
+如果现在运行此配置，Visual Studio Code连接到 Microsoft Edge \(Chromium\) 并开始调试。  
 
 ## <a name="getting-in-touch-with-the-elements-for-microsoft-edge-visual-studio-code-extension-team"></a>了解适用于 Microsoft Edge Visual Studio Code 团队的元素    
 

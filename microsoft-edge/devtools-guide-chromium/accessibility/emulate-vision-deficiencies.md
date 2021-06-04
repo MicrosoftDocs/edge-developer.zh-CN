@@ -16,7 +16,7 @@ ms.locfileid: "11564600"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷  
 
-为了更好地满足色[盲用户][ColorblindawarenessMain]\ (色盲\) 的需求，Microsoft Edge [DevTools][DevtoolsIndex]允许你模拟特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。  
+为了更好地满足色[盲用户][ColorblindawarenessMain]\(色盲\) 的需求，Microsoft Edge [DevTools][DevtoolsIndex]允许你模拟特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。  
 
 | 色盲 | 详细信息 |  
 |:--- |:--- |  
@@ -48,7 +48,7 @@ ms.locfileid: "11564600"
     
 1.  选择一个选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text=""模拟视觉缺陷"菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="模拟视觉缺陷菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        " **模拟视觉缺陷"** 菜单选项  
     :::image-end:::  
     
@@ -70,7 +70,7 @@ ms.locfileid: "11564600"
 
 您还可以使用命令 **菜单** 访问不同的模拟。  
 
-1.  选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令**菜单**。  
+1.  选择 `Ctrl` + `Shift` + `P` \(Windows/Linux\) 或 `Command` + `Shift` + `P` \(macOS\) 打开命令**菜单**。  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        **命令菜单**  

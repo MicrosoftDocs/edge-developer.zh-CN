@@ -191,7 +191,7 @@ DevTools 现在在 [Media][DevtoolsMediaPanelIndex] 工具中显示媒体播放�
 
 若要打开新的 **媒体工具** ，请完成以下步骤。  
 
-1.  Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Media**.  
+1.  Choose **Customize and control DevTools** \(`...` \) > More **tools**  >  **Media**.  
     
     :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具" lightbox="../../media/2020/08/media-panel.msft.png":::
        新 **媒体** 工具  
@@ -208,7 +208,7 @@ DevTools 现在在 [Media][DevtoolsMediaPanelIndex] 工具中显示媒体播放�
 
 现在，可以使用"元素"工具中的上下文菜单捕获 **节点屏幕截图** 。  
 
-例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择捕获 **节点屏幕截图**。  
+例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \(右键单击\) ，然后选择捕获 **节点屏幕截图**。  
 
 :::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    捕获节点屏幕截图  
@@ -303,7 +303,7 @@ Chromium问题[：#772558][CR772558]
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>在"服务工作者"窗格中弃用其他源列表  
 
-DevTools 现在提供来自服务工作者**** 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。  
+DevTools 现在提供来自服务工作者**** 窗格 \(**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。  
 
 以前，DevTools 显示一个嵌套在****"应用程序工具""服务>**窗格下**的列表。  
 
@@ -384,7 +384,7 @@ Chromium问题[：#1093227][CR1093227]
 
 " **属性** "窗格已返回。  它在[84 Microsoft Edge弃用][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划对检查元素属性的改进。  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text=""元素"面板中的"属性"窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="元素面板中的属性窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **"** 元素"工具 **中的"属性"** 窗格  
 :::image-end:::  
 
@@ -418,7 +418,7 @@ Chromium问题：[#1106221][CR1106221]
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a>在网络面板中一致地显示资源类型  
 
-DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \ (HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 ****  
+DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \(HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 ****  
 
 以前，DevTools 有时将类型 `Other` 更改为 。  
 
@@ -439,7 +439,7 @@ Chromium问题[：#997694][CR997694]
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text=""元素"面板中的"清除"按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="元素面板中的清除按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          "元素"工具中的 **"清除"** 按钮  
       :::image-end:::  
    :::column-end:::

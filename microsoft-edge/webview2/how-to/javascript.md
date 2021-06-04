@@ -30,7 +30,7 @@ ms.locfileid: "11535822"
 | API  | 说明  |
 |:--- |:--- |  
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | 创建文档对象模型 \ (DOM\) 时运行。 |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | 创建文档对象模型 \(DOM\) 时运行。 |
       
 ## <a name="scenario--running-a-dedicated-script-file"></a>方案：运行专用脚本文件  
 
@@ -94,7 +94,7 @@ ms.locfileid: "11535822"
 首先，探索当前上下文菜单功能。  
 
 1.  运行项目。  
-1.  将鼠标悬停在 WebView2 控件上的任意位置，然后打开上下文菜单 \ (右键单击\) 。  上下文菜单显示默认选项。  
+1.  将鼠标悬停在 WebView2 控件上的任意位置，然后打开上下文菜单 \(右键单击\) 。  上下文菜单显示默认选项。  
     
     :::image type="complex" source="./media/context-menu.png" alt-text="显示默认选项的上下文菜单" lightbox="./media/context-menu.png":::
        显示默认选项的上下文菜单  
@@ -108,7 +108,7 @@ ms.locfileid: "11535822"
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
     
-1.  再次运行代码。  确认无法打开上下文菜单 \ (右键单击\) 。  
+1.  再次运行代码。  确认无法打开上下文菜单 \(右键单击\) 。  
     
 ## <a name="see-also"></a>另请参阅  
 

@@ -37,7 +37,7 @@ ms.locfileid: "11564488"
 
 ## <a name="open-the-command-menu"></a>打开命令菜单  
 
-选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。 或选择 **自定义和控制开发工具** \ (`...` \) > **运行命令**。  
+选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。 或选择 **自定义和控制开发工具** \(`...` \) > **运行命令**。  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令" lightbox="../media/command-menu-options-run-command.msft.png":::
    运行命令  

@@ -115,7 +115,7 @@ ms.locfileid: "11564663"
     
 ### <a name="set-up-devtools"></a>设置 DevTools  
 
-1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 打开 DevTools**** 的控制台面板。  
+1.  选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 打开 DevTools**** 的控制台面板。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        控制台**面板**  
@@ -124,7 +124,7 @@ ms.locfileid: "11564663"
 1.  导航到 **"源"** 工具。  
 1.  在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text=""文件系统"选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="文件系统选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        " **文件系统"** 选项卡  
     :::image-end:::  
     
@@ -133,7 +133,7 @@ ms.locfileid: "11564663"
 1.  选择 **"** 允许"以授予 DevTools 读取和写入目录的权限。  
     在" **文件系统"** 选项卡中，现在，、 和 旁边将出现 `index.html` `script.js` 一个绿色点 `styles.css` 。  绿色点表示 DevTools 已建立页面的网络资源与 中的文件之间的映射 `~/Desktop/app` 。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text=""文件系统"选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="文件系统选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        " **文件系统** "选项卡现在指示本地文件和网络文件之间的映射  
     :::image-end:::  
     
@@ -205,10 +205,10 @@ In short, the **DOM Tree** `!==` HTML.
 1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。  
 1.  选择** (索引) 。 **  将打开页面的 HTML。  
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。  
-1.  选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。  
+1.  选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。  
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从"源"工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从源工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        从"源"工具 **更改** HTML  
     :::image-end:::  
     
@@ -228,7 +228,7 @@ In short, the **DOM Tree** `!==` HTML.
        使用 **命令菜单** 打开快速 **源工具**  
     :::image-end:::  
     
-1.  选择 `Control` + `P` \ (Windows、Linux\) 或 `Command` + `P` \ (macOS\) 打开 **"打开文件"** 对话框。  查看下图。  
+1.  选择 `Control` + `P` \(Windows、Linux\) 或 `Command` + `P` \(macOS\) 打开 **"打开文件"** 对话框。  查看下图。  
 1.  键入 `script` ，然后选择 **"app/script.js"。 **  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件"对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -245,7 +245,7 @@ In short, the **DOM Tree** `!==` HTML.
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。  
+1.  选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。  
 1.  刷新页面。  
     
     > [!NOTE]
@@ -290,7 +290,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \ (computer networking\) - Wikipedia"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

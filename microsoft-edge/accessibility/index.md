@@ -27,7 +27,7 @@ ms.locfileid: "11232174"
 
 ## Microsoft Edge  
 
-在 Microsoft Edge 中，我们引入了现代[UI 自动化 API][WindowsWin32AutoEntryui] \ (UIA API\) 。  UIA 的变化是浏览器辅助功能的主要投资，它为依赖于 Windows 10 中的辅助技术的用户提供更具包容性的 Web 体验打下基础。  用户还可以从网络引擎的常绿Chromium中获益。  
+在 Microsoft Edge 中，我们引入了现代[UI 自动化 API][WindowsWin32AutoEntryui] \(UIA API\) 。  UIA 的变化是浏览器辅助功能的主要投资，它为依赖于 Windows 10 中的辅助技术的用户提供更具包容性的 Web 体验打下基础。  用户还可以从网络引擎的常绿Chromium中获益。  
 
 企业中的辅助功能系统Microsoft Edge支持现代 Web 标准，包括 ARIA、HTML5 和 CSS3。  简化的浏览器管道的下图将网页内容放入可访问的表示层。  
 

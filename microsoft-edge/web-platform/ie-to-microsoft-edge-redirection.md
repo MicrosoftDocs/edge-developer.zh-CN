@@ -15,7 +15,7 @@ ms.locfileid: "11461134"
 ---
 # <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Microsoft Edge移动到Internet Explorer  
 
-许多新式网站具有的设计与 Internet Explorer \ (IE\) 。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge支持自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+许多新式网站具有的设计与 Internet Explorer \(IE\) 。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge支持自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
 本文介绍以下概念。  
 

@@ -46,17 +46,17 @@ ms.locfileid: "11483348"
 *   以 HTTP 方法开头，后 `GET` 跟 URI 的网络错误。  
 *   错误 `Uncaught (in promise) TypeError: data.forEach is not a function` 。  
     
-如果你在控制台 `network-error.html:40` 中选择链接，DevTools 将你指向**源**工具。 ****  有问题的代码行突出显示，后跟 `error` \ (`x` \) 按钮。  若要显示 `Failed to load resource: the server responded with a status of 404 ()` 错误消息，请选择错误 \ (**** `x` \) 按钮。  
+如果你在控制台 `network-error.html:40` 中选择链接，DevTools 将你指向**源**工具。 ****  有问题的代码行突出显示，后跟 `error` \(`x` \) 按钮。  若要显示 `Failed to load resource: the server responded with a status of 404 ()` 错误消息，请选择错误 \(**** `x` \) 按钮。  
 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="选择网页的链接和发生错误的代码行将打开"源"工具" lightbox="../media/console-debug-network-error-code-line.msft.png":::
+      :::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="选择网页的链接和发生错误的代码行将打开源工具" lightbox="../media/console-debug-network-error-code-line.msft.png":::
          选择网页的链接和发生错误的代码行将打开 **"源"** 工具  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-debug-network-error-sources.msft.png" alt-text="若要在 JavaScript 中查找错误，请使用"源"工具" lightbox="../media/console-debug-network-error-sources.msft.png":::
+      :::image type="complex" source="../media/console-debug-network-error-sources.msft.png" alt-text="若要在 JavaScript 中查找错误，请使用源工具" lightbox="../media/console-debug-network-error-sources.msft.png":::
          若要在 JavaScript 中查找错误，请使用 **"源"** 工具  
       :::image-end:::  
    :::column-end:::
@@ -73,7 +73,7 @@ ms.locfileid: "11483348"
 
 :::row:::
     :::column:::
-        :::image type="complex" source="../media/console-debug-network-error-network.msft.png" alt-text=""网络"工具显示有关失败请求详细信息" lightbox="../media/console-debug-network-error-network.msft.png":::
+        :::image type="complex" source="../media/console-debug-network-error-network.msft.png" alt-text="网络工具显示有关失败请求详细信息" lightbox="../media/console-debug-network-error-network.msft.png":::
            " **网络** "工具显示有关失败请求详细信息  
         :::image-end:::  
     :::column-end:::
@@ -84,9 +84,9 @@ ms.locfileid: "11483348"
     :::column-end:::
 :::row-end:::  
 
-问题是什么？  两个斜杠字符 `//` \ (\) 出现在请求的 URI 中的单词 `repos` 后。  打开" **源"** 工具并检查第 26 行。  尾部斜杠字符 \ (\) 出现在基本 `/` URI 的末尾。  
+问题是什么？  两个斜杠字符 `//` \(\) 出现在请求的 URI 中的单词 `repos` 后。  打开" **源"** 工具并检查第 26 行。  尾部斜杠字符 \(\) 出现在基本 `/` URI 的末尾。  
 
-:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text=""源"工具显示包含错误的代码行" lightbox="../media/console-debug-network-error-code-error.msft.png":::
+:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="源工具显示包含错误的代码行" lightbox="../media/console-debug-network-error-code-error.msft.png":::
    " **源** "工具显示包含错误的代码行  
 :::image-end:::  
 

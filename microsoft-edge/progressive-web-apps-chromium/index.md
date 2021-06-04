@@ -17,7 +17,7 @@ ms.locfileid: "11536807"
 ---
 # <a name="progressive-web-apps-on-windows-overview"></a>渐进式 Web 应用Windows概述  
 
-[渐进式 Web 应用][MDNApps] \ (PWA\) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的本机、类似应用的体验。  PWA 是逐步增强的网站[][AListApartUnderstandingProgressiveEnhancement]，其功能与支持平台上的本机应用类似。  PWA 的特性结合了最好的 Web 和本机应用。  
+[渐进式 Web 应用][MDNApps] \(PWA\) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的本机、类似应用的体验。  PWA 是逐步增强的网站[][AListApartUnderstandingProgressiveEnhancement]，其功能与支持平台上的本机应用类似。  PWA 的特性结合了最好的 Web 和本机应用。  
 
 :::row:::
     :::column:::
@@ -119,17 +119,17 @@ ms.locfileid: "11536807"
     :::column-end:::
 :::row-end:::  
 
-生成 \ (或将) 网站转换为PWA，以增强用户参与度。  增强功能包括推送通知、类似应用的集成和脱机支持。  继续构建开放 Web 上的受众，以便用户通过搜索和链接PWA发现你的网站。  最好使用 Web 服务器代码更新应用。  
+生成 \(或将) 网站转换为PWA，以增强用户参与度。  增强功能包括推送通知、类似应用的集成和脱机支持。  继续构建开放 Web 上的受众，以便用户通过搜索和链接PWA发现你的网站。  最好使用 Web 服务器代码更新应用。  
 
 ## <a name="pwas-on-microsoft-edge-chromium"></a>PA on Microsoft Edge (Chromium)   
 
-构建面向 Web 标准 API 的渐进式 Web 应用时，应用可能会跨平台和设备进行部署，并尽可能利用特定于设备的功能。  Microsoft Edge \ (Chromium\) 中的 PA 将以下优势添加到您的网站。  
+构建面向 Web 标准 API 的渐进式 Web 应用时，应用可能会跨平台和设备进行部署，并尽可能利用特定于设备的功能。  Microsoft Edge \(Chromium\) 中的 PA 将以下优势添加到您的网站。  
 
 *   你的应用基于基于标准的 Web 平台构建。  
 *   允许用户直接从浏览器安装应用。  
 *   允许用户在没有基于应用商店的部署或注册的情况下安装应用。  
     
-桌面 PBA 在任何支持 \Microsoft Edge\ (Chromium\) 平台上均受支持。 Microsoft Edge \ (Chromium\) 7、Windows 和 macOS 上Windows 10 \Windows 10\macOS。  其中包括以下好处。  
+桌面 PBA 在任何支持 \Microsoft Edge\(Chromium\) 平台上均受支持。 Microsoft Edge \(Chromium\) 7、Windows 和 macOS 上Windows 10 \Windows 10\macOS。  其中包括以下好处。  
 
 *   可以直接在浏览器中使用导航栏中的 **"安装** "图标安装应用。  
     
@@ -145,7 +145,7 @@ ms.locfileid: "11536807"
     
 *   Web 通知已集成到 Windows通知系统  
 *   具有安装应用程序的浏览器配置文件的共享 Cookie 存储  
-*   使用"设置"和 **更多** \ (\) 菜单访问其他浏览器功能，包括证书验证、网站权限、跟踪保护和 `...` 浏览器扩展  
+*   使用"设置"和 **更多** \(\) 菜单访问其他浏览器功能，包括证书验证、网站权限、跟踪保护和 `...` 浏览器扩展  
 *   对调试[Microsoft Edge开发人员][DevtoolsProgressiveWebApps]工具的完全访问权限  
     
 > [!NOTE]
@@ -160,7 +160,7 @@ ms.locfileid: "11536807"
       [HTTPS][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      通过为服务器或应用通信提供安全连接来保护用户。  服务工作人员和其他PWA技术仅适用于通过安全连接 \ (或用于调试目的 `localhost` \) 。  
+      通过为服务器或应用通信提供安全连接来保护用户。  服务工作人员和其他PWA技术仅适用于通过安全连接 \(或用于调试目的 `localhost` \) 。  
    :::column-end:::
 :::row-end:::  
 :::row:::

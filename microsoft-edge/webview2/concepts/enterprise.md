@@ -21,11 +21,11 @@ ms.locfileid: "11057858"
 
 ## WebView2 的组策略  
 
-IT 管理员可以使用组策略对象 \ (GPO\) 为 WebView2 配置策略设置。  以下策略集适用于/不适用于 WebView2，  
+IT 管理员可以使用组策略对象 \(GPO\) 为 WebView2 配置策略设置。  以下策略集适用于/不适用于 WebView2，  
 
 *   [Microsoft Edge -][EdgeUpdatePolicies]更新策略可供 IT 管理员管理 WebView2 运行时的安装和更新方面。  浏览器Microsoft Edge WebView2 运行时使用相同的更新机制进行更新。  除非策略（如 ）特定于通道，否则它同时适用于 `Update` 浏览器和 WebView2 运行时。  例如，允许 IT 管理员设置每天的时间，以禁止浏览器和 `UpdateSuppressed` WebView2 运行时自动更新。  这使 IT 管理员能够为浏览器和 WebView2 运行时配置一次首选项和代理，以控制其网络带宽/流量或用于其他目的。  IT 管理员可能会按照Microsoft Edge[指南配置][ConfigureMicrosoftEdge]Microsoft Edge - 更新策略。  
 *   [Microsoft Edge -][EdgeBrowserPolicies]浏览器策略不适用于 WebView2 应用程序。  这是设计使的，因为应用和浏览器具有不同的用例，并且 IT 管理员可能不知道哪些应用程序使用 WebView2。  在 WebView2 上应用浏览器策略可能会产生意想不到的后果。  例如，IT 管理员可能会阻止浏览器中的 JavaScript，并且所有使用 JavaScript 的 WebView2 应用都已损坏。  
-*   \ (即将推出\) 特定于 WebView2 的策略 – 如果直接管理 WebView2 有意义，WebView2 将公开一小组额外的组策略。  我们建议应用开发人员实施自己的组策略来管理对 WebView2 的使用，因为 IT 管理员管理应用比直接管理 WebView2 更为简单。  
+*   \(即将推出\) 特定于 WebView2 的策略 – 如果直接管理 WebView2 有意义，WebView2 将公开一小组额外的组策略。  我们建议应用开发人员实施自己的组策略来管理对 WebView2 的使用，因为 IT 管理员管理应用比直接管理 WebView2 更为简单。  
 
 <!-- Links -->  
 

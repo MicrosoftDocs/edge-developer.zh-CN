@@ -34,7 +34,7 @@ ms.locfileid: "11327524"
 若要直接使用部分浏览器（如窗口或选项卡），必须发送 API 请求，并通常按名称引用浏览器。  
 
 :::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Microsoft Edge (Chromium) 扩展" lightbox="./media/example-extension-screenshot.png":::
-  Microsoft Edge \ (Chromium\) 扩展  
+  Microsoft Edge \(Chromium\) 扩展  
 :::image-end:::  
 
 ## 基本指南  
@@ -98,7 +98,7 @@ ms.locfileid: "11327524"
 
 若要向应用商店提交扩展，请确保提供以下项目。  
 
-*   包含代码文件的存档 \ (`.zip`\) 文件。  
+*   包含代码文件的存档 \(`.zip`\) 文件。  
 *   所有必需的视觉资源，包括徽标和小型促销磁贴。  
 *   可选促销媒体，如屏幕截图、促销贴片和视频 URL。  
 *   描述扩展名的信息，如名称、简短描述和隐私策略链接。  

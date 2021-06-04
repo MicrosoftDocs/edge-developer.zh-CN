@@ -50,7 +50,7 @@ ms.locfileid: "11564124"
      
 ## <a name="reformat-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新设置缩小的 JavaScript 文件
 
-若要使缩小的文件可读，请选择"编辑器"窗格底部的****"格式 ![ \ (Format ](../media/format-icon.msft.png) **\) "** 按钮。
+若要使缩小的文件可读，请选择"编辑器"窗格底部的****"格式 ![ \(Format ](../media/format-icon.msft.png) **\) "** 按钮。
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="格式按钮" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    “**格式**”按钮  
@@ -80,7 +80,7 @@ ms.locfileid: "11564124"
 
 ### <a name="step-over-line-of-code"></a>逐步执行代码  
 
-当暂停包含与正在调试的问题不相关的函数的代码行时，选择"单步执行**\ (** 单步 ![ 执行 \) "按钮以在不单步执行的情况下运行函数。 ](../media/step-over-icon.msft.png)  
+当暂停包含与正在调试的问题不相关的函数的代码行时，选择"单步执行**\(** 单步 ![ 执行 \) "按钮以在不单步执行的情况下运行函数。 ](../media/step-over-icon.msft.png)  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="选择逐步执行" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    选择“**逐步执行**”  
@@ -128,7 +128,7 @@ function getName() {
 
 ### <a name="step-out-of-line-of-code"></a>执行剩余代码  
 
-当暂停在与正在调试的问题不相关的函数内时，选择"单步执行 **\ (** 单步执行 \) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。  
+当暂停在与正在调试的问题不相关的函数内时，选择"单步执行 **\(** 单步执行 \) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="选择执行剩余" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    选择 **“执行剩余”**  
@@ -154,7 +154,7 @@ function getName() {
 
 调试长函数时，可能有许多代码与正在调试的问题不相关。  
 
-你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择 Resume **脚本** 执行 \ (Resume 脚本执行 ![ \) 按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。  
+你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择 Resume **脚本** 执行 \(Resume 脚本执行 ![ \) 按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。  
 
 将鼠标悬停在你感兴趣的代码行上，打开上下文菜单 \(右键单击\) ，然后选择“**继续至此处**”。  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。  
 
@@ -164,7 +164,7 @@ function getName() {
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>重新启动调用的顶部函数  
 
-若要暂停调用堆栈中顶部函数的第一行，同时在代码行上暂停，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 \ (右键单击\) ，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。  
+若要暂停调用堆栈中顶部函数的第一行，同时在代码行上暂停，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 \(右键单击\) ，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。  
 
 下面的代码段是一个分步执行示例。  
 
@@ -186,7 +186,7 @@ function factorial(n) {
 
 ### <a name="resume-script-runtime"></a>恢复脚本运行时  
 
-若要在脚本暂停后继续运行时，请选择 Resume **script execution** \ (Resume script ![ execution ](../media/resume-script-run-icon.msft.png) \) button。  DevTools 将一直运行脚本，直到下一个断点（如果有）。  
+若要在脚本暂停后继续运行时，请选择 Resume **script execution** \(Resume script ![ execution ](../media/resume-script-run-icon.msft.png) \) button。  DevTools 将一直运行脚本，直到下一个断点（如果有）。  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="选择恢复脚本执行" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    选择“**恢复脚本执行**”  
@@ -194,7 +194,7 @@ function factorial(n) {
 
 #### <a name="force-script-runtime"></a>强制脚本运行时  
 
-若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume**脚本**执行 \ (Resume 脚本执行 \) 按钮，然后选择"强制脚本执行 ![ ](../media/resume-script-run-icon.msft.png) \ (强制脚本执行**** ![ ](../media/force-script-run-icon.msft.png) \) "按钮。  
+若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume**脚本**执行 \(Resume 脚本执行 \) 按钮，然后选择"强制脚本执行 ![ ](../media/resume-script-run-icon.msft.png) \(强制脚本执行**** ![ ](../media/force-script-run-icon.msft.png) \) "按钮。  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="选择强制脚本执行" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    选择“**强制脚本执行**”  
@@ -229,9 +229,9 @@ function factorial(n) {
    “**监视**”窗格  
 :::image-end:::  
 
-*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 \ (![ 添加监视表达式 ](../media/add-expression-icon.msft.png) \) 按钮。  
-*   若要刷新所有现有表达式的值，请选择"刷新 **\ (** ![ 刷新 ](../media/refresh-icon.msft.png) \) "按钮。  逐步执行代码时，值将自动刷新。  
-*   若要删除监视表达式，请右键单击该表达式，然后选择"删除 **监视** 表达式 \ (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png) \) "。  
+*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 \(![ 添加监视表达式 ](../media/add-expression-icon.msft.png) \) 按钮。  
+*   若要刷新所有现有表达式的值，请选择"刷新 **\(** ![ 刷新 ](../media/refresh-icon.msft.png) \) "按钮。  逐步执行代码时，值将自动刷新。  
+*   若要删除监视表达式，请右键单击该表达式，然后选择"删除 **监视** 表达式 \(![ 删除监视表达式 ](../media/delete-expression-icon.msft.png) \) "。  
 
 ## <a name="view-the-call-stack"></a>查看调用堆栈  
 
@@ -254,7 +254,7 @@ function factorial(n) {
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 \ (右键单击\) ，然后选择"复制堆栈跟踪 **"。**  
+若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 \(右键单击\) ，然后选择"复制堆栈跟踪 **"。**  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="选择复制堆叠跟踪" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    选择“**复制堆叠跟踪**”  

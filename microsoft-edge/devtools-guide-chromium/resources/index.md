@@ -39,13 +39,13 @@ ms.locfileid: "11565069"
 
 1.  选择 `Control`+`P`（Windows、Linux）或 `Command`+`P` (macOS)。  将 **打开"打开文件** "对话框。  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text=""打开文件"对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="打开文件对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        " **打开文件"** 对话框  
     :::image-end:::  
     
 1.  从下拉列表中选择文件，或开始键入文件名，在自动完成框中突出显示正确的文件后 `Enter` 选择。  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在"打开文件"对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在打开文件对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
        在"打开文件" **对话框中键入** 文件名  
     :::image-end:::  
     
@@ -59,9 +59,9 @@ ms.locfileid: "11565069"
 
 ### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a>显示来自其他面板的网络工具中的资源  
 
-下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要在网络工具中检查资源，**** 请将鼠标悬停在资源上，打开上下文菜单 \ (右键单击\) ，然后选择"网络"面板中的"**展示"。**  
+下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要在网络工具中检查资源，**** 请将鼠标悬停在资源上，打开上下文菜单 \(右键单击\) ，然后选择"网络"面板中的"**展示"。**  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text=""网络"面板中的"展示"" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="网络面板中的展示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **"网络"面板中的"展示"**  
 :::image-end:::  
 
@@ -83,7 +83,7 @@ ms.locfileid: "11565069"
 1.  选择 **"源**"工具，然后在左上角的****"导航器"窗格中，选择"**页面"** 选项卡。
 1.  Choose the **More options** (...) button to the right of the **Page** tab， and then choose Group **by folder**.
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text=""源"工具的"导航器"窗格中的"页面"选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="源工具的导航器窗格中的页面选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
        " **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡  
     :::image-end:::  
     
@@ -111,13 +111,13 @@ ms.locfileid: "11565069"
 1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。  
 1.  选择 **"更多选项** `...` "，然后清除"按文件夹 **分组"旁边的选中标记**。  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text=""按文件夹分组"选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="按文件夹分组选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        " **按文件夹分组"** 选项  
     :::image-end:::  
     
     资源按文件类型进行组织。  在每个文件类型内，资源按字母顺序进行组织。  
 
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除"按文件夹分组"复选框后的"页面"选项卡" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除按文件夹分组复选框后的页面选项卡" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        清除 **"** 按文件夹分组"复选框后的"页面 **"** 选项卡  
     :::image-end:::  
     
@@ -133,14 +133,14 @@ ms.locfileid: "11565069"
     
 1.  向下滚动到"框架 **"** 窗格。  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text=""框架"窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="框架窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        " **框架"** 窗格  
     :::image-end:::  
     
 1.  展开您感兴趣的部分。  
 1.  选择一个资源进行查看。  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在"应用程序"面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在应用程序面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        在"应用程序"面板 **中查看** 资源  
     :::image-end:::  
     

@@ -77,7 +77,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="style-tools"></a>样式：工具  
 
-在"性能"工具 **中录制** 。  检查录制大事件 `Recalculate Style` \ (以紫色\) 。  
+在"性能"工具 **中录制** 。  检查录制大事件 `Recalculate Style` \(以紫色\) 。  
 
 <!--todo: add Recording section when available  -->  
 

@@ -53,7 +53,7 @@ Chromium 问题 [#963183][CR963183]
 
 :::row:::
    :::column span="":::
-      中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
       繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
@@ -124,7 +124,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
 
 ### <a name="3d-view"></a>3D 视图  
 
-使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。  
+使用 **3D 视图** 通过浏览文档对象模型 [\(DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。  
 
 :::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2019/12/3dview.msft.png":::
    DevTools 中的 **3D** 视图  
@@ -233,7 +233,7 @@ DevTools 已开始支持 DEBUGG 调试标准，这意味着增加了对在 DevTo
 
 #### <a name="request-initiator-chains-in-the-initiator-panel"></a>发起者面板中的请求发起人链  
 
-现在，你可以将网络请求的发起方和依赖项作为嵌套列表进行查看。  这可以帮助您了解请求资源的原因，或特定资源 \ (（如 script\) 导致的网络活动。  
+现在，你可以将网络请求的发起方和依赖项作为嵌套列表进行查看。  这可以帮助您了解请求资源的原因，或特定资源 \(（如 script\) 导致的网络活动。  
 
 :::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="发起者面板中的请求发起人链" lightbox="../../images/2019/12/initiators.msft.png":::
    发起者面板中的请求 **发起人** 链  
@@ -254,7 +254,7 @@ Chromium问题[#842488][CR842488]
 
 选择网络资源以检查它后，网络面板现在在概述中为资源设置蓝色 **边框**。  这可以帮助您检测网络请求是早于还是晚于预期发生。  
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的"概述"窗格" lightbox="../../images/2019/12/overview.msft.png":::
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的概述窗格" lightbox="../../images/2019/12/overview.msft.png":::
    突出显示 **已** 检查资源的"概述"窗格  
 :::image-end:::  
 
@@ -264,11 +264,11 @@ Chromium问题[#988253][CR988253]
 
 使用"**网络"** 工具**中的新"** 路径"和 **"URL"** 列显示每个网络资源的绝对路径或完整 URL。  
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text=""网络"面板中的新"路径"和"URL"列" lightbox="../../images/2019/12/columns.msft.png":::
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="网络面板中的新路径和URL列" lightbox="../../images/2019/12/columns.msft.png":::
    网络工具中的新 **路径和** URL 列  
 :::image-end:::  
 
-若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \ (righ-click\) ，然后选择**路径**或**URL。**  
+若要显示新列，请将鼠标悬停在**瀑布**表标题上，打开上下文菜单 \(righ-click\) ，然后选择**路径**或**URL。**  
 
 Chromium问题[#993366][CR993366]  
 
@@ -278,7 +278,7 @@ DevTools 支持通过"网络User-Agent设置 **自定义字符串** 。  the Use
 
 预定义User-Agent字符串已更新，以反映新式浏览器版本。  
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text=""网络条件"面板中的"用户代理"菜单" lightbox="../../images/2019/12/useragent.msft.png":::
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="网络条件面板中的用户代理菜单" lightbox="../../images/2019/12/useragent.msft.png":::
    "网络条件"面板中的" **用户代理"** 菜单  
 :::image-end:::  
 
@@ -363,7 +363,7 @@ Chromium问题[#1004203][CR1004203]
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter 帐户"
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "调试程序Microsoft Edge - Visual Studio市场"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge \ (Chromium\) - Visual Studio Marketplace 的元素"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Microsoft Edge \(Chromium\) - Visual Studio Marketplace 的元素"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 [Webhint]: https://aka.ms/webhint "webhint"  
 [WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint 浏览器扩展|webhint 文档"  

@@ -65,13 +65,13 @@ ms.locfileid: "11519434"
    在样式检查器 **中选择** 文件  
 :::image-end:::  
 
-在"**源**"编辑器上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \ (右键单击\) ，然后选择"保存**以替代"。**  
+在"**源**"编辑器上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \(右键单击\) ，然后选择"保存**以替代"。**  
 
-:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在"源"编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在源编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
    在 **"源** "编辑器中，将文件的名称添加到替代  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择"保存替代"" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择保存替代" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    在上下文菜单上，选择 **"保存替代"**  
 :::image-end:::  
 
@@ -100,14 +100,14 @@ ms.locfileid: "11519434"
 
 :::row:::
    :::column span="":::
-      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。  
+      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \(右键单击\) ，并将其添加到覆盖。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从"源"工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从源工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          从"源"工具 **中选择** 文件进行替代  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。  当替代生效时，位于您的计算机而不是实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。  
+      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，打开上下文菜单 \(右键单击\) ，并将其添加到覆盖。  当替代生效时，位于您的计算机而不是实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="从网络工具中选择文件进行替代" lightbox="../media/javascript-overrides-network.msft.png":::
          从网络工具 **中选择** 文件进行替代  

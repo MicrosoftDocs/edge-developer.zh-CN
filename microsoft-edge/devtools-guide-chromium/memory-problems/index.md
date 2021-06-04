@@ -36,7 +36,7 @@ ms.locfileid: "11565027"
 *   了解你的页面当前与浏览器任务管理器Microsoft Edge的内存量。  
 *   使用内存面板直观呈现一段时间 **的内存** 使用情况。  
 *   使用堆快照 (分离的 DOM 树 \) 内存泄漏 **的常见原因**。  
-*   在时间线上通过 Allocation instrumentation 了解 JavaScript 堆 \ (JS 堆\) **分配新内存的时间**。  
+*   在时间线上通过 Allocation instrumentation 了解 JavaScript 堆 \(JS 堆\) **分配新内存的时间**。  
 
 ## <a name="overview"></a>概述  
 
@@ -68,7 +68,7 @@ ms.locfileid: "11565027"
        图 1：打开Microsoft Edge浏览器任务管理器  
     :::image-end:::  
     
-1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，打开上下文菜单 \ (右键单击\) ，并启用**JavaScript 内存**。  
+1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，打开上下文菜单 \(右键单击\) ，并启用**JavaScript 内存**。  
     
     :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="启用 JavaScript 内存" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        图 2：启用 JavaScript 内存  
@@ -77,7 +77,7 @@ ms.locfileid: "11565027"
 这两列告诉您有关页面如何使用内存的不同内容。  
 
 *   " **内存** "列表示本机内存。  DOM 节点存储在本机内存中。  如果此值增加，将创建 DOM 节点。  
-*   **"JavaScript 内存"** 列表示 JS 堆。  此列包含两个值。  您感兴趣的值为活动号码 \ (括号\) 。  实时数表示页面上的可访问对象使用的内存量。  如果此数目增加，则要么正在创建新对象，要么现有对象正在增长。  
+*   **"JavaScript 内存"** 列表示 JS 堆。  此列包含两个值。  您感兴趣的值为活动号码 \(括号\) 。  实时数表示页面上的可访问对象使用的内存量。  如果此数目增加，则要么正在创建新对象，要么现有对象正在增长。  
 
 <!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->  
 
@@ -111,9 +111,9 @@ document.getElementById('grow').addEventListener('click', grow);
    图 3：简单增长  
 :::image-end:::  
 
-首先，用户界面的说明。  "**概述**"窗格**** \ (中的 HEAP 图) **表示**JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 \ (与概述窗格\) 、文档、DOM**** 节点、侦听器和 GPU 内存中的**HEAP**图形相同。  关闭复选框以在图形中隐藏它。  
+首先，用户界面的说明。  "**概述**"窗格**** \(中的 HEAP 图) **表示**JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 \(与概述窗格\) 、文档、DOM**** 节点、侦听器和 GPU 内存中的**HEAP**图形相同。  关闭复选框以在图形中隐藏它。  
 
-现在，代码分析与上图比较。  如果查看节点计数器 \ (绿色图形\) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  JS 堆图 \ (蓝图\) 不是那么简单。  为了与最佳做法保持一样，第一个下降实际上是强制垃圾回收 \ (选择  **收集垃圾回收** ![ 强制垃圾回收按钮 ][ImageForceGarbageCollectionIcon] \) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于其开头 \ ("开头"是强制垃圾回收\) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。  
+现在，代码分析与上图比较。  如果查看节点计数器 \(绿色图形\) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  JS 堆图 \(蓝图\) 不是那么简单。  为了与最佳做法保持一样，第一个下降实际上是强制垃圾回收 \(选择  **收集垃圾回收** ![ 强制垃圾回收按钮 ][ImageForceGarbageCollectionIcon] \) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于其开头 \("开头"是强制垃圾回收\) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -147,7 +147,7 @@ document.getElementById('create').addEventListener('click', create);
    图 4：拍摄堆快照  
 :::image-end:::  
 
-可能需要一些时间处理和加载快照。  完成后，从名为 **HEAP SNAPSHOTS**\ (的左侧面板 \) 。  
+可能需要一些时间处理和加载快照。  完成后，从名为 **HEAP SNAPSHOTS**\(的左侧面板 \) 。  
 
 在 `Detached` 类 **筛选器文本框中** 键入以搜索分离的 DOM 树。  
 
@@ -230,7 +230,7 @@ DevTools 显示按功能分配内存的细目。  默认视图为 **"高 (从 **
 
 如果页面似乎频繁暂停，则可能有垃圾回收问题。  
 
-您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中，频繁更改 \ (和下降\) JS 堆或节点计数图指示频繁进行垃圾回收。  
+您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中，频繁更改 \(和下降\) JS 堆或节点计数图指示频繁进行垃圾回收。  
 
 确定问题后，可以在时间线记录上使用 **Allocation instrumentation** 来查明内存的分配位置以及导致分配的函数。  
 

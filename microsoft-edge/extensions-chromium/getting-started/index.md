@@ -16,7 +16,7 @@ ms.locfileid: "11397922"
 ---
 # <a name="extension-concepts-and-architecture"></a>扩展概念和体系结构  
 
-本文简要介绍了帮助您构建扩展的概念。  若要了解 Microsoft Edge \ (Chromium\) 扩展，请继续了解多选项卡浏览器如何工作。  
+本文简要介绍了帮助您构建扩展的概念。  若要了解 Microsoft Edge \(Chromium\) 扩展，请继续了解多选项卡浏览器如何工作。  
 
 ## <a name="understand-how-browsers-work"></a>了解浏览器如何工作  
 
@@ -40,7 +40,7 @@ ms.locfileid: "11397922"
 
 下面的列表概述了与扩展体系结构相关的有用信息。  
 
-1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你 \ (开发人员\) Web 服务器的其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。  
+1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你 \(开发人员\) Web 服务器的其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。  
     
     zip 文件包括 HTML、CSS、JavaScript 和图像文件。  zip 文件的根中需要另外一个文件。  另一个文件是名为 的清单文件 `manifest.json` 。  清单文件是扩展的蓝图，包括扩展版本、标题、运行扩展所需的权限等。  
     

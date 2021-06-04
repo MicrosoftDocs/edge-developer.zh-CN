@@ -70,7 +70,7 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  �
 
 ## <a name="uri-protocol-handling"></a>URI 协议处理  
 
-统一资源标识符 \ (URI\) 可用于定义使用 HTTP 或 FTP 协议的网页和 Web 内容的链接。  URI 可用于描述指向您编成架构中任何内容的链接。  例如，协议用于描述电子邮件链接，操作系统 `mailto://` \ (OS\) 或浏览器决定哪个网页或应用应处理该协议。  
+统一资源标识符 \(URI\) 可用于定义使用 HTTP 或 FTP 协议的网页和 Web 内容的链接。  URI 可用于描述指向您编成架构中任何内容的链接。  例如，协议用于描述电子邮件链接，操作系统 `mailto://` \(OS\) 或浏览器决定哪个网页或应用应处理该协议。  
 
 有关基于浏览器的现有支持，请导航到基于 [Web 的协议处理程序][MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]。  
 
@@ -131,7 +131,7 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  �
  
 ## <a name="url-link-handling"></a>URL 链接处理  
 
-统一资源定位器 \ (URL\) 是一种 URI。  当渐进 Web 应用 \ (PWA\) 注册为 https URI 的处理程序时，创建更具吸引力的体验。  PBA 可能会请求在激活关联的 URI 时启动。  例如，如果用户从电子邮件中选择指向新闻文章的链接。  用于PWA新闻文章的关联内容将自动启动以处理链接激活。  
+统一资源定位器 \(URL\) 是一种 URI。  当渐进 Web 应用 \(PWA\) 注册为 https URI 的处理程序时，创建更具吸引力的体验。  PBA 可能会请求在激活关联的 URI 时启动。  例如，如果用户从电子邮件中选择指向新闻文章的链接。  用于PWA新闻文章的关联内容将自动启动以处理链接激活。  
 
 此功能允许你使用 Web PWA向浏览器注册网站，并声明浏览器处理特定链接。  若要向PWA注册网站，请向清单 `url_handlers` 文件添加可选成员。  `url_handlers`成员是 `object[]` 一个 ，用于对应用希望处理的 URI 的来源进行分组。  
 
@@ -175,7 +175,7 @@ To preview URL link handling in Microsoft Edge on Windows， navigate to [Turn o
 
 #### <a name="wildcard-matching"></a>通配符匹配  
 
-使用通配符 \ (`*` \) 匹配一个或多个字符。  
+使用通配符 \(`*` \) 匹配一个或多个字符。  
 
 通配符前缀用于成员的来源字符串中 `url_handlers` ，以匹配不同的子域。  前缀必须针对 `*.` 此用法。  使用 `https` 通配符前缀时将假定此方案。  
 
@@ -219,18 +219,18 @@ Workplace collaboration and communication tool Microsoft Teams is built with Des
 为了最大化 Web 内容的可地址区域，浏览器会创建无框架窗口。  无框架窗口删除所有浏览器 UI，但作为覆盖提供的窗口控件除外。  窗口控件覆盖允许用户仍最小化、最大化、还原和关闭应用。  它还提供对使用 Web 应用菜单的相关浏览器控件的访问。  对于Chromium浏览器，覆盖层包括以下控件。  
 
 *   每个窗口控件按钮的宽度和高度相同的可拖动区域  
-*   The**设置 and more** \ (...\) button  
+*   The**设置 and more** \(...\) button  
 *   窗口控件按钮最小化、最大化、还原和关闭  
     
 除了前面列出的控件之外，覆盖层中显示的 UI 将在以下方案中动态调整大小。  
 
-*   启动已安装的 Web 应用后，网页的原点会在**设置**左侧显示更多 \ (...\) 菜单几秒钟，然后消失。  
-*   如果用户使用**设置**和更多 \ (...\) 菜单与扩展进行交互，则扩展的图标显示在三点菜单左侧的覆盖中。  退出任何扩展对话框后，图标将从覆盖层中删除。  
+*   启动已安装的 Web 应用后，网页的原点会在**设置**左侧显示更多 \(...\) 菜单几秒钟，然后消失。  
+*   如果用户使用**设置**和更多 \(...\) 菜单与扩展进行交互，则扩展的图标显示在三点菜单左侧的覆盖中。  退出任何扩展对话框后，图标将从覆盖层中删除。  
     
 | 语言方向 | 覆盖位置 | 详细信息 |  
 |:--- |:--- |:--- |  
-| 从左到右 \ (LTR\)  | 客户区域左上角 | 翻转控件 |  
-| 从右到左 \ (RTL\)  | 工作区的右上角 |  |  
+| 从左到右 \(LTR\)  | 客户区域左上角 | 翻转控件 |  
+| 从右到左 \(RTL\)  | 工作区的右上角 |  |  
 
 > [!IMPORTANT]
 > 覆盖始终位于 Web 内容的 Z 索引顶部，并接受所有用户输入，而不会将输入流到 Web 内容。  
@@ -508,15 +508,15 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 1.  打开 Microsoft Edge。   
 1.  导航到 `edge://apps`。  
 1.  将鼠标悬停在你的应用上。  
-1.  打开上下文菜单 \ (右键单击\) 然后在登录时选择 **"启动应用"。**  
+1.  打开上下文菜单 \(右键单击\) 然后在登录时选择 **"启动应用"。**  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在应用中登录功能时，使用上下文菜单打开"开始"Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在应用中登录功能时，使用上下文菜单打开开始Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
        使用上下文菜单在用户登录**功能时打开"开始"Microsoft Edge**  
     :::image-end:::  
     
 ## <a name="shortcuts"></a>快捷方式  
 
-`Shortcuts` 是清单文件的一个新增成员。  它允许你在 Web 应用中定义指向部件、关键网页或操作的链接。  Microsoft Windows将其集成为**Jumplists**。  **Jumplist 定义** 在下列 UI 元素之一上打开上下文菜单 \ (右键单击\) 时出现的弹出菜单。  
+`Shortcuts` 是清单文件的一个新增成员。  它允许你在 Web 应用中定义指向部件、关键网页或操作的链接。  Microsoft Windows将其集成为**Jumplists**。  **Jumplist 定义** 在下列 UI 元素之一上打开上下文菜单 \(右键单击\) 时出现的弹出菜单。  
 
 *   "开始"菜单上的磁贴  
 *   任务栏上的图标  
@@ -571,7 +571,7 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 
 提供有关 Web Microsoft Edge实验的反馈。  
 
-*   使用更多**\设置**\ (`...` \) > 将反馈发送给 Microsoft 发送**反馈**。  
+*   使用更多**\设置**\(`...` \) > 将反馈发送给 Microsoft 发送**反馈**。  
 *   选择 `Alt` + `Shift` + `I` 。  
     
 :::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="从用户发送PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::

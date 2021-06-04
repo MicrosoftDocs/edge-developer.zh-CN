@@ -38,7 +38,7 @@ ms.locfileid: "11564082"
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-**时间线上的分配检测** 在整个记录 \ (中定期获取堆快照，频率为每 50 ms\) ，最后一个快照位于录制末尾。  
+**时间线上的分配检测** 在整个记录 \(中定期获取堆快照，频率为每 50 ms\) ，最后一个快照位于录制末尾。  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配检测" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **日程表上的分配检测**  
@@ -100,7 +100,7 @@ ms.locfileid: "11564082"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] \(Technical Writer\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

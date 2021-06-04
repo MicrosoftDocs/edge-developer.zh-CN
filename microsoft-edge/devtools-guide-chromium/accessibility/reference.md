@@ -115,7 +115,7 @@ ax 扩展相对于“**审核**”工具的一个优势是，可以检查并突�
 1.  在 **DOM 树**中，选择要检查的元素。  
 1.  选择**辅助功能**窗格。  此窗格可能隐藏在**更多 选项卡** \(![更多 选项卡](../media/more-tabs-icon.msft.png)\) 按钮后面。  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="在“辅助功能”窗格中检查开发工具主页的 h1 元素。" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="在辅助功能窗格中检查开发工具主页的 h1 元素。" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    在“**辅助功能**”窗格中检查开发工具主页的 `h1` 元素。  
 :::image-end:::  
 
@@ -148,7 +148,7 @@ ARIA 属性可确保屏幕阅读器拥有正确显示页面内容需要的所有
 
 查看“[辅助功能](#the-accessibility-panel)”窗格中元素的计算出的属性。  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="辅助功能窗格“计算属性”部分" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="辅助功能窗格计算属性部分" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    “**辅助功能**”窗格的“**计算出的属性**”部分  
 :::image-end:::  
 

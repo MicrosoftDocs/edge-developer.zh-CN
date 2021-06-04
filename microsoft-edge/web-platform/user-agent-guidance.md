@@ -20,8 +20,8 @@ ms.locfileid: "11578775"
 
 |  | 服务器端 | 客户端 |  
 |:--- |:--- |:--- | 
-| **用户代理客户端提示** \ (推荐\)  | `Sec-CH-UA` HTTPS 标头 | `navigator.userAgentData` JavaScript 方法 |  
-| **User-Agent string** \ (legacy\)  | `User-Agent` HTTPS 标头 | `navigator.userAgent` JavaScript 方法 |  
+| **用户代理客户端提示** \(推荐\)  | `Sec-CH-UA` HTTPS 标头 | `navigator.userAgentData` JavaScript 方法 |  
+| **User-Agent string** \(legacy\)  | `User-Agent` HTTPS 标头 | `navigator.userAgent` JavaScript 方法 |  
 
 出于以下原因，Microsoft 建议 [尽可能][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] 使用功能检测。  
 
@@ -160,7 +160,7 @@ function isChromium() {
 
 ## <a name="user-agent-overrides"></a>用户代理替代  
 
-有时，网站无法识别新Microsoft Edge代理。  因此，一组网站功能可能无法正常运行。  当 Microsoft 收到问题类型通知时，Microsoft 将联系你 \ (网站所有者\) 并通知你更新的用户代理。  
+有时，网站无法识别新Microsoft Edge代理。  因此，一组网站功能可能无法正常运行。  当 Microsoft 收到问题类型通知时，Microsoft 将联系你 \(网站所有者\) 并通知你更新的用户代理。  
 
 可能需要更多时间来更新和测试网站的用户代理检测逻辑，以解决 Microsoft 报告的问题。  为了最大限度地提高用户的兼容性，Microsoft Edge Beta和稳定渠道使用用户代理替代列表。  更新网站时，请使用用户代理替代。  Microsoft 提供的用户代理替代列表。  
 

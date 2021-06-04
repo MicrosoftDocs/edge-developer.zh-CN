@@ -16,7 +16,7 @@ ms.locfileid: "11398103"
 ---
 # <a name="supported-apis-for-microsoft-edge-extensions"></a>Microsoft Edge 扩展支持的 API
 
-下表提供了在构建 Microsoft Edge \ (Chromium\) 扩展时可以使用的 API 列表。
+下表提供了在构建 Microsoft Edge \(Chromium\) 扩展时可以使用的 API 列表。
 
 | API                                   | 说明                                            
 |---------------------------------------|----------------------------------------------------------|

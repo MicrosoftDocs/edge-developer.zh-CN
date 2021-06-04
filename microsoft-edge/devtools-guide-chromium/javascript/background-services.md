@@ -41,7 +41,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTools 未打开。  
 后台服务事件日志可帮助你确保事件已按预期发送和接收。  你还可以检查每个事件的详细信息。  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="“推送消息”窗格" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="推送消息窗格" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
    “**推送消息**”窗格  
 :::image-end:::  
 
@@ -55,7 +55,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 1.  打开“**应用程序**”工具。  
 1.  打开“**后台提取**”面板。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="“后台提取”面板" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="后台提取面板" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
        “**后台提取**”面板  
     :::image-end:::  
     
@@ -68,7 +68,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
     
 1.  选择一个事件以在表下方的空白区域查看其详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="在“后台提取”窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="在后台提取窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
        在“**后台提取**”窗格中查看事件的详细信息  
     :::image-end:::  
     
@@ -82,20 +82,20 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 1.  打开“**应用程序**”工具。  
 1.  打开“**后台同步**”窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="“后台同步”窗格" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="后台同步窗格" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
        “**后台同步**”窗格  
     :::image-end:::  
     
 1.  选择“**记录**”\(“![记录](../media/record-icon.msft.png)”\)。  
    触发某些后台同步活动后，DevTools 记录事件到表中。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="“后台同步”窗格中的事件日志" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="后台同步窗格中的事件日志" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
        “**后台同步**”窗格中的事件日志  
     :::image-end:::  
     
 1.  选择一个事件以在表下方的空白区域查看其详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="在“后台同步”窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="在后台同步窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
        在“**后台同步**”窗格中查看事件的详细信息  
     :::image-end:::  
     
@@ -107,20 +107,20 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 1.  打开“**应用程序**”工具。  
 1.  打开“**通知**”窗格。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="“通知”窗格" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="通知窗格" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
        “**通知**”窗格  
     :::image-end:::  
     
 1.  选择“**记录**”\(“![记录](../media/record-icon.msft.png)”\)。  
    触发某些通知活动后，DevTools 记录事件到表中。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="“通知”窗格中的事件日志" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="通知窗格中的事件日志" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
        “**通知**”窗格中的事件日志  
     :::image-end:::  
     
 1.  选择一个事件以在表下方的空白区域查看其详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="在“通知”窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="在通知窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
        在“**通知**”窗格中查看事件的详细信息  
     :::image-end:::  
     
@@ -132,20 +132,20 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 1.  打开“**应用程序**”工具。  
 1.  打开“**推送消息**”面板。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="打开“推送消息”窗格" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="打开推送消息窗格" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
        打开“**推送消息**”窗格  
     :::image-end:::  
     
 1.  选择“**记录**”\(“![记录](../media/record-icon.msft.png)”\)。  
     触发某些推送消息活动后，DevTools 记录事件到表中。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="“推送消息”窗格中的事件日志" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="推送消息窗格中的事件日志" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
        “**推送消息**”窗格中的事件日志  
     :::image-end:::  
     
 1.  选择一个事件以在表下方的空白区域查看详细信息。  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="在“推送消息”窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="在推送消息窗格中查看事件的详细信息" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        在“**推送消息**”窗格中查看事件的详细信息  
     :::image-end:::  
     

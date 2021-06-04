@@ -64,7 +64,7 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 1.  [打开“命令”菜单][DevToolsCommandMenu]。  
 1.  开始键入`coverage`，选择“**显示覆盖范围**”命令，然后选择`Enter`以运行该命令。  在“**工具箱**”中打开“**覆盖范围**”面板。  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="“覆盖范围”面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="覆盖范围面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        “**覆盖范围**”面板  
     :::image-end:::  
     

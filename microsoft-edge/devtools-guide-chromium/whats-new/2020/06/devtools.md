@@ -64,7 +64,7 @@ Chromium问题[#1047356][CR1047356]
    使用网络控制台在 [NetworkLog][DevtoolsNetworkIndexLogActivity] 中编辑和 **重播请求**  
 :::image-end:::  
 
-网络控制台是一个新 **面板，它将** 在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 \ (\) 并选择"发送 **"。**  
+网络控制台是一个新 **面板，它将** 在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 \(\) 并选择"发送 **"。**  
 
 您还可以使用网络 **控制台** 直接从 DevTools 创建和发送 HTTP 请求。  
 
@@ -73,12 +73,12 @@ Chromium问题[#1047356][CR1047356]
 :::image-end:::  
 
 > [!TIP]
-> 若要在 **主 \ (** top\) 面板（而不是 [DevTools 箱][DevtoolsCustomizeIndexDrawer]）中显示网络控制台，请导航到在面板 [之间移动工具](#move-tools-between-panels)。  
+> 若要在 **主 \(** top\) 面板（而不是 [DevTools 箱][DevtoolsCustomizeIndexDrawer]）中显示网络控制台，请导航到在面板 [之间移动工具](#move-tools-between-panels)。  
 
 > [!NOTE]
 > 若要启用实验，请导航到打开 [实验][DevtoolsExperimentalFeaturesTurnOn] 功能，然后选择启用网络 **控制台旁边的复选框**。  
 > 
-> 打开网络 [日志][DevtoolsNetworkIndexLogActivity]，打开上下文菜单 \ (右键单击\) ，然后选择编辑 **和重播**。  
+> 打开网络 [日志][DevtoolsNetworkIndexLogActivity]，打开上下文菜单 \(右键单击\) ，然后选择编辑 **和重播**。  
 
 Chromium问题[#1093687][CR1093687]  
 
@@ -86,7 +86,7 @@ Chromium问题[#1093687][CR1093687]
 
 网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text=""网络"面板的"计时"选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="网络面板的计时选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件  
 :::image-end:::  
 
@@ -123,7 +123,7 @@ Chromium问题[#1070378][CR1070378]
    试验功能  
 :::image-end:::  
 
-通常，元素和网络等工具**** 只能在**** DevTools 的主 \ (\) 面板中打开。  同样，诸如**3D 视图**和**** 问题等工具可能只能在 DevTools (底部\) 面板中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。  
+通常，元素和网络等工具**** 只能在**** DevTools 的主 \(\) 面板中打开。  同样，诸如**3D 视图**和**** 问题等工具可能只能在 DevTools (底部\) 面板中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。  
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具  
@@ -160,7 +160,7 @@ Chromium问题[#1069404][CR1069404]
 
 现在您可以使用可构造样式表编辑在 JavaScript [中添加的样式][WicgConstructStylesheet]。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式][MdnShadowDom]。  
 
-例如，使用 `h1` `CSSStyleSheet` \ (CSSOM API\) 添加的样式以前不可编辑。  样式现在在"样式"面板中 **可** 编辑。  
+例如，使用 `h1` `CSSStyleSheet` \(CSSOM API\) 添加的样式以前不可编辑。  样式现在在"样式"面板中 **可** 编辑。  
 
 :::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="将随 CSSStyleSheet 一起添加的 h1 样式的背景属性从粉色更改为浅色" lightbox="../../media/2020/06/css-in-js.msft.png":::
    将 `background` 随 一起 `h1` 添加的样式 `CSSStyleSheet` 的属性从 更改 `pink` 到 `lightblue` 。
@@ -174,7 +174,7 @@ Chromium问题[#946975][CR946975]
 
 **"灯楼**"面板现在运行"Lighthouse 6"。  有关所有更改的完整列表，请导航到 [v6.0.0 发行说明][GithubGoogleChromeLighthouse600]。  
 
-Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 \ (LCP\) 、累积布局班次 \ (CLS\) 和总阻止时间 \ (TBT\) 。  
+Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 \(LCP\) 、累积布局班次 \(CLS\) 和总阻止时间 \(TBT\) 。  
 
 性能分数公式也进行了重新加权，以更好地反映用户的加载体验。  
 
@@ -182,7 +182,7 @@ Chromium问题[#772558][CR772558]
 
 #### <a name="first-meaningful-paint-deprecation"></a>First Meaningful 画图弃用  
 
-First Meaningful 画图 \ (FMP\) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
+First Meaningful 画图 \(FMP\) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
@@ -229,7 +229,7 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能。
 " **清单** "窗格现在显示针对以下条件的警告。  
 
 * 应用快捷方式图标小于 96x96 像素  
-* 应用快捷方式图标和清单图标不是方形 \ (，因为图标将被忽略\)   
+* 应用快捷方式图标和清单图标不是方形 \(，因为图标将被忽略\)   
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    应用快捷方式警告  

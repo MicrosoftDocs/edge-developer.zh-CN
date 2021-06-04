@@ -17,7 +17,7 @@ ms.locfileid: "11535711"
 ---
 # <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本  
 
-新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \ (Chromium\) 浏览器相同，大约每六周发布一次。  
+新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \(Chromium\) 浏览器相同，大约每六周发布一次。  
 
 ## <a name="release-and-prerelease-package"></a>发布和预发布包  
 

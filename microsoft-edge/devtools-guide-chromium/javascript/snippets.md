@@ -66,7 +66,7 @@ ms.locfileid: "11564110"
 
 左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text=""代码段"选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="代码段选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    " **代码段"** 选项卡  
 :::image-end:::  
 
@@ -74,11 +74,11 @@ ms.locfileid: "11564110"
 
 1.  选择" **源"** 选项卡。 将显示 **"源** "工具。  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开"页面"选项卡的"源"工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开页面选项卡的源工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
        在 **左侧** 打开" **页面"** 选项卡的"源"工具  
     :::image-end:::  
     
-1.  在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \ (![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。  
+1.  在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \(![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。  
     
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a>使用命令菜单打开"代码段"选项卡  
 
@@ -136,7 +136,7 @@ ms.locfileid: "11564110"
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
 1.  选择要运行的代码片段的名称。  代码片段将在**代码编辑器**中打开。  
-1.  Choose **Run snippet** \ (Run Snippet ![ ](../media/run-snippet-icon.msft.png) \) .
+1.  Choose **Run snippet** \(Run Snippet ![ ](../media/run-snippet-icon.msft.png) \) .
     
 ### <a name="run-a-snippet-with-the-command-menu"></a>使用命令菜单运行代码片段  
 

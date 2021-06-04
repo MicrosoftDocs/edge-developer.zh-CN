@@ -50,19 +50,19 @@ WebView2 团队正在计划以下主要工作，用于将来的更新。
       通用  
    :::column-end:::
    :::column span="2":::
-      *   Win32 C/C++ \ (Q4 2020\)   
-      *   .NET \ (Q4 2020\)   
+      *   Win32 C/C++ \(Q4 2020\)   
+      *   .NET \(Q4 2020\)   
       *   [WinUI 3.0][GithubMicrosoftUiXamlRoadmap]  
    :::column-end:::
 :::row-end:::  
 
 ## <a name="webview2-runtime-and-installer"></a>WebView2 运行时和安装程序  
 
-[使用常青分发][ConceptDistributionEvergreenModel] 模型，你可以将 WebView2 运行时的目标安装或链接安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达通用版本 \ (GA\) 。  
+[使用常青分发][ConceptDistributionEvergreenModel] 模型，你可以将 WebView2 运行时的目标安装或链接安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达通用版本 \(GA\) 。  
 
 ## <a name="fixed-version"></a>固定版本  
 
-[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。  固定版本已达到通用版本 \ (GA\) 。  
+[固定版本分发模型][ConceptsDistributionFixedVersionModel] 允许你将 Microsoft Edge 二进制文件打包到本机应用程序中。  固定版本已达到通用版本 \(GA\) 。  
 
 ## <a name="general-availability"></a>通用  
 

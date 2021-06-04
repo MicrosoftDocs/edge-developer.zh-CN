@@ -101,7 +101,7 @@ WebView2 基于新的 Microsoft Edge 浏览器。  你有机会将功能从浏�
 
 Microsoft Edge 和 WebView2 支持键盘快捷方式或键绑定。  Microsoft Edge 更新时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会打开。  若要避免更改键盘快捷方式，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动 `AreBrowserAcceleratorKeysEnabled` `FALSE` 快捷方式。  
 
-下表列出了 WebView2 中始终关闭的快捷方式。  星号 \ (\) 字符指示快捷方式未关闭，但它访问的功能已关闭或不适用于 `*` WebView2。  
+下表列出了 WebView2 中始终关闭的快捷方式。  星号 \(\) 字符指示快捷方式未关闭，但它访问的功能已关闭或不适用于 `*` WebView2。  
 
 | 操作 | Windows |  
 |:--- |:--- |  
@@ -117,7 +117,7 @@ Microsoft Edge 和 WebView2 支持键盘快捷方式或键绑定。  Microsoft E
 | 选择最后一个选项卡 | `Ctrl`+`9` |  
 | 选择下一个选项卡 | `Ctrl`+`Tab` |  
 | 选择上一个选项卡 | `Ctrl`+`Shift`+`Tab` |  
-| 选择选项卡 \ (1 - 8\)  | `Ctrl`+`(1-8)` |  
+| 选择选项卡 \(1 - 8\)  | `Ctrl`+`(1-8)` |  
 | 显示 Favorites 栏 `*` | `Ctrl`+`Shift`+`B` |  
 | 帮助 | `F1` |  
 | 焦点下一个窗格 `*` | `F6` |  

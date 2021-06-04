@@ -53,7 +53,7 @@ Chromium 问题 [#963183][CR963183]
 
 :::row:::
    :::column span="":::
-      中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
       繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
@@ -128,7 +128,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
 
 ### <a name="3d-view"></a>3D 视图  
 
-使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。  
+使用 **3D 视图** 通过浏览文档对象模型 [\(DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。  
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2020/01/3dview.msft.png":::
    DevTools 中的 3D 视图  
@@ -146,7 +146,7 @@ DevTools 团队还发布了一些 Visual Studio Code，[][VisualStudioCode]让�
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge  
 
-通过添加[\Microsoft Edge\ (Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 元素工具。  
+通过添加[\Microsoft Edge\(Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 元素工具。  
 
 :::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="使用元素扩展Visual Studio Code元素的 Microsoft Edge 工具" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    元素**工具**Visual Studio Code元素扩展Microsoft Edge元素  
@@ -225,7 +225,7 @@ Chromium问题[#924693][CR924693]
 
 "应用程序"面板中的"Cookie"窗格现在显示带黄色背景的阻止的 Cookie。  
 
-:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text=""应用程序"面板的"Cookie"窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
+:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text="应用程序面板的Cookie窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
    "应用程序"面板的"Cookie"窗格中阻止的 Cookie  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单�
 
 #### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a>复制为Node.js提取以包含 Cookie 数据  
 
-若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \ (右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` ****  >  **提取"。**  
+若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \(右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` ****  >  **提取"。**  
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="作为提取Node.js复制" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    作为提取Node.js复制  
@@ -330,7 +330,7 @@ Chromium问题[#985402][CR985402]
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "调试程序Microsoft Edge |Visual StudioMarketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge \ (Chromium\) |Visual StudioMarketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge \(Chromium\) |Visual StudioMarketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint |Visual StudioMarketplace"
 
 [TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79 "改进跟踪防护Microsoft Edge博客文章"

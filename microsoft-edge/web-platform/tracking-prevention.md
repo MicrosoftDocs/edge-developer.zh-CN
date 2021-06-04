@@ -75,7 +75,7 @@ Microsoft Edge目前为用户提供三个级别的跟踪防护，这三个级别
 
 ### <a name="org-relationship-mitigation"></a>组织关系缓解  
 
-多个热门网站同时维护网站和内容交付网络 \ (CDN\) ，以向这些网站提供静态资源和内容。  为了确保这些类型的方案不受跟踪防护的影响，Microsoft Edge 在网站向同一父组织拥有的其他网站提出第三方请求时，Microsoft Edge 将网站从跟踪防护中排除，如列表 \ () 上的[Disconnect entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson]中的定义。  这一点最好通过一个示例来说明。  
+多个热门网站同时维护网站和内容交付网络 \(CDN\) ，以向这些网站提供静态资源和内容。  为了确保这些类型的方案不受跟踪防护的影响，Microsoft Edge 在网站向同一父组织拥有的其他网站提出第三方请求时，Microsoft Edge 将网站从跟踪防护中排除，如列表 \() 上的[Disconnect entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson]中的定义。  这一点最好通过一个示例来说明。  
 
 > **示例：**
 > 
@@ -85,7 +85,7 @@ Microsoft Edge目前为用户提供三个级别的跟踪防护，这三个级别
 
 ### <a name="org-engagement-mitigation"></a>组织参与缓解  
 
-创建组织参与缓解是为了确保用户充分参与的组织所拥有的网站继续按预期在 Web 上工作，从而最大限度地降低通过跟踪防护引入的兼容性风险。  每当用户与给定[][ChromiumDesignDocsSiteEngagement]网站建立持续关系 \ (当前由网站参与分数 4.1 或更高\) 定义时，它就会利用网站参与来轻松强制执行。  此示例再一次说明了这一点：
+创建组织参与缓解是为了确保用户充分参与的组织所拥有的网站继续按预期在 Web 上工作，从而最大限度地降低通过跟踪防护引入的兼容性风险。  每当用户与给定[][ChromiumDesignDocsSiteEngagement]网站建立持续关系 \(当前由网站参与分数 4.1 或更高\) 定义时，它就会利用网站参与来轻松强制执行。  此示例再一次说明了这一点：
 
 > **示例：**
 > 
@@ -93,7 +93,7 @@ Microsoft Edge目前为用户提供三个级别的跟踪防护，这三个级别
 > 
 > 如果用户与 Social Org 拥有的任何一个域建立了 4.1 或更高的网站参与度分数，则认为他们与 Social Org 有关系。
 > 
-> 如果另一个网站 包含第三方内容 \ (那么从 Social Org 拥有的任何域（通常会通过跟踪防护实施来限制）的嵌入视频来自 `https://content-embedder.example` \) ，则只要用户的网站参与度分数（由 Social Org 拥有的域）维持在阈值之上，该网站就免于跟踪防护实施。 `social-videos.example`
+> 如果另一个网站 包含第三方内容 \(那么从 Social Org 拥有的任何域（通常会通过跟踪防护实施来限制）的嵌入视频来自 `https://content-embedder.example` \) ，则只要用户的网站参与度分数（由 Social Org 拥有的域）维持在阈值之上，该网站就免于跟踪防护实施。 `social-videos.example`
 > 
 > 如果网站不属于组织，用户必须直接使用网站参与度分数 4.1 或更高，然后才能放宽跟踪防护施加的任何存储访问/资源负载阻止。
 
@@ -101,7 +101,7 @@ Microsoft Edge目前为用户提供三个级别的跟踪防护，这三个级别
 
 ### <a name="the-compatexceptions-list"></a>CompatExceptions 列表  
 
-根据 Microsoft 收到的最新用户反馈，Microsoft Edge 维护一小部分网站 \ (其中大多数网站位于断开连接内容类别\) 尽管已执行上述两项缓解措施，但由于跟踪防护，这些网站已中断。 此列表上的网站免于跟踪防护实施。  可以在磁盘上的以下位置 [找到](#determining-whetherhow-a-particular-url-is-classified) 该列表。  用户可以使用 中的"阻止" **选项覆盖其上的** 条目 `edge://settings/content/cookies` 。
+根据 Microsoft 收到的最新用户反馈，Microsoft Edge 维护一小部分网站 \(其中大多数网站位于断开连接内容类别\) 尽管已执行上述两项缓解措施，但由于跟踪防护，这些网站已中断。 此列表上的网站免于跟踪防护实施。  可以在磁盘上的以下位置 [找到](#determining-whetherhow-a-particular-url-is-classified) 该列表。  用户可以使用 中的"阻止" **选项覆盖其上的** 条目 `edge://settings/content/cookies` 。
 
 为了避免继续维护此列表，Microsoft 当前正在存储[基本][GitHubMsExplainersStorageAccessApi]代码中的 Chromium ACCESS API。  [存储 Access API][GitHubMsExplainersStorageAccessApi]为网站开发人员提供了一种直接从用户请求存储访问权限的方法，为用户提供了有关其隐私设置如何影响其浏览体验的透明度，并给予网站开发人员控件快速直观地取消阻止。
 
@@ -112,10 +112,10 @@ Microsoft Edge目前为用户提供三个级别的跟踪防护，这三个级别
 下表显示了应用于每个分类跟踪器类别中的强制执行操作和Microsoft Edge。  
 
 *   顶部是断开连接跟踪保护列表类别定义的跟踪 [程序类别][GitHubDisconnectTrackingProtectionCategories]。  
-*   左侧是 Microsoft Edge \ (Basic、Balanced 和 Strict\) 中的三个级别的跟踪) 。  
+*   左侧是 Microsoft Edge \(Basic、Balanced 和 Strict\) 中的三个级别的跟踪) 。  
 *   该 `S` 字母指示阻止存储访问。  
-*   该字母指示存储访问和资源负载 `B` \ (，如网络请求\) 阻止。  
-*   连字符 \ (\) 表示存储访问或资源负载 `-` 没有应用块。  
+*   该字母指示存储访问和资源负载 `B` \(，如网络请求\) 阻止。  
+*   连字符 \(\) 表示存储访问或资源负载 `-` 没有应用块。  
 
 | | 放大 | 分析 | 内容 | 加密 | 指纹 | 社交 | Other | 同一组织缓解 | 组织参与缓解 |  
 | - | - | - | - | - | - | - | - | - | - | - |  

@@ -65,7 +65,7 @@ ms.locfileid: "11564726"
    清单**窗格**  
 :::image-end:::  
 
-*   To look at the manifest source， choose the link below **App Manifest** label \ (`https://airhorner.com/manifest.json` in the previous figure\) .  
+*   To look at the manifest source， choose the link below **App Manifest** label \(`https://airhorner.com/manifest.json` in the previous figure\) .  
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
 *   " **标识"** 和" **演示文稿** "部分仅以更用户友好的显示方式显示清单源中的字段。  
 *   " **图标** "部分显示你指定的每个图标。  
@@ -108,7 +108,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 应用程序**面板**中的"服务工作者****"窗格是 DevTools 中用于检查和调试服务工作者的主要位置。  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text=""服务工作人员"窗格" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="服务工作人员窗格" lightbox="../media/service-workers-pane.msft.png":::
    " **服务工作人员"** 窗格  
 :::image-end:::  
 
@@ -121,7 +121,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 *   " **同步** "按钮模拟后台同步事件。  
 *   " **注销"** 按钮将取消注册指定的服务工作器。  请查看清除 [存储](#clear-storage) ，了解通过单个按钮选择取消注册服务工作器以及擦除存储和缓存的方法。  
 *   Source **** 行将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。  
-*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器 \ (旁边的 ID ) 当前处于活动状态的服务 `#36` 工作者。  在状态旁边，如果服务**** 工作进程已停止\ (则显示启动按钮 \) 如果服务工作进程正在运行 (则**** 显示一个停止按钮 \) 。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。  
+*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器 \(旁边的 ID ) 当前处于活动状态的服务 `#36` 工作者。  在状态旁边，如果服务**** 工作进程已停止\(则显示启动按钮 \) 如果服务工作进程正在运行 (则**** 显示一个停止按钮 \) 。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。  
 *   **"客户端**"行将告知您服务工作线程的作用域。  当你 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。  
     
 如果服务工作线程导致任何错误，将显示名为 **"错误"** 的新标签。  
@@ -137,7 +137,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 ## <a name="service-worker-caches"></a>服务工作线程缓存  
 
-缓存**存储**窗格提供已使用 \ (service worker\) [Cache API][MDNWebCacheAPI]缓存的资源的只读列表。  
+缓存**存储**窗格提供已使用 \(service worker\) [Cache API][MDNWebCacheAPI]缓存的资源的只读列表。  
 
 :::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="缓存存储窗格" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    缓存**存储**窗格  
@@ -148,7 +148,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 如果您打开了两个或多个缓存，则缓存会显示在下面的"缓存缓存存储下。 ****  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text=""缓存存储下拉列表" lightbox="../media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="缓存存储下拉列表" lightbox="../media/cache-pane-cache-storage.msft.png":::
    "**缓存存储**下拉列表  
 :::image-end:::  
 

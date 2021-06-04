@@ -118,7 +118,7 @@ Chromium问题[#1081486][CR1081486]
 
 在 Microsoft Edge 84 中，[][DevtoolsNetworkDetails]当您在网络日志中**** 为资源打开"网络"工具中的"详细信息"窗格时，它[现在将具有焦点][DevtoolsNetworkLog]。  此更改允许屏幕阅读器读出"详细信息"窗格的内容并 **与之** 交互。  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text=""网络"面板中的"详细信息"窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="网络面板中的详细信息窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
    " **网络** "工具中的" **详细信息** "窗格在打开时将焦点
 :::image-end:::  
 
@@ -134,7 +134,7 @@ DevTools"箱"中新增的"问题"工具是为了帮助减少控制台的通知�
 
 To get started， navigate to [Find and Fix Problems with the Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools"箱"中的"问题"工具" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools箱中的问题工具" lightbox="../../media/2020/05/issues.msft.png":::
    DevTools"箱"中的"问题"工具****  
 :::image-end:::  
 
@@ -158,7 +158,7 @@ Chromium问题[#1040025][CR1040025]
 
 #### <a name="view-total-blocking-time-information-in-the-footer"></a>查看页脚中的总阻止时间信息  
 
-记录负载性能后，"性能****"面板现在在页脚中 (总阻止时间 \) TBT\) 信息。  TBT 是一种负载性能指标，有助于量化页面使用所花的时间。  它实质上测量页面显示为可用 \ (，因为内容呈现到屏幕\) ;但实际上并不可用，因为 JavaScript 会阻止主线程，因此页面不会响应用户输入。  TBT 是估计第一次输入延迟的主要指标。  
+记录负载性能后，"性能****"面板现在在页脚中 (总阻止时间 \) TBT\) 信息。  TBT 是一种负载性能指标，有助于量化页面使用所花的时间。  它实质上测量页面显示为可用 \(，因为内容呈现到屏幕\) ;但实际上并不可用，因为 JavaScript 会阻止主线程，因此页面不会响应用户输入。  TBT 是估计第一次输入延迟的主要指标。  
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->  
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->  
@@ -178,7 +178,7 @@ Chromium问题[#1054381][CR1054381]
 
 #### <a name="layout-shift-events-in-the-new-experience-section"></a>新"体验"部分中的布局 Shift 事件  
 
-"**性能"****面板的新"** 体验"部分可帮助你检测布局移动。  累积布局班次 \ (CLS\) 是一个指标，可帮助你量化不需要的视觉不稳定。
+"**性能"****面板的新"** 体验"部分可帮助你检测布局移动。  累积布局班次 \(CLS\) 是一个指标，可帮助你量化不需要的视觉不稳定。
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
@@ -233,7 +233,7 @@ Chromium问题[#1040019][CR1040019]
 
 当你通过选择值来选择[][DevtoolsCssReferenceColorPicker]颜色选取器或在"样式"窗格中的颜色表示形式**** 之间交替选择颜色时，将显示空格分隔 `Shift` `background-color` 的参数语法。  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在"样式"窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在样式窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
   在"样式"窗格中使用 **空格分隔** 的参数  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ Elements **** 工具中的"**属性**"窗格已弃用。  改为 `console.dir($0
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text=""清单"窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="清单窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   "清单"窗格中 **的应用** 快捷方式  
 :::image-end:::  
 

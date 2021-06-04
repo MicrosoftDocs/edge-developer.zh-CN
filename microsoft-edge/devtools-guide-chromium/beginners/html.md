@@ -378,7 +378,7 @@ ms.locfileid: "11564565"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Writer][KatherineJackson] \ (Technical Writer，Chrome DevTools\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Writer][KatherineJackson] \(Technical Writer，Chrome DevTools\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

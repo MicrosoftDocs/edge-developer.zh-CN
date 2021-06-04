@@ -16,7 +16,7 @@ ms.locfileid: "11387270"
 ---
 # <a name="visual-studio"></a>Visual Studio  
 
-Microsoft [Visual Studio][MicrosoftVisualstudioVs] 是一个集成开发环境 \ (IDE\) 。   使用它来编辑、调试、生成和发布 Web 应用。  它是一个功能丰富的程序，可用于 Web 开发的许多方面。  在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能以便于开发过程。  
+Microsoft [Visual Studio][MicrosoftVisualstudioVs] 是一个集成开发环境 \(IDE\) 。   使用它来编辑、调试、生成和发布 Web 应用。  它是一个功能丰富的程序，可用于 Web 开发的许多方面。  在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能以便于开发过程。  
 
 *   编译器  
 *   代码完成工具  
@@ -52,7 +52,7 @@ Open Visual Studio 2019 and choose **Create a new project**.  On the next screen
 
 创建项目后，打开 `ClientApp/src/components/Counter.js` 。  现在，若要Visual Studio JavaScript，请选择绿色"播放"按钮和**IIS Express****** 旁边的下拉列表。  
 
-:::image type="complex" source="./media/vs-dropdown.png" alt-text="绿色"播放"按钮和 IIS Express 旁边的下拉列表" lightbox="./media/vs-dropdown.png":::
+:::image type="complex" source="./media/vs-dropdown.png" alt-text="绿色播放按钮和 IIS Express 旁边的下拉列表" lightbox="./media/vs-dropdown.png":::
    绿色"播放"**按钮和****IIS Express 旁边的下拉列表**  
 :::image-end:::  
 
@@ -69,7 +69,7 @@ Open Visual Studio 2019 and choose **Create a new project**.  On the next screen
 :::image-end:::  
 
 > [!NOTE]
-> 如果选择 Microsoft Edge \ (EdgeHTML\) ，Visual Studio启动它，而不是 Microsoft Edge \ (Chromium\) 。  安装[Microsoft Edge][MicrosoftedgeinsiderDownload]的预览频道之一，或确保计算机上安装的 Microsoft Edge 版本是 Microsoft Edge \ (Chromium\) 而不是 Microsoft Edge \ (EdgeHTML\) 。  
+> 如果选择 Microsoft Edge \(EdgeHTML\) ，Visual Studio启动它，而不是 Microsoft Edge \(Chromium\) 。  安装[Microsoft Edge][MicrosoftedgeinsiderDownload]的预览频道之一，或确保计算机上安装的 Microsoft Edge 版本是 Microsoft Edge \(Chromium\) 而不是 Microsoft Edge \(EdgeHTML\) 。  
 
 现在，Visual Studio配置正确，选择绿色 **"播放"** 按钮。  Visual Studio生成应用、启动 Web 服务器、启动 Microsoft Edge，然后导航到 或在 中 `https://localhost:44362/` 指定的任何端口 `launchSettings.json` 。  
 
@@ -129,7 +129,7 @@ start msedge –remote-debugging-port=9222
 
 Microsoft Visual Studio 和 Microsoft Edge 团队希望详细了解如何在 Visual Studio 中使用 JavaScript。  若要发送反馈，请选择"发送反馈 **"图标Visual Studio**推文[@VisualStudio@EdgeDevTools。][TwitterIntentTweetViualstudioEdgdevtools]  
 
-:::image type="complex" source="./media/feedback-icon.png" alt-text=""发送反馈"图标Visual Studio" lightbox="./media/feedback-icon.png":::
+:::image type="complex" source="./media/feedback-icon.png" alt-text="发送反馈图标Visual Studio" lightbox="./media/feedback-icon.png":::
    " **发送反馈** "图标Visual Studio  
 :::image-end:::  
 

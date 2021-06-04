@@ -23,18 +23,18 @@ ms.locfileid: "11574580"
 
 请确保先安装以下先决条件列表，然后再继续。  
 
-*   [WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的非稳定通道。  有关更新Windows 10，请导航到Windows[更新：常见问题解答][MicrosoftSupport12373]。  
+*   [WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在 Windows 10 版本 1803 \(版本 17134\) 或更高版本上的非稳定通道。  有关更新Windows 10，请导航到Windows[更新：常见问题解答][MicrosoftSupport12373]。  
     
     > [!NOTE]
     > WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2019 版本 16.9 预览版。  有关详细信息，请导航到["Windows UI 库 3 预览版 3"。][WindowsAppsWinui3ConfigureYourDevEnvironment]  
     *   安装客户端时，请包含Visual Studio。  
-        *   .NET 桌面开发 \ (安装程序还会安装 .NET 5\)   
+        *   .NET 桌面开发 \(安装程序还会安装 .NET 5\)   
         *   通用 Windows 平台开发  
     *   若要生成 C++ 应用，还必须包括以下工作负载。  
         *   使用 C++ 进行桌面开发  
-        *   通用 (平台工作负载的 C++ \ (v142\) Windows 通用 Windows 平台工具可选组件。  有关详细信息，请**导航到右**窗格中"通用 Windows**平台**开发"部分下的"安装详细信息"。  
+        *   通用 (平台工作负载的 C++ \(v142\) Windows 通用 Windows 平台工具可选组件。  有关详细信息，请**导航到右**窗格中"通用 Windows**平台**开发"部分下的"安装详细信息"。  
         
 ## <a name="step-0---visual-studio-settings"></a>步骤 0 - Visual Studio设置  
 
@@ -64,7 +64,7 @@ ms.locfileid: "11574580"
     *   **目标版本****：Windows 10版本 1903 (版本 18362**) 或更高版本  
     *   **最低版本****：Windows 10版本 1803 (版本 17134) **  
         
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text=""新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="新建通用Windows平台Project对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
        "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::  
     

@@ -41,7 +41,7 @@ ms.locfileid: "11564362"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择"扩展坞"向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择扩展坞向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
          选择 **"扩展坞"向左**  
       :::image-end:::  
    :::column-end:::
@@ -77,7 +77,7 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
 
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置  
 
-1.  选择"自定义和控制**DevTools** \ (\) "，然后选择"撤消停靠到单独的窗口 `...` \ (**** Undock \) "，"扩展坞到底部 \ (扩展坞"到底部 \) ，或"扩展坞向左 \ (扩展坞"向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
+1.  选择"自定义和控制**DevTools** \(\) "，然后选择"撤消停靠到单独的窗口 `...` \(**** Undock \) "，"扩展坞到底部 \(扩展坞"到底部 \) ，或"扩展坞向左 \(扩展坞"向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        选择 **停靠到单独的窗口位置**  

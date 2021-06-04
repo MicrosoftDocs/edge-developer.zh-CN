@@ -17,7 +17,7 @@ ms.locfileid: "11536823"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>WebView2 Microsoft Edge简介  
 
-WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 \ (HTML、CSS 和 JavaScript\) 嵌入本机应用中。  WebView2 控件使用[Microsoft Edge (Chromium) ][MicrosoftedgeinsiderMain]作为呈现引擎，以在本机应用中显示 Web 内容。  使用 WebView2，你可以将 Web 代码嵌入本机应用的不同部分。  在单个 WebView 实例中生成所有本机应用。  若要了解如何开始生成 WebView2 应用，请导航到["入门"。](#get-started)  
+WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 \(HTML、CSS 和 JavaScript\) 嵌入本机应用中。  WebView2 控件使用[Microsoft Edge (Chromium) ][MicrosoftedgeinsiderMain]作为呈现引擎，以在本机应用中显示 Web 内容。  使用 WebView2，你可以将 Web 代码嵌入本机应用的不同部分。  在单个 WebView 实例中生成所有本机应用。  若要了解如何开始生成 WebView2 应用，请导航到["入门"。](#get-started)  
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="什么是 WebView？" lightbox="./media/WebView2/what-webview.png":::
    什么是 WebView？  
@@ -101,7 +101,7 @@ WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 \ (HTML、CSS 和
       向代码库添加 Web 代码可增强跨多个平台的重用。  
    :::column-end:::
    :::column span="1":::
-      当 WebView2 在通用版本 \ (GA\) 发布时，Microsoft 提供支持并添加新功能) 。  
+      当 WebView2 在通用版本 \(GA\) 发布时，Microsoft 提供支持并添加新功能) 。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -131,7 +131,7 @@ WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 \ (HTML、CSS 和
       依赖最新版 Chromium定期平台更新和安全修补程序。  
    :::column-end:::
    :::column span="1":::
-      \ (即将推出\) 选择在应用中打包Chromium位。  
+      \(即将推出\) 选择在应用中打包Chromium位。  
    :::column-end:::
    :::column span="1":::
       将 Web 组件分片添加到应用。  
@@ -151,27 +151,27 @@ WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 \ (HTML、CSS 和
 
 ## <a name="supported-platforms"></a>支持的平台  
 
-通用 \ (GA\) 或预览版可在以下编程环境中使用。  
+通用 \(GA\) 或预览版可在以下编程环境中使用。  
 
-*   Win32 C/C++ \ (GA\)   
+*   Win32 C/C++ \(GA\)   
 *   .NET Framework 4.5 或更高版本  
 *   .NET Core 3.1 或更高版本  
 *   .NET 5  
-*   [WinUI 3.0][UwpToolkitsWinui3] \ (Preview\)   
+*   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)   
     
 你可以运行以下版本的 WebView2 Windows。  
 
 *   Windows 10  
 *   Windows 8.1  
-*   Windows 7 \*\*  
+*   Windows 7   
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   WindowsServer 2012  
 *   Windows Server 2012 R2  
-*   WindowsServer 2008 R2 \*\*  
+*   WindowsServer 2008 R2   
     
 > [!IMPORTANT]
-> \*\* 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge。  有关详细信息，请导航到Microsoft Edge[支持的操作系统。][DeployedgeMicrosoftEdgeSupportedOS]  
+>  对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge。  有关详细信息，请导航到Microsoft Edge[支持的操作系统。][DeployedgeMicrosoftEdgeSupportedOS]  
 
 ## <a name="next-steps"></a>后续步骤  
 

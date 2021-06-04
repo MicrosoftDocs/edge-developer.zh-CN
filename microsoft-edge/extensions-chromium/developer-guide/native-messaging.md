@@ -119,7 +119,7 @@ ms.locfileid: "11475209"
       *   在Windows设备上，可以使用包含清单文件的目录的相对路径。  
       *   在 macOS 和 Linux 上，路径必须为绝对路径。  
           
-      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 \ (Windows\) ，如果参数设置为 ，则使用当前目录 `C:\App\nm_host.exe` \ (\) 启动二 `C:\App\` 进制文件。  
+      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 \(Windows\) ，如果参数设置为 ，则使用当前目录 `C:\App\nm_host.exe` \(\) 启动二 `C:\App\` 进制文件。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -159,7 +159,7 @@ ms.locfileid: "11475209"
 1.  选择 **"加载解压缩**"，然后选择要旁加载的扩展包。  
 1.  选择“确定”****。  
 1.  导航到 `edge://extensions` 页面并验证扩展是否列出。  
-1.  从页面上的扩展 `microsoft_catalog_extension_id` (\ (ID\) 复制该密钥。  
+1.  从页面上的扩展 `microsoft_catalog_extension_id` (\(ID\) 复制该密钥。  
     
 准备好将扩展分发给用户时，将扩展发布到Microsoft Edge加载项商店。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。  
 

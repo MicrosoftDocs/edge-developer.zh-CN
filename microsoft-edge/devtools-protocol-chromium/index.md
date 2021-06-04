@@ -15,18 +15,18 @@ ms.locfileid: "11480158"
 ---
 # <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Microsoft Edge (Chromium) DevTools 协议概述  
 
-随着 Microsoft Edge 的基础 Web 平台[Chromium，Microsoft Edge (EdgeHTML) DevTools 协议](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)将不会接收任何进一步的更新。  The Microsoft Edge \ (Chromium\) DevTools Protocol will match the API of the Chrome DevTools Protocol going.  
+随着 Microsoft Edge 的基础 Web 平台[Chromium，Microsoft Edge (EdgeHTML) DevTools 协议](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)将不会接收任何进一步的更新。  The Microsoft Edge \(Chromium\) DevTools Protocol will match the API of the Chrome DevTools Protocol going.  
 
 可以通过引用 [Chrome DevTools](https://chromedevtools.github.io/devtools-protocol/tot)协议查看器来查找有关这些域和方法的文档。  
 
 > [!NOTE]
-> `ms` [Microsoft Edge (EdgeHTML) DevTools](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)协议中前缀的任何方法在 Microsoft Edge \ (Chromium\) DevTools 协议中不再受支持。  
+> `ms` [Microsoft Edge (EdgeHTML) DevTools](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)协议中前缀的任何方法在 Microsoft Edge \(Chromium\) DevTools 协议中不再受支持。  
 
 ## <a name="using-the-devtools-protocol"></a>使用 DevTools 协议  
 
-下面将了解如何将自定义工具客户端附加到 Microsoft Edge \ (Chromium\) 中的 DevTools Server。  
+下面将了解如何将自定义工具客户端附加到 Microsoft Edge \(Chromium\) 中的 DevTools Server。  
 
-1.  确保关闭 \Microsoft Edge \ (Chromium\) 的所有实例。  
+1.  确保关闭 \Microsoft Edge \(Chromium\) 的所有实例。  
 1.  启动Microsoft Edge调试 (Chromium\) 调试端口：。 
     
     ```shell
@@ -49,7 +49,7 @@ ms.locfileid: "11480158"
 
 ## <a name="devtools-protocol-http-endpoints"></a>DevTools 协议 HTTP 终结点  
 
-Microsoft Edge \ (Chromium\) DevTools 协议支持以下 HTTP 终结点。  
+Microsoft Edge \(Chromium\) DevTools 协议支持以下 HTTP 终结点。  
 
 ## <a name="jsonversion"></a>/json/version  
 
@@ -108,7 +108,7 @@ Microsoft Edge \ (Chromium\) DevTools 协议支持以下 HTTP 终结点。
 
 ## <a name="jsonclose"></a>/json/close  
 
-关闭目标进程 \ (例如，在 Microsoft Edge \ (Chromium\) 中，关闭页面选项卡\) 。  
+关闭目标进程 \(例如，在 Microsoft Edge \(Chromium\) 中，关闭页面选项卡\) 。  
 
 **参数**  
 
@@ -130,7 +130,7 @@ String(“Target is closing”)
 
 ### <a name="msedgejsonlist"></a>/msedge/json/list  
 
-提供所有进程 \ (包括 PBA 和 Microsoft Edge\) 的所有实例中所有选项卡的候选 `msedge.exe` Windows 10，以便进行调试。 [](../progressive-web-apps-chromium/index.md)  
+提供所有进程 \(包括 PBA 和 Microsoft Edge\) 的所有实例中所有选项卡的候选 `msedge.exe` Windows 10，以便进行调试。 [](../progressive-web-apps-chromium/index.md)  
 
 **参数**  
 

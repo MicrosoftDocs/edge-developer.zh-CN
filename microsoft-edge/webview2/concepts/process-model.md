@@ -58,7 +58,7 @@ WebView2 使用与 Microsoft Edge 浏览器相同的进程模型。  有关浏�
 若要从 WebView2 实例的 **DevTools** 窗口打开浏览器任务管理器窗口，请完成以下操作。  
 
 *   选择 `Shift`+`Escape`。  
-*   将鼠标悬停在 DevTools 窗口标题栏上，打开上下文菜单 \ (右键单击\) ，然后选择 `Browser task manager` 。  
+*   将鼠标悬停在 DevTools 窗口标题栏上，打开上下文菜单 \(右键单击\) ，然后选择 `Browser task manager` 。  
     
 将显示与 WebView2 的浏览器进程关联的所有进程，包括关联目的。  
 

@@ -41,7 +41,7 @@ ms.locfileid: "11564803"
     
 1.  展开 “**IndexedDB**” 菜单，查看哪些数据库可用。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="“IndexedDB”菜单" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="IndexedDB菜单" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
        “**IndexedDB**” 菜单  
     :::image-end:::  
     
@@ -134,7 +134,7 @@ ms.locfileid: "11564803"
 1.  [查看要删除的 IndexedDB 数据库](#view-indexeddb-data)。  
 1.  选择“**删除数据库**”。  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="“删除数据库”按钮" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="删除数据库按钮" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
        “**删除数据库**”按钮  
     :::image-end:::  
     
@@ -144,7 +144,7 @@ ms.locfileid: "11564803"
 1.  确保已启用 **IndexedDB** 复选框。  
 1.  选择“**清除网站数据**”。  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="“清除存储”窗格" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="清除存储窗格" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
        “**清除存储**”窗格  
     :::image-end:::  
     

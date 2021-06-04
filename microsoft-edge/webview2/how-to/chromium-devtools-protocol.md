@@ -17,7 +17,7 @@ ms.locfileid: "11535840"
 ---
 # <a name="use-chromium-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chromium 开发工具协议  
 
-开发人员[Chromium协议][GitHubChromedevtoolsDevtoolsProtocol]提供了用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chromium DevTools 协议是 Microsoft Edge \ (Chromium\) DevTools 的基础。  将 Chromium DevTools 协议用于 WebView2 平台中未实现的功能。  有关开发人员工具Chromium功能的信息，请导航到 Chromium [DevTools 协议][GitHubChromedevtoolsDevtoolsProtocol]。  
+开发人员[Chromium协议][GitHubChromedevtoolsDevtoolsProtocol]提供了用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chromium DevTools 协议是 Microsoft Edge \(Chromium\) DevTools 的基础。  将 Chromium DevTools 协议用于 WebView2 平台中未实现的功能。  有关开发人员工具Chromium功能的信息，请导航到 Chromium [DevTools 协议][GitHubChromedevtoolsDevtoolsProtocol]。  
 
 > [!CAUTION]
 > WebView2 Microsoft Edge团队不维护或支持 Chromium Tools 协议。  Chromium开发人员工具协议由开源项目Chromium维护。  
@@ -26,7 +26,7 @@ ms.locfileid: "11535840"
 
 若要在 WebView2 Chromium DevTools 协议 API，请使用以下任一操作。  
 
-*   安装并使用[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 包 \ (.NET\) 。  
+*   安装并使用[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 包 \(.NET\) 。  
 *   运行下列方法之一。  
     *   [.NET：CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString] [、GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]  
     *   Win32  [C/C++：CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod] [、ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]  
@@ -42,7 +42,7 @@ ms.locfileid: "11535840"
 
 若要创建 `HTML file` 以查找地理位置，请完成以下操作。  
 
-1.  打开Visual Studio Code \ (或你选择的 IDE\) 。  
+1.  打开Visual Studio Code \(或你选择的 IDE\) 。  
 1.  创建新 `.html` 文件。  
 1.  将以下代码段复制并粘贴到新 `.html` 文件中。  
     

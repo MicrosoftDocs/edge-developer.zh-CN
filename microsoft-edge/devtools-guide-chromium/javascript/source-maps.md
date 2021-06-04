@@ -56,9 +56,9 @@ ms.locfileid: "11564047"
 
 通常将以下类型的预处理器与 Source 地图：  
 
-*   Transpilers [\ (，Traceur][BabelJS] [][GitHubWikiGoogleTraceurCompiler]\)   
-*   Compilers \ ([Closure Compiler][GitHubGoogleClosureCompiler]， [TypeScript][|::ref1::|Main]， [CoffeeScript][|::ref2::|Main]，[则 ) ][DartMain]  
-*   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)   
+*   Transpilers [\(，Traceur][BabelJS] [][GitHubWikiGoogleTraceurCompiler]\)   
+*   Compilers \([Closure Compiler][GitHubGoogleClosureCompiler]， [TypeScript][|::ref1::|Main]， [CoffeeScript][|::ref2::|Main]，[则 ) ][DartMain]  
+*   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)   
     
 ## <a name="source-maps-in-devtools-sources-tool"></a>DevTools 地图工具中的源源  
 
@@ -68,7 +68,7 @@ ms.locfileid: "11564047"
 
 ### <a name="enable-source-maps-in-settings"></a>在设置地图源源  
 
-源地图默认启用<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \ (`...` \) >**设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**  
+源地图默认启用<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \(`...` \) >**设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**  
@@ -78,8 +78,8 @@ ms.locfileid: "11564047"
 
 调试代码并启用地图时，源地图显示在两处：  
 
-1.  在控制台 \ (源的链接应该是原始文件，而不是生成的\)   
-1.  单步执行代码 \ (调用堆栈中的链接应打开原始源文件\)   
+1.  在控制台 \(源的链接应该是原始文件，而不是生成的\)   
+1.  单步执行代码 \(调用堆栈中的链接应打开原始源文件\)   
     
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
@@ -137,7 +137,7 @@ ms.locfileid: "11564047"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX\) 创作。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] \(Tech Writer\) 和[Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX\) 创作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

@@ -28,7 +28,7 @@ ms.locfileid: "11399272"
 
 ## <a name="configuration"></a>配置  
 
-此扩展使用默认配置 [json][GithubWebhintioIndexjson] 文件，用于激活 HTML、CSS、模板系统 \ (JSX/TSX、Angular 等的提示和分析程序\) 、JavaScript/TypeScript 等。  
+此扩展使用默认配置 [json][GithubWebhintioIndexjson] 文件，用于激活 HTML、CSS、模板系统 \(JSX/TSX、Angular 等的提示和分析程序\) 、JavaScript/TypeScript 等。  
 
 ```json
 {

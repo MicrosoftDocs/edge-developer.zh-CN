@@ -14,9 +14,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11397515"
 ---
-# <a name="content-security-policy-csp"></a>内容安全策略 \ (CSP\)   
+# <a name="content-security-policy-csp"></a>内容安全策略 \(CSP\)   
 
-为了缓解大量的潜在跨站点脚本问题，Microsoft Edge 扩展系统合并了内容安全策略 [\ (CSP\) 的一般概念 ][W3CContentSecurityPolicy]。  这引入了一些相当严格的策略，这些策略使扩展在默认情况下更加安全，并让你能够创建和实施规则，以管理扩展和应用程序可能加载和运行的内容类型。  
+为了缓解大量的潜在跨站点脚本问题，Microsoft Edge 扩展系统合并了内容安全策略 [\(CSP\) 的一般概念 ][W3CContentSecurityPolicy]。  这引入了一些相当严格的策略，这些策略使扩展在默认情况下更加安全，并让你能够创建和实施规则，以管理扩展和应用程序可能加载和运行的内容类型。  
 
 通常，CSP 用作扩展加载或运行的资源的阻止/允许列表机制。  通过为扩展定义合理的策略，你可以仔细考虑扩展所需的资源，并要求浏览器确保这些是你的扩展有权访问的唯一资源。  这些策略提供高于扩展请求的主机权限的安全性;它们是一层额外的保护，而不是替代。  
 
@@ -66,7 +66,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 内联 JavaScript 不运行。  此限制同时禁止内联 `<script>` 块和内联事件处理程序（如 `<button onclick="...">` ）。
 
-第一个限制通过使您无法意外运行恶意第三方提供的脚本来擦除大量跨站点脚本攻击。  但是，它确实需要你在内容和行为 \ (编写代码，您当然应该这样做，正确) 。  例如，可以更清楚地说明这一点。  您可以尝试将浏览器操作弹出窗口编写为单个 `pop-up.html` 包含：  
+第一个限制通过使您无法意外运行恶意第三方提供的脚本来擦除大量跨站点脚本攻击。  但是，它确实需要你在内容和行为 \(编写代码，您当然应该这样做，正确) 。  例如，可以更清楚地说明这一点。  您可以尝试将浏览器操作弹出窗口编写为单个 `pop-up.html` 包含：  
 
 ```html
 <!doctype html>
@@ -101,7 +101,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 为了使此操作按预期方式工作，必须更改以下三项：  
 
-*   必须将 `clickHandler` 定义移动到外部 JavaScript 文件 \ (`popup.js` 可能是一个很好的目标) 。  
+*   必须将 `clickHandler` 定义移动到外部 JavaScript 文件 \(`popup.js` 可能是一个很好的目标) 。  
 *   内联事件处理程序定义必须重写为 ，并 `addEventListener` 提取到 `popup.js` 中。  
     如果当前正在使用类似 的代码启动程序，请考虑通过挂钩到文档的事件或窗口的事件来替换它， `<body onload="main();">` `DOMContentLoaded` `load` 具体取决于你的要求。  使用前者，因为它通常更快速地触发。  
 
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 脚本和对象资源只能从扩展包加载，而不是从大型 Web 加载。  这将确保你的扩展仅运行你专门批准的代码，防止活动网络攻击者恶意重定向你的资源请求。  
 
-请考虑将 jQuery 的特定版本包括在扩展包中，而不是编写依赖于 jQuery \ (或任何其他库\) 从外部 CDN 加载的代码。  即，而不是：  
+请考虑将 jQuery 的特定版本包括在扩展包中，而不是编写依赖于 jQuery \(或任何其他库\) 从外部 CDN 加载的代码。  即，而不是：  
 
 ```html
 <!doctype html>
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 As of Chrome 46, -->  
 
-内联脚本能够通过在策略中指定源代码的 base64 编码哈希来允许。  此哈希必须以使用的哈希算法 \ (sha256、sha384 或 sha512\) 作为前缀。  例如，导航到元素 [的哈希 \<script\> 用法][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]。  
+内联脚本能够通过在策略中指定源代码的 base64 编码哈希来允许。  此哈希必须以使用的哈希算法 \(sha256、sha384 或 sha512\) 作为前缀。  例如，导航到元素 [的哈希 \<script\> 用法][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]。  
 
 **远程脚本**  
 
@@ -214,7 +214,7 @@ As of Chrome 46, -->
 ```  
 
 > [!NOTE]
-> 和 `script-src` `object-src` 都由策略定义。  Microsoft Edge 不接受不将其中每个值限制为 \ (\) ' `self` "的策略。  
+> 和 `script-src` `object-src` 都由策略定义。  Microsoft Edge 不接受不将其中每个值限制为 \(\) ' `self` "的策略。  
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->  
 
@@ -230,7 +230,7 @@ As of Chrome 46, -->
 
 ## <a name="tightening-the-default-policy"></a>使用默认策略  
 
-当然，你可以将此策略严格到扩展允许的任何程度，以便以便利为代价提高安全性。  若要指定你的扩展只能从关联的扩展包加载任何类型的 \ (图像等\) 资源，例如，策略 可能合适 `default-src 'self'` 。  
+当然，你可以将此策略严格到扩展允许的任何程度，以便以便利为代价提高安全性。  若要指定你的扩展只能从关联的扩展包加载任何类型的 \(图像等\) 资源，例如，策略 可能合适 `default-src 'self'` 。  
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->  
 
@@ -253,7 +253,7 @@ document.write("<script>alert(1);</script>");
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```  
 
-如果用户选择该按钮， `onclick` 脚本将不会运行。  这是因为脚本未立即运行，在未将事件发生视为内容脚本的一部分之前不会解释代码，因此页面 \ (而非 Extension\) 的 CSP 将限制行为。 `click`  由于该 CSP 不指定 `unsafe-inline` ，内联事件处理程序将被阻止。  
+如果用户选择该按钮， `onclick` 脚本将不会运行。  这是因为脚本未立即运行，在未将事件发生视为内容脚本的一部分之前不会解释代码，因此页面 \(而非 Extension\) 的 CSP 将限制行为。 `click`  由于该 CSP 不指定 `unsafe-inline` ，内联事件处理程序将被阻止。  
 在这种情况下实现所需行为的正确方法可能是将处理程序添加为内容脚本中的函数， `onclick` 如下所示：  
 
 ```javascript

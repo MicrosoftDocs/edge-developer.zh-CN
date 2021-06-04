@@ -43,7 +43,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 打开“**布局**”窗格。  当网格包含在页面上时，“**布局**”窗格将包括“**网格**”部分，其中包含许多用于查看网格的选项。  
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="“布局”窗格" lightbox="../media/grid-layout-pane.msft.png":::
+:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="布局窗格" lightbox="../media/grid-layout-pane.msft.png":::
    “**布局**”窗格  
 :::image-end:::  
 

@@ -19,7 +19,7 @@ ms.locfileid: "11519147"
 操作系统具有一种以较暗或更浅的颜色显示任何应用程序的方法。  在深色模式下操作系统中具有浅色主题的 Web 产品很正常，并且对于一些用户来说可能是一个辅助功能问题。  在 Web 上，可以使用首选配色 [方案][MDNPrefersColorScheme] CSS 媒体查询检测用户是否希望以较暗或更浅的配色方案显示产品。  使用[Microsoft Edge工具][DevtoolsIndex]模拟从深色模式到浅色模式的变化，而无需更改整个操作系统。  
 
 1.  打开“**命令菜单**”。  
-    1.  选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。  
+    1.  选择 `Ctrl` + `Shift` + `P` \(Windows/Linux\) `Command` + `Shift` + `P` 或 \(macOS\) 。  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            **命令菜单**  

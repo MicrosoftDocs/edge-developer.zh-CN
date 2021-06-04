@@ -30,7 +30,7 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
     
 1.  登录到网站。  
 1.  [打开 DevTools][DevtoolsGuideChromiumOpen]。  
-1.  若要打开**WebAuthn**工具，请选择自定义和控制**DevTools** \ (`...` \) 图标>**更多工具**  >  **WebAuthn**。  
+1.  若要打开**WebAuthn**工具，请选择自定义和控制**DevTools** \(`...` \) 图标>**更多工具**  >  **WebAuthn**。  
     
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn 工具" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        **WebAuthn** 工具  
@@ -49,7 +49,7 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
     |:--- |:--- |:--- |  
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] 或 [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | 虚拟验证器用于编码和解码的协议 |  
     | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟选定的传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举][GithubW3cWebauthnEnumTransport] |  
-    |  `Supports resident keys` | 使用复选框 (\) 或关闭\) \ | 如果 Web 应用依赖驻留密钥 \ (也称为客户端可发现凭据\) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举][GithubW3cWebauthnEnumResidentkeyrequirement]。 |  
+    |  `Supports resident keys` | 使用复选框 (\) 或关闭\) \ | 如果 Web 应用依赖驻留密钥 \(也称为客户端可发现凭据\) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举][GithubW3cWebauthnEnumResidentkeyrequirement]。 |  
     | `Supports user verification` | 使用复选框 (\) 或关闭\) \ | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  有关详细信息，请导航到" [用户验证"][GithubW3cWebauthnEnumUserverification] |  
     
 1.  选择“添加”按钮****。  

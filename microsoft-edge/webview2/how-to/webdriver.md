@@ -17,7 +17,7 @@ ms.locfileid: "11535813"
 ---
 # <a name="automate-and-test-webview2-with-microsoft-edge-driver"></a>使用驱动程序自动化和测试 WebView2 Microsoft Edge驱动程序  
 
-由于 WebView2 使用 Microsoft Edge \ (Chromium\) Web 平台，因此 WebView2 开发人员 \ (you\) 可以利用标准 Web 工具进行调试和自动化。  Selenium 是此类工具之一。  它实现 W3C [WebDriver][W3cWebdriver2] API。  可以使用 Selenium 创建自动测试来模拟用户交互。  
+由于 WebView2 使用 Microsoft Edge \(Chromium\) Web 平台，因此 WebView2 开发人员 \(you\) 可以利用标准 Web 工具进行调试和自动化。  Selenium 是此类工具之一。  它实现 W3C [WebDriver][W3cWebdriver2] API。  可以使用 Selenium 创建自动测试来模拟用户交互。  
 
 开始执行以下步骤。  
 
@@ -148,9 +148,9 @@ ms.locfileid: "11535813"
 
 ## <a name="see-also"></a>另请参阅  
 
-*   若要全面了解 API Selenium 如何驱动 WebView2 或 Microsoft Edge \ (Chromium\) ，请导航到[Selenium 文档中的 WebDriver][SeleniumWebdriver]   
+*   若要全面了解 API Selenium 如何驱动 WebView2 或 Microsoft Edge \(Chromium\) ，请导航到[Selenium 文档中的 WebDriver][SeleniumWebdriver]   
 *   若要了解有关 WebView2 控件以及如何在本机应用中嵌入 Web 内容时使用它，请导航到"Microsoft Edge [WebView2"。][WebViewIndex]  
-*   若要了解有关自动执行 Microsoft Edge \ (Chromium\) ，请导航到"使用[WebDriver (Chromium) 实现测试自动化"][WebdriverChromium]   
+*   若要了解有关自动执行 Microsoft Edge \(Chromium\) ，请导航到"使用[WebDriver (Chromium) 实现测试自动化"][WebdriverChromium]   
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 WebView 团队Microsoft Edge联系  
 

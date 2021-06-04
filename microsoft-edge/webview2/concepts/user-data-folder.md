@@ -28,7 +28,7 @@ WebView2 应用程序与用户数据文件夹交互，以存储浏览器数据�
     
 ## <a name="create-user-data-folders"></a>创建用户数据文件夹  
 
-若要指定用户数据文件夹的位置，在调用 `userDataFolder` [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) \ (Win32\) 或 [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) \ (.NET\) 时包括 参数。  创建后，WebView2 控件中的浏览器数据存储在 的子文件夹内 `userDataFolder` 。  如果 `userDataFolder` 未指定，WebView2 将按如下方式在默认位置创建用户数据文件夹：  
+若要指定用户数据文件夹的位置，在调用 `userDataFolder` [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) \(Win32\) 或 [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) \(.NET\) 时包括 参数。  创建后，WebView2 控件中的浏览器数据存储在 的子文件夹内 `userDataFolder` 。  如果 `userDataFolder` 未指定，WebView2 将按如下方式在默认位置创建用户数据文件夹：  
 
 *   对于打包的 Windows 应用商店应用，默认用户文件夹是程序包文件夹中 `ApplicationData\LocalFolder` 的子文件夹。  
 *   对于现有桌面应用，默认用户数据文件夹是应用程序 + 的 exe 路径 `.WebView2` 。  我们建议你指定用户数据文件夹，并且你在存储所有其他应用数据的同一文件夹中创建它，而不是使用默认值。  
@@ -54,8 +54,8 @@ WebView2 控件可以共享相同的用户数据文件夹，以：
     
 共享用户数据文件夹时，请考虑以下事项：  
 
-1.  当重新创建 WebView2 控件以使用 [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) \ (Win32\) 或 [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) \ (.NET\) 事件更新浏览器版本时，请确保浏览器进程退出并关闭共享相同用户数据文件夹的 WebView2 控件。  若要检索浏览器进程的进程 ID，请使用 `BrowserProcessId` WebView2 控件的 属性。  
-1.  共享相同用户数据文件夹的 WebView2 控件必须对 [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) \ (Win32\) 或 [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) \ (.NET\) 使用相同的选项。  如果没有，WebView2 的创建将失败 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` 。  
+1.  当重新创建 WebView2 控件以使用 [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) \(Win32\) 或 [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) \(.NET\) 事件更新浏览器版本时，请确保浏览器进程退出并关闭共享相同用户数据文件夹的 WebView2 控件。  若要检索浏览器进程的进程 ID，请使用 `BrowserProcessId` WebView2 控件的 属性。  
+1.  共享相同用户数据文件夹的 WebView2 控件必须对 [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) \(Win32\) 或 [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) \(.NET\) 使用相同的选项。  如果没有，WebView2 的创建将失败 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` 。  
     
 若要隔离应用程序的不同部分或不需要在 WebView2 控件之间共享数据，可以选择使用不同的用户数据文件夹。  例如，应用程序可能由两个 WebView2 控件组成，一个控件用于显示广告，另一个控件用于显示应用程序内容。  在此方案中，开发人员可以选择针对每个 WebView2 控件使用不同的用户数据文件夹。  
 

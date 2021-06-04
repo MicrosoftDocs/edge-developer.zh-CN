@@ -47,7 +47,7 @@ Firefox 具有响应 [式][MDNResponsiveDesignMode] 设计视图，该视图鼓�
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟  
 
-若要模拟Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
+若要模拟Windows Phones，请使用 Microsoft Edge \(EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
 
 使用 [IE 11 仿真][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。  
 
@@ -111,7 +111,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 完成后，了解如何通过 Apple 开发人员文档使用 [模拟器][AppleSimulatorHelp]。  
 
 > [!NOTE]
-> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \ (右键单击\) ，然后选择"保持在扩展坞中 **"。**  现在只要需要图标即可。  
+> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \(右键单击\) ，然后选择"保持在扩展坞中 **"。**  现在只要需要图标即可。  
 
 ###  <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML)   
 
@@ -119,7 +119,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    新式 IE VM  
 :::image-end:::  
 
-Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 可使你通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
+Microsoft Edge \(EdgeHTML\) Virtual Machines \(VM\) 可使你通过 VirtualBox \(或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
 
 ## <a name="cloud-based-emulators-and-simulators"></a>基于云的模拟器和模拟器  
 
@@ -155,7 +155,7 @@ Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 可使你通过 VirtualBox
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \(Tech Writer\) 和[Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

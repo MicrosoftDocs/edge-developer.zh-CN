@@ -22,7 +22,7 @@ ms.locfileid: "11230689"
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-若要获取下面突出显示的任何扩展，请在 Windows/Linux 或 Visual Studio Code 中的 `Ctrl` + `Shift` + `X` `Command` + `Shift` + macOS\) 上导航到扩展 `X` \ (选择。  
+若要获取下面突出显示的任何扩展，请在 Windows/Linux 或 Visual Studio Code 中的 `Ctrl` + `Shift` + `X` `Command` + `Shift` + macOS\) 上导航到扩展 `X` \(选择。  
 
 在 Marketplace 中搜索特定扩展，然后选择"安装 **"。**  
 
@@ -55,7 +55,7 @@ ms.locfileid: "11230689"
 
 使用[调试器 for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code 扩展，可以分行调试前端 JavaScript 代码，并直接从 Visual Studio Code `console.log()` [查看语句][VisualstudioCode]。  
       
-使用调试器工具，你可以启动或附加到 Microsoft Edge \ (EdgeHTML\) 和 Microsoft Edge \ (Chromium\) 。  有关从配置和示例配置Microsoft Edge调试Visual Studio Code演练，请导航到调试 `launch.json` 器 For Microsoft Edge Visual Studio Code [Extension][VisualStudioCodeDebuggerEdge]。  选择以下图像以查看扩展的操作。  
+使用调试器工具，你可以启动或附加到 Microsoft Edge \(EdgeHTML\) 和 Microsoft Edge \(Chromium\) 。  有关从配置和示例配置Microsoft Edge调试Visual Studio Code演练，请导航到调试 `launch.json` 器 For Microsoft Edge Visual Studio Code [Extension][VisualStudioCodeDebuggerEdge]。  选择以下图像以查看扩展的操作。  
 
 :::image type="complex" source="./media/debugger-for-edge.png" alt-text="适用于 Edge Visual Studio Code的调试器在操作中" lightbox="./media/debugger-for-edge.gif":::
    **调试器Microsoft Edge Visual Studio Code**扩展  

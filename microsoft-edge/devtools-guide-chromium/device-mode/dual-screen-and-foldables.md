@@ -26,7 +26,7 @@ ms.locfileid: "11564341"
 *   单屏或折叠状态  
 *   双屏或展开状态  
     
-打开实验性[Web 平台 API，](#turn-on-experimental-apis)并使用[CSS 媒体][DualScreenDocsCssMedia]屏幕跨区功能以及[JavaScript getWindowSegments API][DualScreenDocsJSAPI]为双屏幕和可折叠设备增强您的网站 \ (或 app\) 。  
+打开实验性[Web 平台 API，](#turn-on-experimental-apis)并使用[CSS 媒体][DualScreenDocsCssMedia]屏幕跨区功能以及[JavaScript getWindowSegments API][DualScreenDocsJSAPI]为双屏幕和可折叠设备增强您的网站 \(或 app\) 。  
 
 :::image type="complex" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="模拟 Surface Duo Microsoft Edge" lightbox="../media/experiments-surface-duo-emulation.msft.png":::  
    模拟 Surface Duo Microsoft Edge  
@@ -40,7 +40,7 @@ ms.locfileid: "11564341"
 1.  在"**搜索标志**"文本框中，输入 `Experimental Web Platform features` ，选择"**实验性 Web 平台功能**"标志，将"**已禁用"更改为****"已启用"。**  
 1.  重启 Microsoft Edge。  
     
-:::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="打开"实验性 Web 平台功能"标志" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
+:::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="打开实验性 Web 平台功能标志" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
    打开" **实验性 Web 平台功能"** 标志  
 :::image-end:::  
 
@@ -51,17 +51,17 @@ ms.locfileid: "11564341"
 
 ## <a name="test-on-foldable-and-dual-screen-devices"></a>在可折叠和双屏设备上测试  
 
-当你在 Microsoft Edge 中模拟双屏状态[中的 Surface Duo][SurfaceDevicesDuo]时，两个屏幕之间的空间\ (\) 将绘制在你的网站或应用上。  
+当你在 Microsoft Edge 中模拟双屏状态[中的 Surface Duo][SurfaceDevicesDuo]时，两个屏幕之间的空间\(\) 将绘制在你的网站或应用上。  
 
-模拟显示与你的网站 \ (或 app\) 在 Surface Duo 上运行的[Microsoft Edge Android][GooglePlayMicrosoftEdge]应用中[的呈现方式相匹配][SurfaceDevicesDuo]。  你可能必须更新你的网站 \ (或 app\) ，以更好地显示整个网站。  若要详细了解如何调整你的网站 \ (或 app\) 以适应变化，请导航到如何与接您 [一起操作][DualScreenIntroductionHowWorkSeam]。  
+模拟显示与你的网站 \(或 app\) 在 Surface Duo 上运行的[Microsoft Edge Android][GooglePlayMicrosoftEdge]应用中[的呈现方式相匹配][SurfaceDevicesDuo]。  你可能必须更新你的网站 \(或 app\) ，以更好地显示整个网站。  若要详细了解如何调整你的网站 \(或 app\) 以适应变化，请导航到如何与接您 [一起操作][DualScreenIntroductionHowWorkSeam]。  
 
-设备 [工具栏][DevtoolsDeviceModeIndexSimulateMobileViewport] 具有其他功能，可帮助你以多种状态和方向测试网站或应用。  Choose **Rotate** \ (![ Rotate ](../media/rotate-dark-icon.msft.png) \) to rotate the viewport to landscape orientation. 将该功能与 **Span** \ (Span \) 结合使用，可在单屏或折叠、双屏或展开状态 ![ ](../media/span-dark-icon.msft.png) 之间进行切换。  这些功能共同允许你在所有四种可能状态和方向中测试网站或应用。  
+设备 [工具栏][DevtoolsDeviceModeIndexSimulateMobileViewport] 具有其他功能，可帮助你以多种状态和方向测试网站或应用。  Choose **Rotate** \(![ Rotate ](../media/rotate-dark-icon.msft.png) \) to rotate the viewport to landscape orientation. 将该功能与 **Span** \(Span \) 结合使用，可在单屏或折叠、双屏或展开状态 ![ ](../media/span-dark-icon.msft.png) 之间进行切换。  这些功能共同允许你在所有四种可能状态和方向中测试网站或应用。  
 
 :::image type="complex" source="../media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="双屏幕和可折叠设备的状态和方向矩阵" lightbox="../media/experiments-dual-screen-emulation-rotate-span.msft.png":::
    双屏幕和可折叠设备的状态和方向矩阵  
 :::image-end:::  
 
-实验 **性 Web 平台功能** \ (![ ExperimentalApis ](../media/experimental-apis-dark-icon.msft.png) \) 图标显示"实验 **性 Web 平台功能"标志** 的状态。  如果此标志已打开，则突出显示该图标。  如果关闭标志，则不突出显示图标。  若要打开 \ (或 off\) 标志，请选择图标或导航到 并 `edge://flags` 切换标志。  
+实验 **性 Web 平台功能** \(![ ExperimentalApis ](../media/experimental-apis-dark-icon.msft.png) \) 图标显示"实验 **性 Web 平台功能"标志** 的状态。  如果此标志已打开，则突出显示该图标。  如果关闭标志，则不突出显示图标。  若要打开 \(或 off\) 标志，请选择图标或导航到 并 `edge://flags` 切换标志。  
 
 > [!NOTE]
 > 以下是当前已知问题的列表。  
@@ -70,7 +70,7 @@ ms.locfileid: "11564341"
 
 ## <a name="additional-resources"></a>其他资源  
 
-下面是可帮助您增强双屏设备的网站 \ (或 app\) 的其他资源。  
+下面是可帮助您增强双屏设备的网站 \(或 app\) 的其他资源。  
 
 *   有关在双屏设备上进行 Web 开发的信息，请导航到 [双屏幕 Web 体验][DualScreenWebIndex]。  
 *   安装 [Surface Duo 仿真器][DualScreenAndroidUseEmulator]。  Surface Duo 仿真器不同于 Microsoft Edge 中的仿真器，运行 Android，并且与[Android Studio 集成][AndroidDeveloperStudio]。  有关详细信息，请导航到[获取 Surface Duo SDK][DualScreenAndroidGetDuoSdk]。  

@@ -37,9 +37,9 @@ You may enable dark theme in[设置](#set-up-dark-theme-from-settings)or the [Co
 
 ## <a name="set-up-dark-theme-from-settings"></a>从主题设置深色设置  
 
-1.  Choose **Customize and Control DevTools** \ (`...` \) >**设置**.  您也可以通过选择**设置**打开" `F1` "。  
+1.  Choose **Customize and Control DevTools** \(`...` \) >**设置**.  您也可以通过选择**设置**打开" `F1` "。  
     
-    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="打开“设置”" lightbox="../media/customize-options-settings.msft.png":::
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="打开设置" lightbox="../media/customize-options-settings.msft.png":::
        打开**设置**  
     :::image-end:::  
 

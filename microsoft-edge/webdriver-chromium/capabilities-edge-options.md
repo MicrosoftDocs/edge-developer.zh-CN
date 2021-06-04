@@ -48,14 +48,14 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 | 功能 | 类型 | 默认值 | 详细信息 |  
 |:--- |:--- |:--- |:--- |  
-| args | 字符串列表 |  | 启动 Microsoft Edge 时使用的命令行参数列表。  具有关联值的参数应用 `=` 符号 \ (例如 `['start-maximized', 'user-data-dir=/tmp/temp_profile']` \) 。 |  
-| binary | 字符串 |  | 在 macOS 上使用 \ (的 Microsoft Edge 二进制文件的路径，路径应为实际的二进制文件，而不只是应用。  例如 `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` ，\) 。 |  
+| args | 字符串列表 |  | 启动 Microsoft Edge 时使用的命令行参数列表。  具有关联值的参数应用 `=` 符号 \(例如 `['start-maximized', 'user-data-dir=/tmp/temp_profile']` \) 。 |  
+| binary | 字符串 |  | 在 macOS 上使用 \(的 Microsoft Edge 二进制文件的路径，路径应为实际的二进制文件，而不只是应用。  例如 `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` ，\) 。 |  
 | debuggerAddress | 字符串 |  | 要连接到的调试器服务器的地址，格式为 `hostname/ip:port` ，例如 `127.0.0.1:38947` 。 |
 | 分离 | 布尔型 | `false` | 如果为 ，则 Microsoft Edge 在 WebDriver 服务关闭时退出，即使 `false` WebDriver 本地端尚未关闭会话。  如果 `true` 为 ，Microsoft Edge 仅在 WebDriver 本地端关闭会话时退出。  如果 为 ，并且 WebDriver 本地端不关闭会话，则不清理 Microsoft Edge 实例使用的临时 `true` `EdgeDriver` 用户数据文件夹。 |  
 | excludeSwitches | 字符串列表 |  | 启动 Microsoft Edge 时，默认情况下会传递用于排除该 EdgeDriver 的 Microsoft Edge 命令行开关列表。  避免 `--` 使用开关前缀。 |  
-| extensions | 字符串列表 |  | 启动时要安装的扩展的列表。  列表中的每个项目应为 Base64 编码的打包扩展 \ (`.crx` \) 。 |  
+| extensions | 字符串列表 |  | 启动时要安装的扩展的列表。  列表中的每个项目应为 Base64 编码的打包扩展 \(`.crx` \) 。 |  
 | localState | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项将应用于用户数据文件夹中的本地状态文件。 |  
-| minidumpPath | 字符串 |  | 用于存储 Microsoft Edge 小型dumps的目录。  \ (仅在 Linux 上受支持。\)  |  
+| minidumpPath | 字符串 |  | 用于存储 Microsoft Edge 小型dumps的目录。  \(仅在 Linux 上受支持。\)  |  
 | mobileEmulation | 字典 |  | 值为 的字典， `deviceName` 或和 `deviceMetrics` 的值 `userAgent` 。 |  
 | perfLoggingPrefs | 字典 |  | 指定性能日志记录首选项的可选字典。  有关详细信息，请导航到 [perfLoggingPrefs 对象](#perfloggingprefs-object)。 |  
 | prefs | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项仅适用于使用的用户配置文件。  例如，导航到 `Preferences` Microsoft Edge 的用户数据文件夹中的文件。 |  
@@ -67,14 +67,14 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 ## perfLoggingPrefs 对象  
 
-词典 `perfLoggingPrefs` 具有以下格式 \ (所有键都是可选的\) 。  
+词典 `perfLoggingPrefs` 具有以下格式 \(所有键都是可选的\) 。  
 
 | 项 | 类型 | 默认值 | 详细信息 |  
 |:--- |:--- |:--- |:--- |  
 | bufferUsageReportingInterval | 正整数 | 1000 | DevTools 跟踪缓冲区使用事件之间请求的毫秒数。  例如，如果为 1000，则每秒一次，DevTools 将报告跟踪缓冲区的已满。  如果报告指示缓冲区使用率为 100%，则发出警告。 |  
 | enableNetwork | 布尔型 | true | 从网络 (收集 \) 事件。 |  
 | enablePage | 布尔型 | true | 从页面 (收集 \) 事件。 |  
-| traceCategories | 字符串 | \ (empty\)  | Microsoft Edge 跟踪类别的逗号分隔字符串，应收集跟踪事件。  未指定或空字符串禁用跟踪。 |  
+| traceCategories | 字符串 | \(empty\)  | Microsoft Edge 跟踪类别的逗号分隔字符串，应收集跟踪事件。  未指定或空字符串禁用跟踪。 |  
 
 ## 返回的功能  
 

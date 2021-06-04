@@ -360,7 +360,7 @@ ms.locfileid: "11564880"
     
 1.  选择 `jquery.js` 行。  DevTools 在"源" **工具中** 打开文件。  如果代码行运行，则旁边将显示一个蓝色条。  红色栏表示代码行未运行，并且肯定不需要在加载网页时运行。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在"源"工具中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在源工具中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
        在"源"工具 **中查看** jQuery 文件  
     :::image-end:::  
     
@@ -443,7 +443,7 @@ ms.locfileid: "11564880"
 
 1.  选择并展开**计时** 部分。  基于 React 中可能存在许多[计时][MDNUserTimingApi]测量的事实，Tony 的应用似乎正使用 React 的开发模式。  切换到 React 的生产模式可能会产生一些简单的性能优势。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text=""计时"部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="计时部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        **计时**部分  
     :::image-end:::  
     

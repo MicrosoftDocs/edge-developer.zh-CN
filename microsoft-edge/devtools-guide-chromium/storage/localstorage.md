@@ -35,13 +35,13 @@ ms.locfileid: "11565048"
 
 1.  选择“**应用程序**”选项卡以打开“**应用程序**”工具。  “**清单**”窗格默认显示。  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="“清单”窗格" lightbox="../media/storage-application-manifest.msft.png":::
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
        “**清单**”窗格  
     :::image-end:::  
     
 1.  展开“**本地存储**”菜单。  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="“本地存储”菜单" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="本地存储菜单" lightbox="../media/storage-application-local-storage.msft.png":::
        “**本地存储**”菜单  
     :::image-end:::  
     

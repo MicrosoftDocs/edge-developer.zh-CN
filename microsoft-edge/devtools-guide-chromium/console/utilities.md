@@ -53,7 +53,7 @@ $_
 
 ### <a name="console-example"></a>控制台示例  
 
-在下图中，将计算一个简单的表达式 \ (`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。  
+在下图中，将计算一个简单的表达式 \(`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式" lightbox="../media/console-arithmatic.msft.png":::
    `$_` 是最近计算表达式  
@@ -394,7 +394,7 @@ inspect(document.body);
 getEventListeners(object)
 ```  
 
-此命令返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型 \ (（如 或 `click` `keydown` \) ）的数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。  
+此命令返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型 \(（如 或 `click` `keydown` \) ）的数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。  
 
 ### <a name="console-example"></a>控制台示例  
 
@@ -440,7 +440,7 @@ keys(object)
 var player1 = {"name": "Ted", "level": 42}
 ```  
 
-在下面的代码示例和图中，为了简单起见，在键入和在控制台中) 在全局命名空间 \ (中定义了 `player1` `keys(player1)` `values(player1)` 结果假定。  
+在下面的代码示例和图中，为了简单起见，在键入和在控制台中) 在全局命名空间 \(中定义了 `player1` `keys(player1)` `values(player1)` 结果假定。  
 
 ```console
 keys(player1)
@@ -733,7 +733,7 @@ unmonitorEvents(object[, events])
 unmonitorEvents(window);
 ```  
 
-还可以有选择地停止监视对象上的特定事件。  例如，以下代码开始监视当前选择的元素上的所有事件，然后停止监视 `mouse` `mousemove` 事件 \ (也许以减少控制台输出\) 。  
+还可以有选择地停止监视对象上的特定事件。  例如，以下代码开始监视当前选择的元素上的所有事件，然后停止监视 `mouse` `mousemove` 事件 \(也许以减少控制台输出\) 。  
 
 ```console
 monitorEvents($0, "mouse");

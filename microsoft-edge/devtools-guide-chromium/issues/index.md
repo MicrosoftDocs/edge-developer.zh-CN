@@ -54,7 +54,7 @@ DevTools Microsoft Edge中的问题工具可以减少控制台的通知疲劳和
        :::column span="":::
           或者，从"更多**工具"****菜单中选择"问题**"。  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text=""更多工具"菜单中的"问题"工具" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="更多工具菜单中的问题工具" lightbox="../media//issues-more-tools-menu.msft.png":::
              **"** 更多工具 **"菜单中的"问题"** 工具  
           :::image-end:::  
        :::column-end:::
@@ -78,7 +78,7 @@ DevTools 箱中的"问题"工具以结构化、聚合且可操作的方式显示
 
 1.  在问题工具 **中选择** 一个项目，获取有关如何修复问题和查找受影响资源的指南。  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="在"问题"工具中将跨站点 Cookie 标记为"打开安全问题"" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="在问题工具中将跨站点 Cookie 标记为打开安全问题" lightbox="../media/issues-tab-issue-open.msft.png":::
        **在"问题"工具中将** 跨站点 Cookie 标记为"打开 **安全问题** "  
     :::image-end:::  
     
@@ -126,7 +126,7 @@ DevTools 箱中的"问题"工具以结构化、聚合且可操作的方式显示
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \ (Developer Advocate\) 。  
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \(Developer Advocate\) 。  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
