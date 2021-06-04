@@ -42,7 +42,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 有关接受的标准 `EdgeDriver` 功能，请导航到 [Selenium 文档][SharedCapabilitiesSeleniumDocumentation] 和 [W3C WebDriver 标准][CapabilitiesW3cWebdriver]。  本文仅列出了特定于 Microsoft Edge 的功能。  
 
-## EdgeOptions 对象  
+## <a name="edgeoptions-object"></a>EdgeOptions 对象  
 
 大多数特定于 Microsoft Edge 的功能都通过 对象 `EdgeOptions` 公开。  在某些语言中，这些功能由 类 `EdgeOptions` 实现。  在其他语言中，这些功能存储在 中的 `ms:edgeOptions` 字典下 `DesiredCapabilities` 。  
 
@@ -65,7 +65,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 | windowsApp | 字符串 |  | 要启动的 Microsoft Edge 应用包的应用程序用户模型 ID，例如 `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` 。  使用 `windowsApp` Windows Device Portal 连接到 Windows `binary` 10X 设备或仿真器时，使用 而不是 。 |  
 | windowTypes | 字符串列表 |  | 窗口句柄列表中显示的窗口类型列表。  若要访问 Android webview 元素，请 `webview` 包含到列表中。 |  
 
-## perfLoggingPrefs 对象  
+## <a name="perfloggingprefs-object"></a>perfLoggingPrefs 对象  
 
 词典 `perfLoggingPrefs` 具有以下格式 \(所有键都是可选的\) 。  
 

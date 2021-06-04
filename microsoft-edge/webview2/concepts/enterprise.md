@@ -19,7 +19,7 @@ ms.locfileid: "11057858"
 
 [WebView2][WebView2Landing] 是开发人员用于构建其应用程序的一个组件，开发人员可能在用户设备上部署自更新 [的 Evergreen WebView2 运行时][Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview] 来为应用程序提供电源。  本文档讨论 IT 管理员如何管理 WebView2 应用程序和运行时。  欢迎 IT 管理员和开发人员在 [WebView2 反馈存储库上提供反馈][GithubMicrosoftedgeWebviewfeddback]。  
 
-## WebView2 的组策略  
+## <a name="group-policies-for-webview2"></a>WebView2 的组策略  
 
 IT 管理员可以使用组策略对象 \(GPO\) 为 WebView2 配置策略设置。  以下策略集适用于/不适用于 WebView2，  
 

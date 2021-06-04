@@ -51,7 +51,7 @@ ms.locfileid: "11230689"
    :::column-end:::
 :::row-end:::  
 
-## 调试程序Microsoft Edge  
+## <a name="debugger-for-microsoft-edge"></a>调试程序Microsoft Edge  
 
 使用[调试器 for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code 扩展，可以分行调试前端 JavaScript 代码，并直接从 Visual Studio Code `console.log()` [查看语句][VisualstudioCode]。  
       
@@ -61,7 +61,7 @@ ms.locfileid: "11230689"
    **调试器Microsoft Edge Visual Studio Code**扩展  
 :::image-end:::  
 
-##  <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge工具Visual Studio Code
+##  <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge工具Visual Studio Code
 
 使用[Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code 扩展，请使用 Microsoft Edge**** 浏览器的 Elements Visual Studio Code。  用于以下操作。  
 
@@ -76,7 +76,7 @@ ms.locfileid: "11230689"
    **Microsoft Edge工具Visual Studio Code Visual Studio Code**扩展  
 :::image-end:::  
 
-##  <a name="webhint--"></a>webhint  
+##  <a name="webhint"></a>webhint  
       
 使用 [Webhint（][WebhintMain]一个可自定义的 Lint 工具）可改进网站的以下功能。  
 

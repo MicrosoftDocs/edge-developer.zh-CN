@@ -181,11 +181,11 @@ document.head.appendChild(script);
 
 代码段 类似于小书签。
 
-#### <a name="see-also&quot;></a>另请参阅
+#### <a name="see-also"></a>另请参阅
 
 *   [使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段][DevtoolsGuideChromiumJavascriptSnippets]
 
-### <a name=&quot;using-the-command-menu-to-open-files&quot;></a>使用命令菜单打开文件
+### <a name="using-the-command-menu-to-open-files"></a>使用命令菜单打开文件
 
 若要打开文件，除了使用&quot;源&quot;工具**** 中的&quot;导航器&quot;窗格**** 外，还可以在 DevTools 中的任何位置使用命令菜单。
 
