@@ -63,7 +63,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     1.  选择 **"JavaScript 诊断"** 设置。  
     1.  选择 **"修改"。** 
         
-        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio"修改单个组件选项卡" lightbox="./media/indiv-comp.png":::
+        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio修改单个组件选项卡" lightbox="./media/indiv-comp.png":::
            Visual Studio"修改单个组件"选项卡  
         :::image-end:::  
         
