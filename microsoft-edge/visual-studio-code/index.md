@@ -18,7 +18,7 @@ ms.locfileid: "11230689"
 
 [Visual Studio Code][VisualStudioCodeDocs]是一个轻型但功能强大的源代码编辑器。  [Visual Studio Code][VisualStudioCodeDocs]适用于 Windows、Linux 和 macOS。  它包括对 JavaScript、TypeScript 和 Node.js 的内置支持，因此在自定义之前，它是 Web 开发人员的一个很好的工具。  如果尚未使用它，[请下载][VisualstudioCode]Visual Studio Code。  
 
-## Extensions  
+##  <a name="extensions"></a>Extensions  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
@@ -61,7 +61,7 @@ ms.locfileid: "11230689"
    **调试器Microsoft Edge Visual Studio Code**扩展  
 :::image-end:::  
 
-## Microsoft Edge工具Visual Studio Code
+##  <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge工具Visual Studio Code
 
 使用[Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code 扩展，请使用 Microsoft Edge**** 浏览器的 Elements Visual Studio Code。  用于以下操作。  
 
@@ -76,7 +76,7 @@ ms.locfileid: "11230689"
    **Microsoft Edge工具Visual Studio Code Visual Studio Code**扩展  
 :::image-end:::  
 
-## webhint  
+##  <a name="webhint--"></a>webhint  
       
 使用 [Webhint（][WebhintMain]一个可自定义的 Lint 工具）可改进网站的以下功能。  
 

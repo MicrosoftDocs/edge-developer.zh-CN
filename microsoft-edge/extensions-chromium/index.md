@@ -37,7 +37,7 @@ ms.locfileid: "11327524"
   Microsoft Edge \(Chromium\) 扩展  
 :::image-end:::  
 
-## 基本指南  
+##  <a name="basic-guidance"></a>基本指南  
 
 为一些最受欢迎的浏览器包括 Safari、Firefox、Chrome、Opera、Cookie 和 Microsoft Edge 构建扩展。  浏览器组织托管的网站是开始扩展开发教程和文档研究很好的位置。  下表不确定的，可以作为起点。  
 
@@ -53,7 +53,7 @@ ms.locfileid: "11327524"
 > [!IMPORTANT]
 > 许多网站教程使用的浏览器特定的 API 可能与为其开发的浏览器不匹配。  在大多数情况下，Chromium 扩展在不同 Chromium 浏览器中工作，且 API 按预期工作。  只有一些不太常见的 API 可能会严格特定于浏览器。  有关教程的链接，请导航至“[另请参见](#see-also)”。  
 
-## 为什么使用 Chromium？  
+##  <a name="why-chromium"></a>为什么使用 Chromium？  
 
 如果目标是在每个浏览器扩展应用商店中发布扩展，则必须为每个版本对其进行修改，以便在不同浏览器环境中运行。  例如，[Safari 扩展][AppleDeveloperSafariservicesAppExtensions]可以同时使用 web 和本机代码与对应的本机应用通信。  上表中的最后四个浏览器使用相同的代码包，并将维护并行版本的要求降到最低。  这些浏览器基于 [Chromium 开源项目][|::ref1::|Home]。  
 
@@ -61,7 +61,7 @@ ms.locfileid: "11327524"
 
 以下内容主要侧重于 Chromium 扩展。  
 
-## 浏览器兼容性和扩展测试  
+##  <a name="browser-compatibility-and-extension-testing"></a>浏览器兼容性和扩展测试  
 
 有时，Chromium 浏览器之间不存在 API 奇偶校验。  例如，标识和付款 API 存在差异。  为了确保扩展满足客户的期望，请通过以下官方浏览器文档查看 API 状态。  
 
@@ -73,7 +73,7 @@ ms.locfileid: "11327524"
 
 若要在将扩展提交到浏览器应用商店之前在不同环境中进行测试，请在开发扩展时将其旁加载到浏览器中。  
 
-## 将扩展发布到浏览器应用商店  
+##  <a name="publish-your-extension-to-browser-stores"></a>将扩展发布到浏览器应用商店  
 
 您可以在以下浏览器存储中提交和查找浏览器扩展。  
 
@@ -86,13 +86,13 @@ ms.locfileid: "11327524"
 
 用户可能需要在不同的浏览器中安装扩展。 在这种情况下，可以将现有的 Chromium 扩展从一个浏览器迁移到另一个浏览器。  
 
-### 将现有扩展迁移到 Microsoft Edge  
+###  <a name="migrate-an-existing-extension-to-microsoft-edge"></a>将现有扩展迁移到 Microsoft Edge  
 
 如果已经为另一个 Chrome 浏览器开发了扩展，则可以将其提交到 Microsoft Edge 加载项商店。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有的 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代方案可用于该目标浏览器。  
 
 有关将 Chrome 扩展移植到 Microsoft Edge 的更多信息，请导航到[将 Chrome 扩展移植到 Microsoft Edge (Chrome)][ExtensionsChromiumDeveloperGuidePortChrome]。 将扩展移植到目标浏览器后，下一步是发布它。  
 
-### 发布到 Microsoft Edge 外接程序网站  
+###  <a name="publish-to-the-microsoft-edge-add-ons-website"></a>发布到 Microsoft Edge 外接程序网站  
 
 若要开始将扩展发布到 Microsoft Edge，必须[使用 MSA 电子邮件帐户注册开发人员帐户][MicrosoftDeveloperRegistration]，才能将扩展列表提交到商店。  MSA 电子邮件帐户包括 `@outlook.com`、`@live.com` 等。  选择要注册的电子邮件地址时，请考虑是否必须与组织中其他人转移或共享扩展的所有权。  注册完成后，你可以向应用商店创建新的扩展提交。  
 
@@ -108,7 +108,7 @@ ms.locfileid: "11327524"
 
 成功提交扩展后，扩展将经历审核过程，它将通过或不通过认证过程。  向所有者通知结果，并按需要提供下一步步骤。  如果向应用商店提交扩展更新，则会启动新的审阅过程。  
 
-## 另请参阅  
+##  <a name="see-also"></a>另请参阅  
 
 *   [移植 Google Chrome 扩展][ExtensionworkshopPorting]  
 *   [构建 Safari 应用扩展][AppleDeveloperSafariservicesAppExtensionsBuilding]  

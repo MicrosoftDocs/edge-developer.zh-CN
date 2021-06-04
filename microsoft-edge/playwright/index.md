@@ -23,7 +23,7 @@ ms.locfileid: "11231081"
 
 默认情况下，安装 Playwright 时，安装程序会[Chromium、Firefox][FirefoxMain]和[WebKit。][|::ref3::|Main] [][ChromiumHome]  如果你还安装了 \Microsoft Edge \(Chromium\) ，Playwright 只需更改一行代码，在 Microsoft Edge 中测试您的网站或应用。  若要下载Microsoft Edge \(Chromium\) ，请导航到"下载[Microsoft Edge"。][MicrosoftEdgeDownload]  
 
-## 安装 Playwright  
+##  <a name="installing-playwright--"></a>安装 Playwright  
 
 安装 [Playwright][|::ref4::|Main] 以通过以下命令测试网站或应用。  
 
@@ -31,7 +31,7 @@ ms.locfileid: "11231081"
 npm i playwright
 ```  
 
-## 启动Microsoft Edge Playwright  
+##  <a name="launch-microsoft-edge-with-playwright--"></a>启动Microsoft Edge Playwright  
 
 > [!NOTE]
 > [Playwright][|::ref5::|Main] 需要Node.js版本 10.17 或以上版本。 从 `node -v` 命令行运行，以确保具有兼容的 Node.js。  适用于 Chromium、Firefox 和 WebKit 的浏览器二进制文件跨 Windows、macOS 和 Linux 工作。 有关详细信息，请导航到["Playwright 系统要求"。][PlaywrightSystemRequirements]  
@@ -94,7 +94,7 @@ Playwright 启动Microsoft Edge，导航到 `https://www.microsoft.com/edge` ，
 
 有关 Playwright 的信息，请导航到 [Playwright 网站][|::ref6::|Main]。  请查看 GitHub 上的[Playwright][PlaywrightRepo]存储库。  若要与 Playwright 共享有关自动执行和测试网站或应用的反馈， [请提交问题][PlaywrightRepoNewIssue]。  
 
-## 联系 Microsoft Edge DevTools 团队  
+##  <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 

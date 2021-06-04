@@ -16,14 +16,14 @@ ms.locfileid: "11343160"
 ---
 # 联系 Microsoft Edge 扩展支持  
 
-## 针对任何问题请求帮助或提交反馈  
+##  <a name="request-help-for-any-issues-or-submit-feedback"></a>针对任何问题请求帮助或提交反馈  
 
 1.  使用合作伙伴中心提交扩展后，如果对它的审阅或认证状态有疑问，请导航到"新建支持 [请求][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] "并填写表单。  
 1.  如果你的扩展未按预期使用 Microsoft Edge，或者对如何开发扩展有疑问，请导航到 Microsoft [Edge][ExtensionsDeveloperGuideApiSupport] 扩展的受支持的 API 和将 [Chromium][ExtensionsDeveloperGuidePortChromeExtension]扩展移植到 Microsoft Edge。  对于任何其他问题，请发送电子邮件到 [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoft]。  
 1.  如果在将扩展提交到合作伙伴中心时面临任何问题，请导航到"[发布扩展"。][ExtensionsPublishPublishExtension]  如果你有其他问题或想要发送有关发布体验的反馈，请发送电子邮件到[ext_dev_support@microsoft.com。][MailtoExtDevSupportMicrosoft]  
 1.  若要在 Microsoft Edge 加载项存储的集合中启用扩展，请导航到"提交请求"，将扩展添加到 [Microsoft Edge][OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u] 加载项主页上的集合并填写表单。   
     
-## 报告版权或商标侵犯  
+##  <a name="report-copyright-or-trademark-infringement"></a>报告版权或商标侵犯  
 
 如果您认为 Microsoft Edge 加载项商店中的某个项目违反了版权或商标，请导航到"侵权通知[][MicrosoftInfoMarketplaceHtml]"并填写表单。  Microsoft Edge 扩展团队会检查你的报告，然后执行必要的操作。  
 

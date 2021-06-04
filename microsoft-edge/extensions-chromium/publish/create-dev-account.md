@@ -21,7 +21,7 @@ ms.locfileid: "11343057"
 > [!IMPORTANT]
 > 向应用计划提交扩展时，无需Microsoft Edge费用。  
 
-## 开始之前  
+##  <a name="before-you-begin"></a>开始之前  
 
 如果你没有帐户，或者如果你有合作伙伴中心的现有商业帐户，请创建一个新的 Microsoft 帐户[ (MSA) ][WindowsCommunityEverythingAboutMicrosoftAccounts]注册到 Microsoft Edge 计划。  若要创建 Microsoft 帐户 \(Outlook/live/Hotmail\) ，请完成以下操作。  
 
@@ -33,7 +33,7 @@ ms.locfileid: "11343057"
 > [!NOTE]
 > 如今，Microsoft Edge不支持使用工作或学校帐户注册。  将来，Microsoft Edge扩展团队计划支持将 Azure AD 租户链接到 MSA 帐户进行扩展管理。  
 
-## 在合作伙伴中心Microsoft Edge注册计划  
+##  <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>在合作伙伴中心Microsoft Edge注册计划  
 
 1.  导航到开发人员[页面，][MicrosoftPartnerCenter]然后选择 **"转到仪表板"。**  
 1.  如果你有 Microsoft 帐户，立即登录。  如果没有，请创建新的 Microsoft 帐户。  使用用于登录开发人员帐户的同一 Microsoft 帐户。  登录后，将显示注册表单。 下表介绍了注册表单上的字段。  
@@ -102,7 +102,7 @@ ms.locfileid: "11343057"
 1.  在提交注册表单之前，请阅读并接受《开发人员Microsoft Edge[条款和条件][MicrosoftAppDeveloperAgreement]。  
 1.  若要完成注册，请选择"完成 **"。**  
     
-## 后续步骤  
+##  <a name="next-steps"></a>后续步骤  
 
 若要显示你的验证状态，请导航到"合作伙伴中心>**帐户设置"。**  等待验证过程完成时，请继续生成、测试和准备提交。  
 

@@ -26,7 +26,7 @@ ms.locfileid: "11343148"
 *   使用 Windows 注册表 (Windows) 。  
 *   在 macOS 和 Linux (使用首选项 JSON) 。  
     
-## 开始之前  
+##  <a name="before-you-begin"></a>开始之前  
 
 请确保在 Microsoft Edge 加载项存储中发布扩展，或打包文件，并确保其成功 `.crx` 安装在您的计算机上。  如果使用 安装 `.crx` 文件， `update_URL` 请确保可以导航到位于该 URL 的扩展名。  
 
@@ -39,7 +39,7 @@ ms.locfileid: "11343148"
 > [!NOTE] 
 > 以下示例使用 `1.0` 作为 版本 和 `aaaaaaaaaabbbbbbbbbbcccccccccc` 作为 ID。  
 
-## 使用 Windows 注册表 (Windows)   
+##  <a name="use-the-windows-registry-(windows-only)"></a>使用 Windows 注册表 (Windows)   
 
 若要使用 Windows 注册表分发扩展，请执行以下步骤。
 
@@ -60,7 +60,7 @@ ms.locfileid: "11343148"
   
 1.  导航到 ，验证扩展是否列在 Microsoft Edge 中 `edge://extensions` 。  
 
-## 在 macOS 和 Linux (使用首选项 JSON)   
+##  <a name="use-a-preferences-json-file-(macos-and-linux)"></a>在 macOS 和 Linux (使用首选项 JSON)   
 
 若要使用首选项 JSON 文件分发扩展名，请执行以下步骤。
 
@@ -120,7 +120,7 @@ ms.locfileid: "11343148"
 
 1.  导航到 ，验证扩展是否安装在 Microsoft Edge 中 `edge://extensions` 。  
 
-## 更新和卸载外部安装的扩展
+##  <a name="update-and-uninstall-externally-installed-extensions"></a>更新和卸载外部安装的扩展
 
 每次浏览器启动时，Microsoft Edge 会扫描注册表中的元数据条目，并更改外部安装的扩展。  
 

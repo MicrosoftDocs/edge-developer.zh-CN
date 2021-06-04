@@ -29,7 +29,7 @@ ms.locfileid: "11230815"
 
 通过良好的编码实践，可以解决 Web 上的许多常见辅助功能问题。  [WCAG (2.0](https://www.w3.org/TR/WCAG20)) Web 内容辅助功能指南文档提供了可帮助您设计更易于访问的动态 Web 应用程序的技术和最佳实践。  有关构建可访问网站的信息，请导航到"[构建可访问的网站"。](./build/index.md)
 
-## 资源  
+##  <a name="resources"></a>资源  
 
 #### [针对包含进行设计](https://w3.org/WAI/users/Overview.html)  
 

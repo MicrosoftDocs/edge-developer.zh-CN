@@ -23,7 +23,7 @@ ms.locfileid: "11306268"
 
 使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名][TwitterEdgeDevTools]。  
 
-## 用于验证 Selenium Tools for Microsoft Edge  
+##  <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>用于验证 Selenium Tools for Microsoft Edge  
 
 *   **公钥 ID：Microsoft Edge**开发人员工具团队[EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
 *   **公钥指纹**： `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  

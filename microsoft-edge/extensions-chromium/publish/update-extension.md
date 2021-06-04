@@ -18,12 +18,12 @@ ms.locfileid: "11343158"
 
 你随时可能会更新提交的扩展，也可以从加载项Microsoft Edge中删除已发布的扩展列表。  
 
-## 更新加载项Microsoft Edge扩展  
+##  <a name="update-your-extension-on-the-microsoft-edge-add-ons-store"></a>更新加载项Microsoft Edge扩展  
 
 > [!NOTE]
 > 更新到扩展的认证过程的持续时间可能需要几个小时到几天。  
 
-### 更新加载项存储Microsoft Edge扩展  
+###  <a name="update-an-existing-extension-in-the-microsoft-edge-add-ons-store"></a>更新加载项存储Microsoft Edge扩展  
 
 若要更新应用商店上的扩展，请完成以下步骤。  
 
@@ -32,7 +32,7 @@ ms.locfileid: "11343158"
 1.  进行更改后，选择"保存**发布**"  >  **** 以更新扩展列表，并开始认证过程。  
 1.  列 `Status` 显示后 `In the store` ，扩展更新在加载项Microsoft Edge上可用。  
     
-### 在认证步骤中更新扩展  
+###  <a name="update-your-extension-during-the-certification-step"></a>在认证步骤中更新扩展  
 
 虽然你的扩展仍处于认证阶段，在将其发布到加载项Microsoft Edge之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。    
 
@@ -48,7 +48,7 @@ ms.locfileid: "11343158"
 > [!IMPORTANT]
 > 此过程会停止当前提交，并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。  
 
-### 在认证失败后更新扩展  
+###  <a name="update-your-extension-after-it-failed-the-certification"></a>在认证失败后更新扩展  
 
 扩展失败认证过程后，你需要更新扩展并重新提交包含反馈的扩展。  
 
@@ -58,7 +58,7 @@ ms.locfileid: "11343158"
 1.  更新扩展包或包含从认证过程收到的反馈的元数据。  如果更新扩展包，请确保增加清单文件中的版本。  
 1.  进行更改后，选择"保存**发布**  >  **"。**  
     
-## 从加载项存储Microsoft Edge扩展  
+##  <a name="remove-extensions-from-the-microsoft-edge-add-ons-store"></a>从加载项存储Microsoft Edge扩展  
 
 若要从加载项Microsoft Edge中删除扩展，请完成以下步骤。  
 

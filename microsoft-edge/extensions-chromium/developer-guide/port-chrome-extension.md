@@ -34,7 +34,7 @@ Microsoft Edge 允许你以最少的更改移植 Chrome 扩展。  Chrome 支持
     > [!NOTE]
     > 如果扩展使用 与本机应用交换邮件，请确保在本机消息传递主机清单 `chrome.runtime.connectNative` `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` 文件中设置为 。  该设置允许应用标识你的扩展。  
     
-## 后续步骤  
+##  <a name="next-steps"></a>后续步骤  
 
 准备好在 Microsoft Edge 加载项应用商店中发布扩展包后，创建开发人员帐户[并][ExtensionsPublishCreateDevAccount][发布扩展][ExtensionsPublishPublishExtension]。  
 

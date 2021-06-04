@@ -25,7 +25,7 @@ ms.locfileid: "11232174"
 
 下面是一些最佳实践、代码示例和更多资源，可让你了解有关在 Microsoft Edge 中设计、构建[][AccessibilityBuild]和测试可访问网站[][AccessibilityTest]Microsoft Edge。 [][AccessibilityDesign]  
 
-## Microsoft Edge  
+##  <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge  
 
 在 Microsoft Edge 中，我们引入了现代[UI 自动化 API][WindowsWin32AutoEntryui] \(UIA API\) 。  UIA 的变化是浏览器辅助功能的主要投资，它为依赖于 Windows 10 中的辅助技术的用户提供更具包容性的 Web 体验打下基础。  用户还可以从网络引擎的常绿Chromium中获益。  
 
@@ -39,7 +39,7 @@ Microsoft Edge团队持续与 W3C 和其他浏览器供应商合作，以确保�
 
 有关哪些新 HTML5 功能可供用户访问Microsoft Edge，请导航到["HTML5Accessibility"。][HTML5Accessibility]  
 
-## 资源  
+##  <a name="resources"></a>资源  
 
 #### Microsoft Windows UI 自动化博客  
 

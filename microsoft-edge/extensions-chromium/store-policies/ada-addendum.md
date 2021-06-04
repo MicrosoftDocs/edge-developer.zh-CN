@@ -16,7 +16,7 @@ ms.locfileid: "11343085"
 ---
 # Microsoft Edge 计划用户的应用开发人员协议附录  
 
-## 附件 G：Microsoft Edge 扩展的条款和条件  
+##  <a name="exhibit-g:-terms-and-conditions-for-microsoft-edge-extensions"></a>附件 G：Microsoft Edge 扩展的条款和条件  
 
 Microsoft Edge Extensions \(the "Extensions Addendum"\) 的这些条款和条件是应用开发人员协议的条款和条件的补充，其当前版本可在 上找到 [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] 。  如果已提交或提供 Microsoft Edge 扩展 \(，则此附录适用于通过 Microsoft Edge 加载项) 扩展"\) 。  除非此扩展附录明确修改，否则此处参考包含的应用开发人员协议的所有条款和条件均适用于 Microsoft Edge 扩展的提供和分发。  除非此附录明确修改，否则应用开发人员协议下适用于"应用程序"或"应用"的条款和条件将适用于本附录中定义的扩展，并且应用开发人员协议下对"应用商店"或"Microsoft Store"的所有引用均适用于本附录中定义的 Microsoft Edge 加载项。  
 

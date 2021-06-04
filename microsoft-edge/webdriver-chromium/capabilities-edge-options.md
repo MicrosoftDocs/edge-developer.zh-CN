@@ -21,7 +21,7 @@ ms.locfileid: "11343777"
 
 功能作为 JSON 映射传递到 WebDriver 会话。  WebDriver 语言绑定通常提供类型安全的便利方法，因此无需自己配置 JSON 映射。  不同的 WebDriver 语言绑定使用不同的机制来配置功能。  导航到首选语言绑定 [的文档，][WebdriverIndexChooseWebdriverLanguageBinding] 详细了解如何配置功能。  [Selenium][SeleniumMain] 通过 类配置 `EdgeOptions` 功能。  
 
-## 使用 EdgeOptions 类  
+##  <a name="using-the-edgeoptions-class"></a>使用 EdgeOptions 类  
 
 创建 的实例 `EdgeOptions` ，这将提供设置 Microsoft Edge 特定功能的便利方法。  配置对象后 `EdgeOptions` ，传递到 `EdgeOptions` `EdgeDriver` 构造函数。  
 
@@ -38,7 +38,7 @@ var driver = new EdgeDriver(options);
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 ```  
 
-## 可识别的功能  
+##  <a name="recognized-capabilities"></a>可识别的功能  
 
 有关接受的标准 `EdgeDriver` 功能，请导航到 [Selenium 文档][SharedCapabilitiesSeleniumDocumentation] 和 [W3C WebDriver 标准][CapabilitiesW3cWebdriver]。  本文仅列出了特定于 Microsoft Edge 的功能。  
 
@@ -76,7 +76,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 | enablePage | 布尔型 | true | 从页面 (收集 \) 事件。 |  
 | traceCategories | 字符串 | \(empty\)  | Microsoft Edge 跟踪类别的逗号分隔字符串，应收集跟踪事件。  未指定或空字符串禁用跟踪。 |  
 
-## 返回的功能  
+##  <a name="returned-capabilities"></a>返回的功能  
 
 以下列表包含在创建新会话时返回的所有特定于 Microsoft Edge `EdgeDriver` 的功能。  
 
