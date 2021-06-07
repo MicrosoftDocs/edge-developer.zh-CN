@@ -21,8 +21,10 @@
           href: devtools-guide-chromium/index.md
         - name: 新增功能
           items:
-            - name: 试验功能
+            - name: 实验性功能
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 92
+              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
             - name: Microsoft Edge 90
