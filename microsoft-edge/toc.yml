@@ -87,8 +87,50 @@
           items:
             - name: 辅助功能
               items:
-                - name: 辅助功能参考
+                - name: DevTools 中的辅助功能测试功能
                   href: devtools-guide-chromium/accessibility/reference.md
+                - name: 使用 DevTools 的辅助功能测试概述
+                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
+                - name: 问题工具
+                  items:
+                    - name: 自动测试网页中的辅助功能问题
+                      href: devtools-guide-chromium/accessibility/test-issues-tool.md
+                - name: 检查工具
+                  items:
+                    - name: 使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
+                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+                    - name: 使用 Tab 和 Enter 键检查键盘支持
+                      href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
+                    - name: 分析边栏菜单中键盘焦点的缺失
+                      href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
+                    - name: 分析窗体中键盘支持缺失
+                      href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
+                - name: '"辅助功能"选项卡'
+                  items:
+                    - name: 检查辅助功能树是否支持键盘和屏幕阅读器
+                      href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
+                    - name: 使用源订单查看器测试键盘支持
+                      href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+                    - name: 使用"辅助功能"选项卡测试辅助功能
+                      href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                - name: '"样式"选项卡'
+                  items:
+                    - name: 验证所有元素状态可访问性
+                      href: devtools-guide-chromium/accessibility/test-inspect-states.md
+                    - name: 使用颜色选取器测试文本颜色对比度
+                      href: devtools-guide-chromium/accessibility/color-picker.md
+                - name: 呈现工具
+                  items:
+                    - name: 检查深色主题和浅主题的对比度问题
+                      href: devtools-guide-chromium/accessibility/test-dark-mode.md
+                    - name: 验证页面是否由色盲用户可用
+                      href: devtools-guide-chromium/accessibility/test-color-blindness.md
+                    - name: 验证页面是否可借助模糊视图
+                      href: devtools-guide-chromium/accessibility/test-blurred-vision.md
+                    - name: 验证页面是否可用，同时关闭 UI 动画
+                      href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+                - name: 使用 Lighthouse 测试辅助功能
+                  href: devtools-guide-chromium/accessibility/lighthouse.md
                 - name: 使用辅助技术导航开发工具
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: 跟踪哪些元素有焦点
