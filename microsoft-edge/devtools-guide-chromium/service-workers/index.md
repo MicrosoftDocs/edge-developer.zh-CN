@@ -7,12 +7,12 @@ ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
-ms.openlocfilehash: 2f32155d1d28d1e65ad29abfe58a414f3e3c6ed7
-ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
+ms.openlocfilehash: c00b7c7fd18d4bb3d413369ec1464c0cb0255311
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387279"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597140"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进  
 
@@ -62,7 +62,7 @@ ms.locfileid: "11387279"
 
 ### <a name="service-worker-update-timeline"></a>服务工作者更新时间线  
 
-Microsoft Edge DevTools 团队在应用程序工具**** 中添加了时间线，以反映服务工作者的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。  
+开发人员Microsoft Edge开发人员工具团队在应用程序工具中添加了时间线，以反映服务工作者**** 的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。  
 
 ### <a name="request-routing-and-fetch-events"></a>请求传送和提取事件  
 
@@ -76,15 +76,15 @@ Microsoft Edge DevTools 团队在应用程序工具**** 中添加了时间线，
 
 ## <a name="sources"></a>源  
 
-:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM 视图" lightbox="../media/sw-sources.msft.png":::
-   DOM 视图  
+:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM 树" lightbox="../media/sw-sources.msft.png":::
+   DOM 树  
 :::image-end:::  
 
 若要查找更多堆栈信息，在提取处理程序中设置一个断点。  详细信息将导致在页面脚本中请求资源。  当调试器在提取处理程序内暂停时，合并的堆栈信息将显示在面板右侧。  之后，你可以四处移动堆栈框架。  
 
 ### <a name="future-work"></a>未来工作  
 
-Microsoft Edge DevTools 团队计划进一步开发缓存详细信息，并调查更多方法为渐进式 Web 应用程序开发人员改进服务工作 [器调试][MdnProgressiveWebApps] 体验。  
+开发人员Microsoft Edge开发工具团队计划进一步开发缓存详细信息，并研究更多方法为[渐进式 Web][MdnProgressiveWebApps]应用程序开发人员改进服务工作器调试体验。  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 

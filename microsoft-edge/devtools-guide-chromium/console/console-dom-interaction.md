@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 80b0e4368b1c8feaf28a58ac2e3bd9c1ea2f1f92
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 56ce6b1d8f1ad98eeb9c141c2e9b002e7679d7de
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483354"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597013"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
 
@@ -62,21 +62,21 @@ document.querySelector('header').style.border = '2em solid green'
 
 1.  使用 **Inspect** 工具选择元素。  
 
-    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="若要选择元素，请使用检查器工具" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
-        若要选择元素，请使用 **检查器** 工具  
+    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="若要选择元素，请使用 Inspect 工具" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
+        若要选择元素，请使用 **Inspect** 工具  
     :::image-end:::  
     
 1.  选择它，DevTools 跳转到 **"元素"** 工具。  
-1.  选择 `...` DOM 视图中元素旁边的菜单。  
+1.  选择 `...` DOM 树中元素旁边的菜单。  
     
-    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在元素工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
+    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在"元素"工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         所选元素显示在"元素"工具的 DOM **树中，** 选择溢出菜单以获取更多功能  
     :::image-end:::  
     
 1.  打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从元素工具的 DOM 视图中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
-        从"元素"工具的 DOM 视图中的元素复制 JavaScript**路径**  
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从"元素"工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+        从"元素"工具的 DOM 树中的 **元素** 复制 JavaScript 路径  
     :::image-end:::  
     
 1.  返回到 **控制台并粘贴** 命令。  
@@ -98,11 +98,11 @@ document.querySelector('header').style.border = '2em solid green'
 `$`控制台中具有特殊**功能**，你可能从 jQuery 中记住这一点。
 
 *   `$_` 存储最后一个命令的结果。  因此，如果你键入 `2 + 2` 并选择 `Enter` ，然后键入 ，控制台 `$_` 将显示**** `4` 你 。
-*   `$0` `$4`是最后检查的元素的堆栈， `$0` 始终为最新元素。  因此，在上一示例中，你只需在 **Inspector** 工具中选择 元素并键入 `$0.textContent = "My Playground"` ，以获得相同的效果。
+*   `$0` `$4`是最后检查的元素的堆栈， `$0` 始终为最新元素。  因此，在上一示例中，你只需在 **Inspect** 工具中选择 元素并键入 `$0.textContent = "My Playground"` ，以获得相同的效果。
 *   `$x()` 允许您使用 XPATH 选择 DOM 元素。
 *   `$()` `$$()`和 是 和 的 `document.querySelector()` 较短版本 `document.querySelectorAll()` 。  
     
-例如，以下代码段检索网页 \(中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`
+例如，以下代码段检索网页 \ (中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`
 
 ```javascript
 console.table($$('a'),['href','text']);

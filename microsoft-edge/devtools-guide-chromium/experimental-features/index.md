@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 8f85bab4b1229a13f3b0185c65da900573380811
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 82d547c8c1ed0606bda9ade27d0dbddbfa2ca800
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564236"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596992"
 ---
 # <a name="experimental-features"></a>试验功能  
 
@@ -114,12 +114,11 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 打开试验后，确保重新启动 DevTools。  若要使用 **Source Order Viewer**，请完成以下步骤。  
 
 1.  打开“**元素**”工具。  
-1.  打开工具箱 \（底部\）面板中的“**辅助功能**”窗格。  
+1.  在" **样式"选项卡** 的右侧，选择 **"辅助功能"** 选项卡。  
 1.  在 **Source Order Viewer** 部分下，选择“**显示源顺序**”复选框。  
 1.  突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc（源订单查看器）:::在辅助功能窗格中" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** 在“**辅助功能**”窗格中  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  

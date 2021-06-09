@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 64954d632416f7d1353269d04c1550ca7a0652b7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 17c1162bdec21ccc4abe1d3d34ce7c766aeb1009
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564180"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596990"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -47,14 +47,14 @@ DevTools Microsoft Edge中的问题工具可以减少控制台的通知疲劳和
        :::column span="":::
           选择黄色 **警告栏中** 的"转到问题"按钮。  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时转到黄色警告栏中的问题按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时转到黄色警告栏中的"问题"按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
              检测到 **问题时** ，黄色警告栏中的"转到问题"按钮。  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           或者，从"更多**工具"****菜单中选择"问题**"。  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="更多工具菜单中的问题工具" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text=""更多工具"菜单中的"问题"工具" lightbox="../media//issues-more-tools-menu.msft.png":::
              **"** 更多工具 **"菜单中的"问题"** 工具  
           :::image-end:::  
        :::column-end:::
@@ -62,13 +62,13 @@ DevTools Microsoft Edge中的问题工具可以减少控制台的通知疲劳和
     
 1.  如有必要 **，选择"重新加载** 页面"按钮。  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的问题工具（具有重新加载页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的"问题"工具（具有"重新加载"页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
        **DevTools** Drawer 中的"问题"工具（ **具有"重新加载"页面按钮** ）  
     :::image-end:::  
 
     控制台中报告 **的问题很难** 理解，如下图中的 Cookie 警告。  根据报告的问题，可能不清楚必须执行哪些工作。  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools 箱中具有三个 Cookie 问题的问题工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools 箱中具有三个 Cookie 问题的"问题"工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
        **DevTools** 箱中具有三个 Cookie 问题的"问题"工具  
     :::image-end:::  
     
@@ -78,7 +78,7 @@ DevTools 箱中的"问题"工具以结构化、聚合且可操作的方式显示
 
 1.  在问题工具 **中选择** 一个项目，获取有关如何修复问题和查找受影响资源的指南。  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="在问题工具中将跨站点 Cookie 标记为打开安全问题" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="在"问题"工具中将跨站点 Cookie 标记为"打开安全问题"" lightbox="../media/issues-tab-issue-open.msft.png":::
        **在"问题"工具中将** 跨站点 Cookie 标记为"打开 **安全问题** "  
     :::image-end:::  
     
@@ -109,6 +109,12 @@ DevTools 箱中的"问题"工具以结构化、聚合且可操作的方式显示
        `None` DevTools 网络工具中 Cookie 的 **SameSite** `ck02` **列中** 的值  
     :::image-end:::  
 
+
+## <a name="see-also"></a>另请参阅
+
+* [自动测试网页中的辅助功能问题](../accessibility/test-issues-tool.md)
+
+
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发人员工具团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
@@ -126,7 +132,7 @@ DevTools 箱中的"问题"工具以结构化、聚合且可操作的方式显示
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \(Developer Advocate\) 。  
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \ (Developer Advocate\) 。  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 

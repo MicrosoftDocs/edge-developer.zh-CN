@@ -1,25 +1,31 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 description: 查看有助于评估网站的辅助功能的工具和测试过程。
-title: 辅助功能 - 测试
+title: 辅助功能测试
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: b3aeb5ede1519352c12ab190fa6fbef9eee2ae12
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b03680d2112311b97912ed92ae446a74410c95bf
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397879"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597114"
 ---
 # <a name="accessibility-testing"></a>辅助功能测试  
 
-辅助功能测试是可用性测试的一种形式，用于验证你的网站是否受所有人员使用。 请查看 W3C[](https://www.w3.org/wiki/Accessibility_testing)辅助功能测试页，了解应何时进行测试、测试要求、应测试网站的人等。
+辅助功能测试是可用性测试的一种形式，用于验证你的网站是否受所有人员使用。 请查看 W3C 页面 [评估 Web](https://www.w3.org/WAI/test-evaluate) 辅助功能概述，了解应何时进行测试、测试要求、应测试网站的人等。
 
-使用以下工具和测试创建程序评估网站辅助功能：
+使用以下工具和测试过程评估网站辅助功能：
+
+#### <a name="accessibility-testing-in-devtools"></a>DevTools 中的辅助功能测试
+
+*   [DevTools 中的][DevtoolsAccessibilityReference] 辅助功能测试功能 - 辅助功能测试清单以及用于每个测试的 DevTools 功能。
+
+*   [使用 DevTools 的][DevtoolsAccessibilityAccessibilitytestingindevtools] 辅助功能测试概述 - 使用各种 DevTools 功能测试辅助功能问题的演练。
 
 #### [<a name="accessibility-evaluation-resources"></a>辅助功能评估资源](https://www.w3.org/WAI/eval/Overview.html)  
 
@@ -35,7 +41,7 @@ ms.locfileid: "11397879"
 
 #### [<a name="how-to-meet-wcag-20"></a>如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)  
 
-快速参考 Web 内容辅助功能指南 \(WCAG\) 2.0 要求 (成功) 和技术。
+快速参考 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求 (成功) 和技术。
 
 #### [<a name="html5accessibility"></a>HTML5Accessibility](https://html5accessibility.com)  
 
@@ -52,3 +58,8 @@ ms.locfileid: "11397879"
 #### [<a name="web-accessibility-evaluation-tools-list"></a>Web 辅助功能评估工具列表](https://www.w3.org/WAI/ER/tools/index.html)  
 
 可帮助确定网站是否满足辅助功能指南的 Web 辅助功能评估工具列表。
+
+<!-- links: -->
+
+[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "使用 DevTools 工具的辅助功能测试|Microsoft Docs"
+[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "DevTools |Microsoft Docs"
