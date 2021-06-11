@@ -26,7 +26,7 @@ ms.locfileid: "11597291"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
     
-1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择**** DevTools 左上角的"检查 \(检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  将鼠标悬停在 **50**个 **、100**个和 **200 个"支持** "按钮上。  The Inspect tool appears on the webpage， as an overlay.  " **检查"覆盖** 层的可键盘聚焦行显示，没有一个"支持"金额按钮可通过键盘访问，如带对角线的灰色圆圈所示。  按钮没有名称，并且具有 其角色，因为它们是元素，这意味着辅助技术无法访问 `generic` `div` 按钮。
 

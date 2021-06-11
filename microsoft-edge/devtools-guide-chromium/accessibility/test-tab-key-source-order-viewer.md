@@ -42,7 +42,7 @@ ms.locfileid: "11597249"
 
 若要打开源订单查看器，请执行以下命令：
 
-1.  在 DevTools 的右上角，选择"设置**\ (设置** ![ ](../media/settings-button-icon.msft.png) \) 按钮。  
+1.  在 DevTools 的右上角，选择"设置**\(设置** ![ ](../media/settings-button-icon.msft.png) \) 按钮。  
 
 1.  在 **"设置"** 下，选择"**实验"。**  
 

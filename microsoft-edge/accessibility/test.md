@@ -41,7 +41,7 @@ ms.locfileid: "11597114"
 
 #### [<a name="how-to-meet-wcag-20"></a>如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)  
 
-快速参考 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求 (成功) 和技术。
+快速参考 Web 内容辅助功能指南 \(WCAG\) 2.0 要求 (成功) 和技术。
 
 #### [<a name="html5accessibility"></a>HTML5Accessibility](https://html5accessibility.com)  
 

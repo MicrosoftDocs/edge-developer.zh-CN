@@ -92,7 +92,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
          **弹性框** (`flex`) 图标和网页突出显示 :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="“布局”窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="布局窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
          “**布局**”窗格中突出显示的**弹性框覆盖**  
       :::image-end:::  
    :::column-end:::
@@ -117,7 +117,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="突出显示以 align- 开头的 CSS 属性的“自动完成”菜单" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="突出显示以 align- 开头的 CSS 属性的自动完成菜单" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          突出显示以以下内容开头的 CSS 属性的“自动完成”菜单 `align-`  
       :::image-end:::  
    :::column-end:::
@@ -137,7 +137,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 现在，你有了一种在 Microsoft Edge DevTools 中打开更多工具的新方法。  在打开此试验后，“**更多工具**”图标将在主面板右侧显示为加号 (`+`)。  若要显示要添加到主面板的其他工具的列表，请选择“**更多工具**”\(`+`\) 图标。  若要启用此试验，请导航至“[设置][DevtoolsCustomizeIndexSettings]” > “**试验**”，然后选中“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  
 
-:::image type="complex" source="../../media/2021/01/more-tools.msft.png" alt-text="DevTools 中突出显示“更多工具”" lightbox="../../media/2021/01/more-tools.msft.png":::
+:::image type="complex" source="../../media/2021/01/more-tools.msft.png" alt-text="DevTools 中突出显示更多工具" lightbox="../../media/2021/01/more-tools.msft.png":::
    DevTools 中突出显示“**更多工具**”  
 :::image-end:::  
 
@@ -150,7 +150,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 若要在启用此试验的情况下查看显示和朗读多条建议的视频，请导航至 YouTube 上的“[Voiceover 公布 devtools 选项](https://youtu.be/9TcUpleEwwA)”。  
 
-:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="“样式”窗格中突出显示建议" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="样式窗格中突出显示建议" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
    “**样式**”窗格中突出显示 `suggestion` 列表  
 :::image-end:::  
 
@@ -194,7 +194,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 在 Microsoft Edge 版本 89 中，节点屏幕截图更为准确，即使节点中的内容在视区中不可见，也能捕获完整节点。  在“**元素**”工具中，将鼠标悬停在某个元素上，打开上下文菜单（右键单击），然后选择“**捕获节点屏幕**”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1003629][CR1003629]。  
 
-:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="“元素”工具中的上下文菜单上突出显示“捕获节点屏幕截图”" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="元素工具中的上下文菜单上突出显示捕获节点屏幕截图" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    “**元素**”工具中的上下文菜单上突出显示“**捕获节点屏幕截图**”  
 :::image-end:::  
 
@@ -221,7 +221,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 使用新的“**复制元素**”快捷方式克隆元素。  在“**元素**”工具中，将鼠标悬停在某个元素上，打开上下文菜单（右键单击），然后选择“**复制元素**”。  将在选定元素下创建一个新元素。  若要使用键盘快捷方式复制元素，请选择“`Shift`+`Alt`+`Down Arrow`”(Windows/Linux) 或“`Shift`+`Option`+`Down Arrow`”(macOS)。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1150797][CR1150797]。  
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="“复制元素”在“元素”工具中某个元素的上下文菜单中突出显示" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="复制元素在元素工具中某个元素的上下文菜单中突出显示" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    “**复制元素**”在“**元素**”工具中某个元素的上下文菜单中突出显示  
 :::image-end:::  
 
@@ -316,7 +316,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 网络模拟选项“**联机**”现已重命名为“**无限制**”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1028078][CR1028078]。  
 
-:::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="“无限制”选项" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
+:::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="无限制选项" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
    “**无限制**”选项  
 :::image-end:::  
 
@@ -336,12 +336,12 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/console-copy-object.msft.png" alt-text="在“控制台”中复制对象" lightbox="../../media/2021/01/console-copy-object.msft.png":::
+      :::image type="complex" source="../../media/2021/01/console-copy-object.msft.png" alt-text="在控制台中复制对象" lightbox="../../media/2021/01/console-copy-object.msft.png":::
          在“**控制台**”中复制对象  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="在“源”中复制对象" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
+      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="在源中复制对象" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
          在“**源**”中复制对象  
       :::image-end:::  
    :::column-end:::
@@ -361,12 +361,12 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="在“源”中复制文件名" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
+      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="在源中复制文件名" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
          在“**源**”中复制文件名  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在“样式”窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在样式窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
          在“**样式**”窗格中复制文件名  
       :::image-end:::  
    :::column-end:::

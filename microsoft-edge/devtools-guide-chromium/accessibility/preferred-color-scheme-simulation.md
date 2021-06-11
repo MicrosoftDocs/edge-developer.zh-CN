@@ -23,7 +23,7 @@ ms.locfileid: "11597067"
 **模拟深色或浅色主题：**
 
 1.  打开“**命令菜单**”。  
-    1.  选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) `Command` + `Shift` + `P` 或 \ (macOS\) 。  
+    1.  选择 `Ctrl` + `Shift` + `P` \(Windows/Linux\) `Command` + `Shift` + `P` 或 \(macOS\) 。  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            **命令菜单**  

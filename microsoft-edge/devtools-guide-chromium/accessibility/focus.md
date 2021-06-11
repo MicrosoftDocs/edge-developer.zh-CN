@@ -34,7 +34,7 @@ ms.locfileid: "11597109"
 若要跟踪 DevTools 中聚焦的元素：
 
 1.  打开“**控制台**”。  
-1.  Choose **Create live expression** \ (Create live expression ![ ](../media/create-live-expression-icon.msft.png) \) .  
+1.  Choose **Create live expression** \(Create live expression ![ ](../media/create-live-expression-icon.msft.png) \) .  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建动态表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        创建动态表达式  

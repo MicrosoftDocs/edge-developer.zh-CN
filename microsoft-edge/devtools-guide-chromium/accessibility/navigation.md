@@ -58,8 +58,8 @@ DevTools 分为一系列工具。   (在命令菜单中，**** 工具称为面�
 
 ### <a name="navigate-by-keyboard"></a>使用键盘导航  
 
-*   打开 DevTools 后，选择 `Control` + `]` \ (Windows、Linux\) 或 `Command` + `]` \ (macOS\) 将焦点移到主工具栏上的下一个工具。
-*   选择 `Control` + `[` \ (Windows、Linux\) 或 `Command` + \ (macOS\) 将焦点移到主工具栏上的上 `[` 一个工具。
+*   打开 DevTools 后，选择 `Control` + `]` \(Windows、Linux\) 或 `Command` + `]` \(macOS\) 将焦点移到主工具栏上的下一个工具。
+*   选择 `Control` + `[` \(Windows、Linux\) 或 `Command` + \(macOS\) 将焦点移到主工具栏上的上 `[` 一个工具。
 *   选择 `Tab` 或 `Shift` + 重复选择，直到焦点移到主工具栏或箱工具栏的选项卡，然后使用箭头键在工具 `Tab` 之间移动。
 
 **已知问题**  

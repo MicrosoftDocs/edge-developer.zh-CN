@@ -28,7 +28,7 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 
 *   在添加网页时，必须在网页中添加一个 [toc.md，这样](./microsoft-edge/toc.yml) 它就会出现。
 *   目录可能包含更多目录或 `readme.md` s
-*   文件夹/目录名称是短划线分隔的 \ (例如 `f12-tools` ，\) 小写。  目录用于网站的 `docs.microsoft.com` URL。  避免使用下划线、PascalCase 或 camelCase。  
+*   文件夹/目录名称是短划线分隔的 \(例如 `f12-tools` ，\) 小写。  目录用于网站的 `docs.microsoft.com` URL。  避免使用下划线、PascalCase 或 camelCase。  
 
 ### <a name="other-text-elements"></a>其他文本元素  
 
@@ -51,7 +51,7 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 
 ### <a name="displaying-code"></a>显示代码  
 
-可以使用内联 `code` markdown 语法 \ (backticks\) 。  
+可以使用内联 `code` markdown 语法 \(backticks\) 。  
 
 或者，你可以显示代码块。  以下代码段是 css 示例。  
 
@@ -103,7 +103,7 @@ body {
 
 ![笔记模式](./media/notes.png)
 
-对于多行块注释，在每个注释行前面使用大于 `>` \ (\) 字符，如以下示例所示。  
+对于多行块注释，在每个注释行前面使用大于 `>` \(\) 字符，如以下示例所示。  
 
 ```md
 > This is a line in a blockquote.  

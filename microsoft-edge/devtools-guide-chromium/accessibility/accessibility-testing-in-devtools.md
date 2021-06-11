@@ -25,7 +25,7 @@ ms.locfileid: "11597319"
 
 ## <a name="automated-testing-by-using-the-issues-tool"></a>使用问题工具自动测试
 
-When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \ (Issues ![ counter ](../media/issues-counter-icon.msft.png) \) to open the Issues [tool][DevToolsIssuesTool] to view the issues and more information.
+When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \(Issues ![ counter ](../media/issues-counter-icon.msft.png) \) to open the Issues [tool][DevToolsIssuesTool] to view the issues and more information.
 
 :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text=""问题"计数器显示当前网页中的问题个个，并打开"问题"工具" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
     "问题"计数器显示当前网页中的问题个个，并打开"问题"工具
@@ -146,7 +146,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 ## <a name="using-the-inspect-tool-to-detect-accessibility-issues"></a>使用检查工具检测辅助功能问题
 
-使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (Inspect ![ \) 工具位于 ](../media/inspect-icon.msft.png) DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
+使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \(Inspect ![ \) 工具位于 ](../media/inspect-icon.msft.png) DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择"检查工具"按钮打开"检查"工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     通过选择 **"检查** 工具"按钮 **打开"检查** "工具
@@ -169,7 +169,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 检查工具的信息覆盖的**** 上半部分显示以下信息：
 
-* 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的图标 \ (![网格布局图标](../media/grid-icon.msft.png)\).
+* 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的图标 \(![网格布局图标](../media/grid-icon.msft.png)\).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
 * 颜色作为颜色样本， (较小的彩色方形) 和格式化值 (如 `#336699`) 。

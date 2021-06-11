@@ -26,7 +26,7 @@ ms.locfileid: "11597253"
 
 ## <a name="view-the-accessibility-section-of-the-issues-tool"></a>查看问题工具的辅助功能部分
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，"问题"计数器 **\ (** Issues 计数器 \) 显示为语音气泡图标以及自动检测到 ![ ](../media/issues-counter-icon.msft.png) 的问题数。  浏览器中可能会显示不同的数字，并且该数字可能会随着使用 DevTools 而更新。
+1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，"问题"计数器 **\(** Issues 计数器 \) 显示为语音气泡图标以及自动检测到 ![ ](../media/issues-counter-icon.msft.png) 的问题数。  浏览器中可能会显示不同的数字，并且该数字可能会随着使用 DevTools 而更新。
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的"问题"计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         DevTools 中的"问题"计数器，指示当前文档中的问题数****
@@ -47,7 +47,7 @@ ms.locfileid: "11597253"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  在右上角，选择问题 **计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
+1.  在右上角，选择问题 **计数器** \(![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
 
 1.  在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
