@@ -317,6 +317,8 @@
               href: extensions-chromium/getting-started/part1-simple-extension.md
             - name: 创建扩展教程第 2 部分
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: 清单文件格式
+              href: extensions-chromium/getting-started/manifest-format.md
             - name: 旁加载扩展
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: 开发人员指南
