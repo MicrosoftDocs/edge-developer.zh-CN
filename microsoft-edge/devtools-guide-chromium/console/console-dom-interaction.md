@@ -75,7 +75,7 @@ document.querySelector('header').style.border = '2em solid green'
     
 1.  打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从"元素"工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从元素工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         从"元素"工具的 DOM 树中的 **元素** 复制 JavaScript 路径  
     :::image-end:::  
     

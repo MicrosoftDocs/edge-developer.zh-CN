@@ -65,7 +65,7 @@ ms.locfileid: "11597291"
 
 1.  选择 `buttons.js:18` 链接。  将 **打开"** 源"工具，显示应用的 JavaScript。
 
-    :::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责提供表单功能的 JavaScript，如"源"工具中所示" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责提供表单功能的 JavaScript，如源工具中所示" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
         负责提供表单功能的 JavaScript，如"源"工具中所示
     :::image-end:::
 

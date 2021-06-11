@@ -36,7 +36,7 @@ ms.locfileid: "11597255"
 
 1.  选择**** DevTools 左上角的"检查 \(检查 \) "按钮，使图标突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
 
-    :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="若要打开"检查"工具，请选择"检查"按钮" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="若要打开检查工具，请选择检查按钮" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
         若要打开"检查 **"** 工具，请选择" **检查"** 按钮
     :::image-end:::
 
@@ -106,7 +106,7 @@ ms.locfileid: "11597255"
 
 1.  现在，选择呈现的网页内的任何元素。  " **元素** "工具会自动打开并显示 DOM 树中元素的 HTML。 该工具还会在"样式"窗格中的 **元素上显示** 应用的 CSS。  选择呈现网页上的元素将关闭 **"检查"** 工具。
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关所选元素的详细信息将显示在"元素"工具中" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关所选元素的详细信息将显示在元素工具中" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     有关所选元素的详细信息将显示在 **"** 元素"工具中
 :::image-end:::
 

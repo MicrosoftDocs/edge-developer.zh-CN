@@ -118,7 +118,8 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  在 **Source Order Viewer** 部分下，选择“**显示源顺序**”复选框。  
 1.  突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc（源订单查看器）:::在辅助功能窗格中" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** 在“**辅助功能**”窗格中  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  

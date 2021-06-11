@@ -35,7 +35,7 @@ ms.locfileid: "11597300"
 
 1.  在" **样式"选项卡** 的右侧，选择 **"辅助功能"** 选项卡。 将显示 **元素的** 辅助功能树，并展开。
 
-:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树工具中的"资金"表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树工具中的资金表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     辅助功能树工具中的"资金"表单按钮
 :::image-end:::
 

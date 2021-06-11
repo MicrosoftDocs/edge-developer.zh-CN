@@ -35,7 +35,7 @@ ms.locfileid: "11597281"
             边栏导航菜单中的链接具有足够的对比度，如检查**覆盖中所示** :::image-end:::
     :::column-end:::
     :::column:::
-        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text=""检查"覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="检查覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
             "检查"覆盖层中的警告标记了对比度 **不足** 的元素 :::image-end:::
     :::column-end:::
 :::row-end:::

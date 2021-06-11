@@ -53,7 +53,7 @@ ms.locfileid: "11597317"
     
 1.  检查 **颜色选取器** 中的"对比率"部分。  一个选中标记表示元素满足最低 [建议][W3CContrastMinimum]。  两个选中标记表示它符合增强 [的建议][W3CContrastEnhanced]。  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器中的"对比率"部分显示 2 个选中标记和 13.97 值" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器中的对比率部分显示 2 个选中标记和 13.97 值" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        颜色 **选取器** 中的"对比率"部分显示 2 个选中标记和一个值 `13.97`  
     :::image-end:::  
     

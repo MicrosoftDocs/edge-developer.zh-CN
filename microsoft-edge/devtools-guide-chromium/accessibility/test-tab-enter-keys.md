@@ -34,7 +34,7 @@ ms.locfileid: "11597248"
 
 1.  再次 `Tab` 选择。  您重点关注的下一个元素是网页部分中的第一个 **"** 更多"链接， `content` 如大纲所指示。
     
-    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用键盘和"Tab"键导航文档。 焦点显示在文档中的链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用键盘和 Tab 键导航文档。 焦点显示在文档中的链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         使用键盘和 Tab 键导航文档。 焦点显示在文档中的链接上。
     :::image-end:::
     

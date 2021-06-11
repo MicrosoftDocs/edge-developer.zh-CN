@@ -47,7 +47,7 @@ ms.locfileid: "11597285"
     
     在我们的演示页面上，页面的 **"私人** 状态"部分在浅色模式下不可读，需要更改。 
     
-    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，"接收状态"部分有对比度问题" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，接收状态部分有对比度问题" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
         在 **浅色模式下** ，"接收状态"部分有对比度问题
     :::image-end:::
     

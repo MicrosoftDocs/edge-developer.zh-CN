@@ -44,7 +44,7 @@ ms.locfileid: "11597299"
     
 1.  选择 CSS 文件的链接。  CSS 文件将在"源" **工具中** 打开。
 
-    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于"源"工具中链接的样式" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于源工具中链接的样式" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
         应用于"源"工具中链接的样式
     :::image-end:::
     

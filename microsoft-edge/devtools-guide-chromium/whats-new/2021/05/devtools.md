@@ -29,7 +29,7 @@ ms.locfileid: "11590847"
 
 在 Microsoft Edge版本 91 或更早版本中，**** 当 DevTools 视口较窄时，不显示关闭 DevTools 的"关闭"按钮。  在 Microsoft Edge版本 92 中，**** 无论 DevTools 视口宽度如何，DevTools 中的"关闭"按钮始终存在。
 
-:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也显示"关闭 DevTools"按钮" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
+:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也显示关闭 DevTools按钮" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
    即使 **视** 区较窄，现在也显示"关闭 DevTools"按钮  
 :::image-end:::  
 
@@ -45,11 +45,11 @@ ms.locfileid: "11590847"
 
 "**更多工具**"菜单作为实验在 Microsoft Edge 89 中可用，现在始终存在。
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上方工具栏和"箱"工具栏上的"更多工具"按钮" lightbox="../../media/2021/05/more-tools-button.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上方工具栏和箱工具栏上的更多工具按钮" lightbox="../../media/2021/05/more-tools-button.msft.png":::
    上方 **工具栏和** "箱"工具栏上的"更多工具"按钮
 :::image-end:::  
 
-:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text=""更多工具"菜单" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="更多工具菜单" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
    " **更多工具"** 菜单
 :::image-end:::  
 
