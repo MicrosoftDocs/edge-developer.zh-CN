@@ -1,14 +1,29 @@
 ---
-description: Feature differences between Microsoft Edge and WebView2
-title: Feature differences between Microsoft Edge and WebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description： Microsoft Edge and WebView2 title之间的功能差异： Microsoft Edge 和 WebView2 作者之间的功能差异： MSEdgeTeam ms.author： msedgedevrel ms.date： 05/06/2021 ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView、WebView2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、edge html no-loc：
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>浏览器功能与 webView2 Microsoft Edge差异  
 
@@ -48,7 +63,7 @@ WebView2 基于新Microsoft Edge浏览器。  你有机会将功能从浏览器�
 | Edge Shopping | 关闭 | 否 | 此功能已关闭。  |  
 | Family Safety | 关闭 | 否 | 此功能已关闭。  |  
 | Favorites | 关闭 | 否 | 此功能已关闭。  |  
-| IE Mode | 关闭 | 否 | 此功能已关闭。 与 IE 模式相比，WebView2 不支持 IE 模式，并且行为 (如 MHT 支持) 。 |  
+| IE Mode | 关闭 | 否 | 此功能已关闭。 与 IE 模式（如 MHT 或 BIN 支持）相比，WebView2 不支持 IE 模式 (行为) 。 |  
 | Immersive Reader | 关闭 | 否 | 此功能取决于用于交互的浏览器 UI。  此功能已关闭。  |  
 | Intrusive Ads | 关闭 | 否 | 此功能已关闭。  |  
 | 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不得打开或关闭这些快捷方式。  相反，您可以使用 事件侦听组合键 `AcceleratorKeyPressed` ，并根据需要创建自定义响应。  有关详细信息，请导航到"[其他键盘快捷方式信息"。](#additional-keyboard-shortcuts-information) |  
@@ -86,7 +101,7 @@ WebView2 基于新Microsoft Edge浏览器。  你有机会将功能从浏览器�
 
 键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。  当Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会打开。  若要避免更改键盘快捷方式，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动 `AreBrowserAcceleratorKeysEnabled` `FALSE` 快捷方式。  
 
-下表列出了 WebView2 中始终关闭的快捷方式。  星号 \(\) 字符指示快捷方式未关闭，但它访问的功能已关闭或不适用于 `*` WebView2。  
+下表列出了 WebView2 中始终关闭的快捷方式。  星号 \ (\) 字符指示快捷方式未关闭，但它访问的功能已关闭或不适用于 `*` WebView2。  
 
 | 操作 | Windows |  
 |:--- |:--- |  
@@ -102,7 +117,7 @@ WebView2 基于新Microsoft Edge浏览器。  你有机会将功能从浏览器�
 | 选择最后一个选项卡 | `Ctrl`+`9` |  
 | 选择下一个选项卡 | `Ctrl`+`Tab` |  
 | 选择上一个选项卡 | `Ctrl`+`Shift`+`Tab` |  
-| 选择选项卡 \(1 - 8\)  | `Ctrl`+`(1-8)` |  
+| 选择选项卡 \ (1 - 8\)  | `Ctrl`+`(1-8)` |  
 | 显示 Favorites 栏 `*` | `Ctrl`+`Shift`+`B` |  
 | 帮助 | `F1` |  
 | 焦点下一个窗格 `*` | `F6` |  
