@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: f5e011edd9889f226d705e51838e5d73c2a3b98d
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 00bb5a2c11fcadd4a0eba22c29ac5a2652b9edb6
+ms.sourcegitcommit: 2b225426e90b017f9766ea8568713b95d267cd6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564733"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "11607313"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,10 +35,10 @@ ms.locfileid: "11564733"
 
 通过以下每个任务，您可以检查 DOM 节点的样式或属性。
 
-*   将鼠标悬停在 元素上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+*   将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
 *   选择 `Control` + `Shift` + `C` \(Windows、Linux\) 或 `Command` + `Option` + `C` \(macOS\)。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
 
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="检查选项" lightbox="../media/bing-right-click-inspect.msft.png":::
+:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text=""检查"选项" lightbox="../media/bing-right-click-inspect.msft.png":::
    " **检查"** 选项  
 :::image-end:::  
 
@@ -53,13 +53,13 @@ ms.locfileid: "11564733"
     1.  [打开 DevTools](#open-microsoft-edge-devtools)。  
     1.  选择" [控制台"][DevtoolsConsoleIndex] 窗格。  
 
-*   若要直接跳转到控制台[窗格][DevtoolsConsoleIndex]，请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
+*   若要直接跳转到控制台[窗格][DevtoolsConsoleIndex]，请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
 ## <a name="open-the-previous-panel"></a>打开上一个面板  
 
-若要跳转到已打开的上一个面板，请选择 `Control` + `Shift` + `I` \(Windows、Linux\) 或 `Command` + `Option` + `I` \(macOS\) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
+若要跳转到已打开的上一个面板，请选择 `Control` + `Shift` + `I` \ (Windows、Linux\) 或 `Command` + `Option` + `I` \ (macOS\) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
 
 ## <a name="open-microsoft-edge-devtools"></a>打开 Microsoft Edge DevTools  
 
@@ -70,7 +70,7 @@ ms.locfileid: "11564733"
     1.  选择 **"设置更多工具开发人员工具**" (`...` \) 图标>**更多 \> \>**  >   **\\) "** 图标。  
     
 *   使用键盘。  
-    *   选择 `F12` 或 `Control` + `Shift` + `I` \(Windows、Linux\) 或 `Command` + `Option` + `I` \(macOS\) 。  
+    *   选择 `F12` 或 `Control` + `Shift` + `I` \ (Windows、Linux\) 或 `Command` + `Option` + `I` \ (macOS\) 。  
 
 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
 
@@ -120,26 +120,15 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 若要更改 `F12` 打开 DevTools 的键盘快捷方式设置，请完成以下操作。  
 
-1.  选择图标 设置**和更多**\(`...` \) 图标 **>设置。**  
-1.  在 **"搜索设置"中**，输入 `Developer Tools` 。  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="按 F12 键时打开 DevTools 设置" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
-       按 **F12 键时打开 DevTools** 设置  
-    :::image-end:::  
-    
-1.  选择 **"按 F12 键时打开 DevTools"** 以将设置切换为关闭 \(或打开\) 。  将设置切换为关闭以停止 `F12` 键盘快捷方式打开 DevTools。  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="按下 F12 键时打开 DevTools 设置已关闭" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
-       按下 F12 键时打开 **DevTools** 设置已关闭  
-    :::image-end:::  
-    
-1.  将开关设置为关闭后，选择以确认 `F12` DevTools 不再打开。  
+1.  导航到 `edge://settings/system`。  
+1.  In `Developer Tools` ， choose Open the **DevTools when the F12 key is pressed** to toggle the setting to off or on.  将设置切换为关闭以停止 `F12` 键盘快捷方式打开 DevTools。  
+1.  将开关设置为关闭后，验证 `F12` 是否不再打开 DevTools。  
     
     > [!NOTE]
-    > 关闭按 F12 键时打开 **DevTools** 设置后，若要打开 DevTools，请完成以下操作之一。  
+    > 在关闭按 F12 键时打开 **DevTools**后，执行下列操作之一以打开 DevTools。  
     > 
     > *   选择 `Ctrl` + `Shift` + `I` 。  
-    > *   打开上下文菜单 \(右键单击\) > **检查**。  
+    > *   打开上下文菜单 \ (右键单击\) > **检查**。  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
