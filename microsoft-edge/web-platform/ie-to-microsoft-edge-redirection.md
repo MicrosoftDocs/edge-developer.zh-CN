@@ -4,18 +4,19 @@ title: 将用户从Microsoft Edge移动到Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， Internet Explorer
-ms.openlocfilehash: c2106955ed79bd28dc1f847dee220944bb014689
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: dd8db64311b60ff0c740776de94def88f22c2e96
+ms.sourcegitcommit: 0e67a56b9dc1f7a86924d142db0efd36fd99d38b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461134"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "11608665"
 ---
 # <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Microsoft Edge移动到Internet Explorer  
 
-许多新式网站具有的设计与 Internet Explorer \(IE\) 。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge支持自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+许多新式网站具有的设计与 Internet Explorer \ (IE\) 。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge支持自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
 本文介绍以下概念。  
 
