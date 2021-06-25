@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: ec0d1a003e621ecc2220c3eb0d03992bcd8fffa1
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 71e71555940d74f2071178be2e6daf0ec2f49dfd
+ms.sourcegitcommit: d0a6959c5338cf1927093b4a9ed29a0bc0390b43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565020"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "11615419"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,9 +30,7 @@ ms.locfileid: "11565020"
 # <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge应用程序缓存数据  
 
 > [!WARNING]
-> 应用程序缓存 API [正在从 Web 平台中删除][HTMLStandardOfflineWebApplications]。  
-
-<!--todo: Replace [HTMLStandardOfflineWebApplications] with [WebDevAppcacheRemoval].  -->  
+> 应用程序缓存已弃用，应避免使用它。  将从 Web 平台中删除应用程序缓存 API。  有关详细信息，请导航到["准备 AppCache 删除"。][WebDevAppcacheRemoval]
 
 本指南演示如何使用[DevTools Microsoft Edge检查][MicrosoftEdgeDevTools][应用程序缓存][MDNWebAPIsWindowApplicationCache]资源。  
 
@@ -46,7 +44,7 @@ ms.locfileid: "11565020"
 
 1.  展开" **应用程序缓存** "部分并选择缓存以查看资源。  
     
-    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="应用程序缓存窗格" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text=""应用程序缓存"窗格" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
        " **应用程序缓存"** 窗格  
     :::image-end:::  
 
@@ -74,11 +72,8 @@ ms.locfileid: "11565020"
 | `UPDATEREADY` |  提供新版本的缓存。 |  
 
 <!-- links -->  
-
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
-
-[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "脱机 Web 应用程序 - HTML Standard"  
-
+<!-- external links: -->
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "应用程序缓存缓存中的|MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache - Web API |MDN"  
 
