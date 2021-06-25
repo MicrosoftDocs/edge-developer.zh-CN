@@ -44,7 +44,7 @@ ms.locfileid: "11615419"
 
 1.  展开" **应用程序缓存** "部分并选择缓存以查看资源。  
     
-    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text=""应用程序缓存"窗格" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="应用程序缓存窗格" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
        " **应用程序缓存"** 窗格  
     :::image-end:::  
 

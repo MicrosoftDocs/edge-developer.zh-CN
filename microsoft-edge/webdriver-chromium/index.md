@@ -62,7 +62,7 @@ WebDriver、Microsoft Edge Driver、Selenium 和 Internet Explorer Driver 之间
 1.  导航到 **获取最新版本**。  
 1.  选择与你的版本版本号相匹配的频道Microsoft Edge。  
     
-    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text=""获取驱动程序"网页上的"获取Microsoft Edge部分" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="获取驱动程序网页上的获取Microsoft Edge部分" lightbox="./media/microsoft-edge-driver-install.msft.png":::
        "**获取驱动程序"网页上**的Microsoft Edge[部分][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
     :::image-end:::  
     
@@ -73,7 +73,7 @@ WebDriver、Microsoft Edge Driver、Selenium 和 Internet Explorer Driver 之间
     
 ## <a name="choose-a-webdriver-language-binding"></a>选择 WebDriver 语言绑定  
 
-必须下载的最后一个组件是特定语言的客户端驱动程序，用于将代码 \ (Python、Java、C\#、Ruby、JavaScript\) 转换为 Microsoft Edge 驱动程序在 Microsoft Edge \ (Chromium\) 中运行的命令。  
+必须下载的最后一个组件是特定语言的客户端驱动程序，用于将代码 \ (Python、Java、C\#、Ruby、JavaScript\) 转换为 Microsoft Edge 驱动程序在 Microsoft Edge \(Chromium\) 中运行的命令。  
 
 [下载你选择的 WebDriver 语言绑定][SeleniumDownloads]。  该Microsoft Edge推荐[Selenium 4.0.0-beta2][NugetPackagesSeleniumWebdriver400beta02]或更高版本，因为它支持 Microsoft Edge \ (Chromium\) 。  但是，你可以控制所有较旧版本的 Selenium Microsoft Edge \ (Chromium\) ，包括当前稳定的 Selenium 3 版本。  
 
@@ -399,7 +399,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 该Microsoft Edge团队希望倾听你有关使用 WebDriver、Selenium 和 Microsoft Edge 的反馈。  若要向团队发送你的问题和意见，请选择开发人员工具Microsoft Edge**** 发送反馈图标或发送推文[@EdgeDevTools。][TwitterTweetEdgeDevTools]  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的发送反馈图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标  
 :::image-end:::  
 
