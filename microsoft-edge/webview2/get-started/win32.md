@@ -8,25 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 073a92bf10a7ead85ac91bff54b5fc405c7d577c
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 2714f9a6cffea3cb7d53f9a4128d64920fd02dce
+ms.sourcegitcommit: 7713eec634264b0c44b1bb426f5b466c44b4e005
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535852"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "11618384"
 ---
 # <a name="get-started-with-webview2"></a>WebView2 入门  
 
 本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  有关各个 WebView2 API 的信息，请导航到 [API 参考][Webview2ReferenceWin32]。  
 
-## <a name="prerequisites"></a>必备条件  
+## <a name="prerequisites"></a>系统必备  
 
 请确保先安装以下先决条件列表，然后再继续。  
 
-*   [WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在受支持的操作系统 \(上的任意非稳定通道Windows 10、Windows 8.1和 Windows 7\) 。  
-    
-    > [!NOTE]
-    > WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。  
+*   [WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在受支持的操作系统 \ (上的任意非稳定通道Windows 10、Windows 8.1和 Windows 7\) 。  
     
 *   [Visual Studio][MicrosoftVisualstudioMain]安装有 C++ 支持的 2015 或更高版本。  
     
@@ -38,7 +35,7 @@ ms.locfileid: "11535852"
 > 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 ([C++][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]  
 
 1.  在Visual Studio中，打开 `WebView2GettingStarted.sln` 。  
-    如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \(右键单击\) ，然后选择 **"属性**"。  在**配置属性**  >  **常规**下 **，Windows SDK**版本和**** 平台工具集，以使用 Win10 SDK 和Visual Studio可用的工具集。  
+    如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \ (右键单击\) ，然后选择 **"属性**"。  在**配置属性**  >  **常规**下 **，Windows SDK**版本和**** 平台工具集，以使用 Win10 SDK 和Visual Studio可用的工具集。  
     
 :::image type="complex" source="../media/tool-version.png" alt-text="工具版本" lightbox="../media/tool-version.png":::
    工具版本  
@@ -50,7 +47,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步�
 
 将 WebView2 SDK 添加到项目中。  使用 NuGet 安装 Win32 SDK。  
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \(右键单击\) ，然后选择"管理NuGet**包"。**  
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包"。**  
     
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理 NuGet 程序包" lightbox="../media/manage-nuget-packages.png":::
        管理 NuGet 程序包  
@@ -113,7 +110,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步�
 
 将 WebView 添加到主窗口。  
 
-使用 `CreateCoreWebView2Environment` 方法设置环境并找到支持Microsoft Edge \(Chromium\) 的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。  
+使用 `CreateCoreWebView2Environment` 方法设置环境并找到支持Microsoft Edge \ (Chromium\) 的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。  
 
 在回调中，设置一些设置，调整 WebView 的大小以使用 100% 的父窗口，然后导航到必应。  
 
@@ -239,7 +236,7 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
 现在，WebView 应始终冻结 `Object` 对象并返回页面文档一次。  
 
 > [!NOTE] 
-> 脚本注入 API \(和其他一些 WebView2 API\) 是异步的，如果代码必须按特定顺序运行，则应该使用回调。  
+> 脚本注入 API \ (和其他一些 WebView2 API\) 是异步的，如果代码必须按特定顺序运行，则应该使用回调。  
 
 ## <a name="step-6---communication-between-host-and-web-content"></a>步骤 6 - 主机和 Web 内容之间的通信  
 
@@ -250,8 +247,8 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
 1.  主机注册处理程序以将收到的消息返回给 Web 内容  
 1.  主机将脚本注入 Web 内容，Web 内容注册处理程序以从主机打印消息  
 1.  主机向将 URL 张贴到主机的 Web 内容注入脚本  
-1.  将触发主机处理程序，并返回消息 \(URL\) Web 内容  
-1.  将触发 Web 内容的处理程序，并输出来自主机 \(URL\)   
+1.  将触发主机处理程序，并返回消息 \ (URL\) Web 内容  
+1.  将触发 Web 内容的处理程序，并输出来自主机 \ (URL\)   
     
 复制以下代码段并粘贴到 `HelloWebView.cpp` 中。  
 
@@ -295,19 +292,19 @@ nullptr);
 *   对于使用 WebView2 生成的示例应用，导航到 [WebView2Browser][GithubMicrosoftedgeWebview2browser]。  
 *   有关 WebView2 API 的详细信息，请导航到 [API 参考][Webview2ReferenceWin32]。  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 Microsoft Edge WebView 团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 WebView 团队Microsoft Edge联系  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 |Microsoft Edge 开发人员"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 |Microsoft Edge开发人员"  
 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ 参考|Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"  
 
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows 运行时 C++ 模板库 (WRL) |Microsoft Docs"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows运行时 C++ 模板库 (WRL) |Microsoft Docs"  
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough： Create a traditional Windows Desktop application (C++) |Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser |GitHub"  
@@ -319,7 +316,7 @@ nullptr);
 [GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "WebView2 API 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
 [GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
 
-[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows 实现库 (WIL) - microsoft/wil |GitHub"  
+[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows实现库 (WIL) - microsoft/wil |GitHub"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"  
 
