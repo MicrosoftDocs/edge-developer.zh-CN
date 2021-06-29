@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5f499a6c9f1109f80a9d459edf94ed2226734f19
-ms.sourcegitcommit: 87ba918b0910373bb645615377709bf140dc9b19
+ms.openlocfilehash: 69fcd29f9b4cae9ec290798b767fbe54793cb2fd
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "11583457"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624778"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -36,7 +36,7 @@ ms.locfileid: "11583457"
 <!--  Title: Get code hints in Elements tool  -->  
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->  
 
-在大多数新式 ID 中，文本下的波浪下划线指示语法错误。   在 Microsoft Edge 91 或更高版本中，在"元素"工具的**DOM**视图中，HTML 下会显示**波浪下划线。**  波浪下划线表示与辅助功能、兼容性、性能等相关的代码问题和建议。  若要详细了解如何查看和编辑问题，请导航到查找并修复开发人员Microsoft Edge[工具中的问题][DevtoolsIssuesIndex]。  
+在大多数新式 ID 中，文本下的波浪下划线指示语法错误。   在 Microsoft Edge 91 或更高版本中，在"元素"工具的**DOM**视图中，HTML 下会显示**波浪下划线。**  波浪下划线表示与辅助功能、兼容性、性能等相关的代码问题和建议。  若要详细了解如何查看和编辑问题，请导航到使用问题工具查找和 [修复问题][DevtoolsIssuesIndex]。  
 
 若要打开 **问题** 工具并了解有关该问题以及如何修复它，请完成以下操作之一。  
 
@@ -48,7 +48,7 @@ ms.locfileid: "11583457"
         
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在元素工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
+      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在"元素"工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
          在"元素"工具中选择 **带下划线** 的错误  
       :::image-end:::  
    :::column-end:::
@@ -68,15 +68,15 @@ ms.locfileid: "11583457"
 
 DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具和窗格。  若要关闭工具提示，请选择 `Esc` 。  若要打开工具提示，请完成以下操作之一。  
 
-*   选择 `Ctrl` + `Shift` + `H` \(Windows/Linux\) `Cmd` + `Shift` + `H` 或 \(macOS\) 。  
+*   选择 `Ctrl` + `Shift` + `H` \ (Windows/Linux\) `Cmd` + `Shift` + `H` 或 \ (macOS\) 。  
 *   [打开命令菜单，][DevtoolsCommandMenuIndexOpenCommandMenu] 然后键入 `tooltips` 。  
-*   Choose **Customize and control DevTools** \(`...` \) > **Help**Toggle the  >  **DevTools Tooltips**.  
+*   Choose **Customize and control DevTools** \ (`...` \) > **Help**Toggle the  >  **DevTools Tooltips**.  
 
-此外，如果你打开焦点模式和 [DevTools][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode] 工具提示实验，还可以选择活动栏底部的切换 **DevTools** 工具提示 \(`?` \) **按钮**。  
+此外，如果你打开焦点模式和 [DevTools][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode] 工具提示实验，还可以选择活动栏底部的切换 **DevTools** 工具提示 \ (`?` \) **按钮**。  
 
 若要显示有关如何使用 DevTools 的信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个大纲区域上。  
 
-:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="将鼠标悬停在问题工具突出显示区域中的任何位置，以显示更多详细信息" lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="将鼠标悬停在"问题"工具突出显示区域中的任何位置，以显示更多详细信息" lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
    将鼠标悬停在"问题"工具突出显示区域 **中的任何位置，** 以显示更多详细信息  
 :::image-end:::  
 
@@ -143,7 +143,7 @@ Most operating systems require square icons.  Please include at least one square
 
 从[Microsoft Edge版本 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]开始，"**** 样式"窗格将显示 CSS 变量并提供指向每个变量的定义的链接。  在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。  若要在"样式 **"窗格中打开** 定义，请将鼠标悬停在变量上，然后选择 `Enter` 。  有关 CSS 变量详细信息，请导航到使用 CSS 自定义属性 ([变量) 。 ][MdnDocsWebCssUsingCssCustomProperties]  若要在开放源代码项目中查看此功能Chromium，请导航到"问题 "[1187735][CR1187735]。  
 
-:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在样式窗格中突出显示" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在"样式"窗格中突出显示" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    " `--theme-body-background` 样式"窗格中突出显示的**** CSS 变量  
 :::image-end:::  
 
@@ -152,9 +152,9 @@ Most operating systems require square icons.  Please include at least one square
 <!-- Title: Display Issues in severity order  -->  
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->  
 
-问题 **工具** 显示改进网站的建议，包括辅助功能、性能、安全性等。 根据你的反馈，现在会自动按严重性对问题进行排序。  在每个反馈类别中，每个标记为"错误"的问题**** 首先出现，然后关注标记为"警告"的每个**** 问题，然后每个标记为"提示"**的问题**。  为了帮助你优化问题，为将来的更新计划了额外的筛选器选项。  若要详细了解如何查看问题，请导航到查找并修复开发人员Microsoft Edge[工具中的问题][DevtoolsIssuesIndex]。  
+问题 **工具** 显示改进网站的建议，包括辅助功能、性能、安全性等。 根据你的反馈，现在会自动按严重性对问题进行排序。  在每个反馈类别中，每个标记为"错误"的问题**** 首先出现，然后关注标记为"警告"的每个**** 问题，然后每个标记为"提示"**的问题**。  为了帮助你优化问题，为将来的更新计划了额外的筛选器选项。  若要详细了解如何查看问题，请导航到使用 [问题工具查找和修复问题][DevtoolsIssuesIndex]。  
 
-:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="问题工具按严重性显示排序的问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text=""问题"工具按严重性显示排序的问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    " **问题** "工具按严重性显示排序的问题  
 :::image-end:::  
 
@@ -178,7 +178,7 @@ Microsoft Edge [Tools for Visual Studio Code extension][VisualstudioMarketplaceM
 
 ### <a name="visualize-css-scroll-snap"></a>可视化 CSS 滚动贴靠  
 
-现在，可以在"元素 `scroll-snap` "工具中**** 切换锁屏提醒，以检查 CSS 滚动对齐方式。  当网页上的 HTML 元素应用于该元素时，会在"元素"工具中旁边 `scroll-snap-type` `scroll-snap` **显示锁** 屏提醒。  选择锁屏提醒以在网页上 (或关闭\) 滚动贴贴显示。  To review an example webpage， navigate to [Scroll 贴靠 Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  在示例中，点显示在对齐边缘上。  滚动端口具有纯色轮廓，而贴靠项具有短划线轮廓。  滚动填充填充为绿色，而滚动边距填充为橙色。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[862450"。][CR862450]  
+现在，可以在"元素 `scroll-snap` "工具中**** 切换锁屏提醒，以检查 CSS 滚动对齐方式。  当网页上的 HTML 元素应用于该元素时，会在"元素"工具中旁边 `scroll-snap-type` `scroll-snap` **显示锁** 屏提醒。  选择锁屏提醒以在网页上 (或关闭\) 滚动贴贴显示。  To review an example webpage， navigate to [Scroll Snap Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  在示例中，点显示在对齐边缘上。  滚动端口具有纯色轮廓，而贴靠项具有短划线轮廓。  滚动填充填充为绿色，而滚动边距填充为橙色。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[862450"。][CR862450]  
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS 滚动对齐" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS 滚动对齐  
@@ -196,17 +196,17 @@ Microsoft Edge [Tools for Visual Studio Code extension][VisualstudioMarketplaceM
 
 ### <a name="new-badge-settings-pane-in-the-elements-tool"></a>"元素"工具中的"新建锁屏提醒设置"窗格  
 
-现在，使用"元素 **"** 工具中的**** 锁屏提醒设置打开 \(或 off\) 单个锁屏提醒。  使用此功能在检查网页时自定义重要锁屏提醒并专注于重要锁屏提醒。  若要在"元素"工具顶部显示 **锁屏提醒** 设置窗格，请完成以下操作。  
+现在，使用"元素 **"** 工具中的**** 锁屏提醒设置打开 \ (或 off\) 单个锁屏提醒。  使用此功能在检查网页时自定义重要锁屏提醒并专注于重要锁屏提醒。  若要在"元素"工具顶部显示 **锁屏提醒** 设置窗格，请完成以下操作。  
 
 1.  将鼠标悬停在任何元素上。  
 1.  打开上下文菜单\（右键单击\）。  
 1.  选择**锁屏提醒设置...**  
     
-若要显示 \(或隐藏\) 锁屏提醒，请选择 "\("或删除) 锁屏提醒名称旁边的复选框。  
+若要显示 \ (或隐藏\) 锁屏提醒，请选择 "\ ("或删除) 锁屏提醒名称旁边的复选框。  
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->  
 
-:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="元素工具中的锁屏提醒设置窗格" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text=""元素"工具中的锁屏提醒设置窗格" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
    **"元素"** 工具中的锁屏提醒 **设置** 窗格  
 :::image-end:::  
 
@@ -255,7 +255,7 @@ DevTools 中的图像预览已增强，可显示更多信息，包括以下详�
     
 若要在开放源代码项目中查看此功能的历史记录，Chromium问题 [1162042][CR1162042]。  
 
-:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新增更多网络条件...按钮将打开网络条件工具以配置内容编码" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
+:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新增更多网络条件...按钮将打开"网络条件"工具以配置内容编码" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    新建 **更多网络条件...** 按钮将打开 **网络条件** 工具进行配置 `Content-Encoding`  
 :::image-end:::  
 
@@ -351,7 +351,7 @@ DevTools 现在支持在使用源工具中的表示法的 JavaScript 成员表�
 
 #### <a name="improved-outline-of-html-files"></a>改进了 HTML 文件的大纲  
 
-DevTools 现在具有对文件的更好的大纲 `.html` 支持。  在 **"源** "工具中，打开 `.html` 文件。  若要打开 \(或关闭\) 代码大纲，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 只显示一些函数。  若要在开放源代码项目中查看此功能的历史记录，Chromium问题[761019][CR761019]和 [1191465][CR1191465]。  
+DevTools 现在具有对文件的更好的大纲 `.html` 支持。  在 **"源** "工具中，打开 `.html` 文件。  若要打开 \ (或关闭\) 代码大纲，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 只显示一些函数。  若要在开放源代码项目中查看此功能的历史记录，Chromium问题[761019][CR761019]和 [1191465][CR1191465]。  
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进了 HTML 文件的大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    改进了 HTML 文件的大纲  
@@ -405,7 +405,7 @@ DevTools 现在具有对文件的更好的大纲 `.html` 支持。  在 **"源**
 [DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "打开命令菜单 - 使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"  
 [DevtoolsConsoleApiError]: ../../../console/api.md#error "error - 控制台 API |Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../../../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "使用问题工具查找并修复|Microsoft Docs"  
 [DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "服务工作者改进|Microsoft Docs"  
 [DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "使用调试器窗格调试 JavaScript 代码 - 源工具概述|Microsoft Docs"  
 

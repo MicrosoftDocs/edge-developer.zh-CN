@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: badcaae0ad637fe7a027f78d00daf9133789693e
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483183"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624743"
 ---
 # <a name="use-the-console"></a>使用控制台  
 
@@ -33,17 +33,17 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开元素工具" lightbox="../media/console-intro-console-panel.msft.png":::
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开"元素"工具" lightbox="../media/console-intro-console-panel.msft.png":::
          **下** 面板中的控制台，其上方打开 **"元素** "工具  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
+直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
 
 ## <a name="error-reports-and-console"></a>错误报告和控制台  
 
-**控制台** 是报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，在 DevTools**** 设置图标旁边会显示一个按钮，该图标提供错误和警告的数量。  选择它以打开 **控制台** 并显示问题。  有关详细信息，请导航到"[控制台"中报告的"调试错误"。][DevtoolsConsoleConsoleDebugJavascript]  
+**控制台** 是报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools 中提供错误和警告**设置**图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到"[控制台"中报告的"调试错误"。][DevtoolsConsoleConsoleDebugJavascript]
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools 提供有关控制台中错误 **的详细信息**  
@@ -51,7 +51,9 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 ## <a name="inspect-and-filter-information-on-the-current-webpage"></a>检查和筛选当前网页上的信息  
 
-当你在网页上打开 DevTools 时，你很可能会显示记录到控制台的一些 **信息**。  当您需要识别重要信息时，信息量将成为一个问题。  若要查看需要采取措施的重要信息，请使用 DevTools [中的问题][DevtoolsIssuesIndex] 工具。  大部分噪音仍然存在，这就是在控制台中了解自动日志和 [筛选器][DevtoolsConsoleConsoleFilters] 选项的一个好 **办法的原因**。  
+When you open DevTools on a webpage， there may be the overwhelming amount of information in the **Console**.  当您需要识别重要信息时，信息量将成为一个问题。  若要查看需要采取措施的重要信息，请使用 DevTools [中的问题][DevtoolsIssuesIndex] 工具。
+
+问题正在逐渐从控制台**移动到****问题工具**。  但是，控制台中仍有很多信息，这就是为什么在控制台**** 中了解自动日志和筛选器**选项是一**个好主意。  有关详细信息，请导航到"[筛选器控制台消息"。][DevtoolsConsoleConsoleFilters]
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="包含控制台的完整消息的 DevTools" lightbox="../media/console-intro-noise.msft.png":::
    包含控制台的完整 **消息** 的 DevTools  
@@ -61,7 +63,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要尝试，请完成以下操作。  
 
-1.  若要打开**控制台**，请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
+1.  若要打开**控制台**，请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
 1.  导航到 [控制台消息示例：日志、信息、错误和警告][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]，或在控制台中复制并运行以下 **代码段**。  
     
     ```javascript
@@ -132,10 +134,10 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
     ```  
     
 :::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="复制顶部标题 (h1) DOM 中的内容并显示在控制台中" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   从 DOM 复制顶部标题 `h1` \(\) 内容，并显示在 **控制台中**  
+   从 DOM 复制顶部标题 `h1` \ (\) 内容，并显示在 **控制台中**  
 :::image-end:::  
 
-您还可以更改它，而不是仅从网页中读取。  若要尝试，请完成以下操作。  
+还可以更改它，而不是仅从网页中读取。  若要尝试更改网页，请完成以下操作。  
 
 1.  打开“**控制台**”。  
 1.  复制并粘贴以下代码段。  
@@ -157,7 +159,6 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
     $$('a').forEach(a => a.style.border='1px solid lime');
     ```  
     
-
 :::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="使用控制台操作选定元素" lightbox="../media/console-intro-changing-styles.msft.png":::
     使用控制台操作选定 **元素**  
 :::image-end:::  
@@ -173,7 +174,6 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"  
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "在控制台控制台中报告的调试|Microsoft Docs"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "使用控制台与 DOM 服务器|Microsoft Docs" 
@@ -181,12 +181,9 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"  
 [DevtoolsConsoleConsoleLog]: ./console-log.md "在控制台工具控制台中记录|Microsoft Docs"  
 [DevtoolsConsoleReference]: ./reference.md "控制台参考|Microsoft Docs"  
-[DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"  
-
-[DevtoolsIssuesIndex]: ../issues/index.md "查找并修复 Microsoft Edge DevTools 问题工具的问题 | Microsoft Docs"  
-
+[DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考|Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复|Microsoft Docs"  
+<!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "控制台消息示例：日志、信息、错误和警告|GitHub"  
-
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口|MDN"  
-
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval–print 循环|Wikipedia"  
