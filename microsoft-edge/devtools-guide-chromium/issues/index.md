@@ -1,20 +1,20 @@
 ---
-description: 使用问题工具查找并修复网站问题。
-title: 查找并修复开发人员工具Microsoft Edge工具的问题
+description: 使用问题工具识别和修复当前网页的问题。
+title: 使用问题工具查找和修复问题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 17c1162bdec21ccc4abe1d3d34ce7c766aeb1009
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 86277c509aa4b67635661ba3a316fb5b1e3b9d14
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11596990"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624687"
 ---
-<!-- Copyright Sam Dutton 
+<!-- Copyright Sam Dutton
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -26,118 +26,150 @@ ms.locfileid: "11596990"
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->  
-# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a><span data-ttu-id="cad86-104">查找并修复开发人员工具Microsoft Edge工具的问题</span><span class="sxs-lookup"><span data-stu-id="cad86-104">Find and fix problems with the Microsoft Edge DevTools Issues tool</span></span>  
+   limitations under the License.  -->
 
-<span data-ttu-id="cad86-105">DevTools Microsoft Edge中的问题工具可以减少控制台的通知疲劳和**混乱。** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cad86-105">The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.</span></span>  <span data-ttu-id="cad86-106">使用它查找浏览器检测到的问题（如 Cookie 问题和混合内容）的解决方案。</span><span class="sxs-lookup"><span data-stu-id="cad86-106">Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.</span></span>  
+# <a name="find-and-fix-problems-using-the-issues-tool"></a><span data-ttu-id="cb2f9-104">使用问题工具查找和修复问题</span><span class="sxs-lookup"><span data-stu-id="cb2f9-104">Find and fix problems using the Issues tool</span></span>
+
+<span data-ttu-id="cb2f9-105">在 Microsoft Edge工具中，问题工具自动分析当前\*\*\*\* 网页，报告按类型分组的问题，并提供文档来帮助解释和解决问题。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-105">In Microsoft Edge DevTools, the **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues.</span></span>
+
+<span data-ttu-id="cb2f9-106">问题 **工具** 提供以下类别的反馈：</span><span class="sxs-lookup"><span data-stu-id="cb2f9-106">The **Issues** tool provides feedback in the following categories:</span></span>
+*  <span data-ttu-id="cb2f9-107">辅助功能。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-107">Accessibility.</span></span>
+*  <span data-ttu-id="cb2f9-108">跨浏览器的兼容性。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-108">Compatibility across browsers.</span></span>
+*  <span data-ttu-id="cb2f9-109">性能。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-109">Performance.</span></span>
+*  <span data-ttu-id="cb2f9-110">渐进式 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-110">Progressive Web Apps.</span></span>
+*  <span data-ttu-id="cb2f9-111">安全性。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-111">Security.</span></span>
+*  <span data-ttu-id="cb2f9-112">其他。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-112">Other.</span></span>
+
+<span data-ttu-id="cb2f9-113">问题工具**中**的反馈由多个源提供，包括 Chromium 平台、Deque 轴、MDN 浏览器兼容性数据和 webhint。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-113">Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.</span></span>  <span data-ttu-id="cb2f9-114">有关填充问题工具的这些反馈 **源的信息，** 请导航到：</span><span class="sxs-lookup"><span data-stu-id="cb2f9-114">For information about these sources of feedback that populate the **Issues** tool, navigate to:</span></span>
+*  [<span data-ttu-id="cb2f9-115">axe 工具概述</span><span class="sxs-lookup"><span data-stu-id="cb2f9-115">axe Tools Overview</span></span>][DequeAxe]
+*  [<span data-ttu-id="cb2f9-116">browser-compat-data 存储库</span><span class="sxs-lookup"><span data-stu-id="cb2f9-116">browser-compat-data repo</span></span>][MDNCompat]
+*  [<span data-ttu-id="cb2f9-117">webhint</span><span class="sxs-lookup"><span data-stu-id="cb2f9-117">webhint</span></span>][webhintIo]
+
+
+## <a name="open-the-issues-tool"></a><span data-ttu-id="cb2f9-118">打开问题工具</span><span class="sxs-lookup"><span data-stu-id="cb2f9-118">Open the Issues tool</span></span>
+
+<span data-ttu-id="cb2f9-119">执行以下步骤以使用演示 **页面打开** 问题工具。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-119">Perform the following steps to open the **Issues** tool using a demo page.</span></span>
+
+
+1.  <span data-ttu-id="cb2f9-120">导航到包含要修复的问题的网页。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-120">Navigate to a webpage that contains issues to fix.</span></span>  <span data-ttu-id="cb2f9-121">例如，在一 [个新选项卡或窗口中][A11ytestingPagewitherrors] 打开辅助功能测试演示页面。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-121">For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.</span></span>
+
+1.  <span data-ttu-id="cb2f9-122">打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-122">Open DevTools.</span></span>  <span data-ttu-id="cb2f9-123">几秒钟后，"问题"计数器 **\ (** ![ Issues 计数器 \) 显示在 ](../media/issues-counter-icon.msft.png) DevTools 的右上角。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-123">After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, in the upper right corner of DevTools.</span></span>  <span data-ttu-id="cb2f9-124">问题计数器中的问题数可能不同。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-124">The number of issues in your Issues counter might be different.</span></span>
+
+1.  <span data-ttu-id="cb2f9-125">选择" **问题"计数器**。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-125">Select the **Issues counter**.</span></span>  <span data-ttu-id="cb2f9-126">" **问题** "工具将打开，并分组为不同类别的问题。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-126">The **Issues** tool opens with issues grouped into different categories.</span></span>
+
+    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的"问题"工具中的问题类别" lightbox="../media/issues-tool-categories.msft.png":::
+       <span data-ttu-id="cb2f9-128">演示页上的"问题"工具中的问题类别</span><span class="sxs-lookup"><span data-stu-id="cb2f9-128">Categories of issues in the Issues tool on the demo page</span></span>
+    :::image-end:::
+
+### <a name="other-ways-to-open-the-issues-tool"></a><span data-ttu-id="cb2f9-129">打开问题工具的其他方法</span><span class="sxs-lookup"><span data-stu-id="cb2f9-129">Other ways to open the Issues tool</span></span>
+
+<span data-ttu-id="cb2f9-130">有几种其他方法可以打开 **问题** 工具：</span><span class="sxs-lookup"><span data-stu-id="cb2f9-130">There are several additional ways to open the **Issues** tool:</span></span>
+*  <span data-ttu-id="cb2f9-131">在主**面板或**" () 选择"更多工具"菜单，然后选择 **+** "问题 **"。** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cb2f9-131">Select the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.</span></span>
+*  <span data-ttu-id="cb2f9-132">选择 **"自定义和控制 DevTools**  >  **更多工具问题**  >  **"。**</span><span class="sxs-lookup"><span data-stu-id="cb2f9-132">Select **Customize and control DevTools** > **More tools** > **Issues**.</span></span>
+*  <span data-ttu-id="cb2f9-133">在"元素"工具的 DOM **树中，** 选择并单击带 `Shift` 波浪下划线的元素名称。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-133">In the DOM tree in the **Elements** tool, select `Shift` and then click a wavy-underlined element name.</span></span>  <span data-ttu-id="cb2f9-134">或者，打开带波浪线下划线的元素上的上下文菜单，然后选择查看 **问题**。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-134">Or, open the context menu on a wavy-underlined element and then select **View issues**.</span></span>
+
+### <a name="issues-are-automatically-ordered-by-severity"></a><span data-ttu-id="cb2f9-135">问题按严重性自动排序</span><span class="sxs-lookup"><span data-stu-id="cb2f9-135">Issues are automatically ordered by severity</span></span>
+
+<span data-ttu-id="cb2f9-136">在每个问题类别中，首先列出错误，然后列出警告，然后列出提示。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-136">Within each category of issues, first the errors are listed, then warnings, and then tips.</span></span>
+
+:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text=""问题"工具显示按严重性排序的性能问题" lightbox="../media/issues-ordered-by-severity.msft.png":::
+   <span data-ttu-id="cb2f9-138">" **问题** "工具显示按严重性排序的性能问题</span><span class="sxs-lookup"><span data-stu-id="cb2f9-138">The **Issues** tool displays Performance issues sorted by severity</span></span>
+:::image-end:::
+
+### <a name="include-third-party-issues"></a><span data-ttu-id="cb2f9-139">包括第三方问题</span><span class="sxs-lookup"><span data-stu-id="cb2f9-139">Include third-party issues</span></span>
+
+<span data-ttu-id="cb2f9-140">若要包含由第三方网站导致的问题，请在"问题"工具顶部，选中\*\*\*\*"包括第**三**方问题"复选框。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-140">To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.</span></span>
+
+
+## <a name="expand-entries-in-the-issues-tool"></a><span data-ttu-id="cb2f9-141">展开问题工具中的条目</span><span class="sxs-lookup"><span data-stu-id="cb2f9-141">Expand entries in the Issues tool</span></span>
+
+<span data-ttu-id="cb2f9-142">问题 **工具** 提供了适用于每个问题的其他文档和推荐的修补程序。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-142">The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.</span></span>  <span data-ttu-id="cb2f9-143">若要展开问题以获取此附加信息，请选择问题，如下所示。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-143">To expand an issue to get this additional information, select an issue, as follows.</span></span>
+
+1.  <span data-ttu-id="cb2f9-144">打开新 [窗口或][A11ytestingPagewitherrors] 选项卡中的演示页面，然后打开 DevTools。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-144">Open the [demo page][A11ytestingPagewitherrors] in a new window or tab, and then open DevTools.</span></span>
+
+1.  <span data-ttu-id="cb2f9-145">通过选择 **问题** 计数器 **\ (** 问题计数器 \) ![ 打开问题 ](../media/issues-counter-icon.msft.png) 工具。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-145">Open the **Issues** tool by selecting the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).</span></span>
+
+1.  <span data-ttu-id="cb2f9-146">选择问题以展开问题。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-146">Select an issue to expand the issue.</span></span>
+
+    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text=""问题"工具显示有关如何修复该问题的其他信息" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+       <span data-ttu-id="cb2f9-148">" **问题** "工具显示有关如何修复该问题的其他信息</span><span class="sxs-lookup"><span data-stu-id="cb2f9-148">The **Issues** tool displaying additional information on how to fix the issue</span></span>
+    :::image-end:::
+
+<span data-ttu-id="cb2f9-149">每个显示的问题都具有以下组件：</span><span class="sxs-lookup"><span data-stu-id="cb2f9-149">Each displayed issue has the following components:</span></span>
+*   <span data-ttu-id="cb2f9-150">描述问题的标题。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-150">A headline describing the issue.</span></span>
+*   <span data-ttu-id="cb2f9-151">提供更多上下文和建议的解决方案的说明。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-151">A description providing more context and proposed solutions.</span></span>
+*   <span data-ttu-id="cb2f9-152">链接到\*\*\*\* DevTools 中的资源的受影响的资源部分，如**元素**、**源**或**网络**工具。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-152">An **AFFECTED RESOURCES** section that links to resources in DevTools, such as the **Elements**, **Sources**, or **Network** tool.</span></span>
+*   <span data-ttu-id="cb2f9-153">指向更多文档的链接。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-153">Links to further documentation.</span></span>
+
+
+## <a name="view-issues-in-context-of-an-associated-tool"></a><span data-ttu-id="cb2f9-154">查看关联工具上下文中的问题</span><span class="sxs-lookup"><span data-stu-id="cb2f9-154">View issues in context of an associated tool</span></span>
+
+<span data-ttu-id="cb2f9-155">问题工具**中**的问题可能包括打开不同工具（如元素、源或网络工具）**的一**个或多个\*\*\*\* 链接。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cb2f9-155">An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool.</span></span> <span data-ttu-id="cb2f9-156">可以打开其中一个工具来执行其他疑难解答步骤。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-156">You can open one of these tools to perform additional troubleshooting steps.</span></span> <span data-ttu-id="cb2f9-157">若要从问题工具打开 **链接的工具，** 请执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-157">To open a linked tool from the **Issues** tool, perform the following steps.</span></span>
+
+1.  <span data-ttu-id="cb2f9-158">如上一部分所述，打开演示页面，然后在问题工具 **中展开问题** 。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-158">As described in the previous section, open the demo page and then expand an issue in the **Issues** tool.</span></span>
+
+1.  <span data-ttu-id="cb2f9-159">在 **"受影响的资源**  >  **打开"中**，选择工具名称。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-159">In **AFFECTED RESOURCES** > **Open in**, select the tool name.</span></span>  <span data-ttu-id="cb2f9-160">受影响的资源将显示在所选工具中。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-160">The affected resource is displayed in the selected tool.</span></span>
+
+    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="从"问题"工具中选择打开受影响资源的工具" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+       <span data-ttu-id="cb2f9-162">从"问题"工具中选择打开受影响资源的工具</span><span class="sxs-lookup"><span data-stu-id="cb2f9-162">Select a tool to open an affected resource from within the Issues tool</span></span>
+    :::image-end:::
+
+    <span data-ttu-id="cb2f9-163">展开的问题可能有"网络 **"** 链接，以在"网络"工具中 **显示受影响的** 资源。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-163">An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool.</span></span>
+
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开"网络"工具" lightbox="../media/issues-tab-view-issue.msft.png":::
+    <span data-ttu-id="cb2f9-165">选择 **网络** 资源链接时， **将打开"网络"** 工具</span><span class="sxs-lookup"><span data-stu-id="cb2f9-165">The **Network** tool opens when you select a **Network** resource link</span></span>
+    :::image-end:::
+
+
+## <a name="open-issues-from-the-dom-tree"></a><span data-ttu-id="cb2f9-166">打开 DOM 树中的问题</span><span class="sxs-lookup"><span data-stu-id="cb2f9-166">Open issues from the DOM tree</span></span>
+
+<span data-ttu-id="cb2f9-167">如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-167">If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.</span></span>  <span data-ttu-id="cb2f9-168">可以打开上下文菜单 (右键单击) ，然后选择查看问题，或者选择并左键单击带波浪\*\*\*\* 下划线 `Shift` 的元素。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-168">You can open the context menu (right-click) on the element and then select **View issues**, or select `Shift` and left-click the element with the wavy underline.</span></span>
+
+<span data-ttu-id="cb2f9-169">若要对 DOM 树中带波浪下划线的元素显示问题，请执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-169">To display an issue for elements with wavy underlines in the DOM tree, perform the following steps.</span></span>
+
+1.  <span data-ttu-id="cb2f9-170">在一个新选项卡或窗口中 [打开一个页面][A11ytestingPagewitherrors]，如演示页面。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-170">Open a page, such as the [demo page][A11ytestingPagewitherrors], in a new tab or window.</span></span>
+
+1.  <span data-ttu-id="cb2f9-171">打开 DevTools，然后选择" **元素"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-171">Open DevTools and then select the **Elements** tab.</span></span>
+
+1.  <span data-ttu-id="cb2f9-172">在 DOM 树中，展开 `<body>`  >  `<header>`  >  `<form>` 。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-172">In the DOM tree, expand `<body>` > `<header>` > `<form>`.</span></span>  <span data-ttu-id="cb2f9-173">请注意， `<input>` 元素具有波浪下划线。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-173">Notice that the `<input>` element has a wavy underline.</span></span>
+
+    :::image type="complex" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="元素工具中 DOM 树中带波浪下划线的问题" lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
+       <span data-ttu-id="cb2f9-175">元素工具中 **DOM 树中带** 波浪 **下划线** 的问题</span><span class="sxs-lookup"><span data-stu-id="cb2f9-175">Wavy-underlined issues in the **DOM tree** in the **Elements** tool</span></span>
+    :::image-end:::
+
+1.  <span data-ttu-id="cb2f9-176">将鼠标悬停在 `<input>` 元素上。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-176">Hover over the `<input>` element.</span></span>  <span data-ttu-id="cb2f9-177">工具提示显示有关该问题的信息。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-177">A tooltip displays information about the issue.</span></span>
+
+1.  <span data-ttu-id="cb2f9-178">打开带波浪下划线的元素上的上下文菜单，然后选择"**查看问题"。**</span><span class="sxs-lookup"><span data-stu-id="cb2f9-178">Open the context menu on the element with the wavy underline, and then select **View issues**.</span></span>  <span data-ttu-id="cb2f9-179">" **问题** "工具将打开并显示与该元素关联的问题。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-179">The **Issues** tool opens and displays the issue that's associated with that element.</span></span>
+
+    :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="有关 DOM 树中带波浪线下划线的元素的问题的详细信息" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+       <span data-ttu-id="cb2f9-181">有关**DOM**树中带波浪线下划线的元素的问题的详细信息</span><span class="sxs-lookup"><span data-stu-id="cb2f9-181">Details about issues on a wavy-underlined element in the **DOM tree**</span></span>
+    :::image-end:::
+
+
+## <a name="see-also"></a><span data-ttu-id="cb2f9-182">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cb2f9-182">See also</span></span>
+
+* [<span data-ttu-id="cb2f9-183">自动测试网页中的辅助功能问题</span><span class="sxs-lookup"><span data-stu-id="cb2f9-183">Automatically test a webpage for accessibility issues</span></span>](../accessibility/test-issues-tool.md)
+
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="cb2f9-184">联系 Microsoft Edge 开发人员工具团队</span><span class="sxs-lookup"><span data-stu-id="cb2f9-184">Getting in touch with the Microsoft Edge DevTools team</span></span>
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
+
+<!-- links -->
+[DevtoolsOpenIndex]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
+<!-- external links -->
+[A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示页面|Microsoft Docs"
+[DequeAxe]: https://www.deque.com/axe "axe 工具|Deque"
+[MDNCompat]: https://github.com/mdn/browser-compat-data "MDN 浏览器兼容性|GitHub"
+[webhintIo]: https://webhint.io "webhint.io"
 
 > [!NOTE]
-> <span data-ttu-id="cad86-107">在 Microsoft Edge 84 中，**问题**工具支持三种类型的问题：</span><span class="sxs-lookup"><span data-stu-id="cad86-107">In Microsoft Edge 84, the **Issues** tool supports three types of issue:</span></span>  
-> *   [<span data-ttu-id="cad86-108">Cookie 问题</span><span class="sxs-lookup"><span data-stu-id="cad86-108">Cookie problems</span></span>][MDNSameSiteCookies]  
-> *   [<span data-ttu-id="cad86-109">混合内容</span><span class="sxs-lookup"><span data-stu-id="cad86-109">Mixed content</span></span>][MDNMixedContent]  
-> *   [<span data-ttu-id="cad86-110">COEP 问题</span><span class="sxs-lookup"><span data-stu-id="cad86-110">COEP issues</span></span>][W3CCOEPSpec]
-> 
-> <span data-ttu-id="cad86-111">开发人员Microsoft Edge团队计划在未来版本的开发人员版本中支持更多Microsoft Edge。</span><span class="sxs-lookup"><span data-stu-id="cad86-111">The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.</span></span>  
+> <span data-ttu-id="cb2f9-190">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-190">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>
+> <span data-ttu-id="cb2f9-191">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \ (Developer Advocate\) 。</span><span class="sxs-lookup"><span data-stu-id="cb2f9-191">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).</span></span>
+<span data-ttu-id="cb2f9-192">[ ![ Creative Commons License][CCby4Image]][CCA4IL] This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="cb2f9-192">[![Creative Commons License][CCby4Image]][CCA4IL] This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>
 
-## <a name="open-the-issues-tool-in-the-devtools-drawer"></a><span data-ttu-id="cad86-112">在 DevTools 箱中打开问题工具</span><span class="sxs-lookup"><span data-stu-id="cad86-112">Open the Issues tool in the DevTools drawer</span></span>  
-
-1.  <span data-ttu-id="cad86-113">导航到包含要修复 [samesite-sandbox.glitch.me][GlitchSamesiteSandbox]的网页，例如 samesite-sandbox.glitch.me 。</span><span class="sxs-lookup"><span data-stu-id="cad86-113">Navigate to a webpage, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.</span></span>  
-1.  <span data-ttu-id="cad86-114">[打开 DevTools][DevtoolsOpen]。</span><span class="sxs-lookup"><span data-stu-id="cad86-114">[Open DevTools][DevtoolsOpen].</span></span>  
-1.  :::row:::
-       :::column span="":::
-          <span data-ttu-id="cad86-115">选择黄色 **警告栏中** 的"转到问题"按钮。</span><span class="sxs-lookup"><span data-stu-id="cad86-115">Choose the **Go to Issues** button in the yellow warning bar.</span></span>  
-          
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="在检测到问题时转到黄色警告栏中的"问题"按钮" lightbox="../media/issues-open-issues-tab.msft.png":::
-             <span data-ttu-id="cad86-117">检测到 **问题时** ，黄色警告栏中的"转到问题"按钮。</span><span class="sxs-lookup"><span data-stu-id="cad86-117">The **Go to Issues** button in the yellow warning bar when Issues are detected.</span></span>  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          <span data-ttu-id="cad86-118">或者，从"更多**工具"\*\*\*\*菜单中选择"问题**"。</span><span class="sxs-lookup"><span data-stu-id="cad86-118">Alternatively, choose **Issues** from the **More tools** menu.</span></span>  
-          
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text=""更多工具"菜单中的"问题"工具" lightbox="../media//issues-more-tools-menu.msft.png":::
-             <span data-ttu-id="cad86-120">**"** 更多工具 **"菜单中的"问题"** 工具</span><span class="sxs-lookup"><span data-stu-id="cad86-120">**Issues** tool in **More tools** menu</span></span>  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
-    
-1.  <span data-ttu-id="cad86-121">如有必要 **，选择"重新加载** 页面"按钮。</span><span class="sxs-lookup"><span data-stu-id="cad86-121">Choose the **Reload page** button, if necessary.</span></span>  
-    
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="DevTools Drawer 中的"问题"工具（具有"重新加载"页面按钮）" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       <span data-ttu-id="cad86-123">**DevTools** Drawer 中的"问题"工具（ **具有"重新加载"页面按钮** ）</span><span class="sxs-lookup"><span data-stu-id="cad86-123">**Issues** tool in the DevTools Drawer with **Reload page** button</span></span>  
-    :::image-end:::  
-
-    <span data-ttu-id="cad86-124">控制台中报告 **的问题很难** 理解，如下图中的 Cookie 警告。</span><span class="sxs-lookup"><span data-stu-id="cad86-124">The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.</span></span>  <span data-ttu-id="cad86-125">根据报告的问题，可能不清楚必须执行哪些工作。</span><span class="sxs-lookup"><span data-stu-id="cad86-125">Based upon the reported issues, it may not be clear what you must do.</span></span>  
-    
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="DevTools 箱中具有三个 Cookie 问题的"问题"工具" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       <span data-ttu-id="cad86-127">**DevTools** 箱中具有三个 Cookie 问题的"问题"工具</span><span class="sxs-lookup"><span data-stu-id="cad86-127">**Issues** tool in the DevTools Drawer with three cookie issues</span></span>  
-    :::image-end:::  
-    
-## <a name="view-items-in-the-issues-tool"></a><span data-ttu-id="cad86-128">查看问题工具中的项目</span><span class="sxs-lookup"><span data-stu-id="cad86-128">View items in the Issues tool</span></span>  
-
-<span data-ttu-id="cad86-129">DevTools 箱中的"问题"工具以结构化、聚合且可操作的方式显示警告。 \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cad86-129">The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.</span></span>  
-
-1.  <span data-ttu-id="cad86-130">在问题工具 **中选择** 一个项目，获取有关如何修复问题和查找受影响资源的指南。</span><span class="sxs-lookup"><span data-stu-id="cad86-130">Choose an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.</span></span>  
-    
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="在"问题"工具中将跨站点 Cookie 标记为"打开安全问题"" lightbox="../media/issues-tab-issue-open.msft.png":::
-       <span data-ttu-id="cad86-132">**在"问题"工具中将** 跨站点 Cookie 标记为"打开 **安全问题** "</span><span class="sxs-lookup"><span data-stu-id="cad86-132">**Mark cross-site cookies as Secure** issue open in the **Issues** tool</span></span>  
-    :::image-end:::  
-    
-    <span data-ttu-id="cad86-133">每个项目都有四个组件：</span><span class="sxs-lookup"><span data-stu-id="cad86-133">Each item has four components:</span></span>  
-    
-    *   <span data-ttu-id="cad86-134">描述问题的标题。</span><span class="sxs-lookup"><span data-stu-id="cad86-134">A headline describing the issue.</span></span>  
-    *   <span data-ttu-id="cad86-135">提供上下文和解决方案的说明。</span><span class="sxs-lookup"><span data-stu-id="cad86-135">A description providing the context and the solution.</span></span>  
-    *   <span data-ttu-id="cad86-136">链接到 **相应** DevTools 上下文（如网络面板）中的资源的"受影响资源"部分。</span><span class="sxs-lookup"><span data-stu-id="cad86-136">An **AFFECTED RESOURCES** section that links to resources within the appropriate DevTools context such as the Network panel.</span></span>  
-    *   <span data-ttu-id="cad86-137">指向进一步指南的链接。</span><span class="sxs-lookup"><span data-stu-id="cad86-137">Links to further guidance.</span></span>  
-    
-1.  <span data-ttu-id="cad86-138">选择"受影响 **资源"** 中的项目以查看详细信息。</span><span class="sxs-lookup"><span data-stu-id="cad86-138">Choose items in **AFFECTED RESOURCES** to view details.</span></span>  <span data-ttu-id="cad86-139">在下面的示例中，将跨站点 **Cookie** 标记为安全问题会影响一个 Cookie 和两个请求。</span><span class="sxs-lookup"><span data-stu-id="cad86-139">In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.</span></span>  
-    
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="受影响的资源在问题工具中打开" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       <span data-ttu-id="cad86-141">受影响的资源在 DevTools **箱** 的"问题"工具中打开</span><span class="sxs-lookup"><span data-stu-id="cad86-141">Affected resources open in the **Issues** tool in the DevTools Drawer</span></span>  
-    :::image-end:::  
-    
-## <a name="view-issues-in-context"></a><span data-ttu-id="cad86-142">查看上下文中的问题</span><span class="sxs-lookup"><span data-stu-id="cad86-142">View issues in context</span></span>  
-
-1.  <span data-ttu-id="cad86-143">选择资源链接以查看 DevTools 中相应上下文中的项目。</span><span class="sxs-lookup"><span data-stu-id="cad86-143">Choose a resource link to view the item in the appropriate context within DevTools.</span></span>  <span data-ttu-id="cad86-144">在下面的示例中，选择 `samesite-sandbox.glitch.me` "请求 **"** 下的"显示附加到该请求的 Cookie"。</span><span class="sxs-lookup"><span data-stu-id="cad86-144">In the following example, choose `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.</span></span>  
-    
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="在 DevTools 网络工具中查看受影响的 Cookie" lightbox="../media/issues-tab-view-request.msft.png":::
-       <span data-ttu-id="cad86-146">在 DevTools 网络工具中 **查看受影响的** Cookie</span><span class="sxs-lookup"><span data-stu-id="cad86-146">View the affected cookie in the DevTools **Network** tool</span></span>  
-    :::image-end:::  
-
-1.  <span data-ttu-id="cad86-147">滚动以查看存在问题的项：对于以下示例，为 `ck02` cookie。</span><span class="sxs-lookup"><span data-stu-id="cad86-147">Scroll to view the item with a problem:  for the following example, the `ck02` cookie.</span></span>  <span data-ttu-id="cad86-148">将鼠标悬 **停在 SameSite** 列上 `None` ，查看检测到问题的值。</span><span class="sxs-lookup"><span data-stu-id="cad86-148">Hover on the **SameSite** column to review the `None` value that the issue detected.</span></span>  
-    
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="DevTools 网络工具中 ck02 Cookie 的 SameSite 列中无值" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` <span data-ttu-id="cad86-150">DevTools 网络工具中 Cookie 的 **SameSite** `ck02` **列中** 的值</span><span class="sxs-lookup"><span data-stu-id="cad86-150">value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** tool</span></span>  
-    :::image-end:::  
-
-
-## <a name="see-also"></a><span data-ttu-id="cad86-151">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cad86-151">See also</span></span>
-
-* [<span data-ttu-id="cad86-152">自动测试网页中的辅助功能问题</span><span class="sxs-lookup"><span data-stu-id="cad86-152">Automatically test a webpage for accessibility issues</span></span>](../accessibility/test-issues-tool.md)
-
-
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="cad86-153">联系 Microsoft Edge 开发人员工具团队</span><span class="sxs-lookup"><span data-stu-id="cad86-153">Getting in touch with the Microsoft Edge DevTools team</span></span>  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- links -->  
-
-[DevtoolsOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"  
-
-[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite Cookie 测试|小故障"  
-
-[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite cookie |MDN"  
-[MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "混合内容|MDN"  
-
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "跨源嵌入者策略|Web Incubator Community 组"  
-
-> [!NOTE]
-> <span data-ttu-id="cad86-159">此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。</span><span class="sxs-lookup"><span data-stu-id="cad86-159">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="cad86-160">原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \ (Developer Advocate\) 。</span><span class="sxs-lookup"><span data-stu-id="cad86-160">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).</span></span>  
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="cad86-162">本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。</span><span class="sxs-lookup"><span data-stu-id="cad86-162">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
-[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton
