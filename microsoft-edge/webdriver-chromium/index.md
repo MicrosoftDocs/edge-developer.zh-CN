@@ -65,7 +65,7 @@ WebDriver 允许开发人员创建模拟用户交互的自动测试。  WebDrive
 1.  导航到 **获取最新版本**。  
 1.  选择与你的版本版本号相匹配的频道Microsoft Edge。  
     
-    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text=""获取驱动程序"网页上的"获取Microsoft Edge部分" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="获取驱动程序网页上的获取Microsoft Edge部分" lightbox="./media/microsoft-edge-driver-install.msft.png":::
        "**获取驱动程序"网页上**的Microsoft Edge[部分][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
     :::image-end:::  
    
@@ -412,7 +412,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 Microsoft Edge团队希望听到你有关使用 WebDriver、WebDriver 测试框架 (如 Selenium) 和 Microsoft Edge 的反馈。  若要向团队发送你的问题和意见，请选择开发人员工具Microsoft Edge**** 发送反馈图标或发送推文[@EdgeDevTools。][TwitterTweetEdgeDevTools]  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的发送反馈图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标  
 :::image-end:::  
 

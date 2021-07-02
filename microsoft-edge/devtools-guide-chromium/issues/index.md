@@ -57,7 +57,7 @@ ms.locfileid: "11624687"
 
 1.  选择" **问题"计数器**。  " **问题** "工具将打开，并分组为不同类别的问题。
 
-    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的"问题"工具中的问题类别" lightbox="../media/issues-tool-categories.msft.png":::
+    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的问题工具中的问题类别" lightbox="../media/issues-tool-categories.msft.png":::
        演示页上的"问题"工具中的问题类别
     :::image-end:::
 
@@ -72,7 +72,7 @@ ms.locfileid: "11624687"
 
 在每个问题类别中，首先列出错误，然后列出警告，然后列出提示。
 
-:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text=""问题"工具显示按严重性排序的性能问题" lightbox="../media/issues-ordered-by-severity.msft.png":::
+:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="问题工具显示按严重性排序的性能问题" lightbox="../media/issues-ordered-by-severity.msft.png":::
    " **问题** "工具显示按严重性排序的性能问题
 :::image-end:::
 
@@ -91,7 +91,7 @@ ms.locfileid: "11624687"
 
 1.  选择问题以展开问题。
 
-    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text=""问题"工具显示有关如何修复该问题的其他信息" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="问题工具显示有关如何修复该问题的其他信息" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
        " **问题** "工具显示有关如何修复该问题的其他信息
     :::image-end:::
 
@@ -110,13 +110,13 @@ ms.locfileid: "11624687"
 
 1.  在 **"受影响的资源**  >  **打开"中**，选择工具名称。  受影响的资源将显示在所选工具中。
 
-    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="从"问题"工具中选择打开受影响资源的工具" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="从问题工具中选择打开受影响资源的工具" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
        从"问题"工具中选择打开受影响资源的工具
     :::image-end:::
 
     展开的问题可能有"网络 **"** 链接，以在"网络"工具中 **显示受影响的** 资源。
 
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开"网络"工具" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开网络工具" lightbox="../media/issues-tab-view-issue.msft.png":::
     选择 **网络** 资源链接时， **将打开"网络"** 工具
     :::image-end:::
 

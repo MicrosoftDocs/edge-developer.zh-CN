@@ -86,7 +86,7 @@ Chromium问题[#1093687][CR1093687]
 
 网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text=""网络"面板的"计时"选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="网络面板的计时选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件  
 :::image-end:::  
 
@@ -272,7 +272,7 @@ Chromium问题[#800028][CR800028]
 
 例如，以前，DevTools 未取消分组邮件，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中"类似组"时，hello 消息将取消分组" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中类似组时，hello 消息将取消分组" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    取消 **选中"类似** 组"时 `hello` ，邮件将取消分组
 :::image-end:::  
 

@@ -48,7 +48,7 @@ ms.locfileid: "11624778"
         
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在"元素"工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
+      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在元素工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
          在"元素"工具中选择 **带下划线** 的错误  
       :::image-end:::  
    :::column-end:::
@@ -76,7 +76,7 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 
 若要显示有关如何使用 DevTools 的信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个大纲区域上。  
 
-:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="将鼠标悬停在"问题"工具突出显示区域中的任何位置，以显示更多详细信息" lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="将鼠标悬停在问题工具突出显示区域中的任何位置，以显示更多详细信息" lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
    将鼠标悬停在"问题"工具突出显示区域 **中的任何位置，** 以显示更多详细信息  
 :::image-end:::  
 
@@ -143,7 +143,7 @@ Most operating systems require square icons.  Please include at least one square
 
 从[Microsoft Edge版本 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]开始，"**** 样式"窗格将显示 CSS 变量并提供指向每个变量的定义的链接。  在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。  若要在"样式 **"窗格中打开** 定义，请将鼠标悬停在变量上，然后选择 `Enter` 。  有关 CSS 变量详细信息，请导航到使用 CSS 自定义属性 ([变量) 。 ][MdnDocsWebCssUsingCssCustomProperties]  若要在开放源代码项目中查看此功能Chromium，请导航到"问题 "[1187735][CR1187735]。  
 
-:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在"样式"窗格中突出显示" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在样式窗格中突出显示" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    " `--theme-body-background` 样式"窗格中突出显示的**** CSS 变量  
 :::image-end:::  
 
@@ -154,7 +154,7 @@ Most operating systems require square icons.  Please include at least one square
 
 问题 **工具** 显示改进网站的建议，包括辅助功能、性能、安全性等。 根据你的反馈，现在会自动按严重性对问题进行排序。  在每个反馈类别中，每个标记为"错误"的问题**** 首先出现，然后关注标记为"警告"的每个**** 问题，然后每个标记为"提示"**的问题**。  为了帮助你优化问题，为将来的更新计划了额外的筛选器选项。  若要详细了解如何查看问题，请导航到使用 [问题工具查找和修复问题][DevtoolsIssuesIndex]。  
 
-:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text=""问题"工具按严重性显示排序的问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="问题工具按严重性显示排序的问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    " **问题** "工具按严重性显示排序的问题  
 :::image-end:::  
 
@@ -206,7 +206,7 @@ Microsoft Edge [Tools for Visual Studio Code extension][VisualstudioMarketplaceM
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->  
 
-:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text=""元素"工具中的锁屏提醒设置窗格" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="元素工具中的锁屏提醒设置窗格" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
    **"元素"** 工具中的锁屏提醒 **设置** 窗格  
 :::image-end:::  
 
@@ -255,7 +255,7 @@ DevTools 中的图像预览已增强，可显示更多信息，包括以下详�
     
 若要在开放源代码项目中查看此功能的历史记录，Chromium问题 [1162042][CR1162042]。  
 
-:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新增更多网络条件...按钮将打开"网络条件"工具以配置内容编码" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
+:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新增更多网络条件...按钮将打开网络条件工具以配置内容编码" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    新建 **更多网络条件...** 按钮将打开 **网络条件** 工具进行配置 `Content-Encoding`  
 :::image-end:::  
 
@@ -353,7 +353,7 @@ DevTools 现在支持在使用源工具中的表示法的 JavaScript 成员表�
 
 DevTools 现在具有对文件的更好的大纲 `.html` 支持。  在 **"源** "工具中，打开 `.html` 文件。  若要打开 \ (或关闭\) 代码大纲，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 只显示一些函数。  若要在开放源代码项目中查看此功能的历史记录，Chromium问题[761019][CR761019]和 [1191465][CR1191465]。  
 
-:::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进了 HTML 文件的大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text="改进了 HTML 文件的大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    改进了 HTML 文件的大纲  
 :::image-end:::  
 

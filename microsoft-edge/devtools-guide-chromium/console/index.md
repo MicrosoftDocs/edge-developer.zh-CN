@@ -33,13 +33,13 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开"元素"工具" lightbox="../media/console-intro-console-panel.msft.png":::
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开元素工具" lightbox="../media/console-intro-console-panel.msft.png":::
          **下** 面板中的控制台，其上方打开 **"元素** "工具  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
+直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
 
 ## <a name="error-reports-and-console"></a>错误报告和控制台  
 
