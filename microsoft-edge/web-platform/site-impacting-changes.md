@@ -7,12 +7,12 @@ ms.date: 05/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台
-ms.openlocfilehash: 194e612c008016299b234de816114d24e5569aef
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 815a350dc82d02e77354f3079880df9ce81750b7
+ms.sourcegitcommit: 412ec98cd9f57f74af69acad0a317d1dffa3b323
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624785"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "11640602"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Microsoft Edge 中影响网站兼容性的更改  
 
@@ -24,6 +24,7 @@ Microsoft Edge项目对 Web 平台进行几乎所有上游Chromium更改。  原
 
 | “更改” | 稳定渠道 | 实验 | 其他信息 |  
 |:--- |:--- |:--- |:--- |
+| 弃用 WebRTC 的计划 B SDP 语义 | [Chrome+1](#release-comments) \ (Edge v94\)   |  | 此更改发生在Chromium项目上，Microsoft Edge项目。 此更改将弃用 SDP 中的旧会话 (协议) 称为计划 B。它将替换为统一计划，该计划是一种兼容规范且跨浏览器兼容的 SDP 格式。 有关详细信息，请导航到 [Chrome 平台状态][ChromestatusFeature5823036655665152] 条目和 PSA：计划 B SDP 弃用和删除的 [时间线 - 请迁移到统一计划][PSADeprecateWebRTCPlanB]。 Microsoft 推出计划弃用计划计划在 Chrome 后的一个版本中发布。 请求 [WebRTC 计划 B 反向源试用令牌][ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial] 允许网站继续使用已弃用 API，直到 Edge v96。 |
 | Cookie 默认为 `SameSite=Lax` 和 `SameSite=None-requires-Secure` | [Chrome+1](#release-comments) \ (Edge v86\)   | Canary v82，Dev v82 | 此更改发生在Chromium项目上，Microsoft Edge项目。  有关详细信息，包括 Google 为此更改计划的时间线，请导航到 [Chrome 平台状态条目][ChromestatusFeature5088147346030592]。  |  
 | 引用者策略：默认为 `strict-origin-when-cross-origin` | [Chrome+1](#release-comments) \ (Edge v86\)   | Canary v79，Dev v79 | 此更改发生在Chromium项目上，Microsoft Edge项目。  有关详细信息，包括 Google 为此更改计划的时间线，请导航到 [Chrome 平台状态条目][ChromestatusFeature6251880185331712]。  |  
 | 禁止在页面 `XmlHttpRequest` 内同步解除 | [Chrome+1](#release-comments) \ (Edge v83\)  |  | 此更改发生在Chromium项目上，Microsoft Edge项目。  匹配 Chrome，Microsoft Edge提供在 Edge v88 之前关闭此更改的组策略。  有关详细信息，包括 Google 为此更改计划的时间线，请导航到 [Chrome 平台状态条目][ChromestatusFeature4664843055398912]。  |  
@@ -76,12 +77,16 @@ Microsoft Edge项目对 Web 平台进行几乎所有上游Chromium更改。  原
 [ChromestatusFeature6251880185331712]: https://chromestatus.com/feature/6251880185331712 "引用器策略：默认为 strict-origin-when-cross-origin |Chrome 平台状态"  
 [ChromestatusFeature6678134168485888]: https://chromestatus.com/feature/6678134168485888 "在 TLS 服务中删除 3DES |Chrome 平台状态"
 [ChromestatusFeature5436853517811712]: https://chromestatus.com/feature/5436853517811712 "限制子源的专用网络请求，以确保安全上下文|Chrome 平台状态"
+[ChromestatusFeature5823036655665152]: https://www.chromestatus.com/feature/5823036655665152 "[WebRTC]弃用和删除计划 B (已弃) |Chrome 平台状态"
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash 支持已从目标Chromium (：Chrome 88+ - 2021 年 1 月 2021) - Flash 路线图|Chromium项目"  
 
 [ChromeDevelopersOrigintrialsAppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache OriginTrial 令牌|Chrome 开发人员"  
+[ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial]: https://developer.chrome.com/origintrials/#/view_trial/3892235977954951169 "WebRTC 计划 B 反向源试用令牌|Chrome 开发人员"
 
 [GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "在 Google Chrome 中防止用户下载不安全 - Google Online 安全博客" 
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal "准备 AppCache 删除|web.dev"  
+
+[PSADeprecateWebRTCPlanB]: https://groups.google.com/g/discuss-webrtc/c/UBtZfawdIAA/m/-UVQQcubBQAJ "PSA：计划 B SDP 弃用和删除的时间线 - 请迁移到统一计划"
 
 <!--todo:  cleanup links  -->  
