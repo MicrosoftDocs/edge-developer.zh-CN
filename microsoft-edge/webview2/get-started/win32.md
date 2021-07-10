@@ -8,75 +8,75 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 2714f9a6cffea3cb7d53f9a4128d64920fd02dce
-ms.sourcegitcommit: 7713eec634264b0c44b1bb426f5b466c44b4e005
+ms.openlocfilehash: 6eae00a0fddb75782be5a3e94efaa5a8965674a0
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "11618384"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643446"
 ---
-# <a name="get-started-with-webview2"></a><span data-ttu-id="6583d-104">WebView2 入门</span><span class="sxs-lookup"><span data-stu-id="6583d-104">Get started with WebView2</span></span>  
+# <a name="get-started-with-webview2"></a><span data-ttu-id="fa509-104">WebView2 入门</span><span class="sxs-lookup"><span data-stu-id="fa509-104">Get started with WebView2</span></span>  
 
-<span data-ttu-id="6583d-105">本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。</span><span class="sxs-lookup"><span data-stu-id="6583d-105">In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].</span></span>  <span data-ttu-id="6583d-106">有关各个 WebView2 API 的信息，请导航到 [API 参考][Webview2ReferenceWin32]。</span><span class="sxs-lookup"><span data-stu-id="6583d-106">For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].</span></span>  
+<span data-ttu-id="fa509-105">本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。</span><span class="sxs-lookup"><span data-stu-id="fa509-105">In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].</span></span>  <span data-ttu-id="fa509-106">有关各个 WebView2 API 的信息，请导航到 [API 参考][Webview2ReferenceWin32]。</span><span class="sxs-lookup"><span data-stu-id="fa509-106">For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].</span></span>  
 
-## <a name="prerequisites"></a><span data-ttu-id="6583d-107">系统必备</span><span class="sxs-lookup"><span data-stu-id="6583d-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="fa509-107">必备条件</span><span class="sxs-lookup"><span data-stu-id="fa509-107">Prerequisites</span></span>  
 
-<span data-ttu-id="6583d-108">请确保先安装以下先决条件列表，然后再继续。</span><span class="sxs-lookup"><span data-stu-id="6583d-108">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
+<span data-ttu-id="fa509-108">请确保先安装以下先决条件列表，然后再继续。</span><span class="sxs-lookup"><span data-stu-id="fa509-108">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
 
-*   <span data-ttu-id="6583d-109">[WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在受支持的操作系统 \ (上的任意非稳定通道Windows 10、Windows 8.1和 Windows 7\) 。</span><span class="sxs-lookup"><span data-stu-id="6583d-109">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
+*   <span data-ttu-id="fa509-109">[WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在受支持的操作系统 \ (上的任意非稳定通道Windows 10、Windows 8.1和 Windows 7\) 。</span><span class="sxs-lookup"><span data-stu-id="fa509-109">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
     
-*   <span data-ttu-id="6583d-110">[Visual Studio][MicrosoftVisualstudioMain]安装有 C++ 支持的 2015 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="6583d-110">[Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.</span></span>  
+*   <span data-ttu-id="fa509-110">[Visual Studio][MicrosoftVisualstudioMain]安装有 C++ 支持的 2015 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="fa509-110">[Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.</span></span>  
     
-## <a name="step-1---create-a-single-window-app"></a><span data-ttu-id="6583d-111">步骤 1 - 创建单窗口应用</span><span class="sxs-lookup"><span data-stu-id="6583d-111">Step 1 - Create a single-window app</span></span>  
+## <a name="step-1---create-a-single-window-app"></a><span data-ttu-id="fa509-111">步骤 1 - 创建单窗口应用</span><span class="sxs-lookup"><span data-stu-id="fa509-111">Step 1 - Create a single-window app</span></span>  
 
-<span data-ttu-id="6583d-112">从包含单个主窗口的基本桌面项目开始。</span><span class="sxs-lookup"><span data-stu-id="6583d-112">Start with a basic desktop project that contains a single main window.</span></span>  
+<span data-ttu-id="fa509-112">从包含单个主窗口的基本桌面项目开始。</span><span class="sxs-lookup"><span data-stu-id="fa509-112">Start with a basic desktop project that contains a single main window.</span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="6583d-113">为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 ([C++][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。</span><span class="sxs-lookup"><span data-stu-id="6583d-113">To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.</span></span>  <span data-ttu-id="6583d-114">若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]</span><span class="sxs-lookup"><span data-stu-id="6583d-114">To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].</span></span>  
+> <span data-ttu-id="fa509-113">为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 ([C++][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。</span><span class="sxs-lookup"><span data-stu-id="fa509-113">To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.</span></span>  <span data-ttu-id="fa509-114">若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]</span><span class="sxs-lookup"><span data-stu-id="fa509-114">To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].</span></span>  
 
-1.  <span data-ttu-id="6583d-115">在Visual Studio中，打开 `WebView2GettingStarted.sln` 。</span><span class="sxs-lookup"><span data-stu-id="6583d-115">In Visual Studio, open `WebView2GettingStarted.sln`.</span></span>  
-    <span data-ttu-id="6583d-116">如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \ (右键单击\) ，然后选择 **"属性**"。</span><span class="sxs-lookup"><span data-stu-id="6583d-116">If you use an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and choose **Properties**.</span></span>  <span data-ttu-id="6583d-117">在**配置属性**  >  **常规**下 **，Windows SDK**版本和\*\*\*\* 平台工具集，以使用 Win10 SDK 和Visual Studio可用的工具集。</span><span class="sxs-lookup"><span data-stu-id="6583d-117">Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset available to you.</span></span>  
+1.  <span data-ttu-id="fa509-115">在Visual Studio中，打开 `WebView2GettingStarted.sln` 。</span><span class="sxs-lookup"><span data-stu-id="fa509-115">In Visual Studio, open `WebView2GettingStarted.sln`.</span></span>  
+    <span data-ttu-id="fa509-116">如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \ (右键单击\) ，然后选择 **"属性**"。</span><span class="sxs-lookup"><span data-stu-id="fa509-116">If you use an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and choose **Properties**.</span></span>  <span data-ttu-id="fa509-117">在**配置属性**  >  **常规**下 **，Windows SDK**版本和\*\*\*\* 平台工具集，以使用 Win10 SDK 和Visual Studio可用的工具集。</span><span class="sxs-lookup"><span data-stu-id="fa509-117">Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset available to you.</span></span>  
     
 :::image type="complex" source="../media/tool-version.png" alt-text="工具版本" lightbox="../media/tool-version.png":::
-   <span data-ttu-id="6583d-119">工具版本</span><span class="sxs-lookup"><span data-stu-id="6583d-119">Tool version</span></span>  
+   <span data-ttu-id="fa509-119">工具版本</span><span class="sxs-lookup"><span data-stu-id="fa509-119">Tool version</span></span>  
 :::image-end:::      
 
-<span data-ttu-id="6583d-120">Visual Studio显示错误，因为项目缺少 WebView2 头文件。</span><span class="sxs-lookup"><span data-stu-id="6583d-120">Visual Studio may display errors, because your project is missing the WebView2 header file.</span></span>  <span data-ttu-id="6583d-121">应在步骤 [2 之后修复错误](#step-2---install-webview2-sdk)。</span><span class="sxs-lookup"><span data-stu-id="6583d-121">The errors should be fixed after [Step 2](#step-2---install-webview2-sdk).</span></span>  
+<span data-ttu-id="fa509-120">Visual Studio显示错误，因为项目缺少 WebView2 头文件。</span><span class="sxs-lookup"><span data-stu-id="fa509-120">Visual Studio may display errors, because your project is missing the WebView2 header file.</span></span>  <span data-ttu-id="fa509-121">应在步骤 [2 之后修复错误](#step-2---install-webview2-sdk)。</span><span class="sxs-lookup"><span data-stu-id="fa509-121">The errors should be fixed after [Step 2](#step-2---install-webview2-sdk).</span></span>  
 
-## <a name="step-2---install-webview2-sdk"></a><span data-ttu-id="6583d-122">步骤 2 - 安装 WebView2 SDK</span><span class="sxs-lookup"><span data-stu-id="6583d-122">Step 2 - Install WebView2 SDK</span></span>  
+## <a name="step-2---install-webview2-sdk"></a><span data-ttu-id="fa509-122">步骤 2 - 安装 WebView2 SDK</span><span class="sxs-lookup"><span data-stu-id="fa509-122">Step 2 - Install WebView2 SDK</span></span>  
 
-<span data-ttu-id="6583d-123">将 WebView2 SDK 添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="6583d-123">Add the WebView2 SDK into the project.</span></span>  <span data-ttu-id="6583d-124">使用 NuGet 安装 Win32 SDK。</span><span class="sxs-lookup"><span data-stu-id="6583d-124">Use NuGet to install the Win32 SDK.</span></span>  
+<span data-ttu-id="fa509-123">将 WebView2 SDK 添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="fa509-123">Add the WebView2 SDK into the project.</span></span>  <span data-ttu-id="fa509-124">使用 NuGet 安装 Win32 SDK。</span><span class="sxs-lookup"><span data-stu-id="fa509-124">Use NuGet to install the Win32 SDK.</span></span>  
 
-1.  <span data-ttu-id="6583d-125">将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包"。**</span><span class="sxs-lookup"><span data-stu-id="6583d-125">Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages**.</span></span>  
+1.  <span data-ttu-id="fa509-125">将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包"。**</span><span class="sxs-lookup"><span data-stu-id="fa509-125">Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages**.</span></span>  
     
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理 NuGet 程序包" lightbox="../media/manage-nuget-packages.png":::
-       <span data-ttu-id="6583d-127">管理 NuGet 程序包</span><span class="sxs-lookup"><span data-stu-id="6583d-127">Manage NuGet packages</span></span>  
+       <span data-ttu-id="fa509-127">管理 NuGet 程序包</span><span class="sxs-lookup"><span data-stu-id="fa509-127">Manage NuGet packages</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="6583d-128">安装Windows库。</span><span class="sxs-lookup"><span data-stu-id="6583d-128">Install the Windows Implementation Library.</span></span>  
-    1.  <span data-ttu-id="6583d-129">在搜索栏中，键入 > `Microsoft.Windows.ImplementationLibrary` **Microsoft.Windows。ImplementationLibrary**。</span><span class="sxs-lookup"><span data-stu-id="6583d-129">In the search bar, type `Microsoft.Windows.ImplementationLibrary` > choose **Microsoft.Windows.ImplementationLibrary**.</span></span>  
-    1.  <span data-ttu-id="6583d-130">在右侧窗口中，选择"安装 **"。**</span><span class="sxs-lookup"><span data-stu-id="6583d-130">In the right-hand side window, choose **Install**.</span></span>  <span data-ttu-id="6583d-131">NuGet将库下载到计算机。</span><span class="sxs-lookup"><span data-stu-id="6583d-131">NuGet downloads the library to your machine.</span></span>  
+1.  <span data-ttu-id="fa509-128">安装Windows库。</span><span class="sxs-lookup"><span data-stu-id="fa509-128">Install the Windows Implementation Library.</span></span>  
+    1.  <span data-ttu-id="fa509-129">在搜索栏中，键入 > `Microsoft.Windows.ImplementationLibrary` **Microsoft.Windows。ImplementationLibrary**。</span><span class="sxs-lookup"><span data-stu-id="fa509-129">In the search bar, type `Microsoft.Windows.ImplementationLibrary` > choose **Microsoft.Windows.ImplementationLibrary**.</span></span>  
+    1.  <span data-ttu-id="fa509-130">在右侧窗口中，选择"安装 **"。**</span><span class="sxs-lookup"><span data-stu-id="fa509-130">In the right-hand side window, choose **Install**.</span></span>  <span data-ttu-id="fa509-131">NuGet将库下载到计算机。</span><span class="sxs-lookup"><span data-stu-id="fa509-131">NuGet downloads the library to your machine.</span></span>  
         
         > [!NOTE]
-        > <span data-ttu-id="6583d-132">实现[Windows库][GithubMicrosoftWilMain]和 Windows[运行时 C++ 模板][CppCxWrlTemplateLibraryVS2019]库是可选的，因此对于此示例而言，使用 COM 更为简单。</span><span class="sxs-lookup"><span data-stu-id="6583d-132">The [Windows Implementation Library][GithubMicrosoftWilMain] and [Windows Runtime C++ Template Library][CppCxWrlTemplateLibraryVS2019] are optional and make working with COM easier for the example.</span></span>  
+        > <span data-ttu-id="fa509-132">实现[Windows库][GithubMicrosoftWilMain]和 Windows[运行时 C++ 模板][CppCxWrlTemplateLibraryVS2019]库是可选的，因此对于此示例而言，使用 COM 更为简单。</span><span class="sxs-lookup"><span data-stu-id="fa509-132">The [Windows Implementation Library][GithubMicrosoftWilMain] and [Windows Runtime C++ Template Library][CppCxWrlTemplateLibraryVS2019] are optional and make working with COM easier for the example.</span></span>  
         
         :::image type="complex" source="../media/wil.png" alt-text="Windows实现库" lightbox="../media/wil.png":::
-           <span data-ttu-id="6583d-134">Windows实现库</span><span class="sxs-lookup"><span data-stu-id="6583d-134">Windows Implementation Library</span></span>  
+           <span data-ttu-id="fa509-134">Windows实现库</span><span class="sxs-lookup"><span data-stu-id="fa509-134">Windows Implementation Library</span></span>  
         :::image-end:::  
         
-1.  <span data-ttu-id="6583d-135">安装 WebView2 SDK。</span><span class="sxs-lookup"><span data-stu-id="6583d-135">Install the WebView2 SDK.</span></span>  
-    1.  <span data-ttu-id="6583d-136">在搜索栏中，键入"> `Microsoft.Web.WebView2` **选择"Microsoft.Web.WebView2"。**</span><span class="sxs-lookup"><span data-stu-id="6583d-136">In the search bar, type `Microsoft.Web.WebView2` > choose **Microsoft.Web.WebView2**.</span></span>  
-    1.  <span data-ttu-id="6583d-137">在右侧窗口中，选择"安装 **"。**</span><span class="sxs-lookup"><span data-stu-id="6583d-137">In the right-hand side window, choose **Install**.</span></span>  <span data-ttu-id="6583d-138">NuGet将 SDK 下载到计算机。</span><span class="sxs-lookup"><span data-stu-id="6583d-138">NuGet downloads the SDK to your machine.</span></span>  
+1.  <span data-ttu-id="fa509-135">安装 WebView2 SDK。</span><span class="sxs-lookup"><span data-stu-id="fa509-135">Install the WebView2 SDK.</span></span>  
+    1.  <span data-ttu-id="fa509-136">在搜索栏中，键入"> `Microsoft.Web.WebView2` **选择"Microsoft.Web.WebView2"。**</span><span class="sxs-lookup"><span data-stu-id="fa509-136">In the search bar, type `Microsoft.Web.WebView2` > choose **Microsoft.Web.WebView2**.</span></span>  
+    1.  <span data-ttu-id="fa509-137">在右侧窗口中，选择"安装 **"。**</span><span class="sxs-lookup"><span data-stu-id="fa509-137">In the right-hand side window, choose **Install**.</span></span>  <span data-ttu-id="fa509-138">NuGet将 SDK 下载到计算机。</span><span class="sxs-lookup"><span data-stu-id="fa509-138">NuGet downloads the SDK to your machine.</span></span>  
         
         :::image type="complex" source="../media/nuget.png" alt-text="NuGet 程序包管理器" lightbox="../media/nuget.png":::
-           <span data-ttu-id="6583d-140">NuGet 程序包管理器</span><span class="sxs-lookup"><span data-stu-id="6583d-140">NuGet Package Manager</span></span>
+           <span data-ttu-id="fa509-140">NuGet 程序包管理器</span><span class="sxs-lookup"><span data-stu-id="fa509-140">NuGet Package Manager</span></span>
         :::image-end:::  
         
-1.  <span data-ttu-id="6583d-141">将 WebView2 标头添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="6583d-141">Add WebView2 header to your project.</span></span>  
+1.  <span data-ttu-id="fa509-141">将 WebView2 标头添加到项目中。</span><span class="sxs-lookup"><span data-stu-id="fa509-141">Add WebView2 header to your project.</span></span>  
     
     :::row:::
        :::column span="1":::
-          <span data-ttu-id="6583d-142">在 `HelloWebView.cpp` 文件中，复制以下代码段并将其粘贴到最后一 `#include` 行之后。</span><span class="sxs-lookup"><span data-stu-id="6583d-142">In the `HelloWebView.cpp` file, copy the following code snippet and paste it after the last `#include` line.</span></span>  
+          <span data-ttu-id="fa509-142">在 `HelloWebView.cpp` 文件中，复制以下代码段并将其粘贴到最后一 `#include` 行之后。</span><span class="sxs-lookup"><span data-stu-id="fa509-142">In the `HelloWebView.cpp` file, copy the following code snippet and paste it after the last `#include` line.</span></span>  
           
           ```cpp
           // include WebView2 header
@@ -84,7 +84,7 @@ ms.locfileid: "11618384"
           ```  
        :::column-end:::
        :::column span="1":::
-          <span data-ttu-id="6583d-143">include 部分应类似于以下代码段。</span><span class="sxs-lookup"><span data-stu-id="6583d-143">The include section should look similar to the following code snippet.</span></span>  
+          <span data-ttu-id="fa509-143">include 部分应类似于以下代码段。</span><span class="sxs-lookup"><span data-stu-id="fa509-143">The include section should look similar to the following code snippet.</span></span>  
           
           ```cpp
           ...
@@ -96,25 +96,25 @@ ms.locfileid: "11618384"
        :::column-end:::
     :::row-end:::
     
-<span data-ttu-id="6583d-144">准备好使用 WebView2 API 并生成。</span><span class="sxs-lookup"><span data-stu-id="6583d-144">Ready to use and build against the WebView2 API.</span></span>  
+<span data-ttu-id="fa509-144">准备好使用 WebView2 API 并生成。</span><span class="sxs-lookup"><span data-stu-id="fa509-144">Ready to use and build against the WebView2 API.</span></span>  
 
-### <a name="build-your-empty-sample-app"></a><span data-ttu-id="6583d-145">生成空示例应用</span><span class="sxs-lookup"><span data-stu-id="6583d-145">Build your empty sample app</span></span>  
+### <a name="build-your-empty-sample-app"></a><span data-ttu-id="fa509-145">生成空示例应用</span><span class="sxs-lookup"><span data-stu-id="fa509-145">Build your empty sample app</span></span>  
 
-<span data-ttu-id="6583d-146">若要生成并运行示例应用，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="6583d-146">To build and run the sample app, select `F5`.</span></span>  <span data-ttu-id="6583d-147">你的应用显示一个空窗口。</span><span class="sxs-lookup"><span data-stu-id="6583d-147">Your app displays an empty window.</span></span>  
+<span data-ttu-id="fa509-146">若要生成并运行示例应用，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="fa509-146">To build and run the sample app, select `F5`.</span></span>  <span data-ttu-id="fa509-147">你的应用显示一个空窗口。</span><span class="sxs-lookup"><span data-stu-id="fa509-147">Your app displays an empty window.</span></span>  
 
 :::image type="complex" source="../media/empty-app.png" alt-text="空应用" lightbox="../media/empty-app.png":::
-   <span data-ttu-id="6583d-149">空应用</span><span class="sxs-lookup"><span data-stu-id="6583d-149">Empty app</span></span>  
+   <span data-ttu-id="fa509-149">空应用</span><span class="sxs-lookup"><span data-stu-id="fa509-149">Empty app</span></span>  
 :::image-end:::    
 
-## <a name="step-3---create-a-single-webview-within-the-parent-window"></a><span data-ttu-id="6583d-150">步骤 3 - 在父窗口中创建单个 WebView</span><span class="sxs-lookup"><span data-stu-id="6583d-150">Step 3 - Create a single WebView within the parent window</span></span>  
+## <a name="step-3---create-a-single-webview-within-the-parent-window"></a><span data-ttu-id="fa509-150">步骤 3 - 在父窗口中创建单个 WebView</span><span class="sxs-lookup"><span data-stu-id="fa509-150">Step 3 - Create a single WebView within the parent window</span></span>  
 
-<span data-ttu-id="6583d-151">将 WebView 添加到主窗口。</span><span class="sxs-lookup"><span data-stu-id="6583d-151">Add a WebView to the main window.</span></span>  
+<span data-ttu-id="fa509-151">将 WebView 添加到主窗口。</span><span class="sxs-lookup"><span data-stu-id="fa509-151">Add a WebView to the main window.</span></span>  
 
-<span data-ttu-id="6583d-152">使用 `CreateCoreWebView2Environment` 方法设置环境并找到支持Microsoft Edge \ (Chromium\) 的浏览器。</span><span class="sxs-lookup"><span data-stu-id="6583d-152">Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge \(Chromium\) browser powering the control.</span></span>  <span data-ttu-id="6583d-153">如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。</span><span class="sxs-lookup"><span data-stu-id="6583d-153">You may also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, user folder, browser flags, and so on, instead of using the default setting.</span></span>  <span data-ttu-id="6583d-154">完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。</span><span class="sxs-lookup"><span data-stu-id="6583d-154">Upon the completion of the `CreateCoreWebView2Environment` method, run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.</span></span>  
+<span data-ttu-id="fa509-152">使用 `CreateCoreWebView2Environment` 方法设置环境并找到支持Microsoft Edge \ (Chromium\) 的浏览器。</span><span class="sxs-lookup"><span data-stu-id="fa509-152">Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge \(Chromium\) browser powering the control.</span></span>  <span data-ttu-id="fa509-153">如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。</span><span class="sxs-lookup"><span data-stu-id="fa509-153">You may also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, user folder, browser flags, and so on, instead of using the default setting.</span></span>  <span data-ttu-id="fa509-154">完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。</span><span class="sxs-lookup"><span data-stu-id="fa509-154">Upon the completion of the `CreateCoreWebView2Environment` method, run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.</span></span>  
 
-<span data-ttu-id="6583d-155">在回调中，设置一些设置，调整 WebView 的大小以使用 100% 的父窗口，然后导航到必应。</span><span class="sxs-lookup"><span data-stu-id="6583d-155">In the callback, set a few more settings, resize the WebView to take 100% of the parent window, and navigate to Bing.</span></span>  
+<span data-ttu-id="fa509-155">在回调中，设置一些设置，调整 WebView 的大小以使用 100% 的父窗口，然后导航到必应。</span><span class="sxs-lookup"><span data-stu-id="fa509-155">In the callback, set a few more settings, resize the WebView to take 100% of the parent window, and navigate to Bing.</span></span>  
 
-<span data-ttu-id="6583d-156">复制以下代码段，并粘贴 `HelloWebView.cpp` 到注释之后 `// <-- WebView2 sample code starts here -->` 和注释 `// <-- WebView2 sample code ends here -->` 之前。</span><span class="sxs-lookup"><span data-stu-id="6583d-156">Copy the following code snippet and paste into `HelloWebView.cpp` after the `// <-- WebView2 sample code starts here -->` comment and before the `// <-- WebView2 sample code ends here -->` comment.</span></span>  
+<span data-ttu-id="fa509-156">复制以下代码段，并粘贴 `HelloWebView.cpp` 到注释之后 `// <-- WebView2 sample code starts here -->` 和注释 `// <-- WebView2 sample code ends here -->` 之前。</span><span class="sxs-lookup"><span data-stu-id="fa509-156">Copy the following code snippet and paste into `HelloWebView.cpp` after the `// <-- WebView2 sample code starts here -->` comment and before the `// <-- WebView2 sample code ends here -->` comment.</span></span>  
 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
@@ -159,17 +159,17 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-### <a name="build-your-bing-sample-app"></a><span data-ttu-id="6583d-157">生成必应示例应用</span><span class="sxs-lookup"><span data-stu-id="6583d-157">Build your Bing sample app</span></span>  
+### <a name="build-your-bing-sample-app"></a><span data-ttu-id="fa509-157">生成必应示例应用</span><span class="sxs-lookup"><span data-stu-id="fa509-157">Build your Bing sample app</span></span>  
 
-<span data-ttu-id="6583d-158">若要生成并运行应用，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="6583d-158">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="6583d-159">现在，你有一个 WebView 窗口，必应页面。</span><span class="sxs-lookup"><span data-stu-id="6583d-159">Now you have a WebView window displaying the Bing page.</span></span>  
+<span data-ttu-id="fa509-158">若要生成并运行应用，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="fa509-158">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="fa509-159">现在，你有一个 WebView 窗口，必应页面。</span><span class="sxs-lookup"><span data-stu-id="fa509-159">Now you have a WebView window displaying the Bing page.</span></span>  
 
 :::image type="complex" source="../media/bing-window.png" alt-text="必应窗口" lightbox="../media/bing-window.png":::
-   <span data-ttu-id="6583d-161">必应窗口</span><span class="sxs-lookup"><span data-stu-id="6583d-161">Bing window</span></span>  
+   <span data-ttu-id="fa509-161">必应窗口</span><span class="sxs-lookup"><span data-stu-id="fa509-161">Bing window</span></span>  
 :::image-end:::    
 
-## <a name="step-4---navigation-events"></a><span data-ttu-id="6583d-162">步骤 4 - 导航事件</span><span class="sxs-lookup"><span data-stu-id="6583d-162">Step 4 - Navigation events</span></span>  
+## <a name="step-4---navigation-events"></a><span data-ttu-id="fa509-162">步骤 4 - 导航事件</span><span class="sxs-lookup"><span data-stu-id="fa509-162">Step 4 - Navigation events</span></span>  
 
-<span data-ttu-id="6583d-163">WebView 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方法导航到 URL 的内容。</span><span class="sxs-lookup"><span data-stu-id="6583d-163">The WebView team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.</span></span>  <span data-ttu-id="6583d-164">在导航过程中，WebView 会触发主机可以侦听的一系列事件。</span><span class="sxs-lookup"><span data-stu-id="6583d-164">During navigation, WebView fires a sequence of events to which the host may listen.</span></span>  
+<span data-ttu-id="fa509-163">WebView 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方法导航到 URL 的内容。</span><span class="sxs-lookup"><span data-stu-id="fa509-163">The WebView team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.</span></span>  <span data-ttu-id="fa509-164">在导航过程中，WebView 会触发主机可以侦听的一系列事件。</span><span class="sxs-lookup"><span data-stu-id="fa509-164">During navigation, WebView fires a sequence of events to which the host may listen.</span></span>  
 
 1.  `NavigationStarting`  
 1.  `SourceChanged`  
@@ -177,22 +177,22 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
     
-<span data-ttu-id="6583d-165">有关详细信息，请导航到["导航事件"。][Webview2ConceptsNavigationEvents]</span><span class="sxs-lookup"><span data-stu-id="6583d-165">For more information, navigate to [Navigation events][Webview2ConceptsNavigationEvents].</span></span>  
+<span data-ttu-id="fa509-165">有关详细信息，请导航到["导航事件"。][Webview2ConceptsNavigationEvents]</span><span class="sxs-lookup"><span data-stu-id="fa509-165">For more information, navigate to [Navigation events][Webview2ConceptsNavigationEvents].</span></span>  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="导航事件" lightbox="../media/navigation-events.png":::
-   <span data-ttu-id="6583d-167">导航事件</span><span class="sxs-lookup"><span data-stu-id="6583d-167">Navigation events</span></span>  
+   <span data-ttu-id="fa509-167">导航事件</span><span class="sxs-lookup"><span data-stu-id="fa509-167">Navigation events</span></span>  
 :::image-end:::    
 
-<span data-ttu-id="6583d-168">在错误情况下，可能会发生以下一个或多个事件，具体取决于导航是否继续导航到错误网页。</span><span class="sxs-lookup"><span data-stu-id="6583d-168">In error cases, one or more of the following events may occur depending on whether the navigation is continued to an error webpage.</span></span>  
+<span data-ttu-id="fa509-168">在错误情况下，可能会发生以下一个或多个事件，具体取决于导航是否继续错误网页。</span><span class="sxs-lookup"><span data-stu-id="fa509-168">In error cases, one or more of the following events may occur depending on whether the navigation continued to an error webpage.</span></span>  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`
     
 > [!NOTE]
-> <span data-ttu-id="6583d-169">如果发生 HTTP 重定向，则一行 `NavigationStarting` 中有多个事件。</span><span class="sxs-lookup"><span data-stu-id="6583d-169">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.</span></span>  
+> <span data-ttu-id="fa509-169">如果发生 HTTP 重定向，则一行 `NavigationStarting` 中有多个事件。</span><span class="sxs-lookup"><span data-stu-id="fa509-169">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.</span></span>  
 
-<span data-ttu-id="6583d-170">作为使用事件的示例，请为事件注册处理程序以取消 `NavigationStarting` 任何非 https 请求。</span><span class="sxs-lookup"><span data-stu-id="6583d-170">As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.</span></span>  <span data-ttu-id="6583d-171">复制以下代码段并粘贴到 `HelloWebView.cpp` 中。</span><span class="sxs-lookup"><span data-stu-id="6583d-171">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
+<span data-ttu-id="fa509-170">作为使用事件的示例，请为事件注册处理程序以取消 `NavigationStarting` 任何非 https 请求。</span><span class="sxs-lookup"><span data-stu-id="fa509-170">As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.</span></span>  <span data-ttu-id="fa509-171">复制以下代码段并粘贴到 `HelloWebView.cpp` 中。</span><span class="sxs-lookup"><span data-stu-id="fa509-171">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
 
 ```cpp
 // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
@@ -210,16 +210,16 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
     }).Get(), &token);
 ```  
 
-<span data-ttu-id="6583d-172">现在，应用不会导航到任何非 https 网站。</span><span class="sxs-lookup"><span data-stu-id="6583d-172">Now the app does not navigate to any non-https sites.</span></span>  <span data-ttu-id="6583d-173">您可以使用类似的机制完成其他任务，例如将导航限制到您自己的域中。</span><span class="sxs-lookup"><span data-stu-id="6583d-173">You may use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.</span></span>  
+<span data-ttu-id="fa509-172">现在，应用不会导航到任何非 https 网站。</span><span class="sxs-lookup"><span data-stu-id="fa509-172">Now the app does not navigate to any non-https sites.</span></span>  <span data-ttu-id="fa509-173">您可以使用类似的机制完成其他任务，例如将导航限制到您自己的域中。</span><span class="sxs-lookup"><span data-stu-id="fa509-173">You may use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.</span></span>  
 
-## <a name="step-5---scripting"></a><span data-ttu-id="6583d-174">步骤 5 - 脚本</span><span class="sxs-lookup"><span data-stu-id="6583d-174">Step 5 - Scripting</span></span>  
+## <a name="step-5---scripting"></a><span data-ttu-id="fa509-174">步骤 5 - 脚本</span><span class="sxs-lookup"><span data-stu-id="fa509-174">Step 5 - Scripting</span></span>  
 
-<span data-ttu-id="6583d-175">你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。</span><span class="sxs-lookup"><span data-stu-id="6583d-175">You may use host apps to inject JavaScript code into WebView2 controls at runtime.</span></span>  <span data-ttu-id="6583d-176">你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。</span><span class="sxs-lookup"><span data-stu-id="6583d-176">You may task WebView to run arbitrary JavaScript or add initialization scripts.</span></span>  <span data-ttu-id="6583d-177">在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。</span><span class="sxs-lookup"><span data-stu-id="6583d-177">The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.</span></span>  <span data-ttu-id="6583d-178">注入的 JavaScript 以特定计时运行。</span><span class="sxs-lookup"><span data-stu-id="6583d-178">The injected JavaScript is run with specific timing.</span></span>  
+<span data-ttu-id="fa509-175">你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。</span><span class="sxs-lookup"><span data-stu-id="fa509-175">You may use host apps to inject JavaScript code into WebView2 controls at runtime.</span></span>  <span data-ttu-id="fa509-176">你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。</span><span class="sxs-lookup"><span data-stu-id="fa509-176">You may task WebView to run arbitrary JavaScript or add initialization scripts.</span></span>  <span data-ttu-id="fa509-177">在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。</span><span class="sxs-lookup"><span data-stu-id="fa509-177">The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.</span></span>  <span data-ttu-id="fa509-178">注入的 JavaScript 以特定计时运行。</span><span class="sxs-lookup"><span data-stu-id="fa509-178">The injected JavaScript is run with specific timing.</span></span>  
 
-*   <span data-ttu-id="6583d-179">创建全局对象后运行它。</span><span class="sxs-lookup"><span data-stu-id="6583d-179">Run it after the creation of the global object.</span></span>  
-*   <span data-ttu-id="6583d-180">在运行 HTML 文档中包含的任何其他脚本之前运行它。</span><span class="sxs-lookup"><span data-stu-id="6583d-180">Run it before any other script included in the HTML document is run.</span></span>  
+*   <span data-ttu-id="fa509-179">创建全局对象后运行它。</span><span class="sxs-lookup"><span data-stu-id="fa509-179">Run it after the creation of the global object.</span></span>  
+*   <span data-ttu-id="fa509-180">在运行 HTML 文档中包含的任何其他脚本之前运行它。</span><span class="sxs-lookup"><span data-stu-id="fa509-180">Run it before any other script included in the HTML document is run.</span></span>  
     
-<span data-ttu-id="6583d-181">复制以下代码段并粘贴到 `HelloWebView.cpp` 中。</span><span class="sxs-lookup"><span data-stu-id="6583d-181">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
+<span data-ttu-id="fa509-181">复制以下代码段并粘贴到 `HelloWebView.cpp` 中。</span><span class="sxs-lookup"><span data-stu-id="fa509-181">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
 
 ```cpp
 // Schedule an async task to add initialization script that freezes the Object object
@@ -233,24 +233,24 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
     }).Get());
 ```  
 
-<span data-ttu-id="6583d-182">现在，WebView 应始终冻结 `Object` 对象并返回页面文档一次。</span><span class="sxs-lookup"><span data-stu-id="6583d-182">Now, WebView should always freeze the `Object` object and returns the page document once.</span></span>  
+<span data-ttu-id="fa509-182">现在，WebView 应始终冻结 `Object` 对象并返回页面文档一次。</span><span class="sxs-lookup"><span data-stu-id="fa509-182">Now, WebView should always freeze the `Object` object and returns the page document once.</span></span>  
 
 > [!NOTE] 
-> <span data-ttu-id="6583d-183">脚本注入 API \ (和其他一些 WebView2 API\) 是异步的，如果代码必须按特定顺序运行，则应该使用回调。</span><span class="sxs-lookup"><span data-stu-id="6583d-183">The script injection APIs \(and some other WebView2 APIs\) are asynchronous, you should use callbacks if code is must be run in a specific order.</span></span>  
+> <span data-ttu-id="fa509-183">脚本注入 API \ (和其他一些 WebView2 API\) 是异步的，如果代码必须按特定顺序运行，则应该使用回调。</span><span class="sxs-lookup"><span data-stu-id="fa509-183">The script injection APIs \(and some other WebView2 APIs\) are asynchronous, you should use callbacks if code is must be run in a specific order.</span></span>  
 
-## <a name="step-6---communication-between-host-and-web-content"></a><span data-ttu-id="6583d-184">步骤 6 - 主机和 Web 内容之间的通信</span><span class="sxs-lookup"><span data-stu-id="6583d-184">Step 6 - Communication between host and web content</span></span>  
+## <a name="step-6---communication-between-host-and-web-content"></a><span data-ttu-id="fa509-184">步骤 6 - 主机和 Web 内容之间的通信</span><span class="sxs-lookup"><span data-stu-id="fa509-184">Step 6 - Communication between host and web content</span></span>  
 
-<span data-ttu-id="6583d-185">主机和 Web 内容还可通过 方法相互 `postMessage` 通信。</span><span class="sxs-lookup"><span data-stu-id="6583d-185">The host and the web content may also communicate with each other through the `postMessage` method.</span></span>  <span data-ttu-id="6583d-186">WebView 中运行的 Web 内容可以通过 方法发布给主机，消息由主机上注册的任何 `window.chrome.webview.postMessage` `ICoreWebView2WebMessageReceivedEventHandler` 事件处理程序处理。</span><span class="sxs-lookup"><span data-stu-id="6583d-186">The web content running within a WebView may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.</span></span>  <span data-ttu-id="6583d-187">同样，主机可能通过 或 方法发送 Web 内容消息，由从侦听器添加的 `ICoreWebView2::PostWebMessageAsString` `ICoreWebView2::PostWebMessageAsJSON` 处理程序捕获 `window.chrome.webview.addEventListener` 。</span><span class="sxs-lookup"><span data-stu-id="6583d-187">Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.</span></span>  <span data-ttu-id="6583d-188">通信机制允许 Web 内容通过传递消息要求主机运行本机 API 来使用本机功能。</span><span class="sxs-lookup"><span data-stu-id="6583d-188">The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.</span></span>  
+<span data-ttu-id="fa509-185">主机和 Web 内容还可通过 方法相互 `postMessage` 通信。</span><span class="sxs-lookup"><span data-stu-id="fa509-185">The host and the web content may also communicate with each other through the `postMessage` method.</span></span>  <span data-ttu-id="fa509-186">WebView 中运行的 Web 内容可以通过 方法发布给主机，消息由主机上注册的任何 `window.chrome.webview.postMessage` `ICoreWebView2WebMessageReceivedEventHandler` 事件处理程序处理。</span><span class="sxs-lookup"><span data-stu-id="fa509-186">The web content running within a WebView may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.</span></span>  <span data-ttu-id="fa509-187">同样，主机可能通过 或 方法发送 Web 内容消息，由从侦听器添加的 `ICoreWebView2::PostWebMessageAsString` `ICoreWebView2::PostWebMessageAsJSON` 处理程序捕获 `window.chrome.webview.addEventListener` 。</span><span class="sxs-lookup"><span data-stu-id="fa509-187">Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.</span></span>  <span data-ttu-id="fa509-188">通信机制允许 Web 内容通过传递消息要求主机运行本机 API 来使用本机功能。</span><span class="sxs-lookup"><span data-stu-id="fa509-188">The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.</span></span>  
 
-<span data-ttu-id="6583d-189">作为了解机制的示例，当您尝试在 WebView 中输出文档 URL 时，将执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="6583d-189">As an example to understand the mechanism, the following steps occur when you try to output the document URL in WebView.</span></span>  
+<span data-ttu-id="fa509-189">作为了解机制的示例，当您尝试在 WebView 中输出文档 URL 时，将执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="fa509-189">As an example to understand the mechanism, the following steps occur when you try to output the document URL in WebView.</span></span>  
 
-1.  <span data-ttu-id="6583d-190">主机注册处理程序以将收到的消息返回给 Web 内容</span><span class="sxs-lookup"><span data-stu-id="6583d-190">The host registers a handler to return received message back to the web content</span></span>  
-1.  <span data-ttu-id="6583d-191">主机将脚本注入 Web 内容，Web 内容注册处理程序以从主机打印消息</span><span class="sxs-lookup"><span data-stu-id="6583d-191">The host injects a script to the web content that registers a handler to print message from the host</span></span>  
-1.  <span data-ttu-id="6583d-192">主机向将 URL 张贴到主机的 Web 内容注入脚本</span><span class="sxs-lookup"><span data-stu-id="6583d-192">The host injects a script to the web content that posts the URL to the host</span></span>  
-1.  <span data-ttu-id="6583d-193">将触发主机处理程序，并返回消息 \ (URL\) Web 内容</span><span class="sxs-lookup"><span data-stu-id="6583d-193">The handler of the host is triggered and returns the message \(the URL\) to the web content</span></span>  
-1.  <span data-ttu-id="6583d-194">将触发 Web 内容的处理程序，并输出来自主机 \ (URL\) </span><span class="sxs-lookup"><span data-stu-id="6583d-194">The handler of the web content is triggered and prints message from the host \(the URL\)</span></span>  
+1.  <span data-ttu-id="fa509-190">主机注册处理程序以将收到的消息返回给 Web 内容</span><span class="sxs-lookup"><span data-stu-id="fa509-190">The host registers a handler to return received message back to the web content</span></span>  
+1.  <span data-ttu-id="fa509-191">主机将脚本注入 Web 内容，Web 内容注册处理程序以从主机打印消息</span><span class="sxs-lookup"><span data-stu-id="fa509-191">The host injects a script to the web content that registers a handler to print message from the host</span></span>  
+1.  <span data-ttu-id="fa509-192">主机向将 URL 张贴到主机的 Web 内容注入脚本</span><span class="sxs-lookup"><span data-stu-id="fa509-192">The host injects a script to the web content that posts the URL to the host</span></span>  
+1.  <span data-ttu-id="fa509-193">将触发主机处理程序，并返回消息 \ (URL\) Web 内容</span><span class="sxs-lookup"><span data-stu-id="fa509-193">The handler of the host is triggered and returns the message \(the URL\) to the web content</span></span>  
+1.  <span data-ttu-id="fa509-194">将触发 Web 内容的处理程序，并输出来自主机 \ (URL\) </span><span class="sxs-lookup"><span data-stu-id="fa509-194">The handler of the web content is triggered and prints message from the host \(the URL\)</span></span>  
     
-<span data-ttu-id="6583d-195">复制以下代码段并粘贴到 `HelloWebView.cpp` 中。</span><span class="sxs-lookup"><span data-stu-id="6583d-195">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
+<span data-ttu-id="fa509-195">复制以下代码段并粘贴到 `HelloWebView.cpp` 中。</span><span class="sxs-lookup"><span data-stu-id="fa509-195">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
 
 ```cpp
 // Set an event handler for the host to return received message back to the web content
@@ -273,26 +273,26 @@ webviewWindow->AddScriptToExecuteOnDocumentCreated(
 nullptr);
 ```  
 
-### <a name="build-your-display-url-sample-app"></a><span data-ttu-id="6583d-196">生成显示 URL 示例应用程序</span><span class="sxs-lookup"><span data-stu-id="6583d-196">Build your display URL sample app</span></span>  
+### <a name="build-your-display-url-sample-app"></a><span data-ttu-id="fa509-196">生成显示 URL 示例应用程序</span><span class="sxs-lookup"><span data-stu-id="fa509-196">Build your display URL sample app</span></span>  
 
-<span data-ttu-id="6583d-197">若要生成并运行应用，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="6583d-197">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="6583d-198">在导航到网页之前，URL 将显示在弹出窗口中。</span><span class="sxs-lookup"><span data-stu-id="6583d-198">The URL appears in a pop-up window before navigating to a webpage.</span></span>  
+<span data-ttu-id="fa509-197">若要生成并运行应用，请选择 `F5` 。</span><span class="sxs-lookup"><span data-stu-id="fa509-197">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="fa509-198">在导航到网页之前，URL 将显示在弹出窗口中。</span><span class="sxs-lookup"><span data-stu-id="fa509-198">The URL appears in a pop-up window before navigating to a webpage.</span></span>  
 
 :::image type="complex" source="../media/show-url.png" alt-text="显示 URL" lightbox="../media/show-url.png":::
-   <span data-ttu-id="6583d-200">显示 URL</span><span class="sxs-lookup"><span data-stu-id="6583d-200">Display url</span></span>  
+   <span data-ttu-id="fa509-200">显示 URL</span><span class="sxs-lookup"><span data-stu-id="fa509-200">Display url</span></span>  
 :::image-end:::    
 
-<span data-ttu-id="6583d-201">恭喜！你生成了第一个 WebView2 应用。</span><span class="sxs-lookup"><span data-stu-id="6583d-201">Congratulations, you built your first WebView2 app.</span></span>  
+<span data-ttu-id="fa509-201">恭喜！你生成了第一个 WebView2 应用。</span><span class="sxs-lookup"><span data-stu-id="fa509-201">Congratulations, you built your first WebView2 app.</span></span>  
 
-## <a name="next-steps"></a><span data-ttu-id="6583d-202">后续步骤</span><span class="sxs-lookup"><span data-stu-id="6583d-202">Next steps</span></span>  
+## <a name="next-steps"></a><span data-ttu-id="fa509-202">后续步骤</span><span class="sxs-lookup"><span data-stu-id="fa509-202">Next steps</span></span>  
 
-<span data-ttu-id="6583d-203">有关本文未涵盖的其他 WebView2 功能，请查看以下资源。</span><span class="sxs-lookup"><span data-stu-id="6583d-203">For additional WebView2 functionality that isn't covered in this article, review the following resources.</span></span>  
+<span data-ttu-id="fa509-203">有关本文未涵盖的其他 WebView2 功能，请查看以下资源。</span><span class="sxs-lookup"><span data-stu-id="fa509-203">For additional WebView2 functionality that isn't covered in this article, review the following resources.</span></span>  
 
-*   <span data-ttu-id="6583d-204">若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。</span><span class="sxs-lookup"><span data-stu-id="6583d-204">To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].</span></span>  
-*   <span data-ttu-id="6583d-205">有关 WebView2 功能的综合示例，请导航到 [WebView2 API 示例][GithubMicrosoftedgeWebview2samplesApisample]。</span><span class="sxs-lookup"><span data-stu-id="6583d-205">For a comprehensive example of WebView2 capabilities, navigate to [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].</span></span>  
-*   <span data-ttu-id="6583d-206">对于使用 WebView2 生成的示例应用，导航到 [WebView2Browser][GithubMicrosoftedgeWebview2browser]。</span><span class="sxs-lookup"><span data-stu-id="6583d-206">For a sample app built using WebView2, navigate to [WebView2Browser][GithubMicrosoftedgeWebview2browser].</span></span>  
-*   <span data-ttu-id="6583d-207">有关 WebView2 API 的详细信息，请导航到 [API 参考][Webview2ReferenceWin32]。</span><span class="sxs-lookup"><span data-stu-id="6583d-207">For detailed information about the WebView2 API, navigate to [API reference][Webview2ReferenceWin32].</span></span>  
+*   <span data-ttu-id="fa509-204">若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。</span><span class="sxs-lookup"><span data-stu-id="fa509-204">To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].</span></span>  
+*   <span data-ttu-id="fa509-205">有关 WebView2 功能的综合示例，请导航到 [WebView2 API 示例][GithubMicrosoftedgeWebview2samplesApisample]。</span><span class="sxs-lookup"><span data-stu-id="fa509-205">For a comprehensive example of WebView2 capabilities, navigate to [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].</span></span>  
+*   <span data-ttu-id="fa509-206">对于使用 WebView2 生成的示例应用，导航到 [WebView2Browser][GithubMicrosoftedgeWebview2browser]。</span><span class="sxs-lookup"><span data-stu-id="fa509-206">For a sample app built using WebView2, navigate to [WebView2Browser][GithubMicrosoftedgeWebview2browser].</span></span>  
+*   <span data-ttu-id="fa509-207">有关 WebView2 API 的详细信息，请导航到 [API 参考][Webview2ReferenceWin32]。</span><span class="sxs-lookup"><span data-stu-id="fa509-207">For detailed information about the WebView2 API, navigate to [API reference][Webview2ReferenceWin32].</span></span>  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a><span data-ttu-id="6583d-208">与 WebView 团队Microsoft Edge联系</span><span class="sxs-lookup"><span data-stu-id="6583d-208">Getting in touch with the Microsoft Edge WebView team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a><span data-ttu-id="fa509-208">与 WebView 团队Microsoft Edge联系</span><span class="sxs-lookup"><span data-stu-id="fa509-208">Getting in touch with the Microsoft Edge WebView team</span></span>  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
