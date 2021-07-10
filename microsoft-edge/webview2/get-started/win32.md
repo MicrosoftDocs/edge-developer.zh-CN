@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 2714f9a6cffea3cb7d53f9a4128d64920fd02dce
-ms.sourcegitcommit: 7713eec634264b0c44b1bb426f5b466c44b4e005
+ms.openlocfilehash: 6eae00a0fddb75782be5a3e94efaa5a8965674a0
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "11618384"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643446"
 ---
 # <a name="get-started-with-webview2"></a>WebView2 入门  
 
 本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  有关各个 WebView2 API 的信息，请导航到 [API 参考][Webview2ReferenceWin32]。  
 
-## <a name="prerequisites"></a>系统必备  
+## <a name="prerequisites"></a>必备条件  
 
 请确保先安装以下先决条件列表，然后再继续。  
 
@@ -183,7 +183,7 @@ WebView 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方法
    导航事件  
 :::image-end:::    
 
-在错误情况下，可能会发生以下一个或多个事件，具体取决于导航是否继续导航到错误网页。  
+在错误情况下，可能会发生以下一个或多个事件，具体取决于导航是否继续错误网页。  
 
 *   `SourceChanged`  
 *   `ContentLoading`  

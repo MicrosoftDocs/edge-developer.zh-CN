@@ -7,16 +7,16 @@ ms.date: 04/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 渐进 Web 应用、PWA、Edge、Windows、Microsoft Store
-ms.openlocfilehash: 5e78e909187408566219ffe80779bb9221b585fa
-ms.sourcegitcommit: e3cd336c9448277e0dde3b9da1521b5cbc7c44d2
+ms.openlocfilehash: 40a6b94412a0788c87f7231025809098c98f18e9
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "11527055"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643247"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>将渐进式 Web 应用发布到Microsoft Store  
 
-将渐进式 Web 应用 \(PWA\) 发布到[Microsoft Store具有下列][WindowsUwpPublishIndex]优点。  
+将渐进式 Web 应用 \ (PWA\) 发布到[Microsoft Store具有下列][WindowsUwpPublishIndex]优点。  
 
 :::row:::
    :::column span="1":::
@@ -137,6 +137,18 @@ ms.locfileid: "11527055"
 1.  在**程序包提示**符上，选择 和 你在打包你的程序包PWA `.msixbundle` `.classic.appxbundle` 文件。 [](#package-your-pwa-for-the-store)  
     
 完成提交后，通常会在 24 至 48 小时内查看你的应用。  收到批准后，PWA中将Microsoft Store。  
+
+### <a name="measure-usage-of-your-store-installed-pwa"></a>测量应用商店安装的应用商店的使用情况PWA
+
+初始PWA时，如果 PWA 从 Microsoft Store 安装，Microsoft Edge 将包含以下标头，其中包含对 Web 应用第一次导航的请求。 `Referer`
+
+```
+Referer: app-info://platform/microsoft-store
+```
+
+使用此功能可测量与应用商店安装版本不同的PWA。  根据流量，你可以调整应用内容以改进用户体验。  客户端和服务器代码均可访问此功能。
+
+此功能是在版本 91 Microsoft Edge引入的。
 
 ## <a name="see-also"></a>另请参阅  
 

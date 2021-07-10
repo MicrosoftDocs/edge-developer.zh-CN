@@ -3,16 +3,16 @@ description: 在 DevTools 中打开 Microsoft Edge的所有方法。
 title: 打开 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 00bb5a2c11fcadd4a0eba22c29ac5a2652b9edb6
-ms.sourcegitcommit: 2b225426e90b017f9766ea8568713b95d267cd6f
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: a6e83d0651c5611b53735447f6ddc34c90550db1
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "11607313"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643439"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,45 +29,14 @@ ms.locfileid: "11607313"
    limitations under the License. -->
 # <a name="open-microsoft-edge-devtools"></a>打开 Microsoft Edge DevTools  
 
-有许多方法可以打开 Microsoft Edge Tools，因为不同的用户希望快速访问 DevTools UI 的不同部分。  
-
-## <a name="open-the-elements-panel-to-inspect-the-dom-or-css"></a>打开"元素"面板以检查 DOM 或 CSS  
-
-通过以下每个任务，您可以检查 DOM 节点的样式或属性。
-
-*   将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
-*   选择 `Control` + `Shift` + `C` \(Windows、Linux\) 或 `Command` + `Option` + `C` \(macOS\)。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
-
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="检查选项" lightbox="../media/bing-right-click-inspect.msft.png":::
-   " **检查"** 选项  
-:::image-end:::  
-
-<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
-
-## <a name="open-the-console-panel"></a>打开控制台面板  
-
-通过以下每个任务，您可以打开 [控制台][DevtoolsConsoleIndex] 窗格以查看记录的消息或运行 JavaScript。  
-
-*   使用以下步骤 [打开控制台窗格][DevtoolsConsoleIndex] 。  
-    
-    1.  [打开 DevTools](#open-microsoft-edge-devtools)。  
-    1.  选择" [控制台"][DevtoolsConsoleIndex] 窗格。  
-
-*   若要直接跳转到控制台[窗格][DevtoolsConsoleIndex]，请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
-
-<!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
-
-## <a name="open-the-previous-panel"></a>打开上一个面板  
-
-若要跳转到已打开的上一个面板，请选择 `Control` + `Shift` + `I` \ (Windows、Linux\) 或 `Command` + `Option` + `I` \ (macOS\) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
+有许多方法可以打开 Microsoft Edge Tools，帮助你快速访问 DevTools UI 的不同部分。 
 
 ## <a name="open-microsoft-edge-devtools"></a>打开 Microsoft Edge DevTools  
 
 若要打开 DevTools，请使用以下任一选项。  
 
-*   使用 Microsoft Edge UI。  
-    
-    1.  选择 **"设置更多工具开发人员工具**" (`...` \) 图标>**更多 \> \>**  >   **\\) "** 图标。  
+*   使用 Microsoft Edge UI。
+    *  选择 **"设置更多工具开发人员工具**" (`...` \) 图标>**更多 \> \>**  >   **\\) "** 图标。  
     
 *   使用键盘。  
     *   选择 `F12` 或 `Control` + `Shift` + `I` \ (Windows、Linux\) 或 `Command` + `Option` + `I` \ (macOS\) 。  
@@ -77,6 +46,29 @@ ms.locfileid: "11607313"
 :::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单中打开 devTools Microsoft Edge开发人员工具" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    从主菜单中打开 devTools Microsoft Edge开发人员工具  
 :::image-end:::  
+
+## <a name="open-the-elements-panel-to-inspect-the-dom-or-css"></a>打开"元素"面板以检查 DOM 或 CSS  
+
+通过以下任一任务，您可以检查文档对象模型 [\ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 的样式或属性。
+
+*   将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
+*   选择 `Control` + `Shift` + `C` \(Windows、Linux\) 或 `Command` + `Option` + `C` \(macOS\)。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
+
+<!-- :::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png":::
+   The **Inspect** option  
+:::image-end:::  --> 
+
+<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
+
+## <a name="open-the-console-panel"></a>打开控制台面板  
+
+若要打开控制台[面板][DevtoolsConsoleIndex]以查看记录的消息或运行 JavaScript，请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
+
+<!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
+
+## <a name="open-the-previous-panel"></a>打开上一个面板  
+
+若要跳转到之前打开的面板，请选择 `Control` + `Shift` + `I` \ (Windows、Linux\) 或 `Command` + `Option` + `I` \ (macOS\) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。  
 
 ## <a name="auto-open-devtools-on-every-new-tab"></a>自动打开每个新选项卡上的 DevTools  
 
@@ -118,10 +110,10 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 ## <a name="toggle-the-f12-keyboard-shortcut-on-or-off"></a>打开或关闭 F12 键盘快捷方式  
 
-若要更改 `F12` 打开 DevTools 的键盘快捷方式设置，请完成以下操作。  
+若要更改 `F12` 打开 DevTools 的键盘快捷方式设置，请完成以下操作：  
 
 1.  导航到 `edge://settings/system`。  
-1.  In `Developer Tools` ， choose Open the **DevTools when the F12 key is pressed** to toggle the setting to off or on.  将设置切换为关闭以停止 `F12` 键盘快捷方式打开 DevTools。  
+1.  In `Developer Tools` ， choose Open the **DevTools when the F12 key is pressed** to toggle the setting to off or on. 将设置切换为关闭以停止 `F12` 键盘快捷方式打开 DevTools。  
 1.  将开关设置为关闭后，验证 `F12` 是否不再打开 DevTools。  
     
     > [!NOTE]
